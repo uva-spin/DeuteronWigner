@@ -83,12 +83,37 @@ class NorfolkCurrentTests(unittest.TestCase):
             isoscalar_lecs=NORFOLK_PRC106_SET_A_ISOSCALAR_LECS["nvia"],
         )
         self.assertAlmostEqual(
-            result["ope_i1"] + result["ope_i2"], result["ope"], places=13
+            result["ope_i1"]
+            + result["ope_i2"]
+            + result["ope_fourier_contact"],
+            result["ope"],
+            places=13,
         )
         self.assertAlmostEqual(
             result["ope_unit_d2"]
             * NORFOLK_PRC106_SET_A_ISOSCALAR_LECS["nvia"][1],
-            result["ope"],
+            result["ope_long_range"],
+            places=13,
+        )
+
+    def test_fourier_contact_is_separate_and_switchable(self):
+        wave = load_norfolk_coordinate("data/raw/norfolk/fdeut.nvia")
+        lecs = NORFOLK_PRC106_SET_A_ISOSCALAR_LECS["nvia"]
+        corrected = norfolk_n3lo_magnetic_moment(
+            wave, model="nvia", angular_order=8, isoscalar_lecs=lecs
+        )
+        printed_prc99 = norfolk_n3lo_magnetic_moment(
+            wave,
+            model="nvia",
+            angular_order=8,
+            isoscalar_lecs=lecs,
+            include_ope_fourier_contact=False,
+        )
+        self.assertNotEqual(corrected["ope_fourier_contact"], 0.0)
+        self.assertEqual(printed_prc99["ope_fourier_contact"], 0.0)
+        self.assertAlmostEqual(
+            corrected["ope"] - printed_prc99["ope"],
+            corrected["ope_fourier_contact"],
             places=13,
         )
 
@@ -107,6 +132,17 @@ class NorfolkCurrentTests(unittest.TestCase):
         self.assertEqual(
             NORFOLK_PRC106_SET_A_DEUTERON_MOMENTS["nvib"]["d2"], 0.008
         )
+
+    def test_fourier_contact_restores_prc106_ope_signs_and_values(self):
+        for model, lecs in NORFOLK_PRC106_SET_A_ISOSCALAR_LECS.items():
+            wave = load_norfolk_coordinate(f"data/raw/norfolk/fdeut.{model}")
+            result = norfolk_n3lo_magnetic_moment(
+                wave, model=model, angular_order=8, isoscalar_lecs=lecs
+            )
+            target = NORFOLK_PRC106_SET_A_DEUTERON_MOMENTS[model]
+            self.assertLessEqual(
+                abs(result["ope"] - target["d2"]), target["d2_error"]
+            )
 
 
 if __name__ == "__main__":

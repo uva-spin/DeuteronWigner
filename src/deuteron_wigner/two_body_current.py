@@ -267,11 +267,15 @@ def norfolk_n3lo_magnetic_moment(
     pion_mass_mev: float = 138.039,
     nucleon_mass_mev: float = 938.9,
     isoscalar_lecs: tuple[float, float] | None = None,
+    include_ope_fourier_contact: bool = True,
 ) -> dict[str, float]:
     """Evaluate the matched Norfolk N3LO isoscalar magnetic operators.
 
     This contracts Eqs. (2.12), (2.14), and (2.15) of Schiavilla et al.,
     arXiv:1809.10180, with the stretched coordinate-space deuteron state.
+    By default it also includes the regulated delta-function term generated
+    by the OPE Fourier transform and explicitly retained in the authors'
+    fitting code (Gnech, ``OPE_N3LO_fourier_transform.pdf``, July 2026).
     Returned values are in nuclear magnetons.
     """
 
@@ -310,6 +314,7 @@ def norfolk_n3lo_magnetic_moment(
     ope_density = np.zeros_like(wave.grid)
     ope_i1_density = np.zeros_like(wave.grid)
     ope_i2_density = np.zeros_like(wave.grid)
+    ope_fourier_contact_density = np.zeros_like(wave.grid)
     for radial_index, (radius, u, w) in enumerate(zip(wave.grid, wave.u, wave.w)):
         z = radius / r_short
         contact_c0 = np.exp(-(z**2)) / (
@@ -331,16 +336,36 @@ def norfolk_n3lo_magnetic_moment(
         )
         i1 = prefactor * shape_1[0]
         i2 = prefactor * shape_2[0]
+        # The July-2026 note prints d_1^S in its Eq. (8), but this delta term
+        # comes from Fourier-transforming Eq. (1), which is proportional to
+        # d_2^S.  Using d_2^S preserves operator linearity and reproduces all
+        # four PRC106 Table-IV OPE entries, including the a/b sign reversal.
+        i_contact = (
+            -axial_coupling
+            / 12.0
+            * pion_mass_fm**2
+            / fpi_fm**2
+            * d2
+            * contact_c0
+            if include_ope_fourier_contact
+            else 0.0
+        )
 
         radial_products = np.asarray([u * u, u * w, w * w])
         contact_angular = np.dot(spin_coefficients, radial_products)
         ope_i1_angular = i1 * contact_angular
         ope_i2_angular = i2 * np.dot(tensor_coefficients, radial_products)
-        ope_angular = ope_i1_angular + ope_i2_angular
+        ope_fourier_contact_angular = i_contact * contact_angular
+        ope_angular = (
+            ope_i1_angular + ope_i2_angular + ope_fourier_contact_angular
+        )
         contact_density[radial_index] = contact_c0 * contact_angular
         ope_density[radial_index] = -3.0 * ope_angular
         ope_i1_density[radial_index] = -3.0 * ope_i1_angular
         ope_i2_density[radial_index] = -3.0 * ope_i2_angular
+        ope_fourier_contact_density[radial_index] = (
+            -3.0 * ope_fourier_contact_angular
+        )
 
     magnetic_conversion = -2.0 * nucleon_mass_mev / pion_mass_mev
     contact_coefficient = magnetic_conversion * simpson(
@@ -349,15 +374,23 @@ def norfolk_n3lo_magnetic_moment(
     ope = magnetic_conversion * simpson(ope_density, x=wave.grid)
     ope_i1 = magnetic_conversion * simpson(ope_i1_density, x=wave.grid)
     ope_i2 = magnetic_conversion * simpson(ope_i2_density, x=wave.grid)
+    ope_fourier_contact = magnetic_conversion * simpson(
+        ope_fourier_contact_density, x=wave.grid
+    )
     return {
         "minimal_contact": d1_min * contact_coefficient,
         "nonminimal_contact": d1 * contact_coefficient,
         "ope": ope,
         "ope_i1": ope_i1,
         "ope_i2": ope_i2,
-        "ope_unit_d2": ope / d2 if d2 != 0.0 else np.nan,
+        "ope_fourier_contact": ope_fourier_contact,
+        "ope_long_range": ope_i1 + ope_i2,
+        "ope_unit_d2": (ope_i1 + ope_i2) / d2 if d2 != 0.0 else np.nan,
         "ope_i1_unit_d2": ope_i1 / d2 if d2 != 0.0 else np.nan,
         "ope_i2_unit_d2": ope_i2 / d2 if d2 != 0.0 else np.nan,
+        "ope_fourier_contact_unit_d2": (
+            ope_fourier_contact / d2 if d2 != 0.0 else np.nan
+        ),
         "contact_unit_d1": contact_coefficient,
         "total": (d1_min + d1) * contact_coefficient + ope,
     }

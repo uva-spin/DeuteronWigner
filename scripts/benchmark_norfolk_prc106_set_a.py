@@ -43,11 +43,19 @@ def main() -> None:
             "d2_residual": result["ope"] - target["d2"],
             "d2_i1_calculated": result["ope_i1"],
             "d2_i2_calculated": result["ope_i2"],
+            "fourier_contact_calculated": result["ope_fourier_contact"],
+            "long_range_calculated": result["ope_long_range"],
             "unit_d1_contact": result["contact_unit_d1"],
             "unit_d2_i1": result["ope_i1_unit_d2"],
             "unit_d2_i2": result["ope_i2_unit_d2"],
-            "unit_d2_total": result["ope_unit_d2"],
-            "regulator": "I_k(r) -> C_RL(r) I_k(r)",
+            "unit_d2_long_range": result["ope_unit_d2"],
+            "unit_d2_fourier_contact": result[
+                "ope_fourier_contact_unit_d2"
+            ],
+            "regulator": (
+                "I_k(r) -> C_RL(r) I_k(r); "
+                "delta^3(r) -> C_RS(r/R_S)"
+            ),
             "d1_compatible_with_table_iv_error": abs(
                 result["nonminimal_contact"] - target["d1"]
             ) <= target["d1_error"],
