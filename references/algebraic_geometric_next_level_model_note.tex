@@ -1,0 +1,1123 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={An algebraic and geometric architecture for a predictive spin-1 light-front model},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}Predictive spin-1 light-front architecture}
+\fancyhead[R]{\small\color{darkgray}Algebraic and geometric formulation}
+\fancyfoot[L]{\small\color{darkgray}27 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.15}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\bT}{\bm{b}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\Alg}{\mathcal A}
+\newcommand{\Rep}{\mathcal V}
+\newcommand{\Path}{\mathrm{Path}}
+\newcommand{\Obj}{\operatorname{Obj}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\CP}{\mathrm{CP}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries An Algebraic and Geometric Architecture\\[2mm]
+for a Genuinely Predictive Spin-1 Light-Front Model}\\[4mm]
+\large Physical motivation, mathematical formulation, computational role,
+and limits of the proposal}
+\author{DeuteronWigner project}
+\date{27 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.93\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Purpose.}
+This note explains a proposed mathematical architecture for the next-level
+model identified in Section 15 of
+\texttt{references/model\_construction\_note.tex}.  The proposal is not that
+topology supplies missing QCD dynamics.  It is that graded Hilbert spaces,
+representation-theoretic intertwiners, gauge-bundle parallel transport,
+symplectic phase-space geometry, and convex positive-state geometry can make
+the physically required relations structural rather than optional.  A more
+limited chain-complex construction is proposed as an auditable bookkeeping
+device for Fock-sector transitions and double counting.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The present DeuteronWigner model is a constrained phenomenological synthesis:
+it preserves a common correlator architecture and many exact constraints, but
+important nucleon, gauge-link, tensor, gluon, and non-nucleonic components are
+still informed by separately fitted or modeled inputs.  A genuinely
+predictive replacement must instead generate many observables from a small
+set of shared microscopic interactions and states.  We propose organizing
+that calculation as a gauge-covariant graded light-front tensor category.
+The dynamical core is a regulated light-front Hamiltonian on flavor-, color-,
+spin-, orbital-, and Fock-graded Hilbert spaces.  Symmetry intertwiners define
+allowed couplings.  Gauge links are parallel transports in an \(SU(3)\)
+bundle and form a representation of a path groupoid.  GTMDs are common
+operator matrix elements whose TMD, GPD, form-factor, current, and OAM
+reductions must form commuting diagrams.  Transverse phase space is treated
+symplectically, parton--target correlators inhabit a convex positive cone, and
+nucleon-to-deuteron composition is represented, where applicable, by
+completely positive amplitude maps.  A filtered family of regulated theories
+defines convergence and renormalization tests.  We describe why each layer is
+physically justified, what it prevents, how it could be implemented, and
+which stronger topological claims should not be made.
+\end{abstract}
+
+\tableofcontents
+
+\section{The problem this formulation is meant to solve}
+
+The desired advance is a change in the source of prediction.  In the present
+model, many ingredients are physically informed and assembled under a common
+correlator contract,
+\begin{equation}
+\{\hbox{PDF/TMD fits, wave functions, response models, phase models}\}
+\longrightarrow W_D
+\longrightarrow \{F_i^D\}.
+\label{eq:assembled}
+\end{equation}
+This is scientifically useful, but correlations among different \(F_i^D\)
+are only as fundamental as the assumptions used in the assembly.  The
+next-level direction should instead be
+\begin{equation}
+\{H_{\LF},\mathcal R,\theta\}
+\longrightarrow
+\{|\Psi_N\rangle,|\Psi_D\rangle,U_\gamma\}
+\longrightarrow W_D
+\longrightarrow \{F_i^D,\mathcal O_{\rm process}\},
+\label{eq:generative}
+\end{equation}
+where \(H_{\LF}\) is a regulated and renormalized microscopic Hamiltonian,
+\(\mathcal R\) denotes the regulator and matching prescription, and
+\(\theta\) is a comparatively small set of shared interaction parameters.
+
+The mathematical problem is compositional.  A state carries simultaneously
+Fock sector, flavor, color, parton helicity, target helicity, OAM, gauge-link,
+and nuclear-component information.  Every contraction must respect exact
+selection rules.  Every projected TMD must remain traceable to the same
+amplitudes.  Every truncation must have a convergence meaning.  A flat array
+of independently parameterized functions is a poor representation of this
+structure.
+
+\subsection{Design criterion}
+
+We will regard a mathematical structure as useful only if it does at least
+one of the following:
+\begin{enumerate}
+\item makes an exact symmetry or admissibility condition automatic;
+\item prevents an inconsistent or double-counted composition;
+\item exposes a controlled approximation and its convergence direction;
+\item creates testable relations among observables derived from a common
+state;
+\item reduces redundant parameterization without suppressing a physical
+degree of freedom.
+\end{enumerate}
+Abstract terminology that meets none of these criteria should not enter the
+production model.
+
+\section{Graded light-front Hilbert space}
+
+\subsection{Sector and internal grading}
+
+The state space should be a direct sum
+\begin{equation}
+\Hil_{\LF}
+=
+\bigoplus_{\nu\in\mathcal F}\Hil_\nu,
+\qquad
+\nu=(n_q,n_{\bar q},n_g;B,Q,S,\ldots),
+\label{eq:graded-hilbert}
+\end{equation}
+over a set \(\mathcal F\) of retained Fock sectors.  Each sector has the
+form
+\begin{equation}
+\Hil_\nu
+=
+L^2(\mathcal M_\nu,\dd\mu_\nu)
+\otimes\Rep_{\rm flavor}
+\otimes\Rep_{\rm color}
+\otimes\Rep_{\rm spin}
+\otimes\Rep_{\rm OAM},
+\label{eq:sector-space}
+\end{equation}
+where
+\begin{equation}
+\mathcal M_\nu=
+\left\{(x_i,\bm k_{iT})\,\middle|\,
+x_i>0,\quad
+\sum_i x_i=1,\quad
+\sum_i\bm k_{iT}=0
+\right\}.
+\label{eq:momentum-manifold}
+\end{equation}
+The measure contains the conventional light-front phase-space factors and
+the constraint delta functions.
+
+This formulation gives support and momentum conservation a geometric
+location: amplitudes are defined on the momentum simplex and transverse
+constraint surface.  Flavor, color, spin, and OAM are not metadata but
+representation factors acted on by explicit operators.
+
+\subsection{Block Hamiltonian and Fock transitions}
+
+The mass eigenproblem is
+\begin{equation}
+H_{\LF}|\Psi_h(P,\Lambda)\rangle
+=M_h^2|\Psi_h(P,\Lambda)\rangle,
+\qquad
+H_{\LF}=P^+P^- -\bm P_T^2.
+\label{eq:lf-eigen}
+\end{equation}
+With sector projectors \(P_\nu\), define
+\begin{equation}
+H_{\nu\mu}=P_\nu H_{\LF}P_\mu.
+\end{equation}
+The diagonal blocks contain kinetic and sector-preserving interactions;
+off-diagonal blocks generate emissions, absorption, and pair creation:
+\begin{equation}
+H_{\LF}\sim
+\begin{pmatrix}
+H_{qqq} & V_{qqq,qqqg} & V_{qqq,qqqq\bar q}&\cdots\\
+V^\dagger_{qqq,qqqg}&H_{qqqg}&V_{qqqg,qqqq\bar q}&\cdots\\
+V^\dagger_{qqq,qqqq\bar q}&V^\dagger_{qqqg,qqqq\bar q}
+&H_{qqqq\bar q}&\cdots\\
+\vdots&\vdots&\vdots&\ddots
+\end{pmatrix}.
+\label{eq:block-hamiltonian}
+\end{equation}
+This is the natural setting for basis light-front quantization (BLFQ),
+Hamiltonian effective field theory, or a compatible continuum bound-state
+solution mapped to light-front amplitudes \cite{Vary2009}.
+
+\subsection{Why the grading matters}
+
+The grading provides explicit answers to questions that are otherwise
+hidden:
+\begin{itemize}
+\item Which sea distribution is generated by which pair-creation sector?
+\item Which gluon TMD receives support from \(qqqg\) rather than an assigned
+gluon profile?
+\item Which spin--orbit observable requires interference between which
+\(L_z\) sectors?
+\item Which counterterm compensates the integration-out of a sector?
+\item Does an apparent prediction stabilize as sectors are enlarged?
+\end{itemize}
+It also prevents a nucleon gluon input and an explicit \(qqqg\) sector from
+being included without an explicit matching or subtraction rule.
+
+\section{Representation theory as the coupling grammar}
+
+\subsection{Symmetry representations}
+
+At a regulated stage, the relevant exact or controlled symmetry action is
+organized by
+\begin{equation}
+G=
+SU(3)_{\rm color}
+\times SU(2)_{\rm isospin}
+\times SU(2)_{\rm spin}
+\times SO(2)_{L_z},
+\label{eq:group-product}
+\end{equation}
+supplemented by discrete parity, time-reversal, and charge-conjugation maps.
+The \(SU(2)_{\rm spin}\) factor must be understood with the appropriate
+light-front spin and Melosh/Wigner rotations; full Poincare covariance is a
+continuum-limit requirement rather than something guaranteed by writing
+\(SU(2)\).
+
+An interaction tensor is an intertwiner
+\begin{equation}
+C:\Rep_{R_1}\otimes\cdots\otimes\Rep_{R_n}\longrightarrow\Rep_{R_{\rm out}},
+\qquad
+C\,D_{\rm in}(g)=D_{\rm out}(g)\,C.
+\label{eq:intertwiner}
+\end{equation}
+Only invariant or correctly covariant tensors are parameterized.  Selection
+rules are therefore restrictions on the space of maps, not penalties added
+after fitting.
+
+\subsection{Spin-1 irreducible density structure}
+
+For a spin-1 target,
+\begin{equation}
+1\otimes1^*=0\oplus1\oplus2.
+\label{eq:spin1-decomp}
+\end{equation}
+Accordingly, the density operator decomposes into scalar, vector, and
+quadrupole pieces,
+\begin{equation}
+\rho_D
+=\rho_D^{(0)}
++\sum_{m=-1}^{1}S_m\,T_m^{(1)}
++\sum_{m=-2}^{2}Q_m\,T_m^{(2)}.
+\label{eq:density-irrep}
+\end{equation}
+The familiar \(U,L,T,LL,LT,TT\) labels are basis-dependent real
+combinations of these irreducible components.  Working first in the
+spherical-tensor basis has concrete benefits:
+\begin{itemize}
+\item rotations are implemented by Wigner \(D\)-matrices;
+\item vector and tensor responses cannot be silently conflated;
+\item pure-\(S\), \(S\)--\(D\), and additional OAM limits have explicit
+Clebsch--Gordan selection rules;
+\item the Cartesian TMD basis is produced by a fixed invertible map.
+\end{itemize}
+
+\subsection{Flavor and controlled isospin}
+
+Proton and neutron states should inhabit an isospin multiplet, but physical
+operators may include controlled breaking:
+\begin{equation}
+H_{\LF}=H_0+\delta H_{m_d-m_u}+\delta H_{\rm QED}
++\delta H_{\rm nuclear}.
+\label{eq:isospin-breaking}
+\end{equation}
+Exact isospin is recovered when the last three terms are disabled.  It is
+not implemented by assigning identical \(u\) and \(d\) functions.  The
+representation structure therefore permits both exact interchange tests and
+realistic charge-symmetry breaking.
+
+\subsection{Color invariants and gluon T-odd sectors}
+
+The two three-adjoint invariant tensors
+\begin{equation}
+f^{abc},\qquad d^{abc}
+\end{equation}
+define inequivalent color contractions.  They should be different
+intertwiner channels in the operator graph.  This prevents a common scalar
+``gluon T-odd amplitude'' from being copied into both sectors and allows a
+hard process to select its own linear combination.
+
+\section{A symmetry-preserving tensor-network realization}
+
+\subsection{What the network represents}
+
+A tensor network is proposed as a sparse computational representation of
+the amplitude and operator contractions, not as an assumption that QCD is
+one-dimensional or has low entanglement everywhere.  Edges carry
+\begin{equation}
+e=(\nu,R_c,R_I,j,\lambda,L_z,\alpha),
+\label{eq:edge-label}
+\end{equation}
+and nodes are physical maps: Hamiltonian vertices, spin couplers,
+wave-function coefficients, current insertions, Wilson-line vertices, or
+nuclear Fock-sector couplers.
+
+For example, a schematic deuteron amplitude is
+\begin{equation}
+|\Psi_D^\Lambda\rangle
+=
+\mathcal C_D^\Lambda\!
+\left[
+|\Psi_p\rangle\otimes|\Psi_n\rangle
+\oplus|\Psi_{NN\pi}\rangle
+\oplus|\Psi_{\Delta\Delta}\rangle
+\oplus|\Psi_{6q}\rangle+\cdots
+\right].
+\label{eq:deuteron-network}
+\end{equation}
+The \(NN\) coupling contains maps
+\begin{equation}
+C_{D,L}:
+\left(\tfrac12\otimes\tfrac12\right)_{S=1}
+\otimes L
+\longrightarrow J=1,
+\qquad L=0,2,\ldots .
+\label{eq:deuteron-intertwiner}
+\end{equation}
+
+\subsection{What it buys us}
+
+The network makes shared microscopic origin inspectable.  A parameter lives
+on one Hamiltonian vertex or state tensor and propagates to every observable
+that uses it.  It cannot become an independent coefficient for each TMD.
+Automatic differentiation through contractions can produce correlated
+sensitivities
+\begin{equation}
+J_{ia}=\frac{\partial\mathcal O_i}{\partial\theta_a},
+\qquad
+\operatorname{Cov}(\mathcal O)
+\simeq J\,\operatorname{Cov}(\theta)\,J^T,
+\label{eq:network-covariance}
+\end{equation}
+while retaining the exact symmetry blocks.
+
+\subsection{What it does not buy us}
+
+A tensor network does not make the interaction correct.  Aggressive
+low-rank truncation may discard precisely the OAM, color, or long-range
+correlations of interest.  Bond-dimension convergence must therefore be
+treated on the same footing as basis and Fock-sector convergence.  The
+network is a representation and contraction strategy, not a phenomenological
+replacement for \(H_{\LF}\).
+
+\section{Gauge links as bundle parallel transport}
+
+\subsection{Connection and holonomy}
+
+Let \(P(M,SU(3))\) be the color principal bundle over the relevant spacetime
+domain and
+\begin{equation}
+A=A_\mu^a t^a\,\dd x^\mu
+\end{equation}
+its connection.  The gauge link along an oriented path \(\gamma:a\to b\) is
+\begin{equation}
+U_\gamma[b,a]
+=\mathcal P\exp\left[-ig\int_\gamma A\right].
+\label{eq:holonomy}
+\end{equation}
+Parallel transport obeys the exact algebra
+\begin{equation}
+U_{\gamma_2\circ\gamma_1}
+=U_{\gamma_2}U_{\gamma_1},
+\qquad
+U_{\gamma^{-1}}=U_\gamma^\dagger .
+\label{eq:path-algebra}
+\end{equation}
+Quarks use the fundamental representation and gluons the adjoint
+representation.  Staple direction, transverse closure, rapidity regulator,
+and representation are properties of the operator itself.
+
+\subsection{The path groupoid}
+
+The admissible gauge-link paths form a groupoid:
+\begin{align}
+\Obj(\Path)&=\{\hbox{operator endpoints}\},\\
+\Hom_{\Path}(a,b)&=\{\gamma:a\to b\},\\
+\gamma^{-1}&:b\to a.
+\end{align}
+The Wilson-line assignment is a representation
+\begin{equation}
+\mathcal U_R:\Path\longrightarrow\operatorname{End}(\Rep_R),
+\qquad
+\gamma\longmapsto U_\gamma^{(R)}.
+\label{eq:path-representation}
+\end{equation}
+Future- and past-pointing staples are distinct morphisms.  Time reversal maps
+their classes into one another, so the familiar T-even/T-odd relations are
+implemented as transformations of operators:
+\begin{align}
+F_{\rm even}^{[\gamma_+]}&=F_{\rm even}^{[\gamma_-]},\\
+F_{\rm odd}^{[\gamma_+]}&=-F_{\rm odd}^{[\gamma_-]},
+\label{eq:link-reversal}
+\end{align}
+subject to the relevant conjugations and conventions.
+
+\subsection{Where the dynamics enters}
+
+The curvature
+\begin{equation}
+F=\dd A-igA\wedge A
+\label{eq:curvature}
+\end{equation}
+controls local path dependence.  Expanding the holonomy,
+\begin{equation}
+U_\gamma
+=1-ig\int_\gamma A
+-g^2\int_{\gamma}A\,A+\cdots ,
+\label{eq:holonomy-expansion}
+\end{equation}
+shows that absorptive phases and naive-T-odd functions must arise from
+intermediate states, pole prescriptions, and rescattering dynamics.  The
+path groupoid organizes which phase is allowed; it does not determine the
+phase numerically.  That requires the Hamiltonian gauge field and the
+factorization-appropriate eikonal limit.
+
+\subsection{Why this is geometric but not topological QCD}
+
+For a flat connection, holonomy may depend only on homotopy class.  QCD
+generically has \(F_{\mu\nu}\ne0\), so the Wilson line depends on the detailed
+path geometry.  It is therefore incorrect to call a Sivers or
+Boer--Mulders function a topological invariant.  Topology can classify link
+connectivity and closed cycles; the non-Abelian connection supplies their
+physical values.  This distinction is essential if the construction is to
+remain falsifiable.
+
+\section{GTMDs as common morphisms and commuting reductions}
+
+\subsection{Operator matrix element}
+
+For an operator label \(\Gamma\) and link path \(\gamma\), define
+\begin{equation}
+\mathcal W_{\Gamma,\gamma}:\Hil_h\longrightarrow\Hil_h.
+\end{equation}
+Its off-forward matrix element is
+\begin{equation}
+W_{\Lambda'\Lambda}^{[\Gamma,\gamma]}
+(x,\kT,\DT)
+=
+\langle P',\Lambda'|
+\mathcal W_{\Gamma,\gamma}(x,\kT,\DT)
+|P,\Lambda\rangle .
+\label{eq:gtmd-morphism}
+\end{equation}
+A wave-function calculation evaluates \cref{eq:gtmd-morphism} as overlaps of
+the same Fock amplitudes, including diagonal and, where required,
+off-diagonal sector terms.  GTMDs supply a natural common ancestor for TMD
+and GPD limits \cite{Meissner2008}.
+
+\subsection{Reduction maps}
+
+Define schematic linear maps
+\begin{align}
+\mathrm T[W]&=W|_{\DT=0},&
+\mathrm G[W]&=\int\dd^2\kT\,W,\nonumber\\
+\mathrm F[W]&=\int\dd x\,\dd^2\kT\,W,&
+\mathrm Q_\Gamma[W]&=\hbox{local-current reduction}.
+\label{eq:reduction-maps}
+\end{align}
+The predictive architecture requires compatible reductions to commute:
+\begin{equation}
+\mathrm F\circ\mathrm T[W]
+=
+\mathrm Q_\Gamma[W]
+\end{equation}
+where the regulator, matching scheme, and operator definitions make the
+identity applicable.  Similarly, nuclear composition \(\mathrm N\) and
+projection \(\mathrm P_i\) should satisfy
+\begin{equation}
+\mathrm P_i\circ\mathrm N[W_N]
+\stackrel{?}{=}
+\mathrm N_i\circ\mathrm P[W_N].
+\label{eq:nuclear-commute}
+\end{equation}
+Failure of \cref{eq:nuclear-commute} is not automatically an error: it may
+show that projection-dependent many-body currents or coherent terms are
+missing.  The commuting diagram is therefore both an architecture and a
+diagnostic.
+
+\subsection{Why this is more predictive}
+
+An independently fitted \(f_1\), \(g_1\), \(h_1\), Sivers function, and
+pretzelosity need not satisfy any common off-forward, current, or OAM
+relation.  If all are reductions of \cref{eq:gtmd-morphism}, their
+correlations follow from the state and operator.  A failure against a
+withheld observable then challenges the shared amplitudes rather than one
+isolated curve.
+
+\section{Symplectic geometry of transverse phase space}
+
+\subsection{Phase space and moment map}
+
+The transverse Wigner variables inhabit
+\begin{equation}
+T^*\mathbb R^2
+=\{(\bT,\kT)\},
+\end{equation}
+with canonical symplectic form
+\begin{equation}
+\omega
+=\dd b_x\wedge\dd k_x+\dd b_y\wedge\dd k_y.
+\label{eq:symplectic-form}
+\end{equation}
+The \(SO(2)\) rotation action has moment map
+\begin{equation}
+\mu_{L_z}(\bT,\kT)
+=b_xk_y-b_yk_x.
+\label{eq:moment-map}
+\end{equation}
+Thus an OAM expectation is a phase-space moment
+\begin{equation}
+\langle L_z\rangle
+=
+\int\dd x\,\dd^2\bT\,\dd^2\kT\,
+\mu_{L_z}(\bT,\kT)\,
+\rho_W(x,\bT,\kT;\gamma),
+\label{eq:oam-wigner}
+\end{equation}
+with an operator definition that retains its Wilson-line dependence
+\cite{Lorce2012}.
+
+\subsection{Transverse rank as representation weight}
+
+Functions \(e^{im\phi}\) carry irreducible \(SO(2)\) weight \(m\).
+Transverse-rank tensors are therefore organized by angular harmonics rather
+than by visually assigned powers of \(k_T\).  A matrix element obeys
+\begin{equation}
+\Delta L_z+\Delta\lambda_{\rm parton}
++\Delta\Lambda_{\rm target}=m_{\rm operator}.
+\label{eq:oam-selection}
+\end{equation}
+Equation~\eqref{eq:oam-selection} identifies which partial-wave
+interferences can contribute to worm gears, pretzelosity, tensor TMDs, and
+linearly polarized gluon distributions.  It also supplies controlled
+zero tests: a required interference vanishes when either participating
+amplitude is removed.
+
+\subsection{Caution about Wigner functions}
+
+The Wigner distribution is a quasiprobability and need not be pointwise
+positive.  Symplectic geometry organizes its transformations and moments;
+it must not be confused with the positive density-matrix cone discussed
+next.
+
+\section{Convex geometry and positivity by construction}
+
+\subsection{The correlator cone}
+
+At fixed kinematics, the combined parton--target helicity correlator must
+be Hermitian and positive semidefinite in the applicable forward
+probability interpretation:
+\begin{equation}
+\Phi(x,\kT)\in\CP_n
+\equiv\{X=X^\dagger\mid X\succeq0\}.
+\label{eq:positive-cone}
+\end{equation}
+Named TMDs are linear coordinates on the image of this cone under a
+projection map.  Their allowed region is therefore a convex spectrahedral
+set, not a Cartesian box of independent error bars.
+
+The most physical factorization is
+\begin{equation}
+\Phi_{\alpha\beta}
+=\sum_X A_{\alpha X}A_{\beta X}^*,
+\label{eq:amplitude-factor}
+\end{equation}
+where \(X\) labels intermediate or spectator states.  Numerically one may
+also use a Cholesky-like form
+\begin{equation}
+\Phi=LL^\dagger.
+\label{eq:cholesky}
+\end{equation}
+Hermiticity and positivity then hold for every parameter value.  Principal
+minors yield Soffer-like and spin-1 tensor bounds.  This density-matrix
+view is already the basis of known spin-1 gluon TMD positivity constraints
+\cite{Cotogno2017}.
+
+\subsection{Why clipping is unacceptable}
+
+If independently generated TMDs are assembled and negative eigenvalues are
+clipped, the model changes in a nonlinear and untraceable way.  In
+\cref{eq:amplitude-factor}, a positivity failure instead means that the
+claimed amplitudes or projection map are inconsistent.  Uncertainty samples
+remain inside the physical cone without erasing correlations among
+different functions.
+
+\subsection{Information geometry}
+
+For normalized positive states, distinguishability may be quantified by
+the quantum Fisher metric or relative entropy.  This has a concrete
+possible use in experiment design: identify observables that separate two
+microscopic mechanisms rather than merely enlarging an already constrained
+direction.  It should be introduced only after the physical density
+operator and likelihood are fixed.
+
+\section{Nucleon-to-deuteron composition as an amplitude map}
+
+\subsection{Completely positive impulse composition}
+
+For an incoherent retained subsystem, the nucleon-to-deuteron map can be
+written
+\begin{equation}
+\mathcal E_D(\rho_N)
+=
+\sum_\alpha K_\alpha\rho_NK_\alpha^\dagger,
+\label{eq:kraus}
+\end{equation}
+where \(\alpha\) includes spectator helicity, partial wave, recoil, and
+retained nuclear channel.  If the map is trace preserving,
+\begin{equation}
+\sum_\alpha K_\alpha^\dagger K_\alpha=I.
+\label{eq:trace-preserving}
+\end{equation}
+If probability flows to \(NN\pi\), \(\Delta\Delta\), or other explicit
+sectors, the corresponding maps must be added before imposing total
+normalization.
+
+The value of \cref{eq:kraus} is that positivity is inherited from the
+nucleon correlator.  Tensor polarization is generated by the angular and
+spin structure of the \(K_\alpha\), rather than by multiplying an
+unpolarized answer by an arbitrary tensor factor.
+
+\subsection{Limits of the quantum-channel picture}
+
+Coherent shadowing, phases between Fock sectors, and many-body currents
+must be computed at the amplitude level before an environmental trace.
+An apparently non-completely-positive reduced approximation may indicate
+that a coherent degree of freedom was traced out inconsistently.  We should
+not force every nuclear mechanism into an incoherent Kraus map.  Instead,
+the full amplitude is primary and the channel representation is used where
+its assumptions are satisfied.
+
+\section{Chain complexes for composition and double counting}
+
+\subsection{A deliberately limited topological layer}
+
+Let \(C_n\) be the vector space generated by retained configurations with
+\(n\) resolved transitions relative to a reference sector.  A boundary map
+\begin{equation}
+\partial_n:C_n\longrightarrow C_{n-1},
+\qquad
+\partial_{n-1}\partial_n=0,
+\label{eq:chain-complex}
+\end{equation}
+records the endpoints and signs of sector-transition sequences.  Examples
+include
+\[
+NN\leftrightarrow NN\pi,\qquad
+qqq\leftrightarrow qqqg,\qquad
+qqq\leftrightarrow qqqq\bar q.
+\]
+
+This layer can support:
+\begin{itemize}
+\item automated detection of the same pion dressing represented both inside
+a nucleon input and as an explicit \(NN\pi\) sector;
+\item association of effective operators and counterterms with the sectors
+that were integrated out;
+\item classification of closed transition cycles requiring interference or
+unitarity checks;
+\item provenance paths from a final observable back to its amplitude
+components.
+\end{itemize}
+
+The homology
+\begin{equation}
+H_n=\ker\partial_n/\operatorname{im}\partial_{n+1}
+\label{eq:homology}
+\end{equation}
+would classify independent cycles not reducible to already represented
+higher transitions.  This is initially an audit construction, not a claim
+that physical amplitudes depend only on a homology class.
+
+\subsection{Why category language is also useful}
+
+Objects can represent typed state/operator spaces; morphisms represent
+Hamiltonian evolution, Wilson transport, projection, matching, evolution,
+or nuclear composition.  Composition is allowed only when domains,
+codomains, schemes, link classes, and quantum numbers match.  This provides
+a mathematically precise version of the project's fail-closed typed
+interfaces.
+
+We do not need sophisticated category theory to implement this.  Sparse
+block tensors plus checked domain/codomain metadata are sufficient.  The
+categorical viewpoint is valuable because it states what must compose and
+which diagrams must commute.
+
+\section{Regulator, renormalization, and convergence as a filtration}
+
+\subsection{Nested regulated spaces}
+
+Define a family of calculations
+\begin{equation}
+\Hil_1\hookrightarrow\Hil_2\hookrightarrow\cdots,
+\qquad
+\Hil_n=\Hil(\Lambda_n,N_{\max,n},\mathcal F_n),
+\label{eq:filtration}
+\end{equation}
+that enlarges ultraviolet resolution, basis size, and Fock content.  Each
+level has
+\begin{equation}
+H^{(n)}=H_0^{(n)}+\sum_a c_a^{(n)}O_a^{(n)}.
+\end{equation}
+Matching maps
+\begin{equation}
+R_{n+1\to n}:\Alg_{n+1}\longrightarrow\Alg_n
+\label{eq:matching-map}
+\end{equation}
+relate effective operators across truncations.  For calibration observables,
+\begin{equation}
+R_{n+1\to n}[\mathcal O^{(n+1)}]
+=\mathcal O^{(n)}+\delta_n,
+\qquad
+\delta_n\to0
+\label{eq:projective-consistency}
+\end{equation}
+within an estimated truncation law.
+
+\subsection{Acceptance meaning}
+
+A smooth result at one \(N_{\max}\) is not a prediction.  A predictive
+claim requires stability under:
+\begin{itemize}
+\item basis enlargement;
+\item regulator variation with counterterm refitting;
+\item addition of the next physically required Fock sector;
+\item increased tensor-network bond or factorization rank;
+\item quadrature and grid refinement.
+\end{itemize}
+The correlated spread across these directions is a model-discrepancy
+component, not interchangeable with posterior parameter uncertainty.
+
+\section{Inference and falsifiability}
+
+\subsection{Shared microscopic parameters}
+
+Let \(\theta\) contain masses, couplings, regulator-dependent counterterms,
+and a restricted number of effective interactions.  The posterior is
+\begin{equation}
+p(\theta,\delta_{\rm EFT}\mid D_{\rm cal})
+\propto
+p(D_{\rm cal}\mid\theta,\delta_{\rm EFT})
+p(\theta)p(\delta_{\rm EFT}).
+\label{eq:posterior}
+\end{equation}
+The calibration data may include masses, elastic currents, selected
+nucleon PDFs/charges, deuteron static properties, and a limited set of
+process observables.  It must not include a free normalization and
+transverse width for every TMD.
+
+The predictive distribution for withheld data is
+\begin{equation}
+p(D_{\rm hold}\mid D_{\rm cal})
+=\int\dd\theta\,\dd\delta_{\rm EFT}\,
+p(D_{\rm hold}\mid\theta,\delta_{\rm EFT})
+p(\theta,\delta_{\rm EFT}\mid D_{\rm cal}).
+\label{eq:posterior-predictive}
+\end{equation}
+A failed withheld family must revise the state, interaction, current, or
+truncation model.  Adding a coefficient directly to the failed TMD would
+return us to the patchwork construction.
+
+\subsection{The prediction hierarchy}
+
+The strongest test is cross-channel:
+\begin{enumerate}
+\item calibrate a common Hamiltonian using spectroscopy, currents, and a
+restricted set of partonic data;
+\item predict GTMD marginals not used in calibration;
+\item predict link-reversal or color-channel relations;
+\item predict tensor-polarized and gluon observables;
+\item propagate without retuning into deuteron observables.
+\end{enumerate}
+The framework is worthwhile only if it makes such tests possible.
+
+\section{Software realization}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.28\textwidth}L{0.64\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{SectorSpace} &
+Momentum manifold, basis, Fock grade, representations, regulator, and
+normalization.\\
+\texttt{Intertwiner} &
+Sparse invariant tensor with explicit domain, codomain, multiplicity, and
+symmetry tests.\\
+\texttt{LFHamiltonian} &
+Hermitian block operator, counterterms, sector-changing vertices, and
+eigensolver adapter.\\
+\texttt{FockState} &
+Normalized amplitudes, phase convention, member identity, and truncation
+metadata.\\
+\texttt{PathGroupoid} and \texttt{WilsonTransport} &
+Admissible link paths, inverse/composition laws, color representation,
+rapidity scheme, and dynamical holonomy evaluation.\\
+\texttt{GTMDOperator} &
+Off-forward operator insertion and common Fock-overlap evaluator.\\
+\texttt{ReductionMap} &
+Typed TMD, GPD, current, form-factor, and OAM reductions with commuting
+diagram tests.\\
+\texttt{NuclearAmplitudeMap} &
+Spin-1 Fock composition, coherent mechanisms, currents, and controlled
+partial trace.\\
+\texttt{PositiveCorrelator} &
+Amplitude or \(LL^\dagger\) representation and irreducible TMD coordinates.\\
+\texttt{TruncationTower} &
+Regulator/basis/Fock filtration, matching maps, convergence fits, and
+model-discrepancy estimates.\\
+\texttt{ProvenanceComplex} &
+Transition graph, no-double-counting audit, source/replacement information,
+and observable ancestry.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Required property-based tests}
+
+\begin{enumerate}
+\item Intertwiners commute with every represented symmetry generator.
+\item \(H_{\LF}=H_{\LF}^\dagger\), and its Poincare commutator defects decrease
+along the truncation tower.
+\item Wilson transport respects path concatenation and inversion.
+\item Time reversal maps future and past link operators with the correct
+T-even/T-odd behavior.
+\item GTMD reduction diagrams commute within regulator and numerical
+tolerances.
+\item Density correlators remain positive without eigenvalue clipping.
+\item Spin-1 rotations reproduce the irreducible \(0\oplus1\oplus2\)
+transformation law.
+\item Nuclear maps close total probability and momentum only after all
+declared Fock sectors are included.
+\item Disabling either amplitude in an OAM interference removes the
+corresponding harmonic.
+\item Sector-transition provenance detects deliberately duplicated pion,
+gluon, or sea mechanisms.
+\end{enumerate}
+
+\subsection{Role of PennyLane}
+
+PennyLane could prototype small symmetry-reduced Hamiltonian blocks or
+state-composition circuits only after specifying the physical basis,
+Hamiltonian, observables, and encoding.  A circuit should be accepted only
+if it reproduces exact diagonalization in the same truncated Hilbert space
+and offers a concrete advantage for variational eigensolving, differentiation,
+or correlation diagnostics.  A generic entangling circuit with no map to
+Fock amplitudes would add parameters without physics and should be rejected.
+
+\section{Staged research program}
+
+\subsection{Stage A: algebraic skeleton with analytic benchmarks}
+
+\begin{enumerate}
+\item Implement irreducible color, isospin, spin-1, and \(SO(2)\) OAM labels.
+\item Encode the existing model's correlators as positive block tensors
+without changing their central physics.
+\item Implement path-groupoid link types and exact transformation laws.
+\item Establish commuting reductions on analytic two- and three-body
+light-front models.
+\end{enumerate}
+This stage tests the architecture without claiming new dynamics.
+
+\subsection{Stage B: microscopic nucleon pilot}
+
+Choose one controlled Hamiltonian route and solve at least
+\[
+|qqq\rangle\oplus|qqqg\rangle\oplus|qqqq\bar q\rangle
+\]
+at multiple truncations.  Compute a nonzero-\(\DT\) quark/gluon GTMD subset,
+its TMD/GPD/current reductions, and OAM moments.  Compare with known nucleon
+charges, PDFs, form factors, and lattice moments.  The pilot is successful
+only if more than one observable family is predicted from shared
+parameters.
+
+\subsection{Stage C: dynamical gauge-link pilot}
+
+Add an eikonal Wilson-line interaction derived from the same gauge sector.
+Test:
+\begin{itemize}
+\item vanishing of naive-T-odd functions at zero rescattering;
+\item exact future/past reversal;
+\item flavor and operator differences from shared intermediate states;
+\item separate gluon \(f\)- and \(d\)-type contractions;
+\item stability against regulator and Fock enlargement.
+\end{itemize}
+
+\subsection{Stage D: spin-1 microscopic composition}
+
+Construct the deuteron from a consistent \(NN\) interaction and current,
+then add \(NN\pi\) and any retained non-nucleonic sectors with normalization
+and subtraction rules.  Reproduce binding, static moments, elastic form
+factors, and controlled \(b_1\) limits before predicting the full tensor TMD
+sector.
+
+\subsection{Stage E: inference, evolution, and withheld validation}
+
+Match to a declared TMD scheme, evolve all ranks and coupled partonic
+sectors, calibrate shared parameters, and reserve at least one observable
+family for posterior predictive validation.  This stage is the first point
+at which the phrase ``genuinely predictive next-level model'' could be
+audited.
+
+\section{Risks and explicit nonclaims}
+
+\begin{longtable}{L{0.25\textwidth}L{0.34\textwidth}L{0.33\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+Decorative topology &
+Calling link classes or TMDs topological invariants without a dynamical
+derivation. &
+Restrict topology to path/transition organization; retain connection and
+Hamiltonian dependence.\\
+Symmetry overconstraint &
+Exact isospin or truncated rotational symmetry erases physical breaking. &
+Implement breaking operators and test the symmetric limit separately.\\
+Tensor-network bias &
+Low bond dimension suppresses long-range or OAM correlations. &
+Publish bond-rank convergence alongside basis/Fock convergence.\\
+Positivity misuse &
+Demanding pointwise positivity of a Wigner quasidistribution. &
+Apply convex positivity to the appropriate forward helicity correlator,
+not to all phase-space representations.\\
+Channel misuse &
+Forcing coherent shadowing into an incoherent completely positive map. &
+Retain amplitude phases and trace only after the coherent calculation.\\
+Renormalization gap &
+Treating a finite Hamiltonian matrix as QCD without counterterms or
+matching. &
+Specify regulator, counterterms, matching observables, and truncation flow.\\
+Parameter migration &
+Adding one latent coefficient per TMD inside sophisticated notation. &
+Attach parameters only to microscopic vertices, currents, or controlled
+discrepancy operators.\\
+\bottomrule
+\end{longtable}
+
+\section{Recommended decision}
+
+The recommended foundation is a
+\emph{gauge-covariant graded light-front tensor architecture with
+convex-state geometry}.  Its indispensable elements are:
+\begin{enumerate}
+\item the graded regulated light-front Hilbert space and Hamiltonian;
+\item representation-theoretic intertwiners for color, flavor, spin, OAM,
+and spin-1 polarization;
+\item common GTMD operators and commuting observable reductions;
+\item Wilson-line parallel transport represented on an admissible path
+groupoid;
+\item symplectic organization of transverse phase space and OAM;
+\item positive-semidefinite amplitude geometry for forward correlators;
+\item a filtered truncation tower with matching and convergence.
+\end{enumerate}
+The tensor-network implementation is strongly recommended as the sparse
+computational realization.  The chain-complex layer is recommended initially
+as a provenance and no-double-counting audit.  More ambitious topological
+constructions should be deferred until a concrete physical observable or
+computational obstruction requires them.
+
+The proposal does not generate the interaction Hamiltonian, determine
+counterterms, or solve QCD by terminology.  Its value is stricter and more
+practical: it gives the microscopic calculation a structure in which flavor,
+spin, OAM, gauge link, color, nuclear composition, positivity, and
+uncertainty cannot drift apart.  If implemented faithfully, it would convert
+many of the project's present validation tests into consequences of the
+representation and would make the remaining failures scientifically
+diagnostic.
+
+\appendix
+\section{Compact mathematical dictionary}
+
+\begin{tabularx}{\textwidth}{L{0.29\textwidth}Y}
+\toprule
+Physical concept & Mathematical object\\
+\midrule
+Fock sectors & Grading and direct-sum Hilbert space\\
+Momentum support & Simplex/constraint manifold \(\mathcal M_\nu\)\\
+Flavor, color, spin, OAM & Group representations and irreducible labels\\
+Allowed interaction & Equivariant intertwiner\\
+Spin-1 vector/tensor polarization & Rank \(1\) and \(2\) spherical tensors\\
+Sparse state contraction & Symmetry-preserving tensor network\\
+Gauge link & Bundle parallel transport/holonomy\\
+Process-dependent staple & Morphism in a path groupoid\\
+GTMD & Gauge-covariant operator morphism/matrix element\\
+TMD/GPD/current/OAM limits & Typed reduction maps\\
+Consistency identity & Commuting diagram\\
+Transverse OAM & Moment map on \(T^*\mathbb R^2\)\\
+Forward positivity & Positive-semidefinite convex cone\\
+Impulse nuclear dressing & Completely positive amplitude map where valid\\
+Sector bookkeeping & Chain complex/provenance graph\\
+Truncation sequence & Filtered Hilbert spaces/projective matching system\\
+Predictive uncertainty & Pushforward of shared posterior plus discrepancy\\
+\bottomrule
+\end{tabularx}
+
+\section{Acceptance questions for adopting the architecture}
+
+\begin{enumerate}
+\item Can every tensor index be mapped to a physical degree of freedom or
+controlled numerical basis label?
+\item Does every parameter belong to a Hamiltonian term, state amplitude,
+current, matching coefficient, or explicit discrepancy operator?
+\item Are Wilson paths and color representations part of operator identity?
+\item Can at least two different observable reductions be computed from the
+same nonzero-transfer correlator?
+\item Is positivity structural rather than repaired?
+\item Can exact isospin, pure-\(S\), zero-rescattering, and zero-additional-
+Fock-sector limits be recovered?
+\item Is every approximation embedded in a convergence sequence?
+\item Does the architecture enable a genuinely withheld prediction?
+\end{enumerate}
+A negative answer does not necessarily reject the entire formulation, but
+it identifies the next concrete design or physics problem.
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{Vary2009}
+J.~P.~Vary et al.,
+``Hamiltonian light-front field theory in a basis function approach,''
+Phys.\ Rev.\ C \textbf{81}, 035205 (2010),
+arXiv:0905.1411.
+
+\bibitem{Meissner2008}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-\(\tfrac12\)
+hadron,'' JHEP \textbf{08}, 056 (2009),
+arXiv:0906.5323; see also arXiv:0807.1154.
+
+\bibitem{Lorce2012}
+C.~Lorc\'e,
+``Wilson lines and orbital angular momentum,''
+Phys.\ Lett.\ B \textbf{719}, 185 (2013),
+arXiv:1210.2581.
+
+\bibitem{Cotogno2017}
+S.~Cotogno, T.~van Daal, and P.~J.~Mulders,
+``Positivity bounds on gluon TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{11}, 185 (2017),
+arXiv:1709.07827.
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000),
+arXiv:hep-ph/0007120.
+
+\bibitem{Boer2016}
+D.~Boer et al.,
+``Gluon and Wilson loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016),
+arXiv:1607.01654.
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\end{thebibliography}
+
+\end{document}

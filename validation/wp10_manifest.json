@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "scope": "Required rich spin-1 dynamical structure (WP10)",
+  "completion_ready": true,
+  "criteria": [
+    {
+      "id": "quark_gauge_link_todd",
+      "status": "complete",
+      "implementation_files": ["src/deuteron_wigner/gauge_link_phase.py", "src/deuteron_wigner/boer_mulders.py", "src/deuteron_wigner/bpv20_sivers.py", "src/deuteron_wigner/axial_tensor_todd.py"],
+      "tests": ["tests/test_gauge_link_phase.py", "tests/test_boer_mulders.py", "tests/test_bpv20_sivers.py", "tests/test_boer_mulders_production_scenarios.py", "tests/test_axial_tensor_todd.py", "tests/test_axial_tensor_todd_production.py"],
+      "artifacts": ["outputs/parent_tmds/ensemble/rich_todd_parent_ensemble.csv", "outputs/parent_tmds/boer_mulders_parent_scenarios.csv", "outputs/parent_tmds/quark_axial_tensor_todd_stages.csv", "outputs/parent_tmds/quark_axial_tensor_todd_stages.correlators.csv", "outputs/validation/boer_mulders_parent_convergence.json", "outputs/validation/axial_tensor_eikonal_convergence.json", "output/pdf/quark_g1lt_g1tt_two_stage_atlas.pdf"],
+      "documentation": ["references/rich_spin1_extensions.md", "references/quark_axial_tensor_todd.md"],
+      "remaining": ""
+    },
+    {
+      "id": "worm_gears_pretzelosity",
+      "status": "complete",
+      "implementation_files": ["src/deuteron_wigner/worm_gear_inputs.py", "src/deuteron_wigner/nucleon_inputs.py", "src/deuteron_wigner/oam_interference.py"],
+      "tests": ["tests/test_worm_gear_inputs.py", "tests/test_rich_quark_production_output.py", "tests/test_oam_parent_production_output.py"],
+      "artifacts": ["outputs/parent_tmds/quark_av18_rich_medium.csv", "outputs/parent_tmds/quark_av18_oam_medium.csv", "outputs/parent_tmds/pretzelosity_scenarios.validation.json"],
+      "documentation": ["references/rich_spin1_extensions.md", "references/pretzelosity_input.md"],
+      "remaining": ""
+    },
+    {
+      "id": "gluon_color_todd",
+      "status": "complete",
+      "implementation_files": ["src/deuteron_wigner/gluon_todd.py"],
+      "tests": ["tests/test_gluon_todd.py", "tests/test_complete_gluon_todd_production_output.py", "tests/test_spectator_informed_gluon_todd.py", "tests/test_spectator_informed_gluon_todd_production.py"],
+      "artifacts": ["outputs/parent_tmds/complete_gluon_todd_multiplet.csv", "outputs/parent_tmds/complete_gluon_todd_multiplet.correlators.csv", "output/pdf/complete_gluon_todd_multiplet_atlas.pdf", "outputs/parent_tmds/gluon_todd_two_stage_predictions.csv", "outputs/parent_tmds/gluon_todd_two_stage_predictions.correlators.csv", "output/pdf/gluon_todd_two_stage_prediction_atlas.pdf"],
+      "documentation": ["references/rich_spin1_extensions.md"],
+      "remaining": ""
+    },
+    {
+      "id": "polarized_tensor_shadowing",
+      "status": "complete",
+      "implementation_files": ["src/deuteron_wigner/nuclear_mechanisms.py", "src/deuteron_wigner/gluon_nuclear_mechanisms.py"],
+      "tests": ["tests/test_nuclear_mechanisms.py", "tests/test_gluon_nuclear_mechanisms.py", "tests/test_quark_shadowing_production_output.py", "tests/test_gluon_shadowing_production_output.py"],
+      "artifacts": ["outputs/parent_tmds/quark_polarized_tensor_shadowing_scenarios.csv", "outputs/parent_tmds/gluon_polarized_tensor_shadowing_scenarios.csv", "outputs/validation/gluon_shadowing_joint_positivity.json"],
+      "documentation": ["references/rich_spin1_extensions.md"],
+      "remaining": ""
+    },
+    {
+      "id": "mesonic_nonnucleonic",
+      "status": "complete",
+      "implementation_files": ["src/deuteron_wigner/pion_tmd.py", "src/deuteron_wigner/hidden_color_cluster_lfwf.py"],
+      "tests": ["tests/test_pion_tmd.py", "tests/test_pion_production_output.py", "tests/test_cluster_production_output.py"],
+      "artifacts": ["outputs/parent_tmds/spin_resolved_pion_tmds.csv", "outputs/parent_tmds/nonnucleonic_cluster_tmds.csv", "outputs/validation/pion_hankel_convergence.json", "outputs/figures/b1/b1_ia_pion_vs_hermes.pdf"],
+      "documentation": ["references/rich_spin1_extensions.md", "references/miller_pion_exchange_input.md"],
+      "remaining": ""
+    },
+    {
+      "id": "oam_interference",
+      "status": "complete",
+      "implementation_files": ["src/deuteron_wigner/oam_interference.py"],
+      "tests": ["tests/test_oam_interference.py", "tests/test_oam_parent_production_output.py"],
+      "artifacts": ["outputs/parent_tmds/quark_av18_oam_medium.csv", "output/pdf/quark_oam_parent_scenario_comparison.pdf"],
+      "documentation": ["references/rich_spin1_extensions.md"],
+      "remaining": ""
+    },
+    {
+      "id": "production_acceptance",
+      "status": "complete",
+      "implementation_files": ["scripts/build_wp10_production_ledger.py", "scripts/build_complete_gluon_todd_atlas.py", "scripts/build_parent_tmd_ensemble.py"],
+      "tests": ["tests/test_wp10_production_ledger.py", "tests/test_figure_acceptance.py", "tests/test_tmd_atlas_pdf_audit.py"],
+      "artifacts": ["outputs/parent_tmds/wp10_production_member_ledger.csv", "outputs/parent_tmds/wp10_production_member_ledger.metadata.json", "outputs/figures/figure_index.json"],
+      "documentation": ["references/rich_spin1_extensions.md", "handoff/ROADMAP.md"],
+      "remaining": ""
+    }
+  ],
+  "declared_limitations": [
+    "Yang-2024 g1T is used at its published central boundary; no machine-readable replica covariance is publicly available, so no statistical band is fabricated.",
+    "Pretzelosity remains model dependent. The four spin-half gluon T-odd functions are source-informed by the published full-vertex spectator calculation, while spin-1 g1LT/g1TT are AV18-eikonal predictions; none is claimed as a fit at Q=5 GeV.",
+    "Polarized and tensor diffractive ratios are model scenarios anchored only by the unpolarized H1/FGS response.",
+    "The pion component uses a rank-zero intrinsic pion transform; a fully coupled transverse NNpi recoil counterterm is a replaceable external-data upgrade.",
+    "The effective cluster has transverse cluster motion but retains a collinear intrinsic parton-in-cluster boundary.",
+    "Alternative fit, OAM, color, shadowing, pion, and cluster rows are not a joint probability ensemble and may not be summed unless their combine_policy permits it."
+  ]
+}

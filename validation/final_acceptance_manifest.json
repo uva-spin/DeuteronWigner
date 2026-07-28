@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "scope": "Final project acceptance for the leading-twist spin-1 deuteron LF GTMD/TMD model",
+  "criteria": [
+    {
+      "id": "complete_basis",
+      "criterion": "Declared spin-1 quark, antiquark, and gluon TMD content is enumerated and implemented",
+      "implementation_files": ["src/deuteron_wigner/registry.py", "src/deuteron_wigner/quark_correlator.py", "src/deuteron_wigner/gluon_correlator.py"],
+      "tests": ["tests/test_tmd.py", "tests/test_quark_correlator.py", "tests/test_gluon_correlator.py"],
+      "artifacts": ["outputs/parent_tmds/ensemble/quark_parent_tmd_ensemble.csv", "outputs/parent_tmds/ensemble/gluon_parent_tmd_ensemble.csv"],
+      "documentation": ["handoff/ROADMAP.md", "references/spin1_representation_map.md"]
+    },
+    {
+      "id": "flavor_nucleon_resolution",
+      "criterion": "u,d,ubar,dbar and proton/neutron sources remain distinct until controlled assembly",
+      "implementation_files": ["src/deuteron_wigner/nucleon_inputs.py", "src/deuteron_wigner/gtmd_convolution.py"],
+      "tests": ["tests/test_nucleon_inputs.py", "tests/test_figure_acceptance.py"],
+      "artifacts": ["outputs/validation/parent_tmd_figure_acceptance.json", "outputs/parent_tmds/ensemble/quark_flavor_source_decomposition.csv"],
+      "documentation": ["references/production_tmd_architecture_audit.md"]
+    },
+    {
+      "id": "spin1_parent",
+      "criterion": "Vector/tensor target structure and named TMDs derive from inspectable retained-helicity LF parent correlators",
+      "implementation_files": ["src/deuteron_wigner/parent_quark_tmd.py", "src/deuteron_wigner/gtmd_convolution.py", "src/deuteron_wigner/correlator_io.py"],
+      "tests": ["tests/test_parent_quark_tmd.py", "tests/test_gtmd_convolution.py"],
+      "artifacts": ["outputs/parent_tmds/quark_av18_fine.correlators.csv", "outputs/parent_tmds/gluon_av18_medium.correlators.csv"],
+      "documentation": ["references/production_tmd_architecture_audit.md"]
+    },
+    {
+      "id": "offforward_reductions",
+      "criterion": "Physical LF nuclear off-forward parent has commuting GTMD/TMD/GPD/Wigner reductions and component closure",
+      "implementation_files": ["src/deuteron_wigner/gtmd_convolution.py", "src/deuteron_wigner/gtmd_sampling.py"],
+      "tests": ["tests/test_offforward_reductions.py", "tests/test_stage0_core.py"],
+      "artifacts": ["outputs/validation/physical_offforward_reductions.json"],
+      "documentation": ["handoff/ROADMAP.md"]
+    },
+    {
+      "id": "nuclear_mechanisms",
+      "criterion": "Nuclear mechanisms have separate typed contributions, regimes, switches, uncertainty, and replacement interfaces",
+      "implementation_files": ["src/deuteron_wigner/nuclear_mechanisms.py", "src/deuteron_wigner/gluon_nuclear_mechanisms.py", "src/deuteron_wigner/pion_exchange.py"],
+      "tests": ["tests/test_nuclear_mechanisms.py", "tests/test_gluon_nuclear_mechanisms.py", "tests/test_pion_exchange.py"],
+      "artifacts": ["outputs/figures/b1/b1_ia_pion_vs_hermes.validation.json", "outputs/validation/gluon_shadowing_joint_positivity.json"],
+      "documentation": ["references/gluon_nuclear_mechanism_boundary.md", "references/miller_pion_exchange_input.md"]
+    },
+    {
+      "id": "symmetry_factorization",
+      "criterion": "Hermiticity, parity, time reversal, gauge links, gluon color classes, scheme, and validity domains are enforced",
+      "implementation_files": ["src/deuteron_wigner/tmd_scheme.py", "src/deuteron_wigner/gluon_todd.py", "src/deuteron_wigner/w_y_matching.py"],
+      "tests": ["tests/test_tmd_scheme.py", "tests/test_gluon_todd.py", "tests/test_w_y_matching.py"],
+      "artifacts": ["outputs/validation/gluon_av18_wterm_marginal.audit.json"],
+      "documentation": ["references/tmd_scheme_contract.md", "references/sidis_matching.md"]
+    },
+    {
+      "id": "validation_uncertainty",
+      "criterion": "All grouped symmetry, positivity, moment, limit, benchmark, and uncertainty requirements pass",
+      "implementation_files": ["src/deuteron_wigner/joint_positivity.py", "src/deuteron_wigner/moment_ledger.py", "src/deuteron_wigner/uncertainty_axes.py"],
+      "tests": ["tests/test_wp8_validation_manifest.py"],
+      "artifacts": ["outputs/validation/wp8_acceptance_report.json", "outputs/validation/av18_parent_moment_coverage.json", "outputs/validation/jamdiff_joint_positivity.json"],
+      "documentation": ["references/wp8_validation_matrix.md"]
+    },
+    {
+      "id": "benchmarks",
+      "criterion": "Known limits and benchmark observables, including b1 versus HERMES, are reproducible",
+      "implementation_files": ["src/deuteron_wigner/controlled_limits.py", "src/deuteron_wigner/pion_exchange.py"],
+      "tests": ["tests/test_controlled_limits.py", "tests/test_pion_exchange.py"],
+      "artifacts": ["outputs/validation/controlled_limits.audit.json", "outputs/figures/b1/b1_ia_pion_vs_hermes.pdf"],
+      "documentation": ["references/controlled_limit_audit.md", "references/miller_pion_exchange_input.md"]
+    },
+    {
+      "id": "production_figures",
+      "criterion": "Smooth dimensional F curves, separated bands, flavor-source views, vector PDFs, and validity markings pass every-page QA",
+      "implementation_files": ["scripts/build_parent_tmd_ensemble.py", "scripts/build_quark_flavor_source_atlas.py", "src/deuteron_wigner/figure_acceptance.py"],
+      "tests": ["tests/test_figure_acceptance.py", "tests/test_tmd_atlas_pdf_audit.py"],
+      "artifacts": ["outputs/validation/tmd_atlas_pdf_audit.json", "outputs/figures/figure_index.json"],
+      "documentation": ["handoff/ROADMAP.md"]
+    },
+    {
+      "id": "reproducibility_handoff",
+      "criterion": "Environment, provenance, decisions, roadmap, and exact next-state information are persistent",
+      "implementation_files": ["environment.yml", "pyproject.toml"],
+      "tests": ["tests/test_provenance.py"],
+      "artifacts": ["outputs/validation/parent_tmd_figure_acceptance.json"],
+      "documentation": ["AGENTS.md", "handoff/ROADMAP.md", "handoff/decisions.md", "handoff/worklog.md", "references/environment_setup.md"]
+    },
+    {
+      "id": "rich_spin1_dynamics",
+      "criterion": "Gauge-link T-odd, fit/model worm-gear and pretzelosity, gluon f/d, polarized/tensor shadowing, pion/cluster, and OAM scenario sectors satisfy WP10",
+      "implementation_files": ["src/deuteron_wigner/gauge_link_phase.py", "src/deuteron_wigner/worm_gear_inputs.py", "src/deuteron_wigner/gluon_todd.py", "src/deuteron_wigner/oam_interference.py"],
+      "tests": ["tests/test_wp10_manifest.py", "tests/test_wp10_production_ledger.py", "tests/test_complete_gluon_todd_production_output.py", "tests/test_spectator_informed_gluon_todd.py", "tests/test_spectator_informed_gluon_todd_production.py"],
+      "artifacts": ["outputs/validation/wp10_acceptance_report.json", "outputs/parent_tmds/wp10_production_member_ledger.csv", "outputs/figures/figure_index.json"],
+      "documentation": ["references/rich_spin1_extensions.md", "handoff/ROADMAP.md"]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "scope": "leading-twist spin-1 deuteron GTMD/TMD WP8 acceptance",
+  "requirements": [
+    {
+      "id": "discrete_symmetries",
+      "requirement": "Hermiticity, parity, time reversal, and gauge-link reversal",
+      "declared_status": "implemented",
+      "tolerance": "matrix identities use absolute tolerances from 1e-15 to 1e-11; exact link signs where analytic",
+      "test_prefixes": [
+        "tests/test_light_front.py::",
+        "tests/test_quark_correlator.py::",
+        "tests/test_gluon_correlator.py::",
+        "tests/test_gluon_todd.py::"
+      ],
+      "artifacts": [],
+      "provenance": ["references/spin1_representation_map.md"],
+      "affected_outputs": ["all serialized quark/gluon correlators"]
+    },
+    {
+      "id": "support_endpoints",
+      "requirement": "Support and endpoint behavior",
+      "declared_status": "implemented",
+      "tolerance": "strict domain refusal or exact zero outside declared source support",
+      "test_prefixes": [
+        "tests/test_nucleon_inputs.py::",
+        "tests/test_correlator_io.py::",
+        "tests/test_pion_exchange.py::"
+      ],
+      "artifacts": ["outputs/parent_tmds/nucleon_quark_input_validation.json"],
+      "provenance": ["references/production_tmd_architecture_audit.md"],
+      "affected_outputs": ["outputs/parent_tmds"]
+    },
+    {
+      "id": "joint_positivity",
+      "requirement": "Target and parton joint-helicity positivity where applicable",
+      "declared_status": "implemented",
+      "tolerance": "fixture/local densities >= -1e-11; fitted soft-subtracted BPV20 tensions reported, not clipped",
+      "test_prefixes": [
+        "tests/test_quark_correlator.py::",
+        "tests/test_gluon_correlator.py::",
+        "tests/test_nucleon_inputs.py::",
+        "tests/test_joint_positivity.py::"
+      ],
+      "artifacts": [
+        "outputs/parent_tmds/evolved_quark_parent_positivity.validation.json",
+        "outputs/parent_tmds/uncertainty/bpv20_replica_positivity.validation.json",
+        "outputs/validation/gluon_wave_joint_positivity.json",
+        "outputs/validation/jamdiff_joint_positivity.json",
+        "outputs/validation/gluon_shadowing_joint_positivity.json"
+      ],
+      "provenance": [
+        "handoff/decisions.md",
+        "references/joint_positivity_ensemble_audit.md"
+      ],
+      "affected_outputs": ["outputs/parent_tmds/uncertainty"],
+      "open_reason": null
+    },
+    {
+      "id": "global_moments",
+      "requirement": "Baryon number, momentum, helicity, tensor, and transversity moments",
+      "declared_status": "implemented",
+      "tolerance": "source-specific quadrature tolerances; NN/NNpi momentum closes at 1e-14 and fitted transversity moments at 1e-5",
+      "test_prefixes": [
+        "tests/test_pion_exchange.py::",
+        "tests/test_nucleon_inputs.py::",
+        "tests/test_nuclear_mechanisms.py::",
+        "tests/test_gluon_nuclear_mechanisms.py::",
+        "tests/test_moment_ledger.py::"
+      ],
+      "artifacts": ["outputs/validation/av18_parent_moment_coverage.json"],
+      "provenance": ["references/miller_pion_exchange_input.md"],
+      "affected_outputs": ["outputs/figures/pion"],
+      "open_reason": null
+    },
+    {
+      "id": "tmd_marginals",
+      "requirement": "Rank-zero collinear marginals and positive-rank tensor marginals",
+      "declared_status": "implemented",
+      "tolerance": "analytic transform identities and production grid residuals recorded per artifact",
+      "test_prefixes": [
+        "tests/test_tmd_transforms.py::",
+        "tests/test_collinear.py::",
+        "tests/test_gtmd_sampling.py::",
+        "tests/test_stage0_core.py::"
+      ],
+      "artifacts": ["outputs/parent_tmds/parent_collinear_reductions.validation.json"],
+      "provenance": ["references/complete_spin1_tmd_model.md"],
+      "affected_outputs": ["outputs/parent_tmds"]
+    },
+    {
+      "id": "h1lt_integral",
+      "requirement": "The exceptional rank-zero T-odd h1LT has zero unweighted integral",
+      "declared_status": "implemented",
+      "tolerance": "numerical radial integral absolute tolerance encoded by test",
+      "test_prefixes": [
+        "tests/test_complete_tmd_model.py::CompleteSpin1TMDModelTests::test_rank_zero_h1lt_has_zero_unweighted_integral",
+        "tests/test_correlator_tmd_model.py::"
+      ],
+      "artifacts": [],
+      "provenance": ["references/quark_correlator_conventions.md"],
+      "affected_outputs": ["outputs/figures/complete_tmds"]
+    },
+    {
+      "id": "controlled_limits",
+      "requirement": "Pure-S, zero-D, no-Melosh, free-nucleon, isospin, CSB, and zero-correction limits",
+      "declared_status": "implemented",
+      "tolerance": "analytic zeros or matrix equality at 1e-14 to 2e-9 depending on production quadrature",
+      "test_prefixes": [
+        "tests/test_parent_quark_tmd.py::",
+        "tests/test_controlled_limits.py::",
+        "tests/test_light_front.py::",
+        "tests/test_nucleon_inputs.py::",
+        "tests/test_csb_inputs.py::",
+        "tests/test_nuclear_mechanisms.py::"
+      ],
+      "artifacts": [
+        "outputs/parent_tmds/quark_parent_azimuth_covariance.validation.json",
+        "outputs/validation/controlled_limits.audit.json"
+      ],
+      "provenance": [
+        "handoff/decisions.md",
+        "references/controlled_limit_audit.md"
+      ],
+      "affected_outputs": ["outputs/parent_tmds"]
+    },
+    {
+      "id": "b1_benchmark",
+      "requirement": "b1 from the shared parent compared with independent convolution and HERMES",
+      "declared_status": "implemented",
+      "tolerance": "source-table and independent-convolution residuals stored in validation JSON",
+      "test_prefixes": [
+        "tests/test_collinear.py::",
+        "tests/test_data.py::",
+        "tests/test_pion_exchange.py::"
+      ],
+      "artifacts": ["outputs/figures/b1/b1_ia_pion_vs_hermes.validation.json"],
+      "provenance": ["references/miller_pion_exchange_input.md"],
+      "affected_outputs": ["outputs/figures/b1/b1_ia_pion_vs_hermes.pdf"]
+    },
+    {
+      "id": "gluon_h1tt_null",
+      "requirement": "One-body collinear gluon h1TT structural null test",
+      "declared_status": "implemented",
+      "tolerance": "absolute matrix zero at 1e-14",
+      "test_prefixes": ["tests/test_gtmd_convolution.py::GTMDConvolutionTests::test_one_body_collinear_h1tt_gluon_is_structurally_zero"],
+      "artifacts": [],
+      "provenance": ["references/spin1_representation_map.md"],
+      "affected_outputs": ["outputs/stage0/gluon_collinear_ia_av18.csv"]
+    },
+    {
+      "id": "uncertainty_separation",
+      "requirement": "Wave, quadrature, grid, transform, fit, evolution, and nuclear-mechanism uncertainties remain separate",
+      "declared_status": "implemented",
+      "tolerance": "member identity exact; convergence thresholds stored by producer",
+      "test_prefixes": [
+        "tests/test_provenance.py::",
+        "tests/test_gluon_nuclear_mechanisms.py::",
+        "tests/test_bpv20_sivers.py::",
+        "tests/test_uncertainty_axes.py::"
+      ],
+      "artifacts": [
+        "outputs/parent_tmds/evolved_quark_parent_scenarios.validation.json",
+        "outputs/figures/pion/nnpi_recoil_av18_jam21_bands.validation.json",
+        "outputs/validation/uncertainty_axes.audit.json"
+      ],
+      "provenance": [
+        "handoff/decisions.md",
+        "references/uncertainty_axis_contract.md"
+      ],
+      "affected_outputs": ["outputs/parent_tmds/uncertainty"]
+    },
+    {
+      "id": "process_factorization",
+      "requirement": "Gauge-link/color process dependence and W/Y domain are enforced",
+      "declared_status": "implemented",
+      "tolerance": "exact sign/color composition; qT/Q <= 0.25 and qT <= 1 GeV for W-only default",
+      "test_prefixes": [
+        "tests/test_gluon_todd.py::",
+        "tests/test_w_y_matching.py::",
+        "tests/test_tmd_scheme.py::"
+      ],
+      "artifacts": ["outputs/validation/gluon_av18_wterm_marginal.audit.json"],
+      "provenance": [
+        "references/gluon_todd_source_audit.md",
+        "references/sidis_matching.md",
+        "references/tmd_scheme_contract.md"
+      ],
+      "affected_outputs": ["low-qT W-term outputs"],
+      "open_reason": null
+    },
+    {
+      "id": "numerical_convergence",
+      "requirement": "Internal quadrature, parent grid, transform, and wave-function convergence",
+      "declared_status": "implemented",
+      "tolerance": "production-specific thresholds stored in validation artifacts",
+      "test_prefixes": [
+        "tests/test_wavefunctions.py::",
+        "tests/test_gtmd_convolution.py::",
+        "tests/test_tmd_transforms.py::"
+      ],
+      "artifacts": [
+        "outputs/parent_tmds/quark_av18_ultrafine.parent-validation.json",
+        "outputs/parent_tmds/gluon_av18_medium.validation.json"
+      ],
+      "provenance": ["handoff/decisions.md"],
+      "affected_outputs": ["outputs/parent_tmds"]
+    }
+  ]
+}

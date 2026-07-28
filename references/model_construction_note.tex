@@ -1,0 +1,1954 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Construction and status of the canonical spin-1 deuteron GTMD/TMD model},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}Canonical spin-1 deuteron GTMD/TMD model}
+\fancyhead[R]{\small\color{darkgray}Pre-evolution technical note}
+\fancyfoot[L]{\small\color{darkgray}27 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.15}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\bT}{\bm{b}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\RT}{\bm{R}_{T}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\CS}{\mathrm{CS}}
+\newcommand{\IA}{\mathrm{IA}}
+\newcommand{\status}[1]{\textsf{\textbf{#1}}}
+\newcommand{\exact}{\status{Exact}}
+\newcommand{\fit}{\status{Fit/phenomenology}}
+\newcommand{\model}{\status{Model}}
+\newcommand{\temporary}{\status{Temporary}}
+\newcommand{\implemented}{\textcolor{teal}{\status{Implemented}}}
+\newcommand{\openitem}{\textcolor{orange}{\status{Open}}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+  {\color{navy}\bfseries Construction and Status of the Canonical\\[2mm]
+  Spin-1 Deuteron GTMD/TMD Model}\\[4mm]
+  \large A light-front, flavor-resolved, spin-resolved, quark--gluon boundary
+  before complete rank-aware evolution}
+\author{DeuteronWigner project}
+\date{27 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.93\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Scope statement.}
+This is the authoritative scientific and implementation note for the
+leading-twist forward boundary at
+\(Q=5~\mathrm{GeV}\) and
+\(x_N\in\{0.02,0.05,0.10,0.20,0.40\}\).
+The model contains all declared spin-1 quark, antiquark, and gluon
+projections, retains proton and neutron parents, and separates exact
+constraints, fitted inputs, model assumptions, and unresolved physics.
+Complete common-scheme multi-\(Q\) evolution is the next phase and is not
+claimed here.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+We describe the construction, physical content, validation, and present
+status of a canonical light-front model for the complete declared
+leading-twist spin-1 deuteron transverse-momentum-dependent (TMD) system.
+The organizing object is a retained quark or gluon parton--target helicity
+correlator obtained from a nucleon correlator and a spin-dependent
+light-front deuteron spectral density.  Named TMDs are projections of this
+parent, rather than independent curves.  The boundary is explicitly
+resolved in \(u,d,\bar u,\bar d\), proton and neutron source, target
+polarization \(U,L,T,LL,LT,TT\), orbital interference, nuclear mechanism,
+and, for naive-T-odd gluons, the antisymmetric \(f^{abc}\) and symmetric
+\(d^{abc}\) gauge-link/color classes.
+
+The numerical construction combines CT18 and MSHT20QED unpolarized inputs,
+BDSSV24 helicity replicas, JAMDiFF plus lattice-informed transversity,
+BPV20 Sivers replicas, a published-interval treatment of the Yang
+\(g_{1T}\) fit, physically constrained Boer--Mulders, pretzelosity,
+worm-gear, tensor, and gluon sectors, six realistic deuteron wave
+functions, binding and Fermi motion, off-shell response, shadowing and
+antishadowing, a sourced \(NN\pi\) component, and controlled non-nucleonic
+interfaces.  We give the field-theoretic definitions, polarization and
+transverse-rank algebra, nuclear convolution, composition rules,
+uncertainty semantics, and validation conditions.  We also document why
+two earlier implementations---a real one-body boundary and a smooth
+reduced-amplitude closure---were insufficient.  The accepted result is a
+physically organized pre-evolution boundary, not a global extraction and
+not a claim of equal evidential precision for all TMDs.
+\end{abstract}
+
+\tableofcontents
+\clearpage
+
+\section{Scientific objective and status language}
+\label{sec:objective}
+
+The objective is not a minimally runnable atlas.  It is a model in which
+all realistically supported contributions to the spin-1 partonic density
+can coexist without losing their origin or being counted twice.  A model
+is called \emph{canonical} here when
+\begin{enumerate}
+  \item the dynamical state is a retained quark--target or gluon--target
+  correlator;
+  \item every named TMD is obtained by a declared projection of that
+  correlator;
+  \item proton, neutron, flavor, helicity, wave-function component,
+  gauge-link, color, and nuclear-mechanism identity remain available until
+  the physical observable is assembled;
+  \item a machine-readable composition graph distinguishes baselines,
+  additive mechanisms, mutually exclusive alternatives, and ensemble
+  members;
+  \item exact constraints, fit information, lattice information, and model
+  assumptions remain different provenance classes.
+\end{enumerate}
+
+The word \emph{complete} must always carry a scope.  In this note it means:
+the complete declared leading-twist forward quark and gluon basis at the
+fixed boundary scale \(Q=5~\mathrm{GeV}\), with smooth functions and named
+bands over the five production \(x_N\) nodes.  It does not mean a
+first-principles solution of QCD, a simultaneous global fit, complete
+nonzero-skewness GTMD phenomenology, or complete TMD evolution.
+
+\subsection{Evidence vocabulary}
+
+We use the following classification throughout:
+\begin{description}[leftmargin=2.2cm,style=nextline]
+  \item[\exact] A consequence of the chosen operator definition,
+  representation, discrete symmetry, kinematics, or algebraic composition
+  rule.
+  \item[\fit] A central function or ensemble tied to a published PDF/TMD
+  extraction or directly calibrated observable.
+  \item[\status{Lattice-informed}] A fit or model component constrained by
+  lattice matrix elements or an explicit lattice prior.
+  \item[\model] A physically motivated but underdetermined component with a
+  replaceable parameterization and a named sensitivity ensemble.
+  \item[\temporary] A controlled implementation boundary retained only
+  until a specified replacement, with a test that distinguishes the two.
+\end{description}
+Passing a structural acceptance gate does not upgrade a model prediction
+to a fit.
+
+\section{From the original proposal to the present model}
+\label{sec:history}
+
+\subsection{The GTMD-first proposal}
+
+The original technical draft, \emph{A GTMD-First Light-Front Wigner and
+SCET Framework for Spin-1 Deuteron TMDs}, proposed the correct parent
+chain, following the GTMD/Wigner logic of
+Refs.~\cite{Belitsky2004,Lorce2011}:
+\begin{equation}
+\Psi_D^{\LF}
+\longrightarrow
+\rho_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+\longrightarrow
+W_{a/N}^{[\Gamma]}
+\longrightarrow
+W_{a/D}^{[\Gamma]}
+\longrightarrow
+\Phi_{a/D}^{[\Gamma]}
+\longrightarrow
+F_{a/D}.
+\label{eq:parent-chain}
+\end{equation}
+The light-front deuteron wave function \(\Psi_D^{\LF}\) determines the
+active-nucleon spin density \(\rho^{N/D}\); this density convolves with a
+nucleon partonic GTMD \(W_{a/N}\); the forward correlator
+\(\Phi_{a/D}\) is projected onto named functions \(F_{a/D}\).
+
+The parent structure is important because the reductions must commute:
+\begin{align}
+F_{a/D}(x,\kT;\eta)
+  &= W_{a/D}(x,\kT,\DT=\bm 0;\eta),
+  &&\text{TMD limit}, \label{eq:tmd-limit}\\
+H_{a/D}(x,\DT)
+  &= \int \dd^2\kT\,W_{a/D}(x,\kT,\DT),
+  &&\text{zero-skewness GPD limit}, \label{eq:gpd-limit}\\
+f_{a/D}(x)
+  &= \int \dd^2\kT\,F_{a/D}(x,\kT),
+  &&\text{rank-zero PDF limit}, \label{eq:pdf-limit}\\
+\mathcal W_{a/D}(x,\kT,\bm b_\Delta)
+  &= \int\frac{\dd^2\DT}{(2\pi)^2}
+       e^{-i\bm b_\Delta\cdot\DT}W_{a/D}(x,\kT,\DT),
+  &&\text{partonic Wigner transform}.
+\label{eq:wigner}
+\end{align}
+The nuclear Wigner/spectral density and the partonic Wigner distribution
+are distinct: the first describes nucleons in the deuteron; the second is
+the transverse Fourier transform of a QCD partonic correlator.
+
+\subsection{First refocusing: exact zeros were boundary zeros}
+
+The first numerical parent used a real, helicity-independent, rank-zero
+nucleon GTMD.  It correctly tested Fourier signs, recoil, hermiticity,
+marginals, and the tensor PDF entering \(b_1\).  It could not represent the
+complete spin structure.  If all amplitudes are real,
+\begin{equation}
+\operatorname{Im}
+\left[\psi_{L_z'}^\ast\,\mathcal U_\eta\,\psi_{L_z}\right]=0
+\quad\Longrightarrow\quad
+F_{\text{naive-T-odd}}=0,
+\label{eq:real-zero}
+\end{equation}
+and missing off-diagonal helicity or OAM amplitudes similarly force
+worm-gear, pretzelosity, and tensor projections to vanish.  These were
+controlled one-body limits, not predictions of exact physical zeros.
+
+\subsection{Second refocusing: smooth closure was not parent dynamics}
+
+A later reduced-amplitude construction populated every TMD name with a
+smooth curve and conservative rank factors.  Its map was schematically
+\begin{equation}
+\{f_1,g_1,h_1,f_{1LL}\}_{\rm anchors}
+\longrightarrow
+\{\mathcal A_U,\mathcal A_L,\mathcal A_T,
+\mathcal A_{LL},\mathcal A_{LT},\mathcal A_{TT}\}
+\longrightarrow
+\{F_A\}_{\rm all\ names}.
+\label{eq:bad-closure}
+\end{equation}
+This was useful for registry and plotting tests but bypassed
+\cref{eq:parent-chain}.  Shared shapes and coefficients produced
+flavor-independent appearances, while proton and neutron sources were
+summed too early.  Passing smoothness and individual positivity ceilings
+did not establish a physical model.  Those outputs are now explicitly
+superseded.
+
+\subsection{Third refocusing: isoscalar equality belongs at final assembly}
+
+In the exact charge-symmetric one-body limit, an inclusive \(I=0\)
+deuteron satisfies
+\begin{equation}
+u_D=u_{p/D}+u_{n/D}=u_{p/D}+d_{p/D}=d_D,
+\qquad
+\bar u_D=\bar d_D.
+\label{eq:isoscalar}
+\end{equation}
+This does not imply \(u_p=d_p\), nor does it justify erasing constituent
+identity.  The production state therefore retains
+\begin{multline*}
+\{\text{proton-in-deuteron},\ \text{neutron-in-deuteron},\
+\text{nucleon sum},\\
+\text{proton-minus-neutron},\ \text{nuclear correction},\
+\text{spin-1 total}\}.
+\end{multline*}
+The spin-1 total is a closure projection, not the stored model state.
+
+\subsection{Fourth refocusing: basis parity was not evidence parity}
+
+After the correlator basis was populated, a final audit required every one
+of the 36 declared quark-plus-gluon projections to identify a central
+source, constituent resolution, uncertainty or sensitivity ensemble, CSB
+status, shared-parent projection, channel-appropriate nuclear dressing, and
+a physical benchmark or controlled limit.  All 36 rows now pass this
+evidence-discipline gate.  Many tensor and gluon rows remain predictions,
+not direct extractions.
+
+\section{Kinematics and spin-1 representation}
+\label{sec:representation}
+
+We use lightlike vectors \(n^\mu,\bar n^\mu\) with
+\(n^2=\bar n^2=0\) and \(n\cdot\bar n=1\):
+\begin{equation}
+v^\mu=v^+\bar n^\mu+v^-n^\mu+v_T^\mu,\qquad
+v^+=v\cdot n,\quad v^-=v\cdot\bar n.
+\end{equation}
+At zero skewness the average deuteron momentum is \(P\), the transverse
+transfer is \(\DT\), and the active parton has average transverse momentum
+\(\kT\).  The staple direction is denoted \(\eta=+\) (future) or
+\(\eta=-\) (past).  Nuclear convolutions use the nucleon-scaled fraction
+\(x_N\), with \(x_D=x_N/2\) in the project convention.
+
+\subsection{Target density and irreducible basis}
+
+The target Hilbert space is
+\(\mathcal H_D=\operatorname{span}\{|+1\rangle,|0\rangle,|-1\rangle\}\).
+Every Hermitian target matrix has the irreducible decomposition
+\begin{equation}
+\operatorname{Herm}(3)
+=
+\underbrace{U}_{1}
+\oplus\underbrace{L}_{1}
+\oplus\underbrace{(T_x,T_y)}_{2}
+\oplus\underbrace{LL}_{1}
+\oplus\underbrace{(LT_x,LT_y)}_{2}
+\oplus\underbrace{(TT_x,TT_y)}_{2}.
+\label{eq:spin1-decomp}
+\end{equation}
+The dimensions sum to nine.  With trace-orthogonal basis matrices
+\(B_A\), a target matrix \(M\) is reconstructed as
+\begin{equation}
+M=\sum_A c_A B_A,\qquad
+c_A=\sum_B(G^{-1})_{AB}\Tr(B_B^\dagger M),\qquad
+G_{AB}=\Tr(B_A^\dagger B_B).
+\label{eq:gram-project}
+\end{equation}
+This is the concrete representation-theoretic machinery used in the code.
+It prevents incompatible target channels from being mixed and exposes
+unidentifiable combinations through the Gram rank.
+
+For helicity-resolved scalar quantities \(F_\Lambda\), useful combinations
+are
+\begin{align}
+F_U&=\frac13(F_++F_0+F_-),&
+F_L&=\frac12(F_+-F_-),&
+\delta_TF&=F_0-\frac12(F_++F_-).
+\label{eq:helicity-combos}
+\end{align}
+The internal \(LL\) basis has the opposite sign to the physical Trento
+\(S_{LL}\) convention; explicit adapters are therefore required for
+\(f_{1LL}\) and \(h_{1LL}^{\perp}\).
+
+\subsection{Transverse rank}
+
+The transverse plane carries \(SO(2)\).  A rank-\(r\) coefficient
+\(F^{(r)}\) multiplies an irreducible harmonic
+\(k_T^{i_1\cdots i_r}\), and its physical modulation scales as
+\begin{equation}
+\mathcal M_r(x,\kT)\sim
+\left(\frac{k_T}{M_D}\right)^rF^{(r)}(x,k_T^2).
+\label{eq:rank-weight}
+\end{equation}
+A positive-rank coefficient can be finite at \(k_T=0\), while the physical
+modulation must vanish.  Rank determines the Fourier--Bessel kernel:
+\begin{align}
+\widetilde F^{(r)}(x,b_T)
+ &=2\pi\int_0^\infty k_T\,\dd k_T\,
+ J_r(b_Tk_T)\,\mathcal N_r(k_T)F^{(r)}(x,k_T),\\
+F^{(r)}(x,k_T)
+ &=\int_0^\infty\frac{b_T\,\dd b_T}{2\pi}\,
+ J_r(b_Tk_T)\,\widetilde{\mathcal N}_r(b_T)
+ \widetilde F^{(r)}(x,b_T).
+\label{eq:bessel}
+\end{align}
+The registry stores \(r\) and the mass convention so that a scalar
+\(J_0\) transform cannot be applied to rank-one or rank-two functions.
+
+\section{Operator correlators and gauge links}
+\label{sec:operators}
+
+\subsection{Quark and antiquark correlators}
+
+For flavor \(q\), the unsubtracted zero-skewness quark GTMD correlator is
+\begin{equation}
+W_{\Lambda'\Lambda}^{q[\Gamma]}(x,\kT,\DT;\eta)
+=\frac12\int\frac{\dd z^-\,\dd^2\bm z_T}{(2\pi)^3}
+e^{ixP^+z^- -i\kT\cdot\bm z_T}
+\left.
+\langle P',\Lambda'|
+\bar q(-z/2)\,\Gamma\,\mathcal U_\eta[-z/2,z/2]\,
+q(z/2)
+|P,\Lambda\rangle
+\right|_{z^+=0}.
+\label{eq:quark-gtmd}
+\end{equation}
+The leading-twist projections are
+\(\Gamma=\gamma^+\), \(\gamma^+\gamma_5\), and
+\(i\sigma^{i+}\gamma_5\)~\cite{BacchettaMulders2000,KumanoSong2021}.
+The physical TMD is UV-renormalized and
+soft-subtracted.  Antiquarks are represented by a separate positive-\(x\)
+sector rather than by silently identifying them with quarks.
+
+At fixed \((x,\kT)\), the retained quark object is a \(3\times3\) target
+matrix for each Dirac projection, equivalently a \(6\times6\) joint
+target--quark helicity density when the quark helicity indices are made
+explicit.
+
+\subsection{Gluon correlator}
+
+The gluon correlator and its gauge-link labels follow the general spin
+\(\leq1\) classification of Ref.~\cite{Boer2016}:
+\begin{align}
+\Gamma_{\Lambda'\Lambda}^{ij}(x,\kT,\DT;\eta_1,\eta_2)
+&=\frac{1}{xP^+}\int\frac{\dd z^-\,\dd^2\bm z_T}{(2\pi)^3}
+e^{ixP^+z^- -i\kT\cdot\bm z_T}
+\nonumber\\[-1mm]
+&\quad\times
+\left.
+\langle P',\Lambda'|
+\Tr_c\!\left[
+F^{+i}(-z/2)\mathcal U_{\eta_1}
+F^{+j}(z/2)\mathcal U_{\eta_2}
+\right]|P,\Lambda\rangle
+\right|_{z^+=0}.
+\label{eq:gluon-gtmd}
+\end{align}
+The transverse \(2\times2\) gluon space decomposes into trace
+(unpolarized), antisymmetric (circular polarization), and
+symmetric-traceless (linear polarization) pieces.  Together with the
+target space, the stored forward parent is a
+\(3\times3\times2\times2\) joint matrix.
+
+\subsection{Discrete symmetries and process dependence}
+
+Hermiticity requires
+\begin{equation}
+W_{\Lambda'\Lambda}(x,\kT,\DT;\eta)
+=W_{\Lambda\Lambda'}^\ast(x,\kT,-\DT;\eta).
+\label{eq:hermiticity}
+\end{equation}
+Parity is implemented as a tested light-front helicity reflection.  Time
+reversal maps future to past gauge links:
+\begin{equation}
+F_{\rm even}^{[+]}=F_{\rm even}^{[-]},\qquad
+F_{\rm odd}^{[+]}=-F_{\rm odd}^{[-]}.
+\label{eq:link-reversal}
+\end{equation}
+For gluons, the two universal naive-T-odd color contractions
+\begin{equation}
+\mathcal C_f^{abc}=if^{abc},\qquad
+\mathcal C_d^{abc}=d^{abc}
+\label{eq:fd}
+\end{equation}
+remain independent.  A process observable has the form
+\begin{equation}
+F_{\rm process}^g=C_f^{\rm process}F^{g(f)}
+                 +C_d^{\rm process}F^{g(d)}.
+\label{eq:color-combination}
+\end{equation}
+The model refuses an implicit universal \(f/d\) mixture or a mixed-link
+sign assigned by quark analogy.
+
+\section{Complete declared leading-twist basis}
+\label{sec:basis}
+
+The current forward basis follows
+Refs.~\cite{Spin1Quark2016,KumanoSong2021,Boer2016}.  It has 18 quark functions for each of
+\(u,d,\bar u,\bar d\), and 18 identifiable gluon projections.  The older
+exploratory 19-gluon count split a TT pair that the implemented forward
+correlator identifies only through a combination; it is not the canonical
+registry.
+
+\begin{table}[ht]
+\centering
+\caption{Declared quark and antiquark basis for each flavor.  The rank is
+the rank of the transverse tensor multiplying the named scalar coefficient.}
+\label{tab:quark-basis}
+\small
+\begin{tabularx}{\textwidth}{L{0.10\textwidth}L{0.56\textwidth}Y}
+\toprule
+Target & Named functions & Physical content \\
+\midrule
+\(U\)  & \(f_1,\ h_1^\perp\) & unpolarized density; Boer--Mulders \\
+\(L\)  & \(g_1,\ h_{1L}^\perp\) & helicity; longitudinal worm gear \\
+\(T\)  & \(f_{1T}^\perp,\ g_{1T},\ h_1,\ h_{1T}^\perp\) &
+Sivers, transverse worm gear, transversity, pretzelosity \\
+\(LL\) & \(f_{1LL},\ h_{1LL}^\perp\) &
+longitudinal tensor density and linear/chiral-odd partner \\
+\(LT\) & \(f_{1LT},\ g_{1LT},\ h_{1LT},\ h_{1LT}^\perp\) &
+mixed tensor polarization \\
+\(TT\) & \(f_{1TT},\ g_{1TT},\ h_{1TT},\ h_{1TT}^\perp\) &
+transverse tensor polarization \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Declared gluon basis.  The f-type and d-type gauge-link/color
+sectors are additional labels on T-odd entries, not additional TMD names.}
+\label{tab:gluon-basis}
+\small
+\begin{tabularx}{\textwidth}{L{0.10\textwidth}L{0.58\textwidth}Y}
+\toprule
+Target & Named functions & Physical content \\
+\midrule
+\(U\) & \(f_1^g,\ g_1^g,\ h_1^{\perp g}\) &
+unpolarized, helicity, linear polarization \\
+\(L\) & \(h_{1L}^{\perp g}\) & longitudinal spin--linear-polarization interference \\
+\(T\) & \(f_{1T}^{\perp g},\ g_{1T}^g,\ h_1^g,\ h_{1T}^{\perp g}\) &
+gluon Sivers, worm gear, and transverse spin/linear structures \\
+\(LL\) & \(f_{1LL}^g,\ h_{1LL}^{\perp g}\) & longitudinal tensor gluons \\
+\(LT\) & \(f_{1LT}^g,\ g_{1LT}^g,\ h_{1LT}^g,\ h_{1LT}^{\perp g}\) &
+mixed tensor gluons \\
+\(TT\) & \(f_{1TT}^g-h_{1TT}^{\perp g},\
+g_{1TT}^g,\ h_{1TT}^g,\ h_{1TT}^{\perp\perp g}\) &
+identifiable transverse-tensor combinations \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Nucleon-level quark dynamics}
+\label{sec:quarks}
+
+\subsection{Unpolarized and helicity sectors}
+
+The central collinear \(f_1^q\) uses CT18NNLO~\cite{CT18} with distinct
+\(u,d,\bar u,\bar d\) proton functions.  The 29 CT18 Hessian pairs are
+propagated through the resolved nuclear response on all five production
+\(x_N\) nodes.  The neutron is not obtained by assigning the same function
+to both flavors.  Exact charge symmetry supplies the baseline rotation
+\begin{equation}
+u_n=d_p,\quad d_n=u_p,\quad
+\bar u_n=\bar d_p,\quad \bar d_n=\bar u_p,
+\label{eq:charge-symmetry}
+\end{equation}
+and MSHT20QED~\cite{MSHTQED} supplies a numerical unpolarized CSB ratio
+\begin{equation}
+\delta_q^n(x,Q)=
+\frac{q_{\rm MSHT20QED}^{n}(x,Q)}
+     {q_{\rm MSHT20QED}^{p,\,{\rm isospin\ partner}}(x,Q)}-1
+\label{eq:csb-ratio}
+\end{equation}
+with 38 paired Hessian directions.  This numerical correction is not copied
+to polarized or T-odd channels.
+
+Quark \(g_1\) uses BDSSV24-NLO~\cite{BDSSV24}.  All 600 replicas are propagated through
+the AV18 response and through the production x grid.  The wave-function
+spin depolarization emerges from the helicity convolution; it is not
+implemented only as a universal scalar.
+
+\subsection{Transversity and chiral-odd worm gear}
+
+The \(h_1\) input is the JAMDiFF \(w\)LQCD ensemble~\cite{JAMDiff}:
+member zero plus 968
+physical replicas.  The combination is fit and lattice informed.  Because
+the source fit and the project \(f_1,g_1\) use different underlying PDF
+sets, each member is projected into the actual TMD-level Soffer interval
+\begin{equation}
+|h_1^q(x,k_T)|\leq
+\frac12\left[f_1^q(x,k_T)+g_1^q(x,k_T)\right]
+\label{eq:soffer}
+\end{equation}
+with a small numerical interior margin.  Raw source members remain
+recoverable, so this compatibility projection is visible and replaceable.
+
+The \(h_{1L}^{\perp}\) boundary is correlated with the same replica identity
+through a Wandzura--Wilczek-type functional.  Schematically,
+\begin{equation}
+h_{1L}^{\perp(1)q}(x)
+\simeq -x^2\int_x^1\frac{\dd y}{y^2}\,h_1^q(y)
+\;+\;\Delta_{\rm genuine}^q(x).
+\label{eq:ww-h1l}
+\end{equation}
+The first term is an organized approximation; the genuine quark--gluon
+term is an independent model sensitivity, not absorbed into the fit band.
+
+\subsection{Sivers and Boer--Mulders}
+
+The quark Sivers function uses the BPV20 N3LO arTeMiDe release
+\cite{BPV20} with 500
+replicas.  Member identity is propagated through all six nuclear wave
+functions.  The source fit's light-sea equality is retained as a documented
+fit assumption rather than generalized into a project-wide flavor
+identity.  Staple reversal follows \cref{eq:link-reversal}.
+
+Boer--Mulders \(h_1^\perp\) is represented by flavor-dependent
+sign/hierarchy scenarios informed by the fitted Sivers rescattering
+strength.  The relation
+\begin{equation}
+h_1^{\perp q}(x,k_T)
+=C_{\rm BM}^q(x,k_T)\,f_{1T}^{\perp q}(x,k_T)
+\label{eq:bm-model}
+\end{equation}
+is explicitly \model: \(C_{\rm BM}^q\) has alternative members and is not a
+claim of an operator identity or a joint fit.
+
+\subsection{Worm gear \(g_{1T}\) and pretzelosity}
+
+The central \(g_{1T}\) parameters follow Yang et al.\ (2024)
+\cite{Yang2024}.  Because no
+public covariance or replica ensemble is available, the implementation
+propagates all 16 corners of the four published asymmetric parameter
+intervals.  The resulting hull is not labeled a confidence interval.  A
+shared-Fock/OAM sea member tests the source fit's zero-sea boundary.
+
+Pretzelosity is not generated by rescaling transversity; its unusual
+small-\(b_T\) status is discussed in Ref.~\cite{Pretzel}.  Its
+nonperturbative first transverse moment is parameterized inside
+\begin{equation}
+h_{1T}^{\perp(1)q}(x)
+=\int\dd^2\kT\,\frac{k_T^2}{2M_N^2}
+h_{1T}^{\perp q}(x,k_T^2),\qquad
+\left|h_{1T}^{\perp(1)q}\right|
+\leq\frac{f_1^q-g_1^q}{2}.
+\label{eq:pretzel-bound}
+\end{equation}
+The central perturbative small-\(b_T\) boundary is zero, while signed
+hadronic OAM members use a conservative fraction of
+\cref{eq:pretzel-bound}.  These members are model sensitivities.
+
+\subsection{Tensor-polarized quarks}
+
+The ten LL/LT/TT quark functions are projections of the common deuteron
+spin-density parent.  Their sources are S--D and OAM interference, Wilson
+channels, spin recoupling, and operator-valued nuclear response.  In
+particular, \(g_{1LT}\) and \(g_{1TT}\) require absorptive axial-tensor
+interference and are implemented in two mutually exclusive stages:
+\begin{enumerate}
+  \item an independent positivity-bounded phase ensemble for each flavor
+  and operator;
+  \item a screened one-gluon eikonal model with rank \(n=1,2\):
+\end{enumerate}
+\begin{equation}
+\mathcal I_n(k_T)=\frac{C_F\alpha_s}{2\pi}
+\int_0^{q_{\max}}q\,\dd q\,
+\frac{\left[\Lambda^2/(\Lambda^2+q^2)\right]^2}
+     {q^2+\mu_g^2}
+\left(\frac{q}{M_D}\right)^n
+\left\langle
+\cos(n\phi)e^{-|\kT-\bm q|^2/(2w)}
+\right\rangle_\phi .
+\label{eq:eikonal}
+\end{equation}
+The rank-one term represents imaginary S--P interference; the rank-two
+term includes imaginary S--D and P-even/P-odd interference.  Disabling the
+imaginary amplitude makes both functions vanish.  The larger direct-phase
+envelope is not used to inflate the screened calculation.
+
+\section{Nucleon-level gluon dynamics}
+\label{sec:gluons}
+
+\subsection{Unpolarized, helicity, and linearly polarized anchors}
+
+The canonical \(f_1^g\) central boundary uses the matched
+BSV19/NNPDF31 construction~\cite{BSV19}.  A separate CT18 29-pair Hessian response is
+propagated through AV18 smearing at five x nodes and 61 transverse-momentum
+points, then anchored as an uncertainty axis around the common central
+scheme.  This preserves the distinction between the central TMD
+construction and collinear-PDF uncertainty.
+
+Gluon \(g_1^g\) uses all 600 BDSSV24-NLO replicas~\cite{BDSSV24}.
+Width variations are
+stored separately: they can strongly reshape the value near \(k_T=0\)
+while leaving the finite-grid collinear integral nearly invariant.
+
+The T-even \(h_1^{\perp g}\), \(g_{1T}^g\), \(h_1^g\), and
+\(h_{1T}^{\perp g}\) arise from the retained gluon light-front
+overlap/OAM/Wilson parent.  They are not quark TMDs with changed labels.
+The gluon polarization tensor and the full joint density determine the
+allowed interference and rank.
+
+\subsection{Naive-T-odd gluons}
+
+An early spectator-inspired model multiplied the assembled deuteron
+\(f_1^g\) by literature-motivated coefficients.  It reproduced qualitative
+hierarchies but bypassed the nucleon parent, and is benchmark-only.
+
+The canonical construction instead introduces the absorptive Wilson
+amplitude at the nucleon-correlator level, retains the two color classes in
+\cref{eq:fd}, and then performs the same nuclear helicity convolution as
+the T-even sector.  External spectator and CGI-GPM calculations constrain
+sign, node, and hierarchy scenarios, but no released global replica set
+determines the absolute scale of all gluon T-odd functions.  Process
+predictions must therefore expose \(C_f,C_d\) in
+\cref{eq:color-combination}.
+
+\subsection{Tensor-polarized gluons}
+
+The LL, LT, and TT gluon projections use the same shared
+light-front/OAM/Wilson parent, projected with the spin-1 target basis.
+The previously missing \(g_{1LT}^g\) and \(g_{1TT}^g\) are generated by
+S--D/OAM interference and screened eikonal phases, with pure-S,
+zero-phase, rank-covariance, link-reversal, and positivity tests.  Their
+absolute magnitudes are predictions with named model axes.
+
+\section{Light-front deuteron and nuclear composition}
+\label{sec:nuclear}
+
+\subsection{Two-nucleon light-front state}
+
+The nucleonic component is
+\begin{equation}
+|D,\Lambda\rangle_{NN}
+=\sum_{\lambda_1,\lambda_2}
+\int\frac{\dd y\,\dd^2\pT}
+          {2(2\pi)^3\,y(1-y)}
+\Psi_{\Lambda;\lambda_1\lambda_2}^{D,\LF}(y,\pT)
+|N_1(y,\pT,\lambda_1)N_2(1-y,-\pT,\lambda_2)\rangle .
+\label{eq:deuteron-lf}
+\end{equation}
+The instant-form radial input contains
+\begin{equation}
+\Psi_\Lambda^{\rm IF}(\bm k)
+=u_0(k)\,\mathcal Y_{00}^{1\Lambda}(\hat{\bm k})
+u_2(k)\,\mathcal Y_{2}^{1\Lambda}(\hat{\bm k}),
+\label{eq:sd-wave}
+\end{equation}
+followed by the declared light-front variable map and constituent Melosh
+rotations.  The production ensemble contains AV18 (central)~\cite{AV18},
+CD-Bonn~\cite{CDBonn}, and
+Norfolk NV-Ia, NV-Ib, NV-IIa, and NV-IIb.
+
+The active-nucleon density is
+\begin{equation}
+\rho_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}(y,\pT)
+=\sum_{\lambda_s}
+\Psi_{\Lambda';\lambda'\lambda_s}^{D,\LF\,\ast}(y,\pT)
+\Psi_{\Lambda;\lambda\lambda_s}^{D,\LF}(y,\pT),
+\label{eq:spectral-density}
+\end{equation}
+with separate SS, SD, DS, and DD terms.  The D state is therefore not
+represented only by one probability.  Signed S--D interference enters
+tensor polarization and spin--orbit observables directly.
+
+\subsection{GTMD and TMD convolution}
+
+At zero skewness, the one-body nuclear GTMD has the schematic retained-spin
+form
+\begin{align}
+W_{a/D,\Lambda'\Lambda}^{[\Gamma]}(x,\kT,\DT)
+&=\sum_{N=p,n}
+\int\frac{\dd y}{y}\frac{\dd^2\pT}{(2\pi)^2}
+\sum_{\lambda',\lambda}
+\rho_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+    (y,\pT,\DT)
+\nonumber\\[-1mm]
+&\quad\times
+W_{a/N,\lambda'\lambda}^{[\Gamma]}
+\left(\frac{x}{y},
+\kT-\frac{x}{y}\pT,\bm{\Delta}_{T,N}\right)
+J(y,\pT,\DT).
+\label{eq:gtmd-convolution}
+\end{align}
+Its forward limit gives
+\begin{equation}
+F_{a/D,I}^{\IA}(x,\kT)
+=\sum_{N=p,n}\int_x^1\frac{\dd y}{y}
+\int\frac{\dd^2\pT}{(2\pi)^2}
+\rho_{I;\lambda'\lambda}^{N/D}(y,\pT)
+F_{a/N,\lambda'\lambda}
+\left(\frac{x}{y},\kT-\frac{x}{y}\pT\right)J_T.
+\label{eq:tmd-convolution}
+\end{equation}
+In \(b_T\) space the transverse shift becomes a phase:
+\begin{align}
+\widetilde F_{a/D,I}^{\IA}(x,\bT)
+&=\sum_N\int_x^1\frac{\dd y}{y}
+\int\frac{\dd^2\pT}{(2\pi)^2}
+\rho_{I;\lambda'\lambda}^{N/D}(y,\pT)
+e^{i(x/y)\bT\cdot\pT}
+\widetilde F_{a/N,\lambda'\lambda}(x/y,\bT)J_T.
+\label{eq:bspace-convolution}
+\end{align}
+This is the form to be consumed by complete evolution.
+
+\subsection{Binding, off-shell response, and completely positive maps}
+
+Binding and Fermi motion enter through \(y,\pT\) in
+\cref{eq:tmd-convolution}.  Off-shell, shadowing, and antishadowing
+responses act on the full joint spin density.  The accepted implementation
+uses ordered completely positive maps
+\begin{equation}
+\mathcal E_m[\rho]
+=\sum_\alpha K_{m\alpha}\rho K_{m\alpha}^\dagger,
+\qquad
+\sum_\alpha K_{m\alpha}^\dagger K_{m\alpha}\preceq \mathbf 1,
+\label{eq:kraus}
+\end{equation}
+so Hermiticity and positivity are preserved.  The ordering is explicit
+because polarized response maps need not commute.  These maps replace, not
+add to, older scalar coefficient responses.
+
+\subsection{Shadowing and antishadowing}
+
+The unpolarized small-x baseline follows the H1 diffractive PDF
+\cite{H1DPDF} and the Frankfurt--Guzey--Strikman double-scattering
+construction~\cite{FGS}.  Schematically,
+\begin{equation}
+\delta f_{j/D}^{\rm shad}(x,Q)
+\sim -\int_x^{x_{\mathbb P,\max}}\dd x_{\mathbb P}
+\int\dd t\,
+f_{\mathbb P/p}(x_{\mathbb P},t)\,
+f_{j/\mathbb P}(x/x_{\mathbb P},Q)\,
+F_D(4[q_T^2+x_{\mathbb P}^2m_N^2]).
+\label{eq:shadowing}
+\end{equation}
+Polarized and tensor shadowing responses are independent model ratios:
+unpolarized diffraction does not determine them.  Antishadowing is a
+separate mechanism constrained by the moment ledger, not an arbitrary
+enhancement attached to every TMD.
+
+\subsection{Pion exchange and the \(NN\pi\) sector}
+
+The deuteron Fock expansion contains
+\begin{equation}
+|D\rangle=\sqrt{Z_{NN}}|NN\rangle+|NN\pi\rangle+\cdots .
+\label{eq:fock}
+\end{equation}
+The sourced Sullivan mechanism~\cite{MillerPion} has the longitudinal convolution
+\begin{equation}
+F_{a/D}^{(\pi)}(x,\kT)
+=\int_x^1\frac{\dd y}{y}
+\int\dd^2\bm q_T\,
+f_{\pi/D}(y,\bm q_T;\Lambda',\Lambda)\,
+F_{a/\pi}\left(\frac{x}{y},
+\kT-\frac{x}{y}\bm q_T\right).
+\label{eq:pion-convolution}
+\end{equation}
+The implementation uses the Miller spin-resolved splitting information and
+a Vpion/JAM pion input where the corresponding channel is supported.  The
+pion term is included once.  A recent LF Hamiltonian EFT calculation does
+not publish the spin-resolved three-body deuteron amplitude required to
+replace this boundary, so no arbitrary transfer Gaussian is invented.
+
+\subsection{Other non-nucleonic sectors}
+
+Delta--Delta, SRC/cluster, and hidden-color sectors have explicit
+interfaces and correlated zero-centered sensitivity members.  A preferred
+nonzero central addition requires a sourced flavor-, color-, helicity-, and
+transverse-resolved correlator.  The present hidden-color central term is
+therefore excluded rather than assigned an arbitrary probability.
+
+\section{\texorpdfstring{\(b_1\)}{b1}, tensor normalization, and physical reductions}
+\label{sec:b1}
+
+The inclusive tensor distribution is
+\begin{equation}
+\delta_Tq(x)=q^0(x)-\frac12[q^{+1}(x)+q^{-1}(x)],
+\label{eq:tensor-pdf}
+\end{equation}
+and at leading order
+\begin{equation}
+b_1(x,Q^2)=\frac12\sum_q e_q^2
+\left[\delta_Tq(x,Q^2)+\delta_T\bar q(x,Q^2)\right].
+\label{eq:b1}
+\end{equation}
+The project convention maps the named LL distribution by
+\begin{equation}
+f_{1LL}=-\frac23\,\delta_T f_1,
+\label{eq:f1ll-map}
+\end{equation}
+with the sign adapter tested explicitly.  The HERMES comparison
+\cite{HERMESb1} combines
+the one-body tensor impulse term with the allowed pion contribution.  It is
+a validation of the collinear LL marginal and does not determine all
+tensor TMDs.
+
+For rank-zero channels,
+\begin{equation}
+\int\dd^2\kT\,F_{a/D}^{(0)}(x,\kT;Q)=f_{a/D}(x;Q).
+\label{eq:rankzero-marginal}
+\end{equation}
+For \(r>0\), the unweighted angular integral vanishes, while a weighted
+moment may remain:
+\begin{equation}
+F^{(n)}(x)=\int\dd^2\kT
+\left(\frac{k_T^2}{2M_D^2}\right)^nF(x,k_T^2).
+\label{eq:transverse-moment}
+\end{equation}
+
+\section{Composition graph and uncertainty semantics}
+\label{sec:composition}
+
+The total parent is not a sum of every available table.  Each component is
+typed as
+\begin{equation}
+\mathcal W_{\rm canonical}
+=\mathcal W_{\rm baseline}
+\sum_{m\in\mathcal A}\mathcal W_m^{\rm additive},
+\qquad
+\theta_e\in\mathcal E_e
+\quad\text{for exclusive alternatives and ensembles}.
+\label{eq:composition}
+\end{equation}
+The graph rejects two paths that represent the same phase, OAM
+interference, or nuclear response.  In particular:
+\begin{itemize}
+  \item the CP-map nuclear responses replace legacy coefficient responses;
+  \item direct axial phases and screened one-gluon phases are alternatives;
+  \item spectator-inspired downstream gluon rescaling is benchmark-only;
+  \item the \(NN\pi\) contribution is added once;
+  \item unsupported cluster/hidden-color amplitudes are zero-centered
+  alternatives.
+\end{itemize}
+
+\begin{longtable}{L{0.22\textwidth}L{0.69\textwidth}}
+\caption{Meaning of uncertainty and sensitivity axes.}
+\label{tab:uncertainty}\\
+\toprule
+Axis & Interpretation \\
+\midrule
+\endfirsthead
+\toprule
+Axis & Interpretation \\
+\midrule
+\endhead
+PDF/TMD replica &
+Member variation supplied by an external statistical or posterior ensemble:
+BDSSV24 (600), JAMDiFF (968), BPV20 (500).\\
+Hessian &
+Correlated eigenvector propagation: CT18 (29 pairs) and MSHT20QED neutron
+CSB (38 pairs).\\
+Published interval hull &
+All parameter corners of reported asymmetric intervals, used for Yang
+\(g_{1T}\); not a confidence region without the source covariance.\\
+Wave-function envelope &
+AV18, CD-Bonn, NV-Ia, NV-Ib, NV-IIa, and NV-IIb dependence after
+normalization and common convolution.\\
+Transverse-profile envelope &
+Nonperturbative \(k_T\) or \(b_T\) shape variation; it is distinct from
+collinear normalization uncertainty.\\
+Gauge/color scenario &
+Unknown absorptive phase and f/d gluon color-link composition.\\
+Nuclear mechanism &
+Off-shell, shadowing, antishadowing, pion, cluster, and SRC response choices,
+with channel and x-domain restrictions.\\
+OAM/Fock scenario &
+Alternative allowed interference content in \(L_z=0,\pm1,\pm2\) sectors.\\
+CSB power counting &
+Zero-centered 5\% quark and 2\% gluon amplitude envelope for TMDs lacking a
+specific calculation; not a fit uncertainty.\\
+Numerical error &
+Quadrature, finite transform range, interpolation, and closure residuals.\\
+\bottomrule
+\end{longtable}
+
+No quadrature combination is advertised as a global confidence band.
+Production plots expose the named axes separately.
+
+\section{Evidence ledger}
+\label{sec:evidence}
+
+\subsection{Quark and antiquark sectors}
+
+\begin{longtable}{L{0.18\textwidth}L{0.31\textwidth}L{0.42\textwidth}}
+\caption{Evidence status of the quark basis.  Tensor entries apply to quarks
+and antiquarks with explicit flavor and proton/neutron parents.}
+\label{tab:quark-evidence}\\
+\toprule
+Function & Central source & Interpretation and band \\
+\midrule
+\endfirsthead
+\toprule
+Function & Central source & Interpretation and band \\
+\midrule
+\endhead
+\(f_1\) & CT18NNLO; MSHT20QED CSB &
+\fit; CT18 Hessian, sourced neutron CSB, wave/profile/nuclear axes.\\
+\(g_1\) & BDSSV24-NLO &
+\fit; all 600 replicas and spin-dependent nuclear convolution.\\
+\(h_1\) & JAMDiFF \(w\)LQCD &
+\status{Fit+lattice}; 968 replicas with composed-boundary positivity
+compatibility.\\
+\(f_{1T}^{\perp}\) & BPV20 arTeMiDe &
+\fit; 500 replicas, flavor dependence, staple reversal.\\
+\(g_{1T}\) & Yang et al.\ 2024 &
+\fit central; 16-corner published-interval hull and sea/OAM sensitivity.\\
+\(h_{1L}^{\perp}\) & JAMDiFF \(h_1\)+WW &
+\status{Fit+lattice+model}; correlated replicas and genuine-term scenario.\\
+\(h_1^\perp\) & BPV20-linked hierarchy &
+\model; independent Boer--Mulders operator scenario, not joint fit.\\
+\(h_{1T}^{\perp}\) & positivity-bounded OAM &
+\model; zero perturbative central plus signed hadronic members.\\
+all LL/LT/TT &
+shared S--D/OAM/Wilson parent and nuclear response &
+\status{Wave-function+model+phenomenology}; common-parent prediction,
+six-wave and phase/nuclear ensembles, \(b_1\) where applicable.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Gluon sectors}
+
+\begin{longtable}{L{0.22\textwidth}L{0.30\textwidth}L{0.39\textwidth}}
+\caption{Evidence status of the gluon basis.}
+\label{tab:gluon-evidence}\\
+\toprule
+Function & Central source & Interpretation and band \\
+\midrule
+\endfirsthead
+\toprule
+Function & Central source & Interpretation and band \\
+\midrule
+\endhead
+\(f_1^g\) & BSV19/NNPDF31; CT18 response &
+\fit central with CT18 Hessian, wave, profile, and nuclear axes.\\
+\(g_1^g\) & BDSSV24-NLO &
+\fit; all 600 replicas and separate transverse-profile envelope.\\
+all other U/L/T &
+gluon LF overlap/OAM/Wilson parent &
+\model constrained by helicity algebra, rank, f/d separation,
+wave functions, positivity, and literature benchmarks.\\
+all LL/LT/TT &
+same shared parent with spin-1 density and nuclear maps &
+\model prediction with pure-S, zero-phase, link, rank, wave, and nuclear
+tests.\\
+\bottomrule
+\end{longtable}
+
+This is the intended meaning of ``bringing every TMD to the \(f_1\)
+level'': comparable provenance and validation discipline, not equal data
+precision.
+
+\section{Validation and numerical acceptance}
+\label{sec:validation}
+
+\subsection{Exact and controlled-limit tests}
+
+The implemented validation matrix includes:
+\begin{enumerate}
+  \item correlator hermiticity, light-front parity, and gauge-link reversal;
+  \item reconstruction of all allowed target and parton polarization blocks;
+  \item transverse-rank covariance and physical origin limits;
+  \item proton/neutron traceability and the exact charge-symmetry limit;
+  \item pure-S, zero-phase, weak-phase, and real one-body limits;
+  \item independent gluon f/d components and refusal of implicit hard-color
+  weights;
+  \item GTMD-to-TMD, TMD-to-PDF, GPD/form-factor, and \(b_1\) marginals;
+  \item wave-function normalization, number, plus-momentum, and tensor
+  ledgers;
+  \item no-double-counting closure for nuclear and non-nucleonic mechanisms.
+\end{enumerate}
+
+\subsection{Density positivity}
+
+For every retained joint density,
+\begin{equation}
+\rho=\rho^\dagger,\qquad
+v^\dagger\rho v\geq0
+\quad\forall\,v,
+\label{eq:positivity}
+\end{equation}
+is tested numerically.  Positivity is imposed on the full matrix, not by
+clipping individual TMDs.  At the WP12 scientific inspection,
+\begin{align}
+\lambda_{\min}^{qD}&=4.12612\times10^{-4},&
+\lambda_{\min}^{gD}&=2.0881\times10^{-2}.
+\label{eq:min-eigs}
+\end{align}
+No final positivity contraction was required; the common completion scale
+was one.
+
+\subsection{Closure and response diagnostics}
+
+The resolved parent contains 38,880 quark rows and 49,680 gluon rows.
+The maximum closure residual is
+\begin{equation}
+\epsilon_{\rm close}^{q}=0,\qquad
+\epsilon_{\rm close}^{g}=1.7347\times10^{-18}.
+\label{eq:closure}
+\end{equation}
+The maximum CP-map recomposition shifts are approximately
+\(2.73\%\) and \(2.91\%\) of the local \(f_1\) reference for quarks and
+gluons.  The recorded future/past residual is zero for quarks and of order
+\(10^{-9}~\mathrm{GeV}^{-2}\) for gluons.
+
+\subsection{Physical benchmarks}
+
+Benchmarks include CT18 and BDSSV24 marginal reproduction, JAMDiFF
+transversity and BPV20 Sivers member checks, the HERMES \(b_1\) comparison,
+deuteron body form factors, LF current/angular-condition diagnostics,
+six-wave-function comparisons, rank-aware Fourier round trips, and
+literature node/hierarchy comparisons for model-dependent gluon functions.
+
+The WP12-E acceptance report records 36/36 evidence rows and six final
+gates passing.  The full repository regression after the documentation
+integration is 482 passing tests.
+
+\section{Scale scheme and the boundary before evolution}
+\label{sec:evolution}
+
+The in-house boundary uses a Collins square-root-soft subtraction
+\cite{Collins,EIS}, the
+delta rapidity regulator, \(\overline{\rm MS}\) UV renormalization, and the
+canonical line
+\begin{equation}
+\zeta_i=\mu_i^2,\qquad
+\mu_f=Q,\qquad \zeta_f=Q^2.
+\label{eq:scale-line}
+\end{equation}
+The TMD equations are
+\begin{align}
+\frac{\dd}{\dd\ln\mu}\ln\widetilde F_a(x,b_T;\mu,\zeta)
+ &=\gamma_F^a\!\left(\alpha_s,\frac{\zeta}{\mu^2}\right),\\
+\frac{\dd}{\dd\ln\sqrt{\zeta}}\ln\widetilde F_a(x,b_T;\mu,\zeta)
+ &=-\mathcal D_a(b_T;\mu),\\
+\frac{\dd}{\dd\ln\mu}\mathcal D_a(b_T;\mu)
+ &=\Gamma_{\rm cusp}^a(\alpha_s).
+\label{eq:evolution}
+\end{align}
+At leading power, the Collins--Soper kernel depends on the quark or gluon
+color representation, not on target polarization.  Polarization resides
+in the boundary and matching coefficients.
+
+The present code has heterogeneous evolution depth: BPV20 uses its native
+optimal-TMD evolution; some rank-zero quark and gluon channels have the
+typed in-house CSS route; several higher-rank and tensor boundaries remain
+at \(Q=5~\mathrm{GeV}\) with declared profile scenarios.  Putting them on
+one fixed-\(Q\) plot does not imply one complete evolution solution.
+
+The next phase must evolve
+\[
+\{\text{proton-in-D},\text{ neutron-in-D},\text{ sum},
+\text{ difference},\text{ nuclear correction},\text{ total}\}
+\]
+for every flavor, target channel, transverse rank, link/color class,
+mechanism, and correlated ensemble member.  It must use the appropriate
+\(J_r\) transforms, preserve closure after evolution, and refuse scheme
+mismatches.
+
+At the observable level, a complete phase-space prediction also requires
+\begin{equation}
+\frac{\dd\sigma}{\dd\mathcal P}
+=W(q_T,Q)+Y(q_T,Q),\qquad
+Y=\sigma_{\rm FO}-[W]_{\rm expanded\ to\ FO},
+\label{eq:wy}
+\end{equation}
+so the nonperturbative TMD boundary is not forced to mimic the high-\(q_T\)
+fixed-order tail.  A general process-specific \(Y\) term remains open.
+
+\section{Implemented software map and reproducibility}
+\label{sec:software}
+
+\begin{longtable}{L{0.25\textwidth}L{0.65\textwidth}}
+\caption{Principal computational objects.}
+\label{tab:software}\\
+\toprule
+Layer & Representative implementation \\
+\midrule
+\endfirsthead
+\toprule
+Layer & Representative implementation \\
+\midrule
+\endhead
+Spin and transverse representation &
+\texttt{spin.py}, \texttt{transverse\_tensors.py},
+\texttt{quark\_correlator.py}, \texttt{gluon\_correlator.py},
+\texttt{registry.py}.\\
+Nucleon quark inputs &
+\texttt{nucleon\_inputs.py}, \texttt{transversity.py},
+\texttt{bpv20\_sivers.py}, \texttt{worm\_gear\_inputs.py},
+\texttt{boer\_mulders.py}.\\
+Nucleon gluon and phases &
+\texttt{nucleon\_gluon\_inputs.py}, \texttt{gluon\_lfwf\_todd.py},
+\texttt{gluon\_todd.py}, \texttt{gauge\_link\_phase.py}.\\
+Deuteron wave functions &
+\texttt{wavefunctions/av18.py}, \texttt{cd\_bonn.py},
+\texttt{norfolk.py}, \texttt{light\_front.py}.\\
+Nuclear mechanisms &
+\texttt{gtmd\_convolution.py}, \texttt{operator\_nuclear\_response.py},
+\texttt{diffractive\_shadowing.py}, \texttt{pion\_exchange.py},
+\texttt{nonnucleonic\_transverse.py}.\\
+Composition and resolved output &
+\texttt{canonical\_composition.py},
+\texttt{canonical\_parent\_enrichment.py},
+\texttt{resolved\_nuclear\_parent.py}.\\
+Scheme and transforms &
+\texttt{tmd\_scheme.py}, \texttt{canonical\_scheme.py},
+\texttt{quark\_tmd\_matching.py}, \texttt{gluon\_tmd\_matching.py},
+\texttt{tmd\_evolution.py}, \texttt{fourier.py}.\\
+Validation &
+\texttt{joint\_positivity.py}, \texttt{moment\_ledger.py},
+\texttt{controlled\_limits.py}, and the generated WP11/WP12 reports.\\
+\bottomrule
+\end{longtable}
+
+The authoritative numerical parents are
+\begin{itemize}
+  \item \texttt{outputs/parent\_tmds/wp12\_resolved\_quark\_parent.csv};
+  \item \texttt{outputs/parent\_tmds/wp12\_resolved\_gluon\_parent.csv};
+  \item their \texttt{.correlators.csv} companions;
+  \item \texttt{outputs/parent\_tmds/wp12\_canonical\_composed\_quark.csv};
+  \item \texttt{outputs/parent\_tmds/wp12\_canonical\_composed\_gluon.csv}.
+\end{itemize}
+The acceptance authority is
+\texttt{outputs/validation/wp12e\_acceptance.json} together with the
+resolved-parent and evidence-parity reports.
+
+\section{Requirements for a genuinely predictive next-level model}
+\label{sec:next-level}
+
+\subsection{Change of model class}
+
+The present construction is a symmetry-complete and nuclear-dressed
+phenomenological synthesis.  Its common correlator architecture enforces
+consistency, but many of the scalar amplitudes entering that correlator come
+from different fits or from separately normalized model sectors.  This is
+not equivalent to deriving the full correlator from one microscopic quantum
+state.
+
+A genuinely predictive next-level model requires a change in the direction
+of inference.  The present construction follows
+\begin{equation}
+\{\text{PDF/TMD fits, nuclear models, phase models}\}
+\longrightarrow
+\Phi_{a/D}^{\rm assembled}
+\longrightarrow
+\{F_A\}.
+\label{eq:assembled-direction}
+\end{equation}
+The next-level construction must instead follow
+\begin{equation}
+\{H_{\rm LF}^{\rm ren},\bm\theta_{\rm micro}\}
+\longrightarrow
+\{|\Psi_N\rangle,|\Psi_D\rangle,\mathcal U_\eta\}
+\longrightarrow
+W_{a/N},W_{a/D}
+\longrightarrow
+\{F_A,\mathcal O_{\rm process}\},
+\label{eq:generative-direction}
+\end{equation}
+where one renormalized microscopic model and a limited shared parameter
+vector \(\bm\theta_{\rm micro}\) generate all flavors, polarizations, OAM
+interferences, gauge-link phases, nuclear components, and observables.
+External PDFs, TMDs, lattice matrix elements, form factors, and \(b_1\) then
+calibrate or test the same parameter vector; they no longer supply unrelated
+named TMDs.
+
+Even this stronger construction would be a controlled effective-QCD
+prediction, not an exact solution of continuum QCD.  Its predictive content
+would come from using substantially fewer shared microscopic degrees of
+freedom than the number of observables predicted, and from successfully
+predicting quantities that were not used for calibration.
+
+\subsection{Microscopic light-front Hamiltonian and regulated Hilbert space}
+
+The first required object is a gauge-consistent, renormalized light-front
+Hamiltonian eigenproblem,
+\begin{equation}
+H_{\rm LF}^{\rm ren}(\Lambda_{\rm UV},\Lambda_{\rm IR};
+\bm\theta_{\rm QCD},\bm\theta_{\rm EFT})
+|\Psi_h(P^+,\bm P_T,\Lambda)\rangle
+=M_h^2|\Psi_h(P^+,\bm P_T,\Lambda)\rangle .
+\label{eq:lf-eigenproblem}
+\end{equation}
+The regulator, counterterms, basis truncation, and renormalization conditions
+must be part of the model definition.  A numerical diagonalization without
+a cutoff study or sector-dependent renormalization is not a predictive
+Hamiltonian model.
+
+For the nucleon, the minimum useful Fock expansion is
+\begin{align}
+|N,\lambda\rangle
+&=\psi_{qqq}^{\lambda}|qqq\rangle
+ +\psi_{qqqg}^{\lambda}|qqqg\rangle
+ +\psi_{qqqq\bar q}^{\lambda}|qqqq\bar q\rangle
+ +\cdots ,
+\label{eq:nucleon-fock}
+\end{align}
+with explicit \(u,d,\bar u,\bar d\) and gluon degrees of freedom, color
+singlet constraints, parton helicities, and orbital sectors sufficient to
+support the transverse ranks in \cref{tab:quark-basis,tab:gluon-basis}.
+At minimum, the basis must contain the \(L_z=0,\pm1,\pm2\) interferences
+needed by Sivers, Boer--Mulders, worm-gear, pretzelosity, linear-gluon, and
+spin-1 tensor projections.  A valence-only \(|qqq\rangle\) state cannot
+predict antiquark TMDs, genuine quark--gluon correlations, or the gluon
+sector.
+
+The Hamiltonian or effective interaction must specify:
+\begin{enumerate}
+  \item quark masses and kinetic terms in a declared scheme;
+  \item confining interactions and their rotational-symmetry restoration;
+  \item quark--gluon vertices and instantaneous light-front interactions;
+  \item chiral dynamics capable of producing the pion cloud and sea-flavor
+  asymmetry;
+  \item counterterms and sector-dependent renormalization conditions;
+  \item zero-mode treatment and the consequences of Fock-space truncation;
+  \item a convergence sequence in longitudinal resolution, transverse basis,
+  Fock sectors, and ultraviolet cutoff.
+\end{enumerate}
+
+Candidate realizations include basis light-front quantization, a
+Hamiltonian effective-field-theory construction, or a continuum
+Bethe--Salpeter/Dyson--Schwinger amplitude mapped consistently to the light
+front.  The project should select one primary generative route.  Combining
+wave functions from mutually unrelated microscopic models would reproduce
+the present patchwork at a deeper level.
+
+\subsection{Nucleon GTMDs from common wave-function overlaps}
+
+For T-even distributions, the renormalized nucleon GTMD must be calculated
+as an overlap of the same Fock amplitudes.  Schematically,
+\begin{align}
+W_{a/N,\lambda'\lambda}^{[\Gamma]}
+(x,\kT,\DT)
+&=\sum_{n}\sum_{j\in a}
+\int[\dd x]_n[\dd^2\bm k_T]_n\,
+\delta(x-x_j)\delta^{(2)}(\kT-\bm k_{Tj})
+\nonumber\\
+&\quad\times
+\psi_{n,\lambda'}^\ast(\{x_i,\bm k'_{Ti},\lambda_i,c_i\})
+\mathcal P_{j}^{[\Gamma]}
+\psi_{n,\lambda}(\{x_i,\bm k_{Ti},\lambda_i,c_i\}),
+\label{eq:microscopic-overlap}
+\end{align}
+where the initial/final transverse momenta implement one common recoil
+convention and \(\mathcal P_j^{[\Gamma]}\) acts on the active parton.
+Quark, antiquark, and gluon correlators must be derived from this same
+state.  Their normalizations are then linked by baryon number, momentum,
+helicity, and angular-momentum sum rules rather than independently chosen.
+
+The overlap implementation must demonstrate that
+\begin{equation}
+\left.
+\begin{array}{c}
+W(x,\kT,\DT)\\[1mm]
+\displaystyle\int\dd^2\kT\,W(x,\kT,\DT)\\[1mm]
+W(x,\kT,\bm0)\\[1mm]
+\displaystyle\int\dd x\,\dd^2\kT\,W
+\end{array}
+\right\}
+\longrightarrow
+\left\{
+\begin{array}{c}
+\text{GTMD}\\
+\text{GPD}\\
+\text{TMD}\\
+\text{local current or EMT form factor}
+\end{array}
+\right.
+\label{eq:microscopic-reductions}
+\end{equation}
+with one regulator and one state normalization.  A TMD-specific Gaussian
+may be used only as a quantified numerical regulator or controlled
+approximation, not as an independent physical width for every function.
+
+The microscopic state must also reproduce OAM and spin decompositions.  For
+example, in a declared gauge and scheme,
+\begin{equation}
+\frac12
+=\frac12\Delta\Sigma(\mu)
++L_q(\mu)+\Delta G(\mu)+L_g(\mu),
+\label{eq:spin-sum}
+\end{equation}
+and the canonical/kinetic OAM distinction must be related to the gauge-link
+definition used by the GTMD.  The sign pattern of flavor-resolved Sivers or
+OAM-sensitive functions must emerge from these amplitudes, not be imposed
+as a plot-level coefficient.
+
+\subsection{Dynamical Wilson lines and naive-T-odd functions}
+
+Real light-front overlaps alone cannot predict naive-T-odd TMDs.  The
+microscopic model must calculate, or systematically approximate, the
+process-dependent Wilson line
+\begin{equation}
+\mathcal U_\eta[0,z]
+=\mathcal P\exp\left[
+ig\int_{\mathcal C_\eta(0,z)}
+\dd\xi^\mu A_\mu^a(\xi)t^a
+\right],
+\label{eq:wilson-line}
+\end{equation}
+using the same gluon fields and color couplings that appear in
+\cref{eq:lf-eigenproblem}.  An expansion such as
+\begin{equation}
+\mathcal U_\eta
+=1+ig\int_{\mathcal C_\eta}\dd\xi\cdot A
+(ig)^2\int_{\mathcal C_\eta}\!\!\int_{\mathcal C_\eta}
+\mathcal P[A(\xi)A(\zeta)]+\cdots
+\label{eq:wilson-expansion}
+\end{equation}
+must have a declared truncation, rapidity regulator, color representation,
+and infrared treatment.
+
+At minimum, the calculation must:
+\begin{itemize}
+  \item generate the absorptive phase from explicit interference with
+  intermediate states, rather than assign an arbitrary imaginary constant;
+  \item recover exact future/past sign reversal where factorization requires
+  it;
+  \item retain distinct quark flavor and gluon \(f^{abc}\)- and
+  \(d^{abc}\)-type color structures;
+  \item reproduce a perturbative one-gluon limit and demonstrate stability
+  when higher eikonal orders are included;
+  \item identify processes for which the assumed staple factorization is
+  established, conditional, or broken by Glauber/color entanglement.
+\end{itemize}
+
+The quark Sivers, Boer--Mulders, and all gluon T-odd functions would then be
+different projections of common rescattering amplitudes.  Their relative
+signs and magnitudes would become correlated predictions.  A universal phase
+multiplied onto unrelated operators is specifically disallowed.
+
+\subsection{Microscopic spin-1 nuclear state}
+
+The deuteron cannot be generated by convolving a microscopic nucleon with an
+unrelated phenomenological nuclear response.  The nuclear state must be
+derived in a Hilbert space that resolves both nucleonic and non-nucleonic
+sectors:
+\begin{align}
+|D,\Lambda\rangle
+&=\Psi_{NN}^{\Lambda}|NN\rangle
+ +\Psi_{NN\pi}^{\Lambda}|NN\pi\rangle
+ +\Psi_{\Delta\Delta}^{\Lambda}|\Delta\Delta\rangle
+ +\Psi_{6q}^{\Lambda}|6q\rangle
+ +\cdots .
+\label{eq:deuteron-fock-next}
+\end{align}
+The amplitudes must share one normalization,
+\begin{equation}
+1=Z_{NN}+Z_{NN\pi}+Z_{\Delta\Delta}+Z_{6q}+\cdots ,
+\qquad
+1=\sum_\alpha\int[\dd\Gamma_\alpha]\,
+\sum_i x_i|\Psi_\alpha|^2,
+\label{eq:fock-normalization}
+\end{equation}
+so baryon number and plus momentum close without after-the-fact
+renormalization.
+
+The \(NN\) sector must preserve the successful AV18/CD-Bonn/Norfolk
+long-distance S/D phenomenology or derive an equally accurate interaction,
+including consistent one- and two-body currents.  The higher sectors must
+carry explicit spin, isospin, color, parton flavor, transverse momentum,
+and off-forward transfer.  A scalar pion distribution or a six-quark
+probability is insufficient to predict tensor TMDs.
+
+The deuteron GTMD should be evaluated as a matrix element in the full state,
+\begin{equation}
+W_{a/D}^{[\Gamma]}
+=\sum_{\alpha,\beta}
+\langle\Psi_D^\alpha|
+\widehat{\mathcal O}_{a}^{[\Gamma]}[\mathcal U_\eta]
+|\Psi_D^\beta\rangle ,
+\label{eq:full-deuteron-matrix}
+\end{equation}
+including diagonal contributions and physically allowed interference
+between Fock sectors.  Impulse, exchange-current, shadowing, and
+non-nucleonic terminology should then label controlled reductions of
+\cref{eq:full-deuteron-matrix}, not independently normalized additions.
+
+At small x, coherent multiple scattering must be derived from the same
+nucleon diffractive amplitudes and nuclear state.  Polarized and tensor
+shadowing cannot be copied from the unpolarized response; their helicity
+amplitudes must be calculated.  At intermediate and large x, off-shell,
+Fermi-motion, SRC, and EMC-like behavior must emerge from the joint
+spectral/partonic amplitude with a tested separation of scales.
+
+\subsection{Matching, renormalization, and evolution}
+
+A low-resolution Hamiltonian wave function is not by itself a TMD in a
+specified QCD scheme.  A complete prediction requires a matching map
+\begin{equation}
+\widetilde W^{\rm QCD}_{a/h}
+(x,b_T;\mu,\zeta)
+=\mathcal Z_{a}^{\rm LF\to TMD}
+(b_T;\Lambda_{\rm LF},\mu,\zeta)
+\otimes
+\widetilde W^{\rm LF}_{a/h}
+(x,b_T;\Lambda_{\rm LF})
++\mathcal O\!\left(\frac{\Lambda_{\rm LF}}{Q}\right),
+\label{eq:lf-matching}
+\end{equation}
+including soft subtraction, rapidity renormalization, and operator mixing.
+The matching must identify which Hamiltonian regulator dependence cancels
+against \(\mathcal Z^{\rm LF\to TMD}\).
+
+The next-level model must use one consistent route for:
+\begin{enumerate}
+  \item nonsinglet, singlet, and quark--gluon collinear evolution;
+  \item quark and gluon Collins--Soper kernels;
+  \item transverse ranks \(r=0,1,2,\ldots\);
+  \item T-even and T-odd operators in their correct gauge-link classes;
+  \item threshold matching and heavy flavors when the Q range requires them;
+  \item process-level \(W+Y\) matching.
+\end{enumerate}
+Fit-native evolved inputs may remain as external validation data, but they
+must not replace the evolution of the microscopic state.
+
+\subsection{Calibration without rebuilding a patchwork}
+
+The microscopic parameter vector must be small, shared, and identifiable.
+The likelihood should be defined at the observable or well-defined matrix
+element level:
+\begin{equation}
+p(\bm\theta_{\rm micro}|\mathcal D)
+\propto
+p(\mathcal D|\bm\theta_{\rm micro})
+p_{\rm EFT}(\bm\theta_{\rm micro})
+p_{\rm ren}(\bm\theta_{\rm micro}),
+\label{eq:micro-posterior}
+\end{equation}
+with correlated experimental, lattice, truncation, regulator, and numerical
+covariances.  Suitable calibration data include:
+\begin{itemize}
+  \item hadron masses, charges, magnetic moments, and axial charges;
+  \item nucleon electromagnetic, axial, and energy--momentum form factors;
+  \item selected unpolarized/helicity PDFs and low Mellin moments;
+  \item lattice quasi-/pseudo-distributions and GTMD-related moments where
+  scheme matching is controlled;
+  \item deuteron binding, asymptotic S/D normalization, elastic form factors,
+  quadrupole and magnetic moments;
+  \item a restricted subset of \(b_1\), SIDIS, and T-odd data sufficient to
+  constrain common phases.
+\end{itemize}
+
+The calibration must not assign an independent free normalization to each
+TMD.  A parameter associated with a quark--gluon vertex, OAM mixing, or
+eikonal kernel must affect every correlator projection to which that
+microscopic interaction contributes.  Identifiability should be assessed
+through posterior correlations, Fisher information or profile likelihoods,
+and closure on withheld observables.
+
+The fit must be divided into calibration and prediction sets before final
+optimization.  A quantity counts as a prediction only if its normalization
+and shape were not directly fitted.  For example, using Sivers data to fix a
+common rescattering kernel and then predicting Boer--Mulders, tensor T-odd,
+and gluon color-sector observables is a meaningful test; fitting each of
+those independently is not.
+
+\subsection{Uncertainty budget for a generative model}
+
+The next-level uncertainty is not a band assembled from unrelated models.
+It must propagate a common ensemble of microscopic states.  For any
+observable \(\mathcal O\),
+\begin{equation}
+\operatorname{Cov}(\mathcal O_i,\mathcal O_j)
+=\left\langle
+\big[\mathcal O_i(\bm\theta,\nu)-\overline{\mathcal O}_i\big]
+\big[\mathcal O_j(\bm\theta,\nu)-\overline{\mathcal O}_j\big]
+\right\rangle_{\bm\theta,\nu},
+\label{eq:predictive-covariance}
+\end{equation}
+where \(\bm\theta\) denotes calibrated microscopic parameters and \(\nu\)
+collects controlled truncation, regulator, matching, and numerical choices.
+The covariance must retain cross-flavor, cross-TMD, quark--gluon,
+proton--neutron, and cross-observable correlations.
+
+The error budget must separately report:
+\begin{enumerate}
+  \item statistical/calibration uncertainty;
+  \item Hamiltonian EFT truncation;
+  \item Fock-sector and basis truncation;
+  \item ultraviolet/infrared regulator and renormalization uncertainty;
+  \item Wilson-line/eikonal truncation;
+  \item perturbative matching and scale variation;
+  \item TMD evolution and large-\(b_T\) uncertainty;
+  \item nuclear many-body truncation;
+  \item numerical discretization and transform error.
+\end{enumerate}
+Convergence in one category cannot be used to hide another.  In particular,
+positivity is a constraint on allowed states, not an uncertainty estimate.
+
+\subsection{Validation ladder and falsifiability}
+
+The model should be validated in increasing dynamical depth:
+\begin{enumerate}
+  \item \textbf{Algebraic layer:} color singlets, Poincare/light-front
+  kinematics, Hermiticity, parity, time reversal with link reversal,
+  permutation symmetry, and exact spin-1 projection closure.
+  \item \textbf{State layer:} normalization, regulator independence within
+  truncation errors, mass spectrum, rotational multiplets, and convergence
+  of Fock probabilities and OAM components.
+  \item \textbf{Local-current layer:} charges, magnetic moments, axial
+  charges, energy--momentum moments, and Ward identities using currents
+  consistent with the Hamiltonian.
+  \item \textbf{Marginal layer:} simultaneous TMD/GPD/PDF/form-factor
+  reductions from the same GTMD.
+  \item \textbf{Nucleon layer:} withheld flavor-resolved PDFs, TMD moments,
+  lattice observables, and process sign changes.
+  \item \textbf{Deuteron layer:} binding, elastic observables, \(b_1\),
+  tagged structure, tensor moments, and controlled proton/neutron limits.
+  \item \textbf{Process layer:} SIDIS, DY, and gluon-sensitive predictions
+  with explicit hard factors, fragmentation, color weights, and \(W+Y\).
+\end{enumerate}
+
+Failure of a withheld observable must update or reject the microscopic
+model.  It must not be repaired by adding a TMD-specific coefficient unless
+that coefficient corresponds to a missing operator added consistently to
+the Hamiltonian or current.
+
+\subsection{Required software architecture and deliverables}
+
+The present modular project can host the new model, but the central state
+must change.  Required new computational objects are:
+\begin{enumerate}
+  \item a versioned \texttt{MicroscopicHamiltonian} carrying regulator,
+  counterterm, basis, and renormalization metadata;
+  \item a sparse/distributed \texttt{FockState} representation with parton
+  flavor, color, helicity, momentum, OAM, and sector identity;
+  \item eigensolvers and convergence manifests for nucleon and deuteron
+  states;
+  \item common quark/gluon GTMD overlap evaluators at nonzero \(\DT\);
+  \item a Wilson-line engine with perturbative/eikonal order and link/color
+  labels;
+  \item a matching adapter from the Hamiltonian regulator to the declared
+  soft-subtracted TMD scheme;
+  \item an ensemble store that preserves microscopic member identity through
+  every observable;
+  \item automatic-differentiation or adjoint sensitivities for calibration;
+  \item observable-level likelihoods and withheld-validation reports.
+\end{enumerate}
+
+PennyLane or another quantum simulator would be justified only if it
+represents a defined truncated Fock Hilbert space, implements the same
+Hamiltonian matrix elements, and is benchmarked against exact diagonalization
+on smaller sectors.  A quantum circuit that merely reproduces Clebsch--Gordan
+coupling does not add predictive physics.
+
+\subsection{Acceptance criteria}
+
+The next-level model may be called genuinely predictive only when all of the
+following are satisfied:
+\begin{enumerate}
+  \item One declared microscopic Hamiltonian/state ensemble generates
+  quark, antiquark, and gluon correlators; fitted named-TMD curves are
+  comparison data, not central inputs.
+  \item The nucleon state contains the Fock sectors needed for sea and gluon
+  observables, with demonstrated basis and sector convergence.
+  \item Proton and neutron flavor differences, helicity, transversity, OAM,
+  and spin--orbit correlations emerge from the state.
+  \item T-even GTMDs and all their TMD/GPD/PDF/form-factor reductions close
+  from the same overlap.
+  \item T-odd phases are generated by an explicit Wilson-line/rescattering
+  calculation with correct process and f/d color dependence.
+  \item The spin-1 state contains normalized \(NN\) and supported
+  non-nucleonic sectors with explicit tensor polarization and interference.
+  \item Currents and operators are matched consistently to the Hamiltonian
+  and satisfy Ward identities and known local limits.
+  \item One QCD TMD scheme and rank-aware evolution route carries the full
+  state to multiple Q values.
+  \item A shared microscopic posterior predicts withheld nucleon and
+  deuteron observables with correlated uncertainties.
+  \item At least one nontrivial family not used in calibration---for example
+  tensor TMDs, Boer--Mulders from a Sivers-calibrated kernel, or gluon
+  f/d-sensitive observables---is successfully predicted.
+  \item Removing any presently phenomenological TMD input does not make the
+  central microscopic calculation undefined.
+  \item All symmetry, positivity, marginal, sum-rule, regulator,
+  truncation, numerical, and no-double-counting gates pass.
+\end{enumerate}
+
+\begin{table}[ht]
+\centering
+\caption{Distinction between the present synthesis and the required
+next-level generative model.}
+\label{tab:model-class-comparison}
+\small
+\begin{tabularx}{\textwidth}{L{0.22\textwidth}Y Y}
+\toprule
+Question & Present model & Genuinely predictive model \\
+\midrule
+Source of TMD amplitudes &
+Different fits and explicit model sectors &
+Common microscopic nucleon/deuteron state \\
+Flavor and spin &
+Retained and constrained after input assembly &
+Generated by Hamiltonian eigenstates \\
+T-odd phases &
+Fit input or screened/eikonal scenarios &
+Wilson-line dynamics using the model gluon field \\
+Tensor nuclear physics &
+Realistic wave functions plus operator response maps &
+Full spin-resolved nuclear Fock-state matrix element \\
+Non-nucleonic sectors &
+Sourced additions or zero-centered interfaces &
+Normalized amplitudes in the same eigenstate \\
+Uncertainty &
+Named heterogeneous axes &
+Correlated microscopic posterior plus truncation errors \\
+Evolution &
+Heterogeneous fixed-\(Q\) boundary routes &
+One matched, rank-aware QCD scheme \\
+Meaning of prediction &
+Constrained extrapolation or model scenario &
+Withheld observable from shared calibrated parameters \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+This program is substantially more demanding than completing evolution of
+the current boundary.  Evolution remains useful for the present
+phenomenological model, but it must not be presented as the step that turns
+that model into a microscopic prediction.  The Hamiltonian/Fock-state and
+Wilson-line program above is the actual transition in model class.
+
+\section{Completion audit and remaining physics}
+\label{sec:audit}
+
+\subsection{Completed at the declared boundary}
+
+\begin{itemize}
+  \item All 18 quark/antiquark and 18 gluon forward projections.
+  \item Explicit \(u,d,\bar u,\bar d\), proton, and neutron parents.
+  \item U/L/T/LL/LT/TT target structure and retained parton helicity.
+  \item Independent gluon f/d gauge-link/color components.
+  \item A shared GTMD/correlator parent and tested projections.
+  \item Six realistic deuteron wave functions with S/D and SS/SD/DS/DD
+  interference.
+  \item Spin, OAM, spin--orbit, and absorptive Wilson-line mechanisms.
+  \item Binding/Fermi motion, off-shell, shadowing, antishadowing, pion, and
+  controlled non-nucleonic interfaces.
+  \item Named fit, Hessian, interval, wave, profile, phase, nuclear, OAM,
+  CSB, and numerical axes.
+  \item Symmetry, positivity, support, marginal, moment, closure, controlled
+  limit, and benchmark validation.
+\end{itemize}
+
+\subsection{Model-dominated but honestly represented}
+
+Boer--Mulders normalization, pretzelosity, genuine WW breaking, most
+tensor-polarized TMDs, polarized/tensor shadowing, absolute non-Sivers
+gluon T-odd magnitudes, process-specific f/d mixtures, and intrinsic
+non-nucleonic transverse/color structure remain model dominated.  They are
+not omitted, but neither are their bands presented as fitted confidence
+regions.
+
+\subsection{Open requirements after this boundary}
+
+\begin{enumerate}
+  \item Complete rank-aware, common-scheme, multi-\(Q\) evolution with
+  resolved-component and correlated-ensemble closure.
+  \item Process-specific \(W+Y\) matching and hard/color factors.
+  \item A global inference program combining tensor DIS, SIDIS, DY,
+  lattice constraints, and gluon-sensitive observables.
+  \item Full nonzero-skewness GTMD phenomenology and polynomiality tests.
+  \item Improved polarized/tensor diffractive inputs and a spin-resolved
+  transverse \(NN\pi\) amplitude.
+  \item Direct fit or lattice information for tensor and gluon TMDs that
+  currently rely on shared-parent model predictions.
+\end{enumerate}
+
+\section{Conclusion}
+
+The original GTMD-first proposal supplied the right organizing principle,
+but the route to an adequate numerical boundary required two substantive
+corrections.  Exact zeros in a real scalar one-body parent were recognized
+as missing-amplitude limits, and a later smooth reduced-amplitude atlas was
+recognized as a bookkeeping closure rather than a derivation from the
+light-front parent.  The present model restores the parent chain, preserves
+flavor and constituent identity, represents vector and tensor spin-1
+structure, introduces physically distinct OAM and gauge-link amplitudes,
+and composes nuclear and non-nucleonic mechanisms under an explicit
+no-double-counting contract.
+
+The strongest sectors inherit modern unpolarized, helicity, transversity,
+and Sivers ensembles.  Less constrained tensor and gluon sectors are
+predictions of the same spin/OAM/Wilson parent with explicit sensitivity
+axes.  The final deuteron may approach isoscalar equality, but this emerges
+from unequal proton and neutron flavor parents rather than being built in
+as a flavor-independent ansatz.  All declared projections now meet the
+same standard of provenance, replacement interfaces, nuclear propagation,
+and validation, although not the same experimental precision.
+
+This is a scientifically defensible boundary on which to build complete
+evolution.  Evolution must transport, rather than erase, the flavor, spin,
+rank, color/link, constituent, mechanism, and uncertainty structure
+documented here.
+
+\appendix
+\section{Machine-readable acceptance values}
+
+\begin{tabularx}{\textwidth}{L{0.48\textwidth}Y}
+\toprule
+Quantity & Accepted value \\
+\midrule
+Declared boundary &
+\(Q=5~\mathrm{GeV}\),
+\(x_N=\{0.02,0.05,0.10,0.20,0.40\}\) \\
+Basis & 18 quark/antiquark projections per flavor; 18 gluon projections \\
+Resolved parent size & 38,880 quark rows; 49,680 gluon rows \\
+Evidence parity & 36/36 rows pass \\
+Minimum density eigenvalues &
+\(4.12612\times10^{-4}\) (quark),
+\(2.0881\times10^{-2}\) (gluon) \\
+Maximum parent closure residual &
+\(0\) (quark), \(1.7347\times10^{-18}\) (gluon) \\
+Maximum CP recomposition shift &
+\(2.73\%\) (quark), \(2.91\%\) (gluon), relative to local \(f_1\) \\
+Full regression & 482 tests pass \\
+\bottomrule
+\end{tabularx}
+
+\section{Reproduction commands}
+
+\begin{verbatim}
+# Compile this manuscript.
+TECTONIC_CACHE_DIR=/private/tmp/deuteron-tectonic-cache \
+  /Users/dustin/work/DeuteronWigner/.conda-latex/bin/tectonic \
+  -X compile references/model_construction_note.tex \
+  --outdir output/pdf
+
+# Run the complete repository validation.
+PYTHONPATH=src MPLCONFIGDIR=/private/tmp/deuteron-mpl \
+  /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+\end{verbatim}
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{Hoodbhoy1989}
+P.~Hoodbhoy, R.~L.~Jaffe, and A.~Manohar,
+``Novel effects in deep inelastic scattering from spin-one hadrons,''
+Nucl.\ Phys.\ B \textbf{312}, 571 (1989).
+
+\bibitem{HERMESb1}
+A.~Airapetian et al.\ (HERMES Collaboration),
+``First measurement of the tensor structure function \(b_1\) of the
+deuteron,'' Phys.\ Rev.\ Lett.\ \textbf{95}, 242001 (2005),
+arXiv:hep-ex/0506018.
+
+\bibitem{Cosyn2017}
+W.~Cosyn, Y.-B.~Dong, S.~Kumano, and M.~Sargsian,
+``Tensor-polarized structure function \(b_1\) in the standard convolution
+description of the deuteron,'' Phys.\ Rev.\ D \textbf{95}, 074036 (2017),
+arXiv:1702.05337.
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000), arXiv:hep-ph/0007120.
+
+\bibitem{KumanoSong2021}
+S.~Kumano and Q.-T.~Song,
+``Transverse-momentum-dependent parton distribution functions for spin-1
+hadrons,'' Phys.\ Rev.\ D \textbf{103}, 014025 (2021),
+arXiv:2011.08583.
+
+\bibitem{Spin1Quark2016}
+S.~Kumano and Q.-T.~Song,
+``TMDs for spin-1 hadrons,'' arXiv:1612.06585.
+
+\bibitem{Boer2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and
+Y.-J.~Zhou, ``Gluon and Wilson loop TMDs for hadrons of spin
+\(\leq1\),'' JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{Cotogno2017}
+S.~Cotogno, T.~van Daal, and P.~J.~Mulders,
+``Positivity bounds on gluon TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{11}, 185 (2017), arXiv:1709.07827.
+
+\bibitem{Belitsky2004}
+A.~V.~Belitsky, X.~Ji, and F.~Yuan,
+``Quark imaging in the proton via quantum phase-space distributions,''
+Phys.\ Rev.\ D \textbf{69}, 074014 (2004), arXiv:hep-ph/0307383.
+
+\bibitem{Lorce2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys.\ Rev.\ D \textbf{84}, 014015 (2011), arXiv:1106.0139.
+
+\bibitem{AV18}
+R.~B.~Wiringa, V.~G.~J.~Stoks, and R.~Schiavilla,
+``Accurate nucleon-nucleon potential with charge-independence breaking,''
+Phys.\ Rev.\ C \textbf{51}, 38 (1995), arXiv:nucl-th/9408016.
+
+\bibitem{CDBonn}
+R.~Machleidt,
+``The high-precision, charge-dependent Bonn nucleon-nucleon potential,''
+Phys.\ Rev.\ C \textbf{63}, 024001 (2001), arXiv:nucl-th/0006014.
+
+\bibitem{Neff2016}
+T.~Neff and H.~Feldmeier,
+``The Wigner function and short-range correlations in the deuteron,''
+arXiv:1610.04066.
+
+\bibitem{BPV20}
+M.~Bury, A.~Prokudin, and A.~Vladimirov,
+``Extraction of the Sivers function from SIDIS, Drell--Yan, and \(W^\pm/Z\)
+data at N3LO,'' JHEP \textbf{05}, 151 (2021), arXiv:2103.03270.
+
+\bibitem{CT18}
+T.-J.~Hou et al.,
+``New CTEQ global analysis of quantum chromodynamics with high-precision
+data from the LHC,'' Phys.\ Rev.\ D \textbf{103}, 014013 (2021),
+arXiv:1912.10053.
+
+\bibitem{BDSSV24}
+D.~de Florian, R.~Sassot, M.~Stratmann, and W.~Vogelsang,
+updated BDSSV polarized parton-distribution analysis and public
+BDSSV24-NLO replica set (2024); project input metadata records the released
+LHAPDF member identities.
+
+\bibitem{JAMDiff}
+C.~Cocuzza et al.,
+``Transversity distributions with lattice-QCD constraints,''
+arXiv:2306.12998.
+
+\bibitem{Yang2024}
+X.~Yang et al.,
+phenomenological world-SIDIS extraction of the transverse worm-gear
+distribution \(g_{1T}\), arXiv:2403.12795, especially Eq.~(46) and
+Table~IV.
+
+\bibitem{Pretzel}
+Y.~Chai, K.-B.~Chen, and J.-P.~Ma,
+``A note on pretzelosity TMD parton distribution,''
+arXiv:1808.10560.
+
+\bibitem{BSV19}
+I.~Scimemi and A.~Vladimirov,
+``Non-perturbative structure of semi-inclusive deep-inelastic and
+Drell--Yan scattering at small transverse momentum,''
+JHEP \textbf{06}, 137 (2020), arXiv:1912.06532; see also the BSV19
+arTeMiDe input documented in the project scheme manifest.
+
+\bibitem{MSHTQED}
+T.~Cridge, L.~A.~Harland-Lang, A.~D.~Martin, and R.~S.~Thorne,
+``QED parton distribution functions in the MSHT20 fit,''
+Eur.\ Phys.\ J.\ C \textbf{82}, 90 (2022), arXiv:2111.05357.
+
+\bibitem{FGS}
+L.~Frankfurt, V.~Guzey, and M.~Strikman,
+``Leading twist nuclear shadowing phenomena in hard processes with
+nuclei,'' Phys.\ Rept.\ \textbf{512}, 255 (2012),
+arXiv:1106.2091; see also arXiv:hep-ph/0601123 for the deuteron expression.
+
+\bibitem{H1DPDF}
+A.~Aktas et al.\ (H1 Collaboration),
+``Dijet cross sections and parton densities in diffractive DIS at HERA,''
+JHEP \textbf{10}, 042 (2007), arXiv:0708.3217.
+
+\bibitem{MillerPion}
+G.~A.~Miller,
+``Pionic and hidden-color, six-quark contributions to the deuteron
+\(b_1\) structure function,'' Phys.\ Rev.\ C \textbf{89}, 045203 (2014),
+arXiv:1311.4561.
+
+\bibitem{Collins}
+J.~Collins, \emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{EIS}
+M.~G.~Echevarria, A.~Idilbi, and I.~Scimemi,
+``Factorization theorem for Drell--Yan at low \(q_T\),''
+JHEP \textbf{07}, 002 (2012), arXiv:1111.4996.
+
+\bibitem{LFCao2026}
+X.~Cao et al.,
+``Non-perturbative flavor asymmetry in the nucleon and deuteron: the
+light-front Hamiltonian effective field theory approach,''
+arXiv:2601.13567 (2026).
+
+\end{thebibliography}
+
+\end{document}
