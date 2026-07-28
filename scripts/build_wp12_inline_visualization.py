@@ -9,10 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "output/figures/wp12_inspection"
-DESTINATION = ROOT / (
-    ".codex/visualizations/2026/07/27/"
-    "019f97af-fcbd-7861-85e4-c4824cfe67b8/tmd-inspection.html"
-)
+DESTINATION = ROOT / "output/visualizations/tmd-inspection.html"
 
 
 def uri(name: str) -> str:

@@ -2,7 +2,7 @@
 
 The project uses Python 3.9 because the validated local LHAPDF 6.5.5
 bindings are built for that interpreter. `environment.yml` is the
-authoritative cross-session environment declaration.
+authoritative reproducible environment declaration.
 
 Create and verify the environment from the repository root:
 

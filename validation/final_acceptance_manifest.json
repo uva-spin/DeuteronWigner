@@ -8,7 +8,7 @@
       "implementation_files": ["src/deuteron_wigner/registry.py", "src/deuteron_wigner/quark_correlator.py", "src/deuteron_wigner/gluon_correlator.py"],
       "tests": ["tests/test_tmd.py", "tests/test_quark_correlator.py", "tests/test_gluon_correlator.py"],
       "artifacts": ["outputs/parent_tmds/ensemble/quark_parent_tmd_ensemble.csv", "outputs/parent_tmds/ensemble/gluon_parent_tmd_ensemble.csv"],
-      "documentation": ["handoff/ROADMAP.md", "references/spin1_representation_map.md"]
+      "documentation": ["references/spin1_representation_map.md"]
     },
     {
       "id": "flavor_nucleon_resolution",
@@ -32,7 +32,7 @@
       "implementation_files": ["src/deuteron_wigner/gtmd_convolution.py", "src/deuteron_wigner/gtmd_sampling.py"],
       "tests": ["tests/test_offforward_reductions.py", "tests/test_stage0_core.py"],
       "artifacts": ["outputs/validation/physical_offforward_reductions.json"],
-      "documentation": ["handoff/ROADMAP.md"]
+      "documentation": ["references/controlled_limit_audit.md"]
     },
     {
       "id": "nuclear_mechanisms",
@@ -72,15 +72,15 @@
       "implementation_files": ["scripts/build_parent_tmd_ensemble.py", "scripts/build_quark_flavor_source_atlas.py", "src/deuteron_wigner/figure_acceptance.py"],
       "tests": ["tests/test_figure_acceptance.py", "tests/test_tmd_atlas_pdf_audit.py"],
       "artifacts": ["outputs/validation/tmd_atlas_pdf_audit.json", "outputs/figures/figure_index.json"],
-      "documentation": ["handoff/ROADMAP.md"]
+      "documentation": ["references/production_tmd_architecture_audit.md"]
     },
     {
-      "id": "reproducibility_handoff",
-      "criterion": "Environment, provenance, decisions, roadmap, and exact next-state information are persistent",
+      "id": "reproducibility_contract",
+      "criterion": "Environment, input provenance, conventions, validation, and reproduction commands are documented",
       "implementation_files": ["environment.yml", "pyproject.toml"],
       "tests": ["tests/test_provenance.py"],
       "artifacts": ["outputs/validation/parent_tmd_figure_acceptance.json"],
-      "documentation": ["AGENTS.md", "handoff/ROADMAP.md", "handoff/decisions.md", "handoff/worklog.md", "references/environment_setup.md"]
+      "documentation": ["README.md", "references/environment_setup.md", "references/model_construction_note.tex"]
     },
     {
       "id": "rich_spin1_dynamics",
@@ -88,7 +88,7 @@
       "implementation_files": ["src/deuteron_wigner/gauge_link_phase.py", "src/deuteron_wigner/worm_gear_inputs.py", "src/deuteron_wigner/gluon_todd.py", "src/deuteron_wigner/oam_interference.py"],
       "tests": ["tests/test_wp10_manifest.py", "tests/test_wp10_production_ledger.py", "tests/test_complete_gluon_todd_production_output.py", "tests/test_spectator_informed_gluon_todd.py", "tests/test_spectator_informed_gluon_todd_production.py"],
       "artifacts": ["outputs/validation/wp10_acceptance_report.json", "outputs/parent_tmds/wp10_production_member_ledger.csv", "outputs/figures/figure_index.json"],
-      "documentation": ["references/rich_spin1_extensions.md", "handoff/ROADMAP.md"]
+      "documentation": ["references/rich_spin1_extensions.md"]
     }
   ]
 }

@@ -50,7 +50,7 @@
         "outputs/validation/gluon_shadowing_joint_positivity.json"
       ],
       "provenance": [
-        "handoff/decisions.md",
+        "references/joint_positivity_ensemble_audit.md",
         "references/joint_positivity_ensemble_audit.md"
       ],
       "affected_outputs": ["outputs/parent_tmds/uncertainty"],
@@ -119,7 +119,7 @@
         "outputs/validation/controlled_limits.audit.json"
       ],
       "provenance": [
-        "handoff/decisions.md",
+        "references/controlled_limit_audit.md",
         "references/controlled_limit_audit.md"
       ],
       "affected_outputs": ["outputs/parent_tmds"]
@@ -165,7 +165,7 @@
         "outputs/validation/uncertainty_axes.audit.json"
       ],
       "provenance": [
-        "handoff/decisions.md",
+        "references/uncertainty_axis_contract.md",
         "references/uncertainty_axis_contract.md"
       ],
       "affected_outputs": ["outputs/parent_tmds/uncertainty"]
@@ -203,7 +203,7 @@
         "outputs/parent_tmds/quark_av18_ultrafine.parent-validation.json",
         "outputs/parent_tmds/gluon_av18_medium.validation.json"
       ],
-      "provenance": ["handoff/decisions.md"],
+      "provenance": ["references/production_tmd_architecture_audit.md"],
       "affected_outputs": ["outputs/parent_tmds"]
     }
   ]

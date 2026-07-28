@@ -781,8 +781,8 @@ synthesis:
 - `references/uncertainty_axis_contract.md`,
   `references/tmd_scheme_contract.md`, and
   `references/moment_ledger_contract.md`: numerical contracts;
-- `handoff/decisions.md`: living record of consequential choices;
-- `handoff/worklog.md`: chronological implementation and validation record.
+- `references/*.md`: source-specific provenance, conventions, and limitations;
+- `validation/*.json`: machine-readable implementation and acceptance checks.
 
 ## 17. Bottom line before evolution
 
