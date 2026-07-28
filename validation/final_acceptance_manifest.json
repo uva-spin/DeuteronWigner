@@ -16,7 +16,7 @@
       "implementation_files": ["src/deuteron_wigner/nucleon_inputs.py", "src/deuteron_wigner/gtmd_convolution.py"],
       "tests": ["tests/test_nucleon_inputs.py", "tests/test_figure_acceptance.py"],
       "artifacts": ["outputs/validation/parent_tmd_figure_acceptance.json", "outputs/parent_tmds/ensemble/quark_flavor_source_decomposition.csv"],
-      "documentation": ["references/production_tmd_architecture_audit.md"]
+      "documentation": ["references/production_spin1_tmd_model.md"]
     },
     {
       "id": "spin1_parent",
@@ -24,7 +24,7 @@
       "implementation_files": ["src/deuteron_wigner/parent_quark_tmd.py", "src/deuteron_wigner/gtmd_convolution.py", "src/deuteron_wigner/correlator_io.py"],
       "tests": ["tests/test_parent_quark_tmd.py", "tests/test_gtmd_convolution.py"],
       "artifacts": ["outputs/parent_tmds/quark_av18_fine.correlators.csv", "outputs/parent_tmds/gluon_av18_medium.correlators.csv"],
-      "documentation": ["references/production_tmd_architecture_audit.md"]
+      "documentation": ["references/production_spin1_tmd_model.md"]
     },
     {
       "id": "offforward_reductions",
@@ -72,7 +72,7 @@
       "implementation_files": ["scripts/build_parent_tmd_ensemble.py", "scripts/build_quark_flavor_source_atlas.py", "src/deuteron_wigner/figure_acceptance.py"],
       "tests": ["tests/test_figure_acceptance.py", "tests/test_tmd_atlas_pdf_audit.py"],
       "artifacts": ["outputs/validation/tmd_atlas_pdf_audit.json", "outputs/figures/figure_index.json"],
-      "documentation": ["references/production_tmd_architecture_audit.md"]
+      "documentation": ["references/production_spin1_tmd_model.md"]
     },
     {
       "id": "reproducibility_contract",
@@ -80,7 +80,7 @@
       "implementation_files": ["environment.yml", "pyproject.toml"],
       "tests": ["tests/test_provenance.py"],
       "artifacts": ["outputs/validation/parent_tmd_figure_acceptance.json"],
-      "documentation": ["README.md", "references/environment_setup.md", "references/model_construction_note.tex"]
+      "documentation": ["README.md", "references/environment_setup.md"]
     },
     {
       "id": "rich_spin1_dynamics",

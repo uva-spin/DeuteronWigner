@@ -1,8 +1,8 @@
 # Rich spin-1 dynamical extensions
 
 This document is the provenance and validity map for WP10. It supplements,
-but does not weaken, the parent-first architecture in
-`references/production_tmd_architecture_audit.md`.
+but does not weaken the parent-first correlator architecture implemented in
+`src/deuteron_wigner/`.
 Every item below is either a fitted input, a sourced model scenario, or an
 explicit operator boundary. None is promoted to an exact QCD prediction.
 

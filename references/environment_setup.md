@@ -30,12 +30,7 @@ Roles and provenance:
   publishing results.
 - pypdf checks PDF structure; PyMuPDF 1.26+ is the rendering fallback when
   Poppler is unavailable.
-- ReportLab 4.x generates the reproducible scientific PDF notes and atlases.
-- The authoritative model-construction manuscript uses Tectonic 0.17 in the
-  project-local `.conda-latex` environment. Recreate it with
-  `/Users/dustin/miniforge3/bin/conda env create -p .conda-latex -f environment-latex.yml`.
-  Compile with
-  `TECTONIC_CACHE_DIR=/private/tmp/deuteron-tectonic-cache .conda-latex/bin/tectonic -X compile references/model_construction_note.tex --outdir output/pdf`.
+- ReportLab 4.x generates reproducible scientific atlases.
 
 The CT18NNLO set must be visible on the active LHAPDF search path.
 BDSSV24-NLO is stored under `data/raw/lhapdf`; the polarized provider adds

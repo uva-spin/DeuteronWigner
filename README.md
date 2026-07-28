@@ -6,9 +6,8 @@ model for the deuteron.
 
 The repository contains the complete present **phenomenological model
 implementation**, its scientific provenance, 151 calculation and validation
-scripts, 482 tests, representative TMD atlases, and a detailed formulation
-of the genuinely predictive microscopic model that should replace the
-phenomenological synthesis.
+scripts, representative TMD atlases, and reproducible environment
+specifications.
 
 > **Scientific status:** the current implementation is a constrained,
 > parent-consistent phenomenological synthesis. It is not yet a fundamental
@@ -52,18 +51,8 @@ The present numerical boundary combines:
 - separate fit, PDF, wave-function, gauge-link, nuclear, model, and
   numerical uncertainty axes.
 
-The exact content and limitations are documented in:
-
-- [`references/model_construction_note.tex`](references/model_construction_note.tex)
-  and its [compiled PDF](output/pdf/model_construction_note.pdf);
-- [`references/production_tmd_architecture_audit.md`](references/production_tmd_architecture_audit.md);
-- [`references/wp12e_acceptance.md`](references/wp12e_acceptance.md).
-
-The proposed algebraic/geometric architecture for the next microscopic model
-is described in
-[`references/algebraic_geometric_next_level_model_note.tex`](references/algebraic_geometric_next_level_model_note.tex)
-and its
-[compiled PDF](output/pdf/algebraic_geometric_next_level_model_note.pdf).
+Source-specific conventions, provenance, uncertainty definitions, and
+limitations are documented in the Markdown files under `references/`.
 
 ## Repository layout
 
@@ -123,27 +112,12 @@ the editable installation is not active, prepend:
 export PYTHONPATH="$PWD/src"
 ```
 
-### Optional environments
+### Optional arTeMiDe environment
 
-The native arTeMiDe checks and the LaTeX notes use separate reproducible
-environments:
+The native arTeMiDe checks use a separate reproducible environment:
 
 ```bash
 conda env create -p .conda-artemide -f environment-artemide.yml
-conda env create -p .conda-latex -f environment-latex.yml
-```
-
-Compile the two authoritative notes with:
-
-```bash
-TECTONIC_CACHE_DIR=/tmp/deuteron-tectonic-cache \
-  .conda-latex/bin/tectonic -X compile \
-  references/model_construction_note.tex --outdir output/pdf
-
-TECTONIC_CACHE_DIR=/tmp/deuteron-tectonic-cache \
-  .conda-latex/bin/tectonic -X compile \
-  references/algebraic_geometric_next_level_model_note.tex \
-  --outdir output/pdf
 ```
 
 ## External physics inputs
@@ -379,12 +353,6 @@ environment:
 PYTHONPATH=src MPLCONFIGDIR=/tmp/deuteron-mpl python -m pytest -q
 ```
 
-The accepted local checkpoint is:
-
-```text
-482 passed
-```
-
 Many tests are true unit tests, while production-output tests intentionally
 require generated files under `outputs/` and `output/figures/`. A fresh
 clone without external data and regenerated artifacts is therefore not
@@ -418,16 +386,8 @@ Validation covers, among other properties:
 - `validation/*.json` stores machine-readable acceptance contracts.
 - `references/*.md` records source provenance, conventions, alternatives,
   and the limits of each phenomenological component.
-- `references/model_construction_note.tex` is the complete scientific
-  description of the present model.
-- `references/algebraic_geometric_next_level_model_note.tex` defines the
-  proposed microscopic architecture.
 
 Complete rank-aware multi-\(Q\) evolution remains an open requirement.
-The subsequent WP13 objective is a common regulated light-front Hamiltonian,
-controlled Fock-sector convergence, dynamical Wilson-line phases,
-microscopic spin-1 nuclear composition, QCD matching/evolution, correlated
-inference, and withheld-observable validation.
 
 ## License
 

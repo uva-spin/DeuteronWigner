@@ -4,7 +4,7 @@ Date: 2026-07-25
 
 > This reduced-amplitude model is not derived from the project's
 > light-front GTMD parent and is superseded as a production result. See
-> `references/production_tmd_architecture_audit.md`. Its outputs are retained
+> `references/complete_spin1_tmd_model.md`. Its outputs are retained
 > only as exploratory closure and plotting regression fixtures.
 
 ## Delivered model

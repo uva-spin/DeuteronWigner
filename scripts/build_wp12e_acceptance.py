@@ -10,7 +10,6 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs/validation/wp12e_acceptance.json"
-DOC = ROOT / "references/wp12e_acceptance.md"
 
 
 def main() -> None:
@@ -69,18 +68,6 @@ def main() -> None:
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(report, indent=2)+"\n")
-    DOC.parent.mkdir(parents=True, exist_ok=True)
-    DOC.write_text(
-        "# WP12-E acceptance\n\n"
-        f"Status: **{report['status']}**\n\n"
-        + "\n".join(
-            f"- [{'x' if passed else ' '}] {name}"
-            for name, passed in criteria.items()
-        )
-        + "\n\n## Declared limitations\n\n"
-        + "\n".join(f"- {item}" for item in report["limitations"])
-        + "\n"
-    )
     print(json.dumps(report, indent=2))
     if report["status"] != "pass":
         raise SystemExit(1)
