@@ -7,9 +7,9 @@ tensor-polarization, orbital, gauge-link, and nuclear-mechanism information.**
 The project addresses a basic problem: a deuteron is not adequately described
 by adding an isoscalar proton curve to an isoscalar neutron curve. Its
 transverse structure depends on proton and neutron flavor dynamics, their
-spin-orbit correlations, the deuteron \(S\)- and \(D\)-wave components, and
+spin-orbit correlations, the deuteron $S$- and $D$-wave components, and
 coherent nuclear mechanisms. Spin 1 also permits tensor-polarized structures
-that do not exist for a spin-\(\tfrac12\) target.
+that do not exist for a spin-$\tfrac12$ target.
 
 The present release is a **correlator-level, phenomenologically constrained
 boundary model**. It is designed to use everything presently supportable
@@ -27,7 +27,7 @@ future microscopic calculation.
 ## Results at a glance
 
 The two atlases show the canonical deuteron TMD boundary at
-\(x_N=0.1\) and \(Q=5\,\mathrm{GeV}\). Curves are the central model and shaded
+$x_N=0.1$ and $Q=5\,\mathrm{GeV}$. Curves are the central model and shaded
 regions are conservative named-source envelopes; they are not uniformly
 statistical confidence intervals. Click an image for the full-resolution
 version.
@@ -36,7 +36,7 @@ version.
 
 [![Canonical flavor-resolved quark and antiquark TMDs](output/figures/wp12_inspection/wp12_quark_all_tmd_F_x010.png)](output/figures/wp12_inspection/wp12_quark_all_tmd_F_x010.png)
 
-The calculation keeps \(u,d,\bar u,\bar d\) distinct. The panels cover the
+The calculation keeps $u,d,\bar u,\bar d$ distinct. The panels cover the
 unpolarized, helicity, transversity, worm-gear, pretzelosity, vector-polarized,
 tensor-polarized, and T-odd projections in the declared 18-function
 leading-twist quark basis.
@@ -46,7 +46,7 @@ leading-twist quark basis.
 [![Canonical spin-1 gluon TMDs](output/figures/wp12_inspection/wp12_gluon_all_tmd_F_x010.png)](output/figures/wp12_inspection/wp12_gluon_all_tmd_F_x010.png)
 
 The gluon parent retains target polarization, transverse rank, gauge-link
-orientation, and the two independent \(f^{abc}\)- and \(d^{abc}\)-type T-odd
+orientation, and the two independent $f^{abc}$- and $d^{abc}$-type T-odd
 color structures. Wide bands identify sectors where present knowledge allows
 only a sensitivity envelope rather than a precise extraction.
 
@@ -55,14 +55,14 @@ only a sensitivity envelope rather than a precise extraction.
 [![Proton and neutron Sivers flavor decomposition](output/figures/wp12_inspection/wp12_sivers_proton_neutron_decomposition.png)](output/figures/wp12_inspection/wp12_sivers_proton_neutron_decomposition.png)
 
 The resolved parent prevents the deuteron sum from erasing its dynamics. This
-example exposes the opposite \(u\)- and \(d\)-flavor orbital pattern in the
+example exposes the opposite $u$- and $d$-flavor orbital pattern in the
 proton and its charge-related neutron counterpart before nuclear composition.
 
 ### Tensor structure confronted with data
 
 [![Deuteron b1 impulse and pion-exchange comparison with HERMES](output/pdf/b1_ia_pion_vs_hermes.png)](output/pdf/b1_ia_pion_vs_hermes.png)
 
-The \(b_1\) comparison illustrates why tensor-polarized nuclear mechanisms
+The $b_1$ comparison illustrates why tensor-polarized nuclear mechanisms
 matter: impulse physics alone is retained, while pion-exchange contributions
 are added as an identifiable mechanism rather than hidden in a universal
 shape.
@@ -75,7 +75,7 @@ Full inspection atlases are available as
 
 The model is built around five principles.
 
-1. **Resolve before summing.** Proton, neutron, \(u,d,\bar u,\bar d\), gluon,
+1. **Resolve before summing.** Proton, neutron, $u,d,\bar u,\bar d$, gluon,
    polarization, gauge-link, and nuclear-mechanism labels remain explicit.
    The physical deuteron is formed only after those contributions have been
    calculated.
@@ -99,17 +99,11 @@ The model is built around five principles.
 
 Schematically, the calculation is
 
-\[
-\text{nucleon inputs}
-\longrightarrow
-\text{flavor/spin/OAM parent correlators}
-\longrightarrow
-\text{spin-1 nuclear composition}
-\longrightarrow
-\text{quark and gluon TMD projections}
-\longrightarrow
-\text{observables and uncertainty bands}.
-\]
+**Nucleon inputs**
+→ **flavor/spin/OAM parent correlators**
+→ **spin-1 nuclear composition**
+→ **quark and gluon TMD projections**
+→ **observables and uncertainty bands**
 
 This architecture is intentionally extensible: a better global fit, lattice
 calculation, Wilson-line model, wave function, or microscopic correlator can
@@ -121,13 +115,13 @@ and validation machinery.
 The calculation retains:
 
 - proton and neutron source identities;
-- \(u,d,\bar u,\bar d\), and gluon sectors;
+- $u,d,\bar u,\bar d$, and gluon sectors;
 - unpolarized, vector-polarized, and tensor-polarized target components;
 - all 18 declared leading-twist quark/antiquark spin-1 TMD projections;
 - all 18 declared leading-twist gluon projections used by the project;
 - parton and target helicity, transverse rank, and OAM-interference channel;
 - future- and past-pointing gauge links;
-- independent gluon \(f^{abc}\)- and \(d^{abc}\)-type color/link structures;
+- independent gluon $f^{abc}$- and $d^{abc}$-type color/link structures;
 - deuteron wave function, constituent, nuclear mechanism, and uncertainty
   member.
 
@@ -151,7 +145,7 @@ The present numerical boundary combines:
 
 The present boundary does not claim that every TMD has equal empirical
 support. In particular, several tensor-polarized and gluon functions remain
-model-dominated, and complete rank-aware multi-\(Q\) TMD evolution is still
+model-dominated, and complete rank-aware multi-$Q$ TMD evolution is still
 open. The longer-term target is a common regulated light-front Hamiltonian
 with controlled Fock sectors, dynamical Wilson lines, microscopic spin-1
 nuclear composition, QCD matching and evolution, and correlated inference.
@@ -299,7 +293,7 @@ the top of the file and write validation sidecars beside their outputs.
 ### Quark/antiquark parent at one kinematic point
 
 The following calculates all 18 quark/antiquark projections for
-\(u,d,\bar u,\bar d\), preserving the serialized parent correlators:
+$u,d,\bar u,\bar d$, preserving the serialized parent correlators:
 
 ```bash
 mkdir -p outputs/parent_tmds
@@ -337,7 +331,7 @@ This produces both the projected table and a sibling
 H1 diffractive input, body-form-factor table, and enabled pion inputs used by
 the production configuration.
 
-### Fixed-\(k_T\) Wigner distribution
+### Fixed-$k_T$ Wigner distribution
 
 ```bash
 python scripts/compute_fixed_k_wigner.py --help
@@ -348,7 +342,7 @@ grid, and output. The underlying package code is in
 `src/deuteron_wigner/gtmd.py`, `gtmd_convolution.py`, `gtmd_models.py`, and
 `gtmd_sampling.py`.
 
-### \(b_1\) calculations and HERMES comparison
+### $b_1$ calculations and HERMES comparison
 
 ```bash
 python scripts/compute_b1_ia.py --help
@@ -367,7 +361,7 @@ standalone script. This is intentional: parent generation, nuclear
 composition, uncertainty construction, plotting, and acceptance remain
 independently inspectable.
 
-After the external inputs and direct \(x_N\) parent slices have been
+After the external inputs and direct $x_N$ parent slices have been
 generated, the principal WP12 sequence is:
 
 ```bash
@@ -494,7 +488,7 @@ Validation covers, among other properties:
 - `references/*.md` records source provenance, conventions, alternatives,
   and the limits of each phenomenological component.
 
-Complete rank-aware multi-\(Q\) evolution remains an open requirement.
+Complete rank-aware multi-$Q$ evolution remains an open requirement.
 
 ## License
 
