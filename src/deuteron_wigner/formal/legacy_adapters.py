@@ -35,6 +35,7 @@ def registry_operator_identity(
     entry: TMDEntry, *, flavor: str | IdentityState, scale: TMDScalePoint,
     scheme: TMDScheme, orientation: StapleOrientation,
     gluon_color_class: ColorClass = ColorClass.NOT_APPLICABLE,
+    second_orientation: StapleOrientation | None = None,
     reference_mass_gev: float | None = None,
 ) -> DecoratedOperatorId:
     representation = (
@@ -43,7 +44,10 @@ def registry_operator_identity(
     )
     first = standard_staple(orientation, representation)
     if entry.species == Species.GLUON:
-        second = standard_staple(orientation, representation)
+        second = standard_staple(
+            second_orientation if second_orientation is not None else orientation,
+            representation,
+        )
         wilson = GluonLinkId(first, second, gluon_color_class)
         if gluon_color_class == ColorClass.UNSPECIFIED:
             pass

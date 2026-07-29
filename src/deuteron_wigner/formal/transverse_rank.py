@@ -32,6 +32,8 @@ class RankSpec:
             raise ArchitectureError("C1.RANK", "rank powers must be nonnegative", expected=">=0", received=(self.angular_weight, self.k_power, self.b_power))
         if self.bessel_order != abs(self.angular_weight) and not self.convention_adapter:
             raise ArchitectureError("C1.RANK", "Bessel order/rank mismatch", expected=abs(self.angular_weight), received=self.bessel_order)
+        if (self.k_power != self.angular_weight or self.b_power != self.angular_weight) and not self.convention_adapter:
+            raise ArchitectureError("C1.RANK", "extracted transverse power/rank mismatch", expected=(self.angular_weight, self.angular_weight), received=(self.k_power, self.b_power))
         if (self.k_power or self.b_power) and self.reference_mass_gev is None:
             raise ArchitectureError("C1.RANK", "rank requires a reference mass", expected="positive GeV mass", received="UNSPECIFIED")
         if self.reference_mass_gev is not None and (self.reference_mass_gev <= 0 or self.mass_units != "GeV"):

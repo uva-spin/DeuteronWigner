@@ -28,6 +28,8 @@ from deuteron_wigner.resolved_nuclear_parent import (
     ResolvedGluonNuclearParent,
     ResolvedQuarkNuclearParent,
 )
+from deuteron_wigner.formal.provenance_graph import CompositionPlan, ProvenanceGraph
+from deuteron_wigner.formal.accepted_reductions import accepted_reduction_registry
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +50,7 @@ GLEGACY = str(
 QOUT = ROOT / "outputs/parent_tmds/wp12_resolved_quark_parent.csv"
 GOUT = ROOT / "outputs/parent_tmds/wp12_resolved_gluon_parent.csv"
 REPORT = ROOT / "outputs/validation/wp12_resolved_nuclear_parent.json"
+C2REPORT = ROOT / "outputs/validation/c2_composition_manifest.json"
 MASS = 1.87561294257
 CLASS = {
     "proton_in_deuteron": "physical_constituent_parent",
@@ -103,6 +106,17 @@ def labels(row, component):
 
 
 def main() -> None:
+    # C2 native semantic gate: validate the accepted plan before arrays combine.
+    graph_payload = json.loads(
+        (ROOT / "docs/next_level/c2_provenance_graph.json").read_text()
+    )
+    plan_payload = json.loads(
+        (ROOT / "docs/next_level/c2_composition_manifest.json").read_text()
+    )
+    c2_graph = ProvenanceGraph.from_dict(graph_payload)
+    c2_plan = CompositionPlan.from_dict(plan_payload["default_plan"])
+    c2_plan.validate(c2_graph)
+    native_reductions = accepted_reduction_registry()
     qlegacy = pd.read_csv(QLEGACY)
     qlegacy = qlegacy[
         qlegacy.mechanism.isin(["proton_impulse", "neutron_impulse"])
@@ -145,7 +159,10 @@ def main() -> None:
             common = labels(first, component)
             qrows.extend({
                 **common, "tmd": name, "rank": QRANKS[name],
-                "F_GeV-2": value,
+                "F_GeV-2": native_reductions.get(
+                    f"RED:{first.species}:{first.flavor_label}:{name}:"
+                    f"{first.gauge_link}:NOT_APPLICABLE"
+                )(value),
             } for name, value in projected.items())
             qmatrix.extend(quark_correlator_rows(parent, common))
         qclosure.append(resolved.closure_residual())
@@ -199,9 +216,16 @@ def main() -> None:
                 parent.values, momentum, MASS
             )
             common = labels(first, component)
+            color_id = {
+                "f_type_antisymmetric": "F_TYPE",
+                "d_type_symmetric": "D_TYPE",
+            }[first.color_structure]
             grows.extend({
                 **common, "tmd": name, "rank": GRANKS[name],
-                "F_GeV-2": value, "basis_residual": residual,
+                "F_GeV-2": native_reductions.get(
+                    f"RED:g:NOT_APPLICABLE:{name}:{first.gauge_link}:{color_id}"
+                )(value),
+                "basis_residual": residual,
             } for name, value in projected.items())
             gmatrix.extend(gluon_correlator_rows(parent.values, common))
         gclosure.append(resolved.closure_residual())
@@ -225,6 +249,14 @@ def main() -> None:
     }
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, indent=2)+"\n")
+    C2REPORT.write_text(json.dumps({
+        "schema_version": "1.0.0",
+        "requirement_id": "C2.COMPOSE",
+        "production_builder": "scripts/build_wp12_resolved_nuclear_parent.py",
+        "semantic_plan": c2_plan.dry_run(c2_graph),
+        "numerical_order_preserved": True,
+        "authoritative_outputs_modified_by_metadata": False,
+    }, indent=2, sort_keys=True)+"\n")
     print(json.dumps(report, indent=2))
 
 
