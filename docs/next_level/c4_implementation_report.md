@@ -91,3 +91,11 @@ dynamics are absent.
 The exact next package, conditional on the final C4 regression, is a
 validation-only one-gluon Wilson-line and light-front-cut pilot based on
 Volume III. It must remain disconnected from accepted production.
+
+## Post-completion source availability
+
+On 2026-07-30 the supplied TeX sources for Volumes I, II, III, and V were
+preserved under `references/` and indexed in
+`references/formalism_volume_index.md`. This does not alter the historical C4
+baseline: those sources were absent during C4 implementation. Volume 0 and
+Volume IV were not present in Downloads and remain explicitly unresolved.
