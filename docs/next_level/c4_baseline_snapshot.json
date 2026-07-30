@@ -1,0 +1,114 @@
+{
+  "accepted_composition_sha256": "3bbc390d4a80fe9ae520d54d8d12d7596eb59f5640242cf48527f9ace7a3ca6d",
+  "accepted_provenance_sha256": "d8773386171158675ce112f7f1ba22b87a67efd163922f7d880e8664f2290101",
+  "accepted_registry": {
+    "count": 216,
+    "sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493"
+  },
+  "atlas_pages": {
+    "rendered": 162,
+    "required": 162
+  },
+  "authoritative_artifacts": [
+    {
+      "actual_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "byte_identical": true,
+      "expected_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "id": "C0-ART-Q-CAN-TMD",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.csv"
+    },
+    {
+      "actual_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "byte_identical": true,
+      "expected_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "id": "C0-ART-Q-CAN-CORR",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.correlators.csv"
+    },
+    {
+      "actual_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "byte_identical": true,
+      "expected_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "id": "C0-ART-G-CAN-TMD",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.csv"
+    },
+    {
+      "actual_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "byte_identical": true,
+      "expected_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "id": "C0-ART-G-CAN-CORR",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.correlators.csv"
+    },
+    {
+      "actual_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "byte_identical": true,
+      "expected_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "id": "C0-ART-Q-RES-TMD",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.csv"
+    },
+    {
+      "actual_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "byte_identical": true,
+      "expected_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "id": "C0-ART-Q-RES-CORR",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.correlators.csv"
+    },
+    {
+      "actual_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "byte_identical": true,
+      "expected_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "id": "C0-ART-G-RES-TMD",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.csv"
+    },
+    {
+      "actual_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "byte_identical": true,
+      "expected_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "id": "C0-ART-G-RES-CORR",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.correlators.csv"
+    }
+  ],
+  "branch": "main",
+  "builders": {
+    "failed": 0,
+    "passed": 9
+  },
+  "c3": {
+    "benchmarks": 4,
+    "injections": 24,
+    "manifest_hashes": {
+      "c3_baseline_snapshot.json": "6423b05a7e0b55519409ea7edff421a9ea97621113a9157dfb15ec1edf52b516",
+      "c3_benchmark_manifest.json": "2a014dda1936a1f82ef8022c56b8e12a34244f29a33f49ac52d064046be12fad",
+      "c3_injection_manifest.json": "2faa48b0a7b7257996ef2a2db481691dca16b3408656f12b0238e1304ecf1202",
+      "c3_pilot_provenance.json": "b4c15fda7aa1e9af3ecc075f355c5b4dd3009834cf095ff4a406c9a8e75e1860",
+      "c3_regression_report.json": "6ba5aacc8ab252bfda418d0dabf44ee4d4ae549625b9809053c34cb8ff8014ec",
+      "c3_requirement_coverage.json": "3990d2b3ee2c41cd65efa747f8888924c42c81b60bcbc1c727e577a0273f143e"
+    },
+    "maximum_floating_residual": 8.881784197001252e-16
+  },
+  "c3_ancestor": "b0a18ce2d1017e102b2be0849abf4d31537874a8",
+  "environment": {
+    "numpy": "1.26.3",
+    "pytest": "8.4.2",
+    "python": "3.9.23"
+  },
+  "evidence": {
+    "passed": 36,
+    "total": 36
+  },
+  "normative_sources": {
+    "references/model_construction_note.tex": true,
+    "references/volume_0_algebraic_geometric_architecture.tex": false,
+    "references/volume_i_regulated_light_front_foundations.tex": false,
+    "references/volume_ii_common_nucleon_gtmd_overlaps.tex": false,
+    "references/volume_iii_dynamical_wilson_lines.tex": false,
+    "references/volume_iv_matched_spin1_nuclear_dynamics.tex": false
+  },
+  "requirement_id": "C4.BASELINE",
+  "schema_version": "1.0.0",
+  "starting_commit": "e123848b2666e1c9db397e47b1c04c0b7146aae7",
+  "tests": {
+    "failed": 0,
+    "passed": 538
+  },
+  "working_tree": "clean_before_implementation"
+}

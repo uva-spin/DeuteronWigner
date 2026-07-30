@@ -1,0 +1,92 @@
+{
+  "accepted_composition_unchanged": true,
+  "accepted_provenance_unchanged": true,
+  "accepted_registry": {
+    "after_sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493",
+    "before_sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493",
+    "count": 216
+  },
+  "all_byte_identical": true,
+  "artifacts": [
+    {
+      "actual_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "byte_identical": true,
+      "expected_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "id": "C0-ART-Q-CAN-TMD",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.csv"
+    },
+    {
+      "actual_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "byte_identical": true,
+      "expected_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "id": "C0-ART-Q-CAN-CORR",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.correlators.csv"
+    },
+    {
+      "actual_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "byte_identical": true,
+      "expected_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "id": "C0-ART-G-CAN-TMD",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.csv"
+    },
+    {
+      "actual_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "byte_identical": true,
+      "expected_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "id": "C0-ART-G-CAN-CORR",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.correlators.csv"
+    },
+    {
+      "actual_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "byte_identical": true,
+      "expected_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "id": "C0-ART-Q-RES-TMD",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.csv"
+    },
+    {
+      "actual_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "byte_identical": true,
+      "expected_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "id": "C0-ART-Q-RES-CORR",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.correlators.csv"
+    },
+    {
+      "actual_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "byte_identical": true,
+      "expected_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "id": "C0-ART-G-RES-TMD",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.csv"
+    },
+    {
+      "actual_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "byte_identical": true,
+      "expected_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "id": "C0-ART-G-RES-CORR",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.correlators.csv"
+    }
+  ],
+  "c3_manifests_unchanged": {
+    "c3_baseline_snapshot.json": true,
+    "c3_benchmark_manifest.json": true,
+    "c3_injection_manifest.json": true,
+    "c3_pilot_provenance.json": true,
+    "c3_regression_report.json": true,
+    "c3_requirement_coverage.json": true
+  },
+  "final": {
+    "atlas_pages": 162,
+    "builders": 9,
+    "evidence": 36,
+    "tests": 609
+  },
+  "prechange": {
+    "atlas_pages": 162,
+    "builders": 9,
+    "evidence": 36,
+    "tests": 538
+  },
+  "production_builder_imports_c4": false,
+  "requirement_id": "C4.REGRESS",
+  "schema_version": "1.0.0",
+  "starting_commit": "e123848b2666e1c9db397e47b1c04c0b7146aae7"
+}

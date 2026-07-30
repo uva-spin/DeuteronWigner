@@ -27,6 +27,7 @@ class ColorRepresentation(str, Enum):
 class ColorClass(str, Enum):
     F_TYPE = "F_TYPE"
     D_TYPE = "D_TYPE"
+    DIAGONAL_ADJOINT = "DIAGONAL_ADJOINT"
     NOT_APPLICABLE = "NOT_APPLICABLE"
     UNSPECIFIED = "UNSPECIFIED"
 

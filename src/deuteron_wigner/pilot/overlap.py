@@ -97,6 +97,21 @@ class AnalyticOverlapEvaluator:
                 or incoming.color != outgoing.color or incoming.helicity != outgoing.helicity
             ):
                 raise ArchitectureError("C3.OVERLAP.SPECTATOR", "spectator quantum numbers mismatch", expected=incoming, received=outgoing)
+        active = configuration.constituents[configuration.active_index]
+        if kernel.active_species != active.species.value:
+            raise ArchitectureError(
+                "C4.ACTIVE.SPECIES", "kernel selects the wrong active species",
+                expected=active.species.value, received=kernel.active_species,
+            )
+        expected_flavor = (
+            "NOT_APPLICABLE"
+            if active.species.value == "g" else active.flavor
+        )
+        if kernel.active_flavor != expected_flavor:
+            raise ArchitectureError(
+                "C4.ACTIVE.FLAVOR", "kernel selects the wrong active flavor",
+                expected=expected_flavor, received=kernel.active_flavor,
+            )
         psi_in = state.amplitude(recoil.incoming)
         psi_out = state.amplitude(recoil.outgoing)
         value = kernel.current_normalization * psi_out.conjugate() * psi_in

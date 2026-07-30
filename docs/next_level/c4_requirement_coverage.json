@@ -1,0 +1,315 @@
+{
+  "requirements": [
+    {
+      "implementation_locations": [
+        "docs/next_level/c4_baseline_snapshot.json"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.BASELINE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/c4_provenance.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.ISOLATE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/sectors.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.STATE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/sectors.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.SEA",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/color.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 5.551115123125783e-17,
+      "stable_id": "C4.SEA_COLOR",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/sectors.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.SEA_LEDGER",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/sectors.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.GLUON",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/color.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 5.551115123125783e-17,
+      "stable_id": "C4.GLUON_COLOR",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.GLUON_LEDGER",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/active.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.ACTIVE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/c4_benchmarks.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.ZERO",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/overlap.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.OVERLAP",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [
+        "validation-only; no physical QCD matching"
+      ],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.TMD_ROUTE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [
+        "validation-only; no physical QCD matching"
+      ],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.GPD_ROUTE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [
+        "validation-only; no physical QCD matching"
+      ],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.PDF_ROUTE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [
+        "validation-only; no physical QCD matching"
+      ],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.CURRENT_ROUTE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.ROUTE_CLOSURE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/routes.py"
+      ],
+      "limitations": [
+        "validation-only; no physical QCD matching"
+      ],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.MATCHING_STATUS",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/feshbach.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.FESHBACH",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/feshbach.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.INDUCED_OPERATOR",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/c4_provenance.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.PROVENANCE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "src/deuteron_wigner/pilot/c4_injections.py"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.INJECT",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "docs/next_level/c4_route_closure_manifest.json"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.CONVERGENCE",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "docs/next_level/c4_regression_report.json"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.REGRESS",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    },
+    {
+      "implementation_locations": [
+        "docs/next_level/c4_implementation_report.md"
+      ],
+      "limitations": [],
+      "maximum_residual": 0.0,
+      "stable_id": "C4.DOC",
+      "status": "PASS",
+      "tests": [
+        "tests/test_c4_*.py"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}
