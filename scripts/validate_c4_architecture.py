@@ -44,11 +44,13 @@ def main():
     assert regression["accepted_provenance_unchanged"]
     assert regression["accepted_composition_unchanged"]
     assert all(regression["c3_manifests_unchanged"].values())
-    assert len(normative["sources"]) == 5
+    assert len(normative["sources"]) == 6
     assert all(item["status"] == "PRESENT_READ" for item in normative["sources"])
     assert len(normative["corrections_after_source_import"]) == 6
     assert normative["volume_iv_interface_assessment"]["ready_for_volume_iv_nuclear_consumption"] is False
     assert normative["volume_iv_interface_assessment"]["nuclear_dynamics_implemented_in_c4"] is False
+    assert normative["volume_v_interface_assessment"]["ready_for_qcd_matching_or_evolution"] is False
+    assert len(normative["cross_volume_coverage"]) == 6
     print(json.dumps({
         "status": "pass", "requirements": 25,
         "sea_members": len(sectors["sea"]["members"]),

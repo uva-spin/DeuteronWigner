@@ -426,14 +426,9 @@ def main() -> None:
                     ("II", "references/volume_ii_common_nucleon_gtmd_overlaps.tex"),
                     ("III", "references/volume_iii_dynamical_wilson_lines.tex"),
                     ("IV", "references/volume_iv_matched_spin1_nuclear_dynamics.tex"),
+                    ("V", "references/volume_v_matching_evolution_factorization.tex"),
                 )
             ],
-            "additional_source": {
-                "volume": "V",
-                "path": "references/volume_v_matching_evolution_factorization.tex",
-                "sha256": sha(ROOT / "references/volume_v_matching_evolution_factorization.tex"),
-                "c4_role": "interface awareness only",
-            },
             "missing": [],
             "verified_contracts": [
                 "explicit positive-x antiquark active set and exact empty-set zero",
@@ -474,6 +469,62 @@ def main() -> None:
                 ],
                 "nuclear_dynamics_implemented_in_c4": False,
             },
+            "volume_v_interface_assessment": {
+                "ready_for_qcd_matching_or_evolution": False,
+                "available": [
+                    "regulated analytic operator ancestry",
+                    "species and diagonal color representation",
+                    "route-specific outstanding matching requirements",
+                    "separate quark-vector and gluon-EMT moments",
+                ],
+                "required_before_matching_or_evolution": [
+                    "closed helicity/operator basis in b_TMD space",
+                    "Hamiltonian regulator and truncation identity",
+                    "Volume III phase and soft-overlap budget",
+                    "LF-to-QCD matching matrix and calibration conditions",
+                    "rank, Bessel, Fourier-phase, and mass identity on every parent",
+                    "shared microscopic ensemble and covariance",
+                ],
+                "evolution_or_process_implemented_in_c4": False,
+            },
+            "cross_volume_coverage": [
+                {
+                    "volume": "0",
+                    "c4_status": "SATISFIED_FOR_DECLARED_SCOPE",
+                    "evidence": "typed fibers, map separation, decorated path/color status, provenance exclusion",
+                    "deferred": "general executable Provenance2Complex",
+                },
+                {
+                    "volume": "I",
+                    "c4_status": "SATISFIED_FOR_ANALYTIC_BENCHMARK",
+                    "evidence": "normalized direct sums, color singlets, exact Feshbach operator",
+                    "deferred": "solved regulated microscopic Hamiltonian and truncation tower",
+                },
+                {
+                    "volume": "II",
+                    "c4_status": "BENCHMARKS_E_F_COMPLETE",
+                    "evidence": "positive-x sea, explicit gluon, zero tests, common regulated routes",
+                    "deferred": "complete predictive Volume II acceptance list",
+                },
+                {
+                    "volume": "III",
+                    "c4_status": "ZERO_RESCATTERING_BOUNDARY_COMPLETE",
+                    "evidence": "real core, Wilson order zero, no physical f/d or T-odd label",
+                    "deferred": "dynamical Wilson lines, cuts, phases, soft subtraction",
+                },
+                {
+                    "volume": "IV",
+                    "c4_status": "INTERFACE_AUDITED_NOT_READY",
+                    "evidence": "identity preservation and explicit readiness guard",
+                    "deferred": "nucleon helicity export and all nuclear dynamics",
+                },
+                {
+                    "volume": "V",
+                    "c4_status": "INTERFACE_AUDITED_NOT_READY",
+                    "evidence": "outstanding matching morphisms explicitly recorded",
+                    "deferred": "QCD matching, evolution, OPE, process records, W+Y",
+                },
+            ],
             "scope_boundary": (
                 "C4 implements Volume II Benchmarks E-F and regulated route "
                 "closure only; it does not claim complete Volume II acceptance."

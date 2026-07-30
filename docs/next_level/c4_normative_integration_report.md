@@ -1,7 +1,7 @@
 # C4 normative-source integration audit
 
-After C4’s initial completion, the authoritative TeX sources for Volumes 0,
-I, II, III, and IV became available. They were read and mapped back onto every C4
+After C4’s initial completion, the authoritative TeX sources for Volumes 0
+through V became available. They were read and mapped back onto every C4
 object, benchmark, route, and negative test. Volume V was inspected only for
 interface awareness because matching and evolution are outside C4. Volume 0
 and Volume IV TeX remain unavailable.
@@ -68,3 +68,23 @@ Volume II projector/convergence gates.
 This is a sequencing result, not a C4 defect: C4 is complete at its declared
 analytic Benchmark E--F scope, while the broader nucleon export and Volume IV
 nuclear packages remain later work.
+
+## Volume V interface assessment
+
+Volume V consumes a closed regulated operator vector in `b_TMD` space with
+complete rank, scheme, regulator, microscopic-member, and phase-budget
+identity. C4 now records which UV, rapidity/soft, and link-shortening maps are
+still required, so its analytic route outputs fail conceptually and
+programmatically before physical-QCD promotion.
+
+C4 is not ready for matching or evolution: it does not yet supply a closed
+helicity/operator basis in `b_TMD`, an LF-to-QCD matching matrix, rank-aware
+small-b identities on every parent, the Volume III phase budget, or a shared
+microscopic ensemble. It implements no evolution, process map, or `W+Y`
+construction.
+
+The machine-readable report contains a six-row cross-volume coverage map.
+“Fully integrated” therefore means every Volume 0--V contract affecting C4 is
+either implemented and tested or represented by an explicit fail-closed
+future-interface status. It does not mean the later-volume physics has been
+prematurely inserted into C4.
