@@ -34,6 +34,24 @@ class GluonPolarizationProjector(str, Enum):
     SYMMETRIC_TRACELESS_LINEAR = "SYMMETRIC_TRACELESS_LINEAR"
 
 
+def project_gluon_polarization(
+    matrix: np.ndarray, projector: GluonPolarizationProjector,
+):
+    value = np.asarray(matrix, complex)
+    if value.shape != (2, 2):
+        raise ArchitectureError(
+            "C4.GLUON.PROJECTOR", "gluon transverse matrix must be 2x2",
+            expected=(2, 2), received=value.shape,
+        )
+    if projector == GluonPolarizationProjector.TRACE_UNPOLARIZED:
+        return complex(np.trace(value))
+    if projector == GluonPolarizationProjector.ANTISYMMETRIC_HELICITY:
+        epsilon = np.asarray(((0, 1), (-1, 0)), complex)
+        return complex(1j * np.einsum("ij,ij->", epsilon, value))
+    symmetric = 0.5 * (value + value.T)
+    return symmetric - 0.5 * np.eye(2) * np.trace(symmetric)
+
+
 @dataclass(frozen=True)
 class RouteResiduals:
     state_model: float = 0.0
@@ -63,6 +81,10 @@ class RegulatedParent:
     transverse_width_gev: float
     transfer_slope_gev2: float
     stored_scalar: str
+    ordered_link_identity: tuple[str, ...] = (
+        "0", "staple-infinity", "xi", "transverse-closure"
+    )
+    color_status: str = "NOT_APPLICABLE"
     overlap_evaluator_id: str = "C3:COMMON_DIAGONAL_OVERLAP"
     recoil_id: str = "SYMMETRIC_XI0"
     wilson_order: int = 0
@@ -93,6 +115,16 @@ class RegulatedParent:
             raise ArchitectureError(
                 "C4.GLUON_LEDGER.MELLIN", "gluon parent must store H^g=xg",
                 expected="H_G_EQUALS_XG", received=self.stored_scalar,
+            )
+        if self.species == Species.GLUON and (
+            len(self.ordered_link_identity) != 2
+            or self.color_status != "DIAGONAL_ADJOINT"
+        ):
+            raise ArchitectureError(
+                "C4.GLUON.OPERATOR_IDENTITY",
+                "diagonal gluon parent needs an ordered link pair and color status",
+                expected="two ordered links and DIAGONAL_ADJOINT",
+                received=(self.ordered_link_identity, self.color_status),
             )
 
     def _longitudinal(self, x: float) -> float:
@@ -126,6 +158,7 @@ class RouteResult:
     value: float
     transfer: tuple[float, float]
     matching_status: MatchingStatus
+    required_matching: tuple[MatchingStatus, ...]
     operator_id: str
     path_id: str
     stored_scalar: str
@@ -157,22 +190,48 @@ class CommonReductionRoutes:
                 "C4.TMD_ROUTE.TRANSFER", "TMD route requires forward limit",
                 expected=(0.0, 0.0), received=delta,
             )
-        return self._result(parent, ("GTMD", "TMD_REG"), parent.value(x, kx, ky, 0, 0), delta)
+        return self._result(
+            parent, ("GTMD", "TMD_REG"),
+            parent.value(x, kx, ky, 0, 0), delta,
+            required_matching=(
+                MatchingStatus.UV_MATCHING_REQUIRED,
+                MatchingStatus.RAPIDITY_SOFT_MATCHING_REQUIRED,
+            ),
+        )
 
     def gpd(self, parent: RegulatedParent, x: float, delta=(0.0, 0.0)) -> RouteResult:
         self._require_validation(parent)
         value = parent._longitudinal(x) * exp(
             -parent.transfer_slope_gev2 * (delta[0] ** 2 + delta[1] ** 2)
         )
-        return self._result(parent, ("GTMD", "REGULATED_GPD"), value, delta)
+        return self._result(
+            parent, ("GTMD", "REGULATED_GPD"), value, delta,
+            required_matching=(
+                MatchingStatus.LINK_SHORTENING_REQUIRED,
+                MatchingStatus.UV_MATCHING_REQUIRED,
+            ),
+        )
 
     def pdf_from_tmd(self, parent: RegulatedParent, x: float) -> RouteResult:
         value = parent._longitudinal(x)
-        return self._result(parent, ("GTMD", "TMD_REG", "PDF_REG"), value, (0.0, 0.0))
+        return self._result(
+            parent, ("GTMD", "TMD_REG", "PDF_REG"), value, (0.0, 0.0),
+            required_matching=(
+                MatchingStatus.LINK_SHORTENING_REQUIRED,
+                MatchingStatus.UV_MATCHING_REQUIRED,
+            ),
+        )
 
     def pdf_from_gpd(self, parent: RegulatedParent, x: float) -> RouteResult:
         value = self.gpd(parent, x, (0.0, 0.0)).value
-        return self._result(parent, ("GTMD", "REGULATED_GPD", "PDF_REG"), value, (0.0, 0.0))
+        return self._result(
+            parent, ("GTMD", "REGULATED_GPD", "PDF_REG"), value,
+            (0.0, 0.0),
+            required_matching=(
+                MatchingStatus.LINK_SHORTENING_REQUIRED,
+                MatchingStatus.UV_MATCHING_REQUIRED,
+            ),
+        )
 
     def direct_double_integral(self, parent: RegulatedParent, delta=(0.0, 0.0)) -> RouteResult:
         value = parent.coefficient * exp(
@@ -208,6 +267,10 @@ class CommonReductionRoutes:
         return self._result(
             parent, ("GTMD", "REGULATED_GPD", "LOCAL_MOMENT"), value, delta,
             convention,
+            required_matching=(
+                MatchingStatus.LINK_SHORTENING_REQUIRED,
+                MatchingStatus.UV_MATCHING_REQUIRED,
+            ),
         )
 
     def numerical_gpd(
@@ -259,10 +322,12 @@ class CommonReductionRoutes:
         delta: tuple[float, float],
         convention: MellinConvention | None = None,
         residuals: RouteResiduals = RouteResiduals(),
+        required_matching: tuple[MatchingStatus, ...] = (),
     ) -> RouteResult:
         return RouteResult(
             ":".join((parent.stable_id, *route)), route, parent.stable_id,
             parent.species, parent.flavor, float(value), tuple(delta),
-            parent.matching_status, parent.operator_id, parent.path_id,
+            parent.matching_status, required_matching,
+            parent.operator_id, parent.path_id,
             parent.stored_scalar, convention, residuals,
         )

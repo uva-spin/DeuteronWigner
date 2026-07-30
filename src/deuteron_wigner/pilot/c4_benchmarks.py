@@ -41,6 +41,13 @@ def parents_from_state(
                 sector.state.width_gev,
                 0.35,
                 "H_G_EQUALS_XG" if species == Species.GLUON else "H_Q",
+                (
+                    ("gluon-link-1:identity", "gluon-link-2:identity")
+                    if species == Species.GLUON
+                    else ("quark-link:identity",)
+                ),
+                "DIAGONAL_ADJOINT" if species == Species.GLUON
+                else "NOT_APPLICABLE",
             ))
     return tuple(parents)
 

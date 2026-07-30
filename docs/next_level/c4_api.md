@@ -17,6 +17,13 @@ multiplicity channel.
 `CommonReductionRoutes` provides regulated TMD, GPD, PDF, direct integration,
 and local-moment routes. Every `RouteResult` carries matching, operator, path,
 species, flavor, scalar, Mellin, transfer, and residual metadata.
+It also carries the outstanding matching morphisms: UV plus rapidity/soft for
+the TMD route, and link-shortening plus UV matching for regulated
+GPD/PDF/current routes.
+
+`project_gluon_polarization` implements the typed transverse trace,
+antisymmetric-helicity, and symmetric-traceless projectors and reconstructs
+the original two-dimensional gluon polarization matrix.
 
 `FiniteFeshbachModel` supplies the exact two-sector Hamiltonian and induced
 operator benchmark. `require_exclusive_representation` and the C4 provenance

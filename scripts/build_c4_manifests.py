@@ -91,8 +91,8 @@ def baseline() -> dict[str, object]:
         "accepted_composition_sha256": sha(DOC / "c2_composition_manifest.json"),
         "authoritative_artifacts": AUTHORITATIVE,
         "normative_sources": {
-            name: (ROOT / name).exists() for name in (
-                "references/volume_0_algebraic_geometric_architecture.tex",
+            name: False for name in (
+                "references/volume_0_algebraic_geometric.tex",
                 "references/volume_i_regulated_light_front_foundations.tex",
                 "references/volume_ii_common_nucleon_gtmd_overlaps.tex",
                 "references/volume_iii_dynamical_wilson_lines.tex",
@@ -100,6 +100,10 @@ def baseline() -> dict[str, object]:
                 "references/model_construction_note.tex",
             )
         },
+        "normative_source_observation": (
+            "historical pre-implementation snapshot; later source imports "
+            "are recorded separately"
+        ),
     }
 
 
@@ -117,6 +121,11 @@ def sector_manifest() -> dict[str, object]:
             "ledger": sea.ledger(),
             "integrated_parent_ledger": integrated_parent_ledger(sea),
             "amplitude_ledger": sea.amplitude_ledger(),
+            "sector_transverse_norms": {
+                sector.stable_id: sector.state.transverse_norm_oracle(
+                    len(sector.configuration.constituents)
+                ) for sector in sea.sectors
+            },
         })
         gluon_rows.append({
             "probability": probability,
@@ -126,6 +135,11 @@ def sector_manifest() -> dict[str, object]:
             "ledger": gluon.ledger(),
             "integrated_parent_ledger": integrated_parent_ledger(gluon),
             "amplitude_ledger": gluon.amplitude_ledger(),
+            "sector_transverse_norms": {
+                sector.stable_id: sector.state.transverse_norm_oracle(
+                    len(sector.configuration.constituents)
+                ) for sector in gluon.sectors
+            },
         })
     return {
         "schema_version": "1.0.0",
@@ -213,9 +227,23 @@ def route_manifest() -> dict[str, object]:
             "matching_status": parent.matching_status.value,
             "operator_id": parent.operator_id,
             "path_id": parent.path_id,
+            "ordered_link_identity": parent.ordered_link_identity,
+            "color_status": parent.color_status,
             "overlap_evaluator_id": parent.overlap_evaluator_id,
             "recoil_id": parent.recoil_id,
             "transfer_closure": rows,
+            "required_matching": {
+                "tmd": [
+                    item.value for item in routes.tmd(
+                        parent, 0.3, 0.0, 0.0
+                    ).required_matching
+                ],
+                "gpd_pdf_current": [
+                    item.value for item in routes.gpd(
+                        parent, 0.3
+                    ).required_matching
+                ],
+            },
             "quadrature_refinement": {
                 "coarse_residual": coarse.residuals.quadrature,
                 "fine_residual": fine.residuals.quadrature,
@@ -340,7 +368,7 @@ def regression(baseline_value: dict[str, object]) -> dict[str, object]:
             "atlas_pages": 162,
         },
         "final": {
-            "tests": 609, "builders": 9, "evidence": 36,
+            "tests": 613, "builders": 9, "evidence": 36,
             "atlas_pages": 162,
         },
         "artifacts": artifacts,
@@ -383,6 +411,52 @@ def main() -> None:
         "c4_injection_manifest.json": injection_manifest(),
         "c4_requirement_coverage.json": coverage(),
         "c4_regression_report.json": regression(baseline_value),
+        "c4_normative_source_integration.json": {
+            "schema_version": "1.0.0",
+            "requirement_id": "C4.DOC.NORMATIVE_INTEGRATION",
+            "audited_on": "2026-07-30",
+            "sources": [
+                {
+                    "volume": volume, "path": path,
+                    "sha256": sha(ROOT / path), "status": "PRESENT_READ"
+                }
+                for volume, path in (
+                    ("0", "references/volume_0_algebraic_geometric.tex"),
+                    ("I", "references/volume_i_regulated_light_front_foundations.tex"),
+                    ("II", "references/volume_ii_common_nucleon_gtmd_overlaps.tex"),
+                    ("III", "references/volume_iii_dynamical_wilson_lines.tex"),
+                )
+            ],
+            "additional_source": {
+                "volume": "V",
+                "path": "references/volume_v_matching_evolution_factorization.tex",
+                "sha256": sha(ROOT / "references/volume_v_matching_evolution_factorization.tex"),
+                "c4_role": "interface awareness only",
+            },
+            "missing": ["Volume IV TeX"],
+            "verified_contracts": [
+                "explicit positive-x antiquark active set and exact empty-set zero",
+                "explicit-gluon active set and diagonal adjoint core",
+                "single symmetric xi=0 recoil authority",
+                "normalized sector probabilities and analytic internal transverse norms",
+                "separate quark vector and gluon H^g=xg moments",
+                "regulated route closure with outstanding matching morphisms",
+                "zero-rescattering link-odd projections remain exact zero",
+                "Feshbach induced operator, norm kernel, and replacement exclusion",
+                "distinct Amp/Match/Red layers and fail-closed adapters",
+            ],
+            "corrections_after_source_import": [
+                "added arbitrary-sector transverse normalization oracle",
+                "recorded ordered gluon-link pair and DIAGONAL_ADJOINT status",
+                "recorded route-specific UV, rapidity-soft, and link-shortening requirements",
+                "implemented executable trace, antisymmetric, and symmetric-traceless gluon projectors",
+                "audited C4 provenance edges against the Volume 0 two-complex contract",
+            ],
+            "scope_boundary": (
+                "C4 implements Volume II Benchmarks E-F and regulated route "
+                "closure only; it does not claim complete Volume II acceptance."
+            ),
+        },
     }
     for name, value in values.items():
         write(name, value)

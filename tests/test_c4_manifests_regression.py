@@ -61,3 +61,16 @@ def test_c4_provenance_and_route_manifests_are_isolated_and_honest():
         parent["matching_status"] == "REGULATED_ANALYTIC"
         for parent in routes["parents"]
     )
+    assert all(
+        "LINK_SHORTENING_REQUIRED"
+        in parent["required_matching"]["gpd_pdf_current"]
+        for parent in routes["parents"]
+    )
+
+
+def test_normative_source_integration_is_hashed_and_scoped():
+    report = load("c4_normative_source_integration.json")
+    assert [item["volume"] for item in report["sources"]] == ["0", "I", "II", "III"]
+    for source in report["sources"]:
+        assert hashlib.sha256(Path(source["path"]).read_bytes()).hexdigest() == source["sha256"]
+    assert "does not claim complete Volume II acceptance" in report["scope_boundary"]

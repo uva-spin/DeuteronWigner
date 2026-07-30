@@ -77,7 +77,8 @@ composition, C3 manifests, production builder, and authoritative outputs are
 immutable regression gates. Forty mandatory injected faults have ordered
 stable IDs and diagnostics.
 
-Final validation passes 609/609 tests, all nine acceptance/report builders,
+Final validation before the normative-source integration pass was 609/609
+tests, all nine acceptance/report builders,
 36/36 evidence rows, and all 162/162 atlas pages. C3 Benchmarks A--D and all
 24 C3 injections remain passing; all 40 C4 injections are detected.
 
@@ -94,8 +95,11 @@ Volume III. It must remain disconnected from accepted production.
 
 ## Post-completion source availability
 
-On 2026-07-30 the supplied TeX sources for Volumes I, II, III, and V were
+On 2026-07-30 the supplied TeX sources for Volumes 0, I, II, III, and V were
 preserved under `references/` and indexed in
 `references/formalism_volume_index.md`. This does not alter the historical C4
-baseline: those sources were absent during C4 implementation. Volume 0 and
-Volume IV were not present in Downloads and remain explicitly unresolved.
+baseline: those sources were absent during C4 implementation. Volume IV was
+not present in Downloads and remains explicitly unresolved.
+The subsequent source-integration audit and four resulting corrections are
+documented in `c4_normative_integration_report.md`; its post-integration test
+count is recorded in the regenerated regression manifest.

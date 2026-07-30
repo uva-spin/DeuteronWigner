@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from math import exp, sqrt
+from math import exp, pi, sqrt
 
 from ..formal.diagnostics import ArchitectureError
 from ..formal.sector_space import ResolutionLayer, SectorId
@@ -47,8 +47,36 @@ class ProductGaussianState:
             )
 
     def amplitude(self, configuration: IntrinsicConfiguration) -> complex:
+        """Delta-normalized longitudinal basis times normalized transverse state.
+
+        With the last intrinsic momentum fixed by closure, the quadratic form
+        has determinant ``n`` in each transverse Cartesian pair.
+        """
+        count = len(configuration.constituents)
         exponent = sum(item.k_t.norm_squared() for item in configuration.constituents)
-        return complex(exp(-exponent / (2 * self.width_gev**2)))
+        return complex(
+            self.normalization(count)
+            * exp(-exponent / (2 * self.width_gev**2))
+        )
+
+    def normalization(self, constituent_count: int) -> float:
+        if constituent_count < 1:
+            raise ArchitectureError(
+                "C4.STATE.NORMALIZATION", "empty Fock sector",
+                expected="at least one constituent",
+                received=constituent_count,
+            )
+        return sqrt(constituent_count) / (
+            (pi * self.width_gev**2) ** ((constituent_count - 1) / 2)
+        )
+
+    def transverse_norm_oracle(self, constituent_count: int) -> float:
+        normalization = self.normalization(constituent_count)
+        integral = (
+            (pi * self.width_gev**2) ** (constituent_count - 1)
+            / constituent_count
+        )
+        return normalization**2 * integral
 
 
 @dataclass(frozen=True)

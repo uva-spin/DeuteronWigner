@@ -3,9 +3,13 @@
   "interpretation": "Common-parent regulated analytic closure only; not full QCD UV, rapidity, soft, or link-shortening matching.",
   "parents": [
     {
+      "color_status": "NOT_APPLICABLE",
       "flavor": "d",
       "matching_status": "REGULATED_ANALYTIC",
       "operator_id": "QUARK_VECTOR_DIAGONAL",
+      "ordered_link_identity": [
+        "quark-link:identity"
+      ],
       "overlap_evaluator_id": "C3:COMMON_DIAGONAL_OVERLAP",
       "parent_id": "C4:PARENT:C4:SECTOR:QQQQQBAR:d:C4:QQQQQBAR:d:slot:3",
       "path_id": "ZEROTH_RESCATTERING_NO_PHYSICAL_FD_CLASS",
@@ -14,6 +18,16 @@
         "fine_residual": 5.551115123125783e-17
       },
       "recoil_id": "SYMMETRIC_XI0",
+      "required_matching": {
+        "gpd_pdf_current": [
+          "LINK_SHORTENING_REQUIRED",
+          "UV_MATCHING_REQUIRED"
+        ],
+        "tmd": [
+          "UV_MATCHING_REQUIRED",
+          "RAPIDITY_SOFT_MATCHING_REQUIRED"
+        ]
+      },
       "species": "q",
       "stored_scalar": "H_Q",
       "transfer_closure": [
@@ -65,9 +79,13 @@
       ]
     },
     {
+      "color_status": "NOT_APPLICABLE",
       "flavor": "d",
       "matching_status": "REGULATED_ANALYTIC",
       "operator_id": "QUARK_VECTOR_DIAGONAL",
+      "ordered_link_identity": [
+        "quark-link:identity"
+      ],
       "overlap_evaluator_id": "C3:COMMON_DIAGONAL_OVERLAP",
       "parent_id": "C4:PARENT:C4:SECTOR:QQQQQBAR:d:C4:QQQQQBAR:d:slot:4",
       "path_id": "ZEROTH_RESCATTERING_NO_PHYSICAL_FD_CLASS",
@@ -76,6 +94,16 @@
         "fine_residual": 0.0
       },
       "recoil_id": "SYMMETRIC_XI0",
+      "required_matching": {
+        "gpd_pdf_current": [
+          "LINK_SHORTENING_REQUIRED",
+          "UV_MATCHING_REQUIRED"
+        ],
+        "tmd": [
+          "UV_MATCHING_REQUIRED",
+          "RAPIDITY_SOFT_MATCHING_REQUIRED"
+        ]
+      },
       "species": "qbar",
       "stored_scalar": "H_Q",
       "transfer_closure": [
@@ -127,9 +155,14 @@
       ]
     },
     {
+      "color_status": "DIAGONAL_ADJOINT",
       "flavor": "NOT_APPLICABLE",
       "matching_status": "REGULATED_ANALYTIC",
       "operator_id": "GLUON_TRACE_DIAGONAL_ADJOINT",
+      "ordered_link_identity": [
+        "gluon-link-1:identity",
+        "gluon-link-2:identity"
+      ],
       "overlap_evaluator_id": "C3:COMMON_DIAGONAL_OVERLAP",
       "parent_id": "C4:PARENT:C4:SECTOR:QQQG:C4:QQQG:slot:3",
       "path_id": "ZEROTH_RESCATTERING_NO_PHYSICAL_FD_CLASS",
@@ -138,6 +171,16 @@
         "fine_residual": 0.0
       },
       "recoil_id": "SYMMETRIC_XI0",
+      "required_matching": {
+        "gpd_pdf_current": [
+          "LINK_SHORTENING_REQUIRED",
+          "UV_MATCHING_REQUIRED"
+        ],
+        "tmd": [
+          "UV_MATCHING_REQUIRED",
+          "RAPIDITY_SOFT_MATCHING_REQUIRED"
+        ]
+      },
       "species": "g",
       "stored_scalar": "H_G_EQUALS_XG",
       "transfer_closure": [

@@ -8,8 +8,10 @@ from deuteron_wigner.formal.diagnostics import ArchitectureError
 from deuteron_wigner.gtmd import Species
 from deuteron_wigner.pilot.c4_benchmarks import parents_from_state
 from deuteron_wigner.pilot.routes import (
-    CommonReductionRoutes, MatchingStatus, MellinConvention,
+    CommonReductionRoutes, GluonPolarizationProjector, MatchingStatus,
+    MellinConvention, project_gluon_polarization,
 )
+import numpy as np
 from deuteron_wigner.pilot.sectors import gluon_state, sea_state
 
 
@@ -83,3 +85,37 @@ def test_matching_and_route_injections_fail_closed():
         routes.reject_physical_promotion(parent.matching_status)
     with pytest.raises(ArchitectureError, match="C4.ISOLATE.PROMOTION"):
         parent.promote_to_production()
+
+
+def test_typed_gluon_polarization_projectors_reconstruct_matrix():
+    matrix = np.asarray(((2.0, 0.3 + 0.4j), (0.3 - 0.4j, 1.0)), complex)
+    unpolarized = project_gluon_polarization(
+        matrix, GluonPolarizationProjector.TRACE_UNPOLARIZED
+    )
+    helicity = project_gluon_polarization(
+        matrix, GluonPolarizationProjector.ANTISYMMETRIC_HELICITY
+    )
+    linear = project_gluon_polarization(
+        matrix, GluonPolarizationProjector.SYMMETRIC_TRACELESS_LINEAR
+    )
+    assert unpolarized == pytest.approx(3)
+    assert helicity == pytest.approx(-0.8)
+    assert np.trace(linear) == pytest.approx(0)
+    reconstructed = (
+        0.5 * np.eye(2) * unpolarized
+        - 0.5j * np.asarray(((0, 1), (-1, 0))) * helicity
+        + linear
+    )
+    assert np.allclose(reconstructed, matrix)
+
+
+def test_routes_record_outstanding_matching_morphisms():
+    routes = CommonReductionRoutes()
+    parent = representative_parents()[1]
+    assert routes.tmd(parent, .3, 0, 0).required_matching == (
+        MatchingStatus.UV_MATCHING_REQUIRED,
+        MatchingStatus.RAPIDITY_SOFT_MATCHING_REQUIRED,
+    )
+    assert MatchingStatus.LINK_SHORTENING_REQUIRED in (
+        routes.gpd(parent, .3).required_matching
+    )

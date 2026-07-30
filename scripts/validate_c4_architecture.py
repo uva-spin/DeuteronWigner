@@ -22,6 +22,7 @@ def main():
     provenance = load("c4_provenance_manifest.json")
     injections = load("c4_injection_manifest.json")
     regression = load("c4_regression_report.json")
+    normative = load("c4_normative_source_integration.json")
     assert len(coverage["requirements"]) == 25
     assert all(x["status"] == "PASS" for x in coverage["requirements"])
     assert sectors["sea"]["members"][0]["antiquark_integrated_density"] == 0
@@ -43,6 +44,9 @@ def main():
     assert regression["accepted_provenance_unchanged"]
     assert regression["accepted_composition_unchanged"]
     assert all(regression["c3_manifests_unchanged"].values())
+    assert len(normative["sources"]) == 4
+    assert all(item["status"] == "PRESENT_READ" for item in normative["sources"])
+    assert len(normative["corrections_after_source_import"]) == 5
     print(json.dumps({
         "status": "pass", "requirements": 25,
         "sea_members": len(sectors["sea"]["members"]),

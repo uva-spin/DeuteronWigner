@@ -105,3 +105,12 @@ def test_probability_and_todd_label_injections_fail_closed():
         )
     with pytest.raises(ArchitectureError, match="C4.GLUON.TODD"):
         require_diagonal_core_label("physical f_type Sivers")
+
+
+def test_internal_transverse_states_have_analytic_unit_norm():
+    for state in (sea_state(.2), gluon_state(.3)):
+        for sector in state.sectors:
+            count = len(sector.configuration.constituents)
+            assert sector.state.transverse_norm_oracle(count) == pytest.approx(
+                1, abs=3e-16
+            )
