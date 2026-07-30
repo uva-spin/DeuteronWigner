@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "physical_region_id": "C6:SUPPORT:ACTIVE_GLUON_ONSHELL",
+      "relation": "EQUIVALENT_COUNT_ONCE",
+      "source_ids": [
+        "C6:CUT:EIKONAL",
+        "C6:CUT:LF"
+      ],
+      "stable_id": "C6:2CELL:CUT",
+      "target_id": "C6:CUT:COUNTED_ONCE"
+    },
+    {
+      "physical_region_id": "C6:REGION:SOFT_COLLINEAR_ZERO_BIN",
+      "relation": "OVERLAP_SUBTRACT",
+      "source_ids": [
+        "C6:UNSUB:OVERLAP",
+        "C6:SOFT:OVERLAP"
+      ],
+      "stable_id": "C6:2CELL:SOFT",
+      "target_id": "C6:SUBTRACTED:FINITE"
+    },
+    {
+      "physical_region_id": "C6:REGION:SOFT_ROUTE_OWNERSHIP",
+      "relation": "ALTERNATIVE_TO",
+      "source_ids": [
+        "BOUNDARY_ONLY_RESCATTERING"
+      ],
+      "stable_id": "C6:2CELL:ROUTES",
+      "target_id": "JOINT_MICROSCOPIC_SOFT_SECTOR"
+    },
+    {
+      "physical_region_id": "C6:REGION:UV_FINITE_MATCHING",
+      "relation": "REMAINDER_OF",
+      "source_ids": [
+        "C6:SUBTRACTED:FINITE"
+      ],
+      "stable_id": "C6:2CELL:UV_REMAINDER",
+      "target_id": "C6:UV:UNRESOLVED"
+    }
+  ],
+  "general_provenance_2_complex_complete": false,
+  "schema_version": "1.0.0",
+  "trace_reaches": [
+    "C4_QQQG_STATE",
+    "ORDERED_LINK_PAIR",
+    "CUT_LEDGER",
+    "F_D_COLOR",
+    "SOFT_OVERLAP"
+  ]
+}
