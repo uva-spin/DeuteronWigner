@@ -1,0 +1,40 @@
+{
+  "benchmarks": {
+    "C5-A": {
+      "cut_sign_residual": 0.0,
+      "epsilon_final_residual": 0.007301736391504221,
+      "epsilon_is_physical": false,
+      "pv_future_past_residual": 0.0
+    },
+    "C5-B": {
+      "cut_sign_residual": 0.0,
+      "off_shell_discrete_absorptive": 0.0
+    },
+    "C5-C": {
+      "boer_mulders_like": -0.04203010940570326,
+      "link_even_imaginary_residual": 0.0,
+      "link_odd_imaginary": 0.21015054702851627,
+      "link_odd_real_residual": 0.0,
+      "projector_difference": 0.14290237197939107,
+      "sivers_like": 0.10087226257368781,
+      "zero_coupling": 0.0,
+      "zero_cut": 0.0,
+      "zero_oam": 0.0
+    },
+    "C5-D": {
+      "adjoint_casimir": 3.0,
+      "d_norm": 13.333333333333332,
+      "f_d_inner_product": 0.0,
+      "f_norm": 24.0,
+      "fundamental_casimir_residual": 2.220446049250313e-16,
+      "restricted_ward_residual": 0.0
+    },
+    "C5-E": {
+      "double_count_residual": 0.0,
+      "equivalent_cut_count": 0.7,
+      "expected_single_count": 0.7
+    }
+  },
+  "schema_version": "1.0.0",
+  "scientific_status": "VALIDATION_ONLY"
+}
