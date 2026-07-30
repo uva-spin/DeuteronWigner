@@ -12,9 +12,12 @@ byte-for-byte from the supplied sources.
 | III | `volume_iii_dynamical_wilson_lines.tex` | `7abe76b5866fe6349b98dbe435303ee72d55ce539faf535d18d03691c8ddf5b7` | present |
 | IV | `volume_iv_matched_spin1_nuclear_dynamics.tex` | `eec34c5520b7a23e89411d6688ede2a7f46784ca41cbe8b088e2cecbc4b81734` | present |
 | V | `volume_v_matching_evolution_factorization.tex` | `57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51` | present |
+| VI | `volume_vi_shared_inference_validation.tex` | `568979e0fa0015a70795a7c27c4c98b992848085c982a7ee4eca0374fec72570` | present |
+| VII | `volume_vii_concrete_microscopic_nucleon_hamiltonian.tex` | `326fd902f648b760ee97add0bb30418b4f4843f1bc64c98afd752940d11ac6e1` | present |
 
-Volume 0 supplies the architecture and type contract. Volumes I--III are the normative inputs for the regulated light-front,
-common-overlap, and dynamical-Wilson-line validation packages. Volume V is
-retained now so the later matching/evolution work can use the same persistent
-source rather than a transient Downloads copy.
-Volume IV supplies the intervening matched spin-1 nuclear contract.
+Volume 0 supplies the architecture and type contract. Volumes I--III are the
+normative inputs for the regulated light-front, common-overlap, and
+dynamical-Wilson-line validation packages. Volume IV supplies the matched
+spin-1 nuclear contract, Volume V the matching/evolution contract, Volume VI
+the shared inference/validation contract, and Volume VII the concrete
+microscopic nucleon-Hamiltonian program.

@@ -1,0 +1,1293 @@
+# Executable roadmap: parent-derived spin-1 GTMD/TMD model
+
+## 2026-07-30 — C6 active-gluon ordered-link and soft-overlap pilot
+
+Status: **complete at local commit
+`ce4b761d19b23bd5f7da1ddc026153685943e639`; not pushed**.
+
+C6 extends the isolated C5 one-Wilson-order pilot to the C4 positive-x active
+gluon. It implements four ordered two-adjoint-link identities, one common
+target/gluon-helicity and transverse/color tensor parent, explicit ordered
+generator products, independent normalized `f` and `d` color projections,
+all three existing gluon polarization projections, complete ordered-pair
+antiunitary reversal, and a boundary-only analytic half-soft subtraction with
+an executable rapidity derivative.
+
+Final validation is 759/759 tests, nine/nine legacy acceptance/report
+builders, 36/36 evidence rows, and 162/162 atlas pages. All 60 C6, 48 C5, 40
+C4, and 24 C3 injections pass. The four link pairs generate a 24-entry
+validation registry (four links times two color channels times three
+polarization views). The eight authoritative hashes, 216-route registry,
+production provenance/default plan, C5 manifests, and Volumes 0--V hashes
+remain unchanged.
+
+Benchmark residuals: `f` norm 0, `d` norm
+`1.7763568394002505e-15`, `f·d` 0, declared color-subspace reconstruction
+`2.340043593158424e-15`, both polarization reconstructions 0, link-even and
+all coupling/cut/OAM zero limits 0, rapidity derivative after one subtraction
+0, missing/duplicate subtraction magnitudes `0.7071067811865475` with
+opposite signs, separate `f`/`d` Ward residuals 0, and C4 qqqg color-singlet
+residual `5.551115123125783e-17`.
+
+Volume VI was not present in the repository or Downloads and inference was
+not implemented. Volume IV nuclear, Volume V matching/evolution/process, and
+Volume VI inference gates remain closed. The exact recommended next package
+is **C7: second-order non-Abelian Wilson-line convergence and common-state
+Ward closure**, comparing strict Dyson and Magnus representations while
+preserving independent active-gluon `f/d` identities and production
+isolation.
+
+## 2026-07-30 — C5 one-gluon Wilson-line and LF-cut pilot
+
+Status: **complete at local commit
+`c4aeb380bc3c23b8dcf2fb6a4528042de598cb48`; not pushed**.
+
+C5 adds a validation-only first-Wilson-order dynamical pilot using the C1
+identity spine and C3/C4 common-parent infrastructure. It implements a typed
+semi-infinite fundamental Wilson segment, convention-derived eikonal pole,
+separate distributional PV-plus-cut and finite-epsilon convergence routes,
+typed LF resolvents and cut provenance, a one-gluon OAM-interference kernel,
+the full pilot antiunitary future/past adapter, and distinct Sivers-like and
+Boer--Mulders-like `RED` projections. It does not modify or feed the accepted
+phenomenological model.
+
+Final validation is 679/679 tests, nine/nine legacy acceptance/report
+builders, 36/36 evidence rows, and 162/162 atlas pages. All 48 C5 injections,
+40 C4 injections, and 24 C3 injections pass. The 216-route registry,
+production provenance/default plan, C4 architecture counts, all six
+formalism-source hashes, and all eight authoritative artifact hashes are
+unchanged. C5-A finite-epsilon convergence reaches a residual of
+`0.007301736391504221`; every other reported analytic sign, zero-limit, Ward,
+color-orthogonality, link-even/odd, and double-count residual is zero except
+the expected floating SU(3) Casimir residual
+`2.220446049250313e-16`.
+
+Volume IV and V entry gates remain explicitly closed. The exact recommended
+next package is a validation-only extension to independent active-gluon
+ordered-link `f`/`d` rescattering channels with explicit soft/rapidity overlap
+accounting. It must first preserve the C5 result envelope and cut ledger, and
+must not claim a physical gluon T-odd TMD, QCD matching, evolution, or nuclear
+composition.
+
+## 2026-07-30 — formalism source-volume import
+
+Normative C4 integration commit:
+`6662bbc64375fc4ada2e21447fc9ebdda46025dc` (local only; not pushed).
+Volume IV interface-audit commit:
+`bf62a6a0c1fe436bde9966df57cac555266b70f5` (local only; not pushed).
+
+The supplied TeX sources for Volumes 0, I, II, III, IV, and V are now preserved
+byte-for-byte under `references/`; exact hashes and titles are recorded in
+`references/formalism_volume_index.md`. C5 must read Volume III completely
+before implementation. Historical C4 baseline records correctly continue to
+show that these sources were absent during C4 execution.
+
+## 2026-07-30 — C4 sea/gluon and common-route validation pilot
+
+Local completion commit:
+`b251bd035de6bc31d47d1a585241a3d1458146cb`.
+This commit was intentionally not pushed, per the C4 work-package rule.
+
+C4 extends the validation-only analytic pilot with normalized
+`qqq + qqqq-qbar` and `qqq + qqqg` sector superpositions, explicit positive-x
+active selectors, verified five-parton cluster and qqq-octet--adjoint color
+singlets, exact sea/gluon zero limits, separate quark/gluon moment conventions,
+regulated TMD/GPD/PDF/current route closure, and an exact finite Feshbach
+induced-operator benchmark.
+
+Final validation is 609/609 tests, nine/nine acceptance builders, 36/36
+evidence rows, and 162/162 atlas pages. All 40 C4 injections and all preceding
+C1--C3 mismatch tests pass. The eight production artifacts, 216 reductions,
+C2 graph/default plan, C3 manifests, and production builder remain unchanged.
+
+The requested Volume 0--IV TeX files and model-construction TeX note are not
+present in this public repository. C4 therefore follows the explicit preserved
+prompt and existing C0--C3 formal records. The sea/gluon states are analytic
+validation fixtures, not physical distributions or a QCD matching result.
+
+Exact next job: **C5 validation-only one-gluon Wilson-line and light-front-cut
+pilot**. Add eikonal pole prescriptions, explicit intermediate-state cuts,
+future/past reversal, and separate gluon color contractions while remaining
+disconnected from accepted production.
+
+## 2026-07-29 — C3 analytic common-overlap pilot
+
+Local completion commit:
+`b0a18ce2d1017e102b2be0849abf4d31537874a8`.
+This commit was intentionally not pushed, per the C3 work-package rule.
+
+C3 added a strictly validation-only microscopic-formal pilot under
+`src/deuteron_wigner/pilot/`: typed zero-skewness momentum fibers, intrinsic
+configurations, one symmetric active/spectator recoil authority, normalized
+analytic states, one diagonal zeroth-rescattering AMP kernel/evaluator,
+validation-only C2 reduction bridge, and a disjoint provenance graph.
+
+Benchmarks A–D pass. Final validation is 538/538 tests, nine/nine acceptance
+builders, 36/36 evidence rows, and 162/162 atlas pages. All eight artifacts,
+the 216 accepted reductions, C2 provenance graph, default composition plan,
+and production builder independence remain unchanged.
+
+Volumes I–III remain absent. The pilot is not a Hamiltonian solution or
+physical GTMD model and has no production authorization.
+
+Exact next job: **C4 validation-only minimal sea/gluon sectors and common
+TMD/GPD/PDF/current route closure (Volume II Benchmarks E–F)**. Keep it
+disconnected from accepted production and defer dynamical Wilson lines until
+common-parent reduction closure passes.
+
+## 2026-07-29 — C2 native reductions and provenance graph
+
+Local completion commit:
+`5063c002e763f3d6a0affc774ec6b124a539f0be`.
+This commit was intentionally not pushed, per the C2 work-package rule.
+
+C2 extends the C1 formal package with native typed reduction identities, a
+216-route accepted registry (72 quark, 72 antiquark, 72 gluon), typed
+provenance nodes/relations, deterministic composition plans, exclusion and
+replacement enforcement, and metadata-only trace queries. The resolved-parent
+production builder validates the C2 plan before combining arrays and emits a
+separate semantic manifest.
+
+Final validation: 519/519 tests, all nine acceptance/report builders, 36/36
+evidence rows, and 162/162 atlas pages pass. All eight authoritative
+parent/correlator hashes remain byte-identical. No physical formula, central
+selection, ordering, or numerical artifact changed.
+
+Remaining adapters: specialized Fourier/projector kernels and private
+nuclear/evolution/process helpers retain legacy arrays/scalar coordinates
+behind typed public registry boundaries. Volume I and II TeX sources were not
+present. Nonzero-transfer reductions remain explicitly unavailable.
+
+Exact next job: **C3 zero-skewness momentum-fiber, recoil-map, and analytic
+common-overlap pilot**, disconnected from central artifacts until analytic
+forward-identity, transfer-reversal, Jacobian, Hermiticity, support, and
+commuting-reduction gates pass.
+
+## 2026-07-28 — C1 typed convention and identity spine
+
+C1 implemented the adapter-only formal spine in
+`src/deuteron_wigner/formal/`: eight transverse coordinate identities,
+rank/mass/Bessel/phase metadata, versioned sector identity, Wilson paths and
+ordered gluon f/d link identities, operation-aware decorated operator
+identity, five distinct map classes, explicit adapter composition, and
+structured fail-closed diagnostics. The accepted numerical implementation and
+writers were not changed.
+
+Final status: 498/498 tests, all nine acceptance/report builders, 36/36
+evidence rows, and 162/162 atlas pages pass. All eight authoritative
+parent/correlator files remain byte-identical to the C0 hashes. C1 manifests
+and API/report documentation are under `docs/next_level/c1_*`.
+
+Honest limitations: the requested Volume I source file is absent; private
+helpers behind adapters still use arrays/scalar `b`; specialized transforms
+are wrapped rather than rewritten; the provenance exclusion graph is deferred.
+
+Exact next job: **C2 native typed reduction and provenance-graph migration of
+the accepted boundary**. Replace adapter-only projection/composition
+boundaries with native typed `RED` maps and enforce baseline/additive/
+exclusive/replacement relations, retaining byte-identical regression. Do not
+introduce a microscopic Hamiltonian in C2.
+
+## 2026-07-28 — C0 next-level architecture audit
+
+Work Package C0 audited the accepted leading-twist forward quark/gluon model
+against the construction note, algebraic/geometric architecture note, and
+original GTMD-first formalism. The immutable regression baseline at commit
+`69501009d9a972dd90cd63736d6bf1fc9669877d` is clean: 484/484 tests, every
+documented acceptance builder, 36/36 evidence rows, and all 162 atlas pages
+pass. Parent hashes and accepted residuals/minima are frozen in
+`docs/next_level/stage0_regression_baseline.json`.
+
+Unresolved ambiguities are generic radial `b` across `bDelta`, `bTMD`, and
+nuclear impact space; raw nuclear/process transverse coordinates; rank and
+mass normalization absent from correlator identity; and operator decorations
+split among correlators, registries, schemes, provenance, and CSV labels.
+Amp/Dens/Match/Red/Proc physics exists without separate typed interfaces.
+Gluon path-pair and f/d color identity remains outer metadata.
+
+Exact next job: **C1 typed convention and identity spine**. Implement isolated
+formal value objects for transverse coordinates, rank/mass conventions,
+sector keys, Wilson paths, decorated operator identity, and typed map
+protocols; wrap current objects without changing their execution order; add
+injected coordinate/sign/rank/scheme/color/double-counting failures; and prove
+all authoritative hashes remain identical. See
+`docs/next_level/stageA_migration_plan.md`.
+
+Last updated: 2026-07-27
+
+This is the persistent execution queue and completion authority. Historical
+stage plans in `project_context.md` and earlier decision-log entries remain
+useful context but do not override this roadmap.
+
+## Final scientific objective
+
+Construct a complete, physically defensible, flavor-resolved,
+spin-resolved, modular, validated, and extensible leading-twist spin-1
+light-front GTMD/TMD model. It must combine the best-supported nucleon
+flavor, spin, OAM and spin--orbit information with realistic deuteron
+light-front wave functions, vector/tensor target structure, controlled
+nuclear mechanisms, gauge-link behavior, evolution, lattice and
+phenomenological inputs, and machine-readable provenance.
+
+Completion is parent-first:
+
+\[
+\Psi_D^{\rm LF}\to\rho^{N/D}\to W_{a/N}^{[\Gamma]}
+\to W_{a/D}^{[\Gamma]}\to\Phi_{a/D}^{[\Gamma]}\to F_{a/D}.
+\]
+
+No downstream completion ansatz may substitute for a missing arrow.
+
+## Model-class boundary and next-level scientific objective
+
+The accepted pre-evolution model is a carefully constrained,
+parent-consistent phenomenological synthesis.  It is not a fundamental
+prediction from one solved quark--gluon--nuclear state.  This distinction is
+governed by Section 15 of `references/model_construction_note.tex`.
+`references/algebraic_geometric_next_level_model_note.tex` develops a
+candidate WP13 architecture: graded light-front Hilbert spaces and
+representation intertwiners, a symmetry-preserving tensor-network
+realization, Wilson-line bundle/path-groupoid geometry, common GTMD
+reduction maps, symplectic OAM organization, convex correlator positivity,
+filtered truncation convergence, and a limited chain-complex
+double-counting audit.  It is a research formulation, not evidence that
+these microscopic dynamics have already been implemented.
+
+Complete evolution of the accepted boundary remains the next executable
+production task, but evolution must not be represented as converting that
+boundary into the genuinely predictive model.  The subsequent microscopic
+program is **WP13**:
+
+1. Specify and renormalize one light-front Hamiltonian (or demonstrably
+   equivalent microscopic bound-state framework), including regulator,
+   counterterms, zero-mode treatment, and convergence controls.
+2. Solve flavor-resolved nucleon Fock sectors containing at least the
+   valence, explicit-gluon, and sea-generating sectors needed by the declared
+   quark, antiquark, and gluon observables.
+3. Generate nonzero-transfer GTMD matrix elements and obtain TMDs, GPDs,
+   form factors, currents, and OAM reductions from the same amplitudes.
+4. Generate process-dependent naive-T-odd phases from explicit Wilson-line
+   interactions, with quark flavor and gluon \(f\)-/\(d\)-color structures
+   derived rather than independently assigned.
+5. Construct the spin-1 state with normalized \(NN\), \(NN\pi\), and any
+   retained non-nucleonic Fock sectors, together with consistent one- and
+   many-body currents and no-double-counting rules.
+6. Match the regulated calculation to a declared QCD TMD scheme and perform
+   coupled rank-, flavor-, and color-aware evolution and \(W+Y\) assembly.
+7. Infer a compact set of shared Hamiltonian/state parameters with correlated
+   uncertainties; independent normalization parameters for each TMD are
+   forbidden.
+8. Predict at least one withheld observable family and require failure to
+   revise or reject the microscopic model rather than add a plot-level
+   coefficient.
+
+WP13 completion requires all twelve acceptance criteria in Section 15.10 of
+the construction note, including explicit Fock/regulator convergence,
+current and sum-rule closure, Wilson-line sign/color tests, posterior
+predictive covariance, and withheld validation.  Until those gates pass,
+outputs must be called phenomenological or effective-model predictions with
+their evidence class, not fundamental predictions.
+
+## WP10 — Required rich spin-1 dynamical structure
+
+Status: **complete; seven WP10 gates verified by the machine-readable audit**
+
+The 334-test, 10/10 report is the accepted baseline for the earlier
+fitted-input/configurable-boundary scope. It is not completion evidence for
+this expanded work package.
+
+### WP10.1 — Gauge-link phase and quark T-odd boundary
+
+Status: **complete**
+
+- Retain BPV20's 500-member, process-labeled quark Sivers input.
+- Add a common typed phase/amplitude contract that distinguishes a fitted TMD
+  from a modeled eikonal phase and refuses mixed-link extrapolation.
+- Add flavor-resolved Boer--Mulders central values and covariance/sensitivity
+  from a published fit or a clearly labeled spectator/lensing model when no
+  sufficiently complete fit is available.
+- Propagate both functions through proton/neutron-separated LF parents for
+  future and past staples.
+- Generate the spin-1-only axial tensor \(g_{1LT}\) and \(g_{1TT}\)
+  structures both from independent positivity-bounded phases and from an
+  explicit screened one-gluon S--P/S--D/P--P rescattering calculation.
+
+Gate: nonzero fixtures reproduce their source convention; SIDIS/DY reversal
+is exact; mixed links fail closed; no Sivers/Boer--Mulders value is generated
+by a universal phase shared across operators or flavors; every ensemble
+member retains identity through projection. The axial tensor additions must
+also pass full \(6\times6\) positivity without eigenvalue clipping, rotation
+covariance, phase-zero and pure-S limits, and eikonal quadrature convergence.
+
+### WP10.2 — Pretzelosity and worm gears
+
+Status: **complete within the declared fit/model boundary**
+
+- Replace the universal signed pretzelosity fraction as the sole production
+  representation with flavor-dependent fit/lattice/model inputs and a
+  covariance or named-scenario ensemble.
+- Keep \(g_{1T}\) and \(h_{1L}^{\perp}\) separate. Retain WW as a controlled
+  limit and implement configurable genuine quark--gluon--quark breaking.
+- Propagate common fit identities where quantities share an input.
+
+Gate: nonzero replacement tables round-trip, WW is recovered at zero
+breaking, breaking members are distinguishable, all flavors and nucleons are
+separate, rank-one/rank-two transforms pass convergence, and correlated full
+density members enter the positivity audit.
+
+### WP10.3 — Gluon T-odd color structures
+
+Status: **complete; six rank-resolved f/d model boundaries implemented**
+
+- Preserve independent \(f^{abc}\) and \(d^{abc}\) Sivers structures.
+- Extend the same color/link contract to every leading-twist gluon T-odd
+  function for which the declared operator basis permits a boundary.
+- Supply sourced or explicitly modeled numerical inputs with independent
+  parameters and uncertainties; observable assembly must provide its own
+  hard color weights.
+
+Gate: independent f/d variation changes observables according to analytic
+hard weights; future/past reversal and mixed-link refusal pass; the full
+\((3,3,2,2)\) parent remains Hermitian and member-level positivity tensions
+are reported without clipping.
+
+### WP10.4 — Polarized and tensor shadowing
+
+Status: **complete within named H1/FGS-anchored response scenarios**
+
+- Implement separate vector, tensor-LL/LT/TT, quark, antiquark, and gluon
+  diffractive response interfaces with explicit helicity matrices.
+- Use published diffractive/nuclear information where available and named
+  model responses elsewhere; never copy an unpolarized factor silently.
+- Link antishadowing only to the applicable spin-weighted sum rule.
+
+Gate: U-only input leaves all polarized blocks unchanged; each polarized or
+tensor response modifies only its declared irreducible target block; zero
+response recovers impulse; Hermiticity, gauge-link parity, positivity, and
+applicable tensor moments pass.
+
+### WP10.5 — Mesonic and non-nucleonic correlators
+
+Status: **complete within sourced pion and effective-cluster boundaries**
+
+- Promote the sourced Sullivan pion contribution to an unintegrated
+  flavor/spin-resolved correlator only to the degree fixed by the NNπ
+  amplitude and pion TMD input; refuse invented off-forward or helicity
+  structure.
+- Retain Miller six-quark \(b_1\) and the cluster scenario as observable
+  sensitivities until a source fixes their missing flavor/color/TMD
+  decomposition.
+- Implement replaceable full-correlator inputs for future NNπ, hidden-color,
+  dibaryon, or other non-nucleonic amplitudes.
+
+Gate: the pion correlator reduces to the existing collinear Sullivan result
+at \(b_T=0\), closes its Fock normalization and momentum accounting, and
+preserves flavor; observable-only sources cannot be mislabeled as full
+parents; zero-component limits are exact.
+
+### WP10.6 — Additional spin--orbit/OAM interference
+
+Status: **complete within the explicit PDF-anchored S/P/D scenario**
+
+- Enumerate the independent LF helicity/OAM interference amplitudes needed
+  beyond S/D/Melosh impulse recoupling.
+- Add typed partial-wave amplitude inputs with azimuthal phase and
+  interference identity, including quark--gluon and gluon--gluon correlation
+  channels when modeled.
+- Map every new amplitude to named correlator entries rather than downstream
+  TMD priors.
+
+Gate: rotations, parity, Hermiticity, OAM selection rules, and controlled
+phase-zero limits pass analytically and numerically; interference terms
+vanish when either participating amplitude is disabled; no double counting
+with the existing S/D components occurs.
+
+### WP10.7 — Production, uncertainty, and acceptance
+
+Status: **complete**
+
+- Regenerate smooth \(F(x=0.1,k_T;Q=5\,{\rm GeV})\) quark and gluon atlases
+  with structural, configured-baseline, and unresolved zeros visibly
+  distinguished.
+- Export separate fit, lattice, phase-model, wave-function, shadowing,
+  mesonic/non-nucleonic, OAM, evolution, and numerical axes.
+- Add WP10 evidence to both machine-readable acceptance manifests.
+
+Gate: all WP10.1--WP10.6 gates pass; production rows retain source,
+flavor/nucleon, operator, color structure, link, mechanism, amplitude,
+validity, and member identity; visual audit passes; full regression passes;
+neither final report claims completion while a required WP10 entry is
+partial or missing.
+
+## Status vocabulary
+
+- **complete**: implemented, tested, documented, and passes its stated gate.
+- **partial**: useful implementation exists but required physics or tests remain.
+- **temporary**: explicit replaceable approximation with a replacement task.
+- **missing**: required implementation does not yet exist.
+- **blocked-external**: requires unavailable access or information; none currently.
+
+## WP1 — Audit and production gates
+
+Status: **complete**
+
+Implemented:
+
+- Audited 28 simplifications and false completion assumptions in
+  `references/production_tmd_architecture_audit.md`.
+- Marked reduced-amplitude outputs and documents as superseded.
+- Added `provenance.py` with exact, phenomenological, lattice-informed,
+  model-dependent, and unconstrained evidence classes plus validity domains.
+- Added fail-closed trace checks for unconstrained components.
+
+Gate:
+
+- Every future output row must trace operator, flavor, active nucleon,
+  wave function, mechanism, gauge link, evidence class, validity, and
+  uncertainty. Exporters fail if required trace fields are absent.
+
+Tests:
+
+- `tests/test_provenance.py`
+
+## WP2 — Complete declared leading-twist content and conventions
+
+Status: **complete at the declared leading-twist scope**
+
+Complete:
+
+- Enumerated 18 quark, 18 antiquark, and 19 gluon TMDs across
+  \(U,L,T,LL,LT,TT\).
+- Stored transverse rank, T parity, operator projection, collinear status,
+  and positivity block in `registry.py`.
+- Implemented symmetric-traceless ranks through four.
+- Implemented full gluon Cartesian basis and synthetic projectors, including
+  the TT \(f_{1TT}-h_{1TT}^{\perp}\) identifiability relation.
+- Implemented the published 18-function spin-1 quark basis and joint
+  Gram/design projector in `quark_correlator.py`.
+- Independently mapped every quark structure to Eqs. (12)--(20) of
+  arXiv:1612.06585 and added direct scalar/chiral-odd contraction tests.
+- Added an all-18 light-front parity reflection and the full nine-function
+  T-odd gauge-link reversal test. This found and fixed a missing epsilon
+  rotation in rank-three \(h_{1TT}^{\perp}\).
+- Resolved the fixed-\(k_T\) gluon TT degeneracy by exposing only
+  `f1TT_minus_h1TTperp`; no artificial prior separates the pair.
+
+Gate:
+
+- Analytic and independent numerical construction agree for every basis
+  tensor and projector to \(10^{-11}\); origin degeneracies are explicit.
+
+## WP3 — Flavor-resolved spin-half nucleon correlators
+
+Status: **complete at the declared fitted-input plus configurable-model scope**
+
+Complete:
+
+- Added the eight leading-twist spin-half quark TMD operator structures in
+  `nucleon_quark_correlator.py`.
+- Preserved distinct \(u,d,\bar u,\bar d\) functions and widths.
+- Added separate proton/neutron models with controlled charge-symmetry
+  rotation in `nucleon_inputs.py`.
+- Added CT18 \(f_1\), BDSSV24 \(g_1\), bounded flavor-dependent \(h_1\)
+  normalized to JAMDiFF phenomenology+lattice tensor charges, WW
+  \(g_{1T}\) and \(h_{1L}^{\perp}\), and explicit zero one-body
+  T-odd/pretzelosity boundaries.
+- Tested flavor distinction, process sign behavior, hermiticity, the exact
+  charge-symmetric inclusive limit, the complete joint-spin positivity matrix
+  over the declared support grid, valence moments, and tensor charges.
+
+Model-dependent inputs and replacement interfaces:
+
+| Configured input | Classification | Upgrade path | Distinguishing test |
+|---|---|---|---|
+| Flavor-dependent Gaussian \(f_1\) widths | model informed by arXiv:2405.13833 | ingest a tabulated soft-subtracted flavor-dependent TMD fit with covariance | table interpolation and covariance reproduction |
+| JAMDiFF pointwise mean/std grid with composed-TMD positivity projection | phenomenology+lattice fit; model-dependent compatibility projection | retain and propagate individual replicas | reproduce cross-x/flavor covariance and nuclear output bands replica by replica |
+| WW \(g_{1T},h_{1L}^{\perp}\) | model dependent | add fitted/lattice inputs and genuine twist-3-breaking parameter | WW limit plus nonzero replacement fixture |
+| BPV20 Sivers plus flavor-dependent Boer--Mulders proportionality | fit plus independent model coefficient axis | replace Boer--Mulders coefficients with a joint fit ensemble | SIDIS/DY reversal, coefficient scenarios, and nonzero parent projection |
+| Flavor-dependent positivity-ceiling pretzelosity | model dependent | replace with fit/lattice replicas when public | nonzero replacement round trip, flavor distinction, and positivity |
+
+Completion evidence and remaining data-driven upgrades:
+
+1. **Complete at the fitted-input/WW scope:** the official JAMDiFF LHAPDF member 0 central and physical
+   members 1--968 are now ingested with stable identity. Cross-x/flavor
+   covariance is propagated member by member through the six-wave nuclear
+   \(h_1\) convolution, including the documented member-wise composed TMD
+   Soffer projection. The same identities also pass through the derived WW
+   \(h_{1L}^{\perp}\) integral and LF parent rather than receiving an
+   independent band. Genuine twist-3 WW-breaking remains a separate model
+   uncertainty.
+2. **Complete at declared LO/rank-aware plus fit-native scope:** an explicit
+   LO rank-zero quark boundary covers flavor-
+   resolved \(f_1,g_1,h_1\), using the exact Fourier transform of each
+   component's intrinsic Gaussian and quark one-loop CSS coefficients
+   \(A_q^{(1)}=C_F,\ B_q^{(1)}=-3C_F/2\). The API rejects rank-one, rank-two,
+   fit-native, and T-odd inputs rather than applying the wrong transform.
+   A cached numerical \(J_0\) adapter now reconstructs complete spin-half
+   correlators at the recoil-shifted momentum inside the LF parent. A
+   physical AV18 four-flavor connection audit passes 201-to-401 point
+   b-grid refinement at \(1.62\times10^{-5}\) maximum mixed relative change.
+   AV18 medium-to-production LF convergence passes at 0.541%, and all six
+   production wave functions yield finite flavor/nucleon-resolved results.
+   The rank-one \(g_{1T},h_{1L}^{\perp}\) correlator coefficients now use the
+   proper \(J_1\) inversion and pass 25-to-49 canonical-scale-grid refinement
+   at \(1.06\times10^{-7}\) for both nucleons and four flavors.
+   The rank-two \(h_{1T}^{\perp}\) adapter now evolves the physical
+   directional coefficient and inverts with \(J_2\). Its perturbative central
+   remains zero, while signed \(\pm0.25\) moment-bound large-b scenarios are
+   explicit, replaceable, and pass full nucleon joint-density positivity.
+   A disk-backed fixed-\(Q\) grid now contains proton/neutron,
+   \(u,d,\bar u,\bar d\), all six evolved T-even nucleon components, and
+   three pretzelosity scenarios on 274 x and 161 momentum nodes. It passes
+   576 direct-transform comparisons under the 2% or
+   \(2\times10^{-6}\ {\rm GeV}^{-2}\) mixed gate. All three scenarios have
+   been propagated through all six production LF parents at five momenta;
+   the 19,440-row output retains all 18 spin-1 projections and separate
+   proton/neutron pieces with \(7.58\times10^{-14}\ {\rm GeV}^{-2}\) closure.
+   All 1,080 stored wave/scenario/flavor/momentum/part densities pass the
+   complete joint spin-density eigenvalue gate; the minimum is 0.0388.
+   A visually verified 18-page atlas and 21,672-row smooth table retain
+   separate scenario and wave-function envelopes plus proton/neutron curves.
+   BPV20 fit-native routing and process-domain enforcement are now complete.
+   NLO coefficient functions remain an order upgrade, not a missing model
+   interface; the declared in-house generic boundary is LO and fit-native
+   routes retain their published orders.
+
+Gate:
+
+- Proton and neutron benchmarks reproduce source inputs and uncertainty;
+  all eight operator structures satisfy hermiticity, T parity, positivity,
+  support, and declared moments.
+
+## WP4 — Parent light-front nuclear convolution and projection
+
+Status: **complete at the declared TMD plus replaceable rank-zero off-forward
+nucleon-GTMD boundary scope**
+
+Complete:
+
+- Existing realistic AV18, CD-Bonn, and four Norfolk momentum wave functions.
+- Existing Melosh-rotated retained target/nucleon helicity spectral kernel.
+- Existing \(SS,SD,DS,DD\) off-forward component quadratures.
+- Added proton/neutron-separated quark convolution in
+  `gtmd_convolution.py`.
+- Added one-pass convolution of all quark operator projections and complete
+  spin-1 projection in `parent_quark_tmd.py`.
+- Added pure-S spin-transfer test preventing transversity/pretzelosity
+  misidentification.
+- Added `export_parent_derived_quark_tmds.py`; a 9-point AV18 fixture has
+  passed parent/proton/neutron/mechanism/process/origin/azimuth validation.
+- Completed the AV18 \(8\times6\times6\), \(16\times12\times8\), and
+  \(24\times16\times12\) comparison.  The coarse fixture is unsuitable for
+  physics (24.9% L2 shift to medium); medium differs from fine by 0.46% in
+  L2 and at most 0.68% for resolved p/n impulse values.
+- Completed the full six-wave \(16\times12\times8\),
+  \(24\times16\times12\), and \(32\times20\times16\) audit. Medium fails
+  with up to 1.283% relative L2 error. Fine passes against ultrafine with at
+  most 0.5653% relative L2 error and the documented 2% plus
+  \(2\times10^{-8}\ {\rm GeV}^{-2}\) mixed pointwise tolerance. The
+  \(24\times16\times12\) grid is now the production default.
+- Added the complete identifiable gluon TT parent projector and retained
+  proton/neutron gluon convolution components.
+- Added matched/CSS-evolved nucleon gluon inputs and complete parent-derived
+  gluon export for all six wave functions.
+- Quark and gluon outputs now retain coherent \(SS,SD,DS,DD\) components.
+  Validators require their reconstruction of the full impulse correlator.
+- Generated smooth PCHIP visualization layers (241 points) with AV18 central
+  curves and six-wave-function envelopes; all calculated knots remain
+  available and interpolation is explicitly not new physics.
+- Verified the gluon \(b_T=0\) parent reduction against an independently
+  constructed LF collinear convolution for all six wave functions. \(f_1\)
+  agrees at machine precision and \(f_{1LL}\) within \(1.7\times10^{-11}\)
+  relative; the collinear one-body \(h_{1TT}\) null is structural.
+- Exported the unprojected parent correlators for all six production quark
+  and gluon datasets as portable complex long tables. Independent
+  deserialization and projection reproduces every named output within
+  \(2\times10^{-11}\ {\rm GeV}^{-2}\); unit tests also cover exact matrix
+  round trips and incomplete-table rejection.
+- Completed a production-order azimuthal-covariance audit of the full quark
+  parent projection using a complete covariant spin-half fixture convolved
+  through the physical AV18 LF kernel. Across all 18 spin-1 TMDs and three
+  transverse momenta, the largest resolved relative rotation residual is
+  \(2.12\times10^{-9}\) at the production \(24\times16\times12\) order and
+  \(2.50\times10^{-11}\) after doubling the internal azimuthal order. Both
+  are far below the predeclared 1% and 0.25% acceptance limits.
+- Extended the independent production \(b_T=0\) reduction audit to all six
+  wave functions, \(x_N=0.03,0.1,0.3\), \(Q=2,5\) GeV, \(u,d,\bar u,\bar d\),
+  and gluons at the production quadrature. The full retained-helicity parent
+  and separately constructed spherical LF smearing agree in \(f_1\) to
+  \(2.56\times10^{-14}\) relative. Tensor \(f_{1LL}\) passes a strict mixed
+  \(10^{-9}\) relative or \(10^{-12}\ {\rm GeV}^{-2}\) absolute criterion,
+  and forbidden quark \(h_{1LT}\) rank-zero leakage is below
+  \(3.84\times10^{-20}\ {\rm GeV}^{-2}\).
+
+Model-boundary upgrade:
+
+1. Retain the older factorized-Gaussian GTMD/GPD/PDF/Wigner commuting test
+   as a separate analytic benchmark. The physical six-wave LF overlap now
+   passes GTMD-to-forward-TMD, GTMD-to-GPD, GTMD-to-Wigner, Hermiticity, and
+   \(SS+SD+DS+DD\) closure in
+   `physical_offforward_reductions.json`. A future fitted nucleon
+   off-forward GTMD can replace the declared rank-zero boundary through the
+   existing callback without changing nuclear composition.
+
+Gate:
+
+- All requested flavors and species are projected from stored/inspectable
+  parent correlators; proton+neutron and mechanism sums reconstruct exactly;
+  six-wave-function and quadrature convergence are documented.
+
+## WP5 — Nuclear mechanisms and regimes
+
+Status: **complete at the sourced-mechanism/configurable-zero scope**
+
+Complete:
+
+- Binding, Fermi motion, Melosh rotation, \(S/D\) structure, and interference
+  enter through the LF wave function.
+- `nuclear_mechanisms.py` adds separate correlator-level coherent
+  shadowing, antishadowing, and EMC-like sensitivity components without
+  altering impulse terms.
+- Mechanisms preserve irreducible spin-1 target sectors and hermiticity.
+- The LF spectral kernel now stores the invariant struck-nucleon virtuality
+  \(v=(p^2-m_N^2)/m_N^2\) at every node using an on-shell spectator and the
+  physical deuteron mass. The off-shell response is integrated inside the
+  quark convolution and exported as a separate parent; the former universal
+  average-virtuality multiplier is disabled.
+- Across the six production wave functions the spectral mean virtuality is
+  -0.0369 to -0.0448 and the \(v<-0.3\) weight is 1.18--2.17%. Production
+  positivity and fine/ultrafine convergence pass with the explicit response.
+- Replaced the qualitative off-shell response by the May 2026 CJ26 cubic
+  fit. The central is the midpoint of its additive/multiplicative
+  higher-twist scenarios; uncertainty retains their half-range and the
+  published marginal coefficient errors. The adapter enforces/documented
+  provenance and marks \(x>0.7\) as extrapolative.
+- Added source-required meson-exchange and non-nucleonic parent interfaces.
+  Their production rows and serialized matrices are explicit zeros in the
+  configured nucleonic baseline, labeled as unresolved rather than physical
+  null predictions. Tests cover sourced activation, validity-domain
+  deactivation, hermiticity, and exact total reconstruction.
+
+Implemented limitations and data-driven upgrade paths:
+
+1. **Complete at the named central/scenario-envelope scope:** the analytic
+   central shadowing curve has been replaced by the
+   official H1 2007 Jets DPDF grids, reconstructed differential flux, FGS
+   deuteron double-scattering integral, real-part correction, \(16\pi\)
+   convention conversion, and wave-specific LF body form factor. Named DPDF
+   normalization and \(t\)-slope scenarios are implemented. H1 eigenvector
+   grids, gluon-specific slope covariance, and polarized/tensor DPDFs remain
+   unavailable/unresolved. The named responses are exported coherently over
+   wave function, flavor, \(x\), and \(Q\); they are explicitly an envelope,
+   not a statistical covariance. Rows below \(x=10^{-4}\) are marked as H1
+   beta-boundary-clamped diagnostic extrapolations.
+2. Obtain full CJ26 coefficient covariance/Hessian members if released.
+   Production already uses the versioned fitted central scenarios and
+   marginal errors; the absent cross-coefficient covariance remains an
+   explicitly incomplete statistical input rather than a central-model
+   placeholder.
+3. **Complete as a separately gated sourced comparison mechanism:** the
+   Miller (2014) AV18 tensor-polarized Sullivan-pion
+   distribution is evaluated numerically and convolved with all 786 JAM21
+   pion replicas. Its pure-tensor correlator adapter, \(M_A\) variation,
+   sum-rule/convergence tests, exact zero-meson limit, and HERMES \(b_1\)
+   comparison are complete. The individual source helicity formulas now
+   supply a separately tested spin-averaged connected pion distribution.
+   Exact \(Z=1+N_\pi\) normalization gives NN/NNπ probabilities
+   0.97915/0.02085 and closes momentum among NN nucleons, NNπ nucleons, and
+   pions to machine precision. The minimal unchanged-shape NNπ-nucleon
+   counterterm remains only a comparison diagnostic.  The preferred
+   collinear component applies the conditional recoil
+   \(\alpha_N'=(1-yM_N/M_D)\alpha_N\) to arbitrary-\(x\) full quark
+   correlators; nucleon number, plus momentum, changed \(x\) shape, and
+   inherited scalar-pion spin ratios are tested. The unintegrated source
+   kernel and retained-NN recoil are implemented. In the repository
+   convention the exact phase is
+   \(J_0[x_Nbq_T/(2(1-\eta_\pi))]\); the active residual-NN fraction cancels.
+   The Vpion19 central plus 100 physical profile replicas are
+   composed with the unintegrated nuclear pion recoil via
+   \(J_0(zbq_T)\), with exact collinear reduction and common Fock
+   normalization. Every profile member is propagated through the nuclear
+   kernel and combined with the retained-NN term. This is a b-space
+   boundary. The one-loop route remains a diagnostic; a preferred native
+   arTeMiDe route now uses Vpion19, NNLO matching, BSV19 NNNLO evolution,
+   all 101 member identities, and the same exact recoil. Maintained JAM21
+   substitutes for unavailable JAM18; this route is therefore retained as a
+   non-production comparison until a refit and a specified-observable Y term
+   become available. A dynamical three-body NNπ helicity, off-forward, and
+   virtuality-dependent spectral amplitude has a replacement interface but
+   no public numerical input.
+   The Miller hidden-color six-quark \(b_1\) equation is also
+   source-table/sum-rule tested as a distinct observable scenario. Its
+   \(P_{6q}=0.0015\) is fitted to one HERMES bin and its flavor decomposition
+   is not fixed, so it is not promoted to a correlator or used in the
+   configured production total. The Kaur et al. effective-cluster LFWF
+   supplies a
+   separately validated non-nucleonic comparison parent and source-defined
+   flavor-resolved collinear convolution, including its published \(b_1\)
+   moment. It remains non-production because its color mixture, transverse
+   cluster-parton structure, evolution, and physical-binding connection are
+   not fixed.
+4. **Complete at the sourced unpolarized QED-CSB scope:** a source-required,
+   validity-bounded `ChargeSymmetryBreakingInput` applies independent
+   relative corrections by nucleon, flavor, and TMD while retaining exact
+   isospin as a tested switchable limit. The paired MSHT20 QED
+   proton/neutron Hessian ensembles now supply a numerical neutron \(f_1\)
+   correction and correlated 68% CL uncertainty for
+   \(10^{-5}\le x\le0.4\). The central correction is propagated through all
+   six evolved LF parents with exact proton/neutron mechanism closure. All
+   77 paired members are propagated through shared LF contractions and form
+   the correlated 38-pair parent Hessian. Polarized, transversity, T-odd, and
+   transverse-width CSB remain unresolved and are intentionally not inferred
+   from unpolarized amplitude CSB.
+5. Tensor coherent terms are kept separate and compared with \(b_1\);
+   polarized/tensor DPDF inputs remain an external data upgrade and are not
+   absorbed into unrelated mechanisms.
+
+Gate:
+
+- Each mechanism has a source, regime, independent switch, uncertainty,
+  limiting test, and correlator-level contribution; mechanisms reconstruct
+  observables without double counting.
+
+## WP6 — Gauge links, factorization, and evolution
+
+Status: **complete at the declared typed-scheme and validity-enforcement scope**
+
+Complete:
+
+- Gauge-link identity is stored; exact T-odd reversal is tested.
+- Gluon small-\(b_T\) matching and one-loop CSS evolution exist separately.
+
+Completion evidence and upgrade paths:
+
+1. **Complete at the enforceable in-house scheme-contract scope:** quark and
+   gluon matching/evolution now share a typed Collins square-root-soft,
+   delta-regulator, MSbar, zeta-prescription contract. The current solver
+   explicitly supports only the canonical \(\zeta=\mu^2\) line, persists both
+   scale endpoints, and refuses mismatched schemes or unsupported paths.
+   An order-consistent arbitrary-two-scale
+   backend with cusp/path-independence validation and fitted correlated
+   nonperturbative inputs is an upgrade; fit-native arTeMiDe routes remain
+   separate.
+2. **Complete:** quark and gluon \(b_T\)-space boundaries are connected to
+   the nuclear parent with rank-aware transforms and reduction tests.
+3. **Complete at the declared BPV20 fit-uncertainty scope:** the public BPV20
+   N3LO central and all 500 fitted replicas are parsed; exact arTeMiDe FNP
+   boundary, N3LO evolution, native Ogata momentum transform, SIDIS/DY link
+   reversal, neutron isospin map, and member-preserving nuclear convolution
+   through all six wave functions are implemented and tested. Smooth 16th-
+   84th percentile fit bands and a separate six-wave central envelope are
+   published; member 0 remains the central and is not replaced by the replica
+   mean or median.
+4. **Complete at the strict boundary-contract scope:** the gluon Sivers
+   interface now separates f-type and d-type color contractions, future/past
+   staple reversal, and explicit process hard coefficients. It refuses mixed
+   links, missing color components, implicit process weights, invalid domains,
+   and nonfinite inputs. No nonzero production boundary is claimed because no
+   fit-native public two-color replica input has been validated. A future
+   input can activate the existing f/d-color interface and parent embedding;
+   the configured unconstrained boundary remains explicit zero.
+5. Scale/profile variations and the low-\(k_T\) validity cutoff are
+   implemented. A fixed-order \(Y\) term is required only for a specified
+   high-\(q_T\) observable and cannot be added universally to a TMD.
+
+Gate:
+
+- Evolution consistency, cusp relation, reference-scale recovery, process
+  reversal, and high-\(k_T\) validity are tested for every evolved sector.
+
+## WP7 — Algebraic/geometric organization and optional quantum validation
+
+Status: **complete; algebraic organization is implemented and topology or
+PennyLane has no demonstrated additional role**
+
+Concrete implementation:
+
+- Spin-1 density matrices use the irreducible
+  \(U,L,T,LL,LT,TT\) Hermitian basis.
+- Definite transverse ranks use symmetric-traceless \(SO(2)\)
+  representations.
+- Named projectors use Gram/design inversion with rank and condition checks.
+- Provenance and mechanisms compose as typed direct-sum contributions.
+
+Completion evidence and conditional upgrade paths:
+
+1. **Complete:** all 500 propagated BPV20 members now pass through the complete
+   spin-1 target-helicity/parton-spin eigenvalue diagnostic for six wave
+   functions, both links, four flavors, and impulse/model totals. It reports
+   296 tree-level PSD tensions without clipping because the soft-subtracted
+   evolved TMD bound is scheme dependent and BPV20 documents this behavior.
+   Equivalent member-level checks now cover every reconstructible implemented
+   ensemble, including correlated JAMDiFF, gluon waves, and named shadowing.
+2. **Complete:** `references/spin1_representation_map.md` maps target and
+   parton Hilbert spaces, the \(U,L,T,LL,LT,TT\) irreps, \(SO(2)\) ranks,
+   epsilon rotations, discrete symmetries, gauge links, gluon TT
+   identifiability, direct-sum composition, and every code/test object.
+3. Investigate topology only if complex gauge-link phases introduce a real
+   winding, bundle, patching, or global-sign problem.
+4. Use PennyLane only if a specified Hilbert-space construction supplies an
+   independent entanglement/spin-coupling validation; benchmark it against
+   Clebsch--Gordan algebra first.
+
+Gate:
+
+- Every abstract construction maps to explicit degrees of freedom,
+  operators, tests, and a demonstrated computational benefit.
+
+## WP8 — Uncertainty, validation, and benchmark observables
+
+Status: **complete; authoritative machine-readable matrix passes**
+
+Required validation:
+
+- Hermiticity, parity, time reversal, gauge-link reversal.
+- Support and endpoint behavior.
+- Target and parton helicity-matrix positivity where applicable.
+- Baryon number, momentum, helicity, tensor, and transversity moments.
+- Rank-zero collinear marginals and positive-rank tensor marginals.
+- \(h_{1LT}\) zero unweighted integral.
+- Pure S-wave, zero-D-wave, no-Melosh, free proton, free neutron,
+  exact-isospin, controlled-isospin-breaking, and zero-nuclear-correction limits.
+- \(b_1\) from the same parent versus the independent convolution and HERMES.
+- Gluon \(h_{1TT}\) one-body null test.
+- Wave-function, internal quadrature, external grid, transform, PDF/TMD fit,
+  evolution, and nuclear-mechanism uncertainties kept separate.
+
+Gate:
+
+- A machine-readable validation report maps every test to tolerance, result,
+  input provenance, and affected outputs; the full suite passes.
+
+Current evidence:
+
+- `validation/wp8_manifest.json` maps all 12 grouped WP8 requirements to
+  tolerances, collected test prefixes, artifacts, provenance, outputs, and
+  explicit open reasons.
+- `outputs/validation/wp8_acceptance_report.json` is generated by
+  `scripts/build_wp8_validation_report.py`; 12/12 requirements are verified,
+  331/331 tests pass, and `completion_ready=true`.
+- The `global_moments` entry now uses a 69-entry support-aware ledger plus an
+  11-active-parton momentum audit. Valence number and total momentum pass;
+  gluon momentum/helicity/tensor moments are support complete with explicit
+  operator weights and endpoint sensitivities.
+- Joint positivity now covers all reconstructible implemented ensembles:
+  six full gluon wave members, evolved quark scenarios, all 500 BPV20
+  members, all 968 member-correlated JAMDiFF \(h_1\)/WW pairs, and
+  central/low/high full-matrix gluon shadowing. Projection-only envelopes
+  remain explicitly outside the claim.
+
+## WP9 — Reproducible outputs, documentation, and completion audit
+
+Status: **complete**
+
+Required:
+
+1. Produce parent-derived dimensional \(F\) curves and separate bands for
+   gluon, \(u,d,\bar u,\bar d\) at the declared kinematics.
+2. Store parent/mechanism/proton/neutron source tables and supplemental ratios.
+3. Visually inspect all figures and retain vector PDF output.
+4. Document every component’s physical meaning, source, validity, uncertainty,
+   and replacement interface.
+5. Provide exact environment and reproduction commands.
+6. Perform a final acceptance audit mapping every criterion to files, tests,
+   evidence, and documentation.
+
+Current evidence:
+
+- `outputs/figures/figure_index.json` is the machine-readable authority map.
+- `outputs/validation/parent_tmd_figure_acceptance.json` verifies 72 quark
+  groups (18 functions for each of \(u,d,\bar u,\bar d\)), 18 gluon groups,
+  finite ordered six-wave bands containing AV18, and common 241-point PCHIP
+  grids.
+- The AV18 source audit retains distinct proton/neutron impulse rows and
+  finds nonzero \(u-d\) and \(\bar u-\bar d\) source differences. Equality
+  in the assembled inclusive deuteron is therefore the controlled exact
+  charge-symmetric \(I=0\) limit, not a flavor-independent source ansatz.
+- `quark_flavor_source_decomposition_atlas.pdf` exposes active-proton,
+  active-neutron, impulse-sum, and configured-total curves on all 72
+  flavor/TMD/channel pages, backed by a 241-point source table.
+- The historical `outputs/figures/production_tmds/` tree is explicitly
+  superseded; its old script entry point fails closed, and exploratory
+  regeneration is segregated under `outputs/figures/exploratory_closure_tmds`.
+- All 162 pages across the quark, gluon, and flavor-source atlases were
+  rendered with PyMuPDF, structurally audited, and reviewed through contact
+  sheets. Poppler was unavailable.
+- `outputs/validation/final_acceptance_report.json` maps all ten final
+  criteria to implementation, tests, artifacts, and documentation; 10/10
+  criteria and 334/334 tests pass with `completion_ready=true`.
+
+Gate:
+
+- No required item in WP1--WP9 remains partial, temporary without an accepted
+  declared-scope exclusion, missing, or disguised as optional future work.
+
+## Known limitations and closed historical defects
+
+1. The quark convention defect is closed; future changes must preserve the
+   direct published-equation and light-front parity tests.
+2. The six-wave quark convergence defect is closed by D-050. Production is
+   \(24\times16\times12\); the failed medium and passing ultrafine comparison
+   reports are retained as evidence.
+3. Off-shell response is fitted to CJ26 and central unpolarized shadowing is
+   an H1-DPDF/FGS coherence integral. Full DPDF statistical covariance,
+   polarized/tensor diffractive inputs, and numerical mesonic/non-nucleonic
+   inputs are unavailable external upgrades. They have typed replacement
+   interfaces and are not inserted through unrelated responses.
+4. JAMDiFF member identity and cross-x/flavor covariance are propagated
+   through nuclear \(h_1\) and correlated WW \(h_{1L}^{\perp}\) for all six
+   wave functions. Joint statistical uncertainty with CT18/BDSSV remains
+   open because no joint probability prescription is published.
+5. The matched/CSS gluon output is a low-\(k_T\) W term. A 121-point
+   \(0.005<k_T<5\) GeV audit gives 14.3% and 54.3% residuals in the \(f_1\)
+   and \(f_{1LL}\) full marginals. Tables and figures now enforce the W-only
+   domain; a sourced Y term is required only for a specified high-\(q_T\)
+   observable, not for an intrinsic TMD.
+6. Serialized unprojected quark and gluon parent correlators are complete.
+   The full-matrix non-impulse gluon mechanism ledger, inclusive
+   target-U/gluon-trace shadowing, named diffractive uncertainty members, and
+   gluon-momentum-compensating antishadowing are implemented. Numerical
+   polarized/tensor shadowing, off-shell, mesonic, and non-nucleonic gluon
+   inputs are unconfigured external upgrades and cannot reuse quark
+   responses silently; explicit zero baselines and activation interfaces
+   are tested.
+7. The repository working tree is rooted above this project on the current
+   machine, so broad `git status` output includes unrelated home-directory
+   files. Never clean or delete them.
+
+## Optional maintenance and data-upgrade queue
+
+No required implementation or validation item remains. The authoritative
+final audit is `outputs/validation/final_acceptance_report.json`. The
+following historical queue is retained as non-required upgrade context; it
+must not be interpreted as an incomplete acceptance item or permission to
+invent unavailable external physics.
+
+Continue WP5 with the missing correlator-level non-impulse gluon mechanism
+layer while preserving the source boundaries of the implemented pion and
+cluster scenarios:
+
+```text
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q \
+  tests/test_pion_exchange.py tests/test_nuclear_mechanisms.py
+```
+
+The sourced spin-average, momentum ledger, non-Gaussian transverse boundary,
+exact Fock ledger, conditional longitudinal NNπ recoil, and retained-NN
+\(b\)-space recoil kernel are complete. The unchanged-shape closure is only
+a comparison diagnostic. Native NNLO/NNNLO
+Vpion19 evolution now supersedes the one-loop route, but its JAM21
+substitution still requires a refit and a fixed-order Y term. Next supply
+that refit/Y term.  The production AV18 multi-\(x\) parent grid, conditional
+recoil propagation, log-\(x\) interpolation, and coarse/refined validation
+are complete. All 786 JAM21 replicas now provide the pion-PDF ensemble mean,
+sample spread, quantiles, and member table. The former instruction to expose
+or average the active-nucleon LF fraction is superseded. The forward coupling
+is complete:
+\(z\alpha=x_N/[2(1-\eta_\pi)]\) cancels \(\alpha\) exactly and passes the
+AV18 b=0 parent gate. The common native Vpion19 plus retained-NN output is
+complete with consistent Fock normalization and all 100 physical profile
+members propagated through the nuclear kernel. Extend the mechanism off
+forward; do not manufacture the still-unsourced tensor-pion transverse input.
+The 2026 LFHEFT audit confirms that its deuteron benchmark integrates the
+scalar NNπ sector into an effective two-body Hamiltonian and explicitly
+leaves dynamical pions for future work. Preserve the three-body replacement
+interface and continue independent acceptance work rather than adding an
+arbitrary transfer slope.
+Implement separate gluon-sector mechanism responses and uncertainty members;
+do not apply quark factors by default. Each mechanism must preserve the full
+\((3,3,2,2)\) correlator, reconstruct the total from named contributions,
+and pass Hermiticity, zero-switch, validity, and no-double-counting tests.
+For the non-nucleonic parent, do not promote arXiv:2507.09886 to a quantified
+hidden-color mixture. Its scalar holographic × 't Hooft parent and exact
+zero-tensor Melosh diagnostic are implemented. The explicit vector-current
+helicity vertex now passes nonzero-local/zero-integrated tensor,
+polarization-completeness, and official LMDF-path benchmarks. Keep it gated
+as a cluster sensitivity scenario. Its source-defined NNPDF3.1
+proton/neutron/flavor convolution now reproduces the published \(b_1\)
+moment, but a sourced transverse cluster-parton input, color decomposition,
+and matching/evolution prescription remain required before production TMD
+use. In parallel seek
+released helicity/color-resolved BLFQ amplitudes from
+arXiv:2503.21371/2505.12889 or reproduce their Hamiltonian truncation.
+Do not infer a Gaussian width. The Miller six-quark observable
+scenario is implemented with its one-bin calibration exposed; next seek a
+source that fixes a flavor-resolved non-nucleonic correlator. The SIDIS
+high-qT gate remains closed:
+APFEL++ and the vendored arTeMiDe do not supply the required qT-differential
+FO/ASY pair.
+
+## 2026-07-26 gluon T-odd replacement checkpoint
+
+The six-function source-informed replacement is complete at its declared
+prediction scope. All functions are nonzero away from their rank boundary,
+f/d link classes and coupling axes are distinct, AV18 tensor dynamics
+generates \(g_{1LT}\) and \(g_{1TT}\), and the complete density passes
+positivity. A literal PVGlue20 replica reproduction and fitted
+\(Q_0\)-to-\(Q\) evolution remain outside the evidence because neither the
+replica files nor a dedicated evolution fit are public. This absence is
+recorded as model uncertainty and is not represented as a confidence band.
+
+## WP11 — Canonical quark/gluon physical synthesis
+
+Status: **completed at the declared leading-twist forward scope; governing
+acceptance passed 2026-07-26**
+
+WP11 is not an optional upgrade to an otherwise completed project. It is the
+project's governing objective: deliver a fully self-consistent canonical
+quark--gluon model containing as much physically known richness and every
+realistically supported contribution, without double counting, silent
+omission, or artificial enhancement. Earlier WP8/WP10 completion reports
+certify components and tests only.
+
+The detailed evidence and completion conditions are in
+`references/overall_quark_gluon_consistency_audit.md`. Execute in this order:
+
+1. **C1 contribution graph:** encode baseline/additive/alternative/member
+   relationships and test that every canonical TMD has one non-overlapping
+   composition path.
+2. **C2 common scheme/evolution — completed:** attach initial scale, subtraction scheme,
+   rapidity convention, matching order, transverse rank, and Q=5 route to
+   every canonical input; comparison-only inputs fail canonical export. The
+   typed ledger has no unresolved canonical route, and the Yang-2024 moment
+   now enters the validated common rank-one J1/CSS adapter rather than a
+   frozen or WW substitute.
+3. **C3 nucleon gluon T-odd — completed:** use the project's own spin-half
+   gluon light-front overlap and screened adjoint Wilson-line harmonics to
+   generate the complete nucleon T-odd input, with independent \(f/d\)
+   sectors and the common evolved T-even parent. The published spectator
+   construction is an independent limiting-case benchmark, not the
+   canonical parent. Evidence:
+   `src/deuteron_wigner/gluon_lfwf_todd.py`,
+   `outputs/parent_tmds/gluon_av18_canonical_lfwf_todd.csv`, and
+   `tests/test_canonical_gluon_lfwf_todd_production.py`.
+4. **C4 spin-1 tensor T-odd — completed for the forward AV18 impulse
+   boundary:** generate \(g_{1LT}\), \(g_{1TT}\) by applying rank-one LT and
+   rank-two TT spin-one irreducible Wilson-line phases to the retained
+   target-helicity \(SS/SD/DS/DD\) parent before projection. Link reversal,
+   pure-S, no-phase, wave closure, Hermiticity, positivity, and
+   forbidden-subspace residuals are tested. CD-Bonn/wave-function variation
+   belongs to C6 uncertainty propagation.
+5. **C5 quark model calibration — completed:** separate evidence-backed central inputs
+   from zero-centered or multi-model sensitivities for Boer--Mulders,
+   pretzelosity, WW breaking, and tensor phases.
+6. **C6 nuclear propagation — completed:** apply off-shell, shadowing, antishadowing,
+   pion, and cluster mechanisms only to supported operator channels and
+   close number, momentum, and tensor ledgers without double counting.
+7. **C7 observable validation — completed:** assemble process-specific hard/color
+   weights and validate compatible sets against PDFs, \(b_1\), SIDIS/DY,
+   lattice ratios/moments, and prospective gluon observables.
+
+Acceptance: a machine-readable canonical contribution graph; one common
+scheme-aware export; full parent-chain provenance for every row; no
+downstream completion amplitudes; separated statistical/model/numerical
+uncertainties; and observable-level residual tests. The previous WP8/WP10
+reports remain valid component tests but do not close WP11 by themselves.
+The governing evidence is
+`outputs/validation/wp11_final_acceptance.json`, generated by
+`scripts/build_wp11_final_audit.py`. It maps all C1--C7 gates to artifacts
+and tests. The acceptance run passes 433 tests. The two 18-page canonical
+atlases and their numerical band tables are under `output/pdf/` and
+`outputs/parent_tmds/canonical/`.
+
+## WP12 — Complete canonical parent enrichment before external constraints
+
+Status: **items 1--5 structurally inspected; physics-evidence parity gate
+open; item 6 is not authorized**
+
+The user requires items 1--5 below to apply to every TMD through shared
+quark, antiquark, and gluon parent correlators. A function-specific repair is
+not acceptance. Complete WP12 before starting the external-constraint/global
+comparison program (item 6).
+
+1. **All-TMD multi-kinematic production:** export every declared quark and
+   gluon projection over common \(x,k_T,Q\) grids, with flavor/link/color and
+   mechanism identity, named uncertainty axes, smooth central curves, and
+   parent/projection closure at every sampled point.
+2. **Wilson-line enrichment:** replace single effective phase coefficients
+   by an exponentiated channel decomposition with quark--spectator,
+   gluon--spectator, \(S\)-\(P\), \(S\)-\(D\), and \(P\)-\(P\) terms,
+   correlated parameter members, exact link reversal, and density-spectrum
+   preservation.
+3. **Shared nucleon Fock/OAM parent:** represent scalar-spectator,
+   axial-spectator, \(L_z=0,\pm1,\pm2\), and explicit quark--gluon sectors in
+   one amplitude ledger. Coupled TMDs must be projections of shared
+   interference bilinears rather than independently shaped functions.
+4. **Non-nucleonic transverse parents:** provide normalized,
+   flavor/color/spin-resolved and replaceable \(NN\pi\), \(\Delta\Delta\),
+   hidden-color six-quark, and SRC correlator interfaces. Unsupported
+   central probabilities remain zero; nonzero members are explicitly
+   sensitivity scenarios with momentum/Fock ledgers.
+5. **Operator-valued nuclear responses:** shadowing, antishadowing,
+   off-shell, mesonic, and SRC effects act through Hermiticity-preserving
+   maps on vector, axial, and transverse target-density blocks. Scalar
+   reweighting remains only the controlled identity-map limit.
+
+Acceptance requires module-level analytic limits, complete-basis tests,
+Hermiticity/positivity, link reversal, flavor/color traceability,
+Fock/momentum closure, no-double-counting graph checks, multi-kinematic
+finite-value and smoothness audits, regenerated canonical artifacts, and a
+machine-readable WP12 audit. Items 1--5 now pass that audit at the explicitly
+declared leading-twist forward \(Q=5\) GeV boundary on
+\(x_N=\{0.02,0.05,0.10,0.20,0.40\}\). Evidence is
+`outputs/validation/wp12_items1_5_acceptance.json`. The central quark and
+gluon ledgers contain every declared TMD; correlated Wilson, shared-Fock,
+non-nucleonic, and completely-positive nuclear-response families cover the
+same five \(x_N\) nodes. Complete rank-aware multi-\(Q\) evolution remains
+item 6. The requested scientific checkpoint now passes all ten gates in
+`outputs/validation/wp12_scientific_inspection.json`. Evolution must consume
+the resolved `wp12_resolved_quark_parent*` and
+`wp12_resolved_gluon_parent*` TMD/correlator ledgers, preserving all
+constituent and nuclear-correction labels. The
+`wp12_canonical_composed_*` total is only their exact closure projection,
+not the evolution state, and the legacy pre-composition totals remain
+excluded. The resolved parent replaces legacy coefficient shadowing,
+antishadowing, and off-shell blocks with ordered joint-spin CP maps, includes
+the sourced NNpi correlator exactly once, and leaves generic
+mesonic/SRC/cluster parents as zero-centered alternatives. Item 6 is
+not authorized until the following evidence-parity gate also closes.
+
+### WP12-E — Bring every TMD to an \(f_1\)-level evidence standard
+
+Status: **completed and accepted 2026-07-27**
+
+Here “\(f_1\)-level” means comparable discipline, not identical data
+availability: a flavor-resolved nucleon input, explicit neutron
+construction, stated charge-symmetry-breaking status, common scheme and
+scale, quantitative uncertainty, channel-appropriate nuclear propagation,
+and observable or controlled-limit validation.
+
+For every quark, antiquark, and gluon TMD:
+
+1. Record the proton central source and available fit/lattice replicas or
+   covariance in a machine-readable source/member ledger.
+2. Construct the neutron explicitly and provide either sourced CSB or a
+   quantitative bound showing the charge-symmetry limit is adequate.
+3. Propagate fit/lattice, transverse-profile, wave-function, nuclear, model,
+   and numerical uncertainties without presenting scenarios as confidence
+   intervals.
+4. Embed the input in the shared correlator and test symmetry, positivity,
+   rank behavior, link reversal, and projection closure.
+5. Apply every supported channel-appropriate binding, Fermi-motion, D-state,
+   off-shell, shadowing, mesonic, SRC, and non-nucleonic contribution without
+   double counting.
+6. Validate a suitable moment, ratio, lattice quantity, observable,
+   positivity pattern, or controlled limit. “Nonzero and smooth” is not
+   validation.
+
+Required work packages are unpolarized/tensor-even; helicity and worm gears;
+transversity/pretzelosity/Boer--Mulders; quark Sivers and other T-odd
+structures; tensor-polarized quarks; gluon T-even helicity/linear
+polarization; gluon f/d T-odd multiplets; and tensor-polarized gluons. A
+generated evidence matrix must contain no required “placeholder”,
+“universal ansatz”, “unquantified”, or “structural only” cell.
+
+WP12-E closes with all 36 rows passing in
+`outputs/validation/wp12_evidence_parity_matrix.json` and all six final gates
+passing in `outputs/validation/wp12e_acceptance.json`. Item 6 may now perform
+complete rank-aware multi-\(Q\) evolution while preserving the resolved
+mechanism ledger and correlated uncertainties.
+
+The complete pre-evolution construction history and component inventory are
+now frozen in `references/model_construction_note.tex`, with generated PDF
+`output/pdf/model_construction_note.pdf`. Item 6 must update this note if it
+changes the scheme contract, model interpretation, evidence status, or
+declared limitations.
+
+### External Norfolk-current correction
+
+Status: **partially resolved by Alex Gnech reply, 2026-07-27**
+
+PRC106 Table-II set A and Table IV now supersede the PRC99 constants and
+magnetic-moment table as the reference benchmark. The author-confirmed
+regulator prescription is \(I_k\to C_{R_L}I_k\). The nonminimal
+\(d_1^S\) contact term validates within the quoted Table-IV uncertainty for
+all four Norfolk models. The separated \(d_2^S\) OPE \(I_1/I_2\) pieces
+remain inconsistent with Table IV and stay excluded from production.
+Exact comparison values and a reply-ready table are in
+`references/gnech_norfolk_current_reply.md` and
+`handoff/correspondence/norfolk_current_followup_draft.md`.
+
+### C4 all-volume integration audit
+
+Status: **complete for the declared C4 scope, 2026-07-30**
+
+All six normative sources (Volumes 0--V) are preserved and indexed under
+`references/`. C4 satisfies the applicable Volume 0 architecture contract,
+the Volume I analytic benchmark contract, Volume II Benchmarks E--F, and the
+Volume III zero-rescattering boundary. The complete current suite passes
+613/613 tests; the C4 architecture validator records 25 requirements, 40
+deliberate mismatch injections, 16 provenance nodes, and eight immutable
+output hashes.
+
+“Integrated” does not mean that later-volume physics has been implemented
+inside C4. Volume IV consumption remains fail-closed until the nucleon layer
+exports complete parton--target helicity matrices, correlated microscopic
+proton/neutron members, the Volume III phase/soft budget, and covariance.
+Volume V consumption remains fail-closed until a closed regulated
+\(b_{\rm TMD}\)-space operator basis, LF-to-QCD matching/calibration,
+rank/Bessel/phase/mass metadata on every parent, and the shared microscopic
+ensemble are available. C4 contains no nuclear dynamics, QCD evolution,
+process factorization, or \(W+Y\) implementation.
+
+The machine-readable cross-volume status is
+`docs/next_level/c4_normative_source_integration.json`; its readable audit is
+`docs/next_level/c4_normative_integration_report.md`. The exact next coding
+job is C5: implement and validate the Volume III one-gluon Wilson-line/cut
+pilot without changing the immutable C4 regression oracle. Volume IV nuclear
+C4A--C4F follows only after the complete nucleon export, and Volume V
+matching/evolution follows after that matching boundary is closed.
+
+### C7/H0 — Microscopic light-front Hamiltonian spine
+
+Status: **implemented and accepted locally, 2026-07-30**
+
+Starting commit:
+`ce4b761d19b23bd5f7da1ddc026153685943e639`. The final local commit is the
+commit containing this entry; nothing is to be pushed as part of C7.
+
+Normative Volumes 0--VII are indexed. Volume VI has SHA-256
+`568979e0fa0015a70795a7c27c4c98b992848085c982a7ee4eca0374fec72570`;
+Volume VII has SHA-256
+`326fd902f648b760ee97add0bb30418b4f4843f1bc64c98afd752940d11ac6e1`.
+All pinned Volume 0--VII hashes pass.
+
+The validation-only API under `deuteron_wigner.microscopic.h0` now provides
+typed Hamiltonian resolution and scale objects, exact parton and many-body
+basis states, complete SU(3) singlet bases, signed permutation bases,
+center-of-mass/Lawson diagnostics, the free invariant-mass term, one reduced
+canonical `qqq<->qqqg` term with generated adjoint, readiness gates, and an
+isolated provenance graph. See `docs/next_level/c7_api.md`.
+
+At all three benchmark resolutions `(Nmax,b/GeV)=(8,0.40),(8,0.45),(10,0.50)`,
+the `qqq`, `qqqg`, and `qqqq-qbar` basis dimensions and free-matrix sizes are
+respectively 1 (`1x1`), 2 (`2x2`), and 3 (`3x3`). Complete color-singlet
+multiplicities are exactly 1, 2, and 3. Maximum residuals are: color generator
+`1.8667974275620837e-15`, color orthonormality
+`2.220446049250313e-16`, recoupling `2.220861168919456e-16`,
+antisymmetrizer idempotence `2.7755575615628914e-17`, CM and Lawson `0`,
+free Hermiticity and matrix-free/assembled agreement `0`, independent
+quadrature `3.4638958368304884e-13`, and reduced-vertex Hermiticity
+`2.220446049250313e-16`, all below the declared `2e-11` tolerance.
+
+Regression status: 834 tests pass; all nine legacy builders pass; all 36
+evidence rows and 162 atlas pages pass; C3/C4/C5/C6/C7 injection counts are
+24/40/48/60/48; the 216-route production registry, production provenance and
+composition, eight authoritative output hashes, and all pinned C5/C6
+manifests remain unchanged. C7 manifests regenerate deterministically and
+the architecture validator covers 74 stable requirements.
+
+This is an H0 architecture benchmark, not a physical nucleon result.
+Unresolved H1/H2 physics includes interacting valence dynamics,
+renormalization/counterterm flow, complete instantaneous and sector-changing
+kernels, converged tower diagonalization, currents, physical eigenstates,
+GTMD overlaps, microscopic Wilson lines, LF-to-QCD matching, and controlled
+continuum extrapolation. Production, nuclear, evolution, process, and
+inference roots cannot reach H0 objects.
+
+**Exact next package:** C8/H1 — implement the valence-sector Hamiltonian and
+renormalization-flow benchmark: controlled `qqq` interaction and
+induced-confinement trajectories, current operators, small-tower
+diagonalization, eigenstate tracking, mass/current flow, CM revalidation, and
+regression against the immutable C7 oracle, explicitly without claiming
+nonvalence completeness.
