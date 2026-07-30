@@ -70,7 +70,10 @@ def test_c4_provenance_and_route_manifests_are_isolated_and_honest():
 
 def test_normative_source_integration_is_hashed_and_scoped():
     report = load("c4_normative_source_integration.json")
-    assert [item["volume"] for item in report["sources"]] == ["0", "I", "II", "III"]
+    assert [item["volume"] for item in report["sources"]] == ["0", "I", "II", "III", "IV"]
     for source in report["sources"]:
         assert hashlib.sha256(Path(source["path"]).read_bytes()).hexdigest() == source["sha256"]
     assert "does not claim complete Volume II acceptance" in report["scope_boundary"]
+    interface = report["volume_iv_interface_assessment"]
+    assert interface["ready_for_volume_iv_nuclear_consumption"] is False
+    assert interface["nuclear_dynamics_implemented_in_c4"] is False

@@ -95,11 +95,10 @@ Volume III. It must remain disconnected from accepted production.
 
 ## Post-completion source availability
 
-On 2026-07-30 the supplied TeX sources for Volumes 0, I, II, III, and V were
+On 2026-07-30 the supplied TeX sources for Volumes 0, I, II, III, IV, and V were
 preserved under `references/` and indexed in
 `references/formalism_volume_index.md`. This does not alter the historical C4
-baseline: those sources were absent during C4 implementation. Volume IV was
-not present in Downloads and remains explicitly unresolved.
+baseline: those sources were absent during C4 implementation.
 The subsequent source-integration audit and four resulting corrections are
 documented in `c4_normative_integration_report.md`; its post-integration test
 count is recorded in the regenerated regression manifest.

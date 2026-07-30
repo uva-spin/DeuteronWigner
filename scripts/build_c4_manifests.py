@@ -425,6 +425,7 @@ def main() -> None:
                     ("I", "references/volume_i_regulated_light_front_foundations.tex"),
                     ("II", "references/volume_ii_common_nucleon_gtmd_overlaps.tex"),
                     ("III", "references/volume_iii_dynamical_wilson_lines.tex"),
+                    ("IV", "references/volume_iv_matched_spin1_nuclear_dynamics.tex"),
                 )
             ],
             "additional_source": {
@@ -433,7 +434,7 @@ def main() -> None:
                 "sha256": sha(ROOT / "references/volume_v_matching_evolution_factorization.tex"),
                 "c4_role": "interface awareness only",
             },
-            "missing": ["Volume IV TeX"],
+            "missing": [],
             "verified_contracts": [
                 "explicit positive-x antiquark active set and exact empty-set zero",
                 "explicit-gluon active set and diagonal adjoint core",
@@ -451,7 +452,28 @@ def main() -> None:
                 "recorded route-specific UV, rapidity-soft, and link-shortening requirements",
                 "implemented executable trace, antisymmetric, and symmetric-traceless gluon projectors",
                 "audited C4 provenance edges against the Volume 0 two-complex contract",
+                "distinguished repository C4 from Volume IV nuclear packages C4A-C4F",
             ],
+            "volume_iv_interface_assessment": {
+                "repository_c4_scope": "Volume II Benchmarks E-F",
+                "volume_iv_c4a_c4f_scope": "future matched spin-1 nuclear pilot",
+                "ready_for_volume_iv_nuclear_consumption": False,
+                "available": [
+                    "positive-x species and flavor identity",
+                    "zero-skewness incoming/outgoing momentum fibers",
+                    "ordered gluon-link and diagonal color status",
+                    "regulated matching-status and outstanding-matching metadata",
+                    "validation member and provenance identity",
+                ],
+                "required_before_nuclear_consumption": [
+                    "complete nucleon parton-target helicity matrices",
+                    "proton and neutron microscopic member pair",
+                    "Wilson phase and soft-overlap budget from Volume III",
+                    "shared microscopic covariance",
+                    "complete Volume II projector and convergence gates",
+                ],
+                "nuclear_dynamics_implemented_in_c4": False,
+            },
             "scope_boundary": (
                 "C4 implements Volume II Benchmarks E-F and regulated route "
                 "closure only; it does not claim complete Volume II acceptance."

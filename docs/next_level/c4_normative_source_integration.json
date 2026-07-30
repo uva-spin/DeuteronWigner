@@ -11,11 +11,10 @@
     "recorded ordered gluon-link pair and DIAGONAL_ADJOINT status",
     "recorded route-specific UV, rapidity-soft, and link-shortening requirements",
     "implemented executable trace, antisymmetric, and symmetric-traceless gluon projectors",
-    "audited C4 provenance edges against the Volume 0 two-complex contract"
+    "audited C4 provenance edges against the Volume 0 two-complex contract",
+    "distinguished repository C4 from Volume IV nuclear packages C4A-C4F"
   ],
-  "missing": [
-    "Volume IV TeX"
-  ],
+  "missing": [],
   "requirement_id": "C4.DOC.NORMATIVE_INTEGRATION",
   "schema_version": "1.0.0",
   "scope_boundary": "C4 implements Volume II Benchmarks E-F and regulated route closure only; it does not claim complete Volume II acceptance.",
@@ -43,6 +42,12 @@
       "sha256": "7abe76b5866fe6349b98dbe435303ee72d55ce539faf535d18d03691c8ddf5b7",
       "status": "PRESENT_READ",
       "volume": "III"
+    },
+    {
+      "path": "references/volume_iv_matched_spin1_nuclear_dynamics.tex",
+      "sha256": "eec34c5520b7a23e89411d6688ede2a7f46784ca41cbe8b088e2cecbc4b81734",
+      "status": "PRESENT_READ",
+      "volume": "IV"
     }
   ],
   "verified_contracts": [
@@ -55,5 +60,25 @@
     "zero-rescattering link-odd projections remain exact zero",
     "Feshbach induced operator, norm kernel, and replacement exclusion",
     "distinct Amp/Match/Red layers and fail-closed adapters"
-  ]
+  ],
+  "volume_iv_interface_assessment": {
+    "available": [
+      "positive-x species and flavor identity",
+      "zero-skewness incoming/outgoing momentum fibers",
+      "ordered gluon-link and diagonal color status",
+      "regulated matching-status and outstanding-matching metadata",
+      "validation member and provenance identity"
+    ],
+    "nuclear_dynamics_implemented_in_c4": false,
+    "ready_for_volume_iv_nuclear_consumption": false,
+    "repository_c4_scope": "Volume II Benchmarks E-F",
+    "required_before_nuclear_consumption": [
+      "complete nucleon parton-target helicity matrices",
+      "proton and neutron microscopic member pair",
+      "Wilson phase and soft-overlap budget from Volume III",
+      "shared microscopic covariance",
+      "complete Volume II projector and convergence gates"
+    ],
+    "volume_iv_c4a_c4f_scope": "future matched spin-1 nuclear pilot"
+  }
 }

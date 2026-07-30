@@ -1,7 +1,7 @@
 # C4 normative-source integration audit
 
 After C4’s initial completion, the authoritative TeX sources for Volumes 0,
-I, II, and III became available. They were read and mapped back onto every C4
+I, II, III, and IV became available. They were read and mapped back onto every C4
 object, benchmark, route, and negative test. Volume V was inspected only for
 interface awareness because matching and evolution are outside C4. Volume 0
 and Volume IV TeX remain unavailable.
@@ -48,3 +48,23 @@ Volume II predictive-microscopic acceptance list, which additionally requires
 a solved and converged microscopic Hamiltonian, complete twist-two GTMD
 projectors, Wigner/OAM/spin-orbit routes, physical matching, and predictive
 observables.
+
+## Volume IV interface assessment
+
+Volume IV uses “C4A--C4F” for a future nuclear implementation sequence. That
+sequence is distinct from this repository work package C4, whose declared
+scope is Volume II Benchmarks E--F. Repository C4 implements no deuteron
+state, nuclear recoil, nuclear matching, or spin-1 projection.
+
+C4 preserves useful input identities—positive-x species/flavor, incoming and
+outgoing nucleon fibers, ordered gluon links, diagonal color status, matching
+requirements, validation member, and provenance—but it is not yet an
+admissible Volume IV nucleon input. Before nuclear consumption, the nucleon
+side still requires complete parton-target helicity matrices, correlated
+proton/neutron microscopic members, the Volume III Wilson phase and
+soft-overlap budget, microscopic covariance, and the remaining complete
+Volume II projector/convergence gates.
+
+This is a sequencing result, not a C4 defect: C4 is complete at its declared
+analytic Benchmark E--F scope, while the broader nucleon export and Volume IV
+nuclear packages remain later work.
