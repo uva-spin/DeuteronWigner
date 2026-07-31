@@ -1703,3 +1703,9 @@ six-quark/hidden-color sectors as exclusive typed branches, calibrate their
 mixing against independent nuclear holdouts, derive their Hamiltonian-
 consistent operator/current attachments, and prove count-once composition
 with NN and NNPI before any downstream matching.
+
+Volume XIV is preserved at
+`references/volume_xiv_continuum_nnpi_exchange_currents.tex` with SHA-256
+`cb30d603948c6b14cbeaa0fbb332396e86c62c6ab76eeb116161e7eaa3c58d0d`.
+It is the package-specific normative formalism for C17/N2 and the inherited
+continuum/current boundary for C18/N3.

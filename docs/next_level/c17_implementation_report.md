@@ -1,5 +1,10 @@
 # C17/N2 implementation report
 
+Volume XIV,
+`references/volume_xiv_continuum_nnpi_exchange_currents.tex`, is the
+package-specific normative formalism for the N2 continuum, exchange-current,
+separator-flow, coherent/CP, tagged, and convergence interfaces.
+
 C17 replaces the finite-only N1 transition oracle with a continuum-calibrated
 `NNPI` validation system while preserving every C16 and production artifact.
 The complete `pn pi0`, `pp pi-`, and `nn pi+` charge basis is retained with

@@ -21,6 +21,7 @@ byte-for-byte from the supplied sources.
 | XI | `volume_xi_microscopic_nonzero_transfer_gtmds.tex` | `d66450bb7f21bf0464b926a3480594da3be1ed009948a8031f4b4cb2756b915d` | present |
 | XII | `volume_xii_microscopic_wilson_second_order.tex` | `204d3dc79084a26b86b49cf8042d22ae32cffb15b0e0deec6cf2dcb043a76c83` | present |
 | XIII | `volume_xiii_nnpi_pion_matching_coherent_nuclear.tex` | `59767d330b55cfff552b34979692cdb43720c978c75e07d5f4ca896f940e8fb9` | present |
+| XIV | `volume_xiv_continuum_nnpi_exchange_currents.tex` | `cb30d603948c6b14cbeaa0fbb332396e86c62c6ab76eeb116161e7eaa3c58d0d` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -40,3 +41,7 @@ convergence boundary consumed by C15 and C16.
 Volume XIII defines the spin-resolved NN-pion sector, pion matching,
 Hamiltonian-consistent two-body-current, and helicity-resolved coherent
 nuclear-amplitude contract implemented by C16/N1.
+Volume XIV defines the continuum-calibrated NN-pion channel, finite-volume
+spectral map, pole/residue, Hamiltonian-generated declared-order exchange
+currents, separator flow, coherent/CP, tagged, and convergence contracts
+implemented and validated by C17/N2.
