@@ -1535,3 +1535,41 @@ common GTMD parent: physical spectral support, link-odd quark/antiquark/gluon
 helicity matrices, shared Sivers/Boer-Mulders projections, active-gluon f/d
 color projections, and Wilson/Fock-order compatibility. Matching and common
 evolution remain later work.
+
+### C12/H5 — First-order microscopic Wilson dynamics on H4
+
+Status: **implemented and accepted locally, 2026-07-31**
+
+Starting commit: `15032f5e3f2035aa93a42b63ee9c9139996e5500`. The final local
+commit is the commit containing this entry; nothing is pushed.
+
+C12 acts exclusively on the complete C11/H4 4x4 helicity matrices at xi=0.
+The C5 path object derives the future/past pole sign; a declared continuum
+spectral rule creates the distributional cut and remains exactly zero below
+threshold. A 16--256-level discretized sequence converges to the analytic
+cut with final residual `5.51201e-6`. Numerical epsilon is not physical.
+
+Quark and direct positive-x antiquark link-odd matrices are constructed
+before distinct Sivers and Boer-Mulders projections. All coupling, cut, OAM,
+and link-average zero limits close. The active-gluon route retains four
+ordered pairs, independent f/d channels, trace/helicity/linear sectors, and
+both color outer multiplicities. SU(3) norms and orthogonality close exactly.
+
+One half-soft subtraction closes the rapidity derivative; missing and
+duplicate subtractions have equal-and-opposite signed residuals. Exact and
+full-bond TTN Wilson results agree, while reduced bonds visibly lose the
+OAM-sensitive amplitude. Sixteen convergence axes remain separate.
+
+Valence quark attachments have explicit qqqg support. Antiquark and active-
+gluon routes are induced operators with nonzero remainders because explicit
+qqqq-qbar-g and qqqgg sectors are absent. C5/C6 remain immutable pilots and
+replacement is confined to `C12_H5_VALIDATION_ONLY`. Production, nuclear,
+matching/evolution, process, and inference gates remain closed.
+
+C12 contains 294 requirements and 124 ordered negative injections. The
+216-route registry, production provenance/composition, and eight
+authoritative artifacts remain unchanged.
+
+**Exact next package:** C13/H6 — add explicit qqqgg and qqqq-qbar-g sectors,
+replace the induced H5 gluon/antiquark channels, and validate second-order
+Dyson/Magnus Wilson convergence before beginning nuclear composition.
