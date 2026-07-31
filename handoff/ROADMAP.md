@@ -1573,3 +1573,31 @@ authoritative artifacts remain unchanged.
 **Exact next package:** C13/H6 — add explicit qqqgg and qqqq-qbar-g sectors,
 replace the induced H5 gluon/antiquark channels, and validate second-order
 Dyson/Magnus Wilson convergence before beginning nuclear composition.
+
+### C13/H6 — Explicit higher-Fock support and order-two Wilson benchmark
+
+Status: **implemented and accepted locally, 2026-07-31**
+
+Starting commit: `5c368cae780e76fc029a6db765f04167f1e09ac0`. The final local
+commit is the commit containing this entry; nothing is pushed.
+
+The seven-sector tower has dimensions 72, 115, and 158. Common-generator
+color certificates retain six QQQGG singlets and eight singlets for each
+QQQQ-QBAR-G sector. Fermion antisymmetry and combined two-gluon bosonic
+exchange close. The coupled Hamiltonian, Krylov route, and full-bond TTN
+close at three independently refitted resolutions; one null direction and
+all holdouts remain visible.
+
+First-order quark, antiquark, and gluon Wilson support is now explicit.
+Second-order quark support is explicit and strict Dyson/Magnus polynomials
+agree through order two. Spectral, cut, soft, path, and reduced gauge
+benchmarks close. Low bond loses 47% of a Wilson observable.
+
+Second-order antiquark and active-gluon channels remain unavailable because
+QQQQ-QBAR-GG and QQQGGG sectors are absent. C13 adds 336 requirements and
+148 injections. The 216 production routes and eight artifacts remain
+unchanged; physical, nuclear, matching/evolution, process, inference, and
+production gates remain closed.
+
+**Exact next package:** C14/H7 — add QQQGGG and QQQQ-QBAR-GG sectors to close
+second-order antiquark/gluon Wilson support before nuclear composition.
