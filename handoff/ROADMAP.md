@@ -1601,3 +1601,33 @@ production gates remain closed.
 
 **Exact next package:** C14/H7 — add QQQGGG and QQQQ-QBAR-GG sectors to close
 second-order antiquark/gluon Wilson support before nuclear composition.
+## C14/H7 — explicit three-gluon and sea–two-gluon sectors
+
+The final local commit is the commit containing this entry; nothing is
+pushed.
+
+C14 extends the immutable C13 validation root to ten sectors by adding
+`QQQGGG`, `QQQUUBARGG`, and `QQQDDBARGG`. The validated tower dimensions are
+140, 227, and 314. Color/permutation certificates retain 22 three-gluon
+singlets (4 symmetric, 4 antisymmetric, 7 mixed copies) and 28 singlets in
+each sea--two-gluon sector (14 symmetric plus 14 antisymmetric).
+
+Wilson orders one and two are explicit for quarks, antiquarks, and gluons.
+Order three is unavailable and fails closed. Fundamental,
+anti-fundamental, adjoint, and ordered-two-link strict Dyson/Magnus,
+spectral-cut, soft-overlap, finite gauge, explicit/induced, tensor-network,
+and multi-axis convergence benchmarks are recorded in the C14 manifests.
+The package contains 390 requirements and 184 detected negative injections.
+
+The H7 result remains validation-only. UV matching, a physical TMD scheme,
+continuum soft completion, Collins--Soper evolution, process factors,
+nuclear composition, inference, and production are unresolved. The
+216-route production registry, production provenance/composition, all eight
+authoritative artifacts, and C3--C13 parents/manifests remain immutable.
+
+**Exact next package:** C15/N0 -- matched spin-1 nuclear light-front state
+and microscopic deuteron GTMD composition, beginning with a normalized NN
+spin-1 state, Hamiltonian-consistent one- and two-body operators, complete
+nucleon helicity-matrix exports, correlated proton/neutron microscopic
+members, and strict separation between partonic Wilson rescattering and
+coherent nuclear propagation.
