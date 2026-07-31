@@ -1291,3 +1291,83 @@ induced-confinement trajectories, current operators, small-tower
 diagonalization, eigenstate tracking, mass/current flow, CM revalidation, and
 regression against the immutable C7 oracle, explicitly without claiming
 nonvalence completeness.
+
+### C8/H1 — Valence Hamiltonian, flow, current, tracking, and TTN
+
+Status: **implemented and accepted locally, 2026-07-30**
+
+Starting commit:
+`f3256cdacf746e8c9e0d3beaad68bc5d6b25f804`. The final local commit is the
+commit containing this entry. Nothing is pushed.
+
+C8 extends the C7 type system under
+`deuteron_wigner.microscopic.h1`; it does not create a parallel basis or
+modify any C7 object. The new API comprises immutable
+`H1AssumptionBundle`/`H1PredictionPlan`, the 4/7/10-dimensional
+`H1BasisTower`, typed `ValenceHamiltonianTerm` and `ValenceHamiltonian`,
+`H1TruncationDiscrepancy`, `RenormalizationCondition` and
+`RenormalizationTrajectory`, exact and matrix-free Krylov solvers,
+Hamiltonian-owned `ValenceVectorCurrent`, `ValenceStateTracker`,
+symmetry-indexed TTN objects and Rayleigh--Ritz optimizer, and versioned
+`ValenceMicroscopicStateBundle`.
+
+Three deterministic branches execute:
+
+- PLAN-A
+  (`C8:H1:PLAN:d21966f5baf0fbb07821`): induced confinement plus effective
+  color-spin;
+- PLAN-B
+  (`C8:H1:PLAN:fa8821a67fe9aa7c6208`): zero confinement plus effective
+  color-spin;
+- PLAN-C
+  (`C8:H1:PLAN:d9938ed1163bbc2799e2`): induced confinement without
+  color-spin.
+
+All share the \(M^2=0.88^2=0.7744\ {\rm GeV}^2\) validation mass and exact
+vector-charge conditions. Across the three resolutions, PLAN-A has
+`kappa4 = 0.42, 0.3442622951, 0.2916666667`,
+`color_spin = 0.075, 0.0681818182, 0.0625`, and
+`mass_ct = 0.1101836635, 0.1200328556, 0.1267184815`. PLAN-B sets `kappa4`
+exactly zero and has mass counterterms
+`0.1857625459, 0.1820123652, 0.1788892213`. PLAN-C turns color-spin off and
+has mass counterterms
+`0.1597186545, 0.1666521604, 0.1715063649`.
+The withheld proton current at \(Q^2=0.3\) lies near 0.94--0.95 across the
+branches; the correlated neutron closes \(F_1^n(0)=0\).
+
+Maximum numerical diagnostics are: mass-condition residual
+`1.1102230246251565e-16`, charge residual `4.440892098500626e-16`,
+exact/Krylov current residual `1.2212453270876722e-15`, current Hermiticity
+`0`, full-bond TTN energy residual `0`, full-bond overlap defect
+`4.440892098500626e-16`, tensor-operator application `0`, and recoupling
+unitarity `1.0076776735463298e-15`. The reported (unfitted) maximum
+current-component/rotational defect is `0.0034102504180774096`.
+The avoided-crossing H-J benchmark shows eigenvalue-order tracking ending on
+the wrong branch while overlap/fingerprint tracking changes indices
+`0,0,1,1` and reaches the intended state.
+
+Regression status: 852 tests, nine legacy builders, 36 evidence rows, and
+162 atlas pages pass. C3/C4/C5/C6/C7/C8 injection counts are
+24/40/48/60/48/56. The production registry remains 216 routes; production
+provenance/composition, eight authoritative artifacts, the C7 oracle, and all
+pinned C5/C6 manifests are unchanged. C8 covers 104 stable requirements; all
+JSON regenerates deterministically and validates.
+
+The requested revised algebraic/geometric note
+`references/algebraic_geometric_next_level_model_note_revised.tex` was absent.
+This is recorded in `c8_preimplementation_baseline.json`; Volume 0 and the
+complete indexed Volumes I--VII supplied the available normative contracts.
+
+C8 remains `VALENCE_ONLY` and `C8_H1_VALIDATION_ONLY`. It does not establish
+a physical nucleon, continuum/scaling trajectory, sea or gluon content,
+GTMD overlap, Wilson readiness, Ward closure, nuclear matching, LF-to-QCD
+matching, evolution, process factorization, inference, or TMD prediction.
+The induced confinement is a resolution-refitted infrared acceleration
+branch, not a universal QCD potential.
+
+**Exact next package:** C9/H2 — add the dynamical `qqqg` sector,
+sector-dependent renormalization, instantaneous partners, regulator gauging
+and Ward closure, gluon/OAM exports, larger-tower convergence, and the
+controlled microscopic reconnection boundary to the C5/C6 Wilson engine.
+The H1 induced color-spin image and explicit `qqqg` dynamics must remain
+alternative until an overlap subtraction/matching map exists.
