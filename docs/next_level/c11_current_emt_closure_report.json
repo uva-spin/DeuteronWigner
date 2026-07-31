@@ -1,0 +1,93 @@
+{
+  "gluon_convention": "H_G_EQUALS_XG",
+  "maximum_residual": 0.0,
+  "pcac_double_counted": false,
+  "rows": [
+    {
+      "axial_direct": 0.10879567409504542,
+      "axial_parent": 0.10879567409504542,
+      "delta_t": [
+        0.12,
+        0.0
+      ],
+      "emt_direct": 0.2187832412730893,
+      "emt_parent": 0.2187832412730893,
+      "holdout": false,
+      "target": "PROTON",
+      "vector_direct": 0.470523242217765,
+      "vector_parent": 0.470523242217765
+    },
+    {
+      "axial_direct": 0.10435688900686238,
+      "axial_parent": 0.10435688900686238,
+      "delta_t": [
+        0.21,
+        -0.08
+      ],
+      "emt_direct": 0.20981454264050003,
+      "emt_parent": 0.20981454264050003,
+      "holdout": true,
+      "target": "PROTON",
+      "vector_direct": 0.4512331904448539,
+      "vector_parent": 0.4512331904448539
+    },
+    {
+      "axial_direct": 0.10363946947029204,
+      "axial_parent": 0.10363946947029204,
+      "delta_t": [
+        0.31,
+        0.06
+      ],
+      "emt_direct": 0.20836498179100316,
+      "emt_parent": 0.20836498179100316,
+      "holdout": true,
+      "target": "PROTON",
+      "vector_direct": 0.4481154469894961,
+      "vector_parent": 0.4481154469894961
+    },
+    {
+      "axial_direct": -0.09451450593242855,
+      "axial_parent": -0.09451450593242855,
+      "delta_t": [
+        0.12,
+        0.0
+      ],
+      "emt_direct": 0.1955576169853726,
+      "emt_parent": 0.1955576169853726,
+      "holdout": false,
+      "target": "NEUTRON",
+      "vector_direct": 0.41286098254313536,
+      "vector_parent": 0.41286098254313536
+    },
+    {
+      "axial_direct": -0.09061850942929861,
+      "axial_parent": -0.09061850942929861,
+      "delta_t": [
+        0.21,
+        -0.08
+      ],
+      "emt_direct": 0.18753856742738734,
+      "emt_parent": 0.18753856742738734,
+      "holdout": true,
+      "target": "NEUTRON",
+      "vector_direct": 0.39592591900914836,
+      "vector_parent": 0.39592591900914836
+    },
+    {
+      "axial_direct": -0.08998882466099085,
+      "axial_parent": -0.08998882466099085,
+      "delta_t": [
+        0.31,
+        0.06
+      ],
+      "emt_direct": 0.18624249346794092,
+      "emt_parent": 0.18624249346794092,
+      "holdout": true,
+      "target": "NEUTRON",
+      "vector_direct": 0.39318880061364203,
+      "vector_parent": 0.39318880061364203
+    }
+  ],
+  "schema_version": "1.0.0",
+  "tensor_status": "LOCAL_TENSOR_OPERATOR_UNAVAILABLE"
+}

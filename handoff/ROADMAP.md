@@ -1488,3 +1488,45 @@ evolution/process prediction, or inference model.
 antiquark, and gluon GTMD helicity matrices from the common H3 eigenstate;
 complete T-even projector closure; local-current/OAM consistency; and
 microscopic replacement of the C3/C4 analytic common-parent pilots.
+
+### C11/H4 — Microscopic nonzero-transfer common GTMD parent
+
+Status: **implemented and accepted locally, 2026-07-31**
+
+Starting commit: `68fc5bc34ad0ab7c8940ac8a469da52d341d980e`. The final local
+commit is the commit containing this entry; nothing is pushed.
+
+H4 consumes both immutable H3 plans and their correlated proton/neutron
+members. One typed overlap engine now constructs full 4x4 joint
+target-parton helicity matrices for `u`, `d`, `ubar`, `dbar`, and gluons at
+xi=0 and Wilson order zero. All species reuse the authoritative C3 symmetric
+recoil. The quark, antiquark, and generated gluon Gram bases have generic
+rank 16; the explicit degenerate basis has rank 8. Maximum matrix
+reconstruction residual is `2.7755575615628914e-17` and transfer-reversal
+Hermiticity closes to numerical zero.
+
+Direct-forward and sequential regulated reductions share one parent ID.
+Vector, axial, and EMT routes close algebraically, with nonzero-transfer
+holdouts retained. The local tensor operator is explicitly unavailable.
+Wigner, transfer-derivative, and finite-basis canonical-OAM routes close;
+the maximum finite-difference residual is below `2.4e-9`. Forward PSD and
+off-forward Cauchy bounds pass without clipping. Twelve convergence axes are
+reported independently. PLAN-A and PLAN-B remain mutually exclusive.
+
+C3/C4 analytic parents remain immutable benchmarks. Microscopic replacement
+exists only inside `C11_H4_VALIDATION_ONLY`; production remains unreachable.
+The 216-route production registry, provenance/composition, eight
+authoritative artifacts, and prior manifests remain unchanged. C11 contains
+104 ordered negative injections and 285 stable requirements.
+
+Issued readiness states are microscopic common-parent, quark/antiquark/
+gluon projector, T-even forward, current/EMT, Wigner/OAM, scoped analytic
+replacement, and nuclear-helicity-interface validation. Physical GTMD/TMD,
+Wilson/T-odd, nuclear matching, LF-to-QCD matching, evolution, process,
+inference, and production promotion remain closed.
+
+**Exact next package:** C12/H5 — microscopic Wilson-line dynamics on the H4
+common GTMD parent: physical spectral support, link-odd quark/antiquark/gluon
+helicity matrices, shared Sivers/Boer-Mulders projections, active-gluon f/d
+color projections, and Wilson/Fock-order compatibility. Matching and common
+evolution remain later work.

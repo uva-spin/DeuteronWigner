@@ -1,0 +1,71 @@
+{
+  "basis": "ALGORITHMIC_PAULI_TENSOR_GRAM_V1",
+  "degenerate_rank": 8,
+  "generic_rank": 16,
+  "maximum_reconstruction_residual": 2.7755575615628914e-17,
+  "pseudoinverse_used": false,
+  "rows": [
+    {
+      "rank": 16,
+      "residual": 2.7755575615628914e-17,
+      "species": "u",
+      "status": "GENERIC_COMPLETE",
+      "target": "PROTON"
+    },
+    {
+      "rank": 16,
+      "residual": 3.980661232645204e-18,
+      "species": "d",
+      "status": "GENERIC_COMPLETE",
+      "target": "PROTON"
+    },
+    {
+      "rank": 16,
+      "residual": 8.673617379884035e-19,
+      "species": "ubar",
+      "status": "GENERIC_COMPLETE",
+      "target": "PROTON"
+    },
+    {
+      "rank": 16,
+      "residual": 6.527761501258139e-19,
+      "species": "dbar",
+      "status": "GENERIC_COMPLETE",
+      "target": "PROTON"
+    },
+    {
+      "rank": 16,
+      "residual": 1.0589719593475845e-17,
+      "species": "u",
+      "status": "GENERIC_COMPLETE",
+      "target": "NEUTRON"
+    },
+    {
+      "rank": 16,
+      "residual": 2.7755575615628914e-17,
+      "species": "d",
+      "status": "GENERIC_COMPLETE",
+      "target": "NEUTRON"
+    },
+    {
+      "rank": 16,
+      "residual": 9.263427422397553e-19,
+      "species": "ubar",
+      "status": "GENERIC_COMPLETE",
+      "target": "NEUTRON"
+    },
+    {
+      "rank": 16,
+      "residual": 4.4702800766818725e-19,
+      "species": "dbar",
+      "status": "GENERIC_COMPLETE",
+      "target": "NEUTRON"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sectors": [
+    "F1_1_TO_4",
+    "G1_1_TO_4",
+    "H1_1_TO_8"
+  ]
+}
