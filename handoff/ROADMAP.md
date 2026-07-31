@@ -1631,3 +1631,23 @@ spin-1 state, Hamiltonian-consistent one- and two-body operators, complete
 nucleon helicity-matrix exports, correlated proton/neutron microscopic
 members, and strict separation between partonic Wilson rescattering and
 coherent nuclear propagation.
+## C15/N0 — matched NN spin-1 nuclear validation root
+
+The final local commit is the commit containing this entry; nothing is
+pushed. C15 composes correlated H7 proton/neutron identities with exclusive
+AV18, Norfolk, H7-dynamics-variation, and analytic NN plans. It validates one
+spectator-preserving recoil authority, normalized amplitude-level S/D states,
+6x6 spectral and partonic parents, complete spin-1 projectors, common-parent
+reductions, b1, current/angular, tagged, CP, off-shell, TTN, and provenance
+closures. Wilson orders 0--2 are retained for quarks, antiquarks, and gluons.
+
+N0 contains 462 covered requirements and 244 detected negative injections.
+It is validation-only and disconnected from the 216 production routes.
+NNPI, DeltaDelta, compact/hidden-color, coherent shadowing, nuclear Glauber,
+full two-body currents, matching, evolution, processes, and inference remain
+unavailable.
+
+**Exact next package:** C16/N1 -- spin-resolved NNPI sector, pion-active and
+transition operators, internal-versus-exchange pion subtraction,
+Hamiltonian-consistent two-body currents, and a coherent helicity-resolved
+small-x pilot.

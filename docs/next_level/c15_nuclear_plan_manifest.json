@@ -1,0 +1,68 @@
+{
+  "members": [
+    {
+      "member_id": "C15:N0:MEMBER:d06937b94b896c932b98",
+      "neutron_h7_member": "H7:N:d06937b94b896c932b98",
+      "plan_id": "C15:N0:PLAN:3b0ad5c5eb4edb07764c",
+      "proton_h7_member": "H7:P:d06937b94b896c932b98",
+      "resolution_id": "N0:R1",
+      "wave_source_hash": "9a937c67aaed00b11399e05c72c781bef6c61cb1878c785efafa7fe4276d2f9a",
+      "wilson_order": 2
+    },
+    {
+      "member_id": "C15:N0:MEMBER:a3942e4d2d61b1f5ffc2",
+      "neutron_h7_member": "H7:N:a3942e4d2d61b1f5ffc2",
+      "plan_id": "C15:N0:PLAN:09f3eb01844fae6b3e82",
+      "proton_h7_member": "H7:P:a3942e4d2d61b1f5ffc2",
+      "resolution_id": "N0:R1",
+      "wave_source_hash": "f5752c4fcb9dd93ac37c642cfe5748740703809e72c7dafa0d10505a145458fa",
+      "wilson_order": 2
+    },
+    {
+      "member_id": "C15:N0:MEMBER:b3271e13ea6f8c65c0f8",
+      "neutron_h7_member": "H7:N:b3271e13ea6f8c65c0f8",
+      "plan_id": "C15:N0:PLAN:bebd12ee7c3b58fe46ab",
+      "proton_h7_member": "H7:P:b3271e13ea6f8c65c0f8",
+      "resolution_id": "N0:R1",
+      "wave_source_hash": "9a937c67aaed00b11399e05c72c781bef6c61cb1878c785efafa7fe4276d2f9a",
+      "wilson_order": 2
+    },
+    {
+      "member_id": "C15:N0:MEMBER:cc69db4c0e0f87deb774",
+      "neutron_h7_member": "H7:N:cc69db4c0e0f87deb774",
+      "plan_id": "C15:N0:PLAN:fc7d65d17f6e14f7f50c",
+      "proton_h7_member": "H7:P:cc69db4c0e0f87deb774",
+      "resolution_id": "N0:R1",
+      "wave_source_hash": "104f8a6694dad240372331afba4812d163f76c6a0a9838a9ea3057dba90a205f",
+      "wilson_order": 2
+    }
+  ],
+  "mutually_exclusive": true,
+  "plans": [
+    {
+      "analytic": false,
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "plan_id": "C15:N0:PLAN:3b0ad5c5eb4edb07764c",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    },
+    {
+      "analytic": false,
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "plan_id": "C15:N0:PLAN:09f3eb01844fae6b3e82",
+      "wave_source": "NORFOLK:data/raw/norfolk/fdeut.nvia"
+    },
+    {
+      "analytic": false,
+      "h7_plan_id": "C14:H7:PLAN:01741c51ff49b3844630",
+      "plan_id": "C15:N0:PLAN:bebd12ee7c3b58fe46ab",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    },
+    {
+      "analytic": true,
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "plan_id": "C15:N0:PLAN:fc7d65d17f6e14f7f50c",
+      "wave_source": "WEAK_BINDING_SD_ORACLE"
+    }
+  ],
+  "schema_version": "1.0.0"
+}
