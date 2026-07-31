@@ -1,0 +1,1813 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XII: Microscopic Wilson-Line Dynamics, Spectral Cuts, Link-Odd Helicity Matrices, and Second-Order Non-Abelian Convergence},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XII}
+\fancyhead[R]{\small\color{darkgray}Microscopic Wilson dynamics through order two}
+\fancyfoot[L]{\small\color{darkgray}31 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\lT}{\bm{\ell}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\BLFQ}{\ensuremath{\mathrm{BLFQ}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\WTI}{\ensuremath{\mathrm{WTI}}}
+\newcommand{\BRST}{\ensuremath{\mathrm{BRST}}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\Disc}{\operatorname{Disc}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+\newcommand{\Hfour}{\Hil_{qqqg}}
+\newcommand{\Hsixg}{\Hil_{qqqgg}}
+\newcommand{\Hseven}{\Hil_{qqqggg}}
+\newcommand{\Hseaone}{\Hil_{qqqq\bar q g}}
+\newcommand{\Hseatwo}{\Hil_{qqqq\bar q gg}}
+\newcommand{\StateBundle}{\texttt{H7MicroscopicStateBundle}}
+\newcommand{\ParentBundle}{\texttt{MicroscopicGTMDParentBundle}}
+\newcommand{\WilsonOperator}{\texttt{OrderResolvedWilsonOperator}}
+\newcommand{\SpectralRule}{\texttt{SpectralSupportRule}}
+\newcommand{\CutLedger}{\texttt{MicroscopicCutLedger}}
+\newcommand{\SoftLedger}{\texttt{SoftRapidityLedger}}
+\newcommand{\WilsonManifest}{\texttt{WilsonFockSupportManifest}}
+\newcommand{\ConvergenceManifest}{\texttt{WilsonConvergenceManifest}}
+\newcommand{\ProvComplex}{\texttt{Provenance2Complex}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{PredictionPlan}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XII: Microscopic Wilson-Line Dynamics, Spectral Cuts,\\[2mm]
+Link-Odd Helicity Matrices, and Second-Order Non-Abelian Convergence}\\[4mm]
+\large Order-resolved gauge transport on the H4/H7 common parent, explicit continuum support,\\
+quark--antiquark--gluon color structure, soft-overlap matching, and the nuclear-composition boundary}
+\author{DeuteronWigner project}
+\date{31 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~0--XI established the typed geometric architecture, regulated
+light-front Hamiltonian and Fock-space hierarchy, common microscopic quark,
+antiquark, and gluon GTMD helicity matrices, and the first-order Wilson-line
+and cut machinery.  C12/H5 attached that machinery to the H4 microscopic
+parent.  C13/H6 and C14/H7 then supplied the explicit higher Fock sectors and
+strict second-order Wilson support needed for quarks, antiquarks, and active
+gluons.  C15/N0 is the active implementation package for the first normalized
+spin-1 nuclear state.  The present volume is the normative nucleon-side
+Wilson specification that C15 must consume without reinterpretation.  It
+separates partonic staple transport from nuclear coherent propagation, treats
+physical absorptive support through explicit spectral measures, compares
+strict Dyson and Magnus representations through second order, and carries
+soft/rapidity overlap terms without claiming ultraviolet matching or a
+physical TMD scheme.  It does not introduce nuclear rescattering, process
+color weights, Collins--Soper evolution, or an all-orders Wilson result.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A microscopic TMD model requires more than a complex light-front wave
+function or a path label attached to a fitted distribution.  The link-odd
+part of a quark, antiquark, or gluon correlator must arise from a declared
+Wilson operator, the same gauge interactions that appear in the Hamiltonian,
+physical spectral support for an absorptive cut, and the OAM and helicity
+interferences selected by the operator projector.  We formulate the complete
+order-one and order-two Wilson layer for the DeuteronWigner microscopic
+nucleon.  The input is the common H4/H7 nonzero-transfer helicity-matrix
+parent.  Future- and past-pointing paths generate their pole prescriptions
+from the path and Fourier conventions.  Continuum and finite-volume spectral
+rules determine the discontinuity; numerical broadening never constitutes
+physical support.  At first order, complete quark and antiquark link-odd
+matrices generate distinct Sivers and Boer--Mulders projections, while the
+gluon parent retains four ordered link pairs, independent antisymmetric
+\(f^{abc}\) and symmetric \(d^{abc}\) color channels, and all transverse
+polarization sectors.  At second order, explicit \(qqqgg\), \(qqqggg\), and
+\(qqqq\bar q gg\) support permits strict Dyson--Magnus comparisons for all
+partonic species.  Ordered single cuts, the real double-cut intersection,
+contact and instantaneous terms, and the square-root-soft expansion are
+tracked by typed ledgers and count-once two-cells.  We provide the operator
+identities, support theorems, convergence obligations, software interfaces,
+benchmark suite, negative tests, and the exact contract with the spin-1
+nuclear and QCD-matching layers.  The resulting objects remain regulated
+finite-basis boundaries, not physical soft-subtracted TMDs.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scientific problem, inherited state, and scope}
+\label{sec:scope}
+
+\subsection{The transition from a T-even parent to a dynamical link-odd parent}
+
+Volume~XI constructs the common microscopic matrix
+\begin{equation}
+ \cM^{a,(0)}_{\lambda_a'\Lambda';\lambda_a\Lambda}
+ (x,\kT,\DT)
+ \label{eq:t-even-parent}
+\end{equation}
+for \(a=q,\bar q,g\), at zero skewness and Wilson order zero.  Its future and
+past path alternatives coincide, so every link-odd projection vanishes.  The
+present volume replaces that controlled null sector by the order-resolved
+matrix
+\begin{equation}
+ \cM^{a,[\gamma],\leq n}
+ =
+ \sum_{r=0}^{n}
+ \cM^{a,[\gamma],(r)},
+ \qquad n=1,2,
+ \label{eq:order-resolved-parent}
+\end{equation}
+without abandoning the common state, recoil, helicity, color, or projector
+identity.
+
+The dynamical chain is
+\begin{equation}
+ \begin{aligned}
+ \{ |\Psi_{H7}\rangle,\cO_a,\gamma,\cR_{\rm spec}\}
+ &\longrightarrow
+ \{\cU_\gamma^{(1)},\cU_\gamma^{(2)},\CutLedger,\SoftLedger\}
+ \\
+ &\longrightarrow
+ \cM^{a,[\gamma],\leq2}
+ \longrightarrow
+ \{F_A^{a,[\gamma]}\}.
+ \end{aligned}
+ \label{eq:full-chain}
+\end{equation}
+Here \(\cR_{\rm spec}\) is the declared spectral rule.  A path by itself does
+not generate an imaginary part, and a complex numerical regulator does not
+replace \(\cR_{\rm spec}\).
+
+\begin{decision}[Primary Wilson boundary]
+The authoritative microscopic Wilson boundary is the complete target--parton
+helicity matrix before named TMD projection.  Scalar Sivers, Boer--Mulders,
+and gluonic-pole functions are reductions of that matrix, not independent
+state variables.
+\end{decision}
+
+\subsection{Inherited microscopic support}
+
+The H7 state contains the ten sectors
+\begin{align}
+ \Hil_{H7}={}&
+ \Hil_{qqq}\oplus\Hil_{qqqg}
+ \oplus\Hil_{qqqu\bar u}\oplus\Hil_{qqqd\bar d}
+ \oplus\Hil_{qqqgg}
+ \oplus\Hil_{qqqu\bar u g}\oplus\Hil_{qqqd\bar d g}
+ \nonumber\\
+ &\oplus\Hil_{qqqggg}
+ \oplus\Hil_{qqqu\bar u gg}
+ \oplus\Hil_{qqqd\bar d gg}.
+ \label{eq:h7-space}
+\end{align}
+The state retains exact quark antisymmetry, antiquark anti-fundamental
+identity, two- and three-gluon permutation irreducible representations,
+complete color-singlet multiplicities, helicity, \(L_z\), \(J^z\), regulator,
+and tensor-network identities.
+
+The support table at the beginning of this volume is
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Active species & Wilson order one & Wilson order two\\
+\midrule
+quark & explicit \(qqqg\) & explicit \(qqqgg\)\\
+antiquark & explicit \(qqqq\bar q g\) & explicit \(qqqq\bar q gg\)\\
+gluon & explicit \(qqqgg\) & explicit \(qqqggg\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Wilson order three is unavailable even though a three-gluon sector exists:
+the cubic operator, triple-cut, cubic soft, contact, and gauge-completion
+system has not been constructed.
+
+\subsection{Explicit nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+ \item continuum QCD or regulator independence;
+ \item an all-orders Wilson line;
+ \item a complete Slavnov--Taylor or BRST proof;
+ \item a physical soft function or ultraviolet matching coefficient;
+ \item a Collins--Soper evolved TMD;
+ \item a process-specific hard/color mixture;
+ \item nuclear coherent rescattering, shadowing, or tagged final-state
+ interactions;
+ \item a physical extraction or calibrated prediction.
+\end{itemize}
+
+\subsection{Interface with the active nuclear package}
+
+C15/N0 may consume the order-resolved microscopic nucleon parents, but it must
+preserve the distinction
+\begin{equation}
+ \texttt{PARTONIC\_WILSON\_STAPLE}
+ \neq
+ \texttt{NUCLEAR\_COHERENT\_PROPAGATION}
+ \neq
+ \texttt{TAGGED\_FSI}.
+ \label{eq:parton-nuclear-distinction}
+\end{equation}
+Only the first object is available from this volume.
+
+\section{Decorated Wilson identity and support theorem}
+\label{sec:identity}
+
+\subsection{Complete operator identity}
+
+A microscopic Wilson operator is identified by
+\begin{equation}
+ \mathfrak w=
+ \bigl(
+ a,\Gamma,P_{\rm in},P_{\rm out},
+ \gamma,R_c,n_W,
+ \cR_{\UV},\cR_{\rm rap},\cS_{\rm soft},
+ \mu,\zeta,\mathfrak s,
+ \mathfrak f,\mathfrak m
+ \bigr),
+ \label{eq:wilson-id}
+\end{equation}
+where \(n_W\) is the Wilson order, \(\mathfrak f\) is the Fock-support
+certificate, and \(\mathfrak m\) is the microscopic member identity.  For a
+gluon operator, \(\gamma\) is an ordered pair \((\gamma_1,\gamma_2)\) and
+the identity additionally retains the final \(f\)- or \(d\)-type color
+projection when one has been applied.
+
+\begin{requirement}[No nominal identity]
+Two Wilson objects may compose only if their species, momentum fibers,
+representation, path geometry, path orientation, Wilson order, regulator,
+soft/rapidity convention, microscopic member, and Fock-support certificate
+agree or are connected by an explicit adapter.
+\end{requirement}
+
+\subsection{Support certificate}
+
+For each requested matrix element, define
+\begin{equation}
+ \mathfrak f=
+ \bigl(
+ \nu_{\rm in},\nu_{\rm int},\nu_{\rm out},
+ n_W,\cV_{\rm attach},\cV_{\rm contact},
+ \cR_{\rm spec},\Delta_{\rm rem}
+ \bigr),
+ \label{eq:support-certificate}
+\end{equation}
+where \(\nu_{\rm int}\) is the explicit intermediate-sector sequence and
+\(\Delta_{\rm rem}\) is any induced-operator remainder.
+
+\begin{theorem}[Wilson-order/Fock-order gate]
+A microscopic Wilson contribution of order \(n\) is admissible only when every
+intermediate sector and every contact or constrained-field operator required
+by the order-\(n\) expansion is either explicit in the state space or supplied
+by a matched induced operator with a visible remainder.  Otherwise the result
+is \texttt{UNAVAILABLE\_AT\_THIS\_FOCK\_ORDER}.
+\end{theorem}
+
+\begin{proof}
+The path-ordered product inserts \(n\) gauge-field operators and generates a
+sum over intermediate states between successive insertions.  Projecting out a
+required intermediate sector changes both the Hamiltonian resolvent and the
+operator.  A bare truncation therefore does not represent the same matrix
+element.  Feshbach equivalence is restored only after the induced operator and
+its norm kernel are included; any remaining orthogonal component is the
+reported remainder.
+\end{proof}
+
+\subsection{Unavailable is not zero}
+
+A missing support certificate is a statement about the model truncation, not
+a dynamical prediction:
+\begin{equation}
+ \text{support absent}
+ \quad\Longrightarrow\quad
+ \texttt{UNAVAILABLE},
+ \qquad
+ \text{not}\quad F=0.
+ \label{eq:unavailable-not-zero}
+\end{equation}
+A zero is physical only after the relevant state and operator blocks exist and
+a symmetry, coupling, cut, or interference limit forces the result to vanish.
+
+\section{Oriented paths, pole prescriptions, and antiunitary reversal}
+\label{sec:paths}
+
+\subsection{Semi-infinite line convention}
+
+Let
+\begin{equation}
+ \gamma_\eta(\lambda)=a+\eta\lambda v,
+ \qquad \lambda\geq0,
+ \qquad \eta=\pm1.
+ \label{eq:path-param}
+\end{equation}
+With Fourier kernel \(e^{-i\ell\cdot x}\), covariant derivative
+\(D_\mu=\partial_\mu+igA_\mu\), and gluon momentum flowing into the eikonal
+line, the line integral gives
+\begin{equation}
+ D_\eta(\ell)
+ =\frac{1}{v\cdot\ell-i0\eta}
+ =\PV\frac{1}{v\cdot\ell}
+ +i\eta\pi\delta(v\cdot\ell).
+ \label{eq:eikonal-pole}
+\end{equation}
+The sign is derived from the full convention tuple and is not an independent
+process switch.
+
+\subsection{Path composition and inversion}
+
+Bare parallel transport satisfies
+\begin{equation}
+ U_{\gamma_2\circ\gamma_1}
+ =U_{\gamma_2}U_{\gamma_1},
+ \qquad
+ U_{\gamma^{-1}}=U_\gamma^\dagger.
+ \label{eq:path-laws}
+\end{equation}
+These are geometric identities of the bare connection.  A renormalized GTMD
+also carries cusp, rapidity, soft, ultraviolet, and scheme data, so a bare
+path inverse is not by itself the full process-reversal map.
+
+\subsection{Antiunitary link reversal}
+
+Let \(\Theta\) denote the full antiunitary adapter.  It acts on
+\begin{equation}
+ (P',P,\kT,\DT,\Lambda',\Lambda,
+ \lambda_a',\lambda_a,\gamma,R_c)
+\end{equation}
+by complex conjugation, endpoint exchange, transfer and transverse-momentum
+reflection, helicity phases, path inversion, and the correct color
+representation map.  The common-frame link-even and link-odd matrices are
+\begin{align}
+ \cM_{\rm even}
+ &=\frac12\left[
+ \cM^{[+]}+\Theta^{-1}\cM^{[-]}\Theta
+ \right],
+ \label{eq:even-matrix}\\
+ \cM_{\rm odd}
+ &=\frac12\left[
+ \cM^{[+]}-\Theta^{-1}\cM^{[-]}\Theta
+ \right].
+ \label{eq:odd-matrix}
+\end{align}
+A subtraction of arrays that have merely been labeled future and past is not
+an implementation of \cref{eq:odd-matrix}.
+
+\begin{proposition}[Exact zero-rescattering limit]
+If the gauge coupling, physical cut support, or every required OAM
+interference block is disabled, then \(\cM_{\rm odd}=0\) exactly within the
+declared finite-basis tolerance.
+\end{proposition}
+
+\section{Spectral measures, light-front resolvents, and physical cuts}
+\label{sec:spectral}
+
+\subsection{Continuum spectral rule}
+
+For an intermediate family \(X\), define
+\begin{equation}
+ \cA_\sigma(E_i)
+ =
+ \int_{E_{\rm th}}^\infty
+ \dd E\,
+ \frac{\rho_X(E)N_X(E)}{E_i-E+i0\sigma},
+ \qquad \sigma=\pm1.
+ \label{eq:continuum-amplitude}
+\end{equation}
+Then
+\begin{equation}
+ \operatorname{Im}\cA_\sigma(E_i)
+ =-\sigma\pi\rho_X(E_i)N_X(E_i)
+ \label{eq:continuum-cut}
+\end{equation}
+inside the support and vanishes below threshold.
+
+\begin{requirement}[Threshold support]
+A nonzero absorptive contribution must carry a threshold, spectral density,
+intermediate-state identity, and on-shell support condition.  A finite
+numerical \(\eps\) is a convergence parameter and may not enter the physical
+result identity.
+\end{requirement}
+
+\subsection{Finite-volume sequence}
+
+A discretized spectral measure is
+\begin{equation}
+ \rho_L(E)
+ =\sum_n w_{n,L}\,\delta(E-E_{n,L}),
+ \label{eq:finite-volume-measure}
+\end{equation}
+with a declared volume or resolution sequence \(L\to\infty\).  The associated
+quadrature must converge to \cref{eq:continuum-cut} for smooth test functions.
+Level smearing may be used to approximate the distribution but must vanish
+from the content-addressed result identity.
+
+\subsection{Light-front resolvent}
+
+The Hamiltonian representation is
+\begin{equation}
+ G_\sigma(P_i^-)
+ =\frac{1}{P_i^- -H_0+i0\sigma},
+ \label{eq:lf-resolvent}
+\end{equation}
+and
+\begin{equation}
+ \cA_\sigma
+ =\sum_X
+ \frac{
+ \langle f|V_{\rm eik}|X\rangle
+ \langle X|\cO_\Gamma|i\rangle
+ }{P_i^- -P_X^-+i0\sigma}.
+ \label{eq:lf-amplitude}
+\end{equation}
+The cut ledger records whether \cref{eq:eikonal-pole} and
+\cref{eq:lf-resolvent} represent the same physical on-shell support or two
+distinct cuts.
+
+\subsection{Cut equivalence and count-once rule}
+
+Equivalent descriptions are connected by a two-cell
+\begin{equation}
+ \texttt{EIKONAL\_CUT}
+ \Longleftrightarrow
+ \texttt{LF\_RESOLVENT\_CUT}
+ \quad[\texttt{EQUIVALENT\_COUNT\_ONCE}].
+ \label{eq:count-once}
+\end{equation}
+Distinct ordered intermediate channels remain additive even when their
+numerical denominators coincide.
+
+\section{First-order microscopic Wilson action}
+\label{sec:first-order}
+
+\subsection{Matrix-level action}
+
+The first-order correction acts on the complete H4 helicity matrix:
+\begin{equation}
+ \cM^{a,[\eta],(1)}
+ =
+ \sum_{X,c}
+ \int[\dd\Gamma_X]\,
+ \cA^{a,c}_{\rm out\leftarrow X}
+ D_\eta(\ell)
+ \cA^{a,c}_{X\leftarrow\rm in},
+ \label{eq:first-order-matrix}
+\end{equation}
+where the color, helicity, OAM, state-member, cut, and support labels remain
+uncontracted until the appropriate projector is applied.
+
+\subsection{Quark and antiquark channels}
+
+For antiquarks,
+\begin{equation}
+ t_{\bar3}^a=-(t_3^a)^T,
+ \qquad
+ U_{\bar3}[\gamma]=U_3[\gamma]^*.
+ \label{eq:antifundamental}
+\end{equation}
+The antiquark result is calculated from direct positive-\(x\) H3/H7 active
+slots.  It is not copied from a quark matrix or from negative \(x\).
+
+\subsection{Distinct Sivers and Boer--Mulders reductions}
+
+The matrix-level reductions are
+\begin{align}
+ f_{1T}^{\perp q}
+ &\sim
+ \Tr\left[P_{\rm Siv}\cM_{\rm odd}^{q}\right],
+ \label{eq:sivers-proj}\\
+ h_1^{\perp q}
+ &\sim
+ \Tr\left[P_{\rm BM}\cM_{\rm odd}^{q}\right].
+ \label{eq:bm-proj}
+\end{align}
+The two projectors select different target-spin, active-parton-spin, and OAM
+interference blocks.  Their shared rescattering kernel creates correlations,
+but no operator identity of the form
+\begin{equation}
+ h_1^{\perp q}=C_q f_{1T}^{\perp q}
+ \label{eq:no-proportionality}
+\end{equation}
+is permitted.
+
+\subsection{Active-gluon ordered links}
+
+The gluon operator has two ordered adjoint paths,
+\begin{equation}
+ \mathfrak g=(\gamma_1,\gamma_2,R_A,\eta_1,\eta_2),
+ \label{eq:gluon-link-pair}
+\end{equation}
+with the four classes
+\begin{equation}
+ [+,+],\quad[+,-],\quad[-,+],\quad[-,-].
+ \label{eq:four-link-pairs}
+\end{equation}
+The common three-adjoint kernel is projected independently onto
+\begin{equation}
+ K_f=\frac{-if^{abc}K^{abc}}{24},
+ \qquad
+ K_d=\frac{d^{abc}K^{abc}}{40/3},
+ \label{eq:fd-projectors}
+\end{equation}
+using
+\begin{equation}
+ f^{abc}f^{abc}=24,
+ \qquad
+ d^{abc}d^{abc}=\frac{40}{3},
+ \qquad
+ f^{abc}d^{abc}=0.
+ \label{eq:fd-norms}
+\end{equation}
+Link topology and color contraction are different labels; neither determines
+the other.
+
+\section{Strict second-order non-Abelian transport}
+\label{sec:second-order}
+
+\subsection{Dyson polynomial}
+
+For a path generator \(\cK_\eta(s)=\mathcal O(g)\), the strict order-two
+Dyson operator is
+\begin{equation}
+ U_{D,\eta}^{[2]}
+ =I+
+ \int\dd s_1\,\cK_\eta(s_1)
+ +
+ \int_{s_1>s_2}\dd s_1\dd s_2\,
+ \cK_\eta(s_1)\cK_\eta(s_2).
+ \label{eq:dyson2}
+\end{equation}
+No terms of order \(g^3\) or higher are retained.
+
+\subsection{Magnus polynomial}
+
+Define
+\begin{align}
+ \Omega_1
+ &=\int\dd s_1\,\cK_\eta(s_1),
+ \label{eq:omega1}\\
+ \Omega_2
+ &=\frac12
+ \int_{s_1>s_2}\dd s_1\dd s_2\,
+ [\cK_\eta(s_1),\cK_\eta(s_2)].
+ \label{eq:omega2}
+\end{align}
+The strict order-two Magnus polynomial is
+\begin{equation}
+ U_{M,\eta}^{[2]}
+ =I+\Omega_1+\frac12\Omega_1^2+\Omega_2.
+ \label{eq:magnus2}
+\end{equation}
+This is not the fully exponentiated \(\exp(\Omega_1+\Omega_2)\), which would
+contain uncontrolled higher-order terms.
+
+\begin{theorem}[Dyson--Magnus equality through order two]
+For the same path generator, ordering convention, representation, and
+integration domain,
+\begin{equation}
+ U_{D,\eta}^{[2]}-U_{M,\eta}^{[2]}=\mathcal O(g^3).
+ \label{eq:dyson-magnus-equality}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Split \(\Omega_1^2/2\) into the two ordered domains \(s_1>s_2\) and
+\(s_2>s_1\).  Adding \(\Omega_2\) cancels the reverse-ordered commutator term
+and leaves exactly the path-ordered product in \cref{eq:dyson2}.  Equal-time
+sets have measure zero or are represented by separately declared contact
+operators.
+\end{proof}
+
+\subsection{Why the commutator matters}
+
+For commuting color fields, \(\Omega_2=0\).  For noncommuting fields,
+omitting \(\Omega_2\) destroys the order-two equality and changes the
+connected color structure.  The commutator benchmark is therefore a mandatory
+non-Abelian test, not an optional numerical diagnostic.
+
+\subsection{Composition, reversal, and order-two unitarity}
+
+The strict approximants must satisfy:
+\begin{align}
+ U^{[2]}(s_3,s_2)U^{[2]}(s_2,s_1)
+ &=U^{[2]}(s_3,s_1)+\mathcal O(g^3),
+ \label{eq:composition2}\\
+ U_{\gamma^{-1}}^{[2]}
+ &=U_\gamma^{[2]\dagger}+\mathcal O(g^3),
+ \label{eq:reversal2}\\
+ U^{[2]\dagger}U^{[2]}
+ &=I+\mathcal O(g^3).
+ \label{eq:unitarity2}
+\end{align}
+The defect relative to an exact ordered exponential must scale cubically in a
+coupling-rescaling test.
+
+\subsection{Relation to non-Abelian exponentiation}
+
+Non-Abelian exponentiation organizes connected color factors in the logarithm
+of products of Wilson lines \cite{Gardi2013}.  It does not justify replacing
+the microscopic order-two calculation by an arbitrary exponentiated
+one-gluon phase.  The connected-web statement, the Magnus commutator, and the
+explicit H7 Fock-support obligations must all be satisfied independently.
+
+\section{Second-order color and link topology}
+\label{sec:color2}
+
+\subsection{Fundamental and anti-fundamental products}
+
+The ordered fundamental product decomposes as
+\begin{equation}
+ T^aT^b
+ =\frac{1}{2N_c}\delta^{ab}I
+ +\frac12d^{abc}T^c
+ +\frac{i}{2}f^{abc}T^c.
+ \label{eq:TaTb}
+\end{equation}
+The reverse order changes only the commutator term.  For antiquarks, every
+generator is replaced by the anti-fundamental representation before the
+ordered product is formed.
+
+\subsection{Adjoint transport}
+
+The adjoint generators are
+\begin{equation}
+ (F^a)_{bc}=-if^{abc}.
+ \label{eq:adjoint-generators}
+\end{equation}
+The second-order active-gluon calculation must compare strict Dyson and Magnus
+operators in the adjoint representation rather than borrowing the
+fundamental result by Casimir rescaling.
+
+\subsection{Two-link insertion topology}
+
+For the gluon correlator, the second-order ledger keeps
+\begin{equation}
+ LL,
+ \qquad RR,
+ \qquad LR,
+ \qquad RL
+ \label{eq:two-link-topologies}
+\end{equation}
+as distinct insertion classes.  Here the letters refer to the left and right
+ordered Wilson links in the field-strength correlator.  The topology is
+retained before the final \(f\)- or \(d\)-type contraction.
+
+\subsection{Microscopic color multiplicities}
+
+The state-color multiplicity and the Wilson color class are independent.  The
+H7 state retains 22 \(qqqggg\) singlets and 28 singlets in each
+\(qqqq\bar qgg\) sector, including symmetric, antisymmetric, and mixed gluon
+permutation representations.  These state labels may mix dynamically but may
+not be collapsed into the final gluonic-pole \(f/d\) label.
+
+\section{Two-step cuts and unitarity}
+\label{sec:cuts2}
+
+\subsection{Distributional decomposition}
+
+For two denominators,
+\begin{equation}
+ \frac{1}{x+i0\sigma_1}
+ \frac{1}{y+i0\sigma_2},
+ \label{eq:two-denom}
+\end{equation}
+the strict distributional product contains
+\begin{align}
+ &\PV\frac1x\PV\frac1y,
+ \label{eq:pvpv}\\
+ &-i\pi\sigma_1\delta(x)\PV\frac1y,
+ \qquad
+ -i\pi\sigma_2\PV\frac1x\delta(y),
+ \label{eq:singlecuts}\\
+ &-\pi^2\sigma_1\sigma_2\delta(x)\delta(y).
+ \label{eq:doublecut}
+\end{align}
+The double-cut intersection is real.  It is not the square of one delta
+distribution.
+
+\subsection{Ordered cut ledger}
+
+Every cut record contains:
+\begin{itemize}
+ \item the ordered intermediate sectors;
+ \item the two energy denominators;
+ \item the two support surfaces and their intersection;
+ \item the path orientation and representation;
+ \item the operator attachments and contact terms;
+ \item equivalence relations to eikonal or resolvent descriptions;
+ \item the count-once status.
+\end{itemize}
+
+\begin{requirement}[No squared delta]
+If two nominal denominators represent the same singular surface, the product
+must be defined by an explicit finite-volume, regulator, subtraction, or
+distribution-extension rule.  The implementation may not form
+\(\delta(x)^2\).
+\end{requirement}
+
+\subsection{Optical and probability ledgers}
+
+The order-two discontinuity is compared with the sum over declared on-shell
+intermediate channels.  This is a finite-model unitarity benchmark, not a
+complete continuum optical theorem.  Missing channels remain visible in a
+unitarity-remainder ledger.
+
+\section{Soft and rapidity overlap through second order}
+\label{sec:soft2}
+
+\subsection{Square-root-soft expansion}
+
+Let
+\begin{equation}
+ S=1+aS^{(1)}+a^2S^{(2)}+\mathcal O(a^3).
+ \label{eq:soft-series}
+\end{equation}
+Then
+\begin{equation}
+ S^{-1/2}
+ =1-\frac12aS^{(1)}
+ +a^2\left[
+ \frac38(S^{(1)})^2-\frac12S^{(2)}
+ \right]
+ +\mathcal O(a^3).
+ \label{eq:soft-sqrt}
+\end{equation}
+For
+\(W_{\rm unsub}=W^{(0)}+aW^{(1)}+a^2W^{(2)}+\cdots\),
+\begin{align}
+ W_{\rm sub}^{(1)}
+ &=W^{(1)}-\frac12S^{(1)}W^{(0)},
+ \label{eq:sub1}\\
+ W_{\rm sub}^{(2)}
+ &=W^{(2)}-\frac12S^{(1)}W^{(1)}
+ +\left[
+ \frac38(S^{(1)})^2-\frac12S^{(2)}
+ \right]W^{(0)}.
+ \label{eq:sub2}
+\end{align}
+Ultraviolet and rapidity counterterms are appended according to the declared
+scheme and remain separate from the microscopic overlap.
+
+\subsection{Rapidity-cancellation benchmark}
+
+For every fundamental, anti-fundamental, adjoint, and ordered-two-link class,
+the analytic benchmark must satisfy
+\begin{equation}
+ \frac{\partial}{\partial L_{\rm rap}}
+ W_{\rm sub}^{(r)}=0,
+ \qquad r=1,2,
+ \label{eq:rapidity-cancel}
+\end{equation}
+within the declared truncation.  Missing or duplicated terms must produce
+signed residuals.
+
+\subsection{Two admissible routes}
+
+The compiler permits two mutually exclusive choices:
+\begin{enumerate}
+ \item \texttt{BOUNDARY\_ONLY\_RESCATTERING}: the microscopic calculation
+ supplies a low-resolution unsubtracted boundary and the later matching layer
+ supplies the complete soft/rapidity scheme;
+ \item \texttt{JOINT\_MICROSCOPIC\_SOFT\_SECTOR}: the boundary and soft sector
+ are solved and matched together.
+\end{enumerate}
+Only the first route is presently complete through the analytic order-two
+benchmark.  The second remains unavailable.
+
+\subsection{Proper GTMD status}
+
+A physical GTMD requires soft-radiation and rapidity structure beyond the
+unsubtracted overlap \cite{Echevarria2016}.  Therefore every output from this
+volume retains
+\begin{verbatim}
+UNSUBTRACTED_OR_ANALYTICALLY_SUBTRACTED_REGULATED
+UV_FINITE_MATCHING_REQUIRED
+PHYSICAL_TMD_SCHEME_NOT_ASSIGNED
+CONTINUUM_SOFT_FUNCTION_INCOMPLETE
+NO_COLLINS_SOPER_EVOLUTION
+NO_PROCESS_FACTOR_APPLIED
+\end{verbatim}
+
+\section{Gauge completion and current consistency}
+\label{sec:gauge}
+
+\subsection{Finite gauge ledger}
+
+The order-two finite-basis gauge benchmark closes only when all required
+pieces are present:
+\begin{equation}
+ \delta_{\rm gauge}^{(2)}
+ =\delta_{\rm seq}
+ +\delta_{3g}
+ +\delta_{4g}
+ +\delta_{\rm inst,f}
+ +\delta_{\rm inst,g}
+ +\delta_{\rm pair}
+ +\delta_{\chi}
+ +\delta_{\rm ct}
+ +\delta_J
+ +\delta_Z
+ +\delta_{\rm reg}.
+ \label{eq:gauge-ledger}
+\end{equation}
+Each nonzero term has a Hamiltonian and operator owner.  The closure may not be
+achieved by fitting an independent counterterm to each named TMD.
+
+\subsection{Ward--Takahashi and Slavnov--Taylor status}
+
+The commuting-generator finite-basis benchmark tests a Ward--Takahashi-like
+identity.  Non-Abelian three- and four-gluon terms test a larger finite gauge
+ledger.  Neither establishes the complete Slavnov--Taylor or BRST system,
+which would require the full gauge-fixed continuum operator algebra, ghost
+sector where applicable, regulator-restoration identities, and all relevant
+Fock sectors.
+
+\subsection{Path derivative and field-strength insertion}
+
+A path deformation generates a field-strength insertion schematically as
+\begin{equation}
+ \frac{\delta U_\gamma}{\delta\gamma^\mu(s)}
+ \sim
+ ig\,U_{\gamma_{>s}}F_{\mu\nu}(\gamma(s))
+ \dot\gamma^\nu(s)U_{\gamma_{<s}}.
+ \label{eq:path-derivative}
+\end{equation}
+This identity connects staple-dependent OAM and torque observables to the same
+microscopic gauge field.  It does not identify a Sivers function with an OAM
+moment.
+
+\section{Tensor-network representation and observable convergence}
+\label{sec:tn}
+
+\subsection{State and operator networks}
+
+The H7 state is a ten-branch symmetry-adapted TTN.  The Wilson operator is a
+separate operator network whose virtual edges retain:
+\begin{itemize}
+ \item Fock-sector sequence;
+ \item color representation and outer multiplicity;
+ \item gluon permutation representation;
+ \item target and parton helicities;
+ \item \(L_z\) and \(J^z\);
+ \item path, Wilson order, cut, and soft identities.
+\end{itemize}
+The operator may not be absorbed into a redefinition of the state tensor.
+
+\subsection{Full-bond closure}
+
+For every supported species and Wilson order,
+\begin{equation}
+ \cM_{\rm exact}^{(r)}
+ =\cM_{\rm full\ bond}^{(r)}
+ \label{eq:full-bond}
+\end{equation}
+within the declared tolerance.  This equality is checked before and after
+link-even/link-odd projection, color projection, and soft subtraction.
+
+\subsection{Observable-sensitive bond convergence}
+
+Reduced-bond studies report separately:
+\begin{equation}
+ \left\{
+ \Delta E,
+ 1-|\langle\Psi_\chi|\Psi\rangle|^2,
+ \Delta\norm{\cM_{\rm odd}},
+ \Delta f_{1T}^{\perp},
+ \Delta h_1^\perp,
+ \Delta K_f,
+ \Delta K_d,
+ \Delta_{\rm cut},
+ \Delta_{\rm soft}
+ \right\}.
+ \label{eq:bond-observables}
+\end{equation}
+A state may be converged for the energy and unconverged for a Wilson-sensitive
+OAM interference.  No energy-only acceptance is allowed.
+
+\subsection{Topology and recoupling}
+
+Alternative TTN fusion trees are distinct approximation branches at finite
+bond.  They are compared through explicit recoupling maps retaining all color
+and permutation multiplicities.  A topology difference is not included as a
+statistical parameter uncertainty; it is a controlled model/truncation axis.
+
+\section{Common link-odd helicity matrices and reductions}
+\label{sec:projections}
+
+\subsection{Matrix before scalar functions}
+
+For each species and order, the stored object is
+\begin{equation}
+ \cM^{a,(r)}_{\lambda_a'\Lambda';\lambda_a\Lambda}
+ (x,\kT,\DT;\gamma,\mathfrak f),
+ \label{eq:stored-matrix}
+\end{equation}
+with the full target--parton helicity structure.  The scalar GTMD or TMD
+registry is a view generated by the same Gram-projector engine used at Wilson
+order zero.
+
+\subsection{Generic and degenerate kinematics}
+
+At generic kinematics, the complete quark and antiquark matrix is projected
+onto the sixteen-function basis.  At collinear or zero-transfer points, the
+projector rank drops and only identifiable combinations are returned.  Link-
+odd dynamics does not restore coefficients that are kinematically
+unidentifiable.
+
+\subsection{Forward TMD limit}
+
+The regulated TMD boundary is
+\begin{equation}
+ \Phi^{a,[\gamma],(r)}(x,\kT)
+ =\cM^{a,[\gamma],(r)}(x,\kT,\DT=0).
+ \label{eq:tmd-limit-wilson}
+\end{equation}
+This is still a regulated microscopic boundary.  The proper soft-subtracted
+QCD TMD is produced only after the Volume~V matching and evolution contract is
+satisfied.
+
+\subsection{Twist-three moment adapters}
+
+The first transverse moments of link-odd TMDs may be matched to quark--gluon or
+tri-gluon twist-three operators.  The adapter must retain operator
+normalization, Wilson path, color class, ultraviolet scheme, and mixing.  A
+bare cutoff moment is not equated directly with a renormalized Qiu--Sterman or
+tri-gluon matrix element.
+
+\subsection{OAM and torque}
+
+Straight- and staple-link OAM definitions differ by a gauge-field torque term.
+The volume therefore carries
+\begin{equation}
+ L_z^{\rm staple}-L_z^{\rm straight}
+ =\cT_z^{\rm torque}[\gamma]
+ \label{eq:oam-torque}
+\end{equation}
+as a matched operator relation with its own support and scheme status.  The
+same OAM blocks can feed both torque and link-odd projections without making
+the observables identical.
+
+\section{Provenance two-complex and assumption compiler}
+\label{sec:provenance}
+
+\subsection{Cells}
+
+The Wilson provenance complex contains:
+\begin{itemize}
+ \item 0-cells: states, Fock sectors, Wilson operators, cuts, soft factors,
+ schemes, and results;
+ \item 1-cells: insertion, projection, matching, Feshbach elimination,
+ subtraction, and nuclear handoff maps;
+ \item 2-cells: explicit/induced equivalence, cut count-once, soft-overlap
+ subtraction, Dyson--Magnus equality, and branch alternatives.
+\end{itemize}
+
+\subsection{Required two-cells}
+
+The minimum order-two relations are
+\begin{align}
+ \text{explicit higher Fock sector}
+ &\Longleftrightarrow
+ \text{induced operator}+\text{remainder},
+ \label{eq:explicit-induced-cell}\\
+ \text{eikonal cut}
+ &\Longleftrightarrow
+ \text{resolvent cut}
+ \quad[\text{count once}],
+ \label{eq:cut-cell}\\
+ W_{\rm unsub}^{(r)}
+ &\longrightarrow
+ W_{\rm sub}^{(r)}
+ \quad[\text{soft overlap removed}],
+ \label{eq:soft-cell}\\
+ U_D^{[2]}
+ &\Longleftrightarrow
+ U_M^{[2]}
+ \quad[\mathcal O(g^3)\text{ remainder}].
+ \label{eq:dyson-magnus-cell}
+\end{align}
+
+\subsection{Assumption axes}
+
+An \AssumptionBundle{} chooses:
+\begin{itemize}
+ \item the H7 Hamiltonian plan and microscopic member;
+ \item Wilson order and representation;
+ \item path geometry and link pair;
+ \item spectral-support route;
+ \item explicit versus induced support where both exist;
+ \item soft-overlap route;
+ \item exact or TTN state representation and bond policy.
+\end{itemize}
+Mutually exclusive branches are compared as complete theories.  They are not
+added together.
+
+\section{Contract with spin-1 nuclear composition}
+\label{sec:nuclear-contract}
+
+\subsection{Nucleon object delivered to C15/N0}
+
+The nuclear layer receives an order-resolved parent
+\begin{equation}
+ \begin{aligned}
+ \cW_{a/N}^{(0\ldots2)}=\bigl(&
+ \cM^{a,(0)},\cM^{a,(1)},\cM^{a,(2)},\mathfrak w,\mathfrak f,
+ \\
+ &\CutLedger,\SoftLedger,\ConvergenceManifest\bigr).
+ \end{aligned}
+ \label{eq:nucleon-handoff}
+\end{equation}
+It retains correlated proton/neutron member identity and may not be reduced to
+an independently normalized named TMD before the nuclear spin convolution.
+
+\subsection{Nuclear composition preserves link identity}
+
+For the nucleonic deuteron sector,
+\begin{equation}
+ \begin{aligned}
+ W_{a/D}^{(r)}
+ ={}&\sum_{N=p,n}\sum_{\lambda',\lambda}
+ \int\frac{\dd y}{y}\frac{\dd^2\pT}{(2\pi)^2}
+ \rho^{N/D}_{\Lambda'\Lambda;\lambda'\lambda}
+ (y,\pT,\DT)
+ \\
+ &\times
+ W_{a/N,\lambda'\lambda}^{(r)}
+ \left(\frac{x_D}{y},
+ \kT-\frac{x_D}{y}\pT,
+ \DT\right)J_D.
+ \end{aligned}
+ \label{eq:nuclear-wilson-convolution}
+\end{equation}
+The nuclear map must retain future/past orientation, ordered gluon link pairs,
+\(f/d\) color class, Wilson order, and support status.
+
+\subsection{No nuclear phase by scalar dressing}
+
+C15/N0 may not create a deuteron Sivers, Boer--Mulders, or gluonic-pole
+function by multiplying the nucleon result by an arbitrary scalar nuclear
+response.  Spin recoupling acts on the complete helicity matrix.
+
+\subsection{Unavailable nuclear mechanisms}
+
+The following remain unavailable in N0:
+\begin{verbatim}
+NUCLEAR_COHERENT_PROPAGATION
+NUCLEAR_GLAUBER_RESCATTERING
+TAGGED_FINAL_STATE_INTERACTION
+POLARIZED_OR_TENSOR_SHADOWING
+NNPI_WILSON_INTERFERENCE
+\end{verbatim}
+Their absence cannot be compensated by modifying the partonic staple phase.
+
+\section{Contract with LF-to-QCD matching, evolution, and processes}
+\label{sec:qcd-contract}
+
+\subsection{Matching map}
+
+The regulated result enters
+\begin{equation}
+ \widetilde W_{a/h}^{\QCD}
+ =Z_{a}^{\LF\to\QCD}
+ \otimes_x
+ \widetilde W_{a/h}^{\LF,\rm sub}
+ +\Delta_{a/h}^{\trunc}.
+ \label{eq:lf-qcd-match}
+\end{equation}
+The matching basis is closed under quark--gluon and twist-three mixing.  It
+carries Wilson order, rank, link class, color class, and target polarization.
+
+\subsection{Evolution preserves matrix identities}
+
+Collins--Soper and \(\mu\)-evolution act on the matched operator, not on an
+unsubtracted C14 boundary.  Evolution must preserve:
+\begin{itemize}
+ \item exact future/past reversal;
+ \item transverse rank;
+ \item quark/antiquark separation;
+ \item gluon \(f/d\) channel identity;
+ \item correlated microscopic member identity.
+\end{itemize}
+
+\subsection{Process map}
+
+A process record supplies the hard channel, measurement, link geometry, color
+weights, soft prescription, Glauber status, and factorization status.  Until
+such a record exists, there is no process-level mixture
+\begin{equation}
+ F_g^{\rm process}
+ =C_f^{\rm process}F_g^{(f)}
+ +C_d^{\rm process}F_g^{(d)}.
+ \label{eq:process-mixture}
+\end{equation}
+
+\subsection{Factorization status}
+
+The allowed process labels remain
+\begin{verbatim}
+ESTABLISHED
+CONDITIONAL
+EXPLORATORY
+BROKEN
+UNASSESSED
+\end{verbatim}
+A process marked \texttt{BROKEN} or \texttt{UNASSESSED} cannot consume a
+universal separate-hadron TMD formula.
+
+\section{Formal software interfaces}
+\label{sec:software}
+
+\begin{longtable}{L{0.32\textwidth}L{0.58\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{OrientedWilsonPath} & Path geometry, endpoints, orientation,
+representation, cusp and closure identity.\\
+\texttt{PolePrescription} & Convention-derived principal-value and delta
+sign; never a caller-selected sign.\\
+\SpectralRule & Threshold, continuum or finite-volume measure, quadrature,
+and below-threshold status.\\
+\texttt{LightFrontResolvent} & Hamiltonian denominator, intermediate-state
+identity, regulator, and spectral attachment.\\
+\CutLedger & Ordered cut surfaces, intersections, equivalence two-cells, and
+count-once rules.\\
+\WilsonOperator & Strict Dyson/Magnus order, representation, link topology,
+Fock support, contact terms, and microscopic member.\\
+\texttt{LinkParityAdapter} & Complete antiunitary transformation into a common
+kinematic frame.\\
+\texttt{LinkOddHelicityMatrix} & Full target--parton matrix prior to scalar
+projection.\\
+\texttt{OrderedGluonLinkPair} & Left/right adjoint paths and insertion
+topology.\\
+\texttt{ColorProjection} & Independent \(f\), \(d\), singlet, commutator,
+anticommutator, and orthogonal residual sectors.\\
+\SoftLedger & Order-resolved square-root-soft, rapidity, ultraviolet, and
+scheme terms.\\
+\WilsonManifest & Explicit/induced/unavailable support and remainders.\\
+\ConvergenceManifest & Exact/TTN, bond, spectral, cut, Wilson-order, soft,
+and gauge residuals.\\
+\ProvComplex & State/operator/cut/soft/matching equivalences and exclusions.\\
+\bottomrule
+\end{longtable}
+
+\section{Stable formal requirements}
+\label{sec:requirements}
+
+The implementation should expose stable identifiers.  The minimum normative
+set is:
+\begin{longtable}{L{0.17\textwidth}L{0.75\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V12.001 & Every Wilson result consumes a complete H4/H7 helicity parent.\\
+V12.002 & Path orientation derives the pole prescription from the convention tuple.\\
+V12.003 & Numerical \(\eps\) is absent from physical result identity.\\
+V12.004 & Every nonzero imaginary part has declared spectral support.\\
+V12.005 & Below-threshold absorption vanishes exactly.\\
+V12.006 & Finite-volume spectral sequences converge to an analytic oracle where available.\\
+V12.007 & Antiunitary reversal transforms endpoints, momenta, helicities, path, and color.\\
+V12.008 & Link-even and link-odd matrices are formed before scalar projection.\\
+V12.009 & Quark and antiquark active slots remain distinct.\\
+V12.010 & Sivers and Boer--Mulders projectors remain independent.\\
+V12.011 & Four ordered gluon link pairs remain distinct.\\
+V12.012 & Gluon \(f\)- and \(d\)-type channels remain independent.\\
+V12.013 & State color multiplicity is distinct from Wilson color class.\\
+V12.014 & Strict Dyson and strict Magnus polynomials agree through order two.\\
+V12.015 & The Magnus commutator is required for noncommuting fields.\\
+V12.016 & Order-two composition, reversal, and unitarity defects scale as \(g^3\).\\
+V12.017 & Quark, antiquark, and gluon order-two support is explicit.\\
+V12.018 & Wilson order three fails closed.\\
+V12.019 & Every omitted Fock sector has an induced-operator remainder or is unavailable.\\
+V12.020 & Single-cut surfaces and the double-cut intersection are stored separately.\\
+V12.021 & Squared delta distributions are prohibited.\\
+V12.022 & Equivalent eikonal/resolvent cuts are counted once.\\
+V12.023 & Physically distinct ordered cuts remain additive.\\
+V12.024 & First-order square-root-soft subtraction uses the same operator identity.\\
+V12.025 & Second-order subtraction includes \(S^{(1)}W^{(1)}\), \((S^{(1)})^2W^{(0)}\), and \(S^{(2)}W^{(0)}\).\\
+V12.026 & Missing and duplicate soft terms produce signed residuals.\\
+V12.027 & UV finite matching remains explicitly unresolved.\\
+V12.028 & Gauge closure contains propagating, instantaneous, contact, current, and counterterm pieces.\\
+V12.029 & Finite gauge closure is not labeled full Slavnov--Taylor or BRST closure.\\
+V12.030 & Full-bond TTN reproduces exact Wilson matrices.\\
+V12.031 & Bond convergence is assessed on Wilson observables, not only energy.\\
+V12.032 & Projector rank loss is reported honestly at degenerate kinematics.\\
+V12.033 & Twist-three moment adapters retain matching and mixing status.\\
+V12.034 & Explicit and induced descriptions are alternatives with visible remainders.\\
+V12.035 & Partonic Wilson transport is distinct from nuclear coherent propagation.\\
+V12.036 & Nuclear composition preserves path, order, link pair, and color class.\\
+V12.037 & No scalar nuclear response generates a link-odd function.\\
+V12.038 & Unmatched Wilson objects cannot enter Collins--Soper evolution.\\
+V12.039 & Process color weights require a qualified process map.\\
+V12.040 & Every output retains the microscopic member and assumption-plan identity.\\
+V12.041 & All manifests are deterministic and content-addressed.\\
+V12.042 & Production artifacts and the canonical 216-route registry remain immutable.\\
+\bottomrule
+\end{longtable}
+
+\section{Benchmark and falsification program}
+\label{sec:benchmarks}
+
+\subsection{W-A: oriented semi-infinite line}
+Verify \cref{eq:eikonal-pole}, path inversion, principal-value equality, and
+opposite future/past cuts.
+
+\subsection{W-B: analytic continuum threshold}
+Compare the distributional cut with an analytic spectral density, including
+exact below-threshold zero.
+
+\subsection{W-C: finite-volume spectral convergence}
+Demonstrate monotone or controlled convergence of the discretized measure and
+separate volume, quadrature, and smearing errors.
+
+\subsection{W-D: antiunitary matrix reversal}
+Apply the full adapter to generic complex helicity matrices; incomplete
+endpoint, momentum, helicity, or color transformations must fail.
+
+\subsection{W-E: quark Sivers/Boer--Mulders distinction}
+Use one microscopic kernel and two projectors.  Disable each required spin/OAM
+block separately and verify the correct null pattern.
+
+\subsection{W-F: direct antiquark channel}
+Verify anti-fundamental color, positive-\(x\) support, charge-conjugation
+signatures, and absence of quark copying.
+
+\subsection{W-G: active-gluon ordered links}
+Reconstruct all four link pairs, independent \(f/d\) channels, and the trace,
+helicity, and symmetric-traceless polarization sectors.
+
+\subsection{W-H: strict Dyson--Magnus equality}
+Use commuting and noncommuting piecewise-constant paths in fundamental,
+anti-fundamental, adjoint, and ordered-two-link representations.
+
+\subsection{W-I: commutator ablation}
+Delete \(\Omega_2\); the noncommuting benchmark must produce a nonzero defect.
+
+\subsection{W-J: order-two cut surfaces}
+Separate both single cuts and the real double-cut intersection without a
+squared delta.
+
+\subsection{W-K: first- and second-order soft cancellation}
+Test the complete square-root-soft series and all missing/duplicate-term
+ablations.
+
+\subsection{W-L: gauge-completion ledger}
+Remove each sequential, three-/four-gluon, instantaneous, pair, chiral,
+counterterm, current, residue, and regulator contribution in turn.
+
+\subsection{W-M: Wilson/Fock support}
+Verify explicit quark, antiquark, and gluon support through order two and exact
+failure at order three.
+
+\subsection{W-N: exact/full-bond/reduced-bond convergence}
+Demonstrate that a reduced bond can retain a small energy error while losing a
+large link-odd or commutator-sensitive signal.
+
+\subsection{W-O: nuclear handoff}
+Compose the nucleon parent with a spin-resolved two-body spectral matrix while
+preserving all path and color identities; reject nuclear coherent phase
+requests.
+
+\subsection{W-P: matching and process gates}
+Reject evolution, physical-TMD, process-mixture, and production-promotion
+requests until their independent contracts are satisfied.
+
+\section{Negative-test catalogue}
+\label{sec:negative}
+
+The implementation should include at least 160 ordered failures spanning:
+\begin{enumerate}
+ \item missing path orientation, endpoint, Fourier, coupling, or momentum-flow data;
+ \item caller-supplied pole signs inconsistent with the path;
+ \item physicalized numerical \(\eps\);
+ \item below-threshold nonzero absorption;
+ \item finite-volume sequences without a continuum target or error estimate;
+ \item incomplete antiunitary reversal;
+ \item quark/antiquark aliasing;
+ \item Sivers/Boer--Mulders projector aliasing;
+ \item lost ordered gluon link identity;
+ \item implicit \(f+d\) mixtures;
+ \item incorrect \(f/d\) normalization or nonzero cross contraction;
+ \item incomplete state-color multiplicities;
+ \item Wilson-order/Fock-order mismatch;
+ \item induced support without a transformed operator and remainder;
+ \item strict Dyson compared with a fully exponentiated Magnus result;
+ \item omitted Magnus commutator for noncommuting fields;
+ \item order leakage into an order-two result;
+ \item bad path composition, reversal, or unitarity scaling;
+ \item duplicate or missing cuts;
+ \item squared delta distributions;
+ \item missing or duplicated first-/second-order soft terms;
+ \item soft and collinear objects with mismatched schemes;
+ \item gauge closure with omitted instantaneous/contact/current pieces;
+ \item false Slavnov--Taylor or BRST readiness;
+ \item reduced-bond acceptance based only on energy;
+ \item pseudoinverse presented as full GTMD determination;
+ \item direct bare moment labeled a renormalized twist-three function;
+ \item partonic Wilson phase used as nuclear shadowing or tagged FSI;
+ \item nuclear scalar multiplication used to create link-odd TMDs;
+ \item unmatched boundary sent to evolution;
+ \item process color weights without a process record;
+ \item production registry or authoritative-artifact mutation.
+\end{enumerate}
+
+\section{Staged implementation and release sequence}
+\label{sec:stages}
+
+\subsection{H5.0: microscopic spectral and cut layer}
+Attach continuum and finite-volume spectral rules to the H4 parent and verify
+matrix-level first-order cuts.
+
+\subsection{H5.1: all-species first-order link-odd matrices}
+Implement quark, antiquark, and gluon matrices and distinct scalar
+projections.
+
+\subsection{H5.2: explicit higher-Fock support}
+Replace induced antiquark and gluon first-order channels by explicit sectors
+with visible comparison remainders.
+
+\subsection{H6.0: strict quark order-two benchmark}
+Construct \(qqqgg\) support, Dyson/Magnus equality, two-step cuts, and
+second-order soft subtraction.
+
+\subsection{H7.0: all-species order-two closure}
+Add \(qqqggg\) and \(qqqq\bar qgg\) sectors and validate antiquark and gluon
+order-two transport.
+
+\subsection{N0 handoff}
+Freeze the order-resolved nucleon bundle and allow the spin-1 nuclear layer to
+consume it without introducing nuclear coherent dynamics.
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+The Volume XII layer is complete at its declared scope only when:
+\begin{enumerate}
+ \item one microscopic H7 state supplies all quark, antiquark, and gluon
+ helicity parents;
+ \item path orientation derives every eikonal pole sign;
+ \item nonzero absorption has declared continuum or finite-volume support;
+ \item finite numerical broadening is absent from physical identity;
+ \item future/past reversal closes at the complete matrix level;
+ \item Sivers and Boer--Mulders remain distinct projections of one kernel;
+ \item all four gluon link pairs and independent \(f/d\) channels close;
+ \item all first- and second-order species channels have explicit Fock support;
+ \item strict Dyson and Magnus representations agree through order two;
+ \item the commutator ablation is nonzero for noncommuting paths;
+ \item order-two composition, reversal, unitarity, and exact-exponential defects
+ scale at cubic order;
+ \item both single cuts and the real double-cut intersection are represented
+ without squared deltas;
+ \item equivalent cuts are counted once and distinct channels remain additive;
+ \item first- and second-order soft-overlap cancellations close;
+ \item UV matching and the physical TMD scheme remain explicitly unresolved;
+ \item the finite gauge ledger closes only with all declared pieces;
+ \item exact and full-bond TTN Wilson matrices agree;
+ \item reduced-bond errors are reported for Wilson observables;
+ \item Wilson order three fails closed;
+ \item C15 can consume the nucleon parent while nuclear coherent mechanisms
+ remain unavailable;
+ \item LF-to-QCD matching, evolution, processes, inference, and production
+ remain fail-closed;
+ \item all manifests are deterministic and all prior authoritative artifacts
+ remain byte-identical.
+\end{enumerate}
+
+\section{Recommended decision and scientific status}
+\label{sec:decision}
+
+The adopted microscopic Wilson layer is an
+\emph{order-resolved, support-certified, matrix-level Wilson calculation on
+the common H4/H7 light-front state, with convention-derived poles, physical
+spectral cuts, independent quark/antiquark/gluon color structure, strict
+Dyson--Magnus agreement through second order, typed cut and soft ledgers, and
+observable-sensitive tensor-network convergence}.
+
+This establishes a controlled finite-basis microscopic source for link-odd
+GTMD and TMD boundaries.  It does not yet establish a physical TMD.  The next
+scientific step is nuclear composition at N0, followed by explicit nonnucleonic
+and coherent nuclear sectors, and then LF-to-QCD matching, evolution, process
+factorization, and shared inference.
+
+\appendix
+
+\section{Distribution and sign dictionary}
+\label{app:signs}
+
+The project convention is
+\begin{equation}
+ \frac{1}{x\pm i0}
+ =\PV\frac1x\mp i\pi\delta(x).
+\end{equation}
+For the path convention of \cref{eq:path-param},
+\begin{equation}
+ \frac{1}{v\cdot\ell-i0\eta}
+ =\PV\frac{1}{v\cdot\ell}
+ +i\eta\pi\delta(v\cdot\ell).
+\end{equation}
+A change of Fourier or momentum-flow convention must be represented by an
+explicit adapter that changes both the stored convention identity and every
+derived sign.
+
+\section{Color dictionary}
+\label{app:color}
+
+For \(SU(N_c)\),
+\begin{align}
+ [T^a,T^b]&=if^{abc}T^c,\\
+ \{T^a,T^b\}&=\frac1{N_c}\delta^{ab}I+d^{abc}T^c,\\
+ \Tr(T^aT^b)&=\frac12\delta^{ab}.
+\end{align}
+For \(SU(3)\),
+\begin{equation}
+ C_F=\frac43,
+ \qquad C_A=3,
+ \qquad f^{abc}f^{abc}=24,
+ \qquad d^{abc}d^{abc}=\frac{40}{3}.
+\end{equation}
+
+\section{Strict Dyson--Magnus audit}
+\label{app:dyson-magnus}
+
+The equality through order two follows from
+\begin{align}
+ \frac12\Omega_1^2
+ &=\frac12\int_{s_1>s_2}\dd s_1\dd s_2
+ \left[
+ \cK_1\cK_2+\cK_2\cK_1
+ \right],\\
+ \Omega_2
+ &=\frac12\int_{s_1>s_2}\dd s_1\dd s_2
+ \left[
+ \cK_1\cK_2-\cK_2\cK_1
+ \right],
+\end{align}
+so
+\begin{equation}
+ \frac12\Omega_1^2+\Omega_2
+ =\int_{s_1>s_2}\dd s_1\dd s_2\,\cK_1\cK_2.
+\end{equation}
+The implementation stores the discarded order explicitly and never compares
+objects with different perturbative content.
+
+\section{Wilson support schema}
+\label{app:support-schema}
+
+\begin{verbatim}
+{
+  "support_manifest_id": "...",
+  "microscopic_state_id": "...",
+  "species": "Q | QBAR | G",
+  "wilson_order": 0,
+  "path_or_link_pair_id": "...",
+  "representation": "FUNDAMENTAL | ANTIFUNDAMENTAL | ADJOINT",
+  "initial_sector": "...",
+  "intermediate_sector_sequence": ["..."],
+  "final_sector": "...",
+  "contact_operator_ids": ["..."],
+  "support_status": "EXPLICIT_FOCK_SUPPORTED | INDUCED_WITH_REMAINDER | UNAVAILABLE",
+  "remainder_norm": 0.0,
+  "regulator_id": "...",
+  "assumption_plan_id": "..."
+}
+\end{verbatim}
+
+\section{Spectral and cut schema}
+\label{app:cut-schema}
+
+\begin{verbatim}
+{
+  "cut_ledger_id": "...",
+  "spectral_rule_id": "...",
+  "threshold": 0.0,
+  "continuum_density_id": "...",
+  "finite_volume_sequence": ["..."],
+  "ordered_denominators": ["..."],
+  "single_cut_surfaces": ["..."],
+  "double_cut_intersection": "...",
+  "equivalence_two_cells": ["..."],
+  "count_once_certificate": "...",
+  "below_threshold_residual": 0.0,
+  "continuum_convergence_residual": 0.0,
+  "epsilon_is_physical": false
+}
+\end{verbatim}
+
+\section{Soft and rapidity schema}
+\label{app:soft-schema}
+
+\begin{verbatim}
+{
+  "soft_ledger_id": "...",
+  "operator_id": "...",
+  "wilson_order": 2,
+  "route": "BOUNDARY_ONLY_RESCATTERING",
+  "W0_id": "...",
+  "W1_id": "...",
+  "W2_id": "...",
+  "S1_id": "...",
+  "S2_id": "...",
+  "rapidity_counterterm_ids": ["..."],
+  "uv_counterterm_ids": ["..."],
+  "rapidity_derivative_residual": 0.0,
+  "uv_finite_matching_status": "UNRESOLVED_NOT_ZERO",
+  "physical_tmd_scheme_status": "NOT_ASSIGNED"
+}
+\end{verbatim}
+
+\section{Nuclear handoff schema}
+\label{app:nuclear-schema}
+
+\begin{verbatim}
+{
+  "nucleon_wilson_bundle_id": "...",
+  "proton_member_id": "...",
+  "neutron_member_id": "...",
+  "correlation_member_id": "...",
+  "supported_orders": [0, 1, 2],
+  "species": ["u", "d", "ubar", "dbar", "g"],
+  "path_ids": ["..."],
+  "gluon_link_pair_ids": ["..."],
+  "gluon_color_classes": ["F_TYPE", "D_TYPE"],
+  "partonic_wilson_only": true,
+  "nuclear_coherent_propagation": "UNAVAILABLE",
+  "tagged_fsi": "UNAVAILABLE",
+  "matching_status": "REGULATED_FINITE_BASIS"
+}
+\end{verbatim}
+
+\section{Compact acceptance checklist}
+\label{app:checklist}
+
+Before release, verify:
+\begin{enumerate}
+ \item complete matrix parent, not scalar-only output;
+ \item convention-derived pole signs;
+ \item explicit spectral support and exact below-threshold zero;
+ \item full antiunitary future/past transformation;
+ \item distinct Sivers and Boer--Mulders projectors;
+ \item direct positive-\(x\) antiquarks;
+ \item four gluon link pairs and independent \(f/d\) channels;
+ \item explicit Fock support through order two;
+ \item strict Dyson--Magnus equality and nonzero commutator ablation;
+ \item cut count-once and no squared delta;
+ \item complete first-/second-order soft subtraction;
+ \item finite gauge ledger with qualified status;
+ \item exact/full-bond equality and observable-sensitive bond study;
+ \item order three unavailable;
+ \item partonic/nuclear rescattering separation;
+ \item matching, evolution, process, inference, and production gates closed.
+\end{enumerate}
+
+\small
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{Collins2002}
+J.~C.~Collins,
+``Leading-twist single-transverse-spin asymmetries: Drell--Yan and
+deep-inelastic scattering,''
+Phys. Lett. B \textbf{536}, 43 (2002),
+arXiv:hep-ph/0204004.
+
+\bibitem{BoerMuldersPijlman2003}
+D.~Boer, P.~J.~Mulders, and F.~Pijlman,
+``Universality of T-odd effects in single spin and azimuthal asymmetries,''
+Nucl. Phys. B \textbf{667}, 201 (2003),
+arXiv:hep-ph/0303034.
+
+\bibitem{Bomhof2006}
+C.~J.~Bomhof, P.~J.~Mulders, and F.~Pijlman,
+``The construction of gauge-links in arbitrary hard processes,''
+Eur. Phys. J. C \textbf{47}, 147 (2006),
+arXiv:hep-ph/0601171.
+
+\bibitem{Meissner2009}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-1/2 hadron,''
+JHEP \textbf{08}, 056 (2009),
+arXiv:0906.5323.
+
+\bibitem{LorcePasquini2013}
+C.~Lorc\'e and B.~Pasquini,
+``Structure analysis of the generalized correlator of quark and gluon for a
+spin-1/2 target,''
+JHEP \textbf{09}, 138 (2013),
+arXiv:1307.4497.
+
+\bibitem{Echevarria2016}
+M.~G.~Echevarria, A.~Idilbi, K.~Kanazawa, C.~Lorc\'e, A.~Metz,
+B.~Pasquini, and M.~Schlegel,
+``Proper definition and evolution of generalized transverse momentum
+distributions,''
+Phys. Lett. B \textbf{759}, 336 (2016),
+arXiv:1602.06953.
+
+\bibitem{Boer2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and
+Y.-J.~Zhou,
+``Gluon and Wilson loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016),
+arXiv:1607.01654.
+
+\bibitem{Gardi2013}
+E.~Gardi, J.~M.~Smillie, and C.~D.~White,
+``The non-Abelian exponentiation theorem for multiple Wilson lines,''
+JHEP \textbf{06}, 088 (2013),
+arXiv:1304.7040.
+
+\bibitem{Blanes2009}
+S.~Blanes, F.~Casas, J.~A.~Oteo, and J.~Ros,
+``The Magnus expansion and some of its applications,''
+Phys. Rept. \textbf{470}, 151 (2009),
+arXiv:0810.5488.
+
+\bibitem{EIS2012}
+M.~G.~Echevarria, A.~Idilbi, and I.~Scimemi,
+``Soft and collinear factorization and transverse momentum dependent parton
+distribution functions,''
+Phys. Lett. B \textbf{726}, 795 (2013),
+arXiv:1211.1947.
+
+\bibitem{Vladimirov2017}
+A.~Vladimirov,
+``Structure of rapidity divergences in soft factors,''
+JHEP \textbf{04}, 045 (2018),
+arXiv:1707.07606.
+
+\bibitem{Cutkosky1960}
+R.~E.~Cutkosky,
+``Singularities and discontinuities of Feynman amplitudes,''
+J. Math. Phys. \textbf{1}, 429 (1960).
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{Lorce2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys. Rev. D \textbf{84}, 014015 (2011),
+arXiv:1106.0139.
+
+\bibitem{Marinho2008}
+J.~A.~O.~Marinho, T.~Frederico, E.~Pace, G.~Salm\`e, and P.~U.~Sauer,
+``Light-front Ward--Takahashi identity for two-fermion systems,''
+Phys. Rev. D \textbf{77}, 116010 (2008),
+arXiv:0805.0707.
+
+\bibitem{Singh2010}
+S.~Singh, R.~N.~C.~Pfeifer, and G.~Vidal,
+``Tensor network decompositions in the presence of a global symmetry,''
+Phys. Rev. A \textbf{82}, 050301(R) (2010),
+arXiv:0907.2994.
+
+\end{thebibliography}
+
+\end{document}

@@ -6,6 +6,11 @@ PLAN-B, and analytic-oracle identities. AV18/Norfolk radial S and D
 amplitudes are read at amplitude level and their source hashes enter each
 correlated proton/neutron member; they are not combined as additive models.
 
+Volume XII, `references/volume_xii_microscopic_wilson_second_order.tex`, is
+the normative nucleon-side Wilson specification consumed at the N0 boundary.
+Its order-resolved partonic staple, cut, color, and soft identities remain
+separate from unavailable coherent nuclear propagation.
+
 The authoritative recoil map uses y, pT, DeltaT and the factor (1-y)/2,
 preserves the spectator, transfers full Delta to the active nucleon, and has
 unit Jacobian. The state retains S/D amplitudes, SS/SD/DS/DD ancestry and

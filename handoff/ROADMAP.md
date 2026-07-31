@@ -1651,3 +1651,9 @@ unavailable.
 transition operators, internal-versus-exchange pion subtraction,
 Hamiltonian-consistent two-body currents, and a coherent helicity-resolved
 small-x pilot.
+
+Volume XII is preserved at
+`references/volume_xii_microscopic_wilson_second_order.tex` with SHA-256
+`204d3dc79084a26b86b49cf8042d22ae32cffb15b0e0deec6cf2dcb043a76c83`.
+It is the normative nucleon-side second-order Wilson specification for the
+C15 boundary and later nuclear packages.
