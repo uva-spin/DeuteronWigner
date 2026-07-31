@@ -6,6 +6,7 @@ byte-for-byte from the supplied sources.
 
 | Volume | Repository source | SHA-256 | Status |
 |---|---|---|---|
+| Architecture revision | `algebraic_geometric_next_level_model_note_revised.tex` | `29a75dac37fe695ab05e139c9872e3a4491fcf70b019dec386129a596eb10489` | present |
 | 0 | `volume_0_algebraic_geometric.tex` | `e1cb59d6c945eb1a829583500eeea556189d90c17f4ce14538f1b2e2e4aa6229` | present |
 | I | `volume_i_regulated_light_front_foundations.tex` | `d085bec6617328ed4fa247cf5156f147f2368aec96a61d2faa79f7064998a9b5` | present |
 | II | `volume_ii_common_nucleon_gtmd_overlaps.tex` | `2cbe5ac0c04726f7a1610a1b6d19f98e9b5a813bc773fa7bbd0a7e99830e930b` | present |
