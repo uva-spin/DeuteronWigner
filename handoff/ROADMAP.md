@@ -1657,3 +1657,22 @@ Volume XII is preserved at
 `204d3dc79084a26b86b49cf8042d22ae32cffb15b0e0deec6cf2dcb043a76c83`.
 It is the normative nucleon-side second-order Wilson specification for the
 C15 boundary and later nuclear packages.
+## C16/N1 — spin-resolved NNPI validation root
+
+The final local commit is the commit containing this entry; nothing is
+pushed. N1 adds a normalized `NN + NNPI` state with complete pion charge
+channels, three-body and transition recoil, a coupled Hermitian Hamiltonian,
+nucleon/pion/transition operators, internal/exchange pion subtraction,
+Hamiltonian-consistent current, coherent helicity pilot, parton/nuclear
+overlap, derived CP map, and two-branch nuclear TTN.
+
+The tower dimensions are 30, 52, and 78; the fine benchmark has
+`Z_NN=0.8915758315` and `Z_NNPI=0.1084241685`. C16 contains 516 requirements
+and 308 detected injections. It remains isolated from the 216 production
+routes and all matching, evolution, process, and inference roots.
+
+**Exact next package:** C17/N2 -- continuum-calibrated pion/nucleon
+transition dynamics and complete Hamiltonian-consistent exchange-current
+operator basis, followed by controlled diffractive-input and nuclear
+coherence matching. DeltaDelta, compact six-quark, and hidden-color sectors
+remain later explicit branches rather than N2 defaults.

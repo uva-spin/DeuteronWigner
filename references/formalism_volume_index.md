@@ -19,6 +19,7 @@ byte-for-byte from the supplied sources.
 | IX | `volume_ix_dynamical_gluon_fock_sectors.tex` | `3b90df86e9e426c15aea93a25e64223e9243108b4a9051eebf74f233ad72cc1c` | present |
 | X | `volume_x_light_sea_chiral_pcac_antiquark_gtmds.tex` | `87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a` | present |
 | XI | `volume_xi_microscopic_nonzero_transfer_gtmds.tex` | `d66450bb7f21bf0464b926a3480594da3be1ed009948a8031f4b4cb2756b915d` | present |
+| XII | `volume_xii_microscopic_wilson_second_order.tex` | `204d3dc79084a26b86b49cf8042d22ae32cffb15b0e0deec6cf2dcb043a76c83` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -32,3 +33,6 @@ Volume X the light-sea, chiral/PCAC, and microscopic-antiquark formalism.
 Volume XI defines the microscopic nonzero-transfer GTMD helicity-matrix,
 projector-closure, forward-reduction, current/EMT, and Wigner/OAM contract
 implemented and validated by C11/H4.
+Volume XII defines the order-resolved microscopic Wilson, spectral-cut,
+link-odd helicity-matrix, soft-overlap, and second-order non-Abelian
+convergence boundary consumed by C15 and C16.
