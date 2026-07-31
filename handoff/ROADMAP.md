@@ -1425,3 +1425,65 @@ evolution input, process prediction, or inference model.
 **Exact next package:** C10/H3 — fully antisymmetrized light-sea sectors,
 chiral dynamics, axial/PCAC currents, explicit/induced sea subtraction, and
 positive-x microscopic antiquark exports.
+
+### C10/H3 — Explicit light sea, PCAC, and positive-x antiquarks
+
+Status: **implemented and accepted locally, 2026-07-31**
+
+Starting commit:
+`31ae656da38a94432dd7f6c753d75e54170d9155`. The final local commit is the
+commit containing this entry; nothing is pushed.
+
+The common state now contains distinct `QQQ`, `QQQG`, `QQQUUBAR`, and
+`QQQDDBAR` branches with dimensions `4+6+9+9`, `7+10+15+15`, and
+`10+14+21+21`. All three five-parton color singlets and the exact signed S4
+four-quark antisymmetrizer are retained. Maximum residuals are: color
+generator `1.8667974275620837e-15`, color orthonormality
+`2.220446049250313e-16`, antisymmetrizer idempotence
+`6.938893903907228e-18`, Hamiltonian Hermiticity `0`, pole mass
+`1.1102230246251565e-16`, PCAC `0`, full-bond TTN `0`, and common-parent
+route closure `0`.
+
+PLAN-A is `C10:H3:PLAN:7c520ce5e2e04d2c7719`; PLAN-B is
+`C10:H3:PLAN:b2efe73052d1c9d1004b`. Pair couplings flow
+`g45u=0.07,0.0648148,0.0603448` and
+`g45d=0.078,0.0722222,0.0672414`. PLAN-A chiral coupling flows
+`0.035,0.0318182,0.0291667`; PLAN-B sets it to zero. One Jacobian null
+direction and all frozen holdouts remain explicit.
+
+PLAN-A sea probabilities decrease across the tower:
+`P_uubar=0.005254,0.004829,0.004220` and
+`P_ddbar=0.008380,0.007586,0.006518`. The resulting unfitted
+`dbar-ubar` diagnostic is positive:
+`0.003126,0.002756,0.002299`. Probability, valence `u=2,d=1`, charge,
+baryon, momentum, and canonical Jz ledgers close.
+
+The finite PCAC sum closes term by term; the second-point holdout residual is
+`0.0065` and the Goldberger--Treiman-like diagnostic is `0.081`, neither
+fitted away. Direct positive-x `ubar`/`dbar` overlaps share one regulated
+quark-antiquark-gluon member identity. Feshbach remainder norms remain
+nonzero (`0.0380--0.0578`) after vector, axial, pseudoscalar, antiquark, and
+norm-kernel transformations.
+
+The antiquark Wilson adapter retains flavor and all three color
+multiplicities and returns zero absorption for discrete off-shell input and
+finite epsilon without physical support. Highest status is
+`MICROSCOPIC_ANTIQUARK_WILSON_INPUT_INTERFACE_VALIDATED`.
+
+Regression: 876 tests, nine builders, 36 evidence rows, 162 atlas pages, 210
+C10 requirements, and 90 C10 injections pass. Prior injection counts remain
+24/40/48/60/48/56/83. The 216-route production registry, production
+provenance/composition, eight authoritative artifacts, C7/C8/C9 oracles, and
+pinned C5/C6 manifests remain unchanged. All JSON regenerates
+deterministically.
+
+The revised algebraic/geometric source and Volumes VIII/IX were not supplied
+or present; exact expected hashes and absences are recorded. C10 remains a
+finite validation EFT, not continuum QCD, a physical nucleon/pion, matched
+PDF/GTMD/TMD, full chiral proof, Wilson-ready object, nuclear input,
+evolution/process prediction, or inference model.
+
+**Exact next package:** C11/H4 — microscopic nonzero-transfer quark,
+antiquark, and gluon GTMD helicity matrices from the common H3 eigenstate;
+complete T-even projector closure; local-current/OAM consistency; and
+microscopic replacement of the C3/C4 analytic common-parent pilots.
