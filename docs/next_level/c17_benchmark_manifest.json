@@ -1,0 +1,116 @@
+{
+  "rows": [
+    {
+      "family": "ANALYTIC_SEPARABLE_CONTINUUM",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-A",
+      "status": "PASS"
+    },
+    {
+      "family": "FINITE_VOLUME_CONVERGENCE",
+      "residual_or_signal": 0.002767179841061118,
+      "stable_id": "N2-B",
+      "status": "PASS"
+    },
+    {
+      "family": "CHARGE_COMPLETE_CHANNELS",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-C",
+      "status": "PASS"
+    },
+    {
+      "family": "TRANSITION_HERMITICITY",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-D",
+      "status": "PASS"
+    },
+    {
+      "family": "HAMILTONIAN_GAUGING",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-E",
+      "status": "PASS"
+    },
+    {
+      "family": "BLOCKWISE_CONTINUITY",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-F",
+      "status": "PASS"
+    },
+    {
+      "family": "CURRENT_AND_ANGULAR_CLOSURE",
+      "residual_or_signal": 3.2e-13,
+      "stable_id": "N2-G",
+      "status": "PASS"
+    },
+    {
+      "family": "SEPARATOR_FLOW",
+      "residual_or_signal": 0.0006000000000000449,
+      "stable_id": "N2-H",
+      "status": "PASS"
+    },
+    {
+      "family": "FESHBACH_EQUIVALENCE",
+      "residual_or_signal": 0.0038,
+      "stable_id": "N2-I",
+      "status": "PASS"
+    },
+    {
+      "family": "PION_ACTIVE_ROUTE",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-J",
+      "status": "PASS"
+    },
+    {
+      "family": "TRANSITION_TENSOR_SIGNAL",
+      "residual_or_signal": 0.0062,
+      "stable_id": "N2-K",
+      "status": "PASS"
+    },
+    {
+      "family": "COHERENT_CONTINUUM",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-L",
+      "status": "PASS"
+    },
+    {
+      "family": "CP_REDUCTION",
+      "residual_or_signal": 1.2e-13,
+      "stable_id": "N2-M",
+      "status": "PASS"
+    },
+    {
+      "family": "EXACT_KRYLOV_TTN",
+      "residual_or_signal": 1.3e-15,
+      "stable_id": "N2-N",
+      "status": "PASS"
+    },
+    {
+      "family": "TAGGED_INCLUSIVE_CLOSURE",
+      "residual_or_signal": 2.4e-13,
+      "stable_id": "N2-O",
+      "status": "PASS"
+    },
+    {
+      "family": "HOLDOUT_PREDICTION",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-P",
+      "status": "PASS"
+    },
+    {
+      "family": "PROVENANCE_NORMALIZATION",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-Q",
+      "status": "PASS"
+    },
+    {
+      "family": "DOWNSTREAM_GATES",
+      "residual_or_signal": 0.0,
+      "stable_id": "N2-R",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "tagged_inclusive_residual": 2.4e-13,
+  "tensor_ablation_signal": 0.0062,
+  "transition_adjoint_residual": 0.0
+}

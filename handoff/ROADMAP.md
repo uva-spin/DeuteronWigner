@@ -1681,3 +1681,25 @@ Volume XIII is preserved at
 `references/volume_xiii_nnpi_pion_matching_coherent_nuclear.tex` with
 SHA-256 `59767d330b55cfff552b34979692cdb43720c978c75e07d5f4ca896f940e8fb9`.
 It is the package-specific normative formalism for C16/N1 and its successors.
+
+## C17/N2 — continuum NNPI and exchange-current closure
+
+The final local commit is the commit containing this entry; nothing is
+pushed. N2 adds continuum-calibrated NNPI transition dynamics, a convergent
+finite-volume spectral map, pole/residue and held-out calibration reports,
+and a declared-order Hamiltonian-to-exchange-current certificate. Continuity
+closes by component, Fock block, and charge channel. Separator trajectories,
+explicit/Feshbach-induced pion equivalence, unmatched pion-active closure,
+coherent continuum, CP reduction, TTN, and independent convergence axes are
+machine-readable.
+
+C17 contains 614 covered requirements and 340 detected negative injections.
+It is validation-only, leaves all C16 and production outputs immutable, and
+does not issue physical, matching, evolution, process, inference, or
+production readiness.
+
+**Exact next package:** C18/N3 -- add explicit DeltaDelta and compact
+six-quark/hidden-color sectors as exclusive typed branches, calibrate their
+mixing against independent nuclear holdouts, derive their Hamiltonian-
+consistent operator/current attachments, and prove count-once composition
+with NN and NNPI before any downstream matching.
