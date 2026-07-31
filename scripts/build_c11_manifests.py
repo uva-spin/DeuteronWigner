@@ -13,12 +13,13 @@ SOURCES={
 "references/algebraic_geometric_next_level_model_note_revised.tex":"29a75dac37fe695ab05e139c9872e3a4491fcf70b019dec386129a596eb10489",
 "references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex":"8d9d53ba6ed007909abbb41e2ad93217ee42368fde43df24569b568990879c00",
 "references/volume_ix_dynamical_gluon_fock_sectors.tex":"3b90df86e9e426c15aea93a25e64223e9243108b4a9051eebf74f233ad72cc1c",
-"references/volume_x_light_sea_chiral_pcac_antiquark_gtmds.tex":"87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a"}
+"references/volume_x_light_sea_chiral_pcac_antiquark_gtmds.tex":"87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a",
+"references/volume_xi_microscopic_nonzero_transfer_gtmds.tex":"d66450bb7f21bf0464b926a3480594da3be1ed009948a8031f4b4cb2756b915d"}
 def sha(p): return hashlib.sha256((R/p).read_bytes()).hexdigest()
 def write(name,data): (D/name).write_text(json.dumps(data,indent=2,sort_keys=True,default=lambda x:x.tolist() if isinstance(x,np.ndarray) else (x.item() if isinstance(x,np.generic) else str(x)))+"\n")
 def normative():
  rows=[{"stable_id":"C11.NORM."+str(i).zfill(2),"path":p,"sha256":sha(p),"expected_sha256":h,"matches":sha(p)==h} for i,(p,h) in enumerate(SOURCES.items(),1)]
- return {"schema_version":"1.0.0","rows":rows,"all_match":all(x["matches"] for x in rows),"scope":"Volumes 0-II and VI-X govern H4; VIII-X hashes pin recent sources"}
+ return {"schema_version":"1.0.0","rows":rows,"all_match":all(x["matches"] for x in rows),"scope":"Volumes 0-II and VI-XI govern H4; VIII-XI hashes pin recent sources"}
 def assumptions():
  comparison=[]
  for p in plans():

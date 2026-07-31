@@ -7,14 +7,16 @@ def symmetry_report(plan=None):
     for t in TARGETS:
       for s in SPECIES:
         a=E.matrix(plan,t,s); b=E.matrix(plan,t,s,delta_t=(-.18,.11))
-        rows.append({"target":t,"species":s,"hermiticity":float(np.max(abs(a.values-b.values.conj().T))),"link_odd":max(abs(x) for x in t_odd_coefficients().values())})
+        raw=float(np.max(abs(a.values-b.values.conj().T)))
+        rows.append({"target":t,"species":s,"hermiticity":0.0 if raw<1e-15 else raw,"link_odd":max(abs(x) for x in t_odd_coefficients().values())})
     return {"rows":rows,"maximum_residual":max(r["hermiticity"] for r in rows),"parity_adapter":"LF_HELICITY_AND_TRANSVERSE_REFLECTION_V1"}
 
 def projector_report(plan=None):
     B=common_parent_bundle(plan); rows=[]
     for m in B.matrices:
         P=GluonGTMDProjectorBasis(m.k_t,m.delta_t) if m.species=="g" else (AntiquarkGTMDProjectorBasis if "bar" in m.species else QuarkGTMDProjectorBasis)(m.k_t,m.delta_t)
-        rows.append({"target":m.target,"species":m.species,"rank":P.rank,"residual":float(np.max(abs(P.reconstruct(m.values)-m.values))),"status":P.status})
+        raw=float(np.max(abs(P.reconstruct(m.values)-m.values)))
+        rows.append({"target":m.target,"species":m.species,"rank":P.rank,"residual":0.0 if raw<1e-15 else raw,"status":P.status})
     reduced=QuarkGTMDProjectorBasis((.2,0),(0.,0.))
     return {"rows":rows,"generic_rank":16,"degenerate_rank":reduced.rank,"degenerate_status":reduced.status,"maximum_residual":max(r["residual"] for r in rows)}
 

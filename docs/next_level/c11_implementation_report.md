@@ -8,6 +8,10 @@ implementation is finite-basis, Wilson order zero, T-even, and explicitly
 unmatched. It preserves the accepted phenomenological model and every C3/C4
 analytic benchmark.
 
+The package-specific formal contract is Volume XI,
+`references/volume_xi_microscopic_nonzero_transfer_gtmds.tex`, preserved at
+SHA-256 `d66450bb7f21bf0464b926a3480594da3be1ed009948a8031f4b4cb2756b915d`.
+
 Both H3 theories are compiled independently. PLAN-A retains owned chiral
 pair dynamics; PLAN-B disables that interaction. They share code and
 conventions but are never summed. Their state, resolution, recoil, grid,

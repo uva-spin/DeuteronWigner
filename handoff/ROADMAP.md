@@ -1525,6 +1525,11 @@ replacement, and nuclear-helicity-interface validation. Physical GTMD/TMD,
 Wilson/T-odd, nuclear matching, LF-to-QCD matching, evolution, process,
 inference, and production promotion remain closed.
 
+The supplied Volume XI source is preserved at
+`references/volume_xi_microscopic_nonzero_transfer_gtmds.tex` with SHA-256
+`d66450bb7f21bf0464b926a3480594da3be1ed009948a8031f4b4cb2756b915d` and is
+now the package-specific normative H4 formalism reference.
+
 **Exact next package:** C12/H5 — microscopic Wilson-line dynamics on the H4
 common GTMD parent: physical spectral support, link-odd quark/antiquark/gluon
 helicity matrices, shared Sivers/Boer-Mulders projections, active-gluon f/d
