@@ -1371,3 +1371,57 @@ and Ward closure, gluon/OAM exports, larger-tower convergence, and the
 controlled microscopic reconnection boundary to the C5/C6 Wilson engine.
 The H1 induced color-spin image and explicit `qqqg` dynamics must remain
 alternative until an overlap subtraction/matching map exists.
+
+### C9/H2 — Dynamical qqqg sector and microscopic Wilson boundary
+
+Status: **implemented and accepted locally, 2026-07-30**
+
+Starting commit:
+`6a95383694ed93bde8866127b7368d465e546b62`. The final local commit is the
+commit containing this entry; nothing is pushed.
+
+C9 extends the same microscopic/compiler/tensor architecture to
+`qqq + qqqg`. The tower dimensions are `4+6`, `7+10`, and `10+14`; both
+independent qqq-octet times adjoint-gluon singlets are retained. The maximum
+color-generator residual is `6.490367750618711e-16`, color orthonormality
+residual `2.220446049250313e-16`, and coupled Hamiltonian, vertex-adjoint,
+instantaneous Hermiticity, and matrix-free residuals are zero.
+
+H2-PLAN-A is `C9:H2:PLAN:173f2a46b45594dd098a` with certificate
+`173f2a46b45594dd098a01b9cc6772156dfa56f152e3745ce826257e14ad3b85`;
+H2-PLAN-B is `C9:H2:PLAN:4bfe653bfaf9d7d8142c` with certificate
+`4bfe653bfaf9d7d8142c17565039cafc4440782d8668617b12efaeb6a750a04c`.
+The read-only H1 reference remains `C8:H1:PLAN:d21966f5baf0fbb07821`.
+
+The pole condition closes to `1.1102230246251565e-16`; charge and Abelianized
+Ward residuals are zero. One Jacobian null direction is explicitly retained.
+PLAN-A confinement flows `0.32, 0.2666666667, 0.2285714286`; the qg coupling
+flows `0.105, 0.0990566038, 0.09375`; sector-4 counterterms flow
+`0.04, 0.048, 0.056`. PLAN-B sets confinement to zero.
+
+PLAN-A qqqg probabilities are `0.0935642, 0.0850914, 0.0756149`, with gluon
+momentum fractions `0.0415841, 0.0378184, 0.0336066`. Probability, momentum,
+and finite-basis canonical Jz ledgers close. Full-bond TTN energy residual is
+zero; low bonds omit the gluon sector and visibly fail its probability/OAM
+observables. Feshbach remainder norms are nonzero (`0.0270--0.0338`), so the
+explicit sector is equivalent only to the induced operator plus its declared
+remainder.
+
+The C5/C6 adapter returns zero absorption for discrete off-shell input and
+for finite epsilon without physical support. Highest status is
+`MICROSCOPIC_WILSON_INPUT_INTERFACE_VALIDATED`, not `WILSON_READY`.
+
+Regression: 865 tests, nine builders, 36 evidence rows, 162 atlas pages,
+157 C9 requirements, and 83 C9 injections pass. Earlier injection counts
+remain 24/40/48/60/48/56. The 216-route registry, production provenance and
+composition, eight authoritative artifacts, C7/C8 oracles, and pinned C5/C6
+manifests remain unchanged. JSON regeneration is deterministic.
+
+The revised algebraic/geometric note and Volume VIII were absent and are
+recorded as such. C9 remains finite, validation-only, unmatched, and not a
+physical nucleon, gluon PDF, GTMD/TMD, full gauge proof, nuclear input,
+evolution input, process prediction, or inference model.
+
+**Exact next package:** C10/H3 — fully antisymmetrized light-sea sectors,
+chiral dynamics, axial/PCAC currents, explicit/induced sea subtraction, and
+positive-x microscopic antiquark exports.
