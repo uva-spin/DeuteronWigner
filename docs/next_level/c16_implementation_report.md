@@ -7,6 +7,10 @@ diagnostics, not measured probabilities. The complete charge basis contains
 `pn pi0`, `pp pi-`, and `nn pi+`, coupled to charge +1, isospin zero, and
 J-parity 1+ with the required odd orbital parity.
 
+Volume XIII, `references/volume_xiii_nnpi_pion_matching_coherent_nuclear.tex`,
+is the package-specific normative formalism for the N1 state, pion matching,
+two-body-current, and coherent-amplitude interfaces.
+
 One typed three-body recoil authority handles active nucleons and pions; a
 separate number-changing map handles transitions. The coupled Hamiltonian is
 Hermitian, has generated adjoints, and agrees between exact and matrix-free

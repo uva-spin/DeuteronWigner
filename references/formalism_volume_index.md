@@ -20,6 +20,7 @@ byte-for-byte from the supplied sources.
 | X | `volume_x_light_sea_chiral_pcac_antiquark_gtmds.tex` | `87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a` | present |
 | XI | `volume_xi_microscopic_nonzero_transfer_gtmds.tex` | `d66450bb7f21bf0464b926a3480594da3be1ed009948a8031f4b4cb2756b915d` | present |
 | XII | `volume_xii_microscopic_wilson_second_order.tex` | `204d3dc79084a26b86b49cf8042d22ae32cffb15b0e0deec6cf2dcb043a76c83` | present |
+| XIII | `volume_xiii_nnpi_pion_matching_coherent_nuclear.tex` | `59767d330b55cfff552b34979692cdb43720c978c75e07d5f4ca896f940e8fb9` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -36,3 +37,6 @@ implemented and validated by C11/H4.
 Volume XII defines the order-resolved microscopic Wilson, spectral-cut,
 link-odd helicity-matrix, soft-overlap, and second-order non-Abelian
 convergence boundary consumed by C15 and C16.
+Volume XIII defines the spin-resolved NN-pion sector, pion matching,
+Hamiltonian-consistent two-body-current, and helicity-resolved coherent
+nuclear-amplitude contract implemented by C16/N1.

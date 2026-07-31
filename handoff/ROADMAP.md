@@ -1676,3 +1676,8 @@ transition dynamics and complete Hamiltonian-consistent exchange-current
 operator basis, followed by controlled diffractive-input and nuclear
 coherence matching. DeltaDelta, compact six-quark, and hidden-color sectors
 remain later explicit branches rather than N2 defaults.
+
+Volume XIII is preserved at
+`references/volume_xiii_nnpi_pion_matching_coherent_nuclear.tex` with
+SHA-256 `59767d330b55cfff552b34979692cdb43720c978c75e07d5f4ca896f940e8fb9`.
+It is the package-specific normative formalism for C16/N1 and its successors.
