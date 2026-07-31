@@ -14,6 +14,9 @@ byte-for-byte from the supplied sources.
 | V | `volume_v_matching_evolution_factorization.tex` | `57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51` | present |
 | VI | `volume_vi_shared_inference_validation.tex` | `568979e0fa0015a70795a7c27c4c98b992848085c982a7ee4eca0374fec72570` | present |
 | VII | `volume_vii_concrete_microscopic_nucleon_hamiltonian.tex` | `326fd902f648b760ee97add0bb30418b4f4843f1bc64c98afd752940d11ac6e1` | present |
+| VIII | `volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex` | `8d9d53ba6ed007909abbb41e2ad93217ee42368fde43df24569b568990879c00` | present |
+| IX | `volume_ix_dynamical_gluon_fock_sectors.tex` | `3b90df86e9e426c15aea93a25e64223e9243108b4a9051eebf74f233ad72cc1c` | present |
+| X | `volume_x_light_sea_chiral_pcac_antiquark_gtmds.tex` | `87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -21,3 +24,6 @@ dynamical-Wilson-line validation packages. Volume IV supplies the matched
 spin-1 nuclear contract, Volume V the matching/evolution contract, Volume VI
 the shared inference/validation contract, and Volume VII the concrete
 microscopic nucleon-Hamiltonian program.
+Volume VIII defines the symmetry-adapted tensor-network and prediction
+compiler contract, Volume IX the dynamical-gluon Fock-sector extension, and
+Volume X the light-sea, chiral/PCAC, and microscopic-antiquark formalism.

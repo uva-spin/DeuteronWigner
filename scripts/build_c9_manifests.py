@@ -9,7 +9,7 @@ from deuteron_wigner.microscopic.h2.diagnostics import solve
 from deuteron_wigner.microscopic.h2.injections import INJECTIONS
 
 ROOT=Path(__file__).resolve().parents[1];DOC=ROOT/"docs"/"next_level";START="6a95383694ed93bde8866127b7368d465e546b62"
-SOURCES=("references/algebraic_geometric_next_level_model_note_revised.tex","references/volume_i_regulated_light_front_foundations.tex","references/volume_ii_common_nucleon_gtmd_overlaps.tex","references/volume_iii_dynamical_wilson_lines.tex","references/volume_iv_matched_spin1_nuclear_dynamics.tex","references/volume_v_matching_evolution_factorization.tex","references/volume_vi_shared_inference_validation.tex","references/volume_vii_concrete_microscopic_nucleon_hamiltonian.tex","references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex","references/model_construction_note.tex")
+SOURCES=("references/algebraic_geometric_next_level_model_note_revised.tex","references/volume_i_regulated_light_front_foundations.tex","references/volume_ii_common_nucleon_gtmd_overlaps.tex","references/volume_iii_dynamical_wilson_lines.tex","references/volume_iv_matched_spin1_nuclear_dynamics.tex","references/volume_v_matching_evolution_factorization.tex","references/volume_vi_shared_inference_validation.tex","references/volume_vii_concrete_microscopic_nucleon_hamiltonian.tex","references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex","references/volume_ix_dynamical_gluon_fock_sectors.tex","references/model_construction_note.tex")
 def sha(p):return hashlib.sha256((ROOT/p).read_bytes()).hexdigest()
 def default(x):
     if isinstance(x,np.generic):return x.item()

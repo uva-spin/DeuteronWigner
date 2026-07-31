@@ -1354,9 +1354,9 @@ pinned C5/C6 manifests are unchanged. C8 covers 104 stable requirements; all
 JSON regenerates deterministically and validates.
 
 The requested revised algebraic/geometric note
-`references/algebraic_geometric_next_level_model_note_revised.tex` was absent.
-This is recorded in `c8_preimplementation_baseline.json`; Volume 0 and the
-complete indexed Volumes I--VII supplied the available normative contracts.
+`references/algebraic_geometric_next_level_model_note_revised.tex` remains
+absent. This is recorded in `c8_preimplementation_baseline.json`; Volume 0
+and the indexed formal volumes supplied the available normative contracts.
 
 C8 remains `VALENCE_ONLY` and `C8_H1_VALIDATION_ONLY`. It does not establish
 a physical nucleon, continuum/scaling trajectory, sea or gluon content,
@@ -1417,8 +1417,9 @@ remain 24/40/48/60/48/56. The 216-route registry, production provenance and
 composition, eight authoritative artifacts, C7/C8 oracles, and pinned C5/C6
 manifests remain unchanged. JSON regeneration is deterministic.
 
-The revised algebraic/geometric note and Volume VIII were absent and are
-recorded as such. C9 remains finite, validation-only, unmatched, and not a
+Volumes VIII and IX were subsequently supplied, hash-verified, indexed, and
+incorporated into the C9 normative manifest. The revised algebraic/geometric
+note remains absent. C9 remains finite, validation-only, unmatched, and not a
 physical nucleon, gluon PDF, GTMD/TMD, full gauge proof, nuclear input,
 evolution input, process prediction, or inference model.
 
@@ -1477,8 +1478,9 @@ provenance/composition, eight authoritative artifacts, C7/C8/C9 oracles, and
 pinned C5/C6 manifests remain unchanged. All JSON regenerates
 deterministically.
 
-The revised algebraic/geometric source and Volumes VIII/IX were not supplied
-or present; exact expected hashes and absences are recorded. C10 remains a
+Volumes VIII, IX, and X were subsequently supplied, hash-verified, preserved,
+and indexed. The revised algebraic/geometric source remains unavailable and
+its expected hash and absence are recorded. C10 remains a
 finite validation EFT, not continuum QCD, a physical nucleon/pion, matched
 PDF/GTMD/TMD, full chiral proof, Wilson-ready object, nuclear input,
 evolution/process prediction, or inference model.

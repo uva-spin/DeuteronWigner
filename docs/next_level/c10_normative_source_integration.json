@@ -1,9 +1,7 @@
 {
   "mismatches": [],
   "missing": [
-    "references/algebraic_geometric_next_level_model_note_revised.tex",
-    "references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex",
-    "references/volume_ix_dynamical_gluon_fock_sectors.tex"
+    "references/algebraic_geometric_next_level_model_note_revised.tex"
   ],
   "schema_version": "1.0.0",
   "sources": [
@@ -44,17 +42,24 @@
     },
     {
       "expected_sha256": "8d9d53ba6ed007909abbb41e2ad93217ee42368fde43df24569b568990879c00",
-      "matches_expected": null,
+      "matches_expected": true,
       "path": "references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex",
-      "present": false,
-      "sha256": null
+      "present": true,
+      "sha256": "8d9d53ba6ed007909abbb41e2ad93217ee42368fde43df24569b568990879c00"
     },
     {
       "expected_sha256": "3b90df86e9e426c15aea93a25e64223e9243108b4a9051eebf74f233ad72cc1c",
-      "matches_expected": null,
+      "matches_expected": true,
       "path": "references/volume_ix_dynamical_gluon_fock_sectors.tex",
-      "present": false,
-      "sha256": null
+      "present": true,
+      "sha256": "3b90df86e9e426c15aea93a25e64223e9243108b4a9051eebf74f233ad72cc1c"
+    },
+    {
+      "expected_sha256": "87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a",
+      "matches_expected": true,
+      "path": "references/volume_x_light_sea_chiral_pcac_antiquark_gtmds.tex",
+      "present": true,
+      "sha256": "87734312114b57a5bc441484c8d81a08b91c75815a037ab579c0d20fde930c4a"
     },
     {
       "expected_sha256": null,
