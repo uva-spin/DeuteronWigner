@@ -1731,3 +1731,9 @@ forbidden.
 for the complete microscopic nucleon and deuteron parent, with a closed
 regulated operator basis, small-b matching, explicit UV/rapidity/soft scheme
 identity, and first common-scheme rank-aware evolution tests.
+
+Volume XV is preserved at
+`references/volume_xv_delta_delta_six_quark_hidden_color.tex` with SHA-256
+`675cc27dfe4548e6e49d4ba7d1c093dc235003aaa8f1b77d4e4ef2829246b4cc`.
+It is the package-specific normative formalism for C18/N3 and the inherited
+non-nucleonic boundary for C19/M0.

@@ -22,6 +22,7 @@ byte-for-byte from the supplied sources.
 | XII | `volume_xii_microscopic_wilson_second_order.tex` | `204d3dc79084a26b86b49cf8042d22ae32cffb15b0e0deec6cf2dcb043a76c83` | present |
 | XIII | `volume_xiii_nnpi_pion_matching_coherent_nuclear.tex` | `59767d330b55cfff552b34979692cdb43720c978c75e07d5f4ca896f940e8fb9` | present |
 | XIV | `volume_xiv_continuum_nnpi_exchange_currents.tex` | `cb30d603948c6b14cbeaa0fbb332396e86c62c6ab76eeb116161e7eaa3c58d0d` | present |
+| XV | `volume_xv_delta_delta_six_quark_hidden_color.tex` | `675cc27dfe4548e6e49d4ba7d1c093dc235003aaa8f1b77d4e4ef2829246b4cc` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -45,3 +46,7 @@ Volume XIV defines the continuum-calibrated NN-pion channel, finite-volume
 spectral map, pole/residue, Hamiltonian-generated declared-order exchange
 currents, separator flow, coherent/CP, tagged, and convergence contracts
 implemented and validated by C17/N2.
+Volume XV defines the explicit DeltaDelta and compact six-quark sectors,
+five-dimensional color-singlet space, hidden-color basis covariance, cluster
+matching, Hamiltonian-consistent transitions, tensor diagnostics, and
+four-branch convergence contracts implemented and validated by C18/N3.

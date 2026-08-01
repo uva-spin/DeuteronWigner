@@ -5,7 +5,7 @@ import numpy as np
 from deuteron_wigner.nuclear.n3.core import *
 from deuteron_wigner.nuclear.n3.injections import INJECTIONS
 R=Path(__file__).resolve().parents[1];D=R/"docs"/"next_level";START="b25bf3d5ebb0c5c07ce3ec4230860a89165fbe48"
-SOURCES=("references/algebraic_geometric_next_level_model_note_revised.tex","references/model_construction_note.tex","references/volume_iv_matched_spin1_nuclear_dynamics.tex","references/volume_xii_microscopic_wilson_second_order.tex","references/volume_xiii_nnpi_pion_matching_coherent_nuclear.tex","references/volume_xiv_continuum_nnpi_exchange_currents.tex","docs/next_level/c14_api.md","docs/next_level/c15_api.md","docs/next_level/c16_api.md","docs/next_level/c17_api.md","docs/next_level/c17_implementation_report.md","docs/next_level/c18_n3_codex_prompt.md","handoff/ROADMAP.md")
+SOURCES=("references/algebraic_geometric_next_level_model_note_revised.tex","references/model_construction_note.tex","references/volume_iv_matched_spin1_nuclear_dynamics.tex","references/volume_xii_microscopic_wilson_second_order.tex","references/volume_xiii_nnpi_pion_matching_coherent_nuclear.tex","references/volume_xiv_continuum_nnpi_exchange_currents.tex","docs/next_level/c14_api.md","docs/next_level/c15_api.md","docs/next_level/c16_api.md","docs/next_level/c17_api.md","docs/next_level/c17_implementation_report.md","docs/next_level/c18_n3_codex_prompt.md","handoff/ROADMAP.md","references/volume_xv_delta_delta_six_quark_hidden_color.tex")
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def write(n,x):(D/n).write_text(json.dumps(x,indent=2,sort_keys=True,default=lambda z:z.tolist() if isinstance(z,np.ndarray) else (z.item() if isinstance(z,np.generic) else str(z)))+"\n")
 def requirements():

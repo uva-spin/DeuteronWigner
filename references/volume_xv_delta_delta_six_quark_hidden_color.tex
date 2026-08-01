@@ -1,0 +1,1652 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XV: DeltaDelta, Compact Six-Quark, and Hidden-Color Dynamics in the Microscopic Spin-1 Deuteron},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XV}
+\fancyhead[R]{\small\color{darkgray}DeltaDelta, six-quark, and hidden-color dynamics}
+\fancyfoot[L]{\small\color{darkgray}31 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\lT}{\bm{\ell}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\RT}{\bm{R}_{T}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\PCAC}{\ensuremath{\mathrm{PCAC}}}
+\newcommand{\DD}{\ensuremath{\Delta\Delta}}
+\newcommand{\sixq}{\ensuremath{6q}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\Amp}{\ensuremath{\mathbf{Amp}}}
+\newcommand{\Dens}{\ensuremath{\mathbf{Dens}}}
+\newcommand{\Match}{\ensuremath{\mathbf{Match}}}
+\newcommand{\Red}{\ensuremath{\mathbf{Red}}}
+\newcommand{\Proc}{\ensuremath{\mathbf{Proc}}}
+\newcommand{\Infer}{\ensuremath{\mathbf{Infer}}}
+\newcommand{\HNthree}{\Hil_{\mathrm{N3}}}
+\newcommand{\HDD}{\Hil_{\Delta\Delta}}
+\newcommand{\Hsix}{\Hil_{6q}^{\mathrm{compact}}}
+\newcommand{\NthreeState}{\texttt{N3\allowbreak State\allowbreak Bundle}}
+\newcommand{\DeltaSector}{\texttt{DeltaDelta\allowbreak Sector}}
+\newcommand{\SixQuarkBasis}{\texttt{SixQuark\allowbreak Basis}}
+\newcommand{\HiddenColorBasis}{\texttt{HiddenColor\allowbreak Basis}}
+\newcommand{\ClusterEmbedding}{\texttt{Cluster\allowbreak Embedding}}
+\newcommand{\ClusterProjector}{\texttt{Cluster\allowbreak Projector}}
+\newcommand{\CompactComplement}{\texttt{Compact\allowbreak Complement}}
+\newcommand{\NthreeHamiltonian}{\texttt{N3\allowbreak Hamiltonian}}
+\newcommand{\NthreeOperator}{\texttt{N3\allowbreak Matched\allowbreak Operator}}
+\newcommand{\NthreeParent}{\texttt{N3\allowbreak Deuteron\allowbreak GTMD\allowbreak Parent}}
+\newcommand{\CurrentCertificate}{\texttt{N3\allowbreak CurrentBasis\allowbreak Certificate}}
+\newcommand{\HiddenCovariance}{\texttt{HiddenColor\allowbreak Covariance\allowbreak Manifest}}
+\newcommand{\ClusterMatch}{\texttt{ClusterMatch\allowbreak Manifest}}
+\newcommand{\NthreeLedger}{\texttt{N3\allowbreak Nuclear\allowbreak Ledger}}
+\newcommand{\NthreeTN}{\texttt{N3\allowbreak Nuclear\allowbreak TTN}}
+\newcommand{\ProvComplex}{\texttt{N3\allowbreak Provenance2\allowbreak Complex}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{N3\allowbreak Prediction\allowbreak Plan}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XV: \(\Delta\Delta\), Compact Six-Quark, and\\[2mm]
+Hidden-Color Dynamics in the Microscopic Spin-1 Deuteron}\\[4mm]
+\large Exact cluster embeddings, hidden-color basis covariance, transition currents,\\
+non-nucleonic tensor structure, and count-once microscopic composition}
+\author{DeuteronWigner project}
+\date{31 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C17/N2 completed the continuum-calibrated \(NN\pi\) transition system, pole and residue control, a declared-order Hamiltonian-generated exchange-current basis, blockwise continuity, separator-flow stability, and a continuum-aware coherent pilot.  The next unresolved microscopic nuclear content is the non-nucleonic sector.  This volume is the normative formalism for C18/N3.  It enlarges the normalized spin-1 state to include explicit \(\Delta\Delta\) and compact six-quark amplitudes; derives the five-dimensional six-quark color-singlet space; treats hidden color as a basis-covariant subspace rather than an additive probability; constructs typed embeddings of \(NN\) and \(\Delta\Delta\) cluster states into the six-quark Hilbert space; proves the equivalence of orthogonal-complement and overlap-subtraction composition; extends currents, EMT operators, and partonic GTMD blocks consistently with the Hamiltonian; and establishes observable-sensitive tensor-network and no-double-counting tests.  The theory remains finite-resolution and validation-only.  No physical \(\Delta\Delta\) probability, hidden-color probability, six-quark TMD, LF-to-QCD matching, evolution, process factorization, or inference readiness is claimed.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The microscopic spin-1 deuteron cannot be completed by adding scalar \(\Delta\Delta\), six-quark, or hidden-color probabilities to a nucleonic wave function.  The non-nucleonic contributions must be normalized amplitudes in the same sector-resolved state and must carry complete spin, isospin, color, orbital, transfer, Wilson, and operator identity.  We formulate the N3 model space
+\[
+\Hil_{NN}\oplus\Hil_{NN\pi}^{\rm cont}\oplus\Hil_{\Delta\Delta}\oplus\Hil_{6q}^{\rm compact},
+\]
+construct the isoscalar \(J^P=1^+\) \(\Delta\Delta\) sector, and derive the five color-singlet multiplicities of six quarks.  For a chosen \(3+3\) cluster partition, one direction is the singlet--singlet cluster channel and the four-dimensional orthogonal complement is a hidden-color basis.  We prove that hidden-color coordinates are basis dependent while complete six-quark matrix elements are invariant under unitary rotations of that complement.  Typed embeddings of the explicit \(NN\) and \(\Delta\Delta\) states define a cluster Gram matrix and projector; only the orthogonal compact complement can be added directly, or equivalently the complete six-quark contribution can be used with one overlap subtraction.  We formulate the coupled Hamiltonian, current-completeness certificate, blockwise continuity tests, sector-resolved GTMD parent, tensor and \(b_1\) diagnostics, coherent-amplitude upgrade, tensor-network convergence, and deterministic provenance rules.  The resulting architecture supplies the last major nuclear-state layer before regulator-to-QCD matching, common evolution, and shared inference.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scope, inherited results, and scientific boundary}
+\label{sec:scope}
+
+\subsection{Inherited N2 structure}
+
+The N3 construction assumes the validated N2 objects:
+\begin{enumerate}
+\item a normalized \(NN\oplus NN\pi\) spin-1 state with complete charge channels;
+\item continuum-calibrated \(NN\pi\) spectral support and a controlled finite-volume sequence;
+\item pole, residue, norm-kernel, and transition-amplitude records;
+\item a declared-order current basis generated from the retained Hamiltonian;
+\item blockwise electromagnetic continuity and Hamiltonian-consistent axial, pseudoscalar, EMT, and partonic operators;
+\item a stable internal/exchange-pion separator trajectory;
+\item complete quark, antiquark, and gluon deuteron helicity parents through partonic Wilson order two;
+\item a helicity-resolved coherent pilot and an explicit partonic/nuclear overlap ledger.
+\end{enumerate}
+None of these objects is to be recomputed from a scalar nuclear response in N3.
+
+\subsection{N3 objective}
+
+The N3 state is
+\begin{equation}
+ \HNthree
+ =\Hil_{NN}
+ \oplus\Hil_{NN\pi}^{\rm cont}
+ \oplus\HDD
+ \oplus\Hsix.
+\label{eq:n3-hilbert}
+\end{equation}
+The corresponding state is
+\begin{equation}
+ |D,\Lambda\rangle_{\rm N3}
+ =|\Psi_{NN}^{\Lambda}\rangle
+ +|\Psi_{NN\pi}^{\Lambda}\rangle
+ +|\Psi_{\Delta\Delta}^{\Lambda}\rangle
+ +|\Psi_{6q}^{\Lambda}\rangle,
+\label{eq:n3-state}
+\end{equation}
+with one normalization and one plus-momentum ledger,
+\begin{align}
+ 1&=Z_{NN}+Z_{NN\pi}+Z_{\Delta\Delta}+Z_{6q},
+\label{eq:n3-normalization}\\
+ 1&=\sum_{\alpha\in\{NN,NN\pi,\Delta\Delta,6q\}}
+ \int[\dd\Gamma_\alpha]
+ \left(\sum_{i\in\alpha}x_i\right)
+ |\Psi_\alpha|^2.
+\label{eq:n3-momentum-ledger}
+\end{align}
+Sector norms are resolution-dependent diagnostics.  The physical requirements are closure of the complete state and matched observables.
+
+\begin{decision}[Hidden color is not a separate Fock sector]
+The term \emph{hidden color} denotes a basis choice inside the compact six-quark color-singlet sector.  It is not an independently normalized fifth term in \cref{eq:n3-state} and may not be added as a separate probability.
+\label{dec:hidden-not-sector}
+\end{decision}
+
+\subsection{Scientific nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+\item a measured or scheme-independent \(\Delta\Delta\), six-quark, or hidden-color probability;
+\item that a compact basis decomposition is an observable;
+\item a physical six-quark quark, antiquark, or gluon TMD;
+\item a complete non-nucleonic continuum theory;
+\item a physical shadowing or nuclear-Glauber prediction;
+\item a complete chiral EFT or continuum current basis;
+\item LF-to-QCD matching, Collins--Soper evolution, process factorization, or posterior inference.
+\end{itemize}
+
+\begin{requirement}[Scope-qualified completeness]
+Every statement of completeness must carry the nuclear model space, current/operator order, regulator, basis, partonic Fock support, Wilson order, and matching status.  A complete N3 color basis is not by itself a complete physical deuteron prediction.
+\label{req:scope-complete}
+\end{requirement}
+
+\section{Assumption plans and typed sector identity}
+\label{sec:plans}
+
+\subsection{Exclusive N3 plans}
+
+The first admissible plans are:
+\begin{longtable}{L{0.20\textwidth}L{0.72\textwidth}}
+\toprule
+Plan & Content \\
+\midrule
+\endhead
+\texttt{N3-PLAN-A} & N2 \(NN+NN\pi\), explicit \(\Delta\Delta\), compact six-quark absent. \\
+\texttt{N3-PLAN-B} & N2 \(NN+NN\pi\), compact six-quark state with cluster/hidden decomposition, explicit \(\Delta\Delta\) absent or integrated out. \\
+\texttt{N3-PLAN-C} & N2 \(NN+NN\pi\), explicit \(\Delta\Delta\), and only the orthogonal compact six-quark complement after cluster matching. \\
+\texttt{N2-REFERENCE} & Immutable N2 state, with neither explicit \(\Delta\Delta\) nor compact six-quark amplitude. \\
+\bottomrule
+\end{longtable}
+The plans are alternative theories at the declared truncation.  They may be compared but never summed.
+
+\subsection{Typed sector identity}
+
+A nuclear-sector identifier includes
+\begin{equation}
+ \mathfrak s_\alpha=
+ \left(
+ B,Q,I,J^P,J^z,
+ \text{particle content},
+ \text{permutation irrep},
+ \text{color multiplicity},
+ \text{orbital basis},
+ r_{\rm nuc}
+ \right).
+\label{eq:sector-id}
+\end{equation}
+For cluster embeddings it additionally contains the chosen partition and recoupling tree.  Two sectors with the same total quantum numbers but different internal color or permutation multiplicities are not interchangeable.
+
+\begin{principle}[Amplitude first]
+Mechanism names such as ``\(\Delta\Delta\),'' ``hidden color,'' ``short range,'' and ``compact'' label state or operator blocks.  They are not scalar response functions that can be attached after the deuteron GTMD has been assembled.
+\label{pr:amplitude-first}
+\end{principle}
+
+\section{Spin-resolved \texorpdfstring{\(\Delta\Delta\)}{DeltaDelta} sector}
+\label{sec:deltadelta}
+
+\subsection{Quantum numbers and charge basis}
+
+Each \(\Delta\) carries spin and isospin \(3/2\).  The retained deuteron channel has
+\begin{equation}
+ B=2,
+ \qquad Q=+1,
+ \qquad I=0,
+ \qquad J^P=1^+.
+\label{eq:dd-quantum-numbers}
+\end{equation}
+The charge-complete isoscalar state is generated through exact Clebsch--Gordan coefficients,
+\begin{equation}
+ |\Delta\Delta;I=0,I_z=0\rangle
+ =\sum_{m=-3/2}^{3/2}
+ \left\langle \frac32 m,\frac32(-m)\middle|00\right\rangle
+ |\Delta^{m}\Delta^{-m}\rangle,
+\label{eq:dd-isospin}
+\end{equation}
+where the physical charge labels are
+\begin{equation}
+ \Delta^{++}\Delta^{-},\quad
+ \Delta^{+}\Delta^{0},\quad
+ \Delta^{0}\Delta^{+},\quad
+ \Delta^{-}\Delta^{++}.
+\label{eq:dd-charge-basis}
+\end{equation}
+The signs and normalization are derived rather than entered manually.
+
+\subsection{Exchange symmetry and partial waves}
+
+For two identical fermions of spin and isospin \(j=3/2\), the exchange eigenvalue of a coupled spin state with total \(S\) is
+\begin{equation}
+ P_{12}^{(S)}=(-1)^{2j-S}=(-1)^{3-S},
+\label{eq:dd-spin-exchange}
+\end{equation}
+and the corresponding isospin factor is
+\begin{equation}
+ P_{12}^{(I)}=(-1)^{3-I}.
+\label{eq:dd-isospin-exchange}
+\end{equation}
+Including the orbital factor \((-1)^L\), exact antisymmetry requires
+\begin{equation}
+ (-1)^L(-1)^{3-S}(-1)^{3-I}=-1.
+\label{eq:dd-antisymmetry-condition}
+\end{equation}
+For \(I=0\) and positive parity with even \(L\), this selects odd \(S\).  The minimal \(J=1\) basis is therefore
+\begin{equation}
+ {}^3S_1,
+ \qquad {}^3D_1,
+ \qquad {}^7D_1.
+\label{eq:dd-partial-waves}
+\end{equation}
+Higher allowed waves remain typed unavailable until explicitly included.
+
+\begin{proposition}[Minimal positive-parity \(\Delta\Delta\) basis]
+Under \(I=0\), \(J^P=1^+\), even relative orbital angular momentum, and exact two-\(\Delta\) antisymmetry, the lowest partial waves are precisely those in \cref{eq:dd-partial-waves}.
+\end{proposition}
+
+\subsection{Light-front state and spectral status}
+
+The sector amplitude is
+\begin{equation}
+ |\Psi_{\Delta\Delta}^{\Lambda}\rangle
+ =\sum_{\alpha_{\Delta\Delta}}
+ \int[\dd\Gamma_{\Delta\Delta}]\,
+ \Psi_{\Delta\Delta,\alpha}^{\Lambda}
+ |\Delta\Delta;\alpha\rangle,
+\label{eq:dd-state}
+\end{equation}
+where \(\alpha\) retains charges, helicities, partial wave, light-front orbital labels, regulator, and resolution.  A typed spectral record distinguishes a stable-\(\Delta\) oracle from a continuum or discretized-continuum treatment.  At the deuteron pole the physical absorptive part must vanish below the declared \(\Delta\Delta\) threshold.
+
+\begin{requirement}[No numerical-width dynamics]
+A finite width or numerical \(i\eps\) may be used as a convergence regulator but cannot create physical \(\Delta\Delta\) support or enter the operator identity.
+\label{req:dd-no-fake-width}
+\end{requirement}
+
+\subsection{Spin-3/2 partonic interface}
+
+A validation-level \(\Delta\) parent retains four target helicities,
+\begin{equation}
+ W_{a/\Delta,\lambda'_\Delta\lambda_\Delta}^{[J,\gamma]}
+ (x,\kT,\DT),
+ \qquad
+ \lambda_\Delta=\pm\frac32,\pm\frac12,
+\label{eq:delta-parton-parent}
+\end{equation}
+plus charge/isospin, operator, Wilson, rank, and matching status.  It is sufficient for declared diagonal \(\Delta\Delta\) and transition benchmarks but remains a regulated unmatched object.
+
+\section{Compact six-quark Hilbert space}
+\label{sec:sixq}
+
+\subsection{Fermionic state space}
+
+The mathematically primary six-quark space is
+\begin{equation}
+ \Hil_{6q}^{\rm kin}=\bigwedge{}^6 h_q,
+\label{eq:sixq-wedge}
+\end{equation}
+or an exactly equivalent occupation-number representation.  In a slot construction, the antisymmetrizer is
+\begin{equation}
+ \cA_6
+ =\frac1{6!}\sum_{\pi\in S_6}
+ \operatorname{sgn}(\pi)U(\pi),
+ \qquad
+ \cA_6^2=\cA_6=\cA_6^\dagger.
+\label{eq:sixq-antisymmetrizer}
+\end{equation}
+Antisymmetry acts on complete one-particle labels, including flavor, color, helicity, longitudinal mode, transverse mode, and any provisional cluster assignment.
+
+\begin{requirement}[No cluster-only antisymmetry]
+A product of two separately antisymmetric three-quark clusters is not a valid compact six-quark basis unless the complete six-quark antisymmetrizer has also been imposed.
+\label{req:no-cluster-only-antisym}
+\end{requirement}
+
+\subsection{Five color singlets}
+
+The color space is
+\begin{equation}
+ \left(\bm3\right)^{\otimes6}.
+\label{eq:sixq-color-space}
+\end{equation}
+By Schur--Weyl duality, an \(SU(3)\) singlet occurs for the Young shape \([2,2,2]\).  Its multiplicity equals the dimension of the corresponding \(S_6\) irrep.  The hook lengths are
+\begin{equation}
+ 4,3,3,2,2,1,
+\label{eq:222-hooks}
+\end{equation}
+so the hook-length formula gives
+\begin{equation}
+ \dim[2,2,2]
+ =\frac{6!}{4\cdot3\cdot3\cdot2\cdot2\cdot1}
+ =5.
+\label{eq:sixq-singlet-multiplicity}
+\end{equation}
+Therefore
+\begin{equation}
+ \boxed{
+ \dim\operatorname{Inv}_{SU(3)}
+ \left(\bm3^{\otimes6}\right)=5
+ }.
+\label{eq:sixq-five}
+\end{equation}
+The implementation may also obtain the same space as the common nullspace of the total color generators.
+
+\subsection{Cluster and hidden-color decomposition}
+
+For a declared \(3+3\) partition, let \(|C_{11}\rangle\) denote the normalized color-singlet-times-color-singlet direction.  Complete it to an orthonormal basis
+\begin{equation}
+ \left\{
+ |C_{11}\rangle,
+ |H_1\rangle,
+ |H_2\rangle,
+ |H_3\rangle,
+ |H_4\rangle
+ \right\}.
+\label{eq:hidden-basis}
+\end{equation}
+Then
+\begin{equation}
+ \Hil_{6q}^{\rm singlet}
+ =\Hil_{11}\oplus\Hil_{\rm hidden},
+ \qquad
+ \dim\Hil_{\rm hidden}=4.
+\label{eq:hidden-decomposition}
+\end{equation}
+This decomposition is tied to the selected cluster partition and resolution.  It does not define a unique observable hidden-color probability.  Hidden-color effects in tensor observables can be useful phenomenological diagnostics, but a full GTMD prediction requires the complete six-quark state and operator matrix elements \cite{Miller2014,MillerHiddenColor2014}.
+
+\begin{definition}[Hidden-color basis rotation]
+A hidden-color basis rotation is
+\begin{equation}
+ |H_a'\rangle
+ =\sum_{b=1}^{4}U_{ab}|H_b\rangle,
+ \qquad U\in U(4),
+\label{eq:hidden-rotation}
+\end{equation}
+with \(|C_{11}\rangle\) held fixed.
+\end{definition}
+
+\begin{proposition}[Hidden-color covariance]
+Let \(\rho_6\) and \(O_6\) be complete six-quark density and operator matrices.  Under \cref{eq:hidden-rotation},
+\begin{equation}
+ \rho_6'=(1\oplus U)\rho_6(1\oplus U)^\dagger,
+ \qquad
+ O_6'=(1\oplus U)O_6(1\oplus U)^\dagger.
+\label{eq:hidden-covariance}
+\end{equation}
+Then
+\begin{equation}
+ \Tr(\rho_6'O_6')=\Tr(\rho_6O_6).
+\label{eq:hidden-invariant-observable}
+\end{equation}
+Individual diagonal weights in the hidden basis need not be invariant.
+\end{proposition}
+
+\begin{proof}
+Use cyclicity of the trace and unitarity of \(1\oplus U\).
+\end{proof}
+
+\subsection{Physical quantum numbers}
+
+The retained compact basis carries
+\begin{equation}
+ B=2,
+ \qquad Q=+1,
+ \qquad I=0,
+ \qquad J^P=1^+,
+\label{eq:sixq-quantum-numbers}
+\end{equation}
+with explicit spin, orbital, color-multiplicity, permutation, longitudinal, transverse, regulator, and resolution identities.  A six-quark probability without these amplitudes cannot predict a tensor GTMD.
+
+\section{Cluster embeddings and count-once composition}
+\label{sec:cluster-matching}
+
+\subsection{Hadronic cluster embeddings}
+
+The hadronic and six-quark descriptions overlap in their cluster regions.  Introduce typed isometric or norm-aware embeddings
+\begin{equation}
+ V_{NN\to6q}:\Hil_{NN}\longrightarrow\Hil_{6q}^{\rm singlet},
+ \qquad
+ V_{\Delta\Delta\to6q}:\Hil_{\Delta\Delta}\longrightarrow\Hil_{6q}^{\rm singlet}.
+\label{eq:cluster-embeddings}
+\end{equation}
+They preserve total quantum numbers and carry the spin, isospin, orbital, color, permutation, regulator, and resolution maps required by the chosen clusterization.
+
+For a finite set of embedded cluster states \(\{|v_i\rangle\}\), define the Gram matrix
+\begin{equation}
+ G_{ij}=\inner{v_i}{v_j}.
+\label{eq:cluster-gram}
+\end{equation}
+After removing exact null directions and recording the retained rank, the orthogonal projector onto the cluster span is
+\begin{equation}
+ P_{\rm cluster}
+ =V\,G^{-1}V^\dagger,
+\label{eq:cluster-projector}
+\end{equation}
+where \(V\) denotes the column map containing the independent embedded states.  At rank-deficient kinematics the inverse is taken only on the declared nonzero singular-value subspace, and the lost directions are reported explicitly.
+
+The orthogonal compact complement is
+\begin{equation}
+ Q_{\rm compact}=I-P_{\rm cluster}.
+\label{eq:compact-complement}
+\end{equation}
+Only \(Q_{\rm compact}|\Psi_{6q}\rangle\) may be added directly to explicit \(NN\) and \(\Delta\Delta\) states in \texttt{N3-PLAN-C}.
+
+\begin{requirement}[Cluster rank is observable metadata]
+The singular values, retained rank, null-space combinations, cluster partition, and recoupling tree of \cref{eq:cluster-gram} are part of the matching manifest.  A pseudoinverse may construct the identifiable projector but may not conceal an unresolved cluster direction.
+\label{req:cluster-rank}
+\end{requirement}
+
+\subsection{Orthogonal-complement representation}
+
+The count-once state in the direct representation is
+\begin{equation}
+ |\Psi_D\rangle_{\rm orth}
+ =|\Psi_{NN}\rangle
+ +|\Psi_{NN\pi}\rangle
+ +|\Psi_{\Delta\Delta}\rangle
+ +Q_{\rm compact}|\Psi_{6q}\rangle.
+\label{eq:orthogonal-state}
+\end{equation}
+Its normalization includes all cross terms that remain after the cluster projection and is enforced before any observable is evaluated.
+
+\subsection{Subtraction representation}
+
+An alternative representation retains the complete six-quark contribution and removes the overlap once:
+\begin{equation}
+ W_{\rm matched}
+ =W_{NN}+W_{NN\pi}+W_{\Delta\Delta}+W_{6q}
+ -W_{\rm cluster\ overlap}.
+\label{eq:subtraction-representation}
+\end{equation}
+The overlap term is generated from the same embeddings and operator family as \cref{eq:cluster-projector}; it is not a fitted scalar.
+
+\begin{theorem}[Equivalence of count-once representations]
+Suppose the cluster embeddings, state normalization, and operator maps are identical in the orthogonal-complement and subtraction constructions.  Then the complete matrix element obtained from \cref{eq:orthogonal-state} equals \cref{eq:subtraction-representation} up to the declared truncation and numerical residual.
+\label{thm:count-once-equivalence}
+\end{theorem}
+
+\begin{proof}
+Decompose the six-quark identity as \(I=P_{\rm cluster}+Q_{\rm compact}\).  The complete six-quark matrix element separates into its cluster, compact, and interference blocks.  The orthogonal representation retains the compact blocks directly and assigns the cluster blocks to the embedded hadronic sectors.  The subtraction representation retains both and removes the duplicated cluster contribution once.  With identical embeddings and transformed transition operators, the two expansions are algebraically equal.  Differences arise only from the declared finite-basis, matching, and quadrature approximations.
+\end{proof}
+
+\subsection{Provenance two-cells}
+
+The N3 provenance complex contains at least the relations
+\begin{align*}
+ \texttt{EXPLICIT\_DELTADELTA}
+ &\quad\texttt{ALTERNATIVE\_TO}\quad
+ \texttt{INDUCED\_DELTADELTA\_CONTACT},\\
+ \texttt{EXPLICIT\_SIX\_QUARK}
+ &\quad\texttt{ALTERNATIVE\_TO}\quad
+ \texttt{INDUCED\_SHORT\_RANGE\_OPERATOR},\\
+ \texttt{HIDDEN\_COLOR\_BASIS}
+ &\quad\texttt{MEMBER\_OF}\quad
+ \texttt{SIX\_QUARK\_SINGLET\_SPACE},\\
+ \texttt{HADRONIC\_CLUSTER\_SUBSPACE}
+ &\quad\texttt{OVERLAPS\_WITH}\quad
+ \texttt{SIX\_QUARK\_CLUSTER\_SUBSPACE},\\
+ \texttt{ORTHOGONAL\_COMPACT\_COMPLEMENT}
+ &\quad\texttt{COUNT\_ONCE\_WITH}\quad
+ \texttt{EXPLICIT\_NN\_AND\_DELTADELTA}.
+\end{align*}
+The compiler rejects explicit and fully induced representations selected simultaneously, hidden color as an additive sector, full six-quark plus explicit cluster sectors without matching, and duplicate overlap subtraction.
+
+\section{Coupled N3 Hamiltonian and renormalization trajectory}
+\label{sec:hamiltonian}
+
+\subsection{Block mass operator}
+
+The N3 mass operator is
+\begin{equation}
+ H_{\rm N3}
+ =\begin{pmatrix}
+ H_{NN} & V_{NN\leftarrow NN\pi} & V_{NN\leftarrow\Delta\Delta} & V_{NN\leftarrow6q}\\
+ V_{NN\pi\leftarrow NN} & H_{NN\pi} & V_{NN\pi\leftarrow\Delta\Delta} & V_{NN\pi\leftarrow6q}\\
+ V_{\Delta\Delta\leftarrow NN} & V_{\Delta\Delta\leftarrow NN\pi} & H_{\Delta\Delta} & V_{\Delta\Delta\leftarrow6q}\\
+ V_{6q\leftarrow NN} & V_{6q\leftarrow NN\pi} & V_{6q\leftarrow\Delta\Delta} & H_{6q}
+ \end{pmatrix}.
+\label{eq:n3-hamiltonian}
+\end{equation}
+Every nonzero off-diagonal block has a generated Hermitian adjoint.  Every zero or absent block carries one of the typed explanations
+\begin{verbatim}
+FORBIDDEN_BY_QUANTUM_NUMBERS
+BEYOND_DECLARED_ORDER
+INDUCED_ONLY_AT_THIS_RESOLUTION
+NOT_IMPLEMENTED_BLOCKS_COMPLETENESS_STATUS
+\end{verbatim}
+Array zeros without physical status are forbidden.
+
+\subsection{Renormalization datum}
+
+At nuclear resolution \(r\), define
+\begin{equation}
+ \mathfrak R_{r}^{\rm N3}
+ =\left(
+ \cR_r,
+ \theta_{NN,r},
+ \theta_{NN\pi,r},
+ \theta_{\Delta\Delta,r},
+ \theta_{6q,r},
+ \theta_{\rm trans,r},
+ \delta\theta_{r},
+ \{\cC_i\},
+ \cS_r,
+ \Delta_r
+ \right).
+\label{eq:n3-renormalization}
+\end{equation}
+The same physical calibration conditions are imposed along a tower of at least three resolution points, while bare, counterterm, induced, and discrepancy parameters are allowed to flow.
+
+The calibration set is deliberately restricted.  It may contain:
+\begin{itemize}
+\item the deuteron pole or binding condition;
+\item charge normalization;
+\item one \(NN\leftrightarrow\Delta\Delta\) transition condition;
+\item one cluster/compact short-distance condition;
+\item one current-continuity condition.
+\end{itemize}
+The following remain holdouts:
+\begin{itemize}
+\item a second transition point;
+\item magnetic and quadrupole combinations;
+\item one angular condition;
+\item \(b_1\) or another tensor observable;
+\item one hidden-color-sensitive but basis-invariant observable;
+\item one compact-sector quark moment;
+\item one coherent tensor observable;
+\item one nonzero-transfer current;
+\item one separator or recoupling variation.
+\end{itemize}
+
+\begin{requirement}[No probability fitting]
+The quantities \(Z_{\Delta\Delta}\), \(Z_{6q}\), cluster weights, hidden-color basis weights, and named TMD normalizations may not be direct calibration parameters.  They are derived resolution-dependent diagnostics.
+\label{req:no-probability-fit}
+\end{requirement}
+
+\subsection{Explicit versus induced descriptions}
+
+Feshbach elimination of a sector \(Q\) gives
+\begin{equation}
+ H_{\rm eff}(E)
+ =PHP+PHQ\frac1{E-QHQ}QHP,
+\label{eq:n3-feshbach-H}
+\end{equation}
+while every operator transforms as
+\begin{equation}
+ O_{\rm eff}(E',E)
+ =P[1+\omega^\dagger(E')]O[1+\omega(E)]P.
+\label{eq:n3-feshbach-O}
+\end{equation}
+Thus explicit \(\Delta\Delta\) and six-quark descriptions are equivalent only to induced Hamiltonians plus transformed currents, partonic operators, norm kernels, and a visible truncation remainder.  They are never additive to their fully induced replacements.
+
+\section{Hamiltonian-consistent currents and local operators}
+\label{sec:currents}
+
+\subsection{Completeness certificate}
+
+The N3 current family extends the N2 certificate to include, where generated by the selected Hamiltonian plan:
+{\small
+\begin{longtable}{L{0.38\textwidth}L{0.54\textwidth}}
+\toprule
+Operator block & Required role \\
+\midrule
+\endhead
+\texttt{DeltaDelta elastic} & Diagonal electromagnetic coupling in the \(\Delta\Delta\) sector. \\
+\texttt{NN--DeltaDelta transition} & Current associated with the \(NN\leftrightarrow\Delta\Delta\) Hamiltonian block. \\
+\texttt{Six-quark one-body} & Quark one-body current in the compact sector. \\
+\texttt{Six-quark interaction} & Current generated by momentum-dependent compact interactions. \\
+\texttt{NN--six-quark transition} & Current associated with the cluster-to-compact transition. \\
+\texttt{DeltaDelta--six-quark transition} & Transition current between explicit \(\Delta\Delta\) and compact sectors. \\
+\texttt{Cluster-overlap subtraction} & Count-once current generated by the cluster matching map. \\
+\texttt{Regulator gauging} & Attachments required by nonlocal regulators. \\
+\texttt{Induced Feshbach} & Current generated when explicit sectors are removed. \\
+\texttt{Axial/pseudoscalar partners} & Chiral companions required by retained transition interactions. \\
+\texttt{EMT interaction terms} & Momentum and stress operators generated from the Hamiltonian. \\
+\texttt{Partonic transition blocks} & Quark/gluon GTMD insertions connecting supported nuclear sectors. \\
+\bottomrule
+\end{longtable}
+}
+Every Hamiltonian term is mapped to its electromagnetic, charge-density, axial/pseudoscalar, EMT, and partonic partners, or is certified neutral.  An unexplained retained term blocks current-basis completeness.
+
+\subsection{Blockwise continuity}
+
+The continuity condition is
+\begin{equation}
+ q_\mu J_{\rm N3}^{\mu}
+ =[H_{\rm N3},\rho_{\rm N3}]
+ +\delta_{\rm trunc}.
+\label{eq:n3-continuity}
+\end{equation}
+It is tested separately in every supported pair
+\begin{equation}
+ \alpha\to\beta,
+ \qquad
+ \alpha,\beta\in\{NN,NN\pi,\Delta\Delta,6q\},
+\label{eq:n3-block-pairs}
+\end{equation}
+and separately in all charge, helicity, tensor, and cluster-multiplicity blocks.  A cancellation visible only after summing incompatible blocks is insufficient.
+
+\subsection{Basis covariance of complete operators}
+
+Under a hidden-color basis rotation \(U\), every six-quark operator transforms as in \cref{eq:hidden-covariance}.  The current certificate must prove covariance of the complete current, EMT, axial, pseudoscalar, and partonic operator matrices.  A hidden-color subtotal may vary, but the complete six-quark and matched observables may not.
+
+\begin{requirement}[Cluster subtraction is an operator family]
+Cluster overlap subtraction must transform the Hamiltonian, charge, current, EMT, axial/pseudoscalar, and partonic operator blocks together.  A scalar subtraction applied only to a final observable is invalid.
+\label{req:subtraction-family}
+\end{requirement}
+
+\section{Full N3 partonic operator and deuteron GTMD parent}
+\label{sec:parent}
+
+\subsection{Sector-resolved operator matrix}
+
+For species \(a\) and operator label \([J,\gamma]\), define
+\begin{equation}
+ \widehat\cO_{a}^{\rm N3}
+ =\left(
+ \widehat\cO_{a,\alpha\beta}^{[J,\gamma]}
+ \right)_{\alpha,\beta\in\{NN,NN\pi,\Delta\Delta,6q\}}.
+\label{eq:n3-operator-matrix}
+\end{equation}
+The complete parent is
+\begin{equation}
+ W_{a/D}^{\rm N3}
+ =\sum_{\alpha,\beta}
+ \inner{\Psi_{\alpha}}
+ {\widehat\cO_{a,\alpha\beta}^{[J,\gamma]}\Psi_{\beta}}.
+\label{eq:n3-parent}
+\end{equation}
+It retains:
+\begin{itemize}
+\item all three deuteron helicities and parton helicity or gluon transverse indices;
+\item flavor, source and target nuclear sector, and diagonal/transition ancestry;
+\item Wilson order, path, ordered gluon links, and \(f/d\) color class;
+\item microscopic proton/neutron, \(\Delta\), and six-quark member identities;
+\item six-quark color multiplicity, cluster partition, hidden-color basis, and matching representation;
+\item regulator, resolution, separator, assumption plan, solver, and TTN bond identity.
+\end{itemize}
+Projection onto mechanisms or named TMDs occurs only after \cref{eq:n3-parent} has been assembled.
+
+\subsection{\texorpdfstring{\(\Delta\Delta\)}{DeltaDelta} parent}
+
+The diagonal contribution has the schematic spin-resolved convolution
+\begin{equation}
+ W_{a/D}^{\Delta\Delta}
+ =\sum_{\lambda'_1\lambda'_2\lambda_1\lambda_2}
+ \int[\dd\Gamma_{\Delta\Delta}]
+ \Psi_{\Delta\Delta}^{*\,\lambda'_1\lambda'_2}
+ \widehat\cO_{a/\Delta\Delta}^{\lambda'_1\lambda'_2;\lambda_1\lambda_2}
+ \Psi_{\Delta\Delta}^{\lambda_1\lambda_2}.
+\label{eq:dd-parent}
+\end{equation}
+A validation-level spin-3/2 \(\Delta\) parton parent may be used for the declared diagonal and transition tests, but remains unmatched and cannot be labeled a physical \(\Delta\) TMD.
+
+\subsection{Six-quark parton parent}
+
+Direct quark one-body operators are explicit:
+\begin{equation}
+ W_{q/6q}
+ =\sum_{j=1}^{6}
+ \inner{\Psi_{6q}}
+ {\widehat\cO_{q,j}\Psi_{6q}}.
+\label{eq:sixq-quark-parent}
+\end{equation}
+The support manifest distinguishes
+\begin{verbatim}
+DIRECT_SIX_QUARK_QUARK_OPERATOR
+INDUCED_SIX_QUARK_GLUON_OPERATOR_WITH_REMAINDER
+ANTIQUARK_UNAVAILABLE_AT_SIX_QUARK_ONLY_ORDER
+\end{verbatim}
+unless additional compact Fock sectors are explicitly implemented.  Missing species are unavailable, not physical zeros.
+
+\subsection{Transition and interference blocks}
+
+Supported transitions include
+\begin{equation}
+ NN\leftrightarrow\Delta\Delta,
+ \qquad
+ NN\leftrightarrow6q,
+ \qquad
+ \Delta\Delta\leftrightarrow6q.
+\label{eq:n3-transitions}
+\end{equation}
+Their contribution to \cref{eq:n3-parent} can be signed or complex.  It cannot be represented by a sector probability.  Hermiticity requires each transition block and its adjoint to be generated as one operator family.
+
+\subsection{Reduction closure}
+
+The same parent must provide the regulated views
+\begin{align}
+ \mathsf T[W]&=W(x,\kT,\DT=0),\\
+ \mathsf G[W]&=\int\dd^2\kT\,W(x,\kT,\DT),\\
+ \mathsf P[W]&=\int\dd^2\kT\,W(x,\kT,0),\\
+ \mathsf J[W]&=\int\dd x\,\dd^2\kT\,W,
+\label{eq:n3-reductions}
+\end{align}
+with one state normalization, matching representation, cluster subtraction, and microscopic member identity.  These are regulated nuclear matrix elements and retain all LF-to-QCD, soft, rapidity, and evolution limitations.
+
+\section{Spin-1 tensor structure, \texorpdfstring{\(b_1\)}{b1}, and exotic diagnostics}
+\label{sec:tensor}
+
+\subsection{Projection after composition}
+
+The target projector basis is applied only to the complete sector-summed parent.  For helicity-diagonal quantities,
+\begin{align}
+ F_U&=\frac13(F_++F_0+F_-),\\
+ F_L&=\frac12(F_+-F_-),\\
+ \delta_TF&=F_0-\frac12(F_++F_-).
+\label{eq:n3-helicity-combinations}
+\end{align}
+The project convention
+\begin{equation}
+ f_{1LL}=-\frac23\,\delta_Tf_1
+\label{eq:n3-f1ll-adapter}
+\end{equation}
+is applied only after the convention-independent helicity difference has been evaluated.
+
+The tensor PDF and leading-order \(b_1\) relation are
+\begin{equation}
+ \delta_Tq_D(x)
+ =q_D^{0}(x)-\frac12[q_D^{+1}(x)+q_D^{-1}(x)],
+\label{eq:n3-tensor-pdf}
+\end{equation}
+\begin{equation}
+ b_1(x,Q^2)
+ =\frac12\sum_q e_q^2
+ \left[\delta_Tq_D(x,Q^2)+\delta_T\bar q_D(x,Q^2)\right]
+ +\cO(\alpha_s,M_D^2/Q^2).
+\label{eq:n3-b1}
+\end{equation}
+No independent \(b_1\) normalization is fitted in N3.
+
+\subsection{Sector-resolved tensor ledger}
+
+The diagnostic decomposition reports
+\begin{verbatim}
+NN
+NNPI
+DELTADELTA
+SIX_QUARK_CLUSTER
+SIX_QUARK_HIDDEN_COLOR
+TRANSITION_AND_INTERFERENCE
+MATCHED_TOTAL
+\end{verbatim}
+for every tensor observable.  The hidden-color subtotal is explicitly labeled basis dependent.  Only the complete six-quark and matched total may be interpreted as basis-invariant predictions at the declared resolution.
+
+\begin{requirement}[No hidden-color fit]
+A hidden-color basis weight, phase, or subtotal may not be fitted directly to \(b_1\), a tensor TMD, or any single observable.  Parameters belong to the complete compact Hamiltonian and operator family.
+\label{req:no-hidden-fit}
+\end{requirement}
+
+\subsection{Exotic and null-test channels}
+
+The one-body spin-\(1/2\) nucleon baseline can vanish for gluon double-helicity-flip and selected tensor channels.  This does not imply a full deuteron zero.  The N3 implementation must include at least one benchmark in which the first nonzero contribution arises from a declared \(\Delta\Delta\), compact, transition, or coherent operator block:
+\begin{equation}
+ W_{g/D}^{\Delta\lambda_g=2}
+ \neq C\,W_{g/D}^{\rm unpolarized}.
+\label{eq:n3-gluon-flip}
+\end{equation}
+The nonzero result must identify the responsible angular-momentum and sector interference.
+
+\subsection{Hidden color and tensor observables}
+
+Compact six-quark and hidden-color models have been used to explore the anomalously large tensor structure seen in \(b_1\) phenomenology \cite{Miller2014,MillerHiddenColor2014}.  In the present architecture these models are comparison targets, not scalar additions.  The microscopic object is the complete six-quark helicity matrix and its transition blocks.  A tensor signal attributed to hidden color is accepted only when:
+\begin{enumerate}
+\item the complete six-quark state is normalized and antisymmetric;
+\item the full operator transforms covariantly under hidden-basis rotations;
+\item the complete observable is basis invariant;
+\item cluster overlap is counted once;
+\item the signal survives basis, resolution, TTN, and matching variations.
+\end{enumerate}
+
+\section{Upgraded coherent nuclear amplitude}
+\label{sec:coherent}
+
+The N3 coherent pilot is
+\begin{equation}
+ \delta W_{\Lambda'\Lambda}^{\rm coh,N3}
+ =\sum_{X\in\{NN\pi,\Delta\Delta,6q,\ldots\}}
+ \int\dd\mu_X\,
+ \mathcal A_{\Lambda'\to X}^{*}
+ \mathcal G_X
+ \mathcal A_{\Lambda\to X}.
+\label{eq:n3-coherent}
+\end{equation}
+It retains intermediate channel, helicity, longitudinal ordering, propagation phase, threshold, spectral support, parton species, Wilson identity, and nuclear member.
+
+The exact validation limits are:
+\begin{align}
+ \mathcal A_{\Lambda\to X}=0
+ &\Longrightarrow
+ \delta W^{\rm coh,N3}=0,\\
+ \mathcal A_{\Lambda'\to X}=0
+ &\Longrightarrow
+ \delta W^{\rm coh,N3}=0,\\
+ \text{ordering reversal}
+ &\Longrightarrow
+ \text{declared phase transformation}.
+\label{eq:n3-coherent-limits}
+\end{align}
+Scalar, vector, and tensor projections are derived from the helicity amplitudes.  A copied unpolarized shadowing ratio must fail the tensor reconstruction.  The result remains a pilot until physical diffractive inputs and factorization are supplied \cite{FrankfurtGuzeyStrikman2012}.
+
+\subsection{Partonic versus nuclear rescattering}
+
+The identities
+\begin{verbatim}
+PARTONIC_WILSON_STAPLE
+NUCLEAR_COHERENT_PROPAGATION
+TAGGED_FINAL_STATE_INTERACTION
+\end{verbatim}
+remain distinct.  Any shared soft or Glauber region is represented through
+\begin{equation}
+ W^{\rm matched}
+ =W^{\rm partonic}
+ +W^{\rm nuclear\ coherent}
+ -W^{\rm parton\text{-}nuclear\ overlap}.
+\label{eq:n3-parton-nuclear-subtraction}
+\end{equation}
+Missing and duplicate subtraction give opposite signed defects.  Nuclear coherence may not be generated by modifying the partonic staple phase.
+
+\section{Completely positive reductions after coherence}
+\label{sec:cp}
+
+Let the complete amplitude define
+\begin{equation}
+ V:\Hil_{\rm resolved}
+ \longrightarrow
+ \Hil_{\rm observed}\otimes\Hil_{\rm unresolved}.
+\label{eq:n3-amplitude-embedding}
+\end{equation}
+Only after all resolved \(NN\), \(NN\pi\), \(\Delta\Delta\), compact, cluster, and coherent amplitudes are combined may one define
+\begin{equation}
+ \cE(\rho)
+ =\Tr_{\rm unresolved}[V\rho V^\dagger].
+\label{eq:n3-cp-map}
+\end{equation}
+The benchmark must demonstrate that an early trace destroys at least one real transition or hidden-color interference observable.  Complete positivity is not a license to erase unresolved coherence.
+
+\section{Symmetry-adapted tensor network for N3}
+\label{sec:ttn}
+
+\subsection{State topology}
+
+The nuclear state network contains explicit branches
+\begin{verbatim}
+NN_BRANCH
+NNPI_CONTINUUM_BRANCH
+DELTADELTA_BRANCH
+SIX_QUARK_COMPACT_BRANCH
+\end{verbatim}
+with typed virtual edges for:
+\begin{itemize}
+\item deuteron helicity and total \(J^P=1^+\);
+\item isospin and charge channels;
+\item \(NN\), \(NN\pi\), and \(\Delta\Delta\) partial waves;
+\item the five six-quark color multiplicities;
+\item complete \(S_6\) permutation symmetry;
+\item cluster/hidden basis and recoupling identity;
+\item partonic Wilson order and operator family;
+\item regulator, resolution, continuum level, separator, and assumption plan.
+\end{itemize}
+The state and operator networks remain separate.  A tensor-network gauge transformation is not a QCD gauge transformation or a hidden-color basis rotation, though all three are represented by different typed adapters.
+
+\subsection{Full-bond and variational closure}
+
+The solver hierarchy is:
+\begin{enumerate}
+\item exact diagonalization in the smallest benchmark spaces;
+\item matrix-free Krylov solution;
+\item exact full-bond tensorization;
+\item variational reduced-bond TTN optimization.
+\end{enumerate}
+Full bond must reproduce the exact state and all principal operator matrix elements.  Reduced-bond convergence is reported for
+\begin{equation}
+ Z_{\Delta\Delta},\quad
+ Z_{6q},\quad
+ \text{cluster/compact norm},\quad
+ b_1,\quad
+ \delta_TW,\quad
+ J^\mu,\quad
+ \delta_{\rm continuity},
+\label{eq:n3-ttn-observables}
+\end{equation}
+plus hidden-basis-invariant compact observables, transition currents, coherent tensor signals, and exotic gluon channels.
+
+At least one low-bond state must retain a deceptively accurate energy or norm while losing a real \(\Delta\Delta\), compact, transition, or tensor observable.
+
+\subsection{Hidden-color covariance in the TTN}
+
+The TTN must support at least two hidden-color fusion bases connected by a certified unitary recoupling map.  Full-bond observables must agree exactly within tolerance.  At reduced bond, any basis dependence is reported as a topology/truncation uncertainty rather than interpreted as physical hidden-color sensitivity.
+
+\section{Uncertainty, convergence, and identifiability}
+\label{sec:uncertainty}
+
+N3 reports separate axes for:
+\begin{enumerate}
+\item nucleon microscopic member;
+\item nuclear interaction and S/D wave-function family;
+\item \(NN\pi\) continuum and separator trajectory;
+\item \(\Delta\Delta\) spectral and partial-wave truncation;
+\item compact six-quark basis and regulator;
+\item cluster embedding and recoupling choice;
+\item hidden-color basis rotation;
+\item sector and current/operator truncation;
+\item partonic Wilson order and soft-overlap status;
+\item TTN bond and topology;
+\item quadrature and finite-volume errors;
+\item LF-to-QCD matching, evolution, and process status.
+\end{enumerate}
+These categories are not combined into a confidence band unless a later shared posterior defines their probabilistic meaning.
+
+For observables \(\cO_i\) and parameters \(\theta_a\), define
+\begin{equation}
+ J_{ia}=\frac{\partial\cO_i}{\partial\theta_a}.
+\label{eq:n3-identifiability-jacobian}
+\end{equation}
+The singular values of \(J\), posterior correlations, and profile likelihoods determine whether elastic, tensor, tagged, coherent, and compact-sensitive observables distinguish the new sectors.  A direction that only rescales one named TMD has failed the shared-operator objective.
+
+\begin{principle}[Basis variations are not posterior draws]
+A unitary hidden-color basis change is an exact coordinate transformation, not a physical model variation.  Any resulting change in a complete observable diagnoses an implementation or truncation defect.
+\label{pr:basis-not-uncertainty}
+\end{principle}
+
+\section{Software realization and typed interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+{\small\begin{longtable}{L{0.36\textwidth}L{0.56\textwidth}}
+\toprule
+Object & Responsibility \\
+\midrule
+\endhead
+\texttt{DeltaDeltaSector} & Charge-complete \(I=0,J^P=1^+\) basis, exchange symmetry, partial waves, spectral status, and resolution. \\
+\texttt{DeltaPartonParent} & Spin-3/2 helicity parent with charge, operator, Wilson, rank, and matching identity. \\
+\texttt{SixQuarkBasis} & Exact \(S_6\)-antisymmetric basis with five color singlets and complete physical quantum numbers. \\
+\texttt{HiddenColorBasis} & Cluster direction, four-dimensional complement, recoupling matrices, and phase conventions. \\
+\texttt{HiddenColorCovarianceManifest} & Unitary basis maps and invariant complete matrix-element tests. \\
+\texttt{ClusterEmbedding} & Typed \(NN\) and \(\Delta\Delta\) embeddings into the six-quark Hilbert space. \\
+\texttt{ClusterProjector} & Gram matrix, singular values, retained rank, projector, and null-space report. \\
+\texttt{CompactComplement} & Orthogonal compact projector and count-once state construction. \\
+\texttt{N3Hamiltonian} & Four-sector block operator, transitions, counterterms, induced interactions, and matrix-free action. \\
+\texttt{N3CurrentBasisCertificate} & Hamiltonian-term-to-current/EMT/partonic-partner map and blockwise continuity ledger. \\
+\texttt{N3MatchedOperator} & Sector-resolved local and bilocal operators with cluster subtraction and matching metadata. \\
+\texttt{N3DeuteronGTMDParent} & Full sector-summed helicity parent with transition ancestry and hidden-basis identity. \\
+\texttt{N3NuclearTTN} & Symmetry-adapted four-branch state network and bond/topology manifest. \\
+\texttt{N3Provenance2Complex} & Explicit/induced equivalence, cluster overlap, count-once, and basis-membership cells. \\
+\texttt{N3NuclearLedger} & Normalization, momentum, current, angular, tensor, compact, coherent, and provenance residuals. \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Typed data flow}
+
+The computational chain is
+\begin{equation}
+\begin{aligned}
+\texttt{N2StateBundle}
+&\longrightarrow \texttt{N3PredictionPlan}
+\longrightarrow \texttt{N3Hamiltonian}
+\longrightarrow \texttt{N3StateBundle}\\
+&\longrightarrow \texttt{N3MatchedOperator}
+\longrightarrow \texttt{N3DeuteronGTMDParent}\\
+&\longrightarrow \texttt{ReductionMap}
+\longrightarrow \texttt{Observable}.
+\end{aligned}
+\label{eq:n3-data-flow}
+\end{equation}
+Every arrow checks sector, coordinate, color, permutation, cluster, hidden-basis, operator, Wilson, scheme, member, and provenance compatibility.  Array-shape compatibility is insufficient.
+
+\subsection{Immutable cache identity}
+
+A parent cache key contains at least
+\begin{equation}
+ \mathrm{key}=\mathrm{hash}
+ \left(
+ \mathfrak m_N,
+ \mathfrak m_{N2},
+ \mathfrak m_{\Delta\Delta},
+ \mathfrak m_{6q},
+ \mathfrak o_{a/D},
+ \mathfrak c_{\rm cluster},
+ \mathfrak h_{\rm hidden},
+ r,
+ x,\kT,\DT,
+ \text{code version}
+ \right).
+\label{eq:n3-cache-key}
+\end{equation}
+Changing a cluster partition, hidden-color basis, current family, operator support, Wilson path, or matching representation invalidates the cache.
+
+\subsection{Machine-readable schemas}
+
+The minimum N3 state record is
+\begin{verbatim}
+{
+  "state_id": "...",
+  "plan_id": "N3-PLAN-A|B|C|N2-REFERENCE",
+  "resolution": {...},
+  "sector_norms": {"NN":..., "NNPI":..., "DELTADELTA":..., "SIXQ":...},
+  "delta_delta": {"charge_basis":..., "partial_waves":..., "spectrum":...},
+  "six_quark": {
+    "color_multiplicity": 5,
+    "cluster_partition": "...",
+    "hidden_basis_id": "...",
+    "antisymmetry_residual": ...
+  },
+  "cluster_match_id": "...",
+  "current_certificate_id": "...",
+  "ttn_manifest_id": "...",
+  "status": ["N3_VALIDATION_ONLY", "..."]
+}
+\end{verbatim}
+
+The cluster-matching record contains
+\begin{verbatim}
+{
+  "embedding_ids": ["NN_TO_6Q", "DELTADELTA_TO_6Q"],
+  "gram_singular_values": [...],
+  "retained_rank": ...,
+  "cluster_projector_hash": "...",
+  "compact_projector_hash": "...",
+  "orthogonal_route_result": ...,
+  "subtraction_route_result": ...,
+  "equivalence_residual": ...,
+  "remainder": ...
+}
+\end{verbatim}
+
+\section{Formal requirements}
+\label{sec:requirements}
+
+The implementation assigns stable identifiers to the following requirement families.
+
+{\small\begin{longtable}{L{0.23\textwidth}L{0.69\textwidth}}
+\toprule
+ID & Requirement \\
+\midrule
+\endhead
+\texttt{V15.SCOPE} & Preserve the N2 continuum, current, separator, and coherent contracts; qualify every N3 completeness claim. \\
+\texttt{V15.STATE} & Construct one normalized \(NN\oplus NN\pi\oplus\Delta\Delta\oplus6q\) state with one charge and momentum ledger. \\
+\texttt{V15.PLAN} & Compile exclusive N3 plans and reject mixed or additive use of alternative theories. \\
+\texttt{V15.DD.QN} & Retain the complete isoscalar charge basis and \(J^P=1^+\) identity of the \(\Delta\Delta\) sector. \\
+\texttt{V15.DD.EXCH} & Derive exact two-\(\Delta\) exchange symmetry and retain the \({}^3S_1,{}^3D_1,{}^7D_1\) basis. \\
+\texttt{V15.DD.SPEC} & Carry threshold, spectral, stable-or-continuum status, and below-threshold cut null tests. \\
+\texttt{V15.DD.OP} & Provide a spin-3/2 partonic parent and typed \(NN\leftrightarrow\Delta\Delta\) operators. \\
+\texttt{V15.6Q.COLOR} & Derive the five six-quark color singlets as a total-generator nullspace or equivalent certified construction. \\
+\texttt{V15.6Q.PERM} & Impose exact \(S_6\) antisymmetry before Hamiltonian and operator assembly. \\
+\texttt{V15.6Q.QN} & Retain complete \(B,Q,I,J^P,J^z\), spin, orbital, longitudinal, transverse, regulator, and resolution identity. \\
+\texttt{V15.HC.BASIS} & Construct one cluster direction and a four-dimensional hidden-color complement for a declared \(3+3\) partition. \\
+\texttt{V15.HC.COV} & Verify complete observable invariance under at least two nontrivial hidden-color basis rotations. \\
+\texttt{V15.CLUS.EMB} & Implement typed \(NN\) and \(\Delta\Delta\) embeddings into the six-quark space. \\
+\texttt{V15.CLUS.GRAM} & Report cluster Gram singular values, rank, null directions, and conditioning. \\
+\texttt{V15.CLUS.PROJ} & Construct orthogonal cluster and compact-complement projectors. \\
+\texttt{V15.CLUS.EQV} & Prove equivalence of orthogonal-complement and one-subtraction representations. \\
+\texttt{V15.PROV} & Encode explicit/induced alternatives, cluster overlap, hidden-basis membership, and count-once two-cells. \\
+\texttt{V15.HAM} & Assemble a Hermitian, matrix-free-compatible four-sector Hamiltonian with typed unsupported blocks. \\
+\texttt{V15.REN} & Fit one restricted shared renormalization trajectory and expose parameter null directions. \\
+\texttt{V15.FESHBACH} & Transform Hamiltonians, currents, local operators, GTMD operators, and norm kernels together under sector elimination. \\
+\texttt{V15.CURR.CERT} & Map every retained Hamiltonian term to all required current, charge, EMT, axial, pseudoscalar, and partonic partners. \\
+\texttt{V15.CURR.BLOCK} & Close continuity separately in every supported sector, charge, helicity, tensor, and color-multiplicity block. \\
+\texttt{V15.OP.BASIS} & Maintain covariance of complete operator families under hidden-color and cluster recoupling transformations. \\
+\texttt{V15.PARENT} & Evaluate the full sector-summed deuteron helicity parent before mechanism or TMD projection. \\
+\texttt{V15.PARENT.DD} & Retain spin-3/2 helicity and transition ancestry in the \(\Delta\Delta\) parent. \\
+\texttt{V15.PARENT.6Q} & Retain direct six-quark quark operators and honest support status for antiquark/gluon sectors. \\
+\texttt{V15.PARENT.X} & Preserve signed diagonal and interference blocks among all supported sectors. \\
+\texttt{V15.RED} & Close regulated GTMD/TMD/GPD/PDF/current/EMT reductions with one cluster-matching representation. \\
+\texttt{V15.TENSOR} & Project \(U,L,T,LL,LT,TT\) only after full composition and apply tensor-sign adapters explicitly. \\
+\texttt{V15.B1} & Compute \(b_1\) from the common tensor parent without independent normalization. \\
+\texttt{V15.EXOTIC} & Identify the first nonzero operator block in suppressed one-body tensor or gluon-flip channels. \\
+\texttt{V15.COH} & Extend the coherent pilot to typed \(NN\pi,\Delta\Delta,6q\) intermediate channels at amplitude level. \\
+\texttt{V15.OVERLAP} & Count shared partonic/nuclear and cluster/compact regions once. \\
+\texttt{V15.CP} & Derive CP maps only after all resolved amplitudes are combined. \\
+\texttt{V15.TTN.STATE} & Implement the four-branch symmetry-adapted nuclear TTN. \\
+\texttt{V15.TTN.HC} & Preserve hidden-color multiplicities and certified basis rotations in the network. \\
+\texttt{V15.TTN.CONV} & Demonstrate exact/full-bond equality and observable-sensitive reduced-bond convergence. \\
+\texttt{V15.CONV} & Report sector, basis, regulator, cluster, TTN, spectral, operator, and numerical convergence separately. \\
+\texttt{V15.IDENT} & Diagnose identifiability with Jacobians and holdouts rather than named-function fitting. \\
+\texttt{V15.SCHEMA} & Serialize deterministic state, matching, current, parent, TTN, and provenance manifests. \\
+\texttt{V15.ISOLATE} & Keep N3 unreachable from production, matching, evolution, process, and inference roots. \\
+\texttt{V15.HANDOFF} & Export a complete matched microscopic parent and unresolved-gate manifest for the first LF-to-QCD matching package. \\
+\bottomrule
+\end{longtable}
+}
+
+\section{Analytic and finite-dimensional benchmark families}
+\label{sec:benchmarks}
+
+The normative benchmark suite contains at least the following families.
+
+\subsection*{N3-A: \(\Delta\Delta\) charge and exchange algebra}
+Generate the exact \(I=0\) charge state, derive exchange eigenvalues, and verify the \({}^3S_1,{}^3D_1,{}^7D_1\) selection.  Inject wrong Clebsch--Gordan signs, an even-spin state, and broken exchange parity.
+
+\subsection*{N3-B: \(\Delta\Delta\) spectral threshold}
+Use an analytic spectral density with a known threshold.  Verify exact zero below threshold, the declared opening above threshold, and finite-volume convergence without physical numerical \(\eps\).
+
+\subsection*{N3-C: five six-quark color singlets}
+Compute the common nullspace of the total generators and compare it with the \([2,2,2]\) hook-length multiplicity.  Remove each singlet in turn and require a completeness failure.
+
+\subsection*{N3-D: exact \(S_6\) antisymmetry}
+Verify \(\cA_6^2=\cA_6=\cA_6^\dagger\), signed exchanges across cluster partitions, and vanishing of Pauli-forbidden basis vectors.
+
+\subsection*{N3-E: hidden-color basis covariance}
+Construct two nontrivial \(U(4)\) hidden bases.  Individual hidden diagonal weights must change while complete six-quark current, EMT, GTMD, and norm matrix elements remain invariant.
+
+\subsection*{N3-F: cluster Gram and projector}
+Use embedded \(NN\) and \(\Delta\Delta\) vectors with a known linear dependence.  Verify singular-value reporting, rank reduction, projector idempotence, and compact-complement orthogonality.
+
+\subsection*{N3-G: orthogonal versus subtraction representation}
+Evaluate one complete observable through \cref{eq:orthogonal-state} and \cref{eq:subtraction-representation}; require equality.  Missing or duplicate subtraction must leave signed residuals.
+
+\subsection*{N3-H: coupled Hamiltonian Hermiticity}
+Test every supported N3 off-diagonal block and generated adjoint on basis states and deterministic random superpositions.  Compare assembled and matrix-free actions.
+
+\subsection*{N3-I: renormalization trajectory and holdouts}
+Refit the restricted calibration conditions across at least three resolutions, expose Jacobian null directions, and evaluate all frozen holdouts without retuning.
+
+\subsection*{N3-J: Feshbach Hamiltonian/operator equivalence}
+Eliminate \(\Delta\Delta\) or \(6q\) in a finite oracle, transform all operator families, retain the norm kernel, and show that using \(POP\) alone fails.
+
+\subsection*{N3-K: blockwise continuity}
+Close \cref{eq:n3-continuity} in all supported blocks.  Omit each generated transition, overlap-subtraction, regulator-gauging, or induced current and require a signed defect.
+
+\subsection*{N3-L: sector-summed GTMD closure}
+Construct a finite quark helicity parent with diagonal and transition blocks.  Verify Hermiticity, forward positivity where applicable, nonforward Cauchy bounds, and common reductions.
+
+\subsection*{N3-M: tensor and \(b_1\) decomposition}
+Compare the direct helicity-difference and LL-projector routes.  Rotate the hidden basis and require the complete six-quark and matched totals to remain invariant while the hidden subtotal changes.
+
+\subsection*{N3-N: exotic null channel}
+Choose an observable with a vanishing one-body nucleon baseline and a known compact or \(\Delta\Delta\) contribution.  Remove the responsible block and require exact zero.
+
+\subsection*{N3-O: coherent intermediate-channel pilot}
+Include \(NN\pi\), \(\Delta\Delta\), and compact intermediate amplitudes with known phases.  Test zero limits, ordering reversal, tensor projection, and failure of a copied scalar ratio.
+
+\subsection*{N3-P: CP reduction timing}
+Combine coherent amplitudes and compare the derived partial trace with a Kraus representation.  Trace before composition and require a nonzero interference error.
+
+\subsection*{N3-Q: TTN exactness and observable loss}
+Verify exact/full-bond equality in two hidden-color fusion trees.  Demonstrate a reduced-bond state with a small energy or norm error but a substantial loss in a compact, tensor, transition, or exotic observable.
+
+\subsection*{N3-R: provenance and production isolation}
+Build valid and invalid composition plans.  Reject hidden color as an additive sector, explicit plus induced duplicates, full six-quark plus un-subtracted clusters, and any route to production or matching.
+
+\section{Mandatory negative-test catalogue}
+\label{sec:negative-tests}
+
+The implementation must include at least \textbf{400} stable negative-test identities.  They cover, at minimum:
+\begin{enumerate}
+\item incomplete \(\Delta\Delta\) charge, spin, orbital, or exchange basis;
+\item fake below-threshold support or physicalized numerical width;
+\item incomplete five-dimensional six-quark color basis;
+\item wrong anti-fundamental or total color-generator action;
+\item broken \(S_6\) antisymmetry or cluster-only antisymmetry;
+\item hidden-color basis dependence of a complete observable;
+\item hidden color selected as an independent Fock sector or fitted probability;
+\item incomplete, rank-deficient, or silently pseudoinverted cluster embeddings;
+\item non-idempotent cluster or compact projector;
+\item missing or duplicate cluster subtraction;
+\item explicit \(\Delta\Delta\) or \(6q\) together with its fully induced replacement;
+\item unsupported Hamiltonian blocks represented as unexplained zeros;
+\item missing Hermitian adjoints or matrix-free disagreement;
+\item hidden parameter null directions or fitting of sector probabilities;
+\item Feshbach elimination without transformed currents, EMT, GTMD operators, or norm kernels;
+\item gaps in the current completeness certificate;
+\item continuity closure only after mixing incompatible blocks;
+\item operator noncovariance under hidden-basis rotations;
+\item scalar smearing substituted for spin-resolved \(\Delta\Delta\) or six-quark amplitudes;
+\item missing partonic support reported as a physical zero;
+\item early target/TMD projection before sector composition;
+\item independent \(b_1\), tensor, gluon-flip, or hidden-color normalization;
+\item copied unpolarized coherent ratios;
+\item partonic Wilson and nuclear coherent identities aliased;
+\item early CP trace erasing interference;
+\item low-bond observable loss hidden by energy convergence;
+\item cache reuse across different cluster or hidden bases;
+\item non-deterministic manifests or source-hash mutation;
+\item any path into production, LF-to-QCD matching, evolution, process, or inference roots.
+\end{enumerate}
+Each injection has an ordered stable identifier, expected diagnostic class, and deterministic failure message.
+
+\section{Staged implementation program}
+\label{sec:stages}
+
+\subsection{N3.0: representation and basis layer}
+
+Implement the \(\Delta\Delta\) charge/spin/orbital basis, the five six-quark color singlets, exact \(S_6\) antisymmetry, cluster/hidden bases, and hidden-basis recoupling maps.  Complete N3-A through N3-E before adding dynamics.
+
+\subsection{N3.1: cluster matching and provenance}
+
+Implement \(NN\) and \(\Delta\Delta\) embeddings, Gram/rank diagnostics, cluster and compact projectors, orthogonal/subtraction equivalence, and the full count-once provenance complex.  Complete N3-F, N3-G, and N3-R.
+
+\subsection{N3.2: coupled Hamiltonian and renormalization}
+
+Assemble the N3 block Hamiltonian, supported transition terms, generated adjoints, matrix-free action, resolution trajectory, holdouts, and Feshbach comparisons.  Complete N3-H through N3-J.
+
+\subsection{N3.3: currents and operator family}
+
+Extend the Hamiltonian-generated current certificate, EMT, axial/pseudoscalar, local, and bilocal partonic operators.  Close continuity blockwise and verify hidden-basis covariance.  Complete N3-K.
+
+\subsection{N3.4: full parent and observables}
+
+Construct the sector-summed quark, antiquark, and gluon deuteron parents, transition blocks, tensor projections, \(b_1\), exotic diagnostics, and coherent pilot.  Complete N3-L through N3-P.
+
+\subsection{N3.5: tensor network, convergence, and handoff}
+
+Implement the four-branch symmetry-adapted TTN, exact/full-bond and reduced-bond studies, deterministic schemas, source hashes, regression gates, and the matching-readiness handoff.  Complete N3-Q and all final acceptance criteria.
+
+\section{Risks, failure modes, and safeguards}
+\label{sec:risks}
+
+\begin{longtable}{L{0.24\textwidth}L{0.34\textwidth}L{0.34\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard \\
+\midrule
+\endhead
+Hidden-color reification & Treating basis coordinates as measurable probabilities. & Require unitary basis covariance and prohibit direct hidden-weight calibration. \\
+Cluster double counting & Adding full six-quark, \(NN\), and \(\Delta\Delta\) contributions independently. & Use cluster projectors or one explicit overlap subtraction with operator-family covariance. \\
+Incomplete color space & Retaining only singlet--singlet or a favorite hidden vector. & Derive all five total-generator null vectors and test multiplicity. \\
+Incomplete antisymmetry & Antisymmetrizing within clusters but not across six quarks. & Build in \(\bigwedge^6h_q\) or exact occupation-number space before assembly. \\
+Probability fitting & Tuning \(Z_{\Delta\Delta}\) or \(Z_{6q}\) to one tensor observable. & Fit shared Hamiltonian parameters and retain tensor holdouts. \\
+Operator mismatch & Adding sectors without matching currents and GTMD operators. & Extend the completeness certificate and blockwise continuity. \\
+False compact signal & A low-rank TTN drops cluster/hidden interference. & Demand observable-sensitive bond convergence in multiple fusion trees. \\
+Fake continuum support & Numerical width generates a \(\Delta\Delta\) cut. & Use typed spectral support and exact below-threshold null tests. \\
+Scalar shadowing copy & Tensor coherent response inherited from an unpolarized ratio. & Compose helicity amplitudes before projection. \\
+Matching overreach & Regulated compact parent called a physical TMD. & Preserve LF-to-QCD, soft, rapidity, evolution, and process gates. \\
+\bottomrule
+\end{longtable}
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+N3 may be called formally complete at its declared validation boundary only when:
+\begin{enumerate}
+\item the N2 baseline and all immutable production artifacts reproduce;
+\item exclusive N3 plans compile deterministically;
+\item the \(\Delta\Delta\) charge, exchange, partial-wave, and spectral bases pass;
+\item the six-quark color-singlet multiplicity is five and complete;
+\item exact \(S_6\) antisymmetry passes before operator assembly;
+\item at least two hidden-color bases give identical complete observables;
+\item cluster embeddings preserve all declared quantum numbers;
+\item cluster Gram rank and null directions are reported honestly;
+\item cluster and compact projectors are Hermitian and idempotent;
+\item orthogonal-complement and subtraction representations agree;
+\item the coupled Hamiltonian is Hermitian and agrees with matrix-free action;
+\item the renormalization trajectory closes calibration conditions while retaining holdouts and null directions;
+\item explicit/induced comparisons transform all operator families and retain visible remainders;
+\item the current-basis certificate contains no unexplained retained-Hamiltonian gap;
+\item continuity closes separately in every supported sector block;
+\item complete local and bilocal operators are hidden-basis covariant;
+\item the sector-summed GTMD parent closes all regulated reductions;
+\item tensor and \(b_1\) routes agree without independent normalization;
+\item hidden-color subtotals are labeled basis dependent and complete totals are invariant;
+\item at least one exotic/null channel identifies a non-nucleonic first nonzero block;
+\item coherent tensor amplitudes are derived from helicity amplitudes;
+\item partonic/nuclear and cluster/compact overlaps are counted once;
+\item CP maps are derived only after coherent composition;
+\item exact, Krylov, and full-bond TTN results agree;
+\item reduced-bond convergence is demonstrated on non-nucleonic observables;
+\item all convergence axes and uncertainty classes remain separate;
+\item at least one non-nucleonic observable is genuinely withheld;
+\item all negative injections fail with their expected diagnostics;
+\item manifests rebuild byte-for-byte and caches respect full identity;
+\item no N3 object reaches production, matching, evolution, process, or inference roots.
+\end{enumerate}
+Passing these conditions establishes an internally controlled microscopic nuclear parent.  It does not establish a physical TMD.
+
+\section{Boundary to regulator-to-QCD matching}
+\label{sec:matching-boundary}
+
+A successful N3 package exports
+\begin{equation}
+ \left
+ \{
+ W_{q/D}^{\rm N3},
+ W_{\bar q/D}^{\rm N3},
+ W_{g/D}^{\rm N3},
+ \mathfrak R_{\rm N3},
+ \mathfrak C_{\rm cluster},
+ \mathfrak J_{\rm current},
+ \mathfrak P_{\rm provenance}
+ \right
+ \},
+\label{eq:n3-matching-handoff}
+\end{equation}
+with complete helicity, sector, Wilson, rank, color, member, and convergence identity.  The next layer must construct a closed regulated operator basis and a matching map
+\begin{equation}
+ \widetilde W_{a/D}^{\QCD}
+ =Z_{a}^{\LF\to\QCD}
+ \otimes
+ \widetilde W_{a/D}^{\rm N3}
+ +\Delta_{a}^{\rm trunc},
+\label{eq:n3-lf-qcd}
+\end{equation}
+including ultraviolet matching, link shortening where applicable, rapidity renormalization, soft subtraction, operator mixing, and a common rank-aware scheme.  No N3 result may enter evolution before this gate passes.
+
+\appendix
+
+\section{Hook-length derivation of the five color singlets}
+\label{app:hook}
+
+For the Young shape \([2,2,2]\), label boxes by row and column.  The hook lengths are
+\begin{equation}
+ \begin{matrix}
+ 4&3\\
+ 3&2\\
+ 2&1
+ \end{matrix}.
+\end{equation}
+The symmetric-group irrep dimension is therefore
+\begin{equation}
+ f^{[2,2,2]}
+ =\frac{6!}{4\,3\,3\,2\,2\,1}=5.
+\end{equation}
+Since each column has length three, the associated \(SU(3)\) representation is a singlet.  Thus the singlet multiplicity in \(\bm3^{\otimes6}\) is five.  The same number must be obtained from the common nullspace of the total generators.
+
+\section{Derivation of the \texorpdfstring{\(\Delta\Delta\)}{DeltaDelta} exchange condition}
+\label{app:dd-exchange}
+
+For two identical angular momenta \(j\), the permutation of the coupled state is
+\begin{equation}
+ P_{12}|(jj)JM\rangle
+ =(-1)^{2j-J}|(jj)JM\rangle.
+\end{equation}
+Applying this separately to spin \(S\) and isospin \(I\), multiplying by the orbital factor \((-1)^L\), and requiring total fermionic antisymmetry gives \cref{eq:dd-antisymmetry-condition}.  For \(j=3/2\), \(I=0\), and even \(L\), odd \(S\) is required.  Coupling to total \(J=1\) at the lowest even \(L\) yields \({}^3S_1\), \({}^3D_1\), and \({}^7D_1\).
+
+\section{Hidden-color covariance test}
+\label{app:hidden-test}
+
+Given a state coefficient vector
+\begin{equation}
+ c=(c_{11},\bm c_H),
+\end{equation}
+and a complete operator
+\begin{equation}
+ O=\begin{pmatrix}
+ O_{11}&\bm v^\dagger\\
+ \bm v&O_H
+ \end{pmatrix},
+\end{equation}
+a hidden rotation gives
+\begin{equation}
+ c'=(c_{11},U\bm c_H),
+ \qquad
+ O'=\begin{pmatrix}
+ 1&0\\0&U
+ \end{pmatrix}
+ O
+ \begin{pmatrix}
+ 1&0\\0&U^\dagger
+ \end{pmatrix}.
+\end{equation}
+Then \(c'^\dagger O'c'=c^\dagger Oc\).  A test that rotates the state but not the operator, or vice versa, must fail.
+
+\section{Compact adoption checklist}
+\label{app:checklist}
+
+Before an N3 result is handed to matching, answer:
+\begin{enumerate}
+\item Is the \(\Delta\Delta\) basis charge complete and exchange antisymmetric?
+\item Are all five six-quark color singlets present?
+\item Is complete \(S_6\) antisymmetry imposed?
+\item Is hidden color treated as a basis inside the compact sector?
+\item Do complete observables remain invariant under hidden-basis rotations?
+\item Are \(NN\) and \(\Delta\Delta\) cluster embeddings explicit?
+\item Is cluster Gram rank reported?
+\item Are orthogonal and subtraction representations equivalent?
+\item Does the provenance graph reject every duplicate representation?
+\item Are Hamiltonian, currents, EMT, and partonic operators one matched family?
+\item Does continuity close blockwise?
+\item Is the full parent assembled before target or mechanism projection?
+\item Are missing six-quark species marked unavailable rather than zero?
+\item Do tensor and \(b_1\) routes close without fitted sector normalizations?
+\item Are hidden-color subtotals labeled basis dependent?
+\item Is partonic Wilson rescattering kept distinct from nuclear coherence?
+\item Are CP reductions performed only after coherent composition?
+\item Does the TTN converge on compact and tensor observables?
+\item Are all truncation and matching statuses explicit?
+\item Is the result isolated from production and evolution?
+\end{enumerate}
+A negative answer blocks matching readiness.
+
+\footnotesize
+\begin{thebibliography}{99}
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev.\ Mod.\ Phys.\ \textbf{21}, 392 (1949).
+
+\bibitem{KeisterPolyzou1991}
+B.~D.~Keister and W.~N.~Polyzou,
+``Relativistic Hamiltonian dynamics in nuclear and particle physics,''
+Adv.\ Nucl.\ Phys.\ \textbf{20}, 225 (1991).
+
+\bibitem{Carbonell1998}
+J.~Carbonell, B.~Desplanques, V.~A.~Karmanov, and J.-F.~Mathiot,
+``Explicitly covariant light-front dynamics and relativistic few-body systems,''
+Phys.\ Rept.\ \textbf{300}, 215 (1998), arXiv:nucl-th/9804029.
+
+\bibitem{Wiringa1995}
+R.~B.~Wiringa, V.~G.~J.~Stoks, and R.~Schiavilla,
+``Accurate nucleon--nucleon potential with charge-independence breaking,''
+Phys.\ Rev.\ C \textbf{51}, 38 (1995), arXiv:nucl-th/9408016.
+
+\bibitem{Machleidt2001}
+R.~Machleidt,
+``The high-precision, charge-dependent Bonn nucleon--nucleon potential,''
+Phys.\ Rev.\ C \textbf{63}, 024001 (2001), arXiv:nucl-th/0006014.
+
+\bibitem{Krebs2020}
+H.~Krebs,
+``Nuclear currents in chiral effective field theory,''
+Eur.\ Phys.\ J.\ A \textbf{56}, 234 (2020), arXiv:2008.00974.
+
+\bibitem{Schiavilla2018}
+R.~Schiavilla et al.,
+``Local chiral interactions and magnetic structure of few-nucleon systems,''
+Phys.\ Rev.\ C \textbf{99}, 034005 (2019), arXiv:1809.10180.
+
+\bibitem{FurnstahlHammerTirfessa2001}
+R.~J.~Furnstahl, H.-W.~Hammer, and N.~Tirfessa,
+``Field redefinitions at finite density,''
+Nucl.\ Phys.\ A \textbf{689}, 846 (2001), arXiv:nucl-th/0010078.
+
+\bibitem{HoodbhoyJaffeManohar1989}
+P.~Hoodbhoy, R.~L.~Jaffe, and A.~Manohar,
+``Novel effects in deep-inelastic scattering from spin-one hadrons,''
+Nucl.\ Phys.\ B \textbf{312}, 571 (1989).
+
+\bibitem{HERMES2005}
+A.~Airapetian et al.\ (HERMES Collaboration),
+``First measurement of the tensor structure function \(b_1\) of the deuteron,''
+Phys.\ Rev.\ Lett.\ \textbf{95}, 242001 (2005), arXiv:hep-ex/0506018.
+
+\bibitem{CosynDongKumanoSargsian2017}
+W.~Cosyn, Y.-B.~Dong, S.~Kumano, and M.~Sargsian,
+``Tensor-polarized structure function \(b_1\) in the standard convolution description of the deuteron,''
+Phys.\ Rev.\ D \textbf{95}, 074036 (2017), arXiv:1702.05337.
+
+\bibitem{BrodskyJiLepage1983}
+S.~J.~Brodsky, C.-R.~Ji, and G.~P.~Lepage,
+``Quantum chromodynamic predictions for the deuteron form factor,''
+Phys.\ Rev.\ Lett.\ \textbf{51}, 83 (1983).
+
+\bibitem{Miller2014}
+G.~A.~Miller,
+``Pionic and hidden-color, six-quark contributions to the deuteron \(b_1\) structure function,''
+Phys.\ Rev.\ C \textbf{89}, 045203 (2014), arXiv:1311.4561.
+
+\bibitem{MillerHiddenColor2014}
+G.~A.~Miller,
+``Hidden color and the \(b_1\) structure function of the deuteron,''
+arXiv:1412.1864.
+
+\bibitem{FrankfurtGuzeyStrikman2012}
+L.~Frankfurt, V.~Guzey, and M.~Strikman,
+``Leading twist nuclear shadowing phenomena in hard processes with nuclei,''
+Phys.\ Rept.\ \textbf{512}, 255 (2012), arXiv:1106.2091.
+
+\bibitem{CosynWeiss2020}
+W.~Cosyn and C.~Weiss,
+``Polarized electron--deuteron deep-inelastic scattering with spectator nucleon tagging,''
+Phys.\ Rev.\ C \textbf{102}, 065204 (2020), arXiv:2006.03033.
+
+\bibitem{CaoEtAl2026}
+X.~Cao, S.~Cheng, Y.~Duan, Y.~Li, S.~Xu, and X.~Zhao,
+``Non-perturbative flavor asymmetry in the nucleon and deuteron: The light-front Hamiltonian effective field theory approach,''
+arXiv:2601.13567 (2026).
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{BoerEtAl2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\end{thebibliography}
+
+\end{document}
