@@ -1771,3 +1771,16 @@ Volume XVI is preserved as the authoritative PDF
 SHA-256 `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2`.
 It defines the post-M1 ensemble and M2--M4 evolution/process-readiness
 boundary without promoting the C20 validation pilot to physical status.
+
+## C21/M2 — threshold-qualified multi-Q evolution validation
+
+The final local commit is the commit containing this entry; nothing is
+pushed. M2 adds seven source-audited anomalous/beta records, reversible
+threshold history, separate quark and exploratory-gluon kernel plans, exact
+and finite-order two-scale routes, rank 0--3 multi-Q transport, a 540-entry
+capability matrix, and resolved nuclear evolution. It covers 900 requirements
+and 640 negative injections and remains validation-only.
+
+**Exact next package:** C22/M3 -- full source-audited rank-aware small-b OPE
+and collinear mixing across all supported twist-two blocks, with explicit
+multiparton capability boundaries and common multi-Q ensemble closure.

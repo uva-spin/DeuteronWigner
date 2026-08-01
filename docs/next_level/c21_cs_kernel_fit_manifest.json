@@ -1,0 +1,26 @@
+{
+  "gluon": {
+    "calibration": 0,
+    "holdouts": 1,
+    "nonperturbative_casimir_scaling": false,
+    "parameters": 2,
+    "status": "EXPLORATORY_SINGLE_SOURCE_LIMITATIONS_RETAINED"
+  },
+  "one_kernel_per_tmd": false,
+  "plans": [
+    "M2_PLAN_PERT_ORACLE",
+    "M2_PLAN_Q_LATTICE",
+    "M2_PLAN_Q_HYBRID",
+    "M2_PLAN_QG_EXPLORATORY"
+  ],
+  "quark": {
+    "calibration": 8,
+    "holdouts": 3,
+    "large_b": "MODEL_DEPENDENT",
+    "null_directions": 0,
+    "parameters": 3,
+    "status": "INTERFACE_VALIDATED_PHYSICAL_BUNDLE_NOT_CONSUMED"
+  },
+  "schema_version": "1.0.0",
+  "source_tension": 0.013
+}
