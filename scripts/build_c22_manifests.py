@@ -30,6 +30,7 @@ NORMATIVE = (
     "references/volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf",
     "references/volume_xvii_process_qualified_tmd_observables.tex", "references/formalism_volume_index.md",
     "handoff/ROADMAP.md", "docs/next_level/c22_m3_codex_prompt.md",
+    "references/volume_xviii_smallb_ope_collinear_mixing.tex",
 )
 
 
@@ -68,7 +69,7 @@ def main(test_count: int = 1071) -> None:
     write("c22_primary_source_manifest.json", {"schema_version": "1.0.0", "count": len(primary), "sources": primary, "secondary_authorities": 0})
     write("c22_distribution_algebra_manifest.json", {"schema_version": "1.0.0", **dist, "hpl": hpl_report(hashes["2006.05329"]), "types": ["DELTA_ENDPOINT", "REGULAR_POLYNOMIAL", "PLUS_DK", "SMALL_X_LOG", "HPL", "MATRIX_DISTRIBUTION"]})
     write("c22_coefficient_library.json", {"schema_version": "1.0.0", "records": [asdict(record) | {"content_hash": record.content_hash} for record in coeff], "record_count": len(coeff), "global_order_forced": False})
-    write("c22_coefficient_source_audit.json", {"schema_version": "1.0.0", "all_executable_records_source_hashed": all(record.source_hash for record in coeff), "n3lo_papers_preserved": True, "n3lo_execution_claimed": False, "reason": "FULL_MACHINE_READABLE_N3LO_EXPRESSIONS_NOT_INGESTED; DECLARED LOWER-ORDER BLOCKS ONLY", "color_invariants_retained_by_source_record": ["C_F", "C_A", "T_F n_f", "quartic invariants"]})
+    write("c22_coefficient_source_audit.json", {"schema_version": "1.0.0", "all_records_source_linked": all(record.source_hash for record in coeff), "fully_source_audited_executable_records": 0, "validation_prototype_records": len(coeff), "n3lo_papers_preserved": True, "n3lo_execution_claimed": False, "volume_xviii_acceptance_met": False, "reason": "AUTHORITATIVE_ANCILLARIES_EXACT_LOCATORS_TRANSCRIPTION_HASHES_AND_COMPLETE_EXPRESSIONS_NOT_INGESTED", "color_invariants_required_not_yet_expression_complete": ["C_F", "C_A", "T_F n_f", "quartic invariants"]})
     g5 = gamma5_record()
     write("c22_gamma5_scheme_manifest.json", {"schema_version": "1.0.0", **asdict(g5), "content_hash": g5.content_hash, "conversion_residual": rg["gamma5_conversion_residual"], "singlet_nonsinglet_alias_rejected": True})
     lib = splitting_library()

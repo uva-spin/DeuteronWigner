@@ -1811,7 +1811,17 @@ explicit declared order one. Unsupported twist-three/T-odd, spin-1 gluon
 double-flip, higher-twist pretzelosity, and operator-distinct many-body blocks
 remain fail-closed as recorded in `c22_unresolved_physics_gaps.md`.
 
-**Exact next package:** C23/P0 -- implement the Volume-XVII process-qualified
-color-singlet Drell--Yan, current-fragmentation SIDIS, inclusive b1, tagged
-spin-1 DIS, selected gluon records, factorization/Glauber certificates, and
-rank-resolved W+Y validation without promoting unavailable M3 ingredients.
+Volume XVIII is preserved at
+`references/volume_xviii_smallb_ope_collinear_mixing.tex` with SHA-256
+`ee5a103b28ebc216649a910618a455a85fc895d00fe74cb39630568a14508ed3`.
+Its formal audit supersedes the earlier C22 completion inference. The current
+typed implementation is a fail-closed validation scaffold: no identity is
+M3-qualified until exact source/ancillary expressions, independent x/Mellin
+solvers, and operator-derived 540-entry classification satisfy Volume XVIII.
+
+**Exact next package:** C22/M3 closure -- ingest authoritative coefficient and
+splitting ancillaries with exact locators/transcription hashes; implement exact
+distribution/color expressions and independent x/Mellin evolution; replace
+the periodic prototype-family map with decorated-operator classification; and
+re-run all Volume-XVIII RG, threshold, rank, nuclear, holdout, and regression
+gates. C23/P0 remains blocked from execution until this closes.

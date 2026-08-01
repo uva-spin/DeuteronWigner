@@ -77,6 +77,8 @@ def test_capability_counts_preserve_baselines():
     assert report["c20_matching_unavailable"] == 48
     assert report["c21_fully_evolvable"] == 438
     assert sum(report["counts"].values()) == 540
+    assert report["counts"]["M3_FULLY_QUALIFIED"] == 0
+    assert all(row["m3_status"] != "M3_FULLY_QUALIFIED" for row in report["rows"])
 
 
 def test_unsupported_physics_fail_closed():
@@ -108,4 +110,5 @@ def test_injections_and_readiness_isolation():
     assert len({row[0] for row in INJECTIONS}) == 720
     report = readiness_report()
     assert not report["production_reachable"] and not report["process_reachable"]
+    assert not report["volume_xviii_acceptance_met"]
     assert "PROCESS_FACTORIZATION_READY" in report["not_issued"]

@@ -18,5 +18,8 @@ def test_c22_manifest_counts_and_isolation():
     assert load("requirement_coverage")["count"] == 980
     assert load("injection_manifest")["count"] == 720
     assert len(load("m3_multiq_capability_matrix")["rows"]) == 540
+    assert load("m3_multiq_capability_matrix")["counts"]["M3_FULLY_QUALIFIED"] == 0
+    assert load("normative_source_integration")["sources"][-1]["path"] == "references/volume_xviii_smallb_ope_collinear_mixing.tex"
+    assert not load("coefficient_source_audit")["volume_xviii_acceptance_met"]
     assert load("regression_report")["production_registry"] == 216
     assert not load("regression_report")["process_reachable"]

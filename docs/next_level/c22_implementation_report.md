@@ -1,5 +1,14 @@
 # C22/M3 implementation report
 
+> **Volume-XVIII integration status:** C22/M3 is not formally complete. The
+> current package is a fail-closed validation scaffold. Volume XVIII requires
+> complete primary ancillary preservation, exact coefficient transcription
+> and color structures, equation/ancillary locators and transcription hashes,
+> independent full x-space and Mellin evolution, and operator-derived (not
+> periodic prototype-family) classification before any identity may be marked
+> `M3_FULLY_QUALIFIED`. The post-integration capability count is therefore zero
+> fully qualified identities; earlier 438-qualified wording is superseded.
+
 C22/M3 adds a validation-only, operator-level twist-two small-\(b_{\rm TMD}\)
 layer between C20 reference matching, C21 two-scale evolution, and the future
 process compiler specified by Volume XVII. It does not execute a hard factor,
@@ -37,9 +46,10 @@ Bessel order, Fourier phase, reference mass, and error components separately.
 Route-A/route-B discrepancies remain nonzero and below the declared first
 omitted-order scale.
 
-All 540 inherited operator identities receive an M3 record. The classification
-does not invent metadata absent from C19: it records the inherited deterministic
-coefficient-family mapping and retains the source limitation. Resolved NN,
+All 540 inherited operator identities receive a fail-closed M3 record. The
+current periodic coefficient-family mapping is only a deterministic validation
+fixture; it is not an operator-derived scientific classification and cannot
+support qualification. Resolved NN,
 NNPI, DeltaDelta, cluster, hidden-color, transition/interference, coherent
 pilot, and matched-total ancestry remains explicit. Two hidden-color rotations
 leave complete observables invariant while individual components change.
@@ -54,6 +64,22 @@ scheme. Many-body operators without a proven common local operator retain an
 operator-specific unavailable status. The physical Collins--Soper input and
 large-\(b\) boundary remain C21 bottlenecks.
 
-The accuracy label is limited by order-one coefficient, collinear, and nuclear
-blocks and by the exploratory/unavailable nonperturbative CS kernel. It is not
-upgraded by the existence of N3LO source papers.
+The accuracy label is limited by incomplete coefficient/source audit, prototype
+order-one collinear and nuclear blocks, and the exploratory/unavailable
+nonperturbative CS kernel. It is not upgraded by the existence of N3LO source
+papers.
+
+## Exact closure work required by Volume XVIII
+
+1. Obtain and hash every available authoritative ancillary; add exact equation
+   or ancillary locators and deterministic transcription hashes.
+2. Replace polynomial prototype coefficients with exact distribution-valued
+   source expressions, including endpoint, HPL, small-x, and full color terms.
+3. Implement genuinely independent x-space and Mellin-space evolution engines
+   for the supported nonsinglet, singlet, helicity, transversity, and LL blocks.
+4. Derive all 540 capability tuples from decorated C19/C20 operator identities,
+   not index cycling, and retain explicit multiparton/double-flip unavailable
+   bases.
+5. Re-run RG logarithm reconstruction, route A/B, threshold, rank, nuclear,
+   hidden-color, holdout, and negative-injection validation on those physical
+   records. Only then may M3-qualified statuses be issued.

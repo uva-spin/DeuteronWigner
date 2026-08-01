@@ -2,6 +2,12 @@
 
 These are required unavailable boundaries, not optional enhancements:
 
+- Volume XVIII formal acceptance is not yet met: authoritative ancillaries,
+  exact expression-level color/HPL/endpoint transcriptions, source locators and
+  transcription hashes, independent full x/Mellin solvers, and an
+  operator-derived 540-entry mapping must replace the current validation
+  fixtures before any M3-qualified status is issued.
+
 - Sivers/Qiu--Sterman, Boer--Mulders, genuine g1T and h1L-perp, f- and d-type
   tri-gluon, and tensor-polarized T-odd channels require their own multiparton
   operator bases and source-audited twist-three matching/evolution.

@@ -25,6 +25,7 @@ byte-for-byte from the supplied sources.
 | XV | `volume_xv_delta_delta_six_quark_hidden_color.tex` | `675cc27dfe4548e6e49d4ba7d1c093dc235003aaa8f1b77d4e4ef2829246b4cc` | present |
 | XVI | `volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf` | `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2` | present (authoritative PDF) |
 | XVII | `volume_xvii_process_qualified_tmd_observables.tex` | `dae315b3feb198fc85cddb2243fc5b9e99f9d9c8b1579908c30b0cfcde4ae9af` | present |
+| XVIII | `volume_xviii_smallb_ope_collinear_mixing.tex` | `ee5a103b28ebc216649a910618a455a85fc895d00fe74cb39630568a14508ed3` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -68,3 +69,9 @@ The source-qualified C22/M3 small-b OPE package is an operator-level
 intermediate validation layer and does not execute Volume XVII's process
 contracts. Volume XVII remains authoritative for the subsequent P0 process
 package.
+Volume XVIII is the normative C22/M3 formal contract for exact endpoint
+algebra, source and ancillary auditing, operator-level twist classification,
+gamma5-qualified collinear mixing, RG/threshold/rank closure, resolved nuclear
+OPE, and capability-complete multi-Q status. Its acceptance gates supersede
+any earlier completion inference based only on scaffold tests or source-linked
+prototype coefficients.
