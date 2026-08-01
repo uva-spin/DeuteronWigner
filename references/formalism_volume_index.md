@@ -63,3 +63,8 @@ records; source-audited hard and fragmentation interfaces;
 factorization/Glauber certificates; and rank-resolved W+Y validation. It is
 the formal authority for C22/P0 and does not promote the C21 evolution
 validation layer to physical or production status.
+
+The source-qualified C22/M3 small-b OPE package is an operator-level
+intermediate validation layer and does not execute Volume XVII's process
+contracts. Volume XVII remains authoritative for the subsequent P0 process
+package.

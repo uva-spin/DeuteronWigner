@@ -1787,8 +1787,31 @@ Volume XVII is preserved at
 It is the authoritative post-M2 process boundary and does not alter or
 promote C21's validation-only numerical status.
 
-**Exact next package:** C22/P0 -- implement qualified color-singlet
-Drell--Yan, current-fragmentation SIDIS, inclusive b1, tagged spin-1 DIS,
-and selected gluon-sensitive process records; source-audited hard and
-fragmentation interfaces; factorization/Glauber certificates; and
-rank-resolved W+Y validation, following Volume XVII.
+**Volume-XVII process boundary (sequencing superseded):** P0 will implement
+qualified color-singlet Drell--Yan, current-fragmentation SIDIS, inclusive b1,
+tagged spin-1 DIS, selected gluon-sensitive records, factorization/Glauber
+certificates, and rank-resolved W+Y validation. The supplied C22/M3 package is
+executed first; P0 follows as C23 below.
+
+## C22/M3 — source-qualified twist-two small-b OPE
+
+The package begins from local commit `ad3fa2a3d8828620c808becbcad7db8b5893039c`
+with `afe789a68b7394d1cb0165aa3b428b6e2d79f5bb` in its ancestry. The immutable
+C21 baseline reproduced with 1,053 passing tests. C22 adds exact typed endpoint
+distributions, declared-order source-hashed coefficient records, explicit
+gamma5 conversion, nonsinglet/singlet collinear blocks, rank-aware OPE maps,
+route-A/route-B checks, a 540-entry M3 capability layer, resolved nuclear OPE
+validation, separate uncertainty/accuracy axes, frozen holdouts, and 720
+ordered negative injections. It remains validation-only and creates no
+process, W+Y, inference, or production path.
+
+Higher-order papers are preserved under `data/raw/c22_sources`, but complete
+N3LO ancillaries have not been ingested; executable expressions remain at the
+explicit declared order one. Unsupported twist-three/T-odd, spin-1 gluon
+double-flip, higher-twist pretzelosity, and operator-distinct many-body blocks
+remain fail-closed as recorded in `c22_unresolved_physics_gaps.md`.
+
+**Exact next package:** C23/P0 -- implement the Volume-XVII process-qualified
+color-singlet Drell--Yan, current-fragmentation SIDIS, inclusive b1, tagged
+spin-1 DIS, selected gluon records, factorization/Glauber certificates, and
+rank-resolved W+Y validation without promoting unavailable M3 ingredients.
