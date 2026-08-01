@@ -1,0 +1,240 @@
+{
+  "complete": true,
+  "distribution_oracle": {
+    "actions": [
+      2.333333333333333,
+      1.55,
+      1.2333333333333334
+    ],
+    "associativity_residual": 2.1e-10,
+    "constant_plus_residual": 0.0,
+    "endpoint_integrable": true,
+    "grid_delta_used": false,
+    "mellin_residual": 2.4e-12
+  },
+  "independent_oracles": 10,
+  "records": [
+    {
+      "coefficient_id": "C20:COEFF:d373d899285f177aa4",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.12,
+        "regular": "ONE_PLUS_Z2"
+      },
+      "family": "Q_UNPOL",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "q",
+      "parton_target": "q",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "EchevarriaScimemiVladimirov2016",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1511.05590 Sec.7",
+      "source_operator_id": "Q_UNPOL:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "Q_UNPOL:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:1fb7d9b61955879e67",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.18,
+        "regular": "ZERO"
+      },
+      "family": "G_UNPOL",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "g",
+      "parton_target": "g",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "EchevarriaScimemiVladimirov2016",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1511.05590 Sec.7",
+      "source_operator_id": "G_UNPOL:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "G_UNPOL:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:e67bf88bbb38bd22d3",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.1,
+        "regular": "ZERO"
+      },
+      "family": "Q_HELICITY",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "q",
+      "parton_target": "q",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "GutierrezReyes2017",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1702.06558",
+      "source_operator_id": "Q_HELICITY:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "Q_HELICITY:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:4d9faa3ee263956c4d",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.16,
+        "regular": "ZERO"
+      },
+      "family": "G_HELICITY",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "g",
+      "parton_target": "g",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "GutierrezReyes2019",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1907.03780",
+      "source_operator_id": "G_HELICITY:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "G_HELICITY:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:4d6e06e2ac368ba09c",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.08,
+        "regular": "ZERO"
+      },
+      "family": "Q_TRANSVERSITY",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "q",
+      "parton_target": "q",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "GutierrezReyes2017",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1702.06558",
+      "source_operator_id": "Q_TRANSVERSITY:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "Q_TRANSVERSITY:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:8e2935ab1823ade483",
+      "distribution": {
+        "delta": 0,
+        "plus": 0,
+        "regular": "ONE_PLUS_Z2"
+      },
+      "family": "G_LINEAR",
+      "first_order": 1,
+      "implemented_order": 1,
+      "parton_source": "g",
+      "parton_target": "g",
+      "rank": 2,
+      "remainder": 0.003,
+      "source_citation": "GutierrezReyes2019",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1907.03780",
+      "source_operator_id": "G_LINEAR:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "G_LINEAR:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:fa620ba486cf151e15",
+      "distribution": {
+        "delta": 0,
+        "plus": 0,
+        "regular": "ONE_PLUS_Z2"
+      },
+      "family": "SINGLET_QG",
+      "first_order": 1,
+      "implemented_order": 1,
+      "parton_source": "q",
+      "parton_target": "g",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "LuoYangZhuZhu2019",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1909.13820",
+      "source_operator_id": "SINGLET_QG:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "SINGLET_QG:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:18efacf7f64374a3d7",
+      "distribution": {
+        "delta": 0,
+        "plus": 0,
+        "regular": "ONE_PLUS_Z2"
+      },
+      "family": "SINGLET_GQ",
+      "first_order": 1,
+      "implemented_order": 1,
+      "parton_source": "g",
+      "parton_target": "q",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "LuoYangZhuZhu2019",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "arXiv:1909.13820",
+      "source_operator_id": "SINGLET_GQ:LF",
+      "status": "AUDITED_IMPLEMENTED",
+      "target_operator_id": "SINGLET_GQ:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:31ad24d6d276bd5766",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.12,
+        "regular": "ONE_PLUS_Z2"
+      },
+      "family": "LL_QUARK",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "q",
+      "parton_target": "q",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "OPERATOR_UNIVERSALITY",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "same twist-2 quark operator proof",
+      "source_operator_id": "LL_QUARK:LF",
+      "status": "AUDITED_BY_SYMMETRY_IMPLEMENTED",
+      "target_operator_id": "LL_QUARK:QCD",
+      "twist": 2
+    },
+    {
+      "coefficient_id": "C20:COEFF:cdc11af855af05873a",
+      "distribution": {
+        "delta": 1,
+        "plus": 0.18,
+        "regular": "ZERO"
+      },
+      "family": "LL_GLUON",
+      "first_order": 0,
+      "implemented_order": 1,
+      "parton_source": "g",
+      "parton_target": "g",
+      "rank": 0,
+      "remainder": 0.003,
+      "source_citation": "OPERATOR_UNIVERSALITY",
+      "source_hash": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "source_locator": "same twist-2 gluon operator proof",
+      "source_operator_id": "LL_GLUON:LF",
+      "status": "AUDITED_BY_SYMMETRY_IMPLEMENTED",
+      "target_operator_id": "LL_GLUON:QCD",
+      "twist": 2
+    }
+  ],
+  "schema_version": "1.0.0",
+  "transcription_hash": "3495de514c9c315855f86c3d5313305e09b435d95ed31d1a6cd1a300240db642"
+}

@@ -1,0 +1,30 @@
+{
+  "ancestry_duplicates": 0,
+  "bundles": [
+    {
+      "bundle_id": "C20:EXT:SYNTHETIC_EXACT",
+      "covariance": [
+        [
+          0.0004,
+          0
+        ],
+        [
+          0,
+          0.0009
+        ]
+      ],
+      "physical": false,
+      "scheme": "M0_REFERENCE",
+      "source_type": "synthetic oracle",
+      "usage_role": "CALIBRATION"
+    },
+    {
+      "bundle_id": "C20:EXT:PHYSICAL",
+      "source_type": "lattice",
+      "status": "PRIMARY_SOURCE_MACHINE_READABLE_COVARIANCE_UNAVAILABLE",
+      "usage_role": "UNAVAILABLE"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scheme_conversion_residual": 1.8e-13
+}

@@ -1750,3 +1750,18 @@ requirements and 480 negative injections and remains validation-only.
 **Exact next package:** C20/M1 -- replace analytic matching oracles with
 declared perturbative coefficient libraries and controlled external/lattice
 step-scaling constraints while retaining the M0 scheme and isolation gates.
+
+## C20/M1 — source-audited coefficient and constraint validation
+
+The final local commit is the commit containing this entry; nothing is
+pushed. M1 retains all 540 M0 operator identities, with 492 audited executable
+and 48 explicitly unavailable entries. Ten supported twist-two coefficient
+records, distributional tests, a synthetic exact external-covariance bundle,
+shared overconstrained matching, seven holdout classes, component-wise step
+scaling, scheme conversion, rank 0--3 transport, and uncertainty ledgers are
+validated. C20 covers 770 requirements and 560 negative injections.
+
+**Exact next package:** C21/M2 -- physical anomalous-dimension and Collins-
+Soper-kernel library, continuum/lattice-constrained nonperturbative kernel,
+common multi-Q rank-aware evolution, and threshold-qualified microscopic
+nucleon/deuteron TMD ensembles.
