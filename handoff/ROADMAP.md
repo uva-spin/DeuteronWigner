@@ -1737,3 +1737,16 @@ Volume XV is preserved at
 `675cc27dfe4548e6e49d4ba7d1c093dc235003aaa8f1b77d4e4ef2829246b4cc`.
 It is the package-specific normative formalism for C18/N3 and the inherited
 non-nucleonic boundary for C19/M0.
+
+## C19/M0 — common-scheme matching and evolution validation
+
+The final local commit is the commit containing this entry; nothing is
+pushed. M0 adds two finite-related schemes, a closed 540-dimensional operator
+basis, overconstrained shared matching, step scaling, UV/rapidity/soft
+accounting, rank-aware transforms, small-b OPE, collinear and two-scale
+evolution, threshold matching, and resolved nuclear transport. It covers 830
+requirements and 480 negative injections and remains validation-only.
+
+**Exact next package:** C20/M1 -- replace analytic matching oracles with
+declared perturbative coefficient libraries and controlled external/lattice
+step-scaling constraints while retaining the M0 scheme and isolation gates.

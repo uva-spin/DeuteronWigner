@@ -1,0 +1,70 @@
+{
+  "alternatives_not_additive": true,
+  "bDelta_distinct_bTMD": true,
+  "finite_map": [
+    [
+      1.0,
+      0.07
+    ],
+    [
+      -0.03,
+      1.0
+    ]
+  ],
+  "inverse": [
+    [
+      0.9979044007584074,
+      -0.06985330805308852
+    ],
+    [
+      0.02993713202275222,
+      0.9979044007584074
+    ]
+  ],
+  "roundtrip_residual": 1.2513274852317043e-18,
+  "schema_version": "1.0.0",
+  "schemes": [
+    {
+      "color_class": "NONE",
+      "color_representation": "FUNDAMENTAL",
+      "coordinate": "bTMD",
+      "fourier": "EXP_PLUS_IKB",
+      "mu": 2.0,
+      "name": "M0_REFERENCE",
+      "nf": 3,
+      "order": "O(ALPHA_S)",
+      "ordered_links": "FUTURE_FUTURE",
+      "rank_mass": "EXTRACTED_POWER_REFERENCE_MASS",
+      "rapidity_regulator": "DELTA_VALIDATION",
+      "soft_factor": "SQRT_SOFT",
+      "soft_partition": "HALF_EACH",
+      "staple_cusp": "EXPLICIT",
+      "threshold_history": [],
+      "transverse_closure": "AT_INFINITY",
+      "uv_scheme": "MSBAR",
+      "version": "M0.1",
+      "zeta": 4.0
+    },
+    {
+      "color_class": "NONE",
+      "color_representation": "FUNDAMENTAL",
+      "coordinate": "bTMD",
+      "fourier": "EXP_PLUS_IKB",
+      "mu": 2.0,
+      "name": "M0_FINITE",
+      "nf": 3,
+      "order": "O(ALPHA_S)",
+      "ordered_links": "FUTURE_FUTURE",
+      "rank_mass": "EXTRACTED_POWER_REFERENCE_MASS",
+      "rapidity_regulator": "DELTA_VALIDATION",
+      "soft_factor": "SQRT_SOFT",
+      "soft_partition": "FINITE_ROTATED",
+      "staple_cusp": "EXPLICIT",
+      "threshold_history": [],
+      "transverse_closure": "AT_INFINITY",
+      "uv_scheme": "MSBAR",
+      "version": "M0.1",
+      "zeta": 4.0
+    }
+  ]
+}
