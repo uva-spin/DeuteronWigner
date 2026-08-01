@@ -1825,3 +1825,11 @@ distribution/color expressions and independent x/Mellin evolution; replace
 the periodic prototype-family map with decorated-operator classification; and
 re-run all Volume-XVIII RG, threshold, rank, nuclear, holdout, and regression
 gates. C23/P0 remains blocked from execution until this closes.
+
+The supplied C23/P0 prompt is preserved at
+`docs/next_level/c23_p0_codex_prompt.md` with SHA-256
+`5346947dd612813386a07ed1827a8ffd9540f03614862e135191eb0a105d4347`.
+Its declared `438/54/48` baseline predates the Volume-XVIII audit and conflicts
+with the authoritative fail-closed `0/54/486` state. The prompt's own M3 gate
+therefore blocks every W term. `c23_prerequisite_audit.json` records the exact
+conflict and unblocking action; no C23 process or production route was created.
