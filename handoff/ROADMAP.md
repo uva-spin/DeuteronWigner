@@ -1709,3 +1709,25 @@ Volume XIV is preserved at
 `cb30d603948c6b14cbeaa0fbb332396e86c62c6ab76eeb116161e7eaa3c58d0d`.
 It is the package-specific normative formalism for C17/N2 and the inherited
 continuum/current boundary for C18/N3.
+
+## C18/N3 — explicit non-nucleonic validation root
+
+The final local commit is the commit containing this entry; nothing is
+pushed. N3 adds exclusive DeltaDelta, compact six-quark, and combined
+count-once assumption plans. The charge-complete DeltaDelta basis retains
+3S1, 3D1, and 7D1 channels. The compact branch retains five SU(3) singlet
+multiplicities, exact S6 identity, one cluster direction, and a four-
+dimensional hidden-color complement. Gram-projector and subtraction routes,
+coupled Hamiltonian, declared-order currents, block continuity, common
+partonic parent, tensor/b1, coherent/CP, and four-branch TTN checks close.
+
+C18 contains 762 covered requirements and 400 detected negative injections.
+It remains finite-resolution, validation-only, and disconnected from all
+216 production routes. Physical sector probabilities, physical TMDs,
+shadowing/Glauber, matching, evolution, processes, and inference remain
+forbidden.
+
+**Exact next package:** C19/M0 -- light-front-to-QCD operator matching pilot
+for the complete microscopic nucleon and deuteron parent, with a closed
+regulated operator basis, small-b matching, explicit UV/rapidity/soft scheme
+identity, and first common-scheme rank-aware evolution tests.
