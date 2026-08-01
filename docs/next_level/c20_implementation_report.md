@@ -1,5 +1,12 @@
 # C20/M1 implementation report
 
+Volume XVI,
+`references/volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf`, is the
+authoritative post-M1 formal boundary for scheme-qualified ensembles,
+physical evolution libraries, resolved nuclear transport, process-readiness,
+and accuracy manifests. C20 implements its M1 source-audit layer only; the
+M2--M4 physical-evolution requirements remain future gates.
+
 C20 replaces M0 coefficient oracles for ten supported twist-two blocks with
 source-recorded declared-order coefficients and independent distribution and
 moment checks. The families cover unpolarized quark/gluon, helicity,

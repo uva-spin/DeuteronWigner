@@ -1765,3 +1765,9 @@ validated. C20 covers 770 requirements and 560 negative injections.
 Soper-kernel library, continuum/lattice-constrained nonperturbative kernel,
 common multi-Q rank-aware evolution, and threshold-qualified microscopic
 nucleon/deuteron TMD ensembles.
+
+Volume XVI is preserved as the authoritative PDF
+`references/volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf` with
+SHA-256 `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2`.
+It defines the post-M1 ensemble and M2--M4 evolution/process-readiness
+boundary without promoting the C20 validation pilot to physical status.
