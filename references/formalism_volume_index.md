@@ -24,6 +24,7 @@ byte-for-byte from the supplied sources.
 | XIV | `volume_xiv_continuum_nnpi_exchange_currents.tex` | `cb30d603948c6b14cbeaa0fbb332396e86c62c6ab76eeb116161e7eaa3c58d0d` | present |
 | XV | `volume_xv_delta_delta_six_quark_hidden_color.tex` | `675cc27dfe4548e6e49d4ba7d1c093dc235003aaa8f1b77d4e4ef2829246b4cc` | present |
 | XVI | `volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf` | `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2` | present (authoritative PDF) |
+| XVII | `volume_xvii_process_qualified_tmd_observables.tex` | `dae315b3feb198fc85cddb2243fc5b9e99f9d9c8b1579908c30b0cfcde4ae9af` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -55,3 +56,10 @@ Volume XVI defines the post-M1 scheme-qualified microscopic TMD ensemble,
 physical anomalous-dimension and Collins-Soper-kernel boundary, common
 multi-Q rank-aware transport, resolved nuclear evolution, process-readiness
 certificates, and accuracy manifests. It is supplied as an authoritative PDF.
+Volume XVII defines the post-M2 process-qualified observable/compiler
+boundary: distinct Drell--Yan, current-fragmentation SIDIS, inclusive
+\(b_1\), tagged target-fragmentation DIS, and selected gluon-sensitive
+records; source-audited hard and fragmentation interfaces;
+factorization/Glauber certificates; and rank-resolved W+Y validation. It is
+the formal authority for C22/P0 and does not promote the C21 evolution
+validation layer to physical or production status.

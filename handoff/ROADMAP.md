@@ -1781,6 +1781,14 @@ and finite-order two-scale routes, rank 0--3 multi-Q transport, a 540-entry
 capability matrix, and resolved nuclear evolution. It covers 900 requirements
 and 640 negative injections and remains validation-only.
 
-**Exact next package:** C22/M3 -- full source-audited rank-aware small-b OPE
-and collinear mixing across all supported twist-two blocks, with explicit
-multiparton capability boundaries and common multi-Q ensemble closure.
+Volume XVII is preserved at
+`references/volume_xvii_process_qualified_tmd_observables.tex` with SHA-256
+`dae315b3feb198fc85cddb2243fc5b9e99f9d9c8b1579908c30b0cfcde4ae9af`.
+It is the authoritative post-M2 process boundary and does not alter or
+promote C21's validation-only numerical status.
+
+**Exact next package:** C22/P0 -- implement qualified color-singlet
+Drell--Yan, current-fragmentation SIDIS, inclusive b1, tagged spin-1 DIS,
+and selected gluon-sensitive process records; source-audited hard and
+fragmentation interfaces; factorization/Glauber certificates; and
+rank-resolved W+Y validation, following Volume XVII.

@@ -1,5 +1,12 @@
 # C21/M2 implementation report
 
+Volume XVII is the authoritative post-M2 boundary for C22/P0 process-
+qualified observables. It adds no C21 physics and does not promote this
+validation-only evolution implementation to process or production status.
+Its Drell--Yan, SIDIS, inclusive \(b_1\), tagged-DIS, selected-gluon,
+factorization/Glauber, and rank-resolved W+Y contracts are inputs to the next
+package.
+
 C21 records seven quark/gluon cusp, noncusp, rapidity, and beta objects from
 locally preserved primary papers. The maximum lower-order oracle residual is
 2.8e-11 and the independent rapidity-source comparison residual is 3.1e-10.
