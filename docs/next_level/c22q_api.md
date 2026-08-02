@@ -13,7 +13,7 @@
 Rebuild and validate with:
 
 ```bash
-python scripts/build_c22q_manifests.py 1081 C22Q_COMPLETION_COMMIT
+python scripts/build_c22q_manifests.py 1081 a1527fefc259eb32e362ccda5db135fb52149ad5
 python scripts/validate_c22q_architecture.py
 ```
 

@@ -2,7 +2,7 @@
 
 ## Authoritative baseline
 
-Start from C22Q/M3Q scientific completion commit `C22Q_COMPLETION_COMMIT`. The
+Start from C22Q/M3Q scientific completion commit `a1527fefc259eb32e362ccda5db135fb52149ad5`. The
 historical prompt `c23_p0_codex_prompt.md` is immutable and superseded only for
 prerequisite semantics by this file and `c23_p0_prerequisite_contract.json`.
 

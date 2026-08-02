@@ -1852,3 +1852,8 @@ source/physical plans fail-closed. No process or W/Y route is executed by C22Q.
 process compiler against `ANALYTIC_PROCESS_ORACLE_ELIGIBLE` identities. Keep
 source and physical plans blocked until their exact source, covariance,
 CS/large-b, and operator-specific nuclear requirements close.
+
+The C22Q scientific completion commit is
+`a1527fefc259eb32e362ccda5db135fb52149ad5`. The corrected C23 v2 prompt and
+contract are deterministically bound to that commit in the immediately
+following handoff commit.
