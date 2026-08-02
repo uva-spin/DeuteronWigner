@@ -1857,3 +1857,25 @@ The C22Q scientific completion commit is
 `a1527fefc259eb32e362ccda5db135fb52149ad5`. The corrected C23 v2 prompt and
 contract are deterministically bound to that commit in the immediately
 following handoff commit.
+
+## C23/P0 — analytic-validation process compiler
+
+C23 consumes only the 438 C22Q analytic-eligible identities; 102 identities
+fail closed. It implements typed DY, current-fragmentation SIDIS, conditional
+heavy-pair DIS, spin-1 basis, hard/partner/FO interfaces, factorization/Glauber
+certificates, and rank-zero through rank-three analytic W/Y oracles. Ranks zero
+and two have eligible process inputs; ranks one and three remain mathematical
+oracles without process execution. Inclusive b1, tagged DIS, all T-odd and
+multiparton channels, all non-NN nuclear blocks, and the matched total remain
+unavailable. Every output is validation-only; source and physical tiers are
+empty and no likelihood, inference, or production route exists.
+
+The valid C22Q scientific ancestor is
+`a1527fec32c07865de34d14dc1345ca9e816fac8`; the previously expanded
+`a1527fef...` string was a provenance typo, resolved from Git ancestry without
+rewriting historical manifests.
+
+**Exact next package:** source-qualification closure for the chosen DY/SIDIS
+and gluon process blocks, or a separately authorized expansion of b1/tagged
+operator inputs. Physical process execution remains blocked pending joint
+covariance-bearing CS/large-b and external-input bundles.

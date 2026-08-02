@@ -1,0 +1,34 @@
+{
+  "physical_covariance_consumed": false,
+  "records": [
+    {
+      "content_hash": "e1e27e0f967bbc8626dd6ede9b4fa2f0923daa54e11b01c77bec8c3bf673f667",
+      "covariance_status": "SYNTHETIC_NONE",
+      "expression": "x(1-x) exp(-b^2/4)",
+      "kind": "SECOND_HADRON_ANALYTIC_TMD",
+      "partner_id": "C23:PARTNER:DY",
+      "physical": false,
+      "scheme": "C22Q_VALIDATION"
+    },
+    {
+      "content_hash": "a1cf9fefc2ae2c99a307d9c178aa30d56b5191317f371ae7061802b691fb9737",
+      "covariance_status": "SYNTHETIC_NONE",
+      "expression": "z(1-z) exp(-b^2/(4 z^2))",
+      "kind": "ANALYTIC_TMD_FF",
+      "partner_id": "C23:PARTNER:SIDIS",
+      "physical": false,
+      "scheme": "C22Q_VALIDATION_Z_SCALED"
+    },
+    {
+      "content_hash": "d7c9e726603948b8c233c64dcd7f5d46c0580086dd207d2771e9f0e3092787f2",
+      "covariance_status": "SYNTHETIC_NONE",
+      "expression": "identity color matrix",
+      "kind": "ANALYTIC_HEAVY_PAIR_SOFT",
+      "partner_id": "C23:PARTNER:HQDIS",
+      "physical": false,
+      "scheme": "PROCESS_SPECIFIC_VALIDATION"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "z_scaled_fourier_explicit": true
+}
