@@ -1833,3 +1833,22 @@ Its declared `438/54/48` baseline predates the Volume-XVIII audit and conflicts
 with the authoritative fail-closed `0/54/486` state. The prompt's own M3 gate
 therefore blocks every W term. `c23_prerequisite_audit.json` records the exact
 conflict and unblocking action; no C23 process or production route was created.
+
+## C22Q/M3Q — tiered capability reconciliation
+
+C22Q explains the count conflict without altering C20/C21 physics. The 438 M2
+intersection is analytic-validation qualified, not source or physical-input
+qualified. Final tier counts are 438 analytic-validation qualified and 102
+unqualified; process eligibility is 438 analytic-oracle eligible and 102 not
+eligible; source and physical eligible counts are both zero. The validation
+CS/large-b plan is explicitly synthetic. Only NN is selected in the analytic
+nuclear assumption plan; distinct many-body blocks remain unavailable.
+
+The original C23 prompt remains immutable. The corrected v2 prompt and
+prerequisite contract permit a nonempty analytic-only compiler plan and keep
+source/physical plans fail-closed. No process or W/Y route is executed by C22Q.
+
+**Exact next package:** C23/P0 v2 -- execute only the analytic-validation
+process compiler against `ANALYTIC_PROCESS_ORACLE_ELIGIBLE` identities. Keep
+source and physical plans blocked until their exact source, covariance,
+CS/large-b, and operator-specific nuclear requirements close.
