@@ -1914,3 +1914,39 @@ ART25 constants and all 500 correlated members, lock their exact provenance,
 implement deterministic ARTEMIDE 3.01 DY and SIDIS benchmark adapters with
 frozen holdouts, and re-run the source evaluator. Do not substitute a newer
 release or promote a source record to physical input without joint covariance.
+
+## C25/P1A — ART25 ancillary closure and source-gate rerun
+
+C25 recovered the official ART25 constants, nine model files, and correlated
+ensemble at payload commit `9ca8159e00ff2df159ab2ce4d7ffb13589af0c71`.
+The exact engine remains the v3.01 tag commit `d873dc9...`; all nine model
+files are byte-identical across this boundary, and no later engine code was
+used. The exact engine builds and imports without a physics patch.
+
+The released ensemble contains 642 stochastic rows plus initialization and
+central/mean technical records, rather than the 500 described in older prose.
+The typed parser preserves 22 fitted parameters, six fixed slots, three
+collinear member indices, source locations, and hashes. Independent means,
+quantiles, and correlations reproduce deterministically. The exact C24
+baseline was 1,112 passing tests; the production registry remains 216 and all
+eight authoritative artifacts are byte-identical.
+
+Process execution remains closed because `MSHT20_REP`, `MAPFF10NNLOPIp`, and
+`MAPFF10NNLOKAp`, plus frozen official process outputs, were not located in
+the audited public sources. Final tiers remain 438 analytic, 102 not process
+eligible, zero source, and zero physical. See the exact unsent request in
+`docs/next_level/c25_art25_author_request.md`.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c25_manifests.py <current-test-count>
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c25.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact next package:** C26/P1B — ingest and hash-lock the requested three
+collinear ensembles and author-supplied frozen outputs, initialize the exact
+v3.01 engine with the immutable ART25 constants, execute central and all 642
+joint-member DY/SIDIS benchmarks, then rerun the unchanged source and physical
+gates. If those inputs are not supplied, retain zero qualification.

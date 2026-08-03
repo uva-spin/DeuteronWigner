@@ -75,3 +75,8 @@ gamma5-qualified collinear mixing, RG/threshold/rank closure, resolved nuclear
 OPE, and capability-complete multi-Q status. Its acceptance gates supersede
 any earlier completion inference based only on scaffold tests or source-linked
 prototype coefficients.
+
+C25/P1A adds no new formalism volume. It source-audits the ART25 ancillary
+implementation used at the process-validation boundary. The requested Volume
+XIX source file was not present during this work package; that absence is
+explicit in the normative-source manifest and no substitute text is inferred.

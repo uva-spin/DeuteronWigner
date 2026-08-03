@@ -1,0 +1,25 @@
+{
+  "build_status": "PASS",
+  "commands": [
+    "make default Fflags='-O2 -cpp -fopenmp' FOPT='-L<env>/lib -lLHAPDF'",
+    "make harpy with same overrides"
+  ],
+  "engine_commit": "d873dc9fdcebba707df3bf9ae73061511fbf803f",
+  "environment": {
+    "flags": "-O2 -cpp -fopenmp",
+    "floating_point": "IEEE default",
+    "fortran": "GNU Fortran 15.2.0",
+    "link": "LHAPDF 6.5.5",
+    "numpy_f2py": "1.26.4",
+    "openmp": true,
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.9.23"
+  },
+  "import_status": "PASS",
+  "initialization_status": "BLOCKED_SOURCE_INPUTS",
+  "integration_mode": "constants file source setting retained",
+  "precompiled_kernel": "built from exact tag",
+  "random_seed": "not applicable to build",
+  "schema_version": "1.0.0",
+  "source_patched": false
+}
