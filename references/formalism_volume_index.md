@@ -80,3 +80,8 @@ C25/P1A adds no new formalism volume. It source-audits the ART25 ancillary
 implementation used at the process-validation boundary. The requested Volume
 XIX source file was not present during this work package; that absence is
 explicit in the normative-source manifest and no substitute text is inferred.
+
+C26/P1B adds no formalism volume. It closes the official positive-pion and
+positive-kaon MAPFF source interfaces and preserves the unresolved custom
+`MSHT20_REP` boundary. Volume XIX remains unavailable and is not reconstructed
+from implementation evidence.

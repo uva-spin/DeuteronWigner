@@ -1,5 +1,11 @@
 # Draft ART25 source-material request
 
+> C26 update (2026-08-03): the official CERN DataVersion 1
+> `MAPFF10NNLOPIp` and `MAPFF10NNLOKAp` archives have been acquired and every
+> ART25 FF index resolves. The remaining delta is maintained in
+> `c26_art25_request_delta.md`; the MAPFF request below is historical except
+> for author confirmation of exact byte identity.
+
 To: Valentin Moos (`vmoos@nycu.edu.tw`), Ignazio Scimemi (`ignazios@ucm.es`), Alexey Vladimirov (`alexeyvl@ucm.es`), and Pia Zurita (`marzurit@ucm.es`)
 
 Dear ART25 authors,

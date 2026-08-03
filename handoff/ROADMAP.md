@@ -1950,3 +1950,39 @@ collinear ensembles and author-supplied frozen outputs, initialize the exact
 v3.01 engine with the immutable ART25 constants, execute central and all 642
 joint-member DY/SIDIS benchmarks, then rerun the unchanged source and physical
 gates. If those inputs are not supplied, retain zero qualification.
+
+## C26/P1B — exact collinear acquisition and residual source closure
+
+C26 acquired CERN's exact `MAPFF10NNLOPIp` and `MAPFF10NNLOKAp`
+DataVersion 1 archives. Each has 201 members; both tarballs, `.info` files,
+and all 402 grids are hash locked. The archive timestamps predate ART25 and
+the constants use the exact names. All 642 Lambda rows resolve both FF
+indices exactly over 0--199, with no wrapping, clipping, dropping, or
+substitution.
+
+`MSHT20_REP` remains absent after the official LHAPDF index, complete
+ARTEMIDE/DataProcessor histories and bundles, Zenodo, Software Heritage, and
+paper-source audit. ART25 requires indices 0--999. The public DataVersion 4
+`MSHT20nnlo_as118` has 65 Hessian members and was not substituted or
+converted. Exact v3.01 initialization and full process execution therefore
+fail closed at preflight.
+
+Independent NP-model functions ran for all 642 stochastic members; exact
+MAPFF joint indices were evaluated independently with LHAPDF 6.5.5. These
+checks are not labeled full TMD predictions. Source-owned frozen outputs were
+not found. External ART25 source, microscopic-project source, and physical
+eligibility remain zero; the analytic split remains 438/102, production is
+216, and authoritative artifacts are unchanged.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c26_manifests.py <current-test-count>
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c26.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact next package:** C27/P1C -- ingest an author-supplied exact
+`MSHT20_REP` archive or fully specified generator state and source-owned
+frozen outputs, then initialize immutable v3.01 and execute the frozen grid
+and all 642 joint members. Otherwise retain fail-closed qualification.
