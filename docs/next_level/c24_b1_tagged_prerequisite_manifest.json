@@ -1,0 +1,23 @@
+{
+  "inclusive_b1": {
+    "blockers": [
+      "OPERATOR_SPECIFIC_SOURCE_COEFFICIENT_ROUTE_INCOMPLETE",
+      "TARGET_MASS_HIGHER_TWIST_HEAVY_FLAVOR_PLAN_INCOMPLETE"
+    ],
+    "nn_only_not_complete_deuteron": true,
+    "quark_antiquark_required": true,
+    "status": "UNAVAILABLE",
+    "tensor_sign_explicit": true
+  },
+  "schema_version": "1.0.0",
+  "tagged_dis": {
+    "blockers": [
+      "SOURCE_FACTORISATION_ADAPTER_INCOMPLETE",
+      "POLE_RESIDUE_AND_TAGGED_TO_INCLUSIVE_SOURCE_ORACLE_INCOMPLETE"
+    ],
+    "fsi_interface": "DECLARED_UNQUALIFIED",
+    "nn_ia_plan_only": true,
+    "ordinary_tmdff": false,
+    "status": "UNAVAILABLE"
+  }
+}

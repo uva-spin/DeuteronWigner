@@ -1879,3 +1879,38 @@ rewriting historical manifests.
 and gluon process blocks, or a separately authorized expansion of b1/tagged
 operator inputs. Physical process execution remains blocked pending joint
 covariance-bearing CS/large-b and external-input bundles.
+
+## C24/P1 — source-qualified T-even process-spine audit
+
+C24 begins from `0f6495107effda70ca406e8a44e365f3a8080198` and preserves
+the C22Q scientific ancestor
+`a1527fec32c07865de34d14dc1345ca9e816fac8`. The complete C23 baseline
+reproduced with 1,095 tests before edits. C24 adds an isolated `process.p1`
+source-lock and qualification layer, 825 covered requirements, and 880 ordered
+negative injections. The production registry remains 216 and the eight
+authoritative artifacts are unchanged.
+
+Sixteen primary papers, Zenodo 15006449 metadata, and the exact ARTEMIDE 3.01
+archive are locally preserved at `data/raw/c24_sources` and hash-audited. The
+current 3.03 release is comparison-only and was not substituted. The 3.01
+archive contains the code and identifies ART25, but it does not contain the
+ART25 constants or its declared 500 replica files. Therefore the final tiers
+remain 438 analytic-process-oracle eligible, 102 not process eligible, zero
+source-process eligible, and zero physical-input eligible. DY, SIDIS, b1,
+tagged DIS, and heavy-pair DIS have complete failed-gate records; no
+source-qualified W+Y, likelihood, inference, matched total, or production
+route was created.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c24_manifests.py 1112
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c24_architecture.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact next package:** C25/P1A ART25 ancillary closure — obtain the official
+ART25 constants and all 500 correlated members, lock their exact provenance,
+implement deterministic ARTEMIDE 3.01 DY and SIDIS benchmark adapters with
+frozen holdouts, and re-run the source evaluator. Do not substitute a newer
+release or promote a source record to physical input without joint covariance.

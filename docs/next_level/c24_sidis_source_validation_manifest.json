@@ -1,0 +1,115 @@
+{
+  "blockers": [
+    "ART25_TMDFF_MEMBERS_UNAVAILABLE",
+    "JOINT_TMDPDF_TMDFF_MEMBER_MAP_UNAVAILABLE",
+    "N3LO_ANCILLARY_NOT_PRESERVED"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "C24:CAND:SIDIS:U:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "exact_source_expression",
+        "authoritative_ancillary_or_transcription",
+        "independent_source_oracle",
+        "source_uncertainty_model",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs"
+      ],
+      "family": "QUARK_ANTIQUARK_U",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "SIDIS",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "candidate_id": "C24:CAND:SIDIS:LL:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "exact_source_expression",
+        "authoritative_ancillary_or_transcription",
+        "independent_source_oracle",
+        "source_uncertainty_model",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs"
+      ],
+      "family": "QUARK_ANTIQUARK_LL",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "SIDIS",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    }
+  ],
+  "future_links": true,
+  "maximum_residual": null,
+  "ordinary_ff_used_as_tmdff": false,
+  "schema_version": "1.0.0",
+  "source_executable": false,
+  "z_scaled_transform": true
+}
