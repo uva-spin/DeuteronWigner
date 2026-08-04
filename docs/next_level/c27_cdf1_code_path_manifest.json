@@ -1,0 +1,45 @@
+{
+  "constants_modified": false,
+  "engine": "ARTEMIDE v3.01",
+  "engine_commit": "d873dc9fdcebba707df3bf9ae73061511fbf803f",
+  "integration": {
+    "Q_rule": "G7 away from Z and adaptive around MZ +/-3 GeV",
+    "compiled_mode": 2,
+    "description": "approximate/fast v3.01 bin integration",
+    "general_tolerance": 1e-06,
+    "qT_rule": "Integrate_SN with automatic minimum 6 sections",
+    "relative_tolerance_non_qT": 0.001,
+    "y_rule": "G7"
+  },
+  "loader_commit": "761f3fcdd3701c5cf69e822f9ffbbd5db394fc58",
+  "native_path": [
+    "DataProcessor.DataSet.LoadCSV",
+    "public ART25 cutFunc",
+    "DataProcessor.harpyInterface.ComputeXSec(default)",
+    "harpy.DY.xSecList",
+    "TMDX_DY.xSec_DY_List",
+    "Xsec_PTint_Qint_Yint",
+    "TMDF_F"
+  ],
+  "observable": {
+    "electroweak": "process [1,1,-1,3], gamma/Z DY combination through ARTEMIDE EW input and coefficient channel",
+    "factorization": "LOW_qT_LP_TMD_W_ONLY",
+    "fiducial_cuts": false,
+    "fixed_order_Y": false,
+    "hard_coefficient": "N4LO",
+    "integration": "BIN_INTEGRATED_OVER_qT_Q2_AND_PHYSICAL_RAPIDITY_THEN_THEORY_FACTOR",
+    "matching": false,
+    "normalized": false,
+    "pi2_resummation": false,
+    "rapidity_sentinel": "[-1000,1000] clipped internally to physical support",
+    "reported_form": "absolute dSigma/dqT bin average",
+    "theory_factor": "1/(qTmax-qTmin); CDF1.0 = 2 GeV^-1",
+    "units": "pb/GeV as traced from hc2*1e9 pb conversion and qT-bin theory factor"
+  },
+  "schema_version": "1.0.0",
+  "source_lines": {
+    "engine": "src/TMDX_DY.f90",
+    "matching": "DataProcessor/DataSet.py::MatchWithData",
+    "native_adapter": "DataProcessor/harpyInterface.py::_ComputeXSec_Point"
+  }
+}
