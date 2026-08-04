@@ -1,5 +1,11 @@
 # Formalism volume source index
 
+The C27/P1C direct-author `MSHT20_REP` source, exact 642-member ART25
+execution, and joint covariance are documented in
+`docs/next_level/c27_implementation_report.md`. This is an external proton
+source-reproduction boundary, not a formalism volume and not a qualification
+of the microscopic deuteron construction.
+
 This directory contains the authoritative TeX sources currently available for
 the next-level DeuteronWigner formal architecture. Files are preserved
 byte-for-byte from the supplied sources.

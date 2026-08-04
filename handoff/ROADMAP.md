@@ -1986,3 +1986,37 @@ PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
 `MSHT20_REP` archive or fully specified generator state and source-owned
 frozen outputs, then initialize immutable v3.01 and execute the frozen grid
 and all 642 joint members. Otherwise retain fail-closed qualification.
+
+## C27/P1C — exact MSHT source and complete ART25 execution
+
+The directly transferred `MSHT20_REP` DataVersion 3 ensemble is locally
+preserved and hash locked. Its declared indices 0--999 resolve all 642 ART25
+PDF selections; the additional file 1000 is preserved but excluded according
+to source metadata and generator behavior. Redistribution permission is not
+documented, so the grids remain local research-validation inputs.
+
+Immutable ARTEMIDE v3.01 initialized with unchanged ART25 physics constants
+and byte-identical MSHT/MAPFF inputs. Central and all 642 stochastic members
+completed for CS, TMDPDF, pion/kaon TMDFF, three DY, and two charge-resolved
+SIDIS validation points. Serial, four-process, and restart paths agree exactly;
+no member failed or was imputed. The 39-dimensional joint covariance retains
+distribution/process and DY/SIDIS cross correlations.
+
+No author-frozen output bundle was supplied, so results are labeled
+`SOURCE_REGENERATED_OUTPUT`. Source W is reproduced only for the declared
+low-qT validation points. Source W+Y, source-process qualification, and
+physical-input qualification remain closed. External proton ART25 provenance
+remains disjoint from the microscopic deuteron model.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c27_manifests.py <test-count>
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c27.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact next package:** C28/P1D — obtain source-owned frozen ART25 numerical
+outputs, complete observable/cut definitions, and exact fixed-order/asymptotic
+partners; validate them without mixing analytic C23 Y or promoting external
+proton provenance to the microscopic spin-1 root.
