@@ -2097,3 +2097,14 @@ numerical distribution bridge for rank-zero proton u, d, ubar, and dbar by
 supplying a source-audited finite ART25-to-microscopic scheme adapter and a
 scheme-qualified microscopic numerical export with convergence and typed
 discrepancy inputs. Do not calibrate or infer until that bridge passes.
+
+### Volume XIX integration addendum
+
+The authoritative TeX source is now stored at
+`references/volume_xix_source_qualified_process_inputs.tex` with SHA-256
+`8b4e2d1dfd187f462d61d0134dbeae2bac8b3377cf315f733f63147ecac91596`.
+All 50 formal requirements are mapped in the C29 Volume XIX crosswalk and are
+validated without promoting any bridge capability. Volume XX remains absent.
+The exact next package remains C30/B1 because Volume XIX supplies the formal
+qualification contract, not the missing finite scheme adapter or common
+microscopic numerical export.

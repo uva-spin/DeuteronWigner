@@ -28,5 +28,9 @@ T-odd quark/gluon and multiparton families remain unavailable. Unknown scheme,
 matching, Hamiltonian, Fock, Wilson, nuclear, partner, target, large-b, and
 missing-Y discrepancies remain nonzero-unknown and have not been fitted.
 
-Volume XIX and Volume XX formal source files are absent from the repository.
-Their absence is hash-audited and no content is inferred for them.
+Volume XIX is present, hash-audited, and mapped requirement-by-requirement. It
+formalizes source packages, covariance and member identity, process ancestry,
+and no-promotion gates; it does not provide the missing finite
+ART25-to-microscopic scheme adapter or a common microscopic numerical vector.
+Volume XX remains absent, its absence is hash-audited, and no content is
+inferred for it.

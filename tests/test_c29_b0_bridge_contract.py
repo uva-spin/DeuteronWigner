@@ -62,3 +62,12 @@ def test_isolation_and_negative_controls():
     assert reg['production_registry']==216 and reg['all_artifacts_unchanged']
     assert inj['count']>=1400 and inj['all_detected']
     assert all(detect_injection(x['stable_id'])==x['expected_diagnostic']==x['actual_diagnostic'] for x in inj['rows'])
+
+def test_volume_xix_formal_contract_is_complete_and_non_promoting():
+    crosswalk=load('c29_volume_xix_requirement_crosswalk.json')
+    normative=load('c29_normative_source_integration.json')
+    assert crosswalk['count']==50 and crosswalk['all_mapped']
+    assert not crosswalk['status_promotion_authorized']
+    assert [x['stable_id'] for x in crosswalk['rows']]==[f'V19.{i:03d}' for i in range(1,51)]
+    source=next(x for x in normative['records'] if x['path']==crosswalk['source_path'])
+    assert source['available'] and source['sha256']==crosswalk['source_sha256']

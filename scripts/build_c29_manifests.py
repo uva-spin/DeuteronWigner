@@ -7,6 +7,7 @@ from dataclasses import asdict
 import hashlib
 import json
 from pathlib import Path
+import re
 import sys
 
 import numpy as np
@@ -93,6 +94,46 @@ def normative_sources():
                     "available": path.is_file(), "sha256": sha(path) if path.is_file() else None,
                     "status": "HASH_AUDITED" if path.is_file() else "PROMPT_NAMED_MISSING"})
     return out
+
+
+def volume_xix_crosswalk():
+    """Map every formal Volume XIX requirement without promoting bridge status."""
+    path = ROOT / "references/volume_xix_source_qualified_process_inputs.tex"
+    pattern = re.compile(r"^(V19\.\d{3})\s*&\s*(.*?)\\\\$")
+    requirements = []
+    for line in path.read_text().splitlines():
+        match = pattern.match(line.strip())
+        if match:
+            requirements.append((match.group(1), match.group(2)))
+    if [stable_id for stable_id, _ in requirements] != [f"V19.{i:03d}" for i in range(1, 51)]:
+        raise RuntimeError("Volume XIX requirement extraction is incomplete or unordered")
+
+    inherited = {6, 10, 11, 12, 21, 22, 23, 31}
+    rows = []
+    for stable_id, text in requirements:
+        number = int(stable_id.split(".")[1])
+        if number in inherited:
+            disposition = "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED"
+            evidence = [
+                "docs/next_level/c24_implementation_report.md",
+                "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+                "docs/next_level/c29_regression_report.json",
+            ]
+        else:
+            disposition = "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE"
+            evidence = [
+                "docs/next_level/c29_bridge_capability_matrix.json",
+                "docs/next_level/c29_no_double_counting_contract.json",
+                "docs/next_level/c29_future_inference_prerequisite_contract.json",
+            ]
+        rows.append({
+            "stable_id": stable_id,
+            "requirement": text,
+            "disposition": disposition,
+            "evidence": evidence,
+            "status_promotion_authorized": False,
+        })
+    return rows
 
 
 def operator_crosswalk():
@@ -214,6 +255,7 @@ def main(test_count: int = 1131):
     RT.mkdir(parents=True, exist_ok=True)
     pair=BridgeRootPairId(ExternalRootId(),MicroscopicRootId())
     norm=normative_sources(); write("c29_normative_source_integration.json",{"schema_version":"1.0.0","records":norm,"missing":[x["path"] for x in norm if not x["available"]]})
+    v19=volume_xix_crosswalk(); write("c29_volume_xix_requirement_crosswalk.json",{"schema_version":"1.0.0","source_path":"references/volume_xix_source_qualified_process_inputs.tex","source_sha256":sha(ROOT/"references/volume_xix_source_qualified_process_inputs.tex"),"count":len(v19),"all_mapped":len(v19)==50,"status_promotion_authorized":False,"rows":v19})
     root_records=[
       {"stable_id":"C29.ROOT.EXTERNAL","root_id":EXT,"owns":["ART25 parameters","CS kernel","TMDPDF/TMDFF","MSHT20_REP","MAPFF","DataProcessor datasets/cuts","642-member covariance"],"content_hash":digest(EXT)},
       {"stable_id":"C29.ROOT.MICROSCOPIC","root_id":MIC,"owns":["LF Hamiltonian plans","Fock amplitudes","proton/neutron/deuteron states","Wilson orders","LF-to-QCD matching","evolution","microscopic process plans","assumption axes"],"content_hash":digest(MIC)},

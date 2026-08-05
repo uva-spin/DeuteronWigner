@@ -82,15 +82,14 @@ OPE, and capability-complete multi-Q status. Its acceptance gates supersede
 any earlier completion inference based only on scaffold tests or source-linked
 prototype coefficients.
 
-C25/P1A adds no new formalism volume. It source-audits the ART25 ancillary
-implementation used at the process-validation boundary. The requested Volume
-XIX source file was not present during this work package; that absence is
-explicit in the normative-source manifest and no substitute text is inferred.
+C25/P1A originally ran before the Volume XIX source file was available. That
+historical absence remains recorded in its immutable package outputs; no
+substitute text was inferred at the time.
 
 C26/P1B adds no formalism volume. It closes the official positive-pion and
 positive-kaon MAPFF source interfaces and preserves the unresolved custom
-`MSHT20_REP` boundary. Volume XIX remains unavailable and is not reconstructed
-from implementation evidence.
+`MSHT20_REP` boundary. It likewise predates repository integration of the
+authoritative Volume XIX source.
 
 C27/P1C and C28/P1D add no formalism volume. C27 locks the directly supplied
 MSHT ensemble and executes the exact ART25 joint source chain on frozen
@@ -98,13 +97,25 @@ distribution/process diagnostics. C28 extends that source reproduction to the
 complete historical public ART25 DY/SIDIS dataset, selection, native nuisance
 and chi2 definitions, and all 642 joint members. Its strongest new status is
 source-reproducible low-qT W validation. It does not supply the absent Volume
-XIX text, an external-to-microscopic operator bridge, an author-frozen anchor,
+XIX implementation contract at that historical checkpoint, an
+external-to-microscopic operator bridge, an author-frozen anchor,
 or exact fixed-order/asymptotic partners for W+Y.
 
-C29/B0 adds no formalism volume. It implements the typed bridge contract
+C29/B0 implements the typed bridge contract
 between the external ART25 source root and the microscopic operator root while
 preserving complete operator, target, scheme, scale, covariance, member,
 nuclear, and data-ancestry identity. It freezes candidate/holdout roles and
 defines non-inferential diagnostics and future-inference gates without fitting
-or promoting status. Volume XIX and Volume XX remain absent; no content is
-inferred for either missing source.
+or promoting status.
+
+Volume XIX is now integrated as the authoritative source-qualification and
+physical-covariance contract. It defines four distinct evidence tiers,
+version-locked source packages, source and physical gate vectors, indivisible
+joint-member semantics, process/data ancestry, rank-resolved source W+Y
+identity, component-resolved nuclear qualification, and explicit prohibitions
+against hidden reuse or readiness promotion. Its 50 stable requirements are
+mapped in `docs/next_level/c29_volume_xix_requirement_crosswalk.json`. The
+formal source does not itself supply the missing finite ART25-to-microscopic
+adapter, a scheme-qualified microscopic numerical vector, or a likelihood;
+C29 therefore remains fail-closed. Volume XX remains absent and no content is
+inferred for it.

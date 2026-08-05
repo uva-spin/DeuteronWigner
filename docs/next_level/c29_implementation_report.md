@@ -13,6 +13,13 @@ This is a validation and future-calibration contract. It is not a fit,
 likelihood, posterior, replica reweighting, calibration, emulator, process
 qualification, physical deuteron prediction, or production route.
 
+The authoritative Volume XIX TeX source is integrated and hash-audited. All
+50 `V19.001`--`V19.050` requirements are mapped in
+`c29_volume_xix_requirement_crosswalk.json`. The volume strengthens the typed
+source-package, evidence-tier, covariance, ancestry, rank, nuclear-scope, and
+no-promotion contracts already enforced by C29. It supplies formal contracts,
+not the missing numerical cross-root adapter, so no capability status changes.
+
 ## Operator and target audit
 
 Fourteen minimum operator families are crosswalked using species, flavor,
