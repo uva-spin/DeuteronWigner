@@ -32,5 +32,7 @@ Volume XIX is present, hash-audited, and mapped requirement-by-requirement. It
 formalizes source packages, covariance and member identity, process ancestry,
 and no-promotion gates; it does not provide the missing finite
 ART25-to-microscopic scheme adapter or a common microscopic numerical vector.
-Volume XX remains absent, its absence is hash-audited, and no content is
-inferred for it.
+Volume XX is present, hash-audited, and mapped requirement-by-requirement. It
+confirms the source-reproducible bridge geometry and makes the TTN bond an
+explicit nonstatistical microscopic evidence axis. It does not close the
+finite numerical adapter or common microscopic export required for C30/B1.

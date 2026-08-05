@@ -71,3 +71,15 @@ def test_volume_xix_formal_contract_is_complete_and_non_promoting():
     assert [x['stable_id'] for x in crosswalk['rows']]==[f'V19.{i:03d}' for i in range(1,51)]
     source=next(x for x in normative['records'] if x['path']==crosswalk['source_path'])
     assert source['available'] and source['sha256']==crosswalk['source_sha256']
+
+def test_volume_xx_bridge_geometry_contract_is_complete():
+    crosswalk=load('c29_volume_xx_requirement_crosswalk.json')
+    normative=load('c29_normative_source_integration.json')
+    assert crosswalk['count']==53 and crosswalk['all_mapped']
+    assert not crosswalk['status_promotion_authorized']
+    assert len({x['stable_id'] for x in crosswalk['rows']})==53
+    assert all((ROOT/path).is_file() for row in crosswalk['rows'] for path in row['evidence'])
+    source=next(x for x in normative['records'] if x['path']==crosswalk['source_path'])
+    assert source['available'] and source['sha256']==crosswalk['source_sha256']
+    axes=load('c29_microscopic_axis_manifest.json')['rows']
+    assert any(x['axis']=='TENSOR_NETWORK_BOND' and not x['statistical'] for x in axes)

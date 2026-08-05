@@ -20,6 +20,15 @@ source-package, evidence-tier, covariance, ancestry, rank, nuclear-scope, and
 no-promotion contracts already enforced by C29. It supplies formal contracts,
 not the missing numerical cross-root adapter, so no capability status changes.
 
+The authoritative Volume XX TeX source is also integrated and hash-audited.
+All 53 stable requirements are mapped in
+`c29_volume_xx_requirement_crosswalk.json`. Its typed-span, covariance,
+ancestry, discrepancy, and noninferential-diagnostic contracts match the C29
+implementation. The microscopic export now records the inherited C14 tensor-
+network plan and exposes bond dimension as a numerical/truncation axis rather
+than a statistical member. This is an identity/provenance completion and does
+not change any central value or bridge-readiness status.
+
 ## Operator and target audit
 
 Fourteen minimum operator families are crosswalked using species, flavor,

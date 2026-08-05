@@ -117,5 +117,15 @@ against hidden reuse or readiness promotion. Its 50 stable requirements are
 mapped in `docs/next_level/c29_volume_xix_requirement_crosswalk.json`. The
 formal source does not itself supply the missing finite ART25-to-microscopic
 adapter, a scheme-qualified microscopic numerical vector, or a likelihood;
-C29 therefore remains fail-closed. Volume XX remains absent and no content is
-inferred for it.
+C29 therefore remains fail-closed.
+
+Volume XX is now integrated as the authoritative source-reproducible bridge
+geometry for C29/B0. It defines the two disjoint evidential roots, complete
+operator/target/scheme/domain span, exact low-rank covariance pushforward,
+microscopic evidence axes including TTN bond truncation, no-joint-measure
+default, complete ART25 ancestry, frozen roles, typed discrepancy ledger, and
+noninferential rank-aware diagnostics. Its 53 stable requirements are mapped
+in `docs/next_level/c29_volume_xx_requirement_crosswalk.json`. This confirms
+C29 at its declared non-calibrating scope; it does not create the missing
+finite numerical scheme adapter, a common microscopic numerical TMD export,
+or an inference route.

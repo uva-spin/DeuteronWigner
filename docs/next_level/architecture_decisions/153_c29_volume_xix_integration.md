@@ -18,7 +18,8 @@ vector, an exact fixed-order/asymptotic partner, or a joint cross-root measure.
 
 - Volume XIX is no longer listed as missing in current C29 records.
 - Historical C25--C28 absence statements remain explicitly historical.
-- Volume XX remains missing and is not reconstructed.
+- Volume XX was missing at this decision's original checkpoint; ADR 154 records
+  its subsequent authoritative integration.
 - C30/B1 remains the next implementation package.
 
 ## Evidence

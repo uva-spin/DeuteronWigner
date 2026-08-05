@@ -15,7 +15,7 @@ def main():
     disc=load('c29_discrepancy_interface.json');diag=load('c29_compatibility_diagnostic_manifest.json')
     cap=load('c29_bridge_capability_matrix.json');future=load('c29_future_inference_prerequisite_contract.json')
     inj=load('c29_injection_manifest.json');req=load('c29_requirement_coverage.json');reg=load('c29_regression_report.json')
-    v19=load('c29_volume_xix_requirement_crosswalk.json');norm=load('c29_normative_source_integration.json')
+    v19=load('c29_volume_xix_requirement_crosswalk.json');v20=load('c29_volume_xx_requirement_crosswalk.json');norm=load('c29_normative_source_integration.json')
     assert roots['immutable'] and roots['disjoint'] and roots['root_pair']['external']['value']!=roots['root_pair']['microscopic']['value']
     assert ops['count']>=14 and all(x['matched_by_complete_identity'] and not x['matched_by_name_only'] for x in ops['rows'])
     assert not load('c29_nuclear_bridge_scope.json')['phenomenological_deuterium_is_microscopic_deuteron']
@@ -36,6 +36,13 @@ def main():
     assert [x['stable_id'] for x in v19['rows']]==[f'V19.{i:03d}' for i in range(1,51)]
     v19_source=next(x for x in norm['records'] if x['path']=='references/volume_xix_source_qualified_process_inputs.tex')
     assert v19_source['available'] and v19_source['sha256']==v19['source_sha256']
+    assert v20['count']==53 and v20['all_mapped'] and not v20['status_promotion_authorized']
+    assert len({x['stable_id'] for x in v20['rows']})==53
+    assert all((ROOT/path).is_file() for row in v20['rows'] for path in row['evidence'])
+    v20_source=next(x for x in norm['records'] if x['path']=='references/volume_xx_source_reproducible_bridge_geometry.tex')
+    assert v20_source['available'] and v20_source['sha256']==v20['source_sha256']
+    axes=load('c29_microscopic_axis_manifest.json')
+    assert any(x['axis']=='TENSOR_NETWORK_BOND' and not x['statistical'] for x in axes['rows'])
     assert reg['production_registry']==216 and reg['all_artifacts_unchanged'] and not any(reg[x] for x in ('fit_created','likelihood_created','posterior_created','reweighting_created','calibration_executed','emulator_created','status_promoted'))
     print('C29_VALIDATION_PASS')
 if __name__=='__main__':main()

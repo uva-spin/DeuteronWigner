@@ -2108,3 +2108,15 @@ validated without promoting any bridge capability. Volume XX remains absent.
 The exact next package remains C30/B1 because Volume XIX supplies the formal
 qualification contract, not the missing finite scheme adapter or common
 microscopic numerical export.
+
+### Volume XX integration addendum
+
+The authoritative bridge-geometry TeX source is now stored at
+`references/volume_xx_source_reproducible_bridge_geometry.tex` with SHA-256
+`54cea4d69b1b85a787b083a0e384226a65c76ff93dd151a74ab0249aa4c13893`.
+All 53 formal requirements are mapped to C29 evidence. The microscopic export
+now explicitly retains the C14 tensor-network plan and a nonstatistical TTN
+bond axis. This completes the formal C29/B0 integration without changing
+central physics or promoting bridge readiness. C30/B1 remains the exact next
+package: implement the missing finite adapter and common scheme-qualified
+microscopic numerical export before sensitivity, calibration, or inference.

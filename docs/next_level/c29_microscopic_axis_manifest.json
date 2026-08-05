@@ -1,9 +1,9 @@
 {
-  "count": 7,
+  "count": 8,
   "evidence_counts": {
     "CONTROLLED": 3,
     "MODEL_DEPENDENT": 2,
-    "NUMERICAL": 1,
+    "NUMERICAL": 2,
     "VALIDATION_ONLY": 1
   },
   "merged_covariance": false,
@@ -83,12 +83,22 @@
     },
     {
       "alternatives": [
+        "FULL_BOND",
+        "REDUCED_BOND"
+      ],
+      "axis": "TENSOR_NETWORK_BOND",
+      "evidence_class": "NUMERICAL",
+      "stable_id": "C29.AXIS.007",
+      "statistical": false
+    },
+    {
+      "alternatives": [
         "reference",
         "holdout"
       ],
       "axis": "NUMERICAL",
       "evidence_class": "NUMERICAL",
-      "stable_id": "C29.AXIS.007",
+      "stable_id": "C29.AXIS.008",
       "statistical": false
     }
   ],

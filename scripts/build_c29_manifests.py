@@ -79,7 +79,7 @@ def normative_sources():
         "references/volume_xvii_process_qualified_tmd_observables.tex",
         "references/volume_xviii_smallb_ope_collinear_mixing.tex",
         "references/volume_xix_source_qualified_process_inputs.tex",
-        "references/volume_xx_external_microscopic_bridge.tex",
+        "references/volume_xx_source_reproducible_bridge_geometry.tex",
         "references/formalism_volume_index.md",
         "handoff/ROADMAP.md",
     ]
@@ -131,6 +131,57 @@ def volume_xix_crosswalk():
             "requirement": text,
             "disposition": disposition,
             "evidence": evidence,
+            "status_promotion_authorized": False,
+        })
+    return rows
+
+
+def volume_xx_crosswalk():
+    """Map every normative Volume XX bridge-geometry requirement to C29 evidence."""
+    path = ROOT / "references/volume_xx_source_reproducible_bridge_geometry.tex"
+    pattern = re.compile(r"^(V20\.[A-Z0-9]+\.\d+)\s*&\s*(.*?)\\\\$")
+    requirements = []
+    for line in path.read_text().splitlines():
+        match = pattern.match(line.strip())
+        if match:
+            requirements.append((match.group(1), match.group(2)))
+    if len(requirements) != 53 or len({stable_id for stable_id, _ in requirements}) != 53:
+        raise RuntimeError("Volume XX requirement extraction is incomplete or duplicated")
+
+    evidence_by_family = {
+        "ROOT": ["c29_root_identity_manifest.json", "c29_provenance_separation_report.json"],
+        "DATA": ["c29_data_ancestry_graph.json", "c28_art25_dataset_inventory.json", "c27_cdf1_native_prediction.json"],
+        "MEAS": ["c28_measurement_semantics_manifest.json", "c29_target_crosswalk.json"],
+        "ENS": ["c29_cross_root_member_relation.json", "c27_art25_joint_member_map.json"],
+        "COV": ["c29_external_bridge_anomaly_factor_manifest.json", "c29_external_bridge_covariance_blocks.json", "c28_cross_process_covariance_report.json"],
+        "CHI2": ["c28_global_chi2_manifest.json", "c28_measurement_semantics_manifest.json"],
+        "WY": ["c28_wy_readiness_matrix.json", "c29_bridge_capability_matrix.json"],
+        "OP": ["c29_operator_crosswalk.json", "c29_operator_bridge_capability.json"],
+        "TARGET": ["c29_target_crosswalk.json", "c29_nuclear_bridge_scope.json"],
+        "SCHEME": ["c29_scheme_scale_adapter_manifest.json", "c29_discrepancy_interface.json"],
+        "DOMAIN": ["c29_domain_intersection_manifest.json", "c29_frozen_bridge_grid.json"],
+        "BRIDGE": ["c29_bridge_plan_manifest.json", "c29_bridge_observable_registry.json"],
+        "PROJ": ["c29_external_bridge_projection_manifest.json", "c29_external_bridge_covariance_blocks.json"],
+        "MIC": ["c29_microscopic_bridge_export.json", "c29_microscopic_axis_manifest.json"],
+        "TTN": ["c29_microscopic_axis_manifest.json", "c14_tensor_network_manifest.json"],
+        "REL": ["c29_cross_root_member_relation.json"],
+        "ANCESTRY": ["c29_data_ancestry_graph.json", "c29_no_double_counting_contract.json"],
+        "ROLE": ["c29_constraint_role_split.json", "c29_holdout_report.json"],
+        "DISC": ["c29_discrepancy_interface.json", "c29_discrepancy_availability_matrix.json"],
+        "DIAG": ["c29_compatibility_diagnostic_manifest.json", "c29_bridge_comparison_report.json"],
+        "GEOM": ["c29_bridge_plan_manifest.json", "c29_microscopic_axis_manifest.json"],
+        "INF": ["c29_future_inference_prerequisite_contract.json", "c29_no_double_counting_contract.json"],
+        "ISO": ["c29_regression_report.json", "c29_provenance_separation_report.json"],
+        "DET": ["c29_regression_report.json", "c29_external_bridge_projection_manifest.json"],
+    }
+    rows = []
+    for stable_id, text in requirements:
+        family = stable_id.split(".")[1]
+        rows.append({
+            "stable_id": stable_id,
+            "requirement": text,
+            "status": "COVERED_AT_DECLARED_C29_SCOPE",
+            "evidence": [f"docs/next_level/{name}" for name in evidence_by_family[family]],
             "status_promotion_authorized": False,
         })
     return rows
@@ -256,6 +307,7 @@ def main(test_count: int = 1131):
     pair=BridgeRootPairId(ExternalRootId(),MicroscopicRootId())
     norm=normative_sources(); write("c29_normative_source_integration.json",{"schema_version":"1.0.0","records":norm,"missing":[x["path"] for x in norm if not x["available"]]})
     v19=volume_xix_crosswalk(); write("c29_volume_xix_requirement_crosswalk.json",{"schema_version":"1.0.0","source_path":"references/volume_xix_source_qualified_process_inputs.tex","source_sha256":sha(ROOT/"references/volume_xix_source_qualified_process_inputs.tex"),"count":len(v19),"all_mapped":len(v19)==50,"status_promotion_authorized":False,"rows":v19})
+    v20=volume_xx_crosswalk(); write("c29_volume_xx_requirement_crosswalk.json",{"schema_version":"1.0.0","source_path":"references/volume_xx_source_reproducible_bridge_geometry.tex","source_sha256":sha(ROOT/"references/volume_xx_source_reproducible_bridge_geometry.tex"),"count":len(v20),"all_mapped":len(v20)==53,"status_promotion_authorized":False,"rows":v20})
     root_records=[
       {"stable_id":"C29.ROOT.EXTERNAL","root_id":EXT,"owns":["ART25 parameters","CS kernel","TMDPDF/TMDFF","MSHT20_REP","MAPFF","DataProcessor datasets/cuts","642-member covariance"],"content_hash":digest(EXT)},
       {"stable_id":"C29.ROOT.MICROSCOPIC","root_id":MIC,"owns":["LF Hamiltonian plans","Fock amplitudes","proton/neutron/deuteron states","Wilson orders","LF-to-QCD matching","evolution","microscopic process plans","assumption axes"],"content_hash":digest(MIC)},
@@ -320,10 +372,10 @@ def main(test_count: int = 1131):
     c11=jload("c11_gtmd_operator_registry.json")["rows"]
     micro=[]
     for i,row in enumerate(c11,1):
-        micro.append({"stable_id":f"C29.MICRO.{i:03d}","operator_id":row["stable_id"],"plan_id":row["plan_id"],"state_member":row["member_id"],"target":row["target"],"species":row["species"],"flavor":row["species"],"wilson_order":row["wilson_order"],"nuclear_component_plan":"NOT_APPLICABLE_NUCLEON","matching_plan":"C19_VALIDATION","evolution_plan":"C21_VALIDATION","process_plan":"NONE","scheme_adapter":"UNRESOLVED_TO_ART25","numerical_route":"C11_REGULATED_PARENT_IDENTITY_EXPORT","evidence_class":"REGULATOR_EXACT","value_status":"UNAVAILABLE_NO_COMMON_SCHEME_QUALIFIED_NUMERICAL_TMD","values":None})
+        micro.append({"stable_id":f"C29.MICRO.{i:03d}","operator_id":row["stable_id"],"plan_id":row["plan_id"],"state_member":row["member_id"],"target":row["target"],"species":row["species"],"flavor":row["species"],"wilson_order":row["wilson_order"],"nuclear_component_plan":"NOT_APPLICABLE_NUCLEON","matching_plan":"C19_VALIDATION","evolution_plan":"C21_VALIDATION","tensor_network_plan":"C14_H7_FULL_OR_REDUCED_BOND_AXIS","tensor_network_evidence":"NUMERICAL_TRUNCATION_NOT_STATISTICAL_MEMBER","process_plan":"NONE","scheme_adapter":"UNRESOLVED_TO_ART25","numerical_route":"C11_REGULATED_PARENT_IDENTITY_EXPORT","evidence_class":"REGULATOR_EXACT","value_status":"UNAVAILABLE_NO_COMMON_SCHEME_QUALIFIED_NUMERICAL_TMD","values":None})
     write("c29_microscopic_bridge_export.json",{"schema_version":"1.0.0","count":len(micro),"grid_hash":grid_hash,"rows":micro,"statistical_posterior_claimed":False})
     axes=[
-      ("HAMILTONIAN_PLAN","MODEL_DEPENDENT",["H1/H7 alternatives"]),("RESOLUTION","CONTROLLED",["COARSE","MEDIUM","FINE"]),("FOCK_SECTOR","CONTROLLED",["H0","H1","H2","H3","H4","H5","H6","H7"]),("WILSON_ORDER","CONTROLLED",["0","1","2"]),("NUCLEAR_COMPONENT","MODEL_DEPENDENT",components),("MATCHING_SCHEME","VALIDATION_ONLY",["C19_A","C19_B"]),("NUMERICAL","NUMERICAL",["reference","holdout"]),
+      ("HAMILTONIAN_PLAN","MODEL_DEPENDENT",["H1/H7 alternatives"]),("RESOLUTION","CONTROLLED",["COARSE","MEDIUM","FINE"]),("FOCK_SECTOR","CONTROLLED",["H0","H1","H2","H3","H4","H5","H6","H7"]),("WILSON_ORDER","CONTROLLED",["0","1","2"]),("NUCLEAR_COMPONENT","MODEL_DEPENDENT",components),("MATCHING_SCHEME","VALIDATION_ONLY",["C19_A","C19_B"]),("TENSOR_NETWORK_BOND","NUMERICAL",["FULL_BOND","REDUCED_BOND"]),("NUMERICAL","NUMERICAL",["reference","holdout"]),
     ]
     axisrows=[{"stable_id":f"C29.AXIS.{i:03d}","axis":a,"evidence_class":e,"alternatives":v,"statistical":False} for i,(a,e,v) in enumerate(axes,1)]
     write("c29_microscopic_axis_manifest.json",{"schema_version":"1.0.0","count":len(axisrows),"evidence_counts":counts(axisrows,"evidence_class"),"rows":axisrows,"merged_covariance":False})
