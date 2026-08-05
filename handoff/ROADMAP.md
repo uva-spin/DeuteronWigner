@@ -2155,3 +2155,30 @@ scheme adapter, including inverse, round-trip, RG, rapidity, threshold,
 remainder, and same-operator convergence tests. Only then export numerical
 u/d/ubar/dbar vectors at the frozen points. Calibration and inference remain
 out of scope until that bridge and its discrepancy model close.
+
+## C31/B1A — microscopic-to-TMD source closure
+
+C31 explicitly separates the C11 regulated finite-basis overlap, the formal
+project renormalized TMD, and the ART25 optimal TMD. Fourteen primary sources
+are version/hash locked. Continuum sources support formal project-to-ART25
+convention alignment for an already-renormalized TMD and separately support
+the optimal boundary, ζ prescription, and two-scale evolution maps.
+
+No source or theorem covers the actual C11 operator/regulator, and no
+operator-identical partonic difference has been calculated. BLFQ is a model-
+overlap comparison; LaMET and lattice sources provide analogous matching
+methodology only. C31 therefore selects `P-E_UNAVAILABLE` and issues
+`NO_SOURCE_QUALIFIED_LF_TO_TMD_MATCHING`. Tree level is limited to an operator
+boundary with an `O(alpha_s)` nonzero-unknown remainder.
+
+The microscopic export remains empty-not-zero, the bridge is not rerun, and
+all twelve u/d/ubar/dbar points remain `BRIDGE_COMMON_DOMAIN_ONLY`. All 642
+external identities, frozen roles, ancestry, `NO_JOINT_MEASURE`, production
+routes, and authoritative artifacts remain unchanged.
+
+**Exact next package:** C32/R0 — perform the regulator-specific microscopic
+partonic matching calculation specified in
+`docs/next_level/c31_missing_calculation_specification.md`, including common IR
+regulation, all LF/Wilson/soft/counterterm graphs, and UV/rapidity/IR/gauge and
+basis-convergence closure. Do not apply the formal continuum adapter until that
+intermediate project TMD exists.

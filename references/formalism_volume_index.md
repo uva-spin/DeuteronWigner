@@ -138,3 +138,11 @@ renormalized microscopic TMD or a finite ART25 conversion. C30 therefore
 records a non-executable adapter with nonzero-unknown remainder and zero
 distribution-comparison-ready points. This is a formal qualification result,
 not a numerical equality or a physics-zero claim.
+
+C31/B1A audits the missing map beneath the Volume-XVI formal project scheme.
+It establishes that the C11 finite-basis Wilson-order-zero overlap is not a
+renormalized, soft-subtracted, rapidity-qualified TMD and that C19--C22 do not
+supply its regulator-specific matching. Continuum scheme-equivalence sources
+support formal project-to-ART25 alignment only after such a project TMD exists;
+ζ prescription and two-scale evolution are separate scale maps. The resulting
+source-qualified no-go selects C32/R0 and leaves the twelve-point bridge closed.
