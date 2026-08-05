@@ -91,3 +91,12 @@ C26/P1B adds no formalism volume. It closes the official positive-pion and
 positive-kaon MAPFF source interfaces and preserves the unresolved custom
 `MSHT20_REP` boundary. Volume XIX remains unavailable and is not reconstructed
 from implementation evidence.
+
+C27/P1C and C28/P1D add no formalism volume. C27 locks the directly supplied
+MSHT ensemble and executes the exact ART25 joint source chain on frozen
+distribution/process diagnostics. C28 extends that source reproduction to the
+complete historical public ART25 DY/SIDIS dataset, selection, native nuisance
+and chi2 definitions, and all 642 joint members. Its strongest new status is
+source-reproducible low-qT W validation. It does not supply the absent Volume
+XIX text, an external-to-microscopic operator bridge, an author-frozen anchor,
+or exact fixed-order/asymptotic partners for W+Y.

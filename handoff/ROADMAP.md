@@ -2020,3 +2020,43 @@ PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
 outputs, complete observable/cut definitions, and exact fixed-order/asymptotic
 partners; validate them without mixing analytic C23 Y or promoting external
 proton provenance to the microscopic spin-1 root.
+
+## C28/P1D — complete public ART25 dataset reproduction
+
+C28 locks the historical public ART25 DataProcessor commit separately from
+current master and preserves a complete-history bundle. The native historical
+loader and cut function recover 36 DY and 10 SIDIS datasets: 8,675 source
+points, 1,209 retained (627 DY and 582 SIDIS), and 7,466 excluded. The cut
+reason ledger agrees with every source decision. CDF1 remains an exact
+50-loaded/33-retained regression with CDF1.0 = 3.4394876804377352 pb/GeV.
+
+The unchanged ARTEMIDE v3.01/ART25 chain executes the central technical record
+and all 642 indivisible joint PDF/FF/nonperturbative records over the retained
+dataset. Native error, nuisance-profile, and chi2 semantics are preserved. An
+exact low-rank anomaly factor supports within- and cross-process covariance
+queries without independently reshuffling marginal ensembles.
+
+The evidential result is narrowly
+`SOURCE_REPRODUCIBLE_LOWQT_W_VALIDATION`. No author/repository frozen numerical
+anchor or exact source-identical DY/SIDIS fixed-order and asymptotic partners
+were found, so author-anchored, full W+Y, full source-process, and physical-input
+eligibility remain zero. External proton ART25 provenance remains disjoint from
+the microscopic spin-1 project root. Raw author-transferred MSHT grids remain
+outside Git pending explicit redistribution permission.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c28_manifests.py <test-count>
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c28.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact next package:** C29/P1E — implement and validate the typed bridge
+contract between the external ART25 source ensemble and microscopic-project
+operator root: operator/scheme/scale maps, parameter ownership, joint
+covariance, model discrepancy, double-counting exclusions, and frozen
+calibration/holdout partitions. Do not calibrate or promote physical process
+status until that contract and its evidence inputs close. In parallel, retain
+separate unresolved tasks for exact source-identical DY and SIDIS fixed-order
+and asymptotic partners needed for W+Y.
