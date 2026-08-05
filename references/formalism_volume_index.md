@@ -129,3 +129,12 @@ in `docs/next_level/c29_volume_xx_requirement_crosswalk.json`. This confirms
 C29 at its declared non-calibrating scope; it does not create the missing
 finite numerical scheme adapter, a common microscopic numerical TMD export,
 or an inference route.
+
+C30/B1 applies Volumes XIX and XX to the first requested distribution-level
+bridge. It source-audits the ART25 rank-zero proton u/d/ubar/dbar definition,
+freezes the microscopic parent and bridge-scheme direction, and records the
+common kinematic domain. The formal sources do not supply an operator-identical
+renormalized microscopic TMD or a finite ART25 conversion. C30 therefore
+records a non-executable adapter with nonzero-unknown remainder and zero
+distribution-comparison-ready points. This is a formal qualification result,
+not a numerical equality or a physics-zero claim.

@@ -2120,3 +2120,38 @@ bond axis. This completes the formal C29/B0 integration without changing
 central physics or promoting bridge readiness. C30/B1 remains the exact next
 package: implement the missing finite adapter and common scheme-qualified
 microscopic numerical export before sensitivity, calibration, or inference.
+
+## C30/B1 — rank-zero proton distribution bridge audit
+
+C30 freezes the exact ART25 rank-zero proton TMDPDF definition and flavor
+ordering, selects the C11 same-operator microscopic parent with later levels
+kept as separate convergence axes, and selects the one-way
+`B1-SCHEME-ART25` conversion plan. Twelve u, d, ubar, and dbar points have a
+common kinematic domain.
+
+The numerical bridge does **not** close. The current microscopic object is not
+a source-qualified renormalized, soft-subtracted, rapidity-qualified TMD, and
+no finite conversion to the ART25 convention is available. The adapter is
+therefore non-executable, its remainder is nonzero-unknown, all twelve points
+are `BRIDGE_COMMON_DOMAIN_ONLY`, and no residual or statistical compatibility
+quantity is computed. The external 642-member identity is retained on an
+empty coordinate projection; this is unavailable physics, not zero physics.
+
+C30 records fifteen observable-level convergence axes, keeps thirteen
+discrepancy classes distinct, supplies 1,600 requirement records and 1,520
+ordered negative controls, and creates no fit, likelihood, calibration,
+posterior, reweighting, emulator, process execution, status promotion, or
+production route. Reproduce with:
+
+```bash
+PYTHONPATH=src python3 scripts/build_c30_manifests.py 1149
+PYTHONPATH=src python3 scripts/validate_c30.py
+PYTHONPATH=src python3 -m pytest -q
+```
+
+**Exact next scientific job:** derive or integrate a cited, operator-identical
+microscopic TMD renormalization/soft/rapidity prescription and finite ART25
+scheme adapter, including inverse, round-trip, RG, rapidity, threshold,
+remainder, and same-operator convergence tests. Only then export numerical
+u/d/ubar/dbar vectors at the frozen points. Calibration and inference remain
+out of scope until that bridge and its discrepancy model close.
