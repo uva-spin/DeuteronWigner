@@ -2060,3 +2060,40 @@ calibration/holdout partitions. Do not calibrate or promote physical process
 status until that contract and its evidence inputs close. In parallel, retain
 separate unresolved tasks for exact source-identical DY and SIDIS fixed-order
 and asymptotic partners needed for W+Y.
+
+## C29/B0 — typed external-to-microscopic bridge contract
+
+C29 implements the immutable bridge between
+`ART25_EXTERNAL_SOURCE_ROOT` and `PROJECT_MICROSCOPIC_OPERATOR_ROOT`. Complete
+operator, target, nuclear, scheme, scale, rank, link, color, and domain
+identities are audited without collapsing the roots. Phenomenological
+deuterium remains distinct from the microscopic deuteron and NN-only remains
+distinct from matched total.
+
+The frozen bridge grid contains distribution, Collins-Soper, DY one-leg,
+SIDIS target-leg, boundary, target, provenance, nuclear, and covariance-null
+records. The exact C28 642 x 1209 anomaly factor is projected without member
+loss or reordering; linear covariance closes and nonlinear diagnostics are
+evaluated memberwise. All 46 datasets and 1,209 retained points have ancestry
+and mutually exclusive compressed-versus-direct future-use plans.
+
+No complete ART25-to-microscopic scheme-qualified numerical TMD bridge closes
+in B0. Rank-zero quark/antiquark families have an identified validation domain,
+the quark CS kernel is diagnostic-only, and process, deuteron, gluon, and T-odd
+bridges remain unavailable. This is fail-closed scientific status, not zero
+physics. No fit, calibration, likelihood, posterior, reweighting, emulator,
+process promotion, or production mutation is created.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c29_manifests.py <test-count>
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c29.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact next package:** C30/B1 — close and validate the first genuinely common
+numerical distribution bridge for rank-zero proton u, d, ubar, and dbar by
+supplying a source-audited finite ART25-to-microscopic scheme adapter and a
+scheme-qualified microscopic numerical export with convergence and typed
+discrepancy inputs. Do not calibrate or infer until that bridge passes.

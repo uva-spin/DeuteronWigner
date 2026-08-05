@@ -100,3 +100,11 @@ and chi2 definitions, and all 642 joint members. Its strongest new status is
 source-reproducible low-qT W validation. It does not supply the absent Volume
 XIX text, an external-to-microscopic operator bridge, an author-frozen anchor,
 or exact fixed-order/asymptotic partners for W+Y.
+
+C29/B0 adds no formalism volume. It implements the typed bridge contract
+between the external ART25 source root and the microscopic operator root while
+preserving complete operator, target, scheme, scale, covariance, member,
+nuclear, and data-ancestry identity. It freezes candidate/holdout roles and
+defines non-inferential diagnostics and future-inference gates without fitting
+or promoting status. Volume XIX and Volume XX remain absent; no content is
+inferred for either missing source.

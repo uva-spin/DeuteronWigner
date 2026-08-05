@@ -1,0 +1,146 @@
+{
+  "complete_identity_fields": [
+    "species",
+    "flavor",
+    "polarization",
+    "target",
+    "rank",
+    "naive_t_parity",
+    "link",
+    "color",
+    "twist",
+    "scheme",
+    "scale",
+    "domain"
+  ],
+  "name_only_matches": 0,
+  "rows": [
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "family": "u_unpolarized",
+      "stable_id": "C29.OP.001",
+      "status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED"
+    },
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "family": "d_unpolarized",
+      "stable_id": "C29.OP.002",
+      "status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED"
+    },
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "family": "ubar_unpolarized",
+      "stable_id": "C29.OP.003",
+      "status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED"
+    },
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "family": "dbar_unpolarized",
+      "stable_id": "C29.OP.004",
+      "status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED"
+    },
+    {
+      "blocking_reasons": [
+        "singlet decomposition map incomplete"
+      ],
+      "family": "quark_singlet",
+      "stable_id": "C29.OP.005",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "microscopic physical CS bundle not consumed",
+        "large-b discrepancy unknown"
+      ],
+      "family": "quark_cs_kernel",
+      "stable_id": "C29.OP.006",
+      "status": "BRIDGE_DIAGNOSTIC_ONLY"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "gluon_unpolarized",
+      "stable_id": "C29.OP.007",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "gluon_linear",
+      "stable_id": "C29.OP.008",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "spin1_ll_quark",
+      "stable_id": "C29.OP.009",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "helicity_quark",
+      "stable_id": "C29.OP.010",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "transversity_quark",
+      "stable_id": "C29.OP.011",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "todd_quark",
+      "stable_id": "C29.OP.012",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "todd_gluon_f",
+      "stable_id": "C29.OP.013",
+      "status": "BRIDGE_UNAVAILABLE"
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "family": "todd_gluon_d",
+      "stable_id": "C29.OP.014",
+      "status": "BRIDGE_UNAVAILABLE"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status": "C29_OPERATOR_CROSSWALK_COMPLETE"
+}
