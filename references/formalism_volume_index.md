@@ -146,3 +146,11 @@ supply its regulator-specific matching. Continuum scheme-equivalence sources
 support formal project-to-ART25 alignment only after such a project TMD exists;
 ζ prescription and two-scale evolution are separate scale maps. The resulting
 source-qualified no-go selects C32/R0 and leaves the twelve-point bridge closed.
+
+C32/R0 adds a versioned microscopic TMD operator-completion root and proves
+its tree reduction using the executed C11 PLAN-A and C12 zero-coupling staple
+paths. It does not reinterpret historical C11. The one-loop program stops at
+the microscopic soft-sector gate because the C11 baryonic finite-basis
+regulator has no defined vacuum eikonal Hilbert sector. Continuum and C12/C14
+pilot soft objects are not substituted. This selects C33/S0 while preserving
+the empty-not-zero bridge and all external covariance/provenance identities.

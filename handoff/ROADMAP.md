@@ -2182,3 +2182,32 @@ partonic matching calculation specified in
 regulation, all LF/Wilson/soft/counterterm graphs, and UV/rapidity/IR/gauge and
 basis-convergence closure. Do not apply the formal continuum adapter until that
 intermediate project TMD exists.
+
+## C32/R0 — operator completion and microscopic soft-sector gate
+
+C32 creates `C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION` without changing C11.
+The actual PLAN-A C11 matrices and forward reductions are passed through the
+C12 staple kernel at zero coupling for u, d, ubar, and dbar at three x values.
+All twelve parents are nonzero and the exact tree-reduction residual is zero.
+PLAN-B remains a distinct alternative and is never summed.
+
+The regulator plan uses the exact inherited C7 tower (K=9/2,11/2,13/2;
+Nmax=8,10,12; bHO=0.40,0.45,0.50 GeV), with lambda_H=1.2 GeV, x_min=1/18,
+the historical boundary conditions, and explicit gluon-zero-mode policy. A
+common off-shell partonic IR plan, covariant-gauge checks, modified-delta
+rapidity plan, 26 holdouts, and every one-loop graph/counterterm class are
+frozen before calculation.
+
+The next gate fails structurally: the C11 finite-basis Hilbert regulator has
+no vacuum eikonal sector on which to calculate the required four-line soft
+factor. C12/C14 soft ledgers are validation pilots, and copying a continuum
+soft factor would not be a C11-regulated calculation. The exact result is
+`C32_MICROSCOPIC_SOFT_SECTOR_UNDEFINED`. All downstream one-loop residuals
+remain unavailable, the export is empty-not-zero, and all twelve bridge points
+remain common-domain-only. The preserved source covariance is still 642 x 11,
+rank 10, nullity 1; the failed projection remains 642 x 0.
+
+**Exact next package:** C33/S0 — construct the explicit finite-basis vacuum
+Wilson soft sector and compatible rapidity/zero-bin subtraction specified in
+`docs/next_level/c32_missing_calculation_specification.md`. Only afterward may
+the remaining collinear, instantaneous, counterterm, and matching graphs run.
