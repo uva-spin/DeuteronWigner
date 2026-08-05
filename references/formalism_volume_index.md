@@ -32,6 +32,9 @@ byte-for-byte from the supplied sources.
 | XVI | `volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf` | `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2` | present (authoritative PDF) |
 | XVII | `volume_xvii_process_qualified_tmd_observables.tex` | `dae315b3feb198fc85cddb2243fc5b9e99f9d9c8b1579908c30b0cfcde4ae9af` | present |
 | XVIII | `volume_xviii_smallb_ope_collinear_mixing.tex` | `ee5a103b28ebc216649a910618a455a85fc895d00fe74cb39630568a14508ed3` | present |
+| XIX | `volume_xix_source_qualified_process_inputs.tex` | `8b4e2d1dfd187f462d61d0134dbeae2bac8b3377cf315f733f63147ecac91596` | present |
+| XX | `volume_xx_source_reproducible_bridge_geometry.tex` | `54cea4d69b1b85a787b083a0e384226a65c76ff93dd151a74ab0249aa4c13893` | present |
+| XXI | — | — | absent as of C33/S0; no contents inferred |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -154,3 +157,15 @@ the microscopic soft-sector gate because the C11 baryonic finite-basis
 regulator has no defined vacuum eikonal Hilbert sector. Continuum and C12/C14
 pilot soft objects are not substituted. This selects C33/S0 while preserving
 the empty-not-zero bridge and all external covariance/provenance identities.
+
+C33/S0 supplies the missing formal architecture boundary without inventing a
+new formalism volume. It constructs a separate B=0 vacuum/eikonal root, a
+vacuum-plus-one-gluon finite-basis schema, four ordered
+fundamental/conjugate lines with transverse closure and singlet trace, and the
+modified-delta sign/identity contract. The exact tree result is one. The
+primary sources define the continuum target, rapidity-renormalization
+conditions, zero-bin count-once conditions, and auxiliary/lattice methods;
+none is regulator-identical to the C33 finite basis. The complete one-loop
+ledger is therefore `NONZERO_UNKNOWN`, and C33 selects
+`C33_SOFT_TREE_LEVEL_ONLY` with C34/S0A as the exact next calculation. Volume
+XXI remains absent; C33 does not infer, summarize, or substitute its contents.

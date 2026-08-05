@@ -2211,3 +2211,68 @@ rank 10, nullity 1; the failed projection remains 642 x 0.
 Wilson soft sector and compatible rapidity/zero-bin subtraction specified in
 `docs/next_level/c32_missing_calculation_specification.md`. Only afterward may
 the remaining collinear, instantaneous, counterterm, and matching graphs run.
+
+## C33/S0 — finite-basis vacuum/eikonal soft root and one-loop sufficiency gate
+
+C33 creates `C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT` as a distinct
+baryon-number-zero root. It shares neither a state vector nor a probability
+normalization with the C32 baryon-number-one collinear root. The selected
+structural plan is `S0-FB-EIKONAL-FOCK`; the continuum and auxiliary-field
+routes remain nonadditive target/method oracles.
+
+The typed runtime in `src/deuteron_wigner/bridge/s0/core.py` implements all 47
+required architecture records. Every serialized record carries the common B=0
+root, four-line fundamental-singlet geometry, regulator and perturbative
+scope, source/target scheme, state independence, and hard-false
+data/inference/production reachability. Three nested vacuum-plus-one-gluon
+bases have dimensions 3,841, 30,721, and 103,681. Exact zero modes are excluded
+from ordinary cells but retained as a separate unresolved control and holdout.
+The ordered operator
+
+```text
+(1/Nc)<Omega|Tr[S_n^dagger(b) S_nbar(b)
+                     S_nbar^dagger(0) S_n(0)]|Omega>
+```
+
+has exact `C_F=4/3`, singlet trace, Hermitian/path reversal, and tree value
+`S^(0)=1`. Modified-delta denominator signs are derived from the path,
+Fourier, momentum-flow, covariant-derivative, and conjugation conventions; no
+manual pole sign or physical numerical epsilon is accepted.
+
+All eighteen required one-loop graph/counterterm classes are explicit, but no
+regulator-specific finite-basis coefficient exists. Every such coefficient is
+`NONZERO_UNKNOWN`. UV and rapidity counterterms, rapidity anomalous dimension,
+Collins-Soper kernel, basis trajectory, finite-to-continuum conversion,
+C32/C33 compatibility, and zero-bin validation remain unavailable rather than
+zero. The continuum expression is source qualified but not relabeled as a
+finite-basis calculation; the auxiliary Euclidean/spacelike construction is
+methodological only.
+
+The zero-bin map is typed and count-once but not executable. The C32
+continuation gate is false, no microscopic proton TMD is exported, and the
+twelve-point bridge is not rerun. Frozen C29-C32 roles and holdouts,
+`NO_JOINT_MEASURE`, all 642 ART25 identities and source covariance, the
+216-route registry, and all eight authoritative artifacts are unchanged.
+
+Primary-source locks are recorded in
+`docs/next_level/c33_primary_source_manifest.json`. Four C31 PDFs are reused;
+seven additional public PDFs are preserved locally under
+`data/raw/c33_sources/`, outside Git, with exact version, URL, SHA-256, and
+reconstruction command. Volume XXI is absent and no content is inferred.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c33_s0.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c33_manifests.py 1196
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c33.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact outcome:** `C33_SOFT_TREE_LEVEL_ONLY`.
+
+**Exact next package:** C34/S0A — calculate the gauge-fixed B=0 one-loop soft
+mode sums, all graph/counterterm classes, finite-basis UV and modified-delta
+rapidity renormalization, three-resolution trajectory, continuum conversion,
+and C32 soft-limit/zero-bin compatibility. Do not resume the proton export or
+bridge until every continuation gate passes.
