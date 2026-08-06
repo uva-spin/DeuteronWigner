@@ -2301,3 +2301,80 @@ mode sums, all graph/counterterm classes, finite-basis UV and modified-delta
 rapidity renormalization, three-resolution trajectory, continuum conversion,
 and C32 soft-limit/zero-bin compatibility. Do not resume the proton export or
 bridge until every continuation gate passes.
+
+## C34/S0A — one-loop soft completion audit and Branch-G closure
+
+C34 starts from the clean, Volume-XXI-integrated C33 completion commit
+`e0b34c74e8f39c9d42cf49cc598f1533d9353a7e`. The historical prompt count of
+1,196 tests described the pre-Volume-XXI C33 commit; the actual immutable
+starting tree reproduces 1,197 tests, all C28--C33 validators, 33 builders,
+39 evidence rows, 165 atlas pages, 2,140 C33 requirements, 2,040 ordered C33
+injections, and 92 inherited fault modes. Exact prompt and Volume XXI hashes
+are respectively
+`a4a959d2d6401cbf296d6514591b3c5b4c3301a2b5867f0481b83a43d7c374eb`
+and
+`613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+
+The additive `bridge/s0a` implementation freezes the
+`S0-FB-EIKONAL-FOCK` plan, the continuum normalization
+`a_s = g_s^2/(4 pi)^2`, SU(3) fundamental four-line trace, covariant-gauge
+axis at `xi_g = 0, 1, 2`, independent modified-delta regulators, proposed
+singular-cell quadrature contract, R1--R3 trajectory-fit plan, and 24
+pre-result holdouts.
+Forty-two immutable objects encode these planned identities and fail-closed
+interfaces. The stored four-line current is a symbolic identity derived from
+C33, not a gauge-complete executed current or a Ward-identity validation; the
+cell example is explicitly nonphysical and no physical cell matrix element
+has been integrated. The real/virtual ledger records disjoint structural IDs,
+not numerical count-once closure. The eighteen-slot contribution ledger uses
+only the six declared statuses and never converts an unknown into a numerical
+zero.
+
+The execution audit fails before coefficient calculation at a precisely
+identified prerequisite. C33 stores basis dimensions and support descriptors,
+but no normalized mode
+functions or cell map, measure and dispersion, gauge-fixed B=0 action and
+propagator, covariant polarization/BRST/ghost/instantaneous completion,
+parameterized Wilson closure, operator-level finite-mode modified-delta
+action, or explicit zero-mode sector. Its three resolutions also change
+several regulator axes at once. All locked primary sources are continuum or
+method authorities and explicitly not operator-regulator identical. These
+facts make a unique finite-basis one-loop coefficient and its counterterms
+underdetermined; importing the continuum coefficient would violate the
+scientific objective.
+
+**Exact outcome:** `C34_SOFT_ONE_LOOP_INCOMPLETE` (Branch G). The continuum
+modified-delta expression is retained only as a source-qualified target;
+finite-basis coefficients, UV/rapidity counterterms, anomalous dimensions,
+conversion, trajectory, and zero-bin equality remain empty-not-zero. The
+continuum source expression has not passed an independent direct-integral
+reconstruction and is never labeled a finite-basis result. UV, rapidity,
+gauge, future/past, count-once, conversion, and trajectory residuals are
+unavailable rather than zero. The C32 continuation gate is false. No ART25
+input, proton export, bridge rerun, fit, likelihood, inference,
+process/deuteron promotion, or production change is created.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c34_manifests.py 1231
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c34.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c34_s0a.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+Final C34 validation used Python 3.9.23 and pytest 8.4.2 from that interpreter.
+The complete suite passed 1,231/1,231 tests; the combined C33+C34 focused
+suite passed 64/64; validators C28 through C34 all returned their declared
+`*_VALIDATION_PASS` status. Two consecutive regenerations of all 52 C34 JSON
+deliverables were byte-identical and every embedded content hash verified.
+The work remains on branch `main`; after the local completion commit, the only
+expected untracked path is the pre-existing `MSHT20_REP/` directory. The
+completion commit is intentionally not pushed and can be recovered with
+`git log -1 --oneline`.
+
+**Exact next package:** C35/S0C — provide the gauge-complete finite-basis soft
+field realization (cells, modes, measures, propagator/cuts, Wilson segments,
+zero modes, and renormalization conditions), then calculate the unresolved
+soft diagrams and counterterms. Do not start collinear matching, proton export,
+or the bridge until the resulting one-loop soft gate genuinely closes.

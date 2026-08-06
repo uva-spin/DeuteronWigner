@@ -1,0 +1,256 @@
+{
+  "acyclic": true,
+  "all_blockers_visible": true,
+  "content_hash": "5774ec42761ecd82a2738e56da083c0e17865a61194b61b1be3b103e4296dbde",
+  "edges": [
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.01.N_NBAR_EXCHANGE",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.02.CONJUGATE_LINE_EXCHANGE",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.03.SAME_DIRECTION_LINE_EXCHANGE",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.04.REAL_ONE_SOFT_GLUON",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.05.VIRTUAL_ONE_SOFT_GLUON",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.06.WILSON_LINE_SELF_ENERGY",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.07.CUSP_ENDPOINT",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.08.TRANSVERSE_CLOSURE",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.10.SOFT_VACUUM_ENERGY",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.11.LIGHT_FRONT_INSTANTANEOUS",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.12.GAUGE_FIXING",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.13.GHOST",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "DIRECT_BARE_OPERATOR_TERM",
+      "from": "C34.SOFT.15.BASIS_BOUNDARY",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "SEPARATE_CONTROL_PENDING_ASSEMBLY_DECISION",
+      "from": "C34.SOFT.14.ZERO_MODE",
+      "to": "C34.ZERO.MODE.CONTROL"
+    },
+    {
+      "blocking": true,
+      "edge_role": "SEPARATE_CONTROL_MUST_RESOLVE_BEFORE_ASSEMBLY_DECISION",
+      "from": "C34.ZERO.MODE.CONTROL",
+      "to": "C34.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.01.LINE_SELF_ENERGY"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.02.CUSP"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.03.ENDPOINT"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.04.TRANSVERSE_CLOSURE"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.05.VACUUM"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.06.BASIS_BOUNDARY"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.07.SOFT_OPERATOR_UV"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.08.RAPIDITY"
+    },
+    {
+      "blocking": true,
+      "edge_role": "COUNTERTERM_EXTRACTION_REQUIRES_BARE_STRUCTURE",
+      "from": "C34.BARE.SOFT.ONE_LOOP",
+      "to": "C34.CT.09.RESIDUAL_LINE_MASS"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.01.LINE_SELF_ENERGY",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.02.CUSP",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.03.ENDPOINT",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.04.TRANSVERSE_CLOSURE",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.05.VACUUM",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.06.BASIS_BOUNDARY",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.07.SOFT_OPERATOR_UV",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.08.RAPIDITY",
+      "to": "C34.RAPIDITY.REN"
+    },
+    {
+      "blocking": true,
+      "edge_role": "RENORMALIZATION",
+      "from": "C34.CT.09.RESIDUAL_LINE_MASS",
+      "to": "C34.UV.REN"
+    },
+    {
+      "blocking": true,
+      "from": "C34.UV.REN",
+      "to": "C34.CONVERSION"
+    },
+    {
+      "blocking": true,
+      "from": "C34.RAPIDITY.REN",
+      "to": "C34.CONVERSION"
+    }
+  ],
+  "excluded_alternative_routes": [
+    "C34.SOFT.09.AUXILIARY_FIELD_SELF_ENERGY"
+  ],
+  "nodes": [
+    "C34.SOFT.01.N_NBAR_EXCHANGE",
+    "C34.SOFT.02.CONJUGATE_LINE_EXCHANGE",
+    "C34.SOFT.03.SAME_DIRECTION_LINE_EXCHANGE",
+    "C34.SOFT.04.REAL_ONE_SOFT_GLUON",
+    "C34.SOFT.05.VIRTUAL_ONE_SOFT_GLUON",
+    "C34.SOFT.06.WILSON_LINE_SELF_ENERGY",
+    "C34.SOFT.07.CUSP_ENDPOINT",
+    "C34.SOFT.08.TRANSVERSE_CLOSURE",
+    "C34.SOFT.09.AUXILIARY_FIELD_SELF_ENERGY",
+    "C34.SOFT.10.SOFT_VACUUM_ENERGY",
+    "C34.SOFT.11.LIGHT_FRONT_INSTANTANEOUS",
+    "C34.SOFT.12.GAUGE_FIXING",
+    "C34.SOFT.13.GHOST",
+    "C34.SOFT.14.ZERO_MODE",
+    "C34.SOFT.15.BASIS_BOUNDARY",
+    "C34.SOFT.16.RAPIDITY_COUNTERTERM",
+    "C34.SOFT.17.UV_COUNTERTERM",
+    "C34.SOFT.18.RESIDUAL_LINE_MASS_COUNTERTERM",
+    "C34.CT.01.LINE_SELF_ENERGY",
+    "C34.CT.02.CUSP",
+    "C34.CT.03.ENDPOINT",
+    "C34.CT.04.TRANSVERSE_CLOSURE",
+    "C34.CT.05.VACUUM",
+    "C34.CT.06.BASIS_BOUNDARY",
+    "C34.CT.07.SOFT_OPERATOR_UV",
+    "C34.CT.08.RAPIDITY",
+    "C34.CT.09.RESIDUAL_LINE_MASS",
+    "C34.ZERO.MODE.CONTROL",
+    "C34.BARE.SOFT.ONE_LOOP",
+    "C34.UV.REN",
+    "C34.RAPIDITY.REN",
+    "C34.CONVERSION"
+  ],
+  "passes": false,
+  "schema_version": "1.0.0",
+  "status": "C34_SOFT_ONE_LOOP_INCOMPLETE",
+  "unresolved_blockers": 27
+}

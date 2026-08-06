@@ -1,0 +1,35 @@
+{
+  "absolute_tolerance": null,
+  "basis_normalization": "UNRESOLVED_BLOCKING",
+  "cell_center_substitution_allowed": false,
+  "content_hash": "7069fd2998476c03f1633d4913bf11a13575deca373a8bfccb982594bb14deb0",
+  "contour_prescription": null,
+  "coordinates": [
+    "log_omega",
+    "rapidity",
+    "transverse_cell"
+  ],
+  "execution_plan_complete": false,
+  "fully_specified": false,
+  "maximum_subdivisions": null,
+  "method_family_and_nominal_order_frozen_before_results": true,
+  "nominal_orders": {
+    "log_omega": 16,
+    "rapidity": 16,
+    "transverse_x": 16,
+    "transverse_y": 16
+  },
+  "physical_numerical_epsilon": null,
+  "pole_cell_partition": null,
+  "quadrature_id": "C34.SOFT.CELL.QUADRATURE.v1",
+  "relative_tolerance": null,
+  "resolutions": [
+    "C33.RES.1",
+    "C33.RES.2",
+    "C33.RES.3"
+  ],
+  "rule": "CELL_INTEGRATED_GAUSS_LEGENDRE_WITH_ANALYTIC_SINGULAR_SUBTRACTION_REQUIRED",
+  "schema_version": "1.0.0",
+  "singular_cell_treatment": "UNRESOLVED_BLOCKING_NORMALIZED_CELL_FUNCTIONS_AND_SUBTRACTION_KERNEL_MISSING",
+  "status": "PARTIAL_PLAN_FROZEN_EXECUTION_BLOCKED"
+}

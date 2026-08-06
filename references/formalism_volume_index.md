@@ -181,3 +181,41 @@ stages. It also locks the 18 benchmark families `XXI-A`--`XXI-R` and the
 minimum 2,040 ordered negative injections across the C33/C34 chain. Receipt of
 the formal source does not supply the missing finite-basis matrix elements or
 alter the C33 no-go.
+
+C34/S0A addresses the requested first nontrivial perturbative order by
+auditing whether its regulator-specific calculation is executable from the
+resolved Volume-XXI-integrated baseline
+`e0b34c74e8f39c9d42cf49cc598f1533d9353a7e`. The C34 prompt and Volume XXI
+SHA-256 values are, respectively,
+`a4a959d2d6401cbf296d6514591b3c5b4c3301a2b5867f0481b83a43d7c374eb`
+and
+`613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+It freezes the direct four-eikonal-line plan, coupling normalization,
+modified-delta sign identities, planned gauge axis, proposed cell-integration
+contract, trajectory-fit plan, and pre-result holdouts. It implements
+content-addressed B=0 one-loop object schemas, a symbolic four-line current
+identity, a structurally complete eighteen-slot contribution ledger, a
+source-transcribed continuum-target record, separate fail-closed
+UV/rapidity/conversion interfaces, and a typed soft-side zero-bin contract.
+It does not execute physical singular-cell integrals, establish numerical
+real/virtual count-once equality, independently reconstruct the continuum
+integral, solve counterterms or conversion, or execute an R1--R3 one-loop
+trajectory.
+
+The audit establishes that the C33 finite basis is a support-and-dimension
+descriptor rather than an executable gauge-fixed field representation. It has
+no explicit cell boundaries or functions, phase-space measure, dispersion,
+polarization completeness, propagator/commutators, BRST/Krein/ghost or
+equivalent covariant-gauge completion, parameterized infinity junction, or
+zero-mode sector. No primary source is operator-and-regulator identical to
+that basis. Consequently the continuum modified-delta result remains a target
+oracle and cannot determine a unique finite-basis coefficient, counterterm,
+trajectory, or conversion.
+
+C34 therefore records the rigorous Volume-XXI Branch-G result
+`C34_SOFT_ONE_LOOP_INCOMPLETE`. Unknown contributions remain
+`UNRESOLVED_BLOCKING`/`NONZERO_UNKNOWN`, the C32 continuation gate remains
+false, and no microscopic proton TMD or bridge result is produced. The exact
+next package is C35/S0C, which must supply the missing gauge-complete mode
+realization and calculate the targeted diagrams and counterterms before any
+later rapidity, trajectory, conversion, or zero-bin claim can close.

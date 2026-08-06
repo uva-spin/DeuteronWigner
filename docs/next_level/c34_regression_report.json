@@ -1,0 +1,766 @@
+{
+  "all_immutable_c33_paths_byte_identical": true,
+  "all_integrity_records_byte_identical": true,
+  "art25_chi2_consumed": false,
+  "art25_consumed": false,
+  "art25_data_consumed": false,
+  "atlas_pages": 166,
+  "authoritative_artifacts": [
+    {
+      "actual_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "artifact_id": "C0-ART-Q-CAN-TMD",
+      "byte_identical": true,
+      "expected_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.csv"
+    },
+    {
+      "actual_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "artifact_id": "C0-ART-Q-CAN-CORR",
+      "byte_identical": true,
+      "expected_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.correlators.csv"
+    },
+    {
+      "actual_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "artifact_id": "C0-ART-G-CAN-TMD",
+      "byte_identical": true,
+      "expected_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.csv"
+    },
+    {
+      "actual_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "artifact_id": "C0-ART-G-CAN-CORR",
+      "byte_identical": true,
+      "expected_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.correlators.csv"
+    },
+    {
+      "actual_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "artifact_id": "C0-ART-Q-RES-TMD",
+      "byte_identical": true,
+      "expected_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.csv"
+    },
+    {
+      "actual_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "artifact_id": "C0-ART-Q-RES-CORR",
+      "byte_identical": true,
+      "expected_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.correlators.csv"
+    },
+    {
+      "actual_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "artifact_id": "C0-ART-G-RES-TMD",
+      "byte_identical": true,
+      "expected_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.csv"
+    },
+    {
+      "actual_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "artifact_id": "C0-ART-G-RES-CORR",
+      "byte_identical": true,
+      "expected_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.correlators.csv"
+    }
+  ],
+  "authoritative_artifacts_unchanged": true,
+  "baseline_commands": [
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q",
+      "evidence_role": "RECORDED_PRE_C34_BASELINE_RESULT",
+      "status": "1197_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c33.py",
+      "evidence_role": "RECORDED_PRE_C34_BASELINE_RESULT",
+      "status": "C33_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c33_s0.py",
+      "evidence_role": "RECORDED_PRE_C34_BASELINE_RESULT",
+      "status": "30_PASS"
+    }
+  ],
+  "baseline_commit": "e0b34c74e8f39c9d42cf49cc598f1533d9353a7e",
+  "baseline_resolved_not_invented": true,
+  "baseline_tests": 1197,
+  "bridge_rerun": false,
+  "bridge_residual_consumed": false,
+  "builder_deterministic_by_construction": true,
+  "builders": 34,
+  "c28_ancestor_verified": true,
+  "c32_ancestor": "0d7b94a5e86882b23a56d4c1f11900d554756a18",
+  "c32_ancestor_verified": true,
+  "c33_pre_volume_commit": "9bf4af82fb8eed576e3981f3e699a1815529b4a7",
+  "c34_injection_instances": 2240,
+  "c34_requirement_records": 300,
+  "calibration_created": false,
+  "content_hash": "e30c5020acbfa49c25c5bbb793270ed9cae24a546e14470c3aca509e07593f24",
+  "cross_root_relation": "NO_JOINT_MEASURE",
+  "cumulative_requirement_count_asserted": false,
+  "deterministic_reconstruction": true,
+  "emulator_created": false,
+  "environment": {
+    "packages": {
+      "numpy": "1.26.3",
+      "pypdf": "6.14.2",
+      "pytest": "8.4.2",
+      "scipy": "1.13.0"
+    },
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.9.23"
+  },
+  "evidence_rows": 40,
+  "executed_c34_negative_injections": 2240,
+  "external_art25_members": 642,
+  "failed_bridge_projection": {
+    "empty_not_zero": true,
+    "shape": [
+      642,
+      0
+    ]
+  },
+  "fault_modes": 80,
+  "final_validation_commands": [
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c34_manifests.py",
+      "status": "C34_MANIFEST_BUILD_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c28.py",
+      "status": "C28_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c29.py",
+      "status": "C29_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c30.py",
+      "status": "C30_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c31.py",
+      "status": "C31_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c32.py",
+      "status": "C32_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c33.py",
+      "status": "C33_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c34.py",
+      "status": "C34_VALIDATION_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c33_s0.py tests/test_c34_s0a.py",
+      "status": "64_PASS"
+    },
+    {
+      "command": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q",
+      "status": "1231_PASS"
+    }
+  ],
+  "fit_created": false,
+  "immutable_c33_path_count": 74,
+  "immutable_c33_paths": [
+    {
+      "actual_sha256": "e6bfee3cfdc6de70e290da10f0cd12c76c8ecc497e8ade1245252f5e9e301e67",
+      "byte_identical": true,
+      "expected_sha256": "e6bfee3cfdc6de70e290da10f0cd12c76c8ecc497e8ade1245252f5e9e301e67",
+      "path": "docs/next_level/architecture_decisions/186_c33_two_root_architecture.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "49130b5fc17832d8243554353574937e4b024b381ae55d977ab4a5e067b74cef",
+      "byte_identical": true,
+      "expected_sha256": "49130b5fc17832d8243554353574937e4b024b381ae55d977ab4a5e067b74cef",
+      "path": "docs/next_level/architecture_decisions/187_c33_vacuum_baryon_identity.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "0b258846ee02d48a4eac3addc87ad66932e68d39adc58b15f02f5a440f585a8a",
+      "byte_identical": true,
+      "expected_sha256": "0b258846ee02d48a4eac3addc87ad66932e68d39adc58b15f02f5a440f585a8a",
+      "path": "docs/next_level/architecture_decisions/188_c33_direct_auxiliary_representations.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "6172fcc897650395b7a0fd73b31e178da473f3dd6391bf2c5c9058c84fb7ae3b",
+      "byte_identical": true,
+      "expected_sha256": "6172fcc897650395b7a0fd73b31e178da473f3dd6391bf2c5c9058c84fb7ae3b",
+      "path": "docs/next_level/architecture_decisions/189_c33_rapidity_regulator_authority.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "851eb1737d1357433674c600d610ef81af3fd5a499394841a328def8adf41d47",
+      "byte_identical": true,
+      "expected_sha256": "851eb1737d1357433674c600d610ef81af3fd5a499394841a328def8adf41d47",
+      "path": "docs/next_level/architecture_decisions/190_c33_soft_zero_mode_policy.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "06c9224f3af544407cb2a8acd73cf554207bbe0ccf26941a4c68c5ada38ea0a9",
+      "byte_identical": true,
+      "expected_sha256": "06c9224f3af544407cb2a8acd73cf554207bbe0ccf26941a4c68c5ada38ea0a9",
+      "path": "docs/next_level/architecture_decisions/191_c33_soft_uv_renormalization.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "5ba01fe72a1f131c2b0813d67b84e36262222b5e0fd32cf707c2df803af7ac7b",
+      "byte_identical": true,
+      "expected_sha256": "5ba01fe72a1f131c2b0813d67b84e36262222b5e0fd32cf707c2df803af7ac7b",
+      "path": "docs/next_level/architecture_decisions/192_c33_rapidity_renormalized_soft_cs_convention.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "7e172f640edb9829fce13b09753a4ee6c750bdf528d8ecc403b813736a0dab4f",
+      "byte_identical": true,
+      "expected_sha256": "7e172f640edb9829fce13b09753a4ee6c750bdf528d8ecc403b813736a0dab4f",
+      "path": "docs/next_level/architecture_decisions/193_c33_soft_regulator_conversion.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "3b14113ce89071b01ea095e82482277b8e708e99cf62ddeacd1ba2ec75eda6e0",
+      "byte_identical": true,
+      "expected_sha256": "3b14113ce89071b01ea095e82482277b8e708e99cf62ddeacd1ba2ec75eda6e0",
+      "path": "docs/next_level/architecture_decisions/194_c33_soft_collinear_compatibility.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "3c7738057afb0194bc4d6689b771651a216dddcb614c4f41fec14a6e79d04ca7",
+      "byte_identical": true,
+      "expected_sha256": "3c7738057afb0194bc4d6689b771651a216dddcb614c4f41fec14a6e79d04ca7",
+      "path": "docs/next_level/architecture_decisions/195_c33_zero_bin_interface.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "52c603f5f0c1e815ae0af5ce2d2056db90c92aec39b063c4f2f858e79ca4a635",
+      "byte_identical": true,
+      "expected_sha256": "52c603f5f0c1e815ae0af5ce2d2056db90c92aec39b063c4f2f858e79ca4a635",
+      "path": "docs/next_level/architecture_decisions/196_c33_soft_tensor_quantum_interface.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "0c9dcf196704c075c9a13dbdca65bebc6b6511961e5473b43d5f921bb43cf321",
+      "byte_identical": true,
+      "expected_sha256": "0c9dcf196704c075c9a13dbdca65bebc6b6511961e5473b43d5f921bb43cf321",
+      "path": "docs/next_level/architecture_decisions/197_c33_continuation_no_go.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "8b9e24fb13a0604696a77b6fe16cb11ebfd499dde2825c040daa7d4ea592f98d",
+      "byte_identical": true,
+      "expected_sha256": "8b9e24fb13a0604696a77b6fe16cb11ebfd499dde2825c040daa7d4ea592f98d",
+      "path": "docs/next_level/architecture_decisions/198_c33_volume_xxi_integration.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "df62581ff68b767c4c8a42a6488b4dc35c01e2733c9546a66ac1b0798b56c90b",
+      "byte_identical": true,
+      "expected_sha256": "df62581ff68b767c4c8a42a6488b4dc35c01e2733c9546a66ac1b0798b56c90b",
+      "path": "docs/next_level/c33_api.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "10daa1a9101d1192910dd951b21445ce88c8d484a428bd91eed06f49fcb68283",
+      "byte_identical": true,
+      "expected_sha256": "10daa1a9101d1192910dd951b21445ce88c8d484a428bd91eed06f49fcb68283",
+      "path": "docs/next_level/c33_auxiliary_direct_equivalence_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "54d912b816f591bab2887450c78769c34bf50f6bca16bab999f3598e38095081",
+      "byte_identical": true,
+      "expected_sha256": "54d912b816f591bab2887450c78769c34bf50f6bca16bab999f3598e38095081",
+      "path": "docs/next_level/c33_auxiliary_field_soft_oracle.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "b403cfde06e6dc1153bd2e402c2fcadbe2f3169ef8f75d744b7ac23359e0f3e1",
+      "byte_identical": true,
+      "expected_sha256": "b403cfde06e6dc1153bd2e402c2fcadbe2f3169ef8f75d744b7ac23359e0f3e1",
+      "path": "docs/next_level/c33_bare_soft_factor.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "8b9b2b9f0d8b561f29f7e36e39769e9be6353ac6c1487b61ce15970e8286cd4c",
+      "byte_identical": true,
+      "expected_sha256": "8b9b2b9f0d8b561f29f7e36e39769e9be6353ac6c1487b61ce15970e8286cd4c",
+      "path": "docs/next_level/c33_bare_soft_oracle_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "f81031e2c6e424db8152322f75d04a8e98a3f89f22a22dde94d75ef8c98f7191",
+      "byte_identical": true,
+      "expected_sha256": "f81031e2c6e424db8152322f75d04a8e98a3f89f22a22dde94d75ef8c98f7191",
+      "path": "docs/next_level/c33_c32_continuation_gate.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "97cd918ee9a896c60e79722956c7489dc9c67b2fff44c5bb22ae2de429574c7b",
+      "byte_identical": true,
+      "expected_sha256": "97cd918ee9a896c60e79722956c7489dc9c67b2fff44c5bb22ae2de429574c7b",
+      "path": "docs/next_level/c33_continuum_soft_oracle.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "0c310df4693a65c1aee715e826d7fd312266586c114c4da3c2599ae9058ded27",
+      "byte_identical": true,
+      "expected_sha256": "0c310df4693a65c1aee715e826d7fd312266586c114c4da3c2599ae9058ded27",
+      "path": "docs/next_level/c33_continuum_soft_validation_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "f1dbd2d05300f949b5a11de091a08a4033e60705f3ec1486f6db27b0e0b5c983",
+      "byte_identical": true,
+      "expected_sha256": "f1dbd2d05300f949b5a11de091a08a4033e60705f3ec1486f6db27b0e0b5c983",
+      "path": "docs/next_level/c33_eikonal_color_space.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "37e894df7e218967b14fc584b9f36138fb5cdd2588fcf0eadd4c85a3014c62bb",
+      "byte_identical": true,
+      "expected_sha256": "37e894df7e218967b14fc584b9f36138fb5cdd2588fcf0eadd4c85a3014c62bb",
+      "path": "docs/next_level/c33_eikonal_denominator_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "481f159281807591407c61a95999dcbb86cd940da74dad55d44eded8242fd4aa",
+      "byte_identical": true,
+      "expected_sha256": "481f159281807591407c61a95999dcbb86cd940da74dad55d44eded8242fd4aa",
+      "path": "docs/next_level/c33_eikonal_path_reversal_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "731c543dbec72a6e9504156a1686fcd38e6cd7e82fcf4800b32ba00fa60ec9cc",
+      "byte_identical": true,
+      "expected_sha256": "731c543dbec72a6e9504156a1686fcd38e6cd7e82fcf4800b32ba00fa60ec9cc",
+      "path": "docs/next_level/c33_four_line_operator_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "d7be69f4f4e39e9bf06eb6fe6b2053cc0f4cc3e8beb638516fd096da2e0472b2",
+      "byte_identical": true,
+      "expected_sha256": "d7be69f4f4e39e9bf06eb6fe6b2053cc0f4cc3e8beb638516fd096da2e0472b2",
+      "path": "docs/next_level/c33_holdout_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "4a1b21553397a8f41848e65f3ad5bead95136b0390ba362a7988e433cdd664ea",
+      "byte_identical": true,
+      "expected_sha256": "4a1b21553397a8f41848e65f3ad5bead95136b0390ba362a7988e433cdd664ea",
+      "path": "docs/next_level/c33_implementation_report.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "5116304bd5916d7140303b34a4a4447bacf48c09b426a12c273add47336bdf2d",
+      "byte_identical": true,
+      "expected_sha256": "5116304bd5916d7140303b34a4a4447bacf48c09b426a12c273add47336bdf2d",
+      "path": "docs/next_level/c33_injection_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "75f33d183d769e8e457cce76369639a5b0f2821e45dfd3e03250cbdd557fcd81",
+      "byte_identical": true,
+      "expected_sha256": "75f33d183d769e8e457cce76369639a5b0f2821e45dfd3e03250cbdd557fcd81",
+      "path": "docs/next_level/c33_missing_calculation_specification.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "921cb96a15352b21dcf547ff4df058adc40549456073afe8f2c0959e04175edb",
+      "byte_identical": true,
+      "expected_sha256": "921cb96a15352b21dcf547ff4df058adc40549456073afe8f2c0959e04175edb",
+      "path": "docs/next_level/c33_no_go_decision_tree.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "8dc40b84a9c5da7d83cb1039a269b728c518fd1d0bed030fda2998b3fc2bea9a",
+      "byte_identical": true,
+      "expected_sha256": "8dc40b84a9c5da7d83cb1039a269b728c518fd1d0bed030fda2998b3fc2bea9a",
+      "path": "docs/next_level/c33_normative_source_integration.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "e84544d478b5fd2d24361aa18f6b92d191452f6b13d1e3d86b7fa452a88295f4",
+      "byte_identical": true,
+      "expected_sha256": "e84544d478b5fd2d24361aa18f6b92d191452f6b13d1e3d86b7fa452a88295f4",
+      "path": "docs/next_level/c33_primary_source_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "c712e3da5c661647e63706ec3346ad225c882b167fe9aa5e91c1e77ab7be5681",
+      "byte_identical": true,
+      "expected_sha256": "c712e3da5c661647e63706ec3346ad225c882b167fe9aa5e91c1e77ab7be5681",
+      "path": "docs/next_level/c33_regression_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "60a8990f537b19db7e2da44d4144929aa414c2befb6c3c1bc734c3cd96df9e1b",
+      "byte_identical": true,
+      "expected_sha256": "60a8990f537b19db7e2da44d4144929aa414c2befb6c3c1bc734c3cd96df9e1b",
+      "path": "docs/next_level/c33_requirement_coverage.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "792d559ddebbe26586014ecdf25e00d7ff949652d9848d7c1dbc7d7a5c949ea6",
+      "byte_identical": true,
+      "expected_sha256": "792d559ddebbe26586014ecdf25e00d7ff949652d9848d7c1dbc7d7a5c949ea6",
+      "path": "docs/next_level/c33_s0_codex_prompt.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "254d2714c9afbcfc49a2ce3efae7b2ba2fbea718b6ead02d512dbb0fabe9f7fc",
+      "byte_identical": true,
+      "expected_sha256": "254d2714c9afbcfc49a2ce3efae7b2ba2fbea718b6ead02d512dbb0fabe9f7fc",
+      "path": "docs/next_level/c33_soft_basis_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "5b04cbfb24f43c2b17a4483d752df6b3868ae1c4fdd0b7ed38cf1f9f4241cebd",
+      "byte_identical": true,
+      "expected_sha256": "5b04cbfb24f43c2b17a4483d752df6b3868ae1c4fdd0b7ed38cf1f9f4241cebd",
+      "path": "docs/next_level/c33_soft_basis_trajectory.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "f41a9025d63074c97dae25925eb9b81809ca5f571f422004af6a26d3b1ddb423",
+      "byte_identical": true,
+      "expected_sha256": "f41a9025d63074c97dae25925eb9b81809ca5f571f422004af6a26d3b1ddb423",
+      "path": "docs/next_level/c33_soft_basis_trajectory_plan.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "e8ec0a3f7c897c745db470cc1fd1718277bd349e303451f83a096594fe8709d1",
+      "byte_identical": true,
+      "expected_sha256": "e8ec0a3f7c897c745db470cc1fd1718277bd349e303451f83a096594fe8709d1",
+      "path": "docs/next_level/c33_soft_collinear_compatibility_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "f9daa012146c5dc1be43ff9c463344adc2bdb7c8016f3d0120006d956664d33c",
+      "byte_identical": true,
+      "expected_sha256": "f9daa012146c5dc1be43ff9c463344adc2bdb7c8016f3d0120006d956664d33c",
+      "path": "docs/next_level/c33_soft_collinear_provenance_graph.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "4b79467db9765eeae70643676eaa22ec40d03233661df34f91f8204d5e8ad4aa",
+      "byte_identical": true,
+      "expected_sha256": "4b79467db9765eeae70643676eaa22ec40d03233661df34f91f8204d5e8ad4aa",
+      "path": "docs/next_level/c33_soft_collinear_regulator_pair.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "dd2297b927ba54898bfc890060b6674f7fa843f0ce1224a5dc0214d7d1034646",
+      "byte_identical": true,
+      "expected_sha256": "dd2297b927ba54898bfc890060b6674f7fa843f0ce1224a5dc0214d7d1034646",
+      "path": "docs/next_level/c33_soft_collins_soper_kernel_oracle.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "118f60a61b9a285d1c8dd1197da4d81c22443157c72bda02e1d1990dc8399622",
+      "byte_identical": true,
+      "expected_sha256": "118f60a61b9a285d1c8dd1197da4d81c22443157c72bda02e1d1990dc8399622",
+      "path": "docs/next_level/c33_soft_continuum_extrapolation.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "d488b9f6febde65e57e925acf9c36ef995411f64b183f327777c0c5b15fb5fc4",
+      "byte_identical": true,
+      "expected_sha256": "d488b9f6febde65e57e925acf9c36ef995411f64b183f327777c0c5b15fb5fc4",
+      "path": "docs/next_level/c33_soft_counterterm_ledger.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "8a63e26103c5dfe5781eb9fd4f2127ac28cdb58fa9aa839cb02f3706f9a8d649",
+      "byte_identical": true,
+      "expected_sha256": "8a63e26103c5dfe5781eb9fd4f2127ac28cdb58fa9aa839cb02f3706f9a8d649",
+      "path": "docs/next_level/c33_soft_dependency_graph.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "649659e005fbde75c13076ad335c495a668a660bfee91518295769a5136db059",
+      "byte_identical": true,
+      "expected_sha256": "649659e005fbde75c13076ad335c495a668a660bfee91518295769a5136db059",
+      "path": "docs/next_level/c33_soft_diagram_ledger.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "e784d5cb2a4a2ab1ec119363625c98f9d50a33b98f1e6dc5766c6ac31b7c9f02",
+      "byte_identical": true,
+      "expected_sha256": "e784d5cb2a4a2ab1ec119363625c98f9d50a33b98f1e6dc5766c6ac31b7c9f02",
+      "path": "docs/next_level/c33_soft_power_correction_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "4f4a1924afded226f7eb45da0707ee86afbad2fde39115c76f37063af131a5c3",
+      "byte_identical": true,
+      "expected_sha256": "4f4a1924afded226f7eb45da0707ee86afbad2fde39115c76f37063af131a5c3",
+      "path": "docs/next_level/c33_soft_quantum_interface_contract.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "6553ba32066b22c59a44060f74ed45ae0cb0aa02c0c500c3eb6520c796076670",
+      "byte_identical": true,
+      "expected_sha256": "6553ba32066b22c59a44060f74ed45ae0cb0aa02c0c500c3eb6520c796076670",
+      "path": "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "ba7d45578b2cbf754d2168180b511ba513451d9feb4f32deb8bf83afed11118e",
+      "byte_identical": true,
+      "expected_sha256": "ba7d45578b2cbf754d2168180b511ba513451d9feb4f32deb8bf83afed11118e",
+      "path": "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "761474c0bcd7462188b748740c66d271e5b7cbd3f5a907d6f78faceaf92e7589",
+      "byte_identical": true,
+      "expected_sha256": "761474c0bcd7462188b748740c66d271e5b7cbd3f5a907d6f78faceaf92e7589",
+      "path": "docs/next_level/c33_soft_rapidity_renormalization.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "619ae6b66cfb2a6922c5201c8a660118e9167070bfe1b71923db5eb685971a87",
+      "byte_identical": true,
+      "expected_sha256": "619ae6b66cfb2a6922c5201c8a660118e9167070bfe1b71923db5eb685971a87",
+      "path": "docs/next_level/c33_soft_regulator_matching_library.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "d3e993795b2f5b2ee624daf6158c2f40cb001f9020b49ed184e4b4922ec2c2b5",
+      "byte_identical": true,
+      "expected_sha256": "d3e993795b2f5b2ee624daf6158c2f40cb001f9020b49ed184e4b4922ec2c2b5",
+      "path": "docs/next_level/c33_soft_regulator_remainder.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "3bb31641bae67dfea4f011109f1a3749603eca8bb5a4cb76a8db2c277056c64f",
+      "byte_identical": true,
+      "expected_sha256": "3bb31641bae67dfea4f011109f1a3749603eca8bb5a4cb76a8db2c277056c64f",
+      "path": "docs/next_level/c33_soft_regulator_roundtrip_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "b27ca6df55e127d70077aac0502d4fbf6f9e6c81293e6d35f21a8ddb9e769bd2",
+      "byte_identical": true,
+      "expected_sha256": "b27ca6df55e127d70077aac0502d4fbf6f9e6c81293e6d35f21a8ddb9e769bd2",
+      "path": "docs/next_level/c33_soft_remainder_separation.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "2c1de1482e4df94afde0b36684b67c8a848cf1d23822c99e787effd218e8414e",
+      "byte_identical": true,
+      "expected_sha256": "2c1de1482e4df94afde0b36684b67c8a848cf1d23822c99e787effd218e8414e",
+      "path": "docs/next_level/c33_soft_sector_plan_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "c184c29828ed575ac453b29ecb274c0ea0b08192927c4b380e88596e3f5e29d7",
+      "byte_identical": true,
+      "expected_sha256": "c184c29828ed575ac453b29ecb274c0ea0b08192927c4b380e88596e3f5e29d7",
+      "path": "docs/next_level/c33_soft_sector_plan_selection.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "c7356927dedc890cac576e707a8726d551fbd5264e07564e5fd3049c8d696fa1",
+      "byte_identical": true,
+      "expected_sha256": "c7356927dedc890cac576e707a8726d551fbd5264e07564e5fd3049c8d696fa1",
+      "path": "docs/next_level/c33_soft_tensor_network_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "07d671ce1a004ca5a26b8393ceb0ed82b00cec9903c5e550035bd6e6fa8f65a4",
+      "byte_identical": true,
+      "expected_sha256": "07d671ce1a004ca5a26b8393ceb0ed82b00cec9903c5e550035bd6e6fa8f65a4",
+      "path": "docs/next_level/c33_soft_uncertainty_budget.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "5c19e3394a1ccdce46043367f519ce70251704685ad5748b8b0e6ef29ba0fec4",
+      "byte_identical": true,
+      "expected_sha256": "5c19e3394a1ccdce46043367f519ce70251704685ad5748b8b0e6ef29ba0fec4",
+      "path": "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "5b5da22d41d99ebcde5e6e1fcefef7fa5ec990c26aa3b7ea3106b0e75968a593",
+      "byte_identical": true,
+      "expected_sha256": "5b5da22d41d99ebcde5e6e1fcefef7fa5ec990c26aa3b7ea3106b0e75968a593",
+      "path": "docs/next_level/c33_soft_uv_renormalization.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "70344294944a0a71cfd659c509f4440cc74a44160a406d794af6ac2ee227784f",
+      "byte_identical": true,
+      "expected_sha256": "70344294944a0a71cfd659c509f4440cc74a44160a406d794af6ac2ee227784f",
+      "path": "docs/next_level/c33_soft_zero_mode_policy.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "e812b44fdb4ec536ff8e2b451bbafe3607efe1f580f56c60a5df79248b344edf",
+      "byte_identical": true,
+      "expected_sha256": "e812b44fdb4ec536ff8e2b451bbafe3607efe1f580f56c60a5df79248b344edf",
+      "path": "docs/next_level/c33_source_relevance_matrix.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "847bccbf1e39e733af036c3a9c18c7462d2b224bcfd1e77a670aa573aafc5c5b",
+      "byte_identical": true,
+      "expected_sha256": "847bccbf1e39e733af036c3a9c18c7462d2b224bcfd1e77a670aa573aafc5c5b",
+      "path": "docs/next_level/c33_source_sufficiency_decision.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "429e97d1437acd1eae2175a6a720f87a745ce8e6b7673479cb4ddc5e56bdfb5c",
+      "byte_identical": true,
+      "expected_sha256": "429e97d1437acd1eae2175a6a720f87a745ce8e6b7673479cb4ddc5e56bdfb5c",
+      "path": "docs/next_level/c33_two_root_tmd_identity.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "a93d414ace5445587c7a66d5a8c57166fc253f08dd8b08baec19cb8923d618b9",
+      "byte_identical": true,
+      "expected_sha256": "a93d414ace5445587c7a66d5a8c57166fc253f08dd8b08baec19cb8923d618b9",
+      "path": "docs/next_level/c33_unresolved_physics_gaps.md",
+      "present": true
+    },
+    {
+      "actual_sha256": "74eb4db88d17da2502d21d327655eef61dd383771a3d0534550a2288df757841",
+      "byte_identical": true,
+      "expected_sha256": "74eb4db88d17da2502d21d327655eef61dd383771a3d0534550a2288df757841",
+      "path": "docs/next_level/c33_vacuum_hilbert_manifest.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "12b2b0ab160750f68d866d29e5d9a17947fce29fc94dea0819b5fda40d4580cf",
+      "byte_identical": true,
+      "expected_sha256": "12b2b0ab160750f68d866d29e5d9a17947fce29fc94dea0819b5fda40d4580cf",
+      "path": "docs/next_level/c33_volume_xxi_requirement_crosswalk.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "3799a0e1e13bccd14c23fbd771026ba9b028b2d192c92eee58c7b8ebf72fbca9",
+      "byte_identical": true,
+      "expected_sha256": "3799a0e1e13bccd14c23fbd771026ba9b028b2d192c92eee58c7b8ebf72fbca9",
+      "path": "docs/next_level/c33_zero_bin_interface_contract.json",
+      "present": true
+    },
+    {
+      "actual_sha256": "6c3de376a27fafa7816dc95e91976a290a5ebf756718a935b4f1b73e01e20d3b",
+      "byte_identical": true,
+      "expected_sha256": "6c3de376a27fafa7816dc95e91976a290a5ebf756718a935b4f1b73e01e20d3b",
+      "path": "scripts/build_c33_manifests.py",
+      "present": true
+    },
+    {
+      "actual_sha256": "6274c3e45154c5cdebbaa8fee78dc7ff3a432339393f9c2858d2c746d65a4a27",
+      "byte_identical": true,
+      "expected_sha256": "6274c3e45154c5cdebbaa8fee78dc7ff3a432339393f9c2858d2c746d65a4a27",
+      "path": "scripts/validate_c33.py",
+      "present": true
+    },
+    {
+      "actual_sha256": "eacb0c7e7aced62174b40e57218d22b2f3acb5031de15ea02fc0bd51a835ede0",
+      "byte_identical": true,
+      "expected_sha256": "eacb0c7e7aced62174b40e57218d22b2f3acb5031de15ea02fc0bd51a835ede0",
+      "path": "src/deuteron_wigner/bridge/s0/__init__.py",
+      "present": true
+    },
+    {
+      "actual_sha256": "5496adc6bc579c1366f4d6b5c049e95fa51e8bdf3c966f03d687fd527dcfc1a9",
+      "byte_identical": true,
+      "expected_sha256": "5496adc6bc579c1366f4d6b5c049e95fa51e8bdf3c966f03d687fd527dcfc1a9",
+      "path": "src/deuteron_wigner/bridge/s0/core.py",
+      "present": true
+    },
+    {
+      "actual_sha256": "be78784a243a0528c3e3c0578004fefd3198d8ec8b4bf0226e7287f85ae1fd1e",
+      "byte_identical": true,
+      "expected_sha256": "be78784a243a0528c3e3c0578004fefd3198d8ec8b4bf0226e7287f85ae1fd1e",
+      "path": "tests/test_c33_s0.py",
+      "present": true
+    }
+  ],
+  "inherited_c33_injections": 2040,
+  "inherited_c33_requirements": 2140,
+  "integrity_records": [
+    {
+      "actual_sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493",
+      "byte_identical": true,
+      "expected_sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493",
+      "path": "docs/next_level/c2_reduction_registry.json"
+    },
+    {
+      "actual_sha256": "d8773386171158675ce112f7f1ba22b87a67efd163922f7d880e8664f2290101",
+      "byte_identical": true,
+      "expected_sha256": "d8773386171158675ce112f7f1ba22b87a67efd163922f7d880e8664f2290101",
+      "path": "docs/next_level/c2_provenance_graph.json"
+    },
+    {
+      "actual_sha256": "3bbc390d4a80fe9ae520d54d8d12d7596eb59f5640242cf48527f9ace7a3ca6d",
+      "byte_identical": true,
+      "expected_sha256": "3bbc390d4a80fe9ae520d54d8d12d7596eb59f5640242cf48527f9ace7a3ca6d",
+      "path": "docs/next_level/c2_composition_manifest.json"
+    },
+    {
+      "actual_sha256": "baf7e3073e27837f461f0a827c8768ae1f7ba9deb621f8617b78aef11ce70661",
+      "byte_identical": true,
+      "expected_sha256": "baf7e3073e27837f461f0a827c8768ae1f7ba9deb621f8617b78aef11ce70661",
+      "path": "docs/next_level/c29_frozen_bridge_grid.json"
+    },
+    {
+      "actual_sha256": "02710c96fd6071a6ee4a699b610a854b57eb07bec204a65dfd0c9f6ef819b148",
+      "byte_identical": true,
+      "expected_sha256": "02710c96fd6071a6ee4a699b610a854b57eb07bec204a65dfd0c9f6ef819b148",
+      "path": "docs/next_level/c29_constraint_role_split.json"
+    },
+    {
+      "actual_sha256": "5525e9dca5f214b21e86317ac303bcc94dd1e7858b46f6c7adbd0c5d046a2411",
+      "byte_identical": true,
+      "expected_sha256": "5525e9dca5f214b21e86317ac303bcc94dd1e7858b46f6c7adbd0c5d046a2411",
+      "path": "docs/next_level/c29_cross_root_member_relation.json"
+    },
+    {
+      "actual_sha256": "b48f13a63d47f67ca73342501b0a4ea7d5d94eaec3ab98a5e89eca6e1b49f451",
+      "byte_identical": true,
+      "expected_sha256": "b48f13a63d47f67ca73342501b0a4ea7d5d94eaec3ab98a5e89eca6e1b49f451",
+      "path": "docs/next_level/c29_no_double_counting_contract.json"
+    },
+    {
+      "actual_sha256": "51d123f3842c6140b72d6119be960d793673dd2f9bbcd9f77245ad1a525e92c8",
+      "byte_identical": true,
+      "expected_sha256": "51d123f3842c6140b72d6119be960d793673dd2f9bbcd9f77245ad1a525e92c8",
+      "path": "docs/next_level/c28_theory_ensemble_factor_manifest.json"
+    }
+  ],
+  "likelihood_created": false,
+  "microscopic_proton_export": false,
+  "msht20_tracked_paths": [],
+  "next_package": "C35/S0C",
+  "next_package_description": "targeted unresolved soft-diagram and counterterm completion",
+  "no_go": "C34_SOFT_ONE_LOOP_INCOMPLETE",
+  "optimization_created": false,
+  "outcome_branch": "G",
+  "posterior_created": false,
+  "process_executed": false,
+  "production_promoted": false,
+  "production_registry": 216,
+  "required_c28_ancestor": "52678312906bf5cc0bb8664e2486d5d676a6b723",
+  "reweighting_created": false,
+  "schema_version": "1.0.0",
+  "source_covariance": {
+    "nullity": 1,
+    "rank": 10,
+    "sha256": "33de79398ef3d75657e715abf751b5a12634e7e65e53a95b9ee19b0fb8eea16a",
+    "shape": [
+      642,
+      11
+    ]
+  },
+  "tests": 1231,
+  "two_pass_regeneration_verified": true
+}

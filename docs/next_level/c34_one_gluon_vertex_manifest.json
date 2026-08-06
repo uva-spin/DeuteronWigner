@@ -1,0 +1,94 @@
+{
+  "content_hash": "1cb1adbdd90f36ee92d90fc3765940ec9874e37e4dface9ba255afbed7d52e14",
+  "count": 8,
+  "direct_auxiliary_added": false,
+  "one_gluon_basis_dimensions": [
+    3841,
+    30721,
+    103681
+  ],
+  "records": [
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.ABSORPTION.C33.LINE.N.DAGGER.B",
+      "line_id": "C33.LINE.N.DAGGER.B",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.EMISSION.C33.LINE.N.DAGGER.B",
+      "vertex_type": "EMISSION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.EMISSION.C33.LINE.N.DAGGER.B",
+      "line_id": "C33.LINE.N.DAGGER.B",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.ABSORPTION.C33.LINE.N.DAGGER.B",
+      "vertex_type": "ABSORPTION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.ABSORPTION.C33.LINE.NBAR.B",
+      "line_id": "C33.LINE.NBAR.B",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.EMISSION.C33.LINE.NBAR.B",
+      "vertex_type": "EMISSION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.EMISSION.C33.LINE.NBAR.B",
+      "line_id": "C33.LINE.NBAR.B",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.ABSORPTION.C33.LINE.NBAR.B",
+      "vertex_type": "ABSORPTION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.ABSORPTION.C33.LINE.NBAR.DAGGER.0",
+      "line_id": "C33.LINE.NBAR.DAGGER.0",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.EMISSION.C33.LINE.NBAR.DAGGER.0",
+      "vertex_type": "EMISSION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.EMISSION.C33.LINE.NBAR.DAGGER.0",
+      "line_id": "C33.LINE.NBAR.DAGGER.0",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.ABSORPTION.C33.LINE.NBAR.DAGGER.0",
+      "vertex_type": "ABSORPTION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.ABSORPTION.C33.LINE.N.0",
+      "line_id": "C33.LINE.N.0",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.EMISSION.C33.LINE.N.0",
+      "vertex_type": "EMISSION"
+    },
+    {
+      "cell_matrix_elements": null,
+      "conjugate_of": "C34.VERTEX.EMISSION.C33.LINE.N.0",
+      "line_id": "C33.LINE.N.0",
+      "missing_calculation": "normalized cell mode functions and singular-cell integration",
+      "operator_level_identity": "DERIVED_FROM_STORED_LINE",
+      "status": "UNRESOLVED_BLOCKING",
+      "vertex_id": "C34.VERTEX.ABSORPTION.C33.LINE.N.0",
+      "vertex_type": "ABSORPTION"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status": "VERTEX_IDENTITIES_TYPED_NUMERICAL_MATRIX_ELEMENTS_UNAVAILABLE"
+}
