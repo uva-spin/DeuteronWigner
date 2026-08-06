@@ -29,6 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs" / "next_level"
 
 C33_BASELINE = "e0b34c74e8f39c9d42cf49cc598f1533d9353a7e"
+C34_COMPLETION = "6bdb44be2afc79e817f69ce0e35813da8a394db7"
 C33_PRE_VOLUME_COMMIT = "9bf4af82fb8eed576e3981f3e699a1815529b4a7"
 C32_ANCESTOR = "0d7b94a5e86882b23a56d4c1f11900d554756a18"
 C28_ANCESTOR = "52678312906bf5cc0bb8664e2486d5d676a6b723"
@@ -37,6 +38,15 @@ PROMPT_PATH = "docs/next_level/c34_s0a_codex_prompt.md"
 PROMPT_SHA256 = "a4a959d2d6401cbf296d6514591b3c5b4c3301a2b5867f0481b83a43d7c374eb"
 VOLUME_XXI_PATH = "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex"
 VOLUME_XXI_SHA256 = "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+
+# These are living, append-only project records.  A historical C34 rebuild in
+# a later work package must hash the versions that C34 actually consumed,
+# rather than making C34 output depend on later handoff text.  This affects no
+# physics object and restores exact reconstruction of the completion commit.
+C34_LIVING_INPUTS = {
+    "references/formalism_volume_index.md",
+    "handoff/ROADMAP.md",
+}
 
 SOFT_ROOT = "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT"
 COLLINEAR_ROOT = "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION"
@@ -87,6 +97,12 @@ def put(name: str, value: dict[str, Any]) -> None:
 
 def git_bytes(commit: str, path: str) -> bytes:
     return subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=ROOT)
+
+
+def c34_input_sha256(path: str) -> str:
+    if path in C34_LIVING_INPUTS:
+        return hashlib.sha256(git_bytes(C34_COMPLETION, path)).hexdigest()
+    return sha256(ROOT / path)
 
 
 def git_ancestor(ancestor: str, descendant: str = "HEAD") -> bool:
@@ -849,7 +865,12 @@ def main(test_count: int = 1231) -> None:
     if not runtime_path.is_file():
         raise RuntimeError("C34_S0A_RUNTIME_MISSING")
     runtime_hash = sha256(runtime_path)
-    builder_hash = sha256(Path(__file__))
+    # Keep the historical generated-code identity tied to the exact C34
+    # completion source, even when this descendant-only reconstruction guard
+    # is present in a later worktree.
+    builder_hash = hashlib.sha256(
+        git_bytes(C34_COMPLETION, "scripts/build_c34_manifests.py")
+    ).hexdigest()
     current_required_obligations = list(EIKONAL_NUMERICAL_CURRENT_REQUIREMENTS)
     current_proved_obligations = list(EIKONAL_NUMERICAL_CURRENT_PROVED)
     current_unproved_obligations = [
@@ -871,7 +892,7 @@ def main(test_count: int = 1231) -> None:
         item = ROOT / path
         norm.append({
             "path": path, "present": item.is_file(),
-            "sha256": sha256(item) if item.is_file() else None,
+            "sha256": c34_input_sha256(path) if item.is_file() else None,
             "classification": "PROJECT_NORMATIVE_FORMALISM" if path == VOLUME_XXI_PATH else "REPOSITORY_NORMATIVE_INPUT",
         })
     put("c34_normative_source_integration.json", {

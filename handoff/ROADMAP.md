@@ -2378,3 +2378,85 @@ field realization (cells, modes, measures, propagator/cuts, Wilson segments,
 zero modes, and renormalization conditions), then calculate the unresolved
 soft diagrams and counterterms. Do not start collinear matching, proton export,
 or the bridge until the resulting one-loop soft gate genuinely closes.
+
+## C35/S0C — regulator-completion decision and Branch-G no-go
+
+C35 starts from the clean local C34 completion
+`6bdb44be2afc79e817f69ce0e35813da8a394db7`. Before edits, that tree
+reproduced 1,231 tests and validators C28--C34. The C35 prompt and Volume XXI
+hashes are, respectively,
+`1918dcd06e391498d77cfd1ddae73a5fadbdea496bf03e353e6ec7c809ac05c9`
+and
+`613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+The 74 immutable C33 paths, all 52 historical C34 JSON manifests, 216
+production routes, eight authoritative artifacts, all 642 external ART25 identities, the
+642-by-11 rank-10/nullity-1 source covariance, and `NO_JOINT_MEASURE` remain
+locked. Of the 73 audited C34 package paths, 72 remain byte-identical. The
+sole controlled maintenance change is a nonphysics reconstruction guard in
+`scripts/build_c34_manifests.py`: historical C34 rebuilds now hash the C34
+completion versions of the append-only roadmap and volume index, so later
+handoff additions cannot mutate C34 output. Rebuilding still reproduces all
+52 C34 JSON manifests byte-for-byte.
+
+The source audit compiles four mutually exclusive plans before coefficient
+evaluation. None of the positive candidates supplies the same finite-cell,
+lightlike Minkowski modified-delta operator together with a complete gauge
+theory. The covariant route lacks the finite-cell BRST/Krein and boundary
+complex; the light-front route lacks the complete instantaneous, constrained
+zero-mode, and residual-gauge structure; and the auxiliary route lacks an
+operator-level conversion to the target. The modified-delta source further
+states that its finite-delta Wilson lines do not retain the gauge properties
+of the original Wilson lines. The selected plan is therefore
+`S0C-UNAVAILABLE`, recorded as a typed supersession of the C34 planned
+covariant probe before any result was inspected.
+
+C35 nevertheless closes the exact convention layer. It fixes metric `+---`,
+`v+/-=(v0+/-v3)/sqrt(2)`, normalized null vectors with `n.nbar=1`,
+`n.k=k-`, `nbar.k=k+`, and the covariant rescaling
+`delta- -> lambda delta-`, `delta+ -> lambda^-1 delta+`. It implements the
+massless real chart `(kappa,y,phi)` with measure
+`kappa d kappa dy d phi/[2(2pi)^3]`, the independent off-shell virtual chart
+with `d k+ d k- d2kT/(2pi)^4`, a normalized scalar-cell oracle, the finite-
+segment modified-delta damping factor, and explicit principal-value/cut and
+finite-delta pole-cell oracles. These are exact kinematic or method records;
+they are not relabeled as a gauge-mode collection or a physical loop
+quadrature.
+
+All 53 formal architecture classes are frozen, content addressed, and
+scope-isolated. The complete eighteen-slot contribution inventory remains
+`UNRESOLVED_BLOCKING`/`NONZERO_UNKNOWN`. No bare one-loop coefficient,
+counterterm, renormalized soft function, conversion, trajectory, or soft-side
+zero-bin value is issued. No continuum coefficient is copied. The C32 gate is
+false, the proton export is empty-not-zero, and no ART25 object, bridge
+residual, fit, inference object, process/deuteron result, or production route
+enters the calculation.
+
+The committed C35 evidence contains 61 JSON manifests, four explanatory
+reports, 12 ADRs, 326 C35 coverage rows, 93 distinct fault modes, and 2,511
+executed semantic injections targeted across all 53 architecture classes, 18
+contribution slots, and 27 holdouts. The final suite passes 1,257 tests; the
+C33+C34+C35 focused suite passes 90 tests; validators C28--C35 pass; and two
+manifest regenerations are byte-identical. The ignored runtime entry point
+writes only a content-addressed Branch-G no-go bundle and cannot emit a
+coefficient.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c35_manifests.py 1257
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c35.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c33_s0.py tests/test_c34_s0a.py tests/test_c35_s0c.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/run_c35_soft_calculation.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact outcome:**
+`C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE`, with secondary
+`C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE` and Branch G.
+
+**Exact next package:** C36/O4 — create a replacement, versioned,
+gauge-complete regulator architecture for the microscopic TMD soft root.
+Freeze the replacement operator, finite gauge theory, modes, Wilson geometry,
+rapidity action, singular-cell prescription, zero modes, boundaries, and
+ordered regulator limits before reopening the eighteen one-loop slots. Do not
+fill the unavailable C35 descriptor or import the continuum coefficient.

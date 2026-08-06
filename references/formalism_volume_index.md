@@ -219,3 +219,35 @@ false, and no microscopic proton TMD or bridge result is produced. The exact
 next package is C35/S0C, which must supply the missing gauge-complete mode
 realization and calculate the targeted diagrams and counterterms before any
 later rapidity, trajectory, conversion, or zero-bin claim can close.
+
+C35/S0C completes the regulator-definition decision required before that
+calculation. It integrates no new formalism volume and leaves Volume XXI
+unchanged at SHA-256
+`613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+The package fixes the normalized project light-front convention, exact real
+on-shell and virtual off-shell coordinate charts and measures, operator-level
+finite-segment modified-delta damping, a normalized scalar-cell oracle, and
+explicit principal-value/cut singular-cell method oracles. These exact
+kinematic and analytic records do not constitute a finite-cell gauge theory.
+
+The primary-source audit finds no operator-and-regulator-identical completion
+for any positive plan. The covariant/Krein candidate lacks its finite-cell
+BRST, metric, constraint, zero-mode, and boundary complex; the light-front
+physical candidate lacks complete instantaneous, constrained zero-mode, and
+residual-gauge data; and the auxiliary-eikonal candidate lacks conversion to
+the same lightlike Minkowski modified-delta operator. At finite delta, the
+source-regulated Wilson lines also lack the original Wilson-line gauge
+properties. C35 therefore freezes `S0C-UNAVAILABLE` before coefficient
+evaluation and issues the typed Branch-G result
+`C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE`, with secondary
+`C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE`.
+
+All eighteen soft graph and counterterm classes remain explicit
+`UNRESOLVED_BLOCKING`/`NONZERO_UNKNOWN`; the bare one-loop coefficient,
+counterterms, renormalized soft function, conversion, trajectory, soft-side
+zero-bin value, and C32 continuation remain empty-not-zero. The continuum
+modified-delta coefficient is not substituted. No proton export, ART25 or
+bridge input, inference object, process/deuteron result, or production route
+is created. The exact next formal work is C36/O4: define a new versioned,
+gauge-complete regulator root and prove its finite-regulator identities and
+operator conversion before reopening the one-loop ledger.
