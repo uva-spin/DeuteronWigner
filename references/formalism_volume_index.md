@@ -34,7 +34,7 @@ byte-for-byte from the supplied sources.
 | XVIII | `volume_xviii_smallb_ope_collinear_mixing.tex` | `ee5a103b28ebc216649a910618a455a85fc895d00fe74cb39630568a14508ed3` | present |
 | XIX | `volume_xix_source_qualified_process_inputs.tex` | `8b4e2d1dfd187f462d61d0134dbeae2bac8b3377cf315f733f63147ecac91596` | present |
 | XX | `volume_xx_source_reproducible_bridge_geometry.tex` | `54cea4d69b1b85a787b083a0e384226a65c76ff93dd151a74ab0249aa4c13893` | present |
-| XXI | — | — | absent as of C33/S0; no contents inferred |
+| XXI | `volume_xxi_regulator_specific_tmd_operators_soft_matching.tex` | `613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4` | present |
 
 Volume 0 supplies the architecture and type contract. Volumes I--III are the
 normative inputs for the regulated light-front, common-overlap, and
@@ -158,8 +158,8 @@ regulator has no defined vacuum eikonal Hilbert sector. Continuum and C12/C14
 pilot soft objects are not substituted. This selects C33/S0 while preserving
 the empty-not-zero bridge and all external covariance/provenance identities.
 
-C33/S0 supplies the missing formal architecture boundary without inventing a
-new formalism volume. It constructs a separate B=0 vacuum/eikonal root, a
+C33/S0 was executed before the Volume XXI source was supplied. It constructs a
+separate B=0 vacuum/eikonal root, a
 vacuum-plus-one-gluon finite-basis schema, four ordered
 fundamental/conjugate lines with transverse closure and singlet trace, and the
 modified-delta sign/identity contract. The exact tree result is one. The
@@ -167,5 +167,17 @@ primary sources define the continuum target, rapidity-renormalization
 conditions, zero-bin count-once conditions, and auxiliary/lattice methods;
 none is regulator-identical to the C33 finite basis. The complete one-loop
 ledger is therefore `NONZERO_UNKNOWN`, and C33 selects
-`C33_SOFT_TREE_LEVEL_ONLY` with C34/S0A as the exact next calculation. Volume
-XXI remains absent; C33 does not infer, summarize, or substitute its contents.
+`C33_SOFT_TREE_LEVEL_ONLY` with C34/S0A as the exact next calculation.
+
+Volume XXI is now integrated as the normative regulator-specific microscopic
+TMD operator, two-root collinear--soft, UV/rapidity-renormalization,
+zero-bin, basis-trajectory, matching, and conditional-bridge contract. Its 65
+stable requirements are mapped in
+`docs/next_level/c33_volume_xxi_requirement_crosswalk.json`. The post hoc
+crosswalk confirms C33's declared Stage XXI.0--XXI.4 structural and
+fail-closed coverage while keeping the unevaluated one-loop, target-partonic,
+matching, trajectory, and export requirements assigned to C34 and later
+stages. It also locks the 18 benchmark families `XXI-A`--`XXI-R` and the
+minimum 2,040 ordered negative injections across the C33/C34 chain. Receipt of
+the formal source does not supply the missing finite-basis matrix elements or
+alter the C33 no-go.

@@ -45,9 +45,37 @@ C31, and C32 validators. It also records 32 C32 builders, 38/38 evidence rows,
 164/164 atlas pages, 1,940 C32 requirements, 1,840/1,840 C32 injections, and
 88 named C32 fault modes. These are baseline counts, not post-C33 counts.
 
-The completed C33 record contains 1,196 passing tests, 33 builders, 39/39
-evidence rows, 165/165 atlas pages, 2,140 C33 requirements, 2,040/2,040 C33
-negative injections, and 92 named C33 fault modes.
+The completed pre-Volume-XXI C33 record contains 1,196 passing tests, 33
+builders, 39/39 evidence rows, 165/165 atlas pages, 2,140 C33 requirements,
+2,040/2,040 C33 negative injections, and 92 named C33 fault modes.
+
+## Post-completion Volume XXI integration
+
+The subsequently supplied normative source is preserved byte-for-byte as
+`references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex`
+with SHA-256
+`613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+All 65 stable `V21.*` requirements are extracted in source order and mapped to
+explicit C31, C32, and C33 evidence in
+`docs/next_level/c33_volume_xxi_requirement_crosswalk.json`.
+The integration also records Volume XXI's 18 benchmark families
+`XXI-A`--`XXI-R`, 53 formal acceptance criteria, and minimum 2,040 ordered
+negative-test contract separately from the original 2,140 C33 package
+requirements.
+
+The post-integration repository record contains 1,197 passing tests. The C33
+builder and validator now hash-audit Volume XXI and enforce the complete
+crosswalk without changing the 2,140 C33 package-requirement count or any
+scientific output.
+
+The mapping distinguishes requirements closed at the declared C33 structural
+scope, requirements satisfied by an explicit fail-closed status, and
+requirements that remain assigned to C34 or later stages. It does not convert
+an unavailable one-loop value into a completed result. Volume XXI independently
+confirms the two-root architecture, the exact tree boundary, the prohibition on
+placing the soft vacuum inside proton normalization, and the admissibility of
+the `C33_SOFT_TREE_LEVEL_ONLY` branch. It therefore leaves the continuation
+gate false and C34/S0A unchanged.
 
 Historical C11 remains a `REGULATED_MODEL_DENSITY`; C32 remains its distinct
 operator-completion descendant and retains the exact twelve-parent tree
@@ -262,7 +290,7 @@ token:
 ```bash
 PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c33_s0.py
 PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
-PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c33_manifests.py 1196
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c33_manifests.py 1197
 PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c33.py
 ```
 

@@ -2258,13 +2258,38 @@ Primary-source locks are recorded in
 `docs/next_level/c33_primary_source_manifest.json`. Four C31 PDFs are reused;
 seven additional public PDFs are preserved locally under
 `data/raw/c33_sources/`, outside Git, with exact version, URL, SHA-256, and
-reconstruction command. Volume XXI is absent and no content is inferred.
+reconstruction command. Volume XXI was unavailable during the original C33
+execution, so no content was inferred in that completion commit.
+
+### Volume XXI integration addendum
+
+The authoritative source is now stored byte-for-byte at
+`references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex`
+with SHA-256
+`613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+Its 65 stable formal requirements are mapped in
+`docs/next_level/c33_volume_xxi_requirement_crosswalk.json` to C31--C33
+evidence, explicit fail-closed statuses, and C34-or-later dependencies. The
+source confirms the two-root collinear/soft architecture and explicitly
+permits the tree-level-only branch; it does not supply the missing one-loop
+finite-basis calculation. The exact C33 result and next job are unchanged:
+`C33_SOFT_TREE_LEVEL_ONLY`, followed by C34/S0A.
+
+Volume XXI sharpens the first C34/S0A execution steps: freeze the perturbative
+coupling normalization; provide a gauge-complete BRST/Krein/ghost or equivalent
+contraction realization; expand every one-loop record to the full
+root/order/color/gauge/UV/IR/rapidity/basis/support/hash/cancellation schema;
+split logarithmic, power, residual-mass, cusp, endpoint, vacuum, and basis
+counterterms; and assemble one content-addressed C32/C33 joint-regulator
+object. Then calculate all 18 soft entries, the signed missing/duplicate
+zero-bin defects, and the three-resolution trajectory before reconsidering the
+continuation gate.
 
 Reproduce with:
 
 ```bash
 PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c33_s0.py
-PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c33_manifests.py 1196
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c33_manifests.py 1197
 PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c33.py
 PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
 ```

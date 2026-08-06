@@ -25,6 +25,8 @@ from deuteron_wigner.bridge.s0.core import (
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs" / "next_level"
+VOLUME_XXI_PATH = ROOT / "references" / "volume_xxi_regulator_specific_tmd_operators_soft_matching.tex"
+VOLUME_XXI_SHA256 = "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
 
 
 def load(name: str):
@@ -62,17 +64,81 @@ DELIVERABLES = (
     "c33_source_sufficiency_decision.json", "c33_no_go_decision_tree.json",
     "c33_missing_calculation_specification.md", "c33_holdout_report.json",
     "c33_injection_manifest.json", "c33_regression_report.json",
-    "c33_unresolved_physics_gaps.md",
+    "c33_unresolved_physics_gaps.md", "c33_volume_xxi_requirement_crosswalk.json",
 )
+
+
+def extract_volume_xxi_ids() -> list[str]:
+    rows = []
+    for raw_line in VOLUME_XXI_PATH.read_text().splitlines():
+        line = raw_line.strip()
+        if not line.startswith("V21."):
+            continue
+        assert "&" in line and line.endswith(r"\\")
+        rows.append(line.split("&", 1)[0].strip())
+    return rows
 
 
 def main() -> None:
     assert all((DOCS / name).is_file() for name in DELIVERABLES)
 
     norm = load("c33_normative_source_integration.json")
-    assert norm["all_required_present"] and not norm["volume_xxi_present"]
-    assert norm["volume_xxi_status"] == "ABSENT_NOT_INVENTED"
+    assert norm["all_required_present"] and norm["volume_xxi_present"]
+    assert norm["volume_xxi_present_at_c33_execution"] is False
+    assert norm["volume_xxi_present_now"] is True
+    assert norm["volume_xxi_path"] == str(VOLUME_XXI_PATH.relative_to(ROOT))
+    assert norm["volume_xxi_expected_sha256"] == VOLUME_XXI_SHA256
+    assert norm["volume_xxi_sha256"] == file_hash(VOLUME_XXI_PATH) == VOLUME_XXI_SHA256
+    assert norm["volume_xxi_status"] == "INTEGRATED_POST_C33_NO_NUMERICAL_CHANGE"
     assert norm["prompt_sha256"] == file_hash(DOCS / "c33_s0_codex_prompt.md")
+    volume_xxi_norm = next(row for row in norm["records"] if row["path"] == str(VOLUME_XXI_PATH.relative_to(ROOT)))
+    assert volume_xxi_norm["classification"] == "PROJECT_NORMATIVE_FORMALISM"
+    assert not volume_xxi_norm["operator_regulator_identical_calculation"]
+    assert not volume_xxi_norm["supplies_finite_basis_one_loop_coefficients"]
+
+    crosswalk = load("c33_volume_xxi_requirement_crosswalk.json")
+    extracted_v21_ids = extract_volume_xxi_ids()
+    crosswalk_ids = [row["requirement_id"] for row in crosswalk["rows"]]
+    assert crosswalk["source"]["path"] == str(VOLUME_XXI_PATH.relative_to(ROOT))
+    assert crosswalk["source"]["sha256"] == VOLUME_XXI_SHA256
+    assert crosswalk["source"]["classification"] == "PROJECT_NORMATIVE_FORMALISM"
+    assert not crosswalk["source"]["operator_regulator_identical_calculation"]
+    assert not crosswalk["source"]["supplies_finite_basis_one_loop_coefficients"]
+    assert crosswalk["source"]["historical_c33_execution_status"] == "ABSENT_NOT_INVENTED"
+    assert crosswalk["source"]["integration_status"] == "INTEGRATED_POST_C33_NO_NUMERICAL_CHANGE"
+    assert crosswalk["count"] == crosswalk["source"]["formal_requirement_count"] == 65
+    assert crosswalk["source"]["formal_acceptance_count"] == 53
+    assert crosswalk["source"]["benchmark_families"] == [f"XXI-{chr(65 + i)}" for i in range(18)]
+    assert crosswalk["source"]["minimum_ordered_negative_injections"] == 2040
+    assert crosswalk["c33_ordered_negative_injections"] == 2040
+    assert crosswalk["minimum_ordered_negative_injections_satisfied"]
+    assert len(extracted_v21_ids) == len(set(extracted_v21_ids)) == 65
+    assert crosswalk_ids == extracted_v21_ids and crosswalk["all_ids_unique"]
+    assert crosswalk["counts_by_status"] == {
+        "C33_CLOSED": 50, "C33_FAIL_CLOSED": 4, "C34_DEFERRED": 11,
+    }
+    assert crosswalk["all_evidence_present"]
+    for row in crosswalk["rows"]:
+        assert row["status"] in crosswalk["status_definitions"]
+        assert row["evidence_paths"] and row["all_evidence_present"]
+        assert all((ROOT / path).is_file() for path in row["evidence_paths"])
+        assert not row["positive_physics_promoted"]
+    deferred = {row["requirement_id"] for row in crosswalk["rows"] if row["status"] == "C34_DEFERRED"}
+    assert {"V21.ORACLE.1", "V21.ORACLE.2"} <= deferred
+    assert {f"V21.MATCH.{i}" for i in range(1, 6)} <= deferred
+    status_by_id = {row["requirement_id"]: row["status"] for row in crosswalk["rows"]}
+    assert status_by_id["V21.ROOT.3"] == "C34_DEFERRED"
+    assert status_by_id["V21.COLL.1"] == "C33_CLOSED"
+    assert status_by_id["V21.MATCH.6"] == status_by_id["V21.MATCH.7"] == "C33_CLOSED"
+    assert crosswalk["c33_no_go"] == "C33_SOFT_TREE_LEVEL_ONLY"
+    assert crosswalk["immediate_next_package"] == "C34/S0A"
+    assert not crosswalk["microscopic_proton_exported"]
+    assert not crosswalk["bridge_rerun"] and not crosswalk["inference_or_production_promoted"]
+    hashed = dict(crosswalk)
+    recorded_hash = hashed.pop("content_hash")
+    assert recorded_hash == hashlib.sha256(
+        json.dumps(hashed, sort_keys=True, separators=(",", ":")).encode()
+    ).hexdigest()
 
     sources = load("c33_primary_source_manifest.json")
     assert sources["count"] == 11 and sources["all_present"]
@@ -219,6 +285,7 @@ def main() -> None:
     assert all(not row["used_in_derivation"] and not row["used_in_fit"] for row in holdouts["records"])
     injections = load("c33_injection_manifest.json")
     assert injections["count"] == 2040 and injections["fault_modes"] == len(FAULT_CATALOG) == 92
+    assert injections["count"] >= crosswalk["source"]["minimum_ordered_negative_injections"]
     assert injections["ordered"] and injections["all_detected"]
     assert all(detect_injection(row["injection_id"]) == row["expected_diagnostic"] for row in injections["rows"])
     coverage = load("c33_requirement_coverage.json")
@@ -253,7 +320,8 @@ def main() -> None:
         assert not regression[key]
 
     adr_paths = sorted((DOCS / "architecture_decisions").glob("*_c33_*.md"))
-    assert len(adr_paths) == 12
+    assert len(adr_paths) == 13
+    assert (DOCS / "architecture_decisions" / "198_c33_volume_xxi_integration.md") in adr_paths
     assert "C33/S0" in (ROOT / "handoff" / "ROADMAP.md").read_text()
     assert "C33/S0" in (ROOT / "references" / "formalism_volume_index.md").read_text()
     tracked_msht = subprocess.check_output(["git", "ls-files", "MSHT20_REP"], cwd=ROOT, text=True).strip()

@@ -333,14 +333,22 @@
       "sha256": "54cea4d69b1b85a787b083a0e384226a65c76ff93dd151a74ab0249aa4c13893"
     },
     {
+      "classification": "PROJECT_NORMATIVE_FORMALISM",
+      "operator_regulator_identical_calculation": false,
+      "path": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex",
+      "present": true,
+      "sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4",
+      "supplies_finite_basis_one_loop_coefficients": false
+    },
+    {
       "path": "references/formalism_volume_index.md",
       "present": true,
-      "sha256": "bda580cddc1cf596d7b015c7e10a16a7210658606f778bd3d51dcda61fc154f8"
+      "sha256": "1b5f6476ae57f0895fd381e2ffec87f91226d0ca231fd039477d55bd3aac7709"
     },
     {
       "path": "handoff/ROADMAP.md",
       "present": true,
-      "sha256": "8788697423a92e70cbf010f812f603a956316f124bb21eb8418d297db3325c7f"
+      "sha256": "3c3ab7e619bcb99dd377a8e6d73c3b9368483e583ccec12cb7185cfdc337412d"
     },
     {
       "path": "docs/next_level/c33_s0_codex_prompt.md",
@@ -349,6 +357,11 @@
     }
   ],
   "schema_version": "1.0.0",
-  "volume_xxi_present": false,
-  "volume_xxi_status": "ABSENT_NOT_INVENTED"
+  "volume_xxi_expected_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4",
+  "volume_xxi_path": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex",
+  "volume_xxi_present": true,
+  "volume_xxi_present_at_c33_execution": false,
+  "volume_xxi_present_now": true,
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4",
+  "volume_xxi_status": "INTEGRATED_POST_C33_NO_NUMERICAL_CHANGE"
 }

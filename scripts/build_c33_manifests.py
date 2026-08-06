@@ -27,6 +27,8 @@ COLLINEAR_ROOT = "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION"
 PRIMARY_PLAN = "S0-FB-EIKONAL-FOCK"
 NO_GO = "C33_SOFT_TREE_LEVEL_ONLY"
 NEXT_PACKAGE = "C34/S0A"
+VOLUME_XXI_PATH = "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex"
+VOLUME_XXI_SHA256 = "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
 
 
 def sha256(path: Path) -> str:
@@ -124,10 +126,138 @@ NORMATIVE_PATHS = (
     "references/volume_xviii_smallb_ope_collinear_mixing.tex",
     "references/volume_xix_source_qualified_process_inputs.tex",
     "references/volume_xx_source_reproducible_bridge_geometry.tex",
+    VOLUME_XXI_PATH,
     "references/formalism_volume_index.md",
     "handoff/ROADMAP.md",
     "docs/next_level/c33_s0_codex_prompt.md",
 )
+
+
+# Volume XXI is normative over C31--C34.  A requirement is C33_CLOSED only
+# when the cited repository objects already implement the contract.  A
+# C33_FAIL_CLOSED row is a guard whose correct present result is an explicit
+# unavailable/no-go status.  C34_DEFERRED is reserved for affirmative
+# one-loop/operator calculations which do not yet exist.
+V21_C34_DEFERRED = {
+    "V21.ROOT.3",
+    "V21.UV.1",
+    "V21.RAP.4",
+    "V21.ZERO.3",
+    "V21.ORACLE.1",
+    "V21.ORACLE.2",
+    "V21.MATCH.1",
+    "V21.MATCH.2",
+    "V21.MATCH.3",
+    "V21.MATCH.4",
+    "V21.MATCH.5",
+}
+
+V21_C33_FAIL_CLOSED = {
+    "V21.COLL.2",
+    "V21.COLL.4",
+    "V21.UV.3",
+    "V21.RAP.2",
+}
+
+V21_DEFERRED_OWNER = {
+    "V21.ROOT.3": "C34/S0A",
+    "V21.UV.1": "C34/S0A_AND_C34/R0B",
+    "V21.RAP.4": "C34/S0A",
+    "V21.ZERO.3": "C34/R0B_AFTER_C34/S0A",
+    "V21.ORACLE.1": "C34/R0B_AFTER_C34/S0A",
+    "V21.ORACLE.2": "C34/R0B_AFTER_C34/S0A",
+    "V21.MATCH.1": "C34/R0B_AFTER_C34/S0A",
+    "V21.MATCH.2": "C34/R0B_AFTER_C34/S0A",
+    "V21.MATCH.3": "C34/R0B_AFTER_C34/S0A",
+    "V21.MATCH.4": "C34/R0B_AFTER_C34/S0A",
+    "V21.MATCH.5": "C34/R0B_AFTER_C34/S0A",
+}
+
+V21_FAMILY_EVIDENCE = {
+    "LAYER": (
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json",
+    ),
+    "ROOT": (
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+    ),
+    "OP": (
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json",
+    ),
+    "REG": (
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+    ),
+    "COLL": (
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json",
+    ),
+    "SOFT": (
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+    ),
+    "UV": (
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+    ),
+    "RAP": (
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+    ),
+    "ZERO": (
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+    ),
+    "ORACLE": (
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+    ),
+    "MATCH": (
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json",
+    ),
+    "TRAJ": (
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+    ),
+    "TN": ("docs/next_level/c33_soft_tensor_network_manifest.json",),
+    "Q": ("docs/next_level/c33_soft_quantum_interface_contract.json",),
+    "BRIDGE": (
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json",
+    ),
+    "STATUS": (
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+    ),
+    "ISO": ("docs/next_level/c33_regression_report.json",),
+    "DET": (
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c33_requirement_coverage.json",
+    ),
+}
 
 
 SOURCE_SPECS = (
@@ -240,6 +370,100 @@ def source_records() -> list[dict]:
     return records
 
 
+def volume_xxi_requirements() -> list[dict]:
+    """Extract and classify the 65 normative Volume XXI table rows.
+
+    The prose is read from the authoritative TeX instead of being duplicated
+    in Python.  Status classification is intentionally independent of wording
+    heuristics so that a new or renamed requirement fails loudly rather than
+    being promoted by accident.
+    """
+    source = ROOT / VOLUME_XXI_PATH
+    actual_hash = sha256(source)
+    if actual_hash != VOLUME_XXI_SHA256:
+        raise RuntimeError(
+            f"VOLUME_XXI_HASH_MISMATCH expected={VOLUME_XXI_SHA256} actual={actual_hash}"
+        )
+
+    extracted = []
+    for line_number, raw_line in enumerate(source.read_text().splitlines(), 1):
+        line = raw_line.strip()
+        if not line.startswith("V21."):
+            continue
+        if "&" not in line or not line.endswith(r"\\"):
+            raise RuntimeError(f"MALFORMED_VOLUME_XXI_REQUIREMENT_LINE:{line_number}")
+        requirement_id, description = line.split("&", 1)
+        requirement_id = requirement_id.strip()
+        description = description.strip()[:-2].strip()
+        parts = requirement_id.split(".")
+        if len(parts) != 3 or parts[0] != "V21" or not parts[2].isdigit():
+            raise RuntimeError(f"MALFORMED_VOLUME_XXI_REQUIREMENT_ID:{requirement_id}")
+        extracted.append({
+            "requirement_id": requirement_id,
+            "family": parts[1],
+            "requirement_tex": description,
+            "source_line": line_number,
+        })
+
+    identifiers = [row["requirement_id"] for row in extracted]
+    if len(identifiers) != 65 or len(set(identifiers)) != 65:
+        raise RuntimeError(
+            f"VOLUME_XXI_REQUIREMENT_CARDINALITY count={len(identifiers)} unique={len(set(identifiers))}"
+        )
+    unknown_families = {row["family"] for row in extracted} - set(V21_FAMILY_EVIDENCE)
+    if unknown_families:
+        raise RuntimeError(f"VOLUME_XXI_UNKNOWN_FAMILIES:{sorted(unknown_families)}")
+    classified = V21_C34_DEFERRED | V21_C33_FAIL_CLOSED
+    unknown_classifications = classified - set(identifiers)
+    if unknown_classifications:
+        raise RuntimeError(
+            f"VOLUME_XXI_UNKNOWN_CLASSIFICATIONS:{sorted(unknown_classifications)}"
+        )
+
+    rows = []
+    for source_order, row in enumerate(extracted, 1):
+        requirement_id = row["requirement_id"]
+        if requirement_id in V21_C34_DEFERRED:
+            status = "C34_DEFERRED"
+            owner = V21_DEFERRED_OWNER[requirement_id]
+            if requirement_id == "V21.ROOT.3":
+                rationale = (
+                    "C33 has separate provenance, regulator-pair, and overlap records but not the required "
+                    "single content-addressed joint-regulator object; C34/S0A owns that integration."
+                )
+            else:
+                rationale = (
+                    "The affirmative one-loop/operator calculation is not present. "
+                    "C33 records unavailable values and blocks promotion; the cited C34 package owns closure."
+                )
+        elif requirement_id in V21_C33_FAIL_CLOSED:
+            status = "C33_FAIL_CLOSED"
+            owner = "C33/S0_GUARD_COMPLETE"
+            rationale = (
+                "C33 implements the required guard: unresolved physics is explicit, no missing term is zero, "
+                "and no positive status is issued."
+            )
+        else:
+            status = "C33_CLOSED"
+            owner = "C31-C33_IMPLEMENTED_CONTRACT"
+            rationale = (
+                "The typed architecture, preservation invariant, or conditional gate is implemented and "
+                "validated by the cited repository evidence without claiming unavailable one-loop physics."
+            )
+        evidence_paths = list(V21_FAMILY_EVIDENCE[row["family"]])
+        rows.append({
+            **row,
+            "source_order": source_order,
+            "status": status,
+            "completion_owner": owner,
+            "rationale": rationale,
+            "evidence_paths": evidence_paths,
+            "all_evidence_present": all((ROOT / path).is_file() for path in evidence_paths),
+            "positive_physics_promoted": False,
+        })
+    return rows
+
+
 def basis_resolutions() -> list[dict]:
     # These are the exact compressed Cartesian products instantiated by
     # architecture_examples(); the heavy explicit mode lists are reconstructible
@@ -269,15 +493,80 @@ def basis_resolutions() -> list[dict]:
     return rows
 
 
-def main(test_count: int = 1196) -> None:
+def main(test_count: int = 1197) -> None:
+    try:
+        from deuteron_wigner.bridge.s0.core import FAULT_CATALOG, injection_rows
+        injections = injection_rows(2040)
+        fault_modes = len(FAULT_CATALOG)
+    except (ImportError, AttributeError):
+        injections = []
+        fault_modes = 0
+
     norm = [{"path": p, "present": (ROOT / p).exists(), "sha256": sha256(ROOT / p) if (ROOT / p).exists() else None} for p in NORMATIVE_PATHS]
+    for record in norm:
+        if record["path"] == VOLUME_XXI_PATH:
+            record.update({
+                "classification": "PROJECT_NORMATIVE_FORMALISM",
+                "operator_regulator_identical_calculation": False,
+                "supplies_finite_basis_one_loop_coefficients": False,
+            })
+    volume_xxi = ROOT / VOLUME_XXI_PATH
+    volume_xxi_present_now = volume_xxi.is_file()
+    volume_xxi_hash = sha256(volume_xxi) if volume_xxi_present_now else None
     put("c33_normative_source_integration.json", {
         "schema_version": "1.0.0", "records": norm,
         "all_required_present": all(x["present"] for x in norm),
-        "volume_xxi_present": any((ROOT / "references").glob("volume_xxi*")),
-        "volume_xxi_status": "ABSENT_NOT_INVENTED",
+        "volume_xxi_present": volume_xxi_present_now,
+        "volume_xxi_present_at_c33_execution": False,
+        "volume_xxi_present_now": volume_xxi_present_now,
+        "volume_xxi_path": VOLUME_XXI_PATH,
+        "volume_xxi_sha256": volume_xxi_hash,
+        "volume_xxi_expected_sha256": VOLUME_XXI_SHA256,
+        "volume_xxi_status": "INTEGRATED_POST_C33_NO_NUMERICAL_CHANGE",
         "prompt_sha256": sha256(DOCS / "c33_s0_codex_prompt.md"),
     })
+
+    v21_rows = volume_xxi_requirements()
+    v21_counts = {
+        status: sum(row["status"] == status for row in v21_rows)
+        for status in ("C33_CLOSED", "C33_FAIL_CLOSED", "C34_DEFERRED")
+    }
+    volume_xxi_crosswalk = {
+        "schema_version": "1.0.0",
+        "crosswalk_id": "C33.V21.REQUIREMENT.CROSSWALK.v1",
+        "source": {
+            "path": VOLUME_XXI_PATH,
+            "sha256": VOLUME_XXI_SHA256,
+            "classification": "PROJECT_NORMATIVE_FORMALISM",
+            "operator_regulator_identical_calculation": False,
+            "supplies_finite_basis_one_loop_coefficients": False,
+            "formal_requirement_count": 65,
+            "formal_acceptance_count": 53,
+            "benchmark_families": [f"XXI-{chr(65 + i)}" for i in range(18)],
+            "minimum_ordered_negative_injections": 2040,
+            "historical_c33_execution_status": "ABSENT_NOT_INVENTED",
+            "integration_status": "INTEGRATED_POST_C33_NO_NUMERICAL_CHANGE",
+        },
+        "status_definitions": {
+            "C33_CLOSED": "Contract or conditional gate implemented and validated in C31-C33.",
+            "C33_FAIL_CLOSED": "C33 guard implemented; positive physics status withheld on explicit unresolved input.",
+            "C34_DEFERRED": "Affirmative one-loop/operator calculation remains assigned to a named C34 package.",
+        },
+        "count": len(v21_rows),
+        "counts_by_status": v21_counts,
+        "all_ids_unique": len({row["requirement_id"] for row in v21_rows}) == len(v21_rows),
+        "all_evidence_present": all(row["all_evidence_present"] for row in v21_rows),
+        "c33_ordered_negative_injections": len(injections),
+        "minimum_ordered_negative_injections_satisfied": len(injections) >= 2040,
+        "c33_no_go": NO_GO,
+        "immediate_next_package": NEXT_PACKAGE,
+        "microscopic_proton_exported": False,
+        "bridge_rerun": False,
+        "inference_or_production_promoted": False,
+        "rows": v21_rows,
+    }
+    volume_xxi_crosswalk["content_hash"] = digest(volume_xxi_crosswalk)
+    put("c33_volume_xxi_requirement_crosswalk.json", volume_xxi_crosswalk)
 
     sources = source_records()
     put("c33_primary_source_manifest.json", {
@@ -669,13 +958,6 @@ def main(test_count: int = 1196) -> None:
         "records": [{"holdout_id": f"C33.HOLDOUT.{name.upper()}", "used_in_derivation": False, "used_in_fit": False, "status": "PRESERVED_UNEVALUATED"} for name in HOLDOUTS],
     })
 
-    try:
-        from deuteron_wigner.bridge.s0.core import FAULT_CATALOG, injection_rows
-        injections = injection_rows(2040)
-        fault_modes = len(FAULT_CATALOG)
-    except (ImportError, AttributeError):
-        injections = []
-        fault_modes = 0
     put("c33_injection_manifest.json", {
         "schema_version": "1.0.0", "count": len(injections), "ordered": True,
         "fault_modes": fault_modes, "all_detected": bool(injections) and all(x["detected"] for x in injections),
@@ -742,4 +1024,4 @@ def main(test_count: int = 1196) -> None:
 
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]) if len(sys.argv) > 1 else 1196)
+    main(int(sys.argv[1]) if len(sys.argv) > 1 else 1197)

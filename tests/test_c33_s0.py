@@ -1,6 +1,8 @@
 from dataclasses import FrozenInstanceError, is_dataclass, replace
 from fractions import Fraction
+import hashlib
 import json
+from pathlib import Path
 
 import pytest
 
@@ -71,6 +73,58 @@ EXPECTED_ARCHITECTURE_NAMES = {
     "ZeroBinCompatibilityGate", "SoftTensorNetworkPlan",
     "SoftAuxiliaryFieldOracle", "C33SoftCapabilityMatrix", "C33ClosureReport",
 }
+
+ROOT = Path(__file__).resolve().parents[1]
+VOLUME_XXI_PATH = ROOT / "references" / "volume_xxi_regulator_specific_tmd_operators_soft_matching.tex"
+VOLUME_XXI_SHA256 = "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+
+
+def test_volume_xxi_source_and_all_65_requirements_are_crosswalked_fail_closed():
+    assert hashlib.sha256(VOLUME_XXI_PATH.read_bytes()).hexdigest() == VOLUME_XXI_SHA256
+    extracted = []
+    for line_number, raw_line in enumerate(VOLUME_XXI_PATH.read_text().splitlines(), 1):
+        line = raw_line.strip()
+        if not line.startswith("V21."):
+            continue
+        assert "&" in line and line.endswith(r"\\")
+        requirement_id, requirement_tex = line.split("&", 1)
+        extracted.append((requirement_id.strip(), requirement_tex.strip()[:-2].strip(), line_number))
+    assert len(extracted) == len({row[0] for row in extracted}) == 65
+
+    manifest_path = ROOT / "docs" / "next_level" / "c33_volume_xxi_requirement_crosswalk.json"
+    manifest = json.loads(manifest_path.read_text())
+    rows = manifest["rows"]
+    assert manifest["source"]["sha256"] == VOLUME_XXI_SHA256
+    assert manifest["source"]["classification"] == "PROJECT_NORMATIVE_FORMALISM"
+    assert manifest["source"]["operator_regulator_identical_calculation"] is False
+    assert manifest["source"]["supplies_finite_basis_one_loop_coefficients"] is False
+    assert manifest["count"] == len(rows) == 65
+    assert manifest["source"]["formal_acceptance_count"] == 53
+    assert manifest["source"]["benchmark_families"] == [f"XXI-{chr(65 + i)}" for i in range(18)]
+    assert manifest["source"]["minimum_ordered_negative_injections"] == 2040
+    assert manifest["c33_ordered_negative_injections"] == 2040
+    assert manifest["minimum_ordered_negative_injections_satisfied"] is True
+    assert [(row["requirement_id"], row["requirement_tex"], row["source_line"]) for row in rows] == extracted
+    assert manifest["counts_by_status"] == {
+        "C33_CLOSED": 50, "C33_FAIL_CLOSED": 4, "C34_DEFERRED": 11,
+    }
+    for row in rows:
+        assert row["status"] in {"C33_CLOSED", "C33_FAIL_CLOSED", "C34_DEFERRED"}
+        assert row["evidence_paths"] and row["all_evidence_present"]
+        assert all((ROOT / path).is_file() for path in row["evidence_paths"])
+        assert row["positive_physics_promoted"] is False
+
+    status = {row["requirement_id"]: row["status"] for row in rows}
+    for requirement_id in ("V21.ORACLE.1", "V21.ORACLE.2", *(f"V21.MATCH.{i}" for i in range(1, 6))):
+        assert status[requirement_id] == "C34_DEFERRED"
+    assert status["V21.ROOT.3"] == "C34_DEFERRED"
+    assert status["V21.COLL.1"] == "C33_CLOSED"
+    assert status["V21.MATCH.6"] == status["V21.MATCH.7"] == "C33_CLOSED"
+    assert manifest["c33_no_go"] == "C33_SOFT_TREE_LEVEL_ONLY"
+    assert manifest["immediate_next_package"] == "C34/S0A"
+    assert manifest["microscopic_proton_exported"] is False
+    assert manifest["bridge_rerun"] is False
+    assert manifest["inference_or_production_promoted"] is False
 
 
 def test_all_47_architecture_records_are_frozen_and_instantiated():

@@ -31,6 +31,10 @@ S_{\rm FB}^{(1),\rm bare}=\mathrm{NONZERO\_UNKNOWN}.
 C34/S0A must use the selected `S0-FB-EIKONAL-FOCK` root without modifying C11
 or C32. Before evaluating a graph, it must freeze and hash:
 
+- the perturbative expansion convention, including whether the stored
+  coefficient multiplies `alpha_s`, `alpha_s/(4*pi)`, or another explicitly
+  normalized coupling, so continuum and finite-basis coefficients cannot
+  differ by an implicit normalization;
 - the complete vacuum plus one-gluon basis at three or more nested resolutions,
   including normalization and completeness relations;
 - both `n` and `nbar` rapidity regions, transverse modes, polarizations, all
@@ -45,6 +49,11 @@ or C32. Before evaluating a graph, it must freeze and hash:
 - the finite-basis UV regulator and target MSbar convention, with logarithmic
   and linear/power divergences kept separate;
 - covariant gauge and the frozen `xi_g=0,1,2` holdouts;
+- a gauge-complete finite-basis realization, such as a BRST/Krein/ghost
+  completion, or a rigorously equivalent propagator/contraction formulation
+  with term-by-term non-applicability and cancellation proofs; the present
+  two-physical-polarization cell basis alone cannot establish the covariant-
+  gauge holdouts;
 - a common partonic IR prescription compatible with the C32 spacelike
   off-shell checks at `p^2=-0.04,-0.09 GeV^2` and momenta 5 and 10 GeV, or a
   proved conversion that retains the same overlap limit.
@@ -79,9 +88,11 @@ RESIDUAL_LINE_MASS_COUNTERTERM
 ```
 
 For each entry provide the line pair, cut/virtual classification, color factor,
-gauge dependence, UV/IR/rapidity/basis and b dependence, symbolic derivation,
-numerical implementation, cancellation partners, and holdout. An absent graph
-may be assigned zero only with a regulator- and gauge-specific proof.
+root and perturbative order, gauge dependence, UV/IR/rapidity/basis and b
+dependence, x support where applicable, source/derivation hash, implementation
+hash, symbolic derivation, numerical implementation, cancellation partners,
+and holdout. An absent graph may be assigned zero only with a regulator- and
+gauge-specific proof.
 
 The sum must demonstrate Hermitian conjugation, exact color-singlet
 normalization, T-even future/past equality, transverse-rotation covariance,
@@ -145,6 +156,12 @@ Construct an explicit compatibility matrix for gauge group/representation,
 four-line geometry, b measurement, Fourier convention, UV target scheme,
 modified-delta convention, IR prescription, boundary/zero-mode treatment,
 overlap region, and regulator-removal order.
+
+Materialize this matrix as one content-addressed joint-regulator object that
+contains the complete C32 and C33 regulator IDs, measurement and Fourier IDs,
+gauge/IR/rapidity/removal-order identities, compatibility decision, overlap
+map, and explicit remainder ID. Distributed declarations do not by themselves
+close the joint-regulator requirement.
 
 Evaluate the C32 collinear operator's soft limit with the same IR and rapidity
 prescriptions and validate

@@ -1,5 +1,13 @@
 # C33 unresolved physics gaps
 
+Volume XXI is now integrated at
+`references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex`
+and mapped requirement-by-requirement in
+`docs/next_level/c33_volume_xxi_requirement_crosswalk.json`. It formalizes
+these gaps and the C33/C34 boundary; it does not itself provide a finite-basis
+one-loop matrix element, counterterm, trajectory, or matching kernel. The
+unresolved statuses below therefore remain unchanged.
+
 1. The `S0-FB-EIKONAL-FOCK` plan is selected structurally, but no interacting
    finite-basis soft Hamiltonian, complete one-gluon mode sum, or regulator-
    specific matrix element has been evaluated. The three frozen structural
@@ -19,13 +27,21 @@
    counterterm, cusp/endpoint factors, vacuum subtraction, and residual line
    mass are uncalculated.
 
+   Volume XXI additionally requires the one-loop expansion normalization to be
+   frozen explicitly (`alpha_s`, `alpha_s/(4*pi)`, or another declared
+   convention) before coefficients are compared. C33 records perturbative
+   order but does not yet provide that normalization for an evaluated graph.
+
 5. The modified-delta dependence is represented at the sign/denominator level,
    but its finite-basis rapidity counterterm, rapidity-renormalized soft factor,
    rapidity anomalous dimension, and Collins-Soper/D-function are uncalculated.
 
 6. Gauge independence at `xi_g=0,1,2`, T-even future/past equality,
    Hermitian-conjugation closure, and transverse-rotation closure have not been
-   tested for a one-loop finite-basis sum.
+   tested for a one-loop finite-basis sum. The current physical-polarization
+   cell basis is not by itself a covariant-gauge completeness proof; C34 must
+   supply a BRST/Krein/ghost completion or a rigorously equivalent
+   gauge-complete contraction formulation.
 
 7. Three nested resolution records exist, but no one-loop values exist on them.
    UV logs, finite constants, IR and rapidity-window sensitivity, finite-volume
@@ -48,7 +64,9 @@
 11. The C32/C33 contract establishes separate B=1 and B=0 roots and a typed
     measurement/count-once interface, but rapidity-regulator and overlap
     equivalence is unresolved. The exact status is
-    `SOFT_COLLINEAR_COMPATIBILITY_UNRESOLVED`.
+    `SOFT_COLLINEAR_COMPATIBILITY_UNRESOLVED`. Volume XXI requires these
+    distributed identities to be assembled into one content-addressed joint-
+    regulator object before compatibility can close.
 
 12. The zero-bin interface is `DEFINED_NOT_VALIDATED`. No C32 one-loop
     collinear coefficient exists, and the frozen spacelike off-shell IR plan is
@@ -70,6 +88,8 @@
 The implementation and regression anchors are
 `src/deuteron_wigner/bridge/s0/core.py`, `tests/test_c33_s0.py`,
 `scripts/build_c33_manifests.py`, and `scripts/validate_c33.py`. The completed
-C33 record has 1,196 passing tests, 2,140 requirements, 2,040 detected
+C33 record had 1,196 passing tests before the Volume XXI integration test,
+with 2,140 package requirements, 2,040 detected
 injections across 92 fault modes, and passing C28-C33 validators; the pre-C33
-baseline was 1,167 tests.
+baseline was 1,167 tests. The post-integration suite contains 1,197 passing
+tests; no scientific status changed.
