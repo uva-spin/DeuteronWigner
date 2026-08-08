@@ -271,6 +271,14 @@ projection interfaces.  It remains matrix-free by design: C44/HQCD must
 evaluate the source-normalized finite-basis overlaps before the C40 method
 oracle can be superseded.
 
+C44/HQCD performs the mandated action-to-mode preflight.  The C43 contract
+freezes physical C32 resolution labels but has no unique finite longitudinal
+cell/measure, normalized oscillator-mode/phase, source-to-overlap spinor and
+polarization map, or global color/zero-mode colored-probe completion.  It
+therefore records `C44_MODE_PROJECTION_INCOMPLETE` without committing
+provisional numerical QCD arrays; C45/MODES must close these exact projection
+inputs before C44 can be rerun.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

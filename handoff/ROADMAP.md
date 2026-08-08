@@ -2614,3 +2614,16 @@ interfaces. No numerical QCD matrices are generated.
 finite basis and construction of regulator-identical q/qg Hamiltonians,
 SU(3) vertices, constrained sectors, Wilson/bilocal operators, and refinement
 maps.
+
+## C44/HQCD — physical finite-mode projection preflight
+
+Status: **completed locally as Branch A fail-closed.** C43 locks the action
+and physical trajectory but intentionally exposes only projection interfaces;
+it lacks the source-qualified finite longitudinal measure, normalized
+oscillator functions/phases, source-to-overlap spinor/polarization map, and
+global-color/zero-mode projection required for unique numerical matrices.
+
+**Exact outcome:** `C44_MODE_PROJECTION_INCOMPLETE`.
+
+**Exact next package:** C45/MODES — close those four finite-projection
+contracts before regenerating C44/HQCD. No C40 matrix may fill the gap.
