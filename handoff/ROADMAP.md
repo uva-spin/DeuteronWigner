@@ -2568,3 +2568,18 @@ and 96 focused numerical fault tests prevent metadata-only substitution.
 spacelike correlator and common-IR partonic matching difference using C40
 runtime arrays.  It must not use the synthetic C40 counterterm RHS as a
 physical result or apply anything to the proton/ART25 bridge.
+
+## C41/R2B — C40 regulator-identity audit
+
+Status: **completed locally as Branch B fail-closed.** C41 audited every C40
+numerical input before a one-loop calculation.  All required arrays are
+executable, but each is a locally defined method/toy recipe rather than a
+source-derived, regulator-identical realization of the C36 spacelike
+operator.  No C40 object is eligible to enter a physical diagram.
+
+**Exact outcome:** `C41_C40_SUBSTRATE_NOT_REGULATOR_IDENTICAL`.
+
+**Exact next package:** C42/M0C — source-derived correction of the C40
+Hamiltonian, constrained, Wilson, measurement, counterterm, and refinement
+operators.  No correlator, matching coefficient, proton export, or bridge is
+authorized until this identity gate closes.

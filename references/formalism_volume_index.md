@@ -248,6 +248,14 @@ one-loop coefficient, soft factor, matching kernel, proton TMD, bridge,
 inference object, or production route.  C41/R2B is the first permitted bare
 correlator calculation consuming these arrays.
 
+C41/R2B audits that permission before attempting a diagram.  The C40 arrays
+are executable numerical method scaffolding but have no source-qualified,
+regulator-identical derivation for the C36 finite-basis Hamiltonian, vertex,
+constrained sectors, Wilson geometry, measurements, counterterms, or
+refinement maps.  C41 therefore records
+`C41_C40_SUBSTRATE_NOT_REGULATOR_IDENTICAL`, with empty-not-zero downstream
+calculation records and C42/M0C as the targeted correction branch.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256
