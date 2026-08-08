@@ -2508,3 +2508,20 @@ finite-basis matching result.
 calculation, universal soft subtraction, and finite-basis LF-to-project
 matching. Do not export a proton TMD or rerun the bridge until that package
 closes its regulator-specific calculation gates.
+
+## C37/R2 — finite-basis partonic matching prerequisite audit
+
+Status: **completed locally with exact Branch C37 finite-basis no-go.**
+
+C37 held the C36 `O4-SPACELIKE-COLLINS-JMY` operator fixed and reproduced the
+C35/C36 validators and 98 focused tests. The prerequisite audit found no
+materialized regulator-identical finite-basis spacelike Wilson insertion,
+common-IR partonic external-state realization, full instantaneous/boundary/
+zero-mode/Hamiltonian/operator-counterterm sector, discrete distributional
+map, or basis trajectory. No coefficient was evaluated or inferred.
+
+**Exact outcome:** `C37_FINITE_BASIS_COLLINEAR_ONE_LOOP_UNAVAILABLE`.
+
+**Exact next package:** C38/M0A — finite-basis spacelike Wilson insertion,
+partonic states, and counterterm construction. No proton export or bridge is
+authorized.

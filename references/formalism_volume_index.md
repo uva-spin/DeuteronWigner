@@ -231,6 +231,11 @@ This architecture decision supplies neither a finite-basis one-loop soft
 coefficient nor a matching kernel, and it does not alter C11--C35 historical
 formal claims.
 
+C37/R2 preserves that C36 spacelike architecture but finds the required
+finite-basis regulator realization absent before a partonic one-loop matching
+difference can be calculated. It therefore records a fail-closed C37 no-go,
+not a finite-basis coefficient or a modification of Volume XXI.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256
