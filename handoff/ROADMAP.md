@@ -2460,3 +2460,51 @@ Freeze the replacement operator, finite gauge theory, modes, Wilson geometry,
 rapidity action, singular-cell prescription, zero modes, boundaries, and
 ordered regulator limits before reopening the eighteen one-loop slots. Do not
 fill the unavailable C35 descriptor or import the continuum coefficient.
+
+## C36/O4 — gauge-invariant finite-rapidity replacement regulator architecture
+
+Status: **completed locally; validation-only architecture decision.**
+
+C36 preserves C35 as the exact finite-delta modified-delta no-go certificate
+(`C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE`; Ward defect
+`0.2143273`) and does not reopen its one-loop slots. It selects the unique
+physical `O4-SPACELIKE-COLLINS-JMY` family before coefficient evaluation. The
+new versioned `C36_GAUGE_INVARIANT_FINITE_RAPIDITY_TMD_ROOT` contains paired,
+common-regulator descendants `C36_COLLINEAR_ROOT` (B=1) and
+`C36_SOFT_ROOT` (B=0). The universal soft operator remains outside the
+hadron TTN and `NO_JOINT_MEASURE` remains unchanged.
+
+The selected spacelike Wilson geometry has finite \(v^2,\bar v^2<0\),
+explicit endpoint and transverse closure, a source-qualified Collins/JMY
+rapidity invariant and limit order, and a finite-regulator gauge/Ward
+identity with zero analytic residual. The auxiliary-field construction is
+recorded only as a representation of the same selected geometry. Exponential,
+finite-length, and dressed-field alternatives are retained as scoped audits,
+not summed soft sectors. Continuum tree/one-loop records are source-qualified
+operator oracles only; no finite-basis one-loop coefficient, counterterm,
+microscopic TMD, bridge point, or hadron-level matching ratio is issued.
+
+All twelve C11 u, d, ubar, and dbar parents reduce exactly at zero coupling;
+this is not one-loop matching. The selected next calculation is a
+state-independent partonic difference in the shared finite-rapidity scheme.
+ART25 members/data/chi2, bridge residuals, inference, and production are
+isolated. The 216 production routes, eight authoritative artifacts, and 642
+ART25 identities remain unchanged.
+
+Reproduce with:
+
+```bash
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c36_manifests.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/validate_c36.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q tests/test_c36_o4.py
+PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest -q
+```
+
+**Exact outcome:** `C36_REPLACEMENT_REGULATOR_ARCHITECTURE_READY` and
+`C36_SPACELIKE_FINITE_RAPIDITY_ARCHITECTURE_VALIDATED`, without a
+finite-basis matching result.
+
+**Exact next package:** C37/R2 — spacelike finite-rapidity partonic collinear
+calculation, universal soft subtraction, and finite-basis LF-to-project
+matching. Do not export a proton TMD or rerun the bridge until that package
+closes its regulator-specific calculation gates.

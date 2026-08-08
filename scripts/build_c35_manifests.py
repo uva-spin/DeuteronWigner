@@ -223,6 +223,13 @@ C34_CONTROLLED_MAINTENANCE_PATHS = {
     ),
 }
 
+# The roadmap and volume index are append-only handoff ledgers.  A later
+# package must not make a historical C35 rebuild nondeterministic merely by
+# recording its own completion.  Pin their C35-completion bytes here, exactly
+# as C35 already pins the C34 reconstruction inputs.
+C35_FROZEN_LIVING_INPUTS = {"handoff/ROADMAP.md", "references/formalism_volume_index.md"}
+C35_COMPLETION_COMMIT = "bbefd963ea14bf79884ec3a5c1a503581a6dd21e"
+
 
 def file_sha(path: Path) -> str:
     return sha256(path.read_bytes()).hexdigest()
@@ -1125,7 +1132,16 @@ def main(final_test_count: int = 1265) -> None:
         "payload_hash_verified": True,
     })
 
-    normative_rows = [{"path": path, "sha256": file_sha(ROOT / path), "present": True, "read_and_hash_audited": True} for path in NORMATIVE_PATHS]
+    normative_rows = []
+    for path in NORMATIVE_PATHS:
+        historical = path in C35_FROZEN_LIVING_INPUTS
+        payload = git_bytes(C35_COMPLETION_COMMIT, path) if historical else (ROOT / path).read_bytes()
+        normative_rows.append({
+            "path": path,
+            "sha256": sha256(payload).hexdigest(),
+            "present": True,
+            "read_and_hash_audited": True,
+        })
     put("c35_normative_source_integration.json", {
         "schema_version": "1.0.0",
         "resolved_c34_completion": git_output("rev-parse", C35_BASELINE_COMMIT),

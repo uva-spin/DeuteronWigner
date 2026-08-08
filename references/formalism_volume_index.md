@@ -220,6 +220,17 @@ next package is C35/S0C, which must supply the missing gauge-complete mode
 realization and calculate the targeted diagrams and counterterms before any
 later rapidity, trajectory, conversion, or zero-bin claim can close.
 
+C36/O4 adds no new formal volume and leaves Volume XXI byte-identical at
+SHA-256 `613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4`.
+It records a versioned correction to the microscopic regulator architecture:
+the C35 modified-delta construction remains a downstream continuum target,
+while a finite spacelike Wilson-line collinear/soft pair is selected as the
+gauge-covariant microscopic operator family. The source-qualified C36
+crosswalk is `docs/next_level/c36_volume_xxi_requirement_crosswalk.json`.
+This architecture decision supplies neither a finite-basis one-loop soft
+coefficient nor a matching kernel, and it does not alter C11--C35 historical
+formal claims.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

@@ -1,0 +1,139 @@
+{
+  "all_hash_locked": true,
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "5f112dd8042ee26b8b7d89674b1d299628f7f1a51b1bfd0597d46400f2ef7df2",
+  "count": 15,
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "sources": [
+    {
+      "classification": "FINITE_RAPIDITY_OPERATOR_AUTHORITY",
+      "path": "data/raw/c36_sources/hep-ph-0404183.pdf",
+      "purpose": "JMY off-light-cone TMD and soft subtraction",
+      "sha256": "4a867611d7479b66e776129a4c490a736f5a2a5fadc0fdb89c48dfb9c975c44e",
+      "source_id": "ARXIV:hep-ph/0404183v1",
+      "used_for_plan_selection": true
+    },
+    {
+      "classification": "CONTINUUM_SCHEME_EQUIVALENCE_AUTHORITY",
+      "path": "data/raw/c36_sources/1210.2100.pdf",
+      "purpose": "Collins/EIS definition equivalence and MSbar alignment",
+      "sha256": "bc4651d9aa0eb24a0deee3fc70478b3743763535513988f3bf693f52fddb172a",
+      "source_id": "ARXIV:1210.2100v1",
+      "used_for_plan_selection": true
+    },
+    {
+      "classification": "NOT_OPERATOR_REGULATOR_IDENTICAL",
+      "path": "data/raw/c31_sources/1511.05590.pdf",
+      "purpose": "downstream modified-delta target only",
+      "sha256": "dda565928e2a52997da094a156b286b31741184e47398d2efaa801a9a97e573d",
+      "source_id": "ARXIV:1511.05590v2",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "EXPONENTIAL_REGULATOR_AUTHORITY",
+      "path": "data/raw/c33_sources/1604.00392.pdf",
+      "purpose": "exponential rapidity regulator",
+      "sha256": "6a0cd0f3c64d06c69a09c62151196113650daee09b4953b948b420cb5af364e9",
+      "source_id": "ARXIV:1604.00392v1",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "GAUGE_INVARIANT_SOFT_AUTHORITY",
+      "path": "data/raw/c36_sources/2312.05957.pdf",
+      "purpose": "scoped relation of off-light-cone, finite-length and exponential soft factors",
+      "sha256": "3e6252499707e1a31996d5013ac78e76b04185c4d50881fe83776e94f70bcc61",
+      "source_id": "ARXIV:2312.05957v6",
+      "used_for_plan_selection": true
+    },
+    {
+      "classification": "AUXILIARY_FIELD_REALIZATION_AUTHORITY",
+      "path": "data/raw/c33_sources/2312.04315.pdf",
+      "purpose": "spacelike auxiliary-field direction map",
+      "sha256": "171278778c2d5f8da64f46119dbeb417a23f305ccb4512ba229ff172ea651d75",
+      "source_id": "ARXIV:2312.04315v3",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "METHOD_ONLY",
+      "path": "data/raw/c33_sources/2412.12645.pdf",
+      "purpose": "exploratory auxiliary-field lattice realization",
+      "sha256": "c95b8dc6175eb7315607f348c19b5c68de779291a79c49bc3cae85d726695e12",
+      "source_id": "ARXIV:2412.12645v1",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "METHOD_ONLY",
+      "path": "data/raw/c36_sources/2603.03814.pdf",
+      "purpose": "preliminary CS-kernel extraction, not a project result",
+      "sha256": "76dea5405479873ff219e5b056c1ffea30c6df0c62714a9da36d0c0757c5e053",
+      "source_id": "ARXIV:2603.03814v1",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "AUXILIARY_FIELD_REALIZATION_AUTHORITY",
+      "path": "data/raw/c33_sources/2002.09408.pdf",
+      "purpose": "line residual mass, endpoints and piecewise paths",
+      "sha256": "5e328c3cd67cdffb99aead25513e60cbb05f4a30f002475a17fe9026e197b3d8",
+      "source_id": "ARXIV:2002.09408v2",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "FINITE_CUTOFF_RENORMALIZATION_AUTHORITY",
+      "path": "data/raw/c33_sources/1711.00543.pdf",
+      "purpose": "finite-cutoff Wilson-line renormalization",
+      "sha256": "2fe48ae02205ab71a15022b64894119bf63953f7c5da80e5f1475a617b41bab3",
+      "source_id": "ARXIV:1711.00543v1",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "TRANSVERSE_LINK_AUTHORITY",
+      "path": "data/raw/c36_sources/1009.2776.pdf",
+      "purpose": "T Wilson line in singular gauges",
+      "sha256": "340ead5e85260fc0c7f9193a925cd0c44a9b826d96577e619cca2235c03916b5",
+      "source_id": "ARXIV:1009.2776v2",
+      "used_for_plan_selection": true
+    },
+    {
+      "classification": "TRANSVERSE_LINK_AUTHORITY",
+      "path": "data/raw/c36_sources/1104.0686.pdf",
+      "purpose": "T-Wilson line in light-cone gauge",
+      "sha256": "3ba3bea0e2d9247a35e6be08f0c7dd9a98fd2ce5803d22004c2cfc8b41d7c4a4",
+      "source_id": "ARXIV:1104.0686v1",
+      "used_for_plan_selection": true
+    },
+    {
+      "classification": "METHOD_ONLY",
+      "path": "data/raw/c36_sources/1910.11415.pdf",
+      "purpose": "LaMET soft-function methodology",
+      "sha256": "4cb54c7d4bc2953355615ee0980d5f452dff22a20f3fec40512179494406dc39",
+      "source_id": "ARXIV:1910.11415v1",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "METHOD_ONLY",
+      "path": "data/raw/c31_sources/1911.03840.pdf",
+      "purpose": "large-momentum matching methodology",
+      "sha256": "6aae86ff8c382f1ebb2adae27f85c5f32d8ac191e7924742235028c2180009d9",
+      "source_id": "ARXIV:1911.03840v1",
+      "used_for_plan_selection": false
+    },
+    {
+      "classification": "DRESSED_FIELD_ALTERNATIVE_AUTHORITY",
+      "path": "data/raw/c36_sources/2311.01391.pdf",
+      "purpose": "dressed-field quasi-TMD alternative",
+      "sha256": "8ba2caf83d616373774d16fba316a4a94fca605781b6aafbb6679cc345870612",
+      "source_id": "ARXIV:2311.01391v3",
+      "used_for_plan_selection": false
+    }
+  ],
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}
