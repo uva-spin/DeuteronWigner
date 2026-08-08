@@ -2525,3 +2525,20 @@ map, or basis trajectory. No coefficient was evaluated or inferred.
 **Exact next package:** C38/M0A — finite-basis spacelike Wilson insertion,
 partonic states, and counterterm construction. No proton export or bridge is
 authorized.
+
+## C38/M0A — finite-basis partonic matching-probe infrastructure
+
+Status: **completed locally; C39 infrastructure gate ready.**
+
+C38 keeps the C36 spacelike scheme fixed and materializes a separate
+color-fundamental, nonhadronic matching-probe root with normalized q/qg
+sectors, common mass IR prescription, finite-basis spacelike Wilson path and
+transverse closure, constrained/boundary/zero-mode records, counterterm
+conditions, discrete distribution functional, and trajectory interfaces.
+Tree/first-order infrastructure pilots pass. No one-loop matching kernel,
+proton TMD, bridge comparison, ART25 input, or production route is created.
+
+**Exact outcome:** `C38_FINITE_BASIS_PARTONIC_INFRASTRUCTURE_READY`.
+
+**Exact next package:** C39/R2B — execute the finite-basis one-loop spacelike
+collinear correlator, soft/overlap subtraction, renormalization, and matching difference.
