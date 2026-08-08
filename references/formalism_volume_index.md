@@ -263,6 +263,14 @@ It records `C42_GAUGE_FIXED_ACTION_INCOMPLETE`; no C42 matrix is generated,
 and C43/G0 must close this source/action prerequisite before any source-derived
 replacement can supersede the C40 method oracle.
 
+C43/G0 closes that source lock and derives an action-level, light-front-gauge
+contract at the q/qg perturbative scope.  It fixes (A^+=0), the constrained
+fermion and gauge fields, nonzero-mode PV inverse derivative, residual
+transverse link, zero-mode policy, JMY compatibility, and C32 physical-basis
+projection interfaces.  It remains matrix-free by design: C44/HQCD must
+evaluate the source-normalized finite-basis overlaps before the C40 method
+oracle can be superseded.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

@@ -2598,3 +2598,19 @@ action.  No C42 source-derived matrix may therefore be made.
 **Exact next package:** C43/G0 — hash-lock the required primary authorities
 and complete one finite-basis gauge action, constraints, residual-gauge
 fields, and zero modes before rebuilding the C42 replacements.
+
+## C43/G0 — source-locked light-front gauge action
+
+Status: **completed locally.** C43 acquired and hash-locked BPP v1,
+Srivastava--Brodsky v2, BJY v2, JMY v1, and two supporting audits.  It selects
+light-front gauge (A^+=0), defines the nonzero-mode PV inverse derivative,
+constraints, instantaneous interactions, residual transverse link, zero-mode
+contract, JMY compatibility, and physical C32 finite-basis projection
+interfaces. No numerical QCD matrices are generated.
+
+**Exact outcome:** `C43_GAUGE_FIXED_ACTION_READY_FOR_BASIS_PROJECTION`.
+
+**Exact next package:** C44/HQCD — source-derived projection into the physical
+finite basis and construction of regulator-identical q/qg Hamiltonians,
+SU(3) vertices, constrained sectors, Wilson/bilocal operators, and refinement
+maps.
