@@ -256,6 +256,13 @@ refinement maps.  C41 therefore records
 `C41_C40_SUBSTRATE_NOT_REGULATOR_IDENTICAL`, with empty-not-zero downstream
 calculation records and C42/M0C as the targeted correction branch.
 
+C42/M0C finds a prior authority gate: the repository lacks exact locked copies
+of the primary light-front QCD Hamiltonian and residual-gauge transverse-link
+authorities required to choose and derive a complete finite-basis gauge action.
+It records `C42_GAUGE_FIXED_ACTION_INCOMPLETE`; no C42 matrix is generated,
+and C43/G0 must close this source/action prerequisite before any source-derived
+replacement can supersede the C40 method oracle.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

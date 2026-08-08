@@ -2583,3 +2583,18 @@ operator.  No C40 object is eligible to enter a physical diagram.
 Hamiltonian, constrained, Wilson, measurement, counterterm, and refinement
 operators.  No correlator, matching coefficient, proton export, or bridge is
 authorized until this identity gate closes.
+
+## C42/M0C — source-authority and gauge-action gate
+
+Status: **completed locally as Branch A fail-closed.** C42 finds the locked
+Ji–Ma–Yuan source but no repository copies of the required
+Brodsky–Pauli–Pinsky light-front-Hamiltonian authority or
+Belitsky–Ji–Yuan residual-gauge/transverse-link authority.  C36 supplies the
+spacelike operator architecture, not a complete finite-basis gauge-fixed QCD
+action.  No C42 source-derived matrix may therefore be made.
+
+**Exact outcome:** `C42_GAUGE_FIXED_ACTION_INCOMPLETE`.
+
+**Exact next package:** C43/G0 — hash-lock the required primary authorities
+and complete one finite-basis gauge action, constraints, residual-gauge
+fields, and zero modes before rebuilding the C42 replacements.
