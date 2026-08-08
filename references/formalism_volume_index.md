@@ -279,6 +279,16 @@ therefore records `C44_MODE_PROJECTION_INCOMPLETE` without committing
 provisional numerical QCD arrays; C45/MODES must close these exact projection
 inputs before C44 can be rerun.
 
+C45/MODES closes those four finite-projection contracts without projecting an
+action. It source-locks the BLFQ compactification and oscillator authorities,
+uses the fixed C43 coordinate/gauge convention, and distinguishes the C7
+endpoint regulator `x_min=1/18` from finite-cell mode support `x=k/K`.
+Its executable outputs are one-particle mode evaluations, overlaps, spinor
+and polarization samples, a color-only `3 tensor 8 -> 3` projector, and
+zero-mode projectors. The colored object is an open, gauge-fixed amputated
+module rather than a physical colored finite-volume state. C46/HQCD alone may
+combine these ingredients with the C43 action; C40 remains method-oracle only.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

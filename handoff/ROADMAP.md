@@ -2627,3 +2627,21 @@ global-color/zero-mode projection required for unique numerical matrices.
 
 **Exact next package:** C45/MODES — close those four finite-projection
 contracts before regenerating C44/HQCD. No C40 matrix may fill the gap.
+
+## C45/MODES — source-qualified finite one-particle mode projection
+
+Status: **completed locally.** C45 hash-locks BLFQ v1 authorities 0905.1411
+and 1311.2980, maps their compactification to the fixed C43 square-root-two
+coordinates, and creates only deterministic one-particle ingredients:
+longitudinal quark/gluon tables, normalized 2D-HO evaluations and overlap
+matrices, spinor/polarization overlap samples, the color-triplet projector,
+and ordinary/constrained zero-mode projectors. The inherited `x_min=1/18`
+remains the C7 endpoint regulator; it is explicitly distinct from the
+finite-mode lower support `1/(2K)`.
+
+**Exact outcome:** `C45_SOURCE_DERIVED_MODE_PROJECTION_READY`.
+
+**Exact next package:** C46/HQCD — project the C43 action into physical q/qg
+bases. C45 contains no physical Hamiltonian, interaction, JMY Wilson,
+bilocal, counterterm, one-loop, proton, bridge, fit, or production object;
+C40 remains `EXECUTABLE_METHOD_ORACLE_ONLY`.
