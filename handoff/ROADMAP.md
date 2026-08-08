@@ -2542,3 +2542,29 @@ proton TMD, bridge comparison, ART25 input, or production route is created.
 
 **Exact next package:** C39/R2B — execute the finite-basis one-loop spacelike
 collinear correlator, soft/overlap subtraction, renormalization, and matching difference.
+
+## C39/R2B — fail-closed C38 implementation correction
+
+Status: **completed locally.** C39 audited the claimed C38 readiness and found
+only structural records, scalar values, and interfaces.  The historical C38
+commit remains unchanged, but its claim is superseded in the descendant record:
+`C38_FINITE_BASIS_PARTONIC_INFRASTRUCTURE_READY ->
+C38_PARTONIC_STRUCTURAL_SCAFFOLD_ONLY`.  The exact C39 outcome is
+`C39_FINITE_BASIS_ONE_LOOP_INCOMPLETE`; no one-loop calculation was invented.
+
+## C40/M0B — executable finite-basis partonic operator substrate
+
+Status: **completed locally.** C40 retains the fixed C36
+`O4-SPACELIKE-COLLINS-JMY` scheme and materializes three color-fundamental q/qg
+numerical bases, Gram matrices, free Hamiltonians and independent matrix-free
+actions, nonzero canonical/adjoint vertices, constrained-sector matrices,
+finite-path spacelike Wilson matrices, counterterm system machinery,
+distributional measurement matrices, and refinement maps.  The numerical gate
+and 96 focused numerical fault tests prevent metadata-only substitution.
+
+**Exact outcome:** `C40_EXECUTABLE_PARTONIC_OPERATOR_SUBSTRATE_READY`.
+
+**Exact next package:** C41/R2B — calculate the finite-basis one-loop
+spacelike correlator and common-IR partonic matching difference using C40
+runtime arrays.  It must not use the synthetic C40 counterterm RHS as a
+physical result or apply anything to the proton/ART25 bridge.

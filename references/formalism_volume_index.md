@@ -236,6 +236,18 @@ finite-basis regulator realization absent before a partonic one-loop matching
 difference can be calculated. It therefore records a fail-closed C37 no-go,
 not a finite-basis coefficient or a modification of Volume XXI.
 
+C39/R2B corrects the C38 readiness claim in a descendant record: the original
+C38 files remain historical, while `C38_FINITE_BASIS_PARTONIC_INFRASTRUCTURE_READY`
+is superseded by `C38_PARTONIC_STRUCTURAL_SCAFFOLD_ONLY`.  It does not invent
+the requested one-loop calculation and records `C39_FINITE_BASIS_ONE_LOOP_INCOMPLETE`.
+
+C40/M0B adds executable numerical substrate rather than a new formalism
+volume: deterministic color-fundamental q/qg coefficient arrays and applied
+operators in the already selected C36 spacelike scheme.  It provides no
+one-loop coefficient, soft factor, matching kernel, proton TMD, bridge,
+inference object, or production route.  C41/R2B is the first permitted bare
+correlator calculation consuming these arrays.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256
