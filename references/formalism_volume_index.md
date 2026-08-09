@@ -461,3 +461,13 @@ ordered qg-ket/q-intermediate/qg-bra contact embedding required to turn C57's
 canonical emission support into a direct-contact graph projector. C59 records
 `C59_IFERM_CONTACT_SUPPORT_INCOMPLETE` rather than creating an arbitrary
 common-support kernel or a qg contact matrix.
+
+## C60 exact qg-embedding support audit
+
+C60 consumes no new formalism volume. It verifies the C58/C59 boundaries but
+finds C47's TM/CM maps are numerical quadrature arrays with subthreshold
+nonzero residues. Because C60 requires source-exact raw component and
+projected-cancellation semantics, C57's floating threshold cannot define the
+direct-contact endpoint relation. C60 records
+`C60_IFSUPPORT_QG_EMBEDDING_INCOMPLETE` and creates no endpoint, witness,
+adjacency, or direct-contact object.

@@ -2919,3 +2919,24 @@ promoting the full qg basis, or consulting C53 values would be unsupported.
 and graph-selection closure. No direct qg contact, complete
 instantaneous-fermion, local-HQCD, TMD, matching, proton, ART25, fit,
 inference, process, or production object is created.
+
+## C60/IFSUPPORT — exact qg-embedding support audit
+
+Status: **fail-closed locally.** C60 preserves the C58 q primitive and C59
+direct-contact source audit read-only. It finds that C47's TM/CM embeddings
+are quadrature-derived floating arrays with 4,032 / 15,840 / 48,048 nonzero
+entries below C57's `1e-12` selection threshold. C57 could use that threshold
+for its canonical support construction, but C60 must distinguish exact raw
+paths, exact projected cancellations, and numerical values without a
+tolerance.
+
+Consequently no absorption/emission relation, witnessed bra--ket support, or
+Boolean adjacency is issued: doing so would turn a numerical cutoff into an
+exact source-level path decision.
+
+**Exact outcome:** `C60_IFSUPPORT_QG_EMBEDDING_INCOMPLETE`.
+
+**Exact next package:** C61/IFQGEMBED — construct an exact/symbolic
+raw-product to intrinsic/CM, CM-ground, and triplet embedding support contract
+before endpoint graph selection. No contact value, matrix, complete
+instantaneous-fermion, or downstream object is created.
