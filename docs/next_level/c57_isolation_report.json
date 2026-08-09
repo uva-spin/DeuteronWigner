@@ -1,0 +1,33 @@
+{
+  "ART25": "not imported",
+  "C40": "poisoned/not imported",
+  "C47_raw_tuples": "poisoned/not imported",
+  "C50_combined": "poisoned/not imported",
+  "C53_values": "poisoned/not imported",
+  "C56_placeholders": "not numerical authority",
+  "failure_controls": [
+    "C45 mode hash",
+    "C47 Nmax",
+    "vacuum",
+    "operation order",
+    "plan",
+    "zero mode",
+    "idempotence",
+    "conditional label"
+  ],
+  "static": {
+    "forbidden": [
+      "assemble_physical_vertex",
+      "evaluate_canonical_vertex",
+      "canonical_kernel",
+      "C40",
+      "ART25",
+      "counterterm",
+      "C53"
+    ],
+    "found": [],
+    "guard": "C57_IFREG_SOURCE_SELECTION_ISOLATION",
+    "pass": true
+  },
+  "status": "PASS"
+}

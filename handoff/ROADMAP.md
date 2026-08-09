@@ -2846,3 +2846,29 @@ self-induced-inertia primitive, counterterm direction/coefficient, direct
 contact, complete instantaneous-fermion operator, C53 sequential substitute,
 JMY/bilocal, matching, proton, ART25, fit, inference, process, or production
 object is created.
+
+## C57/IFREG — conditional finite-HO field-regulator completion
+
+Status: **completed locally.** C57 preserves C56's `IFNORM-UNAVAILABLE`
+decision for a universal field regulator and constructs a new, explicitly
+conditional fixed-​`K` regulator instead. It applies Tang--Brodsky--Pauli's
+same-corresponding-propagating-graph rule to the C45 one-particle field envelope
+and C47 many-body, TM/CM, triplet, and exact `Jz` selections. The result is an
+incoming-quark-indexed finite-rank field projector, a separate qg intermediate
+projector, and finite-rank commutator-kernel samples. It is neither a universal
+field projector nor BPP DLCQ.
+
+The public SLAC-PUB-5425 TBP preprint and the official arXiv:2504.07162v1 PDF
+and source archive are hash-locked. Both establish graph-selection logic, while
+their transverse momentum regulators remain distinct from C45 HO shells. The
+DLCQ-to-HO conversion audit is explicitly `CONVERSION_UNAVAILABLE`; no finite
+part or conversion is imported. The C53 nonzero-support positions are used only
+as a holdout and agree exactly (312, 510, 756 positions).
+
+**Exact outcome:** `C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY`.
+
+**Exact next package:** C58/IFNORM2 — execute the self-induced-inertia
+contraction with the immutable C57 support. No contraction sum or q/qg
+contraction matrix, subtraction, counterterm direction, direct contact, full
+instantaneous operator, local-HQCD/TMD/matching/proton/ART25, fit, inference,
+process, or production object is created.

@@ -1,0 +1,37 @@
+{
+  "definition": "A fixed-total-K conditional finite-HO/Fock regulator: source C45 field modes provide the one-particle envelope; source C47 CM-clean qg Fock projection plus TBP corresponding-propagating selection induce Pi_g,R|alpha. It is not a universal field projector and not BPP DLCQ.",
+  "plans": [
+    {
+      "id": "IFREG-UNIVERSAL-PROJECTED-HO-FIELD",
+      "reason": "the C45 envelope does not encode qg many-body, CM, triplet, or canonical reachability",
+      "status": "REJECTED_AS_PRIMARY"
+    },
+    {
+      "id": "IFREG-FIXED-K-FOCK-PROJECTED-FIELD",
+      "reason": "fixed-K C47 Fock/CM/triplet projection is applied, but TBP graph matching is additionally required",
+      "status": "COMPONENT_OF_SELECTED_PLAN"
+    },
+    {
+      "id": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "reason": "TBP graph matching supplies the conditional support rule; C45/C47 supply the project-specific HO and Fock realization",
+      "status": "SELECTED"
+    },
+    {
+      "id": "IFREG-DLCQ-LONGITUDINAL-HO-TRANSVERSE-HYBRID",
+      "reason": "would create a new hybrid without need; it cannot be named BPP DLCQ",
+      "status": "REJECTED"
+    },
+    {
+      "id": "IFREG-EXACT-DLCQ-TO-HO-CONVERSION",
+      "reason": "source momentum cutoffs and C45 HO shell have no exact finite conversion",
+      "status": "REJECTED"
+    },
+    {
+      "id": "IFREG-UNAVAILABLE",
+      "reason": "C57 provides an honestly conditional regulator rather than claiming a universal one",
+      "status": "REJECTED"
+    }
+  ],
+  "selected": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+  "status": "SELECTED_CONDITIONAL_PROJECTOR"
+}

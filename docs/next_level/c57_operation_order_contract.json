@@ -1,0 +1,33 @@
+{
+  "alternatives": [
+    {
+      "id": "FIELD_PROJECT_THEN_NORMAL_ORDER",
+      "reason": "a universal C45 one-particle envelope exists but cannot by itself encode the fixed-K many-body/CM/triplet propagating support",
+      "status": "REJECTED_AS_PRIMARY"
+    },
+    {
+      "id": "NORMAL_ORDER_THEN_FOCK_PROJECT",
+      "reason": "it leaves the full source commutator in place before the truncation-dependent graph-selection rule",
+      "status": "REJECTED_AS_PRIMARY"
+    },
+    {
+      "id": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "reason": "TBP requires instantaneous and corresponding real intermediate graphs to be retained/cut together; C57 implements this as a fixed-K conditional support",
+      "status": "SELECTED"
+    },
+    {
+      "id": "DLCQ_REGULATE_THEN_CONVERT_TO_HO",
+      "reason": "no finite DLCQ-to-C45-HO conversion is source-qualified",
+      "status": "REJECTED"
+    },
+    {
+      "id": "OPERATION_ORDER_UNAVAILABLE",
+      "reason": "the selected project-specific conditional construction is explicit",
+      "status": "REJECTED"
+    }
+  ],
+  "noncommutativity": "P_R N(A A) P_R - N(P_R A P_R P_R A P_R) contains P_R A (1-P_R) A P_R and its reversed-order commutator term; it vanishes only under an additional closure proof, which is not assumed.",
+  "selected": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+  "selected_definition": "At fixed K, first apply the TBP corresponding-propagating selection to the source canonical q->qg candidate space and C47 Fock/CM/triplet restrictions. The induced conditional field projector is then normal ordered.",
+  "status": "SOURCE_DERIVED_PROJECT_SPECIFIC_ORDER"
+}

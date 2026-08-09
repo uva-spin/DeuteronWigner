@@ -425,3 +425,17 @@ operator-identical DLCQ-to-HO conversion. C56 consequently records
 `IFNORM-UNAVAILABLE`; it creates neither a mode sum nor a self-induced-inertia
 matrix. The required next scope is C57/IFREG, which must close the contracted
 field-mode collection and regulator contract before any projection.
+
+## C57 conditional finite-HO field regulator
+
+C57 consumes no new formalism volume. It preserves the C56 no-go for an
+unqualified universal field regulator, but creates a source-derived
+fixed-​`K`, incoming-quark-indexed conditional field projector by combining
+the TBP corresponding-propagating graph rule with C45 field modes and C47
+fixed-Fock, exact CM, triplet, and `Jz` projectors. The field, intermediate-qg,
+and external-qg spaces remain separate. The projected commutator is a
+finite-rank kernel, not a delta distribution. TBP/BPP DLCQ and the Li et al.
+transverse momentum lattice are retained as distinct regulators;
+`CONVERSION_UNAVAILABLE` is visible. C57 records
+`C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY` and does not evaluate a
+self-induced-inertia contribution.
