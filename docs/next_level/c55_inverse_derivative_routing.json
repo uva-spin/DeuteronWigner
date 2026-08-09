@@ -1,0 +1,25 @@
+{
+  "prescription": "C43 antisymmetric/PV on Q0 only",
+  "routes": [
+    {
+      "denominator": "1/(p_q^+ + k_g^+)",
+      "monomial": "bdagger a_dagger a b",
+      "right_product_mode": "p_q+k_g",
+      "zero_status": "NONZERO_BY_POSITIVITY"
+    },
+    {
+      "denominator": "1/(p_q^+ - k_g'^+)",
+      "monomial": "bdagger a a_dagger b",
+      "right_product_mode": "p_q-k'_g",
+      "zero_status": "NONZERO_BY_APBC_MINUS_PBC_MODE_PARITY; otherwise Q0 contract required"
+    },
+    {
+      "denominator": "exact rational (K-k)/K",
+      "monomial": "q_to_q contraction",
+      "right_product_mode": "p_q-k_g",
+      "zero_status": "NO_EPSILON_CLIPPING_OR_PSEUDOINVERSE; regulator treatment blocked separately"
+    }
+  ],
+  "status": "SOURCE_DERIVED_SYMBOLIC",
+  "zero_mode_policy": "P0/Q0 supplied by C45/C47; a zero denominator must be typed, never deleted"
+}

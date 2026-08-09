@@ -1,0 +1,29 @@
+{
+  "blocks": [
+    {
+      "block": "q_to_q",
+      "classification": "NORMAL_ORDER_CONTRACTION_DIRECTION",
+      "reason": "C55.IFERM.ONE_PAIR_CONTRACTION_REGULATOR_AND_COUNTERTERM_CONTRACT",
+      "status": "ABSENT_BLOCKING"
+    },
+    {
+      "block": "q_to_qg",
+      "classification": "SOURCE_DERIVED_EXECUTABLE_ZERO_BY_EXACT_PROOF",
+      "reason": "W3 carries two gluon fields; normal ordering changes gluon number by 0 or 2, never 1",
+      "status": "EXACT_ZERO_BY_GLUON_NUMBER_PARITY"
+    },
+    {
+      "block": "qg_to_q",
+      "classification": "SOURCE_DERIVED_EXECUTABLE_ZERO_BY_EXACT_PROOF",
+      "reason": "same exact monomial algebra",
+      "status": "EXACT_ZERO_BY_GLUON_NUMBER_PARITY"
+    },
+    {
+      "block": "qg_to_qg",
+      "classification": "SOURCE_DERIVED_EXECUTABLE_NONZERO",
+      "reason": "direct bdagger a_dagger a b contact is distinct from the unresolved q contraction",
+      "status": "PROJECTION_DEFERRED_AFTER_NORMAL_ORDER_BLOCKER"
+    }
+  ],
+  "status": "C55_IFERM_NORMAL_ORDERING_CONTRACT_INCOMPLETE"
+}

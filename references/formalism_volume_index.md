@@ -402,3 +402,13 @@ expression has no source-qualified finite-volume normal-ordered q/qg matrix
 element in the committed authority chain. It therefore records
 `C54_INSTANTANEOUS_FERMION_ASSEMBLY_INCOMPLETE` and leaves all local-QCD
 matrices, nonlocal TMD objects, matching, and hadron applications absent.
+
+## C55 instantaneous-fermion normal-ordering audit
+
+C55 consumes no new formalism volume. It reuses hash-locked SB and BPP primary
+sources to fix the constrained-field/W3 operator, its `g_s^2` extraction, and
+the mandatory normal-ordering treatment. BPP explicitly retains one-pair
+self-induced-inertia contractions, but the committed C45/C47 authority does
+not select their finite-HO regulator/subtraction or counterterm type. C55
+therefore records `C55_IFERM_NORMAL_ORDERING_CONTRACT_INCOMPLETE` without
+constructing any physical instantaneous-fermion matrix.

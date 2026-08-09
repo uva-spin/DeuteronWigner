@@ -2806,3 +2806,21 @@ or projected identity is fabricated.
 instantaneous-fermion matrix completion. No JMY/bilocal/soft/one-loop,
 matching, proton, ART25, fit, inference, process, or production object is
 created.
+
+## C55/IFERM — instantaneous-fermion source and normal-ordering audit
+
+Status: **completed locally as Branch B fail-closed.** C55 source-locks the
+SB constrained equation/instantaneous term and the BPP normal-ordering rule.
+It closes the symbolic `g_s^2` extraction by direct and derivative routes and
+enumerates all 16 field choices (14 non-vacuum monomials). The `a a†`
+one-pair contraction is retained as a distinct self-induced-inertia direction;
+it is neither dropped nor replaced by sequential C53 propagation. The
+authority chain does not yet fix its finite C45/C47-HO regulator/subtraction
+and counterterm typing, so no physical instantaneous matrix is made.
+
+**Exact outcome:** `C55_IFERM_NORMAL_ORDERING_CONTRACT_INCOMPLETE`.
+
+**Exact next package:** C56/IFNORM — operator-monomial, contraction,
+self-induced-inertia, and block-scope completion. No free/current/local
+substrate, nonlocal, one-loop, matching, proton, ART25, fit, inference,
+process, or production object is created.
