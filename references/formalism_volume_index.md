@@ -439,3 +439,15 @@ transverse momentum lattice are retained as distinct regulators;
 `CONVERSION_UNAVAILABLE` is visible. C57 records
 `C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY` and does not evaluate a
 self-induced-inertia contribution.
+
+## C58 source-ordered normal-order contraction
+
+C58 consumes no new formalism volume. It applies C55's retained one-pair
+commutator to C57's immutable conditional finite-HO support. The two ordered
+gauge fields induce `Pi_bra delta Pi_ket`, so Hermiticity follows from source
+ordering and conjugation rather than a numerical average. The finite C45 cell
+normalization cancels symbolic `L` in the q-sector M-squared primitive; its
+qg representation remains counterterm-only because no qgg corresponding
+propagating support is available. C58 records
+`C58_SOURCE_DERIVED_IFERM_NORMAL_ORDERING_READY`, with no direct contact or
+complete instantaneous-fermion operator.

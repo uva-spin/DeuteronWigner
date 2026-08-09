@@ -2872,3 +2872,29 @@ contraction with the immutable C57 support. No contraction sum or q/qg
 contraction matrix, subtraction, counterterm direction, direct contact, full
 instantaneous operator, local-HQCD/TMD/matching/proton/ART25, fit, inference,
 process, or production object is created.
+
+## C58/IFNORM2 — source-ordered normal-order contraction
+
+Status: **completed locally.** C58 imports C57 read-only and reproduces its
+operation order, plan, hashes, 312/510/756 C53-support-position holdout,
+1,216/2,320/3,936 conditional mode unions, and 2,304/4,400/7,488 envelopes.
+The retained C55 `b† a a† b` commutator is projected with the source-ordered
+pair kernel `Pi_bra delta Pi_ket`; its diagonal-mask product is only the
+evaluation of that ordered operator identity, not a support intersection or a
+post-hoc Hermitianization. The bare q-sector `g_s^2` M-squared primitive and
+independent mode-ledger action close at all three resolutions, with symbolic
+`L` cancellation and P0/Q0 controls kept distinct.
+
+The qg self-induced-inertia block is deliberately **not** spectator lifted:
+its sectorwise corresponding-propagating construction requires qgg support,
+which C57 does not own. C58 records the exact sector-specific
+counterterm-only/truncation status, never a zero full-QCD operator. Bare
+retention is selected; no reference subtraction or physical counterterm
+coefficient is chosen.
+
+**Exact outcome:** `C58_SOURCE_DERIVED_IFERM_NORMAL_ORDERING_READY`.
+
+**Exact next package:** C59/IFERM2 — combine the immutable C58 contraction
+with the distinct direct instantaneous qg contact, while resolving qgg support
+before any qg self-induced-inertia matrix is assigned. No TMD, matching,
+proton, ART25, fit, inference, process, or production object is created.

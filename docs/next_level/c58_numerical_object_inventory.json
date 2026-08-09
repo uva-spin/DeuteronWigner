@@ -1,0 +1,74 @@
+{
+  "objects": [
+    {
+      "C57_regulator_plan_ID": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "array_hash": "b01a136ca7e3c49d26a565182d484769d13c81ba0fea4d8c55f1c88c5c47d86c",
+      "basis_order_hash": "0bc30ef96482beeb27c5b88812adec86dc72799ae426e72e457c299b0792813e",
+      "coupling_order": "g_s^2 coefficient",
+      "dtype": "<c16",
+      "expression_hash": "3a75dd0beac4519fd12f45b9ed6c0a0c26c3e7c5c1ba4a50f4f3d40e8a46715b",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c58_ifnorm2_artifacts.py",
+      "matrix_free_residual": 3.5727301234770236e-13,
+      "name": "q_sector_bare_contraction_M2_over_g2",
+      "nnz": 6,
+      "pair_support_plan_ID": "IFNORM2-ORDERED-JOINT-SUPPORT",
+      "qg_sector_plan_ID": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c58_ifnorm2/K9_2_N8_b0.40/q_sector_bare_contraction_M2_over_g2.npy",
+      "shape": [
+        6,
+        6
+      ],
+      "support_hash": "ae17a2eebc232524e2b746fcab6d9977103f2958f6d86cc7abf24838c4b56569",
+      "symbolic_signature": "g_s^2 * b_HO^2 * sum_nu [Pi_beta delta Pi_alpha]_nu (1/2) (T^a T^a)/(k_g (K-k_g))",
+      "units": "GeV^2"
+    },
+    {
+      "C57_regulator_plan_ID": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "array_hash": "d0d00693e5fed0859bfdb4dd90ac036a8176702b8fd2d6c66c350ee39f8b45c7",
+      "basis_order_hash": "3bc93d9d500bf3b1f86f552de955fce2306d213af157558234b8fb23c690ce02",
+      "coupling_order": "g_s^2 coefficient",
+      "dtype": "<c16",
+      "expression_hash": "3a75dd0beac4519fd12f45b9ed6c0a0c26c3e7c5c1ba4a50f4f3d40e8a46715b",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c58_ifnorm2_artifacts.py",
+      "matrix_free_residual": 1.772462348774883e-12,
+      "name": "q_sector_bare_contraction_M2_over_g2",
+      "nnz": 6,
+      "pair_support_plan_ID": "IFNORM2-ORDERED-JOINT-SUPPORT",
+      "qg_sector_plan_ID": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c58_ifnorm2/K11_2_N10_b0.45/q_sector_bare_contraction_M2_over_g2.npy",
+      "shape": [
+        6,
+        6
+      ],
+      "support_hash": "d5446d5f3a2939be8551a684ede62376f36ffc58e9f96eb84ee0f8002d5221b9",
+      "symbolic_signature": "g_s^2 * b_HO^2 * sum_nu [Pi_beta delta Pi_alpha]_nu (1/2) (T^a T^a)/(k_g (K-k_g))",
+      "units": "GeV^2"
+    },
+    {
+      "C57_regulator_plan_ID": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "array_hash": "e38276974520d165d9ff349a9a740f677d996767d44ae60679530ac81f226926",
+      "basis_order_hash": "033a125e7a2b33edb4f5a2e4a8feae996d688b8dec2ecfe742cc61090eefa3fd",
+      "coupling_order": "g_s^2 coefficient",
+      "dtype": "<c16",
+      "expression_hash": "3a75dd0beac4519fd12f45b9ed6c0a0c26c3e7c5c1ba4a50f4f3d40e8a46715b",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c58_ifnorm2_artifacts.py",
+      "matrix_free_residual": 2.670412072097902e-12,
+      "name": "q_sector_bare_contraction_M2_over_g2",
+      "nnz": 6,
+      "pair_support_plan_ID": "IFNORM2-ORDERED-JOINT-SUPPORT",
+      "qg_sector_plan_ID": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c58_ifnorm2/K13_2_N12_b0.50/q_sector_bare_contraction_M2_over_g2.npy",
+      "shape": [
+        6,
+        6
+      ],
+      "support_hash": "72af3ebc2fe6874ac2e50fdfd5d39c72cad904b2700a49837eb83fff927ef8c3",
+      "symbolic_signature": "g_s^2 * b_HO^2 * sum_nu [Pi_beta delta Pi_alpha]_nu (1/2) (T^a T^a)/(k_g (K-k_g))",
+      "units": "GeV^2"
+    }
+  ],
+  "status": "PASS"
+}
