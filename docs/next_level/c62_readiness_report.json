@@ -1,0 +1,46 @@
+{
+  "baseline": "c22c6ab04e79a591aacc5679efd2b0642c3ad4e8",
+  "next": "C63/QGEMBED2 \u2014 exact physical qg embedding and descendant-impact closure",
+  "no_endpoint_or_contact": true,
+  "no_physical_embedding": true,
+  "no_threshold": true,
+  "plan": "QGTM-CIRCULAR-LADDER-PRIMARY",
+  "ready": true,
+  "residue": {
+    "historical_threshold": "diagnostic only",
+    "rows": [
+      {
+        "EXACT_ZERO_QUADRATURE_NOISE": 4032,
+        "GENUINE_SMALL_EXACT_NONZERO": 0,
+        "UNRESOLVED_BLOCKING": 0,
+        "algebraic": 0,
+        "historical_subthreshold": 4032,
+        "m_rule": 4032,
+        "resolution": "K9_2_N8_b0.40",
+        "shell_rule": 0
+      },
+      {
+        "EXACT_ZERO_QUADRATURE_NOISE": 15840,
+        "GENUINE_SMALL_EXACT_NONZERO": 0,
+        "UNRESOLVED_BLOCKING": 0,
+        "algebraic": 0,
+        "historical_subthreshold": 15840,
+        "m_rule": 15840,
+        "resolution": "K11_2_N10_b0.45",
+        "shell_rule": 0
+      },
+      {
+        "EXACT_ZERO_QUADRATURE_NOISE": 48048,
+        "GENUINE_SMALL_EXACT_NONZERO": 0,
+        "UNRESOLVED_BLOCKING": 0,
+        "algebraic": 0,
+        "historical_subthreshold": 48048,
+        "m_rule": 48048,
+        "resolution": "K13_2_N12_b0.50",
+        "shell_rule": 0
+      }
+    ],
+    "status": "PASS_ALL_HISTORICAL_SUBTHRESHOLD_ARE_EXACT_ZEROS"
+  },
+  "status": "C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY"
+}

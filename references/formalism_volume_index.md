@@ -481,3 +481,12 @@ exact C45 polar/circular phase and its basis-order permutation, those arrays
 cannot be used to phase-fit exact TM coefficients. C61 records
 `C61_EXACT_TM_ALGEBRA_INCOMPLETE` and leaves all exact embeddings and support
 certificates unconstructed.
+
+## C62 exact HO/Talmi--Moshinsky algebra
+
+C62 consumes no new formalism volume. From C45 analytic polar modes it derives
+the global polar/circular phase `(-1)^n`, exact circular-ladder brackets, and
+the x-weighted polar TM coefficient. Exact algebra classifies the historical
+C60 subthreshold CM-ground residues as 4,032 / 15,840 / 48,048 `m`-selection
+zeros. C62 records `C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY`; physical qg
+embedding and descendant impact remain a distinct C63 scope.

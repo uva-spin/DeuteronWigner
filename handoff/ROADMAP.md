@@ -2961,3 +2961,21 @@ is therefore issued.
 phase, creation-operator ordering, and C47 basis permutation before exact
 x-weighted brackets are constructed. No endpoint, witness, contact, or
 instantaneous-fermion object is created.
+
+## C62/QGTM — exact HO/Talmi--Moshinsky algebra
+
+Status: **completed locally.** C62 derives the global C45 phase
+`|n,m>_polar=(-1)^n|n_+,n_->_circ`, with `Lz=N_+-N_-`, and constructs exact
+finite-binomial x-weighted two-mode brackets using exact longitudinal
+fractions. The exact polar TM generator has no threshold or phase-fit option;
+historical C47 quadrature rows remain holdouts only.
+
+All C60 CM-ground subthreshold residues are exact `m`-selection zeros:
+4,032 / 15,840 / 48,048, with no genuine small nonzero or unresolved record.
+C62 stops before CM-ground/triplet physical embedding and descendant impact.
+
+**Exact outcome:** `C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY`.
+
+**Exact next package:** C63/QGEMBED2 — combine the exact TM blocks with
+CM-ground/triplet physical embedding and audit C47/C52/C53/C57/C58 impacts
+before any endpoint support is revisited.
