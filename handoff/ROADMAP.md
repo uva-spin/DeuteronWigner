@@ -2741,3 +2741,23 @@ absorption as the emission adjoint, and retain all C47 historical tuples as
 diagnostic-only. No Wilson/bilocal matrix, one-loop result, matching kernel,
 proton TMD, ART25 bridge, fit, inference, process, or production object was
 created.
+
+## C51/VERTEX2 — canonical-vertex component interface audit
+
+Status: **completed locally as Branch D fail-closed.** C51 proves both
+statically and by runtime poisoning that C50's individual evaluator does not
+read C47 raw canonical-tuple values. However, C50's executable interface
+returns only the combined `pminus_GeV`/`m2_GeV2` value. Although its metadata
+names mass-helicity-flip and transverse-helicity components, it supplies no
+per-entry component evaluators or exact symbolic component coefficients. C51
+therefore cannot assemble the required homogeneous component matrices without
+inventing a decomposition. It allocates no colorless, SU(3), physical,
+adjoint, linear-block, or matrix-free vertex object.
+
+**Exact outcome:** `C51_VERTEX_DIMENSIONAL_ASSEMBLY_INCOMPLETE`.
+
+**Exact next package:** C52/VDIM2 — add source-derived component-resolved C50
+outputs and exact symbolic assembly coefficients, then return to exhaustive
+C51 vertex assembly. No remaining local-QCD matrix, Wilson/bilocal matrix,
+one-loop result, matching kernel, proton TMD, ART25 bridge, fit, inference,
+process, or production object was created.

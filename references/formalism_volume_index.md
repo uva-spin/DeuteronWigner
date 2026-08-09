@@ -340,6 +340,16 @@ does not build an exhaustive color-triplet vertex matrix. The exact C50 state
 is `C50_CANONICAL_VERTEX_SOURCE_CONVENTION_READY`; C51/VERTEX2 is required
 for any exhaustive assembly.
 
+C51/VERTEX2 audits that handoff before matrix construction. It verifies that
+the C50 evaluator is statically and dynamically independent of C47's raw
+canonical tuple values, but finds an exact interface gap: C50 names mass and
+transverse components only in metadata while returning a combined numerical
+matrix element with no component-resolved executable values or symbolic
+assembly coefficients. C51 records
+`C51_VERTEX_DIMENSIONAL_ASSEMBLY_INCOMPLETE`; no component, color, physical,
+adjoint, or matrix-free vertex matrix is constructed. C52/VDIM2 must close the
+component interface before C51 can assemble an exhaustive vertex.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256
