@@ -498,3 +498,16 @@ finds its committed downstream contract has no per-block expression/support
 hashes, certified numerical arrays, error bounds, basis-order hashes, or
 runtime paths. C63 records `C63_QGEMBED_C62_IMPORT_INCOMPLETE` rather than
 recreating C62 mutable blocks under a read-only claim.
+
+## C64 exact TM artifact and import-integrity closure
+
+C64 consumes C62's exact algebra without changing its phase, ladder rotation,
+or exact-zero result. It creates a descendant, content-addressed artifact
+layer: 733 shell/m blocks, complete threshold-free status records, canonical
+expression and support hashes, certified sparse numerical enclosures,
+deterministic runtime paths, basis crosswalks, and a C65 read-only import
+contract. The 4,032 / 15,840 / 48,048 historical subthreshold diagnostics are
+materialized separately as exact cross-m-rule zero certificates; neither their
+quadrature values nor the historical 1e-12 cutoff defines support. C64 records
+`C64_SOURCE_DERIVED_EXACT_TM_ARTIFACTS_READY` and constructs no physical qg
+embedding or local-QCD operator.

@@ -2995,3 +2995,22 @@ claiming a read-only C62 import.
 certificates and numerical export contract, then resume C63 CM-ground/triplet
 embedding. No embedding, endpoint, witness, contact, or instantaneous-fermion
 object is created.
+
+## C64/QGTM2 — exact TM artifact and import-integrity closure
+
+Status: **completed locally.** C64 leaves C62's polar/circular convention,
+exact x-weighted brackets, and 4,032 / 15,840 / 48,048 exact-m-rule residue
+classification unchanged. It materializes 733 deterministic shell/m blocks
+over the physical trajectory (171,153 exact coefficient-status records),
+with canonical basis manifests, expression/support hashes, exact-expression
+tables, directed-interval numerical enclosures, deterministic CSR paths, and
+a hash-verifying read-only loader. The historical cross-m diagnostic residues
+are explicit zero-only certificates, never sparse numerical entries or a
+threshold-derived support rule.
+
+**Exact outcome:** `C64_SOURCE_DERIVED_EXACT_TM_ARTIFACTS_READY`.
+
+**Exact next package:** C65/QGEMBED3 — consume the immutable C64 bundle
+read-only to construct the CM-ground/color-triplet physical qg embedding and
+audit descendant impact. No embedding, endpoint, witness, contact, or
+instantaneous-fermion object is created in C64.

@@ -1,0 +1,54 @@
+{
+  "C62_commit": "c22c6ab04e79a591aacc5679efd2b0642c3ad4e8",
+  "C62_plan": "QGTM-CIRCULAR-LADDER-PRIMARY",
+  "C62_status": "C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY",
+  "Lz": "L_z=N_+-N_-",
+  "aggregate_sha256": "c8e664a97b8cc660b478b9f41b54ed74132d531b3ae50efce30795ca7ff7ccab",
+  "files": [
+    {
+      "path": "src/deuteron_wigner/bridge/qgtm/core.py",
+      "sha256": "86a90861dec9aed019faf45042e90cb19a1617bf0b8abccf7f0212f8941d5193"
+    },
+    {
+      "path": "src/deuteron_wigner/bridge/basis1/core.py",
+      "sha256": "4fde22f0ddcc3b098a3b7a0458b07fa956dc74121e44c2549d0072bd428c65bb"
+    },
+    {
+      "path": "src/deuteron_wigner/bridge/modes/core.py",
+      "sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7"
+    },
+    {
+      "path": "docs/next_level/c62_exact_representation_plan.json",
+      "sha256": "0dacee5b90e1c7d35ba37346f16bb5fcf2b8fbd4fd6cef08bec61ab4ad726ea9"
+    },
+    {
+      "path": "docs/next_level/c62_polar_circular_phase_contract.json",
+      "sha256": "e8e12c103c1e9c5dac4b6385137a48d83aace0a0e9827bdbef0e39cdf09b4c27"
+    },
+    {
+      "path": "docs/next_level/c62_exact_two_mode_rotation.json",
+      "sha256": "80b796cb7b58ea1d5b36710f99a7d40d98e1b7278e48e2ec9e75502260492b31"
+    },
+    {
+      "path": "docs/next_level/c62_one_dimensional_bracket_contract.json",
+      "sha256": "80b796cb7b58ea1d5b36710f99a7d40d98e1b7278e48e2ec9e75502260492b31"
+    },
+    {
+      "path": "docs/next_level/c62_exact_polar_tm_contract.json",
+      "sha256": "80b796cb7b58ea1d5b36710f99a7d40d98e1b7278e48e2ec9e75502260492b31"
+    },
+    {
+      "path": "docs/next_level/c62_tm_residue_ledger.json",
+      "sha256": "ef2cb1a34496350e14b7534e1627abbded65b6ec7bc3053ce52ab4a97feed0df"
+    }
+  ],
+  "phase": "|n,m>_polar=(-1)^n |n+max(m,0),n+max(-m,0)>_circ",
+  "schema": "C64-QGTM2-ARTIFACT-V1",
+  "serializer": "C64-SYMPY-SREPR-CANONICAL-V1",
+  "status_vocabulary": {
+    "NONZERO_EXACT_ALGEBRAIC": 3,
+    "ZERO_BY_EXACT_ALGEBRAIC_CANCELLATION": 2,
+    "ZERO_BY_EXACT_M_RULE": 1,
+    "ZERO_BY_EXACT_SHELL_RULE": 0
+  }
+}
