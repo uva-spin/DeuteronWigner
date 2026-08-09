@@ -318,6 +318,17 @@ or fitted normalization is allowed. C49/VERTEX1 must close that exact
 canonical normalization contract before physical local-QCD matrices can be
 claimed.
 
+C49/VERTEX1 audits the requested closure and adds official BLFQ-QCD source
+versions `2503.21372v1` and `2401.03480v1` under hash lock. Neither supplies
+the finite-box C43/C45/C47 open-triplet QCD canonical matrix element: both
+are effective color-singlet hadron models with distinct conventions and
+model/fitted terms. With the C43 continuum action, C45 one-particle modes,
+and C47 N-pion finite-box analogue still not linked by a source-derived QCD
+normalization, every C47 raw tuple is `AMBIGUOUS_BLOCKING`. C49 therefore
+records `C49_CANONICAL_SOURCE_CHAIN_INCOMPLETE` and assigns exact resolution
+to C50/VSRC; no vertex, P-minus-to-M-squared conversion, or color matrix is
+claimed.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

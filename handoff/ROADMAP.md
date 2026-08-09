@@ -2700,3 +2700,23 @@ symbolic-L finite-volume canonical invariant-mass tuple formula before retrying
 local-QCD matrix assembly. No JMY Wilson matrix, bilocal measurement, soft
 subtraction, one-loop result, matching kernel, proton TMD, ART25 bridge, fit,
 inference, process, or production route was created.
+
+## C49/VERTEX1 — canonical source-chain audit
+
+Status: **completed locally as Branch A fail-closed.** C49 preserves all
+3,618 raw C47 canonical tuples byte-for-byte, audits their source semantics,
+and hash-locks two further official BLFQ-QCD sources. The C43 source fixes a
+continuum QCD interaction, C45 fixes one-particle cell modes, and C47 supplies
+an N-pion finite-box analogue and CM-clean basis, but no source gives the
+finite-box C43/C45/C47 open-triplet QCD `q -> qg` matrix element. The newly
+locked QCD-BLFQ papers use distinct conventions and fitted/effective,
+color-singlet hadron models; they cannot fill this regulator-identical gap.
+All raw entries consequently remain `AMBIGUOUS_BLOCKING`, and no dimensional
+patch, P-minus/M-squared conversion, color insertion, or vertex was made.
+
+**Exact outcome:** `C49_CANONICAL_SOURCE_CHAIN_INCOMPLETE`.
+
+**Exact next package:** C50/VSRC — acquire or derive an exact finite-volume
+light-front canonical-vertex source and convention closure before C49 can be
+retried. No remaining local-QCD, Wilson, bilocal, one-loop, matching, proton,
+ART25, fit, inference, process, or production object was created.

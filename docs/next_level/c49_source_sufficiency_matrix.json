@@ -1,0 +1,43 @@
+{
+  "complete_required_rows": 0,
+  "decision": "No source-qualified finite-volume C43/C45/C47 open-triplet canonical P-minus formula exists. It is prohibited to infer it from the N-pion analogue or phenomenological BLFQ Hamiltonians.",
+  "incomplete_required_rows": 5,
+  "required_rows": [
+    {
+      "authority": "hep-ph/0011372v2 Eq. (24)",
+      "available": "continuum canonical QCD interaction and continuum field expansions",
+      "classification": "SOURCE_CHAIN_INCOMPLETE",
+      "id": "C49.SRC.C43_QCD_CANONICAL_ACTION",
+      "missing": "finite-box C43/C45 state normalization and projected open-triplet q-to-qg matrix element"
+    },
+    {
+      "authority": "0905.1411v1 Eqs. (1)-(6),(14); C45 contract",
+      "available": "cell-normalised one-particle longitudinal and HO modes",
+      "classification": "SOURCE_CHAIN_INCOMPLETE",
+      "id": "C49.SRC.C45_FINITE_CELL",
+      "missing": "C43 QCD field-expansion-to-C45 finite-box operator normalization and many-body q-to-qg matrix element"
+    },
+    {
+      "authority": "1911.10762v1 Appendix, Pion absorption Eq. following Eq. (P^-_int; abs)",
+      "available": "finite-volume N-pion interaction and HO integral pattern",
+      "classification": "ANALOGUE_NOT_SUBSTITUTABLE",
+      "id": "C49.SRC.C47_BL_FQ_NPI_ANALOGUE",
+      "missing": "QCD gamma^mu T^a quark-gluon vertex, C43 convention map, C45 polarization normalization, and open triplet color module"
+    },
+    {
+      "authority": "2503.21372v1 Eq. (QCD Hamiltonian) and basis paragraph",
+      "available": "effective QCD BLFQ Hamiltonian description with qqq/qqqg sectors",
+      "classification": "MODEL_NOT_REGULATOR_IDENTICAL",
+      "id": "C49.SRC.2503_QCD_BLFQ",
+      "missing": "normalized q-to-qg matrix element; it uses fitted parameters, a color-singlet hadron module, and a distinct longitudinal convention"
+    },
+    {
+      "authority": "2401.03480v1 Eq. (QCD-Hamiltonian) and basis paragraph",
+      "available": "effective q-qbar/q-qbar-g BLFQ Hamiltonian description",
+      "classification": "MODEL_NOT_REGULATOR_IDENTICAL",
+      "id": "C49.SRC.2401_QCD_BLFQ",
+      "missing": "normalized matrix elements; it includes confinement, counterterm/vertex-mass modelling, a color-singlet meson module, and a distinct longitudinal convention"
+    }
+  ],
+  "status": "C49_CANONICAL_SOURCE_CHAIN_INCOMPLETE"
+}
