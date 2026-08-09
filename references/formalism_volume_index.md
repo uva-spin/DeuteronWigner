@@ -511,3 +511,13 @@ materialized separately as exact cross-m-rule zero certificates; neither their
 quadrature values nor the historical 1e-12 cutoff defines support. C64 records
 `C64_SOURCE_DERIVED_EXACT_TM_ARTIFACTS_READY` and constructs no physical qg
 embedding or local-QCD operator.
+
+## C65 C53 triplet-import integrity audit
+
+C65 imports and verifies C64's exact TM artifacts read-only, but cannot begin
+the physical color-triplet embedding because C53 does not materialize its
+frozen 24-by-3 U3 isometry at a hash-verified runtime path. Its 24-by-3 raw
+emission map is differently normalized and its stored projectors are 24-by-24;
+neither is an admissible substitute. C65 records
+`C65_QG_TRIPLET_EMBEDDING_INCOMPLETE` and creates no physical embedding or
+operator. C66/QGCOLOR2 must close this narrow C53 import contract.

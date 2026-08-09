@@ -3014,3 +3014,20 @@ threshold-derived support rule.
 read-only to construct the CM-ground/color-triplet physical qg embedding and
 audit descendant impact. No embedding, endpoint, witness, contact, or
 instantaneous-fermion object is created in C64.
+
+## C65/QGEMBED3 — C53 triplet-import integrity audit
+
+Status: **fail-closed locally.** C65 verifies the complete C64 read-only
+bundle: 733 blocks, 171,153 exact status records, 67,920 residue certificates,
+immutable arrays, and aggregate hashes. The required C53 24-by-3 frozen
+triplet isometry, however, has only a historical manifest hash and shape; no
+C53-owned hash-verified runtime path exists. The available 24-by-3 raw
+emission map has different normalization, and the available projectors are
+24-by-24, so neither may be silently substituted for read-only U3 import.
+
+**Exact outcome:** `C65_QG_TRIPLET_EMBEDDING_INCOMPLETE`.
+
+**Exact next package:** C66/QGCOLOR2 — materialize the frozen C53 triplet
+isometry and its basis-order/phase/projector-equivalence contract. No CM or
+triplet physical embedding, support, contact, or descendant-impact object is
+created in C65.
