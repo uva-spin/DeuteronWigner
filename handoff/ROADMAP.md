@@ -2898,3 +2898,24 @@ coefficient is chosen.
 with the distinct direct instantaneous qg contact, while resolving qgg support
 before any qg self-induced-inertia matrix is assigned. No TMD, matching,
 proton, ART25, fit, inference, process, or production object is created.
+
+## C59/IFERM2 — direct-contact support audit
+
+Status: **fail-closed locally.** C59 verifies C58 read-only, including its
+ordered pair-support, three 6-by-6 q primitives (six nonzero entries), and
+4,216/8,330/14,484 mode ledgers. It identifies the sole C55 retained direct
+source term, `b† a† a b`, and preserves the exact q-to-qg/qg-to-q zeros and
+the qg self-induced-inertia counterterm-only status.
+
+C55 supplies the direct contact symbolically, while C57 supplies only the
+canonical q-to-qg corresponding-propagating projector. No locked source
+contract maps the two ordered direct-contact fields from a qg ket and qg bra
+through a retained q intermediate. Forming a common support algebraically,
+promoting the full qg basis, or consulting C53 values would be unsupported.
+
+**Exact outcome:** `C59_IFERM_CONTACT_SUPPORT_INCOMPLETE`.
+
+**Exact next package:** C60/IFSUPPORT — source-ordered q-intermediate support
+and graph-selection closure. No direct qg contact, complete
+instantaneous-fermion, local-HQCD, TMD, matching, proton, ART25, fit,
+inference, process, or production object is created.

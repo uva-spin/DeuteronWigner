@@ -451,3 +451,13 @@ qg representation remains counterterm-only because no qgg corresponding
 propagating support is available. C58 records
 `C58_SOURCE_DERIVED_IFERM_NORMAL_ORDERING_READY`, with no direct contact or
 complete instantaneous-fermion operator.
+
+## C59 direct-contact support audit
+
+C59 consumes no new formalism volume. It verifies the C58 q-sector
+self-induced-inertia package as immutable and recovers C55's one retained
+direct `b† a† a b` monomial. The locked artifacts do not yet provide the
+ordered qg-ket/q-intermediate/qg-bra contact embedding required to turn C57's
+canonical emission support into a direct-contact graph projector. C59 records
+`C59_IFERM_CONTACT_SUPPORT_INCOMPLETE` rather than creating an arbitrary
+common-support kernel or a qg contact matrix.
