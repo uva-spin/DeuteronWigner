@@ -2979,3 +2979,19 @@ C62 stops before CM-ground/triplet physical embedding and descendant impact.
 **Exact next package:** C63/QGEMBED2 — combine the exact TM blocks with
 CM-ground/triplet physical embedding and audit C47/C52/C53/C57/C58 impacts
 before any endpoint support is revisited.
+
+## C63/QGEMBED2 — C62 import-integrity audit
+
+Status: **fail-closed locally.** C63 verifies C62's ready status and exact
+4,032 / 15,840 / 48,048 residue classifications, but its committed C63 import
+contract and numerical inventory do not include finite-shell expression and
+support hashes, certified arrays, conservative error bounds, basis-order
+hashes, or runtime paths. C63 may not regenerate these mutable objects while
+claiming a read-only C62 import.
+
+**Exact outcome:** `C63_QGEMBED_C62_IMPORT_INCOMPLETE`.
+
+**Exact next package:** C64/QGTM2 — materialize the exact C62 block/support
+certificates and numerical export contract, then resume C63 CM-ground/triplet
+embedding. No embedding, endpoint, witness, contact, or instantaneous-fermion
+object is created.

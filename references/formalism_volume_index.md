@@ -490,3 +490,11 @@ the x-weighted polar TM coefficient. Exact algebra classifies the historical
 C60 subthreshold CM-ground residues as 4,032 / 15,840 / 48,048 `m`-selection
 zeros. C62 records `C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY`; physical qg
 embedding and descendant impact remain a distinct C63 scope.
+
+## C63 C62 import-integrity audit
+
+C63 consumes no new formalism volume. It preserves the C62 residue result but
+finds its committed downstream contract has no per-block expression/support
+hashes, certified numerical arrays, error bounds, basis-order hashes, or
+runtime paths. C63 records `C63_QGEMBED_C62_IMPORT_INCOMPLETE` rather than
+recreating C62 mutable blocks under a read-only claim.
