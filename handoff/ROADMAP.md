@@ -2720,3 +2720,24 @@ patch, P-minus/M-squared conversion, color insertion, or vertex was made.
 light-front canonical-vertex source and convention closure before C49 can be
 retried. No remaining local-QCD, Wilson, bilocal, one-loop, matching, proton,
 ART25, fit, inference, process, or production object was created.
+
+## C50/VSRC — source-to-vertex convention closure
+
+Status: **completed locally at
+`C50_CANONICAL_VERTEX_SOURCE_CONVENTION_READY`.** C50 retains C49's audit and
+all 3,618 C47 tuples unchanged, but derives the project-specific finite-box
+color-stripped `b† a† b` canonical transition from the C43 action, C45 modes,
+and C47 CM-clean basis maps. The tuple values are never calculation inputs.
+It hash-locks the three specified Abelian BLFQ sources solely for an exact
+no-sqrt(2) convention and normalization cross-check; their historical omitted
+interaction factor of two is an explicit negative control. The C43 conversion
+is `M² = 2 P⁺P⁻ - P⊥²`, with an off-diagonal `P⊥²` term absent between
+orthogonal fixed-total-momentum Fock sectors. Only individual colorless basis
+evaluations are provided: no exhaustive vertex or local-QCD matrix is built.
+
+**Exact next package:** C51/VERTEX2 — assemble the exhaustive physical
+color-triplet canonical-vertex matrix only from the C50 contract, generate
+absorption as the emission adjoint, and retain all C47 historical tuples as
+diagnostic-only. No Wilson/bilocal matrix, one-loop result, matching kernel,
+proton TMD, ART25 bridge, fit, inference, process, or production object was
+created.

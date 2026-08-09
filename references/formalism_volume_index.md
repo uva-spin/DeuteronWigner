@@ -329,6 +329,17 @@ records `C49_CANONICAL_SOURCE_CHAIN_INCOMPLETE` and assigns exact resolution
 to C50/VSRC; no vertex, P-minus-to-M-squared conversion, or color matrix is
 claimed.
 
+C50/VSRC supersedes only that source-chain gap. It source-locks the specified
+Abelian BLFQ QED papers as convention and finite-cell-normalization
+cross-checks, while retaining the C43 action as the sole QCD operator
+authority. From the separately qualified C43 action, C45 modes and C47
+coordinate/CM maps it derives an individual color-stripped finite-volume
+`q -> qg` P-minus evaluator and proves the C43 invariant-mass conversion
+`M²=2P⁺P⁻−P⊥²`. It does not treat any C47 raw tuple as a physical input and
+does not build an exhaustive color-triplet vertex matrix. The exact C50 state
+is `C50_CANONICAL_VERTEX_SOURCE_CONVENTION_READY`; C51/VERTEX2 is required
+for any exhaustive assembly.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

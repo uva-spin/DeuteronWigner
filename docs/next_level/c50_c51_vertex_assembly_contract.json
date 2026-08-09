@@ -1,0 +1,17 @@
+{
+  "may_consume": [
+    "C50 colorless individual kernel",
+    "C45 triplet isometry",
+    "C47 basis maps"
+  ],
+  "must_not_consume": [
+    "C47 raw tuple values",
+    "C40 toy arrays"
+  ],
+  "required_before_matrix": [
+    "all color insertions",
+    "exact one tuple-to-evaluator mapping",
+    "adjoint generated from emission"
+  ],
+  "status": "C51_INPUT_CONTRACT"
+}
