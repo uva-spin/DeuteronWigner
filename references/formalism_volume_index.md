@@ -289,6 +289,14 @@ zero-mode projectors. The colored object is an open, gauge-fixed amputated
 module rather than a physical colored finite-volume state. C46/HQCD alone may
 combine these ingredients with the C43 action; C40 remains method-oracle only.
 
+C46/HQCD audits the attempted step from C45's one-particle library to a
+physical q/qg action projection. It finds that the source-locked BLFQ
+many-body x-scaling and zero-centre-of-mass isometry, the C43 free-operator
+normalization choice, the full finite-volume canonical kernel, and the local
+residual-boundary/zero-mode functional are still absent. It records
+`C46_PHYSICAL_BASIS_ASSEMBLY_INCOMPLETE` rather than inventing q/qg matrices;
+C47/BASIS1 must close those contracts first.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

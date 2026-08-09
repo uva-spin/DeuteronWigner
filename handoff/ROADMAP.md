@@ -2645,3 +2645,21 @@ finite-mode lower support `1/(2K)`.
 bases. C45 contains no physical Hamiltonian, interaction, JMY Wilson,
 bilocal, counterterm, one-loop, proton, bridge, fit, or production object;
 C40 remains `EXECUTABLE_METHOD_ORACLE_ONLY`.
+
+## C46/HQCD — physical q/qg action-projection audit
+
+Status: **completed locally as Branch A fail-closed.** C46 verifies that C45
+is a valid source-derived *one-particle* mode library, but not yet a complete
+physical many-body action-projection contract. The locked BLFQ authority
+requires the x-scaled transverse modes and a zero-centre-of-mass isometry at
+each qg longitudinal partition; these are absent. C43 also leaves the free
+operator representation/normalization unresolved, while the C45 frozen local
+kernel and boundary-zero-mode records cannot define a complete finite-volume
+canonical or constrained matrix element.
+
+**Exact outcome:** `C46_PHYSICAL_BASIS_ASSEMBLY_INCOMPLETE`.
+
+**Exact next package:** C47/BASIS1 — derive x-scaled BLFQ q/qg modes,
+zero-CM projection, finite-volume normalization, all-mode canonical kernel,
+and local boundary/zero-mode action functional before any physical QCD matrix
+is allocated. C40 remains method-oracle only.
