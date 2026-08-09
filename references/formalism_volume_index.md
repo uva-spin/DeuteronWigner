@@ -350,6 +350,17 @@ assembly coefficients. C51 records
 adjoint, or matrix-free vertex matrix is constructed. C52/VDIM2 must close the
 component interface before C51 can assemble an exhaustive vertex.
 
+C52/VDIM2 resolves that interface without promoting C50's metadata names into
+spurious independent operators. The C43 action supplies one additive canonical
+`b†a†b` covariant quark--gluon bilinear; its mass and transverse numerator
+structures remain source-inseparable subterms. C52 gives the bilinear an
+executable symbolic finite-cell coefficient, an independently projected C45/
+C47 primitive, component-wise invariant-mass conversion, and exhaustive
+colorless matrix family. C50 remains an independent recomposition holdout and
+C47 raw-tuple poisoning continues to pass. The exact state is
+`C52_SOURCE_DERIVED_VERTEX_COMPONENT_ASSEMBLY_READY`; C53/VERTEX2 alone may
+perform SU(3)/triplet physical assembly and adjoint closure.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

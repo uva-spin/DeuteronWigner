@@ -2761,3 +2761,23 @@ outputs and exact symbolic assembly coefficients, then return to exhaustive
 C51 vertex assembly. No remaining local-QCD matrix, Wilson/bilocal matrix,
 one-loop result, matching kernel, proton TMD, ART25 bridge, fit, inference,
 process, or production object was created.
+
+## C52/VDIM2 — executable colorless canonical component layer
+
+Status: **completed locally at
+`C52_SOURCE_DERIVED_VERTEX_COMPONENT_ASSEMBLY_READY`.** C52 resolves the C51
+interface gap by returning to the actual C43 action: its canonical `b†a†b`
+term is one additive covariant quark--gluon bilinear. The C50 mass and
+transverse labels are spinor-numerator subterms, not independently qualified
+action terms, so they are not numerically split. C52 supplies immutable
+executable coefficients, independently projected C45/C47 primitives,
+component-wise `P- -> M²` conversion, exhaustive colorless primitive and
+symbolic matrix families, and a direct matrix-free colorless route. C50 is
+used only as a recomposition holdout; raw C47 tuple poisoning remains clean.
+
+**Exact next package:** C53/VERTEX2 — consume C52's ordered colorless
+component family, insert exact SU(3) and the frozen triplet isometry, create
+physical emission and generated adjoint, and close the physical matrix-free
+route. No color/triplet matrix, adjoint, remaining local-QCD matrix,
+Wilson/bilocal object, one-loop result, matching kernel, proton TMD, ART25
+bridge, fit, inference, process, or production object was created in C52.
