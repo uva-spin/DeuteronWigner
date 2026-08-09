@@ -1,0 +1,37 @@
+{
+  "color_regulator_dependence": 0.0,
+  "comparisons": [
+    {
+      "CM_projection_remainder": 0.0,
+      "coefficient_remainder": 0.0,
+      "color_triplet_remainder": 0.0,
+      "executed": true,
+      "from": "K9_2_N8_b0.40",
+      "nonnested_longitudinal_remainder": 1.0,
+      "physical_map_shape": [
+        8100,
+        4032
+      ],
+      "residual": 43.72415513705198,
+      "to": "K11_2_N10_b0.45",
+      "transverse_truncation_remainder": "visible/unfitted"
+    },
+    {
+      "CM_projection_remainder": 0.0,
+      "coefficient_remainder": 0.0,
+      "color_triplet_remainder": 0.0,
+      "executed": true,
+      "from": "K11_2_N10_b0.45",
+      "nonnested_longitudinal_remainder": 1.0,
+      "physical_map_shape": [
+        14256,
+        8100
+      ],
+      "residual": 66.23817274205936,
+      "to": "K13_2_N12_b0.50",
+      "transverse_truncation_remainder": "visible/unfitted"
+    }
+  ],
+  "numerical": 5.8683641485795674e-15,
+  "status": "PASS"
+}
