@@ -307,6 +307,17 @@ longitudinal remainder, and records
 `C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY`. C48/HQCD alone may turn
 these basis/functionals into local action matrices.
 
+C48/HQCD audits that C47-to-local-action handoff before constructing any
+matrix. All consumed C47 runtime hashes and source links reproduce, but the
+canonical tuple object combines `|mrel|=0` and `|mrel|=1` terms with the
+element-dependent declaration `L^(-1/2) GeV^(1+|mrel|)` and has no
+source-derived conversion of the finite-volume canonical `P-` term into a
+single invariant-mass-squared coefficient. C48 therefore records
+`C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE`; no C40 surrogate, arbitrary L,
+or fitted normalization is allowed. C49/VERTEX1 must close that exact
+canonical normalization contract before physical local-QCD matrices can be
+claimed.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

@@ -2680,3 +2680,23 @@ longitudinal common support is empty and its remainder remains explicit.
 into the C43 local action and construct the local-QCD matrices and projected
 action identity. C47 contains no final Hamiltonian, SU(3) vertex,
 instantaneous, Wilson, bilocal, or one-loop matrix.
+
+## C48/HQCD — local-QCD matrix assembly audit
+
+Status: **completed locally as Branch C fail-closed.** C48 verifies the
+source links and deterministic hashes of the C47 free, canonical, CM,
+triplet, PV, and zero-mode runtime objects. It then finds that the committed
+canonical functional mixes `|mrel|=0` and `|mrel|=1` entries while declaring
+the element-dependent unit `L^(-1/2) GeV^(1+|mrel|)`. C47 also provides no
+source-derived C43 finite-volume conversion from the canonical `P-` term to a
+uniform `M^2` coefficient. Inserting SU(3), assigning L, or borrowing C40
+would manufacture rather than derive the vertex, so no local matrix was
+allocated.
+
+**Exact outcome:** `C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE`.
+
+**Exact next package:** C49/VERTEX1 — derive a uniformly normalized,
+symbolic-L finite-volume canonical invariant-mass tuple formula before retrying
+local-QCD matrix assembly. No JMY Wilson matrix, bilocal measurement, soft
+subtraction, one-loop result, matching kernel, proton TMD, ART25 bridge, fit,
+inference, process, or production route was created.
