@@ -297,6 +297,16 @@ residual-boundary/zero-mode functional are still absent. It records
 `C46_PHYSICAL_BASIS_ASSEMBLY_INCOMPLETE` rather than inventing q/qg matrices;
 C47/BASIS1 must close those contracts first.
 
+C47/BASIS1 closes the many-body projection layer from the source-locked
+two-body BLFQ implementation. It uses momentum-fraction-weighted transverse
+variables, finite-shell 2D Talmi--Moshinsky transforms, CM-ground isometries,
+the C43 invariant-mass normalization, all-mode color/coupling-factored local
+kernel tuples, and PV/zero-mode local functionals. It keeps the physical
+half-integer K grids and endpoint regulator distinct, exposes the nonnested
+longitudinal remainder, and records
+`C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY`. C48/HQCD alone may turn
+these basis/functionals into local action matrices.
+
 C35/S0C completes the regulator-definition decision required before that
 calculation. It integrates no new formalism volume and leaves Volume XXI
 unchanged at SHA-256

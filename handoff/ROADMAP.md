@@ -2663,3 +2663,20 @@ canonical or constrained matrix element.
 zero-CM projection, finite-volume normalization, all-mode canonical kernel,
 and local boundary/zero-mode action functional before any physical QCD matrix
 is allocated. C40 remains method-oracle only.
+
+## C47/BASIS1 — intrinsic/CM physical-basis assembly
+
+Status: **completed locally.** C47 hash-locks 1911.10762v1 and derives the
+momentum-fraction-weighted two-body coordinates, finite-shell 2D
+Talmi--Moshinsky blocks, and exact CM-ground isometries. It fixes the C43
+invariant operator as `M^2=2 P+ P- - P_perp^2`, keeps L symbolic, provides
+finite-volume free functionals, exhaustive color/coupling-factored canonical
+kinematic tuples, and local PV/zero-mode functionals. Exact nonnested qg
+longitudinal common support is empty and its remainder remains explicit.
+
+**Exact outcome:** `C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY`.
+
+**Exact next package:** C48/HQCD — insert C47’s physical basis/functionals
+into the C43 local action and construct the local-QCD matrices and projected
+action identity. C47 contains no final Hamiltonian, SU(3) vertex,
+instantaneous, Wilson, bilocal, or one-loop matrix.

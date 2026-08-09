@@ -1,0 +1,40 @@
+{
+  "kernels": [
+    {
+      "entries": 720,
+      "hash": "4aeb27a352fe3446c2b503656e56935fc8bd0f8b6c2bb70f5163f339927410a0",
+      "nnz": 288,
+      "resolution": "K9_2_N8_b0.40",
+      "scope": "all allowed physical q-to-CM-ground-qg mode tuples; SU3 and gs factored; L^(-1/2) symbolic",
+      "tuple_shape": [
+        720,
+        4
+      ]
+    },
+    {
+      "entries": 1170,
+      "hash": "c3e04306e15d903a5dbca560b0504a08f186e2738d04ccb3cbbe96287d470548",
+      "nnz": 450,
+      "resolution": "K11_2_N10_b0.45",
+      "scope": "all allowed physical q-to-CM-ground-qg mode tuples; SU3 and gs factored; L^(-1/2) symbolic",
+      "tuple_shape": [
+        1170,
+        4
+      ]
+    },
+    {
+      "entries": 1728,
+      "hash": "6aab9b8380ee20404ea20dde43986a391cdbbf85c98cff7d17669be6456997ba",
+      "nnz": 648,
+      "resolution": "K13_2_N12_b0.50",
+      "scope": "all allowed physical q-to-CM-ground-qg mode tuples; SU3 and gs factored; L^(-1/2) symbolic",
+      "tuple_shape": [
+        1728,
+        4
+      ]
+    }
+  ],
+  "selection": "K, Jz/helicity, |mrel|<=1 local numerator, nonzero q/g modes",
+  "source": "SB canonical action; 1911.10762v1 Eqs. (111)-(113); C45 spinor/polarization",
+  "status": "SOURCE_COMPLETE_EXECUTABLE"
+}
