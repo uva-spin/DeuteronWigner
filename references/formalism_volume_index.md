@@ -471,3 +471,13 @@ projected-cancellation semantics, C57's floating threshold cannot define the
 direct-contact endpoint relation. C60 records
 `C60_IFSUPPORT_QG_EMBEDDING_INCOMPLETE` and creates no endpoint, witness,
 adjacency, or direct-contact object.
+
+## C61 exact TM phase-contract audit
+
+C61 consumes no new formalism volume. It identifies a valid exact
+circular-ladder route but finds the historical C47 polar-to-Cartesian map fixes
+row phases through numerical quadrature and `argmax` alignment. Without an
+exact C45 polar/circular phase and its basis-order permutation, those arrays
+cannot be used to phase-fit exact TM coefficients. C61 records
+`C61_EXACT_TM_ALGEBRA_INCOMPLETE` and leaves all exact embeddings and support
+certificates unconstructed.

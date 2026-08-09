@@ -2940,3 +2940,24 @@ exact source-level path decision.
 raw-product to intrinsic/CM, CM-ground, and triplet embedding support contract
 before endpoint graph selection. No contact value, matrix, complete
 instantaneous-fermion, or downstream object is created.
+
+## C61/IFQGEMBED — exact TM phase-contract audit
+
+Status: **fail-closed locally.** C61 confirms the candidate exact
+circular-ladder rotation with exact longitudinal fractions, but finds the
+inherited C47 `polar_to_cart_shell` obtains its map through Gauss--Hermite
+quadrature and then applies a per-row numerical `argmax` phase alignment.
+That alignment is not a source-locked C45 polar-to-circular ladder phase or a
+physical-basis permutation.
+
+An exact TM coefficient could not be assigned to the inherited basis order by
+fitting phases to floating quadrature values. No exact coefficient, support
+classification, CM/triplet embedding, residue reconciliation, or impact audit
+is therefore issued.
+
+**Exact outcome:** `C61_EXACT_TM_ALGEBRA_INCOMPLETE`.
+
+**Exact next package:** C62/QGTM — source-lock the polar/circular ladder
+phase, creation-operator ordering, and C47 basis permutation before exact
+x-weighted brackets are constructed. No endpoint, witness, contact, or
+instantaneous-fermion object is created.
