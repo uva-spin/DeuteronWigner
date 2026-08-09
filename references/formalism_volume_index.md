@@ -392,3 +392,13 @@ bridge input, inference object, process/deuteron result, or production route
 is created. The exact next formal work is C36/O4: define a new versioned,
 gauge-complete regulator root and prove its finite-regulator identities and
 operator conversion before reopening the one-loop ledger.
+
+## C54 local-HQCD audit
+
+C54 consumes no new formalism volume. It retains the source-locked C43 action,
+C45 modes, C47 CM-clean basis/functionals, and C53 canonical color vertex. Its
+fail-closed audit establishes that the action-level instantaneous-fermion
+expression has no source-qualified finite-volume normal-ordered q/qg matrix
+element in the committed authority chain. It therefore records
+`C54_INSTANTANEOUS_FERMION_ASSEMBLY_INCOMPLETE` and leaves all local-QCD
+matrices, nonlocal TMD objects, matching, and hadron applications absent.

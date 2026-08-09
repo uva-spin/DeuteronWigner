@@ -1,0 +1,191 @@
+{
+  "checks": {
+    "basis_hashes_present": true,
+    "entry_ancestry_count_match": true,
+    "entry_ancestry_counts": {
+      "K11_2_N10_b0.45": 510,
+      "K13_2_N12_b0.50": 756,
+      "K9_2_N8_b0.40": 312
+    },
+    "entry_ancestry_file_hash": "49d637eba1c063971c7ec53a295c5b4869899b11e2cf4fa7a8d518f6908b5449",
+    "expression_executable": true,
+    "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+    "matrix_free_zero_residual": true,
+    "poisoning_pass": true,
+    "primitive_runtime_hashes": true,
+    "read_only": true
+  },
+  "no_c53_builder_called": true,
+  "no_rescale_or_color_reconstruction": true,
+  "records": [
+    {
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "expected_hash": "57e310693f67418b4e349301c10bc5f7a0944c2fe671b7c6c5fea809aa59b783",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "physical_primitive_K9_2_N8_b0.40",
+      "observed_hash": "57e310693f67418b4e349301c10bc5f7a0944c2fe671b7c6c5fea809aa59b783",
+      "present": true,
+      "resolution": "K9_2_N8_b0.40",
+      "shape": [
+        1344,
+        6
+      ]
+    },
+    {
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "expected_hash": "5827203eff9867df9e32fcef7e6d7ff9749b1adc7870744be4cf9cf136674c84",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "physical_diagnostic_m2_K9_2_N8_b0.40",
+      "observed_hash": "5827203eff9867df9e32fcef7e6d7ff9749b1adc7870744be4cf9cf136674c84",
+      "present": true,
+      "resolution": "K9_2_N8_b0.40",
+      "shape": [
+        1344,
+        6
+      ]
+    },
+    {
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "expected_hash": "71e2f832f23df09d47778e9ae956853c239bf0d9d26639655fd6e2c71376fc83",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "generated_absorption_K9_2_N8_b0.40",
+      "observed_hash": "71e2f832f23df09d47778e9ae956853c239bf0d9d26639655fd6e2c71376fc83",
+      "present": true,
+      "resolution": "K9_2_N8_b0.40",
+      "shape": [
+        6,
+        1344
+      ]
+    },
+    {
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "expected_hash": "generated_only",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "adjoint_identity_K9_2_N8_b0.40",
+      "observed_hash": null,
+      "present": true,
+      "resolution": "K9_2_N8_b0.40",
+      "shape": [
+        6,
+        1344
+      ]
+    },
+    {
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "expected_hash": "0456fd510a0ccad8584bd42c1ee30cb000323e16de721396bc7eccc40b25660e",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "physical_primitive_K11_2_N10_b0.45",
+      "observed_hash": "0456fd510a0ccad8584bd42c1ee30cb000323e16de721396bc7eccc40b25660e",
+      "present": true,
+      "resolution": "K11_2_N10_b0.45",
+      "shape": [
+        2700,
+        6
+      ]
+    },
+    {
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "expected_hash": "af0c13d2d8eb0b1d59ef8d6e31e24df2ecc0b6d8649973c1dd3f6f2f85658816",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "physical_diagnostic_m2_K11_2_N10_b0.45",
+      "observed_hash": "af0c13d2d8eb0b1d59ef8d6e31e24df2ecc0b6d8649973c1dd3f6f2f85658816",
+      "present": true,
+      "resolution": "K11_2_N10_b0.45",
+      "shape": [
+        2700,
+        6
+      ]
+    },
+    {
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "expected_hash": "474a6ac156a89748b7dca25081e220d915883ece5581f3976933e980ed09597a",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "generated_absorption_K11_2_N10_b0.45",
+      "observed_hash": "474a6ac156a89748b7dca25081e220d915883ece5581f3976933e980ed09597a",
+      "present": true,
+      "resolution": "K11_2_N10_b0.45",
+      "shape": [
+        6,
+        2700
+      ]
+    },
+    {
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "expected_hash": "generated_only",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "adjoint_identity_K11_2_N10_b0.45",
+      "observed_hash": null,
+      "present": true,
+      "resolution": "K11_2_N10_b0.45",
+      "shape": [
+        6,
+        2700
+      ]
+    },
+    {
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "expected_hash": "fcd1f7fe33e3ec3c2472357384fcb10ef620b9681f2f98c3e6a63b65dbb5da59",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "physical_primitive_K13_2_N12_b0.50",
+      "observed_hash": "fcd1f7fe33e3ec3c2472357384fcb10ef620b9681f2f98c3e6a63b65dbb5da59",
+      "present": true,
+      "resolution": "K13_2_N12_b0.50",
+      "shape": [
+        4752,
+        6
+      ]
+    },
+    {
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "expected_hash": "bf081b41a2dbe30546b868377e8f823dae500d9f7b2cc1694648eab939d197fe",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "physical_diagnostic_m2_K13_2_N12_b0.50",
+      "observed_hash": "bf081b41a2dbe30546b868377e8f823dae500d9f7b2cc1694648eab939d197fe",
+      "present": true,
+      "resolution": "K13_2_N12_b0.50",
+      "shape": [
+        4752,
+        6
+      ]
+    },
+    {
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "expected_hash": "d815b09b850239304eac464208069dd1f77ce81cc67cbea6eb817b0c37827bfd",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "generated_absorption_K13_2_N12_b0.50",
+      "observed_hash": "d815b09b850239304eac464208069dd1f77ce81cc67cbea6eb817b0c37827bfd",
+      "present": true,
+      "resolution": "K13_2_N12_b0.50",
+      "shape": [
+        6,
+        4752
+      ]
+    },
+    {
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "expected_hash": "generated_only",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "hash_match": true,
+      "name": "adjoint_identity_K13_2_N12_b0.50",
+      "observed_hash": null,
+      "present": true,
+      "resolution": "K13_2_N12_b0.50",
+      "shape": [
+        6,
+        4752
+      ]
+    }
+  ],
+  "status": "C53_READ_ONLY_IMPORT_VERIFIED"
+}

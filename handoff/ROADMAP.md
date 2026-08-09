@@ -2781,3 +2781,28 @@ physical emission and generated adjoint, and close the physical matrix-free
 route. No color/triplet matrix, adjoint, remaining local-QCD matrix,
 Wilson/bilocal object, one-loop result, matching kernel, proton TMD, ART25
 bridge, fit, inference, process, or production object was created in C52.
+
+## C53/VERTEX2 — exact physical canonical color vertex
+
+Status: **completed locally at `ec705d02960d3a1a644958d43d35277a85f9825c`.**
+C53 consumes the single C52 covariant-bilinear primitive unchanged, proves
+the raw SU(3) emission image equals the frozen C47 triplet module, and closes
+the reduced and full-product color assemblies plus independent C52-driven
+matrix-free routes. Absorption is generated only as the emission adjoint.
+
+## C54/HQCD2 — local instantaneous projection audit
+
+Status: **completed locally as Branch B fail-closed.** C54 verifies C53
+read-only runtime hashes, executable symbolic coefficient, basis orders,
+ancestry record, generated adjoints, direct matrix-free residuals, and
+poisoning controls. It then finds that C43/C45/C47 do not contain the required
+finite-volume, normal-ordered q/qg instantaneous-fermion matrix-element
+functional. No free/local matrix, counterterm direction, polynomial action,
+or projected identity is fabricated.
+
+**Exact outcome:** `C54_INSTANTANEOUS_FERMION_ASSEMBLY_INCOMPLETE`.
+
+**Exact next package:** C55/IFERM — finite-volume light-front
+instantaneous-fermion matrix completion. No JMY/bilocal/soft/one-loop,
+matching, proton, ART25, fit, inference, process, or production object is
+created.
