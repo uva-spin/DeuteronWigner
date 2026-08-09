@@ -412,3 +412,16 @@ self-induced-inertia contractions, but the committed C45/C47 authority does
 not select their finite-HO regulator/subtraction or counterterm type. C55
 therefore records `C55_IFERM_NORMAL_ORDERING_CONTRACT_INCOMPLETE` without
 constructing any physical instantaneous-fermion matrix.
+
+## C56 finite-HO contraction-regulator ownership audit
+
+C56 consumes no new formalism volume. It retains the exact C55 one-pair
+`a a†` contraction and BPP perturbative light-front vacuum, but compares the
+actual BPP DLCQ contraction ledger with the locked C45/C47 finite-HO records.
+The latter provide mode functions and external-state projection, not a
+field-level finite-HO virtual-mode projector, reference subtraction, or an
+operator-identical DLCQ-to-HO conversion. C56 consequently records
+`C56_IFNORM_FINITE_HO_REGULATOR_INCOMPLETE` and selects
+`IFNORM-UNAVAILABLE`; it creates neither a mode sum nor a self-induced-inertia
+matrix. The required next scope is C57/IFREG, which must close the contracted
+field-mode collection and regulator contract before any projection.
