@@ -1,0 +1,525 @@
+{
+  "baseline": "7a30916b1dd1a91603b7ab3def7408ceb70f7991",
+  "index": {
+    "C66_U3_hash": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+    "aggregate_hash": "4d9d51f45a93a826cebdad8dcb81f9f8755871a9409f3ba74d955c6cbae8a888",
+    "arrays": {
+      "E_src": {
+        "dtype": "<c16",
+        "max_abs_error": 4.440892098500626e-16,
+        "path": "data/runtime/c68_qgcolor_runtime/E_src.npy",
+        "sha256": "bef2f7a08b33826e17bdab0b027996f89892f9825c9f09d743d8703281488f4d",
+        "shape": [
+          24,
+          3
+        ]
+      },
+      "Gram": {
+        "dtype": "<c16",
+        "max_abs_error": 4.440892098500626e-16,
+        "path": "data/runtime/c68_qgcolor_runtime/Gram.npy",
+        "sha256": "9e721c93eb14bcdab00f313b6270d2ce1fd2a856d1494d8bf31d24cd4b4e1da1",
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "P3": {
+        "dtype": "<c16",
+        "max_abs_error": 4.440892098500626e-16,
+        "path": "data/runtime/c68_qgcolor_runtime/P3.npy",
+        "sha256": "e401e2e1253b83007a4d89f69634fba0a232a45d8c591e4879a2319b20d8b66b",
+        "shape": [
+          24,
+          24
+        ]
+      },
+      "U3": {
+        "dtype": "<c16",
+        "max_abs_error": 4.440892098500626e-16,
+        "path": "data/runtime/c68_qgcolor_runtime/U3.npy",
+        "sha256": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+        "shape": [
+          24,
+          3
+        ]
+      },
+      "U3_dagger": {
+        "dtype": "<c16",
+        "max_abs_error": 4.440892098500626e-16,
+        "path": "data/runtime/c68_qgcolor_runtime/U3_dagger.npy",
+        "sha256": "9f7af0ccadc48506fd397a39cd50476d68c227c610dbae45675b3ed46d94b51d",
+        "shape": [
+          3,
+          24
+        ]
+      },
+      "adapter": {
+        "dtype": "<c16",
+        "max_abs_error": 4.440892098500626e-16,
+        "path": "data/runtime/c68_qgcolor_runtime/adapter.npy",
+        "sha256": "3439e3808a36baa2eb52a817c808b711bd5d1718c5be8c87636bf59a504e12c7",
+        "shape": [
+          3,
+          3
+        ]
+      }
+    },
+    "baseline": "7a30916b1dd1a91603b7ab3def7408ceb70f7991",
+    "basis_hash": "0b3cf0776ced36e284f7e5fa31933956e6d31f085465d4db989b8ce01c80b136",
+    "entry_statuses": [
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 0,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 0,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 0,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 1,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 1,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 1,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 2,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 2,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 2,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 3,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 3,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 3,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 4,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 4,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 4,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 5,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 5,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 5,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 6,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 6,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 6,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 7,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 7,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 7,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 8,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 8,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 8,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 9,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 9,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 9,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 10,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 10,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 10,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 11,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 11,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 11,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 12,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 12,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 12,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 13,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 13,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 13,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 14,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 14,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 14,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 15,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 15,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 15,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 16,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 16,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 16,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 17,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 17,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 17,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 18,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 18,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 18,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 19,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 19,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 19,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 20,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 20,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 20,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 21,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 21,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 21,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 22,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 22,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      },
+      {
+        "column": 2,
+        "expression": "0",
+        "row": 22,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 0,
+        "expression": "0",
+        "row": 23,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 1,
+        "expression": "0",
+        "row": 23,
+        "status": "ZERO_BY_EXACT_COLOR_RULE"
+      },
+      {
+        "column": 2,
+        "expression": "E_src/sqrt(4/3)",
+        "row": 23,
+        "status": "NONZERO_EXACT_ALGEBRAIC"
+      }
+    ],
+    "next": "C69/QGEMBED5 \u2014 immutable C64/C68 physical qg embedding",
+    "status": "C68_SOURCE_DERIVED_TRIPLET_ISOMETRY_RUNTIME_READY",
+    "validation": {
+      "C53_validation": {
+        "W_unitary": 7.691850745534255e-16,
+        "leakage": 3.1108354434057936e-16,
+        "projector_equivalence": 2.5362582704159623e-16
+      },
+      "P_hermiticity": 0.0,
+      "P_idempotence": 3.624202287500099e-16,
+      "UdaggerU": 3.8459253727671276e-16,
+      "intertwiner": 1.69886120845889e-16,
+      "pass": true,
+      "rank": 3,
+      "trace": 3.000000000000001
+    }
+  },
+  "next": "C69/QGEMBED5 \u2014 immutable C64/C68 physical qg embedding",
+  "no_contact": true,
+  "no_embedding": true,
+  "status": "C68_SOURCE_DERIVED_TRIPLET_ISOMETRY_RUNTIME_READY"
+}
