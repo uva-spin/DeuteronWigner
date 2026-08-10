@@ -1,0 +1,46 @@
+{
+  "api": "ContactKernelPackage/evaluate_bare_contact_kernel",
+  "input_freeze": {
+    "C43_C55_W3_hash": "86dd0ff579bd8d31879e81e32c6f62a59039c3473cf5f8ca8ea4694c74517a7a",
+    "C50": "convention-only negative arity control",
+    "C55_direct_route": {
+      "denominator": "1/(p_q^+ + k_g^+)",
+      "monomial": "bdagger a_dagger a b",
+      "right_product_mode": "p_q+k_g",
+      "zero_status": "NONZERO_BY_POSITIVITY"
+    },
+    "C57": "frozen through C78; no threshold read",
+    "C77_crosswalk_hash": "07f94c12ee0b1f25d35fd7ab9345f87bea488a87683404b717225dd8f0e447bb",
+    "C78": {
+      "K11_2_N10_b0.45": {
+        "coordinates": 165991250,
+        "pairs": 43350,
+        "payload_hash": "32679ddd0eeb9871cbe7dfef7d12ddf3c8450700cb98ed58260d9897230627c1"
+      },
+      "K13_2_N12_b0.50": {
+        "coordinates": 697394304,
+        "pairs": 95256,
+        "payload_hash": "8a171c425c4179633ae057f6a1ea6b9d8f793556679fd1e548445105fdc84ed5"
+      },
+      "K9_2_N8_b0.40": {
+        "coordinates": 28606464,
+        "pairs": 16224,
+        "payload_hash": "2e90b304a4e6c97e0ce1a5ce3f25f1c81a32ba9b6722c1b5be455df6854bf7b4"
+      }
+    },
+    "C78_status": "C78_SOURCE_DERIVED_IFERM_CONTACT_SUPPORT_READY",
+    "status": "C80_INPUTS_FROZEN_COMPLETE"
+  },
+  "no_regeneration": true,
+  "objects": [
+    {
+      "id": "kernel_spec",
+      "immutable": true,
+      "path": "data/runtime/c80_ifkernel2/kernel_spec.json",
+      "schema": "C80-IFKERNEL2-V1",
+      "sha256": "732919cc1f964e63f12882411373e63c972654780f8c5e101bdae451467d330c"
+    }
+  ],
+  "schema": "C80-IFKERNEL2-V1",
+  "status": "C80_EXACT_SOURCE_CHAIN_DERIVED_IFCONTACT_KERNEL_EVALUATOR_READY"
+}

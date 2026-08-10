@@ -1,0 +1,37 @@
+{
+  "coordinate_domains": {
+    "K11_2_N10_b0.45": {
+      "coordinates": 165991250,
+      "pairs": 43350,
+      "payload_hash": "32679ddd0eeb9871cbe7dfef7d12ddf3c8450700cb98ed58260d9897230627c1"
+    },
+    "K13_2_N12_b0.50": {
+      "coordinates": 697394304,
+      "pairs": 95256,
+      "payload_hash": "8a171c425c4179633ae057f6a1ea6b9d8f793556679fd1e548445105fdc84ed5"
+    },
+    "K9_2_N8_b0.40": {
+      "coordinates": 28606464,
+      "pairs": 16224,
+      "payload_hash": "2e90b304a4e6c97e0ce1a5ce3f25f1c81a32ba9b6722c1b5be455df6854bf7b4"
+    }
+  },
+  "representation": "explicit immutable coordinate query; factorized, not materialized",
+  "schema": [
+    "resolution",
+    "q_out_raw_id",
+    "g_out_raw_id",
+    "q_in_raw_id",
+    "g_in_raw_id",
+    "q_out",
+    "g_out",
+    "q_in",
+    "g_in",
+    "c_out",
+    "a_out",
+    "c_in",
+    "a_in",
+    "source_order",
+    "zero_mode_policy"
+  ]
+}

@@ -3081,3 +3081,21 @@ four-mode direct-contact kernel, including its ordered color, two-gluon
 spin/polarization, inverse-derivative, and four-HO factors, before evaluating
 any C78 coordinate. No direct-contact matrix, physical coupling, counterterm,
 or C58/C53 substitution has been made.
+
+## C80/IFKERNEL2 — factorized four-mode direct-contact evaluator
+
+Status: **completed locally.** C80 freezes C78's 28,606,464 / 165,991,250 /
+697,394,304 factorized raw-coordinate domains and derives the direct C55
+`b† a† a b` coefficient through finite-cell insertion and independent ordered
+Fourier extraction. The common longitudinal coefficient is
+`-δ_K/[4π(k_q+k_g)]`, with exact C43 PV/Q0 exclusion and symbolic `L`
+cancellation. It combines the fixed gamma ordering, ordered SU(3) product,
+and exact finite Laguerre/Gamma four-HO overlap into an immutable on-demand
+kernel evaluator. C78 projection coefficients are not aggregated.
+
+**Exact outcome:** `C80_EXACT_SOURCE_CHAIN_DERIVED_IFCONTACT_KERNEL_EVALUATOR_READY`.
+
+**Exact next package:** C81/IFCONTACT3 — stream the C80 kernel through the
+immutable C78 support and assemble the bare direct-contact matrix/action. No
+physical coupling, counterterm, complete instantaneous-fermion operator, or
+C53/C58 substitute has been made.

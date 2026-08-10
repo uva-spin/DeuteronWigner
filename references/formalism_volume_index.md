@@ -551,3 +551,15 @@ canonical one-gluon vertex is explicitly classified as a noninterchangeable
 three-mode object. C79 consequently leaves every C78 contact coordinate
 unevaluated and records the required C80 derivation rather than inferring a
 measure, local four-HO overlap, or contact value from another operator.
+
+## C80 four-mode direct instantaneous-fermion kernel
+
+C80 implements the project-derived consequence of the frozen C43/C45/C55
+operator and mode conventions. It uses coordinate-space finite-cell insertion
+and an independent ordered Fourier extraction to fix the direct normal-ordered
+four-field coefficient, retaining the right-product inverse derivative,
+ordered color generators, fixed polarization phases, and explicit `g_s^2`.
+Its transverse local overlap is an exact finite Laguerre/Gamma expression with
+an independent Gauss-Laguerre holdout. The result is an on-demand raw-coordinate
+evaluator only: it contains no C78 physical projection sum, contact matrix,
+self-induced-inertia contribution, or sequential propagated vertex.
