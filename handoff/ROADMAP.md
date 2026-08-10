@@ -3063,3 +3063,21 @@ contact matrix is evaluated.
 **Exact next package:** C79/IFCONTACT2 — evaluate the direct contact only on
 the immutable C78 support; never substitute C53 sequential propagation or
 C58 self-induced inertia.
+
+## C79/IFCONTACT2 — direct-contact finite-cell kernel audit
+
+Status: **completed locally, fail-closed.** C79 authenticates the immutable
+C78 public support domain and re-closes the C43/C55 instantaneous-fermion
+operator coefficient and direct inverse-derivative routing at symbolic level.
+It finds that the repository has no source-derived finite-cell four-mode
+`b† a† a b` plane-wave/HO projection evaluator. C50's finite-cell routine is
+the incompatible one-gluon canonical `b† a† b` vertex, while C78 deliberately
+stores symbolic kernel coordinates rather than numerical contact values.
+
+**Exact outcome:** `C79_IFCONTACT_KERNEL_EVALUATION_INCOMPLETE`.
+
+**Exact next package:** C80/IFKERNEL2 — derive the normalized finite-cell
+four-mode direct-contact kernel, including its ordered color, two-gluon
+spin/polarization, inverse-derivative, and four-HO factors, before evaluating
+any C78 coordinate. No direct-contact matrix, physical coupling, counterterm,
+or C58/C53 substitution has been made.

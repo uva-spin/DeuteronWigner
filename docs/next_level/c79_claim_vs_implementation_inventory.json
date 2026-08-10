@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "capability": "C43/C55 W3 operator coefficient and ordering",
+      "classification": "EXECUTABLE_SYMBOLIC_OBJECT",
+      "evidence": "C43 action contract + C55 two-route symbolic derivation",
+      "status": "PRESENT"
+    },
+    {
+      "capability": "direct inverse-partial-plus routing",
+      "classification": "EXECUTABLE_SYMBOLIC_OBJECT",
+      "evidence": "C55 direct b\u2020a\u2020ab route p_q^+ + k_g^+; Q0/PV policy",
+      "status": "PRESENT"
+    },
+    {
+      "capability": "C78 physical support/witness/kernel-coordinate domain",
+      "classification": "STRUCTURAL_METADATA_ONLY",
+      "evidence": "immutable public C78 API explicitly returns numerical_value=NOT_EVALUATED",
+      "status": "PRESENT_NO_VALUES"
+    },
+    {
+      "capability": "C45 one-particle modes and two-mode basis adapters",
+      "classification": "EXECUTABLE_NUMERICAL_OBJECT",
+      "evidence": "mode library; no W3 four-field assembly",
+      "status": "PRESENT_NONCONTACT_PRIMITIVES"
+    },
+    {
+      "capability": "C50 finite-box canonical vertex",
+      "classification": "EXECUTABLE_NUMERICAL_OBJECT",
+      "evidence": "signature (*, kq: 'Fraction', kg: 'Fraction', K: 'Fraction', qrel: 'tuple[float, float]', mass: 'float', h_out: 'int', h_in: 'int', h_g: 'int', coupling: 'float' = 1.0, total_pplus: 'float' = 3.0) -> 'dict[str, Any]'; three-mode q\u2192qg b\u2020a\u2020b kernel only",
+      "status": "PRESENT_BUT_INCOMPATIBLE"
+    },
+    {
+      "capability": "normal-ordered four-mode plane-wave b\u2020a\u2020ab coefficient",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "no source-derived finite-cell field-expansion contraction implemented",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    },
+    {
+      "capability": "operator-specific local four-HO contact integral",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "C45 overlap primitives are not assembled with W3 momentum/spin/color routing",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    },
+    {
+      "capability": "C77/C78 projected four-mode kernel-coordinate evaluator",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "C78 coordinate KAPPA is symbolic by design; no value API exists",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    },
+    {
+      "capability": "bare direct-contact sparse matrix and independent action",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "requires all three missing operator-specific objects",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    }
+  ],
+  "status": "C79_IFCONTACT_KERNEL_EVALUATION_INCOMPLETE"
+}

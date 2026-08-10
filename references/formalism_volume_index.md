@@ -540,3 +540,14 @@ normal-ordered direct `b† a† a b` operator through C57's fixed graph-selecti
 contract and C77's exact physical qg embedding. The resulting endpoint and
 witness relations carry symbolic contact-kernel coordinates only; C58's
 self-induced-inertia block and C53 propagated vertices remain distinct.
+
+## C79 direct-contact kernel audit
+
+C79 adds no new formalism volume or numerical operator. It confirms that the
+C43/C55 source transcription fixes the direct instantaneous-fermion operator
+and its right-product inverse derivative, but that the project does not yet
+implement their source-normalized finite-cell four-field projection. The C50
+canonical one-gluon vertex is explicitly classified as a noninterchangeable
+three-mode object. C79 consequently leaves every C78 contact coordinate
+unevaluated and records the required C80 derivation rather than inferring a
+measure, local four-HO overlap, or contact value from another operator.
