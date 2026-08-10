@@ -563,3 +563,13 @@ Its transverse local overlap is an exact finite Laguerre/Gamma expression with
 an independent Gauss-Laguerre holdout. The result is an on-demand raw-coordinate
 evaluator only: it contains no C78 physical projection sum, contact matrix,
 self-induced-inertia contribution, or sequential propagated vertex.
+
+## C81 direct-contact composition audit
+
+C81 adds no numerical contact operator. It verifies the public composition
+boundary: C78 supplies exact structural support but intentionally has no
+per-coordinate projected coefficient values, and C80 supplies an explicit
+raw-coordinate kernel evaluator but no total map from C78's symbolic KAPPA
+address domain. C81 therefore preserves all support and evaluator identities,
+does not infer coefficients from storage positions, and records the exact
+C82/IFAGG ledger/map construction needed before a contact matrix can exist.

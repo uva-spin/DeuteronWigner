@@ -3099,3 +3099,19 @@ kernel evaluator. C78 projection coefficients are not aggregated.
 immutable C78 support and assemble the bare direct-contact matrix/action. No
 physical coupling, counterterm, complete instantaneous-fermion operator, or
 C53/C58 substitute has been made.
+
+## C81/IFCONTACT3 — public C78/C80 composition audit
+
+Status: **completed locally, fail-closed.** C81 authenticates the C78 support
+and C80 kernel packages through their public APIs. C78 intentionally publishes
+only symbolic `KAPPA` coordinate domains and returns `NOT_EVALUATED` for its
+projected coefficients; C80 requires a caller-supplied raw coordinate and does
+not publish a total C78-coordinate-to-C80 map. Thus no legal coefficient-times-
+kernel product, bound, P-minus entry, or M-squared entry exists to aggregate.
+
+**Exact outcome:** `C81_IFCONTACT_PAIR_AGGREGATION_INCOMPLETE`.
+
+**Exact next package:** C82/IFAGG — materialize the immutable C78 per-coordinate
+projected-coefficient/bound ledger and authenticated total map into C80 raw
+coordinates. No contact matrix/action, physical coupling, counterterm, C53
+propagator, or C58 self-induced-inertia contribution has been created.
