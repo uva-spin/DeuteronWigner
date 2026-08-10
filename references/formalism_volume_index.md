@@ -521,3 +521,14 @@ emission map is differently normalized and its stored projectors are 24-by-24;
 neither is an admissible substitute. C65 records
 `C65_QG_TRIPLET_EMBEDDING_INCOMPLETE` and creates no physical embedding or
 operator. C66/QGCOLOR2 must close this narrow C53 import contract.
+
+## C77 project-derived TM crosswalk and physical qg embedding
+
+C77 adds no external formalism volume. It derives canonical raw and
+relative/CM tuple identities, explicit `n_CM,m_CM` labels, global ordering,
+and the `T_relCM<-raw=<rel,CM|raw>` storage orientation directly from the
+source-locked C62/C64 construction. It then composes the exact CM-ground map
+with the immutable C74 triplet isometry into a factorized physical qg
+embedding. This is project-defined implementation authority, not an external
+physics claim; C77 creates no direct contact, TMD, matching, or production
+object.

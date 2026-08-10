@@ -1,0 +1,148 @@
+{
+  "counts": {
+    "blocks": 733,
+    "cm_ground": {
+      "K11_2_N10_b0.45": 225,
+      "K13_2_N12_b0.50": 396,
+      "K9_2_N8_b0.40": 112
+    },
+    "coefficients": 171153,
+    "exact_zero": 124,
+    "nonzero": 171029,
+    "raw": 9321,
+    "relcm": 9321,
+    "residue_certificates": 67920
+  },
+  "no_regeneration": true,
+  "no_threshold_support": true,
+  "objects": [
+    {
+      "id": "crosswalk",
+      "path": "data/runtime/c77_qgembed9/crosswalk.json",
+      "schema": "C77-QGEMBED9-V1",
+      "sha256": "5d8ac3768a92fc8b6f70e8f8d5682a48cc19f0267d2b07a3422bb90d2c6c6029"
+    },
+    {
+      "dtype": "<i8",
+      "object": "indptr",
+      "path": "data/runtime/c77_qgembed9/K9_2_N8_b0.40/kin_indptr.npy",
+      "resolution": "K9_2_N8_b0.40",
+      "sha256": "99eeec094176d917d304e01e137f84bc770a8eadcbdb43f091153451eac49f6e",
+      "shape": [
+        449
+      ]
+    },
+    {
+      "dtype": "<i8",
+      "object": "indices",
+      "path": "data/runtime/c77_qgembed9/K9_2_N8_b0.40/kin_indices.npy",
+      "resolution": "K9_2_N8_b0.40",
+      "sha256": "48a3c403a8ca9728dd955cf3b56a7f3da9b76862853eeb66d55d9b9ca6e8e1de",
+      "shape": [
+        3360
+      ]
+    },
+    {
+      "dtype": "<c16",
+      "object": "data",
+      "path": "data/runtime/c77_qgembed9/K9_2_N8_b0.40/kin_data.npy",
+      "resolution": "K9_2_N8_b0.40",
+      "sha256": "96a79fb6eeb116241f922e35e5ddafeaf9d27af7292773ef9e54412593d39af8",
+      "shape": [
+        3360
+      ]
+    },
+    {
+      "dtype": "<f8",
+      "object": "bounds",
+      "path": "data/runtime/c77_qgembed9/K9_2_N8_b0.40/kin_bounds.npy",
+      "resolution": "K9_2_N8_b0.40",
+      "sha256": "3e5c62f541dd4f584088ecfa7677f14ad52ace241f36dddf7703a4eb31d2aed0",
+      "shape": [
+        3360
+      ]
+    },
+    {
+      "dtype": "<i8",
+      "object": "indptr",
+      "path": "data/runtime/c77_qgembed9/K11_2_N10_b0.45/kin_indptr.npy",
+      "resolution": "K11_2_N10_b0.45",
+      "sha256": "2043e8de07729f35e836ee6c7bbfd5588bf3ca2f06fc75f71b22558be8ad45a7",
+      "shape": [
+        901
+      ]
+    },
+    {
+      "dtype": "<i8",
+      "object": "indices",
+      "path": "data/runtime/c77_qgembed9/K11_2_N10_b0.45/kin_indices.npy",
+      "resolution": "K11_2_N10_b0.45",
+      "sha256": "3568b8f243e3dcbc54c635edad6bec32dddc0b09789c2f5aa7616320101c5ca9",
+      "shape": [
+        9900
+      ]
+    },
+    {
+      "dtype": "<c16",
+      "object": "data",
+      "path": "data/runtime/c77_qgembed9/K11_2_N10_b0.45/kin_data.npy",
+      "resolution": "K11_2_N10_b0.45",
+      "sha256": "1bc9a9f5c79f1591a183ce81c50e65c6b56a27482b9944b679daf749712c8523",
+      "shape": [
+        9900
+      ]
+    },
+    {
+      "dtype": "<f8",
+      "object": "bounds",
+      "path": "data/runtime/c77_qgembed9/K11_2_N10_b0.45/kin_bounds.npy",
+      "resolution": "K11_2_N10_b0.45",
+      "sha256": "60364fe87b77d96ef5575b2adbfd0ea220fcd05151046ee4b134ca2d10181881",
+      "shape": [
+        9900
+      ]
+    },
+    {
+      "dtype": "<i8",
+      "object": "indptr",
+      "path": "data/runtime/c77_qgembed9/K13_2_N12_b0.50/kin_indptr.npy",
+      "resolution": "K13_2_N12_b0.50",
+      "sha256": "89ed502bfef238a049c803acfbd17a187546c2b86cb48a1fbd65456eb734bb3f",
+      "shape": [
+        1585
+      ]
+    },
+    {
+      "dtype": "<i8",
+      "object": "indices",
+      "path": "data/runtime/c77_qgembed9/K13_2_N12_b0.50/kin_indices.npy",
+      "resolution": "K13_2_N12_b0.50",
+      "sha256": "4de9ad867408b8c20e59e26860e4369bc9f935d81da04a46fdd0ec15edc93893",
+      "shape": [
+        24024
+      ]
+    },
+    {
+      "dtype": "<c16",
+      "object": "data",
+      "path": "data/runtime/c77_qgembed9/K13_2_N12_b0.50/kin_data.npy",
+      "resolution": "K13_2_N12_b0.50",
+      "sha256": "231015e23bf2dcc5072a29cb26187c1cb99d01f6c4b3e0f24abf38f57dc9c75c",
+      "shape": [
+        24024
+      ]
+    },
+    {
+      "dtype": "<f8",
+      "object": "bounds",
+      "path": "data/runtime/c77_qgembed9/K13_2_N12_b0.50/kin_bounds.npy",
+      "resolution": "K13_2_N12_b0.50",
+      "sha256": "2572bb759c5f990b10fc5c860856778d19034421766f4c2ea14e0227de4b7375",
+      "shape": [
+        24024
+      ]
+    }
+  ],
+  "schema": "C77-QGEMBED9-V1",
+  "status": "C77_EXACT_SOURCE_CHAIN_DERIVED_QG_EMBEDDING_READY"
+}

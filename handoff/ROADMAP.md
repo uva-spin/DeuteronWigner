@@ -3031,3 +3031,19 @@ emission map has different normalization, and the available projectors are
 isometry and its basis-order/phase/projector-equivalence contract. No CM or
 triplet physical embedding, support, contact, or descendant-impact object is
 created in C65.
+
+## C77/QGEMBED9 — project-derived TM crosswalk and physical qg embedding
+
+Status: **completed locally.** C77 supersedes the C76 metadata-only stop:
+canonical state IDs, global ordering, relative/CM labels, and storage
+orientation are project-owned consequences of the fixed C62/C64 constructors,
+not missing external authority. It verifies the immutable C64 and C74 payloads,
+derives all 9,321 raw and 9,321 relative/CM transverse identities, links the
+171,153 C64 status records and 67,920 residue certificates, and freezes
+factorized CM-ground/triplet qg embedding operators. No contact, instantaneous
+fermion, TMD, matching, or production object is constructed.
+
+**Exact outcome:** `C77_EXACT_SOURCE_CHAIN_DERIVED_QG_EMBEDDING_READY`.
+
+**Exact next package:** C78/IFSUPPORT2 — derive source-ordered direct-contact
+endpoint and intermediate-q witness support using the immutable C77 embedding.
