@@ -1,5 +1,14 @@
 # Formalism volume source index
 
+## C88 historical C82 stream boundary
+
+The C88/IFSTREAM preflight uses only repository-owned C77/C78/C80/C82 and
+C87 capsule identities. It does not introduce a formalism source, numerical
+operator, or physics result. The complete C82 pair-coordinate stream is
+blocked by its verified local safe-serialization storage lower bound; this is
+an execution-resource boundary, not an external-authority gap and not a
+claim about the unknown historical C72 runtime instance.
+
 The C27/P1C direct-author `MSHT20_REP` source, exact 642-member ART25
 execution, and joint covariance are documented in
 `docs/next_level/c27_implementation_report.md`. This is an external proton

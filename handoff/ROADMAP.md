@@ -1,5 +1,22 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-10 — C88 bounded historical C82 scientific-stream preflight
+
+Status: **fail closed; local completion commit only, not pushed**.
+
+C88 froze `HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY`, the
+C87 source-chain-equivalent capsule boundary, the C82 pair-coordinate record
+schema, canonical C78/C82 order, and safe JSONL serialization contract. The
+exact C78 domain contains 154,830 supported pairs and 891,992,018 logical
+pair-coordinate records. Its irreducible three-identity serialization lower
+bound is 280,977,485,670 bytes, while the selected runtime filesystem has
+50,210,373,632 bytes available. No partial shards, checkpoint, scientific
+stream, C82 equivalence claim, kernel product, or contact object was created.
+
+The exact next package is **C89/IFBOUNDSTREAM**: provide a verified bounded
+storage target sufficient for the complete safe record domain, then rerun the
+C88 exporter without reducing coverage.
+
 ## 2026-07-30 — C6 active-gluon ordered-link and soft-overlap pilot
 
 Status: **complete at local commit
