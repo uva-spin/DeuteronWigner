@@ -3115,3 +3115,20 @@ kernel product, bound, P-minus entry, or M-squared entry exists to aggregate.
 projected-coefficient/bound ledger and authenticated total map into C80 raw
 coordinates. No contact matrix/action, physical coupling, counterterm, C53
 propagator, or C58 self-induced-inertia contribution has been created.
+
+## C82/IFAGG — C78-to-C80 aggregation bridge
+
+Status: **completed locally.** C82 resolves the C81 public-composition gap with
+a total, lazy source-ordered witness-leaf construction. Each leaf joins C78
+witness ancestry to C77 raw embedding coefficients and immutable triplet-color
+records, then maps to exactly one validated C80 raw contact coordinate. C82
+owns only the projected bra/ket embedding coefficient and its bound; C80 retains
+all W3 kernel factors and explicitly factored `g_s²`. The coordinate domains
+remain factorized and reversible.
+
+**Exact outcome:** `C82_SOURCE_DERIVED_IFCONTACT_AGGREGATION_BRIDGE_READY`.
+
+**Exact next package:** C83/IFCONTACT4 — multiply C82 coefficients by C80
+kernel values and assemble certified sparse and matrix-free bare direct-contact
+matrices. C82 creates no coefficient-times-kernel product, contact matrix,
+coupling, counterterm, C53 propagation, or C58 contribution.

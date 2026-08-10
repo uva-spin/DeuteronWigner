@@ -573,3 +573,13 @@ raw-coordinate kernel evaluator but no total map from C78's symbolic KAPPA
 address domain. C81 therefore preserves all support and evaluator identities,
 does not infer coefficients from storage positions, and records the exact
 C82/IFAGG ledger/map construction needed before a contact matrix can exist.
+
+## C82 C78-to-C80 aggregation bridge
+
+C82 is a project-derived composition layer, not a new QCD operator. It makes
+the C78 symbolic KAPPA domain concrete through a lazy source-ordered leaf
+schema: C77 physical-to-raw amplitudes and immutable triplet-color records
+provide the projection coefficient, while C80 retains the longitudinal, spin,
+color-operator, four-HO, normalization, conversion, and `g_s²` factors. The
+bridge exposes exact coordinate IDs and certified coefficient bounds without
+forming any coefficient-times-kernel product or contact matrix.
