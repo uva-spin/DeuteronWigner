@@ -1,0 +1,119 @@
+{
+  "input_freeze": {
+    "C55": {
+      "direct_status": "DIRECT_RETAINED_OPERATOR",
+      "monomial": [
+        "b_dagger",
+        "a_dagger",
+        "a",
+        "b"
+      ],
+      "ordering": "b_dagger a_dagger a b"
+    },
+    "C57": {
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "post_construction_only": true,
+      "status": "C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY"
+    },
+    "C58": {
+      "ordered_joint_support": "IFNORM2-ORDERED-JOINT-SUPPORT",
+      "qg_scope": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+      "separate_operator_block": true
+    },
+    "C74": {
+      "columns": 3,
+      "records": 72,
+      "rows": 24
+    },
+    "C77": {
+      "component_support": "exact terminal C64/C74 composition",
+      "crosswalk_sha256": "92e40796cc8f9cf11edd959d47d8e70c92e743f6ab738b5821ef84bb8d85f327",
+      "dimensions": {
+        "K11_2_N10_b0.45": [
+          9900,
+          900
+        ],
+        "K13_2_N12_b0.50": [
+          24024,
+          1584
+        ],
+        "K9_2_N8_b0.40": [
+          3360,
+          448
+        ]
+      },
+      "package_status": "C77_EXACT_SOURCE_CHAIN_DERIVED_QG_EMBEDDING_READY"
+    },
+    "status": "C78_INPUTS_FROZEN_COMPLETE"
+  },
+  "no_numeric_contact": true,
+  "no_regeneration": true,
+  "resolutions": {
+    "K11_2_N10_b0.45": {
+      "counts": {
+        "absorption_edges": 510,
+        "absorption_paths": 31450,
+        "emission_edges": 510,
+        "emission_paths": 31450,
+        "kernel_coordinates": 165991250,
+        "physical_qg": 2700,
+        "retained_q": 6,
+        "supported_pairs": 43350,
+        "witnesses": 43350,
+        "zero_counts": {
+          "UNDECIDABLE_BLOCKING": 0,
+          "ZERO_BY_EXACT_PROJECTED_CANCELLATION": 0,
+          "ZERO_BY_HELICITY_SELECTION": 7029900,
+          "ZERO_BY_NO_RETAINED_Q_INTERMEDIATE": 216750
+        }
+      },
+      "path": "data/runtime/c78_ifsupport2/K11_2_N10_b0.45.json",
+      "sha256": "7737f30b96b14907f521c2e6c5ac45b8c1ee9f36f488dc80383fcac39194139d"
+    },
+    "K13_2_N12_b0.50": {
+      "counts": {
+        "absorption_edges": 756,
+        "absorption_paths": 64464,
+        "emission_edges": 756,
+        "emission_paths": 64464,
+        "kernel_coordinates": 697394304,
+        "physical_qg": 4752,
+        "retained_q": 6,
+        "supported_pairs": 95256,
+        "witnesses": 95256,
+        "zero_counts": {
+          "UNDECIDABLE_BLOCKING": 0,
+          "ZERO_BY_EXACT_PROJECTED_CANCELLATION": 0,
+          "ZERO_BY_HELICITY_SELECTION": 22009968,
+          "ZERO_BY_NO_RETAINED_Q_INTERMEDIATE": 476280
+        }
+      },
+      "path": "data/runtime/c78_ifsupport2/K13_2_N12_b0.50.json",
+      "sha256": "174840562bf66058ec60a49501bc38b05b5e7c75314f203ab36899a67513227a"
+    },
+    "K9_2_N8_b0.40": {
+      "counts": {
+        "absorption_edges": 312,
+        "absorption_paths": 13056,
+        "emission_edges": 312,
+        "emission_paths": 13056,
+        "kernel_coordinates": 28606464,
+        "physical_qg": 1344,
+        "retained_q": 6,
+        "supported_pairs": 16224,
+        "witnesses": 16224,
+        "zero_counts": {
+          "UNDECIDABLE_BLOCKING": 0,
+          "ZERO_BY_EXACT_PROJECTED_CANCELLATION": 0,
+          "ZERO_BY_HELICITY_SELECTION": 1708992,
+          "ZERO_BY_NO_RETAINED_Q_INTERMEDIATE": 81120
+        }
+      },
+      "path": "data/runtime/c78_ifsupport2/K9_2_N8_b0.40.json",
+      "sha256": "919a62576c01abf06b403fc536c5726cdacc785ed1958ece432048e9dee951b8"
+    }
+  },
+  "schema": "C78-IFSUPPORT2-V1",
+  "status": "C78_SOURCE_DERIVED_IFERM_CONTACT_SUPPORT_READY"
+}

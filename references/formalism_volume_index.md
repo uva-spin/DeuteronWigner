@@ -532,3 +532,11 @@ with the immutable C74 triplet isometry into a factorized physical qg
 embedding. This is project-defined implementation authority, not an external
 physics claim; C77 creates no direct contact, TMD, matching, or production
 object.
+
+## C78 direct instantaneous-fermion contact support
+
+C78 adds no new formalism volume. It applies C55's already source-locked
+normal-ordered direct `b† a† a b` operator through C57's fixed graph-selection
+contract and C77's exact physical qg embedding. The resulting endpoint and
+witness relations carry symbolic contact-kernel coordinates only; C58's
+self-induced-inertia block and C53 propagated vertices remain distinct.

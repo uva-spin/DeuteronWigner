@@ -3047,3 +3047,19 @@ fermion, TMD, matching, or production object is constructed.
 
 **Exact next package:** C78/IFSUPPORT2 — derive source-ordered direct-contact
 endpoint and intermediate-q witness support using the immutable C77 embedding.
+
+## C78/IFSUPPORT2 — direct instantaneous-fermion contact support
+
+Status: **completed locally.** C78 freezes C55's direct `b† a† a b` field
+ordering, C57's corresponding-propagating graph selection, C58's ordered
+joint-support identity, and C77's physical embedding. It constructs
+source-ordered absorption/emission endpoint domains and a factorized ternary
+qg-bra/intermediate-q/qg-ket witness relation with independent symbolic
+kernel coordinates. No kernel value, inverse derivative, normalization, or
+contact matrix is evaluated.
+
+**Exact outcome:** `C78_SOURCE_DERIVED_IFERM_CONTACT_SUPPORT_READY`.
+
+**Exact next package:** C79/IFCONTACT2 — evaluate the direct contact only on
+the immutable C78 support; never substitute C53 sequential propagation or
+C58 self-induced inertia.
