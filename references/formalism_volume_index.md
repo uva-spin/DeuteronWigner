@@ -1,5 +1,13 @@
 # Formalism volume source index
 
+## C93 recovered C90 semantic-payload capsule
+
+C93 is a repository-owned, commit-pinned recovery of omitted C90 semantic
+payload preimages. Its retained capsule is authenticated against frozen C90
+roots but is expressly not the original C90 runtime instance. It introduces
+no external authority, expanded C88 record stream, kernel product, or
+physical result.
+
 ## C92 C90 public-payload qualification
 
 C92 verifies that C90's retained ledger is an authenticated compact

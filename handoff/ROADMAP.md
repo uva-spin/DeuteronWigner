@@ -1,5 +1,23 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-11 — C93 authenticated C90 semantic-payload recovery
+
+Status: **complete locally; not pushed**.
+
+C93 used the exact commit-pinned C90 source to replay the historical Route A
+and independent C89-backed Route B, recovering full normalized-program
+content for all 154,830 pairs. Both deterministic routes agree and reproduce
+the frozen C90 normal-form roots, primitive bundles, summaries, proof results,
+resolution roots, and aggregate semantic root. No C88 expanded logical-record
+stream was written.
+
+The 225 MB C93 capsule is explicitly a
+`DESCENDANT_RECOVERED_PREIMAGE_OF_C90_FROZEN_SCIENTIFIC_ROOTS`, not the
+original C90 runtime payload; `UNKNOWN_NOT_CLAIMED` remains in force for the
+historical C72 runtime instance. The sole next package is
+**C94/IFEQUIVAPI2**, which may add a public facade over this verified
+capsule—but may not recompile C90 science.
+
 ## 2026-08-11 — C92 C90 public-payload audit
 
 Status: **fail closed at local completion; no push**.
