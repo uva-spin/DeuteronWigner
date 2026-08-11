@@ -1,5 +1,14 @@
 # Formalism volume source index
 
+## C91 C90-public-interface qualification
+
+C91 reconstructs the current descendant factorized C82 program domain but
+does not compare it with historical C90 pair programs, because C90's public
+API exposes only aggregate verification and individual recomputing queries;
+it lacks an authenticated enumeration/paged ledger interface and exported
+proof checker. This is a project-owned import-interface qualification, not an
+external-authority gap, a scientific difference, or a new formalism source.
+
 ## C90 factorized semantic C82 attestation boundary
 
 C90 is a repository-owned semantic IR, normalization, and proof boundary. It

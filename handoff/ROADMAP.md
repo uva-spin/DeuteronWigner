@@ -1,5 +1,28 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-10 — C91 historical/descendant semantic-equivalence audit
+
+Status: **fail closed at local completion; no push**.
+
+C91 independently compiled and froze the current C77/C78/C80/C82 descendant
+semantic domain: 154,830 compact pair programs and the unchanged
+891,992,018-record logical census. It neither opened C90's private runtime
+payload nor copied historical normal forms. C90's public aggregate authority
+verified, including its historical environment qualification
+`HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY` and
+`UNKNOWN_NOT_CLAIMED` historical-C72 instance boundary.
+
+The complete comparison cannot legally proceed: C90's immutable public API
+does not export an authenticated historical pair enumeration or paged ledger
+loader, nor the historical expansion-proof checker. Accordingly no primitive
+crosswalk, pair equivalence, proof certificate, or scientific-equivalence
+claim was issued. This is a project-owned public-interface defect—not an
+external-authority gap and not evidence of a scientific payload mismatch.
+
+The exact next package is **C92/IFEQUIVAPI**, restricted to adding a
+read-only, authenticated historical C90 pair-attestation enumeration/paged
+loader and exported proof-checker interface without changing C90 science.
+
 ## 2026-08-10 — C90 factorized semantic C82 attestation
 
 Status: **complete locally; not pushed**.

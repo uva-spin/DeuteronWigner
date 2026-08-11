@@ -1,0 +1,43 @@
+{
+  "authority": {
+    "authority_verified": true,
+    "available_complete_domain_operations": [],
+    "blocker": "C90_PUBLIC_API_MISSES_AUTHENTICATED_PAIR_ENUMERATION_AND_EXPORTED_EXPANSION_PROOF_CHECKER",
+    "complete_historical_pair_domain_available": false,
+    "historical_aggregate": {
+      "blake2b_256": "0d911478a80c9eb3d792cfb1fb65211c9024886e7a76749b55ec7752e3fa8a8d",
+      "sha256": "efee3c97dff6310349f39c52c52efe8fe5a3691dff033b783c4ce0be61366a34"
+    },
+    "historical_compiler_called": false,
+    "missing_complete_domain_operations": [
+      "check_historical_expansion_equivalence",
+      "historical_pair_attestation_page",
+      "historical_pair_identifiers",
+      "iter_historical_pair_attestations"
+    ],
+    "private_C90_runtime_opened": false,
+    "public_operations": [
+      "audit_historical_pair_records",
+      "build_semantic_ledger",
+      "compare_semantic_routes",
+      "historical_pair_normal_form",
+      "historical_pair_program_root",
+      "historical_pair_record_count",
+      "historical_pair_summary",
+      "load_verified_historical_semantic_attestation",
+      "unrank_historical_pair_record",
+      "verify_historical_semantic_attestation_root",
+      "verify_semantic_ledger"
+    ],
+    "required_complete_domain_operations": [
+      "check_historical_expansion_equivalence",
+      "historical_pair_attestation_page",
+      "historical_pair_identifiers",
+      "iter_historical_pair_attestations"
+    ]
+  },
+  "environment": "HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY",
+  "historical_C82": "8e47231ab565f0f729d335b39aa98881176ba166",
+  "status": "C91_HISTORICAL_SEMANTIC_AUTHORITY_FROZEN_COMPLETE",
+  "unknown_C72": "UNKNOWN_NOT_CLAIMED"
+}
