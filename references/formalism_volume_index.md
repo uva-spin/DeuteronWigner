@@ -1,5 +1,16 @@
 # Formalism volume source index
 
+## C90 factorized semantic C82 attestation boundary
+
+C90 is a repository-owned semantic IR, normalization, and proof boundary. It
+attests the complete historical C82 pair-coordinate domain through typed
+program identity, frozen primitive roots, and compact pair-program roots; it
+does not assert an expanded-record serialization hash. The historical
+environment remains `HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY`
+and the exact historical C72 runtime instance remains `UNKNOWN_NOT_CLAIMED`.
+This introduces neither a new formalism source nor a kernel, contact-matrix,
+or phenomenological result.
+
 ## C89 nonmaterializing C82 attestation boundary
 
 C89 adds only project-owned factorized-program indexing and on-demand record

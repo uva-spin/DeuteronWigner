@@ -1,5 +1,30 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-10 — C90 factorized semantic C82 attestation
+
+Status: **complete locally; not pushed**.
+
+C90 replaces the infeasible Python-level traversal of 891,992,018 C82
+pair-coordinate leaves with a closed, typed semantic-program proof. An
+independent source-ordered Route A and the immutable C89 Route B normalize
+identically for all 154,830 supported pairs. Their compact ledger binds
+`FACTORIZED_SEMANTIC_PROGRAM_ROOT` records only: it does not claim a
+conventional expanded-record hash.
+
+The exact logical census remains 28,606,464 (K9), 165,991,250 (K11), and
+697,394,304 (K13), or 891,992,018 total. Two clean passes, a pair-atomic
+interrupted/resumed pass, and deterministic three-range parallel execution
+share aggregate semantic root
+`efee3c97dff6310349f39c52c52efe8fe5a3691dff033b783c4ce0be61366a34`.
+The historical environment remains
+`HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY`; exact historical
+C72 runtime-instance identity remains `UNKNOWN_NOT_CLAIMED`.
+
+The sole next package is **C91/IFEQUIV6**: compare a current-descendant
+factorized semantic ledger against this frozen historical ledger, localizing
+record diagnostics only to any mismatched pair. No kernel product, contact
+matrix, coupling, or inference object has been created.
+
 ## 2026-08-10 — C89 nonmaterializing C82 factorized-program audit
 
 Status: **execution fail closed; local completion commit only, not pushed**.
