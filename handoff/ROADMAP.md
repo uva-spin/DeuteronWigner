@@ -1,5 +1,25 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-11 — C95 historical public-input qualification
+
+Status: **fail closed at local completion; not pushed**.
+
+C95 verified the C94 immutable authority root through its exported public API
+and independently recompiled the descendant domain: 154,830 supported pairs
+and the unchanged 891,992,018 logical-record census. The comparison cannot
+legally begin because the C94 public surface does not export
+`historical_pair_normal_form`, `historical_pair_proof_inputs`, or
+`historical_primitive_record`. Those inputs cannot be inferred from roots,
+pages, or private modules. This is a project-owned public-interface gap, not
+a scientific mismatch or an external-authority issue; no historical pair
+scientific field was compared.
+
+The selected status is
+`C95_IFEQUIV7_HISTORICAL_PUBLIC_INPUT_INCOMPLETE`. The sole next package is
+**C96/IFHISTPUBLIC**, restricted to authenticated read-only C94 loaders for
+those three domains. No expanded record stream, kernel product, contact
+matrix/action, or physical result was created.
+
 ## 2026-08-11 — C94 C93 public-equivalence facade
 
 Status: **complete locally; not pushed**.

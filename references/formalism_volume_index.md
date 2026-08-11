@@ -1,5 +1,15 @@
 # Formalism volume source index
 
+## C95 historical public-input qualification
+
+C95 verifies the C94 public authority and independently recompiles the
+current descendant factorized domain, but stops before a scientific
+comparison because C94 does not publicly load historical normal forms, proof
+inputs, or primitive records. This is a repository-owned API qualification
+(`C95_IFEQUIV7_HISTORICAL_PUBLIC_INPUT_INCOMPLETE`), not a new source, an
+external-authority gap, or evidence of a scientific mismatch. The exact
+historical C72 runtime instance remains `UNKNOWN_NOT_CLAIMED`.
+
 ## C94 C93 public-equivalence facade
 
 C94 adds a project-owned immutable public import layer over C93's recovered
