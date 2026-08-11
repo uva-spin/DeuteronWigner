@@ -1,5 +1,13 @@
 # Formalism volume source index
 
+## C92 C90 public-payload qualification
+
+C92 verifies that C90's retained ledger is an authenticated compact
+semantic-root ledger, not a consumer-ready persistence of every normal form,
+primitive family, theorem specification, and proof-checker input. The result
+is a project-owned persistence boundary (`C92_IFEQUIVAPI_C90_PAYLOAD_INCOMPLETE`),
+not an external-authority gap or a scientific result.
+
 ## C91 C90-public-interface qualification
 
 C91 reconstructs the current descendant factorized C82 program domain but

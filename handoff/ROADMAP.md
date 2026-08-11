@@ -1,5 +1,23 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-11 — C92 C90 public-payload audit
+
+Status: **fail closed at local completion; no push**.
+
+C92 audited all four deterministic C90 compact runtime passes before adding a
+public facade. Their authenticated entries contain pair identity,
+normal-form root, primitive-root bundle, summary, and proof result, but do
+not retain normal-form content, primitive-family records, expression-rule
+roots, theorem specification, or proof-checker input schema. Recreating
+those objects from upstream builders is outside the C92 no-recomputation
+contract.
+
+The selected status is `C92_IFEQUIVAPI_C90_PAYLOAD_INCOMPLETE` (Route C).
+This preserves C90 science and C91's independent descendant compilation; it
+does not claim a C91 blocker supersession or a scientific mismatch. The exact
+next package is **C93/IFC90PAYLOAD**, restricted to recovering those missing
+authenticated C90-owned persisted objects.
+
 ## 2026-08-10 — C91 historical/descendant semantic-equivalence audit
 
 Status: **fail closed at local completion; no push**.
