@@ -1,5 +1,14 @@
 # Formalism volume source index
 
+## C96 historical proof-input persistence audit
+
+C96 verifies that the authenticated C93 capsule persists pair attestations
+and normal forms, but no independent pair-proof-input record domain. The
+available private helper performs a prohibited root-based composition, so
+`C96_IFHISTPUBLIC_PROOF_INPUT_LOADER_INCOMPLETE` is a project-owned payload
+boundary, not an external-authority gap or scientific mismatch. It introduces
+no new formalism source or physical result.
+
 ## C95 historical public-input qualification
 
 C95 verifies the C94 public authority and independently recompiles the

@@ -1,5 +1,23 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-11 — C96 historical proof-input persistence audit
+
+Status: **fail closed at local completion; not pushed**.
+
+C96 verified the frozen C94/C93/C90 authority chain and exhaustively
+censused the two authenticated C93 JSONL domains: 154,830 pair attestations
+and 154,830 normal-form records. Neither contains an independent terminal
+proof-input object. The only source routine labeled proof-input joins a pair
+attestation's normal-form root and proof result to a normal-form record;
+using that private root-based composition is forbidden by C96.
+
+The selected status is `C96_IFHISTPUBLIC_PROOF_INPUT_LOADER_INCOMPLETE`.
+This neither alters C90–C95 science nor claims a comparison outcome. The sole
+next package is **C97/IFPROOFINPUT**, restricted to locating or recovering an
+independent authenticated proof-input domain without root/proof-result
+composition. No public three-loader adapter, expanded stream, kernel product,
+contact matrix/action, or physical result was created.
+
 ## 2026-08-11 — C95 historical public-input qualification
 
 Status: **fail closed at local completion; not pushed**.
