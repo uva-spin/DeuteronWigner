@@ -1,5 +1,14 @@
 # Formalism volume source index
 
+## C89 nonmaterializing C82 attestation boundary
+
+C89 adds only project-owned factorized-program indexing and on-demand record
+reconstruction for the existing C82 bridge. It preserves the C88 scientific
+record schema and does not introduce an operator or numerical kernel value.
+The exact full-domain dual-digest execution remains an execution-envelope
+gate; it is not an external-authority gap or a recovery claim for the
+unknown historical C72 runtime instance.
+
 ## C88 historical C82 stream boundary
 
 The C88/IFSTREAM preflight uses only repository-owned C77/C78/C80/C82 and

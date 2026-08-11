@@ -1,5 +1,21 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-10 — C89 nonmaterializing C82 factorized-program audit
+
+Status: **execution fail closed; local completion commit only, not pushed**.
+
+C89 constructs executable source-ordered factorized programs for all 154,830
+C78-supported pairs. Exact mixed-radix rank/unrank reproduces 891,992,018
+logical C82 leaves; a reconstructed C88 scientific record agrees with the
+historical C82 lazy coefficient and bound. The largest pair has 46,656
+records. No expanded records or ledger were written.
+
+At the measured 310.58 on-demand records per second, one full route projects
+to 2,872,056 seconds and the required two-route/two-clean minimum projects
+to 11,488,224 seconds. The complete dual-digest, pair-atomic, restart, and
+parallel execution gate is therefore not claimed. The exact next package is
+**C90/IFBOUNDRESTART**, restricted to that execution envelope.
+
 ## 2026-08-10 — C88 bounded historical C82 scientific-stream preflight
 
 Status: **fail closed; local completion commit only, not pushed**.
