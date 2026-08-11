@@ -1,5 +1,12 @@
 # Formalism volume source index
 
+## C94 C93 public-equivalence facade
+
+C94 adds a project-owned immutable public import layer over C93's recovered
+preimage capsule. It provides pagination, lookup, typed-program access, and
+proof checking without rebuilding C90 science or asserting
+historical-versus-descendant equivalence.
+
 ## C93 recovered C90 semantic-payload capsule
 
 C93 is a repository-owned, commit-pinned recovery of omitted C90 semantic

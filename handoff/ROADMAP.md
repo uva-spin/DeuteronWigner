@@ -1,5 +1,21 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-11 — C94 C93 public-equivalence facade
+
+Status: **complete locally; not pushed**.
+
+C94 exposes the unchanged C93 recovered-preimage capsule through an immutable,
+root-bound public facade. All 154,830 pair attestations support exact-order
+pagination and direct lookup; normal forms, primitive fileset families,
+typed expressions, theorem data, proof records, and the no-leaf checker are
+publicly accessible without scientific reconstruction. The complete C94
+checker regression reproduces all historical proof results.
+
+This supersedes only the C91/C92 public-import blockers. It makes no
+historical-versus-descendant scientific-equivalence claim. The exact next
+package is **C95/IFEQUIV7**, restricted to that public-only exhaustive
+comparison.
+
 ## 2026-08-11 — C93 authenticated C90 semantic-payload recovery
 
 Status: **complete locally; not pushed**.
