@@ -29,8 +29,9 @@ class Reader:
     def __init__(self,source:Path,index:Path,zran:PersistentZranReader):
         self.source=source; self.zran=zran; self.manifest=MappingProxyType(json.loads(index.with_suffix(index.suffix+".json").read_text()));raw=index.read_bytes()
         if raw[:8]!=MAGIC or _sha_file(source)!=self.manifest["source_sha256"] or zran.metadata["root"]!=self.manifest["zran_root"] or _sha_file(index)!=self.manifest["index_sha256"] or sha256(raw[HEADER:]).hexdigest()!=self.manifest["table_sha256"]:raise ValueError("C97 proof-input index authentication failure")
-        self.table=raw[HEADER:]
+        self.table=raw[HEADER:];self._last_key=None;self._last_record=None
     def lookup(self,resolution:str,pair_id:str)->MappingProxyType:
+        if self._last_key==(resolution,pair_id): return MappingProxyType(self._last_record)
         d=key(resolution,pair_id);lo=0;hi=self.manifest["records"]
         while lo<hi:
             m=(lo+hi)//2
@@ -40,5 +41,6 @@ class Reader:
         _,off,n,line_sha,root,gseq,lseq=ENTRY.unpack_from(self.table,lo*ENTRY.size);raw=self.zran.read_uncompressed_range(off,n)
         rec=json.loads(raw)
         if sha256(raw).digest()!=line_sha or rec["pair"]["id"]!=pair_id or rec["pair"]["resolution"]!=resolution or rec["pair"]["global_sequence"]!=gseq or rec["pair"]["resolution_sequence"]!=lseq or rec["proof_input_root"]!=root.hex():raise ValueError("C97 proof-input line identity mismatch")
+        self._last_key=(resolution,pair_id);self._last_record=rec
         return MappingProxyType(rec)
     def close(self)->None:self.zran.close()

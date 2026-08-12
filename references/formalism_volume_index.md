@@ -673,3 +673,11 @@ DEFLATE restart and key indexes carry only transport metadata; the unchanged
 C93 normal-form gzip remains the sole normal-form payload. Checker results are
 a separate post-freeze regression holdout and are excluded from every operand
 identity and root.
+
+## C98 historical theorem-input public surface
+
+C98 adds only immutable retrieval: complete C93 normal forms through C97's
+indexed transport, frozen result-blind C97 proof inputs, and C94 primitive
+records through a compact direct-location index. The interface leaves every
+underlying scientific root unchanged and does not execute the subsequent
+historical-versus-descendant equivalence calculation.

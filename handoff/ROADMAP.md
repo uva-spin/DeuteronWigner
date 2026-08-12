@@ -3320,3 +3320,18 @@ normal forms or construct any descendant physics object.
 **Exact next package:** C98/IFHISTPUBLIC2 — expose the frozen historical
 normal-form, proof-input, and primitive record loaders. It must not rebuild
 the C97 proof-input domain or run a historical-versus-descendant comparison.
+
+## C98/IFHISTPUBLIC2 — immutable historical theorem-input facade
+
+Status: **completed locally.** C98 exposes authenticated immutable direct
+loaders for all historical pair normal forms, all result-blind proof inputs,
+and every C94 primitive record. All 154,830 normal forms and inputs load
+through C98 with zero content, root, order, or checker-result mismatches.
+The 35 primitive records pass direct-versus-family equality. C98 is only a
+retrieval surface: it neither reconstructs C97 inputs nor runs the
+historical-versus-current-descendant comparison.
+
+Exact outcome: C98_HISTORICAL_PUBLIC_THEOREM_INPUT_READY.
+
+Exact next package: C99/IFEQUIV8 — exhaustive public-only
+historical-versus-current-descendant factorized-semantic equivalence.
