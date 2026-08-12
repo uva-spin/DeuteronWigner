@@ -3365,3 +3365,15 @@ Exact outcome: C100_C98_AUTHENTICATED_PRIMITIVE_ENUMERATION_READY.
 Exact next package: C101/IFEQUIV9 — exhaustive public-only historical versus
 current-descendant semantic equivalence using C98 content retrieval and C100
 primitive enumeration only.
+
+## C101/IFEQUIV9 — fail-closed public theorem-checker audit
+
+Status: **expansion proof incomplete.** C101 froze the complete current
+descendant domain before historical access (154,830 pairs and 891,992,018
+logical records), then traversed C100's complete five-family/35-record domain
+and verified every public C98 primitive content record.  The permitted C98
+and C100 APIs do not export the required unchanged public
+factorized-semantic theorem/checker callable.  Calling the expected C98
+symbol raises `AttributeError`; importing the C94 implementation or writing
+a replacement theorem would violate C101's public-only boundary.  No C101
+equivalence decision is issued and no scientific mismatch is claimed.
