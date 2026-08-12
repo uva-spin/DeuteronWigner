@@ -689,3 +689,12 @@ by the public comparison boundary: five ordered families and 35 ordered
 records.  It copies no primitive scientific content; C98 remains the sole
 public content retrieval route.  Its enumeration and package roots are
 interface identities, not new physical or primitive scientific roots.
+
+## C102 public factorized-semantic checker authority
+
+C102 re-exports the accepted immutable C94 factorized-semantic theorem and
+no-leaf checker through a C98/C100-compatible public adapter. Its invocation
+records bind public theorem/checker source identities, the C88 order identity,
+result-blind historical program inputs, and primitive-equivalence identities.
+They are wrapper certificates, not historical C90 proof-certificate identities
+and not a historical-versus-descendant equivalence result.
