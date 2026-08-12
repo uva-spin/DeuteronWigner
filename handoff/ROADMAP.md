@@ -3303,3 +3303,20 @@ remain factorized and reversible.
 kernel values and assemble certified sparse and matrix-free bare direct-contact
 matrices. C82 creates no coefficient-times-kernel product, contact matrix,
 coupling, counterterm, C53 propagation, or C58 contribution.
+
+## C97/IFPROOFINPUT — authenticated result-blind C90 proof inputs
+
+Status: **completed locally.** C97 recovers the pre-checker C90 operand
+domain independently through exact C90 Route A and C93 indexed Route B.
+All 154,830 pair inputs match byte-for-byte, including every operand root.
+The post-freeze checker reproduces 154,830 historical result records with
+zero failures. Result-store poisoning leaves all operand records and roots
+unchanged; proof results and certificates remain excluded from proof-input
+identity. The C97 transport is metadata-only and does not duplicate C93
+normal forms or construct any descendant physics object.
+
+**Exact outcome:** `C97_C90_AUTHENTICATED_PROOF_INPUT_PAYLOAD_READY`.
+
+**Exact next package:** C98/IFHISTPUBLIC2 — expose the frozen historical
+normal-form, proof-input, and primitive record loaders. It must not rebuild
+the C97 proof-input domain or run a historical-versus-descendant comparison.

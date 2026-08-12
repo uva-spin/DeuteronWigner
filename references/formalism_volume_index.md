@@ -663,3 +663,13 @@ provide the projection coefficient, while C80 retains the longitudinal, spin,
 color-operator, four-HO, normalization, conversion, and `g_s²` factors. The
 bridge exposes exact coordinate IDs and certified coefficient bounds without
 forming any coefficient-times-kernel product or contact matrix.
+
+## C97 result-blind C90 proof-input authority
+
+C97 is an authority and reproducibility layer, not a QCD calculation. It
+freezes one pre-checker operand record per historical pair through independent
+C90 Route-A capture and C93 indexed Route-B reconstruction. Its fixed-endian
+DEFLATE restart and key indexes carry only transport metadata; the unchanged
+C93 normal-form gzip remains the sole normal-form payload. Checker results are
+a separate post-freeze regression holdout and are excluded from every operand
+identity and root.
