@@ -681,3 +681,11 @@ indexed transport, frozen result-blind C97 proof inputs, and C94 primitive
 records through a compact direct-location index. The interface leaves every
 underlying scientific root unchanged and does not execute the subsequent
 historical-versus-descendant equivalence calculation.
+
+## C100 primitive-domain enumeration
+
+C100 exports only the canonical primitive identity/location domain required
+by the public comparison boundary: five ordered families and 35 ordered
+records.  It copies no primitive scientific content; C98 remains the sole
+public content retrieval route.  Its enumeration and package roots are
+interface identities, not new physical or primitive scientific roots.

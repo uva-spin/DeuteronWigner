@@ -3348,3 +3348,20 @@ ID but C98 exports neither family enumeration nor an authenticated record
 page/manifest.  Reading C98's private compact index would violate C99's
 historical-access boundary.  No positive C99 status or comparison decision is
 issued.
+
+## C100/IFPRIMENUM — authenticated C98 primitive-domain enumeration
+
+Status: **completed locally.** C100 is a descendant interface package only:
+it preserves each C98 retrieval method and exposes the authenticated ordered
+primitive identity domain through a root-bound manifest and pagination.  All
+five families and all 35 identities were traversed at multiple page sizes,
+with zero missing, extra, duplicate, ordering, digest, root, inclusion, or
+page-versus-direct mismatches.  The C99 public-enumeration blocker is closed;
+C99's unresolved scientific decision remains historical until C101 reruns the
+complete comparison.
+
+Exact outcome: C100_C98_AUTHENTICATED_PRIMITIVE_ENUMERATION_READY.
+
+Exact next package: C101/IFEQUIV9 — exhaustive public-only historical versus
+current-descendant semantic equivalence using C98 content retrieval and C100
+primitive enumeration only.
