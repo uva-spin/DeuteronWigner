@@ -3335,3 +3335,16 @@ Exact outcome: C98_HISTORICAL_PUBLIC_THEOREM_INPUT_READY.
 
 Exact next package: C99/IFEQUIV8 — exhaustive public-only
 historical-versus-current-descendant factorized-semantic equivalence.
+
+## C99/IFEQUIV8 — fail-closed public primitive-domain audit
+
+Status: **scientific equivalence unresolved.** The descendant-only compiler
+freezes the complete 154,830-pair / 891,992,018-record domain independently,
+and the C98 public normal-form route agrees on the full K9 resolution after
+an explicit instance-metadata adapter.  C99 cannot, however, enumerate the
+five-family / 35-record historical primitive identity domain through C98's
+three exact public methods: `historical_primitive_record` requires a record
+ID but C98 exports neither family enumeration nor an authenticated record
+page/manifest.  Reading C98's private compact index would violate C99's
+historical-access boundary.  No positive C99 status or comparison decision is
+issued.
