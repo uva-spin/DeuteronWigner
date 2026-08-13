@@ -3397,6 +3397,18 @@ Exact outcome: C103_C82_HISTORICAL_DESCENDANT_FACTORIZED_SEMANTIC_EQUIVALENCE_RE
 Exact next package: C104/IFPERSIST4 — upstream-free canonical factorized
 pair-coordinate coefficient persistence, without a C80 kernel product.
 
+## C104/IFPERSIST4 — upstream-free canonical coefficient authority
+
+Status: **completed locally.** C104 persists the C103-proven descendant
+factorized programs and reconstructs canonical C82 coefficient records by
+exact mixed-radix rank/unrank. It contains no expanded logical stream and
+performed zero C80 evaluator calls, kernel loads, products, or contact-matrix
+assembly.
+
+Exact outcome: C104_C82_UPSTREAM_FREE_CANONICAL_FACTORIZED_COEFFICIENT_PACKAGE_READY.
+
+Exact next package: C105/IFCONTACT5.
+
 ## C101/IFEQUIV9 — fail-closed public theorem-checker audit
 
 Status: **expansion proof incomplete.** C101 froze the complete current
