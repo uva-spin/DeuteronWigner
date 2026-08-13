@@ -1,0 +1,9 @@
+{
+  "schema": "C105-DERIVATION-AUTHORITY-MANIFEST-V1",
+  "status": "C105_BLOCKED_C104_PROJECTED_COEFFICIENT_VALUES_UNAVAILABLE",
+  "C104_PACKAGE_ROOT": "42d3dc72def67806245875cf8c9fdfd1d801b212716e6735ade0763b4b2028de",
+  "C80_SCHEMA": "C80-IFKERNEL2-V1",
+  "ownership": {"C104": "projected coefficient and coordinate", "C80": "W3 kernel and factored g_s_squared"},
+  "missing_authority": ["numeric projected coefficient", "certified coefficient enclosure"],
+  "forbidden_substitutions": ["zero coefficient", "C53 value", "C58 value", "physical coupling", "counterterm"]
+}
