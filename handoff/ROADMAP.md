@@ -3466,6 +3466,19 @@ Exact outcome:
 `C112_C58_C111_SOURCE_ORDERED_BARE_INSTANTANEOUS_FERMION_BLOCK_READY`.
 Exact next package: C113/HQCD3.
 
+## C113/HQCD3 — local-QCD term-completeness audit
+
+Status: **fail-closed locally.** C113 inventories 15 C43 action/descendant
+classes and preserves C53 and C112. Three canonical terms are available, two
+are proved not applicable, one is a typed counterterm-only direction, and
+nine remain unavailable. The instantaneous-current/Gauss-law projection,
+free finite-basis M² operator, gluon normal-ordering descendants, and
+residual-boundary authority are not silently set to zero, so no bare local
+QCD polynomial is assembled. Exact status:
+`C113_HQCD3_MULTIPLE_LOCAL_TERMS_INCOMPLETE`.
+Exact next package: C114/ICURRENT, prioritized to derive current-current
+terms and then qualify the free operator.
+
 ## C101/IFEQUIV9 — fail-closed public theorem-checker audit
 
 Status: **expansion proof incomplete.** C101 froze the complete current

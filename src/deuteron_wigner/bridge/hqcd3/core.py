@@ -16,6 +16,7 @@ import ast
 import inspect
 import json
 from pathlib import Path
+from types import MappingProxyType
 from typing import Any
 
 import numpy as np
@@ -25,6 +26,14 @@ BASELINE = "ec705d02960d3a1a644958d43d35277a85f9825c"
 STATUS = "C54_INSTANTANEOUS_FERMION_ASSEMBLY_INCOMPLETE"
 NEXT = "C55/IFERM — finite-volume light-front instantaneous-fermion matrix completion"
 BLOCKER = "C54.IFERM.FINITE_VOLUME_NORMAL_ORDERED_PROJECTION"
+C113_STATUS = "C113_HQCD3_MULTIPLE_LOCAL_TERMS_INCOMPLETE"
+C113_NEXT = "C114/ICURRENT — source-qualified instantaneous-current/Gauss-law projection, then free-block qualification"
+TERM_STATUSES = ("AVAILABLE_SOURCE_QUALIFIED", "NOT_APPLICABLE_WITH_OPERATOR_PROOF", "EXACT_ZERO_WITH_OPERATOR_PROOF", "COUNTERTERM_DIRECTION_ONLY_COEFFICIENT_UNAVAILABLE", "UNAVAILABLE_BLOCKING")
+
+def _freeze(value: Any) -> Any:
+    if isinstance(value, dict): return MappingProxyType({k: _freeze(v) for k, v in value.items()})
+    if isinstance(value, list): return tuple(_freeze(v) for v in value)
+    return value
 
 
 def canonical_json(value: Any) -> str:
@@ -178,3 +187,73 @@ def assert_fail_closed_c54() -> dict[str, Any]:
     assert value["status"] == STATUS and not value["positive_gate"]
     assert static_isolation_guard()["pass"]
     return value
+
+# C113 audit-first public surface.  It intentionally does not assemble a
+# polynomial when a surviving source term lacks a finite-basis authority.
+def local_qcd_term_inventory() -> tuple[dict[str, Any], ...]:
+    rows = [
+        {"id":"free_q_m2", "order":0, "field_content":"q", "blocks":["q->q"], "status":"UNAVAILABLE_BLOCKING", "reason":"C47 free functional is not an authenticated finite-basis M2 matrix/action authority"},
+        {"id":"free_qg_m2", "order":0, "field_content":"qg", "blocks":["qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"C47 free functional is not an authenticated finite-basis M2 matrix/action authority"},
+        {"id":"canonical_q_emission", "order":1, "field_content":"q-qg", "blocks":["q->qg"], "status":"AVAILABLE_SOURCE_QUALIFIED", "reason":"C53 immutable physical vertex authority"},
+        {"id":"canonical_q_absorption", "order":1, "field_content":"qg-q", "blocks":["qg->q"], "status":"AVAILABLE_SOURCE_QUALIFIED", "reason":"exact C53 adjoint"},
+        {"id":"instantaneous_fermion", "order":2, "field_content":"q q A A", "blocks":["q->q","qg->qg"], "status":"AVAILABLE_SOURCE_QUALIFIED", "reason":"C112 direct-sum bare block"},
+        {"id":"instantaneous_current_qq", "order":2, "field_content":"Jq Jq", "blocks":["q->q","qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"no source-qualified finite-HO Gauss-law current-current contraction"},
+        {"id":"instantaneous_current_qg", "order":2, "field_content":"Jq Jg + Jg Jq", "blocks":["qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"mixed-current projection and normal-ordering descendants absent"},
+        {"id":"instantaneous_current_gg", "order":2, "field_content":"Jg Jg", "blocks":["qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"gluon-current finite-basis contraction absent; not set zero by sector truncation"},
+        {"id":"three_gluon_direct", "order":1, "field_content":"A A A", "blocks":["qg->qg"], "status":"NOT_APPLICABLE_WITH_OPERATOR_PROOF", "reason":"three-gluon monomial changes gluon number by odd parity on q⊕qg retained endpoints"},
+        {"id":"three_gluon_normal_ordering", "order":1, "field_content":"A A A contraction", "blocks":["qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"one-gluon contraction descendant requires explicit source normal-ordering audit"},
+        {"id":"four_gluon_direct", "order":2, "field_content":"A A A A", "blocks":["qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"four-gluon retained-space overlap and polarization/color projection absent"},
+        {"id":"four_gluon_normal_ordering", "order":2, "field_content":"A A A A contractions", "blocks":["qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"one-gluon self-energy contraction not source-qualified"},
+        {"id":"zero_mode_inverse_partial", "order":2, "field_content":"P0/Q0/(partial+)^-1", "blocks":["q->q","qg->qg"], "status":"NOT_APPLICABLE_WITH_OPERATOR_PROOF", "reason":"ordinary nonzero-mode kernels retain separate typed P0/Q0 controls"},
+        {"id":"residual_boundary", "order":2, "field_content":"residual transverse gauge/boundary", "blocks":["q->q","qg->qg"], "status":"UNAVAILABLE_BLOCKING", "reason":"C43 boundary functional has no finite-basis matrix authority"},
+        {"id":"mass_kinetic_counterterms", "order":2, "field_content":"counterterm directions", "blocks":["q->q","qg->qg"], "status":"COUNTERTERM_DIRECTION_ONLY_COEFFICIENT_UNAVAILABLE", "reason":"typed direction excluded from bare polynomial"},
+    ]
+    return tuple(_freeze(x) for x in rows)
+
+def bare_term_completeness_decision() -> dict[str, Any]:
+    inv = local_qcd_term_inventory()
+    blockers = tuple(x["id"] for x in inv if x["status"] == "UNAVAILABLE_BLOCKING")
+    return _freeze({"schema":"C113-TERM-COMPLETENESS-V1", "status":C113_STATUS,
+        "decision":"MULTIPLE_LOCAL_QCD_TERMS_BLOCKING", "blockers":blockers,
+        "positive_polynomial":False, "reason":"surviving instantaneous-current, gluon-normal-ordering, free, and boundary authorities are incomplete",
+        "counterterms_separate":True})
+
+def missing_term_manifest() -> dict[str, Any]:
+    return _freeze({"schema":"C113-MISSING-TERMS-V1", "priority":"C114/ICURRENT",
+        "first_task":"derive JqJq, JqJg, JgJq, JgJg finite-HO Gauss-law current projection",
+        "then":"qualify C45/C47 free q and qg M2 matrix/action",
+        "no_silent_zero":True, "unavailable_terms":[x["id"] for x in local_qcd_term_inventory() if x["status"] == "UNAVAILABLE_BLOCKING"]})
+
+def direct_sum_basis_manifest(resolution: str) -> dict[str, Any]:
+    dims = {"K9_2_N8_b0.40":(6,1344,1350), "K11_2_N10_b0.45":(6,2700,2706), "K13_2_N12_b0.50":(6,4752,4758)}
+    if resolution not in dims: raise KeyError(resolution)
+    q,qg,total = dims[resolution]
+    return _freeze({"resolution":resolution,"q":q,"qg":qg,"total":total,"order":"q followed by qg","source":"C112 direct-sum basis"})
+
+def load_verified_local_qcd_term_authority() -> dict[str, Any]:
+    c53 = c53_read_only_import()
+    return _freeze({"schema":"C113-HQCD3-V1", "status":C113_STATUS, "term_inventory":local_qcd_term_inventory(),
+        "C53_status":c53["status"], "C112_status":"C112_C58_C111_SOURCE_ORDERED_BARE_INSTANTANEOUS_FERMION_BLOCK_READY",
+        "polynomial_available":False, "physical_coupling":False, "counterterm_values":0})
+
+def verify_local_qcd_term_authority() -> dict[str, Any]:
+    a = load_verified_local_qcd_term_authority(); d = bare_term_completeness_decision()
+    return {"status":C113_STATUS,"pass":True,"authority":a,"decision":d,"unclassified":0,"fock_intuition_drops":0,"C53":0,"C112":1}
+
+def coupling_order_contract() -> dict[str, Any]:
+    return _freeze({"schema":"C113-COUPLING-ORDER-V1","M0":"free q/qg (blocked)","V1":"C53 plus adjoint","V2":"C112 plus audited surviving terms (blocked)","g_s":"factored","counterterms":"separate unavailable"})
+
+def counterterm_direction_manifest(resolution: str|None=None) -> dict[str, Any]:
+    return _freeze({"schema":"C113-COUNTERTERM-V1","status":"COUNTERTERM_DIRECTION_ONLY_COEFFICIENT_UNAVAILABLE","resolution":resolution,"included_in_bare":False,"coefficient":"UNAVAILABLE","zero_forbidden":True})
+
+def free_m2_sparse_matrix(resolution: str) -> Any:
+    raise RuntimeError("C113 free operator blocked: C47 functional is not a finite-basis matrix authority")
+def canonical_vertex_coefficient_sparse_matrix(resolution: str) -> Any:
+    raise RuntimeError("C113 polynomial assembly blocked by missing local terms")
+def instantaneous_fermion_coefficient_sparse_matrix(resolution: str) -> Any:
+    raise RuntimeError("C113 polynomial assembly blocked by missing local terms")
+def order_gs2_term_manifest(resolution: str) -> dict[str, Any]: return _freeze({"resolution":resolution,"status":"BLOCKED_BY_MISSING_SURVIVING_TERMS","C112":"available","instantaneous_current":"unavailable"})
+def bare_polynomial_manifest(resolution: str) -> dict[str, Any]: raise RuntimeError("bare polynomial unavailable until term completeness closes")
+def apply_free_m2(resolution: str, vector: np.ndarray) -> Any: raise RuntimeError("free operator unavailable")
+def apply_canonical_vertex_coefficient(resolution: str, vector: np.ndarray) -> Any: raise RuntimeError("polynomial unavailable")
+def apply_order_gs2_coefficient(resolution: str, vector: np.ndarray) -> Any: raise RuntimeError("polynomial unavailable")

@@ -745,6 +745,15 @@ Hermiticity are exposed as immutable descendant authority. C111 does not
 include C58 self-induced inertia, C53 propagation, counterterms, or physical
 coupling values.
 
+## C113 local-QCD term audit
+
+C113 audits the C43 action on the q⊕qg basis before assuming that free, C53,
+and C112 exhaust local QCD. The canonical q↔qg vertex and C112 block are
+available; the finite-basis free M² operator, Gauss-law instantaneous-current
+products, gluon normal-ordering descendants, and residual-boundary terms are
+not yet source-qualified. The package therefore remains fail-closed with
+typed counterterm directions and no polynomial or renormalized Hamiltonian.
+
 ## C112 bare instantaneous-fermion direct sum
 
 C112 assembles the source-ordered bare block
