@@ -698,3 +698,11 @@ records bind public theorem/checker source identities, the C88 order identity,
 result-blind historical program inputs, and primitive-equivalence identities.
 They are wrapper certificates, not historical C90 proof-certificate identities
 and not a historical-versus-descendant equivalence result.
+
+## C103 public factorized-semantic equivalence
+
+C103 uses the immutable C98 historical input surface, C100 primitive-domain
+enumeration, and C102's unchanged C94 checker to compare the compact
+factorized semantics of every supported pair. Its aggregate equivalence root
+attests to ordered-program equivalence; it is not an expanded C88 record
+stream and contains no coefficient-times-kernel evaluation.

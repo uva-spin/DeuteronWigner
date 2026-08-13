@@ -3381,6 +3381,22 @@ Exact outcome: C102_C94_PUBLIC_FACTORIZED_SEMANTIC_CHECKER_READY.
 Exact next package: C103/IFEQUIV10 — exhaustive public-only historical versus
 current-descendant factorized-semantic equivalence.
 
+## C103/IFEQUIV10 — complete public factorized-semantic comparison
+
+Status: **completed locally.** C103 independently froze the current
+154,830-pair descendant domain before enabling historical public APIs. It then
+crosswalked five primitive families and 35 primitive records, compared every
+historical/descendant typed program, and invoked the unchanged C102 checker on
+all 154,830 pairs. All proofs were positive and all scientific mismatch
+categories closed at zero. The sole adapter removes four declared
+source/API-instance metadata keys from the descendant primitive-root wrapper;
+it changes no canonical scientific content.
+
+Exact outcome: C103_C82_HISTORICAL_DESCENDANT_FACTORIZED_SEMANTIC_EQUIVALENCE_READY.
+
+Exact next package: C104/IFPERSIST4 — upstream-free canonical factorized
+pair-coordinate coefficient persistence, without a C80 kernel product.
+
 ## C101/IFEQUIV9 — fail-closed public theorem-checker audit
 
 Status: **expansion proof incomplete.** C101 froze the complete current
