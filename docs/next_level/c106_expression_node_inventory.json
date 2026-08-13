@@ -1,0 +1,10 @@
+{
+  "schema": "C106-EXPRESSION-NODE-INVENTORY-V1",
+  "status": "C106_IFCOEFFVAL_SYMBOL_BINDING_INCOMPLETE",
+  "nodes": [
+    {"opcode": "MULTIPLY", "arity": 2, "occurrences_per_pair": 3, "supported": true},
+    {"opcode": "CONJUGATE", "arity": 1, "occurrences_per_pair": 1, "supported": true},
+    {"kind": "symbol", "identities": ["C77COMP_bra", "U3_bra", "C77COMP_ket", "U3_ket"], "supported": false}
+  ],
+  "unknown_expression_nodes": 0
+}
