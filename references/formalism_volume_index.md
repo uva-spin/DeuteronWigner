@@ -744,3 +744,15 @@ support, matrix-free action, factor ownership, count-once, and source-order
 Hermiticity are exposed as immutable descendant authority. C111 does not
 include C58 self-induced inertia, C53 propagation, counterterms, or physical
 coupling values.
+
+## C112 bare instantaneous-fermion direct sum
+
+C112 assembles the source-ordered bare block
+\(\operatorname{diag}(H_{q,\mathrm{C58}}^{\mathrm{SII}},
+H_{qg,\mathrm{C111}}^{\mathrm{direct}})\) in the q-then-qg basis. The
+cross-sector entries are exact zero by the C55 gluon-number-parity
+certificate, not omitted calculations. C58's qg
+`IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY` status remains an unavailable
+typed direction and is excluded from the bare numerical block. Units are
+GeV²/g_s² with g_s² factored; C53, current/gluon, free, counterterm, and
+renormalized Hamiltonian contributions remain outside this package.

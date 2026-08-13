@@ -3451,6 +3451,21 @@ Exact outcome:
 Exact next package: C112/IFERM3 — source-ordered bare instantaneous-fermion
 block assembly.
 
+## C112/IFERM3 — source-ordered bare instantaneous-fermion block
+
+Status: **completed locally.** C112 forms the direct sum of the immutable
+C58 6x6 q-sector self-induced-inertia primitive and the immutable C111 qg
+direct-contact authority. The order is q followed by qg, giving dimensions
+1,350 / 2,706 / 4,758. q↔qg blocks are exact zero from C55
+gluon-number parity, while the C58 qg status
+`IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY` remains typed and excluded from
+the bare matrix. No C53 propagation, coupling, counterterm coefficient, or
+renormalized local-QCD assembly is present.
+
+Exact outcome:
+`C112_C58_C111_SOURCE_ORDERED_BARE_INSTANTANEOUS_FERMION_BLOCK_READY`.
+Exact next package: C113/HQCD3.
+
 ## C101/IFEQUIV9 — fail-closed public theorem-checker audit
 
 Status: **expansion proof incomplete.** C101 froze the complete current
