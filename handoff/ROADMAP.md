@@ -3437,6 +3437,20 @@ expanded logical stream is present. Exact status:
 `C110_C80_SOURCE_DERIVED_FIELD_NORMALIZED_BOOST_INVARIANT_M2_KERNEL_READY`.
 Exact next package: C111 direct-contact assembly from C104/C107/C110.
 
+## C111/IFCONTACT7 — bare qg direct-contact operator
+
+Status: **completed locally.** C111 consumes C107 projected coefficients and
+the C110 corrected boost-invariant M2 kernel exactly once through a bounded
+factorized pair API. It preserves the 154,830 pair / 891,992,018 logical
+census, keeps `g_s^2` factored, and exposes immutable pair, sparse-support,
+matrix-free, ancestry, factor-ownership, and count-once surfaces. No C53,
+C58, physical coupling, counterterm, or expanded logical stream is present.
+
+Exact outcome:
+`C111_C107_C110_SOURCE_DERIVED_QG_DIRECT_CONTACT_OPERATOR_READY`.
+Exact next package: C112/IFERM3 — source-ordered bare instantaneous-fermion
+block assembly.
+
 ## C101/IFEQUIV9 — fail-closed public theorem-checker audit
 
 Status: **expansion proof incomplete.** C101 froze the complete current

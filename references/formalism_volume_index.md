@@ -732,3 +732,15 @@ corrected (P^-) kernel has GeV/(g_s^2) units while its (M^2) form has
 GeV²/(g_s^2) units, with no numerical (L) or (P^+) chosen. C110 is an
 on-demand normalization adapter only: it does not evaluate projected
 coefficients, multiply by C80 kernels, or assemble a contact operator.
+
+## C111 source-derived qg direct contact
+
+C111 is the first authorized coefficient-times-corrected-kernel layer. It
+consumes C107 certified projected coefficients and C110's
+`K/sqrt(k_g_out*k_g_in)` corrected M2 kernel, preserving explicit `g_s^2`.
+The complete factorized census remains 154,830 pair programs and 891,992,018
+logical records; no expanded stream is written. Pair entries, sparse
+support, matrix-free action, factor ownership, count-once, and source-order
+Hermiticity are exposed as immutable descendant authority. C111 does not
+include C58 self-induced inertia, C53 propagation, counterterms, or physical
+coupling values.
