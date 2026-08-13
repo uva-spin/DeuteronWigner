@@ -706,3 +706,29 @@ enumeration, and C102's unchanged C94 checker to compare the compact
 factorized semantics of every supported pair. Its aggregate equivalence root
 attests to ordered-program equivalence; it is not an expanded C88 record
 stream and contains no coefficient-times-kernel evaluation.
+
+## C104-C109 coefficient/contact boundary
+
+C104 freezes the upstream-free factorized coefficient representation. C105
+through C108 retain the no-product boundary while binding executable
+projected coefficients and the raw C80 contact-kernel interface. C109 fixes
+the finite-cell longitudinal convention and proves cancellation of the
+arbitrary box length, but leaves the (P^-) dimensional normalization
+incomplete.
+
+## C110 source-derived field normalization
+
+C110 derives the two-gluon inverse-energy normalization omitted from the C80
+four-field descendant. The source/project field expansion and the
+independent canonical-commutator/state route agree on
+
+\[
+N_{g'g}=\frac{L}{2\pi\sqrt{k_{g'}k_g}},\qquad
+2P^+N_{g'g}=\frac{K}{\sqrt{k_{g'}k_g}},
+\]
+
+using (P^+=\pi K/L) and (k_i^+=\pi k_i/L). Thus the descendant
+corrected (P^-) kernel has GeV/(g_s^2) units while its (M^2) form has
+GeV²/(g_s^2) units, with no numerical (L) or (P^+) chosen. C110 is an
+on-demand normalization adapter only: it does not evaluate projected
+coefficients, multiply by C80 kernels, or assemble a contact operator.

@@ -3409,6 +3409,34 @@ Exact outcome: C104_C82_UPSTREAM_FREE_CANONICAL_FACTORIZED_COEFFICIENT_PACKAGE_R
 
 Exact next package: C105/IFCONTACT5.
 
+## C105-C109 direct-contact normalization boundary
+
+C105/C108 remain fail-closed: no coefficient-times-kernel product or contact
+operator was created. C106/C107 supplied executable projected-coefficient
+binding and certified values while preserving C104. C109 audited the frozen
+finite-cell convention and proved the explicit longitudinal (L) cancellation
+without selecting a numerical (P^+) or (L). Its remaining dimensional
+qualification is the C80 four-HO (b_{HO}^2) versus true (P^-) mismatch.
+
+## C110/IFKERNELNORM2 — source-derived field-normalized kernel
+
+Status: **completed locally.** C110 preserves C80-C109 and derives the
+missing inverse-energy normalization from the two transverse gauge-field
+insertions, with Route A (source expansion to finite-cell normalized states)
+and Route B (canonical commutator, one-particle norm, qg Gram, and C74
+isometry) agreeing exactly. The classification is
+`TWO_GLUON_FIELD_FACTORS_OMITTED`; no quark/state factor remains. The
+descendant adapter exposes symbolic-(L) (P^-) records in GeV/(g_s^2) and
+boost-invariant (M^2) records in GeV²/(g_s^2), with
+
+`N_field = L/(2*pi*sqrt(k_g_out*k_g_in))` and
+`M2 factor = K/sqrt(k_g_out*k_g_in)`.
+
+No C107 products, contact entries, C53/C58 values, coupling, counterterm, or
+expanded logical stream is present. Exact status:
+`C110_C80_SOURCE_DERIVED_FIELD_NORMALIZED_BOOST_INVARIANT_M2_KERNEL_READY`.
+Exact next package: C111 direct-contact assembly from C104/C107/C110.
+
 ## C101/IFEQUIV9 — fail-closed public theorem-checker audit
 
 Status: **expansion proof incomplete.** C101 froze the complete current
