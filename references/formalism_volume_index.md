@@ -776,3 +776,6 @@ Laguerre/generating-function authority, and fail-closed graph-specific
 contraction-projector boundary.
 C117/ICREG2: graph-conditioned finite-shell density, derivative, CM-ground,
 and triplet projector authority; component assembly remains a separate gate.
+C118/ICASM2: first value-level current assembly boundary; source-witness
+domains close, but executable quark/gluon current-factor values remain a
+separate normalization authority task.
