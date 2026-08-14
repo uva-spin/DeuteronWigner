@@ -769,3 +769,5 @@ C114/ICURRENT: C43 Gauss-law current-current operator, Q0/PV inverse-
 partial-plus-squared finite-cell identity, current monomial and contraction
 audit, and fail-closed finite-HO projection boundary. No current matrix or
 local-QCD polynomial is claimed.
+C115/ICHO: typed diagonal Gauss-law current programs, independent quark and
+gluon current-factor derivations, and fail-closed finite-HO/projector gate.

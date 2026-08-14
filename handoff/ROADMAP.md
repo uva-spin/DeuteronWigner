@@ -3496,3 +3496,9 @@ products and 16 q/qg blocks audited. Eight cross-sector blocks are exact
 even-gluon-parity zeros; eight diagonal components remain
 C114_ICURRENT_FINITE_BASIS_PROJECTION_INCOMPLETE. Complete current block is
 fail-closed. Sole continuation: C115/ICHO.
+C115/ICHO (05ac97122c8bc86838454709bbad1cb255ec6213 -> local):
+all eight C114 diagonal current programs are frozen and quark/gluon current
+factors agree by independent symbolic routes. Current-specific finite-HO
+kernel and contraction-projector authority remains unavailable, so no
+component or complete block is represented as zero. Status
+C115_ICHO_TRANSVERSE_KERNEL_INCOMPLETE; sole continuation C116/ICHO2.
