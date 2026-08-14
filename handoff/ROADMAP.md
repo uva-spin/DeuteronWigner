@@ -3508,3 +3508,9 @@ I4_local has an exact two-route spatial expression and spatial-only C80
 reuse proof. Four graph-specific finite-shell projector classes remain
 unavailable; seven programs stay blocking. Status
 C116_ICHO2_KERNEL_CLASS_INCOMPLETE; sole continuation C117/ICREG2.
+C117/ICREG2 (6e86d87e131c040c8feaad89bf3d691ed1a5ea1f -> local):
+constructed all four graph-specific finite-shell projectors: I2 density,
+derivative-weighted density, transformed CM-ground, and retained triplet.
+Explicit mode routes and closed identities agree with zero residual; no
+continuum completeness or C57/C58 reuse. Projector authority is ready, but
+component/block assembly remains deferred. Sole continuation C118/ICASM2.

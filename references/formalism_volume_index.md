@@ -774,3 +774,5 @@ gluon current-factor derivations, and fail-closed finite-HO/projector gate.
 C116/ICHO2: exact five-class current-HO inventory, I4 spatial-only
 Laguerre/generating-function authority, and fail-closed graph-specific
 contraction-projector boundary.
+C117/ICREG2: graph-conditioned finite-shell density, derivative, CM-ground,
+and triplet projector authority; component assembly remains a separate gate.
