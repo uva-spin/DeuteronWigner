@@ -3502,3 +3502,9 @@ factors agree by independent symbolic routes. Current-specific finite-HO
 kernel and contraction-projector authority remains unavailable, so no
 component or complete block is represented as zero. Status
 C115_ICHO_TRANSVERSE_KERNEL_INCOMPLETE; sole continuation C116/ICHO2.
+C116/ICHO2 (291c14537348e48ac5b360f858e623d0b4635144 -> local):
+the five C115 kernel IDs are frozen and the eight-program crosswalk closes.
+I4_local has an exact two-route spatial expression and spatial-only C80
+reuse proof. Four graph-specific finite-shell projector classes remain
+unavailable; seven programs stay blocking. Status
+C116_ICHO2_KERNEL_CLASS_INCOMPLETE; sole continuation C117/ICREG2.

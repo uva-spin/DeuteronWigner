@@ -771,3 +771,6 @@ audit, and fail-closed finite-HO projection boundary. No current matrix or
 local-QCD polynomial is claimed.
 C115/ICHO: typed diagonal Gauss-law current programs, independent quark and
 gluon current-factor derivations, and fail-closed finite-HO/projector gate.
+C116/ICHO2: exact five-class current-HO inventory, I4 spatial-only
+Laguerre/generating-function authority, and fail-closed graph-specific
+contraction-projector boundary.
