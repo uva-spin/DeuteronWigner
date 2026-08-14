@@ -3490,3 +3490,9 @@ factorized-semantic theorem/checker callable.  Calling the expected C98
 symbol raises `AttributeError`; importing the C94 implementation or writing
 a replacement theorem would violate C101's public-only boundary.  No C101
 equivalence decision is issued and no scientific mismatch is claimed.
+C114/ICURRENT (eda96bd6dcdde99ca60cc2475bbebc98cf5da53e -> local):
+source-qualified C43 Gauss-law current operator frozen; all four current
+products and 16 q/qg blocks audited. Eight cross-sector blocks are exact
+even-gluon-parity zeros; eight diagonal components remain
+C114_ICURRENT_FINITE_BASIS_PROJECTION_INCOMPLETE. Complete current block is
+fail-closed. Sole continuation: C115/ICHO.
