@@ -3566,3 +3566,14 @@ close without numerical values, bounds, thresholds, or quadrature support.
 No witness, target, sum, or operator is constructed. Status
 C124_C123_SOURCE_DERIVED_FINITE_PROJECTOR_MEMBER_AUTHORITY_READY; sole
 continuation C125/ICDOMAIN2.
+C125/ICDOMAIN2 (0b1919541a6e65a2a55c577f496ae390af38f0a9 -> local):
+verified all 72 C124 finite-member conditioning keys through the immutable
+public API and constructed the complete diagonal logical witness domain as
+24 factorized program/resolution segments. Source-first and target-first
+routes agree in identity, member references, atomicity, order, cardinality,
+targets, and orientation; q/qg cross-sector classes remain eight certified
+empty parity domains. Mixed-radix rank/unrank and target spans are bounded
+and upstream-free. No witness values, bounds, sums, matrices, couplings, or
+counterterms are formed. Status
+C125_C123_C124_SOURCE_DERIVED_LOGICAL_WITNESS_AUTHORITY_READY; sole
+continuation C126/ICSUM3.

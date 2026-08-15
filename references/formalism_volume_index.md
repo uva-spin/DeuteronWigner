@@ -809,3 +809,10 @@ terminal statuses are traversed through independent graph-first and
 projector-preimage routes. Derivative weights remain symbolic and signed;
 no values, bounds, witnesses, targets, sums, or operators are introduced.
 Sole continuation C125/ICDOMAIN2.
+C125/ICDOMAIN2: complete factorized diagonal logical-witness identity
+authority over the C123 physical axes and C124 finite I2/derivative members.
+Twenty-four program/resolution segments provide exact rank/unrank, target
+spans, count-once and adjoint ancestry without an expanded stream or any
+values/bounds. All 72 C124 conditionings and both source-first/target-first
+routes close with zero mismatch; eight cross-sector parity domains remain
+certified empty. Sole continuation C126/ICSUM3.
