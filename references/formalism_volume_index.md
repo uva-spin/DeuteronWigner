@@ -786,3 +786,8 @@ authority. The eight cross-sector entries remain exact C114 parity zeros;
 diagonal values are fail-closed because C118 has no authenticated per-witness
 value/target/bound records. No physical coupling, counterterm coefficient,
 free block, C53/C112 substitute, or local-QCD polynomial is introduced.
+C121/ICSUM2: descendant witness-authority boundary over immutable C118
+structural identities and C119 factor leaves. No historical C118 content is
+claimed; no witness, target, product, component sum, sparse action, or full
+instantaneous-current block is fabricated while logical witness identities
+and target spans remain unpublished. Sole continuation C122/ICDOMAIN.

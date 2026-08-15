@@ -3534,3 +3534,10 @@ source-witness inventory still publishes no per-witness value, matrix-target,
 or certified-bound records. All eight diagonal components therefore remain
 C120_ICASM3_COMPONENT_EVALUATION_INCOMPLETE; no unavailable component is
 serialized as zero. Sole continuation C121/ICSUM2.
+C121/ICSUM2 (5adf5381ca18702b0cfab44580007ee92178650a -> local):
+consumed the C118 structural and C119 factor authorities without claiming
+historical C118 recovery. C118 exposes eight program rows but no logical
+witness IDs/ranks, physical targets, or target spans, so no descendant witness
+records can be authenticated without invention. Status
+C121_ICSUM2_LOGICAL_WITNESS_DOMAIN_INCOMPLETE; sole targeted continuation
+C122/ICDOMAIN.
