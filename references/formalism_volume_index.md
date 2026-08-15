@@ -779,3 +779,5 @@ and triplet projector authority; component assembly remains a separate gate.
 C118/ICASM2: first value-level current assembly boundary; source-witness
 domains close, but executable quark/gluon current-factor values remain a
 separate normalization authority task.
+C119/ICNORM3: executable symbolic current-factor authority, leaf binding,
+two-route agreement, exact bounds, and downstream-poisoned assembly handoff.
