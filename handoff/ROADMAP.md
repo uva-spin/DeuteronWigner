@@ -3541,3 +3541,9 @@ witness IDs/ranks, physical targets, or target spans, so no descendant witness
 records can be authenticated without invention. Status
 C121_ICSUM2_LOGICAL_WITNESS_DOMAIN_INCOMPLETE; sole targeted continuation
 C122/ICDOMAIN.
+C122/ICDOMAIN (1983726b81809e72c6a9078658ce60903527fa0d -> local):
+preserved the eight program templates and eight certified cross-sector empty
+domains, but C117 graph descriptors still expose no authenticated axis members
+or cardinalities and C118 has no logical witness identities. No ranks,
+targets, spans, values, or operators were inferred. Status
+C122_ICDOMAIN_LOGICAL_AXES_INCOMPLETE; sole targeted continuation C123/ICAXIS.
