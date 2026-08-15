@@ -821,3 +821,8 @@ authority over all C125 segments. Route V-A and V-B typed programs close,
 with symbolic scale and bound semantics, adjoint identities, target-value
 spans, and no component aggregation or operator construction. Sole
 continuation C127/ICAGG3.
+C127/ICAGG3: certified factorized target aggregation over the complete C126
+witness-value census, with terminal eight-component status, sparse and
+independent matrix-free authorities, mixed-current adjoint closure, source
+Hermiticity, and exact cross-sector parity-zero blocks. Sole continuation
+C128/FREE2.

@@ -3587,3 +3587,11 @@ certified bound semantics are explicit, with C125 member weights retained
 as witness-owned. Status
 C126_C125_SOURCE_DERIVED_AUTHENTICATED_CURRENT_WITNESS_VALUE_AUTHORITY_READY;
 sole continuation C127/ICAGG3.
+C127/ICAGG3 (a4421929c58d7f4f68e9cc3560e774243a350b48 -> local):
+reduced the immutable C126 value spans by exact target-template and
+authenticated multiplicity programs without traversing the expanded
+474533910576-record domain. All eight diagonal components are terminal
+source-qualified; factorized sparse and independent matrix-free authorities
+preserve q-then-qg dimensions, source Hermiticity, mixed-current adjoint
+closure, and the eight C114 parity-zero cross-sector blocks. No physical
+coupling or counterterm coefficient is selected. Sole continuation C128/FREE2.
