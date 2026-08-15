@@ -795,3 +795,11 @@ C122/ICDOMAIN: explicit program-template/logical-witness/value-domain
 taxonomy and cross-sector parity-zero empty domains. Logical axes remain
 unpublished by the C117/C118 public records, so no witness IDs, ranks, targets,
 spans, values, or operators are inferred. Sole continuation C123/ICAXIS.
+C123/ICAXIS: descendant identity-only axis authority over the unchanged
+C114/C115/C117/C119/C64/C74/C77/C112 public identities. Physical dimensions,
+source graph/program, spin/color, CM, triplet, orientation, and current-factor
+axis records are immutable and two-route checked. C117 graph-conditioned
+internal-mode cardinalities remain unpublished and are represented as an
+explicit project-owned AMBIGUOUS_BLOCKING qualification; no logical witness,
+matrix target, numerical value, bound, sum, or operator is introduced. Sole
+targeted continuation C124/ICDOMAIN2.

@@ -3547,3 +3547,13 @@ domains, but C117 graph descriptors still expose no authenticated axis members
 or cardinalities and C118 has no logical witness identities. No ranks,
 targets, spans, values, or operators were inferred. Status
 C122_ICDOMAIN_LOGICAL_AXES_INCOMPLETE; sole targeted continuation C123/ICAXIS.
+C123/ICAXIS (a2bf6c3052a83a11680b6e321947f21bcaf7b5d -> local):
+published a descendant identity-only axis facade. Physical q/qg state axes,
+source graphs, monomial templates, helicity/color, CM-ground, triplet, and
+orientation members have deterministic two-route identity crosswalks and the
+required q/qg/direct-sum dimensions. C117's graph-conditioned internal-mode
+records still provide no finite members or conditional cardinalities, so
+longitudinal-transfer and external-mode axes remain explicitly
+AMBIGUOUS_BLOCKING; no historical C117 member recovery is claimed and no
+witness, target, value, bound, sum, or operator is constructed. Status
+C123_ICAXIS_AXIS_CARDINALITY_INCOMPLETE; targeted continuation C124/ICDOMAIN2.
