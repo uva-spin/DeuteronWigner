@@ -816,3 +816,8 @@ spans, count-once and adjoint ancestry without an expanded stream or any
 values/bounds. All 72 C124 conditionings and both source-first/target-first
 routes close with zero mismatch; eight cross-sector parity domains remain
 certified empty. Sole continuation C126/ICSUM3.
+C126/ICSUM3: factorized exact/certified witness P-minus and M2 value
+authority over all C125 segments. Route V-A and V-B typed programs close,
+with symbolic scale and bound semantics, adjoint identities, target-value
+spans, and no component aggregation or operator construction. Sole
+continuation C127/ICAGG3.

@@ -3577,3 +3577,13 @@ and upstream-free. No witness values, bounds, sums, matrices, couplings, or
 counterterms are formed. Status
 C125_C123_C124_SOURCE_DERIVED_LOGICAL_WITNESS_AUTHORITY_READY; sole
 continuation C126/ICSUM3.
+C126/ICSUM3 (3298484785171a9811429ca6a6fd4e84eb3a2406 -> local):
+attached exact typed P-minus and M2 value/bound programs to the unchanged
+C125 witness identity domain through 24 factorized segments. Route V-A
+primitive-reference compilation and independent Route V-B source-graph
+replay agree by typed segment induction over the full 474533910576 census;
+no expanded stream or target aggregation is formed. Symbolic scale and
+certified bound semantics are explicit, with C125 member weights retained
+as witness-owned. Status
+C126_C125_SOURCE_DERIVED_AUTHENTICATED_CURRENT_WITNESS_VALUE_AUTHORITY_READY;
+sole continuation C127/ICAGG3.
