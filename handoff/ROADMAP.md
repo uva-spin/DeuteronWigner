@@ -3527,3 +3527,10 @@ and adjoint routes agree exactly with zero-radius bounds. No downstream
 products or matrices were evaluated. Status
 C119_C115_SOURCE_DERIVED_CERTIFIED_CURRENT_FACTOR_AUTHORITY_READY; sole
 continuation C120/ICASM3.
+C120/ICASM3 (76ba78b61951d778421b233501418e43d127025b -> local):
+consumed C114-C119 and preserved all eight C114 parity zeros. C119's 36
+current-factor leaves bind at program level, but the authenticated C118
+source-witness inventory still publishes no per-witness value, matrix-target,
+or certified-bound records. All eight diagonal components therefore remain
+C120_ICASM3_COMPONENT_EVALUATION_INCOMPLETE; no unavailable component is
+serialized as zero. Sole continuation C121/ICSUM2.

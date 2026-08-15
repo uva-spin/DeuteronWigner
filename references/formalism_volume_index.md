@@ -781,3 +781,8 @@ domains close, but executable quark/gluon current-factor values remain a
 separate normalization authority task.
 C119/ICNORM3: executable symbolic current-factor authority, leaf binding,
 two-route agreement, exact bounds, and downstream-poisoned assembly handoff.
+C120/ICASM3: value-level assembly boundary consuming the C119 current-factor
+authority. The eight cross-sector entries remain exact C114 parity zeros;
+diagonal values are fail-closed because C118 has no authenticated per-witness
+value/target/bound records. No physical coupling, counterterm coefficient,
+free block, C53/C112 substitute, or local-QCD polynomial is introduced.
