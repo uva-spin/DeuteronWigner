@@ -803,3 +803,9 @@ internal-mode cardinalities remain unpublished and are represented as an
 explicit project-owned AMBIGUOUS_BLOCKING qualification; no logical witness,
 matrix target, numerical value, bound, sum, or operator is introduced. Sole
 targeted continuation C124/ICDOMAIN2.
+C124/ICMEMBERS: exact finite graph-conditioned member authority for the C117
+I2 density and derivative density domains. C45/C47 labels and C64 exact
+terminal statuses are traversed through independent graph-first and
+projector-preimage routes. Derivative weights remain symbolic and signed;
+no values, bounds, witnesses, targets, sums, or operators are introduced.
+Sole continuation C125/ICDOMAIN2.

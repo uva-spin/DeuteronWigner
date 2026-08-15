@@ -3557,3 +3557,12 @@ longitudinal-transfer and external-mode axes remain explicitly
 AMBIGUOUS_BLOCKING; no historical C117 member recovery is claimed and no
 witness, target, value, bound, sum, or operator is constructed. Status
 C123_ICAXIS_AXIS_CARDINALITY_INCOMPLETE; targeted continuation C124/ICDOMAIN2.
+C124/ICMEMBERS (19cf6fc4b7ee912c1bb36b5a3ed545b07d3cf513 -> local):
+constructed the two previously blocked finite graph-member domains from exact
+C45/C47 mode labels and C64 terminal algebraic-support statuses. Graph-first
+and projector-preimage routes agree in identity, order, cardinality, weight,
+and orientation; symbolic I2 and derivative-density projector certificates
+close without numerical values, bounds, thresholds, or quadrature support.
+No witness, target, sum, or operator is constructed. Status
+C124_C123_SOURCE_DERIVED_FINITE_PROJECTOR_MEMBER_AUTHORITY_READY; sole
+continuation C125/ICDOMAIN2.
