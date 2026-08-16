@@ -826,3 +826,7 @@ witness-value census, with terminal eight-component status, sparse and
 independent matrix-free authorities, mixed-current adjoint closure, source
 Hermiticity, and exact cross-sector parity-zero blocks. Sole continuation
 C128/FREE2.
+C128/FREE2: source-derived bare free q/qg invariant-mass-squared operator;
+exact finite-HO transverse kinetic authority and C43/C47 two-route free
+projection, symbolic mass ownership, CM/triplet closure, and no-interaction
+isolation. Sole continuation C129/GNORM.

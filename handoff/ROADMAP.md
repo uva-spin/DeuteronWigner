@@ -3595,3 +3595,9 @@ source-qualified; factorized sparse and independent matrix-free authorities
 preserve q-then-qg dimensions, source Hermiticity, mixed-current adjoint
 closure, and the eight C114 parity-zero cross-sector blocks. No physical
 coupling or counterterm coefficient is selected. Sole continuation C128/FREE2.
+C128/FREE2: source-derived coupling-degree-zero bare free q⊕qg M² authority
+from C43/C45/C47 in the immutable C112 q-followed-by-qg basis. Exact HO
+ladder/Laguerre p_perp² routes, symbolic bare mass ownership, intrinsic/CM
+closure, sparse and independent matrix-free factorized actions, and exact
+particle-number cross-sector zeros close without consuming C127 values.
+Sole continuation C129/GNORM.
