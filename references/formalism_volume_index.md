@@ -835,6 +835,11 @@ normal-ordering descendants, finite contraction/color/polarization/HО
 authorities, full-source versus retained-space typing, omitted-sector and
 vacuum interfaces, and coupling-degree-separated symbolic blocks. Sole
 continuation C130/ZBHQCD.
+C131/HQCD4 assembles the immutable projected bare local-QCD polynomial in
+source order and coupling-degree normal form. It preserves open-triplet
+constraints, omitted interfaces, vacuum directions, and counterterm basis
+outside the bare retained coefficients. Renormalization is deferred to
+C132/HQCDREN.
 C130/ZBHQCD closes the source-derived residual, zero-mode, and finite-basis
 boundary authority through immutable factorized constraints and interfaces.
 The retained q and qg spaces remain open triplet matching probes; dynamic
