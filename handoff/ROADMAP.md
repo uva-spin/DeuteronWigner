@@ -3612,6 +3612,10 @@ over the frozen q-followed-by-qg basis. Six retained source terms are
 assembled into coupling degrees 0, 1, and 2 with symbolic bare parameters;
 C130 constraints, omitted interfaces, vacuum directions, and counterterms
 remain nonmatrix and unselected. Sole continuation C132/HQCDREN.
+C132/HQCDREN: condition-authority audit preserves C131 and fails closed
+because no source-qualified nonempty calibration target exists. No scheme,
+parameter point, counterterm solution, or renormalized matrix is invented.
+Sole targeted continuation C133/HQCDCOND.
 
 C130/ZBHQCD: source-derived P0/Q0 and inverse-partial-plus scope, two-route
 surface terms, dynamic zero-mode and integrated Gauss-law constraints, open

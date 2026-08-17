@@ -840,6 +840,9 @@ source order and coupling-degree normal form. It preserves open-triplet
 constraints, omitted interfaces, vacuum directions, and counterterm basis
 outside the bare retained coefficients. Renormalization is deferred to
 C132/HQCDREN.
+C132/HQCDREN audits source-qualified conditions and remains fail-closed with
+no calibration target, preserving all symbolic/null counterterm directions.
+The targeted continuation is C133/HQCDCOND.
 C130/ZBHQCD closes the source-derived residual, zero-mode, and finite-basis
 boundary authority through immutable factorized constraints and interfaces.
 The retained q and qg spaces remain open triplet matching probes; dynamic
