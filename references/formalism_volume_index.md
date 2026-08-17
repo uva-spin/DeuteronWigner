@@ -847,6 +847,9 @@ C133/HQCDCOND separates source condition definitions from target authority;
 methodological sources remain nonidentical to the C131 regulator, and no
 finite-basis calibration target is invented. Target acquisition continues in
 C134/HQCDTARGET.
+C134/HQCDTARGET preserves four explicit unavailable target capsules and
+rejects numerical defaults or unproved conversions. Target acquisition
+continues in C135/HQCDTARGET2.
 C130/ZBHQCD closes the source-derived residual, zero-mode, and finite-basis
 boundary authority through immutable factorized constraints and interfaces.
 The retained q and qg spaces remain open triplet matching probes; dynamic

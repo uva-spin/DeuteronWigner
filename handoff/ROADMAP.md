@@ -3621,6 +3621,10 @@ targets, retains methodological-only sources without false regulator identity,
 and finds zero source-qualified finite-basis calibration targets. Prospective
 rank is zero and four exact source requests remain. Sole targeted continuation
 C134/HQCDTARGET.
+C134/HQCDTARGET: four target capsules remain unavailable because no Tier
+1--3 finite-basis target or exact scheme adapter exists. The target-backed
+rank remains zero and no parameter is solved. Sole continuation
+C135/HQCDTARGET2.
 
 C130/ZBHQCD: source-derived P0/Q0 and inverse-partial-plus scope, two-route
 surface terms, dynamic zero-mode and integrated Gauss-law constraints, open
