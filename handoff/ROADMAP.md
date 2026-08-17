@@ -3607,3 +3607,11 @@ exact cubic color-zero certification, explicit nonzero omitted-sector
 interfaces, quartic retained bilinear coefficient authority, typed vacuum
 and counterterm directions, and no C128/C127 value consumption. Sole
 continuation C130/ZBHQCD.
+
+C130/ZBHQCD: source-derived P0/Q0 and inverse-partial-plus scope, two-route
+surface terms, dynamic zero-mode and integrated Gauss-law constraints, open
+triplet residual-color interface, finite-K/Nmax/CM/triplet/Fock boundary
+interfaces, typed vacuum/counterterm directions, and finite-basis
+completeness. No omitted-space interface enters retained matrices; no
+Feshbach operator or physical parameter is selected. Sole continuation
+C131/HQCD4.

@@ -835,3 +835,8 @@ normal-ordering descendants, finite contraction/color/polarization/HО
 authorities, full-source versus retained-space typing, omitted-sector and
 vacuum interfaces, and coupling-degree-separated symbolic blocks. Sole
 continuation C130/ZBHQCD.
+C130/ZBHQCD closes the source-derived residual, zero-mode, and finite-basis
+boundary authority through immutable factorized constraints and interfaces.
+The retained q and qg spaces remain open triplet matching probes; dynamic
+gluon zero modes and omitted-sector interfaces are typed, not silently set
+to zero. The next source-ordered local-QCD polynomial assembly is C131/HQCD4.
