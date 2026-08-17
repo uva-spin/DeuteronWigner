@@ -3640,6 +3640,11 @@ two-coordinate-to-operator bindings, and finds no authenticated numerical
 project-scheme capsules. It publishes schema-valid no-default input requests,
 preserves all nine null coordinates, and fails closed without evaluation.
 Sole continuation C139/HQCDINPUT4.
+C139/HQCDINPUT4: rechecks the C138 request and discovers no authorized
+capsule staging location or explicitly supplied numerical pair. It preserves
+the symbolic quotient and nine-dimensional nullspace, rejects production
+evaluation, and reissues the exact nonnumeric request. Sole continuation
+C140/HQCDINPUT5.
 C135/HQCDTARGET2: selects a project-owned symbolic finite-basis open-triplet
 subtraction scheme. Mass and q↔qg vertex conditions require authenticated
 external-input capsules; gluon factorization is unclosed, Ward/current is a

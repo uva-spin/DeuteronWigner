@@ -865,6 +865,10 @@ identified coordinates to the unchanged source operators. No authenticated
 numerical capsules are present, so the package remains fail closed with
 schema-valid no-default requests and all nine null coordinates preserved.
 Continuation: C139/HQCDINPUT4.
+C139/HQCDINPUT4 revalidates the exact two-capsule cardinality and finds no
+authorized numerical capsules or staging location. It preserves the C137
+symbolic map, rejects all numerical/operator evaluation, and continues with
+the exact missing-input request in C140/HQCDINPUT5.
 C134/HQCDTARGET preserves four explicit unavailable target capsules and
 rejects numerical defaults or unproved conversions. Target acquisition
 continues in C135/HQCDTARGET2.
