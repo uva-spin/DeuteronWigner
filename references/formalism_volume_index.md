@@ -830,3 +830,8 @@ C128/FREE2: source-derived bare free q/qg invariant-mass-squared operator;
 exact finite-HO transverse kinetic authority and C43/C47 two-route free
 projection, symbolic mass ownership, CM/triplet closure, and no-interaction
 isolation. Sole continuation C129/GNORM.
+C129/GNORM: source-derived non-current pure-gluon three-/four-gluon
+normal-ordering descendants, finite contraction/color/polarization/HО
+authorities, full-source versus retained-space typing, omitted-sector and
+vacuum interfaces, and coupling-degree-separated symbolic blocks. Sole
+continuation C130/ZBHQCD.

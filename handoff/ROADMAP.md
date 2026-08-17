@@ -3601,3 +3601,9 @@ ladder/Laguerre p_perp² routes, symbolic bare mass ownership, intrinsic/CM
 closure, sparse and independent matrix-free factorized actions, and exact
 particle-number cross-sector zeros close without consuming C127 values.
 Sole continuation C129/GNORM.
+C129/GNORM: source-qualified C43 pure-gluon G3/G4 normal-ordering authority
+with seven descendant classes, separate full-source and retained statuses,
+exact cubic color-zero certification, explicit nonzero omitted-sector
+interfaces, quartic retained bilinear coefficient authority, typed vacuum
+and counterterm directions, and no C128/C127 value consumption. Sole
+continuation C130/ZBHQCD.
