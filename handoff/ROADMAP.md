@@ -3635,6 +3635,11 @@ identified coordinates, exact null-shift invariance, one locally invertible
 branch, and identified operator correction while preserving all nine null
 coordinates. No unique full vector or matrix is created. Sole continuation
 C138/HQCDINPUT3.
+C138/HQCDINPUT3: audits the authorized input boundary, freezes the exact
+two-coordinate-to-operator bindings, and finds no authenticated numerical
+project-scheme capsules. It publishes schema-valid no-default input requests,
+preserves all nine null coordinates, and fails closed without evaluation.
+Sole continuation C139/HQCDINPUT4.
 C135/HQCDTARGET2: selects a project-owned symbolic finite-basis open-triplet
 subtraction scheme. Mass and q↔qg vertex conditions require authenticated
 external-input capsules; gluon factorization is unclosed, Ward/current is a

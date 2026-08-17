@@ -860,6 +860,11 @@ C137/HQCDRENRED publishes the symbolic quotient solve for two identified
 coordinates, exact null-shift invariance, and a separate identified operator
 correction. The nine-dimensional null family remains unresolved; no unique
 renormalized operator is produced. Continuation: C138/HQCDINPUT3.
+C138/HQCDINPUT3 audits the C137 external-input boundary and binds the two
+identified coordinates to the unchanged source operators. No authenticated
+numerical capsules are present, so the package remains fail closed with
+schema-valid no-default requests and all nine null coordinates preserved.
+Continuation: C139/HQCDINPUT4.
 C134/HQCDTARGET preserves four explicit unavailable target capsules and
 rejects numerical defaults or unproved conversions. Target acquisition
 continues in C135/HQCDTARGET2.
