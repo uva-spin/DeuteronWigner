@@ -843,6 +843,10 @@ C132/HQCDREN.
 C132/HQCDREN audits source-qualified conditions and remains fail-closed with
 no calibration target, preserving all symbolic/null counterterm directions.
 The targeted continuation is C133/HQCDCOND.
+C133/HQCDCOND separates source condition definitions from target authority;
+methodological sources remain nonidentical to the C131 regulator, and no
+finite-basis calibration target is invented. Target acquisition continues in
+C134/HQCDTARGET.
 C130/ZBHQCD closes the source-derived residual, zero-mode, and finite-basis
 boundary authority through immutable factorized constraints and interfaces.
 The retained q and qg spaces remain open triplet matching probes; dynamic

@@ -3616,6 +3616,11 @@ C132/HQCDREN: condition-authority audit preserves C131 and fails closed
 because no source-qualified nonempty calibration target exists. No scheme,
 parameter point, counterterm solution, or renormalized matrix is invented.
 Sole targeted continuation C133/HQCDCOND.
+C133/HQCDCOND: primary-source condition audit separates definitions from
+targets, retains methodological-only sources without false regulator identity,
+and finds zero source-qualified finite-basis calibration targets. Prospective
+rank is zero and four exact source requests remain. Sole targeted continuation
+C134/HQCDTARGET.
 
 C130/ZBHQCD: source-derived P0/Q0 and inverse-partial-plus scope, two-route
 surface terms, dynamic zero-mode and integrated Gauss-law constraints, open
