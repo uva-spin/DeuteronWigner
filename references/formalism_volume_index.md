@@ -856,6 +856,10 @@ C136/HQCDID3 reconstructs the eleven unresolved directions, freezes
 source-qualified condition families and selectors, and publishes a rank-two
 maximal identifiable subspace with an explicit nine-dimensional nullspace.
 No renormalization solve is performed. Continuation: C137/HQCDRENRED.
+C137/HQCDRENRED publishes the symbolic quotient solve for two identified
+coordinates, exact null-shift invariance, and a separate identified operator
+correction. The nine-dimensional null family remains unresolved; no unique
+renormalized operator is produced. Continuation: C138/HQCDINPUT3.
 C134/HQCDTARGET preserves four explicit unavailable target capsules and
 rejects numerical defaults or unproved conversions. Target acquisition
 continues in C135/HQCDTARGET2.

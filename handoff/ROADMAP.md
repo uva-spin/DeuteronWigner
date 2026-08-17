@@ -3630,6 +3630,11 @@ public identity, proves three exact source reductions, freezes twelve
 admissible condition rows and selectors, and establishes a rank-two maximal
 identifiable subspace with an explicit nine-dimensional nullspace. No solve
 is performed. Sole continuation C137/HQCDRENRED.
+C137/HQCDRENRED: publishes a symbolic conditional reduced map for the two
+identified coordinates, exact null-shift invariance, one locally invertible
+branch, and identified operator correction while preserving all nine null
+coordinates. No unique full vector or matrix is created. Sole continuation
+C138/HQCDINPUT3.
 C135/HQCDTARGET2: selects a project-owned symbolic finite-basis open-triplet
 subtraction scheme. Mass and q↔qg vertex conditions require authenticated
 external-input capsules; gluon factorization is unclosed, Ward/current is a
