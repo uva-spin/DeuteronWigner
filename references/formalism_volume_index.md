@@ -852,6 +852,10 @@ open-triplet subtraction scheme (T2-A), strict no-default external-input
 capsules, deterministic selectors, symbolic mass and vertex targets, and a
 rank-2/deficit-9 identifiability report. No physical renormalization is
 performed. Continuation: C136/HQCDID3.
+C136/HQCDID3 reconstructs the eleven unresolved directions, freezes
+source-qualified condition families and selectors, and publishes a rank-two
+maximal identifiable subspace with an explicit nine-dimensional nullspace.
+No renormalization solve is performed. Continuation: C137/HQCDRENRED.
 C134/HQCDTARGET preserves four explicit unavailable target capsules and
 rejects numerical defaults or unproved conversions. Target acquisition
 continues in C135/HQCDTARGET2.
