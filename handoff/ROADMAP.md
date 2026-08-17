@@ -3625,6 +3625,11 @@ C134/HQCDTARGET: four target capsules remain unavailable because no Tier
 1--3 finite-basis target or exact scheme adapter exists. The target-backed
 rank remains zero and no parameter is solved. Sole continuation
 C135/HQCDTARGET2.
+C135/HQCDTARGET2: selects a project-owned symbolic finite-basis open-triplet
+subtraction scheme. Mass and q↔qg vertex conditions require authenticated
+external-input capsules; gluon factorization is unclosed, Ward/current is a
+strict holdout, and prospective rank is 2 with deficit 9. No parameter or
+counterterm is solved. Sole continuation C136/HQCDID3.
 
 C130/ZBHQCD: source-derived P0/Q0 and inverse-partial-plus scope, two-route
 surface terms, dynamic zero-mode and integrated Gauss-law constraints, open
