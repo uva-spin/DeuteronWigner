@@ -911,3 +911,7 @@ two-point authority. Sparse, block, and matrix-free source resolvents agree;
 M²-to-P⁻ conversion remains symbolic in `2P_plus`, and retained qg
 self-energy and g_s² count-once diagnostics are exposed without physical
 renormalization. Continuation: C146/HQCD2PTFULL.
+C146/HQCD2PTNORM: exact M²-to-P⁻ resolvent factorization with symbolic
+`P_plus=pi*K/L`; final coordinate-field normalization remains unresolved and
+is kept separate from the positive M² resolvent. Continuation:
+C147/HQCDFIELDNORM.

@@ -3692,6 +3692,11 @@ ownership diagnostics. Complex-z imaginary parts remain analytic
 coordinates, not widths; no physical pole, coupling, mass, counterterm,
 antiquark completion, or null representative is selected. Sole continuation
 C146/HQCD2PTFULL.
+C146/HQCD2PTNORM audits the C145 conversion. The exact kinematic identity
+`R_Pminus=2P_plus R_M2` and GeV-unit conversion close, while the coordinate-
+field source/sink normalization needed for a final psi-plus correlator is
+not independently authenticated. C145's M² resolvent remains positive and
+the field claim is qualified. Sole continuation C147/HQCDFIELDNORM.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
