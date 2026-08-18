@@ -869,6 +869,11 @@ C139/HQCDINPUT4 revalidates the exact two-capsule cardinality and finds no
 authorized numerical capsules or staging location. It preserves the C137
 symbolic map, rejects all numerical/operator evaluation, and continues with
 the exact missing-input request in C140/HQCDINPUT5.
+C140/HQCDPHYSANCHOR preserves the historical missing-input branch while
+introducing a user-authorized PHYS-A physical-anchor architecture. Official
+PDG and primary continuum/step-scaling sources are hash-locked as candidate
+or comparison authorities; no C43-compatible two-point, field residue, or
+amputated vertex conversion exists yet. Continuation: C141/HQCD2PT.
 C134/HQCDTARGET preserves four explicit unavailable target capsules and
 rejects numerical defaults or unproved conversions. Target acquisition
 continues in C135/HQCDTARGET2.

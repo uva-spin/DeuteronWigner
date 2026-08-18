@@ -3645,6 +3645,12 @@ capsule staging location or explicitly supplied numerical pair. It preserves
 the symbolic quotient and nine-dimensional nullspace, rejects production
 evaluation, and reissues the exact nonnumeric request. Sole continuation
 C140/HQCDINPUT5.
+C140/HQCDPHYSANCHOR: the user-authorized descendant correction preserves the
+historical HQCDINPUT5 contract, hash-locks PDG 2026 and primary continuum/
+step-scaling authorities, and requalifies the legacy targets as diagnostics.
+The PHYS-A architecture remains blocked on a C43-compatible quark
+two-point/resolvent and field-normalization calculation. Sole continuation
+C141/HQCD2PT.
 C135/HQCDTARGET2: selects a project-owned symbolic finite-basis open-triplet
 subtraction scheme. Mass and q↔qg vertex conditions require authenticated
 external-input capsules; gluon factorization is unclosed, Ward/current is a
