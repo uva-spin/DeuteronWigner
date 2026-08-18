@@ -3677,6 +3677,13 @@ nonapplicability proof, and eight-generator open-triplet intertwiner.
 Flavor remains generic and antiquark completion remains algebra-only.
 No propagator or renormalization object is created. Sole continuation
 C143/HQCD2PTQ.
+C144/HQCDOPAPI resolves the C143 schema boundary into alternative original
+and C136 identified-plus-null coordinate bases, publishes four explicit
+nonphysical diagnostic fixtures with no implicit fallback, and exposes
+independent sparse, matrix-free, block, derivative, and shifted-operator
+preflight APIs over unchanged C131 components. No physical parameter,
+counterterm, resolvent, inverse, state, or spectrum is created. Sole
+continuation C145/HQCD2PTQ2.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and

@@ -901,3 +901,8 @@ the complex GeV² spectral coordinate and complete nonphysical diagnostic
 parameter schema are frozen, while all numerical resolvent routes remain
 fail-closed until an explicit caller capsule is supplied. Continuation:
 C144/HQCDOPAPI.
+C144/HQCDOPAPI: immutable parameterized C131 operator interface. Original
+direction and identified-plus-null coordinates are alternative schemas;
+explicit deterministic nonphysical fixtures validate sparse, matrix-free,
+and block routes plus exact derivatives and unit/Hermiticity ownership.
+Only a shifted `zI-M²` preflight is allowed. Continuation: C145/HQCD2PTQ2.
