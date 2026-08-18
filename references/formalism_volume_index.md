@@ -889,3 +889,9 @@ or full-spinor correlator are not. Flavor and antiquark scope remain
 explicitly incomplete, M_R2_FB and g_R_FB(K_R) remain diagnostics, and no
 mass projector, Z_q, self-energy, or physical state is created.
 Continuation: C142/HQCDFIELD.
+C142/HQCDFIELD closes the finite forward-quark source layer: the C43
+nonzero-mode reference, C45 half-integer modes and good-spinor
+normalization, C47 six-state q-sector source/sink map, projected
+anticommutator, and residual-color covariance are authenticated. The
+antiquark Hilbert sector and flavor completion remain outside the claim.
+Continuation: C143/HQCD2PTQ.

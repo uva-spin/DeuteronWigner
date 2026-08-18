@@ -3670,3 +3670,10 @@ projector close, but the local-QCD vacuum, canonical field-to-state source
 map, flavor/antiquark completion, and mass-linear projector are unavailable.
 No two-point, residue, self-energy, or numerical parameter is fabricated.
 Sole continuation C142/HQCDFIELD.
+C142/HQCDFIELD constructs the C43 nonzero-mode perturbative Fock reference,
+finite C45 projected good-quark field, exact six-mode source/sink isometry
+for each K9/K11/K13 q sector, finite projected anticommutator, direct-qg
+nonapplicability proof, and eight-generator open-triplet intertwiner.
+Flavor remains generic and antiquark completion remains algebra-only.
+No propagator or renormalization object is created. Sole continuation
+C143/HQCD2PTQ.
