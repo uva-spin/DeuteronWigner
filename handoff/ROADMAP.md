@@ -3677,3 +3677,9 @@ nonapplicability proof, and eight-generator open-triplet intertwiner.
 Flavor remains generic and antiquark completion remains algebra-only.
 No propagator or renormalization object is created. Sole continuation
 C143/HQCD2PTQ.
+C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
+direct sum and publishes a strict caller-supplied parameter-record schema.
+No diagnostic parameter record was supplied, so direct, block, and
+matrix-free resolvent routes fail closed with zero numerical calls. No
+propagator, self-energy, mass projector, Z_q, physical parameter, or null
+representative is created. Sole continuation C144/HQCDOPAPI.

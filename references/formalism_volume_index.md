@@ -895,3 +895,9 @@ normalization, C47 six-state q-sector source/sink map, projected
 anticommutator, and residual-color covariance are authenticated. The
 antiquark Hilbert sector and flavor completion remain outside the claim.
 Continuation: C143/HQCD2PTQ.
+C143/HQCD2PTQ: parameterized forward-quark finite-basis two-point boundary.
+The C142 source/sink isometry is embedded structurally into the q⊕qg basis;
+the complex GeV² spectral coordinate and complete nonphysical diagnostic
+parameter schema are frozen, while all numerical resolvent routes remain
+fail-closed until an explicit caller capsule is supplied. Continuation:
+C144/HQCDOPAPI.
