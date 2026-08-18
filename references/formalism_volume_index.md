@@ -882,3 +882,10 @@ boundary authority through immutable factorized constraints and interfaces.
 The retained q and qg spaces remain open triplet matching probes; dynamic
 gluon zero modes and omitted-sector interfaces are typed, not silently set
 to zero. The next source-ordered local-QCD polynomial assembly is C131/HQCD4.
+C141/HQCD2PT records the C43-compatible two-point boundary: exact retained
+sector dimensions and P/Q identities are public, while the local-QCD
+vacuum and canonical field/source map required for a causal good-component
+or full-spinor correlator are not. Flavor and antiquark scope remain
+explicitly incomplete, M_R2_FB and g_R_FB(K_R) remain diagnostics, and no
+mass projector, Z_q, self-energy, or physical state is created.
+Continuation: C142/HQCDFIELD.

@@ -3664,3 +3664,9 @@ interfaces, typed vacuum/counterterm directions, and finite-basis
 completeness. No omitted-space interface enters retained matrices; no
 Feshbach operator or physical parameter is selected. Sole continuation
 C131/HQCD4.
+C141/HQCD2PT preserves the C140 physical-anchor blocker and hash-locks the
+C43-compatible source authorities. The retained q/qg sectors and exact P/Q
+projector close, but the local-QCD vacuum, canonical field-to-state source
+map, flavor/antiquark completion, and mass-linear projector are unavailable.
+No two-point, residue, self-energy, or numerical parameter is fabricated.
+Sole continuation C142/HQCDFIELD.
