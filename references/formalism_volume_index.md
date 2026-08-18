@@ -906,3 +906,8 @@ direction and identified-plus-null coordinates are alternative schemas;
 explicit deterministic nonphysical fixtures validate sparse, matrix-free,
 and block routes plus exact derivatives and unit/Hermiticity ownership.
 Only a shifted `zI-M²` preflight is allowed. Continuation: C145/HQCD2PTQ2.
+C145/HQCD2PTQ2: executable fixture-scoped forward-quark good-component
+two-point authority. Sparse, block, and matrix-free source resolvents agree;
+M²-to-P⁻ conversion remains symbolic in `2P_plus`, and retained qg
+self-energy and g_s² count-once diagnostics are exposed without physical
+renormalization. Continuation: C146/HQCD2PTFULL.

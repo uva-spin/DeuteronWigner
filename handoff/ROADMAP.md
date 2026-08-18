@@ -3684,6 +3684,14 @@ independent sparse, matrix-free, block, derivative, and shifted-operator
 preflight APIs over unchanged C131 components. No physical parameter,
 counterterm, resolvent, inverse, state, or spectrum is created. Sole
 continuation C145/HQCD2PTQ2.
+C145/HQCD2PTQ2 closes the explicit fixture-scoped source-projected M²
+resolvent through sparse, retained-block, and independent matrix-free
+routes, with analytic identities, source spectral-weight, positive-frequency
+good-component conversion, retained qg self-energy, and order-g_s²
+ownership diagnostics. Complex-z imaginary parts remain analytic
+coordinates, not widths; no physical pole, coupling, mass, counterterm,
+antiquark completion, or null representative is selected. Sole continuation
+C146/HQCD2PTFULL.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
