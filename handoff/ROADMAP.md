@@ -3736,6 +3736,13 @@ vertex projector, and conditional Z_1F/g_R^FB maps. Retained qg properness
 is distinct from unavailable full-QCD 1PI corrections; historical
 g_R_FB(K_R) is crosswalked without overwrite. No physical coupling or
 standard conversion is selected. Sole continuation C153/HQCDMATCHFB.
+C153/HQCDMATCHFB closes componentwise finite-basis matching records for
+quark field, signed mass, gluon field, qg vertex, and coupling. Primary
+standard-scheme sources are scope-locked without numeric consumption;
+common-IR cancellation, fixed-regulator windows, order eligibility, and
+separate RI/SMOM, MOMq, and MSbar adapter gates are explicit. No physical
+input or continuum trajectory is selected. Sole continuation
+C154/HQCDPHYSINPUT2.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and

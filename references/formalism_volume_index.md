@@ -946,3 +946,8 @@ derivative connected response, C150/C151 leg amputation, rank-eight vertex
 tensor projector, conditional Z_1F and g_R^FB, and retained-qg properness
 without full-QCD 1PI claims. No physical coupling or standard conversion is
 selected. Continuation: C153/HQCDMATCHFB.
+C153/HQCDMATCHFB: componentwise finite-basis/target matching records with
+explicit gauge, N_f, scale, order, common-IR crosswalk, fixed-regulator
+window, conversion round-trips, and separately gated standard adapters. No
+physical anchor or continuum extrapolation is consumed. Continuation:
+C154/HQCDPHYSINPUT2.
