@@ -926,3 +926,8 @@ with explicit q and A_perp psi_plus composite qg bad sources, four component
 blocks, inverse-partial-plus semantics, contact count-once ledger, and
 signed-mass tensor decomposition. No antiquark, physical mass, Z_q, or
 renormalized state is created. Continuation: C149/HQCDMPROJ.
+C149/HQCDMPROJ: contact-safe finite-source inverse, explicit off-shell
+subtraction schema, rank-eight tensor Gram, independent kinetic/signed-mass
+projectors, nuisance annihilation, and prospective nine-dimensional
+nullspace sensitivity. No physical Z_q, m_R, subtraction scale, or state is
+selected. Continuation: C150/HQCDZQMASS.

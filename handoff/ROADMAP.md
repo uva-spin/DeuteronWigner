@@ -3712,6 +3712,12 @@ direct/block/matrix-free/constraint route closure. Signed mass-linear terms
 remain distinct from the M² layer; antiquark, physical mass, Z_q,
 counterterm, state, and spectrum claims remain excluded. Sole continuation
 C149/HQCDMPROJ.
+C149/HQCDMPROJ closes the contact-safe inverse/amputation and eight-tensor
+authority. Dual-Gram, analytic, response, and free routes agree for kinetic
+and signed-m_q projectors; nuisance tensors are annihilated and the nine
+null directions remain unresolved. Conditional Z_q^FB/m_R^FB interfaces are
+published without a physical scale or solution. Sole continuation
+C150/HQCDZQMASS.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
