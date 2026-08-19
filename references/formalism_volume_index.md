@@ -921,3 +921,8 @@ antiperiodic modes, HO00, good-spinor, source/sink orientation, mode-space
 and coordinate correlators, jump condition, and route/holdout closure are
 authenticated with no physical parameter or antiquark/full-spinor claim.
 Continuation: C148/HQCD2PTFULL.
+C148/HQCD2PTFULL: constrained positive-frequency full-spinor source authority
+with explicit q and A_perp psi_plus composite qg bad sources, four component
+blocks, inverse-partial-plus semantics, contact count-once ledger, and
+signed-mass tensor decomposition. No antiquark, physical mass, Z_q, or
+renormalized state is created. Continuation: C149/HQCDMPROJ.

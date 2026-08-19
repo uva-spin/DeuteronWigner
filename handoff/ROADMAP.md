@@ -3705,6 +3705,13 @@ field-expansion, anticommutator, and free-jump routes. The exact
 units, and positive-frequency scope remain separately authenticated. No
 antiquark, full-spinor, physical Z_q, parameter, state, or spectrum is
 claimed. Sole continuation C148/HQCD2PTFULL.
+C148/HQCD2PTFULL closes the constrained positive-frequency full-spinor
+authority: C43 psi-minus factorization, q and composite qg bad-source maps,
+four component blocks, instantaneous-contact count-once ownership, and
+direct/block/matrix-free/constraint route closure. Signed mass-linear terms
+remain distinct from the M² layer; antiquark, physical mass, Z_q,
+counterterm, state, and spectrum claims remain excluded. Sole continuation
+C149/HQCDMPROJ.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
