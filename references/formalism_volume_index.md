@@ -936,3 +936,8 @@ explicit kinetic IDs, convention-correct `Gamma_B/A_k` normalization,
 signed `B_mass/A_k`, chiral Z_m guard, restoration diagnostics, and internal
 scheme conversion. No physical standard-scheme quantity is selected.
 Continuation: C151/HQCDG2PT.
+C151/HQCDG2PT: canonical B=0 one-gluon source, free pole/residue/jump,
+spectator-tagged C77 qg source, explicit quark-leg amputation, spectator
+factorization, finite gluon tensor/projector basis, and unavailable pure
+interacting-sector census. Conditional Z_A only; no physical gluon residue
+or coupling is selected. Continuation: C152/HQCDQGVERT.

@@ -3724,6 +3724,12 @@ orientation, normalized inverse, signed mass, guarded Z_m, restoration
 diagnostics, and internal finite-basis conversions. Physical Z_q/mass,
 standard-scheme conversion, counterterms, and null representatives remain
 unselected. Sole continuation C151/HQCDG2PT.
+C151/HQCDG2PT separates canonical B=0 one-gluon vacuum sources from B=1
+spectator-tagged qg responses, closes the free gluon route, preserves the
+pure-interacting-sector census as unavailable rather than zero, and proves
+spectator factorization for the conditional finite-basis gluon residue.
+No physical Z_A, coupling, masslessness condition, or state is selected.
+Sole continuation C152/HQCDQGVERT.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
