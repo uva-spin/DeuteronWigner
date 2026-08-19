@@ -941,3 +941,8 @@ spectator-tagged C77 qg source, explicit quark-leg amputation, spectator
 factorization, finite gluon tensor/projector basis, and unavailable pure
 interacting-sector census. Conditional Z_A only; no physical gluon residue
 or coupling is selected. Continuation: C152/HQCDQGVERT.
+C152/HQCDQGVERT: explicit three-leg q-g-q records, direct/block/matrix-free/
+derivative connected response, C150/C151 leg amputation, rank-eight vertex
+tensor projector, conditional Z_1F and g_R^FB, and retained-qg properness
+without full-QCD 1PI claims. No physical coupling or standard conversion is
+selected. Continuation: C153/HQCDMATCHFB.

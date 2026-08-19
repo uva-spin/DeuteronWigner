@@ -3730,6 +3730,12 @@ pure-interacting-sector census as unavailable rather than zero, and proves
 spectator factorization for the conditional finite-basis gluon residue.
 No physical Z_A, coupling, masslessness condition, or state is selected.
 Sole continuation C152/HQCDQGVERT.
+C152/HQCDQGVERT closes the explicit joint q-g-q record, connected and
+amputated finite-basis vertex, external-leg schemes, rank-eight light-front
+vertex projector, and conditional Z_1F/g_R^FB maps. Retained qg properness
+is distinct from unavailable full-QCD 1PI corrections; historical
+g_R_FB(K_R) is crosswalked without overwrite. No physical coupling or
+standard conversion is selected. Sole continuation C153/HQCDMATCHFB.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
