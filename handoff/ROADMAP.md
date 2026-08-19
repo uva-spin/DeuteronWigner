@@ -3697,6 +3697,14 @@ C146/HQCD2PTNORM audits the C145 conversion. The exact kinematic identity
 field source/sink normalization needed for a final psi-plus correlator is
 not independently authenticated. C145's M² resolvent remains positive and
 the field claim is qualified. Sole continuation C147/HQCDFIELDNORM.
+C147/HQCDFIELDNORM closes the C43/C45 coordinate-field normalization through
+the projected source-mode isometry, finite antiperiodic longitudinal modes,
+transverse HO ground mode, C45 good-spinor projector, and independent
+field-expansion, anticommutator, and free-jump routes. The exact
+`R_Pminus=2P_plus R_M2` factor, Fourier/time factor, source/sink factors,
+units, and positive-frequency scope remain separately authenticated. No
+antiquark, full-spinor, physical Z_q, parameter, state, or spectrum is
+claimed. Sole continuation C148/HQCD2PTFULL.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and

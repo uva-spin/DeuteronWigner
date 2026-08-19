@@ -915,3 +915,9 @@ C146/HQCD2PTNORM: exact M²-to-P⁻ resolvent factorization with symbolic
 `P_plus=pi*K/L`; final coordinate-field normalization remains unresolved and
 is kept separate from the positive M² resolvent. Continuation:
 C147/HQCDFIELDNORM.
+C147/HQCDFIELDNORM: source-derived coordinate good-field normalization over
+the unchanged C142 source map and C146 M² authority. Finite-cell
+antiperiodic modes, HO00, good-spinor, source/sink orientation, mode-space
+and coordinate correlators, jump condition, and route/holdout closure are
+authenticated with no physical parameter or antiquark/full-spinor claim.
+Continuation: C148/HQCD2PTFULL.
