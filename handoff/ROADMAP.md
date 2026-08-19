@@ -3749,3 +3749,7 @@ No diagnostic parameter record was supplied, so direct, block, and
 matrix-free resolvent routes fail closed with zero numerical calls. No
 propagator, self-energy, mass projector, Z_q, physical parameter, or null
 representative is created. Sole continuation C144/HQCDOPAPI.
+C154/HQCDPHYSINPUT2 — standard numerical capsules are authenticated, but the
+C131 generic light-quark direction is not yet identified with m_ud/u/d; no
+finite-basis physical target or parameter solution is activated. Continuation:
+C155/HQCDFLAVOR2.

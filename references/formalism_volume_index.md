@@ -951,3 +951,6 @@ explicit gauge, N_f, scale, order, common-IR crosswalk, fixed-regulator
 window, conversion round-trips, and separately gated standard adapters. No
 physical anchor or continuum extrapolation is consumed. Continuation:
 C154/HQCDPHYSINPUT2.
+C154/HQCDPHYSINPUT2 — source-qualified PDG standard-coordinate capsules,
+explicit flavor/sign/coupling semantics, and fail-closed finite-basis physical
+activation boundary; flavor continuation C155/HQCDFLAVOR2.
