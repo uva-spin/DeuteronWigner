@@ -931,3 +931,8 @@ subtraction schema, rank-eight tensor Gram, independent kinetic/signed-mass
 projectors, nuisance annihilation, and prospective nine-dimensional
 nullspace sensitivity. No physical Z_q, m_R, subtraction scale, or state is
 selected. Continuation: C150/HQCDZQMASS.
+C150/HQCDZQMASS: conditional finite-basis Z_q/mass scheme family with three
+explicit kinetic IDs, convention-correct `Gamma_B/A_k` normalization,
+signed `B_mass/A_k`, chiral Z_m guard, restoration diagnostics, and internal
+scheme conversion. No physical standard-scheme quantity is selected.
+Continuation: C151/HQCDG2PT.

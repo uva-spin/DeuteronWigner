@@ -3718,6 +3718,12 @@ and signed-m_q projectors; nuisance tensors are annihilated and the nine
 null directions remain unresolved. Conditional Z_q^FB/m_R^FB interfaces are
 published without a physical scale or solution. Sole continuation
 C150/HQCDZQMASS.
+C150/HQCDZQMASS closes the conditional finite-basis scheme family with
+explicit K_MINUS/K_PLUS/K_PERP selection, bare/renormalized field
+orientation, normalized inverse, signed mass, guarded Z_m, restoration
+diagnostics, and internal finite-basis conversions. Physical Z_q/mass,
+standard-scheme conversion, counterterms, and null representatives remain
+unselected. Sole continuation C151/HQCDG2PT.
 C143/HQCD2PTQ freezes the C142 source map in the full q-followed-by-qg
 direct sum and publishes a strict caller-supplied parameter-record schema.
 No diagnostic parameter record was supplied, so direct, block, and
