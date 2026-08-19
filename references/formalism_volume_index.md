@@ -954,3 +954,5 @@ C154/HQCDPHYSINPUT2.
 C154/HQCDPHYSINPUT2 — source-qualified PDG standard-coordinate capsules,
 explicit flavor/sign/coupling semantics, and fail-closed finite-basis physical
 activation boundary; flavor continuation C155/HQCDFLAVOR2.
+C155/HQCDFLAVOR2 — flavor-template audit, external u/d block lift, active-Nf
+separation, pure-QCD m_ud adapter, and flavor-breaking handoff.

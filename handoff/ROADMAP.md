@@ -3753,3 +3753,6 @@ C154/HQCDPHYSINPUT2 — standard numerical capsules are authenticated, but the
 C131 generic light-quark direction is not yet identified with m_ud/u/d; no
 finite-basis physical target or parameter solution is activated. Continuation:
 C155/HQCDFLAVOR2.
+C155/HQCDFLAVOR2 — source-derived generic-flavor classification, reversible
+u/d direct-sum lift, explicit m_l/delta_m semantics, and exact m_ud adapter;
+numeric matching windows remain for C156/HQCDMATCHGRID2.
