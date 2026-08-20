@@ -1,5 +1,14 @@
 # Formalism volume source index
 
+## C157/HQCDMATCHIR2 numerical authority boundary
+
+C157 is a project-owned executable API boundary over the C153 symbolic
+matching surfaces. It records the missing finite-basis numerical AST and
+fails closed before common-IR cancellation, perturbative remainders, or
+positive scale brackets can be promoted. No new formalism source, physical
+input, running, threshold, or matching-window result is introduced. The
+sole continuation is `C158/HQCDFBNUM`.
+
 ## C96 historical proof-input persistence audit
 
 C96 verifies that the authenticated C93 capsule persists pair attestations

@@ -1,5 +1,51 @@
 # Executable roadmap: parent-derived spin-1 GTMD/TMD model
 
+## 2026-08-19 — C157 HQCDMATCHIR2 finite-basis numerical boundary
+
+Status: **fail closed locally; not pushed**.
+
+C157 verifies the frozen C156→C157 import contract and the C144–C156 public
+roots. The first remaining object is a public executable finite-basis
+projected-coefficient AST/enclosure: C153 exposes only a symbolic coefficient
+label. The selected plan is `MATCHIR2-B`, with no coefficient fitting, full
+matching-grid scan, physical input, running, threshold, or scale selection.
+The sole continuation is **C158/HQCDFBNUM**.
+
+## 2026-08-19 — C157/HQCDMATCHIR2 fixed-regulator IR-gate boundary
+
+Status: **completed locally; fail-closed; not pushed**.
+
+C157 adds the immutable numerical-evidence schema and explicit-context
+common-IR and perturbative-remainder gate interfaces downstream of C156.
+The C153 authority still contains symbolic cancellation/order records only;
+no authenticated numerical evaluator, source-backed residual sample, or
+authority-derived scale bracket exists. Therefore all C157 gate vectors,
+candidate domains, and componentwise/cross-resolution windows remain empty.
+No residual, endpoint, threshold, running, inverse matching, physical scale,
+state, or TMD value was fabricated.
+
+Exact outcome:
+`C157_HQCDMATCHIR2_NUMERICAL_AUTHORITY_INCOMPLETE`.
+
+Focused command and result:
+`PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 -m pytest
+tests/test_c157_hqcdmatchir2.py tests/test_c156_hqcdmatchgrid2.py -vv`
+— **7 passed**. The `tests/test_c15*.py` bridge regression reports **47
+passed**. Full-suite collection reports 7,127 tests; the broad execution was
+not used as the acceptance result because the runner terminated after the
+initial tests with exit code 2 and no traceback.
+
+Changed files are `src/deuteron_wigner/bridge/hqcdmatchir2/`,
+`tests/test_c157_hqcdmatchir2.py`, the C157 runtime manifest,
+`docs/next_level/c157_implementation_report.md`, and the C157 contracts under
+`docs/next_level/`.
+
+Current defect: authenticated numerical common-IR and perturbative-remainder
+evaluators remain unavailable. Exact next package: **C158/HQCDMATCHWINDOW2**,
+which may consume C157 evidence only after source/evaluator hashes and
+numeric samples are supplied; it must not select a physical scale or average
+resolutions.
+
 ## 2026-08-11 — C96 historical proof-input persistence audit
 
 Status: **fail closed at local completion; not pushed**.
