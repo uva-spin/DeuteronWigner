@@ -956,3 +956,5 @@ explicit flavor/sign/coupling semantics, and fail-closed finite-basis physical
 activation boundary; flavor continuation C155/HQCDFLAVOR2.
 C155/HQCDFLAVOR2 — flavor-template audit, external u/d block lift, active-Nf
 separation, pure-QCD m_ud adapter, and flavor-breaking handoff.
+C156/HQCDMATCHGRID2 — fixed-regulator matching-grid schema, gate vectors,
+empty-domain semantics, and common-IR numerical blocker.

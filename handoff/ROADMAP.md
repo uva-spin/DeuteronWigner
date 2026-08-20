@@ -3756,3 +3756,7 @@ C155/HQCDFLAVOR2.
 C155/HQCDFLAVOR2 — source-derived generic-flavor classification, reversible
 u/d direct-sum lift, explicit m_l/delta_m semantics, and exact m_ud adapter;
 numeric matching windows remain for C156/HQCDMATCHGRID2.
+C156/HQCDMATCHGRID2 — executable fixed-regulator gate evaluator with frozen
+thresholds and explicit fixture/parameter contexts; numerical common-IR and
+perturbative-remainder authority remains incomplete. Continuation:
+C157/HQCDMATCHIR2.
