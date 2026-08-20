@@ -3815,3 +3815,9 @@ and componentwise numerical enclosures. Continuum targets, common-IR
 differences, remainders, brackets, physical inputs, running, thresholds,
 counterterms, and states remain out of scope. Sole continuation:
 C159/HQCDMATCHIR3.
+C159/HQCDMATCHIR3 — local pytest was available and exposed two actual
+inherited C157 expectation failures: superseded MATCHIR2-D and
+C158/HQCDMATCHWINDOW2 expectations conflict with the frozen MATCHIR2-B and
+C158/HQCDFBNUM contracts. C159 stopped before target/common-IR numerical
+matching, preserving all C158 coefficients and roots. Sole corrective
+continuation: C160/HQCDFBTEST.

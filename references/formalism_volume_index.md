@@ -967,3 +967,8 @@ C155/HQCDFLAVOR2 — flavor-template audit, external u/d block lift, active-Nf
 separation, pure-QCD m_ud adapter, and flavor-breaking handoff.
 C156/HQCDMATCHGRID2 — fixed-regulator matching-grid schema, gate vectors,
 empty-domain semantics, and common-IR numerical blocker.
+C159/HQCDMATCHIR3 — test-runner closure found two inherited C157 expectation
+failures against the frozen MATCHIR2-B/C158-HQCDFBNUM authority. Target
+programs remain source-qualified descriptors only; no target coefficient,
+common-IR difference, remainder, bracket, physical scale, or full grid was
+created. Sole corrective continuation: C160/HQCDFBTEST.
