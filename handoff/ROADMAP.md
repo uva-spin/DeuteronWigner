@@ -3821,3 +3821,9 @@ C158/HQCDMATCHWINDOW2 expectations conflict with the frozen MATCHIR2-B and
 C158/HQCDFBNUM contracts. C159 stopped before target/common-IR numerical
 matching, preserving all C158 coefficients and roots. Sole corrective
 continuation: C160/HQCDFBTEST.
+C160/HQCDFBTEST — provenance-resolved the untracked inherited test, retained
+its stale expectations as superseded records, and added a tracked
+authority-derived replacement asserting MATCHIR2-B and C158/HQCDFBNUM. The
+corrected C153/C156/C157 suite and the public C158 coefficient matrix pass;
+no C157–C159 science changed and no matching calculation ran. Sole
+continuation: C161/HQCDMATCHIR4.

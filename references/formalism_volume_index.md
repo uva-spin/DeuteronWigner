@@ -972,3 +972,9 @@ failures against the frozen MATCHIR2-B/C158-HQCDFBNUM authority. Target
 programs remain source-qualified descriptors only; no target coefficient,
 common-IR difference, remainder, bracket, physical scale, or full grid was
 created. Sole corrective continuation: C160/HQCDFBTEST.
+C160/HQCDFBTEST — the untracked inherited test was preserved and replaced by
+a tracked authority-derived test surface. Current MATCHIR2-B and
+C158/HQCDFBNUM provenance is independently established; corrected targeted
+tests and the full public C158 coefficient regression matrix pass. No
+matching or physical calculation was performed. Continuation:
+C161/HQCDMATCHIR4.
