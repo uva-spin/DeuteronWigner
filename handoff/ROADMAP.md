@@ -3806,3 +3806,12 @@ C156/HQCDMATCHGRID2 — executable fixed-regulator gate evaluator with frozen
 thresholds and explicit fixture/parameter contexts; numerical common-IR and
 perturbative-remainder authority remains incomplete. Continuation:
 C157/HQCDMATCHIR2.
+C158/HQCDFBNUM — executable finite-basis projected coefficient authority for
+QUARK_FIELD, SIGNED_QUARK_MASS, TRANSVERSE_GLUON_FIELD, qg_VERTEX_DRESSING,
+and QCD_COUPLING. Public C144 polynomial components and exact derivatives are
+consumed through immutable data-only DAGs, explicit C131 coupling powers,
+sparse/matrix-free/qg-block/Cauchy holdouts, count-once source/contact maps,
+and componentwise numerical enclosures. Continuum targets, common-IR
+differences, remainders, brackets, physical inputs, running, thresholds,
+counterterms, and states remain out of scope. Sole continuation:
+C159/HQCDMATCHIR3.

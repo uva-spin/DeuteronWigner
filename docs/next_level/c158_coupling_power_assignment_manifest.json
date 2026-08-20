@@ -1,0 +1,16 @@
+{
+  "schema": "C158-COUPLING-POWER-ASSIGNMENT-MANIFEST-V1",
+  "expansion_variable": "g_s",
+  "owner_to_coupling_power": {
+    "C128_FREE": 0,
+    "C53_CANONICAL_VERTEX": 1,
+    "C129_G3_RETAINED": 1,
+    "C129_G4_RETAINED": 2,
+    "C112_INSTANTANEOUS_FERMION": 2,
+    "C127_INSTANTANEOUS_CURRENT": 2
+  },
+  "source_contact_owners": ["C111", "C147", "C148", "C151", "C152"],
+  "counterterms": "NONMATRIX_NOT_IN_RETAINED_C131_POLYNOMIAL",
+  "guessed_powers": 0,
+  "public_owner_root": "67ab09bdc4ef7960a7d39ee35c243cec5c6537087012ea6283d5b4da8259cbd4"
+}

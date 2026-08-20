@@ -1,0 +1,10 @@
+{
+  "schema": "FB_COEFFICIENT_PROGRAM_DAG_V1",
+  "safe_opcodes": ["CONST", "SOURCE", "ADD", "MUL", "SCALE", "INVERSE", "MATRIX_INVERSE", "SQRT", "QUOTIENT", "DERIVATIVE_GUARD", "OUTPUT"],
+  "immutable": true,
+  "topological_ids": true,
+  "python_callables": false,
+  "pickle": false,
+  "dense_full_inverse": false,
+  "unknown_opcode": "reject"
+}
