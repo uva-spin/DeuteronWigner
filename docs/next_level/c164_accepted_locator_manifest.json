@@ -1,0 +1,33 @@
+{
+  "schema": "C164-C164_ACCEPTED_LOCATOR_MANIFEST-V1",
+  "baseline": "ecc821959af764f660a669ab059411b889e712ba",
+  "status": "C164_HQCDLFGLOCATOR2_DEPENDENCY_LOCATOR_INCOMPLETE",
+  "plan": "LFGLOCATOR2-D",
+  "package_root": "6a298a95338a78635b96d88c444fb55098acc63f83418530082714c4e8b0c5f2",
+  "source_scope": "eight authenticated local C140 PDFs only",
+  "descriptor_count": 25,
+  "source_count": 8,
+  "accepted_locator_count": 8,
+  "complete_dependency_graphs": 0,
+  "complete_expressions": 0,
+  "target_programs": 0,
+  "target_values": 0,
+  "next": "C165/HQCDLFGDEP",
+  "authoritative_api": "deuteron_wigner.bridge.hqcdlfglocator2",
+  "no_external_sources": true,
+  "no_formula_transcription": true,
+  "api": "accepted_locator_manifest(descriptor_id=None, source_id=None)",
+  "accepted_locator_count": 8,
+  "visual_verification": "VISUALLY_VERIFIED_LOCAL_RENDER",
+  "locators": [
+    {"descriptor_id":"TGT-QUARK_FIELD-RI_SMOM","source_id":"arxiv_0901.2599","pdf_page_index_0based":9,"printed_page":"9","label":"(20)"},
+    {"descriptor_id":"TGT-SIGNED_QUARK_MASS-RI_SMOM","source_id":"arxiv_0901.2599","pdf_page_index_0based":10,"printed_page":"10","label":"(24)"},
+    {"descriptor_id":"TGT-QUARK_FIELD-MOMQ","source_id":"arxiv_1108.4806","pdf_page_index_0based":23,"printed_page":"24","label":"(6.35)"},
+    {"descriptor_id":"TGT-TRANSVERSE_GLUON_FIELD-MOMQ","source_id":"arxiv_1108.4806","pdf_page_index_0based":23,"printed_page":"24","label":"(6.35)"},
+    {"descriptor_id":"TGT-qg_VERTEX_DRESSING-MOMQ","source_id":"arxiv_1108.4806","pdf_page_index_0based":23,"printed_page":"24","label":"(6.34)"},
+    {"descriptor_id":"TGT-QCD_COUPLING-MOMQ","source_id":"arxiv_1108.4806","pdf_page_index_0based":23,"printed_page":"24","label":"(6.35)"},
+    {"descriptor_id":"TGT-QCD_COUPLING-STEP_SCALING_INTERMEDIATE","source_id":"arxiv_1706.03821","pdf_page_index_0based":1,"printed_page":"2","label":"(8)"},
+    {"descriptor_id":"TGT-SIGNED_QUARK_MASS-STEP_SCALING_INTERMEDIATE","source_id":"arxiv_1802.05243","pdf_page_index_0based":4,"printed_page":"4","label":"(2.9b)"}
+  ],
+  "complete_expressions": 0
+}
