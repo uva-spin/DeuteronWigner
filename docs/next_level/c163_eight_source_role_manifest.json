@@ -1,0 +1,71 @@
+{
+  "schema": "C163-SOURCE-ROLE-MANIFEST-V1",
+  "rows": [
+    {
+      "source_id": "pdg2026_qcd",
+      "role": "PROHIBITED_FOR_CURRENT_TARGET_DESCRIPTOR",
+      "scientific_role": "physical-input review only",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "pdg2026_quark_masses",
+      "role": "PROHIBITED_FOR_CURRENT_TARGET_DESCRIPTOR",
+      "scientific_role": "physical-input review only",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "arxiv_0901.2599",
+      "role": "TARGET_SCHEME_CONVERSION_AUTHORITY",
+      "scientific_role": "RI/SMOM definition and continuum conversion method authority",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "arxiv_2002.12758",
+      "role": "TARGET_SCHEME_CONVERSION_AUTHORITY",
+      "scientific_role": "RI/SMOM-to-MS mass conversion method authority",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "arxiv_1108.4806",
+      "role": "TARGET_SCHEME_CONVERSION_AUTHORITY",
+      "scientific_role": "MOMq and symmetric-point vertex conversion method authority",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "arxiv_2002.02875",
+      "role": "RUNNING_OR_STEP_SCALING_AUTHORITY",
+      "scientific_role": "MOM beta-function and running method authority",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "arxiv_1706.03821",
+      "role": "RUNNING_OR_STEP_SCALING_AUTHORITY",
+      "scientific_role": "ALPHA coupling step-scaling method authority",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    },
+    {
+      "source_id": "arxiv_1802.05243",
+      "role": "RUNNING_OR_STEP_SCALING_AUTHORITY",
+      "scientific_role": "ALPHA mass step-scaling method authority",
+      "direct_target_coefficient_authority": false,
+      "pdg_numerical_values_consumed": false,
+      "C43_light_front_gauge_authority": false
+    }
+  ],
+  "role_count": 8,
+  "root": "9ce2cf36227a879be2b3f56bd6b4c96a3910a312f75f9f9880a6f17f032a4bcb"
+}

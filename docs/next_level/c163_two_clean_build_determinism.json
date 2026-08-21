@@ -1,0 +1,11 @@
+{
+  "schema": "C163-TWO-CLEAN-BUILD-DETERMINISM-V1",
+  "builds": 2,
+  "command": "python3.9 -m pip wheel --no-deps --no-build-isolation",
+  "clean_source_copies": 2,
+  "package_root_equal": true,
+  "runtime_root_equal": true,
+  "wheel_hashes_equal": false,
+  "wheel_hash_difference_explanation": "wheel metadata timestamps differ; semantic package/runtime roots are deterministic",
+  "status": "PASS"
+}
