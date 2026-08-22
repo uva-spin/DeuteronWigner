@@ -1,0 +1,33 @@
+{
+  "schema": "C165-C166-HQCDLFGDEP2-CONTINUATION-CONTRACT-V1",
+  "branch": "C166/HQCDLFGDEP2",
+  "parent_baseline": "2eb2bdf4d96789b36ea47da3d59fca2c636f17e5a3458fc2e224c80d712667d2",
+  "parent_status": "C165_HQCDLFGDEP_DEPENDENCY_LOCATOR_INCOMPLETE",
+  "parent_plan": "LFGDEP-D",
+  "scope": "resolve the 32 exact unresolved dependency leaves for the eight accepted C164 roots",
+  "preserve": [
+    "all eight immutable C164 accepted root locators",
+    "13 C164 absent-final-object descriptor statuses",
+    "4 C164 source-role-mismatch descriptor statuses",
+    "all accepted C165 dependency locators and graph edges"
+  ],
+  "required_objects": [
+    "source perturbative-coordinate and power definitions",
+    "active-N_f and external-flavor definitions",
+    "C43 light-front versus RI/SMOM or MOMq gauge/scheme boundary",
+    "bare/counterterm/renormalization/conversion layer closure",
+    "continuum and recursive step-scaling definitions",
+    "independent visual and source-version verification"
+  ],
+  "prohibited": [
+    "complete expression transcription",
+    "target compilation or numerical evaluation",
+    "C158 coefficient import or recomputation",
+    "PDG input consumption",
+    "matching, running, thresholds, common-IR, remainders, brackets, or windows",
+    "accepted-root replacement or reopening preserved C164 branches"
+  ],
+  "required_terminal_rule": "C166/HQCDLFGEXPR3 only after one or more graphs close; otherwise resolve the narrowest dependency leaf branch",
+  "exactly_one_continuation": true,
+  "push": false
+}
