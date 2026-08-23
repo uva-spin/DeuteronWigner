@@ -1,0 +1,10 @@
+{
+  "schema": "C172-GAUGE-TRANSFORMATION-CONTRACT-V1",
+  "generators": "Hermitian T=lambda/2",
+  "U": "exp(-i g_s omega)",
+  "D": "partial+i g_s A",
+  "delta_A": "partial omega - g_s f A omega",
+  "gauge_functional": "A^+",
+  "finite_cell": "[-L,L]",
+  "parameter_boundary": "periodic P0/Q0 chart"
+}
