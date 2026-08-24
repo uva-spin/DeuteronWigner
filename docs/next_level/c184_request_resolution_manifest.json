@@ -1,0 +1,826 @@
+{
+  "active_count": 2,
+  "all_six_visible": true,
+  "root": "d8106d7b90191d8bf78e5b4295fff04a8ad0302702dc1e984e30ccb80cc8f60c",
+  "rows": [
+    {
+      "C158_values": 0,
+      "C169_capsule": {
+        "C168_terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "C43_gauge": "A^+=0",
+        "PV_inverse_partial_plus": "antisymmetric/PV on Q0",
+        "active_Nf": "explicit symbolic active-loop N_f",
+        "capsule_fields_preserved": true,
+        "capsule_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-RI_SMOM-2",
+        "capsule_id_source": "C168 new_calculation_manifest request_id; no separate C168 capsule identifier exposed",
+        "common_IR": "explicit rho/mu common record required before any difference or ratio",
+        "counterterm_conditions": "bare-to-counterterm-to-renormalized layers; six counterterm directions unselected",
+        "expected_tensor_structure": {
+          "input": [
+            "K_MINUS",
+            "K_PLUS",
+            "K_PERP"
+          ],
+          "map_class": "FINITE_DIMENSIONAL_MATRIX",
+          "output": [
+            "RI_SMOM_QUARK_PROJECTED",
+            "MOMQ_QUARK_PROJECTED"
+          ]
+        },
+        "external_flavor": "RI/SMOM nonsinglet u-bar Gamma d or exact MOMq source record; separate from active N_f",
+        "external_state": "explicit off-shell colored C43 finite-basis state; target common-state map must be supplied",
+        "finite_cell_HO": "longitudinal finite cell and transverse HO/Fock resolution K9/K11/K13 separately",
+        "holdouts": [
+          "request-order",
+          "K9/K11/K13 separation",
+          "flavor nonsinglet versus active N_f",
+          "PV versus alternate pole prescription",
+          "zero-mode/residual-link nonzero guard",
+          "connected versus proper qg",
+          "V_B/Z_1F/g_R/g_R_over_g_s separation"
+        ],
+        "independent_routes": [
+          "AD-A_RENORMALIZATION_FACTOR_RATIO",
+          "AD-B_COMMON_PROJECTED_GREEN_FUNCTION",
+          "AD-C_FIRST_ORDER_COEFFICIENT_DIFFERENCE"
+        ],
+        "nonclaims": [
+          "no complete expression",
+          "no target value",
+          "no matching",
+          "no running",
+          "no threshold",
+          "no PDG",
+          "no physical scale",
+          "no counterterm or null representative",
+          "no Q0/Q1/Q2 change"
+        ],
+        "open_color": "fundamental triplet for quark/mass/qg quark legs; adjoint for gluon leg; explicit tensor basis required",
+        "operator_or_green_function": "C43 nonzero-mode projected quark two-point / field residue",
+        "perturbative_order": {
+          "C161_order_label": 0,
+          "order_value_promoted": false,
+          "source_order_authority": "C167 request-specific order from frozen C166 root",
+          "status": "FROZEN_LABEL_REQUIRES_C169_SOURCE_CALCULATION"
+        },
+        "projector_kinematics": "RI_SMOM source-qualified quark inverse-two-point projector; C43 finite kinetic projectors K_MINUS/K_PLUS/K_PERP remain separate",
+        "quantity": "QUARK_FIELD",
+        "renormalization_identities": "only source-qualified identities at declared gauge/scheme; no Abelian Ward promotion",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-RI_SMOM-2",
+        "required_diagram_classes": [
+          {
+            "class": "quark self-energy",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "external-leg counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-fermion terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "zero-mode terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "basis-boundary terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "residual-link terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "scheme counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "finite projector conversions",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          }
+        ],
+        "root": "db67de1566fbe034a1bf7390c39227fdbf33180415e56933ba42c5a196daf726",
+        "target_scheme": "RI_SMOM",
+        "terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "zero_mode_residual_link": "retain P0/Q0, residual transverse link, boundary and instantaneous terms; no zero default"
+      },
+      "active_in_C184": false,
+      "exact_next_object": "unchanged; not active in C184",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-RI_SMOM-2",
+      "scientific_values_target_side": 0,
+      "terminal_status": "PRESERVED_INHERITED_REQUEST"
+    },
+    {
+      "C158_values": 0,
+      "C169_capsule": {
+        "C168_terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "C43_gauge": "A^+=0",
+        "PV_inverse_partial_plus": "antisymmetric/PV on Q0",
+        "active_Nf": "explicit symbolic active-loop N_f",
+        "capsule_fields_preserved": true,
+        "capsule_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+        "capsule_id_source": "C168 new_calculation_manifest request_id; no separate C168 capsule identifier exposed",
+        "common_IR": "explicit rho/mu common record required before any difference or ratio",
+        "counterterm_conditions": "bare-to-counterterm-to-renormalized layers; six counterterm directions unselected",
+        "expected_tensor_structure": {
+          "branch": "caller-supplied signed branch",
+          "input": [
+            "signed m_R"
+          ],
+          "map_class": "SCALAR_MULTIPLICATIVE",
+          "output": [
+            "signed m_R_target"
+          ]
+        },
+        "external_flavor": "RI/SMOM nonsinglet u-bar Gamma d or exact MOMq source record; separate from active N_f",
+        "external_state": "explicit off-shell colored C43 finite-basis state; target common-state map must be supplied",
+        "finite_cell_HO": "longitudinal finite cell and transverse HO/Fock resolution K9/K11/K13 separately",
+        "holdouts": [
+          "request-order",
+          "K9/K11/K13 separation",
+          "flavor nonsinglet versus active N_f",
+          "PV versus alternate pole prescription",
+          "zero-mode/residual-link nonzero guard",
+          "connected versus proper qg",
+          "V_B/Z_1F/g_R/g_R_over_g_s separation"
+        ],
+        "independent_routes": [
+          "AD-A_RENORMALIZATION_FACTOR_RATIO",
+          "AD-B_COMMON_PROJECTED_GREEN_FUNCTION",
+          "AD-C_FIRST_ORDER_COEFFICIENT_DIFFERENCE"
+        ],
+        "nonclaims": [
+          "no complete expression",
+          "no target value",
+          "no matching",
+          "no running",
+          "no threshold",
+          "no PDG",
+          "no physical scale",
+          "no counterterm or null representative",
+          "no Q0/Q1/Q2 change"
+        ],
+        "open_color": "fundamental triplet for quark/mass/qg quark legs; adjoint for gluon leg; explicit tensor basis required",
+        "operator_or_green_function": "C43 signed quark mass projector on the retained quark two-point object",
+        "perturbative_order": {
+          "C161_order_label": 0,
+          "order_value_promoted": false,
+          "source_order_authority": "C167 request-specific order from frozen C166 root",
+          "status": "FROZEN_LABEL_REQUIRES_C169_SOURCE_CALCULATION"
+        },
+        "projector_kinematics": "RI_SMOM source-qualified scalar mass projector; signed branch retained, m_R^2 not substituted",
+        "quantity": "SIGNED_QUARK_MASS",
+        "renormalization_identities": "only source-qualified identities at declared gauge/scheme; no Abelian Ward promotion",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+        "required_diagram_classes": [
+          {
+            "class": "quark self-energy",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "mass insertion/self-energy scalar",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "external-leg counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-fermion terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "zero-mode terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "basis-boundary terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "residual-link terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "scheme counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "finite projector conversions",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          }
+        ],
+        "root": "76f79835439a9a26ee3998a57ac08bf641b6c6068ca76600094342456d1c36ac",
+        "target_scheme": "RI_SMOM",
+        "terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "zero_mode_residual_link": "retain P0/Q0, residual transverse link, boundary and instantaneous terms; no zero default"
+      },
+      "active_in_C184": false,
+      "exact_next_object": "unchanged; not active in C184",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+      "scientific_values_target_side": 0,
+      "terminal_status": "PRESERVED_INHERITED_REQUEST"
+    },
+    {
+      "C158_values": 0,
+      "C169_capsule": {
+        "C168_terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "C43_gauge": "A^+=0",
+        "PV_inverse_partial_plus": "antisymmetric/PV on Q0",
+        "active_Nf": "explicit symbolic active-loop N_f",
+        "capsule_fields_preserved": true,
+        "capsule_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-MOMQ-2",
+        "capsule_id_source": "C168 new_calculation_manifest request_id; no separate C168 capsule identifier exposed",
+        "common_IR": "explicit rho/mu common record required before any difference or ratio",
+        "counterterm_conditions": "bare-to-counterterm-to-renormalized layers; six counterterm directions unselected",
+        "expected_tensor_structure": {
+          "input": [
+            "K_MINUS",
+            "K_PLUS",
+            "K_PERP"
+          ],
+          "map_class": "FINITE_DIMENSIONAL_MATRIX",
+          "output": [
+            "RI_SMOM_QUARK_PROJECTED",
+            "MOMQ_QUARK_PROJECTED"
+          ]
+        },
+        "external_flavor": "RI/SMOM nonsinglet u-bar Gamma d or exact MOMq source record; separate from active N_f",
+        "external_state": "explicit off-shell colored C43 finite-basis state; target common-state map must be supplied",
+        "finite_cell_HO": "longitudinal finite cell and transverse HO/Fock resolution K9/K11/K13 separately",
+        "holdouts": [
+          "request-order",
+          "K9/K11/K13 separation",
+          "flavor nonsinglet versus active N_f",
+          "PV versus alternate pole prescription",
+          "zero-mode/residual-link nonzero guard",
+          "connected versus proper qg",
+          "V_B/Z_1F/g_R/g_R_over_g_s separation"
+        ],
+        "independent_routes": [
+          "AD-A_RENORMALIZATION_FACTOR_RATIO",
+          "AD-B_COMMON_PROJECTED_GREEN_FUNCTION",
+          "AD-C_FIRST_ORDER_COEFFICIENT_DIFFERENCE"
+        ],
+        "nonclaims": [
+          "no complete expression",
+          "no target value",
+          "no matching",
+          "no running",
+          "no threshold",
+          "no PDG",
+          "no physical scale",
+          "no counterterm or null representative",
+          "no Q0/Q1/Q2 change"
+        ],
+        "open_color": "fundamental triplet for quark/mass/qg quark legs; adjoint for gluon leg; explicit tensor basis required",
+        "operator_or_green_function": "C43 nonzero-mode projected quark two-point / field residue",
+        "perturbative_order": {
+          "C161_order_label": 0,
+          "order_value_promoted": false,
+          "source_order_authority": "C167 request-specific order from frozen C166 root",
+          "status": "FROZEN_LABEL_REQUIRES_C169_SOURCE_CALCULATION"
+        },
+        "projector_kinematics": "MOMQ source-qualified quark inverse-two-point projector; C43 finite kinetic projectors K_MINUS/K_PLUS/K_PERP remain separate",
+        "quantity": "QUARK_FIELD",
+        "renormalization_identities": "only source-qualified identities at declared gauge/scheme; no Abelian Ward promotion",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-MOMQ-2",
+        "required_diagram_classes": [
+          {
+            "class": "quark self-energy",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "external-leg counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-fermion terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "zero-mode terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "basis-boundary terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "residual-link terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "scheme counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "finite projector conversions",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          }
+        ],
+        "root": "5eda9b75fe340c0a709dd9a247f9b98adb278a1ddac77af9dae70e9a58b6de81",
+        "target_scheme": "MOMQ",
+        "terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "zero_mode_residual_link": "retain P0/Q0, residual transverse link, boundary and instantaneous terms; no zero default"
+      },
+      "active_in_C184": false,
+      "exact_next_object": "unchanged; not active in C184",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-MOMQ-2",
+      "scientific_values_target_side": 0,
+      "terminal_status": "PRESERVED_INHERITED_REQUEST"
+    },
+    {
+      "C158_values": 0,
+      "C169_capsule": {
+        "C168_terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "C43_gauge": "A^+=0",
+        "PV_inverse_partial_plus": "antisymmetric/PV on Q0",
+        "active_Nf": "explicit symbolic active-loop N_f",
+        "capsule_fields_preserved": true,
+        "capsule_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "capsule_id_source": "C168 new_calculation_manifest request_id; no separate C168 capsule identifier exposed",
+        "common_IR": "explicit rho/mu common record required before any difference or ratio",
+        "counterterm_conditions": "bare-to-counterterm-to-renormalized layers; six counterterm directions unselected",
+        "expected_tensor_structure": {
+          "input": [
+            "C43_A_perp_transverse_components"
+          ],
+          "map_class": "FINITE_DIMENSIONAL_MATRIX",
+          "output": [
+            "MOMQ_TRANSVERSE_GLUON_PROJECTED"
+          ]
+        },
+        "external_flavor": "RI/SMOM nonsinglet u-bar Gamma d or exact MOMq source record; separate from active N_f",
+        "external_state": "explicit off-shell colored C43 finite-basis state; target common-state map must be supplied",
+        "finite_cell_HO": "longitudinal finite cell and transverse HO/Fock resolution K9/K11/K13 separately",
+        "holdouts": [
+          "request-order",
+          "K9/K11/K13 separation",
+          "flavor nonsinglet versus active N_f",
+          "PV versus alternate pole prescription",
+          "zero-mode/residual-link nonzero guard",
+          "connected versus proper qg",
+          "V_B/Z_1F/g_R/g_R_over_g_s separation"
+        ],
+        "independent_routes": [
+          "AD-A_RENORMALIZATION_FACTOR_RATIO",
+          "AD-B_COMMON_PROJECTED_GREEN_FUNCTION",
+          "AD-C_FIRST_ORDER_COEFFICIENT_DIFFERENCE"
+        ],
+        "nonclaims": [
+          "no complete expression",
+          "no target value",
+          "no matching",
+          "no running",
+          "no threshold",
+          "no PDG",
+          "no physical scale",
+          "no counterterm or null representative",
+          "no Q0/Q1/Q2 change"
+        ],
+        "open_color": "fundamental triplet for quark/mass/qg quark legs; adjoint for gluon leg; explicit tensor basis required",
+        "operator_or_green_function": "C43 transverse A_perp two-point response",
+        "perturbative_order": {
+          "C161_order_label": 0,
+          "order_value_promoted": false,
+          "source_order_authority": "C167 request-specific order from frozen C166 root",
+          "status": "FROZEN_LABEL_REQUIRES_C169_SOURCE_CALCULATION"
+        },
+        "projector_kinematics": "MOMQ source-qualified transverse gluon projector; no C43 RI/SMOM promotion",
+        "quantity": "TRANSVERSE_GLUON_FIELD",
+        "renormalization_identities": "only source-qualified identities at declared gauge/scheme; no Abelian Ward promotion",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "required_diagram_classes": [
+          {
+            "class": "gluon self-energy quark loop",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "gluon self-energy ghost loop",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "gluon self-energy pure-gluon loop",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "three-/four-gluon descendants",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "zero-mode terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "basis-boundary terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "residual-link terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "scheme counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "finite projector conversions",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          }
+        ],
+        "root": "02584cbc886627dd5d3db476ef36652f94e9b67df3057f5f1d232c3215172d83",
+        "target_scheme": "MOMQ",
+        "terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "zero_mode_residual_link": "retain P0/Q0, residual transverse link, boundary and instantaneous terms; no zero default"
+      },
+      "active_in_C184": true,
+      "exact_next_object": "C185/HQCDB1HIGHERFOCK1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "scientific_values_target_side": 0,
+      "terminal_status": "C43_B0_TRANSVERSE_GLUON_COEFFICIENT_READY"
+    },
+    {
+      "C158_values": 0,
+      "C169_capsule": {
+        "C168_terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "C43_gauge": "A^+=0",
+        "PV_inverse_partial_plus": "antisymmetric/PV on Q0",
+        "active_Nf": "explicit symbolic active-loop N_f",
+        "capsule_fields_preserved": true,
+        "capsule_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "capsule_id_source": "C168 new_calculation_manifest request_id; no separate C168 capsule identifier exposed",
+        "common_IR": "explicit rho/mu common record required before any difference or ratio",
+        "counterterm_conditions": "bare-to-counterterm-to-renormalized layers; six counterterm directions unselected",
+        "expected_tensor_structure": {
+          "input": [
+            "connected_retained_qg",
+            "amputated_retained_qg",
+            "V_B",
+            "Z_1F"
+          ],
+          "map_class": "FINITE_DIMENSIONAL_MATRIX",
+          "output": [
+            "proper_target_qg_projected"
+          ]
+        },
+        "external_flavor": "RI/SMOM nonsinglet u-bar Gamma d or exact MOMq source record; separate from active N_f",
+        "external_state": "explicit off-shell colored C43 finite-basis state; target common-state map must be supplied",
+        "finite_cell_HO": "longitudinal finite cell and transverse HO/Fock resolution K9/K11/K13 separately",
+        "holdouts": [
+          "request-order",
+          "K9/K11/K13 separation",
+          "flavor nonsinglet versus active N_f",
+          "PV versus alternate pole prescription",
+          "zero-mode/residual-link nonzero guard",
+          "connected versus proper qg",
+          "V_B/Z_1F/g_R/g_R_over_g_s separation"
+        ],
+        "independent_routes": [
+          "AD-A_RENORMALIZATION_FACTOR_RATIO",
+          "AD-B_COMMON_PROJECTED_GREEN_FUNCTION",
+          "AD-C_FIRST_ORDER_COEFFICIENT_DIFFERENCE"
+        ],
+        "nonclaims": [
+          "no complete expression",
+          "no target value",
+          "no matching",
+          "no running",
+          "no threshold",
+          "no PDG",
+          "no physical scale",
+          "no counterterm or null representative",
+          "no Q0/Q1/Q2 change"
+        ],
+        "open_color": "fundamental triplet for quark/mass/qg quark legs; adjoint for gluon leg; explicit tensor basis required",
+        "operator_or_green_function": "C43 connected/amputated retained qg response; complete 1PI not asserted",
+        "perturbative_order": {
+          "C161_order_label": 1,
+          "order_value_promoted": false,
+          "source_order_authority": "C167 request-specific order from frozen C166 root",
+          "status": "FROZEN_LABEL_REQUIRES_C169_SOURCE_CALCULATION"
+        },
+        "projector_kinematics": "MOMQ source-qualified q-g vertex projector with explicit leg order and color tensors",
+        "quantity": "qg_VERTEX_DRESSING",
+        "renormalization_identities": "only source-qualified identities at declared gauge/scheme; no Abelian Ward promotion",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "required_diagram_classes": [
+          {
+            "class": "quark self-energy",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "qg vertex diagrams",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "external-leg counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-fermion terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-current/Gauss-law terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "three-/four-gluon descendants",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "zero-mode terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "basis-boundary terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "residual-link terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "scheme counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "finite projector conversions",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          }
+        ],
+        "root": "ce8efe2fbb5c32bf81f9da0be71b6a2b82f97d38cc4cde426d7c9d335afb96f1",
+        "target_scheme": "MOMQ",
+        "terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "zero_mode_residual_link": "retain P0/Q0, residual transverse link, boundary and instantaneous terms; no zero default"
+      },
+      "active_in_C184": false,
+      "exact_next_object": "unchanged; not active in C184",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+      "scientific_values_target_side": 0,
+      "terminal_status": "PRESERVED_INHERITED_REQUEST"
+    },
+    {
+      "C158_values": 0,
+      "C169_capsule": {
+        "C168_terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "C43_gauge": "A^+=0",
+        "PV_inverse_partial_plus": "antisymmetric/PV on Q0",
+        "active_Nf": "explicit symbolic active-loop N_f",
+        "capsule_fields_preserved": true,
+        "capsule_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "capsule_id_source": "C168 new_calculation_manifest request_id; no separate C168 capsule identifier exposed",
+        "common_IR": "explicit rho/mu common record required before any difference or ratio",
+        "counterterm_conditions": "bare-to-counterterm-to-renormalized layers; six counterterm directions unselected",
+        "expected_tensor_structure": {
+          "input": [
+            "g_R",
+            "g_R/g_s",
+            "Z_1F",
+            "Z_q",
+            "Z_A"
+          ],
+          "map_class": "RATIO_OF_RENORMALIZATION_FACTORS",
+          "output": [
+            "MOMQ_g_R"
+          ]
+        },
+        "external_flavor": "RI/SMOM nonsinglet u-bar Gamma d or exact MOMq source record; separate from active N_f",
+        "external_state": "explicit off-shell colored C43 finite-basis state; target common-state map must be supplied",
+        "finite_cell_HO": "longitudinal finite cell and transverse HO/Fock resolution K9/K11/K13 separately",
+        "holdouts": [
+          "request-order",
+          "K9/K11/K13 separation",
+          "flavor nonsinglet versus active N_f",
+          "PV versus alternate pole prescription",
+          "zero-mode/residual-link nonzero guard",
+          "connected versus proper qg",
+          "V_B/Z_1F/g_R/g_R_over_g_s separation"
+        ],
+        "independent_routes": [
+          "AD-A_RENORMALIZATION_FACTOR_RATIO",
+          "AD-B_COMMON_PROJECTED_GREEN_FUNCTION",
+          "AD-C_FIRST_ORDER_COEFFICIENT_DIFFERENCE"
+        ],
+        "nonclaims": [
+          "no complete expression",
+          "no target value",
+          "no matching",
+          "no running",
+          "no threshold",
+          "no PDG",
+          "no physical scale",
+          "no counterterm or null representative",
+          "no Q0/Q1/Q2 change"
+        ],
+        "open_color": "fundamental triplet for quark/mass/qg quark legs; adjoint for gluon leg; explicit tensor basis required",
+        "operator_or_green_function": "C43 coupling parameter assembled from explicitly separated field and vertex factors",
+        "perturbative_order": {
+          "C161_order_label": 1,
+          "order_value_promoted": false,
+          "source_order_authority": "C167 request-specific order from frozen C166 root",
+          "status": "FROZEN_LABEL_REQUIRES_C169_SOURCE_CALCULATION"
+        },
+        "projector_kinematics": "MOMQ source-qualified coupling condition; assembled field/vertex projector factors remain separate",
+        "quantity": "QCD_COUPLING",
+        "renormalization_identities": "only source-qualified identities at declared gauge/scheme; no Abelian Ward promotion",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "required_diagram_classes": [
+          {
+            "class": "quark self-energy",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "mass insertion/self-energy scalar",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "gluon self-energy quark loop",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "gluon self-energy ghost loop",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "gluon self-energy pure-gluon loop",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "qg vertex diagrams",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "external-leg counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-fermion terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "instantaneous-current/Gauss-law terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "three-/four-gluon descendants",
+            "classification": "MISSING_FULL_QCD_SECTOR",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "zero-mode terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "basis-boundary terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "residual-link terms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "scheme counterterms",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          },
+          {
+            "class": "finite projector conversions",
+            "classification": "MISSING_REGULATOR_REALIZATION",
+            "not_zero": true,
+            "status": "UNAVAILABLE_BLOCKING"
+          }
+        ],
+        "root": "cf0b516a752d8de74496ebf01a7e4375b9a8a8a36fc3d6150c3fea3046eb9c01",
+        "target_scheme": "MOMQ",
+        "terminal_status": "NEW_C43_PERTURBATIVE_CALCULATION_REQUIRED",
+        "zero_mode_residual_link": "retain P0/Q0, residual transverse link, boundary and instantaneous terms; no zero default"
+      },
+      "active_in_C184": true,
+      "exact_next_object": "C185/HQCDB1HIGHERFOCK1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "scientific_values_target_side": 0,
+      "terminal_status": "C43_B0_COUPLING_COMPONENT_READY_B1_ST_REMAINDER"
+    }
+  ],
+  "schema": "C184-REQUEST-RESOLUTION-V1"
+}
