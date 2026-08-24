@@ -1,0 +1,126 @@
+{
+  "circle": {
+    "root": "8553133464f746ca09aaafe573ee26f68b485b1988fd7e9ac7d4cfd09522c35b",
+    "routes": [
+      "CIRCLE-A coordinate quotient",
+      "CIRCLE-B finite Fourier",
+      "CIRCLE-C gauge orbit",
+      "CIRCLE-D holonomy/zero mode"
+    ],
+    "row": {
+      "Q0_modes": "nonzero periodic Fourier modes only",
+      "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+      "coordinate_cover": "-L <= x^- <= L",
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "cut_is_chart_identity": true,
+      "cut_is_source_infinity": false,
+      "global_SU3": "algebraic and outside local normalizable HO domain",
+      "infinity_equals_plus_minus_L": false,
+      "longitudinal_zero_mode": "retained in P0/global interface",
+      "orientation": "increasing x^-",
+      "period": "2L",
+      "root": "804e800141b96a668239888c7af4b617f90ebfb870060e9390cd4cb7184ba7e5",
+      "topology": "S_L^1 = R/(2L Z)"
+    },
+    "schema": "C178-PERIODIC-CIRCLE-V1"
+  },
+  "cut_sides": {
+    "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+    "root": "0401b7501ee8562ccc0f86e5d6a975722dc14d322ef296752b6b9a862e02b056",
+    "rows": [
+      {
+        "cut_id": "C178_CUT_C0_COORDINATE",
+        "cut_side_id": "C178_CUT_SIDE_PLUS",
+        "frame_identity": "oriented boundary frame label",
+        "ordinary_periodic_endpoint_value": false,
+        "orientation": "approach cut from + side",
+        "premature_identification": false,
+        "source_value_evaluated": false,
+        "trace": "lim epsilon->0+ f(c +/- epsilon)"
+      },
+      {
+        "cut_id": "C178_CUT_C0_COORDINATE",
+        "cut_side_id": "C178_CUT_SIDE_MINUS",
+        "frame_identity": "oriented boundary frame label",
+        "ordinary_periodic_endpoint_value": false,
+        "orientation": "approach cut from - side",
+        "premature_identification": false,
+        "source_value_evaluated": false,
+        "trace": "lim epsilon->0+ f(c +/- epsilon)"
+      }
+    ],
+    "schema": "C178-CUT-SIDE-V1",
+    "two_sides_retained": true
+  },
+  "holonomy": {
+    "global_zero_mode_retained": true,
+    "root": "a6c0984f95b119470f3ecee6ccd12553a764ce048db5e414e60df0337f7c108f",
+    "rows": [
+      {
+        "A_plus_local_zero": "does not determine global holonomy",
+        "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+        "cut_id": "C178_CUT_C0_COORDINATE",
+        "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+        "materialization": "nonmatrix interface only",
+        "representation": "open adjoint; external color retained",
+        "routes": [
+          "HOL-A coordinate",
+          "HOL-B finite Fourier",
+          "HOL-C gauge orbit",
+          "HOL-D holonomy/zero-mode",
+          "HOL-E C174 subgauge/ghost boundary"
+        ],
+        "sector": "longitudinal zero-mode/global topology",
+        "status": "HOLONOMY_INTERFACE_EXPLICIT",
+        "trivial_sector": "NOT_SELECTED"
+      }
+    ],
+    "schema": "C178-HOLONOMY-V1"
+  },
+  "project_path": {
+    "root": "19c2d97115972a717458a9c54f8389b39368721b14b1abc3a2bff723f19f05bb",
+    "row": {
+      "PV": "transition-transported antisymmetric relation",
+      "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "finite_HO_path_representative": "withheld",
+      "future_class": "DIS_FUTURE -> CUT_SIDE_PLUS",
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "past_class": "DY_PAST -> CUT_SIDE_MINUS",
+      "project_path_class_id": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "project_scope": "periodic cut-side class; no shape representative",
+      "source_scope": "C177 continuum class",
+      "status": "PROJECT_PERIODIC_PATH_CLASS_PUBLISHED_HOLONOMY_RETAINED",
+      "straight_connector_selected": false,
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE",
+      "trivial_holonomy_selected": false
+    },
+    "schema": "C178-PROJECT-PATH-CLASS-V1"
+  },
+  "transition": {
+    "root": "add41ef4bf567b3ed920db17d345d816a0892ebf4eb4942141ea27e918bb54ae",
+    "rows": [
+      {
+        "A_plus_local_zero_implies_identity": false,
+        "cut_id": "C178_CUT_C0_COORDINATE",
+        "endpoint_value": "not evaluated",
+        "formula_scope": "Omega'_c = U_+(c) Omega_c U_-(c)^dagger; adjoint Omega'_adj = R(U_+) Omega_adj R(U_-)^{-1}",
+        "identity_proof": "not available and not assumed",
+        "identity_selected": false,
+        "kind": "nonmatrix zero-mode/global interface",
+        "representation": "open adjoint boundary-frame transport",
+        "routes": [
+          "TRANS-A direct frame",
+          "TRANS-B longitudinal transport",
+          "TRANS-C generated adjoint",
+          "TRANS-D all-generator covariance"
+        ],
+        "source_frame": "C178_CUT_SIDE_MINUS",
+        "status": "NONTRIVIAL_HOLONOMY_INTERFACE_READY",
+        "target_frame": "C178_CUT_SIDE_PLUS",
+        "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+      }
+    ],
+    "schema": "C178-TRANSITION-FUNCTION-V1"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "all_eight_generators": true,
+  "external_adjoint_coordinate_retained": true,
+  "gg_multiplicities": [
+    "d",
+    "f"
+  ],
+  "open_adjoint": true,
+  "root": "08b3b7109a3a144bcfbd0b224689e2ac87a589f7aa6940dfa99e73c9c31ee0f8",
+  "routes": [
+    "COV-A direct frame",
+    "COV-B longitudinal transport",
+    "COV-C generated adjoint",
+    "COV-D all eight generators"
+  ],
+  "rows": [
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 0,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 1,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 2,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 3,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 4,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 5,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 6,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    },
+    {
+      "direct_frame_residual": 0.0,
+      "generated_adjoint_residual": 0.0,
+      "generator": 7,
+      "route_status": "STRUCTURAL_COVARIANCE_CLOSED",
+      "transport_residual": 0.0
+    }
+  ],
+  "schema": "C178-TRANSITION-COVARIANCE-V1",
+  "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+}

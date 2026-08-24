@@ -1,0 +1,82 @@
+{
+  "root": "6cb14fff67c738c8f033d7e4115eda573a88f27dd3ff5161230bddd2b4168add",
+  "rows": [
+    {
+      "P0_Q0": "C174/C175 interfaces",
+      "PV": "ANTISYMMETRIC_OR_PV_THROUGH_TRANSITION",
+      "capsule_id": "C178-FINITE-HO-PATH-REPRESENTATIVE",
+      "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "cut_sides": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "finite_HO_owner": "C176-HO-BOUNDARY",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "ghost_boundary": "C175 residual ghost boundary",
+      "holdouts": [
+        "no straight path",
+        "no leakage pruning",
+        "no endpoint value",
+        "no link kernel"
+      ],
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_color": "OPEN_ADJOINT_SU3",
+      "parent_C177_object": "C177-PERIODIC-CELL-PATH-ADAPTER",
+      "project_subgauge": "PROJECT_FINITE_CELL_P0_TRANSVERSE_SUBGAUGE_V1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "required_routes": [
+        "HO-PATH-A analytic mode",
+        "HO-PATH-B finite Fourier",
+        "HO-PATH-C operator preimage",
+        "HO-PATH-D capsule topology",
+        "HO-PATH-E boundary/link"
+      ],
+      "status": "FINITE_HO_PATH_REPRESENTATIVE_REQUIRED",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+    },
+    {
+      "P0_Q0": "C174/C175 interfaces",
+      "PV": "ANTISYMMETRIC_OR_PV_THROUGH_TRANSITION",
+      "capsule_id": "C178-FINITE-HO-PATH-REPRESENTATIVE",
+      "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "cut_sides": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "finite_HO_owner": "C176-HO-BOUNDARY",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "ghost_boundary": "C175 residual ghost boundary",
+      "holdouts": [
+        "no straight path",
+        "no leakage pruning",
+        "no endpoint value",
+        "no link kernel"
+      ],
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_color": "OPEN_ADJOINT_SU3",
+      "parent_C177_object": "C177-PERIODIC-CELL-PATH-ADAPTER",
+      "project_subgauge": "PROJECT_FINITE_CELL_P0_TRANSVERSE_SUBGAUGE_V1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "HO-PATH-A analytic mode",
+        "HO-PATH-B finite Fourier",
+        "HO-PATH-C operator preimage",
+        "HO-PATH-D capsule topology",
+        "HO-PATH-E boundary/link"
+      ],
+      "status": "FINITE_HO_PATH_REPRESENTATIVE_REQUIRED",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+    }
+  ],
+  "schema": "C178-MISSING-ADAPTER-OBJECT-V1"
+}
