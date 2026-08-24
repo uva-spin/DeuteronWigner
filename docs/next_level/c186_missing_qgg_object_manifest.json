@@ -1,0 +1,186 @@
+{
+  "count": 8,
+  "not_zero": true,
+  "root": "f426bacdb9c2bf24cf1c610da01cce2498b89157964e1a22d617f8b781e4c5da",
+  "rows": [
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C186-Q-QGG-CONSTRAINED-FERMION-CONTACT",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+      "required_routes": [
+        "O2-A",
+        "O2-B",
+        "O2-C",
+        "O2-D",
+        "O2-E",
+        "O2-F",
+        "O2-G"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C112_INSTANTANEOUS_FERMION_QGG"
+      ],
+      "status": "SOURCE_SCOPE_INCOMPLETE"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C186-Q-QGG-GAUSS-CURRENT",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+      "required_routes": [
+        "O2-A",
+        "O2-C",
+        "O2-G"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C127_GAUSS_CURRENT_QGG"
+      ],
+      "status": "SOURCE_SCOPE_INCOMPLETE"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C186-Q-QGG-RESIDUAL-LINK",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+      "required_routes": [
+        "O2-A",
+        "O2-D",
+        "O2-F"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C182_RESIDUAL_LINK_DEGREE2_QGG"
+      ],
+      "status": "NONMATRIX_BOUNDARY_INTERFACE"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C187-COMPLETE-QG-1PI",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+      "required_routes": [
+        "higher-sector resolvent",
+        "leg subtraction",
+        "ST remainder"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C186_QGG_CUBIC_GLUE",
+        "C186_ORDER2"
+      ],
+      "status": "FUTURE_NOT_CALCULATED"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C186-Q-QGG-CONSTRAINED-FERMION-CONTACT",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "O2-A",
+        "O2-B",
+        "O2-C",
+        "O2-D",
+        "O2-E",
+        "O2-F",
+        "O2-G"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C112_INSTANTANEOUS_FERMION_QGG"
+      ],
+      "status": "SOURCE_SCOPE_INCOMPLETE"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C186-Q-QGG-GAUSS-CURRENT",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "O2-A",
+        "O2-C",
+        "O2-G"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C127_GAUSS_CURRENT_QGG"
+      ],
+      "status": "SOURCE_SCOPE_INCOMPLETE"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C186-Q-QGG-RESIDUAL-LINK",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "O2-A",
+        "O2-D",
+        "O2-F"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C182_RESIDUAL_LINK_DEGREE2_QGG"
+      ],
+      "status": "NONMATRIX_BOUNDARY_INTERFACE"
+    },
+    {
+      "channel_ids": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "coupling_degree": 2,
+      "not_zero": true,
+      "object_id": "C187-COMPLETE-QG-1PI",
+      "parent_request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "higher-sector resolvent",
+        "leg subtraction",
+        "ST remainder"
+      ],
+      "resolution": "K9/K11/K13",
+      "source_ids": [
+        "C186_QGG_CUBIC_GLUE",
+        "C186_ORDER2"
+      ],
+      "status": "FUTURE_NOT_CALCULATED"
+    }
+  ],
+  "schema": "C186-MISSING-QGG-OBJECT-V1"
+}
