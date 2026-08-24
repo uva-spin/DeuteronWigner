@@ -1,0 +1,30 @@
+{
+  "continuation": "C183/HQCDB0HOLONOMY2",
+  "parent": "C182/HQCDB0RESLINK2",
+  "parent_status": "C182_C181_LOCAL_TRANSVERSE_RESIDUAL_LINK_AUTHORITY_READY_HOLONOMY_CONDITIONAL",
+  "parent_plan": "RESLINK2-B",
+  "parent_package_root": "9f1a41a5f21189ad94eba17b3a897a825ee574dee1d08a5470550ad19364bd9e",
+  "first_remaining_object": "C178_AUTHENTICATED_LONGITUDINAL_TRANSITION_HOLONOMY_CAPSULE",
+  "required_scope": [
+    "bind the exact C178 transition and longitudinal holonomy capsule",
+    "preserve future DIS and past DY cut-side classes",
+    "preserve antisymmetric PV transport",
+    "compose the authenticated periodic factor with the frozen C182 local link",
+    "test cut-shift, reversal, generated-adjoint, and truncated unitarity identities",
+    "retain open-adjoint color and C171 d/f multiplicities"
+  ],
+  "nonclaims": [
+    "no physical endpoint",
+    "no physical coupling",
+    "no self-energy",
+    "no qg 1PI",
+    "no standard-scheme adapter",
+    "no TMD or soft factor",
+    "no BRST/ST",
+    "no counterterm/null",
+    "no quantum object"
+  ],
+  "source_acquisition": 0,
+  "push": false,
+  "schema": "C182-C183-HQCDB0HOLONOMY2-CONTINUATION-V1"
+}
