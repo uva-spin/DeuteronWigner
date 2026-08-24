@@ -1,0 +1,154 @@
+{
+  "root": "711244b641b295eadc3eec71f6d4a3d8623977f81cb8b02b50482a1686cc323b",
+  "rows": [
+    {
+      "alcove": "diagnostic interior/wall record",
+      "capsule_id": "IDENTITY_DIAGNOSTIC_ONLY",
+      "cartan_coordinate_id": "C183_CARTAN_IDENTITY_DIAGNOSTIC_ONLY",
+      "coordinates": {
+        "theta3": 0.0,
+        "theta8": 0.0
+      },
+      "degenerate_eigenvalues": true,
+      "determinant_constraint": "sum eigenphases=0",
+      "eigenphases": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "generator_normalization": "C43 Tr(Ta Tb)=delta_ab/2",
+      "routes": [
+        "CARTAN-A generator exponential",
+        "CARTAN-B eigenphase",
+        "CARTAN-C trace invariant",
+        "CARTAN-D Weyl",
+        "CARTAN-E reconstruction"
+      ],
+      "stabilizer": "centralizer recorded",
+      "trace_invariants": [
+        3.0,
+        0.0
+      ],
+      "weyl_action": "S3 permutations plus center shifts"
+    },
+    {
+      "alcove": "diagnostic interior/wall record",
+      "capsule_id": "GENERIC_CARTAN_INTERIOR",
+      "cartan_coordinate_id": "C183_CARTAN_GENERIC_CARTAN_INTERIOR",
+      "coordinates": {
+        "theta3": 0.4,
+        "theta8": 0.2
+      },
+      "degenerate_eigenvalues": false,
+      "determinant_constraint": "sum eigenphases=0",
+      "eigenphases": [
+        0.2577350269189626,
+        -0.14226497308103742,
+        -0.11547005383792516
+      ],
+      "generator_normalization": "C43 Tr(Ta Tb)=delta_ab/2",
+      "routes": [
+        "CARTAN-A generator exponential",
+        "CARTAN-B eigenphase",
+        "CARTAN-C trace invariant",
+        "CARTAN-D Weyl",
+        "CARTAN-E reconstruction"
+      ],
+      "stabilizer": "centralizer recorded",
+      "trace_invariants": [
+        2.950207911907252,
+        -0.0021081450452194173
+      ],
+      "weyl_action": "S3 permutations plus center shifts"
+    },
+    {
+      "alcove": "diagnostic interior/wall record",
+      "capsule_id": "NONTRIVIAL_CENTER_SECTOR",
+      "cartan_coordinate_id": "C183_CARTAN_NONTRIVIAL_CENTER_SECTOR",
+      "coordinates": {},
+      "degenerate_eigenvalues": false,
+      "determinant_constraint": "sum eigenphases=0",
+      "eigenphases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "generator_normalization": "C43 Tr(Ta Tb)=delta_ab/2",
+      "routes": [
+        "CARTAN-A generator exponential",
+        "CARTAN-B eigenphase",
+        "CARTAN-C trace invariant",
+        "CARTAN-D Weyl",
+        "CARTAN-E reconstruction"
+      ],
+      "stabilizer": "centralizer recorded",
+      "trace_invariants": [
+        3.0,
+        0.0
+      ],
+      "weyl_action": "S3 permutations plus center shifts"
+    },
+    {
+      "alcove": "diagnostic interior/wall record",
+      "capsule_id": "CONJUGATED_NONDIAGONAL_GENERIC",
+      "cartan_coordinate_id": "C183_CARTAN_CONJUGATED_NONDIAGONAL_GENERIC",
+      "coordinates": {
+        "frame_angle": 0.37,
+        "theta3": 0.55,
+        "theta8": -0.25
+      },
+      "degenerate_eigenvalues": false,
+      "determinant_constraint": "sum eigenphases=0",
+      "eigenphases": [
+        0.2028312163512968,
+        -0.34716878364870324,
+        0.14433756729740646
+      ],
+      "generator_normalization": "C43 Tr(Ta Tb)=delta_ab/2",
+      "routes": [
+        "CARTAN-A generator exponential",
+        "CARTAN-B eigenphase",
+        "CARTAN-C trace invariant",
+        "CARTAN-D Weyl",
+        "CARTAN-E reconstruction"
+      ],
+      "stabilizer": "centralizer recorded",
+      "trace_invariants": [
+        2.9094413445324196,
+        0.005043359020688976
+      ],
+      "weyl_action": "S3 permutations plus center shifts"
+    },
+    {
+      "alcove": "diagnostic interior/wall record",
+      "capsule_id": "FUTURE_PAST_INVERSE_PAIR",
+      "cartan_coordinate_id": "C183_CARTAN_FUTURE_PAST_INVERSE_PAIR",
+      "coordinates": {
+        "theta3": 0.3,
+        "theta8": -0.15
+      },
+      "degenerate_eigenvalues": false,
+      "determinant_constraint": "sum eigenphases=0",
+      "eigenphases": [
+        0.10669872981077806,
+        -0.19330127018922194,
+        0.08660254037844387
+      ],
+      "generator_normalization": "C43 Tr(Ta Tb)=delta_ab/2",
+      "routes": [
+        "CARTAN-A generator exponential",
+        "CARTAN-B eigenphase",
+        "CARTAN-C trace invariant",
+        "CARTAN-D Weyl",
+        "CARTAN-E reconstruction"
+      ],
+      "stabilizer": "centralizer recorded",
+      "trace_invariants": [
+        2.971940842926018,
+        0.0008909974823383543
+      ],
+      "weyl_action": "S3 permutations plus center shifts"
+    }
+  ],
+  "schema": "C183-CARTAN-V1"
+}

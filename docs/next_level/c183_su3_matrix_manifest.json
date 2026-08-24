@@ -1,0 +1,86 @@
+{
+  "root": "ad81998d6f1e20789d528435c0858bc441e20c69e906dc7395b90af808fbcd61",
+  "rows": [
+    {
+      "capsule_id": "IDENTITY_DIAGNOSTIC_ONLY",
+      "determinant": [
+        1.0,
+        0.0
+      ],
+      "determinant_residual": 0.0,
+      "finite": true,
+      "orientation": "minus-frame to plus-frame through C178 transition",
+      "outward_enclosure": true,
+      "shape": "3x3",
+      "silent_repair": false,
+      "tolerance": 1e-12,
+      "unitarity_residual": 0.0,
+      "valid": true
+    },
+    {
+      "capsule_id": "GENERIC_CARTAN_INTERIOR",
+      "determinant": [
+        0.9999999999999999,
+        6.623753116138461e-17
+      ],
+      "determinant_residual": 1.2928016931623235e-16,
+      "finite": true,
+      "orientation": "minus-frame to plus-frame through C178 transition",
+      "outward_enclosure": true,
+      "shape": "3x3",
+      "silent_repair": false,
+      "tolerance": 1e-12,
+      "unitarity_residual": 1.1173049437271687e-16,
+      "valid": true
+    },
+    {
+      "capsule_id": "NONTRIVIAL_CENTER_SECTOR",
+      "determinant": [
+        0.9999999999999998,
+        -4.772891088663143e-16
+      ],
+      "determinant_residual": 5.264111511154694e-16,
+      "finite": true,
+      "orientation": "minus-frame to plus-frame through C178 transition",
+      "outward_enclosure": true,
+      "shape": "3x3",
+      "silent_repair": false,
+      "tolerance": 1e-12,
+      "unitarity_residual": 2.2311252215006176e-17,
+      "valid": true
+    },
+    {
+      "capsule_id": "CONJUGATED_NONDIAGONAL_GENERIC",
+      "determinant": [
+        1.0000000000000002,
+        2.5701872220609274e-17
+      ],
+      "determinant_residual": 2.2352716347674117e-16,
+      "finite": true,
+      "orientation": "minus-frame to plus-frame through C178 transition",
+      "outward_enclosure": true,
+      "shape": "3x3",
+      "silent_repair": false,
+      "tolerance": 1e-12,
+      "unitarity_residual": 2.2342932547602543e-16,
+      "valid": true
+    },
+    {
+      "capsule_id": "FUTURE_PAST_INVERSE_PAIR",
+      "determinant": [
+        1.0,
+        -4.4883563364946294e-18
+      ],
+      "determinant_residual": 4.4883563364946294e-18,
+      "finite": true,
+      "orientation": "minus-frame to plus-frame through C178 transition",
+      "outward_enclosure": true,
+      "shape": "3x3",
+      "silent_repair": false,
+      "tolerance": 1e-12,
+      "unitarity_residual": 1.111162079678735e-16,
+      "valid": true
+    }
+  ],
+  "schema": "C183-SU3-MATRIX-V1"
+}
