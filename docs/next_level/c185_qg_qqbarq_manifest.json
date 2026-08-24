@@ -1,0 +1,85 @@
+{
+  "count": 3,
+  "root": "895d961dba4039082337cca91331b2e85064592c5f0dbacc763083aeceeded18",
+  "rows": [
+    {
+      "diquark_channels": [
+        "QQBARQ_COLOR_QQ_BAR3",
+        "QQBARQ_COLOR_QQ_6"
+      ],
+      "normalization_proof": true,
+      "pair_basis": "created qbarq source octet",
+      "root": "ca224922e86d9c220e54bc96fe78a5e03a6f94b67478418ac4677b84351b817b",
+      "routes": [
+        "PAIR-A direct C43",
+        "PAIR-B C184 spectator lift",
+        "PAIR-C same-flavor exchange",
+        "PAIR-D recoupling",
+        "PAIR-E HO/quadrature",
+        "PAIR-F sparse/matrix-free",
+        "PAIR-G Hermitian"
+      ],
+      "same_flavor_exchange": true,
+      "source": "C170-B1-QG",
+      "source_dimension": 1344,
+      "spectator_quark": true,
+      "status": "READY_CONDITIONAL_SOURCE_DERIVED",
+      "target": "C170-B1-QQBARQ",
+      "target_dimension": 468309,
+      "transition_id": "C185-QG-QQBARQ-PAIR-K9"
+    },
+    {
+      "diquark_channels": [
+        "QQBARQ_COLOR_QQ_BAR3",
+        "QQBARQ_COLOR_QQ_6"
+      ],
+      "normalization_proof": true,
+      "pair_basis": "created qbarq source octet",
+      "root": "137b398f098764be09f01a1465fefeb02a48ff44e4b1b74de7f4e60d8cff3e90",
+      "routes": [
+        "PAIR-A direct C43",
+        "PAIR-B C184 spectator lift",
+        "PAIR-C same-flavor exchange",
+        "PAIR-D recoupling",
+        "PAIR-E HO/quadrature",
+        "PAIR-F sparse/matrix-free",
+        "PAIR-G Hermitian"
+      ],
+      "same_flavor_exchange": true,
+      "source": "C170-B1-QG",
+      "source_dimension": 2700,
+      "spectator_quark": true,
+      "status": "READY_CONDITIONAL_SOURCE_DERIVED",
+      "target": "C170-B1-QQBARQ",
+      "target_dimension": 2916000,
+      "transition_id": "C185-QG-QQBARQ-PAIR-K11"
+    },
+    {
+      "diquark_channels": [
+        "QQBARQ_COLOR_QQ_BAR3",
+        "QQBARQ_COLOR_QQ_6"
+      ],
+      "normalization_proof": true,
+      "pair_basis": "created qbarq source octet",
+      "root": "c6b438c9ce69d10d2cf07c168506fb1d1b000d8e81ac2665dd178ccae5ba0483",
+      "routes": [
+        "PAIR-A direct C43",
+        "PAIR-B C184 spectator lift",
+        "PAIR-C same-flavor exchange",
+        "PAIR-D recoupling",
+        "PAIR-E HO/quadrature",
+        "PAIR-F sparse/matrix-free",
+        "PAIR-G Hermitian"
+      ],
+      "same_flavor_exchange": true,
+      "source": "C170-B1-QG",
+      "source_dimension": 4752,
+      "spectator_quark": true,
+      "status": "READY_CONDITIONAL_SOURCE_DERIVED",
+      "target": "C170-B1-QQBARQ",
+      "target_dimension": 13799808,
+      "transition_id": "C185-QG-QQBARQ-PAIR-K13"
+    }
+  ],
+  "schema": "C185-TRANSITION-PAIR-V1"
+}

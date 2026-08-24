@@ -1,0 +1,88 @@
+{
+  "count": 3,
+  "root": "f824717efe0109f81578576cccb17a494ffb78e94039526ace139304db5d0140",
+  "rows": [
+    {
+      "channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "emitted_gluon": true,
+      "normalization_proof": true,
+      "root": "b95208a73776752ed8d965247a2d5c473157d693932f85069bca1e08a1e6f0f8",
+      "routes": [
+        "QE-A direct C43",
+        "QE-B C53 spectator lift",
+        "QE-C ordered color",
+        "QE-D Bose preimage",
+        "QE-E HO/quadrature",
+        "QE-F sparse/matrix-free",
+        "QE-G Hermitian"
+      ],
+      "source": "C170-B1-QG",
+      "source_dimension": 1344,
+      "source_owner": "C53 spectator normalization",
+      "spectator_gluon": true,
+      "status": "READY_CONDITIONAL_SOURCE_DERIVED",
+      "target": "C170-B1-QGG",
+      "target_dimension": 702464,
+      "transition_id": "C185-QG-QGG-QUARK-K9"
+    },
+    {
+      "channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "emitted_gluon": true,
+      "normalization_proof": true,
+      "root": "1012788f42f20ae0ba1c8648294153b63138bd6167b93c2b120ad2090cb4a79b",
+      "routes": [
+        "QE-A direct C43",
+        "QE-B C53 spectator lift",
+        "QE-C ordered color",
+        "QE-D Bose preimage",
+        "QE-E HO/quadrature",
+        "QE-F sparse/matrix-free",
+        "QE-G Hermitian"
+      ],
+      "source": "C170-B1-QG",
+      "source_dimension": 2700,
+      "source_owner": "C53 spectator normalization",
+      "spectator_gluon": true,
+      "status": "READY_CONDITIONAL_SOURCE_DERIVED",
+      "target": "C170-B1-QGG",
+      "target_dimension": 4374000,
+      "transition_id": "C185-QG-QGG-QUARK-K11"
+    },
+    {
+      "channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "emitted_gluon": true,
+      "normalization_proof": true,
+      "root": "dcfade98d07a4a8e0c8b5694df2ced2cd412d96bb037ee93e1b3e2b25d15bda5",
+      "routes": [
+        "QE-A direct C43",
+        "QE-B C53 spectator lift",
+        "QE-C ordered color",
+        "QE-D Bose preimage",
+        "QE-E HO/quadrature",
+        "QE-F sparse/matrix-free",
+        "QE-G Hermitian"
+      ],
+      "source": "C170-B1-QG",
+      "source_dimension": 4752,
+      "source_owner": "C53 spectator normalization",
+      "spectator_gluon": true,
+      "status": "READY_CONDITIONAL_SOURCE_DERIVED",
+      "target": "C170-B1-QGG",
+      "target_dimension": 20699712,
+      "transition_id": "C185-QG-QGG-QUARK-K13"
+    }
+  ],
+  "schema": "C185-TRANSITION-QUARK-V1"
+}

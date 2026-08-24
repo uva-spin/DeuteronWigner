@@ -1,0 +1,94 @@
+{
+  "count": 3,
+  "root": "404743dcd36d5c863fad5750ebe2b52e9785d83024dfd7dacf69e9d509ac3514",
+  "rows": [
+    {
+      "exact_zero_certificates": {
+        "QGG_COLOR_1S": "f^{abc} contraction with singlet Gram is exactly zero",
+        "QGG_COLOR_8S": "f/d orthogonality Gram is exactly zero"
+      },
+      "normalization_proof": true,
+      "parent_gluon": true,
+      "root": "014426dafc206dbb2025d32a46ee82c4cf6f2383faf51038d3d4497d16992ba8",
+      "routes": [
+        "GS-A direct C43/C129",
+        "GS-B C184 spectator lift",
+        "GS-C color projector",
+        "GS-D Bose exchange",
+        "GS-E HO/quadrature",
+        "GS-F sparse/matrix-free",
+        "GS-G Hermitian"
+      ],
+      "source": "C170-B1-QG",
+      "source_dimension": 1344,
+      "source_owner": "C184 g<->gg plus C129 cubic source",
+      "spectator_quark": true,
+      "status": "PARTIAL_QGG_FRONTIER",
+      "supported_channels": [
+        "QGG_COLOR_8A"
+      ],
+      "target": "C170-B1-QGG",
+      "target_dimension": 702464,
+      "transition_id": "C185-QG-QGG-CUBIC-K9"
+    },
+    {
+      "exact_zero_certificates": {
+        "QGG_COLOR_1S": "f^{abc} contraction with singlet Gram is exactly zero",
+        "QGG_COLOR_8S": "f/d orthogonality Gram is exactly zero"
+      },
+      "normalization_proof": true,
+      "parent_gluon": true,
+      "root": "8f0e5366fbf50f48ce3bf0bc55079c6369aa64f35961187dd846ed0f26659dbf",
+      "routes": [
+        "GS-A direct C43/C129",
+        "GS-B C184 spectator lift",
+        "GS-C color projector",
+        "GS-D Bose exchange",
+        "GS-E HO/quadrature",
+        "GS-F sparse/matrix-free",
+        "GS-G Hermitian"
+      ],
+      "source": "C170-B1-QG",
+      "source_dimension": 2700,
+      "source_owner": "C184 g<->gg plus C129 cubic source",
+      "spectator_quark": true,
+      "status": "PARTIAL_QGG_FRONTIER",
+      "supported_channels": [
+        "QGG_COLOR_8A"
+      ],
+      "target": "C170-B1-QGG",
+      "target_dimension": 4374000,
+      "transition_id": "C185-QG-QGG-CUBIC-K11"
+    },
+    {
+      "exact_zero_certificates": {
+        "QGG_COLOR_1S": "f^{abc} contraction with singlet Gram is exactly zero",
+        "QGG_COLOR_8S": "f/d orthogonality Gram is exactly zero"
+      },
+      "normalization_proof": true,
+      "parent_gluon": true,
+      "root": "b7ccbbf85bfe5be2d0b6b39f02ac9754902f973d111a15325dc7f5b70eb20d88",
+      "routes": [
+        "GS-A direct C43/C129",
+        "GS-B C184 spectator lift",
+        "GS-C color projector",
+        "GS-D Bose exchange",
+        "GS-E HO/quadrature",
+        "GS-F sparse/matrix-free",
+        "GS-G Hermitian"
+      ],
+      "source": "C170-B1-QG",
+      "source_dimension": 4752,
+      "source_owner": "C184 g<->gg plus C129 cubic source",
+      "spectator_quark": true,
+      "status": "PARTIAL_QGG_FRONTIER",
+      "supported_channels": [
+        "QGG_COLOR_8A"
+      ],
+      "target": "C170-B1-QGG",
+      "target_dimension": 20699712,
+      "transition_id": "C185-QG-QGG-CUBIC-K13"
+    }
+  ],
+  "schema": "C185-TRANSITION-GLUON-V1"
+}

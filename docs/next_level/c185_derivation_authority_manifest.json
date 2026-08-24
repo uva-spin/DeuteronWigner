@@ -1,0 +1,208 @@
+{
+  "C152": {
+    "root": "dec4bc3a7629a13795d4bfa51f9166447e83d6e291def72be261da7579d30e01",
+    "rows": [
+      {
+        "embedding": "C77",
+        "gluon_sources": [
+          "K9:g:lambda1:adj0",
+          "K9:g:lambda1:adj1",
+          "K9:g:lambda1:adj2",
+          "K9:g:lambda1:adj3",
+          "K9:g:lambda1:adj4",
+          "K9:g:lambda1:adj5",
+          "K9:g:lambda1:adj6",
+          "K9:g:lambda1:adj7",
+          "K9:g:lambda2:adj0",
+          "K9:g:lambda2:adj1",
+          "K9:g:lambda2:adj2",
+          "K9:g:lambda2:adj3",
+          "K9:g:lambda2:adj4",
+          "K9:g:lambda2:adj5",
+          "K9:g:lambda2:adj6",
+          "K9:g:lambda2:adj7"
+        ],
+        "orientation": [
+          "emission",
+          "absorption"
+        ],
+        "quark_sources": [
+          "K9:q:lambda-1:color0",
+          "K9:q:lambda-1:color1",
+          "K9:q:lambda-1:color2",
+          "K9:q:lambda1:color0",
+          "K9:q:lambda1:color1",
+          "K9:q:lambda1:color2"
+        ],
+        "resolution": "K9",
+        "root": "cb60c858b49a8bec15f721853acfe8bea980b2a4a8bb1e3b8db9b7971e486ba1"
+      },
+      {
+        "embedding": "C77",
+        "gluon_sources": [
+          "K11:g:lambda1:adj0",
+          "K11:g:lambda1:adj1",
+          "K11:g:lambda1:adj2",
+          "K11:g:lambda1:adj3",
+          "K11:g:lambda1:adj4",
+          "K11:g:lambda1:adj5",
+          "K11:g:lambda1:adj6",
+          "K11:g:lambda1:adj7",
+          "K11:g:lambda2:adj0",
+          "K11:g:lambda2:adj1",
+          "K11:g:lambda2:adj2",
+          "K11:g:lambda2:adj3",
+          "K11:g:lambda2:adj4",
+          "K11:g:lambda2:adj5",
+          "K11:g:lambda2:adj6",
+          "K11:g:lambda2:adj7"
+        ],
+        "orientation": [
+          "emission",
+          "absorption"
+        ],
+        "quark_sources": [
+          "K11:q:lambda-1:color0",
+          "K11:q:lambda-1:color1",
+          "K11:q:lambda-1:color2",
+          "K11:q:lambda1:color0",
+          "K11:q:lambda1:color1",
+          "K11:q:lambda1:color2"
+        ],
+        "resolution": "K11",
+        "root": "e56e6e83ee99113fc97975d69c14926f15da1cf6d760a6ae1461bc2b02b3e4bf"
+      },
+      {
+        "embedding": "C77",
+        "gluon_sources": [
+          "K13:g:lambda1:adj0",
+          "K13:g:lambda1:adj1",
+          "K13:g:lambda1:adj2",
+          "K13:g:lambda1:adj3",
+          "K13:g:lambda1:adj4",
+          "K13:g:lambda1:adj5",
+          "K13:g:lambda1:adj6",
+          "K13:g:lambda1:adj7",
+          "K13:g:lambda2:adj0",
+          "K13:g:lambda2:adj1",
+          "K13:g:lambda2:adj2",
+          "K13:g:lambda2:adj3",
+          "K13:g:lambda2:adj4",
+          "K13:g:lambda2:adj5",
+          "K13:g:lambda2:adj6",
+          "K13:g:lambda2:adj7"
+        ],
+        "orientation": [
+          "emission",
+          "absorption"
+        ],
+        "quark_sources": [
+          "K13:q:lambda-1:color0",
+          "K13:q:lambda-1:color1",
+          "K13:q:lambda-1:color2",
+          "K13:q:lambda1:color0",
+          "K13:q:lambda1:color1",
+          "K13:q:lambda1:color2"
+        ],
+        "resolution": "K13",
+        "root": "fbcaba0a0170c8100b0eaa58ef3c816212bfceeaf42993a2c4866d12f81d6b58"
+      }
+    ],
+    "schema": "C152-Q-TO-QG-SOURCE-V1"
+  },
+  "C155": {
+    "direct_sum": "H_u direct-sum H_d",
+    "historical_roots_changed": false,
+    "root": "97328d0e5e84361062fbb041bf53bfd8f47fb91477682ce52264e22935f54c5b",
+    "rows": [
+      {
+        "cross_blocks": "exact zero",
+        "lifted_q": 12,
+        "lifted_qg": 2688,
+        "lifted_total": 2700,
+        "order": "u fiber then d fiber; each q followed by qg",
+        "projection_round_trip": true,
+        "resolution": "K9",
+        "single_q": 6,
+        "single_qg": 1344
+      },
+      {
+        "cross_blocks": "exact zero",
+        "lifted_q": 12,
+        "lifted_qg": 5400,
+        "lifted_total": 5412,
+        "order": "u fiber then d fiber; each q followed by qg",
+        "projection_round_trip": true,
+        "resolution": "K11",
+        "single_q": 6,
+        "single_qg": 2700
+      },
+      {
+        "cross_blocks": "exact zero",
+        "lifted_q": 12,
+        "lifted_qg": 9504,
+        "lifted_total": 9516,
+        "order": "u fiber then d fiber; each q followed by qg",
+        "projection_round_trip": true,
+        "resolution": "K13",
+        "single_q": 6,
+        "single_qg": 4752
+      }
+    ],
+    "schema": "C155-FLAVOR-LIFT-MANIFEST-V1"
+  },
+  "C170": {
+    "root": "75e43d8750875711f06fabbb6609f095e76c796f6185edb53468d863f1aacb6e",
+    "rows": [
+      {
+        "free_M2": null,
+        "historical_baryonic_sector_reused": false,
+        "missing_as_zero": false,
+        "open_triplet": true,
+        "pair_conversion": null,
+        "q_emission": null,
+        "root": "95d9e4a87796bd00b4e12868448e2056bdd67a2e7703b6c73c921fbd47799d2e",
+        "sector_id": "C170-B1-QGG",
+        "statistics": null,
+        "status": "B1_HIGHER_FOCK_SECTOR_INCOMPLETE",
+        "three_gluon": null
+      },
+      {
+        "free_M2": null,
+        "historical_baryonic_sector_reused": false,
+        "missing_as_zero": false,
+        "open_triplet": true,
+        "pair_conversion": null,
+        "q_emission": null,
+        "root": "3d1ae207ed13a4eb8e6226e45d1b3753483e9f3c1ba734fbfdb67241a22c6b23",
+        "sector_id": "C170-B1-QQBARQ",
+        "statistics": null,
+        "status": "B1_HIGHER_FOCK_SECTOR_INCOMPLETE",
+        "three_gluon": null
+      }
+    ],
+    "schema": "C170-B1-HIGHER-FOCK-MANIFEST-V1"
+  },
+  "C184": {
+    "C151_source_root": "7cd084f34685500efd5b92e4631e04087f72afea96cf8d0c5bbf29daa5997c7e",
+    "C158_values": 0,
+    "C171_package_root": "c618c33022a6c0ab35c2cc33f53f904b4c6ca1f07b5d091f384a47628cff3935",
+    "C183_holonomy_schema": "PROJECT_PERIODIC_SU3_HOLONOMY_CAPSULE_V1",
+    "C183_package_root": "7198854f07fdbde8a00d8d553a848ba0d5cf3408199b9b7ff3a3cd29074c7b5f",
+    "C183_status": "C183_C182_PROJECT_PERIODIC_SU3_HOLONOMY_CAPSULE_AUTHORITY_READY",
+    "K9_K11_K13_separate": true,
+    "active_requests": [
+      "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2"
+    ],
+    "physical_holonomy": false,
+    "root": "dfc12229b13eed0c2959da0de07b3da716b06ea3a91644e29e7d0a102239163a",
+    "schema": "C184-MATCHING-HANDOFF-FREEZE-V1",
+    "target_MOMq": "not constructed"
+  },
+  "C62": {
+    "build_digest": "b5c33fe86a637dbf7fa024899817167a71fc2f16c9fa36059ba763a1576435ed",
+    "status": "C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY"
+  },
+  "root": "50374332c5c1571b047e64ba315b4a823a157c8025cfd40db12ca211fc79adb4"
+}
