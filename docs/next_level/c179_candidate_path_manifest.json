@@ -1,0 +1,211 @@
+{
+  "accepted_ids": [
+    "DIRECT_AFFINE_CONNECTOR",
+    "PIECEWISE_CARTESIAN_XY",
+    "PIECEWISE_CARTESIAN_YX"
+  ],
+  "compiled_before_selection": true,
+  "root": "7242f2e573e1a5b6f2a57282d2d1c96b27e7323988913cd2b50e3871ff8c305f",
+  "rows": [
+    {
+      "admissibility": "ADMISSIBLE_COMPARISON_CANDIDATE",
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "cut_side": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "orientation": "left-to-right",
+      "parameter_domain": "s in [0,1]",
+      "parameterization": "z(s)=xi_L+s(xi_R-xi_L)",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "sqrt((Delta xi^1)^2+(Delta xi^2)^2) symbolic; fixture sqrt(2)",
+      "reparameterization_class": "monotone affine reparameterizations",
+      "reverse_path": "DIRECT_AFFINE_CONNECTOR_REVERSE",
+      "rotation_covariance": true,
+      "segment_order": [
+        "affine"
+      ],
+      "source_continuum_limit": "declared project finite-basis scheme; not unique source path",
+      "translation_covariance": true
+    },
+    {
+      "admissibility": "ADMISSIBLE_COMPARISON_CANDIDATE",
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "cut_side": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "orientation": "left-to-right",
+      "parameter_domain": "two ordered segments, each t in [0,1]",
+      "parameterization": "z: xi_L -> (xi_R^1,xi_L^2) -> xi_R",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "|Delta xi^1|+|Delta xi^2| symbolic; fixture 2",
+      "reparameterization_class": "segmentwise monotone reparameterizations",
+      "reverse_path": "PIECEWISE_CARTESIAN_XY_REVERSE",
+      "rotation_covariance": "ordered axes retained; no hidden symmetrization",
+      "segment_order": [
+        "x",
+        "y"
+      ],
+      "source_continuum_limit": "comparison holdout only",
+      "translation_covariance": true
+    },
+    {
+      "admissibility": "ADMISSIBLE_COMPARISON_CANDIDATE",
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "cut_side": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "orientation": "left-to-right",
+      "parameter_domain": "two ordered segments, each t in [0,1]",
+      "parameterization": "z: xi_L -> (xi_L^1,xi_R^2) -> xi_R",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "|Delta xi^1|+|Delta xi^2| symbolic; fixture 2",
+      "reparameterization_class": "segmentwise monotone reparameterizations",
+      "reverse_path": "PIECEWISE_CARTESIAN_YX_REVERSE",
+      "rotation_covariance": "ordered axes retained; no hidden symmetrization",
+      "segment_order": [
+        "y",
+        "x"
+      ],
+      "source_continuum_limit": "comparison holdout only",
+      "translation_covariance": true
+    },
+    {
+      "admissibility": "REJECTED_NO_FINITE_COMMON_REFERENCE",
+      "candidate_id": "SOURCE_HALF_LINK_COMPOSITION",
+      "cut_side": "not bound",
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "required but no finite endpoint reference",
+      "orientation": "source ordered",
+      "parameter_domain": "source-defined half-link domain",
+      "parameterization": "source common reference required",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "not instantiated",
+      "reparameterization_class": "source-only",
+      "reverse_path": "source reverse only",
+      "rotation_covariance": "not instantiated",
+      "segment_order": "source half-link composition",
+      "source_continuum_limit": "C177 continuum only",
+      "translation_covariance": "not instantiated"
+    },
+    {
+      "admissibility": "REJECTED_SOURCE_INFINITY_NOT_FINITE_ENDPOINT",
+      "candidate_id": "SOURCE_EXPLICIT_PATH",
+      "cut_side": "not finite-bound",
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "orientation": "source-defined",
+      "parameter_domain": "source infinity comparison domain",
+      "parameterization": "no finite transverse endpoint parameterization",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "not instantiated",
+      "reparameterization_class": "source-only",
+      "reverse_path": "source reverse only",
+      "rotation_covariance": "source scope only",
+      "segment_order": "source-defined",
+      "source_continuum_limit": "LINEARIZED_PATH_INDEPENDENT_ONLY",
+      "translation_covariance": "source scope only"
+    },
+    {
+      "admissibility": "REVERSE_HOLDOUT_ONLY",
+      "candidate_id": "REVERSED_PATH",
+      "cut_side": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "orientation": "right-to-left",
+      "parameter_domain": "reverse of each accepted candidate",
+      "parameterization": "z_rev(s)=z(1-s)",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "inherited candidate length",
+      "reparameterization_class": "reverse-generated",
+      "reverse_path": "accepted candidate",
+      "rotation_covariance": true,
+      "segment_order": "generated reverse",
+      "source_continuum_limit": "reverse holdout; not selected independently",
+      "translation_covariance": true
+    },
+    {
+      "admissibility": "SENTINEL_NOT_SELECTED",
+      "candidate_id": "NO_ADMISSIBLE_PATH",
+      "cut_side": "none",
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "extra_scale": "none",
+      "future_past": [],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "orientation": "none",
+      "parameter_domain": "none",
+      "parameterization": "none",
+      "parent_path_class": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "path_length": "none",
+      "reparameterization_class": "none",
+      "reverse_path": "none",
+      "rotation_covariance": false,
+      "segment_order": [],
+      "source_continuum_limit": "sentinel only",
+      "translation_covariance": false
+    }
+  ],
+  "schema": "C179-CANDIDATE-PATH-V1"
+}

@@ -1,0 +1,1088 @@
+{
+  "geometry_only": true,
+  "order_symmetrized": false,
+  "root": "f0e5c2604c55ceb568af8216b5576b8d0bc396fe753c2a88607f03d252d00598",
+  "rows": [
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K9",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K11",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_X",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DIS_FUTURE",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    },
+    {
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "color_generator": false,
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "enclosure": [
+        1.0,
+        1.0
+      ],
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "field_coefficient": false,
+      "functional": "I^(1)[gamma] = Delta xi_component for constant diagnostic mode",
+      "future_past": "DY_PAST",
+      "g_s_factor": false,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "mode_id": "C179_MODE_CONST_Y",
+      "orientation": "left-to-right",
+      "resolution_id": "K13",
+      "route_residual": 0.0,
+      "routes": [
+        "GEO1-A analytic constant-mode integration",
+        "GEO1-B generating-function/recurrence",
+        "GEO1-C bounded quadrature holdout",
+        "GEO1-D reversal/endpoint exchange",
+        "GEO1-E reparameterization"
+      ],
+      "state_amplitude": false,
+      "status": "GEOMETRY_ONLY_ROUTE_CLOSED",
+      "units": "dimensionless geometry-only chart functional",
+      "value": 1.0
+    }
+  ],
+  "schema": "C179-DEGREE1-GEOMETRY-V1"
+}

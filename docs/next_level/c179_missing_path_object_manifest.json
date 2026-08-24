@@ -1,0 +1,114 @@
+{
+  "root": "76094efce1b49c125824956a1b83bcb71101bcca08d739f29bef32007b3e99c7",
+  "rows": [
+    {
+      "C176_owner": "C176-HO-BOUNDARY-K9/K11/K13",
+      "candidate_path_ids": [
+        "DIRECT_AFFINE_CONNECTOR",
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "capsule_id": "C179-DEGREE2-PATH-SCHEME-AUTHORITY",
+      "cut_side_ids": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "degree": 2,
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past_PV": [
+        "DIS_FUTURE",
+        "DY_PAST",
+        "ANTISYMMETRIC_OR_PV"
+      ],
+      "holdouts": [
+        "no common reference",
+        "no extra scale",
+        "ordered not symmetrized",
+        "no continuum extrapolation",
+        "no physical endpoint"
+      ],
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_adjoint": "OPEN_ADJOINT_SU3",
+      "parent_C178_capsule": "C178-FINITE-HO-PATH-REPRESENTATIVE",
+      "path_class_id": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "required_routes": [
+        "GEO2-A",
+        "GEO2-B",
+        "GEO2-C",
+        "GEO2-D",
+        "GEO2-E",
+        "DIFF-A",
+        "DIFF-B",
+        "DIFF-C",
+        "DIFF-D",
+        "DIFF-E"
+      ],
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "status": "DEGREE2_PATH_SCHEME_AUTHORITY_REQUIRED"
+    },
+    {
+      "C176_owner": "C176-HO-BOUNDARY-K9/K11/K13",
+      "candidate_path_ids": [
+        "DIRECT_AFFINE_CONNECTOR",
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "capsule_id": "C179-DEGREE2-PATH-SCHEME-AUTHORITY",
+      "cut_side_ids": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "degree": 2,
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past_PV": [
+        "DIS_FUTURE",
+        "DY_PAST",
+        "ANTISYMMETRIC_OR_PV"
+      ],
+      "holdouts": [
+        "no common reference",
+        "no extra scale",
+        "ordered not symmetrized",
+        "no continuum extrapolation",
+        "no physical endpoint"
+      ],
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_adjoint": "OPEN_ADJOINT_SU3",
+      "parent_C178_capsule": "C178-FINITE-HO-PATH-REPRESENTATIVE",
+      "path_class_id": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "GEO2-A",
+        "GEO2-B",
+        "GEO2-C",
+        "GEO2-D",
+        "GEO2-E",
+        "DIFF-A",
+        "DIFF-B",
+        "DIFF-C",
+        "DIFF-D",
+        "DIFF-E"
+      ],
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "status": "DEGREE2_PATH_SCHEME_AUTHORITY_REQUIRED"
+    }
+  ],
+  "schema": "C179-MISSING-PATH-OBJECT-V1"
+}

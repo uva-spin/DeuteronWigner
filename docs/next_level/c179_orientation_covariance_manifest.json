@@ -1,0 +1,45 @@
+{
+  "root": "255c3544d2c59af15b9419964ade4d45935ac722fbf0daee582d253a26a41e78",
+  "rows": [
+    {
+      "PV": "through transition",
+      "candidate_id": "DIRECT_AFFINE_CONNECTOR",
+      "cut_shift": true,
+      "future": "C178_CUT_SIDE_PLUS",
+      "future_past_merged": false,
+      "geometry_functional_status": "covariant diagnostic metadata",
+      "global_frame": true,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "past": "C178_CUT_SIDE_MINUS",
+      "path_reversal": true,
+      "transition_insertion": true
+    },
+    {
+      "PV": "through transition",
+      "candidate_id": "PIECEWISE_CARTESIAN_XY",
+      "cut_shift": true,
+      "future": "C178_CUT_SIDE_PLUS",
+      "future_past_merged": false,
+      "geometry_functional_status": "covariant diagnostic metadata",
+      "global_frame": true,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "past": "C178_CUT_SIDE_MINUS",
+      "path_reversal": true,
+      "transition_insertion": true
+    },
+    {
+      "PV": "through transition",
+      "candidate_id": "PIECEWISE_CARTESIAN_YX",
+      "cut_shift": true,
+      "future": "C178_CUT_SIDE_PLUS",
+      "future_past_merged": false,
+      "geometry_functional_status": "covariant diagnostic metadata",
+      "global_frame": true,
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "past": "C178_CUT_SIDE_MINUS",
+      "path_reversal": true,
+      "transition_insertion": true
+    }
+  ],
+  "schema": "C179-ORIENTATION-COVARIANCE-V1"
+}
