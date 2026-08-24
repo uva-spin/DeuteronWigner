@@ -1,0 +1,20 @@
+{
+  "endpoints": [
+    "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+    "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+  ],
+  "paths": [
+    "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+    "PIECEWISE_CARTESIAN_XY",
+    "PIECEWISE_CARTESIAN_YX"
+  ],
+  "raw_geometry_excludes_leakage_coefficient": true,
+  "routes": [
+    "BQ1-A analytic HO integration",
+    "BQ1-B recurrence/generating function",
+    "BQ1-C bounded quadrature",
+    "BQ1-D reversal",
+    "BQ1-E reparameterization",
+    "BQ1-F piecewise composition"
+  ]
+}

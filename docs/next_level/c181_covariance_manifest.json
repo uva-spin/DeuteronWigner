@@ -1,0 +1,50 @@
+{
+  "root": "481bba9dc640633e93049e4d5ef8fc991664d8a0ffd5e5427b3d2ab69aa804f1",
+  "rows": [
+    {
+      "PV": "through C178 transition",
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "cut_shift": "Omega_c'=S_+ Omega_c S_-^{-1}",
+      "d_f_separate": true,
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "ghost_boundary": "C175 separate",
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "open_adjoint": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "future generation",
+        "past generation",
+        "reversal",
+        "transition",
+        "cut relocation",
+        "boundary-map covariance",
+        "global frame"
+      ],
+      "singlet_projection": false,
+      "status": "COVARIANCE_CLOSED_INTERFACES_SEPARATE"
+    },
+    {
+      "PV": "through C178 transition",
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "cut_shift": "Omega_c'=S_+ Omega_c S_-^{-1}",
+      "d_f_separate": true,
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "ghost_boundary": "C175 separate",
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "open_adjoint": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "future generation",
+        "past generation",
+        "reversal",
+        "transition",
+        "cut relocation",
+        "boundary-map covariance",
+        "global frame"
+      ],
+      "singlet_projection": false,
+      "status": "COVARIANCE_CLOSED_INTERFACES_SEPARATE"
+    }
+  ],
+  "schema": "C181-COVARIANCE-V1"
+}
