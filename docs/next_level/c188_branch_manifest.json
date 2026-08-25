@@ -1,0 +1,488 @@
+{
+  "count": 16,
+  "qgg_branch_proven": false,
+  "root": "da071108661dc9e804340d5c0e57b3b27f7f2b910e4a7ce80a5b047e8f17a0d8",
+  "rows": [
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 2,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "UNRESOLVED_SOURCE_AST",
+      "net_particle_number": 2,
+      "operator_order_sign": "UNRESOLVED_SOURCE_AST",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": null,
+      "root": "d34162b9f0d47cb79cd08463a812f29edc2edc611d1cf1a1e3f9236b92d484e3",
+      "source_sector_id": "C170-B1-Q",
+      "target_sector_id": "C170-B1-QGG",
+      "terminal_classification": "BRANCH_INCOMPLETE"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": -2,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "UNRESOLVED_SOURCE_AST",
+      "net_particle_number": -2,
+      "operator_order_sign": "UNRESOLVED_SOURCE_AST",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": null,
+      "root": "8ef9315b4e44571437cfc58ba63090b3b0007af635bb5fba16506b865a4834e2",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C170-B1-Q",
+      "terminal_classification": "BRANCH_INCOMPLETE"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QG",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": -1,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QG",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 1,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": "cf6b324df560d1e1e255fd49f2a2872765c1e688339e0a3f2aadf3d0232cae54",
+      "root": "a7f7601763a26efe0395a926ae0e12d368abb2e2a3612c4b8b4ec23b177516c4",
+      "source_sector_id": "C170-B1-Q",
+      "target_sector_id": "C170-B1-QG",
+      "terminal_classification": "SOURCE_EXCLUDED_EXACT_PUBLIC_ZERO"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-QG_TO_Q",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 1,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-QG_TO_Q",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": -1,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": "cf6b324df560d1e1e255fd49f2a2872765c1e688339e0a3f2aadf3d0232cae54",
+      "root": "cfdc7ac8dabc9b0e92259c7096464867e5d0704d029d547a38a4e01ea2a1bcdd",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C170-B1-QG",
+      "terminal_classification": "SOURCE_EXCLUDED_EXACT_PUBLIC_ZERO"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_Q",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_Q",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": null,
+      "root": "548a7d01f57fbe1587e79dc6fae6342320a76ee55fba3829671972503bf86994",
+      "source_sector_id": "C170-B1-Q",
+      "target_sector_id": "C170-B1-Q",
+      "terminal_classification": "PUBLIC_DOMAIN_ONLY_NOT_SOURCE_EXPANSION"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-QG_TO_QG",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-QG_TO_QG",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": null,
+      "root": "730a39272a3d327bb088429f18d77e7f714dbc53c3b74f825b753208dbf5696a",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C170-B1-QG",
+      "terminal_classification": "PUBLIC_DOMAIN_ONLY_NOT_SOURCE_EXPANSION"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-VACUUM_OR_ZERO_MODE",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-VACUUM_OR_ZERO_MODE",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": null,
+      "root": "350b7185fdf5f5c1686d798572886a28edf9722ba33b862497276d037c9b7043",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "VACUUM_OR_P0",
+      "terminal_classification": "SOURCE_EXCLUDED"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-BOUNDARY_OR_NONMATRIX",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-BOUNDARY_OR_NONMATRIX",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "UNRESOLVED_SOURCE_AST",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "public_zero_certificate": null,
+      "root": "90e9e7ee31582172e84b9d252b10d1e19551466f26d64ef1e1bafd5dc2d39d28",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C130_P0_BOUNDARY",
+      "terminal_classification": "BRANCH_INCOMPLETE"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 2,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "UNRESOLVED_SOURCE_AST",
+      "net_particle_number": 2,
+      "operator_order_sign": "UNRESOLVED_SOURCE_AST",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": null,
+      "root": "2ed18f004aac479bd67f3fde1d92ba4dd8b4c0b29487e7f83779ae4a922a1261",
+      "source_sector_id": "C170-B1-Q",
+      "target_sector_id": "C170-B1-QGG",
+      "terminal_classification": "BRANCH_INCOMPLETE"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": -2,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "UNRESOLVED_SOURCE_AST",
+      "net_particle_number": -2,
+      "operator_order_sign": "UNRESOLVED_SOURCE_AST",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": null,
+      "root": "fa5bba1cabf31ff1b84df2c4b44d82bb0dd182fd1a4458e111fdb3aac94e299d",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C170-B1-Q",
+      "terminal_classification": "BRANCH_INCOMPLETE"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QG",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": -1,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QG",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 1,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": "63e1eda1f6a0de5ab2d3a4e288f428715cd9f479a66b43b83becdc0c5a5dee8f",
+      "root": "a52b844c7e8deb8e35068199b57450bc7d98bdb64783239a28b71d91b9dd5eb3",
+      "source_sector_id": "C170-B1-Q",
+      "target_sector_id": "C170-B1-QG",
+      "terminal_classification": "SOURCE_EXCLUDED_EXACT_PUBLIC_ZERO"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-QG_TO_Q",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 1,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-QG_TO_Q",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": -1,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": "63e1eda1f6a0de5ab2d3a4e288f428715cd9f479a66b43b83becdc0c5a5dee8f",
+      "root": "fad5ecc005252cbc796757dc641f352eded250981d1b4e78bc94390bf6235f55",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C170-B1-QG",
+      "terminal_classification": "SOURCE_EXCLUDED_EXACT_PUBLIC_ZERO"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_Q",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_Q",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": null,
+      "root": "a49582ef688a4314ac25c7091e25e800fb67c63b290a138bbba58bde0f4bce4f",
+      "source_sector_id": "C170-B1-Q",
+      "target_sector_id": "C170-B1-Q",
+      "terminal_classification": "PUBLIC_DOMAIN_ONLY_NOT_SOURCE_EXPANSION"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-QG_TO_QG",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-QG_TO_QG",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": null,
+      "root": "bdbe21ee42866c7a6a740e5a86eb8155f7f9d179cbb6adbb2ac19342b3fef7a0",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C170-B1-QG",
+      "terminal_classification": "PUBLIC_DOMAIN_ONLY_NOT_SOURCE_EXPANSION"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-VACUUM_OR_ZERO_MODE",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-VACUUM_OR_ZERO_MODE",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "PUBLIC_CERTIFICATE",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": null,
+      "root": "e9407fa82198a383f62bba6c3f5663d3e7df62803ba93905dd78e0782acd25e5",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "VACUUM_OR_P0",
+      "terminal_classification": "SOURCE_EXCLUDED"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-BOUNDARY_OR_NONMATRIX",
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "UNEXPANDED_SOURCE_OPERATOR",
+      "fermion_number_change": 0,
+      "gluon_number_change": 0,
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-BOUNDARY_OR_NONMATRIX",
+      "independent_routes": [
+        "BRANCH-A field-slot expansion",
+        "BRANCH-B operator preimage",
+        "BRANCH-C normal ordering",
+        "BRANCH-D Hermitian route",
+        "BRANCH-E public-domain crosscheck"
+      ],
+      "longitudinal_sign_constraints": "C43_PUBLIC_DOMAIN_SCOPE",
+      "net_particle_number": 0,
+      "operator_order_sign": "UNRESOLVED_SOURCE_AST",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "ordinary_zero_mode": "EXCLUDED_OR_TYPED_INTERFACE",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "public_zero_certificate": null,
+      "root": "36a29e94c4cc4b94b271329109a513384ff0113798860fbb4c8f57620f5e73e1",
+      "source_sector_id": "C170-B1-QGG",
+      "target_sector_id": "C130_P0_BOUNDARY",
+      "terminal_classification": "BRANCH_INCOMPLETE"
+    }
+  ],
+  "schema": "C188-BRANCH-V1"
+}
