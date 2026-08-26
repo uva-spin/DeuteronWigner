@@ -1,0 +1,6 @@
+{
+  "package": "C198/HQCDST2",
+  "holdouts": ["missing-object order", "variable class order", "identity status order", "qg resolution/scheme order", "ghost/pure-gluon/BRST channel order", "residual/Jacobian row/column order", "solution-family free coordinates", "frontier priority", "topology/count-once", "request/handoff order"],
+  "policy": "holdouts test provenance and ordering; they cannot authorize physical promotion or missing-row zero filling",
+  "minimum_live_mutations": 384
+}
