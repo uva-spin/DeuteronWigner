@@ -1,0 +1,55 @@
+{
+  "schema": "C207-MISSING-TARGET-OBJECT-CONTRACT-V1",
+  "artifact": "missing_target_object_contract",
+  "package": "C207/HQCDMOMQCOND1",
+  "package_root": "3c4b895ca1c57443ab747c6fce0213ce786a9eb90e014c31c87b4e3ff65b7438",
+  "status": "C207_HQCDMOMQCOND1_TARGET_SOURCE_PROJECTOR_KINEMATICS_AUTHORITY_INCOMPLETE",
+  "plan": "MOMQCOND1-C",
+  "claims": [
+    "authenticated target audit complete",
+    "missing target objects are unavailable, not zero"
+  ],
+  "evidence": [
+    "C140/C168/C198 public records",
+    "C206 package root"
+  ],
+  "physical": false,
+  "target_condition_created": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "object_id": "C197-ST-9-SOURCE",
+        "exact_missing_object": "authenticated target MOMq source/version and locator",
+        "status": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "object_id": "C197-ST-9-PROJECTOR",
+        "exact_missing_object": "source-qualified MOMq projector and external-state definition",
+        "status": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "object_id": "C197-ST-9-KINEMATICS",
+        "exact_missing_object": "exact common kinematic map representable in finite C43 basis",
+        "status": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "object_id": "C197-ST-9-COEFFICIENT",
+        "exact_missing_object": "complete source-faithful target coefficient",
+        "status": "UNAVAILABLE_NOT_ZERO"
+      }
+    ],
+    "count": 4,
+    "first": {
+      "object_id": "C197-ST-9-SOURCE",
+      "exact_missing_object": "authenticated target MOMq source/version and locator",
+      "status": "UNAVAILABLE_NOT_ZERO"
+    },
+    "root": "8aec2cd515f05c4e4a7e1a6077433cc738150a1f0a7e26945e6ff8c691ba1d61"
+  }
+}
