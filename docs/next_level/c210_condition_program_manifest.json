@@ -1,0 +1,36 @@
+{
+  "schema": "C210-CONDITION-PROGRAM-MANIFEST-V1",
+  "artifact": "condition_program_manifest",
+  "package_root": "4053af60153556d37c3fd045b3fd5d3a6d796494e0005b4fafaeb06d991ac756",
+  "status": "C210_C209_EXECUTABLE_ENCLOSED_TARGET_MOMQ_CONDITION_READY_NONPHYSICAL",
+  "plan": "MOMQCOND2-A",
+  "physical": false,
+  "exact_finite_point": false,
+  "continuum_value": false,
+  "resolution_average": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_MOMQ_ENCLOSED_CONDITION_PROGRAM_V1",
+    "allowed_opcodes": [
+      "LOAD_C209_ADAPTER",
+      "VALIDATE_COMPLETE_CALLER_RECORD",
+      "CHECK_NONEXCEPTIONAL_ENCLOSURE",
+      "CHECK_GRAM_DETERMINANT_ENCLOSURE",
+      "APPLY_SIX_CHANNEL_PROJECTOR",
+      "SELECT_CHANNEL_ONE",
+      "BIND_MOMQ_TREE_NORMALIZATION",
+      "PROPAGATE_ERROR_ENCLOSURES",
+      "CHECK_GAUGE_SCHEME_COMMON_IR",
+      "RETURN_ENCLOSED_CONDITION"
+    ],
+    "eval": false,
+    "pickle": false,
+    "callbacks": false,
+    "root": "eb37a24ab36cd4ebf93c5cea4c02ad86c19fc9470d98a92068c59a53c12d1971"
+  }
+}

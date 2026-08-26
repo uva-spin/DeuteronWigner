@@ -1,0 +1,50 @@
+{
+  "schema": "C210-ROUTE-PARITY-CONTRACT-V1",
+  "artifact": "route_parity_contract",
+  "package_root": "4053af60153556d37c3fd045b3fd5d3a6d796494e0005b4fafaeb06d991ac756",
+  "status": "C210_C209_EXECUTABLE_ENCLOSED_TARGET_MOMQ_CONDITION_READY_NONPHYSICAL",
+  "plan": "MOMQCOND2-A",
+  "physical": false,
+  "exact_finite_point": false,
+  "continuum_value": false,
+  "resolution_average": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C210-PARITY-K9",
+        "resolution": "K9",
+        "route_A": "Gram inverse then channel select",
+        "route_B": "dual functional then channel select",
+        "required": "overlapping enclosure",
+        "order_reversal": "six channels reversed before reconstruction",
+        "status": "symbolic parity obligation encoded"
+      },
+      {
+        "record_id": "C210-PARITY-K11",
+        "resolution": "K11",
+        "route_A": "Gram inverse then channel select",
+        "route_B": "dual functional then channel select",
+        "required": "overlapping enclosure",
+        "order_reversal": "six channels reversed before reconstruction",
+        "status": "symbolic parity obligation encoded"
+      },
+      {
+        "record_id": "C210-PARITY-K13",
+        "resolution": "K13",
+        "route_A": "Gram inverse then channel select",
+        "route_B": "dual functional then channel select",
+        "required": "overlapping enclosure",
+        "order_reversal": "six channels reversed before reconstruction",
+        "status": "symbolic parity obligation encoded"
+      }
+    ],
+    "count": 3,
+    "root": "9b437e8b49f9eb3c410d7cdd22d68b165395a7482dfba167dc2c027f8d87fad1"
+  }
+}
