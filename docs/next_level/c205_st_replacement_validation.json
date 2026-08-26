@@ -1,0 +1,89 @@
+{
+  "schema": "C205-ST-REPLACEMENT-VALIDATION-V1",
+  "artifact": "st_replacement_validation",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 st_replacement_validation is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "replacement_id": "C205-ST7-K9",
+        "old_row_id": "C198-BLOCKED-C197-ST-7",
+        "new_row_id": "C205-GLOBAL-ST7-K9",
+        "resolution": "K9",
+        "identity": "global orbit/stabilizer ratio",
+        "absolute_volume": "UNSELECTED",
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "solution_family_dimension": 14,
+        "compatibility": "EXACT_SYMBOLIC_ZERO_RATIO_SCOPE",
+        "unrelated_rows_changed": 0,
+        "remaining_blocked_rows": [
+          "C197-ST-8",
+          "C197-ST-9",
+          "C197-ST-10"
+        ]
+      },
+      {
+        "replacement_id": "C205-ST7-K11",
+        "old_row_id": "C198-BLOCKED-C197-ST-7",
+        "new_row_id": "C205-GLOBAL-ST7-K11",
+        "resolution": "K11",
+        "identity": "global orbit/stabilizer ratio",
+        "absolute_volume": "UNSELECTED",
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "solution_family_dimension": 14,
+        "compatibility": "EXACT_SYMBOLIC_ZERO_RATIO_SCOPE",
+        "unrelated_rows_changed": 0,
+        "remaining_blocked_rows": [
+          "C197-ST-8",
+          "C197-ST-9",
+          "C197-ST-10"
+        ]
+      },
+      {
+        "replacement_id": "C205-ST7-K13",
+        "old_row_id": "C198-BLOCKED-C197-ST-7",
+        "new_row_id": "C205-GLOBAL-ST7-K13",
+        "resolution": "K13",
+        "identity": "global orbit/stabilizer ratio",
+        "absolute_volume": "UNSELECTED",
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "solution_family_dimension": 14,
+        "compatibility": "EXACT_SYMBOLIC_ZERO_RATIO_SCOPE",
+        "unrelated_rows_changed": 0,
+        "remaining_blocked_rows": [
+          "C197-ST-8",
+          "C197-ST-9",
+          "C197-ST-10"
+        ]
+      }
+    ],
+    "count": 3,
+    "unrelated_rows_changed": 0,
+    "root": "7346272de4d8f09ae2541769c0047ba9633349bc53d44ed576c4739496c5299d"
+  }
+}

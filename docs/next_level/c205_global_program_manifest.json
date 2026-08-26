@@ -1,0 +1,235 @@
+{
+  "schema": "C205-GLOBAL-PROGRAM-MANIFEST-V1",
+  "artifact": "global_program_manifest",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 global_program_manifest is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "program_id": "C205-PROGRAM-GLOBAL_GAUGE_TRANSFORM",
+        "owner_id": "GLOBAL_GAUGE_TRANSFORM",
+        "opcodes": [
+          "LOAD_C172_C174_Q0_P0_DECOMPOSITION",
+          "LOAD_C175_FP_GHOST_ZERO_MODE_DOMAIN",
+          "LOAD_C183_HOLONOMY_CONJUGACY",
+          "LOAD_GLOBAL_FRAME",
+          "LOAD_GLOBAL_SU3_ORBIT",
+          "LOAD_STABILIZER_OR_CENTRALIZER",
+          "LOAD_GAUGE_VOLUME_RECORD",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_C204_ENDPOINT_REMAINDER",
+          "APPLY_GLOBAL_GAUGE_TRANSFORMATION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "APPLY_FRAME_CHANGE",
+          "PROJECT_LOCAL_AND_GLOBAL_MODES",
+          "TAKE_GLOBAL_SOURCE_DERIVATIVE",
+          "FORM_ORBIT_STABILIZER_RATIO",
+          "RETURN_TYPED_GLOBAL_IDENTITY"
+        ],
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "measure_default": false,
+        "physical": false
+      },
+      {
+        "program_id": "C205-PROGRAM-FP_ZERO_MODE_PROJECT",
+        "owner_id": "FP_ZERO_MODE_PROJECT",
+        "opcodes": [
+          "LOAD_C172_C174_Q0_P0_DECOMPOSITION",
+          "LOAD_C175_FP_GHOST_ZERO_MODE_DOMAIN",
+          "LOAD_C183_HOLONOMY_CONJUGACY",
+          "LOAD_GLOBAL_FRAME",
+          "LOAD_GLOBAL_SU3_ORBIT",
+          "LOAD_STABILIZER_OR_CENTRALIZER",
+          "LOAD_GAUGE_VOLUME_RECORD",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_C204_ENDPOINT_REMAINDER",
+          "APPLY_GLOBAL_GAUGE_TRANSFORMATION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "APPLY_FRAME_CHANGE",
+          "PROJECT_LOCAL_AND_GLOBAL_MODES",
+          "TAKE_GLOBAL_SOURCE_DERIVATIVE",
+          "FORM_ORBIT_STABILIZER_RATIO",
+          "RETURN_TYPED_GLOBAL_IDENTITY"
+        ],
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "measure_default": false,
+        "physical": false
+      },
+      {
+        "program_id": "C205-PROGRAM-HOLONOMY_STABILIZER",
+        "owner_id": "HOLONOMY_STABILIZER",
+        "opcodes": [
+          "LOAD_C172_C174_Q0_P0_DECOMPOSITION",
+          "LOAD_C175_FP_GHOST_ZERO_MODE_DOMAIN",
+          "LOAD_C183_HOLONOMY_CONJUGACY",
+          "LOAD_GLOBAL_FRAME",
+          "LOAD_GLOBAL_SU3_ORBIT",
+          "LOAD_STABILIZER_OR_CENTRALIZER",
+          "LOAD_GAUGE_VOLUME_RECORD",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_C204_ENDPOINT_REMAINDER",
+          "APPLY_GLOBAL_GAUGE_TRANSFORMATION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "APPLY_FRAME_CHANGE",
+          "PROJECT_LOCAL_AND_GLOBAL_MODES",
+          "TAKE_GLOBAL_SOURCE_DERIVATIVE",
+          "FORM_ORBIT_STABILIZER_RATIO",
+          "RETURN_TYPED_GLOBAL_IDENTITY"
+        ],
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "measure_default": false,
+        "physical": false
+      },
+      {
+        "program_id": "C205-PROGRAM-FRAME_COVARIANCE",
+        "owner_id": "FRAME_COVARIANCE",
+        "opcodes": [
+          "LOAD_C172_C174_Q0_P0_DECOMPOSITION",
+          "LOAD_C175_FP_GHOST_ZERO_MODE_DOMAIN",
+          "LOAD_C183_HOLONOMY_CONJUGACY",
+          "LOAD_GLOBAL_FRAME",
+          "LOAD_GLOBAL_SU3_ORBIT",
+          "LOAD_STABILIZER_OR_CENTRALIZER",
+          "LOAD_GAUGE_VOLUME_RECORD",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_C204_ENDPOINT_REMAINDER",
+          "APPLY_GLOBAL_GAUGE_TRANSFORMATION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "APPLY_FRAME_CHANGE",
+          "PROJECT_LOCAL_AND_GLOBAL_MODES",
+          "TAKE_GLOBAL_SOURCE_DERIVATIVE",
+          "FORM_ORBIT_STABILIZER_RATIO",
+          "RETURN_TYPED_GLOBAL_IDENTITY"
+        ],
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "measure_default": false,
+        "physical": false
+      },
+      {
+        "program_id": "C205-PROGRAM-ORBIT_VOLUME_RATIO",
+        "owner_id": "ORBIT_VOLUME_RATIO",
+        "opcodes": [
+          "LOAD_C172_C174_Q0_P0_DECOMPOSITION",
+          "LOAD_C175_FP_GHOST_ZERO_MODE_DOMAIN",
+          "LOAD_C183_HOLONOMY_CONJUGACY",
+          "LOAD_GLOBAL_FRAME",
+          "LOAD_GLOBAL_SU3_ORBIT",
+          "LOAD_STABILIZER_OR_CENTRALIZER",
+          "LOAD_GAUGE_VOLUME_RECORD",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_C204_ENDPOINT_REMAINDER",
+          "APPLY_GLOBAL_GAUGE_TRANSFORMATION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "APPLY_FRAME_CHANGE",
+          "PROJECT_LOCAL_AND_GLOBAL_MODES",
+          "TAKE_GLOBAL_SOURCE_DERIVATIVE",
+          "FORM_ORBIT_STABILIZER_RATIO",
+          "RETURN_TYPED_GLOBAL_IDENTITY"
+        ],
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "measure_default": false,
+        "physical": false
+      },
+      {
+        "program_id": "C205-PROGRAM-GLOBAL_ST_IDENTITY",
+        "owner_id": "GLOBAL_ST_IDENTITY",
+        "opcodes": [
+          "LOAD_C172_C174_Q0_P0_DECOMPOSITION",
+          "LOAD_C175_FP_GHOST_ZERO_MODE_DOMAIN",
+          "LOAD_C183_HOLONOMY_CONJUGACY",
+          "LOAD_GLOBAL_FRAME",
+          "LOAD_GLOBAL_SU3_ORBIT",
+          "LOAD_STABILIZER_OR_CENTRALIZER",
+          "LOAD_GAUGE_VOLUME_RECORD",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_C204_ENDPOINT_REMAINDER",
+          "APPLY_GLOBAL_GAUGE_TRANSFORMATION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "APPLY_FRAME_CHANGE",
+          "PROJECT_LOCAL_AND_GLOBAL_MODES",
+          "TAKE_GLOBAL_SOURCE_DERIVATIVE",
+          "FORM_ORBIT_STABILIZER_RATIO",
+          "RETURN_TYPED_GLOBAL_IDENTITY"
+        ],
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "measure_default": false,
+        "physical": false
+      }
+    ],
+    "count": 6,
+    "root": "bd993bc177e8c81fed6041a57105fe2101ba15c7816ba7921e3bad09ed2ad791"
+  }
+}

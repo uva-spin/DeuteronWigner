@@ -1,0 +1,62 @@
+{
+  "schema": "C205-REQUEST-RESOLUTION-CONTRACT-V1",
+  "artifact": "request_resolution_contract",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 request_resolution_contract is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "terminal_status": "C205_GLOBAL_ORBIT_STABILIZER_IDENTITY_READY",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "terminal_status": "C205_GLOBAL_ORBIT_STABILIZER_IDENTITY_READY",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-ST-2",
+        "terminal_status": "C205_GLOBAL_ORBIT_STABILIZER_IDENTITY_READY",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_MASS-2",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-MASS_SQUARED-2",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "physical": false
+      }
+    ],
+    "count": 6,
+    "all_six_visible": true,
+    "root": "44a034c774d3d759431ffbe2725fd6474138e77077f490a588a3b25292830439"
+  }
+}
