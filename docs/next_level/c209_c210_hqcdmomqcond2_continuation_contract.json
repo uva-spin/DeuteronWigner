@@ -1,0 +1,35 @@
+{
+  "schema": "C209-C210-CONTINUATION-CONTRACT-V1",
+  "from_package": "C209/HQCDMOMQMAP1",
+  "to_package": "C210/HQCDMOMQCOND2",
+  "from_baseline": "579c08591e651f6a9487356f3455579109277441",
+  "from_package_root": "fb0abd5750ea3684ad44fc05512dbd4e0765c0da5e721bdc51da4735326d9654",
+  "from_status": "C209_C208_CERTIFIED_RESOLUTION_LOCAL_MOMQ_WAVEPACKET_LIMIT_ADAPTER_READY_NO_EXACT_FINITE_POINT",
+  "from_plan": "MOMQMAP1-B",
+  "completed_object": "certified caller-parameterized resolution-local wavepacket and projector adapter for symmetric MOMq kinematics",
+  "next_frontier": {
+    "object_id": "C197-ST-9",
+    "exact_missing_object": "executable target MOMq condition over the certified resolution-local adapter",
+    "status": "TARGET_MOMQ_CONDITION_EXECUTION_FRONTIER",
+    "source_side": true,
+    "finite_basis_adapter": true
+  },
+  "adapter_authority": {
+    "exact_finite_point": false,
+    "resolutions": ["K9", "K11", "K13"],
+    "projector_channels": 6,
+    "error_terms": ["longitudinal-tail", "omitted-HO-shell", "quadrature", "invariant-enclosure"],
+    "controlled_limit": true
+  },
+  "constraints": {
+    "physical": false,
+    "resolution_average": false,
+    "continuum_extrapolation": false,
+    "invented_exact_point": false,
+    "zero_error_finite_point": false,
+    "C158_value_inputs": 0,
+    "C166_graph_delta": [0, 0],
+    "Q0_Q1_Q2_modified": false,
+    "push": false
+  }
+}

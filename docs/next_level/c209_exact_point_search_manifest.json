@@ -1,0 +1,58 @@
+{
+  "schema": "C209-EXACT-POINT-SEARCH-MANIFEST-V1",
+  "artifact": "exact_point_search_manifest",
+  "package_root": "fb0abd5750ea3684ad44fc05512dbd4e0765c0da5e721bdc51da4735326d9654",
+  "status": "C209_C208_CERTIFIED_RESOLUTION_LOCAL_MOMQ_WAVEPACKET_LIMIT_ADAPTER_READY_NO_EXACT_FINITE_POINT",
+  "plan": "MOMQMAP1-B",
+  "physical": false,
+  "exact_finite_point": false,
+  "resolution_average": false,
+  "continuum_extrapolation": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "C208 authenticated MOMq definition",
+    "C140 finite-domain mismatch"
+  ],
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C209-EXACT-SEARCH-K9",
+        "resolution": "K9",
+        "target_invariants": "p2=q2=r2=-mu2 and p.q=mu2/2",
+        "finite_domain": "discrete longitudinal modes times truncated HO",
+        "result": "NO_GENERIC_EXACT_POINT_CERTIFIED_BY_C140_DOMAIN_MISMATCH",
+        "special_accidental_points": "not asserted",
+        "exact_map": false,
+        "route": "integer/rank constraints plus C140 authority"
+      },
+      {
+        "record_id": "C209-EXACT-SEARCH-K11",
+        "resolution": "K11",
+        "target_invariants": "p2=q2=r2=-mu2 and p.q=mu2/2",
+        "finite_domain": "discrete longitudinal modes times truncated HO",
+        "result": "NO_GENERIC_EXACT_POINT_CERTIFIED_BY_C140_DOMAIN_MISMATCH",
+        "special_accidental_points": "not asserted",
+        "exact_map": false,
+        "route": "integer/rank constraints plus C140 authority"
+      },
+      {
+        "record_id": "C209-EXACT-SEARCH-K13",
+        "resolution": "K13",
+        "target_invariants": "p2=q2=r2=-mu2 and p.q=mu2/2",
+        "finite_domain": "discrete longitudinal modes times truncated HO",
+        "result": "NO_GENERIC_EXACT_POINT_CERTIFIED_BY_C140_DOMAIN_MISMATCH",
+        "special_accidental_points": "not asserted",
+        "exact_map": false,
+        "route": "integer/rank constraints plus C140 authority"
+      }
+    ],
+    "count": 3,
+    "exact_point_exists": false,
+    "root": "b0913e570b5be2bee594bb61070c79d67b3c862d471f0b84feb1ab580f402b49"
+  }
+}
