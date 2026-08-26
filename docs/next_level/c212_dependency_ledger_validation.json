@@ -1,0 +1,47 @@
+{
+  "schema": "C212-DEPENDENCY-LEDGER-VALIDATION-V1",
+  "artifact": "dependency_ledger_validation",
+  "package_root": "a9a1a787cabdcf6d5adcdae61c83fd1e80d830bd6aac8caa03fab7887c4c152c",
+  "status": "C212_C211_C197_ST_9_SOURCE_SIDE_MOMQ_TARGET_CONDITION_CLOSED_PHYSICAL_INPUT_REMAINS",
+  "plan": "MOMQDEC1-A",
+  "physical": false,
+  "C197_ST_9_closed": true,
+  "C197_ST_10_closed": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "object": "C208-source",
+        "root": "da8d672230f244c6ee9b0d98106527dfa30bd8d17e9d74f3a22f8307a8eb36c9",
+        "claim": "authenticated Gracey MOMq definition/projector/kinematics",
+        "closed": true
+      },
+      {
+        "object": "C209-adapter",
+        "root": "fb0abd5750ea3684ad44fc05512dbd4e0765c0da5e721bdc51da4735326d9654",
+        "claim": "controlled resolution-local finite-basis adapter",
+        "closed": true
+      },
+      {
+        "object": "C210-condition",
+        "root": "4053af60153556d37c3fd045b3fd5d3a6d796494e0005b4fafaeb06d991ac756",
+        "claim": "guarded executable enclosed MOMq condition",
+        "closed": true
+      },
+      {
+        "object": "C211-evaluation",
+        "root": "4ce56a14bed7afd1309d1b1960373245f6cff5fe3965092225876bd116a89b92",
+        "claim": "three fixtures, nine routes, three overlap certificates",
+        "closed": true
+      }
+    ],
+    "count": 4,
+    "all_closed": true,
+    "root": "9ffed580c6f223f1667c453d3bb5664a611c082e77f14c4370a9ed6838ab247b"
+  }
+}

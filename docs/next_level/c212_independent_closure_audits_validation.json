@@ -1,0 +1,45 @@
+{
+  "schema": "C212-INDEPENDENT-CLOSURE-AUDITS-VALIDATION-V1",
+  "artifact": "independent_closure_audits_validation",
+  "package_root": "a9a1a787cabdcf6d5adcdae61c83fd1e80d830bd6aac8caa03fab7887c4c152c",
+  "status": "C212_C211_C197_ST_9_SOURCE_SIDE_MOMQ_TARGET_CONDITION_CLOSED_PHYSICAL_INPUT_REMAINS",
+  "plan": "MOMQDEC1-A",
+  "physical": false,
+  "C197_ST_9_closed": true,
+  "C197_ST_10_closed": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "audit_id": "C212-AUDIT-A",
+        "route": "source-to-adapter-to-condition-to-fixture",
+        "checks": [
+          "source hash",
+          "no exact finite point",
+          "guarded projection",
+          "route overlap"
+        ],
+        "result": "SOURCE_SIDE_CLOSED"
+      },
+      {
+        "audit_id": "C212-AUDIT-B",
+        "route": "frontier-replacement-and-root-ledger",
+        "checks": [
+          "C197 order",
+          "C208-C211 roots",
+          "nonclaims",
+          "isolation"
+        ],
+        "result": "SOURCE_SIDE_CLOSED"
+      }
+    ],
+    "count": 2,
+    "agree": true,
+    "root": "ad4fdc16d942c338931b870fe41427542e6f93bb7edfd56ceeb90c356b44efd5"
+  }
+}
