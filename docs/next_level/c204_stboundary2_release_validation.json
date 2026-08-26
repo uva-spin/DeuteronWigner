@@ -1,0 +1,51 @@
+{
+  "schema": "C204-RELEASE-VALIDATION-V1",
+  "artifact": "release_validation",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 release_validation is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-RELEASE-V1",
+    "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+    "plan": "STBOUNDARY2-B",
+    "decision": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+    "gates": {
+      "frontier": true,
+      "inventory": true,
+      "parameters": true,
+      "programs": true,
+      "transformations": true,
+      "endpoint_identities": true,
+      "pullback_commutator": true,
+      "nilpotency_endpoint": true,
+      "cut_holonomy_explicit": true,
+      "descendants": true,
+      "jacobian": true,
+      "replacement": true,
+      "topology": true,
+      "global_zero_mode": false,
+      "full_ST": false,
+      "physical": false
+    },
+    "next": "C205/HQCDSTGLOBAL1",
+    "root": "d1fb0ba6bb95b8f6943509257f8e9bbed93b42793aea54744515bfc114b3c7d1"
+  }
+}

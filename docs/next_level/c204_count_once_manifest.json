@@ -1,0 +1,138 @@
+{
+  "schema": "C204-COUNT-ONCE-V1",
+  "artifact": "count_once",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 count_once is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-COUNT-ONCE-V1",
+    "rows": [
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "bulk-BRST",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "boundary-pullback",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "endpoint-ghost",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "endpoint-antighost",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "one-link",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "two-link",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "source-definition",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "ST6-identity",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "cut-transition",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "holonomy-remainder",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "global-volume",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "counterterm",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "null",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "target",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "request_id": "C169-QCD_COUPLING-MOMQ",
+        "owner_id": "physical",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      }
+    ],
+    "count": 15,
+    "duplicates": 0,
+    "root": "dea44468a2a85fa3ab9439cd45823db09353cbf19637e8963dbc23db45983520"
+  }
+}
