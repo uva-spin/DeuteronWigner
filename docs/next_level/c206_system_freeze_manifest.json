@@ -1,0 +1,571 @@
+{
+  "schema": "C206-SYSTEM-FREEZE-MANIFEST-V1",
+  "artifact": "system_freeze_manifest",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "system_id": "C206-SYS-K9-GENERIC",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "GENERIC",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K9-CENTRAL",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "CENTRAL",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K9-WEYL_WALL",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "WEYL_WALL",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K9-IDENTITY_DIAGNOSTIC",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "IDENTITY_DIAGNOSTIC",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K11-GENERIC",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "GENERIC",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K11-CENTRAL",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "CENTRAL",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K11-WEYL_WALL",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "WEYL_WALL",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K11-IDENTITY_DIAGNOSTIC",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "IDENTITY_DIAGNOSTIC",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K13-GENERIC",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "GENERIC",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K13-CENTRAL",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "CENTRAL",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K13-WEYL_WALL",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "WEYL_WALL",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      },
+      {
+        "system_id": "C206-SYS-K13-IDENTITY_DIAGNOSTIC",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "IDENTITY_DIAGNOSTIC",
+        "row_order": [
+          "C197-ST-1",
+          "C197-ST-2",
+          "C197-ST-3",
+          "C197-ST-4",
+          "C197-ST-5",
+          "C197-ST-6",
+          "C197-ST-7"
+        ],
+        "column_order": [
+          "C151_COUNTERTERM_DIRECTION_1",
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "shape": [
+          7,
+          15
+        ],
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "compatibility": "EXACT_ZERO",
+        "units": "row-qualified dimensionless scaling",
+        "source_roots": [
+          "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df"
+        ],
+        "unavailable_is_zero": false
+      }
+    ],
+    "count": 12,
+    "root": "2eb92c78ea4c270264fe4066491f5b4ea3ebc6509c030e28274a918c890807ed"
+  }
+}

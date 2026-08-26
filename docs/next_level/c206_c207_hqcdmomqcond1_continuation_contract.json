@@ -1,0 +1,18 @@
+{
+  "schema":"C206-C207-CONTINUATION-CONTRACT-V1",
+  "from_package":"C206/HQCDSTCTSOLVE1",
+  "to_package":"C207/HQCDMOMQCOND1",
+  "from_baseline":"f4822e301ced0e2996877d7ca359ca07effdad2f",
+  "from_package_root":"b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "from_status":"C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "from_plan":"STCTSOLVE1-B",
+  "completed_frontier":"C197-ST-8",
+  "completed_object":"ST-compatible counterterm solution",
+  "completed_alias":"ST_COMPATIBLE_COUNTERTERM_SOLUTION",
+  "completed_scope":"exact compatible 14-dimensional conditional affine family with no selected representative",
+  "next_frontier":{"object_id":"C197-ST-9","exact_missing_object":"target MOMq renormalization conditions","alias":"TARGET_RENORMALIZATION_CONDITION","status":"TARGET_MATCHING_FRONTIER","source_side":true,"required_scope":"apply authenticated target MOMq conditions to the conditional ST family while keeping standard-scheme conversion and physical input separate"},
+  "remaining_ordered_frontier":["C197-ST-9","C197-ST-10"],
+  "preserve":["C197-ST-1 through C197-ST-8 authorities","C206 full affine family and basis maps","K9/K11/K13, scheme, holonomy, boundary, and global classes separately"],
+  "constraints":{"physical":false,"physical_input":false,"standard_scheme":false,"unsupported_null_selection":false,"C158_value_inputs":0,"C166_graph_delta":[0,0],"Q0_Q1_Q2_modified":false,"push":false},
+  "evidence":["C206 public solution-family, relevance, frontier, completeness, readiness, and package-root records"]
+}
