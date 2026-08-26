@@ -1,0 +1,25 @@
+{
+  "schema": "C203-TWO-CLEAN-BUILD-DETERMINISM-V1",
+  "artifact": "two_clean_build_determinism",
+  "package": "C203/HQCDBRST1",
+  "package_root": "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e",
+  "status": "C203_C202_LOCAL_P0_BRST_SOURCE_IDENTITY_AUTHORITY_READY_BOUNDARY_GLOBAL_FRONTIER_EXPLICIT",
+  "plan": "BRST1-B",
+  "claims": [
+    "two isolated wheel builds succeeded",
+    "embedded C203 artifacts are deterministic"
+  ],
+  "evidence": [
+    "build1 wheel sha256 a09fa6496484740dc0915b9e64f9fa087672e3d095163484fa8e3c9b1cff9ace",
+    "build2 wheel sha256 63802f6c4cf01e4b7ec496bebfdf3b00c5999cefbc580eaaab83213948762160",
+    "566 member names equal and 0 member payload differences"
+  ],
+  "physical": false,
+  "full_global_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false
+}

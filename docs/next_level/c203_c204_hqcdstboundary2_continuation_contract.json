@@ -1,0 +1,61 @@
+{
+  "schema": "C203-C204-CONTINUATION-CONTRACT-V1",
+  "from_package": "C203/HQCDBRST1",
+  "to_package": "C204/HQCDSTBOUNDARY2",
+  "from_baseline": "2c595d90f6b520fa52ea337c08521996442eaa3c",
+  "from_package_root": "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e",
+  "from_status": "C203_C202_LOCAL_P0_BRST_SOURCE_IDENTITY_AUTHORITY_READY_BOUNDARY_GLOBAL_FRONTIER_EXPLICIT",
+  "from_plan": "BRST1-B",
+  "completed_frontier": "C197-ST-5",
+  "completed_object": "BRST source identities",
+  "completed_alias": "BRST_SOURCE_IDENTITY",
+  "completed_scope": "source-derived local-P0 BRST source identity authority; endpoint, link, holonomy, zero-mode, and global-volume identities remain explicit",
+  "preserve": [
+    "C197-ST-1 ghost-field renormalization",
+    "C197-ST-2 ghost-gluon proper vertex",
+    "C197-ST-3 three-gluon proper vertex",
+    "C197-ST-4 four-gluon proper vertex",
+    "C197-ST-5 local-P0 BRST source identity authority",
+    "C203 six counterterm and nine null sensitivities",
+    "C203 boundary/global nonclaims"
+  ],
+  "next_frontier": {
+    "object_id": "C197-ST-6",
+    "exact_missing_object": "endpoint ghost/link identities",
+    "alias": "ENDPOINT_GHOST_LINK_IDENTITY",
+    "status": "BOUNDARY_LINK_SOURCE_SIDE_FRONTIER",
+    "source_side": true,
+    "required_scope": "finite-HO boundary pullback, endpoint ghost-link variation, residual-link endpoint transformation, and cut/holonomy remainder kept separate"
+  },
+  "remaining_ordered_frontier": [
+    "C197-ST-6",
+    "C197-ST-7",
+    "C197-ST-8",
+    "C197-ST-9",
+    "C197-ST-10"
+  ],
+  "required_authorities": [
+    "C130 zero-mode/boundary nonmatrix interfaces",
+    "C175 ghost/antighost and boundary ghost-link authority",
+    "C181 finite-HO boundary ownership",
+    "C182 residual-link source/operator and endpoint interfaces",
+    "C183 cut, holonomy, global-frame, and global-volume metadata",
+    "C203 local-P0 BRST differential, source functional, descendants, and ST replacement"
+  ],
+  "constraints": {
+    "physical": false,
+    "full_ST": false,
+    "global_zero_mode_gauge_volume_closed": false,
+    "C158_value_inputs": 0,
+    "C166_graph_delta": [0, 0],
+    "Q0_Q1_Q2_modified": false,
+    "counterterm_or_null_selection": false,
+    "push": false
+  },
+  "evidence": [
+    "C203 public frontier and next-ST handoff records",
+    "C203 completeness certificate",
+    "C203 readiness report",
+    "C203 package-root manifest"
+  ]
+}
