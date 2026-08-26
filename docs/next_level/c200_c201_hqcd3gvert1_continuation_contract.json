@@ -1,0 +1,22 @@
+{
+  "package": "C201/HQCD3GVERT1",
+  "from": "C200/HQCDGHOSTVERT1",
+  "baseline": "e190470bc07e69e5697726e5bcd9daea73e7af9f2da87f76c376276c2e2e53ed",
+  "source_package_root": "e190470bc07e69e5697726e5bcd9daea73e7af9f2da87f76c376276c2e2e53ed",
+  "status": "C200_C199_SOURCE_DERIVED_COMPLETE_CONDITIONAL_FINITE_BASIS_GHOST_GLUON_PROPER_VERTEX_AUTHORITY_READY",
+  "plan": "GHOSTVERT1-A",
+  "closed_object": "C197-ST-2",
+  "closed_object_exact": "complete ghost-gluon proper vertex",
+  "next_object": "C197-ST-3",
+  "next_object_exact": "complete three-gluon proper vertex renormalization",
+  "next": "C201/HQCD3GVERT1",
+  "remaining_frontier": ["C197-ST-3","C197-ST-4","C197-ST-5","C197-ST-6","C197-ST-7","C197-ST-8","C197-ST-9","C197-ST-10"],
+  "conditional": true,
+  "physical": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [0,0],
+  "Q0_Q1_Q2_modified": false,
+  "contract_provenance": "C199-to-C200 contract consumed and hash verified",
+  "forbidden": ["physical ghost-gluon factor","physical coupling","selected counterterm/null","target MOMq","quantum object","TMD"]
+}
