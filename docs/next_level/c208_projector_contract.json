@@ -1,0 +1,35 @@
+{
+  "schema": "C208-PROJECTOR-CONTRACT-V1",
+  "artifact": "projector_contract",
+  "package_root": "da8d672230f244c6ee9b0d98106527dfa30bd8d17e9d74f3a22f8307a8eb36c9",
+  "status": "C208_C207_AUTHENTICATED_MOMQ_SOURCE_PROJECTOR_KINEMATICS_DEFINITION_READY_FINITE_BASIS_MAP_INCOMPLETE",
+  "plan": "MOMQSOURCE1-B",
+  "physical": false,
+  "finite_basis_map_ready": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "hash-locked arXiv:1108.4806v1",
+    "C164/C165 accepted locators"
+  ],
+  "authority_record": {
+    "basis": "six Pqqg_(k) tensors at symmetric point",
+    "Gram_matrix": "Nqqg_kl from d-dimensional Lorentz/spinor contraction",
+    "projection_matrix": "Mqqg=Nqqg^{-1}",
+    "selected_channel": 1,
+    "selection_reason": "source states channel 1 is the Feynman-rule and divergent channel",
+    "appendix_required_for_components": true,
+    "source_objects": [
+      "2.4",
+      "2.5",
+      "2.6",
+      "Appendix A"
+    ],
+    "physical": false,
+    "root": "1e721fc66bfa9aa2c908cb40e12f502165ba6667ae4bae28da84b6c609366102"
+  }
+}

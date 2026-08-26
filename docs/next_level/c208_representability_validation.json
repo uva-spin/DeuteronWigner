@@ -1,0 +1,37 @@
+{
+  "schema": "C208-REPRESENTABILITY-VALIDATION-V1",
+  "artifact": "representability_validation",
+  "package_root": "da8d672230f244c6ee9b0d98106527dfa30bd8d17e9d74f3a22f8307a8eb36c9",
+  "status": "C208_C207_AUTHENTICATED_MOMQ_SOURCE_PROJECTOR_KINEMATICS_DEFINITION_READY_FINITE_BASIS_MAP_INCOMPLETE",
+  "plan": "MOMQSOURCE1-B",
+  "physical": false,
+  "finite_basis_map_ready": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "hash-locked arXiv:1108.4806v1",
+    "C164/C165 accepted locators"
+  ],
+  "authority_record": {
+    "C140_record": {
+      "schema": "C140-REFERENCE-KINEMATICS-V1",
+      "status": "INCOMPLETE",
+      "target_pattern": "spacelike nonexceptional symmetric candidate",
+      "exactly_representable_in_C43": false,
+      "project_scheme_name": "not RI/SMOM or MOMq without exact adapter",
+      "root": "27e935e46b466d72c1a8eacfdc9877cc95c65953cc2dfbe579673e9035694823"
+    },
+    "exact_symmetric_continuum_definition": true,
+    "exactly_representable_in_C43": false,
+    "finite_longitudinal_HO_map": "INCOMPLETE_NOT_ZERO",
+    "K9_K11_K13_separate": true,
+    "resolution_average": false,
+    "continuum_extrapolation": false,
+    "next": "C209/HQCDMOMQMAP1",
+    "root": "bf53ee39b58349a142afff5eeb4bc415240bf56419ad83b44e0a5b8f58f39851"
+  }
+}

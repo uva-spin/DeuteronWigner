@@ -1,0 +1,50 @@
+{
+  "schema": "C208-MOMQ-DEFINITION-CONTRACT-V1",
+  "artifact": "momq_definition_contract",
+  "package_root": "da8d672230f244c6ee9b0d98106527dfa30bd8d17e9d74f3a22f8307a8eb36c9",
+  "status": "C208_C207_AUTHENTICATED_MOMQ_SOURCE_PROJECTOR_KINEMATICS_DEFINITION_READY_FINITE_BASIS_MAP_INCOMPLETE",
+  "plan": "MOMQSOURCE1-B",
+  "physical": false,
+  "finite_basis_map_ready": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "hash-locked arXiv:1108.4806v1",
+    "C164/C165 accepted locators"
+  ],
+  "authority_record": {
+    "scheme_id": "MOMq",
+    "kinematics": {
+      "p2": "-mu^2",
+      "q2": "-mu^2",
+      "r2": "-mu^2",
+      "r": "-p-q",
+      "p_dot_q": "mu^2/2",
+      "nonexceptional": true
+    },
+    "vertex": "quark-antiquark-gluon",
+    "color_factor": "T^c_ij",
+    "tensor_basis_dimension": 6,
+    "tree_channel": 1,
+    "projector": "Mqqg inverse Gram matrix acting on six qg tensors",
+    "coupling_definition": "equation 3.5: MOMq/MS ratio from gluon and quark two-point amplitudes and channel-1 qg vertex amplitude",
+    "coordinate": "a=g^2/(16*pi^2) as source-defined",
+    "gauge": "linear covariant alpha; Landau preserved under mapping",
+    "regularization": "dimensional regularization",
+    "chiral_limit": true,
+    "active_Nf": "symbolic",
+    "source_locators": [
+      "C208-LOC-KIN",
+      "C208-LOC-PROJ",
+      "C208-LOC-GAMMA",
+      "C208-LOC-MOMQ-DEF",
+      "C208-LOC-MOMQ-HOLDOUT"
+    ],
+    "remembered_formula": false,
+    "root": "8c3b876b19ac4bde57ca75a70b3ac64d39b547a624902c0957d596ec4ff62251"
+  }
+}
