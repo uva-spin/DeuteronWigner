@@ -1,0 +1,45 @@
+{
+  "authority_record": {
+    "count": 6,
+    "missing_as_zero": false,
+    "root": "b0e0fdffd363648066338629be5704c9a95e2bd614cb088764defaf5a8c108cc",
+    "rows": [
+      {
+        "authority": "C145/C217",
+        "component": "retained q-qg-q self-energy",
+        "status": "EXECUTABLE_CALLER_CONDITIONAL"
+      },
+      {
+        "authority": "C218-C238",
+        "component": "outside-fixed-K V1 interfaces",
+        "status": "SOURCE_DERIVED_PROGRAMS_READY"
+      },
+      {
+        "authority": "C239-C247",
+        "component": "C112 instantaneous contact V2",
+        "status": "SOURCE_DERIVED_CALLER_PROGRAMS_READY"
+      },
+      {
+        "authority": "C248-C254",
+        "component": "C127 instantaneous current V2",
+        "status": "REGULATED_CALLER_PROGRAMS_READY"
+      },
+      {
+        "authority": "C259-C276",
+        "component": "C117 finite subtraction directions",
+        "status": "FOUR_EXPLICIT_UNSELECTED_COORDINATES"
+      },
+      {
+        "authority": "C149/C276",
+        "component": "C149 signed-mass projector",
+        "status": "UNIT_RESPONSE_READY"
+      }
+    ]
+  },
+  "package_root": "b57cd76303f9ba0a7002bc97baca44eabb8de68529920682103069bc66bca0f1",
+  "physical": false,
+  "plan": "RIMASSSELF1-C",
+  "schema": "C277-KERNEL_CROSSWALK-VALIDATION-V1",
+  "status": "C277_MASS_PROJECTED_SELF_ENERGY_KERNELS_CROSSWALKED_COMMON_STATE_INSTANCE_UNAVAILABLE",
+  "validation": "PASS"
+}

@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "false_agreement": false,
+    "root": "4fca26f83782a8c914aed6d1ff65f5ec25407e8b9c20139d88edd49289a0589f",
+    "routes": [
+      {
+        "agreement": null,
+        "evaluation_status": "SAME_STATE_INSTANCE_MISSING",
+        "kernel_status": "READY",
+        "route": "DIRECT_C149_PROJECTION"
+      },
+      {
+        "agreement": null,
+        "evaluation_status": "SAME_STATE_INSTANCE_MISSING",
+        "kernel_status": "READY",
+        "route": "SIGNED_MASS_DERIVATIVE"
+      },
+      {
+        "agreement": null,
+        "evaluation_status": "SAME_STATE_INSTANCE_MISSING",
+        "kernel_status": "READY",
+        "route": "SPECTRAL_RESOLVENT"
+      },
+      {
+        "agreement": null,
+        "evaluation_status": "SAME_STATE_INSTANCE_MISSING",
+        "kernel_status": "READY",
+        "route": "OWNER_DECOMPOSITION"
+      },
+      {
+        "agreement": null,
+        "evaluation_status": "SAME_STATE_INSTANCE_MISSING",
+        "kernel_status": "READY",
+        "route": "SIGN_REVERSAL"
+      }
+    ]
+  },
+  "package_root": "b57cd76303f9ba0a7002bc97baca44eabb8de68529920682103069bc66bca0f1",
+  "physical": false,
+  "plan": "RIMASSSELF1-C",
+  "schema": "C277-ROUTE_AUDIT-MANIFEST-V1",
+  "status": "C277_MASS_PROJECTED_SELF_ENERGY_KERNELS_CROSSWALKED_COMMON_STATE_INSTANCE_UNAVAILABLE",
+  "validation": "BOUND"
+}
