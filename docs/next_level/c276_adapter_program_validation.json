@@ -1,0 +1,191 @@
+{
+  "authority_record": {
+    "callbacks": false,
+    "count": 3,
+    "eval": false,
+    "executable": 0,
+    "pickle": false,
+    "root": "5aa6f712bfc59a8d3fe0349dd7a17e86adf8a9744b0fad7f43c530dca96c70f6",
+    "rows": [
+      {
+        "executable": false,
+        "nodes": [
+          {
+            "opcode": "LOAD_REQUEST",
+            "ordinal": 0
+          },
+          {
+            "opcode": "LOAD_C148_FULL_SPINOR_TWO_POINT",
+            "ordinal": 1
+          },
+          {
+            "opcode": "LOAD_C149_SIGNED_MASS_PROJECTOR",
+            "ordinal": 2
+          },
+          {
+            "opcode": "LOAD_C150_CONDITIONAL_MASS_FAMILY",
+            "ordinal": 3
+          },
+          {
+            "opcode": "LOAD_RI_SMOM_SCALAR_PSEUDOSCALAR_TARGET",
+            "ordinal": 4
+          },
+          {
+            "opcode": "VALIDATE_COMMON_STATE_IR",
+            "ordinal": 5
+          },
+          {
+            "opcode": "LOAD_ORDER_G2_SELF_ENERGY",
+            "ordinal": 6
+          },
+          {
+            "opcode": "PROJECT_SIGNED_MASS_LINEAR",
+            "ordinal": 7
+          },
+          {
+            "opcode": "SUBTRACT_COMMON_IR",
+            "ordinal": 8
+          },
+          {
+            "opcode": "FORM_ZM_RATIO",
+            "ordinal": 9
+          },
+          {
+            "opcode": "RETURN_UNAVAILABLE_IF_MASS_PROJECTION_MISSING",
+            "ordinal": 10
+          }
+        ],
+        "program_id": "C276-RI-M-K9",
+        "resolution": "K9",
+        "root": "55400a9af1321e219e2f9f8baaac0fa38c35fa137121da51c3bf293a8ad65318",
+        "terminal": "ORDER_G2_MASS_PROJECTED_SELF_ENERGY_UNAVAILABLE"
+      },
+      {
+        "executable": false,
+        "nodes": [
+          {
+            "opcode": "LOAD_REQUEST",
+            "ordinal": 0
+          },
+          {
+            "opcode": "LOAD_C148_FULL_SPINOR_TWO_POINT",
+            "ordinal": 1
+          },
+          {
+            "opcode": "LOAD_C149_SIGNED_MASS_PROJECTOR",
+            "ordinal": 2
+          },
+          {
+            "opcode": "LOAD_C150_CONDITIONAL_MASS_FAMILY",
+            "ordinal": 3
+          },
+          {
+            "opcode": "LOAD_RI_SMOM_SCALAR_PSEUDOSCALAR_TARGET",
+            "ordinal": 4
+          },
+          {
+            "opcode": "VALIDATE_COMMON_STATE_IR",
+            "ordinal": 5
+          },
+          {
+            "opcode": "LOAD_ORDER_G2_SELF_ENERGY",
+            "ordinal": 6
+          },
+          {
+            "opcode": "PROJECT_SIGNED_MASS_LINEAR",
+            "ordinal": 7
+          },
+          {
+            "opcode": "SUBTRACT_COMMON_IR",
+            "ordinal": 8
+          },
+          {
+            "opcode": "FORM_ZM_RATIO",
+            "ordinal": 9
+          },
+          {
+            "opcode": "RETURN_UNAVAILABLE_IF_MASS_PROJECTION_MISSING",
+            "ordinal": 10
+          }
+        ],
+        "program_id": "C276-RI-M-K11",
+        "resolution": "K11",
+        "root": "11ccd2a288d856d466b5d9435af99c63d05814d4a807fe27ab1e483ed9a11739",
+        "terminal": "ORDER_G2_MASS_PROJECTED_SELF_ENERGY_UNAVAILABLE"
+      },
+      {
+        "executable": false,
+        "nodes": [
+          {
+            "opcode": "LOAD_REQUEST",
+            "ordinal": 0
+          },
+          {
+            "opcode": "LOAD_C148_FULL_SPINOR_TWO_POINT",
+            "ordinal": 1
+          },
+          {
+            "opcode": "LOAD_C149_SIGNED_MASS_PROJECTOR",
+            "ordinal": 2
+          },
+          {
+            "opcode": "LOAD_C150_CONDITIONAL_MASS_FAMILY",
+            "ordinal": 3
+          },
+          {
+            "opcode": "LOAD_RI_SMOM_SCALAR_PSEUDOSCALAR_TARGET",
+            "ordinal": 4
+          },
+          {
+            "opcode": "VALIDATE_COMMON_STATE_IR",
+            "ordinal": 5
+          },
+          {
+            "opcode": "LOAD_ORDER_G2_SELF_ENERGY",
+            "ordinal": 6
+          },
+          {
+            "opcode": "PROJECT_SIGNED_MASS_LINEAR",
+            "ordinal": 7
+          },
+          {
+            "opcode": "SUBTRACT_COMMON_IR",
+            "ordinal": 8
+          },
+          {
+            "opcode": "FORM_ZM_RATIO",
+            "ordinal": 9
+          },
+          {
+            "opcode": "RETURN_UNAVAILABLE_IF_MASS_PROJECTION_MISSING",
+            "ordinal": 10
+          }
+        ],
+        "program_id": "C276-RI-M-K13",
+        "resolution": "K13",
+        "root": "f3fc104f287592e72d9d79df9b6e21b8b22318b912c18825c8c2745e39e62767",
+        "terminal": "ORDER_G2_MASS_PROJECTED_SELF_ENERGY_UNAVAILABLE"
+      }
+    ],
+    "safe_opcodes": [
+      "LOAD_REQUEST",
+      "LOAD_C148_FULL_SPINOR_TWO_POINT",
+      "LOAD_C149_SIGNED_MASS_PROJECTOR",
+      "LOAD_C150_CONDITIONAL_MASS_FAMILY",
+      "LOAD_RI_SMOM_SCALAR_PSEUDOSCALAR_TARGET",
+      "VALIDATE_COMMON_STATE_IR",
+      "LOAD_ORDER_G2_SELF_ENERGY",
+      "PROJECT_SIGNED_MASS_LINEAR",
+      "SUBTRACT_COMMON_IR",
+      "FORM_ZM_RATIO",
+      "RETURN_UNAVAILABLE_IF_MASS_PROJECTION_MISSING"
+    ],
+    "schema": "PROJECT_C276_RI_SMOM_SIGNED_MASS_ADAPTER_V1"
+  },
+  "package_root": "97d8fd6b6bd40d1295d7cdf9d3d3b849c375c7adad1f24794d86261b3e2d3994",
+  "physical": false,
+  "plan": "RIMASSADAPTER1-B",
+  "schema": "C276-ADAPTER_PROGRAM-VALIDATION-V1",
+  "status": "C276_RI_SMOM_SIGNED_MASS_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_MASS_PROJECTED_SELF_ENERGY_INCOMPLETE",
+  "validation": "PASS"
+}
