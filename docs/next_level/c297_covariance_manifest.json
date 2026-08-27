@@ -1,0 +1,18 @@
+{
+  "authority_record": {
+    "Sigma_trunc": "resolution-specific plus correlated model-discrepancy blocks; unbound until kernel construction",
+    "formula": "Sigma_y=J_eta Sigma_eta J_eta^T + Sigma_trunc",
+    "jacobian": "J_eta[K,a]=partial Delta_Pminus[K]/partial eta_a",
+    "joint_values": "y=(Delta_Pminus[K9],Delta_Pminus[K11],Delta_Pminus[K13])",
+    "numerical": "UNAVAILABLE_NOT_ZERO",
+    "off_diagonal": "REQUIRED_FROM_SHARED_ETA_NOT_ZERO",
+    "root": "e4f15ec95587f6de39f1037234f50e6deecd6166f63bc70ad65c6e70b16bb5b7",
+    "shared_parameter_vector": "eta=(renormalized mu0^2, coupling inputs, longitudinal lengths, current-kernel parameters, transverse-restoration parameters)"
+  },
+  "package_root": "44b6ca07acb3e3ea970667244072988158ca495fb7829972a210842b448a6502",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINEDREMAINDER1-B",
+  "schema": "C297-COVARIANCE-MANIFEST-V1",
+  "status": "C297_EXACT_CONSTRAINED_ZERO_MODE_FORMAL_SOLUTION_AND_JOINT_COVARIANCE_PULLBACK_READY_RENORMALIZED_KERNEL_INPUT_MISSING",
+  "validation": "BOUND"
+}
