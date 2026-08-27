@@ -1,0 +1,113 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "angular_complete": 8,
+  "artifact": "angular_harmonic_contract",
+  "authority_record": {
+    "count": 8,
+    "harmonics": [
+      1,
+      -1,
+      2,
+      0,
+      0,
+      -2,
+      1,
+      -1
+    ],
+    "root": "90c38b6f763ffd90366ef6f8e843c20c0bedfc13f091208410dbeafc4c47cd6e",
+    "rows": [
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "4db30f647d8acde27acaa65fe8c3b3f973efb1341be37cc79aacb1b19f696b02",
+        "h_g": -1,
+        "h_in": -1,
+        "h_out": -1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO-1-HI-1-HG-1",
+        "required_m": 1
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "d8c02aca4b01c1376ec836b043c6666e31d552bd82178221d424c0375a3d094e",
+        "h_g": 1,
+        "h_in": -1,
+        "h_out": -1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO-1-HI-1-HG1",
+        "required_m": -1
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "8b5f2f311520b471c3f43db36f0ea85ea25c30a3a3435c10e39e32e3266f2b80",
+        "h_g": -1,
+        "h_in": 1,
+        "h_out": -1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO-1-HI1-HG-1",
+        "required_m": 2
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "d5325d8bcb2a9e7c598b99429b2d8457a71b5eb1cb96c6c449f5672b96b8184d",
+        "h_g": 1,
+        "h_in": 1,
+        "h_out": -1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO-1-HI1-HG1",
+        "required_m": 0
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "d5325d8bcb2a9e7c598b99429b2d8457a71b5eb1cb96c6c449f5672b96b8184d",
+        "h_g": -1,
+        "h_in": -1,
+        "h_out": 1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO1-HI-1-HG-1",
+        "required_m": 0
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "632f94623e427e39aea4d2febc4eda3d2f745b6fbd2e3e669b3a45b97df5165d",
+        "h_g": 1,
+        "h_in": -1,
+        "h_out": 1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO1-HI-1-HG1",
+        "required_m": -2
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "19113a43021a91c83b3984f6180c532137f049e77a9d553d64433fce01b6378b",
+        "h_g": -1,
+        "h_in": 1,
+        "h_out": 1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO1-HI1-HG-1",
+        "required_m": 1
+      },
+      {
+        "angular_integral": "2*pi delta_{m,required_m}",
+        "expression_sha256": "a00b97b51fdcb9ee9e1a4dfb7d35d000e678fddaee51d94352c011039c03e303",
+        "h_g": 1,
+        "h_in": 1,
+        "h_out": 1,
+        "identity": "h_in/2=h_out/2+h_g+m",
+        "normal_form_id": "C227-NF-HO1-HI1-HG1",
+        "required_m": -1
+      }
+    ]
+  },
+  "package_root": "a5df2ccabd60a90a8ebab210aa023d70ef455e8fb172acdd3d7b66f0383de042",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVHO2-C",
+  "quadrature_promoted": 0,
+  "radial_complete": 0,
+  "schema": "C228-ANGULAR-HARMONIC-CONTRACT-V1",
+  "status": "C228_C227_EXACT_ANGULAR_HARMONIC_PROJECTION_READY_MATCHING_CHANNEL_RADIAL_INTEGRALS_INCOMPLETE",
+  "threshold": 0
+}
