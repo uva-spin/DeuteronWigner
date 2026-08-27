@@ -1,0 +1,30 @@
+{
+  "authority_record": {
+    "allowlisted_opcodes": [
+      "LOAD_COORDINATE",
+      "LOAD_PROJECTOR",
+      "LOAD_WARD_IDENTITY",
+      "LOAD_CONVERSION",
+      "ADD",
+      "SUB",
+      "MUL",
+      "DIV_GUARDED",
+      "LOG",
+      "POLYLOG",
+      "RETURN_ENCLOSURE"
+    ],
+    "callbacks": false,
+    "dynamic_imports": false,
+    "eval": false,
+    "pickle": false,
+    "root": "da2b7f479dc88255271ac285d2eb0db2f5ea17f4f58947bf62e6359e1afc89d4",
+    "schema": "PROJECT_RI_SMOM_SIGNED_MASS_TARGET_AST_V1",
+    "unknown_opcode": "reject"
+  },
+  "package_root": "d69b9cfc362b6ac94fd1441319ff83533fdf221dcc84b1da9171af9294e2a4d5",
+  "physical": false,
+  "plan": "RIMASSTARGETAST1-C",
+  "schema": "C280-AST_SCHEMA-MANIFEST-V1",
+  "status": "C280_RI_SMOM_MASS_TARGET_AST_SKELETON_SOURCE_BOUND_FOUR_DEPENDENCY_LEAVES_OPEN",
+  "validation": "BOUND"
+}

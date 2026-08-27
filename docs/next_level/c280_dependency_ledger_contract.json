@@ -1,0 +1,43 @@
+{
+  "authority_record": {
+    "first": "C165-REQ-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-0",
+    "open": 4,
+    "root": "524f5aac58804aff7e2ee6ee91d30b290dbcfe0b78df32bb1c70327823c298a0",
+    "rows": [
+      {
+        "closed": false,
+        "missing": "exact source normalization/power binding for the source coordinate",
+        "node_class": "PERTURBATIVE_COORDINATE_DEFINITION",
+        "ordinal": 0,
+        "request_id": "C165-REQ-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-0"
+      },
+      {
+        "closed": false,
+        "missing": "active-N_f and external-flavor semantics for this root",
+        "node_class": "ACTIVE_NF_DEFINITION",
+        "ordinal": 1,
+        "request_id": "C165-REQ-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-1"
+      },
+      {
+        "closed": false,
+        "missing": "source-to-C43 light-front gauge/scheme adapter",
+        "node_class": "FROZEN_PROJECT_OWNED_IDENTITY",
+        "ordinal": 2,
+        "request_id": "C165-REQ-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2"
+      },
+      {
+        "closed": false,
+        "missing": "complete bare/counterterm/renormalized/finite conversion layer ancestry",
+        "node_class": "COUNTERTERM_OR_SUBTRACTION_DEFINITION",
+        "ordinal": 3,
+        "request_id": "C165-REQ-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-3"
+      }
+    ]
+  },
+  "package_root": "d69b9cfc362b6ac94fd1441319ff83533fdf221dcc84b1da9171af9294e2a4d5",
+  "physical": false,
+  "plan": "RIMASSTARGETAST1-C",
+  "schema": "C280-DEPENDENCY_LEDGER-CONTRACT-V1",
+  "status": "C280_RI_SMOM_MASS_TARGET_AST_SKELETON_SOURCE_BOUND_FOUR_DEPENDENCY_LEAVES_OPEN",
+  "validation": "BOUND"
+}
