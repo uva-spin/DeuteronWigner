@@ -1,0 +1,67 @@
+{
+  "authority_record": {
+    "count": 10,
+    "full_loop": false,
+    "kernel_ready": 9,
+    "missing_as_zero": false,
+    "root": "bbbc0bc1761d1bd8d17f1f6de15baa1a7ed1fa7c8cbd415f9aad3728d71563e9",
+    "rows": [
+      {
+        "authority": "C145/C217",
+        "class": "retained canonical q-qg-q",
+        "status": "EXECUTABLE_CALLER_CONDITIONAL"
+      },
+      {
+        "authority": "C218-C238",
+        "class": "outside-fixed-K V1",
+        "status": "EXECUTABLE_PARAMETERIZED"
+      },
+      {
+        "authority": "C239-C247",
+        "class": "C112 instantaneous fermion/contact",
+        "status": "EXECUTABLE_PARAMETERIZED"
+      },
+      {
+        "authority": "C248-C254",
+        "class": "C127 instantaneous current/Gauss",
+        "status": "EXECUTABLE_REGULATED"
+      },
+      {
+        "authority": "C43/C172",
+        "class": "Q0 antisymmetric/PV",
+        "status": "EXACT_NONZERO_MODE_SCOPE"
+      },
+      {
+        "authority": "C173-C175",
+        "class": "P0/global residual gauge",
+        "status": "CONDITIONAL_NONMATRIX"
+      },
+      {
+        "authority": "C176/C181",
+        "class": "finite-HO boundary",
+        "status": "FACTORIZED_CONDITIONAL"
+      },
+      {
+        "authority": "C177-C183",
+        "class": "residual link/holonomy",
+        "status": "PATH_ENDPOINT_GEOMETRY_NONCOMPOSABLE"
+      },
+      {
+        "authority": "C149/C276",
+        "class": "C149 signed-mass projector",
+        "status": "READY"
+      },
+      {
+        "authority": "C206/C274",
+        "class": "counterterm/C117 coordinates",
+        "status": "SYMBOLIC_UNSELECTED"
+      }
+    ]
+  },
+  "package_root": "e8ff64d3f1cd8cd954d685e92b7a753f461a919ed2bfb0ac0abc5532825d309b",
+  "physical": false,
+  "plan": "RIMASSLFLOOP1-B",
+  "schema": "C284-LOOP_PARTITION-VALIDATION-V1",
+  "status": "C284_C43_MASS_LOOP_MAXIMAL_KERNEL_PARTITION_READY_RESIDUAL_LINK_ENDPOINT_GEOMETRY_MISSING",
+  "validation": "PASS"
+}
