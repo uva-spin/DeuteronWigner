@@ -1,0 +1,22 @@
+{
+  "authority_record": {
+    "EM_rank": 3,
+    "b1_response_row": [
+      "S_b1,1",
+      "S_b1,2",
+      "S_b1,3",
+      "S_b1,4"
+    ],
+    "evaluated_rank": null,
+    "missing_as_zero": false,
+    "rank_four_claim": false,
+    "root": "f4b1fe9c60ed3e753d525e265b34b49caa3bd7da0642613898e94de31aae3c17",
+    "symbolic_rank_condition": "rank([R_EM;S_b1])=4 iff S_b1 not in rowspan(R_EM)"
+  },
+  "package_root": "7a55d193904b3c19d7c29d61d0abcce421801b4e6852349af2aa571d69d07cbe",
+  "physical": false,
+  "plan": "C117B1ADAPTER1-B",
+  "schema": "C271-RANK_CERTIFICATE-MANIFEST-V1",
+  "status": "C271_B1_OPERATOR_NORMALIZATION_ADAPTER_READY_C117_SENSITIVITY_ROW_UNEVALUATED",
+  "validation": "BOUND"
+}
