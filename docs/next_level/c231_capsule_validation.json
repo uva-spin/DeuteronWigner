@@ -1,0 +1,28 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "capsule_validation",
+  "authority_record": {
+    "caller_fields": [
+      "x_min",
+      "P_min",
+      "P_max",
+      "m_max"
+    ],
+    "constraints": "0<x_min<1/2; 0<P_min<=P_max; m_max>=0",
+    "monotonicity": "constant nondecreasing when capsule enlarges",
+    "no_physical_defaults": true,
+    "root": "94339444eceb39191b9995a60ee604f33235ecdbe31fc87405145450c6406fa3"
+  },
+  "core_enclosures": 0,
+  "critical_sets": 8,
+  "growth_programs": 8,
+  "package_root": "0fb9fc8f6d18bde50eedfa46d9e117906611dd3f62731d513d1601bedff04c47",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVRADCONST1-B",
+  "schema": "C231-CAPSULE-VALIDATION-V1",
+  "status": "C231_EIGHT_COMPUTABLE_COMPACT_CAPSULE_GROWTH_CONSTANT_PROGRAMS_AND_EMPTY_POSITIVE_Q_CRITICAL_SETS_READY"
+}
