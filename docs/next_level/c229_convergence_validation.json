@@ -1,0 +1,98 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "convergence_validation",
+  "authority_record": {
+    "convergent": 8,
+    "count": 8,
+    "divergent": 0,
+    "root": "28bfc37e85f669a5f4c39a31e917a695bc335c4c8eb2aeb922b05903022b00d5",
+    "rows": [
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 2,
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI-1-HG-1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 2,
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI-1-HG1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 3,
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI1-HG-1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 1,
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI1-HG1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 1,
+        "radial_id": "C229-RAD-C227-NF-HO1-HI-1-HG-1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 3,
+        "radial_id": "C229-RAD-C227-NF-HO1-HI-1-HG1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 2,
+        "radial_id": "C229-RAD-C227-NF-HO1-HI1-HG-1",
+        "uniform_on_compact_positive_parameter_sets": true
+      },
+      {
+        "absolute_convergence": true,
+        "infinity_envelope": "C(parameters,n,m)*(1+q)^p exp(-q^2/(2 b_HO^2))",
+        "infinity_integrable": true,
+        "origin_integrable": true,
+        "origin_power_lower_bound": 2,
+        "radial_id": "C229-RAD-C227-NF-HO1-HI1-HG1",
+        "uniform_on_compact_positive_parameter_sets": true
+      }
+    ]
+  },
+  "convergent": 8,
+  "evaluated_or_enclosed": 0,
+  "package_root": "d72b1879de53cc79fd915f9d88930858bd0a170891c36f9d3ce5a21696a6bf84",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVRAD1-E",
+  "quadrature_promoted": 0,
+  "radial_families": 8,
+  "schema": "C229-CONVERGENCE-VALIDATION-V1",
+  "status": "C229_C228_EIGHT_RADIAL_FAMILIES_ABSOLUTE_CONVERGENCE_READY_EXPLICIT_FACTOR_AND_TAIL_ENCLOSURE_INCOMPLETE",
+  "threshold": 0
+}
