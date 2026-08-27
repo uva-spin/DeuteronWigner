@@ -1,0 +1,25 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "rg_step_scaling_validation",
+  "authority_record": {
+    "Sigma_definition": "lim_reg R(mu2) inverse(R(mu1)) in fixed scheme/nf",
+    "algebraic_composition_residual": 0,
+    "composition": "Sigma(mu3,mu2) Sigma(mu2,mu1)=Sigma(mu3,mu1)",
+    "gamma_convention": "gamma=-mu dZ/dmu Z^-1; mu dO_R/dmu=-gamma O_R",
+    "gamma_matrix": "UNAVAILABLE_NOT_ZERO_C262",
+    "inverse": "inverse(Sigma(mu2,mu1))=Sigma(mu1,mu2)",
+    "root": "806735ce5b240daa6d85bbbfff85af9f3204be481de4156619b1e06884dd0088",
+    "scale_reversal_residual": 0,
+    "threshold_interface": "(nf,mu_threshold,matching_matrix,source_root) mandatory; values unavailable"
+  },
+  "package_root": "b8326f78014113be619c70f2c6f8a8174d55c80b11892a4cd9ef2b41b762b4b2",
+  "physical": false,
+  "plan": "C117CONTTARGET1-B",
+  "schema": "C261-RG_STEP_SCALING-VALIDATION-V1",
+  "status": "C261_PROJECT_C117_RI_SMOM_V1_EXACT_SYMBOLIC_CONVERSION_PROGRAM_READY_LOOP_EVALUATION_REMAINS",
+  "validation": "PASS"
+}

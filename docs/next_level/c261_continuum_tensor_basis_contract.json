@@ -1,0 +1,59 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "continuum_tensor_basis_contract",
+  "authority_record": {
+    "D": "4-2 epsilon",
+    "gamma5": "NDR anticommuting, nonsinglet",
+    "gauge": "Landau xi=0",
+    "kinematics": "p1^2=p2^2=q^2=mu^2 Euclidean",
+    "root": "e70ba08221657be06f6c7e53cf94a94b5a4c0dc5eca181899aca8eb1716cf730",
+    "rows": [
+      {
+        "BRST_exact": "N_C117_1[Landau]",
+        "EOM": "G_C117_1[off-shell]",
+        "direction": "I2_density_projector",
+        "evanescent": "E_C117_1=T_D[O_1]-Pi_4 T_D[O_1]",
+        "orientation": "incoming p1, q=p1-p2, outgoing p2",
+        "physical": "O_C117_1",
+        "projector": "P_C117_1"
+      },
+      {
+        "BRST_exact": "N_C117_2[Landau]",
+        "EOM": "G_C117_2[off-shell]",
+        "direction": "derivative_density",
+        "evanescent": "E_C117_2=T_D[O_2]-Pi_4 T_D[O_2]",
+        "orientation": "incoming p1, q=p1-p2, outgoing p2",
+        "physical": "O_C117_2",
+        "projector": "P_C117_2"
+      },
+      {
+        "BRST_exact": "N_C117_3[Landau]",
+        "EOM": "G_C117_3[off-shell]",
+        "direction": "CM_ground",
+        "evanescent": "E_C117_3=T_D[O_3]-Pi_4 T_D[O_3]",
+        "orientation": "incoming p1, q=p1-p2, outgoing p2",
+        "physical": "O_C117_3",
+        "projector": "P_C117_3"
+      },
+      {
+        "BRST_exact": "N_C117_4[Landau]",
+        "EOM": "G_C117_4[off-shell]",
+        "direction": "triplet_projected",
+        "evanescent": "E_C117_4=T_D[O_4]-Pi_4 T_D[O_4]",
+        "orientation": "incoming p1, q=p1-p2, outgoing p2",
+        "physical": "O_C117_4",
+        "projector": "P_C117_4"
+      }
+    ]
+  },
+  "package_root": "b8326f78014113be619c70f2c6f8a8174d55c80b11892a4cd9ef2b41b762b4b2",
+  "physical": false,
+  "plan": "C117CONTTARGET1-B",
+  "schema": "C261-CONTINUUM_TENSOR_BASIS-CONTRACT-V1",
+  "status": "C261_PROJECT_C117_RI_SMOM_V1_EXACT_SYMBOLIC_CONVERSION_PROGRAM_READY_LOOP_EVALUATION_REMAINS",
+  "validation": "BOUND"
+}
