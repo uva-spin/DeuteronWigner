@@ -1,0 +1,120 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "operator_basis_contract",
+  "authority_record": {
+    "classification_routes": [
+      "C117 graph tensor factors",
+      "C259 Gram-dual coordinate reconstruction"
+    ],
+    "closure": "closed four-coordinate project basis at tree/scheme-definition order; loop-induced EOM/BRST-exact/evanescent sectors declared below",
+    "dimension": 4,
+    "order": [
+      "I2_density_projector",
+      "derivative_density",
+      "CM_ground",
+      "triplet_projected"
+    ],
+    "root": "4165961eac7b0237029bbfd84579969e80888910bf8053e443e6389dff870f48",
+    "rows": [
+      {
+        "BRST_ST": "renormalized-combination descendant test required; individual invariance not asserted",
+        "EOM_total_derivative": "independent at declared graph-local finite-basis scope",
+        "dimension": "mass-squared Hamiltonian direction with g_s^2 factored",
+        "direction": "I2_density_projector",
+        "fields": "C117 instantaneous J+J+ q/qg graph-local complement",
+        "hermitian_partner": true,
+        "index": 0,
+        "longitudinal": "positive APBC quark/PBC nonzero-gluon transfer; derivative factor only in direction 2",
+        "mixing_block": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "O_C117_1",
+        "ordered_color": "C114 source order; C74 U3 only for triplet projection",
+        "role": "finite-shell local density complement",
+        "source": "C117/C259",
+        "spin_helicity": "C115 source-current tensor retained",
+        "transverse": "C45 finite HO ancestry; C64/C77 intrinsic/CM factor when applicable"
+      },
+      {
+        "BRST_ST": "renormalized-combination descendant test required; individual invariance not asserted",
+        "EOM_total_derivative": "independent at declared graph-local finite-basis scope",
+        "dimension": "mass-squared Hamiltonian direction with g_s^2 factored",
+        "direction": "derivative_density",
+        "fields": "C117 instantaneous J+J+ q/qg graph-local complement",
+        "hermitian_partner": true,
+        "index": 1,
+        "longitudinal": "positive APBC quark/PBC nonzero-gluon transfer; derivative factor only in direction 2",
+        "mixing_block": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "O_C117_2",
+        "ordered_color": "C114 source order; C74 U3 only for triplet projection",
+        "role": "derivative-weighted density complement",
+        "source": "C117/C259",
+        "spin_helicity": "C115 source-current tensor retained",
+        "transverse": "C45 finite HO ancestry; C64/C77 intrinsic/CM factor when applicable"
+      },
+      {
+        "BRST_ST": "renormalized-combination descendant test required; individual invariance not asserted",
+        "EOM_total_derivative": "independent at declared graph-local finite-basis scope",
+        "dimension": "mass-squared Hamiltonian direction with g_s^2 factored",
+        "direction": "CM_ground",
+        "fields": "C117 instantaneous J+J+ q/qg graph-local complement",
+        "hermitian_partner": true,
+        "index": 2,
+        "longitudinal": "positive APBC quark/PBC nonzero-gluon transfer; derivative factor only in direction 2",
+        "mixing_block": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "O_C117_3",
+        "ordered_color": "C114 source order; C74 U3 only for triplet projection",
+        "role": "intrinsic CM-ground complement",
+        "source": "C117/C259",
+        "spin_helicity": "C115 source-current tensor retained",
+        "transverse": "C45 finite HO ancestry; C64/C77 intrinsic/CM factor when applicable"
+      },
+      {
+        "BRST_ST": "renormalized-combination descendant test required; individual invariance not asserted",
+        "EOM_total_derivative": "independent at declared graph-local finite-basis scope",
+        "dimension": "mass-squared Hamiltonian direction with g_s^2 factored",
+        "direction": "triplet_projected",
+        "fields": "C117 instantaneous J+J+ q/qg graph-local complement",
+        "hermitian_partner": true,
+        "index": 3,
+        "longitudinal": "positive APBC quark/PBC nonzero-gluon transfer; derivative factor only in direction 2",
+        "mixing_block": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "O_C117_4",
+        "ordered_color": "C114 source order; C74 U3 only for triplet projection",
+        "role": "physical color-triplet complement",
+        "source": "C117/C259",
+        "spin_helicity": "C115 source-current tensor retained",
+        "transverse": "C45 finite HO ancestry; C64/C77 intrinsic/CM factor when applicable"
+      }
+    ],
+    "scheme": "PROJECT_C117_RI_SMOM_V1"
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-OPERATOR_BASIS-CONTRACT-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "BOUND"
+}

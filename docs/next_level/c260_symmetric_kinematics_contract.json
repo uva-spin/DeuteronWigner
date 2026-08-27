@@ -1,0 +1,39 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "symmetric_kinematics_contract",
+  "authority_record": {
+    "analytic_continuation": "Euclidean scheme coordinate only; finite-cell light-front mapping deferred to C262",
+    "color": "ordered source tensors retained",
+    "dots": {
+      "p1.p1": "1",
+      "p1.p2": "1/2",
+      "p1.q": "1/2",
+      "p2.p2": "1",
+      "p2.q": "-1/2",
+      "q.q": "1"
+    },
+    "external_legs": "amputated off-shell C117 source/sink coordinates",
+    "flavor": "massless active flavors, explicit nonsinglet routing; no flavor average",
+    "gauge": "Landau xi=0",
+    "mu2": "1",
+    "nonexceptional": true,
+    "root": "6fba90980823c2077ed8288d1a9d5544983c2987418f8b9f2057e787d520140c",
+    "scheme": "PROJECT_C117_RI_SMOM_V1",
+    "signature": "Euclidean",
+    "source_sink_order": [
+      "incoming p1",
+      "operator momentum q=p1-p2",
+      "outgoing p2"
+    ]
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-SYMMETRIC_KINEMATICS-CONTRACT-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "BOUND"
+}

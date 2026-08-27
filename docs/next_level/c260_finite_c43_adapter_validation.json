@@ -1,0 +1,45 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "finite_c43_adapter_validation",
+  "authority_record": {
+    "Abel": "C254 caller Abel family and order of limits retained",
+    "boundaries": "P0/Q0, links, boundary class, and holonomy recorded separately",
+    "coefficients_evaluated": false,
+    "coordinate_map": "Euclidean invariants and source ordering -> light-front off-shell packet coordinates",
+    "normalization": "C117 operator/source normalization and g_s^2 ownership retained",
+    "orientation": "forward/reverse Hermitian source/sink orientations retained",
+    "root": "46d789a93efbff98526722252aafa539c4ff22b1e28af651e19b85d5cb07b01b",
+    "rows": [
+      {
+        "matrix": "M^(K)(mu,S) UNAVAILABLE_NOT_ZERO_C262",
+        "resolution": "K9_2_N8_b0.40",
+        "rhs": "t^S(mu)-r^(K)(mu,S) UNAVAILABLE_NOT_ZERO_C262",
+        "separate": true
+      },
+      {
+        "matrix": "M^(K)(mu,S) UNAVAILABLE_NOT_ZERO_C262",
+        "resolution": "K11_2_N8_b0.40",
+        "rhs": "t^S(mu)-r^(K)(mu,S) UNAVAILABLE_NOT_ZERO_C262",
+        "separate": true
+      },
+      {
+        "matrix": "M^(K)(mu,S) UNAVAILABLE_NOT_ZERO_C262",
+        "resolution": "K13_2_N8_b0.40",
+        "rhs": "t^S(mu)-r^(K)(mu,S) UNAVAILABLE_NOT_ZERO_C262",
+        "separate": true
+      }
+    ],
+    "transverse": "continuum transverse structures -> finite HO overlaps",
+    "wavepacket": "normalized finite-cell packets; no delta-function replacement"
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-FINITE_C43_ADAPTER-VALIDATION-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "PASS"
+}
