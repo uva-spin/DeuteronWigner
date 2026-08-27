@@ -1,0 +1,39 @@
+{
+  "authority_record": {
+    "count": 6,
+    "historical_label_reconciled": true,
+    "root": "ef52f1b3f7573f7ffdcd42e13fdcd7e692d38c67cf522fdf5142032bedc42c54",
+    "rows": [
+      {
+        "object": "C157 schema/validator",
+        "status": "READY"
+      },
+      {
+        "object": "C157 rho/mu record instances",
+        "status": "UNBOUND_NO_DEFAULT"
+      },
+      {
+        "object": "C158 signed-mass finite-basis evaluator",
+        "status": "EXECUTABLE_CONDITIONAL"
+      },
+      {
+        "object": "C153/C164 RI/SMOM target definition/locators",
+        "status": "SYMBOLIC_DEPENDENCIES_ONLY"
+      },
+      {
+        "object": "C153 executable continuum target AST",
+        "status": "MISSING"
+      },
+      {
+        "object": "common-IR difference/cancellation",
+        "status": "BLOCKED_ON_TARGET_AST"
+      }
+    ]
+  },
+  "package_root": "b2c27f7886c7210bc3c6eeae19583ec596948bd505c681183a33272225574830",
+  "physical": false,
+  "plan": "RIMASSIR1-C",
+  "schema": "C279-AUTHORITY_RECONCILIATION-CONTRACT-V1",
+  "status": "C279_C157_SIGNED_MASS_IR_SCHEMA_RECONCILED_C158_FB_EXECUTABLE_RI_SMOM_TARGET_AST_MISSING",
+  "validation": "BOUND"
+}
