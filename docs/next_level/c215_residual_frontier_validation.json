@@ -1,0 +1,72 @@
+{
+  "schema": "C215-RESIDUAL-FRONTIER-VALIDATION-V1",
+  "artifact": "residual_frontier_validation",
+  "package_root": "fff748f74feacb2114b52aa3fa4b0bd39ec9e18d9ebec7b5f0923501aeb7f3e0",
+  "status": "C215_C214_SIX_C168_CAPSULES_RECONCILED_SAFE_PARTIAL_PROGRAMS_READY_RI_SMOM_QUARK_ADAPTER_FIRST",
+  "plan": "PHYSADAPTERCALC1-B",
+  "physical_values": false,
+  "executable_adapters": 0,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "ordinal": 1,
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-RI_SMOM-2",
+        "exact_missing_object": "RI_SMOM QUARK_FIELD gauge/regulator-changing adapter coefficient",
+        "status": "ORDERED_RESIDUAL_CALCULATION",
+        "not_zero": true,
+        "next": "C216/HQCDRIQUARKADAPTER1"
+      },
+      {
+        "ordinal": 2,
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+        "exact_missing_object": "RI_SMOM SIGNED_QUARK_MASS gauge/regulator-changing adapter coefficient",
+        "status": "ORDERED_RESIDUAL_CALCULATION",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "ordinal": 3,
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-MOMQ-2",
+        "exact_missing_object": "MOMQ QUARK_FIELD gauge/regulator-changing adapter coefficient",
+        "status": "ORDERED_RESIDUAL_CALCULATION",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "ordinal": 4,
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "exact_missing_object": "MOMQ TRANSVERSE_GLUON_FIELD gauge/regulator-changing adapter coefficient",
+        "status": "ORDERED_RESIDUAL_CALCULATION",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "ordinal": 5,
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "exact_missing_object": "MOMQ qg_VERTEX_DRESSING gauge/regulator-changing adapter coefficient",
+        "status": "ORDERED_RESIDUAL_CALCULATION",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "ordinal": 6,
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "exact_missing_object": "MOMQ QCD_COUPLING gauge/regulator-changing adapter coefficient",
+        "status": "ORDERED_RESIDUAL_CALCULATION",
+        "not_zero": true,
+        "next": null
+      }
+    ],
+    "count": 6,
+    "first": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-RI_SMOM-2",
+    "next": "C216/HQCDRIQUARKADAPTER1",
+    "root": "2b958285092820baef75a886f9cf0895add5f9258b523ba2f93336b4e23eb98c"
+  }
+}
