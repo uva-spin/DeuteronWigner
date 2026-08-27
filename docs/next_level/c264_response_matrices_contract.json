@@ -1,0 +1,158 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "response_matrices_contract",
+  "authority_record": {
+    "K_separate": true,
+    "basis_reversal_residual": 0,
+    "query_reversal_residual": 0,
+    "resolution_average": false,
+    "root": "86a0fd2f46cdc1afa0bba8709808b746e3addbde721c9e9070ea24ebd9f86348",
+    "rows": [
+      {
+        "condition_number": 1,
+        "construction": "Gram-dual packet/projector functionals normalized on the four C117 direction responses",
+        "determinant": 1,
+        "left_nullspace": [],
+        "matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank": 4,
+        "resolution": "K9_2_N8_b0.40",
+        "right_nullspace": [],
+        "route_A": "direct packet/current contraction semantics",
+        "route_B": "inverse finite-basis C117 Gram reconstruction",
+        "route_residual": 0,
+        "singular_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target_values": "UNAVAILABLE_NOT_ZERO_C265"
+      },
+      {
+        "condition_number": 1,
+        "construction": "Gram-dual packet/projector functionals normalized on the four C117 direction responses",
+        "determinant": 1,
+        "left_nullspace": [],
+        "matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank": 4,
+        "resolution": "K11_2_N8_b0.40",
+        "right_nullspace": [],
+        "route_A": "direct packet/current contraction semantics",
+        "route_B": "inverse finite-basis C117 Gram reconstruction",
+        "route_residual": 0,
+        "singular_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target_values": "UNAVAILABLE_NOT_ZERO_C265"
+      },
+      {
+        "condition_number": 1,
+        "construction": "Gram-dual packet/projector functionals normalized on the four C117 direction responses",
+        "determinant": 1,
+        "left_nullspace": [],
+        "matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank": 4,
+        "resolution": "K13_2_N8_b0.40",
+        "right_nullspace": [],
+        "route_A": "direct packet/current contraction semantics",
+        "route_B": "inverse finite-basis C117 Gram reconstruction",
+        "route_residual": 0,
+        "singular_values": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "target_values": "UNAVAILABLE_NOT_ZERO_C265"
+      }
+    ]
+  },
+  "package_root": "6aad37b4f5d278b249655c946529be10d159e5a2694c0bed09ef5f65df6c26dc",
+  "physical": false,
+  "plan": "C117NONLOCALMATCH1-B",
+  "schema": "C264-RESPONSE_MATRICES-CONTRACT-V1",
+  "status": "C264_C117_FULL_RANK_NONLOCAL_MATCHING_FUNCTIONALS_READY_CONTINUUM_TARGET_EVALUATION_REMAINS",
+  "validation": "BOUND"
+}
