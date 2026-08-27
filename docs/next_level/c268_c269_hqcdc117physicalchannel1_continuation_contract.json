@@ -1,0 +1,25 @@
+{
+  "schema": "C268-C269-HQCDC117PHYSICALCHANNEL1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C268/HQCDC117STANDARDSIDE1",
+  "from_status": "C268_C117_STANDARD_SIDE_SOURCE_INCOMPLETE_NAMED_PHYSICAL_CHANNEL_REQUIRED",
+  "from_plan": "C117STANDARDSIDE1-C",
+  "from_package_root": "629d53e7e26d90ed796b41d4a20c9321ecaea5e790461eca7080d128010cc70b",
+  "completed_object": "four-direction standard-side source-completeness and route audit preserving unavailable amplitudes as unavailable",
+  "next_job": "C269/HQCDC117PHYSICALCHANNEL1",
+  "next_frontier": {
+    "object_id": "C117-NAMED-PHYSICAL-CHANNEL-V1",
+    "exact_missing_object": "authenticated named physical external-state/current observable capsule defining the standard-side target for all four C267 packet functionals"
+  },
+  "required_schema": "C269-C117-NAMED-PHYSICAL-CHANNEL-V1",
+  "constraints": {
+    "all_four_directions_required": true,
+    "exact_primary_or_repository_authority_required": true,
+    "state_normalization_and_observable_required": true,
+    "packet_coordinates_preserved": true,
+    "unsupported_values_zeroed": false,
+    "finite_C43_coefficients_selected": false,
+    "C166_graph_mutation": false,
+    "Q0_Q1_Q2_mutation": false,
+    "push": false
+  }
+}
