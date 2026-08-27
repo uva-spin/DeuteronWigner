@@ -1,0 +1,66 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "packet_audit_contract",
+  "authority_record": {
+    "evaluable": 0,
+    "normalization_claim_not_numerically_bound": true,
+    "required": 4,
+    "root": "58269d43f6aec8b176e0ee374ec0f71fe5c522c148b291090f4884824289005a",
+    "rows": [
+      {
+        "HO_coefficients": null,
+        "boundary_class": null,
+        "coefficient_function": null,
+        "direction": "I2_density_projector",
+        "evaluable": false,
+        "normalization_integral": "declared but not executable",
+        "packet_class": "smooth compact-support longitudinal times Schwartz/L2 transverse",
+        "support_parameters": null,
+        "width_parameters": null
+      },
+      {
+        "HO_coefficients": null,
+        "boundary_class": null,
+        "coefficient_function": null,
+        "direction": "derivative_density",
+        "evaluable": false,
+        "normalization_integral": "declared but not executable",
+        "packet_class": "smooth compact-support longitudinal times Schwartz/L2 transverse",
+        "support_parameters": null,
+        "width_parameters": null
+      },
+      {
+        "HO_coefficients": null,
+        "boundary_class": null,
+        "coefficient_function": null,
+        "direction": "CM_ground",
+        "evaluable": false,
+        "normalization_integral": "declared but not executable",
+        "packet_class": "smooth compact-support longitudinal times Schwartz/L2 transverse",
+        "support_parameters": null,
+        "width_parameters": null
+      },
+      {
+        "HO_coefficients": null,
+        "boundary_class": null,
+        "coefficient_function": null,
+        "direction": "triplet_projected",
+        "evaluable": false,
+        "normalization_integral": "declared but not executable",
+        "packet_class": "smooth compact-support longitudinal times Schwartz/L2 transverse",
+        "support_parameters": null,
+        "width_parameters": null
+      }
+    ]
+  },
+  "package_root": "cfc5ae1080cab2071a80f4e170a8bdc5968f24afce8f4deee3e58c399b81fa64",
+  "physical": false,
+  "plan": "C117NONLOCALTARGET1-C",
+  "schema": "C265-PACKET_AUDIT-CONTRACT-V1",
+  "status": "C265_C117_NONLOCAL_TARGET_EVALUATION_BLOCKED_BY_UNBOUND_CONTINUUM_CURRENT_AND_PACKET_REPRESENTATION",
+  "validation": "BOUND"
+}
