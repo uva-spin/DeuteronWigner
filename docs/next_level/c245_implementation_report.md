@@ -1,0 +1,7 @@
+# C245/HQCDRIQUARKFIXEDKV2CONTACTPARAM1 implementation report
+
+Status: C245_CALLER_PARAMETERIZED_RETAINED_ID_FREE_C80_CONTACT_KERNEL_READY
+Plan: RIQUARKFIXEDKV2CONTACTPARAM1-A
+C245 root: 924f70585dfe97dead1adacd90aad705b65c0da2cd8d61b39aace611fd8b4977
+
+Caller K_prime/b_HO parameterization closes the retained-ID dependency with exact C80 retained-overlap parity.
