@@ -1,0 +1,85 @@
+{
+  "schema": "C213-PARAMETER-AUTHORITY-LEDGER-VALIDATION-V1",
+  "artifact": "parameter_authority_ledger_validation",
+  "package_root": "367e0d7a008f64624d2d7d751e68f6688a88f3ec12f8a18b9c1da852bafe57eb",
+  "status": "C213_C212_PHYSICAL_INPUT_AUTHORITY_AUDITED_STANDARD_CAPSULES_READY_FINITE_BASIS_BINDING_INCOMPLETE",
+  "plan": "PHYSINPUT1-B",
+  "physical_record_ready": false,
+  "physical_values_selected": 0,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "parameter": "qcd_coupling",
+        "authority": "C154 PDG capsule",
+        "classification": "AUTHENTICATED_STANDARD_COORDINATE",
+        "Hamiltonian_ready": false,
+        "gap": "running/threshold and finite-basis map"
+      },
+      {
+        "parameter": "light_quark_mass",
+        "authority": "C154 PDG capsule + C155 flavor lift",
+        "classification": "AUTHENTICATED_STANDARD_COORDINATE_AND_FLAVOR_IDENTITY",
+        "Hamiltonian_ready": false,
+        "gap": "running and finite-basis map"
+      },
+      {
+        "parameter": "common_IR/regulator",
+        "authority": "C153/C157 symbolic records",
+        "classification": "CONDITIONAL_AUTHORITY",
+        "Hamiltonian_ready": false,
+        "gap": "numerical common-IR binding"
+      },
+      {
+        "parameter": "boundary/holonomy",
+        "authority": "C169-C183 symbolic capsules",
+        "classification": "CONDITIONAL_AUTHORITY",
+        "Hamiltonian_ready": false,
+        "gap": "physical selection"
+      },
+      {
+        "parameter": "basis scales K9/K11/K13",
+        "authority": "C43 fixed-regulator conventions",
+        "classification": "CONDITIONAL_RESOLUTION_AUTHORITY",
+        "Hamiltonian_ready": false,
+        "gap": "physical scale map"
+      },
+      {
+        "parameter": "counterterm coordinates",
+        "authority": "C206 14D affine family",
+        "classification": "UNSELECTED_NOT_ZERO",
+        "Hamiltonian_ready": false,
+        "gap": "physical condition selection"
+      },
+      {
+        "parameter": "target observables",
+        "authority": "C158 finite-basis coefficients; C161 binding incomplete",
+        "classification": "COMPARISON_CONDITIONAL",
+        "Hamiltonian_ready": false,
+        "gap": "authenticated target binding"
+      },
+      {
+        "parameter": "uncertainties/covariance",
+        "authority": "C154 marginal uncertainties",
+        "classification": "MARGINAL_ONLY",
+        "Hamiltonian_ready": false,
+        "gap": "joint covariance unavailable"
+      },
+      {
+        "parameter": "flavor/color/channel",
+        "authority": "C155 and C208-C212",
+        "classification": "SYMBOLIC_SCOPE_AUTHORITY",
+        "Hamiltonian_ready": false,
+        "gap": "physical record binding"
+      }
+    ],
+    "count": 9,
+    "Hamiltonian_ready_count": 0,
+    "root": "6f83827d52d7bd8481599e887942868fc03d55936416ed0812ff9d2ace691fae"
+  }
+}
