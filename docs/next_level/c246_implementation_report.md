@@ -1,0 +1,7 @@
+# C246/HQCDRIQUARKFIXEDKV2CONTACTINTERFACE1 implementation report
+
+Status: C246_ALL_FIFTEEN_INTERFACES_V2_CONTACT_APPLICABILITY_CLASSIFIED_THREE_C112_CALLER_BOUND_EVALUATORS_READY
+Plan: RIQUARKFIXEDKV2CONTACTINTERFACE1-A
+C246 root: 2e0bad67c40c786f16b2e5f622112ba240693d79756fac2749ffff548fcf72cd
+
+All 15 interfaces are classified; three C112 interfaces have caller-bound C245 evaluators and twelve noncontact interfaces are preserved as non-applicable, not zero.
