@@ -1,0 +1,67 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "physical_matching_manifest",
+  "authority_record": {
+    "root": "ef02cee78c24ffdd8ca068b129b37793aa508c0eeacfb1a3a37d6b01ff332bf1",
+    "rows": [
+      {
+        "coefficient_selected": false,
+        "direction": "I2_density_projector",
+        "equation": "F_standard,1(mu;W_i)=F_project,1(mu;W_i)",
+        "project_side": "-g_s^2/2 sum_product T_I2_density_projector[product;W,K_Q0]",
+        "project_side_available": true,
+        "residual": "R_match,1=F_standard,1-F_project,1",
+        "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+        "root": "819cf47c1d42bed59027739f9977a0263a469168d8c350c368c2695af9cd864d",
+        "standard_physical_side": null,
+        "standard_physical_side_available": false
+      },
+      {
+        "coefficient_selected": false,
+        "direction": "derivative_density",
+        "equation": "F_standard,2(mu;W_i)=F_project,2(mu;W_i)",
+        "project_side": "-g_s^2/2 sum_product T_derivative_density[product;W,K_Q0]",
+        "project_side_available": true,
+        "residual": "R_match,2=F_standard,2-F_project,2",
+        "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+        "root": "817b3e8a5ec2607838a77322e4955d66443c8801e43c0e927db0b7037f12c949",
+        "standard_physical_side": null,
+        "standard_physical_side_available": false
+      },
+      {
+        "coefficient_selected": false,
+        "direction": "CM_ground",
+        "equation": "F_standard,3(mu;W_i)=F_project,3(mu;W_i)",
+        "project_side": "-g_s^2/2 sum_product T_CM_ground[product;W,K_Q0]",
+        "project_side_available": true,
+        "residual": "R_match,3=F_standard,3-F_project,3",
+        "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+        "root": "861bf1b1f6888b2fd34c0d3cf5df5c190776efc0196c58e94cc732cd82d9a8f3",
+        "standard_physical_side": null,
+        "standard_physical_side_available": false
+      },
+      {
+        "coefficient_selected": false,
+        "direction": "triplet_projected",
+        "equation": "F_standard,4(mu;W_i)=F_project,4(mu;W_i)",
+        "project_side": "-g_s^2/2 sum_product T_triplet_projected[product;W,K_Q0]",
+        "project_side_available": true,
+        "residual": "R_match,4=F_standard,4-F_project,4",
+        "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+        "root": "3e628cf3800f28cb7149a513159bf3d31fa642c042a26e2c93a28af24049aa71",
+        "standard_physical_side": null,
+        "standard_physical_side_available": false
+      }
+    ]
+  },
+  "package_root": "26bb80bdbf2e61983e70c581f53b21a172a5d812cf44279fca3071d0f18ed20e",
+  "physical": false,
+  "plan": "C117NONLOCALTARGET2-B",
+  "schema": "C267-PHYSICAL_MATCHING-MANIFEST-V1",
+  "status": "C267_C117_PARAMETERIZED_NONLOCAL_TARGETS_READY_STANDARD_PHYSICAL_SIDE_UNAVAILABLE",
+  "validation": "BOUND"
+}

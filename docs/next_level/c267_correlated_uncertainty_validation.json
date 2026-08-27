@@ -1,0 +1,37 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "correlated_uncertainty_validation",
+  "authority_record": {
+    "K_separated": [
+      "K9_2_N8_b0.40",
+      "K11_2_N8_b0.40",
+      "K13_2_N8_b0.40"
+    ],
+    "PSD": "each supplied covariance enters as A Sigma A^T; unavailable Sigma blocks remain symbolic PSD inputs",
+    "coordinates": [
+      "(I2_density_projector:k0,Delta,sigma,p0x,p0y)",
+      "(derivative_density:k0,Delta,sigma,p0x,p0y)",
+      "(CM_ground:k0,Delta,sigma,p0x,p0y)",
+      "(triplet_projected:k0,Delta,sigma,p0x,p0y)",
+      "log(mu)",
+      "Abel_r",
+      "HO_truncation",
+      "source_scheme"
+    ],
+    "cross_blocks": "retained whenever coordinates or sources are shared; never quadrature-added twice",
+    "numerical_covariance": null,
+    "program": "C_target = J_packet Sigma_packet J_packet^T + J_scale Sigma_scale J_scale^T + J_reg Sigma_reg J_reg^T + C_HO + C_source_scheme",
+    "root": "b5ec8c364e6773eea5861ae7e59f2a586a0a9e52ca3b0db32980b302e9ec19c3",
+    "symmetry": "C=C^T by explicit block symmetrization"
+  },
+  "package_root": "26bb80bdbf2e61983e70c581f53b21a172a5d812cf44279fca3071d0f18ed20e",
+  "physical": false,
+  "plan": "C117NONLOCALTARGET2-B",
+  "schema": "C267-CORRELATED_UNCERTAINTY-VALIDATION-V1",
+  "status": "C267_C117_PARAMETERIZED_NONLOCAL_TARGETS_READY_STANDARD_PHYSICAL_SIDE_UNAVAILABLE",
+  "validation": "PASS"
+}
