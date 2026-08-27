@@ -1,0 +1,209 @@
+{
+  "schema": "C216-ADAPTER-PROGRAM-VALIDATION-V1",
+  "artifact": "adapter_program_validation",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "program_id": "C216-RI-Q-K9",
+        "resolution": "K9",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_REQUEST"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C142_SOURCE_MAP"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_C148_FULL_SPINOR_TWO_POINT"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_C149_KINETIC_PROJECTORS"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "LOAD_C150_CONDITIONAL_ZQ_FAMILY"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "LOAD_RI_SMOM_PROJECTOR"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "VALIDATE_COMMON_STATE_IR"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "LOAD_ORDER_G2_SELF_ENERGY"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "PROJECT_COMPONENTWISE"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SUBTRACT_COMMON_IR"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "FORM_ZQ_RATIO"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_UNAVAILABLE_IF_SELF_ENERGY_MISSING"
+          }
+        ],
+        "projectors": [
+          "K_MINUS",
+          "K_PLUS",
+          "K_PERP"
+        ],
+        "executable": false,
+        "terminal": "ORDER_G2_SELF_ENERGY_UNAVAILABLE",
+        "root": "95e518659d93b48cd0c0306f2a1755f44558cb84785a59afe634f56b50ea8885"
+      },
+      {
+        "program_id": "C216-RI-Q-K11",
+        "resolution": "K11",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_REQUEST"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C142_SOURCE_MAP"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_C148_FULL_SPINOR_TWO_POINT"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_C149_KINETIC_PROJECTORS"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "LOAD_C150_CONDITIONAL_ZQ_FAMILY"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "LOAD_RI_SMOM_PROJECTOR"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "VALIDATE_COMMON_STATE_IR"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "LOAD_ORDER_G2_SELF_ENERGY"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "PROJECT_COMPONENTWISE"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SUBTRACT_COMMON_IR"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "FORM_ZQ_RATIO"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_UNAVAILABLE_IF_SELF_ENERGY_MISSING"
+          }
+        ],
+        "projectors": [
+          "K_MINUS",
+          "K_PLUS",
+          "K_PERP"
+        ],
+        "executable": false,
+        "terminal": "ORDER_G2_SELF_ENERGY_UNAVAILABLE",
+        "root": "69aa70b78339959412fa00e7c43650f9919403c99bd99b7bc8e57d87bf61e6d3"
+      },
+      {
+        "program_id": "C216-RI-Q-K13",
+        "resolution": "K13",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_REQUEST"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C142_SOURCE_MAP"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_C148_FULL_SPINOR_TWO_POINT"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_C149_KINETIC_PROJECTORS"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "LOAD_C150_CONDITIONAL_ZQ_FAMILY"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "LOAD_RI_SMOM_PROJECTOR"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "VALIDATE_COMMON_STATE_IR"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "LOAD_ORDER_G2_SELF_ENERGY"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "PROJECT_COMPONENTWISE"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SUBTRACT_COMMON_IR"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "FORM_ZQ_RATIO"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_UNAVAILABLE_IF_SELF_ENERGY_MISSING"
+          }
+        ],
+        "projectors": [
+          "K_MINUS",
+          "K_PLUS",
+          "K_PERP"
+        ],
+        "executable": false,
+        "terminal": "ORDER_G2_SELF_ENERGY_UNAVAILABLE",
+        "root": "8a4beac2979b98221a486ef1368db8d612b8a61af43623c8e012dc4c90de2866"
+      }
+    ],
+    "count": 3,
+    "executable": 0,
+    "root": "97c9ce76f25b19403862d61634efeb2df824d87847b1e8e75fb8a89f4634099f"
+  }
+}

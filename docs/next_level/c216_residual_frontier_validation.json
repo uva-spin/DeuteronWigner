@@ -1,0 +1,25 @@
+{
+  "schema": "C216-RESIDUAL-FRONTIER-VALIDATION-V1",
+  "artifact": "residual_frontier_validation",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "object_id": "C168-REQUEST-1-SELF-ENERGY",
+    "exact_missing_object": "order-g_s^2 C43 quark self-energy on the authenticated RI/SMOM common-state/common-IR record",
+    "source_derivable": true,
+    "blocker": false,
+    "next": "C217/HQCDRIQUARKSELF1",
+    "preserved_later_requests": 5,
+    "root": "6f9c745be95d89dec75ac7cd5558c94d53c0c0c2ce43b6d9d9eb86eeec8a2643"
+  }
+}
