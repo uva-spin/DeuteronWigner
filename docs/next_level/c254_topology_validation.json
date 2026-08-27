@@ -1,0 +1,25 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "topology_validation",
+  "authority_record": {
+    "basis": "C45 normalized 2D-HO modes",
+    "density_completeness": "well-defined only as s_prime distribution before regulation/subtraction",
+    "dual": "s_prime polynomial-growth coefficient distributions",
+    "pairing": "sum_(n,m) T_(n,m) f_(n,m)",
+    "physical_smearing": false,
+    "root": "f2e5e503b6fda75e0477f3d88bc9e786cafc420d9a5a7faabfc6a95ac4225cb1",
+    "seminorms": "p_k(f)=sup_(n,m) (1+N)^k |f_(n,m)| for every k>=0",
+    "test_space": "s: coefficients f_(n,m) rapidly decreasing in shell N=2n+|m|"
+  },
+  "package_root": "f5aca3c76016a442fbafa7e395a55edc537706128e33f4e944baa4daad3dbf02",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CURRENTREG1-B",
+  "schema": "C254-TOPOLOGY-VALIDATION-V1",
+  "status": "C254_C45_HO_SCHWARTZ_DUAL_AND_CALLER_ABEL_REGULATOR_TOPOLOGY_READY_SUBTRACTION_COEFFICIENTS_INCOMPLETE",
+  "subtraction_coefficients": 0,
+  "topology_ready": true
+}
