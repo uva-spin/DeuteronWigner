@@ -1,0 +1,60 @@
+{
+  "authority_record": {
+    "directions": 4,
+    "nullity": 1,
+    "rank": 3,
+    "root": "dde019e80af9f174bef862402cd7bc3a76684a75d02e5c67cc53efe92ba1a118",
+    "rows": [
+      {
+        "available": "PARAMETERIZED_CHANNEL_DEFINITION",
+        "channel": "elastic deuteron EM",
+        "direction": "I2_density_projector",
+        "fourth_row": null,
+        "independent_condition": true,
+        "packet": "C266-W1",
+        "target": "packet-paired linear combination of (G_C,G_M,G_Q) through I helicity map, row 1",
+        "value": null,
+        "value_unavailable_not_zero": true
+      },
+      {
+        "available": "PARAMETERIZED_CHANNEL_DEFINITION",
+        "channel": "elastic deuteron EM",
+        "direction": "derivative_density",
+        "fourth_row": null,
+        "independent_condition": true,
+        "packet": "C266-W2",
+        "target": "packet-paired linear combination of (G_C,G_M,G_Q) through I helicity map, row 2",
+        "value": null,
+        "value_unavailable_not_zero": true
+      },
+      {
+        "available": "PARAMETERIZED_CHANNEL_DEFINITION",
+        "channel": "elastic deuteron EM",
+        "direction": "CM_ground",
+        "fourth_row": null,
+        "independent_condition": true,
+        "packet": "C266-W3",
+        "target": "packet-paired linear combination of (G_C,G_M,G_Q) through I helicity map, row 3",
+        "value": null,
+        "value_unavailable_not_zero": true
+      },
+      {
+        "available": "PARAMETERIZED_CHANNEL_DEFINITION",
+        "channel": "elastic deuteron EM",
+        "direction": "triplet_projected",
+        "fourth_row": "ANGULAR_CONDITION_DEPENDENT_DIAGNOSTIC",
+        "independent_condition": false,
+        "packet": "C266-W4",
+        "target": "packet-paired linear combination of (G_C,G_M,G_Q) through I helicity map, row 4",
+        "value": null,
+        "value_unavailable_not_zero": true
+      }
+    ]
+  },
+  "package_root": "dabbc0ddfbcfe58a84b3742f0a1999b80e8e5288370e708a8b12c3a0a6e0ed78",
+  "physical": false,
+  "plan": "C117PHYSICALCHANNEL1-C",
+  "schema": "C269-DIRECTION_TARGETS-VALIDATION-V1",
+  "status": "C269_DEUTERON_ELASTIC_EM_CHANNEL_AUTHENTICATED_RANK3_FOURTH_CHANNEL_REQUIRED",
+  "validation": "PASS"
+}
