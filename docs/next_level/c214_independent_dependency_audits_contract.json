@@ -1,0 +1,33 @@
+{
+  "schema": "C214-INDEPENDENT-DEPENDENCY-AUDITS-CONTRACT-V1",
+  "artifact": "independent_dependency_audits_contract",
+  "package_root": "da080802cc9f8d0719ed211446b661eb29b5736e746aebeccfc5a95040602b72",
+  "status": "C214_C213_PHYSICAL_INPUT_MAP_SCHEMA_READY_SIX_C43_ADAPTER_CALCULATIONS_REQUIRED",
+  "plan": "PHYSINPUTMAP1-B",
+  "physical_values": false,
+  "map_executable": false,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "audit": "forward",
+        "path": "C154\u2192C155\u2192running\u2192common-IR\u2192adapter\u2192C158 target\u2192Hamiltonian",
+        "first_missing": "running/adapter executable programs"
+      },
+      {
+        "audit": "reverse",
+        "path": "Hamiltonian slot\u2192target\u2192adapter\u2192standard capsule",
+        "first_missing": "finite-basis target and adapter executable programs"
+      }
+    ],
+    "count": 2,
+    "agree_on_calculation_frontier": true,
+    "root": "ca36f2a4a499198dc413010dbb09175e6467b509bcabc1417c66c25cf52187e6"
+  }
+}

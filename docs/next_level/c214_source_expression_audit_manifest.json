@@ -1,0 +1,53 @@
+{
+  "schema": "C214-SOURCE-EXPRESSION-AUDIT-MANIFEST-V1",
+  "artifact": "source_expression_audit_manifest",
+  "package_root": "da080802cc9f8d0719ed211446b661eb29b5736e746aebeccfc5a95040602b72",
+  "status": "C214_C213_PHYSICAL_INPUT_MAP_SCHEMA_READY_SIX_C43_ADAPTER_CALCULATIONS_REQUIRED",
+  "plan": "PHYSINPUTMAP1-B",
+  "physical_values": false,
+  "map_executable": false,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "authority": "C154",
+        "object": "physical standard coordinates",
+        "complete": true
+      },
+      {
+        "authority": "C155",
+        "object": "isosymmetric ud flavor lift",
+        "complete": true
+      },
+      {
+        "authority": "C168",
+        "object": "six calculation capsules",
+        "complete": true
+      },
+      {
+        "authority": "C169-C196",
+        "object": "C43 sectors and conditional qg proper vertex",
+        "complete": true
+      },
+      {
+        "authority": "C168/C196 boundary",
+        "object": "six executable adapter expressions",
+        "complete": false
+      },
+      {
+        "authority": "C158/C161",
+        "object": "physical finite-basis target values",
+        "complete": false
+      }
+    ],
+    "count": 6,
+    "complete": 4,
+    "root": "00644bac665b78d1eae708e79c4e7c6e76821790107ebd34b1a10c2ac7e3497f"
+  }
+}
