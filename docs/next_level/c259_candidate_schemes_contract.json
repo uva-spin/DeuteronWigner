@@ -1,0 +1,64 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "candidate_schemes_contract",
+  "authority_record": {
+    "reason": "only candidate with immediately explicit rank-four dual projector construction, nonexceptional IR-safe kinematics, mixing conversion precedent, step-scaling path, and direct finite-wavepacket adapter plan",
+    "root": "55029046efac775bdf8c70efdaa871feb4a34628eef15a42f3d7f74d86bdd048",
+    "route_reversal": "Ward, GIRS, and flow remain mandatory variants; selection changes if C260 closure or adapter test fails",
+    "rows": [
+      {
+        "IR_safety": "nonexceptional",
+        "conditioning": "EXACT_DESIGN_CONDITION_1",
+        "conversion": "RI/SMOM-to-MSbar mixing matrix then physical matching",
+        "finite_C43_adapter": true,
+        "gauge": "Landau",
+        "id": "PROJECT_C117_RI_SMOM_V1",
+        "kinematics": "Euclidean symmetric p1^2=p2^2=(p1-p2)^2=mu^2; massless active-flavor limit",
+        "mixing_closure": true,
+        "rank": 4,
+        "selected": true,
+        "step_scaling": true,
+        "targets": "tree-normalized scheme targets; not physical"
+      },
+      {
+        "conditioning": "HOLDOUT",
+        "conversion": "through RI/SMOM",
+        "gauge": "Landau",
+        "id": "PROJECT_C117_WARD_RISMOM_V1",
+        "rank": "up to four after C260 descendant audit",
+        "selected": false,
+        "targets": "exact Ward/ST rows plus dual RI/SMOM completion"
+      },
+      {
+        "conditioning": "HOLDOUT",
+        "conversion": "GIRS-to-MSbar",
+        "finite_C43_adapter": "source-faithful representation must be proved",
+        "gauge": "gauge invariant",
+        "id": "PROJECT_C117_GIRS_V1",
+        "rank": "candidate four",
+        "selected": false,
+        "targets": "short-distance coordinate-space scheme"
+      },
+      {
+        "conditioning": "HOLDOUT",
+        "conversion": "short-flow-time matching",
+        "gauge": "gauge invariant",
+        "id": "PROJECT_C117_GRADIENT_FLOW_V1",
+        "rank": "candidate four",
+        "selected": false,
+        "targets": "flowed basis and short-flow-time expansion"
+      }
+    ],
+    "selection": "PROJECT_C117_RI_SMOM_V1"
+  },
+  "package_root": "3316addcea31e845dc16f57f0e921a6409b87c2764635f261e8dff3454cd62ed",
+  "physical": false,
+  "plan": "C117RENORMDESIGN1-A",
+  "schema": "C259-CANDIDATE_SCHEMES-CONTRACT-V1",
+  "status": "C259_PROJECT_C117_RI_SMOM_V1_FULL_RANK_DESIGN_READY",
+  "validation": "BOUND"
+}
