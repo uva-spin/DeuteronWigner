@@ -1,0 +1,59 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "HO_projections": 0,
+  "Q0_Q1_Q2_modified": false,
+  "action_primitives": 3,
+  "artifact": "primitive_validation",
+  "authority_record": {
+    "HO_ready": 0,
+    "action_level_ready": 3,
+    "count": 3,
+    "root": "7ca0ca426fce713a3717ef2842c547a298f36e9a8af84047bf5280ca6ccd3a30",
+    "rows": [
+      {
+        "HO_projection": "UNAVAILABLE_NOT_ZERO",
+        "construction": "solve constrained bad fermion with authenticated inverse partial-plus then expand APBC/PBC complement modes",
+        "coupling_degree": 2,
+        "domain": "unbounded C220 complement; caller modes",
+        "missing_as_zero": false,
+        "normal_order_owner": "C112",
+        "owner": "C112",
+        "primitive_id": "C240-C112-COMPLEMENT",
+        "source_expression": "-g^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi",
+        "source_sha256": "12191f8ba66edc3195f3e73a6b9d56cab3177542a84d40a833ab95f10579770b"
+      },
+      {
+        "HO_projection": "UNAVAILABLE_NOT_ZERO",
+        "construction": "Gauss/current bilinear with authenticated PV/Q0 inverse derivative and complement mode expansion",
+        "coupling_degree": 2,
+        "domain": "unbounded C220 complement; caller modes",
+        "missing_as_zero": false,
+        "normal_order_owner": "C127",
+        "owner": "C127",
+        "primitive_id": "C240-C127-COMPLEMENT",
+        "source_expression": "-g^2/2 [(i partial_-)^-1 j_a^+]^2",
+        "source_sha256": "e11ad65162e5c02af7e949dfbb290051c7687fb2f6ffe8dfd39ef7dcc926e49d"
+      },
+      {
+        "HO_projection": "UNAVAILABLE_NOT_ZERO",
+        "construction": "C43 source order followed by C129 vacuum contraction ownership on complement PBC modes",
+        "coupling_degree": 2,
+        "domain": "unbounded C220 complement; caller modes",
+        "missing_as_zero": false,
+        "normal_order_owner": "C129",
+        "owner": "C129",
+        "primitive_id": "C240-C129-COMPLEMENT",
+        "source_expression": "normal-ordered contractions/descendants of authenticated pure-gluon interaction terms",
+        "source_sha256": "e37622140f086632dca8bc8a4a2c3d0e2b1166ed19a1a9ad283e4f569300b306"
+      }
+    ]
+  },
+  "package_root": "69d87133c08322c12ccfd45bce19fdd7b99e24506f7d0f9f7dcb9047c55de56a",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2PRIM1-D",
+  "schema": "C240-PRIMITIVE-VALIDATION-V1",
+  "status": "C240_THREE_SOURCE_DERIVED_ACTION_LEVEL_COMPLEMENT_V2_PRIMITIVES_READY_TRANSVERSE_HO_PROJECTIONS_INCOMPLETE"
+}

@@ -1,0 +1,8 @@
+# C240/HQCDRIQUARKFIXEDKV2PRIM1 implementation report
+
+Status: C240_THREE_SOURCE_DERIVED_ACTION_LEVEL_COMPLEMENT_V2_PRIMITIVES_READY_TRANSVERSE_HO_PROJECTIONS_INCOMPLETE
+Plan: RIQUARKFIXEDKV2PRIM1-D
+Baseline: 20362a6ca7cd43951f6fa47ac673dc32a208ac1b
+C240 root: 69d87133c08322c12ccfd45bce19fdd7b99e24506f7d0f9f7dcb9047c55de56a
+
+C240 publishes three source-hashed action-level complement V2 primitive families. Exact transverse-HO projections remain C241.
