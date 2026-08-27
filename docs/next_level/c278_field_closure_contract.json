@@ -1,0 +1,50 @@
+{
+  "authority_record": {
+    "classes": 7,
+    "numerically_closed": 0,
+    "root": "f723e4ad161317923bab77193113a19c2b04d7b331e9a78a4cd6b550a791be38",
+    "rows": [
+      {
+        "authority": "C164 RI/SMOM symmetric nonexceptional definition",
+        "fields": "p_in,p_out,virtuality_mu2",
+        "status": "SYMBOLIC_GEOMETRY_CLOSED"
+      },
+      {
+        "authority": "C157 numerical common-IR schema",
+        "fields": "rho,mu,common_ir_id",
+        "status": "NUMERICAL_AUTHORITY_MISSING"
+      },
+      {
+        "authority": "C153/C164/C183",
+        "fields": "C43_gauge,target_gauge,PV_Q0",
+        "status": "CALLER_BRANCH_BOUND"
+      },
+      {
+        "authority": "C172-C183",
+        "fields": "boundary,residual_link,holonomy",
+        "status": "SCHEMA_CLOSED_PHYSICAL_SELECTION_OPEN"
+      },
+      {
+        "authority": "C154-C155",
+        "fields": "active_Nf,external_flavor",
+        "status": "SEPARATE_CALLER_COORDINATES"
+      },
+      {
+        "authority": "C148-C150",
+        "fields": "signed_mass,mass_squared",
+        "status": "SIGNED_LINEAR_AND_INDEPENDENT_M2"
+      },
+      {
+        "authority": "C142-C150",
+        "fields": "source_sink_order,units",
+        "status": "CLOSED"
+      }
+    ]
+  },
+  "package_root": "61406fb610302b90150db398ab2d57c15acc4d0cfcab27c1305e5f56c32585ef",
+  "physical": false,
+  "plan": "RIMASSSTATE1-B",
+  "schema": "C278-FIELD_CLOSURE-CONTRACT-V1",
+  "status": "C278_MAXIMAL_SYMBOLIC_RI_SMOM_MASS_STATE_FAMILY_READY_NUMERICAL_COMMON_IR_AUTHORITY_MISSING",
+  "validation": "BOUND"
+}
