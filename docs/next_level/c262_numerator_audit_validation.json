@@ -1,0 +1,62 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "numerator_audit_validation",
+  "authority_record": {
+    "executable": 0,
+    "finding": "C261 numerator field is a prose schema, not an algebraic expression; integration cannot start",
+    "required": 4,
+    "root": "47797d63a34fffe51f684ed892a294b6477a45d7bea6d467087f0e145cde15db",
+    "rows": [
+      {
+        "D_dimensional_vertex": "UNAVAILABLE_NOT_ZERO",
+        "Dirac_helicity_tensor": "PROSE_ONLY",
+        "color_tensor": "PROSE_ONLY",
+        "compiler_executable": false,
+        "continuum_preimage": "NAMED_NOT_DEFINED",
+        "direction": "I2_density_projector",
+        "finite_basis_operator": "AVAILABLE_C117",
+        "momentum_routing_action": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "D_dimensional_vertex": "UNAVAILABLE_NOT_ZERO",
+        "Dirac_helicity_tensor": "PROSE_ONLY",
+        "color_tensor": "PROSE_ONLY",
+        "compiler_executable": false,
+        "continuum_preimage": "NAMED_NOT_DEFINED",
+        "direction": "derivative_density",
+        "finite_basis_operator": "AVAILABLE_C117",
+        "momentum_routing_action": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "D_dimensional_vertex": "UNAVAILABLE_NOT_ZERO",
+        "Dirac_helicity_tensor": "PROSE_ONLY",
+        "color_tensor": "PROSE_ONLY",
+        "compiler_executable": false,
+        "continuum_preimage": "NAMED_NOT_DEFINED",
+        "direction": "CM_ground",
+        "finite_basis_operator": "AVAILABLE_C117",
+        "momentum_routing_action": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "D_dimensional_vertex": "UNAVAILABLE_NOT_ZERO",
+        "Dirac_helicity_tensor": "PROSE_ONLY",
+        "color_tensor": "PROSE_ONLY",
+        "compiler_executable": false,
+        "continuum_preimage": "NAMED_NOT_DEFINED",
+        "direction": "triplet_projected",
+        "finite_basis_operator": "AVAILABLE_C117",
+        "momentum_routing_action": "UNAVAILABLE_NOT_ZERO"
+      }
+    ]
+  },
+  "package_root": "dd716daecc47170e2b380b0dd51751fe400fd7c28ee50bc90073edcef0079079",
+  "physical": false,
+  "plan": "C117CONTLOOP1-D",
+  "schema": "C262-NUMERATOR_AUDIT-VALIDATION-V1",
+  "status": "C262_C117_CONTINUUM_LOOP_BLOCKED_BY_NONEXECUTABLE_OPERATOR_AND_NUISANCE_TENSORS_CONTINUATION_READY",
+  "validation": "PASS"
+}

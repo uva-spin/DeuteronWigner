@@ -1,0 +1,70 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "nuisance_audit_manifest",
+  "authority_record": {
+    "closed": 0,
+    "mixing_matrix_lawful": false,
+    "required": 4,
+    "root": "18984ad126f4f08cf1fe7944ca04019847232aec3740421b5c7b54d7e8098010",
+    "rows": [
+      {
+        "BRST_expression": null,
+        "BRST_symbol": "N_C117_1[Landau]",
+        "D_tensor": null,
+        "EOM_expression": null,
+        "EOM_symbol": "G_C117_1[off-shell]",
+        "closed": false,
+        "direction": "I2_density_projector",
+        "evanescent_symbol": "E_C117_1",
+        "finite_subtraction": null,
+        "four_dimensional_projection": null
+      },
+      {
+        "BRST_expression": null,
+        "BRST_symbol": "N_C117_2[Landau]",
+        "D_tensor": null,
+        "EOM_expression": null,
+        "EOM_symbol": "G_C117_2[off-shell]",
+        "closed": false,
+        "direction": "derivative_density",
+        "evanescent_symbol": "E_C117_2",
+        "finite_subtraction": null,
+        "four_dimensional_projection": null
+      },
+      {
+        "BRST_expression": null,
+        "BRST_symbol": "N_C117_3[Landau]",
+        "D_tensor": null,
+        "EOM_expression": null,
+        "EOM_symbol": "G_C117_3[off-shell]",
+        "closed": false,
+        "direction": "CM_ground",
+        "evanescent_symbol": "E_C117_3",
+        "finite_subtraction": null,
+        "four_dimensional_projection": null
+      },
+      {
+        "BRST_expression": null,
+        "BRST_symbol": "N_C117_4[Landau]",
+        "D_tensor": null,
+        "EOM_expression": null,
+        "EOM_symbol": "G_C117_4[off-shell]",
+        "closed": false,
+        "direction": "triplet_projected",
+        "evanescent_symbol": "E_C117_4",
+        "finite_subtraction": null,
+        "four_dimensional_projection": null
+      }
+    ]
+  },
+  "package_root": "dd716daecc47170e2b380b0dd51751fe400fd7c28ee50bc90073edcef0079079",
+  "physical": false,
+  "plan": "C117CONTLOOP1-D",
+  "schema": "C262-NUISANCE_AUDIT-MANIFEST-V1",
+  "status": "C262_C117_CONTINUUM_LOOP_BLOCKED_BY_NONEXECUTABLE_OPERATOR_AND_NUISANCE_TENSORS_CONTINUATION_READY",
+  "validation": "BOUND"
+}

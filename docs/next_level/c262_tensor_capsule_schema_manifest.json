@@ -1,0 +1,47 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "tensor_capsule_schema_manifest",
+  "authority_record": {
+    "all_four_required": true,
+    "directions": [
+      "I2_density_projector",
+      "derivative_density",
+      "CM_ground",
+      "triplet_projected"
+    ],
+    "required": [
+      "operator_id",
+      "direction",
+      "D",
+      "fields",
+      "incoming_legs",
+      "outgoing_legs",
+      "momentum_conservation",
+      "vertex_expression",
+      "Dirac_helicity_tensor",
+      "ordered_color_tensor",
+      "derivative_placement",
+      "normalization",
+      "coupling_order",
+      "Hermitian_partner",
+      "EOM_partners",
+      "BRST_exact_partners",
+      "evanescent_definition",
+      "Pi4_projection",
+      "projector_expression",
+      "source_roots"
+    ],
+    "root": "fb429ed04f9529f28c12bb5c3dadfa45c286ef11c25b712c6c530030ec3d2672",
+    "schema": "C263-C117-CONTINUUM-TENSOR-CAPSULE-V1"
+  },
+  "package_root": "dd716daecc47170e2b380b0dd51751fe400fd7c28ee50bc90073edcef0079079",
+  "physical": false,
+  "plan": "C117CONTLOOP1-D",
+  "schema": "C262-TENSOR_CAPSULE_SCHEMA-MANIFEST-V1",
+  "status": "C262_C117_CONTINUUM_LOOP_BLOCKED_BY_NONEXECUTABLE_OPERATOR_AND_NUISANCE_TENSORS_CONTINUATION_READY",
+  "validation": "BOUND"
+}
