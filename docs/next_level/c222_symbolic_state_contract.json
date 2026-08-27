@@ -1,0 +1,34 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "symbolic_state_contract",
+  "authority_record": {
+    "K_prime": "sum(k_i), positive symbolic",
+    "cardinality": "UNBOUNDED",
+    "domain_predicate": "sum(k_i) != retained K",
+    "finite_rank_unrank": false,
+    "labels": [
+      "sector",
+      "particle species",
+      "k_i APBC/PBC",
+      "n_i",
+      "m_i",
+      "helicity_i",
+      "color_i",
+      "orientation"
+    ],
+    "root": "c3d9c376dc32446d2b01f6fb6d4affadbc9f8280d06e64a0e56079b0ddc4250b",
+    "schema": "C222-OMITTED-FREE-STATE-V1"
+  },
+  "free_operator_complete": false,
+  "missing_zeroed": 0,
+  "package_root": "92e32bdc9f8dca056fd82d52635818860ec5b28ca11209478975979ff80e1ea6",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKFREE1-E",
+  "retained_indices_reused": 0,
+  "schema": "C222-SYMBOLIC-STATE-CONTRACT-V1",
+  "status": "C222_C221_OMITTED_FREE_OPERATOR_SYMBOLIC_LONGITUDINAL_MASS_SCHEMA_READY_TRANSVERSE_CM_KERNEL_INCOMPLETE"
+}
