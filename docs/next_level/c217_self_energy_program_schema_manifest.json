@@ -1,0 +1,39 @@
+{
+  "schema": "C217-SELF-ENERGY-PROGRAM-SCHEMA-MANIFEST-V1",
+  "artifact": "self_energy_program_schema_manifest",
+  "package_root": "ae377d185e0ca6e4ecce0c9386d3ca147ba4b3dc089904fe4dd992c671696827",
+  "status": "C217_C216_RETAINED_DOMAIN_ORDER_G2_QUARK_SELF_ENERGY_EXECUTABLE_OMITTED_INTERFACE_REMAINDER_INCOMPLETE",
+  "plan": "RIQUARKSELF1-B",
+  "physical": false,
+  "retained_executable": true,
+  "full_executable": false,
+  "omitted_interfaces": 120,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_RI_SMOM_ORDER_G2_SELF_ENERGY_PROGRAM_V1",
+    "safe_opcodes": [
+      "VALIDATE_C216_COMMON_STATE",
+      "VALIDATE_C144_PARAMETER_RECORD",
+      "VALIDATE_SPECTRAL_QUERY",
+      "LOAD_C145_ORDER_G2_SELF_ENERGY",
+      "LOAD_DIRECT_DEGREE_TWO_ROUTE",
+      "CHECK_MATRIX_FREE_ROUTE",
+      "CHECK_HERMITICITY",
+      "APPLY_K_MINUS",
+      "APPLY_K_PLUS",
+      "APPLY_K_PERP",
+      "ATTACH_OMITTED_INTERFACE_REMAINDER",
+      "RETURN_CONDITIONAL_SELF_ENERGY"
+    ],
+    "eval": false,
+    "pickle": false,
+    "callbacks": false,
+    "root": "32730889c3c4091974901c6542c7c9a4001ec89799b6638c8e18c41009d8c981"
+  }
+}

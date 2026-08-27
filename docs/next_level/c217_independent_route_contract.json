@@ -1,0 +1,52 @@
+{
+  "schema": "C217-INDEPENDENT-ROUTE-CONTRACT-V1",
+  "artifact": "independent_route_contract",
+  "package_root": "ae377d185e0ca6e4ecce0c9386d3ca147ba4b3dc089904fe4dd992c671696827",
+  "status": "C217_C216_RETAINED_DOMAIN_ORDER_G2_QUARK_SELF_ENERGY_EXECUTABLE_OMITTED_INTERFACE_REMAINDER_INCOMPLETE",
+  "plan": "RIQUARKSELF1-B",
+  "physical": false,
+  "retained_executable": true,
+  "full_executable": false,
+  "omitted_interfaces": 120,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "resolution": "K9",
+        "route_A": "C145 block degree expansion",
+        "route_B": "C144 derivative extraction/direct degree-two",
+        "route_C": "matrix-free certified holdout",
+        "retained_mismatches": 0,
+        "full_route_agreement": false,
+        "reason": "omitted interfaces excluded"
+      },
+      {
+        "resolution": "K11",
+        "route_A": "C145 block degree expansion",
+        "route_B": "C144 derivative extraction/direct degree-two",
+        "route_C": "matrix-free certified holdout",
+        "retained_mismatches": 0,
+        "full_route_agreement": false,
+        "reason": "omitted interfaces excluded"
+      },
+      {
+        "resolution": "K13",
+        "route_A": "C145 block degree expansion",
+        "route_B": "C144 derivative extraction/direct degree-two",
+        "route_C": "matrix-free certified holdout",
+        "retained_mismatches": 0,
+        "full_route_agreement": false,
+        "reason": "omitted interfaces excluded"
+      }
+    ],
+    "count": 3,
+    "retained_agreement": true,
+    "root": "c9130d8550803f436f331350fe79ae31e08e3f3959ede39a73f5dac217ce508f"
+  }
+}
