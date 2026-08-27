@@ -1,0 +1,36 @@
+{
+  "authority_record": {
+    "M0": "m0,2+m0,4+m0,7",
+    "count": 3,
+    "domain": "u,v in [0,1]",
+    "root": "28f0f0147ad218bd3325d92249a9d0fed971cb5cf27c444ed78b345165da9eee",
+    "rows": [
+      {
+        "indices": "k,m half-integers >=1/2",
+        "kernel": "(k+m)^-2 (k-m-2 zeta_r)^2/[(m+zeta_r)(k-zeta_r)]",
+        "roots": "r=2,4,7",
+        "term": "S1"
+      },
+      {
+        "indices": "m>=1/2, k>=m+1",
+        "kernel": "(k-m)^-1 paired +/- zeta rational kernel",
+        "roots": "r=2,4,7",
+        "term": "S2"
+      },
+      {
+        "indices": "m,n half-integers >=1/2",
+        "kernel": "paired cyclic zeta2,zeta4,zeta7 rational kernels with M0",
+        "roots": "three cyclic permutations",
+        "term": "S3"
+      }
+    ],
+    "source_lines": "599-627",
+    "zeta": "zeta(x)=x-m0(x), periodic odd, |zeta|<1/2"
+  },
+  "package_root": "56d663455a989e534f9a2072bfc46dd840a0bbc886b77478a6387ce70a5ca300",
+  "physical": false,
+  "plan": "RIMASSV0PROJECT1-C",
+  "schema": "C303-SOURCE_AST-MANIFEST-V1",
+  "status": "C303_EXACT_V0_SUM_AST_AND_VECTOR_MESH_AXES_READY_VISIBILITY_RECONSTRUCTION_PROJECTION_MISSING",
+  "validation": "BOUND"
+}
