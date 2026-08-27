@@ -33,6 +33,9 @@ def load_verified_hqcd_riquarkfixedkv2contactkernel1_authority():
  m=json.loads((RUNTIME/"manifest.json").read_text())
  if (m.get("package_root"),m.get("status"),m.get("allow_pickle"))!=(PACKAGE_ROOT,STATUS,False):raise ValueError("runtime")
  return verify_hqcd_riquarkfixedkv2contactkernel1_authority()
+def load_verified_hqcdriquarkfixedkv2contactkernel1_authority():
+ """Compatibility spelling consumed by the frozen C245 public loader."""
+ return load_verified_hqcd_riquarkfixedkv2contactkernel1_authority()
 _ROOTS={"INPUT":_r((BASELINE,C243_ROOT)),"AUDIT":dependency_audit()["root"],"ROUTES":route_certificate()["root"],"RESIDUAL":residual_frontier()["root"],"RELEASE":release_manifest()["root"],"NEXT":next_handoff_contract()["root"],"SCOPE":static_isolation_guard()["root"],"COMPLETE":completeness_certificate()["root"]}
 PACKAGE_ROOT=_r({"schema":"C244-HQCDRIQUARKFIXEDKV2CONTACTKERNEL1-V1","baseline":BASELINE,"status":STATUS,"plan":PLAN,"roots":_ROOTS});ROOTS={**_ROOTS,"PACKAGE_ROOT":PACKAGE_ROOT}
 __all__=[n for n in globals() if not n.startswith("_")]
