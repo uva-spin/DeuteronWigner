@@ -1,0 +1,25 @@
+{
+  "authority_record": {
+    "channel": "inclusive charged-lepton DIS on tensor-polarized deuteron",
+    "current": "electromagnetic hadron tensor W_munu from two currents",
+    "independent_of_elastic_form_factors": true,
+    "kinematics": "spacelike DIS; x=Q2/(2 M_N nu), Q2>0",
+    "measurement_source": "hep-ex/0506018",
+    "normalization": "HERMES tensor asymmetry/structure-function convention; project x differs from x_D and is recorded",
+    "observable": "b1(x,Q2)",
+    "physical": true,
+    "reason": "inelastic tensor-polarized hadron-tensor structure function, not an elastic spin-one current form factor",
+    "repository_source": [
+      "1702.05337",
+      "d84a8673f834823f619b632e7f7ffbd203130cf6ca7034aa9f606e79ff1c4923"
+    ],
+    "root": "a10e6ae628679444fe3336755818f46c1a0eabc3ebdbd2cde0a9826c866413a0",
+    "state": "spin-1 deuteron tensor polarization with negligible/vector component separated"
+  },
+  "package_root": "69675d52d7c2aa6ac9a88c4ce175cfce6a92d646b52aaedf9644101296119e4d",
+  "physical": false,
+  "plan": "C117FOURTHCHANNEL1-B",
+  "schema": "C270-CANDIDATE_CHANNEL-CONTRACT-V1",
+  "status": "C270_TENSOR_DIS_B1_CHANNEL_AUTHENTICATED_C117_ADAPTER_INCOMPLETE",
+  "validation": "BOUND"
+}
