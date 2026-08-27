@@ -1,0 +1,50 @@
+{
+  "authority_record": {
+    "hash_locked": true,
+    "root": "0ab1aff02746a49a54336b2875adf5de9026b754b73de4f07ff09180ba0990bb",
+    "rows": [
+      {
+        "SU3_action": false,
+        "archive_sha256": "6137dded7c5b0f7c8cc82f442c60d4b8ca3f3f59f116d0ec7196033b615c7f5f",
+        "locators": [
+          "lines 785-1116 gauge proper/global zero modes",
+          "lines 1123-1349 dynamical zero modes"
+        ],
+        "member": "08Vacuu.tex",
+        "normalized_measure": false,
+        "provides": "finite-volume LF gauge zero-mode structure; SU2 example",
+        "source_id": "BPP"
+      },
+      {
+        "SU3_action": false,
+        "archive_sha256": "eaacb73ccee21312843e73a99a7cf63969d0c2252f96fe0b2612f5d07c181675",
+        "locators": [
+          "lines 2170-2513 finite-volume quantization",
+          "lines 2395-2406 zero-mode limitation"
+        ],
+        "member": "lecture.tex",
+        "normalized_measure": false,
+        "provides": "generic finite-volume and zero-mode audit",
+        "source_id": "HEINZL"
+      },
+      {
+        "SU3_action": false,
+        "archive_sha256": "dcce7d3f8661991b6dd9f11a4bff09a4e244d51f3b7ea9d1dfb600ccb1da0c88",
+        "locators": [
+          "canonical action Eqs.1,5-9,24-25"
+        ],
+        "member": "prd8711rsa.tex",
+        "normalized_measure": false,
+        "provides": "bulk LF QCD action",
+        "source_id": "SB"
+      }
+    ],
+    "source_complete": false
+  },
+  "package_root": "1b53eb5b6d6fdcaf284cd2081eb589a300adfaff74b32e4bed240c12d8f317cd",
+  "physical": false,
+  "plan": "RIMASSBOUNDARYACTIONSOURCE1-B",
+  "schema": "C292-SOURCE_AUDIT-CONTRACT-V1",
+  "status": "C292_HASH_LOCKED_FINITE_VOLUME_ZERO_MODE_SOURCES_PARTIAL_SU3_HOLONOMY_ACTION_MEASURE_SOURCE_MISSING",
+  "validation": "BOUND"
+}
