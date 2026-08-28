@@ -1,0 +1,18 @@
+{
+  "package_root": "38ebff2eb4015c2073f2533e3cfbcad58b29f278e61ee65bd8d9a3ecbd14b11c",
+  "physical": false,
+  "plan": "RIMASSC43JMYCUTTOPO1-C",
+  "record": {
+    "active_quark": "uncut propagator q^2-m^2+i0",
+    "active_virtuality": "q^2-m^2=-[kT^2+x lambda^2+(1-x)^2 m^2]/(1-x)",
+    "cuts": "CutPlus(ell^2-lambda^2) only",
+    "jacobian": "1/[2(1-x)p.plus]",
+    "loop_label": "ell=emitted gluon; q=p-ell enters bilocal",
+    "measurement": "q.plus=x*p.plus, qT=kT; ell.plus=(1-x)p.plus, ellT=-kT",
+    "root": "a9f080487c4708e1ccfe7142817b8de4dff85e56e4865e0a9c34a6c43a96a4df",
+    "solved_delta": "ell.minus=(kT^2+lambda^2)/(2(1-x)p.plus)",
+    "support": "0<x<1; endpoint distribution at x=1"
+  },
+  "status": "C362_SOURCE_CORRECT_SINGLE_GLON_CUT_TOPOLOGY_BOUND_C361_EXTRA_CUT_REJECTED_TRACE_REDUCTION_REOPENED",
+  "validation": "PASS"
+}
