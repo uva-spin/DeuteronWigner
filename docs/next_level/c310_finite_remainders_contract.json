@@ -1,0 +1,47 @@
+{
+  "authority_record": {
+    "CHI8": {
+      "epsilon_03": [
+        -448.18,
+        -447.73
+      ],
+      "epsilon_05": [
+        -443.31,
+        -442.9
+      ],
+      "epsilon_08": [
+        -438.91,
+        -438.53
+      ]
+    },
+    "RE_TF3": {
+      "epsilon_03": [
+        145.92,
+        146.25
+      ],
+      "epsilon_05": [
+        144.27,
+        144.56
+      ],
+      "epsilon_08": [
+        142.78,
+        143.05
+      ]
+    },
+    "epsilon_extrapolated": false,
+    "fixed_epsilon_only": true,
+    "outward": true,
+    "root": "8b7450d7195b9af1f0ab1c5bb7770b3933e95957b12565e7d80ba9f023bd6979",
+    "subtraction_owners": {
+      "CHI8": "C310 CHI8 log tail",
+      "RE_TF3": "C310 RE_TF3 log tail",
+      "center": "C308 additive constant only"
+    }
+  },
+  "package_root": "b553660e9822e8af80b885a4e236eccbfc544ee45dbdec6d8c13107d8c4be499",
+  "physical": false,
+  "plan": "RIMASSSHAPETAIL1-B",
+  "schema": "C310-FINITE_REMAINDERS-CONTRACT-V1",
+  "status": "C310_SHAPE_LOG_TAILS_SEPARATELY_SUBTRACTED_FIXED_EPSILON_REMAINDERS_ENCLOSED_EPSILON_LIMIT_MISSING",
+  "validation": "BOUND"
+}
