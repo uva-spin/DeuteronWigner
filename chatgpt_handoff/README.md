@@ -20,6 +20,16 @@ Expected SHA-256:
 9f807d32be336e5ce68fbfef5d5add9a2bc63675a70de6df55ba8c8fad80df9e
 ```
 
+For a one-command, temporary-file-only verification (including ZIP
+integrity), run:
+
+```bash
+./verify_handoff.sh
+```
+
+The verifier requires all six expected parts, checks their documented
+SHA-256, tests the assembled ZIP, and removes its temporary output on exit.
+
 The reconstructed ZIP is about 244 MiB and contains the current project
 source, tests, scripts, references, handoff materials, validation evidence,
 tracked data/output, the frozen Q0/Q1 backend worktrees, and MSHT20 metadata.
