@@ -1,0 +1,23 @@
+{
+  "package_root": "e0a8d3ae0c9e256f04a28995d8e7747b95969604cc165ffd48190a16fb35e2e3",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMECONVERT1-C",
+  "record": {
+    "available": "SYMBOLIC_TYPED",
+    "axes": [
+      "L",
+      "K",
+      "Nmax",
+      "bHO",
+      "zero_mode_sector"
+    ],
+    "ensemble": "sum_e w_e M_vol[e] with normalized source-qualified weights",
+    "formula": "lim_{declared trajectory} R_scheme(mu,zeta) [Gamma_C43(L,K,Nmax,bHO,Z0)-Gamma_vac]",
+    "limit_order": "independent-axis checks, renormalize, then joint trajectory and JMY large-length/lightlike limit",
+    "numeric_trajectory": false,
+    "root": "d0a2ef1ec9cf795ffbcde5d91987992ae01fd9b42fee9f7552bffedbe2c2c178",
+    "signature": "M_vol[L,K,Nmax,bHO,Z0;mu,zeta]"
+  },
+  "status": "C347_SYMBOLIC_SCHEME_VOLUME_CONVERSION_OPERATOR_DERIVED_FINITE_KERNEL_COEFFICIENTS_MISSING",
+  "validation": "BOUND"
+}
