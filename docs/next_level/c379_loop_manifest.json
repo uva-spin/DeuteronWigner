@@ -1,0 +1,44 @@
+{
+  "package_root": "5a124225b302d8fcffbcdbf799bb19d0e6c2842d0658cbc17453f966e02902ca",
+  "physical": false,
+  "plan": "RIMASSC43JMYPARAMREDUCE3-C",
+  "record": {
+    "count": 4,
+    "gaussian": "integral d^dL exp[i*T*L2] with T>0 and inherited i0",
+    "projective": "t_i=T0*u_i; u_i>=0,sum u_i=1; Jacobian T0^(n-1)",
+    "regions": "UV T0->0; IR T0->infinity; analytic endpoints u_eikonal->0 separate",
+    "root": "d9161cfa4b073920dbf6aa10163adf41949aa89e1b0b5187066ce91f73084e86",
+    "rows": [
+      {
+        "Delta": "0 for p2=0",
+        "family": "Sigma",
+        "parameters": "t,u>0; T=t+u",
+        "shift": "ell -> L+(u*p)/T",
+        "weight": "t^(A-1)u^(B-1)/[Gamma(A)Gamma(B)]"
+      },
+      {
+        "Delta": "u*s*(p.v)/T-s^2*v2/(4T)",
+        "family": "V_qv",
+        "parameters": "t,u,s>0; T=t+u",
+        "shift": "ell -> L+(u*p-s*v/2)/T",
+        "weight": "t^(A-1)u^(B-1)s^(alpha)/[Gamma(A)Gamma(B)Gamma(1+alpha)]"
+      },
+      {
+        "Delta": "-(s1+s2)^2*v2/(4t)",
+        "family": "W_v",
+        "parameters": "t,s1,s2>0",
+        "shift": "ell -> L-(s1+s2)*v/(2t)",
+        "weight": "t^(A-1)*(s1*s2)^alpha/Gamma(1+alpha)^2; contour signs retained"
+      },
+      {
+        "Delta": "Cross(Delta)",
+        "family": "crossed",
+        "parameters": "alpha->beta; v->tildev",
+        "shift": "Cross(V_qv,W_v)",
+        "weight": "nu2 powers and reversed ordered i0"
+      }
+    ]
+  },
+  "status": "C379_EXPLICIT_REAL_LOOP_SOFT_PARAMETER_POLYNOMIALS_DERIVED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "BOUND"
+}

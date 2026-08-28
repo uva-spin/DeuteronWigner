@@ -1,0 +1,48 @@
+{
+  "package_root": "5a124225b302d8fcffbcdbf799bb19d0e6c2842d0658cbc17453f966e02902ca",
+  "physical": false,
+  "plan": "RIMASSC43JMYPARAMREDUCE3-C",
+  "record": {
+    "count": 4,
+    "distribution": "plus acts as integral [phi(x)-phi(1)] kernel; delta acts as phi(1)",
+    "domain": "0<x<1; kT2>=0",
+    "radial_measure": "mu^(2epsilon) Omega_(1-2epsilon)/[2(2pi)^(2-2epsilon)]*(kT2)^(-epsilon)d(kT2)",
+    "root": "6567650d35bef7bbed67914819ec39e9a425cbfa066ce4a14e6446984dc9e4a4",
+    "rows": [
+      {
+        "Dq": "-kT2/(1-x)",
+        "Dv": null,
+        "jacobian": "1/[2*(1-x)*p_plus]",
+        "kernel": "Nqq/(Dq^2)*J",
+        "numerator": "4*(1-epsilon)*p_plus*kT2",
+        "term": "DR.qq"
+      },
+      {
+        "Dq": "-kT2/(1-x)",
+        "Dv": "(1-x)*p_plus*v_minus+kT2*v_plus/[2*(1-x)*p_plus]+i0",
+        "jacobian": "1/[2*(1-x)*p_plus]",
+        "kernel": "2*Nqv/(Dq*Dv^(1+alpha))*J",
+        "numerator": "8*x*p_plus^2*v_minus",
+        "term": "DR.qv"
+      },
+      {
+        "Dq": null,
+        "Dv": "(1-x)*p_plus*v_minus+kT2*v_plus/[2*(1-x)*p_plus]+i0",
+        "jacobian": "1/[2*(1-x)*p_plus]",
+        "kernel": "-Nvv/Dv^(2+2alpha)*J",
+        "numerator": "2*p_plus*v2",
+        "term": "DR.vv"
+      },
+      {
+        "Dq": "crossed",
+        "Dv": "Dtildev with -i0",
+        "jacobian": "z^(-2+2epsilon)*crossed J",
+        "kernel": "crossed DR kernel",
+        "numerator": "CrossPlusMinus(DR.*)",
+        "term": "FR.*"
+      }
+    ]
+  },
+  "status": "C379_EXPLICIT_REAL_LOOP_SOFT_PARAMETER_POLYNOMIALS_DERIVED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "PASS"
+}
