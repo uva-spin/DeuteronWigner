@@ -1,0 +1,103 @@
+{
+  "package_root": "89dcf27d960d56e011c8ce06d9b2317804c4411c7980708b1fcc43fc6ecfa417",
+  "plan": "PHYSICALCONDACQPHASE1-B",
+  "record": {
+    "families": 7,
+    "physical_targets_acquired": 0,
+    "root": "2bcc48be257846234f3ba8dc69e913041e67c34a1efa8e1f455845e075f8694e",
+    "rows": [
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "mass_state",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C149 signed projectors",
+          "C150 conditional Zq/mass scheme"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      },
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "normalization_phase",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C147 coordinate field normalization",
+          "C149 state projectors"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      },
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "Ward_current",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C206 ST-compatible affine family",
+          "C212 source-side MOMq closure"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      },
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "gluon_one_body",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C151 gluon projector/source",
+          "C206 affine counterterms"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      },
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "sector",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C152 amputated qg vertex",
+          "C153 componentwise matching"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      },
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "boundary_truncation",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C153 finite-basis matching",
+          "C205 global stabilizer identity"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      },
+      {
+        "covariance": null,
+        "equation_structure": "SOURCE_DERIVED_CONDITIONAL",
+        "family": "C117_sensitive",
+        "physical_target": null,
+        "promoted_fixture": false,
+        "resolution_compatible": true,
+        "structure_owners": [
+          "C206 14D affine family"
+        ],
+        "target_status": "MISSING_NOT_ZERO"
+      }
+    ],
+    "structures_acquired": 7
+  },
+  "status": "C398_SOURCE_DERIVED_CONDITION_STRUCTURES_ACQUIRED_PHYSICAL_TARGET_CAPSULES_MISSING"
+}

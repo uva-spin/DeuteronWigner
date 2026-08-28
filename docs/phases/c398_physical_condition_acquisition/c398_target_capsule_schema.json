@@ -1,0 +1,40 @@
+{
+  "package_root": "89dcf27d960d56e011c8ce06d9b2317804c4411c7980708b1fcc43fc6ecfa417",
+  "plan": "PHYSICALCONDACQPHASE1-B",
+  "record": {
+    "families": [
+      "mass_state",
+      "normalization_phase",
+      "Ward_current",
+      "gluon_one_body",
+      "sector",
+      "boundary_truncation",
+      "C117_sensitive"
+    ],
+    "no_default": true,
+    "required": [
+      "capsule_id",
+      "family",
+      "resolution",
+      "value_or_interval",
+      "units",
+      "scheme",
+      "scale_or_kinematics",
+      "state_identity",
+      "source_locator",
+      "source_sha256",
+      "normalization",
+      "covariance_or_bound",
+      "signature",
+      "no_default"
+    ],
+    "resolutions": [
+      "K9",
+      "K11",
+      "K13"
+    ],
+    "root": "35741a0494c1bee03fba2338606d62921c9f945af4d191b0cbccaa19a338e7bf",
+    "schema": "C398-PHYSICAL-TARGET-CAPSULE-V1"
+  },
+  "status": "C398_SOURCE_DERIVED_CONDITION_STRUCTURES_ACQUIRED_PHYSICAL_TARGET_CAPSULES_MISSING"
+}

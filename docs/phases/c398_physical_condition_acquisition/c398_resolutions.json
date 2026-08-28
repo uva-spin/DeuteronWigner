@@ -1,0 +1,53 @@
+{
+  "package_root": "89dcf27d960d56e011c8ce06d9b2317804c4411c7980708b1fcc43fc6ecfa417",
+  "plan": "PHYSICALCONDACQPHASE1-B",
+  "record": {
+    "averaged": false,
+    "root": "9f63e32c5f0e8bc7a1dc2edfe3d325f82046a34cc0b77b7c350762f1177d9594",
+    "rows": [
+      {
+        "condition_families": [
+          "mass_state",
+          "normalization_phase",
+          "Ward_current",
+          "gluon_one_body",
+          "sector",
+          "boundary_truncation",
+          "C117_sensitive"
+        ],
+        "physical": false,
+        "resolution": "K9",
+        "target_capsules": 0
+      },
+      {
+        "condition_families": [
+          "mass_state",
+          "normalization_phase",
+          "Ward_current",
+          "gluon_one_body",
+          "sector",
+          "boundary_truncation",
+          "C117_sensitive"
+        ],
+        "physical": false,
+        "resolution": "K11",
+        "target_capsules": 0
+      },
+      {
+        "condition_families": [
+          "mass_state",
+          "normalization_phase",
+          "Ward_current",
+          "gluon_one_body",
+          "sector",
+          "boundary_truncation",
+          "C117_sensitive"
+        ],
+        "physical": false,
+        "resolution": "K13",
+        "target_capsules": 0
+      }
+    ]
+  },
+  "status": "C398_SOURCE_DERIVED_CONDITION_STRUCTURES_ACQUIRED_PHYSICAL_TARGET_CAPSULES_MISSING"
+}
