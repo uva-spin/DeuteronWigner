@@ -1,0 +1,49 @@
+{
+  "package_root": "4402ac770d91b0eb872f2de7ad1272e2c0ce4febe1c145bbb8f237f3090d3924",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXTRACT1-C",
+  "record": {
+    "count": 7,
+    "endpoint_terms_preserved": true,
+    "root": "4e5e68e392891ab148286b2b45097ca43f86423b9da1a37cbadb7ccefd7ac427",
+    "rows": [
+      {
+        "formula": "ZF=1+alpha_s CF/(4pi)[-ln(mu^2/m^2)+2ln(m^2/lambda^2)-4]",
+        "locator": "Eq. (7), label zf",
+        "object": "quark self energy"
+      },
+      {
+        "formula": "ZW=1+alpha_s CF/(4pi)[2ln(mu^2/lambda^2)]",
+        "locator": "unnumbered after Eq. (7)",
+        "object": "Wilson self energy"
+      },
+      {
+        "formula": "ZV=1+alpha_s CF/(4pi)[2ln(mu^2/m^2)+2ln(zeta^2/m^2)-ln^2(zeta^2/m^2)-2ln(m^2/lambda^2)ln(zeta^2/m^2)-2pi^2/3+4]",
+        "locator": "unnumbered before Eq. (8)",
+        "object": "virtual vertex"
+      },
+      {
+        "formula": "Qvirt=delta(1-x)delta2(kT)(ZF+ZW+ZV-3); real terms retained separately with m,lambda,zeta and plus/delta endpoint forms",
+        "locator": "Eqs. (8),(9)-(12)",
+        "object": "complete unsubtracted one-loop quark TMD"
+      },
+      {
+        "formula": "S=(1/Nc)<0|L_tildev^dag(b,-inf)L_v^dag(inf;b)L_v(inf;0)L_tildev(0;-inf)|0>",
+        "locator": "Eq. (24)",
+        "object": "soft operator"
+      },
+      {
+        "formula": "q=Q/S (one full soft factor in the JMY factorization convention)",
+        "locator": "Eq. (25)",
+        "object": "subtracted JMY quark TMD"
+      },
+      {
+        "formula": "S(kT)=delta2(kT)+alpha_s CF/(2pi^2)[ln(4(v.tildev)^2/(v^2 tildev^2))-2][1/(kT^2+lambda^2)-pi delta2(kT)ln(mu^2/lambda^2)]; S(b)=1+alpha_s CF/(2pi)(2-ln rho^2)ln(mu^2 b^2 e^(2gammaE)/4)",
+        "locator": "Eqs. (30),(31)",
+        "object": "one-loop soft factor"
+      }
+    ]
+  },
+  "status": "C351_JMY_ONE_LOOP_QUARK_AND_SOFT_EQUATIONS_EXTRACTED_COMMON_IR_TRANSLATION_MISSING",
+  "validation": "PASS"
+}
