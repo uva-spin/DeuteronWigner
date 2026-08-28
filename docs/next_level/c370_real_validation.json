@@ -1,0 +1,86 @@
+{
+  "package_root": "c2686cb149db312490a7bf744bbd6120a4ac6eb229af2c370eb8dc022ebe0ad4",
+  "physical": false,
+  "plan": "RIMASSC43JMYMASTERBIND1-C",
+  "record": {
+    "common_prefactor": "g^2 CF times frozen bilocal tree normalization; exact graph sign not exposed termwise upstream",
+    "count": 6,
+    "root": "c670ed01b878940607fdfb43e259d2c551bd1a802a14055fb8bec93d89a8e804",
+    "rows": [
+      {
+        "contour": "active +i0",
+        "indices": {
+          "A": 2,
+          "B": 0,
+          "r": 0
+        },
+        "master": "R",
+        "measurement": "delta(x-1+ell+/p+) exp(i bT.ellT)",
+        "numerator": "2(d-2)[2q+(p.q)-q^2p+]",
+        "term": "DR.qq"
+      },
+      {
+        "contour": "v.ell+i0",
+        "indices": {
+          "A": 1,
+          "B": 1,
+          "r": "alpha"
+        },
+        "master": "R",
+        "measurement": "distribution real",
+        "numerator": "4[p+(q.v)-(p.q)v+ +(p.v)q+]",
+        "term": "DR.qv"
+      },
+      {
+        "contour": "v.ell+i0 squared",
+        "indices": {
+          "A": 0,
+          "B": 2,
+          "r": "2alpha"
+        },
+        "master": "R",
+        "measurement": "distribution real",
+        "numerator": "2p+v^2",
+        "term": "DR.vv"
+      },
+      {
+        "contour": "crossed",
+        "indices": {
+          "A": 2,
+          "B": 0,
+          "r": 0
+        },
+        "master": "Cross(R)",
+        "measurement": "delta(z-1+ell-/p-) exp(i bT.ellT)",
+        "numerator": "CrossPlusMinus(DR.qq) z^(-2+2epsilon)",
+        "term": "FR.qq"
+      },
+      {
+        "contour": "tildev.ell-i0",
+        "indices": {
+          "A": 1,
+          "B": 1,
+          "r": "beta"
+        },
+        "master": "Cross(R)",
+        "measurement": "fragmentation real",
+        "numerator": "CrossPlusMinus(DR.qv) z^(-2+2epsilon)",
+        "term": "FR.qv"
+      },
+      {
+        "contour": "tildev crossed squared",
+        "indices": {
+          "A": 0,
+          "B": 2,
+          "r": "2beta"
+        },
+        "master": "Cross(R)",
+        "measurement": "fragmentation real",
+        "numerator": "CrossPlusMinus(DR.vv) z^(-2+2epsilon)",
+        "term": "FR.vv"
+      }
+    ]
+  },
+  "status": "C370_TERM_MASTER_INDICES_CONTOURS_MEASUREMENTS_BOUND_SCALAR_REDUCTION_COEFFICIENTS_INCOMPLETE",
+  "validation": "PASS"
+}
