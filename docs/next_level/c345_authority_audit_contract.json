@@ -1,0 +1,36 @@
+{
+  "package_root": "c8083cbd458818db7282e97137fc6fea989bca8bcd7f44431d7946f6e17c197b",
+  "physical": false,
+  "plan": "RIMASSC43SIDISMATCH1-C",
+  "record": {
+    "L_equals_inverse_Q_authorized": false,
+    "mu_equals_Q_authorized": false,
+    "root": "f90a44f785881631549f7abc718bd28cb1f4932dba1de9444107863ce11215e6",
+    "rows": [
+      {
+        "authorizes": "operator/path and limit order",
+        "candidate": "JMY/BJY/Gao",
+        "does_not_authorize": "numeric mu,zeta,L,K trajectory"
+      },
+      {
+        "authorizes": "generic project API convention",
+        "candidate": "DELTA_COLLINS_ZETA_SCHEME",
+        "does_not_authorize": "JMY/C43 dataset selection"
+      },
+      {
+        "authorizes": "dataset theory predictions and 642-member theory covariance",
+        "candidate": "C28 ART25",
+        "does_not_authorize": "C43 compactification mapping"
+      },
+      {
+        "authorizes": "independent-axis limit requirements",
+        "candidate": "C324",
+        "does_not_authorize": "sequence points, tolerance, or weights"
+      }
+    ],
+    "unique_map": false,
+    "zeta_equals_Q2_authorized": false
+  },
+  "status": "C345_SIDIS_C43_MATCHING_MAP_TYPED_SCHEME_AND_VOLUME_SELECTION_AUTHORITY_MISSING",
+  "validation": "BOUND"
+}
