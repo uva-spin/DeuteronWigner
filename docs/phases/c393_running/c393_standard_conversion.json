@@ -1,0 +1,21 @@
+{
+  "package_root": "d194392345e68f7d4cb7efc8dbda471486de16986d78e6138029d80b6d06c251",
+  "physical": false,
+  "plan": "RUNNINGPHASE1-B",
+  "record": {
+    "coefficients": "exact symbolic projected Green-function ratios; numerical evaluation unavailable not zero",
+    "composition": "PASS_BY_DEFINITION",
+    "definition": "C_MS<-P=P_MS Gamma_R * inverse(P_project Gamma_R) at identical external state, mu, rho and orientation",
+    "from": "DW-JMY-COMMON-IR-PROJECT-v1",
+    "inverse": "matrix inverse on C392 full-rank domain",
+    "root": "cf059df8726e4c26a2c130e734977cc86b0feb1c730f95e3ccb19ff74fbafa4f",
+    "scheme_diagnostics": [
+      "projector family",
+      "mu path",
+      "rho path",
+      "threshold mass scheme"
+    ],
+    "to": "MSbar JMY common-IR"
+  },
+  "status": "C393_AUTHENTICATED_MSBAR_RUNNING_THRESHOLD_ACTIVE_FLAVOR_SYMBOLIC_AUTHORITY_READY_PHYSICAL_BOUNDARY_INPUT_NEXT"
+}

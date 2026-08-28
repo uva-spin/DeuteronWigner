@@ -1,0 +1,23 @@
+{
+  "package_root": "d194392345e68f7d4cb7efc8dbda471486de16986d78e6138029d80b6d06c251",
+  "physical": false,
+  "plan": "RUNNINGPHASE1-B",
+  "record": {
+    "coefficients": {
+      "c10": "0",
+      "c11": "1/(6*pi)",
+      "c20_MSbar_mass": "-11/(72*pi^2)",
+      "c20_pole_mass": "7/(24*pi^2)",
+      "c21": "11/(24*pi^2)",
+      "c22": "c11^2"
+    },
+    "continuity_not_assumed_beyond_declared_order": true,
+    "mass_scheme_branch_required": true,
+    "relation": "alpha_s^(Nf+1)=alpha_s^Nf*[1+sum_n sum_l c_nl alpha_s^n log^l(mu^2/mh^2)]",
+    "root": "c556d5a7b740a90ecc989146925e72089acd929a5ce05c00636dee8031bccc98",
+    "source": "PDG 2026 QCD review Eq.(9.4), printed page 3",
+    "threshold_up_down_round_trip": "inverse series at identical order and mass scheme",
+    "threshold_values_selected": false
+  },
+  "status": "C393_AUTHENTICATED_MSBAR_RUNNING_THRESHOLD_ACTIVE_FLAVOR_SYMBOLIC_AUTHORITY_READY_PHYSICAL_BOUNDARY_INPUT_NEXT"
+}
