@@ -1,0 +1,38 @@
+{
+  "package_root": "57f6d2901ce86042c02cd20d95fa05fb8d695b33c043c798009b65dee0bc3175",
+  "physical": false,
+  "plan": "RIMASSC43JMYFINITE1-C",
+  "record": {
+    "count": 3,
+    "joint_finite_authority": false,
+    "root": "bc924088c442e15b23e9fbd49aa579d1670fa1d6827e92bec279e3e6d61d70d8",
+    "rows": [
+      {
+        "IR": "mass m,lambda",
+        "analytic_separator": false,
+        "authority": "JMY hep-ph/0404183v1",
+        "finite_terms": true,
+        "operator_identical": true,
+        "usable_directly": false
+      },
+      {
+        "IR": "dimensional",
+        "analytic_separator": true,
+        "authority": "Becher-Neubert 1007.4005v2",
+        "finite_terms": true,
+        "operator_identical": false,
+        "usable_directly": false
+      },
+      {
+        "IR": "dimensional",
+        "analytic_separator": true,
+        "authority": "C356 residue matrix",
+        "finite_terms": false,
+        "operator_identical": true,
+        "usable_directly": false
+      }
+    ]
+  },
+  "status": "C357_FINITE_GROUP_AUTHORITY_AUDITED_OPERATOR_IDENTICAL_ANALYTIC_REGULATED_JMY_INTEGRANDS_MISSING",
+  "validation": "BOUND"
+}
