@@ -1,0 +1,45 @@
+{
+  "package_root": "bac9265744361abe358a90346f11d344a260a1252b893ca59b8a508af37e1a67",
+  "physical": false,
+  "plan": "RIMASSC43DELTAEXTRACT1-C",
+  "record": {
+    "count": 5,
+    "normalized": true,
+    "root": "d5b34434a3d650ddfa8af885137c7653e9e9295b6d23e501dc1f5e56b6e431da",
+    "rows": [
+      {
+        "defs": "as=g^2/(4pi)^2; d(1,1)=2CF=Gamma0/2; ldelta=ln(mu^2/|delta+delta-|)",
+        "eq": "(13)",
+        "formula": "S1=-4/eps^2+2 Lmu^2-2[d(1,1)/CF](1/eps+Lmu) ldelta+pi^2/3+O(eps)",
+        "object": "NLO soft",
+        "source": "1511.05590v2"
+      },
+      {
+        "eq": "(3.1)-(3.4)",
+        "formula": "Rf=sqrt(S)/Zb; modified-delta Zb=S hence Rf=1/sqrt(S)",
+        "object": "rapidity factor",
+        "source": "1604.07869v3"
+      },
+      {
+        "eq": "(3.6)-(3.10)",
+        "formula": "soft Wilson exponentials e^{-delta+ sigma},e^{+delta- sigma}; ordered poles k_j^+-j i delta+; collinear delta rescaled by x or 1/z",
+        "object": "regulator",
+        "source": "1604.07869v3"
+      },
+      {
+        "eq": "(3.11)-(3.12)",
+        "formula": "zeta+ zeta-=Q^4; delta-=delta+ zeta/(p+)^2",
+        "object": "rapidity split",
+        "source": "1604.07869v3"
+      },
+      {
+        "eq": "(3.16)",
+        "formula": "Dqq[1]=Deltaqq[1]-S[1]Deltaqq[0]/2+(Zq[1]-Z2[1])Deltaqq[0]",
+        "object": "NLO quark TMD",
+        "source": "1604.07869v3"
+      }
+    ]
+  },
+  "status": "C350_MODIFIED_DELTA_ONE_LOOP_EQUATIONS_NORMALIZED_COMMON_JMY_PARTONIC_FINITE_MATRIX_ELEMENT_MISSING",
+  "validation": "BOUND"
+}
