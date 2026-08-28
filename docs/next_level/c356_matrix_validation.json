@@ -1,0 +1,42 @@
+{
+  "package_root": "82525d8cbc408604dd73e99732c1c26a15f894f53028b9b6b07014fcc07811fc",
+  "physical": false,
+  "plan": "RIMASSC43JMYRESIDUE1-C",
+  "record": {
+    "Fourier": "+i bT.kT",
+    "color": "CF fundamental",
+    "root": "4e961c45423a3c1b9bf00c59fbb513737477393702f741a607f6c36473fc1476",
+    "rows": [
+      {
+        "entry": "Aq",
+        "orientation": "SIDIS future-pointing v +i0 retained",
+        "owner": "distribution quark-Wilson endpoint",
+        "value": "R_F delta(1-x)"
+      },
+      {
+        "entry": "Asq",
+        "orientation": "matching v eikonal pole",
+        "owner": "soft v-side overlap allocated to distribution",
+        "value": "R_F delta(1-x)"
+      },
+      {
+        "entry": "Ah",
+        "orientation": "crossed SIDIS tilde-v pole retained",
+        "owner": "fragmentation quark-Wilson endpoint",
+        "value": "R_F delta(1-z)"
+      },
+      {
+        "entry": "Ash",
+        "orientation": "matching tilde-v eikonal pole",
+        "owner": "soft tilde-v-side overlap allocated to fragmentation",
+        "value": "R_F delta(1-z)"
+      }
+    ],
+    "shape": [
+      2,
+      2
+    ]
+  },
+  "status": "C356_JMY_ANALYTIC_POLE_RESIDUE_MATRIX_DERIVED_SEPARATOR_CANCELLATION_CERTIFIED_FINITE_GROUPS_MISSING",
+  "validation": "PASS"
+}
