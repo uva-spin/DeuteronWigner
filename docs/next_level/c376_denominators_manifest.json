@@ -1,0 +1,99 @@
+{
+  "package_root": "9d5e7a17c6f50488711dad00e293ae549a0cb4d6794e7ca3addb193f60ac0b37",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECUTABLEAST1-C",
+  "record": {
+    "count": 4,
+    "mass_terms": 0,
+    "root": "04a5b5a7e69e467f4e7c29212b1d6275aabbbb0a7db7a347b775486172371f20",
+    "rows": [
+      {
+        "expr": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 2
+                },
+                {
+                  "name": "ell_plus",
+                  "op": "sym"
+                },
+                {
+                  "name": "ell_minus",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "ellT2",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            }
+          ],
+          "op": "add"
+        },
+        "i0": 1,
+        "id": "Dg"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "name": "p2",
+              "op": "sym"
+            },
+            {
+              "name": "ell2",
+              "op": "sym"
+            },
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -2
+                },
+                {
+                  "name": "p_dot_ell",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            }
+          ],
+          "op": "add"
+        },
+        "i0": 1,
+        "id": "Dq"
+      },
+      {
+        "expr": {
+          "name": "v_dot_ell",
+          "op": "sym"
+        },
+        "i0": 1,
+        "id": "Dv"
+      },
+      {
+        "expr": {
+          "name": "tv_dot_ell",
+          "op": "sym"
+        },
+        "i0": -1,
+        "id": "Dtv"
+      }
+    ]
+  },
+  "status": "C376_EXECUTABLE_SCALAR_DISTRIBUTION_AST_DERIVED_PARAMETER_REDUCTION_REQUIRED",
+  "validation": "BOUND"
+}

@@ -1,0 +1,324 @@
+{
+  "package_root": "9d5e7a17c6f50488711dad00e293ae549a0cb4d6794e7ca3addb193f60ac0b37",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECUTABLEAST1-C",
+  "record": {
+    "count": 12,
+    "crossing": {
+      "DR.qq": "FR.qq",
+      "DR.qv": "FR.qv",
+      "DR.vv": "FR.vv"
+    },
+    "root": "4dc62d394bf510b64ba0b0947ea8336776d5dd6562382c778a1690246b279f9a",
+    "rows": [
+      {
+        "expr": {
+          "args": [
+            {
+              "op": "num",
+              "value": 2
+            },
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 4
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -2
+                    },
+                    {
+                      "name": "epsilon",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "name": "q_plus",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "p_dot_q",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "q2",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "p_plus",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "DR.qq"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "op": "num",
+              "value": 4
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "p_plus",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "q_dot_v",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "p_dot_q",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "v_plus",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "name": "p_dot_v",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "q_plus",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "DR.qv"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "op": "num",
+              "value": 2
+            },
+            {
+              "name": "p_plus",
+              "op": "sym"
+            },
+            {
+              "name": "v2",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "DR.vv"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -2
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "name": "epsilon",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            {
+              "args": [
+                {
+                  "name": "proj_p_minus_ell",
+                  "op": "sym"
+                }
+              ],
+              "op": "add"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "Sigma_q"
+      },
+      {
+        "expr": {
+          "name": "v2",
+          "op": "sym"
+        },
+        "term": "W_v"
+      },
+      {
+        "expr": {
+          "name": "tv2",
+          "op": "sym"
+        },
+        "term": "W_tildev"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "vslash_proj",
+                  "op": "sym"
+                },
+                {
+                  "name": "p_minus_ell_proj",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            }
+          ],
+          "op": "add"
+        },
+        "term": "V_qv"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "tvslash_proj",
+                  "op": "sym"
+                },
+                {
+                  "name": "p_minus_ell_proj",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            }
+          ],
+          "op": "add"
+        },
+        "term": "V_htv"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "op": "num",
+              "value": -2
+            },
+            {
+              "op": "num",
+              "value": 2
+            },
+            {
+              "name": "v_dot_tv",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "S.virtual"
+      },
+      {
+        "expr": {
+          "name": "v2",
+          "op": "sym"
+        },
+        "term": "S.real.v"
+      },
+      {
+        "expr": {
+          "name": "tv2",
+          "op": "sym"
+        },
+        "term": "S.real.tv"
+      },
+      {
+        "expr": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "op": "num",
+              "value": 2
+            },
+            {
+              "name": "v_dot_tv",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "S.real.interference"
+      }
+    ]
+  },
+  "status": "C376_EXECUTABLE_SCALAR_DISTRIBUTION_AST_DERIVED_PARAMETER_REDUCTION_REQUIRED",
+  "validation": "BOUND"
+}
