@@ -1,0 +1,21 @@
+{
+  "authority_record": {
+    "alternatives": {
+      "log2_rms": 0.00098,
+      "log_plus_inverse_rms": 1.9648,
+      "pure_log_rms": 8.0978
+    },
+    "asymptotic": "C_sym(N)=9 log(N)^2-24 log(N)+C_R+R_N",
+    "derivation": "overdetermined seven-cutoff fit; integer leading coefficients stable under N windows",
+    "log2_coefficient": 9,
+    "log_coefficient": -24,
+    "max_full_fit_residual": 0.0014,
+    "root": "95233faf4862e533a33cd04ba9f4c7d83325b789496ede0b27706107d4fa45e3"
+  },
+  "package_root": "b4035029133db4f2264ff6b8ed367fb3e6857ba348ce6aee37d25229fa243371",
+  "physical": false,
+  "plan": "RIMASSV0TAILRENORM1-A",
+  "schema": "C308-TAIL_FORMULA-CONTRACT-V1",
+  "status": "C308_CENTER_MODE_TAIL_SUBTRACTED_FINITE_REMAINDER_ENCLOSED_FULL_GRAM_EVALUATION_MISSING",
+  "validation": "BOUND"
+}
