@@ -1,0 +1,108 @@
+{
+  "package_root": "3ed398d81223fd20bbb86f70cd23f1ee64381029200965fc2343df019313466a",
+  "physical": false,
+  "plan": "RIMASSC43JMYREFRESOLVE1-C",
+  "record": {
+    "count": 5,
+    "executable_ops": [
+      "negate",
+      "MSbar_UV_project",
+      "mul"
+    ],
+    "root": "546cdc6f104ffc0ae7966ffaa9dfb5132c55585409253ec1ec0e7bb5c57b4acc",
+    "rows": [
+      {
+        "IR_action": "retain",
+        "analytic_action": "retain",
+        "arg": {
+          "normalization": {
+            "args": [
+              "exp(gammaE*epsilon)",
+              "(4*pi)^(-epsilon)",
+              "epsilon_UV^-1"
+            ],
+            "op": "mul"
+          },
+          "op": "MSbar_UV_project",
+          "parent": "Sigma_q"
+        },
+        "id": "CT.Z2q",
+        "op": "negate"
+      },
+      {
+        "IR_action": "retain",
+        "analytic_action": "retain",
+        "arg": {
+          "normalization": {
+            "args": [
+              "exp(gammaE*epsilon)",
+              "(4*pi)^(-epsilon)",
+              "epsilon_UV^-1"
+            ],
+            "op": "mul"
+          },
+          "op": "MSbar_UV_project",
+          "parent": "W_v"
+        },
+        "id": "CT.Zv",
+        "op": "negate"
+      },
+      {
+        "IR_action": "retain",
+        "analytic_action": "retain",
+        "arg": {
+          "normalization": {
+            "args": [
+              "exp(gammaE*epsilon)",
+              "(4*pi)^(-epsilon)",
+              "epsilon_UV^-1"
+            ],
+            "op": "mul"
+          },
+          "op": "MSbar_UV_project",
+          "parent": "W_tildev"
+        },
+        "id": "CT.Ztv",
+        "op": "negate"
+      },
+      {
+        "IR_action": "retain",
+        "analytic_action": "retain",
+        "arg": {
+          "normalization": {
+            "args": [
+              "exp(gammaE*epsilon)",
+              "(4*pi)^(-epsilon)",
+              "epsilon_UV^-1"
+            ],
+            "op": "mul"
+          },
+          "op": "MSbar_UV_project",
+          "parent": "V_qv"
+        },
+        "id": "CT.Zvert.q",
+        "op": "negate"
+      },
+      {
+        "IR_action": "retain",
+        "analytic_action": "retain",
+        "arg": {
+          "normalization": {
+            "args": [
+              "exp(gammaE*epsilon)",
+              "(4*pi)^(-epsilon)",
+              "epsilon_UV^-1"
+            ],
+            "op": "mul"
+          },
+          "op": "MSbar_UV_project",
+          "parent": "V_htv"
+        },
+        "id": "CT.Zvert.h",
+        "op": "negate"
+      }
+    ]
+  },
+  "status": "C385_ALL_C383_REFERENCES_BOUND_TYPED_COMMON_ENVIRONMENT_LAURENT_EVALUATION_READY",
+  "validation": "PASS"
+}
