@@ -1,0 +1,62 @@
+{
+  "package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "physical": false,
+  "plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "record": {
+    "count": 7,
+    "phase_id": "C391/HQCDRIMASSC43JMYEVALPHASE1",
+    "root": "f1578f4c6c368c22f4c93f294f9bf7b8bd8dc658fe227278c55ae9373972319b",
+    "rows": [
+      {
+        "first_exact_object": "C390-C43-JMY-TRANSVERSE-FOURIER-REGULAR-PLUS-EVALUATOR",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "A",
+        "status": "COMPLETE",
+        "unresolved_remainder": null
+      },
+      {
+        "first_exact_object": "source-owned DR.qq/FR.qq regular-plus decomposition",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "B",
+        "status": "COMPLETE",
+        "unresolved_remainder": null
+      },
+      {
+        "first_exact_object": "DR.qq executable distribution gate",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "C",
+        "status": "COMPLETE",
+        "unresolved_remainder": null
+      },
+      {
+        "first_exact_object": "16-group source-side symbolic Laurent ledger",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "D",
+        "status": "COMPLETE_WITH_TARGET_REMAINDER",
+        "unresolved_remainder": "C391-C43-JMY-COMMON-IR-FINITE-BASIS-CONTINUUM-MATCHING-TARGET"
+      },
+      {
+        "first_exact_object": "real/virtual and separator identities",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "E",
+        "status": "SOURCE_SCOPE_COMPLETE_TARGET_REMAINDER",
+        "unresolved_remainder": "C391-C43-JMY-COMMON-IR-FINITE-BASIS-CONTINUUM-MATCHING-TARGET"
+      },
+      {
+        "first_exact_object": "finite remainder, bracket, and covariance",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "F",
+        "status": "SYMBOLIC_COMPLETE_PHYSICAL_BRACKET_UNSELECTED",
+        "unresolved_remainder": "C391-C43-JMY-COMMON-IR-FINITE-BASIS-CONTINUUM-MATCHING-TARGET"
+      },
+      {
+        "first_exact_object": "phase release and matching handoff",
+        "input_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+        "stage_id": "G",
+        "status": "COMPLETE",
+        "unresolved_remainder": "C391-C43-JMY-COMMON-IR-FINITE-BASIS-CONTINUUM-MATCHING-TARGET"
+      }
+    ]
+  },
+  "status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT"
+}

@@ -1,0 +1,23 @@
+{
+  "package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "physical": false,
+  "plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "record": {
+    "UV_IR_separate": true,
+    "distribution_ids": [
+      "JMY_FIG2A_REGULAR"
+    ],
+    "epsilon_orders": [
+      "epsilon^-1",
+      "epsilon^0"
+    ],
+    "executable": true,
+    "kernel_id": "JMY_SCALAR_TRANSVERSE_RANK0",
+    "node": "DR.qq",
+    "outward_enclosure": "exact symbolic",
+    "phase_space": "C389 regulated_cut_phase_space_integral",
+    "symbolic_numeric_fixture_parity": "PASS",
+    "units": "source prefactor times transverse mass^-2 kernel and d_perp measure"
+  },
+  "status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT"
+}
