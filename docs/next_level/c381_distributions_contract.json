@@ -1,0 +1,23 @@
+{
+  "package_root": "a76fe57c0393a54e1568f93cde3a6da1544c077d140f4e1ed0578fa1d415bb07",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECPARAM1-C",
+  "record": {
+    "delta": {
+      "formula": "coefficient*phi(1)",
+      "op": "test_action"
+    },
+    "executable_signature": "action(kind,kernel,phi,integrator)",
+    "plus": {
+      "formula": "integral_0^1 kernel(x)*(phi(x)-phi(1))",
+      "op": "test_action"
+    },
+    "regular": {
+      "formula": "integral_0^1 kernel(x)*phi(x)",
+      "op": "test_action"
+    },
+    "root": "ebed4eef381f17ee9b874acd6c8efc096b65489bd942f82b33c3a47ed5ab3022"
+  },
+  "status": "C381_EXECUTABLE_PARAMETER_INTEGRATION_AST_DERIVED_GROUPED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "BOUND"
+}

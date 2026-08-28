@@ -1,0 +1,618 @@
+{
+  "package_root": "a76fe57c0393a54e1568f93cde3a6da1544c077d140f4e1ed0578fa1d415bb07",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECPARAM1-C",
+  "record": {
+    "count": 3,
+    "crossing": {
+      "jacobian": "z^(-2+2epsilon)",
+      "map": {
+        "P": "Pminus",
+        "alpha": "beta",
+        "i0": -1,
+        "vm": "tvp",
+        "vp": "tvm",
+        "x": "z"
+      }
+    },
+    "root": "5abdb78caca2d55a97b569578e935594631961528eb7fec064d65bb546ff9b73",
+    "rows": [
+      {
+        "denominators": [
+          {
+            "expr": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "K",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "power": 2
+          }
+        ],
+        "distribution": "plus_or_regular",
+        "domain": {
+          "K": [
+            0,
+            "inf"
+          ],
+          "x": [
+            0,
+            1
+          ]
+        },
+        "jacobian": {
+          "base": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 1
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "x",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "name": "P",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "exponent": -1,
+          "op": "pow"
+        },
+        "measure_power_K": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "name": "epsilon",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "numerator": {
+          "args": [
+            {
+              "op": "num",
+              "value": 4
+            },
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 1
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "epsilon",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            {
+              "name": "P",
+              "op": "sym"
+            },
+            {
+              "name": "K",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "DR.qq"
+      },
+      {
+        "denominators": [
+          {
+            "expr": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "K",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "power": 1
+          },
+          {
+            "expr": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 1
+                        },
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": -1
+                            },
+                            {
+                              "name": "x",
+                              "op": "sym"
+                            }
+                          ],
+                          "op": "mul"
+                        }
+                      ],
+                      "op": "add"
+                    },
+                    {
+                      "name": "P",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "vm",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "vp",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 2
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 1
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": -1
+                                  },
+                                  {
+                                    "name": "x",
+                                    "op": "sym"
+                                  }
+                                ],
+                                "op": "mul"
+                              }
+                            ],
+                            "op": "add"
+                          },
+                          {
+                            "name": "P",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            "i0": 1,
+            "power": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 1
+                },
+                {
+                  "name": "alpha",
+                  "op": "sym"
+                }
+              ],
+              "op": "add"
+            }
+          }
+        ],
+        "distribution": "plus",
+        "domain": {
+          "K": [
+            0,
+            "inf"
+          ],
+          "x": [
+            0,
+            1
+          ]
+        },
+        "jacobian": {
+          "base": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 1
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "x",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "name": "P",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "exponent": -1,
+          "op": "pow"
+        },
+        "measure_power_K": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "name": "epsilon",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "numerator": {
+          "args": [
+            {
+              "op": "num",
+              "value": 16
+            },
+            {
+              "name": "x",
+              "op": "sym"
+            },
+            {
+              "base": {
+                "name": "P",
+                "op": "sym"
+              },
+              "exponent": 2,
+              "op": "pow"
+            },
+            {
+              "name": "vm",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "DR.qv"
+      },
+      {
+        "denominators": [
+          {
+            "expr": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 1
+                        },
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": -1
+                            },
+                            {
+                              "name": "x",
+                              "op": "sym"
+                            }
+                          ],
+                          "op": "mul"
+                        }
+                      ],
+                      "op": "add"
+                    },
+                    {
+                      "name": "P",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "vm",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "vp",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 2
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 1
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": -1
+                                  },
+                                  {
+                                    "name": "x",
+                                    "op": "sym"
+                                  }
+                                ],
+                                "op": "mul"
+                              }
+                            ],
+                            "op": "add"
+                          },
+                          {
+                            "name": "P",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            "i0": 1,
+            "power": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 2
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "name": "alpha",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            }
+          }
+        ],
+        "distribution": "endpoint",
+        "domain": {
+          "K": [
+            0,
+            "inf"
+          ],
+          "x": [
+            0,
+            1
+          ]
+        },
+        "jacobian": {
+          "base": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 1
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "x",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "name": "P",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "exponent": -1,
+          "op": "pow"
+        },
+        "measure_power_K": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "name": "epsilon",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "numerator": {
+          "args": [
+            {
+              "op": "num",
+              "value": -2
+            },
+            {
+              "name": "P",
+              "op": "sym"
+            },
+            {
+              "name": "v2",
+              "op": "sym"
+            }
+          ],
+          "op": "mul"
+        },
+        "term": "DR.vv"
+      }
+    ]
+  },
+  "status": "C381_EXECUTABLE_PARAMETER_INTEGRATION_AST_DERIVED_GROUPED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "BOUND"
+}

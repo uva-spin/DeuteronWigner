@@ -1,0 +1,26 @@
+{
+  "package_root": "a76fe57c0393a54e1568f93cde3a6da1544c077d140f4e1ed0578fa1d415bb07",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECPARAM1-C",
+  "record": {
+    "eikonal_minus": {
+      "exponent": "exp[-i*s*x]",
+      "phase": "exp[+i*pi*a/2]/Gamma(a)",
+      "sigma": -1
+    },
+    "eikonal_plus": {
+      "exponent": "exp[+i*s*x]",
+      "phase": "exp[-i*pi*a/2]/Gamma(a)",
+      "sigma": 1
+    },
+    "principal_fractional_power": true,
+    "quadratic": {
+      "i0": 1,
+      "normalization": "1/[2^d*pi^(d/2)*T^(d/2)]",
+      "phase": "exp[i*pi*(2-d)/4]"
+    },
+    "root": "2f43caea12d9a98ec5c88a8964497045f534b4ae0c9e4fefc3f8267b262bb2f4"
+  },
+  "status": "C381_EXECUTABLE_PARAMETER_INTEGRATION_AST_DERIVED_GROUPED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "PASS"
+}

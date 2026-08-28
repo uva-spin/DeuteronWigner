@@ -1,0 +1,350 @@
+{
+  "package_root": "a76fe57c0393a54e1568f93cde3a6da1544c077d140f4e1ed0578fa1d415bb07",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECPARAM1-C",
+  "record": {
+    "branch_callable": "eikonal_branch(a,sigma)",
+    "count": 4,
+    "crossing": {
+      "alpha": "beta",
+      "plus": "minus",
+      "v": "tildev"
+    },
+    "gaussian_callable": "gaussian(T,d)",
+    "root": "a1cb33a396a42a01a05a0880ff69bf07a1f3baf4c48331838a0d1683d0848c9f",
+    "rows": [
+      {
+        "Delta": {
+          "op": "num",
+          "value": 0
+        },
+        "T": {
+          "args": [
+            {
+              "name": "t",
+              "op": "sym"
+            },
+            {
+              "name": "u",
+              "op": "sym"
+            }
+          ],
+          "op": "add"
+        },
+        "branches": [
+          "quadratic+",
+          "quadratic+"
+        ],
+        "domain": "positive_orthant",
+        "family": "Sigma",
+        "powers": [
+          0,
+          0
+        ],
+        "variables": [
+          "t",
+          "u"
+        ]
+      },
+      {
+        "Delta": {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "u",
+                  "op": "sym"
+                },
+                {
+                  "name": "r",
+                  "op": "sym"
+                },
+                {
+                  "name": "pv",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "u",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "base": {
+                    "name": "r",
+                    "op": "sym"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "v2",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "args": [
+                          {
+                            "name": "t",
+                            "op": "sym"
+                          },
+                          {
+                            "name": "u",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "add"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            }
+          ],
+          "op": "add"
+        },
+        "T": {
+          "args": [
+            {
+              "name": "t",
+              "op": "sym"
+            },
+            {
+              "name": "u",
+              "op": "sym"
+            }
+          ],
+          "op": "add"
+        },
+        "branches": [
+          "quadratic+",
+          "quadratic+",
+          "eikonal+"
+        ],
+        "domain": "positive_orthant",
+        "family": "V_qv",
+        "powers": [
+          0,
+          0,
+          "alpha"
+        ],
+        "variables": [
+          "t",
+          "u",
+          "r"
+        ]
+      },
+      {
+        "Delta": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "base": {
+                "args": [
+                  {
+                    "name": "r1",
+                    "op": "sym"
+                  },
+                  {
+                    "name": "r2",
+                    "op": "sym"
+                  }
+                ],
+                "op": "add"
+              },
+              "exponent": 2,
+              "op": "pow"
+            },
+            {
+              "name": "v2",
+              "op": "sym"
+            },
+            {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 4
+                  },
+                  {
+                    "name": "t",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            }
+          ],
+          "op": "mul"
+        },
+        "T": {
+          "name": "t",
+          "op": "sym"
+        },
+        "branches": [
+          "quadratic+",
+          "eikonal+",
+          "eikonal-"
+        ],
+        "domain": "positive_orthant",
+        "family": "W_v",
+        "powers": [
+          0,
+          "alpha",
+          "alpha"
+        ],
+        "variables": [
+          "t",
+          "r1",
+          "r2"
+        ]
+      },
+      {
+        "Delta": {
+          "args": [
+            {
+              "op": "num",
+              "value": -1
+            },
+            {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "base": {
+                        "name": "r",
+                        "op": "sym"
+                      },
+                      "exponent": 2,
+                      "op": "pow"
+                    },
+                    {
+                      "name": "v2",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "base": {
+                        "name": "q",
+                        "op": "sym"
+                      },
+                      "exponent": 2,
+                      "op": "pow"
+                    },
+                    {
+                      "name": "tv2",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "name": "r",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "q",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "vtv",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 4
+                  },
+                  {
+                    "name": "t",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            }
+          ],
+          "op": "mul"
+        },
+        "T": {
+          "name": "t",
+          "op": "sym"
+        },
+        "branches": [
+          "quadratic+",
+          "eikonal+",
+          "eikonal-"
+        ],
+        "domain": "positive_orthant",
+        "family": "S.virtual",
+        "powers": [
+          0,
+          "alpha",
+          "beta"
+        ],
+        "variables": [
+          "t",
+          "r",
+          "q"
+        ]
+      }
+    ]
+  },
+  "status": "C381_EXECUTABLE_PARAMETER_INTEGRATION_AST_DERIVED_GROUPED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "BOUND"
+}
