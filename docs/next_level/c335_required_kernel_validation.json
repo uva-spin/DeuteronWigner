@@ -1,0 +1,24 @@
+{
+  "package_root": "0eceff5a717cd8dc4b958853e529c5479c2122e34f14d4fbbb4a3dc65cd7ea14",
+  "physical": false,
+  "plan": "RIMASSC43TRANSMATCH1-D",
+  "record": {
+    "C315_round_trip": "diagnostic only",
+    "background": "C313 constant Cartan flat connection",
+    "operators": [
+      "Delta_B[Abar]",
+      "Delta_F[Abar,m]",
+      "Delta_constraint[Abar]"
+    ],
+    "requirements": [
+      "gauge-covariant transverse eigenvalues",
+      "polarization multiplicities",
+      "constraint/Jacobian cancellation",
+      "Seeley-DeWitt/local UV coefficients",
+      "holonomy-dependent finite remainder"
+    ],
+    "root": "77dcdc99328c3750e1ae91779354f2eb9efb29fb13a2d57b8092e9b4d0f7a474"
+  },
+  "status": "C335_STANDARD_TRANSVERSE_MATCHING_REJECTED_CONDITIONAL_HO_SPECTRUM_NOT_GAUGE_COVARIANT_HEAT_KERNEL_MISSING",
+  "validation": "PASS"
+}
