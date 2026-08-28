@@ -1,0 +1,48 @@
+{
+  "authority_record": {
+    "defaults": false,
+    "physical": false,
+    "root": "2fca6eea377ba8913577e68f4257b31b820830fb1f42c34511aac795a1d563c5",
+    "rows": [
+      {
+        "L_GeVinv": 2.0,
+        "P0_functional": "SYMBOLIC_HOLDOUT_P0",
+        "boundary_class": "C43_DLCQ_APBC_F_PBC_B",
+        "coupling_normalization": 1.0,
+        "id": "C317-VALIDATION-K9",
+        "mass2_GeV2": 0.01,
+        "physical": false,
+        "resolution": "K9",
+        "signed_mass_GeV": "SEPARATE_UNUSED"
+      },
+      {
+        "L_GeVinv": 2.5,
+        "P0_functional": "SYMBOLIC_HOLDOUT_P0",
+        "boundary_class": "C43_DLCQ_APBC_F_PBC_B",
+        "coupling_normalization": 1.0,
+        "id": "C317-VALIDATION-K11",
+        "mass2_GeV2": 0.04,
+        "physical": false,
+        "resolution": "K11",
+        "signed_mass_GeV": "SEPARATE_UNUSED"
+      },
+      {
+        "L_GeVinv": 3.0,
+        "P0_functional": "SYMBOLIC_HOLDOUT_P0",
+        "boundary_class": "C43_DLCQ_APBC_F_PBC_B",
+        "coupling_normalization": 1.0,
+        "id": "C317-VALIDATION-K13",
+        "mass2_GeV2": 0.09,
+        "physical": false,
+        "resolution": "K13",
+        "signed_mass_GeV": "SEPARATE_UNUSED"
+      }
+    ],
+    "scheme": "PROJECT_C43_DETERMINANT_VALIDATION_V1"
+  },
+  "package_root": "65995028b845ae664a394df8523ccd151434e852c7988c81977a03a32d15b5f2",
+  "physical": false,
+  "plan": "RIMASSC43PARAM1-D",
+  "status": "C317_NONPHYSICAL_C43_DETERMINANT_VALIDATION_CAPSULE_FAMILY_BOUND_GRAM_EVALUATION_MISSING",
+  "validation": "PASS"
+}
