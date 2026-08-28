@@ -1,0 +1,92 @@
+{
+  "package_root": "3301a462a1bb51d33e1665f1bad34b40f23be79541ea95575ee9caf71de38e6f",
+  "physical": false,
+  "plan": "RIMASSC43JMYGRAPHTRANSCRIBE1-C",
+  "record": {
+    "analytic_alpha_beta_factors": "NOT_IN_SOURCE_TO_BE_MERGED_FROM_C354_C370",
+    "count": 11,
+    "root": "4380d3e7328cc5ae4e7c663dcadc42e75b70cfdd8ad5b39216d2be05dad349bb",
+    "rows": [
+      {
+        "C370_term": "Sigma_q",
+        "IR_value_imported": false,
+        "common": "alpha_s CF/(4pi)",
+        "factor": "delta endpoint*(ZF-1)",
+        "source_graph": "Fig1a"
+      },
+      {
+        "C370_term": "W_v",
+        "IR_value_imported": false,
+        "common": "alpha_s CF/(4pi)",
+        "factor": "delta endpoint*(ZW-1)",
+        "source_graph": "Fig1b"
+      },
+      {
+        "C370_term": "V_qv",
+        "IR_value_imported": false,
+        "common": "alpha_s CF/(4pi)",
+        "factor": "delta endpoint*(ZV-1)",
+        "source_graph": "Fig1c plus reflected partner included"
+      },
+      {
+        "C370_term": "DR.qq",
+        "IR_value_imported": false,
+        "common": "bilocal 1/2 already reflected in source result",
+        "factor": "+ alpha_s CF/(2pi^2) before massless dimensional remap",
+        "source_graph": "Fig2a"
+      },
+      {
+        "C370_term": "DR.qv",
+        "IR_value_imported": false,
+        "common": "future-v contour",
+        "factor": "+ alpha_s CF/pi^2; interference multiplicity 2 relative to Fig2a common",
+        "source_graph": "Fig2b including hermitian conjugate"
+      },
+      {
+        "C370_term": "DR.vv",
+        "IR_value_imported": false,
+        "common": "two gauge links",
+        "factor": "- alpha_s CF/(2pi^2) times explicit numerator 2",
+        "source_graph": "Fig2c"
+      },
+      {
+        "C370_term": "FR.qq/FR.qv/FR.vv",
+        "IR_value_imported": false,
+        "common": "fragmentation 1/(2z), color average 1/3",
+        "factor": "1/z q(1/z,Pperp/z), equivalently stated one-loop crossing",
+        "source_graph": "one-loop distribution substitution"
+      },
+      {
+        "C370_term": "W_v+W_tildev soft allocation",
+        "IR_value_imported": false,
+        "common": "count once",
+        "factor": "-2(ZW-1) soft subtraction; half cancels one TMD gauge-link self energy",
+        "source_graph": "Fig3a four Wilson self energies"
+      },
+      {
+        "C370_term": "S.virtual",
+        "IR_value_imported": false,
+        "common": "factor 2 for two virtual vertices; CF after 1/Nc color trace",
+        "factor": "-2 times bare v-tildev virtual integral",
+        "source_graph": "Fig3b"
+      },
+      {
+        "C370_term": "S.real self",
+        "IR_value_imported": false,
+        "common": "two same-line real-emission types combined",
+        "factor": "+ alpha_s CF/pi^2",
+        "source_graph": "Fig3c"
+      },
+      {
+        "C370_term": "S.real interference",
+        "IR_value_imported": false,
+        "common": "v-tildev interference",
+        "factor": "- alpha_s CF/(2pi^2) times geometry logarithm after source integration",
+        "source_graph": "Fig3d"
+      }
+    ],
+    "source_tex_sha256": "5caf5be22e162b849518788605301cfc1c6c8e2eff82ae7b3480a8a2e1699e7b"
+  },
+  "status": "C373_JMY_GRAPH_NORMALIZATION_MATRIX_TRANSCRIBED_ANALYTIC_REGULATOR_MERGE_REQUIRED",
+  "validation": "PASS"
+}
