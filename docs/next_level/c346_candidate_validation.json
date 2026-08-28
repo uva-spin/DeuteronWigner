@@ -1,0 +1,54 @@
+{
+  "package_root": "d6e10253691c4ca51d19c49a359352efc760f4143577c01fad4075da937f8d4d",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMESELECT1-C",
+  "record": {
+    "joint_candidate_count": 0,
+    "root": "4ae49cdefbcfbcbd80ed2cfafcfb16c009150e798596a8871cafa7caed985eb1",
+    "rows": [
+      {
+        "candidate": "JMY hep-ph/0404183",
+        "joint_compatible": false,
+        "limit_order": true,
+        "normalization": true,
+        "process": true,
+        "regulator": "off-lightcone spacelike v",
+        "soft_subtraction": "JMY source convention",
+        "volume_trajectory": false
+      },
+      {
+        "candidate": "DELTA_COLLINS_ZETA_SCHEME",
+        "joint_compatible": false,
+        "limit_order": "canonical zeta path",
+        "normalization": true,
+        "process": false,
+        "regulator": "delta",
+        "soft_subtraction": "Collins sqrt-soft",
+        "volume_trajectory": false
+      },
+      {
+        "candidate": "C28 ART25/arTeMiDe",
+        "joint_compatible": false,
+        "limit_order": true,
+        "normalization": true,
+        "process": true,
+        "regulator": "external ART25 scheme identity",
+        "soft_subtraction": "external source-owned",
+        "volume_trajectory": false
+      },
+      {
+        "candidate": "C324-C341 C43 continuum",
+        "joint_compatible": false,
+        "limit_order": true,
+        "normalization": true,
+        "process": "operator compatible only",
+        "regulator": "proper-time plus winding",
+        "soft_subtraction": "vacuum subtraction",
+        "volume_trajectory": "requirements only, no physical selection"
+      }
+    ],
+    "selected": null
+  },
+  "status": "C346_JOINT_SCHEME_VOLUME_AUTHORITY_AUDITED_CONVERSION_MATCHING_OPERATOR_MISSING",
+  "validation": "PASS"
+}

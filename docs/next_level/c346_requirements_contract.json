@@ -1,0 +1,27 @@
+{
+  "package_root": "d6e10253691c4ca51d19c49a359352efc760f4143577c01fad4075da937f8d4d",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMESELECT1-C",
+  "record": {
+    "defaults": false,
+    "required_inputs": [
+      "JMY renormalized operator definition",
+      "project delta/Collins operator definition",
+      "common UV and rapidity reference point",
+      "finite conversion kernel",
+      "anomalous-dimension evolution path",
+      "C43 determinant normalization",
+      "finite-volume trajectory",
+      "joint covariance Jacobian"
+    ],
+    "root": "a7ecbbc87ddf9722f97584f4f2b088b5ddbd64849eac3741874b34f99dcdc0e9",
+    "safe_operations": [
+      "derive symbolic conversion",
+      "verify transitivity",
+      "propagate covariance",
+      "take declared limits"
+    ]
+  },
+  "status": "C346_JOINT_SCHEME_VOLUME_AUTHORITY_AUDITED_CONVERSION_MATCHING_OPERATOR_MISSING",
+  "validation": "BOUND"
+}
