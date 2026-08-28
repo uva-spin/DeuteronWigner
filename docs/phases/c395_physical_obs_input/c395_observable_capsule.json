@@ -1,0 +1,37 @@
+{
+  "package_root": "efcf8b15c6c69aaae7b3977f3b5f1a486b371254d9a61681a391bbdb8097185a",
+  "physical": false,
+  "plan": "PHYSICALOBSINPUTPHASE1-B",
+  "record": {
+    "Wilson_path": "JMY spacelike-v with transverse closure",
+    "bin_integration": "explicit min/max columns; means retained but not substituted for bin integration",
+    "cuts": {
+      "Q_GeV": [
+        1.0,
+        4.47213595499958
+      ],
+      "W2_GeV2": [
+        10.0,
+        10000.0
+      ],
+      "y": [
+        0.1,
+        0.85
+      ]
+    },
+    "dataset_root": "5c0065668b03b8606d375dfa557374da1c36ba1fdec7c6f917168ae9cc4e9d24",
+    "observable_family": "low-qT unpolarized SIDIS multiplicity",
+    "physical_dataset": true,
+    "process_orientation": "future-pointing SIDIS",
+    "renormalization_scales": "theory prescription caller-bound, no dataset scale default",
+    "root": "3481e1cb63f24829b5e23ee6cf2aed3239980f7704c0e17fc107a57473117d6d",
+    "variables": [
+      "x",
+      "z",
+      "pT",
+      "Q",
+      "y"
+    ]
+  },
+  "status": "C395_AUTHENTICATED_HERMES_SIDIS_KINEMATICS_AND_CORRELATED_COVARIANCE_READY_RESOLUTION_SEPARATE_HAMILTONIAN_ACCEPTANCE_NEXT"
+}
