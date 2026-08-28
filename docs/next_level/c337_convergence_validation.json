@@ -1,0 +1,120 @@
+{
+  "package_root": "ad7ad070e0ddd53d0c6b8ea574d2e23a7c282d2502c0081f59ba0d17b6c4c6f6",
+  "physical": false,
+  "plan": "RIMASSC43HEATEVAL1-C",
+  "record": {
+    "boson_truncation_residual_retained": true,
+    "coefficient_hulls": {
+      "boson_coefficients": [
+        [
+          0.3642870997253542,
+          0.3645931665159204
+        ],
+        [
+          -0.052274556330094715,
+          -0.05085951990505368
+        ],
+        [
+          0.006787082287806682,
+          0.006981273197654111
+        ]
+      ],
+      "fermion_projected_coefficients": [
+        [
+          0.4241044678627114,
+          0.4377566685290601
+        ],
+        [
+          0.01477819497092041,
+          0.04058270642020473
+        ],
+        [
+          -0.01830667351800509,
+          -0.00482275277853665
+        ]
+      ]
+    },
+    "fermion_residual_exceeds_boson": true,
+    "fermion_residual_nonzero": true,
+    "root": "f77cab43f80d3e54588a6bff5d8d26cc83ecc9a49a919cac8b979b0c28e7030c",
+    "rows": [
+      {
+        "G": 12,
+        "L_GeVinv": 2.0,
+        "M": 16,
+        "basis": [
+          "1",
+          "CHI8",
+          "RE_TF3"
+        ],
+        "boson_coefficients": [
+          0.3642870997253542,
+          -0.05085951990505368,
+          0.006787082287806682
+        ],
+        "boson_residual_norm2": 3.9537668136635506e-05,
+        "fermion_projected_coefficients": [
+          0.4377566685290601,
+          0.04058270642020473,
+          -0.01830667351800509
+        ],
+        "fermion_residual_norm2": 0.015106748934517439,
+        "mass2_GeV2": 0.01,
+        "physical": false,
+        "root": "8d04acb964bb3d9486d90e87e4fa1fc2126a9ec734faf5744e3b8b69f6a73106"
+      },
+      {
+        "G": 16,
+        "L_GeVinv": 2.0,
+        "M": 32,
+        "basis": [
+          "1",
+          "CHI8",
+          "RE_TF3"
+        ],
+        "boson_coefficients": [
+          0.3645931665159204,
+          -0.05193136110319017,
+          0.0068197691164166635
+        ],
+        "boson_residual_norm2": 2.3277493485046596e-05,
+        "fermion_projected_coefficients": [
+          0.4247601810242338,
+          0.015890614704727482,
+          -0.005433759453724794
+        ],
+        "fermion_residual_norm2": 0.015151786387208516,
+        "mass2_GeV2": 0.01,
+        "physical": false,
+        "root": "3912c6c235023c579aa28e01db5bfa96d078f17867622e78ad93e1808fdf0b0c"
+      },
+      {
+        "G": 20,
+        "L_GeVinv": 2.0,
+        "M": 64,
+        "basis": [
+          "1",
+          "CHI8",
+          "RE_TF3"
+        ],
+        "boson_coefficients": [
+          0.3645121544478137,
+          -0.052274556330094715,
+          0.006981273197654111
+        ],
+        "boson_residual_norm2": 2.2426678646464415e-05,
+        "fermion_projected_coefficients": [
+          0.4241044678627114,
+          0.01477819497092041,
+          -0.00482275277853665
+        ],
+        "fermion_residual_norm2": 0.015133842982305828,
+        "mass2_GeV2": 0.01,
+        "physical": false,
+        "root": "34893ab2a2d6002c618b827bec75c7a6faa825194194c8e1805bb256bcb63211"
+      }
+    ]
+  },
+  "status": "C337_CONTINUUM_DETERMINANT_EVALUATED_ADJOINT_C301_PROJECTED_FUNDAMENTAL_CENTER_BREAKING_BASIS_MISSING",
+  "validation": "PASS"
+}
