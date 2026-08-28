@@ -1,0 +1,24 @@
+{
+  "schema": "C392-C393-HQCDRIMASSC43RUNNINGPHASE1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C392/HQCDRIMASSC43PHYSICALMATCHPHASE1",
+  "from_status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT",
+  "from_plan": "PHYSICALMATCHPHASE1-B",
+  "from_package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "next_job": "C393/HQCDRIMASSC43RUNNINGPHASE1",
+  "next_frontier": {
+    "object_id": "C392-C43-STANDARD-SCHEME-RUNNING-THRESHOLD-ACTIVE-FLAVOR-AUTHORITY",
+    "exact_missing_object": "bind authenticated standard-scheme conversion coefficients, running, thresholds, and active-flavor records to the C392 project matching coordinates"
+  },
+  "authority_discontinuity": "standard renormalization/running scheme and active-flavor threshold authority",
+  "constraints": {
+    "C391_C392_frozen": true,
+    "project_scheme_not_misrepresented_as_standard": true,
+    "active_Nf_explicit": true,
+    "thresholds_authenticated": true,
+    "K9_K11_K13_separate": true,
+    "physical_values_unselected": true,
+    "Q0_Q1_Q2_frozen": true,
+    "activation_gate_status": "NOT_READY",
+    "push": false
+  }
+}
