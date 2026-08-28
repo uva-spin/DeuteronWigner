@@ -1,0 +1,44 @@
+{
+  "package_root": "c1ba54558f4d49ea58d38d6662f070055a41abfedfd2b78b372ebf94a5422398",
+  "physical": false,
+  "plan": "RIMASSC43JMYTRACEAST1-C",
+  "record": {
+    "algebra": "Clifford(d), p^2=k^2=0 only after trace",
+    "count": 6,
+    "root": "83ebbf917eddb7f924abbd5a8f7ce23954551450301b110fb644d2a26aa718f1",
+    "rows": [
+      {
+        "den": "CutPlus(k^2)*((p-k)^2+i0)^2",
+        "expr": "Contract(-g(mu,nu),Trace(pslash*gamma(mu)*(pslash-kslash)*gamma(+)*(pslash-kslash)*gamma(nu)))/2",
+        "id": "DR.qq"
+      },
+      {
+        "den": "CutPlus(k^2)*((p-k)^2+i0)*(v.k+i0)^(1+alpha)",
+        "expr": "2*Re[Trace(pslash*gamma(+)*(pslash-kslash)*gamma(mu))*v(mu)]/2",
+        "id": "DR.qv"
+      },
+      {
+        "den": "CutPlus(k^2)*(v.k+i0)^(2+2alpha)",
+        "expr": "Trace(pslash*gamma(+))*v^2/2",
+        "id": "DR.vv"
+      },
+      {
+        "den": "CrossPlusMinus(DR.qq.den)",
+        "expr": "CrossPlusMinus(DR.qq)",
+        "id": "FR.qq"
+      },
+      {
+        "den": "CrossPlusMinus(DR.qv.den)",
+        "expr": "CrossPlusMinus(DR.qv,v->tildev,alpha->beta,i0->-i0)",
+        "id": "FR.qv"
+      },
+      {
+        "den": "CrossPlusMinus(DR.vv.den)",
+        "expr": "CrossPlusMinus(DR.vv,v->tildev,alpha->beta)",
+        "id": "FR.vv"
+      }
+    ]
+  },
+  "status": "C360_EXECUTABLE_JMY_TRACE_CUT_COUNTERTERM_AST_DERIVED_SYMBOLIC_REDUCTION_MISSING",
+  "validation": "BOUND"
+}
