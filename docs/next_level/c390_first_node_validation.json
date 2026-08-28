@@ -1,0 +1,20 @@
+{
+  "package_root": "7748f90ead890c2a207e9117e95627104c33677213466a90f1eff14c4ba309ad",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUPEVAL5-C",
+  "record": {
+    "Bessel_order": null,
+    "Fourier_normalization": null,
+    "cut_dispatch": "regulated_cut_phase_space_integral",
+    "executable_to_scalar_or_distribution": false,
+    "measurement_op": "distribution_test_action",
+    "node": "DR.qq",
+    "regular_plus_coefficients_bound": false,
+    "regular_plus_decomposition": "integral_0^1 kernel(u)*phi(u) with source-owned regular/plus decomposition",
+    "root": "9460a059afdd0b1e74aea76e44e17140eb81ab8f9e6e8851439d976c7100b165",
+    "transverse_angular_measure": null,
+    "transverse_kernel_argument": "i*bT_dot_kT"
+  },
+  "status": "C390_GROUP_LAURENT_EVALUATION_FAIL_CLOSED_TRANSVERSE_FOURIER_AND_REGULAR_PLUS_EXECUTOR_REQUIRED",
+  "validation": "PASS"
+}
