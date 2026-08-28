@@ -1,0 +1,23 @@
+{
+  "authority_record": {
+    "C43_matching": false,
+    "acceptance": "interval sequences Cauchy and path spread enclosed",
+    "alternative_paths": "simultaneous N*epsilon fixed and reversed order are mandatory scheme-dependence holdouts",
+    "basis": [
+      "1",
+      "CHI8",
+      "RE_TF3"
+    ],
+    "coefficients": "c_N,epsilon=G_epsilon^-1 b_N,epsilon",
+    "gram": "G_epsilon=<f_i f_j>_(J/6,D_epsilon)",
+    "ordered_limit": "first N->infinity at fixed epsilon; then epsilon->0",
+    "rhs": "b_N,epsilon=<f_i Vbar_N>_(J/6,D_epsilon)",
+    "root": "0f7a5c038e7d394bc0251631f6c303c81b2a2f31cee1cde22abf60a9f54163e2"
+  },
+  "package_root": "bd276d6c64b573f7ccf791e22e5251cd16f9f871b27cada4caf07de32b4bc173",
+  "physical": false,
+  "plan": "RIMASSV0FINITEPART1-B",
+  "schema": "C305-FINITE_PART-MANIFEST-V1",
+  "status": "C305_SOURCE_COMPATIBLE_CENTER_SUBTRACTED_SYMMETRIC_WALL_FINITE_PART_SCHEME_READY_NUMERICAL_LIMIT_EVALUATION_MISSING",
+  "validation": "BOUND"
+}
