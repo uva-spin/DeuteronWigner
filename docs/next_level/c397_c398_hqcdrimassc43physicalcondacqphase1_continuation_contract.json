@@ -1,0 +1,23 @@
+{
+  "schema": "C397-C398-HQCDRIMASSC43PHYSICALCONDACQPHASE1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C397/HQCDRIMASSC43PHYSICALSTATEOBSPHASE1",
+  "from_status": "C397_PHYSICAL_CONDITION_AUTHORITY_AUDITED_RANK_DEFICIENT_COORDINATES_UNSELECTED_SOURCE_ACQUISITION_NEXT",
+  "from_plan": "PHYSICALSTATEOBSPHASE1-B",
+  "from_package_root": "98a1a16a28d73bcd798ed3a49430974c7da79d83ba5a2fae36025b0f42bf5697",
+  "next_job": "C398/HQCDRIMASSC43PHYSICALCONDACQPHASE1",
+  "next_frontier": {
+    "object_id": "C397-C43-SOURCE-QUALIFIED-PHYSICAL-CONDITION-ACQUISITION",
+    "exact_missing_object": "acquire or derive source-qualified finite-basis mass, state, Ward/current, gluon, sector, boundary, and truncation targets sufficient to close the 19-coordinate response system"
+  },
+  "authority_discontinuity": "source-qualified finite-basis physical targets",
+  "constraints": {
+    "C391_C397_frozen": true,
+    "nineteen_coordinates_unselected_not_zero": true,
+    "arbitrary_representative_forbidden": true,
+    "rank_deficiency_not_blocker_while_frontier_remains": true,
+    "K9_K11_K13_separate": true,
+    "Q0_Q1_Q2_frozen": true,
+    "activation_gate_status": "NOT_READY",
+    "push": false
+  }
+}
