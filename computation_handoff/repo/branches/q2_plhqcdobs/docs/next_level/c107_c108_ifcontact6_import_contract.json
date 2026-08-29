@@ -1,0 +1,9 @@
+{
+  "schema": "C107-C108-IFCONTACT6-IMPORT-CONTRACT-V1",
+  "C107_STATUS": "C107_C104_SOURCE_DERIVED_CERTIFIED_COEFFICIENT_SYMBOL_BINDING_READY",
+  "C104_PACKAGE_ROOT": "42d3dc72def67806245875cf8c9fdfd1d801b212716e6735ade0763b4b2028de",
+  "C107_SCOPE": ["projected coefficient values", "certified coefficient bounds", "C104 coordinate/ancestry"],
+  "C80_SCOPE": ["W3 kernel", "kernel bounds", "finite-cell normalization", "spin/polarization", "color", "four-HO", "M2 conversion", "factored g_s_squared"],
+  "C108_MUST": ["reverify coordinate totality", "form coefficient-times-kernel products", "keep g_s_squared factored", "propagate bounds", "assemble sparse and matrix-free qg contact", "verify source Hermiticity"],
+  "C108_FORBIDDEN": ["C58 values", "C53 propagation", "physical coupling", "counterterm", "expanded 891992018 stream", "TMD/matching/production"]
+}

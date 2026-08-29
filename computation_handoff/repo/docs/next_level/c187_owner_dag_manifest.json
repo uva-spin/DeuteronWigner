@@ -1,0 +1,72 @@
+{
+  "C131_additive_count": 0,
+  "acyclic": true,
+  "edges": [
+    {
+      "relation": "aggregate_crosswalk",
+      "source": "C112_INSTANTANEOUS_FERMION_QGG",
+      "target": "C131_LOCAL_POLYNOMIAL_QGG"
+    },
+    {
+      "relation": "aggregate_crosswalk",
+      "source": "C127_GAUSS_CURRENT_QGG",
+      "target": "C131_LOCAL_POLYNOMIAL_QGG"
+    },
+    {
+      "relation": "validation_crosswalk",
+      "source": "C129_G4_DIRECT_NORMAL_ORDERED_QGG",
+      "target": "C131_LOCAL_POLYNOMIAL_QGG"
+    },
+    {
+      "relation": "sequential_only",
+      "source": "C185_QGG_QUARK_EMISSION",
+      "target": "C187_SEQUENTIAL_ROUTE"
+    },
+    {
+      "relation": "sequential_only",
+      "source": "C186_QGG_CUBIC_GLUE",
+      "target": "C187_SEQUENTIAL_ROUTE"
+    }
+  ],
+  "nodes": [
+    {
+      "kind": "SOURCE_AUTHORITY_INCOMPLETE",
+      "node_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "terminal": "SOURCE_AUTHORITY_INCOMPLETE",
+      "upstream": "C112"
+    },
+    {
+      "kind": "SOURCE_AUTHORITY_INCOMPLETE",
+      "node_id": "C127_GAUSS_CURRENT_QGG",
+      "terminal": "SOURCE_AUTHORITY_INCOMPLETE",
+      "upstream": "C127"
+    },
+    {
+      "kind": "SEQUENTIAL_ROUTE_ONLY",
+      "node_id": "C129_G4_DIRECT_NORMAL_ORDERED_QGG",
+      "terminal": "SOURCE_NONZERO_OUTSIDE_Q_TO_QGG_LOCAL_DOMAIN",
+      "upstream": "C129"
+    },
+    {
+      "kind": "AGGREGATE_CROSSWALK_ONLY",
+      "node_id": "C131_LOCAL_POLYNOMIAL_QGG",
+      "terminal": "AGGREGATE_CROSSWALK_ONLY",
+      "upstream": "C131"
+    },
+    {
+      "kind": "NONMATRIX_BOUNDARY_INTERFACE",
+      "node_id": "C130_BOUNDARY_NONMATRIX_QGG",
+      "terminal": "NONMATRIX_BOUNDARY_INTERFACE",
+      "upstream": "C130"
+    },
+    {
+      "kind": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "node_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "terminal": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "upstream": "C182"
+    }
+  ],
+  "root": "c805b37bd99b35ec6bca332e5564488755ab334f9630d43f60ac3efe8f74ddbd",
+  "schema": "C187-OWNER-DAG-V1",
+  "sequential_distinct": true
+}

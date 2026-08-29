@@ -1,0 +1,26 @@
+{
+  "baseline": "0d74c218e304a9bdb9c13eaaaf8b0abdab2531f6",
+  "next": "C62/QGTM \u2014 circular-ladder, Cartesian, or generating-function coefficient completion",
+  "no_contact_value_or_matrix": true,
+  "no_endpoint_or_witness": true,
+  "phase_audit": {
+    "blocker": "The candidate formula is phase-ambiguous relative to the inherited C47 raw/physical basis ordering. Choosing a phase by matching floating quadrature data would violate C61 exact-authority and poisoning requirements.",
+    "candidate_formula": "two exact one-dimensional brackets for n_plus,n_minus after exact c=sqrt(x_q), s=sqrt(x_g) rotation",
+    "candidate_plan": "QGEMBED-CIRCULAR-LADDER-ALGEBRA",
+    "evidence": [
+      "basis1.polar_to_cart_shell uses scipy roots_hermite numerical quadrature",
+      "basis1.polar_to_cart_shell applies exp(-i angle(result[i,j])) at j=argmax(abs(result[i]))",
+      "C47 does not serialize an exact phase expression for that per-row alignment"
+    ],
+    "exact_source_phase_needed": "An exact polar-C45 to circular-ladder phase map, including creation-operator ordering, must be locked before algebraic TM expressions can be assigned to the inherited raw/physical basis order.",
+    "historical_algorithm": "polar_to_cart_shell obtains polar/cartesian amplitudes by Gauss-Hermite quadrature and then aligns each polar row to its numerically largest Cartesian component.",
+    "prohibited": [
+      "infer polar/circular phase from floating argmax rows",
+      "fit a phase to C47 arrays",
+      "use 1e-12 support threshold",
+      "declare a quadrature near-zero exact"
+    ],
+    "status": "C61_EXACT_TM_ALGEBRA_INCOMPLETE"
+  },
+  "status": "C61_EXACT_TM_ALGEBRA_INCOMPLETE"
+}

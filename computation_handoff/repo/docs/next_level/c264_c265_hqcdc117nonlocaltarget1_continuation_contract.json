@@ -1,0 +1,23 @@
+{
+  "schema": "C264-C265-HQCDC117NONLOCALTARGET1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C264/HQCDC117NONLOCALMATCH1",
+  "from_status": "C264_C117_FULL_RANK_NONLOCAL_MATCHING_FUNCTIONALS_READY_CONTINUUM_TARGET_EVALUATION_REMAINS",
+  "from_plan": "C117NONLOCALMATCH1-B",
+  "from_package_root": "6aad37b4f5d278b249655c946529be10d159e5a2694c0bed09ef5f65df6c26dc",
+  "completed_object": "four normalized source-faithful nonlocal packet/projector functionals with legal distributional pairings and rank-four K9/K11/K13 response matrices",
+  "next_job": "C265/HQCDC117NONLOCALTARGET1",
+  "next_frontier": {
+    "object_id": "C117-NONLOCAL-CONTINUUM-TARGET-EVALUATION",
+    "exact_missing_object": "evaluate the four C264 continuum current wavepacket/projector target functionals, Ward/ST diagnostics, standard physical matching map, and correlated packet/scale/regulator uncertainty"
+  },
+  "constraints": {
+    "same_packet_functionals_required": true,
+    "K9_K11_K13_separate": true,
+    "unsupported_targets_zeroed": false,
+    "coefficients_selected": false,
+    "physical_target_claimed_without_matching": false,
+    "C166_graph_mutation": false,
+    "Q0_Q1_Q2_mutation": false,
+    "push": false
+  }
+}

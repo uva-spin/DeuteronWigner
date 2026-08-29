@@ -1,0 +1,24 @@
+{
+  "E_hash": "bef2f7a08b33826e17bdab0b027996f89892f9825c9f09d743d8703281488f4d",
+  "P3_hash": "e401e2e1253b83007a4d89f69634fba0a232a45d8c591e4879a2319b20d8b66b",
+  "U3_hash": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+  "baseline": "fd459d8114224de78ba562f904f39ba7d42b6ddc",
+  "next": "C67/QGEMBED4 \u2014 resume exact physical qg embedding using C64 and C66",
+  "normalization": "QGCOLOR2-CASIMIR-NORMALIZATION; U3=E_src/sqrt(C_F), C_F=4/3",
+  "status": "C66_SOURCE_DERIVED_TRIPLET_ISOMETRY_ARTIFACT_READY",
+  "support_hash": "2a80ec22c367f650a4d86ece383e5f0abe57319a93c5f622be1d27e342d825ac",
+  "validation": {
+    "C53_validation": {
+      "W_unitary": 7.691850745534255e-16,
+      "leakage": 3.1108354434057936e-16,
+      "projector_equivalence": 2.5362582704159623e-16
+    },
+    "P_hermiticity": 0.0,
+    "P_idempotence": 3.624202287500099e-16,
+    "UdaggerU": 3.8459253727671276e-16,
+    "intertwiner": 1.69886120845889e-16,
+    "pass": true,
+    "rank": 3,
+    "trace": 3.000000000000001
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "authority_record": {
+    "process_conflation": false,
+    "root": "eafef7760b6daf9465c540023f9545cafd2553a8fd6fb9d8d670ee4c9a69572b",
+    "rows": [
+      {
+        "applicable": false,
+        "authority": "C177 TMD/SIDIS source",
+        "candidate": "DIS_FUTURE",
+        "reason": "no DIS final-state observable in signed-mass two-point target"
+      },
+      {
+        "applicable": false,
+        "authority": "C177 DY source",
+        "candidate": "DY_PAST",
+        "reason": "no DY initial-state observable in signed-mass two-point target"
+      },
+      {
+        "applicable": true,
+        "authority": "C278 common-state schema",
+        "candidate": "PROCESS_NEUTRAL_CALLER_BOUNDARY",
+        "reason": "boundary_class/residual_link/holonomy are explicit caller coordinates"
+      }
+    ],
+    "unique_scattering_process": false
+  },
+  "package_root": "cb7a895a4ca0ff1ea5c9ad36a33463f7d04f69bbba15ac3abc7607de432d1d5d",
+  "physical": false,
+  "plan": "RIMASSPROCESS1-D",
+  "schema": "C287-PROCESS_APPLICABILITY-CONTRACT-V1",
+  "status": "C287_SIGNED_MASS_TWO_POINT_PROCESS_NEUTRALITY_CERTIFIED_CALLER_PHYSICAL_BOUNDARY_HOLONOMY_CAPSULE_MISSING",
+  "validation": "BOUND"
+}

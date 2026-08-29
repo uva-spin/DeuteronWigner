@@ -1,0 +1,192 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "HO_projection_ready": false,
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "helicity_program_manifest",
+  "authority_record": {
+    "HO_projected": 0,
+    "count": 8,
+    "exact_symbolic": 8,
+    "root": "f2babcbc86aa5c11791edab2b356174384ead7cf28419f4309573816465d99de",
+    "rows": [
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": -1,
+        "h_in": -1,
+        "h_out": -1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO-1-HI-1-HG-1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": 1,
+        "h_in": -1,
+        "h_out": -1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO-1-HI-1-HG1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": -1,
+        "h_in": 1,
+        "h_out": -1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO-1-HI1-HG-1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": 1,
+        "h_in": 1,
+        "h_out": -1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO-1-HI1-HG1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": -1,
+        "h_in": -1,
+        "h_out": 1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO1-HI-1-HG-1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": 1,
+        "h_in": -1,
+        "h_out": 1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO1-HI-1-HG1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": -1,
+        "h_in": 1,
+        "h_out": 1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO1-HI1-HG-1"
+      },
+      {
+        "HO_projected": false,
+        "expression": "ubar(pout,m,hout) gamma_mu epsilon_star^mu(k,hg) u(pin,m,hin)",
+        "h_g": 1,
+        "h_in": 1,
+        "h_out": 1,
+        "opcodes": [
+          "VALIDATE_POSITIVE_PPLUS_MASS_DOMAIN",
+          "FORM_PMINUS=(M2+PX2+PY2)/(2PPLUS)",
+          "FORM_E_PZ_FROM_LIGHTFRONT",
+          "FORM_BPP_U_SPINOR",
+          "FORM_A_PLUS_ZERO_POLARIZATION",
+          "CONVERT_POLARIZATION_CARTESIAN",
+          "FORM_UBAR_GAMMA_DOT_EPSSTAR_U",
+          "SUBSTITUTE_JACOBI_MOMENTA",
+          "SIMPLIFY_EXACT_SYMBOLIC",
+          "RETURN_PRIMITIVE_DAG"
+        ],
+        "parameters_symbolic": true,
+        "program_id": "C225-PRIM-HO1-HI1-HG1"
+      }
+    ]
+  },
+  "numeric_quadrature_promoted": 0,
+  "package_root": "86311e2df9f788b53a9ee1a4ca758b050fe061ba261a99271f278a17f22a0d54",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVPRIM1-C",
+  "retained_ids": 0,
+  "schema": "C225-HELICITY-PROGRAM-MANIFEST-V1",
+  "status": "C225_C224_EXACT_SYMBOLIC_SPINOR_POLARIZATION_DAG_READY_POLAR_HO_PROJECTION_INCOMPLETE"
+}

@@ -1,0 +1,43 @@
+{
+  "authority_record": {
+    "physical_capsule_complete": false,
+    "root": "c2053a71cc4d0cd1e5f68232d10ae45e72163070a31a92c8380b802e6d4f2b39",
+    "rows": [
+      {
+        "C43_ready": false,
+        "authority": "C154 PDG2026 MSbar 2GeV Nf4",
+        "available": true,
+        "object": "light_quark_mass"
+      },
+      {
+        "C43_ready": false,
+        "authority": "C154 PDG2026 MSbar mZ Nf5",
+        "available": true,
+        "object": "alpha_s"
+      },
+      {
+        "C43_ready": false,
+        "authority": "NONE_PHYSICAL",
+        "available": false,
+        "object": "longitudinal_scale"
+      },
+      {
+        "C43_ready": false,
+        "authority": "C290 schema; zero physical instances",
+        "available": false,
+        "object": "boundary_ensemble"
+      },
+      {
+        "C43_ready": false,
+        "authority": "C43 structural operator only",
+        "available": false,
+        "object": "Wilson_owner_parameters"
+      }
+    ]
+  },
+  "package_root": "7466c27017bd6b3c3d27d64181d31aac172824bc27e65e6a0811d21b87dbedfd",
+  "physical": false,
+  "plan": "RIMASSC43PHYSAUTH1-C",
+  "status": "C321_STANDARD_MASS_COUPLING_AUTHENTICATED_C43_FINITE_VOLUME_BOUNDARY_WILSON_AUTHORITY_MISSING",
+  "validation": "PASS"
+}

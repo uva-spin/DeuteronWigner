@@ -1,0 +1,19 @@
+{
+  "root": "0ade140241c44ea39a32cb20e4723a78e9b797e71271a84663852cee6b44181e",
+  "row": {
+    "C175_bulk_FP": "preserved read-only",
+    "boundary_interface": "separate residual-link/ghost-boundary Jacobian interface",
+    "bulk_orthogonality": "exact only",
+    "determinant_recomputed": false,
+    "endpoint_orthogonality": "not promoted",
+    "ghost_link_kernel": "not evaluated",
+    "routes": [
+      "GHOST-A bulk",
+      "GHOST-B endpoint",
+      "GHOST-C residual link",
+      "GHOST-D C174 FP"
+    ],
+    "status": "C175_GHOST_BOUNDARY_COMPATIBLE_INTERFACE_SEPARATE"
+  },
+  "schema": "C178-GHOST-BOUNDARY-V1"
+}

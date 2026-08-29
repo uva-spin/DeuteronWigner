@@ -1,0 +1,39 @@
+{
+  "all_synthetic": true,
+  "records": [
+    {
+      "channel": "q qbar -> gamma*",
+      "content_hash": "17dddd7f5cb08218043d34d390f30ea6a668e5bb7a6f5b9502ab1b348b27ba7c",
+      "expression": "1",
+      "hard_id": "C23:HARD:DY:A0",
+      "order": "ANALYTIC_LO",
+      "physical": false,
+      "process_family": "DY",
+      "scheme": "C22Q_VALIDATION",
+      "source_tier": "SYNTHETIC_ANALYTIC_ORACLE"
+    },
+    {
+      "channel": "gamma* q -> q",
+      "content_hash": "313edd517c9a0df68d893120553f92e725a3f9bd6796f05cbe0c6f94fe4ee94f",
+      "expression": "1",
+      "hard_id": "C23:HARD:SIDIS:A0",
+      "order": "ANALYTIC_LO",
+      "physical": false,
+      "process_family": "SIDIS",
+      "scheme": "C22Q_VALIDATION",
+      "source_tier": "SYNTHETIC_ANALYTIC_ORACLE"
+    },
+    {
+      "channel": "gamma* g -> Q Qbar",
+      "content_hash": "36bdedacb3aecb213c12d876eadcc70453ca33b4e7338065c3b52ac45dae37ee",
+      "expression": "1",
+      "hard_id": "C23:HARD:HQDIS:A0",
+      "order": "ANALYTIC_LO",
+      "physical": false,
+      "process_family": "HQ_DIS",
+      "scheme": "C22Q_VALIDATION",
+      "source_tier": "SYNTHETIC_ANALYTIC_ORACLE"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

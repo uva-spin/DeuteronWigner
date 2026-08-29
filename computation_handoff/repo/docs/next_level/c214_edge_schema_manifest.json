@@ -1,0 +1,37 @@
+{
+  "schema": "C214-EDGE-SCHEMA-MANIFEST-V1",
+  "artifact": "edge_schema_manifest",
+  "package_root": "da080802cc9f8d0719ed211446b661eb29b5736e746aebeccfc5a95040602b72",
+  "status": "C214_C213_PHYSICAL_INPUT_MAP_SCHEMA_READY_SIX_C43_ADAPTER_CALCULATIONS_REQUIRED",
+  "plan": "PHYSINPUTMAP1-B",
+  "physical_values": false,
+  "map_executable": false,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_PHYSICAL_INPUT_MAP_EDGE_V1",
+    "required": [
+      "edge_id",
+      "quantity",
+      "source",
+      "target",
+      "scheme_in",
+      "scheme_out",
+      "scale_in",
+      "scale_out",
+      "Nf_in",
+      "Nf_out",
+      "units_in",
+      "units_out",
+      "authority",
+      "status",
+      "not_zero"
+    ],
+    "root": "bb29f071934c33f57f409b2d46cda8d6d0dfca01eb2a8a286da4dd979cba1c78"
+  }
+}

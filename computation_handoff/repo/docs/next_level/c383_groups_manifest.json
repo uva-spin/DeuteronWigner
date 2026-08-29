@@ -1,0 +1,311 @@
+{
+  "package_root": "ed3485b129f27f4c1b571a3c036f08423b3d15120c0bc8c3b5b1536b209b3fc0",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECGROUP1-C",
+  "record": {
+    "counts": {
+      "distribution": 6,
+      "fragmentation": 6,
+      "soft": 4,
+      "total": 16
+    },
+    "groups": {
+      "distribution": [
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": false,
+          "group": "distribution",
+          "id": "DR.qq",
+          "integral_ref": "C381.real.DR.qq",
+          "mass_IR": false,
+          "measurement": "Mx regular/plus",
+          "numerator_ref": "C376.DR.qq",
+          "regions": [
+            "IR",
+            "endpoint"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": false,
+          "group": "distribution",
+          "id": "DR.qv",
+          "integral_ref": "C381.real.DR.qv",
+          "mass_IR": false,
+          "measurement": "Mx plus",
+          "numerator_ref": "C376.DR.qv",
+          "regions": [
+            "IR",
+            "alpha",
+            "endpoint"
+          ],
+          "relative_multiplier": 2
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": false,
+          "group": "distribution",
+          "id": "DR.vv",
+          "integral_ref": "C381.real.DR.vv",
+          "mass_IR": false,
+          "measurement": "Mx endpoint",
+          "numerator_ref": "C376.DR.vv",
+          "regions": [
+            "IR",
+            "alpha",
+            "endpoint"
+          ],
+          "relative_multiplier": -1
+        },
+        {
+          "MSbar_counterterm": "CT.Z2q",
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": true,
+          "group": "distribution",
+          "id": "Sigma_q",
+          "integral_ref": "C381.loop.Sigma",
+          "mass_IR": false,
+          "measurement": "delta(1-x)deltaT",
+          "numerator_ref": "C376.Sigma_q",
+          "regions": [
+            "UV",
+            "IR"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": "CT.Zv",
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": true,
+          "group": "distribution",
+          "id": "W_v",
+          "integral_ref": "C381.loop.W_v",
+          "mass_IR": false,
+          "measurement": "delta(1-x)deltaT",
+          "numerator_ref": "C376.W_v",
+          "regions": [
+            "UV",
+            "IR",
+            "alpha"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": "CT.Zvert.q",
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": true,
+          "group": "distribution",
+          "id": "V_qv",
+          "integral_ref": "C381.loop.V_qv",
+          "mass_IR": false,
+          "measurement": "delta(1-x)deltaT",
+          "numerator_ref": "C376.V_qv",
+          "regions": [
+            "UV",
+            "IR",
+            "alpha"
+          ],
+          "relative_multiplier": 2
+        }
+      ],
+      "fragmentation": [
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": "plus/minus exact crossing",
+          "endpoint_owner": false,
+          "group": "fragmentation",
+          "id": "FR.qq",
+          "integral_ref": "C381.cross.DR.qq",
+          "mass_IR": false,
+          "measurement": "Mz crossed",
+          "numerator_ref": "C376.cross.DR.qq",
+          "regions": [
+            "IR",
+            "endpoint"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": "plus/minus exact crossing",
+          "endpoint_owner": false,
+          "group": "fragmentation",
+          "id": "FR.qv",
+          "integral_ref": "C381.cross.DR.qv",
+          "mass_IR": false,
+          "measurement": "Mz crossed",
+          "numerator_ref": "C376.cross.DR.qv",
+          "regions": [
+            "IR",
+            "beta",
+            "endpoint"
+          ],
+          "relative_multiplier": 2
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": "plus/minus exact crossing",
+          "endpoint_owner": false,
+          "group": "fragmentation",
+          "id": "FR.vv",
+          "integral_ref": "C381.cross.DR.vv",
+          "mass_IR": false,
+          "measurement": "Mz crossed",
+          "numerator_ref": "C376.cross.DR.vv",
+          "regions": [
+            "IR",
+            "beta",
+            "endpoint"
+          ],
+          "relative_multiplier": -1
+        },
+        {
+          "MSbar_counterterm": "CT.Z2q",
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": "plus/minus exact crossing",
+          "endpoint_owner": true,
+          "group": "fragmentation",
+          "id": "Sigma_q",
+          "integral_ref": "C381.cross.Sigma_q",
+          "mass_IR": false,
+          "measurement": "Mz crossed",
+          "numerator_ref": "C376.cross.Sigma_q",
+          "regions": [
+            "UV",
+            "IR"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": "CT.Ztv",
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": "plus/minus exact crossing",
+          "endpoint_owner": true,
+          "group": "fragmentation",
+          "id": "W_v",
+          "integral_ref": "C381.cross.W_v",
+          "mass_IR": false,
+          "measurement": "Mz crossed",
+          "numerator_ref": "C376.cross.W_v",
+          "regions": [
+            "UV",
+            "IR",
+            "beta"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": "CT.Ztvert.q",
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": "plus/minus exact crossing",
+          "endpoint_owner": true,
+          "group": "fragmentation",
+          "id": "V_qv",
+          "integral_ref": "C381.cross.V_qv",
+          "mass_IR": false,
+          "measurement": "Mz crossed",
+          "numerator_ref": "C376.cross.V_qv",
+          "regions": [
+            "UV",
+            "IR",
+            "beta"
+          ],
+          "relative_multiplier": 2
+        }
+      ],
+      "soft": [
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": true,
+          "group": "soft",
+          "id": "S.virtual",
+          "integral_ref": "C381.loop.S.virtual",
+          "mass_IR": false,
+          "measurement": "one",
+          "numerator_ref": "C376.S.virtual",
+          "regions": [
+            "UV",
+            "IR",
+            "alpha",
+            "beta",
+            "mixed"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": false,
+          "group": "soft",
+          "id": "S.real.v",
+          "integral_ref": "C381.softcut.v",
+          "mass_IR": false,
+          "measurement": "Mb-1",
+          "numerator_ref": "C376.S.real.v",
+          "regions": [
+            "IR",
+            "alpha"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": false,
+          "group": "soft",
+          "id": "S.real.tv",
+          "integral_ref": "C381.softcut.tv",
+          "mass_IR": false,
+          "measurement": "Mb-1",
+          "numerator_ref": "C376.S.real.tv",
+          "regions": [
+            "IR",
+            "beta"
+          ],
+          "relative_multiplier": 1
+        },
+        {
+          "MSbar_counterterm": null,
+          "common_prefactor": "g^2*CF*mu^(2epsilon)",
+          "crossing": null,
+          "endpoint_owner": false,
+          "group": "soft",
+          "id": "S.real.interference",
+          "integral_ref": "C381.softcut.interference",
+          "mass_IR": false,
+          "measurement": "Mb-1",
+          "numerator_ref": "C376.S.real.interference",
+          "regions": [
+            "IR",
+            "alpha",
+            "beta",
+            "mixed"
+          ],
+          "relative_multiplier": 1
+        }
+      ]
+    },
+    "order": "assemble -> integrate -> alpha/beta both orders -> epsilon UV/IR -> MSbar UV",
+    "root": "617dc98623f9b48e94944c21a1234e7a576676146620ea01b2b4ecf744ec5cc1",
+    "soft_count_once": true
+  },
+  "status": "C383_EXECUTABLE_GAUGE_COMPLETE_JMY_GROUP_AST_ASSEMBLED_LAURENT_EVALUATION_READY",
+  "validation": "BOUND"
+}

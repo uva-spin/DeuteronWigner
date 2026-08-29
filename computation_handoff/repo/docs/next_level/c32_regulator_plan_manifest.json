@@ -1,0 +1,58 @@
+{
+  "frozen_before_one_loop": true,
+  "hamiltonian_scale_lambda_H_GeV": 1.2,
+  "post_result_changes": 0,
+  "primary": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+  "schema_version": "1.0.0",
+  "trajectory": [
+    {
+      "K": [
+        9,
+        2
+      ],
+      "Nmax": 8,
+      "bHO_GeV": 0.4,
+      "boundary_conditions": "quark/antiquark antiperiodic half-integer; gluon periodic nonzero integer",
+      "content_hash": "9bf866ac3a68531e5cdb710a524a1bab71f5aab0eba1eb222611d008de019e50",
+      "endpoint_regulator": "x_min=1/18 LONGITUDINAL_ENDPOINT_REGULATOR",
+      "hamiltonian_counterterm_id": "C32.HAMILTONIAN.CT.UNDERIVED",
+      "ir_scale_GeV": 0.1414213562373095,
+      "plan_id": "C7:H0:RESOLUTION:018f8de2d41a86141555",
+      "uv_scale_GeV": 1.1313708498984762,
+      "zero_mode_policy": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER; sensitivity unresolved"
+    },
+    {
+      "K": [
+        11,
+        2
+      ],
+      "Nmax": 10,
+      "bHO_GeV": 0.45,
+      "boundary_conditions": "quark/antiquark antiperiodic half-integer; gluon periodic nonzero integer",
+      "content_hash": "5416b3e120ee1f8db83487aa1231bf482836b8608a07a2dfec62367660d8e320",
+      "endpoint_regulator": "x_min=1/18 LONGITUDINAL_ENDPOINT_REGULATOR",
+      "hamiltonian_counterterm_id": "C32.HAMILTONIAN.CT.UNDERIVED",
+      "ir_scale_GeV": 0.14230249470757705,
+      "plan_id": "C7:H0:RESOLUTION:37ac11d0330561554f97",
+      "uv_scale_GeV": 1.4230249470757708,
+      "zero_mode_policy": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER; sensitivity unresolved"
+    },
+    {
+      "K": [
+        13,
+        2
+      ],
+      "Nmax": 12,
+      "bHO_GeV": 0.5,
+      "boundary_conditions": "quark/antiquark antiperiodic half-integer; gluon periodic nonzero integer",
+      "content_hash": "8ab3cf86c0d8a98007b0268cb5a1b4216814b639bf7a15e6132091217c69848a",
+      "endpoint_regulator": "x_min=1/18 LONGITUDINAL_ENDPOINT_REGULATOR",
+      "hamiltonian_counterterm_id": "C32.HAMILTONIAN.CT.UNDERIVED",
+      "ir_scale_GeV": 0.14433756729740646,
+      "plan_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+      "uv_scale_GeV": 1.7320508075688772,
+      "zero_mode_policy": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER; sensitivity unresolved"
+    }
+  ],
+  "uv_ir_scales_are_diagnostic_not_exact_cutoffs": true
+}

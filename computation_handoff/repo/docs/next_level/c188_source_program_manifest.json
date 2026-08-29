@@ -1,0 +1,75 @@
+{
+  "count": 2,
+  "root": "bdd850b0d1e39dc49828ff34a936c8215f11334fbc7ba072e39bdaa93cef8647",
+  "rows": [
+    {
+      "branch_ids": [
+        "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+        "C188-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q"
+      ],
+      "coupling_degree": 2,
+      "field_slots": [
+        "q",
+        "qbar",
+        "g_1",
+        "g_2"
+      ],
+      "inverse_derivative_slots": [
+        "UNRESOLVED_SOURCE_PLACEMENT"
+      ],
+      "operator_order": "SOURCE_AST_NOT_EXPOSED",
+      "primitive_owner": "C112_INSTANTANEOUS_FERMION_QGG",
+      "program": [
+        [
+          "SELECT_CREATION_ANNIHILATION_BRANCH",
+          "source AST unavailable"
+        ],
+        [
+          "RETURN_TYPED_SOURCE_BRANCH",
+          "SOURCE_EXPRESSION_INCOMPLETE"
+        ]
+      ],
+      "program_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-SOURCE-PROGRAM",
+      "root": "1d953889a0dd139e07051d428bf91d4fa1c25df609de4cb13765dc4af6299a72",
+      "safe": true,
+      "source_expression_status": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "source_root": "64a479e897d64388464d1d2b15772b12d023a862ba834f206ceeed9dc9f92e51",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "branch_ids": [
+        "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+        "C188-C127_GAUSS_CURRENT_QGG-QGG_TO_Q"
+      ],
+      "coupling_degree": 2,
+      "field_slots": [
+        "q",
+        "qbar",
+        "g_1",
+        "g_2"
+      ],
+      "inverse_derivative_slots": [
+        "UNRESOLVED_SOURCE_PLACEMENT"
+      ],
+      "operator_order": "SOURCE_AST_NOT_EXPOSED",
+      "primitive_owner": "C127_GAUSS_CURRENT_QGG",
+      "program": [
+        [
+          "SELECT_CREATION_ANNIHILATION_BRANCH",
+          "source AST unavailable"
+        ],
+        [
+          "RETURN_TYPED_SOURCE_BRANCH",
+          "SOURCE_EXPRESSION_INCOMPLETE"
+        ]
+      ],
+      "program_id": "C188-C127_GAUSS_CURRENT_QGG-SOURCE-PROGRAM",
+      "root": "ca1f6b39177d6082edf863af6d7cfb0320d441d2928cae21eeb0c3180530d87c",
+      "safe": true,
+      "source_expression_status": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "source_root": "78890aabd3c67d3471fac83d3d7b536fc9547c9b5bb60a1289d76573092e0c24",
+      "units": "GeV^2/g_s^2"
+    }
+  ],
+  "schema": "C188-SOURCE-PROGRAM-V1"
+}

@@ -1,0 +1,20 @@
+{
+  "C40": "not imported",
+  "C47_raw_tuples": "not imported",
+  "C50_combined": "not imported",
+  "C53": "read-only records/runtime only",
+  "ablation": "blocker detects removal of required Iferm contract",
+  "static": {
+    "forbidden": [
+      "canonical_kernel",
+      "evaluate_canonical_vertex",
+      "m0b",
+      "C40",
+      "assemble_physical_vertex"
+    ],
+    "found": [],
+    "guard": "C54_AUDIT_ISOLATION",
+    "pass": true
+  },
+  "status": "PASS"
+}

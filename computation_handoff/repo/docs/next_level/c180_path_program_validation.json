@@ -1,0 +1,20 @@
+{
+  "degree1_routes": [
+    "D1-A analytic",
+    "D1-B recurrence",
+    "D1-C bounded quadrature",
+    "D1-D reversal",
+    "D1-E reparameterization",
+    "D1-F composition"
+  ],
+  "degree2_routes": [
+    "D2-A direct nested",
+    "D2-B segmented Chen composition",
+    "D2-C ordered differential",
+    "D2-D reverse/generated-adjoint",
+    "D2-E bounded quadrature",
+    "D2-F safe replay"
+  ],
+  "grammar": "FINITE_HO_PATH_SIGNATURE_PROGRAM_V1",
+  "safe_replay": true
+}

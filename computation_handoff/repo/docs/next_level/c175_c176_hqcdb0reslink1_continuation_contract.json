@@ -1,0 +1,13 @@
+{
+  "schema": "C175-C176-HQCDB0RESLINK1-CONTINUATION-V1",
+  "continuation": "C176/HQCDB0RESLINK1",
+  "parent": "C175/HQCDB0GHOSTSECTOR1",
+  "parent_commit": "6438ff660bccb07cb3bfccb2ad61d3a60cbea123fd5a216595c197fbba42926f",
+  "parent_status": "C175_C174_LOCAL_P0_GHOST_AUTHORITY_READY_RETAINED_Q0_B0_SOURCE_ORTHOGONAL",
+  "parent_plan": "B0GHOSTSECTOR1-H",
+  "reason": "retained Q0 bulk is exactly orthogonal to local P0 ghosts, while residual-link and finite-shell boundary closure remains an explicit nonmatrix interface",
+  "first_remaining_object": "C175-RESIDUAL-LINK-BOUNDARY-OPERATOR",
+  "required_scope": ["endpoint/link operator", "finite-shell leakage completion", "open-adjoint covariance", "determinant boundary factorization"],
+  "nonclaims": ["no source acquisition", "no ghost mass", "no physical ghost loop", "no complete self-energy", "no BRST/ST promotion", "no adapter", "no counterterm/null selection", "no quantum object"],
+  "push": false
+}

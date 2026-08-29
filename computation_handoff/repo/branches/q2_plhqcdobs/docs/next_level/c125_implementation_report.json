@@ -1,0 +1,31 @@
+{
+  "schema": "C125-ICDOMAIN2-IMPLEMENTATION-REPORT-V1",
+  "status": "C125_C123_C124_SOURCE_DERIVED_LOGICAL_WITNESS_AUTHORITY_READY",
+  "package_root": "a66760cec74797e7295cdf2983d2d40d7782d0fe909b5f57558401276cfcc9df",
+  "c124_package_root": "2b08f059a9efecff9f4fc4bbfad5a72dea9f0fb28855326107d1824e092417da",
+  "provenance": {
+    "C123_contract": "ABSENT_FROM_C123_BASELINE",
+    "C124_contract_owner": "C124",
+    "C125_consumed_contract": "docs/next_level/c125_icdomain2_import_contract.json"
+  },
+  "conditioning_keys": 72,
+  "representations": {"segments": 24, "expanded_stream": false, "rank_unrank": true},
+  "logical_census": {"K9_2_N8_b0.40": 8901801216, "K11_2_N10_b0.45": 72171356400, "K13_2_N12_b0.50": 393460752960, "total": 474533910576},
+  "route_checks": {"D_A": 24, "D_B": 24, "identity_mismatches": 0, "order_mismatches": 0, "cardinality_mismatches": 0, "target_mismatches": 0, "orientation_mismatches": 0},
+  "target_checks": {"T_A": 6, "T_B": 6, "identity_mismatches": 0, "order_mismatches": 0, "orientation_mismatches": 0},
+  "cross_sector_zero_classes": 8,
+  "cross_sector_numerical_witnesses": 0,
+  "values": 0,
+  "bounds": 0,
+  "component_sums": 0,
+  "sparse_entries": 0,
+  "matrix_free_actions": 0,
+  "C53_values_consumed": 0,
+  "C112_values_consumed": 0,
+  "physical_couplings_consumed": 0,
+  "counterterm_values_consumed": 0,
+  "deterministic_builds": 2,
+  "serial_sharded_restart": "CLOSED",
+  "mutation_controls": 384,
+  "next": "C126/ICSUM3"
+}

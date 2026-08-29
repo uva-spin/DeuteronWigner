@@ -1,0 +1,3 @@
+# C48/HQCD implementation report
+
+C48 verifies C47 runtime/source fidelity and stops fail-closed at `C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE`. The C47 canonical functional mixes `|mrel|=0` and `|mrel|=1` while declaring `L^(-1/2) GeV^(1+|mrel|)`, and it provides no source-derived C43 canonical-P-minus to invariant-mass-squared conversion. A numerical SU(3) insertion would therefore not be a source-derived operator. The exact next branch is **C49/VERTEX1 — exhaustive tuple/SU(3)/triplet canonical-matrix completion**. No local matrix, JMY Wilson matrix, bilocal TMD, soft subtraction, one-loop result, matching kernel, proton TMD, ART25 bridge, fit, inference, process, or production route was created.

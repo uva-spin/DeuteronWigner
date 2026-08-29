@@ -1,0 +1,8 @@
+{
+  "schema": "C109-LONGITUDINAL-NORMALIZATION-DERIVATION-V1",
+  "route_A": {"four_modes": "(2L)^-2", "x_measure": "2L", "inverse_partial": "L/(pi*K_channel)", "net_L": "L^0", "net": "1/(2*pi*K_channel) before W3"},
+  "route_B": {"four_mode_convolution": "(2L)^-2", "delta": "2L", "inverse_partial": "L/(pi*K_channel)", "net_L": "L^0", "net": "1/(2*pi*K_channel) before W3"},
+  "W3": "-1/2",
+  "agreement": true,
+  "remaining_issue": "transverse/state dimensions do not yield declared Pminus GeV"
+}

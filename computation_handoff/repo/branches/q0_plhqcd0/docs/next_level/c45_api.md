@@ -1,0 +1,1 @@
+"# C45 API\n\n`build_library()` deterministically emits only one-particle arrays. `longitudinal_modes`, `ho_momentum`, `ho_coordinate`, `ho_overlap`, `spinor`, `polarization`, `local_overlap_kernel`, `color_triplet_projector`, and `zero_mode_projectors` are C46 ingredients, not action matrices.\n"

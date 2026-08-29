@@ -1,0 +1,71 @@
+{
+  "package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "physical": false,
+  "plan": "PHYSICALMATCHPHASE1-B",
+  "record": [
+    {
+      "Hermiticity": "source/sink adjoint pairing retained",
+      "K": 9,
+      "Nmax": 8,
+      "bHO": "0.40 GeV^-1",
+      "basis": [
+        "REGULAR",
+        "PLUS",
+        "ENDPOINT",
+        "SOFT"
+      ],
+      "boundary": "caller-bound separate owner",
+      "continuum_extrapolation": false,
+      "holonomy": "caller-bound separate owner",
+      "map": "P_i Gamma_FB(K,Nmax,bHO,boundary,holonomy)-P_i Gamma_vac",
+      "matrix_free": true,
+      "physical": false,
+      "rank": 4,
+      "resolution": "K9",
+      "resolution_average": false
+    },
+    {
+      "Hermiticity": "source/sink adjoint pairing retained",
+      "K": 11,
+      "Nmax": 10,
+      "bHO": "0.45 GeV^-1",
+      "basis": [
+        "REGULAR",
+        "PLUS",
+        "ENDPOINT",
+        "SOFT"
+      ],
+      "boundary": "caller-bound separate owner",
+      "continuum_extrapolation": false,
+      "holonomy": "caller-bound separate owner",
+      "map": "P_i Gamma_FB(K,Nmax,bHO,boundary,holonomy)-P_i Gamma_vac",
+      "matrix_free": true,
+      "physical": false,
+      "rank": 4,
+      "resolution": "K11",
+      "resolution_average": false
+    },
+    {
+      "Hermiticity": "source/sink adjoint pairing retained",
+      "K": 13,
+      "Nmax": 12,
+      "bHO": "0.50 GeV^-1",
+      "basis": [
+        "REGULAR",
+        "PLUS",
+        "ENDPOINT",
+        "SOFT"
+      ],
+      "boundary": "caller-bound separate owner",
+      "continuum_extrapolation": false,
+      "holonomy": "caller-bound separate owner",
+      "map": "P_i Gamma_FB(K,Nmax,bHO,boundary,holonomy)-P_i Gamma_vac",
+      "matrix_free": true,
+      "physical": false,
+      "rank": 4,
+      "resolution": "K13",
+      "resolution_average": false
+    }
+  ],
+  "status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT"
+}

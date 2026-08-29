@@ -1,0 +1,36 @@
+{
+  "offdiagonal_silently_zero": false,
+  "records": [
+    {
+      "channel": "q<-q",
+      "one_loop": "UNRESOLVED_NOT_ZERO",
+      "status": "CALCULATION_REQUIRED",
+      "tree": "IDENTITY"
+    },
+    {
+      "channel": "q<-g",
+      "one_loop": "UNRESOLVED_NOT_ZERO",
+      "status": "CALCULATION_REQUIRED",
+      "tree": "ZERO_WITH_TREE_LEVEL_PROOF"
+    },
+    {
+      "channel": "q<-qbar",
+      "one_loop": "UNRESOLVED_NOT_ZERO",
+      "status": "CALCULATION_REQUIRED",
+      "tree": "ZERO_WITH_TREE_LEVEL_PROOF"
+    },
+    {
+      "channel": "nonsinglet",
+      "one_loop": "UNRESOLVED_NOT_ZERO",
+      "status": "CALCULATION_REQUIRED",
+      "tree": "ZERO_WITH_TREE_LEVEL_PROOF"
+    },
+    {
+      "channel": "singlet",
+      "one_loop": "UNRESOLVED_NOT_ZERO",
+      "status": "CALCULATION_REQUIRED",
+      "tree": "ZERO_WITH_TREE_LEVEL_PROOF"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,28 @@
+{
+  "allowed_opcodes": [
+    "LOAD_FIELD_OPERATOR",
+    "LOAD_PROJECT_DERIVATIVE",
+    "LOAD_FINITE_CELL_INVERSE_DERIVATIVE",
+    "LOAD_COLOR_GENERATOR",
+    "LOAD_SPIN_MATRIX",
+    "ORDER_PRODUCT",
+    "COMMUTATOR",
+    "ANTICOMMUTATOR",
+    "ADD_TERM",
+    "MULTIPLY_SCALAR",
+    "NORMAL_ORDER",
+    "SELECT_CREATION_ANNIHILATION_BRANCH",
+    "TAKE_HERMITIAN_PARTNER",
+    "RETURN_TYPED_SOURCE_BRANCH"
+  ],
+  "arbitrary_callable": false,
+  "data_only": true,
+  "dynamic_import": false,
+  "eval": false,
+  "immutable": true,
+  "network": false,
+  "physical_defaults": false,
+  "pickle": false,
+  "root": "fbe5def403b1416ceb997074905ae75ff5256a241d0cb0cf27474b8d7fe5d1ca",
+  "schema": "QGG_PRIMITIVE_SOURCE_PROGRAM_V1"
+}

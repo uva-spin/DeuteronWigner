@@ -1,0 +1,16 @@
+{
+  "schema": "C121-C122-ICDOMAIN-IMPORT-CONTRACT-V1",
+  "parent_status": "C121_ICSUM2_LOGICAL_WITNESS_DOMAIN_INCOMPLETE",
+  "blocking_object": "C118 logical witness IDs, reversible ranks, physical targets, and target spans",
+  "scope": "publish the project-owned descendant logical witness domain before any component aggregation",
+  "forbidden": [
+    "component sums",
+    "sparse operators",
+    "matrix-free actions",
+    "physical coupling",
+    "counterterm solution",
+    "C112 substitution",
+    "C53 propagation",
+    "local-QCD polynomial"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "stable_id": "C25.REQUEST.SCHEMA.ART25",
+  "required": ["filename", "sha256", "license", "upstream_version", "member_count", "member_id_range", "format", "citation"],
+  "requested_sets": ["MSHT20_REP", "MAPFF10NNLOPIp", "MAPFF10NNLOKAp"],
+  "benchmark_required": ["observable_definition", "kinematics", "cuts", "member_id", "engine_commit", "payload_commit", "dataprocessor_commit", "integration_mode", "value", "tolerance"]
+}

@@ -1,0 +1,36 @@
+{
+  "authority_record": {
+    "count": 3,
+    "direct_scan": "epsilon=.08,.04,.02,.01,.005 confirms epsilon^2 V0 approaches finite values",
+    "root": "0168eaa7428624dad83d1df70ef559866add12b8b66305e5365a4dbd06a7ae3d",
+    "rows": [
+      {
+        "generic_behavior": "V0=-A_wall(t)/delta^2+O(delta^-1)",
+        "measure_behavior": "J/6=B_wall(t)*delta^2+O(delta^4)",
+        "root_distance": "|sin pi u|",
+        "wall": "alpha_u",
+        "weighted_behavior": "finite generic-wall limit; intersections require joint regulator"
+      },
+      {
+        "generic_behavior": "V0=-A_wall(t)/delta^2+O(delta^-1)",
+        "measure_behavior": "J/6=B_wall(t)*delta^2+O(delta^4)",
+        "root_distance": "|sin pi v|",
+        "wall": "alpha_v",
+        "weighted_behavior": "finite generic-wall limit; intersections require joint regulator"
+      },
+      {
+        "generic_behavior": "V0=-A_wall(t)/delta^2+O(delta^-1)",
+        "measure_behavior": "J/6=B_wall(t)*delta^2+O(delta^4)",
+        "root_distance": "|sin pi(v-u)|",
+        "wall": "alpha_v-u",
+        "weighted_behavior": "finite generic-wall limit; intersections require joint regulator"
+      }
+    ]
+  },
+  "package_root": "bd276d6c64b573f7ccf791e22e5251cd16f9f871b27cada4caf07de32b4bc173",
+  "physical": false,
+  "plan": "RIMASSV0FINITEPART1-B",
+  "schema": "C305-WALL_ASYMPTOTICS-CONTRACT-V1",
+  "status": "C305_SOURCE_COMPATIBLE_CENTER_SUBTRACTED_SYMMETRIC_WALL_FINITE_PART_SCHEME_READY_NUMERICAL_LIMIT_EVALUATION_MISSING",
+  "validation": "BOUND"
+}

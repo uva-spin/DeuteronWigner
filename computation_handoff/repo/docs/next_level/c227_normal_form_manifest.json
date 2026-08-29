@@ -1,0 +1,176 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "normal_form_manifest",
+  "authority_record": {
+    "complete": 8,
+    "conjugates_remaining": 0,
+    "count": 8,
+    "root": "d6824c9aa8c5067503aecb746d940c98f179b0291ab345137a2dfa773522c410",
+    "rows": [
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(-1), Integer(2), Pow(Symbol('x_g', positive=True, real=True), Integer(-2)), Pow(Symbol('x_q', positive=True, real=True), Integer(-1)), Add(Symbol('q_x', positive=True, real=True), Mul(I, Symbol('q_y', positive=True, real=True))), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)), Add(Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(5, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(3))), Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Pow(Symbol('x_g', positive=True, real=True), Rational(5, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(3))), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(5, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2)))))",
+        "expression_sha256": "4db30f647d8acde27acaa65fe8c3b3f973efb1341be37cc79aacb1b19f696b02",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": -1,
+        "h_in": -1,
+        "h_out": -1,
+        "normal_form_id": "C227-NF-HO-1-HI-1-HG-1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(2), Pow(Symbol('x_g', positive=True, real=True), Integer(-1)), Symbol('x_q', positive=True, real=True), Add(Symbol('q_x', positive=True, real=True), Mul(Integer(-1), I, Symbol('q_y', positive=True, real=True))), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Add(Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)))",
+        "expression_sha256": "d8c02aca4b01c1376ec836b043c6666e31d552bd82178221d424c0375a3d094e",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": 1,
+        "h_in": -1,
+        "h_out": -1,
+        "normal_form_id": "C227-NF-HO-1-HI-1-HG1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(-1), Integer(2), Pow(Symbol('x_g', positive=True, real=True), Rational(-1, 2)), Symbol('x_q', positive=True, real=True), Pow(Add(Symbol('q_x', positive=True, real=True), Mul(I, Symbol('q_y', positive=True, real=True))), Integer(2)), Add(Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True)), Symbol('m_q', positive=True, real=True)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)))",
+        "expression_sha256": "8b5f2f311520b471c3f43db36f0ea85ea25c30a3a3435c10e39e32e3266f2b80",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": -1,
+        "h_in": 1,
+        "h_out": -1,
+        "normal_form_id": "C227-NF-HO-1-HI1-HG-1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(-1), Integer(2), Pow(Symbol('x_g', positive=True, real=True), Integer(-1)), Pow(Symbol('x_q', positive=True, real=True), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)), Add(Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(-1), Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2))), Mul(Pow(Symbol('m_q', positive=True, real=True), Integer(3)), Symbol('x_g', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Integer(-1), Pow(Symbol('m_q', positive=True, real=True), Integer(3)), Symbol('x_g', positive=True, real=True)), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2))), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2)))))",
+        "expression_sha256": "d5325d8bcb2a9e7c598b99429b2d8457a71b5eb1cb96c6c449f5672b96b8184d",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": 1,
+        "h_in": 1,
+        "h_out": -1,
+        "normal_form_id": "C227-NF-HO-1-HI1-HG1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(-1), Integer(2), Pow(Symbol('x_g', positive=True, real=True), Integer(-1)), Pow(Symbol('x_q', positive=True, real=True), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)), Add(Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(-1), Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2))), Mul(Pow(Symbol('m_q', positive=True, real=True), Integer(3)), Symbol('x_g', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Integer(-1), Pow(Symbol('m_q', positive=True, real=True), Integer(3)), Symbol('x_g', positive=True, real=True)), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2))), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(1, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(-1), Symbol('m_q', positive=True, real=True), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Integer(2)))))",
+        "expression_sha256": "d5325d8bcb2a9e7c598b99429b2d8457a71b5eb1cb96c6c449f5672b96b8184d",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": -1,
+        "h_in": -1,
+        "h_out": 1,
+        "normal_form_id": "C227-NF-HO1-HI-1-HG-1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(-1), Integer(2), Pow(Symbol('x_g', positive=True, real=True), Rational(-1, 2)), Symbol('x_q', positive=True, real=True), Pow(Add(Symbol('q_x', positive=True, real=True), Mul(Integer(-1), I, Symbol('q_y', positive=True, real=True))), Integer(2)), Add(Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True)), Symbol('m_q', positive=True, real=True)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)))",
+        "expression_sha256": "632f94623e427e39aea4d2febc4eda3d2f745b6fbd2e3e669b3a45b97df5165d",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": 1,
+        "h_in": -1,
+        "h_out": 1,
+        "normal_form_id": "C227-NF-HO1-HI-1-HG1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(-1), Integer(2), Pow(Symbol('x_g', positive=True, real=True), Integer(-1)), Symbol('x_q', positive=True, real=True), Add(Symbol('q_x', positive=True, real=True), Mul(I, Symbol('q_y', positive=True, real=True))), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Add(Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)))",
+        "expression_sha256": "19113a43021a91c83b3984f6180c532137f049e77a9d553d64433fce01b6378b",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": -1,
+        "h_in": 1,
+        "h_out": 1,
+        "normal_form_id": "C227-NF-HO1-HI1-HG-1"
+      },
+      {
+        "branch": "positive sqrt(E+m)",
+        "conjugates_remaining": 0,
+        "constraint": "x_q+x_g=1; both positive",
+        "expression": "Mul(Integer(2), Pow(Symbol('x_g', positive=True, real=True), Integer(-2)), Pow(Symbol('x_q', positive=True, real=True), Integer(-1)), Add(Symbol('q_x', positive=True, real=True), Mul(Integer(-1), I, Symbol('q_y', positive=True, real=True))), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True), Symbol('m_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2)))), Rational(-1, 2)), Pow(Add(Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Integer(4), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_q', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('m_q', positive=True, real=True), Integer(2))), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_x', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True)), Mul(Pow(Integer(2), Rational(1, 2)), Pow(Symbol('q_y', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True))), Rational(-1, 2)), Add(Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(5, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Integer(2), Pow(Symbol('P_plus', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(3))), Mul(Integer(2), Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Pow(Symbol('x_g', positive=True, real=True), Rational(5, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(3))), Mul(Pow(Integer(2), Rational(1, 2)), Symbol('P_plus', positive=True, real=True), Symbol('m_q', positive=True, real=True), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2))), Mul(Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Pow(Symbol('x_g', positive=True, real=True), Rational(5, 2)), Pow(Symbol('x_q', positive=True, real=True), Rational(3, 2))), Mul(Pow(Symbol('m_q', positive=True, real=True), Integer(2)), Symbol('x_g', positive=True, real=True), Pow(Symbol('x_q', positive=True, real=True), Integer(2)))))",
+        "expression_sha256": "a00b97b51fdcb9ee9e1a4dfb7d35d000e678fddaee51d94352c011039c03e303",
+        "free_symbols": [
+          "P_plus",
+          "m_q",
+          "q_x",
+          "q_y",
+          "x_g",
+          "x_q"
+        ],
+        "h_g": 1,
+        "h_in": 1,
+        "h_out": 1,
+        "normal_form_id": "C227-NF-HO1-HI1-HG1"
+      }
+    ]
+  },
+  "conjugates": 0,
+  "normal_forms": 8,
+  "numeric_fit": 0,
+  "package_root": "4b84ddf7717c7792e825e62a4cd0c189eae18163cbece56e8a72033ccb1a3e1a",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVNORM1-A",
+  "schema": "C227-NORMAL-FORM-MANIFEST-V1",
+  "status": "C227_C226_EIGHT_EXACT_REAL_POSITIVE_BRANCH_PRIMITIVE_NORMAL_FORMS_READY"
+}

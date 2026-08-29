@@ -1,0 +1,38 @@
+{
+  "package_root": "a257d27946c9d44ffcf71dc7961185febd1a7cc05d99c797aea6d4698c61fda4",
+  "physical": false,
+  "plan": "RIMASSC43JMYPARAMREDUCE2-C",
+  "record": {
+    "count": 6,
+    "kinematically_closed": false,
+    "root": "db469aaca7c130b9621b652ed86a154aaea2b737925fc50dbe5d3e9f2e9667c9",
+    "rows": [
+      {
+        "missing": "endpoint tree projector definition",
+        "symbol": "proj_p_minus_ell"
+      },
+      {
+        "missing": "Dirac projector reduced to v plus/minus components",
+        "symbol": "vslash_proj"
+      },
+      {
+        "missing": "crossed Dirac projector",
+        "symbol": "tvslash_proj"
+      },
+      {
+        "missing": "projected momentum component",
+        "symbol": "p_minus_ell_proj"
+      },
+      {
+        "missing": "light-cone component expansion and transverse assumptions",
+        "symbol": "q_dot_v,p_dot_v"
+      },
+      {
+        "missing": "metric signature and completed-square polynomial with ordered i0",
+        "symbol": "virtual quadratic forms"
+      }
+    ]
+  },
+  "status": "C377_PARAMETER_REDUCTION_FAIL_CLOSED_KINEMATIC_CONTRACTION_AST_REQUIRED",
+  "validation": "BOUND"
+}

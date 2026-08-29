@@ -1,0 +1,24 @@
+{
+  "forbidden": "No exhaustive qg-by-q physical matrix is materialized.",
+  "objects": [
+    {
+      "dtype": "<f8",
+      "kind": "EXECUTABLE_NUMERICAL_EVALUATOR",
+      "name": "individual_vertex_holdouts",
+      "raw_C47_tuple_values": "NOT_CONSUMED",
+      "runtime_path": "data/runtime/c50_vsrc/individual_vertex_holdouts.npy",
+      "sha256": "c63cbb4a644b664b501fda07bbe4a2f5f6e51ae84c95afba5ff65ef369a03c75",
+      "shape": [
+        6,
+        4
+      ]
+    },
+    {
+      "kind": "EXECUTABLE_SYMBOLIC_OBJECT",
+      "name": "convention_map",
+      "sha256": "09a64351f0745a57fefcdf575cdda35dd04d7f55d753c1bdf47e52ec5459070b"
+    }
+  ],
+  "runtime_root": "data/runtime/c50_vsrc",
+  "status": "C50_CANONICAL_VERTEX_SOURCE_CONVENTION_READY"
+}

@@ -1,0 +1,6 @@
+{
+  "focused_live_projection_contract_mutations": 192,
+  "scope": "C43 source/action/projection contract mutations only; no C44 numerical arrays exist.",
+  "status": "PASS",
+  "tests": "PYTHONPATH=src python3 -m pytest -q tests/test_c44_hqcd_preflight.py"
+}

@@ -1,0 +1,167 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "matching_functionals_contract",
+  "authority_record": {
+    "all_fields_closed": true,
+    "count": 4,
+    "root": "44efb292ec4030eb8858a730e60b24108676a6b3c85d74cddfc4a14d25474ea0",
+    "rows": [
+      {
+        "Abel_test_function": "r^(2n+|m|), 0<r<1; pair first, subtract, then r->1^-",
+        "CM_projector": "identity/not conflated",
+        "HO_resolution": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "boundary_link_holonomy": "caller-bound C254 class, stored separately",
+        "color_projector": "source ordered color",
+        "continuum_current_amplitude": "distributional pairing <W1,Delta_I2 W1> with Abel test family",
+        "direction": "I2_density_projector",
+        "external_wavepackets": "C264-PACKET-1",
+        "finite_cell_map": "C45/C117 coefficient map, resolution-specific",
+        "functional_id": "F_C117_1",
+        "normalization": "unit packet and Gram-dual functional",
+        "scale": "mu and packet widths explicit; no value selected",
+        "scheme": "PROJECT_C117_NONLOCAL_PACKET_V1",
+        "source_roots": [
+          "C117",
+          "68b3b372cef8080611691a927ce280e70c7b29011d0d9d91c8b8b17823637bb3"
+        ],
+        "source_sink_orientation": [
+          "forward",
+          "Hermitian reverse"
+        ],
+        "standard_physical_matching": "same smeared current amplitude matched to named continuum/physical observable after Ward/ST and scale transport",
+        "target_functional": "UNAVAILABLE_NOT_ZERO_C265",
+        "uncertainty": [
+          "packet family",
+          "mu",
+          "Abel r/order",
+          "HO resolution",
+          "scheme/condition"
+        ]
+      },
+      {
+        "Abel_test_function": "r^(2n+|m|), 0<r<1; pair first, subtract, then r->1^-",
+        "CM_projector": "identity/not conflated",
+        "HO_resolution": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "boundary_link_holonomy": "caller-bound C254 class, stored separately",
+        "color_projector": "source ordered color",
+        "continuum_current_amplitude": "distributional pairing <W2,Delta_derivative W2> with Abel test family",
+        "direction": "derivative_density",
+        "external_wavepackets": "C264-PACKET-2",
+        "finite_cell_map": "C45/C117 coefficient map, resolution-specific",
+        "functional_id": "F_C117_2",
+        "normalization": "unit packet and Gram-dual functional",
+        "scale": "mu and packet widths explicit; no value selected",
+        "scheme": "PROJECT_C117_NONLOCAL_PACKET_V1",
+        "source_roots": [
+          "C117",
+          "68b3b372cef8080611691a927ce280e70c7b29011d0d9d91c8b8b17823637bb3"
+        ],
+        "source_sink_orientation": [
+          "forward",
+          "Hermitian reverse"
+        ],
+        "standard_physical_matching": "same smeared current amplitude matched to named continuum/physical observable after Ward/ST and scale transport",
+        "target_functional": "UNAVAILABLE_NOT_ZERO_C265",
+        "uncertainty": [
+          "packet family",
+          "mu",
+          "Abel r/order",
+          "HO resolution",
+          "scheme/condition"
+        ]
+      },
+      {
+        "Abel_test_function": "r^(2n+|m|), 0<r<1; pair first, subtract, then r->1^-",
+        "CM_projector": "C64/C77 P_CM0",
+        "HO_resolution": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "boundary_link_holonomy": "caller-bound C254 class, stored separately",
+        "color_projector": "source ordered color",
+        "continuum_current_amplitude": "normalized CM-ground channel amplitude <W3|P_CM0 Gamma P_CM0|W3>",
+        "direction": "CM_ground",
+        "external_wavepackets": "C264-PACKET-3",
+        "finite_cell_map": "C45/C117 coefficient map, resolution-specific",
+        "functional_id": "F_C117_3",
+        "normalization": "unit packet and Gram-dual functional",
+        "scale": "mu and packet widths explicit; no value selected",
+        "scheme": "PROJECT_C117_NONLOCAL_PACKET_V1",
+        "source_roots": [
+          "C117",
+          "68b3b372cef8080611691a927ce280e70c7b29011d0d9d91c8b8b17823637bb3"
+        ],
+        "source_sink_orientation": [
+          "forward",
+          "Hermitian reverse"
+        ],
+        "standard_physical_matching": "same smeared current amplitude matched to named continuum/physical observable after Ward/ST and scale transport",
+        "target_functional": "UNAVAILABLE_NOT_ZERO_C265",
+        "uncertainty": [
+          "packet family",
+          "mu",
+          "Abel r/order",
+          "HO resolution",
+          "scheme/condition"
+        ]
+      },
+      {
+        "Abel_test_function": "r^(2n+|m|), 0<r<1; pair first, subtract, then r->1^-",
+        "CM_projector": "identity/not conflated",
+        "HO_resolution": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "boundary_link_holonomy": "caller-bound C254 class, stored separately",
+        "color_projector": "C74 U3 U3^dagger",
+        "continuum_current_amplitude": "normalized triplet channel amplitude <W4|P_3 Gamma P_3|W4>",
+        "direction": "triplet_projected",
+        "external_wavepackets": "C264-PACKET-4",
+        "finite_cell_map": "C45/C117 coefficient map, resolution-specific",
+        "functional_id": "F_C117_4",
+        "normalization": "unit packet and Gram-dual functional",
+        "scale": "mu and packet widths explicit; no value selected",
+        "scheme": "PROJECT_C117_NONLOCAL_PACKET_V1",
+        "source_roots": [
+          "C117",
+          "68b3b372cef8080611691a927ce280e70c7b29011d0d9d91c8b8b17823637bb3"
+        ],
+        "source_sink_orientation": [
+          "forward",
+          "Hermitian reverse"
+        ],
+        "standard_physical_matching": "same smeared current amplitude matched to named continuum/physical observable after Ward/ST and scale transport",
+        "target_functional": "UNAVAILABLE_NOT_ZERO_C265",
+        "uncertainty": [
+          "packet family",
+          "mu",
+          "Abel r/order",
+          "HO resolution",
+          "scheme/condition"
+        ]
+      }
+    ],
+    "schema": "C264-C117-NONLOCAL-MATCHING-FUNCTIONAL-V1",
+    "targets_evaluated": false
+  },
+  "package_root": "6aad37b4f5d278b249655c946529be10d159e5a2694c0bed09ef5f65df6c26dc",
+  "physical": false,
+  "plan": "C117NONLOCALMATCH1-B",
+  "schema": "C264-MATCHING_FUNCTIONALS-CONTRACT-V1",
+  "status": "C264_C117_FULL_RANK_NONLOCAL_MATCHING_FUNCTIONALS_READY_CONTINUUM_TARGET_EVALUATION_REMAINS",
+  "validation": "BOUND"
+}

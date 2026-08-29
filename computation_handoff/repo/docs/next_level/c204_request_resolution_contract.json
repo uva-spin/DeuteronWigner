@@ -1,0 +1,75 @@
+{
+  "schema": "C204-REQUEST-CONTRACT-V1",
+  "artifact": "request_contract",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 request_contract is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-REQUEST-V1",
+    "rows": [
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "previous_status": "PRESERVED_INHERITED_REQUEST",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "C197_ST6": "unchanged",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "previous_status": "C203_BRST_SOURCE_IDENTITY_LOCAL_P0_READY",
+        "terminal_status": "C204_ENDPOINT_GHOST_LINK_IDENTITY_READY",
+        "C197_ST6": "crosswalked",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "previous_status": "C203_BRST_SOURCE_IDENTITY_LOCAL_P0_READY",
+        "terminal_status": "C204_ENDPOINT_GHOST_LINK_IDENTITY_READY",
+        "C197_ST6": "crosswalked",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-ST-2",
+        "previous_status": "C203_BRST_SOURCE_IDENTITY_LOCAL_P0_READY",
+        "terminal_status": "C204_ENDPOINT_GHOST_LINK_IDENTITY_READY",
+        "C197_ST6": "crosswalked",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_MASS-2",
+        "previous_status": "PRESERVED_INHERITED_REQUEST",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "C197_ST6": "unchanged",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-MASS_SQUARED-2",
+        "previous_status": "PRESERVED_INHERITED_REQUEST",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "C197_ST6": "unchanged",
+        "physical": false
+      }
+    ],
+    "count": 6,
+    "all_six_visible": true,
+    "root": "9691dafafc69342cc137de21a64403864b91fc3f2ae8033c5e024fe41b742ac8"
+  }
+}

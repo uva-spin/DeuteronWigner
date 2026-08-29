@@ -1,0 +1,25 @@
+{
+  "authority_record": {
+    "callbacks": false,
+    "eval": false,
+    "executable": false,
+    "pickle": false,
+    "reason": "C290-MASS-BOUNDARY-ACTION-PARAMETER-RECORD",
+    "root": "b791307607659aa72eff01676b2147915dd74a2b491ad7765c6027013475214f",
+    "safe_opcodes": [
+      "LOAD_BOUNDARY_ACTION",
+      "LOAD_SECTOR_CLASS",
+      "EVALUATE_SECTOR_ACTION",
+      "MULTIPLY_ORBIT_STABILIZER_JACOBIAN",
+      "NORMALIZE_ALL_SECTORS_JOINTLY",
+      "PROPAGATE_K_COVARIANCE",
+      "RETURN_ENSEMBLE"
+    ]
+  },
+  "package_root": "6fb74af9c73a76e40b4b9e3ae10fdb87328b2a737c2e0d45d42e40fffe4ccb9f",
+  "physical": false,
+  "plan": "RIMASSBOUNDARYENSEMBLE1-B",
+  "schema": "C290-ACTION_TO_WEIGHT_PROGRAM-VALIDATION-V1",
+  "status": "C290_PHYSICAL_BOUNDARY_ENSEMBLE_SCHEMA_READY_BOUNDARY_ACTION_PARAMETER_RECORD_MISSING",
+  "validation": "PASS"
+}

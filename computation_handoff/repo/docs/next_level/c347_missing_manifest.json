@@ -1,0 +1,39 @@
+{
+  "package_root": "e0a8d3ae0c9e256f04a28995d8e7747b95969604cc165ffd48190a16fb35e2e3",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMECONVERT1-C",
+  "record": {
+    "missing_count": 5,
+    "numeric_evaluation_ready": false,
+    "root": "ceda4f06aad69bd4fa48e86f43f968109f99d105005b378571a4c627c1c8bae4",
+    "rows": [
+      {
+        "available": false,
+        "id": "C_FIN",
+        "object": "finite JMY-to-delta/Collins soft and rapidity conversion kernel"
+      },
+      {
+        "available": false,
+        "id": "GAMMA_PATH",
+        "object": "common-order anomalous dimensions and threshold-matched evolution path"
+      },
+      {
+        "available": false,
+        "id": "NORM_ART25_C43",
+        "object": "ART25/JMY/C43 operator normalization and double-count subtraction"
+      },
+      {
+        "available": false,
+        "id": "VOL_TRAJECTORY",
+        "object": "physical L,K,Nmax,bHO sequence, tolerance and weights"
+      },
+      {
+        "available": false,
+        "id": "CROSS_COV",
+        "object": "scheme/sequence cross-covariance blocks or generating replicas"
+      }
+    ]
+  },
+  "status": "C347_SYMBOLIC_SCHEME_VOLUME_CONVERSION_OPERATOR_DERIVED_FINITE_KERNEL_COEFFICIENTS_MISSING",
+  "validation": "BOUND"
+}

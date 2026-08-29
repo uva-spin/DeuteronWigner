@@ -1,0 +1,15 @@
+{
+  "schema": "C105-C104-INPUT-FREEZE-V1",
+  "status": "C105_BLOCKED_C104_PROJECTED_COEFFICIENT_VALUES_UNAVAILABLE",
+  "package_root": "42d3dc72def67806245875cf8c9fdfd1d801b212716e6735ade0763b4b2028de",
+  "pair_programs": 154830,
+  "logical_records": 891992018,
+  "representative_checks": {
+    "K9_first": {"projected_coefficient_value": null, "coefficient_bound_value": null},
+    "K11_first": {"projected_coefficient_value": null, "coefficient_bound_value": null},
+    "K13_first": {"projected_coefficient_value": null, "coefficient_bound_value": null}
+  },
+  "authority_finding": "C104 canonical_record exposes expression and null value/bound; C105 cannot infer or replace them.",
+  "products_formed": 0,
+  "operator_entries": 0
+}

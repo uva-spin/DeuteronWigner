@@ -1,0 +1,16 @@
+{
+  "C72_objects": 6,
+  "C72_records": 72,
+  "blocker": "C72 authenticates its index but its public package has no immutable basis/status/exact-record/bound loaders and numerical load omits allow_pickle=False; C73 cannot infer those identities from private index fields or array positions.",
+  "missing_public_loaders": [
+    "load_basis",
+    "load_statuses",
+    "load_exact_records",
+    "load_bounds"
+  ],
+  "next": "C74/QGCOLOR6 \u2014 immutable C72 basis/status/exact-record/bound loaders and strict numerical loading",
+  "no_contact": true,
+  "no_embedding": true,
+  "status": "C73_QGEMBED_C72_IMPORT_INCOMPLETE",
+  "strict_allow_pickle_false": false
+}

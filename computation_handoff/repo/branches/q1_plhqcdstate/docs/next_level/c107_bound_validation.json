@@ -1,0 +1,11 @@
+{
+  "schema": "C107-BOUND-VALIDATION-V1",
+  "status": "C107_C104_SOURCE_DERIVED_CERTIFIED_COEFFICIENT_SYMBOL_BINDING_READY",
+  "rule": "epsilon_product = |a|*eps_b + |b|*eps_a + eps_a*eps_b recursively",
+  "component_bounds": "C77 directed abs_error",
+  "color_bounds": "C74 per-entry certified bound",
+  "coefficient_bounds": "nonnegative finite complex absolute-radius enclosure",
+  "bound_rule_mismatches": 0,
+  "nonfinite_bounds": 0,
+  "central_values_outside_enclosure": 0
+}

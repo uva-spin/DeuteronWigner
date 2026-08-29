@@ -1,0 +1,2667 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume X: Light-Sea Fock Sectors, Chiral Symmetry, PCAC, and Microscopic Antiquark GTMDs},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume X}
+\fancyhead[R]{\small\color{darkgray}Light sea, chiral closure, and antiquark GTMDs}
+\fancyfoot[L]{\small\color{darkgray}31 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\BLFQ}{\ensuremath{\mathrm{BLFQ}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\PCAC}{\ensuremath{\mathrm{PCAC}}}
+\newcommand{\WTI}{\ensuremath{\mathrm{WTI}}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\Hthree}{\Hil_{qqq}}
+\newcommand{\Hfour}{\Hil_{qqqg}}
+\newcommand{\Hfiveu}{\Hil_{qqqu\bar u}}
+\newcommand{\Hfived}{\Hil_{qqqd\bar d}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{PredictionPlan}}
+\newcommand{\StateBundle}{\texttt{H3MicroscopicStateBundle}}
+\newcommand{\PCACManifest}{\texttt{PCACClosureManifest}}
+\newcommand{\SeaLedger}{\texttt{SeaFlavorLedger}}
+\newcommand{\CommonParent}{\texttt{MicroscopicCommonParentBundle}}
+\newcommand{\WilsonHandoff}{\texttt{AntiquarkWilsonHandoff}}
+\newcommand{\RenTrajectory}{\texttt{H3RenormalizationTrajectory}}
+\newcommand{\ProvComplex}{\texttt{Provenance2Complex}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume X: Light-Sea Fock Sectors, Chiral Symmetry,\\[2mm]
+PCAC, and Microscopic Antiquark GTMDs}\\[4mm]
+\large Fully antisymmetric five-parton dynamics, positive-
+\(x\) antiquarks, axial and pseudoscalar currents, explicit/induced sea
+matching, and the first common microscopic \(q\)--\(\bar q\)--\(g\) parent}
+\author{DeuteronWigner project}
+\date{31 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~0--IX established the typed geometric architecture, regulated
+light-front state spaces, common GTMD overlap maps, dynamical Wilson-line
+pilots, matched nuclear and QCD interfaces, shared inference, a concrete
+RSA--BLFQ Hamiltonian route, an assumption-conditioned tensor-network
+compiler, an interacting valence state, and the first coupled
+\(qqq\oplus qqqg\) microscopic eigenstate.  C10/H3 is the active
+implementation package for the next required transition: explicit
+\(u\bar u\) and \(d\bar d\) sectors with complete five-parton color
+multiplicity, exact four-quark antisymmetry, canonical gluon splitting,
+controlled chiral pair dynamics, Hamiltonian-consistent axial and
+pseudoscalar operators, and direct positive-\(x\) antiquark matrix elements.
+The present volume is the normative specification for that transition.  Its
+central correction is that the quark-level nonsinglet axial Ward identity and
+a hadronic pion-pole PCAC representation are matched descriptions of the same
+divergence.  They may not be added as independent physical terms.  Likewise,
+an explicit \(qqqq\bar q\) sector is not automatically an explicit pion
+sector: a pion interpretation requires an additional spectral and operator
+matching statement.  The resulting H3 state remains a finite-resolution
+Hamiltonian-EFT state, not a continuum-QCD nucleon or a physical TMD.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A microscopic antiquark distribution cannot be generated by assigning a sea
+probability to a valence wave function or by copying the negative-\(x\)
+continuation of a quark curve.  It requires an interacting state containing
+explicit antiquark creation operators, a complete color-singlet basis, exact
+fermionic statistics, Hamiltonian vertices that create and annihilate the
+pair, and currents and bilocal operators transformed consistently with the
+same truncated Hamiltonian.  We formulate the first such DeuteronWigner
+state in the direct sum
+\(\Hthree\oplus\Hfour\oplus\Hfiveu\oplus\Hfived\).  The five-parton color
+space contains three independent singlet multiplicities, one cluster-like and
+two non-cluster couplings.  The four quarks are represented by an exterior
+Fock construction or an exactly equivalent signed permutation basis before
+operator assembly.  Canonical \(g\leftrightarrow q\bar q\) vertices and a
+controlled isovector pseudoscalar/derivative interaction define distinct,
+assumption-conditioned mechanisms.  Sector-dependent masses, pair vertices,
+chiral coefficients, currents, and counterterms flow over a common resolution
+tower.
+
+The nonsinglet axial current is tested first through a finite-basis axial
+Ward--Takahashi identity.  A second, hadronic PCAC representation isolates an
+explicit or induced pion-pole channel and a non-pole remainder; an equivalence
+cell prevents double counting between these two descriptions.  We define
+axial, induced-pseudoscalar, and pseudoscalar form factors, a
+Goldberger--Treiman-like holdout, and term-resolved closure defects.  The
+coupled state is solved by exact diagonalization, matrix-free Krylov methods,
+and a fermionic symmetry-adapted tree tensor network whose four Fock branches
+retain color outer multiplicity, pair flavor, antiquark representation,
+helicity, orbital angular momentum, and resolution identity.  Positive-\(x\)
+antiquark GTMDs are obtained by active-antiquark overlaps derived from the
+normal-ordered bilocal operator.  Vector, axial, and tensor moments use their
+operator-specific charge-conjugation signatures rather than one universal
+quark-minus-antiquark rule.  Quark, antiquark, and gluon GTMD, TMD, GPD, PDF,
+current, energy--momentum, Wigner, and OAM reductions remain views of one
+microscopic member.  A Feshbach comparison relates explicit pair sectors to
+induced sea operators plus transformed observables and a visible remainder.
+The final package specifies assumption plans, provenance two-cells, software
+objects, analytic benchmarks, negative tests, and acceptance conditions for
+the first common microscopic \(q\)--\(\bar q\)--\(g\) parent, while keeping
+all QCD matching, evolution, nuclear, process, and inference gates closed.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scientific problem, scope, and interfaces}
+\label{sec:scope}
+
+\subsection{The missing microscopic degree of freedom}
+
+The H2 state contains an interacting valence sector and a dynamical one-gluon
+sector,
+\begin{equation}
+ \Hil_{\mathrm{H2}}
+ =
+ \Hthree\oplus\Hfour.
+\end{equation}
+It can generate regulated quark and gluon matrix elements and can provide the
+microscopic amplitudes needed by the validated one-gluon Wilson engine.  It
+cannot generate a direct positive-\(x\) antiquark overlap because no state in
+its Hilbert space contains an antiquark creation operator.  The first H3 state
+must therefore be
+\begin{equation}
+ \Hil_{\mathrm{H3}}
+ =
+ \Hthree
+ \oplus\Hfour
+ \oplus\Hfiveu
+ \oplus\Hfived,
+ \label{eq:h3-space}
+\end{equation}
+with one normalized proton or neutron eigenstate
+\begin{equation}
+ |N,\Lambda;r,\mathfrak A\rangle
+ =
+ |\Psi_{3}^{\Lambda}\rangle
+ +|\Psi_{4g}^{\Lambda}\rangle
+ +|\Psi_{5u}^{\Lambda}\rangle
+ +|\Psi_{5d}^{\Lambda}\rangle.
+ \label{eq:h3-state}
+\end{equation}
+Here \(r\) is the full regulator and truncation identity and
+\(\mathfrak A\) is an immutable assumption bundle.
+
+\begin{requirement}[Direct antiquark support]
+A central positive-\(x\) antiquark result shall be produced only from an
+active antiquark slot in a retained Fock sector or from a named matched
+operator obtained by eliminating such a sector.  A copied negative-\(x\)
+quark curve, an independently normalized sea profile, or an unlabeled scalar
+probability is not a microscopic antiquark parent.
+\end{requirement}
+
+\subsection{Inputs from earlier volumes}
+
+Volume X consumes the following validated interfaces:
+\begin{enumerate}
+ \item the regulated physical-sector, Hamiltonian, current, and truncation
+       contracts of Volumes~I and VII;
+ \item the zero-skewness momentum fibers, recoil authority, operator fibers,
+       overlap kernels, and reduction maps of Volume~II;
+ \item the Wilson-path, cut, phase-budget, and link-reversal interfaces of
+       Volume~III;
+ \item the matched nuclear, QCD, evolution, and inference readiness gates of
+       Volumes~IV--VI;
+ \item the symmetry-adapted tensor-network and assumption compiler of
+       Volume~VIII;
+ \item the coupled \(qqq\oplus qqqg\) Hamiltonian, sector renormalization,
+       Ward benchmark, gluon/OAM exports, and microscopic Wilson handoff of
+       Volume~IX.
+\end{enumerate}
+No interface is upgraded merely because H3 introduces a sea sector.  In
+particular,
+\begin{equation}
+ \texttt{MICROSCOPIC\_Q\_QBAR\_G\_COMMON\_PARENT\_VALIDATED}
+ \not\Rightarrow
+ \texttt{PHYSICAL\_TMD}.
+\end{equation}
+
+\subsection{Primary model decisions}
+
+\begin{decision}[Explicit light-sea route]
+The first central H3 branch retains explicit \(u\bar u\) and \(d\bar d\)
+Fock sectors.  Canonical gluon splitting and a controlled low-resolution
+chiral pair kernel are separately typed Hamiltonian mechanisms.  An induced
+sea or pion-cloud description is a matched alternative, not an additive
+correction.
+\end{decision}
+
+\begin{decision}[Primary axial identity]
+The primary microscopic identity is the nonsinglet quark-level axial
+Ward--Takahashi identity.  A hadronic PCAC/pion-pole representation is a
+matched decomposition of the same divergence into pole and non-pole pieces.
+The two descriptions cannot be summed without an explicit subtraction map.
+\end{decision}
+
+\begin{decision}[Positive-\(x\) representation]
+Quarks and antiquarks are stored as distinct positive-\(x\) objects.  Their
+relation to a signed-\(x\) quark convention is implemented by a typed
+charge-conjugation adapter that transforms the operator, endpoints, Wilson
+path, color representation, Fourier phase, and helicity conventions.
+\end{decision}
+
+\subsection{Explicit nonclaims}
+
+H3 does not establish:
+\begin{itemize}
+ \item a continuum or regulator-independent nucleon;
+ \item complete spontaneous chiral-symmetry breaking on the light front;
+ \item an explicit asymptotic pion state unless a pion Fock sector is added;
+ \item the singlet axial anomaly or full non-Abelian Slavnov--Taylor system;
+ \item a soft-subtracted or UV-matched TMD;
+ \item physical antiquark phenomenology, nuclear matching, process
+       factorization, evolution, or statistical inference.
+\end{itemize}
+
+\section{H3 Fock space, flavor, color, and statistics}
+\label{sec:fock}
+
+\subsection{Versioned sector identity}
+
+At resolution \(r\), the sector set is
+\begin{equation}
+ \cF_r^{\mathrm{H3}}
+ =
+ \{3,4g,5u,5d\},
+\end{equation}
+where the labels denote
+\begin{equation}
+ 3=qqq,
+ \qquad
+ 4g=qqqg,
+ \qquad
+ 5u=qqqu\bar u,
+ \qquad
+ 5d=qqqd\bar d.
+\end{equation}
+Every sector identifier contains
+\begin{equation}
+ \nu=
+ \left(
+ n_q,n_{\bar q},n_g;
+ B,Q,I,I_3,\Jz;
+ K,N_{\max},b,\lambda;
+ \cR_{\UV},\cR_{\IR};
+ \text{endpoint},\text{zero-mode},\text{boundary}
+ \right).
+\end{equation}
+The pair flavor is a sector identity, not a late projection label.
+
+The intrinsic momentum manifold is
+\begin{equation}
+ \cM_{\nu}
+ =
+ \left\{
+ (x_i,\bm\kappa_{iT})
+ \ \middle|\
+ x_i>0,
+ \sum_i x_i=1,
+ \sum_i\bm\kappa_{iT}=0
+ \right\}.
+ \label{eq:momentum-manifold}
+\end{equation}
+The basis excludes a gluon zero mode under the first declared policy; any
+future zero-mode treatment is a distinct assumption branch.
+
+\subsection{Flavor and charge symmetry}
+
+Let the light-flavor doublet be
+\begin{equation}
+ \psi=
+ \begin{pmatrix}u\\d\end{pmatrix},
+ \qquad
+ t^a_I=\frac{\tau^a}{2}.
+\end{equation}
+In the exact charge-symmetric branch, proton and neutron states form an
+isospin doublet generated by the same Hamiltonian parameters and correlated
+member identity.  The sea obeys
+\begin{equation}
+ \bar u_n=\bar d_p,
+ \qquad
+ \bar d_n=\bar u_p,
+ \label{eq:sea-isospin}
+\end{equation}
+and therefore
+\begin{equation}
+ \left(\bar d-\bar u\right)_n
+ =-
+ \left(\bar d-\bar u\right)_p.
+\end{equation}
+Charge-symmetry breaking may be added only through explicit mass, QED, or
+matched interaction operators and must preserve the common member map.
+
+\subsection{Five-parton color multiplicity}
+
+The five-parton color space is
+\begin{equation}
+ \cV_{5}^{c}
+ =3^{\otimes4}\otimes\bar3.
+\end{equation}
+The singlet multiplicity follows from
+\begin{equation}
+ 3^{\otimes3}
+ =1\oplus8_{\rho}\oplus8_{\lambda}\oplus10.
+\end{equation}
+Multiplication by the fourth quark yields one fundamental \(3\) from each of
+\(1\otimes3\), \(8_{\rho}\otimes3\), and
+\(8_{\lambda}\otimes3\), while \(10\otimes3\) contains no fundamental.
+Each fundamental then couples with \(\bar3\) to a singlet.  Hence
+\begin{equation}
+ \dim\operatorname{Inv}_{SU(3)}
+ \left(3^{\otimes4}\otimes\bar3\right)
+ =3.
+ \label{eq:five-singlet-count}
+\end{equation}
+
+\begin{proposition}[Complete five-parton color basis]
+For each fixed non-color configuration, the physical color subspace has an
+orthonormal basis
+\begin{equation}
+ \left\{
+ C_{1},C_{\rho},C_{\lambda}
+ \right\},
+\end{equation}
+where \(C_1\) contains the conventional color-singlet three-quark cluster
+coupled to a singlet pair, while \(C_{\rho}\) and \(C_{\lambda}\) are the two
+independent octet-derived couplings.  Any single baryon--meson cluster tensor
+spans at most one channel and is not a complete five-parton color basis.
+\end{proposition}
+
+The total color generator is
+\begin{equation}
+ \cQ^A
+ =
+ \sum_{i=1}^{4}t_i^A
+ +t_{\bar q}^A,
+ \qquad
+ t_{\bar q}^A=-\left(t^A\right)^T,
+\end{equation}
+and every basis tensor satisfies
+\begin{equation}
+ \cQ^A C_{\alpha}=0,
+ \qquad
+ \inner{C_{\alpha}}{C_{\beta}}=\delta_{\alpha\beta}.
+\end{equation}
+Supported recoupling matrices between color fusion trees must be unitary and
+must retain the outer-multiplicity index \(\alpha\in\{1,\rho,\lambda\}\).
+
+\begin{requirement}[Color completeness]
+All three singlet multiplicities shall survive through the basis,
+Hamiltonian, currents, tensor network, GTMD operators, Feshbach maps, and
+provenance records.  A missing channel is a basis defect, not an uncertainty
+band.
+\end{requirement}
+
+\subsection{Exact four-quark antisymmetry}
+
+Let \(h_q\) be the complete one-quark mode space, including momentum, flavor,
+color, helicity, and orbital labels.  The mathematically primary four-quark
+space is
+\begin{equation}
+ \bigwedge{}^4 h_q,
+\end{equation}
+so that the five-parton fermionic sector is
+\begin{equation}
+ \Hil_{5f}^{(r)}
+ =
+ \left[
+ \bigwedge{}^4 h_q^{(r)}
+ \right]
+ \otimes h_{\bar q}^{(r)}.
+ \label{eq:exterior-space}
+\end{equation}
+An occupation-number implementation is equivalent and preferred
+computationally.  If an explicit slot basis is used, the antisymmetrizer is
+\begin{equation}
+ \cA_4
+ =\frac{1}{4!}
+ \sum_{\pi\in S_4}
+ \operatorname{sgn}(\pi)U(\pi),
+ \qquad
+ \cA_4^2=\cA_4=\cA_4^{\dagger}.
+ \label{eq:antisymmetrizer}
+\end{equation}
+Flavor is an internal label; exchanging a \(u\) and a \(d\) creation operator
+still produces the fermionic sign while also exchanging their flavor labels.
+A visually chosen baryon--meson partition does not weaken this requirement.
+
+The tensor-network realization is \(\mathbb Z_2\)-graded.  For homogeneous
+vectors,
+\begin{equation}
+ \tau(v\otimes w)
+ =(-1)^{|v||w|}w\otimes v.
+ \label{eq:fermionic-braiding}
+\end{equation}
+All leaf reorderings and recouplings carry an executable fermionic-swap
+ledger.
+
+\begin{requirement}[Statistics before dynamics]
+Pauli-forbidden states shall be absent before Hamiltonian matrix elements are
+assembled.  Post-diagonalization antisymmetrization, cluster-only statistics,
+or sign repair at the observable layer is prohibited.
+\end{requirement}
+
+\subsection{Physical H3 projector}
+
+The physical finite sector is
+\begin{equation}
+ \Hil_{\nu,\phys}^{(r)}
+ =
+ \cP_{\mathrm{singlet}}
+ \cP_{\mathrm{fermion}}
+ \cP_{B,Q,I,I_3,\Jz}
+ \cP_{\COM}
+ \Hil_{\nu,\mathrm{kin}}^{(r)}.
+\end{equation}
+Projector compatibility is tested by
+\begin{equation}
+ \delta_{AB}^{(r)}
+ =\norm{[\cP_A,\cP_B]}.
+\end{equation}
+An exact symmetry pair must give zero.  A nonzero value is either a basis bug
+or a named truncation defect.
+
+\section{Coupled H3 Hamiltonian and dynamical mechanisms}
+\label{sec:hamiltonian}
+
+\subsection{Block mass operator}
+
+The H3 mass-squared operator is
+\begin{equation}
+ \cM_{\mathrm{H3},r}^{2}
+ =
+ \begin{pmatrix}
+  M_{33} & V_{3\leftarrow4g} & V_{3\leftarrow5u} & V_{3\leftarrow5d}\\
+  V_{4g\leftarrow3} & M_{4g4g} & V_{4g\leftarrow5u} & V_{4g\leftarrow5d}\\
+  V_{5u\leftarrow3} & V_{5u\leftarrow4g} & M_{5u5u} & V_{5u\leftarrow5d}\\
+  V_{5d\leftarrow3} & V_{5d\leftarrow4g} & V_{5d\leftarrow5u} & M_{5d5d}
+ \end{pmatrix}_{r},
+ \label{eq:h3-hamiltonian}
+\end{equation}
+with
+\begin{equation}
+ V_{\alpha\leftarrow\beta}
+ =V_{\beta\leftarrow\alpha}^{\dagger}.
+\end{equation}
+A block is present only when generated by a retained canonical or effective
+operator.  An unsupported block is typed as absent with a symmetry or
+truncation reason; it is not a silent numerical zero.
+
+The diagonal blocks contain
+\begin{equation}
+ M_{\alpha\alpha,r}
+ =M_{0,\alpha,r}
+ +V_{\mathrm{conf},\alpha,r}^{\ind}
+ +V_{\mathrm{diag},\alpha,r}^{\mathrm{can}}
+ +V_{\chi,\alpha,r}^{\eff}
+ +\delta M_{\alpha,r}^{2}
+ +\Delta_{\alpha,r}^{2,\trunc}.
+\end{equation}
+Every term carries source/target sector, regulator, symmetry, parameter owner,
+Hermitian partner, power-counting or naturalness metadata, and provenance.
+
+\subsection{Canonical gluon splitting}
+
+The canonical pair block connects the one-gluon sector to the pair sectors,
+\begin{equation}
+ V_{5f\leftarrow4g}^{\mathrm{pair}}
+ :\Hfour\longrightarrow\Hil_{5f},
+ \qquad f=u,d.
+\end{equation}
+A reduced finite-basis matrix element has the structure
+\begin{equation}
+ \langle\alpha_{5f}|
+ V_{5f\leftarrow4g}^{\mathrm{pair}}
+ |\alpha_{4g}\rangle
+ =g_{45f,r}^{\bare}
+ \cC_{45f}
+ \cS_{45f}
+ \cL_{45f}^{(r)}
+ \cT_{45f}^{(r)}
+ \cP_{45f}^{\mathrm{ferm}}
+ \cR_{45f}^{(r)},
+ \label{eq:pair-vertex}
+\end{equation}
+where the factors retain color, helicity, longitudinal, transverse,
+fermionic-ordering, and regulator information.  Flavor is diagonal at the
+canonical QCD vertex, but the multiplicity of available emitting and spectator
+configurations produces nontrivial proton/neutron correlations.
+
+The absorption block is generated as the exact adjoint.  Pair creation cannot
+be represented by inserting a scalar probability into the state.
+
+\subsection{Controlled chiral pair interaction}
+
+At a low resolution, H3 permits an effective interaction in the isovector
+scalar/pseudoscalar chiral channel.  One useful chirally paired operator basis
+is
+\begin{equation}
+ \cO_{\chi,S}
+ =\left(\bar\psi\psi\right)^2,
+ \qquad
+ \cO_{\chi,P}
+ =\left(\bar\psi i\gamma_5\tau^a\psi\right)^2,
+ \label{eq:chiral-pair-basis}
+\end{equation}
+or a nonlocal derivative realization matched to an auxiliary pion field.
+The H3 Hamiltonian uses only a declared, regulator-smeared finite-basis kernel
+from this operator space,
+\begin{equation}
+ V_{\chi,r}^{\eff}
+ =G_{\chi,r}
+ \left[
+ c_{S,r}\cO_{\chi,S}^{(r)}
+ +c_{P,r}\cO_{\chi,P}^{(r)}
+ +\cdots
+ \right].
+ \label{eq:chiral-effective}
+\end{equation}
+Its purpose is to test a controlled chiral pair mechanism, not to assert that
+a finite contact interaction is the unique low-energy reduction of QCD.  The
+operator basis is motivated by standard chiral four-fermion constructions and
+by explicit light-front nucleon--pion Hamiltonian studies
+\cite{NJL1961,WuZhang2004,Du2020,Cao2026}.
+
+The sector-changing contraction
+\begin{equation}
+ \Hthree\longleftrightarrow\Hil_{5f}
+\end{equation}
+selects an isovector pseudoscalar or derivative pair channel with explicit
+parity, isospin, \(\Jz\), regulator, and naturalness identity.  The corresponding
+axial and pseudoscalar current terms are owned by the same operator family.
+
+\begin{requirement}[Chiral ownership]
+A chiral Hamiltonian coefficient shall propagate to every state, axial,
+pseudoscalar, pion-pole, sea-flavor, GTMD, and current contraction to which its
+operator contributes.  It cannot become an independent normalization for
+\(\bar d-\bar u\), an antiquark TMD, or one axial form factor.
+\end{requirement}
+
+\subsection{An explicit pair is not yet an explicit pion}
+
+A five-parton amplitude may have a large projection onto an isovector
+pseudoscalar \(q\bar q\) channel, but this does not by itself establish an
+asymptotic pion state.  A pion interpretation requires a pole or spectral
+statement, a normalization convention, and matching of the composite
+interpolating operator.  We distinguish:
+\begin{equation}
+ \texttt{EXPLICIT\_QBARQ\_PAIR},
+ \qquad
+ \texttt{EXPLICIT\_PION\_FOCK\_SECTOR},
+ \qquad
+ \texttt{INDUCED\_PION\_POLE\_OPERATOR}.
+\end{equation}
+Only the first and third are available in H3.  The second belongs to a later
+state-space extension.
+
+\subsection{Assumption-conditioned branches}
+
+The compiler shall support at least:
+\begin{longtable}{L{0.19\textwidth}L{0.73\textwidth}}
+\toprule
+Plan & Dynamical content\\
+\midrule
+\endhead
+H3-PLAN-A & Explicit \(u\bar u\) and \(d\bar d\); canonical
+\(g\leftrightarrow q\bar q\); explicit chiral pair kernel; refitted induced
+confinement; H2 instantaneous partners; no independent induced sea term.\\
+H3-PLAN-B & Explicit pair sectors and canonical gluon splitting; chiral pair
+kernel disabled; refitted induced confinement.\\
+H2-REFERENCE & Read-only coupled \(qqq\oplus qqqg\) state; no explicit sea
+prediction.\\
+H3-INDUCED-SEA-REFERENCE & Pair sectors eliminated or absent; induced sea and
+chiral operators plus transformed observables and a declared remainder.\\
+\bottomrule
+\end{longtable}
+These are alternative complete theories at the declared truncation.  They may
+be compared, but their amplitudes cannot be added.
+
+\section{Sector-dependent renormalization over the H3 tower}
+\label{sec:renormalization}
+
+\subsection{Renormalization datum}
+
+At resolution \(r\), define
+\begin{equation}
+ \mathfrak R_r^{\mathrm{H3}}
+ =
+ \left(
+ \begin{array}{c}
+ \cR_r,
+ \theta_{3,r},\theta_{4g,r},\theta_{5u,r},\theta_{5d,r},\\
+ \delta g_{34,r},\delta g_{45u,r},\delta g_{45d,r},
+ \delta g_{\chi,r},\\
+ \{\cC_i\},\cS_r,\cZ_r,\Delta_r
+ \end{array}
+ \right).
+ \label{eq:h3-ren-data}
+\end{equation}
+The tower contains at least three nested points in longitudinal resolution,
+transverse basis size, and sector basis dimension.  Bare masses, vertex
+coefficients, current counterterms, and induced interactions may flow.  The
+physical calibration conditions are held fixed.
+
+\subsection{Restricted calibration and frozen holdouts}
+
+A minimal validation calibration may use:
+\begin{equation}
+ M_N^2=M_{\mathrm{ref}}^2,
+ \qquad
+ F_1^p(0)=1,
+ \qquad
+ F_1^n(0)=0,
+\end{equation}
+plus one pair-vertex condition, one chiral/naturalness condition, and one axial
+identity point.  The following remain frozen holdouts:
+\begin{itemize}
+ \item a second pair-vertex kinematic point;
+ \item \(g_A\) or an independent axial-current combination;
+ \item a second PCAC momentum transfer;
+ \item a pion-pole or Goldberger--Treiman-like diagnostic;
+ \item \(\bar d-\bar u\) or a related sea-flavor moment;
+ \item a sea momentum, helicity, or OAM observable;
+ \item a nonzero-transfer vector current and a rotational diagnostic.
+\end{itemize}
+A failed holdout revises the interaction, operator, truncation, or discrepancy
+model.  It does not receive a new TMD-specific parameter.
+
+\subsection{Identifiability and null directions}
+
+Let \(R_i(\theta_r)\) be the calibration residuals and
+\begin{equation}
+ J_{ia}^{(r)}
+ =\frac{\partial R_i}{\partial\theta_a}.
+\end{equation}
+The singular values of \(J^{(r)}\), the Hessian spectrum, profile likelihoods,
+and naturalness combinations must be reported.  A null direction is an
+identifiability statement.  It cannot be hidden by adding another fitted
+observable after the holdout split is frozen.
+
+Sector-dependent bare masses are regulator data.  They are not different
+physical masses for a quark in different Fock sectors.  The common physical
+light-quark mass convention and any \(m_d-m_u\) breaking operator remain
+explicit.
+
+\begin{requirement}[Trajectory, not point fit]
+A successful fit at one finite basis is not a renormalized model.  H3 shall
+report the flow of all bare, counterterm, induced, current, and chiral
+coefficients and the stability of matched observables along the truncation
+tower.
+\end{requirement}
+
+\section{Axial, pseudoscalar, and pion-pole operator system}
+\label{sec:axial}
+
+\subsection{Nonsinglet axial operators}
+
+For two light flavors, define the isovector quark operators
+\begin{align}
+ A^{\mu,a}(x)
+ &=
+ \bar\psi(x)\gamma^{\mu}\gamma_5\frac{\tau^a}{2}\psi(x),
+ \\
+ P^a(x)
+ &=
+ \bar\psi(x)i\gamma_5\frac{\tau^a}{2}\psi(x).
+ \label{eq:axial-pseudoscalar-def}
+\end{align}
+At the continuum operator level, the nonsinglet axial identity is
+\cite{Nambu1960,Chen2021,Alexandrou2024}
+\begin{equation}
+ \partial_{\mu}A^{\mu,a}
+ =2m_q P^a,
+ \label{eq:qcd-pcac}
+\end{equation}
+up to the declared isospin-breaking generalization.  There is no nonsinglet
+axial anomaly.  At finite light-front truncation, both sides must be reduced
+with the same Hamiltonian transformation and regulator.
+
+The corresponding amputated axial Ward--Takahashi identity is
+\begin{equation}
+ q_{\mu}\Gamma_{5}^{\mu,a}(p',p)
+ =
+ S^{-1}(p')\gamma_5\frac{\tau^a}{2}
+ +
+ \gamma_5\frac{\tau^a}{2}S^{-1}(p)
+ -2m_q\Gamma_5^a(p',p),
+ \label{eq:axial-wti}
+\end{equation}
+with all propagators, vertices, counterterms, and constrained-field pieces
+defined in the same H3 model space.
+
+\begin{decision}[Primary finite-basis axial test]
+The first H3 closure test is the projected finite-basis form of
+\cref{eq:axial-wti}.  The result may be labeled
+\texttt{FINITE\_BASIS\_AXIAL\_WTI\_BENCHMARKED}; it cannot be labeled a
+continuum chiral proof.
+\end{decision}
+
+\subsection{Hamiltonian-consistent current decomposition}
+
+The H3 axial and pseudoscalar operators are
+\begin{align}
+ A_{r}^{\mu,a}
+ &={}
+ A_{(1),r}^{\mu,a}
+ +A_{\mathrm{pair},r}^{\mu,a}
+ +A_{\chi,r}^{\mu,a}
+ +A_{\mathrm{inst},r}^{\mu,a}
+ +\delta A_{\ct,r}^{\mu,a},
+ \\
+ P_{r}^{a}
+ &={}
+ P_{(1),r}^{a}
+ +P_{\mathrm{pair},r}^{a}
+ +P_{\chi,r}^{a}
+ +P_{\mathrm{inst},r}^{a}
+ +\delta P_{\ct,r}^{a}.
+ \label{eq:h3-axial-decomp}
+\end{align}
+The one-body, pair, chiral, instantaneous, and counterterm pieces are not
+separately observable.  They form one operator whose decomposition depends on
+the resolution and model-space transformation.
+
+The term-resolved defect is
+\begin{equation}
+ \delta_{5,r}^{a}
+ =
+ q_{\mu}A_{r}^{\mu,a}
+ -2m_{q,r}P_{r}^{a},
+ \label{eq:axial-defect}
+\end{equation}
+with a ledger
+\begin{equation}
+ \delta_{5,r}^{a}
+ =
+ \delta_{1b}
+ +\delta_{\mathrm{pair}}
+ +\delta_{\chi}
+ +\delta_{\mathrm{inst}}
+ +\delta_{\ct}
+ +\delta_{\reg}
+ +\delta_{\mathrm{basis}}.
+\end{equation}
+Removing any contribution required by the selected plan must produce a signed
+nonzero ablation residual.
+
+\subsection{Hadronic PCAC and pion-pole representation}
+
+At the hadronic level, it is useful to isolate a pion-pole interpolating
+operator \(\Phi^a\) and a non-pole remainder.  The quark pseudoscalar density
+is decomposed by a matching map,
+\begin{equation}
+ 2m_q P^a
+ =
+ f_{\pi}m_{\pi}^{2}\Phi^a
+ +R_{\mathrm{nonpole}}^a.
+ \label{eq:pion-pole-match}
+\end{equation}
+Inserting \cref{eq:pion-pole-match} into \cref{eq:qcd-pcac} gives the
+hadronic PCAC representation
+\begin{equation}
+ \partial_{\mu}A^{\mu,a}
+ =
+ f_{\pi}m_{\pi}^{2}\Phi^a
+ +R_{\mathrm{nonpole}}^a.
+ \label{eq:hadronic-pcac}
+\end{equation}
+If H3 contains no explicit pion Fock sector, \(\Phi^a\) is an induced
+composite or pole operator with a typed matching record.  It is not an
+additional independent term to be added on top of \(2m_qP^a\).
+
+\begin{proposition}[No double counting between WTI and pion-pole PCAC]
+Let \(\cZ_{P\to\pi}\) denote the matching map implementing
+\cref{eq:pion-pole-match}.  The quark-level and hadronic descriptions are
+related by a commuting square
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ 2m_q P^a \arrow[r,equal] \arrow[d,"\cZ_{P\to\pi}"']
+ & q_{\mu}A^{\mu,a} \arrow[d,equal]\\
+ f_{\pi}m_{\pi}^{2}\Phi^a+R_{\mathrm{nonpole}}^a
+ \arrow[r,equal]
+ & q_{\mu}A^{\mu,a}.
+\end{tikzcd}
+\end{equation}
+Selecting both \(2m_qP^a\) and
+\(f_{\pi}m_{\pi}^{2}\Phi^a+R_{\mathrm{nonpole}}^a\) as additive physical
+sources counts the same divergence twice.
+\end{proposition}
+
+The software shall therefore require a
+\texttt{PCACRepresentation} field with mutually exclusive values such as
+\begin{verbatim}
+QUARK_LEVEL_AXIAL_WTI
+HADRONIC_PION_POLE_DECOMPOSITION
+\end{verbatim}
+and an explicit matching two-cell between them.
+
+\subsection{Nucleon axial and pseudoscalar form factors}
+
+With \(q=p'-p\), \(Q^2=-q^2\ge0\), and the declared spinor convention,
+define
+\begin{align}
+ \langle N(p')|A^{\mu,a}|N(p)\rangle
+ &={}
+ \bar u(p')
+ \left[
+ \gamma^{\mu}\gamma_5 G_A(Q^2)
+ +\frac{q^{\mu}}{2M_N}\gamma_5 G_P(Q^2)
+ \right]
+ \frac{\tau^a}{2}u(p),
+ \\
+ \langle N(p')|P^a|N(p)\rangle
+ &={}
+ \bar u(p')i\gamma_5
+ G_5(Q^2)
+ \frac{\tau^a}{2}u(p).
+ \label{eq:axial-form-factors}
+\end{align}
+The operator identity implies, after consistent treatment of phases and the
+factor of \(i\), the generalized relation
+\begin{equation}
+ 2M_N G_A(Q^2)
+ -\frac{Q^2}{2M_N}G_P(Q^2)
+ =2m_q G_5(Q^2)
+ +\delta_{\mathrm{PCAC}}(Q^2).
+ \label{eq:formfactor-pcac}
+\end{equation}
+The exact sign of the pseudoscalar convention is stored in the form-factor
+adapter rather than inferred from a name.
+
+The axial charge is
+\begin{equation}
+ g_A=G_A(0).
+\end{equation}
+A Goldberger--Treiman-like diagnostic is
+\cite{GoldbergerTreiman1958}
+\begin{equation}
+ \Delta_{\mathrm{GT}}
+ =1-
+ \frac{g_A M_N}{f_{\pi}g_{\pi NN}},
+ \label{eq:gt-discrepancy}
+\end{equation}
+where \(g_{\pi NN}\) is obtained from the declared pion-pole or interpolating
+operator.  H3 may use this only as a holdout unless its ingredients were not
+used in calibration.
+
+\subsection{Singlet axial channel}
+
+The flavor-singlet axial divergence contains the gluonic anomaly.  H3 does
+not yet provide the complete anomaly operator and all required higher Fock
+sectors.  Therefore
+\begin{equation}
+ \partial_{\mu}A_0^{\mu}
+ =2m_qP_0+\frac{n_f\alpha_s}{4\pi}F^a_{\mu\nu}\widetilde F^{a\mu\nu}
+\end{equation}
+is recorded as a future operator-completeness requirement, not as an H3
+closure identity.  The first PCAC benchmark is strictly nonsinglet.
+
+\section{Exact, Krylov, and fermionic tensor-network solvers}
+\label{sec:solvers}
+
+\subsection{Solver hierarchy}
+
+Every benchmark H3 block is solved by:
+\begin{enumerate}
+ \item dense Hermitian diagonalization;
+ \item matrix-free Krylov application and eigensolution;
+ \item exact full-support symmetry-adapted tensorization;
+ \item a genuine variational TTN optimization in nested bond spaces.
+\end{enumerate}
+The first three are mutual oracles on small spaces.  The fourth is the
+scalable approximation strategy.
+
+The eigenproblem is
+\begin{equation}
+ \cM_{\mathrm{H3},r}^{2}
+ |\Psi_{N,n}^{(r)}\rangle
+ =M_{N,n}^{2(r)}|\Psi_{N,n}^{(r)}\rangle.
+\end{equation}
+The state is tracked across resolutions by exact quantum numbers, comparison
+maps, principal angles, currents, sea-flavor fingerprints, and a deterministic
+phase convention.
+
+\subsection{Four-branch state tensor network}
+
+The state network is a direct sum of symmetry-adapted fermionic tensor
+networks \cite{Singh2010,Corboz2010},
+\begin{equation}
+ \cN_{\mathrm{state}}
+ =
+ \cN_{qqq}
+ \oplus\cN_{qqqg}
+ \oplus\cN_{qqqu\bar u}
+ \oplus\cN_{qqqd\bar d}.
+ \label{eq:h3-ttn}
+\end{equation}
+Every branch retains Fock identity at the root.  The five-parton branches
+contain virtual labels for
+\begin{equation}
+ \left(
+ R_c,\alpha_c;
+ R_I,I_3;
+ S,\Lz,\Jz;
+ \pi_{S_4};
+ f_{\bar q};
+ r
+ \right),
+\end{equation}
+where \(\alpha_c\in\{1,\rho,\lambda\}\) is the color outer multiplicity and
+\(\pi_{S_4}\) is the four-quark permutation representation.
+
+The tensor network is fermionic: its edge spaces are \(\mathbb Z_2\)-graded
+and every recoupling or leaf ordering carries the braiding sign of
+\cref{eq:fermionic-braiding}.  A bosonic tensor network with an after-the-fact
+sign table is not an equivalent implementation unless the equivalence is
+proved for every contraction path.
+
+\subsection{Exact tensorization and variational convergence}
+
+For each internal cut \(e\), the exact state has a block Schmidt
+decomposition
+\begin{equation}
+ |\Psi\rangle
+ =
+ \sum_{\lambda,\alpha}
+ s_{\lambda\alpha}^{(e)}
+ |\lambda,\alpha\rangle_L
+ \otimes
+ |\bar\lambda,\alpha\rangle_R.
+\end{equation}
+The full allowed bond support must reproduce the exact state, currents,
+PCAC matrix elements, flavor ledgers, and GTMD overlap blocks.
+
+For nested variational spaces
+\begin{equation}
+ \cV_{\chi_1}\subseteq\cV_{\chi_2},
+\end{equation}
+the globally optimized energies satisfy
+\begin{equation}
+ E_{\chi_2}\le E_{\chi_1},
+ \qquad
+ E_{\chi}\ge E_{\mathrm{exact}}.
+\end{equation}
+Convergence must be reported in
+\begin{equation}
+ \left
+ \{
+ P_{4g},P_{5u},P_{5d},
+ \avg{x_g},\avg{x_{\bar u}},\avg{x_{\bar d}},
+ \Delta\bar u,\Delta\bar d,
+ L_{\bar u},L_{\bar d},
+ g_A,\delta_{\mathrm{PCAC}},
+ W_{\bar q}
+ \right
+ \}.
+\end{equation}
+A low-rank state that reproduces the energy but erases sea flavor, antiquark
+OAM, or PCAC cancellation is not converged.
+
+\begin{requirement}[Observable-sensitive bond policy]
+Bond selection shall reserve every symmetry block needed by the requested
+observable before weight-based truncation is applied.  A unique antiquark,
+color, OAM, or axial channel cannot be removed solely because its Schmidt
+weight is small.
+\end{requirement}
+
+\section{Microscopic ledgers and light-sea structure}
+\label{sec:ledgers}
+
+\subsection{Probability and sector closure}
+
+For every normalized state,
+\begin{equation}
+ P_3+P_{4g}+P_{5u}+P_{5d}=1,
+ \label{eq:probability-ledger}
+\end{equation}
+where
+\begin{equation}
+ P_{\alpha}
+ =\langle\Psi|\cP_{\alpha}|\Psi\rangle.
+\end{equation}
+These probabilities depend on regulator, resolution, and unitary
+representation.  They are diagnostics, not universal observables.
+
+\subsection{Valence flavor, charge, and baryon number}
+
+For a proton member,
+\begin{align}
+ \int_0^1\dd x\,[u(x)-\bar u(x)]&=2,
+ \\
+ \int_0^1\dd x\,[d(x)-\bar d(x)]&=1.
+ \label{eq:valence-ledger}
+\end{align}
+The charge and baryon ledgers are
+\begin{align}
+ Q_p
+ &={}
+ \frac23(N_u-N_{\bar u})
+ -\frac13(N_d-N_{\bar d})=1,
+ \\
+ B_p
+ &={}
+ \frac13\sum_{q=u,d}(N_q-N_{\bar q})=1.
+\end{align}
+The neutron follows through the correlated isospin map, not a separately
+fitted sea.
+
+\subsection{Longitudinal momentum and canonical spin/OAM}
+
+The momentum ledger is
+\begin{equation}
+ \avg{x_q}+\avg{x_{\bar q}}+\avg{x_g}=1.
+ \label{eq:momentum-ledger}
+\end{equation}
+At the finite canonical light-front level,
+\begin{equation}
+ \frac12
+ =
+ \frac12\left(\Delta\Sigma_q+\Delta\Sigma_{\bar q}\right)
+ +\Delta G
+ +L_q+L_{\bar q}+L_g
+ +\delta_{J,r}.
+ \label{eq:spin-ledger}
+\end{equation}
+The decomposition is regulator, gauge, and truncation dependent.  Matching to
+kinetic or gauge-invariant decompositions is deferred to the appropriate
+operator scheme.
+
+\subsection{Dynamical sea-flavor asymmetry}
+
+Define
+\begin{equation}
+ A_{\bar q}(x)
+ =\bar d_p(x)-\bar u_p(x),
+ \qquad
+ \mathcal A_{\bar q}
+ =\int_0^1\dd x\,A_{\bar q}(x).
+ \label{eq:sea-asymmetry}
+\end{equation}
+In H3-PLAN-A this asymmetry can emerge from the interplay of valence flavor,
+canonical pair creation, and the isovector chiral kernel.  It receives no
+independent normalization.  In a flavor-symmetric plan, a vanishing result is
+reported as a consequence of that assumption bundle, not modified by hand.
+
+Under exact charge symmetry,
+\begin{equation}
+ A_{\bar q}^{n}(x)=-A_{\bar q}^{p}(x).
+\end{equation}
+A useful collinear holdout is the Gottfried combination, under its standard
+leading assumptions,
+\begin{equation}
+ S_G
+ =\frac13+\frac23\int_0^1\dd x\,
+ \left[\bar u_p(x)-\bar d_p(x)\right].
+\end{equation}
+H3 may compare with this relation only after the regulated distribution is
+matched and evolved consistently; at the finite boundary it is a diagnostic
+of flavor counting and shape.
+
+\section{\texorpdfstring{Positive-\(x\)}{Positive-x} antiquark GTMD operators and overlaps}
+\label{sec:antiquark}
+
+\subsection{Operator origin from the field expansion}
+
+The quark bilocal operator is
+\begin{equation}
+ \cO_q^{[\Gamma,\gamma]}(z)
+ =
+ \bar\psi_q(-z/2)\,
+ \Gamma\,U_{\gamma}[-z/2,z/2]\,
+ \psi_q(z/2).
+ \label{eq:bilocal}
+\end{equation}
+Expanding the fields in creation and annihilation operators produces a quark
+number term \(b^{\dagger}b\), an antiquark number term \(d^{\dagger}d\), and
+pair-changing terms whose support depends on kinematics and operator order.
+The positive-\(x\) antiquark kernel is derived from the normal-ordered
+\(d^{\dagger}d\) contraction.  Its sign, spinor order, and endpoint order are
+not guessed from the quark expression.
+
+Define the typed active-antiquark spin kernel
+\begin{equation}
+ \overline{\cP}_{j}^{[\Gamma,\gamma]}
+ =
+ \operatorname{NormalOrder}_{d^{\dagger}d}
+ \left[
+ \cO_q^{[\Gamma,\gamma]}
+ \right]_j,
+ \label{eq:antiquark-projector}
+\end{equation}
+which is evaluated with anti-fundamental color transport and the declared
+spinor convention.  This direct active-antiquark construction is the
+microscopic counterpart of light-front meson-cloud and sea-spectator overlap
+representations, but it retains one common Hamiltonian state rather than
+fitting an independent sea wave function \cite{KoflerPasquini2017,Choudhary2023}.
+
+\subsection{Zero-skewness active-antiquark overlap}
+
+At \(\xi=0\), the regulated H3 antiquark GTMD is
+\begin{align}
+ W_{\bar q/N,\lambda'\lambda}^{[\Gamma,\gamma]}
+ (x,\kT,\DT;r)
+ ={}&
+ \sum_{n\in\{5u,5d\}}
+ \sum_{j\in\bar q}
+ \int[\dd x]_n[\dd^2\bm\kappa_T]_n
+ \nonumber\\
+ &\times
+ \delta(x-x_j)
+ \delta^{(2)}(\kT-\bm\kappa_{jT})
+ \psi_{n,\lambda'}^{*}
+ \left(\{x_i,\bm\kappa_{iT}^{\mathrm{out}}\}\right)
+ \overline{\cP}_{j}^{[\Gamma,\gamma]}
+ \psi_{n,\lambda}
+ \left(\{x_i,\bm\kappa_{iT}^{\mathrm{in}}\}\right).
+ \label{eq:antiquark-overlap}
+\end{align}
+The initial and final intrinsic momenta use the single recoil authority from
+Volume~II.  For active parton \(j\),
+\begin{align}
+ \bm\kappa_{jT}^{\mathrm{in}}
+ &=\bm k_{jT}-\frac{1-x_j}{2}\DT,
+ &
+ \bm\kappa_{jT}^{\mathrm{out}}
+ &=\bm k_{jT}+\frac{1-x_j}{2}\DT,
+ \\
+ \bm\kappa_{iT}^{\mathrm{in}}
+ &=\bm k_{iT}+\frac{x_i}{2}\DT,
+ &
+ \bm\kappa_{iT}^{\mathrm{out}}
+ &=\bm k_{iT}-\frac{x_i}{2}\DT
+ \quad(i\ne j).
+ \label{eq:antiquark-recoil}
+\end{align}
+No antiquark projector may rederive these shifts locally.
+
+The basic H3 overlap is diagonal in retained parton number for the
+zeroth-rescattering, \(\xi=0\), positive-\(x\) DGLAP region.  An off-diagonal
+Fock contribution requires a named source such as pair-changing operator
+content, ERBL kinematics, Wilson expansion, constrained fields, or a matched
+induced operator.
+
+\subsection{Charge-conjugation adapter}
+
+Let \(C\) act on the bilinear by
+\begin{equation}
+ C\Gamma^T C^{-1}
+ =\eta_C(\Gamma)\Gamma.
+\end{equation}
+A signed-\(x\) convention may be related to the positive-\(x\) antiquark object
+only through an adapter that also transforms
+\begin{equation}
+ \left(
+ \Gamma,
+ \gamma,
+ \text{endpoint order},
+ 3\leftrightarrow\bar3,
+ \text{Fourier phase},
+ \text{helicity phases}
+ \right).
+\end{equation}
+For local leading operators, the charge-conjugation signatures imply the
+schematic moment rules
+\begin{align}
+ \text{vector:}\quad
+ &\int_0^1\dd x\,[q-\bar q],
+ \\
+ \text{axial:}\quad
+ &\int_0^1\dd x\,[\Delta q+\Delta\bar q],
+ \\
+ \text{tensor:}\quad
+ &\int_0^1\dd x\,[h_1^q-h_1^{\bar q}],
+ \label{eq:c-signatures}
+\end{align}
+with exact normalization and phases stored in the operator registry.
+
+\begin{requirement}[Operator-specific antiquark sign]
+There is no universal quark-minus-antiquark rule.  Every local moment shall use
+the charge-conjugation signature of its operator and a tested convention
+adapter.
+\end{requirement}
+
+\subsection{Common quark--antiquark--gluon parent}
+
+For one microscopic member \(s\), H3 exports
+\begin{equation}
+ \cW_s
+ =
+ \left(
+ W_{q,s},W_{\bar q,s},W_{g,s}
+ \right)
+ \label{eq:common-parent-vector}
+\end{equation}
+with common Hamiltonian, state, regulator, recoil, member, and assumption
+identities.  Separate species retain separate operator definitions; unification
+occurs through the shared state and observable assembly.
+
+A common-parent manifest records:
+\begin{itemize}
+ \item sector and active-slot ancestry;
+ \item color outer multiplicity;
+ \item spin, helicity, OAM, and target identity;
+ \item operator, path, and matching status;
+ \item all available TMD, GPD, PDF, current, EMT, Wigner, and OAM reductions;
+ \item unavailable projections and the missing amplitude block.
+\end{itemize}
+A missing block returns \texttt{UNAVAILABLE\_AT\_H3\_TRUNCATION}, not a
+physical zero.
+
+\subsection{Forward Gram positivity}
+
+At forward kinematics and at the unsubtracted amplitude level where a
+probability interpretation applies,
+\begin{equation}
+ \Phi_{\alpha\beta}^{\bar q}
+ =\sum_X A_{\alpha X}^{\bar q}
+ \left(A_{\beta X}^{\bar q}\right)^*,
+\end{equation}
+so the full antiquark-target helicity matrix is positive semidefinite.  The
+test is performed on the matrix parent.  It is not extended automatically to
+off-forward GTMDs, Wigner quasidistributions, or finite-order subtracted
+scheme objects.
+
+\section{Matched reductions and local-operator closure}
+\label{sec:reductions}
+
+\subsection{Regulated reduction maps}
+
+For any species \(a=q,\bar q,g\), define the regulated zero-skewness maps
+\begin{align}
+ \mathsf T_{\reg}[W_a]
+ &=W_a(x,\kT,\DT=0),
+ \\
+ \mathsf G_{\reg}[W_a]
+ &=\int\dd^2\kT\,W_a(x,\kT,\DT),
+ \\
+ \mathsf P_{\reg}[W_a]
+ &=\int\dd^2\kT\,W_a(x,\kT,0),
+ \\
+ \mathsf F_{\reg}[W_a]
+ &=\int\dd x\,\dd^2\kT\,W_a.
+ \label{eq:regulated-reductions}
+\end{align}
+These produce a regulated TMD boundary, GPD boundary, PDF boundary, and local
+matrix element.  They are not yet physical QCD objects in a specified
+soft-subtracted scheme.
+
+The same parent must satisfy the commuting closure
+\begin{equation}
+ \mathsf P_{\reg}[W_a]
+ =
+ \left.\mathsf G_{\reg}[W_a]\right|_{\DT=0}
+ \label{eq:pdf-route-closure}
+\end{equation}
+within the numerical and regulator tolerance.  A species-specific correction
+factor inserted only to enforce \cref{eq:pdf-route-closure} is prohibited.
+
+\subsection{Vector, axial, tensor, and energy--momentum moments}
+
+Let \(H^q\), \(\widetilde H^q\), and \(H_T^q\) denote the relevant regulated
+quark GPD projections and similarly for positive-\(x\) antiquarks.  The local
+operator signatures give
+\begin{align}
+ F_1^q(t)
+ &=\int_0^1\dd x\,
+ \left[
+ H^q(x,0,t)-H^{\bar q}(x,0,t)
+ \right],
+ \label{eq:vector-moment}
+ \\
+ G_A^q(t)
+ &=\int_0^1\dd x\,
+ \left[
+ \widetilde H^q(x,0,t)+\widetilde H^{\bar q}(x,0,t)
+ \right],
+ \label{eq:axial-moment}
+ \\
+ g_T^q(t)
+ &=\int_0^1\dd x\,
+ \left[
+ H_T^q(x,0,t)-H_T^{\bar q}(x,0,t)
+ \right].
+ \label{eq:tensor-moment}
+\end{align}
+The equations are convention templates; the complete implementation includes
+normalization, flavor generator, and spinor adapters.
+
+The quark-plus-antiquark energy--momentum moment is
+\begin{equation}
+ A_{q+\bar q}(t)
+ =\int_0^1\dd x\,x
+ \left[
+ H^q(x,0,t)+H^{\bar q}(x,0,t)
+ \right],
+\end{equation}
+while the standard gluon convention may store
+\begin{equation}
+ H^g(x,0,0)=xg(x),
+\end{equation}
+so that
+\begin{equation}
+ A_g(t)=\int_0^1\dd x\,H^g(x,0,t).
+\end{equation}
+The registry must not copy the quark Mellin power into the gluon route.
+
+\subsection{Axial and pseudoscalar closure from the common parent}
+
+The axial GTMD/GPD projection must reduce to the same \(G_A\) used in the
+finite-basis PCAC test.  Likewise the pseudoscalar operator and induced
+pion-pole channel must be linked to the same H3 state and chiral parameters.
+The required diagram is
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ W_{q,\bar q}^{[\gamma^+\gamma_5]}
+ \arrow[r,"\mathsf G_{\reg}"]
+ \arrow[d,"\mathsf F_{\reg}"']
+ & \widetilde H^{q,\bar q}_{\reg}
+ \arrow[d,"\int\dd x\,\eta_C"]\\
+ A_{\reg}^{+,a}
+ \arrow[r,"\text{form-factor adapter}"']
+ & G_A^a(t).
+\end{tikzcd}
+\label{eq:axial-commuting-square}
+\end{equation}
+A failure of this square identifies an inconsistent operator reduction,
+current, state normalization, or matching adapter.
+
+\subsection{Partonic Wigner and OAM reductions}
+
+The partonic Wigner distribution is \cite{Meissner2009,Lorce2011}
+\begin{equation}
+ \rho_a(x,\kT,\bD)
+ =
+ \int\frac{\dd^2\DT}{(2\pi)^2}
+ e^{-i\bD\cdot\DT}
+ W_a(x,\kT,\DT),
+ \label{eq:wigner}
+\end{equation}
+where \(\bD\) is conjugate to \(\DT\).  It is distinct from
+\(\bM\), conjugate to \(\kT\), used in TMD matching and evolution.
+
+A canonical OAM moment is
+\begin{equation}
+ L_z^a[\gamma]
+ =
+ \int\dd x\,\dd^2\kT\,\dd^2\bD
+ \left(\bD\times\kT\right)_z
+ \rho_{LU}^{a}(x,\kT,\bD;\gamma),
+ \label{eq:oam-moment}
+\end{equation}
+with path, gauge, and scheme identity retained.  The antiquark OAM comes from
+the active-antiquark parent and cannot be inferred by subtracting a quark OAM
+curve from a total.
+
+\subsection{Matching status}
+
+Every H3 reduction carries at least
+\begin{verbatim}
+REGULATED_MICROSCOPIC_H3
+LINK_SHORTENING_REQUIRED
+UV_MATCHING_REQUIRED
+RAPIDITY_SOFT_MATCHING_REQUIRED
+NO_EVOLUTION_APPLIED
+NO_PROCESS_MAP_APPLIED
+\end{verbatim}
+The small-\(\bM\) OPE, LF-to-QCD operator matching, soft subtraction, rapidity
+renormalization, and process factorization are separate downstream maps.  A
+successful regulated marginal does not satisfy them automatically.
+
+\section{Explicit pair sectors versus induced sea operators}
+\label{sec:feshbach}
+
+\subsection{Feshbach reduction}
+
+Let \(P\) project onto the retained \(qqq\oplus qqqg\) space and \(Q\) onto
+the explicit pair sectors.  The exact finite-model effective Hamiltonian is
+\begin{equation}
+ H_{\eff}(E)
+ =PHP+PHQ\frac{1}{E-QHQ}QHP.
+ \label{eq:feshbach-h}
+\end{equation}
+The wave operator is
+\begin{equation}
+ \omega(E)
+ =\frac{1}{E-QHQ}QHP.
+\end{equation}
+For any current or partonic operator, the model-space transformation must be
+performed with the Hamiltonian \cite{Feshbach1958,Karmanov2008}.  Thus,
+\begin{equation}
+ O_{\eff}(E',E)
+ =P\left[1+\omega^{\dagger}(E')\right]
+ O
+ \left[1+\omega(E)\right]P.
+ \label{eq:feshbach-o}
+\end{equation}
+Using \(POP\) in place of \cref{eq:feshbach-o} is generally inconsistent.
+
+The norm kernel is
+\begin{equation}
+ N_{\eff}(E)
+ =P\left[1+\omega^{\dagger}(E)\omega(E)\right]P.
+\end{equation}
+Singularities and conditioning of \((E-QHQ)^{-1}\) are part of the
+comparison manifest.
+
+\subsection{Equivalence plus remainder}
+
+At finite truncation, the explicit and induced descriptions satisfy
+\begin{equation}
+ \text{explicit pair theory}
+ =
+ \text{induced sea theory}
+ +\text{transformed operators}
+ +\text{remainder},
+ \label{eq:explicit-induced}
+\end{equation}
+where the remainder records omitted energy dependence, basis support, higher
+sectors, and matching defects.  A zero eigenvalue residual for selected states
+does not justify setting the operator remainder to zero.
+
+The provenance two-cell is represented schematically by
+\begin{equation}
+\begin{aligned}
+ \Hil_{\mathrm{H3}}
+ &\xrightarrow{\ \mathrm{solve\ and\ evaluate}\ }
+ \{E,\langle O\rangle\}_{\mathrm{explicit}},\\
+ \Big\downarrow\!\scriptstyle{\mathrm{Feshbach\ eliminate\ pair}}
+ &\hspace{3.4cm}\Big\Updownarrow\!\scriptstyle{\delta_{\mathrm{rem}}}\\
+ \Hil_{\mathrm{H2}}^{\eff}
+ &\xrightarrow{\ H_{\eff},O_{\eff},N_{\eff}\ }
+ \{E,\langle O\rangle\}_{\mathrm{induced}}.
+\end{aligned}
+\end{equation}
+The compiler refuses a plan containing both explicit pair sectors and the
+induced sea operator unless a separate overlap subtraction makes the union
+well defined.
+
+\subsection{Pion-cloud matching and overlap}
+
+An induced pion-cloud model, an explicit \(q\bar q\) sector, and a future
+explicit pion sector can share low-energy regions.  Their matched composition
+must have the form
+\begin{equation}
+ W^{\mathrm{sea,matched}}
+ =W^{\mathrm{explicit\ pair}}
+ +W^{\mathrm{pion/induced}}
+ -W^{\mathrm{overlap}}.
+ \label{eq:sea-overlap}
+\end{equation}
+The overlap map is defined by a common asymptotic expansion or projection, not
+by tuning the total normalization after addition.
+
+\begin{requirement}[No sea double counting]
+The composition engine shall reject explicit pair dynamics, an induced sea
+operator, and an independent pion-cloud correction selected simultaneously
+unless every shared region has an executable subtraction two-cell.
+\end{requirement}
+
+\section{Microscopic antiquark Wilson-line handoff}
+\label{sec:wilson}
+
+\subsection{Anti-fundamental transport}
+
+For a quark Wilson line \(U_3[\gamma]\), the antiquark transport is
+\begin{equation}
+ U_{\bar3}[\gamma]
+ =U_3[\gamma]^*,
+\end{equation}
+with generators
+\begin{equation}
+ t_{\bar3}^a=-\left(t_3^a\right)^T.
+\end{equation}
+The H3 Wilson handoff retains active antiquark flavor, helicity, pair-sector
+ancestry, color outer multiplicity, OAM block, Hamiltonian coupling,
+regulator, endpoint policy, and microscopic member.
+
+\subsection{Charge conjugation and link reversal}
+
+The antiunitary link-reversal adapter transforms the complete operator,
+\begin{equation}
+ \Theta:
+ \left(
+ P,P',\kT,\DT,\Gamma,\gamma,\bar3
+ \right)
+ \longmapsto
+ \left(
+ \bar P,\bar P',-\kT,-\DT,
+ \Gamma_{\Theta},\gamma_{\Theta},\bar3
+ \right),
+\end{equation}
+including complex conjugation and helicity phases.  A future/past sign cannot
+be assigned from the process name alone.
+
+\subsection{Cut support and readiness}
+
+The H3 adapter reuses the validated path, pole, light-front resolvent,
+cut-ledger, phase-budget, and soft-overlap types.  A discrete off-shell bound
+state gives
+\begin{equation}
+ \operatorname{Im}\cA=0
+\end{equation}
+unless a separately declared continuum or finite-volume spectral rule
+provides physical cut support.  A finite numerical \(\eps\) remains a
+convergence oracle and never enters the physical result identity.
+
+The highest H3 status is
+\begin{verbatim}
+MICROSCOPIC_ANTIQUARK_WILSON_INPUT_INTERFACE_VALIDATED
+\end{verbatim}
+not \texttt{WILSON\_READY}.  Physical naive-T-odd antiquark predictions still
+require cut support, complete soft/rapidity accounting, LF-to-QCD matching,
+and a qualified process map.
+
+\section{Assumption compiler, tensor topology, and provenance}
+\label{sec:compiler}
+
+\subsection{H3 assumption bundle}
+
+An H3 assumption bundle contains
+\begin{equation}
+ \mathfrak A_{\mathrm{H3}}
+ =
+ \left(
+ \begin{array}{l}
+ \text{sector set and basis resolution},\\
+ \text{canonical pair and chiral interactions},\\
+ \text{confinement and instantaneous-term branches},\\
+ \text{renormalization and current conventions},\\
+ \text{PCAC representation},\\
+ \text{TTN topology and bond policy},\\
+ \text{explicit/induced sea choice},\\
+ \text{Wilson, matching, nuclear, process, and inference gates}
+ \end{array}
+ \right).
+\end{equation}
+The compiler validates exclusions and dependency closure before constructing
+a Hamiltonian or network.
+
+The chain is
+\begin{equation}
+\begin{aligned}
+ \mathfrak A_{\mathrm{H3}}
+ &\longrightarrow \PredictionPlan
+ \longrightarrow
+ \{\cM_{\mathrm{H3}}^2,A^{\mu},P,\cO_{\GTMD}\}
+ \\
+ &\longrightarrow \StateBundle
+ \longrightarrow \CommonParent.
+\end{aligned}
+ \label{eq:compile-chain}
+\end{equation}
+A missing physical sector is never inserted silently.  A failed compilation
+returns a minimal structured certificate.
+
+\subsection{Three networks remain distinct}
+
+The H3 calculation uses:
+\begin{equation}
+ \cN_{\mathrm{state}},
+ \qquad
+ \cN_{\mathrm{operator}},
+ \qquad
+ \cK_{\mathrm{prov}}.
+\end{equation}
+The state network represents amplitudes; the operator network represents
+Hamiltonian, current, GTMD, and Wilson insertions; the provenance complex
+represents assumptions, derivations, alternatives, and subtractions.
+A contraction path is not a Wilson path, and a provenance path is not a
+physical amplitude.
+
+\subsection{H3 provenance two-complex}
+
+The complex contains:
+\begin{itemize}
+ \item 0-cells: H3 states, sectors, operators, schemes, plans, and results;
+ \item 1-cells: pair creation, chiral coupling, current insertion, reduction,
+       Feshbach elimination, matching, and Wilson handoff;
+ \item 2-cells: explicit/induced equivalence, WTI/PCAC equivalence,
+       pion/sea overlap subtraction, current completion, and count-once cuts.
+\end{itemize}
+A nontrivial cycle in
+\begin{equation}
+ H_k(\cK_{\mathrm{prov}})
+\end{equation}
+is an audit signal for a missing relation, unresolved overlap, or genuinely
+alternative mechanism.  It is not the value of a TMD or amplitude.
+
+\begin{requirement}[Normalized composition]
+Every authoritative H3 result shall have a normalized provenance path in
+which equivalent descriptions are counted once, mutually exclusive plans do
+not coexist, and every nonzero remainder is visible.
+\end{requirement}
+
+\section{Validation ladder and falsifiability}
+\label{sec:validation}
+
+The H3 validation ladder is ordered by dynamical depth.
+
+\subsection{Algebraic and state gates}
+
+The first gates are:
+\begin{enumerate}
+ \item five-parton singlet multiplicity three, generator annihilation,
+       orthonormality, and recoupling unitarity;
+ \item exact four-quark antisymmetry and Pauli exclusion;
+ \item support, charge, baryon, isospin, \(\Jz\), and center-of-mass closure;
+ \item block-Hamiltonian Hermiticity and matrix-free equality;
+ \item exact/Krylov/full-bond TTN agreement;
+ \item state tracking across resolution and avoided crossings.
+\end{enumerate}
+
+\subsection{Current and chiral gates}
+
+The operator gates are:
+\begin{enumerate}
+ \item preservation of the H2 vector Ward benchmark;
+ \item finite-basis nonsinglet axial WTI closure;
+ \item equivalent pion-pole PCAC decomposition with no double counting;
+ \item signed ablation residuals for every required current term;
+ \item axial, pseudoscalar, and pion-pole form-factor consistency;
+ \item a frozen second-point PCAC or Goldberger--Treiman-like holdout.
+\end{enumerate}
+
+\subsection{Common-parent gates}
+
+The partonic gates are:
+\begin{enumerate}
+ \item direct positive-\(x\) \(\bar u\) and \(\bar d\) active-slot overlaps;
+ \item common quark, antiquark, and gluon member identity;
+ \item TMD/GPD/PDF/current route closure;
+ \item valence, charge, baryon, momentum, helicity, and OAM ledgers;
+ \item forward helicity-matrix positivity where applicable;
+ \item explicit/induced sea equivalence plus a visible remainder;
+ \item zero antiquark absorption without declared cut support.
+\end{enumerate}
+
+\subsection{Falsifiable holdouts}
+
+A plan counts \(\bar d-\bar u\), \(g_A\), an axial radius, a pion-pole
+quantity, or a sea OAM moment as a prediction only when its normalization and
+shape were excluded from calibration.  Failure must revise the Hamiltonian,
+chiral operator, current, basis, matching, or discrepancy model.  It cannot be
+repaired by an antiquark-specific coefficient.
+
+\section{Software realization and formal interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.29\textwidth}L{0.63\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{H3SectorSpace} & Versioned \(qqq\), \(qqqg\), \(qqqu\bar u\), and
+\(qqqd\bar d\) spaces with physical projectors, regulator identity, support,
+and exact quantum numbers.\\
+\texttt{FivePartonColorBasis} & Three singlet multiplicities, total-generator
+nullspace, phases, and recoupling matrices.\\
+\texttt{FourQuarkAntisymmetry} & Exterior/occupation representation,
+canonical creation order, signed permutations, and Pauli gates.\\
+\texttt{PairCreationVertex} and \texttt{PairAnnihilationVertex} & Typed
+\(g\leftrightarrow q\bar q\) blocks with color, flavor, helicity, momentum,
+regulator, and generated adjoint.\\
+\texttt{ChiralPairVertex} & Controlled isovector scalar/pseudoscalar or
+derivative pair kernel with current ownership and naturalness metadata.\\
+\texttt{H3Hamiltonian} & Hermitian four-sector mass operator, matrix-free
+application, term registry, and discrepancy basis.\\
+\texttt{H3Renormalization}\newline\texttt{Trajectory} & Resolution-indexed parameters,
+conditions, null directions, covariance, flow, and holdouts.\\
+\texttt{AxialCurrentOperator} & One-body, pair, chiral, instantaneous, and
+counterterm axial-current blocks.\\
+\texttt{PseudoscalarOperator} & Pseudoscalar density in the same model space
+and convention.\\
+\texttt{PionPoleOrInducedOperator} & Explicit or induced pion-pole channel,
+non-pole remainder, and matching to the quark-level WTI.\\
+\texttt{PCACClosureReport} & Quark-level WTI, hadronic PCAC decomposition,
+term residuals, ablations, and holdouts.\\
+\texttt{H3MicroscopicStateBundle} & Exact, Krylov, and TTN state identities,
+sector amplitudes, currents, ledgers, readiness, and member correlation.\\
+\texttt{SeaFlavorLedger} & \(u,\bar u,d,\bar d\) number, momentum, helicity,
+OAM, charge, baryon, isospin, and asymmetry diagnostics.\\
+\texttt{AntiquarkOverlap}\newline\texttt{Evaluator} & Positive-\(x\) active-antiquark overlap,
+operator-derived spin kernel, recoil, and reduction routes.\\
+\texttt{MicroscopicCommon}\newline\texttt{ParentBundle} & Shared \(q,\bar q,g\) parent,
+operator identities, available reductions, and unavailable blocks.\\
+\texttt{ExplicitInducedSea}\newline\texttt{Comparison} & Feshbach Hamiltonian, transformed
+operators, norm kernel, remainder, conditioning, and provenance cell.\\
+\texttt{AntiquarkWilson}\newline\texttt{Handoff} & Anti-fundamental path, active antiquark
+identity, OAM/color ancestry, cut support, and phase budget.\\
+\texttt{H3TensorNetwork}\newline\texttt{Manifest} & Fusion trees, fermionic swap ledger,
+virtual representations, bond policy, solver history, and observable
+convergence.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Fail-closed map classes}
+
+The interfaces remain separated:
+\begin{longtable}{L{0.15\textwidth}L{0.27\textwidth}L{0.48\textwidth}}
+\toprule
+Layer & H3 examples & Composition rule\\
+\midrule
+\endhead
+\(\Amp\) & Pair/chiral vertices, Hamiltonian, state, axial current, GTMD
+insertions & Linear maps compose only with compatible physical sectors and
+operator identities.\\
+\(\Match\) & Feshbach reduction, WTI-to-pion-pole adapter, LF-to-QCD future
+map & Description-changing maps preserve declared matrix elements up to a
+visible remainder.\\
+\(\Red\) & Common GTMD reductions & Coordinate, rank,
+operator, and charge-conjugation conventions must match.\\
+\(\Proc\) & Future SIDIS, DY, DIS, and gluon-sensitive assembly & Requires
+qualified factorization, hard/color maps, and matched TMDs.\\
+\(\Infer\) & Future calibration and posterior prediction & Requires a complete
+member bundle, covariance, likelihood, and frozen holdouts.\\
+\bottomrule
+\end{longtable}
+
+An H3 object may be complete in \(\Amp\) and still fail every downstream
+\(\Match\), \(\Proc\), and \(\Infer\) gate.
+
+\subsection{Required property-based tests}
+
+At minimum, the implementation shall test:
+\begin{enumerate}
+ \item five-parton singlet count, generator annihilation, orthonormality, and
+       recoupling unitarity;
+ \item exact antisymmetry and canonical creation-order signs;
+ \item support, quantum-number, center-of-mass, and projector closure;
+ \item Hamiltonian Hermiticity and generated adjoints for every pair block;
+ \item pair and chiral selection rules;
+ \item resolution-indexed renormalization conditions and holdout separation;
+ \item vector Ward preservation and nonsinglet axial WTI closure;
+ \item WTI/pion-pole PCAC equivalence without double counting;
+ \item exact/Krylov/full-bond TTN agreement and variational monotonicity;
+ \item observable-sensitive bond convergence;
+ \item probability, valence, charge, baryon, momentum, and spin ledgers;
+ \item direct positive-\(x\) antiquark active-slot selection;
+ \item quark/antiquark/gluon same-member identity;
+ \item vector, axial, tensor, and EMT charge-conjugation signatures;
+ \item regulated TMD/GPD/PDF/current closure;
+ \item explicit/induced Feshbach equivalence plus nonzero remainder;
+ \item antiquark Wilson handoff and zero absorption without support;
+ \item production, nuclear, evolution, process, and inference isolation.
+\end{enumerate}
+
+\section{Benchmark families}
+\label{sec:benchmarks}
+
+\begin{longtable}{L{0.12\textwidth}L{0.28\textwidth}L{0.50\textwidth}}
+\toprule
+ID & Benchmark & Required result\\
+\midrule
+\endhead
+H3-A & Five-parton color completeness & Singlet multiplicity three,
+generator annihilation, orthonormality, recoupling unitarity, and failure of a
+cluster-only basis.\\
+H3-B & Four-quark antisymmetry & Exact signed exchanges,
+\(\cA_4^2=\cA_4=\cA_4^{\dagger}\), occupation-basis oracle, and rejection of
+Pauli-forbidden states.\\
+H3-C & Pair-vertex Hermiticity & \(qqqg\leftrightarrow qqqq\bar q\) blocks
+for both flavors and all color multiplicities agree with their generated
+adjoints on basis states and random complex superpositions.\\
+H3-D & Chiral sector-changing kernel & Isospin, parity, and \(\Jz\) selection;
+zero-coupling limit; parameter flow; explicit/induced branch separation.\\
+H3-E & Sector renormalization & At least three resolutions, mass/charge
+closure, pair/chiral flow, Jacobian and Hessian diagnostics, and frozen
+holdouts.\\
+H3-F & Vector Ward preservation & H2 Abelianized Ward benchmark remains
+closed after pair-sector attachments and counterterms are added.\\
+H3-G & Axial WTI and PCAC & Quark-level WTI, matched pion-pole
+decomposition, term-resolved ablations, and a second-point holdout.\\
+H3-H & Solver agreement & Dense, matrix-free Krylov, exact tensorization, and
+full-bond TTN agree within declared tolerances.\\
+H3-I & Observable-sensitive compression & A low bond loses sea flavor,
+antiquark OAM/helicity, axial, or PCAC information while energy appears
+comparatively accurate.\\
+H3-J & Microscopic ledgers & Probability, valence flavor, charge, baryon,
+momentum, canonical \(\Jz\), and proton/neutron partner relations close.\\
+H3-K & Positive-\(x\) antiquark parent & Direct active-antiquark overlap,
+TMD/GPD/PDF/current closure, no negative-\(x\) copy, and same-member
+\(q,\bar q,g\) identity.\\
+H3-L & Explicit/induced comparison & Hamiltonian and transformed-operator
+equivalence, norm kernel, conditioning, visible remainder, and double-counting
+rejection.\\
+H3-M & Chiral sea asymmetry & Plan-dependent \(\bar d-\bar u\), no independent
+normalization, correlated neutron relation, and axial/pion-pole holdouts.\\
+H3-N & Antiquark Wilson handoff & Anti-fundamental transport, complete state
+identity, charge-conjugation/link conventions, and zero absorption without
+support.\\
+H3-O & Assumption compiler & Deterministic PLAN-A, PLAN-B, H2 reference, and
+induced-sea reference; incompatible combinations fail before assembly.\\
+H3-P & WTI/PCAC representation cell & Quark-level and pion-pole routes agree
+after matching; additive use yields a deliberate factor-of-two or equivalent
+nonzero defect.\\
+\bottomrule
+\end{longtable}
+
+\section{Stable formal requirements}
+\label{sec:requirements}
+
+The implementation shall use stable machine-readable requirement IDs.  The
+minimum set is:
+\begin{longtable}{L{0.23\textwidth}L{0.69\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+\texttt{V10.STATE.1} & H3 state contains distinct \(qqq\), \(qqqg\),
+\(qqqu\bar u\), and \(qqqd\bar d\) sectors.\\
+\texttt{V10.STATE.2} & Every sector carries support, quantum numbers,
+regulator, boundary, member, and assumption identities.\\
+\texttt{V10.COLOR.1} & Five-parton singlet multiplicity is exactly three.\\
+\texttt{V10.COLOR.2} & All color outer multiplicities remain visible through
+state and operator exports.\\
+\texttt{V10.FERMION.1} & Four-quark antisymmetry is exact before Hamiltonian
+assembly.\\
+\texttt{V10.FERMION.2} & Tensor-network recoupling uses an executable
+fermionic-swap ledger.\\
+\texttt{V10.HAM.1} & H3 Hamiltonian is Hermitian with named absent blocks.\\
+\texttt{V10.HAM.2} & Canonical \(g\leftrightarrow q\bar q\) blocks and
+adjoints are generated from one identity.\\
+\texttt{V10.CHIRAL.1} & Chiral pair interaction has explicit operator,
+selection, regulator, and parameter ownership.\\
+\texttt{V10.CHIRAL.2} & Explicit pair, explicit pion, and induced pion-pole
+identities remain distinct.\\
+\texttt{V10.PLAN.1} & H3 assumption branches are content addressed and
+mutually exclusive where required.\\
+\texttt{V10.REN.1} & Sector, pair, chiral, current, and counterterm parameters
+flow over a multi-resolution tower.\\
+\texttt{V10.REN.2} & Null directions and holdouts remain visible.\\
+\texttt{V10.AXIAL.1} & Primary nonsinglet axial WTI is implemented with one
+Hamiltonian/regulator identity.\\
+\texttt{V10.AXIAL.2} & Hadronic pion-pole PCAC is a matched alternative
+decomposition.\\
+\texttt{V10.AXIAL.3} & Singlet anomaly remains explicitly unresolved.\\
+\texttt{V10.CURRENT.1} & Vector Ward benchmark remains passing.\\
+\texttt{V10.CURRENT.2} & Axial, pseudoscalar, pair, chiral, instantaneous, and
+counterterm pieces share ownership.\\
+\texttt{V10.TTN.1} & Exact/Krylov/full-bond TTN states agree.\\
+\texttt{V10.TTN.2} & Variational bond convergence includes sea and axial
+observables.\\
+\texttt{V10.LEDGER.1} & Probability, valence, charge, baryon, momentum, and
+canonical spin ledgers close.\\
+\texttt{V10.LEDGER.2} & Proton and neutron are correlated microscopic
+members.\\
+\texttt{V10.SEA.1} & \(\bar u\) and \(\bar d\) arise from direct positive-
+\(x\) active slots.\\
+\texttt{V10.SEA.2} & Sea asymmetry is a shared-state prediction, not a fitted
+normalization.\\
+\texttt{V10.GTMD.1} & Common regulated \(q,\bar q,g\) parent uses one state
+and recoil authority.\\
+\texttt{V10.GTMD.2} & Missing amplitude content is unavailable, not zero.\\
+\texttt{V10.RED.1} & TMD/GPD/PDF/current routes commute at the regulated
+level.\\
+\texttt{V10.RED.2} & Vector, axial, tensor, and EMT moments use operator-
+specific charge-conjugation signatures.\\
+\texttt{V10.WIGNER.1} & \(\bD\) and \(\bM\) remain distinct.\\
+\texttt{V10.POS.1} & Positivity is tested only on applicable forward Gram
+matrices.\\
+\texttt{V10.FESH.1} & Explicit and induced sea descriptions include
+transformed operators, norm kernel, and remainder.\\
+\texttt{V10.PROV.1} & Explicit pair and induced replacement cannot be active
+together without subtraction.\\
+\texttt{V10.PROV.2} & WTI and pion-pole PCAC are joined by an equivalence
+cell, not an additive edge.\\
+\texttt{V10.WILSON.1} & Antiquark handoff uses anti-fundamental transport and
+complete microscopic ancestry.\\
+\texttt{V10.WILSON.2} & No absorption occurs without declared physical cut
+support.\\
+\texttt{V10.MATCH.1} & UV, rapidity/soft, link-shortening, and LF-to-QCD
+matching remain explicit requirements.\\
+\texttt{V10.GATE.1} & Nuclear, evolution, process, and inference consumers
+fail closed.\\
+\texttt{V10.REGRESS.1} & Accepted production artifacts and registries remain
+byte-identical.\\
+\texttt{V10.FALSIFY.1} & Failed holdouts revise shared physics rather than a
+named antiquark/TMD coefficient.\\
+\bottomrule
+\end{longtable}
+
+\section{Staged research and implementation program}
+\label{sec:stages}
+
+\subsection{H3.0: exact state-space extension}
+
+Implement the two flavor-resolved pair sectors, complete color multiplicity,
+exact antisymmetry, and physical projectors.  No dynamics are added until the
+basis gates pass.
+
+\subsection{H3.1: canonical pair dynamics}
+
+Add \(g\leftrightarrow q\bar q\) vertices and adjoints, extend the H2
+Hamiltonian, and validate block Hermiticity and matrix-free action.
+
+\subsection{H3.2: controlled chiral and current sector}
+
+Add the chiral pair kernel, axial and pseudoscalar operators, the primary
+axial WTI, and the matched pion-pole PCAC representation.  Freeze holdouts
+before final coefficient optimization.
+
+\subsection{H3.3: coupled-state and TTN tower}
+
+Generate multi-resolution exact, Krylov, and variational TTN states; track the
+physical nucleon; report parameter and bond convergence in sea and axial
+observables.
+
+\subsection{H3.4: common microscopic partonic parent}
+
+Evaluate positive-\(x\) quark, antiquark, and gluon GTMD helicity blocks,
+regulated reductions, local moments, Wigner/OAM quantities, and all ledgers.
+This stage supplies the first candidate state for the future microscopic
+replacement of the analytic C3/C4 parents.
+
+\subsection{H3.5: explicit/induced and Wilson interfaces}
+
+Complete Feshbach comparisons, normalized provenance cells, antiquark Wilson
+handoff, and all downstream readiness gates.  No production replacement is
+made in Volume X.
+
+\subsection{Next package after H3}
+
+Once C10/H3 reports, the next computational package should be
+\begin{quote}
+\textbf{H4: microscopic nonzero-transfer quark, antiquark, and gluon GTMD
+helicity matrices from the common H3 eigenstate; complete T-even projector
+closure; local-current, EMT, and OAM consistency; and controlled replacement
+of the analytic C3/C4 common-parent pilots.}
+\end{quote}
+The repository-specific prompt must use the actual H3 basis, current, TTN,
+common-parent, Feshbach, and Wilson-handoff APIs.
+
+\section{Risks, failure modes, and safeguards}
+\label{sec:risks}
+
+\begin{longtable}{L{0.22\textwidth}L{0.34\textwidth}L{0.36\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+Incomplete color basis & One cluster tensor is called the five-parton color
+space. & Compute the common generator nullspace and retain all three singlet
+multiplicities.\\
+Cluster statistics & Only quarks inside a chosen baryon cluster are
+antisymmetrized. & Use exterior/occupation Fock space or an exact full
+four-quark antisymmetrizer.\\
+Nominal sea & Antiquarks are populated by a probability or copied curve. &
+Require active positive-\(x\) antiquark slots and operator-derived overlaps.\\
+Chiral overreach & A fitted contact kernel is called QCD chiral dynamics. &
+Record it as a resolution-dependent effective operator with ablations,
+flow, and holdouts.\\
+Pion misidentification & A pseudoscalar pair is called an explicit pion. &
+Require a pole/spectral and normalization matching statement.\\
+PCAC double counting & \(2mP\) and \(f_\pi m_\pi^2\Phi\) are added as
+separate divergence terms. & Use mutually exclusive WTI and pion-pole
+representations joined by a matching cell.\\
+Current inconsistency & Axial or pseudoscalar currents come from another
+Hamiltonian. & Transform Hamiltonian and all operators together.\\
+Tuned holdouts & \(\bar d-\bar u\), \(g_A\), or a TMD receives its own
+coefficient. & Freeze holdouts and attach parameters only to shared physical
+operators.\\
+Energy-only TTN convergence & Low bond reproduces mass but loses sea/OAM or
+PCAC. & Require observable-sensitive bond studies and protected symmetry
+blocks.\\
+Charge-conjugation error & One quark-minus-antiquark sign is used for every
+operator. & Store and test the operator-specific \(C\)-signature.\\
+Explicit/induced double counting & Pair sectors are added to the operator that
+already represents them. & Enforce Feshbach equivalence plus remainder and
+mutual exclusion.\\
+Fake Wilson absorption & Numerical \(i\eps\) is interpreted as a physical
+cut. & Require declared spectral support and exclude \(\eps\) from identity.\\
+Premature phenomenology & Regulated H3 boundaries enter evolution or process
+maps. & Maintain matching and factorization gates.\\
+\bottomrule
+\end{longtable}
+
+\section{Recommended architecture and acceptance criteria}
+\label{sec:acceptance}
+
+\subsection{Recommended H3 foundation}
+
+The adopted H3 foundation is
+\begin{quote}
+\emph{a fully antisymmetric, color-complete, four-sector light-front
+Hamiltonian and fermionic symmetry-adapted tensor network, with canonical
+pair creation, a controlled chiral pair operator, Hamiltonian-consistent
+vector/axial/pseudoscalar currents, matched WTI and pion-pole PCAC
+representations, direct positive-\(x\) antiquark GTMD overlaps, and a
+provenance two-complex that makes explicit and induced sea descriptions
+mutually exclusive except through a verified subtraction.}
+\end{quote}
+
+\subsection{Final formal acceptance criteria}
+
+H3 is complete for its declared finite-basis scope only when:
+\begin{enumerate}
+ \item the state contains all four declared sectors with increasing basis
+       support over at least three resolutions;
+ \item all three five-parton color singlets are retained;
+ \item exact four-quark antisymmetry holds before operator assembly;
+ \item pair and chiral vertices obey all symmetry rules and Hermiticity;
+ \item the H3 Hamiltonian is identical in dense and matrix-free action;
+ \item sector-dependent parameters form a reproducible renormalization
+       trajectory with exposed null directions;
+ \item mass and vector charges close without fitting all holdouts;
+ \item the H2 vector Ward benchmark remains passing;
+ \item the nonsinglet axial WTI closes at the declared benchmark level;
+ \item the pion-pole PCAC representation is matched to, rather than added to,
+       the quark-level identity;
+ \item every required axial/PCAC ablation gives a signed nonzero defect;
+ \item exact, Krylov, and full-bond TTN states agree;
+ \item variational TTN convergence is demonstrated in sea, OAM, axial, and
+       PCAC observables;
+ \item physical-state tracking is stable across the tower;
+ \item probability, valence, charge, baryon, momentum, and canonical spin
+       ledgers close;
+ \item proton and neutron remain correlated members;
+ \item positive-\(x\) \(\bar u\) and \(\bar d\) overlaps are evaluated from
+       active antiquark slots;
+ \item quark, antiquark, and gluon parents share one state identity;
+ \item regulated TMD/GPD/PDF/current/EMT/OAM routes close;
+ \item vector, axial, and tensor moments use their correct antiquark signs;
+ \item explicit/induced sea equivalence includes transformed operators, norm
+       kernel, and a visible remainder;
+ \item the antiquark Wilson handoff retains complete identity and gives zero
+       absorption without support;
+ \item all assumption plans compile deterministically and incompatible plans
+       fail;
+ \item no production, nuclear, evolution, process, or inference object can
+       consume H3 outputs;
+ \item every released artifact includes the full assumption, convergence,
+       provenance, matching-status, and unresolved-physics manifests.
+\end{enumerate}
+
+Completion of these criteria establishes the first common microscopic
+quark--antiquark--gluon parent at finite resolution.  It does not by itself
+establish continuum QCD, physical TMDs, or predictive deuteron phenomenology.
+
+\appendix
+
+\section{Compact mathematical and physical dictionary}
+
+\begin{longtable}{L{0.30\textwidth}L{0.62\textwidth}}
+\toprule
+Physical concept & Formal object\\
+\midrule
+\endhead
+Light-sea Fock support & \(\Hfiveu\oplus\Hfived\) with positive support and
+flavor-resolved sector identity.\\
+Five-parton color & Three-dimensional invariant subspace of
+\(3^{\otimes4}\otimes\bar3\).\\
+Four-quark statistics & Exterior power \(\bigwedge^4 h_q\) or exact
+occupation-number representation.\\
+Canonical pair creation & Typed \(g\leftrightarrow q\bar q\) Hamiltonian
+block and adjoint.\\
+Chiral pair mechanism & Resolution-dependent isovector scalar/pseudoscalar or
+derivative effective operator.\\
+Quark-level PCAC & Nonsinglet axial Ward identity
+\(\partial\cdot A=2mP\).\\
+Hadronic PCAC & Matched pion-pole plus non-pole representation of \(2mP\).\\
+Microscopic antiquark & Positive-\(x\) active \(d^{\dagger}d\) contraction of
+the bilocal quark operator.\\
+Antiquark color transport & Anti-fundamental Wilson line
+\(U_{\bar3}=U_3^*\).\\
+Sea flavor asymmetry & Difference of direct \(\bar d\) and \(\bar u\)
+projections from one correlated state.\\
+Explicit/induced sea & Feshbach-equivalent descriptions with transformed
+operators and a remainder.\\
+Fermionic TTN & \(\mathbb Z_2\)-graded tensor network with swap signs and
+symmetry blocks.\\
+Common microscopic parent & Correlated vector \((W_q,W_{\bar q},W_g)\) with
+one Hamiltonian/state/member identity.\\
+Matching gate & Typed map from regulated H3 operators to a declared QCD
+scheme; absent in H3.\\
+Prediction & Withheld observable generated from shared parameters without
+observable-specific retuning.\\
+\bottomrule
+\end{longtable}
+
+\section{H3 assumption-bundle schema}
+
+\begin{verbatim}
+{
+  "assumption_bundle_id": "...",
+  "parent_plan": "H3-PLAN-A | H3-PLAN-B | H2-REFERENCE | INDUCED-SEA",
+  "hamiltonian_route": "RSA_BLFQ_H3",
+  "sectors": ["QQQ", "QQQG", "QQQUUBAR", "QQQDDBAR"],
+  "resolution_tower": ["...", "...", "..."],
+  "color_basis": {
+    "qqq": 1,
+    "qqqg": 2,
+    "qqqq_qbar": 3,
+    "recoupling_convention": "..."
+  },
+  "fermion_ordering": "...",
+  "antisymmetry_id": "...",
+  "canonical_pair_vertex": "enabled | disabled",
+  "chiral_pair_vertex": "enabled | disabled",
+  "pcac_representation": "QUARK_LEVEL_AXIAL_WTI | HADRONIC_PION_POLE",
+  "confinement_branch": "refit | zero",
+  "instantaneous_policy": "...",
+  "zero_mode_policy": "...",
+  "renormalization_conditions": ["..."],
+  "holdout_manifest": "...",
+  "ttn_topology": "...",
+  "bond_policy": "...",
+  "explicit_induced_sea_policy": "mutually_exclusive",
+  "wilson_gate": "input_interface_only",
+  "matching_gate": "closed",
+  "nuclear_gate": "closed",
+  "process_gate": "closed",
+  "inference_gate": "closed",
+  "source_hashes": {"...": "..."}
+}
+\end{verbatim}
+
+\section{H3 microscopic state-bundle schema}
+
+\begin{verbatim}
+{
+  "bundle_id": "...",
+  "assumption_bundle_id": "...",
+  "prediction_plan_id": "...",
+  "hamiltonian_id": "...",
+  "resolution_id": "...",
+  "renormalization_trajectory_id": "...",
+  "proton_neutron_member_id": "...",
+  "state_tracking_id": "...",
+  "sector_amplitudes": {
+    "qqq": "...",
+    "qqqg_rho": "...",
+    "qqqg_lambda": "...",
+    "qqqubar_color_1": "...",
+    "qqqubar_color_rho": "...",
+    "qqqubar_color_lambda": "...",
+    "qqqdbar_color_1": "...",
+    "qqqdbar_color_rho": "...",
+    "qqqdbar_color_lambda": "..."
+  },
+  "exact_state_hash": "...",
+  "krylov_state_hash": "...",
+  "ttn_state_hash": "...",
+  "fermionic_swap_ledger": "...",
+  "bond_manifest_id": "...",
+  "vector_current_bundle_id": "...",
+  "axial_current_bundle_id": "...",
+  "pseudoscalar_bundle_id": "...",
+  "pcac_manifest_id": "...",
+  "sea_flavor_ledger_id": "...",
+  "common_parent_bundle_id": "...",
+  "feshbach_comparison_id": "...",
+  "antiquark_wilson_handoff_id": "...",
+  "readiness": [
+    "H3_LIGHT_SEA_BASIS_VALIDATED",
+    "FINITE_BASIS_PCAC_BENCHMARKED",
+    "POSITIVE_X_ANTIQUARK_OVERLAP_VALIDATED",
+    "MICROSCOPIC_Q_QBAR_G_COMMON_PARENT_VALIDATED"
+  ],
+  "forbidden_readiness": [
+    "PHYSICAL_TMD",
+    "MATCHING_COMPLETE",
+    "WILSON_READY",
+    "NUCLEAR_MATCHING_READY",
+    "INFERENCE_READY"
+  ]
+}
+\end{verbatim}
+
+\section{PCAC closure manifest}
+
+\begin{longtable}{L{0.25\textwidth}L{0.67\textwidth}}
+\toprule
+Field & Required content\\
+\midrule
+\endhead
+Identity & Hamiltonian, state, regulator, resolution, flavor generator, and
+current source hashes.\\
+Representation & \texttt{QUARK\_LEVEL\_AXIAL\_WTI} or
+\texttt{HADRONIC\_PION\_POLE\_DECOMPOSITION}.\\
+Kinematics & Incoming/outgoing momentum fibers, \(q^2\), current component,
+and spinor convention.\\
+One-body contribution & Active quark and antiquark current terms.\\
+Pair contribution & Current attachment to canonical pair creation/annihilation
+and five-parton sectors.\\
+Chiral contribution & Current and pseudoscalar terms owned by the chiral
+Hamiltonian kernel.\\
+Instantaneous contribution & Constrained-field and inverse-derivative pieces.\\
+Counterterms & Axial, pseudoscalar, wave-function, and current normalization
+terms.\\
+Pion-pole matching & Explicit or induced \(\Phi^a\), residue convention,
+non-pole remainder, and matching map.\\
+Residuals & Total and component defects with signs, tolerances, and numerical
+error.\\
+Ablations & Residual after removing each required term.\\
+Holdouts & Second momentum point, \(g_A\), pion-pole, or GT diagnostic excluded
+from calibration.\\
+Status & Narrow benchmark passed and stronger claims forbidden.\\
+\bottomrule
+\end{longtable}
+
+\section{Microscopic common-parent schema}
+
+\begin{verbatim}
+{
+  "parent_bundle_id": "...",
+  "state_bundle_id": "...",
+  "member_id": "...",
+  "resolution_id": "...",
+  "recoil_map_id": "...",
+  "parents": {
+    "quark": ["u", "d"],
+    "antiquark": ["ubar", "dbar"],
+    "gluon": ["g"]
+  },
+  "operator_identities": ["..."],
+  "active_slot_ancestry": ["..."],
+  "color_outer_multiplicities": ["1", "rho", "lambda"],
+  "helicity_oam_blocks": ["..."],
+  "available_reductions": [
+    "REGULATED_TMD",
+    "REGULATED_GPD",
+    "REGULATED_PDF",
+    "VECTOR_CURRENT",
+    "AXIAL_CURRENT",
+    "PSEUDOSCALAR",
+    "EMT",
+    "WIGNER",
+    "OAM"
+  ],
+  "matching_status": [
+    "LINK_SHORTENING_REQUIRED",
+    "UV_MATCHING_REQUIRED",
+    "RAPIDITY_SOFT_MATCHING_REQUIRED",
+    "NO_EVOLUTION_APPLIED",
+    "NO_PROCESS_MAP_APPLIED"
+  ],
+  "unavailable_blocks": ["..."],
+  "closure_report_id": "..."
+}
+\end{verbatim}
+
+\section{Explicit/induced sea comparison schema}
+
+\begin{verbatim}
+{
+  "comparison_id": "...",
+  "explicit_state_bundle_id": "...",
+  "retained_projector_id": "P",
+  "eliminated_projector_id": "Q_pair",
+  "energy_points": ["..."],
+  "effective_hamiltonian_id": "...",
+  "wave_operator_id": "...",
+  "norm_kernel_id": "...",
+  "transformed_operator_ids": {
+    "vector": "...",
+    "axial": "...",
+    "pseudoscalar": "...",
+    "antiquark_bilocal": "...",
+    "gtmd": "..."
+  },
+  "equivalence_residuals": {"...": 0.0},
+  "remainder_norms": {"...": "nonzero"},
+  "conditioning": {"...": "..."},
+  "provenance_two_cell": "...",
+  "composition_rule": "EXPLICIT_XOR_INDUCED"
+}
+\end{verbatim}
+
+\section{Antiquark Wilson-handoff schema}
+
+\begin{verbatim}
+{
+  "handoff_id": "...",
+  "state_bundle_id": "...",
+  "common_parent_bundle_id": "...",
+  "active_species": "ubar | dbar",
+  "active_helicity": "...",
+  "pair_sector_ancestry": "...",
+  "five_parton_color_multiplicity": "1 | rho | lambda",
+  "anti_fundamental_path_id": "...",
+  "charge_conjugation_adapter_id": "...",
+  "oam_blocks": [0, -1, 1, -2, 2],
+  "hamiltonian_coupling_id": "...",
+  "cut_support_status": "ABSENT | FINITE_VOLUME | CONTINUUM",
+  "phase_budget_id": "...",
+  "soft_overlap_status": "...",
+  "wilson_order": 1,
+  "readiness": "MICROSCOPIC_ANTIQUARK_WILSON_INPUT_INTERFACE_VALIDATED"
+}
+\end{verbatim}
+
+\section{Negative-test catalogue}
+
+The implementation shall assign stable IDs to at least the following classes.
+They are grouped here to make the failure surface auditable rather than to
+limit the actual test count.
+
+\begin{longtable}{L{0.18\textwidth}L{0.72\textwidth}}
+\toprule
+Group & Required injected failures\\
+\midrule
+\endhead
+Color & Missing each of the three singlets; nonorthogonal basis; wrong
+anti-fundamental generator; cluster tensor promoted to complete basis; lost
+outer multiplicity; nonunitary recoupling.\\
+Statistics & Wrong exchange sign; post-assembly antisymmetry; Pauli-forbidden
+state accepted; cluster-only antisymmetry; missing fermionic swap sign.\\
+Kinematics & Nonpositive support; momentum nonclosure; wrong charge, baryon,
+isospin, \(\Jz\), center-of-mass, recoil, or zero-skewness identity.\\
+Hamiltonian & Missing pair adjoint; wrong flavor/color/helicity selection;
+unsupported block inserted; sector counterterm misassigned; chiral kernel
+called universal QCD; H1 color-spin added to explicit H2/H3 dynamics.\\
+Renormalization & Bare sector mass called physical; resolution scale reused as
+TMD scale; holdout leakage; null direction hidden; sea asymmetry fitted with a
+new coefficient.\\
+Currents & Vector current from wrong Hamiltonian; pair, chiral, instantaneous,
+pseudoscalar, pion-pole, or counterterm piece omitted; convention mismatch;
+one-point PCAC advertised as a continuum proof; singlet anomaly ignored.\\
+Solvers and TTN & Exact/Krylov mismatch; matrix-free mismatch; full-bond
+mismatch; variational energy below exact; nonmonotone nested optimum; required
+sea/color block removed; low-rank loss unreported; state branch swapped.\\
+Ledgers & Probability, valence, charge, baryon, momentum, spin, or
+proton/neutron member closure broken; global \(\bar u=\bar d\) imposed.\\
+Antiquark parent & Negative-\(x\) copy; wrong active species; duplicate active
+multiplicity; wrong charge-conjugation sign; off-diagonal overlap without
+source; local recoil reimplementation.\\
+Reductions & Quark number convention used for gluon; wrong quark/antiquark sign
+in vector, axial, or tensor moment; WTI/PCAC routes added; false matching
+completion; physical PDF/GTMD/TMD status asserted.\\
+Feshbach and provenance & Operator not transformed; norm kernel omitted;
+remainder hidden; singular resolvent undetected; explicit plus induced sea;
+missing two-cell; unresolved cycle ignored; explicit pair plus independent
+pion-cloud correction.\\
+Wilson and gates & Antiquark flavor/color/OAM lost; numerical epsilon made
+physical; absorption without support; C5/C6 types duplicated; evolution,
+process, nuclear, inference, or production promotion.\\
+Regression & Production registry, parent artifact, provenance, composition,
+prior microscopic oracle, pinned Wilson manifest, or normative source changed.\\
+\bottomrule
+\end{longtable}
+
+\small
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev. Mod. Phys. \textbf{21}, 392 (1949).
+
+\bibitem{BrodskyPauliPinsky1998}
+S.~J.~Brodsky, H.-C.~Pauli, and S.~S.~Pinsky,
+``Quantum chromodynamics and other field theories on the light cone,''
+Phys. Rept. \textbf{301}, 299 (1998),
+arXiv:hep-ph/9705477.
+
+\bibitem{Vary2010}
+J.~P.~Vary et al.,
+``Hamiltonian light-front field theory in a basis function approach,''
+Phys. Rev. C \textbf{81}, 035205 (2010),
+arXiv:0905.1411.
+
+\bibitem{Xu2025}
+S.~Xu, Y.~Liu, C.~Mondal, J.~Lan, X.~Zhao, Y.~Li, and J.~P.~Vary,
+``Towards a first principles light-front Hamiltonian for the nucleon,''
+Phys. Lett. B \textbf{867}, 139599 (2025),
+arXiv:2408.11298.
+
+\bibitem{Mondal2025}
+C.~Mondal, S.~Xu, Y.~Liu, J.~Lan, Y.~Li, X.~Zhao, and J.~P.~Vary,
+``Basis light-front quantization: Advancing a first principles approach for
+the nucleon,''
+arXiv:2503.21372 (2025).
+
+\bibitem{Xu2021}
+S.~Xu, C.~Mondal, J.~Lan, X.~Zhao, Y.~Li, and J.~P.~Vary,
+``Nucleon structure from basis light-front quantization,''
+Phys. Rev. D \textbf{104}, 094036 (2021),
+arXiv:2108.03909.
+
+\bibitem{Du2020}
+W.~Du, Y.~Li, X.~Zhao, G.~A.~Miller, and J.~P.~Vary,
+``Basis light-front quantization for a chiral nucleon-pion Lagrangian,''
+Phys. Rev. C \textbf{101}, 035202 (2020),
+arXiv:1911.10762.
+
+\bibitem{Duan2024}
+Y.~Duan, S.~Xu, S.~Cheng, X.~Zhao, Y.~Li, and J.~P.~Vary,
+``Flavor asymmetry from the non-perturbative nucleon sea,''
+arXiv:2404.07755 (2024).
+
+\bibitem{Cao2026}
+X.~Cao, S.~Cheng, Y.~Duan, Y.~Li, S.~Xu, and X.~Zhao,
+``Non-perturbative flavor asymmetry in the nucleon and deuteron: The
+light-front Hamiltonian effective field theory approach,''
+arXiv:2601.13567 (2026).
+
+\bibitem{KoflerPasquini2017}
+S.~Kofler and B.~Pasquini,
+``Collinear parton distributions and the structure of the nucleon sea in a
+light-front meson-cloud model,''
+Phys. Rev. D \textbf{95}, 094015 (2017),
+arXiv:1701.07839.
+
+\bibitem{Choudhary2023}
+P.~Choudhary, D.~Chakrabarti, and C.~Mondal,
+``Flavor asymmetry of light sea quarks in proton: A light-front spectator
+model,''
+arXiv:2312.01484 (2023).
+
+\bibitem{NJL1961}
+Y.~Nambu and G.~Jona-Lasinio,
+``Dynamical model of elementary particles based on an analogy with
+superconductivity. I,''
+Phys. Rev. \textbf{122}, 345 (1961).
+
+\bibitem{WuZhang2004}
+M.-H.~Wu and W.-M.~Zhang,
+``Chiral symmetry in light-front QCD,''
+JHEP \textbf{04}, 045 (2004),
+arXiv:hep-ph/0310095.
+
+\bibitem{Nambu1960}
+Y.~Nambu,
+``Axial vector current conservation in weak interactions,''
+Phys. Rev. Lett. \textbf{4}, 380 (1960).
+
+\bibitem{GoldbergerTreiman1958}
+M.~L.~Goldberger and S.~B.~Treiman,
+``Decay of the pi meson,''
+Phys. Rev. \textbf{110}, 1178 (1958),
+and
+``Form factors in beta decay and muon capture,''
+Phys. Rev. \textbf{111}, 354 (1958).
+
+\bibitem{Chen2021}
+C.~Chen, C.~S.~Fischer, C.~D.~Roberts, and J.~Segovia,
+``Nucleon axial-vector and pseudoscalar form factors, and PCAC relations,''
+Phys. Rev. D \textbf{105}, 094022 (2022),
+arXiv:2103.02054.
+
+\bibitem{Alexandrou2024}
+C.~Alexandrou et al.,
+``Nucleon axial and pseudoscalar form factors using twisted-mass fermion
+ensembles at the physical point,''
+Phys. Rev. D \textbf{109}, 034503 (2024),
+arXiv:2309.05774.
+
+\bibitem{Bali2019}
+G.~S.~Bali et al.,
+``Solving the PCAC puzzle for nucleon axial and pseudoscalar form factors,''
+Phys. Lett. B \textbf{789}, 666 (2019),
+arXiv:1810.05569.
+
+\bibitem{BrodskyDiehlHwang2001}
+S.~J.~Brodsky, M.~Diehl, and D.-S.~Hwang,
+``Light-cone wavefunction representation of deeply virtual Compton
+scattering,''
+Nucl. Phys. B \textbf{596}, 99 (2001),
+arXiv:hep-ph/0009254.
+
+\bibitem{Meissner2009}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-1/2 hadron,''
+JHEP \textbf{08}, 056 (2009),
+arXiv:0906.5323.
+
+\bibitem{Lorce2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys. Rev. D \textbf{84}, 014015 (2011),
+arXiv:1106.0139.
+
+\bibitem{Feshbach1958}
+H.~Feshbach,
+``Unified theory of nuclear reactions,''
+Ann. Phys. \textbf{5}, 357 (1958),
+and Ann. Phys. \textbf{19}, 287 (1962).
+
+\bibitem{Karmanov2008}
+V.~A.~Karmanov, J.-F.~Mathiot, and A.~V.~Smirnov,
+``Systematic renormalization scheme in light-front dynamics with Fock-space
+truncation,''
+Phys. Rev. D \textbf{77}, 085028 (2008),
+arXiv:0801.4507.
+
+\bibitem{Marinho2008}
+J.~A.~O.~Marinho, T.~Frederico, E.~Pace, G.~Salm\`e, and P.~U.~Sauer,
+``Light-front Ward--Takahashi identity for two-fermion systems,''
+Phys. Rev. D \textbf{77}, 116010 (2008),
+arXiv:0805.0707.
+
+\bibitem{Singh2010}
+S.~Singh, R.~N.~C.~Pfeifer, and G.~Vidal,
+``Tensor network decompositions in the presence of a global symmetry,''
+Phys. Rev. A \textbf{82}, 050301(R) (2010),
+arXiv:0907.2994.
+
+\bibitem{Corboz2010}
+P.~Corboz, G.~Evenbly, F.~Verstraete, and G.~Vidal,
+``Simulation of interacting fermions with entanglement renormalization,''
+Phys. Rev. A \textbf{81}, 010303(R) (2010),
+arXiv:0904.4151.
+
+\bibitem{Gardi2013}
+E.~Gardi, J.~M.~Smillie, and C.~D.~White,
+``The non-Abelian exponentiation theorem for multiple Wilson lines,''
+JHEP \textbf{06}, 088 (2013),
+arXiv:1304.7040.
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\end{thebibliography}
+
+\end{document}

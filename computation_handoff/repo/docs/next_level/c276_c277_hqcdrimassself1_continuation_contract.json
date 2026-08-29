@@ -1,0 +1,26 @@
+{
+  "schema": "C276-C277-HQCDRIMASSSELF1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C276/HQCDRIMASSADAPTER1",
+  "from_status": "C276_RI_SMOM_SIGNED_MASS_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_MASS_PROJECTED_SELF_ENERGY_INCOMPLETE",
+  "from_plan": "RIMASSADAPTER1-B",
+  "from_package_root": "97d8fd6b6bd40d1295d7cdf9d3d3b849c375c7adad1f24794d86261b3e2d3994",
+  "completed_object": "signed-linear C149 projector convention and three-resolution structural RI/SMOM signed-mass adapter programs",
+  "next_job": "C277/HQCDRIMASSSELF1",
+  "next_frontier": {
+    "object_id": "C168-REQUEST-2-MASS-PROJECTED-SELF-ENERGY",
+    "exact_missing_object": "order-g_s^2 C43 signed-mass-projected quark self-energy on the authenticated RI/SMOM common-state/common-IR record at K9/K11/K13"
+  },
+  "required_schema": "C277-C43-RI-SMOM-SIGNED-MASS-SELF-ENERGY-V1",
+  "constraints": {
+    "signed_mass_linear": true,
+    "mass_squared_independent": true,
+    "symmetric_nonexceptional_kinematics": true,
+    "K9_K11_K13_separate": true,
+    "common_IR_required": true,
+    "missing_contributions_zeroed": false,
+    "C117_coordinates_unchanged": true,
+    "C166_graph_mutation": false,
+    "Q0_Q1_Q2_mutation": false,
+    "push": false
+  }
+}

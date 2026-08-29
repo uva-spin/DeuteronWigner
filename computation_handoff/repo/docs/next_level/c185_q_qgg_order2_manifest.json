@@ -1,0 +1,65 @@
+{
+  "count": 3,
+  "root": "ffd94dc8ada23f3442341315f05657d6bb9f914705ce96070020713735373053",
+  "rows": [
+    {
+      "block_id": "C185-Q_QGG-ORDER2-K9",
+      "coupling_degree": 2,
+      "direct_not_sequential": true,
+      "operator_preimage_route": true,
+      "owners": [
+        "C112_INSTANTANEOUS_FERMION",
+        "C127_CURRENT_CURRENT",
+        "C129_NORMAL_ORDERING",
+        "C131_LOCAL_POLYNOMIAL",
+        "C130_BOUNDARY_LINK"
+      ],
+      "root": "41c5293f93cd0ee9437a17af20ef52553a5a4470ec23845554dbc11c0ba304ee",
+      "source": "C170-B1-Q",
+      "source_owner_route": true,
+      "status": "SOURCE_SCOPE_PARTIAL_NOT_ZERO",
+      "target": "C170-B1-QGG",
+      "unavailable_owner": "projected three-body coefficient requires C186"
+    },
+    {
+      "block_id": "C185-Q_QGG-ORDER2-K11",
+      "coupling_degree": 2,
+      "direct_not_sequential": true,
+      "operator_preimage_route": true,
+      "owners": [
+        "C112_INSTANTANEOUS_FERMION",
+        "C127_CURRENT_CURRENT",
+        "C129_NORMAL_ORDERING",
+        "C131_LOCAL_POLYNOMIAL",
+        "C130_BOUNDARY_LINK"
+      ],
+      "root": "cbe82ab92a16e82b32e9c703b7a18f0cf5c842c2aea703017553124fa63d59a2",
+      "source": "C170-B1-Q",
+      "source_owner_route": true,
+      "status": "SOURCE_SCOPE_PARTIAL_NOT_ZERO",
+      "target": "C170-B1-QGG",
+      "unavailable_owner": "projected three-body coefficient requires C186"
+    },
+    {
+      "block_id": "C185-Q_QGG-ORDER2-K13",
+      "coupling_degree": 2,
+      "direct_not_sequential": true,
+      "operator_preimage_route": true,
+      "owners": [
+        "C112_INSTANTANEOUS_FERMION",
+        "C127_CURRENT_CURRENT",
+        "C129_NORMAL_ORDERING",
+        "C131_LOCAL_POLYNOMIAL",
+        "C130_BOUNDARY_LINK"
+      ],
+      "root": "6568c8f1e11c852ac9f759d19dccd24dbfef41a0aa7b462e6d3c7f1913ab24ae",
+      "source": "C170-B1-Q",
+      "source_owner_route": true,
+      "status": "SOURCE_SCOPE_PARTIAL_NOT_ZERO",
+      "target": "C170-B1-QGG",
+      "unavailable_owner": "projected three-body coefficient requires C186"
+    }
+  ],
+  "schema": "C185-ORDER2-V1",
+  "unavailable_encoded_as_zero": false
+}

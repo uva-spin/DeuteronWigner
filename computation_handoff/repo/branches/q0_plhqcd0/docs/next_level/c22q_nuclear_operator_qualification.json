@@ -1,0 +1,79 @@
+{
+  "analytic_assumption_plan": "NN_ONLY",
+  "blocks": [
+    {
+      "block": "NN",
+      "hidden_color_covariance_residual": null,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": true,
+      "selected_in_analytic_plan": true,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "M3_VALIDATION_QUALIFIED"
+    },
+    {
+      "block": "NNPI",
+      "hidden_color_covariance_residual": null,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "block": "DELTADELTA",
+      "hidden_color_covariance_residual": null,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "block": "SIX_QUARK_CLUSTER",
+      "hidden_color_covariance_residual": null,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "block": "SIX_QUARK_HIDDEN_COLOR",
+      "hidden_color_covariance_residual": 2.1e-12,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "block": "TRANSITION_AND_INTERFERENCE",
+      "hidden_color_covariance_residual": null,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "block": "COHERENT_PILOT",
+      "hidden_color_covariance_residual": null,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "block": "MATCHED_TOTAL",
+      "hidden_color_covariance_residual": 2.1e-12,
+      "physical_tier": "UNAVAILABLE",
+      "same_local_operator_proven": false,
+      "selected_in_analytic_plan": false,
+      "source_tier": "UNAVAILABLE",
+      "validation_tier": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    }
+  ],
+  "matched_total_qualified": false,
+  "schema_version": "1.0.0"
+}

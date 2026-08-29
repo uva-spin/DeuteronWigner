@@ -1,0 +1,69 @@
+{
+  "count": 8,
+  "rows": [
+    {
+      "adapter": "IDENTITY",
+      "external": "PROTON",
+      "microscopic": "PROTON",
+      "stable_id": "C29.TARGET.001",
+      "status": "SAME_PROTON_TARGET"
+    },
+    {
+      "adapter": null,
+      "external": "NEUTRON_ABSENT",
+      "microscopic": "NEUTRON",
+      "stable_id": "C29.TARGET.002",
+      "status": "TARGET_INCOMPATIBLE"
+    },
+    {
+      "adapter": "CHARGE_CONJUGATION_NOT_PROVED_FOR_FULL_MEASUREMENT",
+      "external": "ANTIPROTON",
+      "microscopic": "PROTON",
+      "stable_id": "C29.TARGET.003",
+      "status": "TARGET_INCOMPATIBLE"
+    },
+    {
+      "adapter": null,
+      "external": "PHENOMENOLOGICAL_DEUTERIUM_RECORD",
+      "microscopic": "NN",
+      "stable_id": "C29.TARGET.004",
+      "status": "PHENOMENOLOGICAL_DEUTERIUM_RECORD"
+    },
+    {
+      "adapter": null,
+      "external": "PHENOMENOLOGICAL_DEUTERIUM_RECORD",
+      "microscopic": "MATCHED_TOTAL",
+      "stable_id": "C29.TARGET.005",
+      "status": "NUCLEAR_TARGET_UNMAPPED"
+    },
+    {
+      "adapter": "DIAGNOSTIC_SCOPE_ONLY",
+      "external": "NONE",
+      "microscopic": "MICROSCOPIC_DEUTERON_NN",
+      "stable_id": "C29.TARGET.006",
+      "status": "MICROSCOPIC_DEUTERON_TARGET"
+    },
+    {
+      "adapter": null,
+      "external": "NONE",
+      "microscopic": "MICROSCOPIC_DEUTERON_MATCHED_TOTAL",
+      "stable_id": "C29.TARGET.007",
+      "status": "TARGET_INCOMPATIBLE"
+    },
+    {
+      "adapter": null,
+      "external": "NUCLEAR_FIXED_TARGET",
+      "microscopic": "PROTON",
+      "stable_id": "C29.TARGET.008",
+      "status": "NUCLEAR_TARGET_UNMAPPED"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status_counts": {
+    "MICROSCOPIC_DEUTERON_TARGET": 1,
+    "NUCLEAR_TARGET_UNMAPPED": 2,
+    "PHENOMENOLOGICAL_DEUTERIUM_RECORD": 1,
+    "SAME_PROTON_TARGET": 1,
+    "TARGET_INCOMPATIBLE": 3
+  }
+}

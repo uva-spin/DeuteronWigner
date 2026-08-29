@@ -1,0 +1,1610 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools,mathrsfs}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F1}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XIX: Source-Qualified Process Inputs, Physical-Covariance Gates, and Data-Ready TMD Observable Bundles},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XIX}
+\fancyhead[R]{\small\color{darkgray}Source-qualified process inputs}
+\fancyfoot[L]{\small\color{darkgray}2 August 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\EMT}{\ensuremath{\mathrm{EMT}}}
+\newcommand{\CS}{\ensuremath{\mathrm{CS}}}
+\newcommand{\DY}{\ensuremath{\mathrm{DY}}}
+\newcommand{\SIDIS}{\ensuremath{\mathrm{SIDIS}}}
+\newcommand{\DIS}{\ensuremath{\mathrm{DIS}}}
+\newcommand{\bD}{\bm b_{\Delta}}
+\newcommand{\bM}{\bm b_{\mathrm{TMD}}}
+\newcommand{\kT}{\bm k_T}
+\newcommand{\qT}{\bm q_T}
+\newcommand{\DT}{\bm\Delta_T}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\otimesx}{\mathbin{\otimes_x}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\order}{\mathcal O}
+\newcommand{\as}{\alpha_s}
+\newcommand{\Src}{\ensuremath{\mathrm{Src}}}
+\newcommand{\Phys}{\ensuremath{\mathrm{Phys}}}
+\newcommand{\Val}{\ensuremath{\mathrm{Val}}}
+\newcommand{\FF}{\ensuremath{\mathrm{FF}}}
+\newcommand{\TMDFF}{\ensuremath{\mathrm{TMDFF}}}
+\newcommand{\FO}{\ensuremath{\mathrm{FO}}}
+\newcommand{\WY}{W\!+\!Y}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XIX: Source-Qualified Process Inputs, Physical-Covariance Gates,\\[2mm]
+and Data-Ready TMD Observable Bundles}\\[4mm]
+\large Version-locked software and data, exact source adapters, fragmentation members,\\
+source-qualified \(W+Y\), and the controlled handoff from analytic oracles to inference-ready observables}
+\author{DeuteronWigner project}
+\date{2 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C22Q/M3Q separates 438 analytic-validation-qualified operator identities from 102 unavailable identities and certifies that the source-qualified and physical-input tiers are empty.  C23/P0 uses only the nonempty analytic tier and implements a synthetic process compiler: six rank-zero/rank-two \(W+Y\) records execute as validation oracles, rank-one/rank-three records remain mathematical oracles, and all returned observables are \texttt{VALIDATION\_ONLY}.  Its hard, partner, fragmentation, fixed-order, Collins--Soper/large-\(b\), and experimental objects are synthetic.  C24/P1 is the running package that must attempt to replace a narrow, useful T-even subset with version-locked, source-audited inputs and construct the exact prerequisites for physical covariance.  The present volume defines that source and covariance layer without presuming that C24 has passed any source-qualified or physical-input gate.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A process formula is not source qualified merely because every symbol has an implementation.  Analytic process oracles, source-qualified validation calculations, physical-input calculations, and inference-ready observables are different mathematical objects.  They differ in their source lineage, software and data versions, nonperturbative boundary, covariance, member correlation, measurement map, and domain of validity.  This distinction becomes decisive when a common microscopic TMD model is connected to external perturbative programs, global extractions, lattice constraints, fragmentation functions, fixed-order calculations, and experimental data.
+
+This volume defines the formal layer that replaces synthetic process ingredients by reproducible source packages.  A source package locks the paper, software release, data release, parameter files, ancillary expressions, conventions, license, checksums, and exact domain.  Superseding software versions are comparison objects and cannot silently replace the version used in a cited analysis.  Source-qualified coefficient records supersede validation prototypes only after exact endpoint terms, color structures, scheme conversion, independent \(x\)-space and Mellin checks, and declared remainders are established.  Quark and gluon Collins--Soper and large-\(b\) boundaries remain separate; a central curve without a reproducible uncertainty model is not a covariance-qualified boundary.  Collinear fragmentation functions and TMD fragmentation functions are also distinct operator bundles, with independent matching, evolution, hadron charge, flavor, replica, and source identities.
+
+The process layer is constructed for color-singlet Drell--Yan, current-fragmentation SIDIS, inclusive \(b_1\), tagged DIS, and conditional heavy-quark-pair DIS.  Source-qualified \(W+Y\) requires the fixed-order and asymptotic terms to share the same observable, cuts, hard current, scheme, masses, scales, thresholds, tensor projector, rank, and perturbative order.  An NN-only spin-1 plan is never promoted to the complete deuteron matched total.  Every process member retains one correlated microscopic, matching, Collins--Soper, fragmentation, fixed-order, nuclear, and measurement identity.  The physical-input gate adds covariance-bearing nonperturbative boundaries, joint member correlations, complete selected nuclear components, and a source-qualified measurement map.  Only after those gates close can the model enter a shared likelihood.  This volume provides typed schemas, theorems, requirements, benchmark families, negative tests, accuracy and uncertainty manifests, and the C25 handoff.  It does not claim that C24 succeeds, that any physical process prediction exists, or that global inference is ready.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Scope and the transition beyond analytic process oracles}
+\label{sec:scope}
+
+\subsection{Inherited process state}
+
+The C23 analytic process compiler consumes a tiered operator record
+\begin{equation}
+ \mathfrak q_A
+ =
+ \left(
+ q_A^{\mathrm{ref}},
+ q_A^{\mathrm{evol}},
+ q_A^{\mathrm{OPE}},
+ q_A^{\mathrm{rank}},
+ q_A^{\mathrm{nuc}},
+ q_A^{\mathrm{proc}}
+ \right),
+ \qquad A=1,\ldots,540,
+ \label{eq:inherited-capability}
+\end{equation}
+with 438 entries in the analytic-process-oracle tier and 102 entries that remain unavailable.  No entry is source qualified or physical-input qualified before C24.
+
+The C23 observable is therefore
+\begin{equation}
+ \sigma_{A,s}^{\Val}
+ =
+ W_{A,s}^{\Val}
+ +Y_{A,s}^{\Val}
+ +\delta_{A,s}^{\mathrm{pow,Val}},
+ \label{eq:c23-validation-observable}
+\end{equation}
+where every hard, partner, fragmentation, fixed-order, \CS/large-\(b\), and measurement object carries a synthetic validation identity.
+
+\begin{principle}[No evidential promotion by composition]
+A composition of validation-only ingredients remains validation only.  Algebraic closure, exact numerical recovery, or a high perturbative label on one ingredient cannot promote the composite observable to a source-qualified or physical-input status.
+\end{principle}
+
+\subsection{Four process tiers}
+
+\begin{definition}[Process evidence tier]
+For a process structure function \(A\), define
+\begin{align}
+ \mathsf E_A^{\mathrm{ana}}&:\ \text{complete synthetic analytic process oracle},\\
+ \mathsf E_A^{\mathrm{src}}&:\ \text{complete version-locked source-qualified validation chain},\\
+ \mathsf E_A^{\mathrm{phys}}&:\ \text{source chain plus physical covariance and joint-member support},\\
+ \mathsf E_A^{\mathrm{inf}}&:\ \text{physical-input chain plus a lawful likelihood and data map}.
+ \label{eq:evidence-tiers}
+\end{align}
+The tiers are nested only when every stronger gate is satisfied:
+\begin{equation}
+ \mathsf E_A^{\mathrm{inf}}
+ \Longrightarrow
+ \mathsf E_A^{\mathrm{phys}}
+ \Longrightarrow
+ \mathsf E_A^{\mathrm{src}}
+ \Longrightarrow
+ \mathsf E_A^{\mathrm{ana}}.
+ \label{eq:tier-implication}
+\end{equation}
+The converses do not hold.
+\end{definition}
+
+\begin{longtable}{L{0.29\textwidth}L{0.63\textwidth}}
+\toprule
+Tier & Minimum meaning\\
+\midrule
+\endhead
+\texttt{ANALYTIC\_PROCESS\_ORACLE} & Exact or controlled synthetic inputs test process algebra, links, ranks, \(W+Y\), and failure gates.  No source or physical claim.\\
+\texttt{SOURCE\_PROCESS\_VALIDATION} & Paper, software, data, parameter, ancillary, scheme, domain, and uncertainty records are version locked and independently reproduced.\\
+\texttt{PHYSICAL\_PROCESS\_INPUT} & The source chain additionally carries covariance-bearing physical boundaries and partner functions, correlated members, selected nuclear completeness, and physical domains.\\
+\texttt{INFERENCE\_READY} & A physical-input forward model is connected to immutable data ancestry, a source-qualified measurement map, a lawful correlated likelihood, and frozen validation data.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Central output}
+
+The Volume XIX output is a source-qualified observable bundle
+\begin{equation}
+ \mathfrak O_{A,s}^{\Src}
+ =
+ \left(
+ \mathfrak P_A,
+ \mathfrak B_s,
+ \mathfrak C_s,
+ \mathfrak D_s,
+ \mathfrak H_A,
+ \mathfrak F_A,
+ \mathfrak M_A,
+ \mathfrak U_A,
+ \mathfrak A_A,
+ \mathfrak Q_A
+ \right),
+ \label{eq:source-observable-bundle}
+\end{equation}
+where \(\mathfrak P_A\) is the process identity, \(\mathfrak B_s\) the microscopic boundary member, \(\mathfrak C_s\) the coefficient and evolution member, \(\mathfrak D_s\) the second-hadron or fragmentation member, \(\mathfrak H_A\) the hard and fixed-order source family, \(\mathfrak F_A\) the factorization/Glauber certificate, \(\mathfrak M_A\) the measurement definition, \(\mathfrak U_A\) the uncertainty decomposition, \(\mathfrak A_A\) the accuracy manifest, and \(\mathfrak Q_A\) the qualification result.
+
+\subsection{Nonclaims}
+
+Volume XIX does not assert:
+\begin{itemize}
+\item that a downloaded paper implies an ingested formula;
+\item that executable source code is the exact version used in the cited analysis;
+\item that a central parameter set is a covariance-bearing ensemble;
+\item that a collinear \FF is a \TMDFF;
+\item that a source-qualified process validation is a new physical extraction;
+\item that a source-qualified NN-only result is the complete deuteron prediction;
+\item that an unpolarized fixed-order calculation qualifies polarized or tensor harmonics;
+\item that the quark nonperturbative \CS kernel may be copied to the gluon sector;
+\item that high-order cusp or hard factors upgrade lower-order microscopic matching;
+\item that a process-level source bundle is automatically inference ready.
+\end{itemize}
+
+\section{Version-locked source packages}
+\label{sec:source-packages}
+
+\subsection{Paper, software, data, and parameter identities}
+
+\begin{definition}[Source package identity]
+A source package is
+\begin{equation}
+ \mathfrak S
+ =
+ \left(
+ \mathfrak S_{\mathrm{paper}},
+ \mathfrak S_{\mathrm{software}},
+ \mathfrak S_{\mathrm{data}},
+ \mathfrak S_{\mathrm{params}},
+ \mathfrak S_{\mathrm{anc}},
+ \mathfrak S_{\mathrm{env}},
+ \mathfrak S_{\mathrm{lic}}
+ \right),
+ \label{eq:source-package}
+\end{equation}
+where every component stores a canonical identifier, version, date, local path, cryptographic hash, source locator, license, convention, domain, and declared role.
+\end{definition}
+
+Paper, software, data, parameter, and ancillary versions are separate objects.  A paper may refer to one code tag, one nonpublic parameter file, and one evolving external data library; preserving only the paper or only the current repository does not reconstruct the calculation.
+
+\begin{requirement}[Version immutability]
+A source-qualified plan shall use the exact source package selected at plan construction.  A newer software or data release may be attached as a comparison or supersession candidate, but it may not silently replace any selected component.
+\end{requirement}
+
+\subsection{Source locators and executable provenance}
+
+Each formula or numerical output carries a locator
+\begin{equation}
+ \ell
+ =
+ \left(
+ \text{paper equation/table},
+ \text{code file and commit},
+ \text{parameter key},
+ \text{data member},
+ \text{build command}
+ \right).
+ \label{eq:source-locator}
+\end{equation}
+The locator must be sufficiently precise that an independent implementation can identify the same mathematical object.
+
+\begin{definition}[Reproduction record]
+A reproduction record compares a source output \(y_i^{\Src}\) and the local adapter \(y_i^{\mathrm{loc}}\) through
+\begin{equation}
+ r_i
+ =
+ \frac{y_i^{\mathrm{loc}}-y_i^{\Src}}
+ {s_i},
+ \qquad
+ \chi^2_{\mathrm{rep}}
+ =
+ \bm r^{\mathsf T}\bm C_{\mathrm{rep}}^{-1}\bm r,
+ \label{eq:reproduction-residual}
+\end{equation}
+where \(s_i\) and \(\bm C_{\mathrm{rep}}\) are source-appropriate numerical or statistical scales.  A central-value comparison without the source's uncertainty semantics cannot establish covariance reproduction.
+\end{definition}
+
+\subsection{Supersession without mutation}
+
+Suppose \(\mathfrak S_1\) and \(\mathfrak S_2\) are distinct releases.  The provenance relation is
+\begin{equation}
+ \mathfrak S_2
+ \xrightarrow{\ \mathrm{SUPERSEDES\_FOR\_NEW\_PLANS}\ }
+ \mathfrak S_1,
+ \label{eq:supersession}
+\end{equation}
+not an in-place replacement of \(\mathfrak S_1\).  Historical process plans continue to resolve to the old package and remain reproducible.
+
+\begin{theorem}[Version-stable plan identity]
+If every source component in \(\mathfrak O_{A,s}^{\Src}\) is content addressed and the plan stores the complete source tuple, then changes to external repositories or default libraries cannot change the plan output without changing its identity.
+\end{theorem}
+
+\begin{proof}
+The plan's executable dependency graph is a function of content hashes and explicit adapters.  Replacing any dependency changes at least one node hash, and hence changes the process-plan content address before execution.  Therefore an unchanged identity cannot silently consume changed source content.
+\end{proof}
+
+\section{Source qualification and physical-input qualification}
+\label{sec:qualification}
+
+\subsection{Gate vectors}
+
+For structure function \(A\), define the source gate vector
+\begin{equation}
+ \bm g_A^{\Src}
+ =
+ \left(
+ g_{\mathrm{expr}},
+ g_{\mathrm{anc}},
+ g_{\mathrm{scheme}},
+ g_{\mathrm{domain}},
+ g_{\mathrm{unc}},
+ g_{\mathrm{boundary}},
+ g_{\mathrm{partner}},
+ g_{\mathrm{hard}},
+ g_{\mathrm{FO}},
+ g_{\mathrm{fact}},
+ g_{\mathrm{rank}},
+ g_{\mathrm{nuc}}
+ \right).
+ \label{eq:source-gate-vector}
+\end{equation}
+Source qualification is the conjunction
+\begin{equation}
+ Q_A^{\Src}
+ =
+ \bigwedge_j g_{A,j}^{\Src}.
+ \label{eq:source-qualification}
+\end{equation}
+The evaluator returns the full set of failed gates rather than the first failure.
+
+Physical-input qualification adds
+\begin{equation}
+ \bm g_A^{\Phys}
+ =
+ \left(
+ Q_A^{\Src},
+ g_{\mathrm{cov}},
+ g_{\mathrm{joint}},
+ g_{\mathrm{physdom}},
+ g_{\mathrm{measurement}},
+ g_{\mathrm{nuc,selected}},
+ g_{\mathrm{no\ synthetic}}
+ \right),
+ \qquad
+ Q_A^{\Phys}=\bigwedge_j g_{A,j}^{\Phys}.
+ \label{eq:physical-qualification}
+\end{equation}
+
+\begin{principle}[Every failed gate is observable]
+Qualification is a diagnostic map, not a Boolean convenience.  Every missing source, boundary, covariance, member, nuclear, or measurement condition shall remain visible in the result and uncertainty manifests.
+\end{principle}
+
+\subsection{Physical-input qualification is stricter than source qualification}
+
+\begin{proposition}[Central curves are insufficient]
+A source-recorded central TMD, \CS kernel, or \TMDFF with no reproducible uncertainty model cannot satisfy \(Q_A^{\Phys}\), even if the central value is fully reproducible.
+\end{proposition}
+
+\begin{proof}
+The physical-input process member requires a joint probability or ensemble semantics for all shared nonperturbative inputs.  A central curve supplies no law for member propagation or cross-observable covariance, so \(g_{\mathrm{cov}}=g_{\mathrm{joint}}=0\).
+\end{proof}
+
+\subsection{Qualification states}
+
+\begin{longtable}{L{0.38\textwidth}L{0.54\textwidth}}
+\toprule
+Status & Meaning\\
+\midrule
+\endhead
+\texttt{ANALYTIC\_PROCESS\_\allowbreak ORACLE\_\allowbreak ELIGIBLE} & Complete synthetic route; analytic process and \(W+Y\) validation only.\\
+\texttt{SOURCE\_PROCESS\_\allowbreak VALIDATION\_\allowbreak ELIGIBLE} & Complete version-locked source route with a reproducible source uncertainty model; still validation only.\\
+\texttt{PHYSICAL\_PROCESS\_\allowbreak INPUT\_\allowbreak ELIGIBLE} & Source route plus physical covariance, joint members, physical domains, selected nuclear completeness, and physical measurement prerequisites.\\
+\texttt{SOURCE\_RECORDED\_CENTRAL\_ONLY} & Central source result reproducible, but covariance or member semantics incomplete.\\
+\texttt{SOURCE\_INTERFACE\_ONLY} & Source package and typed adapter exist, but one or more mathematical inputs are not executable.\\
+\texttt{NOT\_PROCESS\_ELIGIBLE} & At least one mandatory analytic/operator gate is absent.\\
+\bottomrule
+\end{longtable}
+
+\section{Source-qualified perturbative and boundary records}
+\label{sec:source-records}
+
+\subsection{Superseding validation coefficient prototypes}
+
+C22 validation records are retained as immutable analytic oracles.  A source-qualified coefficient is a new record
+\begin{equation}
+ \mathfrak c_{A\leftarrow B}^{\Src}
+ =
+ \left(
+ A,B,
+ m,\tau,
+ \gamma,\mathcal C,
+ \mathfrak s,
+ p_{\mathrm{first}},p_{\mathrm{impl}},
+ \cD_x,
+ \mathfrak S,
+ \ell,
+ \mathfrak o,
+ \mathfrak r
+ \right),
+ \label{eq:source-coefficient}
+\end{equation}
+containing the operator map, rank \(m\), twist \(\tau\), link \(\gamma\), color class \(\mathcal C\), scheme \(\mathfrak s\), orders, distributional expression \(\cD_x\), source package \(\mathfrak S\), locator \(\ell\), independent oracle \(\mathfrak o\), and remainder \(\mathfrak r\).
+
+The provenance relation is
+\begin{equation}
+ \mathfrak c^{\mathrm{C22,Val}}
+ \xrightarrow{\ \mathrm{BENCHMARKED\_BY}\ }
+ \mathfrak c^{\mathrm{C24,Src}},
+ \label{eq:coefficient-benchmark-relation}
+\end{equation}
+not a mutation of the C22 record.
+
+\begin{requirement}[Exact source expression]
+A source-qualified coefficient shall contain an authoritative ancillary file or a complete, independently verified transcription of every regular, plus-distribution, endpoint, color, and scheme-conversion term required at the declared order.
+\end{requirement}
+
+\subsection{Source-qualified Collins--Soper and \texorpdfstring{large-\(b\)}{large-b} plans}
+
+A boundary plan is
+\begin{equation}
+ \mathfrak K_a^{(p)}
+ =
+ \left(
+ \cD_a^{\mathrm{pert}},
+ \cD_a^{\mathrm{NP}},
+ \delta\cD_a^{\mathrm{match}},
+ \mathfrak S_p,
+ \bm\theta_p,
+ \bm C_p,
+ \mathcal B_p,
+ \mathcal Q_p
+ \right),
+ \label{eq:kernel-plan}
+\end{equation}
+where \(a=q,g\), \(\mathcal B_p\) is the valid \(b\)-domain, and \(\mathcal Q_p\) is the evidence tier.
+
+The allowed source statuses are:
+\begin{itemize}
+\item \texttt{SOURCE\_RECORDED\_CENTRAL\_ONLY};
+\item \texttt{SOURCE\_QUALIFIED\_WITH\_UNCERTAINTY\_MODEL};
+\item \texttt{PHYSICAL\_COVARIANCE\_QUALIFIED};
+\item \texttt{UNAVAILABLE}.
+\end{itemize}
+
+\begin{requirement}[Representation separation]
+Quark and gluon nonperturbative kernels shall remain separate objects.  Exact nonperturbative Casimir scaling is prohibited unless established for the selected source package and domain.
+\end{requirement}
+
+\subsection{Candidate source families}
+
+The ART25 analysis jointly extracts unpolarized TMD distributions, TMD fragmentation functions, and the \CS kernel at high logarithmic accuracy and is implemented with ARTEMIDE v3.01 \cite{Moos2025,ARTEMIDE301}.  This is a natural source package for a common unpolarized DY/SIDIS validation plan, but only the exact archived v3.01 release and its source parameter/member semantics may define that plan.  Later ARTEMIDE releases are comparison packages.
+
+Continuum and physical-mass lattice determinations and joint experimental--lattice analyses provide independent quark-kernel constraints \cite{Tan2025,Avkhadiev2025,Avkhadiev2024}.  Their use requires a reproducible scheme map, \(b\)-domain, uncertainty or covariance representation, and source member semantics.  A paper plot or central table is not sufficient for physical covariance.
+
+\subsection{Boundary-model uncertainty}
+
+For a parameterized boundary \(K(b;\bm\theta)\), member covariance propagates as
+\begin{equation}
+ C_K(b_i,b_j)
+ =
+ \frac{\partial K(b_i)}{\partial\theta_\alpha}
+ C_{\alpha\beta}
+ \frac{\partial K(b_j)}{\partial\theta_\beta}
+ +C_{\mathrm{disc}}(b_i,b_j),
+ \label{eq:kernel-covariance}
+\end{equation}
+where \(C_{\mathrm{disc}}\) records source-model discrepancy separately.  A diagonal error band is not automatically a joint covariance.
+
+\section{ART25 and ARTEMIDE reproduction architecture}
+\label{sec:artemide}
+
+\subsection{Release-locked plan}
+
+The ART25 source plan is represented by
+\begin{equation}
+ \mathfrak A_{25}
+ =
+ \left(
+ \begin{gathered}
+ \text{paper 2503.11201},\ \text{ARTEMIDE v3.01},\
+ \text{configuration},\ \text{constants},\ \text{parameter members},\\
+ \text{data ancestry},\ \text{benchmark grid}
+ \end{gathered}
+ \right).
+ \label{eq:art25-plan}
+\end{equation}
+The v3.01 software archive explicitly states that it was used for the ART25 DY+SIDIS fit \cite{ARTEMIDE301}.  Consequently a later tag, even if API compatible or numerically improved, cannot replace v3.01 inside \(\mathfrak A_{25}\).
+
+\begin{definition}[Paper-reproduction subset]
+A paper-reproduction subset is a frozen collection of source observables
+\begin{equation}
+ \mathcal R_{25}
+ =
+ \left\{
+ (\mathrm{proc}_i,\mathrm{kin}_i,y_i,\delta_i,\ell_i)
+ \right\}_{i=1}^{N_{\mathrm{rep}}},
+ \label{eq:paper-reproduction-set}
+\end{equation}
+chosen before adapter tuning and spanning both DY and SIDIS, multiple scales, and at least one nonperturbative-sensitive region.
+\end{definition}
+
+The local source adapter must reproduce the subset within the source's declared numerical precision.  A failure is assigned to code version, configuration, constants, external collinear inputs, parameter member, or measurement-map mismatch rather than absorbed by changing the microscopic boundary.
+
+\subsection{Newer release comparison}
+
+Let \(y_i^{301}\) and \(y_i^{30x}\) denote results from v3.01 and a later release at identical nominal inputs.  The version-difference ledger is
+\begin{equation}
+ \Delta_i^{\mathrm{ver}}
+ =
+ y_i^{30x}-y_i^{301}
+ =
+ \Delta_i^{\mathrm{physics}}
+ +\Delta_i^{\mathrm{algorithm}}
+ +\Delta_i^{\mathrm{defaults}}
+ +\Delta_i^{\mathrm{external}},
+ \label{eq:version-difference}
+\end{equation}
+with each component named where identifiable.  The later version can validate bug fixes or estimate source-version sensitivity but cannot retroactively alter the ART25 plan.
+
+\begin{requirement}[Source environment]
+The reproduction manifest shall record compiler, numerical libraries, build flags, integration mode, random/member seed, and external collinear set versions whenever they can affect a source output.
+\end{requirement}
+
+\subsection{Source parameters and members}
+
+A parameter vector \(\bm\theta_r\) is not a source ensemble until the release defines the member index \(r\), its weight, covariance or replica semantics, and all shared parameters across TMDPDF, TMDFF, and \CS kernel sectors.  The source member is therefore indivisible:
+\begin{equation}
+ s_r^{25}
+ =
+ \left(
+ \bm\theta_{F,r},
+ \bm\theta_{D,r},
+ \bm\theta_{K,r},
+ \bm\theta_{\mathrm{nuis},r},
+ w_r
+ \right).
+ \label{eq:art25-member}
+\end{equation}
+Sampling these marginal blocks independently destroys the source correlation.
+
+\section{Fragmentation source layer}
+\label{sec:fragmentation}
+
+\subsection{Collinear FF versus TMDFF}
+
+A collinear fragmentation function is a matrix element entering time-like collinear factorization,
+\begin{equation}
+ D_{h/j}(z;\mu),
+ \label{eq:collinear-ff}
+\end{equation}
+whereas a TMD fragmentation function is a soft-subtracted, rapidity-renormalized object
+\begin{equation}
+ \widetilde D_{h/j}(z,\bM;\mu,\zeta_D;\mathfrak s_D).
+ \label{eq:tmdff}
+\end{equation}
+The two are related by a source- and scheme-qualified small-\(b\) OPE, not by relabeling an array.
+
+\begin{definition}[Fragmentation source bundle]
+A fragmentation bundle is
+\begin{equation}
+ \mathfrak D_r
+ =
+ \left(
+ h,Q_h,j,z,\bM,
+ \mu,\zeta_D,
+ \mathfrak s_D,
+ D_{h/j,r},
+ \widetilde D_{h/j,r},
+ \mathfrak C_D,
+ \mathfrak E_D,
+ \mathfrak S_D,
+ \mathfrak U_D
+ \right),
+ \label{eq:fragmentation-bundle}
+\end{equation}
+where hadron species and charge, flavor, source member, matching, evolution, source package, and uncertainty are inseparable.
+\end{definition}
+
+\subsection{Candidate collinear FF families}
+
+MAPFF1.0 determines charged-pion fragmentation functions with Monte Carlo uncertainty replicas and flavor separation from SIA and SIDIS data \cite{MAPFF2021}.  The MAPFF NNLO pion/kaon analysis supplies a higher-order collinear family with Monte Carlo uncertainties \cite{MAPFF2022}.  The HAPS pion/kaon analysis reports public LHAPDF-format replicas and updated charge-separated SIDIS inputs \cite{HAPS2026}.  These are candidate \emph{collinear} source bundles.  None is a TMDFF by itself.
+
+A source-qualified SIDIS TMDFF plan may instead consume an exact ART25 TMDFF member if the release provides the necessary parameter and uncertainty semantics in the same scheme as the distribution-side TMD and process hard factor.
+
+\subsection{Flavor and charge identity}
+
+For charged pions, favored and unfavored combinations are not aliases:
+\begin{equation}
+ D_{\pi^+/u},\quad
+ D_{\pi^+/\bar d},\quad
+ D_{\pi^+/d},\quad
+ D_{\pi^+/\bar u},\quad
+ D_{\pi^+/g}
+ \label{eq:ff-flavor-set}
+\end{equation}
+carry separate source identities even when symmetries or fit assumptions relate them.  Charge conjugation and isospin relations are typed transformations with a source status, not pre-processing that deletes the original flavor entries.
+
+\subsection{Fragmentation covariance}
+
+For a replica ensemble \(r=1,\ldots,N\), the process covariance must be generated with the same fragmentation member across all hadron charges, flavors, and bins:
+\begin{equation}
+ C_{ij}^{D}
+ =
+ \frac{1}{N-1}
+ \sum_{r=1}^N
+ \left(y_{i,r}-\bar y_i\right)
+ \left(y_{j,r}-\bar y_j\right).
+ \label{eq:ff-covariance}
+\end{equation}
+Using separately sampled favored and unfavored bands is forbidden unless the source defines them as independent.
+
+\section{Source-qualified process spines}
+\label{sec:process-spines}
+
+\subsection{Drell--Yan}
+
+For a source-qualified color-singlet DY structure function,
+\begin{align}
+ W_A^{\DY,\Src}(\qT,Q)
+ ={}&
+ \sum_{a,b}
+ H_{ab,A}^{\DY,\Src}(Q,\mu)
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_A|}(bq_T)
+ \nonumber\\
+ &\times
+ \widetilde F_{a/h_1,s_1}^{[-],\Src}
+ (x_1,b;\mu,\zeta_1)
+ \widetilde F_{b/h_2,s_2}^{[-],\Src}
+ (x_2,b;\mu,\zeta_2)
+ \cM_A^{\DY}(b).
+ \label{eq:source-dy-w}
+\end{align}
+The source record stores the past-pointing link map, quark/antiquark ordering, current, electroweak normalization, fiducial measurement, scales, hard factor, fixed-order reference, and source members for both incoming hadrons.
+
+Low-\(q_T\) color-singlet DY has an established TMD factorization theorem \cite{CollinsDY2011}.  High-order fiducial resummation and fixed-order matching provide a source candidate for the compatible unpolarized record \cite{Neumann2022}.  The process accuracy remains limited by the least accurate boundary, coefficient, evolution, nonperturbative, hard, and fixed-order ingredient.
+
+\begin{requirement}[Two source-qualified hadron inputs]
+A source-qualified DY plan shall not use a synthetic second-hadron TMD.  Both incoming hadron bundles must satisfy the selected source tier and share compatible scheme, evolution, and member semantics.
+\end{requirement}
+
+\subsection{Current-fragmentation SIDIS}
+
+A source-qualified SIDIS structure function is
+\begin{align}
+ W_A^{\SIDIS,\Src}(P_{hT},Q)
+ ={}&
+ \sum_q e_q^2
+ H_{q,A}^{\SIDIS,\Src}(Q,\mu)
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_A|}\!\left(\frac{bP_{hT}}{z_h}\right)
+ \nonumber\\
+ &\times
+ \widetilde F_{q/D,s}^{[+],\Src}
+ (x_B,b;\mu,\zeta_F)
+ \widetilde D_{h/q,r}^{\Src}
+ (z_h,b;\mu,\zeta_D)
+ \cM_A^{\SIDIS}(b,z_h).
+ \label{eq:source-sidis-w}
+\end{align}
+The \(z_h\)-scaled Fourier convention, future-pointing distribution link, TMDFF scheme, hadron charge, current-fragmentation domain, and flavor/member identities are part of the process identity.
+
+A fully differential unpolarized SIDIS calculation at N\(^3\)LO supplies a source candidate for compatible unpolarized fixed-order records and arbitrary cuts \cite{Dong2026}.  It does not qualify polarized or tensor harmonics.  The tensor-polarized spin-1 analysis supplies the 23-structure kinematic basis and 21 nonzero tree-level functions through leading and subleading twist \cite{Zhao2025}; these counts are not source-qualification counts.
+
+\begin{requirement}[Fragmentation-side completeness]
+A source-qualified SIDIS plan shall contain a source-qualified TMDFF or a complete source-qualified construction from collinear FF, time-like matching, TMD evolution, nonperturbative boundary, and joint uncertainty.  A collinear FF set alone is insufficient.
+\end{requirement}
+
+\subsection{Inclusive \texorpdfstring{\(b_1\)}{b1}}
+
+Inclusive tensor DIS remains an independent collinear process:
+\begin{equation}
+ b_1(x,Q^2)
+ =
+ \frac12\sum_q e_q^2
+ \left[\delta_Tq_D(x,Q^2)+\delta_T\bar q_D(x,Q^2)\right]
+ +\delta_{\as}+\delta_{\mathrm{TMC}}+\delta_{\mathrm{HT}}.
+ \label{eq:source-b1}
+\end{equation}
+The HERMES measurement demonstrates a nonzero \(b_1\) signal in its measured range \cite{HERMES2005}.  A source-qualified project record must still specify coefficient functions, target-mass and higher-twist status, heavy flavors, tensor convention, nuclear assumption plan, and uncertainty.  An NN-only result is not the complete deuteron result.
+
+\subsection{Tagged DIS}
+
+Tagged DIS is a target-fragmentation process,
+\begin{equation}
+ e+D\longrightarrow e'+N_s+X,
+ \label{eq:tagged-process}
+\end{equation}
+with spectator momentum and helicity retained.  The source record consumes the spin-resolved nuclear spectral amplitude, active nucleon identity, nucleon pole, tagged-to-inclusive map, and FSI status.  Light-front tagged frameworks and pole extrapolation provide the primary architecture \cite{Cosyn2020,Strikman2017,Cosyn2026}.  No ordinary TMDFF enters this process.
+
+A source-qualified NN/IA plan may be defined only with an explicit exclusion of NNPI, \(\Delta\Delta\), compact, transition, hidden-color, coherent, and matched-total components.  It must remain labeled NN-only.
+
+\subsection{Heavy-quark-pair DIS}
+
+For low imbalance of a heavy-quark pair, a one-loop TMD factorization formula exists in specified schemes \cite{Zhu2013}.  A source-qualified conditional record stores
+\begin{equation}
+ \mathfrak P_{Q\bar Q}
+ =
+ \left(
+ m_Q, M_{Q\bar Q}, q_T, P_T,
+ \mathfrak s_g,
+ H_{Q\bar Q},
+ S_{Q\bar Q},
+ \gamma_g,
+ \mathcal C_g,
+ \mathcal D_{\mathrm{fact}}
+ \right),
+ \label{eq:heavy-pair-record}
+\end{equation}
+including the exact source-derived link topology, color class, soft function, mass scheme, and domain.  Rank-zero unpolarized and rank-two linearly polarized gluon structures are separate capability entries.  There is no default \(f+d\) color mixture.
+
+\section{Source-qualified rank-resolved \texorpdfstring{\(W+Y\)}{W+Y}}
+\label{sec:wy}
+
+\subsection{Definition and identity equality}
+
+For each source-qualified harmonic \(A\),
+\begin{equation}
+ \frac{\dd\sigma_A}{\dd\cP}
+ =
+ W_A^{[N]}
+ +Y_A^{[N]}
+ +\delta_{A,\mathrm{pow}},
+ \qquad
+ Y_A^{[N]}
+ =
+ \sigma_{A,\FO}^{[N]}
+ -\left[W_A^{[N]}\right]_{\mathrm{asy,FO}}^{[N]}.
+ \label{eq:source-wy}
+\end{equation}
+The fixed-order and asymptotic records share a common identity
+\begin{equation}
+ \mathfrak I_A^{\WY}
+ =
+ \left(
+ \begin{gathered}
+ \mathrm{process},\ \mathrm{measurement},\ \mathrm{cuts},\ \mathrm{scheme},\
+ \mathrm{hard},\ \mathrm{operators},\\
+ \mathrm{masses},\ \mathrm{scales},\ \mathrm{thresholds},\
+ \mathrm{projector},\ m_A,\ N
+ \end{gathered}
+ \right).
+ \label{eq:wy-identity}
+\end{equation}
+A mismatch in any component fails before numerical evaluation.
+
+\begin{theorem}[Fixed-order recovery]
+If \(W_A^{[N]}\), its asymptotic expansion, and \(\sigma_{A,\FO}^{[N]}\) share \(\mathfrak I_A^{\WY}\), then expanding \(W_A^{[N]}+Y_A^{[N]}\) through order \(N\) returns \(\sigma_{A,\FO}^{[N]}\), up to the declared power and numerical remainders.
+\end{theorem}
+
+\begin{proof}
+By definition, \(Y_A^{[N]}\) subtracts the fixed-order expansion of the same \(W_A^{[N]}\) from the same fixed-order observable.  The singular terms cancel algebraically, leaving the fixed-order result and terms beyond order \(N\) or leading power.
+\end{proof}
+
+\subsection{Source benchmark}
+
+A source-qualified \(W+Y\) record contains benchmark points in the TMD region, transition region, and fixed-order region.  The residual ledger separates
+\begin{equation}
+ \delta_A^{\WY}
+ =
+ \delta_A^{\mathrm{source}}
+ +\delta_A^{\mathrm{FO,num}}
+ +\delta_A^{\mathrm{asy}}
+ +\delta_A^{\mathrm{profile}}
+ +\delta_A^{\mathrm{pow}}
+ +\delta_A^{\mathrm{boundary}}.
+ \label{eq:wy-ledger}
+\end{equation}
+The boundary term is not retuned to absorb an asymptotic or fixed-order mismatch.
+
+\subsection{Rank specificity}
+
+The harmonic \(m_A\) fixes the Bessel kernel \(J_{|m_A|}\), extracted transverse powers, and tensor projector.  A rank-zero \(Y\) term cannot be copied into rank two, and a source-qualified unpolarized fixed-order calculation cannot qualify a tensor or helicity harmonic without a separate source theorem or calculation.
+
+\section{Nuclear assumption plans and component-resolved qualification}
+\label{sec:nuclear}
+
+\subsection{Resolved nuclear graph}
+
+The deuteron operator graph remains
+\begin{equation}
+ \mathcal G_D
+ =
+ \left\{
+ NN,
+ NN\pi,
+ \Delta\Delta,
+ 6q_{\mathrm{cluster}},
+ 6q_{\mathrm{hidden}},
+ \mathrm{transition},
+ \mathrm{coherent},
+ \mathrm{matched\ total}
+ \right\}.
+ \label{eq:nuclear-graph}
+\end{equation}
+Source qualification is component-wise.  A coefficient or process theorem for a nucleon impulse operator does not qualify a pion-active, transition, compact, coherent, or complete matched-total operator.
+
+\begin{definition}[Nuclear source plan]
+A nuclear source plan is
+\begin{equation}
+ \mathfrak N_p
+ =
+ \left(
+ \mathcal S_p,
+ \mathcal X_p,
+ \left\{Q_\alpha^{\Src}\right\}_{\alpha\in\mathcal S_p},
+ \left\{R_\beta\right\}_{\beta\in\mathcal X_p},
+ \mathfrak C_p
+ \right),
+ \label{eq:nuclear-source-plan}
+\end{equation}
+where \(\mathcal S_p\) is the selected component set, \(\mathcal X_p\) the explicitly excluded set, \(Q_\alpha^{\Src}\) the qualification of each selected component, \(R_\beta\) the exclusion rationale, and \(\mathfrak C_p\) the component-covariance record.
+\end{definition}
+
+An NN-only source plan may select
+\begin{equation}
+ \mathcal S_{NN}=\{NN\},
+ \qquad
+ \mathcal X_{NN}=\mathcal G_D\setminus\{NN\},
+ \label{eq:nn-only-plan}
+\end{equation}
+provided every exclusion is explicit.  Its output is labeled NN-only and cannot be aliased to the complete deuteron.
+
+\subsection{Matched-total qualification}
+
+\begin{proposition}[No partial promotion to the total]
+Let a process plan select nuclear components \(\mathcal S\).  The matched total can satisfy source qualification only if every \(\alpha\in\mathcal S\) is source qualified in a common scheme and every overlap/subtraction operator among selected components is source qualified.
+\end{proposition}
+
+\begin{proof}
+The matched total contains diagonal, transition, and subtraction terms.  An unavailable component or overlap contributes an unresolved operator, not zero.  Therefore the total source gate fails unless all selected terms are qualified or excluded by the plan before composition.
+\end{proof}
+
+\subsection{Hidden-color covariance}
+
+For the four-dimensional hidden-color complement, a basis rotation \(U\in U(4)\) acts as
+\begin{equation}
+ \rho_6\mapsto(1\oplus U)\rho_6(1\oplus U)^\dagger,
+ \qquad
+ O_6\mapsto(1\oplus U)O_6(1\oplus U)^\dagger.
+ \label{eq:hidden-rotation}
+\end{equation}
+A complete six-quark process contribution is invariant under the simultaneous transformation.  Individual hidden-color coordinates are diagnostics and cannot be fitted as basis-independent probabilities.
+
+\section{Physical covariance and correlated member semantics}
+\label{sec:covariance}
+
+\subsection{Indivisible process member}
+
+A process member is
+\begin{equation}
+ s
+ =
+ \left(
+ s_{\mathrm{micro}},
+ s_{\mathrm{nuc}},
+ s_{\mathrm{match}},
+ s_{\CS},
+ s_{\mathrm{evol}},
+ s_{\mathrm{coeff}},
+ s_{\mathrm{partner}},
+ s_{\mathrm{hard}},
+ s_{\FO},
+ s_{\mathrm{meas}}
+ \right).
+ \label{eq:process-member}
+\end{equation}
+The same \(s\) must be used for every observable component that shares a source or microscopic parameter.  Independently drawing marginal bands for the entries of \(s\) is not a valid joint ensemble.
+
+\subsection{Covariance graph}
+
+Let \(\bm\theta\) collect all continuous source and model parameters and let \(\bm\eta\) denote discrete members or plans.  A process observable \(\bm y\) has covariance
+\begin{equation}
+ \bm C_y
+ =
+ \bm J_\theta\bm C_\theta\bm J_\theta^{\mathsf T}
+ +\bm C_{\eta}
+ +\bm C_{\mathrm{pert}}
+ +\bm C_{\mathrm{num}}
+ +\bm C_{\mathrm{missing}},
+ \label{eq:process-covariance}
+\end{equation}
+where \(\bm J_\theta=\partial\bm y/\partial\bm\theta\).  The terms remain separate in the authoritative record.  The optional combined matrix is derived only after the source and cross-block correlations are defined.
+
+\begin{requirement}[Joint-source ancestry]
+When a source analysis jointly determines TMDPDFs, TMDFFs, and the \CS kernel, the process adapter shall preserve their shared member or parameter ancestry.  It shall not combine independently sampled marginal ensembles unless the source proves independence.
+\end{requirement}
+
+\subsection{Covariance tiers}
+
+\begin{longtable}{L{0.32\textwidth}L{0.60\textwidth}}
+\toprule
+Tier & Required information\\
+\midrule
+\endhead
+\texttt{CENTRAL\_ONLY} & Reproducible central value; no lawful member propagation.\\
+\texttt{DIAGONAL\_UNCERTAINTY} & Pointwise errors with no cross-point or cross-sector covariance.\\
+\texttt{SOURCE\_UNCERTAINTY\_MODEL} & Reproducible Hessian, replicas, nuisance model, or structured covariance inside one source bundle.\\
+\texttt{JOINT\_SOURCE\_COVARIANCE} & Correlations preserved across all source-coupled sectors, flavors, hadrons, and scales.\\
+\texttt{PHYSICAL\_INPUT\_COVARIANCE} & Joint source covariance plus all microscopic, nuclear, perturbative, measurement, and missing-operator components required by the selected process plan.\\
+\bottomrule
+\end{longtable}
+
+\section{Experimental data and measurement-map prerequisites}
+\label{sec:measurement}
+
+\subsection{Theory and measurement objects}
+
+A source-qualified process cross section remains distinct from a measured observable:
+\begin{equation}
+ \bm y_{\mathrm{meas}}
+ =
+ \cA_{\mathrm{det}}
+ \circ\cR_{\mathrm{QED}}
+ \circ\cB_{\mathrm{bin}}
+ \left[\bm\sigma_{\mathrm{theory}}\right].
+ \label{eq:measurement-map}
+\end{equation}
+Here bin integration, fiducial cuts, acceptance/efficiency, radiative corrections, and resolution are external maps.  They do not alter the TMD, fragmentation, nuclear, or factorization operator definitions.
+
+\begin{definition}[Measurement source bundle]
+A measurement bundle contains
+\begin{equation}
+ \mathfrak M_d
+ =
+ \left(
+ \begin{gathered}
+ \mathrm{dataset},\ \mathrm{observable},\ \mathrm{bins},\ \mathrm{cuts},\\
+ \mathrm{covariance},\ \mathrm{normalization},\ \mathrm{polarization},\\
+ \mathrm{radiative},\ \mathrm{acceptance},\ \mathrm{source\ lineage}
+ \end{gathered}
+ \right).
+ \label{eq:measurement-bundle}
+\end{equation}
+\end{definition}
+
+C24 need not build a likelihood, but it must identify which source-qualified process records could be mapped to which source-qualified data bundles without changing definitions.
+
+\subsection{Dataset ancestry and double counting}
+
+A data point may contribute to a source extraction, a process benchmark, and a future inference dataset.  These roles are not statistically independent.  The ancestry graph stores
+\begin{equation}
+ d_i
+ \longrightarrow
+ \left\{
+ \mathfrak S_{\mathrm{TMD}},
+ \mathfrak S_{\FF},
+ \mathfrak S_{\CS},
+ \mathfrak S_{\mathrm{benchmark}},
+ \mathfrak L_{\mathrm{future}}
+ \right\}.
+ \label{eq:data-ancestry}
+\end{equation}
+A future likelihood must exclude or explicitly model any data reused through prior source extraction or calibration.
+
+\begin{principle}[No hidden reuse]
+A source-qualified forward model may be validated on source holdouts, but it cannot later treat the same data as statistically independent inference data without a joint hierarchical model.
+\end{principle}
+
+\section{Accuracy, uncertainty, and evidence manifests}
+\label{sec:accuracy}
+
+\subsection{Process accuracy tuple}
+
+Each structure function has an accuracy record
+\begin{equation}
+ \mathfrak A_A
+ =
+ \left(
+ p_{\mathrm{micro}},
+ p_{\mathrm{Wilson}},
+ p_C,
+ p_P,
+ p_\Gamma,
+ p_\gamma,
+ p_{\cD},
+ p_K,
+ p_{\mathrm{partner}},
+ p_H,
+ p_{\FO},
+ p_Y,
+ p_{\mathrm{thr}},
+ p_{\mathrm{nuc}},
+ p_{\mathrm{meas}}
+ \right).
+ \label{eq:accuracy-tuple}
+\end{equation}
+The human-readable label is generated after the complete tuple is checked.  The observable accuracy is bounded by the least accurate mandatory component.
+
+\begin{requirement}[No accuracy laundering]
+A source paper's N\(^4\)LL or N\(^3\)LO label shall not be assigned to a project observable whose microscopic matching, boundary, partner, nuclear, or \(Y\)-term ingredient is lower order, model-only, or unavailable.
+\end{requirement}
+
+\subsection{Separated uncertainty axes}
+
+The authoritative uncertainty record contains at least:
+\begin{longtable}{L{0.31\textwidth}L{0.61\textwidth}}
+\toprule
+Axis & Meaning\\
+\midrule
+\endhead
+Microscopic & Hamiltonian member, basis/Fock/regulator, Wilson-order, and tensor-network truncation.\\
+Matching/evolution & LF-to-QCD matching, coefficient, splitting, anomalous dimensions, \CS kernel, path/curl, thresholds, and large-\(b\) boundary.\\
+Partner & Second-hadron TMD, collinear FF, TMDFF, flavor/charge, and member covariance.\\
+Process & Hard factor, electroweak inputs, fixed order, asymptotic subtraction, profile, masses, and power corrections.\\
+Nuclear & Selected component, wave function, overlap subtraction, hidden-color covariance, tagged FSI, and coherent status.\\
+Measurement & Binning, cuts, acceptance, resolution, QED radiation, luminosity, and polarization.\\
+Missing physics & Unavailable operators, source disagreements, unmatched components, and factorization/Glauber status.\\
+Numerical & Quadrature, Fourier transforms, interpolation, ODE, code-version, and source-reproduction errors.\\
+\bottomrule
+\end{longtable}
+
+These axes can be correlated but cannot be deleted by combining them into one band.
+
+\subsection{Qualification manifest}
+
+The qualification output for each structure function is
+\begin{equation}
+ \mathfrak Q_A
+ =
+ \left(
+ \bm g_A^{\Src},
+ \bm g_A^{\Phys},
+ Q_A^{\Src},
+ Q_A^{\Phys},
+ \mathfrak A_A,
+ \mathfrak U_A,
+ \mathcal D_A,
+ \mathcal B_A
+ \right),
+ \label{eq:qualification-manifest}
+\end{equation}
+where \(\mathcal D_A\) is the valid kinematic domain and \(\mathcal B_A\) the complete blocker list.
+
+\section{Software architecture and machine-readable schemas}
+\label{sec:software}
+
+\subsection{Core interfaces}
+
+The source-qualified process package requires interfaces equivalent to:
+\begin{center}
+\begin{tabularx}{0.94\textwidth}{YY}
+\toprule
+Source and boundary & Process and covariance\\
+\midrule
+\texttt{SourcePackageId} & \texttt{SourceQualificationEvaluator}\\
+\texttt{PaperSourceRecord} & \texttt{PhysicalInputQualificationEvaluator}\\
+\texttt{SoftwareReleaseRecord} & \texttt{SourceProcessPlan}\\
+\texttt{DataReleaseRecord} & \texttt{SourceProcessMember}\\
+\texttt{AncillaryExpressionRecord} & \texttt{SourceProcessObservableBundle}\\
+\texttt{SourceCoefficientRecord} & \texttt{SourceWYRecord}\\
+\texttt{CSLargeBSourcePlan} & \texttt{JointMemberGraph}\\
+\texttt{CollinearFFSourceBundle} & \texttt{PhysicalInputPrerequisiteMatrix}\\
+\texttt{TMDFFSourceBundle} & \texttt{MeasurementSourceBundle}\\
+\texttt{SourceReproductionManifest} & \texttt{DataAncestryGraph}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+All objects are immutable, content addressed, deterministic on serialization, explicit about source and scheme identity, and disconnected from inference and production roots.
+
+\subsection{Source-package schema}
+
+\begin{verbatim}
+{
+  "source_package_id": "...",
+  "paper": {"id": "...", "version": "...", "sha256": "..."},
+  "software": {"release": "...", "commit": "...", "sha256": "..."},
+  "data": [{"release": "...", "member": "...", "sha256": "..."}],
+  "parameters": [{"name": "...", "value": 0.0, "member": "..."}],
+  "ancillaries": [{"locator": "...", "sha256": "..."}],
+  "scheme_id": "...",
+  "domain": {"x": [0.0, 1.0], "Q": [0.0, 0.0], "b": [0.0, 0.0]},
+  "uncertainty_tier": "CENTRAL_ONLY | SOURCE_MODEL | JOINT_COVARIANCE",
+  "license": "...",
+  "role": "CALIBRATION | HOLDOUT | PROCESS_INPUT | COMPARISON"
+}
+\end{verbatim}
+
+\subsection{Physical-input prerequisite schema}
+
+\begin{verbatim}
+{
+  "process_structure_id": "...",
+  "source_qualified": false,
+  "physical_input_qualified": false,
+  "source_gates": {"...": true},
+  "physical_gates": {"...": false},
+  "selected_nuclear_plan": "...",
+  "joint_member_graph_id": "...",
+  "measurement_bundle_id": "...",
+  "accuracy_manifest_id": "...",
+  "uncertainty_manifest_id": "...",
+  "blocking_reasons": ["..."]
+}
+\end{verbatim}
+
+\subsection{Process plan compiler}
+
+The compiler admits mutually exclusive plans such as:
+\begin{itemize}
+\item \texttt{P1-DY-ART25}: version-locked ART25/ARTEMIDE DY source plan;
+\item \texttt{P1-SIDIS-ART25}: common ART25 TMDPDF/TMDFF/\CS source plan;
+\item \texttt{P1-SIDIS-FF}: project TMDPDF plus source-qualified FF/TMDFF adapter;
+\item \texttt{P1-B1-NN}: NN-only source-qualified inclusive tensor plan;
+\item \texttt{P1-TAGGED-NN}: NN/IA/pole source plan;
+\item \texttt{P1-HQPAIR}: conditional source-qualified heavy-pair DIS plan.
+\end{itemize}
+Plans may be compared but never added.  A plan cannot mix source members, software versions, schemes, or nuclear assumptions without an explicit transformation and new identity.
+
+\section{Formal requirements}
+\label{sec:requirements}
+
+The following requirements are stable identifiers for the Volume XIX layer.
+
+\begin{longtable}{L{0.12\textwidth}L{0.80\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V19.001 & Analytic, source-qualified, physical-input, and inference-ready tiers are distinct typed statuses.\\
+V19.002 & Paper, software, data, parameter, ancillary, environment, and license records have separate identities.\\
+V19.003 & Every selected source component is version locked and content addressed.\\
+V19.004 & Newer source releases are comparison or supersession candidates and cannot silently replace historical plans.\\
+V19.005 & Every executable source formula has an equation, table, code, or ancillary locator and a source hash.\\
+V19.006 & Source software and paper versions are connected by an explicit relation rather than by repository-name equality.\\
+V19.007 & Source environment, build flags, numerical mode, and external library versions are recorded where relevant.\\
+V19.008 & Source reproduction uses frozen calibration and holdout subsets.\\
+V19.009 & A source central value without uncertainty semantics cannot satisfy physical-input qualification.\\
+V19.010 & A source-qualified coefficient is versioned separately from the immutable C22 validation prototype.\\
+V19.011 & Source-qualified coefficients preserve endpoint, plus-distribution, color, scheme, rank, and order identity.\\
+V19.012 & Every selected coefficient has independent source-level \(x\)-space and moment checks or an equally strong independent oracle.\\
+V19.013 & Quark and gluon Collins--Soper/large-\(b\) plans remain separate.\\
+V19.014 & Exact nonperturbative quark-to-gluon Casimir scaling is not imposed without a source theorem.\\
+V19.015 & Source boundary plans retain source domain, parameter/member identity, and uncertainty tier.\\
+V19.016 & ART25 plans use the exact ARTEMIDE v3.01 source package or remain unavailable.\\
+V19.017 & Later ARTEMIDE versions cannot mutate an ART25 process plan.\\
+V19.018 & Jointly extracted TMDPDF, TMDFF, and Collins--Soper members retain their common source ancestry.\\
+V19.019 & Collinear FF and TMDFF bundles are distinct operator objects.\\
+V19.020 & Fragmentation bundles retain hadron species, charge, flavor, scheme, domain, and member covariance.\\
+V19.021 & Source-qualified Drell--Yan uses source-qualified inputs for both incoming hadrons.\\
+V19.022 & Source-qualified Drell--Yan preserves past-pointing links through the full operator identity.\\
+V19.023 & Source-qualified SIDIS preserves future-pointing distribution links and the \(z_h\)-scaled Fourier convention.\\
+V19.024 & An unpolarized fixed-order SIDIS source cannot qualify tensor, helicity, transversity, or T-odd harmonics by analogy.\\
+V19.025 & Inclusive \(b_1\) is an independent collinear process record, not an integral of an incomplete SIDIS implementation.\\
+V19.026 & Source-qualified \(b_1\) retains quark and antiquark terms, tensor convention, target-mass, higher-twist, and heavy-flavor status.\\
+V19.027 & Tagged DIS is a target-fragmentation process and does not consume an ordinary TMDFF.\\
+V19.028 & Tagged source plans retain spectator momentum/helicity, active nucleon identity, pole residue, and FSI status.\\
+V19.029 & Heavy-quark-pair DIS remains conditional and domain restricted.\\
+V19.030 & Gluon process records retain exact ordered-link and \(f/d\) color identities; no default mixture exists.\\
+V19.031 & Source-qualified \(W+Y\) uses identical fixed-order and asymptotic process identities.\\
+V19.032 & The rank and harmonic of a \(Y\) term are immutable and cannot be copied from a scalar channel.\\
+V19.033 & Microscopic or source boundary parameters cannot be retuned to repair a fixed-order or asymptotic mismatch.\\
+V19.034 & The transition profile and its variation remain distinct from boundary and fixed-order uncertainties.\\
+V19.035 & Nuclear source qualification is component-wise.\\
+V19.036 & An NN-only process plan explicitly excludes all other nuclear components and is never labeled the complete deuteron.\\
+V19.037 & A matched nuclear total qualifies only when every selected diagonal, transition, and subtraction block qualifies.\\
+V19.038 & Complete six-quark observables remain invariant under hidden-color basis rotations.\\
+V19.039 & Every process member retains one correlated microscopic, matching, boundary, partner, hard, fixed-order, nuclear, and measurement identity.\\
+V19.040 & Independently sampled marginal bands cannot replace a joint source member or covariance.\\
+V19.041 & Source-data ancestry records calibration, benchmark, and future-likelihood reuse.\\
+V19.042 & Experimental binning, acceptance, QED, and resolution maps remain external to the TMD and nuclear operators.\\
+V19.043 & Process accuracy is limited by the least accurate mandatory ingredient.\\
+V19.044 & Microscopic, matching/evolution, partner, process, nuclear, measurement, missing-physics, and numerical uncertainties remain separate.\\
+V19.045 & Every source and physical gate failure remains visible in the qualification manifest.\\
+V19.046 & T-odd and multiparton process channels remain unavailable unless their exact operator-specific source route is independently completed.\\
+V19.047 & Source-qualified process plans remain validation only and have no path to inference or production.\\
+V19.048 & Physical-input qualification requires no synthetic ingredient in the selected chain.\\
+V19.049 & All manifests and generated source adapters are deterministic and content addressed.\\
+V19.050 & The accepted 216-route production registry and authoritative artifacts remain immutable.\\
+\bottomrule
+\end{longtable}
+
+\section{Benchmark and falsification program}
+\label{sec:benchmarks}
+
+\subsection{P1-A: source package integrity}
+
+Preserve paper, software, data, parameter, and ancillary packages separately.  Verify hashes, licenses, locators, and deterministic extraction.  Inject a wrong paper version, wrong software tag, modified source file, and absent license.
+
+\subsection{P1-B: ART25 reproduction subset}
+
+Lock ARTEMIDE v3.01 and reproduce selected DY and SIDIS source outputs using source configurations and parameters.  Compare with later releases only through an explicit version-difference ledger.  Silent substitution must fail.
+
+\subsection{P1-C: source-qualified \texorpdfstring{\CS}{CS}/large-\texorpdfstring{\(b\)}{b} plans}
+
+For each candidate source, test scheme conversion, \(b\)-domain, uncertainty tier, perturbative overlap, holdouts, and quark/gluon separation.  A source central curve without covariance must fail the physical-input gate while remaining available at its lower source tier.
+
+\subsection{P1-D: exact selected coefficient records}
+
+For each selected T-even family, compare source expression, endpoint terms, color decomposition, scheme conversion, and independent \(x\)-space/moment routes.  The source-qualified record must supersede, not overwrite, the C22 prototype.
+
+\subsection{P1-E: fragmentation source bundles}
+
+Validate official replica/Hessian or parameter-member semantics, hadron charge, flavor relations, scheme, and domain.  Demonstrate explicitly that a collinear FF set cannot satisfy the TMDFF interface without matching, evolution, and a nonperturbative boundary.
+
+\subsection{P1-F: Drell--Yan source spine}
+
+Verify past links, quark/antiquark ordering, two source-qualified hadron bundles, hard current, electroweak normalization, fixed-order/asymptotic identity, and source benchmark points.  A synthetic second hadron must fail source qualification.
+
+\subsection{P1-G: SIDIS source spine}
+
+Verify the future link, \(z_h\)-scaled Bessel transform, TMDFF/FF member identity, current-fragmentation domain, hard factor, fixed order, and source benchmark.  Inject a collinear FF in place of a TMDFF and an unpolarized fixed-order result into an LL structure.
+
+\subsection{P1-H: source-qualified \texorpdfstring{\(W+Y\)}{W+Y}}
+
+Check exact fixed-order/asymptotic identity, fixed-order recovery, profile variation, source benchmark residuals, and rank separation.  The C23 analytic \(W+Y\) records remain immutable comparison oracles.
+
+\subsection{P1-I: spin-1 LL same-operator plan}
+
+Prove equality of the local short-distance operator before reusing a coefficient for the LL matrix element.  Keep target-state and NN-only nuclear identities.  Inject an incompatible tensor operator with the same array shape.
+
+\subsection{P1-J: inclusive \texorpdfstring{\(b_1\)}{b1} prerequisites}
+
+Compare the helicity-difference, LL-adapter, collinear-coefficient, and evolution routes.  Check quarks and antiquarks, target-mass and higher-twist status, and the NN-only versus complete-deuteron distinction.
+
+\subsection{P1-K: tagged DIS prerequisites}
+
+Verify target-fragmentation identity, spectator recoil, pole residue, tagged-to-inclusive closure, and source-domain status.  A regular FSI may modify the recoil distribution but must not change the analytic pole residue.
+
+\subsection{P1-L: heavy-quark-pair DIS}
+
+Verify the conditional factorization certificate, heavy mass scheme, exact source link/color map, rank-zero/rank-two separation, and domain.  Requests outside the low-imbalance hierarchy fail.
+
+\subsection{P1-M: physical-input gate}
+
+Use one covariance-bearing positive control, one source-central-only negative control, one synthetic-only negative control, and one joint-member mismatch.  The evaluator must return every failed physical gate.
+
+\subsection{P1-N: process accuracy and bottlenecks}
+
+Construct channels whose perturbative ingredients have deliberately different orders.  Verify that the generated label reports the true minimum and does not inherit the highest source-paper label.
+
+\subsection{P1-O: nuclear scope}
+
+Compile an NN-only plan and a deliberately invalid partial matched-total plan.  Verify explicit exclusions, component-wise qualification, no NN-to-total promotion, and hidden-color covariance when compact components are selected.
+
+\subsection{P1-P: deterministic isolation}
+
+Rebuild every manifest and source adapter byte-for-byte.  Verify that analytic C23 plans, C19--C23 manifests, production routes, and authoritative artifacts are unchanged and that no likelihood, posterior, or production edge exists.
+
+\section{Mandatory negative-test catalogue}
+\label{sec:negative-tests}
+
+The implementation package shall include at least 880 stable, ordered negative-test identities.  The families below are mandatory.
+
+\begin{longtable}{L{0.27\textwidth}L{0.65\textwidth}}
+\toprule
+Family & Required failures\\
+\midrule
+\endhead
+Source integrity & Wrong paper or software version; current release silently substituted; missing hash or locator; unofficial fork used as authority; modified local source; missing license or domain.\\
+Qualification inflation & Analytic record labeled source qualified; source central curve labeled physical covariance; source code treated as an uncertainty ensemble; downloaded paper treated as ancillary ingestion; physical tier issued with a synthetic component.\\
+Coefficient and scheme & C22 prototype relabeled; endpoint term missing; color invariant dropped; wrong \(\gamma_5\) conversion; scheme map absent; source uncertainty omitted.\\
+\CS/large-\(b\) & Quark kernel copied to gluon; exact nonperturbative Casimir scaling imposed; source domain exceeded; lattice central points used without uncertainty tier; source and project schemes aliased.\\
+ART25 & v3.01 replaced by v3.02/v3.03; wrong integration mode; wrong constants; parameter member shuffled; paper benchmark changed after tuning.\\
+Fragmentation & Collinear FF called TMDFF; hadron charge or favored/unfavored identity lost; source member covariance dropped; \(z_h\) convention changed; plot digitization presented as data.\\
+Drell--Yan & Synthetic second hadron in source plan; future link; hard-current mismatch; inclusive/fiducial mismatch; wrong fixed-order code version; source \(W\) combined with analytic-only \(Y\).\\
+SIDIS & Tagged process treated as current fragmentation; missing \(1/z_h\) scaling; incompatible TMDFF scheme; unpolarized N\(^3\)LO source assigned to tensor/helicity; FF source version mismatch.\\
+Inclusive \(b_1\) & Antiquark omitted; tensor sign wrong; SIDIS integration used as sole definition; target-mass/higher-twist status hidden; independent \(b_1\) normalization introduced; NN-only result called complete.\\
+Tagged DIS & Ordinary TMDFF inserted; active nucleon identity lost; pole residue modified by regular FSI; tagged-to-inclusive closure broken; acceptance inserted into spectral amplitude.\\
+Heavy-pair DIS & Generic DIS link used; default \(f+d\) mixture; wrong mass scheme; rank-two gluon demoted to rank zero; source used outside its factorization domain.\\
+\(W+Y\) & Mismatched cuts, masses, schemes, ranks, thresholds, or orders; missing or duplicate asymptotic subtraction; scalar \(Y\) copied to rank two; boundary retuned to repair \(Y\).\\
+Nuclear & NN qualification copied to NNPI, \(\Delta\Delta\), compact, transition, or coherent blocks; partial components promoted to total; hidden-color basis dependence; cluster/compact double counting.\\
+Covariance/member & Independently sampled marginal bands; source member mismatch; joint covariance dropped; source systematic absorbed into scale variation; data ancestry ignored; holdout reused for tuning.\\
+Readiness leakage & Likelihood or posterior constructed; source-qualified validation called physical extraction; physical T-odd process issued; complete deuteron claim; production registry or authoritative artifact mutated.\\
+\bottomrule
+\end{longtable}
+
+\section{Implementation stages and deliverables}
+\label{sec:implementation}
+
+\subsection{P1.0: source registry and version locks}
+
+Implement source-package types, preserve exact paper/software/data releases, record hashes and licenses, and create deterministic parsers.  Produce the source-package lock manifest before numerical reproduction.
+
+\subsection{P1.1: coefficient and boundary source adapters}
+
+Add versioned source-qualified coefficient records for the selected minimal T-even families, source-qualified \CS/large-\(b\) plan interfaces, exact source domains, uncertainty tiers, and supersession relations to C22 validation prototypes.
+
+\subsection{P1.2: fragmentation source layer}
+
+Implement collinear FF and TMDFF source bundles, member/covariance semantics, hadron charge and flavor identities, source domain, and source-to-project scheme adapters.
+
+\subsection{P1.3: source-qualified process candidates}
+
+Build candidate DY, SIDIS, inclusive \(b_1\), tagged, and heavy-pair process plans.  Evaluate all source gates and leave any incomplete plan unavailable rather than falling back to analytic inputs.
+
+\subsection{P1.4: source-qualified \texorpdfstring{\(W+Y\)}{W+Y} and covariance}
+
+For complete candidates, construct rank-specific source \(W+Y\), reproduce source benchmarks, freeze holdouts, propagate joint source members, and build the physical-input prerequisite matrix.
+
+\subsection{P1.5: audit, isolation, and handoff}
+
+Run full regression, deterministic reconstruction, source-license and hash audit, negative injections, and readiness gates.  Update the roadmap with one of two outcomes: a nonempty source-qualified spine ready for physical-covariance completion, or a precise source-ingestion completion package.
+
+\subsection{Required repository deliverables}
+
+The implementation shall produce at least:
+\begin{itemize}
+\item \texttt{c24\_implementation\_report.md} and \texttt{c24\_api.md};
+\item normative and primary-source integration manifests;
+\item source-package lock, coefficient, \CS/large-\(b\), fragmentation, hard/fixed-order, and process-eligibility manifests;
+\item source-qualified DY, SIDIS, \(b_1\)/tagged, heavy-pair, and \(W+Y\) reports;
+\item the physical-input prerequisite matrix;
+\item accuracy, uncertainty, holdout, injection, regression, and unresolved-gap reports;
+\item architecture decisions for version locking, source/physical tiers, ART25, fragmentation admissibility, source \(W+Y\), NN-only plans, and joint covariance.
+\end{itemize}
+
+Every generated JSON and source adapter must reproduce byte-for-byte.
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+Volume XIX is formally realized only when the following are demonstrated:
+
+\begin{enumerate}
+\item the complete C23 baseline reproduces before edits;
+\item all used papers, software, data, parameters, and ancillaries are locally preserved and hash audited;
+\item paper, software, data, and parameter versions are locked separately;
+\item historical source plans cannot silently consume newer releases;
+\item one authoritative source-qualification evaluator returns all failed gates;
+\item analytic, source-qualified, physical-input, and inference tiers remain distinct;
+\item every source-qualified coefficient has an exact source expression or authoritative ancillary and an independent source-level check;
+\item every source-qualified boundary has a source domain and uncertainty tier;
+\item quark and gluon \CS/large-\(b\) plans remain separate;
+\item ART25 reproduction uses the exact ARTEMIDE v3.01 package or remains unavailable;
+\item collinear FF and TMDFF source bundles are distinct and correctly typed;
+\item the minimal T-even families receive complete source-gate audits;
+\item T-odd and multiparton channels remain fail-closed;
+\item at least one DY and one SIDIS source candidate receive complete audits, regardless of final qualification outcome;
+\item source-qualified \(W+Y\) executes only with exact fixed-order/asymptotic identity;
+\item all analytic C23 process records remain immutable;
+\item inclusive \(b_1\), tagged DIS, and heavy-pair DIS receive explicit source decisions and domains;
+\item NN-only plans remain distinct from the complete deuteron matched total;
+\item every candidate receives a physical-input prerequisite record;
+\item physical-input qualification remains false wherever covariance, joint-member, domain, selected-nuclear, or measurement gates fail;
+\item member and covariance identities survive every source adapter and process contraction;
+\item source-data ancestry prevents hidden reuse in future inference;
+\item process accuracy reports the least accurate mandatory ingredient;
+\item all uncertainty axes remain separate;
+\item frozen holdouts remain outside adapter tuning;
+\item every mandatory negative injection produces the expected diagnostic;
+\item all prior validation, production, and authoritative artifacts remain unchanged;
+\item no likelihood, posterior, inference, or production route is created;
+\item all new manifests reproduce byte-for-byte;
+\item the working tree is clean and the local completion commit is not pushed.
+\end{enumerate}
+
+C24 may complete with an empty source-qualified process set if the source audit is complete and every blocker is explicit.  It may claim a nonempty source-qualified spine only when at least one structure function passes every source gate.
+
+\section{C25 boundary and inference readiness}
+\label{sec:handoff}
+
+\subsection{Branch A: physical-input covariance completion}
+
+If C24 produces a nonempty source-qualified process set while physical covariance remains incomplete, the next package is
+\begin{center}
+\textbf{C25/P2: physical-input covariance completion and data-ready process bundles.}
+\end{center}
+It must construct covariance-bearing nonperturbative boundary members, correlated TMDPDF, TMDFF, and Collins--Soper members, physical measurement bundles, selected nuclear completeness, and a frozen data-validation partition.
+
+\subsection{Branch B: targeted source-ingestion completion}
+
+If exact ancillaries, source software, uncertainty releases, or scheme adapters still block the minimal process spine, the next package is
+\begin{center}
+\textbf{C25/S1: targeted source-ingestion completion for the remaining minimal T-even records.}
+\end{center}
+It must remain narrower than a new global fit and resolve only the named source blockers.
+
+\subsection{Inference remains downstream}
+
+The shared inference architecture begins only after at least one process bundle satisfies \(Q_A^{\Phys}\).  The inference handoff must then contain
+\begin{equation}
+ \left(
+ \begin{gathered}
+ \text{physical forward model},\ \text{joint members},\\
+ \text{immutable data ancestry},\ \text{measurement map},\\
+ \text{likelihood family},\ \text{frozen holdouts}
+ \end{gathered}
+ \right).
+ \label{eq:inference-handoff}
+\end{equation}
+A source-qualified but nonphysical process validation is not sufficient for posterior inference on the microscopic state.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The transition from analytic process oracles to data-ready TMD observables is not a matter of replacing a few arrays.  It is a change in evidential object.  A source-qualified calculation must identify the exact paper, software, data, parameters, ancillaries, conventions, domain, and uncertainty model that define every process ingredient.  A physical-input calculation must further preserve covariance and joint-member semantics across nonperturbative boundaries, partner functions, nuclear components, and measurement maps.  The process \(W+Y\) construction must retain exact fixed-order/asymptotic identity and transverse rank.  An NN-only deuteron plan must remain NN only.  These requirements prevent code availability, perturbative prestige, or numerical agreement from masquerading as physical qualification.
+
+Volume XIX makes this distinction executable.  It preserves the C23 analytic compiler as a mathematical oracle, defines source-qualified DY, SIDIS, \(b_1\), tagged, and heavy-pair spines, and builds the prerequisite matrix for physical covariance.  The correct C25 branch is determined by the result of the source audit: covariance completion when the source spine is nonempty, or targeted source ingestion when it is not.  Global inference remains downstream of both.
+
+\appendix
+
+\section{Compact source-qualification checklist}
+\label{app:checklist}
+
+Before issuing \texttt{SOURCE\_PROCESS\_VALIDATION\_ELIGIBLE}, verify:
+\begin{enumerate}
+\item exact paper, software, data, parameter, and ancillary versions;
+\item source hashes, locators, license, scheme, and domain;
+\item exact coefficient and endpoint expression;
+\item independent source-level checks;
+\item source-qualified \CS/large-\(b\) boundary and uncertainty tier;
+\item source-qualified second hadron or TMDFF/FF chain;
+\item source-qualified hard, fixed-order, and asymptotic records;
+\item exact link, color, rank, harmonic, and measurement identity;
+\item factorization/Glauber certificate and domain;
+\item selected nuclear plan with explicit exclusions;
+\item source accuracy and separated uncertainties;
+\item frozen source holdouts;
+\item no synthetic ingredient in the qualifying chain;
+\item no route to inference or production.
+\end{enumerate}
+
+Before issuing \texttt{PHYSICAL\_PROCESS\_INPUT\_ELIGIBLE}, additionally verify:
+\begin{enumerate}
+\item physical covariance-bearing nonperturbative boundary;
+\item joint member correlation across all source-coupled sectors;
+\item physical partner/fragmentation covariance;
+\item complete selected nuclear components and overlap operators;
+\item physical domain and measurement source bundle;
+\item immutable data ancestry and no hidden reuse;
+\item a complete physical-input uncertainty matrix.
+\end{enumerate}
+
+\section{Compact process-plan schema}
+\label{app:process-schema}
+
+\begin{verbatim}
+{
+  "process_plan_id": "...",
+  "evidence_tier": "ANALYTIC | SOURCE | PHYSICAL",
+  "structure_function_id": "...",
+  "source_package_ids": ["..."],
+  "microscopic_member_id": "...",
+  "matching_evolution_member_id": "...",
+  "cs_largeb_member_id": "...",
+  "partner_member_id": "...",
+  "hard_fixed_order_id": "...",
+  "nuclear_plan_id": "...",
+  "measurement_bundle_id": "...",
+  "wy_identity_id": "...",
+  "factorization_certificate_id": "...",
+  "accuracy_manifest_id": "...",
+  "uncertainty_manifest_id": "...",
+  "source_qualified": false,
+  "physical_input_qualified": false,
+  "blocking_reasons": ["..."]
+}
+\end{verbatim}
+
+\section{Reference source candidates}
+\label{app:sources}
+
+The following sources define the initial audit set; their inclusion is not itself a qualification claim.
+
+\begin{thebibliography}{99}
+
+\bibitem{Moos2025}
+V. Moos, I. Scimemi, A. Vladimirov, and P. Zurita,
+``Determination of unpolarized TMD distributions from the fit of Drell--Yan and SIDIS data at N\(^4\)LL,''
+\href{https://arxiv.org/abs/2503.11201}{arXiv:2503.11201} (2025).
+
+\bibitem{ARTEMIDE301}
+A. Vladimirov,
+``ARTEMIDE v3.01,'' Zenodo software release,
+\href{https://doi.org/10.5281/zenodo.15006449}{doi:10.5281/zenodo.15006449} (2025).
+
+\bibitem{Tan2025}
+J.-X. Tan et al.,
+``Lattice QCD Determination of the Collins--Soper Kernel in the Continuum and Physical Mass Limits,''
+\href{https://arxiv.org/abs/2511.22547}{arXiv:2511.22547} (2025).
+
+\bibitem{Avkhadiev2025}
+A. Avkhadiev et al.,
+``An extraction of the Collins--Soper kernel from a joint analysis of experimental and lattice data,''
+\href{https://arxiv.org/abs/2510.26489}{arXiv:2510.26489} (2025).
+
+\bibitem{Avkhadiev2024}
+A. Avkhadiev, P. E. Shanahan, M. L. Wagman, and Y. Zhao,
+``Determination of the Collins--Soper kernel from Lattice QCD,''
+\href{https://arxiv.org/abs/2402.06725}{arXiv:2402.06725} (2024).
+
+\bibitem{CollinsDY2011}
+M. G. Echevarria, A. Idilbi, and I. Scimemi,
+``Factorization Theorem for Drell--Yan at Low \(q_T\) and Transverse-Momentum Distributions on the Light Cone,''
+\href{https://arxiv.org/abs/1111.4996}{arXiv:1111.4996} (2011).
+
+\bibitem{Neumann2022}
+T. Neumann and J. Campbell,
+``Fiducial Drell--Yan production at the LHC improved by transverse-momentum resummation at N\(^4\)LL+N\(^3\)LO,''
+\href{https://arxiv.org/abs/2207.07056}{arXiv:2207.07056} (2022).
+
+\bibitem{Dong2026}
+L. Dong et al.,
+``Two-Dimensional Transverse-Momentum Subtraction and Semi-Inclusive Deep-Inelastic Scattering at N\(^3\)LO in QCD,''
+\href{https://arxiv.org/abs/2603.29673}{arXiv:2603.29673} (2026).
+
+\bibitem{Zhao2025}
+J. Zhao, A. Bacchetta, S. Kumano, T. Liu, and Y.-j. Zhou,
+``Semi-inclusive deep inelastic scattering off a tensor-polarized spin-1 target,''
+\href{https://arxiv.org/abs/2508.06134}{arXiv:2508.06134} (2025).
+
+\bibitem{MAPFF2021}
+R. Abdul Khalek, V. Bertone, and E. R. Nocera,
+``A determination of unpolarised pion fragmentation functions using semi-inclusive deep-inelastic-scattering data: MAPFF1.0,''
+\href{https://arxiv.org/abs/2105.08725}{arXiv:2105.08725} (2021).
+
+\bibitem{MAPFF2022}
+R. Abdul Khalek, V. Bertone, A. Khoudli, and E. R. Nocera,
+``Pion and kaon fragmentation functions at next-to-next-to-leading order,''
+\href{https://arxiv.org/abs/2204.10331}{arXiv:2204.10331} (2022).
+
+\bibitem{HAPS2026}
+HAPS Collaboration,
+``Modern Determination of Pion and Kaon Fragmentation Functions from SIA and High-Precision COMPASS SIDIS Multiplicities,''
+\href{https://arxiv.org/abs/2606.16754}{arXiv:2606.16754} (2026).
+
+\bibitem{HERMES2005}
+A. Airapetian et al. (HERMES Collaboration),
+``First Measurement of the Tensor Structure Function \(b_1\) of the Deuteron,''
+\href{https://arxiv.org/abs/hep-ex/0506018}{arXiv:hep-ex/0506018} (2005).
+
+\bibitem{Cosyn2020}
+W. Cosyn and C. Weiss,
+``Polarized electron--deuteron deep-inelastic scattering with spectator nucleon tagging,''
+\href{https://arxiv.org/abs/2006.03033}{arXiv:2006.03033} (2020).
+
+\bibitem{Strikman2017}
+M. Strikman and C. Weiss,
+``Electron--deuteron deep-inelastic scattering with spectator nucleon tagging and final-state interactions at intermediate \(x\),''
+\href{https://arxiv.org/abs/1706.02244}{arXiv:1706.02244} (2017).
+
+\bibitem{Cosyn2026}
+W. Cosyn and C. Weiss,
+``Semi-inclusive deep-inelastic scattering on a polarized spin-1 target. II. Deuteron and spectator nucleon tagging,''
+\href{https://arxiv.org/abs/2603.23700}{arXiv:2603.23700} (2026).
+
+\bibitem{Zhu2013}
+R. Zhu, P. Sun, and F. Yuan,
+``Low Transverse Momentum Heavy Quark Pair Production to Probe Gluon Tomography,''
+\href{https://arxiv.org/abs/1309.0780}{arXiv:1309.0780} (2013).
+
+\bibitem{Rogers2010}
+T. C. Rogers and P. J. Mulders,
+``No Generalized TMD-Factorization in the Hadro-Production of High Transverse Momentum Hadrons,''
+\href{https://arxiv.org/abs/1001.2977}{arXiv:1001.2977} (2010).
+
+\end{thebibliography}
+
+\end{document}

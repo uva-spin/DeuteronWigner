@@ -1,0 +1,31 @@
+{
+  "authority_record": {
+    "CHI8": {
+      "a": -443.10772409,
+      "b": 10.40577774,
+      "c": -1.68756313,
+      "max_residual": 0.000245,
+      "model": "a+b logN+c/N"
+    },
+    "RE_TF3": {
+      "a": 144.4124757,
+      "b": -3.1551452,
+      "c": 0.66287304,
+      "max_residual": 7.3e-05,
+      "model": "a+b logN+c/N"
+    },
+    "analytic_coefficients_derived": false,
+    "converged_without_subtraction": false,
+    "pure_log_slopes": {
+      "CHI8": 10.42765145,
+      "RE_TF3": -3.16373717
+    },
+    "root": "6caac0e39dce873d5a22f7686e54fc57d82f88831f43415e754c4f7ebf9d2ae2"
+  },
+  "package_root": "0236468d261bf81f3efc380d5af7dce7540f0cde6bc11ebac42e7e1d7467c5eb",
+  "physical": false,
+  "plan": "RIMASSV0GRAMEVAL1-C",
+  "schema": "C309-SHAPE_TAIL_FIT-MANIFEST-V1",
+  "status": "C309_FULL_GRAM_SCAN_COMPLETE_NONCONSTANT_LOG_MODE_TAILS_IDENTIFIED_SHAPE_TAIL_SUBTRACTION_MISSING",
+  "validation": "BOUND"
+}

@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "conversion": "C45-C43-SQRT2-LONGITUDINAL-MAP-V1",
+      "holdout": "C46 may assemble action matrices; C45 may not",
+      "numerical_validation": "orthogonality, Q0 inverse derivative, rational x",
+      "row": "LONGITUDINAL_CELL_AND_MEASURE",
+      "source_authority": "0905.1411v1 Eqs. (4)-(6); 1311.2980v1 Eq. (12)",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic_implementation": "longitudinal_contract/longitudinal_modes"
+    },
+    {
+      "conversion": "C45-C43-SQRT2-LONGITUDINAL-MAP-V1",
+      "holdout": "C46 may assemble action matrices; C45 may not",
+      "numerical_validation": "Gauss-Laguerre Gram and overlap singular values",
+      "row": "TRANSVERSE_2D_HO_AND_PHASE",
+      "source_authority": "0905.1411v1 Eqs. (1)-(3),(14); 1311.2980v1 Eqs. (7),(10)",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic_implementation": "ho_momentum/ho_coordinate/ho_overlap"
+    },
+    {
+      "conversion": "C45-C43-SQRT2-LONGITUDINAL-MAP-V1",
+      "holdout": "C46 may assemble action matrices; C45 may not",
+      "numerical_validation": "Dirac, completeness, gamma-plus current, gauge, transversality",
+      "row": "SPINOR_POLARIZATION_OVERLAP",
+      "source_authority": "hep-ph/9705477v1 Appendix A Eqs. (1.15)-(1.23), Appendix D Eqs. (4.2)-(4.3); C43 contract",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic_implementation": "spinor/polarization/local_overlap_kernel"
+    },
+    {
+      "conversion": "C45-C43-SQRT2-LONGITUDINAL-MAP-V1",
+      "holdout": "C46 may assemble action matrices; C45 may not",
+      "numerical_validation": "Casimir, covariance, P0Q0",
+      "row": "GLOBAL_COLOR_ZERO_MODE_PROJECTION",
+      "source_authority": "hep-ph/0011372v2 Gauss law; 1311.2980v1 color-singlet discussion following Eq. (12)",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic_implementation": "color_triplet_projector/zero_mode_projectors"
+    }
+  ],
+  "status": "C45_SOURCE_DERIVED_MODE_PROJECTION_READY"
+}

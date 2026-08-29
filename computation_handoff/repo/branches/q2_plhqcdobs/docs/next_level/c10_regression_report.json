@@ -1,0 +1,90 @@
+{
+  "all_artifacts_unchanged": true,
+  "artifacts": [
+    {
+      "actual_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "expected_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "expected_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.correlators.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "expected_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "expected_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.correlators.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "expected_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "expected_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.correlators.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "expected_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "expected_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.correlators.csv",
+      "unchanged": true
+    }
+  ],
+  "atlas": 162,
+  "builders": 9,
+  "c9_manifest_hashes": {
+    "c9_baseline_manifest.json": "6961409d5bc64f0ba7d86b75d215abca8c33cf7a8852039fd93f4a23d882087c",
+    "c9_compiler_manifest.json": "06b9306925643dc2cdb4b74b56f9b5fea03f8e84888ea12fd583a30719b443e0",
+    "c9_feshbach_comparison.json": "164e7e9790e3d9dc3e64b9eee08dadb89cd26193f1dad5bf908deb061517471e",
+    "c9_gluon_oam_ledger.json": "fb186a8e783686064cbb7cef643befb8cdc93ccf5316f58d59e314c88de29d10",
+    "c9_hamiltonian_manifest.json": "fa1c688b739d568ee97f879baf26853f5705d4efe5bc0c06c711e521985c4123",
+    "c9_injection_manifest.json": "930df7689c2d2ac56c9f5d827033029be22473892d1ca59c70a4670182d53263",
+    "c9_normative_source_integration.json": "71f6854bf1fefe5458c04d39abacbbe20e3a1b0be8c8074388410782f72c7149",
+    "c9_regression_report.json": "354ef3f0b03a50d23cda4c711818e1f3a1f7c27de6660e11f669223131f0cad5",
+    "c9_renormalization_trajectory.json": "b36dd673565b3e51320212d893267c1a4a3a029efe6c40405c53db0da1b6dc6d",
+    "c9_requirement_coverage.json": "fa949cefbc696e486afc4584d0404ac23dda3ce72b92192ca5569ccd93a97a1c",
+    "c9_tensor_network_manifest.json": "94761b7080de001b1c5a493ef7ca059de1baa2ceb9f2fab347d7ccd30c56aa06",
+    "c9_ward_closure_report.json": "3360b6518674a8fd9c8874f432787256402e2185f507dea20f04e9783a96bb2b",
+    "c9_wilson_reconnection_manifest.json": "4a09446103532cc0a156c8c6e9032f7b54af89b9ae9d265bec7fff6102fb4b63"
+  },
+  "evidence": 36,
+  "injections": {
+    "C10": 90,
+    "C3": 24,
+    "C4": 40,
+    "C5": 48,
+    "C6": 60,
+    "C7": 48,
+    "C8": 56,
+    "C9": 83
+  },
+  "production_composition_sha256": "3bbc390d4a80fe9ae520d54d8d12d7596eb59f5640242cf48527f9ace7a3ca6d",
+  "production_provenance_sha256": "d8773386171158675ce112f7f1ba22b87a67efd163922f7d880e8664f2290101",
+  "production_reachable": false,
+  "production_registry": 216,
+  "production_registry_sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493",
+  "requirements": 210,
+  "schema_version": "1.0.0",
+  "starting_commit": "31ae656da38a94432dd7f6c753d75e54170d9155",
+  "tests": 876
+}

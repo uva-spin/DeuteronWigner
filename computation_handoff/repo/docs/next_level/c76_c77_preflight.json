@@ -1,0 +1,15 @@
+{
+  "blocker": "C64 crosswalk documentation has offsets/counts/hashes but no row/column identities, CM labels, or orientation per entry. C76 may not infer these from array positions or numerical magnitude.",
+  "crosswalk_entries": 733,
+  "missing_authenticated_fields": [
+    "global_row_basis_id",
+    "global_column_basis_id",
+    "n_CM",
+    "m_CM",
+    "orientation"
+  ],
+  "next": "C77/QGTM5 \u2014 materialize C64 row/column identities and authenticated CM labels",
+  "no_embedding": true,
+  "source": "docs/next_level/c64_c65_basis_crosswalk.json",
+  "status": "C76_TM_CROSSWALK_CM_IDENTITY_INCOMPLETE"
+}

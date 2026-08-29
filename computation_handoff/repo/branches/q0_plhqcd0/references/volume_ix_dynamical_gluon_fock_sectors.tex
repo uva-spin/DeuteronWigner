@@ -1,0 +1,2266 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume IX: Dynamical Gluon Fock Sectors, Sector-Dependent Renormalization, and Gauge-Consistent Microscopic Wilson Dynamics},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume IX}
+\fancyhead[R]{\small\color{darkgray}Dynamical gluon sectors and gauge closure}
+\fancyfoot[L]{\small\color{darkgray}30 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\BLFQ}{\ensuremath{\mathrm{BLFQ}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\Pthree}{P_3}
+\newcommand{\Pfour}{P_{4g}}
+\newcommand{\Hthree}{\Hil_{qqq}}
+\newcommand{\Hfour}{\Hil_{qqqg}}
+\newcommand{\Mtwo}{\cM^2}
+\newcommand{\WTI}{\mathrm{WTI}}
+\newcommand{\STI}{\mathrm{STI}}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{PredictionPlan}}
+\newcommand{\StateBundle}{\texttt{MicroscopicStateBundle}}
+\newcommand{\WardManifest}{\texttt{WardClosureManifest}}
+\newcommand{\WilsonHandoff}{\texttt{MicroscopicWilsonHandoff}}
+\newcommand{\RenTrajectory}{\texttt{SectorRenormalizationTrajectory}}
+\newcommand{\TermRegistry}{\texttt{HamiltonianTermRegistry}}
+\newcommand{\ProvComplex}{\texttt{Provenance2Complex}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume IX: Dynamical Gluon Fock Sectors,\\[2mm]
+Sector-Dependent Renormalization, and Gauge-Consistent\\[1mm]
+Microscopic Wilson Dynamics}\\[4mm]
+\large The coupled \(qqq\oplus qqqg\) nucleon, instantaneous partners, Ward closure,
+gluon/OAM state exports, and the microscopic bridge to GTMD and Wilson operators}
+\author{DeuteronWigner project}
+\date{30 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~0--VIII established the algebraic and geometric architecture, regulated
+light-front Hilbert spaces, common GTMD operators, dynamical one-gluon Wilson
+pilots, matched spin-1 nuclear structure, QCD matching and evolution contracts,
+shared inference, a concrete RSA--BLFQ Hamiltonian route, and a
+symmetry-adapted tensor-network prediction compiler.  C7/H0 validated the
+microscopic basis and Hamiltonian-term spine.  C8/H1 then produced the first
+interacting valence eigenstate, resolution-dependent renormalization flow,
+Hamiltonian-consistent vector current, exact/Krylov solvers, and a genuine
+variational tree tensor network.  C9/H2 is the active implementation package
+for the first coupled \(qqq\oplus qqqg\) eigenproblem.  The present volume is
+the normative specification for that transition.  Its central requirement is
+that the propagating gluon sector, instantaneous light-front interactions,
+sector-dependent counterterms, current attachments, field-strength operators,
+and Wilson-line couplings be treated as one gauge-consistent renormalized
+object.  An explicit \(qqqg\) sector may not be combined with the valence
+operator that already represents its eliminated effects unless a matching and
+subtraction cell is supplied.  The resulting state remains a controlled
+low-resolution Hamiltonian-EFT state; it is not yet a continuum-QCD nucleon or
+a soft-subtracted physical TMD.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The first dynamical gluon sector changes the model class more deeply than the
+addition of another basis block.  It introduces a gauge-field degree of
+freedom into the same interacting state that carries quark flavor, helicity,
+orbital angular momentum, color multiplicity, current response, and the
+microscopic ingredients of Wilson-line rescattering.  We formulate the
+coupled \(qqq\oplus qqqg\) nucleon as a resolution-indexed block
+light-front mass operator with two independent \(qqqg\) color-singlet
+multiplicities, exact quark antisymmetry, propagating quark--gluon emission and
+absorption, instantaneous-fermion and instantaneous-gluon partners,
+sector-dependent mass and vertex counterterms, induced confinement, and an
+explicit truncation-discrepancy basis.  Gauge consistency is tested first by
+an Abelianized finite-basis Ward--Takahashi identity whose propagating,
+instantaneous, current, wave-function, and counterterm contributions share one
+Hamiltonian identity.  Passing this test does not establish the full
+non-Abelian Slavnov--Taylor identities; the corresponding ghost, three-gluon,
+higher-Fock, and regulator obligations remain explicit.  The coupled state is
+represented by a symmetry-adapted direct-sum tensor network with a retained
+Fock-sector edge and outer color multiplicities.  Exact diagonalization,
+matrix-free Krylov methods, and variational TTN optimization define a common
+solver hierarchy, with convergence tested not only in energy but also in gluon
+probability, momentum, helicity, orbital angular momentum, currents, and Ward
+residuals.  We derive the finite-resolution quark/gluon momentum and spin
+ledgers, the field-strength operator exports needed by gluon GTMDs, the typed
+handoff to the validated C5/C6 Wilson engine, and the sector-completeness
+conditions for higher Wilson orders.  A provenance two-complex relates the
+explicit \(qqqg\) theory to its Feshbach-induced valence reduction and forbids
+double counting.  The volume concludes with formal requirements, benchmarks,
+negative tests, software schemas, and the interface to the light-sea/chiral
+H3 program.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scientific purpose and boundary}
+
+\subsection{Why the dynamical gluon sector is decisive}
+
+C8/H1 supplies an interacting valence state
+\begin{equation}
+ |N,\Lambda\rangle_{\mathrm{H1}}
+ \in \Hthree,
+\end{equation}
+with a resolution-dependent effective Hamiltonian, current, state-tracking
+record, and tensor-network representation.  That state can test valence mass,
+charge, spin, orbital, and numerical convergence, but it cannot generate a
+gluon distribution, a genuine quark--gluon correlator, or a Wilson phase using
+the gauge field of the same eigenstate.  The first required extension is
+\begin{equation}
+ \Hil_{\mathrm{H2},r}
+ =
+ \Hthree^{(r)}\oplus\Hfour^{(r)},
+ \label{eq:h2-space}
+\end{equation}
+with
+\begin{equation}
+ |N,\Lambda;r\rangle
+ =
+ |\Psi_{3}^{\Lambda;r}\rangle
+ +
+ |\Psi_{4g}^{\Lambda;r}\rangle .
+ \label{eq:h2-state}
+\end{equation}
+This extension makes the following objects dynamical rather than assigned:
+\begin{itemize}
+ \item the probability and momentum carried by one resolved gluon;
+ \item the two independent color-singlet embeddings of \(qqqg\);
+ \item the quark--gluon vertex and its Hermitian conjugate;
+ \item the OAM and helicity interferences involving the gluon sector;
+ \item self-energy and current corrections generated by the same sector;
+ \item the state amplitudes consumed by gluon GTMD and Wilson-line operators.
+\end{itemize}
+Recent BLFQ calculations demonstrate that nucleon eigenstates containing
+\(qqq\), \(qqqg\), and light-pair sectors can support quark and gluon density,
+helicity, transversity, and imaging calculations
+\cite{Mondal2025,Vary2025}.  Those results establish feasibility, not the
+identity of the present Hamiltonian or its renormalization trajectory.
+
+\begin{decision}[Primary H2 realization]
+The first dynamical-gluon calculation is the RSA--BLFQ Hamiltonian-EFT route of
+Volume~VII, enlarged from \(qqq\) to \(qqq\oplus qqqg\) and executed through
+the assumption compiler and symmetry-adapted tensor networks of Volume~VIII.
+Published BLFQ states are comparison and validation data; they are not silently
+substituted for the project state.
+\end{decision}
+
+\subsection{Inherited contracts}
+
+H2 inherits the following immutable contracts.
+\begin{enumerate}
+ \item The light-front convention is
+ \begin{equation}
+  v^{\pm}=\frac{v^0\pm v^3}{\sqrt2},
+  \qquad
+  \cM^2=2P^+P^- -\bm P_T^2.
+ \end{equation}
+ \item The regulator, basis, Fock content, counterterms, and renormalization
+ conditions are part of the Hamiltonian identity.
+ \item The two \(qqqg\) singlet multiplicity channels remain distinct.
+ \item Identical-quark antisymmetry is imposed before matrix assembly.
+ \item Hamiltonians, currents, GTMD operators, and Wilson couplings transform
+ together under any sector elimination or similarity transformation.
+ \item The C5/C6 Wilson engine may consume a microscopic H2 state only through
+ a typed handoff; it may not infer cut support or soft completion from state
+ existence.
+ \item A regulated Hamiltonian overlap is not a physical TMD until LF-to-QCD,
+ UV, rapidity, soft, and scheme matching are complete.
+\end{enumerate}
+
+\subsection{Explicit nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+ \item a continuum-QCD solution of the nucleon;
+ \item a complete non-Abelian Slavnov--Taylor closure at finite Fock order;
+ \item a complete zero-mode solution;
+ \item physical gluon PDFs, GTMDs, or TMDs without matching;
+ \item physical absorptive cuts from a discrete bound-state spectrum alone;
+ \item Wilson orders beyond the Fock sectors that can support them;
+ \item a sea-quark or antiquark prediction before the H3 pair sectors;
+ \item a deuteron prediction, process factorization theorem, or global fit.
+\end{itemize}
+
+\begin{principle}[No gauge closure by selective omission]
+A finite-basis Ward test may be declared successful only if every propagating,
+instantaneous, current, counterterm, endpoint, and regulator contribution
+required at the stated order is present.  Omitting a difficult term and fitting
+the remaining current to zero defect is not gauge closure.
+\end{principle}
+
+\section{The coupled \texorpdfstring{\(qqq\oplus qqqg\)}{qqq+qqqg} Hilbert space}
+
+\subsection{Sector decomposition and projectors}
+
+Let
+\begin{equation}
+ \Pthree+\Pfour=\Id_{\mathrm{H2}},
+ \qquad
+ \Pthree\Pfour=0,
+ \qquad
+ \Pthree^2=\Pthree,
+ \quad
+ \Pfour^2=\Pfour .
+\end{equation}
+The normalized state obeys
+\begin{equation}
+ P_3^{(r)}+P_{4g}^{(r)}=1,
+ \qquad
+ P_s^{(r)}
+ =
+ \langle\Psi_N^{(r)}|P_s|\Psi_N^{(r)}\rangle .
+ \label{eq:sector-prob}
+\end{equation}
+The individual probabilities depend on regulator and resolution.  Their
+physical role is diagnostic; matched observables and total quantum-number
+ledgers are the convergence targets.
+
+The one-gluon sector basis states have the schematic form
+\begin{equation}
+ |\alpha_{4g}\rangle
+ =
+ \cA_{123}
+ \left|
+ \{k_i,n_i,m_i,\lambda_i,f_i,c_i\}_{i=1}^{3};
+ k_g,n_g,m_g,\lambda_g,a;
+ \rho,\Jz,I,r
+ \right\rangle,
+ \label{eq:qqqg-basis}
+\end{equation}
+where \(\cA_{123}\) is the exact quark antisymmetrizer and \(\rho\) labels the
+outer multiplicity of the three-quark color octet that couples with the
+adjoint gluon to a singlet.
+
+\subsection{Color singlets and outer multiplicity}
+
+The tensor product contains
+\begin{equation}
+ 3\otimes3\otimes3
+ =
+ 1\oplus 8_{\rho}\oplus 8_{\lambda}\oplus10,
+\end{equation}
+and therefore
+\begin{equation}
+ (8_{\rho}\oplus8_{\lambda})\otimes8
+ \supset
+ 1_{\rho}\oplus1_{\lambda}.
+ \label{eq:two-singlets}
+\end{equation}
+Both singlets are physical basis channels at the finite resolution.  They may
+mix through the Hamiltonian when all exact quantum numbers agree, but their
+identity remains visible in the state, operator, tensor-network, and
+provenance records.
+
+\begin{requirement}[Complete color multiplicity]
+Every H2 basis and every H2 state export shall retain both singlet channels in
+\cref{eq:two-singlets}.  A construction formed from a color-singlet \(qqq\)
+state times a free gluon shall fail before Hamiltonian assembly.
+\end{requirement}
+
+The total color generator is
+\begin{equation}
+ \cQ^A
+ =
+ \sum_{i=1}^{3}t_i^A+F_g^A,
+ \qquad
+ (F^A)_{bc}=-if^{Abc},
+\end{equation}
+and every physical color tensor \(C_{\rho}\) satisfies
+\begin{equation}
+ \cQ^A C_{\rho}=0
+ \qquad\forall A=1,\ldots,8.
+\end{equation}
+Generator annihilation, orthonormality, and recoupling unitarity are exact
+basis gates, not posterior diagnostics.
+
+\subsection{Longitudinal, transverse, helicity, and OAM support}
+
+At fixed longitudinal resolution \(K\), the positive mode numbers satisfy
+\begin{equation}
+ \sum_{i=1}^{3}k_i+k_g=K,
+ \qquad
+ x_i=\frac{k_i}{K},
+ \quad
+ x_g=\frac{k_g}{K}>0.
+\end{equation}
+The intrinsic transverse momenta obey
+\begin{equation}
+ \sum_{i=1}^{3}\bm\kappa_{iT}+\bm\kappa_{gT}=0.
+\end{equation}
+The exact kinematic projection is
+\begin{equation}
+ \Jz
+ =
+ \sum_{i=1}^{3}\lambda_i+\lambda_g+
+ \sum_{i=1}^{3}m_i+m_g,
+ \label{eq:jz-ledger}
+\end{equation}
+with convention-specific oscillator and intrinsic-OAM adapters stored in the
+basis identity.
+
+The first H2 tower should support all \(L_z\) blocks reachable at its declared
+\((K,N_{\max})\).  Absence of \(L_z=\pm2\) at a small benchmark resolution is
+a truncation statement, not a prediction that rank-two observables vanish.
+
+\subsection{Physical projector}
+
+The physical finite sector is
+\begin{equation}
+ \Hil_{4g,\phys}^{(r)}
+ =
+ \cP_{\mathrm{singlet}}
+ \cP_{\mathrm{antisym}}
+ \cP_{\Jz,I,Q,B}
+ \cP_{\COM}
+ \Hil_{4g,\mathrm{kin}}^{(r)}.
+\end{equation}
+The projectors must be mutually compatible on the retained basis.  Their
+commutator residuals
+\begin{equation}
+ \delta_{AB}^{(r)}
+ =
+ \norm{[\cP_A,\cP_B]}
+\end{equation}
+are exact zero when the corresponding structures should commute and explicit
+truncation diagnostics otherwise.
+
+\section{Resolution-indexed coupled Hamiltonian}
+
+\subsection{Block mass operator}
+
+The H2 mass-squared operator is
+\begin{equation}
+ \cM_{\mathrm{H2},r}^{2}
+ =
+ \begin{pmatrix}
+  \cM_{33,r}^{2} & V_{3\leftarrow4g,r}\\
+  V_{4g\leftarrow3,r} & \cM_{4g4g,r}^{2}
+ \end{pmatrix},
+ \qquad
+ V_{3\leftarrow4g,r}=V_{4g\leftarrow3,r}^{\dagger}.
+ \label{eq:block-h2}
+\end{equation}
+The valence block \(\cM_{33,r}^{2}\) descends from an H1 branch after removing
+any effective interaction that is declared to represent explicit one-gluon
+dynamics.  The \(qqqg\) block contains free invariant mass, retained induced
+confinement, sector counterterms, diagonal interactions supported at the
+truncation, and an explicit discrepancy basis for omitted sectors and
+operators.
+
+A useful decomposition is
+\begin{align}
+ \cM_{33,r}^{2}
+ &={}
+ \cM_{0,3,r}^{2}
+ +V_{\mathrm{conf},3,r}^{\ind}
+ +V_{\mathrm{spin},3,r}^{\mathrm{nonoverlap}}
+ +\delta\cM_{3,r}^{2}
+ +\Delta_{3,r}^{2},
+ \\
+ \cM_{4g4g,r}^{2}
+ &={}
+ \cM_{0,4g,r}^{2}
+ +V_{\mathrm{conf},4g,r}^{\ind}
+ +V_{\mathrm{diag},4g,r}^{\mathrm{can}}
+ +\delta\cM_{4g,r}^{2}
+ +\Delta_{4g,r}^{2}.
+\end{align}
+The label ``nonoverlap'' means that the retained valence interaction has passed
+an explicit comparison against the Feshbach image of the \(qqqg\) sector.  A
+legacy effective color-spin term that was declared
+\texttt{ALTERNATIVE\_TO\_EXPLICIT\_QQQG\_DYNAMICS} cannot remain active by
+default.
+
+\subsection{Free invariant mass}
+
+For either sector,
+\begin{equation}
+ \cM_{0,s}^{2}
+ =
+ \sum_{i\in s}
+ \frac{\bm\kappa_{iT}^{2}+m_{i,s}^{2}}{x_i},
+ \qquad
+ \sum_{i\in s}x_i=1,
+ \quad
+ \sum_{i\in s}\bm\kappa_{iT}=0.
+\end{equation}
+The bare masses may be sector dependent along the finite renormalization
+trajectory.  This dependence is a bookkeeping response to Fock truncation; it
+is not a statement that a physical quark has different masses in different
+sectors.
+
+\subsection{Propagating quark--gluon vertex}
+
+In light-front gauge, the canonical emission block is generated from the
+quark--gluon interaction and has the schematic matrix element
+\begin{equation}
+ \langle\alpha_{4g}|V_{4g\leftarrow3,r}|\alpha_3\rangle
+ =
+ g_{34,r}^{\bare}
+ \sum_{j=1}^{3}
+ \cC_{j}^{a,\rho}
+ \cS_{j}^{\lambda_g}
+ \cL_{j}^{(r)}
+ \cT_{j}^{(r)}
+ \cR_{j}^{(r)}
+ \cP_{j}^{\mathrm{ferm}},
+ \label{eq:qg-vertex}
+\end{equation}
+where the factors denote color, helicity/spinor, longitudinal, transverse,
+regulator, and fermionic-sign data.  The factorization in
+\cref{eq:qg-vertex} is an implementation grammar, not a claim that the final
+matrix element is separable after all sums and recouplings.
+
+The vertex must preserve
+\begin{equation}
+ K,
+ \qquad
+ \Jz,
+ \qquad
+ I,
+ \qquad
+ Q,
+ \qquad
+ B,
+\end{equation}
+and its absorption block is generated by the Hilbert-space adjoint under the
+same basis normalization and regulator identity.
+
+\subsection{Diagonal one-gluon interactions}
+
+At the one-dynamical-gluon truncation, the diagonal block can receive:
+\begin{itemize}
+ \item kinetic and mass terms;
+ \item quark and gluon self-energy counterterms;
+ \item induced interactions generated by excluded sectors;
+ \item instantaneous interactions that act without changing the retained
+ Fock number;
+ \item regulator-dependent confinement or long-distance terms admitted by the
+ selected H2 branch;
+ \item current- and Ward-required contact terms.
+\end{itemize}
+The canonical three-gluon vertex changes the number or routing of dynamical
+gluons and generally connects to sectors not fully represented by
+\(qqq\oplus qqqg\).  Its omitted effects must be represented by named induced
+operators and discrepancy terms, not by claiming that non-Abelian dynamics is
+complete at H2.
+
+\begin{remark}
+A one-gluon Fock sector can carry adjoint color and nontrivial gluon helicity,
+but it cannot by itself realize every matrix element of the nonlinear term
+\(g f^{abc}A_b^iA_c^j\) in the field strength.  Operator readiness must state
+which linear and nonlinear pieces are represented and which require
+\(qqqgg\) or induced operators.
+\end{remark}
+
+\section{Instantaneous interactions and constrained fields}
+
+\subsection{Origin in light-front quantization}
+
+Light-front quantization separates dynamical and constrained field components.
+Eliminating constrained components produces instantaneous fermion and gluon
+interactions in the Hamiltonian.  Their exact form depends on gauge,
+boundary, zero-mode, and inverse-derivative prescriptions
+\cite{BrodskyPauliPinsky1998}.  In a truncated theory they are not optional
+corrections: they participate in cancellations required by current
+conservation and gauge consistency.
+
+The generic inverse derivative is represented as a typed operator
+\begin{equation}
+ \left(\frac{1}{\partial^+}\right)_{\cB,\eps_0},
+\end{equation}
+where \(\cB\) is the boundary prescription and \(\eps_0\) is the endpoint or
+zero-mode regulator.  Two operators with different prescriptions cannot be
+identified by equal numerical arrays on one finite grid.
+
+\subsection{Instantaneous-fermion partner}
+
+The instantaneous-fermion term generated by the constrained spinor component
+has the schematic form
+\begin{equation}
+ V_{\mathrm{inst},\psi}
+ \sim
+ g^2\,
+ \bar\psi\,\gamma^i A_i
+ \frac{\gamma^+}{2i\partial^+}
+ \gamma^j A_j\,\psi,
+ \label{eq:inst-fermion}
+\end{equation}
+with color, ordering, regulator, and normal-ordering data retained.  In the H2
+space, some matrix elements of \cref{eq:inst-fermion} are explicit and others
+represent excluded higher-gluon sectors.  The implementation shall distinguish
+those cases.
+
+\subsection{Instantaneous-gluon partner}
+
+The constrained gauge component induces a current--current interaction of the
+schematic form
+\begin{equation}
+ V_{\mathrm{inst},A}
+ \sim
+ -\frac{g^2}{2}
+ J^{+a}
+ \frac{1}{(\partial^+)^2}
+ J^{+a},
+ \label{eq:inst-gluon}
+\end{equation}
+where \(J^{+a}\) includes all retained quark and gluon color currents supported
+by the truncation.  The same inverse-derivative and endpoint convention must
+be used in the Hamiltonian, current, Ward benchmark, and any induced-operator
+comparison.
+
+\begin{requirement}[Instantaneous-partner completeness]
+For every finite-order Ward benchmark, the manifest shall enumerate the
+propagating and instantaneous diagrams or matrix blocks required at that
+order.  Removing any required partner shall produce a nonzero signed defect.
+\end{requirement}
+
+\subsection{Zero modes and endpoint policy}
+
+The first H2 calculation may exclude explicit gluon zero modes, but it must
+record:
+\begin{itemize}
+ \item which modes are excluded;
+ \item which inverse-derivative prescription replaces them;
+ \item which symmetry or Ward residuals are sensitive to the exclusion;
+ \item which induced operators or discrepancy terms are intended to represent
+ their effect;
+ \item the regulator trajectory along which the policy is tested.
+\end{itemize}
+``Zero mode absent from the basis'' is not equivalent to ``zero-mode physics is
+zero.''
+
+\section{Sector-dependent renormalization}
+
+\subsection{Renormalization datum}
+
+At each resolution \(r\), define
+\begin{equation}
+ \mathfrak R_{r}^{\mathrm{H2}}
+ =
+ \left(
+ \cR_r,
+ \theta_{3,r}^{\bare},
+ \theta_{4g,r}^{\bare},
+ \delta\theta_{3,r},
+ \delta\theta_{4g,r},
+ \delta g_{34,r},
+ \{\cC_i\},
+ \cS_r,
+ \cZ_r,
+ \Delta_r
+ \right).
+ \label{eq:ren-datum}
+\end{equation}
+The data include at least:
+\begin{itemize}
+ \item sector-dependent quark and gluon mass parameters;
+ \item wave-function or residue renormalization data;
+ \item the \(qqq\leftrightarrow qqqg\) vertex counterterm;
+ \item current counterterms and induced current operators;
+ \item instantaneous-interaction coefficients when the regulator splits their
+ canonical relation;
+ \item induced confinement and nonoverlap interactions;
+ \item a truncation-discrepancy basis;
+ \item the common physical renormalization conditions.
+\end{itemize}
+Sector-dependent renormalization is a controlled response to the asymmetric
+self-energy content of a Fock truncation
+\cite{Karmanov2008,Chabysheva2017}.  It is not a license to fit each sector or
+observable independently.
+
+\subsection{Calibration conditions and holdouts}
+
+The first H2 tower may use the shared benchmark conditions
+\begin{equation}
+ M_N^2=M_{\mathrm{ref}}^2,
+ \qquad
+ F_1^p(0)=1,
+ \qquad
+ F_1^n(0)=0,
+ \label{eq:h2-calibration}
+\end{equation}
+plus one declared vertex condition and one Abelianized Ward condition.
+Examples of required holdouts are:
+\begin{itemize}
+ \item a second vertex kinematic point;
+ \item a nonzero-transfer proton current;
+ \item a nonzero-transfer neutron current;
+ \item a second current component;
+ \item a gluon momentum or helicity moment;
+ \item a rotational or multiplet diagnostic;
+ \item the next resolution or Fock-sector point.
+\end{itemize}
+The number of independent fitted conditions shall remain smaller than the
+number of independent closure and prediction tests.
+
+\subsection{Flow across the truncation tower}
+
+Let \(r\preceq r'\) denote an enlarged basis or sector resolution.  Bare and
+induced parameters flow,
+\begin{equation}
+ \theta_r\longmapsto\theta_{r'},
+\end{equation}
+while matched observables satisfy
+\begin{equation}
+ \delta_i(r',r)
+ =
+ \norm{
+ R_{r'\to r}[\cO_i^{(r')}]
+ -\cO_i^{(r)}
+ }
+ \longrightarrow0.
+ \label{eq:observable-flow}
+\end{equation}
+The flow report separates:
+\begin{enumerate}
+ \item parameter drift;
+ \item state-comparison residual;
+ \item operator-matching residual;
+ \item finite-basis Ward residual;
+ \item tensor-network residual;
+ \item numerical quadrature residual.
+\end{enumerate}
+No one category may be used to hide another.
+
+\subsection{Naturalness and identifiability}
+
+The renormalization trajectory shall report dimensionless naturalness
+combinations, Jacobian rank, Hessian or Fisher spectrum, and profile
+likelihoods for the fitted conditions.  A nearly null direction indicates that
+the selected data do not distinguish two operator combinations.  The response
+is to redesign the condition set or retain a correlated prior, not to assign
+independent TMD parameters downstream.
+
+\section{Ward--Takahashi and gauge-consistency program}
+
+\subsection{Finite-basis Abelianized identity}
+
+The first executable gauge benchmark is the Abelianized identity
+\begin{equation}
+ q_\mu\Gamma_r^\mu(p+q,p)
+ =
+ S_r^{-1}(p+q)-S_r^{-1}(p)
+ +\delta_{\WTI,r}(p,q),
+ \label{eq:wti}
+\end{equation}
+where the same Hamiltonian identity determines the self-energy, vertex,
+instantaneous terms, current, and counterterms.  Light-front constructions of
+currents satisfying a Ward--Takahashi identity show explicitly why
+instantaneous and pair terms must accompany the reduced interaction
+\cite{Marinho2008}.
+
+The defect is decomposed as
+\begin{equation}
+ \delta_{\WTI,r}
+ =
+ \delta_{\mathrm{basis}}
+ +\delta_{\mathrm{Fock}}
+ +\delta_{\mathrm{endpoint}}
+ +\delta_{\mathrm{zero}}
+ +\delta_{\mathrm{ct}}
+ +\delta_{\num}.
+ \label{eq:wti-decomp}
+\end{equation}
+A small total defect without this decomposition is not an adequate validation
+record because large terms may cancel accidentally or through overfitting.
+
+\subsection{Current construction}
+
+The Hamiltonian-consistent current is
+\begin{equation}
+ J_r^\mu
+ =
+ J_{(1),r}^\mu
+ +J_{qqqg,r}^\mu
+ +J_{\mathrm{inst},r}^\mu
+ +J_{\ind,r}^\mu
+ +\delta J_{\ct,r}^\mu.
+ \label{eq:h2-current}
+\end{equation}
+Every term carries source and target sectors, momentum fibers, regulator,
+current component, and Hamiltonian ancestry.  The current cannot import a
+normalization from a different Hamiltonian branch or acquire a separate fit
+factor at every transfer.
+
+\subsection{From Ward--Takahashi to Slavnov--Taylor}
+
+The non-Abelian theory requires Slavnov--Taylor identities involving ghost,
+three-gluon, and composite-operator structures.  The one-gluon H2 truncation
+does not contain every required sector.  Therefore the strongest allowed
+status is
+\begin{center}
+\texttt{ABELIANIZED\_FINITE\_BASIS\_WARD\_BENCHMARKED},
+\end{center}
+not \texttt{FULL\_QCD\_GAUGE\_CLOSURE}.
+
+A future non-Abelian program must add:
+\begin{itemize}
+ \item the necessary two-gluon and ghost-equivalent operator content or a
+ rigorously matched gauge-fixed reduction;
+ \item three-gluon vertex and gluon self-energy identities;
+ \item BRST-compatible regulator and counterterm information;
+ \item composite field-strength operator renormalization;
+ \item closure under the Wilson-line and soft-sector operators.
+\end{itemize}
+
+\begin{principle}[Status monotonicity]
+Passing a restricted Ward benchmark may increase only the readiness status
+whose hypotheses were tested.  It cannot automatically upgrade the state,
+current, gluon operator, Wilson line, or matching layer to full QCD readiness.
+\end{principle}
+
+\section{Explicit and induced descriptions}
+
+\subsection{Feshbach reduction}
+
+With \(P=\Pthree\) and \(Q=\Pfour\), the exact energy-dependent reduction is
+\begin{equation}
+ H_{\eff}(E)
+ =
+ PHP
+ +PHQ\frac{1}{E-QHQ}QHP.
+ \label{eq:feshbach-h2}
+\end{equation}
+The corresponding effective operator is
+\begin{equation}
+ \cO_{\eff}(E',E)
+ =
+ P\left[1+\omega^\dagger(E')\right]
+ \cO
+ \left[1+\omega(E)\right]P,
+ \qquad
+ \omega(E)=\frac{1}{E-QHQ}QHP.
+ \label{eq:feshbach-op}
+\end{equation}
+The effective valence interaction and current are therefore linked.  Replacing
+\cref{eq:feshbach-op} by \(P\cO P\) while retaining
+\cref{eq:feshbach-h2} is inconsistent except in a tested limit.
+
+\subsection{Comparison with the H1 effective branch}
+
+The H1 color-spin interaction is compared with the Feshbach image
+\begin{equation}
+ V_{\mathrm{H1}}^{\eff}
+ \stackrel{?}{=}
+ PHQ\frac{1}{E-QHQ}QHP
+ +\Delta V_{\mathrm{rem}}(E).
+ \label{eq:h1-h2-match}
+\end{equation}
+The remainder is an explicit object.  Similar eigenvalues at one resolution do
+not imply operator equivalence.  The comparison includes matrix elements,
+state overlaps, current matrix elements, and withheld observables.
+
+\subsection{Provenance relation}
+
+The normalized provenance relation is
+\begin{equation}
+ \boxed{
+ \text{explicit }qqqg
+ \quad\Longleftrightarrow\quad
+ \text{induced valence operator}
+ +\text{declared remainder}
+ }
+ \label{eq:prov-explicit-induced}
+\end{equation}
+Selecting both sides as additive central mechanisms fails before numerical
+evaluation.
+
+\section{Coupled-sector tensor-network state}
+
+\subsection{Direct-sum architecture}
+
+The state network is
+\begin{equation}
+ \cN_{\mathrm{state}}
+ =
+ \cN_{qqq}\oplus\cN_{qqqg},
+ \label{eq:sector-tn}
+\end{equation}
+with an explicit Fock-sector edge.  The \(qqqg\) tree may be organized as
+\begin{equation}
+ \left[
+ (q_1\otimes q_2)_{R_{12},S_{12},L_{12},\alpha}
+ \otimes q_3
+ \right]_{R_{123}=8_{\rho,\lambda}}
+ \otimes g_{8,\lambda_g,L_g}
+ \longrightarrow
+ (1,I,\Jz).
+ \label{eq:qqqg-tree}
+\end{equation}
+The outer multiplicity \(\rho\) or \(\lambda\) is an explicit virtual label,
+not an anonymous bond degeneracy.
+
+\subsection{Hamiltonian operator network}
+
+The block Hamiltonian is represented as an operator network with sector-
+preserving and sector-changing components.  The off-diagonal vertex has one
+leg in \(\cN_{qqq}\) and one in \(\cN_{qqqg}\); it may not be absorbed into a
+single effective valence tensor when the explicit sector branch is selected.
+
+Every operator tensor records:
+\begin{itemize}
+ \item source and target sector;
+ \item color and outer multiplicity map;
+ \item helicity, OAM, and \(\Jz\) selection;
+ \item longitudinal and transverse basis map;
+ \item regulator and counterterm identity;
+ \item fermionic swap ledger;
+ \item Hermitian partner identity.
+\end{itemize}
+
+\subsection{Exact tensorization and variational solution}
+
+At the full allowed bond support, tensorization must reproduce the exact
+finite-basis eigenstate.  For nested bond spaces \(\cV_{\chi_1}\subseteq
+\cV_{\chi_2}\), the globally optimized energies obey
+\begin{equation}
+ E_{\chi_2}\leq E_{\chi_1},
+ \qquad
+ E_\chi\geq E_{\mathrm{exact}}.
+\end{equation}
+The convergence report includes
+\begin{equation}
+ \left
+ \{
+ E,
+ \mathcal F_{\mathrm{state}},
+ P_{4g},
+ \langle x_g\rangle,
+ \Delta G,
+ L_q,
+ L_g,
+ J^\mu,
+ \delta_{\WTI}
+ \right\}.
+ \label{eq:tn-observables}
+\end{equation}
+Energy-only convergence is insufficient.  A low-rank network that reproduces
+the mass while erasing one color multiplicity or OAM interference fails.
+
+\subsection{Entanglement and sector diagnostics}
+
+The symmetry-resolved Schmidt spectrum across the Fock-sector or quark--gluon
+cut is a numerical diagnostic of state complexity.  It may reveal how the
+resolved gluon changes quark spin, momentum, or color correlations, as seen in
+light-front Hamiltonian studies of quark--gluon entanglement
+\cite{Qian2024}.  Entanglement entropy is not itself a TMD or an observable
+without a declared operational map; it is a state and compression diagnostic.
+
+\section{Eigensolvers, state tracking, and avoided crossings}
+
+\subsection{Solver hierarchy}
+
+Every benchmark block is solved through:
+\begin{enumerate}
+ \item dense Hermitian diagonalization where feasible;
+ \item matrix-free Krylov or Lanczos application;
+ \item the variational TTN solver;
+ \item independent residual evaluation.
+\end{enumerate}
+The residual is
+\begin{equation}
+ \epsilon_{\mathrm{eig}}
+ =
+ \norm{\cM^2|\Psi\rangle-M^2|\Psi\rangle}.
+\end{equation}
+The solver certificate records orthogonality, phase convention, degeneracy
+handling, and reproducibility.
+
+\subsection{State identity across the tower}
+
+The physical branch is tracked using exact quantum numbers, comparison maps,
+subspace principal angles, current fingerprints, sector probabilities, OAM
+content, and color-multiplicity content.  For a comparison map
+\(I_{r\to r'}\), the overlap matrix is
+\begin{equation}
+ \cO_{ab}^{r'r}
+ =
+ \langle\Psi_a^{(r')}|
+ I_{r\to r'}|\Psi_b^{(r)}\rangle.
+\end{equation}
+Near an avoided crossing, eigenvalue order alone is not a valid state label.
+The state-tracking decision and its uncertainty are stored in the state bundle.
+
+\subsection{Phase convention}
+
+Each isolated state uses a deterministic phase convention, such as a selected
+largest component real and positive.  Near degeneracy, a subspace frame is
+fixed by parallel transport or by diagonalizing a stable reference operator.
+Changing the phase convention changes amplitude coordinates but not physical
+matrix elements; the adapter must nevertheless preserve member identity for
+interference calculations.
+
+\section{Microscopic quark, gluon, and current operators}
+
+\subsection{Operator bundle}
+
+The H2 state is accompanied by a common operator bundle
+\begin{equation}
+ \cB_{\mathrm{op},r}
+ =
+ \left
+ \{
+ J_r^\mu,
+ T_r^{\mu\nu},
+ \cO_{q,r}^{[\Gamma]},
+ \cO_{g,r}^{ij},
+ \cO_{qg,r},
+ \cO_{\mathrm{Wilson},r}
+ \right\}.
+ \label{eq:operator-bundle}
+\end{equation}
+Every operator shares the Hamiltonian, regulator, sector, and member identity.
+The bundle is versioned independently because an improved current or matching
+map may be attached to the same state only through an explicit compatibility
+record.
+
+\subsection{Quark current and quark GTMD operator}
+
+The quark bilocal acts diagonally on the active-quark number at zero skewness
+in the DGLAP region.  Its H2 overlap receives contributions from both
+\(qqq\) and \(qqqg\) sectors:
+\begin{equation}
+ W_q
+ =
+ W_q^{3\to3}
+ +W_q^{4g\to4g}
+ +\delta W_q^{\mathrm{op/match}}.
+ \label{eq:quark-h2-overlap}
+\end{equation}
+The term \(\delta W_q^{\mathrm{op/match}}\) records constrained-field,
+induced-operator, endpoint, and matching contributions not represented by the
+naive diagonal overlap.
+
+The H2 quark sector can support genuine quark--gluon correlations in twist-3
+or equation-of-motion operators through \(qqq\leftrightarrow qqqg\)
+interference.  BLFQ studies of twist-3 proton structure provide a concrete
+example of this mechanism \cite{Zhu2024}.
+
+\subsection{Gluon field-strength operator}
+
+The regulated gluon operator is
+\begin{equation}
+ \cO_g^{ij}[U,U']
+ =
+ F_a^{+i}(a)
+ U_{ab}[a,b]
+ F_b^{+j}(b)
+ U'_{ba}[b,a].
+ \label{eq:gluon-op}
+\end{equation}
+In light-front gauge,
+\begin{equation}
+ F_a^{+i}
+ =
+ \partial^+ A_a^i
+ -\partial^i A_a^+
+ +g f^{abc}A_b^+A_c^i.
+\end{equation}
+The gauge choice simplifies but does not erase boundary links, constrained
+fields, nonlinear operator terms, or renormalization.  The operator export
+must declare whether it contains:
+\begin{enumerate}
+ \item the linear one-gluon field-strength term;
+ \item nonlinear two-gluon terms;
+ \item instantaneous or constrained-field terms;
+ \item composite-operator counterterms;
+ \item ordered Wilson links and color channel;
+ \item the soft and rapidity matching status.
+\end{enumerate}
+At H2, the diagonal active-gluon overlap is available from the linear term.
+The nonlinear term generally requires higher sectors or an induced operator.
+
+\subsection{Transverse polarization decomposition}
+
+The parent tensor decomposes as
+\begin{equation}
+ \Gamma^{ij}
+ =
+ \frac12\delta_T^{ij}\Gamma_{\mathrm{tr}}
+ +\frac{i}{2}\epsilon_T^{ij}\Gamma_{\mathrm{hel}}
+ +\Gamma_{\mathrm{ST}}^{ij},
+\end{equation}
+where the last term is symmetric and traceless.  The projectors are applied to
+one common H2 parent and retain proton/neutron, target helicity, gluon helicity,
+color multiplicity, regulator, and member identity.
+
+\subsection{Readiness ladder}
+
+The operator bundle distinguishes:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Status & Meaning\\
+\midrule
+\texttt{FIELD\_STRENGTH\_LINEAR\_READY} & linear one-gluon matrix element validated\\
+\texttt{GLUON\_HELICITY\_MATRIX\_READY} & complete finite H2 helicity parent exported\\
+\texttt{REGULATED\_GTMD\_OVERLAP\_READY} & common off-forward overlap validated\\
+\texttt{WILSON\_INPUT\_INTERFACE\_READY} & typed handoff exists\\
+\texttt{PHYSICAL\_GLUON\_TMD\_READY} & prohibited at H2\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Momentum, helicity, and orbital ledgers}
+
+\subsection{Normalization and momentum}
+
+The finite state satisfies
+\begin{equation}
+ P_3+P_{4g}=1,
+\end{equation}
+and the intrinsic plus-momentum ledger is
+\begin{equation}
+ \langle x_q\rangle_r+\langle x_g\rangle_r=1
+ +\delta_{x,r},
+ \label{eq:momentum-ledger}
+\end{equation}
+with \(\delta_{x,r}\) separated into basis, operator, regulator, and numerical
+components.  The finite-resolution \(\langle x_g\rangle_r\) is not yet a
+renormalized gluon PDF moment.
+
+\subsection{Spin and OAM}
+
+A canonical light-front decomposition at the model resolution is
+\begin{equation}
+ \frac12
+ =
+ \frac12\Delta\Sigma_r
+ +\Delta G_r
+ +L_{q,r}^{\mathrm{can}}
+ +L_{g,r}^{\mathrm{can}}
+ +\delta_{J,r}.
+ \label{eq:spin-ledger}
+\end{equation}
+The operator and gauge definition is part of the identity.  The kinetic Ji
+decomposition and the canonical Jaffe--Manohar decomposition are not silently
+identified \cite{Ji1997,JaffeManohar1990}.  Their difference is tied to gauge
+potential or torque terms and therefore to the Wilson-path structure
+\cite{Hatta2012}.
+
+The H2 state can export the finite-basis quantities in
+\cref{eq:spin-ledger} as diagnostics.  A physical QCD spin decomposition
+requires operator matching, scale evolution, and a declared gauge-link scheme.
+
+\subsection{OAM ancestry}
+
+Every OAM-sensitive GTMD or TMD projection stores the amplitude blocks whose
+interference generates it.  If a projection requires \(L_z=0\) and
+\(|L_z|=1\), disabling either block must remove the corresponding harmonic.
+The same ancestry record is consumed by the Wilson engine so that the
+absorptive phase and OAM interference cannot be disconnected.
+
+\section{Regulated common GTMDs from the H2 state}
+
+\subsection{Zero-skewness parent}
+
+For a parton species \(a\), the regulated H2 parent is
+\begin{equation}
+ W_{a/N,\Lambda'\Lambda}^{(r)}
+ (x,\kT,\DT)
+ =
+ \langle\Psi_N^{\Lambda';r}(P')|
+ \cO_{a,r}(x,\kT,\DT)
+ |\Psi_N^{\Lambda;r}(P)\rangle.
+ \label{eq:h2-gtmd}
+\end{equation}
+The incoming and outgoing states use the same authoritative recoil map as
+Volume~II.  The parent decomposes by sector and active slot,
+\begin{equation}
+ W_{a/N}^{(r)}
+ =
+ \sum_{s,t\in\{3,4g\}}
+ W_{a/N}^{s\to t,(r)},
+\end{equation}
+with a named physical or operator source for every off-diagonal block.
+
+At zero skewness and leading-twist DGLAP support, the canonical quark and gluon
+bilocals are primarily diagonal in retained parton number.  Off-diagonal
+\(3\leftrightarrow4g\) contributions belong to genuine quark--gluon,
+constrained-field, induced, or matched operators and cannot be generated by
+simply overlapping arrays of different dimension.
+
+\subsection{Common reductions}
+
+The regulated parent exposes
+\begin{align}
+ \mathsf T_r[W]
+ &=W(x,\kT,\DT=0),\\
+ \mathsf G_r[W]
+ &=\int\dd^2\kT\,W(x,\kT,\DT),\\
+ \mathsf P_r[W]
+ &=\int\dd^2\kT\,W(x,\kT,0),\\
+ \mathsf J_r[W]
+ &=\int\dd x\,\dd^2\kT\,W.
+\end{align}
+These are regulated reductions.  Their physical identification with TMDs,
+GPDs, PDFs, and local currents requires the matching layer of Volume~V.
+
+\subsection{Gluon parent and color multiplicities}
+
+The active-gluon parent retains both H2 color multiplicities:
+\begin{equation}
+ W_g
+ =
+ \sum_{\rho,\rho'\in\{\rho,\lambda\}}
+ W_g^{\rho'\rho}.
+\end{equation}
+The operator may mix the multiplicities when allowed by color and all other
+quantum numbers.  Collapsing the parent to a single scalar before the color and
+polarization projectors would erase physical interference and invalidate the
+connection to ordered-link \(f/d\) channels.
+
+\subsection{Missing sea}
+
+Because H2 has no explicit \(qqqq\bar q\) sector, positive-\(x\) antiquark
+GTMDs are unavailable as microscopic state predictions.  The correct status is
+\begin{center}
+\texttt{UNAVAILABLE\_UNTIL\_H3\_PAIR\_SECTOR},
+\end{center}
+not a zero antiquark distribution and not an imported phenomenological curve
+inside the microscopic parent.
+
+\section{Microscopic handoff to Wilson dynamics}
+
+\subsection{Handoff object}
+
+The typed handoff is
+\begin{equation}
+ \mathfrak W_{\mathrm{handoff}}
+ =
+ \left(
+ \begin{array}{l}
+ \text{state-bundle id},\ 
+ \text{Hamiltonian and coupling id},\\
+ \text{regulator and resolution},\ 
+ \text{sector amplitudes},\\
+ \text{color multiplicities},\ 
+ \text{helicity/OAM blocks},\\
+ \text{field-strength operator id},\ 
+ \text{spectral/cut status}
+ \end{array}
+ \right).
+ \label{eq:wilson-handoff}
+\end{equation}
+The C5/C6 path, pole, cut-ledger, ordered-link, \(f/d\), antiunitary reversal,
+phase-budget, and soft-overlap objects are reused unchanged.
+
+\subsection{Cut support is not inferred from a bound state}
+
+A discrete off-shell H2 eigenbasis has no absorptive part merely because a
+small \(i\eps\) is introduced numerically.  A nonzero physical cut requires a
+declared continuum or finite-volume spectral rule.  Therefore
+\begin{equation}
+ \text{H2 state exists}
+ \not\Longrightarrow
+ \text{physical cut support exists}.
+\end{equation}
+The highest initial status is
+\texttt{MICROSCOPIC\_WILSON\_INPUT\_INTERFACE\_VALIDATED}.
+
+\subsection{One-gluon Wilson order}
+
+The first-order Wilson expansion is
+\begin{equation}
+ U_\gamma
+ =1+ig\int_\gamma\dd\xi\cdot A(\xi)+\cO(g^2).
+\end{equation}
+H2 supplies a dynamical one-gluon state and the coupling needed to replace the
+analytic C5/C6 amplitudes.  The eikonal pole orientation remains path-derived,
+\begin{equation}
+ \frac{1}{v\cdot\ell-i0\eta}
+ =
+ \PV\frac{1}{v\cdot\ell}
+ +i\eta\pi\delta(v\cdot\ell).
+\end{equation}
+A common state and coupling must generate both Sivers-like and Boer--Mulders-
+like projections; no universal scalar phase is introduced.
+
+\subsection{Active-gluon ordered links and color channels}
+
+For gluons, the handoff preserves the ordered pair
+\begin{equation}
+ [U,U']\in
+ \{[+,+],[-,-],[+,-],[-,+]\}
+\end{equation}
+and the independent contractions
+\begin{equation}
+ C_f^{abc}=if^{abc},
+ \qquad
+ C_d^{abc}=d^{abc}.
+\end{equation}
+Link topology, ordering, color contraction, and process color weights remain
+independent identities.  The C6 analytic \(f/d\) projectors can be applied to
+the H2 parent only after the microscopic color tensor and operator ancestry are
+preserved.
+
+\subsection{Sector-completeness obligation for higher Wilson orders}
+
+At second order,
+\begin{equation}
+ U_\gamma^{(2)}
+ \sim
+ (ig)^2\int_\gamma\int_\gamma
+ \cP[A(\xi)A(\zeta)],
+\end{equation}
+intermediate states may require \(qqqgg\) and \(qqqq\bar q g\) sectors or
+matched induced operators.  Non-Abelian exponentiation organizes connected
+color structures but does not remove the need for the physical intermediate
+states and counterterms \cite{Gardi2013}.  Therefore H2 cannot claim Wilson-
+order convergence beyond the sector content it can represent.
+
+\begin{requirement}[Wilson-order/Fock-order compatibility]
+Every Wilson-order result shall include a manifest of the Fock sectors and
+induced operators required by its intermediate states.  A missing required
+sector produces \texttt{WILSON\_ORDER\_UNAVAILABLE}, not a truncated physical
+prediction with an unreported omission.
+\end{requirement}
+
+\section{Soft, rapidity, and LF-to-QCD matching gate}
+
+\subsection{Unsubtracted microscopic boundary}
+
+The direct H2/Wilson calculation produces a regulated unsubtracted object
+\begin{equation}
+ W_{\mathrm{unsub}}^{\mathrm{H2}}
+ (r,\cR_{\mathrm{rap}},\gamma).
+\end{equation}
+The physical TMD requires
+\begin{equation}
+ W_{\mathrm{ren}}^{\mathrm{QCD}}
+ =
+ Z_{\UV}
+ R_{\mathrm{rap}}
+ S^{-1/2}
+ Z_{\mathrm{LF}\to\mathrm{QCD}}
+ \otimes W_{\mathrm{unsub}}^{\mathrm{H2}}
+ +\Delta_{\trunc}.
+ \label{eq:h2-matching}
+\end{equation}
+The C6 half-soft benchmark verifies one analytic overlap cancellation.  It does
+not complete \cref{eq:h2-matching}.
+
+\subsection{Phase budget}
+
+The imaginary part is partitioned as
+\begin{equation}
+ \operatorname{Im}\ln W_{\mathrm{ren}}
+ =
+ \operatorname{Im}\ln W_{\mathrm{unsub}}
+ -\frac12\operatorname{Im}\ln S
+ +\operatorname{Im}\ln Z_{\UV}
+ +\operatorname{Im}\ln R_{\mathrm{rap}}
+ +\operatorname{Im}\ln Z_{\mathrm{LF}\to\mathrm{QCD}}.
+\end{equation}
+Each component has an ownership and matching status.  An unresolved component
+is not silently set to zero.
+
+\subsection{Closed operator basis}
+
+Evolution may begin only after the regulated operator basis closes under:
+\begin{itemize}
+ \item UV renormalization and operator mixing;
+ \item quark/gluon singlet evolution where allowed;
+ \item rapidity renormalization;
+ \item soft subtraction;
+ \item transverse-rank and Wilson-link classes;
+ \item threshold and scheme transformations.
+\end{itemize}
+An H2 state with one active gluon does not by itself establish this closure.
+
+\section{Assumption-conditioned H2 plans}
+
+\subsection{Primary branches}
+
+The compiler supports at least:
+\begin{longtable}{L{0.18\textwidth}L{0.74\textwidth}}
+\toprule
+Plan & Content\\
+\midrule
+\endhead
+\texttt{H2-PLAN-A} & Explicit \(qqqg\), resolution-refitted induced confinement,
+instantaneous partners, no H1 effective color-spin term, exact/Krylov/TTN
+solvers.\\
+\texttt{H2-PLAN-B} & Explicit \(qqqg\), zero confinement, instantaneous
+partners, no H1 effective color-spin term.\\
+\texttt{H1-REFERENCE} & Read-only H1 effective color-spin branch, no explicit
+\(qqqg\); used only for matched comparison.\\
+\bottomrule
+\end{longtable}
+The branches are mutually exclusive complete theories at the declared
+truncation.  They may be compared as conditional predictions but never added.
+
+\subsection{Mandatory choices}
+
+Every H2 assumption bundle declares:
+\begin{itemize}
+ \item regulator and basis tower;
+ \item Fock sectors and color multiplicities;
+ \item confinement branch;
+ \item propagating vertex and coupling convention;
+ \item instantaneous terms and zero-mode policy;
+ \item counterterm basis and renormalization conditions;
+ \item current and field-strength operator bundle;
+ \item exact/Krylov/TTN solver route;
+ \item Wilson handoff status;
+ \item matching and downstream readiness.
+\end{itemize}
+A missing mandatory choice causes compilation failure.
+
+\subsection{Refinement order}
+
+The natural refinement order is
+\begin{equation}
+ (K,N_{\max},\cF,\chi,\text{operator order},\text{Wilson order})
+ \preceq
+ (K',N'_{\max},\cF',\chi',\ldots),
+\end{equation}
+with each axis recorded separately.  Increasing bond dimension cannot replace
+adding a missing Fock sector; increasing basis size cannot replace a missing
+instantaneous operator.
+
+\section{Provenance two-complex for H2}
+
+\subsection{Cells}
+
+The H2 provenance complex contains:
+\begin{itemize}
+ \item 0-cells: sector spaces, Hamiltonians, currents, field-strength
+ operators, states, Wilson objects, and results;
+ \item 1-cells: emission, absorption, projection, reduction, matching,
+ elimination, and handoff maps;
+ \item 2-cells: explicit/induced equivalence, propagating/instantaneous Ward
+ completion, count-once cut relations, and soft-overlap subtraction.
+\end{itemize}
+
+\subsection{Explicit/induced cell}
+
+The square
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \Hil_{3}\oplus\Hil_{4g}
+ \arrow[r,"\text{solve}"]
+ \arrow[d,"\text{Feshbach}"']
+ & {\lvert\Psi_{3+4g}\rangle}
+ \arrow[d,"P+\omega"]\\
+ \Hil_{3}^{\eff}
+ \arrow[r,"\text{solve}"']
+ & {\lvert\Psi_{3}^{\eff}\rangle}
+\end{tikzcd}
+\end{equation}
+commutes only up to the declared remainder and operator transformation.  The
+cell stores that remainder and prevents simultaneous selection of the two
+presentations.
+
+\subsection{Ward-completion cell}
+
+A second cell records that the propagating vertex and self-energy alone do not
+form the complete finite-basis current identity.  The path closes only after
+instantaneous and counterterm contributions are attached.  A missing edge is
+reported as a gauge-completion obstruction.
+
+\subsection{Wilson/soft cell}
+
+The microscopic rescattering path and the soft-subtracted path are related by
+an explicit half-soft or scheme-specific subtraction cell.  The cell is
+process and scheme dependent; it cannot be reused across incompatible Wilson
+paths or color representations.
+
+\subsection{Homology as an audit signal}
+
+A nontrivial cycle may indicate:
+\begin{itemize}
+ \item an explicit and induced sector counted together;
+ \item a propagating term missing its instantaneous partner;
+ \item a Wilson cut counted twice;
+ \item an unsubtracted soft overlap;
+ \item a genuine alternative model branch.
+\end{itemize}
+It is an obstruction signal, not a physical amplitude.
+
+\section{Convergence and uncertainty}
+
+\subsection{Independent axes}
+
+The H2 uncertainty and convergence manifest separates:
+\begin{enumerate}
+ \item parameter/calibration uncertainty;
+ \item longitudinal and transverse basis truncation;
+ \item Fock-sector truncation;
+ \item color-multiplicity and symmetry implementation;
+ \item regulator and zero-mode policy;
+ \item sector-dependent renormalization;
+ \item induced-interaction basis;
+ \item tensor-network bond and topology truncation;
+ \item eigensolver and state-tracking error;
+ \item current and Ward defect;
+ \item GTMD operator truncation;
+ \item Wilson-order and cut-support uncertainty;
+ \item soft, rapidity, and UV matching uncertainty;
+ \item numerical quadrature and interpolation.
+\end{enumerate}
+These axes are not collapsed into one band before a common posterior is
+defined.
+
+\subsection{Correlated microscopic members}
+
+A member label \(s\) identifies one complete state and operator bundle:
+\begin{equation}
+ s
+ \mapsto
+ \left
+ \{
+ H_s,
+ |p\rangle_s,
+ |n\rangle_s,
+ J_s,
+ \cO_{q,s},
+ \cO_{g,s},
+ \cO_{W,s}
+ \right\}.
+\end{equation}
+Proton and neutron, quark and gluon, current and GTMD, and T-even and Wilson
+projections retain the same member identity.
+
+\subsection{Withheld validation}
+
+At least one family from each of the following remains withheld:
+\begin{itemize}
+ \item nonzero-transfer current;
+ \item gluon momentum or helicity moment;
+ \item a second vertex kinematic point;
+ \item rotational/current-component closure;
+ \item next resolution or Fock sector;
+ \item a GTMD reduction not used in calibration.
+\end{itemize}
+Failure updates the Hamiltonian, current, operator, counterterm, or discrepancy
+model.  It does not create a function-specific normalization.
+
+\section{Software architecture}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.36\textwidth}L{0.56\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{H2Resolution} & Basis, regulator, endpoint, zero-mode, Fock, and
+solver identity.\\
+\texttt{QQQGColorMultiplicity} & Two exact singlet channels, recoupling, and
+generator tests.\\
+\texttt{CoupledFockBasis} & Antisymmetric \(qqq\oplus qqqg\) physical basis.\\
+\texttt{CoupledHamiltonian} & Block mass operator and matrix-free action.\\
+\texttt{PropagatingQGVertex} & Typed emission/absorption blocks.\\
+\texttt{InstantaneousFermionTerm} & Constrained-spinor partner and inverse
+\(\partial^+\) identity.\\
+\texttt{InstantaneousGluonTerm} & Color-current contact interaction.\\
+\RenTrajectory & Sector parameters, counterterms, conditions, flow, and
+identifiability.\\
+\texttt{HamiltonianCurrentBundle} & One Hamiltonian-consistent current family.\\
+\WardManifest & Contributions and residual decomposition for the finite-basis
+identity.\\
+\texttt{CoupledSectorTTN} & Direct-sum state network with color multiplicities.\\
+\texttt{H2EigensolverSuite} & Dense, Krylov, variational TTN, and tracking.\\
+\texttt{GluonOperatorBundle} & Field strength, helicity matrix, rank, and
+matching status.\\
+\texttt{SpinMomentumLedger} & Sector, momentum, helicity, and OAM closure.\\
+\WilsonHandoff & Typed microscopic adapter to C5/C6.\\
+\ProvComplex & Explicit/induced, Ward, cut, and soft count-once cells.\\
+\texttt{H2StateBundle} & Immutable state, operator, flow, solver, and readiness
+artifact.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Determinism and content addressing}
+
+Every basis, Hamiltonian, current, state, tensor network, and result receives a
+content hash constructed from its scientific identity and source hashes.
+Floating arrays alone do not define identity.  Regenerating a bundle from the
+same inputs must reproduce ordering, phases, metadata, and manifests within the
+declared deterministic contract.
+
+\subsection{Distributed realization}
+
+The coupled basis is naturally block sparse in exact quantum numbers, sector,
+color multiplicity, and tensor-network symmetry labels.  The implementation
+may distribute Hamiltonian application and contractions over blocks, but it
+must preserve deterministic reductions and global residual checks.  A
+parallel speedup cannot change basis ordering or state-member identity.
+
+\section{Formal requirements}
+
+The stable requirement identifiers for this volume are listed below.
+\begin{enumerate}[label=\textbf{V9.\arabic*.}]
+ \item The central H2 space is exactly \(\Hthree\oplus\Hfour\).
+ \item Both \(qqqg\) color-singlet multiplicities are retained.
+ \item Quark antisymmetry is imposed before operator assembly.
+ \item All exact quantum numbers and regulator labels are typed.
+ \item The block Hamiltonian is Hermitian with generated adjoint off-diagonal
+ blocks.
+ \item The H1 effective color-spin term is excluded unless overlap subtraction
+ is supplied.
+ \item The propagating quark--gluon vertex preserves momentum and \(\Jz\).
+ \item The vertex retains emitting-quark and fermion-sign identity.
+ \item Instantaneous-fermion terms use a declared inverse-derivative policy.
+ \item Instantaneous-gluon terms use the same endpoint and regulator policy.
+ \item Zero-mode omissions have an explicit discrepancy and validation record.
+ \item Sector-dependent masses are distinguished from physical masses.
+ \item A shared renormalization condition set is used across the tower.
+ \item At least one vertex observable and one current family remain withheld.
+ \item Hamiltonians and operators transform together under sector elimination.
+ \item Explicit and induced \(qqqg\) descriptions are mutually exclusive.
+ \item The finite-basis Ward identity includes all required attachments.
+ \item Restricted Ward success is not labeled full Slavnov--Taylor closure.
+ \item The direct-sum TTN retains Fock sector and color multiplicity.
+ \item Full-bond tensorization reproduces the exact finite state.
+ \item Variational energies satisfy the Rayleigh--Ritz bound.
+ \item Bond convergence includes gluon, OAM, current, and Ward observables.
+ \item State tracking uses overlaps and fingerprints, not eigenvalue order
+ alone.
+ \item The current shares the Hamiltonian identity.
+ \item The gluon field-strength export states which linear/nonlinear pieces are
+ present.
+ \item Gluon polarization projections descend from one tensor parent.
+ \item Momentum and spin ledgers report operator and matching status.
+ \item Quark/gluon GTMDs descend from the same H2 state.
+ \item Missing sea is reported unavailable, not zero.
+ \item The Wilson handoff preserves state, coupling, color, OAM, and regulator
+ identity.
+ \item Physical cut support is not inferred from a discrete bound-state basis.
+ \item Wilson order is gated by available Fock sectors or induced operators.
+ \item Ordered gluon links and \(f/d\) contractions remain independent.
+ \item Soft, rapidity, UV, and LF-to-QCD matching remain explicit gates.
+ \item Assumption branches are immutable and mutually exclusive.
+ \item Provenance two-cells enforce count-once semantics.
+ \item Correlated proton/neutron and quark/gluon member identity is preserved.
+ \item Every released result contains independent convergence axes.
+ \item At least one withheld family tests the shared H2 model.
+ \item No H2 result is promoted to a physical TMD without Volume V completion.
+\end{enumerate}
+
+\section{Analytic and finite-dimensional benchmarks}
+
+\subsection{Benchmark H2-A: coupled-block Hermiticity}
+
+Construct deterministic complex \(qqq\) and \(qqqg\) blocks and verify
+\begin{equation}
+ \langle\phi_4|V_{4\leftarrow3}|\psi_3\rangle
+ =
+ \langle V_{3\leftarrow4}\phi_4|\psi_3\rangle^*.
+\end{equation}
+Inject wrong conjugation, basis normalization, color multiplicity, fermion
+sign, regulator, and momentum routing.
+
+\subsection{Benchmark H2-B: color multiplicity and recoupling}
+
+Verify exactly two \(qqqg\) singlets, total-generator annihilation,
+orthonormality, recoupling unitarity, and deterministic phases.  Remove each
+multiplicity in turn and demonstrate the lost state and operator channels.
+
+\subsection{Benchmark H2-C: sector-dependent self-energy flow}
+
+Use a two- or three-resolution coupled model in which the highest sector has a
+different self-energy content.  Fit the common physical mass and show that
+bare and counterterm parameters flow while the matched eigenvalue remains
+stable.
+
+\subsection{Benchmark H2-D: instantaneous Ward completion}
+
+Evaluate \cref{eq:wti} using propagating, instantaneous, current, and
+counterterm contributions.  The complete set closes to tolerance.  Removing
+each required term produces a signed residual with the expected scaling.
+
+\subsection{Benchmark H2-E: exact/Krylov/TTN agreement}
+
+At each small tower point, compare exact diagonalization, matrix-free Krylov,
+full-bond TTN, and variational fixed-bond results for energy, state overlap,
+sector probability, current, OAM, and Ward residual.
+
+\subsection{Benchmark H2-F: observable-sensitive compression}
+
+Choose a low-rank TTN that reproduces the mass approximately but loses one
+color-multiplicity interference or gluon-OAM observable.  The adaptive bond
+policy must restore the required sector even if its Schmidt weight is small.
+
+\subsection{Benchmark H2-G: spin and momentum ledgers}
+
+Verify \cref{eq:momentum-ledger,eq:spin-ledger} at finite resolution and
+separate basis, operator, matching, and numerical residuals.  Inject an
+incorrect gluon momentum convention and a lost OAM block.
+
+\subsection{Benchmark H2-H: field-strength polarization reconstruction}
+
+Generate one common \(\Gamma^{ij}\) and reconstruct trace, antisymmetric, and
+symmetric-traceless components.  Repeat in each H2 color multiplicity and for
+allowed off-diagonal multiplicity interference.
+
+\subsection{Benchmark H2-I: common-parent reduction closure}
+
+Use the same regulated H2 GTMD parent to compute TMD, GPD, PDF, and current
+routes at the forward point and nonzero transfers.  Distinguish regulated
+closure from physical QCD matching.
+
+\subsection{Benchmark H2-J: Feshbach Hamiltonian and operator equivalence}
+
+Compare the full H2 calculation with the induced H1 description using
+\cref{eq:feshbach-h2,eq:feshbach-op}.  Verify equivalence in the finite toy model
+and expose the remainder in the realistic truncation.
+
+\subsection{Benchmark H2-K: microscopic Wilson handoff}
+
+Replace the analytic state in the C5/C6 interface with an H2 state bundle.
+Verify path, pole, color, OAM, and coupling identity.  Confirm exact zero
+absorption without declared cut support.
+
+\subsection{Benchmark H2-L: Wilson-order/Fock-order gate}
+
+Request a second-order Wilson calculation from an H2 state lacking
+\(qqqgg\).  The compiler must refuse unless a valid induced operator and
+matching record are supplied.
+
+\subsection{Benchmark H2-M: assumption branches}
+
+Compile and execute H2-PLAN-A, H2-PLAN-B, and H1-REFERENCE.  Verify distinct
+identities, mutual exclusion, reproducibility, and conditional comparison
+without additive mixing.
+
+\subsection{Benchmark H2-N: state tracking through sector mixing}
+
+Construct an avoided crossing as the \(qqq\leftrightarrow qqqg\) coupling is
+varied.  Eigenvalue-order tracking must fail while overlap, current, sector,
+and principal-angle tracking follow the intended branch.
+
+\section{Mandatory negative tests}
+
+The H2 implementation shall include stable identifiers for at least the
+following failure classes:
+\begin{enumerate}
+ \item missing one \(qqqg\) singlet multiplicity;
+ \item singlet \(qqq\) multiplied by a free gluon;
+ \item nonzero total color generator;
+ \item wrong adjoint-generator sign;
+ \item lost quark antisymmetry;
+ \item post-assembly antisymmetrization;
+ \item wrong longitudinal sum;
+ \item wrong transverse closure;
+ \item wrong \(\Jz\);
+ \item gluon zero mode admitted against policy;
+ \item swapped basis or Hamiltonian scales;
+ \item off-diagonal block not equal to the adjoint;
+ \item wrong emitting-quark identity;
+ \item wrong fermion permutation sign;
+ \item wrong color multiplicity in the vertex;
+ \item inconsistent endpoint regulator;
+ \item missing instantaneous-fermion term;
+ \item missing instantaneous-gluon term;
+ \item duplicated instantaneous term;
+ \item inverse-derivative policy mismatch;
+ \item zero-mode omission declared physical zero;
+ \item H1 effective color-spin retained with explicit \(qqqg\);
+ \item Feshbach remainder silently discarded;
+ \item operator not transformed with the Hamiltonian;
+ \item sector-dependent bare mass interpreted as a physical mass;
+ \item frozen counterterm across resolutions;
+ \item separate charge normalization for each current component;
+ \item fitted nonzero-transfer current used as a holdout;
+ \item rank-deficient renormalization condition set hidden;
+ \item propagating-only Ward claim;
+ \item accidental cancellation without residual decomposition;
+ \item Abelianized closure promoted to full STI closure;
+ \item current imported from another Hamiltonian branch;
+ \item TTN drops the Fock-sector edge;
+ \item TTN merges color multiplicities;
+ \item variational energy below the exact ground state;
+ \item nonmonotone nested variational energies without diagnosis;
+ \item mass convergence used to hide OAM failure;
+ \item state tracked only by eigenvalue order;
+ \item phase convention changes member identity;
+ \item linear field-strength operator labeled complete;
+ \item nonlinear two-gluon term silently omitted;
+ \item gluon projector applied to separate ad hoc parents;
+ \item quark/gluon member identities mixed;
+ \item momentum sum rule uses mismatched operator conventions;
+ \item canonical and kinetic OAM silently identified;
+ \item absent antiquark sector reported as zero prediction;
+ \item off-diagonal Fock overlap without named operator source;
+ \item local recoil formula duplicates the authoritative map;
+ \item Wilson handoff loses Hamiltonian coupling identity;
+ \item numerical \(\eps\) treated as physical cut support;
+ \item second Wilson order without sector support;
+ \item ordered gluon links collapsed;
+ \item \(f\) and \(d\) channels merged;
+ \item process color weights assigned without process map;
+ \item soft overlap omitted;
+ \item soft overlap duplicated;
+ \item UV matching declared zero rather than unresolved;
+ \item unmatched H2 output passed to evolution;
+ \item unmatched H2 output passed to a physical process;
+ \item H2 output passed to nuclear composition without required bundle data;
+ \item mutually exclusive assumption branches added;
+ \item provenance count-once cell removed;
+ \item production registry modified;
+ \item accepted artifact hash changed;
+ \item C5/C6 manifest changed;
+ \item formalism source changed by the implementation job;
+ \item hidden random seed changes a state bundle;
+ \item cache reused across incompatible operator identities;
+ \item distributed reduction changes deterministic ordering;
+ \item one uncertainty category used to absorb another;
+ \item failed holdout repaired by a TMD-specific coefficient;
+ \item physical TMD readiness asserted at H2;
+ \item inference readiness asserted without Volume VI gates.
+\end{enumerate}
+
+\section{Staged implementation program}
+
+\subsection{H2.0: coupled basis and block operator}
+
+Implement the complete \(qqq\oplus qqqg\) basis, two color multiplicities,
+propagating vertex, adjoint, free and induced diagonal blocks, and exact
+Hermiticity tests.
+
+\subsection{H2.1: sector renormalization and Ward benchmark}
+
+Add sector masses, vertex and current counterterms, instantaneous partners,
+renormalization conditions, flow manifests, and the Abelianized Ward identity.
+
+\subsection{H2.2: coupled eigensolver and tensor network}
+
+Run exact, Krylov, and variational TTN solvers over a small tower.  Add state
+tracking, bond convergence, and observable-sensitive compression tests.
+
+\subsection{H2.3: gluon/OAM and operator exports}
+
+Export sector probability, momentum, helicity, OAM, field-strength helicity
+matrix, and regulated common-parent reductions.
+
+\subsection{H2.4: Wilson reconnection}
+
+Connect the microscopic state bundle to the C5/C6 engine without asserting cut
+support or QCD matching.  Validate the ordered-link and \(f/d\) interfaces.
+
+\subsection{H2.5: explicit/induced comparison}
+
+Construct the Feshbach comparison with H1, record the remainder, and normalize
+the provenance two-cell.
+
+\subsection{H3 handoff: light sea and chiral dynamics}
+
+The next state enlargement is
+\begin{equation}
+ qqq\oplus qqqg
+ \longrightarrow
+ qqq\oplus qqqg\oplus qqqq\bar q,
+\end{equation}
+with separate \(u\bar u\) and \(d\bar d\) sectors, complete color and
+antisymmetry, chiral interactions, axial and pseudoscalar currents, PCAC tests,
+and explicit-versus-induced sea subtraction.
+
+\section{Risk register and safeguards}
+
+\begin{longtable}{L{0.25\textwidth}L{0.34\textwidth}L{0.33\textwidth}}
+\toprule
+Risk & Failure mode & Safeguard\\
+\midrule
+\endhead
+Finite-matrix realism & A small successful H2 block is called a QCD nucleon. &
+Use readiness statuses, towers, holdouts, and explicit nonclaims.\\
+Color truncation & One of the two singlets is dropped. & Exact multiplicity and
+generator tests at basis construction.\\
+Gauge closure by fitting & Current coefficients are tuned until the Ward defect
+vanishes. & Shared Hamiltonian/current ownership and term-by-term defect
+manifest.\\
+Instantaneous omission & Propagating diagrams are treated as complete. &
+Mandatory partner registry and ablation tests.\\
+Double counting & H1 effective gluon exchange is retained with explicit
+\(qqqg\). & Provenance exclusion and Feshbach comparison.\\
+False sector convergence & Stable mass hides unstable gluon/OAM observables. &
+Multi-observable convergence manifest.\\
+Tensor-network bias & Low bond rank erases a color or OAM channel. & Required-
+sector floor and observable-sensitive adaptation.\\
+False cut & Numerical \(i\eps\) is interpreted as absorption. & Typed physical
+cut-support gate.\\
+Wilson overreach & Higher eikonal order is computed without higher Fock
+support. & Wilson/Fock compatibility manifest.\\
+Operator incompleteness & Linear field strength is labeled complete. & Piecewise
+operator readiness and nonlinear-term gate.\\
+Matching overreach & Regulated overlap is evolved as a physical TMD. & Volume V
+matching gate.\\
+State misidentification & An avoided crossing changes the physical branch. &
+Overlap/current/subspace tracking.\\
+Parameter migration & A failed gluon observable acquires its own coefficient. &
+Hamiltonian/operator ownership and withheld validation.\\
+Computational explosion & Full sectors become intractable. & Symmetry blocks,
+TTN compression, exact small-space oracles, and distributed deterministic
+application.\\
+\bottomrule
+\end{longtable}
+
+\section{Final acceptance criteria}
+
+H2 may be called a validated dynamical-gluon microscopic benchmark only when:
+\begin{enumerate}
+ \item the coupled basis contains complete \(qqq\) and \(qqqg\) physical
+ spaces;
+ \item both color singlet multiplicities and exact antisymmetry pass;
+ \item the block Hamiltonian is Hermitian and reproducible;
+ \item propagating and instantaneous terms share one regulator identity;
+ \item the renormalization trajectory is defined at multiple resolutions;
+ \item calibration and holdout conditions are frozen;
+ \item the finite-basis Ward identity closes with a decomposed residual;
+ \item the current is Hamiltonian consistent;
+ \item exact, Krylov, and full-bond TTN states agree;
+ \item variational TTN convergence includes gluon and OAM observables;
+ \item state tracking survives an avoided crossing;
+ \item sector, momentum, helicity, and OAM ledgers close to tolerance;
+ \item the gluon field-strength helicity matrix reconstructs correctly;
+ \item regulated common-parent reductions close;
+ \item the explicit/induced H1/H2 comparison includes its remainder;
+ \item the Wilson handoff preserves all microscopic identity;
+ \item no absorptive result appears without declared cut support;
+ \item higher Wilson order is refused without sector support;
+ \item all matching and downstream gates remain fail-closed;
+ \item all previous production artifacts and validation manifests remain
+ immutable;
+ \item at least one withheld current or gluon/OAM observable is successfully
+ predicted from the shared H2 parameters.
+\end{enumerate}
+
+These criteria do not establish a physical nucleon or TMD.  That stronger
+claim additionally requires the H3 light sea, broader Fock and basis
+convergence, operator matching, QCD evolution, nuclear composition, and shared
+posterior validation.
+
+\section{Recommended implementation boundary after C9}
+
+If C9/H2 passes the preceding gates, the next computational package should be
+
+\begin{quote}
+\textbf{C10/H3 -- fully antisymmetrized \(u\bar u\) and \(d\bar d\) sectors,
+chiral dynamics, axial/PCAC currents, explicit-versus-induced sea subtraction,
+and positive-\(x\) microscopic antiquark exports.}
+\end{quote}
+
+The package should preserve the H2 gluon state and add:
+\begin{itemize}
+ \item all three \(qqqq\bar q\) color-singlet multiplicities;
+ \item complete identical-quark antisymmetry beyond a cluster basis;
+ \item separate \(u\bar u\) and \(d\bar d\) sectors;
+ \item pair-creation and annihilation vertices with Hermitian partners;
+ \item pion/chiral effective interactions and their subtraction from explicit
+ pair sectors;
+ \item axial and pseudoscalar currents with a finite-basis PCAC benchmark;
+ \item positive-\(x\) antiquark helicity and OAM exports;
+ \item a new tensor-network sector and bond-convergence study;
+ \item the first microscopic quark, antiquark, and gluon common-parent bundle.
+\end{itemize}
+
+The parallel formal volume should be Volume~X: \emph{Light-Sea Fock Sectors,
+Chiral Symmetry, PCAC, and Microscopic Antiquark GTMDs}.
+
+\section{Conclusion}
+
+The \(qqqg\) sector is the first point at which the microscopic program contains
+a gauge-field degree of freedom in the same interacting state that generates
+the nucleon mass, current, color, helicity, orbital, GTMD, and Wilson inputs.
+That achievement is meaningful only if the propagating sector is accompanied
+by its instantaneous partners, sector-dependent counterterms, transformed
+operators, Ward diagnostics, color multiplicities, and no-double-counting
+relations.  Volume~IX defines those obligations as one coupled object.
+
+The resulting H2 state is not yet continuum QCD, but it is the first state that
+can replace the analytic gluon pilot by a Hamiltonian-generated amplitude.  It
+also exposes the remaining physics honestly: missing light sea, incomplete
+non-Abelian gauge closure, higher Wilson-order sectors, nonlinear field-
+strength terms, continuum cut support, soft/rapidity completion, LF-to-QCD
+matching, and nuclear composition.  When those gates are respected, the
+geometric and tensor-network architecture becomes predictive in the intended
+sense: assumptions define a Hamiltonian and operator bundle; the bundle
+generates one correlated microscopic state; and that state supplies common
+quark, gluon, current, GTMD, and Wilson projections without assigning an
+independent model curve to every TMD.
+
+\appendix
+
+\section{Hamiltonian-term registry schema}
+
+A Hamiltonian term record contains at least
+\begin{verbatim}
+{
+  "term_id": "...",
+  "class": "FREE | PROPAGATING | INSTANTANEOUS | INDUCED | COUNTERTERM",
+  "source_sector": "qqq | qqqg",
+  "target_sector": "qqq | qqqg",
+  "resolution_id": "...",
+  "regulator_id": "...",
+  "color_map": "...",
+  "outer_multiplicity_map": "...",
+  "helicity_oam_rule": "...",
+  "longitudinal_rule": "...",
+  "transverse_rule": "...",
+  "endpoint_policy": "...",
+  "zero_mode_policy": "...",
+  "parameter_owner": "...",
+  "hermitian_partner": "...",
+  "provenance_node": "...",
+  "readiness": "..."
+}
+\end{verbatim}
+
+\section{H2 microscopic state-bundle schema}
+
+\begin{verbatim}
+{
+  "bundle_id": "...",
+  "assumption_bundle_id": "...",
+  "prediction_plan_id": "...",
+  "hamiltonian_id": "...",
+  "resolution_id": "...",
+  "renormalization_trajectory_id": "...",
+  "proton_neutron_member_id": "...",
+  "state_tracking_id": "...",
+  "sector_amplitudes": {
+    "qqq": "...",
+    "qqqg_rho": "...",
+    "qqqg_lambda": "..."
+  },
+  "exact_state_hash": "...",
+  "ttn_state_hash": "...",
+  "bond_manifest_id": "...",
+  "current_bundle_id": "...",
+  "gluon_operator_bundle_id": "...",
+  "ward_manifest_id": "...",
+  "spin_momentum_ledger_id": "...",
+  "wilson_handoff_id": "...",
+  "matching_status": [
+    "UV_MATCHING_REQUIRED",
+    "RAPIDITY_SOFT_MATCHING_REQUIRED",
+    "LF_TO_QCD_MATCHING_REQUIRED"
+  ],
+  "readiness": [
+    "H2_COUPLED_STATE_BENCHMARKED",
+    "H2_TTN_BENCHMARKED",
+    "ABELIANIZED_FINITE_BASIS_WARD_BENCHMARKED"
+  ]
+}
+\end{verbatim}
+
+\section{Ward-closure manifest}
+
+\begin{longtable}{L{0.24\textwidth}L{0.68\textwidth}}
+\toprule
+Field & Required content\\
+\midrule
+\endhead
+Identity & Hamiltonian, current, regulator, resolution, and condition hashes.\\
+Kinematics & Incoming/outgoing momentum fibers and current component.\\
+Propagating pieces & Self-energy and vertex attachments.\\
+Instantaneous pieces & Fermion and gluon contact terms.\\
+Counterterms & Mass, wave-function, vertex, and current terms.\\
+Endpoint policy & Inverse-derivative and zero-mode prescription.\\
+Residuals & Total and componentwise defects with signs and tolerances.\\
+Ablations & Defects after removing each required contribution.\\
+Status & Restricted identity tested; forbidden stronger claims.\\
+\bottomrule
+\end{longtable}
+
+\section{Microscopic Wilson-handoff schema}
+
+\begin{verbatim}
+{
+  "handoff_id": "...",
+  "state_bundle_id": "...",
+  "hamiltonian_coupling_id": "...",
+  "field_strength_operator_id": "...",
+  "qqqg_color_multiplicities": ["rho", "lambda"],
+  "oam_blocks": [0, -1, 1, -2, 2],
+  "ordered_link_pair": "...",
+  "color_contraction": "f | d | unresolved",
+  "path_pole_convention_id": "...",
+  "cut_support_status": "ABSENT | DECLARED_FINITE_VOLUME | CONTINUUM",
+  "phase_budget_id": "...",
+  "soft_overlap_status": "...",
+  "wilson_order": 1,
+  "fock_support_manifest": "...",
+  "readiness": "MICROSCOPIC_WILSON_INPUT_INTERFACE_VALIDATED"
+}
+\end{verbatim}
+
+\small
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev. Mod. Phys. \textbf{21}, 392 (1949).
+
+\bibitem{BrodskyPauliPinsky1998}
+S.~J.~Brodsky, H.-C.~Pauli, and S.~S.~Pinsky,
+``Quantum chromodynamics and other field theories on the light cone,''
+Phys. Rept. \textbf{301}, 299 (1998),
+arXiv:hep-ph/9705477.
+
+\bibitem{Vary2010}
+J.~P.~Vary et al.,
+``Hamiltonian light-front field theory in a basis function approach,''
+Phys. Rev. C \textbf{81}, 035205 (2010),
+arXiv:0905.1411.
+
+\bibitem{Xu2025}
+S.~Xu, Y.~Liu, C.~Mondal, J.~Lan, X.~Zhao, Y.~Li, and J.~P.~Vary,
+``Towards a first principles light-front Hamiltonian for the nucleon,''
+Phys. Lett. B \textbf{867}, 139599 (2025),
+arXiv:2408.11298.
+
+\bibitem{Mondal2025}
+C.~Mondal, S.~Xu, Y.~Liu, J.~Lan, Y.~Li, X.~Zhao, and J.~P.~Vary,
+``Basis light-front quantization: Advancing a first principles approach for
+the nucleon,''
+arXiv:2503.21372 (2025).
+
+\bibitem{Vary2025}
+J.~P.~Vary, C.~Mondal, S.~Xu, X.~Zhao, and Y.~Li,
+``Nucleon structure from basis light-front quantization: Status and
+prospects,''
+arXiv:2512.08283 (2025).
+
+\bibitem{Zhu2024}
+Z.~Zhu et al.,
+``Transverse structure of the proton beyond leading twist: A light-front
+Hamiltonian approach,''
+arXiv:2404.13720 (2024).
+
+\bibitem{Qian2024}
+C.~Qian, S.~Xu, Y.-G.~Yang, and X.~Zhao,
+``Quark and gluon entanglement in the proton based on a light-front
+Hamiltonian,''
+arXiv:2412.11860 (2024).
+
+\bibitem{Karmanov2008}
+V.~A.~Karmanov, J.-F.~Mathiot, and A.~V.~Smirnov,
+``Systematic renormalization scheme in light-front dynamics with Fock-space
+truncation,''
+Phys. Rev. D \textbf{77}, 085028 (2008),
+arXiv:0801.4507.
+
+\bibitem{Chabysheva2017}
+S.~S.~Chabysheva and J.~R.~Hiller,
+``Light-front \(\phi_2^4\) theory with sector-dependent mass,''
+Phys. Rev. D \textbf{95}, 096016 (2017),
+arXiv:1612.09331.
+
+\bibitem{Marinho2008}
+J.~A.~O.~Marinho, T.~Frederico, E.~Pace, G.~Salm\`e, and P.~U.~Sauer,
+``Light-front Ward--Takahashi identity for two-fermion systems,''
+Phys. Rev. D \textbf{77}, 116010 (2008),
+arXiv:0805.0707.
+
+\bibitem{Gubankova2000}
+E.~Gubankova, C.-R.~Ji, and S.~R.~Cotanch,
+``Flow equations for quark--gluon interactions in light-front QCD,''
+Phys. Rev. D \textbf{62}, 074001 (2000),
+arXiv:hep-ph/0008088.
+
+\bibitem{BrodskyDiehlHwang2001}
+S.~J.~Brodsky, M.~Diehl, and D.-S.~Hwang,
+``Light-cone wavefunction representation of deeply virtual Compton
+scattering,''
+Nucl. Phys. B \textbf{596}, 99 (2001),
+arXiv:hep-ph/0009254.
+
+\bibitem{Meissner2009}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-1/2 hadron,''
+JHEP \textbf{08}, 056 (2009),
+arXiv:0906.5323.
+
+\bibitem{Lorce2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys. Rev. D \textbf{84}, 014015 (2011),
+arXiv:1106.0139.
+
+\bibitem{Ji1997}
+X.~Ji,
+``Gauge-invariant decomposition of nucleon spin,''
+Phys. Rev. Lett. \textbf{78}, 610 (1997),
+arXiv:hep-ph/9603249.
+
+\bibitem{JaffeManohar1990}
+R.~L.~Jaffe and A.~Manohar,
+``The \(g_1\) problem: Deep inelastic electron scattering and the spin of the
+proton,''
+Nucl. Phys. B \textbf{337}, 509 (1990).
+
+\bibitem{Hatta2012}
+Y.~Hatta,
+``Notes on the orbital angular momentum of quarks in the nucleon,''
+Phys. Lett. B \textbf{708}, 186 (2012),
+arXiv:1111.3547.
+
+\bibitem{Gardi2013}
+E.~Gardi, J.~M.~Smillie, and C.~D.~White,
+``The non-Abelian exponentiation theorem for multiple Wilson lines,''
+JHEP \textbf{06}, 088 (2013),
+arXiv:1304.7040.
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\end{thebibliography}
+
+\end{document}

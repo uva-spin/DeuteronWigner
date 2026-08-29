@@ -1,0 +1,24 @@
+{
+  "conditions": 9,
+  "holdouts": 7,
+  "jacobian_rank": 5,
+  "maximum_calibration_residual": 2.6e-13,
+  "maximum_holdout_residual": 0.0059,
+  "null_directions": 0,
+  "parameter_owner": "OPERATOR_BLOCK_ONLY",
+  "parameters": 5,
+  "plan_addition_rejected": true,
+  "plans": [
+    "M1_PLAN_PERT",
+    "M1_PLAN_EXT",
+    "M1_PLAN_HYBRID"
+  ],
+  "schema_version": "1.0.0",
+  "singular_values": [
+    2.1,
+    1.4,
+    0.81,
+    0.29,
+    0.07
+  ]
+}

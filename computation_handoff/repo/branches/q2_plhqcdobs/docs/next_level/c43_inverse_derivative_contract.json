@@ -1,0 +1,11 @@
+{
+  "contract": {
+    "kernel": "(partial^+)^{-1}(1-P0)f(x^-)=1/2 integral dy^- epsilon(x^- - y^-) (1-P0)f(y^-)",
+    "prescription": "ANTISYMMETRIC_OR_PV",
+    "property": "anti-Hermitian on nonzero-mode domain",
+    "zero_projector": "P0 f=L^-1 integral_{-L/2}^{L/2} dy^- f(y^-)"
+  },
+  "source": "HEINZL supporting methodology plus SB constraint equations",
+  "status": "SELECTED",
+  "symbolic_hash": "ab55d321b152b7695a06291fe7a5ed21f704c4db387dee5357a9220ad6879796"
+}

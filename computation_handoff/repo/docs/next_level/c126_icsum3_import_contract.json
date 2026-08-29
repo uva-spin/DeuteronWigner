@@ -1,0 +1,9 @@
+{
+  "schema": "C125-C126-ICSUM3-IMPORT-CONTRACT-V1",
+  "parent_status": "C125_C123_C124_SOURCE_DERIVED_LOGICAL_WITNESS_AUTHORITY_READY",
+  "branch": "C126/ICSUM3",
+  "scope": "construct per-witness values and certified bounds from C125 identities",
+  "consume": ["C125 witness IDs", "ranks", "matrix targets", "target spans", "primitive references", "atomicity", "count-once", "adjoint identities"],
+  "forbidden": ["rediscover C125 domain through private builders", "expanded global stream", "C53 substitution", "C58 substitution", "physical coupling", "counterterm"],
+  "status": "C126_ICSUM3_WITNESS_VALUE_AUTHORITY_PENDING"
+}

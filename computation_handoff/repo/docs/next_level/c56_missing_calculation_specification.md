@@ -1,0 +1,3 @@
+# C56 Branch-B missing calculation specification
+
+C57/IFREG must derive and source-qualify a field-level finite-HO projector for the two gauge fields in the C55 `b† a a† b` monomial. It must specify the complete virtual one-gluon collection at each physical resolution, its longitudinal and transverse shell limits, P0/Q0 and residual-boundary treatment, and its relation (if any) to C47 external CM/TM truncation. It must then either supply a regulator-identical BPP-to-HO conversion with remainder or retain the direct C45-HO bare sum. No source-free subtraction, external-state-limited sum, or counterterm coefficient is allowed.

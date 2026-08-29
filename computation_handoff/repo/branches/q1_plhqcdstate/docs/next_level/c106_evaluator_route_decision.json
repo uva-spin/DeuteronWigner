@@ -1,0 +1,10 @@
+{
+  "schema": "C106-EVALUATOR-ROUTE-DECISION-V1",
+  "status": "C106_IFCOEFFVAL_SYMBOL_BINDING_INCOMPLETE",
+  "selected_route": "D_UNAVAILABLE",
+  "reason": "The frozen C104 AST is syntactically complete but its required record-local projection and bound leaves are not authenticated or bound.",
+  "route_A": "not eligible: missing primitive bindings",
+  "route_B": "not eligible: compilation cannot invent bindings",
+  "route_C": "not eligible: no complete frozen rule family",
+  "upstream_reconstruction": "forbidden"
+}

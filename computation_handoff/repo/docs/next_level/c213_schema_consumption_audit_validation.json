@@ -1,0 +1,34 @@
+{
+  "schema": "C213-SCHEMA-CONSUMPTION-AUDIT-VALIDATION-V1",
+  "artifact": "schema_consumption_audit_validation",
+  "package_root": "367e0d7a008f64624d2d7d751e68f6688a88f3ec12f8a18b9c1da852bafe57eb",
+  "status": "C213_C212_PHYSICAL_INPUT_AUTHORITY_AUDITED_STANDARD_CAPSULES_READY_FINITE_BASIS_BINDING_INCOMPLETE",
+  "plan": "PHYSINPUT1-B",
+  "physical_record_ready": false,
+  "physical_values_selected": 0,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "required_classes": [
+      "coupling",
+      "mass",
+      "IR/regulator",
+      "boundary/holonomy",
+      "basis scale",
+      "counterterms",
+      "targets",
+      "uncertainty",
+      "scope"
+    ],
+    "covered_classes": 9,
+    "complete_authority_classes": 0,
+    "C154_capsules_consumed": 0,
+    "C158_values_consumed": 0,
+    "physical_parameter_record": false,
+    "root": "89bf714f7cc87a992e41f1f503cef77217e97f9c356685779ab6e762eed77cd1"
+  }
+}

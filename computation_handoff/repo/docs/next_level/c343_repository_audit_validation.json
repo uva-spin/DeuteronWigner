@@ -1,0 +1,45 @@
+{
+  "package_root": "345a189256c289545ce57c36928179c75c4d2cbf7722ce0a341f8a84d4ac1796",
+  "physical": false,
+  "plan": "RIMASSC43OBSCAPSULE1-C",
+  "record": {
+    "complete_candidate_count": 0,
+    "numerical_values_bound": 0,
+    "operator_authority_reused": true,
+    "root": "3c1665f4830b137d209fc3b55274149da68712401aeca2a714828249b2cd2dd4",
+    "rows": [
+      {
+        "admissible_fields": [
+          "observable_family",
+          "process_orientation",
+          "Wilson_path"
+        ],
+        "candidate": "C323 JMY/BJY/Gao",
+        "classification": "OPERATOR_LEVEL",
+        "numeric_capsule": false
+      },
+      {
+        "admissible_fields": [],
+        "candidate": "generic deuteron_wigner.tmd_scheme",
+        "classification": "GENERIC_THEORY_API",
+        "numeric_capsule": false,
+        "reason": "not selected by a C43 SIDIS dataset record"
+      },
+      {
+        "admissible_fields": [],
+        "candidate": "C317 K9/K11/K13",
+        "classification": "NONPHYSICAL_VALIDATION",
+        "numeric_capsule": false
+      },
+      {
+        "admissible_fields": [],
+        "candidate": "repository SIDIS analytic oracles",
+        "classification": "VALIDATION_OR_MODEL",
+        "numeric_capsule": false,
+        "reason": "no experiment-specific joint kinematics/covariance/ensemble authority"
+      }
+    ]
+  },
+  "status": "C343_JMY_SIDIS_OBSERVABLE_CAPSULE_SCHEMA_BOUND_DATASET_NUMERICAL_RECORD_MISSING",
+  "validation": "PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "gluon": {
+    "construction": "N epsilon_ijm (t^a)_km",
+    "generator_residual": 5.551115123125783e-17,
+    "multiplicity_channel": "rho-octet: antisymmetric first quark pair",
+    "norm": 1.0,
+    "omitted_adjoint_residual": 0.17677669529663687,
+    "stable_id": "C4:COLOR:QQQG_OCTET_ADJOINT_SINGLET"
+  },
+  "requirements": [
+    "C4.SEA_COLOR",
+    "C4.GLUON_COLOR"
+  ],
+  "schema_version": "1.0.0",
+  "sea": {
+    "basis_status": "CLUSTER_BASIS_NOT_FULLY_ANTISYMMETRIZED",
+    "construction": "epsilon_abc/sqrt6 times delta_de/sqrt3",
+    "generator_residual": 0.0,
+    "norm": 1.0000000000000004,
+    "stable_id": "C4:COLOR:QQQQQBAR_CLUSTER_SINGLET",
+    "wrong_antiquark_sign_residual": 0.2721655269759088
+  }
+}

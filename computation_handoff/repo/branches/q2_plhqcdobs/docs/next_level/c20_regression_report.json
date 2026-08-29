@@ -1,0 +1,110 @@
+{
+  "all_artifacts_unchanged": true,
+  "artifacts": [
+    {
+      "actual_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "expected_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "expected_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.correlators.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "expected_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "expected_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.correlators.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "expected_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "expected_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.correlators.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "expected_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.csv",
+      "unchanged": true
+    },
+    {
+      "actual_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "expected_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.correlators.csv",
+      "unchanged": true
+    }
+  ],
+  "atlas_pages": 162,
+  "builders": 19,
+  "environment": {
+    "numpy": "1.26.3",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.9.23"
+  },
+  "evidence": 36,
+  "injections": {
+    "C10": 90,
+    "C11": 104,
+    "C12": 124,
+    "C13": 148,
+    "C14": 184,
+    "C15": 244,
+    "C16": 308,
+    "C17": 340,
+    "C18": 400,
+    "C19": 480,
+    "C20": 560,
+    "C3": 24,
+    "C4": 40,
+    "C5": 48,
+    "C6": 60,
+    "C7": 48,
+    "C8": 56,
+    "C9": 83
+  },
+  "issued": [
+    "PERTURBATIVE_COEFFICIENT_LIBRARY_SOURCE_AUDITED",
+    "SUPPORTED_TWIST2_COEFFICIENT_BLOCKS_IMPLEMENTED",
+    "EXTERNAL_MATRIX_ELEMENT_INTERFACE_VALIDATED",
+    "SHARED_MATCHING_OVERCONSTRAINED",
+    "LF_TO_QCD_STEP_SCALING_WITH_AUDITED_COEFFICIENTS_VALIDATED",
+    "SMALL_B_OPE_AUDITED_AT_DECLARED_ORDER",
+    "SCHEME_ROUNDTRIP_VALIDATED",
+    "MATCHED_REFERENCE_SCALE_OPERATORS_VALIDATION_ONLY",
+    "C20_M1_VALIDATION_ONLY"
+  ],
+  "not_issued": [
+    "PHYSICAL_TMD_MATCHING_COMPLETE",
+    "ALL_TMD_COEFFICIENTS_KNOWN",
+    "PHYSICAL_TODD_MATCHING_COMPLETE",
+    "PHYSICAL_COLLINS_SOPER_KERNEL",
+    "ALL_ORDER_EVOLUTION_READY",
+    "PROCESS_FACTORIZATION_READY",
+    "W_PLUS_Y_READY",
+    "INFERENCE_READY",
+    "PRODUCTION_READY"
+  ],
+  "prior_manifests_unchanged": true,
+  "production_reachable": false,
+  "production_registry": 216,
+  "requirements": 770,
+  "schema_version": "1.0.0",
+  "starting_commit": "22a092e7472f113ae018f9ff94373af03c99ce8d",
+  "tests": 1040
+}

@@ -1,0 +1,53 @@
+{
+  "alternative_plan": "PLAN-B C11.OP.19b1ad kept separate",
+  "historical_c11_modified": false,
+  "operator": {
+    "active_field": "quark psi",
+    "antiquark_convention": "positive-x direct antiquark slots",
+    "basis_regulator": "C11 K/Nmax/bHO",
+    "color_representation": "fundamental",
+    "completion": {
+      "parent_root": "C11_REGULATED_MODEL_DENSITY",
+      "relation_to_parent": "EXTENDS_OPERATOR_WITH_DECLARED_WILSON_SOFT_STRUCTURE",
+      "root_id": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+      "validation_only": true,
+      "version": "1.0.0"
+    },
+    "content_hash": "cab7ff854dc8bcbe6991bae1e2ab9fca4508c7106b61a5362e22aed1d9184e90",
+    "dirac_projection": "gamma+",
+    "endpoint_regulator": "positive-x endpoint basis support",
+    "gauge": "covariant xi_g",
+    "lf_time": "z+=0",
+    "operator_normalization": "C11 rank-zero projector normalization unchanged",
+    "overlap_convention": "zero-bin exactly once before soft allocation",
+    "path_ordering": "path ordered",
+    "rapidity_regulator": "modified-delta planned, unrealized in microscopic vacuum",
+    "separation": "z=(0,z-,bT)",
+    "soft_allocation": "inverse square root",
+    "soft_definition": "vacuum four-line soft Wilson loop required",
+    "staple_direction": "T-even common future/past staple identity class",
+    "state_normalization": "C11/H3 state normalization unchanged",
+    "transverse_closure": "explicit transverse segment at light-cone infinity",
+    "uv_regulator": "C11 finite basis plus target MSbar counterterm plan",
+    "zero_mode_policy": "zero modes excluded by historical C11 basis; sensitivity unresolved"
+  },
+  "plans_summed": false,
+  "root": {
+    "content_hash": "0182eba79bfbbc8cb72c33bc5a0c47381538411eb5115a4036ecacb018ecce7e",
+    "parent_root": "C11_REGULATED_MODEL_DENSITY",
+    "relation_to_parent": "EXTENDS_OPERATOR_WITH_DECLARED_WILSON_SOFT_STRUCTURE",
+    "root_id": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+    "validation_only": true,
+    "version": "1.0.0"
+  },
+  "schema_version": "1.0.0",
+  "selected_c11_plan": "PLAN-A C11:H4:PLAN:04c40be451b5c7f3a60b",
+  "selected_resolution": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+  "source_parent_ids": [
+    "C11.OP.f3a60b.PROTON.u",
+    "C11.OP.f3a60b.PROTON.d",
+    "C11.OP.f3a60b.PROTON.ubar",
+    "C11.OP.f3a60b.PROTON.dbar"
+  ],
+  "status": "C32_OPERATOR_COMPLETION_AUDITED"
+}

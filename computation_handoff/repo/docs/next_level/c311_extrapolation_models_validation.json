@@ -1,0 +1,32 @@
+{
+  "authority_record": {
+    "cross_checks": [
+      "L+a epsilon log(epsilon)+b epsilon",
+      "L+a epsilon+b epsilon^2",
+      "leave-two-windows-out interval regression"
+    ],
+    "primary": "L+a epsilon log(epsilon)+b epsilon+c epsilon^2",
+    "root": "f494deb300ee75ca56a7371eedbcd16de396aed5402ea837c4051ee102dc144b",
+    "source_qualified": true,
+    "windows": [
+      [
+        0.08,
+        0.03
+      ],
+      [
+        0.06,
+        0.025
+      ],
+      [
+        0.05,
+        0.02
+      ]
+    ]
+  },
+  "package_root": "4f272c947e9b4b2ded064ab8c63c9b6f128aabce1f7af7a8bc0264a5bd57e593",
+  "physical": false,
+  "plan": "RIMASSEPSLIMIT1-B",
+  "schema": "C311-EXTRAPOLATION_MODELS-VALIDATION-V1",
+  "status": "C311_CORRELATED_EPSILON_LIMIT_ENCLOSED_FULL_GRAM_SHAPE_COEFFICIENTS_READY_C43_MATCHING_MISSING",
+  "validation": "PASS"
+}

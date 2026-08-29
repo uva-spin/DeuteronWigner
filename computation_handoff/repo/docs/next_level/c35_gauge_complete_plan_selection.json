@@ -1,0 +1,121 @@
+{
+  "c34_covariant_plan_supersession": {
+    "coefficient_evaluated_before_supersession": false,
+    "frozen_before_coefficient": true,
+    "physical_gauge_plan_silently_changed": false,
+    "reason": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+    "successor_decision": "S0C-UNAVAILABLE",
+    "superseded_plan": "C34_COVARIANT_XI_G_PROBE_PLAN_{0,1,2}_GAUGE_COMPLETION_UNRESOLVED",
+    "supersession_id": "C35.GAUGE.SUPERSESSION.C34_TO_UNAVAILABLE.v1",
+    "versioned": true
+  },
+  "c35_identity_envelope": {
+    "baryon_number": 0,
+    "baseline_commit": "6bdb44be2afc79e817f69ce0e35813da8a394db7",
+    "basis_regulator": "C33.SOFT.BASIS",
+    "collinear_root_id": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+    "consumes_art25": false,
+    "consumes_bridge_residuals": false,
+    "consumes_process_data": false,
+    "derivation_authority": "C35_SOURCE_AUDIT_AND_EXACT_KINEMATICS",
+    "descendant_root_id": "C35_SOFT_REGULATOR_COMPLETION_DESCENDANT",
+    "envelope_version": "C35.IDENTITY.ENVELOPE.v1",
+    "gauge_plan": "S0C-UNAVAILABLE",
+    "hadron_independence_proved": false,
+    "hadron_independence_required": true,
+    "inference_reachable": false,
+    "ir_regulator": "C33.IR.COMMON",
+    "light_front_convention_id": "C35.LF.CONVENTION.SQRT2.v1",
+    "mode_collection_status": "EMPTY_NOT_ZERO",
+    "modified_delta_source_sha256": "dda565928e2a52997da094a156b286b31741184e47398d2efaa801a9a97e573d",
+    "object_identity": "C35.GAUGE.PLAN.SELECTION.v1",
+    "object_type": "GaugePlanSelection",
+    "parent_c34_completion_commit": "6bdb44be2afc79e817f69ce0e35813da8a394db7",
+    "parent_c34_descendant_root_id": "C34_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ONE_LOOP_DESCENDANT",
+    "parent_c34_implementation_report_sha256": "aa66b448518dd493ae237822712c15ea160a73aa9cc5257df59fb83722f7ebe1",
+    "parent_c34_requirement_coverage_sha256": "0a94dfd213bd67ea6f4da498ff0095f38136d5a68c89b0c0ae3d30febb610d5e",
+    "parent_soft_root_id": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+    "production_reachable": false,
+    "rapidity_regulator": "C33.MODIFIED.DELTA",
+    "real_coordinate_chart_id": "C35.REAL.CHART.KAPPA_Y_PHI.v1",
+    "scope": "C35/S0C",
+    "state_independence_proved": false,
+    "state_independence_required": true,
+    "uv_regulator": "C33.UV.FB",
+    "virtual_coordinate_chart_id": "C35.VIRTUAL.CHART.KPLUS_KMINUS_KX_KY.v1",
+    "wilson_segment_status": "EMPTY_NOT_ZERO"
+  },
+  "candidates": [
+    {
+      "blockers": [
+        "NO_FINITE_CELL_BRST_KREIN_ACTION_OR_METRIC",
+        "MODIFIED_DELTA_WILSON_LINES_LACK_ORIGINAL_GAUGE_PROPERTIES_AT_FINITE_DELTA",
+        "NO_ZERO_MODE_OR_TRANSVERSE_BOUNDARY_COMPLETION"
+      ],
+      "coefficient_execution_allowed": false,
+      "gauge_complete_at_finite_regulator": false,
+      "kind": "S0C-COVARIANT-KREIN",
+      "plan_id": "C35.GAUGE.CANDIDATE.COVARIANT_KREIN",
+      "regulator_identical": false,
+      "source_authority": [
+        "ARXIV:1511.05590v2:p4"
+      ],
+      "supported": false
+    },
+    {
+      "blockers": [
+        "NO_INSTANTANEOUS_GLUON_KERNEL",
+        "NO_CONSTRAINED_ZERO_MODE_OR_RESIDUAL_GAUGE_PRESCRIPTION",
+        "NO_PROVED_MAP_TO_COVARIANT_MODIFIED_DELTA_SOFT_FUNCTION"
+      ],
+      "coefficient_execution_allowed": false,
+      "gauge_complete_at_finite_regulator": false,
+      "kind": "S0C-LIGHT_FRONT-PHYSICAL",
+      "plan_id": "C35.GAUGE.CANDIDATE.LIGHT_FRONT_PHYSICAL",
+      "regulator_identical": false,
+      "source_authority": [
+        "ARXIV:1612.07740v1:LIGHT_FRONT_COMPARISON_ONLY"
+      ],
+      "supported": false
+    },
+    {
+      "blockers": [
+        "EUCLIDEAN_SPACELIKE_OPERATOR_NOT_LIGHTLIKE_MINKOWSKI_MODIFIED_DELTA",
+        "NO_ENDPOINT_OR_FINITE_REGULATOR_CONVERSION"
+      ],
+      "coefficient_execution_allowed": false,
+      "gauge_complete_at_finite_regulator": false,
+      "kind": "S0C-AUXILIARY-EIKONAL",
+      "plan_id": "C35.GAUGE.CANDIDATE.AUXILIARY_EIKONAL",
+      "regulator_identical": false,
+      "source_authority": [
+        "ARXIV:2312.04315v3:AUXILIARY_METHOD_ONLY"
+      ],
+      "supported": false
+    },
+    {
+      "blockers": [
+        "NO_SUPPORTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "coefficient_execution_allowed": false,
+      "gauge_complete_at_finite_regulator": false,
+      "kind": "S0C-UNAVAILABLE",
+      "plan_id": "C35.GAUGE.CANDIDATE.UNAVAILABLE",
+      "regulator_identical": true,
+      "source_authority": [
+        "C35_SOURCE_AUDIT"
+      ],
+      "supported": true
+    }
+  ],
+  "coefficient_attempted": false,
+  "content_hash": "dbfb6613f3a3cde9df4ef15561e4c579cda5a2229c92f994c295f56a98f3413f",
+  "exact_next_package": "C36/O4 \u2014 replacement regulator architecture for the microscopic TMD soft root",
+  "finite_delta_gauge_source_finding": "MODIFIED_DELTA_WILSON_LINES_DO_NOT_HAVE_ORIGINAL_GAUGE_PROPERTIES_AT_FINITE_DELTA",
+  "frozen_before_coefficient": true,
+  "outcome_branch": "G",
+  "primary_no_go": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "schema_version": "1.0.0",
+  "selected": "S0C-UNAVAILABLE",
+  "selection_id": "C35.GAUGE.PLAN.SELECTION.v1"
+}

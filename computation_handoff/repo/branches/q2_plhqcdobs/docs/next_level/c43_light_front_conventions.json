@@ -1,0 +1,35 @@
+{
+  "conventions": {
+    "D": "D_mu=partial_mu+i g A_mu^a T^a; F=partial A-partial A+g f A A",
+    "color": "T^a=lambda^a/2; Tr(Ta Tb)=delta_ab/2; C_F=4/3",
+    "coordinates": "x^plus=(x^0+x^3)/sqrt(2), x^minus=(x^0-x^3)/sqrt(2), x^plus is time",
+    "derivatives": "partial^+=partial_-=d/dx^-; partial^-=partial_+=d/dx^+",
+    "gamma": "gamma^plus=(gamma^0+gamma^3)/sqrt(2); Lambda_plus=gamma^- gamma^+/2",
+    "gauge_condition": "n.A=A^+=A_-=0",
+    "metric": "g=diag(1,-1,-1,-1); a.b=a+ b- + a- b+ - aT.bT",
+    "n": {
+      "minus": 1,
+      "plus": 0,
+      "transverse": [
+        0,
+        0
+      ]
+    },
+    "nbar": {
+      "minus": 0,
+      "plus": 1,
+      "transverse": [
+        0,
+        0
+      ]
+    }
+  },
+  "machine_checks": {
+    "n2": 0,
+    "n_dot_nbar": 1,
+    "nbar2": 0,
+    "v2_formula": "2 v+ v- - vT^2"
+  },
+  "status": "VALIDATED",
+  "symbolic_hash": "98df54e12f6351762f757b6bca460a755ecce3a2e90cbefee7f7925d2f57f943"
+}

@@ -1,0 +1,32 @@
+{
+  "count": 2,
+  "represented_as_zero_matrix": false,
+  "root": "af23a5587f7df42fe7dd35dd5c777224a2c1236bc96c406617f0fda63551b7b2",
+  "rows": [
+    {
+      "P0_Q0_scope": "P0 residual; Q0 nonzero modes separate",
+      "availability": "TYPED_SOURCE_INTERFACE",
+      "classification": "P0_ZERO_MODE_INTERFACE",
+      "count_once_owner": "C130_BOUNDARY_NONMATRIX_QGG",
+      "cut_holonomy_relation": "C183/C130 boundary relation",
+      "future_1PI_treatment": "symbolic boundary/interface term; not local matrix",
+      "interface_id": "C130-P0-ZERO-MODE",
+      "matrix_status": "NONMATRIX",
+      "owner_id": "C130_BOUNDARY_NONMATRIX_QGG",
+      "source_target": "q<->qgg metadata"
+    },
+    {
+      "P0_Q0_scope": "P0 residual; Q0 unchanged",
+      "availability": "TYPED_SOURCE_INTERFACE",
+      "classification": "RESIDUAL_GAUGE_INTERFACE",
+      "count_once_owner": "C130_BOUNDARY_NONMATRIX_QGG",
+      "cut_holonomy_relation": "C182/C183 conditional",
+      "future_1PI_treatment": "not additive zero",
+      "interface_id": "C130-RESIDUAL-BOUNDARY",
+      "matrix_status": "NONMATRIX",
+      "owner_id": "C130_BOUNDARY_NONMATRIX_QGG",
+      "source_target": "q<->qgg metadata"
+    }
+  ],
+  "schema": "C187-ZERO-BOUNDARY-V1"
+}

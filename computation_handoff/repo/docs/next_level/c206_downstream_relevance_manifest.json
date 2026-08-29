@@ -1,0 +1,103 @@
+{
+  "schema": "C206-DOWNSTREAM-RELEVANCE-MANIFEST-V1",
+  "artifact": "downstream_relevance_manifest",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C206-REL-K9",
+        "resolution": "K9",
+        "Hamiltonian_relevant": "requires C197-ST-9 target conditions",
+        "proven_irrelevant": [],
+        "observable_relevant": "unresolved until target/physical input",
+        "target_sensitive": [
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "selection": false
+      },
+      {
+        "record_id": "C206-REL-K11",
+        "resolution": "K11",
+        "Hamiltonian_relevant": "requires C197-ST-9 target conditions",
+        "proven_irrelevant": [],
+        "observable_relevant": "unresolved until target/physical input",
+        "target_sensitive": [
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "selection": false
+      },
+      {
+        "record_id": "C206-REL-K13",
+        "resolution": "K13",
+        "Hamiltonian_relevant": "requires C197-ST-9 target conditions",
+        "proven_irrelevant": [],
+        "observable_relevant": "unresolved until target/physical input",
+        "target_sensitive": [
+          "C151_COUNTERTERM_DIRECTION_2",
+          "C151_COUNTERTERM_DIRECTION_3",
+          "C151_COUNTERTERM_DIRECTION_4",
+          "C151_COUNTERTERM_DIRECTION_5",
+          "C151_COUNTERTERM_DIRECTION_6",
+          "C151_NULL_COORDINATE_1",
+          "C151_NULL_COORDINATE_2",
+          "C151_NULL_COORDINATE_3",
+          "C151_NULL_COORDINATE_4",
+          "C151_NULL_COORDINATE_5",
+          "C151_NULL_COORDINATE_6",
+          "C151_NULL_COORDINATE_7",
+          "C151_NULL_COORDINATE_8",
+          "C151_NULL_COORDINATE_9"
+        ],
+        "selection": false
+      }
+    ],
+    "count": 3,
+    "root": "4b78f4af71b9230f9bf199718fc9327867da31213ca38a75ae48eb97214cd911"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "evaluator": "deuteron_wigner.matching.m3q.evaluate_qualification",
+  "physical_additional_gates": [
+    "physical_cs_covariance",
+    "physical_large_b_covariance",
+    "physical_external_inputs",
+    "physical_joint_covariance"
+  ],
+  "returns_all_failures": true,
+  "schema_version": "1.0.0",
+  "source_additional_gates": [
+    "exact_source_expression",
+    "authoritative_ancillary",
+    "source_domain",
+    "source_boundary",
+    "source_uncertainty"
+  ],
+  "validation_gates": [
+    "operator_identity",
+    "c20_matching",
+    "c21_evolution",
+    "twist_classification",
+    "validation_coefficient",
+    "collinear_operator",
+    "validation_collinear_evolution",
+    "gamma5",
+    "threshold",
+    "rank",
+    "route_ab",
+    "validation_cs_kernel",
+    "validation_large_b",
+    "nuclear_operator",
+    "scheme_compatible",
+    "missing_terms_explicit",
+    "accuracy_complete",
+    "uncertainty_complete"
+  ]
+}

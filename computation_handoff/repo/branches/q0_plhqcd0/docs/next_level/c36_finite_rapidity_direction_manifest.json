@@ -1,0 +1,50 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "c67aa3db6cbe50e41e32329033b1fe281ac0a3e9a85a0e789f5ba7b3a7716abb",
+  "dot_product": 3.7621956910836314,
+  "invariant": {
+    "definition": "rho=(2 v.vbar)^2/(v^2 vbar^2), with the sign convention and normalization retained from JMY",
+    "invariant_id": "C36.RHO.COLLINS.JMY",
+    "rescaling_invariant": true,
+    "source_id": "ARXIV:hep-ph/0404183v1",
+    "value": 56.61646567203297
+  },
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "source_convention": "ARXIV:hep-ph/0404183v1",
+  "v": {
+    "components": [
+      1.1752011936438014,
+      0.0,
+      0.0,
+      1.5430806348152437
+    ],
+    "direction_id": "C36.V.FUTURE",
+    "finite": true,
+    "norm_squared": -1.0,
+    "orientation": "future",
+    "rapidity_parameter": 1.0
+  },
+  "vbar": {
+    "components": [
+      1.1752011936438014,
+      0.0,
+      0.0,
+      -1.5430806348152437
+    ],
+    "direction_id": "C36.VBAR.PAST",
+    "finite": true,
+    "norm_squared": -1.0,
+    "orientation": "past",
+    "rapidity_parameter": -1.0
+  },
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

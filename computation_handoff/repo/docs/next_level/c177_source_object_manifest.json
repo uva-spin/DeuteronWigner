@@ -1,0 +1,128 @@
+{
+  "independent_transcription_check": true,
+  "root": "ec08a201d46b8adf9f648418e77c29adb73480854abe43380c655435dcd748db",
+  "rows": [
+    {
+      "anchors": [
+        "must be a pure gauge",
+        "since the field strength vanishes",
+        "leading term in the perturbative expansion"
+      ],
+      "bbox": "PDF page 12 equation block; normalized bbox recorded by rendered-page holdout",
+      "expression": "A_\\\\alpha(\\\\xi_-=\\\\infty,\\\\xi_+=0,\\\\boldsymbol{\\\\xi})=\\\\boldsymbol{\\\\nabla}_\\\\alpha\\\\phi(\\\\boldsymbol{\\\\xi})",
+      "locator": "Eq. (38), TeX label PureGauge, text.tex:802-818",
+      "pdf_page": 12,
+      "printed_page": 11,
+      "role": "linearized pure-gauge boundary statement",
+      "scope": "small contractable gauge transformations; leading perturbative order only; not a full non-Abelian theorem",
+      "section": "3.2 Light-cone gauge link",
+      "source_id": "BJY-HEP-PH-0208038V2",
+      "source_object_id": "BJY-PURE-GAUGE-EQ38"
+    },
+    {
+      "anchors": [
+        "forms a gauge link once resummed to all orders",
+        "P exp",
+        "A(\\infty,\\boldsymbol{\\xi})"
+      ],
+      "bbox": "PDF page 13 equation block; normalized bbox recorded by rendered-page holdout",
+      "expression": "[\\\\infty,\\\\boldsymbol{\\\\infty};\\\\infty,\\\\boldsymbol{0}]=P\\\\exp\\\\left(ig\\\\int_0^\\\\infty d\\\\boldsymbol{\\\\xi}\\\\cdot\\\\boldsymbol{A}(\\\\infty,\\\\boldsymbol{\\\\xi})\\\\right)",
+      "locator": "Eq. (48), TeX label DIStransverseLink, text.tex:951-960",
+      "pdf_page": 13,
+      "printed_page": 12,
+      "role": "direct future transverse half-link",
+      "scope": "DIS/future source orientation; continuum light-cone infinity",
+      "section": "3.2 Light-cone gauge link",
+      "source_id": "BJY-HEP-PH-0208038V2",
+      "source_object_id": "BJY-DIS-FUTURE-HALF-LINK-EQ48"
+    },
+    {
+      "anchors": [
+        "restoring the light-cone gauge link",
+        "complete result for the amplitude",
+        "shown in Fig. 2"
+      ],
+      "bbox": "PDF page 14 equation block; normalized bbox recorded by rendered-page holdout",
+      "expression": "[\\\\infty,\\\\boldsymbol{\\\\infty};\\\\xi_-,\\\\boldsymbol{\\\\xi}]_C\\\\equiv[\\\\infty,\\\\boldsymbol{\\\\infty};\\\\infty,\\\\boldsymbol{\\\\xi}][\\\\infty,\\\\boldsymbol{\\\\xi};\\\\xi_-,\\\\boldsymbol{\\\\xi}]",
+      "locator": "Eq. (50), TeX label FullAmplitude, text.tex:963-970 and rendered equation",
+      "pdf_page": 14,
+      "printed_page": 13,
+      "role": "future half-link composition",
+      "scope": "ordered longitudinal-then-transverse composition as source-defined",
+      "section": "3.2 Light-cone gauge link",
+      "source_id": "BJY-HEP-PH-0208038V2",
+      "source_object_id": "BJY-DIS-COMPOSITION-EQ50"
+    },
+    {
+      "anchors": [
+        "unitarity implies a partial cancellation",
+        "accepted in the literature",
+        "additional transverse link"
+      ],
+      "bbox": "PDF page 14 equation block; normalized bbox recorded by rendered-page holdout",
+      "expression": "[\\\\infty,\\\\boldsymbol{\\\\infty};\\\\xi_-,\\\\boldsymbol{\\\\xi}]_C^\\\\dagger[\\\\infty,\\\\boldsymbol{\\\\infty};0,\\\\boldsymbol{0}]_C=[\\\\infty,\\\\boldsymbol{\\\\xi};\\\\xi_-,\\\\boldsymbol{\\\\xi}]^\\\\dagger[\\\\infty,\\\\boldsymbol{\\\\xi};\\\\infty,\\\\boldsymbol{0}][\\\\infty,\\\\boldsymbol{0};0,\\\\boldsymbol{0}]",
+      "locator": "Eq. (52), text.tex:1010-1021",
+      "pdf_page": 14,
+      "printed_page": 13,
+      "role": "non-Abelian half-link cancellation/reduced connector",
+      "scope": "ordered product; no Abelian commutation",
+      "section": "3.2 Light-cone gauge link",
+      "source_id": "BJY-HEP-PH-0208038V2",
+      "source_object_id": "BJY-DIS-REDUCED-CONNECTOR-EQ52"
+    },
+    {
+      "anchors": [
+        "initial state interactions",
+        "replaced by xi_-=-infinity",
+        "antisymmetric boundary condition",
+        "PV"
+      ],
+      "bbox": "PDF page 27 equation block; normalized bbox recorded by rendered-page holdout",
+      "expression": "[-\\\\infty,\\\\boldsymbol{\\\\infty};-\\\\infty,\\\\boldsymbol{0}]_{PV}=P\\\\exp\\\\left(-ig\\\\int_0^\\\\infty d\\\\boldsymbol{\\\\xi}\\\\cdot\\\\boldsymbol{A}(\\\\infty,\\\\boldsymbol{\\\\xi})\\\\right)",
+      "locator": "Eqs. (113)-(115), TeX labels DYtransversePDF, DYtransverseLinkPV, text.tex:2048-2097",
+      "pdf_page": 27,
+      "printed_page": 26,
+      "role": "past/DY orientation and antisymmetric PV relation",
+      "scope": "future DIS and past DY remain distinct; A(-infinity)=-A(+infinity) in source PV scope",
+      "section": "6 DY versus DIS: universality of parton distributions",
+      "source_id": "BJY-HEP-PH-0208038V2",
+      "source_object_id": "BJY-DY-PAST-ORIENTATION-EQ113-115"
+    },
+    {
+      "anchors": [
+        "modify the eikonal phase",
+        "path in the transverse direction is largely arbitrary",
+        "same phase factor"
+      ],
+      "bbox": "PDF page 7 equation block; normalized bbox recorded by rendered-page holdout",
+      "expression": "L_0(\\\\infty,0)\\\\rightarrow\\\\Delta L=P\\\\exp\\\\left(-ig\\\\int_0^\\\\infty d\\\\xi_\\\\perp\\\\cdot A_\\\\perp(\\\\xi^-=\\\\infty,\\\\xi_\\\\perp)\\\\right)",
+      "locator": "Eq. (16), official ssa.tex:673-683",
+      "pdf_page": 7,
+      "printed_page": 7,
+      "role": "transverse path class with source-qualified shape freedom",
+      "scope": "source compares two gauges; does not define a periodic finite-cell path",
+      "section": "III. Light-cone gauge",
+      "source_id": "JY-HEP-PH-0206057V2",
+      "source_object_id": "JY-TRANSVERSE-LINK-EQ16"
+    },
+    {
+      "anchors": [
+        "class of non-singular gauges",
+        "gauge link along v",
+        "D^mu=partial^mu+igA^mu"
+      ],
+      "bbox": "PDF page 4 source comparison object; normalized bbox recorded by rendered-page holdout",
+      "expression": "\\\\mathcal L_v(\\\\infty;\\\\xi)=\\\\exp\\\\left(-ig\\\\int_0^\\\\infty d\\\\lambda\\,v\\\\cdot A(\\\\lambda v+\\\\xi)\\\\right)",
+      "locator": "Eq. (2), TeX label tmdpd:218-240; PDF page 4 gauge-link definition",
+      "pdf_page": 4,
+      "printed_page": 4,
+      "role": "off-light-cone TMD staple comparison only",
+      "scope": "not promoted to C43 residual link",
+      "section": "II. Transverse-momentum dependent parton distribution",
+      "source_id": "JMY-HEP-PH-0404183V1",
+      "source_object_id": "JMY-OFFLIGHTCONE-STAPLE-EQ2"
+    }
+  ],
+  "schema": "C177-SOURCE-OBJECT-V1",
+  "visual_verification": true
+}

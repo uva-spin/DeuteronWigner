@@ -1,0 +1,10 @@
+{
+  "encoding": "canonical JSON and gzip JSONL",
+  "forbids": [
+    "pickle",
+    "symlink",
+    "unindexed file",
+    "mutable public record"
+  ],
+  "numpy_loads": "none"
+}

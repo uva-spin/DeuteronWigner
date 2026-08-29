@@ -1,0 +1,83 @@
+{
+  "schema": "C206-ST-REPLACEMENT-CONTRACT-V1",
+  "artifact": "st_replacement_contract",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "replacement_id": "C206-ST8-K9",
+        "old_row_id": "C198-BLOCKED-C197-ST-8",
+        "new_row_id": "C206-AFFINE-ST8-K9",
+        "family_id": "C206-FAMILY-K9-GENERIC",
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "solution_family_dimension": 14,
+        "quotient_dimension": "target-dependent",
+        "compatibility": "EXACT_ZERO",
+        "unrelated_rows_changed": 0,
+        "remaining": [
+          "C197-ST-9",
+          "C197-ST-10"
+        ]
+      },
+      {
+        "replacement_id": "C206-ST8-K11",
+        "old_row_id": "C198-BLOCKED-C197-ST-8",
+        "new_row_id": "C206-AFFINE-ST8-K11",
+        "family_id": "C206-FAMILY-K11-GENERIC",
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "solution_family_dimension": 14,
+        "quotient_dimension": "target-dependent",
+        "compatibility": "EXACT_ZERO",
+        "unrelated_rows_changed": 0,
+        "remaining": [
+          "C197-ST-9",
+          "C197-ST-10"
+        ]
+      },
+      {
+        "replacement_id": "C206-ST8-K13",
+        "old_row_id": "C198-BLOCKED-C197-ST-8",
+        "new_row_id": "C206-AFFINE-ST8-K13",
+        "family_id": "C206-FAMILY-K13-GENERIC",
+        "rank": 1,
+        "nullity": 14,
+        "left_nullity": 6,
+        "solution_family_dimension": 14,
+        "quotient_dimension": "target-dependent",
+        "compatibility": "EXACT_ZERO",
+        "unrelated_rows_changed": 0,
+        "remaining": [
+          "C197-ST-9",
+          "C197-ST-10"
+        ]
+      }
+    ],
+    "count": 3,
+    "unrelated_rows_changed": 0,
+    "root": "c205ba578601909763bf67c3b75d3ae15b73094999509c1f9e99c505bcdafc68"
+  }
+}

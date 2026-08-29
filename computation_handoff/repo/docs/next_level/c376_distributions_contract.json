@@ -1,0 +1,23 @@
+{
+  "package_root": "9d5e7a17c6f50488711dad00e293ae549a0cb4d6794e7ca3addb193f60ac0b37",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECUTABLEAST1-C",
+  "record": {
+    "delta": {
+      "coefficient": 1,
+      "op": "delta"
+    },
+    "plus": {
+      "coefficient": 1,
+      "kernel_id": "1/(1-x)",
+      "op": "plus"
+    },
+    "root": "7aa6c239d9f29ed43fea878e1ef2648e4ff73f4f7523e1030fc266212c86e7e8",
+    "semantics": {
+      "delta": "phi(1)",
+      "plus": "integral_0^1 dx [phi(x)-phi(1)]/(1-x)"
+    }
+  },
+  "status": "C376_EXECUTABLE_SCALAR_DISTRIBUTION_AST_DERIVED_PARAMETER_REDUCTION_REQUIRED",
+  "validation": "BOUND"
+}

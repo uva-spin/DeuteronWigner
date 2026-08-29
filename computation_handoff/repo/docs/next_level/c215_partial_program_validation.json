@@ -1,0 +1,408 @@
+{
+  "schema": "C215-PARTIAL-PROGRAM-VALIDATION-V1",
+  "artifact": "partial_program_validation",
+  "package_root": "fff748f74feacb2114b52aa3fa4b0bd39ec9e18d9ebec7b5f0923501aeb7f3e0",
+  "status": "C215_C214_SIX_C168_CAPSULES_RECONCILED_SAFE_PARTIAL_PROGRAMS_READY_RI_SMOM_QUARK_ADAPTER_FIRST",
+  "plan": "PHYSADAPTERCALC1-B",
+  "physical_values": false,
+  "executable_adapters": 0,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "program_id": "C215-PARTIAL-1",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-RI_SMOM-2",
+        "quantity": "QUARK_FIELD",
+        "scheme": "RI_SMOM",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_CAPSULE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C43_SUBSTRATE"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_TARGET_PROJECTOR"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_COMMON_IR"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "CHECK_GAUGE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_PV_Q0_BOUNDARY"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HOLONOMY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "PROJECT"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "SERIES_COEFFICIENT"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SAFE_RATIO"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "PROPAGATE_UNAVAILABLE"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_PARTIAL_ADAPTER"
+          }
+        ],
+        "K_resolutions": [
+          "K9",
+          "K11",
+          "K13"
+        ],
+        "executable": false,
+        "terminal": "RETURN_PARTIAL_ADAPTER_WITH_UNAVAILABLE_COEFFICIENT",
+        "root": "b97bf7685abfe61a9cef7057550cb556e9fdd28f52780b8a7aeb574ac9cdf547"
+      },
+      {
+        "program_id": "C215-PARTIAL-2",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+        "quantity": "SIGNED_QUARK_MASS",
+        "scheme": "RI_SMOM",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_CAPSULE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C43_SUBSTRATE"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_TARGET_PROJECTOR"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_COMMON_IR"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "CHECK_GAUGE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_PV_Q0_BOUNDARY"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HOLONOMY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "PROJECT"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "SERIES_COEFFICIENT"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SAFE_RATIO"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "PROPAGATE_UNAVAILABLE"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_PARTIAL_ADAPTER"
+          }
+        ],
+        "K_resolutions": [
+          "K9",
+          "K11",
+          "K13"
+        ],
+        "executable": false,
+        "terminal": "RETURN_PARTIAL_ADAPTER_WITH_UNAVAILABLE_COEFFICIENT",
+        "root": "25de3f1944c184a90769130842dfcf07d3068e050e8e5aff241aeb5904ee6aa7"
+      },
+      {
+        "program_id": "C215-PARTIAL-3",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QUARK_FIELD-MOMQ-2",
+        "quantity": "QUARK_FIELD",
+        "scheme": "MOMQ",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_CAPSULE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C43_SUBSTRATE"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_TARGET_PROJECTOR"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_COMMON_IR"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "CHECK_GAUGE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_PV_Q0_BOUNDARY"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HOLONOMY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "PROJECT"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "SERIES_COEFFICIENT"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SAFE_RATIO"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "PROPAGATE_UNAVAILABLE"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_PARTIAL_ADAPTER"
+          }
+        ],
+        "K_resolutions": [
+          "K9",
+          "K11",
+          "K13"
+        ],
+        "executable": false,
+        "terminal": "RETURN_PARTIAL_ADAPTER_WITH_UNAVAILABLE_COEFFICIENT",
+        "root": "beae3ba6466ad3979c10f019e124688b7e30e7615c51c11102081de74062cd71"
+      },
+      {
+        "program_id": "C215-PARTIAL-4",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "quantity": "TRANSVERSE_GLUON_FIELD",
+        "scheme": "MOMQ",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_CAPSULE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C43_SUBSTRATE"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_TARGET_PROJECTOR"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_COMMON_IR"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "CHECK_GAUGE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_PV_Q0_BOUNDARY"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HOLONOMY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "PROJECT"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "SERIES_COEFFICIENT"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SAFE_RATIO"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "PROPAGATE_UNAVAILABLE"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_PARTIAL_ADAPTER"
+          }
+        ],
+        "K_resolutions": [
+          "K9",
+          "K11",
+          "K13"
+        ],
+        "executable": false,
+        "terminal": "RETURN_PARTIAL_ADAPTER_WITH_UNAVAILABLE_COEFFICIENT",
+        "root": "7dc94d49b3c7695bfe7576a6cb00cd2180b0e88b5cd4090ead7b1bbfc750c060"
+      },
+      {
+        "program_id": "C215-PARTIAL-5",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "quantity": "qg_VERTEX_DRESSING",
+        "scheme": "MOMQ",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_CAPSULE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C43_SUBSTRATE"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_TARGET_PROJECTOR"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_COMMON_IR"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "CHECK_GAUGE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_PV_Q0_BOUNDARY"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HOLONOMY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "PROJECT"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "SERIES_COEFFICIENT"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SAFE_RATIO"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "PROPAGATE_UNAVAILABLE"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_PARTIAL_ADAPTER"
+          }
+        ],
+        "K_resolutions": [
+          "K9",
+          "K11",
+          "K13"
+        ],
+        "executable": false,
+        "terminal": "RETURN_PARTIAL_ADAPTER_WITH_UNAVAILABLE_COEFFICIENT",
+        "root": "f0230563dd772b553f2785fbbba181169bdae7a09e2a1606da206c6ca7724ab7"
+      },
+      {
+        "program_id": "C215-PARTIAL-6",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "quantity": "QCD_COUPLING",
+        "scheme": "MOMQ",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "LOAD_CAPSULE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "LOAD_C43_SUBSTRATE"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "LOAD_TARGET_PROJECTOR"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_COMMON_IR"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "CHECK_GAUGE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_PV_Q0_BOUNDARY"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HOLONOMY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "PROJECT"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "SERIES_COEFFICIENT"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "SAFE_RATIO"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "PROPAGATE_UNAVAILABLE"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_PARTIAL_ADAPTER"
+          }
+        ],
+        "K_resolutions": [
+          "K9",
+          "K11",
+          "K13"
+        ],
+        "executable": false,
+        "terminal": "RETURN_PARTIAL_ADAPTER_WITH_UNAVAILABLE_COEFFICIENT",
+        "root": "2728bddcb2e3c6bb0ac2ec6e600b60775dba1ca1521bf0605f14c2135fd05a5d"
+      }
+    ],
+    "count": 6,
+    "partial_programs": 6,
+    "executable_programs": 0,
+    "root": "af834e2718216514e94f0e813a478ebc2e1c9c7d93cec1603dcdc571a60955c1"
+  }
+}

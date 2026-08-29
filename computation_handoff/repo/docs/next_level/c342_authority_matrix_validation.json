@@ -1,0 +1,72 @@
+{
+  "package_root": "272dbd3d0ee60fda660f310e14a5d2da2cd9c31a59976109c4be003b58c3ac2e",
+  "physical": false,
+  "plan": "RIMASSC43PHYSBIND2-C",
+  "record": {
+    "C43_ready_count": 1,
+    "available_count": 5,
+    "capsule_complete": false,
+    "root": "0e863062ef70b2b53575022ba57e942d055cfd0f639766800e5ad87c138c95fd",
+    "rows": [
+      {
+        "C43_ready": false,
+        "authority": "C321/C154 PDG2026 MSbar 2GeV Nf4",
+        "available": true,
+        "deficit": "run and match to selected C43 renormalization scale/scheme",
+        "object": "light_quark_mass",
+        "physical_standard_coordinate": true
+      },
+      {
+        "C43_ready": false,
+        "authority": "C321/C154 PDG2026 MSbar mZ Nf5",
+        "available": true,
+        "deficit": "run, threshold-match, and normalize to selected C43 scale",
+        "object": "alpha_s",
+        "physical_standard_coordinate": true
+      },
+      {
+        "C43_ready": false,
+        "authority": null,
+        "available": false,
+        "deficit": "observable-qualified finite-volume/continuum sequence and kinematics",
+        "object": "longitudinal_scale",
+        "physical_standard_coordinate": false
+      },
+      {
+        "C43_ready": false,
+        "authority": "C322 BPP/Heinzl source audit",
+        "available": true,
+        "deficit": "admissible regulator conventions do not select a physical ensemble",
+        "object": "boundary_classes",
+        "physical_standard_coordinate": false
+      },
+      {
+        "C43_ready": true,
+        "authority": "C319 determinant-domain classification",
+        "available": true,
+        "binding": "not applicable by domain; not numeric zero",
+        "deficit": null,
+        "object": "P0",
+        "physical_standard_coordinate": false
+      },
+      {
+        "C43_ready": false,
+        "authority": "C323 JMY SIDIS plus BJY/Gao closure",
+        "available": true,
+        "deficit": "kinematics, rapidity/renormalization scales, finite-length matching parameters",
+        "object": "Wilson_operator_owner",
+        "physical_standard_coordinate": true
+      },
+      {
+        "C43_ready": false,
+        "authority": null,
+        "available": false,
+        "deficit": "sequence points, covariance, acceptance tolerance, normalized weights",
+        "object": "physical_ensemble",
+        "physical_standard_coordinate": false
+      }
+    ]
+  },
+  "status": "C342_PHYSICAL_INPUTS_COMPONENTWISE_AUDITED_OBSERVABLE_KINEMATICS_ENSEMBLE_MATCHING_MISSING",
+  "validation": "PASS"
+}

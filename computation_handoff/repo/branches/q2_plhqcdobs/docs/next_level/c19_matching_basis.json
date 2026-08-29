@@ -1,0 +1,47 @@
+{
+  "executable": 492,
+  "lf_dimension": 540,
+  "missing": 48,
+  "missing_statuses": [
+    "REQUIRES_MULTIPARTON_OPERATOR",
+    "REQUIRES_HIGHER_FOCK_SUPPORT",
+    "UNAVAILABLE_AT_THIS_MATCHING_ORDER"
+  ],
+  "named_tmd_parameters": 0,
+  "nuclear_blocks": [
+    "NN",
+    "NNPI",
+    "DELTADELTA",
+    "SIX_QUARK",
+    "TRANSITION",
+    "COHERENT"
+  ],
+  "polarizations": [
+    "U",
+    "L",
+    "T",
+    "LL",
+    "LT",
+    "TT"
+  ],
+  "qcd_dimension": 540,
+  "ranks": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "schema_version": "1.0.0",
+  "species": [
+    "u",
+    "d",
+    "ubar",
+    "dbar",
+    "g"
+  ],
+  "targets": [
+    "p",
+    "n",
+    "D"
+  ]
+}

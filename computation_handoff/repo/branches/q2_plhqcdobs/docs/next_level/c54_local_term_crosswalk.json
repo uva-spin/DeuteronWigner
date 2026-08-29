@@ -1,0 +1,79 @@
+{
+  "counts": {
+    "ABSENT_BLOCKING": 2,
+    "rows": 7
+  },
+  "rows": [
+    {
+      "C43_term_ID": "free_q/free_qg",
+      "C47_input": "free_functional",
+      "C54_block": "not assembled after earliest blocker",
+      "coupling_order": 0,
+      "identity_role": "propagating",
+      "projection_status": "DEFERRED_AFTER_EARLIEST_REQUIRED_BLOCKER",
+      "scope": "O(g_s^0)",
+      "source_status": "SOURCE_DERIVED_FUNCTIONAL"
+    },
+    {
+      "C43_term_ID": "canonical_qg",
+      "C47_input": "physical basis",
+      "C54_block": "C53 imported read-only only",
+      "coupling_order": 1,
+      "identity_role": "canonical",
+      "projection_status": "READ_ONLY_VERIFIED",
+      "scope": "O(g_s^1)",
+      "source_status": "SOURCE_DERIVED_EXECUTABLE"
+    },
+    {
+      "C43_term_ID": "instantaneous_fermion",
+      "C47_input": "PV/Q0 functional",
+      "C54_block": "none",
+      "coupling_order": 2,
+      "identity_role": "required partner",
+      "projection_status": "NO_FINITE_VOLUME_NORMAL_ORDERED_MATRIX_ELEMENT",
+      "scope": "REQUIRED_AT_O_G2",
+      "source_status": "ABSENT_BLOCKING"
+    },
+    {
+      "C43_term_ID": "instantaneous_current",
+      "C47_input": "PV/Q0 functional",
+      "C54_block": "none",
+      "coupling_order": 2,
+      "identity_role": "required partner",
+      "projection_status": "NO_FINITE_VOLUME_CURRENT_CONTRACTION",
+      "scope": "REQUIRED_AT_O_G2",
+      "source_status": "ABSENT_BLOCKING"
+    },
+    {
+      "C43_term_ID": "three_gluon",
+      "C47_input": "none",
+      "C54_block": "none",
+      "coupling_order": 1,
+      "identity_role": "unresolved scope",
+      "projection_status": "NO_OPERATOR_ORDERING_SCOPE_PROOF",
+      "scope": "OUTSIDE_SCOPE_BUT_RETAINED",
+      "source_status": "SOURCE_DERIVED_SYMBOLIC"
+    },
+    {
+      "C43_term_ID": "four_gluon",
+      "C47_input": "none",
+      "C54_block": "none",
+      "coupling_order": 2,
+      "identity_role": "unresolved scope",
+      "projection_status": "NO_OPERATOR_ORDERING_SCOPE_PROOF",
+      "scope": "OUTSIDE_SCOPE_BUT_RETAINED",
+      "source_status": "SOURCE_DERIVED_SYMBOLIC"
+    },
+    {
+      "C43_term_ID": "boundary_zero_mode",
+      "C47_input": "boundary_zero_mode_functional",
+      "C54_block": "none",
+      "coupling_order": 2,
+      "identity_role": "required partner",
+      "projection_status": "DEFERRED_AFTER_EARLIEST_REQUIRED_BLOCKER",
+      "scope": "local action",
+      "source_status": "SOURCE_DERIVED_FUNCTIONAL"
+    }
+  ],
+  "status": "C54_INSTANTANEOUS_FERMION_ASSEMBLY_INCOMPLETE"
+}

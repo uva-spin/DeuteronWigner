@@ -1,0 +1,42 @@
+{
+  "identity_default": false,
+  "mixed_records_rejected": true,
+  "parameterizations": [
+    "EXPLICIT_FUNDAMENTAL_SU3_MATRIX",
+    "CARTAN_WEYL_ALCOVE_PLUS_GLOBAL_FRAME",
+    "CENTER_SECTOR_ONLY",
+    "EXPLICIT_ADJOINT_WITH_FUNDAMENTAL_PREIMAGE_PROOF",
+    "TRANSVERSE_DEPENDENT_NONMATRIX_INTERFACE",
+    "SYMBOLIC_HOLONOMY_INTERFACE"
+  ],
+  "physical_selection": false,
+  "required": [
+    "schema",
+    "capsule_id",
+    "circle_id",
+    "cut_id",
+    "minus_frame_id",
+    "plus_frame_id",
+    "transition_id",
+    "holonomy_id",
+    "parameterization",
+    "fundamental_matrix",
+    "conjugacy_representative",
+    "global_frame",
+    "cartan_coordinates",
+    "center_sector",
+    "process_scope",
+    "future_past_PV",
+    "fundamental_boundary_condition",
+    "adjoint_boundary_condition",
+    "transverse_dependence",
+    "fixture",
+    "classification",
+    "physical_intent",
+    "no_default_semantics",
+    "provenance",
+    "signature"
+  ],
+  "root": "458052644f613b308740a9e985de7b96738663b02d65f0b418fb759c8d9cc8a9",
+  "schema": "PROJECT_PERIODIC_SU3_HOLONOMY_CAPSULE_V1"
+}

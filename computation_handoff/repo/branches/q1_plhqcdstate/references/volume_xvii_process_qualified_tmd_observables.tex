@@ -1,0 +1,1339 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F1}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XVII: Process-Qualified Microscopic TMD Observables, Rank-Resolved W+Y, and Factorization/Glauber Readiness},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XVII}
+\fancyhead[R]{\small\color{darkgray}Process qualification and rank-resolved W+Y}
+\fancyfoot[L]{\small\color{darkgray}1 August 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\QCD}{\mathrm{QCD}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\GPD}{\mathrm{GPD}}
+\newcommand{\PDF}{\mathrm{PDF}}
+\newcommand{\FF}{\mathrm{FF}}
+\newcommand{\EMT}{\mathrm{EMT}}
+\newcommand{\CS}{\mathrm{CS}}
+\newcommand{\DY}{\mathrm{DY}}
+\newcommand{\SIDIS}{\mathrm{SIDIS}}
+\newcommand{\DIS}{\mathrm{DIS}}
+\newcommand{\bM}{\bm b_{\mathrm{TMD}}}
+\newcommand{\kT}{\bm k_T}
+\newcommand{\qT}{\bm q_T}
+\newcommand{\PhT}{\bm P_{hT}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\otimesx}{\mathbin{\otimes_x}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\order}{\mathcal O}
+\newcommand{\FO}{\mathrm{FO}}
+\newcommand{\asy}{\mathrm{asy}}
+\newcommand{\powc}{\mathrm{pow}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XVII: Process-Qualified Microscopic TMD Observables,\\[2mm]
+Rank-Resolved \(W+Y\), and Factorization/Glauber Readiness}\\[4mm]
+\large Source-audited hard and fragmentation interfaces, spin-1 measurement maps,\\
+angular-harmonic matching, fixed-order recovery, and qualified observable release}
+\author{DeuteronWigner project}
+\date{1 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C20/M1 replaces analytic matching-coefficient oracles for ten supported twist-two blocks with source-recorded declared-order coefficients while preserving a 540-by-540 light-front/QCD operator identity map, 492 audited executable entries, and 48 explicitly unavailable entries.  Physical twist-three and naive-time-reversal-odd matching remains fail-closed.  C21/M2 is the running package intended to add source-audited anomalous dimensions, quark and gluon Collins--Soper kernel plans, heavy-flavor thresholds, and common rank-preserving multi-scale evolution.  The present volume defines the process layer that may consume those outputs only after their capability and accuracy manifests pass.  It does not assume that C21 has completed successfully and does not promote any validation-only object to production.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A scheme-qualified transverse-momentum-dependent distribution is not yet a process prediction.  A physical observable additionally requires a process-specific hard channel, a measurement and angular basis, compatible fragmentation or second-hadron functions, Wilson-link and color-flow maps, scale relations, a fixed-order reference, power-counting information, and a factorization/Glauber certificate.  These ingredients must be combined without erasing the microscopic member, spin-1 target channel, transverse rank, nuclear ancestry, future/past link direction, ordered gluon-link pair, or independent \(f^{abc}\)- and \(d^{abc}\)-type color identity developed in the preceding volumes.
+
+This volume defines a typed process compiler for color-singlet Drell--Yan, current-fragmentation semi-inclusive deep-inelastic scattering, inclusive tensor DIS, spectator-tagged spin-1 DIS, and carefully qualified gluon-sensitive channels.  The cross section is first decomposed into invariant spin-1 structure functions and irreducible azimuthal harmonics.  Each harmonic consumes only the TMD, fragmentation, hard, and soft operators permitted by its helicity and transverse-rank selection rules.  Drell--Yan and current-fragmentation SIDIS receive separate past- and future-pointing link maps.  Tagged target-fragmentation observables are represented by a distinct composite process record rather than forced into the current-fragmentation TMD formula.  Gluon-sensitive channels retain ordered links, independent \(f/d\) color sectors, process-specific soft functions, and explicit factorization or Glauber status; colored-final-state hadroproduction cannot consume universal separate-hadron TMDs where generalized factorization is known to fail.
+
+The observable is assembled harmonic by harmonic as \(W+Y\).  The \(Y\) term is the fixed-order result minus the same-order asymptotic expansion of the exact \(W\) term, with identical schemes, masses, kinematics, angular projectors, acceptance variables, and perturbative orders.  The microscopic boundary may not be retuned to repair an incomplete fixed-order remainder.  Accuracy is stored as an ingredient-level tuple whose bottleneck, not its best-known anomalous dimension, determines the released label.  The volume supplies process records, source-audited hard and fragmentation bundles, measurement and binning maps, factorization/Glauber certificates, rank-resolved \(W+Y\) objects, uncertainty and validation manifests, analytic benchmarks, deliberate failure tests, and a staged implementation program for C22/P0.  Passing these formal gates produces process-qualified validation observables, not a global extraction or a production release.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Scope, inputs, and nonclaims}
+\label{sec:scope}
+
+\subsection{Input object}
+
+The process layer consumes a scheme-qualified multi-scale member
+\begin{equation}
+ \mathfrak F_s(Q)=
+ \left(
+ \widetilde{\bm F}^{\QCD}_s(Q),
+ \mathfrak s_{\TMD},
+ \mathfrak A_s,
+ \mathfrak C_s,
+ \mathfrak N_s,
+ \mathfrak U_s
+ \right),
+ \label{eq:input-bundle}
+\end{equation}
+where \(s\) is one indivisible microscopic member and the auxiliary records contain the TMD scheme, accuracy, evolution capability, resolved nuclear graph, and separated uncertainty axes.  The process layer may not reconstruct this object from independently sampled marginal bands.
+
+For the spin-1 deuteron, the resolved ancestry remains
+\begin{equation}
+ \mathfrak N_D=
+ \{NN,NN\pi,\Delta\Delta,6q_{\rm cluster},6q_{\rm hidden},
+ \text{transition/interference},\text{coherent pilot}\}.
+ \label{eq:nuclear-ancestry}
+\end{equation}
+Process assembly may project or sum these components only after any component-specific hard, matching, and evolution obligations have been checked.
+
+\subsection{Output object}
+
+The output is a process-qualified observable bundle
+\begin{equation}
+ \mathfrak O_{\rm proc}=
+ \left(
+ \{\sigma_A\},
+ \mathfrak P,
+ \mathfrak W,
+ \mathfrak Y,
+ \mathfrak A_{\rm proc},
+ \mathfrak C_{\rm proc},
+ \mathfrak V_{\rm proc}
+ \right),
+ \label{eq:output-bundle}
+\end{equation}
+containing structure functions or asymmetries \(\sigma_A\), the process record, resummed and fixed-order pieces, accuracy and covariance manifests, and validation evidence.
+
+\subsection{Nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+\item that C21 has delivered a physical Collins--Soper kernel;
+\item that all 492 C20-matched entries are multi-scale evolvable;
+\item that the 48 unavailable reference-scale operators have become available;
+\item that twist-three Sivers, Boer--Mulders, or tri-gluon matching is complete;
+\item that one fixed-order code or hard factor supports every spin-1 harmonic;
+\item that integrating a SIDIS formula is a substitute for inclusive DIS coefficients;
+\item that current-fragmentation and target-fragmentation factorization are the same theorem;
+\item that a colored-final-state process has universal TMD factorization merely because a Wilson-link diagram can be drawn;
+\item that a validation-level process bundle is a global fit, physical extraction, or production result.
+\end{itemize}
+
+\section{Process identity and readiness}
+\label{sec:process-id}
+
+\begin{definition}[Process factorization record]
+A process record is
+\begin{equation}
+\begin{aligned}
+ \mathfrak P=\bigl(&
+ \text{process and external states},
+ \text{kinematic region},
+ \text{hard channel},
+ \text{measurement basis},\\
+ &\text{TMD/PDF/FF/operator basis},
+ \text{link map},
+ \text{color map},
+ \text{soft function},\\
+ &\text{scale relations},
+ \text{power counting},
+ \text{fixed-order reference},
+ \text{Glauber status},\\
+ &\text{factorization status},
+ \text{accuracy manifest},
+ \text{source provenance}
+ \bigr).
+\end{aligned}
+\label{eq:process-record}
+\end{equation}
+\end{definition}
+
+The allowed factorization statuses are
+\begin{equation}
+ \texttt{ESTABLISHED},\quad
+ \texttt{CONDITIONAL},\quad
+ \texttt{EXPLORATORY},\quad
+ \texttt{BROKEN},\quad
+ \texttt{UNASSESSED}.
+ \label{eq:factorization-status}
+\end{equation}
+A process marked \texttt{BROKEN} or \texttt{UNASSESSED} cannot consume a product of universal separate-hadron TMDs as an authoritative prediction.
+
+\begin{definition}[Ingredient readiness]
+For each requested structure function \(A\), readiness is the conjunction
+\begin{equation}
+ \cR_A^{\rm proc}=
+ \cR_A^{\rm boundary}
+ \wedge\cR_A^{\rm evol}
+ \wedge\cR_A^{\rm hard}
+ \wedge\cR_A^{\rm frag/partner}
+ \wedge\cR_A^{\rm link/color}
+ \wedge\cR_A^{\rm FO}
+ \wedge\cR_A^{\rm fact/Glauber}.
+ \label{eq:readiness-conjunction}
+\end{equation}
+\end{definition}
+A missing conjunct yields a structured unavailable result, not a numerical zero or a fallback formula.
+
+\begin{longtable}{L{0.18\textwidth}L{0.16\textwidth}L{0.22\textwidth}L{0.30\textwidth}}
+\toprule
+Process family & Initial status & Link/partner identity & Required qualification\\
+\midrule
+\endhead
+Color-singlet \(\DY\) & \texttt{ESTABLISHED} at leading power & past-pointing TMDs in the declared convention & hard factor, angular basis, FO reference, power domain, and rank-resolved \(Y\)\\
+Current-fragmentation \(\SIDIS\) & \texttt{ESTABLISHED} at leading power & future-pointing TMD PDF and compatible TMD FF & FF scheme, \(z_h\) Fourier scaling, hard factor, harmonic basis, FO reference\\
+Inclusive \(b_1\) / DIS & \texttt{ESTABLISHED} collinear & tensor PDFs and inclusive coefficients & tensor sign adapter, coefficient order, target-mass/higher-twist status\\
+Tagged spin-1 DIS & \texttt{CONDITIONAL} composite record & spectral/target-fragmentation kernel, not ordinary TMD FF & tagging kinematics, pole/FSI status, inclusive recovery, acceptance separation\\
+Heavy-quark pair or dijet in DIS & \texttt{CONDITIONAL} & gluon TMD plus process-specific soft/jet functions & hard and soft matrices, heavy-mass or jet definition, Glauber and power status\\
+Diffractive/small-\(x\) channels & \texttt{CONDITIONAL} or \texttt{EXPLORATORY} & diffractive or small-\(x\) TMD operators & distinct operator basis, rapidity scheme, saturation/diffraction assumptions\\
+Back-to-back colored hadroproduction & \texttt{BROKEN} for universal separate-hadron TMD product in known counterexamples & color-entangled multi-hadron soft structure & no authoritative universal-TMD product\\
+Quarkonium channels & \texttt{EXPLORATORY} unless theorem supplied & gluon links plus NRQCD or other production operators & production mechanism, color state, soft/Glauber and feed-down status\\
+\bottomrule
+\end{longtable}
+
+\section{Measurement geometry and spin-1 structure-function basis}
+\label{sec:measurement}
+
+\subsection{Measurement record}
+
+A measurement is not identified by \(q_T\) alone.  Define
+\begin{equation}
+\begin{aligned}
+ \mathfrak M=\bigl(&
+ \text{Lorentz variables},
+ \text{azimuth definitions},
+ \text{polarization frame},
+ \text{bin map},\\
+ &\text{fiducial cuts},
+ \text{acceptance},
+ \text{radiative status}
+ \bigr).
+\end{aligned}
+ \label{eq:measurement-record}
+\end{equation}
+The Trento or other angular convention, lepton-plane orientation, target tensor convention, and sign of each azimuth are content-addressed.  An angular coefficient cannot be moved between conventions by relabeling its column name.
+
+\subsection{Spin-1 target decomposition}
+
+For a spin-1 density matrix, the target basis is
+\begin{equation}
+ \mathrm{Herm}(3)=U\oplus L\oplus T\oplus LL\oplus LT\oplus TT.
+ \label{eq:target-basis}
+\end{equation}
+For each process, the cross section is expanded as
+\begin{equation}
+ \frac{\dd\sigma}{\dd\cP}
+ =\sum_A \cL_A(\text{lepton variables})
+ \cS_A(\text{target polarization})
+ \cH_A(\text{azimuths})
+ F_A(\cP),
+ \label{eq:structure-function-expansion}
+\end{equation}
+where \(A\) is a versioned structure-function identity.  The basis is checked by a Gram matrix and by reconstruction of arbitrary photon-target helicity amplitudes.
+
+The convention-stable tensor difference remains
+\begin{equation}
+ \delta_TF=F_{\Lambda=0}-\frac12(F_{\Lambda=+1}+F_{\Lambda=-1}),
+ \label{eq:tensor-difference}
+\end{equation}
+with the project adapter
+\begin{equation}
+ f_{1LL}=-\frac23\,\delta_Tf_1.
+ \label{eq:ll-adapter}
+\end{equation}
+The adapter is applied after the helicity combination is constructed.
+
+\subsection{Transverse harmonic identity}
+
+Each structure function carries a transverse harmonic \(m\), rank, and angular polynomial.  In impact space,
+\begin{equation}
+ F_A(q_T)=
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_A|}(bq_T)\,
+ \widetilde F_A(b)\,
+ \cM_A(b),
+ \label{eq:harmonic-transform}
+\end{equation}
+with the declared phase, mass powers, and measurement normalization.  Two modulations with the same Bessel order but different spin or mass tensors remain distinct.
+
+\begin{requirement}[Kinematic basis before dynamics]
+The general spin-1 cross-section basis is fixed before inserting TMD factorization.  A kinematic structure function that lacks a supported factorized operator remains present with status \texttt{DYNAMICAL\_REPRESENTATION\_UNAVAILABLE}; it is not deleted from the cross-section basis.
+\end{requirement}
+
+\section{Source-audited process ingredients}
+\label{sec:sources}
+
+\subsection{Hard-factor record}
+
+A hard-factor record is
+\begin{equation}
+ \mathfrak h=
+ \left(
+ \text{process},
+ \text{partonic channel},
+ \text{helicity tensor},
+ \text{scheme},
+ \mu,
+ \text{order},
+ \text{source},
+ \text{oracle},
+ \text{remainder}
+ \right).
+ \label{eq:hard-record}
+\end{equation}
+It must state whether the hard tensor is scalar in the target channel or carries a nontrivial spin/color matrix.  A hard factor from one TMD scheme is not attached to TMDs in another scheme without a finite conversion of the full observable.
+
+\subsection{Fragmentation record}
+
+For SIDIS, a TMD fragmentation bundle contains
+\begin{equation}
+ \mathfrak D_{h/j}=
+ \left(
+ h,j,z,\bM,
+ \text{polarization},
+ \text{rank},
+ \mathfrak s_{\FF},
+ \mu,\zeta,
+ \text{matching},
+ \text{evolution},
+ \text{source covariance}
+ \right).
+ \label{eq:ff-record}
+\end{equation}
+PDF and FF conventions are not assumed identical.  The time-like momentum fraction, Jacobian, small-\(z\) behavior, endpoint distributions, and Fourier scaling by \(z_h\) are explicit.  Unpolarized TMD PDF/FF matching is known through high fixed order, but a process structure function may still be bottlenecked by its polarized FF, hard factor, or fixed-order remainder \cite{LuoEtAl2020,ZhuHelicity2025,ZhuTransversity2025,ZhuLinearGluon2025}.
+
+\subsection{Fixed-order reference}
+
+A fixed-order record contains
+\begin{equation}
+\begin{aligned}
+ \mathfrak f_{\FO}=\bigl(&
+ \text{observable},
+ \text{partonic channels},
+ \text{order},
+ \text{masses},\\
+ &\text{cuts},
+ \text{subtraction},
+ \text{source/code hash},
+ \text{numerical tolerance}
+ \bigr).
+\end{aligned}
+ \label{eq:fo-record}
+\end{equation}
+The fixed-order program must support the same measured quantity and angular projection as the \(W\) term.  A fully differential unpolarized SIDIS calculation at N\(^3\)LO is a source for the unpolarized fixed-order record, not evidence that all polarized or tensor harmonics are known at that order \cite{DongEtAl2026}.
+
+\subsection{Primary-source audit}
+
+Each executable ingredient records:
+\begin{itemize}
+\item primary paper and version;
+\item equation, table, or ancillary-file locator;
+\item local source and source hash;
+\item transcription hash;
+\item scheme and convention translation;
+\item independent symbolic or numerical oracle;
+\item declared domain and perturbative remainder.
+\end{itemize}
+A secondary review, plotting script, or search snippet is never the formula authority.
+
+\section{Color-singlet Drell--Yan}
+\label{sec:dy}
+
+\subsection{Leading-power factorization record}
+
+For color-singlet \(\DY\) at \(q_T\ll Q\), a rank-resolved structure function has the form
+\begin{align}
+ W_A^{\DY}(q_T,Q)={}&
+ \sum_{a,b}
+ H_{ab,A}^{\DY}(Q,\mu)
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_A|}(bq_T)
+ \nonumber\\
+ &\times
+ \widetilde F_{a/h_1}^{[-],(r_a)}(x_1,b;\mu,\zeta_1)
+ \widetilde F_{b/h_2}^{[-],(r_b)}(x_2,b;\mu,\zeta_2)
+ \cM_A^{\DY}(b),
+ \label{eq:dy-w}
+\end{align}
+where the past-pointing link assignment is supplied by the factorization theorem, not by the sign of a fitted Sivers function.  The scale relation \(\zeta_1\zeta_2=Q^4\) or its scheme-equivalent form is part of the record.
+
+For a spin-1 deuteron in either beam or target position, the \(U,L,T,LL,LT,TT\) projector acts on the deuteron matrix after the quark/antiquark and beam-hadron contractions are retained.  The deuteron evolution kernel is not changed by the target polarization.
+
+\subsection{Tensor and antiquark sensitivity}
+
+The Drell--Yan process naturally probes quark-antiquark products.  Tensor asymmetries can therefore constrain tensor-polarized antiquarks without identifying them with negative-\(x\) quark arrays.  The process record must preserve which hadron supplies the quark and which supplies the antiquark, the beam charge and polarization, and the exact tensor sign convention.
+
+\subsection{Power corrections and angular distributions}
+
+The leading-power TMD formula is qualified by
+\begin{equation}
+ \frac{\dd\sigma_A}{\dd\cP}
+ =W_A+Y_A+\delta_{A,q_T/Q}+\delta_{A,M/Q}+\cdots.
+ \label{eq:dy-power}
+\end{equation}
+Known leading \(q_T/Q\) corrections to selected angular distributions demonstrate that power effects need not be negligible for all harmonics \cite{ArroyoCastro2025}.  A rank-resolved process record therefore stores the first omitted power and does not use one universal transition point for every angular coefficient.
+
+\subsection{Precision status}
+
+High-accuracy color-singlet Drell--Yan resummation and fixed-order matching exist for unpolarized observables \cite{NeumannCampbell2022,CamardaCieriFerrera2023}.  Those results may qualify the corresponding hard and fixed-order records, but they do not automatically qualify every spin-1 tensor or twist-three harmonic.  The accuracy manifest is evaluated structure function by structure function.
+
+\section{Current-fragmentation SIDIS}
+\label{sec:sidis}
+
+\subsection{Leading-power expression}
+
+For \(\ell D\to\ell' hX\) in the current-fragmentation region and \(P_{hT}\ll Q\),
+\begin{align}
+ W_A^{\SIDIS}(P_{hT},Q)={}&
+ \sum_q e_q^2
+ H_{q,A}^{\SIDIS}(Q,\mu)
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_A|}\!\left(\frac{bP_{hT}}{z_h}\right)
+ \nonumber\\
+ &\times
+ \widetilde F_{q/D}^{[+],(r_F)}(x_B,b;\mu,\zeta_F)
+ \widetilde D_{h/q}^{(r_D)}(z_h,b;\mu,\zeta_D)
+ \cM_A^{\SIDIS}(b,z_h).
+ \label{eq:sidis-w}
+\end{align}
+The future-pointing distribution link, fragmentation operator, \(z_h\)-dependent Fourier argument, and soft partition are supplied by the process theorem \cite{JiMaYuan2004,CollinsMetz2004}.  They are not inferred from Drell--Yan by changing one sign.
+
+\subsection{Spin-1 structure functions}
+
+A tensor-polarized spin-1 target admits a substantially enlarged SIDIS structure-function basis.  The complete differential cross section for an unpolarized detected hadron has been organized into 23 structure functions, with 21 nonzero tree-level terms through leading and subleading twist in the specified operator basis \cite{ZhaoEtAl2025}.  C22 must distinguish:
+\begin{itemize}
+\item the complete kinematic basis;
+\item the subset supported by C21 scheme-qualified twist-two TMDs and available TMD FFs;
+\item twist-three functions whose matching or collinear evolution remains unavailable;
+\item harmonics whose fixed-order \(Y\) reference is not yet implemented.
+\end{itemize}
+A missing dynamical ingredient does not change the kinematic number of structure functions.
+
+\subsection{Fragmentation and flavor sums}
+
+The observable sums over quark flavor and detected-hadron fragmentation channels.  A fragmentation bundle preserves:
+\begin{itemize}
+\item favored, unfavored, charge-separated, and hadron-species identity;
+\item collinear and transverse-momentum schemes;
+\item replica or covariance ancestry;
+\item matching and evolution order;
+\item acceptance and decay/feed-down status where relevant.
+\end{itemize}
+The TMD PDF and TMD FF are evaluated with one correlated scale plan.  A fit-native FF evolution cannot silently replace the project scheme for one structure function while another uses the C21 evolution engine.
+
+\subsection{Inclusive closure}
+
+Integrating over the detected hadron does not by itself prove inclusive closure unless the fragmentation sum, phase space, coefficient functions, target-fragmentation contributions, and unobserved channels are treated consistently.  Inclusive \(b_1\) is therefore computed independently from collinear factorization and used as a cross-check, not generated by numerical integration of a truncated SIDIS record.
+
+\section{Inclusive tensor DIS and local limits}
+\label{sec:inclusive}
+
+The leading-twist relation is
+\begin{equation}
+ b_1(x,Q^2)=
+ \frac12\sum_q e_q^2
+ \left[\delta_Tq_D(x,Q^2)+\delta_T\bar q_D(x,Q^2)\right]
+ +\delta_{\alpha_s}+\delta_{M_D^2/Q^2}+\delta_{\rm HT}.
+ \label{eq:b1}
+\end{equation}
+The coefficient functions, target-mass prescription, higher-twist status, and spin-1 tensor adapter are explicit.  The \(b_2=2xb_1\) relation is a leading-twist scaling-limit check rather than an exact finite-\(Q^2\) identity.
+
+Inclusive records also test the local current and EMT limits inherited from the same matched microscopic operator family.  A process-level normalization cannot be introduced to repair disagreement between the TMD small-\(b\) route and the inclusive current or tensor-PDF route.
+
+\section{Tagged and target-fragmentation spin-1 DIS}
+\label{sec:tagged}
+
+\subsection{Distinct process class}
+
+Spectator-tagged deuteron DIS is a target-fragmentation observable.  Its process record contains the detected spectator momentum and helicity, active-nucleon channel, nuclear spectral amplitude, pole variable, final-state-interaction status, and acceptance.  It is not represented by replacing the ordinary SIDIS fragmentation function in \cref{eq:sidis-w} with a spectator label.
+
+The general polarized spin-1 semi-inclusive cross section can be decomposed kinematically in invariant structure functions, while the tagged deuteron calculation uses light-front nuclear structure to separate active and spectator degrees of freedom \cite{CosynWeissI2026,CosynWeissII2026}.  The formal distinction is
+\begin{equation}
+ \texttt{CURRENT\_FRAGMENTATION\_SIDIS}
+ \neq
+ \texttt{TARGET\_FRAGMENTATION\_TAGGED\_DIS}.
+ \label{eq:current-target-distinction}
+\end{equation}
+
+\subsection{Tagged closure}
+
+A tagged record must verify:
+\begin{enumerate}
+\item integration over the tagged spectator returns the supported inclusive impulse contribution;
+\item the spectator-preserving recoil map is used;
+\item the active-neutron and active-proton channels remain distinct;
+\item the on-shell pole or equivalent analytic oracle has the declared residue;
+\item regular final-state interactions do not alter the pole residue in the domain where the theorem applies;
+\item tensor tagging retains S--D and D--D sensitivity;
+\item detector acceptance is outside the nuclear amplitude object.
+\end{enumerate}
+A tagged final-state-interaction model is separate from both the partonic Wilson staple and the nuclear coherent small-\(x\) pilot.
+
+\section{Gluon-sensitive channels and color-flow qualification}
+\label{sec:gluon}
+
+\subsection{Process color vector}
+
+A gluon-sensitive process may require a vector of independent link/color operators,
+\begin{equation}
+ W_A^{g,{\rm proc}}
+ =\sum_{c\in\{f,d\}}
+ H_{A,c}^{g,{\rm proc}}
+ \otimes
+ \widetilde F_{g/D}^{(c)}
+ \otimes
+ \widetilde X_{{\rm proc},c}.
+ \label{eq:gluon-color-vector}
+\end{equation}
+The hard process supplies any \(f/d\) weights.  There is no default mixture.  Ordered link pairs \([+,+],[+,-],[-,+],[-,-]\) remain distinct from the \(f/d\) contraction.
+
+\subsection{DIS heavy-quark pair and dijet channels}
+
+Low-imbalance heavy-quark pair production in DIS has a TMD-factorization derivation at one loop in specified schemes \cite{ZhuSunYuan2013}.  Dijet and heavy-meson-pair DIS require process-specific soft and jet functions, including a new soft function in the studied factorization setup \cite{DelCastilloEtAl2020}.  These channels are therefore \texttt{CONDITIONAL} until the process record supplies:
+\begin{itemize}
+\item the exact measured imbalance and hard scale;
+\item heavy-quark mass or jet definition;
+\item hard and soft matrices;
+\item jet or fragmentation functions;
+\item link/color map;
+\item factorization and Glauber status;
+\item a compatible fixed-order reference.
+\end{itemize}
+
+\subsection{Colored hadroproduction}
+
+For nearly back-to-back high-transverse-momentum hadrons in hadron-hadron scattering, generalized factorization into separate process-dependent TMDs for each hadron fails in explicit non-Abelian counterexamples \cite{RogersMulders2010}.  Such a record is marked \texttt{BROKEN} for the universal-product ansatz.  The compiler may store a generalized multi-hadron soft/color object for exploratory study, but it cannot relabel it as two universal TMDs.
+
+\subsection{Diffractive and small-\texorpdfstring{\(x\)}{x} channels}
+
+Diffractive or saturation-regime TMDs have operator and evolution structures distinct from the ordinary inclusive TMDs.  They require a separate process record and cannot be used as a generic gluon-TMD process merely because both depend on transverse momentum.  A recent diffractive heavy-quark calculation, for example, derives process-specific TMD factorizations in a particular photon-nucleus correlation limit; that result does not establish a universal record for all gluon-sensitive channels \cite{CaucalEtAl2026}.
+
+\subsection{Quarkonium}
+
+A quarkonium record must include the production mechanism, color state, NRQCD or alternative operator basis, feed-down, soft function, and factorization status.  In the absence of a process theorem and compatible hard/color map, it remains \texttt{EXPLORATORY}.
+
+\section{Factorization and Glauber certificate}
+\label{sec:glauber}
+
+\begin{definition}[Factorization/Glauber certificate]
+A certificate is
+\begin{equation}
+\begin{aligned}
+ \mathfrak G_{\rm proc}=\bigl(&
+ \text{leading regions},
+ \text{soft decoupling},
+ \text{Glauber cancellation/deformation},\\
+ &\text{color entanglement},
+ \text{universality class},
+ \text{proof status},
+ \text{domain}
+ \bigr).
+\end{aligned}
+ \label{eq:glauber-certificate}
+\end{equation}
+\end{definition}
+
+The certificate distinguishes:
+\begin{itemize}
+\item established cancellation or contour deformation;
+\item a process-specific generalized soft matrix;
+\item conditional cancellation under declared inclusiveness or color-singlet assumptions;
+\item known color entanglement and factorization breaking;
+\item unassessed channels.
+\end{itemize}
+
+A partonic Wilson-line map is necessary but not sufficient for factorization.  The nuclear coherent/Glauber mechanism remains a separate object from the partonic staple.  If the same soft region appears in both, an explicit overlap subtraction is required before process assembly.
+
+\begin{requirement}[No process by analogy]
+A process cannot inherit the factorization status, link map, or color weights of a different channel solely because the incoming hadrons or named TMDs are similar.
+\end{requirement}
+
+\section{Rank-resolved \texorpdfstring{\(W+Y\)}{W+Y}}
+\label{sec:wy}
+
+\subsection{Master definition}
+
+For each structure function or harmonic \(A\), define
+\begin{equation}
+ \frac{\dd\sigma_A}{\dd\cP}
+ =W_A^{[N]}+Y_A^{[N]}+\delta_{A,\powc},
+ \label{eq:wy-master}
+\end{equation}
+with
+\begin{equation}
+ Y_A^{[N]}=
+ \sigma_{A,\FO}^{[N]}
+ -\left[W_A^{[N]}\right]_{\asy,\FO}^{[N]}.
+ \label{eq:y-def}
+\end{equation}
+The asymptotic operator expands the exact same:
+\begin{itemize}
+\item hard factor and coefficient functions;
+\item TMD/FF and soft scheme;
+\item evolution convention and scales;
+\item masses and threshold history;
+\item measurement variables and fiducial cuts;
+\item spin-1 and angular projectors;
+\item transverse rank and Bessel normalization.
+\end{itemize}
+
+\begin{theorem}[Fixed-order recovery]
+If \(\left[W_A\right]_{\asy,\FO}^{[N]}\) is the complete singular expansion of the same \(W_A\) through order \(N\), then the expansion of \(W_A+Y_A\) reproduces \(\sigma_{A,\FO}^{[N]}\) through order \(N\), while retaining the resummed higher-order logarithmic terms at small transverse momentum.
+\end{theorem}
+
+\begin{proof}
+Expand \(W_A\) through order \(N\).  The singular terms cancel against the asymptotic subtraction in \cref{eq:y-def}, leaving the fixed-order result at that order.  Terms beyond order \(N\) are the resummed contribution, and power corrections remain in \(\delta_{A,\powc}\).
+\end{proof}
+
+\subsection{Harmonic-by-harmonic matching}
+
+The \(Y\) term is constructed separately for every spin and azimuthal harmonic.  A scalar unpolarized subtraction cannot be reused for a tensor or rank-two harmonic without a proof that their singular expansions coincide.
+
+If a fixed-order record exists only for the azimuthally integrated or unpolarized quantity, then only that structure function can receive a complete \(Y\) term.  Other harmonics remain \texttt{W\_TERM\_ONLY\_VALIDATION} or unavailable.
+
+\subsection{Transition profiles}
+
+A profile may switch off resummation as \(q_T/Q\) approaches unity, but the profile is part of the process and uncertainty manifest.  It cannot change after holdout inspection.  The profile variation is distinct from:
+\begin{itemize}
+\item perturbative scale variation;
+\item finite-order curl;
+\item nonperturbative Collins--Soper uncertainty;
+\item fixed-order numerical uncertainty;
+\item power corrections.
+\end{itemize}
+
+\subsection{Boundary non-retuning}
+
+A mismatch at moderate or high transverse momentum is classified among:
+\begin{equation}
+ \text{FO omission},\quad
+ \text{asymptotic mismatch},\quad
+ \text{profile},\quad
+ \text{power correction},\quad
+ \text{factorization failure},\quad
+ \text{numerics}.
+ \label{eq:y-diagnostics}
+\end{equation}
+It cannot be repaired by refitting the microscopic TMD boundary or introducing a process-specific TMD width.
+
+\section{Acceptance, binning, and radiative interfaces}
+\label{sec:measurement-chain}
+
+The theoretical observable is separated from the experimental map:
+\begin{equation}
+ \sigma_{\rm measured}
+ =\cA_{\rm det}\circ\cR_{\rm QED}\circ\cB_{\rm bin}
+ [\sigma_{\rm partonic/hadronic}],
+ \label{eq:measurement-chain}
+\end{equation}
+where \(\cB_{\rm bin}\) integrates the exact bin, \(\cR_{\rm QED}\) denotes a declared radiative map, and \(\cA_{\rm det}\) denotes acceptance and resolution.  These maps are not part of the TMD or nuclear matrix element.
+
+A bin-center evaluation may be used only with a quantified bin-centering correction.  Acceptance averages cannot be used to redefine the azimuthal projector or target-polarization convention.
+
+\section{Process accuracy and uncertainty}
+\label{sec:accuracy}
+
+\subsection{Accuracy tuple}
+
+The process accuracy is
+\begin{equation}
+ \mathfrak A_{\rm proc}=
+ \left(
+ p_\Gamma,p_\gamma,p_{\cD},p_C,p_P,p_H,p_{\FF},p_{\FO},
+ p_{\rm thr},p_{\rm Wilson},p_{\rm nuc},p_{\rm pow}
+ \right).
+ \label{eq:accuracy-tuple}
+\end{equation}
+A human-readable label is generated only after the tuple and process record are checked.  The least accurate required ingredient is authoritative.
+
+For example, a four-loop rapidity anomalous dimension does not promote a tensor SIDIS harmonic whose fragmentation matching, hard factor, twist-three boundary, or fixed-order \(Y\) term is available only at lower order or not at all.
+
+\subsection{Uncertainty axes}
+
+The process covariance retains separately:
+\begin{enumerate}
+\item microscopic Hamiltonian and state member;
+\item Fock, basis, Wilson-order, and nuclear truncation;
+\item LF-to-QCD matching covariance and missing operators;
+\item anomalous-dimension and coefficient truncation;
+\item evolution curl, contour, scales, and thresholds;
+\item quark and gluon Collins--Soper kernel uncertainty;
+\item fragmentation-function covariance;
+\item hard-factor and fixed-order truncation;
+\item \(W+Y\) profile and asymptotic subtraction;
+\item process factorization and Glauber status;
+\item target-mass and other power corrections;
+\item acceptance, radiative, binning, and numerical errors.
+\end{enumerate}
+A process uncertainty is not obtained by adding independent TMD bands after the cross section has been formed.
+
+\subsection{Memberwise ratios and asymmetries}
+
+For an asymmetry \(A=N/D\), evaluate
+\begin{equation}
+ A_s=\frac{N_s}{D_s}
+ \label{eq:memberwise-asymmetry}
+\end{equation}
+for each common member \(s\), then summarize the ensemble.  Propagating independently summarized numerator and denominator bands destroys correlations and is prohibited.
+
+\section{Process compiler and provenance}
+\label{sec:compiler}
+
+The process compiler consumes
+\begin{equation}
+ \left(
+ \mathfrak F_s,
+ \mathfrak P,
+ \mathfrak M,
+ \mathfrak h,
+ \mathfrak D,
+ \mathfrak f_{\FO}
+ \right)
+ \longrightarrow
+ \Pi_{\rm proc},
+ \label{eq:process-compiler}
+\end{equation}
+where \(\Pi_{\rm proc}\) is an immutable `ProcessPredictionPlan`.
+
+The compiler:
+\begin{enumerate}
+\item validates all operator, scheme, rank, link, color, and member identities;
+\item checks the C21 evolution capability of every required input;
+\item verifies hard, FF/partner, soft, and fixed-order source records;
+\item checks factorization/Glauber status;
+\item constructs the structure-function and angular basis;
+\item builds the \(W\), asymptotic, \(Y\), and power-correction plans;
+\item attaches measurement, binning, and acceptance maps;
+\item freezes holdouts and uncertainty variations;
+\item emits a compilation or failure certificate.
+\end{enumerate}
+
+The provenance two-complex includes count-once relations for:
+\begin{itemize}
+\item process soft versus TMD soft factors;
+\item partonic Wilson versus nuclear coherent soft overlap;
+\item fixed-order singular terms versus the \(W\)-term expansion;
+\item current- versus target-fragmentation descriptions;
+\item explicit versus induced nuclear sectors.
+\end{itemize}
+
+\section{Formal software architecture}
+\label{sec:software}
+
+\begin{longtable}{L{0.25\textwidth}L{0.64\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{ProcessId} & Process family, external states, beam charges, polarization, and hard-scale definition.\\
+\texttt{MeasurementRecord} & Lorentz variables, angular convention, target frame, bins, cuts, acceptance, and radiative status.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{Spin1Structure}\\\texttt{FunctionBasis}\end{tabular} & Complete kinematic target/azimuth basis, projectors, Gram rank, and reconstruction.\\
+\texttt{HardFactorRecord} & Partonic channel, helicity/color tensor, scheme, order, source, oracle, and remainder.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{TMDFragmentation}\\\texttt{Bundle}\end{tabular} & Hadron/parton identity, \(z\), rank, scheme, matching, evolution, and covariance.\\
+\texttt{PartnerFunctionBundle} & Second TMD, jet, fracture, diffractive, or generalized soft object required by the process.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{FactorizationGlauber}\\\texttt{Certificate}\end{tabular} & Leading regions, soft decoupling, Glauber cancellation, color entanglement, proof status, and domain.\\
+\texttt{ProcessLinkColorMap} & Future/past directions, ordered gluon links, \(f/d\) weights, and source theorem.\\
+\texttt{FixedOrderReference} & Observable, order, channels, masses, cuts, subtraction method, code/source hashes, and numerical error.\\
+\texttt{WTerm} & Rank-resolved resummed structure function with exact process and measurement identity.\\
+\texttt{AsymptoticExpansion} & Same-order singular expansion of the exact \(W\) term.\\
+\texttt{YTerm} & Fixed-order minus asymptotic term, with common scheme, order, and kinematics.\\
+\texttt{PowerCorrectionRecord} & Target-mass, \(q_T/Q\), hadron-mass, and higher-twist status.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{ProcessAccuracy}\\\texttt{Manifest}\end{tabular} & Ingredient-level accuracy tuple, bottleneck, and scale/profile variations.\\
+\texttt{ProcessPredictionPlan} & Immutable compiled plan linking all inputs, contractions, holdouts, and gates.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{ProcessObservable}\\\texttt{Bundle}\end{tabular} & Memberwise structure functions, asymmetries, covariance, provenance, and readiness.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{ProcessCapability}\\\texttt{Matrix}\end{tabular} & Per-process/per-structure-function status and precise reason for unavailability.\\
+\bottomrule
+\end{longtable}
+
+Every cache key contains all process, scheme, measurement, member, rank, link/color, source, and code-version identities.  A change to a fiducial cut, fragmentation set, angular convention, or fixed-order program invalidates the cache.
+
+\section{Validation and benchmark suite}
+\label{sec:validation}
+
+\subsection{Layered validation}
+
+The process layer is accepted in the order:
+\begin{enumerate}
+\item source and scheme identity;
+\item kinematic spin-1 basis reconstruction;
+\item link, color, and factorization qualification;
+\item hard/fragmentation and measurement compatibility;
+\item \(W\)-term rank and evolution closure;
+\item fixed-order/asymptotic/\(Y\) closure;
+\item nuclear and hidden-color covariance;
+\item memberwise covariance and asymmetry closure;
+\item withheld multi-process prediction.
+\end{enumerate}
+
+\subsection{Benchmark families}
+
+\textbf{P-A: process-record round trip.}
+Serialize and reconstruct complete DY, SIDIS, inclusive, tagged, and gluon-sensitive records; detect every omitted identity.
+
+\textbf{P-B: spin-1 kinematic basis.}
+Generate arbitrary photon-target helicity amplitudes, project to the invariant structure-function basis, and reconstruct them exactly.  Test tensor-sign adapters and azimuth convention changes.
+
+\textbf{P-C: Drell--Yan link reversal.}
+Verify T-even future/past equality and T-odd sign reversal after mapping to the common process frame.  Wrong link orientation must fail before numerical integration.
+
+\textbf{P-D: SIDIS PDF--FF convolution.}
+Use analytic rank-zero through rank-three Gaussian oracles with explicit \(z_h\) scaling.  Test PDF/FF scheme conversion and wrong-\(z_h\) Fourier arguments.
+
+\textbf{P-E: inclusive \(b_1\) closure.}
+Compare direct collinear, small-\(b\), and supported SIDIS-integral diagnostic routes while retaining their different coefficient and completeness statuses.
+
+\textbf{P-F: tagged-to-inclusive recovery.}
+Integrate the spectator kernel, recover the supported inclusive impulse term, and verify pole residue and tensor S--D sensitivity.
+
+\textbf{P-G: gluon \(f/d\) color map.}
+Use a process hard-color oracle with known independent weights.  Verify no default mixture and exact ordered-link preservation.
+
+\textbf{P-H: factorization-breaking gate.}
+Construct a colored hadroproduction record with a universal separate-hadron TMD product and require deterministic rejection using the Rogers--Mulders counterexample status.
+
+\textbf{P-I: exact \(W+Y\) toy.}
+Use a known fixed-order spectrum and resummed term, recover fixed order through the declared order, and verify nonsingular \(Y\) behavior at small \(q_T\).
+
+\textbf{P-J: harmonic-specific \(Y\).}
+Provide fixed-order references for only a subset of harmonics and verify that unsupported harmonics remain unavailable rather than borrowing the unpolarized subtraction.
+
+\textbf{P-K: profile and power separation.}
+Vary resummation profile, scales, and an analytic \(q_T/Q\) correction independently; verify that the uncertainty axes remain separate.
+
+\textbf{P-L: fixed-order scheme covariance.}
+Apply a finite TMD-scheme transformation to TMDs, hard factors, and asymptotic subtraction.  The complete \(W+Y\) observable is invariant; transforming only one ingredient fails.
+
+\textbf{P-M: resolved nuclear process evolution.}
+Compose NN, \(NN\pi\), \(\Delta\Delta\), cluster, hidden-color, and transition pieces through the same process record and verify complete-observable hidden-color basis covariance.
+
+\textbf{P-N: memberwise asymmetry.}
+Compare memberwise ratio propagation with an incorrect ratio of independent marginal summaries and require a covariance defect.
+
+\textbf{P-O: accuracy bottleneck.}
+Construct an observable with a high-order cusp but a lower-order hard or fixed-order term and verify that the reported label follows the bottleneck.
+
+\textbf{P-P: measurement and binning.}
+Compare exact bin integration with bin-center evaluation, quantify the correction, and detect an acceptance map embedded incorrectly inside a TMD.
+
+\textbf{P-Q: multi-process holdout.}
+Freeze one Q bin, one tensor SIDIS harmonic, one DY antiquark observable, one inclusive tensor moment, and one gluon-sensitive channel before final tuning.
+
+\textbf{P-R: isolation and reproduction.}
+Rebuild all manifests byte for byte, preserve the accepted 216-route model, and verify that no process validation object can reach production or inference.
+
+\section{Required negative tests}
+\label{sec:negative}
+
+The C22/P0 implementation must define at least 720 ordered negative-test identities.  Required families include:
+
+\begin{itemize}
+\item incomplete process, measurement, scheme, hard, FF, or fixed-order identity;
+\item wrong angular convention, tensor sign, harmonic, Bessel order, mass power, or \(z_h\) scaling;
+\item future/past link chosen from a fitted sign rather than the process theorem;
+\item ordered gluon links or \(f/d\) channels collapsed;
+\item one universal \(f+d\) gluon mixture;
+\item current-fragmentation formula used for target fragmentation;
+\item tagged FSI, nuclear coherent rescattering, and partonic Wilson staple aliased;
+\item hard factor or FF used in an incompatible scheme;
+\item fixed-order and asymptotic terms at different orders or with different cuts;
+\item unpolarized \(Y\) term copied into tensor or ranked harmonics;
+\item boundary retuned to repair moderate-\(q_T\) disagreement;
+\item profile chosen after holdout inspection;
+\item finite-order curl hidden inside a process normalization;
+\item twist-two boundary or evolution applied to twist-three T-odd matching;
+\item inclusive \(b_1\) generated by incomplete SIDIS integration;
+\item colored-final-state hadroproduction promoted despite broken factorization status;
+\item quarkonium process without production-mechanism or color-state identity;
+\item gluon-sensitive DIS without process-specific soft or jet functions;
+\item acceptance, detector response, or QED radiation inserted into the TMD object;
+\item independently sampled numerator and denominator members;
+\item hidden-color basis dependence of the complete observable;
+\item nuclear components collapsed into a scalar response;
+\item accuracy laundering from the best-known anomalous dimension;
+\item production registry or authoritative artifact mutation;
+\item process, inference, or production readiness issued with a missing gate.
+\end{itemize}
+
+\section{Staged implementation program}
+\label{sec:stages}
+
+\subsection{P0: process and measurement spine}
+
+\begin{enumerate}
+\item Implement process, measurement, factorization/Glauber, hard, FF/partner, fixed-order, and capability records.
+\item Encode DY, current-fragmentation SIDIS, inclusive \(b_1\), tagged DIS, and gluon-process status matrices.
+\item Build the spin-1 structure-function and angular projector basis.
+\item Keep all outputs validation-only and isolated.
+\end{enumerate}
+
+\subsection{P1: qualified DY and SIDIS \texorpdfstring{\(W\)}{W} terms}
+
+\begin{enumerate}
+\item Consume C21 multi-Q ensembles through exact link, rank, and member maps.
+\item Add source-audited hard and TMD FF interfaces.
+\item Implement supported leading-twist spin-1 harmonics.
+\item Preserve unsupported twist-three and fixed-order statuses.
+\end{enumerate}
+
+\subsection{P2: inclusive and tagged closure}
+
+\begin{enumerate}
+\item Implement inclusive tensor coefficients and local-current checks.
+\item Add tagged target-fragmentation process records and inclusive recovery.
+\item Keep tagged FSI separate and initially unavailable or analytic-oracle only.
+\end{enumerate}
+
+\subsection{P3: rank-resolved \texorpdfstring{\(W+Y\)}{W+Y}}
+
+\begin{enumerate}
+\item Add source-audited fixed-order records for supported harmonics.
+\item Construct same-order asymptotic subtractions from the exact \(W\) term.
+\item Implement profile and power-correction manifests.
+\item Demonstrate fixed-order recovery and small-\(q_T\) finiteness.
+\end{enumerate}
+
+\subsection{P4: qualified gluon channels}
+
+\begin{enumerate}
+\item Add DIS heavy-quark/dijet records only with process-specific soft and hard functions.
+\item Preserve ordered links and independent \(f/d\) color sectors.
+\item Implement factorization-breaking and Glauber gates.
+\item Keep quarkonium and hadroproduction exploratory unless a theorem and complete operator map are supplied.
+\end{enumerate}
+
+\subsection{P5: process holdouts and inference handoff}
+
+\begin{enumerate}
+\item Freeze multi-process holdout families before tuning process nuisance parameters.
+\item Propagate complete memberwise covariance.
+\item Export observable likelihood interfaces without performing global inference.
+\item Produce the formal handoff to the Volume VI shared-inference program.
+\end{enumerate}
+
+\section{Risks, failure modes, and safeguards}
+\label{sec:risks}
+
+\begin{longtable}{L{0.22\textwidth}L{0.34\textwidth}L{0.36\textwidth}}
+\toprule
+Risk & Failure mode & Safeguard\\
+\midrule
+\endhead
+Process by name & Attaching a generic DY or SIDIS formula to every TMD. & Complete process and structure-function capability matrix.\\
+Scheme drift & TMDs, FFs, hard factors, and \(Y\) subtraction use different schemes. & Finite transformations of the complete observable and fail-closed identities.\\
+Angular aliasing & Reusing one harmonic or sign convention for another. & Gram-generated spin-1/azimuth basis and convention adapters.\\
+Link by fitted sign & Selecting future/past direction from the extracted Sivers sign. & Link map supplied by the factorization theorem.\\
+Color overreach & Universal \(f+d\) gluon mixture. & Independent operator channels and process hard-color map.\\
+Fragmentation shortcut & Using a collinear FF or wrong TMD FF without qualification. & Typed FF bundle with matching/evolution/source status.\\
+Target/current confusion & Treating tagged target fragmentation as ordinary SIDIS. & Separate process classes and inclusive/tagged closure.\\
+Factorization overreach & Universal TMD product in a color-entangled channel. & Factorization/Glauber certificate and \texttt{BROKEN} status.\\
+Missing \(Y\) physics & Fitting the nonperturbative TMD to moderate/high \(q_T\). & Independent FO record and same-order asymptotic subtraction.\\
+Harmonic borrowing & Copying the unpolarized \(Y\) term into tensor harmonics. & Harmonic-specific capability and source record.\\
+Power hiding & Absorbing \(q_T/Q\) or target-mass effects into TMD widths. & Separate power-correction record and domain tests.\\
+Nuclear collapse & Evolving or processing only the summed deuteron curve. & Resolved ancestry through the process contraction.\\
+Covariance loss & Forming asymmetries from independent marginal bands. & Memberwise observable evaluation.\\
+Accuracy laundering & Reporting the best ingredient as the total accuracy. & Ingredient tuple and bottleneck label.\\
+Production leakage & Validation process output enters accepted registry. & Disjoint provenance root and immutable production hashes.\\
+\bottomrule
+\end{longtable}
+
+\section{Final acceptance criteria}
+\label{sec:acceptance}
+
+The process formalism is accepted only when:
+\begin{enumerate}
+\item C21 supplies a stable capability matrix and scheme-qualified multi-Q member bundle for every consumed input;
+\item every process and measurement record is complete and content-addressed;
+\item the spin-1 structure-function basis reconstructs arbitrary allowed helicity amplitudes;
+\item DY and SIDIS link maps, scale relations, and operator bases are theorem sourced;
+\item TMD FFs and partner functions have compatible schemes, covariance, and evolution;
+\item inclusive \(b_1\) is implemented independently and closes with the matched tensor PDFs;
+\item tagged DIS remains a separate target-fragmentation process with inclusive recovery;
+\item gluon channels retain ordered links, independent \(f/d\) sectors, and process-specific soft/color maps;
+\item broken or unassessed factorization channels fail closed;
+\item every \(W\) term is rank and harmonic aware;
+\item every executable \(Y\) term uses the same order, scheme, kinematics, and projector as its \(W\) term;
+\item \(W+Y\) recovers fixed order through the declared order and remains finite in the small-transverse-momentum limit;
+\item power corrections and transition profiles are reported separately;
+\item the microscopic boundary is never retuned to repair process matching;
+\item resolved nuclear and hidden-color covariance survives process assembly;
+\item memberwise cross-flavor, cross-target, and cross-process covariance is preserved;
+\item accuracy labels identify the true bottleneck;
+\item multi-process holdouts are frozen before final tuning;
+\item all deliberately failing tests return the expected diagnostic;
+\item prior microscopic, matching, and evolution artifacts remain byte-identical;
+\item no global inference or production route is created;
+\item all process manifests rebuild deterministically.
+\end{enumerate}
+
+\section{C22/P0 repository boundary}
+\label{sec:c22}
+
+The repository-specific C22 prompt should be written only after C21 reports its actual anomalous-dimension, kernel-plan, threshold, evolution-path, capability-matrix, and multi-Q ensemble APIs.
+
+The expected C22 scope is:
+\begin{quote}
+\textbf{C22/P0 - qualified color-singlet Drell--Yan, current-fragmentation SIDIS, inclusive \(b_1\), tagged spin-1 DIS, and selected gluon-sensitive process records; source-audited hard and fragmentation interfaces; factorization/Glauber certificates; and rank-resolved \(W+Y\) validation.}
+\end{quote}
+
+C22 should remain disconnected from global inference and production.  A subsequent C23/P1 package may add broader fixed-order process coverage and likelihood-ready observable bundles.  Only then should the Volume VI shared-inference program be activated on frozen calibration and holdout partitions.
+
+\appendix
+
+\section{Minimal process-record schema}
+\label{app:process-schema}
+
+\begin{verbatim}
+{
+  "process_id": "...",
+  "family": "DY|SIDIS_CURRENT|DIS_INCLUSIVE|DIS_TAGGED|GLUON_DIS|...",
+  "external_states": ["..."],
+  "factorization_status": "ESTABLISHED|CONDITIONAL|EXPLORATORY|BROKEN|UNASSESSED",
+  "glauber_status": "...",
+  "hard_channel": "...",
+  "measurement_record": "...",
+  "structure_function_basis": "...",
+  "tmd_pdf_basis": ["..."],
+  "tmd_ff_or_partner_basis": ["..."],
+  "link_map": "...",
+  "gluon_color_map": "...",
+  "soft_prescription": "...",
+  "scale_relation": "...",
+  "fixed_order_reference": "...",
+  "power_counting": "...",
+  "accuracy_manifest": "...",
+  "source_hashes": ["..."],
+  "missing_ingredients": ["..."]
+}
+\end{verbatim}
+
+\section{Minimal \texorpdfstring{\(W+Y\)}{W+Y} schema}
+\label{app:wy-schema}
+
+\begin{verbatim}
+{
+  "structure_function_id": "...",
+  "harmonic": 0,
+  "transverse_rank": 0,
+  "w_term_id": "...",
+  "fixed_order_id": "...",
+  "asymptotic_expansion_id": "...",
+  "y_term_id": "...",
+  "common_scheme_id": "...",
+  "common_order": "...",
+  "kinematic_and_cut_hash": "...",
+  "profile_id": "...",
+  "power_correction_status": "...",
+  "small_qt_residual": "...",
+  "fixed_order_recovery_residual": "...",
+  "availability": "..."
+}
+\end{verbatim}
+
+\section{Minimal process capability schema}
+\label{app:capability-schema}
+
+\begin{verbatim}
+{
+  "process_id": "...",
+  "structure_function_id": "...",
+  "boundary_available": true,
+  "evolution_available": true,
+  "hard_available": true,
+  "fragmentation_or_partner_available": false,
+  "link_color_map_available": true,
+  "fixed_order_available": false,
+  "factorization_certificate": "CONDITIONAL",
+  "w_term_available": false,
+  "y_term_available": false,
+  "reason": "..."
+}
+\end{verbatim}
+
+\section{Stable formal requirements}
+\label{app:requirements}
+
+\footnotesize
+\begin{longtable}{L{0.18\textwidth}L{0.74\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V17.PROC.1 & Every observable has a complete process, measurement, factorization, Glauber, hard, partner, fixed-order, and source identity.\\
+V17.PROC.2 & A process capability is evaluated structure function by structure function.\\
+V17.MEAS.1 & Angular, target-polarization, binning, acceptance, and radiative conventions are typed.\\
+V17.SPIN.1 & The complete spin-1 structure-function basis is fixed kinematically and reconstructed by projectors.\\
+V17.RANK.1 & Every harmonic stores rank, Bessel order, phase, mass powers, and measurement normalization.\\
+V17.HARD.1 & Hard factors are source audited, scheme qualified, and helicity/color resolved where required.\\
+V17.FF.1 & SIDIS fragmentation bundles retain time-like fraction, scheme, rank, matching, evolution, and covariance.\\
+V17.FO.1 & Fixed-order records describe the exact same measured quantity and cuts as the process \(W\) term.\\
+V17.DY.1 & Color-singlet DY uses theorem-supplied past links and the declared scale relation.\\
+V17.SIDIS.1 & Current-fragmentation SIDIS uses theorem-supplied future links and compatible TMD FFs.\\
+V17.INCL.1 & Inclusive \(b_1\) is computed independently with collinear coefficients and tensor adapters.\\
+V17.TAG.1 & Tagged target fragmentation is not represented by the ordinary current-fragmentation formula.\\
+V17.GLUON.1 & Ordered gluon links and \(f/d\) color channels remain independent through process assembly.\\
+V17.FACT.1 & Broken or unassessed factorization channels cannot consume universal separate-hadron TMD products.\\
+V17.GLAUBER.1 & Partonic, nuclear coherent, and tagged-FSI soft mechanisms remain distinct with overlap subtraction.\\
+V17.WY.1 & Define \(Y\) from the same-order, same-scheme asymptotic expansion of the exact \(W\) term.\\
+V17.WY.2 & Construct \(W+Y\) separately for every supported spin and angular harmonic.\\
+V17.WY.3 & Do not retune the microscopic boundary to repair fixed-order matching.\\
+V17.POW.1 & Store \(q_T/Q\), target/hadron mass, and higher-twist corrections separately.\\
+V17.ACC.1 & The process accuracy label is determined by the least accurate required ingredient.\\
+V17.UNC.1 & Preserve all microscopic, evolution, FF, process, nuclear, and numerical covariance axes.\\
+V17.ENS.1 & Evaluate asymmetries and ratios member by member.\\
+V17.NUC.1 & Preserve resolved nuclear ancestry and hidden-color basis covariance.\\
+V17.COMP.1 & The process compiler returns an immutable plan or a structured minimal failure certificate.\\
+V17.VAL.1 & Pass source, basis, link/color, factorization, \(W+Y\), covariance, and isolation benchmarks.\\
+V17.ISO.1 & Keep process validation outputs disconnected from inference and the accepted 216-route production model.\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{CollinsSoper1981}
+J.~C.~Collins and D.~E.~Soper,
+``Back-to-back jets in QCD,''
+Nucl.\ Phys.\ B \textbf{193}, 381 (1981);
+Erratum Nucl.\ Phys.\ B \textbf{213}, 545 (1983).
+
+\bibitem{CollinsSoper1982}
+J.~C.~Collins and D.~E.~Soper,
+``Parton distribution and decay functions,''
+Nucl.\ Phys.\ B \textbf{194}, 445 (1982).
+
+\bibitem{CSS1985}
+J.~C.~Collins, D.~E.~Soper, and G.~F.~Sterman,
+``Transverse momentum distribution in Drell--Yan pair and W and Z boson production,''
+Nucl.\ Phys.\ B \textbf{250}, 199 (1985).
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{EIS2012}
+M.~G.~Echevarria, A.~Idilbi, and I.~Scimemi,
+``Factorization theorem for Drell--Yan at low \(q_T\) and transverse-momentum distributions on the light cone,''
+JHEP \textbf{07}, 002 (2012), arXiv:1111.4996.
+
+\bibitem{JiMaYuan2004}
+X.~Ji, J.-P.~Ma, and F.~Yuan,
+``QCD factorization for semi-inclusive deep-inelastic scattering at low transverse momentum,''
+Phys.\ Rev.\ D \textbf{71}, 034005 (2005), arXiv:hep-ph/0404183.
+
+\bibitem{CollinsMetz2004}
+J.~C.~Collins and A.~Metz,
+``Universality of soft and collinear factors in hard-scattering factorization,''
+Phys.\ Rev.\ Lett.\ \textbf{93}, 252001 (2004), arXiv:hep-ph/0408249.
+
+\bibitem{BacchettaEtAl2007}
+A.~Bacchetta, M.~Diehl, K.~Goeke, A.~Metz, P.~J.~Mulders, and M.~Schlegel,
+``Semi-inclusive deep inelastic scattering at small transverse momentum,''
+JHEP \textbf{02}, 093 (2007), arXiv:hep-ph/0611265.
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000), arXiv:hep-ph/0007120.
+
+\bibitem{ZhaoEtAl2025}
+J.~Zhao, A.~Bacchetta, S.~Kumano, T.~Liu, and Y.-J.~Zhou,
+``Semi-inclusive deep inelastic scattering off a tensor-polarized spin-1 target,''
+JHEP \textbf{12}, 067 (2025), arXiv:2508.06134.
+
+\bibitem{CosynWeissI2026}
+W.~Cosyn and C.~Weiss,
+``Semi-inclusive deep-inelastic scattering on a polarized spin-1 target. I. Cross section and spin observables,''
+arXiv:2603.23699 (2026), accepted in Phys.\ Rev.\ C.
+
+\bibitem{CosynWeissII2026}
+W.~Cosyn and C.~Weiss,
+``Semi-inclusive deep-inelastic scattering on a polarized spin-1 target. II. Deuteron and spectator nucleon tagging,''
+arXiv:2603.23700 (2026), accepted in Phys.\ Rev.\ C.
+
+\bibitem{PoudelEtAl2025}
+J.~Poudel et al.,
+``Spin 1 transverse momentum dependent tensor structure functions in CLAS12,''
+arXiv:2502.20044 (2025).
+
+\bibitem{HinoKumano1999}
+S.~Hino and S.~Kumano,
+``Structure functions in polarized Drell--Yan processes with spin-1/2 and spin-1 hadrons. I. General formalism,''
+Phys.\ Rev.\ D \textbf{59}, 094026 (1999), arXiv:hep-ph/9810425.
+
+\bibitem{KumanoSongDY2016}
+S.~Kumano and Q.-T.~Song,
+``Theoretical estimate on tensor-polarization asymmetry in proton-deuteron Drell--Yan process,''
+Phys.\ Rev.\ D \textbf{94}, 054022 (2016), arXiv:1606.03149.
+
+\bibitem{LuoEtAl2020}
+M.-x.~Luo, T.-Z.~Yang, H.~X.~Zhu, and Y.~J.~Zhu,
+``Unpolarized quark and gluon TMD PDFs and FFs at N\(^3\)LO,''
+JHEP \textbf{06}, 115 (2021), arXiv:2012.03256.
+
+\bibitem{ZhuHelicity2025}
+Y.~J.~Zhu,
+``The N\(^3\)LO twist-2 matching of helicity TMDs and SIDIS \(q_\ast\) spectrum,''
+arXiv:2509.01655 (2025).
+
+\bibitem{ZhuTransversity2025}
+Y.~J.~Zhu,
+``The N\(^3\)LO twist-2 matching of TMD quark transversity,''
+arXiv:2509.17568 (2025).
+
+\bibitem{ZhuLinearGluon2025}
+Y.~J.~Zhu,
+``The N\(^3\)LO twist-2 matching of linearly polarized gluon TMDs,''
+arXiv:2509.01703 (2025).
+
+\bibitem{DongEtAl2026}
+L.~Dong, S.~Fang, J.~Gao, H.~T.~Li, D.~Y.~Shao, H.~X.~Zhu, and Y.~J.~Zhu,
+``Two-dimensional transverse-momentum subtraction and semi-inclusive deep-inelastic scattering at N\(^3\)LO in QCD,''
+arXiv:2603.29673 (2026).
+
+\bibitem{NeumannCampbell2022}
+T.~Neumann and J.~Campbell,
+``Fiducial Drell--Yan production at the LHC improved by transverse-momentum resummation at N\(^4\)LL+N\(^3\)LO,''
+JHEP \textbf{03}, 145 (2023), arXiv:2207.07056.
+
+\bibitem{CamardaCieriFerrera2023}
+S.~Camarda, L.~Cieri, and G.~Ferrera,
+``Drell--Yan lepton-pair production: \(q_T\) resummation at approximate N\(^4\)LL+N\(^4\)LO accuracy,''
+Phys.\ Lett.\ B \textbf{845}, 138125 (2023), arXiv:2303.12781.
+
+\bibitem{ArroyoCastro2025}
+A.~Arroyo-Castro, I.~Scimemi, and A.~Vladimirov,
+``Leading \(q_T/Q\) correction for Drell--Yan in TMD factorization,''
+arXiv:2503.24336 (2025).
+
+\bibitem{ZhuSunYuan2013}
+R.~Zhu, P.~Sun, and F.~Yuan,
+``Low transverse momentum heavy quark pair production to probe gluon tomography,''
+Phys.\ Lett.\ B \textbf{727}, 474 (2013), arXiv:1309.0780.
+
+\bibitem{DelCastilloEtAl2020}
+R.~F.~del Castillo, M.~G.~Echevarria, Y.~Makris, and I.~Scimemi,
+``TMD factorization for dijet and heavy-meson pair in DIS,''
+JHEP \textbf{01}, 088 (2021), arXiv:2008.07531.
+
+\bibitem{RogersMulders2010}
+T.~C.~Rogers and P.~J.~Mulders,
+``No generalized TMD-factorization in the hadro-production of high transverse momentum hadrons,''
+Phys.\ Rev.\ D \textbf{81}, 094006 (2010), arXiv:1001.2977.
+
+\bibitem{BomhofMuldersPijlman2006}
+C.~J.~Bomhof, P.~J.~Mulders, and F.~Pijlman,
+``The construction of gauge-links in arbitrary hard processes,''
+Eur.\ Phys.\ J.\ C \textbf{47}, 147 (2006), arXiv:hep-ph/0601171.
+
+\bibitem{BoerEtAl2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson-loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{CaucalEtAl2026}
+P.~Caucal, P.~Gimeno-Estivill, E.~Iancu, T.~Lappi, and F.~Salazar,
+``TMD factorization in diffractive heavy-quark production in photon-nucleus collisions,''
+arXiv:2606.04169 (2026).
+
+\end{thebibliography}
+
+\end{document}

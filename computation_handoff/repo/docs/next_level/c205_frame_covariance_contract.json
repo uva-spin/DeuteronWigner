@@ -1,0 +1,64 @@
+{
+  "schema": "C205-FRAME-COVARIANCE-CONTRACT-V1",
+  "artifact": "frame_covariance_contract",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 frame_covariance_contract is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C205-FRAME-K9",
+        "resolution": "K9",
+        "frame": "caller C183 record",
+        "change": "global SU3 conjugation",
+        "orbit_invariant": true,
+        "representative_invariant": false,
+        "frame_selected": false,
+        "residual": "EXACT_SYMBOLIC_ZERO_COVARIANT_SCOPE",
+        "physical": false
+      },
+      {
+        "record_id": "C205-FRAME-K11",
+        "resolution": "K11",
+        "frame": "caller C183 record",
+        "change": "global SU3 conjugation",
+        "orbit_invariant": true,
+        "representative_invariant": false,
+        "frame_selected": false,
+        "residual": "EXACT_SYMBOLIC_ZERO_COVARIANT_SCOPE",
+        "physical": false
+      },
+      {
+        "record_id": "C205-FRAME-K13",
+        "resolution": "K13",
+        "frame": "caller C183 record",
+        "change": "global SU3 conjugation",
+        "orbit_invariant": true,
+        "representative_invariant": false,
+        "frame_selected": false,
+        "residual": "EXACT_SYMBOLIC_ZERO_COVARIANT_SCOPE",
+        "physical": false
+      }
+    ],
+    "count": 3,
+    "root": "f749dce22ecde0701c450a19c55acf9e98c5067509ae8fdcfb9d0acf9633e7b6"
+  }
+}

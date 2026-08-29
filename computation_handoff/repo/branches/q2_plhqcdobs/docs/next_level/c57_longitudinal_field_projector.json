@@ -1,0 +1,40 @@
+{
+  "conditional_context": "fixed-K support derived from kq=K-k_g>0 with APBC quark/PBC gluon",
+  "formula": "Pi_parallel(K)=sum_(k_g=1)^floor(K) |k_g><k_g|; k_g=0 is P0 control, not deleted",
+  "records": [
+    {
+      "rank": 4,
+      "resolution": "K9_2_N8_b0.40",
+      "support": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "rank": 5,
+      "resolution": "K11_2_N10_b0.45",
+      "support": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "rank": 6,
+      "resolution": "K13_2_N12_b0.50",
+      "support": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "status": "PASS"
+}

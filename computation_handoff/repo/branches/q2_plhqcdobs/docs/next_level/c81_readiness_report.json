@@ -1,0 +1,67 @@
+{
+  "C78_status": "C78_SOURCE_DERIVED_IFERM_CONTACT_SUPPORT_READY",
+  "C80_status": "C80_EXACT_SOURCE_CHAIN_DERIVED_IFCONTACT_KERNEL_EVALUATOR_READY",
+  "baseline": "0868a88422380339d9d5e0631830ba7528bd776f",
+  "blocker": "C81.C78_C80.PUBLIC_COORDINATE_COMPOSITION_CONTRACT",
+  "by_resolution": {
+    "K11_2_N10_b0.45": {
+      "C80_public_operation": "evaluate(ContactKernelCoordinate)",
+      "coordinate_id_rule": "C78:KAPPA:<emission-endpoint-id>:<emission-path-local>:<absorption-endpoint-id>:<absorption-path-local>",
+      "kernel_coordinates": 165991250,
+      "projected_coefficient": "C77COMP_bra*U3_bra * KAPPA[e,a] * C77COMP_ket*U3_ket",
+      "projected_value_status": "NOT_EVALUATED",
+      "support_payload_hash": "32679ddd0eeb9871cbe7dfef7d12ddf3c8450700cb98ed58260d9897230627c1",
+      "supported_pairs": 43350,
+      "total_coordinate_map_published": false,
+      "witness_id": "C78:W:d20f2a51031c45afaef5ae1cf5de5fa274689d640583b7f100ab070e1a6b6deb"
+    },
+    "K13_2_N12_b0.50": {
+      "C80_public_operation": "evaluate(ContactKernelCoordinate)",
+      "coordinate_id_rule": "C78:KAPPA:<emission-endpoint-id>:<emission-path-local>:<absorption-endpoint-id>:<absorption-path-local>",
+      "kernel_coordinates": 697394304,
+      "projected_coefficient": "C77COMP_bra*U3_bra * KAPPA[e,a] * C77COMP_ket*U3_ket",
+      "projected_value_status": "NOT_EVALUATED",
+      "support_payload_hash": "8a171c425c4179633ae057f6a1ea6b9d8f793556679fd1e548445105fdc84ed5",
+      "supported_pairs": 95256,
+      "total_coordinate_map_published": false,
+      "witness_id": "C78:W:f6e82ad844b066dc09141f7670f27f06d4450a18031d09492fa39bc7c044ad09"
+    },
+    "K9_2_N8_b0.40": {
+      "C80_public_operation": "evaluate(ContactKernelCoordinate)",
+      "coordinate_id_rule": "C78:KAPPA:<emission-endpoint-id>:<emission-path-local>:<absorption-endpoint-id>:<absorption-path-local>",
+      "kernel_coordinates": 28606464,
+      "projected_coefficient": "C77COMP_bra*U3_bra * KAPPA[e,a] * C77COMP_ket*U3_ket",
+      "projected_value_status": "NOT_EVALUATED",
+      "support_payload_hash": "2e90b304a4e6c97e0ce1a5ce3f25f1c81a32ba9b6722c1b5be455df6854bf7b4",
+      "supported_pairs": 16224,
+      "total_coordinate_map_published": false,
+      "witness_id": "C78:W:0151050230441ced289e709d320073cf64eb87f1e9296c79a9526f016d5b1d0b"
+    }
+  },
+  "forbidden_repairs": [
+    "infer coefficient from C77/C74 array position",
+    "assign unit projected coefficient",
+    "use a C53 propagator",
+    "use C58 self-induced inertia",
+    "select Pplus or g_s numerically",
+    "symmetrize a fabricated matrix"
+  ],
+  "matrix_status": "NOT_CONSTRUCTED",
+  "missing_objects": [
+    {
+      "object": "immutable C78 per-coordinate projected coefficient record",
+      "why": "C78 returns an algebraic string and NOT_EVALUATED rather than exact/certified coefficient and bound"
+    },
+    {
+      "object": "immutable total coordinate map C78:KAPPA -> C80 ContactKernelCoordinate",
+      "why": "C80 permits evaluation only after a caller supplies raw mode/color fields; C78 publishes only factorized domain rules"
+    },
+    {
+      "object": "C80 M-squared numerical coefficient",
+      "why": "C80 returns symbolic 2*P_plus conversion, so no numeric M2 entry can be aggregated without selecting Pplus"
+    }
+  ],
+  "next": "C82/IFAGG \u2014 materialize immutable per-coordinate projected coefficients and a total C78-coordinate-to-C80 coordinate map before any pair aggregation",
+  "status": "C81_IFCONTACT_PAIR_AGGREGATION_INCOMPLETE",
+  "unavailable_supported_pairs": 154830
+}

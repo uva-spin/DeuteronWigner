@@ -1,0 +1,61 @@
+{
+  "paths": {
+    "DY": [
+      "DataSet.LoadCSV",
+      "ART25 cutFunc",
+      "harpyInterface.ComputeXSec",
+      "DY.xSecList",
+      "Xsec_PTint_Qint_Yint",
+      "TMDF_F"
+    ],
+    "SIDIS": [
+      "DataSet.LoadCSV",
+      "ART25 cutFunc",
+      "harpyInterface.ComputeXSec",
+      "SIDIS.xSecList",
+      "xSecFULL",
+      "Xsec_Zint_Xint_Qint_PTint",
+      "TMDF_F"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "semantics": {
+    "DY": {
+      "electroweak": "source process code",
+      "fiducial": "per-point includeCuts/cutParams",
+      "hard_order": "N4LO",
+      "integration": [
+        "qT",
+        "Q^2",
+        "physical rapidity"
+      ],
+      "mode": "v3.01 compiled fast/approximate",
+      "native_call": "harpy.DY.xSecList",
+      "observable": "absolute cross section; optionally source-normalized by dataset flag",
+      "theory_factor": "applied by DataSet.MatchWithData",
+      "units": "pb converted in TMDX_DY, then dataset theory factor",
+      "w_only": true,
+      "y_term": false
+    },
+    "SIDIS": {
+      "fiducial": "source DIS cuts",
+      "hadron_charge": "process code and MAPFF set",
+      "hard_order": "N4LO",
+      "integration": [
+        "pT",
+        "z",
+        "x",
+        "Q^2"
+      ],
+      "mode": "v3.01 compiled fast/approximate",
+      "native_call": "harpy.SIDIS.xSecList",
+      "observable": "multiplicity",
+      "theory_factor": "includes source DIS normalization and bin convention",
+      "units": "dimensionless",
+      "w_only": true,
+      "y_term": false,
+      "z_convention": "source native SIDIS z"
+    }
+  },
+  "source_commit": "761f3fcdd3701c5cf69e822f9ffbbd5db394fc58"
+}

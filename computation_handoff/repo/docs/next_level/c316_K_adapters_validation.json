@@ -1,0 +1,35 @@
+{
+  "authority_record": {
+    "K_averaged": false,
+    "root": "123f850d39007ccb8add47b61329dd760044a242bf8bd81a25f348987b5af285",
+    "rows": [
+      {
+        "Nmax": 8,
+        "bHO_GeV": 0.4,
+        "complete": false,
+        "evaluator": "spectral_delta",
+        "resolution": "K9"
+      },
+      {
+        "Nmax": 10,
+        "bHO_GeV": 0.45,
+        "complete": false,
+        "evaluator": "spectral_delta",
+        "resolution": "K11"
+      },
+      {
+        "Nmax": 12,
+        "bHO_GeV": 0.5,
+        "complete": false,
+        "evaluator": "spectral_delta",
+        "resolution": "K13"
+      }
+    ]
+  },
+  "package_root": "56d63ee4443f62150eedcfcdb3ab2ca3b975bd88318a9fd3ef18832fb9484892",
+  "physical": false,
+  "plan": "RIMASSC43DETEVAL2-D",
+  "schema": "C316-K_ADAPTERS-VALIDATION-V1",
+  "status": "C316_EXECUTABLE_PARAMETERIZED_C43_DETERMINANT_AND_GRAM_FUNCTIONALS_READY_CALLER_PARAMETER_CAPSULE_MISSING",
+  "validation": "PASS"
+}

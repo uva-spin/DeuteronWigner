@@ -1,0 +1,55 @@
+{
+  "Z_NN": 0.8915758315064086,
+  "Z_NNPI": 0.10842416849359132,
+  "baryon_residual": 0.0,
+  "charge_channels": [
+    "pn_pi0",
+    "pp_piminus",
+    "nn_piplus"
+  ],
+  "charge_residual": 0.0,
+  "dimensions": [
+    30,
+    48
+  ],
+  "isospin_residual": 0.0,
+  "jz_residual": 0.0,
+  "normalization_residual": 0.0,
+  "parity_residual": 0.0,
+  "plans": [
+    {
+      "coherent": false,
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "n0_plan_id": "C15:N0:PLAN:3b0ad5c5eb4edb07764c",
+      "plan_id": "C16:N1:PLAN:e9c55ed24cd1633204f8",
+      "scope": "C16_N1_VALIDATION_ONLY",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    },
+    {
+      "coherent": false,
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "n0_plan_id": "C15:N0:PLAN:09f3eb01844fae6b3e82",
+      "plan_id": "C16:N1:PLAN:ba9b7abeeea3420f581b",
+      "scope": "C16_N1_VALIDATION_ONLY",
+      "wave_source": "NORFOLK:data/raw/norfolk/fdeut.nvia"
+    },
+    {
+      "coherent": false,
+      "h7_plan_id": "C14:H7:PLAN:01741c51ff49b3844630",
+      "n0_plan_id": "C15:N0:PLAN:bebd12ee7c3b58fe46ab",
+      "plan_id": "C16:N1:PLAN:316711848013bcb69aa1",
+      "scope": "C16_N1_VALIDATION_ONLY",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    },
+    {
+      "coherent": true,
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "n0_plan_id": "C15:N0:PLAN:3b0ad5c5eb4edb07764c",
+      "plan_id": "C16:N1:COHERENT:06ec2d3d9e8f66931ee8",
+      "scope": "C16_N1_VALIDATION_ONLY",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    }
+  ],
+  "plus_momentum_residual": 0.0,
+  "schema_version": "1.0.0"
+}

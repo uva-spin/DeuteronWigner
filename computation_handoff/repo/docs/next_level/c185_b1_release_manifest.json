@@ -1,0 +1,26 @@
+{
+  "decision": "B1_HIGHER_FOCK_BASES_READY_TRANSITIONS_PARTIAL",
+  "exact_scope": "qgg and qqbarq bases plus conditional transitions; qgg cubic/order-two frontier remains",
+  "gates": {
+    "basis_rank": true,
+    "count_once": true,
+    "free_resolvent": true,
+    "holonomy_BC": true,
+    "q_to_higher_order2": false,
+    "qg_qgg_cubic": false,
+    "qg_qgg_quark": true,
+    "qg_qqbarq": true,
+    "qgg_HO_CM": true,
+    "qgg_color_statistics": true,
+    "qgg_longitudinal": true,
+    "qqbarq_HO_CM": true,
+    "qqbarq_color_flavor_statistics": true,
+    "qqbarq_longitudinal": true,
+    "topology": true
+  },
+  "physical": false,
+  "plan": "B1HIGHERFOCK1-B",
+  "root": "8acb93a6fb405254ab071373db3204e6c92b8343e2639569ff48a3c60aabc596",
+  "schema": "C185-B1-RELEASE-V1",
+  "status": "C185_C184_B1_QGG_AND_QQBARQ_BASES_READY_TRANSITION_GRAPH_PARTIAL"
+}

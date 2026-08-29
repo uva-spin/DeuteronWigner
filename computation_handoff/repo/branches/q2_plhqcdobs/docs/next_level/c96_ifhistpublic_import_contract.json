@@ -1,0 +1,32 @@
+{
+  "contract": "C95-C96-IFHISTPUBLIC-V1",
+  "forbids": [
+    "expanded logical records",
+    "coefficient-times-kernel product",
+    "contact matrix/action",
+    "physical coupling",
+    "counterterm",
+    "TMD/matching",
+    "fit/inference/production",
+    "historical scientific reconstruction by consumer",
+    "C95 comparison execution before public inputs exist"
+  ],
+  "next_status_on_success": "C96_HISTORICAL_PUBLIC_INPUT_COMPLETE",
+  "objective": "Expose only missing C94 immutable historical public operations without changing C90, C93, C94 scientific content.",
+  "precondition": {
+    "C94_public_package_root": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+    "C95_status": "C95_IFEQUIV7_HISTORICAL_PUBLIC_INPUT_INCOMPLETE",
+    "baseline": "922f5a6e9d771561340992e84888db2ad1fd8328"
+  },
+  "required_operations": [
+    "historical_pair_normal_form",
+    "historical_pair_proof_inputs",
+    "historical_primitive_record"
+  ],
+  "requirements": [
+    "authenticated pagination and direct lookup",
+    "normal form/proof-input/primitive-record inclusion proofs",
+    "immutable no-recomputation loaders",
+    "complete public-domain equivalence tests"
+  ]
+}

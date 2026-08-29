@@ -1,0 +1,59 @@
+{
+  "channels_separate": true,
+  "count": 3,
+  "root": "e2966cd4f239efdff967b0db92dd18cc6b411d958f31a65504cdbfe0ab7f11b1",
+  "routes": [
+    "COLOR-A direct contraction",
+    "COLOR-B SU3 recoupling",
+    "COLOR-C ordered adjoint generators",
+    "COLOR-D Gram dual projector",
+    "COLOR-E all eight generators",
+    "COLOR-F daughter exchange"
+  ],
+  "rows": [
+    {
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QGG_COLOR_1S",
+      "exchange_parity": 1,
+      "hermitian_partner_coefficient": "0",
+      "normalization": "C185 unit Gram",
+      "open_triplet_orientation": "3",
+      "projection_coefficient": "0",
+      "projector": "C185 1_s Gram dual",
+      "source_color_tensor": "f^{abc}",
+      "source_record_id": "C129_G3_DIRECT_NORMAL_ORDERED",
+      "status": "EXACT_ZERO_WITH_ALGEBRAIC_PROJECTION",
+      "zero_certificate": "f^{abc} delta^{ab}=0"
+    },
+    {
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QGG_COLOR_8S",
+      "exchange_parity": 1,
+      "hermitian_partner_coefficient": "0",
+      "normalization": "C185 unit Gram",
+      "open_triplet_orientation": "3",
+      "projection_coefficient": "0",
+      "projector": "C185 8_s Gram dual",
+      "source_color_tensor": "f^{abc}",
+      "source_record_id": "C129_G3_DIRECT_NORMAL_ORDERED",
+      "status": "EXACT_ZERO_WITH_ALGEBRAIC_PROJECTION",
+      "zero_certificate": "f^{abc} d^{ab c'}=0"
+    },
+    {
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QGG_COLOR_8A",
+      "exchange_parity": -1,
+      "hermitian_partner_coefficient": "SOURCE_C43_NORMALIZED_F_TENSOR_HC",
+      "normalization": "C185 unit Gram and C184 GG_F",
+      "open_triplet_orientation": "3",
+      "projection_coefficient": "SOURCE_C43_NORMALIZED_F_TENSOR",
+      "projector": "C185 8_a Gram dual",
+      "source_color_tensor": "f^{abc}",
+      "source_record_id": "C129_G3_DIRECT_NORMAL_ORDERED",
+      "status": "SOURCE_DERIVED_NONZERO_SYMBOLIC",
+      "zero_certificate": null
+    }
+  ],
+  "schema": "C186-CUBIC-COLOR-V1",
+  "source_root": "861ed2ed9b47fb50366f0e335bbb5774f5f5d9e1c4d2b4e27fa93b66bea8f502"
+}

@@ -1,0 +1,13 @@
+{
+  "comparison_executed": false,
+  "later_axes": [
+    "C13/H6 explicit higher-Fock support",
+    "C14/H7 higher-Fock and order-two Wilson support"
+  ],
+  "primary": "C11/H4 T-even forward parent, PLAN-A, fine resolution, Wilson order zero",
+  "reason": "Only C11 supplies stable forward operator registry consumed by C29; C14 does not supply a scheme-qualified numerical TMD export.",
+  "schema_version": "1.0.0",
+  "selected": "C11_PRIMARY_WITH_LATER_LEVELS_AS_CONVERGENCE_AXES",
+  "selected_before_residuals": true,
+  "summed": false
+}

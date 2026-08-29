@@ -1,0 +1,432 @@
+{
+  "objects": [
+    {
+      "array_hash": "fb55236f594dedce1ce7b0f2b324cc5c6c84474263db4f5762066e8acf570835",
+      "conditional_domain": "fixed K",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "longitudinal_projector_diag",
+      "nnz": 4,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/longitudinal_projector_diag.npy",
+      "shape": [
+        4
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "972b52c45f4282e457450435007f349c538aeb12e95a852a4206adbaa013679d",
+      "conditional_domain": "fixed K",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "transverse_envelope_projector_diag",
+      "nnz": 36,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/transverse_envelope_projector_diag.npy",
+      "shape": [
+        36
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "ae17a2eebc232524e2b746fcab6d9977103f2958f6d86cc7abf24838c4b56569",
+      "conditional_domain": "incoming physical q basis id",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "conditional_field_projector_diag",
+      "nnz": 4216,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "conditional",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/conditional_field_projector_diag.npy",
+      "shape": [
+        6,
+        2304
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "8be8a08da9bf574bd4f1f9e6fa2a3d4547809105d2584087f79d0bd4f8938b1f",
+      "conditional_domain": "incoming physical q basis id",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "corresponding_qg_projector_diag",
+      "nnz": 312,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "conditional",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/corresponding_qg_projector_diag.npy",
+      "shape": [
+        6,
+        1344
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "c7f176ee38ebb2c48cc4e428bfe203818d7770ae693126722282b4174bdd31d3",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "commutator_kernel_samples",
+      "nnz": 486,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/commutator_kernel_samples.npy",
+      "shape": [
+        6,
+        9,
+        9
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "13619fd516673e8e05cc0ba94e3d7c951ca3900d47d646777a5951c9ac13b458",
+      "conditional_domain": "fixed K",
+      "dtype": "<i2",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "shell_labels",
+      "nnz": 2304,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/shell_labels.npy",
+      "shape": [
+        2304
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "f6f82159e69efa47ad2fe7b335d7f36876c1228a1c89f1f8b7946063b01ac279",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "P0",
+      "nnz": 1,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/P0.npy",
+      "shape": [
+        5,
+        5
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "27a9627a55be72585e4d2c73c5d470827701d6ed0036ffbfa86dd44fec70319a",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "Q0",
+      "nnz": 4,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K9_2_N8_b0.40",
+      "runtime_path": "data/runtime/c57_ifreg/K9_2_N8_b0.40/Q0.npy",
+      "shape": [
+        5,
+        5
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "c31c792670e68543e3de08841748dc8f6dd0f0ddab864474e93b18055e4a9294",
+      "conditional_domain": "fixed K",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "longitudinal_projector_diag",
+      "nnz": 5,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/longitudinal_projector_diag.npy",
+      "shape": [
+        5
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "8e8a0220460a53ec3a2f6f8d73aa1599b6e24eb549e6e729560762ef9d0788b7",
+      "conditional_domain": "fixed K",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "transverse_envelope_projector_diag",
+      "nnz": 55,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/transverse_envelope_projector_diag.npy",
+      "shape": [
+        55
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "d5446d5f3a2939be8551a684ede62376f36ffc58e9f96eb84ee0f8002d5221b9",
+      "conditional_domain": "incoming physical q basis id",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "conditional_field_projector_diag",
+      "nnz": 8330,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "conditional",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/conditional_field_projector_diag.npy",
+      "shape": [
+        6,
+        4400
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "68d3dbdfeabd1499e12f5c7dc278a44af8f85c742212f1ebe0100874ceab701d",
+      "conditional_domain": "incoming physical q basis id",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "corresponding_qg_projector_diag",
+      "nnz": 510,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "conditional",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/corresponding_qg_projector_diag.npy",
+      "shape": [
+        6,
+        2700
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "6bb0a0f7404f64ce4871ce9d12736bc37e643ec4e342971f941a110a276b9428",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "commutator_kernel_samples",
+      "nnz": 486,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/commutator_kernel_samples.npy",
+      "shape": [
+        6,
+        9,
+        9
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "02da57868fe4ef940941eac7c770e2847a240a93d536bf39bd2269837d8d0bf2",
+      "conditional_domain": "fixed K",
+      "dtype": "<i2",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "shell_labels",
+      "nnz": 4400,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/shell_labels.npy",
+      "shape": [
+        4400
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "9c7a204d6bb971d9ba2f11274d5d641b245afadc4a144b6d4403f3a36e01d2f1",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "P0",
+      "nnz": 1,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/P0.npy",
+      "shape": [
+        6,
+        6
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "d4bd43d470a9fdf17c87076084691be8b240cd49d150a9003df89a699e862252",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "Q0",
+      "nnz": 5,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K11_2_N10_b0.45",
+      "runtime_path": "data/runtime/c57_ifreg/K11_2_N10_b0.45/Q0.npy",
+      "shape": [
+        6,
+        6
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "ad8939ac3c465ba31d765e294e0dcfd2f2c0be3e51e580900db57eb0f65d98bb",
+      "conditional_domain": "fixed K",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "longitudinal_projector_diag",
+      "nnz": 6,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/longitudinal_projector_diag.npy",
+      "shape": [
+        6
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "5b8fa9b61c7a449de9da506172ac1337f38001338ac9743a9c635db33fd177dd",
+      "conditional_domain": "fixed K",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "transverse_envelope_projector_diag",
+      "nnz": 78,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/transverse_envelope_projector_diag.npy",
+      "shape": [
+        78
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "72af3ebc2fe6874ac2e50fdfd5d39c72cad904b2700a49837eb83fff927ef8c3",
+      "conditional_domain": "incoming physical q basis id",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "conditional_field_projector_diag",
+      "nnz": 14484,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "conditional",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/conditional_field_projector_diag.npy",
+      "shape": [
+        6,
+        7488
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "80aad472355c3b9f5e056e6d2cc3f548d6e0b7f365a48af8cb7068c6dfda7883",
+      "conditional_domain": "incoming physical q basis id",
+      "dtype": "|u1",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "corresponding_qg_projector_diag",
+      "nnz": 756,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "conditional",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/corresponding_qg_projector_diag.npy",
+      "shape": [
+        6,
+        4752
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "9d8bf2a4454e7085d0e184f6c1aa5cdd428083d15ba700c5cf0e82a8360cbfe9",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "commutator_kernel_samples",
+      "nnz": 486,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/commutator_kernel_samples.npy",
+      "shape": [
+        6,
+        9,
+        9
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "779902e06e8fd26a52d0c67e78d3695f974c0a52af72180c471802f4eddd5f79",
+      "conditional_domain": "fixed K",
+      "dtype": "<i2",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "shell_labels",
+      "nnz": 7488,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/shell_labels.npy",
+      "shape": [
+        7488
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "b2d18ad746e8aed5a40a47fcaad8663ed3c39ba76227b24bf87e0f2dc4b4f21b",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "P0",
+      "nnz": 1,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/P0.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    },
+    {
+      "array_hash": "bc0b7f52f230e4ed70ea756b460784d7e3fb9f33ba07c11ff2900857b477b3cb",
+      "conditional_domain": "fixed K",
+      "dtype": "<c16",
+      "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c57_ifreg_artifacts.py",
+      "name": "Q0",
+      "nnz": 6,
+      "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+      "projector_type": "factor projector/control",
+      "regulator_plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+      "resolution": "K13_2_N12_b0.50",
+      "runtime_path": "data/runtime/c57_ifreg/K13_2_N12_b0.50/Q0.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "dimensionless projector/kernel samples; L retained symbolically in longitudinal modes"
+    }
+  ],
+  "runtime_root": "data/runtime/c57_ifreg",
+  "status": "PASS"
+}

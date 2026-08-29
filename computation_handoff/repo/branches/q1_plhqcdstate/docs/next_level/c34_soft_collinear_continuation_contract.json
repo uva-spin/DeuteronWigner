@@ -1,0 +1,34 @@
+{
+  "citation_only_equivalence_used": false,
+  "content_hash": "f117a7ced9d9b3ac8a17dfb10ebfaea46c9f050d6a860badbe295a17941c69de",
+  "contract_id": "C34.C32.SOFT_COLLINEAR.CONTINUATION.v1",
+  "joint_regulator": {
+    "bT_convention": "COMMON_bT_INCLUSIVE_SOFT_LIMIT_REQUIRED",
+    "baryon_numbers": [
+      1,
+      0
+    ],
+    "collinear_regulator_id": "C32_REGULATOR_PLAN_K_NMAX_BHO_WITH_OFFSHELL_IR",
+    "collinear_root": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+    "compatibility_status": "SOFT_COLLINEAR_COMPATIBILITY_UNRESOLVED",
+    "joint_regulator_content_hash": "f8ad3dbb4ff22c83c790063a7c948c5d2454f6bb6d722f96e40104726060b021",
+    "joint_regulator_id": "C34.JOINT.C32.C33.REGULATOR.v1",
+    "measurement_id": "COMMON_bT_INCLUSIVE_SOFT_LIMIT_REQUIRED",
+    "parton_representation": "FUNDAMENTAL",
+    "rapidity_regulator": "MODIFIED_DELTA",
+    "remainder_id": "C34.REMAINDER.SOFT_COLLINEAR",
+    "shared_state": false,
+    "soft_regulator_id": "C33.SOFT.BASIS.LOG_CELL.v1",
+    "soft_root": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+    "uv_target_scheme": "MSBAR",
+    "wilson_geometry_id": "C33.SOFT.OP.FOUR_LINE.MODDELTA.v1",
+    "zero_bin_interface_id": "C34.ZERO_BIN.C32_TO_C34_SOFT_LIMIT.v1"
+  },
+  "off_shell_ir_conversion_proved": false,
+  "operator_identical_test_ready": false,
+  "overlap_subtraction_multiplicity": 1,
+  "same_b_convention_proved": false,
+  "same_measurement_proved": false,
+  "schema_version": "1.0.0",
+  "status": "SOFT_COLLINEAR_COMPATIBILITY_UNRESOLVED"
+}

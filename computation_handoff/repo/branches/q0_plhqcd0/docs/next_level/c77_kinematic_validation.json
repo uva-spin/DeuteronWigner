@@ -1,0 +1,62 @@
+{
+  "P3_idempotence": 3.624202287500099e-16,
+  "U3_isometry": 3.8459253727671276e-16,
+  "by_resolution": {
+    "K11_2_N10_b0.45": {
+      "15_leakage": 0,
+      "J_kin_shape": [
+        9900,
+        900
+      ],
+      "J_phys_shape": [
+        237600,
+        2700
+      ],
+      "anti_sextet_leakage": 0,
+      "cm_ground_transverse_dimension": 225,
+      "exact_CM_excited_leakage": 0,
+      "projector_hermiticity_residual": 6.821210353647142e-13,
+      "projector_idempotence_residual": 6.661338153265476e-16,
+      "roundtrip_residual": 3.3306718973174304e-16
+    },
+    "K13_2_N12_b0.50": {
+      "15_leakage": 0,
+      "J_kin_shape": [
+        24024,
+        1584
+      ],
+      "J_phys_shape": [
+        576576,
+        4752
+      ],
+      "anti_sextet_leakage": 0,
+      "cm_ground_transverse_dimension": 396,
+      "exact_CM_excited_leakage": 0,
+      "projector_hermiticity_residual": 2.160049916811011e-12,
+      "projector_idempotence_residual": 6.661338149129572e-16,
+      "roundtrip_residual": 3.3306697797361844e-16
+    },
+    "K9_2_N8_b0.40": {
+      "15_leakage": 0,
+      "J_kin_shape": [
+        3360,
+        448
+      ],
+      "J_phys_shape": [
+        80640,
+        1344
+      ],
+      "anti_sextet_leakage": 0,
+      "cm_ground_transverse_dimension": 112,
+      "exact_CM_excited_leakage": 0,
+      "projector_hermiticity_residual": 1.1368687922622287e-13,
+      "projector_idempotence_residual": 4.440892131587851e-16,
+      "roundtrip_residual": 3.3306803676289514e-16
+    }
+  },
+  "max_projector_hermiticity": 2.160049916811011e-12,
+  "max_projector_idempotence": 6.661338153265476e-16,
+  "max_roundtrip": 3.3306803676289514e-16,
+  "pass": true,
+  "status": "C77_EXACT_SOURCE_CHAIN_DERIVED_QG_EMBEDDING_READY"
+}

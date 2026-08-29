@@ -1,0 +1,288 @@
+{
+  "all_detected": true,
+  "count": 40,
+  "injections": [
+    {
+      "description": "non-unit sector probabilities",
+      "diagnostic_code": "C4.STATE.PROBABILITY",
+      "stable_id": "C4.INJECT.01",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "wrong baryon number",
+      "diagnostic_code": "C4.SEA_LEDGER.BARYON",
+      "stable_id": "C4.INJECT.02",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "pair changes electric charge",
+      "diagnostic_code": "C4.SEA_LEDGER.CHARGE",
+      "stable_id": "C4.INJECT.03",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "wrong antiquark generator sign",
+      "diagnostic_code": "C4.SEA_COLOR.ANTISIGN",
+      "stable_id": "C4.INJECT.04",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "non-singlet five-parton tensor",
+      "diagnostic_code": "C4.SEA_COLOR.NONSINGLET",
+      "stable_id": "C4.INJECT.05",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "duplicate antiquark active multiplicity",
+      "diagnostic_code": "C4.ACTIVE.DUPLICATE",
+      "stable_id": "C4.INJECT.06",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "negative-x antiquark copy",
+      "diagnostic_code": "C4.ACTIVE.NEGATIVE_X",
+      "stable_id": "C4.INJECT.07",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "antiquark without sea or induced sector",
+      "diagnostic_code": "C4.ZERO.ANTIQUARK",
+      "stable_id": "C4.INJECT.08",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "qqq singlet times free gluon",
+      "diagnostic_code": "C4.GLUON_COLOR.FREE_GLUON",
+      "stable_id": "C4.INJECT.09",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "non-singlet qqqg tensor",
+      "diagnostic_code": "C4.GLUON_COLOR.NONSINGLET",
+      "stable_id": "C4.INJECT.10",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "omitted adjoint generator",
+      "diagnostic_code": "C4.GLUON_COLOR.ADJOINT",
+      "stable_id": "C4.INJECT.11",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "wrong gluon active slot",
+      "diagnostic_code": "C4.ACTIVE.SPECIES",
+      "stable_id": "C4.INJECT.12",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "gluon without explicit or induced sector",
+      "diagnostic_code": "C4.ZERO.GLUON",
+      "stable_id": "C4.INJECT.13",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "non-unit plus momentum",
+      "diagnostic_code": "C4.LEDGER.MOMENTUM",
+      "stable_id": "C4.INJECT.14",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "copied or sign-flipped recoil",
+      "diagnostic_code": "C3.RECOIL.PHYSICAL",
+      "stable_id": "C4.INJECT.15",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "incompatible momentum fibers",
+      "diagnostic_code": "C3.FIBER",
+      "stable_id": "C4.INJECT.16",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "off-diagonal overlap without source",
+      "diagnostic_code": "C3.KERNEL.SECTOR",
+      "stable_id": "C4.INJECT.17",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "physical f/d assignment at order zero",
+      "diagnostic_code": "C4.GLUON.TODD",
+      "stable_id": "C4.INJECT.18",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "TMD route at nonzero transfer",
+      "diagnostic_code": "C4.TMD_ROUTE.TRANSFER",
+      "stable_id": "C4.INJECT.19",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "GPD discards path identity",
+      "diagnostic_code": "C4.GPD_ROUTE.IDENTITY",
+      "stable_id": "C4.INJECT.20",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "regulated staple promoted to physical",
+      "diagnostic_code": "C4.MATCHING_STATUS.PHYSICAL",
+      "stable_id": "C4.INJECT.21",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "PDF route mismatch",
+      "diagnostic_code": "C4.PDF_ROUTE.CLOSURE",
+      "stable_id": "C4.INJECT.22",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "post-reduction normalization",
+      "diagnostic_code": "C4.ROUTE.NORMALIZATION",
+      "stable_id": "C4.INJECT.23",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "quark current uses q plus qbar",
+      "diagnostic_code": "C4.CURRENT_ROUTE.SIGN",
+      "stable_id": "C4.INJECT.24",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "gluon number current",
+      "diagnostic_code": "C4.CURRENT_ROUTE.GLUON_NUMBER",
+      "stable_id": "C4.INJECT.25",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "quark Mellin convention on gluon",
+      "diagnostic_code": "C4.GLUON_LEDGER.MELLIN",
+      "stable_id": "C4.INJECT.26",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "direct sequential current mismatch",
+      "diagnostic_code": "C4.ROUTE_CLOSURE",
+      "stable_id": "C4.INJECT.27",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "singular Feshbach resolvent",
+      "diagnostic_code": "C4.FESHBACH.SINGULAR",
+      "stable_id": "C4.INJECT.28",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "POP omits induced term",
+      "diagnostic_code": "C4.FESHBACH.POP_ONLY",
+      "stable_id": "C4.INJECT.29",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "explicit and induced enabled together",
+      "diagnostic_code": "C4.INDUCED_OPERATOR.DOUBLE_COUNT",
+      "stable_id": "C4.INJECT.30",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "C4 connects to production root",
+      "diagnostic_code": "C4.ISOLATE.PROVENANCE",
+      "stable_id": "C4.INJECT.31",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "production registry mutation",
+      "diagnostic_code": "C4.REGRESS.REGISTRY",
+      "stable_id": "C4.INJECT.32",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "C2 graph or plan mutation",
+      "diagnostic_code": "C4.REGRESS.C2_GRAPH",
+      "stable_id": "C4.INJECT.33",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "C3 benchmark mutation",
+      "diagnostic_code": "C4.REGRESS.C3_MANIFEST",
+      "stable_id": "C4.INJECT.34",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "C4 overlap enters production builder",
+      "diagnostic_code": "C4.ISOLATE.BUILDER",
+      "stable_id": "C4.INJECT.35",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "nonzero skewness",
+      "diagnostic_code": "C3.FIBER.XI",
+      "stable_id": "C4.INJECT.36",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "nonzero Wilson order",
+      "diagnostic_code": "C4.ZERO.WILSON",
+      "stable_id": "C4.INJECT.37",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "T-odd phase in analytic core",
+      "diagnostic_code": "C4.GLUON.TODD",
+      "stable_id": "C4.INJECT.38",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "required unspecified metadata",
+      "diagnostic_code": "C4.MATCHING_STATUS.UNSPECIFIED",
+      "stable_id": "C4.INJECT.39",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    },
+    {
+      "description": "nondeterministic serialization",
+      "diagnostic_code": "C4.DOC.ORDERING",
+      "stable_id": "C4.INJECT.40",
+      "status": "PASS_DETECTED",
+      "test": "tests/test_c4_injections.py"
+    }
+  ],
+  "requirement_id": "C4.INJECT",
+  "schema_version": "1.0.0"
+}

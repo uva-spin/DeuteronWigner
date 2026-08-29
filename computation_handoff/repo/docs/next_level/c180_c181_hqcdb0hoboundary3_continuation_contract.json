@@ -1,0 +1,26 @@
+{
+  "continuation": "C181/HQCDB0HOBOUNDARY3",
+  "first_remaining_object": "C180-C176-BOUNDARY-OWNERSHIP-REFINEMENT",
+  "nonclaims": [
+    "no endpoint evaluation",
+    "no Wilson coefficient",
+    "no ghost-link kernel",
+    "no self-energy",
+    "no physical TMD",
+    "no BRST/ST",
+    "no counterterm/null",
+    "no quantum object"
+  ],
+  "parent": "C180/HQCDB0RESLINKSCHEME1",
+  "parent_commit": "c3e6a56ebfeafa523e65efaa972a3a570e2f1c3847d8baf894dfb3c22ead4dd2",
+  "parent_plan": "B0RESLINKSCHEME1-H",
+  "parent_status": "C180_HQCDB0RESLINKSCHEME1_BOUNDARY_OWNERSHIP_INCOMPLETE",
+  "push": false,
+  "reason": "full vector and ordered degree-two scheme programs close, but C176 retained/boundary/source-scope decomposition remains incomplete",
+  "required_scope": [
+    "refine C176 boundary ownership for affine-to-XY and affine-to-YX full-mode conversions",
+    "retain source-scope remainder separately",
+    "preserve K9/K11/K13 leakage"
+  ],
+  "schema": "C180-C181-HQCDB0HOBOUNDARY3-CONTINUATION-V1"
+}

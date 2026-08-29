@@ -1,0 +1,110 @@
+{
+  "records": [
+    {
+      "domain": "REGULATED_VALIDATION",
+      "evidence": "REGULATOR_EXACT_UNMATCHED",
+      "evolution": "C21 VALIDATION ONLY",
+      "executable_common_tmd": false,
+      "flavor": "u",
+      "fock_content": "H3 QQQ+QQQG+QQQUUBAR+QQQDDBAR",
+      "hamiltonian_plan": "C11/H4 correlated H3 parent",
+      "matching": "C19-C22 VALIDATION IDENTITIES ONLY",
+      "mu_zeta": "DECLARED IDENTITY; NO COMMON NUMERICAL EXPORT",
+      "positive_x_antiquark": false,
+      "primary_parent_ids": [
+        "C11.OP.f3a60b.PROTON.u",
+        "C11.OP.19b1ad.PROTON.u"
+      ],
+      "projector": "C11 direct-forward rank-zero T-even reduction",
+      "rank": 0,
+      "regulator": "FINITE_BASIS_H4",
+      "resolution": "C11 FINE primary; coarse/medium convergence",
+      "root_id": "PROJECT_MICROSCOPIC_OPERATOR_ROOT",
+      "scheme": "C30.SCHEME.PROJECT",
+      "stable_id": "C30.MIC.DEF.U",
+      "stored_scalar": "REGULATED_DIMENSIONLESS_PARENT_NOT_PHYSICAL_TMDPDF",
+      "target": "PROTON",
+      "wilson_order": 0
+    },
+    {
+      "domain": "REGULATED_VALIDATION",
+      "evidence": "REGULATOR_EXACT_UNMATCHED",
+      "evolution": "C21 VALIDATION ONLY",
+      "executable_common_tmd": false,
+      "flavor": "d",
+      "fock_content": "H3 QQQ+QQQG+QQQUUBAR+QQQDDBAR",
+      "hamiltonian_plan": "C11/H4 correlated H3 parent",
+      "matching": "C19-C22 VALIDATION IDENTITIES ONLY",
+      "mu_zeta": "DECLARED IDENTITY; NO COMMON NUMERICAL EXPORT",
+      "positive_x_antiquark": false,
+      "primary_parent_ids": [
+        "C11.OP.f3a60b.PROTON.d",
+        "C11.OP.19b1ad.PROTON.d"
+      ],
+      "projector": "C11 direct-forward rank-zero T-even reduction",
+      "rank": 0,
+      "regulator": "FINITE_BASIS_H4",
+      "resolution": "C11 FINE primary; coarse/medium convergence",
+      "root_id": "PROJECT_MICROSCOPIC_OPERATOR_ROOT",
+      "scheme": "C30.SCHEME.PROJECT",
+      "stable_id": "C30.MIC.DEF.D",
+      "stored_scalar": "REGULATED_DIMENSIONLESS_PARENT_NOT_PHYSICAL_TMDPDF",
+      "target": "PROTON",
+      "wilson_order": 0
+    },
+    {
+      "domain": "REGULATED_VALIDATION",
+      "evidence": "REGULATOR_EXACT_UNMATCHED",
+      "evolution": "C21 VALIDATION ONLY",
+      "executable_common_tmd": false,
+      "flavor": "ubar",
+      "fock_content": "H3 QQQ+QQQG+QQQUUBAR+QQQDDBAR",
+      "hamiltonian_plan": "C11/H4 correlated H3 parent",
+      "matching": "C19-C22 VALIDATION IDENTITIES ONLY",
+      "mu_zeta": "DECLARED IDENTITY; NO COMMON NUMERICAL EXPORT",
+      "positive_x_antiquark": true,
+      "primary_parent_ids": [
+        "C11.OP.f3a60b.PROTON.ubar",
+        "C11.OP.19b1ad.PROTON.ubar"
+      ],
+      "projector": "C11 direct-forward rank-zero T-even reduction",
+      "rank": 0,
+      "regulator": "FINITE_BASIS_H4",
+      "resolution": "C11 FINE primary; coarse/medium convergence",
+      "root_id": "PROJECT_MICROSCOPIC_OPERATOR_ROOT",
+      "scheme": "C30.SCHEME.PROJECT",
+      "stable_id": "C30.MIC.DEF.UBAR",
+      "stored_scalar": "REGULATED_DIMENSIONLESS_PARENT_NOT_PHYSICAL_TMDPDF",
+      "target": "PROTON",
+      "wilson_order": 0
+    },
+    {
+      "domain": "REGULATED_VALIDATION",
+      "evidence": "REGULATOR_EXACT_UNMATCHED",
+      "evolution": "C21 VALIDATION ONLY",
+      "executable_common_tmd": false,
+      "flavor": "dbar",
+      "fock_content": "H3 QQQ+QQQG+QQQUUBAR+QQQDDBAR",
+      "hamiltonian_plan": "C11/H4 correlated H3 parent",
+      "matching": "C19-C22 VALIDATION IDENTITIES ONLY",
+      "mu_zeta": "DECLARED IDENTITY; NO COMMON NUMERICAL EXPORT",
+      "positive_x_antiquark": true,
+      "primary_parent_ids": [
+        "C11.OP.f3a60b.PROTON.dbar",
+        "C11.OP.19b1ad.PROTON.dbar"
+      ],
+      "projector": "C11 direct-forward rank-zero T-even reduction",
+      "rank": 0,
+      "regulator": "FINITE_BASIS_H4",
+      "resolution": "C11 FINE primary; coarse/medium convergence",
+      "root_id": "PROJECT_MICROSCOPIC_OPERATOR_ROOT",
+      "scheme": "C30.SCHEME.PROJECT",
+      "stable_id": "C30.MIC.DEF.DBAR",
+      "stored_scalar": "REGULATED_DIMENSIONLESS_PARENT_NOT_PHYSICAL_TMDPDF",
+      "target": "PROTON",
+      "wilson_order": 0
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status": "MICROSCOPIC_DEFINITION_AUDITED_COMMON_TMD_UNAVAILABLE"
+}

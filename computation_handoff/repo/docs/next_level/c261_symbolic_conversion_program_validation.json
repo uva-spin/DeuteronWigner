@@ -1,0 +1,78 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "symbolic_conversion_program_validation",
+  "authority_record": {
+    "MSbar_condition": "subtract UV poles including EOM/BRST/evanescent counterterms in identical ordering",
+    "RI_condition": "Zq_RI^-nleg Z_RI A projected at symmetric point = I4",
+    "amplitude": "A_ij=delta_ij+(alpha_s/4pi)[Apole_ij/epsilon+Afinite_ij]+O(alpha_s^2)",
+    "conversion": "C_MSbar<-RI = Z_MSbar (Z_RI)^-1",
+    "executable_semantics_complete": true,
+    "inputs": {
+      "alpha_s": "symbolic",
+      "epsilon": "dimensional regulator",
+      "mu2": "positive symbolic",
+      "nf": "explicit integer label",
+      "operator_order": [
+        "I2_density_projector",
+        "derivative_density",
+        "CM_ground",
+        "triplet_projected"
+      ],
+      "tree_response": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    "loop_values": "UNAVAILABLE_NOT_ZERO_C262",
+    "output_schema": {
+      "Z_MSbar": "4x4 exact symbolic",
+      "Z_RI": "4x4 exact symbolic",
+      "conversion": "4x4 exact symbolic/numeric",
+      "gamma": "4x4",
+      "uncertainty": "per entry and correlated"
+    },
+    "reduction_steps": [
+      "generate eight topology tensors",
+      "D-dimensional Dirac/color reduction",
+      "project with four C260 duals",
+      "IBP/Feynman-parameter reduction to symmetric massless master integrals",
+      "separate 1/epsilon_UV and finite parts",
+      "include wavefunction and evanescent finite subtraction",
+      "verify pole cancellation in conversion",
+      "emit exact 4x4 matrix plus uncertainty record"
+    ],
+    "root": "d0751a46a3cc72854bf6993106d99c01ed686cda1cde08fa1d250fb6edb005ea"
+  },
+  "package_root": "b8326f78014113be619c70f2c6f8a8174d55c80b11892a4cd9ef2b41b762b4b2",
+  "physical": false,
+  "plan": "C117CONTTARGET1-B",
+  "schema": "C261-SYMBOLIC_CONVERSION_PROGRAM-VALIDATION-V1",
+  "status": "C261_PROJECT_C117_RI_SMOM_V1_EXACT_SYMBOLIC_CONVERSION_PROGRAM_READY_LOOP_EVALUATION_REMAINS",
+  "validation": "PASS"
+}

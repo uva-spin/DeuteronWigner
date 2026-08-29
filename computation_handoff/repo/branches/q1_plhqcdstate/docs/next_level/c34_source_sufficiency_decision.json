@@ -1,0 +1,30 @@
+{
+  "content_hash": "e3b6a8df0326913788243dbcb0ba75aa1cb1b7eefd3c1326d733a42c53f2f7c5",
+  "finite_basis_one_loop": "UNAVAILABLE_NONZERO_UNKNOWN",
+  "missing_calculations": [
+    "Specify normalized finite-cell mode functions and gauge-complete B=0 inner product.",
+    "Construct the covariant-gauge soft action/propagator including BRST, ghost, constrained, and instantaneous sectors.",
+    "Implement analytic singular-cell subtraction and cell-integrated eikonal matrix elements at R1-R3.",
+    "Construct and evaluate the exact-zero-mode control sector required by the frozen C33 policy.",
+    "Implement transverse-infinity closure and cusp/endpoint junction operators in the finite basis.",
+    "Evaluate every one-loop real, virtual, self-energy, boundary, gauge, ghost, and vacuum contribution.",
+    "Extract separate power, logarithmic, cusp, endpoint, UV, and modified-delta rapidity counterterms.",
+    "Complete an independent continuum integral reconstruction and finite-basis-to-continuum conversion.",
+    "Execute the three-resolution trajectory and holdout tests before any soft-collinear continuation."
+  ],
+  "next_package": "C35/S0C",
+  "next_package_description": "targeted unresolved soft-diagram and counterterm completion",
+  "outcome_branch": "G",
+  "primary_no_go": "C34_SOFT_ONE_LOOP_INCOMPLETE",
+  "resolved_c33_baseline": "e0b34c74e8f39c9d42cf49cc598f1533d9353a7e",
+  "schema_version": "1.0.0",
+  "secondary_no_go_statuses": [
+    "C34_SOFT_GAUGE_CLOSURE_FAILED_NOT_TESTABLE",
+    "C34_SOFT_RAPIDITY_RENORMALIZATION_UNRESOLVED",
+    "C34_SOFT_ZERO_MODE_COMPLETION_REQUIRED",
+    "C34_SOFT_CONTINUUM_TRAJECTORY_UNRESOLVED",
+    "C34_SOFT_REGULATOR_CONVERSION_UNAVAILABLE"
+  ],
+  "status": "C34_SOURCE_SUFFICIENCY_DECISION_COMPLETE",
+  "tree_and_current_contracts": "STRUCTURALLY_VALIDATED"
+}

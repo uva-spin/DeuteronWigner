@@ -1,0 +1,92 @@
+{
+  "prototype_overwritten": false,
+  "records": [
+    {
+      "color_decomposition": "Born color diagonal",
+      "endpoint_terms": "delta(1-x)",
+      "expression": "delta(1-x)",
+      "family": "QUARK_U",
+      "gamma5_conversion": "NOT_APPLICABLE",
+      "independent_mellin_check": {
+        "expected": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "maximum_residual": 0.0,
+        "moments": [
+          1,
+          2,
+          3
+        ],
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "independent_x_check": {
+        "convolution": 2.0,
+        "expected": 2.0,
+        "residual": 0.0,
+        "test_function": "1+x"
+      },
+      "order": "LO",
+      "relation": "BENCHMARKED_BY",
+      "scheme": "MSBAR_TMD_SOURCE_INTERFACE",
+      "scope": "SOURCE_VALIDATION_ONLY",
+      "source": "arXiv:1111.4996",
+      "source_hash": "acdad21769698db6af7f4d1a2850c1bf0d6840436367edc586ebdee2b45afe32",
+      "source_locator": "Eq. (4.8), alpha_s^0 term",
+      "source_qualified": true,
+      "stable_id": "C24.COEFF.QUARK_U",
+      "supersedes": "C22_VALIDATION_PROTOTYPE_QUARK_U"
+    },
+    {
+      "blocking_reasons": [
+        "OPERATOR_SPECIFIC_SAME_LOCAL_COEFFICIENT_PROOF_NOT_INGESTED",
+        "GAMMA5_SCHEME_ROUTE_INCOMPLETE"
+      ],
+      "family": "QUARK_LL",
+      "source_qualified": false,
+      "stable_id": "C24.COEFF.QUARK_LL"
+    },
+    {
+      "blocking_reasons": [
+        "OPERATOR_SPECIFIC_EXACT_EXPRESSION_NOT_INGESTED",
+        "GAMMA5_CONVERSION_NOT_SOURCE_LOCKED"
+      ],
+      "family": "QUARK_HELICITY",
+      "source_qualified": false,
+      "stable_id": "C24.COEFF.QUARK_HELICITY"
+    },
+    {
+      "blocking_reasons": [
+        "OPERATOR_SPECIFIC_EXACT_EXPRESSION_NOT_INGESTED"
+      ],
+      "family": "QUARK_TRANSVERSITY",
+      "source_qualified": false,
+      "stable_id": "C24.COEFF.QUARK_TRANSVERSITY"
+    },
+    {
+      "blocking_reasons": [
+        "EXACT_PROCESS_SPECIFIC_COEFFICIENT_ANCILLARY_NOT_INGESTED",
+        "GLUON_BOUNDARY_UNAVAILABLE"
+      ],
+      "family": "GLUON_U",
+      "source_qualified": false,
+      "stable_id": "C24.COEFF.GLUON_U"
+    },
+    {
+      "blocking_reasons": [
+        "EXACT_RANK_TWO_SOURCE_CHAIN_INCOMPLETE",
+        "GLUON_CS_LARGEB_UNAVAILABLE"
+      ],
+      "family": "GLUON_LINEAR",
+      "source_qualified": false,
+      "stable_id": "C24.COEFF.GLUON_LINEAR"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_qualified": 1
+}

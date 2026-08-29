@@ -1,0 +1,3 @@
+# C64/QGTM2 artifact-integrity completion
+
+C64 materializes 733 immutable C62 shell/m blocks and 171153 exact candidate coefficients with threshold-free status arrays, canonical C62 expression records, directed-interval float64 enclosures, hashes, deterministic paths, and a read-only import API. C62 remains scientifically unchanged; C63 remains an explicit historical import blocker now superseded by this descendant artifact layer. Status: `C64_SOURCE_DERIVED_EXACT_TM_ARTIFACTS_READY`. Next: **C65/QGEMBED3 — exact CM-ground and color-triplet physical qg embedding and descendant-impact closure**. No physical qg embedding, endpoint/witness/contact object, or local-HQCD operator is created.

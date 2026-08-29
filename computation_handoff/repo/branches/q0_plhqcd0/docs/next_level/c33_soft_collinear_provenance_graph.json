@@ -1,0 +1,48 @@
+{
+  "acyclic": true,
+  "edges": [
+    {
+      "from": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+      "relation": "SOFT_LIMIT_REQUIRED",
+      "to": "C33.ZERO_BIN.INTERFACE"
+    },
+    {
+      "from": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+      "relation": "TARGET_SOFT_LIMIT_REQUIRED",
+      "to": "C33.ZERO_BIN.INTERFACE"
+    },
+    {
+      "from": "C33.ZERO_BIN.INTERFACE",
+      "relation": "BLOCKED_UNTIL_C34",
+      "to": "PROJECT_TMD_SCHEME"
+    }
+  ],
+  "forbidden_edges": [
+    "SOFT_ROOT_TO_PROTON_NORMALIZATION",
+    "ART25_TO_SOFT_ROOT",
+    "BRIDGE_RESIDUAL_TO_SOFT_ROOT"
+  ],
+  "nodes": [
+    {
+      "id": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+      "kind": "COLLINEAR_B1",
+      "mutable": false
+    },
+    {
+      "id": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+      "kind": "VACUUM_SOFT_B0",
+      "mutable": false
+    },
+    {
+      "executable": false,
+      "id": "C33.ZERO_BIN.INTERFACE",
+      "kind": "OVERLAP_MAP"
+    },
+    {
+      "executable_from_c33": false,
+      "id": "PROJECT_TMD_SCHEME",
+      "kind": "TARGET_SCHEME"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

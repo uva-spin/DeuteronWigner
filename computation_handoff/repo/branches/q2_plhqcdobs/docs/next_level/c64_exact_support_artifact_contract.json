@@ -1,0 +1,10 @@
+{
+  "format": "dense uint8 status array; no magnitude test",
+  "schema": "C64-QGTM2-ARTIFACT-V1",
+  "status_codes": {
+    "NONZERO_EXACT_ALGEBRAIC": 3,
+    "ZERO_BY_EXACT_ALGEBRAIC_CANCELLATION": 2,
+    "ZERO_BY_EXACT_M_RULE": 1,
+    "ZERO_BY_EXACT_SHELL_RULE": 0
+  }
+}

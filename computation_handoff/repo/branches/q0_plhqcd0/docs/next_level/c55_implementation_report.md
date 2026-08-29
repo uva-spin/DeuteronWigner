@@ -1,0 +1,3 @@
+# C55/IFERM fail-closed correction
+
+C55 resolves C54's action-level ambiguity: SB Eq.(24) and BPP Eq.(2.97) are convention-mapped, the g_s² coefficient closes by direct and symbolic-derivative routes, and all 14 non-vacuum monomials are enumerated. BPP requires retaining the a a† one-pair self-induced-inertia contraction, but the C45/C47 chain has no source-qualified finite-HO regulator/subtraction and counterterm typing for it. C55 therefore stops at `C55_IFERM_NORMAL_ORDERING_CONTRACT_INCOMPLETE` without creating a contact matrix or replacing it with C53 propagation. Next: **C56/IFNORM — operator-monomial, contraction, self-induced-inertia, and block-scope completion**.

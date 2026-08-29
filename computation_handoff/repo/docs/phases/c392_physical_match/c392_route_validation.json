@@ -1,0 +1,24 @@
+{
+  "package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "physical": false,
+  "plan": "PHYSICALMATCHPHASE1-B",
+  "record": {
+    "Hermiticity": "PASS_BY_ADJOINT_SCHEMA",
+    "K9_K11_K13_separate": true,
+    "common_IR_identity": "PASS",
+    "count_once": "PASS",
+    "distribution_support": "PASS",
+    "orientation": "PASS",
+    "projector_rank": 4,
+    "root": "1664345017fdd17c7734bbb4814fc74875e746342f43be2caa0bc421d5ca99ee",
+    "routes": [
+      "continuum projector-first",
+      "finite-basis functional-first",
+      "source/sink adjoint",
+      "scheme round-trip"
+    ],
+    "standard_numeric_conversion": "UNAVAILABLE_NOT_ZERO",
+    "units": "PASS_SYMBOLIC"
+  },
+  "status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT"
+}

@@ -1,0 +1,34 @@
+{
+  "component_definition": "v_plus_minus=(v0+/-v3)/sqrt(2)",
+  "content_hash": "7de80904050da4df4c99f9c19a408a468f95feabe689984f47740af3ba83e53d",
+  "convention_id": "C35.LF.CONVENTION.SQRT2.v1",
+  "fourier_convention": "A(x)=integral[d4k/(2pi)^4] exp(-i k.x) A(k)",
+  "k_squared": "2*k_plus*k_minus-kT_squared",
+  "metric_signature": "+---",
+  "n": [
+    0.7071067811865475,
+    0.0,
+    0.0,
+    0.7071067811865475
+  ],
+  "n_dot_k_is": "k_minus",
+  "n_dot_nbar": 0.9999999999999998,
+  "n_squared": 0.0,
+  "nbar": [
+    0.7071067811865475,
+    0.0,
+    0.0,
+    -0.7071067811865475
+  ],
+  "nbar_dot_k_is": "k_plus",
+  "nbar_squared": 0.0,
+  "reconstruction_residual_max": 2.220446049250313e-16,
+  "schema_version": "1.0.0",
+  "status": "C35_LIGHT_FRONT_NORMALIZATION_VALIDATED",
+  "test_vector": [
+    2.0,
+    0.1,
+    -0.2,
+    0.5
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "edges": [
+    {
+      "coupling_degree": 1,
+      "edge_id": "C185-QG-QGG-QUARK-EMISSION",
+      "orientation_pair": true,
+      "owner": "C53 spectator lift",
+      "role": "qg vertex correction",
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QGG"
+    },
+    {
+      "coupling_degree": 1,
+      "edge_id": "C185-QG-QGG-CUBIC-GLUON",
+      "orientation_pair": true,
+      "owner": "C184/C129 cubic-gluon spectator lift",
+      "role": "qg vertex correction",
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QGG"
+    },
+    {
+      "coupling_degree": 1,
+      "edge_id": "C185-QG-QQBARQ-PAIR",
+      "orientation_pair": true,
+      "owner": "C184 g<->qbarq spectator pair creation",
+      "role": "qg vertex correction",
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QQBARQ"
+    },
+    {
+      "coupling_degree": 2,
+      "edge_id": "C185-Q-QGG-ORDER2",
+      "orientation_pair": true,
+      "owner": "C112/C127/C129/C131 audit",
+      "role": "direct/instantaneous future block",
+      "source": "C170-B1-Q",
+      "target": "C170-B1-QGG"
+    },
+    {
+      "coupling_degree": 2,
+      "edge_id": "C185-Q-QQBARQ-ORDER2",
+      "orientation_pair": true,
+      "owner": "C112/C127/C131 current/pair audit",
+      "role": "direct/instantaneous future block",
+      "source": "C170-B1-Q",
+      "target": "C170-B1-QQBARQ"
+    }
+  ],
+  "nodes": [
+    {
+      "net_fermion_number": "1",
+      "open_color": "3",
+      "particle_content": [
+        "q"
+      ],
+      "sector_id": "C170-B1-Q",
+      "source_reachable": true
+    },
+    {
+      "net_fermion_number": "1",
+      "open_color": "3",
+      "particle_content": [
+        "q",
+        "g"
+      ],
+      "sector_id": "C170-B1-QG",
+      "source_reachable": true
+    },
+    {
+      "net_fermion_number": "1",
+      "open_color": "3",
+      "particle_content": [
+        "q",
+        "g",
+        "g"
+      ],
+      "sector_id": "C170-B1-QGG",
+      "source_reachable": true
+    },
+    {
+      "net_fermion_number": "1",
+      "open_color": "3",
+      "particle_content": [
+        "q",
+        "q",
+        "qbar"
+      ],
+      "sector_id": "C170-B1-QQBARQ",
+      "source_reachable": true
+    }
+  ],
+  "qg_source_root": "26ea5c8533d9a59282aed8eaf40f29f6ef2894d50ea3a8a984571f697b9192da",
+  "root": "c021ea1bf4fdc203585c065ec9f9dd386caf1eefcde8c3b8b7e37785c5c199a6",
+  "schema": "C185-REACHABILITY-GRAPH-V1",
+  "source_reachable_only": true
+}

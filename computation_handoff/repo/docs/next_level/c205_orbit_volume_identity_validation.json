@@ -1,0 +1,308 @@
+{
+  "schema": "C205-ORBIT-VOLUME-IDENTITY-VALIDATION-V1",
+  "artifact": "orbit_volume_identity_validation",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 orbit_volume_identity_validation is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "identity_id": "C205-ID-K9-GENERIC",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K9",
+        "capsule_class": "GENERIC",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K9-CENTRAL",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K9",
+        "capsule_class": "CENTRAL",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K9-WEYL_WALL",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K9",
+        "capsule_class": "WEYL_WALL",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K9-IDENTITY_DIAGNOSTIC",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K9",
+        "capsule_class": "IDENTITY_DIAGNOSTIC",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K11-GENERIC",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K11",
+        "capsule_class": "GENERIC",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K11-CENTRAL",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K11",
+        "capsule_class": "CENTRAL",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K11-WEYL_WALL",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K11",
+        "capsule_class": "WEYL_WALL",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K11-IDENTITY_DIAGNOSTIC",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K11",
+        "capsule_class": "IDENTITY_DIAGNOSTIC",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K13-GENERIC",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K13",
+        "capsule_class": "GENERIC",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K13-CENTRAL",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K13",
+        "capsule_class": "CENTRAL",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K13-WEYL_WALL",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K13",
+        "capsule_class": "WEYL_WALL",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "identity_id": "C205-ID-K13-IDENTITY_DIAGNOSTIC",
+        "parent_row_id": "C197-ST-7",
+        "resolution": "K13",
+        "capsule_class": "IDENTITY_DIAGNOSTIC",
+        "orbit": "SU3/stabilizer typed",
+        "ratio": "SYMBOLIC_ORBIT_TO_STABILIZER_VOLUME",
+        "absolute_normalization": "UNSELECTED",
+        "local_FP_determinant": "separate",
+        "zero_modes": "explicit",
+        "residual": "EXACT_SYMBOLIC_ZERO_RATIO_IDENTITY_SCOPE",
+        "routes": [
+          "GLOBAL-A-orbit",
+          "GLOBAL-B-FP-zero-mode",
+          "GLOBAL-C-conjugacy-stabilizer",
+          "GLOBAL-D-frame",
+          "GLOBAL-E-source-functional",
+          "GLOBAL-F-endpoint-remainder",
+          "GLOBAL-G-Lie-nilpotency",
+          "GLOBAL-H-holdout"
+        ],
+        "physical": false
+      }
+    ],
+    "count": 12,
+    "absolute_volume_selected": false,
+    "root": "de7b7ebff6f5452ba969cb8e9b5de055922f2f88a200e99968528da0b46aa3f5"
+  }
+}

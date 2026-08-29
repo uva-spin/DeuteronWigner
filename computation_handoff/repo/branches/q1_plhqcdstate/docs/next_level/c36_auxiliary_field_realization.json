@@ -1,0 +1,28 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "b4f2a9887d5853ba90b7d74b5b7a5a9ebc884597c6af9bc4738f04206c6b57b7",
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "record": {
+    "action": "S_aux=int ds Qbar_v(i v.D-delta_m)Q_v",
+    "cusp_operator": "piecewise v-to-transverse junction operator",
+    "endpoint_operator": "Qbar_v Gamma q endpoints",
+    "minkowski_map_explicit": true,
+    "project_result": false,
+    "propagator": "theta(s) P exp[-i g int_0^s dt v.A(tv)]",
+    "realization_id": "C36.AUX.SPACELIKE.REPRESENTATION",
+    "represents_plan": "O4-SPACELIKE-COLLINS-JMY",
+    "residual_mass": "delta_m source-qualified line renormalization"
+  },
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "selected_physical_plan": "O4-SPACELIKE-COLLINS-JMY",
+  "separate_soft_factor": false,
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

@@ -1,0 +1,74 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "tree_target_definition_manifest",
+  "authority_record": {
+    "coefficient_values": "UNAVAILABLE_NOT_ZERO",
+    "continuum_perturbative_target": "UNAVAILABLE_NOT_ZERO_C261",
+    "nonperturbative_target": "UNAVAILABLE_NOT_ZERO",
+    "physical_observable_target": "UNAVAILABLE_NOT_ZERO",
+    "root": "b75771f6f531d03dabebca4bff28aa1ef7b2705b923e47870e8cecefb59831b4",
+    "scheme_target_rows": [
+      {
+        "physical": false,
+        "projector_id": "P_C117_1",
+        "tree_target": "corresponding tree-normalized C117 operator amplitude",
+        "zero_reason": "only off-diagonal unwanted-mixing projections are zero by Kronecker-dual scheme definition"
+      },
+      {
+        "physical": false,
+        "projector_id": "P_C117_2",
+        "tree_target": "corresponding tree-normalized C117 operator amplitude",
+        "zero_reason": "only off-diagonal unwanted-mixing projections are zero by Kronecker-dual scheme definition"
+      },
+      {
+        "physical": false,
+        "projector_id": "P_C117_3",
+        "tree_target": "corresponding tree-normalized C117 operator amplitude",
+        "zero_reason": "only off-diagonal unwanted-mixing projections are zero by Kronecker-dual scheme definition"
+      },
+      {
+        "physical": false,
+        "projector_id": "P_C117_4",
+        "tree_target": "corresponding tree-normalized C117 operator amplitude",
+        "zero_reason": "only off-diagonal unwanted-mixing projections are zero by Kronecker-dual scheme definition"
+      }
+    ],
+    "tree_matrix": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "ward_ST_target": "independent descendant diagnostic, not substituted"
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-TREE_TARGET_DEFINITION-MANIFEST-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "BOUND"
+}

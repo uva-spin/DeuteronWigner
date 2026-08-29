@@ -1,0 +1,43 @@
+{
+  "schema": "C209-MAP-PROGRAM-CONTRACT-V1",
+  "artifact": "map_program_contract",
+  "package_root": "fb0abd5750ea3684ad44fc05512dbd4e0765c0da5e721bdc51da4735326d9654",
+  "status": "C209_C208_CERTIFIED_RESOLUTION_LOCAL_MOMQ_WAVEPACKET_LIMIT_ADAPTER_READY_NO_EXACT_FINITE_POINT",
+  "plan": "MOMQMAP1-B",
+  "physical": false,
+  "exact_finite_point": false,
+  "resolution_average": false,
+  "continuum_extrapolation": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "C208 authenticated MOMq definition",
+    "C140 finite-domain mismatch"
+  ],
+  "authority_record": {
+    "schema": "PROJECT_MOMQ_WAVEPACKET_LIMIT_PROGRAM_V1",
+    "allowed_opcodes": [
+      "LOAD_C208_SYMMETRIC_TARGET",
+      "LOAD_FINITE_CELL_MOMENTUM_DOMAIN",
+      "LOAD_MOMENTUM_SPACE_HO_BASIS",
+      "BUILD_CALLER_CENTERED_WAVEPACKET",
+      "PROJECT_TO_RESOLUTION",
+      "EVALUATE_EUCLIDEAN_INVARIANTS",
+      "EVALUATE_SIX_TENSOR_BASIS",
+      "BUILD_GRAM_MATRIX",
+      "INVERT_GUARDED_GRAM_MATRIX",
+      "SELECT_CHANNEL_ONE",
+      "BOUND_OMITTED_HO_TAIL",
+      "BOUND_LONGITUDINAL_CELL_ERROR",
+      "RETURN_CERTIFIED_ADAPTER"
+    ],
+    "eval": false,
+    "pickle": false,
+    "hidden_extrapolation": false,
+    "root": "c4b36dcede3c9c7b92c93304b2e9501ed5865b14d3b8d42e27e1c05b5e448c7c"
+  }
+}

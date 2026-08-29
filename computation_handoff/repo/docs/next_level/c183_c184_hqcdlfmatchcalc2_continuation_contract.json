@@ -1,0 +1,27 @@
+{
+  "continuation": "C184/HQCDLFGMATCHCALC2",
+  "parent": "C183/HQCDB0HOLONOMY2",
+  "parent_status": "C183_C182_PROJECT_PERIODIC_SU3_HOLONOMY_CAPSULE_AUTHORITY_READY",
+  "parent_plan": "HOLONOMY2-A",
+  "parent_package_root": "7198854f07fdbde8a00d8d553a848ba0d5cf3408199b9b7ff3a3cd29074c7b5f",
+  "first_remaining_object": "C169_B0_TRANSVERSE_GLUON_AND_QCD_COUPLING_MATCHING_CALCULATION",
+  "required_scope": [
+    "consume C171-C183 read-only",
+    "use explicit validated holonomy capsules only",
+    "resume the exact B0 transverse-gluon and QCD-coupling calculation",
+    "preserve signed mass and mass-squared separation",
+    "retain C43 gauge/PV, C174/C175, and C182/C183 interfaces"
+  ],
+  "nonclaims": [
+    "no physical holonomy selection",
+    "no self-energy beyond authorized sector calculation",
+    "no standard-scheme adapter",
+    "no TMD or soft factor",
+    "no BRST/ST",
+    "no counterterm/null",
+    "no quantum object"
+  ],
+  "source_acquisition": 0,
+  "push": false,
+  "schema": "C183-C184-HQCDLFGMATCHCALC2-CONTINUATION-V1"
+}

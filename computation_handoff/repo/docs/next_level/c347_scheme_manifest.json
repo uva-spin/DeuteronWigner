@@ -1,0 +1,17 @@
+{
+  "package_root": "e0a8d3ae0c9e256f04a28995d8e7747b95969604cc165ffd48190a16fb35e2e3",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMECONVERT1-C",
+  "record": {
+    "available": "SYMBOLIC_TYPED",
+    "composition": "C_AC = C_BC o C_AB at common operator normalization and reference scales",
+    "formula": "F_project = C_fin(mu,zeta,v,bT) * U_gamma(mu0,zeta0 -> mu,zeta) * F_JMY",
+    "inverse": "F_JMY = U_gamma^-1 * C_fin^-1 * F_project",
+    "inverse_domain": "C_fin nonzero and evolution path avoids singularities",
+    "numeric": false,
+    "root": "3632a4a452ec7e9252b3d94f94674a3ace15fb07eedd82c186a872801a72a269",
+    "signature": "C_scheme[mu,zeta,v; bT] : F_JMY -> F_delta_Collins"
+  },
+  "status": "C347_SYMBOLIC_SCHEME_VOLUME_CONVERSION_OPERATOR_DERIVED_FINITE_KERNEL_COEFFICIENTS_MISSING",
+  "validation": "BOUND"
+}

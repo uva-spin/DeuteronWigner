@@ -1,0 +1,28 @@
+{
+  "root": "7ab185ef533f0a6b03b7952dd96a1f3df8b821cae0f42b2a7e281a1f4950cbed",
+  "rows": [
+    {
+      "alternative_id": "PIECEWISE_CARTESIAN_XY",
+      "averaged": false,
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "degree1_holdout": "path-stable scope only",
+      "degree2_holdout": "order-sensitive conversion retained",
+      "deterministic": true,
+      "fitted": false,
+      "reference": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "status": "ALTERNATIVE_FINITE_SCHEME_HOLDOUT"
+    },
+    {
+      "alternative_id": "PIECEWISE_CARTESIAN_YX",
+      "averaged": false,
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "degree1_holdout": "path-stable scope only",
+      "degree2_holdout": "order-sensitive conversion retained",
+      "deterministic": true,
+      "fitted": false,
+      "reference": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "status": "ALTERNATIVE_FINITE_SCHEME_HOLDOUT"
+    }
+  ],
+  "schema": "C180-ALTERNATIVE-HOLDOUT-V1"
+}

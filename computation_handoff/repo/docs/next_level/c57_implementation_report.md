@@ -1,0 +1,3 @@
+# C57/IFREG completion
+
+C57 selects `IFREG-CORRESPONDING-PROPAGATING-SUPPORT` with `CORRESPONDING_PROPAGATING_GRAPH_PROJECT`. The result is a source-derived, fixed-K, incoming-quark-indexed conditional finite-HO field regulator. It applies TBP graph matching to C45 field modes and C47 Fock/CM/triplet projections, and is explicitly neither universal nor BPP DLCQ. The C53 support-position holdout closes without using C53 numerical values. DLCQ-to-HO conversion remains `CONVERSION_UNAVAILABLE` and is not needed by the selected project regulator. No contraction sum, matrix, subtraction, counterterm, direct contact, or full instantaneous operator is created. Next: **C58/IFNORM2 — execute the self-induced-inertia contraction**.

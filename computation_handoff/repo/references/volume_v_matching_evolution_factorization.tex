@@ -1,0 +1,2725 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume V: Regulator-to-QCD Matching, Rank-Aware Evolution, and Process Factorization},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume V}
+\fancyhead[R]{\small\color{darkgray}Matching, evolution, and process factorization}
+\fancyfoot[L]{\small\color{darkgray}30 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{principle}{principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\ellT}{\bm{\ell}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\PT}{\bm{P}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\Alg}{\mathcal A}
+\newcommand{\Rep}{\mathcal V}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\QCD}{\mathrm{QCD}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\GPD}{\mathrm{GPD}}
+\newcommand{\EFT}{\mathrm{EFT}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Dens}{\mathbf{Dens}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\bbone}{\bm 1}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\comm}[2]{\left[#1,#2\right]}
+\newcommand{\acom}[2]{\left\{#1,#2\right\}}
+\newcommand{\otimesx}{\mathop{\otimes}_{x}}
+\newcommand{\MSbar}{\overline{\mathrm{MS}}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\unsub}{\mathrm{unsub}}
+\newcommand{\soft}{\mathrm{soft}}
+\newcommand{\rap}{\mathrm{rap}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\pert}{\mathrm{pert}}
+\newcommand{\NP}{\mathrm{NP}}
+\newcommand{\FO}{\mathrm{FO}}
+\newcommand{\asy}{\mathrm{asy}}
+\newcommand{\evol}{\mathrm{evol}}
+\newcommand{\proc}{\mathrm{proc}}
+\newcommand{\tw}{\mathrm{tw}}
+\newcommand{\NS}{\mathrm{NS}}
+\newcommand{\sing}{\mathrm{S}}
+\newcommand{\CS}{\mathrm{CS}}
+\newcommand{\DY}{\mathrm{DY}}
+\newcommand{\SIDIS}{\mathrm{SIDIS}}
+\newcommand{\EMT}{\mathrm{EMT}}
+\newcommand{\IA}{\mathrm{IA}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\shortd}{\mathrm{short}}
+\newcommand{\nuc}{\mathrm{nuc}}
+\newcommand{\even}{\mathrm{even}}
+\newcommand{\odd}{\mathrm{odd}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume V: Regulator-to-QCD Matching,\\[2mm]
+Rank-Aware Evolution, and Process Factorization}\\[4mm]
+\large Operator matching, two-scale renormalization, coupled collinear evolution,\\
+process-qualified TMD observables, and auditable \(W+Y\) assembly}
+\author{DeuteronWigner project}
+\date{30 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~I--IV define the regulated light-front state spaces, common nucleon
+GTMD overlaps, dynamical Wilson-line phases, and the matched spin-1 nuclear
+state.  Those objects are not yet physical TMDs in a declared continuum QCD
+scheme.  The present volume supplies the missing map.  It separates
+(i) matching a regulated Hamiltonian operator to a renormalized QCD operator,
+(ii) ultraviolet and rapidity evolution in the two-dimensional
+\((\mu,\zeta)\) scale plane, and (iii) process-level assembly with hard,
+fragmentation, color, measurement, and fixed-order remainder kernels.  A
+single rank-aware route must carry every flavor, target polarization,
+Wilson-link/color class, nuclear component, and correlated microscopic member.
+The accepted fixed-scale canonical model remains a comparison and regression
+boundary.  Evolving that boundary is useful, but it does not by itself turn
+heterogeneous fitted inputs into one microscopic prediction.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A low-resolution light-front Hamiltonian wave function is not, by itself, a
+transverse-momentum-dependent distribution in a specified QCD factorization
+scheme.  Its bilocal operators carry regulator, model-space, and truncation
+dependence; a TMD additionally requires ultraviolet renormalization, rapidity
+renormalization, soft subtraction, a Wilson-path identity, and two evolution
+scales.  This volume constructs the regulator-to-QCD matching and evolution
+layer required to turn the common microscopic quark, antiquark, and gluon
+parents of Volumes~II--IV into scheme-qualified distributions and
+process-level observables.
+
+The matching is formulated as a typed linear map between operator bases,
+not as one free normalization per named TMD.  At a reference scale it relates
+regulated light-front matrix elements to renormalized QCD GTMD, TMD, GPD,
+current, and energy--momentum operators, including operator mixing, soft and
+rapidity factors, power corrections, and explicit Hamiltonian truncation
+errors.  When the Hamiltonian cutoff is not perturbatively high, the matching
+coefficient is a controlled combination of perturbation theory, step scaling,
+local-current constraints, lattice or continuum matrix elements, and a small
+shared discrepancy basis.  The same matching parameter must propagate to
+every projection of the operator on which it acts.
+
+We define the two-scale TMD evolution equations using a convention in which
+the mixed derivatives are exactly compatible, introduce the evolution
+one-form and its finite-order curl defect, and distinguish exact path
+independence from the ambiguity created by truncated perturbation theory.  A
+scheme-neutral formulation accommodates direct contour evolution,
+\(\zeta\)-prescription evolution, and profile-based implementations while
+requiring an explicit accuracy manifest.  The Collins--Soper kernel is
+separated into perturbative and nonperturbative domains; target and spin
+polarization reside in boundary matrix elements and small-\(b\) matching,
+not in an independently fitted evolution kernel for every TMD.  Quark and
+gluon kernels remain separate color-representation objects, and generalized
+Casimir relations are used only to their verified perturbative order.
+
+The small-\(b_{\mathrm{TMD}}\) operator product expansion is organized by
+parton species, operator polarization, transverse rank, target channel,
+Wilson-link class, and collinear twist.  Twist-2 quark, antiquark, and gluon
+channels; twist-3 Sivers, Boer--Mulders, and worm-gear channels; linearly
+polarized gluons; tensor-polarized spin-1 distributions; and independent
+gluon \(f\)- and \(d\)-type sectors are assigned to explicit collinear
+operator bases.  Nonsinglet, singlet quark--gluon, helicity, transversity,
+double-helicity-flip, and multiparton twist-3 evolution are kept distinct.
+Heavy-flavor thresholds are matching maps, not silent changes of flavor
+count.
+
+At the process layer, Drell--Yan, SIDIS, inclusive DIS, and gluon-sensitive
+channels receive typed factorization records containing the hard kernel,
+link map, color weights, fragmentation or partner TMD, measurement function,
+Glauber status, and factorization status.  The observable is assembled as
+\(W+Y\), with
+\(Y=\sigma_{\FO}-[W]_{\asy,\FO}\) at the same perturbative order and in the
+same scheme.  Rank-resolved Fourier--Bessel kernels are used for every angular
+harmonic, so a scalar \(J_0\) transform can never be applied to a nonzero-rank
+coefficient.  We provide formal commutation results for evolution and linear
+nuclear convolution, scheme-covariance relations, uncertainty and convergence
+requirements, software interfaces, analytic benchmarks, and fail-closed
+acceptance gates.  The result is a reproducible bridge from the regulated
+microscopic state to multi-scale QCD observables without erasing flavor,
+spin, rank, link/color, nuclear, or member identity.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scope, interfaces, and status language}
+\label{sec:scope}
+
+\subsection{Input and output contract}
+
+The input to this volume is not a table of named TMDs.  It is a versioned
+family of regulated operator matrix elements,
+\begin{equation}
+ \widetilde{\bm W}^{\LF}_{h,r}
+ =
+ \left\{
+ \langle P',\Lambda'|
+ \widetilde{\cO}^{\LF}_{A,r}(x,\bM,\DT)
+ |P,\Lambda\rangle
+ \right\}_{A},
+ \label{eq:lf-parent-vector}
+\end{equation}
+where \(r\) records the Hamiltonian regulator, basis, Fock truncation,
+renormalization conditions, and microscopic member, and \(A\) runs over a
+closed operator basis.  For a deuteron, the matrix element is evaluated in the
+matched nuclear state of Volume~IV.  The impact variable in
+\cref{eq:lf-parent-vector} is \(\bM\), Fourier conjugate to \(\kT\); the
+partonic imaging coordinate \(\bD\), conjugate to \(\DT\), remains a distinct
+type.
+
+The output is a process-qualified observable or a renormalized intermediate
+object,
+\begin{equation}
+ \widetilde{\bm W}^{\QCD}_{h}
+ (\mu,\zeta;\mathfrak s),
+ \qquad
+ \widetilde{\bm F}_{h}
+ (\mu,\zeta;\mathfrak s),
+ \qquad
+ \frac{\dd\sigma_{\proc}}{\dd\cP}
+ =W_{\proc}+Y_{\proc}+\delta_{\mathrm{pow}},
+ \label{eq:volume5-outputs}
+\end{equation}
+with declared QCD scheme \(\mathfrak s\), scales, process map, perturbative
+accuracy, and power-correction status.
+
+\begin{principle}[Three transformations, three meanings]
+The regulator-to-QCD matching map, TMD scale evolution, and process
+factorization map are different morphism classes.  Matching changes the
+operator description, evolution changes scales within one description, and
+process factorization contracts universal or process-qualified operator
+matrix elements with short-distance and measurement kernels.  No software
+callable may silently serve all three roles.
+\end{principle}
+
+\subsection{What this volume does not claim}
+
+This volume does not prove a factorization theorem for every proposed
+gluon-sensitive process, compute every small-\(b\) coefficient, or determine
+the nonperturbative Collins--Soper kernel from first principles.  It defines
+the exact interfaces at which those ingredients enter and the conditions
+under which a result may be called authoritative.  In particular:
+\begin{itemize}
+\item a formal Fourier transform is not a renormalization prescription;
+\item a smooth evolution curve is not evidence that matching is correct;
+\item a common value of \(Q\) does not imply a common TMD scheme;
+\item a successful \(W\) term at small \(q_T\) does not determine the
+      fixed-order \(Y\) term;
+\item a process label does not determine a gluon \(f/d\) mixture without a
+      hard-color calculation;
+\item pointwise positivity of a regulated overlap is not assumed to survive
+      every finite-order subtracted scheme representation.
+\end{itemize}
+
+\subsection{Evidence classes}
+
+Each matching or evolution ingredient is assigned one of:
+\begin{longtable}{L{0.25\textwidth}L{0.65\textwidth}}
+\toprule
+Status & Meaning\\
+\midrule
+\endhead
+\texttt{EXACT} & Algebraic identity, symmetry, type rule, or all-order
+consistency condition within the declared definitions.\\
+\texttt{PERTURBATIVE} & Coefficient or anomalous dimension known to a stated
+order in \(\alpha_s\) and in a stated scheme.\\
+\texttt{NONPERTURBATIVE\_INPUT} & Common kernel or matrix element constrained
+by lattice QCD, phenomenology, or a microscopic calculation.\\
+\texttt{MATCHED\_MODEL} & Shared low-dimensional matching or discrepancy
+operator calibrated to several matrix elements.\\
+\texttt{EXPLORATORY} & Process, coefficient, or power correction used only for
+sensitivity studies.\\
+\texttt{UNAVAILABLE} & Required ingredient absent; authoritative composition
+must fail closed.\\
+\bottomrule
+\end{longtable}
+Passing a numerical gate does not promote an exploratory coefficient to a
+perturbative theorem or a fitted kernel to a first-principles result.
+
+\section{Convention, scheme, and operator-identity contract}
+\label{sec:types}
+
+\subsection{Transverse coordinates and rank}
+
+The four transverse variables needed by this layer are
+\begin{equation}
+ \begin{aligned}
+ \DT&\leftrightarrow\bD,
+ &\qquad
+ \kT&\leftrightarrow\bM,\\
+ \qT&=\text{measured recoil},
+ &\qquad
+ \ellT&=\text{loop or emitted momentum}.
+ \end{aligned}
+ \label{eq:coordinate-contract}
+\end{equation}
+Equal dimensions do not permit substitution.  The partonic Wigner transform
+acts in \((\DT,\bD)\), whereas TMD evolution and process Fourier transforms
+act in \((\kT,\bM)\).
+
+A transverse-rank identity is
+\begin{equation}
+ \mathfrak r=
+ \left(
+ m,\,r,\,\mathcal T_r,\,n_k,\,n_b,\,M_{\rm ref},\,
+ J_{|m|},\,\varphi_{\rm FT}
+ \right),
+ \label{eq:rank-identity}
+\end{equation}
+where \(m\) is the \(SO(2)\) harmonic weight, \(r\) the tensor rank,
+\(\mathcal T_r\) the symmetric-traceless basis, \(n_k,n_b\) the extracted
+powers, \(M_{\rm ref}\) the reference mass, and \(\varphi_{\rm FT}\) the
+Fourier phase convention.
+
+\begin{requirement}[Rank is part of operator identity]
+Two scalar coefficient arrays with different \(\mathfrak r\) are different
+operators even when they share the same numerical grid and dimensions.  An
+explicit rank adapter is required to compare them.
+\end{requirement}
+
+\subsection{QCD TMD scheme tuple}
+
+A complete TMD scheme identifier is
+\begin{equation}
+ \mathfrak s_{\TMD}=
+ \left(
+ \mathfrak s_{\UV},
+ \mathcal R_{\rap},
+ \mathcal S_{\soft},
+ \mathcal C_{\rm staple},
+ R_{\rm color},
+ \mathfrak n_{\gamma_5},
+ \mathfrak n_{\epsilon_T},
+ \mathfrak n_{\rm FT}
+ \right).
+ \label{eq:tmd-scheme-tuple}
+\end{equation}
+It records the ultraviolet subtraction, rapidity regulator, soft-factor
+partition, staple/cusp convention, color representation, \(\gamma_5\)
+implementation, transverse Levi-Civita convention, and Fourier normalization.
+The project reference realization is compatible with \(\MSbar\) ultraviolet
+renormalization, a declared rapidity regulator, and square-root soft
+subtraction, but no formula in this volume assumes that a finite factor is
+identical across all schemes.
+
+The full operator identity extends the tuple introduced in Volumes~0--III:
+\begin{equation}
+ \mathfrak o=
+ \left(
+ a,\Gamma,P_{\rm in},P_{\rm out},\gamma,R_{\rm color},
+ \mathfrak g_{f/d},\mathfrak r,
+ \mathfrak s_{\TMD},\mu,\zeta,
+ r_{\LF},\nu_{\rm nuc},m_{\rm micro}
+ \right).
+ \label{eq:full-operator-identity}
+\end{equation}
+Here \(\mathfrak g_{f/d}\) includes the ordered gluon-link pair and independent
+\(f^{abc}\) or \(d^{abc}\) contraction where applicable, \(r_{\LF}\) is the
+Hamiltonian regulator/truncation label, \(\nu_{\rm nuc}\) is the nuclear
+sector or operator block, and \(m_{\rm micro}\) is the common microscopic
+member.
+
+\begin{requirement}[No production use of unspecified identity]
+An operator may be represented with an explicit \texttt{UNSPECIFIED} field
+during migration, but it cannot enter a matching, evolution, or process map
+that mathematically depends on that field.  No default scheme, link, rank,
+color class, or scale is inferred from a function name.
+\end{requirement}
+
+\subsection{Scheme transformations}
+
+Let \(\mathfrak s\) and \(\mathfrak s'\) be two complete schemes for the same
+physical operator.  A finite scheme transformation has the form
+\begin{equation}
+ \widetilde{\bm F}^{\mathfrak s'}
+ =\bm Z^{\mathfrak s'\leftarrow\mathfrak s}
+  \otimesx
+  \widetilde{\bm F}^{\mathfrak s},
+ \label{eq:finite-scheme-transform}
+\end{equation}
+where \(\bm Z\) may be a matrix in operator or color space.  For a factorized
+observable with two TMD factors,
+\begin{equation}
+ \bm H^{\mathfrak s'}
+ =
+ \bm H^{\mathfrak s}
+ \left(\bm Z_1^{\mathfrak s'\leftarrow\mathfrak s}\right)^{-1}
+ \left(\bm Z_2^{\mathfrak s'\leftarrow\mathfrak s}\right)^{-1},
+ \label{eq:hard-scheme-transform}
+\end{equation}
+with the appropriate index ordering, so the complete cross section is
+invariant up to the declared truncation order.
+
+\begin{proposition}[Scheme covariance]
+If the TMDs, hard factor, soft partition, and fixed-order subtraction are all
+transformed with the same finite map, then the process observable is unchanged
+through the perturbative order to which the transformation is known.
+\end{proposition}
+
+\begin{proof}
+Insert \cref{eq:finite-scheme-transform,eq:hard-scheme-transform} into the
+factorized contraction.  The finite maps cancel pairwise.  Any residual is of
+higher perturbative order or belongs to an explicitly omitted operator or
+power-correction sector.  The same transformation must be applied to the
+asymptotic expansion used in the \(Y\) term; otherwise the cancellation fails.
+\end{proof}
+
+\section{From regulated light-front operators to QCD operators}
+\label{sec:lf-to-qcd}
+
+\subsection{Three matching stages}
+
+The complete bridge is decomposed as
+\begin{equation}
+ \cO^{\LF}_{r}
+ \xrightarrow{\ \cZ_{\rm state/op}\ }
+ \cO^{\rm cont,unsub}
+ \xrightarrow{\ \cZ_{\UV}\cR_{\rap}\cS_{\soft}^{-1/2}\ }
+ \cO^{\QCD}_{\TMD}(\mu,\zeta;\mathfrak s)
+ \xrightarrow{\ \cC_{\rm proc}\ }
+ \cO_{\rm measured}.
+ \label{eq:three-stage-matching}
+\end{equation}
+The first arrow removes Hamiltonian regulator and model-space dependence from
+the state and operator basis.  The second defines the renormalized,
+soft-subtracted QCD TMD or GTMD.  The third is process factorization.  These
+arrows may share perturbative ingredients, but they are not interchangeable.
+
+\subsection{General operator-basis matching}
+
+Let \(\bm\cO^{\LF}_r\) and \(\bm\cO^{\QCD}\) be closed bases with identical
+conserved quantum numbers.  At reference scales \((\mu_M,\zeta_M)\),
+\begin{equation}
+ \widetilde{\bm\cO}^{\QCD}
+ (\mu_M,\zeta_M)
+ =
+ \bm Z_{\LF\to\QCD}
+ (r;\mu_M,\zeta_M)
+ \otimesx
+ \widetilde{\bm\cO}^{\LF}_{r}
+ +\widetilde{\bm\cO}_{\rm miss}
+ +\widetilde{\bm\delta}_{\rm pow}
+ +\widetilde{\bm\delta}_{\rm trunc}.
+ \label{eq:general-lf-qcd-matching}
+\end{equation}
+The map can mix quark, gluon, total-derivative, equation-of-motion, and
+multiparton operators when allowed by symmetry and twist.  The missing-operator
+term is not an arbitrary repair: every component must correspond to a named
+operator absent from the retained Hamiltonian or current.
+
+For external calibration states \(|\chi_i\rangle\), matching conditions are
+\begin{equation}
+ \langle\chi_i|\bm\cO^{\QCD}|\chi_j\rangle
+ =
+ \bm Z_{\LF\to\QCD}
+ \otimesx
+ \langle\chi_i|\bm\cO^{\LF}_{r}|\chi_j\rangle
+ +\bm\Delta_{ij}(r).
+ \label{eq:matrix-element-matching}
+\end{equation}
+The state set must overconstrain the shared matching parameters.  Matching one
+coefficient to one named TMD does not establish an operator map.
+
+\begin{requirement}[Shared matching parameters]
+A parameter in \(\bm Z_{\LF\to\QCD}\) belongs to an operator mixing channel,
+regulator counterterm, soft/rapidity conversion, or controlled discrepancy
+operator.  It propagates to every TMD, GPD, PDF, current, and process
+projection of that operator.  One normalization or transverse width per named
+TMD is prohibited.
+\end{requirement}
+
+\subsection{Perturbative, nonperturbative, and hybrid matching}
+
+If all relevant matching momenta are large compared with \(\Lambda_{\QCD}\),
+\(\bm Z_{\LF\to\QCD}\) can be expanded perturbatively.  A low-resolution
+Hamiltonian generally does not satisfy this condition over the full \(x\) and
+\(\bM\) domain.  The admissible routes are:
+\begin{enumerate}
+\item \textbf{Perturbative window matching:} determine \(\bm Z\) for
+      \(\abs{\bM}^{-1}\), external virtualities, and cutoffs in a common
+      perturbative domain.
+\item \textbf{Step scaling:} connect a sequence of regulated theories
+      \(r_0\prec r_1\prec\cdots\prec r_n\) and match at each overlap window.
+\item \textbf{Local-current anchoring:} impose exact charges, Ward identities,
+      and renormalized local moments on the same operator family.
+\item \textbf{External matrix-element matching:} use lattice, continuum, or
+      experimental matrix elements whose scheme conversion is controlled.
+\item \textbf{Hybrid matching:} combine the above with a low-dimensional
+      discrepancy basis constrained across several channels and regulator
+      levels.
+\end{enumerate}
+A route is part of the model definition and cannot be selected independently
+for each observable after seeing the data.
+
+\subsection{Step-scaling system}
+
+For regulator levels \(r\preceq r'\), define
+\begin{equation}
+ \bm\Sigma_{r'\leftarrow r}
+ =
+ \bm Z_{\LF\to\QCD}(r')^{-1}
+ \bm Z_{\LF\to\QCD}(r),
+ \label{eq:step-scaling-map}
+\end{equation}
+so that matched observables satisfy
+\begin{equation}
+ \widetilde{\bm W}^{\LF}_{r'}
+ =
+ \bm\Sigma_{r'\leftarrow r}\otimesx
+ \widetilde{\bm W}^{\LF}_{r}
+ +\cO(\delta_{r'r}).
+ \label{eq:step-scaling-consistency}
+\end{equation}
+Composition requires
+\begin{equation}
+ \bm\Sigma_{r''\leftarrow r'}
+ \bm\Sigma_{r'\leftarrow r}
+ =
+ \bm\Sigma_{r''\leftarrow r}
+ +\cO(\delta_{r''r'r}).
+ \label{eq:step-scaling-cocycle}
+\end{equation}
+The defect in \cref{eq:step-scaling-cocycle} is a truncation diagnostic, not a
+parameter uncertainty.
+
+\subsection{Local limits and conserved operators}
+
+The matching basis must contain the local limits needed for vector, axial,
+tensor, and energy--momentum currents.  For example,
+\begin{align}
+ \int\dd x\,H^q(x,0,t)
+ &\longrightarrow
+ \langle P'|\bar q\gamma^+q|P\rangle,
+ \label{eq:vector-local-limit}\\
+ \sum_{a=q,\bar q,g}\int\dd x\,x\,H^a(x,0,t)
+ &\longrightarrow
+ \langle P'|T^{++}|P\rangle.
+ \label{eq:emt-local-limit}
+\end{align}
+The conserved total vector current and total energy--momentum tensor constrain
+mixing matrices and threshold maps.  A matching solution that reproduces a
+TMD shape but violates charge or momentum closure is rejected.
+
+\begin{proposition}[No independent local and TMD renormalization]
+When a local current is the regulated moment of a bilocal operator, the
+counterterms and finite matching factors of the two objects must be related by
+the same moment map, up to contact and operator-mixing terms explicitly
+present in the basis.
+\end{proposition}
+
+\section{Renormalized TMD and GTMD operator definitions}
+\label{sec:renormalized-definitions}
+
+\subsection{Unsubtracted, soft, and renormalized objects}
+
+For a quark or gluon representation \(R_a\), let
+\(\widetilde W_{a,h}^{\unsub[\gamma]}\) be the regulated bilocal matrix element
+and \(S_{R_a}^{[\gamma]}\) the corresponding vacuum soft function.  An abstract
+square-root-subtracted definition is
+\begin{equation}
+ \widetilde W_{a/h}^{\ren[\gamma]}
+ (x,\bM,\DT;\mu,\zeta;\mathfrak s)
+ =
+ Z_{a}^{\UV}(\mu;\mathfrak s)
+ R_a^{\rap}(\bM;\mu,\zeta;\mathfrak s)
+ \widetilde W_{a/h}^{\unsub[\gamma]}
+ \left[S_{R_a}^{[\gamma]}\right]^{-1/2}.
+ \label{eq:renormalized-gtmd}
+\end{equation}
+The exact placement of rapidity and soft factors is scheme dependent.  The
+scheme tuple in \cref{eq:tmd-scheme-tuple} makes this dependence explicit.
+For color-entangled processes the soft object can be a matrix and a product of
+independent single-hadron TMDs may not exist.
+
+The forward TMD is
+\begin{equation}
+ \widetilde F_{a/h}^{[\gamma]}
+ (x,\bM;\mu,\zeta)
+ =
+ \widetilde W_{a/h}^{[\gamma]}
+ (x,\bM,\DT=0;\mu,\zeta).
+ \label{eq:forward-tmd-from-gtmd}
+\end{equation}
+The partonic Wigner transform instead Fourier transforms \(\DT\) into
+\(\bD\) and does not alter the rapidity subtraction associated with \(\bM\).
+
+\subsection{GTMD evolution and the GPD reduction}
+
+At leading power, a properly soft-subtracted GTMD has the same ultraviolet and
+rapidity evolution structure as the corresponding TMD for a fixed parton
+representation; the external transfer and hadron polarization reside in the
+matrix element.  However, the formal integral
+\begin{equation}
+ \int\dd^2\kT\,W_{\TMD\text{-}subtracted}
+ \label{eq:naive-gtmd-gpd-integral}
+\end{equation}
+is not automatically a renormalized GPD.  The \(\bM\to0\) limit contains
+ultraviolet singularities, and the staple operator must be matched onto the
+appropriate straight-link collinear operator.  The correct square is
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \widetilde W_{\LF}^{(r)}
+ \arrow[r,"\cZ_{\LF\to\QCD}"]
+ \arrow[d,"\mathsf G_{\LF}"']
+ &
+ \widetilde W_{\QCD}^{\TMD}(\mu,\zeta)
+ \arrow[d,"\mathsf OPE_{\bM\to0}"]
+ \\
+ H_{\LF}^{(r)}
+ \arrow[r,"\cZ_{\LF\to\GPD}"']
+ &
+ H_{\QCD}(\mu)
+\end{tikzcd}
+ \label{eq:matched-gtmd-gpd-square}
+\end{equation}
+which must commute within matching, power, truncation, and numerical errors.
+
+\begin{requirement}[No naive marginal promotion]
+A regulated \(\kT\) integral may be used as an analytic benchmark, but it is
+not labeled a physical GPD, PDF, or current until the matched square
+\cref{eq:matched-gtmd-gpd-square} has been supplied.
+\end{requirement}
+
+\subsection{Link reversal and evolution}
+
+For process-conjugate future- and past-pointing staples, the link-even and
+link-odd boundary conditions satisfy
+\begin{equation}
+ F_{\even}^{[+]}(Q_0)=F_{\even}^{[-]}(Q_0),
+ \qquad
+ F_{\odd}^{[+]}(Q_0)=-F_{\odd}^{[-]}(Q_0),
+ \label{eq:boundary-link-reversal}
+\end{equation}
+where the operator definition and factorization theorem justify the relation.
+The ultraviolet and rapidity kernels are properties of the operator
+representation, not of the sign of the absorptive boundary.  Therefore a
+common evolution map preserves \cref{eq:boundary-link-reversal}.  The process
+map may still select different hard/color contractions.
+
+
+\section{Two-scale TMD evolution as a geometric flow}
+\label{sec:two-scale-evolution}
+
+\subsection{Convention-consistent evolution equations}
+
+For a renormalized TMD coefficient with complete operator identity
+\(\mathfrak o\), define
+\begin{align}
+ \frac{\dd}{\dd\ln\mu}
+ \ln \widetilde F_{\mathfrak o}(x,\bM;\mu,\zeta)
+ &=
+ \gamma_F^{a}(\mu,\zeta),
+ \label{eq:mu-evolution}\\
+ \frac{\dd}{\dd\ln\sqrt\zeta}
+ \ln \widetilde F_{\mathfrak o}(x,\bM;\mu,\zeta)
+ &=
+ -\cD_a(\bM;\mu).
+ \label{eq:zeta-evolution}
+\end{align}
+We choose the normalization
+\begin{align}
+ \frac{\partial\gamma_F^a}{\partial\ln\sqrt\zeta}
+ &=-\Gamma_a(\alpha_s),
+ \label{eq:gamma-zeta-consistency}\\
+ \frac{\dd\cD_a}{\dd\ln\mu}
+ &=\Gamma_a(\alpha_s),
+ \label{eq:d-cusp-consistency}
+\end{align}
+so mixed derivatives commute exactly.  In this convention,
+\begin{equation}
+ \gamma_F^a(\mu,\zeta)
+ =\gamma_a(\alpha_s(\mu))
+ -\Gamma_a(\alpha_s(\mu))
+  \ln\frac{\sqrt\zeta}{\mu}.
+ \label{eq:gamma-f-form}
+\end{equation}
+Literature conventions that use \(\gamma_K=2\Gamma_a\), derivatives with
+respect to \(\ln\mu^2\), or a Collins--Soper kernel \(\widetilde K=-\cD\) are
+related by a stored convention adapter.  Factor-of-two differences may never
+be resolved by inspecting numerical values alone.
+
+\begin{theorem}[Exact path independence]
+Assume \cref{eq:gamma-zeta-consistency,eq:d-cusp-consistency} and a simply
+connected scale domain free of singularities.  The exact evolution factor
+between \((\mu_i,\zeta_i)\) and \((\mu_f,\zeta_f)\) is independent of the path
+in the \((\ln\mu,\ln\sqrt\zeta)\) plane.
+\end{theorem}
+
+\begin{proof}
+Introduce the one-form
+\begin{equation}
+ \omega_a
+ =\gamma_F^a(\mu,\zeta)\,\dd\ln\mu
+ -\cD_a(\bM;\mu)\,\dd\ln\sqrt\zeta.
+ \label{eq:evolution-one-form}
+\end{equation}
+Its exterior derivative is
+\begin{equation}
+ \dd\omega_a
+ =-
+ \left[
+ \frac{\partial\gamma_F^a}{\partial\ln\sqrt\zeta}
+ +\frac{\partial\cD_a}{\partial\ln\mu}
+ \right]
+ \dd\ln\mu\wedge\dd\ln\sqrt\zeta=0.
+ \label{eq:evolution-closed-form}
+\end{equation}
+Thus \(\omega_a\) is closed and locally exact.  Its contour integral depends
+only on the endpoints.
+\end{proof}
+
+The exact solution is
+\begin{equation}
+ \widetilde F_f
+ =R_a[\cC;\bM]
+ \widetilde F_i,
+ \qquad
+ \ln R_a[\cC;\bM]
+ =\int_{\cC}\omega_a.
+ \label{eq:contour-evolution-factor}
+\end{equation}
+
+\subsection{Finite-order curl defect}
+
+At truncated perturbative order, independently truncated
+\(\gamma_F^{[N]}\) and \(\cD^{[N]}\) need not satisfy exact integrability.
+Define
+\begin{equation}
+ \Omega_a^{[N]}(\mu,\bM)
+ =
+ \frac{\partial\gamma_F^{a,[N]}}{\partial\ln\sqrt\zeta}
+ +
+ \frac{\partial\cD_a^{[N]}}{\partial\ln\mu}.
+ \label{eq:finite-order-curl}
+\end{equation}
+For two contours \(\cC_1,\cC_2\) with the same endpoints,
+\begin{equation}
+ \ln\frac{R_a^{[N]}[\cC_1]}{R_a^{[N]}[\cC_2]}
+ =\int_{\Sigma(\cC_1-\cC_2)}
+ \Omega_a^{[N]}
+ \dd\ln\mu\,\dd\ln\sqrt\zeta.
+ \label{eq:contour-defect}
+\end{equation}
+The defect is a perturbative truncation diagnostic.  It must not be hidden by
+choosing one contour and declaring path independence by construction.
+
+\begin{requirement}[Evolution implementation record]
+Every evolved result stores the contour or prescription, perturbative orders
+of all anomalous dimensions and the beta function, endpoint scales, profile
+parameters, treatment of the finite-order curl, and numerical integration
+tolerances.
+\end{requirement}
+
+\subsection{Admissible evolution prescriptions}
+
+The formalism permits several implementations:
+\begin{enumerate}
+\item \textbf{Direct contour evolution:} integrate \cref{eq:evolution-one-form}
+      on a specified contour and report the curl defect.
+\item \textbf{Integrability-improved evolution:} modify one truncated
+      anomalous dimension by a formally higher-order term so the finite-order
+      field is conservative.
+\item \textbf{\(\zeta\)-prescription:} choose a null-evolution curve
+      \(\zeta=\zeta_\mu(\bM)\) on which the boundary distribution is separated
+      from double-scale evolution, then evolve from that curve to the final
+      point \cite{ScimemiVladimirov2017,ScimemiVladimirov2018}.
+\item \textbf{Equivalent SCET/RRG path:} use \((\mu,\nu)\) scales with an
+      explicit finite conversion to the project \((\mu,\zeta)\) scheme
+      \cite{Chiu2012}.
+\end{enumerate}
+The choice is a scheme/prescription decision shared by the full calculation,
+not a per-TMD fit option.
+
+\subsection{Target and polarization independence}
+
+The anomalous dimensions in
+\cref{eq:mu-evolution,eq:zeta-evolution} are properties of the renormalized
+operator.  At leading power they do not depend on whether the external target
+is a proton, neutron, deuteron, or another hadron, nor on its
+\(U,L,T,LL,LT,TT\) polarization.  They also do not depend on the named TMD
+projection when the underlying operator and color representation are the
+same.  Polarization dependence enters through:
+\begin{itemize}
+\item the matched boundary matrix element;
+\item the small-\(\bM\) coefficient and collinear operator channel;
+\item the transverse-rank projector;
+\item process-specific angular and hard kernels.
+\end{itemize}
+
+\begin{requirement}[No polarization-specific CS kernel by default]
+A separate Collins--Soper kernel for every spin-1 TMD is forbidden unless a
+new operator definition or a controlled factorization-breaking mechanism is
+identified.  Data tension must first be tested against boundary, matching,
+power-correction, and process kernels.
+\end{requirement}
+
+\section{The Collins--Soper kernel across perturbative and nonperturbative domains}
+\label{sec:cs-kernel}
+
+\subsection{Small-\texorpdfstring{\(\bM\)}{bTMD} expansion}
+
+For \(b=\abs{\bM}\ll\Lambda_{\QCD}^{-1}\),
+\begin{equation}
+ \cD_a(b;\mu)
+ =\cD_a^{\pert}
+ \left(L_b,\alpha_s(\mu)\right),
+ \qquad
+ L_b=\ln\frac{\mu^2b^2}{4e^{-2\gamma_E}},
+ \label{eq:perturbative-d-kernel}
+\end{equation}
+with coefficients constrained by
+\cref{eq:d-cusp-consistency}.  The perturbative series is known to high order,
+and the rapidity anomalous dimension has been calculated through four loops
+\cite{MoultZhuZhu2022,DuhrMistlbergerVita2022}.  The implementation records the
+actual coefficient order rather than inferring it from a resummation label.
+
+\subsection{Large-\texorpdfstring{\(b\)}{b} completion}
+
+The kernel is generically nonperturbative at large \(b\).  A general matched
+representation is
+\begin{equation}
+ \cD_a(b;\mu)
+ =
+ \cD_a^{\pert}(b_{\rm pert}(b);\mu)
+ +g_{K,a}(b)
+ +\delta\cD_{a}^{\rm match}(b),
+ \label{eq:large-b-kernel-decomposition}
+\end{equation}
+where \(b_{\rm pert}\) is a declared profile or regulated coordinate,
+\(g_{K,a}\) is the nonperturbative remainder, and
+\(\delta\cD^{\rm match}\) enforces smoothness or step-scaling consistency.
+A \(b_*\) map is one admissible realization, not part of the definition of a
+TMD.
+
+The profile must satisfy at least
+\begin{equation}
+ b_{\rm pert}(b)=b+\cO(b^3/b_{\max}^2)
+ \quad(b\to0),
+ \qquad
+ b_{\rm pert}(b)\le b_{\max},
+ \label{eq:b-profile-limits}
+\end{equation}
+and its induced power corrections are a named uncertainty axis.
+
+\subsection{Color-representation dependence}
+
+Quark and gluon kernels are separate objects,
+\begin{equation}
+ \cD_q\ne\cD_g
+ \label{eq:quark-gluon-d-separation}
+\end{equation}
+in general.  Quadratic-Casimir scaling is useful through the orders where it
+is verified, while four-loop results involve generalized Casimir structures
+\cite{MoultZhuZhu2022,DuhrMistlbergerVita2022}.  The model therefore stores
+independent quark and gluon perturbative coefficients and does not impose a
+nonperturbative relation
+\(g_{K,g}=(C_A/C_F)g_{K,q}\) without evidence.
+
+For independent gluon \(f\)- and \(d\)-type TMD operator channels, the
+standard leading-power rapidity kernel is associated with the adjoint Wilson
+representation.  A color-channel difference in the boundary or process hard
+map does not by itself imply a different universal CS kernel.  If a process
+requires a matrix-valued soft anomalous dimension, it is no longer represented
+as two independent universal gluon TMDs without an explicit generalized
+factorization theorem.
+
+\subsection{Calibration information}
+
+The nonperturbative kernel may be constrained by:
+\begin{itemize}
+\item global Drell--Yan, vector-boson, and SIDIS analyses;
+\item lattice quasi-TMD or TMD-wave-function determinations after controlled
+      matching;
+\item the microscopic model only if it includes the same soft operator and
+      subtracts overlap with the boundary phase budget;
+\item common fits using multiple target and polarization channels.
+\end{itemize}
+Recent lattice calculations provide direct constraints on the quark
+Collins--Soper kernel over nonperturbative transverse separations
+\cite{Avkhadiev2024,Bollweg2024,TanEtAl2025}.  They are calibration or
+validation data in a declared scheme; they are not silently copied into the
+gluon kernel.
+
+\begin{requirement}[Kernel universality test]
+A common quark or gluon kernel must describe all supported target and
+polarization channels after their distinct boundaries and coefficient
+functions are included.  Failure is reported before introducing a
+polarization-dependent kernel.
+\end{requirement}
+
+\section{Rank-aware Fourier--Bessel representation}
+\label{sec:rank-transforms}
+
+\subsection{Irreducible transverse harmonics}
+
+A coefficient with \(SO(2)\) weight \(m\) multiplies an irreducible tensor
+\(\mathcal T_m(\hat\kT)\).  With the project Fourier convention,
+\begin{equation}
+ \widetilde F^{(m)}(x,b)
+ =2\pi\,i^{m}\int_0^\infty
+ k\,\dd k\,
+ J_{|m|}(bk)\,
+ N_m^{k}(k;M_{\rm ref})
+ F^{(m)}(x,k),
+ \label{eq:rank-forward-bessel}
+\end{equation}
+where \(N_m^k\) includes the extracted powers and sign convention stored in
+\(\mathfrak r\).  The inverse is
+\begin{equation}
+ F^{(m)}(x,k)
+ =\frac{i^{-m}}{2\pi}
+ \int_0^\infty b\,\dd b\,
+ J_{|m|}(bk)\,
+ N_m^b(b;M_{\rm ref})
+ \widetilde F^{(m)}(x,b).
+ \label{eq:rank-inverse-bessel}
+\end{equation}
+The normalization factors obey the registry's round-trip identity, not a
+universal scalar formula.
+
+\subsection{Evolution does not change transverse rank}
+
+For a scalar evolution factor \(R_a(b)\) associated with one operator
+representation,
+\begin{equation}
+ \widetilde F_f^{(m)}(x,b)
+ =R_a(b)\widetilde F_i^{(m)}(x,b).
+ \label{eq:rank-preserving-evolution}
+\end{equation}
+It does not mix \(m\) or target irreducible channels.  Mixing can occur in the
+small-\(b\) collinear operator basis or process contraction, not through the
+universal radial evolution factor.
+
+\begin{proposition}[Rank/evolution commutation]
+If the evolution kernel is rotationally invariant in the transverse plane and
+multiplicative in \(b\) space, then evolution commutes with the projection onto
+each irreducible \(SO(2)\) harmonic.
+\end{proposition}
+
+\begin{proof}
+The kernel depends only on \(b=\abs{\bM}\) and therefore commutes with the
+rotation representation and its irreducible projectors.  Multiplication by
+\(R_a(b)\) preserves the harmonic weight.  The subsequent Bessel transform
+uses the same \(J_{|m|}\) kernel.
+\end{proof}
+
+\subsection{Derivative moments}
+
+Weighted transverse moments can be represented by derivatives at small
+\(b\), but these derivatives are ultraviolet sensitive and require operator
+matching.  Schematically,
+\begin{equation}
+ F^{(n)}(x)
+ \sim
+ \left.
+ \left(-\frac{\partial}{\partial b^2}\right)^n
+ \widetilde F(x,b)
+ \right|_{b\to0}^{\ren}.
+ \label{eq:derivative-moment}
+\end{equation}
+The superscript \(\ren\) is essential.  A finite-grid numerical derivative of
+a model curve is not automatically a renormalized twist-3 or higher-twist
+matrix element.
+
+\subsection{Numerical transform contract}
+
+Every transform manifest records:
+\begin{itemize}
+\item harmonic and rank;
+\item forward and inverse phases;
+\item extracted mass powers;
+\item integration range and quadrature rule;
+\item small- and large-argument Bessel treatment;
+\item interpolation basis;
+\item round-trip residuals on analytic and production test functions;
+\item tail estimates beyond the finite grids.
+\end{itemize}
+A transform cannot pass merely because the same implementation is used in
+both directions; at least one independent analytic oracle is required.
+
+\section{Small-\texorpdfstring{\(b_{\mathrm{TMD}}\)}{bTMD} operator product expansion}
+\label{sec:small-b-ope}
+
+\subsection{General typed expansion}
+
+For a renormalized TMD coefficient \(F_A^{a/h}\),
+\begin{equation}
+ \widetilde F_A^{a/h}(x,b;\mu,\zeta)
+ =
+ \sum_{B,j}
+ \left[
+ C_{A\leftarrow B}^{a\leftarrow j}
+ (b;\mu,\zeta;\mathfrak s)
+ \otimesx
+ f_B^{j/h}(\mu)
+ \right](x)
+ +\cO\!\left((b\Lambda_{\QCD})^{p_A}\right).
+ \label{eq:generic-small-b-ope}
+\end{equation}
+Here \(B\) labels a complete collinear operator basis, including twist,
+polarization, flavor, charge-conjugation, total-derivative, and multiparton
+information.  The coefficient is target independent; the proton, neutron,
+deuteron, and tensor-polarized information resides in the collinear matrix
+element.
+
+For nonzero rank,
+\begin{equation}
+ \widetilde\Phi_A^{i_1\cdots i_r}
+ =
+ b^{\langle i_1}\cdots b^{i_r\rangle}
+ \sum_{B,j}
+ C_{A\leftarrow B}^{(r),a\leftarrow j}
+ \otimesx f_B^{j/h}
+ +\cdots,
+ \label{eq:ranked-small-b-ope}
+\end{equation}
+with the extracted powers and reference mass governed by \(\mathfrak r\).
+
+\subsection{Twist-2 channels}
+
+The leading-twist small-\(b\) basis includes, where allowed by quantum
+numbers:
+\begin{itemize}
+\item unpolarized quark and gluon PDFs;
+\item helicity quark and gluon PDFs;
+\item quark transversity;
+\item tensor-polarized rank-zero quark and gluon operators for a spin-1
+      target;
+\item linearly polarized gluon TMD matching onto ordinary collinear partons;
+\item special spin-1 double-helicity-flip gluon operators where a collinear
+      twist-2 matrix element exists.
+\end{itemize}
+The generic twist-2 matching structure and its allowed polarization channels
+have been worked out at fixed order \cite{GutierrezReyes2017}; linearly
+polarized gluon matching is known to high perturbative order
+\cite{GutierrezReyes2019,LuoYangZhuZhu2019,ZhuLinearlyPolarized2025}, and
+transversity matching has likewise advanced to high order
+\cite{ZhuTransversity2025,ZhuDGLAP2026}.
+
+At tree level for the rank-zero unpolarized-like spin-1 channel,
+\begin{equation}
+ \widetilde f_{1LL}^{a/D}(x,b)
+ =f_{1LL}^{a/D}(x)+\cO(\alpha_s,b^2\Lambda_{\QCD}^2),
+ \label{eq:f1ll-tree-matching}
+\end{equation}
+provided the same \(LL\) convention is used on both sides.  Equivalently, the
+helicity-state tensor difference \(\delta_T f\) can be used as the
+convention-stable collinear coordinate.
+
+The fact that a fixed-order coefficient vanishes does not imply that the
+microscopic boundary function is exactly zero.  It can indicate that the
+matching begins at a higher order or that the leading collinear operator has a
+different twist.
+
+\subsection{Twist-3 and naive-\texorpdfstring{\(T\)-odd}{T-odd} channels}
+
+Sivers, Boer--Mulders, and several worm-gear structures have small-\(b\)
+expansions involving quark--gluon--quark or tri-gluon collinear operators
+\cite{ScimemiVladimirovTwist3}.  In a schematic project convention,
+\begin{align}
+ \widetilde f_{1T}^{\perp q[\eta]}
+ &\sim
+ \eta\,
+ C_{\rm Siv}^{q\leftarrow j}
+ \otimesx T_F^j
+ +C_{\rm Siv}^{q\leftarrow G}
+ \otimesx T_G
+ +\cdots,
+ \label{eq:sivers-twist3-matching}\\
+ \widetilde h_1^{\perp q[\eta]}
+ &\sim
+ \eta\,
+ C_{\rm BM}^{q\leftarrow j}
+ \otimesx T_F^{(\sigma),j}
+ +\cdots.
+ \label{eq:boer-mulders-twist3-matching}
+\end{align}
+The displayed sign is schematic: the exact sign, factors of \(M\), Fourier
+phase, and definition of \(T_F\) are stored in the coefficient registry.  A
+future/past sign may never be imposed twice---once in the microscopic Wilson
+boundary and again in the matching coefficient.
+
+Gluon naive-\(T\)-odd functions match onto independent \(f\)-type and
+\(d\)-type tri-gluon operators, with quark--gluon mixing where allowed:
+\begin{equation}
+ \begin{pmatrix}
+  \widetilde F_g^{(f)}\\
+  \widetilde F_g^{(d)}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+  C_{ff}&C_{fd}&C_{fq}\\
+  C_{df}&C_{dd}&C_{dq}
+ \end{pmatrix}
+ \otimesx
+ \begin{pmatrix}
+  T_G^{(f)}\\
+  T_G^{(d)}\\
+  T_F^{q}
+ \end{pmatrix}
+ +\cdots.
+ \label{eq:gluon-todd-matching-matrix}
+\end{equation}
+No universal scalar ``gluon Sivers coefficient'' replaces this matrix.
+
+\subsection{Spin-1 tensor channels}
+
+Target tensor polarization does not alter the short-distance coefficient of a
+given QCD operator, but it enlarges the set of nonzero external matrix
+elements.  Each spin-1 TMD is classified by:
+\begin{equation}
+ \left(
+ \text{parton operator},\,
+ \text{target irrep},\,
+ r,\,
+ \text{link parity},\,
+ \text{collinear twist},\,
+ \text{lowest nonzero order}
+ \right).
+ \label{eq:spin1-ope-classification}
+\end{equation}
+A rank-zero \(LL\) distribution can share the unpolarized twist-2 coefficient
+while using a tensor-polarized collinear matrix element.  An \(LT\) or \(TT\)
+coefficient may instead have zero unweighted integral and match to a weighted
+moment, a helicity-flip operator, or a higher-twist multiparton operator.  The
+registry must say which case applies; it cannot infer the collinear anchor
+from the target-channel name.
+
+\subsection{Power corrections and overlap domain}
+
+The OPE is accepted only in a domain where
+\begin{equation}
+ b\Lambda_{\QCD}\ll1,
+ \qquad
+ b\Lambda_{\LF}\ll1
+ \quad\text{or with a supplied LF-to-QCD step-scaling map}.
+ \label{eq:ope-domain}
+\end{equation}
+The residual is decomposed as
+\begin{equation}
+ \delta_{\rm OPE}
+ =\delta_{b^2\Lambda^2}
+ +\delta_{\rm twist}
+ +\delta_{\alpha_s}
+ +\delta_{\rm basis}
+ +\delta_{\rm LF\to QCD}.
+ \label{eq:ope-error-budget}
+\end{equation}
+Changing the large-\(b\) model cannot be used to hide failure of small-\(b\)
+matching.
+
+
+\section{Collinear evolution and operator mixing}
+\label{sec:collinear-evolution}
+
+\subsection{Nonsinglet evolution}
+
+For a nonsinglet operator coordinate \(f_{\NS}\),
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu^2}f_{\NS}(x;\mu)
+ =
+ \left[P_{\NS}(\alpha_s)\otimesx f_{\NS}\right](x;\mu).
+ \label{eq:nonsinglet-dglap}
+\end{equation}
+Different operator polarizations use different splitting functions: the
+unpolarized, helicity, and transversity kernels are distinct.  The target
+polarization does not change the kernel of a fixed operator.  Thus a tensor
+helicity-state difference of the unpolarized quark operator evolves with the
+same unpolarized nonsinglet kernel as the corresponding target average.
+
+\subsection{Singlet quark--gluon system}
+
+Define the flavor singlet
+\begin{equation}
+ \Sigma(x;\mu)=\sum_{q=1}^{n_f}
+ \left[q(x;\mu)+\bar q(x;\mu)\right].
+ \label{eq:singlet-definition}
+\end{equation}
+For each operator polarization that permits quark--gluon mixing,
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu^2}
+ \begin{pmatrix}
+  \Sigma\\g
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+  P_{qq}&P_{qg}\\
+  P_{gq}&P_{gg}
+ \end{pmatrix}
+ \otimesx
+ \begin{pmatrix}
+  \Sigma\\g
+ \end{pmatrix}.
+ \label{eq:singlet-evolution}
+\end{equation}
+For a spin-1 target, the same matrix acts on the tensor-polarized singlet
+coordinates
+\begin{equation}
+ \delta_T\bm f
+ =
+ \begin{pmatrix}
+  \delta_T\Sigma\\
+  \delta_T g
+ \end{pmatrix},
+ \label{eq:tensor-singlet-vector}
+\end{equation}
+because the local twist-2 operators are the same and only the external target
+matrix element changes.  This statement does not extend automatically to
+ranked or helicity-flip tensor TMDs whose collinear operator basis differs.
+
+\begin{proposition}[Momentum-sum preservation]
+If the splitting matrix satisfies the standard first-moment momentum
+constraints and the threshold maps are consistent, then the total plus
+momentum
+\(
+\int_0^1\dd x\,x[\Sigma(x)+g(x)]
+\)
+is invariant under \cref{eq:singlet-evolution}.
+\end{proposition}
+
+\begin{proof}
+Take the first \(x\)-moment of \cref{eq:singlet-evolution}.  Associativity of
+Mellin convolution converts it to multiplication by the first moments of the
+splitting functions.  The left null vector expressing energy--momentum
+conservation annihilates the splitting matrix.
+\end{proof}
+
+\subsection{Helicity, transversity, and double-helicity-flip sectors}
+
+Helicity evolution uses the polarized splitting matrix
+\(\Delta P_{ij}\).  Quark transversity is chiral odd and has no ordinary
+twist-2 gluon mixing for a spin-\(1/2\) target.  A spin-1 target can support
+independent gluon double-helicity-flip operators, but they are not inserted
+into the quark transversity equation by analogy.  Their evolution is defined
+in the operator basis appropriate to their helicity transfer and color
+representation.
+
+The implementation stores separate evolution families:
+\begin{equation}
+ \mathfrak e\in
+ \left\{
+ \mathrm{unpolarized},\,
+ \mathrm{helicity},\,
+ \mathrm{transversity},\,
+ \mathrm{gluon\ double\ flip},\,
+ \mathrm{twist\!-\!3\ multiparton}
+ \right\}.
+ \label{eq:collinear-evolution-families}
+\end{equation}
+A common interface does not mean a common splitting kernel.
+
+\subsection{Twist-3 multiparton evolution}
+
+The twist-3 functions entering
+\cref{eq:sivers-twist3-matching,eq:boer-mulders-twist3-matching,eq:gluon-todd-matching-matrix}
+are functions of more than one momentum fraction before special diagonal
+projections are taken.  Their evolution is an integral operator on a vector
+space of quark--gluon--quark and tri-gluon correlators,
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu^2}\bm T(\bm x;\mu)
+ =\bm K_{\tw3}(\mu)\otimes_{\bm x}\bm T(\bm x;\mu).
+ \label{eq:twist3-evolution}
+\end{equation}
+Evolving only the diagonal Qiu--Sterman function while ignoring generated
+off-diagonal support is an approximation that requires its own closure test.
+The twist-3 operator vector retains \(f/d\) color, flavor, charge-conjugation,
+and link-parity labels.
+
+\subsection{Heavy-flavor thresholds}
+
+At a threshold \(\mu_h\), the \(n_f\)- and \(n_f+1\)-flavor theories are
+related by
+\begin{equation}
+ \bm f^{(n_f+1)}(\mu_h)
+ =\bm A_{n_f+1\leftarrow n_f}(\mu_h)
+ \otimesx
+ \bm f^{(n_f)}(\mu_h),
+ \label{eq:collinear-threshold-map}
+\end{equation}
+and the TMD matching coefficients, anomalous dimensions, hard functions, and
+running coupling must change consistently.  Individual scheme-dependent
+parton functions need not be exactly continuous, but physical observables and
+conserved moments must be continuous to the retained order.
+
+A threshold record contains:
+\begin{equation}
+ \mathfrak h=
+ \left(
+ m_h,\,\mu_h,\,n_f^{\rm in},\,n_f^{\rm out},\,
+ \bm A,\,\alpha_s\text{ matching},\,
+ \TMD\text{ coefficient matching},\,
+ \text{order}
+ \right).
+ \label{eq:threshold-record}
+\end{equation}
+The flavor count cannot change merely because the final hard scale crosses a
+mass value.
+
+\subsection{Collinear/TMD evolution consistency}
+
+The small-\(b\) OPE and evolution must satisfy
+\begin{equation}
+ \cE_{\TMD}
+ \left[
+ \bm C(\mu_i,\zeta_i)\otimesx\bm f(\mu_i)
+ \right]
+ =
+ \bm C(\mu_f,\zeta_f)
+ \otimesx
+ \cE_{\rm coll}\left[\bm f(\mu_i)\right]
+ +\cO(\delta_{\rm pert}),
+ \label{eq:ope-evolution-commutation}
+\end{equation}
+where all coefficient, anomalous-dimension, and beta-function orders are
+compatible.  This is a stronger test than evolving the TMD boundary and PDF
+independently and comparing only at one scale.
+
+\section{Commutation with the microscopic and nuclear hierarchy}
+\label{sec:nuclear-evolution}
+
+\subsection{Evolution acts on operators, not on target labels}
+
+Let \(\cN\) be a linear nuclear composition map from nucleon operator matrix
+elements to a deuteron matrix element.  For a one-body impulse term,
+\begin{equation}
+ \left[\cN F\right](x)
+ =\int_x^1\frac{\dd y}{y}\,
+ S(y)F\left(\frac{x}{y}\right),
+ \label{eq:nuclear-mellin-convolution}
+\end{equation}
+with spin and transverse variables suppressed.  Let \(\cE\) be a linear
+collinear or TMD evolution operator whose kernel is target independent.
+
+\begin{theorem}[Evolution--impulse commutation]
+If the nuclear spectral kernel \(S\) is independent of \(\mu\) and \(\zeta\)
+in the selected operator representation, the integrals converge, and the
+same partonic operator basis is used, then
+\begin{equation}
+ \cE\circ\cN=\cN\circ\cE.
+ \label{eq:evolution-nuclear-commutation}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Both \(\cE\) and \(\cN\) are Mellin convolutions in the longitudinal
+fraction.  Associativity and Fubini's theorem allow the integration order to
+be exchanged.  TMD rapidity evolution multiplies the nucleon TMD by a radial
+factor in \(b\) space and therefore also commutes with the nuclear
+longitudinal convolution and the nuclear transverse phase.  The conclusion
+fails if the nuclear kernel itself contains unresolved partonic scale
+dependence or if different operator bases are used.
+\end{proof}
+
+For the spin-resolved impulse parent,
+\begin{equation}
+ \widetilde F_{a/D,I}^{\IA}(x,b;\mu,\zeta)
+ =
+ \sum_N\int\frac{\dd y}{y}\dd^2\pT\,
+ S_{I}^{N/D}(y,\pT)
+ e^{i(x/y)\bM\cdot\pT}
+ \widetilde F_{a/N}
+ \left(\frac{x}{y},b;\mu,\zeta\right),
+ \label{eq:evolved-impulse-convolution}
+\end{equation}
+the universal evolution factor can be applied before or after the integration
+when the assumptions of the theorem hold.
+
+\subsection{When commutation fails}
+
+The theorem does not license one universal nucleon evolution factor for every
+nuclear mechanism.  Separate matched operator bases are required for:
+\begin{itemize}
+\item explicit pion and \(\Delta\) partonic operators;
+\item coherent diffractive multi-nucleon operators;
+\item short-distance six-quark or hidden-color operators;
+\item exchange-current operators with their own anomalous dimensions;
+\item factorization regimes in which nuclear Glauber exchange couples the two
+      hadrons or measured final state.
+\end{itemize}
+In those cases the full operator vector evolves,
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu}
+ \begin{pmatrix}
+ \cO_{(1)}\\\cO_{(2)}\\\cO_{\pi}\\\cO_{\Delta}\\\cO_{\shortd}
+ \end{pmatrix}
+ =\bm\gamma_{\nuc}
+ \begin{pmatrix}
+ \cO_{(1)}\\\cO_{(2)}\\\cO_{\pi}\\\cO_{\Delta}\\\cO_{\shortd}
+ \end{pmatrix},
+ \label{eq:nuclear-operator-mixing}
+\end{equation}
+with subtraction terms preventing the same short-distance physics from being
+carried by multiple sectors.
+
+\subsection{Microscopic member identity}
+
+A microscopic member \(m\) must remain the same through matching, evolution,
+nuclear composition, and process assembly:
+\begin{equation}
+ \theta_m
+ \longrightarrow
+ \bm W_m^{\LF}
+ \longrightarrow
+ \bm W_m^{\QCD}
+ \longrightarrow
+ \bm F_m(\mu,\zeta)
+ \longrightarrow
+ \sigma_m.
+ \label{eq:member-identity-chain}
+\end{equation}
+One may not combine the quark boundary from member \(m\), gluon boundary from
+member \(m'\), and nuclear state from member \(m''\) unless the ensemble
+construction explicitly declares them independent nuisance axes rather than
+one correlated microscopic state.
+
+\begin{requirement}[No post-evolution reassembly]
+Evolution acts on the resolved component graph.  Proton, neutron, flavor,
+parton species, target channel, rank, link/color class, nuclear mechanism,
+and member labels remain available after evolution.  Summing them before
+evolution is allowed only when the evolution kernels and matching maps are
+proven identical on the summed subspace.
+\end{requirement}
+
+\section{Boundary initialization and the separation of physics}
+\label{sec:boundary}
+
+\subsection{Reference boundary}
+
+Choose a reference point or curve
+\begin{equation}
+ \mathfrak b_0=
+ \left(\mu_0,\zeta_0,\mathfrak s_{\TMD},r_{\LF}\right)
+ \label{eq:boundary-record}
+\end{equation}
+in a domain where the Hamiltonian matrix element, regulator-to-QCD matching,
+and perturbative evolution are all controlled.  The initial TMD is
+\begin{equation}
+ \widetilde{\bm F}_0
+ =
+ \bm Z_{\LF\to\QCD}(\mathfrak b_0)
+ \otimesx\widetilde{\bm W}_{\LF}
+ +\widetilde{\bm\delta}_{\rm miss}
+ +\widetilde{\bm\delta}_{\rm trunc}.
+ \label{eq:initialized-boundary}
+\end{equation}
+The reference scale is not required to equal the hadron model cutoff, the
+small-\(b\) matching scale, or the final hard scale.
+
+\subsection{No independent Gaussian per function}
+
+A numerical regulator or basis may produce approximately Gaussian transverse
+profiles.  This does not justify replacing each microscopic projection by
+\begin{equation}
+ F_A(x,k_T)\propto f_A(x)
+ \exp[-k_T^2/\lambda_A^2]
+ \label{eq:forbidden-independent-gaussian}
+\end{equation}
+with one freely fitted \(\lambda_A\) per named TMD.  Transverse structure must
+come from the common state, matching operator, or a small shared discrepancy
+basis whose parameters affect all related projections.
+
+Admissible discrepancy operators include:
+\begin{itemize}
+\item a common unresolved high-Fock transverse form factor;
+\item a representation-specific large-\(b\) kernel;
+\item a controlled missing-current operator;
+\item a shared quark--gluon vertex correction;
+\item a common nuclear short-distance operator.
+\end{itemize}
+Each has an operator identity, power counting, and withheld test.
+
+\subsection{Phase budget from Volume III}
+
+The link-odd boundary inherits the phase budget
+\begin{equation}
+ \operatorname{Im}\ln W_{\ren}
+ =
+ \operatorname{Im}\ln W_{\unsub}
+ -\frac12\operatorname{Im}\ln S
+ +\operatorname{Im}\ln Z_{\UV}
+ +\operatorname{Im}\ln R_{\rap}.
+ \label{eq:phase-budget-repeated}
+\end{equation}
+A boundary-only rescattering calculation and a joint soft-sector calculation
+are mutually exclusive representations of the same soft exchange unless an
+explicit overlap subtraction is supplied.  The CS kernel cannot be fitted to
+reproduce a phase already included in the microscopic boundary.
+
+\subsection{Positivity after matching and evolution}
+
+At the regulated forward amplitude level, Gram positivity can be structural.
+A finite-order soft-subtracted TMD in a particular scheme is not guaranteed to
+remain pointwise positive.  Therefore:
+\begin{itemize}
+\item positivity is tested at every layer where a theorem applies;
+\item negative values generated by perturbative matching are not clipped;
+\item physical cross sections and density-matrix combinations are tested in
+      the domain of factorization;
+\item a positivity failure is classified as state, matching, truncation,
+      scheme, or numerical, not repaired silently.
+\end{itemize}
+
+\section{Process-factorization records}
+\label{sec:process-records}
+
+\subsection{Typed process object}
+
+A process factorization record is
+\begin{equation}
+ \begin{aligned}
+ \mathfrak P=\bigl(&
+ \text{external states},\,
+ \text{hard channel},\,
+ \text{measurement},\,
+ \text{TMD/FF basis},\,
+ \text{link map},\,
+ \text{color map},\\
+ &\text{soft prescription},\,
+ \text{power counting},\,
+ \text{Glauber status},\,
+ \text{factorization status}
+ \bigr).
+ \end{aligned}
+ \label{eq:process-record}
+\end{equation}
+The factorization status is one of
+\begin{equation}
+ \texttt{ESTABLISHED},\quad
+ \texttt{CONDITIONAL},\quad
+ \texttt{EXPLORATORY},\quad
+ \texttt{BROKEN},\quad
+ \texttt{UNASSESSED}.
+ \label{eq:factorization-statuses}
+\end{equation}
+A \texttt{BROKEN} or \texttt{UNASSESSED} object cannot consume universal
+separate-hadron TMDs as an authoritative prediction.
+
+\subsection{Drell--Yan}
+
+For a color-singlet Drell--Yan channel at \(q_T\ll Q\), a rank-resolved
+structure function is schematically
+\begin{align}
+ W_m^{\DY}(q_T,Q)
+ ={}&
+ \sum_{a,b}
+ H_{ab,m}^{\DY}(Q,\mu)
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_m(bq_T)
+ \nonumber\\
+ &\times
+ \widetilde F_{a/h_1}^{[\gamma_-],(r_1)}
+ (x_1,b;\mu,\zeta_1)
+ \widetilde F_{b/h_2}^{[\gamma_-],(r_2)}
+ (x_2,b;\mu,\zeta_2)
+ \cM_m(b),
+ \label{eq:dy-w-term}
+\end{align}
+where \(\zeta_1\zeta_2\) is tied to \(Q^4\) in the chosen convention and
+\(\cM_m\) contains the declared mass and angular factors.  The deuteron target
+channel is a projector on its spin-1 density matrix, not a change of the
+universal evolution kernel.
+
+\subsection{SIDIS}
+
+For SIDIS,
+\begin{align}
+ W_m^{\SIDIS}(P_{hT},Q)
+ ={}&
+ \sum_q e_q^2 H_{q,m}^{\SIDIS}(Q,\mu)
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_m\!\left(\frac{bP_{hT}}{z_h}\right)
+ \nonumber\\
+ &\times
+ \widetilde F_{q/D}^{[\gamma_+],(r_F)}
+ (x_B,b;\mu,\zeta_F)
+ \widetilde D_{h/q}^{(r_D)}
+ (z_h,b;\mu,\zeta_D)
+ \cM_m^{\SIDIS}(b,z_h).
+ \label{eq:sidis-w-term}
+\end{align}
+The fragmentation-function scheme, rank convention, and Fourier scaling by
+\(z_h\) are part of the process record.  The future-pointing link is not
+selected from the sign of a fitted Sivers curve; it is supplied by the
+factorization theorem.
+
+\subsection{Inclusive DIS}
+
+Inclusive DIS uses collinear factorization rather than a TMD product.  The
+rank-zero tensor relation
+\begin{equation}
+ b_1(x,Q^2)
+ =\frac12\sum_q e_q^2
+ \left[
+ \delta_T q(x,Q^2)+\delta_T\bar q(x,Q^2)
+ \right]
+ +\cO(\alpha_s,Q^{-2})
+ \label{eq:b1-evolved-relation}
+\end{equation}
+provides a direct check that the TMD small-\(b\) matching, collinear evolution,
+and tensor sign adapter are mutually consistent.  Integrating a SIDIS TMD
+formula is not used as a substitute for the inclusive hard coefficients.
+
+\subsection{Gluon-sensitive channels}
+
+A gluon process can require a vector of independent color/link channels,
+\begin{equation}
+ W_m^{g,\proc}
+ =
+ \sum_{c=f,d}
+ H_{m,c}^{g,\proc}
+ \otimes
+ \widetilde F_{g/D}^{(c)}
+ \otimes
+ \widetilde X_{\proc}^{(c)}.
+ \label{eq:gluon-color-process-map}
+\end{equation}
+The hard factors determine the \(f/d\) weights.  For colored final states,
+Glauber exchange or color entanglement can invalidate the product form.  The
+process record must either cite the required factorization result, carry a
+conditional generalized soft matrix, or remain exploratory.
+
+\begin{requirement}[Process qualification before prediction]
+A named process must supply its operator basis, link directions, color
+weights, hard factors, measurement kernel, scale relation, fixed-order
+reference, and factorization/Glauber status before the model can produce an
+authoritative observable.
+\end{requirement}
+
+
+\section{Matched low-, intermediate-, and high-transverse-momentum observables}
+\label{sec:wy}
+
+\subsection{Additive \texorpdfstring{\(W+Y\)}{W+Y} construction}
+
+For a process and angular structure \(m\), define
+\begin{equation}
+ \frac{\dd\sigma_m}{\dd\cP}
+ =W_m^{[N]}+Y_m^{[N]}+\delta_{m,\rm pow},
+ \label{eq:wy-master}
+\end{equation}
+where \(W_m^{[N]}\) is the TMD-resummed expression at declared accuracy and
+\begin{equation}
+ Y_m^{[N]}
+ =
+ \sigma_{m,\FO}^{[N]}
+ -\left[W_m^{[N]}\right]_{\asy,\FO}^{[N]}.
+ \label{eq:y-definition}
+\end{equation}
+The asymptotic operator expands the same hard factors, matching coefficients,
+evolution exponent, measurement variables, masses, schemes, and angular
+projectors used in \(W_m\).  A fixed-order cross section and an asymptotic
+term computed in different conventions cannot define a valid \(Y\) term.
+
+\begin{proposition}[Fixed-order recovery]
+If \(\left[W_m\right]_{\asy,\FO}^{[N]}\) is the complete singular expansion of
+\(W_m\) through the same order as \(\sigma_{m,\FO}^{[N]}\), then
+\(W_m+Y_m\) reproduces the fixed-order result through order \(N\) when
+expanded in \(\alpha_s\), while retaining all-order logarithmic resummation at
+small \(q_T\).
+\end{proposition}
+
+\begin{proof}
+Expand \(W_m\) through order \(N\).  Its singular fixed-order part cancels
+against the subtraction in \cref{eq:y-definition}, leaving
+\(\sigma_{m,\FO}^{[N]}\).  Terms beyond order \(N\) are the resummed
+contribution, and power corrections remain explicit.
+\end{proof}
+
+\subsection{Behavior in the two limits}
+
+At \(q_T/Q\to0\), the \(Y\) term is nonsingular and should be parametrically
+suppressed relative to the leading logarithmic content of \(W\).  At
+\(q_T\sim Q\), the resummed term alone is not a controlled full description;
+the sum must approach the fixed-order prediction within the declared
+power-correction and matching uncertainty.
+
+The model boundary is never retuned to absorb a deficient \(Y\) term.  A
+large discrepancy at moderate \(q_T\) is diagnosed among:
+\begin{itemize}
+\item missing fixed-order channels;
+\item inconsistent asymptotic subtraction;
+\item resummation/profile choice;
+\item kinematic power corrections;
+\item factorization breakdown;
+\item numerical transform or interpolation error.
+\end{itemize}
+
+\subsection{Profiled matching}
+
+A smooth profile can be introduced to suppress resummation outside its natural
+domain,
+\begin{equation}
+ \sigma_m^{\rm matched}
+ =w(q_T/Q)W_m
+ +\sigma_{m,\FO}
+ -w(q_T/Q)\left[W_m\right]_{\asy,\FO},
+ \label{eq:profiled-wy}
+\end{equation}
+with \(w(0)=1\) and \(w(q_T/Q\gtrsim1)\to0\).  The profile is part of the
+accuracy record.  Variations of its transition location and smoothness probe
+matching uncertainty, but a profile may not remove a physical fixed-order
+channel or alter the expansion through the claimed order.
+
+\subsection{Rank-resolved subtraction}
+
+The asymptotic subtraction is performed separately for every harmonic and
+tensor rank:
+\begin{equation}
+ Y_m
+ =\sigma_{\FO,m}-[W_m]_{\asy,\FO}.
+ \label{eq:rank-resolved-y}
+\end{equation}
+Using a rank-zero asymptotic term for a rank-one or rank-two modulation can
+produce the correct dimensions after ad hoc mass factors while still being
+physically wrong.  The `RankSpec' of the TMD, hard tensor, and fixed-order
+projector must agree.
+
+\subsection{Multiplicative alternatives}
+
+Multiplicative or inverse-error-weighted matching can be studied as an
+alternative,
+\begin{equation}
+ \sigma^{\rm mult}
+ =W\,\frac{\sigma_{\FO}}{[W]_{\asy,\FO}},
+ \label{eq:multiplicative-matching}
+\end{equation}
+but only in a domain where the denominator is nonzero and its perturbative
+expansion is controlled.  It is not the project default.  Additive and
+multiplicative results are alternative matching schemes, not uncertainty
+members to be added simultaneously.
+
+\section{Perturbative accuracy and resummation bookkeeping}
+\label{sec:accuracy}
+
+\subsection{The accuracy tuple is authoritative}
+
+A label such as \(\mathrm{N}^3\mathrm{LL}'\) is insufficient because counting
+conventions differ.  The authoritative record is
+\begin{equation}
+ \mathfrak A=
+ \left(
+ n_{\Gamma},n_{\gamma},n_{\cD},n_{\beta},
+ n_C,n_H,n_P,n_{\FO},n_Y,
+ \mathfrak p_{\rm evol},\mathfrak p_{\rm match}
+ \right),
+ \label{eq:accuracy-tuple}
+\end{equation}
+where the entries specify the perturbative order of the cusp, noncusp, and
+rapidity anomalous dimensions, beta function, small-\(b\) coefficients, hard
+factor, collinear splitting functions, fixed-order cross section, and
+asymptotic subtraction, plus the evolution and matching prescriptions.
+
+The human-readable resummation label is generated from \(\mathfrak A\) under
+a versioned project convention.  A primed label means that specified boundary
+or hard/matching coefficients are included one fixed order beyond the minimal
+unprimed logarithmic counting; the exact entries are still listed.
+
+\subsection{Scale families}
+
+The calculation can contain:
+\begin{equation}
+ \mu_H,\quad
+ \mu_B,\quad
+ \mu_S,\quad
+ \mu_b,\quad
+ \mu_{\FO},\quad
+ \zeta_1,\zeta_2,\quad
+ \mu_{\rm thr},\quad
+ \mu_{\LF\to\QCD}.
+ \label{eq:scale-family}
+\end{equation}
+Not all are independent in every scheme.  A variation plan declares which
+scales are varied, their correlations, constraints such as
+\(\zeta_1\zeta_2=Q^4\), and regions excluded to avoid artificial large
+logarithms.
+
+Scale variation is not the only perturbative uncertainty.  The error budget
+also includes:
+\begin{itemize}
+\item finite-order evolution curl;
+\item OPE truncation and unknown coefficient orders;
+\item heavy-threshold matching;
+\item \(W+Y\) transition/profile choice;
+\item fixed-order numerical uncertainty;
+\item scheme-conversion truncation.
+\end{itemize}
+
+\subsection{No accuracy laundering}
+
+A high-order cusp anomalous dimension does not upgrade a calculation whose
+hard factor, matching coefficient, polarized splitting function, or \(Y\) term
+is known only at lower order.  Every observable reports both the global label
+and the bottleneck entries of \(\mathfrak A\).
+
+For a structure involving several TMDs, the observable accuracy is bounded by
+the least accurate required ingredient.  A linearly polarized gluon
+coefficient known to higher order cannot upgrade an unknown process-specific
+hard-color factor.
+
+\section{Uncertainty propagation and convergence}
+\label{sec:uncertainty}
+
+\subsection{Shared pushforward}
+
+Let \(\theta\) denote calibrated microscopic and matching parameters and let
+\(\nu\) collect controlled discrete or continuous truncation choices.  The
+prediction is
+\begin{equation}
+ \sigma_i=\sigma_i(\theta,\nu),
+ \qquad
+ \operatorname{Cov}(\sigma_i,\sigma_j)
+ =\left\langle
+ (\sigma_i-\bar\sigma_i)
+ (\sigma_j-\bar\sigma_j)
+ \right\rangle_{\theta,\nu}.
+ \label{eq:shared-covariance}
+\end{equation}
+Member identity is retained through all transformations.  The covariance
+therefore includes cross-flavor, quark--gluon, TMD--GPD, nucleon--deuteron,
+rank, process, and scale correlations.
+
+\subsection{Noninterchangeable uncertainty axes}
+
+The following are reported separately before any optional combined summary:
+\begin{enumerate}
+\item microscopic parameter/posterior uncertainty;
+\item Hamiltonian basis, Fock, and regulator truncation;
+\item LF-to-QCD matching and missing-operator uncertainty;
+\item perturbative coefficient and anomalous-dimension truncation;
+\item evolution path/curl and scale variation;
+\item nonperturbative CS-kernel uncertainty;
+\item large-\(b\) boundary/discrepancy uncertainty;
+\item collinear multiparton and threshold evolution uncertainty;
+\item nuclear many-body and coherent-sector truncation;
+\item process-factorization and Glauber status;
+\item fixed-order and \(Y\)-term matching;
+\item numerical transform, grid, interpolation, and quadrature error.
+\end{enumerate}
+Convergence in one axis cannot be used to hide nonconvergence in another.
+
+\subsection{Observable-level convergence}
+
+For a directed sequence of calculations \(n\), define
+\begin{equation}
+ \delta_i^{(n+1,n)}
+ =
+ \frac{
+ \abs{\sigma_i^{(n+1)}-\sigma_i^{(n)}}
+ }{
+ \max(\abs{\sigma_i^{(n+1)}},\sigma_{i,\rm ref})
+ }.
+ \label{eq:observable-convergence}
+\end{equation}
+The sequence can increase Hamiltonian resolution, Fock content, matching order,
+perturbative order, \(b\)-grid range, or fixed-order accuracy.  Each direction
+has its own expected convergence law.  A smooth result at one resolution is
+not a convergence study.
+
+\section{Formal software architecture}
+\label{sec:software}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.27\textwidth}L{0.65\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{TMDSchemeId} & Complete tuple of UV scheme, rapidity regulator,
+soft partition, staple/cusp convention, color representation, and tensor
+conventions.\\
+\texttt{MatchingBasis} & Closed LF and QCD operator bases, quantum numbers,
+mixing blocks, local moments, and missing-operator status.\\
+\texttt{LFtoQCDMatchingMap} & Versioned convolution/mixing kernel, matching
+conditions, calibration states, step-scaling links, and discrepancy operators.\\
+\texttt{RenormalizedTMDOperator} & Decorated operator identity with
+\((\mu,\zeta)\), scheme, link/color, rank, target, nuclear sector, and member.\\
+\texttt{AnomalousDimensionSet} & Cusp, noncusp, rapidity, beta-function, and
+convention adapters with perturbative orders.\\
+\texttt{EvolutionPath} & Endpoints, contour or \(\zeta\)-prescription,
+profiles, finite-order curl treatment, and numerical solver metadata.\\
+\texttt{CollinsSoperKernel} & Quark/gluon perturbative coefficients,
+large-\(b\) completion, calibration members, representation status, and
+matching profile.\\
+\texttt{SmallBOPE} & Rank- and link-resolved coefficient matrices, collinear
+operator basis, twist, lowest order, power remainder, and scheme.\\
+\texttt{CollinearEvolution} & Nonsinglet, singlet, helicity, transversity,
+double-flip, and twist-3 kernels plus threshold maps.\\
+\texttt{RankTransform} & Forward/inverse Bessel transforms, phases, mass
+powers, quadrature, analytic oracles, and round-trip reports.\\
+\begin{tabular}[t]{@{}l@{}}\texttt{ProcessFactorization}\\\texttt{Record}\end{tabular} & Hard channel, TMD/FF basis, link/color
+map, measurement function, Glauber and factorization status.\\
+\texttt{WTerm} & Rank-resolved resummed contraction with scale and accuracy
+manifest.\\
+\texttt{YTerm} & Fixed-order result, asymptotic subtraction, common scheme,
+kinematics, order, and profile.\\
+\texttt{AccuracyManifest} & Full tuple \(\mathfrak A\), scale-variation plan,
+bottleneck order, and generated human label.\\
+\texttt{EvolutionEnsembleStore} & Common microscopic member identity and all
+matching, kernel, scale, threshold, nuclear, and numerical axes.\\
+\texttt{ClosureReport} & Marginal, moment, path, scheme, sum-rule, process,
+\(W+Y\), and regression residuals.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Fail-closed composition}
+
+A map can execute only if all required fields agree or an explicit adapter is
+registered.  Mandatory comparisons include:
+\begin{itemize}
+\item \(\bD\) versus \(\bM\);
+\item rank, Bessel order, Fourier phase, and reference mass;
+\item quark versus gluon representation;
+\item target and parton operator polarization;
+\item future/past and ordered gluon link identity;
+\item \(f/d\) color class;
+\item UV, rapidity, and soft scheme;
+\item \(\mu,\zeta,n_f\), and threshold history;
+\item microscopic and nuclear member identity;
+\item perturbative accuracy and fixed-order subtraction order;
+\item process factorization and Glauber status.
+\end{itemize}
+An error reports the source and target types, missing adapter, and provenance
+path.  It never substitutes a nominally similar function.
+
+\subsection{Machine-readable manifests}
+
+Every authoritative prediction is reproducible from four immutable manifests:
+\begin{enumerate}
+\item operator and matching manifest;
+\item evolution and accuracy manifest;
+\item process and \(W+Y\) manifest;
+\item ensemble and numerical-convergence manifest.
+\end{enumerate}
+Their content hashes are embedded in the output metadata.  A plot without the
+manifests is illustrative, not an authoritative artifact.
+
+
+\section{Validation ladder and required property tests}
+\label{sec:validation}
+
+\subsection{Layered validation}
+
+The matching and evolution layer is accepted in increasing dynamical depth:
+\begin{enumerate}
+\item \textbf{Type layer:} complete scheme, coordinate, rank, link/color,
+      threshold, member, and process identity.
+\item \textbf{Operator layer:} correct mixing blocks, local-current limits,
+      Ward identities, and step-scaling composition.
+\item \textbf{Evolution layer:} integrability, contour transitivity,
+      representation dependence, and threshold closure.
+\item \textbf{OPE layer:} small-\(b\) matching, collinear evolution
+      compatibility, and rank-aware power counting.
+\item \textbf{Parent layer:} common TMD/GPD/PDF/current reductions from the
+      same matched microscopic operator.
+\item \textbf{Nuclear layer:} evolution/composition commutation where valid,
+      and separate evolution of many-body operators where not.
+\item \textbf{Process layer:} hard/link/color qualification, \(W+Y\)
+      fixed-order recovery, and Glauber gates.
+\item \textbf{Predictive layer:} multi-scale withheld observables without
+      per-TMD retuning.
+\end{enumerate}
+
+\subsection{Mandatory property tests}
+
+At minimum, the implementation must test:
+\begin{enumerate}
+\item finite scheme transformations cancel in complete observables;
+\item LF-to-QCD matching reproduces all calibration matrix elements and
+      overconstrained holdout matrix elements within the error model;
+\item step-scaling maps satisfy the cocycle relation;
+\item local vector charge and total momentum are preserved;
+\item the TMD evolution curl vanishes exactly in analytic benchmarks and is
+      reported at finite perturbative order;
+\item evolution is transitive and invertible within numerical tolerance;
+\item future/past link-even equality and link-odd sign reversal are preserved;
+\item quark and gluon kernels cannot be interchanged;
+\item rank projectors commute with radial evolution;
+\item every rank transform passes independent analytic forward/inverse tests;
+\item small-\(b\) OPE followed by evolution agrees with evolution followed by
+      coefficient matching;
+\item unpolarized, helicity, transversity, and twist-3 kernels are not mixed;
+\item singlet evolution preserves the momentum sum rule;
+\item heavy-threshold matching preserves physical moments and process
+      continuity to the retained order;
+\item the spin-1 \(LL\) tree-level convention reproduces the helicity-state
+      tensor difference with the declared sign adapter;
+\item gluon \(f/d\) operator channels remain independent until a process map
+      supplies hard weights;
+\item the nuclear impulse convolution commutes with evolution under the
+      theorem's assumptions;
+\item an explicit two-body or pion operator fails the impulse-commutation test
+      unless its own evolution block is supplied;
+\item the asymptotic expansion of \(W\) reproduces all fixed-order singular
+      terms through the declared order;
+\item \(W+Y\) reproduces the fixed-order expansion and remains finite in the
+      matching region;
+\item process objects marked \texttt{BROKEN} or \texttt{UNASSESSED} cannot
+      generate authoritative universal-TMD predictions;
+\item all uncertainty axes preserve common member identity;
+\item authoritative output hashes are unchanged by metadata-only migrations.
+\end{enumerate}
+
+\subsection{Deliberate negative injections}
+
+The test suite must deliberately inject and reject:
+\begin{itemize}
+\item \(\bD\) used as \(\bM\);
+\item a \(J_0\) transform applied to nonzero rank;
+\item an inconsistent Fourier phase or reference mass;
+\item a quark CS kernel applied to a gluon TMD;
+\item a future-link Sivers boundary paired with a past-link process map without
+      the sign adapter;
+\item an \(f\)-type gluon coefficient combined with a \(d\)-type operator;
+\item an \(n_f\) change without a threshold map;
+\item a \(\MSbar\) coefficient combined with a different UV scheme;
+\item a square-root soft TMD paired with a hard factor in an incompatible
+      soft partition;
+\item collinear and TMD evolution at inconsistent perturbative orders;
+\item a twist-2 DGLAP kernel applied to a twist-3 multiparton vector;
+\item an unrenormalized derivative moment promoted to a Qiu--Sterman function;
+\item a polarization-dependent CS kernel introduced with no operator change;
+\item a pilot or benchmark boundary promoted to production;
+\item a \(Y\) subtraction built from different kinematics or a different
+      fixed order;
+\item a gluon-sensitive colored-final-state process with unassessed Glauber
+      status;
+\item a microscopic member mixed with a different nuclear member under one
+      purported correlated sample.
+\end{itemize}
+
+\section{Analytic and numerical benchmark suite}
+\label{sec:benchmarks}
+
+\subsection{Benchmark A: exact two-scale potential}
+
+Choose
+\begin{equation}
+ \cD(b;\mu)=a\ln\frac{\mu}{\mu_b}+d_0(b),
+ \qquad
+ \gamma_F(\mu,\zeta)=g_0-a\ln\frac{\sqrt\zeta}{\mu}.
+ \label{eq:benchmark-a-anom}
+\end{equation}
+Then \(\Gamma=a\) and the evolution one-form is closed.  Evolve around a
+rectangle in the scale plane and require exact return to the initial value.
+Perturb one coefficient deliberately and verify that the loop integral equals
+the area integral of the injected curl.
+
+\subsection{Benchmark B: rank-\texorpdfstring{\(m\)}{m} Gaussian oracle}
+
+For
+\begin{equation}
+ F^{(m)}(k)=k^m e^{-\alpha k^2},
+ \label{eq:rank-gaussian}
+\end{equation}
+the Bessel transform is analytic and proportional to
+\(b^m e^{-b^2/(4\alpha)}\).  Test ranks \(m=0,1,2,3\), all phase conventions,
+and forward/inverse transforms on independent implementations.  Multiplying
+by a radial evolution factor must preserve the harmonic.
+
+\subsection{Benchmark C: singlet mixing with a conserved moment}
+
+Construct a two-channel kernel matrix whose first moment has left null vector
+\((1,1)\).  Evolve a quark--gluon vector and verify exact momentum
+conservation.  Inject one incorrect off-diagonal sign and require the momentum
+ledger to fail.
+
+\subsection{Benchmark D: finite scheme transformation}
+
+Select an invertible finite matrix \(\bm Z\) in a two-operator basis.  Transform
+both TMDs and the hard factor according to
+\cref{eq:finite-scheme-transform,eq:hard-scheme-transform}.  The cross section
+must remain invariant.  Transform only the TMDs and verify a controlled
+failure.
+
+\subsection{Benchmark E: LF-to-QCD step scaling}
+
+Use three finite-dimensional regulator levels with known embedding and
+counterterm maps.  Construct \(\bm\Sigma_{2\leftarrow1}\),
+\(\bm\Sigma_{3\leftarrow2}\), and \(\bm\Sigma_{3\leftarrow1}\), and test the
+cocycle \cref{eq:step-scaling-cocycle}.  An omitted induced operator should
+produce a nonzero cocycle defect and a failed holdout matrix element.
+
+\subsection{Benchmark F: nuclear convolution commutation}
+
+Choose analytic beta-function-like spectral and parton distributions so the
+Mellin convolutions are known.  Verify
+\begin{equation}
+ P\otimesx(S\otimesx f)=S\otimesx(P\otimesx f).
+ \label{eq:analytic-nuclear-associativity}
+\end{equation}
+Then introduce a scale-dependent two-body kernel and show that the naive
+commutation fails unless its evolution block is included.
+
+\subsection{Benchmark G: additive \texorpdfstring{\(W+Y\)}{W+Y} toy model}
+
+Define an exactly known fixed-order spectrum and a resummed \(W\) term whose
+expansion reproduces its singular part.  Construct \(Y\) with
+\cref{eq:y-definition}.  Test small-\(q_T\) finiteness, fixed-order recovery,
+profile independence through the retained order, and sensitivity to a
+deliberately missing singular coefficient.
+
+\subsection{Benchmark H: threshold continuity}
+
+Use a toy heavy-flavor matching matrix and running coupling.  Evolve a
+conserved moment through the threshold, verify physical continuity, reverse
+the map, and test that changing \(n_f\) without the matching matrix fails.
+
+\subsection{Benchmark I: link-reversal preservation}
+
+Initialize
+\begin{equation}
+ F_{\even}^{[+]}=F_{\even}^{[-]},
+ \qquad
+ F_{\odd}^{[+]}=-F_{\odd}^{[-]}.
+ \label{eq:benchmark-link-pair}
+\end{equation}
+Evolve both with the same representation kernel and verify the identities at
+all scales.  Applying different kernels must be detected as an operator
+identity mismatch, not accepted as physical link dependence.
+
+\section{Staged implementation program}
+\label{sec:stages}
+
+The formal volume is independent of repository timing.  The following
+packages are conceptual and should receive repository-specific Codex prompts
+only after the preceding package reports its actual APIs and unresolved gaps.
+
+\subsection{M0: matching and scheme skeleton}
+
+\begin{enumerate}
+\item Implement \texttt{TMDSchemeId}, \texttt{MatchingBasis}, and complete
+      matching/operator manifests.
+\item Encode the current accepted scheme and heterogeneous evolution status
+      without changing numerical outputs.
+\item Add finite scheme adapters and negative mismatch tests.
+\item Keep all new microscopic matching disconnected from accepted production.
+\end{enumerate}
+
+\subsection{M1: analytic LF-to-QCD matching pilot}
+
+\begin{enumerate}
+\item Match the analytic common-overlap pilot to a regulated continuum operator
+      basis.
+\item Implement step scaling and local-current constraints.
+\item Demonstrate overconstrained matching on quark, antiquark, and gluon
+      benchmark states.
+\item Retain explicit missing-operator and truncation residuals.
+\end{enumerate}
+
+\subsection{M2: two-scale evolution engine}
+
+\begin{enumerate}
+\item Implement anomalous-dimension sets and convention adapters.
+\item Implement contour, integrability-improved, and optional
+      \(\zeta\)-prescription paths.
+\item Report finite-order curl and transitivity residuals.
+\item Add separate quark and gluon kernel objects and large-\(b\) interfaces.
+\end{enumerate}
+
+\subsection{M3: rank-aware small-\texorpdfstring{\(b\)}{b} OPE and collinear evolution}
+
+\begin{enumerate}
+\item Encode the twist-2 and twist-3 operator bases and coefficient status.
+\item Implement nonsinglet, singlet, helicity, transversity, double-flip, and
+      multiparton evolution interfaces.
+\item Add threshold maps and sum-rule tests.
+\item Validate rank-aware transforms and derivative-moment renormalization.
+\end{enumerate}
+
+\subsection{M4: matched nuclear evolution}
+
+\begin{enumerate}
+\item Apply evolution to the resolved nucleon/deuteron operator graph while
+      retaining all component and member labels.
+\item Prove numerical commutation for impulse terms.
+\item Implement separate evolution blocks for pion, coherent, and two-body
+      operators as they become available.
+\item Reject unresolved scale dependence hidden in a scalar nuclear response.
+\end{enumerate}
+
+\subsection{M5: process records and \texorpdfstring{\(W+Y\)}{W+Y}}
+
+\begin{enumerate}
+\item Implement qualified Drell--Yan and SIDIS records first.
+\item Add inclusive \(b_1\) and local-current closure.
+\item Implement rank-resolved fixed-order asymptotic subtraction.
+\item Add gluon-sensitive channels only with explicit factorization and
+      Glauber status.
+\item Reserve at least one multi-scale observable family for withheld
+      validation.
+\end{enumerate}
+
+\section{Risks, failure modes, and explicit nonclaims}
+\label{sec:risks}
+
+\begin{longtable}{L{0.22\textwidth}L{0.34\textwidth}L{0.36\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+Matching by name & Assigning one finite factor to each TMD without an operator
+basis. & Match closed operator blocks and overconstrain shared parameters with
+multiple matrix elements.\\
+Scheme drift & Combining soft, rapidity, hard, or Fourier conventions from
+different formulations. & Complete scheme tuple and finite adapters; fail
+closed on incomplete identity.\\
+Factor-of-two evolution error & Mixing derivatives in \(\ln\zeta\),
+\(\ln\sqrt\zeta\), \(\ln\mu\), and \(\ln\mu^2\). & Store derivative convention
+and verify the mixed-derivative identity analytically.\\
+Decorative high accuracy & Quoting \(\mathrm{N}^k\mathrm{LL}\) from the cusp
+order while other ingredients are lower. & Full accuracy tuple and bottleneck
+report.\\
+Large-\(b\) overfitting & Giving every TMD an independent CS kernel or width. &
+Representation-level kernel plus shared microscopic boundary and withheld
+cross-channel tests.\\
+Casimir overreach & Imposing quadratic Casimir scaling beyond its verified
+order or on the nonperturbative kernel. & Independent quark/gluon records and
+order-qualified generalized relations.\\
+Naive marginal equality & Treating \(\int\dd^2k_T\) of a subtracted TMD as a
+PDF/GPD/current. & Explicit small-\(b\) OPE and matched commuting squares.\\
+Twist confusion & Evolving Sivers or Boer--Mulders with a twist-2 DGLAP kernel.
+& Typed collinear operator basis and multiparton twist-3 evolution.\\
+Rank loss & Applying \(J_0\) or scalar asymptotic subtraction to all
+modulations. & Rank identity on every TMD, hard tensor, transform, and \(Y\)
+term.\\
+Nuclear reassembly & Evolving an already summed deuteron curve and losing
+constituent/mechanism correlations. & Evolve the resolved component graph and
+preserve member identity.\\
+Soft double counting & Including a microscopic eikonal exchange in both the
+boundary and CS/soft sector. & Phase budget and explicit overlap subtraction.\\
+Threshold discontinuity & Changing \(n_f\) without coefficient, kernel, and
+coupling matching. & Versioned threshold map and conserved-moment tests.\\
+Missing \(Y\) physics & Retuning the nonperturbative TMD to fit moderate/high
+\(q_T\). & Independent fixed-order calculation and same-order asymptotic
+subtraction.\\
+Factorization overreach & Applying universal TMDs in a color-entangled or
+Glauber-obstructed process. & Process status gate and generalized soft matrix
+where justified.\\
+Positivity clipping & Repairing finite-order scheme negativity by projecting
+onto a positive cone. & Diagnose the layer; preserve the unmodified matched
+operator and test physical observables.\\
+\bottomrule
+\end{longtable}
+
+The volume does not claim:
+\begin{itemize}
+\item that the LF-to-QCD matching is perturbative over the full hadronic
+      domain;
+\item that one nonperturbative CS kernel has already been determined for both
+      quarks and gluons;
+\item that every spin-1 small-\(b\) coefficient is presently known;
+\item that twist-3 multiparton evolution can be reduced exactly to one
+      diagonal function;
+\item that standard TMD factorization holds for every gluon-sensitive final
+      state;
+\item that the accepted fixed-scale phenomenological boundary already obeys
+      one common evolution scheme;
+\item that successful evolution alone converts that boundary into a
+      microscopic prediction.
+\end{itemize}
+
+\section{Acceptance criteria and handoff}
+\label{sec:acceptance}
+
+\subsection{Formal acceptance criteria}
+
+The Volume~V layer is complete only when:
+\begin{enumerate}
+\item every regulated parent operator has a complete LF and QCD identity;
+\item a shared LF-to-QCD matching map is determined or explicitly unavailable
+      for each required operator block;
+\item charges, Ward identities, and momentum/EMT moments close after matching;
+\item step-scaling and regulator convergence are demonstrated;
+\item the TMD scheme, soft partition, rapidity regulator, and scale convention
+      are immutable metadata;
+\item the two-scale evolution field satisfies exact analytic integrability and
+      reports finite-order curl defects;
+\item quark and gluon CS kernels are separate and target-polarization
+      independent at the declared leading power;
+\item all transverse ranks use correct Bessel kernels, phases, and mass powers;
+\item every small-\(b\) coefficient identifies its collinear operator, twist,
+      link/color class, lowest known order, and power remainder;
+\item nonsinglet, singlet, helicity, transversity, double-flip, twist-3, and
+      threshold evolution routes pass their sum-rule tests;
+\item the resolved microscopic and nuclear member identity survives matching
+      and evolution;
+\item evolution and impulse nuclear composition commute where the theorem
+      applies, and noncommuting mechanisms have their own operator evolution;
+\item process records carry hard, link, color, soft, measurement, Glauber, and
+      factorization information;
+\item rank-resolved \(W+Y\) reproduces fixed order through the declared order;
+\item scheme and scale variations do not erase or reshuffle provenance;
+\item at least one multi-scale nucleon family and one deuteron family withheld
+      from matching/calibration are successfully predicted;
+\item all structural, marginal, sum-rule, process, numerical, and immutable
+      regression gates pass.
+\end{enumerate}
+
+\subsection{Contract to the inference volume}
+
+The next formal layer receives:
+\begin{itemize}
+\item a common microscopic ensemble;
+\item matching and evolution manifests;
+\item rank-, flavor-, link/color-, and mechanism-resolved predictions at all
+      requested scales;
+\item a separated uncertainty budget;
+\item process-qualified observable likelihoods;
+\item withheld-data designations fixed before final calibration.
+\end{itemize}
+It must infer shared microscopic, matching, and controlled discrepancy
+parameters without rebuilding one latent normalization per TMD.
+
+\subsection{Compact adoption questions}
+
+Before accepting an evolved observable, ask:
+\begin{enumerate}
+\item Which regulated operator produced it?
+\item Which matching map and calibration matrix elements define it?
+\item Which complete QCD scheme and scales does it inhabit?
+\item Which rank and Fourier convention are used?
+\item Which collinear operator and OPE coefficient control small \(b\)?
+\item Which evolution family and threshold history were applied?
+\item Does the same microscopic member survive the full chain?
+\item Which process theorem supplies the link and hard/color map?
+\item What fixed-order calculation and asymptotic subtraction define \(Y\)?
+\item Which uncertainty axis dominates, and is it distinct from numerical
+      error?
+\item Does a withheld observable test the same shared parameters?
+\end{enumerate}
+Any unanswered question blocks an authoritative claim.
+
+\appendix
+
+\section{Convention dictionary for two-scale evolution}
+\label{app:conventions}
+
+The project equations are
+\begin{equation}
+ \frac{\dd\ln F}{\dd\ln\mu}=\gamma_F,
+ \qquad
+ \frac{\dd\ln F}{\dd\ln\sqrt\zeta}=-\cD,
+ \qquad
+ \frac{\dd\cD}{\dd\ln\mu}=\Gamma.
+ \label{eq:project-evolution-convention}
+\end{equation}
+Common alternative notations include
+\begin{equation}
+ \widetilde K=-\cD,
+ \qquad
+ \gamma_K=2\Gamma,
+ \qquad
+ \frac{\dd}{\dd\ln\mu^2}=\frac12\frac{\dd}{\dd\ln\mu},
+ \qquad
+ \frac{\dd}{\dd\ln\zeta}=\frac12
+ \frac{\dd}{\dd\ln\sqrt\zeta}.
+ \label{eq:alternative-evolution-notation}
+\end{equation}
+Every adapter is tested by transforming all four relations together.  A
+single symbol substitution is insufficient.
+
+\section{Mellin-convolution identities}
+\label{app:mellin}
+
+For
+\begin{equation}
+ [A\otimesx B](x)
+ =\int_x^1\frac{\dd z}{z}A(z)B(x/z),
+ \label{eq:mellin-definition}
+\end{equation}
+associativity follows under standard integrability assumptions:
+\begin{equation}
+ A\otimesx(B\otimesx C)
+ =(A\otimesx B)\otimesx C.
+ \label{eq:mellin-associativity}
+\end{equation}
+This identity underlies the evolution--impulse commutation theorem.  Matrix
+convolutions preserve the order of operator indices even though the scalar
+Mellin integration is associative.
+
+\section{Minimal accuracy-manifest schema}
+\label{app:accuracy-schema}
+
+An authoritative manifest contains at least:
+\begin{verbatim}
+{
+  "scheme_id": "...",
+  "parton_representation": "FUNDAMENTAL|ADJOINT",
+  "cusp_order": 0,
+  "noncusp_order": 0,
+  "rapidity_order": 0,
+  "beta_order": 0,
+  "small_b_matching_order": 0,
+  "hard_order": 0,
+  "splitting_order": 0,
+  "fixed_order_cross_section": 0,
+  "y_subtraction_order": 0,
+  "evolution_prescription": "...",
+  "finite_order_curl_treatment": "...",
+  "profile_id": "...",
+  "threshold_history": [],
+  "scale_variation_plan": "...",
+  "bottleneck": "..."
+}
+\end{verbatim}
+The human-readable logarithmic label is derived from this object.
+
+\section{Minimal process-factorization schema}
+\label{app:process-schema}
+
+\begin{verbatim}
+{
+  "process_id": "...",
+  "external_states": [],
+  "hard_channel": "...",
+  "measurement": "...",
+  "tmd_operator_ids": [],
+  "fragmentation_operator_ids": [],
+  "link_map": {},
+  "gluon_color_weights": {},
+  "soft_scheme": "...",
+  "scale_relation": "...",
+  "power_counting": "...",
+  "glauber_status": "...",
+  "factorization_status": "...",
+  "fixed_order_reference": "...",
+  "asymptotic_subtraction": "...",
+  "rank_harmonics": [],
+  "accuracy_manifest_hash": "..."
+}
+\end{verbatim}
+
+\section{Summary of stable formal requirements}
+\label{app:requirements}
+
+\begin{longtable}{L{0.16\textwidth}L{0.76\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V5.TYPE.1 & Keep \(\bD\), \(\bM\), \(\qT\), and loop momenta as distinct types.\\
+V5.TYPE.2 & Make rank, Bessel order, Fourier phase, and mass convention part of operator identity.\\
+V5.SCHEME.1 & Store a complete UV/rapidity/soft/link/color scheme tuple.\\
+V5.SCHEME.2 & Transform TMDs, hard factors, and \(Y\) subtractions covariantly.\\
+V5.MATCH.1 & Match closed operator bases, not named curves.\\
+V5.MATCH.2 & Overconstrain shared matching parameters with multiple matrix elements.\\
+V5.MATCH.3 & Preserve local currents, Ward identities, and EMT moments.\\
+V5.MATCH.4 & Demonstrate regulator step scaling and cocycle closure.\\
+V5.EVOL.1 & Use convention-consistent \((\mu,\zeta)\) equations and mixed derivatives.\\
+V5.EVOL.2 & Report finite-order curl, contour, and transitivity residuals.\\
+V5.EVOL.3 & Keep quark and gluon CS kernels separate; do not fit one per polarization.\\
+V5.RANK.1 & Use \(J_{|m|}\) and declared rank normalizations for every transform and process harmonic.\\
+V5.OPE.1 & Identify collinear operator, twist, link/color class, coefficient order, and power remainder.\\
+V5.OPE.2 & Distinguish twist-2 from multiparton twist-3 evolution.\\
+V5.COLL.1 & Separate nonsinglet, singlet, helicity, transversity, double-flip, and twist-3 kernels.\\
+V5.COLL.2 & Use explicit heavy-flavor threshold maps and conserve physical moments.\\
+V5.NUC.1 & Evolve the resolved nuclear graph and prove impulse commutation where valid.\\
+V5.NUC.2 & Give many-body/coherent operators their own matching and evolution.\\
+V5.PROC.1 & Require hard, link, color, soft, measurement, Glauber, and factorization records.\\
+V5.WY.1 & Define \(Y\) from the same-order, same-scheme asymptotic expansion of \(W\).\\
+V5.WY.2 & Perform matching separately for each rank and angular harmonic.\\
+V5.UNC.1 & Preserve microscopic member identity and separated uncertainty axes.\\
+V5.ACC.1 & Reserve multi-scale nucleon and deuteron families for withheld validation.\\
+\bottomrule
+\end{longtable}
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{CollinsSoper1981}
+J.~C.~Collins and D.~E.~Soper,
+``Back-to-back jets in QCD,''
+Nucl.\ Phys.\ B \textbf{193}, 381 (1981);
+Erratum Nucl.\ Phys.\ B \textbf{213}, 545 (1983).
+
+\bibitem{CollinsSoper1982}
+J.~C.~Collins and D.~E.~Soper,
+``Parton distribution and decay functions,''
+Nucl.\ Phys.\ B \textbf{194}, 445 (1982).
+
+\bibitem{CSS1985}
+J.~C.~Collins, D.~E.~Soper, and G.~F.~Sterman,
+``Transverse momentum distribution in Drell--Yan pair and W and Z boson
+production,''
+Nucl.\ Phys.\ B \textbf{250}, 199 (1985).
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{AybatRogers2011}
+S.~M.~Aybat and T.~C.~Rogers,
+``TMD parton distribution and fragmentation functions with QCD evolution,''
+Phys.\ Rev.\ D \textbf{83}, 114042 (2011), arXiv:1101.5057.
+
+\bibitem{EIS2012}
+M.~G.~Echevarria, A.~Idilbi, and I.~Scimemi,
+``Factorization theorem for Drell--Yan at low \(q_T\) and transverse-momentum
+distributions on the light cone,''
+JHEP \textbf{07}, 002 (2012), arXiv:1111.4996.
+
+\bibitem{EIS2013}
+M.~G.~Echevarria, A.~Idilbi, and I.~Scimemi,
+``Soft and collinear factorization and transverse momentum dependent parton
+distribution functions,''
+Phys.\ Lett.\ B \textbf{726}, 795 (2013), arXiv:1211.1947.
+
+\bibitem{Chiu2012}
+J.-Y.~Chiu, A.~Jain, D.~Neill, and I.~Z.~Rothstein,
+``A formalism for the systematic treatment of rapidity logarithms in quantum
+field theory,''
+JHEP \textbf{05}, 084 (2012), arXiv:1202.0814.
+
+\bibitem{EchevarriaScimemiVladimirov2016}
+M.~G.~Echevarria, I.~Scimemi, and A.~Vladimirov,
+``Universal transverse momentum dependent soft function at NNLO,''
+Phys.\ Rev.\ D \textbf{93}, 054004 (2016), arXiv:1511.05590.
+
+\bibitem{EchevarriaGTMD2016}
+M.~G.~Echevarria, A.~Idilbi, K.~Kanazawa, C.~Lorc\'e, A.~Metz,
+B.~Pasquini, and M.~Schlegel,
+``Proper definition and evolution of generalized transverse momentum
+distributions,''
+Phys.\ Lett.\ B \textbf{759}, 336 (2016), arXiv:1602.06953.
+
+\bibitem{ScimemiVladimirov2017}
+I.~Scimemi and A.~Vladimirov,
+``Analysis of vector boson production within TMD factorization,''
+Eur.\ Phys.\ J.\ C \textbf{78}, 89 (2018), arXiv:1706.01473.
+
+\bibitem{ScimemiVladimirov2018}
+I.~Scimemi and A.~Vladimirov,
+``Systematic analysis of double-scale evolution,''
+JHEP \textbf{08}, 003 (2018), arXiv:1803.11089.
+
+\bibitem{GutierrezReyes2017}
+D.~Gutierrez-Reyes, I.~Scimemi, and A.~A.~Vladimirov,
+``Twist-2 matching of transverse momentum dependent distributions,''
+Phys.\ Lett.\ B \textbf{769}, 84 (2017), arXiv:1702.06558.
+
+\bibitem{ScimemiVladimirovTwist3}
+I.~Scimemi and A.~Vladimirov,
+``Matching of transverse momentum dependent distributions at twist-3,''
+Eur.\ Phys.\ J.\ C \textbf{78}, 802 (2018), arXiv:1804.08148.
+
+\bibitem{VladimirovMoosScimemi2021}
+A.~Vladimirov, V.~Moos, and I.~Scimemi,
+``Transverse momentum dependent operator expansion at next-to-leading power,''
+JHEP \textbf{01}, 110 (2022), arXiv:2109.09771.
+
+\bibitem{GutierrezReyes2019}
+D.~Gutierrez-Reyes, S.~Leal-Gomez, I.~Scimemi, and A.~Vladimirov,
+``Linearly polarized gluons at next-to-next-to-leading order and the Higgs
+transverse momentum distribution,''
+JHEP \textbf{11}, 121 (2019), arXiv:1907.03780.
+
+\bibitem{LuoYangZhuZhu2019}
+M.-X.~Luo, T.-Z.~Yang, H.~X.~Zhu, and Y.~J.~Zhu,
+``Transverse parton distribution and fragmentation functions at NNLO: the
+gluon case,''
+JHEP \textbf{01}, 040 (2020), arXiv:1909.13820.
+
+\bibitem{MoultZhuZhu2022}
+I.~Moult, H.~X.~Zhu, and Y.~J.~Zhu,
+``The four-loop QCD rapidity anomalous dimension,''
+arXiv:2205.02249.
+
+\bibitem{DuhrMistlbergerVita2022}
+C.~Duhr, B.~Mistlberger, and G.~Vita,
+``The four-loop rapidity anomalous dimension and event shapes to fourth
+logarithmic order,''
+arXiv:2205.02242.
+
+\bibitem{ZhuLinearlyPolarized2025}
+Y.~J.~Zhu,
+``The \(\mathrm{N}^3\mathrm{LO}\) twist-2 matching of linearly polarized gluon
+TMDs,''
+arXiv:2509.01703 (2025).
+
+\bibitem{ZhuTransversity2025}
+Y.~J.~Zhu,
+``The \(\mathrm{N}^3\mathrm{LO}\) twist-2 matching of TMD quark transversity,''
+arXiv:2509.17568 (2025).
+
+\bibitem{ZhuDGLAP2026}
+Y.~J.~Zhu,
+``NNLO DGLAP splitting functions from collinear matching of TMDs,''
+arXiv:2603.04039 (2026).
+
+\bibitem{KangXiaoYuan2011}
+Z.-B.~Kang, B.-W.~Xiao, and F.~Yuan,
+``QCD resummation for single spin asymmetries,''
+Phys.\ Rev.\ Lett.\ \textbf{107}, 152002 (2011), arXiv:1106.0266.
+
+\bibitem{SunYuan2013}
+P.~Sun and F.~Yuan,
+``TMD evolution: matching SIDIS to Drell--Yan and W/Z boson production,''
+Phys.\ Rev.\ D \textbf{88}, 114012 (2013), arXiv:1308.5003.
+
+\bibitem{KorchemskySterman1995}
+G.~P.~Korchemsky and G.~F.~Sterman,
+``Nonperturbative corrections in resummed cross sections,''
+Nucl.\ Phys.\ B \textbf{437}, 415 (1995), arXiv:hep-ph/9411211.
+
+\bibitem{ScimemiVladimirovRenormalon2017}
+I.~Scimemi and A.~Vladimirov,
+``Power corrections and renormalons in transverse momentum distributions,''
+JHEP \textbf{03}, 002 (2017), arXiv:1609.06047.
+
+\bibitem{Avkhadiev2024}
+A.~Avkhadiev, P.~E.~Shanahan, M.~L.~Wagman, and Y.~Zhao,
+``Determination of the Collins--Soper kernel from lattice QCD,''
+arXiv:2402.06725 (2024).
+
+\bibitem{Bollweg2024}
+D.~Bollweg, X.~Gao, S.~Mukherjee, and Y.~Zhao,
+``Nonperturbative Collins--Soper kernel from chiral quarks with physical
+masses,''
+arXiv:2403.00664 (2024).
+
+\bibitem{TanEtAl2025}
+J.-X.~Tan et al.,
+``Lattice QCD determination of the Collins--Soper kernel in the continuum and
+physical-mass limits,''
+arXiv:2511.22547 (2025).
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000), arXiv:hep-ph/0007120.
+
+\bibitem{KumanoSong2021}
+S.~Kumano and Q.-T.~Song,
+``Transverse-momentum-dependent parton distribution functions for spin-1
+hadrons,''
+Phys.\ Rev.\ D \textbf{103}, 014025 (2021), arXiv:2011.08583.
+
+\bibitem{Boer2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson-loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{HoodbhoyJaffeManohar1989}
+P.~Hoodbhoy, R.~L.~Jaffe, and A.~Manohar,
+``Novel effects in deep-inelastic scattering from spin-one hadrons,''
+Nucl.\ Phys.\ B \textbf{312}, 571 (1989).
+
+\end{thebibliography}
+
+\end{document}

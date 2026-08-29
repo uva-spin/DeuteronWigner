@@ -1,0 +1,6 @@
+{
+  "claim": "Each mutation changes a C40 runtime array and is rejected by deterministic numerical readiness/integrity checks; eligibility remains zero.",
+  "focused_live_numerical_mutations": 128,
+  "status": "PASS",
+  "tests": "PYTHONPATH=src python3 -m pytest -q tests/test_c41_r2b_fidelity_gate.py"
+}

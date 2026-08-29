@@ -1,0 +1,33 @@
+{
+  "result": "C50 individual evaluator is independent of the raw C47 tuple value factory.",
+  "runtime_poisoning": {
+    "after_sha256": "7304e86a62c9aa9dcb2ca60f163fe4f0c28cc1bf10a466161c4193df53c41fb8",
+    "before_sha256": "7304e86a62c9aa9dcb2ca60f163fe4f0c28cc1bf10a466161c4193df53c41fb8",
+    "guard": "RUNTIME_NAN_SENTINEL_POISONING",
+    "pass": true,
+    "poison_contract": "basis1.canonical_kernel raises before returning any historical numerical value",
+    "raw_value_read": false,
+    "unchanged": true
+  },
+  "static_guard": {
+    "allowed_dependencies": [
+      "q_basis",
+      "qg_basis",
+      "x_map",
+      "finite_box_pminus_kernel",
+      "pminus_to_m2",
+      "C45 mode functions"
+    ],
+    "evaluator_module": "deuteron_wigner.bridge.vsrc.core",
+    "guard": "AST_IMPORT_AND_NAME_GUARD",
+    "pass": true,
+    "prohibited_symbols": [
+      "canonical_kernel",
+      "raw_tuple_semantics_summary",
+      "tuple_semantics_records",
+      "vertex1"
+    ],
+    "referenced_prohibited_symbols": []
+  },
+  "status": "PASS"
+}

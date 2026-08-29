@@ -1,0 +1,7 @@
+# C254/HQCDRIQUARKFIXEDKV2CURRENTREG1 implementation report
+
+Status: C254_C45_HO_SCHWARTZ_DUAL_AND_CALLER_ABEL_REGULATOR_TOPOLOGY_READY_SUBTRACTION_COEFFICIENTS_INCOMPLETE
+Plan: RIQUARKFIXEDKV2CURRENTREG1-B
+C254 root: f5aca3c76016a442fbafa7e395a55edc537706128e33f4e944baa4daad3dbf02
+
+The nonphysical C45 test topology and caller Abel family are ready; four subtraction coefficients remain unresolved.

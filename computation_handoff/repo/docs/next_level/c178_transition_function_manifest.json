@@ -1,0 +1,26 @@
+{
+  "root": "add41ef4bf567b3ed920db17d345d816a0892ebf4eb4942141ea27e918bb54ae",
+  "rows": [
+    {
+      "A_plus_local_zero_implies_identity": false,
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "endpoint_value": "not evaluated",
+      "formula_scope": "Omega'_c = U_+(c) Omega_c U_-(c)^dagger; adjoint Omega'_adj = R(U_+) Omega_adj R(U_-)^{-1}",
+      "identity_proof": "not available and not assumed",
+      "identity_selected": false,
+      "kind": "nonmatrix zero-mode/global interface",
+      "representation": "open adjoint boundary-frame transport",
+      "routes": [
+        "TRANS-A direct frame",
+        "TRANS-B longitudinal transport",
+        "TRANS-C generated adjoint",
+        "TRANS-D all-generator covariance"
+      ],
+      "source_frame": "C178_CUT_SIDE_MINUS",
+      "status": "NONTRIVIAL_HOLONOMY_INTERFACE_READY",
+      "target_frame": "C178_CUT_SIDE_PLUS",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+    }
+  ],
+  "schema": "C178-TRANSITION-FUNCTION-V1"
+}

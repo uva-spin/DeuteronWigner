@@ -1,0 +1,29 @@
+{
+  "authority_record": {
+    "N_max": 1536,
+    "N_min": 256,
+    "epsilon": [
+      0.08,
+      0.06,
+      0.05,
+      0.04,
+      0.03,
+      0.025,
+      0.02
+    ],
+    "input": "C310 channel-specific tail-subtracted outward intervals",
+    "limit_order": "N-tail subtraction at fixed epsilon, then epsilon->0",
+    "quadrature_orders": [
+      36,
+      44,
+      52
+    ],
+    "root": "bfa46670cab38bd549e481272cce33ce7a36ad95386409895e61f196fb527e85"
+  },
+  "package_root": "4f272c947e9b4b2ded064ab8c63c9b6f128aabce1f7af7a8bc0264a5bd57e593",
+  "physical": false,
+  "plan": "RIMASSEPSLIMIT1-B",
+  "schema": "C311-EPSILON_SCAN-VALIDATION-V1",
+  "status": "C311_CORRELATED_EPSILON_LIMIT_ENCLOSED_FULL_GRAM_SHAPE_COEFFICIENTS_READY_C43_MATCHING_MISSING",
+  "validation": "PASS"
+}

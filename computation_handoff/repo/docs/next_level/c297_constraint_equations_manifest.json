@@ -1,0 +1,27 @@
+{
+  "authority_record": {
+    "count": 2,
+    "inverse_derivatives": "root-shifted periodic Q-sector inverses exactly as a3contr/a8contr",
+    "root": "27ea255e956972135eed773da4a47c0c014bd0adeb92729161c880b9c524d1a2",
+    "rows": [
+      {
+        "F3": "-i times source a3contr zero-mode symmetric projection",
+        "channel": "3",
+        "equation": "F3[v3,v8,Phi,Jplus]=mu0^2*a0,3/(sqrt(4*pi)*g^2)",
+        "linear": true
+      },
+      {
+        "F8": "-i times source a8contr zero-mode symmetric projection",
+        "channel": "8",
+        "equation": "F8[v3,v8,Phi,Jplus]=(4/3)*mu0^2*a0,8/(sqrt(4*pi)*g^2)",
+        "linear": true
+      }
+    ]
+  },
+  "package_root": "44b6ca07acb3e3ea970667244072988158ca495fb7829972a210842b448a6502",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINEDREMAINDER1-B",
+  "schema": "C297-CONSTRAINT_EQUATIONS-MANIFEST-V1",
+  "status": "C297_EXACT_CONSTRAINED_ZERO_MODE_FORMAL_SOLUTION_AND_JOINT_COVARIANCE_PULLBACK_READY_RENORMALIZED_KERNEL_INPUT_MISSING",
+  "validation": "BOUND"
+}

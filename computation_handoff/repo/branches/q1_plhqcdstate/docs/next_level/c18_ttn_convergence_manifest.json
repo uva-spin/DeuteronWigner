@@ -1,0 +1,27 @@
+{
+  "branches": [
+    "NN",
+    "NNPI_CONTINUUM",
+    "DELTADELTA",
+    "SIX_QUARK_COMPACT"
+  ],
+  "dimensions": [
+    52,
+    96,
+    148
+  ],
+  "exact_krylov_residual": 1.6e-15,
+  "full_bond_residual": 0.0,
+  "losses": {
+    "Z_6Q": 0.44,
+    "Z_DELTADELTA": 0.31,
+    "cluster_subtraction": 0.42,
+    "coherent_tensor": 0.55,
+    "continuity": 0.38,
+    "hidden_invariant": 0.46,
+    "quadrupole_b1": 0.49,
+    "transition_current": 0.52
+  },
+  "low_bond_energy_error": 0.0007,
+  "schema_version": "1.0.0"
+}

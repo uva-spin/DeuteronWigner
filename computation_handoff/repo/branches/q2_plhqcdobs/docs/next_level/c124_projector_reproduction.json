@@ -1,0 +1,27 @@
+{
+  "schema": "C124-PROJECTOR-REPRODUCTION-REPORT-V1",
+  "status": "C124_C123_SOURCE_DERIVED_FINITE_PROJECTOR_MEMBER_AUTHORITY_READY",
+  "I2_density_projector": {
+    "route_A": "finite exact member density",
+    "route_B": "C64 exact-status projector preimage",
+    "value_identity": "symbolic finite sum equality",
+    "bound_identity": "exact symbolic enclosure",
+    "hermiticity": true,
+    "idempotence": true,
+    "mismatches": 0
+  },
+  "derivative_density": {
+    "route_A": "ordered exact weighted member density",
+    "route_B": "C64 exact-status weighted projector preimage",
+    "weight": "pi*k/L with signed source orientation",
+    "value_identity": "symbolic finite weighted-sum equality",
+    "bound_identity": "exact symbolic enclosure",
+    "hermiticity": true,
+    "idempotence": false,
+    "mismatches": 0
+  },
+  "numerical_values": 0,
+  "numerical_bounds": 0,
+  "threshold_support": 0,
+  "quadrature_support": 0
+}

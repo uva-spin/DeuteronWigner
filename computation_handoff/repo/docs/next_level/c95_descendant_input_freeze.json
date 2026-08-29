@@ -1,0 +1,74 @@
+{
+  "C93_claim_boundary": "RECOVERED_CONTENT_PREIMAGE_OF_FROZEN_C90_AUTHORITY",
+  "C94_public_authority_verified": true,
+  "C94_public_package_root": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+  "baseline": "922f5a6e9d771561340992e84888db2ad1fd8328",
+  "forbidden_outputs": [
+    "expanded logical records",
+    "coefficient-times-kernel product",
+    "contact matrix/action",
+    "physical coupling",
+    "counterterm",
+    "TMD/matching",
+    "fit/inference/production"
+  ],
+  "historical_C72_runtime_instance": "UNKNOWN_NOT_CLAIMED",
+  "historical_C82_completion": "8e47231ab565f0f729d335b39aa98881176ba166",
+  "historical_C90_completion": "ac622ab358b83f090717d7e7fa179b58f18f526d",
+  "historical_environment": "HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY",
+  "import_contract": {
+    "content": {
+      "forbids": [
+        "expanded logical records",
+        "kernel product",
+        "contact matrix"
+      ],
+      "objective": "complete factorized semantic comparison",
+      "requires": [
+        "C94 package root",
+        "C93 capsule root",
+        "pair pages",
+        "normal forms",
+        "primitive filesets",
+        "theorem/checker",
+        "C91 descendant domain"
+      ]
+    },
+    "path": "docs/next_level/c94_c95_ifequiv7_import_contract.json",
+    "sha256": "754716931b0f378024f642825cc1b7c7f1c4b77d90dcd657e6cb31838d4ca1e3"
+  },
+  "independence": "C95 uses the current descendant compiler without historical pair normal forms, roots, or expected outputs.",
+  "package": "C95/IFEQUIV7",
+  "resolutions": {
+    "K11_2_N10_b0.45": {
+      "logical": 165991250,
+      "pairs": 43350
+    },
+    "K13_2_N12_b0.50": {
+      "logical": 697394304,
+      "pairs": 95256
+    },
+    "K9_2_N8_b0.40": {
+      "logical": 28606464,
+      "pairs": 16224
+    }
+  },
+  "scientific_environment": {
+    "C77": "09dcbb14b01d1534e02c5312b962e37b0b163308910b0291f360bf2e330b1769",
+    "C78": "117f908d05b3396448049bb4c73cc66cdf04c77e07835d1704a0793fc80261bf",
+    "C80": "9124653be0c676a716dda2e36ce901f19b7876fb0a0c0a5ca8cdf3e97c73bbd7",
+    "C82": "d1889d3676e28e29fa7094a045b009024ea199c8691feeff72de2377a3bde934",
+    "C87_capsule": "fc9e6b14f04a55a81fdbdb203aecfdf17939c3081370caec4ce8b4363f702480",
+    "C87_scientific": "47fb193cd70f28e434a243c37f74d8c3055de5468373158c74613a21daae59c3",
+    "C88_schema": "2f6268aaa6338afa0c108b2d037c6d396be31b67ca65cec10aa1f4f3d0f623a8",
+    "current_source_commit": "ac622ab358b83f090717d7e7fa179b58f18f526d",
+    "environment": "HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY",
+    "historical_C72_runtime_instance": "UNKNOWN_NOT_CLAIMED",
+    "historical_C82": "8e47231ab565f0f729d335b39aa98881176ba166",
+    "normal_form": "C90-NORMAL-FORM-V1",
+    "semantic_ir": "C90-C82-SEMANTIC-IR-V1"
+  },
+  "status": "C95_DESCENDANT_SCIENTIFIC_ENVIRONMENT_FROZEN_COMPLETE",
+  "total_logical_records": 891992018,
+  "total_pairs": 154830
+}

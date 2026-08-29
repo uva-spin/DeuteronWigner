@@ -1,0 +1,55 @@
+{
+  "external_physical_eligible": 0,
+  "historical_c27_unchanged": {
+    "counts": {
+      "analytic": 438,
+      "external_art25_source": 0,
+      "microscopic_project_source": 0,
+      "not_process_eligible": 102,
+      "physical": 0
+    },
+    "external": [
+      {
+        "failed_gates": [
+          "author/repository frozen numerical anchor",
+          "complete measurement/cut provenance",
+          "fixed-order W+Y partner",
+          "experimental covariance"
+        ],
+        "physical_eligible": false,
+        "reproduced_source_w": true,
+        "source_eligible": false,
+        "stable_id": "C27.EXTERNAL.DY"
+      },
+      {
+        "failed_gates": [
+          "author/repository frozen numerical anchor",
+          "complete measurement/cut provenance",
+          "fixed-order W+Y partner",
+          "experimental covariance"
+        ],
+        "physical_eligible": false,
+        "reproduced_source_w": true,
+        "source_eligible": false,
+        "stable_id": "C27.EXTERNAL.SIDIS"
+      }
+    ],
+    "microscopic": [
+      {
+        "failed_gates": [
+          "ART25-to-microscopic matching absent",
+          "complete nuclear total unavailable"
+        ],
+        "physical_eligible": false,
+        "proton_promoted_to_deuteron": false,
+        "source_eligible": false,
+        "stable_id": "C27.MICROSCOPIC.PROJECT"
+      }
+    ],
+    "no_experimental_covariance": true,
+    "schema_version": "1.0.0"
+  },
+  "microscopic_physical_eligible": 0,
+  "proton_promoted_to_deuteron": false,
+  "schema_version": "1.0.0"
+}

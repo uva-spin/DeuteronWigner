@@ -1,0 +1,31 @@
+{
+  "arrays": [
+    "E_src",
+    "Gram",
+    "adapter",
+    "U3",
+    "U3_dagger",
+    "P3"
+  ],
+  "columns": 3,
+  "excludes": [
+    "absolute_runtime_path",
+    "temporary_worktree_path",
+    "timestamp",
+    "host_process_id",
+    "current_HEAD",
+    "runtime_instance_root"
+  ],
+  "invariants": [
+    "C_F",
+    "P3_hermitian",
+    "P3_idempotent",
+    "U3_dagger_U3",
+    "leakage_norm",
+    "rank",
+    "trace"
+  ],
+  "pairs": 72,
+  "rows": 24,
+  "schema": "C87-C72-SCIENTIFIC-FIELD-SCHEMA-V1"
+}

@@ -1,0 +1,18 @@
+{
+  "authority_record": {
+    "Hermiticity_condition": "renormalized F3,F8 and substituted Hhat use conjugate-paired current/root channels",
+    "available": "SYMBOLIC_EXACT",
+    "definition": "Delta_H_constr[K]=Hhat_K[a0,3[F3],a0,8[F8]]-Hhat_K[a0,3=0,a0,8=0]",
+    "numerical": "UNAVAILABLE",
+    "physical_scale": "Delta_Pminus[K]=g_K^2*L_K*Delta_H_constr[K]/(4*pi^2)",
+    "reason": "source does not resolve constraints or publish the required renormalized current matrix elements",
+    "root": "81b926b2587194584d6bf07b5865a69ce0017b24fdde48a8c3ca5daf5c2098f9",
+    "weyl_covariance_condition": "Cartan pair and all six charged root channels transform together"
+  },
+  "package_root": "44b6ca07acb3e3ea970667244072988158ca495fb7829972a210842b448a6502",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINEDREMAINDER1-B",
+  "schema": "C297-REMAINDER-VALIDATION-V1",
+  "status": "C297_EXACT_CONSTRAINED_ZERO_MODE_FORMAL_SOLUTION_AND_JOINT_COVARIANCE_PULLBACK_READY_RENORMALIZED_KERNEL_INPUT_MISSING",
+  "validation": "PASS"
+}

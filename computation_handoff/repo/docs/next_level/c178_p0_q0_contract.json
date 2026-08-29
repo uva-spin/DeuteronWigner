@@ -1,0 +1,11 @@
+{
+  "P0": "n=0 residual/global scalar sector",
+  "Q0": "n!=0 periodic modes",
+  "routes": [
+    "projector",
+    "Fourier",
+    "coordinate",
+    "subgauge",
+    "ghost boundary"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "ablation_residuals": {
+    "BASIS_TRUNCATION": 0.036,
+    "CONTACT_SEAGULL": -0.027,
+    "CONTINUUM_DISCRETIZATION": 0.052,
+    "CURRENT_COUNTERTERM": 0.043,
+    "INDUCED_FESHBACH": 0.037,
+    "MOMENTUM_DEPENDENT_INTERACTION": 0.021,
+    "ONE_BODY_NUCLEON": -0.081,
+    "PAIR": -0.019,
+    "PION_IN_FLIGHT": -0.044,
+    "RECOIL_RETARDATION": -0.016,
+    "REGULATOR_GAUGING": 0.029,
+    "TRANSITION": -0.031
+  },
+  "angular_condition_residual": 3.2e-13,
+  "block_residuals": {
+    "NNPI_TO_NN": 0.0,
+    "NNPI_TO_NNPI": 0.0,
+    "NN_TO_NN": 0.0,
+    "NN_TO_NNPI": 0.0,
+    "nn_piplus": 0.0,
+    "pn_pi0": 0.0,
+    "pp_piminus": 0.0
+  },
+  "charge_residual": 0.0,
+  "gtmd_current_residual": 2.6e-13,
+  "magnetic_residual": 2.1e-13,
+  "max_block_residual": 0.0,
+  "pieces": {
+    "BASIS_TRUNCATION": -0.036,
+    "CONTACT_SEAGULL": 0.027,
+    "CONTINUUM_DISCRETIZATION": -0.052,
+    "CURRENT_COUNTERTERM": -0.043,
+    "INDUCED_FESHBACH": -0.037,
+    "MOMENTUM_DEPENDENT_INTERACTION": -0.021,
+    "ONE_BODY_NUCLEON": 0.081,
+    "PAIR": 0.019,
+    "PION_IN_FLIGHT": 0.044,
+    "RECOIL_RETARDATION": 0.016,
+    "REGULATOR_GAUGING": -0.029,
+    "TRANSITION": 0.031
+  },
+  "quadrupole_residual": 2.8e-13,
+  "residual": -1.3877787807814457e-17,
+  "schema_version": "1.0.0"
+}

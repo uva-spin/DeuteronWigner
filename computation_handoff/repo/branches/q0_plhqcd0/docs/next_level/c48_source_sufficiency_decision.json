@@ -1,0 +1,28 @@
+{
+  "blockers": [
+    {
+      "blocking_reason": "No source-derived common dimensional conversion exists. Multiplying selected tuples by b, P+, L, or a fitted factor would alter the C47 functional and fabricate a vertex.",
+      "id": "C48.CANONICAL.UNIFORM_OPERATOR_UNITS",
+      "observed": "C47 canonical inventory declares L^(-1/2) GeV^(1+|m|); every physical resolution contains |mrel|=0 and |mrel|=1 tuples.",
+      "required_correction": "Derive the complete C43/SB finite-volume canonical M^2 matrix-element normalization, including all transverse numerator components, and validate a uniform-unit tuple table.",
+      "source_requirement": "A coefficient of M^2 has one project-unit convention for every matrix element."
+    },
+    {
+      "blocking_reason": "The required 2P+ and field-normalization factors are not represented as a source-checked, dimensionally uniform operator formula.",
+      "id": "C48.CANONICAL.M2_CONVERSION",
+      "observed": "C47 fixes M^2=2P+P--Pperp^2 for the free functional, while its canonical interface only says L^(-1/2) is retained.",
+      "required_correction": "Add a primary-source equation -> C43 convention map -> finite-volume field expansion -> M^2 tuple formula, with symbolic-L cancellation or factorization proof.",
+      "source_requirement": "An explicit C43-normalized conversion of the canonical P^- term to a coupling-factored M^2 coefficient."
+    },
+    {
+      "blocking_reason": "Because the underlying tuple has no admissible common M^2 normalization, inserting SU(3) and the 24x3 isometry would make an array but not the required physical operator.",
+      "id": "C48.CANONICAL.EXHAUSTIVE_MATRIX_ELEMENT_CONTRACT",
+      "observed": "C47 exposes kinematic tuples, not a finished canonical matrix; its C48 interface expressly assigns SU(3) insertion and matrix assembly to C48.",
+      "required_correction": "C49/VERTEX1 must repair the source-derived tuple contract before C48 is retried; generated absorption remains deferred to the valid emission matrix.",
+      "source_requirement": "Every final nonzero must carry a single normalized matrix-element formula traceable through color, triplet isometry, and finite-volume normalization."
+    }
+  ],
+  "decision": "C47 input hashes and source links pass; C48 stops at the canonical M2 normalization contract.",
+  "next": "C49/VERTEX1 \u2014 exhaustive tuple/SU(3)/triplet canonical-matrix completion",
+  "status": "C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE"
+}

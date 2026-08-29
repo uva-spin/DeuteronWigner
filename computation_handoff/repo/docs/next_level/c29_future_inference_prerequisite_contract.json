@@ -1,0 +1,56 @@
+{
+  "all_satisfied": false,
+  "gates": [
+    {
+      "gate": "nonempty_bridge_capability",
+      "satisfied": false
+    },
+    {
+      "gate": "frozen_role_split",
+      "satisfied": true
+    },
+    {
+      "gate": "complete_operator_scheme_adapters",
+      "satisfied": false
+    },
+    {
+      "gate": "complete_data_ancestry",
+      "satisfied": true
+    },
+    {
+      "gate": "selected_no_double_counting_plan",
+      "satisfied": false
+    },
+    {
+      "gate": "valid_member_relation_or_conditional_formulation",
+      "satisfied": false
+    },
+    {
+      "gate": "declared_discrepancy_model",
+      "satisfied": false
+    },
+    {
+      "gate": "parameter_ownership",
+      "satisfied": true
+    },
+    {
+      "gate": "identifiability_plan",
+      "satisfied": false
+    },
+    {
+      "gate": "auditable_forward_map",
+      "satisfied": false
+    },
+    {
+      "gate": "numerical_convergence",
+      "satisfied": false
+    },
+    {
+      "gate": "claim_appropriate_process_status",
+      "satisfied": false
+    }
+  ],
+  "inference_api_created": false,
+  "schema_version": "1.0.0",
+  "statement": "C29 does not satisfy these gates merely by defining them."
+}

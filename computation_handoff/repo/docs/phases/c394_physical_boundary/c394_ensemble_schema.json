@@ -1,0 +1,41 @@
+{
+  "package_root": "af6009d5514ff508a716979dd861c84167346905b5c62d7743fb4145cb4f178e",
+  "physical": false,
+  "plan": "PHYSICALBOUNDARYPHASE1-B",
+  "record": {
+    "classes": [
+      "GENERIC",
+      "CENTRAL",
+      "WEYL_WALL"
+    ],
+    "complete_instances": 0,
+    "required": [
+      "ensemble_id",
+      "observable_capsule_root",
+      "resolution",
+      "boundary_action_id",
+      "action_parameters",
+      "sector_classes",
+      "sector_weights",
+      "normalization_measure",
+      "orbit_stabilizer_jacobian",
+      "fundamental_BC",
+      "adjoint_BC",
+      "zero_mode_policy",
+      "holonomy_capsule_ids",
+      "endpoint_link_orientation",
+      "box_HO_scales",
+      "active_flavor_history",
+      "running_path",
+      "covariance",
+      "acceptance",
+      "physical",
+      "no_defaults"
+    ],
+    "root": "5d93a7f4435b38aca56874d9558916a082cd1f619c134c42b590cf6645524399",
+    "schema": "C394-PHYSICAL-BOUNDARY-ENSEMBLE-V1",
+    "uniform_default": false,
+    "weights": "nonnegative and exact sum one per resolution"
+  },
+  "status": "C394_SOURCE_QUALIFIED_CONDITIONAL_BOUNDARY_HOLONOMY_FAMILY_AND_RESOLUTION_PARAMETER_SCHEMA_READY_OBSERVABLE_ENSEMBLE_RECORD_NEXT"
+}

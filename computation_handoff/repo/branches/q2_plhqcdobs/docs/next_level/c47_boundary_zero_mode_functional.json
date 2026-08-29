@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "class": "ordinary_nonzero",
+      "functional": "Q0 inverse-derivative domain",
+      "status": "LOCAL_FUNCTIONAL_EXECUTABLE_NONZERO"
+    },
+    {
+      "class": "gluon_kplus_zero",
+      "functional": "P0 projected out of ordinary q/qg module",
+      "status": "LOCAL_FUNCTIONAL_EXECUTABLE_ZERO_BY_EXACT_PROOF"
+    },
+    {
+      "class": "constrained_fermion_zero",
+      "functional": "APBC has no k=0",
+      "status": "LOCAL_FUNCTIONAL_EXECUTABLE_ZERO_BY_EXACT_PROOF"
+    },
+    {
+      "class": "global_Gauss",
+      "functional": "open triplet external color delta; no singlet imposed",
+      "status": "EXTERNAL_MODULE_LABEL_WITH_PROVED_FACTORING"
+    },
+    {
+      "class": "residual_transverse_boundary",
+      "functional": "P0 local action block vanishes on declared nonzero-mode module; nonlocal JMY link retained for later",
+      "status": "LOCAL_FUNCTIONAL_EXECUTABLE_ZERO_BY_EXACT_PROOF"
+    },
+    {
+      "class": "Wilson_endpoint",
+      "functional": "outside C47 nonlocal path; no endpoint matrix constructed",
+      "status": "CANCELS_WITH_DECLARED_LOCAL_BOUNDARY_TERM"
+    }
+  ],
+  "status": "SOURCE_COMPLETE_EXECUTABLE"
+}

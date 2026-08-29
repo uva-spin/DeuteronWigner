@@ -1,0 +1,50 @@
+{
+  "below_threshold": 0.0,
+  "future": -0.36123508914997876,
+  "maximum_final_residual": 5.51201002729762e-06,
+  "past": 0.36123508914997876,
+  "physical_epsilon": false,
+  "routes": [
+    "ANALYTIC_CONTINUUM",
+    "FINITE_VOLUME_SEQUENCE"
+  ],
+  "rows": [
+    {
+      "cut_imag": -0.35982401458298663,
+      "epsilon_physical": false,
+      "levels": 16,
+      "residual": 0.001411074566992132,
+      "spacing": 0.75
+    },
+    {
+      "cut_imag": -0.3608823205082307,
+      "epsilon_physical": false,
+      "levels": 32,
+      "residual": 0.0003527686417480469,
+      "spacing": 0.375
+    },
+    {
+      "cut_imag": -0.3611468969895418,
+      "epsilon_physical": false,
+      "levels": 64,
+      "residual": 8.819216043698397e-05,
+      "spacing": 0.1875
+    },
+    {
+      "cut_imag": -0.3612130411098695,
+      "epsilon_physical": false,
+      "levels": 128,
+      "residual": 2.2048040109245992e-05,
+      "spacing": 0.09375
+    },
+    {
+      "cut_imag": -0.36122957713995146,
+      "epsilon_physical": false,
+      "levels": 256,
+      "residual": 5.51201002729762e-06,
+      "spacing": 0.046875
+    }
+  ],
+  "schema_version": "1.0.0",
+  "threshold": 1.15
+}

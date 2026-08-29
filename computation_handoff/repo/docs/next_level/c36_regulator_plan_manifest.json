@@ -1,0 +1,95 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "d678e54774864062b6d5979371863b19e02915d09d65924c112dd48779b5f7ee",
+  "plans": [
+    {
+      "blockers": [],
+      "family": "O4-SPACELIKE-COLLINS-JMY",
+      "finite_regulator_gauge_covariant": true,
+      "one_loop_authority": true,
+      "operator_identical_to_selected": true,
+      "physical_plan": true,
+      "project_conversion": true,
+      "selected": true,
+      "transverse_closure": true
+    },
+    {
+      "blockers": [
+        "representation_only"
+      ],
+      "family": "O4-AUXILIARY-SPACELIKE",
+      "finite_regulator_gauge_covariant": true,
+      "one_loop_authority": true,
+      "operator_identical_to_selected": true,
+      "physical_plan": false,
+      "project_conversion": true,
+      "selected": false,
+      "transverse_closure": true
+    },
+    {
+      "blockers": [
+        "not_selected_physical_scheme"
+      ],
+      "family": "O4-EXPONENTIAL",
+      "finite_regulator_gauge_covariant": true,
+      "one_loop_authority": true,
+      "operator_identical_to_selected": false,
+      "physical_plan": true,
+      "project_conversion": true,
+      "selected": false,
+      "transverse_closure": true
+    },
+    {
+      "blockers": [
+        "equivalence_scope_only"
+      ],
+      "family": "O4-FINITE-LENGTH-SPACELIKE",
+      "finite_regulator_gauge_covariant": true,
+      "one_loop_authority": true,
+      "operator_identical_to_selected": false,
+      "physical_plan": true,
+      "project_conversion": true,
+      "selected": false,
+      "transverse_closure": true
+    },
+    {
+      "blockers": [
+        "large_momentum_operator_not_identical"
+      ],
+      "family": "O4-DRESSED-FIELD",
+      "finite_regulator_gauge_covariant": true,
+      "one_loop_authority": true,
+      "operator_identical_to_selected": false,
+      "physical_plan": true,
+      "project_conversion": false,
+      "selected": false,
+      "transverse_closure": false
+    },
+    {
+      "blockers": [
+        "physical_plan_selected"
+      ],
+      "family": "O4-UNAVAILABLE",
+      "finite_regulator_gauge_covariant": false,
+      "one_loop_authority": false,
+      "operator_identical_to_selected": false,
+      "physical_plan": false,
+      "project_conversion": false,
+      "selected": false,
+      "transverse_closure": false
+    }
+  ],
+  "plans_summed": false,
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "selection_before_coefficients": true,
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

@@ -1,0 +1,47 @@
+{
+  "package_root": "7894791512c9804713cda57ff2c30d74f789c5909748e9672419a558a84b495e",
+  "physical": false,
+  "plan": "RIMASSC43JMYSCALARCOEFF1-C",
+  "record": {
+    "count": 8,
+    "globally_normalized_matrix": false,
+    "root": "7c5f310b836e6d1618067499371b71a312ec8bf2c82b13f24bd3a89017cf6743",
+    "rows": [
+      {
+        "coefficients": "2(d-2){2 q+ p.q,-p+ q2} over R_A2",
+        "term": "DR.qq"
+      },
+      {
+        "coefficients": "4{p+ q.v,-v+ p.q,p.v q+} over R_A1B1alpha",
+        "term": "DR.qv"
+      },
+      {
+        "coefficients": "2p+v2 over R_B2_2alpha",
+        "term": "DR.vv"
+      },
+      {
+        "coefficients": "exact plus/minus crossing of DR.* times z^(-2+2epsilon)",
+        "term": "FR.*"
+      },
+      {
+        "coefficients": "(2-d){pslash,-ellslash} projected on endpoint tree",
+        "term": "Sigma_q"
+      },
+      {
+        "coefficients": "v2/tildev2 over ordered two-eikonal L",
+        "term": "W_v/W_tildev"
+      },
+      {
+        "coefficients": "C370 Clifford numerators over L_A1B1C1",
+        "term": "V_qv/V_htv"
+      },
+      {
+        "coefficients": "2 v.tildev over cut/uncut S",
+        "term": "S.real/virtual"
+      }
+    ],
+    "tensor_to_scalar_structure": true
+  },
+  "status": "C371_SCALAR_REDUCTION_STRUCTURE_BOUND_GLOBAL_GRAPH_NORMALIZATION_AUTHORITY_MISSING",
+  "validation": "BOUND"
+}

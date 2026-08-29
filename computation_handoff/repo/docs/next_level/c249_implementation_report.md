@@ -1,0 +1,7 @@
+# C249/HQCDRIQUARKFIXEDKV2CURRENTMAP1 implementation report
+
+Status: C249_RETAINED_ID_FREE_COMPLEMENT_CURRENT_FACTOR_COORDINATE_AND_INTERFACE_MAP_READY
+Plan: RIQUARKFIXEDKV2CURRENTMAP1-A
+C249 root: 5a6f7e4f72496aefac36b0d9a49a1b838735434319f70ac1cca5977ffbbcee5d
+
+Caller complement modes now map to C126-compatible factor coordinates without retained witness IDs or indices.

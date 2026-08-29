@@ -1,0 +1,35 @@
+{
+  "package_root": "d23b3478acd40f67d476f75cc98ffdfaff2f61645223a90564a5438a88a04ef0",
+  "physical": false,
+  "plan": "RIMASSC43COMMONIR1-C",
+  "record": {
+    "count": 3,
+    "mnemonic_log_pole_replacement_rejected": true,
+    "root": "531c0b6030c2a98261b15e0c41336896dcf615c073d9c5fa6a74a92c4d08483f",
+    "rows": [
+      {
+        "C350": "dimensionally regulated partonic matrix element",
+        "JMY": "m regulates collinear denominators and endpoint logs",
+        "reason": "massive real-emission denominators change distributions before the m->0 limit",
+        "sector": "quark-collinear",
+        "termwise_map": false
+      },
+      {
+        "C350": "epsilon poles plus modified-delta rapidity regulator",
+        "JMY": "lambda in 1/(kT^2+lambda^2) with compensating delta2(kT) ln(mu^2/lambda^2)",
+        "reason": "the Fourier/distributional extension fixes finite delta-endpoint terms",
+        "sector": "soft",
+        "termwise_map": false
+      },
+      {
+        "C350": "lightlike modified-delta Wilson lines, zeta split",
+        "JMY": "finite off-light-cone v and tilde-v, rho",
+        "reason": "rapidity and IR limits do not commute termwise",
+        "sector": "rapidity",
+        "termwise_map": false
+      }
+    ]
+  },
+  "status": "C352_COMMON_IR_TRANSLATION_CLASSIFIED_TERM_MAP_NONUNIVERSAL_DIMENSIONAL_JMY_MASTER_INTEGRALS_MISSING",
+  "validation": "BOUND"
+}

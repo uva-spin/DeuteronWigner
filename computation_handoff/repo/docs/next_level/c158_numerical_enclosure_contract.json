@@ -1,0 +1,7 @@
+{
+  "schema": "C158-NUMERICAL-ENCLOSURE-CONTRACT-V1",
+  "required_components": ["roundoff", "solve", "series", "projection", "source_contact"],
+  "excluded_components": ["perturbative_truncation", "common_ir", "continuum_target", "regulator", "physical_input"],
+  "certification": "componentwise positive bounds and deterministic route parity",
+  "zero_components_are_not_omitted": true
+}

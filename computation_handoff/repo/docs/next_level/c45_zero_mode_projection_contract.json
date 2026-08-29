@@ -1,0 +1,14 @@
+{
+  "P0": "gluon longitudinal grid k=0..6",
+  "Q0": "1-P0",
+  "inverse_partial_plus": "PV/antisymmetric only on Q0",
+  "status": "SOURCE_COMPLETE_EXECUTABLE",
+  "statuses": {
+    "Wilson_endpoint": "CANCELS_WITH_DECLARED_BOUNDARY_TERM",
+    "constrained_fermion_zero": "PROJECTED_OUT_WITH_SOURCE_PROOF: APBC physical modes",
+    "global_color_gauss": "RETAINED_AS_EXTERNAL_MODULE_LABEL",
+    "gluon_kplus_zero": "PROJECTED_OUT_WITH_SOURCE_PROOF",
+    "ordinary_nonzero_longitudinal": "PROJECTED_OUT_WITH_SOURCE_PROOF for k=0 from dynamical gluon modes",
+    "residual_transverse_gauge": "RETAINED_AS_CONSTRAINED_VARIABLE"
+  }
+}

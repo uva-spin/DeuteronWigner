@@ -1,0 +1,400 @@
+{
+  "package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "physical": false,
+  "plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "record": [
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "0_by_real_cut_topology",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "real_cut",
+      "distribution_support": {
+        "action": "integral_0^1 kernel(u)*phi(u) with source-owned regular/plus decomposition",
+        "endpoint": 1,
+        "executable": true,
+        "fragmentation_jacobian": null,
+        "kind": "regular_plus_split",
+        "op": "distribution_test_action",
+        "transverse_kernel": {
+          "argument": "i*bT_dot_kT",
+          "op": "exp"
+        },
+        "variable": "x"
+      },
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "distribution",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.DR.qq",
+      "term_id": "DR.qq",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "0_by_real_cut_topology",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "real_cut",
+      "distribution_support": {
+        "action": "integral_0^1 kernel(u)*(phi(u)-phi(1))",
+        "endpoint": 1,
+        "executable": true,
+        "fragmentation_jacobian": null,
+        "kind": "plus",
+        "op": "distribution_test_action",
+        "transverse_kernel": {
+          "argument": "i*bT_dot_kT",
+          "op": "exp"
+        },
+        "variable": "x"
+      },
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "distribution",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.DR.qv",
+      "term_id": "DR.qv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "0_by_real_cut_topology",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "real_cut",
+      "distribution_support": {
+        "action": "coefficient*phi(1)",
+        "endpoint": 1,
+        "executable": true,
+        "fragmentation_jacobian": null,
+        "kind": "endpoint_delta",
+        "op": "distribution_test_action",
+        "transverse_kernel": {
+          "argument": "i*bT_dot_kT",
+          "op": "exp"
+        },
+        "variable": "x"
+      },
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "distribution",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.DR.vv",
+      "term_id": "DR.vv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "delta(1-x)deltaT",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "distribution",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.Sigma_q",
+      "term_id": "Sigma_q",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "delta(1-x)deltaT",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "distribution",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.W_v",
+      "term_id": "W_v",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "delta(1-x)deltaT",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "distribution",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.V_qv",
+      "term_id": "V_qv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "0_by_real_cut_topology",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "real_cut",
+      "distribution_support": {
+        "action": "integral_0^1 kernel(u)*phi(u) with source-owned regular/plus decomposition",
+        "endpoint": 1,
+        "executable": true,
+        "fragmentation_jacobian": "z^(-2+2epsilon)",
+        "kind": "regular_plus_split",
+        "op": "distribution_test_action",
+        "transverse_kernel": {
+          "argument": "i*bT_dot_kT",
+          "op": "exp"
+        },
+        "variable": "z"
+      },
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "fragmentation",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.cross.DR.qq",
+      "term_id": "FR.qq",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "0_by_real_cut_topology",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "real_cut",
+      "distribution_support": {
+        "action": "integral_0^1 kernel(u)*(phi(u)-phi(1))",
+        "endpoint": 1,
+        "executable": true,
+        "fragmentation_jacobian": "z^(-2+2epsilon)",
+        "kind": "plus",
+        "op": "distribution_test_action",
+        "transverse_kernel": {
+          "argument": "i*bT_dot_kT",
+          "op": "exp"
+        },
+        "variable": "z"
+      },
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "fragmentation",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.cross.DR.qv",
+      "term_id": "FR.qv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "0_by_real_cut_topology",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "real_cut",
+      "distribution_support": {
+        "action": "coefficient*phi(1)",
+        "endpoint": 1,
+        "executable": true,
+        "fragmentation_jacobian": "z^(-2+2epsilon)",
+        "kind": "endpoint_delta",
+        "op": "distribution_test_action",
+        "transverse_kernel": {
+          "argument": "i*bT_dot_kT",
+          "op": "exp"
+        },
+        "variable": "z"
+      },
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "fragmentation",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.cross.DR.vv",
+      "term_id": "FR.vv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "Mz crossed",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "fragmentation",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.cross.Sigma_q",
+      "term_id": "Sigma_q",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "Mz crossed",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "fragmentation",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.cross.W_v",
+      "term_id": "W_v",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "Mz crossed",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "fragmentation",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.cross.V_qv",
+      "term_id": "V_qv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "one",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "soft",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.S.virtual",
+      "term_id": "S.virtual",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "Mb-1",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "soft",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.S.real.v",
+      "term_id": "S.real.v",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "Mb-1",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "soft",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.S.real.tv",
+      "term_id": "S.real.tv",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    },
+    {
+      "IR_coefficient": "exact_C381_integral_AST_Laurent[-1]",
+      "UV_coefficient": "source_AST_projection",
+      "analytic_coefficient": "alpha_or_beta_AST_when_present",
+      "complex_structure": "source_i0_with_conjugate_pair",
+      "cut_virtual_class": "virtual_or_counterterm",
+      "distribution_support": "Mb-1",
+      "enclosure": "exact symbolic",
+      "epsilon_powers": [
+        -1,
+        0
+      ],
+      "finite_coefficient": "exact_C381_integral_AST_Laurent[0]",
+      "group_id": "soft",
+      "invented_coefficient": false,
+      "scale_logs": "retained_symbolically",
+      "source_owner": "C376.S.real.interference",
+      "term_id": "S.real.interference",
+      "unresolved_remainder": "common-IR target evaluation and finite-basis match"
+    }
+  ],
+  "status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT"
+}

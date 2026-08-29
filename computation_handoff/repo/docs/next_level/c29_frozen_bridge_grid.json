@@ -1,0 +1,582 @@
+{
+  "content_hash": "5e59868f3a9f1f9dbd18502e4e09de5cbac4431aa238809e3598e993dfa36697",
+  "count": 34,
+  "frozen_before_microscopic_execution": true,
+  "kind_counts": {
+    "COVARIANCE": 1,
+    "CS_KERNEL": 4,
+    "DISTRIBUTION": 12,
+    "DOMAIN_BOUNDARY": 2,
+    "DY_ONE_LEG": 6,
+    "NUCLEAR": 1,
+    "PROVENANCE": 1,
+    "SCHEME_MISMATCH": 1,
+    "SIDIS_TARGET_LEG": 4,
+    "TARGET_MISMATCH": 2
+  },
+  "role_counts": {
+    "CALIBRATION_CANDIDATE": 18,
+    "DIAGNOSTIC_ONLY": 8,
+    "HOLDOUT_CANDIDATE": 8
+  },
+  "rows": [
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 0.25,
+      "flavor": "u",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.001",
+      "x": 0.03
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 1.0,
+      "flavor": "u",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.002",
+      "x": 0.1
+    },
+    {
+      "Q_GeV": 10.0,
+      "b_GeV_inv": 0.5,
+      "flavor": "u",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.003",
+      "x": 0.3
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 0.25,
+      "flavor": "d",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.004",
+      "x": 0.03
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 1.0,
+      "flavor": "d",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.005",
+      "x": 0.1
+    },
+    {
+      "Q_GeV": 10.0,
+      "b_GeV_inv": 0.5,
+      "flavor": "d",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.006",
+      "x": 0.3
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 0.25,
+      "flavor": "ubar",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.007",
+      "x": 0.03
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 1.0,
+      "flavor": "ubar",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.008",
+      "x": 0.1
+    },
+    {
+      "Q_GeV": 10.0,
+      "b_GeV_inv": 0.5,
+      "flavor": "ubar",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.009",
+      "x": 0.3
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 0.25,
+      "flavor": "dbar",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.010",
+      "x": 0.03
+    },
+    {
+      "Q_GeV": 5.0,
+      "b_GeV_inv": 1.0,
+      "flavor": "dbar",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.011",
+      "x": 0.1
+    },
+    {
+      "Q_GeV": 10.0,
+      "b_GeV_inv": 0.5,
+      "flavor": "dbar",
+      "frozen_before_diagnostics": true,
+      "kind": "DISTRIBUTION",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.012",
+      "x": 0.3
+    },
+    {
+      "b_GeV_inv": 0.1,
+      "frozen_before_diagnostics": true,
+      "kind": "CS_KERNEL",
+      "mu_GeV": 5.0,
+      "representation": "FUNDAMENTAL",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.013"
+    },
+    {
+      "b_GeV_inv": 0.5,
+      "frozen_before_diagnostics": true,
+      "kind": "CS_KERNEL",
+      "mu_GeV": 5.0,
+      "representation": "FUNDAMENTAL",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.014"
+    },
+    {
+      "b_GeV_inv": 1.0,
+      "frozen_before_diagnostics": true,
+      "kind": "CS_KERNEL",
+      "mu_GeV": 5.0,
+      "representation": "FUNDAMENTAL",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.015"
+    },
+    {
+      "b_GeV_inv": 2.0,
+      "frozen_before_diagnostics": true,
+      "kind": "CS_KERNEL",
+      "mu_GeV": 5.0,
+      "representation": "FUNDAMENTAL",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.016"
+    },
+    {
+      "dataset": "CDF1",
+      "frozen_before_diagnostics": true,
+      "kind": "DY_ONE_LEG",
+      "kinematics": {
+        "<Q>": 91.0,
+        "<pT>": null,
+        "<qT>": 0.25,
+        "<x>": null,
+        "<y>": 0.0,
+        "<z>": null,
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "pT": null,
+        "qT": [
+          0.0,
+          0.5
+        ],
+        "s": 3240000.0,
+        "x": null,
+        "y": [
+          -1000.0,
+          1000.0
+        ],
+        "z": null
+      },
+      "point_id": "CDF1.0",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.017"
+    },
+    {
+      "dataset": "CDF2",
+      "frozen_before_diagnostics": true,
+      "kind": "DY_ONE_LEG",
+      "kinematics": {
+        "<Q>": 91.0,
+        "<pT>": null,
+        "<qT>": 0.25,
+        "<x>": null,
+        "<y>": 0.0,
+        "<z>": null,
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "pT": null,
+        "qT": [
+          0.0,
+          0.5
+        ],
+        "s": 3841600.0,
+        "x": null,
+        "y": [
+          -1000.0,
+          1000.0
+        ],
+        "z": null
+      },
+      "point_id": "CDF2.0",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.018"
+    },
+    {
+      "dataset": "A8-00y04",
+      "frozen_before_diagnostics": true,
+      "kind": "DY_ONE_LEG",
+      "kinematics": {
+        "<Q>": 91.0,
+        "<pT>": null,
+        "<qT>": 1.0,
+        "<x>": null,
+        "<y>": 0.2,
+        "<z>": null,
+        "Q": [
+          66.0,
+          116.0
+        ],
+        "pT": null,
+        "qT": [
+          0.0,
+          2.0
+        ],
+        "s": 64000000.0,
+        "x": null,
+        "y": [
+          0.0,
+          0.4
+        ],
+        "z": null
+      },
+      "point_id": "A8-00y04.0",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.019"
+    },
+    {
+      "dataset": "CMS13-00y04",
+      "frozen_before_diagnostics": true,
+      "kind": "DY_ONE_LEG",
+      "kinematics": {
+        "<Q>": 91.1876,
+        "<pT>": null,
+        "<qT>": 1.5,
+        "<x>": null,
+        "<y>": 0.2,
+        "<z>": null,
+        "Q": [
+          76.1876,
+          106.1876
+        ],
+        "pT": null,
+        "qT": [
+          1.0,
+          2.0
+        ],
+        "s": 169000000.0,
+        "x": null,
+        "y": [
+          0.0,
+          0.4
+        ],
+        "z": null
+      },
+      "point_id": "CMS13-00y04.0",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.020"
+    },
+    {
+      "dataset": "LHCb13_dy(2021)",
+      "frozen_before_diagnostics": true,
+      "kind": "DY_ONE_LEG",
+      "kinematics": {
+        "<Q>": 91.1876,
+        "<pT>": null,
+        "<qT>": 1.1,
+        "<x>": null,
+        "<y>": 2.25,
+        "<z>": null,
+        "Q": [
+          60.0,
+          120.0
+        ],
+        "pT": null,
+        "qT": [
+          0.0,
+          2.2
+        ],
+        "s": 169000000.0,
+        "x": null,
+        "y": [
+          2.0,
+          2.5
+        ],
+        "z": null
+      },
+      "point_id": "LHCb13_dy(2021).0",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.021"
+    },
+    {
+      "dataset": "PHE200",
+      "frozen_before_diagnostics": true,
+      "kind": "DY_ONE_LEG",
+      "kinematics": {
+        "<Q>": 6.5,
+        "<pT>": null,
+        "<qT>": 0.25,
+        "<x>": null,
+        "<y>": 1.7000000000000002,
+        "<z>": null,
+        "Q": [
+          4.8,
+          8.2
+        ],
+        "pT": null,
+        "qT": [
+          0.0,
+          0.5
+        ],
+        "s": 40000.0,
+        "x": null,
+        "y": [
+          1.2,
+          2.2
+        ],
+        "z": null
+      },
+      "point_id": "PHE200.0",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.022"
+    },
+    {
+      "dataset": "hermes.p.vmsub.zxpt.pi+",
+      "frozen_before_diagnostics": true,
+      "kind": "SIDIS_TARGET_LEG",
+      "kinematics": {
+        "<Q>": 2.2893820126837725,
+        "<pT>": 0.1019924,
+        "<qT>": 0.33573691118460514,
+        "<x>": 0.2538812,
+        "<y>": null,
+        "<z>": 0.2233892,
+        "Q": [
+          1.0,
+          4.47213595499958
+        ],
+        "pT": [
+          0.0,
+          0.15
+        ],
+        "qT": [
+          0.0,
+          0.6714738223692103
+        ],
+        "s": 52.657444,
+        "x": [
+          0.2,
+          0.35
+        ],
+        "y": null,
+        "z": [
+          0.2,
+          0.25
+        ]
+      },
+      "point_id": "hermes.p.vmsub.zxpt.pi+.231",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.023"
+    },
+    {
+      "dataset": "hermes.p.vmsub.zxpt.k+",
+      "frozen_before_diagnostics": true,
+      "kind": "SIDIS_TARGET_LEG",
+      "kinematics": {
+        "<Q>": 2.2893820126837725,
+        "<pT>": 0.1026842,
+        "<qT>": 0.332893470094848,
+        "<x>": 0.2538812,
+        "<y>": null,
+        "<z>": 0.2252973,
+        "Q": [
+          1.0,
+          4.47213595499958
+        ],
+        "pT": [
+          0.0,
+          0.15
+        ],
+        "qT": [
+          0.0,
+          0.665786940189696
+        ],
+        "s": 52.657444,
+        "x": [
+          0.2,
+          0.35
+        ],
+        "y": null,
+        "z": [
+          0.2,
+          0.25
+        ]
+      },
+      "point_id": "hermes.p.vmsub.zxpt.k+.231",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.024"
+    },
+    {
+      "dataset": "hermes.d.vmsub.zxpt.pi+",
+      "frozen_before_diagnostics": true,
+      "kind": "SIDIS_TARGET_LEG",
+      "kinematics": {
+        "<Q>": 2.2854782869237678,
+        "<pT>": 0.1021213,
+        "<qT>": 0.33508545796129535,
+        "<x>": 0.2530129,
+        "<y>": null,
+        "<z>": 0.2238235,
+        "Q": [
+          1.0,
+          4.47213595499958
+        ],
+        "pT": [
+          0.0,
+          0.15
+        ],
+        "qT": [
+          0.0,
+          0.6701709159225907
+        ],
+        "s": 52.657444,
+        "x": [
+          0.2,
+          0.35
+        ],
+        "y": null,
+        "z": [
+          0.2,
+          0.25
+        ]
+      },
+      "point_id": "hermes.d.vmsub.zxpt.pi+.231",
+      "role": "CALIBRATION_CANDIDATE",
+      "stable_id": "C29.GRID.025"
+    },
+    {
+      "dataset": "compass.d.h+",
+      "frozen_before_diagnostics": true,
+      "kind": "SIDIS_TARGET_LEG",
+      "kinematics": {
+        "<Q>": 6.5,
+        "<pT>": 0.29953523924572845,
+        "<qT>": 1.1981409569829138,
+        "<x>": 0.155,
+        "<y>": null,
+        "<z>": 0.25,
+        "Q": [
+          4.0,
+          9.0
+        ],
+        "pT": [
+          0.282842712474619,
+          0.31622776601683794
+        ],
+        "qT": [
+          1.131370849898476,
+          1.2649110640673518
+        ],
+        "s": 301.03984399999996,
+        "x": [
+          0.1,
+          0.21
+        ],
+        "y": null,
+        "z": [
+          0.2,
+          0.3
+        ]
+      },
+      "point_id": "compass.d.h+.0",
+      "role": "HOLDOUT_CANDIDATE",
+      "stable_id": "C29.GRID.026"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "TARGET_MISMATCH",
+      "label": "PHENOMENOLOGICAL_DEUTERIUM_VS_MICROSCOPIC_DEUTERON",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.027"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "TARGET_MISMATCH",
+      "label": "PROTON_VS_DEUTERON",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.028"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "SCHEME_MISMATCH",
+      "label": "RAPIDITY_SCHEME",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.029"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "DOMAIN_BOUNDARY",
+      "label": "X_LOW",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.030"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "DOMAIN_BOUNDARY",
+      "label": "LARGE_B",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.031"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "PROVENANCE",
+      "label": "EXTERNAL_VS_MICROSCOPIC_ROOT",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.032"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "COVARIANCE",
+      "label": "NULL_SPACE_DIRECTION",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.033"
+    },
+    {
+      "frozen_before_diagnostics": true,
+      "kind": "NUCLEAR",
+      "label": "NN_ONLY_VS_MATCHED_TOTAL",
+      "role": "DIAGNOSTIC_ONLY",
+      "stable_id": "C29.GRID.034"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "selection_used_residuals": false
+}

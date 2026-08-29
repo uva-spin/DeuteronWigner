@@ -1,0 +1,7 @@
+# C250/HQCDRIQUARKFIXEDKV2CURRENTEVAL1 implementation report
+
+Status: C250_CALLER_COMPLEMENT_CURRENT_SYMBOLIC_FACTORS_AND_I4_EVALUATOR_READY_NONLOCAL_PROJECTORS_INCOMPLETE
+Plan: RIQUARKFIXEDKV2CURRENTEVAL1-B
+C250 root: 3f41e09857fe6052d7cc5bea2d220817e213620ef83cb8ad7fc7ccd1890dd2d3
+
+Symbolic current factors and I4 evaluation are ready; four complement projector classes remain unavailable, not zero.

@@ -1,0 +1,35 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "adapter_plan_validation",
+  "authority_record": {
+    "adapters": [
+      "Euclidean symmetric momenta -> light-front off-shell coordinates with named analytic continuation",
+      "off-shell momenta -> normalized finite-cell packets, no plane-wave delta substitution",
+      "continuum transverse momentum -> finite HO overlaps at each resolution",
+      "operator/source normalization and g_s^2 factor ownership",
+      "Landau-gauge BRST/ST convention and descendant checks",
+      "C254 caller Abel topology with order of limits retained",
+      "boundary/link/holonomy classes remain separate",
+      "RI/SMOM running/conversion matrix -> MSbar then physical observable matching"
+    ],
+    "affine_system": "M^(K)(mu,S)c^(K)=t^S(mu)-r^(K)(mu,S)",
+    "coefficients_evaluated": false,
+    "resolution_average": false,
+    "resolutions": [
+      "K9_2_N8_b0.40",
+      "K11_2_N8_b0.40",
+      "K13_2_N8_b0.40"
+    ],
+    "root": "6e75fde7300b95802c315609e5d07bccc49e80284f20b33bc5a523be829314a1"
+  },
+  "package_root": "3316addcea31e845dc16f57f0e921a6409b87c2764635f261e8dff3454cd62ed",
+  "physical": false,
+  "plan": "C117RENORMDESIGN1-A",
+  "schema": "C259-ADAPTER_PLAN-VALIDATION-V1",
+  "status": "C259_PROJECT_C117_RI_SMOM_V1_FULL_RANK_DESIGN_READY",
+  "validation": "PASS"
+}

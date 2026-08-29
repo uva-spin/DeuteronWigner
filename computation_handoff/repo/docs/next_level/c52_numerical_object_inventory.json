@@ -1,0 +1,102 @@
+{
+  "deterministic_rebuild": true,
+  "objects": [
+    {
+      "array_sha256": "5e05acf80cb1f12d6ebe743f2409de77101eeac159c36cca4d32dcb6e6b16e5a",
+      "basis_order_hash": "cf3591900518268ff960a1021d89cfc9732740e7d5001244d1978f375816d716",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "faf0f692ce584beb147787d10aefdd258fd0ee210b22f8a15f5f3d147d7779fd",
+      "generator": "python scripts/build_c52_vdim2_artifacts.py",
+      "name": "primitive_K9_2_N8_b0.40",
+      "nnz": 104,
+      "runtime_path": "data/runtime/c52_vdim2/primitive_K9_2_N8_b0.40_C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR.npy",
+      "shape": [
+        448,
+        2
+      ],
+      "units": "GeV"
+    },
+    {
+      "array_sha256": "056cbd9a65e1913539bfd69c5a1032aaea40f4e9a43043a2335ab987bca4c9b4",
+      "basis_order_hash": "cf3591900518268ff960a1021d89cfc9732740e7d5001244d1978f375816d716",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c52_vdim2_artifacts.py",
+      "name": "diagnostic_m2_K9_2_N8_b0.40",
+      "nnz": 104,
+      "runtime_path": "data/runtime/c52_vdim2/diagnostic_m2_K9_2_N8_b0.40_C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR.npy",
+      "shape": [
+        448,
+        2
+      ],
+      "units": "GeV^2 (Pplus=3 diagnostic only)"
+    },
+    {
+      "array_sha256": "fa106855982b1a9a55a21906a8f8cced99fede36c90b6f884966b3915df9bf69",
+      "basis_order_hash": "3cfa3e7e4d3b1c0daf7cb7d0847612d40c42524712c38bb0b466ed1fb1cf6e70",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "faf0f692ce584beb147787d10aefdd258fd0ee210b22f8a15f5f3d147d7779fd",
+      "generator": "python scripts/build_c52_vdim2_artifacts.py",
+      "name": "primitive_K11_2_N10_b0.45",
+      "nnz": 170,
+      "runtime_path": "data/runtime/c52_vdim2/primitive_K11_2_N10_b0.45_C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR.npy",
+      "shape": [
+        900,
+        2
+      ],
+      "units": "GeV"
+    },
+    {
+      "array_sha256": "ac8bd36f38dbf29b38ec0e26f4a318eb15ad5cad57f8ac58078baa6427d95faf",
+      "basis_order_hash": "3cfa3e7e4d3b1c0daf7cb7d0847612d40c42524712c38bb0b466ed1fb1cf6e70",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c52_vdim2_artifacts.py",
+      "name": "diagnostic_m2_K11_2_N10_b0.45",
+      "nnz": 170,
+      "runtime_path": "data/runtime/c52_vdim2/diagnostic_m2_K11_2_N10_b0.45_C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR.npy",
+      "shape": [
+        900,
+        2
+      ],
+      "units": "GeV^2 (Pplus=3 diagnostic only)"
+    },
+    {
+      "array_sha256": "9f4caf4a2e2d8401e08b4c1db14f2b36727f1e13f221e0a8abe7d49c332ccbeb",
+      "basis_order_hash": "947bbd1a68c5c1e330fd78f2e82fccbe86a16d7d758ce569b820607d5850f9f1",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "faf0f692ce584beb147787d10aefdd258fd0ee210b22f8a15f5f3d147d7779fd",
+      "generator": "python scripts/build_c52_vdim2_artifacts.py",
+      "name": "primitive_K13_2_N12_b0.50",
+      "nnz": 252,
+      "runtime_path": "data/runtime/c52_vdim2/primitive_K13_2_N12_b0.50_C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR.npy",
+      "shape": [
+        1584,
+        2
+      ],
+      "units": "GeV"
+    },
+    {
+      "array_sha256": "7d366f52ebe3592aaf3a42cf676158b763d98bcb054358e87db3786084f877d2",
+      "basis_order_hash": "947bbd1a68c5c1e330fd78f2e82fccbe86a16d7d758ce569b820607d5850f9f1",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c52_vdim2_artifacts.py",
+      "name": "diagnostic_m2_K13_2_N12_b0.50",
+      "nnz": 252,
+      "runtime_path": "data/runtime/c52_vdim2/diagnostic_m2_K13_2_N12_b0.50_C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR.npy",
+      "shape": [
+        1584,
+        2
+      ],
+      "units": "GeV^2 (Pplus=3 diagnostic only)"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "root": "76e20223b2ff6107957fd14083c47a9f9948f12b7e813b4ca5174edb0b62bf9d",
+  "routes": [
+    "SHIFT-A forward",
+    "SHIFT-B reversed",
+    "SHIFT-C gauge orbit",
+    "SHIFT-D holonomy"
+  ],
+  "row": {
+    "circle_period_preserved": true,
+    "cut_id": "C178_CUT_C0_COORDINATE",
+    "frames_collapsed": false,
+    "shift": "declared coordinate shift on S_L^1",
+    "shifted_cut_id": "C178_CUT_C1_SHIFTED_COORDINATE",
+    "side_transport_minus": "S_-(c,c')",
+    "side_transport_plus": "S_+(c,c')",
+    "source_infinity_identified": false,
+    "status": "CUT_SHIFT_COVARIANCE_CLOSED",
+    "transition_relation": "Omega_c' = S_+ Omega_c S_-^{-1}"
+  },
+  "schema": "C178-CUT-SHIFT-V1"
+}

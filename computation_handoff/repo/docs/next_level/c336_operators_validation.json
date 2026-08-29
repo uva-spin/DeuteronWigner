@@ -1,0 +1,39 @@
+{
+  "package_root": "4a69221541bfbde6b281ef9a96024a6bf45f998bdf424dc45446ef6490719d62",
+  "physical": false,
+  "plan": "RIMASSC43HEATKERNEL1-A",
+  "record": {
+    "constraint_jacobian": "det prime D_minus^2 longitudinal only; P0 excluded",
+    "count_once": true,
+    "ghost": "decoupled at C43 nonzero-mode axial scope",
+    "root": "adb85e7fdd3683bab453b082862d48ec735257b18214cc16a34df28069b2e021",
+    "rows": [
+      {
+        "field": "A_perp^i, i=1,2",
+        "multiplicity": 2,
+        "net_trace_weight": 1.0,
+        "owner": "boson",
+        "prefactor": 0.5,
+        "transverse_operator": "-partial_perp^2"
+      },
+      {
+        "field": "psi_plus two LF spin states",
+        "multiplicity": 2,
+        "net_trace_weight": -2.0,
+        "owner": "fermion",
+        "prefactor": -1.0,
+        "transverse_operator": "-partial_perp^2+m^2"
+      },
+      {
+        "field": "solved A_plus/Gauss law",
+        "multiplicity": 0,
+        "net_trace_weight": 0.0,
+        "owner": "constraint",
+        "prefactor": -1.0,
+        "transverse_operator": null
+      }
+    ]
+  },
+  "status": "C336_GAUGE_COVARIANT_CONTINUOUS_TRANSVERSE_HEAT_KERNEL_DERIVED_STANDARD_DETERMINANT_EVALUATION_MISSING",
+  "validation": "PASS"
+}

@@ -1,0 +1,556 @@
+{
+  "counts": {
+    "analytic": 438,
+    "external_art25_source": 0,
+    "microscopic_project_source": 0,
+    "not_process_eligible": 102,
+    "physical": 0
+  },
+  "external": [
+    {
+      "failed_gates": [
+        "exact MSHT20_REP",
+        "source-owned frozen output",
+        "source hard/partner inputs"
+      ],
+      "physical_eligible": false,
+      "root": "ART25_EXTERNAL_SOURCE_REPRODUCTION",
+      "source_eligible": false,
+      "stable_id": "C26.EXTERNAL.DY"
+    },
+    {
+      "failed_gates": [
+        "exact MSHT20_REP",
+        "source-owned frozen output",
+        "source hard/partner inputs"
+      ],
+      "physical_eligible": false,
+      "root": "ART25_EXTERNAL_SOURCE_REPRODUCTION",
+      "source_eligible": false,
+      "stable_id": "C26.EXTERNAL.SIDIS"
+    }
+  ],
+  "historical_rows_unchanged": [
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:DY:U:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_ANTIQUARK_U",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "DY",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": true,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": true,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:DY:LL:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_ANTIQUARK_LL",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "DY",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:DY:HEL:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_HELICITY",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "DY",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:DY:TRANS:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_TRANSVERSITY",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "DY",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:SIDIS:U:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_ANTIQUARK_U",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "SIDIS",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:SIDIS:LL:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_ANTIQUARK_LL",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "SIDIS",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:GLUON:U:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "GLUON_U",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "HQ_DIS",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:GLUON:LINEAR:R2",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "GLUON_LINEAR",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "HQ_DIS",
+      "rank": 2,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:B1:LL:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "QUARK_ANTIQUARK_LL",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "INCLUSIVE_B1",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    },
+    {
+      "c25_status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "candidate_id": "C24:CAND:TAGGED:IA:R0",
+      "failed_physical_gates": [
+        "covariance_or_replicas",
+        "joint_member_correlation",
+        "physical_domain_scale_validity",
+        "no_synthetic_object",
+        "physical_source_ancestry",
+        "all_selected_nuclear_components"
+      ],
+      "failed_source_gates": [
+        "authoritative_ancillary_or_transcription",
+        "exact_source_expression",
+        "independent_source_oracle",
+        "source_cs_largeb_plan",
+        "source_hard_partner_inputs",
+        "source_uncertainty_model"
+      ],
+      "family": "TAGGED_NN_IA",
+      "nuclear_plan": "NN_ONLY",
+      "physical_eligible": false,
+      "physical_gates": {
+        "all_selected_nuclear_components": false,
+        "covariance_or_replicas": false,
+        "joint_member_correlation": false,
+        "no_synthetic_object": false,
+        "physical_domain_scale_validity": false,
+        "physical_source_ancestry": false
+      },
+      "process": "TAGGED_DIS",
+      "rank": 0,
+      "source_eligible": false,
+      "source_gates": {
+        "accuracy_uncertainty_manifest": true,
+        "authoritative_ancillary_or_transcription": false,
+        "c22q_analytic_validation": true,
+        "exact_source_expression": false,
+        "factorization_glauber_certificate": true,
+        "independent_source_oracle": false,
+        "rank_harmonic_compatibility": true,
+        "source_cs_largeb_plan": false,
+        "source_domain": true,
+        "source_hard_partner_inputs": false,
+        "source_locator_and_hash": true,
+        "source_scheme_conversion": true,
+        "source_uncertainty_model": false
+      },
+      "status": "SOURCE_INTERFACE_AUDITED_UNAVAILABLE",
+      "tier": "ANALYTIC_PROCESS_ORACLE_ELIGIBLE"
+    }
+  ],
+  "microscopic": [
+    {
+      "failed_gates": [
+        "explicit ART25-to-microscopic matching absent",
+        "complete nuclear total unavailable"
+      ],
+      "physical_eligible": false,
+      "root": "PROJECT_MICROSCOPIC_TMD_PROCESS_PLAN",
+      "source_eligible": false,
+      "stable_id": "C26.MICROSCOPIC.PROJECT"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

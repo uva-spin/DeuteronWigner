@@ -1,0 +1,27 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "QV1Q_complete": false,
+  "artifact": "normalization_validation",
+  "authority_record": {
+    "L_cancellation": "exact C52",
+    "M2_coefficient": "Mul(Pow(Integer(2), Rational(1, 2)), Pow(pi, Rational(-1, 2)), Symbol('P_plus', positive=True), Pow(Symbol('k_g', positive=True), Rational(-1, 2)))",
+    "M2_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+    "P_plus": "caller symbolic",
+    "Pminus_coefficient": "Mul(Rational(1, 2), Pow(Integer(2), Rational(1, 2)), Pow(pi, Rational(-1, 2)), Pow(Symbol('k_g', positive=True), Rational(-1, 2)))",
+    "Pminus_hash": "faf0f692ce584beb147787d10aefdd258fd0ee210b22f8a15f5f3d147d7779fd",
+    "component_id": "C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR",
+    "k_g": "caller positive integer",
+    "root": "df783bfce2b34efe87f2a1b6904bdffcee3c9bf2ce3547f4dabdca0d573a12e4"
+  },
+  "numeric_diagnostic_promoted": 0,
+  "package_root": "bbb623246814bc7092de622a2b35758d6ce6abef09dc13c352308e230478913b",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV1-E",
+  "retained_indices_reused": 0,
+  "schema": "C224-NORMALIZATION-VALIDATION-V1",
+  "status": "C224_C223_OMITTED_CANONICAL_VERTEX_DOMAIN_AND_NORMALIZATION_READY_SYMBOLIC_SPINOR_HO_PRIMITIVE_INCOMPLETE"
+}

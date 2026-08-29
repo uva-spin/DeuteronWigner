@@ -1,0 +1,62 @@
+{
+  "schema": "C211-OVERLAP-CERTIFICATE-CONTRACT-V1",
+  "artifact": "overlap_certificate_contract",
+  "package_root": "4ce56a14bed7afd1309d1b1960373245f6cff5fe3965092225876bd116a89b92",
+  "status": "C211_C210_AUTHENTICATED_NONPHYSICAL_MOMQ_FIXTURES_EVALUATED_ENCLOSED_ROUTE_PARITY_READY",
+  "plan": "MOMQEVAL1-A",
+  "physical": false,
+  "exact_finite_point": false,
+  "continuum_value": false,
+  "resolution_average": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C211-OVERLAP-K9",
+        "resolution": "K9",
+        "routes": [
+          "inverse-Gram",
+          "dual-functional",
+          "channel-reordered"
+        ],
+        "criterion": "nonempty intersection of independently propagated channel-1 enclosures",
+        "result": "CERTIFIED_SYMBOLIC_OVERLAP_OBLIGATION",
+        "resolution_local": true,
+        "cross_resolution_average": false
+      },
+      {
+        "record_id": "C211-OVERLAP-K11",
+        "resolution": "K11",
+        "routes": [
+          "inverse-Gram",
+          "dual-functional",
+          "channel-reordered"
+        ],
+        "criterion": "nonempty intersection of independently propagated channel-1 enclosures",
+        "result": "CERTIFIED_SYMBOLIC_OVERLAP_OBLIGATION",
+        "resolution_local": true,
+        "cross_resolution_average": false
+      },
+      {
+        "record_id": "C211-OVERLAP-K13",
+        "resolution": "K13",
+        "routes": [
+          "inverse-Gram",
+          "dual-functional",
+          "channel-reordered"
+        ],
+        "criterion": "nonempty intersection of independently propagated channel-1 enclosures",
+        "result": "CERTIFIED_SYMBOLIC_OVERLAP_OBLIGATION",
+        "resolution_local": true,
+        "cross_resolution_average": false
+      }
+    ],
+    "count": 3,
+    "root": "a931c7d482acc75be703f7de89da5d754f13376a54a51d61afef2d58f8062dd5"
+  }
+}

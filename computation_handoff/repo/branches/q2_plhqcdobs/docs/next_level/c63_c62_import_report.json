@@ -1,0 +1,30 @@
+{
+  "C62_status": "C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY",
+  "blocker": "C62 committed import artifacts do not serialize each finite-shell block expression/support hash, certified numerical array/error bound, basis-order hash, or runtime path. C63 may not rebuild these mutable values while claiming a read-only import.",
+  "contract_hash_fields": {
+    "array_hash": false,
+    "basis_order_hash": false,
+    "error_bound": false,
+    "expression_hash": false,
+    "runtime_path": false,
+    "support_hash": false
+  },
+  "contract_result": "PASS_EXACT_TM_ALGEBRA",
+  "genuine_small": [
+    0,
+    0,
+    0
+  ],
+  "inventory_object_count": 0,
+  "plan": "QGTM-CIRCULAR-LADDER-PRIMARY",
+  "residue_counts": [
+    4032,
+    15840,
+    48048
+  ],
+  "unresolved": [
+    0,
+    0,
+    0
+  ]
+}

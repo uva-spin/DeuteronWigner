@@ -1,0 +1,149 @@
+{
+  "coordinates": {
+    "fractions": [
+      0.43,
+      0.39,
+      0.18
+    ],
+    "kappa": [
+      [
+        0.12,
+        -0.06
+      ],
+      [
+        -0.08,
+        0.09
+      ],
+      [
+        -0.04,
+        -0.03
+      ]
+    ],
+    "measure_id": "LF3_INV_2PI_V1"
+  },
+  "diagonal": [
+    {
+      "active": 0,
+      "incoming": [
+        [
+          0.0744,
+          -0.028649999999999995
+        ],
+        [
+          -0.048799999999999996,
+          0.06855
+        ],
+        [
+          -0.0256,
+          -0.0399
+        ]
+      ],
+      "intrinsic_residual": 7.757919228897728e-18,
+      "jacobian": 1.0,
+      "outgoing": [
+        [
+          0.1656,
+          -0.09135
+        ],
+        [
+          -0.11120000000000001,
+          0.11145
+        ],
+        [
+          -0.054400000000000004,
+          -0.0201
+        ]
+      ],
+      "permutation_residual": 0.0,
+      "physical_transfer_residual": 0.0,
+      "reversal_residual": 0.0,
+      "spectator_residual": 0.0
+    },
+    {
+      "active": 1,
+      "incoming": [
+        [
+          0.15439999999999998,
+          -0.08365
+        ],
+        [
+          -0.1288,
+          0.12355
+        ],
+        [
+          -0.0256,
+          -0.0399
+        ]
+      ],
+      "intrinsic_residual": 1.8683543625880677e-17,
+      "jacobian": 1.0,
+      "outgoing": [
+        [
+          0.0856,
+          -0.03634999999999999
+        ],
+        [
+          -0.0312,
+          0.05645
+        ],
+        [
+          -0.054400000000000004,
+          -0.0201
+        ]
+      ],
+      "permutation_residual": 0.0,
+      "physical_transfer_residual": 0.0,
+      "reversal_residual": 0.0,
+      "spectator_residual": 0.0
+    },
+    {
+      "active": 2,
+      "incoming": [
+        [
+          0.15439999999999998,
+          -0.08365
+        ],
+        [
+          -0.048799999999999996,
+          0.06855
+        ],
+        [
+          -0.1056,
+          0.015100000000000002
+        ]
+      ],
+      "intrinsic_residual": 1.3877787807814457e-17,
+      "jacobian": 1.0,
+      "outgoing": [
+        [
+          0.0856,
+          -0.03634999999999999
+        ],
+        [
+          -0.11120000000000001,
+          0.11145
+        ],
+        [
+          0.025600000000000005,
+          -0.0751
+        ]
+      ],
+      "permutation_residual": 0.0,
+      "physical_transfer_residual": 0.0,
+      "reversal_residual": 0.0,
+      "spectator_residual": 0.0
+    }
+  ],
+  "schema_version": "1.0.0",
+  "transition": {
+    "emitter": 0,
+    "endpoint_policy": "OPEN_POSITIVE_SUPPORT",
+    "jacobian": 1.0,
+    "momentum_residual": 0.0,
+    "pion_fraction": 0.18,
+    "reverse_residual": 0.0,
+    "source": "NN",
+    "spectator_residual": 0.0,
+    "target": "NNPI"
+  }
+}

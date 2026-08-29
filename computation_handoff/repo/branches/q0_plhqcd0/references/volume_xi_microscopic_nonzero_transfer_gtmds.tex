@@ -1,0 +1,2391 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XI: Microscopic Nonzero-Transfer GTMD Helicity Matrices, Projector Closure, and Wigner/OAM Consistency},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XI}
+\fancyhead[R]{\small\color{darkgray}Microscopic nonzero-transfer GTMD closure}
+\fancyfoot[L]{\small\color{darkgray}31 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\BLFQ}{\ensuremath{\mathrm{BLFQ}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\PCAC}{\ensuremath{\mathrm{PCAC}}}
+\newcommand{\WTI}{\ensuremath{\mathrm{WTI}}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\Hthree}{\Hil_{qqq}}
+\newcommand{\Hfour}{\Hil_{qqqg}}
+\newcommand{\Hfiveu}{\Hil_{qqqu\bar u}}
+\newcommand{\Hfived}{\Hil_{qqqd\bar d}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{PredictionPlan}}
+\newcommand{\StateBundle}{\texttt{H3MicroscopicStateBundle}}
+\newcommand{\MomentumFiber}{\texttt{MomentumFiber}}
+\newcommand{\RecoilMap}{\texttt{SymmetricXiZeroRecoil}}
+\newcommand{\StateEvaluator}{\texttt{MomentumSpaceStateEvaluator}}
+\newcommand{\OverlapKernel}{\texttt{MicroscopicGTMDOverlapKernel}}
+\newcommand{\HelicityMatrix}{\texttt{PartonTargetHelicityMatrix}}
+\newcommand{\ProjectorManifest}{\texttt{ProjectorClosureManifest}}
+\newcommand{\MomentManifest}{\texttt{MomentClosureManifest}}
+\newcommand{\WignerManifest}{\texttt{WignerOAMClosureManifest}}
+\newcommand{\ParentBundle}{\texttt{MicroscopicGTMDParentBundle}}
+\newcommand{\ReplacementManifest}{\texttt{AnalyticParentReplacementManifest}}
+\newcommand{\ConvergenceManifest}{\texttt{H4ConvergenceManifest}}
+\newcommand{\ProvComplex}{\texttt{Provenance2Complex}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XI: Microscopic Nonzero-Transfer GTMD Helicity Matrices,\\[2mm]
+Projector Closure, and Wigner/OAM Consistency}\\[4mm]
+\large Common H3 quark--antiquark--gluon parents, exact T-even reductions,
+local-current and energy--momentum moments, and controlled replacement of
+analytic overlap pilots}
+\author{DeuteronWigner project}
+\date{31 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~0--X established the typed geometric architecture, regulated
+light-front Hilbert spaces, common overlap maps, Wilson-line and cut pilots,
+matched nuclear and QCD interfaces, shared inference, an assumption-conditioned
+tensor-network compiler, and an interacting H3 nucleon state containing
+\(qqq\), \(qqqg\), \(qqqu\bar u\), and \(qqqd\bar d\) sectors.  C11/H4 is
+the active implementation package for the next transition: evaluation of
+full nonzero-transfer quark, antiquark, and gluon helicity matrices from that
+single microscopic state; complete leading-twist T-even projector closure;
+commuting TMD, GPD, PDF, current, energy--momentum, Wigner, and OAM reductions;
+and a scoped replacement of the earlier analytic common-parent pilots.  This
+volume is the normative specification for H4.  It is intentionally restricted
+to zero skewness and Wilson order zero.  It does not claim a soft-subtracted
+QCD GTMD, a physical TMD, a complete continuum Hamiltonian trajectory, a
+nuclear state, process factorization, or inference readiness.  A failure of a
+projector or moment closure test must be repaired in the state evaluator,
+operator basis, recoil map, current, or numerical implementation; it may not
+be hidden by a GTMD-specific coefficient.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+Generalized transverse-momentum dependent distributions are useful only when
+they are retained as common off-forward operator matrix elements rather than
+used as names for independently parameterized curves.  We formulate the
+first microscopic DeuteronWigner H4 parent by evaluating the H3 Hamiltonian
+eigenstate between distinct incoming and outgoing light-front momentum
+fibers in the symmetric zero-skewness frame.  One versioned recoil map shifts
+the active and spectator intrinsic transverse momenta, and one momentum-space
+state evaluator converts exact BLFQ coefficients or a symmetry-adapted tree
+tensor network into continuous amplitudes at the shifted coordinates.  The
+same diagonal Fock-space overlap kernel generates positive-\(x\) quark,
+antiquark, and gluon parents with common normalization, regulator, member,
+phase, and assumption identity.
+
+For quarks and antiquarks, the full target--parton helicity matrix is retained
+and projected onto the complete leading-twist spin-\(\tfrac12\) GTMD basis
+\(F_{1,1\ldots4}\), \(G_{1,1\ldots4}\), and
+\(H_{1,1\ldots8}\).  Projectors are constructed from the Gram matrix of the
+declared covariant basis.  Full-rank extraction is required only at generic
+nondegenerate kinematics; at the forward or collinear boundaries the
+identifiable reduced basis is reported instead of using a pseudoinverse to
+invent separated amplitudes.  The direct positive-\(x\) antiquark matrices
+retain operator-specific charge-conjugation signatures.  The gluon parent
+retains its complete transverse tensor, target and gluon helicities, both
+microscopic \(qqqg\) color outer multiplicities, and exact trace,
+helicity-antisymmetric, and symmetric-traceless reconstruction.  At Wilson
+order zero every link-odd projection is an exact null test.
+
+TMD, GPD, PDF, local-current, energy--momentum, Wigner, and OAM quantities are
+defined as typed reductions of the same parent.  Vector, axial, tensor, and
+gluon moments use their correct quark--antiquark signs and gluon normalization.
+The phase-space OAM moment is checked against a transfer derivative and the
+direct H3 canonical operator, with all Fourier and gauge-path conventions
+retained.  Forward Gram positivity is distinguished from nonforward
+overlap bounds and from Wigner quasiprobability.  Exact, Krylov, and TTN
+state representations, transfer grids, quadratures, basis and Fock towers,
+and bond dimensions enter separate convergence ledgers.  Finally, the H4
+parent replaces the C3/C4 analytic parents only inside a typed validation
+scope after all closure gates pass; the analytic models remain immutable
+oracles and are not fitting targets.  The package specifies formal
+requirements, software objects, schemas, benchmark families, negative tests,
+provenance cells, and acceptance criteria for the first microscopic
+nonzero-transfer common parent.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scientific problem, scope, and interfaces}
+\label{sec:scope}
+
+\subsection{The H4 transition}
+
+H3 supplies one normalized interacting state
+\begin{equation}
+ |N,\Lambda;s,r,\mathfrak A\rangle
+ =
+ |\Psi_{qqq}^{\Lambda}\rangle
+ +|\Psi_{qqqg}^{\Lambda}\rangle
+ +|\Psi_{qqqu\bar u}^{\Lambda}\rangle
+ +|\Psi_{qqqd\bar d}^{\Lambda}\rangle,
+ \label{eq:h3-state}
+\end{equation}
+where \(s\) is the microscopic member, \(r\) is the regulator and resolution
+identity, and \(\mathfrak A\) is the assumption bundle.  H3 already closes
+state probability, valence flavor, charge, baryon number, longitudinal
+momentum, and a finite-basis canonical \(\Jz\) ledger.  It also supplies
+Hamiltonian-consistent vector, axial, pseudoscalar, field-strength, and OAM
+operators.  What it does not yet provide is one complete off-forward partonic
+parent evaluated from the actual state.
+
+The H4 transition is
+\begin{equation}
+\begin{aligned}
+ &\bigl\{|N\rangle,\cO_q,\cO_{\bar q},\cO_g,\cJ,\cT^{\mu\nu},\cL_z\bigr\}
+ \\
+ &\qquad\longrightarrow
+ \bigl\{\cW_q,\cW_{\bar q},\cW_g\bigr\}(x,\kT,\DT)
+ \\
+ &\qquad\longrightarrow
+ \bigl\{\TMD,\GPD,\mathrm{PDF},\mathrm{current},\mathrm{EMT},
+ \mathrm{Wigner},\mathrm{OAM}\bigr\}.
+\end{aligned}
+\label{eq:h4-chain}
+\end{equation}
+
+\begin{decision}[H4 scientific boundary]
+H4 is a regulated zero-skewness, Wilson-order-zero common-parent
+calculation.  It may issue a microscopic nonzero-transfer closure status.  It
+may not issue physical QCD GTMD, TMD, process, nuclear, evolution, or
+inference readiness.
+\end{decision}
+
+\subsection{Inputs inherited without reinterpretation}
+
+The following objects are normative inputs:
+\begin{enumerate}
+\item the H3 Hamiltonian, renormalization trajectory, state bundles, exact and
+TTN state representations, and phase conventions;
+\item the C1--C2 typed coordinate, rank, Wilson-path, operator-identity,
+reduction, and provenance interfaces;
+\item the C3 symmetric zero-skewness recoil authority and analytic overlap
+oracles;
+\item the C4 regulated reduction and current/EMT route semantics;
+\item the C5--C6 Wilson, cut, ordered-link, color, and phase-budget types,
+which remain inactive at Wilson order zero;
+\item the Volume~V matching and evolution gates and the Volume~VI inference
+gates, which remain fail-closed.
+\end{enumerate}
+
+H4 may extend these interfaces but may not create a parallel coordinate,
+recoil, operator, rank, path, or provenance system.
+
+\subsection{Explicit nonclaims}
+
+The following are not established by H4:
+\begin{itemize}
+\item continuum regulator independence;
+\item nonzero skewness or ERBL overlap structure;
+\item polynomiality beyond the tested zero-skewness moments;
+\item a fully soft-subtracted and rapidity-renormalized GTMD;
+\item physical link-odd Sivers, Boer--Mulders, or gluonic-pole functions;
+\item full non-Abelian Ward or Slavnov--Taylor closure;
+\item a microscopic deuteron or spin-1 target state;
+\item physical TMD evolution, process factorization, or a global posterior.
+\end{itemize}
+
+\section{Zero-skewness off-forward kinematics}
+\label{sec:kinematics}
+
+\subsection{Symmetric frame and momentum fibers}
+
+Let
+\begin{equation}
+ p=P-\frac{\Delta}{2},
+ \qquad
+ p'=P+\frac{\Delta}{2},
+ \qquad
+ \Delta^+=0,
+ \qquad
+ \xi=-\frac{\Delta^+}{2P^+}=0,
+ \label{eq:symmetric-frame}
+\end{equation}
+with
+\begin{equation}
+ t=\Delta^2=-\DT^2
+\end{equation}
+in the purely transverse frame.  The initial and final hadron spaces are
+separate fibers,
+\begin{equation}
+ \Hil_{P,\Lambda}^{(r)}
+ \qquad\text{and}\qquad
+ \Hil_{P',\Lambda'}^{(r)}.
+\end{equation}
+An off-forward operator is therefore typed as
+\begin{equation}
+ \cO_{\Gamma,\gamma}^{a}(P',P):
+ \Hil_{P}^{(r)}\longrightarrow\Hil_{P'}^{(r)},
+ \label{eq:operator-fiber-map}
+\end{equation}
+not as an endomorphism of one nominal momentum space.
+
+\begin{definition}[Momentum-fiber identity]
+A \MomentumFiber{} stores the hadron momentum, light-front convention,
+normalization, regulator, helicity basis, phase convention, and comparison-map
+identity.  Two fibers are composable only through an explicit transfer or
+matching map.
+\end{definition}
+
+\subsection{Single authoritative recoil map}
+
+For an \(n\)-parton state and active parton \(j\), let
+\(x_i>0\), \(\sum_i x_i=1\), and \(\sum_i\bm k_{iT}=0\).  The symmetric
+zero-skewness recoil map is
+\begin{align}
+ \bm\kappa_{jT}^{\mathrm{in}}
+ &=\bm k_{jT}-\frac{1-x_j}{2}\DT,
+ &
+ \bm\kappa_{jT}^{\mathrm{out}}
+ &=\bm k_{jT}+\frac{1-x_j}{2}\DT,
+ \label{eq:active-recoil}\\
+ \bm\kappa_{iT}^{\mathrm{in}}
+ &=\bm k_{iT}+\frac{x_i}{2}\DT,
+ &
+ \bm\kappa_{iT}^{\mathrm{out}}
+ &=\bm k_{iT}-\frac{x_i}{2}\DT,
+ \qquad i\neq j.
+ \label{eq:spectator-recoil}
+\end{align}
+
+\begin{proposition}[Intrinsic closure]
+The map in \cref{eq:active-recoil,eq:spectator-recoil} satisfies
+\begin{equation}
+ \sum_i\bm\kappa_{iT}^{\mathrm{in}}=0,
+ \qquad
+ \sum_i\bm\kappa_{iT}^{\mathrm{out}}=0,
+\end{equation}
+and has unit Jacobian in the independent intrinsic coordinates.
+\end{proposition}
+
+\begin{proof}
+For the incoming state, the transfer-dependent contribution is
+\begin{equation}
+ -\frac{1-x_j}{2}\DT
+ +\sum_{i\neq j}\frac{x_i}{2}\DT
+ =0,
+\end{equation}
+since \(\sum_{i\neq j}x_i=1-x_j\).  The outgoing relation follows with the
+opposite sign.  The map is affine with identity linear part on the independent
+intrinsic coordinates, so its Jacobian is one.
+\end{proof}
+
+\begin{proposition}[Physical transfer and spectator preservation]
+When intrinsic momenta are combined with the hadron transverse momenta
+\(\bm p_T=-\DT/2\) and \(\bm p_T'=+\DT/2\), the active parton receives the
+full physical transfer \(\DT\), while every spectator physical momentum is
+unchanged.
+\end{proposition}
+
+\begin{requirement}[No local recoil formulas]
+The \RecoilMap{} is the only implementation authority for
+\cref{eq:active-recoil,eq:spectator-recoil}.  State evaluators, projectors,
+species selectors, current reductions, and Wigner transforms may consume the
+map but may not reproduce its factors locally.
+\end{requirement}
+
+\subsection{Transfer reversal and forward limit}
+
+The transfer-reversal map is
+\begin{equation}
+ \cR_\Delta:
+ (P',P,\DT,\Lambda',\Lambda)
+ \longmapsto
+ (P,P',-\DT,\Lambda,\Lambda').
+\end{equation}
+It exchanges incoming and outgoing recoil coordinates exactly.  At
+\(\DT=0\), all shifted coordinates reduce to the common forward intrinsic
+configuration.  These are exact property tests, not floating-point
+approximations.
+
+\section{Momentum-space realization of the microscopic state}
+\label{sec:state-evaluator}
+
+\subsection{Basis expansion}
+
+For sector \(\nu\), write the H3 state as
+\begin{equation}
+ |\Psi_{\nu,\Lambda}^{(r,s)}\rangle
+ =
+ \sum_{\alpha\in\cB_{\nu,r}}
+ C_{\nu\alpha}^{\Lambda;(r,s)}
+ |\nu,\alpha;r\rangle,
+ \label{eq:basis-state}
+\end{equation}
+where \(\alpha\) contains longitudinal modes, transverse radial and orbital
+indices, parton helicities, flavor, color outer multiplicity, permutation
+representation, and center-of-mass identity.  The momentum-space amplitude is
+\begin{equation}
+ \psi_{\nu,\Lambda}^{(r,s)}
+ \bigl(\{x_i,\bm\kappa_{iT},\lambda_i,c_i,f_i\}\bigr)
+ =
+ \sum_{\alpha}
+ C_{\nu\alpha}^{\Lambda;(r,s)}
+ \Phi_{\nu\alpha}^{(r)}
+ \bigl(\{x_i,\bm\kappa_{iT},\lambda_i,c_i,f_i\}\bigr).
+ \label{eq:momentum-state}
+\end{equation}
+
+The basis function \(\Phi_{\nu\alpha}^{(r)}\) includes the declared
+longitudinal normalization, two-dimensional oscillator or alternate
+transverse basis, exact color tensor, signed fermion permutation tensor, and
+center-of-mass factor.  The oscillator scale is a basis coordinate, not a
+TMD width.
+
+\begin{definition}[Momentum-space state evaluator]
+The \StateEvaluator{} evaluates \cref{eq:momentum-state} from either the exact
+basis coefficient vector or the symmetry-adapted TTN.  Its result identity
+contains the state-bundle hash, representation type, bond dimension, basis
+resolution, phase convention, coordinate fiber, and numerical tolerance.
+\end{definition}
+
+\subsection{Exact and TTN representations}
+
+The full-bond TTN and the exact basis vector represent the same finite state.
+For every supported configuration \(z\), H4 requires
+\begin{equation}
+ \psi_{\nu}^{\mathrm{TTN},\chi_{\mathrm{full}}}(z)
+ =
+ \psi_{\nu}^{\mathrm{exact}}(z)
+ +\delta_{\mathrm{repr}}(z),
+ \qquad
+ \norm{\delta_{\mathrm{repr}}}\leq\eps_{\mathrm{repr}}.
+ \label{eq:exact-ttn-amplitude}
+\end{equation}
+Finite-bond results retain a separate truncation envelope and cannot borrow
+the full-bond identity.
+
+\begin{requirement}[Observable-sensitive TTN convergence]
+Bond convergence shall be reported for matrix elements and interference
+blocks, not only for the energy.  A bond space that reproduces the mass but
+removes the only \(\Delta L_z\) block supporting a requested GTMD is not
+admissible for that GTMD.
+\end{requirement}
+
+\subsection{Quadrature and continuous coordinates}
+
+The finite basis defines a continuous momentum-space amplitude, but the
+numerical matrix element still requires integration.  A quadrature manifest
+shall contain:
+\begin{itemize}
+\item longitudinal simplex rule and endpoint policy;
+\item transverse radial and azimuthal grids;
+\item transfer grid and angular orientations;
+\item interpolation or basis-evaluation order;
+\item independent high-order or analytic oracle where available;
+\item absolute and relative errors for each reduction route.
+\end{itemize}
+The quadrature resolution is a numerical axis distinct from the Hamiltonian
+basis resolution.
+
+\subsection{Derivatives with respect to transfer}
+
+OAM and impact-parameter moments require derivatives near \(\DT=0\).  H4 may
+use analytic basis derivatives, automatic differentiation, complex-step
+methods where compatible, or symmetric finite differences.  The derivative
+method and step-size study are part of the result identity.  A finite
+difference that mixes states with inconsistent phase conventions is invalid.
+
+\section{Common microscopic overlap kernel}
+\label{sec:overlap}
+
+\subsection{Zeroth-rescattering diagonal overlap}
+
+At \(\xi=0\), positive \(x\), and Wilson order zero, the canonical leading-
+twist bilocal operator produces a diagonal retained-parton-number overlap in
+the DGLAP region.  For species \(a\),
+\begin{align}
+ W_{a/N,\Lambda'\Lambda}^{[\Gamma],(r,s)}
+ (x,\kT,\DT)
+ ={}&
+ \sum_{\nu\in\cF_{\mathrm{H3}}}
+ \sum_{j\in a,\nu}
+ \int[\dd x]_{\nu}[\dd^2\bm k_T]_{\nu}
+ \;\delta(x-x_j)
+ \delta^{(2)}(\kT-\bm k_{jT})
+ \nonumber\\
+ &\times
+ \psi_{\nu,\Lambda'}^{*(r,s)}
+ \bigl(\{x_i,\bm\kappa_{iT}^{\mathrm{out}}\}\bigr)
+ \cP_{j}^{[\Gamma]}
+ \psi_{\nu,\Lambda}^{(r,s)}
+ \bigl(\{x_i,\bm\kappa_{iT}^{\mathrm{in}}\}\bigr),
+ \label{eq:common-overlap}
+\end{align}
+with exact spectator helicity, flavor, and color matching.
+
+The sectors are
+\begin{equation}
+ \cF_{\mathrm{H3}}
+ =
+ \{qqq,qqqg,qqqu\bar u,qqqd\bar d\}.
+\end{equation}
+Quarks receive active slots from all sectors that contain the requested
+flavor; antiquarks receive active positive-\(x\) slots only from the pair
+sectors; gluons receive active slots only from \(qqqg\).
+
+\begin{definition}[Overlap-kernel identity]
+The \OverlapKernel{} contains the operator identity, incoming and outgoing
+fibers, active-slot selector, recoil map, state member, regulator, Fock
+sector, color multiplicity, helicity kernel, permutation convention,
+quadrature, Wilson order, and matching status.
+\end{definition}
+
+\subsection{Number-changing and zero-mode terms}
+
+H4 does not silently include off-diagonal Fock overlaps.  A term with
+\(\nu'\neq\nu\) requires a named source such as:
+\begin{itemize}
+\item nonzero skewness and ERBL support;
+\item an explicit Wilson-line expansion;
+\item a constrained-field or zero-mode operator;
+\item an induced effective operator generated by sector elimination;
+\item operator renormalization mixing.
+\end{itemize}
+All such terms are outside the central H4 overlap unless explicitly declared
+as a separate benchmark.  Missing support is reported as
+\texttt{UNAVAILABLE\_AT\_THIS\_TRUNCATION}, never as a physical zero.
+
+\subsection{Normalization and common-member propagation}
+
+One microscopic member generates all species and reductions.  For member
+\(s\),
+\begin{equation}
+ s
+ \longmapsto
+ \left\{
+ W_{u,s},W_{d,s},W_{\bar u,s},W_{\bar d,s},W_{g,s}
+ \right\}
+ \longmapsto
+ \left\{
+ F_{A,s},\cO_{i,s}
+ \right\}.
+ \label{eq:member-propagation}
+\end{equation}
+The quark, antiquark, and gluon normalizations are therefore linked by state
+probability, valence number, longitudinal momentum, helicity, and angular-
+momentum ledgers.  They cannot be normalized independently after overlap
+evaluation.
+
+\section{Joint target--parton helicity matrices}
+\label{sec:helicity-matrices}
+
+The scalar coefficients conventionally called GTMDs are coordinates on a
+larger helicity object.  H4 therefore stores the matrix before any named
+projection is performed.  This reverses the common but unsafe workflow in
+which independently generated scalar functions are later assembled into a
+matrix and repaired if a symmetry or positivity condition fails.
+
+\subsection{Quark and antiquark matrices}
+
+For a quark or antiquark species, define the ordered joint index
+\begin{equation}
+ \alpha=(\lambda_a,\Lambda),
+ \qquad
+ \lambda_a\in\left\{+\tfrac12,-\tfrac12\right\},
+ \qquad
+ \Lambda\in\left\{+\tfrac12,-\tfrac12\right\}.
+\end{equation}
+The microscopic quark matrix is
+\begin{equation}
+ \cM^{q}_{\alpha'\alpha}
+ (x,\kT,\DT)
+ =
+ \cM^{q}_{\lambda_q'\Lambda';\lambda_q\Lambda}
+ (x,\kT,\DT),
+ \label{eq:quark-helicity-matrix}
+\end{equation}
+and the antiquark matrix
+\begin{equation}
+ \cM^{\bar q}_{\alpha'\alpha}
+ (x,\kT,\DT)
+ =
+ \cM^{\bar q}_{\lambda_{\bar q}'\Lambda';
+                  \lambda_{\bar q}\Lambda}
+ (x,\kT,\DT)
+ \label{eq:antiquark-helicity-matrix}
+\end{equation}
+uses direct positive-\(x\) antiquark slots.  The canonical basis ordering is
+stored in the object identity and is never inferred from matrix shape.
+
+The entries of \cref{eq:quark-helicity-matrix} are obtained by replacing the
+active kernel in \cref{eq:common-overlap} with the elementary quark-helicity
+matrix unit
+\begin{equation}
+ \cK^{\lambda_q'\lambda_q}_{j}
+ =|\lambda_q'\rangle\langle\lambda_q|
+ \otimes\Id_{\rm spectator}.
+\end{equation}
+The standard Dirac projections are then fixed linear combinations:
+\begin{align}
+ \cM^{[\gamma^+]}&=\cM^{++}+\cM^{--},\nonumber\\
+ \cM^{[\gamma^+\gamma_5]}&=\cM^{++}-\cM^{--},\nonumber\\
+ \cM^{[i\sigma^{R+}\gamma_5]}&=2\cM^{+-},\qquad
+ \cM^{[i\sigma^{L+}\gamma_5]}=2\cM^{-+},
+ \label{eq:quark-helicity-dirac-map}
+\end{align}
+up to the declared spinor and circular-basis convention.  The adapter carrying
+those factors is versioned and tested against explicit spinor bilinears.
+
+\begin{requirement}[Complete matrix export]
+\label{req:complete-quark-matrix}
+Every supported quark and antiquark result must export all sixteen complex
+entries of the \(4\times4\) joint matrix, including entries that vanish in the
+selected truncation.  A vanishing entry records its exact selection-rule or
+amplitude-content reason.
+\end{requirement}
+
+\subsection{Gluon matrices and transverse tensor}
+
+For an active gluon, one may use circular helicities
+\(\lambda_g=\pm1\) or transverse Cartesian indices \(i,j=1,2\).  H4 stores both
+representations through one invertible adapter:
+\begin{equation}
+ \cM^{g}_{\lambda_g'\Lambda';\lambda_g\Lambda}
+ \longleftrightarrow
+ W^{g,ij}_{\Lambda'\Lambda}.
+ \label{eq:gluon-circular-cartesian}
+\end{equation}
+The complete tensor has target-helicity shape \(2\times2\) and active-gluon
+transverse shape \(2\times2\).  It is decomposed only after evaluation:
+\begin{align}
+ W_U&=\delta_{T,ij}W^{ij},\label{eq:gluon-trace}\\
+ W_H&=i\epsilon_{T,ij}W^{ij},\label{eq:gluon-antisym}\\
+ W_L^{ij}&=W^{(ij)}-\frac12\delta_T^{ij}W^k_{\ k}.
+ \label{eq:gluon-st}
+\end{align}
+The reconstruction identity is
+\begin{equation}
+ W^{ij}
+ =\frac12\delta_T^{ij}W_U
+ -\frac{i}{2}\epsilon_T^{ij}W_H
+ +W_L^{ij}.
+ \label{eq:gluon-polarization-reconstruction}
+\end{equation}
+
+The two independent \(qqqg\) color-singlet outer multiplicities inherited from
+H2/H3 remain separate state labels.  They are not the \(f^{abc}\)- and
+\(d^{abc}\)-type gluonic-pole classes of a rescattering operator.  The former
+classify the hadron state coupling; the latter classify a future Wilson-line
+color contraction.  Conflating them is a type error.
+
+\begin{requirement}[One gluon tensor parent]
+\label{req:one-gluon-tensor-parent}
+Trace, helicity-antisymmetric, and symmetric-traceless gluon projections must
+reconstruct one common \(W^{ij}\).  Separate numerical parents for the three
+polarization sectors are inadmissible.
+\end{requirement}
+
+\subsection{Target-helicity phase convention}
+
+For both quarks and gluons, the target basis is ordered
+\begin{equation}
+ \{|+\tfrac12\rangle,|-\tfrac12\rangle\}.
+\end{equation}
+The state phase at each resolution is inherited from H3 state tracking: the
+largest common nonzero component is real and positive after transport from the
+coarser state.  At a degeneracy, the entire tracked subspace is parallel
+transported and the matrix is transformed covariantly.  Individual eigenvector
+phases are not independently reset at every transfer point.
+
+\begin{proposition}[Basis covariance]
+Let \(U_T\) and \(U_a\) be unitary changes of target and active-parton helicity
+basis.  Then
+\begin{equation}
+ \cM\mapsto
+ (U_a\otimes U_T)\cM(U_a\otimes U_T)^\dagger
+ \label{eq:matrix-basis-covariance}
+\end{equation}
+leaves every scalar extracted with the correspondingly transformed projector
+invariant.
+\end{proposition}
+
+\section{Complete quark and antiquark GTMD projector system}
+\label{sec:quark-projectors}
+
+\subsection{Generic leading-twist basis}
+
+At zero skewness and nonzero transverse transfer, the complete leading-twist
+quark basis for a spin-\(\tfrac12\) target contains
+\begin{equation}
+ \{F_{1,n}\}_{n=1}^{4},\qquad
+ \{G_{1,n}\}_{n=1}^{4},\qquad
+ \{H_{1,n}\}_{n=1}^{8},
+ \label{eq:quark-16-basis}
+\end{equation}
+within a declared Lorentz, spinor, and transverse-tensor convention
+\cite{Meissner2009}.  H4 treats these names as adapter coordinates on the
+microscopic matrix, not as sixteen independent model functions.
+
+A convenient reference parameterization is
+\begin{equation}
+ W^{[\gamma^+]}
+ =\frac{1}{2M}\bar u(p',\Lambda')\,\cF\,u(p,\Lambda),
+\end{equation}
+with
+\begin{equation}
+ \cF=
+ F_{1,1}
+ +\frac{i\sigma^{i+}k_T^i}{P^+}F_{1,2}
+ +\frac{i\sigma^{i+}\Delta_T^i}{P^+}F_{1,3}
+ +\frac{i\sigma^{ij}k_T^i\Delta_T^j}{M^2}F_{1,4}.
+ \label{eq:h4-F-basis}
+\end{equation}
+The axial sector is
+\begin{equation}
+ W^{[\gamma^+\gamma_5]}
+ =\frac{1}{2M}\bar u(p',\Lambda')\,\cG\,u(p,\Lambda),
+\end{equation}
+with
+\begin{equation}
+ \cG=
+ -\frac{i\epsilon_T^{ij}k_T^i\Delta_T^j}{M^2}G_{1,1}
+ +\frac{i\sigma^{i+}\gamma_5k_T^i}{P^+}G_{1,2}
+ +\frac{i\sigma^{i+}\gamma_5\Delta_T^i}{P^+}G_{1,3}
+ +i\sigma^{+-}\gamma_5G_{1,4}.
+ \label{eq:h4-G-basis}
+\end{equation}
+For the transverse tensor sector,
+\begin{equation}
+ W^{[i\sigma^{j+}\gamma_5]}
+ =\frac{1}{2M}\bar u(p',\Lambda')\,\cH^j\,u(p,\Lambda),
+\end{equation}
+where
+\begin{align}
+ \cH^j={}&
+ -\frac{i\epsilon_T^{ij}k_T^i}{M}H_{1,1}
+ -\frac{i\epsilon_T^{ij}\Delta_T^i}{M}H_{1,2}
+ +\frac{Mi\sigma^{j+}\gamma_5}{P^+}H_{1,3}
+ +\frac{k_T^ji\sigma^{i+}\gamma_5k_T^i}{MP^+}H_{1,4}
+ \nonumber\\
+ &+\frac{\Delta_T^ji\sigma^{i+}\gamma_5k_T^i}{MP^+}H_{1,5}
+ +\frac{\Delta_T^ji\sigma^{i+}\gamma_5\Delta_T^i}{MP^+}H_{1,6}
+ +\frac{k_T^ji\sigma^{+-}\gamma_5}{M}H_{1,7}
+ +\frac{\Delta_T^ji\sigma^{+-}\gamma_5}{M}H_{1,8}.
+ \label{eq:h4-H-basis}
+\end{align}
+All factors and phases belong to a versioned basis adapter and are verified by
+helicity-matrix reconstruction.
+
+For each Dirac sector \(J\), construct a set of basis matrices
+\begin{equation}
+ \cB_J(\kT,\DT)
+ =\{B_{J,A}(\kT,\DT)\}_{A=1}^{N_J},
+ \end{equation}
+where \(N_{\gamma^+}=4\), \(N_{\gamma^+\gamma_5}=4\), and
+\(N_{i\sigma^{i+}\gamma_5}=8\).  The matrices include the declared factors of
+\(i\), nucleon mass, \(k_R=k_x+ik_y\), \(\Delta_R=\Delta_x+i\Delta_y\), and
+the spinor normalization.  These factors are not reconstructed from a paper
+name at runtime.
+
+The Gram matrix and dual projectors are
+\begin{align}
+ G_{AB}^{(J)}(z)
+ &=\Tr\left[B_{J,A}^\dagger(z)B_{J,B}(z)\right],
+ \label{eq:gtmd-gram}\\
+ P_{J,A}(z)
+ &=\sum_B\left[G^{(J)}(z)^{-1}\right]_{AB}B_{J,B}^\dagger(z),
+ \label{eq:gtmd-dual-projector}
+\end{align}
+with \(z=(x,\kT,\DT)\) and inversion restricted to the identifiable subspace.
+The microscopic coefficient is
+\begin{equation}
+ X_{J,A}(z)
+ =\Tr\left[P_{J,A}(z)\cM_J(z)\right].
+ \label{eq:gtmd-project}
+\end{equation}
+
+\begin{theorem}[Projector reconstruction]
+\label{thm:projector-reconstruction}
+At a kinematic point where \(G^{(J)}\) has full rank,
+\begin{equation}
+ \cM_J(z)
+ =\sum_A X_{J,A}(z)B_{J,A}(z)
+ \label{eq:projector-reconstruct}
+\end{equation}
+if and only if the matrix lies in the declared leading-twist basis span.
+The reconstruction residual is a direct diagnostic of missing basis content,
+a convention mismatch, or a higher-twist/numerical contribution.
+\end{theorem}
+
+\subsection{Conditioning and degeneracy}
+
+At \(\DT=0\), \(\kT=0\), collinear configurations, or special relative
+azimuths, the generic sixteen-coordinate basis becomes rank deficient.  H4
+records
+\begin{equation}
+ \rank G^{(J)}(z),\qquad
+ \kappa(G^{(J)}(z)),\qquad
+ \sigma_{\min}^{\rm retained}(z),
+ \label{eq:gram-diagnostics}
+\end{equation}
+and switches to a predefined reduced basis when the smallest singular value
+falls below the declared conditioning threshold.
+
+\begin{requirement}[No pseudoinverse overclaim]
+\label{req:no-pseudoinverse-overclaim}
+A Moore--Penrose pseudoinverse may be used to reconstruct the identifiable
+matrix component, but its null-space coordinates must be reported as
+\texttt{UNIDENTIFIABLE\_AT\_THIS\_KINEMATIC\_POINT}.  It may not be used to
+publish all sixteen scalar GTMDs as if they were separately determined.
+\end{requirement}
+
+Kinematic rank loss is distinct from a dynamical zero.  The former means two
+basis tensors become indistinguishable; the latter means the state supplies no
+amplitude for an identifiable projector.
+
+\subsection{Antiquark projector and charge-conjugation adapter}
+
+The direct positive-\(x\) antiquark matrix is projected with the same geometric
+basis but with an explicit charge-conjugation adapter
+\begin{equation}
+ \mathfrak C_J=
+ \left(
+ J,\eta_J,\text{endpoint order},\text{spinor phase},
+ \bar3\text{ color action}
+ \right),
+ \label{eq:charge-conjugation-adapter}
+\end{equation}
+where \(\eta_J\) is the local-operator charge-conjugation signature.  This
+adapter controls the relative quark/antiquark signs in local moments.  It does
+not identify \(W_{\bar q}(x)\) with \(W_q(-x)\) inside the computational state.
+
+\subsection{Standard-basis adapters}
+
+The internal basis is versioned independently of literature notation.  A
+standard-basis adapter supplies a matrix
+\begin{equation}
+ \bm X_{\rm reference}
+ =\bm A_{\rm reference\leftarrow internal}\bm X_{\rm internal}
+ \label{eq:reference-adapter}
+\end{equation}
+with an inverse on the full-rank generic space.  Every adapter declares:
+\begin{itemize}
+\item light-front and spinor normalization;
+\item definitions of \(k_{R,L}\) and \(\Delta_{R,L}\);
+\item metric and epsilon conventions;
+\item mass factors and dimensions;
+\item Hermiticity and time-reversal phases;
+\item the reference equation and version.
+\end{itemize}
+An adapter is accepted only after random-coefficient round-trip tests and
+explicit helicity-amplitude comparisons.
+
+\section{Complete gluon tensor and helicity projector system}
+\label{sec:gluon-projectors}
+
+\subsection{Microscopic gluon operator space}
+
+At Wilson order zero, the active-gluon H4 parent is a color-singlet hadron
+matrix element of the linear field-strength operator supported by the H3
+\(qqqg\) sector.  It is not yet the complete nonlinear continuum field-strength
+operator.  The declared basis therefore records the field-strength
+completeness status
+\begin{equation}
+ \texttt{LINEAR\_ACTIVE\_GLUON\_H4}
+ \end{equation}
+and preserves unresolved nonlinear, constrained-field, and higher-Fock
+components as nonzero obligations.
+
+Let \(C_{g,A}^{ij;\Lambda'\Lambda}(\kT,\DT)\) denote the allowed tensor basis
+at the selected twist, parity, and Wilson order.  Define
+\begin{equation}
+ G^{g}_{AB}
+ =\sum_{i,j,\Lambda',\Lambda}
+ C_{g,A}^{ij;\Lambda'\Lambda *}
+ C_{g,B}^{ij;\Lambda'\Lambda}.
+ \label{eq:gluon-gram}
+\end{equation}
+The projectors follow from the inverse on the identifiable subspace, exactly as
+in \cref{eq:gtmd-dual-projector}.
+
+\begin{requirement}[Measured basis rank]
+\label{req:measured-gluon-rank}
+The number of independently extractable gluon coefficients is the numerical
+and symbolic rank of \cref{eq:gluon-gram} under the declared symmetries and
+kinematics.  It is not inferred from the number of names in an external table
+or from the shape of an output array.
+\end{requirement}
+
+\subsection{Polarization-first closure}
+
+The tensor is first decomposed by \cref{eq:gluon-trace,eq:gluon-antisym,eq:gluon-st}, and each component is then resolved in target helicity and
+transverse harmonics.  Equivalently, one may use the circular-helicity basis
+and transform afterward.  Both routes must agree:
+\begin{equation}
+ \Red_{\rm target}\circ\Red_{\rm gluon\ pol}[W]
+ =
+ \Red_{\rm gluon\ pol}\circ\Red_{\rm target}[W].
+ \label{eq:gluon-projector-commute}
+\end{equation}
+Failure of this finite-dimensional square signals an index-order, convention,
+or incomplete-basis defect.
+
+\subsection{State color multiplicity versus Wilson color class}
+
+The H4 state color label
+\begin{equation}
+ \alpha_{8}\in\{\rho,\lambda\}
+\end{equation}
+identifies the two ways the \(qqq\) octet couples with the active adjoint gluon
+to a hadron singlet.  A future Wilson calculation introduces a distinct
+three-adjoint operator contraction
+\begin{equation}
+ \cC\in\{f,d\}.
+\end{equation}
+The total future identity is therefore the ordered pair
+\begin{equation}
+ (\alpha_8,\cC),
+ \label{eq:color-two-layer-id}
+\end{equation}
+not a single two-valued label.  H4 has \(\alpha_8\) but no active \(\cC\),
+because Wilson order is zero.
+
+\begin{requirement}[No premature gluonic-pole label]
+\label{req:no-premature-fd}
+An H4 gluon GTMD may not be labeled \(f\)-type or \(d\)-type.  Those labels
+become defined only after an ordered two-link rescattering operator is attached
+in H5.
+\end{requirement}
+
+\section{Discrete symmetries and exact H4 null sectors}
+\label{sec:discrete-symmetry}
+
+\subsection{Hermiticity}
+
+For a Hermitian bilocal operator with the declared endpoint ordering,
+\begin{equation}
+ W_{\Lambda'\Lambda}^{a[J]}
+ (x,\kT,\DT)
+ =
+ \left[
+ W_{\Lambda\Lambda'}^{a[J]}
+ (x,\kT,-\DT)
+ \right]^*
+ \label{eq:h4-hermiticity}
+\end{equation}
+up to the operator-specific index transpose.  The test is applied to the full
+matrix before scalar projection and then independently to the extracted
+coefficients.
+
+\subsection{Light-front parity}
+
+A typed parity adapter transforms target and parton helicities, transverse
+momenta, spinor phases, and tensor indices together.  In schematic circular
+notation,
+\begin{equation}
+ (\lambda_a,\Lambda,k_R,\Delta_R)
+ \longmapsto
+ (-\lambda_a,-\Lambda,-k_L,-\Delta_L),
+ \label{eq:lf-parity}
+\end{equation}
+with convention-dependent phases stored in the adapter.  A scalar sign table
+without the helicity transformation is not an implementation of parity.
+
+\subsection{Transfer reversal}
+
+The authoritative recoil map obeys
+\begin{equation}
+ \cR_{-\Delta}
+ =\mathsf{Swap}_{\rm in,out}\circ\cR_{\Delta}.
+ \label{eq:recoil-transfer-reversal}
+\end{equation}
+This identity, combined with state complex conjugation and operator adjunction,
+is the numerical origin of \cref{eq:h4-hermiticity}.
+
+\subsection{Wilson-order-zero time reversal}
+
+H4 contains no staple rescattering.  Its operator link is the declared
+zeroth-order path identity, and the state Hamiltonian is real under the
+selected antiunitary convention apart from removable basis phases.  Therefore
+all genuine link-odd projections satisfy
+\begin{equation}
+ F_{\rm link\mbox{-}odd}^{\mathrm{H4}}(x,\kT,\DT)=0.
+ \label{eq:h4-link-odd-zero}
+\end{equation}
+This includes Sivers-, Boer--Mulders-, and gluonic-pole-type coefficients.
+The zero is a controlled truncation result, not a claim that the physical
+functions vanish.
+
+\begin{requirement}[No complex-state surrogate]
+\label{req:no-complex-state-surrogate}
+A complex basis phase, a complex variational tensor, or a finite numerical
+\(i\eps\) may not be interpreted as a naive-\(T\)-odd phase.  H4 link-odd
+outputs remain zero until the typed H5 Wilson/cut engine is attached.
+\end{requirement}
+
+\subsection{Selection-rule zero ledger}
+
+Every exact H4 zero carries a machine-readable cause selected from:
+\begin{equation}
+ \left\{
+ \begin{array}{l}
+ \texttt{SYMMETRY\_FORBIDDEN},
+ \texttt{MISSING\_OAM\_BLOCK},
+ \texttt{MISSING\_FOCK\_SECTOR},\\
+ \texttt{WILSON\_ORDER\_ZERO},
+ \texttt{KINEMATIC\_RANK\_LOSS},
+ \texttt{OPERATOR\_UNAVAILABLE}
+ \end{array}
+ \right\}.
+ \label{eq:zero-ledger}
+\end{equation}
+Only the first category is an exact all-model symmetry zero.  The remaining
+categories are conditional on the declared approximation.
+
+\section{Regulated reductions and matched commuting diagrams}
+\label{sec:reductions}
+
+H4 provides regulated overlap reductions.  It does not identify those
+reductions automatically with renormalized QCD distributions.  Let
+\begin{equation}
+ \cZ_{\LF\to\QCD}^{a,J}
+ \label{eq:h4-matching-placeholder}
+\end{equation}
+denote the future operator-basis matching map.  The architecture is
+\begin{equation}
+ \begin{tikzcd}[column sep=large,row sep=large]
+ W_{a/N}^{\LF,r}
+   \arrow[r,"\cZ_{\LF\to\QCD}"]
+   \arrow[d,"\Red_{\TMD}^{\reg}"']
+ &W_{a/N}^{\QCD}(\mu,\zeta)
+   \arrow[d,"\Red_{\TMD}^{\QCD}"]\\
+ F_{a/N}^{\LF,r}
+   \arrow[r,dashed,"\cZ_{\TMD}"]
+ &F_{a/N}^{\QCD}(\mu,\zeta).
+ \end{tikzcd}
+ \label{eq:matching-reduction-square}
+\end{equation}
+H4 validates the left vertical route and records the other arrows as
+requirements.
+
+\subsection{TMD limit}
+
+The regulated TMD matrix is
+\begin{equation}
+ \Phi_{a/N}^{\LF,r}(x,\kT)
+ =W_{a/N}^{\LF,r}(x,\kT,\DT=0).
+ \label{eq:h4-tmd-limit}
+\end{equation}
+No information about rapidity subtraction is inferred from the existence of
+this forward limit.
+
+\subsection{GPD limit}
+
+The regulated zero-skewness GPD matrix is
+\begin{equation}
+ H_{a/N}^{\LF,r}(x,0,t)
+ =\int_{\Omega_{k,r}}\dd^2\kT\,
+ W_{a/N}^{\LF,r}(x,\kT,\DT),
+ \qquad t=-\DT^2.
+ \label{eq:h4-gpd-limit}
+\end{equation}
+The finite basis and transverse regulator make this integral well defined.  A
+physical QCD GPD still requires the corresponding renormalized operator
+matching and local-limit checks.
+
+\subsection{PDF limit}
+
+Two regulated routes must agree:
+\begin{align}
+ f_{a/N}^{(1),\LF,r}(x)
+ &=\int\dd^2\kT\,
+ \Phi_{a/N}^{\LF,r}(x,\kT),
+ \label{eq:pdf-route-one}\\
+ f_{a/N}^{(2),\LF,r}(x)
+ &=H_{a/N}^{\LF,r}(x,0,0).
+ \label{eq:pdf-route-two}
+\end{align}
+Their difference
+\begin{equation}
+ \delta_{\PDF}^{a,r}(x)
+ =f_{a/N}^{(1),\LF,r}(x)-f_{a/N}^{(2),\LF,r}(x)
+ \label{eq:pdf-route-residual}
+\end{equation}
+is a mandatory closure residual.
+
+\subsection{Wigner transform}
+
+The partonic transverse Wigner distribution is
+\begin{equation}
+ \rho_{a/N}^{\LF,r}(x,\kT,\bD)
+ =\int\frac{\dd^2\DT}{(2\pi)^2}
+ e^{-i\bD\cdot\DT}
+ W_{a/N}^{\LF,r}(x,\kT,\DT).
+ \label{eq:h4-wigner-transform}
+\end{equation}
+The transform is performed componentwise on the full helicity matrix before
+named projections when possible.  This makes target-spin and active-parton
+interference traceable in phase space.
+
+\subsection{Rank-aware TMD impact transform}
+
+The independent TMD transform is
+\begin{equation}
+ \widetilde F^{(m)}(x,b_{\rm TMD})
+ =2\pi i^m
+ \int_0^\infty k_T\dd k_T\,
+ J_{|m|}(b_{\rm TMD}k_T)
+ N_m(k_T)F^{(m)}(x,k_T),
+ \label{eq:h4-rank-bessel}
+\end{equation}
+with its reference mass, extracted powers, and Fourier phase stored in the
+rank identity.  The Wigner coordinate \(\bD\) and TMD separation \(\bM\) are
+distinct typed variables even though both have inverse-momentum dimensions.
+
+\begin{requirement}[Reduction route closure]
+\label{req:reduction-route-closure}
+For every supported rank-zero species/operator channel, the TMD-to-PDF and
+GPD-to-PDF routes must agree within the independently estimated quadrature,
+finite-basis, and TTN errors.  A fitted route-normalization factor is
+forbidden.
+\end{requirement}
+
+\section{Local-current, axial, tensor, and energy--momentum closure}
+\label{sec:local-moments}
+
+The microscopic GTMD parent is accepted only if its local moments reproduce
+operators owned by the same H3 Hamiltonian identity.  This section fixes the
+operator-dependent quark/antiquark signs and the gluon momentum convention.
+
+\subsection{Vector current}
+
+For separate positive-\(x\) quark and antiquark GPDs,
+\begin{equation}
+ F_1^q(t)
+ =\int_0^1\dd x\,
+ \left[H^q(x,0,t)-H^{\bar q}(x,0,t)\right].
+ \label{eq:vector-moment}
+\end{equation}
+The flavor-weighted proton and neutron currents are
+\begin{equation}
+ F_1^N(t)
+ =\sum_q e_q F_1^{q/N}(t).
+ \label{eq:nucleon-vector-moment}
+\end{equation}
+At \(t=0\), these reproduce the H3 charge ledgers.  At nonzero transfer they
+are compared with the direct H3 vector-current calculation that was withheld
+from the state calibration where possible.
+
+\subsection{Axial current}
+
+The nonsinglet axial moment uses the charge-conjugation-even combination
+\begin{equation}
+ G_A^q(t)
+ =\int_0^1\dd x\,
+ \left[\widetilde H^q(x,0,t)+
+       \widetilde H^{\bar q}(x,0,t)\right].
+ \label{eq:axial-moment}
+\end{equation}
+It is compared to the direct axial current and to the finite-basis PCAC
+closure record from H3.  The GTMD route may not alter the induced pion-pole or
+pseudoscalar representation used by that record.
+
+\subsection{Tensor current status}
+
+For the local tensor operator, the positive-\(x\) convention gives
+\begin{equation}
+ g_T^q(t)
+ =\int_0^1\dd x\,
+ \left[H_T^q(x,0,t)-H_T^{\bar q}(x,0,t)\right]
+ \label{eq:tensor-moment}
+\end{equation}
+under the declared charge-conjugation signature.  H4 may test this route only
+if the H3 state bundle exports a Hamiltonian-consistent tensor current.  In its
+absence the moment is labeled \texttt{DIRECT\_CURRENT\_COMPARATOR\_MISSING},
+not normalized to a phenomenological tensor charge.
+
+\subsection{Energy--momentum tensor}
+
+For quarks and antiquarks,
+\begin{equation}
+ A_q(t)
+ =\int_0^1\dd x\,x
+ \left[H^q(x,0,t)+H^{\bar q}(x,0,t)\right],
+ \label{eq:quark-emt-moment}
+\end{equation}
+while with the project convention
+\begin{equation}
+ H^g(x,0,0)=xg(x),
+ \end{equation}
+the gluon contribution is
+\begin{equation}
+ A_g(t)
+ =\int_0^1\dd x\,H^g(x,0,t).
+ \label{eq:gluon-emt-moment}
+\end{equation}
+Using the quark Mellin power for the gluon route is a type error.
+
+The forward momentum closure is
+\begin{equation}
+ \sum_q A_q(0)+A_g(0)=1+\delta_{\rm mom}^{(r)}.
+ \label{eq:emt-momentum-closure}
+\end{equation}
+The finite-basis residual is compared with the direct H3 longitudinal-momentum
+ledger.
+
+\subsection{Moment-closure manifest}
+
+Every local comparison records
+\begin{equation}
+ \mathfrak m=
+ \left(
+ \begin{array}{l}
+ \text{operator identity},\text{GTMD moment},
+ \text{direct matrix element},\\
+ \text{charge-conjugation signature},
+ \text{quadrature error},\text{TTN error},\\
+ \text{resolution residual},
+ \text{matching status},
+ \text{difference}
+ \end{array}
+ \right).
+ \label{eq:moment-manifest}
+\end{equation}
+A moment is not accepted if the direct comparator uses a different Hamiltonian,
+current, state member, regulator, or phase convention.
+
+\section{Wigner phase space, orbital angular momentum, and spin--orbit closure}
+\label{sec:wigner-oam}
+
+\subsection{Canonical phase-space moment}
+
+The transverse phase space is \(T^*\mathbb R_T^2\) with coordinates
+\((\bD,\kT)\) and symplectic form
+\begin{equation}
+ \omega_T
+ =\dd b_{\Delta x}\wedge\dd k_x
+ +\dd b_{\Delta y}\wedge\dd k_y.
+ \label{eq:h4-symplectic-form}
+\end{equation}
+The rotation moment map is
+\begin{equation}
+ \mu_{L_z}(\bD,\kT)
+ =(\bD\times\kT)_z.
+ \label{eq:h4-moment-map}
+\end{equation}
+For the appropriate unpolarized-parton/longitudinal-target Wigner projection,
+\begin{equation}
+ L_z^a
+ =\int\dd x\,\dd^2\kT\,\dd^2\bD\,
+ (\bD\times\kT)_z
+ \rho_{LU}^a(x,\kT,\bD).
+ \label{eq:wigner-oam}
+\end{equation}
+The path and scheme identity of the operator remain attached to the result
+\cite{Lorce2011}.
+
+\subsection{Transfer-derivative route}
+
+Using
+\begin{equation}
+ b_{\Delta i}e^{-i\bD\cdot\DT}
+ =i\frac{\partial}{\partial\Delta_i}
+ e^{-i\bD\cdot\DT},
+\end{equation}
+\cref{eq:wigner-oam} is equivalent, under the declared boundary conditions,
+to a transfer derivative of the GTMD matrix at \(\DT=0\):
+\begin{equation}
+ L_z^a
+ =-i\epsilon_T^{ij}
+ \int\dd x\,\dd^2\kT\,
+ k_T^j
+ \left.
+ \frac{\partial}{\partial\Delta_T^i}
+ W_{LU}^a(x,\kT,\DT)
+ \right|_{\DT=0}.
+ \label{eq:derivative-oam}
+\end{equation}
+The derivative is evaluated by analytic basis derivatives, automatic
+differentiation, or symmetric finite differences with a convergence study.
+A one-sided derivative at a grid boundary is not accepted without an
+independent error estimate.
+
+\subsection{GTMD-coordinate adapters}
+
+In standard spin-\(\tfrac12\) GTMD conventions, canonical OAM and spin--orbit
+correlations are associated with particular combinations commonly denoted
+\(F_{1,4}\) and \(G_{1,1}\), subject to sign and normalization conventions
+\cite{Kanazawa2014}.  H4 defines typed adapters
+\begin{align}
+ L_z^q&=\cL_F[F_{1,4}^q],\label{eq:f14-adapter}\\
+ C_z^q&=\cL_G[G_{1,1}^q],
+ \label{eq:g11-adapter}
+\end{align}
+whose mass factors, signs, Fourier phases, and Wilson-path identities are
+stored explicitly.  These equations are validation identities, not license to
+replace the full matrix by one scalar coefficient.
+
+\subsection{Direct H3 comparison}
+
+The third route is the direct regulated canonical operator in the H3 state,
+\begin{equation}
+ L_{z,\rm direct}^{a,r}
+ =\langle\Psi_N^{(r)}|\widehat L_z^{a,r}|\Psi_N^{(r)}\rangle.
+ \label{eq:direct-oam}
+\end{equation}
+H4 requires closure among
+\begin{equation}
+ L_{z,\rm Wigner}^{a,r},\qquad
+ L_{z,\rm derivative}^{a,r},\qquad
+ L_{z,F_{1,4}}^{a,r},\qquad
+ L_{z,\rm direct}^{a,r},
+ \label{eq:oam-four-routes}
+\end{equation}
+for every route supported by the available operator basis.
+
+\begin{remark}[Canonical versus kinetic OAM]
+The H4 straight-link/zeroth-Wilson-order result is a regulated canonical
+phase-space quantity in the selected light-front representation.  Its relation
+to a kinetic Ji-type decomposition or a staple-link Jaffe--Manohar quantity
+requires the corresponding gauge-link, torque, and LF-to-QCD matching analysis.
+H4 does not identify these definitions.
+\end{remark}
+
+\subsection{Spin--orbit correlation}
+
+The analogous spin--orbit moment is
+\begin{equation}
+ C_z^a
+ =\int\dd x\,\dd^2\kT\,\dd^2\bD\,
+ (\bD\times\kT)_z
+ \rho_{UL}^a(x,\kT,\bD),
+ \label{eq:spin-orbit-wigner}
+\end{equation}
+where \(UL\) denotes unpolarized target and longitudinally polarized active
+parton in the project convention.  Its direct comparator is the appropriately
+regulated symmetrized spin--orbit operator in H3.
+
+\section{Positivity, nonforward bounds, and quasiprobability status}
+\label{sec:positivity}
+
+\subsection{Forward Gram positivity}
+
+At \(\DT=0\), Wilson order zero, and within the probability interpretation of
+the cut overlap, the joint matrix has a Gram form
+\begin{equation}
+ \Phi_{\alpha\beta}(x,\kT)
+ =\sum_X A_{\alpha X}(x,\kT)
+ A_{\beta X}(x,\kT)^*.
+ \label{eq:forward-gram}
+\end{equation}
+Therefore
+\begin{equation}
+ \Phi=\Phi^\dagger,\qquad \Phi\succeq0.
+ \label{eq:forward-psd}
+\end{equation}
+H4 checks the minimum eigenvalue, principal minors, trace, and reconstruction
+from the microscopic amplitudes.  Negative eigenvalues are not clipped.
+
+\subsection{Off-forward overlap bound}
+
+At \(\DT\ne0\), the matrix connects distinct momentum fibers and need not be
+positive semidefinite.  For a bounded active kernel,
+\begin{equation}
+ \abs{W_{\beta\alpha}(\DT)}^2
+ \leq
+ \norm{\cK_{\beta\alpha}}_{\rm op}^2
+ \norm{A_{\beta}^{\rm out}}^2
+ \norm{A_{\alpha}^{\rm in}}^2.
+ \label{eq:nonforward-cs-bound}
+\end{equation}
+The right-hand side uses the exact incoming and outgoing wave-function norms
+at the shifted fibers.  Imposing forward PSD at nonzero transfer is a test
+failure.
+
+\subsection{Wigner quasidistribution}
+
+The Wigner transform in \cref{eq:h4-wigner-transform} may be negative or
+complex in off-diagonal helicity channels.  Its required conditions are the
+appropriate Hermiticity, reality of physical projected moments, correct
+marginals, and controlled Fourier convergence.  Pointwise positivity is not a
+requirement.
+
+\begin{requirement}[Layer-correct positivity]
+\label{req:layer-correct-positivity}
+The implementation must identify whether a positivity check applies to a
+forward cut correlator, a reduced density matrix, an off-forward overlap, a
+renormalized scheme object, or a Wigner quasidistribution.  A test from one
+layer cannot be copied to another without a theorem or matching adapter.
+\end{requirement}
+
+\section{Convergence and the H4 error ledger}
+\label{sec:convergence}
+
+A small reconstruction residual at one resolution is not a microscopic
+prediction.  H4 separates the following convergence axes:
+\begin{equation}
+ \nu_{\rm H4}=
+ (K,N_{\max},b,\lambda,\cF,\chi,
+ N_x,N_k,N_\Delta,N_\phi,\text{projector conditioning},\text{derivative step}).
+ \label{eq:h4-convergence-axes}
+\end{equation}
+Here \(\chi\) is the TTN bond policy and \(\cF\) is the retained Fock content.
+
+\subsection{Exact versus TTN closure}
+
+For the full supported bond space,
+\begin{equation}
+ W_{\rm exact}^{a[J],r}
+ =W_{\rm TTN,full}^{a[J],r}
+ +\delta_{\rm TTN,full}^{a[J],r}.
+ \label{eq:exact-ttn-gtmd}
+\end{equation}
+The same comparison is required for helicity matrices, scalar GTMDs, local
+moments, and OAM derivatives.  For finite bond \(\chi\), errors are reported
+observable by observable; energy accuracy is not a proxy for GTMD accuracy.
+
+\subsection{Resolution and basis flow}
+
+The comparison map from resolution \(r\) to \(r'\) acts on states and operators
+before observables are compared.  The residual is
+\begin{equation}
+ \delta_A(r',r;z)
+ =\left\|
+ R_{r'\to r}
+ \left[W_A^{(r')}(z)\right]
+ -W_A^{(r)}(z)
+ \right\|.
+ \label{eq:h4-resolution-residual}
+\end{equation}
+Bare basis coefficients and Fock probabilities are diagnostics, not quantities
+that must agree point by point across regulator schemes.
+
+\subsection{Quadrature and projector errors}
+
+The numerical ledger keeps separate:
+\begin{align}
+ \delta_{\rm quad},\quad
+ \delta_{\Delta\mbox{-}grid},\quad
+ \delta_{\rm Fourier},\quad
+ \delta_{\rm derivative},\quad
+ \delta_{\rm Gram},\quad
+ \delta_{\rm reconstruction}.
+ \label{eq:h4-numerical-errors}
+\end{align}
+A large projector condition number cannot be hidden inside the quadrature
+error, and resolution variation cannot be called a statistical band.
+
+\subsection{Observable-sensitive convergence}
+
+The minimal release set includes convergence of:
+\begin{itemize}
+\item selected helicity-matrix entries;
+\item all identifiable quark/antiquark coefficients;
+\item each gluon polarization sector;
+\item vector, axial, and EMT moments;
+\item quark, antiquark, and gluon OAM ledgers;
+\item forward positivity eigenvalues;
+\item nonforward overlap-bound ratios;
+\item TMD/GPD/PDF route residuals.
+\end{itemize}
+At least one low-bond or low-resolution state must demonstrate that a small
+energy error can coexist with a significant GTMD, OAM, or helicity-matrix
+error.
+
+\section{Scoped replacement of the C3/C4 analytic parents}
+\label{sec:replacement}
+
+The analytic parents were essential architecture oracles.  They are not
+silently deleted when the microscopic parent becomes available.  Their new
+role is encoded in the provenance complex.
+
+\subsection{Replacement relations}
+
+The primary relations are
+\begin{equation}
+ \begin{array}{rcl}
+ \texttt{C3\_ANALYTIC\_COMMON\_PARENT}
+ &\xrightarrow{\texttt{BENCHMARKS}}&
+ \texttt{H4\_MICROSCOPIC\_COMMON\_PARENT},\\[1mm]
+ \texttt{C4\_ANALYTIC\_SEA\_GLUON\_PARENT}
+ &\xrightarrow{\texttt{BENCHMARKS}}&
+ \texttt{H4\_MICROSCOPIC\_COMMON\_PARENT},\\[1mm]
+ \texttt{H4\_MICROSCOPIC\_COMMON\_PARENT}
+ &\xrightarrow{\texttt{REPLACES\_WITHIN\_SCOPE}}&
+ \texttt{C3/C4\_ANALYTIC\_PARENTS}.
+ \end{array}
+ \label{eq:h4-replacement-relations}
+\end{equation}
+
+The replacement scope is the conjunction of:
+\begin{equation}
+ \left\{
+ \begin{array}{l}
+ \xi=0,\quad\text{Wilson order}=0,\\
+ a\in\{u,d,\bar u,\bar d,g\},\\
+ \text{supported H3 plan/member/resolution},\\
+ \text{supported operator and kinematic domain},\\
+ \text{passed H4 closure and convergence gates}.
+ \end{array}
+ \right.
+ \label{eq:h4-replacement-scope}
+\end{equation}
+Outside this scope, the analytic object may remain the only available oracle,
+but it is never promoted to the microscopic result.
+
+\subsection{No calibration to the analytic pilot}
+
+Gaussian widths, sector probabilities, spin amplitudes, and synthetic phases
+used by C3/C4 are not H4 calibration data.  The microscopic H3 parent may
+disagree numerically.  The comparison report classifies differences as:
+\begin{equation}
+ \Delta W
+ =\Delta W_{\rm state}
+ +\Delta W_{\rm regulator}
+ +\Delta W_{\rm operator}
+ +\Delta W_{\rm basis}
+ +\Delta W_{\rm numerical}.
+ \label{eq:pilot-difference}
+\end{equation}
+A disagreement is not repaired with a GTMD-specific coefficient.
+
+\subsection{Reversibility and production isolation}
+
+The original C3/C4 nodes, manifests, tests, and source hashes remain immutable.
+The H4 branch is disjoint from the accepted 216-route production root.  The
+replacement edge is active only in an H4 validation compilation.  Removing H4
+must restore the analytic benchmark path without changing production bytes.
+
+\begin{requirement}[No mixed parent]
+\label{req:no-mixed-parent}
+An analytic parent and the H4 microscopic parent may be compared but may not be
+added, averaged, spliced in kinematics, or used as mutual normalization within
+one state member.
+\end{requirement}
+
+\section{Assumption compiler and provenance two-complex}
+\label{sec:compiler}
+
+\subsection{H4 assumption bundles}
+
+An H4 \AssumptionBundle{} extends the H3 identity with:
+\begin{itemize}
+\item exact or TTN state representation and bond policy;
+\item transfer grid and frame convention;
+\item quark, antiquark, and gluon operator-basis adapters;
+\item quadrature and derivative policy;
+\item projector rank and conditioning thresholds;
+\item Wilson order fixed to zero;
+\item replacement-scope policy;
+\item convergence and readiness obligations.
+\end{itemize}
+
+The primary branches inherit the H3 plans, including the chiral interaction
+on/off choice.  Results from mutually exclusive branches are compared as
+complete predictions and are never added.
+
+\subsection{Prediction plan}
+
+The H4 \PredictionPlan{} contains the directed chain
+\begin{equation}
+\begin{aligned}
+ \StateBundle&\longrightarrow\MomentumFiber,
+ \\
+ \StateEvaluator&\longrightarrow\OverlapKernel,
+ \\
+ \HelicityMatrix&\longrightarrow\ProjectorManifest,
+ \\
+ \ParentBundle&\longrightarrow\MomentManifest
+ \longrightarrow\WignerManifest.
+\end{aligned}
+\end{equation}
+Every edge has typed source and target identities.  A missing readiness field
+produces a structured compilation failure.
+
+\subsection{Two-cells}
+
+The H4 \ProvComplex{} contains finite two-cells for:
+\begin{itemize}
+\item exact versus full-bond TTN representation;
+\item direct versus sequential PDF reduction;
+\item GTMD-moment versus direct-current routes;
+\item Wigner versus transfer-derivative OAM routes;
+\item microscopic versus analytic parent within the declared scope;
+\item explicit versus induced sector descriptions inherited from H2/H3.
+\end{itemize}
+A closed cycle without a declared equivalence, subtraction, or alternative
+relation is an audit failure.
+
+\section{Formal software interfaces}
+\label{sec:software}
+
+\begin{longtable}{L{0.27\textwidth}L{0.65\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\MomentumFiber & Incoming or outgoing hadron momentum fiber, helicity basis,
+normalization, regulator, and phase identity.\\
+\RecoilMap & Unique active/spectator zero-skewness transverse recoil map and
+transfer-reversal tests.\\
+\texttt{StateEvaluator} & Exact/TTN continuous momentum-space amplitudes, basis
+functions, derivatives, and representation error.\\
+\texttt{GTMDOverlapKernel} & Common diagonal H3 overlap with active-slot, sector, color,
+helicity, recoil, and quadrature identity.\\
+\texttt{HelicityMatrix} & Complete quark, antiquark, or gluon target--parton matrix
+before scalar projection.\\
+\texttt{CovariantBasis} & Versioned \(F\), \(G\), \(H\), or gluon tensor
+basis including phases, masses, ranks, and symmetry classes.\\
+\texttt{GramProjectorEngine} & Basis evaluation matrix, Gram rank,
+conditioning, dual projectors, reduced basis, and reconstruction.\\
+\texttt{ProjectorManifest} & Per-point projector rank, singular values, condition
+number, identifiable combinations, and residuals.\\
+\texttt{GTMDParentBundle} & Common microscopic quark, antiquark, and gluon matrices,
+projected coefficients, matching statuses, and member identity.\\
+\MomentManifest & TMD/GPD/PDF/current/EMT routes, charge-conjugation
+signatures, direct-operator comparison, and residuals.\\
+\texttt{WignerOAMManifest} & Transfer transform, derivative policy, OAM/spin--orbit
+routes, Fourier errors, and gauge-path status.\\
+\ConvergenceManifest & Basis, Fock, TTN, quadrature, transfer, projector, and
+operator convergence axes.\\
+\texttt{ReplacementManifest} & Scoped analytic-parent replacement and rollback
+certificate.\\
+\PredictionPlan & Assumption-conditioned executable graph and readiness
+gates.\\
+\ProvComplex & Equivalence, replacement, count-once, and alternative
+relations among result paths.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Readiness statuses}
+
+H4 may issue:
+\begin{verbatim}
+MICROSCOPIC_NONZERO_TRANSFER_PARENT_VALIDATED
+T_EVEN_PROJECTOR_CLOSURE_VALIDATED
+REGULATED_TMD_GPD_PDF_ROUTE_CLOSED
+LOCAL_CURRENT_EMT_MOMENT_CLOSED
+WIGNER_OAM_ROUTE_BENCHMARKED
+ANALYTIC_PARENT_REPLACED_WITHIN_SCOPE
+\end{verbatim}
+It may not issue:
+\begin{verbatim}
+PHYSICAL_GTMD
+PHYSICAL_TMD
+WILSON_READY
+NUCLEAR_MATCHING_READY
+LF_TO_QCD_MATCHING_READY
+EVOLUTION_READY
+PROCESS_READY
+INFERENCE_READY
+\end{verbatim}
+
+\section{Formal requirements}
+\label{sec:requirements}
+
+The implementation shall assign stable IDs to the following requirements.
+
+\begin{longtable}{L{0.13\textwidth}L{0.79\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V11.1 & Use distinct incoming and outgoing momentum fibers in the symmetric
+zero-skewness frame.\\
+V11.2 & Use the single authoritative active/spectator recoil map.\\
+V11.3 & Prove intrinsic closure, physical transfer, spectator preservation,
+unit Jacobian, forward identity, and transfer reversal.\\
+V11.4 & Evaluate the H3 state in continuous momentum coordinates from exact
+and TTN representations.\\
+V11.5 & Preserve state, member, regulator, assumption, phase, sector, color,
+permutation, helicity, and OAM identities.\\
+V11.6 & Use one common overlap kernel for quarks, antiquarks, and gluons.\\
+V11.7 & Select antiquarks from direct positive-\(x\) active slots.\\
+V11.8 & Keep off-diagonal Fock overlaps unavailable unless a named physical
+source is supplied.\\
+V11.9 & Store the complete quark target--parton helicity matrix before
+projection.\\
+V11.10 & Store the complete direct-antiquark helicity matrix and a typed
+charge-conjugation adapter.\\
+V11.11 & Implement the declared four \(F\), four \(G\), and eight \(H\)
+leading-twist quark GTMD covariants.\\
+V11.12 & Construct projectors from the basis Gram matrix.\\
+V11.13 & Report Gram rank, singular values, condition number, and null-space
+combinations at every kinematic point.\\
+V11.14 & Use a reduced identifiable basis at degenerate kinematics.\\
+V11.15 & Prohibit pseudoinverse-based claims of fully separated coefficients
+at rank-deficient points.\\
+V11.16 & Store the complete microscopic gluon transverse tensor and helicity
+matrix.\\
+V11.17 & Retain both \(qqqg\) color outer multiplicities through every gluon
+projection.\\
+V11.18 & Reconstruct trace, helicity-antisymmetric, and symmetric-traceless
+gluon sectors exactly.\\
+V11.19 & Determine the supported gluon covariant rank from the actual Gram
+matrix.\\
+V11.20 & Enforce exact Wilson-order-zero link-odd null tests.\\
+V11.21 & Test Hermiticity, light-front parity, transfer reversal, and T-even
+reality classes on matrices and coefficients.\\
+V11.22 & Expose TMD, GPD, and PDF reductions as views of one parent.\\
+V11.23 & Close direct and sequential PDF routes.\\
+V11.24 & Close vector-current moments with \(q-\bar q\).\\
+V11.25 & Close axial moments with \(q+\bar q\).\\
+V11.26 & Close tensor moments with the declared charge-conjugation signature.\\
+V11.27 & Close quark and gluon EMT moments with their distinct Mellin
+conventions.\\
+V11.28 & Compare every moment route with a Hamiltonian-consistent direct H3
+operator.\\
+V11.29 & Keep regulated reductions distinct from QCD-matched operators.\\
+V11.30 & Keep \(\bD\) and \(\bM\) as distinct coordinate types.\\
+V11.31 & Implement the partonic Wigner transform with an explicit finite-range
+and interpolation error.\\
+V11.32 & Compare Wigner, transfer-derivative, and direct-operator OAM routes.\\
+V11.33 & Treat \(F_{1,4}\) and \(G_{1,1}\) OAM/spin--orbit relations as
+versioned convention adapters.\\
+V11.34 & Enforce forward Gram positivity without clipping.\\
+V11.35 & Use a Cauchy--Schwarz overlap bound, not PSD, at nonzero transfer.\\
+V11.36 & Never impose pointwise positivity on Wigner functions.\\
+V11.37 & Report independent basis, Fock, TTN, quadrature, transfer, derivative,
+projector, current, regulator, and matching errors.\\
+V11.38 & Require observable-sensitive TTN bond convergence.\\
+V11.39 & Replace C3/C4 analytic parents only within a typed, reversible scope.\\
+V11.40 & Never tune the microscopic parent to an analytic pilot curve.\\
+V11.41 & Preserve the assumption-conditioned plan and provenance two-complex.\\
+V11.42 & Keep production, nuclear, matching, evolution, process, and inference
+roots fail-closed.\\
+\bottomrule
+\end{longtable}
+
+\section{Benchmark and falsification program}
+\label{sec:benchmarks}
+
+\subsection{H4-A: recoil and momentum fibers}
+
+Evaluate all H3 sectors at several nonzero transfers and verify exact
+intrinsic closure, spectator preservation, unit Jacobian, transfer reversal,
+and the forward identity.  Inject wrong active and spectator signs, a local
+species-specific recoil formula, and an incoming/outgoing fiber swap.
+
+\subsection{H4-B: exact and TTN momentum amplitudes}
+
+Compare exact basis sums and full-bond TTN amplitudes pointwise and in norm.
+Test phases, recoupling, color multiplicity, fermion signs, and derivatives.
+A low-bond member must show an observable-sensitive amplitude error even when
+its energy is accurate.
+
+\subsection{H4-C: scalar overlap oracle}
+
+Recover the C3 one- and two-body analytic limits by inserting the corresponding
+controlled states into the H4 evaluator.  This is an algebraic oracle, not a
+fit to the H3 state.
+
+\subsection{H4-D: quark sixteen-function closure}
+
+At generic \((\kT,\DT)\), generate a known linear combination of the sixteen
+covariants, recover every coefficient with the Gram projectors, and reconstruct
+the full helicity matrix.  Repeat with the microscopic H3 matrix and report
+conditioning.
+
+\subsection{H4-E: degeneracy and rank loss}
+
+Approach \(\DT=0\), \(\kT=0\), and collinear orientations.  Verify the
+expected Gram-rank reduction and the explicit null-space combinations.  An
+injected pseudoinverse-based full-coefficient claim must fail.
+
+\subsection{H4-F: direct antiquark closure}
+
+Activate \(\bar u\) and \(\bar d\) slots independently.  Verify positive
+support, pair-sector ancestry, anti-fundamental color action, direct helicity
+matrix reconstruction, and operator-dependent moment signs.  Negative-\(x\)
+copying must fail.
+
+\subsection{H4-G: gluon tensor and helicity closure}
+
+From one microscopic gluon parent, reconstruct trace,
+helicity-antisymmetric, and symmetric-traceless components in both color
+outer-multiplicity ancestries.  Test the full tensor and helicity conversions.
+
+\subsection{H4-H: discrete symmetries}
+
+Test Hermiticity at \(\pm\DT\), light-front parity, transfer reversal,
+reality classes, and exact T-odd nulls at Wilson order zero.  An array-only
+future/past label swap must not count as an antiunitary test.
+
+\subsection{H4-I: marginal closure}
+
+Compare GTMD-to-TMD, GTMD-to-GPD, direct PDF, and GPD-forward PDF routes for
+all supported species and several transfers.  Keep quadrature and projector
+residuals separate.
+
+\subsection{H4-J: local moments}
+
+Compare vector, axial, tensor, and EMT moments with direct H3 operators.
+Inject wrong quark--antiquark signs and the wrong gluon Mellin convention.
+
+\subsection{H4-K: Wigner and OAM closure}
+
+Compare the Wigner phase-space moment, transfer derivative, direct H3 OAM,
+and supported \(F_{1,4}\)/\(G_{1,1}\) adapters.  Vary transfer range,
+derivative method, and Fourier grid.
+
+\subsection{H4-L: positivity and overlap bounds}
+
+Test forward Gram positivity, nonforward Cauchy--Schwarz bounds, and permitted
+Wigner negativity.  Inject forward clipping, nonforward PSD enforcement, and
+pointwise Wigner positivity.
+
+\subsection{H4-M: multi-axis convergence}
+
+Run the parent and selected moments across at least three basis resolutions,
+multiple TTN bonds, and refined quadrature/transfer grids.  Demonstrate that
+convergence in energy does not substitute for GTMD or OAM convergence.
+
+\subsection{H4-N: analytic-parent replacement}
+
+Compile the scoped H4 replacement, verify that C3/C4 remain immutable, and
+show that unsupported species, operators, transfers, or failed gates do not
+silently inherit an analytic result.
+
+\subsection{H4-O: assumption branches}
+
+Execute the supported H3 plans as complete alternatives.  Compare their
+microscopic parents and reductions without adding them.  A branch-specific
+operator or state cannot be consumed by another branch.
+
+\section{Negative-test catalogue}
+\label{sec:negative}
+
+The implementation shall provide stable IDs for at least the following one
+hundred classes; grouping does not limit the final count.
+
+\begin{longtable}{L{0.18\textwidth}L{0.72\textwidth}}
+\toprule
+Group & Required injected failures\\
+\midrule
+\endhead
+Fibers and recoil & Wrong incoming/outgoing momentum, nonzero skewness,
+transfer sign error, active factor error, spectator factor error, local recoil
+reimplementation, broken intrinsic closure, nonunit Jacobian, spectator
+momentum change, transfer reversal failure.\\
+State evaluation & Wrong basis normalization, oscillator scale called TMD
+width, exact/TTN phase mismatch, lost color multiplicity, lost fermion sign,
+wrong center-of-mass factor, unsupported interpolation, derivative without
+phase alignment, full-bond mismatch.\\
+Overlap & Wrong active species, duplicate active slot, missing sector ancestry,
+off-diagonal sector without source, mismatched regulator, state member mixed,
+quark/gluon normalization copied, missing spectator match, Wilson order
+nonzero in the H4 central route.\\
+Quark basis & Missing or duplicated \(F\), \(G\), or \(H\) covariant, wrong
+mass or \(P^+\) factor, wrong \(i\) phase, wrong transverse epsilon,
+misordered helicity basis, convention adapter absent, reconstruction failure.\\
+Projectors & Wrong Gram metric, hidden rank loss, singular inverse accepted,
+pseudoinverse promoted to full identifiability, unreported null space, unstable
+condition number ignored, projector from another kinematic point reused,
+coefficient accepted without matrix reconstruction.\\
+Antiquarks & Negative-\(x\) copy, fundamental rather than anti-fundamental
+color action, wrong charge-conjugation signature, lost pair flavor, unsupported
+antiquark sector, quark moment sign copied to axial or tensor operator.\\
+Gluons & One color outer multiplicity dropped, trace normalization wrong,
+helicity-antisymmetric sign wrong, symmetric-traceless trace nonzero, gluon
+helicity conversion wrong, fixed scalar count assumed despite Gram rank,
+link-odd coefficient nonzero at Wilson order zero.\\
+Symmetries & Hermiticity failure, parity adapter omitted, transfer reversal
+implemented as array reversal only, T-even reality class broken, future/past
+labels used as a physical phase at order zero.\\
+Marginals & TMD/GPD/PDF routes use different parents, direct and sequential
+PDF mismatch hidden, collinear integral applied to wrong rank, current moment
+normalized independently, regulated result labeled matched.\\
+Moments & Vector \(q+\bar q\), axial \(q-\bar q\), tensor wrong sign, quark
+Mellin power used for gluon, direct operator from another Hamiltonian, PCAC or
+Ward residual repaired with a GTMD coefficient.\\
+Wigner/OAM & \(\bD\) confused with \(\bM\), Fourier sign wrong, finite range
+unreported, transfer derivative one-sided without study, OAM paths mixed,
+\(F_{1,4}\) sign hard-coded, Wigner negativity clipped.\\
+Positivity & Forward negative eigenvalue clipped, nonforward matrix required
+PSD, overlap kernel norm omitted, Wigner pointwise positivity imposed,
+finite-order matched positivity assumed without theorem.\\
+Convergence & Energy-only TTN acceptance, basis and quadrature errors merged,
+state vectors compared across regulators without map, required OAM sector
+truncated silently, derivative step fixed without study, projector error hidden.\\
+Replacement and provenance & Analytic parent overwritten, replacement scope absent,
+unsupported domain falls back to analytic number, analytic width fitted to
+microscopic state, branch alternatives added, equivalence cycle missing,
+rollback disabled.\\
+Downstream gates & Wilson, nuclear, LF-to-QCD, evolution, process, inference,
+or production promotion; physical GTMD/TMD label; accepted registry mutation;
+authoritative artifact or prior oracle changed.\\
+\bottomrule
+\end{longtable}
+
+\section{Staged H4 implementation program}
+\label{sec:stages}
+
+\subsection{H4.0: fibers and continuous state evaluator}
+
+Implement momentum fibers, reuse the recoil authority, evaluate exact and TTN
+H3 states at shifted coordinates, and pass H4-A--C before constructing any
+full GTMD basis.
+
+\subsection{H4.1: common microscopic overlap}
+
+Implement the common diagonal overlap kernel and active quark, antiquark, and
+gluon selectors.  Close normalization, support, color, permutation, and
+forward limits.
+
+\subsection{H4.2: helicity matrices and projectors}
+
+Build the quark/antiquark sixteen-covariant basis, gluon tensor/helicity basis,
+Gram projector engine, degeneracy handling, and symmetry tests.
+
+\subsection{H4.3: reductions and moments}
+
+Implement TMD/GPD/PDF views, current and EMT moments, Wigner transform, transfer
+derivatives, OAM/spin--orbit adapters, positivity, and nonforward bounds.
+
+\subsection{H4.4: convergence and scoped replacement}
+
+Run multi-resolution, multi-bond, and numerical convergence studies.  Activate
+the microscopic replacement of C3/C4 only after all declared gates pass.
+
+\subsection{H4.5: release and handoff}
+
+Generate the H4 state-parent bundle, projector and moment manifests,
+convergence report, replacement certificate, regression evidence, and the
+microscopic-parent handoff required by the future H5 Wilson package.
+
+\section{Risks and safeguards}
+\label{sec:risks}
+
+\begin{longtable}{L{0.24\textwidth}L{0.32\textwidth}L{0.36\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+False off-forward dynamics & Recoil or state phases are inserted locally and
+produce convention-dependent structure. & One typed recoil authority,
+momentum fibers, transfer reversal, and phase-aligned exact/TTN tests.\\
+Projector overclaim & Rank-deficient kinematics are inverted and all GTMDs are
+reported separately. & Gram-rank and null-space manifest; reduced basis;
+fail-closed identifiability.\\
+Tensor-network blindness & Low bond reproduces energy but erases the only OAM
+or helicity interference supporting a function. & Observable-sensitive bond
+convergence and required symmetry-sector retention.\\
+Analytic-parent anchoring & The microscopic state is tuned to reproduce the
+Gaussian pilot. & Pilots are algebraic oracles only; no pilot likelihood or
+GTMD-specific correction.\\
+Positivity misuse & PSD is imposed off forward or Wigner negativity is
+clipped. & Forward Gram theorem, nonforward overlap bounds, Wigner
+quasiprobability status.\\
+Moment normalization drift & Each form factor or moment is rescaled
+independently. & Hamiltonian-consistent direct operators and common state
+normalization.\\
+Gluon incompleteness & One color multiplicity or polarization sector is lost
+before projection. & Microscopic ancestry retained and tensor/helicity
+reconstruction tested.\\
+Matching overreach & Regulated overlaps are called physical GTMDs or TMDs. &
+Explicit unresolved UV, rapidity, soft, link-shortening, and evolution status.\\
+Premature Wilson phase & Future/past labels create a phase at Wilson order
+zero. & Exact link-odd null tests and inactive C5/C6 handoff.\\
+Numerical convergence laundering & One converged axis hides another. &
+Separate basis, Fock, TTN, quadrature, derivative, projector, and operator
+residuals.\\
+\bottomrule
+\end{longtable}
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+H4 is complete for its declared scope only if:
+\begin{enumerate}
+\item the exact C10/H3 baseline and all prior regression gates reproduce;
+\item incoming/outgoing fibers and the recoil map pass all exact identities;
+\item exact and full-bond TTN momentum-space states agree;
+\item one overlap kernel supplies all supported species;
+\item direct positive-\(x\) antiquarks remain distinct from quarks;
+\item complete quark and antiquark helicity matrices are retained;
+\item the generic quark sixteen-function basis reconstructs exactly;
+\item rank loss and null combinations are reported at degenerate kinematics;
+\item the gluon tensor and helicity representations reconstruct exactly;
+\item both microscopic gluon color multiplicities remain traceable;
+\item Hermiticity, parity, transfer reversal, and Wilson-order-zero nulls pass;
+\item TMD, GPD, PDF, current, and EMT reductions commute to tolerance;
+\item vector, axial, tensor, and gluon moment conventions are correct;
+\item Wigner, derivative, direct-OAM, and supported GTMD-adapter routes are
+consistent within separated errors;
+\item forward positivity and nonforward overlap bounds pass without clipping;
+\item basis, Fock, TTN, quadrature, transfer, derivative, and projector
+convergence are separately demonstrated;
+\item C3/C4 remain immutable and are replaced only within a certified scope;
+\item no microscopic coefficient is fitted to an analytic parent output;
+\item every result has a content-addressed assumption and member identity;
+\item all new negative injections are detected with stable diagnostics;
+\item production registry, provenance, composition, and authoritative
+artifacts remain byte-identical;
+\item Wilson, nuclear, matching, evolution, process, and inference roots remain
+fail-closed;
+\item all schemas, manifests, source hashes, and handoff notes are complete.
+\end{enumerate}
+
+\section{Recommended decision and H5 handoff}
+\label{sec:decision}
+
+The adopted H4 object is a
+\begin{quote}
+\emph{regulated, zero-skewness, Wilson-order-zero microscopic quark,
+antiquark, and gluon GTMD helicity-matrix bundle generated from one H3
+Hamiltonian eigenstate, with Gram-certified T-even projections, commuting
+marginals and local moments, Wigner/OAM closure, observable-sensitive TTN
+convergence, and a scoped replacement of analytic overlap pilots.}
+\end{quote}
+
+A successful H4 package supplies the required input for:
+\begin{quote}
+\textbf{H5: microscopic Wilson dynamics on the H4 parent,}
+including physical spectral support, quark and antiquark link-odd helicity
+matrices, distinct Sivers and Boer--Mulders projections, independent active-
+gluon \(f/d\) channels, soft/rapidity accounting, and Wilson-order/Fock-order
+compatibility.
+\end{quote}
+H5 must not begin by assigning phases to the scalar H4 coefficients.  It must
+act on the common matrix parent and use the same microscopic state, gauge
+couplings, color multiplicities, and OAM blocks.
+
+\appendix
+
+\section{Compact mathematical dictionary}
+
+\begin{tabularx}{\textwidth}{L{0.30\textwidth}Y}
+\toprule
+Physical concept & Mathematical/software object\\
+\midrule
+Incoming/outgoing hadron states & Separate \MomentumFiber{} objects\\
+Zero-skewness transfer & Versioned \RecoilMap{}\\
+Exact or TTN wave function & \StateEvaluator{}\\
+Common partonic matrix element & \OverlapKernel{}\\
+Target--parton spin information & \HelicityMatrix{}\\
+Named GTMD basis & \texttt{CovariantBasis}\\
+Identifiability & Gram rank and null space\\
+Named coefficient extraction & Dual Gram projectors\\
+Quark--antiquark signs & Operator charge-conjugation signature\\
+Gluon polarization & Trace, antisymmetric, symmetric-traceless tensors\\
+TMD/GPD/PDF/current views & Typed \(\Red\) maps\\
+Partonic phase space & \(\rho_W(x,\kT,\bD)\)\\
+OAM & Wigner moment/transfer derivative/direct operator\\
+Forward positivity & Gram positive-semidefinite matrix\\
+Nonforward constraint & Cauchy--Schwarz overlap bound\\
+Analytic-to-microscopic transition & \ReplacementManifest{}\\
+Conditional calculation & \AssumptionBundle{} and \PredictionPlan{}\\
+Composition audit & \ProvComplex{}\\
+\bottomrule
+\end{tabularx}
+
+\section{Microscopic parent schema}
+
+\begin{verbatim}
+{
+  "parent_bundle_id": "...",
+  "state_bundle_id": "...",
+  "assumption_bundle_id": "...",
+  "resolution_id": "...",
+  "member_id": "...",
+  "wilson_order": 0,
+  "skewness": 0.0,
+  "incoming_fiber_id": "...",
+  "outgoing_fiber_id": "...",
+  "recoil_map_id": "...",
+  "state_representation": "EXACT | TTN",
+  "bond_dimension": "...",
+  "species": ["u", "d", "ubar", "dbar", "g"],
+  "operator_ids": ["..."],
+  "helicity_matrix_assets": {"...": "..."},
+  "projector_manifest_ids": ["..."],
+  "marginal_assets": {"TMD": "...", "GPD": "...", "PDF": "..."},
+  "moment_manifest_id": "...",
+  "wigner_oam_manifest_id": "...",
+  "convergence_manifest_id": "...",
+  "matching_status": [
+    "LINK_SHORTENING_REQUIRED",
+    "UV_MATCHING_REQUIRED",
+    "RAPIDITY_SOFT_MATCHING_REQUIRED",
+    "NO_EVOLUTION_APPLIED",
+    "NO_PROCESS_MAP_APPLIED"
+  ],
+  "readiness": "MICROSCOPIC_NONZERO_TRANSFER_PARENT_VALIDATED"
+}
+\end{verbatim}
+
+\section{Projector manifest schema}
+
+\begin{verbatim}
+{
+  "projector_manifest_id": "...",
+  "basis_id": "QUARK_FGH_V1 | GLUON_COVARIANT_V1",
+  "species": "...",
+  "kinematics": {"x": 0.0, "kT": [0.0, 0.0], "DeltaT": [0.0, 0.0]},
+  "helicity_basis_id": "...",
+  "gram_rank": 0,
+  "basis_dimension": 0,
+  "singular_values": [0.0],
+  "condition_number": 0.0,
+  "rank_tolerance": 0.0,
+  "identifiable_coefficients": ["..."],
+  "null_combinations": ["..."],
+  "reconstruction_residual": 0.0,
+  "coefficient_covariance_numerical": [[0.0]],
+  "status": "FULL_RANK | REDUCED_BASIS | UNAVAILABLE"
+}
+\end{verbatim}
+
+\section{Moment and Wigner/OAM schemas}
+
+\begin{verbatim}
+{
+  "moment_manifest_id": "...",
+  "parent_bundle_id": "...",
+  "operator_id": "VECTOR | AXIAL | TENSOR | EMT_QUARK | EMT_GLUON",
+  "charge_conjugation_signature": "MINUS | PLUS | NOT_APPLICABLE",
+  "direct_operator_result": "...",
+  "gtmd_gpd_moment_result": "...",
+  "direct_integral_result": "...",
+  "quadrature_residual": 0.0,
+  "projector_residual": 0.0,
+  "state_representation_residual": 0.0,
+  "matching_status": "REGULATED_ANALYTICALLY_UNMATCHED"
+}
+\end{verbatim}
+
+\begin{verbatim}
+{
+  "wigner_oam_manifest_id": "...",
+  "parent_bundle_id": "...",
+  "species": "...",
+  "bDelta_grid_id": "...",
+  "fourier_convention_id": "...",
+  "phase_space_result": "...",
+  "transfer_derivative_result": "...",
+  "direct_oam_result": "...",
+  "F14_adapter_result": "...",
+  "G11_adapter_result": "...",
+  "transfer_range_residual": 0.0,
+  "derivative_step_residual": 0.0,
+  "fourier_residual": 0.0,
+  "gauge_path_status": "STRAIGHT_OR_ORDER_ZERO_REGULATED"
+}
+\end{verbatim}
+
+\section{Replacement and convergence schemas}
+
+\begin{verbatim}
+{
+  "replacement_manifest_id": "...",
+  "microscopic_parent_id": "...",
+  "analytic_parent_ids": ["C3:...", "C4:..."],
+  "scope": {
+    "species": ["..."],
+    "operators": ["..."],
+    "xi": 0.0,
+    "wilson_order": 0,
+    "kinematic_domain_id": "...",
+    "assumption_plan_id": "..."
+  },
+  "required_gate_ids": ["..."],
+  "unsupported_scope": ["..."],
+  "rollback_rule": "FAIL_CLOSED_UNAVAILABLE",
+  "analytic_oracles_immutable": true
+}
+\end{verbatim}
+
+\begin{verbatim}
+{
+  "convergence_manifest_id": "...",
+  "parent_bundle_id": "...",
+  "basis_tower": ["..."],
+  "fock_content": ["QQQ", "QQQG", "QQQUUBAR", "QQQDDBAR"],
+  "bond_dimensions": [1, 2, 4],
+  "quadrature_levels": ["..."],
+  "transfer_grids": ["..."],
+  "derivative_steps": [0.0],
+  "projector_tolerances": [0.0],
+  "observable_residuals": {"...": 0.0},
+  "accepted_domains": {"...": "..."},
+  "unresolved_axes": ["UV_MATCHING", "RAPIDITY_SOFT", "CONTINUUM"]
+}
+\end{verbatim}
+
+\small
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev. Mod. Phys. \textbf{21}, 392 (1949).
+
+\bibitem{BrodskyPauliPinsky1998}
+S.~J.~Brodsky, H.-C.~Pauli, and S.~S.~Pinsky,
+``Quantum chromodynamics and other field theories on the light cone,''
+Phys. Rept. \textbf{301}, 299 (1998),
+arXiv:hep-ph/9705477.
+
+\bibitem{Vary2010}
+J.~P.~Vary et al.,
+``Hamiltonian light-front field theory in a basis function approach,''
+Phys. Rev. C \textbf{81}, 035205 (2010),
+arXiv:0905.1411.
+
+\bibitem{Mondal2025}
+C.~Mondal et al.,
+``Basis light-front quantization: Advancing a first principles approach for
+the nucleon,''
+arXiv:2503.21372 (2025).
+
+\bibitem{BrodskyDiehlHwang2001}
+S.~J.~Brodsky, M.~Diehl, and D.-S.~Hwang,
+``Light-cone wavefunction representation of deeply virtual Compton
+scattering,''
+Nucl. Phys. B \textbf{596}, 99 (2001),
+arXiv:hep-ph/0009254.
+
+\bibitem{Diehl2003}
+M.~Diehl,
+``Generalized parton distributions,''
+Phys. Rept. \textbf{388}, 41 (2003),
+arXiv:hep-ph/0307382.
+
+\bibitem{Meissner2009}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-1/2 hadron,''
+JHEP \textbf{08}, 056 (2009),
+arXiv:0906.5323.
+
+\bibitem{PasquiniLorce2013}
+B.~Pasquini and C.~Lorc\'e,
+``The partonic structure of the nucleon from generalized transverse
+momentum-dependent parton distributions,''
+Phys. Rev. D \textbf{88}, 034020 (2013),
+arXiv:1304.1479.
+
+\bibitem{LorcePasquini2013}
+C.~Lorc\'e and B.~Pasquini,
+``Structure analysis of the generalized correlator of quark and gluon for a
+spin-1/2 target,''
+JHEP \textbf{09}, 138 (2013),
+arXiv:1307.4497.
+
+\bibitem{Lorce2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys. Rev. D \textbf{84}, 014015 (2011),
+arXiv:1106.0139.
+
+\bibitem{LorcePasquini2016}
+C.~Lorc\'e and B.~Pasquini,
+``Multipole decomposition of the nucleon transverse phase space,''
+Phys. Rev. D \textbf{93}, 034040 (2016),
+arXiv:1512.06744.
+
+\bibitem{Kanazawa2014}
+K.~Kanazawa, C.~Lorc\'e, A.~Metz, B.~Pasquini, and M.~Schlegel,
+``Twist-2 generalized transverse-momentum dependent parton distributions and
+the spin/orbital structure of the nucleon,''
+Phys. Rev. D \textbf{90}, 014028 (2014),
+arXiv:1403.5226.
+
+\bibitem{Echevarria2016}
+M.~G.~Echevarria, A.~Idilbi, K.~Kanazawa, C.~Lorc\'e, A.~Metz,
+B.~Pasquini, and M.~Schlegel,
+``Proper definition and evolution of generalized transverse momentum
+distributions,''
+Phys. Lett. B \textbf{759}, 336 (2016),
+arXiv:1602.06953.
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{Pobylitsa2002}
+P.~V.~Pobylitsa,
+``Positivity bounds on generalized parton distributions in impact parameter
+representation,''
+Phys. Rev. D \textbf{66}, 094002 (2002),
+arXiv:hep-ph/0204337.
+
+\bibitem{Cotogno2017}
+S.~Cotogno, T.~van Daal, and P.~J.~Mulders,
+``Positivity bounds on gluon TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{11}, 185 (2017),
+arXiv:1709.07827.
+
+\bibitem{Singh2010}
+S.~Singh, R.~N.~C.~Pfeifer, and G.~Vidal,
+``Tensor network decompositions in the presence of a global symmetry,''
+Phys. Rev. A \textbf{82}, 050301(R) (2010),
+arXiv:0907.2994.
+
+\bibitem{Corboz2010}
+P.~Corboz, G.~Evenbly, F.~Verstraete, and G.~Vidal,
+``Simulation of interacting fermions with entanglement renormalization,''
+Phys. Rev. A \textbf{81}, 010303(R) (2010),
+arXiv:0904.4151.
+
+\bibitem{Feshbach1958}
+H.~Feshbach,
+``Unified theory of nuclear reactions,''
+Ann. Phys. \textbf{5}, 357 (1958),
+and Ann. Phys. \textbf{19}, 287 (1962).
+
+\bibitem{Marinho2008}
+J.~A.~O.~Marinho, T.~Frederico, E.~Pace, G.~Salm\`e, and P.~U.~Sauer,
+``Light-front Ward--Takahashi identity for two-fermion systems,''
+Phys. Rev. D \textbf{77}, 116010 (2008),
+arXiv:0805.0707.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,52 @@
+{
+  "benchmarks": {
+    "C6-A": {
+      "antiunitary_mapping_failures": 0,
+      "ordered_pair_count": 4,
+      "unique_pair_count": 4
+    },
+    "C6-B": {
+      "d_norm_residual": 1.7763568394002505e-15,
+      "f_dot_d": 0.0,
+      "f_norm_residual": 0.0,
+      "orthogonal_injection_residual": 1.0,
+      "reconstruction_residual": 2.340043593158424e-15
+    },
+    "C6-C": {
+      "epsilon_physical": false,
+      "link_even_residual": 0.0,
+      "link_odd_magnitude": 0.24758361321797068,
+      "zero_coupling": 0.0,
+      "zero_cut": 0.0,
+      "zero_oam": 0.0
+    },
+    "C6-D": {
+      "common_parent_count": 1,
+      "d_reconstruction_residual": 0.0,
+      "f_reconstruction_residual": 0.0,
+      "projected_view_count": 6
+    },
+    "C6-E": {
+      "duplicate_derivative_magnitude": 0.7071067811865475,
+      "missing_derivative_magnitude": 0.7071067811865475,
+      "missing_plus_duplicate_residual": 0.0,
+      "rapidity_derivative": 0.0
+    },
+    "C6-F": {
+      "boundary_route": "EXECUTABLE",
+      "joint_route": "NOT_IMPLEMENTED",
+      "mutual_exclusion": "PASS_FAIL_CLOSED"
+    },
+    "C6-G": {
+      "color_singlet_residual": 5.551115123125783e-17,
+      "general_two_complex_complete": false,
+      "provenance_two_cells": 4,
+      "ward_residuals": {
+        "D_TYPE": 0.0,
+        "F_TYPE": 0.0
+      }
+    }
+  },
+  "schema_version": "1.0.0",
+  "scientific_status": "VALIDATION_ONLY"
+}

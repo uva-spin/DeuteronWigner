@@ -1,0 +1,76 @@
+{
+  "authority_record": {
+    "normalization_closed": true,
+    "operator_closed": true,
+    "response_values_closed": 0,
+    "root": "c76693ec72370aee3e6b5f627bcacfd219b18b983de11882ea5b6b3c8256c88a",
+    "rows": [
+      {
+        "K": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "Q0_Abel": "C266 Q0; pair fixed r then r->1-",
+        "boundary_link_holonomy": "caller-bound",
+        "derivative": "S_b1,1=d B1_i/d c_1|reference",
+        "derivative_value": null,
+        "direction": "I2_density_projector",
+        "functional": "B1_i[c]=P_b1 delta_T W[J_em,J_em; Psi_c,W_1]",
+        "packet": "C266-W1",
+        "unavailable_not_zero": true
+      },
+      {
+        "K": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "Q0_Abel": "C266 Q0; pair fixed r then r->1-",
+        "boundary_link_holonomy": "caller-bound",
+        "derivative": "S_b1,2=d B1_i/d c_2|reference",
+        "derivative_value": null,
+        "direction": "derivative_density",
+        "functional": "B1_i[c]=P_b1 delta_T W[J_em,J_em; Psi_c,W_2]",
+        "packet": "C266-W2",
+        "unavailable_not_zero": true
+      },
+      {
+        "K": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "Q0_Abel": "C266 Q0; pair fixed r then r->1-",
+        "boundary_link_holonomy": "caller-bound",
+        "derivative": "S_b1,3=d B1_i/d c_3|reference",
+        "derivative_value": null,
+        "direction": "CM_ground",
+        "functional": "B1_i[c]=P_b1 delta_T W[J_em,J_em; Psi_c,W_3]",
+        "packet": "C266-W3",
+        "unavailable_not_zero": true
+      },
+      {
+        "K": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "Q0_Abel": "C266 Q0; pair fixed r then r->1-",
+        "boundary_link_holonomy": "caller-bound",
+        "derivative": "S_b1,4=d B1_i/d c_4|reference",
+        "derivative_value": null,
+        "direction": "triplet_projected",
+        "functional": "B1_i[c]=P_b1 delta_T W[J_em,J_em; Psi_c,W_4]",
+        "packet": "C266-W4",
+        "unavailable_not_zero": true
+      }
+    ]
+  },
+  "package_root": "7a55d193904b3c19d7c29d61d0abcce421801b4e6852349af2aa571d69d07cbe",
+  "physical": false,
+  "plan": "C117B1ADAPTER1-B",
+  "schema": "C271-PACKET_ADAPTER-MANIFEST-V1",
+  "status": "C271_B1_OPERATOR_NORMALIZATION_ADAPTER_READY_C117_SENSITIVITY_ROW_UNEVALUATED",
+  "validation": "BOUND"
+}

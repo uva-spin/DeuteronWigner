@@ -1,0 +1,122 @@
+{
+  "schema": "C211-ROUTE-EVALUATION-MANIFEST-V1",
+  "artifact": "route_evaluation_manifest",
+  "package_root": "4ce56a14bed7afd1309d1b1960373245f6cff5fe3965092225876bd116a89b92",
+  "status": "C211_C210_AUTHENTICATED_NONPHYSICAL_MOMQ_FIXTURES_EVALUATED_ENCLOSED_ROUTE_PARITY_READY",
+  "plan": "MOMQEVAL1-A",
+  "physical": false,
+  "exact_finite_point": false,
+  "continuum_value": false,
+  "resolution_average": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C211-EVAL-K9-inverse-Gram",
+        "resolution": "K9",
+        "route": "inverse-Gram",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K9-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K9-dual-functional",
+        "resolution": "K9",
+        "route": "dual-functional",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K9-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K9-channel-reordered",
+        "resolution": "K9",
+        "route": "channel-reordered",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K9-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K11-inverse-Gram",
+        "resolution": "K11",
+        "route": "inverse-Gram",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K11-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K11-dual-functional",
+        "resolution": "K11",
+        "route": "dual-functional",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K11-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K11-channel-reordered",
+        "resolution": "K11",
+        "route": "channel-reordered",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K11-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K13-inverse-Gram",
+        "resolution": "K13",
+        "route": "inverse-Gram",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K13-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K13-dual-functional",
+        "resolution": "K13",
+        "route": "dual-functional",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K13-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      },
+      {
+        "record_id": "C211-EVAL-K13-channel-reordered",
+        "resolution": "K13",
+        "route": "channel-reordered",
+        "six_channels": "enclosed symbolic coefficients",
+        "selected_channel": 1,
+        "residual_enclosure": "C211-K13-TOTAL-BOUND",
+        "guarded": true,
+        "physical": false,
+        "continuum_value": false
+      }
+    ],
+    "count": 9,
+    "root": "351ac10cc84fa794bcedc1efc850e6f8369ea894007373129bb24425b4bac733"
+  }
+}

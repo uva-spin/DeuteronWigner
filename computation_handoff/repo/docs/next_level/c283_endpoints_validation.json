@@ -1,0 +1,28 @@
+{
+  "authority_record": {
+    "identity": false,
+    "root": "3414764f0006a81230efbe4ebfb3ebcf1005905d41ae0c527d233248ab15a85a",
+    "rows": [
+      {
+        "endpoint": "RI_SMOM",
+        "gauge": "general covariant xi; Landau xi=0 specialization",
+        "pole": "Feynman i0",
+        "source": "arXiv:0901.2599v2",
+        "state": "continuum symmetric nonexceptional off-shell nonsinglet"
+      },
+      {
+        "boundary": "P0/Q0, residual transverse link, APBC/PBC and holonomy retained",
+        "endpoint": "C43",
+        "gauge": "A^+=0 light-front",
+        "pole": "antisymmetric/PV inverse partial-plus on Q0",
+        "state": "finite-cell/HO off-shell colored state"
+      }
+    ]
+  },
+  "package_root": "15ec3b901fd3b75256de52cb21fa4295486391c0d269b2debd6a956a03005504",
+  "physical": false,
+  "plan": "RIMASSGAUGEADAPTER1-C",
+  "schema": "C283-ENDPOINTS-VALIDATION-V1",
+  "status": "C283_COVARIANT_TO_C43_MASS_ADAPTER_STRUCTURAL_PROGRAM_READY_LIGHT_FRONT_LOOP_COEFFICIENT_MISSING",
+  "validation": "PASS"
+}

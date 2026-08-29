@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "classes": [
+      "GENERIC",
+      "CENTRAL",
+      "WEYL_WALL"
+    ],
+    "complete_instances": 0,
+    "required": [
+      "ensemble_id",
+      "boundary_action_id",
+      "action_parameters",
+      "resolution",
+      "sector_classes",
+      "sector_weights",
+      "orbit_stabilizer_jacobian",
+      "absolute_normalization",
+      "global_frame_quotient",
+      "fundamental_BC",
+      "adjoint_BC",
+      "cross_resolution_covariance",
+      "volume_interpretation",
+      "source",
+      "no_defaults",
+      "physical"
+    ],
+    "resolutions": [
+      "K9",
+      "K11",
+      "K13"
+    ],
+    "root": "c132111237caad47c8bcf3b78f159eaffc4255233f133b653f5f2bff82f7f7ca",
+    "schema": "PROJECT_C290_MASS_PHYSICAL_BOUNDARY_ENSEMBLE_V1",
+    "uniform_default": false,
+    "unit_volume_default": false,
+    "weights_sum": "EXACT_ONE_PER_RESOLUTION"
+  },
+  "package_root": "6fb74af9c73a76e40b4b9e3ae10fdb87328b2a737c2e0d45d42e40fffe4ccb9f",
+  "physical": false,
+  "plan": "RIMASSBOUNDARYENSEMBLE1-B",
+  "schema": "C290-ENSEMBLE_SCHEMA-MANIFEST-V1",
+  "status": "C290_PHYSICAL_BOUNDARY_ENSEMBLE_SCHEMA_READY_BOUNDARY_ACTION_PARAMETER_RECORD_MISSING",
+  "validation": "BOUND"
+}

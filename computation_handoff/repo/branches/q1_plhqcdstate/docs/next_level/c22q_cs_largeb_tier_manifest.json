@@ -1,0 +1,26 @@
+{
+  "physical_input": {
+    "reason": "JOINT_QUARK_GLUON_CS_AND_LARGEB_COVARIANCE_BUNDLE_UNAVAILABLE",
+    "status": "NOT_QUALIFIED"
+  },
+  "schema_version": "1.0.0",
+  "source": {
+    "reason": "EXACT_SOURCE_BOUNDARY_AND_COVARIANCE_PLAN_INCOMPLETE",
+    "status": "NOT_QUALIFIED"
+  },
+  "validation": {
+    "domain": {
+      "Q_GeV": [
+        1.6,
+        100.0
+      ],
+      "b_GeV_inverse": [
+        0.02,
+        6.0
+      ]
+    },
+    "physical": false,
+    "status": "SYNTHETIC_MODEL_QUALIFIED",
+    "uncertainty_separate": true
+  }
+}

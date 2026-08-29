@@ -1,0 +1,1 @@
+"# C45 boundary\n\nC45 supplies one-particle finite-projection ingredients only. C46 must derive and project the C43 action term by term; it must not treat the color-free local kernel, overlaps, or source-mode library as a q-to-qg interaction matrix. The open-color module is not a physical colored finite-volume state.\n"

@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "14-opcode safe grammar",
+    "no eval/callback/pickle/dynamic import/network",
+    "field/operator AST absence is fail-closed",
+    "source roots bound"
+  ],
+  "references": [],
+  "root": "b538f146b90fb330e93828e97304553871f1765e19e0d79a38cf40e2a5b3251a",
+  "schema": "C188-VALIDATION-V1",
+  "status": "PASS"
+}

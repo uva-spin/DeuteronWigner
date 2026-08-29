@@ -1,0 +1,47 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "dependency_audit_manifest",
+  "authority_record": {
+    "count": 4,
+    "parameterization_incomplete": 3,
+    "ready": 1,
+    "root": "23b71c1c518405f7370662fbe9ec11a18f280e41a62da9463dd511707f64e41e",
+    "rows": [
+      {
+        "factor": "longitudinal",
+        "inputs": "mode fractions only",
+        "retained_dependency": false,
+        "status": "READY_C243"
+      },
+      {
+        "factor": "ordered_color",
+        "inputs": "c_out,a_out,c_in,a_in and ordered SU3 generators",
+        "retained_dependency": false,
+        "status": "FORMULA_SOURCE_READY_PARAMETERIZED_API_INCOMPLETE"
+      },
+      {
+        "factor": "four_HO",
+        "inputs": "four (n,m) labels and b_HO",
+        "retained_dependency": "public wrapper obtains b_HO from retained resolution",
+        "status": "EXACT_INTERNAL_FORMULA_READY_PARAMETERIZED_API_INCOMPLETE"
+      },
+      {
+        "factor": "spin_polarization",
+        "inputs": "four modes,K_prime,b_HO,helicities,C45 phases",
+        "retained_dependency": "public wrapper obtains K,b_HO from retained resolution",
+        "status": "PARAMETERIZED_API_INCOMPLETE"
+      }
+    ]
+  },
+  "factors_audited": 4,
+  "full_kernel": false,
+  "package_root": "85f6fe94ef4a8f5a96f55635fe159e1ebd5e2662fb05116ec1623e5748cec7b1",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CONTACTKERNEL1-D",
+  "schema": "C244-DEPENDENCY-AUDIT-MANIFEST-V1",
+  "status": "C244_CONTACT_FACTOR_DEPENDENCY_AND_PARAMETERIZATION_AUDIT_READY_CALLER_KPRIME_BHO_KERNEL_INCOMPLETE"
+}

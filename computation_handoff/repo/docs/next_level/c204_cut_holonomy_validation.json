@@ -1,0 +1,80 @@
+{
+  "schema": "C204-CUT-HOLONOMY-VALIDATION-V1",
+  "artifact": "cut_holonomy_validation",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 cut_holonomy_validation is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-CUT-HOLONOMY-REMAINDER-V1",
+    "rows": [
+      {
+        "record_id": "C204-HOLO-DIS_FUTURE",
+        "boundary_class": "DIS_FUTURE",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "cut_side": "plus",
+        "conjugation": "explicit C183 covariance",
+        "local_identity": "closed",
+        "global_zero_mode": "UNAVAILABLE_NOT_ZERO",
+        "holonomy_invariant_assumed": false,
+        "global_volume_absorbed": false,
+        "physical": false
+      },
+      {
+        "record_id": "C204-HOLO-DY_PAST",
+        "boundary_class": "DY_PAST",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "cut_side": "minus",
+        "conjugation": "explicit C183 covariance",
+        "local_identity": "closed",
+        "global_zero_mode": "UNAVAILABLE_NOT_ZERO",
+        "holonomy_invariant_assumed": false,
+        "global_volume_absorbed": false,
+        "physical": false
+      },
+      {
+        "record_id": "C204-HOLO-PV",
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "cut_side": "transported",
+        "conjugation": "explicit C183 covariance",
+        "local_identity": "closed",
+        "global_zero_mode": "UNAVAILABLE_NOT_ZERO",
+        "holonomy_invariant_assumed": false,
+        "global_volume_absorbed": false,
+        "physical": false
+      },
+      {
+        "record_id": "C204-HOLO-CUT_SHIFT",
+        "boundary_class": "CUT_SHIFT",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "cut_side": "transported",
+        "conjugation": "explicit C183 covariance",
+        "local_identity": "closed",
+        "global_zero_mode": "UNAVAILABLE_NOT_ZERO",
+        "holonomy_invariant_assumed": false,
+        "global_volume_absorbed": false,
+        "physical": false
+      }
+    ],
+    "count": 4,
+    "root": "e839108caf84e392e5d7a608f80ea73ac08e29b44d61112ee986347d0b952fe4"
+  }
+}

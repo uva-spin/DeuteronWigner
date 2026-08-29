@@ -1,0 +1,48 @@
+{
+  "distinct_retained": true,
+  "equivalent_counted_once": true,
+  "expected_weight": 0.78,
+  "ledger": {
+    "active_weight": 0.78,
+    "entries": [
+      {
+        "cut": {
+          "enabled": true,
+          "kind": "EIKONAL",
+          "physical_support_id": "C12:SUPPORT:COMMON",
+          "source_denominator_id": "C12:POLE",
+          "spectral_weight": 0.61,
+          "stable_id": "C12:CUT:EIKONAL"
+        },
+        "equivalent_to": null,
+        "relation": "DISTINCT"
+      },
+      {
+        "cut": {
+          "enabled": true,
+          "kind": "LF_ENERGY",
+          "physical_support_id": "C12:SUPPORT:COMMON",
+          "source_denominator_id": "C12:RESOLVENT",
+          "spectral_weight": 0.61,
+          "stable_id": "C12:CUT:LF_RESOLVENT"
+        },
+        "equivalent_to": "C12:CUT:EIKONAL",
+        "relation": "EQUIVALENT_COUNT_ONCE"
+      },
+      {
+        "cut": {
+          "enabled": true,
+          "kind": "LF_ENERGY",
+          "physical_support_id": "C12:SUPPORT:DISTINCT",
+          "source_denominator_id": "C12:DENOM",
+          "spectral_weight": 0.17,
+          "stable_id": "C12:CUT:DISTINCT"
+        },
+        "equivalent_to": null,
+        "relation": "DISTINCT"
+      }
+    ]
+  },
+  "residual": 0.0,
+  "schema_version": "1.0.0"
+}

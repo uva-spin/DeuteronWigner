@@ -1,0 +1,39 @@
+{
+  "package_root": "43331896f3c5d5698431f5a9bb4acb19930c6617681aa15cc783148e1492a918",
+  "physical": false,
+  "plan": "RIMASSC43JMYMASTEREVAL1-C",
+  "record": {
+    "count": 5,
+    "executable": false,
+    "root": "a780e318a234de79333655ced538246e0942a268f52d846bb96a5f6768ae93e2",
+    "rows": [
+      {
+        "C368": "symbolic family only",
+        "object": "master indices A,B,C,r,s per graph term",
+        "required": true
+      },
+      {
+        "C368": "dimension-shift statement only",
+        "object": "tensor numerator to scalar-master coefficients",
+        "required": true
+      },
+      {
+        "C368": "not bound term by term",
+        "object": "coupling/color/tree prefactors and signs",
+        "required": true
+      },
+      {
+        "C368": "support bound; coefficient absent",
+        "object": "endpoint distribution normalization",
+        "required": true
+      },
+      {
+        "C368": "named but not explicit",
+        "object": "soft real/virtual measurement kernel",
+        "required": true
+      }
+    ]
+  },
+  "status": "C369_MASTER_EVALUATION_FAIL_CLOSED_TERM_TO_MASTER_INSTANTIATION_REQUIRED",
+  "validation": "BOUND"
+}

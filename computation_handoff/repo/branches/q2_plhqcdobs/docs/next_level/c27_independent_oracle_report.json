@@ -1,0 +1,37 @@
+{
+  "exact_msht_content_oracle": true,
+  "oracles": [
+    {
+      "kind": "DIRECT_FORTRAN_FORMULA_TRANSLATION",
+      "small_b_residual": 0.0,
+      "stable_id": "C27.ORACLE.NP",
+      "status": "PASS"
+    },
+    {
+      "Q": 5.0,
+      "kind": "INDEPENDENT_LHAPDF_EXACT_MEMBER",
+      "member": 599,
+      "stable_id": "C27.ORACLE.LHAPDF.MSHT",
+      "status": "PASS",
+      "x": 0.1,
+      "xfx_u": 0.6512449203728881,
+      "xfx_ubar": 0.09956951957618794
+    },
+    {
+      "kind": "INDEPENDENT_NUMPY_ENSEMBLE_COVARIANCE",
+      "members": 642,
+      "stable_id": "C27.ORACLE.STATISTICS",
+      "status": "PASS",
+      "symmetry_residual": 0.0
+    },
+    {
+      "kind": "INDEPENDENT_PROCESS_REINITIALIZATION",
+      "members": 20,
+      "residual": 0.0,
+      "stable_id": "C27.ORACLE.RESTART",
+      "status": "PASS"
+    }
+  ],
+  "passing": 4,
+  "schema_version": "1.0.0"
+}

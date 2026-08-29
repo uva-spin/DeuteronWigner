@@ -1,0 +1,90 @@
+{
+  "claimed_continuum_result": false,
+  "frozen_before_one_loop": true,
+  "nested_by_resolution_and_support": true,
+  "required_axes": [
+    "UV",
+    "IR",
+    "rapidity_window",
+    "finite_volume",
+    "transverse_truncation",
+    "zero_mode",
+    "endpoint",
+    "quadrature"
+  ],
+  "resolutions": [
+    {
+      "L_perp_GeV_inverse": 8.0,
+      "N_omega": 4,
+      "N_perp": 5,
+      "N_y": 6,
+      "Y_max": 3.0,
+      "adjoint_colors": 8,
+      "basis_family": "LOG_ENERGY_RAPIDITY_TRANSVERSE_ORTHONORMAL_CELLS",
+      "fixed_total_K": false,
+      "hilbert_dimension": 3841,
+      "implicit_mode_collection_sha256": "77b59602d62ae4bbf65728114d17432aa1e88bf42740f9ec4235f52ab1e066ac",
+      "momentum_cells": 240,
+      "nesting_rank": 1,
+      "omega_max_GeV": 4.0,
+      "omega_min_GeV": 0.01,
+      "one_gluon_states": 3840,
+      "polarizations": 2,
+      "rapidity_regions": [
+        "n",
+        "nbar"
+      ],
+      "resolution_id": "C33.RES.1",
+      "rho_0": 0.001
+    },
+    {
+      "L_perp_GeV_inverse": 16.0,
+      "N_omega": 8,
+      "N_perp": 10,
+      "N_y": 12,
+      "Y_max": 6.0,
+      "adjoint_colors": 8,
+      "basis_family": "LOG_ENERGY_RAPIDITY_TRANSVERSE_ORTHONORMAL_CELLS",
+      "fixed_total_K": false,
+      "hilbert_dimension": 30721,
+      "implicit_mode_collection_sha256": "92522a7d0e61d2e353795f082954d5f8ed7fb09ccad939a2b162e3b823ba4c2d",
+      "momentum_cells": 1920,
+      "nesting_rank": 2,
+      "omega_max_GeV": 8.0,
+      "omega_min_GeV": 0.005,
+      "one_gluon_states": 30720,
+      "polarizations": 2,
+      "rapidity_regions": [
+        "n",
+        "nbar"
+      ],
+      "resolution_id": "C33.RES.2",
+      "rho_0": 0.0005
+    },
+    {
+      "L_perp_GeV_inverse": 24.0,
+      "N_omega": 12,
+      "N_perp": 15,
+      "N_y": 18,
+      "Y_max": 9.0,
+      "adjoint_colors": 8,
+      "basis_family": "LOG_ENERGY_RAPIDITY_TRANSVERSE_ORTHONORMAL_CELLS",
+      "fixed_total_K": false,
+      "hilbert_dimension": 103681,
+      "implicit_mode_collection_sha256": "c696630eb6d49fada0bbedc27d3d0edc619450fafd32108af1499ac3d089bc05",
+      "momentum_cells": 6480,
+      "nesting_rank": 3,
+      "omega_max_GeV": 12.0,
+      "omega_min_GeV": 0.0033333333333333335,
+      "one_gluon_states": 103680,
+      "polarizations": 2,
+      "rapidity_regions": [
+        "n",
+        "nbar"
+      ],
+      "resolution_id": "C33.RES.3",
+      "rho_0": 0.0003333333333333333
+    }
+  ],
+  "schema_version": "1.0.0"
+}

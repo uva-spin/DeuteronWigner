@@ -1,0 +1,67 @@
+{
+  "package_root": "c8083cbd458818db7282e97137fc6fea989bca8bcd7f44431d7946f6e17c197b",
+  "physical": false,
+  "plan": "RIMASSC43SIDISMATCH1-C",
+  "record": {
+    "bound_count": 2,
+    "free_count": 6,
+    "root": "9bc45546a4d580d9d42cf19127d8cdf59fe819c2bd3d8c550c17851103d07f0b",
+    "rows": [
+      {
+        "bound": true,
+        "coordinate": "Q_GeV",
+        "kind": "MEASURED_BIN",
+        "not_equivalent_to": [
+          "mu_GeV",
+          "sqrt_zeta_GeV",
+          "1/L_GeV"
+        ],
+        "source": "C344 C28 points"
+      },
+      {
+        "bound": false,
+        "coordinate": "mu_GeV",
+        "domain": "positive",
+        "kind": "RENORMALIZATION_CHOICE"
+      },
+      {
+        "bound": false,
+        "coordinate": "zeta_GeV2",
+        "domain": "positive",
+        "kind": "RAPIDITY_SCALE_CHOICE"
+      },
+      {
+        "bound": false,
+        "coordinate": "v2_and_rapidity_parameter",
+        "domain": "v2<0; limit only after renormalization",
+        "kind": "JMY_REGULATOR_PATH"
+      },
+      {
+        "bound": false,
+        "coordinate": "L_GeVinv",
+        "domain": "positive sequence",
+        "kind": "C43_LONGITUDINAL_REGULATOR"
+      },
+      {
+        "bound": false,
+        "coordinate": "K",
+        "domain": "integer sequence to infinity",
+        "kind": "C43_LONGITUDINAL_RESOLUTION"
+      },
+      {
+        "bound": false,
+        "coordinate": "Nmax_bHO",
+        "domain": "independent axis sequence",
+        "kind": "C43_TRANSVERSE_REGULATOR"
+      },
+      {
+        "bound": true,
+        "coordinate": "zero_mode_sector",
+        "kind": "C43_CONSTRAINT_OWNER",
+        "value": "C319 P0 domain exclusion plus dynamical holdout"
+      }
+    ]
+  },
+  "status": "C345_SIDIS_C43_MATCHING_MAP_TYPED_SCHEME_AND_VOLUME_SELECTION_AUTHORITY_MISSING",
+  "validation": "BOUND"
+}

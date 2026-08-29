@@ -1,0 +1,21 @@
+{
+  "all_raw_values_and_metadata_may_be_poisoned": true,
+  "runtime": {
+    "after": "c7c38b530b99a3fcd61d75cb96294bc977fa4a71e94434b548bb540342fa72c1",
+    "before": "c7c38b530b99a3fcd61d75cb96294bc977fa4a71e94434b548bb540342fa72c1",
+    "historical_component_metadata_read": false,
+    "pass": true
+  },
+  "static": {
+    "forbidden": [
+      "canonical_kernel",
+      "tuple_semantics_records",
+      "raw_tuple_semantics_summary",
+      "vertex1"
+    ],
+    "found": [],
+    "guard": "AST_COMPONENT_EVALUATOR_RAW_VALUE_GUARD",
+    "pass": true
+  },
+  "status": "PASS"
+}

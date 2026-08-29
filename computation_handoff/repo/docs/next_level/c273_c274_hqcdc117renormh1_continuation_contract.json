@@ -1,0 +1,12 @@
+{
+  "schema":"C273-C274-HQCDC117RENORMH1-CONTINUATION-CONTRACT-V1",
+  "from_package":"C273/HQCDC117PHYSSTATE1",
+  "from_status":"C273_PHYSICAL_STATE_BLOCKED_BY_UNASSEMBLED_RENORMALIZED_HAMILTONIAN_FAMILY",
+  "from_plan":"C117PHYSSTATE1-C",
+  "from_package_root":"86e675df46233e9c19d9dc4f305c62d64104097feb7e471c71632548481a69b5",
+  "completed_object":"Hamiltonian ancestry and no-self-calibration audit plus exact conditional state/reduced-resolvent schema",
+  "next_job":"C274/HQCDC117RENORMH1",
+  "next_frontier":{"object_id":"C117-RENORMALIZED-HAMILTONIAN-FAMILY-V1","exact_missing_object":"assemble the complete Hermitian K9/K11/K13 renormalized Hamiltonian family over explicit unresolved C117 coordinates with all non-C117 physical slots and provenance bound"},
+  "required_schema":"C274-C117-RENORMALIZED-HAMILTONIAN-FAMILY-V1",
+  "constraints":{"K9_K11_K13_required":true,"all_non_C117_slots_audited":true,"C117_coordinates_explicit":true,"Hermiticity_and_count_once_required":true,"diagnostic_fixture_promotion":false,"finite_C117_coefficients_selected":false,"C166_graph_mutation":false,"Q0_Q1_Q2_mutation":false,"push":false}
+}

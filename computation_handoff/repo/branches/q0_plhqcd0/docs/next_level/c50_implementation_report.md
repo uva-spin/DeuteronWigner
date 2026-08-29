@@ -1,0 +1,3 @@
+# C50/VSRC implementation report
+
+C50 starts at `c940136ab9038d9bda91db21650c292a27927506` and reaches `C50_CANONICAL_VERTEX_SOURCE_CONVENTION_READY`. It hash-locks the three specified Abelian comparison sources, derives the C43/C45 finite-cell color-stripped canonical P-minus kernel, proves the C43 `2 P+` invariant-mass conversion, and supplies individual C45/C47 mode evaluation without assembling a vertex matrix. The historical BLFQ omitted factor of two is detected as a required negative control. All 3,618 C47 raw tuples remain diagnostic-only. Next: **C51/VERTEX2 — assemble the exhaustive physical color-triplet vertex only from the C50 contract**.

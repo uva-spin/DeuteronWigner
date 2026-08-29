@@ -1,0 +1,343 @@
+{
+  "all_detected": true,
+  "count": 56,
+  "injections": [
+    {
+      "description": "assumption ID collision",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.01",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "current Hamiltonian mismatch",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.02",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "frozen confinement flow",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.03",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "oscillator/Hamiltonian scale alias",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.04",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Hamiltonian/TMD rapidity alias",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.05",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing CM policy",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.06",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "non-Hermitian confinement",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.07",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "color nonsinglet spin term",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.08",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Jz violation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.09",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "broken permutation sign",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.10",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "duplicate basis state",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.11",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "TMD-specific mass parameter",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.12",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "transfer-specific charge factor",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.13",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "independent neutron refit",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.14",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "eigenvalue-only tracking",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.15",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing comparison map",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.16",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "silent phase change",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.17",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing principal angles",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.18",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing solver residual",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.19",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "cross-hash exact/Krylov",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.20",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "untyped TTN index",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.21",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "clipped forbidden block",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.22",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "inexact full-bond reconstruction",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.23",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "subvariational TTN energy",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.24",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonmonotone bond energy",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.25",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "SVD mislabeled optimization",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.26",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "cross-plan TTN current",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.27",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonunitary recoupling",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.28",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing discarded weight",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.29",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "fitted low-rank OAM repair",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.30",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "mixed confinement branches",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.31",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "qqqg plus induced replacement",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.32",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing overlap subtraction",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.33",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "omitted effects set zero",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.34",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "single-tower continuum claim",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.35",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "valence sea claim",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.36",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "valence gluon claim",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.37",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "premature GTMD readiness",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.38",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "premature Wilson readiness",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.39",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "premature nuclear readiness",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.40",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "premature LF-QCD readiness",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.41",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "premature inference readiness",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.42",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "production registry mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.43",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "production provenance mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.44",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "authoritative artifact mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.45",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C5/C6 manifest mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.46",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "normative source mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.47",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C7 tolerance mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.48",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "post-fit holdout mutation",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.49",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "observable-matched parameter count",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.50",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "component-specific defect fit",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.51",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "counterterm called physical LEC",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.52",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "zero branch omitted",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.53",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing truncation discrepancy",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.54",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nondeterministic plan",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.55",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "bundle missing identities",
+      "diagnostic": "STRUCTURED_FAIL_CLOSED",
+      "stable_id": "C8.INJECT.56",
+      "status": "PASS_DETECTED"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

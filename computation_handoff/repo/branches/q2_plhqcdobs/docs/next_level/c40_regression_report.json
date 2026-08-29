@@ -1,0 +1,15 @@
+{
+  "fault_families": [
+    "basis vectors/tables/Grams",
+    "Hamiltonians and matrix-free actions",
+    "vertex/color/adjoint",
+    "constrained and Ward terms",
+    "spacelike Wilson components",
+    "counterterm system",
+    "measurements",
+    "refinement and runtime hashes"
+  ],
+  "focused_fault_count": 96,
+  "status": "PASS",
+  "tests": "PYTHONPATH=src python3 -m pytest -q tests/test_c40_m0b_basis.py tests/test_c40_m0b_operators.py tests/test_c40_m0b_distributions.py tests/test_c40_m0b_readiness.py"
+}

@@ -1,0 +1,62 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "source_locators_manifest",
+  "authority_record": {
+    "all_hash_verified": true,
+    "count": 5,
+    "generic_architecture_only": true,
+    "root": "0c2615ec12137f1d2bbe8a575cf13bc01dde5261a1b8937c59b4af619055aaa5",
+    "rows": [
+      {
+        "C117_numeric_entries": false,
+        "archive_sha256": "1e5b98f00e06db0c5266503a516b013164ba7718f59d75b10a488f5986618bee",
+        "arxiv_id": "hep-lat/9411010",
+        "authority": "projected off-shell NPR condition",
+        "locator": "eq:zdef, eq:proj, eq:lam",
+        "tex_file": "9411010.tex"
+      },
+      {
+        "C117_numeric_entries": false,
+        "archive_sha256": "5df6fc89bed523f8bc34587e998e8aae114bb53ccdb9d233ffe36d954aaf48c3",
+        "arxiv_id": "0901.2599",
+        "authority": "symmetric nonexceptional point",
+        "locator": "lines 215-240; fig:mom",
+        "tex_file": "RenConst_v2.tex"
+      },
+      {
+        "C117_numeric_entries": false,
+        "archive_sha256": "ff93a11400f3d86208ae52c36a27a37ca40d8fbf0a4ad48dd4e085a14be46e49",
+        "arxiv_id": "1104.4948",
+        "authority": "mixing, conversion, evanescent subtraction, RI conditions",
+        "locator": "eqn:genren, eq:green, eqn:genconv, eq:co, eqn:defsubQE, eqn:rischemeA",
+        "tex_file": "ds1.tex"
+      },
+      {
+        "C117_numeric_entries": false,
+        "archive_sha256": "7611a5dd3915afb368b701ce8a69ac38651c358d1ba0c93a1cc8526c5bc08c87",
+        "arxiv_id": "1109.1223",
+        "authority": "continuum step-scaling matrix",
+        "locator": "eq:ssm",
+        "tex_file": "paper.tex"
+      },
+      {
+        "C117_numeric_entries": false,
+        "archive_sha256": "33db6cd6153b64ab637bddce27cc728d4f9fc27107c9a1316820dfff24f9fde0",
+        "arxiv_id": "hep-lat/9902030",
+        "authority": "projected mixing-matrix solution and Ward comparison",
+        "locator": "eq:orthm, eq:lhat, eq:dmat23, eq:rcpvoz2",
+        "tex_file": "z4fnp.tex"
+      }
+    ]
+  },
+  "package_root": "b8326f78014113be619c70f2c6f8a8174d55c80b11892a4cd9ef2b41b762b4b2",
+  "physical": false,
+  "plan": "C117CONTTARGET1-B",
+  "schema": "C261-SOURCE_LOCATORS-MANIFEST-V1",
+  "status": "C261_PROJECT_C117_RI_SMOM_V1_EXACT_SYMBOLIC_CONVERSION_PROGRAM_READY_LOOP_EVALUATION_REMAINS",
+  "validation": "BOUND"
+}

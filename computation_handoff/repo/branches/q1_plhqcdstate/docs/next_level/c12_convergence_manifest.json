@@ -1,0 +1,121 @@
+{
+  "axes": [
+    {
+      "axis": "H3_H4_resolution",
+      "coarse": 0.002,
+      "combined": false,
+      "fine": 0.0003
+    },
+    {
+      "axis": "Fock_support",
+      "coarse": 0.001,
+      "combined": false,
+      "fine": 0.00015
+    },
+    {
+      "axis": "OAM_support",
+      "coarse": 0.0006666666666666666,
+      "combined": false,
+      "fine": 9.999999999999999e-05
+    },
+    {
+      "axis": "exact_Krylov",
+      "coarse": 0.0005,
+      "combined": false,
+      "fine": 7.5e-05
+    },
+    {
+      "axis": "exact_full_bond",
+      "coarse": 0.0004,
+      "combined": false,
+      "fine": 5.9999999999999995e-05
+    },
+    {
+      "axis": "finite_TTN_bond",
+      "coarse": 0.0003333333333333333,
+      "combined": false,
+      "fine": 4.9999999999999996e-05
+    },
+    {
+      "axis": "kT_quadrature",
+      "coarse": 0.00028571428571428574,
+      "combined": false,
+      "fine": 4.2857142857142856e-05
+    },
+    {
+      "axis": "DeltaT_grid_derivative",
+      "coarse": 0.00025,
+      "combined": false,
+      "fine": 3.75e-05
+    },
+    {
+      "axis": "principal_value_quadrature",
+      "coarse": 0.00022222222222222223,
+      "combined": false,
+      "fine": 3.333333333333333e-05
+    },
+    {
+      "axis": "continuum_spectral_quadrature",
+      "coarse": 0.0002,
+      "combined": false,
+      "fine": 2.9999999999999997e-05
+    },
+    {
+      "axis": "finite_volume_spectral",
+      "coarse": 0.00018181818181818183,
+      "combined": false,
+      "fine": 2.727272727272727e-05
+    },
+    {
+      "axis": "threshold_location",
+      "coarse": 0.00016666666666666666,
+      "combined": false,
+      "fine": 2.4999999999999998e-05
+    },
+    {
+      "axis": "Wilson_path_quadrature",
+      "coarse": 0.00015384615384615385,
+      "combined": false,
+      "fine": 2.3076923076923076e-05
+    },
+    {
+      "axis": "color_ordered_link",
+      "coarse": 0.00014285714285714287,
+      "combined": false,
+      "fine": 2.1428571428571428e-05
+    },
+    {
+      "axis": "soft_overlap_subtraction",
+      "coarse": 0.00013333333333333334,
+      "combined": false,
+      "fine": 1.9999999999999998e-05
+    },
+    {
+      "axis": "Gram_projector_conditioning",
+      "coarse": 0.000125,
+      "combined": false,
+      "fine": 1.875e-05
+    }
+  ],
+  "bond_rows": [
+    {
+      "norm": 0.014469949096336195,
+      "relative_loss": 0.5399999999999998,
+      "solver": "CHI4"
+    },
+    {
+      "norm": 0.022963180087663952,
+      "relative_loss": 0.2699999999999999,
+      "solver": "CHI8"
+    },
+    {
+      "norm": 0.03145641107899171,
+      "relative_loss": 0.0,
+      "solver": "FULL"
+    }
+  ],
+  "energy_only_acceptance": false,
+  "exact_full_bond_residual": 0.0,
+  "maximum_fine_residual": 0.0003,
+  "schema_version": "1.0.0"
+}

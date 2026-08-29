@@ -1,0 +1,140 @@
+{
+  "convention_roundtrip_residual": 0.0,
+  "maximum_lower_order_oracle_residual": 2.8e-11,
+  "quartic_casimir_visible": true,
+  "rapidity_cross_source_residual": 3.1e-10,
+  "records": [
+    {
+      "coefficients": [
+        5.3333333333,
+        42.7695,
+        429.507,
+        0.0
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 4,
+      "locator": "Eqs. 6-8",
+      "nf": 3,
+      "quantity": "QUARK_CUSP",
+      "remainder": "FOUR_LOOP_DECLARED",
+      "representation": "FUNDAMENTAL",
+      "scheme": "MSBAR",
+      "source_hash": "c18fd03d36764644f1b5d08e7d56451c5874324ec461d5c2e2c0dcbc663f2236",
+      "source_id": "2002.04617v2"
+    },
+    {
+      "coefficients": [
+        12.0,
+        96.2314,
+        966.391,
+        0.0
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 4,
+      "locator": "Eqs. 6-8",
+      "nf": 3,
+      "quantity": "GLUON_CUSP",
+      "remainder": "QUARTIC_CASIMIR_EXPLICIT",
+      "representation": "ADJOINT",
+      "scheme": "MSBAR",
+      "source_hash": "c18fd03d36764644f1b5d08e7d56451c5874324ec461d5c2e2c0dcbc663f2236",
+      "source_id": "2002.04617v2"
+    },
+    {
+      "coefficients": [
+        -8.0,
+        -29.24,
+        -738.2
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 3,
+      "locator": "form-factor collinear terms",
+      "nf": 3,
+      "quantity": "QUARK_TMD_NONCUSP",
+      "remainder": "ORDER3",
+      "representation": "FUNDAMENTAL",
+      "scheme": "MSBAR",
+      "source_hash": "c18fd03d36764644f1b5d08e7d56451c5874324ec461d5c2e2c0dcbc663f2236",
+      "source_id": "2002.04617v2"
+    },
+    {
+      "coefficients": [
+        -15.333,
+        -173.2,
+        -2450.0
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 3,
+      "locator": "form-factor collinear terms",
+      "nf": 3,
+      "quantity": "GLUON_TMD_NONCUSP",
+      "remainder": "ORDER3",
+      "representation": "ADJOINT",
+      "scheme": "MSBAR",
+      "source_hash": "c18fd03d36764644f1b5d08e7d56451c5874324ec461d5c2e2c0dcbc663f2236",
+      "source_id": "2002.04617v2"
+    },
+    {
+      "coefficients": [
+        0.0,
+        -18.1,
+        -290.0,
+        -4200.0
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 4,
+      "locator": "ancillary RAD_4loops_q",
+      "nf": 3,
+      "quantity": "QUARK_RAPIDITY",
+      "remainder": "INDEPENDENT_2205.02249_CHECK",
+      "representation": "FUNDAMENTAL",
+      "scheme": "DELTA_TO_PROJECT",
+      "source_hash": "0786144cbe2547a7a5cceb5d6737e83f1b6ef92cfc2f004a3ea5b15cce45e245",
+      "source_id": "2205.02242v2"
+    },
+    {
+      "coefficients": [
+        0.0,
+        -40.7,
+        -652.0,
+        -9400.0
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 4,
+      "locator": "ancillary RAD_4loops_g",
+      "nf": 3,
+      "quantity": "GLUON_RAPIDITY",
+      "remainder": "GENERALIZED_CASIMIR_NOT_EXACT_NP",
+      "representation": "ADJOINT",
+      "scheme": "DELTA_TO_PROJECT",
+      "source_hash": "0786144cbe2547a7a5cceb5d6737e83f1b6ef92cfc2f004a3ea5b15cce45e245",
+      "source_id": "2205.02242v2"
+    },
+    {
+      "coefficients": [
+        9.0,
+        64.0,
+        643.833,
+        12090.4
+      ],
+      "convention": "alpha_s/(4pi)",
+      "first_order": 1,
+      "implemented_order": 4,
+      "locator": "beta_0..3",
+      "nf": 3,
+      "quantity": "QCD_BETA",
+      "remainder": "ORDER4",
+      "representation": "GAUGE",
+      "scheme": "MSBAR",
+      "source_hash": "c18fd03d36764644f1b5d08e7d56451c5874324ec461d5c2e2c0dcbc663f2236",
+      "source_id": "STANDARD_BETA"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

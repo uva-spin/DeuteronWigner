@@ -1,0 +1,33 @@
+{
+  "accepted_composition_sha256": "3bbc390d4a80fe9ae520d54d8d12d7596eb59f5640242cf48527f9ace7a3ca6d",
+  "accepted_provenance_sha256": "d8773386171158675ce112f7f1ba22b87a67efd163922f7d880e8664f2290101",
+  "accepted_registry": {
+    "count": 216,
+    "sha256": "7754b1d088b23698217da50e9d375af0f7cbc76a2b2c7217c09ba0c6b42e9493"
+  },
+  "atlas_pages": {
+    "rendered": 162,
+    "required": 162
+  },
+  "branch": "main",
+  "builders": {
+    "failed": 0,
+    "passed": 9
+  },
+  "environment": {
+    "numpy": "1.26.3",
+    "python": "3.9.23"
+  },
+  "evidence": {
+    "passed": 36,
+    "total": 36
+  },
+  "requirement_id": "C3.BASELINE",
+  "schema_version": "1.0.0",
+  "starting_commit": "5063c002e763f3d6a0affc774ec6b124a539f0be",
+  "tests": {
+    "failed": 0,
+    "passed": 519
+  },
+  "working_tree": "clean"
+}

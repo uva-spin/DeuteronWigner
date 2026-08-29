@@ -1,0 +1,302 @@
+{
+  "edges": [
+    {
+      "physical_reason": "common overlap kernel",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:A",
+      "target": "c3:kernel:A",
+      "version": 1
+    },
+    {
+      "physical_reason": "single recoil authority",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:A",
+      "target": "c3:recoil:A",
+      "version": 1
+    },
+    {
+      "physical_reason": "analytic state source",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:A",
+      "target": "c3:state:A",
+      "version": 1
+    },
+    {
+      "physical_reason": "common overlap kernel",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:B",
+      "target": "c3:kernel:B",
+      "version": 1
+    },
+    {
+      "physical_reason": "single recoil authority",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:B",
+      "target": "c3:recoil:B",
+      "version": 1
+    },
+    {
+      "physical_reason": "analytic state source",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:B",
+      "target": "c3:state:B",
+      "version": 1
+    },
+    {
+      "physical_reason": "common overlap kernel",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:C",
+      "target": "c3:kernel:C",
+      "version": 1
+    },
+    {
+      "physical_reason": "single recoil authority",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:C",
+      "target": "c3:recoil:C",
+      "version": 1
+    },
+    {
+      "physical_reason": "analytic state source",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:C",
+      "target": "c3:state:C",
+      "version": 1
+    },
+    {
+      "physical_reason": "common overlap kernel",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:D",
+      "target": "c3:kernel:D",
+      "version": 1
+    },
+    {
+      "physical_reason": "single recoil authority",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:D",
+      "target": "c3:recoil:D",
+      "version": 1
+    },
+    {
+      "physical_reason": "analytic state source",
+      "relation": "DERIVES_FROM",
+      "source": "c3:benchmark:D",
+      "target": "c3:state:D",
+      "version": 1
+    },
+    {
+      "physical_reason": "validation benchmark result",
+      "relation": "DERIVES_FROM",
+      "source": "c3:result:A",
+      "target": "c3:benchmark:A",
+      "version": 1
+    },
+    {
+      "physical_reason": "validation benchmark result",
+      "relation": "DERIVES_FROM",
+      "source": "c3:result:B",
+      "target": "c3:benchmark:B",
+      "version": 1
+    },
+    {
+      "physical_reason": "validation benchmark result",
+      "relation": "DERIVES_FROM",
+      "source": "c3:result:C",
+      "target": "c3:benchmark:C",
+      "version": 1
+    },
+    {
+      "physical_reason": "validation benchmark result",
+      "relation": "DERIVES_FROM",
+      "source": "c3:result:D",
+      "target": "c3:benchmark:D",
+      "version": 1
+    }
+  ],
+  "nodes": [
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "BENCHMARK",
+      "physical_identity": "analytic benchmark A",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:benchmark:A",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "BENCHMARK",
+      "physical_identity": "analytic benchmark B",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:benchmark:B",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "BENCHMARK",
+      "physical_identity": "analytic benchmark C",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:benchmark:C",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "BENCHMARK",
+      "physical_identity": "analytic benchmark D",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:benchmark:D",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "OPERATOR",
+      "physical_identity": "zeroth-rescattering overlap",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:kernel:A",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "OPERATOR",
+      "physical_identity": "zeroth-rescattering overlap",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:kernel:B",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "OPERATOR",
+      "physical_identity": "zeroth-rescattering overlap",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:kernel:C",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "OPERATOR",
+      "physical_identity": "zeroth-rescattering overlap",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:kernel:D",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "SYMMETRIC_XI0",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:recoil:A",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "SYMMETRIC_XI0",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:recoil:B",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "SYMMETRIC_XI0",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:recoil:C",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "SYMMETRIC_XI0",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:recoil:D",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "FINAL_ARTIFACT",
+      "physical_identity": "validation result A",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:result:A",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "FINAL_ARTIFACT",
+      "physical_identity": "validation result B",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:result:B",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "FINAL_ARTIFACT",
+      "physical_identity": "validation result C",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:result:C",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "FINAL_ARTIFACT",
+      "physical_identity": "validation result D",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:result:D",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "validation state A",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:state:A",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "validation state B",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:state:B",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "validation state C",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:state:C",
+      "version": 1
+    },
+    {
+      "alternative_group": null,
+      "central_allowed": false,
+      "kind": "COMPONENT",
+      "physical_identity": "validation state D",
+      "selection_role": "BENCHMARK_ONLY",
+      "stable_id": "c3:state:D",
+      "version": 1
+    }
+  ],
+  "reachable_from_accepted": false,
+  "requirement_id": "C3.PROVENANCE",
+  "schema_version": "1.0.0",
+  "status": "VALIDATION_ONLY"
+}

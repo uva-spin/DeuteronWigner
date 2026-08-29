@@ -1,0 +1,48 @@
+{
+  "C35_no_go_retained": true,
+  "art25_used": false,
+  "baseline_commit": "dee1dfbd49a17db881dc9f52ae16f7c51c86df59",
+  "bridge_rerun": false,
+  "channels": [
+    {
+      "channel": "q<-q",
+      "status": "UNRESOLVED_BLOCKING",
+      "value": "EMPTY_NOT_ZERO"
+    },
+    {
+      "channel": "q<-qbar",
+      "status": "UNRESOLVED_BLOCKING",
+      "value": "EMPTY_NOT_ZERO"
+    },
+    {
+      "channel": "q<-g",
+      "status": "UNRESOLVED_BLOCKING",
+      "value": "EMPTY_NOT_ZERO"
+    },
+    {
+      "channel": "nonsinglet",
+      "status": "UNRESOLVED_BLOCKING",
+      "value": "EMPTY_NOT_ZERO"
+    },
+    {
+      "channel": "singlet",
+      "status": "UNRESOLVED_BLOCKING",
+      "value": "EMPTY_NOT_ZERO"
+    }
+  ],
+  "content_hash": "d968da8a6c1035fda9ac349dee7889e4f79879d217b00d3b44d509d482447df6",
+  "missing_calculation": [
+    "regulator-identical finite-basis spacelike Wilson insertion",
+    "partonic external-state realization with the common IR prescription",
+    "instantaneous, boundary, zero-mode, Hamiltonian and operator counterterms",
+    "regulated discrete-to-distributional x map and three-resolution trajectory",
+    "selected-scheme soft/overlap operator identity"
+  ],
+  "production_reachable": false,
+  "proton_ratio_used": false,
+  "schema_version": "1.0.0",
+  "scope": "C37/R2",
+  "selected_regulator": "O4-SPACELIKE-COLLINS-JMY",
+  "status": "C37_FINITE_BASIS_COLLINEAR_ONE_LOOP_UNAVAILABLE",
+  "value": "EMPTY_NOT_ZERO"
+}

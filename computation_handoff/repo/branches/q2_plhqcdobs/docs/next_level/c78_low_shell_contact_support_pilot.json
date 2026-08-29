@@ -1,0 +1,33 @@
+{
+  "nonzero_symbolic_kernel": true,
+  "projected_cancellation": "not available: independent source kernel coordinates are not merged",
+  "selection_zero": "a C77 physical qg state outside exact Jz endpoint selection",
+  "witness": {
+    "C57_graph": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+    "C58_ordered_joint_ancestry": "IFNORM2-ORDERED-JOINT-SUPPORT",
+    "absorption_endpoint_id": "C78:ABSORPTION:Q=C78:Q:K9_2_N8_b0.40:H=-1:C=0:QG=C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0",
+    "emission_endpoint_id": "C78:EMISSION:Q=C78:Q:K9_2_N8_b0.40:H=-1:C=0:QG=C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0",
+    "exact_endpoint_coefficient_product": "C77COMP_bra*U3_bra * KAPPA[e,a] * C77COMP_ket*U3_ket",
+    "gluon_creation_annihilation": "a_dagger(left), a(right)",
+    "id": "C78:W:0151050230441ced289e709d320073cf64eb87f1e9296c79a9526f016d5b1d0b",
+    "intermediate_q_id": "C78:Q:K9_2_N8_b0.40:H=-1:C=0",
+    "kernel_coordinate_domain": {
+      "absorption_endpoint_id": "C78:ABSORPTION:Q=C78:Q:K9_2_N8_b0.40:H=-1:C=0:QG=C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0",
+      "absorption_path_count": 18,
+      "coordinate_count": 324,
+      "coordinate_id_rule": "C78:KAPPA:<emission-endpoint-id>:<emission-path-local>:<absorption-endpoint-id>:<absorption-path-local>",
+      "emission_endpoint_id": "C78:EMISSION:Q=C78:Q:K9_2_N8_b0.40:H=-1:C=0:QG=C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0",
+      "emission_path_count": 18
+    },
+    "longitudinal_channel_label": "C55:DIRECT:p_q_plus+k_g",
+    "operator_order": [
+      "b_dagger",
+      "a_dagger",
+      "a",
+      "b"
+    ],
+    "ordered_color_generator": "T^(a_left) T^(a_right)",
+    "physical_bra_id": "C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0",
+    "physical_ket_id": "C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0"
+  }
+}

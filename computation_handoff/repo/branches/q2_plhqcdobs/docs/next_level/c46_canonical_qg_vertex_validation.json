@@ -1,0 +1,13 @@
+{
+  "array": "NOT_GENERATED",
+  "blocking_contract_ids": [
+    "C46.MULTIBODY_X_SCALED_HO",
+    "C46.CENTER_OF_MASS_PROJECTOR",
+    "C46.FREE_OPERATOR_REPRESENTATION",
+    "C46.CANONICAL_VERTEX_MODE_KERNEL",
+    "C46.BOUNDARY_GLOBAL_ZERO_MODE"
+  ],
+  "reason": "C46 source-to-matrix audit found unresolved x-scaled many-body/CM, finite-volume action-normalization, canonical-kernel, and boundary-zero-mode contracts.",
+  "scope": "canonical vertex validation",
+  "status": "ABSENT_BLOCKING"
+}

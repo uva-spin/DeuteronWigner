@@ -1,0 +1,41 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "provenance_audit_validation",
+  "authority_record": {
+    "exact_official_target_locator": "NONE_IDENTIFIED",
+    "qualified_targets": 0,
+    "root": "bafa6089ab89aeb03bce8554a1f2d55114edcabce992f87b5ae711608ecc8402",
+    "rows": [
+      {
+        "qualified_target": false,
+        "source": "repository and all Git refs"
+      },
+      {
+        "qualified_target": false,
+        "sha256": "06a68c5233bb0ca048634d0c0f3e7c7de8aea27fb1e95745fd85d88b6bb77228",
+        "source": "authenticated local C43 PDF"
+      },
+      {
+        "qualified_target": false,
+        "sha256": "dcce7d3f8661991b6dd9f11a4bff09a4e244d51f3b7ea9d1dfb600ccb1da0c88",
+        "source": "authenticated local C43 TeX archive"
+      },
+      {
+        "missing": "finite-C43 C117 target/projector/scheme/scale/regulator condition",
+        "qualified_target": false,
+        "scope": "instantaneous operator plus pure-YM Z3/Z1/Zg illustration",
+        "source": "SB hep-ph/0011372v2"
+      }
+    ]
+  },
+  "package_root": "b690bad5e4e47c39e5a9c482c26d673ac6eb6a5531df7806664d35c71098e897",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CURRENTTARGETAUDIT1-BLOCKER",
+  "schema": "C258-PROVENANCE-AUDIT-VALIDATION-V1",
+  "status": "C258_CERTIFIED_ABSENT_INDISPENSABLE_CURRENT_SUBTRACTION_TARGET_AUTHORITY",
+  "terminal": "REAL_MATH_PHYSICS_BLOCKER"
+}

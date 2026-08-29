@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "conversion": "source x\u00b1 without sqrt2 -> C43 x\u00b1/sqrt2; transverse variables unchanged",
+      "holdout": "C48 may assemble local QCD matrices; C47 may not",
+      "row": "X_SCALED_QG_CM_PROJECTION",
+      "sources": "1911.10762v1 Eqs. (46)-(54),(76)-(81),(96)-(100)",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic": "x_map/tm_blocks/tm_cm_ground_map",
+      "validation": "TM unitary blocks and CM-ground isometry"
+    },
+    {
+      "conversion": "M2=2 P_C43+ P_C43- - Pperp2; source P_B\u00b1=sqrt2 P_C43\u00b1",
+      "holdout": "C48 may assemble local QCD matrices; C47 may not",
+      "row": "FINITE_VOLUME_FREE_OPERATOR_NORMALIZATION",
+      "sources": "1911.10762v1 Eqs. (16),(20)-(23),(35)-(49),(55),(82); C43 metric",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic": "free_functional with explicit L factors",
+      "validation": "positive dispersion and symbolic L cancellation in M2"
+    },
+    {
+      "conversion": "SU(3), gs factored for C48; L^(-1/2) retained",
+      "holdout": "C48 may assemble local QCD matrices; C47 may not",
+      "row": "ALL_MODE_CANONICAL_KERNEL",
+      "sources": "SB canonical term; 1911.10762v1 Eqs. (46)-(49),(96)-(100),(111)-(113); C45 spinor/polarization",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic": "canonical_kernel exhaustive tuple evaluator",
+      "validation": "selection exhaustion, conjugation metadata, finite/massless controls"
+    },
+    {
+      "conversion": "C45 P0/Q0 and open-color module",
+      "holdout": "C48 may assemble local QCD matrices; C47 may not",
+      "row": "LOCAL_BOUNDARY_ZERO_MODE_FUNCTIONAL",
+      "sources": "C43 inverse/boundary/zero-mode contracts; SB constraints; BPP DLCQ Eq. (4.11)",
+      "status": "SOURCE_COMPLETE_EXECUTABLE",
+      "symbolic": "inverse_derivative_functionals plus local-domain boundary statuses",
+      "validation": "P0/Q0 and PV identities"
+    }
+  ],
+  "status": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY"
+}

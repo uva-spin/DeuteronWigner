@@ -1,0 +1,43 @@
+{
+  "branch": "master",
+  "bundle_complete_history": true,
+  "bundle_path": "data/raw/c28_sources/artemide-DataProcessor-all.bundle",
+  "bundle_sha256": "1eeb7beeaed2d402f98e2099948056dfdb45624da524a78db98b2201b62d9b8f",
+  "checkout_date": "2026-08-04",
+  "current_public_commit": "9f9dda71b69dd26e288be189a396736827cfeed3",
+  "historical_art25_commit": "761f3fcdd3701c5cf69e822f9ffbbd5db394fc58",
+  "relevant_file_locks": [
+    {
+      "classification": "SCIENTIFICALLY_RELEVANT",
+      "current_sha256": "2ebdc92b9aa0923fa7099b4a53b45f146849675ce16402328b5d0d313aa9f6a3",
+      "historical_sha256": "c6ee40f64b2a741fb631b2ba873fb02cee2aac29e3750086b26d2f428cf78ca1",
+      "path": "FittingPrograms/ART25/DY+SIDIS-fit.py"
+    },
+    {
+      "classification": "SCIENTIFICALLY_RELEVANT",
+      "current_sha256": "4f85e7605ee691eab06e9ff6fb11e431493ca369a898afa65cf30e3713a497ce",
+      "historical_sha256": "2fc2ed59af4cc232c09488dda2de3fd2a9e0ddd9494efba9e3ef2617af3c4b7b",
+      "path": "DataProcessor/DataSet.py"
+    },
+    {
+      "classification": "BYTE_IDENTICAL",
+      "current_sha256": "e73a378b06a44a33878605399b611d9a275c1761e56e70e1d5da22a0ad1bb924",
+      "historical_sha256": "e73a378b06a44a33878605399b611d9a275c1761e56e70e1d5da22a0ad1bb924",
+      "path": "DataProcessor/DataMultiSet.py"
+    },
+    {
+      "classification": "SCIENTIFICALLY_RELEVANT",
+      "current_sha256": "abc354b388b499276705b10e80c66a469a3a7cc854313438bcab879ae12e50fc",
+      "historical_sha256": "658b240014b1ae2ec0177d09a8e24678c989fab52ab276c5f3f510c192857cd3",
+      "path": "DataProcessor/Point.py"
+    },
+    {
+      "classification": "SCIENTIFICALLY_RELEVANT",
+      "current_sha256": "dcb0dfe02251195c9912d76ccc5597b6e1ab08d56375734fdd78751ce355f5e9",
+      "historical_sha256": "169b23a713d437f30c361afe80e60da378aee06096317b4952dab155bd232bc3",
+      "path": "DataProcessor/harpyInterface.py"
+    }
+  ],
+  "repository_url": "https://github.com/VladimirovAlexey/artemide-DataProcessor.git",
+  "schema_version": "1.0.0"
+}

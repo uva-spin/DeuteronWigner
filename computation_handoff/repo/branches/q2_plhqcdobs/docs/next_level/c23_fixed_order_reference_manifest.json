@@ -1,0 +1,33 @@
+{
+  "physical_fixed_order_consumed": false,
+  "records": [
+    {
+      "analytic_expression": "asymptotic(W)+u^(rank+2)exp(-u)",
+      "content_hash": "9e2f59947b843595db27a79e232e9627c3ed8fe308a92b6d42483505eb994781",
+      "order": "ANALYTIC_LO_PLUS_POWER",
+      "physical": false,
+      "process_family": "DY",
+      "reference_id": "C23:FO:DY:A0",
+      "scheme": "C22Q_VALIDATION"
+    },
+    {
+      "analytic_expression": "asymptotic(W)+u^(rank+2)exp(-u)",
+      "content_hash": "361a670b4b1ad2fd98a3df1a28cfe929f968c05030ebf5609e0c2b94d42b07bf",
+      "order": "ANALYTIC_LO_PLUS_POWER",
+      "physical": false,
+      "process_family": "SIDIS",
+      "reference_id": "C23:FO:SIDIS:A0",
+      "scheme": "C22Q_VALIDATION"
+    },
+    {
+      "analytic_expression": "asymptotic(W)+u^(rank+2)exp(-u)",
+      "content_hash": "6d117312d98e254749db78ed280e96303a65ee53157b0f518a6d12e605d16227",
+      "order": "ANALYTIC_LO_PLUS_POWER",
+      "physical": false,
+      "process_family": "HQ_DIS",
+      "reference_id": "C23:FO:HQ_DIS:A0",
+      "scheme": "C22Q_VALIDATION"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

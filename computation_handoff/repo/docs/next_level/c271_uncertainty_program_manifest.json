@@ -1,0 +1,23 @@
+{
+  "authority_record": {
+    "components": [
+      "HERMES stat",
+      "HERMES syst",
+      "low-Q2 validity",
+      "factorization",
+      "x/xD mapping",
+      "packet",
+      "HO/Abel",
+      "C117 response"
+    ],
+    "covariance": "retain shared source/packet blocks and symmetrize A Sigma A^T",
+    "root": "b6c463d1f550994606047395274926a8490bf2ac7a055d9b915f695f8cd43759",
+    "values": "PARTIAL_SOURCE_COVARIANCE; RESPONSE_BLOCK_UNAVAILABLE_NOT_ZERO"
+  },
+  "package_root": "7a55d193904b3c19d7c29d61d0abcce421801b4e6852349af2aa571d69d07cbe",
+  "physical": false,
+  "plan": "C117B1ADAPTER1-B",
+  "schema": "C271-UNCERTAINTY_PROGRAM-MANIFEST-V1",
+  "status": "C271_B1_OPERATOR_NORMALIZATION_ADAPTER_READY_C117_SENSITIVITY_ROW_UNEVALUATED",
+  "validation": "BOUND"
+}

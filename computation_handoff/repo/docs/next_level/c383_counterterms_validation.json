@@ -1,0 +1,44 @@
+{
+  "package_root": "ed3485b129f27f4c1b571a3c036f08423b3d15120c0bc8c3b5b1536b209b3fc0",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECGROUP1-C",
+  "record": {
+    "applied_after_region_projection": true,
+    "count": 5,
+    "root": "688080e086470541f6cdad941e31d8ffb5736526590f95e208bac28fe920b7f2",
+    "rows": [
+      {
+        "IR": "retained in group",
+        "id": "CT.Z2q",
+        "normalization": "exp(gammaE*epsilon)*(4pi)^(-epsilon)/epsilon_UV",
+        "operation": "-MSbarProject(UVPart(parent))"
+      },
+      {
+        "IR": "retained in group",
+        "id": "CT.Zv",
+        "normalization": "exp(gammaE*epsilon)*(4pi)^(-epsilon)/epsilon_UV",
+        "operation": "-MSbarProject(UVPart(parent))"
+      },
+      {
+        "IR": "retained in group",
+        "id": "CT.Ztv",
+        "normalization": "exp(gammaE*epsilon)*(4pi)^(-epsilon)/epsilon_UV",
+        "operation": "-MSbarProject(UVPart(parent))"
+      },
+      {
+        "IR": "retained in group",
+        "id": "CT.Zvert.q",
+        "normalization": "exp(gammaE*epsilon)*(4pi)^(-epsilon)/epsilon_UV",
+        "operation": "-MSbarProject(UVPart(parent))"
+      },
+      {
+        "IR": "retained in group",
+        "id": "CT.Zvert.h",
+        "normalization": "exp(gammaE*epsilon)*(4pi)^(-epsilon)/epsilon_UV",
+        "operation": "-MSbarProject(UVPart(parent))"
+      }
+    ]
+  },
+  "status": "C383_EXECUTABLE_GAUGE_COMPLETE_JMY_GROUP_AST_ASSEMBLED_LAURENT_EVALUATION_READY",
+  "validation": "PASS"
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "C164-C165-HQCDLFGDEP-CONTINUATION-CONTRACT-V1",
+  "branch": "C165/HQCDLFGDEP",
+  "parent_baseline": "6a298a95338a78635b96d88c444fb55098acc63f83418530082714c4e8b0c5f2",
+  "parent_status": "C164_HQCDLFGLOCATOR2_DEPENDENCY_LOCATOR_INCOMPLETE",
+  "parent_plan": "LFGLOCATOR2-D",
+  "scope": "close exact dependency locators for the eight accepted local-PDF objects",
+  "source_policy": "use only authenticated local sources and newly authenticated exact source artifacts; no web, memory, plots, or rounded tables",
+  "required_objects": [
+    "complete dependency-locator graph for each accepted locator",
+    "exact source-to-project notation and perturbative-coordinate dependencies",
+    "gauge/pole/projector/external-state and active-N_f dependency locators",
+    "branch and special-function dependency locators where present",
+    "independent locator and visual verification"
+  ],
+  "prohibited": [
+    "complete expression transcription before locator closure",
+    "target compilation or numerical evaluation",
+    "C158 coefficient import or matching",
+    "PDG physical-input consumption",
+    "running, thresholds, counterterms, null coordinates, or Q0/Q1/Q2 modification"
+  ],
+  "required_terminal_rule": "C165/HQCDMATCHIR5 only after dependency closure and later gates; otherwise continue the narrowest unresolved dependency/source branch",
+  "exactly_one_continuation": true,
+  "push": false
+}

@@ -1,0 +1,28 @@
+{
+  "circle_id": "C178_LONGITUDINAL_CIRCLE_S_L_2L",
+  "root": "0401b7501ee8562ccc0f86e5d6a975722dc14d322ef296752b6b9a862e02b056",
+  "rows": [
+    {
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "cut_side_id": "C178_CUT_SIDE_PLUS",
+      "frame_identity": "oriented boundary frame label",
+      "ordinary_periodic_endpoint_value": false,
+      "orientation": "approach cut from + side",
+      "premature_identification": false,
+      "source_value_evaluated": false,
+      "trace": "lim epsilon->0+ f(c +/- epsilon)"
+    },
+    {
+      "cut_id": "C178_CUT_C0_COORDINATE",
+      "cut_side_id": "C178_CUT_SIDE_MINUS",
+      "frame_identity": "oriented boundary frame label",
+      "ordinary_periodic_endpoint_value": false,
+      "orientation": "approach cut from - side",
+      "premature_identification": false,
+      "source_value_evaluated": false,
+      "trace": "lim epsilon->0+ f(c +/- epsilon)"
+    }
+  ],
+  "schema": "C178-CUT-SIDE-V1",
+  "two_sides_retained": true
+}

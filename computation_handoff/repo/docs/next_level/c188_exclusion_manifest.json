@@ -1,0 +1,45 @@
+{
+  "aggregate_double_count": 0,
+  "count": 4,
+  "root": "53c3addc2060e9474c1977a3ee5b1aceea7ef1d4aaa6b43a5dae3a27ee21d748",
+  "rows": [
+    {
+      "classification": "SEQUENTIAL_NORMAL_ORDERING_DESCENDANT_ONLY",
+      "owner": "C129",
+      "promoted": false,
+      "q_to_qgg_primitive": false,
+      "record_id": "C188-C129-SEQUENTIAL-EXCLUSION",
+      "source_preimage": "qg->qgg",
+      "source_root": "4c85424eb7cfa6a6ee190e907c36245ca0325623e4de79e923007583a9804678"
+    },
+    {
+      "additive_count": 0,
+      "classification": "AGGREGATE_CROSSWALK_ONLY",
+      "owner": "C131",
+      "primitive_children": [
+        "C112",
+        "C127"
+      ],
+      "promoted": false,
+      "record_id": "C188-C131-AGGREGATE-EXCLUSION",
+      "source_root": "67ab09bdc4ef7960a7d39ee35c243cec5c6537087012ea6283d5b4da8259cbd4"
+    },
+    {
+      "classification": "TYPED_NONMATRIX_ZERO_MODE_BOUNDARY_INTERFACE",
+      "local_matrix": false,
+      "owner": "C130",
+      "promoted": false,
+      "record_id": "C188-C130-NONMATRIX",
+      "source_root": "af23a5587f7df42fe7dd35dd5c777224a2c1236bc96c406617f0fda63551b7b2"
+    },
+    {
+      "classification": "TYPED_SOURCE_OPERATOR_RESIDUAL_LINK_INTERFACE",
+      "local_matrix": false,
+      "owner": "C182",
+      "promoted": false,
+      "record_id": "C188-C182-NONMATRIX",
+      "source_root": "d553fa7747ddb3bdf52a9322acf872b3fb4706827135cb3f5c5cd351f2cfa850"
+    }
+  ],
+  "schema": "C188-EXCLUSION-V1"
+}

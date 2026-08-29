@@ -1,0 +1,14 @@
+{
+  "all_partitions": "same orthogonal formula evaluated with each exact xq,xg",
+  "representative": {
+    "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+    "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+    "fractions": "xq=7/9; xg=2/9",
+    "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+    "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+    "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+  },
+  "source": "1911.10762v1 Eqs. (76),(98)-(100),(52)-(53)",
+  "status": "SOURCE_COMPLETE_EXECUTABLE",
+  "units": "q GeV; s GeV^-1; Q/qrel GeV; S/srel GeV^-1"
+}

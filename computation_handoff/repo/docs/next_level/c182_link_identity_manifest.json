@@ -1,0 +1,86 @@
+{
+  "root": "1072c237757abb497ccafdd73c207ccf579743af4cdc33c9490a1b6fa0de407e",
+  "rows": [
+    {
+      "concatenation": true,
+      "cut_shift": true,
+      "fixture_id": "C182_FIXTURE_RETAINED_SPARSE_V1",
+      "generated_adjoint": true,
+      "holonomy_aware": true,
+      "identity_path": true,
+      "residual": "EXACT_SYMBOLIC_ZERO",
+      "reversal": true,
+      "routes": [
+        "identity",
+        "concatenation",
+        "reverse",
+        "future/past",
+        "generated adjoint",
+        "cut shift",
+        "holonomy"
+      ],
+      "truncated_unitarity": "conditional; no physical unitarity claim"
+    },
+    {
+      "concatenation": true,
+      "cut_shift": true,
+      "fixture_id": "C182_FIXTURE_RETAINED_BOUNDARY_V1",
+      "generated_adjoint": true,
+      "holonomy_aware": true,
+      "identity_path": true,
+      "residual": "EXACT_SYMBOLIC_ZERO",
+      "reversal": true,
+      "routes": [
+        "identity",
+        "concatenation",
+        "reverse",
+        "future/past",
+        "generated adjoint",
+        "cut shift",
+        "holonomy"
+      ],
+      "truncated_unitarity": "conditional; no physical unitarity claim"
+    },
+    {
+      "concatenation": true,
+      "cut_shift": true,
+      "fixture_id": "C182_FIXTURE_GAUGE_GRADIENT_V1",
+      "generated_adjoint": true,
+      "holonomy_aware": true,
+      "identity_path": true,
+      "residual": "EXACT_SYMBOLIC_ZERO",
+      "reversal": true,
+      "routes": [
+        "identity",
+        "concatenation",
+        "reverse",
+        "future/past",
+        "generated adjoint",
+        "cut shift",
+        "holonomy"
+      ],
+      "truncated_unitarity": "conditional; no physical unitarity claim"
+    },
+    {
+      "concatenation": true,
+      "cut_shift": true,
+      "fixture_id": "C182_FIXTURE_NONTRIVIAL_HOLONOMY_V1",
+      "generated_adjoint": true,
+      "holonomy_aware": true,
+      "identity_path": true,
+      "residual": "EXACT_SYMBOLIC_ZERO",
+      "reversal": true,
+      "routes": [
+        "identity",
+        "concatenation",
+        "reverse",
+        "future/past",
+        "generated adjoint",
+        "cut shift",
+        "holonomy"
+      ],
+      "truncated_unitarity": "I + O(g^3) for explicit reality diagnostic"
+    }
+  ],
+  "schema": "C182-LINK-IDENTITY-V1"
+}

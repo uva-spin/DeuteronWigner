@@ -1,0 +1,35 @@
+{
+  "package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "physical": false,
+  "plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "record": [
+    {
+      "identity_id": "PLUS_CONSTANT_ANNIHILATION",
+      "lhs": "<[f]_+,1>",
+      "rhs": "0",
+      "status": "EXACT"
+    },
+    {
+      "identity_id": "FIG2B_PLUS_ENDPOINT_PARTITION",
+      "lhs": "finite-zeta fig2b",
+      "locator": "sdisfac.tex:455-476",
+      "rhs": "plus+delta endpoint",
+      "status": "SOURCE_EXACT_AT_DECLARED_LARGE_ZETA_SCOPE"
+    },
+    {
+      "identity_id": "SOFT_REAL_VIRTUAL",
+      "lhs": "real self/interference transverse integral",
+      "locator": "sdisfac.tex:673-775",
+      "rhs": "negative Wilson self/vertex endpoint",
+      "status": "SOURCE_EXACT_MASS_REGULATED_SCOPE"
+    },
+    {
+      "identity_id": "COMMON_IR_TARGET",
+      "lhs": "C391 dimensional source-side AST",
+      "next_object": "C391-C43-JMY-COMMON-IR-FINITE-BASIS-CONTINUUM-MATCHING-TARGET",
+      "rhs": null,
+      "status": "EXPLICIT_TARGET_REMAINDER_NOT_ZERO"
+    }
+  ],
+  "status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT"
+}

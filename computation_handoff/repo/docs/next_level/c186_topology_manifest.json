@@ -1,0 +1,151 @@
+{
+  "complete_qg_1PI_value": false,
+  "count": 6,
+  "direct_sequential_conflation": false,
+  "leg_1PI_conflation": false,
+  "root": "07b86d2f04fe5e5f8bd57196a3ac8be0fe5fe6f5398f0d824311c7ac9185fbf4",
+  "rows": [
+    {
+      "classification": "direct/contact/instantaneous",
+      "color_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator_owner": "none/direct",
+      "graph_id": "C186-DIRECT-Q-QGG-ORDER2",
+      "intermediate_sector": null,
+      "ordered_vertices": [
+        "direct order-g_s^2 owner"
+      ],
+      "owner_ids": [
+        "C112_INSTANTANEOUS_FERMION_QGG",
+        "C127_GAUSS_CURRENT_QGG",
+        "C129_G4_DIRECT_NORMAL_ORDERED_QGG",
+        "C131_LOCAL_POLYNOMIAL_QGG",
+        "C182_RESIDUAL_LINK_DEGREE2_QGG",
+        "C130_BOUNDARY_NONMATRIX_QGG"
+      ],
+      "sink": "C170-B1-QGG",
+      "source": "C170-B1-Q",
+      "symmetry_factor": "typed qgg Bose projector"
+    },
+    {
+      "classification": "sequential reducible route",
+      "color_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator_owner": "C170/C185 resolvent",
+      "graph_id": "C186-SEQUENTIAL-Q-QG-QGG-QUARK",
+      "intermediate_sector": "C170-B1-QG",
+      "ordered_vertices": [
+        "C53 q<->qg",
+        "C185 quark emission"
+      ],
+      "owner_ids": [
+        "C53_BASE_Q_QG",
+        "C185_QGG_QUARK_EMISSION"
+      ],
+      "sink": "C170-B1-QGG",
+      "source": "C170-B1-Q",
+      "symmetry_factor": "C185"
+    },
+    {
+      "classification": "sequential reducible route",
+      "color_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator_owner": "C170/C186 resolvent",
+      "graph_id": "C186-SEQUENTIAL-Q-QG-QGG-CUBIC",
+      "intermediate_sector": "C170-B1-QG",
+      "ordered_vertices": [
+        "C53 q<->qg",
+        "C186 cubic-gluon"
+      ],
+      "owner_ids": [
+        "C53_BASE_Q_QG",
+        "C186_CUBIC_GLUE"
+      ],
+      "sink": "C170-B1-QGG",
+      "source": "C170-B1-Q",
+      "symmetry_factor": "C186"
+    },
+    {
+      "classification": "qg-reducible iteration",
+      "color_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator_owner": "C185 qgg resolvent",
+      "graph_id": "C186-QG-REDUCIBLE-ITERATION",
+      "intermediate_sector": "C170-B1-QGG",
+      "ordered_vertices": [
+        "qg<->qgg transitions",
+        "qgg resolvent",
+        "qgg<->qg transitions"
+      ],
+      "owner_ids": [
+        "C185_QGG_QUARK_EMISSION",
+        "C186_CUBIC_GLUE"
+      ],
+      "sink": "C170-B1-QG",
+      "source": "C170-B1-QG",
+      "symmetry_factor": "count-once qgg"
+    },
+    {
+      "classification": "future proper 1PI; not calculated",
+      "color_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "count_once": false,
+      "coupling_degree": 2,
+      "energy_denominator_owner": "future package",
+      "graph_id": "C187-FUTURE-QG-1PI",
+      "intermediate_sector": "qgg/qqbarq",
+      "ordered_vertices": "future aggregate",
+      "owner_ids": [
+        "C186_CUBIC_GLUE",
+        "C186_ORDER2",
+        "C185_QQBARQ"
+      ],
+      "sink": "C170-B1-QG",
+      "source": "C170-B1-QG",
+      "symmetry_factor": "future"
+    },
+    {
+      "classification": "external-leg correction; not proper 1PI",
+      "color_channels": [],
+      "count_once": true,
+      "coupling_degree": 1,
+      "energy_denominator_owner": "C150/C184",
+      "graph_id": "C185-EXTERNAL-LEG-CROSSWALK",
+      "intermediate_sector": "q/qg",
+      "ordered_vertices": [
+        "leg correction"
+      ],
+      "owner_ids": [
+        "C150_QUARK_LEG",
+        "C184_GLUON_LEG"
+      ],
+      "sink": "qg",
+      "source": "qg",
+      "symmetry_factor": "not applicable"
+    }
+  ],
+  "schema": "C186-TOPOLOGY-V1"
+}

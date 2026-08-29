@@ -1,0 +1,23 @@
+{
+  "schema": "C395-C396-HQCDRIMASSC43HAMILTONIANACCEPTPHASE1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C395/HQCDRIMASSC43PHYSICALOBSINPUTPHASE1",
+  "from_status": "C395_AUTHENTICATED_HERMES_SIDIS_KINEMATICS_AND_CORRELATED_COVARIANCE_READY_RESOLUTION_SEPARATE_HAMILTONIAN_ACCEPTANCE_NEXT",
+  "from_plan": "PHYSICALOBSINPUTPHASE1-B",
+  "from_package_root": "efcf8b15c6c69aaae7b3977f3b5f1a486b371254d9a61681a391bbdb8097185a",
+  "next_job": "C396/HQCDRIMASSC43HAMILTONIANACCEPTPHASE1",
+  "next_frontier": {
+    "object_id": "C395-C43-RENORMALIZED-K9-K11-K13-HAMILTONIAN-ACCEPTANCE",
+    "exact_missing_object": "construct and accept separate renormalized K9 K11 K13 Hamiltonians using the C391-C395 source, matching, running, boundary-family, and observable authorities without resolution averaging"
+  },
+  "authority_discontinuity": "renormalized Hamiltonian operator sector",
+  "constraints": {
+    "C391_C395_frozen": true,
+    "K9_K11_K13_separate": true,
+    "counterterm_null_directions_fixed_or_irrelevant": true,
+    "Hermiticity_units_leakage_count_once_required": true,
+    "observable_covariance_read_only": true,
+    "Q0_Q1_Q2_frozen": true,
+    "activation_gate_status": "NOT_READY",
+    "push": false
+  }
+}

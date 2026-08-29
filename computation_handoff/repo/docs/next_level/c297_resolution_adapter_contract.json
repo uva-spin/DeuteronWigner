@@ -1,0 +1,36 @@
+{
+  "authority_record": {
+    "K_averaged": false,
+    "count": 3,
+    "root": "f0936ec86f5b63690940988c63f140cd18cb45c718157fc21fac3192295d65b7",
+    "rows": [
+      {
+        "complete": false,
+        "constraint_map": "common source equations with caller K projection",
+        "cross_K_covariance": "joint pullback row required",
+        "remainder": "Delta_H_constr[K9]",
+        "resolution": "K9"
+      },
+      {
+        "complete": false,
+        "constraint_map": "common source equations with caller K projection",
+        "cross_K_covariance": "joint pullback row required",
+        "remainder": "Delta_H_constr[K11]",
+        "resolution": "K11"
+      },
+      {
+        "complete": false,
+        "constraint_map": "common source equations with caller K projection",
+        "cross_K_covariance": "joint pullback row required",
+        "remainder": "Delta_H_constr[K13]",
+        "resolution": "K13"
+      }
+    ]
+  },
+  "package_root": "44b6ca07acb3e3ea970667244072988158ca495fb7829972a210842b448a6502",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINEDREMAINDER1-B",
+  "schema": "C297-RESOLUTION_ADAPTER-CONTRACT-V1",
+  "status": "C297_EXACT_CONSTRAINED_ZERO_MODE_FORMAL_SOLUTION_AND_JOINT_COVARIANCE_PULLBACK_READY_RENORMALIZED_KERNEL_INPUT_MISSING",
+  "validation": "BOUND"
+}

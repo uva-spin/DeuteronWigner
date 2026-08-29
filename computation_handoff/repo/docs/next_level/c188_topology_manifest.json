@@ -1,0 +1,81 @@
+{
+  "complete_qg_1PI": false,
+  "count": 9,
+  "direct_sequential_conflation": false,
+  "root": "21cf91eebe8eab52a06bc47ce6ecbf63c397f38a08ea653c1ee914e18f723b23",
+  "rows": [
+    {
+      "classification": "direct primitive candidate; source expression incomplete",
+      "graph_id": "C188-C112-PRIMITIVE-CANDIDATE",
+      "interface": false,
+      "owner": "C112",
+      "proper_1PI": "future",
+      "sequential": false
+    },
+    {
+      "classification": "direct primitive candidate; source expression incomplete",
+      "graph_id": "C188-C127-PRIMITIVE-CANDIDATE",
+      "interface": false,
+      "owner": "C127",
+      "proper_1PI": "future",
+      "sequential": false
+    },
+    {
+      "classification": "sequential normal-ordering descendant",
+      "graph_id": "C188-C129-SEQUENTIAL",
+      "interface": false,
+      "owner": "C129",
+      "proper_1PI": false,
+      "sequential": true
+    },
+    {
+      "classification": "aggregate crosswalk",
+      "graph_id": "C188-C131-AGGREGATE",
+      "interface": false,
+      "owner": "C131",
+      "proper_1PI": false,
+      "sequential": false
+    },
+    {
+      "classification": "nonmatrix boundary interface",
+      "graph_id": "C188-C130-BOUNDARY",
+      "interface": true,
+      "owner": "C130",
+      "proper_1PI": "future interface",
+      "sequential": false
+    },
+    {
+      "classification": "source/operator residual-link interface",
+      "graph_id": "C188-C182-LINK",
+      "interface": true,
+      "owner": "C182",
+      "proper_1PI": "future interface",
+      "sequential": false
+    },
+    {
+      "classification": "sequential qg\u2194qgg transition",
+      "graph_id": "C185-QG-QGG-QUARK",
+      "interface": false,
+      "owner": "C185",
+      "proper_1PI": false,
+      "sequential": true
+    },
+    {
+      "classification": "sequential cubic transition",
+      "graph_id": "C186-QG-QGG-CUBIC",
+      "interface": false,
+      "owner": "C186",
+      "proper_1PI": false,
+      "sequential": true
+    },
+    {
+      "classification": "future executable q\u2194qgg contact",
+      "graph_id": "C188-FUTURE-CONTACT",
+      "interface": false,
+      "owner": "C188",
+      "proper_1PI": "future",
+      "sequential": false
+    }
+  ],
+  "schema": "C188-TOPOLOGY-V1"
+}

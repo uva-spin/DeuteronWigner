@@ -1,0 +1,167 @@
+{
+  "schema": "C204-PULLBACK-V1",
+  "artifact": "pullback",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 pullback is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-PULLBACK-COMMUTATOR-V1",
+    "rows": [
+      {
+        "record_id": "C204-COMM-K9-ENDPOINT_GHOST",
+        "resolution": "K9",
+        "owner_id": "ENDPOINT_GHOST",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K9-ENDPOINT_ANTIGHOST",
+        "resolution": "K9",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K9-RESIDUAL_LINK",
+        "resolution": "K9",
+        "owner_id": "RESIDUAL_LINK",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K11-ENDPOINT_GHOST",
+        "resolution": "K11",
+        "owner_id": "ENDPOINT_GHOST",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K11-ENDPOINT_ANTIGHOST",
+        "resolution": "K11",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K11-RESIDUAL_LINK",
+        "resolution": "K11",
+        "owner_id": "RESIDUAL_LINK",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K13-ENDPOINT_GHOST",
+        "resolution": "K13",
+        "owner_id": "ENDPOINT_GHOST",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K13-ENDPOINT_ANTIGHOST",
+        "resolution": "K13",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-COMM-K13-RESIDUAL_LINK",
+        "resolution": "K13",
+        "owner_id": "RESIDUAL_LINK",
+        "s_after_pullback": "source-derived",
+        "pullback_after_s": "independent C181/C203 route",
+        "commutator": "EXACT_SYMBOLIC_ZERO_FINITE_HO_ENDPOINT_SCOPE",
+        "holonomy_remainder": "separate",
+        "routes": [
+          "BND-A",
+          "BND-C",
+          "BND-E"
+        ],
+        "physical": false
+      }
+    ],
+    "count": 9,
+    "root": "c6e46f0b94c524ccc7989f89a2d2bda321182280d601b63016e2d825d898cee7"
+  }
+}

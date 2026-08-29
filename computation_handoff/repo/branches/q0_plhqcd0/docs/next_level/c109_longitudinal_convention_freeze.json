@@ -1,0 +1,11 @@
+{
+  "schema": "C109-LONGITUDINAL-CONVENTION-V1",
+  "status": "C109_LONGITUDINAL_CONVENTION_FROZEN_COMPLETE",
+  "cell": "-L <= x^- <= L",
+  "mode": "p_i^+=pi*k_i/L",
+  "total": "P^+=pi*K/L",
+  "K": ["9/2", "11/2", "13/2"],
+  "fractions": "x_i=k_i/K",
+  "L": "symbolic",
+  "M2": "2P^+P^- - P_perp^2"
+}

@@ -1,0 +1,48 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "7b0b3ddcb10f567a83127ea230a0990638144201c6cad2bb177a61d39247ae43",
+  "exclusions": [
+    {
+      "family": "O4-AUXILIARY-SPACELIKE",
+      "reason": [
+        "representation_only"
+      ]
+    },
+    {
+      "family": "O4-EXPONENTIAL",
+      "reason": [
+        "not_selected_physical_scheme"
+      ]
+    },
+    {
+      "family": "O4-FINITE-LENGTH-SPACELIKE",
+      "reason": [
+        "equivalence_scope_only"
+      ]
+    },
+    {
+      "family": "O4-DRESSED-FIELD",
+      "reason": [
+        "large_momentum_operator_not_identical"
+      ]
+    },
+    {
+      "family": "O4-UNAVAILABLE",
+      "reason": [
+        "physical_plan_selected"
+      ]
+    }
+  ],
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "selected": "O4-SPACELIKE-COLLINS-JMY",
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

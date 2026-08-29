@@ -1,0 +1,52 @@
+{
+  "plan_tiers": {
+    "ANALYTIC_PROCESS_ORACLE": "EXECUTABLE_VALIDATION_ONLY",
+    "PHYSICAL_INPUT_PROCESS": "EMPTY",
+    "SOURCE_QUALIFIED_PROCESS": "EMPTY"
+  },
+  "processes": [
+    {
+      "link": "PAST",
+      "nuclear": "NN_ONLY",
+      "partner": "SECOND_HADRON_ANALYTIC_TMD",
+      "process": "DY",
+      "status": "ANALYTIC_PROCESS_ORACLE"
+    },
+    {
+      "link": "FUTURE",
+      "nuclear": "NN_ONLY",
+      "partner": "ANALYTIC_TMD_FF",
+      "process": "SIDIS",
+      "status": "ANALYTIC_PROCESS_ORACLE"
+    },
+    {
+      "link": "PROCESS_SPECIFIC_ORDERED_GLUON_PAIR",
+      "nuclear": "NN_ONLY",
+      "partner": "ANALYTIC_HEAVY_PAIR_SOFT",
+      "process": "HQ_DIS",
+      "status": "ANALYTIC_PROCESS_ORACLE_CONDITIONAL"
+    },
+    {
+      "link": "COLLINEAR",
+      "nuclear": "MATCHED_TOTAL_UNAVAILABLE",
+      "partner": "NONE",
+      "process": "INCLUSIVE_B1",
+      "status": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "link": "TARGET_FRAGMENTATION_COMPOSITE",
+      "nuclear": "MATCHED_TOTAL_UNAVAILABLE",
+      "partner": "SPECTRAL_FSI_UNAVAILABLE",
+      "process": "TAGGED_DIS",
+      "status": "OPERATOR_SPECIFIC_UNAVAILABLE"
+    },
+    {
+      "link": "COLOR_ENTANGLED",
+      "nuclear": "NOT_APPLICABLE",
+      "partner": "UNIVERSAL_TMD_PRODUCT_FORBIDDEN",
+      "process": "COLORED_HADROPRODUCTION",
+      "status": "BROKEN_NEGATIVE_CONTROL"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,38 @@
+{
+  "root": "a767c9f4ee286be171fdfeedac003108d1ba8376efd8fa5c7f0200c607b5cc6c",
+  "rows": [
+    {
+      "allowed_states": [
+        "FULL_PERIODIC_LINK_SYMBOLIC_HOLONOMY_INTERFACE",
+        "FULL_PERIODIC_LINK_EXPLICIT_AUTHENTICATED_HOLONOMY",
+        "LOCAL_TRANSVERSE_LINK_ONLY",
+        "HOLONOMY_RECORD_INCOMPLETE"
+      ],
+      "factorization": "U_periodic = U_transition/holonomy(cut-side) * U_local_affine",
+      "future_past_separate": true,
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "identity_default": false,
+      "local_link_is_holonomy": false,
+      "process_class": "DIS_FUTURE",
+      "root_ref": "3f0cbd90b778f75050ec2b0fa68c62d9a105bc4a6370ece635aa446e06d03232",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+    },
+    {
+      "allowed_states": [
+        "FULL_PERIODIC_LINK_SYMBOLIC_HOLONOMY_INTERFACE",
+        "FULL_PERIODIC_LINK_EXPLICIT_AUTHENTICATED_HOLONOMY",
+        "LOCAL_TRANSVERSE_LINK_ONLY",
+        "HOLONOMY_RECORD_INCOMPLETE"
+      ],
+      "factorization": "U_periodic = U_transition/holonomy(cut-side) * U_local_affine",
+      "future_past_separate": true,
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "identity_default": false,
+      "local_link_is_holonomy": false,
+      "process_class": "DY_PAST",
+      "root_ref": "3f0cbd90b778f75050ec2b0fa68c62d9a105bc4a6370ece635aa446e06d03232",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+    }
+  ],
+  "schema": "C182-HOLONOMY-FACTORIZATION-V1"
+}

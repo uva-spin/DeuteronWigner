@@ -1,0 +1,50 @@
+{
+  "C176_HO_boundary": {
+    "dimensions": [
+      36,
+      55,
+      78
+    ],
+    "integration_by_parts_defect": "NONZERO_UNPRUNED",
+    "leakage_entries": [
+      16,
+      20,
+      24
+    ],
+    "norms_GeV": [
+      2.4,
+      3.337289319193048,
+      4.415880433163924
+    ],
+    "ranks": [
+      8,
+      10,
+      12
+    ],
+    "read_only": true
+  },
+  "C177_package_root": "f65edb938e355b72e4bc950a1a20f84220ac18c6f980dae6005cb531f1614f90",
+  "expected_C177_package_root": "f65edb938e355b72e4bc950a1a20f84220ac18c6f980dae6005cb531f1614f90",
+  "finite_cell_adapter_before_C178": "INCOMPLETE",
+  "historical_C43_placeholder": "C43-RESIDUAL-TRANSVERSE-LINK-UNSPECIFIED",
+  "package_root_verified": true,
+  "path_classes": [
+    "BJY_DIS_FUTURE_HALF_LINK",
+    "BJY_DIS_FUTURE_REDUCED_LINK",
+    "BJY_DY_PAST_HALF_LINK",
+    "BJY_DY_PAST_REDUCED_LINK",
+    "JY_TRANSVERSE_INFINITY_CLASS",
+    "JMY_OFFLIGHTCONE_STAPLE"
+  ],
+  "root": "debbf6371381f684a16d913f41bdf6ee1b42241d3edd899ea33bfe9bf292e301",
+  "schema": "C178-C177-FREEZE-V1",
+  "source_objects": [
+    "BJY-PURE-GAUGE-EQ38",
+    "BJY-DIS-FUTURE-HALF-LINK-EQ48",
+    "BJY-DIS-COMPOSITION-EQ50",
+    "BJY-DIS-REDUCED-CONNECTOR-EQ52",
+    "BJY-DY-PAST-ORIENTATION-EQ113-115",
+    "JY-TRANSVERSE-LINK-EQ16",
+    "JMY-OFFLIGHTCONE-STAPLE-EQ2"
+  ]
+}

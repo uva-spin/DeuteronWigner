@@ -1,0 +1,132 @@
+{
+  "baseline": "ad3adeda99ab1115d07284a9c502c5959f08b6e4",
+  "component_interface": {
+    "assembly_rule_present": false,
+    "combined_C50_output_keys": [
+      "pminus_GeV",
+      "m2_GeV2"
+    ],
+    "combined_evaluator_present": true,
+    "component_resolved_evaluator_present": false,
+    "decision": "BLOCK: assembling component matrices from the combined numerical value would invent a mass/transverse decomposition, contrary to C51 section 9.",
+    "required_component_ids": [
+      "MASS_HELICITY_FLIP",
+      "TRANSVERSE_HELICITY"
+    ],
+    "rows": [
+      {
+        "coefficient_function": "ABSENT",
+        "component_id": "MASS_HELICITY_FLIP",
+        "matrix_assembly_status": "ABSENT_BLOCKING",
+        "metadata_authority": {
+          "Pminus_dimension": 1,
+          "explicit_mass_power": 1,
+          "id": "MASS_HELICITY_FLIP",
+          "later_HO_dimension_cancelled": true,
+          "source": "C43 Eq. (24)+C45 spinors",
+          "transverse_rank": 0
+        },
+        "per_entry_evaluator": "evaluate_mass_helicity_flip",
+        "present_in_C50": false,
+        "reason": "C50 returns only combined pminus_GeV/m2_GeV; it supplies no independently evaluable component value or exact symbolic coefficient for this component."
+      },
+      {
+        "coefficient_function": "ABSENT",
+        "component_id": "TRANSVERSE_HELICITY",
+        "matrix_assembly_status": "ABSENT_BLOCKING",
+        "metadata_authority": {
+          "Pminus_dimension": 1,
+          "explicit_mass_power": 0,
+          "id": "TRANSVERSE_HELICITY",
+          "later_HO_dimension_cancelled": true,
+          "source": "C43 Eq. (24)+C45 polarizations",
+          "transverse_rank": 1
+        },
+        "per_entry_evaluator": "evaluate_transverse_helicity",
+        "present_in_C50": false,
+        "reason": "C50 returns only combined pminus_GeV/m2_GeV; it supplies no independently evaluable component value or exact symbolic coefficient for this component."
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "allowed": true,
+      "classification": "SOURCE_DERIVED_SYMBOLIC_COMPONENT",
+      "id": "C43_ACTION"
+    },
+    {
+      "allowed": true,
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "id": "C45_MODES"
+    },
+    {
+      "allowed": true,
+      "classification": "SOURCE_DERIVED_BASIS_IDENTITY",
+      "id": "C47_BASIS_TM_CM"
+    },
+    {
+      "allowed": true,
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "id": "C50_TOTAL_EVALUATOR"
+    },
+    {
+      "allowed": true,
+      "classification": "SOURCE_DERIVED_SYMBOLIC_COMPONENT",
+      "id": "C50_COMPONENT_METADATA"
+    },
+    {
+      "allowed": false,
+      "classification": "ABSENT_BLOCKING",
+      "id": "C50_COMPONENT_PER_ENTRY_INTERFACE"
+    },
+    {
+      "allowed": false,
+      "classification": "DIAGNOSTIC_ONLY",
+      "id": "C47_RAW_CANONICAL_TUPLE_VALUES"
+    },
+    {
+      "allowed": false,
+      "classification": "DIAGNOSTIC_ONLY",
+      "id": "C40"
+    }
+  ],
+  "no_matrices_allocated": [
+    "component",
+    "colorless",
+    "color intertwiner",
+    "physical emission",
+    "absorption",
+    "linear block"
+  ],
+  "positive_assembly_permitted": false,
+  "runtime_raw_tuple_poisoning": {
+    "after_sha256": "7304e86a62c9aa9dcb2ca60f163fe4f0c28cc1bf10a466161c4193df53c41fb8",
+    "before_sha256": "7304e86a62c9aa9dcb2ca60f163fe4f0c28cc1bf10a466161c4193df53c41fb8",
+    "guard": "RUNTIME_NAN_SENTINEL_POISONING",
+    "pass": true,
+    "poison_contract": "basis1.canonical_kernel raises before returning any historical numerical value",
+    "raw_value_read": false,
+    "unchanged": true
+  },
+  "static_raw_tuple_guard": {
+    "allowed_dependencies": [
+      "q_basis",
+      "qg_basis",
+      "x_map",
+      "finite_box_pminus_kernel",
+      "pminus_to_m2",
+      "C45 mode functions"
+    ],
+    "evaluator_module": "deuteron_wigner.bridge.vsrc.core",
+    "guard": "AST_IMPORT_AND_NAME_GUARD",
+    "pass": true,
+    "prohibited_symbols": [
+      "canonical_kernel",
+      "raw_tuple_semantics_summary",
+      "tuple_semantics_records",
+      "vertex1"
+    ],
+    "referenced_prohibited_symbols": []
+  },
+  "status": "C51_VERTEX_DIMENSIONAL_ASSEMBLY_INCOMPLETE"
+}

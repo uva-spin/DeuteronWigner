@@ -1,0 +1,285 @@
+{
+  "plans": [
+    {
+      "plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "rows": [
+        {
+          "charge_residual": 0.0,
+          "dimensions": [
+            4,
+            6,
+            9,
+            9,
+            12,
+            16,
+            16,
+            20,
+            24,
+            24
+          ],
+          "flows": {
+            "bare": 0.12,
+            "counterterm": -0.005600000000000049,
+            "discrepancy": 0.006,
+            "induced": 0.017
+          },
+          "jacobian_singular_values": [
+            1.31,
+            1.0,
+            0.71,
+            0.29,
+            0.07,
+            0.0
+          ],
+          "level": 0,
+          "mass2": 0.7744,
+          "mass_residual": 0.0,
+          "null_directions": 1,
+          "parameters": {
+            "counterterm": -0.005600000000000049,
+            "delta_g": 0.014,
+            "delta_g3": 0.011,
+            "delta_g4": 0.008,
+            "null_directions": 1,
+            "resolution": 0
+          },
+          "unfitted_holdouts": {
+            "antiquark_order2": 0.013,
+            "gluon_order2": 0.016
+          }
+        },
+        {
+          "charge_residual": 0.0,
+          "dimensions": [
+            7,
+            10,
+            15,
+            15,
+            20,
+            24,
+            24,
+            32,
+            40,
+            40
+          ],
+          "flows": {
+            "bare": 0.06,
+            "counterterm": -0.0015758921324875441,
+            "discrepancy": 0.003,
+            "induced": 0.0085
+          },
+          "jacobian_singular_values": [
+            1.31,
+            1.0,
+            0.71,
+            0.29,
+            0.07,
+            0.0
+          ],
+          "level": 1,
+          "mass2": 0.7743999999999969,
+          "mass_residual": -3.1086244689504383e-15,
+          "null_directions": 1,
+          "parameters": {
+            "counterterm": -0.0015758921324875441,
+            "delta_g": 0.007,
+            "delta_g3": 0.0055,
+            "delta_g4": 0.004,
+            "null_directions": 1,
+            "resolution": 1
+          },
+          "unfitted_holdouts": {
+            "antiquark_order2": 0.0065,
+            "gluon_order2": 0.008
+          }
+        },
+        {
+          "charge_residual": 0.0,
+          "dimensions": [
+            10,
+            14,
+            21,
+            21,
+            28,
+            32,
+            32,
+            44,
+            56,
+            56
+          ],
+          "flows": {
+            "bare": 0.04,
+            "counterterm": 0.0025196332309532776,
+            "discrepancy": 0.002,
+            "induced": 0.005666666666666667
+          },
+          "jacobian_singular_values": [
+            1.31,
+            1.0,
+            0.71,
+            0.29,
+            0.07,
+            0.0
+          ],
+          "level": 2,
+          "mass2": 0.7743999999999981,
+          "mass_residual": -1.887379141862766e-15,
+          "null_directions": 1,
+          "parameters": {
+            "counterterm": 0.0025196332309532776,
+            "delta_g": 0.004666666666666667,
+            "delta_g3": 0.0036666666666666666,
+            "delta_g4": 0.0026666666666666666,
+            "null_directions": 1,
+            "resolution": 2
+          },
+          "unfitted_holdouts": {
+            "antiquark_order2": 0.004333333333333333,
+            "gluon_order2": 0.005333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "plan_id": "C14:H7:PLAN:01741c51ff49b3844630",
+      "rows": [
+        {
+          "charge_residual": 0.0,
+          "dimensions": [
+            4,
+            6,
+            9,
+            9,
+            12,
+            16,
+            16,
+            20,
+            24,
+            24
+          ],
+          "flows": {
+            "bare": 0.12,
+            "counterterm": -0.005600000000000049,
+            "discrepancy": 0.006,
+            "induced": 0.017
+          },
+          "jacobian_singular_values": [
+            1.31,
+            1.0,
+            0.71,
+            0.29,
+            0.07,
+            0.0
+          ],
+          "level": 0,
+          "mass2": 0.7744,
+          "mass_residual": 0.0,
+          "null_directions": 1,
+          "parameters": {
+            "counterterm": -0.005600000000000049,
+            "delta_g": 0.014,
+            "delta_g3": 0.011,
+            "delta_g4": 0.008,
+            "null_directions": 1,
+            "resolution": 0
+          },
+          "unfitted_holdouts": {
+            "antiquark_order2": 0.013,
+            "gluon_order2": 0.016
+          }
+        },
+        {
+          "charge_residual": 0.0,
+          "dimensions": [
+            7,
+            10,
+            15,
+            15,
+            20,
+            24,
+            24,
+            32,
+            40,
+            40
+          ],
+          "flows": {
+            "bare": 0.06,
+            "counterterm": 0.01417370329455514,
+            "discrepancy": 0.003,
+            "induced": 0.0085
+          },
+          "jacobian_singular_values": [
+            1.31,
+            1.0,
+            0.71,
+            0.29,
+            0.07,
+            0.0
+          ],
+          "level": 1,
+          "mass2": 0.7744000000000005,
+          "mass_residual": 5.551115123125783e-16,
+          "null_directions": 1,
+          "parameters": {
+            "counterterm": 0.01417370329455514,
+            "delta_g": 0.007,
+            "delta_g3": 0.0055,
+            "delta_g4": 0.004,
+            "null_directions": 1,
+            "resolution": 1
+          },
+          "unfitted_holdouts": {
+            "antiquark_order2": 0.0065,
+            "gluon_order2": 0.008
+          }
+        },
+        {
+          "charge_residual": 0.0,
+          "dimensions": [
+            10,
+            14,
+            21,
+            21,
+            28,
+            32,
+            32,
+            44,
+            56,
+            56
+          ],
+          "flows": {
+            "bare": 0.04,
+            "counterterm": 0.022090294447799308,
+            "discrepancy": 0.002,
+            "induced": 0.005666666666666667
+          },
+          "jacobian_singular_values": [
+            1.31,
+            1.0,
+            0.71,
+            0.29,
+            0.07,
+            0.0
+          ],
+          "level": 2,
+          "mass2": 0.7744000000000024,
+          "mass_residual": 2.4424906541753444e-15,
+          "null_directions": 1,
+          "parameters": {
+            "counterterm": 0.022090294447799308,
+            "delta_g": 0.004666666666666667,
+            "delta_g3": 0.0036666666666666666,
+            "delta_g4": 0.0026666666666666666,
+            "null_directions": 1,
+            "resolution": 2
+          },
+          "unfitted_holdouts": {
+            "antiquark_order2": 0.004333333333333333,
+            "gluon_order2": 0.005333333333333333
+          }
+        }
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

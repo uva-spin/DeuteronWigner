@@ -1,0 +1,83 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "packet_programs_validation",
+  "authority_record": {
+    "root": "d60695da425fad434626fdd182326b4725d6b1492a24e99c91286cdf6b4415ce",
+    "rows": [
+      {
+        "HO_coefficients": "c_nm=integral d2p phi_nm^*(p;b_HO) W_i(k,p), executable quadrature",
+        "bump": "B(u)=exp(-1/(1-u^2)) for |u|<1 and 0 otherwise",
+        "coefficient_function": "W_i(k,p_perp)=N_i B((k-k0_i)/Delta_i) exp(-|p_perp-p0_i|^2/(2 sigma_i^2)) chi_i(lambda,color)",
+        "normalization": "N_i=[integral dk d2p |B|^2 exp(-|p-p0|^2/sigma_i^2) sum|chi_i|^2]^-1/2",
+        "normalization_method": "positive one-dimensional bump quadrature times analytic pi sigma_i^2 transverse factor",
+        "packet_id": "C266-W1",
+        "parameters": [
+          "k0_1>Delta_1>0",
+          "sigma_1>0",
+          "p0_1 in R2"
+        ],
+        "root": "0c3d3826e06d792219dd246b4344232f7a15c40269ddd4e500de3bef14d2380a",
+        "support": "k in (k0_1-Delta_1,k0_1+Delta_1) subset positive Q0 domain",
+        "width_rule": "parameters remain explicit scheme coordinates; no numerical choice"
+      },
+      {
+        "HO_coefficients": "c_nm=integral d2p phi_nm^*(p;b_HO) W_i(k,p), executable quadrature",
+        "bump": "B(u)=exp(-1/(1-u^2)) for |u|<1 and 0 otherwise",
+        "coefficient_function": "W_i(k,p_perp)=N_i B((k-k0_i)/Delta_i) exp(-|p_perp-p0_i|^2/(2 sigma_i^2)) chi_i(lambda,color)",
+        "normalization": "N_i=[integral dk d2p |B|^2 exp(-|p-p0|^2/sigma_i^2) sum|chi_i|^2]^-1/2",
+        "normalization_method": "positive one-dimensional bump quadrature times analytic pi sigma_i^2 transverse factor",
+        "packet_id": "C266-W2",
+        "parameters": [
+          "k0_2>Delta_2>0",
+          "sigma_2>0",
+          "p0_2 in R2"
+        ],
+        "root": "ec33ce185a1c9369930a86f91050b6f2435d9d4e68604908a93b3ee7338e3723",
+        "support": "k in (k0_2-Delta_2,k0_2+Delta_2) subset positive Q0 domain",
+        "width_rule": "parameters remain explicit scheme coordinates; no numerical choice"
+      },
+      {
+        "HO_coefficients": "c_nm=integral d2p phi_nm^*(p;b_HO) W_i(k,p), executable quadrature",
+        "bump": "B(u)=exp(-1/(1-u^2)) for |u|<1 and 0 otherwise",
+        "coefficient_function": "W_i(k,p_perp)=N_i B((k-k0_i)/Delta_i) exp(-|p_perp-p0_i|^2/(2 sigma_i^2)) chi_i(lambda,color)",
+        "normalization": "N_i=[integral dk d2p |B|^2 exp(-|p-p0|^2/sigma_i^2) sum|chi_i|^2]^-1/2",
+        "normalization_method": "positive one-dimensional bump quadrature times analytic pi sigma_i^2 transverse factor",
+        "packet_id": "C266-W3",
+        "parameters": [
+          "k0_3>Delta_3>0",
+          "sigma_3>0",
+          "p0_3 in R2"
+        ],
+        "root": "c350cc3c61943ff39c45ed27c89b228fbeae0b6bb15990775121d9752cbae88d",
+        "support": "k in (k0_3-Delta_3,k0_3+Delta_3) subset positive Q0 domain",
+        "width_rule": "parameters remain explicit scheme coordinates; no numerical choice"
+      },
+      {
+        "HO_coefficients": "c_nm=integral d2p phi_nm^*(p;b_HO) W_i(k,p), executable quadrature",
+        "bump": "B(u)=exp(-1/(1-u^2)) for |u|<1 and 0 otherwise",
+        "coefficient_function": "W_i(k,p_perp)=N_i B((k-k0_i)/Delta_i) exp(-|p_perp-p0_i|^2/(2 sigma_i^2)) chi_i(lambda,color)",
+        "normalization": "N_i=[integral dk d2p |B|^2 exp(-|p-p0|^2/sigma_i^2) sum|chi_i|^2]^-1/2",
+        "normalization_method": "positive one-dimensional bump quadrature times analytic pi sigma_i^2 transverse factor",
+        "packet_id": "C266-W4",
+        "parameters": [
+          "k0_4>Delta_4>0",
+          "sigma_4>0",
+          "p0_4 in R2"
+        ],
+        "root": "e0c25c3f447d38d6aff2666052c604a02c1a9bf1e208ce6ff11e38dd3c3dcb8e",
+        "support": "k in (k0_4-Delta_4,k0_4+Delta_4) subset positive Q0 domain",
+        "width_rule": "parameters remain explicit scheme coordinates; no numerical choice"
+      }
+    ]
+  },
+  "package_root": "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950",
+  "physical": false,
+  "plan": "C117CURRAMP1-A",
+  "schema": "C266-PACKET_PROGRAMS-VALIDATION-V1",
+  "status": "C266_C117_EXECUTABLE_CONTINUUM_CURRENT_AND_PARAMETERIZED_PACKET_CAPSULES_READY",
+  "validation": "PASS"
+}

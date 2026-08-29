@@ -1,0 +1,270 @@
+{
+  "C57_import": {
+    "C53_support_holdout": [
+      312,
+      510,
+      756
+    ],
+    "C55_monomial": [
+      "b_dagger",
+      "a",
+      "a_dagger",
+      "b"
+    ],
+    "C57_status": "C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY",
+    "forbidden": [
+      "C57 mutation",
+      "C53 numerical values",
+      "C53 energy denominators",
+      "BPP DLCQ finite sum"
+    ],
+    "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+    "plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+    "records": [
+      {
+        "envelope": 2304,
+        "field_mask_hash": "ae17a2eebc232524e2b746fcab6d9977103f2958f6d86cc7abf24838c4b56569",
+        "field_ranks": [
+          744,
+          744,
+          620,
+          744,
+          744,
+          620
+        ],
+        "kernel_hash": "9dee132f15c3b63d3ae38d2d6ff553a59f2670cba2a435e419f8df2ea3075a20",
+        "mode_set_hash": "0e54d52be614e205bcc341c1483ccdda3ef73071a5803bcd9e9703ce5b8e8697",
+        "qg_mask_hash": "8be8a08da9bf574bd4f1f9e6fa2a3d4547809105d2584087f79d0bd4f8938b1f",
+        "qg_ranks": [
+          52,
+          52,
+          52,
+          52,
+          52,
+          52
+        ],
+        "resolution": "K9_2_N8_b0.40",
+        "union": 1216
+      },
+      {
+        "envelope": 4400,
+        "field_mask_hash": "d5446d5f3a2939be8551a684ede62376f36ffc58e9f96eb84ee0f8002d5221b9",
+        "field_ranks": [
+          1470,
+          1470,
+          1225,
+          1470,
+          1470,
+          1225
+        ],
+        "kernel_hash": "6bb0a0f7404f64ce4871ce9d12736bc37e643ec4e342971f941a110a276b9428",
+        "mode_set_hash": "7af12484439e95ba02c34dfd27bf4758f6cb43f1abf7503fe654a4518a3ea636",
+        "qg_mask_hash": "68d3dbdfeabd1499e12f5c7dc278a44af8f85c742212f1ebe0100874ceab701d",
+        "qg_ranks": [
+          85,
+          85,
+          85,
+          85,
+          85,
+          85
+        ],
+        "resolution": "K11_2_N10_b0.45",
+        "union": 2320
+      },
+      {
+        "envelope": 7488,
+        "field_mask_hash": "72af3ebc2fe6874ac2e50fdfd5d39c72cad904b2700a49837eb83fff927ef8c3",
+        "field_ranks": [
+          2556,
+          2556,
+          2130,
+          2556,
+          2556,
+          2130
+        ],
+        "kernel_hash": "9d8bf2a4454e7085d0e184f6c1aa5cdd428083d15ba700c5cf0e82a8360cbfe9",
+        "mode_set_hash": "de8b541b16f3f0dbc767a6ad78d6c6418139825be2be127922939df2b240b830",
+        "qg_mask_hash": "80aad472355c3b9f5e056e6d2cc3f548d6e0b7f365a48af8cb7068c6dfda7883",
+        "qg_ranks": [
+          126,
+          126,
+          126,
+          126,
+          126,
+          126
+        ],
+        "resolution": "K13_2_N12_b0.50",
+        "union": 3936
+      }
+    ],
+    "snapshot_hash": "9269d41bbd2c669838ee1649b8d1dc77eb81194a84ad295a670bc3116e8b723d",
+    "status": "PASS_READ_ONLY"
+  },
+  "baseline": "d9d981459dff8d21d94ef13b0a671e8140b47caa",
+  "full_ledgers": "data/runtime/c58_ifnorm2/*/mode_contribution_ledger.json",
+  "no_BPP_DLCQ_sum": true,
+  "no_C53_values": true,
+  "no_complete_instantaneous_fermion": true,
+  "no_direct_contact": true,
+  "pair_support_plan": "IFNORM2-ORDERED-JOINT-SUPPORT",
+  "qg_sector_plan": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+  "records": [
+    {
+      "by_adjoint": {
+        "0": 496,
+        "1": 496,
+        "2": 496,
+        "3": 496,
+        "4": 496,
+        "5": 496,
+        "6": 496,
+        "7": 744
+      },
+      "by_helicity": {
+        "-1": 2108,
+        "1": 2108
+      },
+      "by_k_g": {
+        "1": 1054,
+        "2": 1054,
+        "3": 1054,
+        "4": 1054
+      },
+      "by_shell": {
+        "1": 272,
+        "2": 544,
+        "3": 816,
+        "4": 952,
+        "5": 816,
+        "6": 544,
+        "7": 272
+      },
+      "mode_count": 4216,
+      "pair_counts": {
+        "admitted": 4216,
+        "exact_zero": 30,
+        "forbidden": 0
+      },
+      "ranges": {
+        "k_g": [
+          1.0,
+          4.0
+        ],
+        "shell": [
+          1,
+          7
+        ]
+      },
+      "resolution": "K9_2_N8_b0.40",
+      "sum": 23.965460317461346
+    },
+    {
+      "by_adjoint": {
+        "0": 980,
+        "1": 980,
+        "2": 980,
+        "3": 980,
+        "4": 980,
+        "5": 980,
+        "6": 980,
+        "7": 1470
+      },
+      "by_helicity": {
+        "-1": 4165,
+        "1": 4165
+      },
+      "by_k_g": {
+        "1": 1666,
+        "2": 1666,
+        "3": 1666,
+        "4": 1666,
+        "5": 1666
+      },
+      "by_shell": {
+        "1": 340,
+        "2": 680,
+        "3": 1020,
+        "4": 1360,
+        "5": 1530,
+        "6": 1360,
+        "7": 1020,
+        "8": 680,
+        "9": 340
+      },
+      "mode_count": 8330,
+      "pair_counts": {
+        "admitted": 8330,
+        "exact_zero": 30,
+        "forbidden": 0
+      },
+      "ranges": {
+        "k_g": [
+          1.0,
+          5.0
+        ],
+        "shell": [
+          1,
+          9
+        ]
+      },
+      "resolution": "K11_2_N10_b0.45",
+      "sum": 42.27299999999791
+    },
+    {
+      "by_adjoint": {
+        "0": 1704,
+        "1": 1704,
+        "2": 1704,
+        "3": 1704,
+        "4": 1704,
+        "5": 1704,
+        "6": 1704,
+        "7": 2556
+      },
+      "by_helicity": {
+        "-1": 7242,
+        "1": 7242
+      },
+      "by_k_g": {
+        "1": 2414,
+        "2": 2414,
+        "3": 2414,
+        "4": 2414,
+        "5": 2414,
+        "6": 2414
+      },
+      "by_shell": {
+        "1": 408,
+        "10": 816,
+        "11": 408,
+        "2": 816,
+        "3": 1224,
+        "4": 1632,
+        "5": 2040,
+        "6": 2244,
+        "7": 2040,
+        "8": 1632,
+        "9": 1224
+      },
+      "mode_count": 14484,
+      "pair_counts": {
+        "admitted": 14484,
+        "exact_zero": 30,
+        "forbidden": 0
+      },
+      "ranges": {
+        "k_g": [
+          1.0,
+          6.0
+        ],
+        "shell": [
+          1,
+          11
+        ]
+      },
+      "resolution": "K13_2_N12_b0.50",
+      "sum": 67.79321789321601
+    }
+  ],
+  "status": "C58_SOURCE_DERIVED_IFERM_NORMAL_ORDERING_READY"
+}

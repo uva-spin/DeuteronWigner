@@ -1,0 +1,23 @@
+{
+  "schema": "C393-C394-HQCDRIMASSC43PHYSICALBOUNDARYPHASE1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C393/HQCDRIMASSC43RUNNINGPHASE1",
+  "from_status": "C393_AUTHENTICATED_MSBAR_RUNNING_THRESHOLD_ACTIVE_FLAVOR_SYMBOLIC_AUTHORITY_READY_PHYSICAL_BOUNDARY_INPUT_NEXT",
+  "from_plan": "RUNNINGPHASE1-B",
+  "from_package_root": "d194392345e68f7d4cb7efc8dbda471486de16986d78e6138029d80b6d06c251",
+  "next_job": "C394/HQCDRIMASSC43PHYSICALBOUNDARYPHASE1",
+  "next_frontier": {
+    "object_id": "C393-C43-PHYSICAL-BOUNDARY-HOLONOMY-ENSEMBLE-AND-PARAMETER-CLOSURE",
+    "exact_missing_object": "bind authenticated physical boundary and holonomy ensemble records and close the resolution-specific parameter map without defaults"
+  },
+  "authority_discontinuity": "physical boundary/holonomy ensemble and input selection",
+  "constraints": {
+    "C391_C393_frozen": true,
+    "physical_records_authenticated": true,
+    "boundary_holonomy_owners_separate": true,
+    "K9_K11_K13_separate": true,
+    "counterterm_null_representative_unselected": true,
+    "Q0_Q1_Q2_frozen": true,
+    "activation_gate_status": "NOT_READY",
+    "push": false
+  }
+}

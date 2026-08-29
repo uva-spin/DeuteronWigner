@@ -1,0 +1,151 @@
+{
+  "count": 5,
+  "root": "e9c4cd94dbf77ee79a9330721322a399dfc7fdbbe225ec27e14c8e6e6137464b",
+  "rows": [
+    {
+      "available_domains": [
+        "q",
+        "qg"
+      ],
+      "boundary_P0_Q0": "C43 finite-cell metadata; qgg placement absent",
+      "completeness": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "coupling_degree": 2,
+      "cross_sector_certificate": "cf6b324df560d1e1e255fd49f2a2872765c1e688339e0a3f2aadf3d0232cae54",
+      "field_content": [
+        "q",
+        "qg"
+      ],
+      "hermiticity": "public block authority; qgg branch unbound",
+      "inverse_longitudinal": "C43/C112 scope not exposed in qgg source AST",
+      "normal_ordering": "C112_PUBLIC_BLOCK_METADATA",
+      "operator_expression": "PUBLIC_SECTOR_SHAPES_ONLY_NO_FIELD_AST",
+      "project_expression_id": "C112-SECTOR-MANIFEST-V1",
+      "q_shape": [
+        6,
+        6
+      ],
+      "qg_shape": [
+        1344,
+        1344
+      ],
+      "source_object_id": "C112_PUBLIC_SECTOR_K9_2_N8_b0.40",
+      "target_adapters": [],
+      "upstream_package": "C112",
+      "version_root": "b4d7a29441a56e6f27661c3b43d49115d5d3cb333e6ff2abcd113eea03893519"
+    },
+    {
+      "available_domains": [
+        "q",
+        "qg"
+      ],
+      "boundary_P0_Q0": "C43 finite-cell metadata; qgg placement absent",
+      "completeness": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "coupling_degree": 2,
+      "cross_sector_certificate": "d9c224edb3a20c7882eb9859a2f1376e6104e2166c74f9df05205311af64bcc8",
+      "field_content": [
+        "q",
+        "qg"
+      ],
+      "hermiticity": "public block authority; qgg branch unbound",
+      "inverse_longitudinal": "C43/C112 scope not exposed in qgg source AST",
+      "normal_ordering": "C112_PUBLIC_BLOCK_METADATA",
+      "operator_expression": "PUBLIC_SECTOR_SHAPES_ONLY_NO_FIELD_AST",
+      "project_expression_id": "C112-SECTOR-MANIFEST-V1",
+      "q_shape": [
+        6,
+        6
+      ],
+      "qg_shape": [
+        2700,
+        2700
+      ],
+      "source_object_id": "C112_PUBLIC_SECTOR_K11_2_N10_b0.45",
+      "target_adapters": [],
+      "upstream_package": "C112",
+      "version_root": "6e24de70846892c7d3236abae961c26a4b1b0de5ccf15e5054f28ab8c8a591d9"
+    },
+    {
+      "available_domains": [
+        "q",
+        "qg"
+      ],
+      "boundary_P0_Q0": "C43 finite-cell metadata; qgg placement absent",
+      "completeness": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "coupling_degree": 2,
+      "cross_sector_certificate": "ae9552f9975db565b8247603f1234c3562aa2e0219fd5a696962b925360af5c5",
+      "field_content": [
+        "q",
+        "qg"
+      ],
+      "hermiticity": "public block authority; qgg branch unbound",
+      "inverse_longitudinal": "C43/C112 scope not exposed in qgg source AST",
+      "normal_ordering": "C112_PUBLIC_BLOCK_METADATA",
+      "operator_expression": "PUBLIC_SECTOR_SHAPES_ONLY_NO_FIELD_AST",
+      "project_expression_id": "C112-SECTOR-MANIFEST-V1",
+      "q_shape": [
+        6,
+        6
+      ],
+      "qg_shape": [
+        4752,
+        4752
+      ],
+      "source_object_id": "C112_PUBLIC_SECTOR_K13_2_N12_b0.50",
+      "target_adapters": [],
+      "upstream_package": "C112",
+      "version_root": "92e01968f5c5f4349d8fb58e19fe6280afc92fab2e908e38944ee9ff54010041"
+    },
+    {
+      "available_domains": [
+        "q->q",
+        "qg->qg"
+      ],
+      "boundary_P0_Q0": "P0/Q0 scope typed in C187; source AST absent",
+      "completeness": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "component_count": 8,
+      "coupling_degree": 2,
+      "field_content": [
+        "J_q",
+        "J_g",
+        "q",
+        "qg"
+      ],
+      "hermiticity": "public current-component authority; qgg branch unbound",
+      "inverse_longitudinal": "C43/C127 finite-cell current authority; qgg placement absent",
+      "normal_ordering": "current-component public metadata",
+      "operator_expression": "PUBLIC_COMPONENT_STATUS_NO_QGG_FIELD_AST",
+      "project_expression_id": "C127-COMPONENT-MANIFEST-V1",
+      "source_object_id": "C127_PUBLIC_COMPONENT_MANIFEST",
+      "target_adapters": [],
+      "upstream_package": "C127",
+      "version_root": "0615f7b5c25f30f91501e250f7a2c72bf242077dfe562d42abf259012a8ed11f"
+    },
+    {
+      "available_domains": [
+        "q",
+        "qg"
+      ],
+      "boundary_P0_Q0": "C43 finite-cell P0/Q0 scope",
+      "completeness": "SOURCE_EXPRESSION_AST_INCOMPLETE",
+      "component_count": 8,
+      "coupling_degree": 2,
+      "field_content": [
+        "J_q",
+        "J_g",
+        "q",
+        "qg"
+      ],
+      "hermiticity": "aggregate public route; qgg branch unbound",
+      "inverse_longitudinal": "finite-cell metadata only; qgg placement absent",
+      "normal_ordering": "aggregate component route",
+      "operator_expression": "PUBLIC_FACTOR_CURRENT_AGGREGATE_NO_QGG_DESCENDANT",
+      "project_expression_id": "C127-INSTANTANEOUS-CURRENT-SPARSE-V1",
+      "source_object_id": "C127_PUBLIC_CURRENT_AGGREGATE",
+      "target_adapters": [],
+      "upstream_package": "C127",
+      "version_root": "0615f7b5c25f30f91501e250f7a2c72bf242077dfe562d42abf259012a8ed11f"
+    }
+  ],
+  "schema": "C188-SOURCE-INVENTORY-V1",
+  "source_expression_complete": false
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "C206-LEFT-NULL-BASIS-MANIFEST-V1",
+  "artifact": "left_null_basis_manifest",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "basis_id": "C206-LNULL-K9",
+        "resolution": "K9",
+        "dimension": 6,
+        "basis_vectors": [
+          "ell1",
+          "ell2",
+          "ell3",
+          "ell4",
+          "ell5",
+          "ell6"
+        ],
+        "compatibility_residual": "EXACT_ZERO"
+      },
+      {
+        "basis_id": "C206-LNULL-K11",
+        "resolution": "K11",
+        "dimension": 6,
+        "basis_vectors": [
+          "ell1",
+          "ell2",
+          "ell3",
+          "ell4",
+          "ell5",
+          "ell6"
+        ],
+        "compatibility_residual": "EXACT_ZERO"
+      },
+      {
+        "basis_id": "C206-LNULL-K13",
+        "resolution": "K13",
+        "dimension": 6,
+        "basis_vectors": [
+          "ell1",
+          "ell2",
+          "ell3",
+          "ell4",
+          "ell5",
+          "ell6"
+        ],
+        "compatibility_residual": "EXACT_ZERO"
+      }
+    ],
+    "count": 3,
+    "dimension": 6,
+    "root": "ca706919db9beac015a2530020926e14095ec472189a010b6ae958de18187c1e"
+  }
+}

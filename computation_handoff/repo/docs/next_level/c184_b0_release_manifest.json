@@ -1,0 +1,25 @@
+{
+  "decision": "B0_C43_TRANSVERSE_GLUON_PROPER_TWO_POINT_READY_COUPLING_COMPONENT_PARTIAL",
+  "exact_scope": "C43 finite-basis B0 proper transverse-gluon coefficient and B0 coupling ledger only; B1/full-ST remainder explicit",
+  "gates": {
+    "analyticity_covariance": true,
+    "count_once": true,
+    "coupling_component": true,
+    "external_domain": true,
+    "field_response": true,
+    "gg_vertex": true,
+    "ghost_link_holonomy": true,
+    "nonpropagating": true,
+    "parameter_schema": true,
+    "propagating_loops": true,
+    "proper_aggregation": true,
+    "qqbar_vertex": true,
+    "target_boundary": true,
+    "tensor_projection": true,
+    "zero_counterterm": true
+  },
+  "physical": false,
+  "plan": "LFGMATCHCALC2-B",
+  "root": "5c8f3c90a2527dac8df0c226256c2466d73b9231e30aaa5f43f923b394b05438",
+  "schema": "C184-B0-RELEASE-V1"
+}

@@ -1,0 +1,24 @@
+{
+  "ART25": "not imported",
+  "C40": "not imported",
+  "C47_raw_tuples": "not imported",
+  "C50_combined": "not imported",
+  "C53_vertex_values": "not imported",
+  "historical_mass_coefficients": "not imported",
+  "required_failure_if_regulator_plan_changes": true,
+  "static": {
+    "forbidden": [
+      "canonical_kernel",
+      "evaluate_canonical_vertex",
+      "assemble_physical_vertex",
+      "m0b",
+      "C40",
+      "ART25",
+      "raw_tuple"
+    ],
+    "found": [],
+    "guard": "C56_IFNORM_ISOLATION",
+    "pass": true
+  },
+  "status": "PASS"
+}

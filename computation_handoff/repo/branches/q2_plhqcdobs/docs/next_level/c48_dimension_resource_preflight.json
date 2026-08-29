@@ -1,0 +1,27 @@
+{
+  "dense_4752_square_forbidden": true,
+  "resolutions": [
+    {
+      "canonical_tuple_count": 720,
+      "q_dimension": 6,
+      "qg_cm_triplet_dimension": 1344,
+      "resolution": "K9_2_N8_b0.40",
+      "resource_decision": "No sparse local matrix allocated: canonical M^2 normalization is blocking."
+    },
+    {
+      "canonical_tuple_count": 1170,
+      "q_dimension": 6,
+      "qg_cm_triplet_dimension": 2700,
+      "resolution": "K11_2_N10_b0.45",
+      "resource_decision": "No sparse local matrix allocated: canonical M^2 normalization is blocking."
+    },
+    {
+      "canonical_tuple_count": 1728,
+      "q_dimension": 6,
+      "qg_cm_triplet_dimension": 4752,
+      "resolution": "K13_2_N12_b0.50",
+      "resource_decision": "No sparse local matrix allocated: canonical M^2 normalization is blocking."
+    }
+  ],
+  "status": "C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE"
+}

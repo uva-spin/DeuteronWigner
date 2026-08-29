@@ -1,0 +1,159 @@
+{
+  "content_hash": "864a0b4cf528a3b8e59c6251c0a9704afae793602cd63df24d2bcd650f2b52ca",
+  "counterterm_ids_disjoint_from_contribution_ids": true,
+  "derived_count": 0,
+  "power_hidden_in_log": false,
+  "records": [
+    {
+      "counterterm_class": "LINE_SELF_ENERGY",
+      "counterterm_id": "C34.CT.01.LINE_SELF_ENERGY",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.06.WILSON_LINE_SELF_ENERGY"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "CUSP",
+      "counterterm_id": "C34.CT.02.CUSP",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.07.CUSP_ENDPOINT"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "ENDPOINT",
+      "counterterm_id": "C34.CT.03.ENDPOINT",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.07.CUSP_ENDPOINT"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "TRANSVERSE_CLOSURE",
+      "counterterm_id": "C34.CT.04.TRANSVERSE_CLOSURE",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.08.TRANSVERSE_CLOSURE"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "VACUUM",
+      "counterterm_id": "C34.CT.05.VACUUM",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.10.SOFT_VACUUM_ENERGY"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "BASIS_BOUNDARY",
+      "counterterm_id": "C34.CT.06.BASIS_BOUNDARY",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.15.BASIS_BOUNDARY"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "SOFT_OPERATOR_UV",
+      "counterterm_id": "C34.CT.07.SOFT_OPERATOR_UV",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.17.UV_COUNTERTERM"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "RAPIDITY",
+      "counterterm_id": "C34.CT.08.RAPIDITY",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.16.RAPIDITY_COUNTERTERM"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    },
+    {
+      "counterterm_class": "RESIDUAL_LINE_MASS",
+      "counterterm_id": "C34.CT.09.RESIDUAL_LINE_MASS",
+      "derived_from_bare_structure": false,
+      "order": "O(a_s)",
+      "part_of_bare_graph_sum": false,
+      "source_structure_ids": [
+        "C34.SOFT.18.RESIDUAL_LINE_MASS_COUNTERTERM"
+      ],
+      "state_independence_proved": false,
+      "state_independence_required": true,
+      "status": "UNRESOLVED_BLOCKING",
+      "value": null,
+      "value_status": "NONZERO_UNKNOWN"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "separated_classes": [
+    "line_self_energy",
+    "cusp",
+    "endpoint",
+    "transverse_closure",
+    "vacuum",
+    "residual_line_mass",
+    "basis_boundary",
+    "operator_uv",
+    "rapidity"
+  ],
+  "state_independence_proved_count": 0,
+  "state_independence_required_for_all": true,
+  "status": "C34_SOFT_COUNTERTERMS_UNRESOLVED_BLOCKING",
+  "unresolved_count": 9
+}

@@ -1,0 +1,186 @@
+{
+  "complete_qg_1PI": false,
+  "count": 9,
+  "direct_sequential_conflation": false,
+  "leg_1PI_conflation": false,
+  "root": "1db613b0cee1efb3f045d3b58b52f91bd00b15b8d8e3aea18801c7a0182ec72b",
+  "rows": [
+    {
+      "classification": "source-authority-incomplete direct candidate",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": true,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "none/direct if source closes",
+      "graph_id": "C187-C112-DIRECT",
+      "intermediate": null,
+      "leg": false,
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "proper_1PI": "future",
+      "reducible": false,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "source-authority-incomplete direct candidate",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": true,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "finite-cell PV if source closes",
+      "graph_id": "C187-C127-DIRECT",
+      "intermediate": null,
+      "leg": false,
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "proper_1PI": "future",
+      "reducible": false,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "normal-ordering/sequential-only",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": false,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "sequential qg",
+      "graph_id": "C187-C129-OUTSIDE",
+      "intermediate": "qg",
+      "leg": false,
+      "owner_id": "C129_G4_DIRECT_NORMAL_ORDERED_QGG",
+      "proper_1PI": false,
+      "reducible": true,
+      "sink": "qgg",
+      "source": "qg"
+    },
+    {
+      "classification": "aggregate crosswalk only",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": false,
+      "count_once": false,
+      "coupling_degree": 2,
+      "energy_denominator": "aggregate",
+      "graph_id": "C187-C131-AGGREGATE",
+      "intermediate": null,
+      "leg": false,
+      "owner_id": "C131_LOCAL_POLYNOMIAL_QGG",
+      "proper_1PI": false,
+      "reducible": false,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "source-interface/boundary",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": false,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "nonmatrix",
+      "graph_id": "C187-C130-BOUNDARY",
+      "intermediate": null,
+      "leg": false,
+      "owner_id": "C130_BOUNDARY_NONMATRIX_QGG",
+      "proper_1PI": "future interface",
+      "reducible": false,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "source/operator interface",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": false,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "nonmatrix link",
+      "graph_id": "C187-C182-LINK",
+      "intermediate": null,
+      "leg": false,
+      "owner_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "proper_1PI": "future interface",
+      "reducible": false,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "sequential",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": false,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "qg resolvent",
+      "graph_id": "C187-SEQUENTIAL-QUARK",
+      "intermediate": "qg",
+      "leg": false,
+      "owner_id": "C185_QGG_QUARK_EMISSION",
+      "proper_1PI": false,
+      "reducible": true,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "sequential",
+      "color": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "contact": false,
+      "count_once": true,
+      "coupling_degree": 2,
+      "energy_denominator": "qg resolvent",
+      "graph_id": "C187-SEQUENTIAL-CUBIC",
+      "intermediate": "qg",
+      "leg": false,
+      "owner_id": "C186_QGG_CUBIC_GLUE",
+      "proper_1PI": false,
+      "reducible": true,
+      "sink": "qgg",
+      "source": "q"
+    },
+    {
+      "classification": "external leg; not proper 1PI",
+      "color": [],
+      "contact": false,
+      "count_once": true,
+      "coupling_degree": 1,
+      "energy_denominator": "leg authority",
+      "graph_id": "C187-LEG-CROSSWALK",
+      "intermediate": "q/qg",
+      "leg": true,
+      "owner_id": "C185_EXTERNAL_LEGS",
+      "proper_1PI": false,
+      "reducible": true,
+      "sink": "qg",
+      "source": "qg"
+    }
+  ],
+  "schema": "C187-TOPOLOGY-V1"
+}

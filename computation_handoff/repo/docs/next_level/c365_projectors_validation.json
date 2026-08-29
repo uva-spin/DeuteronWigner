@@ -1,0 +1,44 @@
+{
+  "package_root": "3d09c73e245eea95e5a07733a8e68953370be622b0584cf125e90fb4c469394b",
+  "physical": false,
+  "plan": "RIMASSC43JMYVIRTAST1-C",
+  "record": {
+    "MSbar": "exp(gammaE epsilon)(4pi)^(-epsilon)/epsilon_UV",
+    "count": 5,
+    "root": "b743ebfd9d221d9af129f63278586c00b12af0f52e549c9ae0c4706d6e0077b3",
+    "rows": [
+      {
+        "IR": "IRPart(parent) retained",
+        "UV": "MSbarProject(UVPart(parent))",
+        "analytic": "AnalyticPolePart(parent) grouped before limits",
+        "parent": "Sigma_q"
+      },
+      {
+        "IR": "IRPart(parent) retained",
+        "UV": "MSbarProject(UVPart(parent))",
+        "analytic": "AnalyticPolePart(parent) grouped before limits",
+        "parent": "W_v"
+      },
+      {
+        "IR": "IRPart(parent) retained",
+        "UV": "MSbarProject(UVPart(parent))",
+        "analytic": "AnalyticPolePart(parent) grouped before limits",
+        "parent": "W_tildev"
+      },
+      {
+        "IR": "IRPart(parent) retained",
+        "UV": "MSbarProject(UVPart(parent))",
+        "analytic": "AnalyticPolePart(parent) grouped before limits",
+        "parent": "V_qv"
+      },
+      {
+        "IR": "IRPart(parent) retained",
+        "UV": "MSbarProject(UVPart(parent))",
+        "analytic": "AnalyticPolePart(parent) grouped before limits",
+        "parent": "V_htv"
+      }
+    ]
+  },
+  "status": "C365_BARE_JMY_VIRTUAL_COUNTERTERM_PARENT_AST_DERIVED_SCALAR_REGION_EVALUATION_MISSING",
+  "validation": "PASS"
+}

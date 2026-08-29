@@ -1,0 +1,11 @@
+{
+  "limits": {
+    "max_pairs_in_memory": 1,
+    "max_pending_serialized_bytes": 8388608,
+    "max_records_in_memory": 4096,
+    "max_shard_bytes": 67108864
+  },
+  "pair_atomic": true,
+  "safe_serializer": "UTF8-JSONL-SORTED-KEYS-LF-NO-PICKLE-V1",
+  "subspan_only_when_pair_exceeds_shard": true
+}

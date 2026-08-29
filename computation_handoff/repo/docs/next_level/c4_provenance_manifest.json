@@ -1,0 +1,311 @@
+{
+  "graph": {
+    "edges": [
+      {
+        "physical_reason": "gluon commuting routes",
+        "relation": "VALIDATES",
+        "source": "c4:closure:gluon",
+        "target": "c4:parent:gluon",
+        "version": 1
+      },
+      {
+        "physical_reason": "sea commuting routes",
+        "relation": "VALIDATES",
+        "source": "c4:closure:sea",
+        "target": "c4:route:pdf",
+        "version": 1
+      },
+      {
+        "physical_reason": "finite retained-space elimination",
+        "relation": "DERIVES_FROM",
+        "source": "c4:induced:gluon",
+        "target": "c4:feshbach",
+        "version": 1
+      },
+      {
+        "physical_reason": "operator plus declared remainder",
+        "relation": "DERIVES_FROM",
+        "source": "c4:induced:gluon",
+        "target": "c4:remainder:gluon",
+        "version": 1
+      },
+      {
+        "physical_reason": "finite retained-space elimination",
+        "relation": "DERIVES_FROM",
+        "source": "c4:induced:sea",
+        "target": "c4:feshbach",
+        "version": 1
+      },
+      {
+        "physical_reason": "operator plus declared remainder",
+        "relation": "DERIVES_FROM",
+        "source": "c4:induced:sea",
+        "target": "c4:remainder:sea",
+        "version": 1
+      },
+      {
+        "physical_reason": "explicit positive-x antiquark slot",
+        "relation": "DERIVES_FROM",
+        "source": "c4:parent:antiquark",
+        "target": "c4:state:sea-explicit",
+        "version": 1
+      },
+      {
+        "physical_reason": "explicit transverse gluon slot",
+        "relation": "DERIVES_FROM",
+        "source": "c4:parent:gluon",
+        "target": "c4:state:gluon-explicit",
+        "version": 1
+      },
+      {
+        "physical_reason": "Mellin moment",
+        "relation": "DERIVES_FROM",
+        "source": "c4:route:current",
+        "target": "c4:route:gpd",
+        "version": 1
+      },
+      {
+        "physical_reason": "regulated kT integral",
+        "relation": "PROJECTS_TO",
+        "source": "c4:route:gpd",
+        "target": "c4:parent:antiquark",
+        "version": 1
+      },
+      {
+        "physical_reason": "TMD integral",
+        "relation": "DERIVES_FROM",
+        "source": "c4:route:pdf",
+        "target": "c4:route:tmd",
+        "version": 1
+      },
+      {
+        "physical_reason": "forward limit",
+        "relation": "PROJECTS_TO",
+        "source": "c4:route:tmd",
+        "target": "c4:parent:antiquark",
+        "version": 1
+      },
+      {
+        "physical_reason": "same higher-sector physics",
+        "relation": "ALTERNATIVE_TO",
+        "source": "c4:state:gluon-explicit",
+        "target": "c4:induced:gluon",
+        "version": 1
+      },
+      {
+        "physical_reason": "prevent explicit/induced double counting",
+        "relation": "EXCLUDES",
+        "source": "c4:state:gluon-explicit",
+        "target": "c4:induced:gluon",
+        "version": 1
+      },
+      {
+        "physical_reason": "same higher-sector physics",
+        "relation": "ALTERNATIVE_TO",
+        "source": "c4:state:sea-explicit",
+        "target": "c4:induced:sea",
+        "version": 1
+      },
+      {
+        "physical_reason": "prevent explicit/induced double counting",
+        "relation": "EXCLUDES",
+        "source": "c4:state:sea-explicit",
+        "target": "c4:induced:sea",
+        "version": 1
+      }
+    ],
+    "nodes": [
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "EVIDENCE",
+        "physical_identity": "gluon route closure",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:closure:gluon",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "EVIDENCE",
+        "physical_identity": "sea route closure",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:closure:sea",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "BENCHMARK",
+        "physical_identity": "finite Feshbach model",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:feshbach",
+        "version": 1
+      },
+      {
+        "alternative_group": "c4:gluon-representation",
+        "central_allowed": false,
+        "kind": "OPERATOR",
+        "physical_identity": "induced gluon operator plus remainder",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:induced:gluon",
+        "version": 1
+      },
+      {
+        "alternative_group": "c4:sea-representation",
+        "central_allowed": false,
+        "kind": "OPERATOR",
+        "physical_identity": "induced sea operator plus remainder",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:induced:sea",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "OPERATOR",
+        "physical_identity": "positive-x antiquark parent",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:parent:antiquark",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "OPERATOR",
+        "physical_identity": "diagonal adjoint gluon parent",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:parent:gluon",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "COMPONENT",
+        "physical_identity": "declared gluon matching remainder",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:remainder:gluon",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "COMPONENT",
+        "physical_identity": "declared sea matching remainder",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:remainder:sea",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "PROJECTION",
+        "physical_identity": "local current/EMT route",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:route:current",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "PROJECTION",
+        "physical_identity": "regulated analytic GPD route",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:route:gpd",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "PROJECTION",
+        "physical_identity": "regulated PDF route",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:route:pdf",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "PROJECTION",
+        "physical_identity": "regulated TMD route",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:route:tmd",
+        "version": 1
+      },
+      {
+        "alternative_group": "c4:gluon-representation",
+        "central_allowed": false,
+        "kind": "COMPONENT",
+        "physical_identity": "explicit qqqg state",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:state:gluon-explicit",
+        "version": 1
+      },
+      {
+        "alternative_group": "c4:sea-representation",
+        "central_allowed": false,
+        "kind": "COMPONENT",
+        "physical_identity": "explicit qqqq-qbar state",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:state:sea-explicit",
+        "version": 1
+      },
+      {
+        "alternative_group": null,
+        "central_allowed": false,
+        "kind": "COMPONENT",
+        "physical_identity": "C3 valence state",
+        "selection_role": "BENCHMARK_ONLY",
+        "stable_id": "c4:state:valence",
+        "version": 1
+      }
+    ]
+  },
+  "plans": {
+    "explicit": {
+      "ancestry": {
+        "c4:state:gluon-explicit": [
+          "c4:state:gluon-explicit"
+        ],
+        "c4:state:sea-explicit": [
+          "c4:state:sea-explicit"
+        ],
+        "c4:state:valence": [
+          "c4:state:valence"
+        ]
+      },
+      "ordered_selection": [
+        "c4:state:valence",
+        "c4:state:sea-explicit",
+        "c4:state:gluon-explicit"
+      ],
+      "plan_id": "c4:plan:explicit"
+    },
+    "induced": {
+      "ancestry": {
+        "c4:induced:gluon": [
+          "c4:feshbach",
+          "c4:induced:gluon",
+          "c4:remainder:gluon"
+        ],
+        "c4:induced:sea": [
+          "c4:feshbach",
+          "c4:induced:sea",
+          "c4:remainder:sea"
+        ],
+        "c4:state:valence": [
+          "c4:state:valence"
+        ]
+      },
+      "ordered_selection": [
+        "c4:state:valence",
+        "c4:induced:sea",
+        "c4:induced:gluon"
+      ],
+      "plan_id": "c4:plan:induced"
+    }
+  },
+  "production_reachable": false,
+  "requirement_id": "C4.PROVENANCE",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,1 @@
+"# C45/MODES\n\nC45 closes the four C44 finite-projection contracts with the exact C43 conversion map. The inherited `x_min=1/18` remains the C7 endpoint regulator; it is not identified with a finite-cell lowest parton fraction. No Hamiltonian, vertex, Wilson, bilocal, counterterm, or one-loop object is constructed.\n"

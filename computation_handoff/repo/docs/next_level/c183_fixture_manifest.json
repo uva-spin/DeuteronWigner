@@ -1,0 +1,63 @@
+{
+  "count": 5,
+  "root": "23cbecb1f08548d70b4ec190ebd93b0d519dc6e44ba4fdfefee4b0c9de943299",
+  "rows": [
+    {
+      "center_sector": "Z3_IDENTITY",
+      "fixture_id": "IDENTITY_DIAGNOSTIC_ONLY",
+      "fundamental_and_adjoint_bound": true,
+      "identity_fixture_only": true,
+      "parameterization": "EXPLICIT_FUNDAMENTAL_SU3_MATRIX",
+      "physical": false,
+      "process_scope": [
+        "DIS_FUTURE"
+      ]
+    },
+    {
+      "center_sector": "Z3_IDENTITY",
+      "fixture_id": "GENERIC_CARTAN_INTERIOR",
+      "fundamental_and_adjoint_bound": true,
+      "identity_fixture_only": false,
+      "parameterization": "CARTAN_WEYL_ALCOVE_PLUS_GLOBAL_FRAME",
+      "physical": false,
+      "process_scope": [
+        "DIS_FUTURE"
+      ]
+    },
+    {
+      "center_sector": "Z3_OMEGA",
+      "fixture_id": "NONTRIVIAL_CENTER_SECTOR",
+      "fundamental_and_adjoint_bound": true,
+      "identity_fixture_only": false,
+      "parameterization": "CENTER_SECTOR_ONLY",
+      "physical": false,
+      "process_scope": [
+        "DIS_FUTURE"
+      ]
+    },
+    {
+      "center_sector": "Z3_IDENTITY",
+      "fixture_id": "CONJUGATED_NONDIAGONAL_GENERIC",
+      "fundamental_and_adjoint_bound": true,
+      "identity_fixture_only": false,
+      "parameterization": "CARTAN_WEYL_ALCOVE_PLUS_GLOBAL_FRAME",
+      "physical": false,
+      "process_scope": [
+        "DIS_FUTURE"
+      ]
+    },
+    {
+      "center_sector": "Z3_IDENTITY",
+      "fixture_id": "FUTURE_PAST_INVERSE_PAIR",
+      "fundamental_and_adjoint_bound": true,
+      "identity_fixture_only": false,
+      "parameterization": "CARTAN_WEYL_ALCOVE_PLUS_GLOBAL_FRAME",
+      "physical": false,
+      "process_scope": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ]
+    }
+  ],
+  "schema": "C183-FIXTURE-MANIFEST-V1"
+}

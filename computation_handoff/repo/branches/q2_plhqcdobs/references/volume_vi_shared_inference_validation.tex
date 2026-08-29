@@ -1,0 +1,3500 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume VI: Shared Microscopic Inference, Correlated Uncertainty, and Withheld Validation},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume VI}
+\fancyhead[R]{\small\color{darkgray}Inference, uncertainty, and falsifiability}
+\fancyfoot[L]{\small\color{darkgray}30 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{principle}{principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Corr}{\operatorname{Corr}}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\ESS}{\operatorname{ESS}}
+\newcommand{\Rhat}{\widehat R}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Dens}{\mathbf{Dens}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\cRho}{\mathcal R}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\bbone}{\bm 1}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\trans}{^{\mathsf T}}
+\newcommand{\caldata}{\mathcal D_{\mathrm{cal}}}
+\newcommand{\diagdata}{\mathcal D_{\mathrm{diag}}}
+\newcommand{\holddata}{\mathcal D_{\mathrm{hold}}}
+\newcommand{\allData}{\mathcal D}
+\newcommand{\post}{\mathrm{post}}
+\newcommand{\pred}{\mathrm{pred}}
+\newcommand{\expdata}{\mathrm{exp}}
+\newcommand{\latt}{\mathrm{latt}}
+\newcommand{\thry}{\mathrm{th}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\emul}{\mathrm{em}}
+\newcommand{\disc}{\mathrm{disc}}
+\newcommand{\sys}{\mathrm{sys}}
+\newcommand{\stat}{\mathrm{stat}}
+\newcommand{\hold}{\mathrm{hold}}
+\newcommand{\val}{\mathrm{val}}
+\newcommand{\obs}{\mathrm{obs}}
+\newcommand{\repdata}{\mathrm{rep}}
+\newcommand{\micro}{\mathrm{micro}}
+\newcommand{\matchp}{\mathrm{match}}
+\newcommand{\evol}{\mathrm{evol}}
+\newcommand{\CS}{\ensuremath{\mathrm{CS}}}
+\newcommand{\pert}{\mathrm{pert}}
+\newcommand{\odd}{\mathrm{odd}}
+\newcommand{\wil}{\mathrm{Wilson}}
+\newcommand{\nuc}{\mathrm{nuc}}
+\newcommand{\proc}{\mathrm{proc}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\approxm}{\mathrm{approx}}
+\newcommand{\score}{\mathcal S}
+\newcommand{\GP}{\ensuremath{\mathrm{GP}}}
+\newcommand{\HMC}{\ensuremath{\mathrm{HMC}}}
+\newcommand{\NUTS}{\ensuremath{\mathrm{NUTS}}}
+\newcommand{\SBC}{\ensuremath{\mathrm{SBC}}}
+\newcommand{\LOO}{\ensuremath{\mathrm{LOO}}}
+\newcommand{\PSIS}{\ensuremath{\mathrm{PSIS}}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume VI: Shared Microscopic Inference,\\[2mm]
+Correlated Uncertainty, and Withheld Validation}\\[4mm]
+\large Likelihood construction, parameter ownership, model discrepancy,\\
+posterior prediction, and falsifiable revision of the common light-front model}
+\author{DeuteronWigner project}
+\date{30 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~I--V define the regulated microscopic state spaces, common nucleon
+overlaps, Wilson-line phases, matched spin-1 nuclear operators, and the
+regulator-to-QCD evolution and process layer.  The present volume defines how
+those objects may be calibrated without rebuilding the earlier phenomenological
+patchwork in statistical form.  The inferential state is one shared posterior
+over Hamiltonian, current, Wilson, nuclear, matching, evolution, nuisance, and
+controlled-discrepancy parameters.  Every posterior member retains a common
+microscopic identity through every flavor, target polarization, parton
+species, reduction, scale, nuclear mechanism, and process observable.
+Calibration and withheld validation are fixed before final optimization.
+Failure of a withheld observable must revise a physical interaction, state
+sector, current, matching map, factorization assumption, or declared
+discrepancy model; it may not be repaired by adding an isolated coefficient to
+the failed TMD.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A generative light-front model becomes scientifically predictive only when a
+restricted set of shared physical parameters is confronted with heterogeneous
+data and then succeeds on observables that were not used to determine those
+parameters.  This volume constructs the inference, uncertainty, and
+falsifiability layer for the DeuteronWigner program.  The central object is a
+typed probabilistic program whose deterministic forward map is the complete
+chain from regulated Hamiltonian and current parameters through common GTMD
+operators, Wilson-line dynamics, matched nuclear composition, QCD matching,
+rank-aware evolution, and process-qualified observables.
+
+The parameter vector is divided by physical ownership: Hamiltonian vertices,
+counterterms, currents, Wilson kernels, nuclear interactions, operator
+matching, Collins--Soper and perturbative inputs, experimental nuisance
+parameters, and explicit discrepancy operators.  A parameter cannot migrate
+into one independent normalization or width per named TMD.  Exact symmetries,
+support, positivity, conservation laws, and composition exclusions are
+enforced structurally; priors are used for uncertain physical scales and
+naturalness, not to imitate exact constraints.
+
+We formulate likelihoods for event counts, binned cross sections and
+asymmetries, correlated lattice matrix elements, form factors, extracted
+partonic information, and theory-calibration observables.  Dataset ancestry is
+part of identity so raw data and quantities extracted from the same events are
+not counted twice.  Correlated experimental systematics are represented by
+covariance matrices or explicit nuisance parameters.  Theory uncertainty is
+decomposed into Hamiltonian EFT truncation, Fock/basis truncation,
+regulator/renormalization, Wilson order, LF-to-QCD matching, TMD evolution,
+nuclear many-body, process-power, emulator, and numerical components.
+Correlated truncation fields are tied to power counting and operator ownership;
+they are not an unrestricted catch-all Gaussian process.
+
+The posterior is tested through prior predictive simulation, synthetic
+parameter recovery, simulation-based calibration, exact-versus-emulated
+comparisons, multi-chain diagnostics, posterior predictive checks,
+leave-family-out prediction, proper scoring rules, and predefined withheld
+observable gates.  The volume distinguishes calibration fit, model criticism,
+and scientific validation.  It defines strong cross-channel tests, such as
+using a common rescattering sector constrained by selected Sivers information
+to predict Boer--Mulders, tensor naive-\(T\)-odd, antiquark, or gluon
+color-sector observables without separate retuning.  A final section turns the
+posterior into an experimental-design object by maximizing expected information
+gain or a controlled Fisher approximation while retaining feasibility and
+systematic constraints.
+
+The result is a fail-closed inference architecture in which uncertainty bands
+are pushforwards of common microscopic members, model discrepancy remains
+physically attributable, and a failed withheld family produces a traceable
+model-revision decision rather than a new curve-specific parameter.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scope, interfaces, and status language}
+\label{sec:scope}
+
+\subsection{Input contract}
+
+The inference layer receives a deterministic or conditionally deterministic
+forward model
+\begin{equation}
+ \cG:
+ (\theta,\nu,\eta_{\sys})
+ \longmapsto
+ \left\{
+ \cO_i^{\thry}
+ \right\}_{i\in\cI_{\obs}},
+ \label{eq:forward-map}
+\end{equation}
+where:
+\begin{itemize}
+\item \(\theta\) denotes shared continuous physical and matching parameters;
+\item \(\nu\) denotes discrete, typed model choices such as regulator family,
+      Fock truncation, nuclear interaction, Wilson order, or perturbative
+      accuracy;
+\item \(\eta_{\sys}\) denotes experimental or external-input nuisance
+      parameters;
+\item each \(\cO_i^{\thry}\) carries complete operator, scale, process,
+      provenance, and numerical-accuracy metadata.
+\end{itemize}
+The map in \cref{eq:forward-map} is not a flat table of unrelated predictions.
+It is the composed chain
+\begin{equation}
+ \begin{tikzcd}[column sep=small]
+ \{\theta_H,\theta_J,\theta_{\wil}\}
+ \arrow[r]
+ & \{|\Psi_N\rangle,|\Psi_D\rangle,\cO_{\GTMD}\}
+ \arrow[r]
+ & \{\theta_{\matchp},\theta_{\evol}\}
+ \arrow[r]
+ & \{\widetilde F_A(\mu,\zeta),\cO_{\proc}\}
+ \arrow[r]
+ & \{\cO_i^{\thry}\}.
+ \end{tikzcd}
+ \label{eq:generative-inference-chain}
+\end{equation}
+Every intermediate object is versioned.  A posterior member must be replayable
+through the same composition graph.
+
+The data are divided into
+\begin{equation}
+ \allData
+ =
+ \caldata
+ \,\dot\cup\,
+ \diagdata
+ \,\dot\cup\,
+ \holddata,
+ \label{eq:data-partition}
+\end{equation}
+where \(\caldata\) determines the posterior, \(\diagdata\) supports model and
+computational criticism without being used as a final predictive claim, and
+\(\holddata\) is protected for scientific validation.
+
+\begin{requirement}[Frozen split, V6.DATA.1]
+The membership and ancestry of \(\caldata\), \(\diagdata\), and \(\holddata\)
+must be committed before final calibration.  Moving a failed withheld family
+into the calibration set changes the scientific question and requires a new
+versioned analysis.
+\end{requirement}
+
+\subsection{Output contract}
+
+The principal inferential output is
+\begin{equation}
+ p(\Theta,\nu,\eta,\delta\mid\caldata,\mathfrak M),
+ \qquad
+ \Theta=
+ \left(
+ \theta_H,\theta_J,\theta_{\wil},\theta_{\nuc},
+ \theta_{\matchp},\theta_{\evol}
+ \right),
+ \label{eq:full-posterior}
+\end{equation}
+where \(\mathfrak M\) is the complete model and convention manifest and
+\(\delta\) denotes controlled discrepancy fields.
+
+The output is stored as a common member ensemble
+\begin{equation}
+ \mathcal E_{\post}
+ =
+ \left\{
+ e_s=
+ \left(
+ \Theta_s,\nu_s,\eta_s,\delta_s,
+ \mathrm{state\ hashes},
+ \mathrm{operator\ hashes},
+ \mathrm{matching\ manifest},
+ \mathrm{process\ manifest}
+ \right)
+ \right\}_{s=1}^{N_{\post}}.
+ \label{eq:posterior-ensemble}
+\end{equation}
+A prediction for any observable family \(\cY_*\) is the pushforward
+\begin{equation}
+ p(\cY_*\mid\caldata)
+ =
+ \int
+ p(\cY_*\mid\Theta,\nu,\eta,\delta)
+ p(\Theta,\nu,\eta,\delta\mid\caldata)
+ \,\dd\Theta\,\dd\nu\,\dd\eta\,\dd\delta .
+ \label{eq:posterior-predictive}
+\end{equation}
+
+\begin{requirement}[Shared-member output, V6.ENS.1]
+Independent marginal bands generated with unrelated random seeds or parameter
+draws are not an admissible substitute for \(\mathcal E_{\post}\).  Cross-TMD,
+cross-flavor, quark--gluon, proton--neutron, nucleon--deuteron, scale, and
+process covariances must be recoverable from shared member identity.
+\end{requirement}
+
+\subsection{What this volume does not claim}
+
+This volume does not claim:
+\begin{itemize}
+\item that a Bayesian posterior converts an incomplete Hamiltonian into QCD;
+\item that all uncertainties are subjective or interchangeable;
+\item that a good fit to \(\caldata\) validates the microscopic model;
+\item that an unrestricted discrepancy field may absorb missing operators;
+\item that a credible interval has frequentist coverage without a coverage
+      study;
+\item that a Gaussian likelihood is appropriate for every dataset;
+\item that a surrogate is trustworthy outside its validated domain;
+\item that Bayes factors or one scalar information criterion decide scientific
+      adequacy;
+\item that model averaging can make mutually inconsistent descriptions
+      simultaneously true;
+\item that a withheld prediction is genuine when its normalization or shape
+      was indirectly tuned using the same underlying events.
+\end{itemize}
+
+\subsection{Evidence and uncertainty classes}
+
+The inferential layer retains the evidence vocabulary of the preceding
+volumes and adds a statistical-status field:
+\begin{longtable}{L{0.22\textwidth}L{0.69\textwidth}}
+\toprule
+Status & Meaning\\
+\midrule
+\endhead
+\texttt{EXACT} & Algebraic, symmetry, kinematic, support, conservation, or
+typed-composition consequence.  It is not assigned a prior width.\\
+\texttt{CALIBRATION\_DATA} & Observation or matrix element included in
+\(\caldata\).\\
+\texttt{DIAGNOSTIC\_DATA} & Observation reserved for criticism or workflow
+development but not advertised as a withheld prediction.\\
+\texttt{WITHHELD\_DATA} & Predeclared family excluded from posterior
+construction and used for scientific prediction.\\
+\texttt{FIT/PHENOMENOLOGY} & External extraction or fit whose covariance and
+scheme are available and whose data ancestry is declared.\\
+\texttt{LATTICE\_INFORMED} & Lattice matrix element with stated action,
+spacing, volume, matching, and covariance provenance.\\
+\texttt{MODEL} & Replaceable physical approximation with a named parameter
+and validation path.\\
+\texttt{DISCREPANCY} & Explicit residual operator or stochastic field with a
+declared physical scope, power counting, and correlation model.\\
+\texttt{NUMERICAL} & Eigensolver, quadrature, transform, interpolation,
+emulator, or Monte Carlo error.\\
+\texttt{UNASSESSED} & Required information is absent.  The object cannot enter
+an authoritative posterior or prediction.\\
+\bottomrule
+\end{longtable}
+
+\begin{principle}[Inference cannot upgrade evidence]
+Posterior concentration does not convert a model assumption into a fitted
+operator identity, and a structural acceptance gate does not convert a model
+prediction into a measurement.  Evidence class and inferential status are
+stored separately.
+\end{principle}
+
+\section{The typed probabilistic program}
+\label{sec:program}
+
+\subsection{Parameter blocks and physical ownership}
+
+The complete continuous parameter vector is partitioned by physical owner:
+\begin{equation}
+ \Theta=
+ \left(
+ \theta_H,\theta_{\mathrm{ct}},
+ \theta_J,\theta_{\wil},
+ \theta_{\nuc},\theta_{\matchp},
+ \theta_{\CS},\theta_{\proc}
+ \right).
+ \label{eq:parameter-blocks}
+\end{equation}
+The blocks mean:
+\begin{longtable}{L{0.18\textwidth}L{0.71\textwidth}}
+\toprule
+Block & Physical ownership\\
+\midrule
+\endhead
+\(\theta_H\) & Masses and interaction coefficients in the regulated
+light-front Hamiltonian.\\
+\(\theta_{\mathrm{ct}}\) & Counterterms, sector-dependent renormalization
+coefficients, and truncation-induced operators.\\
+\(\theta_J\) & One-body, exchange, induced, and local currents consistent
+with the Hamiltonian.\\
+\(\theta_{\wil}\) & Eikonal vertices, infrared scales, Wilson-order
+coefficients, and shared rescattering interactions.\\
+\(\theta_{\nuc}\) & Nuclear interaction and operator coefficients, including
+explicit higher-sector and coherent amplitudes.\\
+\(\theta_{\matchp}\) & LF-to-QCD, small-\(b\), threshold, and operator-mixing
+matching coefficients not fixed perturbatively.\\
+\(\theta_{\CS}\) & Nonperturbative Collins--Soper and evolution-boundary
+parameters shared by the appropriate color representation.\\
+\(\theta_{\proc}\) & Process-specific quantities only when they are not fixed
+by a theorem or independent perturbative calculation.\\
+\bottomrule
+\end{longtable}
+
+Each parameter has an ownership record
+\begin{equation}
+ \operatorname{Owner}(\theta_a)
+ =
+ \left(
+ \begin{gathered}
+ \text{physical object},\ \text{operator block},\ \text{symmetry class},\\
+ \text{sector support},\ \text{scale dependence},\
+ \text{observables reached}
+ \end{gathered}
+ \right).
+ \label{eq:owner-record}
+\end{equation}
+
+\begin{requirement}[No parameter migration, V6.PARAM.1]
+A parameter may enter an observable only through the physical object that owns
+it.  A failed tensor TMD cannot acquire a new coefficient unless that
+coefficient is attached to a missing Hamiltonian interaction, state sector,
+current, Wilson kernel, matching operator, or declared discrepancy object that
+also propagates to every other observable reached by the same physics.
+\end{requirement}
+
+\subsection{Deterministic graph and stochastic nodes}
+
+Let \(G=(V,E)\) be the typed composition graph.  Each deterministic node
+\(v\in V_{\det}\) computes
+\begin{equation}
+ x_v=f_v\left(\{x_u:u\to v\},\Theta_v,\nu_v\right),
+ \label{eq:det-node}
+\end{equation}
+while stochastic nodes include priors, nuisance variables, discrepancy fields,
+emulator residuals, and observations.  The joint density factorizes as
+\begin{equation}
+ p(\allData,\Theta,\nu,\eta,\delta)
+ =
+ p(\Theta,\nu)\,
+ p(\eta)\,
+ p(\delta\mid\Theta,\nu)
+ \prod_{d\in\allData}
+ p\!\left(
+ y_d\mid
+ \cG_d(\Theta,\nu),\eta_d,\delta_d
+ \right).
+ \label{eq:joint-factorization}
+\end{equation}
+
+The graph contains explicit exclusion relations.  Mutually exclusive
+descriptions, such as an explicit \(qqqg\) sector and the induced operator that
+replaces it after elimination, are not independent stochastic summands.
+
+\begin{proposition}[Posterior provenance]
+If every stochastic parameter has one owner, every deterministic map is
+versioned, and every data node records its ancestry, then every posterior
+correlation between two predictions has a traceable path through shared
+physical or nuisance variables.
+\end{proposition}
+
+\begin{proof}
+Both predictions are measurable functions of the common stochastic nodes in
+\cref{eq:joint-factorization}.  Their covariance is generated by nodes in the
+intersection of their ancestor sets.  Versioned graph traversal identifies
+that intersection and therefore the origin of the covariance.
+\end{proof}
+
+\subsection{Discrete model and truncation labels}
+
+The discrete object
+\begin{equation}
+ \nu=
+ \left(
+ r_H,\mathcal F_H,N_{\max},
+ n_{\wil},r_{\nuc},
+ \mathfrak s_{\TMD},\mathfrak A_{\pert},
+ \mathfrak P_{\proc}
+ \right)
+ \label{eq:discrete-label}
+\end{equation}
+contains regulator, Fock, basis, Wilson-order, nuclear-resolution, TMD-scheme,
+perturbative-accuracy, and process records.
+
+Discrete alternatives are classified as:
+\begin{itemize}
+\item \emph{nested truncations}, with a declared convergence direction;
+\item \emph{equivalent representations}, related by matching or a unitary map;
+\item \emph{competing physical hypotheses}, such as different missing
+      interactions;
+\item \emph{external model variants}, useful for sensitivity but not assumed
+      to be draws from one probability distribution.
+\end{itemize}
+
+A wave-function envelope is not automatically a posterior over wave functions.
+A discrete prior is scientifically meaningful only when its support and
+weights have a stated interpretation.
+
+\subsection{Exact constraints are not narrow priors}
+
+Support, color singletness, Hermiticity, current conservation, target-spin
+closure, positivity where valid, and no-double-counting relations are built
+into the parameterization or graph.  For example, if
+\begin{equation}
+ \Phi=LL^\dagger ,
+ \label{eq:structural-positive}
+\end{equation}
+then positivity is exact for every parameter value.  It should not be imposed
+by a narrow penalty on negative eigenvalues.
+
+\begin{requirement}[Structural constraints, V6.PARAM.2]
+An exact relation must be enforced by coordinates, projectors, constrained
+maps, or deterministic transformations.  Priors and likelihood penalties are
+reserved for uncertain statements.
+\end{requirement}
+
+\section{Data identity, ancestry, and protected partitions}
+\label{sec:data}
+
+\subsection{Dataset object}
+
+A dataset is not identified by a filename alone.  The minimal record is
+\begin{equation}
+ \mathfrak D_d=
+ \left(
+ \begin{gathered}
+ \text{observable definition},\ \text{process},\ \text{kinematics},\
+ \text{units},\ \text{binning},\\
+ \text{polarization convention},\ \text{scheme},\ \text{central values},\
+ \text{covariance},\\
+ \text{nuisance map},\ \text{event ancestry},\ \text{selection},\
+ \text{partition}
+ \end{gathered}
+ \right).
+ \label{eq:dataset-object}
+\end{equation}
+The event-ancestry field identifies whether two published quantities are
+derived from the same events, unfolding, normalization sample, lattice gauge
+ensemble, PDF fit, or common external calibration.
+
+\begin{requirement}[No data double counting, V6.DATA.2]
+Two datasets with overlapping ancestry may enter one likelihood only through a
+joint covariance or a hierarchical source model.  Treating a raw cross
+section, an asymmetry extracted from it, and a PDF fit containing the same
+measurement as independent observations is forbidden.
+\end{requirement}
+
+\subsection{Families rather than random points}
+
+The partition in \cref{eq:data-partition} is made at the level of scientifically
+coherent families.  Examples include:
+\begin{itemize}
+\item an entire experiment, target polarization, or beam-energy setting;
+\item one observable class such as tensor DIS, SIDIS Sivers, or tagged
+      spectator data;
+\item a group of correlated lattice moments from one ensemble;
+\item one flavor or parton channel;
+\item a kinematic region that tests extrapolation rather than interpolation;
+\item a process with a different Wilson-link or color-flow class.
+\end{itemize}
+
+Randomly withholding individual points from a densely correlated curve tests
+interpolation and may substantially overstate predictive ability.
+
+\begin{definition}[Calibration, diagnostic, and withheld roles]
+\(\caldata\) is permitted to alter the posterior.  \(\diagdata\) may be used
+during model development to reveal defects, but any subsequent claim using it
+is labeled diagnostic rather than withheld.  \(\holddata\) remains inaccessible
+to parameter tuning and model selection until the analysis version is frozen.
+\end{definition}
+
+\subsection{Candidate partition for the first microscopic analysis}
+
+A credible initial partition is:
+\begin{longtable}{L{0.21\textwidth}L{0.34\textwidth}L{0.35\textwidth}}
+\toprule
+Layer & Calibration candidates & Withheld candidates\\
+\midrule
+\endhead
+Spectrum/state & Selected hadron masses, charges, magnetic and axial moments &
+Unused current components, higher states, rotational multiplets.\\
+Nucleon collinear & Restricted unpolarized/helicity moments and selected
+flavor information & Flavor-separated curves or moments outside the
+calibration region.\\
+Off-forward & Selected electromagnetic form factors & Unused GPD or EMT
+moments and OAM-sensitive relations.\\
+Wilson sector & A restricted Sivers subset or one process sign & Boer--Mulders,
+antiquark, tensor-\(T\)-odd, and gluon \(f/d\) observables.\\
+Deuteron & Binding, asymptotic S/D information, static moments, selected
+elastic points & \(b_1\), tagged tensor observables, unused elastic
+combinations, non-nucleonic-sensitive channels.\\
+Evolution/process & A restricted multi-\(Q\) family in an established channel &
+Another scale, process, rank, or color-flow family.\\
+\bottomrule
+\end{longtable}
+The actual split is committed in a machine-readable manifest and may differ
+from this example.
+
+\subsection{Blinding and access control}
+
+For a strong withheld test, the software should support:
+\begin{itemize}
+\item encrypted or separately stored withheld values;
+\item metadata access without numerical values, sufficient to construct
+      predictions before unblinding;
+\item a hash of the split and validation metric definitions;
+\item an immutable timestamp and analysis commit;
+\item a rule for handling unexpected data-quality problems without silently
+      redefining the target.
+\end{itemize}
+
+\section{Likelihood construction}
+\label{sec:likelihood}
+
+\subsection{General observation model}
+
+For dataset \(d\), let \(\bm y_d\) be the measured vector and
+\(\bm m_d(\Theta,\nu)\) the model prediction after bin integration, acceptance,
+radiative treatment, and declared process assembly.  A general observation
+model is
+\begin{equation}
+ \bm y_d
+ =
+ \bm m_d(\Theta,\nu)
+ +
+ \bm A_d\eta_d
+ +
+ \bm\delta_d
+ +
+ \bm\epsilon_d,
+ \label{eq:observation-model}
+\end{equation}
+where \(\bm A_d\eta_d\) represents explicit correlated nuisance shifts,
+\(\bm\delta_d\) is controlled theory discrepancy, and
+\(\bm\epsilon_d\) is measurement noise.
+
+The likelihood is defined at the least processed level for which the full
+measurement model is available.  A model prediction at bin center is not
+compared with a bin average unless the corresponding approximation is
+quantified.
+
+\subsection{Correlated Gaussian measurements}
+
+For approximately Gaussian data,
+\begin{equation}
+ p(\bm y_d\mid\Theta,\eta_d,\delta_d,\nu)
+ =
+ \mathcal N\!\left(
+ \bm y_d\ ;\
+ \bm m_d(\Theta,\nu)+\bm A_d\eta_d+\bm\delta_d,\,
+ \bm C_{d,\stat}
+ \right),
+ \label{eq:gaussian-likelihood}
+\end{equation}
+with nuisance prior
+\begin{equation}
+ \eta_d\sim\mathcal N(\bm 0,\bm C_{d,\sys}).
+ \label{eq:nuisance-prior}
+\end{equation}
+Marginalizing \(\eta_d\) gives covariance
+\begin{equation}
+ \bm C_d
+ =
+ \bm C_{d,\stat}
+ +
+ \bm A_d\bm C_{d,\sys}\bm A_d\trans ,
+ \label{eq:marginal-covariance}
+\end{equation}
+when the nuisance response is linear and Gaussian.
+
+\begin{proposition}[Nuisance/covariance equivalence]
+Under \cref{eq:gaussian-likelihood,eq:nuisance-prior}, explicit Gaussian
+nuisance marginalization and the covariance form
+\cref{eq:marginal-covariance} produce the same likelihood.  The explicit
+nuisance form remains preferable when normalization, acceptance, or
+polarization responses are nonlinear or shared across datasets.
+\end{proposition}
+
+\subsection{Multiplicative normalization and polarization}
+
+For a normalization nuisance \(n_d\),
+\begin{equation}
+ \bm m_d^{\sys}
+ =
+ \left(1+n_d\right)\bm m_d,
+ \qquad
+ n_d\sim\mathcal N(0,\sigma_{n_d}^2),
+ \label{eq:multiplicative-normalization}
+\end{equation}
+or a log-normal parameterization is used when positivity and large relative
+errors matter.  Beam and target polarizations, dilution factors, luminosity,
+and fragmentation normalizations remain separate nuisance parameters when
+their correlations differ.
+
+The model must distinguish an experimental normalization uncertainty from a
+physical normalization parameter.  A nuisance cannot be absorbed into a TMD
+normalization and then propagated as microscopic information.
+
+\subsection{Count and event likelihoods}
+
+For independent event counts,
+\begin{equation}
+ N_b\sim\operatorname{Poisson}\!\left(\lambda_b(\Theta,\eta,\nu)\right),
+ \label{eq:poisson-likelihood}
+\end{equation}
+with
+\begin{equation}
+ \lambda_b
+ =
+ \mathcal L
+ \int_{\mathrm{bin}\ b}
+ \dd\Phi\,
+ \epsilon(\Phi,\eta)\,
+ \frac{\dd\sigma(\Theta,\nu)}{\dd\Phi}
+ +\lambda_{b,\mathrm{bkg}} .
+ \label{eq:expected-count}
+\end{equation}
+For spin-state counts, the joint likelihood retains the actual polarization,
+luminosity, live-time, and background structure.  A Gaussian asymmetry
+likelihood is used only when its approximation and covariance are adequate.
+
+Unbinned event likelihoods are allowed when acceptance and normalization are
+well defined:
+\begin{equation}
+ \log\cL
+ =
+ -\Lambda(\Theta)
+ +\sum_{e=1}^{N}
+ \log\lambda(\Phi_e\mid\Theta).
+ \label{eq:extended-unbinned}
+\end{equation}
+
+\subsection{Lattice and Euclidean matrix elements}
+
+A lattice dataset records the gauge ensembles, lattice spacing, volume, quark
+masses, renormalization, continuum/chiral extrapolation, and covariance.
+Correlated lattice observables enter as
+\begin{equation}
+ \bm y_{\latt}
+ \sim
+ \mathcal N\!\left(
+ \bm Z_{\latt\to\mathfrak s}\,
+ \bm m_{\latt}(\Theta)
+ +\bm\delta_{\latt},
+ \bm C_{\latt}
+ \right).
+ \label{eq:lattice-likelihood}
+\end{equation}
+Matching or extrapolation uncertainty is not added twice when it is already
+contained in \(\bm C_{\latt}\) or represented by explicit nuisance variables.
+
+Published quasi- or pseudo-distributions are used as calibration data only
+when their matching, covariance, and common-ensemble correlations are
+available.  Otherwise they are diagnostic constraints or moments.
+
+\subsection{PDF and TMD extractions as data}
+
+An external PDF/TMD ensemble is not a set of independent measurements.  Its
+use requires:
+\begin{itemize}
+\item the operator and factorization scheme;
+\item the scale and perturbative order;
+\item the data ancestry of the extraction;
+\item a member-level covariance or a reproducible likelihood interface;
+\item separation from any raw data also used directly.
+\end{itemize}
+When these are unavailable, the extraction is treated as a comparison
+ensemble, not as a Gaussian likelihood built from pointwise error bars.
+
+\subsection{Asymmetric and non-Gaussian uncertainty}
+
+Split-normal, Student-\(t\), skew-normal, mixture, or direct likelihoods may be
+used when justified.  The choice is part of dataset identity.  Replacing a
+published asymmetric interval by a symmetric standard deviation is a model
+assumption and must be validated.
+
+\subsection{Likelihood normalization, units, and transformations}
+
+Every likelihood reports:
+\begin{itemize}
+\item units and Jacobians under variable transformations;
+\item whether constants independent of parameters are retained;
+\item bin widths and phase-space factors;
+\item covariance regularization, if any;
+\item masked bins and selection criteria;
+\item the numerical log-likelihood tolerance.
+\end{itemize}
+
+\begin{requirement}[Likelihood audit, V6.LIKE.1]
+The same synthetic dataset evaluated through two algebraically equivalent
+likelihood paths must agree within numerical tolerance.  Unit, bin, sign, and
+normalization mismatches are injected as mandatory failures.
+\end{requirement}
+
+\section{Prior hierarchy and physical regularization}
+\label{sec:priors}
+
+\subsection{Prior factorization}
+
+The prior is organized by ownership:
+\begin{align}
+ p(\Theta,\nu,\eta,\delta)
+ ={}&
+ p(\nu)\,
+ p(\theta_H,\theta_{\mathrm{ct}}\mid\nu)\,
+ p(\theta_J\mid\theta_H,\nu)\,
+ p(\theta_{\wil}\mid\theta_H,\nu)
+ \nonumber\\
+ &\times
+ p(\theta_{\nuc}\mid\theta_H,\nu)\,
+ p(\theta_{\matchp},\theta_{\CS}\mid\nu)\,
+ p(\eta)\,
+ p(\delta\mid\Theta,\nu).
+ \label{eq:prior-factorization}
+\end{align}
+The factorization is not assumed to imply physical independence.  Shared
+hyperparameters encode common naturalness, symmetry breaking, regulator
+running, or representation dependence.
+
+\subsection{Naturalness and power counting}
+
+For a dimensionless EFT or effective-Hamiltonian coefficient \(c_a\),
+\begin{equation}
+ c_a\mid\bar c,\rho
+ \sim
+ \mathcal N(0,\bar c^2 \rho_a^2),
+ \label{eq:naturalness-prior}
+\end{equation}
+where \(\rho_a\) records known symmetry or operator scaling and \(\bar c\) may
+have a weakly informative hyperprior.  Coefficients known to be nonzero at a
+lower order are centered on that lower-order information rather than zero.
+
+Naturalness priors reduce overfitting only when the operator basis and
+dimensionless scaling are physically declared.  They do not license arbitrary
+shrinkage of all parameters toward one common magnitude
+\cite{Wesolowski2016,Furnstahl2015}.
+
+\subsection{Regulator-dependent coefficients}
+
+Counterterms at regulator \(r\) are not exchangeable draws across cutoffs.
+Their prior is conditional on the renormalization trajectory:
+\begin{equation}
+ \theta_{\mathrm{ct}}^{(r')}
+ =
+ \cR_{r'\leftarrow r}
+ \theta_{\mathrm{ct}}^{(r)}
+ +
+ \xi_{r'r},
+ \label{eq:counterterm-flow-prior}
+\end{equation}
+where \(\xi_{r'r}\) represents residual truncation after the declared matching
+map.  A prior that forces bare coefficients to remain numerically identical
+under regulator changes is generally inappropriate.
+
+\subsection{Symmetry-breaking hierarchy}
+
+Charge-symmetry, rotational, chiral, heavy-flavor, or tensor-breaking
+parameters carry power-counting hyperparameters.  For example,
+\begin{equation}
+ \theta_{\mathrm{CSB},a}
+ =
+ \epsilon_{\mathrm{CSB}}\,
+ \widetilde\theta_a,
+ \qquad
+ \widetilde\theta_a\sim\mathcal N(0,\bar c_{\mathrm{CSB}}^2),
+ \label{eq:csb-hierarchy}
+\end{equation}
+with \(\epsilon_{\mathrm{CSB}}\) tied to the declared physical expansion.  The
+same hyperparameter propagates to all operators in the symmetry class.
+
+\subsection{Prior predictive checks}
+
+Before conditioning on \(\caldata\), draw
+\begin{equation}
+ \Theta^{(s)},\nu^{(s)},\eta^{(s)},\delta^{(s)}
+ \sim p(\Theta,\nu,\eta,\delta),
+ \qquad
+ \bm y_{\repdata}^{(s)}
+ \sim p(\bm y\mid\Theta^{(s)},\nu^{(s)},\eta^{(s)},\delta^{(s)}).
+ \label{eq:prior-predictive}
+\end{equation}
+Prior predictive checks must expose:
+\begin{itemize}
+\item unphysical spectra or negative rates;
+\item implausible charges, moments, and form factors;
+\item excessive or negligible symmetry breaking;
+\item Wilson phases too large for the declared order;
+\item matching coefficients that violate known limits;
+\item discrepancy fields broader than the physics they are meant to
+      approximate;
+\item numerical regions outside the solver or emulator domain.
+\end{itemize}
+
+\begin{requirement}[Prior predictive admissibility, V6.PRIOR.1]
+A prior is not accepted merely because the posterior is numerically stable.
+It must generate scientifically plausible observables before seeing
+\(\caldata\) and must not place substantial probability on states rejected by
+exact structural gates.
+\end{requirement}
+
+\subsection{Weakly informative does not mean unowned}
+
+A weakly informative prior still records:
+\begin{equation}
+ \left(
+ \text{units},
+ \text{reference scale},
+ \text{operator owner},
+ \text{support},
+ \text{tail behavior},
+ \text{hyperparameters},
+ \text{sensitivity plan}
+ \right).
+ \label{eq:prior-record}
+\end{equation}
+Changing a prior after inspecting \(\holddata\) invalidates the withheld claim.
+Prior sensitivity is assessed on calibration and diagnostic quantities or in
+a new versioned analysis.
+
+\section{Theory discrepancy and correlated truncation}
+\label{sec:discrepancy}
+
+\subsection{Why discrepancy is necessary but dangerous}
+
+The observation model
+\begin{equation}
+ y(x)=\cG(x;\Theta)+\delta(x)+\epsilon(x)
+ \label{eq:basic-discrepancy}
+\end{equation}
+separates simulator output, model discrepancy, and observation error.
+Ignoring \(\delta\) can produce biased and overconfident physical parameters,
+while an unrestricted \(\delta\) can become confounded with those parameters
+\cite{KennedyOHagan2001,BrynjarsdottirOHagan2014,Plumlee2017}.
+
+For this program, discrepancy is not one universal function.  It is a direct
+sum of physically typed components:
+\begin{equation}
+ \delta
+ =
+ \delta_H
+ +\delta_{\mathrm{Fock}}
+ +\delta_{\reg}
+ +\delta_{\wil}
+ +\delta_{\matchp}
+ +\delta_{\evol}
+ +\delta_{\nuc}
+ +\delta_{\proc}
+ +\delta_{\emul}
+ +\delta_{\num}.
+ \label{eq:discrepancy-decomposition}
+\end{equation}
+The components may be correlated, but their meanings remain distinct.
+
+\subsection{Hamiltonian and EFT truncation}
+
+For an observable with expansion
+\begin{equation}
+ \cO^{(k)}(x)
+ =
+ \cO_{\mathrm{ref}}(x)
+ \sum_{n=0}^{k} c_n(x)Q(x)^n,
+ \label{eq:eft-expansion}
+\end{equation}
+the truncation remainder is
+\begin{equation}
+ \delta_H^{(k)}(x)
+ =
+ \cO_{\mathrm{ref}}(x)
+ \sum_{n=k+1}^{\infty} c_n(x)Q(x)^n.
+ \label{eq:eft-remainder}
+\end{equation}
+A correlated model places a process on the coefficient functions:
+\begin{equation}
+ c_n(x)\sim
+ \GP\!\left(
+ \mu_n(x),
+ \bar c^2 K_n(x,x';\ell)
+ \right),
+ \label{eq:eft-gp}
+\end{equation}
+with correlations across kinematics and, when justified, across observables
+that share the same operator expansion.  This implements correlated EFT
+truncation rather than independent pointwise error bars
+\cite{Furnstahl2015,Melendez2019}.
+
+The expansion parameter, reference scale, first omitted order, and correlation
+length are inferred or varied only within the EFT interpretation.  A GP
+kernel is not chosen solely for visual smoothness.
+
+\subsection{Fock-sector and basis truncation}
+
+Let \(\cO_{r,n}\) denote the matched observable at regulator/basis/Fock level
+\((r,n)\).  The residual
+\begin{equation}
+ \Delta_{r,n}
+ =
+ \cO_{r,n}
+ -
+ \cR_{r,n\leftarrow r',n'}[\cO_{r',n'}]
+ \label{eq:fock-basis-residual}
+\end{equation}
+is modeled against known convergence variables such as \(1/N_{\max}\),
+longitudinal resolution, omitted-sector probability scale, or ultraviolet
+cutoff.  Bare wave-function differences are not substituted for observable
+discrepancy.
+
+\subsection{Wilson-order discrepancy}
+
+If
+\begin{equation}
+ W_{\odd}^{(N)}
+ =
+ \sum_{n=1}^{N}W_{\odd}^{[n]},
+ \label{eq:wilson-order-series}
+\end{equation}
+then
+\begin{equation}
+ \delta_{\wil}^{(N)}
+ =
+ W_{\odd}-W_{\odd}^{(N)}
+ \label{eq:wilson-remainder}
+\end{equation}
+is correlated among every Sivers-like, Boer--Mulders-like, tensor, antiquark,
+and gluon projection that uses the same omitted Wilson webs.  It cannot be
+represented by independent phase errors for each TMD.
+
+\subsection{Matching and evolution discrepancy}
+
+The LF-to-QCD matching residual is an operator-space field,
+\begin{equation}
+ \widetilde{\bm W}^{\,\QCD}
+ =
+ \bm Z_{\LF\to\QCD}
+ \otimes_x
+ \widetilde{\bm W}^{\,\LF}
+ +
+ \bm\delta_{\matchp},
+ \label{eq:matching-discrepancy}
+\end{equation}
+whose covariance respects operator mixing, rank, link/color class, and local
+limits.
+
+Evolution discrepancy is separated into:
+\begin{equation}
+ \delta_{\evol}
+ =
+ \delta_{\mathrm{pert\ order}}
+ +
+ \delta_{\mathrm{finite\ curl}}
+ +
+ \delta_{\mathrm{large}\ b}
+ +
+ \delta_{\mathrm{threshold}}
+ +
+ \delta_{W+Y}.
+ \label{eq:evolution-discrepancy}
+\end{equation}
+Scale variation is a diagnostic or prior input for these terms; it is not
+automatically a calibrated probability distribution.
+
+\subsection{Nuclear and process discrepancy}
+
+Nuclear discrepancy is attached to omitted many-body operators, sector
+truncation, coherent amplitudes, or scale separation.  It retains target
+helicity and operator structure.  A scalar unpolarized nuclear ratio cannot
+serve as tensor or polarized discrepancy unless a theorem supplies that
+relation.
+
+Process discrepancy contains declared power corrections, fragmentation
+uncertainty, missing fixed-order terms, and factorization limitations.
+A channel marked \texttt{BROKEN} or \texttt{UNASSESSED} does not acquire a
+Gaussian discrepancy that magically restores standard TMD factorization.
+
+\subsection{Orthogonality and identifiability}
+
+Let
+\begin{equation}
+ J_a(x)=\frac{\partial\cG(x;\Theta)}{\partial\theta_a}.
+ \label{eq:model-tangent}
+\end{equation}
+A discrepancy basis \(\{B_m(x)\}\) can be constrained to satisfy
+\begin{equation}
+ \langle B_m,J_a\rangle_{\bm C^{-1}}=0
+ \label{eq:orthogonal-discrepancy}
+\end{equation}
+for selected physically interpretable parameters.  This reduces confounding
+between calibration directions and discrepancy, while not implying that the
+true discrepancy is exactly orthogonal
+\cite{Plumlee2017}.
+
+Alternative safeguards include:
+\begin{itemize}
+\item informative priors from power counting;
+\item multiple observable families with different parameter sensitivities;
+\item explicit local-current and sum-rule constraints;
+\item discrepancy support restricted to known omitted sectors or kinematic
+      domains;
+\item sensitivity analyses under several plausible discrepancy models.
+\end{itemize}
+
+\begin{requirement}[No catch-all repair, V6.DISC.1]
+A discrepancy component must declare its physical source, operator support,
+correlation structure, expected order, and observables reached.  A
+curve-specific unconstrained residual added after a failed withheld test is not
+an admissible model update.
+\end{requirement}
+
+\subsection{Law of total covariance}
+
+For predictions \(\bm O\), the total covariance is
+\begin{align}
+ \Cov(\bm O)
+ ={}&
+ \E_{\nu,\delta}\!\left[
+ \Cov(\bm O\mid\nu,\delta,\caldata)
+ \right]
+ \nonumber\\
+ &+
+ \Cov_{\nu,\delta}\!\left(
+ \E[\bm O\mid\nu,\delta,\caldata]
+ \right).
+ \label{eq:total-covariance}
+\end{align}
+Within a fixed model,
+\begin{equation}
+ \Cov(\bm O\mid\nu)
+ =
+ \Cov_{\Theta,\eta}(\bm O)
+ +
+ \Cov_{\disc}(\bm O)
+ +
+ \Cov_{\emul}(\bm O)
+ +
+ \Cov_{\num}(\bm O)
+ +
+ \text{cross terms},
+ \label{eq:covariance-components}
+\end{equation}
+where cross terms are retained whenever the components are not conditionally
+independent.
+
+\begin{principle}[Separated reporting]
+The total posterior predictive distribution is authoritative for prediction,
+but the Hamiltonian, Fock, regulator, Wilson, matching, evolution, nuclear,
+process, experimental, emulator, and numerical components must remain
+separately queryable.  One category cannot hide nonconvergence in another.
+\end{principle}
+
+\section{Posterior construction and hierarchical calibration}
+\label{sec:posterior}
+
+\subsection{Full posterior}
+
+The posterior for one declared model version is
+\begin{align}
+ &p(\Theta,\nu,\eta,\delta,\lambda\mid\caldata)
+ \nonumber\\
+ &\quad\propto
+ p(\caldata\mid\Theta,\nu,\eta,\delta)
+ p(\Theta\mid\nu,\lambda)
+ p(\delta\mid\Theta,\nu,\lambda)
+ p(\eta)
+ p(\nu)
+ p(\lambda),
+ \label{eq:hierarchical-posterior}
+\end{align}
+where \(\lambda\) collects hyperparameters for naturalness, correlation
+lengths, truncation scales, and nuisance populations.
+
+The likelihood is evaluated only after all structural gates pass.  A state
+that violates exact normalization, color singletness, operator completeness,
+or composition exclusions has zero support by construction rather than a
+large chi-square penalty.
+
+\subsection{Observable-level and matrix-element-level calibration}
+
+The preferred calibration targets are raw observables or well-defined matrix
+elements.  Let \(\cM_j(\Theta)\) be a local or bilocal matrix element and
+\(\cO_i(\Theta)\) a process observable.  Then
+\begin{equation}
+ \log\cL
+ =
+ \sum_{j\in\cI_{\mathrm{ME}}}
+ \log p(M_j^{\obs}\mid\cM_j)
+ +
+ \sum_{i\in\cI_{\proc}}
+ \log p(O_i^{\obs}\mid\cO_i),
+ \label{eq:matrix-and-process-likelihood}
+\end{equation}
+with joint covariance where the data are correlated.
+
+Named TMD curves are calibration objects only when their extraction
+likelihood, scheme, covariance, and data ancestry are sufficiently available.
+Otherwise they remain external validation summaries.
+
+\subsection{Sequential and modular calibration}
+
+Computationally, the model may be developed in stages:
+\begin{equation}
+ p(\Theta_A\mid D_A)
+ \longrightarrow
+ p(\Theta_A,\Theta_B\mid D_A,D_B)
+ \longrightarrow\cdots .
+ \label{eq:sequential-calibration}
+\end{equation}
+Sequential updating is mathematically equivalent to joint Bayes only when the
+same joint model is used and no information is discarded.  Modular
+calibration, cut feedback, or staged emulator training may be useful, but the
+departure from the joint posterior is declared and tested.
+
+For example, a lattice matching analysis may supply
+\(p(\theta_{\matchp}\mid D_{\latt})\) as an external posterior.  Importing it as
+a prior is valid only when the data ancestry is disjoint from the downstream
+likelihood or the shared data are modeled jointly.
+
+\subsection{Tempering and robust likelihoods}
+
+If a dataset is suspected of unmodeled contamination, the response is not an
+undocumented likelihood weight.  Admissible options include:
+\begin{itemize}
+\item an explicit contamination mixture;
+\item a heavy-tailed observation model;
+\item a hierarchical between-experiment variance;
+\item a diagnostic-only role;
+\item a sensitivity analysis over a declared generalized-Bayes temperature.
+\end{itemize}
+Any likelihood tempering changes the inferential target and is stored in the
+analysis manifest.
+
+\subsection{Alternative microscopic models}
+
+Suppose \(\mathfrak M_k\) are competing model classes.  Their predictive
+distributions may be compared or combined:
+\begin{equation}
+ p_k(\widetilde y\mid\caldata)
+ =
+ \int p(\widetilde y\mid\Theta_k,\mathfrak M_k)
+ p(\Theta_k\mid\caldata,\mathfrak M_k)\,\dd\Theta_k.
+ \label{eq:model-predictive}
+\end{equation}
+Posterior model probabilities require meaningful model priors and marginal
+likelihoods.  In an open model space, predictive stacking may be preferable:
+\begin{equation}
+ p_{\mathrm{stack}}(\widetilde y)
+ =
+ \sum_k w_k p_k(\widetilde y),
+ \qquad
+ w_k\geq0,\quad\sum_kw_k=1,
+ \label{eq:stacking-mixture}
+\end{equation}
+with weights determined by protected out-of-sample predictive performance
+\cite{YaoStacking2018}.
+
+Model combination never merges incompatible internal states into one
+microscopic member.  It is a mixture over complete model predictions.
+
+\section{Identifiability, sensitivity, and parameter geometry}
+\label{sec:identifiability}
+
+\subsection{Structural and practical identifiability}
+
+A parameter is structurally identifiable from observable family \(\cO\) if
+\begin{equation}
+ \cG(\Theta_1)=\cG(\Theta_2)
+ \quad\Longrightarrow\quad
+ \theta_a(\Theta_1)=\theta_a(\Theta_2)
+ \label{eq:structural-identifiability}
+\end{equation}
+within the declared model.  Practical identifiability depends on finite data,
+noise, nuisance parameters, discrepancy, and kinematic support.
+
+An unidentifiable parameter is not rescued by reporting a narrow conditional
+fit obtained after fixing correlated parameters.  The posterior geometry and
+prior dependence must be exposed.
+
+\subsection{Jacobian and Fisher information}
+
+At a reference point,
+\begin{equation}
+ J_{ia}
+ =
+ \frac{\partial m_i}{\partial\theta_a}.
+ \label{eq:sensitivity-jacobian}
+\end{equation}
+For a Gaussian likelihood with covariance \(\bm C\), the local expected Fisher
+information is
+\begin{equation}
+ \bm I(\Theta)
+ =
+ \bm J\trans\bm C^{-1}\bm J
+ +
+ \bm I_{\mathrm{prior}}.
+ \label{eq:fisher-information}
+\end{equation}
+Small singular values of
+\(\bm C^{-1/2}\bm J\) identify weak parameter combinations.
+
+The Jacobian must be computed through the same composition graph used for
+predictions, using automatic differentiation, adjoint methods, or validated
+finite differences.  Derivatives through hard gates or discrete model changes
+are treated separately.
+
+\subsection{Posterior correlations and profiles}
+
+Diagnostics include:
+\begin{itemize}
+\item posterior correlation and partial-correlation matrices;
+\item profile likelihood or profile posterior curves;
+\item principal directions of the posterior covariance;
+\item rank and condition number of local sensitivity matrices;
+\item prior-to-posterior contraction by parameter block;
+\item leave-one-dataset-family influence;
+\item observable-to-parameter attribution.
+\end{itemize}
+
+A large posterior correlation is not automatically a defect; it may represent
+a real physical degeneracy.  The requirement is that the degeneracy be visible
+and that withheld predictions propagate it.
+
+\subsection{Parameter ownership matrix}
+
+Define
+\begin{equation}
+ A_{ia}
+ =
+ \begin{cases}
+ 1,& \theta_a\text{ is an ancestor of observable }i,\\
+ 0,& \text{otherwise}.
+ \end{cases}
+ \label{eq:ownership-matrix}
+\end{equation}
+The weighted sensitivity graph uses
+\begin{equation}
+ S_{ia}
+ =
+ \left|
+ \frac{\theta_a}{s_i}
+ \frac{\partial m_i}{\partial\theta_a}
+ \right|,
+ \label{eq:dimensionless-sensitivity}
+\end{equation}
+where \(s_i\) is a declared observable scale.
+
+The ownership matrix tests whether a supposedly shared parameter actually
+propagates to all required projections.  It also detects illicit latent
+parameters that reach only one named TMD.
+
+\begin{requirement}[Shared-physics sensitivity, V6.ID.1]
+Every parameter associated with a quark--gluon vertex, OAM mixing, Wilson
+kernel, nuclear current, or matching coefficient must have the complete
+observable ancestry predicted by the formal operator graph.  Missing
+sensitivities are implementation failures.
+\end{requirement}
+
+\subsection{Global sensitivity}
+
+For nonlinear models, variance-based or derivative-based global sensitivity
+may supplement the local Fisher analysis.  The sensitivity calculation is
+performed under the prior or posterior distribution appropriate to the
+question.  A parameter can be locally invisible at one point but globally
+important through thresholds, nodes, or interference.
+
+Global sensitivity is not used to delete a physically required operator.
+Low sensitivity in the current data region may instead identify a target for
+new measurements.
+
+\subsection{Identifiability across observable families}
+
+Cross-channel inference is central.  A parameter combination poorly
+identified by one family may be separated by another:
+\begin{equation}
+ \bm I_{\mathrm{total}}
+ =
+ \sum_{f\in\text{families}}
+ \bm J_f\trans\bm C_f^{-1}\bm J_f .
+ \label{eq:family-information-sum}
+\end{equation}
+Examples include:
+\begin{itemize}
+\item spectra and currents separating Hamiltonian and current coefficients;
+\item TMD and GPD marginals separating intrinsic transverse structure from
+      normalization;
+\item SIDIS and Drell--Yan separating link orientation;
+\item Sivers and Boer--Mulders separating target-spin and active-quark-spin
+      interference;
+\item \(b_1\), elastic form factors, and tagged observables separating S--D
+      structure, sea tensor polarization, and non-nucleonic sectors;
+\item multiple \(Q\) values separating boundary and evolution parameters.
+\end{itemize}
+
+\section{Emulators, reduced models, and solver error}
+\label{sec:emulators}
+
+\subsection{Purpose and admissible role}
+
+If the exact forward solver is too costly for posterior sampling, an emulator
+\begin{equation}
+ \widehat{\cG}(\Theta)
+ =
+ \cG(\Theta)+\delta_{\emul}(\Theta)
+ \label{eq:emulator-definition}
+\end{equation}
+may replace selected deterministic nodes.  The emulator approximates the
+declared solver; it does not replace physical discrepancy.
+
+Admissible methods include Gaussian-process response surfaces, polynomial or
+sparse-grid approximations, eigenvector continuation, reduced-basis
+variational emulators, and neural surrogates.  Their errors and domains differ
+and must be tested independently
+\cite{Frame2018,ZhangFurnstahl2022,Drischler2021}.
+
+\subsection{Training, validation, and test designs}
+
+Parameter points are partitioned into:
+\begin{equation}
+ \cX_{\emul}
+ =
+ \cX_{\mathrm{train}}
+ \,\dot\cup\,
+ \cX_{\mathrm{val}}
+ \,\dot\cup\,
+ \cX_{\mathrm{test}}.
+ \label{eq:emulator-split}
+\end{equation}
+The test set is not used for hyperparameter tuning.  It should include:
+\begin{itemize}
+\item space-filling points in the prior-relevant domain;
+\item posterior-relevant points found adaptively;
+\item edges and near-singular regions;
+\item regulator and truncation transitions;
+\item points near nodes, thresholds, and interference sign changes.
+\end{itemize}
+
+\subsection{Emulator covariance}
+
+For probabilistic emulators,
+\begin{equation}
+ \widehat{\cG}(\Theta)
+ \sim
+ \mathcal N\!\left(
+ \bm\mu_{\emul}(\Theta),
+ \bm C_{\emul}(\Theta)
+ \right).
+ \label{eq:probabilistic-emulator}
+\end{equation}
+The emulator covariance is added to the likelihood or sampled as a latent
+error only after calibration against exact solver residuals.
+
+For deterministic reduced-basis emulators, an a posteriori error bound or
+validated empirical residual plays the same role.  A small training error is
+not sufficient.
+
+\subsection{Observable and derivative fidelity}
+
+An emulator is validated for:
+\begin{itemize}
+\item each observable family used in the likelihood;
+\item cross-observable covariance;
+\item gradients or adjoints used by HMC or sensitivity analysis;
+\item exact constraints and sum rules;
+\item sign changes and zero limits;
+\item posterior predictive tails.
+\end{itemize}
+A surrogate that reproduces central values but violates a Ward identity or
+gives inaccurate derivatives is not acceptable for inference.
+
+\subsection{Adaptive refinement}
+
+During inference, define a risk score
+\begin{equation}
+ R_{\emul}(\Theta)
+ =
+ \frac{\norm{\bm C_{\obs}^{-1/2}
+ [\cG(\Theta)-\widehat{\cG}(\Theta)]}}
+ {1+\norm{\bm C_{\obs}^{-1/2}\cG(\Theta)}}.
+ \label{eq:emulator-risk}
+\end{equation}
+High posterior mass at large predicted emulator risk triggers exact solver
+evaluations and retraining.  The retraining sequence is versioned, and final
+validation uses an independent exact test set.
+
+\begin{requirement}[No silent extrapolation, V6.EMUL.1]
+An emulator prediction outside its certified domain is marked unavailable or
+forces an exact calculation.  Extrapolation is not assigned zero emulator
+uncertainty.
+\end{requirement}
+
+\subsection{Multi-fidelity hierarchy}
+
+Let \(\cG_\ell\) denote a fidelity level.  A multi-fidelity model may use
+\begin{equation}
+ \cG_H(\Theta)
+ =
+ \rho(\Theta)\cG_L(\Theta)
+ +
+ \Delta_{HL}(\Theta),
+ \label{eq:multifidelity}
+\end{equation}
+but \(\Delta_{HL}\) is an emulator relation, not physical model discrepancy.
+Fidelity labels may include basis size, Fock depth, Wilson order, quadrature
+resolution, or perturbative order only when the mapping is mathematically
+defined.
+
+\section{Computational inference and algorithm validation}
+\label{sec:computation}
+
+\subsection{Algorithm selection}
+
+Gradient-based Hamiltonian Monte Carlo and \NUTS\ are natural for continuous,
+differentiable, moderately high-dimensional posteriors
+\cite{HoffmanGelman2014}.  Sequential Monte Carlo, nested sampling, reversible
+jump methods, or tempered transitions may be required for multimodal or
+discrete model spaces.  Variational or Laplace approximations are allowed only
+with direct validation against exact or high-quality sampling on representative
+subproblems.
+
+The algorithm is selected after examining posterior geometry, not by a fixed
+project-wide preference.
+
+\subsection{Synthetic recovery}
+
+For known synthetic parameters
+\begin{equation}
+ \Theta_0\sim p(\Theta),
+ \qquad
+ y_0\sim p(y\mid\Theta_0),
+ \label{eq:synthetic-generation}
+\end{equation}
+the complete pipeline must recover the appropriate posterior uncertainty.
+Tests include:
+\begin{itemize}
+\item one-parameter and correlated multi-parameter recovery;
+\item nuisance and physical parameter separation;
+\item discrepancy-on and discrepancy-off cases;
+\item active/inactive Fock and Wilson sectors;
+\item nonidentifiable parameter combinations;
+\item emulator and exact-solver comparison.
+\end{itemize}
+
+\subsection{Simulation-based calibration}
+
+For repeated prior-predictive simulations, \SBC\ rank statistics test whether
+the inference algorithm samples the implemented posterior
+\cite{Talts2018}.  For scalar test quantity \(h(\Theta)\), define
+\begin{equation}
+ r_s
+ =
+ \sum_{m=1}^{M}
+ \bbone\!\left[
+ h(\Theta_{s,m}^{\post})
+ <
+ h(\Theta_s^{\mathrm{true}})
+ \right].
+ \label{eq:sbc-rank}
+\end{equation}
+Under calibrated computation, ranks are discrete uniform after accounting for
+ties and autocorrelation.
+
+SBC validates the implementation of the probabilistic program and algorithm;
+it does not validate the scientific model against nature.
+
+\subsection{MCMC diagnostics}
+
+For every continuous parameter and important derived quantity, report:
+\begin{itemize}
+\item rank-normalized split \(\Rhat\);
+\item bulk and tail effective sample size;
+\item Monte Carlo standard errors;
+\item divergences and energy diagnostics for HMC;
+\item chain and rank plots;
+\item sensitivity to initialization and adaptation;
+\item mode discovery or evidence of nonmixing.
+\end{itemize}
+Rank-normalized and localized diagnostics are used for heavy-tailed or
+nonstationary chains \cite{VehtariRhat2021}.
+
+No single numerical threshold proves convergence.  Diagnostics are combined
+with repeated runs and problem-specific quantities.
+
+\subsection{Approximate inference}
+
+If \(q(\Theta)\) approximates the posterior, assess:
+\begin{equation}
+ \E_q[h(\Theta)],
+ \qquad
+ \Var_q[h(\Theta)],
+ \qquad
+ p_q(\cY_{\hold}),
+ \label{eq:approx-inference-tests}
+\end{equation}
+against a trusted sampler on reduced problems and importance-weighted or
+simulation-based diagnostics on the full problem.  Underdispersion in
+variational approximations is treated as a failure unless corrected and
+validated.
+
+\subsection{Reproducibility manifest}
+
+Every inferential run stores:
+\begin{itemize}
+\item code, data, formalism, and configuration hashes;
+\item random seeds and chain identifiers;
+\item exact and emulator solver versions;
+\item prior, likelihood, discrepancy, and partition manifests;
+\item sampler and adaptation settings;
+\item posterior draw checksums;
+\item hardware and numerical precision;
+\item all warnings, rejected states, and failed diagnostics.
+\end{itemize}
+
+
+\section{Posterior prediction and the common microscopic ensemble}
+\label{sec:posterior-prediction}
+
+\subsection{Posterior predictive distribution}
+
+Let \(\Theta\) denote all continuous parameters, discrete model labels,
+nuisance variables, and latent discrepancy fields retained after calibration.
+For a future or withheld dataset \(\cY_*\) under design and measurement record
+\(\mathfrak d_*\), the posterior predictive distribution is
+\begin{equation}
+ p(\cY_*\mid\caldata,\mathfrak d_*)
+ =
+ \sum_m\int
+ p(\cY_*\mid\Theta,m,\mathfrak d_*)\,
+ p(\Theta,m\mid\caldata)\,
+ \dd\Theta .
+ \label{eq:posterior-predictive-general}
+\end{equation}
+The prediction includes the experimental sampling model appropriate to
+\(\mathfrak d_*\).  The corresponding latent-physics predictive distribution,
+with future measurement noise removed, is
+\begin{equation}
+ p(\cO_*\mid\caldata,\mathfrak d_*)
+ =
+ \sum_m\int
+ \delta\!\left[
+ \cO_*-\cG_*(\Theta,m;\mathfrak d_*)
+ \right]\,
+ p(\Theta,m\mid\caldata)\,
+ \dd\Theta .
+ \label{eq:latent-predictive}
+\end{equation}
+These distributions answer different questions and may not share one
+uncertainty band label.
+
+\begin{requirement}[Shared-member pushforward]
+A posterior draw is propagated as one indivisible microscopic member through
+every requested observable.  Resampling quark, gluon, proton, neutron,
+Hamiltonian, Wilson, nuclear, matching, or evolution components independently
+after inference is forbidden unless independence is a declared property of the
+posterior factorization.
+\end{requirement}
+
+For posterior member \(s\), store
+\begin{equation}
+ \Theta_s
+ \longmapsto
+ \left\{
+ |\Psi_N\rangle_s,\,
+ |\Psi_D\rangle_s,\,
+ W_{q,s},W_{\bar q,s},W_{g,s},\,
+ U_{\gamma,s},\,
+ \cZ_s,\,
+ \cD_s,\,
+ \cO_{1,s},\ldots,\cO_{K,s}
+ \right\}.
+ \label{eq:common-member-map}
+\end{equation}
+This member identity is the computational realization of the claim that
+cross-flavor, cross-TMD, quark--gluon, proton--neutron, nucleon--deuteron, and
+cross-process correlations are predictions of the common model.
+
+\subsection{Predictive covariance and decomposition}
+
+For latent observables \(\cO_i\), the total posterior covariance is
+\begin{equation}
+ \Cov_{\pred}(\cO_i,\cO_j)
+ =
+ \E_{\post}\!\left[
+ \Cov(\cO_i,\cO_j\mid\Theta)
+ \right]
+ +
+ \Cov_{\post}\!\left(
+ \E[\cO_i\mid\Theta],
+ \E[\cO_j\mid\Theta]
+ \right).
+ \label{eq:law-total-covariance}
+\end{equation}
+The first term contains stochastic discrepancy, emulator residual, and any
+future-process randomness retained conditionally on \(\Theta\).  The second is
+the pushforward of posterior uncertainty in shared parameters and discrete
+models.
+
+For a transparent error budget, define conditional variance contributions by
+holding all but one uncertainty block fixed and using a common posterior
+reference distribution:
+\begin{equation}
+ V_i^{(a)}
+ =
+ \E_{\Theta_{\neg a}}
+ \Var_{\Theta_a}
+ \left[
+ \cO_i(\Theta_a,\Theta_{\neg a})
+ \mid\Theta_{\neg a}
+ \right].
+ \label{eq:conditional-variance-component}
+\end{equation}
+Because nonlinear interactions among blocks generally exist,
+\begin{equation}
+ \Var(\cO_i)
+ \neq
+ \sum_a V_i^{(a)} .
+ \label{eq:variance-not-additive}
+\end{equation}
+The report therefore includes interaction or remainder terms rather than
+forcing all sources into a misleading quadrature sum.
+
+\subsection{Simultaneous bands and correlation products}
+
+Pointwise posterior intervals do not control a whole function.  For a curve
+\(f(z)\) on a declared domain \(\cZ\), construct a simultaneous band from the
+posterior distribution of
+\begin{equation}
+ T_s
+ =
+ \sup_{z\in\cZ}
+ \frac{
+ \abs{f_s(z)-\widehat f(z)}
+ }{
+ \widehat\sigma_f(z)+\eps_{\mathrm{floor}}
+ } .
+ \label{eq:simultaneous-band-statistic}
+\end{equation}
+If \(c_{1-\alpha}\) is the posterior quantile of \(T_s\), report
+\begin{equation}
+ \widehat f(z)
+ \pm
+ c_{1-\alpha}\widehat\sigma_f(z)
+ \label{eq:simultaneous-band}
+\end{equation}
+together with the domain, grid or function-space representation, and floor
+used in \cref{eq:simultaneous-band-statistic}.
+
+The principal covariance deliverables include:
+\begin{itemize}
+\item full or compressed covariance matrices for named observable vectors;
+\item correlation matrices across flavor, target polarization, parton species,
+nuclear mechanism, scale, and process;
+\item principal covariance modes and the parameter blocks that generate them;
+\item cross-covariance needed for ratios, asymmetries, and combined fits;
+\item posterior member files sufficient to reconstruct nonlinear derived
+quantities without Gaussian approximation.
+\end{itemize}
+
+\subsection{Posterior predictive checks}
+
+For a discrepancy statistic \(T(\cY,\Theta)\), generate replicated data
+\(\cY^{\repdata}\) and compare
+\begin{equation}
+ T(\cY^{\repdata},\Theta)
+ \quad\hbox{with}\quad
+ T(\cY^{\obs},\Theta).
+ \label{eq:ppc}
+\end{equation}
+Checks are chosen before inspecting their final result and include:
+\begin{itemize}
+\item residual shape and correlation versus \(x,Q,\qT,t,\phi\), target state,
+and process;
+\item normalization and shape summaries separately;
+\item symmetry, support, positivity, number, momentum, current, and angular
+condition residuals;
+\item extreme-tail, node, sign, and zero-crossing statistics;
+\item within-family and cross-family correlations;
+\item replicate behavior after the same acceptance, binning, unfolding, and
+derived-observable procedure used for the data.
+\end{itemize}
+
+A posterior predictive \(p\)-value is a model-criticism diagnostic, not a
+frequentist significance level.  It is reported with the statistic and the
+reference distribution rather than converted into a universal pass/fail
+number.
+
+\subsection{Conditional predictive checks}
+
+A global fit may hide a failure in a weakly weighted family.  Define
+conditional predictive distributions such as
+\begin{equation}
+ p(
+ \cY_{\mathrm{tensor}}
+ \mid
+ \cY_{\mathrm{spectroscopy}},
+ \cY_{\mathrm{current}},
+ \cY_{\mathrm{unpolarized}}
+ )
+ \label{eq:conditional-predictive-family}
+\end{equation}
+or
+\begin{equation}
+ p(
+ \cY_{\mathrm{BM}}
+ \mid
+ \cY_{\mathrm{Sivers}},
+ \cY_{\mathrm{state}},
+ \cY_{\mathrm{current}}
+ ).
+ \label{eq:sivers-to-bm-predictive}
+\end{equation}
+These tests isolate the information flow that justifies a claimed prediction.
+
+\section{Withheld validation and falsifiability}
+\label{sec:withheld-validation}
+
+\subsection{Three distinct uses of data}
+
+The inference program separates, as part of an iterative but auditable Bayesian workflow \cite{GelmanWorkflow2020}:
+\begin{enumerate}
+\item \textbf{calibration data} \(\caldata\), which update the posterior;
+\item \textbf{diagnostic data} \(\diagdata\), which may guide model criticism
+but do not enter the final posterior without a new versioned analysis;
+\item \textbf{withheld data} \(\holddata\), whose values or final comparison
+remain inaccessible until the model, priors, discrepancy, and acceptance
+criteria are frozen.
+\end{enumerate}
+Moving a failed withheld family into calibration creates a new model version
+and requires a new independent holdout.  It cannot preserve the original
+prediction claim.
+
+\subsection{Strong holdout units}
+
+Randomly withholding individual points is often too weak because neighboring
+kinematics, shared systematics, and the same extraction assumptions leak
+information.  Preferred holdout units are:
+\begin{itemize}
+\item an entire observable family;
+\item an experiment or run period;
+\item a disjoint kinematic region;
+\item a polarization or flavor channel;
+\item a process with a different Wilson-link or hard-factor structure;
+\item a lattice ensemble or operator family;
+\item a nuclear observable not used in the nucleon calibration;
+\item a higher Fock, Wilson, or perturbative order benchmark.
+\end{itemize}
+
+\begin{definition}[Cross-channel prediction]
+A cross-channel prediction is a posterior predictive distribution for an
+observable whose normalization and shape were not directly calibrated and
+whose dominant operator projector, target channel, process map, or nuclear
+mechanism differs from the calibration family, while sharing identifiable
+microscopic parameters with it.
+\end{definition}
+
+\subsection{Predeclared validation record}
+
+Each withheld gate has a versioned record
+\begin{equation}
+ \mathfrak v
+ =
+ \left(
+ \begin{gathered}
+ \text{id},\ \text{family},\ \text{data ancestry},\
+ \text{information embargo},\\
+ \text{prediction object},\ \text{metric},\ \text{tolerance},\
+ \text{decision rule},\\
+ \text{permitted revision classes}
+ \end{gathered}
+ \right).
+ \label{eq:validation-record}
+\end{equation}
+The record is committed before unblinding.  Tolerances are justified by the
+scientific use of the prediction, the estimated uncertainties, and analytic or
+simulation calibration; they are not chosen to make an observed result pass.
+
+\subsection{Predictive metrics}
+
+No single metric is sufficient.  The standard validation report includes:
+\begin{align}
+ \mathrm{LogScore}
+ &=
+ -\log p(y_{\hold}\mid\caldata),
+ \label{eq:log-score}\\
+ \mathrm{Mahalanobis}^2
+ &=
+ (\bm y_{\hold}-\bm\mu_{\pred})^{\mathsf T}
+ \bm\Sigma_{\pred}^{-1}
+ (\bm y_{\hold}-\bm\mu_{\pred}),
+ \label{eq:mahalanobis-predictive}\\
+ \mathrm{Coverage}_{\alpha}
+ &=
+ \frac{1}{N_{\hold}}
+ \sum_{i=1}^{N_{\hold}}
+ \bbone[
+ y_i\in C_{i,\alpha}^{\pred}
+ ],
+ \label{eq:predictive-coverage}\\
+ \mathrm{PIT}_i
+ &=
+ F_i^{\pred}(y_i),
+ \label{eq:pit}
+\end{align}
+together with family-appropriate proper scores, sign or node recovery,
+integrated shape distances, and correlated residual plots.  Strictly proper
+scores reward honest predictive distributions rather than only narrow central
+curves \cite{GneitingRaftery2007}.  Calibration is assessed together with
+sharpness \cite{GneitingCalibration2007}.
+
+When a covariance is singular because exact constraints remove directions,
+\cref{eq:mahalanobis-predictive} is evaluated in the supported subspace with
+the rank and projector reported.
+
+\subsection{Family-wise decision rule}
+
+A withheld family passes only if:
+\begin{enumerate}
+\item its data ancestry is disjoint from calibration at the declared level;
+\item the computational and posterior diagnostics have passed;
+\item no post-unblinding parameter or discrepancy adjustment occurred;
+\item all primary metrics satisfy their predeclared ranges;
+\item no exact structural constraint fails;
+\item residuals show no physically organized failure that is hidden by a
+global scalar score;
+\item the result is stable under the required prior, discrepancy, emulator,
+and numerical sensitivity analyses.
+\end{enumerate}
+A partial pass may be reported only with the failed sub-gates and a restricted
+claim.
+
+\subsection{Canonical cross-channel tests}
+
+The program prioritizes tests in which one physical sector controls multiple
+observables:
+\begin{enumerate}
+\item calibrate spectroscopy and local currents, then predict flavor-resolved
+PDF or form-factor information;
+\item calibrate selected unpolarized and helicity information, then predict
+transversity, OAM, or GTMD moments not used in the fit;
+\item constrain a common quark rescattering kernel with selected Sivers data,
+then predict Boer--Mulders, tensor naive-\(T\)-odd, or antiquark channels;
+\item constrain the same gauge sector and state with quark data, then predict
+the hierarchy or sign structure of independent gluon \(f\)- and \(d\)-type
+channels without process weights;
+\item calibrate nucleon properties and long-distance deuteron observables,
+then predict \(b_1\), tagged tensor structure, or deuteron GTMD moments;
+\item calibrate low-\(q_T\) data in one established factorization channel,
+then predict another process after applying the independently specified link,
+hard, and color map;
+\item calibrate lower truncation levels, then predict the next basis, Fock,
+Wilson, or perturbative order.
+\end{enumerate}
+
+\subsection{Failure taxonomy}
+
+A failed withheld family is classified by tracing the result through the
+typed graph:
+\begin{longtable}{L{0.22\textwidth}L{0.32\textwidth}L{0.37\textwidth}}
+\toprule
+Class & Diagnostic signature & Permitted response\\
+\midrule
+\endhead
+State deficiency &
+Multiple reductions fail coherently; missing flavor, helicity, OAM, or Fock
+support. &
+Revise the Hamiltonian, retained sectors, regulator, or state truncation; rerun
+state and current calibration.\\
+Current/operator deficiency &
+Spectroscopy closes but local moments or selected projections fail. &
+Add or rematch a current/operator consistently with the Hamiltonian and all
+affected reductions.\\
+Wilson deficiency &
+Link-even quantities close but link-odd sign, rank, or process reversal fails. &
+Revise intermediate states, pole prescriptions, Wilson order, soft separation,
+or color contractions.\\
+Nuclear deficiency &
+Nucleon tests pass while binding, \(b_1\), tagged, tensor, or coherent families
+fail. &
+Revise the matched nuclear Hamiltonian, currents, sectors, or coherent
+amplitudes; preserve nucleon member identity.\\
+Matching/evolution deficiency &
+Low-resolution moments close but scale or small-\(b\) behavior fails. &
+Revise the closed operator basis, LF-to-QCD matching, anomalous dimensions,
+threshold maps, or accuracy manifest.\\
+Process deficiency &
+Universal objects close but a process prediction fails. &
+Reassess hard factors, fragmentation, link/color map, power corrections,
+Glauber status, or factorization claim.\\
+Discrepancy deficiency &
+Residual structure is compatible with a known omitted order but not with the
+declared kernel. &
+Revise the physically owned discrepancy basis and repeat calibration with a
+new version.\\
+Data/likelihood deficiency &
+Failure tracks data ancestry, covariance, acceptance, or extraction choices. &
+Correct the likelihood or data object; do not change the microscopic model
+before the data issue is resolved.\\
+\bottomrule
+\end{longtable}
+
+\begin{requirement}[No curve-specific repair]
+A failure may not be repaired by adding a coefficient, width, normalization,
+or latent curve attached only to the failed named TMD.  A new parameter must
+belong to a physical interaction, state sector, current, Wilson kernel,
+matching coefficient, process term, or explicit discrepancy operator and must
+propagate to every object that contains that source.
+\end{requirement}
+
+\subsection{Unblinding and revision protocol}
+
+The unblinding record contains:
+\begin{enumerate}
+\item the frozen model and data hashes;
+\item the original posterior draw hashes;
+\item the withheld predictions generated before access;
+\item the time and identity of unblinding;
+\item the automatic gate output;
+\item the scientific interpretation written before any refit;
+\item the revision decision and the claim retired or retained.
+\end{enumerate}
+After revision, the original prediction remains archived.  A new analysis
+receives a new semantic version and a new holdout.
+
+\section{Predictive comparison, robustness, and influence}
+\label{sec:model-comparison}
+
+\subsection{Cross-validation unit}
+
+Pointwise leave-one-out cross-validation is useful only when one observation
+is a legitimate conditionally independent predictive unit.  Shared
+normalizations, replicas, kinematic curves, or common events require
+leave-group-out units.  Define groups \(g=1,\ldots,G\) by experiment,
+systematic block, curve, observable family, or data ancestry:
+\begin{equation}
+ \mathrm{elpd}_{\LOO}
+ =
+ \sum_{g=1}^{G}
+ \log
+ p(
+ \bm y_g
+ \mid
+ \bm y_{-g}
+ ).
+ \label{eq:group-loo}
+\end{equation}
+Pareto-smoothed importance sampling may approximate refits and provides a
+tail-shape diagnostic, but influential groups with unreliable importance
+weights are refit directly \cite{VehtariLOO2017,VehtariPSIS2024}.
+
+Cross-validation estimates predictive performance for the represented data
+distribution.  It does not replace a scientifically distinct withheld process
+or observable family.
+
+\subsection{Predictive stacking}
+
+For candidate model variants \(M_k\), predictive stacking selects
+\(w_k\geq0\), \(\sum_k w_k=1\), to maximize held-out predictive score:
+\begin{equation}
+ \widehat{\bm w}
+ =
+ \arg\max_{\bm w}
+ \sum_g
+ \log\left[
+ \sum_k
+ w_k\,
+ p_k(\bm y_g\mid\bm y_{-g})
+ \right].
+ \label{eq:stacking-optimization}
+\end{equation}
+Stacking is a predictive combination of declared alternatives, not permission
+to add mutually exclusive mechanisms in one microscopic state
+\cite{YaoStacking2018}.  Each stacked component retains its own physical
+identity and provenance.
+
+Bayes factors or posterior model probabilities are reported only when the
+candidate set and prior mass assignment make the closed-model assumption
+scientifically defensible.  Otherwise, predictive comparison and stacking are
+preferred.
+
+\subsection{Prior sensitivity}
+
+For each load-bearing parameter block, report:
+\begin{itemize}
+\item prior-to-posterior contraction;
+\item sensitivity to alternative physically credible prior scales and shapes;
+\item changes in withheld predictive distributions;
+\item prior predictive pathologies;
+\item whether an apparently constrained parameter is informed by data or by an
+exact/truncation gate.
+\end{itemize}
+A parameter is not described as ``measured'' when its posterior is mainly a
+restatement of the prior.
+
+\subsection{Discrepancy sensitivity}
+
+Repeat the analysis across a finite set of physically justified discrepancy
+bases, correlation lengths, and power-counting hyperpriors.  Monitor:
+\begin{equation}
+ \Delta\theta_a,
+ \qquad
+ \Delta p(\cY_{\hold}),
+ \qquad
+ \Delta\mathrm{elpd},
+ \qquad
+ \Delta \Cov(\cO_i,\cO_j).
+ \label{eq:discrepancy-sensitivity}
+\end{equation}
+Strong variation signals confounding between physical parameters and model
+discrepancy.  Flexible discrepancy priors can improve interpolation while
+destroying physical parameter identifiability; physically meaningful priors
+and orthogonality constraints are therefore indispensable
+\cite{KennedyOHagan2001,BrynjarsdottirOHagan2014}.
+
+\subsection{Influence analysis}
+
+For data group \(g\), define an influence measure using the change in a
+scientific target \(h(\Theta)\):
+\begin{equation}
+ I_g[h]
+ =
+ \frac{
+ \abs{
+ \E[h(\Theta)\mid\allData]
+ -
+ \E[h(\Theta)\mid\allData\setminus\bm y_g]
+ }
+ }{
+ \sqrt{\Var[h(\Theta)\mid\allData]}+\eps
+ } .
+ \label{eq:group-influence}
+\end{equation}
+Report high-influence experiments, lattice ensembles, extracted inputs, and
+calibration observables together with their data ancestry and covariance
+assumptions.
+
+\subsection{Robustness to numerical and formal choices}
+
+The final scientific conclusion must be stable, within its reported
+uncertainty, under the declared variations in:
+\begin{itemize}
+\item quadrature, grid, and transform resolution;
+\item solver tolerances and eigensolver state tracking;
+\item emulator architecture and training design;
+\item basis, Fock, Wilson, and perturbative truncation;
+\item regulator and renormalization choices with refitting;
+\item factorization profile and scale paths;
+\item data binning, covariance regularization, and nuisance representation;
+\item posterior sampler and parameterization.
+\end{itemize}
+These are not all averaged together.  Each variation is tagged as an
+equivalent numerical representation, a truncation axis, a scheme choice, or a
+different physical model.
+
+\section{Experiment design and information geometry}
+\label{sec:design}
+
+\subsection{Expected information gain}
+
+Let \(d\) denote a candidate experimental design: beam energy, target state,
+kinematic bin, observable, luminosity allocation, detector resolution, or
+analysis strategy.  For scientific parameters or mechanism label
+\(\Theta_{\mathrm{tar}}\), the expected information gain is
+\begin{equation}
+ \mathrm{EIG}(d)
+ =
+ \E_{\bm y\sim p(\bm y\mid d,\caldata)}
+ \left[
+ \KL\!\left(
+ p(\Theta_{\mathrm{tar}}\mid\bm y,d,\caldata)
+ \,\Vert\,
+ p(\Theta_{\mathrm{tar}}\mid\caldata)
+ \right)
+ \right].
+ \label{eq:eig}
+\end{equation}
+The target may be a physical parameter block, a prediction, a sign or node, a
+factorization alternative, or a mechanism discriminator.  This is the standard
+Bayesian experimental-design objective, extended here by the typed physics and
+feasibility constraints \cite{ChalonerVerdinelli1995,CoonsHuan2025}.
+
+A design that only reconstrains an already narrow direction can have low EIG
+even when its projected statistical error is small.
+
+\subsection{Fisher approximation}
+
+Near a regular reference point with Gaussian noise covariance
+\(\bm\Sigma_y(d)\), a local approximation is
+\begin{equation}
+ \bm F_d
+ =
+ \bm J_d^{\mathsf T}
+ \bm\Sigma_y(d)^{-1}
+ \bm J_d
+ +
+ \bm F_{\mathrm{prior}},
+ \qquad
+ (\bm J_d)_{ia}
+ =
+ \frac{\partial \cO_i(d)}{\partial\theta_a}.
+ \label{eq:fisher-design}
+\end{equation}
+The Fisher approximation is accepted only after comparison with posterior or
+simulation-based design calculations in regions with nonlinearity,
+multimodality, boundaries, or discrete mechanisms.
+
+\subsection{Mechanism discrimination}
+
+For competing mechanisms \(M_1,M_2\), define a predictive separation:
+\begin{equation}
+ \cD_{\mathrm{sep}}(d)
+ =
+ \E_{\bm y\sim p_1}
+ \log\frac{p_1(\bm y\mid d)}{p_2(\bm y\mid d)}
+ +
+ \E_{\bm y\sim p_2}
+ \log\frac{p_2(\bm y\mid d)}{p_1(\bm y\mid d)} .
+ \label{eq:mechanism-separation}
+\end{equation}
+This symmetric predictive divergence identifies observables that distinguish
+physical mechanisms rather than only improve one parameter variance.
+
+Candidate applications include:
+\begin{itemize}
+\item Sivers versus Boer--Mulders spin projectors under a common rescattering
+kernel;
+\item gluon \(f\)- versus \(d\)-type color channels;
+\item S--D versus non-nucleonic tensor mechanisms;
+\item impulse versus coherent small-\(x\) contributions;
+\item straight- versus staple-link OAM observables;
+\item competing LF-to-QCD matching or nuclear EFT truncations.
+\end{itemize}
+
+\subsection{Feasibility-aware utility}
+
+The design objective includes cost, acceptance, systematic risk, and
+factorization status:
+\begin{equation}
+ U(d)
+ =
+ \mathrm{EIG}(d)
+ -
+ \lambda_C C(d)
+ -
+ \lambda_S R_{\sys}(d)
+ -
+ \lambda_F R_{\mathrm{fact}}(d).
+ \label{eq:design-utility}
+\end{equation}
+A high-information observable in a process with unresolved color entanglement
+does not automatically outrank a slightly less informative observable in an
+established factorization channel.
+
+\subsection{Sequential design}
+
+After a pilot dataset \(\bm y_1\), update the posterior and choose
+\begin{equation}
+ d_2^*
+ =
+ \arg\max_{d_2}
+ \E[
+ U(d_2)
+ \mid
+ \bm y_1,d_1,\caldata
+ ].
+ \label{eq:sequential-design}
+\end{equation}
+The design history, interim stopping rules, and any adaptive choice are
+recorded so the final likelihood and validation partition remain correct.
+
+When the high-fidelity forward model is expensive, multi-fidelity estimators
+or validated emulators may accelerate EIG calculations, but the final design
+ranking must include emulator uncertainty and spot checks against the exact
+solver.
+
+\section{Reporting and uncertainty communication}
+\label{sec:reporting}
+
+\subsection{Minimum result package}
+
+Every scientific release includes:
+\begin{enumerate}
+\item the posterior member ensemble or a loss-controlled compressed
+representation;
+\item central summaries and pointwise plus simultaneous intervals;
+\item covariance and correlation products;
+\item separated uncertainty blocks and nonlinear interaction remainder;
+\item calibration, diagnostic, and withheld data manifests;
+\item prior, likelihood, discrepancy, emulator, and sampler manifests;
+\item posterior predictive and withheld validation reports;
+\item exact hashes of code, data, formalism, and generated artifacts;
+\item evidence labels and factorization/matching status for every result.
+\end{enumerate}
+
+\subsection{Evidence vocabulary}
+
+A released result carries one of the following evidence statuses:
+\begin{longtable}{L{0.18\textwidth}L{0.72\textwidth}}
+\toprule
+Status & Meaning\\
+\midrule
+\endhead
+Exact &
+Consequence of operator definition, representation, symmetry, kinematics,
+algebraic composition, or a proven theorem under stated hypotheses.\\
+Calibrated &
+Directly updated by the declared calibration likelihood; posterior uncertainty
+and prior sensitivity are reported.\\
+Lattice-informed &
+Updated by matched lattice matrix elements or an explicit lattice prior with
+scheme and covariance recorded.\\
+Predicted--withheld &
+Normalization and shape excluded from calibration and successfully tested
+against a frozen withheld family.\\
+Predicted--unobserved &
+Posterior prediction not directly calibrated, but no relevant independent
+measurement has yet tested it.\\
+Model sensitivity &
+Physically allowed but underdetermined alternative, used to expose model
+dependence rather than a calibrated probability statement.\\
+Temporary &
+Controlled implementation boundary with a named replacement and distinguishing
+test.\\
+Exploratory &
+Process, matching, factorization, or data status is not sufficient for an
+authoritative physical claim.\\
+\bottomrule
+\end{longtable}
+
+Passing a structural test does not upgrade a model sensitivity to a calibrated
+or withheld prediction.
+
+\subsection{Credible intervals and coverage language}
+
+Posterior credible intervals express probability under the declared model,
+prior, likelihood, and discrepancy.  They are not called confidence intervals.
+Empirical coverage may be assessed by SBC, synthetic benchmarks, or repeated
+withheld families, but the achieved calibration is reported separately.
+
+Likewise, an envelope over wave functions, regulator choices, or model
+alternatives is not a posterior credible interval unless those alternatives
+carry a declared probability model and have been sampled accordingly.
+
+\subsection{Central summaries}
+
+For skewed or multimodal posteriors, report medians, highest-density regions,
+or modes only with the full distribution or member ensemble.  A mean curve
+assembled point by point may not correspond to any physical state.  At least
+one representative posterior member near the central functional region is
+identified for reproducible benchmark calculations.
+
+\subsection{Ratios and asymmetries}
+
+Derived ratios and asymmetries are calculated member by member:
+\begin{equation}
+ A_s
+ =
+ \frac{N_s}{D_s},
+ \qquad
+ R_s
+ =
+ \frac{\cO_{1,s}}{\cO_{2,s}},
+ \label{eq:memberwise-ratio}
+\end{equation}
+not by dividing separately summarized numerator and denominator bands.  The
+report identifies denominator-zero or sign-change regions and any non-Gaussian
+tails.
+
+\subsection{No hidden uncertainty inflation}
+
+A mismatch may not be hidden by:
+\begin{itemize}
+\item adding experimental and theory errors in an undocumented way;
+\item rescaling all uncertainties until reduced \(\chi^2\) is near one;
+\item clipping negative eigenvalues of a covariance or correlator without
+diagnosis;
+\item replacing a failed predictive mean by a broad unstructured discrepancy;
+\item reporting only a total band that erases which physical layer failed.
+\end{itemize}
+All covariance regularization, nuisance constraints, and discrepancy
+hyperpriors are part of the released manifest.
+
+
+\section{Software realization and formal interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+The inference layer is represented by typed objects rather than one monolithic
+fit script:
+\begin{longtable}{L{0.25\textwidth}L{0.66\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{ParameterId} &
+Stable physical ownership, units, support, symmetry, regulator, source object,
+differentiability, and transformation.\\
+\texttt{ParameterBlock} &
+Hierarchical prior, exact constraints, shared-member identity, and allowed
+couplings for one owned parameter family.\\
+\texttt{DataSetId} &
+Observable, experiment, event ancestry, kinematics, units, convention, scheme,
+covariance, likelihood, and partition status.\\
+\texttt{DataAncestryGraph} &
+Source-event and extraction lineage, overlap and exclusion relations, and
+double-counting rejection.\\
+\texttt{LikelihoodTerm} &
+Typed mapping from a prediction and nuisance structure to a normalized
+probability density or mass.\\
+\texttt{DiscrepancyField} &
+Physically owned omitted-order or omitted-sector field with basis, kernel,
+power counting, correlation domain, and orthogonality constraints.\\
+\texttt{PriorModel} &
+Prior and hyperprior graph, naturalness scales, symmetry-breaking hierarchy,
+and prior-predictive simulator.\\
+\texttt{ForwardModel} &
+Versioned deterministic map from a complete microscopic member to all required
+matrix elements and observables.\\
+\texttt{Emulator} &
+Surrogate prediction, derivative, covariance, domain, exact-training hashes,
+and validation report.\\
+\texttt{PosteriorProgram} &
+Joint log density, gradients where available, discrete alternatives, and
+sampling interface.\\
+\texttt{CalibrationSplit} &
+Frozen calibration, diagnostic, withheld, and embargo records with ancestry
+checks.\\
+\texttt{PosteriorMember} &
+One inseparable draw containing physical, nuisance, discrepancy, truncation,
+and model-label identity.\\
+\texttt{PredictiveEnsemble} &
+Memberwise pushforward to latent observables and replicated measurements,
+retaining covariance and evidence status.\\
+\texttt{ValidationGate} &
+Withheld family, metric, threshold, unblinding record, and structured decision.\\
+\texttt{ModelRevisionRecord} &
+Failed gate, traced source layer, permitted revision, retired claim, semantic
+version, and replacement holdout.\\
+\texttt{ExperimentalDesign} &
+Candidate settings, likelihood, feasibility, systematics, factorization status,
+and information utility.\\
+\texttt{InferenceManifest} &
+Hashes, environment, seeds, sampler, diagnostics, posterior checks, and output
+artifact checksums.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Typed inferential graph}
+
+At a finite implementation level, define \(\Infer\) as a typed probabilistic
+graph layered over the deterministic \(\Amp\), \(\Dens\), \(\Match\),
+\(\Red\), and \(\Proc\) maps.  Nodes are:
+\begin{equation}
+ \left\{
+ \Theta,\,
+ \mathfrak m,\,
+ \bm y,\,
+ \bm\nu,\,
+ \bm\delta,\,
+ \cO,\,
+ \cY^{\repdata}
+ \right\},
+ \label{eq:infer-nodes}
+\end{equation}
+and edges are conditional distributions or deterministic maps.  A composition
+is valid only when species, target, operator, process, scheme, member,
+kinematic, and data-ancestry identities agree or an explicit adapter is
+registered.
+
+\begin{requirement}[No implicit likelihood adapter]
+Changing units, tensor convention, bin averaging, acceptance, radiative
+correction, scheme, or covariance representation requires a versioned adapter.
+A likelihood may not consume a numerically compatible array whose physical
+identity is different.
+\end{requirement}
+
+\subsection{Stable diagnostic taxonomy}
+
+Every fail-closed error carries:
+\begin{equation}
+ \mathfrak e
+ =
+ \left(
+ \text{requirement id},
+ \text{object ids},
+ \text{expected type},
+ \text{received type},
+ \text{source path},
+ \text{suggested physical repair}
+ \right).
+ \label{eq:diagnostic-schema}
+\end{equation}
+Diagnostics distinguish:
+\begin{itemize}
+\item exact structural mismatch;
+\item missing physical input;
+\item computational nonconvergence;
+\item emulator-domain violation;
+\item posterior nonidentifiability;
+\item withheld-validation failure;
+\item data-ancestry overlap;
+\item matching or factorization incompleteness.
+\end{itemize}
+A failed structural requirement is never converted into a large variance.
+
+\subsection{Automatic differentiation and adjoints}
+
+Where the forward chain is differentiable, expose:
+\begin{equation}
+ \frac{\partial\cO_i}{\partial\theta_a},
+ \qquad
+ \frac{\partial\log p}{\partial\theta_a},
+ \qquad
+ \bm v^{\mathsf T}\bm J,
+ \qquad
+ \bm J\bm u .
+ \label{eq:ad-contract}
+\end{equation}
+Gradients are validated by complex-step or high-order finite differences on
+analytic benchmarks and by exact identities for normalization, symmetry, and
+sum rules.  A gradient whose relative error exceeds its declared tolerance is
+not used for HMC, design, or Fisher analysis.
+
+\subsection{Persistent storage}
+
+The ensemble store is append-only and content addressed.  It contains:
+\begin{itemize}
+\item raw unconstrained and transformed parameters;
+\item discrete model labels;
+\item per-member state, operator, matching, evolution, and process hashes;
+\item log prior, log likelihood by dataset family, and log posterior;
+\item sampler diagnostics and weights;
+\item predicted matrix elements and observables or reproducible lazy recipes;
+\item discrepancy and emulator draws;
+\item evidence, matching, evolution, and factorization status.
+\end{itemize}
+Compression is accepted only after demonstrating preservation of target
+moments, covariance, tails, multimodality, and withheld predictive scores.
+
+\section{Validation ladder and property-based tests}
+\label{sec:validation-ladder}
+
+\subsection{Layered validation}
+
+The inference architecture is validated in increasing depth:
+\begin{enumerate}
+\item \textbf{Type layer:} physical units, conventions, operator identity,
+data ancestry, partition disjointness, and parameter ownership.
+\item \textbf{Probability layer:} normalized likelihoods, proper priors,
+positive-semidefinite covariance, Jacobians, and support.
+\item \textbf{Implementation layer:} synthetic recovery, \SBC, gradients,
+sampler diagnostics, and deterministic reproducibility.
+\item \textbf{Forward layer:} exact-versus-emulated agreement and all
+Volumes~I--V structural gates.
+\item \textbf{Calibration layer:} prior predictive adequacy, residual checks,
+identifiability, and sensitivity to nuisance/discrepancy choices.
+\item \textbf{Predictive layer:} family-wise cross-validation, posterior
+predictive calibration, and frozen withheld gates.
+\item \textbf{Scientific layer:} successful cross-channel predictions and
+traceable model revision after failures.
+\end{enumerate}
+
+\subsection{Mandatory property tests}
+
+At minimum, the software must test:
+\begin{enumerate}
+\item every parameter has exactly one physical owner or is an explicit nuisance
+or discrepancy quantity;
+\item no named-TMD-only free parameter exists;
+\item exact constraints map the parameter support into the physical state
+space;
+\item calibration, diagnostic, and withheld records are pairwise disjoint under
+the ancestry graph;
+\item raw data and derived extractions from the same events cannot both enter
+without a joint likelihood;
+\item covariance matrices are symmetric positive semidefinite in their declared
+support and preserve exact null directions;
+\item nuisance marginalization agrees with analytic results in linear-Gaussian
+benchmarks;
+\item likelihood normalization is verified numerically or analytically;
+\item prior predictive samples obey structural physics gates;
+\item synthetic posterior recovery returns the generating parameters within
+calibrated rank behavior;
+\item \SBC\ ranks are compatible with uniformity for analytic test models;
+\item automatic derivatives agree with independent numerical derivatives;
+\item exact and emulator predictions agree within the emulator contract;
+\item emulator covariance covers held-out exact residuals at its declared
+frequency or posterior level;
+\item multiple chains pass rank-normalized \(\Rhat\), bulk/tail \(\ESS\), and
+Monte Carlo error criteria;
+\item no HMC divergences or hidden mode exclusions remain in accepted runs;
+\item posterior member identity is preserved across all reductions;
+\item memberwise ratios differ from ratios of separately summarized bands in a
+known non-Gaussian test;
+\item the law of total covariance is reproduced by Monte Carlo;
+\item pointwise and simultaneous intervals are distinguished;
+\item grouped \(\LOO\) matches direct refits on benchmark groups;
+\item \PSIS\ tail diagnostics trigger direct refits when required;
+\item stacking weights reproduce a known predictive mixture benchmark;
+\item prior, discrepancy, and numerical sensitivity runs are deterministic and
+traceable;
+\item withheld gates cannot be evaluated before the unblinding token is
+released;
+\item a post-unblinding model change invalidates the old prediction claim;
+\item a curve-specific repair is rejected;
+\item experimental-design utilities include cost, systematics, and
+factorization gates;
+\item all reports can be regenerated from hashes and manifests.
+\end{enumerate}
+
+\subsection{Mandatory negative injections}
+
+The test suite deliberately injects:
+\begin{enumerate}
+\item duplicate physical ownership for one parameter;
+\item one parameter attached independently to two named TMDs;
+\item an unowned free normalization;
+\item an exact symmetry represented as a soft prior;
+\item a covariance with a negative supported eigenvalue;
+\item silent removal of a covariance null direction;
+\item double counting of raw and extracted data;
+\item overlap between calibration and withheld event ancestry;
+\item use of the withheld value in emulator training;
+\item an incorrect likelihood Jacobian;
+\item a nonnormalized likelihood;
+\item an unrecorded unit or tensor-convention conversion;
+\item a discrepancy field with support identical to a physical parameter
+direction and no identifiability control;
+\item independent resampling of quark and gluon parts of one posterior member;
+\item an emulator queried outside its certified domain;
+\item a biased emulator whose covariance is too small;
+\item a wrong gradient;
+\item an MCMC chain trapped in one of two known modes;
+\item a variational posterior with hidden tail undercoverage;
+\item pointwise bands mislabeled as simultaneous;
+\item a ratio formed from separate medians;
+\item pointwise \(\LOO\) applied to correlated curve blocks;
+\item unreliable \PSIS\ weights accepted without refit;
+\item stacking of alternatives that violate a provenance exclusion;
+\item a failed withheld family moved silently into calibration;
+\item a new TMD-specific coefficient added after unblinding;
+\item a theory-error band inflated until the gate passes;
+\item an experimental design selecting a factorization-broken process without
+penalty;
+\item a report missing code, data, posterior, or formalism hashes.
+\end{enumerate}
+
+\section{Analytic and synthetic benchmark suite}
+\label{sec:benchmarks}
+
+\subsection{Benchmark A: linear-Gaussian shared parameter}
+
+Let
+\begin{equation}
+ \bm y
+ =
+ \bm A\bm\theta+\bm\eps,
+ \qquad
+ \bm\eps\sim\cN(\bm0,\bm\Sigma_y),
+ \qquad
+ \bm\theta\sim\cN(\bm\mu_0,\bm\Sigma_0).
+ \label{eq:benchmark-a}
+\end{equation}
+The exact posterior is
+\begin{align}
+ \bm\Sigma_{\post}^{-1}
+ &=
+ \bm\Sigma_0^{-1}
+ +
+ \bm A^{\mathsf T}
+ \bm\Sigma_y^{-1}
+ \bm A,
+ \label{eq:benchmark-a-cov}\\
+ \bm\mu_{\post}
+ &=
+ \bm\Sigma_{\post}
+ \left(
+ \bm\Sigma_0^{-1}\bm\mu_0
+ +
+ \bm A^{\mathsf T}\bm\Sigma_y^{-1}\bm y
+ \right).
+ \label{eq:benchmark-a-mean}
+\end{align}
+One shared \(\theta_a\) controls two observable families.  The benchmark checks
+posterior, predictive covariance, nuisance marginalization, gradients,
+\(\HMC\), and member identity.
+
+\subsection{Benchmark B: parameter--discrepancy confounding}
+
+Use
+\begin{equation}
+ y(x)
+ =
+ \theta_0+\theta_1x+\delta(x)+\eps(x),
+ \label{eq:benchmark-b}
+\end{equation}
+with \(\delta\) drawn from:
+\begin{enumerate}
+\item an unrestricted smooth \(\GP\);
+\item an operator-orthogonal basis;
+\item a power-counting-informed correlated basis.
+\end{enumerate}
+The unrestricted case must demonstrate weak or biased physical parameter
+identification.  The constrained cases must recover the known synthetic
+parameters within their declared prior and coverage conditions.  This
+benchmark tests that better interpolation is not confused with better
+microscopic inference.
+
+\subsection{Benchmark C: correlated EFT truncation}
+
+Generate order-by-order curves
+\begin{equation}
+ \cO_k(z)
+ =
+ \cO_{\mathrm{ref}}(z)
+ \sum_{n=0}^{k}
+ c_n(z)Q(z)^n,
+ \qquad
+ c_n\sim\GP(0,K_c).
+ \label{eq:benchmark-c}
+\end{equation}
+Withhold order \(k+1\).  The inference must recover the coefficient scale and
+correlation length sufficiently to give calibrated predictive coverage of the
+next order.  Independent pointwise errors are included as a failing control.
+
+\subsection{Benchmark D: common-parent multi-observable closure}
+
+Construct an analytic state with shared parameters
+\[
+ \Theta_{\mathrm{toy}}
+ =
+ (\theta_{\mathrm{spin}},
+  \theta_{\mathrm{OAM}},
+  \theta_{\mathrm{sea}},
+  \theta_g,
+  \theta_{\mathrm{nuc}}).
+\]
+Generate synthetic TMD, GPD, PDF, current, and tensor observables from one
+common overlap.  Calibrate a restricted subset and withhold:
+\begin{itemize}
+\item a different reduction;
+\item a different flavor;
+\item the gluon momentum moment;
+\item a tensor deuteron observable.
+\end{itemize}
+Independent curve normalizations can fit calibration but must fail at least
+one holdout; the shared model must predict all generated holdouts within the
+predeclared gate.
+
+\subsection{Benchmark E: emulator honesty}
+
+Train an emulator on a sparse exact design with one deliberately underresolved
+region.  The benchmark requires:
+\begin{itemize}
+\item the mean residual to be covered by emulator covariance;
+\item an out-of-domain query to fail closed;
+\item posterior results with the emulator to agree with exact-solver inference
+within Monte Carlo and emulator uncertainty;
+\item adaptive refinement to select the underresolved region;
+\item derivatives to pass an independent check.
+\end{itemize}
+Eigenvector-continuation and variational emulators are useful exemplars because
+they preserve a physical reduced subspace rather than fitting only output
+curves \cite{Frame2018,ZhangFurnstahl2022}.
+
+\subsection{Benchmark F: shared rescattering prediction}
+
+Define one link-odd kernel parameter block \(\theta_{\wil}\) and two distinct
+projectors:
+\begin{equation}
+ F_{\mathrm{Siv}}
+ =
+ \cP_{\mathrm{Siv}}
+ W_{\mathrm{odd}}(\theta_{\wil},\theta_{\mathrm{state}}),
+ \qquad
+ F_{\mathrm{BM}}
+ =
+ \cP_{\mathrm{BM}}
+ W_{\mathrm{odd}}(\theta_{\wil},\theta_{\mathrm{state}}).
+ \label{eq:benchmark-f}
+\end{equation}
+Calibrate selected Sivers-like synthetic data and withhold the Boer--Mulders-like
+family.  The common-kernel model must predict the holdout; a model with an
+independent Boer--Mulders normalization is marked as calibrated, not
+predicted.  Additional members test tensor and antiquark projectors.
+
+\subsection{Benchmark G: data ancestry and double counting}
+
+Create raw pseudo-events, a binned cross section, and an extracted asymmetry
+from the same events.  The ancestry graph must:
+\begin{itemize}
+\item permit the raw-event likelihood alone;
+\item permit a joint derived-observable likelihood with cross-covariance;
+\item reject multiplication of statistically overlapping summaries as
+independent terms;
+\item distinguish a genuinely independent replication.
+\end{itemize}
+
+\subsection{Benchmark H: predictive alternatives and stacking}
+
+Generate data from a distribution outside two imperfect candidate models.
+Verify that:
+\begin{itemize}
+\item posterior model probability is prior-sensitive under the closed-model
+assumption;
+\item grouped predictive stacking improves held-out proper score;
+\item stacking weights do not merge mutually exclusive internal mechanisms;
+\item the stacked predictive covariance includes within- and between-model
+components.
+\end{itemize}
+
+\subsection{Benchmark I: experimental design}
+
+Construct two candidate measurements:
+\begin{enumerate}
+\item one with small statistical error along an already constrained parameter
+direction;
+\item one with larger raw error but strong sensitivity to a poorly identified
+mechanism.
+\end{enumerate}
+The EIG criterion should prefer the second when its feasibility and systematic
+penalties are comparable.  A local Fisher ranking must agree only in the
+linear-Gaussian limit.
+
+\section{Staged implementation program}
+\label{sec:staging}
+
+The formal volume does not prescribe repository package numbers before the
+preceding C5 APIs are known.  The implementation stages are therefore labeled
+\(\mathrm{I0}\)--\(\mathrm{I6}\).
+
+\subsection{I0: inferential type and ancestry spine}
+
+Implement:
+\begin{itemize}
+\item parameter ownership and support;
+\item dataset and covariance identity;
+\item ancestry graph and partition records;
+\item likelihood and discrepancy interfaces;
+\item exact structural gates.
+\end{itemize}
+Use analytic likelihoods only.  No expensive microscopic inference is required.
+
+\subsection{I1: analytic posterior and computational validation}
+
+Implement Benchmarks A--C, including:
+\begin{itemize}
+\item analytic linear-Gaussian posteriors;
+\item nuisance marginalization;
+\item parameter--discrepancy confounding;
+\item correlated truncation fields;
+\item automatic differentiation;
+\item \HMC/\NUTS\ and \SBC\ validation.
+\end{itemize}
+
+\subsection{I2: common-parent synthetic inference}
+
+Connect the validation-only common overlap, sea/gluon, and Wilson pilots after
+their APIs pass.  Implement Benchmark D and F without connecting to accepted
+production.  Demonstrate shared-member propagation and frozen holdouts.
+
+\subsection{I3: emulators and scalable posterior}
+
+Implement validated state, matrix-element, and observable emulators; adaptive
+training; multi-fidelity control; exact spot checks; and posterior propagation
+of emulator uncertainty.
+
+\subsection{I4: heterogeneous calibration likelihood}
+
+Add spectroscopy, currents, form factors, selected PDFs or matrix elements,
+lattice data, deuteron static properties, and restricted process observables.
+Freeze data ancestry, calibration/diagnostic/holdout partitions, and primary
+validation gates before final sampling.
+
+\subsection{I5: full common posterior and withheld validation}
+
+Run the shared posterior over all activated microscopic, Wilson, nuclear,
+matching, evolution, nuisance, and discrepancy blocks.  Produce:
+\begin{itemize}
+\item common posterior members;
+\item covariance products;
+\item cross-channel posterior predictions;
+\item frozen withheld validation;
+\item structured revision decisions.
+\end{itemize}
+
+\subsection{I6: experimental design and living validation}
+
+Use the accepted posterior to rank new measurements, update only through
+versioned sequential-design records, and maintain an expanding set of
+independent holdouts.  Old predictions remain immutable scientific artifacts.
+
+\section{Risks, failure modes, and explicit nonclaims}
+\label{sec:risks}
+
+\begin{longtable}{L{0.22\textwidth}L{0.32\textwidth}L{0.37\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+Statistical patchwork &
+One normalization, width, or latent curve per TMD recreates the original
+phenomenological assembly. &
+Enforce physical parameter ownership and cross-observable propagation.\\
+Data double counting &
+Raw measurements, corrected tables, and extracted PDFs/TMDs from the same
+events are multiplied as independent likelihoods. &
+Use the ancestry graph, joint covariance, or choose one information level.\\
+Discrepancy absorption &
+A flexible discrepancy explains every residual and leaves physical parameters
+unidentified. &
+Use power counting, operator support, orthogonality, prior sensitivity, and
+withheld channels.\\
+Underestimated theory error &
+Truncation and regulator uncertainty are omitted or treated as independent
+pointwise noise. &
+Use order-aware correlated discrepancy and next-order validation.\\
+Overestimated theory error &
+Unstructured theory covariance is inflated until all data pass. &
+Freeze hyperpriors and validation gates; report layer-specific residuals.\\
+Emulator bias &
+A fast surrogate shifts the posterior while its uncertainty remains too small. &
+Use exact holdouts, derivative tests, covariance calibration, and adaptive
+refinement.\\
+MCMC false convergence &
+Chains share one mode, heavy tails, or divergent trajectories while simple
+summaries appear stable. &
+Use rank diagnostics, tail ESS, divergences, repeated parameterizations, and
+synthetic recovery.\\
+Weak holdout &
+Random withheld points are predictable from neighboring points or shared
+systematics. &
+Hold out families, experiments, regions, processes, or operator channels.\\
+Post-unblinding tuning &
+A failed prediction is repaired and still described as withheld. &
+Archive the original result, version the revision, and choose a new holdout.\\
+Model comparison overreach &
+Bayes factors are interpreted as truth probabilities in an open model class. &
+Use predictive checks, grouped cross-validation, and stacking with explicit
+candidate limitations.\\
+Uncertainty-band misuse &
+Pointwise intervals, wave envelopes, and credible bands receive the same label. &
+Publish interval semantics, simultaneous bands, covariance, and member files.\\
+Design myopia &
+An experiment is optimized for parameter variance while ignoring systematics,
+acceptance, cost, or factorization failure. &
+Use feasibility-aware utility and process-status gates.\\
+\bottomrule
+\end{longtable}
+
+The volume does not claim:
+\begin{itemize}
+\item that Bayesian probability makes an incomplete physical model correct;
+\item that a Gaussian likelihood or discrepancy is universally adequate;
+\item that posterior concentration proves parameter identifiability;
+\item that posterior predictive agreement proves the model unique;
+\item that pointwise coverage guarantees functional coverage;
+\item that cross-validation replaces a protected scientific holdout;
+\item that all uncertainty sources possess meaningful prior probabilities;
+\item that model alternatives should always be averaged;
+\item that a successful analytic or validation-only pilot is a physical
+extraction;
+\item that inference can begin before Volumes~I--V structural gates are
+satisfied at the activated scope.
+\end{itemize}
+
+\section{Acceptance criteria and handoff}
+\label{sec:acceptance}
+
+\subsection{Formal acceptance criteria}
+
+Volume VI is implemented faithfully only when:
+\begin{enumerate}
+\item every inferred parameter has a unique physical, nuisance, or discrepancy
+owner;
+\item exact constraints and provenance exclusions are enforced structurally;
+\item dataset ancestry prevents information double counting;
+\item the calibration, diagnostic, and withheld partition is frozen and
+machine readable;
+\item all likelihoods, covariance adapters, and nuisance maps are versioned and
+validated;
+\item theory discrepancy is separated by physical truncation layer and tested
+against known higher levels;
+\item prior predictive simulation rejects implausible or structurally invalid
+regions before fitting;
+\item synthetic recovery and \SBC\ validate the inference implementation;
+\item exact and emulated calculations agree within a certified emulator
+contract;
+\item accepted samplers pass rank, tail, energy, mode, and Monte Carlo error
+diagnostics;
+\item one common posterior member identity propagates through every flavor,
+parton, target, nuclear, scale, and process output;
+\item covariance and nonlinear uncertainty interactions are retained;
+\item family-wise predictive checks and grouped cross-validation are reported;
+\item at least one nontrivial family is withheld from calibration before final
+optimization;
+\item the withheld family is evaluated under a frozen metric and decision rule;
+\item failure triggers a typed physical revision rather than a TMD-specific
+repair;
+\item posterior predictive and uncertainty products are reproducible from
+released manifests and hashes;
+\item any experimental-design recommendation includes systematics, feasibility,
+and factorization status;
+\item no output is labeled ``predicted--withheld'' unless its normalization and
+shape were excluded from calibration and the gate passed.
+\end{enumerate}
+
+\subsection{Program-level predictive gate}
+
+The full DeuteronWigner model may be described as a genuinely predictive
+microscopic model only when the acceptance criteria of Volumes~I--V and the
+following inferential statement hold simultaneously:
+\begin{quote}
+A restricted, shared posterior over a declared microscopic Hamiltonian,
+currents, Wilson dynamics, matched nuclear operators, LF-to-QCD matching, and
+controlled discrepancies predicts at least one nontrivial nucleon or deuteron
+observable family that was excluded from calibration, with correlated
+uncertainties and without a family-specific normalization or shape parameter.
+\end{quote}
+
+A preferred first gate is:
+\begin{equation}
+ \caldata
+ =
+ \left\{
+ \text{state/current data},
+ \text{selected unpolarized/helicity data},
+ \text{restricted Sivers information}
+ \right\},
+ \label{eq:first-calibration-gate}
+\end{equation}
+followed by one or more withheld predictions from:
+\begin{equation}
+ \holddata
+ \in
+ \left\{
+ \begin{gathered}
+ \text{Boer--Mulders},\quad
+ \text{tensor naive-\(T\)-odd},\quad
+ \text{antiquark phase},\\
+ \text{gluon \(f/d\) hierarchy},\quad
+ \text{\(b_1\) or tagged tensor family}
+ \end{gathered}
+ \right\}.
+ \label{eq:first-holdout-gate}
+\end{equation}
+The exact first gate depends on data independence, scheme matching, and process
+factorization available at implementation time.
+
+\subsection{Handoff to implementation}
+
+The next software prompt after C5 should not be written until the C5 report
+identifies:
+\begin{itemize}
+\item actual Wilson-path, cut-ledger, phase-budget, and link-odd result APIs;
+\item the retained validation-only state and common-overlap interfaces;
+\item the final provenance and isolation objects;
+\item exact matching-status and unresolved-physics fields;
+\item computational cost and differentiability of the pilot.
+\end{itemize}
+The first inference coding package should then implement only I0--I1:
+typed parameter, dataset-ancestry, and likelihood objects, together with
+analytic validation.
+It must not fit the accepted phenomenological boundary or promote the C5 pilot
+to physical data analysis.
+
+\appendix
+
+\section{Stable formal requirements}
+\label{app:requirements}
+
+\begin{longtable}{L{0.16\textwidth}L{0.74\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V6.OWN &
+Every inferred quantity has one declared physical, nuisance, or discrepancy
+owner; named-TMD-only free parameters are rejected.\\
+V6.GRAPH &
+The probabilistic graph composes only typed deterministic and conditional maps.\\
+V6.DATA &
+Every dataset has observable, convention, scheme, covariance, ancestry, and
+partition identity.\\
+V6.NODOUBLE &
+Statistically overlapping data products cannot enter as independent
+likelihood terms.\\
+V6.SPLIT &
+Calibration, diagnostic, and withheld partitions are frozen before final
+optimization.\\
+V6.LIKE &
+Each likelihood is normalized, typed, and validated with its nuisance and
+Jacobian structure.\\
+V6.PRIOR &
+Priors encode physical scales and uncertainty, while exact constraints remain
+structural.\\
+V6.PPC0 &
+Prior predictive simulation is required before calibration.\\
+V6.DISC &
+Discrepancy is decomposed by physical source, power counting, support, and
+correlation.\\
+V6.IDENT &
+Physical parameter and discrepancy identifiability is evaluated by Jacobians,
+profiles, posterior correlations, and cross-channel information.\\
+V6.EMUL &
+Every emulator carries domain, covariance, derivative, exact-validation, and
+fallback information.\\
+V6.SYNTH &
+Synthetic parameter recovery is required for each activated inference layer.\\
+V6.SBC &
+Simulation-based calibration validates the implemented posterior algorithm on
+tractable instances.\\
+V6.MCMC &
+Accepted posterior runs pass rank, tail, energy, mode, and Monte Carlo error
+diagnostics.\\
+V6.MEMBER &
+One posterior member remains indivisible across every physical output.\\
+V6.COV &
+Cross-observable covariance and nonlinear uncertainty interactions are
+retained.\\
+V6.PRED &
+Latent-physics and future-measurement predictive distributions remain
+distinct.\\
+V6.PPC &
+Posterior predictive checks include physical residual structure, not only one
+global statistic.\\
+V6.CV &
+Cross-validation units follow conditional independence and data ancestry.\\
+V6.ROBUST &
+Prior, discrepancy, emulator, numerical, and formal-choice sensitivity is
+reported.\\
+V6.HOLD &
+At least one nontrivial family is protected from calibration by a frozen
+validation record.\\
+V6.UNBLIND &
+Unblinding is immutable and any subsequent revision creates a new model
+version and holdout.\\
+V6.REVISE &
+A failed withheld gate triggers a typed physical revision; curve-specific
+repair is forbidden.\\
+V6.REPORT &
+Members, covariance, evidence status, manifests, and hashes accompany every
+release.\\
+V6.DESIGN &
+Experimental design optimizes information subject to cost, systematics, and
+factorization status.\\
+\bottomrule
+\end{longtable}
+
+\section{Minimal parameter-ownership schema}
+\label{app:parameter-schema}
+
+A machine-readable parameter record contains:
+\begin{verbatim}
+{
+  "parameter_id": "wilson.eikonal.coupling.shared",
+  "owner_type": "WILSON_KERNEL",
+  "owner_object_id": "rescattering_kernel.v1",
+  "role": "PHYSICAL",
+  "units": "dimensionless",
+  "support": {"transform": "log", "lower": 0.0},
+  "symmetry_class": ["color_fundamental", "link_oriented"],
+  "regulator_scope": ["uv_regulator_id", "ir_regulator_id"],
+  "affected_operator_blocks": ["quark_sivers", "quark_boer_mulders"],
+  "forbidden_direct_attachments": ["named_tmd_curve"],
+  "prior_id": "prior.wilson_coupling.v1",
+  "differentiability": "AD",
+  "version": 1
+}
+\end{verbatim}
+
+\section{Minimal dataset and partition schema}
+\label{app:data-schema}
+
+\begin{verbatim}
+{
+  "dataset_id": "experiment.observable.release.v1",
+  "observable_id": "typed_process_observable",
+  "experiment_id": "experiment",
+  "event_ancestry_ids": ["raw_event_block_hash"],
+  "kinematics": {"variables": [], "bin_edges": []},
+  "units": "declared",
+  "conventions": ["spin", "azimuth", "tensor", "normalization"],
+  "scheme": {"uv": null, "rapidity": null, "factorization": null},
+  "covariance_id": "covariance.full.v1",
+  "likelihood_id": "likelihood.family.v1",
+  "nuisance_ids": [],
+  "partition": "CALIBRATION | DIAGNOSTIC | WITHHELD",
+  "embargo_token": null,
+  "source_hashes": [],
+  "version": 1
+}
+\end{verbatim}
+
+\section{Minimal posterior-member schema}
+\label{app:member-schema}
+
+\begin{verbatim}
+{
+  "member_id": "posterior.chain.draw",
+  "model_label": "declared_discrete_variant",
+  "parameter_values": {"parameter_id": "value"},
+  "nuisance_values": {},
+  "discrepancy_member_ids": {},
+  "state_member_ids": {"nucleon": "", "deuteron": ""},
+  "operator_member_ids": {"gtmd": "", "wilson": "", "nuclear": ""},
+  "matching_evolution_ids": {"matching": "", "evolution": ""},
+  "log_density": {"prior": 0.0, "likelihood_by_family": {}, "posterior": 0.0},
+  "sampler_diagnostics": {},
+  "artifact_hashes": {},
+  "evidence_status": "CALIBRATED",
+  "version": 1
+}
+\end{verbatim}
+
+\section{Minimal withheld-validation schema}
+\label{app:validation-schema}
+
+\begin{verbatim}
+{
+  "validation_id": "holdout.observable_family.v1",
+  "model_hash": "",
+  "posterior_hash": "",
+  "family": "withheld_family",
+  "data_ancestry_ids": [],
+  "prediction_artifact_hash": "",
+  "metrics": [
+    {"metric": "LOG_SCORE", "range": []},
+    {"metric": "COVERAGE", "level": 0.68, "range": []}
+  ],
+  "structural_gates": [],
+  "unblinding": {"time": null, "token_hash": ""},
+  "decision": "FROZEN | PASS | PARTIAL | FAIL",
+  "permitted_revision_classes": [],
+  "replacement_holdout_required": true,
+  "version": 1
+}
+\end{verbatim}
+
+\section{Uncertainty-component dictionary}
+\label{app:uncertainty-dictionary}
+
+\begin{longtable}{L{0.28\textwidth}L{0.62\textwidth}}
+\toprule
+Component & Required identity\\
+\midrule
+\endhead
+Calibration/statistical &
+Posterior variation of shared physical parameters under the declared data
+likelihood.\\
+Experimental systematic &
+Explicit nuisance parameter or covariance block with experiment and ancestry
+identity.\\
+Hamiltonian EFT &
+Expansion order, expansion parameter, breakdown scale, coefficient prior, and
+correlation kernel.\\
+Fock/basis &
+Retained sectors, basis level, matched comparison map, and convergence model.\\
+Regulator/renormalization &
+Regulator family, refitting protocol, renormalization conditions, and matched
+observable residual.\\
+Wilson/eikonal &
+Wilson order, intermediate-state space, pole/cut convention, regulator, and
+link/color identity.\\
+Matching &
+Closed operator basis, matching order, scale, scheme, and omitted-operator
+remainder.\\
+TMD evolution &
+Anomalous-dimension order, Collins--Soper kernel, large-\(b\) model, path, and
+threshold choices.\\
+Nuclear many-body &
+Nuclear sectors, interaction/current order, coherent amplitudes, and
+partonic--nuclear subtraction.\\
+Process/power &
+Factorization status, hard/fragmentation order, \(W+Y\), power corrections,
+and Glauber assessment.\\
+Emulator &
+Training design, domain, validation residual, covariance, and derivative
+accuracy.\\
+Numerical &
+Precision, quadrature, grid, interpolation, solver, transform, and Monte Carlo
+error.\\
+\bottomrule
+\end{longtable}
+
+\section{Compact acceptance checklist}
+\label{app:checklist}
+
+Before any result is described as a prediction, answer:
+\begin{enumerate}
+\item Which microscopic parameters generate it?
+\item Which calibration data constrain those parameters?
+\item Is the predicted family absent from the calibration likelihood and its
+data ancestry?
+\item Which exact, truncation, matching, and process gates apply?
+\item Does every posterior member produce the result through the same typed
+forward chain?
+\item Are cross-observable covariance and non-Gaussian tails retained?
+\item Which uncertainty sources are probabilistic, which are envelopes, and
+which are unresolved?
+\item Was the prediction artifact frozen before unblinding?
+\item Did the predeclared gate pass without post-unblinding adjustment?
+\item Which future observation could falsify the retained claim?
+\end{enumerate}
+
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{GelmanWorkflow2020}
+A.~Gelman, A.~Vehtari, D.~Simpson, C.~C.~Margossian, B.~Carpenter,
+Y.~Yao, L.~Kennedy, J.~Gabry, P.-C.~B\"urkner, and M.~Modr\'ak,
+``Bayesian workflow,''
+arXiv:2011.01808.
+
+\bibitem{Wesolowski2016}
+S.~Wesolowski, N.~Klco, R.~J.~Furnstahl, D.~R.~Phillips, and A.~Thapaliya,
+``Bayesian parameter estimation for effective field theories,''
+J.\ Phys.\ G \textbf{43}, 074001 (2016), arXiv:1511.03618.
+
+\bibitem{Furnstahl2015}
+R.~J.~Furnstahl, N.~Klco, D.~R.~Phillips, and S.~Wesolowski,
+``Quantifying truncation errors in effective field theory,''
+Phys.\ Rev.\ C \textbf{92}, 024005 (2015), arXiv:1506.01343.
+
+\bibitem{Melendez2019}
+J.~A.~Melendez, R.~J.~Furnstahl, D.~R.~Phillips, M.~T.~Pratola, and
+S.~Wesolowski,
+``Quantifying correlated truncation errors in effective field theory,''
+Phys.\ Rev.\ C \textbf{100}, 044001 (2019), arXiv:1904.10581.
+
+\bibitem{KennedyOHagan2001}
+M.~C.~Kennedy and A.~O'Hagan,
+``Bayesian calibration of computer models,''
+J.\ R.\ Stat.\ Soc.\ B \textbf{63}, 425 (2001),
+doi:10.1111/1467-9868.00294.
+
+\bibitem{BrynjarsdottirOHagan2014}
+J.~Brynjarsd\'ottir and A.~O'Hagan,
+``Learning about physical parameters: the importance of model discrepancy,''
+Inverse Problems \textbf{30}, 114007 (2014),
+doi:10.1088/0266-5611/30/11/114007.
+
+\bibitem{Plumlee2017}
+M.~Plumlee,
+``Bayesian calibration of inexact computer models,''
+J.\ Am.\ Stat.\ Assoc.\ \textbf{112}, 1274 (2017),
+doi:10.1080/01621459.2016.1211016.
+
+\bibitem{HoffmanGelman2014}
+M.~D.~Hoffman and A.~Gelman,
+``The No-U-Turn sampler: adaptively setting path lengths in Hamiltonian Monte
+Carlo,''
+J.\ Mach.\ Learn.\ Res.\ \textbf{15}, 1593 (2014), arXiv:1111.4246.
+
+\bibitem{Talts2018}
+S.~Talts, M.~Betancourt, D.~Simpson, A.~Vehtari, and A.~Gelman,
+``Validating Bayesian inference algorithms with simulation-based
+calibration,''
+arXiv:1804.06788.
+
+\bibitem{VehtariRhat2021}
+A.~Vehtari, A.~Gelman, D.~Simpson, B.~Carpenter, and P.-C.~B\"urkner,
+``Rank-normalization, folding, and localization: an improved
+\(\widehat R\) for assessing convergence of MCMC,''
+Bayesian Anal.\ \textbf{16}, 667 (2021), arXiv:1903.08008.
+
+\bibitem{VehtariLOO2017}
+A.~Vehtari, A.~Gelman, and J.~Gabry,
+``Practical Bayesian model evaluation using leave-one-out cross-validation
+and WAIC,''
+Stat.\ Comput.\ \textbf{27}, 1413 (2017), arXiv:1507.04544.
+
+\bibitem{VehtariPSIS2024}
+A.~Vehtari, D.~Simpson, A.~Gelman, Y.~Yao, and J.~Gabry,
+``Pareto smoothed importance sampling,''
+J.\ Mach.\ Learn.\ Res.\ \textbf{25}, 72:1 (2024), arXiv:1507.02646.
+
+\bibitem{YaoStacking2018}
+Y.~Yao, A.~Vehtari, D.~Simpson, and A.~Gelman,
+``Using stacking to average Bayesian predictive distributions,''
+Bayesian Anal.\ \textbf{13}, 917 (2018), arXiv:1704.02030.
+
+\bibitem{GneitingRaftery2007}
+T.~Gneiting and A.~E.~Raftery,
+``Strictly proper scoring rules, prediction, and estimation,''
+J.\ Am.\ Stat.\ Assoc.\ \textbf{102}, 359 (2007),
+doi:10.1198/016214506000001437.
+
+\bibitem{GneitingCalibration2007}
+T.~Gneiting, F.~Balabdaoui, and A.~E.~Raftery,
+``Probabilistic forecasts, calibration and sharpness,''
+J.\ R.\ Stat.\ Soc.\ B \textbf{69}, 243 (2007),
+doi:10.1111/j.1467-9868.2007.00587.x.
+
+\bibitem{Frame2018}
+D.~Frame, R.~He, I.~Ipsen, D.~Lee, D.~Lee, and E.~Rrapaj,
+``Eigenvector continuation with subspace learning,''
+Phys.\ Rev.\ Lett.\ \textbf{121}, 032501 (2018), arXiv:1711.07090.
+
+\bibitem{ZhangFurnstahl2022}
+X.~Zhang and R.~J.~Furnstahl,
+``Fast emulation of quantum three-body scattering,''
+Phys.\ Rev.\ C \textbf{105}, 064004 (2022), arXiv:2110.04269.
+
+\bibitem{Drischler2021}
+C.~Drischler, M.~Qui\~nonez, P.~G.~Giuliani, A.~E.~Lovell, and F.~M.~Nunes,
+``Toward emulating nuclear reactions using eigenvector continuation,''
+Phys.\ Lett.\ B \textbf{823}, 136777 (2021), arXiv:2108.08269.
+
+\bibitem{ChalonerVerdinelli1995}
+K.~Chaloner and I.~Verdinelli,
+``Bayesian experimental design: a review,''
+Stat.\ Sci.\ \textbf{10}, 273 (1995).
+
+\bibitem{CoonsHuan2025}
+T.~E.~Coons and X.~Huan,
+``A multi-fidelity estimator of the expected information gain for Bayesian
+optimal experimental design,''
+arXiv:2501.10845.
+
+\end{thebibliography}
+
+\end{document}

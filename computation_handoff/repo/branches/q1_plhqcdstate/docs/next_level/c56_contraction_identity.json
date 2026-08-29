@@ -1,0 +1,20 @@
+{
+  "c55_monomial_ancestry": "c55_operator_monomial_ledger row b_dagger,a,a_dagger,b",
+  "commutator": "[a_(k,n,m,h,a),a_dagger_(kprime,nprime,mprime,hprime,aprime)] = delta_kkprime delta_nnprime delta_mmprime delta_hhprime delta_aa_prime on the declared finite-cell mode algebra",
+  "coupling_power": 2,
+  "fermion_bilinear": "b_dagger b",
+  "field_ordering": [
+    "b_dagger",
+    "a",
+    "a_dagger",
+    "b"
+  ],
+  "hash": "86f1587d5508c1d0875cb0939359bdd2a0b67b6fd4bec4c77c72899ff14c0e60",
+  "inverse_derivative_placement": "(i partial^+)^-1 acts on the complete right A psi product before the left field contracts",
+  "inverse_derivative_routing": "p_q-k'_g",
+  "mass_dimension": "P^- before 2 P^+ conversion; unresolved because regulator-mode functional is absent",
+  "normal_ordering_reduction": "a_nu a_dagger_nuprime = a_dagger_nuprime a_nu + [a_nu,a_dagger_nuprime]",
+  "ordered_color": "T^a (left A) then T^b (right A)",
+  "polarization_ordering": "left A_mu then right A_nu; sum may occur only after the ordered contraction",
+  "status": "SOURCE_DERIVED_SYMBOLIC_RETAINED"
+}

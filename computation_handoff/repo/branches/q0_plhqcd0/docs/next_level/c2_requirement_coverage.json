@@ -1,0 +1,204 @@
+{
+  "requirements": [
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.BASELINE",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.REDTYPE",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.REDREG",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": [
+        "native nonzero-DeltaT reductions unavailable"
+      ]
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.NATIVE",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.TRANSFORM",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": [
+        "native nonzero-DeltaT reductions unavailable"
+      ]
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.PROVTYPE",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.PROVGRAPH",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.EXCLUSION",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.COMPOSE",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.TRACE",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.INJECT",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.REGRESS",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    },
+    {
+      "formal_source": "c2_codex_prompt.md",
+      "id": "C2.DOC",
+      "implementation": [
+        "src/deuteron_wigner/formal/reduction.py",
+        "src/deuteron_wigner/formal/provenance_graph.py",
+        "src/deuteron_wigner/formal/accepted_reductions.py"
+      ],
+      "status": "implemented_tested",
+      "tests": [
+        "tests/test_c2_reductions.py",
+        "tests/test_c2_provenance.py"
+      ],
+      "unresolved": []
+    }
+  ],
+  "schema_version": "1.0.0"
+}

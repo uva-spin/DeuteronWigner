@@ -1,0 +1,8 @@
+# C236/HQCDRIQUARKFIXEDKVENDPOINTQN1 implementation report
+
+Status: C236_ALL_FIFTEEN_INTERFACES_V1_APPLICABILITY_CLASSIFIED_THREE_CANONICAL_INTERFACES_EIGHT_CHANNEL_ENDPOINT_QN_ENUMERATORS_READY
+Plan: RIQUARKFIXEDKVENDPOINTQN1-A
+Baseline: f36fcf99295d5d0a9125f0fd0cd348f4d2b578d3
+C236 root: 735326d201d1ccbb9b5f8d8560eac462599a26a6d3129108185bb683a4eaceb4
+
+C236 classifies all 15 interfaces: three degree-one canonical V1 interfaces each expose eight exact helicity/Jz radial channels; twelve non-V1 interfaces remain nonzero full-Hamiltonian interfaces.

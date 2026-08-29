@@ -1,0 +1,55 @@
+{
+  "package_root": "3d09c73e245eea95e5a07733a8e68953370be622b0584cf125e90fb4c469394b",
+  "physical": false,
+  "plan": "RIMASSC43JMYVIRTAST1-C",
+  "record": {
+    "common": {
+      "d": "4-2epsilon",
+      "endpoint_tree": "delta(1-x)delta2(kT) or crossed z endpoint",
+      "gauge": "Feynman",
+      "measure": "mu^(2epsilon)d^d k/(2pi)^d",
+      "prefactor": "-i g^2 CF"
+    },
+    "count": 5,
+    "root": "8be88bd7f30db2f89e319ff45d8367c287eddb9a4d514678548a2f01de9166f6",
+    "rows": [
+      {
+        "analytic": "none",
+        "denominators": "[k^2+i0][(p-k)^2+i0]",
+        "id": "Sigma_q",
+        "numerator": "gamma_mu(pslash-kslash)gamma^mu",
+        "regions": "UVPart+IRPart; sum scaleless on shell"
+      },
+      {
+        "analytic": "nu1^(4alpha)",
+        "denominators": "[k^2+i0][v.k+i0]^(1+alpha)[v.k-i0]^(1+alpha)",
+        "id": "W_v",
+        "numerator": "v^2",
+        "regions": "UVPart+IRPart with ordered eikonal contour"
+      },
+      {
+        "analytic": "nu2^(4beta)",
+        "denominators": "[k^2+i0][tildev.k-i0]^(1+beta)[tildev.k+i0]^(1+beta)",
+        "id": "W_tildev",
+        "numerator": "tildev^2",
+        "regions": "oriented crossing of W_v"
+      },
+      {
+        "analytic": "nu1^(2alpha)",
+        "denominators": "[k^2+i0][(p-k)^2+i0][v.k+i0]^(1+alpha)",
+        "id": "V_qv",
+        "numerator": "v_mu gamma^mu(pslash-kslash)gamma_plus",
+        "regions": "UVPart+IRPart+AnalyticPart"
+      },
+      {
+        "analytic": "nu2^(2beta)",
+        "denominators": "[k^2+i0][(p-k)^2+i0][tildev.k-i0]^(1+beta)",
+        "id": "V_htv",
+        "numerator": "tildev_mu gamma_minus(pslash-kslash)gamma^mu",
+        "regions": "plus/minus oriented crossing of V_qv"
+      }
+    ]
+  },
+  "status": "C365_BARE_JMY_VIRTUAL_COUNTERTERM_PARENT_AST_DERIVED_SCALAR_REGION_EVALUATION_MISSING",
+  "validation": "PASS"
+}

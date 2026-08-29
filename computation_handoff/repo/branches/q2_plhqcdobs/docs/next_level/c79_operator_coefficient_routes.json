@@ -1,0 +1,15 @@
+{
+  "coefficient_routes_agree": true,
+  "constrained_fermion_route": "-g_s^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi",
+  "coupling": "g_s^2 explicitly factored; no physical value selected",
+  "coupling_convention_map": "C43 g -> C55 g_s",
+  "inverse_derivative": {
+    "denominator": "1/(p_q^+ + k_g^+)",
+    "monomial": "bdagger a_dagger a b",
+    "right_product_mode": "p_q+k_g",
+    "zero_status": "NONZERO_BY_POSITIVITY"
+  },
+  "operator_hash": "9bb57c27815b80330050938661b558ee784b500b4ff00725f66057e416dbc3e8",
+  "operator_status": "SOURCE_DERIVED_SYMBOLIC_ONLY",
+  "source_transcription": "-g^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi"
+}

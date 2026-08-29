@@ -1,0 +1,48 @@
+{
+  "b_grid_GeV_inv": [
+    1e-05,
+    25.0
+  ],
+  "evolution": "TMD_ev=TMDR_Rzeta*TMD_opt",
+  "frozen_bridge_domain": {
+    "Q_GeV": [
+      5.0,
+      10.0
+    ],
+    "b_GeV_inv": [
+      0.25,
+      1.0
+    ],
+    "x": [
+      0.03,
+      0.3
+    ]
+  },
+  "independent_confirmations": [
+    "data/raw/c25_sources/git/artemide-v301-engine/harpy/harpy.py:428-499",
+    "data/raw/c25_sources/git/artemide-v301-engine/src/uTMDPDF.f90:430-477",
+    "data/raw/c25_sources/git/artemide-v301-engine/src/uTMDPDF_OPE.f90:374-416",
+    "data/raw/c25_sources/git/artemide-public-work/Models/ART25/Model/uTMDPDF_model.f90:64-129"
+  ],
+  "large_b": "ART25 FNP cosh widths plus source CS model",
+  "mu_call": "explicit Q",
+  "optimal_boundary": "TMD_opt=OPE_convolution*FNP",
+  "schema_version": "1.0.0",
+  "scheme": {
+    "alpha_s": "ARTEMIDE_V301_INTERNAL",
+    "fourier": "B_TO_K_J0_OVER_2PI",
+    "rapidity": "DELTA_REGULATOR_ARTEMIDE",
+    "soft": "ARTEMIDE_SQRT_SOFT",
+    "stable_id": "C30.SCHEME.ART25",
+    "uv": "MSBAR_ARTEMIDE_V301",
+    "zeta_prescription": "OPTIMAL_TMD_THEN_RZETA_TO_MU_ZETA"
+  },
+  "scheme_hash": "53601e7b5a7715c4be78aeffa3b9f23d71a51a8d1a76209d9b4fed5bb407fea3",
+  "small_b": "ARTEMIDE OPE convolution",
+  "thresholds": "bottom/charm slots forced zero below source masses",
+  "x_domain": [
+    1e-05,
+    1.0
+  ],
+  "zeta_call": "explicit Q^2"
+}

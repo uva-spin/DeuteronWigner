@@ -1,0 +1,5558 @@
+{
+  "package_root": "b4cc247d56f1aa129239fb220b59b43e92f92b3aef6ba4ca2101cca70d160edb",
+  "physical": false,
+  "plan": "RIMASSC43JMYCUTDISPATCH2-C",
+  "record": {
+    "count": 16,
+    "real_cut_count": 6,
+    "root": "32e217c67c55c2249dc68dcfad7db77b0dc9d13ea20e1288a7f580d1501aa461",
+    "rows": [
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": true,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "distribution",
+        "id": "DR.qq",
+        "integral": {
+          "authority": "C381.real_ast",
+          "node": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "x",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 2
+              }
+            ],
+            "distribution": "plus_or_regular",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "P",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 4
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": -1
+                        },
+                        {
+                          "name": "epsilon",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "name": "P",
+                  "op": "sym"
+                },
+                {
+                  "name": "K",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qq"
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "x",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 2
+              }
+            ],
+            "distribution": "plus_or_regular",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "P",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 4
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": -1
+                        },
+                        {
+                          "name": "epsilon",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "name": "P",
+                  "op": "sym"
+                },
+                {
+                  "name": "K",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qq"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.real.DR.qq",
+        "mass_IR": false,
+        "measurement": "Mx regular/plus",
+        "measurement_exec": {
+          "action": "integral_0^1 kernel(u)*phi(u) with source-owned regular/plus decomposition",
+          "endpoint": 1,
+          "executable": true,
+          "fragmentation_jacobian": null,
+          "kind": "regular_plus_split",
+          "op": "distribution_test_action",
+          "transverse_kernel": {
+            "argument": "i*bT_dot_kT",
+            "op": "exp"
+          },
+          "variable": "x"
+        },
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 4
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "q2",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 4
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "q2",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.DR.qq",
+        "regions": [
+          "IR",
+          "endpoint"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": true,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "distribution",
+        "id": "DR.qv",
+        "integral": {
+          "authority": "C381.real_ast",
+          "node": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "x",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 1
+              },
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "x",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "P",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vm",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vp",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "x",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "P",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "name": "alpha",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "plus",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "P",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 16
+                },
+                {
+                  "name": "x",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "name": "P",
+                    "op": "sym"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "vm",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qv"
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "x",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 1
+              },
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "x",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "P",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vm",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vp",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "x",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "P",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "name": "alpha",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "plus",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "P",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 16
+                },
+                {
+                  "name": "x",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "name": "P",
+                    "op": "sym"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "vm",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qv"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.real.DR.qv",
+        "mass_IR": false,
+        "measurement": "Mx plus",
+        "measurement_exec": {
+          "action": "integral_0^1 kernel(u)*(phi(u)-phi(1))",
+          "endpoint": 1,
+          "executable": true,
+          "fragmentation_jacobian": null,
+          "kind": "plus",
+          "op": "distribution_test_action",
+          "transverse_kernel": {
+            "argument": "i*bT_dot_kT",
+            "op": "exp"
+          },
+          "variable": "x"
+        },
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": 4
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_dot_v",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "v_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "name": "p_dot_v",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": 4
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_dot_v",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "v_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "name": "p_dot_v",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.DR.qv",
+        "regions": [
+          "IR",
+          "alpha",
+          "endpoint"
+        ],
+        "relative_multiplier": 2,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": true,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "distribution",
+        "id": "DR.vv",
+        "integral": {
+          "authority": "C381.real_ast",
+          "node": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "x",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "P",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vm",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vp",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "x",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "P",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 2
+                        },
+                        {
+                          "name": "alpha",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "endpoint",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "P",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -2
+                },
+                {
+                  "name": "P",
+                  "op": "sym"
+                },
+                {
+                  "name": "v2",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.vv"
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "x",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "P",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vm",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vp",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "x",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "P",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 2
+                        },
+                        {
+                          "name": "alpha",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "endpoint",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "x",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "P",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -2
+                },
+                {
+                  "name": "P",
+                  "op": "sym"
+                },
+                {
+                  "name": "v2",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.vv"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.real.DR.vv",
+        "mass_IR": false,
+        "measurement": "Mx endpoint",
+        "measurement_exec": {
+          "action": "coefficient*phi(1)",
+          "endpoint": 1,
+          "executable": true,
+          "fragmentation_jacobian": null,
+          "kind": "endpoint_delta",
+          "op": "distribution_test_action",
+          "transverse_kernel": {
+            "argument": "i*bT_dot_kT",
+            "op": "exp"
+          },
+          "variable": "x"
+        },
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": -1
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "p_plus",
+                "op": "sym"
+              },
+              {
+                "name": "v2",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": -1
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "p_plus",
+                "op": "sym"
+              },
+              {
+                "name": "v2",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.DR.vv",
+        "regions": [
+          "IR",
+          "alpha",
+          "endpoint"
+        ],
+        "relative_multiplier": -1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": "CT.Z2q",
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": {
+          "IR_action": "retain",
+          "analytic_action": "retain",
+          "arg": {
+            "normalization": {
+              "args": [
+                "exp(gammaE*epsilon)",
+                "(4*pi)^(-epsilon)",
+                "epsilon_UV^-1"
+              ],
+              "op": "mul"
+            },
+            "op": "MSbar_UV_project",
+            "parent": "Sigma_q"
+          },
+          "id": "CT.Z2q",
+          "op": "negate"
+        },
+        "counterterm_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "laurent_uv_project",
+          "parent": "Sigma_q",
+          "rules": {
+            "normalization": "exp(gammaE*epsilon)*(4*pi)^(-epsilon)",
+            "operation": "negative UV pole part only",
+            "order": "after region separation and gauge-complete grouping",
+            "retains": [
+              "IR_poles",
+              "alpha_poles",
+              "beta_poles",
+              "mixed_poles",
+              "finite"
+            ]
+          }
+        },
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "distribution",
+        "id": "Sigma_q",
+        "integral": {
+          "authority": "C376.master_ast",
+          "measure": "C381.distribution_ast/action",
+          "node": {
+            "analytic": [],
+            "den": [
+              [
+                "Dg",
+                1,
+                0
+              ],
+              [
+                "Dq",
+                1,
+                0
+              ]
+            ],
+            "family": "loop",
+            "measurement": "delta_x",
+            "multiplicity": 1,
+            "term": "Sigma_q"
+          },
+          "op": "integrate_cut"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "analytic": [],
+            "den": [
+              [
+                "Dg",
+                1,
+                0
+              ],
+              [
+                "Dq",
+                1,
+                0
+              ]
+            ],
+            "family": "loop",
+            "measurement": "delta_x",
+            "multiplicity": 1,
+            "term": "Sigma_q"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.loop.Sigma",
+        "mass_IR": false,
+        "measurement": "delta(1-x)deltaT",
+        "measurement_exec": "delta(1-x)deltaT",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": -2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "name": "proj_p_minus_ell",
+                    "op": "sym"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": -2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "name": "proj_p_minus_ell",
+                    "op": "sym"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.Sigma_q",
+        "regions": [
+          "UV",
+          "IR"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": "CT.Zv",
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": {
+          "IR_action": "retain",
+          "analytic_action": "retain",
+          "arg": {
+            "normalization": {
+              "args": [
+                "exp(gammaE*epsilon)",
+                "(4*pi)^(-epsilon)",
+                "epsilon_UV^-1"
+              ],
+              "op": "mul"
+            },
+            "op": "MSbar_UV_project",
+            "parent": "W_v"
+          },
+          "id": "CT.Zv",
+          "op": "negate"
+        },
+        "counterterm_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "laurent_uv_project",
+          "parent": "W_v",
+          "rules": {
+            "normalization": "exp(gammaE*epsilon)*(4*pi)^(-epsilon)",
+            "operation": "negative UV pole part only",
+            "order": "after region separation and gauge-complete grouping",
+            "retains": [
+              "IR_poles",
+              "alpha_poles",
+              "beta_poles",
+              "mixed_poles",
+              "finite"
+            ]
+          }
+        },
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "distribution",
+        "id": "W_v",
+        "integral": {
+          "authority": "C381.loop_ast",
+          "node": {
+            "Delta": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "name": "r1",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "r2",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "v2",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "T": {
+              "name": "t",
+              "op": "sym"
+            },
+            "branches": [
+              "quadratic+",
+              "eikonal+",
+              "eikonal-"
+            ],
+            "domain": "positive_orthant",
+            "family": "W_v",
+            "powers": [
+              0,
+              "alpha",
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "r1",
+              "r2"
+            ]
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "Delta": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "name": "r1",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "r2",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "v2",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "T": {
+              "name": "t",
+              "op": "sym"
+            },
+            "branches": [
+              "quadratic+",
+              "eikonal+",
+              "eikonal-"
+            ],
+            "domain": "positive_orthant",
+            "family": "W_v",
+            "powers": [
+              0,
+              "alpha",
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "r1",
+              "r2"
+            ]
+          },
+          "op": "regulated_positive_orthant_integral",
+          "rules": {
+            "IR_boundary": "projective scale T->infinity",
+            "UV_boundary": "projective scale T->0",
+            "analytic_boundary": "eikonal simplex coordinates ->0",
+            "branch": "inherit quadratic/eikonal signs and i0",
+            "domain_map": "y_i in [0,1); s_i=y_i/(1-y_i)",
+            "jacobian": "product_i (1-y_i)^-2",
+            "order": "alpha then beta and beta then alpha; epsilon last"
+          }
+        },
+        "integral_ref": "C381.loop.W_v",
+        "mass_IR": false,
+        "measurement": "delta(1-x)deltaT",
+        "measurement_exec": "delta(1-x)deltaT",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "name": "v2",
+            "op": "sym"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "name": "v2",
+            "op": "sym"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.W_v",
+        "regions": [
+          "UV",
+          "IR",
+          "alpha"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": "CT.Zvert.q",
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": {
+          "IR_action": "retain",
+          "analytic_action": "retain",
+          "arg": {
+            "normalization": {
+              "args": [
+                "exp(gammaE*epsilon)",
+                "(4*pi)^(-epsilon)",
+                "epsilon_UV^-1"
+              ],
+              "op": "mul"
+            },
+            "op": "MSbar_UV_project",
+            "parent": "V_qv"
+          },
+          "id": "CT.Zvert.q",
+          "op": "negate"
+        },
+        "counterterm_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "laurent_uv_project",
+          "parent": "V_qv",
+          "rules": {
+            "normalization": "exp(gammaE*epsilon)*(4*pi)^(-epsilon)",
+            "operation": "negative UV pole part only",
+            "order": "after region separation and gauge-complete grouping",
+            "retains": [
+              "IR_poles",
+              "alpha_poles",
+              "beta_poles",
+              "mixed_poles",
+              "finite"
+            ]
+          }
+        },
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "distribution",
+        "id": "V_qv",
+        "integral": {
+          "authority": "C381.loop_ast",
+          "node": {
+            "Delta": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "u",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "r",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "pv",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "name": "t",
+                            "op": "sym"
+                          },
+                          {
+                            "name": "u",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "base": {
+                        "name": "r",
+                        "op": "sym"
+                      },
+                      "exponent": 2,
+                      "op": "pow"
+                    },
+                    {
+                      "name": "v2",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 4
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "t",
+                                "op": "sym"
+                              },
+                              {
+                                "name": "u",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "add"
+                          }
+                        ],
+                        "op": "mul"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            "T": {
+              "args": [
+                {
+                  "name": "t",
+                  "op": "sym"
+                },
+                {
+                  "name": "u",
+                  "op": "sym"
+                }
+              ],
+              "op": "add"
+            },
+            "branches": [
+              "quadratic+",
+              "quadratic+",
+              "eikonal+"
+            ],
+            "domain": "positive_orthant",
+            "family": "V_qv",
+            "powers": [
+              0,
+              0,
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "u",
+              "r"
+            ]
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "Delta": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "u",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "r",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "pv",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "name": "t",
+                            "op": "sym"
+                          },
+                          {
+                            "name": "u",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "base": {
+                        "name": "r",
+                        "op": "sym"
+                      },
+                      "exponent": 2,
+                      "op": "pow"
+                    },
+                    {
+                      "name": "v2",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 4
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "t",
+                                "op": "sym"
+                              },
+                              {
+                                "name": "u",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "add"
+                          }
+                        ],
+                        "op": "mul"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            "T": {
+              "args": [
+                {
+                  "name": "t",
+                  "op": "sym"
+                },
+                {
+                  "name": "u",
+                  "op": "sym"
+                }
+              ],
+              "op": "add"
+            },
+            "branches": [
+              "quadratic+",
+              "quadratic+",
+              "eikonal+"
+            ],
+            "domain": "positive_orthant",
+            "family": "V_qv",
+            "powers": [
+              0,
+              0,
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "u",
+              "r"
+            ]
+          },
+          "op": "regulated_positive_orthant_integral",
+          "rules": {
+            "IR_boundary": "projective scale T->infinity",
+            "UV_boundary": "projective scale T->0",
+            "analytic_boundary": "eikonal simplex coordinates ->0",
+            "branch": "inherit quadratic/eikonal signs and i0",
+            "domain_map": "y_i in [0,1); s_i=y_i/(1-y_i)",
+            "jacobian": "product_i (1-y_i)^-2",
+            "order": "alpha then beta and beta then alpha; epsilon last"
+          }
+        },
+        "integral_ref": "C381.loop.V_qv",
+        "mass_IR": false,
+        "measurement": "delta(1-x)deltaT",
+        "measurement_exec": "delta(1-x)deltaT",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "vslash_proj",
+                    "op": "sym"
+                  },
+                  {
+                    "name": "p_minus_ell_proj",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              }
+            ],
+            "op": "add"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "vslash_proj",
+                    "op": "sym"
+                  },
+                  {
+                    "name": "p_minus_ell_proj",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              }
+            ],
+            "op": "add"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.V_qv",
+        "regions": [
+          "UV",
+          "IR",
+          "alpha"
+        ],
+        "relative_multiplier": 2,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": "plus/minus exact crossing",
+        "cut_corrected": true,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "fragmentation",
+        "id": "FR.qq",
+        "integral": {
+          "authority": "C381.real_ast",
+          "node": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "z",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 2
+              }
+            ],
+            "distribution": "plus_or_regular",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "z",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "Pminus",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 4
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": -1
+                        },
+                        {
+                          "name": "epsilon",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "name": "Pminus",
+                  "op": "sym"
+                },
+                {
+                  "name": "K",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qq"
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "z",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 2
+              }
+            ],
+            "distribution": "plus_or_regular",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "z",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "Pminus",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 4
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": -1
+                        },
+                        {
+                          "name": "epsilon",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "name": "Pminus",
+                  "op": "sym"
+                },
+                {
+                  "name": "K",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qq"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.cross.DR.qq",
+        "mass_IR": false,
+        "measurement": "Mz crossed",
+        "measurement_exec": {
+          "action": "integral_0^1 kernel(u)*phi(u) with source-owned regular/plus decomposition",
+          "endpoint": 1,
+          "executable": true,
+          "fragmentation_jacobian": "z^(-2+2epsilon)",
+          "kind": "regular_plus_split",
+          "op": "distribution_test_action",
+          "transverse_kernel": {
+            "argument": "i*bT_dot_kT",
+            "op": "exp"
+          },
+          "variable": "z"
+        },
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 4
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "q2",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 4
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "q2",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.cross.DR.qq",
+        "regions": [
+          "IR",
+          "endpoint"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": "plus/minus exact crossing",
+        "cut_corrected": true,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "fragmentation",
+        "id": "FR.qv",
+        "integral": {
+          "authority": "C381.real_ast",
+          "node": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "z",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 1
+              },
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "z",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "Pminus",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvp",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvm",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "z",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "Pminus",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "name": "beta",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "plus",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "z",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "Pminus",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 16
+                },
+                {
+                  "name": "z",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "name": "Pminus",
+                    "op": "sym"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "tvp",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qv"
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "name": "K",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 1
+                          },
+                          {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": -1
+                              },
+                              {
+                                "name": "z",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                "power": 1
+              },
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "z",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "Pminus",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvp",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvm",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "z",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "Pminus",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 1
+                    },
+                    {
+                      "name": "beta",
+                      "op": "sym"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "plus",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "z",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "Pminus",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": 16
+                },
+                {
+                  "name": "z",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "name": "Pminus",
+                    "op": "sym"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "tvp",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.qv"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.cross.DR.qv",
+        "mass_IR": false,
+        "measurement": "Mz crossed",
+        "measurement_exec": {
+          "action": "integral_0^1 kernel(u)*(phi(u)-phi(1))",
+          "endpoint": 1,
+          "executable": true,
+          "fragmentation_jacobian": "z^(-2+2epsilon)",
+          "kind": "plus",
+          "op": "distribution_test_action",
+          "transverse_kernel": {
+            "argument": "i*bT_dot_kT",
+            "op": "exp"
+          },
+          "variable": "z"
+        },
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": 4
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_dot_v",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "v_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "name": "p_dot_v",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": 4
+              },
+              {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "name": "p_plus",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_dot_v",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": -1
+                      },
+                      {
+                        "name": "p_dot_q",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "v_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  {
+                    "args": [
+                      {
+                        "name": "p_dot_v",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "q_plus",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.cross.DR.qv",
+        "regions": [
+          "IR",
+          "beta",
+          "endpoint"
+        ],
+        "relative_multiplier": 2,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": "plus/minus exact crossing",
+        "cut_corrected": true,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "fragmentation",
+        "id": "FR.vv",
+        "integral": {
+          "authority": "C381.real_ast",
+          "node": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "z",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "Pminus",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvp",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvm",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "z",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "Pminus",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 2
+                        },
+                        {
+                          "name": "beta",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "endpoint",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "z",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "Pminus",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -2
+                },
+                {
+                  "name": "Pminus",
+                  "op": "sym"
+                },
+                {
+                  "name": "tv2",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.vv"
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "denominators": [
+              {
+                "expr": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "args": [
+                            {
+                              "op": "num",
+                              "value": 1
+                            },
+                            {
+                              "args": [
+                                {
+                                  "op": "num",
+                                  "value": -1
+                                },
+                                {
+                                  "name": "z",
+                                  "op": "sym"
+                                }
+                              ],
+                              "op": "mul"
+                            }
+                          ],
+                          "op": "add"
+                        },
+                        {
+                          "name": "Pminus",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvp",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "K",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "tvm",
+                          "op": "sym"
+                        },
+                        {
+                          "base": {
+                            "args": [
+                              {
+                                "op": "num",
+                                "value": 2
+                              },
+                              {
+                                "args": [
+                                  {
+                                    "op": "num",
+                                    "value": 1
+                                  },
+                                  {
+                                    "args": [
+                                      {
+                                        "op": "num",
+                                        "value": -1
+                                      },
+                                      {
+                                        "name": "z",
+                                        "op": "sym"
+                                      }
+                                    ],
+                                    "op": "mul"
+                                  }
+                                ],
+                                "op": "add"
+                              },
+                              {
+                                "name": "Pminus",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "mul"
+                          },
+                          "exponent": -1,
+                          "op": "pow"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                "i0": 1,
+                "power": {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": 2
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 2
+                        },
+                        {
+                          "name": "beta",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                }
+              }
+            ],
+            "distribution": "endpoint",
+            "domain": {
+              "K": [
+                0,
+                "inf"
+              ],
+              "x": [
+                0,
+                1
+              ]
+            },
+            "jacobian": {
+              "base": {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": 2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 1
+                      },
+                      {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": -1
+                          },
+                          {
+                            "name": "z",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "mul"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  {
+                    "name": "Pminus",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              },
+              "exponent": -1,
+              "op": "pow"
+            },
+            "measure_power_K": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "name": "epsilon",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "numerator": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -2
+                },
+                {
+                  "name": "Pminus",
+                  "op": "sym"
+                },
+                {
+                  "name": "tv2",
+                  "op": "sym"
+                }
+              ],
+              "op": "mul"
+            },
+            "term": "DR.vv"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.cross.DR.vv",
+        "mass_IR": false,
+        "measurement": "Mz crossed",
+        "measurement_exec": {
+          "action": "coefficient*phi(1)",
+          "endpoint": 1,
+          "executable": true,
+          "fragmentation_jacobian": "z^(-2+2epsilon)",
+          "kind": "endpoint_delta",
+          "op": "distribution_test_action",
+          "transverse_kernel": {
+            "argument": "i*bT_dot_kT",
+            "op": "exp"
+          },
+          "variable": "z"
+        },
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": -1
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "p_plus",
+                "op": "sym"
+              },
+              {
+                "name": "tv2",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": -1
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "p_plus",
+                "op": "sym"
+              },
+              {
+                "name": "tv2",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.cross.DR.vv",
+        "regions": [
+          "IR",
+          "beta",
+          "endpoint"
+        ],
+        "relative_multiplier": -1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": "CT.Z2q",
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": {
+          "IR_action": "retain",
+          "analytic_action": "retain",
+          "arg": {
+            "normalization": {
+              "args": [
+                "exp(gammaE*epsilon)",
+                "(4*pi)^(-epsilon)",
+                "epsilon_UV^-1"
+              ],
+              "op": "mul"
+            },
+            "op": "MSbar_UV_project",
+            "parent": "Sigma_q"
+          },
+          "id": "CT.Z2q",
+          "op": "negate"
+        },
+        "counterterm_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "laurent_uv_project",
+          "parent": "Sigma_q",
+          "rules": {
+            "normalization": "exp(gammaE*epsilon)*(4*pi)^(-epsilon)",
+            "operation": "negative UV pole part only",
+            "order": "after region separation and gauge-complete grouping",
+            "retains": [
+              "IR_poles",
+              "alpha_poles",
+              "beta_poles",
+              "mixed_poles",
+              "finite"
+            ]
+          }
+        },
+        "crossing": "plus/minus exact crossing",
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "fragmentation",
+        "id": "Sigma_q",
+        "integral": {
+          "authority": "C376.master_ast",
+          "measure": "C381.distribution_ast/action",
+          "node": {
+            "analytic": [],
+            "den": [
+              [
+                "Dg",
+                1,
+                0
+              ],
+              [
+                "Dq",
+                1,
+                0
+              ]
+            ],
+            "family": "loop",
+            "measurement": "delta_x",
+            "multiplicity": 1,
+            "term": "Sigma_q"
+          },
+          "op": "integrate_cut"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "analytic": [],
+            "den": [
+              [
+                "Dg",
+                1,
+                0
+              ],
+              [
+                "Dq",
+                1,
+                0
+              ]
+            ],
+            "family": "loop",
+            "measurement": "delta_x",
+            "multiplicity": 1,
+            "term": "Sigma_q"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.cross.Sigma_q",
+        "mass_IR": false,
+        "measurement": "Mz crossed",
+        "measurement_exec": "Mz crossed",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": -2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "name": "proj_p_minus_ell",
+                    "op": "sym"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "num",
+                    "value": -2
+                  },
+                  {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 2
+                      },
+                      {
+                        "name": "epsilon",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  }
+                ],
+                "op": "add"
+              },
+              {
+                "args": [
+                  {
+                    "name": "proj_p_minus_ell",
+                    "op": "sym"
+                  }
+                ],
+                "op": "add"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.cross.Sigma_q",
+        "regions": [
+          "UV",
+          "IR"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": "CT.Ztv",
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": {
+          "IR_action": "retain",
+          "analytic_action": "retain",
+          "arg": {
+            "normalization": {
+              "args": [
+                "exp(gammaE*epsilon)",
+                "(4*pi)^(-epsilon)",
+                "epsilon_UV^-1"
+              ],
+              "op": "mul"
+            },
+            "op": "MSbar_UV_project",
+            "parent": "W_tildev"
+          },
+          "id": "CT.Ztv",
+          "op": "negate"
+        },
+        "counterterm_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "laurent_uv_project",
+          "parent": "W_tildev",
+          "rules": {
+            "normalization": "exp(gammaE*epsilon)*(4*pi)^(-epsilon)",
+            "operation": "negative UV pole part only",
+            "order": "after region separation and gauge-complete grouping",
+            "retains": [
+              "IR_poles",
+              "alpha_poles",
+              "beta_poles",
+              "mixed_poles",
+              "finite"
+            ]
+          }
+        },
+        "crossing": "plus/minus exact crossing",
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "fragmentation",
+        "id": "W_v",
+        "integral": {
+          "authority": "C381.loop_ast.crossing",
+          "node": {
+            "Delta": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "name": "r1",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "r2",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "tv2",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "T": {
+              "name": "t",
+              "op": "sym"
+            },
+            "branches": [
+              "quadratic+",
+              "eikonal+",
+              "eikonal-"
+            ],
+            "domain": "positive_orthant",
+            "family": "W_v",
+            "powers": [
+              0,
+              "alpha",
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "r1",
+              "r2"
+            ]
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "Delta": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "name": "r1",
+                        "op": "sym"
+                      },
+                      {
+                        "name": "r2",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "add"
+                  },
+                  "exponent": 2,
+                  "op": "pow"
+                },
+                {
+                  "name": "tv2",
+                  "op": "sym"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "T": {
+              "name": "t",
+              "op": "sym"
+            },
+            "branches": [
+              "quadratic+",
+              "eikonal+",
+              "eikonal-"
+            ],
+            "domain": "positive_orthant",
+            "family": "W_v",
+            "powers": [
+              0,
+              "alpha",
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "r1",
+              "r2"
+            ]
+          },
+          "op": "regulated_positive_orthant_integral",
+          "rules": {
+            "IR_boundary": "projective scale T->infinity",
+            "UV_boundary": "projective scale T->0",
+            "analytic_boundary": "eikonal simplex coordinates ->0",
+            "branch": "inherit quadratic/eikonal signs and i0",
+            "domain_map": "y_i in [0,1); s_i=y_i/(1-y_i)",
+            "jacobian": "product_i (1-y_i)^-2",
+            "order": "alpha then beta and beta then alpha; epsilon last"
+          }
+        },
+        "integral_ref": "C381.cross.W_v",
+        "mass_IR": false,
+        "measurement": "Mz crossed",
+        "measurement_exec": "Mz crossed",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "name": "tv2",
+            "op": "sym"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "name": "tv2",
+            "op": "sym"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.cross.W_v",
+        "regions": [
+          "UV",
+          "IR",
+          "beta"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": "CT.Ztvert.q",
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": "plus/minus exact crossing",
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "fragmentation",
+        "id": "V_qv",
+        "integral": {
+          "authority": "C381.loop_ast.crossing",
+          "node": {
+            "Delta": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "u",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "r",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "pv",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "name": "t",
+                            "op": "sym"
+                          },
+                          {
+                            "name": "u",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "base": {
+                        "name": "r",
+                        "op": "sym"
+                      },
+                      "exponent": 2,
+                      "op": "pow"
+                    },
+                    {
+                      "name": "tv2",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 4
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "t",
+                                "op": "sym"
+                              },
+                              {
+                                "name": "u",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "add"
+                          }
+                        ],
+                        "op": "mul"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            "T": {
+              "args": [
+                {
+                  "name": "t",
+                  "op": "sym"
+                },
+                {
+                  "name": "u",
+                  "op": "sym"
+                }
+              ],
+              "op": "add"
+            },
+            "branches": [
+              "quadratic+",
+              "quadratic+",
+              "eikonal+"
+            ],
+            "domain": "positive_orthant",
+            "family": "V_qv",
+            "powers": [
+              0,
+              0,
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "u",
+              "r"
+            ]
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "Delta": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "u",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "r",
+                      "op": "sym"
+                    },
+                    {
+                      "name": "pv",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "name": "t",
+                            "op": "sym"
+                          },
+                          {
+                            "name": "u",
+                            "op": "sym"
+                          }
+                        ],
+                        "op": "add"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                },
+                {
+                  "args": [
+                    {
+                      "op": "num",
+                      "value": -1
+                    },
+                    {
+                      "base": {
+                        "name": "r",
+                        "op": "sym"
+                      },
+                      "exponent": 2,
+                      "op": "pow"
+                    },
+                    {
+                      "name": "tv2",
+                      "op": "sym"
+                    },
+                    {
+                      "base": {
+                        "args": [
+                          {
+                            "op": "num",
+                            "value": 4
+                          },
+                          {
+                            "args": [
+                              {
+                                "name": "t",
+                                "op": "sym"
+                              },
+                              {
+                                "name": "u",
+                                "op": "sym"
+                              }
+                            ],
+                            "op": "add"
+                          }
+                        ],
+                        "op": "mul"
+                      },
+                      "exponent": -1,
+                      "op": "pow"
+                    }
+                  ],
+                  "op": "mul"
+                }
+              ],
+              "op": "add"
+            },
+            "T": {
+              "args": [
+                {
+                  "name": "t",
+                  "op": "sym"
+                },
+                {
+                  "name": "u",
+                  "op": "sym"
+                }
+              ],
+              "op": "add"
+            },
+            "branches": [
+              "quadratic+",
+              "quadratic+",
+              "eikonal+"
+            ],
+            "domain": "positive_orthant",
+            "family": "V_qv",
+            "powers": [
+              0,
+              0,
+              "alpha"
+            ],
+            "variables": [
+              "t",
+              "u",
+              "r"
+            ]
+          },
+          "op": "regulated_positive_orthant_integral",
+          "rules": {
+            "IR_boundary": "projective scale T->infinity",
+            "UV_boundary": "projective scale T->0",
+            "analytic_boundary": "eikonal simplex coordinates ->0",
+            "branch": "inherit quadratic/eikonal signs and i0",
+            "domain_map": "y_i in [0,1); s_i=y_i/(1-y_i)",
+            "jacobian": "product_i (1-y_i)^-2",
+            "order": "alpha then beta and beta then alpha; epsilon last"
+          }
+        },
+        "integral_ref": "C381.cross.V_qv",
+        "mass_IR": false,
+        "measurement": "Mz crossed",
+        "measurement_exec": "Mz crossed",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "tvslash_proj",
+                    "op": "sym"
+                  },
+                  {
+                    "name": "p_minus_ell_proj",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              }
+            ],
+            "op": "add"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "tvslash_proj",
+                    "op": "sym"
+                  },
+                  {
+                    "name": "p_minus_ell_proj",
+                    "op": "sym"
+                  }
+                ],
+                "op": "mul"
+              }
+            ],
+            "op": "add"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.cross.V_qv",
+        "regions": [
+          "UV",
+          "IR",
+          "beta"
+        ],
+        "relative_multiplier": 2,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": true,
+        "environment_ref": "C385.common_environment",
+        "group": "soft",
+        "id": "S.virtual",
+        "integral": {
+          "authority": "C381.loop_ast",
+          "node": {
+            "Delta": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "base": {
+                            "name": "r",
+                            "op": "sym"
+                          },
+                          "exponent": 2,
+                          "op": "pow"
+                        },
+                        {
+                          "name": "v2",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "base": {
+                            "name": "q",
+                            "op": "sym"
+                          },
+                          "exponent": 2,
+                          "op": "pow"
+                        },
+                        {
+                          "name": "tv2",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 2
+                        },
+                        {
+                          "name": "r",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "q",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vtv",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "T": {
+              "name": "t",
+              "op": "sym"
+            },
+            "branches": [
+              "quadratic+",
+              "eikonal+",
+              "eikonal-"
+            ],
+            "domain": "positive_orthant",
+            "family": "S.virtual",
+            "powers": [
+              0,
+              "alpha",
+              "beta"
+            ],
+            "variables": [
+              "t",
+              "r",
+              "q"
+            ]
+          },
+          "op": "integrate"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "Delta": {
+              "args": [
+                {
+                  "op": "num",
+                  "value": -1
+                },
+                {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "base": {
+                            "name": "r",
+                            "op": "sym"
+                          },
+                          "exponent": 2,
+                          "op": "pow"
+                        },
+                        {
+                          "name": "v2",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "base": {
+                            "name": "q",
+                            "op": "sym"
+                          },
+                          "exponent": 2,
+                          "op": "pow"
+                        },
+                        {
+                          "name": "tv2",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    },
+                    {
+                      "args": [
+                        {
+                          "op": "num",
+                          "value": 2
+                        },
+                        {
+                          "name": "r",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "q",
+                          "op": "sym"
+                        },
+                        {
+                          "name": "vtv",
+                          "op": "sym"
+                        }
+                      ],
+                      "op": "mul"
+                    }
+                  ],
+                  "op": "add"
+                },
+                {
+                  "base": {
+                    "args": [
+                      {
+                        "op": "num",
+                        "value": 4
+                      },
+                      {
+                        "name": "t",
+                        "op": "sym"
+                      }
+                    ],
+                    "op": "mul"
+                  },
+                  "exponent": -1,
+                  "op": "pow"
+                }
+              ],
+              "op": "mul"
+            },
+            "T": {
+              "name": "t",
+              "op": "sym"
+            },
+            "branches": [
+              "quadratic+",
+              "eikonal+",
+              "eikonal-"
+            ],
+            "domain": "positive_orthant",
+            "family": "S.virtual",
+            "powers": [
+              0,
+              "alpha",
+              "beta"
+            ],
+            "variables": [
+              "t",
+              "r",
+              "q"
+            ]
+          },
+          "op": "regulated_positive_orthant_integral",
+          "rules": {
+            "IR_boundary": "projective scale T->infinity",
+            "UV_boundary": "projective scale T->0",
+            "analytic_boundary": "eikonal simplex coordinates ->0",
+            "branch": "inherit quadratic/eikonal signs and i0",
+            "domain_map": "y_i in [0,1); s_i=y_i/(1-y_i)",
+            "jacobian": "product_i (1-y_i)^-2",
+            "order": "alpha then beta and beta then alpha; epsilon last"
+          }
+        },
+        "integral_ref": "C381.loop.S.virtual",
+        "mass_IR": false,
+        "measurement": "one",
+        "measurement_exec": "one",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": -2
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "v_dot_tv",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": -2
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "v_dot_tv",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.S.virtual",
+        "regions": [
+          "UV",
+          "IR",
+          "alpha",
+          "beta",
+          "mixed"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "soft",
+        "id": "S.real.v",
+        "integral": {
+          "authority": "C376.master_ast",
+          "measure": "C381.distribution_ast/action",
+          "node": {
+            "analytic": [
+              [
+                "nu1",
+                4,
+                "alpha"
+              ]
+            ],
+            "den": [
+              [
+                "Dv+",
+                1,
+                "alpha"
+              ],
+              [
+                "Dv-",
+                1,
+                "alpha"
+              ]
+            ],
+            "family": "soft_cut",
+            "measurement": "Mb_minus_one",
+            "multiplicity": 1,
+            "term": "S.real.v"
+          },
+          "op": "integrate_cut"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "analytic": [
+              [
+                "nu1",
+                4,
+                "alpha"
+              ]
+            ],
+            "den": [
+              [
+                "Dv+",
+                1,
+                "alpha"
+              ],
+              [
+                "Dv-",
+                1,
+                "alpha"
+              ]
+            ],
+            "family": "soft_cut",
+            "measurement": "Mb_minus_one",
+            "multiplicity": 1,
+            "term": "S.real.v"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.softcut.v",
+        "mass_IR": false,
+        "measurement": "Mb-1",
+        "measurement_exec": "Mb-1",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "name": "v2",
+            "op": "sym"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "name": "v2",
+            "op": "sym"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.S.real.v",
+        "regions": [
+          "IR",
+          "alpha"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "soft",
+        "id": "S.real.tv",
+        "integral": {
+          "authority": "C376.master_ast",
+          "measure": "C381.distribution_ast/action",
+          "node": {
+            "analytic": [
+              [
+                "nu2",
+                4,
+                "beta"
+              ]
+            ],
+            "den": [
+              [
+                "Dtv-",
+                1,
+                "beta"
+              ],
+              [
+                "Dtv+",
+                1,
+                "beta"
+              ]
+            ],
+            "family": "soft_cut",
+            "measurement": "Mb_minus_one",
+            "multiplicity": 1,
+            "term": "S.real.tv"
+          },
+          "op": "integrate_cut"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "analytic": [
+              [
+                "nu2",
+                4,
+                "beta"
+              ]
+            ],
+            "den": [
+              [
+                "Dtv-",
+                1,
+                "beta"
+              ],
+              [
+                "Dtv+",
+                1,
+                "beta"
+              ]
+            ],
+            "family": "soft_cut",
+            "measurement": "Mb_minus_one",
+            "multiplicity": 1,
+            "term": "S.real.tv"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.softcut.tv",
+        "mass_IR": false,
+        "measurement": "Mb-1",
+        "measurement_exec": "Mb-1",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "name": "tv2",
+            "op": "sym"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "name": "tv2",
+            "op": "sym"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.S.real.tv",
+        "regions": [
+          "IR",
+          "beta"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      },
+      {
+        "MSbar_counterterm": null,
+        "common_prefactor": "g^2*CF*mu^(2epsilon)",
+        "counterterm": null,
+        "counterterm_exec": null,
+        "crossing": null,
+        "cut_corrected": null,
+        "dispatch_total": true,
+        "endpoint_owner": false,
+        "environment_ref": "C385.common_environment",
+        "group": "soft",
+        "id": "S.real.interference",
+        "integral": {
+          "authority": "C376.master_ast",
+          "measure": "C381.distribution_ast/action",
+          "node": {
+            "analytic": [
+              [
+                "nu1",
+                2,
+                "alpha"
+              ],
+              [
+                "nu2",
+                2,
+                "beta"
+              ]
+            ],
+            "den": [
+              [
+                "Dv",
+                1,
+                "alpha"
+              ],
+              [
+                "Dtv",
+                1,
+                "beta"
+              ]
+            ],
+            "family": "soft_cut",
+            "measurement": "Mb_minus_one",
+            "multiplicity": 1,
+            "term": "S.real.interference"
+          },
+          "op": "integrate_cut"
+        },
+        "integral_exec": {
+          "environment": "C385.common_environment",
+          "executable": true,
+          "integrand": {
+            "analytic": [
+              [
+                "nu1",
+                2,
+                "alpha"
+              ],
+              [
+                "nu2",
+                2,
+                "beta"
+              ]
+            ],
+            "den": [
+              [
+                "Dv",
+                1,
+                "alpha"
+              ],
+              [
+                "Dtv",
+                1,
+                "beta"
+              ]
+            ],
+            "family": "soft_cut",
+            "measurement": "Mb_minus_one",
+            "multiplicity": 1,
+            "term": "S.real.interference"
+          },
+          "op": "regulated_cut_phase_space_integral",
+          "rules": {
+            "branch": "Cutkosky discontinuity with inherited i0",
+            "endpoint": "test-function action before regulator expansion",
+            "measurement": "regular/plus/delta or exp(i bT.kT)-1",
+            "phase_space": "d^(d-1)ell/[2 ell0 (2pi)^(d-1)]",
+            "shell": "delta_plus(ell^2) theta(ell0)"
+          }
+        },
+        "integral_ref": "C381.softcut.interference",
+        "mass_IR": false,
+        "measurement": "Mb-1",
+        "measurement_exec": "Mb-1",
+        "numerator": {
+          "authority": "C376.numerator_ast",
+          "node": {
+            "args": [
+              {
+                "op": "num",
+                "value": -1
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "v_dot_tv",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "op": "evaluate_ast"
+        },
+        "numerator_exec": {
+          "ast": {
+            "args": [
+              {
+                "op": "num",
+                "value": -1
+              },
+              {
+                "op": "num",
+                "value": 2
+              },
+              {
+                "name": "v_dot_tv",
+                "op": "sym"
+              }
+            ],
+            "op": "mul"
+          },
+          "environment": "C385.common_environment",
+          "executable": true,
+          "op": "scalar_evaluate"
+        },
+        "numerator_ref": "C376.S.real.interference",
+        "regions": [
+          "IR",
+          "alpha",
+          "beta",
+          "mixed"
+        ],
+        "relative_multiplier": 1,
+        "resolved": true
+      }
+    ]
+  },
+  "status": "C389_ALL_REAL_NODES_CUT_DISPATCHED_EXECUTABLE_MEASUREMENTS_BOUND_LAURENT_EVALUATION_READY",
+  "validation": "BOUND"
+}

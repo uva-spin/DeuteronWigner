@@ -1,0 +1,102 @@
+{
+  "schema": "C216-ROUTE-CERTIFICATE-MANIFEST-V1",
+  "artifact": "route_certificate_manifest",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "resolution": "K9",
+        "routes": [
+          {
+            "route": "ZQ_FACTOR_RATIO",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "COMMON_PROJECTED_GREEN_FUNCTION",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "ORDER_G2_COEFFICIENT_DIFFERENCE",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "INVERSE_ROUNDTRIP",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          }
+        ],
+        "independent_prerequisites": true
+      },
+      {
+        "resolution": "K11",
+        "routes": [
+          {
+            "route": "ZQ_FACTOR_RATIO",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "COMMON_PROJECTED_GREEN_FUNCTION",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "ORDER_G2_COEFFICIENT_DIFFERENCE",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "INVERSE_ROUNDTRIP",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          }
+        ],
+        "independent_prerequisites": true
+      },
+      {
+        "resolution": "K13",
+        "routes": [
+          {
+            "route": "ZQ_FACTOR_RATIO",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "COMMON_PROJECTED_GREEN_FUNCTION",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "ORDER_G2_COEFFICIENT_DIFFERENCE",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          },
+          {
+            "route": "INVERSE_ROUNDTRIP",
+            "status": "BLOCKED_ON_SAME_SELF_ENERGY_OBJECT",
+            "agreement": null
+          }
+        ],
+        "independent_prerequisites": true
+      }
+    ],
+    "count": 3,
+    "closed_routes": 0,
+    "common_blocker": "C168-REQUEST-1-SELF-ENERGY",
+    "root": "d6329eafe64a3f0ccd38956f35973b3f7a3039f1b5d212b0534a3649ebf81dbc"
+  }
+}

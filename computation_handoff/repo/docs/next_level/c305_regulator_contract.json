@@ -1,0 +1,17 @@
+{
+  "authority_record": {
+    "D_epsilon": "points in (0,1)^2 with min(|sin pi u|,|sin pi v|,|sin pi(v-u)|)>=epsilon",
+    "center_subtraction": "Vbar_N(u,v)=V_N(u,v)-V_N(1/2,1/2)",
+    "measure": "corrected C304 J/6",
+    "mode_cutoff": "m,n,k half-integer <=N-1/2 in every C303 sum",
+    "root": "2f9667b79442786245610388ff9f997918534d654b04f90059bd8e748fe752cc",
+    "source_authority": "C293 lines 655-657 sets V(1/2,1/2)=0",
+    "symmetry": "all three positive-root walls treated identically"
+  },
+  "package_root": "bd276d6c64b573f7ccf791e22e5251cd16f9f871b27cada4caf07de32b4bc173",
+  "physical": false,
+  "plan": "RIMASSV0FINITEPART1-B",
+  "schema": "C305-REGULATOR-CONTRACT-V1",
+  "status": "C305_SOURCE_COMPATIBLE_CENTER_SUBTRACTED_SYMMETRIC_WALL_FINITE_PART_SCHEME_READY_NUMERICAL_LIMIT_EVALUATION_MISSING",
+  "validation": "BOUND"
+}

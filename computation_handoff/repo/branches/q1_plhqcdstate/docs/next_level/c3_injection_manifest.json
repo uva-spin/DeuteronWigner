@@ -1,0 +1,151 @@
+{
+  "count": 24,
+  "injections": [
+    {
+      "case": "wrong_coordinate_bTMD_for_DeltaT",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.01",
+      "status": "pass"
+    },
+    {
+      "case": "nonzero_xi_or_DeltaPlus",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.02",
+      "status": "pass"
+    },
+    {
+      "case": "fraction_support",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.03",
+      "status": "pass"
+    },
+    {
+      "case": "intrinsic_closure",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.04",
+      "status": "pass"
+    },
+    {
+      "case": "invalid_or_duplicate_active",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.05",
+      "status": "pass"
+    },
+    {
+      "case": "active_recoil_sign",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.06",
+      "status": "pass"
+    },
+    {
+      "case": "spectator_recoil_sign",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.07",
+      "status": "pass"
+    },
+    {
+      "case": "missing_half",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.08",
+      "status": "pass"
+    },
+    {
+      "case": "nonunit_jacobian",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.09",
+      "status": "pass"
+    },
+    {
+      "case": "incompatible_fibers",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.10",
+      "status": "pass"
+    },
+    {
+      "case": "normalization_or_regulator_mismatch",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.11",
+      "status": "pass"
+    },
+    {
+      "case": "offdiagonal_sector",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.12",
+      "status": "pass"
+    },
+    {
+      "case": "nonzero_wilson_order",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.13",
+      "status": "pass"
+    },
+    {
+      "case": "incomplete_operator",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.14",
+      "status": "pass"
+    },
+    {
+      "case": "rank_mass_phase_bridge",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.15",
+      "status": "pass"
+    },
+    {
+      "case": "spectator_quantum_mismatch",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.16",
+      "status": "pass"
+    },
+    {
+      "case": "nonsinglet_color",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.17",
+      "status": "pass"
+    },
+    {
+      "case": "proton_neutron_flavor_equality",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.18",
+      "status": "pass"
+    },
+    {
+      "case": "duplicate_active_slot",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.19",
+      "status": "pass"
+    },
+    {
+      "case": "pilot_into_production_registry",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.20",
+      "status": "pass"
+    },
+    {
+      "case": "pilot_reachable_from_accepted",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.21",
+      "status": "pass"
+    },
+    {
+      "case": "gaussian_width_promotion",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.22",
+      "status": "pass"
+    },
+    {
+      "case": "hermiticity_repair_forbidden",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.23",
+      "status": "pass"
+    },
+    {
+      "case": "production_builder_pilot_consumption",
+      "expected": "structured ArchitectureError",
+      "id": "C3.INJECT.24",
+      "status": "pass"
+    }
+  ],
+  "requirement_id": "C3.INJECT",
+  "schema_version": "1.0.0"
+}

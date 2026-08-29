@@ -1,0 +1,429 @@
+{
+  "package_root": "e4f6fc20f7c137251168cacf13feb1902498a1b684e55c6b5a047d82bbfc02f1",
+  "physical": false,
+  "plan": "RIMASSC43TRANSUB1-A",
+  "record": {
+    "all_overlap": true,
+    "fixed_bHO_overlap": {
+      "0.35:boson": [
+        4616.6751870207645,
+        4712.041128189865
+      ],
+      "0.35:constraint": [
+        -9424.08225637973,
+        -9233.350374041529
+      ],
+      "0.35:fermion": [
+        -13306.749949672807,
+        -12979.817165474133
+      ],
+      "0.45:boson": [
+        1593.9760539716015,
+        1614.9509391626927
+      ],
+      "0.45:constraint": [
+        -3229.9018783253855,
+        -3187.952107943203
+      ],
+      "0.45:fermion": [
+        -4567.829611053327,
+        -4496.036642819198
+      ],
+      "0.4:boson": [
+        2626.23419525099,
+        2668.869242733366
+      ],
+      "0.4:constraint": [
+        -5337.738485466732,
+        -5252.46839050198
+      ],
+      "0.4:fermion": [
+        -7542.8563038964,
+        -7396.831035040535
+      ]
+    },
+    "root": "d371f146fdaa83dbe567a81b9366433a21ec4b4de8c83382c0605326dbf9b691",
+    "rows": [
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.35,
+        "center": 4546.284731867917,
+        "limit_interval": [
+          4346.15562670484,
+          4746.413837030994
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 200.12910516307656,
+        "root": "9f0bfa59ecf05bbaa1a5c5586a30f4f7f8698bf551b7781a4980d3c68f4728eb"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.35,
+        "center": 4622.359479889004,
+        "limit_interval": [
+          4525.427352214564,
+          4719.291607563445
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 96.93212767443995,
+        "root": "b15c366d22b5365d337717d3004d2afff2b3f10493d99b479338e3306f3c657c"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.35,
+        "center": 4664.358157605315,
+        "limit_interval": [
+          4616.6751870207645,
+          4712.041128189865
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 47.68297058455008,
+        "root": "febea720684aa8c6662da721f16a947936c4163b432f5bcd8f9e81fc365141ec"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.35,
+        "center": -12755.132634844704,
+        "limit_interval": [
+          -13448.964204821983,
+          -12061.301064867424
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 693.8315699772786,
+        "root": "adb4f552d775d6f27ade041a57d6d5270cd7b5c95af408dd0bbdbad137564e37"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.35,
+        "center": -13003.453088436654,
+        "limit_interval": [
+          -13337.046797987861,
+          -12669.859378885447
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 333.5937095512079,
+        "root": "c816060d210d630ec0c9b51b5b1ac2f3d2eb69a829a8c46a2cdf5099f46b1233"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.35,
+        "center": -13143.28355757347,
+        "limit_interval": [
+          -13306.749949672807,
+          -12979.817165474133
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 163.4663920993379,
+        "root": "a4c699493e4e873437b56a067af0748b344f465b9aca475ba703be5f3cca82a0"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.35,
+        "center": -9092.569463735834,
+        "limit_interval": [
+          -9492.827674061988,
+          -8692.31125340968
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 400.2582103261531,
+        "root": "d000f38cf503a9d733fb8b39d4ba8997fde8c99176d809d7482d5e8f563c43c5"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.35,
+        "center": -9244.718959778009,
+        "limit_interval": [
+          -9438.58321512689,
+          -9050.854704429128
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 193.8642553488799,
+        "root": "c1fdf6f1d4daec47bb68754ee7da68c713529700cdc7bdd27ef8a9b5c4d76b06"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.35,
+        "center": -9328.71631521063,
+        "limit_interval": [
+          -9424.08225637973,
+          -9233.350374041529
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 95.36594116910015,
+        "root": "fdca9e79b76499988529539a634caf8843c584b67aa443304b9c8e8283971eae"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.4,
+        "center": 2592.5118400251467,
+        "limit_interval": [
+          2504.012797979024,
+          2681.0108820712694
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 88.4990420461225,
+        "root": "1794d9c0ed2cd59c6af9a0d25c38b295e9dd995bb6479aa1b4584971f8ae09e3"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.4,
+        "center": 2628.23069849529,
+        "limit_interval": [
+          2585.0574975618274,
+          2671.403899428753
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 43.17320093346294,
+        "root": "9e41e17916ef3186875762aa71ca287c319346d83532945c6b45f69d0182c7a3"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.4,
+        "center": 2647.551718992178,
+        "limit_interval": [
+          2626.23419525099,
+          2668.869242733366
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 21.317523741187948,
+        "root": "1a28e174317235b4cfc8174f475b170a263773962d4841ab8c3b496c4449f718"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.4,
+        "center": -7287.557889096306,
+        "limit_interval": [
+          -7593.341005145967,
+          -6981.774773046645
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 305.7831160496604,
+        "root": "9b7a1600ada11e978ac316bc1e1dff793e964a0984cb336c0241f5d978acf158"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.4,
+        "center": -7405.171407380336,
+        "limit_interval": [
+          -7553.485420230087,
+          -7256.857394530585
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 148.31401284975084,
+        "root": "85dbf8571941fca88aebb7a57a72ecb0801d0d85354f89bdb9eafd5d73a191a9"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.4,
+        "center": -7469.843669468468,
+        "limit_interval": [
+          -7542.8563038964,
+          -7396.831035040535
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 73.01263442793285,
+        "root": "680ad2e938fe98f83041271599206ddc5896688c47ea1d56b0c286b31056d216"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.4,
+        "center": -5185.0236800502935,
+        "limit_interval": [
+          -5362.021764142539,
+          -5008.025595958048
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 176.998084092245,
+        "root": "a40cd370107f830b2fb86c8f81510e7dc68d6c4a270ca48414142145a1dc5d18"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.4,
+        "center": -5256.46139699058,
+        "limit_interval": [
+          -5342.807798857506,
+          -5170.114995123655
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 86.34640186692587,
+        "root": "9eb51e73e6f7cad707e79dec13f33b4822cf1c358f70b738ea27067d3ae1d32c"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.4,
+        "center": -5295.103437984356,
+        "limit_interval": [
+          -5337.738485466732,
+          -5252.46839050198
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 42.635047482375896,
+        "root": "53d675035897da7917f17272950df832633d3a1286af291c7efca90ff2bd7305"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.45,
+        "center": 1576.5704381653109,
+        "limit_interval": [
+          1533.3622099877969,
+          1619.7786663428249
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 43.208228177514,
+        "root": "189813575a0c416b75f33772545c79b775944df81c467d76e8cd4163ea04b92d"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.45,
+        "center": 1594.7663329202276,
+        "limit_interval": [
+          1573.5817060617485,
+          1615.9509597787066
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 21.184626858479007,
+        "root": "21fda47238bfdf12b0a9bbf0778e798b843670334dd2afa511a8e3d262943343"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.45,
+        "center": 1604.463496567147,
+        "limit_interval": [
+          1593.9760539716015,
+          1614.9509391626927
+        ],
+        "outward": true,
+        "owner": "boson",
+        "remainder_radius": 10.487442595545712,
+        "root": "33b5b1c99b47d0a7c94f9416edaaf55ce21690abee28b8b9fb4e4735e5b501bb"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.45,
+        "center": -4439.04189375506,
+        "limit_interval": [
+          -4587.9799991801065,
+          -4290.103788330014
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 148.9381054250465,
+        "root": "a36a4457f4e99c1ccbcd4d19ebe2df4be41ae5d048a96969a43c8a75b8529bf2"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.45,
+        "center": -4499.349137285713,
+        "limit_interval": [
+          -4572.0341280233415,
+          -4426.664146548085
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 72.68499073762777,
+        "root": "275270ae28546a7017a5d82af45b391fe23d0dd974fcb3a37c9d9c6436fb99a8"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.45,
+        "center": -4531.933126936263,
+        "limit_interval": [
+          -4567.829611053327,
+          -4496.036642819198
+        ],
+        "outward": true,
+        "owner": "fermion",
+        "remainder_radius": 35.896484117064915,
+        "root": "e514d9ddd6213c3644e6ea8a5866277cac6acfcf04b1205f6af107f6e8e45d1c"
+      },
+      {
+        "K2": 9,
+        "Nmax": 5000,
+        "bHO_GeV": 0.45,
+        "center": -3153.1408763306217,
+        "limit_interval": [
+          -3239.5573326856497,
+          -3066.7244199755937
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 86.416456355028,
+        "root": "b1a6317e49c916a37adb27b6c82f7860598db4133bb6d5e1ab91d206bcd440a2"
+      },
+      {
+        "K2": 9,
+        "Nmax": 10000,
+        "bHO_GeV": 0.45,
+        "center": -3189.532665840455,
+        "limit_interval": [
+          -3231.9019195574133,
+          -3147.163412123497
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 42.36925371695801,
+        "root": "8bfbfa27a3c62ac9f3548d601c335694f02f293a3e8f6e63330df442a36b2979"
+      },
+      {
+        "K2": 9,
+        "Nmax": 20000,
+        "bHO_GeV": 0.45,
+        "center": -3208.926993134294,
+        "limit_interval": [
+          -3229.9018783253855,
+          -3187.952107943203
+        ],
+        "outward": true,
+        "owner": "constraint",
+        "remainder_radius": 20.974885191091424,
+        "root": "792ab01d050b2955847583dd376661171a7b3fff097424e53057483f5c641eb7"
+      }
+    ]
+  },
+  "status": "C333_TRANSVERSE_LINEAR_LOG_DIVERGENCES_SUBTRACTED_FIXED_BHO_LIMITS_ENCLOSED_BHO_REMOVAL_MISSING",
+  "validation": "PASS"
+}

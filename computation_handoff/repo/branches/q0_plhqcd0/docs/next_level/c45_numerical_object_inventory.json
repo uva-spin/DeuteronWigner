@@ -1,0 +1,297 @@
+{
+  "forbidden_absent": [
+    "physical q/qg Hamiltonian",
+    "canonical interaction matrix",
+    "JMY Wilson matrix",
+    "bilocal TMD measurement",
+    "counterterm solution",
+    "one-loop coefficient"
+  ],
+  "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c45_modes_artifacts.py",
+  "objects": {
+    "gluon_polarizations": {
+      "array_sha256": "d55b9159463fdf45d2147ca330065d541709d911af5a4fcd235ab81e463b67da",
+      "basis_order_hash": "cd2d6aaecd8fc65169c83e9b1e987f3471404a29ab945567d1fd2ddbf7eaab61",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/gluon_polarizations.npy",
+      "shape": [
+        2,
+        4
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_coordinate_K11_2_N10_b0.45": {
+      "array_sha256": "a1c2781bc529ad57005a3a30cdad313619173fdd9d873df9c26f672bd1299944",
+      "basis_order_hash": "4cb993c76544b8ba7d717cf7ffeb7593667804d249bdcc5e9b73c5fa877a5c53",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_coordinate_K11_2_N10_b0.45.npy",
+      "shape": [
+        55,
+        17,
+        17
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_coordinate_K13_2_N12_b0.50": {
+      "array_sha256": "0d8f341c97e3fe7d99005876474382f766bf4ad66c23f2f266db44c3c332ef6c",
+      "basis_order_hash": "db5ba70b51e859cbeb266a946157f0d7f91113dd25d043b0c718dd579730307f",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_coordinate_K13_2_N12_b0.50.npy",
+      "shape": [
+        78,
+        17,
+        17
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_coordinate_K9_2_N8_b0.40": {
+      "array_sha256": "41e115df96544be12811a5ac5b30efd65acca07081f399613233324141f2c169",
+      "basis_order_hash": "073bb6f1c346e61c1a834989743a4a159b89a2b1a923fd54e1f8aae45f9e0a42",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_coordinate_K9_2_N8_b0.40.npy",
+      "shape": [
+        36,
+        17,
+        17
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_momentum_K11_2_N10_b0.45": {
+      "array_sha256": "aef2710b28bf5211a997e51209abc7be769f81b82737cfc05263f9c4070d5dc6",
+      "basis_order_hash": "43900711bcab046b0afe7cbec4c00cdc26b101050245ee36247f8a5036975eba",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_momentum_K11_2_N10_b0.45.npy",
+      "shape": [
+        55,
+        17,
+        17
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_momentum_K13_2_N12_b0.50": {
+      "array_sha256": "9932dce02cc01715084a562b0d7ac84bad59f1bf6eeb9d70e1c246e3e09b75f2",
+      "basis_order_hash": "3d9c7cdea507a5ccb9a4b61f50f761d75c11abac2c9fd86f4b59bfcfb911c555",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_momentum_K13_2_N12_b0.50.npy",
+      "shape": [
+        78,
+        17,
+        17
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_momentum_K9_2_N8_b0.40": {
+      "array_sha256": "ca11596ccff5135109dfceea875be9ee3b716d636541c62bc8f4ff1e51c5a008",
+      "basis_order_hash": "8cd6b3a4def2ebf42ed66f2071c08afdcc4e9dffc683aceeab8e2380b46f5009",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_momentum_K9_2_N8_b0.40.npy",
+      "shape": [
+        36,
+        17,
+        17
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_overlap_K11_2_N10_b0.45_from_K9_2_N8_b0.40": {
+      "array_sha256": "6a5e29ecf9ff9ae36b68742ee308d642ed6d23cf783c894bb9925fa3be4e142e",
+      "basis_order_hash": "0199769d5651b43546e2e4c54812054b32ae060b89503fe4b4e7809e9bf6c866",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_overlap_K11_2_N10_b0.45_from_K9_2_N8_b0.40.npy",
+      "shape": [
+        55,
+        36
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "ho_overlap_K13_2_N12_b0.50_from_K11_2_N10_b0.45": {
+      "array_sha256": "463083dd874a503de8c6fa006ed535842d60602a5185b18d719418ea637067da",
+      "basis_order_hash": "e81d1e64824b6b5171fdd01c609b0fecf7434556c18dd4853a43b9019e9c1dba",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/ho_overlap_K13_2_N12_b0.50_from_K11_2_N10_b0.45.npy",
+      "shape": [
+        78,
+        55
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_gluon_K11_2_N10_b0.45": {
+      "array_sha256": "d6524676d3a5dada18c86879bbd1b7d0605fc8f3a0ad715acfbf2c64c6bdfbc8",
+      "basis_order_hash": "158257f9b1ea9065a223ce72415b9a55d66eb78b15d242973fdbfbbdb7f8652a",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_gluon_K11_2_N10_b0.45.npy",
+      "shape": [
+        5,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_gluon_K13_2_N12_b0.50": {
+      "array_sha256": "a9a483729f6dd2b6add8608ff5a4e5c5ce14583a552c0aac71d8f7693b1f3dfc",
+      "basis_order_hash": "e1e2c2eabd92f9deda677e7b6f8e54d710d608ced8442d461edb9db13d6057ac",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_gluon_K13_2_N12_b0.50.npy",
+      "shape": [
+        6,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_gluon_K9_2_N8_b0.40": {
+      "array_sha256": "575d1919c2d6502819ec26c9aa0321ba76c632d34cfc22feaf2f467142eefc35",
+      "basis_order_hash": "e02771360769554547a0ce4de26efd6cfd670fcca131365393b09d3e75d9a276",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_gluon_K9_2_N8_b0.40.npy",
+      "shape": [
+        4,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_quark_K11_2_N10_b0.45": {
+      "array_sha256": "632772354b0cafff72b343b72741bae12debd6f9908dcf9c757633d55264180d",
+      "basis_order_hash": "d128e4fc1e4c6d42a4d6f8da2cd14b6e6c7899d0f13438c8a41ad852d4e804e8",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_quark_K11_2_N10_b0.45.npy",
+      "shape": [
+        6,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_quark_K13_2_N12_b0.50": {
+      "array_sha256": "aee737e27bb26b61646853027a7f1b1d3c6b317289c93c414ea2ddaaf7855a3b",
+      "basis_order_hash": "869659d0b44d42c0051a5d5984b9fb5189e871e0024907b23292351d5084abf6",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_quark_K13_2_N12_b0.50.npy",
+      "shape": [
+        7,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_quark_K9_2_N8_b0.40": {
+      "array_sha256": "e698ca5d242a9ae0714f6c7131add333b39aed724b6462e2891e0efaf948931f",
+      "basis_order_hash": "3abc5f03d94f8fb88e0c84ccda949936482c39ded01bc9ae27b3420b14b8a3f1",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_quark_K9_2_N8_b0.40.npy",
+      "shape": [
+        5,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_quark_values_K11_2_N10_b0.45": {
+      "array_sha256": "b152040dd7bfefb5d846a63f1153f001922e21faa47e96d00cce42ce985c7c53",
+      "basis_order_hash": "493c30b3037585ecef22e5678ebc17ed161ee1c436ca8d9d33a55ccc906b43ed",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_quark_values_K11_2_N10_b0.45.npy",
+      "shape": [
+        6,
+        33
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_quark_values_K13_2_N12_b0.50": {
+      "array_sha256": "221d21ed985327bb511cc73f515011c7a83c815b7211c4273ce309061d5b7ca7",
+      "basis_order_hash": "5080b2e177feba78b2c5960f5f407483b4dba333a780ddde7d99633ff8972ab4",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_quark_values_K13_2_N12_b0.50.npy",
+      "shape": [
+        7,
+        33
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "longitudinal_quark_values_K9_2_N8_b0.40": {
+      "array_sha256": "abde744c152660cd22f24868a8b2210373f0f410afb5253734e684a08130ca38",
+      "basis_order_hash": "d2e9db3f2bcc98ee257e2f963d397eb299d7c3d5292fbcee96e305f5e01d942b",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/longitudinal_quark_values_K9_2_N8_b0.40.npy",
+      "shape": [
+        5,
+        33
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "qg_triplet_projector": {
+      "array_sha256": "20f1ae34982f961b0bdc4e4d95f68ed96532c99fbb90766298cee651c6f2085f",
+      "basis_order_hash": "043aa41b7412b5208cde5324a9ca8f4ab84a9286db465f63bebcba9e10308725",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/qg_triplet_projector.npy",
+      "shape": [
+        24,
+        24
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "spinor_polarization_kernel": {
+      "array_sha256": "f29d3bf45cfdb9bfcc10c5380885efee65ccd9ba31d0059935bf43458b3e57bd",
+      "basis_order_hash": "60dfddb4602b903182a42a309634b982e753ae25cb16cda76dc38181f5048387",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/spinor_polarization_kernel.npy",
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "u_spinors": {
+      "array_sha256": "828d38960e0f7819d0b861856e7721a9814e42a885398f00c7d5d34c83bada70",
+      "basis_order_hash": "8241892214358d82ebeb074ac904e8f5fbb59d1994517e23c00333ae68662f38",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/u_spinors.npy",
+      "shape": [
+        8,
+        4
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "zero_mode_P0": {
+      "array_sha256": "b2d18ad746e8aed5a40a47fcaad8663ed3c39ba76227b24bf87e0f2dc4b4f21b",
+      "basis_order_hash": "dc8e4abe4436a3e0ea878638694e633c0aed37629323f8805b5d18463dd740b7",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/zero_mode_P0.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    },
+    "zero_mode_Q0": {
+      "array_sha256": "bc0b7f52f230e4ed70ea756b460784d7e3fb9f33ba07c11ff2900857b477b3cb",
+      "basis_order_hash": "7538cd28f742a01cc38fa14d63b7d6f5134e5cd44453fadde4b0487aba3f81c5",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "runtime_path": "data/runtime/c45_modes/zero_mode_Q0.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "dimensionless unless mode argument explicitly carries GeV"
+    }
+  },
+  "status": "DETERMINISTIC_RUNTIME_LIBRARY"
+}

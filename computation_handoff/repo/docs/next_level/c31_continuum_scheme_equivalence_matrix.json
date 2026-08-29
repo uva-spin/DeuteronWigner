@@ -1,0 +1,34 @@
+{
+  "does_not_match_c11_regulator": true,
+  "records": [
+    {
+      "decision": "OPERATOR_SCHEME_IDENTICAL_AFTER_CONVENTION_ALIGNMENT",
+      "individual_tmd": true,
+      "pair": "COLLINS_2011__EIS_MODIFIED_DELTA",
+      "proof": "ALL_ORDER_DEFINITION_RELATION",
+      "source": "ARXIV:1210.2100"
+    },
+    {
+      "decision": "FORMAL_OPERATOR_SCHEME_IDENTICAL_AFTER_CONVENTION_ALIGNMENT",
+      "individual_tmd": true,
+      "pair": "PROJECT_SQRT_SOFT__ART25_EIS",
+      "proof": "FORMAL_DEFINITIONS_ONLY_PROJECT_INPUT_UNREALIZED",
+      "source": "ARXIV:1210.2100+1511.05590"
+    },
+    {
+      "decision": "CROSS_SECTION_LEVEL_WITH_HARD_COMPANION",
+      "individual_tmd": false,
+      "pair": "CSS1__CSS2",
+      "proof": "PERTURBATIVE_FORMALISM_MAP",
+      "source": "ARXIV:1705.07167"
+    },
+    {
+      "decision": "FINITE_REPARTITION_REQUIRES_HARD_COMPANION",
+      "individual_tmd": false,
+      "pair": "RRG_SCET__EIS",
+      "proof": "CONTINUUM_ONLY",
+      "source": "ARXIV:1202.0814+1602.01829"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

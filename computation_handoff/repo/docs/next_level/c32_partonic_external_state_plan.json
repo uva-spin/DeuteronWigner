@@ -1,0 +1,35 @@
+{
+  "microscopic_execution": false,
+  "record": {
+    "content_hash": "b9f56dc7b58e0d9580ec4eda51033b31b3820898633d7103563b6da5d16b7051",
+    "flavors": [
+      "u",
+      "d",
+      "ubar",
+      "dbar"
+    ],
+    "frozen_before_calculation": true,
+    "gauge": "covariant gauge",
+    "gauge_parameters": [
+      0.0,
+      1.0,
+      2.0
+    ],
+    "helicity": 1,
+    "ir_regulator": "spacelike off-shell p^2",
+    "ir_values_GeV2": [
+      -0.04,
+      -0.09
+    ],
+    "momenta_GeV": [
+      5.0,
+      10.0
+    ],
+    "mu_GeV": 5.0,
+    "plan_id": "C32.PARTONIC.OFFSHELL.COVARIANT",
+    "rapidity_regulator": "modified-delta eikonal regulator",
+    "zeta_GeV2": 25.0
+  },
+  "same_ir_both_sides_required": true,
+  "schema_version": "1.0.0"
+}

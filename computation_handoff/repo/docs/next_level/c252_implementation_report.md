@@ -1,0 +1,7 @@
+# C252/HQCDRIQUARKFIXEDKV2CURRENTPROJEVAL1 implementation report
+
+Status: C252_FOUR_COMPLEMENT_PROJECTOR_FINITE_CORE_EVALUATORS_READY_UNBOUNDED_TAIL_GROWTH_MAJORANTS_INCOMPLETE
+Plan: RIQUARKFIXEDKV2CURRENTPROJEVAL1-C
+C252 root: 94e170056ebbaa43ea8b0ddffce68c32f06eecfb65a63dfaab777d65cee3223d
+
+Four finite-core evaluators are ready; no unbounded tail is zeroed or bounded without authenticated growth majorants.

@@ -1,0 +1,56 @@
+{
+  "package_root": "5bb50e2d1dad420859a2096cfa1a8e9a336c6f822747a5e8f918f0ecfe1494f3",
+  "physical": false,
+  "plan": "RIMASSC43CONVERTCOEFF1-C",
+  "record": {
+    "available_count": 4,
+    "conversion_ready_count": 0,
+    "root": "cc394a11f90f8b79e03254342ea1c671a8019bb7ab63a3be1630698322a6b2c1",
+    "rows": [
+      {
+        "available": true,
+        "common_conversion_ready": false,
+        "object": "JMY_operator",
+        "source": "hep-ph/0404183v1 Sec. II; C36/C37"
+      },
+      {
+        "available": true,
+        "common_conversion_ready": false,
+        "object": "JMY_rapidity_evolution",
+        "source": "C36 rapidity evolution report"
+      },
+      {
+        "available": true,
+        "common_conversion_ready": false,
+        "object": "delta_project_anomalous_dimensions",
+        "source": "evolution/m2 frozen records; 2002.04617v2 and 2205.02242v2"
+      },
+      {
+        "available": true,
+        "common_conversion_ready": false,
+        "object": "project_scheme_API",
+        "source": "tmd_scheme.py; 1706.01473 and 1907.03780 labels"
+      },
+      {
+        "available": false,
+        "common_conversion_ready": false,
+        "object": "finite_JMY_to_delta_coefficient",
+        "source": null
+      },
+      {
+        "available": false,
+        "common_conversion_ready": false,
+        "object": "common_bare_operator_normalization",
+        "source": null
+      },
+      {
+        "available": false,
+        "common_conversion_ready": false,
+        "object": "common_order_threshold_path",
+        "source": null
+      }
+    ]
+  },
+  "status": "C348_JMY_AND_DELTA_EVOLUTION_AUTHORITIES_RECOVERED_COMMON_FINITE_CONVERSION_SOURCE_MISSING",
+  "validation": "BOUND"
+}

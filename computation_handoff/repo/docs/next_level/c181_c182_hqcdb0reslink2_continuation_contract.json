@@ -1,0 +1,29 @@
+{
+  "continuation": "C182/HQCDB0RESLINK2",
+  "first_remaining_object": "C181-ORDER-SENSITIVE-SOURCE-SCOPE-EXECUTABLE-LINK-EVALUATION",
+  "nonclaims": [
+    "no physical endpoint",
+    "no boundary-field coefficient",
+    "no coupling",
+    "no complete Wilson coefficient",
+    "no ghost-link kernel",
+    "no self-energy",
+    "no TMD",
+    "no BRST/ST",
+    "no counterterm/null",
+    "no quantum object"
+  ],
+  "parent": "C181/HQCDB0HOBOUNDARY3",
+  "parent_commit": "3f0cbd90b778f75050ec2b0fa68c62d9a105bc4a6370ece635aa446e06d03232",
+  "parent_plan": "HOBOUNDARY3-B",
+  "parent_status": "C181_C180_LINEARIZED_AND_SYMMETRIC_BOUNDARY_OWNERSHIP_READY_NONABELIAN_SOURCE_SCOPE_EXPLICIT",
+  "push": false,
+  "reason": "first-omitted-shell leakage, divergence, linearized endpoint reconstruction, and symmetric ownership close; order-sensitive source-scope remainder is explicit and handed to executable-link evaluation",
+  "required_scope": [
+    "executable endpoint evaluations",
+    "ordered adjoint Wilson degrees 0-2",
+    "ghost-link interface",
+    "retain source-scope remainder separately"
+  ],
+  "schema": "C181-C182-HQCDB0RESLINK2-CONTINUATION-V1"
+}

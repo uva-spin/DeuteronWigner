@@ -1,0 +1,23 @@
+{
+  "calibration_candidate_diagnostics": {
+    "NOT_EXECUTED_MICROSCOPIC_SCHEME_UNRESOLVED": 18
+  },
+  "cross_root_numeric_comparisons": 0,
+  "external_oracle": {
+    "diagnostic_id": "C29.DIAGNOSTIC.RANK_AWARE",
+    "kind": "EXTERNAL_TECHNICAL_RECORD_ORACLE",
+    "not_cross_root_compatibility": true,
+    "null_space_norm": 3.9803527772728514e-16,
+    "probability_interpretation": false,
+    "rank": 10,
+    "status": "DIAGNOSTIC_ONLY",
+    "svd_threshold": 1e-12,
+    "whitened_norm": 0.9650739596072976
+  },
+  "holdout_candidate_diagnostics": {
+    "NOT_EXECUTED_MICROSCOPIC_SCHEME_UNRESOLVED": 8
+  },
+  "interpretation": "DIAGNOSTIC_ONLY_NOT_LIKELIHOOD",
+  "parameters_changed": 0,
+  "schema_version": "1.0.0"
+}

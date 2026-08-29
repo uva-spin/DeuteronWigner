@@ -1,0 +1,40 @@
+{
+  "package_root": "efcf8b15c6c69aaae7b3977f3b5f1a486b371254d9a61681a391bbdb8097185a",
+  "physical": false,
+  "plan": "PHYSICALOBSINPUTPHASE1-B",
+  "record": {
+    "normalized_ensemble_membership": false,
+    "reason": "experimental dataset owns observable covariance, not C43 regulator weights",
+    "root": "3bbf4efe029bdcb04837f18762acf1f5e691ebae2e1a941d39576ea99dc97b4f",
+    "rows": [
+      {
+        "averaged": false,
+        "dataset_root": "5c0065668b03b8606d375dfa557374da1c36ba1fdec7c6f917168ae9cc4e9d24",
+        "ensemble_weight": null,
+        "finite_volume_acceptance": "C394 conditional schema; numerical tolerance unavailable",
+        "physical_dataset_does_not_select_regulator_weight": true,
+        "prediction_role": "separate theory prediction",
+        "resolution": "K9"
+      },
+      {
+        "averaged": false,
+        "dataset_root": "5c0065668b03b8606d375dfa557374da1c36ba1fdec7c6f917168ae9cc4e9d24",
+        "ensemble_weight": null,
+        "finite_volume_acceptance": "C394 conditional schema; numerical tolerance unavailable",
+        "physical_dataset_does_not_select_regulator_weight": true,
+        "prediction_role": "separate theory prediction",
+        "resolution": "K11"
+      },
+      {
+        "averaged": false,
+        "dataset_root": "5c0065668b03b8606d375dfa557374da1c36ba1fdec7c6f917168ae9cc4e9d24",
+        "ensemble_weight": null,
+        "finite_volume_acceptance": "C394 conditional schema; numerical tolerance unavailable",
+        "physical_dataset_does_not_select_regulator_weight": true,
+        "prediction_role": "separate theory prediction",
+        "resolution": "K13"
+      }
+    ]
+  },
+  "status": "C395_AUTHENTICATED_HERMES_SIDIS_KINEMATICS_AND_CORRELATED_COVARIANCE_READY_RESOLUTION_SEPARATE_HAMILTONIAN_ACCEPTANCE_NEXT"
+}

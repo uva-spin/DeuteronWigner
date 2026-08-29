@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "scope": "Canonical parent enrichment before external-constraint item 6",
+  "governing_rule": "Every mechanism acts on a complete quark, antiquark, or gluon parent before projection; function-specific completion is forbidden.",
+  "criteria": [
+    {
+      "id": "all_tmd_multikinematic",
+      "status": "complete",
+      "completion": "Every declared quark and gluon TMD is exported on the common five-point x_N and Q=5 GeV pre-evolution boundary, with sector-appropriate kT grids, flavor/link/color/mechanism provenance, correlated enrichment members, parent closure, finite-value, and continuity validation.",
+      "implemented": ["direct five-point x_N recomputation for all 18 quark and all 18 gluon TMDs", "u,d,ubar,dbar and independent f/d gluon color sectors", "complete-parent positivity and exact staple-reversal audits", "explicit Q=5 pre-evolution contract; rank-aware multi-Q evolution is item 6"],
+      "missing": []
+    },
+    {
+      "id": "channel_wilson",
+      "status": "complete",
+      "completion": "Production quark and gluon Wilson operators expose non-overlapping spectator and orbital-interference channels, correlated members, exact link reversal, and spectrum preservation.",
+      "implemented": ["unitary quark and gluon production phases", "quark S-P, S-D, P-P and gluon S-D rank-1/D-D rank-2 decompositions", "soft/central/strong correlated members at all five x nodes", "complete-basis projected replacement members with link-reversal and finite-value tests"],
+      "missing": []
+    },
+    {
+      "id": "shared_fock_oam",
+      "status": "complete",
+      "completion": "Scalar, axial, and quark-gluon Lz=0,+-1,+-2 amplitudes generate coupled nucleon TMD families through one normalized bilinear ledger and enter canonical uncertainty propagation.",
+      "implemented": ["normalized shared Fock/OAM ledger", "rank-0/rank-1/rank-2 even/odd bilinears", "flavor-resolved quark/antiquark and positive gluon parent members at all five x nodes", "correlated amplitude calibration to retained canonical-parent ratios with residual below 8e-2"],
+      "missing": []
+    },
+    {
+      "id": "nonnucleonic_transverse",
+      "status": "complete",
+      "completion": "NNpi, DeltaDelta, hidden-color six-quark, and SRC sectors have normalized complete transverse correlator interfaces, Fock/momentum ledgers, and conservative central/sensitivity policies.",
+      "implemented": ["complete quark, antiquark, and gluon parents for NNpi, DeltaDelta, hidden-color six-quark, and SRC sectors", "replaceable probability/momentum ledger and sector-dependent transverse/longitudinal shapes", "zero-centered central and positive sensitivity policy preventing duplicate sourced NNpi", "all 18 projections and retained correlators at all five x nodes"],
+      "missing": []
+    },
+    {
+      "id": "operator_nuclear_maps",
+      "status": "complete",
+      "completion": "Shadowing, antishadowing, off-shell, mesonic, and SRC responses use Hermiticity/positivity-preserving complete-parent maps, with scalar scaling only as the identity limit.",
+      "implemented": ["ordered complete-positive 6x6 quark and gluon joint-spin response chains", "weak/central/strong correlated members for shadowing, antishadowing, off-shell, mesonic, and SRC mechanisms", "mechanism increments telescope to mapped parents", "positive mapped densities and 1.4e-17 maximum chain-closure residual"],
+      "missing": []
+    }
+  ],
+  "item6_status": "ready_to_start_after_scientific_inspection_pass"
+}

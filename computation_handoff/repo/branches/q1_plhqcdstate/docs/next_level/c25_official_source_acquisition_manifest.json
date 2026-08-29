@@ -1,0 +1,103 @@
+{
+  "audit_date": "2026-08-03",
+  "git_audits": [
+    {
+      "command": "git show-ref; git tag -n; git branch -a",
+      "stable_id": "C25.GIT.AUDIT.REFS",
+      "status": "PASS_ALL_REFS_MIRRORED"
+    },
+    {
+      "command": "git rev-list --all --objects",
+      "stable_id": "C25.GIT.AUDIT.OBJECTS",
+      "status": "PASS_COMPLETE_OBJECT_ENUMERATION"
+    },
+    {
+      "command": "git fsck --full --no-reflogs",
+      "stable_id": "C25.GIT.AUDIT.FSCK",
+      "status": "PASS_NO_ERRORS"
+    },
+    {
+      "command": "inspect .gitmodules and worktree",
+      "stable_id": "C25.GIT.AUDIT.SUBMODULE",
+      "status": "PASS_NONE_DECLARED"
+    },
+    {
+      "command": "inspect .gitattributes; git-lfs unavailable locally",
+      "stable_id": "C25.GIT.AUDIT.LFS",
+      "status": "NO_LFS_POINTERS_FOUND_TOOL_OPTIONAL_UNAVAILABLE"
+    },
+    {
+      "command": "compare Git tags, GitHub release lineage, Zenodo related identifiers",
+      "stable_id": "C25.GIT.AUDIT.RELEASES",
+      "status": "PASS_V301_V302_V303_SEPARATED"
+    },
+    {
+      "command": "git bundle create <bundle> --all",
+      "stable_id": "C25.GIT.AUDIT.BUNDLE",
+      "status": "PASS_IMMUTABLE_ALL_REF_BUNDLES"
+    }
+  ],
+  "paths": [
+    {
+      "bundle_sha256": "17016262cb401554265ec6b1c190ca3e12cb8032e401dec88a5206f824229153",
+      "commit": "9ca8159e00ff2df159ab2ce4d7ffb13589af0c71",
+      "stable_id": "C25.ACQ.GIT",
+      "status": "COMPLETE_MIRROR_AND_BUNDLE_PRESERVED",
+      "url": "https://github.com/VladimirovAlexey/artemide-public"
+    },
+    {
+      "engine": "3.01",
+      "stable_id": "C25.ACQ.ZENODO301",
+      "status": "METADATA_AND_ARCHIVE_AUDITED",
+      "url": "https://zenodo.org/records/15006449"
+    },
+    {
+      "stable_id": "C25.ACQ.ZENODO302",
+      "status": "METADATA_COMPARISON_ONLY",
+      "url": "https://zenodo.org/records/17153216"
+    },
+    {
+      "stable_id": "C25.ACQ.ZENODO303",
+      "status": "METADATA_COMPARISON_ONLY",
+      "url": "https://zenodo.org/records/20638667"
+    },
+    {
+      "sha256": "281de1513f1fa59dbb6a61e2f41483874ce91cfd72b7a5cfcb6a3412be5f9ae5",
+      "stable_id": "C25.ACQ.ARXIV.V1",
+      "status": "PDF_AND_SOURCE_PRESERVED",
+      "url": "https://arxiv.org/abs/2503.11201v1"
+    },
+    {
+      "sha256": "9a93fc9e3653245e178c760d30192dca5fbe6b800f8f6164ff4735e3c2ec6774",
+      "stable_id": "C25.ACQ.ARXIV.V2",
+      "status": "PDF_AND_SOURCE_PRESERVED",
+      "url": "https://arxiv.org/abs/2503.11201v2"
+    },
+    {
+      "bundle_sha256": "2d842dbbbf7f809f9fa4a86a425769032c5d9d72681a44dfff9b5e9c15a75c8e",
+      "commit": "761f3fcdd3701c5cf69e822f9ffbbd5db394fc58",
+      "stable_id": "C25.ACQ.DATAPROCESSOR",
+      "status": "COMPLETE_MIRROR_AND_BUNDLE_PRESERVED",
+      "url": "https://github.com/VladimirovAlexey/artemide-DataProcessor"
+    },
+    {
+      "origin_swhid": "swh:1:ori:03c3741adb14651a984c7796d92bb08fe7f111bb",
+      "snapshot": "708e6db94697a8dc3fa0c82b207c8d7e6a8dcd8c",
+      "stable_id": "C25.ACQ.SWH",
+      "status": "FULL_VISIT_AUDITED_COMPARISON_ONLY",
+      "url": "https://archive.softwareheritage.org/api/1/snapshot/708e6db94697a8dc3fa0c82b207c8d7e6a8dcd8c/",
+      "visit": 8,
+      "visit_date": "2026-07-14T22:05:18.601000+00:00"
+    },
+    {
+      "license": "CC-BY-4.0",
+      "pages": 59,
+      "published": "2025-11-21",
+      "sha256": "8e43237df9533ac5562bd12672b1f6a0df57e5ad764811af346a81b144f54637",
+      "stable_id": "C25.ACQ.JHEP",
+      "status": "VERSION_OF_RECORD_PDF_PRESERVED_ARXIV_V2_TEX_IS_SOURCE_FORM",
+      "url": "https://doi.org/10.1007/JHEP11(2025)134"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

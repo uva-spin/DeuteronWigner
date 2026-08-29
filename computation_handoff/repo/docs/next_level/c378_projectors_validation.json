@@ -1,0 +1,30 @@
+{
+  "package_root": "ee21c2e0f26b55ef43ccb9f4e111973c0da5178e6b941c2807cbeb894d0ca6b7",
+  "physical": false,
+  "plan": "RIMASSC43JMYKINEMATICAST1-C",
+  "record": {
+    "count": 4,
+    "root": "3fdb37c7bded06a0fb4b5c9f0ba1f24034e19740bc1c48f9b67d424fb313af1f",
+    "rows": [
+      {
+        "expr": "q_plus=x*p_plus under gamma+ endpoint projection",
+        "symbol": "proj_p_minus_ell"
+      },
+      {
+        "expr": "4[p_plus*(q_dot_v)-(p_dot_q)*v_plus+(p_dot_v)*q_plus]",
+        "symbol": "vslash_proj*p_minus_ell_proj"
+      },
+      {
+        "expr": "CrossPlusMinus(previous;v->tildev)",
+        "symbol": "tvslash_proj*p_minus_ell_proj"
+      },
+      {
+        "expr": "(2-d)*q_plus relative to gamma+ tree trace",
+        "symbol": "Sigma_q"
+      }
+    ],
+    "trace_identity": "Tr[p/ gamma+ q/ v/]=4[p+ q.v-p.q v+ +p.v q+] with frozen ordering"
+  },
+  "status": "C378_LIGHTCONE_KINEMATIC_AND_PROJECTOR_CONTRACTION_AST_BOUND_PARAMETER_REDUCTION_REOPENED",
+  "validation": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "authority_record": {
+    "Hermitian": true,
+    "b1_projector": "authenticated spin-one DIS b1 projector applied to delta_T W_mn",
+    "current_order": "commutator order and cut orientation retained",
+    "operator": "W_mn(P,q;lambda)=1/(4pi) integral d4z exp(iq.z) <P,lambda|[J_m(z),J_n(0)]|P,lambda>",
+    "root": "ee54fbc8394bd2e5337a17ae489687ce3403874efe658778c0e026d86fb16c97",
+    "source": "hep-ex/0506018 and 1702.05337",
+    "tensor_combination": "delta_T W_mn = W_mn(lambda=0) - [W_mn(+1)+W_mn(-1)]/2"
+  },
+  "package_root": "7a55d193904b3c19d7c29d61d0abcce421801b4e6852349af2aa571d69d07cbe",
+  "physical": false,
+  "plan": "C117B1ADAPTER1-B",
+  "schema": "C271-HADRON_TENSOR_OPERATOR-MANIFEST-V1",
+  "status": "C271_B1_OPERATOR_NORMALIZATION_ADAPTER_READY_C117_SENSITIVITY_ROW_UNEVALUATED",
+  "validation": "BOUND"
+}

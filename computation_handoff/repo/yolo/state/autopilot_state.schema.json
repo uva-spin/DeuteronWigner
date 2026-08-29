@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PersistentYoloState",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "CONTINUE",
+        "REAL_MATH_PHYSICS_BLOCKER",
+        "INFRASTRUCTURE_BLOCKER",
+        "PENNYLANE_ACTIVATION_READY",
+        "PENNYLANE_PHYSICAL_ACTIVE"
+      ]
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "repository": {
+      "type": "string"
+    },
+    "last_completed_job": {
+      "type": "string"
+    },
+    "last_completed_commit": {
+      "type": "string"
+    },
+    "last_package_root": {
+      "type": "string"
+    },
+    "current_job": {
+      "type": "string"
+    },
+    "baseline_commit": {
+      "type": "string"
+    },
+    "continuation_contract": {
+      "type": "string"
+    },
+    "continuation_contract_sha256": {
+      "type": "string"
+    },
+    "prompt_path": {
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "type": "string"
+    },
+    "first_missing_object": {
+      "type": "string"
+    },
+    "progress_fingerprint": {
+      "type": "string"
+    },
+    "activation_gate_status": {
+      "type": "string",
+      "enum": [
+        "NOT_READY",
+        "READY_TO_RUN_ACTIVATION",
+        "ACTIVE"
+      ]
+    },
+    "stop_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "mode",
+    "revision",
+    "repository",
+    "last_completed_job",
+    "last_completed_commit",
+    "last_package_root",
+    "current_job",
+    "baseline_commit",
+    "continuation_contract",
+    "continuation_contract_sha256",
+    "prompt_path",
+    "prompt_sha256",
+    "first_missing_object",
+    "progress_fingerprint",
+    "activation_gate_status",
+    "stop_reason"
+  ]
+}

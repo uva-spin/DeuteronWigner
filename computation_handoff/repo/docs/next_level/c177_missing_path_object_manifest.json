@@ -1,0 +1,66 @@
+{
+  "root": "3223689827a80eb71e58a33720a6a5d29e4e1867f23bc952b1bbff6494444e56",
+  "rows": [
+    {
+      "C43_sign": "C43 D/U and antisymmetric/PV",
+      "HO_boundary_owner": "C176-HO-BOUNDARY",
+      "P0_Q0": "C174/C175 interfaces",
+      "endpoints": "+/-infinity source vs +/-L periodic cell",
+      "holdouts": [
+        "no infinity=+/-L by notation",
+        "no straight path",
+        "no endpoint zero",
+        "no link coefficient"
+      ],
+      "not_zero": true,
+      "object_id": "C177-PERIODIC-CELL-PATH-ADAPTER",
+      "orientation": "DIS future and DY past remain separate",
+      "parent_C176_blocker": "C176-C43-RESIDUAL-LINK-PATH-GEOMETRY",
+      "path_class": "BJY/JY continuum transverse boundary class",
+      "representation": "open adjoint via C177 lift",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "required_locator": "C174 project finite-cell endpoint/holonomy/gauge-orbit crosswalk",
+      "required_routes": [
+        "CELL-A coordinate",
+        "CELL-B finite Fourier",
+        "CELL-C gauge orbit",
+        "CELL-D holonomy",
+        "CELL-E C174 subgauge",
+        "CELL-F C175 ghost boundary"
+      ],
+      "required_source_scope": "BJY/JY continuum source objects already locked",
+      "status": "REQUIRES_C178_HQCDB0RESLINKADAPTER1"
+    },
+    {
+      "C43_sign": "C43 D/U and antisymmetric/PV",
+      "HO_boundary_owner": "C176-HO-BOUNDARY",
+      "P0_Q0": "C174/C175 interfaces",
+      "endpoints": "+/-infinity source vs +/-L periodic cell",
+      "holdouts": [
+        "no infinity=+/-L by notation",
+        "no straight path",
+        "no endpoint zero",
+        "no link coefficient"
+      ],
+      "not_zero": true,
+      "object_id": "C177-PERIODIC-CELL-PATH-ADAPTER",
+      "orientation": "DIS future and DY past remain separate",
+      "parent_C176_blocker": "C176-C43-RESIDUAL-LINK-PATH-GEOMETRY",
+      "path_class": "BJY/JY continuum transverse boundary class",
+      "representation": "open adjoint via C177 lift",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_locator": "C174 project finite-cell endpoint/holonomy/gauge-orbit crosswalk",
+      "required_routes": [
+        "CELL-A coordinate",
+        "CELL-B finite Fourier",
+        "CELL-C gauge orbit",
+        "CELL-D holonomy",
+        "CELL-E C174 subgauge",
+        "CELL-F C175 ghost boundary"
+      ],
+      "required_source_scope": "BJY/JY continuum source objects already locked",
+      "status": "REQUIRES_C178_HQCDB0RESLINKADAPTER1"
+    }
+  ],
+  "schema": "C177-MISSING-PATH-OBJECT-V1"
+}

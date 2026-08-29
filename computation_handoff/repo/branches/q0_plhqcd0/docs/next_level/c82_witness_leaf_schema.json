@@ -1,0 +1,20 @@
+{
+  "id_rule": "sha256(canonical leaf fields)",
+  "iterator": "pair -> C78 witness -> C77 raw bra/color -> C77 raw ket/color",
+  "schema": [
+    "resolution",
+    "bra_id",
+    "ket_id",
+    "witness_id",
+    "intermediate_q_id",
+    "output_raw_id",
+    "input_raw_id",
+    "output_color_record",
+    "input_color_record",
+    "hq_out",
+    "hg_out",
+    "hq_in",
+    "hg_in",
+    "source_order"
+  ]
+}

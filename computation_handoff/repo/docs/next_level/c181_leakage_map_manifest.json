@@ -1,0 +1,2182 @@
+{
+  "entry_counts": {
+    "K11": 20,
+    "K13": 24,
+    "K9": 16
+  },
+  "factorized_target_dimensions": {
+    "K11": 132,
+    "K13": 182,
+    "K9": 90
+  },
+  "ranks": {
+    "K11": 10,
+    "K13": 12,
+    "K9": 8
+  },
+  "root": "4a994f258410024fb3c4ba2d63ead418b537270b18435655c950622863fdad83",
+  "rows": [
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.282842712474619,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.282842712474619,
+          0.0
+        ],
+        [
+          -0.282842712474619,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_000",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 7",
+      "source_scalar_mode_id": "K9:scalar:0:7",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_007",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.4,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.4,
+          0.0
+        ],
+        [
+          -0.4,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_001",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 14",
+      "source_scalar_mode_id": "K9:scalar:1:6",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_014",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.4898979485566356,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.4898979485566356,
+          0.0
+        ],
+        [
+          -0.4898979485566356,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_002",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 20",
+      "source_scalar_mode_id": "K9:scalar:2:5",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_020",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.565685424949238,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.565685424949238,
+          0.0
+        ],
+        [
+          -0.565685424949238,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_003",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 25",
+      "source_scalar_mode_id": "K9:scalar:3:4",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_025",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6324555320336759,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.6324555320336759,
+          0.0
+        ],
+        [
+          -0.6324555320336759,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_004",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 29",
+      "source_scalar_mode_id": "K9:scalar:4:3",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_029",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6928203230275508,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.6928203230275508,
+          0.0
+        ],
+        [
+          -0.6928203230275508,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_005",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 32",
+      "source_scalar_mode_id": "K9:scalar:5:2",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_032",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7483314773547883,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.7483314773547883,
+          0.0
+        ],
+        [
+          -0.7483314773547883,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_006",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 34",
+      "source_scalar_mode_id": "K9:scalar:6:1",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_034",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.8,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.8,
+          0.0
+        ],
+        [
+          -0.8,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_007",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 35",
+      "source_scalar_mode_id": "K9:scalar:7:0",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_X_035",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.8,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.8,
+          0.0
+        ],
+        [
+          -0.8,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_008",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 7",
+      "source_scalar_mode_id": "K9:scalar:0:7",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_007",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7483314773547883,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.7483314773547883,
+          0.0
+        ],
+        [
+          -0.7483314773547883,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_009",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 14",
+      "source_scalar_mode_id": "K9:scalar:1:6",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_014",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6928203230275508,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.6928203230275508,
+          0.0
+        ],
+        [
+          -0.6928203230275508,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_010",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 20",
+      "source_scalar_mode_id": "K9:scalar:2:5",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_020",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6324555320336759,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.6324555320336759,
+          0.0
+        ],
+        [
+          -0.6324555320336759,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_011",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 25",
+      "source_scalar_mode_id": "K9:scalar:3:4",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_025",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.565685424949238,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.565685424949238,
+          0.0
+        ],
+        [
+          -0.565685424949238,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_012",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 29",
+      "source_scalar_mode_id": "K9:scalar:4:3",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_029",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.4898979485566356,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.4898979485566356,
+          0.0
+        ],
+        [
+          -0.4898979485566356,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_013",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 32",
+      "source_scalar_mode_id": "K9:scalar:5:2",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_032",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.4,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.4,
+          0.0
+        ],
+        [
+          -0.4,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_014",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 34",
+      "source_scalar_mode_id": "K9:scalar:6:1",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_034",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.282842712474619,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.282842712474619,
+          0.0
+        ],
+        [
+          -0.282842712474619,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K9_015",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 8,
+      "resolution": "K9",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 35",
+      "source_scalar_mode_id": "K9:scalar:7:0",
+      "target_boundary_mode_id": "C181_BOUNDARY_K9_Y_035",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.31819805153394637,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.31819805153394637,
+          0.0
+        ],
+        [
+          -0.31819805153394637,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_000",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 9",
+      "source_scalar_mode_id": "K11:scalar:0:9",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_009",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.45,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.45,
+          0.0
+        ],
+        [
+          -0.45,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_001",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 18",
+      "source_scalar_mode_id": "K11:scalar:1:8",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_018",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.551135192126215,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.551135192126215,
+          0.0
+        ],
+        [
+          -0.551135192126215,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_002",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 26",
+      "source_scalar_mode_id": "K11:scalar:2:7",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_026",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6363961030678927,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.6363961030678927,
+          0.0
+        ],
+        [
+          -0.6363961030678927,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_003",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 33",
+      "source_scalar_mode_id": "K11:scalar:3:6",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_033",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7115124735378854,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.7115124735378854,
+          0.0
+        ],
+        [
+          -0.7115124735378854,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_004",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 39",
+      "source_scalar_mode_id": "K11:scalar:4:5",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_039",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7794228634059948,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.7794228634059948,
+          0.0
+        ],
+        [
+          -0.7794228634059948,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_005",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 44",
+      "source_scalar_mode_id": "K11:scalar:5:4",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_044",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.8418729120241369,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.8418729120241369,
+          0.0
+        ],
+        [
+          -0.8418729120241369,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_006",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 48",
+      "source_scalar_mode_id": "K11:scalar:6:3",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_048",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.9,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.9,
+          0.0
+        ],
+        [
+          -0.9,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_007",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 51",
+      "source_scalar_mode_id": "K11:scalar:7:2",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_051",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.9545941546018392,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.9545941546018392,
+          0.0
+        ],
+        [
+          -0.9545941546018392,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_008",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 53",
+      "source_scalar_mode_id": "K11:scalar:8:1",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_053",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.0062305898749053,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -1.0062305898749053,
+          0.0
+        ],
+        [
+          -1.0062305898749053,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_009",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 54",
+      "source_scalar_mode_id": "K11:scalar:9:0",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_X_054",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.0062305898749053,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -1.0062305898749053,
+          0.0
+        ],
+        [
+          -1.0062305898749053,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_010",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 9",
+      "source_scalar_mode_id": "K11:scalar:0:9",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_009",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.9545941546018392,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.9545941546018392,
+          0.0
+        ],
+        [
+          -0.9545941546018392,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_011",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 18",
+      "source_scalar_mode_id": "K11:scalar:1:8",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_018",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.9,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.9,
+          0.0
+        ],
+        [
+          -0.9,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_012",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 26",
+      "source_scalar_mode_id": "K11:scalar:2:7",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_026",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.8418729120241369,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.8418729120241369,
+          0.0
+        ],
+        [
+          -0.8418729120241369,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_013",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 33",
+      "source_scalar_mode_id": "K11:scalar:3:6",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_033",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7794228634059948,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.7794228634059948,
+          0.0
+        ],
+        [
+          -0.7794228634059948,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_014",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 39",
+      "source_scalar_mode_id": "K11:scalar:4:5",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_039",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7115124735378854,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.7115124735378854,
+          0.0
+        ],
+        [
+          -0.7115124735378854,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_015",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 44",
+      "source_scalar_mode_id": "K11:scalar:5:4",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_044",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6363961030678927,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.6363961030678927,
+          0.0
+        ],
+        [
+          -0.6363961030678927,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_016",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 48",
+      "source_scalar_mode_id": "K11:scalar:6:3",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_048",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.551135192126215,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.551135192126215,
+          0.0
+        ],
+        [
+          -0.551135192126215,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_017",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 51",
+      "source_scalar_mode_id": "K11:scalar:7:2",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_051",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.45,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.45,
+          0.0
+        ],
+        [
+          -0.45,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_018",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 53",
+      "source_scalar_mode_id": "K11:scalar:8:1",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_053",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.31819805153394637,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.31819805153394637,
+          0.0
+        ],
+        [
+          -0.31819805153394637,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K11_019",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 10,
+      "resolution": "K11",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 54",
+      "source_scalar_mode_id": "K11:scalar:9:0",
+      "target_boundary_mode_id": "C181_BOUNDARY_K11_Y_054",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.35355339059327373,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.35355339059327373,
+          0.0
+        ],
+        [
+          -0.35355339059327373,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_000",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 11",
+      "source_scalar_mode_id": "K13:scalar:0:11",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_011",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.5,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.5,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_001",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 22",
+      "source_scalar_mode_id": "K13:scalar:1:10",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_022",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6123724356957945,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.6123724356957945,
+          0.0
+        ],
+        [
+          -0.6123724356957945,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_002",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 32",
+      "source_scalar_mode_id": "K13:scalar:2:9",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_032",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7071067811865475,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          -0.7071067811865475,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_003",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 41",
+      "source_scalar_mode_id": "K13:scalar:3:8",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_041",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7905694150420948,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.7905694150420948,
+          0.0
+        ],
+        [
+          -0.7905694150420948,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_004",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 49",
+      "source_scalar_mode_id": "K13:scalar:4:7",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_049",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.8660254037844385,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.8660254037844385,
+          0.0
+        ],
+        [
+          -0.8660254037844385,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_005",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 56",
+      "source_scalar_mode_id": "K13:scalar:5:6",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_056",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.9354143466934853,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -0.9354143466934853,
+          0.0
+        ],
+        [
+          -0.9354143466934853,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_006",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 62",
+      "source_scalar_mode_id": "K13:scalar:6:5",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_062",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.0,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_007",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 67",
+      "source_scalar_mode_id": "K13:scalar:7:4",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_067",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.0606601717798212,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -1.0606601717798212,
+          0.0
+        ],
+        [
+          -1.0606601717798212,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_008",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 71",
+      "source_scalar_mode_id": "K13:scalar:8:3",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_071",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.118033988749895,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -1.118033988749895,
+          0.0
+        ],
+        [
+          -1.118033988749895,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_009",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 74",
+      "source_scalar_mode_id": "K13:scalar:9:2",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_074",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.1726039399558572,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -1.1726039399558572,
+          0.0
+        ],
+        [
+          -1.1726039399558572,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_010",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 76",
+      "source_scalar_mode_id": "K13:scalar:10:1",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_076",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.224744871391589,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "x",
+      "enclosure": [
+        [
+          -1.224744871391589,
+          0.0
+        ],
+        [
+          -1.224744871391589,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_011",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted x raising-shell support index 77",
+      "source_scalar_mode_id": "K13:scalar:11:0",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_X_077",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.224744871391589,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -1.224744871391589,
+          0.0
+        ],
+        [
+          -1.224744871391589,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_012",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 11",
+      "source_scalar_mode_id": "K13:scalar:0:11",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_011",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.1726039399558572,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -1.1726039399558572,
+          0.0
+        ],
+        [
+          -1.1726039399558572,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_013",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 22",
+      "source_scalar_mode_id": "K13:scalar:1:10",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_022",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.118033988749895,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -1.118033988749895,
+          0.0
+        ],
+        [
+          -1.118033988749895,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_014",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 32",
+      "source_scalar_mode_id": "K13:scalar:2:9",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_032",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.0606601717798212,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -1.0606601717798212,
+          0.0
+        ],
+        [
+          -1.0606601717798212,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_015",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 41",
+      "source_scalar_mode_id": "K13:scalar:3:8",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_041",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -1.0,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_016",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 49",
+      "source_scalar_mode_id": "K13:scalar:4:7",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_049",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.9354143466934853,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.9354143466934853,
+          0.0
+        ],
+        [
+          -0.9354143466934853,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_017",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 56",
+      "source_scalar_mode_id": "K13:scalar:5:6",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_056",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.8660254037844385,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.8660254037844385,
+          0.0
+        ],
+        [
+          -0.8660254037844385,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_018",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 62",
+      "source_scalar_mode_id": "K13:scalar:6:5",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_062",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7905694150420948,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.7905694150420948,
+          0.0
+        ],
+        [
+          -0.7905694150420948,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_019",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 67",
+      "source_scalar_mode_id": "K13:scalar:7:4",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_067",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.7071067811865475,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          -0.7071067811865475,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_020",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 71",
+      "source_scalar_mode_id": "K13:scalar:8:3",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_071",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.6123724356957945,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.6123724356957945,
+          0.0
+        ],
+        [
+          -0.6123724356957945,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_021",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 74",
+      "source_scalar_mode_id": "K13:scalar:9:2",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_074",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.5,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.5,
+          0.0
+        ],
+        [
+          -0.5,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_022",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 76",
+      "source_scalar_mode_id": "K13:scalar:10:1",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_076",
+      "threshold_pruned": false,
+      "units": "GeV"
+    },
+    {
+      "C176_source_record": "C176-HO-BOUNDARY.gradient_boundary_matrix",
+      "coefficient": [
+        -0.35355339059327373,
+        0.0
+      ],
+      "coefficient_repaired": false,
+      "derivative_component": "y",
+      "enclosure": [
+        [
+          -0.35355339059327373,
+          0.0
+        ],
+        [
+          -0.35355339059327373,
+          0.0
+        ]
+      ],
+      "leakage_entry_id": "C176_LEAKAGE_K13_023",
+      "orientation": "Q_HO gradient P_HO",
+      "phase": "C45 Cartesian derivative phase",
+      "rank": 12,
+      "resolution": "K13",
+      "routes": [
+        "BMAP-A direct immutable C176 import",
+        "BMAP-B analytic HO ladder",
+        "BMAP-C derivative generating function",
+        "BMAP-D sparse matrix-free action",
+        "BMAP-E rotation/reversal"
+      ],
+      "selection_rule": "first omitted y raising-shell support index 77",
+      "source_scalar_mode_id": "K13:scalar:11:0",
+      "target_boundary_mode_id": "C181_BOUNDARY_K13_Y_077",
+      "threshold_pruned": false,
+      "units": "GeV"
+    }
+  ],
+  "schema": "C181-LEAKAGE-MAP-V1",
+  "sparse": true
+}

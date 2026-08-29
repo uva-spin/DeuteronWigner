@@ -1,0 +1,3 @@
+# C51/VERTEX2 implementation report
+
+C51 proves the C50 evaluator's static and runtime independence from C47 raw tuple values, including a poison producer that raises before any historical value can be returned. It then stops at `C51_VERTEX_DIMENSIONAL_ASSEMBLY_INCOMPLETE`: C50 names two components but its executable interface returns only their combined `pminus_GeV`/`m2_GeV2` value and no exact component coefficient. Constructing the required homogeneous component matrices would manufacture a decomposition. No C51 matrix was created. Next: **C52/VDIM2 — component-matrix units and symbolic-factor assembly completion**.

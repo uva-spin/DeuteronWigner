@@ -1,0 +1,101 @@
+{
+  "channels_separate": true,
+  "count": 4,
+  "premature_symmetrization": false,
+  "root": "cc1424cedc0ed1db6853214848fe2356860344012633d48688e447cc4bc1fec4",
+  "rows": [
+    {
+      "all_eight_generator_route": true,
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "candidate_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "color_descriptor_id": "C188-COLOR-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "descriptor_completeness": "COLOR_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "exchange_parity": "C185 Bose projector metadata",
+      "generator_normalization": "C43 public normalization",
+      "numeric_projection": false,
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "reverse_order_word": "T^b T^a (source AST unavailable)",
+      "root": "b3c6d1bf5200288b3a6861691ac0d603472e4743430bc5cebfd3375d77705de3",
+      "source_color_word": "T^a T^b (source AST unavailable)",
+      "source_phase": "UNRESOLVED_SOURCE_AST"
+    },
+    {
+      "all_eight_generator_route": true,
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "candidate_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "color_descriptor_id": "C188-COLOR-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "descriptor_completeness": "COLOR_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "exchange_parity": "C185 Bose projector metadata",
+      "generator_normalization": "C43 public normalization",
+      "numeric_projection": false,
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "reverse_order_word": "T^b T^a (source AST unavailable)",
+      "root": "2558d26ee09f9585869c5faa64dbb3da8037c9f2257644ca83026108b9cd6613",
+      "source_color_word": "T^a T^b (source AST unavailable)",
+      "source_phase": "UNRESOLVED_SOURCE_AST"
+    },
+    {
+      "all_eight_generator_route": true,
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "candidate_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "color_descriptor_id": "C188-COLOR-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "descriptor_completeness": "COLOR_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "exchange_parity": "C185 Bose projector metadata",
+      "generator_normalization": "C43 public normalization",
+      "numeric_projection": false,
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "reverse_order_word": "T^b T^a (source AST unavailable)",
+      "root": "f28871deec97e49e7056e00c09576c0feed8464d6ee68ce1ab428374aa348932",
+      "source_color_word": "T^a T^b (source AST unavailable)",
+      "source_phase": "UNRESOLVED_SOURCE_AST"
+    },
+    {
+      "all_eight_generator_route": true,
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "candidate_channels": [
+        "QGG_COLOR_1S",
+        "QGG_COLOR_8S",
+        "QGG_COLOR_8A"
+      ],
+      "color_descriptor_id": "C188-COLOR-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "descriptor_completeness": "COLOR_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "exchange_parity": "C185 Bose projector metadata",
+      "generator_normalization": "C43 public normalization",
+      "numeric_projection": false,
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "reverse_order_word": "T^b T^a (source AST unavailable)",
+      "root": "086e78932563875c508247d61b2641a27944fb690d45d5049f0a8f66f2c9b428",
+      "source_color_word": "T^a T^b (source AST unavailable)",
+      "source_phase": "UNRESOLVED_SOURCE_AST"
+    }
+  ],
+  "schema": "C188-COLOR-DESCRIPTOR-V1"
+}

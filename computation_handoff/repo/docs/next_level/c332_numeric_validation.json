@@ -1,0 +1,56 @@
+{
+  "package_root": "ad49e9d42145be5ac9837ff763de669180ec6f569765780e83f72b4878cf7b7c",
+  "physical": false,
+  "plan": "RIMASSC43TRANSTAIL1-A",
+  "record": {
+    "all_stable": true,
+    "root": "0029951cbc9e8ee5af7fe7eeeaefb48a1bbcd4f4a50dca7ae3741750de7b69e5",
+    "rows": [
+      {
+        "Nmax": [
+          5000,
+          10000,
+          20000
+        ],
+        "owner": "boson",
+        "subtracted": [
+          2592.5118400251467,
+          2628.23069849529,
+          2647.551718992178
+        ],
+        "successive_difference_decreases": true
+      },
+      {
+        "Nmax": [
+          5000,
+          10000,
+          20000
+        ],
+        "owner": "fermion",
+        "subtracted": [
+          -7287.557889096306,
+          -7405.171407380336,
+          -7469.843669468468
+        ],
+        "successive_difference_decreases": true
+      },
+      {
+        "Nmax": [
+          5000,
+          10000,
+          20000
+        ],
+        "owner": "constraint",
+        "subtracted": [
+          -5185.0236800502935,
+          -5256.46139699058,
+          -5295.103437984356
+        ],
+        "successive_difference_decreases": true
+      }
+    ],
+    "subtraction_executed_for_validation_only": true
+  },
+  "status": "C332_TRANSVERSE_LINEAR_AND_LOG_NMAX_DIVERGENCES_DERIVED_COMPONENT_SUBTRACTION_MISSING",
+  "validation": "PASS"
+}

@@ -1,0 +1,41 @@
+{
+  "bottleneck": "ORDER_1_MATCHING_AND_EVOLUTION",
+  "issued": [
+    "M0_TMD_SCHEME_IDENTITY_VALIDATED",
+    "M0_CLOSED_MATCHING_BASIS_VALIDATED",
+    "M0_LF_TO_QCD_MATCHING_PILOT_VALIDATED",
+    "M0_STEP_SCALING_VALIDATED",
+    "M0_UV_RAPIDITY_SOFT_ACCOUNTING_VALIDATED",
+    "M0_SMALL_B_OPE_PILOT_VALIDATED",
+    "M0_RANK_TRANSFORM_VALIDATED",
+    "M0_COLLINEAR_EVOLUTION_PILOT_VALIDATED",
+    "M0_TWO_SCALE_EVOLUTION_ENGINE_VALIDATED",
+    "M0_THRESHOLD_ORACLE_VALIDATED",
+    "M0_NUCLEAR_OPERATOR_GRAPH_PRESERVED",
+    "M0_VALIDATION_ONLY"
+  ],
+  "laundering_rejected": true,
+  "not_issued": [
+    "PHYSICAL_TMD",
+    "PHYSICAL_GTMD",
+    "PHYSICAL_DEUTERON_TMD",
+    "FULL_LF_TO_QCD_MATCHING_COMPLETE",
+    "ALL_ORDER_EVOLUTION",
+    "PHYSICAL_CS_KERNEL_DETERMINED",
+    "PROCESS_READY",
+    "W_PLUS_Y_READY",
+    "INFERENCE_READY",
+    "PRODUCTION_READY"
+  ],
+  "production_reachable": false,
+  "schema_version": "1.0.0",
+  "tuple": {
+    "CS_kernel": 1,
+    "coefficient": 1,
+    "collinear": 1,
+    "cusp": 2,
+    "gamma": 1,
+    "numerical": 8,
+    "threshold": 1
+  }
+}

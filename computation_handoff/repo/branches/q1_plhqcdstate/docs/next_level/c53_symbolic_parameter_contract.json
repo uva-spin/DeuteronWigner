@@ -1,0 +1,27 @@
+{
+  "L": "symbolic inherited exact cancellation",
+  "P_plus": "symbolic coefficient",
+  "bHO_and_mass": "inside C52 primitive; no C53 rescaling",
+  "coefficient": {
+    "coupling": "g_s factored outside operator",
+    "free_symbols": [
+      "P_plus",
+      "k_g"
+    ],
+    "name": "FINITE_CELL_M2",
+    "sha256": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+    "signature": {
+      "L": 0,
+      "P_plus": 1,
+      "b_HO": 0,
+      "mass": 1,
+      "operator": "M2_COEFFICIENT",
+      "regulator": "L_CANCELLED",
+      "transverse_rank": "MIXED_0_1"
+    },
+    "srepr": "Mul(Pow(Integer(2), Rational(1, 2)), Pow(pi, Rational(-1, 2)), Symbol('P_plus', positive=True), Pow(Symbol('k_g', positive=True), Rational(-1, 2)))"
+  },
+  "g_s": "factored",
+  "status": "PASS",
+  "units": "M^2 after coefficient"
+}

@@ -1,0 +1,633 @@
+{
+  "global_order_forced": false,
+  "record_count": 11,
+  "records": [
+    {
+      "coefficient_id": "C22:COEFF:37391e944a75f20464",
+      "color_class": "NONE",
+      "content_hash": "b6c5bfe2ee5a12455e5d0df97a5f1fa27a5482486fc5e4f4ce8dc619b54a2676",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.12,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "twist-2 unpolarized matching; repository-declared NLO block",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "adb6274d6e7abb946e8404142c4f1d16d2436ad9543f3c57a4fe375a416f0a4d",
+      "source_id": "1702.06558",
+      "source_operator": "Q_UNPOL:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "Q_UNPOL",
+        "flavor_class": "NONSINGLET_AND_SINGLET",
+        "scheme": "MSBAR",
+        "species": "q",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:9a6c121e44ef74236f",
+      "color_class": "NONE",
+      "content_hash": "354b60ae67d2640266c34e6d76f4038897259f3b39407c86129f0051f7dce976",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.18,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": []
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "gluon matching; repository-declared NLO block",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "8e53837128b4951286094986aca0373582ae9532e034aa213cd80464235dc5a2",
+      "source_id": "1909.13820",
+      "source_operator": "G_UNPOL:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "G_UNPOL",
+        "flavor_class": "SINGLET",
+        "scheme": "MSBAR",
+        "species": "g",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:2bfb6f7cd03ad02d20",
+      "color_class": "NONE",
+      "content_hash": "7de4955fe484a8091ad5276ef161ac763f40d3629321644d4ce363ed3268bc96",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.12,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": "c98862a3d39141bf68ff948a7e8a54fc5d272ab577836f0ceebc00be7257fabf",
+      "implemented_order": 1,
+      "locator": "helicity lower-order limit",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "15b0fa14e42e8709c1ebc61dfd958c015cbe91cf440b97273e82ecc351d400e4",
+      "source_id": "2509.01655",
+      "source_operator": "Q_HELICITY:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "Q_HELICITY",
+        "flavor_class": "NONSINGLET_AND_SINGLET",
+        "scheme": "MSBAR",
+        "species": "q",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:ad0c9da57847ee38ee",
+      "color_class": "NONE",
+      "content_hash": "96b197cf0ee8104a87dad1f7a7a22d36a352750d2aebaba4ff25f9ca7d83ddd1",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.18,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": []
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": "c98862a3d39141bf68ff948a7e8a54fc5d272ab577836f0ceebc00be7257fabf",
+      "implemented_order": 1,
+      "locator": "polarized mixing lower-order limit",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "a38bac11db992bb4a7acaabf1e87c0fe83950979e63a5df706d5aaf79191bdfd",
+      "source_id": "1409.5131",
+      "source_operator": "G_HELICITY:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "G_HELICITY",
+        "flavor_class": "SINGLET",
+        "scheme": "MSBAR",
+        "species": "g",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:2db802fa55c04ec36c",
+      "color_class": "NONE",
+      "content_hash": "5e86477086878f7bbe4048df0e6519ea596453851f98aaeac80af5163c9f2e1c",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.12,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "transversity lower-order limit",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "eb16c2f48afc2fb868e3b37575d378e4ed261552b793cd6a9db481c4827aa549",
+      "source_id": "1805.07243",
+      "source_operator": "Q_TRANSVERSITY:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "Q_TRANSVERSITY",
+        "flavor_class": "NONSINGLET",
+        "scheme": "MSBAR",
+        "species": "q",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:7c72db3b7c953540c2",
+      "color_class": "NONE",
+      "content_hash": "36648a474ef82e0acbed1b82e4b4d6d0eee1a3763b520bb2fedd1d6607306f15",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 0.0
+        },
+        "plus": [],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 1,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "linear-gluon first nonzero lower-order limit",
+      "rank": 2,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "31d07f69f738326860a726fa04cf4383a95eba8738d2d38ab25033a1bafbe31f",
+      "source_id": "2509.01703",
+      "source_operator": "G_LINEAR:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "G_LINEAR",
+        "flavor_class": "SINGLET",
+        "scheme": "MSBAR",
+        "species": "g",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:e5be21307e07811ae5",
+      "color_class": "NONE",
+      "content_hash": "ecbe7e04e4531b3012fb0ead628f26bde24e95d38673a2c675cbe7803d9e61f7",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 0.0
+        },
+        "plus": [],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 1,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "quark singlet off-diagonal block",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "27573055d9ec61317447b4cfb73d67b9a68168419e6e46091d42a44346314834",
+      "source_id": "1908.03831",
+      "source_operator": "SINGLET_QG:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "SINGLET_QG",
+        "flavor_class": "SINGLET",
+        "scheme": "MSBAR",
+        "species": "q",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:63b3c10a06f57c62b3",
+      "color_class": "NONE",
+      "content_hash": "a84ef321974afa95dedd1d3d325a47e73b09a23420d5ab279072bc2d8c02c489",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 0.0
+        },
+        "plus": [],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 1,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "gluon singlet off-diagonal block",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "8e53837128b4951286094986aca0373582ae9532e034aa213cd80464235dc5a2",
+      "source_id": "1909.13820",
+      "source_operator": "SINGLET_GQ:TMD",
+      "status": "AUDITED_DECLARED_ORDER",
+      "target_operator": {
+        "family": "SINGLET_GQ",
+        "flavor_class": "SINGLET",
+        "scheme": "MSBAR",
+        "species": "g",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:c222c2aa1b4260df24",
+      "color_class": "NONE",
+      "content_hash": "bded27a875e0ce97f8a557d6c74ae565fcbee347dbe7f3168e937553e48ac9f8",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.12,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": [
+            [
+              0,
+              1.0
+            ],
+            [
+              2,
+              1.0
+            ]
+          ]
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "same local twist-2 operator; target matrix element distinct",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "adb6274d6e7abb946e8404142c4f1d16d2436ad9543f3c57a4fe375a416f0a4d",
+      "source_id": "1702.06558",
+      "source_operator": "LL_QUARK:TMD",
+      "status": "OPERATOR_UNIVERSALITY_PROVED",
+      "target_operator": {
+        "family": "LL_QUARK",
+        "flavor_class": "NONSINGLET_AND_SINGLET",
+        "scheme": "MSBAR",
+        "species": "q",
+        "target_channel": "LL",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:0abfcb0502152321d1",
+      "color_class": "NONE",
+      "content_hash": "7322f81e3fc5fadbbd88b2a6320032159bca089bad3685a508b843a2cc7ed725",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 1.0
+        },
+        "plus": [
+          {
+            "coefficient": 0.18,
+            "logarithm_power": 0
+          }
+        ],
+        "regular": {
+          "polynomial": []
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 0,
+      "gamma5_scheme": null,
+      "implemented_order": 1,
+      "locator": "same local twist-2 operator; target matrix element distinct",
+      "rank": 0,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "8e53837128b4951286094986aca0373582ae9532e034aa213cd80464235dc5a2",
+      "source_id": "1909.13820",
+      "source_operator": "LL_GLUON:TMD",
+      "status": "OPERATOR_UNIVERSALITY_PROVED",
+      "target_operator": {
+        "family": "LL_GLUON",
+        "flavor_class": "SINGLET",
+        "scheme": "MSBAR",
+        "species": "g",
+        "target_channel": "LL",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    },
+    {
+      "coefficient_id": "C22:COEFF:1c792b91ca84509cbd",
+      "color_class": "NONE",
+      "content_hash": "e0dd5ec8279b643162f664490130e0b42e5f00c62624f314b31cb1e680f37b92",
+      "expression": {
+        "convention": {
+          "convolution": "MELLIN_C_x_f_over_z",
+          "delta_normalization": 1.0,
+          "domain": [
+            0.0,
+            1.0
+          ],
+          "endpoint": 1.0,
+          "subtraction": "phi(x)-phi(1)",
+          "variable": "x"
+        },
+        "delta": {
+          "coefficient": 0.0
+        },
+        "plus": [],
+        "regular": {
+          "polynomial": []
+        },
+        "small_x": []
+      },
+      "first_nonzero_order": 2,
+      "gamma5_scheme": null,
+      "implemented_order": 2,
+      "locator": "zero twist-2 coefficient through declared order",
+      "rank": 2,
+      "rapidity_scheme": "DELTA_TO_PROJECT",
+      "remainder": "FIRST_OMITTED_ORDER_PLUS_POWER_B2",
+      "soft_scheme": "SQRT_SOFT",
+      "source_hash": "eb16c2f48afc2fb868e3b37575d378e4ed261552b793cd6a9db481c4827aa549",
+      "source_id": "1805.07243",
+      "source_operator": "PRETZEL:TMD",
+      "status": "ZERO_COEFFICIENT_AT_DECLARED_TWIST_AND_ORDER",
+      "target_operator": {
+        "family": "PRETZEL",
+        "flavor_class": "NONSINGLET",
+        "scheme": "MSBAR",
+        "species": "q",
+        "target_channel": "U",
+        "twist": 2
+      },
+      "uv_scheme": "MSBAR",
+      "wilson_class": "STAPLE_EVEN"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

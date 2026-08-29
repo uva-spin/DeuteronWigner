@@ -1,0 +1,37 @@
+{
+  "decision": "No gauge-fixed finite-basis action can be derived or numerically materialized from incomplete primary authorities.",
+  "missing_required": [
+    "hep-ph/9705477",
+    "hep-ph/0208038"
+  ],
+  "records": [
+    {
+      "authority": "Brodsky-Pauli-Pinsky",
+      "expected_repository_path": "data/raw/c42_sources/hep-ph-9705477.pdf",
+      "identifier": "hep-ph/9705477",
+      "present": false,
+      "purpose": "LF QCD Hamiltonian, constraints, Fock normalization",
+      "sha256": null,
+      "status": "ABSENT_BLOCKING"
+    },
+    {
+      "authority": "Belitsky-Ji-Yuan",
+      "expected_repository_path": "data/raw/c42_sources/hep-ph-0208038.pdf",
+      "identifier": "hep-ph/0208038",
+      "present": false,
+      "purpose": "transverse link and residual-gauge completion",
+      "sha256": null,
+      "status": "ABSENT_BLOCKING"
+    },
+    {
+      "authority": "Ji-Ma-Yuan",
+      "expected_repository_path": "data/raw/c36_sources/hep-ph-0404183.pdf",
+      "identifier": "hep-ph/0404183",
+      "present": true,
+      "purpose": "selected spacelike TMD and soft convention",
+      "sha256": "4a867611d7479b66e776129a4c490a736f5a2a5fadc0fdb89c48dfb9c975c44e",
+      "status": "HASH_LOCKED"
+    }
+  ],
+  "status": "C42_GAUGE_FIXED_ACTION_INCOMPLETE"
+}

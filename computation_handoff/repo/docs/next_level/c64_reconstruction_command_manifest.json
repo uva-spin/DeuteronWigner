@@ -1,0 +1,4 @@
+{
+  "block_generator": "same deterministic complete generator; individual blocks are indexed by stable block ID",
+  "complete": "PYTHONPATH=src python3 scripts/build_c64_qgtm2_artifacts.py --clean"
+}

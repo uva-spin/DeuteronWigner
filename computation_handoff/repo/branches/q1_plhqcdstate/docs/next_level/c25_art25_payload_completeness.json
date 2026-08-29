@@ -1,0 +1,94 @@
+{
+  "constants_files": 1,
+  "distinction": "Official ART25 model payload is complete; its referenced custom collinear sets are not public in audited sources.",
+  "inventory": [
+    {
+      "bytes": 23368,
+      "git_blob": "0f66fe78a4894ea8669c4e8f255db9db50c5cc6d",
+      "path": "Models/ART25/Constants-Files/ART25_main.atmde",
+      "sha256": "ccee3cd218d97daaa0b6c8898c3c9a7840c042f24319958ea251a13a94988524",
+      "stable_id": "C25.PAYLOAD.01"
+    },
+    {
+      "bytes": 4233,
+      "git_blob": "aeb5aac98a37fd95e14c8b17a9887ae83077fe83",
+      "path": "Models/ART25/Model/BoerMuldersTMDPDF_model.f90",
+      "sha256": "9771bff5aba9547908d7f0038e6942b6796b7950d2b38b39aff47bbbd86a4a0b",
+      "stable_id": "C25.PAYLOAD.02"
+    },
+    {
+      "bytes": 4723,
+      "git_blob": "b67e9ea6471e9f46e00d7302e967ec46df4069aa",
+      "path": "Models/ART25/Model/SiversTMDPDF_model.f90",
+      "sha256": "a9ad59aec5361eec1ca5ccf330712b00a40a14686389916ec0d3333a5ccc7d07",
+      "stable_id": "C25.PAYLOAD.03"
+    },
+    {
+      "bytes": 3731,
+      "git_blob": "2ffa8468d7b5bdd4bf7f728f355c14237f8c3ad0",
+      "path": "Models/ART25/Model/TMDR_model.f90",
+      "sha256": "4fb6ae7e8b78f284a0dd7b8e226a95636fcfbf08c17b4f58c5dbc6448b70f679",
+      "stable_id": "C25.PAYLOAD.04"
+    },
+    {
+      "bytes": 3566,
+      "git_blob": "300c9c3ac1ab6a5af38008665492c9fe8f121f1b",
+      "path": "Models/ART25/Model/eeTMDFF_model.f90",
+      "sha256": "0197caaa7260b74e82a3bf80baacd86b547e2fd6a2557787d9d9884e120c018a",
+      "stable_id": "C25.PAYLOAD.05"
+    },
+    {
+      "bytes": 3735,
+      "git_blob": "54a8acab2a3fad26673a84a7245b542667f1b98c",
+      "path": "Models/ART25/Model/lpTMDPDF_model.f90",
+      "sha256": "4e60f0525729810d7ed6a9309ad3e764b21d39567f9b1cc5dd39448ecf768c6c",
+      "stable_id": "C25.PAYLOAD.06"
+    },
+    {
+      "bytes": 5158,
+      "git_blob": "8f15aeeef5010e1823dbe1b1df5b26a43d152884",
+      "path": "Models/ART25/Model/uTMDFF_model.f90",
+      "sha256": "59ae68c13b8820e80eac53f84c1ee5f116e8f0a7b977de5d6b8942aa2c939182",
+      "stable_id": "C25.PAYLOAD.07"
+    },
+    {
+      "bytes": 5590,
+      "git_blob": "afcd09506c61eb9a61ccaf04645ddaae536ccd85",
+      "path": "Models/ART25/Model/uTMDPDF_model.f90",
+      "sha256": "613e5e8376b1140da1f6ded0a27a38373567dc5fa31764d4450b45b7c5e8f211",
+      "stable_id": "C25.PAYLOAD.08"
+    },
+    {
+      "bytes": 6006,
+      "git_blob": "503d9952c161bfd0f58ee66df26668a1ad3c5938",
+      "path": "Models/ART25/Model/wglTMDPDF_model.f90",
+      "sha256": "5101d2da4895bc9353ebea3ab068669a4cef0d950156a0094a78fedba6405567",
+      "stable_id": "C25.PAYLOAD.09"
+    },
+    {
+      "bytes": 6006,
+      "git_blob": "87a8d35e1707a07674855fdcac1fb55480e4acee",
+      "path": "Models/ART25/Model/wgtTMDPDF_model.f90",
+      "sha256": "634f5a4ef8866caca29e6cc676a920bdb38e87882a6c056b8b2bbd91f06b0a03",
+      "stable_id": "C25.PAYLOAD.10"
+    },
+    {
+      "bytes": 171884,
+      "git_blob": "7a88188af6def8d6d3d4e66b5b568f6a11ad7182",
+      "path": "Models/ART25/Replica-files/ART25_main.rep",
+      "sha256": "30a85d7dd972c1aeb67c894d22317d77e360f0507d5893289820adc819545735",
+      "stable_id": "C25.PAYLOAD.11"
+    }
+  ],
+  "missing_runtime_inputs": [
+    "MSHT20_REP",
+    "MAPFF10NNLOPIp",
+    "MAPFF10NNLOKAp"
+  ],
+  "model_files": 9,
+  "payload_complete": true,
+  "payload_file_count": 11,
+  "process_runtime_inputs_complete": false,
+  "replica_files": 1,
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "declared_order": 1,
+  "first_omitted_order_scale": 0.0015,
+  "gamma5_conversion_residual": 3.2e-12,
+  "log_reconstruction_residual": 5.8e-11,
+  "overfit_to_zero": false,
+  "rapidity_residual": 3.7e-11,
+  "route_A": "MATCH_Q0_THEN_TMD_EVOLVE",
+  "route_B": "COLLINEAR_EVOLVE_THEN_REMATCH",
+  "route_residuals": {
+    "G_HELICITY": 0.0011,
+    "G_LINEAR": 0.0013,
+    "G_UNPOL": 0.00094,
+    "LL": 0.00091,
+    "Q_HELICITY": 0.00082,
+    "Q_TRANSVERSITY": 0.00068,
+    "Q_UNPOL": 0.00071
+  },
+  "schema_version": "1.0.0",
+  "singlet_ordering_residual": 0.0
+}

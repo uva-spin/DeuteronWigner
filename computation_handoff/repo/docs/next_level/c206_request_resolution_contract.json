@@ -1,0 +1,61 @@
+{
+  "schema": "C206-REQUEST-RESOLUTION-CONTRACT-V1",
+  "artifact": "request_resolution_contract",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+        "terminal_status": "C206_CONDITIONAL_ST_AFFINE_FAMILY_READY",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-qg_VERTEX_DRESSING-MOMQ-2",
+        "terminal_status": "C206_CONDITIONAL_ST_AFFINE_FAMILY_READY",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-ST-2",
+        "terminal_status": "C206_CONDITIONAL_ST_AFFINE_FAMILY_READY",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_MASS-2",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "physical": false
+      },
+      {
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-MASS_SQUARED-2",
+        "terminal_status": "PRESERVED_INHERITED_REQUEST",
+        "physical": false
+      }
+    ],
+    "count": 6,
+    "root": "de5f3b6195e5e4462285452c565baa5757811f188adc57c45f75527bdf7db8e1"
+  }
+}

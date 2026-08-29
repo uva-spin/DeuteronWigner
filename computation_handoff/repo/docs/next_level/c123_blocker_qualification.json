@@ -1,0 +1,13 @@
+{
+  "schema": "C123-ICAXIS-BLOCKER-QUALIFICATION-V1",
+  "status": "C123_ICAXIS_AXIS_CARDINALITY_INCOMPLETE",
+  "classification": "PROJECT_OWNED_DESCENDANT_CONSTRUCTION_BLOCKER",
+  "not_external_authority_missing": true,
+  "historical_C117_member_recovery": "NOT_CLAIMED",
+  "blocking_axes": ["longitudinal_transfer", "external_modes"],
+  "blocking_object": "C117 public internal_mode_domain records",
+  "missing_fields": ["finite_member_ids", "conditional_cardinality", "canonical_member_order", "rank_unrank"],
+  "forbidden_workarounds": ["array-position identity", "numerical-magnitude selection", "threshold", "quadrature residue", "private fields"],
+  "scientific_consequence": "C122 logical witness domains and C117 projector reproduction remain uninstantiated; no witness, target, value, bound, sum, or operator is published",
+  "next": "C124/ICDOMAIN2"
+}

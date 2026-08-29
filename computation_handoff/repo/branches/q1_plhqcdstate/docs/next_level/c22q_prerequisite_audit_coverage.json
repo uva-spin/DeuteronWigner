@@ -1,0 +1,82 @@
+{
+  "all_items_covered": true,
+  "items": [
+    {
+      "affected_identities": "ALL_540",
+      "audit_item_id": "C22Q.AUDIT.01",
+      "completion_status": "COMPLETE_FAIL_CLOSED",
+      "description": "exact source and ancillary audit",
+      "negative_injections": [
+        "C22Q.INJECT.GATE"
+      ],
+      "remaining_limitation": "ancillaries incomplete",
+      "required_code_change": "tiered source gates",
+      "required_source_manifest_change": "source records retained",
+      "tests": [
+        "tests/test_c22q_m3q.py"
+      ]
+    },
+    {
+      "affected_identities": "ALL_540",
+      "audit_item_id": "C22Q.AUDIT.02",
+      "completion_status": "COMPLETE_FAIL_CLOSED",
+      "description": "exact distribution expressions",
+      "negative_injections": [
+        "C22Q.INJECT.GATE"
+      ],
+      "remaining_limitation": "exact N3LO expressions incomplete",
+      "required_code_change": "validation versus source distinction",
+      "required_source_manifest_change": "prototype records labeled",
+      "tests": [
+        "tests/test_c22q_m3q.py"
+      ]
+    },
+    {
+      "affected_identities": "ALL_540",
+      "audit_item_id": "C22Q.AUDIT.03",
+      "completion_status": "COMPLETE_VALIDATION_TIER",
+      "description": "independent x/Mellin routes",
+      "negative_injections": [
+        "C22Q.INJECT.GATE"
+      ],
+      "remaining_limitation": "physical source route incomplete",
+      "required_code_change": "analytic validation tier",
+      "required_source_manifest_change": "solver provenance retained",
+      "tests": [
+        "tests/test_c22q_m3q.py"
+      ]
+    },
+    {
+      "affected_identities": "ALL_540",
+      "audit_item_id": "C22Q.AUDIT.04",
+      "completion_status": "COMPLETE_RECONCILIATION",
+      "description": "operator-derived 540 mapping",
+      "negative_injections": [
+        "C22Q.INJECT.GATE"
+      ],
+      "remaining_limitation": "C22 periodic family fixture cannot source-qualify",
+      "required_code_change": "gate-by-gate reconciliation",
+      "required_source_manifest_change": "C19-C22 chain retained",
+      "tests": [
+        "tests/test_c22q_m3q.py"
+      ]
+    },
+    {
+      "affected_identities": "TIER_DEPENDENT",
+      "audit_item_id": "C22Q.AUDIT.05",
+      "completion_status": "COMPLETE_TIERED",
+      "description": "all formal closure tests",
+      "negative_injections": [
+        "C22Q.INJECT.GATE"
+      ],
+      "remaining_limitation": "source and physical tiers blocked",
+      "required_code_change": "tiered qualification evaluator",
+      "required_source_manifest_change": "accuracy and uncertainty gates",
+      "tests": [
+        "tests/test_c22q_m3q.py"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_audit": "C23.PREREQ.001"
+}

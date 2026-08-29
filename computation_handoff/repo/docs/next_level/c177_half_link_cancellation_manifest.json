@@ -1,0 +1,25 @@
+{
+  "root": "eb02107adbb798ce524d2f53cd4a25028ff92c92c2b615144feedded80493c96",
+  "rows": [
+    {
+      "common_reference": "(infinity,boldsymbol{infinity})",
+      "half_link_orientation": "source Eq. (50) then conjugate",
+      "left_field_endpoint": "(xi_-, boldsymbol{xi})",
+      "multiplication_order": "[xi endpoint -> common]^dagger [common -> 0 endpoint]",
+      "non_Abelian_commutation": false,
+      "partial_cancellation": "only adjacent inverse/common-reference factors",
+      "path_class_id": "BJY_DIS_FUTURE_REDUCED_LINK",
+      "remaining_direct_connector": "[infinity,boldsymbol{xi};infinity,boldsymbol{0}]",
+      "right_field_endpoint": "(0,boldsymbol{0})",
+      "routes": [
+        "CANCEL-A source Eq. (52)",
+        "CANCEL-B path concatenation/inverse",
+        "CANCEL-C degree-one/degree-two ordered expansion",
+        "CANCEL-D generated-adjoint/reversal"
+      ],
+      "source_equation": "BJY Eq. (52)",
+      "status": "CONTINUUM_CANCELLATION_CLOSED"
+    }
+  ],
+  "schema": "C177-HALF-LINK-CANCELLATION-V1"
+}

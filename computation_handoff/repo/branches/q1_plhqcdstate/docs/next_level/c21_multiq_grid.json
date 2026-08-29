@@ -1,0 +1,60 @@
+{
+  "collinear": {
+    "families": [
+      "UNPOL_NONSINGLET",
+      "UNPOL_SINGLET_QG",
+      "HELICITY_NONSINGLET",
+      "HELICITY_SINGLET_QG",
+      "TRANSVERSITY",
+      "SPIN1_LL_SINGLET_QG"
+    ],
+    "helicity_residual": 2.4e-12,
+    "nonsinglet_residual": 0.0,
+    "singlet_momentum_residual": 2.7e-12,
+    "transversity_residual": 0.0,
+    "twist3_unavailable": true
+  },
+  "color_fd_preserved": true,
+  "evolution": {
+    "curl_fitted_away": false,
+    "exact_curl": 0.0,
+    "exact_loop_residual": 2e-13,
+    "exact_path_residual": 1.7e-13,
+    "finite_order_curl": 0.0029,
+    "finite_path_difference": 0.0016,
+    "numerical_error": 3.1e-11,
+    "reverse_residual": 2.8e-12,
+    "routes": [
+      "DIRECT_CONTOUR",
+      "INTEGRABILITY_IMPROVED",
+      "ZETA_PRESCRIPTION_VALIDATION"
+    ],
+    "threshold_contribution": 0.0007,
+    "transitivity_residual": 2.4e-12
+  },
+  "grid": [
+    1.6,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    10.0,
+    20.0,
+    100.0
+  ],
+  "link_even_residual": 0.0,
+  "link_odd_residual": 0.0,
+  "ordered_links_preserved": true,
+  "rank_preserved": true,
+  "ranks": {
+    "0": 2e-08,
+    "1": 4e-08,
+    "2": 6e-08,
+    "3": 8e-08
+  },
+  "reference_Q": 2.0,
+  "schema_version": "1.0.0",
+  "threshold_crossings": [
+    4.18
+  ]
+}

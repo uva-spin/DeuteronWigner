@@ -1,0 +1,9 @@
+{
+  "baseline": "8f8240ff2c5cb2615ee68ba10331b9732dd84ca6",
+  "blocker": "C66 exports build() only; it has no C66-owned hash-verifying read-only loader, runtime inventory, immutable-array interface, or committed array/bound hashes. Calling build() would regenerate/refactor C66, forbidden in C67.",
+  "next": "C68/QGCOLOR-RUNTIME \u2014 C66 read-only API, hashes, certified arrays, and inventory completion",
+  "no_contact": true,
+  "no_embedding": true,
+  "result": "NOT_EVALUATED_AFTER_C66_IMPORT_BLOCKER",
+  "status": "C67_QGEMBED_C66_IMPORT_INCOMPLETE"
+}

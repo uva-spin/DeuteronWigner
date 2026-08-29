@@ -1,0 +1,682 @@
+{
+  "count": 14,
+  "rows": [
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "bridge_status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED",
+      "collinear_operator": "C22:u_unpolarized",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": true,
+      "external_object_id": "ART25:u_unpolarized",
+      "external_scheme": "ARTEMIDE_V301_ART25_SQRT_SOFT",
+      "family": "u_unpolarized",
+      "flavor": "u",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:u_unpolarized",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.001",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "bridge_status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED",
+      "collinear_operator": "C22:d_unpolarized",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": true,
+      "external_object_id": "ART25:d_unpolarized",
+      "external_scheme": "ARTEMIDE_V301_ART25_SQRT_SOFT",
+      "family": "d_unpolarized",
+      "flavor": "d",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:d_unpolarized",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.002",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "bridge_status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED",
+      "collinear_operator": "C22:ubar_unpolarized",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": true,
+      "external_object_id": "ART25:ubar_unpolarized",
+      "external_scheme": "ARTEMIDE_V301_ART25_SQRT_SOFT",
+      "family": "ubar_unpolarized",
+      "flavor": "ubar",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:ubar_unpolarized",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "qbar",
+      "stable_id": "C29.OP.003",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "microscopic UV/rapidity/soft identity remains validation-only",
+        "no complete finite adapter"
+      ],
+      "bridge_status": "BRIDGE_COMMON_DOMAIN_IDENTIFIED",
+      "collinear_operator": "C22:dbar_unpolarized",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": true,
+      "external_object_id": "ART25:dbar_unpolarized",
+      "external_scheme": "ARTEMIDE_V301_ART25_SQRT_SOFT",
+      "family": "dbar_unpolarized",
+      "flavor": "dbar",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:dbar_unpolarized",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "qbar",
+      "stable_id": "C29.OP.004",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "singlet decomposition map incomplete"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:quark_singlet",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": true,
+      "external_object_id": "ART25:quark_singlet",
+      "external_scheme": "ARTEMIDE_V301_ART25_SQRT_SOFT",
+      "family": "quark_singlet",
+      "flavor": "SINGLET",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:quark_singlet",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.005",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "microscopic physical CS bundle not consumed",
+        "large-b discrepancy unknown"
+      ],
+      "bridge_status": "BRIDGE_DIAGNOSTIC_ONLY",
+      "collinear_operator": "C22:quark_cs_kernel",
+      "color_class": "FUNDAMENTAL",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": true,
+      "external_object_id": "ART25:quark_cs_kernel",
+      "external_scheme": "ARTEMIDE_V301_ART25_SQRT_SOFT",
+      "family": "quark_cs_kernel",
+      "flavor": "ALL",
+      "link_class": "RAPIDITY_KERNEL",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:quark_cs_kernel",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.006",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:gluon_unpolarized",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "gluon_unpolarized",
+      "flavor": "g",
+      "link_class": "GLUON_LINK_PAIR",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:gluon_unpolarized",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "g",
+      "stable_id": "C29.OP.007",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:gluon_linear",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "gluon_linear",
+      "flavor": "g",
+      "link_class": "GLUON_LINK_PAIR",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:gluon_linear",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "LINEAR",
+      "process_status": "NOT_PROMOTED",
+      "rank": 2,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "g",
+      "stable_id": "C29.OP.008",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:spin1_ll_quark",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "spin1_ll_quark",
+      "flavor": "u",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:spin1_ll_quark",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "LL",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.009",
+      "target": "DEUTERON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:helicity_quark",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "helicity_quark",
+      "flavor": "u",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:helicity_quark",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "L",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.010",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:transversity_quark",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "transversity_quark",
+      "flavor": "u",
+      "link_class": "STAPLE_EVEN",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:transversity_quark",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "EVEN",
+      "parton_polarization": "T",
+      "process_status": "NOT_PROMOTED",
+      "rank": 0,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.011",
+      "target": "PROTON",
+      "twist": 2
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:todd_quark",
+      "color_class": "NONE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "todd_quark",
+      "flavor": "u",
+      "link_class": "STAPLE_ODD",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:todd_quark",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "ODD",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 1,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "q",
+      "stable_id": "C29.OP.012",
+      "target": "PROTON",
+      "twist": 3
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:todd_gluon_f",
+      "color_class": "F_TYPE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "todd_gluon_f",
+      "flavor": "g",
+      "link_class": "GLUON_LINK_PAIR",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:todd_gluon_f",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "ODD",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 1,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "g",
+      "stable_id": "C29.OP.013",
+      "target": "PROTON",
+      "twist": 3
+    },
+    {
+      "blocking_reasons": [
+        "external ART25 object absent",
+        "operator-specific identity does not close"
+      ],
+      "bridge_status": "BRIDGE_UNAVAILABLE",
+      "collinear_operator": "C22:todd_gluon_d",
+      "color_class": "D_TYPE",
+      "domain": {
+        "Q_GeV": [
+          2.0,
+          20.0
+        ],
+        "b_GeV_inv": [
+          0.1,
+          2.0
+        ],
+        "x": [
+          0.01,
+          0.7
+        ]
+      },
+      "evolution_status": "C21_VALIDATION_ONLY",
+      "external_available": false,
+      "external_object_id": null,
+      "external_scheme": null,
+      "family": "todd_gluon_d",
+      "flavor": "g",
+      "link_class": "GLUON_LINK_PAIR",
+      "matched_by_complete_identity": true,
+      "matched_by_name_only": false,
+      "matching_status": "VALIDATION_ONLY",
+      "microscopic_available": true,
+      "microscopic_operator_id": "C11/C19:todd_gluon_d",
+      "microscopic_scheme": "C19_VALIDATION_SCHEME_A",
+      "naive_t_parity": "ODD",
+      "parton_polarization": "U",
+      "process_status": "NOT_PROMOTED",
+      "rank": 1,
+      "reference_scales": {
+        "mu_GeV": 5.0,
+        "zeta_GeV2": 25.0
+      },
+      "species": "g",
+      "stable_id": "C29.OP.014",
+      "target": "PROTON",
+      "twist": 3
+    }
+  ],
+  "schema_version": "1.0.0",
+  "status_counts": {
+    "BRIDGE_COMMON_DOMAIN_IDENTIFIED": 4,
+    "BRIDGE_DIAGNOSTIC_ONLY": 1,
+    "BRIDGE_UNAVAILABLE": 9
+  }
+}

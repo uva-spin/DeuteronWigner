@@ -1,0 +1,269 @@
+{
+  "schema": "C206-RIGHT-NULL-BASIS-MANIFEST-V1",
+  "artifact": "right_null_basis_manifest",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "basis_id": "C206-RNULL-K9",
+        "resolution": "K9",
+        "dimension": 14,
+        "basis_vectors": [
+          {
+            "vector_id": "n1",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_2",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n2",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_3",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n3",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_4",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n4",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_5",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n5",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_6",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n6",
+            "pivot_coordinate": "C151_NULL_COORDINATE_1",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n7",
+            "pivot_coordinate": "C151_NULL_COORDINATE_2",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n8",
+            "pivot_coordinate": "C151_NULL_COORDINATE_3",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n9",
+            "pivot_coordinate": "C151_NULL_COORDINATE_4",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n10",
+            "pivot_coordinate": "C151_NULL_COORDINATE_5",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n11",
+            "pivot_coordinate": "C151_NULL_COORDINATE_6",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n12",
+            "pivot_coordinate": "C151_NULL_COORDINATE_7",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n13",
+            "pivot_coordinate": "C151_NULL_COORDINATE_8",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n14",
+            "pivot_coordinate": "C151_NULL_COORDINATE_9",
+            "normalization": "exact symbolic"
+          }
+        ],
+        "basis_change": "reversible",
+        "physical": false
+      },
+      {
+        "basis_id": "C206-RNULL-K11",
+        "resolution": "K11",
+        "dimension": 14,
+        "basis_vectors": [
+          {
+            "vector_id": "n1",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_2",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n2",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_3",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n3",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_4",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n4",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_5",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n5",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_6",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n6",
+            "pivot_coordinate": "C151_NULL_COORDINATE_1",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n7",
+            "pivot_coordinate": "C151_NULL_COORDINATE_2",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n8",
+            "pivot_coordinate": "C151_NULL_COORDINATE_3",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n9",
+            "pivot_coordinate": "C151_NULL_COORDINATE_4",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n10",
+            "pivot_coordinate": "C151_NULL_COORDINATE_5",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n11",
+            "pivot_coordinate": "C151_NULL_COORDINATE_6",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n12",
+            "pivot_coordinate": "C151_NULL_COORDINATE_7",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n13",
+            "pivot_coordinate": "C151_NULL_COORDINATE_8",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n14",
+            "pivot_coordinate": "C151_NULL_COORDINATE_9",
+            "normalization": "exact symbolic"
+          }
+        ],
+        "basis_change": "reversible",
+        "physical": false
+      },
+      {
+        "basis_id": "C206-RNULL-K13",
+        "resolution": "K13",
+        "dimension": 14,
+        "basis_vectors": [
+          {
+            "vector_id": "n1",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_2",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n2",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_3",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n3",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_4",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n4",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_5",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n5",
+            "pivot_coordinate": "C151_COUNTERTERM_DIRECTION_6",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n6",
+            "pivot_coordinate": "C151_NULL_COORDINATE_1",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n7",
+            "pivot_coordinate": "C151_NULL_COORDINATE_2",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n8",
+            "pivot_coordinate": "C151_NULL_COORDINATE_3",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n9",
+            "pivot_coordinate": "C151_NULL_COORDINATE_4",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n10",
+            "pivot_coordinate": "C151_NULL_COORDINATE_5",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n11",
+            "pivot_coordinate": "C151_NULL_COORDINATE_6",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n12",
+            "pivot_coordinate": "C151_NULL_COORDINATE_7",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n13",
+            "pivot_coordinate": "C151_NULL_COORDINATE_8",
+            "normalization": "exact symbolic"
+          },
+          {
+            "vector_id": "n14",
+            "pivot_coordinate": "C151_NULL_COORDINATE_9",
+            "normalization": "exact symbolic"
+          }
+        ],
+        "basis_change": "reversible",
+        "physical": false
+      }
+    ],
+    "count": 3,
+    "dimension": 14,
+    "root": "151a103a017fde06112b5b23b0df148eb6ff5cf56ff7df348e5125f93bc7e1f5"
+  }
+}

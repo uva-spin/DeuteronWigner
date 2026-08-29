@@ -1,0 +1,189 @@
+{
+  "requirements": [
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [
+        "C1-ADAPT-COORD",
+        "C1-ADAPT-RANK",
+        "C1-ADAPT-OPID"
+      ],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.COORD",
+      "implementation": [
+        "formal/coordinates.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [
+        "C1-ADAPT-COORD",
+        "C1-ADAPT-RANK",
+        "C1-ADAPT-OPID"
+      ],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.RANK",
+      "implementation": [
+        "formal/transverse_rank.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.SECTOR",
+      "implementation": [
+        "formal/sector_space.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.PATH",
+      "implementation": [
+        "formal/gauge_path.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [
+        "C1-ADAPT-COORD",
+        "C1-ADAPT-RANK",
+        "C1-ADAPT-OPID"
+      ],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.OPID",
+      "implementation": [
+        "formal/operator_identity.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.MAP",
+      "implementation": [
+        "formal/maps.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [
+        "C1-ADAPT-COORD",
+        "C1-ADAPT-RANK",
+        "C1-ADAPT-OPID"
+      ],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.ADAPT",
+      "implementation": [
+        "formal/legacy_adapters.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.INJECT",
+      "implementation": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.REGRESS",
+      "implementation": [
+        "c1_regression_report.json"
+      ],
+      "negative_tests": [],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    },
+    {
+      "acceptance_status": "implemented_and_tested",
+      "adapter_coverage": [],
+      "formal_source": "c1_codex_prompt.md",
+      "id": "C1.DOC",
+      "implementation": [
+        "c1_implementation_report.md"
+      ],
+      "negative_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "positive_tests": [
+        "tests/test_c1_formal_spine.py"
+      ],
+      "regression_status": "byte-identical",
+      "unresolved_internal_uses": "Documented in c1_implementation_report.md"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

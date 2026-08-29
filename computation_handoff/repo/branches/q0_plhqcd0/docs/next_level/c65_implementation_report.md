@@ -1,0 +1,3 @@
+# C65/QGEMBED3 fail-closed correction
+
+C65 verifies C64 read-only import: 733 blocks, 171,153 statuses, and 67,920 residue certificates. It then finds C53 has no committed runtime path for the required frozen 24-by-3 triplet isometry. `raw_emission_E` is differently normalized and the stored projectors are 24-by-24; neither can be substituted under a read-only U3 import claim. Status: `C65_QG_TRIPLET_EMBEDDING_INCOMPLETE`. Next: **C66/QGCOLOR2 — materialize and hash-verify the frozen C53 24-by-3 triplet isometry import contract**. No CM, triplet, support, contact, or descendant-impact object is created.

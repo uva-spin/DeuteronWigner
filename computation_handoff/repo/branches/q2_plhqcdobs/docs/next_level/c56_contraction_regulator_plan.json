@@ -1,0 +1,33 @@
+{
+  "first_blocker": "C56.IFNORM.FINITE_HO_CONTRACTION_REGULATOR_OWNERSHIP",
+  "plans": [
+    {
+      "id": "IFNORM-PROJECTED-FIELD-MODE-REGULATOR",
+      "reason": "C45 defines normalized longitudinal modes, HO functions, and an Nmax basis rule, but no contracted-field projector P_HO^field or all-mode virtual-gluon collection for the BPP a a_dagger commutator. C47 projects external many-body states only.",
+      "status": "REJECTED_ABSENT_BLOCKING"
+    },
+    {
+      "id": "IFNORM-EXTERNAL-QG-EMBEDDABLE-REGULATOR",
+      "reason": "Restricting a normal-order loop to gluons embeddable in an external qg state changes a one-body field contraction into an external-Fock-sector cutoff; no C43/C45/C47 contract proves that identification.",
+      "status": "REJECTED_NO_SOURCE_AUTHORITY"
+    },
+    {
+      "id": "IFNORM-SOURCE-DEFINED-REFERENCE-SUBTRACTION",
+      "reason": "BPP permits careful regularization and discusses DLCQ self-induced inertias/counterterms, but specifies no C45-HO reference, mode pairing, subtraction constant, or counterterm relation.",
+      "status": "REJECTED_NO_REGULATOR_IDENTICAL_REFERENCE"
+    },
+    {
+      "id": "IFNORM-REGULATOR-MATCHED-CONVERSION",
+      "reason": "BPP's displayed self-induced-inertia ledger is a DLCQ transverse-momentum sum with Omega and gbar^2=2g^2/(Omega P^+); C45 uses x-scaled two-dimensional HO functions and C47 CM/TM projection. No finite operator conversion, inverse, or remainder is locked.",
+      "status": "REJECTED_NONIDENTICAL_REGULATORS"
+    },
+    {
+      "id": "IFNORM-UNAVAILABLE",
+      "reason": "The required finite-HO field-level regulator ownership is absent; selecting any positive plan would fabricate the virtual mode domain.",
+      "status": "SELECTED"
+    }
+  ],
+  "selected_plan": "IFNORM-UNAVAILABLE",
+  "selection_rule": "No virtual-gluon mode is summed before a field-level finite-HO regulator owner is source/project qualified.",
+  "status": "C56_IFNORM_FINITE_HO_REGULATOR_INCOMPLETE"
+}

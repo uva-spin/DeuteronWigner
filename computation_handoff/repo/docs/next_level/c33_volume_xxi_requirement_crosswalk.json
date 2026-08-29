@@ -1,0 +1,1192 @@
+{
+  "all_evidence_present": true,
+  "all_ids_unique": true,
+  "bridge_rerun": false,
+  "c33_no_go": "C33_SOFT_TREE_LEVEL_ONLY",
+  "c33_ordered_negative_injections": 2040,
+  "content_hash": "dfa32e6388877c9af82e7e738f008539a39f2c5f509f1536673a5ca7a9cd6201",
+  "count": 65,
+  "counts_by_status": {
+    "C33_CLOSED": 50,
+    "C33_FAIL_CLOSED": 4,
+    "C34_DEFERRED": 11
+  },
+  "crosswalk_id": "C33.V21.REQUIREMENT.CROSSWALK.v1",
+  "immediate_next_package": "C34/S0A",
+  "inference_or_production_promoted": false,
+  "microscopic_proton_exported": false,
+  "minimum_ordered_negative_injections_satisfied": true,
+  "rows": [
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "family": "LAYER",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.LAYER.1",
+      "requirement_tex": "Keep the C11 model density, project renormalized TMD, and ART25 optimal TMD as distinct typed layers.",
+      "source_line": 1671,
+      "source_order": 1,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "family": "LAYER",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.LAYER.2",
+      "requirement_tex": "Forbid continuum scheme equivalence from acting directly on an unmatched finite-basis density.",
+      "source_line": 1672,
+      "source_order": 2,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json"
+      ],
+      "family": "ROOT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ROOT.1",
+      "requirement_tex": "Keep baryon-number-one collinear and baryon-number-zero soft Hilbert roots disjoint.",
+      "source_line": 1673,
+      "source_order": 3,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json"
+      ],
+      "family": "ROOT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ROOT.2",
+      "requirement_tex": "Forbid the vacuum soft root from entering the proton-state probability normalization.",
+      "source_line": 1674,
+      "source_order": 4,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json"
+      ],
+      "family": "ROOT",
+      "positive_physics_promoted": false,
+      "rationale": "C33 has separate provenance, regulator-pair, and overlap records but not the required single content-addressed joint-regulator object; C34/S0A owns that integration.",
+      "requirement_id": "V21.ROOT.3",
+      "requirement_tex": "Join the roots only through a content-addressed joint-regulator and overlap contract.",
+      "source_line": 1675,
+      "source_order": 5,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.OP.1",
+      "requirement_tex": "Preserve the historical C11 root and create a versioned completed staple-operator root.",
+      "source_line": 1676,
+      "source_order": 6,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.OP.2",
+      "requirement_tex": "Store active field, Dirac projection, staple direction, transverse closure, color representation, path ordering, and normalization.",
+      "source_line": 1677,
+      "source_order": 7,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.OP.3",
+      "requirement_tex": "Preserve separate positive-\\(x\\) quark and antiquark identities and anti-fundamental Wilson action.",
+      "source_line": 1678,
+      "source_order": 8,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.OP.4",
+      "requirement_tex": "Require exact tree reduction to C11 before one-loop matching.",
+      "source_line": 1679,
+      "source_order": 9,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.OP.5",
+      "requirement_tex": "Treat Wilson order zero only as a tree-level operator limit.",
+      "source_line": 1680,
+      "source_order": 10,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.REG.1",
+      "requirement_tex": "Store \\(K,N_{\\max},b_{\\mathrm{HO}},\\lambda_H,x_{\\min}\\), boundary, endpoint, and zero-mode data.",
+      "source_line": 1681,
+      "source_order": 11,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.REG.2",
+      "requirement_tex": "Freeze common partonic IR, gauge, and rapidity plans before one-loop calculation.",
+      "source_line": 1682,
+      "source_order": 12,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.REG.3",
+      "requirement_tex": "Forbid a finite basis from being called a rapidity regulator without proof.",
+      "source_line": 1683,
+      "source_order": 13,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.REG.4",
+      "requirement_tex": "Require at least three nested regulator points for any continuum claim.",
+      "source_line": 1684,
+      "source_order": 14,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.COLL.1",
+      "requirement_tex": "Maintain a complete one-loop collinear diagram and counterterm ledger.",
+      "source_line": 1685,
+      "source_order": 15,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C33/S0_GUARD_COMPLETE",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "positive_physics_promoted": false,
+      "rationale": "C33 implements the required guard: unresolved physics is explicit, no missing term is zero, and no positive status is issued.",
+      "requirement_id": "V21.COLL.2",
+      "requirement_tex": "Forbid absent real, virtual, Wilson, instantaneous, boundary, endpoint, zero-mode, or mixing terms from being silently zero.",
+      "source_line": 1686,
+      "source_order": 16,
+      "status": "C33_FAIL_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.COLL.3",
+      "requirement_tex": "Preserve exact delta, plus, regular, convolution, and Mellin distribution algebra.",
+      "source_line": 1687,
+      "source_order": 17,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C33/S0_GUARD_COMPLETE",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "positive_physics_promoted": false,
+      "rationale": "C33 implements the required guard: unresolved physics is explicit, no missing term is zero, and no positive status is issued.",
+      "requirement_id": "V21.COLL.4",
+      "requirement_tex": "Keep the microscopic unsubtracted correlator unavailable beyond tree level until its gates pass.",
+      "source_line": 1688,
+      "source_order": 18,
+      "status": "C33_FAIL_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.1",
+      "requirement_tex": "Construct a distinct finite vacuum plus soft-gluon Hilbert space for a microscopic soft claim.",
+      "source_line": 1689,
+      "source_order": 19,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.2",
+      "requirement_tex": "Represent the complete four-line fundamental/conjugate Wilson geometry and singlet color trace.",
+      "source_line": 1690,
+      "source_order": 20,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.3",
+      "requirement_tex": "Require the tree soft factor to equal one exactly.",
+      "source_line": 1691,
+      "source_order": 21,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.4",
+      "requirement_tex": "Derive modified-\\(\\delta\\) signs from stored line, momentum, Fourier, and \\(i0\\) conventions.",
+      "source_line": 1692,
+      "source_order": 22,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.5",
+      "requirement_tex": "Maintain a complete one-loop soft diagram and counterterm ledger.",
+      "source_line": 1693,
+      "source_order": 23,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.6",
+      "requirement_tex": "Keep direct finite-Fock, auxiliary-field, and continuum-oracle soft plans mutually exclusive.",
+      "source_line": 1694,
+      "source_order": 24,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "SOFT",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.SOFT.7",
+      "requirement_tex": "Forbid importing a continuum soft function as the finite-basis microscopic result.",
+      "source_line": 1695,
+      "source_order": 25,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/S0A_AND_C34/R0B",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json"
+      ],
+      "family": "UV",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.UV.1",
+      "requirement_tex": "Separate field, bilocal, Wilson self-energy, cusp/endpoint, vacuum, residual-mass, and basis UV counterterms.",
+      "source_line": 1696,
+      "source_order": 26,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json"
+      ],
+      "family": "UV",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.UV.2",
+      "requirement_tex": "Separate logarithmic UV terms from power divergences and finite constants.",
+      "source_line": 1697,
+      "source_order": 27,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C33/S0_GUARD_COMPLETE",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json"
+      ],
+      "family": "UV",
+      "positive_physics_promoted": false,
+      "rationale": "C33 implements the required guard: unresolved physics is explicit, no missing term is zero, and no positive status is issued.",
+      "requirement_id": "V21.UV.3",
+      "requirement_tex": "Require target UV anomalous-dimension closure for a positive status.",
+      "source_line": 1698,
+      "source_order": 28,
+      "status": "C33_FAIL_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json"
+      ],
+      "family": "RAP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.RAP.1",
+      "requirement_tex": "Keep bare rapidity dependence, rapidity counterterm, and renormalized object separate.",
+      "source_line": 1699,
+      "source_order": 29,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C33/S0_GUARD_COMPLETE",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json"
+      ],
+      "family": "RAP",
+      "positive_physics_promoted": false,
+      "rationale": "C33 implements the required guard: unresolved physics is explicit, no missing term is zero, and no positive status is issued.",
+      "requirement_id": "V21.RAP.2",
+      "requirement_tex": "Require regulator cancellation, gauge independence, and future/past equality for a positive rapidity status.",
+      "source_line": 1700,
+      "source_order": 30,
+      "status": "C33_FAIL_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json"
+      ],
+      "family": "RAP",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.RAP.3",
+      "requirement_tex": "Store the exact rapidity-derivative and Collins--Soper sign convention.",
+      "source_line": 1701,
+      "source_order": 31,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json"
+      ],
+      "family": "RAP",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.RAP.4",
+      "requirement_tex": "Require \\(\\dd\\cD/\\dd\\ln\\mu=\\Gamma_{\\mathrm{cusp}}\\) at the declared order.",
+      "source_line": 1702,
+      "source_order": 32,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json"
+      ],
+      "family": "ZERO",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ZERO.1",
+      "requirement_tex": "Define a typed collinear-to-soft zero-bin or overlap map.",
+      "source_line": 1703,
+      "source_order": 33,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json"
+      ],
+      "family": "ZERO",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ZERO.2",
+      "requirement_tex": "Place the overlap subtraction exactly once.",
+      "source_line": 1704,
+      "source_order": 34,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json"
+      ],
+      "family": "ZERO",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.ZERO.3",
+      "requirement_tex": "Require signed nonzero missing- and duplicate-subtraction controls.",
+      "source_line": 1705,
+      "source_order": 35,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json"
+      ],
+      "family": "ZERO",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ZERO.4",
+      "requirement_tex": "Treat soft-division and zero-bin equivalence as conditional and remainder-bearing.",
+      "source_line": 1706,
+      "source_order": 36,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "ORACLE",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.ORACLE.1",
+      "requirement_tex": "Evaluate a source-qualified target project partonic TMD with the same external-state IR prescription.",
+      "source_line": 1707,
+      "source_order": 37,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "ORACLE",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.ORACLE.2",
+      "requirement_tex": "Preserve target delta, plus, regular, anomalous-dimension, and moment structures.",
+      "source_line": 1708,
+      "source_order": 38,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.MATCH.1",
+      "requirement_tex": "Extract LF-to-project matching from a common-IR partonic difference, never a hadron-level ratio.",
+      "source_line": 1709,
+      "source_order": 39,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.MATCH.2",
+      "requirement_tex": "Decide \\(q\\leftarrow q\\), \\(q\\leftarrow g\\), \\(q\\leftarrow\\bar q\\), singlet, and nonsinglet channel status.",
+      "source_line": 1710,
+      "source_order": 40,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.MATCH.3",
+      "requirement_tex": "Require matching kernels to be state, hadron, ART25-member, and data independent.",
+      "source_line": 1711,
+      "source_order": 41,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.MATCH.4",
+      "requirement_tex": "Require infrared finiteness and gauge independence for a positive matching status.",
+      "source_line": 1712,
+      "source_order": 42,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C34/R0B_AFTER_C34/S0A",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The affirmative one-loop/operator calculation is not present. C33 records unavailable values and blocks promotion; the cited C34 package owns closure.",
+      "requirement_id": "V21.MATCH.5",
+      "requirement_tex": "Preserve the first omitted order and nonzero remainder.",
+      "source_line": 1713,
+      "source_order": 43,
+      "status": "C34_DEFERRED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.MATCH.6",
+      "requirement_tex": "Require finite-scheme factors to carry hard-factor companion transformations.",
+      "source_line": 1714,
+      "source_order": 44,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.MATCH.7",
+      "requirement_tex": "Keep project-to-ART25 scheme, scale, evolution, threshold, FNP, and CS maps separate.",
+      "source_line": 1715,
+      "source_order": 45,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json"
+      ],
+      "family": "TRAJ",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.TRAJ.1",
+      "requirement_tex": "Separate logarithmic cutoff, finite conversion, power, endpoint, zero-mode, and numerical terms.",
+      "source_line": 1716,
+      "source_order": 46,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json"
+      ],
+      "family": "TRAJ",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.TRAJ.2",
+      "requirement_tex": "Fit only analytically predicted regulator structures.",
+      "source_line": 1717,
+      "source_order": 47,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json"
+      ],
+      "family": "TRAJ",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.TRAJ.3",
+      "requirement_tex": "Forbid ART25 residuals from selecting regulator trajectories or counterterms.",
+      "source_line": 1718,
+      "source_order": 48,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json"
+      ],
+      "family": "TN",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.TN.1",
+      "requirement_tex": "Keep hadronic and vacuum-soft tensor networks as separate roots.",
+      "source_line": 1719,
+      "source_order": 49,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json"
+      ],
+      "family": "TN",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.TN.2",
+      "requirement_tex": "Treat bond dimension as an observable-specific numerical/truncation axis.",
+      "source_line": 1720,
+      "source_order": 50,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json"
+      ],
+      "family": "TN",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.TN.3",
+      "requirement_tex": "Forbid energy convergence from substituting for TMD, soft, or matching convergence.",
+      "source_line": 1721,
+      "source_order": 51,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json"
+      ],
+      "family": "Q",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.Q.1",
+      "requirement_tex": "Keep quantum state preparation separate from the renormalization and matching compiler.",
+      "source_line": 1722,
+      "source_order": 52,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json"
+      ],
+      "family": "Q",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.Q.2",
+      "requirement_tex": "Forbid a QDNN from learning missing UV, soft, rapidity, or zero-bin terms from data.",
+      "source_line": 1723,
+      "source_order": 53,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.BRIDGE.1",
+      "requirement_tex": "Keep all twelve frozen rank-zero proton points common-domain-only until every gate closes.",
+      "source_line": 1724,
+      "source_order": 54,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.BRIDGE.2",
+      "requirement_tex": "Preserve the empty-not-zero \\(642\\times0\\) representation when microscopic coordinates are unavailable.",
+      "source_line": 1725,
+      "source_order": 55,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.BRIDGE.3",
+      "requirement_tex": "Preserve all external member identities, covariance rank, and null spaces after any later projection.",
+      "source_line": 1726,
+      "source_order": 56,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.BRIDGE.4",
+      "requirement_tex": "Keep the cross-root relation \\texttt{NO\\_JOINT\\_MEASURE}.",
+      "source_line": 1727,
+      "source_order": 57,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.BRIDGE.5",
+      "requirement_tex": "Preserve ART25 data ancestry and compressed-constraint/direct-data exclusivity.",
+      "source_line": 1728,
+      "source_order": 58,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json"
+      ],
+      "family": "STATUS",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.STATUS.1",
+      "requirement_tex": "Permit rigorous tree-level-only, soft-sector, regulator, state-independence, and trajectory no-go results.",
+      "source_line": 1729,
+      "source_order": 59,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json"
+      ],
+      "family": "STATUS",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.STATUS.2",
+      "requirement_tex": "Require every no-go result to specify the exact missing calculation.",
+      "source_line": 1730,
+      "source_order": 60,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json"
+      ],
+      "family": "STATUS",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.STATUS.3",
+      "requirement_tex": "Forbid a valid soft sector from being called a complete microscopic TMD.",
+      "source_line": 1731,
+      "source_order": 61,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json"
+      ],
+      "family": "STATUS",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.STATUS.4",
+      "requirement_tex": "Forbid microscopic export, bridge readiness, inference, or process promotion before all gates pass.",
+      "source_line": 1732,
+      "source_order": 62,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "ISO",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ISO.1",
+      "requirement_tex": "Keep C7--C32 scientific results, frozen bridge roles, production routes, and authoritative artifacts unchanged.",
+      "source_line": 1733,
+      "source_order": 63,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "ISO",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.ISO.2",
+      "requirement_tex": "Keep raw transferred source files outside public Git absent permission.",
+      "source_line": 1734,
+      "source_order": 64,
+      "status": "C33_CLOSED"
+    },
+    {
+      "all_evidence_present": true,
+      "completion_owner": "C31-C33_IMPLEMENTED_CONTRACT",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c33_requirement_coverage.json"
+      ],
+      "family": "DET",
+      "positive_physics_promoted": false,
+      "rationale": "The typed architecture, preservation invariant, or conditional gate is implemented and validated by the cited repository evidence without claiming unavailable one-loop physics.",
+      "requirement_id": "V21.DET.1",
+      "requirement_tex": "Require deterministic byte-identical manifests and content-addressed heavy outputs.",
+      "source_line": 1735,
+      "source_order": 65,
+      "status": "C33_CLOSED"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source": {
+    "benchmark_families": [
+      "XXI-A",
+      "XXI-B",
+      "XXI-C",
+      "XXI-D",
+      "XXI-E",
+      "XXI-F",
+      "XXI-G",
+      "XXI-H",
+      "XXI-I",
+      "XXI-J",
+      "XXI-K",
+      "XXI-L",
+      "XXI-M",
+      "XXI-N",
+      "XXI-O",
+      "XXI-P",
+      "XXI-Q",
+      "XXI-R"
+    ],
+    "classification": "PROJECT_NORMATIVE_FORMALISM",
+    "formal_acceptance_count": 53,
+    "formal_requirement_count": 65,
+    "historical_c33_execution_status": "ABSENT_NOT_INVENTED",
+    "integration_status": "INTEGRATED_POST_C33_NO_NUMERICAL_CHANGE",
+    "minimum_ordered_negative_injections": 2040,
+    "operator_regulator_identical_calculation": false,
+    "path": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex",
+    "sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4",
+    "supplies_finite_basis_one_loop_coefficients": false
+  },
+  "status_definitions": {
+    "C33_CLOSED": "Contract or conditional gate implemented and validated in C31-C33.",
+    "C33_FAIL_CLOSED": "C33 guard implemented; positive physics status withheld on explicit unresolved input.",
+    "C34_DEFERRED": "Affirmative one-loop/operator calculation remains assigned to a named C34 package."
+  }
+}

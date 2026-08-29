@@ -1,0 +1,1284 @@
+{
+  "bundles": [
+    {
+      "arrays": [
+        {
+          "dtype": "float64",
+          "name": "A_CT",
+          "nnz": 28,
+          "sha256": "afdbe629e1300a7405b57cebe58560acd246b16c86b1461004ee901f6d102ddb",
+          "shape": [
+            10,
+            10
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "G_q",
+          "nnz": 4,
+          "sha256": "e716c44f4faff7d006c4a9acf9af0622784eba1f11d135fc211cb4a967879f9e",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "G_qg",
+          "nnz": 8,
+          "sha256": "9b46ce3dc305ce2c500b8561967cdfed6e8ca5bcef6c55d7f1efec7f207e39bb",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "H_q",
+          "nnz": 10,
+          "sha256": "b9dccde0285e1e61a6a085df2d44e829e0104aab2f8d6ce9f84ab25b6f9acf9a",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "H_qg",
+          "nnz": 22,
+          "sha256": "b84baa81a15a0219740fc2e625928b84c99715dd8a0bc6d0445f1b7c3cd3fa25",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_convolution",
+          "nnz": 16,
+          "sha256": "8b516cc788847461b9764eb3a806488f2a866c835f40ce8c6d2da5212d7fb4af",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_delta",
+          "nnz": 1,
+          "sha256": "ae2cc60d29de85c7ed46adf5bb27e89a62bdafc75e3f8822473568055af8b86e",
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_logplus",
+          "nnz": 4,
+          "sha256": "4c0f2f0145d04847e23ec5b2423a80cf882bb83832c486e2f6a27e98532fd911",
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_mellin",
+          "nnz": 12,
+          "sha256": "4318395a9af7bb0d61e4b8883da2672f9dbf2a2ee2b85e73933fbace814aa9b8",
+          "shape": [
+            3,
+            4
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_plus",
+          "nnz": 4,
+          "sha256": "2a0733181c1ba0ec61732d940ab85bceb18ba84bd2af8baa7299526b0d6d1af4",
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_regular",
+          "nnz": 4,
+          "sha256": "900608eb90dfff739196ab2ddbcc9326295adcfaef6076d5d007233ccbb4fe17",
+          "shape": [
+            1,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "P_q_to_next",
+          "nnz": 4,
+          "sha256": "045bfc3cae016c45560f8864b75675aaa6aee15a87b8d756a3a85004a2910b2a",
+          "shape": [
+            6,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "P_qg_to_next",
+          "nnz": 8,
+          "sha256": "1b143b10c20f5ae38a702d300d7353a996d3525d2638d65e15187ac8ce9feff1",
+          "shape": [
+            12,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "R_q_from_next",
+          "nnz": 4,
+          "sha256": "26ba6f0e9674b2871ae161f2c7d641ab3ff0a687749b6bef1f3c6b18f05f5506",
+          "shape": [
+            4,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "R_qg_from_next",
+          "nnz": 8,
+          "sha256": "dc3548d9cfac911ec6688eb718ffa2f1d9325ed26daa987a53f7dd86033b3f2f",
+          "shape": [
+            8,
+            12
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "V_q_qg",
+          "nnz": 7,
+          "sha256": "582ff95442b34a17c180597365979f074fdc3d76c10d691ba59876c4ab18dc6e",
+          "shape": [
+            4,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "V_qg_q",
+          "nnz": 7,
+          "sha256": "7ac4d5d4b9265523eb87306d8af810a1d8148631ef5c82e708950ae283acb71f",
+          "shape": [
+            8,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_endpoint",
+          "nnz": 7,
+          "sha256": "ccbdc0a424797bf8d83b381932a4c9680d232c4f4f13d028d3d45c6862dab6e0",
+          "shape": [
+            8,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_longitudinal",
+          "nnz": 7,
+          "sha256": "e30de220ef235e29bf4509586952055aa5a414bee74ff076a0d62b1099b9a441",
+          "shape": [
+            8,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_qg_q",
+          "nnz": 7,
+          "sha256": "e3a729eaa6117307e471db4e1802050f50a1c92bd689f4f5c4f824410299a609",
+          "shape": [
+            8,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_transverse",
+          "nnz": 7,
+          "sha256": "c4ab985f945c06c06afca6545589dbfc7a7b45fbd7ed50f75460256d63640bce",
+          "shape": [
+            8,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_basis",
+          "nnz": 5,
+          "sha256": "b0d62907db1351d7e59a17f6237916a22e1c2f0b3b2e0fb18ab47cca9ef98863",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_bilocal",
+          "nnz": 5,
+          "sha256": "759c4b9dbd11245e024e1cfb6e7b779661a1c2ead06b00b0b9654e0b1941a0a5",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_endpoint",
+          "nnz": 5,
+          "sha256": "223aaf1577c973166b193223493ae2cf52b35473167b7dc6bc69cd52c3d5c61e",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_field",
+          "nnz": 5,
+          "sha256": "cf340678ab0f65a339cd73e77812e1d9c1f996778fa98a3e922a3d6b66c6d11e",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_inst_fermion",
+          "nnz": 5,
+          "sha256": "d585cff6683f3f6430e6a649c8bf0036e648d09e54224178f024026dc4535658",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_inst_gluon",
+          "nnz": 5,
+          "sha256": "aff83eaf791bb76019f8c03115e1535c7956a0d79271cdfc8c85f61905388db4",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_mass",
+          "nnz": 5,
+          "sha256": "97c10bc5cf6a7f91a16f66f90aa62c41c5f308ff2e21660ed073f9f2394bd640",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_transverse",
+          "nnz": 5,
+          "sha256": "0d3a5862e5e64a44398e8193f02349e385e4ed6d43f23a7a8fb30009dc2247cd",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_vertex",
+          "nnz": 5,
+          "sha256": "ca6cc3f91d44406c86a77d2795326f8f40c46a7ecfb4b19d740d65ee513090cd",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_wilson",
+          "nnz": 5,
+          "sha256": "e534ac95363c78131f136c18ef42ebd8a0f3c70e55b3c5ef67cc7a2fce09eb9c",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "q_vectors",
+          "nnz": 4,
+          "sha256": "e716c44f4faff7d006c4a9acf9af0622784eba1f11d135fc211cb4a967879f9e",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "qg_vectors",
+          "nnz": 8,
+          "sha256": "9b46ce3dc305ce2c500b8561967cdfed6e8ca5bcef6c55d7f1efec7f207e39bb",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_boundary",
+          "nnz": 6,
+          "sha256": "d64d6efe3859c5b8ecf1f98e0ddafe095726f2986c48649faf66192533fd5b1e",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_constrained",
+          "nnz": 6,
+          "sha256": "f847fc500cb5279e547f61aee47b6cf19043c3280c731520bbff5d2ff0f041eb",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_inst_fermion",
+          "nnz": 6,
+          "sha256": "2ff84d9eba3157cf1b6b08dcbe73d4a750af47a1ebda8d188414867f15d98e94",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_inst_gluon",
+          "nnz": 6,
+          "sha256": "2a8949bd92dcfbc6c5f965922b6d450fa4c41cc66d10d6095fd17512c406b2b5",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_zero_mode",
+          "nnz": 6,
+          "sha256": "5c00d24fd66f3e8a077ae28b5eb1dbc80fd37f6168abcd9c753830cd26f3e0f5",
+          "shape": [
+            4,
+            4
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "x_grid",
+          "nnz": 4,
+          "sha256": "accca9fe6922fb99027fdfcd569f31bc58e574af34b68dc4b028e5cbacf97ff2",
+          "shape": [
+            4
+          ]
+        }
+      ],
+      "basis_order_hashes": {
+        "q": "ad9797a1e51316e2d41e155d6f705b1df9cffb64f8251b74147d61adf08606c4",
+        "qg": "1f96eecbc87a83fc234d02afdb88f9d386cf89dbb52028522eca281d715ded32"
+      },
+      "basis_tables": {
+        "q_basis_table.json": "ad9797a1e51316e2d41e155d6f705b1df9cffb64f8251b74147d61adf08606c4",
+        "qg_basis_table.json": "1f96eecbc87a83fc234d02afdb88f9d386cf89dbb52028522eca281d715ded32"
+      },
+      "bundle_content_sha256": "ae1d23e7b1828ad678d3b173fbe1e21b6eb7b0deff2c16f0a28f7ffc52e82347",
+      "generator_command": "PYTHONPATH=src python3 scripts/build_c40_m0b_artifacts.py",
+      "refinement_to_K23": {
+        "Hamiltonian_intertwining_residual": 0.05302980294136496,
+        "P_q": {
+          "dtype": "complex128",
+          "name": "P_q",
+          "nnz": 4,
+          "sha256": "045bfc3cae016c45560f8864b75675aaa6aee15a87b8d756a3a85004a2910b2a",
+          "shape": [
+            6,
+            4
+          ]
+        },
+        "P_qg": {
+          "dtype": "complex128",
+          "name": "P_qg",
+          "nnz": 8,
+          "sha256": "1b143b10c20f5ae38a702d300d7353a996d3525d2638d65e15187ac8ce9feff1",
+          "shape": [
+            12,
+            8
+          ]
+        },
+        "RP_residual": 0.0,
+        "R_q": {
+          "dtype": "complex128",
+          "name": "R_q",
+          "nnz": 4,
+          "sha256": "26ba6f0e9674b2871ae161f2c7d641ab3ff0a687749b6bef1f3c6b18f05f5506",
+          "shape": [
+            4,
+            6
+          ]
+        },
+        "R_qg": {
+          "dtype": "complex128",
+          "name": "R_qg",
+          "nnz": 8,
+          "sha256": "dc3548d9cfac911ec6688eb718ffa2f1d9325ed26daa987a53f7dd86033b3f2f",
+          "shape": [
+            8,
+            12
+          ]
+        },
+        "Wilson_intertwining_residual": 0.15737968606143204
+      },
+      "relative_runtime_path": "data/runtime/c40_m0b/K17",
+      "resolution": {
+        "K": 17,
+        "q_dimension": 4,
+        "qg_dimension": 8
+      }
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float64",
+          "name": "A_CT",
+          "nnz": 28,
+          "sha256": "afdbe629e1300a7405b57cebe58560acd246b16c86b1461004ee901f6d102ddb",
+          "shape": [
+            10,
+            10
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "G_q",
+          "nnz": 6,
+          "sha256": "035ddb859ebb61c56a9c7052cc1e09c38b71823056e1444f5c823dcc0cfab986",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "G_qg",
+          "nnz": 12,
+          "sha256": "0885840a3c4541a9e8d453f681c4de3cebd9e28f72e4b43c2b89fa984084010a",
+          "shape": [
+            12,
+            12
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "H_q",
+          "nnz": 16,
+          "sha256": "8339bc45321adbfecee761d9eb37d210e57c6affa3ba7d363a3902e5246d54f3",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "H_qg",
+          "nnz": 34,
+          "sha256": "a8c80a2d3e90ddd150a9eaa2e60249b7b3427c29d22c9e8222ba069d787da9eb",
+          "shape": [
+            12,
+            12
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_convolution",
+          "nnz": 36,
+          "sha256": "cacd071c2d13a573ff69bda3d59ecca5ef3abca4541da71eb8e74a2d17f35585",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_delta",
+          "nnz": 1,
+          "sha256": "7246ae77314c13a1aae1006ff470b0d31d2ac5d032001ac2c8ed9d67ff9fc6c7",
+          "shape": [
+            1,
+            6
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_logplus",
+          "nnz": 6,
+          "sha256": "f34ddf9d851e89df507f6541f77b95a20e8cfca7cf072677625387d83d126279",
+          "shape": [
+            1,
+            6
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_mellin",
+          "nnz": 18,
+          "sha256": "9aac9e676d7e9e0257eb1829015e7ab50b2006bb714a5fdf19829c6ecf989935",
+          "shape": [
+            3,
+            6
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_plus",
+          "nnz": 6,
+          "sha256": "dd9b6d28f661d6cce3c69d7ce4efcaeaf71d713522571da23e4665b5c626abe1",
+          "shape": [
+            1,
+            6
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_regular",
+          "nnz": 6,
+          "sha256": "551bb71909c70ca959e26aeaac6a296aad83a7f9cbfefe1f8645e71f7de10fbd",
+          "shape": [
+            1,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "P_q_to_next",
+          "nnz": 6,
+          "sha256": "b29282e2a97f8887c62fd5fd0e4f9a41f247921f29fb00d7620f2db03dd7b97b",
+          "shape": [
+            8,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "P_qg_to_next",
+          "nnz": 12,
+          "sha256": "f9fbcfb3b9a53ac81bfb967c9c0dd2000d184fd61bb9d27db2f2e2ae83b28316",
+          "shape": [
+            16,
+            12
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "R_q_from_next",
+          "nnz": 6,
+          "sha256": "cc758349997ad62da7cbf39d7311be8d517c6428fa4d4dbdf9ab435cedcf37a2",
+          "shape": [
+            6,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "R_qg_from_next",
+          "nnz": 12,
+          "sha256": "4c66440d25e34660d7bea20cd371bdcd8d632921ff6fd6e858776d32ccae40fd",
+          "shape": [
+            12,
+            16
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "V_q_qg",
+          "nnz": 11,
+          "sha256": "7939481495c2405530040eb6f417825c29977d917be4fa4e979e00380f0dc213",
+          "shape": [
+            6,
+            12
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "V_qg_q",
+          "nnz": 11,
+          "sha256": "bee0e2a8e68faaf728c3f9e549be2ffecf845271cf7b65ba0dfd11f097c77fe8",
+          "shape": [
+            12,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_endpoint",
+          "nnz": 11,
+          "sha256": "27dcd3e92a0a97c50497267806a0b0eabd88f6c447903a8d95b291f6bb43a853",
+          "shape": [
+            12,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_longitudinal",
+          "nnz": 11,
+          "sha256": "875c793cb3294a20ed726daa587601d225c298e92f4162cb06de2921e0d0b1ab",
+          "shape": [
+            12,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_qg_q",
+          "nnz": 11,
+          "sha256": "d30f4179935a8ed126c62125ddb79ad2540dd4b4852f201183e26181ad3c9d88",
+          "shape": [
+            12,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_transverse",
+          "nnz": 11,
+          "sha256": "e13131b1d8794b3a2f6e7e2ed10a8c9a96daf6246865bd8787e29848af95f23b",
+          "shape": [
+            12,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_basis",
+          "nnz": 7,
+          "sha256": "24ba1ea9a688b039e1ee6ca97631dc1808d620e54f5b47acf68649774af5221c",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_bilocal",
+          "nnz": 7,
+          "sha256": "91324fe25b4020b0a71bf6f08e8b97f5d9c323678a5c390cf6b93cb2a2b02473",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_endpoint",
+          "nnz": 7,
+          "sha256": "59ae450ce61f3100e69b9857eae6841b6a04ee1f931f7fb678a63edc2f070155",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_field",
+          "nnz": 7,
+          "sha256": "61e6304d5c7c3d0571db0c756000136f51bee5ccb9b2becb8137d42d0228d53a",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_inst_fermion",
+          "nnz": 7,
+          "sha256": "687da05818b49d9245bc07153e6809c615ef2dcfc981ef513d448390edf7237f",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_inst_gluon",
+          "nnz": 7,
+          "sha256": "7862ab4cf0d2ed66d70f3baabd345b85cc4130cdac59fb645583bee3eabead67",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_mass",
+          "nnz": 7,
+          "sha256": "80c648020cf73ed22cf0c35ed6ae12f39c7e20cdfa771be704e7c781b20460ac",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_transverse",
+          "nnz": 7,
+          "sha256": "fb8061eb6ac69548924f4cee09aa9530c766f871be93b9dd4f36961bfdcae0a4",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_vertex",
+          "nnz": 7,
+          "sha256": "6de299dec84a0c77835d2dbd2a1646b8410649dea5976990818b96e1a3371c3d",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_wilson",
+          "nnz": 7,
+          "sha256": "b6315eb4929fc41de4ed561b0ec45bdf12f61e2604e51cdb74dcbf2e49242df9",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "q_vectors",
+          "nnz": 6,
+          "sha256": "035ddb859ebb61c56a9c7052cc1e09c38b71823056e1444f5c823dcc0cfab986",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "qg_vectors",
+          "nnz": 12,
+          "sha256": "0885840a3c4541a9e8d453f681c4de3cebd9e28f72e4b43c2b89fa984084010a",
+          "shape": [
+            12,
+            12
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_boundary",
+          "nnz": 8,
+          "sha256": "5263bcedf913d9f60437cf7b5b603609a1eaa016cdd42b2413f86d923d2ca2df",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_constrained",
+          "nnz": 8,
+          "sha256": "7a9d82b5febdfa61b81ede27b02a0f834f8a9c8819c7c5a9f120abe1be7b8890",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_inst_fermion",
+          "nnz": 8,
+          "sha256": "8070abea6799c2bfc26f931c78ac8de7b625c6f4337c0c7d34a0f0dffe6d2646",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_inst_gluon",
+          "nnz": 8,
+          "sha256": "c63492a0756115a8bf6bd60b6febee97bccecaf3c5515b7493b7f10a00b4c466",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_zero_mode",
+          "nnz": 8,
+          "sha256": "3a9c1d15341558fe0d88103face4a17adaf262c69df252dcf29e2edb4c3ea740",
+          "shape": [
+            6,
+            6
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "x_grid",
+          "nnz": 6,
+          "sha256": "e5562b13440eaa05177837c7255f36f60153bdb102f33040afda058b89880274",
+          "shape": [
+            6
+          ]
+        }
+      ],
+      "basis_order_hashes": {
+        "q": "e11244b3f24640bcff245402afcd8c118f85117c1345ef11404a530b730c3b4a",
+        "qg": "f3d6e580a249d7b7612e5b3f3b3ae8bc9899a7f6297ca247e60fd4134e01e147"
+      },
+      "basis_tables": {
+        "q_basis_table.json": "e11244b3f24640bcff245402afcd8c118f85117c1345ef11404a530b730c3b4a",
+        "qg_basis_table.json": "f3d6e580a249d7b7612e5b3f3b3ae8bc9899a7f6297ca247e60fd4134e01e147"
+      },
+      "bundle_content_sha256": "c23d94b122e8fe701c5306ca54d9d0cca5218fa1a0e0646b487a626f84444f70",
+      "generator_command": "PYTHONPATH=src python3 scripts/build_c40_m0b_artifacts.py",
+      "refinement_to_K31": {
+        "Hamiltonian_intertwining_residual": 0.07954470441204745,
+        "P_q": {
+          "dtype": "complex128",
+          "name": "P_q",
+          "nnz": 6,
+          "sha256": "b29282e2a97f8887c62fd5fd0e4f9a41f247921f29fb00d7620f2db03dd7b97b",
+          "shape": [
+            8,
+            6
+          ]
+        },
+        "P_qg": {
+          "dtype": "complex128",
+          "name": "P_qg",
+          "nnz": 12,
+          "sha256": "f9fbcfb3b9a53ac81bfb967c9c0dd2000d184fd61bb9d27db2f2e2ae83b28316",
+          "shape": [
+            16,
+            12
+          ]
+        },
+        "RP_residual": 0.0,
+        "R_q": {
+          "dtype": "complex128",
+          "name": "R_q",
+          "nnz": 6,
+          "sha256": "cc758349997ad62da7cbf39d7311be8d517c6428fa4d4dbdf9ab435cedcf37a2",
+          "shape": [
+            6,
+            8
+          ]
+        },
+        "R_qg": {
+          "dtype": "complex128",
+          "name": "R_qg",
+          "nnz": 12,
+          "sha256": "4c66440d25e34660d7bea20cd371bdcd8d632921ff6fd6e858776d32ccae40fd",
+          "shape": [
+            12,
+            16
+          ]
+        },
+        "Wilson_intertwining_residual": 0.08584394784721228
+      },
+      "relative_runtime_path": "data/runtime/c40_m0b/K23",
+      "resolution": {
+        "K": 23,
+        "q_dimension": 6,
+        "qg_dimension": 12
+      }
+    },
+    {
+      "arrays": [
+        {
+          "dtype": "float64",
+          "name": "A_CT",
+          "nnz": 28,
+          "sha256": "afdbe629e1300a7405b57cebe58560acd246b16c86b1461004ee901f6d102ddb",
+          "shape": [
+            10,
+            10
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "G_q",
+          "nnz": 8,
+          "sha256": "9b46ce3dc305ce2c500b8561967cdfed6e8ca5bcef6c55d7f1efec7f207e39bb",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "G_qg",
+          "nnz": 16,
+          "sha256": "f4539e27394c2ed1e0567663764cc890b3b731ed2ee25ddc9bac6a82e80e10f5",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "H_q",
+          "nnz": 22,
+          "sha256": "412bbaebe3aa637b0ef03c3042cd2da3dfb0e6600efdcd9e61c9056ee4356961",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "H_qg",
+          "nnz": 46,
+          "sha256": "8161949df4aaaa37bdddc74b6308372b86fcb3821eade2238d7319deeac443f0",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_convolution",
+          "nnz": 64,
+          "sha256": "f3081a32a60fbbef9d36487dfa883b90e3550ae81602ed9d28719aebacff7328",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_delta",
+          "nnz": 1,
+          "sha256": "da989c85ee935d7deb14f420d5e9a5cfd3b01946734f5f16959148920bdcdc6b",
+          "shape": [
+            1,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_logplus",
+          "nnz": 8,
+          "sha256": "c49be8b06679efd3cf93f2767e9738d94caa39217adbd29499a5048d8f15f26f",
+          "shape": [
+            1,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_mellin",
+          "nnz": 24,
+          "sha256": "7842aa7bdcd49355921bdb7a7fe10a6a4cad420c60d2b278e81bf13bfc89a395",
+          "shape": [
+            3,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_plus",
+          "nnz": 8,
+          "sha256": "937d8f0b97f4baf146d6df549ff4dfb9834db6c619a948495022b9305bcb16ca",
+          "shape": [
+            1,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "M_regular",
+          "nnz": 8,
+          "sha256": "71b2a2945da786d4029016d86aef4a8fd1b0e2f0a88917d8287080271624eb24",
+          "shape": [
+            1,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "V_q_qg",
+          "nnz": 14,
+          "sha256": "c98027e80fe7f6ff5130d15b31f1e3805cb46a4fcdf3635fa1b22d43393fb308",
+          "shape": [
+            8,
+            16
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "V_qg_q",
+          "nnz": 14,
+          "sha256": "a9fb7a9d23fadd24cd3e8e846b93980b7dbf067f486d01230eb5462ec57e1215",
+          "shape": [
+            16,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_endpoint",
+          "nnz": 14,
+          "sha256": "01ec08d2c1aca709e224acc94e7a5fc1f2c270916f8d03764a63f1324aea685f",
+          "shape": [
+            16,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_longitudinal",
+          "nnz": 14,
+          "sha256": "a90d144a6e5391e4d44f8cd295b3dedd0ec85af19955aebe27a9b59930d5f71e",
+          "shape": [
+            16,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_qg_q",
+          "nnz": 14,
+          "sha256": "20890f2cc17c1e434bd7bc4cdaa7476f854e9698f1d94e48e3a6109aec73e828",
+          "shape": [
+            16,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "W_transverse",
+          "nnz": 14,
+          "sha256": "bcc46826fc868c6aa12fc3f357d77fa64fc2d41363bf7b0f521ed7ab9629a6e0",
+          "shape": [
+            16,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_basis",
+          "nnz": 9,
+          "sha256": "106465950edfa1571b434f53594fd6c7a514258a81dafa0c095af04d39d60ef0",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_bilocal",
+          "nnz": 9,
+          "sha256": "b2395812335b0d6fa153872fb525dda73d1f4930c4b0f3942083bed773b14e13",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_endpoint",
+          "nnz": 9,
+          "sha256": "1db30a4b7621dcae0fcc717fb6a39c2324f966ffed169aa3dc9ccc195df200bc",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_field",
+          "nnz": 9,
+          "sha256": "2d4510d44c9572bbcf6e1d7b9933d4552af6c2d7ec9768aded95ded037c291a9",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_inst_fermion",
+          "nnz": 9,
+          "sha256": "b407fae01378248dedfc9555405388b454fadd84771424ad2f83d4c6ed4364d0",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_inst_gluon",
+          "nnz": 9,
+          "sha256": "17b383d73ec2ea56405478908d19b9988540289163f6a9a56d69360d99c10f32",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_mass",
+          "nnz": 9,
+          "sha256": "6d6252d1b6e8ef15dcd52446f7ed4c9cad5b8515c8377dbad6d46aac434d3fc7",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_transverse",
+          "nnz": 9,
+          "sha256": "7b6f39e0f7494ec5946d451ea28e3367ff1c1aa238d6b982250f2b280e645b80",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_vertex",
+          "nnz": 9,
+          "sha256": "364e422d918ce9fc1a7ef1a637ee1ec40dc6c63aefd6494aae5d556740d27d58",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "ct_wilson",
+          "nnz": 9,
+          "sha256": "4a2896d679cb3ae300fc0b0cf8b48ec6f3f6258d1b88fd0c2c10ce993e3fea96",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "q_vectors",
+          "nnz": 8,
+          "sha256": "9b46ce3dc305ce2c500b8561967cdfed6e8ca5bcef6c55d7f1efec7f207e39bb",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "qg_vectors",
+          "nnz": 16,
+          "sha256": "f4539e27394c2ed1e0567663764cc890b3b731ed2ee25ddc9bac6a82e80e10f5",
+          "shape": [
+            16,
+            16
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_boundary",
+          "nnz": 10,
+          "sha256": "d85b78788292769d0794fb463bd77796ac16d1318c499254c46055fa557c3061",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_constrained",
+          "nnz": 10,
+          "sha256": "22bf741f870fd3242e5df8b835c120bc51249044caa52007ab449defd857b3ed",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_inst_fermion",
+          "nnz": 10,
+          "sha256": "ea856fa16abf710581721911b3ec7efdaf5106392b8aa1898cd429a325aebf67",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_inst_gluon",
+          "nnz": 10,
+          "sha256": "e449a076ee1d732a92145729a655a9d743372a2920d82e8a1e092e0e51f32814",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "complex128",
+          "name": "term_zero_mode",
+          "nnz": 10,
+          "sha256": "8214f7c55758fe84c54990e9584a4e081b10f0525146d44d50c7c305152dfdca",
+          "shape": [
+            8,
+            8
+          ]
+        },
+        {
+          "dtype": "float64",
+          "name": "x_grid",
+          "nnz": 8,
+          "sha256": "b2adbc3ab1ce3b63dcd1cab1e58ebec21b2d6a4c4578e817531829dc8699aedb",
+          "shape": [
+            8
+          ]
+        }
+      ],
+      "basis_order_hashes": {
+        "q": "b5ae9cf870d2325fa78f4940fcb1da6c780f56afbf01058a8d926c3d488d3e33",
+        "qg": "63f1ee5c214875a1f04609575f2def5203af85bbcdc8601dbda7ca72a906444b"
+      },
+      "basis_tables": {
+        "q_basis_table.json": "b5ae9cf870d2325fa78f4940fcb1da6c780f56afbf01058a8d926c3d488d3e33",
+        "qg_basis_table.json": "63f1ee5c214875a1f04609575f2def5203af85bbcdc8601dbda7ca72a906444b"
+      },
+      "bundle_content_sha256": "6ba08b6b5e02fb2bbdd0644fb256b496e697ab845acd7f6331f4841330fb9f6b",
+      "generator_command": "PYTHONPATH=src python3 scripts/build_c40_m0b_artifacts.py",
+      "relative_runtime_path": "data/runtime/c40_m0b/K31",
+      "resolution": {
+        "K": 31,
+        "q_dimension": 8,
+        "qg_dimension": 16
+      }
+    }
+  ],
+  "package": "C40/M0B",
+  "runtime_contract": "Each path is regenerated byte-for-byte by generator_command on the declared NumPy version; no test reads a metadata substitute.",
+  "status": "C40_EXECUTABLE_PARTONIC_OPERATOR_SUBSTRATE_READY"
+}

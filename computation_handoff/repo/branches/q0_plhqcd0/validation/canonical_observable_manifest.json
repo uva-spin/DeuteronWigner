@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "scope": "WP11 process and observable validation for the canonical spin-1 parent",
+  "rule": "Universal parents retain link/color labels. Process hard factors select or weight them; they are never silently summed.",
+  "observables": [
+    {
+      "id": "b1_hermes",
+      "process": "inclusive DIS",
+      "parent_channels": ["quark f1LL", "Sullivan pion tensor source"],
+      "artifact": "outputs/figures/b1/b1_ia_pion_vs_hermes.validation.json",
+      "status": "pass",
+      "evidence": "pion/Fock-normalized chi2 improves over impulse for six HERMES bins",
+      "limitation": "six-quark curve remains a separately labelled observable-level scenario"
+    },
+    {
+      "id": "quark_sidis_dy_todd",
+      "process": "SIDIS and Drell-Yan",
+      "parent_channels": ["quark f1Tperp", "quark h1perp", "quark g1LT", "quark g1TT"],
+      "hard_color_rule": "future/past staple reversal changes every T-odd coefficient sign and leaves T-even coefficients invariant",
+      "tests": ["tests/test_axial_tensor_todd.py", "tests/test_parent_quark_tmd.py"],
+      "status": "pass"
+    },
+    {
+      "id": "gluon_link_color_channels",
+      "process": "prospective gluon-sensitive reactions",
+      "parent_channels": ["f-type [+,+]", "d-type [+,-]"],
+      "hard_color_rule": "keep f-type and d-type universal parents independent; a specified factorization theorem supplies process weights",
+      "tests": ["tests/test_canonical_gluon_lfwf_todd_production.py"],
+      "status": "pass",
+      "limitation": "no unique numerical f/d combination is claimed without a named process and hard factors"
+    },
+    {
+      "id": "number_momentum_sum_rules",
+      "process": "collinear reduction",
+      "artifact": "outputs/validation/av18_parent_moment_coverage.json",
+      "status": "pass",
+      "evidence": "valence number and all-parton momentum close within declared tolerances"
+    },
+    {
+      "id": "parent_density_constraints",
+      "process": "all projections",
+      "tests": ["tests/test_canonical_gluon_lfwf_todd_production.py", "tests/test_quark_tmd_matching.py", "tests/test_parent_quark_tmd.py"],
+      "status": "pass",
+      "evidence": "Hermiticity, positivity, mechanism closure, projection reconstruction, and allowed-basis residuals"
+    }
+  ]
+}

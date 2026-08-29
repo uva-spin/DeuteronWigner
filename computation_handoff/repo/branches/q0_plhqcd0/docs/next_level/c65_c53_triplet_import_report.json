@@ -1,0 +1,33 @@
+{
+  "C53_inventory_matching_records": [],
+  "blocker": "C53's committed inventory has no hash-verified runtime path for the frozen U3 isometry. raw_emission_E is a differently normalized SU(3) emission map (E\u2020E=C_F I), while the two stored projectors are 24-by-24; C65 may not derive, normalize, or substitute either while claiming a read-only C53 U3 import.",
+  "projectors": [
+    "triplet_projector_U",
+    "triplet_projector_E"
+  ],
+  "raw_emission_E": {
+    "array_sha256": "bef2f7a08b33826e17bdab0b027996f89892f9825c9f09d743d8703281488f4d",
+    "basis_order_hash": "866ecbd4a14d878bcb4866047dbe85010ee07805080c2487bc82fe66811ef506",
+    "coupling_power": 1,
+    "dtype": "<c16",
+    "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+    "generator": "python scripts/build_c53_vertex2_artifacts.py",
+    "name": "raw_emission_E",
+    "nnz": 17,
+    "runtime_path": "data/runtime/c53_vertex2/raw_emission_E.npy",
+    "shape": [
+      24,
+      3
+    ],
+    "units": "dimensionless"
+  },
+  "required_hash": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+  "required_object": "C53 frozen 24-by-3 triplet isometry U3",
+  "required_shape": [
+    24,
+    3
+  ],
+  "runtime_paths_declared": [],
+  "runtime_paths_existing": [],
+  "status": "FAIL"
+}

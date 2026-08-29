@@ -1,0 +1,14 @@
+{
+  "conjugation": "W_(beta,alpha)=W_(alpha,beta)^dagger",
+  "diagonal_evaluation": "W_(beta,alpha;nu)=mask[beta,nu]*mask[alpha,nu] only after the ordered operator formula",
+  "formula": "W_(beta,alpha;nu,nuprime)=[Pi_g|beta]_nu,rho delta_rho,sigma [Pi_g|alpha]_sigma,nuprime",
+  "hermiticity": "source W3 plus its adjoint and the ordered pair contract; no (M+Mdagger)/2 operation exists",
+  "rejected": {
+    "arbitrary_intersection": "not an operator derivation",
+    "arbitrary_union": "admits a mode absent from one ordered attachment",
+    "incoming_only": "does not regulate the left source field",
+    "posthoc_hermitian_sum": "forbidden"
+  },
+  "selected": "IFNORM2-ORDERED-JOINT-SUPPORT",
+  "source_order": "b_dagger A_left (i partial_plus)^-1 A_right b; commutator identifies the same nu after both ordered projectors act"
+}

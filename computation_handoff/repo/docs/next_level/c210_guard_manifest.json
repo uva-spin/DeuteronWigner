@@ -1,0 +1,53 @@
+{
+  "schema": "C210-GUARD-MANIFEST-V1",
+  "artifact": "guard_manifest",
+  "package_root": "4053af60153556d37c3fd045b3fd5d3a6d796494e0005b4fafaeb06d991ac756",
+  "status": "C210_C209_EXECUTABLE_ENCLOSED_TARGET_MOMQ_CONDITION_READY_NONPHYSICAL",
+  "plan": "MOMQCOND2-A",
+  "physical": false,
+  "exact_finite_point": false,
+  "continuum_value": false,
+  "resolution_average": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "record_id": "C210-GUARD-K9",
+        "resolution": "K9",
+        "nonexceptional": "zero excluded from momentum-invariant enclosures",
+        "Gram": "zero excluded from determinant enclosure",
+        "common_ir": "caller record required",
+        "gauge_scheme": "explicit alpha, Nf, a and MOMq scheme",
+        "failure": "reject without channel value",
+        "physical": false
+      },
+      {
+        "record_id": "C210-GUARD-K11",
+        "resolution": "K11",
+        "nonexceptional": "zero excluded from momentum-invariant enclosures",
+        "Gram": "zero excluded from determinant enclosure",
+        "common_ir": "caller record required",
+        "gauge_scheme": "explicit alpha, Nf, a and MOMq scheme",
+        "failure": "reject without channel value",
+        "physical": false
+      },
+      {
+        "record_id": "C210-GUARD-K13",
+        "resolution": "K13",
+        "nonexceptional": "zero excluded from momentum-invariant enclosures",
+        "Gram": "zero excluded from determinant enclosure",
+        "common_ir": "caller record required",
+        "gauge_scheme": "explicit alpha, Nf, a and MOMq scheme",
+        "failure": "reject without channel value",
+        "physical": false
+      }
+    ],
+    "count": 3,
+    "root": "98a01d91d2964388732abb361681cd52df5cdea195dd5723bb7cbdca845db367"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "C125-TARGET-VALIDATION-V1",
+  "route_TA": "direct C112/C123 physical-basis lookup",
+  "route_TB": "C64/C74/C77 source reconstruction",
+  "resolutions": ["K9_2_N8_b0.40", "K11_2_N10_b0.45", "K13_2_N12_b0.50"],
+  "q_dimensions": [6, 6, 6],
+  "qg_dimensions": [1344, 2700, 4752],
+  "direct_sum_dimensions": [1350, 2706, 4758],
+  "global_order": "q followed by qg",
+  "identity_mismatches": 0,
+  "order_mismatches": 0,
+  "cardinality_mismatches": 0,
+  "orientation_mismatches": 0,
+  "leakage": {"CM_excited": 0, "anti_sextet": 0, "15": 0},
+  "status": "CLOSED"
+}

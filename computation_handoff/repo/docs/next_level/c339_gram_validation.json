@@ -1,0 +1,54 @@
+{
+  "package_root": "90523886579204d39e03fe0b62037b129a4c3dfbcd2f5bddfe8c5d6f264e3050",
+  "physical": false,
+  "plan": "RIMASSC43WINDGRAM1-C",
+  "record": {
+    "all_full_rank": true,
+    "center_charged_tail_absolute_bound": 0.005858911380238251,
+    "coefficient_enclosure_radius": 0.005858911380238862,
+    "finite_exact_span": false,
+    "physical": false,
+    "root": "8a2664e9aa4e338559b164d0e13a98c9b927320ea823c0614d8df0e5681fdee3",
+    "rows": [
+      {
+        "G": 14,
+        "M": 2,
+        "coefficient_max_defect": 8.326672684688674e-17,
+        "condition_number": 67.44234048166288,
+        "dimension": 7,
+        "full_rank": true,
+        "imaginary_coefficient_max": 1.2514165776300236e-18,
+        "minimum_eigenvalue": 0.0968920261768185,
+        "rank": 7,
+        "reconstruction_norm2": 0.0
+      },
+      {
+        "G": 18,
+        "M": 4,
+        "coefficient_max_defect": 3.885780586188048e-16,
+        "condition_number": 82.33982710814014,
+        "dimension": 9,
+        "full_rank": true,
+        "imaginary_coefficient_max": 3.574993141585361e-17,
+        "minimum_eigenvalue": 0.07800848403316565,
+        "rank": 9,
+        "reconstruction_norm2": 0.0
+      },
+      {
+        "G": 22,
+        "M": 5,
+        "coefficient_max_defect": 6.106226635438361e-16,
+        "condition_number": 82.48781074763828,
+        "dimension": 11,
+        "full_rank": true,
+        "imaginary_coefficient_max": 1.8546431093201624e-17,
+        "minimum_eigenvalue": 0.07785568653165535,
+        "rank": 11,
+        "reconstruction_norm2": 2.949029909160572e-17
+      }
+    ],
+    "triality_zero_higher_winding_absolute_bound": 0.005858911380238251
+  },
+  "status": "C339_INCREASING_RANK_WINDING_GRAM_ENCLOSED_TRIALITY_ZERO_COMPLETION_MISSING",
+  "validation": "PASS"
+}

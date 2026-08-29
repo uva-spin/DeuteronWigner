@@ -1,0 +1,96 @@
+{
+  "root": "3fc4c631cf98ffd041722c29eb03335fc018132dce2ee51c8d932f4a8c59fca6",
+  "rows": [
+    {
+      "HO_boundary_owned_component": "C176 owner interface retained",
+      "alternatives": [
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "alternatives_summed": false,
+      "claim_tier": "FINITE_BASIS_PATH_SCHEME_VARIATION_ONLY",
+      "degree1_difference": "0 exact",
+      "degree2_ordered_difference": "nonzero order-labeled diagnostic",
+      "endpoint_domain": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "path_pair_id": "C179_PATHPAIR_AFFINE_XY",
+      "physical_uncertainty_distribution": false,
+      "reference_representative": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "retained_component": "explicit geometry fixture",
+      "statistical_prior": false
+    },
+    {
+      "HO_boundary_owned_component": "C176 owner interface retained",
+      "alternatives": [
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "alternatives_summed": false,
+      "claim_tier": "FINITE_BASIS_PATH_SCHEME_VARIATION_ONLY",
+      "degree1_difference": "0 exact",
+      "degree2_ordered_difference": "nonzero order-labeled diagnostic",
+      "endpoint_domain": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "path_pair_id": "C179_PATHPAIR_AFFINE_YX",
+      "physical_uncertainty_distribution": false,
+      "reference_representative": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "retained_component": "explicit geometry fixture",
+      "statistical_prior": false
+    },
+    {
+      "HO_boundary_owned_component": "C176 owner interface retained",
+      "alternatives": [
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "alternatives_summed": false,
+      "claim_tier": "FINITE_BASIS_PATH_SCHEME_VARIATION_ONLY",
+      "degree1_difference": "0 exact",
+      "degree2_ordered_difference": "nonzero order-labeled diagnostic",
+      "endpoint_domain": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "path_pair_id": "C179_PATHPAIR_XY_YX",
+      "physical_uncertainty_distribution": false,
+      "reference_representative": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "retained_component": "explicit geometry fixture",
+      "statistical_prior": false
+    }
+  ],
+  "schema": "C179-PATH-SYSTEMATIC-V1"
+}

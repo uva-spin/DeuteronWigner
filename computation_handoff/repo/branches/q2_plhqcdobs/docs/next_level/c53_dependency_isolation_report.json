@@ -1,0 +1,31 @@
+{
+  "allowed": [
+    "C52 primitive/coefficient/direct action",
+    "C47 U3/basis maps"
+  ],
+  "forbidden": [
+    "C47 raw tuple values/metadata",
+    "C50 combined evaluator",
+    "C40"
+  ],
+  "runtime": {
+    "C50_combined_values": false,
+    "after": "5827203eff9867df9e32fcef7e6d7ff9749b1adc7870744be4cf9cf136674c84",
+    "before": "5827203eff9867df9e32fcef7e6d7ff9749b1adc7870744be4cf9cf136674c84",
+    "pass": true,
+    "raw_tuple_values": false
+  },
+  "static": {
+    "forbidden": [
+      "canonical_kernel",
+      "tuple_semantics_records",
+      "raw_tuple_semantics_summary",
+      "vertex1",
+      "evaluate_canonical_vertex"
+    ],
+    "found": [],
+    "guard": "AST_C53_ASSEMBLY_GUARD",
+    "pass": true
+  },
+  "status": "PASS"
+}

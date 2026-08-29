@@ -1,0 +1,121 @@
+{
+  "authority_record": {
+    "root": "f7a36d9ae50af58d5576961380b264fa14586a9e036ac0a32be3bcf2b3801fca",
+    "rows": [
+      {
+        "C117_coordinates": [
+          "c_C117_1",
+          "c_C117_2",
+          "c_C117_3",
+          "c_C117_4"
+        ],
+        "C117_insertions": [
+          "O_C117_1,K9_2_N8_b0.40",
+          "O_C117_2,K9_2_N8_b0.40",
+          "O_C117_3,K9_2_N8_b0.40",
+          "O_C117_4,K9_2_N8_b0.40"
+        ],
+        "CM": "C64/C77 CM-ground block retained",
+        "Hermitian_by_construction": true,
+        "boundary_link_holonomy": "separate caller-bound records",
+        "color": "C74 singlet/triplet projectors and open-color boundaries retained",
+        "formula": "H_R(theta,c)=sum_owner H_owner,R(theta)+sum_i=1^4 c_i O_C117,i,R",
+        "matrix_free": "apply each owner once then each C117 insertion once",
+        "non_C117_bundle": "theta_nonC117 explicit symbolic record",
+        "owners": [
+          "C128_free",
+          "C53_canonical_qg",
+          "C112_instantaneous_fermion",
+          "C127_instantaneous_current",
+          "C129_pure_gluon",
+          "C130_boundary_zero_mode",
+          "C206_ST_counterterm_family",
+          "C242_C258_fixedK_current_completion"
+        ],
+        "physical": false,
+        "resolution": "K9_2_N8_b0.40",
+        "root": "cbf0c613b1cdd11c200b6211b53c27fcbdb42746bce6ac09055f47f39997c432",
+        "sparse_serialization": "coordinate/value program; no dense mandatory matrix",
+        "units": "mass-squared light-front Hamiltonian convention"
+      },
+      {
+        "C117_coordinates": [
+          "c_C117_1",
+          "c_C117_2",
+          "c_C117_3",
+          "c_C117_4"
+        ],
+        "C117_insertions": [
+          "O_C117_1,K11_2_N8_b0.40",
+          "O_C117_2,K11_2_N8_b0.40",
+          "O_C117_3,K11_2_N8_b0.40",
+          "O_C117_4,K11_2_N8_b0.40"
+        ],
+        "CM": "C64/C77 CM-ground block retained",
+        "Hermitian_by_construction": true,
+        "boundary_link_holonomy": "separate caller-bound records",
+        "color": "C74 singlet/triplet projectors and open-color boundaries retained",
+        "formula": "H_R(theta,c)=sum_owner H_owner,R(theta)+sum_i=1^4 c_i O_C117,i,R",
+        "matrix_free": "apply each owner once then each C117 insertion once",
+        "non_C117_bundle": "theta_nonC117 explicit symbolic record",
+        "owners": [
+          "C128_free",
+          "C53_canonical_qg",
+          "C112_instantaneous_fermion",
+          "C127_instantaneous_current",
+          "C129_pure_gluon",
+          "C130_boundary_zero_mode",
+          "C206_ST_counterterm_family",
+          "C242_C258_fixedK_current_completion"
+        ],
+        "physical": false,
+        "resolution": "K11_2_N8_b0.40",
+        "root": "c66105d78a7976e0b1828fc457ca23f9aab6da108a87509321d6dd78630a3035",
+        "sparse_serialization": "coordinate/value program; no dense mandatory matrix",
+        "units": "mass-squared light-front Hamiltonian convention"
+      },
+      {
+        "C117_coordinates": [
+          "c_C117_1",
+          "c_C117_2",
+          "c_C117_3",
+          "c_C117_4"
+        ],
+        "C117_insertions": [
+          "O_C117_1,K13_2_N8_b0.40",
+          "O_C117_2,K13_2_N8_b0.40",
+          "O_C117_3,K13_2_N8_b0.40",
+          "O_C117_4,K13_2_N8_b0.40"
+        ],
+        "CM": "C64/C77 CM-ground block retained",
+        "Hermitian_by_construction": true,
+        "boundary_link_holonomy": "separate caller-bound records",
+        "color": "C74 singlet/triplet projectors and open-color boundaries retained",
+        "formula": "H_R(theta,c)=sum_owner H_owner,R(theta)+sum_i=1^4 c_i O_C117,i,R",
+        "matrix_free": "apply each owner once then each C117 insertion once",
+        "non_C117_bundle": "theta_nonC117 explicit symbolic record",
+        "owners": [
+          "C128_free",
+          "C53_canonical_qg",
+          "C112_instantaneous_fermion",
+          "C127_instantaneous_current",
+          "C129_pure_gluon",
+          "C130_boundary_zero_mode",
+          "C206_ST_counterterm_family",
+          "C242_C258_fixedK_current_completion"
+        ],
+        "physical": false,
+        "resolution": "K13_2_N8_b0.40",
+        "root": "f4888c9fd3a323718b910d54a5697e5c8be56dc72f13f1af9a0436294ab4cbc1",
+        "sparse_serialization": "coordinate/value program; no dense mandatory matrix",
+        "units": "mass-squared light-front Hamiltonian convention"
+      }
+    ]
+  },
+  "package_root": "6bb3a76faaa0f38ca6943f59728762cf18a2a7182f6ce45d7ae317982f09f590",
+  "physical": false,
+  "plan": "C117RENORMH1-B",
+  "schema": "C274-HAMILTONIAN_FAMILIES-CONTRACT-V1",
+  "status": "C274_SYMBOLIC_HERMITIAN_HAMILTONIAN_FAMILY_READY_NONC117_PHYSICAL_BUNDLE_SYMBOLIC",
+  "validation": "BOUND"
+}

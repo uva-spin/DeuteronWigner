@@ -1,0 +1,24 @@
+{
+  "authority_record": {
+    "C296_density": "J/3",
+    "C296_square_integral": 2,
+    "J": "64 sin^2(pi u) sin^2(pi v) sin^2(pi(v-u))",
+    "corrected_integral": 1,
+    "corrected_square_density": "J/6",
+    "exact_constant_term_integral_J": 6,
+    "reason": "Soyez square covers two Weyl alcoves",
+    "root": "aa932f8d0ac2986d3067e3c4bfd64c48f84c54ef7043e2c7f33bb6e6ee26ef4b",
+    "routes": [
+      "exact discrete Fourier constant term",
+      "Gauss-Legendre G=20,32,48",
+      "one-million-point Monte Carlo"
+    ],
+    "square": "u,v in [0,1]"
+  },
+  "package_root": "e41526e037b832fee633e8c383f734c0d350ddd20dec3057c1a220dcb2760431",
+  "physical": false,
+  "plan": "RIMASSV0MESHPROJECT1-C",
+  "schema": "C304-MEASURE_CORRECTION-CONTRACT-V1",
+  "status": "C304_SQUARE_MEASURE_NORMALIZATION_CORRECTED_V0_PROJECTION_WALL_NONCONVERGENCE_CERTIFIED_FINITE_PART_MISSING",
+  "validation": "BOUND"
+}

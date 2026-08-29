@@ -1,0 +1,67 @@
+{
+  "prohibitions": [
+    "no model-hadron Hamiltonian authority",
+    "no QED color authority",
+    "no raw-C47 tuple physical input"
+  ],
+  "sources": [
+    {
+      "archive_sha256": "27c8b45f96d269011753fbee13267147ab935279c841de25f7f96b08a9fa2423",
+      "authority_limit": "Abelian convention/method cross-check only; never QCD color or finite open-triplet authority.",
+      "classification": "ABELIAN_FINITE_BOX_NORMALIZATION_CROSSCHECK",
+      "id": "1402.4195v1",
+      "official_host": "arxiv.org",
+      "pdf": "data/raw/c50_sources/1402.4195v1.pdf",
+      "pdf_sha256": "c63145b47c166736367384ea2afe62ca123046147b43d3db2ac2d77338eacc9d",
+      "source_archive": "data/raw/c50_sources/1402.4195v1.tar",
+      "title": "Electron g-2 in Light-Front Quantization"
+    },
+    {
+      "archive_sha256": "aced9af5725b50c86a06ab4b0d87f9841cad56dfa8f2857d0af5038654c21ec4",
+      "authority_limit": "Abelian convention/method cross-check only; never QCD color or finite open-triplet authority.",
+      "classification": "ABELIAN_VERTEX_METHOD_CROSSCHECK",
+      "id": "1110.0553v1",
+      "official_host": "arxiv.org",
+      "pdf": "data/raw/c50_sources/1110.0553.pdf",
+      "pdf_sha256": "1c587bdfbacdea919dac02e980770d7e5e2e49160c451c60603083f95cfc626b",
+      "source_archive": "data/raw/c50_sources/1110.0553.tar",
+      "title": "Electron Anomalous Magnetic Moment in Basis Light-Front Quantization Approach"
+    },
+    {
+      "archive_sha256": "d3310fab60f9f4e1389e5744c06ad6e53b6ee54693d23038a410abb23f35a8a7",
+      "authority_limit": "Abelian convention/method cross-check only; never QCD color or finite open-triplet authority.",
+      "classification": "ABELIAN_VERTEX_METHOD_CROSSCHECK",
+      "id": "2405.16995v1",
+      "official_host": "arxiv.org",
+      "pdf": "data/raw/c50_sources/2405.16995.pdf",
+      "pdf_sha256": "0e5a78c083e0c9b22b513c36f26574c538c42da4ab6c00933c1ca4788b0c699e",
+      "source_archive": "data/raw/c50_sources/2405.16995.tar",
+      "title": "Electron form factors in Basis Light-front Quantization"
+    },
+    {
+      "authority": "Srivastava--Brodsky Eq. (24), App. B",
+      "classification": "PRIMARY_QCD_CANONICAL_OPERATOR",
+      "id": "hep-ph/0011372v2",
+      "limit": "canonical action and continuum expansion"
+    },
+    {
+      "authority": "source-locked continuum q-q-g factor i g gamma^mu T^a together with C45 BPP-normalized external spinors/polarizations",
+      "classification": "CONTINUUM_Q_TO_QG_HELICITY_CROSSCHECK",
+      "id": "hep-ph/0011372v2 Appendix F",
+      "limit": "continuum helicity/kinematic cross-check; no finite-box regulator is imported"
+    },
+    {
+      "authority": "longitudinal/HO mode normalization",
+      "classification": "FINITE_CELL_MODE_AUTHORITY",
+      "id": "0905.1411v1",
+      "limit": "no QCD color authority"
+    },
+    {
+      "authority": "C47 TM/CM maps",
+      "classification": "CM_TM_BASIS_AUTHORITY",
+      "id": "1911.10762v1",
+      "limit": "N-pion interaction not substituted for QCD"
+    }
+  ],
+  "status": "SOURCE_QUALIFIED"
+}

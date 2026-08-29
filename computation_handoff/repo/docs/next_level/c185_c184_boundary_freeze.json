@@ -1,0 +1,34 @@
+{
+  "B0_read_only": true,
+  "B0_recalculation": 0,
+  "C184_B0_release": {
+    "decision": "B0_C43_TRANSVERSE_GLUON_PROPER_TWO_POINT_READY_COUPLING_COMPONENT_PARTIAL",
+    "exact_scope": "C43 finite-basis B0 proper transverse-gluon coefficient and B0 coupling ledger only; B1/full-ST remainder explicit",
+    "gates": {
+      "analyticity_covariance": true,
+      "count_once": true,
+      "coupling_component": true,
+      "external_domain": true,
+      "field_response": true,
+      "gg_vertex": true,
+      "ghost_link_holonomy": true,
+      "nonpropagating": true,
+      "parameter_schema": true,
+      "propagating_loops": true,
+      "proper_aggregation": true,
+      "qqbar_vertex": true,
+      "target_boundary": true,
+      "tensor_projection": true,
+      "zero_counterterm": true
+    },
+    "physical": false,
+    "plan": "LFGMATCHCALC2-B",
+    "root": "5c8f3c90a2527dac8df0c226256c2466d73b9231e30aaa5f43f923b394b05438",
+    "schema": "C184-B0-RELEASE-V1"
+  },
+  "C184_package_root": "89a7b8772b838811e0b897b90b4f870788d85740436647c6e3cba496f94991d8",
+  "C184_plan": "LFGMATCHCALC2-B",
+  "C184_status": "C184_C183_B0_C43_TRANSVERSE_GLUON_PROPER_TWO_POINT_READY_COUPLING_COMPONENT_PARTIAL",
+  "root": "0b32396b8004eb05dbe770704b2fc92e37407f256db46cc57d3394ca9b504056",
+  "schema": "C185-C184-BOUNDARY-FREEZE-V1"
+}

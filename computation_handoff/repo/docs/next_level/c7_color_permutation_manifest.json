@@ -1,0 +1,140 @@
+{
+  "maximum_residuals": {
+    "antisymmetrizer_hermiticity": 0.0,
+    "antisymmetrizer_idempotence": 2.7755575615628914e-17,
+    "generator": 1.8667974275620837e-15,
+    "orthonormality": 2.220446049250313e-16,
+    "recoupling": 2.220861168919456e-16
+  },
+  "schema_version": "1.0.0",
+  "sectors": {
+    "qqq": {
+      "antisymmetrizer": {
+        "hermiticity": 0.0,
+        "idempotence": 2.7755575615628914e-17
+      },
+      "fermion_exchange_sign": -1,
+      "hilbert_dimension": 27,
+      "invariant_dimension_from_rank": 1,
+      "orthonormality_residual": 2.220446049250313e-16,
+      "phase_convention": "PROJECTOR_PIVOT_POSITIVE_REAL",
+      "recoupling_matrix": [
+        [
+          [
+            1.0,
+            0.0
+          ]
+        ]
+      ],
+      "recoupling_unitarity_residual": 0.0,
+      "singlet_multiplicity": 1,
+      "tensor_content_hashes": [
+        "b2424f183f39b9042bc18f0cdddda5f3b70707240cf9abb6fe131a4008d999e0"
+      ],
+      "total_generator_residual": 1.6653345369377348e-16
+    },
+    "qqqg": {
+      "antisymmetrizer": {
+        "hermiticity": 0.0,
+        "idempotence": 2.7755575615628914e-17
+      },
+      "fermion_exchange_sign": -1,
+      "hilbert_dimension": 216,
+      "invariant_dimension_from_rank": 2,
+      "orthonormality_residual": 2.220446049250313e-16,
+      "phase_convention": "PROJECTOR_PIVOT_POSITIVE_REAL",
+      "recoupling_matrix": [
+        [
+          [
+            0.7071067811865475,
+            0.0
+          ],
+          [
+            0.7071067811865475,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.7071067811865475,
+            0.0
+          ],
+          [
+            -0.7071067811865475,
+            8.659560562354932e-17
+          ]
+        ]
+      ],
+      "recoupling_unitarity_residual": 2.220446049250313e-16,
+      "singlet_multiplicity": 2,
+      "tensor_content_hashes": [
+        "1c4be74acdc292b5d476b1a6d8c32c9f6841ae000e99016f7e4040332318d5e5",
+        "973b331348e462dd2d60770a6c6ea246ceba56ca533caebccf119937643729ab"
+      ],
+      "total_generator_residual": 6.490367750618711e-16
+    },
+    "qqqq-qbar": {
+      "antisymmetrizer": {
+        "hermiticity": 0.0,
+        "idempotence": 6.938893903907228e-18
+      },
+      "fermion_exchange_sign": -1,
+      "hilbert_dimension": 243,
+      "invariant_dimension_from_rank": 3,
+      "orthonormality_residual": 2.220446049250313e-16,
+      "phase_convention": "PROJECTOR_PIVOT_POSITIVE_REAL",
+      "recoupling_matrix": [
+        [
+          [
+            0.5773502691896258,
+            0.0
+          ],
+          [
+            0.5773502691896258,
+            0.0
+          ],
+          [
+            0.5773502691896258,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.5773502691896258,
+            0.0
+          ],
+          [
+            -0.2886751345948128,
+            0.5000000000000001
+          ],
+          [
+            -0.28867513459481303,
+            -0.4999999999999999
+          ]
+        ],
+        [
+          [
+            0.5773502691896258,
+            0.0
+          ],
+          [
+            -0.28867513459481303,
+            -0.4999999999999999
+          ],
+          [
+            -0.28867513459481253,
+            0.5000000000000001
+          ]
+        ]
+      ],
+      "recoupling_unitarity_residual": 2.220861168919456e-16,
+      "singlet_multiplicity": 3,
+      "tensor_content_hashes": [
+        "a3345f432d3d433d5da32f72ecc34a206fa1a47294bf3ae3b39a096b6a589a20",
+        "84a8323601e8cd49ceb6e45084b2bf321d3381285e95abaabcaa164f29d68d92",
+        "4efbff09cd2fd396fe389a6501ccbf0099041bf10df0525cd208d03600c4ac15"
+      ],
+      "total_generator_residual": 1.8667974275620837e-15
+    }
+  }
+}

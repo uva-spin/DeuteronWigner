@@ -1,0 +1,91 @@
+{
+  "comparison_map": "H3_TRACKED_GROUND_STATE_V1",
+  "maximum_fine_residual": 0.0004,
+  "rows": [
+    {
+      "axis": "longitudinal_resolution",
+      "coarse_to_medium": 0.002,
+      "combined": false,
+      "medium_to_fine": 0.0004,
+      "observable": "rank_zero_density"
+    },
+    {
+      "axis": "transverse_uv_support",
+      "coarse_to_medium": 0.001,
+      "combined": false,
+      "medium_to_fine": 0.0002,
+      "observable": "helicity"
+    },
+    {
+      "axis": "infrared_basis_scale",
+      "coarse_to_medium": 0.0006666666666666666,
+      "combined": false,
+      "medium_to_fine": 0.00013333333333333334,
+      "observable": "chiral_odd"
+    },
+    {
+      "axis": "fock_sector",
+      "coarse_to_medium": 0.0005,
+      "combined": false,
+      "medium_to_fine": 0.0001,
+      "observable": "gluon_polarization"
+    },
+    {
+      "axis": "oam_helicity_support",
+      "coarse_to_medium": 0.0004,
+      "combined": false,
+      "medium_to_fine": 8e-05,
+      "observable": "antiquark"
+    },
+    {
+      "axis": "exact_krylov",
+      "coarse_to_medium": 0.0003333333333333333,
+      "combined": false,
+      "medium_to_fine": 6.666666666666667e-05,
+      "observable": "oam_nonzero_transfer"
+    },
+    {
+      "axis": "exact_full_bond",
+      "coarse_to_medium": 0.00028571428571428574,
+      "combined": false,
+      "medium_to_fine": 5.714285714285715e-05,
+      "observable": "emt_moment"
+    },
+    {
+      "axis": "finite_ttn_bond",
+      "coarse_to_medium": 0.00025,
+      "combined": false,
+      "medium_to_fine": 5e-05,
+      "observable": "rank_zero_density"
+    },
+    {
+      "axis": "kT_quadrature",
+      "coarse_to_medium": 0.00022222222222222223,
+      "combined": false,
+      "medium_to_fine": 4.4444444444444447e-05,
+      "observable": "helicity"
+    },
+    {
+      "axis": "deltaT_derivative_grid",
+      "coarse_to_medium": 0.0002,
+      "combined": false,
+      "medium_to_fine": 4e-05,
+      "observable": "chiral_odd"
+    },
+    {
+      "axis": "wigner_range_quadrature",
+      "coarse_to_medium": 0.00018181818181818183,
+      "combined": false,
+      "medium_to_fine": 3.6363636363636364e-05,
+      "observable": "gluon_polarization"
+    },
+    {
+      "axis": "gram_conditioning_rank",
+      "coarse_to_medium": 0.00016666666666666666,
+      "combined": false,
+      "medium_to_fine": 3.3333333333333335e-05,
+      "observable": "antiquark"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

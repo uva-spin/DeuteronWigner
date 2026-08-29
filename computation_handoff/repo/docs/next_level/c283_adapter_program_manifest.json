@@ -1,0 +1,74 @@
+{
+  "authority_record": {
+    "callbacks": false,
+    "eval": false,
+    "pickle": false,
+    "root": "b2cc78d3f4ef345318125551fa39820e5e4f5f9d8c162cb2dd5a6ed54ee24e7b",
+    "rows": [
+      {
+        "executable": false,
+        "resolution": "K9",
+        "safe_opcodes": [
+          "LOAD_RI_SMOM_TARGET",
+          "LOAD_C43_COMMON_STATE",
+          "LOAD_C43_CANONICAL_LOOP",
+          "LOAD_INSTANTANEOUS_FERMION",
+          "LOAD_INSTANTANEOUS_CURRENT",
+          "LOAD_Q0_PV",
+          "LOAD_BOUNDARY_RESIDUAL_LINK",
+          "APPLY_SIGNED_MASS_PROJECTOR",
+          "SUBTRACT_COMMON_IR",
+          "FORM_TARGET_MINUS_C43",
+          "RETURN_ENCLOSURE"
+        ],
+        "structural": true,
+        "terminal": "C43_LIGHT_FRONT_LOOP_MISSING"
+      },
+      {
+        "executable": false,
+        "resolution": "K11",
+        "safe_opcodes": [
+          "LOAD_RI_SMOM_TARGET",
+          "LOAD_C43_COMMON_STATE",
+          "LOAD_C43_CANONICAL_LOOP",
+          "LOAD_INSTANTANEOUS_FERMION",
+          "LOAD_INSTANTANEOUS_CURRENT",
+          "LOAD_Q0_PV",
+          "LOAD_BOUNDARY_RESIDUAL_LINK",
+          "APPLY_SIGNED_MASS_PROJECTOR",
+          "SUBTRACT_COMMON_IR",
+          "FORM_TARGET_MINUS_C43",
+          "RETURN_ENCLOSURE"
+        ],
+        "structural": true,
+        "terminal": "C43_LIGHT_FRONT_LOOP_MISSING"
+      },
+      {
+        "executable": false,
+        "resolution": "K13",
+        "safe_opcodes": [
+          "LOAD_RI_SMOM_TARGET",
+          "LOAD_C43_COMMON_STATE",
+          "LOAD_C43_CANONICAL_LOOP",
+          "LOAD_INSTANTANEOUS_FERMION",
+          "LOAD_INSTANTANEOUS_CURRENT",
+          "LOAD_Q0_PV",
+          "LOAD_BOUNDARY_RESIDUAL_LINK",
+          "APPLY_SIGNED_MASS_PROJECTOR",
+          "SUBTRACT_COMMON_IR",
+          "FORM_TARGET_MINUS_C43",
+          "RETURN_ENCLOSURE"
+        ],
+        "structural": true,
+        "terminal": "C43_LIGHT_FRONT_LOOP_MISSING"
+      }
+    ],
+    "schema": "PROJECT_C283_RI_SMOM_C43_MASS_GAUGE_ADAPTER_V1"
+  },
+  "package_root": "15ec3b901fd3b75256de52cb21fa4295486391c0d269b2debd6a956a03005504",
+  "physical": false,
+  "plan": "RIMASSGAUGEADAPTER1-C",
+  "schema": "C283-ADAPTER_PROGRAM-MANIFEST-V1",
+  "status": "C283_COVARIANT_TO_C43_MASS_ADAPTER_STRUCTURAL_PROGRAM_READY_LIGHT_FRONT_LOOP_COEFFICIENT_MISSING",
+  "validation": "BOUND"
+}

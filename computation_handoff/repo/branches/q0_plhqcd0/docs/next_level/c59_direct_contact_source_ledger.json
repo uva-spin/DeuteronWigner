@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "C55_operator_order": [
+        "b_dagger",
+        "a_dagger",
+        "a",
+        "b"
+      ],
+      "color_order": "T^a (left A) then T^b (right A)",
+      "coupling_order": "g_s^2",
+      "hermitian_partner": "must be derived from full source W3 ordering",
+      "id": "C55-W3-DIRECT-A_DAGGER-A",
+      "inverse_derivative_argument": "right A*psi product",
+      "normal_order_ancestry": "original normal-ordered a_dagger a branch; distinct from the C58 a a_dagger commutator",
+      "retained_block": "qg_to_qg",
+      "routing": "p_q+k_g",
+      "status": "DIRECT_QG_CONTACT_REQUIRED"
+    }
+  ],
+  "status": "PASS_SOURCE_INVENTORY"
+}

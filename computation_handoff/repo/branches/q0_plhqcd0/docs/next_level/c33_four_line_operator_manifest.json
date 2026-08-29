@@ -1,0 +1,87 @@
+{
+  "expression": "(1/Nc)<Omega|Tr[S_n^dagger(b) S_nbar(b) S_nbar^dagger(0) S_n(0)]|Omega>",
+  "future_and_past_variants": true,
+  "lines": [
+    {
+      "basepoint": "bT",
+      "dagger": true,
+      "direction": "n",
+      "line_id": "C33.LINE.N.DAGGER.B",
+      "ordered_position": 1,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "ANTI_P",
+      "representation": "CONJUGATE_FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    },
+    {
+      "basepoint": "bT",
+      "dagger": false,
+      "direction": "nbar",
+      "line_id": "C33.LINE.NBAR.B",
+      "ordered_position": 2,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "P",
+      "representation": "FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    },
+    {
+      "basepoint": "0T",
+      "dagger": true,
+      "direction": "nbar",
+      "line_id": "C33.LINE.NBAR.DAGGER.0",
+      "ordered_position": 3,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "ANTI_P",
+      "representation": "CONJUGATE_FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    },
+    {
+      "basepoint": "0T",
+      "dagger": false,
+      "direction": "n",
+      "line_id": "C33.LINE.N.0",
+      "ordered_position": 4,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "P",
+      "representation": "FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    }
+  ],
+  "one_loop_value": null,
+  "operator_id": "C33.SOFT.OP.FOUR_LINE.MODDELTA.v1",
+  "path_ordering": "EXPLICIT_ORDERED_PRODUCT",
+  "root_id": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+  "schema_version": "1.0.0",
+  "transverse_closure": "EXPLICIT_REQUIRED_SEGMENTS_AT_INFINITY",
+  "tree_operator": "IDENTITY_3x3",
+  "tree_value": 1.0,
+  "tree_value_exact": true
+}

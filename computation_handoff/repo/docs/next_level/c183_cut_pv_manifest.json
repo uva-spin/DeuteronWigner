@@ -1,0 +1,83 @@
+{
+  "PV_dropped": false,
+  "future_past_merged": false,
+  "root": "4c1795e1d1f3f88b68660a56043fd0fb3cc96e503960bb69d8f3d65085d92830",
+  "rows": [
+    {
+      "PV": "transported through C178 transition",
+      "capsule_id": "IDENTITY_DIAGNOSTIC_ONLY",
+      "cut_shift": "explicit frame conjugation",
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "inverse": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "CUT-A C178",
+        "CUT-B transition",
+        "CUT-C fundamental/adjoint",
+        "CUT-D future/past inverse",
+        "CUT-E all-generator"
+      ]
+    },
+    {
+      "PV": "transported through C178 transition",
+      "capsule_id": "GENERIC_CARTAN_INTERIOR",
+      "cut_shift": "explicit frame conjugation",
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "inverse": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "CUT-A C178",
+        "CUT-B transition",
+        "CUT-C fundamental/adjoint",
+        "CUT-D future/past inverse",
+        "CUT-E all-generator"
+      ]
+    },
+    {
+      "PV": "transported through C178 transition",
+      "capsule_id": "NONTRIVIAL_CENTER_SECTOR",
+      "cut_shift": "explicit frame conjugation",
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "inverse": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "CUT-A C178",
+        "CUT-B transition",
+        "CUT-C fundamental/adjoint",
+        "CUT-D future/past inverse",
+        "CUT-E all-generator"
+      ]
+    },
+    {
+      "PV": "transported through C178 transition",
+      "capsule_id": "CONJUGATED_NONDIAGONAL_GENERIC",
+      "cut_shift": "explicit frame conjugation",
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "inverse": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "CUT-A C178",
+        "CUT-B transition",
+        "CUT-C fundamental/adjoint",
+        "CUT-D future/past inverse",
+        "CUT-E all-generator"
+      ]
+    },
+    {
+      "PV": "transported through C178 transition",
+      "capsule_id": "FUTURE_PAST_INVERSE_PAIR",
+      "cut_shift": "explicit frame conjugation",
+      "future": "DIS_FUTURE/CUT_SIDE_PLUS",
+      "inverse": true,
+      "past": "DY_PAST/CUT_SIDE_MINUS",
+      "routes": [
+        "CUT-A C178",
+        "CUT-B transition",
+        "CUT-C fundamental/adjoint",
+        "CUT-D future/past inverse",
+        "CUT-E all-generator"
+      ]
+    }
+  ],
+  "schema": "C183-CUT-PV-V1"
+}

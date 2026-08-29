@@ -1,0 +1,25 @@
+{
+  "both_outer_multiplicities": true,
+  "channels": [
+    "D_TYPE",
+    "F_TYPE"
+  ],
+  "d_norm": 13.333333333333332,
+  "f_norm": 24.0,
+  "fd_inner": 0.0,
+  "ordered_pairs": [
+    "C12:PAIR:FUTURE:FUTURE:C12:PATH:GL_LEFT:FUTURE|C12:PATH:GL_RIGHT:FUTURE",
+    "C12:PAIR:FUTURE:PAST:C12:PATH:GL_LEFT:FUTURE|C12:PATH:GL_RIGHT:PAST",
+    "C12:PAIR:PAST:FUTURE:C12:PATH:GL_LEFT:PAST|C12:PATH:GL_RIGHT:FUTURE",
+    "C12:PAIR:PAST:PAST:C12:PATH:GL_LEFT:PAST|C12:PATH:GL_RIGHT:PAST"
+  ],
+  "polarizations": [
+    "HELICITY",
+    "LINEAR",
+    "TRACE"
+  ],
+  "process_mixture": null,
+  "reconstruction_residual": 0.0,
+  "row_count": 24,
+  "schema_version": "1.0.0"
+}

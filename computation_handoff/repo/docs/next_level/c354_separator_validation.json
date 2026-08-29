@@ -1,0 +1,17 @@
+{
+  "package_root": "92c5126401f55a7df8723177441edd34cfd02dd0487c59650cd972211f56c7b2",
+  "physical": false,
+  "plan": "RIMASSC43IRSEPARATOR1-C",
+  "record": {
+    "IR": "on-shell dimensional",
+    "UV": "d=4-2epsilon, MSbar",
+    "Wilson_rule": "apply same fractional power to the corresponding eikonal denominator after region expansion",
+    "ahc_replacement": "analogous beta,nu2 fractional power",
+    "contours": "inherit -i0 from source and JMY future/past orientation componentwise",
+    "hc_replacement": "1/[-(p-k)^2-i0] -> nu1^(2alpha)/[-(p-k)^2-i0]^(1+alpha)",
+    "limit_order": "form gauge-complete groups; beta->0 then alpha->0 (and reverse as holdout); only then epsilon->0",
+    "root": "0febca44c6bd5a4f6fc6fb48cf4b4aa42b69b016fd0b9728c7664bbd60aa8a80"
+  },
+  "status": "C354_ANALYTIC_UV_IR_SEPARATOR_BOUND_GROUPED_JMY_EVALUATION_MISSING",
+  "validation": "PASS"
+}

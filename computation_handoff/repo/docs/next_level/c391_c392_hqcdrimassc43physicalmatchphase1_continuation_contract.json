@@ -1,0 +1,22 @@
+{
+  "schema": "C391-C392-HQCDRIMASSC43PHYSICALMATCHPHASE1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C391/HQCDRIMASSC43JMYEVALPHASE1",
+  "from_status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT",
+  "from_plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "from_package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "next_job": "C392/HQCDRIMASSC43PHYSICALMATCHPHASE1",
+  "next_frontier": {
+    "object_id": "C391-C43-JMY-COMMON-IR-FINITE-BASIS-CONTINUUM-MATCHING-TARGET",
+    "exact_missing_object": "construct the source-qualified common-IR physical finite-basis/continuum matching target for the C391 symbolic source-side remainder"
+  },
+  "authority_discontinuity": "new physical finite-basis/continuum matching scheme",
+  "constraints": {
+    "C391_source_side_authority_frozen": true,
+    "common_IR_identity_required": true,
+    "K9_K11_K13_separate": true,
+    "physical_inputs_unselected_until_authenticated": true,
+    "Q0_Q1_Q2_frozen": true,
+    "activation_gate_status": "NOT_READY",
+    "push": false
+  }
+}

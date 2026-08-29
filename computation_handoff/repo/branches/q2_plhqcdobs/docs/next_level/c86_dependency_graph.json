@@ -1,0 +1,22 @@
+{
+  "C72_local_candidate_root": {
+    "columns": 3,
+    "index_sha256": "09433e060352d8f451c0d1c6787edcd6c7a66ff4954292501fc26b16ef9910c9",
+    "records": 72,
+    "rows": 24
+  },
+  "C82_frozen_C74": 72,
+  "blocker": "C86.HISTORICAL_C82.PRODUCER_RUNTIME_ROOT_UNBOUND",
+  "capsule_created": false,
+  "dependency_graph": [
+    "C82->C77",
+    "C82->C78",
+    "C82->C80",
+    "C82->C74->C72"
+  ],
+  "historical_C72_root_hash_bound": false,
+  "next": "C87/IFCAPSULE \u2014 bind historical C82 inputs to exact producer runtime roots before staging a capsule",
+  "reason": "C82 freeze records C74 color-record count but no C72 root/index/payload hashes; current C72 cannot be promoted to an exact historical candidate.",
+  "scientific_stream_generated": false,
+  "status": "C86_C82_HISTORICAL_RUNTIME_ENVIRONMENT_INCOMPLETE"
+}

@@ -1,0 +1,55 @@
+{
+  "attachments": {
+    "CONTACT_KERNEL": [
+      "NNPI_TO_NN_TRANSITION_CURRENT"
+    ],
+    "COUNTERTERM": [
+      "INDUCED_FESHBACH_CURRENT"
+    ],
+    "FESHBACH_INDUCED": [
+      "REGULATOR_GAUGING_CURRENT"
+    ],
+    "MOMENTUM_KERNEL": [
+      "RECOIL_OR_RETARDATION_CURRENT"
+    ],
+    "NNPI_FREE": [
+      "PION_IN_FLIGHT_CURRENT"
+    ],
+    "NN_KINETIC": [
+      "NUCLEON_ONE_BODY_CHARGE_CURRENT"
+    ],
+    "PAIR_KERNEL": [
+      "CONTACT_OR_SEAGULL_CURRENT"
+    ],
+    "PI_NN_TRANSITION": [
+      "PION_IN_FLIGHT_CURRENT",
+      "NN_TO_NNPI_TRANSITION_CURRENT",
+      "NNPI_TO_NN_TRANSITION_CURRENT",
+      "CONTACT_OR_SEAGULL_CURRENT"
+    ],
+    "REGULATOR": [
+      "MOMENTUM_DEPENDENT_INTERACTION_CURRENT"
+    ],
+    "RETARDATION_KERNEL": [
+      "PAIR_CURRENT"
+    ]
+  },
+  "complete": true,
+  "hamiltonian_terms": [
+    "NN_KINETIC",
+    "NNPI_FREE",
+    "PI_NN_TRANSITION",
+    "CONTACT_KERNEL",
+    "PAIR_KERNEL",
+    "RETARDATION_KERNEL",
+    "MOMENTUM_KERNEL",
+    "REGULATOR",
+    "FESHBACH_INDUCED",
+    "COUNTERTERM"
+  ],
+  "neutral_terms": [],
+  "schema_version": "1.0.0",
+  "scope": "RETAINED_N2_ORDER_ONLY",
+  "status": "N2_DECLARED_ORDER_EXCHANGE_CURRENT_BASIS_COMPLETE",
+  "unexplained_gaps": []
+}

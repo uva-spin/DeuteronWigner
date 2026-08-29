@@ -1,0 +1,34 @@
+{
+  "authority_record": {
+    "identity_default": false,
+    "physical_authorities": 0,
+    "root": "99a38691eb3a14d94ffcfe0ca246865947d94da04492f699e2bf33a3aeef08a6",
+    "rows": [
+      {
+        "authority": "C183",
+        "measure": false,
+        "physical_sector": false,
+        "provides": "SU3 classes/representation/BC"
+      },
+      {
+        "authority": "C205",
+        "measure": "UNNORMALIZED",
+        "physical_sector": false,
+        "provides": "orbit/stabilizer symbolic ratio"
+      },
+      {
+        "authority": "C288",
+        "measure": false,
+        "physical_sector": false,
+        "provides": "mass capsule schema"
+      }
+    ],
+    "unit_volume_default": false
+  },
+  "package_root": "6e0cac728df783012193823e7db3665d7f46575db44377ca959025501ffc2f1e",
+  "physical": false,
+  "plan": "RIMASSHOLONOMYMEASURE1-B",
+  "schema": "C289-AUTHORITY_AUDIT-CONTRACT-V1",
+  "status": "C289_HOLONOMY_ORBIT_STABILIZER_MEASURE_FAMILY_READY_PHYSICAL_BOUNDARY_ENSEMBLE_AUTHORITY_MISSING",
+  "validation": "BOUND"
+}

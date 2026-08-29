@@ -1,0 +1,29 @@
+{
+  "authority_record": {
+    "count": 3,
+    "root": "8d7666b3c4492bce596cca0def2607049fa6cbf35a4f3457b58410264c50c0f5",
+    "rows": [
+      {
+        "class": "NOT_BRST_CLOSED",
+        "operator": "integral tr(A_perp^2)",
+        "scope": "local 3+1 bulk"
+      },
+      {
+        "class": "GAUGE_COVARIANT_REDUCED_OPERATOR_NOT_DIRECT_C43_BULK_MAP",
+        "operator": "tr(Phi^2)",
+        "scope": "dimensionally reduced adjoint scalar"
+      },
+      {
+        "class": "GAUGE_INVARIANT_CLASS_FUNCTION_ALLOWED",
+        "operator": "V_eff[W_boundary]",
+        "scope": "finite-cell holonomy/boundary"
+      }
+    ]
+  },
+  "package_root": "3e9a52fd144a5e523d197ed5dea6a531abb40d658e060c56d1cb58c25459a667",
+  "physical": false,
+  "plan": "RIMASSADJOINTST1-B",
+  "schema": "C300-OPERATOR_SPLIT-CONTRACT-V1",
+  "status": "C300_BULK_TRANSVERSE_MASS_BRST_FORBIDDEN_BOUNDARY_HOLONOMY_POTENTIAL_ALLOWED_MATCHING_MISSING",
+  "validation": "BOUND"
+}

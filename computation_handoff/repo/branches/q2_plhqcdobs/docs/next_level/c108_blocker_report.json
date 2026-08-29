@@ -1,0 +1,14 @@
+{
+  "schema": "C108-BLOCKER-REPORT-V1",
+  "status": "C108_IFCONTACT6_M2_PPLUS_AUTHORITY_INCOMPLETE",
+  "failing_object": "C80 public M2 conversion contract",
+  "source": "src/deuteron_wigner/bridge/ifkernel2/core.py:evaluate_bare_contact_kernel",
+  "observed": "M2_coefficient = 2*P_plus*(Pminus_coefficient); P_perp^2=0",
+  "missing": ["authenticated finite P_plus value", "P_plus certified bound"],
+  "scientific_consequence": "No numerical GeV^2/g_s^2 sparse operator entry can be formed without an unauthorized P_plus choice.",
+  "products_formed": 0,
+  "contact_entries": 0,
+  "C58_values": 0,
+  "C53_values": 0,
+  "physical_coupling": 0
+}

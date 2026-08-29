@@ -1,0 +1,13 @@
+name: deuteron-wigner-artemide
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy=1.26
+  - gfortran_osx-arm64=15.2
+  - lhapdf=6.5.5
+  # NumPy 1.26 f2py still imports numpy.distutils; newer setuptools removes
+  # the distutils compatibility module needed by arTeMiDe v2.05.
+  - pip
+  - pip:
+      - setuptools==59.8.0

@@ -1,0 +1,24 @@
+{
+  "C40_separation": "C40 K=17,23,31 are method-oracle only",
+  "boundary_conditions": "quark/antiquark antiperiodic positive half-integers; gluon periodic positive nonzero integers",
+  "center_of_mass": "zero CM quantum",
+  "mass_IR": "lambda_H=1.2 GeV; x_min=1/18 inherited from C32",
+  "resolutions": [
+    {
+      "K": "9/2",
+      "Nmax": 8,
+      "bHO_GeV": 0.4
+    },
+    {
+      "K": "11/2",
+      "Nmax": 10,
+      "bHO_GeV": 0.45
+    },
+    {
+      "K": "13/2",
+      "Nmax": 12,
+      "bHO_GeV": 0.5
+    }
+  ],
+  "status": "FROZEN_FOR_C44"
+}

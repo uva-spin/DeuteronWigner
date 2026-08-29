@@ -1,0 +1,249 @@
+{
+  "plans": [
+    {
+      "plan_id": "C13:H6:PLAN:910c9f11148e647b7c67",
+      "rows": [
+        {
+          "dimensions": [
+            4,
+            6,
+            9,
+            9,
+            12,
+            16,
+            16
+          ],
+          "holdouts": {
+            "nonzero_transfer_current": 0.006,
+            "rotation": 0.017,
+            "sea_gluon_oam": 0.012,
+            "sea_gluon_vertex_2": 0.011,
+            "two_gluon_probability": 0.014,
+            "two_gluon_vertex_2": 0.008,
+            "wilson_order2": 0.009
+          },
+          "level": 0,
+          "mass2": 0.7744,
+          "mass_residual": 0.0,
+          "null_directions": 1,
+          "parameters": {
+            "confinement": "INDUCED_REFIT",
+            "counterterm": -0.005600000000000049,
+            "g_qg": 0.055,
+            "g_split": 0.031,
+            "resolution": 0
+          },
+          "singular_values": [
+            1.2,
+            1.0,
+            0.72,
+            0.31,
+            0.08,
+            0.0
+          ]
+        },
+        {
+          "dimensions": [
+            7,
+            10,
+            15,
+            15,
+            20,
+            24,
+            24
+          ],
+          "holdouts": {
+            "nonzero_transfer_current": 0.006,
+            "rotation": 0.017,
+            "sea_gluon_oam": 0.012,
+            "sea_gluon_vertex_2": 0.0055,
+            "two_gluon_probability": 0.014,
+            "two_gluon_vertex_2": 0.004,
+            "wilson_order2": 0.009
+          },
+          "level": 1,
+          "mass2": 0.7744000000000005,
+          "mass_residual": 5.551115123125783e-16,
+          "null_directions": 1,
+          "parameters": {
+            "confinement": "INDUCED_REFIT",
+            "counterterm": -0.006570893670646671,
+            "g_qg": 0.05092592592592592,
+            "g_split": 0.02924528301886792,
+            "resolution": 1
+          },
+          "singular_values": [
+            1.2,
+            1.0,
+            0.72,
+            0.31,
+            0.08,
+            0.0
+          ]
+        },
+        {
+          "dimensions": [
+            10,
+            14,
+            21,
+            21,
+            28,
+            32,
+            32
+          ],
+          "holdouts": {
+            "nonzero_transfer_current": 0.006,
+            "rotation": 0.017,
+            "sea_gluon_oam": 0.012,
+            "sea_gluon_vertex_2": 0.0036666666666666666,
+            "two_gluon_probability": 0.014,
+            "two_gluon_vertex_2": 0.0026666666666666666,
+            "wilson_order2": 0.009
+          },
+          "level": 2,
+          "mass2": 0.7744000000000003,
+          "mass_residual": 3.3306690738754696e-16,
+          "null_directions": 1,
+          "parameters": {
+            "confinement": "INDUCED_REFIT",
+            "counterterm": 0.013506037000086901,
+            "g_qg": 0.04741379310344828,
+            "g_split": 0.027678571428571427,
+            "resolution": 2
+          },
+          "singular_values": [
+            1.2,
+            1.0,
+            0.72,
+            0.31,
+            0.08,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "plan_id": "C13:H6:PLAN:9904539e0ff428dcbf45",
+      "rows": [
+        {
+          "dimensions": [
+            4,
+            6,
+            9,
+            9,
+            12,
+            16,
+            16
+          ],
+          "holdouts": {
+            "nonzero_transfer_current": 0.006,
+            "rotation": 0.017,
+            "sea_gluon_oam": 0.012,
+            "sea_gluon_vertex_2": 0.011,
+            "two_gluon_probability": 0.014,
+            "two_gluon_vertex_2": 0.008,
+            "wilson_order2": 0.009
+          },
+          "level": 0,
+          "mass2": 0.7744,
+          "mass_residual": 0.0,
+          "null_directions": 1,
+          "parameters": {
+            "confinement": "ZERO_CONFINEMENT",
+            "counterterm": -0.005600000000000049,
+            "g_qg": 0.055,
+            "g_split": 0.031,
+            "resolution": 0
+          },
+          "singular_values": [
+            1.2,
+            1.0,
+            0.72,
+            0.31,
+            0.08,
+            0.0
+          ]
+        },
+        {
+          "dimensions": [
+            7,
+            10,
+            15,
+            15,
+            20,
+            24,
+            24
+          ],
+          "holdouts": {
+            "nonzero_transfer_current": 0.006,
+            "rotation": 0.017,
+            "sea_gluon_oam": 0.012,
+            "sea_gluon_vertex_2": 0.0055,
+            "two_gluon_probability": 0.014,
+            "two_gluon_vertex_2": 0.004,
+            "wilson_order2": 0.009
+          },
+          "level": 1,
+          "mass2": 0.7744,
+          "mass_residual": 0.0,
+          "null_directions": 1,
+          "parameters": {
+            "confinement": "ZERO_CONFINEMENT",
+            "counterterm": -0.015600000000000058,
+            "g_qg": 0.05092592592592592,
+            "g_split": 0.02924528301886792,
+            "resolution": 1
+          },
+          "singular_values": [
+            1.2,
+            1.0,
+            0.72,
+            0.31,
+            0.08,
+            0.0
+          ]
+        },
+        {
+          "dimensions": [
+            10,
+            14,
+            21,
+            21,
+            28,
+            32,
+            32
+          ],
+          "holdouts": {
+            "nonzero_transfer_current": 0.006,
+            "rotation": 0.017,
+            "sea_gluon_oam": 0.012,
+            "sea_gluon_vertex_2": 0.0036666666666666666,
+            "two_gluon_probability": 0.014,
+            "two_gluon_vertex_2": 0.0026666666666666666,
+            "wilson_order2": 0.009
+          },
+          "level": 2,
+          "mass2": 0.7743999999999978,
+          "mass_residual": -2.220446049250313e-15,
+          "null_directions": 1,
+          "parameters": {
+            "confinement": "ZERO_CONFINEMENT",
+            "counterterm": -0.016993332954485352,
+            "g_qg": 0.04741379310344828,
+            "g_split": 0.027678571428571427,
+            "resolution": 2
+          },
+          "singular_values": [
+            1.2,
+            1.0,
+            0.72,
+            0.31,
+            0.08,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

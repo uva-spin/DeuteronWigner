@@ -1,0 +1,37 @@
+{
+  "C131_additive_count": 0,
+  "count": 2,
+  "root": "87e900485210515b56c81c4337acdb08e628f2241f56bb2574e9d3b099a7f755",
+  "routes": [
+    "POLY-A descendant taxonomy",
+    "POLY-B unique owner table",
+    "POLY-C preimage",
+    "POLY-D longitudinal support",
+    "POLY-E primitive versus aggregate"
+  ],
+  "rows": [
+    {
+      "aggregate_count": 0,
+      "classification": "NORMAL_ORDERING_DESCENDANT",
+      "local_matrix": false,
+      "longitudinal_proof": "source qg parent required",
+      "particle_number_proof": "pure-glue source destination is qg->qgg, not q->qgg local primitive",
+      "preimage_proof": "C129 descendant destination",
+      "record_id": "C187-POLY-C129-G4",
+      "source": "C129 G4_DIRECT_NORMAL_ORDERED",
+      "source_nonzero": true
+    },
+    {
+      "aggregate_count": 0,
+      "classification": "AGGREGATE_CROSSWALK_ONLY",
+      "local_matrix": false,
+      "longitudinal_proof": "no qgg target record",
+      "particle_number_proof": "C131 retained support is q/qg",
+      "preimage_proof": "C112/C127/C129 primitives referenced without additive recount",
+      "record_id": "C187-POLY-C131-AGGREGATE",
+      "source": "C131 projected bare local polynomial",
+      "source_nonzero": "not independently assigned"
+    }
+  ],
+  "schema": "C187-POLYNOMIAL-CROSSWALK-V1"
+}

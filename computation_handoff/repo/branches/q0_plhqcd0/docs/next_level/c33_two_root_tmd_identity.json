@@ -1,0 +1,30 @@
+{
+  "collinear_root": {
+    "baryon_number": 1,
+    "owner": "C32",
+    "root_id": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+    "state_normalization": "C11_PROTON"
+  },
+  "composition": "REN[COLL_B1 MINUS OVERLAP] TENSOR SOFT_B0^(-1/2)",
+  "composition_is_probability_sum": false,
+  "content_hash": "c076dbe73bbfaa66a42992b8e63c577c40e9ab089abcf5813ca2fa415f3f1073",
+  "joint_regulator_base": [
+    "gauge_group",
+    "parton_representation",
+    "wilson_geometry",
+    "bT_measurement",
+    "rapidity_conversion",
+    "UV_target",
+    "overlap_map"
+  ],
+  "schema_version": "1.0.0",
+  "shared_probability_normalization": false,
+  "shared_state_vector": false,
+  "soft_root": {
+    "baryon_number": 0,
+    "owner": "C33",
+    "root_id": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+    "state_normalization": "VACUUM_UNIT_NORM"
+  },
+  "status": "C33_TWO_ROOT_TMD_ARCHITECTURE_VALIDATED"
+}

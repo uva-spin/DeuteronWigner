@@ -1,0 +1,35 @@
+{
+  "schema": "Q0-PLHQCD0-PACKAGE-ROOT-V1",
+  "package_root": "2848cb692ce20cf21f654107acbcf9ed1a803cdd1c968f576c8271ae27df3b9c",
+  "root_input": {
+    "schema": "Q0-PLHQCD0-PACKAGE-ROOT-V1",
+    "baseline": "8b866b3d69276b976c913ab23842aa5d9b171018",
+    "prompt_path": "docs/next_level/q0_plhqcd0_codex_prompt.md",
+    "prompt_sha256": "d587fd2c2cd95f8e8d5b31dc97bf0b1de57ed02b4bb212bde8984bad233cd19b",
+    "import_contract_path": "docs/next_level/q0_plhqcd0_import_contract.json",
+    "import_contract_sha256": "783cfd8c6acc00ce0c6d03facf0b1f87a9fcf8026a1eb629aaf80b5944e54dd6",
+    "implementation_files": {
+      "src/deuteron_wigner/bridge/plhqcd0/__init__.py": "bcc9b2958917d61bbc51091c2b678f18d53f61148838c0e17218caeaf235a8a2",
+      "src/deuteron_wigner/bridge/plhqcd0/core.py": "277bf7a38ea7abb86b5145284103f7f803459c75fc6c38fbe0df45a605167390",
+      "tests/test_q0_plhqcd0.py": "1a0ab7d6ce84c026173ad5f5f0f785ced9fdbfb44058004cd842926d876cce1f"
+    },
+    "authorities": {
+      "C131": "67ab09bdc4ef7960a7d39ee35c243cec5c6537087012ea6283d5b4da8259cbd4",
+      "C142": "3e862b300f594a0bb8f5eda20f9dd6ca635cead07ef510195d86e6b73549736d",
+      "C144": "cb3ee45519580284caf6a73246d7ab43e2fd19a9db5db96471e6f508ead4a635",
+      "C148": "6152c0baadfa1254a94945bffd7b3540d737b2789b40bc23d9e5d490ac544592",
+      "C149": "8958d612be544991274ef21024772786625f20987f4c2d89d5708564864a57c0",
+      "C150": "2854394a252e1a6401570a6617d3d2fbea1d1aced7fffa105d235eb398c4a57a"
+    },
+    "dimensions": {
+      "K9": [1350, 2048, 11],
+      "K11": [2706, 4096, 12],
+      "K13": [4758, 8192, 13]
+    },
+    "q1_prompt_path": "docs/next_level/q1_plhqcdstate_codex_prompt.md",
+    "q1_prompt_sha256": "48e4ae3c4ed6c8f5aa7e2c10f9bc63b8b7a71e19f83fe2ac94307c0892cc0afc",
+    "q1_contract_path": "docs/next_level/q1_plhqcdstate_import_contract.json",
+    "q1_contract_sha256": "bc13b8ec6a44ed4750b94eb23da10f6ef3c566c487a1785ce8e67056180a7b98",
+    "c151_consumed": false
+  }
+}

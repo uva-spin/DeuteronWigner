@@ -1,0 +1,367 @@
+{
+  "all_detected": true,
+  "count": 60,
+  "injections": [
+    {
+      "description": "swapped link pair aliased",
+      "diagnostic": "C6.GLID.3",
+      "stable_id": "C6.INJECT.01",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "one-leg reversal aliased",
+      "diagnostic": "C6.GLID.3",
+      "stable_id": "C6.INJECT.02",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "fundamental active-gluon leg",
+      "diagnostic": "C6.GLID.2",
+      "stable_id": "C6.INJECT.03",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing trace closure",
+      "diagnostic": "C6.GLID.1",
+      "stable_id": "C6.INJECT.04",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "incomplete endpoint fiber",
+      "diagnostic": "C6.GLID.2",
+      "stable_id": "C6.INJECT.05",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "invalid diagonal-adjoint status",
+      "diagnostic": "C6.GLID.1",
+      "stable_id": "C6.INJECT.06",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "generic gluon T-odd without pair",
+      "diagnostic": "C6.GLID.1",
+      "stable_id": "C6.INJECT.07",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "generic gluon T-odd without color",
+      "diagnostic": "C6.COLOR.5",
+      "stable_id": "C6.INJECT.08",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "implicit plus-plus to f alias",
+      "diagnostic": "C6.COLOR.5",
+      "stable_id": "C6.INJECT.09",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "implicit plus-minus to d alias",
+      "diagnostic": "C6.COLOR.5",
+      "stable_id": "C6.INJECT.10",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "default f+d mixture",
+      "diagnostic": "C6.COLOR.6",
+      "stable_id": "C6.INJECT.11",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong f normalization",
+      "diagnostic": "C6.COLOR.2",
+      "stable_id": "C6.INJECT.12",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong d normalization",
+      "diagnostic": "C6.COLOR.3",
+      "stable_id": "C6.INJECT.13",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonzero claimed f dot d",
+      "diagnostic": "C6.COLOR.1",
+      "stable_id": "C6.INJECT.14",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "forced color reconstruction",
+      "diagnostic": "C6.COLOR.4",
+      "stable_id": "C6.INJECT.15",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "color scalar replaces ordering",
+      "diagnostic": "C6.COLOR.5",
+      "stable_id": "C6.INJECT.16",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "singlet qqq times free gluon",
+      "diagnostic": "C6.WARD.3",
+      "stable_id": "C6.INJECT.17",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "adjoint generator omitted",
+      "diagnostic": "C6.WARD.3",
+      "stable_id": "C6.INJECT.18",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "duplicate active-gluon slot",
+      "diagnostic": "C6.STATE.1",
+      "stable_id": "C6.INJECT.19",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong active species",
+      "diagnostic": "C6.STATE.1",
+      "stable_id": "C6.INJECT.20",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonpositive active-gluon x",
+      "diagnostic": "C6.STATE.1",
+      "stable_id": "C6.INJECT.21",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonzero skewness",
+      "diagnostic": "C3.FIBER.XI",
+      "stable_id": "C6.INJECT.22",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "unsupported off-diagonal Fock transition",
+      "diagnostic": "C6.STATE.2",
+      "stable_id": "C6.INJECT.23",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong Wilson order",
+      "diagnostic": "C6.DYN.1",
+      "stable_id": "C6.INJECT.24",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "arbitrary imaginary coefficient",
+      "diagnostic": "C6.DYN.1",
+      "stable_id": "C6.INJECT.25",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "epsilon marked physical",
+      "diagnostic": "C6.DYN.5",
+      "stable_id": "C6.INJECT.26",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "absorption without cut",
+      "diagnostic": "C6.DYN.2",
+      "stable_id": "C6.INJECT.27",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link odd at zero coupling",
+      "diagnostic": "C6.REV.3",
+      "stable_id": "C6.INJECT.28",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link odd without OAM",
+      "diagnostic": "C6.REV.3",
+      "stable_id": "C6.INJECT.29",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "incomplete antiunitary reversal",
+      "diagnostic": "C6.REV.1",
+      "stable_id": "C6.INJECT.30",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "raw future/past subtraction",
+      "diagnostic": "C6.REV.1",
+      "stable_id": "C6.INJECT.31",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "color lost on reversal",
+      "diagnostic": "C6.REV.4",
+      "stable_id": "C6.INJECT.32",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "projector changes path",
+      "diagnostic": "C6.POL.3",
+      "stable_id": "C6.INJECT.33",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "separate polarization kernels",
+      "diagnostic": "C6.POL.1",
+      "stable_id": "C6.INJECT.34",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "tensor clipping hides failure",
+      "diagnostic": "C6.POL.2",
+      "stable_id": "C6.INJECT.35",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing soft ancestry",
+      "diagnostic": "C6.SOFT.1",
+      "stable_id": "C6.INJECT.36",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing half-soft subtraction",
+      "diagnostic": "C6.SOFT.2",
+      "stable_id": "C6.INJECT.37",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "duplicate soft subtraction",
+      "diagnostic": "C6.RAP.2",
+      "stable_id": "C6.INJECT.38",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "rapidity derivative unchecked",
+      "diagnostic": "C6.RAP.1",
+      "stable_id": "C6.INJECT.39",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "regulator dependent declared complete",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.40",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "UV unresolved set to zero",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.41",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "both soft routes selected",
+      "diagnostic": "C6.ROUTE.1",
+      "stable_id": "C6.INJECT.42",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "boundary ladder duplicated in CS kernel",
+      "diagnostic": "C6.ROUTE.1",
+      "stable_id": "C6.INJECT.43",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "physical scheme without matching",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.44",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link shortening complete by assertion",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.45",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "evolution attempted",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.46",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "physical process attempted",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.47",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "process f/d weights assigned",
+      "diagnostic": "C6.COLOR.6",
+      "stable_id": "C6.INJECT.48",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nuclear composition attempted",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.49",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "partonic equals nuclear rescattering",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.50",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "duplicate cut without relation",
+      "diagnostic": "C6.PROV.1",
+      "stable_id": "C6.INJECT.51",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "distinct cuts deduplicated numerically",
+      "diagnostic": "C6.PROV.1",
+      "stable_id": "C6.INJECT.52",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "f/d deduplicated numerically",
+      "diagnostic": "C6.PROV.3",
+      "stable_id": "C6.INJECT.53",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing left Ward attachment",
+      "diagnostic": "C6.WARD.2",
+      "stable_id": "C6.INJECT.54",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "missing right Ward attachment",
+      "diagnostic": "C6.WARD.2",
+      "stable_id": "C6.INJECT.55",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "production promotion",
+      "diagnostic": "C6.STATUS.1",
+      "stable_id": "C6.INJECT.56",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "accepted registry modified",
+      "diagnostic": "C6.REGRESS",
+      "stable_id": "C6.INJECT.57",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "production provenance modified",
+      "diagnostic": "C6.REGRESS",
+      "stable_id": "C6.INJECT.58",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "authoritative artifact modified",
+      "diagnostic": "C6.REGRESS",
+      "stable_id": "C6.INJECT.59",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "normative source modified",
+      "diagnostic": "C6.REGRESS",
+      "stable_id": "C6.INJECT.60",
+      "status": "PASS_DETECTED"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

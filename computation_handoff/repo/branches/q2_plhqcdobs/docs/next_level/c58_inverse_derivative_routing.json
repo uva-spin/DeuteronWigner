@@ -1,0 +1,127 @@
+{
+  "C57_import": {
+    "C53_support_holdout": [
+      312,
+      510,
+      756
+    ],
+    "C55_monomial": [
+      "b_dagger",
+      "a",
+      "a_dagger",
+      "b"
+    ],
+    "C57_status": "C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY",
+    "forbidden": [
+      "C57 mutation",
+      "C53 numerical values",
+      "C53 energy denominators",
+      "BPP DLCQ finite sum"
+    ],
+    "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+    "plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+    "records": [
+      {
+        "envelope": 2304,
+        "field_mask_hash": "ae17a2eebc232524e2b746fcab6d9977103f2958f6d86cc7abf24838c4b56569",
+        "field_ranks": [
+          744,
+          744,
+          620,
+          744,
+          744,
+          620
+        ],
+        "kernel_hash": "9dee132f15c3b63d3ae38d2d6ff553a59f2670cba2a435e419f8df2ea3075a20",
+        "mode_set_hash": "0e54d52be614e205bcc341c1483ccdda3ef73071a5803bcd9e9703ce5b8e8697",
+        "qg_mask_hash": "8be8a08da9bf574bd4f1f9e6fa2a3d4547809105d2584087f79d0bd4f8938b1f",
+        "qg_ranks": [
+          52,
+          52,
+          52,
+          52,
+          52,
+          52
+        ],
+        "resolution": "K9_2_N8_b0.40",
+        "union": 1216
+      },
+      {
+        "envelope": 4400,
+        "field_mask_hash": "d5446d5f3a2939be8551a684ede62376f36ffc58e9f96eb84ee0f8002d5221b9",
+        "field_ranks": [
+          1470,
+          1470,
+          1225,
+          1470,
+          1470,
+          1225
+        ],
+        "kernel_hash": "6bb0a0f7404f64ce4871ce9d12736bc37e643ec4e342971f941a110a276b9428",
+        "mode_set_hash": "7af12484439e95ba02c34dfd27bf4758f6cb43f1abf7503fe654a4518a3ea636",
+        "qg_mask_hash": "68d3dbdfeabd1499e12f5c7dc278a44af8f85c742212f1ebe0100874ceab701d",
+        "qg_ranks": [
+          85,
+          85,
+          85,
+          85,
+          85,
+          85
+        ],
+        "resolution": "K11_2_N10_b0.45",
+        "union": 2320
+      },
+      {
+        "envelope": 7488,
+        "field_mask_hash": "72af3ebc2fe6874ac2e50fdfd5d39c72cad904b2700a49837eb83fff927ef8c3",
+        "field_ranks": [
+          2556,
+          2556,
+          2130,
+          2556,
+          2556,
+          2130
+        ],
+        "kernel_hash": "9d8bf2a4454e7085d0e184f6c1aa5cdd428083d15ba700c5cf0e82a8360cbfe9",
+        "mode_set_hash": "de8b541b16f3f0dbc767a6ad78d6c6418139825be2be127922939df2b240b830",
+        "qg_mask_hash": "80aad472355c3b9f5e056e6d2cc3f548d6e0b7f365a48af8cb7068c6dfda7883",
+        "qg_ranks": [
+          126,
+          126,
+          126,
+          126,
+          126,
+          126
+        ],
+        "resolution": "K13_2_N12_b0.50",
+        "union": 3936
+      }
+    ],
+    "snapshot_hash": "9269d41bbd2c669838ee1649b8d1dc77eb81194a84ad295a670bc3116e8b723d",
+    "status": "PASS_READ_ONLY"
+  },
+  "baseline": "d9d981459dff8d21d94ef13b0a671e8140b47caa",
+  "denominator": "exact 1/[k_g (K-k_g)] after finite-cell normalizations; no epsilon/clipping/pseudoinverse",
+  "no_BPP_DLCQ_sum": true,
+  "no_C53_values": true,
+  "no_complete_instantaneous_fermion": true,
+  "no_direct_contact": true,
+  "pair_support_plan": "IFNORM2-ORDERED-JOINT-SUPPORT",
+  "qg_sector_plan": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+  "range": {
+    "K11_2_N10_b0.45": [
+      1.0,
+      5.0
+    ],
+    "K13_2_N12_b0.50": [
+      1.0,
+      6.0
+    ],
+    "K9_2_N8_b0.40": [
+      1.0,
+      4.0
+    ]
+  },
+  "route": "right A psi: p_q^+-k_g^+=pi(K-k_g)/L",
+  "status": "C58_SOURCE_DERIVED_IFERM_NORMAL_ORDERING_READY"
+}

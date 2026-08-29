@@ -1,0 +1,13 @@
+{
+  "schema": "C176-C177-HQCDB0RESLINKSOURCE1-CONTINUATION-V1",
+  "continuation": "C177/HQCDB0RESLINKSOURCE1",
+  "parent": "C176/HQCDB0RESLINK1",
+  "parent_commit": "999304915be1d5de0210cf0a07e5cfabbb524fdb149ece93ccd2d5600203cbd5",
+  "parent_status": "C176_HQCDB0RESLINK1_PATH_GEOMETRY_INCOMPLETE",
+  "parent_plan": "B0RESLINK1-D",
+  "reason": "the authenticated C43 public API contains residual-link role/convention records but no executable source-locked path geometry",
+  "first_remaining_object": "C176-C43-RESIDUAL-LINK-PATH-GEOMETRY",
+  "required_scope": ["exact path ID", "basepoint and endpoint", "transverse parameterization", "orientation", "path ordering", "finite-cell endpoint semantics", "source/version locator"],
+  "nonclaims": ["no path inferred", "no endpoint zero", "no endpoint coupling", "no Wilson coefficient", "no physical TMD staple", "no self-energy", "no adapter", "no BRST/ST", "no counterterm/null selection", "no quantum object"],
+  "push": false
+}

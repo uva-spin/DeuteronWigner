@@ -1,0 +1,7 @@
+{
+  "package": "C198/HQCDST2",
+  "purpose": "Typed topology and count-once ledger for the available finite-basis ST system.",
+  "required_classes": ["C197_Z1F", "C197_restricted_qg_coupling", "C150_Zq", "C184_gluon_field", "ghost_field", "ghost_gluon", "three_gluon", "four_gluon", "BRST_source", "boundary_link_zero_mode_global_volume", "counterterm_sensitivity", "null_sensitivity", "renormalization_condition", "defining_equation", "diagnostic", "target_MOMq", "standard_scheme", "physical_input", "conditional_solution_family"],
+  "rules": ["defining equations are not independent constraints", "proper-vertex external legs are not reinserted", "Z1F/Zq/ZA/ghost/pure-gluon factors remain distinct", "missing rows are not zero", "interfaces are not local factors", "target/standard/physical rows remain non-source-side"],
+  "source_root": "8b84fc1744ffc15c6b9fe2c9064f178974d4977a08095cc1d9d123e20017f709"
+}

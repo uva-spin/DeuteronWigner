@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "role": "ACTION_AND_COMMUTATOR_AUTHORITY",
+      "scope": "C55 instantaneous constrained-fermion operator",
+      "source": "SB hep-ph/0011372v2 Eq.(24)"
+    },
+    {
+      "role": "DLCQ_REGULATOR_AUTHORITY",
+      "scope": "normal ordering/self-induced inertia in distinct DLCQ momentum regulator",
+      "source": "BPP hep-ph/9705477v1 Eq.(2.97), Sec.2 and DLCQ contraction table"
+    },
+    {
+      "role": "CORRESPONDING_PROPAGATING_GRAPH_TRUNCATION_AUTHORITY",
+      "scope": "instantaneous graph retained/cut in the same set as its corresponding real intermediate state",
+      "source": "Tang--Brodsky--Pauli, SLAC-PUB-5425 / Phys.Rev.D 44, 1842 (1991), Secs.3,5; p.27"
+    },
+    {
+      "role": "CORRESPONDING_PROPAGATING_GRAPH_TRUNCATION_AUTHORITY",
+      "scope": "q+qg example: instantaneous terms in q but not qg sector; transverse representation is a finite momentum lattice",
+      "source": "Li--Lappi--Zhao--Salgado arXiv:2504.07162v1 Appendix B, lines app:inst"
+    },
+    {
+      "role": "BLFQ_ONE_PARTICLE_BASIS_AUTHORITY",
+      "scope": "C45 finite cell and normalized 2D-HO modes",
+      "source": "0905.1411v1; 1311.2980v1"
+    },
+    {
+      "role": "BLFQ_MANY_BODY_TRUNCATION_AUTHORITY",
+      "scope": "C47 x-weighted TM/CM and Nmax projection",
+      "source": "1911.10762v1"
+    },
+    {
+      "role": "NOT_OPERATOR_REGULATOR_IDENTICAL",
+      "scope": "read-only support/basis holdout; numerical matrix values forbidden",
+      "source": "C53"
+    },
+    {
+      "role": "SECTOR_RENORMALIZATION_METHOD_COMPARISON",
+      "scope": "not used to choose a C57 counterterm or regulator map",
+      "source": "0801.4507; 1402.4195; 1404.6234"
+    }
+  ],
+  "status": "SOURCE_COMPLETE_AT_DECLARED_SCOPE"
+}

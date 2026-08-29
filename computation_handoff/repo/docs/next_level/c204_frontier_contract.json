@@ -1,0 +1,159 @@
+{
+  "schema": "C204-FRONTIER-CONTRACT-V1",
+  "artifact": "frontier_contract",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 frontier_contract is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-FRONTIER-V1",
+    "rows": [
+      {
+        "object_id": "C197-ST-1",
+        "exact_missing_object": "complete ghost-field renormalization",
+        "aliases": [
+          "complete ghost-field renormalization",
+          "GHOST_FIELD_RENORMALIZATION"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-2",
+        "exact_missing_object": "complete ghost-gluon proper vertex",
+        "aliases": [
+          "complete ghost-gluon proper vertex",
+          "GHOST_GLUON_PROPER_VERTEX"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-3",
+        "exact_missing_object": "complete three-gluon proper vertex renormalization",
+        "aliases": [
+          "complete three-gluon proper vertex renormalization",
+          "THREE_GLUON_PROPER_VERTEX"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-4",
+        "exact_missing_object": "complete four-gluon renormalization",
+        "aliases": [
+          "complete four-gluon renormalization",
+          "FOUR_GLUON_PROPER_VERTEX"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-5",
+        "exact_missing_object": "BRST source identities",
+        "aliases": [
+          "BRST source identities",
+          "BRST_SOURCE_IDENTITY"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-6",
+        "exact_missing_object": "endpoint ghost/link identities",
+        "aliases": [
+          "endpoint ghost/link identities",
+          "ENDPOINT_GHOST_LINK_IDENTITY"
+        ],
+        "status": "C204_REPLACED_ENDPOINT_GHOST_LINK_AUTHORITY",
+        "selected_first": true,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-7",
+        "exact_missing_object": "global zero-mode/gauge-volume treatment",
+        "aliases": [
+          "global zero-mode/gauge-volume treatment",
+          "GLOBAL_GAUGE_VOLUME_IDENTITY"
+        ],
+        "status": "PRESERVED_ORDERED_FRONTIER",
+        "selected_first": false,
+        "not_zero": true,
+        "next": "C205/HQCDSTGLOBAL1"
+      },
+      {
+        "object_id": "C197-ST-8",
+        "exact_missing_object": "ST-compatible counterterm solution",
+        "aliases": [
+          "ST-compatible counterterm solution",
+          "ST_COMPATIBLE_COUNTERTERM_SOLUTION"
+        ],
+        "status": "PRESERVED_ORDERED_FRONTIER",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-9",
+        "exact_missing_object": "target MOMq renormalization conditions",
+        "aliases": [
+          "target MOMq renormalization conditions",
+          "TARGET_RENORMALIZATION_CONDITION"
+        ],
+        "status": "PRESERVED_ORDERED_FRONTIER",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-10",
+        "exact_missing_object": "physical input",
+        "aliases": [
+          "physical input",
+          "PHYSICAL_INPUT_CONDITION"
+        ],
+        "status": "PRESERVED_ORDERED_FRONTIER",
+        "selected_first": false,
+        "not_zero": true,
+        "next": null
+      }
+    ],
+    "count": 10,
+    "first": "C197-ST-6",
+    "ordered_remaining": [
+      "C197-ST-7",
+      "C197-ST-8",
+      "C197-ST-9",
+      "C197-ST-10"
+    ],
+    "root": "057c263abda2e00f30a27b48585ff43f9d4936866681c666e4bae488bb362746"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "false_agreement": false,
+    "root": "eea2d5ffc1284cc9d04d2707c6f086f3684a84233fffc60a92b711911118757c",
+    "routes": [
+      {
+        "agreement": null,
+        "finite_basis": "READY",
+        "route": "DIRECT_DIFFERENCE",
+        "target": "TARGET_AST_MISSING"
+      },
+      {
+        "agreement": null,
+        "finite_basis": "READY",
+        "route": "PROJECTED_GREEN_FUNCTION_RATIO",
+        "target": "TARGET_AST_MISSING"
+      },
+      {
+        "agreement": null,
+        "finite_basis": "READY",
+        "route": "INVERSE_ROUNDTRIP",
+        "target": "TARGET_AST_MISSING"
+      },
+      {
+        "agreement": null,
+        "finite_basis": "READY",
+        "route": "LOG_RHO_DERIVATIVE",
+        "target": "TARGET_AST_MISSING"
+      },
+      {
+        "agreement": null,
+        "finite_basis": "READY",
+        "route": "RHO_VARIATION",
+        "target": "TARGET_AST_MISSING"
+      }
+    ]
+  },
+  "package_root": "b2c27f7886c7210bc3c6eeae19583ec596948bd505c681183a33272225574830",
+  "physical": false,
+  "plan": "RIMASSIR1-C",
+  "schema": "C279-ROUTE_LEDGER-VALIDATION-V1",
+  "status": "C279_C157_SIGNED_MASS_IR_SCHEMA_RECONCILED_C158_FB_EXECUTABLE_RI_SMOM_TARGET_AST_MISSING",
+  "validation": "PASS"
+}

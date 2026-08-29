@@ -1,0 +1,43 @@
+{
+  "package_root": "5a124225b302d8fcffbcdbf799bb19d0e6c2842d0658cbc17453f966e02902ca",
+  "physical": false,
+  "plan": "RIMASSC43JMYPARAMREDUCE3-C",
+  "record": {
+    "count": 4,
+    "count_once": true,
+    "root": "0fd135ebcb6b8bccf18ae8ba1cab6ffcb48c1826e859c4bc80175303c465074d",
+    "rows": [
+      {
+        "Delta": "-[s^2*v2+r^2*tv2+2*s*r*(v.tv)]/(4t)",
+        "contours": "v +i0; tildev -i0",
+        "family": "S.virtual",
+        "parameters": "t,s,r>0",
+        "shift": "ell -> L-(s*v+r*tildev)/(2t)",
+        "weight": "t^(A-1)s^alpha*r^beta/[Gamma(A)Gamma(1+alpha)Gamma(1+beta)]"
+      },
+      {
+        "family": "S.real.v",
+        "measurement": "exp(i bT.kT)-1",
+        "parameters": "cut shell plus s1,s2",
+        "polynomial": "Dv_plus^(1+alpha)*Dv_minus^(1+alpha)",
+        "weight": "nu1^(4alpha)"
+      },
+      {
+        "family": "S.real.tv",
+        "measurement": "exp(i bT.kT)-1",
+        "parameters": "crossed S.real.v",
+        "polynomial": "Dtv_minus^(1+beta)*Dtv_plus^(1+beta)",
+        "weight": "nu2^(4beta)"
+      },
+      {
+        "family": "S.real.interference",
+        "measurement": "exp(i bT.kT)-1",
+        "parameters": "cut shell plus s,r",
+        "polynomial": "Dv^(1+alpha)*Dtv^(1+beta)",
+        "weight": "nu1^(2alpha)nu2^(2beta)"
+      }
+    ]
+  },
+  "status": "C379_EXPLICIT_REAL_LOOP_SOFT_PARAMETER_POLYNOMIALS_DERIVED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "PASS"
+}

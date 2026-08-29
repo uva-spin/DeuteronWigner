@@ -1,0 +1,10 @@
+{
+  "schema": "C108-C80-COORDINATE-CROSSWALK-V1",
+  "status": "C108_IFCONTACT6_M2_PPLUS_AUTHORITY_INCOMPLETE",
+  "C104_coordinate_schema": "C80-RAW-COORDINATE-V1",
+  "C80_coordinate_type": "ContactKernelCoordinate",
+  "raw_and_color_identity": "available through frozen C104/C107 records",
+  "orientation": "b_dagger,a_dagger,a,b",
+  "unit_closure": "Pminus closes; M2 requires P_plus",
+  "unresolved": ["numerical M2 unit/value closure"]
+}

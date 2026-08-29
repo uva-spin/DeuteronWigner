@@ -1,0 +1,158 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "applicability_contract",
+  "authority_record": {
+    "applicable": 3,
+    "count": 15,
+    "not_applicable": 12,
+    "root": "1a9c8e52c2bd7fd6efcbad4bffa889567e15b9e259ba6dcb27ab3c656c3e77b3",
+    "rows": [
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "199023ba2a0676cbba120b6c705c687d86790bbaa3ad020a3c35cfbb42d0ec27",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 0,
+        "interface_id": "C128_FREE:K9_2_N8_b0.40:OUTSIDE_FIXED_K",
+        "resolution": "K9_2_N8_b0.40",
+        "term_id": "C128_FREE"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "9308c33a0cbc5105f48f999f88c3ff162fe9d4bfe0acbb68ff4c70af9d9bd95d",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 0,
+        "interface_id": "C128_FREE:K11_2_N10_b0.45:OUTSIDE_FIXED_K",
+        "resolution": "K11_2_N10_b0.45",
+        "term_id": "C128_FREE"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "b5c108a1db125e20721dc1bf9f693590d568acbf5256c91d5ff881076597c3ee",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 0,
+        "interface_id": "C128_FREE:K13_2_N12_b0.50:OUTSIDE_FIXED_K",
+        "resolution": "K13_2_N12_b0.50",
+        "term_id": "C128_FREE"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "66c891d8c8e7e1f91ff132b7792766b757c5c63ec207bfea957a7c56d9e3957f",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 1,
+        "interface_id": "C53_CANONICAL_VERTEX:K9_2_N8_b0.40:OUTSIDE_FIXED_K",
+        "resolution": "K9_2_N8_b0.40",
+        "term_id": "C53_CANONICAL_VERTEX"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "e202c4dc6244c75883236c721d675c47d17af07881d53bc686af2fcba8d0382f",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 1,
+        "interface_id": "C53_CANONICAL_VERTEX:K11_2_N10_b0.45:OUTSIDE_FIXED_K",
+        "resolution": "K11_2_N10_b0.45",
+        "term_id": "C53_CANONICAL_VERTEX"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "1ae068584b6383d1f111fa0dcf2be0dde874adbd4b951ff4baac5fe17c161ae3",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 1,
+        "interface_id": "C53_CANONICAL_VERTEX:K13_2_N12_b0.50:OUTSIDE_FIXED_K",
+        "resolution": "K13_2_N12_b0.50",
+        "term_id": "C53_CANONICAL_VERTEX"
+      },
+      {
+        "V2_contact_applicable": true,
+        "ancestry": "b054b743aec867f13de9099aedf102c3e88d4aba9ee817ca660727ff7d47e309",
+        "classification": "C112_CALLER_BOUND_CONTACT_EVALUATOR",
+        "coupling_degree": 2,
+        "interface_id": "C112_INSTANTANEOUS_FERMION:K9_2_N8_b0.40:OUTSIDE_FIXED_K",
+        "resolution": "K9_2_N8_b0.40",
+        "term_id": "C112_INSTANTANEOUS_FERMION"
+      },
+      {
+        "V2_contact_applicable": true,
+        "ancestry": "974ef2864118da279c981bcff4aa2ad8462375ce12732232f17717844efa5f76",
+        "classification": "C112_CALLER_BOUND_CONTACT_EVALUATOR",
+        "coupling_degree": 2,
+        "interface_id": "C112_INSTANTANEOUS_FERMION:K11_2_N10_b0.45:OUTSIDE_FIXED_K",
+        "resolution": "K11_2_N10_b0.45",
+        "term_id": "C112_INSTANTANEOUS_FERMION"
+      },
+      {
+        "V2_contact_applicable": true,
+        "ancestry": "3fcf5e6849f8370f5e6f2666abe1fcdcb4016af08abc7c8233af7a482388ec0b",
+        "classification": "C112_CALLER_BOUND_CONTACT_EVALUATOR",
+        "coupling_degree": 2,
+        "interface_id": "C112_INSTANTANEOUS_FERMION:K13_2_N12_b0.50:OUTSIDE_FIXED_K",
+        "resolution": "K13_2_N12_b0.50",
+        "term_id": "C112_INSTANTANEOUS_FERMION"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "1d91534d0e9650fd9e5998f81d7cec2295a424fc73e35c12e6fe4b8aa645b3f4",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 2,
+        "interface_id": "C127_INSTANTANEOUS_CURRENT:K9_2_N8_b0.40:OUTSIDE_FIXED_K",
+        "resolution": "K9_2_N8_b0.40",
+        "term_id": "C127_INSTANTANEOUS_CURRENT"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "4b8f20e5c6ae87fb96e2e9f197541171931129f9fc3dbc1ada6009601507941d",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 2,
+        "interface_id": "C127_INSTANTANEOUS_CURRENT:K11_2_N10_b0.45:OUTSIDE_FIXED_K",
+        "resolution": "K11_2_N10_b0.45",
+        "term_id": "C127_INSTANTANEOUS_CURRENT"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "baa18939864d70d2730210deeef537dddbed58855cd5c029006e9cc43280b98c",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 2,
+        "interface_id": "C127_INSTANTANEOUS_CURRENT:K13_2_N12_b0.50:OUTSIDE_FIXED_K",
+        "resolution": "K13_2_N12_b0.50",
+        "term_id": "C127_INSTANTANEOUS_CURRENT"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "102973b94f88ef50539cbb93e0d1edc82dc86f662ae5af866290bad8b27ec84d",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 2,
+        "interface_id": "C129_GLUON_NORMAL_ORDERING:K9_2_N8_b0.40:OUTSIDE_FIXED_K",
+        "resolution": "K9_2_N8_b0.40",
+        "term_id": "C129_GLUON_NORMAL_ORDERING"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "ee8df82c603dcc3280e0942cbb70a4289fa22c6520ad1598df08221a97f78e3d",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 2,
+        "interface_id": "C129_GLUON_NORMAL_ORDERING:K11_2_N10_b0.45:OUTSIDE_FIXED_K",
+        "resolution": "K11_2_N10_b0.45",
+        "term_id": "C129_GLUON_NORMAL_ORDERING"
+      },
+      {
+        "V2_contact_applicable": false,
+        "ancestry": "73d4fc7339c7e45ffe0eceea062a4f826581e91b99180ec446a010608db5581e",
+        "classification": "NOT_APPLICABLE_TO_C112_CONTACT_NOT_ZERO_AS_FULL_HAMILTONIAN_INTERFACE",
+        "coupling_degree": 2,
+        "interface_id": "C129_GLUON_NORMAL_ORDERING:K13_2_N12_b0.50:OUTSIDE_FIXED_K",
+        "resolution": "K13_2_N12_b0.50",
+        "term_id": "C129_GLUON_NORMAL_ORDERING"
+      }
+    ]
+  },
+  "contact_interfaces": 3,
+  "interfaces_classified": 15,
+  "package_root": "2e0bad67c40c786f16b2e5f622112ba240693d79756fac2749ffff548fcf72cd",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CONTACTINTERFACE1-A",
+  "schema": "C246-APPLICABILITY-CONTRACT-V1",
+  "status": "C246_ALL_FIFTEEN_INTERFACES_V2_CONTACT_APPLICABILITY_CLASSIFIED_THREE_C112_CALLER_BOUND_EVALUATORS_READY"
+}

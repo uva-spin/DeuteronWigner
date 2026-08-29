@@ -1,0 +1,394 @@
+{
+  "records": [
+    {
+      "M2_coefficient": "2*P_plus*(Pminus_coefficient); P_perp^2=0 in total-transverse frame",
+      "M2_units": "GeV^2",
+      "Pminus_abs_error": 1.9546864127306662e-14,
+      "Pminus_coefficient": [
+        0.0,
+        1.2263076811478816e-05
+      ],
+      "Pminus_units": "GeV",
+      "color": {
+        "C_F_reduction": false,
+        "abs_error": 1.7763568394002505e-15,
+        "order": "T^0 T^1",
+        "product_route": [
+          0.0,
+          0.25
+        ],
+        "reversed_negative_control": 0.5,
+        "route_residual": 0.0,
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": [
+          0.0,
+          0.25
+        ]
+      },
+      "coordinate": {
+        "a_in": 1,
+        "a_out": 0,
+        "c_in": 0,
+        "c_out": 0,
+        "g_in": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "g_in_raw_id": "C77:RAW:K9_2_N8_b0.40:f6e005ee6066acf816fb80c6504c89cde7444bfab144351c025476a60d9ec2e3",
+        "g_out": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "g_out_raw_id": "C77:RAW:K9_2_N8_b0.40:f6e005ee6066acf816fb80c6504c89cde7444bfab144351c025476a60d9ec2e3",
+        "q_in": [
+          7,
+          2,
+          0,
+          0,
+          -1
+        ],
+        "q_in_raw_id": "C77:RAW:K9_2_N8_b0.40:f6e005ee6066acf816fb80c6504c89cde7444bfab144351c025476a60d9ec2e3",
+        "q_out": [
+          7,
+          2,
+          0,
+          0,
+          -1
+        ],
+        "q_out_raw_id": "C77:RAW:K9_2_N8_b0.40:f6e005ee6066acf816fb80c6504c89cde7444bfab144351c025476a60d9ec2e3",
+        "resolution": "K9_2_N8_b0.40",
+        "source_order": [
+          "b_dagger",
+          "a_dagger",
+          "a",
+          "b"
+        ],
+        "zero_mode_policy": "C43_PV_Q0_EXCLUDE_ZERO"
+      },
+      "coupling": "g_s^2 (explicitly factored)",
+      "four_ho": {
+        "abs_error": 3.559652572704408e-15,
+        "angular_rule": "-m_qout-m_gout+m_gin+m_qin=0",
+        "expression": "Mul(Rational(2, 25), Pow(pi, Integer(-1)))",
+        "expression_hash": "ba59507db147f7aea666c2190b6f691e8ca5fc30a8a8e1f7903c8cbfbb5c9b7f",
+        "formula": "Laguerre finite polynomial times Gamma moments; common C45 b_HO scale",
+        "quadrature": [
+          0.02546479089470326,
+          0.0
+        ],
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": [
+          0.025464790894703253,
+          0.0
+        ]
+      },
+      "kernel_coordinate_id": "C80:KAPPA:6d0ad04cf8bf4280b8a2cdf32afe80a643ce6c4e7c008b5041ef7eb6b1bb121c",
+      "longitudinal": {
+        "L_cancellation": "(2L)^-2*(2L)*L/(pi channel)=1/(2 pi channel); multiply -1/2",
+        "channel": "9/2",
+        "conservation": "delta_{9/2,9/2}",
+        "denominator": "pi*9/2/L",
+        "inverse": "L/(pi*9/2)",
+        "source_sign": "W3=-g_s^2/2; i partial+ on right A psi has positive channel",
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": "-1/(18*pi)"
+      },
+      "normalization": {
+        "L": "EXACTLY_CANCELLED",
+        "M2_conversion": "2 Pplus Pminus - Pperp^2; Pperp=0 selected total frame",
+        "M2_units": "GeV^2",
+        "Pminus_units": "GeV",
+        "coupling": "g_s^2 (explicitly factored)",
+        "field_modes": "[1/sqrt(2L)]^4",
+        "inverse_partial": "L/[pi(kq+kg)]",
+        "net": "-1/[4 pi(kq+kg)]",
+        "source": "-1/2",
+        "xminus_integral": "2L delta_K"
+      },
+      "precision": 53,
+      "spin": {
+        "abs_error": 1.4210854715202004e-14,
+        "direct": [
+          -0.10892854518252136,
+          0.0
+        ],
+        "gamma_order": "ubar gamma+ gamma.mu eps_out*_.mu gamma.nu eps_in_.nu u",
+        "phase": "C45 polarization; outgoing epsilon conjugated",
+        "reduced": [
+          -0.10892854518252136,
+          0.0
+        ],
+        "representative": "dimensionless p+/P+ and b_HO/P+ ratios; explicit dimensions kept in normalization",
+        "route_residual": 0.0,
+        "status": "NONZERO_CERTIFIED_INTERVAL"
+      },
+      "status": "EVALUATED_CERTIFIED"
+    },
+    {
+      "M2_coefficient": "2*P_plus*(Pminus_coefficient); P_perp^2=0 in total-transverse frame",
+      "M2_units": "GeV^2",
+      "Pminus_abs_error": 1.9539925233402755e-14,
+      "Pminus_coefficient": [
+        0.0,
+        1.5911552236900964e-05
+      ],
+      "Pminus_units": "GeV",
+      "color": {
+        "C_F_reduction": false,
+        "abs_error": 1.7763568394002505e-15,
+        "order": "T^0 T^1",
+        "product_route": [
+          0.0,
+          0.25
+        ],
+        "reversed_negative_control": 0.5,
+        "route_residual": 0.0,
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": [
+          0.0,
+          0.25
+        ]
+      },
+      "coordinate": {
+        "a_in": 1,
+        "a_out": 0,
+        "c_in": 0,
+        "c_out": 0,
+        "g_in": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "g_in_raw_id": "C77:RAW:K11_2_N10_b0.45:55cbab2d9755f637939bb71132c352f67ef83362bbe27d4f8e20c26fa9d5304b",
+        "g_out": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "g_out_raw_id": "C77:RAW:K11_2_N10_b0.45:55cbab2d9755f637939bb71132c352f67ef83362bbe27d4f8e20c26fa9d5304b",
+        "q_in": [
+          9,
+          2,
+          0,
+          0,
+          -1
+        ],
+        "q_in_raw_id": "C77:RAW:K11_2_N10_b0.45:55cbab2d9755f637939bb71132c352f67ef83362bbe27d4f8e20c26fa9d5304b",
+        "q_out": [
+          9,
+          2,
+          0,
+          0,
+          -1
+        ],
+        "q_out_raw_id": "C77:RAW:K11_2_N10_b0.45:55cbab2d9755f637939bb71132c352f67ef83362bbe27d4f8e20c26fa9d5304b",
+        "resolution": "K11_2_N10_b0.45",
+        "source_order": [
+          "b_dagger",
+          "a_dagger",
+          "a",
+          "b"
+        ],
+        "zero_mode_policy": "C43_PV_Q0_EXCLUDE_ZERO"
+      },
+      "coupling": "g_s^2 (explicitly factored)",
+      "four_ho": {
+        "abs_error": 3.552713678800501e-15,
+        "angular_rule": "-m_qout-m_gout+m_gin+m_qin=0",
+        "expression": "Mul(Rational(81, 800), Pow(pi, Integer(-1)))",
+        "expression_hash": "7f157115568bde1d0fa8550d000bce21a79ff2f38e7b3e1fef38aa7c85609da7",
+        "formula": "Laguerre finite polynomial times Gamma moments; common C45 b_HO scale",
+        "quadrature": [
+          0.03222887597610881,
+          0.0
+        ],
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": [
+          0.03222887597610881,
+          0.0
+        ]
+      },
+      "kernel_coordinate_id": "C80:KAPPA:af543e61130e5ee51840c613743baf07c6c2c2f21211e2a91c9e162745a0f599",
+      "longitudinal": {
+        "L_cancellation": "(2L)^-2*(2L)*L/(pi channel)=1/(2 pi channel); multiply -1/2",
+        "channel": "11/2",
+        "conservation": "delta_{11/2,11/2}",
+        "denominator": "pi*11/2/L",
+        "inverse": "L/(pi*11/2)",
+        "source_sign": "W3=-g_s^2/2; i partial+ on right A psi has positive channel",
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": "-1/(22*pi)"
+      },
+      "normalization": {
+        "L": "EXACTLY_CANCELLED",
+        "M2_conversion": "2 Pplus Pminus - Pperp^2; Pperp=0 selected total frame",
+        "M2_units": "GeV^2",
+        "Pminus_units": "GeV",
+        "coupling": "g_s^2 (explicitly factored)",
+        "field_modes": "[1/sqrt(2L)]^4",
+        "inverse_partial": "L/[pi(kq+kg)]",
+        "net": "-1/[4 pi(kq+kg)]",
+        "source": "-1/2",
+        "xminus_integral": "2L delta_K"
+      },
+      "precision": 53,
+      "spin": {
+        "abs_error": 1.4210854715202004e-14,
+        "direct": [
+          -0.13648971739972668,
+          0.0
+        ],
+        "gamma_order": "ubar gamma+ gamma.mu eps_out*_.mu gamma.nu eps_in_.nu u",
+        "phase": "C45 polarization; outgoing epsilon conjugated",
+        "reduced": [
+          -0.13648971739972676,
+          0.0
+        ],
+        "representative": "dimensionless p+/P+ and b_HO/P+ ratios; explicit dimensions kept in normalization",
+        "route_residual": 8.326672684688674e-17,
+        "status": "NONZERO_CERTIFIED_INTERVAL"
+      },
+      "status": "EVALUATED_CERTIFIED"
+    },
+    {
+      "M2_coefficient": "2*P_plus*(Pminus_coefficient); P_perp^2=0 in total-transverse frame",
+      "M2_units": "GeV^2",
+      "Pminus_abs_error": 1.9539925233402755e-14,
+      "Pminus_coefficient": [
+        0.0,
+        2.030345375541852e-05
+      ],
+      "Pminus_units": "GeV",
+      "color": {
+        "C_F_reduction": false,
+        "abs_error": 1.7763568394002505e-15,
+        "order": "T^0 T^1",
+        "product_route": [
+          0.0,
+          0.25
+        ],
+        "reversed_negative_control": 0.5,
+        "route_residual": 0.0,
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": [
+          0.0,
+          0.25
+        ]
+      },
+      "coordinate": {
+        "a_in": 1,
+        "a_out": 0,
+        "c_in": 0,
+        "c_out": 0,
+        "g_in": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "g_in_raw_id": "C77:RAW:K13_2_N12_b0.50:1759af95af90123cf25d56e8b320fa5a502f19103097bf6f7615de780c1dc865",
+        "g_out": [
+          1,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "g_out_raw_id": "C77:RAW:K13_2_N12_b0.50:1759af95af90123cf25d56e8b320fa5a502f19103097bf6f7615de780c1dc865",
+        "q_in": [
+          11,
+          2,
+          0,
+          0,
+          -1
+        ],
+        "q_in_raw_id": "C77:RAW:K13_2_N12_b0.50:1759af95af90123cf25d56e8b320fa5a502f19103097bf6f7615de780c1dc865",
+        "q_out": [
+          11,
+          2,
+          0,
+          0,
+          -1
+        ],
+        "q_out_raw_id": "C77:RAW:K13_2_N12_b0.50:1759af95af90123cf25d56e8b320fa5a502f19103097bf6f7615de780c1dc865",
+        "resolution": "K13_2_N12_b0.50",
+        "source_order": [
+          "b_dagger",
+          "a_dagger",
+          "a",
+          "b"
+        ],
+        "zero_mode_policy": "C43_PV_Q0_EXCLUDE_ZERO"
+      },
+      "coupling": "g_s^2 (explicitly factored)",
+      "four_ho": {
+        "abs_error": 3.552713678800501e-15,
+        "angular_rule": "-m_qout-m_gout+m_gin+m_qin=0",
+        "expression": "Mul(Rational(1, 8), Pow(pi, Integer(-1)))",
+        "expression_hash": "4bb8e14dcea51384f0adeb6a5dbf64821344ad8d3876190dc70c8658d8485ee9",
+        "formula": "Laguerre finite polynomial times Gamma moments; common C45 b_HO scale",
+        "quadrature": [
+          0.039788735772973836,
+          0.0
+        ],
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": [
+          0.039788735772973836,
+          0.0
+        ]
+      },
+      "kernel_coordinate_id": "C80:KAPPA:806b700de17896a1ed13695d452059de01b80a2a330913c0257782025bbd2a89",
+      "longitudinal": {
+        "L_cancellation": "(2L)^-2*(2L)*L/(pi channel)=1/(2 pi channel); multiply -1/2",
+        "channel": "13/2",
+        "conservation": "delta_{13/2,13/2}",
+        "denominator": "pi*13/2/L",
+        "inverse": "L/(pi*13/2)",
+        "source_sign": "W3=-g_s^2/2; i partial+ on right A psi has positive channel",
+        "status": "NONZERO_EXACT_ALGEBRAIC",
+        "value": "-1/(26*pi)"
+      },
+      "normalization": {
+        "L": "EXACTLY_CANCELLED",
+        "M2_conversion": "2 Pplus Pminus - Pperp^2; Pperp=0 selected total frame",
+        "M2_units": "GeV^2",
+        "Pminus_units": "GeV",
+        "coupling": "g_s^2 (explicitly factored)",
+        "field_modes": "[1/sqrt(2L)]^4",
+        "inverse_partial": "L/[pi(kq+kg)]",
+        "net": "-1/[4 pi(kq+kg)]",
+        "source": "-1/2",
+        "xminus_integral": "2L delta_K"
+      },
+      "precision": 53,
+      "spin": {
+        "abs_error": 1.4210854715202004e-14,
+        "direct": [
+          -0.16672203104277167,
+          0.0
+        ],
+        "gamma_order": "ubar gamma+ gamma.mu eps_out*_.mu gamma.nu eps_in_.nu u",
+        "phase": "C45 polarization; outgoing epsilon conjugated",
+        "reduced": [
+          -0.1667220310427716,
+          0.0
+        ],
+        "representative": "dimensionless p+/P+ and b_HO/P+ ratios; explicit dimensions kept in normalization",
+        "route_residual": 5.551115123125783e-17,
+        "status": "NONZERO_CERTIFIED_INTERVAL"
+      },
+      "status": "EVALUATED_CERTIFIED"
+    }
+  ]
+}

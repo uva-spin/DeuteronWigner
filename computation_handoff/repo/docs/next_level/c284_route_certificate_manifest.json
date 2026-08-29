@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "false_agreement": false,
+    "root": "98f9fb8aa935c035576fbd59f6b32708da9a90148a12257565d0154f6f35fea7",
+    "routes": [
+      {
+        "full_agreement": false,
+        "ready_subset": true,
+        "reason": "C284-MASS-RESIDUAL-LINK-PATH-ENDPOINT-GEOMETRY",
+        "route": "DIRECT_PROJECT"
+      },
+      {
+        "full_agreement": false,
+        "ready_subset": true,
+        "reason": "C284-MASS-RESIDUAL-LINK-PATH-ENDPOINT-GEOMETRY",
+        "route": "MASS_DERIVATIVE"
+      },
+      {
+        "full_agreement": false,
+        "ready_subset": true,
+        "reason": "C284-MASS-RESIDUAL-LINK-PATH-ENDPOINT-GEOMETRY",
+        "route": "SPECTRAL_RESOLVENT"
+      },
+      {
+        "full_agreement": false,
+        "ready_subset": true,
+        "reason": "C284-MASS-RESIDUAL-LINK-PATH-ENDPOINT-GEOMETRY",
+        "route": "OWNER_DECOMPOSITION"
+      },
+      {
+        "full_agreement": false,
+        "ready_subset": true,
+        "reason": "C284-MASS-RESIDUAL-LINK-PATH-ENDPOINT-GEOMETRY",
+        "route": "SIGN_REVERSAL"
+      }
+    ]
+  },
+  "package_root": "e8ff64d3f1cd8cd954d685e92b7a753f461a919ed2bfb0ac0abc5532825d309b",
+  "physical": false,
+  "plan": "RIMASSLFLOOP1-B",
+  "schema": "C284-ROUTE_CERTIFICATE-MANIFEST-V1",
+  "status": "C284_C43_MASS_LOOP_MAXIMAL_KERNEL_PARTITION_READY_RESIDUAL_LINK_ENDPOINT_GEOMETRY_MISSING",
+  "validation": "BOUND"
+}

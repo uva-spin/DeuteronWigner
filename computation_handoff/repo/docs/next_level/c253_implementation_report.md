@@ -1,0 +1,7 @@
+# C253/HQCDRIQUARKFIXEDKV2CURRENTTAIL1 implementation report
+
+Status: C253_RAW_UNBOUNDED_PROJECTOR_TAIL_ASYMPTOTICS_CLASSIFIED_NO_SUMMABLE_MAJORANT_WITHOUT_REGULATOR_TOPOLOGY
+Plan: RIQUARKFIXEDKV2CURRENTTAIL1-C
+C253 root: ed248df2869de2f6c7a0e4747daee6a9d5602e8ab7b6d06614d82a77ce7721a4
+
+Raw projector tails are distributional or nondecaying; regulated/test-function evaluation remains the exact C254 frontier.

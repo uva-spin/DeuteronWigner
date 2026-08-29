@@ -1,0 +1,19 @@
+{
+  "schema": "C138-C139-HQCDINPUT4-IMPORT-CONTRACT-V1",
+  "parent_status": "C138_HQCDINPUT3_EXTERNAL_INPUT_INCOMPLETE",
+  "parent_branch": "C138/HQCDINPUT3",
+  "branch": "C139/HQCDINPUT4",
+  "scope": "acquire and authenticate the two missing project-scheme external-input capsules, without changing the C137 quotient map",
+  "required_inputs": ["M_R2_FB", "g_R_FB(K_R)"],
+  "required_capsule_schema": "C135-EXTERNAL-INPUT-CAPSULE-V1",
+  "scheme_id": "PROJECT_FINITE_BASIS_OPEN_TRIPLET_SUBTRACTION_V1",
+  "identified_dimension": 2,
+  "nullspace_dimension": 9,
+  "null_coordinates_set_to_zero": 0,
+  "full_renormalization_forbidden": true,
+  "physical_state_forbidden": true,
+  "numerical_defaults_forbidden": true,
+  "historical_or_validation_values_forbidden": true,
+  "protected_paths": ["MSHT20_REP/", "docs/next_level/c69_qgembed5_codex_prompt.md"],
+  "status": "C139_HQCDINPUT4_PENDING"
+}

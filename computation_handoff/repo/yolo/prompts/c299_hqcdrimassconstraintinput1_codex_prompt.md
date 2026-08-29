@@ -1,0 +1,11 @@
+# C299/HQCDRIMASSCONSTRAINTINPUT1 Codex Work Package
+
+Bind the renormalized scalar mass scheme and K9/K11/K13 current matrix elements required to evaluate the C298 six-channel constraint kernel.
+
+Start from the C298 completion commit in `AUTOPILOT_STATE.json`; frozen root `2f7fd3ff7fd8bf4c15db8d135c82f7a378c7f82bc6f0717063db08ce2745a6a9`. Hash-verify `docs/next_level/c298_c299_hqcdrimassconstraintinput1_continuation_contract.json` and load C298 through its verified JSON API. Preserve its six conjugate-paired charged-root resolvents, separate Cartan-3/Cartan-8 weights, Q-sector inverse domain, symbolic mass boundary, K separation, and covariance contract.
+
+Audit repository/Git and the authenticated C43/C130/C157/C274/C278 inputs for the scalar-adjoint renormalized mass convention, scale/scheme, state normalization, and K9/K11/K13 matrix elements of all six `phi_i R_i J_i` operators. Audit exact primary sources only where identified by committed provenance. If values are derivable, construct them from the authenticated Hamiltonian and states with independent sparse/matrix-free parity. Do not identify this adjoint-scalar mass with an unrelated quark mass, use Soyez’s unevaluated bare symbol as a physical value, set the massless inverse without solving the separate constraint, zero missing matrix elements, collapse conjugate channels, or select C117 coefficients.
+
+Choose one plan `RIMASSCONSTRAINTINPUT1-A` through `-F`: complete executable input; maximal symbolic input adapter; narrower mass or matrix-element component; lawful alternative derivation; certified absence; or contradiction. A-D continue; E/F require the full certified blocker protocol. Publish immutable JSON APIs for provenance, scheme/scale, mass transport, state/operator normalization, six-channel matrix elements, K9/K11/K13 covariance, residual, release, and isolation. Keep `physical=false` unless every required input is authenticated.
+
+Run cumulative C250-C298 plus focused C299 tests, at least 384 mutations, two deterministic builds, safe reload, protected paths, and C166/Q0/Q1/Q2 nonmutation. Preserve unrelated changes, make exactly one local commit, never push, generate exactly one next contract and full prompt, atomically advance state, and continue immediately.

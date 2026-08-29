@@ -1,0 +1,46 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "direction_coverage_validation",
+  "authority_record": {
+    "covered": 0,
+    "root": "d69836a4c058ed3ea90950c554b48d438f75446da93dfa8db11dc697481b8d09",
+    "rows": [
+      {
+        "coefficient": "UNAVAILABLE_NOT_ZERO",
+        "covered": false,
+        "direction": "I2_density_projector",
+        "source_ids": []
+      },
+      {
+        "coefficient": "UNAVAILABLE_NOT_ZERO",
+        "covered": false,
+        "direction": "derivative_density",
+        "source_ids": []
+      },
+      {
+        "coefficient": "UNAVAILABLE_NOT_ZERO",
+        "covered": false,
+        "direction": "CM_ground",
+        "source_ids": []
+      },
+      {
+        "coefficient": "UNAVAILABLE_NOT_ZERO",
+        "covered": false,
+        "direction": "triplet_projected",
+        "source_ids": []
+      }
+    ],
+    "uncovered": 4
+  },
+  "directions_covered": 0,
+  "package_root": "bc07fbd295317cb19ab421b5e1cda48c93ba17d9af3a74a6a84e6e709b8180ee",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CURRENTSOURCE1-D",
+  "qualified_targets": 0,
+  "schema": "C256-DIRECTION-COVERAGE-VALIDATION-V1",
+  "status": "C256_CURRENT_TARGET_SOURCE_SCHEMA_READY_AUTHENTICATED_TARGET_CAPSULE_UNAVAILABLE"
+}

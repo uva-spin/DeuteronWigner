@@ -1,0 +1,49 @@
+{
+  "schema": "Q0-PLHQCD0-IMPORT-CONTRACT-V1",
+  "status": "Q0_PUBLIC_AUTHORITY_IMPORT_CONTRACT_READY",
+  "baseline": "8b866b3d69276b976c913ab23842aa5d9b171018",
+  "consumer": "src/deuteron_wigner/bridge/plhqcd0/core.py",
+  "allowed_public_authorities": [
+    {
+      "id": "C131",
+      "module": "deuteron_wigner.bridge.hqcd4",
+      "loader": "load_verified_projected_bare_hqcd_authority"
+    },
+    {
+      "id": "C142",
+      "module": "deuteron_wigner.bridge.hqcdfield",
+      "loader": "load_verified_hqcd_field_authority"
+    },
+    {
+      "id": "C144",
+      "module": "deuteron_wigner.bridge.hqcdopapi",
+      "loader": "load_verified_hqcd_operator_authority"
+    },
+    {
+      "id": "C149",
+      "module": "deuteron_wigner.bridge.hqcdmproj",
+      "loader": "load_verified_hqcd_mass_projector_authority"
+    },
+    {
+      "id": "C150",
+      "module": "deuteron_wigner.bridge.hqcdzqmass",
+      "loader": "load_verified_hqcd_zq_mass_authority"
+    }
+  ],
+  "public_only": true,
+  "direct_C148_consumption": false,
+  "C148_audit_only": true,
+  "diagnostic_fixture_boundary": "C144 explicit no-physical-claim fixtures only",
+  "forbidden": [
+    "C151/HQCDG2PT",
+    "private upstream modules",
+    "physical parameter selection",
+    "C150 Z_q or kinetic scheme selection",
+    "counterterm or null-representative selection",
+    "VQE or ansatz selection",
+    "generic full Pauli decomposition"
+  ],
+  "network": false,
+  "repair_or_rebuild_missing_authority": false,
+  "immutable": true
+}

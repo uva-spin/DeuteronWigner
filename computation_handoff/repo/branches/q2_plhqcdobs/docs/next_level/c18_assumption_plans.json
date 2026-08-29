@@ -1,0 +1,33 @@
+{
+  "plans": [
+    {
+      "cluster_matching": "NONE",
+      "delta_explicit": true,
+      "plan_id": "C18:N3:PLAN:95d06ac048a045d06d43",
+      "scope": "C18_N3_VALIDATION_ONLY",
+      "six_quark": "ABSENT"
+    },
+    {
+      "cluster_matching": "SUBTRACTION",
+      "delta_explicit": false,
+      "plan_id": "C18:N3:PLAN:6d4a470ae9656fea990a",
+      "scope": "C18_N3_VALIDATION_ONLY",
+      "six_quark": "FULL"
+    },
+    {
+      "cluster_matching": "GRAM_PROJECTOR",
+      "delta_explicit": true,
+      "plan_id": "C18:N3:PLAN:2b1b4ddbe1db1f89ebd7",
+      "scope": "C18_N3_VALIDATION_ONLY",
+      "six_quark": "ORTHOGONAL_COMPLEMENT"
+    },
+    {
+      "cluster_matching": "NONE",
+      "delta_explicit": false,
+      "plan_id": "C18:N3:PLAN:0303b67a5f1553ca29ce",
+      "scope": "C18_N3_VALIDATION_ONLY",
+      "six_quark": "ABSENT"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

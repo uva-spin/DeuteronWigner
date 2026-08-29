@@ -1,0 +1,29 @@
+{
+  "schema": "C214-HQCDPHYSINPUTMAP1-COMPLETENESS-CERTIFICATE-V1",
+  "artifact": "hqcdphysinputmap1_completeness_certificate",
+  "package_root": "da080802cc9f8d0719ed211446b661eb29b5736e746aebeccfc5a95040602b72",
+  "status": "C214_C213_PHYSICAL_INPUT_MAP_SCHEMA_READY_SIX_C43_ADAPTER_CALCULATIONS_REQUIRED",
+  "plan": "PHYSINPUTMAP1-B",
+  "physical_values": false,
+  "map_executable": false,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "status": "C214_C213_PHYSICAL_INPUT_MAP_SCHEMA_READY_SIX_C43_ADAPTER_CALCULATIONS_REQUIRED",
+    "plan": "PHYSINPUTMAP1-B",
+    "DAG_edges": 14,
+    "complete_edges": 4,
+    "audits": 2,
+    "C168_capsules": 6,
+    "adapter_programs": 0,
+    "mutations": 384,
+    "next": "C215/HQCDPHYSADAPTERCALC1",
+    "root": "f61cba27ad3396b188acdec71874b2d4d2e97b11e96ccef95b8fda1cf793096b"
+  },
+  "validation": "PASS"
+}

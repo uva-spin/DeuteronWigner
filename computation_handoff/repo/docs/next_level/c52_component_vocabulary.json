@@ -1,0 +1,25 @@
+{
+  "independent_components": [
+    {
+      "C50_derivation": "C50 plane-wave b_dagger a_dagger b derivation",
+      "classification": "INDEPENDENT_SOURCE_COMPONENT",
+      "coupling_power": 1,
+      "id": "C43_QQG_BDAGGER_ADAGGER_B_COVARIANT_BILINEAR",
+      "meaning": "one covariant canonical quark--gluon bilinear before basis projection",
+      "operator": "-g_s psibar gamma^mu T^a psi A_mu^a -> b_dagger a_dagger b",
+      "primary_source": "hep-ph/0011372v2 Eq. (24); C43 action contract"
+    }
+  ],
+  "subterms": [
+    {
+      "classification": "SUBTERM_NOT_SEPARATELY_GAUGE_OR_OPERATOR_MEANINGFUL",
+      "id": "MASS_HELICITY_FLIP",
+      "reason": "C50 supplies no action-level additive operator or independent coefficient; it is a term inside the full C45 spinor bilinear."
+    },
+    {
+      "classification": "SUBTERM_NOT_SEPARATELY_GAUGE_OR_OPERATOR_MEANINGFUL",
+      "id": "TRANSVERSE_HELICITY",
+      "reason": "C50 supplies no action-level additive operator or independent coefficient; it is a term inside the same covariant bilinear."
+    }
+  ]
+}

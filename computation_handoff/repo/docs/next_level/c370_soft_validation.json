@@ -1,0 +1,41 @@
+{
+  "package_root": "c2686cb149db312490a7bf744bbd6120a4ac6eb229af2c370eb8dc022ebe0ad4",
+  "physical": false,
+  "plan": "RIMASSC43JMYMASTERBIND1-C",
+  "record": {
+    "count": 2,
+    "count_once": true,
+    "prefactor": "g^2 CF nu1^(2alpha)nu2^(2beta); 1/Nc trace and four-line orientation sum retained outside upstream AST",
+    "root": "f12a368ff4d2b443e089a07c90fbe6f3991e92b4318771a61ca2e062e1f17b03",
+    "rows": [
+      {
+        "contours": "v.ell+i0; tildev.ell-i0",
+        "indices": {
+          "A": 1,
+          "B": 1,
+          "r": "alpha",
+          "s": "beta"
+        },
+        "master": "S",
+        "measurement": "1",
+        "numerator": "2 v.tildev",
+        "term": "S.virtual"
+      },
+      {
+        "contours": "same ordered eikonals",
+        "indices": {
+          "A": "CutPlus",
+          "B": 1,
+          "r": "alpha",
+          "s": "beta"
+        },
+        "master": "Disc_gluon(S)",
+        "measurement": "exp(i bT.ellT)-1",
+        "numerator": "2 v.tildev",
+        "term": "S.real"
+      }
+    ]
+  },
+  "status": "C370_TERM_MASTER_INDICES_CONTOURS_MEASUREMENTS_BOUND_SCALAR_REDUCTION_COEFFICIENTS_INCOMPLETE",
+  "validation": "PASS"
+}

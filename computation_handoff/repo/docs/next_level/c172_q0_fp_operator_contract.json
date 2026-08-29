@@ -1,0 +1,10 @@
+{
+  "schema": "C172-Q0-FP-CONTRACT-V1",
+  "operator": "Q0 delta(A^+) / delta(omega) Q0",
+  "on_surface": "delta_ab Q0 partial^+ Q0",
+  "routes": [
+    "FP-Q0-A",
+    "FP-Q0-B"
+  ],
+  "zero_mode_excluded": true
+}

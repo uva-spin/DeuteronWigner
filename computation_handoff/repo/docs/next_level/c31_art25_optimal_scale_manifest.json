@@ -1,0 +1,35 @@
+{
+  "cs_kernel_model_separate": true,
+  "fnp_boundary_model_separate": true,
+  "records": [
+    {
+      "content_hash": "fad4a7f0288870659f66b59697846ef8ccef5ef8d290f69bfa63e3588aa12483",
+      "is_operator_scheme_conversion": false,
+      "kind": "OPTIMAL_BOUNDARY",
+      "map_id": "C31.SCALE.OPTIMAL",
+      "source_scale": "saddle/optimal line",
+      "status": "SOURCE_AUDITED",
+      "target_scale": "optimal TMD"
+    },
+    {
+      "content_hash": "3bfbe64814e5aef271305f634ca44a6ecf32318b96381b42c52c293fac76dea3",
+      "is_operator_scheme_conversion": false,
+      "kind": "ZETA_PRESCRIPTION",
+      "map_id": "C31.SCALE.ZETA",
+      "source_scale": "optimal line",
+      "status": "SOURCE_AUDITED",
+      "target_scale": "chosen zeta curve"
+    },
+    {
+      "content_hash": "a11ccaba55df99006dd56c4175f601802f332361aeeb41a902ae892caecb4edd",
+      "is_operator_scheme_conversion": false,
+      "kind": "TWO_SCALE_EVOLUTION",
+      "map_id": "C31.SCALE.TWOSCALE",
+      "source_scale": "zeta curve",
+      "status": "SOURCE_AUDITED_VALIDATION_EXECUTABLE",
+      "target_scale": "mu=Q,zeta=Q^2"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "separate_from_operator_scheme": true
+}

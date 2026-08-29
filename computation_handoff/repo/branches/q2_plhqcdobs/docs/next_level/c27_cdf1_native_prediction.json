@@ -1,0 +1,138 @@
+{
+  "all_finite": true,
+  "central_native_repeat": 3.4394876804377352,
+  "central_native_value": 3.4394876804377352,
+  "classification": "DIAGNOSTIC_ONLY",
+  "clean_reinitialization_residual": 0.0,
+  "entire_selected_dataset_count": 33,
+  "entire_selected_dataset_values": [
+    3.4394876804377352,
+    9.851598813262834,
+    15.03078511367206,
+    18.617455639654256,
+    20.647330169299238,
+    21.38688466612891,
+    21.21005915883354,
+    20.417445951222597,
+    19.30578378864857,
+    18.029955332249177,
+    16.74493031866676,
+    15.501563926115276,
+    14.360455916196154,
+    13.281591169300217,
+    12.331894082808335,
+    11.432816353529828,
+    10.649316698246748,
+    9.89221028331804,
+    9.199615756018213,
+    8.565139926492552,
+    7.971531745015461,
+    7.434289528092004,
+    6.878191392924356,
+    6.428750968974079,
+    5.832461570435909,
+    5.165255839026671,
+    4.553688553567557,
+    4.065940291486729,
+    3.6223062786089613,
+    3.1684580340245394,
+    2.825617456712379,
+    2.523715899198494,
+    2.1562982484404203
+  ],
+  "members": [
+    {
+      "identity": {
+        "kaon_ff_index": 0,
+        "lambda_index": 0,
+        "np_sha256": "050160d3ee1ef533c06fe48e392071c77afbe43349a89818bab9dfdf02dce10e",
+        "pdf_index": 0,
+        "pion_ff_index": 0,
+        "source_line": 38
+      },
+      "label": "central_full",
+      "native_value": 3.4394876804377352
+    },
+    {
+      "identity": {
+        "kaon_ff_index": 109,
+        "lambda_index": 1,
+        "np_sha256": "5ec9898dbfff57ab726774dad12fe01fec23e013d3fc5ffec9f0ab328de46bb0",
+        "pdf_index": 599,
+        "pion_ff_index": 75,
+        "source_line": 40
+      },
+      "label": "member_1",
+      "native_value": 3.455911539864455
+    },
+    {
+      "identity": {
+        "kaon_ff_index": 143,
+        "lambda_index": 599,
+        "np_sha256": "afb2ec94af02df4caf9331dfb37d7dac604ee36ea5face2563c83e1f2ec59bce",
+        "pdf_index": 759,
+        "pion_ff_index": 21,
+        "source_line": 638
+      },
+      "label": "member_599",
+      "native_value": 3.437806816902704
+    },
+    {
+      "identity": {
+        "kaon_ff_index": 16,
+        "lambda_index": 321,
+        "np_sha256": "6d0a38421ddc54beb2277dbd18e3d3acfd92891fdb8f4133dc58b12d2481da96",
+        "pdf_index": 932,
+        "pion_ff_index": 51,
+        "source_line": 360
+      },
+      "label": "member_321",
+      "native_value": 3.4343708608644095
+    }
+  ],
+  "point": {
+    "<Q>": 91.0,
+    "<qT>": 0.25,
+    "<y>": 0.0,
+    "Q": [
+      66.0,
+      116.0
+    ],
+    "corrErr": [],
+    "cutParams": [
+      0.0,
+      0.0,
+      -1000.0,
+      1000.0
+    ],
+    "id": "CDF1.0",
+    "includeCuts": false,
+    "process": [
+      1,
+      1,
+      -1,
+      3
+    ],
+    "qT": [
+      0.0,
+      0.5
+    ],
+    "s": 3240000.0,
+    "thFactor": 2.0,
+    "uncorrErr": [
+      0.54
+    ],
+    "weightProcess": null,
+    "xSec": 3.35,
+    "y": [
+      -1000.0,
+      1000.0
+    ]
+  },
+  "point_id": "CDF1.0",
+  "restart_residual": 0.0,
+  "restart_route": "central record separate-process checkpoint route",
+  "schema_version": "1.0.0",
+  "selection": "EXACT_PUBLIC_ART25_SELECTION",
+  "serial_residual": 0.0
+}

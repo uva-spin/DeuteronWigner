@@ -1,0 +1,3639 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume IV: Matched Spin-1 Nuclear Light-Front Dynamics and Deuteron GTMDs},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume IV}
+\fancyhead[R]{\small\color{darkgray}Matched spin-1 nuclear dynamics}
+\fancyfoot[L]{\small\color{darkgray}29 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{principle}{principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\ellT}{\bm{\ell}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\PT}{\bm{P}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\DNT}{\bm{\Delta}_{N T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\RT}{\bm{R}_{T}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\Phys}{\mathcal H_{\mathrm{phys}}}
+\newcommand{\Alg}{\mathcal A}
+\newcommand{\Rep}{\mathcal V}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\QCD}{\mathrm{QCD}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\GPD}{\mathrm{GPD}}
+\newcommand{\EFT}{\mathrm{EFT}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Dens}{\mathbf{Dens}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\bbone}{\bm 1}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\comm}[2]{\left[#1,#2\right]}
+\newcommand{\acom}[2]{\left\{#1,#2\right\}}
+\newcommand{\crossT}[2]{\bigl(#1\!\times\!#2\bigr)_z}
+\newcommand{\NN}{NN}
+\newcommand{\NNpi}{NN\pi}
+\newcommand{\DD}{\Delta\Delta}
+\newcommand{\sixq}{6q}
+\newcommand{\IA}{\mathrm{IA}}
+\newcommand{\coh}{\mathrm{coh}}
+\newcommand{\exch}{\mathrm{exch}}
+\newcommand{\shortd}{\mathrm{short}}
+\newcommand{\nuc}{\mathrm{nuc}}
+\newcommand{\micro}{\mathrm{micro}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\spec}{\mathrm{spec}}
+\newcommand{\tagg}{\mathrm{tag}}
+\newcommand{\off}{\mathrm{off}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\soft}{\mathrm{soft}}
+\newcommand{\rap}{\mathrm{rap}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\even}{\mathrm{even}}
+\newcommand{\odd}{\mathrm{odd}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume IV: Matched Spin-1 Nuclear Light-Front Dynamics\\[2mm]
+and Deuteron GTMDs}\\[4mm]
+\large Nuclear Fock space, quark--gluon-to-hadronic operator matching,\\
+coherent amplitudes, non-nucleonic sectors, and tensor-polarized reductions}
+\author{DeuteronWigner project}
+\date{29 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volume~I defined regulated light-front state spaces and microscopic dynamics.
+Volume~II constructed common quark, antiquark, and gluon nucleon GTMD overlaps,
+and Volume~III supplied link-resolved rescattering amplitudes.  The present
+volume is the matched nuclear layer.  Its primary realizable route is a
+hierarchy in which the quark--gluon nucleon theory is matched onto a
+spin-resolved nuclear light-front effective theory with explicit
+\(NN\), \(NN\pi\), \(\Delta\Delta\), six-quark, and controlled additional
+sectors.  The deuteron GTMD is a matrix element in one normalized spin-1 state.
+Impulse approximation, exchange currents, coherent shadowing, pion exchange,
+and non-nucleonic mechanisms are derived reductions or operator blocks of
+that state, not independently normalized curves.  The accepted fixed-scale
+canonical model remains a regression and comparison boundary; no existing
+phenomenological component is promoted to microscopic status by notation.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A genuinely predictive deuteron partonic model cannot be obtained by
+convolving a microscopic nucleon correlator with an unrelated nuclear
+response.  The nuclear Hamiltonian, state, current, and partonic operators
+must belong to one matched low-resolution theory.  This volume constructs
+that theory as the spin-1 continuation of the common nucleon GTMD formalism.
+The primary route is hierarchical: a regulated quark--gluon nucleon model is
+matched at a hadronic resolution onto a nuclear light-front model space with
+nucleon, pion, Delta, short-distance, and supported compact sectors.  The same
+matching transformation generates the nuclear Hamiltonian and the one-body,
+two-body, mesonic, transition, coherent, and short-distance partonic
+operators.  Unitarity and field-redefinition covariance show why a standalone
+``off-shell nucleon correction'' is not observable: strength can be moved
+between off-shell one-body terms and many-body operators while the complete
+matrix element remains invariant.
+
+We define the regulated spin-1 nuclear Hilbert space, the block mass operator,
+one normalized deuteron Fock expansion, baryon/charge/plus-momentum ledgers,
+and a directed nuclear truncation system.  The \(NN\) component is obtained
+from a rotationally covariant rest-frame \(S\)- and \(D\)-wave amplitude by a
+declared Jacobian and constituent light-front spin rotations.  At zero
+skewness we derive the exact two-body recoil map: in a spectator-preserving
+one-body matrix element the active nucleon receives the full external
+transverse transfer, while the intrinsic deuteron wave-function arguments
+shift by \((1-y)\bm\Delta_T/2\).  Two-body operators instead carry an explicit
+transfer-partition variable.  The resulting off-forward spectral amplitude
+is kept distinct from the partonic GTMD and from the TMD impact variable.
+
+The full deuteron parent is
+\(
+ W_{a/D}^{[\Gamma,\gamma]}
+ =\sum_{\alpha,\beta}
+ \langle\Psi_D^\alpha|\widehat{\mathcal O}_{a,\alpha\beta}^{[\Gamma,\gamma]}
+ |\Psi_D^\beta\rangle
+\),
+with resolved nuclear sectors, nucleon helicities, flavor, Wilson path,
+gluon color class, transfer, transverse rank, matching scheme, and common
+member identity.  The familiar light-front impulse convolution is derived as
+the spectator-preserving one-body reduction of this expression and is shown
+to share its TMD, GPD, PDF, current, and form-factor marginals.  Spin-1
+irreducible projectors expose how nucleon vector polarization, \(S\)-\(D\)
+interference, orbital harmonics, and many-body operators populate the
+\(U,L,T,LL,LT,TT\) channels.  The \(b_1\) relation is retained as the first
+inclusive tensor anchor, while elastic charge, magnetic, and quadrupole form
+factors, the light-front angular condition, tagged spectator observables, and
+momentum/current sum rules provide independent closure tests.
+
+Coherent small-\(x\) shadowing is formulated as a helicity-resolved
+multiple-scattering amplitude using the same deuteron state and diffractive
+nucleon amplitudes; polarized and tensor shadowing cannot be copied from an
+unpolarized ratio.  The \(NN\pi\) sector carries a genuine spin-resolved
+three-body amplitude and includes pion-active, nucleon-active, and transition
+operators with a subtraction that prevents double counting the nucleon's
+internal pion cloud.  \(\Delta\Delta\), six-quark, hidden-color, and
+short-range sectors require explicit amplitudes and operators before they may
+enter a nonzero central prediction.  Completely positive maps are derived
+only after a justified partial trace; coherent sector interference remains at
+amplitude level.  Partonic Wilson transport and nuclear rescattering are kept
+separate and connected by an explicit overlap subtraction whenever their
+soft regions coincide.
+
+The volume concludes with formal propositions, analytic benchmarks,
+machine-readable interfaces, property-based tests, a staged C4 implementation
+program, and acceptance criteria for export to the common matching,
+evolution, and process layer of Volume~V.
+\end{abstract}
+
+\tableofcontents
+
+\section{Role, scope, and inherited contracts}
+\label{sec:role}
+
+\subsection{The change of dynamical level}
+
+Volumes~I--III constructed the nucleon-side object
+\begin{equation}
+ \mathfrak W_{a/N}
+ =\left(
+ W_{a/N,\lambda'\lambda}^{[J,\gamma]},
+ \mathfrak o_{a/N},
+ \mathfrak B_{a/N},
+ \mathfrak m_N,
+ \operatorname{Cov}_{\micro}
+ \right),
+\label{eq:nucleon-input}
+\end{equation}
+where \(N=p,n\), \(J\) denotes the quark Dirac or gluon Lorentz projection,
+\(\gamma\) is the complete Wilson geometry, \(\mathfrak B\) is the phase and
+soft-overlap budget, and \(\mathfrak m_N\) is the shared microscopic member.
+The nuclear problem is not to dress a named scalar TMD.  It is to evaluate the
+operator represented by \cref{eq:nucleon-input} in a normalized spin-1 state
+whose Hamiltonian, currents, and many-body operators are matched to the same
+hadronic resolution.
+
+The required direction of inference is
+\begin{equation}
+ \left
+ \{H_{\LF}^{qg},\,|\Psi_N\rangle,\,\cO_{a/N}^{qg}\right\}
+ \xrightarrow{\;\cZ_{qg\to\nuc}\;}
+ \left\{H_{\LF}^{\nuc},\,\widehat\cO_a^{\nuc}\right\}
+ \xrightarrow{\;\mathrm{solve}\;}
+ |\Psi_D\rangle
+ \xrightarrow{\;\mathrm{matrix\ element}\;}
+ W_{a/D}.
+\label{eq:source-chain}
+\end{equation}
+This is a matched hierarchy, not a claim that the first implementation solves
+the six-quark continuum deuteron directly.  A direct quark--gluon deuteron
+solution remains a later ultraviolet completion against which the hierarchy
+can be tested.
+
+\begin{principle}[One matched nuclear theory]
+\label{prin:one-nuclear-theory}
+The nuclear Hamiltonian, state, local currents, and partonic operators must
+share a resolution, regulator, unitary convention, and matching record.  A
+high-quality deuteron wave function and a high-quality operator from a
+different theory do not form a controlled prediction merely because each is
+accurate separately.
+\end{principle}
+
+\subsection{Primary domain}
+
+The first complete implementation uses
+\begin{equation}
+ \xi_D=-\frac{\Delta_D^+}{2P_D^+}=0,
+ \qquad
+ \Delta_D^+=0,
+ \qquad
+ t_D=-\DT^2,
+\label{eq:xi-zero-domain}
+\end{equation}
+with a spin-1 deuteron target and quark, antiquark, and gluon operators at
+leading twist.  The domain is sufficient for:
+\begin{itemize}
+\item the deuteron TMD limit and partonic Wigner transform;
+\item zero-skewness GPDs and elastic/current moments;
+\item the complete forward \(U,L,T,LL,LT,TT\) projection system;
+\item inclusive \(b_1\), tensor PDFs, and tagged spectator structure;
+\item a first coherent small-\(x\) amplitude and explicit non-nucleonic sectors.
+\end{itemize}
+Nonzero skewness, breakup GTMDs, transition GPDs, and complete polynomiality
+are later extensions, but the operator and recoil types below are designed so
+that they can be added without reinterpreting existing data.
+
+\subsection{Inherited fail-closed contracts}
+
+The following Volume~II and Volume~III rules remain mandatory:
+\begin{enumerate}
+\item The nuclear layer consumes nucleon helicity matrices, not only named
+      scalar distributions.
+\item The external deuteron transfer \(\DT\), active-nucleon transfer
+      \(\DNT\), nuclear intrinsic momentum \(\pT\), partonic momentum \(\kT\),
+      nuclear Wigner coordinate \(\RT\), partonic Wigner coordinate \(\bD\),
+      and TMD impact parameter \(\bM\) are distinct types.
+\item Proton/neutron, flavor, link, gluon ordered-link and \(f/d\) color,
+      transverse-rank, scheme, and member identities remain resolved.
+\item The partonic staple \(U_\gamma^{\rm parton}\) is not identified with
+      coherent nuclear propagation \(\cU_{\nuc}\).
+\item Off-diagonal nuclear-sector matrix elements are allowed only when the
+      matched operator changes the corresponding sector.
+\item A completely positive map may be introduced only after the relevant
+      coherent degrees of freedom are no longer resolved.
+\end{enumerate}
+
+\subsection{Explicit nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+\item a continuum six-quark solution of the deuteron;
+\item that realistic \(S/D\) wave functions alone determine partonic
+      two-body operators;
+\item that an ``off-shell nucleon PDF'' is a separately measurable object;
+\item that unpolarized diffractive shadowing fixes polarized or tensor
+      shadowing;
+\item that a scalar pion light-cone distribution is sufficient for all
+      tensor TMDs;
+\item that every nuclear correction is an incoherent quantum channel;
+\item that hidden color or \(\Delta\Delta\) probability alone specifies a
+      flavor-, spin-, color-, and transfer-resolved GTMD;
+\item that completion of this formalism by itself establishes numerical
+      convergence or predictive accuracy.
+\end{itemize}
+
+\section{Resolution hierarchy and matched nuclear model space}
+\label{sec:matching-hierarchy}
+
+\subsection{Separated physical scales}
+
+The deuteron is weakly bound, with a binding momentum parametrically much
+smaller than the pion mass and hadronic internal scale.  The hierarchy
+\begin{equation}
+ \gamma_D\ll m_\pi\lesssim \Lambda_{\nuc}\ll \Lambda_{qg}
+\label{eq:scale-hierarchy}
+\end{equation}
+motivates a low-resolution nuclear theory with nucleons, pions, Delta
+isobars, and contact operators, while nucleon quark--gluon substructure is
+retained through matched one-hadron operators.  The separation is not exact:
+pion and soft-gluon regions can occur on both sides of the matching surface.
+Those overlap regions require explicit subtraction rather than verbal
+assignment.
+
+A nuclear resolution datum is
+\begin{equation}
+ \mathfrak r_D=
+ \left(
+ \Lambda_{\UV}^{D},\Lambda_{\IR}^{D},
+ \mathcal B_D,\mathcal F_D,
+ \nu_H,\nu_O,
+ \cR_D,\cS_D
+ \right),
+\label{eq:nuclear-resolution-datum}
+\end{equation}
+where \(\mathcal B_D\) is the basis or grid, \(\mathcal F_D\) the retained
+nuclear Fock sectors, \(\nu_H\) and \(\nu_O\) the Hamiltonian and operator
+orders, and \(\cR_D,\cS_D\) the regulator and renormalization schemes.
+
+\subsection{Model-space projection and effective operators}
+
+Let \(P_D\) project onto the retained nuclear model space and \(Q_D=1-P_D\).
+For a full Hamiltonian \(H\), the exact projected resolvent defines the
+energy-dependent effective Hamiltonian
+\begin{equation}
+ H_{\rm eff}(E)
+ =P_DHP_D
+ +P_DHQ_D\frac{1}{E-Q_DHQ_D}Q_DHP_D.
+\label{eq:feshbach-hamiltonian}
+\end{equation}
+The same elimination changes every operator.  For a full operator \(\cO\),
+one convenient wave-operator representation is
+\begin{equation}
+ \cO_{\rm eff}(E_f,E_i)
+ =P_D\Omega^\dagger(E_f)\,\cO\,\Omega(E_i)P_D,
+\label{eq:effective-operator}
+\end{equation}
+with \(\Omega\) the exact map from model-space vectors to full-space states.
+Expanding \cref{eq:effective-operator} produces one-body, exchange,
+transition, and contact terms even when the original operator is one-body.
+
+\begin{requirement}[Hamiltonian--operator co-matching]
+\label{req:ham-operator-comatching}
+Whenever a sector or momentum region is eliminated from the Hamiltonian, the
+induced contribution to every current and partonic operator used in the same
+calculation must be retained to the declared order.  Eliminating the sector
+from \(H\) while keeping a bare one-body \(\cO\) is not a matched
+approximation.
+\end{requirement}
+
+\subsection{Unitary and field-redefinition covariance}
+
+Let \(U_D\) be a unitary transformation within the retained nuclear space.
+Then
+\begin{equation}
+ H_D' =U_DH_DU_D^\dagger,
+ \qquad
+ \cO_D'=U_D\cO_DU_D^\dagger,
+ \qquad
+ |\Psi_D'\rangle=U_D|\Psi_D\rangle
+\label{eq:unitary-covariance}
+\end{equation}
+give identical complete matrix elements,
+\begin{equation}
+ \langle\Psi_D'|\cO_D'|\Psi_D'\rangle
+ =\langle\Psi_D|\cO_D|\Psi_D\rangle.
+\label{eq:unitary-matrix-invariance}
+\end{equation}
+Field redefinitions are the Lagrangian counterpart of this statement and can
+move strength between off-shell two-body interactions, many-body forces, and
+many-body currents without changing observables
+\cite{FurnstahlHammerTirfessa2001,Krebs2020}.
+
+\begin{proposition}[No standalone off-shell observable]
+\label{prop:no-offshell-observable}
+Suppose a one-body nucleon operator is changed by a term proportional to the
+nucleon equation of motion,
+\begin{equation}
+ \delta\cO_N=(p^2-M_N^2)X.
+\label{eq:eom-offshell-change}
+\end{equation}
+A field redefinition can remove \(\delta\cO_N\) and generate a compensating
+many-body operator \(\delta\cO_D^{(2+)}\).  Therefore the complete deuteron
+matrix element is invariant, while the separately quoted ``off-shell
+correction'' is representation dependent.
+\end{proposition}
+
+\begin{proof}
+Apply the equivalence transformation that eliminates the redundant
+operator \((p^2-M_N^2)X\).  The transformed action contains induced
+many-body terms.  Equation~\eqref{eq:unitary-matrix-invariance} then implies
+that only the sum of one- and many-body contributions is invariant.  Omitting
+the induced term creates an artificial representation dependence.
+\end{proof}
+
+\subsection{Primary and direct routes}
+
+The primary implementation route is
+\begin{equation}
+ \text{quark--gluon nucleon theory}
+ \xrightarrow{\;\cZ_{qg\to\mathrm{had}}\;}
+ \left(H_D^{N,\pi,\Delta,\ldots},\widehat{\cO}_a^D\right)
+ \xrightarrow{\;\mathrm{solve}\;}
+ |\Psi_D\rangle
+ \xrightarrow{\;\mathrm{evaluate}\;}
+ W_{a/D}.
+\label{eq:hierarchical-route}
+\end{equation}
+A later direct route solves for a deuteron in a quark--gluon Hilbert space
+with six-quark, gluon, sea, cluster, and hadronic asymptotic sectors.  The
+nuclear EFT must then emerge as a matched low-resolution reduction of that
+same state.  Results from unrelated direct and hierarchical models may be
+compared, but may not be spliced without a matching map.
+
+\section{Nuclear light-front kinematics and typed recoil}
+\label{sec:kinematics}
+
+\subsection{External deuteron momentum fibers}
+
+We inherit
+\begin{equation}
+ v^\pm=\frac{v^0\pm v^3}{\sqrt2},
+ \qquad
+ v\cdot w=v^+w^-+v^-w^+-\bm v_T\cdot\bm w_T.
+\label{eq:lf-convention}
+\end{equation}
+At zero skewness choose the symmetric frame
+\begin{align}
+ P_i&=P-\frac{\Delta}{2},&
+ P_f&=P+\frac{\Delta}{2},
+ \notag\\
+ P_{iT}&=-\frac{\DT}{2},&
+ P_{fT}&=+\frac{\DT}{2},&
+ \Delta^+&=0.
+\label{eq:deuteron-symmetric-frame}
+\end{align}
+The deuteron operator acts between distinct momentum fibers,
+\begin{equation}
+ \widehat\cO_a(P_f,P_i):\Hil_{D,P_i}\longrightarrow\Hil_{D,P_f}.
+\label{eq:deuteron-operator-fibers}
+\end{equation}
+
+The canonical partonic fraction is
+\begin{equation}
+ x_D=\frac{k^+}{P_D^+},\qquad 0<x_D<1.
+\label{eq:xD-definition}
+\end{equation}
+The project production coordinate is \(x_N=2x_D\).  Number-preserving density
+adapters therefore obey
+\begin{equation}
+ f^{[x_N]}(x_N)=\frac12 f^{[x_D]}\!\left(\frac{x_N}{2}\right),
+\label{eq:x-adapter}
+\end{equation}
+so that the support, number, and momentum ledgers are not changed by a
+coordinate relabeling.
+
+\subsection{Two-body intrinsic variables and measure}
+
+For the \(NN\) sector, let nucleon 1 carry fraction \(y\) and average intrinsic
+momentum \(\pT\), while nucleon 2 carries \(1-y\) and \(-\pT\).  The free
+invariant mass is
+\begin{equation}
+ M_0^2(y,\pT)
+ =\frac{M_1^2+\pT^2}{y}
+ +\frac{M_2^2+\pT^2}{1-y}.
+\label{eq:two-body-free-mass}
+\end{equation}
+For equal masses,
+\begin{equation}
+ k_z=\left(y-\frac12\right)M_0,
+ \qquad
+ \frac{\partial k_z}{\partial y}
+ =\frac{M_0}{4y(1-y)}.
+\label{eq:kz-jacobian}
+\end{equation}
+We use the invariant two-body measure
+\begin{equation}
+ [\dd\Gamma_2]
+ =\frac{\dd y\,\dd^2\pT}{2(2\pi)^3y(1-y)}.
+\label{eq:two-body-measure}
+\end{equation}
+Any alternative normalization is represented by a unitary adapter and must
+transform the wave function, current, spectral amplitude, and convolution
+Jacobian together.
+
+\subsection{Exact spectator-preserving recoil map}
+
+Let \(\pT\) denote the average intrinsic momentum of the active nucleon.  In
+the one-body impulse block the physical spectator momentum is unchanged.
+The intrinsic arguments are then
+\begin{align}
+ \bm p_{1T}^{\rm in}
+ &=\pT-\frac{1-y}{2}\DT,
+ &
+ \bm p_{1T}^{\rm out}
+ &=\pT+\frac{1-y}{2}\DT,
+\label{eq:active-intrinsic-recoil}\\
+ \bm p_{2T}^{\rm in}
+ &=-\pT+\frac{1-y}{2}\DT,
+ &
+ \bm p_{2T}^{\rm out}
+ &=-\pT-\frac{1-y}{2}\DT.
+\label{eq:spectator-intrinsic-recoil}
+\end{align}
+Combining these with the external hadron momenta gives
+\begin{align}
+ p_{1T}^{\rm phys,in}&=\pT-\frac12\DT,&
+ p_{1T}^{\rm phys,out}&=\pT+\frac12\DT,
+\notag\\
+ p_{2T}^{\rm phys,in}&=-\pT,&
+ p_{2T}^{\rm phys,out}&=-\pT.
+\label{eq:physical-one-body-recoil}
+\end{align}
+Thus the active nucleon receives the full physical transfer,
+\begin{equation}
+ \DNT=\DT
+ \qquad\text{for the spectator-preserving one-body block},
+\label{eq:active-full-transfer}
+\end{equation}
+while the deuteron wave-function arguments shift by \((1-y)\DT/2\).
+Conflating these two statements is a common recoil error.
+
+\begin{proposition}[Two-body recoil closure]
+\label{prop:recoil-closure}
+Equations~\eqref{eq:active-intrinsic-recoil}--\eqref{eq:spectator-intrinsic-recoil}
+preserve intrinsic transverse closure separately in the initial and final
+states and leave the spectator physical momentum unchanged.
+\end{proposition}
+
+\begin{proof}
+The initial intrinsic momenta sum to
+\(
+ \pT-(1-y)\DT/2-\pT+(1-y)\DT/2=0
+\), and similarly for the final state.  Inserting the external share
+\((1-y)P_{i,f,T}\) into the spectator momentum gives \(-\pT\) on both sides.
+The active physical momentum therefore differs by \(\DT\).
+\end{proof}
+
+\subsection{Transfer partition for many-body operators}
+
+A two-body operator can transfer momentum to both constituents.  Introduce a
+partition variable \(\bm\delta_T\) such that
+\begin{equation}
+ \bm\Delta_{1T}=\bm\delta_T,
+ \qquad
+ \bm\Delta_{2T}=\DT-\bm\delta_T.
+\label{eq:two-body-transfer-partition}
+\end{equation}
+The matched kernel determines the distribution in \(\bm\delta_T\).  Setting
+\(\bm\delta_T=\DT\) is the one-body spectator limit; setting
+\(\bm\delta_T=y\DT\) or any other partition without deriving it from the
+operator is forbidden.
+
+A typed nuclear recoil object contains
+\begin{equation}
+ \mathfrak r_{\nuc}
+ =\left(
+ P_i,P_f,
+ y,\pT,
+ \DT,\DNT,
+ \bm\delta_T,
+ \text{active slot},
+ \text{spectator policy},
+ \text{Jacobian convention}
+ \right).
+\label{eq:nuclear-recoil-type}
+\end{equation}
+
+\begin{requirement}[Single recoil authority]
+\label{req:single-recoil-authority}
+Wave functions, spectral amplitudes, one-body GTMD convolutions, two-body
+operators, tagged observables, and form-factor moments must consume the same
+versioned nuclear recoil object.  No projector or benchmark may reimplement
+its shift factors locally.
+\end{requirement}
+
+\subsection{Partonic momentum inside the active nucleon}
+
+Let \(z=x_D/y\) be the parton fraction of the active nucleon.  If \(\kT\) is
+the parton's average transverse momentum relative to the deuteron, the
+nucleon-intrinsic parton momentum is
+\begin{equation}
+ \ellT=\kT-z\pT.
+\label{eq:parton-nucleon-transverse-map}
+\end{equation}
+The mapping is a boost relation, not a model for transverse broadening.  Its
+forward and off-forward use must share the same convention so that TMD, GPD,
+PDF, and current reductions commute.
+
+\section{Regulated spin-1 nuclear Hilbert space and dynamics}
+\label{sec:nuclear-hilbert}
+
+\subsection{Sector decomposition}
+
+At nuclear resolution \(\mathfrak r_D\), the physical model space is
+\begin{equation}
+ \Hil_D^{(\mathfrak r_D)}
+ =\Hil_{\NN}
+ \oplus\Hil_{\NNpi}
+ \oplus\Hil_{\DD}
+ \oplus\Hil_{\sixq}
+ \oplus\Hil_{\rm other}.
+\label{eq:nuclear-hilbert-sum}
+\end{equation}
+At the charge-symmetric reference point, every retained component belongs to
+the deuteron channel
+\begin{equation}
+ B=2,
+ \qquad Q=+1,
+ \qquad I=0,
+ \qquad J^P=1^+.
+\label{eq:deuteron-quantum-numbers}
+\end{equation}
+Baryon number, charge, and total angular momentum/parity are physical sector
+labels.  The value \(I=0\) defines the charge-symmetric reference space;
+controlled \(m_d-m_u\) and electromagnetic operators may admix small
+\(I\neq0\) components, which must be retained as explicitly tagged symmetry-
+breaking amplitudes rather than folded silently into the isoscalar state.  A
+sector label includes constituent species, helicities, isospin couplings,
+orbital basis, color coupling where relevant, regulator, and matching origin.
+
+The absence of an \(N\Delta\) sector from the central \(I=0\) model space is
+not a numerical simplification: \(\tfrac12\otimes\tfrac32=1\oplus2\) does not
+contain total isospin zero.  Delta degrees of freedom first enter through
+allowed transition operators, \(NN\pi\)-like sectors, or \(\Delta\Delta\).
+An \(N\Delta\) component could appear only in a separately declared
+isospin-breaking extension and is not part of the charge-symmetric central
+state.
+
+\subsection{Block mass operator}
+
+The nuclear light-front mass operator is
+\begin{equation}
+ \cM_D^2
+ =\cM_{0,D}^2+V_D+\delta\cM_D^2,
+ \qquad
+ \cM_D^2=(\cM_D^2)^\dagger,
+\label{eq:nuclear-mass-operator}
+\end{equation}
+with sector blocks
+\begin{equation}
+ \cM_{D,\alpha\beta}^2
+ =P_\alpha\cM_D^2P_\beta,
+ \qquad
+ \alpha,\beta\in
+ \{\NN,\NNpi,\DD,\sixq,\ldots\}.
+\label{eq:nuclear-mass-blocks}
+\end{equation}
+The diagonal blocks contain sector kinetic energies and interactions; the
+off-diagonal blocks generate pion emission/absorption, pair or compact-sector
+mixing, and other retained transitions.  Every block has a Hermitian partner,
+a regulator identity, and a matching/subtraction record.
+
+The eigenproblem is
+\begin{equation}
+ \cM_D^2|D,P,\Lambda;\mathfrak m_D\rangle
+ =M_D^2|D,P,\Lambda;\mathfrak m_D\rangle,
+\label{eq:deuteron-eigenproblem}
+\end{equation}
+where \(\mathfrak m_D\) is the complete nuclear member, not merely a wave
+function name.
+
+\subsection{One normalized spin-1 state}
+
+Write
+\begin{equation}
+ |D,\Lambda\rangle
+ =|\Psi_{\NN}^{\Lambda}\rangle
+ +|\Psi_{\NNpi}^{\Lambda}\rangle
+ +|\Psi_{\DD}^{\Lambda}\rangle
+ +|\Psi_{\sixq}^{\Lambda}\rangle
+ +\cdots .
+\label{eq:deuteron-fock-expansion}
+\end{equation}
+Orthogonality of distinct Fock sectors gives
+\begin{equation}
+ 1=\langle D,\Lambda|D,\Lambda\rangle
+ =Z_{\NN}+Z_{\NNpi}+Z_{\DD}+Z_{\sixq}+\cdots,
+\qquad
+ Z_\alpha=\norm{\Psi_\alpha^\Lambda}^2.
+\label{eq:sector-normalization}
+\end{equation}
+The sector probabilities are resolution and scheme dependent; the total
+normalization and conserved charges are physical constraints.
+
+The plus-momentum ledger is
+\begin{equation}
+ 1=
+ \sum_\alpha
+ \int[\dd\Gamma_\alpha]
+ \left(\sum_{i\in\alpha}y_i\right)
+ |\Psi_\alpha|^2,
+\label{eq:nuclear-plus-ledger}
+\end{equation}
+and the baryon and electric-charge ledgers are
+\begin{align}
+ 2&=
+ \sum_\alpha\int[\dd\Gamma_\alpha]
+ \left(\sum_{i\in\alpha}B_i\right)|\Psi_\alpha|^2,
+\label{eq:nuclear-baryon-ledger}\\
+ 1&=
+ \sum_\alpha\int[\dd\Gamma_\alpha]
+ \left(\sum_{i\in\alpha}Q_i\right)|\Psi_\alpha|^2.
+\label{eq:nuclear-charge-ledger}
+\end{align}
+The normalization convention must not be repaired separately in each
+observable.
+
+\subsection{Nuclear truncation tower}
+
+A nuclear truncation label is
+\begin{equation}
+ r_D=
+ (\Lambda_D,N_D,\mathcal F_D,
+ \nu_H,\nu_J,\nu_{\cO},n_{\coh},n_{\rm grid}),
+\label{eq:nuclear-truncation-label}
+\end{equation}
+where \(\nu_J\) and \(\nu_{\cO}\) are local-current and partonic-operator
+orders and \(n_{\coh}\) is the multiple-scattering order.  Calculations at
+different \(r_D\) are compared through matched observables,
+\begin{equation}
+ \delta_i(r_D',r_D)
+ =\left\|
+ R_{r_D'\to r_D}[\cO_i^{(r_D')}]
+ -\cO_i^{(r_D)}
+ \right\|,
+\label{eq:nuclear-convergence-residual}
+\end{equation}
+not by demanding regulator-independent sector probabilities or bare radial
+wave functions.
+
+\begin{requirement}[Independent nuclear error axes]
+\label{req:nuclear-error-axes}
+Basis, regulator, EFT order, current order, partonic-operator order, Fock
+content, coherent-scattering order, non-nucleonic content, and quadrature
+errors remain separate.  Convergence in the \(NN\) wave function cannot be
+used to hide missing two-body operators or missing sectors.
+\end{requirement}
+
+\section{The nucleonic deuteron component}
+\label{sec:nn-component}
+
+\subsection{Light-front two-nucleon state}
+
+With the measure in \cref{eq:two-body-measure}, the nucleonic component is
+\begin{equation}
+ |\Psi_{\NN}^{\Lambda}(P)\rangle
+ =\sum_{\lambda_p,\lambda_n}
+ \int[\dd\Gamma_2]\,
+ \Psi_{\Lambda;\lambda_p\lambda_n}^{\LF}(y,\pT)
+ |p(y,\pT,\lambda_p)\,n(1-y,-\pT,\lambda_n)\rangle,
+\label{eq:nn-state}
+\end{equation}
+with the isosinglet factor understood.  In a charge-symmetric convention,
+exchange of the two nucleons obeys the required fermionic antisymmetry after
+spin, isospin, and orbital factors are combined.
+
+The \(NN\) normalization is
+\begin{equation}
+ \sum_{\lambda_p,\lambda_n}
+ \int[\dd\Gamma_2]\,
+ \abs{\Psi_{\Lambda;\lambda_p\lambda_n}^{\LF}(y,\pT)}^2
+ =Z_{\NN}.
+\label{eq:nn-normalization}
+\end{equation}
+
+\subsection{Rest-frame S- and D-wave amplitude}
+
+A rotationally covariant rest-frame amplitude is
+\begin{align}
+ \Phi_{\Lambda;\sigma_p\sigma_n}(\bm k)
+ ={}&\sum_{L=0,2}u_L(k)
+ \sum_{m_L,m_S}
+ \langle Lm_L,1m_S|1\Lambda\rangle
+ Y_{Lm_L}(\widehat{\bm k})
+ \notag\\
+ &\times
+ \left\langle\frac12\sigma_p,\frac12\sigma_n\middle|1m_S\right\rangle
+ \chi_{I=0}.
+\label{eq:instant-sd-wave}
+\end{align}
+Here \(u_0\) and \(u_2\) are the \(S\)- and \(D\)-wave radial components.
+The probability \(P_D\) is model and resolution dependent; signed
+\(S\)-\(D\) interference is physical in matrix elements and cannot be
+reconstructed from \(P_D\) alone.
+
+\subsection{Canonical-to-light-front spin map}
+
+For a constituent of mass \(m\), fraction \(y\), and transverse momentum
+\(\pT\), define the Melosh rotation
+\begin{equation}
+ R_M(y,\pT)
+ =\frac{m+yM_0
+ -i\bm\sigma\cdot(\widehat{\bm z}\times\pT)}
+ {\sqrt{(m+yM_0)^2+\pT^2}}.
+\label{eq:melosh-rotation}
+\end{equation}
+The light-front amplitude is
+\begin{align}
+ \Psi_{\Lambda;\lambda_p\lambda_n}^{\LF}(y,\pT)
+ ={}&
+ \sqrt{\frac{\partial k_z}{\partial y}}
+ \sum_{\sigma_p,\sigma_n}
+ D^{1/2}_{\lambda_p\sigma_p}[R_M(y,\pT)]
+ \notag\\
+ &\times
+ D^{1/2}_{\lambda_n\sigma_n}[R_M(1-y,-\pT)]
+ \Phi_{\Lambda;\sigma_p\sigma_n}(\bm k),
+\label{eq:lf-wavefunction-map}
+\end{align}
+up to the declared normalization adapter.  This is a specific light-front
+realization, not a theorem that every front-form construction has only two
+radial components.  Explicitly covariant light-front dynamics can contain
+additional invariant amplitudes, and their omission must be counted as a
+truncation axis \cite{Carbonell1998}.
+
+\begin{requirement}[Wave-function identity]
+\label{req:wavefunction-identity}
+A nuclear wave-function object records the rest-frame interaction, radial
+normalization, canonical-to-light-front map, spin-rotation convention,
+relativistic components retained, regulator, current family, and numerical
+member.  The label ``AV18,'' ``CD-Bonn,'' or ``Norfolk'' alone is incomplete.
+\end{requirement}
+
+\subsection{Rotational covariance and the angular condition}
+
+In front-form calculations, transverse rotations are dynamical.  A truncated
+wave function and one-body current may therefore produce spurious dependence
+on the light-front orientation.  For the plus current in a \(q^+=0\) frame,
+four independent helicity matrix elements must reduce to three physical form
+factors.  In one standard convention the angular-condition residual is
+\begin{equation}
+ \Delta_{\rm ang}(Q^2)
+ =(1+2\eta)I_{11}^+
+ +I_{1,-1}^+
+ -\sqrt{8\eta}\,I_{10}^+
+ -I_{00}^+,
+ \qquad
+ \eta=\frac{Q^2}{4M_D^2}.
+\label{eq:angular-condition}
+\end{equation}
+A covariant complete calculation has \(\Delta_{\rm ang}=0\).  At finite
+truncation, the residual is a diagnostic of missing rotational components,
+exchange currents, pair terms, or zero modes, not a quantity to remove by
+choosing whichever form-factor extraction prescription is most favorable
+\cite{Carbonell1998,CookeMiller2002}.
+
+\subsection{Controlled wave-function family}
+
+The first numerical family may include AV18, CD-Bonn, and local chiral/Norfolk
+interactions \cite{Wiringa1995,Machleidt2001,Piarulli2016}.  They are
+alternative nuclear members.  They are not simultaneous amplitudes in one
+state and are not added in quadrature as if they were independent statistical
+replicas.  A central member must use currents and matching operators
+consistent with its interaction; cross-family comparisons define a model or
+EFT sensitivity axis.
+
+\section{Spin-1 irreducible amplitudes and nuclear spectral geometry}
+\label{sec:spectral-geometry}
+
+\subsection{Irreducible target operators}
+
+Let \(|1\Lambda\rangle\), \(\Lambda=+1,0,-1\), span the deuteron helicity
+space.  A trace-orthonormal irreducible tensor basis is
+\begin{equation}
+ \left(T_M^{(K)}\right)_{\Lambda'\Lambda}
+ =\sqrt{\frac{2K+1}{3}}
+ \langle 1\Lambda,KM|1\Lambda'\rangle,
+ \qquad
+ K=0,1,2,
+\label{eq:spin1-irrep-basis}
+\end{equation}
+with
+\begin{equation}
+ \Tr\left[
+ (T_M^{(K)})^\dagger T_{M'}^{(K')}
+ \right]
+ =\delta_{KK'}\delta_{MM'}.
+\label{eq:spin1-irrep-orthogonality}
+\end{equation}
+The scalar, vector, and quadrupole components of any deuteron matrix \(X\) are
+\begin{equation}
+ X_M^{(K)}=\Tr[(T_M^{(K)})^\dagger X].
+\label{eq:spin1-irrep-coefficients}
+\end{equation}
+The real \(U,L,T,LL,LT,TT\) basis is obtained through a fixed invertible
+adapter.  In particular,
+\begin{equation}
+ \delta_T X
+ =X_{00}-\frac12(X_{++}+X_{--})
+\label{eq:tensor-helicity-difference}
+\end{equation}
+is convention independent, while the named \(LL\) coefficient depends on the
+chosen \(S_{LL}\) normalization.
+
+\subsection{Off-forward nucleon spectral amplitude}
+
+For an active nucleon \(N\) and a spectator nucleon \(s\), define the
+spin-resolved off-forward spectral amplitude
+\begin{align}
+ \cS_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+ (y,\pT,\DT)
+ ={}&
+ \sum_{\lambda_s}
+ \Psi_{\Lambda';\lambda'\lambda_s}^{\LF *}
+ \left(y,\pT+\frac{1-y}{2}\DT\right)
+ \notag\\
+ &\times
+ \Psi_{\Lambda;\lambda\lambda_s}^{\LF}
+ \left(y,\pT-\frac{1-y}{2}\DT\right),
+\label{eq:offforward-spectral-amplitude}
+\end{align}
+with the normalization factors implied by
+\cref{eq:two-body-measure,eq:nn-normalization}.  This object is a matrix in
+both deuteron and active-nucleon helicities.  It is not a scalar smearing
+function.
+
+Hermiticity gives
+\begin{equation}
+ \cS_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+ (y,\pT,\DT)
+ =
+ \left[
+ \cS_{\Lambda\Lambda';\lambda\lambda'}^{N/D}
+ (y,\pT,-\DT)
+ \right]^*.
+\label{eq:spectral-hermiticity}
+\end{equation}
+At \(\DT=0\),
+\begin{equation}
+ \rho_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}(y,\pT)
+ =\cS_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}(y,\pT,0)
+\label{eq:forward-spectral-density}
+\end{equation}
+is positive semidefinite in the combined deuteron--active-nucleon space when
+constructed from the complete wave function.
+
+\subsection{Nuclear Wigner transform}
+
+The nuclear transverse Wigner amplitude is
+\begin{equation}
+ \cW_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+ (y,\pT,\RT)
+ =\int\frac{\dd^2\DT}{(2\pi)^2}
+ e^{-i\RT\cdot\DT}
+ \cS_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}(y,\pT,\DT).
+\label{eq:nuclear-wigner-transform}
+\end{equation}
+It satisfies
+\begin{equation}
+ \int\dd^2\RT\,
+ \cW^{N/D}(y,\pT,\RT)
+ =\rho^{N/D}(y,\pT).
+\label{eq:nuclear-wigner-marginal}
+\end{equation}
+The coordinate \(\RT\) is conjugate to nuclear constituent transfer; it is
+not the partonic Wigner coordinate \(\bD\) and not the TMD separation
+\(\bM\).  The Wigner amplitude can be negative or complex off diagonal and is
+not subject to pointwise probability positivity
+\cite{NeffFeldmeier2016}.
+
+\subsection{Partial-wave decomposition}
+
+With \(\Psi=\Psi_S+\Psi_D+\Psi_{\rm rel}\), the spectral amplitude decomposes
+as
+\begin{equation}
+ \cS=\cS_{SS}+\cS_{SD}+\cS_{DS}+\cS_{DD}
+ +\cS_{\rm rel}.
+\label{eq:spectral-partial-wave-decomposition}
+\end{equation}
+The \(SD\) and \(DS\) terms are separately complex off forward and combine
+under Hermiticity.  Tensor polarization, quadrupole structure, and many
+spin--orbit observables receive signed interference contributions.  Replacing
+\cref{eq:spectral-partial-wave-decomposition} by a scalar D-state probability
+loses the phase and angular information needed for \(LT\), \(TT\), and
+helicity-flip channels.
+
+The controlled limits are:
+\begin{align}
+ \Psi_D\to0
+ &\quad\Longrightarrow\quad
+ \delta_T\rho=0
+ \quad\text{for a nonrelativistic pure S-wave one-body density},
+\label{eq:pure-s-tensor-zero}\\
+ \pT\to0,\ y\to\tfrac12
+ &\quad\Longrightarrow\quad
+ R_M\to\bbone,
+\label{eq:melosh-nonrel-limit}
+\end{align}
+subject to explicitly retained relativistic spin components.  A nonzero
+pure-S tensor signal in a relativistic calculation must be traceable to those
+components or to a many-body operator.
+
+\subsection{Spectral normalization ledgers}
+
+For an \(NN\) state normalized to \(Z_{\NN}\),
+\begin{align}
+ \sum_\lambda\int[\dd\Gamma_2]\,
+ \rho_{\Lambda\Lambda;\lambda\lambda}^{p/D}
+ &=Z_{\NN},
+ &
+ \sum_\lambda\int[\dd\Gamma_2]\,
+ \rho_{\Lambda\Lambda;\lambda\lambda}^{n/D}
+ &=Z_{\NN},
+\label{eq:nucleon-number-spectral-ledger}\\
+ \sum_{N=p,n}\sum_\lambda
+ \int[\dd\Gamma_2]\,y_N
+ \rho_{\Lambda\Lambda;\lambda\lambda}^{N/D}
+ &=Z_{\NN}.
+\label{eq:nucleon-momentum-spectral-ledger}
+\end{align}
+The first line counts one proton and one neutron in the \(NN\) sector.  The
+second closes the sector plus momentum.  Full-state ledgers require the
+corresponding \(NN\pi\), \(\Delta\Delta\), and compact-sector terms.
+
+\section{Matched nuclear partonic operators}
+\label{sec:nuclear-operators}
+
+\subsection{Operator expansion in the nuclear theory}
+
+The matched nuclear operator corresponding to a quark, antiquark, or gluon
+GTMD has the expansion
+\begin{equation}
+ \widehat\cO_a^{D}
+ =\widehat\cO_a^{(1)}
+ +\widehat\cO_a^{(2)}
+ +\widehat\cO_a^{(\pi)}
+ +\widehat\cO_a^{(\Delta)}
+ +\widehat\cO_a^{(\shortd)}
+ +\widehat\cO_a^{(\coh)}
+ +\cdots .
+\label{eq:nuclear-operator-expansion}
+\end{equation}
+The superscripts identify operator topology, not independent probability
+components:
+\begin{itemize}
+\item \(\widehat\cO^{(1)}\): matched nucleon-active operator, including
+      induced one-body corrections in the selected representation;
+\item \(\widehat\cO^{(2)}\): irreducible two-nucleon current or partonic
+      operator;
+\item \(\widehat\cO^{(\pi)}\): pion-active and pion-transition operators;
+\item \(\widehat\cO^{(\Delta)}\): Delta-active and transition operators;
+\item \(\widehat\cO^{(\shortd)}\): short-distance contact or compact-sector
+      operator;
+\item \(\widehat\cO^{(\coh)}\): coherent multiple-scattering operator in the
+      factorization regime where such a reduction exists.
+\end{itemize}
+The same physical contribution may not appear in more than one term without
+an explicit overlap subtraction.
+
+\subsection{Complete operator identity}
+
+A nuclear operator identity is
+\begin{align}
+ \mathfrak o_{a/D}=\bigl(&
+ a,J,
+ P_i,P_f,
+ \gamma,R_{\rm color},
+ \text{gluon link pair},\mathcal C_{f/d},
+ \notag\\
+ &\alpha,\beta,
+ \text{active constituent},
+ \mathfrak r_{\nuc},
+ \mathfrak r_a,
+ \cR_{\UV},\cR_{\rap},\cS_{\soft},
+ \mu,\zeta,\mathfrak s,
+ \text{rank},\mathfrak m_D
+ \bigr),
+\label{eq:nuclear-operator-identity}
+\end{align}
+where \(\alpha,\beta\) are source and target nuclear sectors.  The operator is
+incomplete if a field required by the requested reduction is unspecified.
+For example, a gluon operator with no ordered link pair or \(f/d\) color
+status cannot enter a process map that requires those labels.
+
+\subsection{One-body operator block}
+
+In the \(NN\) sector the spectator-preserving one-body block is
+schematically
+\begin{equation}
+ \widehat\cO_{a,\NN\to\NN}^{(1)}
+ =\sum_{N=p,n}
+ \int[\dd\Gamma_2]\,
+ |N,s\rangle
+ \widehat\cO_{a/N}
+ \langle N,s|,
+\label{eq:one-body-operator-block}
+\end{equation}
+with all helicity, recoil, and normalization indices retained.  The nucleon
+operator in \cref{eq:one-body-operator-block} is the Volume~II/III parent, not
+a named scalar TMD.
+
+\subsection{Two-body and transition blocks}
+
+A generic two-nucleon block has the form
+\begin{equation}
+ \widehat\cO_a^{(2)}
+ =\sum_{A}
+ C_{a,A}^{(2)}(x_D,\kT,\DT;\Lambda_D)
+ \left[N^\dagger\Gamma_{A,1}N\right]
+ \left[N^\dagger\Gamma_{A,2}N\right],
+\label{eq:two-body-operator-basis}
+\end{equation}
+where \(A\) labels spin, isospin, derivative, color-singlet, Wilson, and
+transverse-rank structure.  Its momentum kernel includes the transfer
+partition in \cref{eq:two-body-transfer-partition}.  Transition blocks such
+as \(\NN\leftrightarrow\NNpi\) or \(\NN\leftrightarrow\DD\) have explicit
+source and target sectors and are accompanied by their Hermitian conjugates
+when required.
+
+\subsection{Matching conditions}
+
+The coefficients in \cref{eq:nuclear-operator-expansion} are fixed by a
+matching set
+\begin{equation}
+ \cM_{\rm match}
+ =\left\{
+ \langle X_f|\cO_a^{qg}|X_i\rangle
+ =\langle X_f|\widehat\cO_a^{D}|X_i\rangle
+ +\cO\!\left[(Q_{\nuc}/\Lambda_{\rm match})^{\nu+1}\right]
+ \right\}
+\label{eq:nuclear-operator-matching}
+\end{equation}
+for selected one- and two-hadron states, local moments, and symmetry
+relations.  Matching may use lattice matrix elements, chiral constraints,
+phenomenological form factors, or partonic observables only when their scheme
+and scale are compatible.  A fit to one named deuteron TMD is not a matching
+condition for the full operator basis.
+
+\begin{requirement}[Shared coefficient propagation]
+\label{req:shared-nuclear-coefficients}
+A coefficient multiplying a two-body spin--isospin operator affects every
+GTMD, GPD, PDF, current, and process reduction to which that operator
+contributes.  It may not be duplicated as an independent coefficient for
+each named TMD.
+\end{requirement}
+
+\subsection{Current consistency}
+
+The electromagnetic, axial, energy--momentum, and partonic bilocal operators
+must be constructed in the same unitary and regulator convention as
+\(\cM_D^2\).  Chiral EFT calculations provide a concrete example: using
+inconsistent regulators for forces and currents can violate the symmetry
+relations the EFT is designed to preserve \cite{Krebs2020,Schiavilla2018}.
+The same principle applies to the light-front nuclear theory.
+
+\section{The full deuteron GTMD parent}
+\label{sec:full-parent}
+
+\subsection{Amplitude-level definition}
+
+Let \(\alpha,\beta\) run over all retained nuclear sectors.  The full parent is
+\begin{equation}
+ W_{a/D,\Lambda'\Lambda}^{[J,\gamma]}
+ (x_D,\kT,\DT)
+ =\sum_{\alpha,\beta}
+ \left\langle
+ \Psi_{D,\Lambda'}^\alpha
+ \middle|
+ \widehat\cO_{a,\alpha\beta}^{[J,\gamma]}
+ (x_D,\kT,\DT)
+ \middle|
+ \Psi_{D,\Lambda}^\beta
+ \right\rangle.
+\label{eq:full-deuteron-parent}
+\end{equation}
+For gluons, the ordered link pair and \(f/d\) color contraction are part of
+\(\gamma\) and the operator identity.  The state member and nucleon
+microscopic member remain correlated through the matching map.
+
+\begin{principle}[Mechanisms are views of the parent]
+\label{prin:mechanisms-views}
+``Impulse,'' ``exchange current,'' ``pion,'' ``shadowing,'' ``short-range,''
+and ``hidden color'' are labels on operator blocks, sector restrictions, or
+controlled asymptotic reductions of \cref{eq:full-deuteron-parent}.  They are
+not independently normalized functions to be summed after the fact.
+\end{principle}
+
+\subsection{Sector-diagonal and sector-changing contributions}
+
+Equation~\eqref{eq:full-deuteron-parent} separates as
+\begin{equation}
+ W_{a/D}
+ =\sum_\alpha W_{\alpha\alpha}
+ +\sum_{\alpha<\beta}
+ \left(W_{\alpha\beta}+W_{\beta\alpha}\right).
+\label{eq:sector-decomposition-parent}
+\end{equation}
+A diagonal term \(W_{\NNpi,\NNpi}\) can contain an active pion or active
+nucleon.  An off-diagonal term \(W_{\NN,\NNpi}\) requires an operator that
+creates or absorbs the pion.  The existence of both sectors in the state is
+not sufficient to authorize the transition matrix element.
+
+\subsection{Hermiticity, parity, and link reversal}
+
+For a Hermitian operator class,
+\begin{equation}
+ W_{a/D,\Lambda'\Lambda}^{[J,\gamma]}
+ (x_D,\kT,\DT)
+ =
+ \left[
+ W_{a/D,\Lambda\Lambda'}^{[J^\dagger,\gamma^{-1}]}
+ (x_D,\kT,-\DT)
+ \right]^*.
+\label{eq:deuteron-parent-hermiticity}
+\end{equation}
+Parity acts through the declared light-front spin adapter.  If the nuclear
+dynamics is invariant under the relevant antiunitary operation and the
+process changes only the standard staple orientation, then
+\begin{equation}
+ W_{a/D,\odd}^{[\gamma_+]}
+ =-W_{a/D,\odd}^{[\gamma_-]}.
+\label{eq:deuteron-link-reversal}
+\end{equation}
+A failure of \cref{eq:deuteron-link-reversal} must be traced to an incomplete
+state or current, an additional process link/color structure, a Glauber or
+factorization obstruction, or a convention/numerical error.  It is not
+repaired at the named-function level.
+
+\subsection{Partonic and nuclear Wilson structures}
+
+The partonic operator contains
+\begin{equation}
+ U_\gamma^{\rm parton}:
+ \text{color transport associated with the hard factorization},
+\label{eq:partonic-wilson-object}
+\end{equation}
+while coherent nuclear propagation is
+\begin{equation}
+ \cU_{\nuc}:
+ \text{amplitude evolution among nuclear configurations}.
+\label{eq:nuclear-propagation-object}
+\end{equation}
+If both descriptions include the same soft momentum region, the matched
+parent contains a subtraction
+\begin{equation}
+ W_{a/D}^{\rm matched}
+ =W_{a/D}^{\rm parton}
+ +W_{a/D}^{\rm nuclear}
+ -W_{a/D}^{\rm overlap}.
+\label{eq:parton-nuclear-overlap-subtraction}
+\end{equation}
+The overlap is defined by a common asymptotic expansion, not by tuning the
+sum to data.
+
+\begin{requirement}[No nuclear phase multiplication]
+\label{req:no-nuclear-phase-multiplication-v4}
+A tensor-polarized T-odd deuteron function may not be generated by multiplying
+an unpolarized nucleon TMD by a fitted nuclear phase or tensor ratio.  It must
+be projected from the spin-resolved matrix element
+\cref{eq:full-deuteron-parent} with the link-resolved nucleon operator and any
+additional nuclear rescattering treated at amplitude level.
+\end{requirement}
+
+\subsection{Common-member covariance}
+
+For one microscopic/nuclear member \(m\), all deuteron projections are
+\begin{equation}
+ F_A^{(m)}=\cP_A[W_{a/D}^{(m)}].
+\label{eq:member-projection}
+\end{equation}
+The covariance is therefore generated by the same member ensemble,
+\begin{equation}
+ \operatorname{Cov}(F_A,F_B)
+ =\left\langle
+ (F_A^{(m)}-\bar F_A)(F_B^{(m)}-\bar F_B)
+ \right\rangle_m,
+\label{eq:common-member-covariance}
+\end{equation}
+retaining cross-flavor, proton/neutron, quark/gluon, TMD/GPD, and
+nucleon/deuteron correlations.
+
+\section{Impulse approximation as a controlled reduction}
+\label{sec:impulse}
+
+\subsection{Derivation of the one-body convolution}
+
+Restrict \cref{eq:full-deuteron-parent} to the \(NN\) sector and the
+spectator-preserving one-body operator.  Insert complete two-nucleon states,
+use the recoil map in \cref{eq:active-intrinsic-recoil}, and define
+\(z=x_D/y\), \(\ellT=\kT-z\pT\).  The result is
+\begin{align}
+ W_{a/D,\Lambda'\Lambda}^{[J,\gamma],\IA}
+ (x_D,\kT,\DT)
+ ={}&\sum_{N=p,n}
+ \int_{x_D}^{1}\frac{\dd y}{y}
+ \int\frac{\dd^2\pT}{(2\pi)^2}
+ \sum_{\lambda',\lambda}
+ \notag\\
+ &\times
+ \cS_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+ (y,\pT,\DT)
+ W_{a/N,\lambda'\lambda}^{[J,\gamma]}
+ \left(
+ z,\ellT,\DNT=\DT
+ \right)
+ \cJ_{\IA}.
+\label{eq:ia-gtmd-convolution}
+\end{align}
+The factor \(\cJ_{\IA}\) is fixed by the state and operator normalization;
+it is not independently tuned in each polarization channel.  With a
+different state normalization, the measure and \(\cJ_{\IA}\) transform
+together.
+
+Equation~\eqref{eq:ia-gtmd-convolution} retains:
+\begin{itemize}
+\item deuteron and active-nucleon helicity transitions;
+\item proton and neutron identity;
+\item quark flavor or gluon identity;
+\item Wilson path and gluon color class;
+\item the full external transfer and partonic transverse momentum;
+\item nuclear and nucleon microscopic members.
+\end{itemize}
+Summing proton and neutron or projecting onto \(U,L,T,LL,LT,TT\) is a later
+reduction.
+
+\subsection{Forward TMD limit}
+
+Setting \(\DT=0\) gives
+\begin{align}
+ \Phi_{a/D,\Lambda'\Lambda}^{[J,\gamma],\IA}
+ (x_D,\kT)
+ ={}&\sum_N
+ \int_{x_D}^{1}\frac{\dd y}{y}
+ \int\frac{\dd^2\pT}{(2\pi)^2}
+ \sum_{\lambda',\lambda}
+ \rho_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}(y,\pT)
+ \notag\\
+ &\times
+ \Phi_{a/N,\lambda'\lambda}^{[J,\gamma]}
+ \left(\frac{x_D}{y},
+ \kT-\frac{x_D}{y}\pT\right)
+ \cJ_{\TMD}.
+\label{eq:ia-tmd-convolution}
+\end{align}
+This is not a scalar smearing formula unless the nucleon and target spin
+matrices are first restricted to a scalar channel.
+
+\subsection{TMD-impact representation}
+
+Using
+\(
+ \widetilde\Phi(x,\bM)=\int\dd^2\kT\,e^{i\bM\cdot\kT}\Phi(x,\kT)
+\),
+\cref{eq:ia-tmd-convolution} becomes
+\begin{align}
+ \widetilde\Phi_{a/D}^{\IA}(x_D,\bM)
+ ={}&\sum_N
+ \int_{x_D}^{1}\frac{\dd y}{y}
+ \int\frac{\dd^2\pT}{(2\pi)^2}
+ \rho^{N/D}(y,\pT)
+ e^{i(x_D/y)\bM\cdot\pT}
+ \notag\\
+ &\times
+ \widetilde\Phi_{a/N}
+ \left(\frac{x_D}{y},\bM\right)
+ \cJ_{\TMD},
+\label{eq:ia-bspace-convolution}
+\end{align}
+with all spin indices implicit.  The nuclear phase in
+\cref{eq:ia-bspace-convolution} is a kinematic boost phase; it is unrelated
+to the partonic naive-T-odd Wilson phase.
+
+\subsection{GPD, PDF, and current reductions}
+
+Integrating \cref{eq:ia-gtmd-convolution} over \(\kT\) gives the zero-skewness
+GPD convolution,
+\begin{equation}
+ H_{a/D}^{\IA}(x_D,0,t_D)
+ =\int\dd^2\kT\,W_{a/D}^{\IA}(x_D,\kT,\DT),
+\label{eq:ia-gpd-reduction}
+\end{equation}
+provided the nucleon staple operator is matched to the straight-link GPD
+operator as required.  The forward collinear limit is
+\begin{equation}
+ f_{a/D}^{\IA}(x_D)
+ =\int\dd^2\kT\,\Phi_{a/D}^{\IA}(x_D,\kT).
+\label{eq:ia-pdf-reduction}
+\end{equation}
+Further \(x_D\) moments give local currents or energy--momentum matrix
+elements only after the corresponding operator matching.
+
+The required commuting square is
+\begin{equation}
+ \Red_D\circ\cN_{\IA}[W_{a/N}]
+ =\cN_{\IA}^{\rm reduced}\circ\Red_N[W_{a/N}]
+ +\delta_{\rm match}.
+\label{eq:ia-reduction-square}
+\end{equation}
+The residual \(\delta_{\rm match}\) is reported separately as matching,
+truncation, and numerical components.
+
+\subsection{Support and number closure}
+
+The convolution has \(0<x_D<1\), while the project coordinate
+\(x_N=2x_D\) has support up to 2.  Fermi motion and compact sectors can
+populate \(x_N>1\) without violating the canonical support in \(x_D\).
+
+For valence quarks in the full deuteron,
+\begin{equation}
+ \int_0^1\dd x_D\,[u_D-\bar u_D]=3,
+ \qquad
+ \int_0^1\dd x_D\,[d_D-\bar d_D]=3,
+\label{eq:deuteron-valence-ledger}
+\end{equation}
+and the partonic momentum sum is
+\begin{equation}
+ \sum_{a=q,\bar q,g}
+ \int_0^1\dd x_D\,x_D f_{a/D}(x_D;\mu)=1.
+\label{eq:deuteron-parton-momentum-sum}
+\end{equation}
+The impulse term alone closes these relations only within the \(NN\) sector
+and its matched one-body operator.  Pion, Delta, compact, and many-body
+operator contributions must be included in the full ledger.
+
+\subsection{Completely positive impulse reduction}
+
+At fixed nuclear kinematics, define an amplitude embedding
+\begin{equation}
+ V_D:\Hil_N\longrightarrow\Hil_D\otimes\Hil_{\spec}
+\label{eq:nuclear-amplitude-embedding}
+\end{equation}
+from the deuteron wave function.  If the spectator is unobserved and no
+coherence with another sector remains, the reduced map is
+\begin{equation}
+ \cE_D(\rho_N)
+ =\Tr_{\spec}\left[V_D\rho_NV_D^\dagger\right]
+ =\sum_\alpha K_\alpha\rho_NK_\alpha^\dagger.
+\label{eq:impulse-cp-map}
+\end{equation}
+This proves complete positivity of the reduced impulse channel.  It does not
+justify representing coherent shadowing, exchange currents, or
+\(NN\leftrightarrow NN\pi\) interference by independent Kraus maps.
+
+\section{Spin recoupling and the complete spin-1 projection system}
+\label{sec:spin-recoupling}
+
+\subsection{Why the nucleon helicity matrix is indispensable}
+
+The deuteron target projector and active-parton projector act only after the
+nuclear convolution.  For a named channel \(A\),
+\begin{equation}
+ F_{A,a/D}
+ =\Tr_{\Lambda,\lambda_a}
+ \left[
+ P_{A}^{(D,a)}
+ W_{a/D}
+ \right].
+\label{eq:deuteron-tmd-projector}
+\end{equation}
+Replacing \(W_{a/N,\lambda'\lambda}\) in
+\cref{eq:ia-gtmd-convolution} by a spin-averaged scalar before convolution
+removes terms in which vector-polarized nucleon distributions feed tensor
+polarization through deuteron spin recoupling.
+
+\begin{requirement}[Late projection]
+\label{req:late-spin-projection}
+The active-nucleon helicity indices and deuteron helicity indices remain
+explicit through nuclear composition.  Projection onto \(U,L,T,LL,LT,TT\)
+and named parton polarization occurs only after all operator blocks needed by
+the requested observable are assembled.
+\end{requirement}
+
+\subsection{Irreducible nuclear response}
+
+Apply \cref{eq:spin1-irrep-coefficients} to the deuteron helicity matrix:
+\begin{equation}
+ W_{a/D;M}^{(K)}
+ =\sum_{\Lambda',\Lambda}
+ (T_M^{(K)})_{\Lambda\Lambda'}^*
+ W_{a/D,\Lambda'\Lambda}.
+\label{eq:deuteron-irrep-projection}
+\end{equation}
+The physical mapping is
+\begin{equation}
+ K=0\leftrightarrow U,
+ \qquad
+ K=1\leftrightarrow L,T,
+ \qquad
+ K=2\leftrightarrow LL,LT,TT.
+\label{eq:irrep-physical-map}
+\end{equation}
+The \(M\) dependence fixes the transverse \(SO(2)\) weight that must combine
+with the partonic tensor rank and orbital interference.
+
+\subsection{S--D and orbital selection}
+
+A nuclear contribution is nonzero only when total light-front angular
+momentum closes:
+\begin{equation}
+ \Delta\Lambda_D
+ =\Delta\lambda_N
+ +\Delta L_{z,\nuc}
+ +m_{\cO,\nuc}.
+\label{eq:nuclear-jz-selection}
+\end{equation}
+The active nucleon operator then has its own partonic balance inherited from
+Volume~II.  The complete selection rule is the composition of the nuclear and
+partonic intertwiners, not one plot-level rank factor.
+
+In the lowest \(NN\) component:
+\begin{itemize}
+\item \(SS\) supplies the dominant unpolarized scalar response;
+\item \(SD+DS\) supplies signed quadrupole and many tensor interferences;
+\item \(DD\) supplies additional tensor and high-momentum strength;
+\item Melosh and additional relativistic components permit spin couplings
+      absent in the nonrelativistic limit.
+\end{itemize}
+Disabling either amplitude in a required interference block must remove the
+corresponding harmonic.
+
+\subsection{Tensor PDF and the \texorpdfstring{\(b_1\)}{b1} anchor}
+
+For any partonic species,
+\begin{equation}
+ \delta_T f_{a/D}(x_D)
+ =f_{a/D}^{\Lambda=0}(x_D)
+ -\frac12\left[
+ f_{a/D}^{\Lambda=+1}(x_D)
+ +f_{a/D}^{\Lambda=-1}(x_D)
+ \right].
+\label{eq:tensor-pdf-definition}
+\end{equation}
+At leading twist and leading order,
+\begin{equation}
+ b_1(x_D,Q^2)
+ =\frac12\sum_q e_q^2
+ \left[
+ \delta_T q_D(x_D,Q^2)
+ +\delta_T\bar q_D(x_D,Q^2)
+ \right]
+ +\cO(\alpha_s,M_D^2/Q^2).
+\label{eq:b1-relation}
+\end{equation}
+With the project convention \(S_{LL}^{\Lambda=0}=-1\),
+\begin{equation}
+ f_{1LL}=-\frac23\,\delta_T f_1.
+\label{eq:f1ll-tensor-adapter}
+\end{equation}
+The adapter is applied only after the convention-independent helicity
+difference is computed.  The impulse term from \(S\)-\(D\) structure is a
+baseline, not a guarantee of agreement with data
+\cite{HoodbhoyJaffeManohar1989,HERMES2005,CosynDongKumanoSargsian2017}.
+
+\subsection{Gluon double-helicity-flip structure}
+
+A spin-1 target supports gluon helicity-flip-two matrix elements with no
+leading one-body spin-\(\tfrac12\) nucleon analogue.  In a deuteron they can
+arise from nuclear orbital transfer, coherent two-nucleon operators, or
+compact/non-nucleonic sectors.  The model must therefore preserve the
+operator-level distinction
+\begin{equation}
+ W_{g/D}^{\Delta\lambda_g=2}
+ \neq
+ C\,W_{g/D}^{\rm unpolarized}.
+\label{eq:gluon-transversity-not-rescaling}
+\end{equation}
+A nonzero result identifies specific angular-momentum and sector blocks; a
+zero impulse baseline is not an exact all-mechanism zero.
+
+\subsection{Forward positivity domain}
+
+If the complete forward correlator is represented as a sum over cut
+amplitudes,
+\begin{equation}
+ \Phi_{AB}(x_D,\kT)
+ =\sum_X \cA_{AX}\cA_{BX}^*,
+\label{eq:deuteron-forward-gram}
+\end{equation}
+then it is positive semidefinite in the joint parton--deuteron helicity
+space.  Positivity is imposed on the total physical correlator at the layer
+where \cref{eq:deuteron-forward-gram} is valid.  Individual shadowing,
+exchange, or subtraction terms need not be positive, and off-forward GTMDs
+and Wigner distributions are not pointwise probability matrices.
+
+\section{Consistent currents, form factors, and local moments}
+\label{sec:currents-formfactors}
+
+\subsection{Spin-1 electromagnetic current}
+
+For on-shell deuterons, current conservation and discrete symmetries permit
+three electromagnetic form factors.  With polarization vectors
+\(\epsilon^\alpha(P_i,\Lambda)\) and
+\(\epsilon^{*\beta}(P_f,\Lambda')\), one convention is
+\begin{align}
+ \langle P_f,\Lambda'|J^\mu|P_i,\Lambda\rangle
+ ={}&-\epsilon_f^{*\alpha}\epsilon_i^\beta
+ \Bigg\{
+ (P_f+P_i)^\mu
+ \left[
+ g_{\alpha\beta}G_1(Q^2)
+ -\frac{\Delta_\alpha\Delta_\beta}{2M_D^2}G_3(Q^2)
+ \right]
+ \notag\\
+ &\hspace{28mm}
+ +\left(g^\mu{}_{\alpha}\Delta_\beta
+ -g^\mu{}_{\beta}\Delta_\alpha\right)G_2(Q^2)
+ \Bigg\}.
+\label{eq:spin1-current-decomposition}
+\end{align}
+Defining \(\eta=Q^2/(4M_D^2)\),
+\begin{align}
+ G_C&=G_1+\frac23\eta G_Q,
+ &
+ G_M&=G_2,
+ &
+ G_Q&=G_1-G_2+(1+\eta)G_3.
+\label{eq:physical-deuteron-formfactors}
+\end{align}
+The static conditions are
+\begin{equation}
+ G_C(0)=1,
+ \qquad
+ G_M(0)=\frac{M_D}{M_N}\mu_D,
+ \qquad
+ G_Q(0)=M_D^2Q_D
+\label{eq:static-formfactor-normalization}
+\end{equation}
+in the declared magnetic-moment and quadrupole conventions.
+
+\subsection{One- and two-body current pair}
+
+The nuclear current is
+\begin{equation}
+ J_D^\mu
+ =J_{(1)}^\mu+J_{(2)}^\mu+J_{(\pi)}^\mu
+ +J_{(\Delta)}^\mu+J_{(\shortd)}^\mu+\cdots.
+\label{eq:nuclear-current-expansion}
+\end{equation}
+Current conservation requires
+\begin{equation}
+ \Delta_\mu\langle D_f|J_D^\mu|D_i\rangle=0
+\label{eq:deuteron-current-conservation}
+\end{equation}
+within the declared truncation.  A one-body current combined with a
+Hamiltonian containing exchange or eliminated-sector interactions generally
+does not satisfy the same Ward identity without induced current terms.
+
+\begin{requirement}[Current-family consistency]
+\label{req:current-family-consistency}
+Every nuclear member identifies the Hamiltonian, regulator, one-body current,
+two-body current, partonic operator, and matching order as one family.  A
+current imported from another interaction is an explicit hybrid sensitivity,
+not the central matched prediction.
+\end{requirement}
+
+\subsection{Angular-condition closure}
+
+The residual in \cref{eq:angular-condition} is evaluated for each nuclear
+member and current order.  Different prescriptions for extracting
+\(G_C,G_M,G_Q\) from an overcomplete set of light-front helicity amplitudes
+must agree as \(\Delta_{\rm ang}\to0\).  The spread among prescriptions at
+finite truncation is reported as a rotational/current defect and is not
+folded into an unrelated statistical band.
+
+\subsection{GTMD moments and local operators}
+
+The matched straight-link GPD reduction of the deuteron GTMD satisfies
+schematically
+\begin{align}
+ \int\dd x_D\,H_{q/D}(x_D,0,t)
+ &\longrightarrow
+ \langle D_f|J_q^+|D_i\rangle,
+\label{eq:vector-current-moment}\\
+ \sum_{a=q,\bar q,g}
+ \int\dd x_D\,x_D H_{a/D}(x_D,0,t)
+ &\longrightarrow
+ \langle D_f|T_a^{++}|D_i\rangle.
+\label{eq:emt-moment}
+\end{align}
+The local-current route and the GTMD-moment route must use the same matched
+operator basis.  Agreement is a nontrivial closure test of the nuclear
+recoil, current, and sector structure.
+
+\subsection{Static and elastic validation set}
+
+Before using the state for partonic predictions, the nuclear theory must
+reproduce within declared uncertainties:
+\begin{equation}
+ B_D,
+ \quad
+ \mu_D,
+ \quad
+ Q_D,
+ \quad
+ G_C(Q^2),G_M(Q^2),G_Q(Q^2),
+ \quad
+ \Delta_{\rm ang}(Q^2).
+\label{eq:elastic-validation-set}
+\end{equation}
+The long-distance \(S/D\) phenomenology of high-quality interactions is an
+important benchmark, but success in elastic observables does not by itself
+validate partonic two-body operators.
+
+\section{Coherent small-x amplitudes and shadowing}
+\label{sec:coherent-shadowing}
+
+\subsection{Amplitude-level origin}
+
+At small \(x_D\), the coherence length of the hard fluctuation can exceed the
+nucleon separation and permit scattering from both nucleons.  The deuteron
+matrix element then contains a coherent two-step amplitude rather than an
+incoherent modification of one nucleon distribution.  Schematically,
+\begin{align}
+ W_{a/D}^{(2\,\coh)}
+ \sim{}&
+ \sum_{X}
+ \int[\dd\Gamma_2][\dd\Gamma_2']
+ \Psi_D^*(\Gamma_2')
+ \cA_{N_2\to X}^{a,\rm diff}
+ \notag\\
+ &\times
+ e^{i\varphi_{\coh}(x_D;\Gamma_2',\Gamma_2)}
+ \cA_{X\to N_1}^{a,\rm diff}
+ \Psi_D(\Gamma_2),
+\label{eq:coherent-double-scattering}
+\end{align}
+where \(X\) is the diffractively produced intermediate state and
+\(\varphi_{\coh}\) carries the longitudinal and transverse propagation
+phase.  Leading-twist nuclear shadowing connects this amplitude to nucleon
+diffractive parton distributions in the kinematic domain where the
+factorization assumptions hold \cite{FrankfurtGuzeyStrikman2012}.
+
+\subsection{Helicity-resolved diffractive kernel}
+
+The elementary diffractive input is a matrix
+\begin{equation}
+ \cA_{a;\lambda_N'\lambda_N}^{\rm diff}
+ (x_{\mathbb P},\beta,t;J,\gamma),
+\label{eq:helicity-diffractive-amplitude}
+\end{equation}
+not one unpolarized ratio.  The coherent nuclear kernel acts on the full
+nucleon and deuteron helicity structure:
+\begin{equation}
+ \cK_{a;\lambda_1'\lambda_2';\lambda_1\lambda_2}^{\coh}
+ =\sum_X
+ \cA_{a;\lambda_1'\lambda_1}^{\rm diff}
+ \cP_X
+ \cA_{a;\lambda_2'\lambda_2}^{\rm diff}
+ \times\text{propagation phase}.
+\label{eq:coherent-helicity-kernel}
+\end{equation}
+Vector and tensor shadowing are projections of
+\cref{eq:coherent-helicity-kernel}.  They cannot be obtained by multiplying
+the unpolarized shadowing correction by a target-polarization coefficient.
+
+\begin{requirement}[Independent polarized diffraction]
+\label{req:independent-polarized-diffraction}
+An unpolarized diffractive PDF or amplitude constrains only the unpolarized
+part of the coherent kernel.  Polarized and tensor components require their
+own amplitudes, symmetry relations, data, lattice input, or explicitly named
+model priors.  Their uncertainty is not the unpolarized error band copied
+between channels.
+\end{requirement}
+
+\subsection{Shadowing and antishadowing}
+
+The coherent correction is negative in many inclusive unpolarized channels,
+but neither sign nor magnitude is universal for all helicity and color
+operators.  Antishadowing is represented by a distinct matched operator or
+unitarity/moment-restoring mechanism,
+\begin{equation}
+ W_{a/D}^{\coh,\rm total}
+ =W_{a/D}^{\rm shadow}
+ +W_{a/D}^{\rm antishadow},
+\label{eq:shadow-antishadow}
+\end{equation}
+with separate provenance.  It is not an arbitrary positive function added to
+force the momentum sum rule; the sum rule is a validation constraint on the
+combined state and operator.
+
+\subsection{Coherence and the partonic soft sector}
+
+A coherent nuclear exchange can overlap the Glauber or soft region already
+represented by the Volume~III Wilson and soft factors.  The overlap term in
+\cref{eq:parton-nuclear-overlap-subtraction} is therefore mandatory whenever
+the asymptotic expansions coincide.  The subtraction record contains:
+\begin{equation}
+\begin{aligned}
+ \mathfrak s_{\rm overlap}=\bigl(&
+ \text{momentum region},
+ \text{Wilson geometry},\\
+ &\text{color representation},
+ \text{nuclear channel},\\
+ &\text{expansion order},
+ \text{counterterm}
+ \bigr).
+\end{aligned}
+\label{eq:overlap-subtraction-record}
+\end{equation}
+
+\subsection{Multiple-scattering convergence}
+
+The coherent series
+\begin{equation}
+ W^{\coh}=W^{(2)}+W^{(3)}+\cdots
+\label{eq:coherent-series}
+\end{equation}
+is organized by the number of resolved scatterings or by an equivalent
+unitarized representation.  For the deuteron, the leading nontrivial
+nucleonic term is double scattering, while higher terms can arise through
+explicit additional constituents or internal rescattering structure.  The
+truncation order and unitarization prescription are separate member fields.
+
+\section{Binding, Fermi motion, off-shell representations, and short range}
+\label{sec:binding-offshell-src}
+
+\subsection{Joint spectral--partonic amplitude}
+
+Binding and Fermi motion enter through the exact nuclear state and recoil
+map.  A covariant spectral representation may be written schematically as
+\begin{equation}
+ W_{a/D}
+ =\int\dd^4p\,
+ \cS_D(p+\tfrac\Delta2,p-\tfrac\Delta2)
+ W_{a/N}(p,\Delta)
+ +W_{a/D}^{(2+)}.
+\label{eq:covariant-spectral-representation}
+\end{equation}
+The separation between an off-shell continuation of \(W_{a/N}\) and the
+many-body term \(W_{a/D}^{(2+)}\) depends on the representation, as shown in
+\cref{prop:no-offshell-observable}.  Only their matched sum is physical.
+
+\subsection{Controlled off-shell sensitivity}
+
+For diagnostic purposes one may expand
+\begin{equation}
+ W_{a/N}(p^2)
+ =W_{a/N}(M_N^2)
+ +(p^2-M_N^2)
+ \left.\frac{\partial W_{a/N}}{\partial p^2}\right|_{M_N^2}
+ +\cdots,
+\label{eq:offshell-expansion}
+\end{equation}
+but the derivative and compensating two-body operator belong to one scheme.
+The project may report the size of the chosen representation's one-body
+term, provided it is not called an observable and the complete result is
+shown to be invariant under an allowed transformation.
+
+\subsection{Short-range correlations and large x}
+
+High relative momentum in the \(NN\) state and explicit short-distance
+sectors can populate the large-\(x_N\) region.  The nuclear theory must
+distinguish:
+\begin{enumerate}
+\item high-momentum components generated by the chosen \(NN\) interaction;
+\item induced two-body partonic operators at the same resolution;
+\item explicit cluster or compact-sector amplitudes;
+\item perturbative high-\(k_T\) tails supplied later by matching and the
+      observable \(Y\) term.
+\end{enumerate}
+Counting all four as independent additive ``SRC enhancements'' is forbidden.
+
+\subsection{EMC-like behavior}
+
+An EMC-like modification at intermediate \(x_D\) may emerge from binding,
+Fermi motion, changed operator coefficients, explicit mesonic or compact
+sectors, or short-distance two-body operators.  The model should not begin
+with a universal multiplicative EMC ratio for every TMD.  It should compare
+candidate mechanisms at the operator and observable levels and reserve at
+least one flavor/spin family for discrimination.
+
+\subsection{Tagged observables as spectral diagnostics}
+
+Spectator tagging resolves \(y\), \(\pT\), and spectator spin information and
+therefore tests the same spectral amplitude used in
+\cref{eq:ia-gtmd-convolution}.  A model that fits inclusive nuclear ratios but
+fails tagged momentum and polarization dependences has not validated its
+nuclear state.  The tagged formalism is developed further in
+\cref{sec:tagged-observables}.
+
+\section{The spin-resolved \texorpdfstring{\(NN\pi\)}{NNpi} sector}
+\label{sec:nnpi}
+
+\subsection{Three-body light-front amplitude}
+
+The \(NN\pi\) component is
+\begin{align}
+ |\Psi_{\NNpi}^{\Lambda}\rangle
+ ={}&\sum_{\lambda_1,\lambda_2,a_\pi}
+ \int[\dd\Gamma_3]\,
+ \Psi_{\Lambda;\lambda_1\lambda_2,a_\pi}^{\NNpi}
+ (y_1,y_2,y_\pi;\bm p_{1T},\bm p_{2T},\bm p_{\pi T})
+ \notag\\
+ &\times
+ |N_1N_2\pi^{a_\pi}\rangle,
+\label{eq:nnpi-state}
+\end{align}
+with
+\begin{equation}
+ y_1+y_2+y_\pi=1,
+ \qquad
+ \bm p_{1T}+\bm p_{2T}+\bm p_{\pi T}=0.
+\label{eq:nnpi-closure}
+\end{equation}
+Its norm is \(Z_{\NNpi}\), and its spin, isospin, orbital, regulator, and
+matching origin are explicit.  A scalar pion momentum distribution is only a
+marginal of \cref{eq:nnpi-state}.
+
+\subsection{Operator content}
+
+The \(NN\pi\) sector contributes through:
+\begin{align}
+ W_{\NNpi,\NNpi}
+ ={}&W_{\rm active\ N}
+ +W_{\rm active\ \pi}
+ +W_{\rm two\ body}
+ +W_{\rm interference},
+\label{eq:nnpi-diagonal-content}\\
+ W_{\NN,\NNpi}+W_{\NNpi,\NN}
+ ={}&\text{pion-emission/absorption transition operators}.
+\label{eq:nn-nnpi-transition}
+\end{align}
+Each term has a matched operator identity.  The active-pion term consumes a
+pion quark/gluon correlator in the same QCD scheme; the transition terms are
+not generated by multiplying the pion PDF by a deuteron splitting function.
+
+\subsection{Sullivan convolution as a reduction}
+
+When the three-body amplitude factorizes in the Sullivan regime and the
+observable does not resolve transition coherence, the pion-active diagonal
+term reduces to
+\begin{equation}
+ F_{a/D}^{(\pi)}(x_D,\kT)
+ =\int_{x_D}^{1}\frac{\dd y_\pi}{y_\pi}
+ \int\dd^2\qT\,
+ f_{\pi/D}(y_\pi,\qT;\Lambda',\Lambda)
+ F_{a/\pi}
+ \left(\frac{x_D}{y_\pi},
+ \kT-\frac{x_D}{y_\pi}\qT\right)
+ +\delta F_{\rm trans}.
+\label{eq:sullivan-reduction}
+\end{equation}
+The spin-resolved splitting amplitude determines the deuteron tensor
+structure.  The scalar function \(f_{\pi/D}\) is insufficient for general
+\(LT\), \(TT\), and T-odd channels.
+
+\subsection{Internal and exchange pion subtraction}
+
+The microscopic nucleon state may already contain \(|N\pi\rangle\) or more
+general chiral Fock sectors.  The nuclear theory also contains pions exchanged
+between nucleons.  Let \(\mathsf T_{\pi}^{\rm int}\) and
+\(\mathsf T_{\pi}^{\rm exch}\) denote asymptotic expansion maps that extract,
+respectively, the internal-nucleon and inter-nucleon low-momentum regions.
+They are not orthogonal projectors and do not define probabilities.  In their
+shared domain the two descriptions must possess one common expansion,
+\begin{equation}
+ \mathsf T_{\pi}^{\rm exch}W^{\pi,\rm nucleon}
+ =\mathsf T_{\pi}^{\rm int}W^{\pi,\rm nuclear}
+ \equiv W^{\pi,\rm overlap}
+ +\mathcal O(\delta_{\pi,\rm match}),
+\label{eq:pion-region-overlap}
+\end{equation}
+where \(\delta_{\pi,\rm match}\) is the declared matching remainder.  The
+matched result is then
+\begin{equation}
+ W^{\pi,\rm matched}
+ =W^{\pi,\rm nucleon}
+ +W^{\pi,\rm nuclear}
+ -W^{\pi,\rm overlap}.
+\label{eq:pion-double-counting-subtraction}
+\end{equation}
+The overlap term is fixed by the common asymptotic expansion, not by a fitted
+normalization.  The pion contribution is therefore included once.
+
+\subsection{Light-front Hamiltonian EFT status}
+
+Light-front Hamiltonian EFT with explicit pion Fock sectors provides a
+promising route to nonperturbative longitudinal momentum distributions and
+has been extended conceptually toward the deuteron
+\cite{CaoEtAl2026}.  For the present program it becomes a central replacement
+only when it supplies the spin-resolved three-body deuteron amplitude,
+operator matching, and convergence required above.  A longitudinal pion
+marginal alone remains comparison information.
+
+\section{Delta, six-quark, hidden-color, and other compact sectors}
+\label{sec:compact-sectors}
+
+\subsection{Delta--Delta sector}
+
+The allowed isoscalar \(\Delta\Delta\) component is
+\begin{equation}
+ |\Psi_{\DD}^{\Lambda}\rangle
+ =\sum_{\lambda_1,\lambda_2,I_1,I_2}
+ \int[\dd\Gamma_{\DD}]\,
+ \Psi_{\DD}^{\Lambda}
+ |\Delta_1\Delta_2\rangle_{I=0,J=1}.
+\label{eq:deltadelta-state}
+\end{equation}
+Its partonic prediction requires Delta quark/gluon operators and
+\(NN\leftrightarrow\Delta\Delta\) transition operators in the same matching
+scheme.  A quoted \(\Delta\Delta\) probability without these amplitudes does
+not define a GTMD contribution.
+
+\subsection{Six-quark color space}
+
+Six quarks can couple to an overall color singlet through more than the
+proton--neutron singlet--singlet channel.  Let
+\begin{equation}
+ \Hil_{\sixq}^{\rm singlet}
+ =\Hil_{1\otimes1}
+ \oplus\Hil_{\rm hidden\ color}
+\label{eq:sixq-color-decomposition}
+\end{equation}
+be an orthogonal color-coupling basis at the chosen resolution.  Hidden color
+is a basis statement within the compact six-quark sector; its probability is
+basis and resolution dependent.  Physical predictions require the full
+six-quark amplitude and operator matrix elements.
+
+\subsection{Compact-sector operator requirements}
+
+A nonzero central compact-sector contribution must specify:
+\begin{enumerate}
+\item normalized six-quark or cluster amplitudes;
+\item explicit \(u,d,\bar q,g\) content;
+\item quark and gluon color couplers;
+\item parton and target helicities;
+\item orbital components sufficient for the claimed transverse ranks;
+\item nonzero-transfer recoil and support;
+\item Wilson paths and gluon \(f/d\) structures;
+\item transition operators to the \(NN\) and other sectors;
+\item regulator and matching convergence.
+\end{enumerate}
+Absent these items, the sector remains a zero-centered sensitivity or an
+external benchmark.  The existing hidden-color descriptions of \(b_1\) are
+valuable phenomenological tests, but do not by themselves supply the full
+spin-resolved GTMD parent \cite{Miller2014,MillerHiddenColor2014}.
+
+\subsection{Exotic and null-test channels}
+
+Gluon double-helicity-flip and selected tensor observables are especially
+sensitive to coherent or compact structure because their lowest one-body
+nucleon contribution can vanish or be suppressed.  Such observables are
+powerful diagnostics only if the model keeps the exact null hypothesis:
+\begin{equation}
+ \text{one-body nucleon baseline}=0
+ \quad\not\Rightarrow\quad
+ \text{full deuteron observable}=0.
+\label{eq:null-not-full-zero}
+\end{equation}
+The first nonzero operator block must be identified explicitly.
+
+\subsection{Short-distance contacts versus explicit compact sectors}
+
+A compact six-quark sector and a short-distance two-nucleon contact operator
+can represent the same low-resolution physics.  The provenance graph must
+therefore contain a replacement or matching two-cell,
+\begin{equation}
+ \sixq\ \text{explicit}
+ \quad\longleftrightarrow\quad
+ \widehat\cO^{(\shortd)}\ \text{with compact sector eliminated},
+\label{eq:compact-contact-equivalence}
+\end{equation}
+and reject their simultaneous unrestricted use.
+
+\section{Coherent amplitudes and completely positive reductions}
+\label{sec:cp-reductions}
+
+\subsection{Amplitude embedding is primary}
+
+Let the complete nuclear amplitude define an isometry or contraction
+\begin{equation}
+ V:\Hil_{\rm resolved}\longrightarrow
+ \Hil_{\rm observed}\otimes\Hil_{\rm unobserved}.
+\label{eq:stinespring-embedding}
+\end{equation}
+When the observable is insensitive to the unobserved subsystem, the reduced
+map
+\begin{equation}
+ \cE(\rho)
+ =\Tr_{\rm unobserved}\left[V\rho V^\dagger\right]
+\label{eq:stinespring-reduction}
+\end{equation}
+is completely positive.  A Kraus representation follows by choosing an
+orthonormal basis of the unobserved space.
+
+\begin{proposition}[Derived complete positivity]
+\label{prop:derived-cp}
+If \(V\) is the amplitude map for a complete set of retained unresolved
+outcomes, then \cref{eq:stinespring-reduction} is completely positive and is
+trace preserving when \(V^\dagger V=\bbone\).  If only selected outcomes are
+retained, it is trace nonincreasing.
+\end{proposition}
+
+\begin{proof}
+For any auxiliary space, \((\cE\otimes\Id)(X)\) is the partial trace of
+\((V\otimes\bbone)X(V^\dagger\otimes\bbone)\), which is positive for positive
+\(X\).  The trace statement follows from cyclicity and \(V^\dagger V\).
+\end{proof}
+
+\subsection{Where a CP map is valid}
+
+Examples include:
+\begin{itemize}
+\item the forward impulse density after tracing an unobserved spectator;
+\item detector or acceptance coarse graining after amplitudes are formed;
+\item an inclusive sum over mutually orthogonal final nuclear channels;
+\item selected stochastic response approximations derived from an amplitude
+      embedding.
+\end{itemize}
+
+\subsection{Where it is not valid}
+
+A CP map may not replace:
+\begin{itemize}
+\item coherent shadowing before the diffractive amplitudes are added;
+\item \(NN\leftrightarrow NN\pi\) interference;
+\item exchange-current interference with the impulse amplitude;
+\item off-forward sector coherence;
+\item Wilson-link phases whose sign follows from antiunitary reversal;
+\item subtraction terms, which can be negative and are not physical channels.
+\end{itemize}
+Forcing these terms into independent positive maps can erase the interference
+that produces tensor observables.
+
+\subsection{Relation to the accepted boundary}
+
+Ordered completely positive response maps in the accepted phenomenological
+boundary remain useful reduced approximations and regression objects.  In the
+microscopic hierarchy they must be derived from, or calibrated against, an
+explicit amplitude-level calculation.  They cannot be treated as proof that
+the underlying coherent nuclear dynamics has been solved.
+
+\section{Tagged spectator observables as differential validation}
+\label{sec:tagged-observables}
+
+\subsection{Tagged process and variables}
+
+Consider
+\begin{equation}
+ e(l)+D(P_D,\rho_D)
+ \longrightarrow
+ e(l')+N_s(p_s,\lambda_s)+X,
+\label{eq:tagged-process}
+\end{equation}
+where the detected nucleon is in the target-fragmentation region.  Define
+\begin{equation}
+ y_s=\frac{p_s^+}{P_D^+},
+ \qquad
+ y=1-y_s,
+ \qquad
+ \pT=-\bm p_{sT}
+\label{eq:tagged-variables}
+\end{equation}
+in the deuteron transverse rest frame.  The tagged momentum fixes the nuclear
+configuration rather than integrating it into an inclusive smearing function.
+
+\subsection{Impulse tagged tensor}
+
+In impulse approximation the tagged hadronic tensor is
+\begin{align}
+ W_{D,\tagg}^{\mu\nu}
+ (P_D,q;p_s)_{\Lambda'\Lambda}
+ ={}&\sum_{N=p,n}
+ \sum_{\lambda',\lambda}
+ \cS_{\Lambda'\Lambda;\lambda'\lambda}^{N/D}
+ (y,\pT,0)
+ \notag\\
+ &\times
+ W_N^{\mu\nu}(p_N,q)_{\lambda'\lambda}
+ \cJ_{\tagg}
+ +W_{D,\tagg}^{\mu\nu,\rm FSI}
+ +W_{D,\tagg}^{\mu\nu,\rm nonIA}.
+\label{eq:tagged-hadronic-tensor}
+\end{align}
+The same spectral amplitude appears in
+\cref{eq:ia-gtmd-convolution}; tagged data therefore test the state and spin
+recoupling used in the inclusive and TMD calculations.
+
+General spin-1 tagged observables require vector and tensor target density
+matrices, including transverse components.  Recent light-front formulations
+give a complete covariant cross-section and spectator-tagging decomposition
+for arbitrary spin-1 polarization
+\cite{CosynWeiss2020,CosynWeiss2026I,CosynWeiss2026II}.
+
+\subsection{Inclusive recovery}
+
+Summing spectator spin and integrating over the complete spectator phase
+space must recover the corresponding inclusive impulse tensor:
+\begin{equation}
+ \sum_{\lambda_s}
+ \int[\dd\Gamma_s]\,
+ W_{D,\tagg}^{\mu\nu,\IA}
+ =W_D^{\mu\nu,\IA}.
+\label{eq:tagged-inclusive-sumrule}
+\end{equation}
+The equality tests the flux factor, wave-function normalization, active-slot
+multiplicity, and spin-density algebra.  Detector cuts are applied only after
+this theoretical closure has been established.
+
+\subsection{On-shell pole and neutron extraction}
+
+For proton tagging, the active neutron virtuality is
+\begin{equation}
+ t_N=(P_D-p_s)^2,
+\label{eq:active-neutron-virtuality}
+\end{equation}
+and the impulse amplitude contains the nucleon pole at \(t_N=M_N^2\).  Near
+the pole,
+\begin{equation}
+ W_{D,\tagg}^{\IA}
+ =\frac{R_D(p_s)}{(t_N-M_N^2)^2}
+ W_N^{\rm on}
+ +\text{less singular terms}.
+\label{eq:tagged-pole-form}
+\end{equation}
+Analytic extrapolation of
+\((t_N-M_N^2)^2W_{D,\tagg}\) to the pole isolates the on-shell nucleon residue
+under the assumptions of the method.  Final-state interactions and many-body
+terms are less singular and can be constrained by the spectator-momentum
+dependence \cite{CosynSargsianWeiss2016,CosynWeiss2020}.
+
+\begin{requirement}[Pole extrapolation is a validation, not a fit shortcut]
+\label{req:pole-validation}
+The model must predict the pole position, residue normalization, spin
+structure, and approach to the pole from its own spectral amplitude.  It may
+not fit an arbitrary spectator factor separately in each tagged observable.
+\end{requirement}
+
+\subsection{Tensor tagging and D-wave selection}
+
+Tensor-polarized tagged observables can isolate regions with enhanced
+D-wave and spin--orbit content.  Their dependence on spectator momentum and
+azimuth tests the \(SD,DS,DD\) blocks of
+\cref{eq:spectral-partial-wave-decomposition} directly.  A successful
+inclusive \(b_1\) curve with incorrect tagged tensor asymmetries signals a
+misidentified nuclear mechanism or spin recoupling.
+
+\subsection{Tagged GTMD extension}
+
+A future off-forward tagged parent retains both the spectator momentum and
+the external transfer,
+\begin{equation}
+ W_{a/D,\tagg}
+ (x_D,\kT,\DT;p_s,\lambda_s),
+\label{eq:tagged-gtmd-parent}
+\end{equation}
+and can separate active-nucleon and coherent transfer patterns.  The first
+implementation may remain forward in the tagged channel, but its types must
+not collapse \(p_{sT}\), \(\pT\), \(\DT\), or \(\DNT\).
+
+\section{Global ledgers, sum rules, and no-double-counting closure}
+\label{sec:sumrules}
+
+\subsection{State and parton ledgers}
+
+For every nuclear member, the following quantities are evaluated from the
+same state and matched operators:
+\begin{enumerate}
+\item state normalization and sector probabilities;
+\item baryon number and electric charge;
+\item hadronic plus-momentum sharing among nucleons, pions, Deltas, and
+      compact sectors;
+\item partonic momentum sharing among quarks, antiquarks, and gluons;
+\item vector and tensor spin moments;
+\item local electromagnetic and energy--momentum moments;
+\item tagged-to-inclusive closure.
+\end{enumerate}
+The two momentum ledgers are different: the hadronic ledger partitions the
+nuclear EFT degrees of freedom, whereas the partonic ledger resolves the
+matched quark/gluon content inside all sectors.  They must be connected by
+matching, not added as separate normalizations.
+
+\subsection{Tensor number and conditional sum rules}
+
+The helicity-state normalization implies
+\begin{equation}
+ \int\dd x_D\,
+ \delta_T\left[q_D(x_D)-\bar q_D(x_D)\right]=0
+\label{eq:tensor-valence-number}
+\end{equation}
+for each conserved flavor charge when all operator and endpoint terms are
+included.  Additional \(b_1\) or tensor-PDF sum rules require assumptions
+about tensor-polarized sea distributions, small-\(x\) convergence, and
+higher-twist terms.  They are implemented with their hypotheses attached,
+not as unconditional hard constraints
+\cite{Kumano2014,KumanoSong2021}.
+
+\subsection{Momentum and antishadowing closure}
+
+The full partonic momentum sum in \cref{eq:deuteron-parton-momentum-sum}
+contains impulse, meson, coherent, transition, and compact contributions.
+The closure residual is
+\begin{equation}
+ \eps_{P^+}
+ =1-
+ \sum_{a=q,\bar q,g}
+ \int_0^1\dd x_D\,x_D f_{a/D}(x_D).
+\label{eq:momentum-closure-residual}
+\end{equation}
+A nonzero residual diagnoses missing matching or support.  It is not removed
+by renormalizing the final distributions after composition.
+
+\subsection{No-double-counting graph}
+
+The nuclear provenance graph contains at least the relations
+\begin{equation}
+\begin{gathered}
+ \{\mathrm{DERIVES\_FROM},\ \mathrm{PROJECTS\_TO},\
+   \mathrm{ADDS\_TO},\ \mathrm{REPLACES},\\
+   \mathrm{EXCLUDES},\ \mathrm{ALTERNATIVE\_TO},\
+   \mathrm{MATCHES},\ \mathrm{SUBTRACTS}\}.
+\end{gathered}
+\label{eq:nuclear-provenance-relations}
+\end{equation}
+It must reject:
+\begin{itemize}
+\item an explicit \(NN\pi\) sector together with the same pion contribution
+      already contained in the nucleon operator and no subtraction;
+\item an explicit compact sector together with the contact operator obtained
+      by integrating it out;
+\item a coherent double-scattering amplitude and a scalar shadowing ratio
+      representing the same contribution;
+\item a one-body off-shell correction and the untransformed two-body operator;
+\item a wave-function family treated as simultaneous additive states;
+\item a CP-map replacement and the amplitude-level mechanism it replaced;
+\item partonic soft rescattering and nuclear Glauber exchange in the same
+      overlap region without \cref{eq:parton-nuclear-overlap-subtraction}.
+\end{itemize}
+
+\subsection{Closure vector}
+
+A compact closure record is
+\begin{equation}
+ \bm\eps_D=
+ (\eps_{\rm norm},\eps_B,\eps_Q,\eps_{P^+},
+ \eps_{\rm current},\eps_{\rm ang},
+ \eps_{b_1},\eps_{\tagg},\eps_{\rm provenance}).
+\label{eq:nuclear-closure-vector}
+\end{equation}
+Each component has its own tolerance and uncertainty source.  A pass in one
+component cannot compensate a failure in another.
+
+\section{Nuclear inference, uncertainty, and falsifiability}
+\label{sec:inference}
+
+\subsection{Shared nuclear member}
+
+A nuclear member is
+\begin{align}
+ \mathfrak m_D=\bigl(&
+ \mathfrak m_N,
+ H_D,\mathfrak r_D,
+ J_D,\widehat\cO_D,
+ \Psi_D,
+ \text{Fock content},
+ \text{coherent order},
+ \notag\\
+ &\text{matching coefficients},
+ \text{subtraction cells},
+ \text{numerical realization}
+ \bigr).
+\label{eq:nuclear-member}
+\end{align}
+The same identifier propagates through every observable.  A wave-function
+choice cannot be varied while silently holding a current or partonic operator
+that was fitted only with another choice.
+
+\subsection{Parameter posterior}
+
+Let \(\theta_D\) contain nuclear EFT coefficients, matched partonic-operator
+coefficients, coherent-amplitude parameters, and supported compact-sector
+couplings.  The posterior is
+\begin{equation}
+ p(\theta_D,\delta_D\mid D_{\rm cal})
+ \propto
+ p(D_{\rm cal}\mid\theta_D,\delta_D)
+ p(\theta_D)p(\delta_D),
+\label{eq:nuclear-posterior}
+\end{equation}
+where \(\delta_D\) contains separately modeled EFT, Fock, regulator,
+matching, and numerical discrepancies.  The calibration set may include:
+\begin{itemize}
+\item binding energy and asymptotic \(S/D\) information;
+\item charge, magnetic, quadrupole, and selected elastic form-factor data;
+\item selected inclusive unpolarized and tensor observables;
+\item a restricted tagged data subset;
+\item diffractive or lattice information needed for coherent/matched
+      operators.
+\end{itemize}
+It must not include one free normalization and transverse width for every
+deuteron TMD.
+
+\subsection{Withheld predictions}
+
+Useful withheld families include:
+\begin{itemize}
+\item tagged tensor observables after calibrating only inclusive quantities;
+\item \(LT\) or \(TT\) TMDs after calibrating the \(LL\) tensor sector;
+\item deuteron gluon color/helicity channels after quark-sector calibration;
+\item form-factor or current moments not used to fit the wave function and
+      currents;
+\item compact-sector-sensitive observables after fitting only long-distance
+      data.
+\end{itemize}
+A failed withheld family revises the state, Hamiltonian, operator, matching,
+or discrepancy model.  It is not repaired by adding a coefficient directly
+to the failed TMD.
+
+\subsection{Uncertainty budget}
+
+The reported covariance separates:
+\begin{enumerate}
+\item nucleon microscopic posterior;
+\item nuclear parameter posterior;
+\item nuclear EFT truncation;
+\item regulator and basis truncation;
+\item current and partonic-operator truncation;
+\item nuclear Fock-sector truncation;
+\item coherent multiple-scattering and diffractive input;
+\item parton--nuclear overlap subtraction;
+\item TMD/GTMD matching and evolution;
+\item numerical integration and transform error.
+\end{enumerate}
+Alternative high-quality potentials are a controlled model family unless a
+common EFT posterior relates them.  Their envelope is not automatically a
+confidence interval.
+
+\subsection{Identifiability}
+
+For observables \(\cO_i\) and parameters \(\theta_a\), define
+\begin{equation}
+ J_{ia}=\frac{\partial\cO_i}{\partial\theta_a}.
+\label{eq:nuclear-sensitivity-jacobian}
+\end{equation}
+Posterior correlations, singular values of \(J\), Fisher information, and
+profile likelihoods diagnose whether elastic, inclusive, tagged, and TMD
+observables distinguish the proposed mechanisms.  A parameter direction that
+only rescales one named TMD has failed the shared-operator objective.
+
+\section{Computational realization and typed interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.27\textwidth}L{0.65\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{NuclearResolution} &
+Regulator, basis, EFT order, current/operator order, Fock content, coherent
+order, normalization, and scheme.\\
+\texttt{NuclearSectorId} &
+Typed \(NN\), \(NN\pi\), \(\Delta\Delta\), six-quark, compact, and other
+sectors with exact quantum numbers.\\
+\texttt{NuclearHamiltonian} &
+Hermitian block mass operator, sector-changing interactions, counterterms,
+and convergence metadata.\\
+\texttt{NuclearFockState} &
+Normalized spin-1 sector amplitudes, member identity, phase convention, and
+state ledgers.\\
+\texttt{LFDeuteronWavefunction} &
+Rest-frame interaction, \(S/D\) amplitudes, Jacobian, Melosh/rotation map,
+relativistic components, and current family.\\
+\texttt{NuclearRecoilMap} &
+External and active transfer, intrinsic initial/final coordinates, active
+slot, spectator policy, transfer partition, and Jacobian.\\
+\texttt{SpectralAmplitude} &
+Off-forward deuteron--nucleon helicity matrix and its irreducible and Wigner
+reductions.\\
+\texttt{MatchedNuclearOperator} &
+One-body, two-body, pion, Delta, compact, coherent, and transition blocks with
+complete operator identity.\\
+\texttt{DeuteronGTMDParent} &
+Full sector-summed amplitude-level parent with flavor, helicity, link/color,
+rank, transfer, scheme, and member identity.\\
+\texttt{CoherentKernel} &
+Diffractive helicity amplitudes, propagation phases, scattering order,
+Glauber/soft overlap, and factorization status.\\
+\texttt{PartialTraceMap} &
+Derived CP reduction with explicit amplitude embedding and unresolved
+subsystem.\\
+\texttt{TaggedObservable} &
+Spectator kinematics, spin density, pole variables, FSI status, and
+inclusive-sum rule.\\
+\texttt{NuclearLedger} &
+Normalization, charge, baryon, momentum, current, angular, tensor, tagged,
+and provenance residuals.\\
+\texttt{NuclearMemberStore} &
+Correlated nucleon+nuclear members and covariance-preserving observable
+ancestry.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Typed data flow}
+
+The computational chain is
+\begin{equation}
+\begin{aligned}
+ \texttt{NucleonParent}
+ &\longrightarrow \texttt{MatchedNuclearOperator}
+ \longrightarrow \texttt{NuclearFockState}\\
+ &\longrightarrow \texttt{DeuteronGTMDParent}
+ \longrightarrow \texttt{ReductionMap}
+ \longrightarrow \texttt{Observable}.
+\end{aligned}
+\label{eq:nuclear-data-flow}
+\end{equation}
+Every arrow validates coordinate, sector, operator, scheme, rank, member, and
+provenance compatibility.  Array-shape compatibility is insufficient.
+
+\subsection{Immutable cache keys}
+
+A deuteron-parent cache key contains at least
+\begin{equation}
+ \mathrm{key}=
+ \mathrm{hash}(
+ \mathfrak m_N,
+ \mathfrak m_D,
+ \mathfrak o_{a/D},
+ \mathfrak r_{\nuc},
+ x_D,\kT,\DT,
+ \text{reduction},
+ \text{code version}).
+\label{eq:nuclear-cache-key}
+\end{equation}
+Changing a wave function, current, matching coefficient, Wilson path, sector,
+or recoil convention invalidates the cache.
+
+\subsection{Sparse block structure}
+
+Selection rules determine zero blocks before numerical contraction.  Blocks
+are indexed by
+\begin{equation}
+ (\alpha,\beta,
+ \Lambda',\Lambda,
+ \lambda_N',\lambda_N,
+ J,\text{rank},
+ \text{isospin},\text{color},
+ \text{link},\text{member}).
+\label{eq:nuclear-block-index}
+\end{equation}
+A block absent by symmetry is not represented by a learned value constrained
+to be small.
+
+\subsection{Provenance and ancestry}
+
+Every final value supports the query
+\begin{equation}
+\begin{aligned}
+ \text{observable}
+ &\longleftarrow \text{reduction}
+ \longleftarrow \text{deuteron parent block}\\
+ &\longleftarrow \text{operator block + state sectors}
+ \longleftarrow \text{matching and microscopic members}.
+\end{aligned}
+\label{eq:nuclear-ancestry-query}
+\end{equation}
+The trace includes excluded alternatives and subtraction partners, not only
+active contributions.
+
+\section{Formal requirements and property-based tests}
+\label{sec:requirements-tests}
+
+\subsection{Stable requirement identifiers}
+
+\begin{longtable}{L{0.19\textwidth}L{0.71\textwidth}}
+\toprule
+Identifier & Requirement\\
+\midrule
+\endhead
+\texttt{V4.MATCH.001} & Nuclear Hamiltonian and operators share one matching
+and unitary convention.\\
+\texttt{V4.MATCH.002} & Eliminated sectors induce both interactions and
+operators.\\
+\texttt{V4.KIN.001} & \(\DT,\DNT,\pT,\kT,\RT,\bD,\bM\) remain distinct.\\
+\texttt{V4.KIN.002} & One-body spectator recoil passes exact physical and
+intrinsic closure.\\
+\texttt{V4.STATE.001} & All retained nuclear sectors share one normalization
+and conserved ledgers.\\
+\texttt{V4.STATE.002} & The \(NN\) state records its rest-to-LF map and
+current family.\\
+\texttt{V4.OP.001} & Every nuclear operator block has complete source/target
+sector and matching identity.\\
+\texttt{V4.OP.002} & Off-shell one-body and many-body terms transform
+covariantly.\\
+\texttt{V4.GTMD.001} & The deuteron parent is the full sector matrix element,
+not a post hoc sum of named TMDs.\\
+\texttt{V4.IA.001} & The IA convolution is derived from the spectator-preserving
+one-body block.\\
+\texttt{V4.SPIN.001} & Projection occurs after nuclear spin recoupling.\\
+\texttt{V4.CURR.001} & Currents satisfy charge, Ward, and angular-condition
+tests with the Hamiltonian.\\
+\texttt{V4.COH.001} & Polarized/tensor coherent kernels use helicity-resolved
+diffractive amplitudes.\\
+\texttt{V4.PION.001} & Internal and exchange pion regions are matched and
+subtracted once.\\
+\texttt{V4.COMP.001} & Compact sectors require explicit amplitudes and
+operators before nonzero central use.\\
+\texttt{V4.CP.001} & CP maps are derived only after a justified partial trace.\\
+\texttt{V4.TAG.001} & Tagged integration recovers inclusive IA and the pole
+residue is predicted.\\
+\texttt{V4.PROV.001} & Replacement, exclusion, matching, and subtraction
+relations are enforceable.\\
+\texttt{V4.CONV.001} & Observable convergence is reported along every nuclear
+truncation axis.\\
+\texttt{V4.PRED.001} & At least one nuclear observable family remains withheld
+from calibration.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Kinematic and state tests}
+
+Mandatory exact or tolerance-controlled tests include:
+\begin{enumerate}
+\item intrinsic and physical recoil closure;
+\item transfer reversal and unit Jacobian;
+\item wave-function normalization and exchange antisymmetry;
+\item baryon, charge, and plus-momentum ledgers;
+\item pure-S, \(D\to0\), and nonrelativistic Melosh limits;
+\item spin-1 irreducible reconstruction;
+\item Hermiticity of the spectral amplitude;
+\item positivity of the forward density without clipping;
+\item nuclear mass-operator Hermiticity and eigensolver residuals.
+\end{enumerate}
+
+\subsection{Operator and current tests}
+
+\begin{enumerate}
+\item operator source/target-sector compatibility;
+\item Hermitian-conjugate transition blocks;
+\item unitary/field-redefinition invariance of complete matrix elements;
+\item current conservation and charge normalization;
+\item angular-condition residual and extraction-prescription convergence;
+\item GTMD moment versus local-current agreement;
+\item one-body/two-body matching-order closure;
+\item rejection of incomplete gluon link/color identity.
+\end{enumerate}
+
+\subsection{Reduction tests}
+
+\begin{enumerate}
+\item full parent to IA reduction in the one-body limit;
+\item GTMD-to-TMD, GPD, PDF, form-factor, and current commuting squares;
+\item rank-aware Fourier transforms after nuclear composition;
+\item \(b_1\) and \(f_{1LL}\) convention adapter;
+\item proton/neutron and flavor traceability;
+\item tagged-to-inclusive sum rule;
+\item zero one-body gluon double-helicity-flip benchmark where applicable;
+\item link reversal after nuclear composition.
+\end{enumerate}
+
+\subsection{Coherence and provenance tests}
+
+\begin{enumerate}
+\item zero diffractive amplitude removes coherent shadowing;
+\item unpolarized diffraction cannot silently populate tensor channels;
+\item partonic/nuclear soft overlap is subtracted once;
+\item \(NN\pi\) internal/exchange pion duplication is rejected;
+\item explicit compact sector and integrated-out contact are mutually
+      exclusive without a matching cell;
+\item coherent interference is not replaced by a CP map;
+\item default composition contains exactly one representative of each
+      physical mechanism;
+\item deliberately duplicated mechanisms trigger a deterministic error
+      before numerical evaluation.
+\end{enumerate}
+
+\section{Analytic benchmark suite}
+\label{sec:benchmarks}
+
+\subsection{Benchmark A: scalar weak-binding two-body state}
+
+Use two distinguishable scalar constituents with normalized wave function
+\(\phi(y,\pT)\).  The off-forward density is
+\begin{equation}
+ \cS(y,\pT,\DT)
+ =\phi^*\!\left(y,\pT+\frac{1-y}{2}\DT\right)
+ \phi\!\left(y,\pT-\frac{1-y}{2}\DT\right).
+\label{eq:benchmark-scalar-density}
+\end{equation}
+It must satisfy Hermiticity, unit Jacobian, the forward density limit, charge
+normalization, and equality of the direct form-factor overlap with the
+integrated one-body GTMD.
+
+\subsection{Benchmark B: analytic S--D spin-1 model}
+
+Choose analytic radial functions \(u_0(k)\) and \(u_2(k)\) and construct
+\cref{eq:instant-sd-wave}.  The benchmark verifies:
+\begin{itemize}
+\item exact spin-1 normalization;
+\item \(SS,SD,DS,DD\) reconstruction;
+\item vanishing nonrelativistic tensor density at \(u_2=0\);
+\item linear response of the leading tensor signal to small \(u_2\);
+\item correct \(M=0,\pm1,\pm2\) irreducible components.
+\end{itemize}
+The analytic functions are validation only and cannot enter the central
+model as universal transverse profiles.
+
+\subsection{Benchmark C: one-body current and angular condition}
+
+Construct a covariant spin-1 current from three chosen form factors, generate
+all plus-current helicity amplitudes, and verify
+\cref{eq:angular-condition}.  Then remove one required current component and
+confirm a nonzero residual.  This distinguishes a correct extraction
+adapter from an incomplete current.
+
+\subsection{Benchmark D: unitary off-shell transformation}
+
+In a two-level nuclear model, apply a unitary transformation
+\(U=e^{i\epsilon S}\).  Verify to the declared order that
+\begin{equation}
+ \langle\Psi|\cO|\Psi\rangle
+ =\langle U\Psi|U\cO U^\dagger|U\Psi\rangle,
+\label{eq:benchmark-unitary-invariance}
+\end{equation}
+while the decomposition into one- and two-body terms changes.  Omitting the
+induced operator must fail.
+
+\subsection{Benchmark E: \texorpdfstring{\(NN\oplus NN\pi\)}{NN plus NNpi} model}
+
+Use
+\begin{equation}
+ |D\rangle=\sqrt{Z}|NN\rangle+\sqrt{1-Z}|NN\pi\rangle
+\label{eq:benchmark-two-sector-state}
+\end{equation}
+with a transition operator.  Test total normalization, momentum sharing,
+diagonal pion-active contribution, transition interference, and exact
+recovery of the integrated-out contact representation after matching.
+Enabling both representations must trigger the provenance guard.
+
+\subsection{Benchmark F: coherent double scattering}
+
+Use a two-state diffractive kernel with a known propagation phase.  The
+benchmark checks:
+\begin{itemize}
+\item zero coherent correction when either elementary amplitude vanishes;
+\item phase reversal under longitudinal-order interchange;
+\item distinct scalar and tensor projections from explicit helicity
+      amplitudes;
+\item failure of a copied unpolarized shadowing ratio to reproduce the tensor
+      result.
+\end{itemize}
+
+\subsection{Benchmark G: derived CP map}
+
+Construct an explicit amplitude embedding \(V\) and compare the partial-trace
+result with its Kraus representation.  Verify positivity and trace closure.
+Then retain a coherent sector superposition and show that tracing before the
+amplitudes are combined gives the wrong interference observable.
+
+\subsection{Benchmark H: tagged pole and inclusive recovery}
+
+Use an analytic two-body wave function with a known active-nucleon pole.
+Verify:
+\begin{enumerate}
+\item tagged integration equals inclusive IA;
+\item multiplying by the pole factor yields the prescribed residue;
+\item a regular FSI model does not alter the pole residue;
+\item tensor tagged combinations select the expected D-wave block.
+\end{enumerate}
+
+\subsection{Benchmark I: no-double-counting rejection}
+
+Build a composition plan containing:
+\begin{enumerate}
+\item a nucleon pion-cloud operator;
+\item an explicit nuclear pion sector;
+\item the required overlap subtraction.
+\end{enumerate}
+The three-term matched plan passes.  Removing the subtraction or adding a
+second scalar pion correction fails deterministically.  Equivalent tests are
+performed for compact/contact and coherent/scalar-response pairs.
+
+\section{Contract with Volume V: matching, evolution, and processes}
+\label{sec:volume-v-contract}
+
+\subsection{Exported deuteron boundary}
+
+For each parton species, link/color class, target projector, and common member,
+Volume~IV exports
+\begin{equation}
+ \mathfrak W_{a/D}^{(4)}=
+ \left(
+ W_{a/D,\even}^{[J,\gamma]},
+ W_{a/D,\odd}^{[J,\gamma]},
+ \mathfrak o_{a/D},
+ \mathfrak m_D,
+ \mathfrak L_D,
+ \mathfrak B_D,
+ \operatorname{Cov}_{\micro+\nuc}
+ \right),
+\label{eq:volume4-export}
+\end{equation}
+where \(\mathfrak L_D\) is the complete state/current/momentum/provenance
+ledger and \(\mathfrak B_D\) includes partonic and nuclear phase/soft overlap
+information.  No named scalar TMD is exported without its parent identity and
+ancestry.
+
+\subsection{Regulator-to-QCD matching}
+
+Volume~V constructs the declared QCD-scheme object
+\begin{equation}
+ \widetilde W_{a/D}^{\QCD,[\gamma]}
+ (x_D,\bM;\mu,\zeta)
+ =\cZ_{a,D}^{\LF\to\TMD}
+ (\bM;\mathfrak r_D,\mu,\zeta)
+ \otimes
+ \widetilde W_{a/D}^{(4),[\gamma]}
+ +\delta W_{a/D}^{\rm power}.
+\label{eq:deuteron-lf-to-tmd-matching}
+\end{equation}
+The matching coefficient includes any operator mixing and identifies which
+nuclear and nucleon regulator dependences cancel.  It does not replace the
+nuclear matrix element by an external deuteron fit.
+
+\subsection{When evolution commutes with nuclear composition}
+
+At leading power, the Collins--Soper evolution kernel depends on the parton
+color representation and not on target polarization.  Let
+\(\cU_a(\bM;\mu,\zeta;\mu_0,\zeta_0)\) be a linear multiplicative evolution
+operator in \(\bM\) space.  For a one-body nuclear map \(\cN_{\IA}\) that
+contains no additional \(\mu,\zeta\) dependence,
+\begin{equation}
+ \cU_a\,\cN_{\IA}[\widetilde W_{a/N}]
+ =\cN_{\IA}[\cU_a\widetilde W_{a/N}].
+\label{eq:cs-evolution-commutes-ia}
+\end{equation}
+This equality is conditional on a common scheme, scales, link class, soft
+subtraction, and parton representation.  It need not hold term by term for
+operator mixing, two-body matching coefficients, coherent kernels, or
+subtractions.
+
+\begin{requirement}[Evolution commuting square]
+\label{req:evolution-commuting-square}
+For every nuclear operator class, Volume~V must either demonstrate the
+commuting square between nuclear composition and evolution/matching or retain
+an explicit noncommuting correction.  The target independence of the
+Collins--Soper kernel is not permission to erase nuclear operator mixing.
+\end{requirement}
+
+\subsection{Collinear evolution and hadronic sectors}
+
+The full collinear boundary includes quark, antiquark, and gluon content in
+all nuclear sectors.  Nonsinglet, singlet, and quark--gluon evolution act on
+the matched partonic vector.  Pion or Delta partons are not evolved as an
+additional copy after they have already been matched into the deuteron
+quark/gluon distributions.  The hadronic-sector ledger remains provenance;
+the evolved QCD object is the sum defined by the matched operator.
+
+\subsection{Process assembly}
+
+A process object consumes \cref{eq:volume4-export} only if its factorization
+status permits the requested link/color structure.  The observable has the
+schematic form
+\begin{equation}
+ \frac{\dd\sigma}{\dd\mathcal P}
+ =W_{\rm TMD}(\qT,Q)
+ +Y(\qT,Q),
+ \qquad
+ Y=\sigma_{\rm FO}-[W_{\rm TMD}]_{\rm expanded\ to\ FO},
+\label{eq:volume5-wy-contract}
+\end{equation}
+with explicit hard, fragmentation, color, and target-polarization projectors.
+Nuclear high-momentum structure is not tuned to reproduce the fixed-order
+large-\(q_T\) tail.
+
+\subsection{Resolved evolution and closure}
+
+Evolution must preserve the resolved decomposition
+\begin{equation}
+ \{
+ p\text{-in-}D,
+ n\text{-in-}D,
+ p+n,
+ p-n,
+ \text{many-body correction},
+ \text{total}
+ \}
+\label{eq:resolved-evolution-components}
+\end{equation}
+for every flavor, target channel, rank, link/color class, mechanism, and
+correlated member.  Closure after evolution is tested against the evolved
+total, not assumed from the unevolved boundary.
+
+\section{Staged C4 implementation program}
+\label{sec:c4-program}
+
+\subsection{Relation to the C3 pilot}
+
+C3 constructs a validation-only zero-skewness nucleon overlap pilot and keeps
+it disconnected from the accepted central artifacts until its analytic gates
+pass.  C4 must consume only a C3 object that satisfies the complete Volume~II
+contract.  It must not connect the accepted phenomenological nucleon tables to
+a new nuclear state and call the result microscopic.
+
+The exact repository-specific C4 prompt should be written after the C3 report
+is available.  The formal work packages below define the intended order.
+
+\subsection{C4A: nuclear coordinates and two-body recoil}
+
+Implement:
+\begin{itemize}
+\item deuteron incoming/outgoing momentum fibers;
+\item \(x_D\leftrightarrow x_N\) adapter;
+\item two-body intrinsic configurations and measures;
+\item spectator-preserving recoil from
+      \cref{eq:active-intrinsic-recoil,eq:spectator-intrinsic-recoil};
+\item transfer-partition objects for two-body operators;
+\item exact closure, inverse, Jacobian, and mismatch tests.
+\end{itemize}
+No wave function or GTMD is introduced until this layer passes.
+
+\subsection{C4B: spin-1 light-front wave function and spectral amplitude}
+
+Implement a validation-only \(S/D\) state, followed by one declared realistic
+wave-function adapter.  Required outputs are:
+\begin{itemize}
+\item normalized helicity amplitudes;
+\item rest-to-light-front Jacobian and spin rotations;
+\item irreducible \(K=0,1,2\) density components;
+\item off-forward spectral amplitude and nuclear Wigner transform;
+\item \(SS,SD,DS,DD\) ancestry;
+\item pure-S, nonrelativistic, Hermiticity, and positivity tests.
+\end{itemize}
+The central accepted boundary remains disconnected.
+
+\subsection{C4C: impulse common-parent pilot}
+
+Compose the C3 nucleon parent with the C4B spectral amplitude using the native
+typed reduction/provenance infrastructure.  Validate:
+\begin{itemize}
+\item \cref{eq:ia-gtmd-convolution} at nonzero \(\DT\);
+\item TMD, GPD, PDF, and current reductions;
+\item proton/neutron and flavor traceability;
+\item spin recoupling before projection;
+\item rank-aware Fourier behavior;
+\item exact isolation from the accepted production root.
+\end{itemize}
+
+\subsection{C4D: local currents, form factors, \texorpdfstring{\(b_1\)}{b1}, and tagging}
+
+Add the minimal consistent current and projector layer required to test:
+\begin{itemize}
+\item charge, magnetic, and quadrupole normalization;
+\item the angular condition;
+\item GTMD moment/current agreement;
+\item the tensor PDF and \(b_1\) relation;
+\item tagged-to-inclusive closure and an analytic pole benchmark.
+\end{itemize}
+This package is still a pilot and does not fit new nuclear coefficients.
+
+\subsection{C4E: matched two-sector and pion pilot}
+
+Introduce an analytic \(NN\oplus NN\pi\) model with one transition operator.
+Demonstrate:
+\begin{itemize}
+\item common normalization and plus-momentum closure;
+\item pion-active and nucleon-active operator blocks;
+\item transition interference;
+\item explicit-pion versus integrated-out-contact equivalence;
+\item deterministic rejection of double counting.
+\end{itemize}
+
+\subsection{C4F: coherent amplitude and CP-reduction pilot}
+
+Implement a two-step helicity-resolved coherent kernel and a separately
+derived partial-trace CP map.  Prove that:
+\begin{itemize}
+\item the coherent tensor result is not a copied unpolarized ratio;
+\item zero elementary diffraction removes the correction;
+\item partonic/nuclear soft overlap is represented explicitly;
+\item tracing before coherent amplitudes are combined fails the benchmark;
+\item the final provenance and closure manifests are deterministic.
+\end{itemize}
+
+\subsection{Production isolation}
+
+Until all C4 analytic and current gates pass:
+\begin{enumerate}
+\item no C4 object is reachable from the accepted production composition
+      root;
+\item the 216 accepted C2 reductions remain unchanged;
+\item authoritative parent/correlator artifacts remain byte-identical;
+\item pilot parameters are labeled \texttt{VALIDATION\_ONLY};
+\item the pilot cannot be selected by a production configuration.
+\end{enumerate}
+A later work package may authorize a physics comparison, but not silent
+replacement.
+
+\section{Acceptance criteria and scientific status}
+\label{sec:acceptance}
+
+\subsection{Volume IV formal acceptance}
+
+The formalism is internally complete only when:
+\begin{enumerate}
+\item The quark--gluon-to-nuclear hierarchy, model space, regulator, and
+      matching order are declared.
+\item Nuclear Hamiltonian, currents, and partonic operators transform as one
+      matched family.
+\item The spin-1 state contains normalized \(NN\) and every supported
+      additional sector with one charge and momentum ledger.
+\item The \(NN\) light-front wave function has an explicit Jacobian,
+      spin-rotation convention, relativistic-component status, and current
+      family.
+\item The one-body recoil map is exact and two-body transfer sharing is
+      operator defined.
+\item The off-forward spectral amplitude is a full deuteron--nucleon helicity
+      matrix and satisfies Hermiticity and forward positivity.
+\item The deuteron parent is evaluated as
+      \cref{eq:full-deuteron-parent} with sector-diagonal and allowed
+      transition blocks.
+\item Impulse approximation is derived from the full parent and its TMD, GPD,
+      PDF, form-factor, and current reductions commute within stated errors.
+\item Spin-1 projections occur after nucleon spin recoupling, with exact
+      convention adapters.
+\item Elastic current normalization and the angular condition pass with
+      currents consistent with the Hamiltonian.
+\item \(b_1\), tensor PDFs, and conditional tensor sum rules carry their
+      exact assumptions.
+\item Coherent shadowing uses helicity-resolved amplitudes; tensor channels are
+      not copied from unpolarized diffraction.
+\item The partonic Wilson/soft sector and nuclear coherent sector have an
+      explicit overlap subtraction when required.
+\item The \(NN\pi\) sector has a spin-resolved amplitude, active-pion and
+      transition operators, and a pion double-counting subtraction.
+\item \(\Delta\Delta\), compact, and hidden-color sectors remain zero-centered
+      unless their full amplitude/operator requirements are met.
+\item CP maps are derived by justified partial traces and never replace
+      unresolved coherence.
+\item Tagged integration closes to inclusive IA and the pole residue is
+      predicted by the same spectral amplitude.
+\item State, current, partonic, tensor, tagged, and provenance ledgers pass
+      separately.
+\item Observable convergence is demonstrated along all retained nuclear
+      truncation axes.
+\item At least one nontrivial deuteron observable family is withheld from
+      calibration and predicted by the shared member ensemble.
+\end{enumerate}
+
+\subsection{Predictive status}
+
+Completion of Volume~IV supplies a matched spin-1 nuclear parent but does not
+alone establish a complete prediction.  The model becomes genuinely
+predictive only after:
+\begin{itemize}
+\item the nucleon common state and Wilson dynamics have passed Volumes~I--III;
+\item the nuclear hierarchy passes the acceptance criteria above;
+\item Volume~V matches the full parent to one QCD scheme, evolves all ranks and
+      partonic sectors, and constructs valid process kernels;
+\item correlated calibration and withheld validation succeed without
+      TMD-specific repair parameters.
+\end{itemize}
+
+\subsection{Recommended foundation}
+
+The adopted nuclear foundation is
+\begin{quote}
+\emph{a regulated, spin-resolved nuclear light-front EFT matched to a common
+quark--gluon nucleon theory, with one normalized deuteron Fock state,
+Hamiltonian-consistent currents and partonic operators, exact typed recoil,
+amplitude-level coherent and sector interference, derived reduced channels,
+and observable-level convergence and falsifiability.}
+\end{quote}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The central result of this volume is that nuclear composition is not a final
+smearing step.  It is a second microscopic layer with its own Hilbert space,
+Hamiltonian, currents, operator matching, coherence, and truncation theory.
+The deuteron GTMD is therefore not a nucleon TMD multiplied by a tensor factor
+or supplemented by independently normalized nuclear corrections.  It is the
+matrix element of a matched quark/gluon operator in one normalized spin-1
+state.
+
+The weak-binding \(NN\) component supplies a controlled and highly constrained
+starting point.  Its exact light-front recoil map, \(S/D\) interference,
+Melosh rotations, spin-density matrix, elastic currents, tagged observables,
+and impulse GTMD reductions form a stringent validation system.  The same
+formalism shows where the impulse approximation is insufficient: coherent
+small-\(x\) scattering, two-body currents, pion and Delta sectors,
+short-distance contacts, and compact color structure require new operator
+blocks or explicit state components.  Their contributions are correlated by
+matching and cannot be introduced as unrelated functions.
+
+Volume~IV also resolves several recurrent ambiguities.  Active-nucleon
+transfer is distinct from the intrinsic deuteron wave-function shift.
+Off-shell one-body corrections are representation dependent and meaningful
+only with their compensating many-body operators.  Completely positive maps
+are reduced descriptions derived after a trace, not substitutes for coherent
+amplitudes.  Partonic Wilson transport and nuclear rescattering are separate
+objects whose overlap must be subtracted.  Pion and compact sectors may be
+represented explicitly or through induced operators, but not both without a
+matching cell.
+
+The next formal layer is Volume~V: common regulator-to-QCD matching,
+rank-aware evolution, collinear mixing, and process-level \(W+Y\) assembly.
+The immediate computational task, after the C3 report, is a repository-specific
+C4 prompt implementing the isolated nuclear recoil, spin-1 wave-function,
+spectral-amplitude, and impulse-parent pilot defined here.
+
+\appendix
+
+\section{Derivation of the spectator-preserving recoil map}
+\label{app:recoil-derivation}
+
+Let a two-body state of total transverse momentum \(P_T\) have physical
+constituent momenta
+\begin{equation}
+ p_{1T}=yP_T+\pT,
+ \qquad
+ p_{2T}=(1-y)P_T-\pT.
+\label{eq:two-body-physical-momenta}
+\end{equation}
+In the symmetric frame,
+\(
+ P_{iT}=-\DT/2
+\) and
+\(
+ P_{fT}=+\DT/2
+\).
+Demand that the spectator physical momentum be unchanged:
+\begin{equation}
+ p_{2T}^{\rm in}=p_{2T}^{\rm out}=-\pT.
+\label{eq:spectator-fixed-condition}
+\end{equation}
+Solving
+\begin{align}
+ -\pT&=(1-y)\left(-\frac\DT2\right)+\bm p_{2T}^{\rm in},
+\notag\\
+ -\pT&=(1-y)\left(+\frac\DT2\right)+\bm p_{2T}^{\rm out}
+\end{align}
+gives \cref{eq:spectator-intrinsic-recoil}.  Intrinsic closure then fixes the
+active arguments in \cref{eq:active-intrinsic-recoil}.  The active physical
+momenta follow as
+\begin{align}
+ p_{1T}^{\rm in}
+ &=y\left(-\frac\DT2\right)
+ +\pT-\frac{1-y}{2}\DT
+ =\pT-\frac\DT2,
+\notag\\
+ p_{1T}^{\rm out}
+ &=y\left(+\frac\DT2\right)
+ +\pT+\frac{1-y}{2}\DT
+ =\pT+\frac\DT2.
+\end{align}
+Thus \(p_{1T}^{\rm out}-p_{1T}^{\rm in}=\DT\).  The transformation is a
+translation of the intrinsic variables and has unit Jacobian.
+
+\section{Spin-1 helicity and tensor adapters}
+\label{app:spin-adapters}
+
+For helicity-diagonal quantities define
+\begin{align}
+ F_U&=\frac13(F_++F_0+F_-),
+\label{eq:FU-adapter}\\
+ F_L&=\frac12(F_+-F_-),
+\label{eq:FL-adapter}\\
+ \delta_TF&=F_0-\frac12(F_++F_-).
+\label{eq:deltaT-adapter}
+\end{align}
+The inverse is
+\begin{align}
+ F_0&=F_U+\frac23\delta_TF,
+\label{eq:F0-inverse}\\
+ F_+&=F_U+F_L-\frac13\delta_TF,
+\label{eq:Fplus-inverse}\\
+ F_-&=F_U-F_L-\frac13\delta_TF.
+\label{eq:Fminus-inverse}
+\end{align}
+These relations are independent of the named \(S_{LL}\) convention.  The
+project adapter \(f_{1LL}=-(2/3)\delta_Tf_1\) is applied afterward.
+
+For a complete matrix, use the irreducible basis in
+\cref{eq:spin1-irrep-basis}.  A real Cartesian basis is obtained by
+\begin{align}
+ T_{K,M}^{c}&=\frac{T_M^{(K)}+(-1)^M T_{-M}^{(K)}}{\sqrt2},
+\notag\\
+ T_{K,M}^{s}&=\frac{T_M^{(K)}-(-1)^M T_{-M}^{(K)}}{i\sqrt2},
+ \qquad M>0,
+\label{eq:real-spherical-adapter}
+\end{align}
+plus \(T_0^{(K)}\).  The mapping to \(L,T_x,T_y,LL,LT_x,LT_y,TT_x,TT_y\)
+is stored as an invertible matrix and tested by Gram reconstruction.
+
+\section{Unitary redistribution of one- and two-body operators}
+\label{app:unitary-redistribution}
+
+Let
+\begin{equation}
+ U=e^{i\epsilon S},
+ \qquad S=S^\dagger.
+\label{eq:unitary-small-transform}
+\end{equation}
+To first order,
+\begin{align}
+ H'&=H+i\epsilon[S,H]+\cO(\epsilon^2),
+\notag\\
+ \cO'&=\cO+i\epsilon[S,\cO]+\cO(\epsilon^2),
+\notag\\
+ |\Psi'\rangle&=|\Psi\rangle+i\epsilon S|\Psi\rangle+\cO(\epsilon^2).
+\label{eq:unitary-first-order}
+\end{align}
+Then
+\begin{align}
+ \langle\Psi'|\cO'|\Psi'\rangle
+ ={}&\langle\Psi|\cO|\Psi\rangle
+ +i\epsilon\langle\Psi|[S,\cO]|\Psi\rangle
+ \notag\\
+ &-i\epsilon\langle\Psi|S\cO|\Psi\rangle
+ +i\epsilon\langle\Psi|\cO S|\Psi\rangle
+ +\cO(\epsilon^2)
+\notag\\
+ ={}&\langle\Psi|\cO|\Psi\rangle+\cO(\epsilon^2).
+\label{eq:unitary-cancellation}
+\end{align}
+If \(S\) mixes one- and two-body sectors, the commutator changes the apparent
+body order of \(\cO\).  Keeping the transformed state but dropping the
+induced term violates \cref{eq:unitary-cancellation} and creates a spurious
+off-shell dependence.
+
+\section{Machine-readable schemas}
+\label{app:schemas}
+
+\subsection{Nuclear member record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume4.nuclear_member.v1",
+  "nucleon_member_id": "...",
+  "nuclear_hamiltonian_id": "...",
+  "nuclear_resolution_id": "...",
+  "current_family_id": "...",
+  "partonic_operator_family_id": "...",
+  "fock_sector_ids": ["NN", "NNPI", "DELTA_DELTA", "SIX_QUARK"],
+  "matching_record_ids": ["..."],
+  "subtraction_cell_ids": ["..."],
+  "coherent_kernel_id": "...",
+  "numerical_realization_id": "...",
+  "provenance_node": "..."
+}
+\end{verbatim}
+
+\subsection{Nuclear recoil record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume4.nuclear_recoil.v1",
+  "incoming_deuteron_fiber": "...",
+  "outgoing_deuteron_fiber": "...",
+  "external_delta_t": [0.0, 0.0],
+  "active_nucleon_delta_t": [0.0, 0.0],
+  "transfer_partition_t": null,
+  "y": 0.5,
+  "p_t": [0.0, 0.0],
+  "active_slot": 0,
+  "spectator_policy": "PRESERVED",
+  "intrinsic_in": ["..."],
+  "intrinsic_out": ["..."],
+  "jacobian_id": "...",
+  "convention_version": "V4.KIN.002"
+}
+\end{verbatim}
+
+\subsection{Matched nuclear operator record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume4.matched_nuclear_operator.v1",
+  "operator_id": "...",
+  "parton_species": "QUARK|ANTIQUARK|GLUON",
+  "projection_id": "...",
+  "source_sector": "NN",
+  "target_sector": "NN",
+  "body_order": "ONE_BODY|TWO_BODY|PION|DELTA|SHORT|COHERENT|TRANSITION",
+  "active_constituent": "PROTON|NEUTRON|PION|DELTA|COMPACT",
+  "wilson_path_id": "...",
+  "gluon_link_pair_id": "...",
+  "gluon_color_class": "F_TYPE|D_TYPE|NOT_APPLICABLE",
+  "nuclear_recoil_id": "...",
+  "matching_scale": "...",
+  "regulator_id": "...",
+  "scheme_id": "...",
+  "member_id": "...",
+  "subtraction_partner_ids": ["..."],
+  "provenance_node": "..."
+}
+\end{verbatim}
+
+\subsection{Deuteron parent record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume4.deuteron_gtmd_parent.v1",
+  "operator_id": "...",
+  "nuclear_member_id": "...",
+  "x_coordinate": "X_D",
+  "x": 0.1,
+  "k_t": [0.0, 0.0],
+  "delta_t": [0.0, 0.0],
+  "target_helicity_matrix": "...",
+  "parton_helicity_matrix": "...",
+  "sector_block_contributions": ["..."],
+  "reduction_capabilities": ["TMD", "WIGNER", "GPD", "PDF", "CURRENT"],
+  "closure_ledger_id": "...",
+  "provenance_root": "...",
+  "status": "VALIDATION_ONLY|AUTHORITATIVE"
+}
+\end{verbatim}
+
+\subsection{Nuclear closure record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume4.nuclear_closure.v1",
+  "member_id": "...",
+  "normalization_residual": 0.0,
+  "baryon_residual": 0.0,
+  "charge_residual": 0.0,
+  "hadronic_momentum_residual": 0.0,
+  "partonic_momentum_residual": 0.0,
+  "current_residual": 0.0,
+  "angular_condition_residual": 0.0,
+  "b1_residual": 0.0,
+  "tagged_inclusive_residual": 0.0,
+  "provenance_residual": 0.0,
+  "tolerances": {"...": 0.0},
+  "status": "PASS|FAIL"
+}
+\end{verbatim}
+
+\section{Compact acceptance checklist}
+\label{app:checklist}
+
+Before a Volume~IV result is used in matching, evolution, or inference, answer:
+\begin{enumerate}
+\item Are the nuclear Hamiltonian, currents, and partonic operators one matched
+      family?
+\item Is the deuteron state normalized across all retained sectors?
+\item Are external transfer, active-nucleon transfer, intrinsic recoil, and
+      partonic momentum distinct and validated?
+\item Is the rest-to-light-front wave-function map explicit?
+\item Does the spectral amplitude retain deuteron and nucleon helicities?
+\item Is every operator block typed by source/target sector and body order?
+\item Is the full deuteron parent evaluated before mechanism or named-TMD
+      projection?
+\item Do TMD, GPD, PDF, current, and form-factor reductions commute within
+      reported errors?
+\item Do charge, momentum, elastic, angular, tensor, and tagged ledgers pass?
+\item Are off-shell and many-body terms representation covariant?
+\item Are coherent tensor amplitudes calculated rather than copied from an
+      unpolarized ratio?
+\item Are partonic and nuclear soft/Glauber overlaps subtracted once?
+\item Is the \(NN\pi\) sector spin resolved and pion double counting excluded?
+\item Do compact sectors have complete amplitudes and operators before nonzero
+      central use?
+\item Are CP maps derived only after a justified trace?
+\item Does the provenance graph reject every duplicate representation?
+\item Are all nuclear truncation axes reported separately?
+\item Is at least one deuteron observable family genuinely withheld?
+\end{enumerate}
+A negative answer blocks authoritative use and identifies the next physics,
+matching, or computational task.
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev.\ Mod.\ Phys.\ \textbf{21}, 392 (1949).
+
+\bibitem{KeisterPolyzou1991}
+B.~D.~Keister and W.~N.~Polyzou,
+``Relativistic Hamiltonian dynamics in nuclear and particle physics,''
+Adv.\ Nucl.\ Phys.\ \textbf{20}, 225 (1991).
+
+\bibitem{Carbonell1998}
+J.~Carbonell, B.~Desplanques, V.~A.~Karmanov, and J.-F.~Mathiot,
+``Explicitly covariant light-front dynamics and relativistic few-body
+systems,''
+Phys.\ Rept.\ \textbf{300}, 215 (1998), arXiv:nucl-th/9804029.
+
+\bibitem{ChungCoesterKeisterPolyzou1988}
+P.~L.~Chung, F.~Coester, B.~D.~Keister, and W.~N.~Polyzou,
+``Hamiltonian light-front dynamics of elastic electron--deuteron scattering,''
+Phys.\ Rev.\ C \textbf{37}, 2000 (1988).
+
+\bibitem{CookeMiller2002}
+J.~R.~Cooke and G.~A.~Miller,
+``Deuteron binding energies and form factors from light-front Hamiltonian
+field theory,''
+Phys.\ Rev.\ C \textbf{66}, 034002 (2002), arXiv:nucl-th/0112037.
+
+\bibitem{Wiringa1995}
+R.~B.~Wiringa, V.~G.~J.~Stoks, and R.~Schiavilla,
+``Accurate nucleon--nucleon potential with charge-independence breaking,''
+Phys.\ Rev.\ C \textbf{51}, 38 (1995), arXiv:nucl-th/9408016.
+
+\bibitem{Machleidt2001}
+R.~Machleidt,
+``The high-precision, charge-dependent Bonn nucleon--nucleon potential,''
+Phys.\ Rev.\ C \textbf{63}, 024001 (2001), arXiv:nucl-th/0006014.
+
+\bibitem{Piarulli2016}
+M.~Piarulli et al.,
+``Local chiral potentials and the structure of light nuclei,''
+Phys.\ Rev.\ C \textbf{94}, 054007 (2016), arXiv:1606.06335.
+
+\bibitem{Krebs2020}
+H.~Krebs,
+``Nuclear currents in chiral effective field theory,''
+Eur.\ Phys.\ J.\ A \textbf{56}, 234 (2020), arXiv:2008.00974.
+
+\bibitem{Schiavilla2018}
+R.~Schiavilla et al.,
+``Local chiral interactions and magnetic structure of few-nucleon systems,''
+Phys.\ Rev.\ C \textbf{99}, 034005 (2019), arXiv:1809.10180.
+
+\bibitem{FurnstahlHammerTirfessa2001}
+R.~J.~Furnstahl, H.-W.~Hammer, and N.~Tirfessa,
+``Field redefinitions at finite density,''
+Nucl.\ Phys.\ A \textbf{689}, 846 (2001), arXiv:nucl-th/0010078.
+
+\bibitem{CanoPire2002}
+F.~Cano and B.~Pire,
+``Deeply virtual Compton scattering on spin-1 nuclei,''
+arXiv:hep-ph/0211444.
+
+\bibitem{CosynPire2018}
+W.~Cosyn and B.~Pire,
+``Transversity generalized parton distributions for the deuteron,''
+Phys.\ Rev.\ D \textbf{98}, 074020 (2018), arXiv:1806.01177.
+
+\bibitem{CosynPire2019}
+W.~Cosyn and B.~Pire,
+``Deuteron helicity-flip generalized parton distributions in a convolution
+model,''
+arXiv:1902.03681.
+
+\bibitem{HoodbhoyJaffeManohar1989}
+P.~Hoodbhoy, R.~L.~Jaffe, and A.~Manohar,
+``Novel effects in deep-inelastic scattering from spin-one hadrons,''
+Nucl.\ Phys.\ B \textbf{312}, 571 (1989).
+
+\bibitem{HERMES2005}
+A.~Airapetian et al.\ (HERMES Collaboration),
+``First measurement of the tensor structure function \(b_1\) of the
+deuteron,''
+Phys.\ Rev.\ Lett.\ \textbf{95}, 242001 (2005), arXiv:hep-ex/0506018.
+
+\bibitem{CosynDongKumanoSargsian2017}
+W.~Cosyn, Y.-B.~Dong, S.~Kumano, and M.~Sargsian,
+``Tensor-polarized structure function \(b_1\) in the standard convolution
+description of the deuteron,''
+Phys.\ Rev.\ D \textbf{95}, 074036 (2017), arXiv:1702.05337.
+
+\bibitem{Kumano2014}
+S.~Kumano,
+``Tensor-polarized structure functions: Tensor structure of deuteron in the
+2020s,''
+J.\ Phys.\ Conf.\ Ser.\ \textbf{543}, 012001 (2014), arXiv:1407.3852.
+
+\bibitem{KumanoSong2021}
+S.~Kumano and Q.-T.~Song,
+``Twist-2 relation and sum rule for tensor-polarized parton distribution
+functions of spin-1 hadrons,''
+JHEP \textbf{09}, 141 (2021), arXiv:2106.15849.
+
+\bibitem{FrankfurtGuzeyStrikman2012}
+L.~Frankfurt, V.~Guzey, and M.~Strikman,
+``Leading twist nuclear shadowing phenomena in hard processes with nuclei,''
+Phys.\ Rept.\ \textbf{512}, 255 (2012), arXiv:1106.2091.
+
+\bibitem{Miller2014}
+G.~A.~Miller,
+``Pionic and hidden-color, six-quark contributions to the deuteron \(b_1\)
+structure function,''
+Phys.\ Rev.\ C \textbf{89}, 045203 (2014), arXiv:1311.4561.
+
+\bibitem{MillerHiddenColor2014}
+G.~A.~Miller,
+``Hidden color and the \(b_1\) structure function of the deuteron,''
+arXiv:1412.1864.
+
+\bibitem{NeffFeldmeier2016}
+T.~Neff and H.~Feldmeier,
+``The Wigner function and short-range correlations in the deuteron,''
+arXiv:1610.04066.
+
+\bibitem{CosynSargsianWeiss2016}
+W.~Cosyn, M.~Sargsian, and C.~Weiss,
+``Tagged spectator DIS on a polarized spin-1 target,''
+PoS \textbf{DIS2016}, 210 (2016), arXiv:1609.01970.
+
+\bibitem{CosynWeiss2020}
+W.~Cosyn and C.~Weiss,
+``Polarized electron--deuteron deep-inelastic scattering with spectator
+nucleon tagging,''
+Phys.\ Rev.\ C \textbf{102}, 065204 (2020), arXiv:2006.03033.
+
+\bibitem{CosynWeiss2026I}
+W.~Cosyn and C.~Weiss,
+``Semi-inclusive deep-inelastic scattering on a polarized spin-1 target. I.
+Cross section and spin observables,''
+arXiv:2603.23699 (2026).
+
+\bibitem{CosynWeiss2026II}
+W.~Cosyn and C.~Weiss,
+``Semi-inclusive deep-inelastic scattering on a polarized spin-1 target. II.
+Deuteron and spectator nucleon tagging,''
+arXiv:2603.23700 (2026).
+
+\bibitem{CaoEtAl2026}
+X.~Cao, S.~Cheng, Y.~Duan, Y.~Li, S.~Xu, and X.~Zhao,
+``Non-perturbative flavor asymmetry in the nucleon and deuteron: The
+light-front Hamiltonian effective field theory approach,''
+arXiv:2601.13567 (2026).
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000), arXiv:hep-ph/0007120.
+
+\bibitem{KumanoSongTMD2021}
+S.~Kumano and Q.-T.~Song,
+``Transverse-momentum-dependent parton distribution functions for spin-1
+hadrons,''
+Phys.\ Rev.\ D \textbf{103}, 014025 (2021), arXiv:2011.08583.
+
+\bibitem{Boer2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson-loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{Cotogno2017}
+S.~Cotogno, T.~van Daal, and P.~J.~Mulders,
+``Positivity bounds on gluon TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{11}, 185 (2017), arXiv:1709.07827.
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{EchevarriaGTMD2016}
+M.~G.~Echevarria, A.~Idilbi, K.~Kanazawa, C.~Lorc\'e, A.~Metz,
+B.~Pasquini, and M.~Schlegel,
+``Proper definition and evolution of generalized transverse momentum
+distributions,''
+Phys.\ Lett.\ B \textbf{759}, 336 (2016), arXiv:1602.06953.
+
+\end{thebibliography}
+
+\end{document}

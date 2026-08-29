@@ -1,0 +1,150 @@
+{
+  "package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "physical": false,
+  "plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "record": [
+    {
+      "D_x": "kT^2+x*lambda^2+(1-x)^2*m^2",
+      "coefficient": "alpha_s*C_F/(2*pi^2)",
+      "count_once": true,
+      "distribution_id": "JMY_FIG2A_REGULAR",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "(1-x)*[1/D_x-2*x*m^2/D_x^2]",
+      "owner_id": "DR.qq",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:436-453 Eq.(real-no-link)",
+      "subtraction_point": null,
+      "support": "regular",
+      "test_action": "integral_0^1 dx kernel(x)*phi(x)",
+      "variable": "x"
+    },
+    {
+      "coefficient": "alpha_s*C_F/pi^2",
+      "constant_test": 0,
+      "count_once": true,
+      "distribution_id": "JMY_FIG2B_PLUS",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "x/D_x",
+      "owner_id": "DR.qv",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:455-476",
+      "subtraction_point": 1,
+      "support": "plus",
+      "test_action": "integral_0^1 dx x/D_x*[phi(x)-phi(1)]",
+      "variable": "x"
+    },
+    {
+      "coefficient": "alpha_s*C_F/(2*pi^2)",
+      "count_once": true,
+      "distribution_id": "JMY_FIG2B_ENDPOINT",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "ln(zeta^2/(kT^2+lambda^2))/(kT^2+lambda^2)",
+      "owner_id": "DR.qv",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:467-476",
+      "subtraction_point": 1,
+      "support": "delta(1-x)",
+      "test_action": "kernel*phi(1)",
+      "variable": "x"
+    },
+    {
+      "coefficient": "-alpha_s*C_F/(2*pi^2)",
+      "count_once": true,
+      "distribution_id": "JMY_FIG2C_ENDPOINT",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "1/(kT^2+lambda^2)",
+      "limit_order": "zeta->infinity at fixed kT; not uniform in kT",
+      "owner_id": "DR.vv",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:478-497",
+      "subtraction_point": 1,
+      "support": "delta(1-x)",
+      "test_action": "kernel*phi(1)",
+      "variable": "x"
+    },
+    {
+      "D_x": "kT^2+x*lambda^2+(1-x)^2*m^2",
+      "coefficient": "alpha_s*C_F/(2*pi^2)",
+      "count_once": true,
+      "crossing": "qhat(z,P_T)=z^-1 q(1/z,P_T/z), exact one-loop source crossing",
+      "crossing_jacobian_d_dimensional": "z^(-2+2epsilon)",
+      "distribution_id": "JMY_CROSSED_FIG2A_REGULAR",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "(1-x)*[1/D_x-2*x*m^2/D_x^2]",
+      "owner_id": "FR.qq",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:840-869 plus parent locator hep-ph/0404183v1 sdisfac.tex:436-453 Eq.(real-no-link)",
+      "subtraction_point": null,
+      "support": "regular",
+      "test_action": "integral_0^1 dx kernel(x)*phi(x)",
+      "variable": "z"
+    },
+    {
+      "coefficient": "alpha_s*C_F/pi^2",
+      "constant_test": 0,
+      "count_once": true,
+      "crossing": "qhat(z,P_T)=z^-1 q(1/z,P_T/z), exact one-loop source crossing",
+      "crossing_jacobian_d_dimensional": "z^(-2+2epsilon)",
+      "distribution_id": "JMY_CROSSED_FIG2B_PLUS",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "x/D_x",
+      "owner_id": "FR.qv",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:840-869 plus parent locator hep-ph/0404183v1 sdisfac.tex:455-476",
+      "subtraction_point": 1,
+      "support": "plus",
+      "test_action": "integral_0^1 dx x/D_x*[phi(x)-phi(1)]",
+      "variable": "z"
+    },
+    {
+      "coefficient": "alpha_s*C_F/(2*pi^2)",
+      "count_once": true,
+      "crossing": "qhat(z,P_T)=z^-1 q(1/z,P_T/z), exact one-loop source crossing",
+      "crossing_jacobian_d_dimensional": "z^(-2+2epsilon)",
+      "distribution_id": "JMY_CROSSED_FIG2B_ENDPOINT",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "ln(zeta^2/(kT^2+lambda^2))/(kT^2+lambda^2)",
+      "owner_id": "FR.qv",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:840-869 plus parent locator hep-ph/0404183v1 sdisfac.tex:467-476",
+      "subtraction_point": 1,
+      "support": "delta(1-x)",
+      "test_action": "kernel*phi(1)",
+      "variable": "z"
+    },
+    {
+      "coefficient": "-alpha_s*C_F/(2*pi^2)",
+      "count_once": true,
+      "crossing": "qhat(z,P_T)=z^-1 q(1/z,P_T/z), exact one-loop source crossing",
+      "crossing_jacobian_d_dimensional": "z^(-2+2epsilon)",
+      "distribution_id": "JMY_CROSSED_FIG2C_ENDPOINT",
+      "domain": [
+        0,
+        1
+      ],
+      "kernel": "1/(kT^2+lambda^2)",
+      "limit_order": "zeta->infinity at fixed kT; not uniform in kT",
+      "owner_id": "FR.vv",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:840-869 plus parent locator hep-ph/0404183v1 sdisfac.tex:478-497",
+      "subtraction_point": 1,
+      "support": "delta(1-x)",
+      "test_action": "kernel*phi(1)",
+      "variable": "z"
+    }
+  ],
+  "status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT"
+}

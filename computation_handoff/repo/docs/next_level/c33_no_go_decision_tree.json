@@ -1,0 +1,42 @@
+{
+  "branch": "E",
+  "evaluated": [
+    {
+      "gate": "finite_B0_Hilbert",
+      "passes": true
+    },
+    {
+      "gate": "four_line_operator_tree",
+      "passes": true
+    },
+    {
+      "gate": "one_loop_bare_soft",
+      "missing": [
+        "gauge-fixed B=0 free soft action or BRST/Krein completion",
+        "normalized mode functions and eikonal emission/absorption matrix elements",
+        "operator-level modified-delta real and virtual contractions",
+        "all 18 diagram and counterterm contributions"
+      ],
+      "passes": false
+    },
+    {
+      "gate": "UV_and_rapidity_renormalization",
+      "missing": [
+        "finite-basis UV counterterms and MSbar conversion",
+        "rapidity counterterm, RAD, and cusp-consistency calculation"
+      ],
+      "passes": false
+    },
+    {
+      "gate": "trajectory_and_overlap",
+      "missing": [
+        "three-resolution one-loop trajectory separating logarithmic finite and power terms",
+        "C32 collinear soft-limit projection and count-once zero-bin validation"
+      ],
+      "passes": false
+    }
+  ],
+  "next_package": "C34/S0A",
+  "schema_version": "1.0.0",
+  "selected": "C33_SOFT_TREE_LEVEL_ONLY"
+}

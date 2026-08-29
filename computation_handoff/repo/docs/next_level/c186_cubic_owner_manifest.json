@@ -1,0 +1,78 @@
+{
+  "canonical_source_root": "861ed2ed9b47fb50366f0e335bbb5774f5f5d9e1c4d2b4e27fa93b66bea8f502",
+  "count": 3,
+  "descendant_root": "7f757f3989eac34956ad3b4d5e1398b38bbf4f648532165c8b0e3fcd8ff9240d",
+  "root": "20cdb5665203e18ca8f88eae981129131fc5f84bb79d5b414b561426b6c4476a",
+  "routes": [
+    "OWNER-A source term",
+    "OWNER-B normal-ordering crosswalk",
+    "OWNER-C C184 read-only source",
+    "OWNER-D orientation/Hermitian"
+  ],
+  "rows": [
+    {
+      "canonical_not_normal_ordering_descendant": true,
+      "color_tensor": "f^{abc}",
+      "coupling_degree": 1,
+      "creation_pattern": "parent_gluon_to_two_daughters",
+      "daughter_gluon_slots": [
+        "qgg.g_1",
+        "qgg.g_2"
+      ],
+      "hermitian_partner": "C129_G3_DIRECT_NORMAL_ORDERED_HC",
+      "longitudinal_derivative": "C43/C129 source derivative placement",
+      "normal_ordering_descendant_id": "G3_DIRECT_NORMAL_ORDERED",
+      "orientation": "qg_to_qgg",
+      "owner_id": "C129_G3_DIRECT_NORMAL_ORDERED",
+      "parent_gluon_slot": "qg.g_parent",
+      "polarization_tensor": "source-qualified symbolic",
+      "source_availability": "SOURCE_NONZERO_DIRECT_CUBIC",
+      "source_monomial_id": "C43-G3",
+      "spectator_quark_role": "unchanged",
+      "transverse_derivative": "C43/C129 source polarization tensor",
+      "units": "GeV^2/g_s"
+    },
+    {
+      "canonical_not_normal_ordering_descendant": true,
+      "color_tensor": "f^{abc}",
+      "coupling_degree": 1,
+      "creation_pattern": "parent_gluon_to_two_daughters",
+      "daughter_gluon_slots": [
+        "qgg.g_1",
+        "qgg.g_2"
+      ],
+      "hermitian_partner": "C184_GG_F_SPECTATOR_SOURCE_HC",
+      "longitudinal_derivative": "C184 read-only",
+      "normal_ordering_descendant_id": "G3_DIRECT_NORMAL_ORDERED",
+      "orientation": "both via generated adjoint",
+      "owner_id": "C184_GG_F_SPECTATOR_SOURCE",
+      "parent_gluon_slot": "C184 source gluon",
+      "polarization_tensor": "C184 GG_F source record",
+      "source_availability": "CONDITIONAL_SOURCE_DERIVED_READY",
+      "source_monomial_id": "C184-GG-F",
+      "spectator_quark_role": "unchanged",
+      "transverse_derivative": "C184 read-only",
+      "units": "GeV^2/g_s"
+    },
+    {
+      "canonical_not_normal_ordering_descendant": false,
+      "color_tensor": "f^{abb}=0",
+      "coupling_degree": 1,
+      "creation_pattern": "single_contraction",
+      "daughter_gluon_slots": [],
+      "hermitian_partner": "none",
+      "longitudinal_derivative": "source record",
+      "normal_ordering_descendant_id": "G3_SINGLE_CONTRACTION_LINEAR",
+      "orientation": "excluded",
+      "owner_id": "C129_G3_SINGLE_CONTRACTION_LINEAR",
+      "parent_gluon_slot": "none",
+      "polarization_tensor": "not applicable",
+      "source_availability": "EXACT_ZERO_NON_TARGET_DESCENDANT",
+      "source_monomial_id": "C43-G3",
+      "spectator_quark_role": "not applicable",
+      "transverse_derivative": "source record",
+      "units": "GeV^2/g_s"
+    }
+  ],
+  "schema": "C186-CUBIC-OWNER-V1"
+}

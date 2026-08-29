@@ -1,0 +1,68 @@
+{
+  "package_root": "67d541cd1834af594422035d2317ccaa0d1751f17a7c6720e6634fb767628690",
+  "physical": false,
+  "plan": "HQCDRIMASSC43JMYEVALPHASE1-B",
+  "record": [
+    {
+      "angular_measure": "Omega_(1-2epsilon)=2*pi^(1-epsilon)/Gamma(1-epsilon)",
+      "bessel_order": "-epsilon",
+      "branch": "bT>=0,kT>=0, real principal powers",
+      "d_perp": "2-2*epsilon",
+      "epsilon_convention": "d=4-2*epsilon",
+      "fourier_normalization": "(2*pi)^(-2+2epsilon) for inverse transform; JMY b-space action itself has no prefactor",
+      "kernel_id": "JMY_SCALAR_TRANSVERSE_RANK0",
+      "phase": "+i*bT_dot_kT",
+      "radial_measure": "kT^(1-2epsilon) dkT",
+      "reduced_kernel": "(2*pi)^(-1+epsilon)*(kT*bT)^epsilon*J_(-epsilon)(kT*bT)",
+      "routes": [
+        "direct_d_perp_angular_integral",
+        "Gegenbauer_Bessel_reduction",
+        "epsilon=0_J0_holdout",
+        "numeric_angular_fixture"
+      ],
+      "source_ast_node": "C389.measurement_exec.transverse_kernel",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:218-254,515-524",
+      "source_sha256": "5caf5be22e162b849518788605301cfc1c6c8e2eff82ae7b3480a8a2e1699e7b",
+      "tensor_rank": 0,
+      "test_domain": "radial Schwartz tests for bT>0; distributional regulated boundary at bT=0",
+      "units": "kernel dimensionless; radial measure mass^(2-2epsilon)",
+      "variables": [
+        "bT",
+        "kT",
+        "epsilon"
+      ]
+    },
+    {
+      "angular_measure": "Omega_(1-2epsilon)=2*pi^(1-epsilon)/Gamma(1-epsilon)",
+      "bessel_order": "-epsilon",
+      "branch": "bT>=0,kT>=0, real principal powers",
+      "crossing_jacobian": "z^(-2+2epsilon)",
+      "d_perp": "2-2*epsilon",
+      "epsilon_convention": "d=4-2*epsilon",
+      "fourier_normalization": "(2*pi)^(-2+2epsilon) for inverse transform; JMY b-space action itself has no prefactor",
+      "kernel_id": "JMY_FRAGMENTATION_SCALAR_TRANSVERSE_RANK0",
+      "longitudinal_variable": "z",
+      "phase": "+i*bT_dot_kT",
+      "radial_measure": "kT^(1-2epsilon) dkT",
+      "reduced_kernel": "(2*pi)^(-1+epsilon)*(kT*bT)^epsilon*J_(-epsilon)(kT*bT)",
+      "routes": [
+        "direct_d_perp_angular_integral",
+        "Gegenbauer_Bessel_reduction",
+        "epsilon=0_J0_holdout",
+        "numeric_angular_fixture"
+      ],
+      "source_ast_node": "C389.measurement_exec.transverse_kernel",
+      "source_locator": "hep-ph/0404183v1 sdisfac.tex:840-869",
+      "source_sha256": "5caf5be22e162b849518788605301cfc1c6c8e2eff82ae7b3480a8a2e1699e7b",
+      "tensor_rank": 0,
+      "test_domain": "radial Schwartz tests for bT>0; distributional regulated boundary at bT=0",
+      "units": "kernel dimensionless; radial measure mass^(2-2epsilon)",
+      "variables": [
+        "bT",
+        "kT",
+        "epsilon"
+      ]
+    }
+  ],
+  "status": "JMY_DISTRIBUTION_LAURENT_AUTHORITY_READY_SEPARATOR_OR_TARGET_REMAINDER_EXPLICIT"
+}

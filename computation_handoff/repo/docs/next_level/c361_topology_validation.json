@@ -1,0 +1,37 @@
+{
+  "package_root": "5c25f10c7864542cb7f9ac51c289e2ecaa3b01ef48fbeb88e548b34f69c96f9c",
+  "physical": false,
+  "plan": "RIMASSC43JMYTRACEREDUCE1-C",
+  "record": {
+    "root": "0fd7ddcd0c7799a24131d7fc7f4a0cd922b70fe644862873e9723ff85bd832e6",
+    "rows": [
+      {
+        "final_quark_cut": false,
+        "gluon_cut": true,
+        "node": "DR.qq",
+        "source_requires_final_state_onshell": true
+      },
+      {
+        "final_quark_cut": false,
+        "gluon_cut": true,
+        "node": "DR.qv",
+        "source_requires_final_state_onshell": true
+      },
+      {
+        "final_quark_cut": "measurement-dependent endpoint",
+        "gluon_cut": true,
+        "node": "DR.vv",
+        "source_requires_final_state_onshell": true
+      },
+      {
+        "final_quark_cut": false,
+        "gluon_cut": true,
+        "node": "FR.*",
+        "source_requires_final_state_onshell": true
+      }
+    ],
+    "scalar_reduction_safe": false
+  },
+  "status": "C361_TRACE_REDUCTION_PREFLIGHT_REAL_CUT_ONSHELL_DELTA_TOPOLOGY_MISSING",
+  "validation": "PASS"
+}

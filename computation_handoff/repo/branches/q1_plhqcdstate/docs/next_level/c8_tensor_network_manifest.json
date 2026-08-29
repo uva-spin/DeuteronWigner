@@ -1,0 +1,441 @@
+{
+  "benchmark": "H-TN",
+  "maximum_residuals": {
+    "full_energy": 0.0,
+    "full_overlap": 4.440892098500626e-16,
+    "operator": 0.0,
+    "recoupling": 1.0076776735463298e-15
+  },
+  "rows": [
+    {
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "exact_reconstruction_overlap": 0.9999999999999998,
+      "plan": "H1-PLAN-A",
+      "results": [
+        {
+          "OAM_feature_error": 0.2843417142602219,
+          "chi": 1,
+          "current_error": 0.0018852645877789342,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:1",
+              0.26631187665642286
+            ],
+            [
+              "EXCLUDED_BASIS:2",
+              0.009014918801899412
+            ],
+            [
+              "EXCLUDED_BASIS:3",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7806768148357442,
+          "exact_overlap": 0.8512773957657266,
+          "gradient_residual": 0.010354166666666668,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.045863980816107985,
+          "chi": 2,
+          "current_error": 0.0001970423744825922,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:2",
+              0.009014918801899412
+            ],
+            [
+              "EXCLUDED_BASIS:3",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7748825576791781,
+          "exact_overlap": 0.994880108153114,
+          "gradient_residual": 0.005056372597585652,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0,
+          "chi": 4,
+          "current_error": 0.0,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7744,
+          "exact_overlap": 0.9999999999999998,
+          "gradient_residual": 5.551115123125783e-17,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0,
+          "chi": 10,
+          "current_error": 0.0,
+          "discarded_weight_by_block": [],
+          "energy": 0.7744,
+          "exact_overlap": 0.9999999999999998,
+          "gradient_residual": 5.551115123125783e-17,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        }
+      ],
+      "tree": "((q1,q2)->(Rc,Rf,S,Lz,alpha),q3)->(I,Jz,color_singlet)"
+    },
+    {
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "exact_reconstruction_overlap": 1.0,
+      "plan": "H1-PLAN-B",
+      "results": [
+        {
+          "OAM_feature_error": 0.002729386446694515,
+          "chi": 1,
+          "current_error": 1.9248415605077618e-05,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:1",
+              0.0027190250724883273
+            ],
+            [
+              "EXCLUDED_BASIS:2",
+              5.180687103051817e-06
+            ],
+            [
+              "EXCLUDED_BASIS:3",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7745142212816123,
+          "exact_overlap": 0.9986369681923499,
+          "gradient_residual": 0.0021875,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 2.2632871398253762e-05,
+          "chi": 2,
+          "current_error": 8.687190133915834e-08,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:2",
+              5.180687103051817e-06
+            ],
+            [
+              "EXCLUDED_BASIS:3",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7744002590402381,
+          "exact_overlap": 0.9999974026796447,
+          "gradient_residual": 0.00011380790301222216,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0,
+          "chi": 4,
+          "current_error": 0.0,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7744,
+          "exact_overlap": 1.0,
+          "gradient_residual": 1.1102230246251565e-16,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0,
+          "chi": 10,
+          "current_error": 0.0,
+          "discarded_weight_by_block": [],
+          "energy": 0.7744,
+          "exact_overlap": 1.0,
+          "gradient_residual": 1.1102230246251565e-16,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        }
+      ],
+      "tree": "((q1,q2)->(Rc,Rf,S,Lz,alpha),q3)->(I,Jz,color_singlet)"
+    },
+    {
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "exact_reconstruction_overlap": 1.0000000000000004,
+      "plan": "H1-PLAN-C",
+      "results": [
+        {
+          "OAM_feature_error": 0.9945688501689989,
+          "chi": 1,
+          "current_error": 0.006989885395920714,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:1",
+              0.9873889901012038
+            ],
+            [
+              "EXCLUDED_BASIS:2",
+              0.0035899300338977183
+            ],
+            [
+              "EXCLUDED_BASIS:3",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.8598396982629684,
+          "exact_overlap": 0.09497936546902593,
+          "gradient_residual": 0.008166666666666668,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0037257791880881807,
+          "chi": 2,
+          "current_error": 2.4451993833385366e-05,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:2",
+              0.0035899300338977183
+            ],
+            [
+              "EXCLUDED_BASIS:3",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7748879454475863,
+          "exact_overlap": 0.9982032734244464,
+          "gradient_residual": 0.008129189882804996,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0,
+          "chi": 4,
+          "current_error": 0.0,
+          "discarded_weight_by_block": [
+            [
+              "EXCLUDED_BASIS:4",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:5",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:6",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:7",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:8",
+              0.0
+            ],
+            [
+              "EXCLUDED_BASIS:9",
+              0.0
+            ]
+          ],
+          "energy": 0.7743999999999999,
+          "exact_overlap": 1.0000000000000004,
+          "gradient_residual": 1.1210126175528405e-16,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        },
+        {
+          "OAM_feature_error": 0.0,
+          "chi": 10,
+          "current_error": 0.0,
+          "discarded_weight_by_block": [],
+          "energy": 0.7743999999999999,
+          "exact_overlap": 1.0000000000000004,
+          "gradient_residual": 1.1210126175528405e-16,
+          "optimization_route": "RAYLEIGH_RITZ_NESTED_TTN_SWEEP"
+        }
+      ],
+      "tree": "((q1,q2)->(Rc,Rf,S,Lz,alpha),q3)->(I,Jz,color_singlet)"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

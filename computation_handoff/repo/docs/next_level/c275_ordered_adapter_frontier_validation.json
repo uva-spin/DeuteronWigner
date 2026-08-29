@@ -1,0 +1,46 @@
+{
+  "authority_record": {
+    "C117_request_separate": "ordinal 1 preserved in C259-C274 frontier and not counted as non-C117 closure",
+    "first": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+    "root": "6055a1b4468f2424023cee94c6201ece99169c0e39937d42b50e531267318e60",
+    "rows": [
+      {
+        "ordinal": 2,
+        "quantity": "SIGNED_QUARK_MASS",
+        "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-SIGNED_QUARK_MASS-RI_SMOM-2",
+        "scheme": "RI_SMOM",
+        "status": "FIRST_NONC117_ADAPTER_CALCULATION"
+      },
+      {
+        "ordinal": 3,
+        "quantity": "QUARK_FIELD",
+        "scheme": "MOMQ",
+        "status": "ORDERED_LATER"
+      },
+      {
+        "ordinal": 4,
+        "quantity": "TRANSVERSE_GLUON_FIELD",
+        "scheme": "MOMQ",
+        "status": "ORDERED_LATER"
+      },
+      {
+        "ordinal": 5,
+        "quantity": "qg_VERTEX_DRESSING",
+        "scheme": "MOMQ",
+        "status": "ORDERED_LATER"
+      },
+      {
+        "ordinal": 6,
+        "quantity": "QCD_COUPLING",
+        "scheme": "MOMQ",
+        "status": "ORDERED_LATER"
+      }
+    ]
+  },
+  "package_root": "6daab8eb3cdc5d6006047c1203e5d68ca9e151e31b3d14df7be4a35611aa01fc",
+  "physical": false,
+  "plan": "NONC117SLOT1-C",
+  "schema": "C275-ORDERED_ADAPTER_FRONTIER-VALIDATION-V1",
+  "status": "C275_NONC117_BUNDLE_REDUCED_RI_SMOM_SIGNED_MASS_ADAPTER_FIRST",
+  "validation": "PASS"
+}

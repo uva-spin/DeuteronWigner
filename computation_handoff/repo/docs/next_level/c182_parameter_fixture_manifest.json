@@ -1,0 +1,63 @@
+{
+  "count": 4,
+  "root": "484cc248fe8566080344f89e974abc9903410bc91b58da74bb73cfc3f05507a1",
+  "rows": [
+    {
+      "complete_domain_payload": true,
+      "coordinate_form": "RETAINED_VECTOR_FIELD_COORDINATES",
+      "explicit_coupling": true,
+      "fixture_id": "C182_FIXTURE_RETAINED_SPARSE_V1",
+      "holonomy": {
+        "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+        "identity_selected": false,
+        "status": "SYMBOLIC_NONMATRIX_INTERFACE",
+        "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+      },
+      "physical": false,
+      "resolution": "K9"
+    },
+    {
+      "complete_domain_payload": true,
+      "coordinate_form": "RETAINED_PLUS_BOUNDARY_FIELD_COORDINATES",
+      "explicit_coupling": true,
+      "fixture_id": "C182_FIXTURE_RETAINED_BOUNDARY_V1",
+      "holonomy": {
+        "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+        "identity_selected": false,
+        "status": "SYMBOLIC_NONMATRIX_INTERFACE",
+        "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+      },
+      "physical": false,
+      "resolution": "K9"
+    },
+    {
+      "complete_domain_payload": true,
+      "coordinate_form": "GAUGE_GRADIENT_PULLBACK_COORDINATES",
+      "explicit_coupling": true,
+      "fixture_id": "C182_FIXTURE_GAUGE_GRADIENT_V1",
+      "holonomy": {
+        "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+        "identity_selected": false,
+        "status": "SYMBOLIC_NONMATRIX_INTERFACE",
+        "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+      },
+      "physical": false,
+      "resolution": "K9"
+    },
+    {
+      "complete_domain_payload": true,
+      "coordinate_form": "RETAINED_PLUS_BOUNDARY_FIELD_COORDINATES",
+      "explicit_coupling": true,
+      "fixture_id": "C182_FIXTURE_NONTRIVIAL_HOLONOMY_V1",
+      "holonomy": {
+        "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+        "identity_selected": false,
+        "status": "EXPLICIT_NONPHYSICAL_HOLONOMY_DIAGNOSTIC_V1",
+        "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE"
+      },
+      "physical": false,
+      "resolution": "K9"
+    }
+  ],
+  "schema": "C182-FIXTURE-MANIFEST-V1"
+}

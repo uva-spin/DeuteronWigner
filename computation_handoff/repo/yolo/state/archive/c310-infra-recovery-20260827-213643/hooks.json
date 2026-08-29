@@ -1,0 +1,17 @@
+{
+  "description": "Persistent DeuteronWigner frontier continuation.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /Users/dustin/work/DeuteronWigner-yolo/hooks/persistent_yolo_stop.py",
+            "timeout": 15,
+            "statusMessage": "Checking persistent frontier state"
+          }
+        ]
+      }
+    ]
+  }
+}

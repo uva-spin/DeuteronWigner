@@ -1,0 +1,29 @@
+{
+  "bare_delta_dependence": null,
+  "content_hash": "587cd490af87d3760f36738574f2c7d21cc4661e77fd8462bad84244c7cf3709",
+  "delta_minus_kept_distinct": true,
+  "delta_plus_kept_distinct": true,
+  "delta_probe_schedule_ids": [
+    "C34.DELTA.CENTRAL",
+    "C34.DELTA.PLUS.UP",
+    "C34.DELTA.PLUS.DOWN",
+    "C34.DELTA.MINUS.UP",
+    "C34.DELTA.MINUS.DOWN",
+    "C34.DELTA.PLUS.HOLDOUT",
+    "C34.DELTA.MINUS.HOLDOUT"
+  ],
+  "finite_basis_is_rapidity_regulator": false,
+  "independent_variation_schedule_frozen": true,
+  "independent_variations_executed": false,
+  "rapidity_log_coefficient": null,
+  "removal_order": [
+    "assemble_real_virtual",
+    "UV_renormalize",
+    "rapidity_renormalize",
+    "remove_delta"
+  ],
+  "schema_version": "1.0.0",
+  "status": "C34_SOFT_RAPIDITY_STRUCTURE_UNRESOLVED",
+  "symbolic_delta_identities_distinct": true,
+  "zeta_is_bare_regulator": false
+}

@@ -1,0 +1,162 @@
+{
+  "C131_additive_count": 0,
+  "count": 6,
+  "duplicate_ownership": 0,
+  "root": "7e4a1831eaa9f315e92086f516314cdbfac196004fe1a51c25df327531d7c701",
+  "rows": [
+    {
+      "aggregate_children": [],
+      "aggregate_parents": [
+        "C131_LOCAL_POLYNOMIAL_QGG"
+      ],
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "q<->qgg candidate",
+      "field_content": [
+        "q",
+        "qbar",
+        "g",
+        "g"
+      ],
+      "hermitian_partner": true,
+      "local_role": "source/operator candidate",
+      "matrix_role": "SOURCE_AUTHORITY_INCOMPLETE",
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "particle_number_change": "q<->qgg",
+      "public_scope": "q and qg only; no qgg target shape",
+      "source_monomial": "C43 instantaneous fermion/constrained bad component",
+      "source_order": "C112 public order",
+      "terminal": "SOURCE_AUTHORITY_INCOMPLETE",
+      "units": "GeV^2/g_s^2",
+      "upstream_package": "C112"
+    },
+    {
+      "aggregate_children": [],
+      "aggregate_parents": [
+        "C131_LOCAL_POLYNOMIAL_QGG"
+      ],
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "q<->qgg candidate",
+      "field_content": [
+        "q",
+        "qbar",
+        "g",
+        "g"
+      ],
+      "hermitian_partner": true,
+      "local_role": "source/operator candidate",
+      "matrix_role": "SOURCE_AUTHORITY_INCOMPLETE",
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "particle_number_change": "q<->qgg",
+      "public_scope": "q and qg only; no qgg target shape",
+      "source_monomial": "C43 Gauss-law/current-current",
+      "source_order": "C127 component order",
+      "terminal": "SOURCE_AUTHORITY_INCOMPLETE",
+      "units": "GeV^2/g_s^2",
+      "upstream_package": "C127"
+    },
+    {
+      "aggregate_children": [
+        "C131_LOCAL_POLYNOMIAL_QGG"
+      ],
+      "aggregate_parents": [],
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "pure-glue qg<->qgg source with spectator candidate",
+      "field_content": [
+        "g",
+        "g",
+        "g",
+        "g"
+      ],
+      "hermitian_partner": true,
+      "local_role": "normal-ordering descendant",
+      "matrix_role": "SEQUENTIAL_ROUTE_ONLY",
+      "owner_id": "C129_G4_DIRECT_NORMAL_ORDERED_QGG",
+      "particle_number_change": "qg<->qgg, not q<->qgg local primitive",
+      "public_scope": "destination qg->qgg and higher",
+      "source_monomial": "C43-G4 / G4_DIRECT_NORMAL_ORDERED",
+      "source_order": "C129 descendant order",
+      "terminal": "SOURCE_NONZERO_OUTSIDE_Q_TO_QGG_LOCAL_DOMAIN",
+      "units": "GeV^2/g_s^2",
+      "upstream_package": "C129"
+    },
+    {
+      "aggregate_children": [],
+      "aggregate_parents": [
+        "C112_INSTANTANEOUS_FERMION_QGG",
+        "C127_GAUSS_CURRENT_QGG"
+      ],
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "aggregate of primitive terms",
+      "field_content": [
+        "q",
+        "qbar",
+        "g",
+        "g"
+      ],
+      "hermitian_partner": true,
+      "local_role": "aggregate crosswalk only",
+      "matrix_role": "AGGREGATE_CROSSWALK_ONLY",
+      "owner_id": "C131_LOCAL_POLYNOMIAL_QGG",
+      "particle_number_change": "aggregate crosswalk",
+      "public_scope": "C131 retained support q/qg; not additional qgg primitive",
+      "source_monomial": "projected degree-two local polynomial",
+      "source_order": "C131 retained-term order",
+      "terminal": "AGGREGATE_CROSSWALK_ONLY",
+      "units": "GeV^2/g_s^2",
+      "upstream_package": "C131"
+    },
+    {
+      "aggregate_children": [],
+      "aggregate_parents": [],
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "source interface",
+      "field_content": [
+        "boundary",
+        "residual",
+        "P0/Q0"
+      ],
+      "hermitian_partner": true,
+      "local_role": "boundary",
+      "matrix_role": "NONMATRIX_BOUNDARY_INTERFACE",
+      "owner_id": "C130_BOUNDARY_NONMATRIX_QGG",
+      "particle_number_change": "q<->qgg interface",
+      "public_scope": "not a Hamiltonian matrix",
+      "source_monomial": "zero-mode/residual/boundary interface",
+      "source_order": "C130 interface order",
+      "terminal": "NONMATRIX_BOUNDARY_INTERFACE",
+      "units": "typed interface",
+      "upstream_package": "C130"
+    },
+    {
+      "aggregate_children": [],
+      "aggregate_parents": [],
+      "coupling_degree": 2,
+      "creation_annihilation_pattern": "source/operator insertion",
+      "field_content": [
+        "link",
+        "boundary",
+        "holonomy"
+      ],
+      "hermitian_partner": true,
+      "local_role": "source/operator interface",
+      "matrix_role": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "owner_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "particle_number_change": "q<->qgg interface",
+      "public_scope": "conditional source kernel; not local Hamiltonian by default",
+      "source_monomial": "degree-two residual-link source kernel",
+      "source_order": "C182 PP/PQ/QP/QQ order",
+      "terminal": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "units": "symbolic link coefficient",
+      "upstream_package": "C182"
+    }
+  ],
+  "schema": "C187-OWNER-MANIFEST-V1",
+  "source_authorities": [
+    "C112",
+    "C127",
+    "C129",
+    "C131",
+    "C130",
+    "C182"
+  ]
+}

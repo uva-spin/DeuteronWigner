@@ -1,0 +1,78 @@
+{
+  "axes": [
+    {
+      "axis": "gauge_group",
+      "collinear": "SU(3)",
+      "decision": "MATCH",
+      "soft": "SU(3)"
+    },
+    {
+      "axis": "parton_representation",
+      "collinear": "fundamental",
+      "decision": "MATCH",
+      "soft": "fundamental"
+    },
+    {
+      "axis": "wilson_geometry",
+      "collinear": "target staple declared",
+      "decision": "TARGET_MATCH_MICROSCOPIC_COLLINEAR_UNREALIZED",
+      "soft": "four-line soft staple explicit"
+    },
+    {
+      "axis": "rapidity_regulator",
+      "collinear": "modified delta planned",
+      "decision": "CONVERSION_UNPROVED",
+      "soft": "modified delta operator identity"
+    },
+    {
+      "axis": "transverse_measurement",
+      "collinear": "bT declared",
+      "decision": "MAP_UNEXECUTED",
+      "soft": "bT explicit"
+    },
+    {
+      "axis": "fourier_convention",
+      "collinear": "C32 target bT phase declared",
+      "decision": "CONVENTION_MAP_UNEXECUTED",
+      "soft": "exp(+i kT.bT), d2k/(2pi)^2"
+    },
+    {
+      "axis": "UV_target",
+      "collinear": "MSBAR planned",
+      "decision": "CONVERSION_UNPROVED",
+      "soft": "MSBAR target conversion underived"
+    },
+    {
+      "axis": "external_state_IR",
+      "collinear": "spacelike off-shell quarks",
+      "decision": "UNRESOLVED",
+      "soft": "vacuum soft sector; common soft-limit IR map absent"
+    },
+    {
+      "axis": "gauge",
+      "collinear": "xi_g=0,1,2 plan",
+      "decision": "UNRESOLVED",
+      "soft": "physical-cell basis lacks BRST/Krein completion"
+    },
+    {
+      "axis": "overlap",
+      "collinear": "zero-bin required",
+      "decision": "MAP_UNCALCULATED",
+      "soft": "soft-limit target defined"
+    },
+    {
+      "axis": "removal_order",
+      "collinear": "planned",
+      "decision": "JOINT_PROOF_UNAVAILABLE",
+      "soft": "declared"
+    }
+  ],
+  "baryon_numbers": [
+    1,
+    0
+  ],
+  "collinear_root": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+  "schema_version": "1.0.0",
+  "shared_state": false,
+  "soft_root": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT"
+}

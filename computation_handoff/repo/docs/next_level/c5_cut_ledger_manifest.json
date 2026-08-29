@@ -1,0 +1,31 @@
+{
+  "active_weight": 0.7,
+  "deduplication_key": "physical_support_id plus explicit relation",
+  "entries": [
+    {
+      "cut": {
+        "enabled": true,
+        "kind": "EIKONAL",
+        "physical_support_id": "C5:SUPPORT:01",
+        "source_denominator_id": "C5:POLE",
+        "spectral_weight": 0.7,
+        "stable_id": "C5:CUT:EIKONAL"
+      },
+      "equivalent_to": null,
+      "relation": "DISTINCT"
+    },
+    {
+      "cut": {
+        "enabled": true,
+        "kind": "LF_ENERGY",
+        "physical_support_id": "C5:SUPPORT:01",
+        "source_denominator_id": "C5:RESOLVENT",
+        "spectral_weight": 0.7,
+        "stable_id": "C5:CUT:LF"
+      },
+      "equivalent_to": "C5:CUT:EIKONAL",
+      "relation": "EQUIVALENT_COUNT_ONCE"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

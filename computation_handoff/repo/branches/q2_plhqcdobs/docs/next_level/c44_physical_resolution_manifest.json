@@ -1,0 +1,22 @@
+{
+  "C40": "EXECUTABLE_METHOD_ORACLE_ONLY",
+  "reason": "C43 freezes interfaces and resolutions, but does not supply the source-qualified finite-volume mode and global-constraint data needed to produce a unique numerical C44 overlap/matrix.",
+  "resolutions": [
+    {
+      "K": "9/2",
+      "Nmax": 8,
+      "bHO_GeV": 0.4
+    },
+    {
+      "K": "11/2",
+      "Nmax": 10,
+      "bHO_GeV": 0.45
+    },
+    {
+      "K": "13/2",
+      "Nmax": 12,
+      "bHO_GeV": 0.5
+    }
+  ],
+  "status": "FROZEN_NOT_PROJECTED"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "C212-FRONTIER-VALIDATION-V1",
+  "artifact": "frontier_validation",
+  "package_root": "a9a1a787cabdcf6d5adcdae61c83fd1e80d830bd6aac8caa03fab7887c4c152c",
+  "status": "C212_C211_C197_ST_9_SOURCE_SIDE_MOMQ_TARGET_CONDITION_CLOSED_PHYSICAL_INPUT_REMAINS",
+  "plan": "MOMQDEC1-A",
+  "physical": false,
+  "C197_ST_9_closed": true,
+  "C197_ST_10_closed": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "object_id": "C197-ST-1",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-2",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-3",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-4",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-5",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-6",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-7",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-8",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-9",
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-10",
+        "exact_missing_object": "physical input condition",
+        "status": "SELECTED_ORDERED_FRONTIER",
+        "not_zero": true,
+        "next": "C213/HQCDPHYSINPUT1"
+      }
+    ],
+    "count": 10,
+    "first": "C197-ST-10",
+    "ordered_remaining": [
+      "C197-ST-10"
+    ],
+    "root": "f158543aaf9892c1e011805530c04cfd0e7d2acef2c861d256a3a2433c1c4ba3"
+  }
+}

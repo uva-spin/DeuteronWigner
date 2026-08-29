@@ -1,0 +1,42 @@
+{
+  "schema": "C125-LOGICAL-WITNESS-DOMAIN-MANIFEST-V1",
+  "status": "C125_C123_C124_SOURCE_DERIVED_LOGICAL_WITNESS_AUTHORITY_READY",
+  "baseline": "0b1919541a6e65a2a55c577f496ae390af38f0a9",
+  "contract": "docs/next_level/c125_icdomain2_import_contract.json",
+  "contract_provenance": {
+    "C123_contract_historical_status": "ABSENT_FROM_C123_BASELINE",
+    "C124_owned_contract": "docs/next_level/c123_c124_icmembers_import_contract.json",
+    "consumed_contract": "docs/next_level/c125_icdomain2_import_contract.json",
+    "historical_C123_to_C124_contract_claimed": false
+  },
+  "program_templates": 8,
+  "segments": 24,
+  "conditioning_keys_verified": 72,
+  "logical_witnesses": 474533910576,
+  "resolution_counts": {
+    "K9_2_N8_b0.40": 8901801216,
+    "K11_2_N10_b0.45": 72171356400,
+    "K13_2_N12_b0.50": 393460752960
+  },
+  "rank_unrank": true,
+  "expanded_stream_written": false,
+  "witness_values": 0,
+  "witness_bounds": 0,
+  "component_sums": 0,
+  "sparse_entries": 0,
+  "matrix_free_actions": 0,
+  "atomicity": [
+    "UPSTREAM_PRIMITIVE_OWNS_COMPLETE_SUM",
+    "C125_WITNESS_DOMAIN_OWNS_MEMBER",
+    "EXACT_FACTORIZED_AXIS",
+    "NOT_APPLICABLE_WITH_PROOF"
+  ],
+  "cross_sector_zero_classes": 8,
+  "cross_sector_numerical_witnesses": 0,
+  "target_order": "q followed by qg; bra-major then ket",
+  "dimensions": {
+    "q": [6, 6, 6],
+    "qg": [1344, 2700, 4752],
+    "direct_sum": [1350, 2706, 4758]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "analytic_executable": 6,
+  "input_eligibility": {
+    "analytic": 438,
+    "not_eligible": 102,
+    "physical": 0,
+    "source": 0
+  },
+  "matched_total_executable": false,
+  "nuclear_plan": "NN_ONLY",
+  "records": [
+    {
+      "factorization_certificate": "C23:CERT:DY",
+      "operator_ids": [
+        "C19:OP:000",
+        "C19:OP:001",
+        "C19:OP:002",
+        "C19:OP:003"
+      ],
+      "process": "DY",
+      "rank": 0,
+      "stable_id": "C23:WY:DY:R0",
+      "status": "ANALYTIC_PROCESS_ORACLE",
+      "wy_status": "EXECUTABLE_VALIDATION_ONLY"
+    },
+    {
+      "factorization_certificate": "C23:CERT:DY",
+      "operator_ids": [],
+      "process": "DY",
+      "rank": 1,
+      "stable_id": "C23:WY:DY:R1",
+      "status": "NOT_PROCESS_ELIGIBLE",
+      "wy_status": "UNAVAILABLE_NO_RANKED_ELIGIBLE_OPERATOR"
+    },
+    {
+      "factorization_certificate": "C23:CERT:DY",
+      "operator_ids": [
+        "C19:OP:005",
+        "C19:OP:015",
+        "C19:OP:025",
+        "C19:OP:035"
+      ],
+      "process": "DY",
+      "rank": 2,
+      "stable_id": "C23:WY:DY:R2",
+      "status": "ANALYTIC_PROCESS_ORACLE",
+      "wy_status": "EXECUTABLE_VALIDATION_ONLY"
+    },
+    {
+      "factorization_certificate": "C23:CERT:DY",
+      "operator_ids": [],
+      "process": "DY",
+      "rank": 3,
+      "stable_id": "C23:WY:DY:R3",
+      "status": "NOT_PROCESS_ELIGIBLE",
+      "wy_status": "UNAVAILABLE_NO_RANKED_ELIGIBLE_OPERATOR"
+    },
+    {
+      "factorization_certificate": "C23:CERT:SIDIS",
+      "operator_ids": [
+        "C19:OP:000",
+        "C19:OP:001",
+        "C19:OP:002",
+        "C19:OP:003"
+      ],
+      "process": "SIDIS",
+      "rank": 0,
+      "stable_id": "C23:WY:SIDIS:R0",
+      "status": "ANALYTIC_PROCESS_ORACLE",
+      "wy_status": "EXECUTABLE_VALIDATION_ONLY"
+    },
+    {
+      "factorization_certificate": "C23:CERT:SIDIS",
+      "operator_ids": [],
+      "process": "SIDIS",
+      "rank": 1,
+      "stable_id": "C23:WY:SIDIS:R1",
+      "status": "NOT_PROCESS_ELIGIBLE",
+      "wy_status": "UNAVAILABLE_NO_RANKED_ELIGIBLE_OPERATOR"
+    },
+    {
+      "factorization_certificate": "C23:CERT:SIDIS",
+      "operator_ids": [
+        "C19:OP:005",
+        "C19:OP:015",
+        "C19:OP:025",
+        "C19:OP:035"
+      ],
+      "process": "SIDIS",
+      "rank": 2,
+      "stable_id": "C23:WY:SIDIS:R2",
+      "status": "ANALYTIC_PROCESS_ORACLE",
+      "wy_status": "EXECUTABLE_VALIDATION_ONLY"
+    },
+    {
+      "factorization_certificate": "C23:CERT:SIDIS",
+      "operator_ids": [],
+      "process": "SIDIS",
+      "rank": 3,
+      "stable_id": "C23:WY:SIDIS:R3",
+      "status": "NOT_PROCESS_ELIGIBLE",
+      "wy_status": "UNAVAILABLE_NO_RANKED_ELIGIBLE_OPERATOR"
+    },
+    {
+      "factorization_certificate": "C23:CERT:HQDIS",
+      "operator_ids": [
+        "C19:OP:000",
+        "C19:OP:001",
+        "C19:OP:002",
+        "C19:OP:003"
+      ],
+      "process": "HQ_DIS",
+      "rank": 0,
+      "stable_id": "C23:WY:HQ_DIS:R0",
+      "status": "ANALYTIC_PROCESS_ORACLE",
+      "wy_status": "EXECUTABLE_VALIDATION_ONLY"
+    },
+    {
+      "factorization_certificate": "C23:CERT:HQDIS",
+      "operator_ids": [],
+      "process": "HQ_DIS",
+      "rank": 1,
+      "stable_id": "C23:WY:HQ_DIS:R1",
+      "status": "NOT_PROCESS_ELIGIBLE",
+      "wy_status": "UNAVAILABLE_NO_RANKED_ELIGIBLE_OPERATOR"
+    },
+    {
+      "factorization_certificate": "C23:CERT:HQDIS",
+      "operator_ids": [
+        "C19:OP:005",
+        "C19:OP:015",
+        "C19:OP:025",
+        "C19:OP:035"
+      ],
+      "process": "HQ_DIS",
+      "rank": 2,
+      "stable_id": "C23:WY:HQ_DIS:R2",
+      "status": "ANALYTIC_PROCESS_ORACLE",
+      "wy_status": "EXECUTABLE_VALIDATION_ONLY"
+    },
+    {
+      "factorization_certificate": "C23:CERT:HQDIS",
+      "operator_ids": [],
+      "process": "HQ_DIS",
+      "rank": 3,
+      "stable_id": "C23:WY:HQ_DIS:R3",
+      "status": "NOT_PROCESS_ELIGIBLE",
+      "wy_status": "UNAVAILABLE_NO_RANKED_ELIGIBLE_OPERATOR"
+    },
+    {
+      "operator_ids": [],
+      "process": "INCLUSIVE_B1",
+      "rank": null,
+      "stable_id": "C23:PROC:INCLUSIVE_B1",
+      "status": "OPERATOR_SPECIFIC_UNAVAILABLE",
+      "wy_status": "NOT_EXECUTED"
+    },
+    {
+      "operator_ids": [],
+      "process": "TAGGED_DIS",
+      "rank": null,
+      "stable_id": "C23:PROC:TAGGED_DIS",
+      "status": "OPERATOR_SPECIFIC_UNAVAILABLE",
+      "wy_status": "NOT_EXECUTED"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "unavailable": 8
+}

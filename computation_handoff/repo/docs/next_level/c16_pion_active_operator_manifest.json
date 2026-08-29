@@ -1,0 +1,76 @@
+{
+  "nucleon_active_residual": 0.0,
+  "pion_active_residual": 0.0,
+  "pion_species": [
+    {
+      "charge": "pi0",
+      "momentum_residual": 0.0,
+      "number_residual": 0.0,
+      "source": "PION_PARTONIC_PARENT_ANALYTIC_ORACLE",
+      "species": "u",
+      "status": [
+        "UV_MATCHING_REQUIRED",
+        "RAPIDITY_SOFT_MATCHING_REQUIRED",
+        "NO_EVOLUTION_APPLIED",
+        "NO_PROCESS_MAP_APPLIED"
+      ]
+    },
+    {
+      "charge": "pi0",
+      "momentum_residual": 0.0,
+      "number_residual": 0.0,
+      "source": "PION_PARTONIC_PARENT_ANALYTIC_ORACLE",
+      "species": "d",
+      "status": [
+        "UV_MATCHING_REQUIRED",
+        "RAPIDITY_SOFT_MATCHING_REQUIRED",
+        "NO_EVOLUTION_APPLIED",
+        "NO_PROCESS_MAP_APPLIED"
+      ]
+    },
+    {
+      "charge": "pi0",
+      "momentum_residual": 0.0,
+      "number_residual": 0.0,
+      "source": "PION_PARTONIC_PARENT_ANALYTIC_ORACLE",
+      "species": "ubar",
+      "status": [
+        "UV_MATCHING_REQUIRED",
+        "RAPIDITY_SOFT_MATCHING_REQUIRED",
+        "NO_EVOLUTION_APPLIED",
+        "NO_PROCESS_MAP_APPLIED"
+      ]
+    },
+    {
+      "charge": "pi0",
+      "momentum_residual": 0.0,
+      "number_residual": 0.0,
+      "source": "PION_PARTONIC_PARENT_ANALYTIC_ORACLE",
+      "species": "dbar",
+      "status": [
+        "UV_MATCHING_REQUIRED",
+        "RAPIDITY_SOFT_MATCHING_REQUIRED",
+        "NO_EVOLUTION_APPLIED",
+        "NO_PROCESS_MAP_APPLIED"
+      ]
+    },
+    {
+      "charge": "pi0",
+      "momentum_residual": 0.0,
+      "number_residual": 0.0,
+      "source": "PION_PARTONIC_PARENT_ANALYTIC_ORACLE",
+      "species": "g",
+      "status": [
+        "UV_MATCHING_REQUIRED",
+        "RAPIDITY_SOFT_MATCHING_REQUIRED",
+        "NO_EVOLUTION_APPLIED",
+        "NO_PROCESS_MAP_APPLIED"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "transition_hermiticity_residual": 0.0,
+  "transition_recoil_residual": 0.0,
+  "zero_pion_limit": 0.0,
+  "zero_transition_limit": 0.0
+}

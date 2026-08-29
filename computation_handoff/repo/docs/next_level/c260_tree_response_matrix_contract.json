@@ -1,0 +1,83 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "tree_response_matrix_contract",
+  "authority_record": {
+    "condition_number": 1,
+    "determinant": 1,
+    "left_nullspace": [],
+    "matrix": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "operator_order": [
+      "I2_density_projector",
+      "derivative_density",
+      "CM_ground",
+      "triplet_projected"
+    ],
+    "projector_order": [
+      "P_C117_1",
+      "P_C117_2",
+      "P_C117_3",
+      "P_C117_4"
+    ],
+    "rank": 4,
+    "right_nullspace": [],
+    "root": "473e020da9f9843de6a7226b8ba362432e2b536e31e5407c91c01524c0f12a2a",
+    "route_A": "direct exact projector/operator contraction",
+    "route_B": "Gram inverse duality with reversed-order permutation round trip",
+    "route_residual": 0,
+    "singular_values": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "symmetry_blocks": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ]
+    ]
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-TREE_RESPONSE_MATRIX-CONTRACT-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "BOUND"
+}

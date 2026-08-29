@@ -1,0 +1,37 @@
+{
+  "schema": "C216-ADAPTER-PROGRAM-SCHEMA-VALIDATION-V1",
+  "artifact": "adapter_program_schema_validation",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_RI_SMOM_QUARK_ADAPTER_PROGRAM_V1",
+    "safe_opcodes": [
+      "LOAD_REQUEST",
+      "LOAD_C142_SOURCE_MAP",
+      "LOAD_C148_FULL_SPINOR_TWO_POINT",
+      "LOAD_C149_KINETIC_PROJECTORS",
+      "LOAD_C150_CONDITIONAL_ZQ_FAMILY",
+      "LOAD_RI_SMOM_PROJECTOR",
+      "VALIDATE_COMMON_STATE_IR",
+      "LOAD_ORDER_G2_SELF_ENERGY",
+      "PROJECT_COMPONENTWISE",
+      "SUBTRACT_COMMON_IR",
+      "FORM_ZQ_RATIO",
+      "RETURN_UNAVAILABLE_IF_SELF_ENERGY_MISSING"
+    ],
+    "eval": false,
+    "pickle": false,
+    "callbacks": false,
+    "root": "a6e692f7bb93cc5549d1c6c25425f36e757752d9af269c0c2725cc4a900c976f"
+  }
+}

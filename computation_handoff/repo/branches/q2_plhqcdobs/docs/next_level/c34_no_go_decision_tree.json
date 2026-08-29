@@ -1,0 +1,45 @@
+{
+  "content_hash": "9abf78ff66499b70752237f4aaf5c9e5ae21363b8deb471ebba5c84dbddf1fd3",
+  "evaluated": [
+    {
+      "gate": "C33_B0_ROOT_AND_TREE",
+      "passes": true
+    },
+    {
+      "gate": "ONE_LOOP_PLAN_AND_CURRENT_IDENTITY",
+      "passes": true
+    },
+    {
+      "gate": "CELL_INTEGRATED_MODE_MATRIX_ELEMENTS",
+      "missing": [
+        "Specify normalized finite-cell mode functions and gauge-complete B=0 inner product.",
+        "Construct the covariant-gauge soft action/propagator including BRST, ghost, constrained, and instantaneous sectors.",
+        "Implement analytic singular-cell subtraction and cell-integrated eikonal matrix elements at R1-R3."
+      ],
+      "passes": false
+    },
+    {
+      "gate": "ALL_18_ONE_LOOP_CONTRIBUTIONS",
+      "missing": [
+        "Construct and evaluate the exact-zero-mode control sector required by the frozen C33 policy.",
+        "Implement transverse-infinity closure and cusp/endpoint junction operators in the finite basis.",
+        "Evaluate every one-loop real, virtual, self-energy, boundary, gauge, ghost, and vacuum contribution."
+      ],
+      "passes": false
+    },
+    {
+      "gate": "UV_RAPIDITY_CONVERSION_TRAJECTORY",
+      "missing": [
+        "Extract separate power, logarithmic, cusp, endpoint, UV, and modified-delta rapidity counterterms.",
+        "Complete an independent continuum integral reconstruction and finite-basis-to-continuum conversion.",
+        "Execute the three-resolution trajectory and holdout tests before any soft-collinear continuation."
+      ],
+      "passes": false
+    }
+  ],
+  "next_package": "C35/S0C",
+  "next_package_description": "targeted unresolved soft-diagram and counterterm completion",
+  "outcome_branch": "G",
+  "schema_version": "1.0.0",
+  "selected": "C34_SOFT_ONE_LOOP_INCOMPLETE"
+}

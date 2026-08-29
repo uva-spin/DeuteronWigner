@@ -1,0 +1,25 @@
+{
+  "schema": "C101-C102-IFTHEOREMAPI-IMPORT-CONTRACT-V1",
+  "baseline": "e6e9012dff116073e12d189e0ece2217763b4514",
+  "consumed_c101_status": "C101_IFEQUIV9_EXPANSION_PROOF_INCOMPLETE",
+  "classification": "PUBLIC_CHECKER_INTERFACE_NO_GO_NOT_SCIENTIFIC_MISMATCH",
+  "selected_route": "ROUTE_B_PUBLIC_ADAPTER_OVER_C94_PUBLIC_CHECKER",
+  "historical_inputs": {
+    "C98": [
+      "historical_pair_normal_form(pair_id, resolution)",
+      "historical_pair_proof_inputs(pair_id, resolution)",
+      "historical_primitive_record(family_id, record_id)"
+    ],
+    "C100": [
+      "historical_primitive_domain_manifest()",
+      "historical_primitive_record_page(family_id=None, cursor=None, limit=...)"
+    ],
+    "C94_checker": "deuteron_wigner.bridge.ifequivapi2.verify_factorized_expansion_equivalence"
+  },
+  "required_c102_status": "C102_C94_PUBLIC_FACTORIZED_SEMANTIC_CHECKER_READY",
+  "forbidden": [
+    "new theorem", "new normalizer", "root-only comparison shortcut",
+    "historical-descendant comparison", "expanded C88 stream", "downstream physics"
+  ],
+  "next_branch": "C103/IFEQUIV10"
+}

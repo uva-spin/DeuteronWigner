@@ -1,0 +1,34 @@
+{
+  "authority_record": {
+    "false_agreement": false,
+    "root": "3cea05ba8666326f1e79b634bd9c6a6839d825d3b38e0181ae66911bbde1c483",
+    "routes": [
+      {
+        "agreement": null,
+        "route": "DIRECT_FORMULA",
+        "status": "SAME_FOUR_DEPENDENCY_LEAVES_OPEN"
+      },
+      {
+        "agreement": null,
+        "route": "WARD_IDENTITY",
+        "status": "SAME_FOUR_DEPENDENCY_LEAVES_OPEN"
+      },
+      {
+        "agreement": null,
+        "route": "INVERSE_CONVERSION",
+        "status": "SAME_FOUR_DEPENDENCY_LEAVES_OPEN"
+      },
+      {
+        "agreement": null,
+        "route": "NUMERICAL_HOLDOUT",
+        "status": "SAME_FOUR_DEPENDENCY_LEAVES_OPEN"
+      }
+    ]
+  },
+  "package_root": "d69b9cfc362b6ac94fd1441319ff83533fdf221dcc84b1da9171af9294e2a4d5",
+  "physical": false,
+  "plan": "RIMASSTARGETAST1-C",
+  "schema": "C280-ROUTE_CERTIFICATE-MANIFEST-V1",
+  "status": "C280_RI_SMOM_MASS_TARGET_AST_SKELETON_SOURCE_BOUND_FOUR_DEPENDENCY_LEAVES_OPEN",
+  "validation": "BOUND"
+}
