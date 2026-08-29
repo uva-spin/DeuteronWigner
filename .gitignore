@@ -17,6 +17,8 @@ aTMDe-temporary
 data/raw/
 data/processed/
 data/vendor/
+data/incoming/
+data/runtime/
 outputs/
 output/figures/
 output/pdf/*.log
@@ -29,3 +31,15 @@ Notes_lectures_miami.pdf
 comparison.pdf
 references/arxiv_*.pdf
 references/gnech_norfolk_current_reply.md
+
+# Local persistent Codex/YOLO controller state.  The reproducible, sanitized
+# controller source is published under computation_handoff/repo/yolo; this
+# local copy contains credentials, sessions, logs, and runtime state.
+/.yolo/
+# Live Git worktrees consolidated below this checkout.  Their commits remain
+# in the shared repository, but their checked-out files are not parent-repo
+# content and must not be staged from the canonical root.
+/deuteron_wigner_computational_handoff/
+/deuteron_wigner_q0_plhqcd0/
+/deuteron_wigner_q1_plhqcdstate/
+/deuteron_wigner_q2_plhqcdobs/
