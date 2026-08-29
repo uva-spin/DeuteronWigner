@@ -1,6 +1,7 @@
-# DeuteronWigner ChatGPT Handoff
+# DeuteronWigner Computation Handoff
 
-This directory contains the project handoff bundle for ChatGPT review. It is
+This directory contains the project handoff bundle for independent technical
+review and continued development. It is
 the only new directory in this branch; existing repository files are not
 replaced.
 
@@ -9,9 +10,9 @@ replaced.
 From this directory, concatenate the parts in lexical order:
 
 ```bash
-cat DeuteronWigner_ChatGPT_Handoff_2026-08-28.zip.part-* \
-  > DeuteronWigner_ChatGPT_Handoff_2026-08-28.zip
-shasum -a 256 DeuteronWigner_ChatGPT_Handoff_2026-08-28.zip
+cat DeuteronWigner_Computation_Handoff_2026-08-28.zip.part-* \
+  > DeuteronWigner_Computation_Handoff_2026-08-28.zip
+shasum -a 256 DeuteronWigner_Computation_Handoff_2026-08-28.zip
 ```
 
 Expected SHA-256:
@@ -34,7 +35,7 @@ The reconstructed ZIP is about 244 MiB and contains the current project
 source, tests, scripts, references, handoff materials, validation evidence,
 tracked data/output, the frozen Q0/Q1 backend worktrees, and MSHT20 metadata.
 Local environments, caches, generated bulk data, and the roughly 845 MB raw
-MSHT20 replica grid are excluded. See `CHATGPT_HANDOFF_INDEX.md` inside this
+MSHT20 replica grid are excluded. See `COMPUTATION_HANDOFF_INDEX.md` inside this
 directory and inside the reconstructed ZIP for the reading order and scope
 boundaries.
 

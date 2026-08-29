@@ -1,7 +1,7 @@
-# ChatGPT Handoff Index
+# Computation Handoff Index
 
-Generated 2026-08-28 for transfer of the DeuteronWigner project to ChatGPT
-for technical direction and review.
+Generated 2026-08-28 to support independent technical review and continued
+development of the DeuteronWigner project.
 
 ## Recommended reading order
 
@@ -45,7 +45,7 @@ working tree as found; it does not imply that the working tree was clean.
 ## Deliberate exclusions
 
 - `.git/` and the nested worktree pointer files: these contain repository
-  internals and absolute local paths, and are not needed for ChatGPT review.
+  internals and absolute local paths, and are not needed for handoff review.
 - Conda environments (`.conda-*`), Python virtual environments (`.venv*`,
   `venv`), compiled libraries, caches, bytecode, and package build products.
 - Ignored bulk/generated trees such as the workspace's untracked `data/`,

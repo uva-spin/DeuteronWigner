@@ -2,7 +2,7 @@
 set -eu
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-ZIP_NAME=DeuteronWigner_ChatGPT_Handoff_2026-08-28.zip
+ZIP_NAME=DeuteronWigner_Computation_Handoff_2026-08-28.zip
 EXPECTED_SHA256=9f807d32be336e5ce68fbfef5d5add9a2bc63675a70de6df55ba8c8fad80df9e
 TMP_DIR=$(mktemp -d "${TMPDIR:-/tmp}/deuteron-wigner-handoff.XXXXXX")
 ASSEMBLED="$TMP_DIR/$ZIP_NAME"
