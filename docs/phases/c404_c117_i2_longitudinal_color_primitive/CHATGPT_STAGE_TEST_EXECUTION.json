@@ -1,0 +1,78 @@
+{
+  "environment": {
+    "python": "3.13.5"
+  },
+  "physical_claims_from_tests": false,
+  "records": [
+    {
+      "command": "python3 -m pytest -q tests/test_c404_c117_i2_longitudinal_color_primitive.py",
+      "elapsed_seconds": 5.4,
+      "exit_code": 0,
+      "expected_passed": 15,
+      "name": "C404_focused",
+      "observed_passed": 15,
+      "output": "...............                                                          [100%]\n15 passed in 5.40s",
+      "pass": true
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py",
+      "elapsed_seconds": 10.35,
+      "exit_code": 0,
+      "expected_passed": 16,
+      "name": "C403_regression",
+      "observed_passed": 16,
+      "output": "................                                                         [100%]\n16 passed in 10.35s",
+      "pass": true
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c401_c396_mass_directions.py",
+      "elapsed_seconds": 2.71,
+      "exit_code": 0,
+      "expected_passed": 14,
+      "name": "C401_regression",
+      "observed_passed": 14,
+      "output": "..............                                                           [100%]\n14 passed in 2.71s",
+      "pass": true
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c400_s2_corrective.py",
+      "elapsed_seconds": 9.9,
+      "exit_code": 0,
+      "expected_passed": 26,
+      "name": "C400_S2_regression",
+      "observed_passed": 26,
+      "output": "..........................                                               [100%]\n26 passed in 9.90s",
+      "pass": true
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c114_icurrent.py tests/test_c115_icho.py tests/test_c119_icnorm3.py",
+      "elapsed_seconds": 1.6,
+      "exit_code": 0,
+      "expected_passed": 9,
+      "name": "C114_C115_C119_source_regression",
+      "observed_passed": 9,
+      "output": ".........                                                                [100%]\n9 passed in 1.60s",
+      "pass": true
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c45_modes.py::test_c45_end_to_end_mode_library_is_nontrivial_and_valid tests/test_c45_modes.py::test_c45_contract_gate_all_four_rows_executable tests/test_c47_basis1.py::test_c47_basis_contracts_close_without_action_matrices tests/test_c47_basis1.py::test_c47_tm_maps_and_inverse_functionals_are_nontrivial",
+      "elapsed_seconds": 3.32,
+      "exit_code": 0,
+      "expected_passed": 4,
+      "name": "C45_C47_source_regression",
+      "observed_passed": 4,
+      "output": "....                                                                     [100%]\n4 passed in 3.32s",
+      "pass": true
+    },
+    {
+      "command": "python3 -m compileall -q src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive tools/generate_c404_c117_i2_longitudinal_color_primitive.py tests/test_c404_c117_i2_longitudinal_color_primitive.py",
+      "exit_code": 0,
+      "name": "Python_compile",
+      "pass": true
+    }
+  ],
+  "required_test_groups_pass": true,
+  "schema": "C404-CHATGPT-STAGE-TEST-EXECUTION-V1",
+  "total_expected_pytest_passes": 84,
+  "total_observed_pytest_passes": 84
+}
