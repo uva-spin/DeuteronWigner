@@ -1,0 +1,70 @@
+{
+  "activation_gate_status": "NOT_READY",
+  "candidate_dimension_is_rank": false,
+  "complete_K_local_apply_rows": 6,
+  "maximum_candidate_matrix_dimension_per_resolution": 16,
+  "maximum_candidate_matrix_dimension_status": "PROVISIONAL_UPPER_BOUND_NOT_RANK",
+  "numerically_ready_matrix_directions_per_resolution": 2,
+  "physical_fit_authorized": false,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "raw_slots_per_resolution": 19,
+  "reclassification": [
+    {
+      "implementation_coordinate": "mu_q_sq",
+      "new_role": "IDENTIFIED_RENORMALIZED_MASS_SQUARED_DIRECTION",
+      "numerical_apply_ready": true,
+      "numerical_matrix_candidate": true,
+      "raw_id": "ct_mass"
+    },
+    {
+      "new_role": "VACUUM_ONLY_OUTSIDE_RETAINED_Q_QG_DIRECT_SUM",
+      "numerical_matrix_candidate": false,
+      "projector_certificate_pending": true,
+      "raw_id": "ct_vacuum_energy"
+    },
+    {
+      "implementation_coordinate": "delta_mu_g_sq",
+      "new_role": "K_LOCAL_GLUON_ONE_BODY_MASS_SQUARED_DIRECTION",
+      "numerical_apply_ready": true,
+      "numerical_matrix_candidate": true,
+      "raw_id": "ct_gluon_mass"
+    },
+    {
+      "new_role": "MATRIX_DIRECTION_OWNER_NORMALIZATION_REQUIRED",
+      "numerical_apply_ready": false,
+      "numerical_matrix_candidate": true,
+      "raw_id": "ct_sector"
+    },
+    {
+      "new_role": "NONMATRIX_DOMAIN_OR_BOUNDARY_PARAMETER",
+      "numerical_matrix_candidate": false,
+      "raw_id": "ct_boundary"
+    },
+    {
+      "new_role": "NONMATRIX_TRUNCATION_DISCREPANCY",
+      "numerical_matrix_candidate": false,
+      "raw_id": "ct_truncation"
+    },
+    {
+      "count": 9,
+      "new_role": "SOURCE_OWNER_CLASSIFICATION_REQUIRED",
+      "numerical_matrix_candidate": "UNRESOLVED",
+      "raw_id_pattern": "null_1...null_9"
+    },
+    {
+      "count": 4,
+      "new_role": "SOURCE_QUALIFIED_MATRIX_DIRECTION_APPLY_REQUIRED",
+      "numerical_matrix_candidate": true,
+      "raw_id_pattern": "c_C117_1...c_C117_4"
+    }
+  ],
+  "resolutions": [
+    "K9",
+    "K11",
+    "K13"
+  ],
+  "root": "ee5c03f629bdf489a5576f5fea8bee9a208917c0e3ca54f6421ac651bfa6cf74",
+  "schema": "C401-C396-COORDINATE-REDUCTION-V1",
+  "status": "C396_FIRST_SIX_K_LOCAL_NUMERICAL_BINDINGS_READY_DIAGNOSTIC_ONLY",
+  "unresolved_candidate_matrix_directions_per_resolution": 14
+}
