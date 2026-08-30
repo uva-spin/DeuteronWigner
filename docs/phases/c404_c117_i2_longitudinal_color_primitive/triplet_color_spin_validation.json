@@ -1,0 +1,362 @@
+{
+  "adjoint_hermiticity_residual": 0.0,
+  "fundamental_hermiticity_residual": 0.0,
+  "mixed_order_residual": 0.0,
+  "pass": true,
+  "product_rows": [
+    {
+      "C45_adjoint_convention": "F^a_bc=-i f^{abc}",
+      "C45_fundamental_convention": "T^a=lambda^a/2; Tr(TaTb)=delta_ab/2",
+      "C47_triplet_isometry": "U_(c,b),alpha=T^b_(c,alpha)/sqrt(C_F)",
+      "complete_C115_current_factor": false,
+      "exact_scalar_times_identity": {
+        "denominator": 3,
+        "exact": "4/3",
+        "numerator": 4
+      },
+      "hermiticity_residual": 0.0,
+      "matrix": [
+        [
+          [
+            1.3333333333333335,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.3333333333333335,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            1.3333333333333335,
+            0.0
+          ]
+        ]
+      ],
+      "product": "J_qJ_q",
+      "root": "feb00f04d4bee7e3763b1aacf93d1ab2ba2270c1b86a7d6d66394ae982f21d9e",
+      "scalar_identity_residual": 3.8459253727671276e-16,
+      "schema": "C404-C117-I2-TRIPLET-COLOR-PRODUCT-V1",
+      "source_phase_and_gluon_derivative_bound": false,
+      "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+    },
+    {
+      "C45_adjoint_convention": "F^a_bc=-i f^{abc}",
+      "C45_fundamental_convention": "T^a=lambda^a/2; Tr(TaTb)=delta_ab/2",
+      "C47_triplet_isometry": "U_(c,b),alpha=T^b_(c,alpha)/sqrt(C_F)",
+      "complete_C115_current_factor": false,
+      "exact_scalar_times_identity": {
+        "denominator": 2,
+        "exact": "-3/2",
+        "numerator": -3
+      },
+      "hermiticity_residual": 0.0,
+      "matrix": [
+        [
+          [
+            -1.5000000000000002,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.5000000000000004,
+            0.0
+          ]
+        ]
+      ],
+      "product": "J_qJ_g",
+      "root": "0c5df17213b4fcbe1d086f2613e002de7dd66728fed87f56242fbafa4c152831",
+      "scalar_identity_residual": 4.965068306494546e-16,
+      "schema": "C404-C117-I2-TRIPLET-COLOR-PRODUCT-V1",
+      "source_phase_and_gluon_derivative_bound": false,
+      "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+    },
+    {
+      "C45_adjoint_convention": "F^a_bc=-i f^{abc}",
+      "C45_fundamental_convention": "T^a=lambda^a/2; Tr(TaTb)=delta_ab/2",
+      "C47_triplet_isometry": "U_(c,b),alpha=T^b_(c,alpha)/sqrt(C_F)",
+      "complete_C115_current_factor": false,
+      "exact_scalar_times_identity": {
+        "denominator": 2,
+        "exact": "-3/2",
+        "numerator": -3
+      },
+      "hermiticity_residual": 0.0,
+      "matrix": [
+        [
+          [
+            -1.5000000000000002,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.5000000000000004,
+            0.0
+          ]
+        ]
+      ],
+      "product": "J_gJ_q",
+      "root": "323a928b2d3598776012c66c928222332151e7109b2e7a2a861095b6ec0f7b48",
+      "scalar_identity_residual": 4.965068306494546e-16,
+      "schema": "C404-C117-I2-TRIPLET-COLOR-PRODUCT-V1",
+      "source_phase_and_gluon_derivative_bound": false,
+      "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+    },
+    {
+      "C45_adjoint_convention": "F^a_bc=-i f^{abc}",
+      "C45_fundamental_convention": "T^a=lambda^a/2; Tr(TaTb)=delta_ab/2",
+      "C47_triplet_isometry": "U_(c,b),alpha=T^b_(c,alpha)/sqrt(C_F)",
+      "complete_C115_current_factor": false,
+      "exact_scalar_times_identity": {
+        "denominator": 1,
+        "exact": "3",
+        "numerator": 3
+      },
+      "hermiticity_residual": 0.0,
+      "matrix": [
+        [
+          [
+            3.0000000000000004,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3.0000000000000004,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            3.0000000000000013,
+            0.0
+          ]
+        ]
+      ],
+      "product": "J_gJ_g",
+      "root": "6f9e113bbcef447d7149410341aa3f760c68dc9dd6ccc4c442b54bc3ada5e62b",
+      "scalar_identity_residual": 1.472877282518059e-15,
+      "schema": "C404-C117-I2-TRIPLET-COLOR-PRODUCT-V1",
+      "source_phase_and_gluon_derivative_bound": false,
+      "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+    }
+  ],
+  "root": "2cce9562d777a16ccf925fbae6c55449be21797e3ad98ab35e4ba5616fea1ebf",
+  "schema": "C404-C117-I2-COLOR-SPIN-VALIDATION-V1",
+  "spin_selection": {
+    "axis": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "gluon_rule": "delta_(h_g,out,h_g,in) from transverse polarization contraction",
+    "matrix": [
+      [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ]
+    ],
+    "ordered_gluon_derivative_factor_included": false,
+    "quark_rule": "delta_(h_q,out,h_q,in) from gamma+ good-component current",
+    "root": "2ecba4de5d055a0c36d5c735ef11ba5bd6684f2876b257428262e3d042875f65",
+    "schema": "C404-C117-I2-JPLUS-SPIN-SELECTION-V1",
+    "spin_flip_entries": 0,
+    "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+  },
+  "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE",
+  "total_charge_Casimir_residual": 9.678699938266253e-16,
+  "triplet_isometry_residual": 3.8459253727671276e-16
+}
