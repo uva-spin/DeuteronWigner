@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "phase": "C400.S2_CHATGPT_CORRECTIVE_IMPLEMENTATION_LOCK",
+  "decision_owner": "USER_CHATGPT",
+  "integration_executor": "CODEX",
+  "baseline_bundle_sha256": "a3433e621046246a4cb70668240567a632ef4ec23a9190b34efdc980aed2381b",
+  "required_statuses": [
+    "C144_DIAGNOSTIC_EIGENSTATE_SMOKE_PATH_READY",
+    "C396_19_COORDINATE_BINDING_INCOMPLETE",
+    "SECTOR_IDENTITY_UNVERIFIED",
+    "RANK_NOT_EVALUATED",
+    "PHYSICAL_FIT_NOT_AUTHORIZED"
+  ],
+  "required_tests": {
+    "command": "PYTHONPATH=src pytest -q tests/test_c400_p1_mechanical_closure.py tests/test_c400_p1b_autonomous.py tests/test_c400_p1c.py tests/test_c400_s2_corrective.py",
+    "expected_collected": 43,
+    "expected_passed": 43,
+    "expected_failed": 0
+  },
+  "required_compile_command": "PYTHONPATH=src python -m compileall -q src/deuteron_wigner/bridge/c400_s2_corrective tools/generate_c400_s2_corrective.py tests/test_c400_s2_corrective.py",
+  "invariants": {
+    "C396_binding_rows": 57,
+    "C396_complete_numerical_apply_paths": 0,
+    "C396_forward_map_ready": false,
+    "C144_derivative_audit_rows": 33,
+    "C144_corrected_derivatives_verified": 33,
+    "C144_historical_derivative_mismatches": 6,
+    "C144_numerically_unbound_coordinates_per_resolution": [
+      "eta_3",
+      "eta_4",
+      "eta_5",
+      "eta_6",
+      "eta_7",
+      "eta_8"
+    ],
+    "unprojected_state_label": "UNPROJECTED_DIAGNOSTIC_EIGENPAIR",
+    "semantic_replay_pass": true,
+    "raw_eigenvector_hashes_as_scientific_identity": false,
+    "production_current_selected": false,
+    "physical_fit_authorized": false,
+    "physical_rank": null,
+    "resolution_average": false
+  },
+  "adversarial_cases": [
+    "phi_coupling historical derivative mismatch",
+    "eta_2 historical derivative missing retained C129 contribution",
+    "eta_3 through eta_8 zero diagnostic response",
+    "malformed coordinate ID",
+    "unprojected state cannot acquire physical quantum numbers from labels",
+    "rank-one numerical projector",
+    "surplus state inside degenerate component",
+    "cross-sector energy-order crossing",
+    "globally ambiguous assignment objective",
+    "matched LF/LPS routes with different route-local conventions",
+    "current invariant mismatch",
+    "actual dependency path rather than C64 substitution",
+    "phase and degenerate-subspace invariant replay",
+    "multi-step/multi-tolerance derivative evidence"
+  ],
+  "forbidden_changes": [
+    "rewrite historical P1/P1B/P1C evidence",
+    "substitute C144 operators for missing C396 operators",
+    "fill missing operators or coordinates with zero",
+    "choose a minimum-norm representative",
+    "assign deuteron-sector identity without a numerical projector",
+    "choose a production current prescription",
+    "claim physical rank or coordinate irrelevance",
+    "perform a physical fit",
+    "average resolutions",
+    "activate, merge, or push without explicit user approval"
+  ],
+  "integration_result_required": [
+    "applied patch hash",
+    "final git diff",
+    "changed-file inventory",
+    "exact command ledger",
+    "environment record",
+    "focused test result",
+    "upstream/full local regression result",
+    "generated evidence hashes",
+    "repository-specific discrepancies",
+    "local phase commit only if all required tests pass"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "all_clear": true,
+  "physical_claim": false,
+  "rows": [
+    {
+      "bytes": 611,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "status"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/__init__.py",
+      "sha256": "8cbbdf5ecbfd4db397229561bff26d7d8effd484dc9095e19fa43dfaf3c08c70"
+    },
+    {
+      "bytes": 11838,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "copy",
+        "dataclasses",
+        "deuteron_wigner.bridge",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/coordinate_bindings.py",
+      "sha256": "4dca3de8beebe2e44887262914e133aba342b5f29cd346abd0c8730d2a76c527"
+    },
+    {
+      "bytes": 22733,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "dataclasses",
+        "deuteron_wigner.covariant_current",
+        "deuteron_wigner.lf_current",
+        "enum",
+        "numpy",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/current_adapter.py",
+      "sha256": "2ca50d2544f929dff1e106552abe4f8aecc2aef9200ec89735f6a66575f11147"
+    },
+    {
+      "bytes": 6744,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "dataclasses",
+        "deuteron_wigner.bridge.c400_s2_corrective.current_adapter",
+        "numpy",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/current_compare.py",
+      "sha256": "3dc72bcc396a9121094ac8c21dcc4b58c0f475b219c690d85979e481aa66d75d"
+    },
+    {
+      "bytes": 13242,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "copy",
+        "dataclasses",
+        "deuteron_wigner.bridge.hqcd4",
+        "deuteron_wigner.bridge.hqcdopapi",
+        "numpy",
+        "scipy.sparse",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/derivative_integrity.py",
+      "sha256": "29f4730a7070e8aaf6b0e4c764de90fc76332f8c03933c42764741004175dec4"
+    },
+    {
+      "bytes": 4097,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "coordinate_bindings",
+        "dataclasses",
+        "derivative_integrity",
+        "state_identity",
+        "status",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/forward_integrity.py",
+      "sha256": "25eed68216175536abfd144d42e9c4820deaabb788c47b82dae20e2c5d438b62"
+    },
+    {
+      "bytes": 14581,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "os",
+        "pathlib",
+        "re",
+        "state_identity",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/replay_integrity.py",
+      "sha256": "c27749762c04c4657ecb4b590fc2404f46f8f7c4dd760a8679823d5590de78bd"
+    },
+    {
+      "bytes": 16027,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "dataclasses",
+        "derivative_integrity",
+        "hashlib",
+        "numpy",
+        "scipy.linalg",
+        "scipy.sparse",
+        "scipy.sparse.linalg",
+        "tracking",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/state_identity.py",
+      "sha256": "7a631a96490ec6136d5dccbcc2b47398392211a935a71c32a0fdcc9cbed2343d"
+    },
+    {
+      "bytes": 2570,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "copy",
+        "hashlib",
+        "json",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/status.py",
+      "sha256": "e79ce4f1372db99dedd6fc1dd1e9c3bb0650e9155d649ff6bd4affc74fb3bc36"
+    },
+    {
+      "bytes": 18747,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "dataclasses",
+        "numpy",
+        "scipy.optimize",
+        "typing"
+      ],
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/tracking.py",
+      "sha256": "55f0e0777c31769403ada10cd1f9f66638324cda3c4ac0c19729d8d17ec5adfd"
+    },
+    {
+      "bytes": 21480,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "dataclasses",
+        "deuteron_wigner.bridge.c400_s2_corrective.coordinate_bindings",
+        "deuteron_wigner.bridge.c400_s2_corrective.current_adapter",
+        "deuteron_wigner.bridge.c400_s2_corrective.current_compare",
+        "deuteron_wigner.bridge.c400_s2_corrective.derivative_integrity",
+        "deuteron_wigner.bridge.c400_s2_corrective.forward_integrity",
+        "deuteron_wigner.bridge.c400_s2_corrective.replay_integrity",
+        "deuteron_wigner.bridge.c400_s2_corrective.state_identity",
+        "deuteron_wigner.bridge.c400_s2_corrective.status",
+        "deuteron_wigner.bridge.c400_s2_corrective.tracking",
+        "deuteron_wigner.lf_current",
+        "inspect",
+        "json",
+        "numpy",
+        "pathlib",
+        "pytest"
+      ],
+      "path": "tests/test_c400_s2_corrective.py",
+      "sha256": "81500d6f2ad3c3c330daa7c1ad86f8dbea32308851841cf6fcb5cbe038def8e8"
+    },
+    {
+      "bytes": 17784,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "argparse",
+        "dataclasses",
+        "datetime",
+        "deuteron_wigner.bridge.c400_s2_corrective.coordinate_bindings",
+        "deuteron_wigner.bridge.c400_s2_corrective.current_adapter",
+        "deuteron_wigner.bridge.c400_s2_corrective.current_compare",
+        "deuteron_wigner.bridge.c400_s2_corrective.derivative_integrity",
+        "deuteron_wigner.bridge.c400_s2_corrective.forward_integrity",
+        "deuteron_wigner.bridge.c400_s2_corrective.replay_integrity",
+        "deuteron_wigner.bridge.c400_s2_corrective.state_identity",
+        "deuteron_wigner.bridge.c400_s2_corrective.status",
+        "deuteron_wigner.bridge.c400_s2_corrective.tracking",
+        "deuteron_wigner.lf_current",
+        "hashlib",
+        "json",
+        "numpy",
+        "os",
+        "pathlib",
+        "platform",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "typing"
+      ],
+      "path": "tools/generate_c400_s2_corrective.py",
+      "sha256": "0ab538db69cb00dbed730a09ba8ff16cdfdae72a4d3db634e14b8bd8131bc65a"
+    },
+    {
+      "bytes": 13089,
+      "dependency_closed": true,
+      "forbidden_imports": [],
+      "import_modules": [
+        "__future__",
+        "ast",
+        "dataclasses",
+        "datetime",
+        "deuteron_wigner.bridge.c400_s2_corrective.current_adapter",
+        "deuteron_wigner.bridge.c400_s2_corrective.state_identity",
+        "deuteron_wigner.lf_current",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "typing"
+      ],
+      "path": "tools/generate_c400_s2_merge_closure.py",
+      "sha256": "a2ed4817cb47399e262d989f9103fb1093a9154845a8f7fc621157e1674778f8"
+    }
+  ],
+  "schema": "C400-S2M-DEPENDENCY-CLOSURE-V1",
+  "status": "S2_CURRENT_LAYER_DEPENDENCY_CLOSED",
+  "unmerged_P1_P1B_P1C_required_for_S2_import": false
+}

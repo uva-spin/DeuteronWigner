@@ -1,0 +1,19 @@
+{
+  "schema": "C400-S2M2-LIVE-INTEGRATION-SCIENTIFIC-NONCLAIMS-V1",
+  "C396_forward_map_ready": false,
+  "physical_state_established": false,
+  "production_current_selected": false,
+  "physical_fit_authorized": false,
+  "physical_rank": null,
+  "coordinate_selected_or_zeroed": false,
+  "resolution_average": false,
+  "hamiltonian_activated": false,
+  "C64_artifact_manufactured": false,
+  "next_scientific_phase_launched": false,
+  "nonclaims": [
+    "LPS unit invariance is an adapter diagnostic, not a physical-current selection.",
+    "Projected-state semantic checks do not establish a physical deuteron state.",
+    "S2M2 does not fill missing C396 operators or create a likelihood/covariance.",
+    "The C64 runtime artifact gap remains unresolved."
+  ]
+}

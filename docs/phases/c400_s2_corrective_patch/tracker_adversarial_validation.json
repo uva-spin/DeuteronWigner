@@ -1,0 +1,275 @@
+{
+  "complete_assignment_ambiguity": {
+    "ambiguous": true,
+    "best_objective": 1.6,
+    "columns": [
+      1,
+      0
+    ],
+    "overlap": [
+      [
+        0.9,
+        0.8
+      ],
+      [
+        0.8,
+        0.7
+      ]
+    ],
+    "rows": [
+      0,
+      1
+    ],
+    "second_best_objective": 1.6
+  },
+  "cross_sector_energy_crossing": {
+    "ambiguous_previous_state_ids": [],
+    "assignment_ambiguous": false,
+    "assignments": [
+      [
+        "J1-old",
+        "J1-new"
+      ],
+      [
+        "J2-old",
+        "J2-new"
+      ]
+    ],
+    "best_assignment_objectives": {
+      "(('J', '1'),)": 1.0,
+      "(('J', '2'),)": 1.0
+    },
+    "current_state_ids": [
+      "J1-new",
+      "J2-new"
+    ],
+    "individual_identity_status": {
+      "J1-new": "INDIVIDUAL_OVERLAP_CONTINUED",
+      "J2-new": "INDIVIDUAL_OVERLAP_CONTINUED"
+    },
+    "missing_previous_state_ids": [],
+    "near_degenerate_groups": [],
+    "overlap_matrix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "previous_state_ids": [
+      "J1-old",
+      "J2-old"
+    ],
+    "second_best_assignment_objectives": {
+      "(('J', '1'),)": null,
+      "(('J', '2'),)": null
+    },
+    "subspace_diagnostics": {},
+    "surplus_current_state_ids": [],
+    "swap_detected": false,
+    "swap_sectors": [],
+    "tracked_states": [
+      {
+        "current_state_id": "J1-new",
+        "eigenvalue_gap": "Infinity",
+        "overlap_magnitude": 1.0,
+        "phase_aligned_vector": [
+          {
+            "imag": 0.0,
+            "real": 1.0
+          },
+          {
+            "imag": 0.0,
+            "real": 0.0
+          }
+        ],
+        "phase_factor": {
+          "imag": 0.0,
+          "real": 1.0
+        },
+        "previous_state_id": "J1-old",
+        "sector": [
+          [
+            "J",
+            "1"
+          ]
+        ]
+      },
+      {
+        "current_state_id": "J2-new",
+        "eigenvalue_gap": "Infinity",
+        "overlap_magnitude": 1.0,
+        "phase_aligned_vector": [
+          {
+            "imag": 0.0,
+            "real": 0.0
+          },
+          {
+            "imag": 0.0,
+            "real": 1.0
+          }
+        ],
+        "phase_factor": {
+          "imag": 0.0,
+          "real": 1.0
+        },
+        "previous_state_id": "J2-old",
+        "sector": [
+          [
+            "J",
+            "2"
+          ]
+        ]
+      }
+    ]
+  },
+  "physical_state_claim": false,
+  "rectangular_degenerate": {
+    "ambiguous_previous_state_ids": [],
+    "assignment_ambiguous": false,
+    "assignments": [
+      [
+        "a",
+        "a-now"
+      ]
+    ],
+    "best_assignment_objectives": {
+      "(('J', '1'),)": 1.0
+    },
+    "current_state_ids": [
+      "a-now",
+      "surplus"
+    ],
+    "individual_identity_status": {
+      "a-now": "SUBSPACE_ONLY_NEAR_DEGENERACY",
+      "surplus": "SURPLUS_UNMATCHED"
+    },
+    "missing_previous_state_ids": [],
+    "near_degenerate_groups": [
+      [
+        "a-now",
+        "surplus"
+      ]
+    ],
+    "overlap_matrix": [
+      [
+        1.0,
+        0.0
+      ]
+    ],
+    "previous_state_ids": [
+      "a"
+    ],
+    "second_best_assignment_objectives": {
+      "(('J', '1'),)": 0.0
+    },
+    "subspace_diagnostics": {
+      "('a-now', 'surplus')": {
+        "aligned_current_basis": null,
+        "current_projector": [
+          [
+            {
+              "imag": 0.0,
+              "real": 1.0
+            },
+            {
+              "imag": 0.0,
+              "real": 0.0
+            }
+          ],
+          [
+            {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            {
+              "imag": 0.0,
+              "real": 1.0
+            }
+          ]
+        ],
+        "current_state_ids": [
+          "a-now",
+          "surplus"
+        ],
+        "old_projector": [
+          [
+            {
+              "imag": 0.0,
+              "real": 1.0
+            },
+            {
+              "imag": 0.0,
+              "real": 0.0
+            }
+          ],
+          [
+            {
+              "imag": 0.0,
+              "real": 0.0
+            },
+            {
+              "imag": 0.0,
+              "real": 0.0
+            }
+          ]
+        ],
+        "previous_state_ids": [
+          "a"
+        ],
+        "principal_angles_rad": [
+          0.0
+        ],
+        "procrustes_transport": null,
+        "projector_frobenius_distance": 1.0,
+        "rectangular": true,
+        "sector": [
+          [
+            "J",
+            "1"
+          ]
+        ],
+        "singular_values": [
+          1.0
+        ]
+      }
+    },
+    "surplus_current_state_ids": [
+      "surplus"
+    ],
+    "swap_detected": false,
+    "swap_sectors": [],
+    "tracked_states": [
+      {
+        "current_state_id": "a-now",
+        "eigenvalue_gap": 0.05,
+        "overlap_magnitude": 1.0,
+        "phase_aligned_vector": [
+          {
+            "imag": 0.0,
+            "real": 1.0
+          },
+          {
+            "imag": 0.0,
+            "real": 0.0
+          }
+        ],
+        "phase_factor": {
+          "imag": 0.0,
+          "real": 1.0
+        },
+        "previous_state_id": "a",
+        "sector": [
+          [
+            "J",
+            "1"
+          ]
+        ]
+      }
+    ]
+  },
+  "schema": "C400-S2-TRACKER-ADVERSARIAL-VALIDATION-V1"
+}

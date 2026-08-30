@@ -1,0 +1,21 @@
+{
+  "schema": "C400-S2-LIVE-INTEGRATION-STATUS-V1",
+  "status": "LIVE_INTEGRATION_ACCEPTANCE_READY",
+  "next_owner": "USER_CHATGPT",
+  "focused_acceptance": {"collected": 43, "passed": 43, "failed": 0},
+  "invariants": {
+    "C396_binding_rows": 57,
+    "C396_complete_numerical_apply_paths": 0,
+    "C144_derivative_audit_rows": 33,
+    "C144_corrected_derivatives_verified": 33,
+    "C144_historical_derivative_mismatches": 6,
+    "semantic_replay_pass": true,
+    "physical_fit_authorized": false,
+    "physical_rank": null,
+    "resolution_average": false
+  },
+  "remaining_repository_dependency": "data/runtime/c64_qgtm2/index.json",
+  "remaining_scientific_frontier": "source-owned K-local numerical realization of the C396 coordinate operators and approved sector/current interfaces",
+  "commit_created": false,
+  "merge_or_push": false
+}
