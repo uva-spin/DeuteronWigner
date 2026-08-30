@@ -1,0 +1,150 @@
+{
+  "accepted_repository_baseline": "ada80920fb51617333c9b87a40d6538a0b0de915",
+  "activation_gate_status": "NOT_READY",
+  "aggregate": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 44,
+    "selected_test_surface_complete": true
+  },
+  "commands": [
+    {
+      "class": "C401 focused physics/numerical tests",
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c401_c396_mass_directions.py",
+      "exit_code": 0,
+      "log_sha256": "c2c2eac426b7e08a4a7f71dae6550f48c3b05b88ede03af9d59e788eb02b1af1",
+      "result": "14 passed in 10.72s"
+    },
+    {
+      "class": "source authority regression",
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c128_free2.py tests/test_c47_basis1.py::test_c47_basis_contracts_close_without_action_matrices",
+      "exit_code": 0,
+      "log_sha256": "5fa658f1457dad9d406fae0a8dc18487be8d16607b01f1899479c0fef2c4963c",
+      "result": "4 passed in 10.57s"
+    },
+    {
+      "class": "accepted C400.S2 regression",
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c400_s2_corrective.py",
+      "exit_code": 0,
+      "log_sha256": "bfe79a60b07bc279d61796ced57f3c91a740a03aabba19a96ffcd22f5e7bda47",
+      "result": "26 passed in 27.86s"
+    }
+  ],
+  "compileall": "PASS",
+  "environment": {
+    "environment_note": "This review runtime is newer than the project-declared pins; the live Codex integration must rerun the exact acceptance commands in the canonical environment.",
+    "numpy": "2.3.5",
+    "pytest": "9.0.2",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  },
+  "physical_fit_authorized": false,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "schema": "C401-CHATGPT-STAGE-TEST-EXECUTION-V1",
+  "two_clean_builds": {
+    "all_byte_identical": true,
+    "files_first": 16,
+    "files_second": 16,
+    "pass": true,
+    "rows": [
+      {
+        "byte_identical": true,
+        "bytes": 20526,
+        "path": "basis_fraction_provenance.json",
+        "sha256": "ccf4191357616775d361746a627e3f212f915d69a3d8c115c1dc405ff6e7387b"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 780,
+        "path": "binding_update_summary.json",
+        "sha256": "5e914a9b41c12715a28aa4eb81f74db7606bbe732eabd648491b1bb17328e387"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 820,
+        "path": "blocker_or_completion.json",
+        "sha256": "0ec6927384052f6c12c26389ad22c60b0241492c29d6f52e3cb28b93d726d262"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 99879,
+        "path": "c396_coordinate_binding_inventory.json",
+        "sha256": "ae96fa36f4ba240d2484c677580939cfabdb0ca99947f5f209e7195fefce7281"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 2305,
+        "path": "coordinate_reduction.json",
+        "sha256": "c2f90ce411f9a4e7a6db956a0542c4d6dbcb8a762df6ab4e1846940c8d2253a0"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 14243,
+        "path": "finite_difference_validation.json",
+        "sha256": "b6cf658859486ec24766fb75dcc09e083bac8e3346bbbf1fe4502a7b68e768bd"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 3127,
+        "path": "generation_result.json",
+        "sha256": "cb8a0f57dc9773d0ac6bba3e5b3b1002b89200c8170d86c9064846f282bcb51b"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 5584,
+        "path": "historical_c128_derivative_comparison.json",
+        "sha256": "968ccc97d77aa522530eea1a98dc014a475ece33f28b28e0c024e679617eb1e4"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 10044,
+        "path": "historical_c128_partition_defect.json",
+        "sha256": "efa5abd50815cc57c9332a1c38954024e412f086663ad3c7cbf724a533e19f29"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 2592,
+        "path": "implementation_report.md",
+        "sha256": "66be174055f53af0bd0c25d925e97cd87b2e6b351560c15fd059cdb9fc418ebf"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 3105,
+        "path": "input_freeze.json",
+        "sha256": "da09f997ff5c178b82016df7d03df286758838a998921a2e339a27226d0d5c02"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 20414,
+        "path": "mass_direction_operator_inventory.json",
+        "sha256": "1d526e9bc633df9b6858b52c74a6a9c3f8c51b24b46ff185d319dfc743b2117d"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 571,
+        "path": "release.json",
+        "sha256": "e8c82c1dd17d2af5c429c04fafb68e6b67970d7ef607a5ae0ab5c2ad9e2f182c"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 2520,
+        "path": "resolution_records.json",
+        "sha256": "207c3e6e9bf9158eb6302b7c99b319e1d8e77e25fc31c705ea71b4046065d278"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 892,
+        "path": "scientific_nonclaims.json",
+        "sha256": "aec0e07014e6e7f6d2af60aa85a3adc48ddde80cd9daaefcf7a0de49a864b0c7"
+      },
+      {
+        "byte_identical": true,
+        "bytes": 12456,
+        "path": "sparse_matrix_free_validation.json",
+        "sha256": "51fb7ce2625297dfe17a6a9a6820617a1eab21ab1c372203063c48ec706a08b0"
+      }
+    ],
+    "same_names": true,
+    "schema": "C401-GENERATOR-TWO-CLEAN-BUILDS-V2"
+  }
+}

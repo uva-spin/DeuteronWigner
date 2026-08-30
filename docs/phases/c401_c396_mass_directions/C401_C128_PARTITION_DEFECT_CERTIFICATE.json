@@ -1,0 +1,36 @@
+{
+  "C144_diagnostic_path": {
+    "directly_uses_historical_C128_partition_values": false,
+    "reason": "C144 uses an explicitly nonphysical ID-derived fixture rule; it does not evaluate the C128 partition fractions.",
+    "status_changed": false
+  },
+  "C401_resolution": "Use a versioned C401 adapter with C47 fractions; preserve C128 historical files and use C128 only for accepted direct-sum dimensions/order.",
+  "activation_gate_status": "NOT_READY",
+  "affected_numerical_objects": [
+    "historical C128 qg quark-mass derivative",
+    "historical C128 qg transverse kinetic denominator"
+  ],
+  "affected_resolutions": [
+    "K9",
+    "K11",
+    "K13"
+  ],
+  "defect": {
+    "fraction_sum_historical": "1 + 1/K2",
+    "kq_residual": "historical minus source = 1/2",
+    "xg_residual": "0",
+    "xq_residual": "historical minus source = 1/K2"
+  },
+  "historical_files_modified": false,
+  "historical_implementation": "deuteron_wigner.bridge.free2.core._partitions",
+  "physical_parameter_selected": false,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "record_type": "C401_C128_PARTITION_DEFECT_CERTIFICATE",
+  "schema_version": "1.0",
+  "source_authority": "C45/C47 exact positive APBC/PBC longitudinal partitions",
+  "status": "HISTORICAL_C128_LONGITUDINAL_QUARK_FRACTION_IMPLEMENTATION_DEFECT_CONFIRMED",
+  "unaffected_at_material_tolerance": [
+    "historical C128 q-sector quark-mass derivative",
+    "historical C128 qg gluon-mass derivative"
+  ]
+}

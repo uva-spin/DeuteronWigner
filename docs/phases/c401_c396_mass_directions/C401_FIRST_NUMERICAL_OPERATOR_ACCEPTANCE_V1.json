@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "record_type": "C401_FIRST_NUMERICAL_OPERATOR_ACCEPTANCE",
+  "scope": "source-faithful quark/gluon mass-squared operator directions",
+  "required_resolutions": ["K9", "K11", "K13"],
+  "required_operators": ["D_mu_q_sq", "D_delta_mu_g_sq"],
+  "required_tests": [
+    "source C128 basis dimensions match",
+    "q-sector values are exactly 1 and 0",
+    "qg-sector values are exactly 1/x_q and 1/x_g",
+    "all qg fractions are finite positive and sum to one",
+    "sparse and matrix-free routes agree",
+    "operators are Hermitian",
+    "finite differences of the source C128 free operator agree at multiple steps",
+    "no C144 diagnostic entry-value rule is imported",
+    "no vacuum boundary or truncation fake matrix is created",
+    "no physical parameter value is selected"
+  ],
+  "required_outputs": [
+    "operator source and basis provenance",
+    "sparse records",
+    "matrix-free records",
+    "finite-difference validation",
+    "K-local unit and dimension report",
+    "scientific nonclaims"
+  ],
+  "success_status": "C396_FIRST_SIX_K_LOCAL_NUMERICAL_BINDINGS_READY_DIAGNOSTIC_ONLY",
+  "rank_status_after_success": "RANK_NOT_EVALUATED",
+  "physical_fit_authorized_after_success": false,
+  "activation_after_success": false
+}

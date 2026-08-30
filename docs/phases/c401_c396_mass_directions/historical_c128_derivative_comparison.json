@@ -1,0 +1,123 @@
+{
+  "root": "8b1cbfef8b06900a25573d27f7eed4a5c8fcedf3620e20d08ef43fb8d67210ef",
+  "rows": [
+    {
+      "expected_result": {
+        "D_delta_mu_g_sq": "MATCH_EXPECTED",
+        "D_mu_q_sq": "MISMATCH_EXPECTED_AND_EXPOSED"
+      },
+      "historical_C128_modified": false,
+      "partition_defect_root": "25035fb713eeded2855cc9492ff8555d50d7bd590d1e268a39ea76dddaf7ec32",
+      "resolution": "K9",
+      "root": "ef1fd926032ccbd7bbbd614b643aad6819fe401d32b500be2b7059e1253523b7",
+      "rows": [
+        {
+          "byte_identical": false,
+          "comparison_tolerance": 1.5987211554602254e-14,
+          "direction": "D_mu_q_sq",
+          "entries_different": 1344,
+          "historical_diagonal_hash": "ea88bd7ef0d8516603893c1dda520d21fba895165c85f498558edeff5f1227c6",
+          "historical_matches_source_corrected": false,
+          "material_entries_different": 1344,
+          "maximum_absolute_difference": 4.5,
+          "raw_entries_different": 1344,
+          "relative_frobenius_difference": 0.4695795658632523,
+          "source_corrected_diagonal_hash": "1bc0bc0f9700751b91c97716369220232ffd3c3e5719c2bb99aed6c9918c5540"
+        },
+        {
+          "byte_identical": true,
+          "comparison_tolerance": 7.993605777301127e-15,
+          "direction": "D_delta_mu_g_sq",
+          "entries_different": 0,
+          "historical_diagonal_hash": "b46b69f59adfe2ca9174ed896bad022e36f77fd98275b4a196486adb3189a83e",
+          "historical_matches_source_corrected": true,
+          "material_entries_different": 0,
+          "maximum_absolute_difference": 0.0,
+          "raw_entries_different": 0,
+          "relative_frobenius_difference": 0.0,
+          "source_corrected_diagonal_hash": "b46b69f59adfe2ca9174ed896bad022e36f77fd98275b4a196486adb3189a83e"
+        }
+      ],
+      "schema": "C401-HISTORICAL-C128-MASS-DERIVATIVE-COMPARISON-V1"
+    },
+    {
+      "expected_result": {
+        "D_delta_mu_g_sq": "MATCH_EXPECTED",
+        "D_mu_q_sq": "MISMATCH_EXPECTED_AND_EXPOSED"
+      },
+      "historical_C128_modified": false,
+      "partition_defect_root": "25035fb713eeded2855cc9492ff8555d50d7bd590d1e268a39ea76dddaf7ec32",
+      "resolution": "K11",
+      "root": "51fa4ed3dd336fce69a796fa01c73ac102385c10ba616802f0b6c5e76a8ba0e3",
+      "rows": [
+        {
+          "byte_identical": false,
+          "comparison_tolerance": 1.9539925233402755e-14,
+          "direction": "D_mu_q_sq",
+          "entries_different": 2700,
+          "historical_diagonal_hash": "23edc6b8ff7a485760b740f704e00b5eb4b4571db2da46232c0a250c4382cf51",
+          "historical_matches_source_corrected": false,
+          "material_entries_different": 2700,
+          "maximum_absolute_difference": 5.5,
+          "raw_entries_different": 2700,
+          "relative_frobenius_difference": 0.4672621216261355,
+          "source_corrected_diagonal_hash": "dd8a0fbb887afdd091cbdb357573792c74a824cfeac903251a323ba64eb12c09"
+        },
+        {
+          "byte_identical": false,
+          "comparison_tolerance": 9.769962616701378e-15,
+          "direction": "D_delta_mu_g_sq",
+          "entries_different": 0,
+          "historical_diagonal_hash": "3d0d5c038f28eac299076cf39313deecdfd3d97a550b3cc11e5d808f76a0e370",
+          "historical_matches_source_corrected": true,
+          "material_entries_different": 0,
+          "maximum_absolute_difference": 2.220446049250313e-16,
+          "raw_entries_different": 540,
+          "relative_frobenius_difference": 3.3370651618728835e-17,
+          "source_corrected_diagonal_hash": "7cb33d80a672ecc95de2209531494470042218e2e2cd19496991411e9ef4835e"
+        }
+      ],
+      "schema": "C401-HISTORICAL-C128-MASS-DERIVATIVE-COMPARISON-V1"
+    },
+    {
+      "expected_result": {
+        "D_delta_mu_g_sq": "MATCH_EXPECTED",
+        "D_mu_q_sq": "MISMATCH_EXPECTED_AND_EXPOSED"
+      },
+      "historical_C128_modified": false,
+      "partition_defect_root": "25035fb713eeded2855cc9492ff8555d50d7bd590d1e268a39ea76dddaf7ec32",
+      "resolution": "K13",
+      "root": "946a8c51e1792995946ca3f5f1cad550f05f9766920b1585bf18841b9c68e6be",
+      "rows": [
+        {
+          "byte_identical": false,
+          "comparison_tolerance": 2.3092638912203256e-14,
+          "direction": "D_mu_q_sq",
+          "entries_different": 4752,
+          "historical_diagonal_hash": "c610c3392138484cda8c83a74a1cb617fbeebb1a880a1095584b337224ef2319",
+          "historical_matches_source_corrected": false,
+          "material_entries_different": 4752,
+          "maximum_absolute_difference": 6.5,
+          "raw_entries_different": 4752,
+          "relative_frobenius_difference": 0.4657006454236538,
+          "source_corrected_diagonal_hash": "72c5b55debbffc15b99e4b531f39986b030258e0a0e30c26c632fdc5cbd00120"
+        },
+        {
+          "byte_identical": false,
+          "comparison_tolerance": 1.1546319456101628e-14,
+          "direction": "D_delta_mu_g_sq",
+          "entries_different": 0,
+          "historical_diagonal_hash": "1a0143a2fc354aff3efa84b2eeacccfb3ef04a8a780d2043b2d3804cc701e2ed",
+          "historical_matches_source_corrected": true,
+          "material_entries_different": 0,
+          "maximum_absolute_difference": 2.220446049250313e-16,
+          "raw_entries_different": 792,
+          "relative_frobenius_difference": 2.7972508676655965e-17,
+          "source_corrected_diagonal_hash": "5aa11f64e8f5882a133c1d278c630c7f0bdacc7f412226292b3d8ab30ee08f00"
+        }
+      ],
+      "schema": "C401-HISTORICAL-C128-MASS-DERIVATIVE-COMPARISON-V1"
+    }
+  ],
+  "schema": "C401-HISTORICAL-C128-DERIVATIVE-COMPARISON-SET-V1"
+}

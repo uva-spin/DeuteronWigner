@@ -1,0 +1,92 @@
+{
+  "accepted_repository_baseline": "ada80920fb51617333c9b87a40d6538a0b0de915",
+  "historical_packages_immutable": true,
+  "root": "61bf0353dd24fe34a9fd85923a6d91f4832d146aad7a5944026e69a19eb4042a",
+  "schema": "C401-C396-MASS-DIRECTION-INPUT-FREEZE-V1",
+  "live_integration": {
+    "branch": "codex/c401-c396-mass-directions",
+    "starting_head": "ada80920fb51617333c9b87a40d6538a0b0de915",
+    "starting_status_short": [],
+    "worktree": "/Users/dustin/work/DeuteronWigner/.phase_worktrees/c401_c396_mass_directions",
+    "package_root_env": "/Users/dustin/Downloads/deuteronwigner_c401_first_numerical_c396_mass_directions_package",
+    "package_manifest_sha256": "6f79840f585da38e238009474712a990ef7368e7433fe3c8afbc2383bdd04d0e",
+    "patch_sha256": "df20da4c05555eadbec5246ce91f9b21d0a53b50673b566bee54dc6d2b0c2f3b",
+    "patch_sha256_matches_PACKAGE_INFO": true,
+    "baseline_commit_present_locally": true,
+    "git_apply_check_exit_code": 0,
+    "python": "3.9.6",
+    "pytest": "8.4.2",
+    "numpy": "1.26.3",
+    "scipy": "1.13.0",
+    "git": "2.39.3"
+  },
+  "science_constraints": {
+    "C144_proxy_allowed": false,
+    "activation_gate_status": "NOT_READY",
+    "physical_parameter_selection": false,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "resolution_average": false
+  },
+  "source_files": [
+    {
+      "bytes": 1139,
+      "path": "references/c43_light_front_qcd_gauge_action.tex",
+      "sha256": "ce1e5b41bb9af9cfa93f3b7269c201f090d311b6610653406db6af7f28c05015"
+    },
+    {
+      "bytes": 14812,
+      "path": "src/deuteron_wigner/bridge/basis1/core.py",
+      "sha256": "4fde22f0ddcc3b098a3b7a0458b07fa956dc74121e44c2549d0072bd428c65bb"
+    },
+    {
+      "bytes": 21519,
+      "path": "src/deuteron_wigner/bridge/free2/core.py",
+      "sha256": "b95c6227b9ed2358fd6b8bddbe82faf3dc7ed6c7fed1c038a17707b4445aac66"
+    },
+    {
+      "bytes": 21111,
+      "path": "src/deuteron_wigner/bridge/hqcdid3/core.py",
+      "sha256": "3a5b408f6423b4f5453ee2aecf6934a5c0bc6484c9eaedf52994511b9de67d67"
+    },
+    {
+      "bytes": 13629,
+      "path": "src/deuteron_wigner/bridge/hqcdrenred/core.py",
+      "sha256": "50562e8ff0ca0216bf02c9b6d7ac7c7659a143430313097858127db2b6600657"
+    },
+    {
+      "bytes": 8513,
+      "path": "src/deuteron_wigner/bridge/hqcdrimassc43hamiltonianacceptphase1/core.py",
+      "sha256": "0ae9a68ea1a42de25c24d14f6cc2c7bd387a4b63ce6c5bbb3f053c6489caecd7"
+    },
+    {
+      "bytes": 11838,
+      "path": "src/deuteron_wigner/bridge/c400_s2_corrective/coordinate_bindings.py",
+      "sha256": "4dca3de8beebe2e44887262914e133aba342b5f29cd346abd0c8730d2a76c527"
+    },
+    {
+      "bytes": 12895,
+      "path": "src/deuteron_wigner/bridge/c401_c396_mass_directions/basis.py",
+      "sha256": "3e1b571eaa4ec6b80ec18ef99119154a90f2a737c96a118f25faab1e01cfcd79"
+    },
+    {
+      "bytes": 25788,
+      "path": "src/deuteron_wigner/bridge/c401_c396_mass_directions/operators.py",
+      "sha256": "91d929c4529ba0e9e6d48abe3b4c6fbfecb6b96ee4deacdd6d15f3aef22f616c"
+    },
+    {
+      "bytes": 8230,
+      "path": "src/deuteron_wigner/bridge/c401_c396_mass_directions/bindings.py",
+      "sha256": "e3d07d10656e454f7f3eeed3e075d6122415f5d1690fba1e02a551ec40a14695"
+    }
+  ],
+  "source_records": {
+    "C128_package_root": "d23ce7d398204f1e88612448564d26d17019fa832c8c041d3382c7be1553a6f1",
+    "C128_status": "C128_C43_SOURCE_DERIVED_BARE_FREE_Q_QG_M2_OPERATOR_READY",
+    "C396_package_root": "20365d9bbea3b7d9433ffff582628b27a38412d3824d9b3c6293ffa77e6e0e74",
+    "C396_status": "C396_K9_K11_K13_HERMITIAN_HAMILTONIAN_FAMILIES_CONDITIONALLY_ACCEPTED_PHYSICAL_COORDINATE_SELECTION_NEXT",
+    "C400_S2_inventory_root": "29fadb6b2a6beacb37f2a7e95102a96a1bb24c174fe62533b188ea557456158d",
+    "C400_S2_inventory_rows": 57,
+    "C400_S2_inventory_schema": "C400-S2-C396-COORDINATE-BINDING-INVENTORY-V1",
+    "C47_status": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY"
+  }
+}

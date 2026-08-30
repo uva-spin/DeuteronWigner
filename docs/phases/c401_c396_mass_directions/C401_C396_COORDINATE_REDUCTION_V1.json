@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "record_type": "C401_C396_COORDINATE_REDUCTION",
+  "baseline_commit": "ada80920fb51617333c9b87a40d6538a0b0de915",
+  "raw_slots_per_resolution": 19,
+  "resolutions": ["K9", "K11", "K13"],
+  "raw_classes": {
+    "counterterms": 6,
+    "source_nulls": 9,
+    "C117": 4
+  },
+  "reclassification": [
+    {
+      "raw_id": "ct_mass",
+      "new_role": "IDENTIFIED_RENORMALIZED_MASS_SQUARED_DIRECTION",
+      "numerical_matrix_candidate": true,
+      "implementation_coordinate": "mu_q_sq",
+      "reason": "bare-mass/counterterm split is scheme dependent; implement the source-identified mass-squared combination"
+    },
+    {
+      "raw_id": "ct_vacuum_energy",
+      "new_role": "VACUUM_ONLY_OUTSIDE_RETAINED_Q_QG_DIRECT_SUM",
+      "numerical_matrix_candidate": false,
+      "reason": "vacuum-only direction is excluded from the retained fixed-particle projected Hamiltonian"
+    },
+    {
+      "raw_id": "ct_gluon_mass",
+      "new_role": "K_LOCAL_GLUON_ONE_BODY_MASS_SQUARED_DIRECTION",
+      "numerical_matrix_candidate": true,
+      "implementation_coordinate": "delta_mu_g_sq"
+    },
+    {
+      "raw_id": "ct_sector",
+      "new_role": "MATRIX_DIRECTION_OWNER_NORMALIZATION_REQUIRED",
+      "numerical_matrix_candidate": true
+    },
+    {
+      "raw_id": "ct_boundary",
+      "new_role": "NONMATRIX_DOMAIN_OR_BOUNDARY_PARAMETER",
+      "numerical_matrix_candidate": false
+    },
+    {
+      "raw_id": "ct_truncation",
+      "new_role": "NONMATRIX_TRUNCATION_DISCREPANCY",
+      "numerical_matrix_candidate": false
+    },
+    {
+      "raw_id_pattern": "null_1...null_9",
+      "new_role": "SOURCE_OWNER_CLASSIFICATION_REQUIRED",
+      "count": 9,
+      "numerical_matrix_candidate": "UNRESOLVED"
+    },
+    {
+      "raw_id_pattern": "c_C117_1...c_C117_4",
+      "new_role": "SOURCE_QUALIFIED_MATRIX_DIRECTION_APPLY_REQUIRED",
+      "count": 4,
+      "numerical_matrix_candidate": true
+    }
+  ],
+  "maximum_candidate_matrix_dimension": 16,
+  "maximum_candidate_matrix_dimension_is_physical_rank": false,
+  "maximum_candidate_matrix_dimension_status": "PROVISIONAL_UPPER_BOUND_NOT_RANK",
+  "first_implementation_slice": {
+    "operators": ["D_mu_q_sq", "D_delta_mu_g_sq"],
+    "resolutions": ["K9", "K11", "K13"],
+    "expected_complete_apply_rows": 6,
+    "physical_values_selected": 0,
+    "C144_proxy_allowed": false
+  },
+  "first_operator_formulas": {
+    "q_sector": {
+      "D_mu_q_sq": "1",
+      "D_delta_mu_g_sq": "0"
+    },
+    "qg_sector": {
+      "D_mu_q_sq": "1/x_q",
+      "D_delta_mu_g_sq": "1/x_g"
+    },
+    "off_diagonal": "0"
+  },
+  "rank_status": "RANK_NOT_EVALUATED",
+  "physical_fit_authorized": false,
+  "activation_gate_status": "NOT_READY"
+}
