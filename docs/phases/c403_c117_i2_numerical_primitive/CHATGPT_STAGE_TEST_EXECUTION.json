@@ -1,0 +1,43 @@
+{
+  "additional_source_regression": {
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c45_modes.py::test_c45_end_to_end_mode_library_is_nontrivial_and_valid tests/test_c45_modes.py::test_c45_contract_gate_all_four_rows_executable tests/test_c47_basis1.py::test_c47_basis_contracts_close_without_action_matrices tests/test_c47_basis1.py::test_c47_tm_maps_and_inverse_functionals_are_nontrivial",
+    "exit_code": 0,
+    "result": "4 passed"
+  },
+  "all_required_passed": true,
+  "compile": {
+    "command": "python3 -m compileall -q C403 source/test/tool",
+    "exit_code": 0,
+    "result": "PASS"
+  },
+  "environment": {
+    "python": "3.13.5"
+  },
+  "optional_historical_upstream": {
+    "C403_regression": false,
+    "classification": "PRE_EXISTING_MISSING_C53_RUNTIME_ARTIFACT",
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c62_qgtm.py::test_c62_exact_phase_bracket_and_residues",
+    "exact_missing_path": "data/runtime/c53_vertex2/physical_diagnostic_m2_K9_2_N8_b0.40.npy",
+    "exit_code": 1,
+    "result": "1 failed"
+  },
+  "phase": "C403_C117_I2_NUMERICAL_PRIMITIVE",
+  "required_groups": [
+    {
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py",
+      "exit_code": 0,
+      "result": "16 passed"
+    },
+    {
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c401_c396_mass_directions.py",
+      "exit_code": 0,
+      "result": "14 passed"
+    },
+    {
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c400_s2_corrective.py",
+      "exit_code": 0,
+      "result": "26 passed"
+    }
+  ],
+  "schema_version": "1.0"
+}

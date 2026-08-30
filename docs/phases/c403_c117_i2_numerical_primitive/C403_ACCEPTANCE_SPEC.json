@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "phase": "C403_C117_I2_NUMERICAL_PRIMITIVE",
+  "accepted_local_baseline": "fce8842e5ddc6660c735b7f69723f63c9bff7073",
+  "required_status": "C403_C117_I2_FINITE_AXIS_AND_SPATIAL_KERNEL_NUMERICAL_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE",
+  "required_source_files": [
+    "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/__init__.py",
+    "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/axis.py",
+    "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/spatial.py",
+    "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/bindings.py",
+    "tests/test_c403_c117_i2_numerical_primitive.py",
+    "tools/generate_c403_c117_i2_numerical_primitive.py"
+  ],
+  "support_theorem": {
+    "candidate_rule": "2*n+abs(m)<=Nmax-1",
+    "admitted_rule": "2*n+abs(m)<=Nmax-2",
+    "rejected_rule": "2*n+abs(m)==Nmax-1",
+    "row_count": 1774,
+    "admitted_witness_rows": 1466,
+    "rejected_shell_rows": 308,
+    "maximum_residual": 0.0
+  },
+  "axis_counts": {
+    "K9": {
+      "candidate_modes": 36,
+      "admitted_modes": 28,
+      "rejected_modes": 8
+    },
+    "K11": {
+      "candidate_modes": 55,
+      "admitted_modes": 45,
+      "rejected_modes": 10
+    },
+    "K13": {
+      "candidate_modes": 78,
+      "admitted_modes": 66,
+      "rejected_modes": 12
+    }
+  },
+  "spatial_kernel": {
+    "inventory_rows": 139,
+    "units": "GeV^2",
+    "ground_identity": "b_HO^2/(2*pi)",
+    "maximum_analytic_quadrature_residual": 5e-13,
+    "maximum_sparse_matrix_free_residual": 5e-13,
+    "minimum_eigenvalue_tolerance": -1e-12,
+    "quadrature_internal_modes_checked": 9,
+    "all_single_member_matrices_hermitian": true,
+    "all_single_member_matrices_positive_semidefinite_at_tolerance": true,
+    "external_basis_scope": "C47 intrinsic/relative qg HO basis; shell <= Nmax-2",
+    "q_sector_external_basis_assembled": false,
+    "omitted_q_sector_elements_are_zero": false
+  },
+  "binding_boundary": {
+    "total_C396_rows": 57,
+    "updated_C117_I2_primitive_rows": 3,
+    "complete_C396_numerical_apply_paths": 6,
+    "complete_C117_numerical_apply_paths": 0,
+    "full_C117_I2_action_ready": false,
+    "full_C396_forward_map_ready": false,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "physical_fit_authorized": false,
+    "activation_gate_status": "NOT_READY"
+  },
+  "required_test_groups": [
+    {
+      "path": "tests/test_c403_c117_i2_numerical_primitive.py",
+      "required_passes": 16
+    },
+    {
+      "path": "tests/test_c401_c396_mass_directions.py",
+      "required_passes": 14
+    },
+    {
+      "path": "tests/test_c400_s2_corrective.py",
+      "required_passes": 26
+    }
+  ],
+  "forbidden": [
+    "historical source modification",
+    "C64 missing artifact treated as zero",
+    "C80 I2 reuse",
+    "C144 proxy operator",
+    "default or minimum-norm member weights",
+    "physical C117 coefficient selection",
+    "physical rank claim",
+    "physical fit",
+    "resolution averaging",
+    "Hamiltonian activation"
+  ]
+}
