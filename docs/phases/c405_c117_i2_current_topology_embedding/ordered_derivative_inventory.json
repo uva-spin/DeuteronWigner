@@ -1,0 +1,783 @@
+{
+  "all_zero_mode_diagonals_exact": true,
+  "assignments_per_resolution": 9,
+  "complete_C117_action": false,
+  "expected_rows": 27,
+  "maximum_adjoint_residual": 0.0,
+  "no_default_derivative_leg": true,
+  "root": "aa9dd1224f20df8c17faa34688007be8e3fd20211dd2e320100778998fa17fe2",
+  "row_count": 27,
+  "rows": [
+    {
+      "adjoint_derivative_legs": [],
+      "adjoint_product": "J_qJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 0,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "root": "51145463ae0784d245bd17bdeae8799d6ccba615467482cb2275f5cc409f7104",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_g",
+      "resolution": "K9",
+      "root": "3d7a420b492a1bbe65bd2a18bf87912cbb5644c00fe9942da7e4dfa099a06a47",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_g",
+      "resolution": "K9",
+      "root": "43b430b863d528a2f336302fc849ba0b9cca45bbf3fe109b41a4846de3df2ede",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_q",
+      "resolution": "K9",
+      "root": "b7b1c3f6e842553ad61c09e32eb03d0e13de12609a1e0470c875bbd1b797821a",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_q",
+      "resolution": "K9",
+      "root": "897b5ed44d87a0cbd1bef62fe1ea4288015a816aef062c4bf896a5751a3311d8",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA",
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "root": "e8e76426a714c518992c3da060b657eb7503a8713a36048d58563b06e8635189",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA",
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "root": "8581377b5246eb8690a8f3903ed5f4acdb269c5f3564c5d6f24d6bf93ce768ad",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET",
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "root": "715908168859ce5d1424807416f70990e766530b71567a97834752f9a5926eea",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET",
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 12,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "root": "d07be5f2422436e0c8d4b34f1409478847b510aca04a270ca533d65f7bd820bf",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        4,
+        4
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [],
+      "adjoint_product": "J_qJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 0,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "root": "3512d53c52b21a2a5674041e1538e9201b66bfa176def9d3579854dd6c755555",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_g",
+      "resolution": "K11",
+      "root": "abf41b5ce68e7264714473bd4ba4d11e0c870f0e5b144df31a27877d989f8b83",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_g",
+      "resolution": "K11",
+      "root": "c6036bd7267b71ceeb71d6808360338dce93c2018208e86936df49e4d366bfcf",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_q",
+      "resolution": "K11",
+      "root": "5c62a8111121bb0e2b73af12d48ee9921ef010c12c5e39ce0be3a2fc299dc081",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_q",
+      "resolution": "K11",
+      "root": "11dc5a36cb3098b2d8bcfd7f32983830331be00d980d2322d043985bf29c0217",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA",
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "root": "a1e1d998db402beadebcc0e2c2b7b360499f23b74e4417e7845c9258ed76cd16",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA",
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "root": "017530dd8f0e58ad6228f9f0a968ec7208db14bcef2ad5f30e7c0fdd66c11432",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET",
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "root": "9f42b23d45992fb3b3c99e4087d3e350ecd3b83f0f218da65acfda8f25e423ef",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET",
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 20,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "root": "5b187d7d72b8e12b1b1e0d78e1436f90602052d3124bc096c51e68b9a0d41b54",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        5,
+        5
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [],
+      "adjoint_product": "J_qJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 0,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "root": "2b5948b78b1c9099c50d396764e8f6104b28855a8f98f1116b22de444686028c",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_g",
+      "resolution": "K13",
+      "root": "f6dca4e08257569da21830d10a1c309827d16f25e1f6faa72c4afef80805578e",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_qJ_g",
+      "resolution": "K13",
+      "root": "b4ea83c09def7108fcc1b7c51d33271d3dadd1578f5172c5969bf34fa21e839b",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_q",
+      "resolution": "K13",
+      "root": "37380ba4ee9761a2efc768ef4b75b623c4b023c59b041d0d897c3bf80974de02",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 1,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_q",
+      "resolution": "K13",
+      "root": "7742db25a7250257fac0f162deecdfa31923f368a7d7210a5dc270ae7abc97f3",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA",
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "root": "fc7ca5b1e3defb437b37f0c81b42736bbcdb14dc208eb660de635f9ce5b35557",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "BRA",
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "root": "4ac84e80f652357a214de1bda2600a1f1302bd5b7ec3b60f5fb94eb9a7310c78",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET",
+        "BRA"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "root": "fe500c41fd551f7a933f6bd7dcb0998277aaa697a02214f2978c3b5c5a1aaa32",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "classification": "EXPLICIT_ORDERED_DERIVATIVE_CANDIDATE_NOT_OPERATOR_BINDING",
+      "complete_C117_action": false,
+      "derivative_legs_in_source_current_order": [
+        "KET",
+        "KET"
+      ],
+      "dimensionless_factor": "kappa(p_out,p_in) times product of explicitly selected k_g legs",
+      "factored_scale": "(pi/L) once per gluon-current derivative",
+      "gluon_current_count": 2,
+      "nonzero_entries": 30,
+      "normal_ordering_descendant_bound": false,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "root": "0e8a8535bf3adfedf7a5ae6aef9191243b2eff578e13295c483981c6b0c028bb",
+      "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-ASSIGNMENT-V1",
+      "shape": [
+        6,
+        6
+      ],
+      "source_ordered_c_field_mapped_to_external_leg": false,
+      "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+      "zero_mode_diagonal_exact": true
+    }
+  ],
+  "schema": "C405-C117-I2-ORDERED-GLUON-DERIVATIVE-INVENTORY-V1",
+  "source_ordered_c_field_mapped_to_external_leg": false,
+  "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+}

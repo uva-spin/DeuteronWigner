@@ -1,0 +1,78 @@
+{
+  "all_products_have_two_current_ids": true,
+  "complete_C117_action": false,
+  "mixed_adjoint_pair": [
+    "J_qJ_g",
+    "J_gJ_q"
+  ],
+  "posthoc_symmetrization": false,
+  "root": "3798cc4fac1f42bba743d921be52ca872866f36f8b15b312126e04961220e1b6",
+  "rows": [
+    {
+      "adjoint_product": "J_qJ_q",
+      "adjoint_rule": "complex conjugation, bra/ket reversal, current-order reversal",
+      "current_pair_identity_complete": true,
+      "currents": [
+        "quark_current",
+        "quark_current"
+      ],
+      "gluon_current_count": 0,
+      "historical_C119_leaf_program_reused_as_complete_pair": false,
+      "left_current_expression": "delta_helicity * T^a_(cprime,c) * (2L)^(-1)",
+      "normal_ordered_matrix_element_complete": false,
+      "product": "J_qJ_q",
+      "right_current_expression": "delta_helicity * T^a_(cprime,c) * (2L)^(-1)",
+      "source_order": "C114_LEFT_CURRENT_Q0_INV_DPLUS2_RIGHT_CURRENT"
+    },
+    {
+      "adjoint_product": "J_gJ_q",
+      "adjoint_rule": "complex conjugation, bra/ket reversal, current-order reversal",
+      "current_pair_identity_complete": true,
+      "currents": [
+        "quark_current",
+        "gluon_current"
+      ],
+      "gluon_current_count": 1,
+      "historical_C119_leaf_program_reused_as_complete_pair": false,
+      "left_current_expression": "delta_helicity * T^a_(cprime,c) * (2L)^(-1)",
+      "normal_ordered_matrix_element_complete": false,
+      "product": "J_qJ_g",
+      "right_current_expression": "-f^(abc) * delta_polarization * (pi*k_c/L) * (2L)^(-1)",
+      "source_order": "C114_LEFT_CURRENT_Q0_INV_DPLUS2_RIGHT_CURRENT"
+    },
+    {
+      "adjoint_product": "J_qJ_g",
+      "adjoint_rule": "complex conjugation, bra/ket reversal, current-order reversal",
+      "current_pair_identity_complete": true,
+      "currents": [
+        "gluon_current",
+        "quark_current"
+      ],
+      "gluon_current_count": 1,
+      "historical_C119_leaf_program_reused_as_complete_pair": false,
+      "left_current_expression": "-f^(abc) * delta_polarization * (pi*k_c/L) * (2L)^(-1)",
+      "normal_ordered_matrix_element_complete": false,
+      "product": "J_gJ_q",
+      "right_current_expression": "delta_helicity * T^a_(cprime,c) * (2L)^(-1)",
+      "source_order": "C114_LEFT_CURRENT_Q0_INV_DPLUS2_RIGHT_CURRENT"
+    },
+    {
+      "adjoint_product": "J_gJ_g",
+      "adjoint_rule": "complex conjugation, bra/ket reversal, current-order reversal",
+      "current_pair_identity_complete": true,
+      "currents": [
+        "gluon_current",
+        "gluon_current"
+      ],
+      "gluon_current_count": 2,
+      "historical_C119_leaf_program_reused_as_complete_pair": false,
+      "left_current_expression": "-f^(abc) * delta_polarization * (pi*k_c/L) * (2L)^(-1)",
+      "normal_ordered_matrix_element_complete": false,
+      "product": "J_gJ_g",
+      "right_current_expression": "-f^(abc) * delta_polarization * (pi*k_c/L) * (2L)^(-1)",
+      "source_order": "C114_LEFT_CURRENT_Q0_INV_DPLUS2_RIGHT_CURRENT"
+    }
+  ],
+  "schema": "C405-C117-I2-CURRENT-PAIR-GRAMMAR-V1",
+  "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+}
