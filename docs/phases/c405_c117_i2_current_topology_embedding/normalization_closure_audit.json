@@ -1,0 +1,521 @@
+{
+  "C114_M2_status": "UNAVAILABLE_BLOCKING",
+  "C114_field_state_status": {
+    "J_gJ_g": "UNAVAILABLE_BLOCKING",
+    "J_gJ_q": "UNAVAILABLE_BLOCKING",
+    "J_qJ_g": "UNAVAILABLE_BLOCKING",
+    "J_qJ_q": "UNAVAILABLE_BLOCKING"
+  },
+  "C119_scale_contract": {
+    "exact_radius": 0,
+    "floating_threshold": null,
+    "overlap_zero_not_exact": true,
+    "representation": "exact symbolic or certified outward enclosure"
+  },
+  "complete_C117_action": false,
+  "complete_numeric_prefactors": 0,
+  "current_pair_grammar_root": "3798cc4fac1f42bba743d921be52ca872866f36f8b15b312126e04961220e1b6",
+  "historical_C126_scale_claim": {
+    "claimed_post_exponents": {
+      "K": 0,
+      "L": 0,
+      "P_plus": 0,
+      "pi": 0
+    },
+    "classification": "SYMBOLIC_ASSERTION_NOT_NUMERICALLY_VERIFIED_NORMALIZATION",
+    "numerical_matrix_free_actions": 0,
+    "numerical_sparse_entries": 0
+  },
+  "historical_derivative_factor_conflict": {
+    "C119_gluon_current_already_contains_pi_kc_over_L": true,
+    "C119_gluon_leaf_program_also_lists_derivative_or_helicity": true,
+    "C126_adds_separate_derivative_for_left_gluon_products": true,
+    "C250_uses_two_current_factors_without_extra_derivative": true,
+    "classification": "HISTORICAL_FACTOR_ASSIGNMENT_CONFLICT_NOT_NUMERICAL_AUTHORITY"
+  },
+  "literal_known_exponents_are_product_dependent": true,
+  "no_default_normalization": true,
+  "root": "236ea9adcc18cd69f8ad8438dcadb015fb22038536696588a9fb0e73f59c9174",
+  "rows": [
+    {
+      "C114_M2_relation_bound_symbolically": true,
+      "C114_Q0_inverse_bound": true,
+      "C114_source_coefficient_bound": true,
+      "C114_xminus_measure_identified": true,
+      "C119_current_expressions_symbolic": true,
+      "C119_left_and_right_current_identities_bound": true,
+      "C125_witness_count_once_identity_bound": true,
+      "C405_conditional_kernel_to_C125_witness_map_bound": false,
+      "current_internal_vs_field_normalization_ownership_reconciled": false,
+      "currents": [
+        "quark_current",
+        "quark_current"
+      ],
+      "literal_scale_ledger": {
+        "classification": "LITERAL_SOURCE_EXPRESSION_LEDGER_NOT_NORMALIZATION_AUTHORITY",
+        "correction_required_for_historical_C126_zero_exponent_claim": {
+          "K": -1,
+          "L": 0,
+          "pi": 1
+        },
+        "currents": [
+          "quark_current",
+          "quark_current"
+        ],
+        "dimensionless_mode_factor": "one k_c per gluon current in the literal C119 expression",
+        "field_state_normalization_multiplicity_applied": false,
+        "known_post_exponents": {
+          "K": 1,
+          "L": 0,
+          "pi": -1
+        },
+        "literal_factors": [
+          {
+            "exponents": {
+              "K": 0,
+              "L": 2,
+              "pi": -2
+            },
+            "id": "C114_Q0_inverse"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": 1,
+              "pi": 0
+            },
+            "id": "C114_xminus_measure"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -1,
+              "pi": 0
+            },
+            "id": "C119_left_quark_current"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -1,
+              "pi": 0
+            },
+            "id": "C119_right_quark_current"
+          },
+          {
+            "exponents": {
+              "K": 1,
+              "L": -1,
+              "pi": 1
+            },
+            "id": "C114_M2_conversion"
+          }
+        ],
+        "normal_ordering_measure_applied": false,
+        "numerical_prefactor_ready": false,
+        "product": "J_qJ_q",
+        "root": "f4a53fa59e682ee2bcdd8c378cb1688af832fe30b5b831ae581926a669007779",
+        "schema": "C405-C117-I2-LITERAL-SOURCE-SCALE-LEDGER-V1",
+        "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+      },
+      "normal_ordering_descendant_bound": false,
+      "numerical_prefactor_ready": false,
+      "ordered_gluon_derivative_leg_bound": true,
+      "product": "J_qJ_q",
+      "q_sector_contraction_branch_bound": false,
+      "representative_program": {
+        "Pminus_to_M2": "M^2=2 P^+ P^- - P_perp^2",
+        "classification": "COMPLETE_SYMBOLIC_REQUIREMENT_PROGRAM_NUMERICAL_NORMALIZATION_UNAVAILABLE",
+        "complete_C117_action": false,
+        "current_expressions_literal_source_evidence_only": [
+          "delta_helicity * T^a_(cprime,c) * (2L)^(-1)",
+          "delta_helicity * T^a_(cprime,c) * (2L)^(-1)"
+        ],
+        "current_slots_with_derivative_extracted_once": [
+          "LEFT_QUARK_CURRENT",
+          "RIGHT_QUARK_CURRENT"
+        ],
+        "currents": [
+          "quark_current",
+          "quark_current"
+        ],
+        "derivative_factor_double_count_forbidden": true,
+        "explicit_derivative_legs": [],
+        "gluon_current_count": 0,
+        "inverse_partial_plus_squared": "L^2/(pi^2*n^2)",
+        "literal_scale_ledger": {
+          "classification": "LITERAL_SOURCE_EXPRESSION_LEDGER_NOT_NORMALIZATION_AUTHORITY",
+          "correction_required_for_historical_C126_zero_exponent_claim": {
+            "K": -1,
+            "L": 0,
+            "pi": 1
+          },
+          "currents": [
+            "quark_current",
+            "quark_current"
+          ],
+          "dimensionless_mode_factor": "one k_c per gluon current in the literal C119 expression",
+          "field_state_normalization_multiplicity_applied": false,
+          "known_post_exponents": {
+            "K": 1,
+            "L": 0,
+            "pi": -1
+          },
+          "literal_factors": [
+            {
+              "exponents": {
+                "K": 0,
+                "L": 2,
+                "pi": -2
+              },
+              "id": "C114_Q0_inverse"
+            },
+            {
+              "exponents": {
+                "K": 0,
+                "L": 1,
+                "pi": 0
+              },
+              "id": "C114_xminus_measure"
+            },
+            {
+              "exponents": {
+                "K": 0,
+                "L": -1,
+                "pi": 0
+              },
+              "id": "C119_left_quark_current"
+            },
+            {
+              "exponents": {
+                "K": 0,
+                "L": -1,
+                "pi": 0
+              },
+              "id": "C119_right_quark_current"
+            },
+            {
+              "exponents": {
+                "K": 1,
+                "L": -1,
+                "pi": 1
+              },
+              "id": "C114_M2_conversion"
+            }
+          ],
+          "normal_ordering_measure_applied": false,
+          "numerical_prefactor_ready": false,
+          "product": "J_qJ_q",
+          "root": "f4a53fa59e682ee2bcdd8c378cb1688af832fe30b5b831ae581926a669007779",
+          "schema": "C405-C117-I2-LITERAL-SOURCE-SCALE-LEDGER-V1",
+          "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+        },
+        "numerically_evaluable": false,
+        "ordered_derivative_factor_count": 0,
+        "product": "J_qJ_q",
+        "program": "AUDIT_ONLY_UNRESOLVED_MULTIPLY(C114_SOURCE_COEFFICIENT[-1/2], C114_Q0_INVERSE[(L/pi)^2/n^2], LEFT_QUARK_CURRENT, RIGHT_QUARK_CURRENT, ORDERED_GLUON_DERIVATIVE_C_FIELD_ASSIGNMENTS[NONE], RECONCILE_CURRENT_INTERNAL_NORMALIZATION_WITH_C119_FIELD_AND_STATE_FACTORS, NORMAL_ORDERING_DESCENDANT, SOURCE_PHASE, FINITE_CELL_CONTRACTION, TARGET_COUNT_ONCE, C114_M2_CONVERSION[2*pi*K/L], symbolic_g_s_squared, symbolic_c_C117_1)",
+        "root": "39b569004156ada6f9ca023662dfb33526a8ef3537bff948848f69a92790f6af",
+        "schema": "C405-C117-I2-SYMBOLIC-PREFACTOR-PROGRAM-V2",
+        "source_coefficient": "-1/2",
+        "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED",
+        "unresolved_symbols": [
+          "NORMAL_ORDERING_DESCENDANT[J_qJ_q]",
+          "SOURCE_PHASE_AND_CONTRACTION_SIGN[J_qJ_q]",
+          "FIELD_NORMALIZATION_OWNERSHIP_AND_MULTIPLICITY[J_qJ_q]",
+          "EXTERNAL_STATE_NORMALIZATION_OWNERSHIP_AND_MULTIPLICITY[J_qJ_q]",
+          "FINITE_CELL_INTEGRATION_CONTRACTION_MULTIPLICITY[J_qJ_q]",
+          "TARGET_COUNT_ONCE_MULTIPLICITY[J_qJ_q]",
+          "Q_SECTOR_CONTRACTION_BRANCH[J_qJ_q]"
+        ]
+      },
+      "source_phase_bound": false,
+      "state_normalization_multiplicity_bound": false,
+      "target_aggregation_multiplicity_bound": false
+    },
+    {
+      "C114_M2_relation_bound_symbolically": true,
+      "C114_Q0_inverse_bound": true,
+      "C114_source_coefficient_bound": true,
+      "C114_xminus_measure_identified": true,
+      "C119_current_expressions_symbolic": true,
+      "C119_left_and_right_current_identities_bound": true,
+      "C125_witness_count_once_identity_bound": true,
+      "C405_conditional_kernel_to_C125_witness_map_bound": false,
+      "current_internal_vs_field_normalization_ownership_reconciled": false,
+      "currents": [
+        "quark_current",
+        "gluon_current"
+      ],
+      "literal_scale_ledger": {
+        "classification": "LITERAL_SOURCE_EXPRESSION_LEDGER_NOT_NORMALIZATION_AUTHORITY",
+        "correction_required_for_historical_C126_zero_exponent_claim": {
+          "K": -1,
+          "L": 1,
+          "pi": 0
+        },
+        "currents": [
+          "quark_current",
+          "gluon_current"
+        ],
+        "dimensionless_mode_factor": "one k_c per gluon current in the literal C119 expression",
+        "field_state_normalization_multiplicity_applied": false,
+        "known_post_exponents": {
+          "K": 1,
+          "L": -1,
+          "pi": 0
+        },
+        "literal_factors": [
+          {
+            "exponents": {
+              "K": 0,
+              "L": 2,
+              "pi": -2
+            },
+            "id": "C114_Q0_inverse"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": 1,
+              "pi": 0
+            },
+            "id": "C114_xminus_measure"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -1,
+              "pi": 0
+            },
+            "id": "C119_left_quark_current"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -2,
+              "pi": 1
+            },
+            "id": "C119_right_gluon_current"
+          },
+          {
+            "exponents": {
+              "K": 1,
+              "L": -1,
+              "pi": 1
+            },
+            "id": "C114_M2_conversion"
+          }
+        ],
+        "normal_ordering_measure_applied": false,
+        "numerical_prefactor_ready": false,
+        "product": "J_qJ_g",
+        "root": "e0556f813081396028f6b294b6fdd0b207aefd5e2170f54ac4a245fefa5fb122",
+        "schema": "C405-C117-I2-LITERAL-SOURCE-SCALE-LEDGER-V1",
+        "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+      },
+      "normal_ordering_descendant_bound": false,
+      "numerical_prefactor_ready": false,
+      "ordered_gluon_derivative_leg_bound": false,
+      "product": "J_qJ_g",
+      "q_sector_contraction_branch_bound": false,
+      "representative_program": {
+        "derivative_assignments_owned_by": "C405 ordered_derivative_inventory",
+        "program": "ONE_PROGRAM_PER_EXPLICIT_DERIVATIVE_ASSIGNMENT"
+      },
+      "source_phase_bound": false,
+      "state_normalization_multiplicity_bound": false,
+      "target_aggregation_multiplicity_bound": false
+    },
+    {
+      "C114_M2_relation_bound_symbolically": true,
+      "C114_Q0_inverse_bound": true,
+      "C114_source_coefficient_bound": true,
+      "C114_xminus_measure_identified": true,
+      "C119_current_expressions_symbolic": true,
+      "C119_left_and_right_current_identities_bound": true,
+      "C125_witness_count_once_identity_bound": true,
+      "C405_conditional_kernel_to_C125_witness_map_bound": false,
+      "current_internal_vs_field_normalization_ownership_reconciled": false,
+      "currents": [
+        "gluon_current",
+        "quark_current"
+      ],
+      "literal_scale_ledger": {
+        "classification": "LITERAL_SOURCE_EXPRESSION_LEDGER_NOT_NORMALIZATION_AUTHORITY",
+        "correction_required_for_historical_C126_zero_exponent_claim": {
+          "K": -1,
+          "L": 1,
+          "pi": 0
+        },
+        "currents": [
+          "gluon_current",
+          "quark_current"
+        ],
+        "dimensionless_mode_factor": "one k_c per gluon current in the literal C119 expression",
+        "field_state_normalization_multiplicity_applied": false,
+        "known_post_exponents": {
+          "K": 1,
+          "L": -1,
+          "pi": 0
+        },
+        "literal_factors": [
+          {
+            "exponents": {
+              "K": 0,
+              "L": 2,
+              "pi": -2
+            },
+            "id": "C114_Q0_inverse"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": 1,
+              "pi": 0
+            },
+            "id": "C114_xminus_measure"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -2,
+              "pi": 1
+            },
+            "id": "C119_left_gluon_current"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -1,
+              "pi": 0
+            },
+            "id": "C119_right_quark_current"
+          },
+          {
+            "exponents": {
+              "K": 1,
+              "L": -1,
+              "pi": 1
+            },
+            "id": "C114_M2_conversion"
+          }
+        ],
+        "normal_ordering_measure_applied": false,
+        "numerical_prefactor_ready": false,
+        "product": "J_gJ_q",
+        "root": "f14cff7201cff48f63b090e9d23a5cb93c3d1d15de9ff68a7300a5d0b088614f",
+        "schema": "C405-C117-I2-LITERAL-SOURCE-SCALE-LEDGER-V1",
+        "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+      },
+      "normal_ordering_descendant_bound": false,
+      "numerical_prefactor_ready": false,
+      "ordered_gluon_derivative_leg_bound": false,
+      "product": "J_gJ_q",
+      "q_sector_contraction_branch_bound": false,
+      "representative_program": {
+        "derivative_assignments_owned_by": "C405 ordered_derivative_inventory",
+        "program": "ONE_PROGRAM_PER_EXPLICIT_DERIVATIVE_ASSIGNMENT"
+      },
+      "source_phase_bound": false,
+      "state_normalization_multiplicity_bound": false,
+      "target_aggregation_multiplicity_bound": false
+    },
+    {
+      "C114_M2_relation_bound_symbolically": true,
+      "C114_Q0_inverse_bound": true,
+      "C114_source_coefficient_bound": true,
+      "C114_xminus_measure_identified": true,
+      "C119_current_expressions_symbolic": true,
+      "C119_left_and_right_current_identities_bound": true,
+      "C125_witness_count_once_identity_bound": true,
+      "C405_conditional_kernel_to_C125_witness_map_bound": false,
+      "current_internal_vs_field_normalization_ownership_reconciled": false,
+      "currents": [
+        "gluon_current",
+        "gluon_current"
+      ],
+      "literal_scale_ledger": {
+        "classification": "LITERAL_SOURCE_EXPRESSION_LEDGER_NOT_NORMALIZATION_AUTHORITY",
+        "correction_required_for_historical_C126_zero_exponent_claim": {
+          "K": -1,
+          "L": 2,
+          "pi": -1
+        },
+        "currents": [
+          "gluon_current",
+          "gluon_current"
+        ],
+        "dimensionless_mode_factor": "one k_c per gluon current in the literal C119 expression",
+        "field_state_normalization_multiplicity_applied": false,
+        "known_post_exponents": {
+          "K": 1,
+          "L": -2,
+          "pi": 1
+        },
+        "literal_factors": [
+          {
+            "exponents": {
+              "K": 0,
+              "L": 2,
+              "pi": -2
+            },
+            "id": "C114_Q0_inverse"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": 1,
+              "pi": 0
+            },
+            "id": "C114_xminus_measure"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -2,
+              "pi": 1
+            },
+            "id": "C119_left_gluon_current"
+          },
+          {
+            "exponents": {
+              "K": 0,
+              "L": -2,
+              "pi": 1
+            },
+            "id": "C119_right_gluon_current"
+          },
+          {
+            "exponents": {
+              "K": 1,
+              "L": -1,
+              "pi": 1
+            },
+            "id": "C114_M2_conversion"
+          }
+        ],
+        "normal_ordering_measure_applied": false,
+        "numerical_prefactor_ready": false,
+        "product": "J_gJ_g",
+        "root": "ddf2ecb0ddb03f6e5cb7beda96ceaff6cba734c76db3943366646723f57296f7",
+        "schema": "C405-C117-I2-LITERAL-SOURCE-SCALE-LEDGER-V1",
+        "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+      },
+      "normal_ordering_descendant_bound": false,
+      "numerical_prefactor_ready": false,
+      "ordered_gluon_derivative_leg_bound": false,
+      "product": "J_gJ_g",
+      "q_sector_contraction_branch_bound": false,
+      "representative_program": {
+        "derivative_assignments_owned_by": "C405 ordered_derivative_inventory",
+        "program": "ONE_PROGRAM_PER_EXPLICIT_DERIVATIVE_ASSIGNMENT"
+      },
+      "source_phase_bound": false,
+      "state_normalization_multiplicity_bound": false,
+      "target_aggregation_multiplicity_bound": false
+    }
+  ],
+  "schema": "C405-C117-I2-NORMALIZATION-CLOSURE-AUDIT-V2",
+  "smallest_missing_normalization_object": "product-specific normal-ordering descendant with exact field/state normalization ownership and multiplicities, source phase, ordered gluon c-field leg, finite-cell integration/contraction factors, C405-to-C125 witness mapping, and target aggregation multiplicity",
+  "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+}

@@ -1,0 +1,78 @@
+{
+  "clean_generator_builds": {
+    "byte_identical": 17,
+    "generated_files": 17,
+    "pass": true
+  },
+  "compile": {
+    "command": "PYTHONPYCACHEPREFIX=/tmp/c405-pycache python3 -m compileall -q src/deuteron_wigner/bridge/c405_c117_i2_current_topology_embedding tests/test_c405_c117_i2_current_topology_embedding.py tools/generate_c405_c117_i2_current_topology_embedding.py",
+    "exit_code": 0,
+    "pass": true
+  },
+  "environment": {
+    "python": "3.13.5"
+  },
+  "schema": "C405-CHATGPT-STAGE-TEST-EXECUTION-V2",
+  "selected_total": {
+    "failed": 0,
+    "passed": 108
+  },
+  "status": "PASS",
+  "test_groups": [
+    {
+      "command": "python3 -m pytest -q tests/test_c405_c117_i2_current_topology_embedding.py",
+      "failed": 0,
+      "id": "C405_focused",
+      "passed": 21,
+      "seconds": 6.45
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c404_c117_i2_longitudinal_color_primitive.py",
+      "failed": 0,
+      "id": "C404_regression",
+      "passed": 15,
+      "seconds": 5.5
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py",
+      "failed": 0,
+      "id": "C403_regression",
+      "passed": 16,
+      "seconds": 9.91
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c401_c396_mass_directions.py",
+      "failed": 0,
+      "id": "C401_regression",
+      "passed": 14,
+      "seconds": 2.44
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c400_s2_corrective.py",
+      "failed": 0,
+      "id": "C400_S2_regression",
+      "passed": 26,
+      "seconds": 9.72
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c114_icurrent.py tests/test_c115_icho.py tests/test_c117_icreg2.py tests/test_c119_icnorm3.py",
+      "failed": 0,
+      "id": "C114_C115_C117_C119_regression",
+      "passed": 12,
+      "seconds": 1.66
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c45_modes.py::test_c45_end_to_end_mode_library_is_nontrivial_and_valid tests/test_c45_modes.py::test_c45_contract_gate_all_four_rows_executable tests/test_c47_basis1.py::test_c47_basis_contracts_close_without_action_matrices tests/test_c47_basis1.py::test_c47_tm_maps_and_inverse_functionals_are_nontrivial",
+      "failed": 0,
+      "id": "C45_C47_regression",
+      "passed": 4,
+      "seconds": 3.21
+    }
+  ],
+  "thread_limits": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "warnings": "Historical lf_current.py invalid-escape warnings may appear in the C400.S2 profile; they are unrelated to C405."
+}
