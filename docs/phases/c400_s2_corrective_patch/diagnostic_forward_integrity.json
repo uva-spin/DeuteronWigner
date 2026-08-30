@@ -1,0 +1,496 @@
+{
+  "C396_family": {
+    "binding_summary": {
+      "complete_numerical_apply_paths": 0,
+      "physical_rank": null,
+      "schema": "C400-S2-C396-BINDING-SUMMARY-V1",
+      "smallest_frontier": "source-owned K-local operator apply paths for the matrix-valued C396 directions, plus approved nonmatrix treatment for vacuum/boundary/truncation directions",
+      "status": "C396_19_COORDINATE_BINDING_INCOMPLETE",
+      "status_counts": {
+        "IDENTIFIED_COMBINATION_ONLY_NOT_SEPARATELY_EXECUTABLE": 3,
+        "NONMATRIX_BOUNDARY_INTERFACE_NOT_A_SPARSE_HAMILTONIAN_TERM": 3,
+        "NONMATRIX_TRUNCATION_INTERFACE_NOT_A_SPARSE_HAMILTONIAN_TERM": 3,
+        "NONMATRIX_VACUUM_DIRECTION_EXCLUDED_FROM_RETAINED_HAMILTONIAN": 3,
+        "SOURCE_PRIMITIVE_DESCRIPTOR_ONLY_NO_PUBLIC_C396_APPLY": 6,
+        "SOURCE_QUALIFIED_DESCRIPTOR_NO_K_LOCAL_SPARSE_APPLY": 12,
+        "SYMBOLIC_RIGHT_NULL_VECTOR_NO_FINITE_BASIS_OPERATOR_APPLY": 27
+      },
+      "total_rows": 57
+    },
+    "complete_numerical_apply_paths": 0,
+    "coordinates_per_resolution": 19,
+    "forward_map_ready": false,
+    "resolutions": [
+      "K9",
+      "K11",
+      "K13"
+    ]
+  },
+  "executable_path": {
+    "derivative_audit": {
+      "C396_derivative_claim": false,
+      "corrected_verified": 33,
+      "count": 11,
+      "historical_mismatches": 6,
+      "numerically_unbound": [
+        [
+          "K9",
+          "eta_3"
+        ],
+        [
+          "K9",
+          "eta_4"
+        ],
+        [
+          "K9",
+          "eta_5"
+        ],
+        [
+          "K9",
+          "eta_6"
+        ],
+        [
+          "K9",
+          "eta_7"
+        ],
+        [
+          "K9",
+          "eta_8"
+        ],
+        [
+          "K11",
+          "eta_3"
+        ],
+        [
+          "K11",
+          "eta_4"
+        ],
+        [
+          "K11",
+          "eta_5"
+        ],
+        [
+          "K11",
+          "eta_6"
+        ],
+        [
+          "K11",
+          "eta_7"
+        ],
+        [
+          "K11",
+          "eta_8"
+        ],
+        [
+          "K13",
+          "eta_3"
+        ],
+        [
+          "K13",
+          "eta_4"
+        ],
+        [
+          "K13",
+          "eta_5"
+        ],
+        [
+          "K13",
+          "eta_6"
+        ],
+        [
+          "K13",
+          "eta_7"
+        ],
+        [
+          "K13",
+          "eta_8"
+        ]
+      ],
+      "physical_derivative_claim": false,
+      "rows": [
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "phi_mass",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 6,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 1.6447145652749242e-11,
+            "max_abs_entry": 1.3101963958206397e-11,
+            "reference_norm": 4.898979485566356,
+            "relative_frobenius": 3.3572595478725176e-12
+          },
+          "finite_difference_nnz": 6,
+          "historical_derivative_matches": true,
+          "historical_nnz": 6,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 4.898979485566356,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "VERIFIED_C400_DIAGNOSTIC_DERIVATIVE",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "phi_coupling",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 1362,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 660,
+            "frobenius_norm": 1.4068377229911464e-06,
+            "max_abs_entry": 2.416044186936972e-07,
+            "reference_norm": 57.22181500876075,
+            "relative_frobenius": 2.4585688566078467e-08
+          },
+          "finite_difference_nnz": 1362,
+          "historical_derivative_matches": false,
+          "historical_nnz": 1362,
+          "historical_vs_corrected": {
+            "differing_entries": 1350,
+            "frobenius_norm": 28.5965409679223,
+            "max_abs_entry": 1.3473053892215567,
+            "reference_norm": 57.22181500876075,
+            "relative_frobenius": 0.49974893252764047
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "VERIFIED_C400_DIAGNOSTIC_DERIVATIVE",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_0",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 6,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 1.2987768502200983e-11,
+            "max_abs_entry": 6.550981979103199e-12,
+            "reference_norm": 2.449489742783178,
+            "relative_frobenius": 5.3022342879639584e-12
+          },
+          "finite_difference_nnz": 6,
+          "historical_derivative_matches": true,
+          "historical_nnz": 6,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 2.449489742783178,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "VERIFIED_C400_DIAGNOSTIC_DERIVATIVE",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_1",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 1344,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 732,
+            "frobenius_norm": 1.050035747356488e-06,
+            "max_abs_entry": 1.566368152960962e-07,
+            "reference_norm": 36.66060555964672,
+            "relative_frobenius": 2.8642073182563294e-08
+          },
+          "finite_difference_nnz": 1344,
+          "historical_derivative_matches": true,
+          "historical_nnz": 1344,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 36.66060555964672,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "VERIFIED_C400_DIAGNOSTIC_DERIVATIVE",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_2",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 1344,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 732,
+            "frobenius_norm": 1.0153904567885802e-06,
+            "max_abs_entry": 1.566368152960962e-07,
+            "reference_norm": 36.78314831549904,
+            "relative_frobenius": 2.7604772926974625e-08
+          },
+          "finite_difference_nnz": 1344,
+          "historical_derivative_matches": false,
+          "historical_nnz": 1344,
+          "historical_vs_corrected": {
+            "differing_entries": 3,
+            "frobenius_norm": 1.7320508075688772,
+            "max_abs_entry": 1.0,
+            "reference_norm": 36.78314831549904,
+            "relative_frobenius": 0.04708816093480111
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "VERIFIED_C400_DIAGNOSTIC_DERIVATIVE",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_3",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 0,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "finite_difference_nnz": 0,
+          "historical_derivative_matches": true,
+          "historical_nnz": 0,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_4",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 0,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "finite_difference_nnz": 0,
+          "historical_derivative_matches": true,
+          "historical_nnz": 0,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_5",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 0,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "finite_difference_nnz": 0,
+          "historical_derivative_matches": true,
+          "historical_nnz": 0,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_6",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 0,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "finite_difference_nnz": 0,
+          "historical_derivative_matches": true,
+          "historical_nnz": 0,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_7",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 0,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "finite_difference_nnz": 0,
+          "historical_derivative_matches": true,
+          "historical_nnz": 0,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API",
+          "step": 1e-05
+        },
+        {
+          "C396_derivative_claim": false,
+          "coordinate_id": "eta_8",
+          "corrected_derivative_verified": true,
+          "corrected_nnz": 0,
+          "corrected_vs_finite_difference": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "finite_difference_nnz": 0,
+          "historical_derivative_matches": true,
+          "historical_nnz": 0,
+          "historical_vs_corrected": {
+            "differing_entries": 0,
+            "frobenius_norm": 0.0,
+            "max_abs_entry": 0.0,
+            "reference_norm": 0.0,
+            "relative_frobenius": 0.0
+          },
+          "physical_derivative_claim": false,
+          "resolution": "K9",
+          "response_status": "NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API",
+          "step": 1e-05
+        }
+      ],
+      "schema": "C400-S2-C144-DERIVATIVE-INTEGRITY-AUDIT-V1"
+    },
+    "execution_status": "EXECUTED",
+    "hermiticity_residual": 0.0,
+    "matrix_nnz": 1362,
+    "matrix_shape": [
+      1350,
+      1350
+    ],
+    "operator_family": "C144_DIAGNOSTIC_FIXTURE_11_COORDINATES",
+    "parameter_root": "595155fd2a74decf82c8919f7abe4cc0fa094e731d693e131b51b9d06dcd04f2",
+    "physical": false,
+    "resolution": "K9",
+    "solver_tolerance": 1e-08,
+    "state_identity": "UNPROJECTED_DIAGNOSTIC_EIGENPAIR",
+    "states": [
+      {
+        "degeneracy_gap": 0.15049705895990417,
+        "degeneracy_status": "ISOLATED_WITHIN_SOLVED_SUBSPACE",
+        "eigenvalue": 0.5751850941396732,
+        "eigenvalue_residual": 2.252048422889472e-11,
+        "identity_status": "UNPROJECTED_DIAGNOSTIC_EIGENPAIR",
+        "projector_owner": null,
+        "quantum_number_evidence": "none; unprojected C144 fixture basis only",
+        "sector": [
+          [
+            "basis_scope",
+            "C144_UNPROJECTED_FIXTURE"
+          ]
+        ],
+        "state_id": "K9-diagnostic-0",
+        "vector_sha256_incidental": "750f43a8a96e1d0157e6b73163aab113bed17e91d1729ef384eab33165443fd9"
+      },
+      {
+        "degeneracy_gap": 0.15049705895990417,
+        "degeneracy_status": "ISOLATED_WITHIN_SOLVED_SUBSPACE",
+        "eigenvalue": 0.7256821530995774,
+        "eigenvalue_residual": 2.448489644160846e-09,
+        "identity_status": "UNPROJECTED_DIAGNOSTIC_EIGENPAIR",
+        "projector_owner": null,
+        "quantum_number_evidence": "none; unprojected C144 fixture basis only",
+        "sector": [
+          [
+            "basis_scope",
+            "C144_UNPROJECTED_FIXTURE"
+          ]
+        ],
+        "state_id": "K9-diagnostic-1",
+        "vector_sha256_incidental": "2b143daba2e9c59eac92198375daff90f02062192932660e3c6d024527e27d0c"
+      }
+    ]
+  },
+  "physical_activation_ready": false,
+  "physical_fit_authorized": false,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "schema": "C400-S2-DIAGNOSTIC-FORWARD-INTEGRITY-V1",
+  "sector_qualified_deuteron_state_ready": false,
+  "state_to_current_observable_path_ready": false,
+  "status": "PARTIAL_FORWARD_MAP",
+  "status_supersession": {
+    "forbidden_inferences": [
+      "C144 fixture coordinates are C396 coordinates",
+      "an unprojected diagnostic eigenpair is a deuteron-sector state",
+      "a missing numeric response is physical irrelevance",
+      "diagnostic derivative integrity establishes physical rank"
+    ],
+    "historical_record": {
+      "historical_forward_map_ready_field": true,
+      "preserved_immutable": true,
+      "status": "PHASE_COMPLETE_DIAGNOSTIC_FORWARD_MAP_READY_SCIENCE_REVIEW_NEXT"
+    },
+    "next_owner": "USER_CHATGPT_THEN_CODEX_LIVE_INTEGRATION",
+    "root": "22a6a46de1b60529666fc7b95db83f0ba47b94a26a4a9ed8f5bbd8557a2facb1",
+    "schema": "C400-S2-P1C-STATUS-SUPERSESSION-V1",
+    "superseding_interpretation": {
+      "C144_diagnostic_smoke_path": "C144_DIAGNOSTIC_EIGENSTATE_SMOKE_PATH_READY",
+      "C144_smoke_path_ready": true,
+      "C396_19_coordinate_forward_map_ready": false,
+      "C396_forward_map": "C396_19_COORDINATE_BINDING_INCOMPLETE",
+      "physical_activation_ready": false,
+      "physical_fit": "PHYSICAL_FIT_NOT_AUTHORIZED",
+      "rank": "RANK_NOT_EVALUATED",
+      "sector_identity": "SECTOR_IDENTITY_UNVERIFIED",
+      "state_to_current_observable_path_ready": false,
+      "status": "PARTIAL_FORWARD_MAP_C144_DIAGNOSTIC_EIGENSTATE_SMOKE_PATH_READY_C396_19_COORDINATE_BINDING_INCOMPLETE"
+    }
+  }
+}

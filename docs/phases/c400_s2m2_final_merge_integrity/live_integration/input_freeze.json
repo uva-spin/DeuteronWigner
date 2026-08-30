@@ -1,0 +1,27 @@
+{
+  "schema": "C400-S2M2-LIVE-INTEGRATION-INPUT-FREEZE-V1",
+  "phase": "C400.S2M2_FINAL_MERGE_INTEGRITY",
+  "decision_owner": "USER_CHATGPT",
+  "integration_executor": "CODEX",
+  "repository_root": "/Users/dustin/work/DeuteronWigner/.phase_worktrees/c400_p1_mechanical_closure",
+  "branch": "codex/c400-p1-mechanical-closure-v2",
+  "baseline_commit": "44b2d6002865b819fc524efb0af7988c0b6304a8",
+  "package_archive": "/Users/dustin/Downloads/deuteronwigner_c400_s2m2_final_merge_integrity_package.zip",
+  "prompt": "/Users/dustin/Downloads/C400_S2M2_CODEX_FINAL_INTEGRATION_PROMPT.md",
+  "package_id": "C400-S2M2-FINAL-MERGE-INTEGRITY",
+  "input_handoff_sha256": "d1b105d48e45ba81951ab2cdf2b6e8c5dc5fbeee4ceef9a56f8a06053e0c101d",
+  "input_candidate_diff_sha256": "59c807af96f00067e200bfb9730579201f32e7ebfdba40d3f44f0d1acfc31ee6",
+  "patch_sha256": "636a9e4640ee40f9e927018358eafd467ebee4c28c41a9fae5dd39495c6d47c5",
+  "patch_paths": [
+    "src/deuteron_wigner/bridge/c400_s2_corrective/current_adapter.py",
+    "tests/test_c400_s2_corrective.py",
+    "tools/generate_c400_s2_merge_closure.py"
+  ],
+  "prior_s2m2_markers_present_before_apply": false,
+  "physical_fit_authorized": false,
+  "physical_rank": null,
+  "physical_activation": false,
+  "merge_performed": false,
+  "push_performed": false,
+  "commit_created": false
+}

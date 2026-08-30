@@ -1,0 +1,26 @@
+# Exact S2M patch surfaces
+docs/phases/c400_s2_merge_closure/C400_S2M_ACCEPTANCE_SPEC.json
+docs/phases/c400_s2_merge_closure/dependency_closure.json
+docs/phases/c400_s2_merge_closure/generation_result.json
+docs/phases/c400_s2_merge_closure/implementation_report.md
+docs/phases/c400_s2_merge_closure/merge_readiness.json
+docs/phases/c400_s2_merge_closure/projected_state_semantics.json
+docs/phases/c400_s2_merge_closure/scientific_nonclaims.json
+src/deuteron_wigner/bridge/c400_s2_corrective/current_adapter.py
+src/deuteron_wigner/bridge/c400_s2_corrective/current_compare.py
+src/deuteron_wigner/bridge/c400_s2_corrective/state_identity.py
+tests/test_c400_s2_corrective.py
+tools/generate_c400_s2_corrective.py
+tools/generate_c400_s2_merge_closure.py
+# S2 surfaces included for dependency-closed review
+src/deuteron_wigner/bridge/c400_s2_corrective/** (pre-existing S2 files retained)
+tools/generate_c400_s2_corrective.sh
+docs/phases/c400_s2_corrective_patch/** excluding prior handoff ZIP
+# Explicitly excluded
+.phase_mode/**
+src/deuteron_wigner/bridge/c400_p1_mechanical_closure/**
+tests/test_c400_p1*.py
+tools/generate_c400_p1*.py
+docs/phases/c400_p1*/**
+prior handoff ZIPs
+C64 generated artifacts

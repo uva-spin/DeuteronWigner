@@ -1,0 +1,17 @@
+{
+  "complete_numerical_apply_paths": 0,
+  "physical_rank": null,
+  "schema": "C400-S2-C396-BINDING-SUMMARY-V1",
+  "smallest_frontier": "source-owned K-local operator apply paths for the matrix-valued C396 directions, plus approved nonmatrix treatment for vacuum/boundary/truncation directions",
+  "status": "C396_19_COORDINATE_BINDING_INCOMPLETE",
+  "status_counts": {
+    "IDENTIFIED_COMBINATION_ONLY_NOT_SEPARATELY_EXECUTABLE": 3,
+    "NONMATRIX_BOUNDARY_INTERFACE_NOT_A_SPARSE_HAMILTONIAN_TERM": 3,
+    "NONMATRIX_TRUNCATION_INTERFACE_NOT_A_SPARSE_HAMILTONIAN_TERM": 3,
+    "NONMATRIX_VACUUM_DIRECTION_EXCLUDED_FROM_RETAINED_HAMILTONIAN": 3,
+    "SOURCE_PRIMITIVE_DESCRIPTOR_ONLY_NO_PUBLIC_C396_APPLY": 6,
+    "SOURCE_QUALIFIED_DESCRIPTOR_NO_K_LOCAL_SPARSE_APPLY": 12,
+    "SYMBOLIC_RIGHT_NULL_VECTOR_NO_FINITE_BASIS_OPERATOR_APPLY": 27
+  },
+  "total_rows": 57
+}

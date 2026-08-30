@@ -1,0 +1,17 @@
+{
+  "schema": "C400-S2-LIVE-INTEGRATION-ENVIRONMENT-V1",
+  "python": "3.9.6",
+  "pytest": "8.4.2",
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "branch": "codex/c400-p1-mechanical-closure-v2",
+  "head": "44b2d6002865b819fc524efb0af7988c0b6304a8",
+  "worktree": "/Users/dustin/work/DeuteronWigner/.phase_worktrees/c400_p1_mechanical_closure",
+  "thread_limits": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "compile_cache_note": "Default compileall cache location was not writable; equivalent compileall passed with PYTHONPYCACHEPREFIX=/tmp/c400_s2_pycache.",
+  "source_package_manifest_sha256": "2f61a33ea29ac890150f9248c2b1d36044a146150a6e99318950e7ce572a855d",
+  "patch_sha256": "37ef4a6f61cc70c908a84be6d7466db50fff238c78542aace029b0e49126089f"
+}

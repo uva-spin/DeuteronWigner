@@ -1,0 +1,19 @@
+{
+  "schema": "C400-S2M-MERGE-READINESS-V1",
+  "status": "READY_FOR_LIVE_INTEGRATION_CHECK_NOT_YET_MERGED",
+  "resolved": [
+    "S2 current layer no longer imports unmerged P1/P1B/P1C code",
+    "projected-range membership no longer implies a verified sector eigenpair",
+    "Hamiltonian-invariance and full-space residual diagnostics are explicit"
+  ],
+  "unchanged_frontier": [
+    "C396 has 57 symbolic binding rows and zero complete numerical apply paths",
+    "physical sector/current interfaces remain unselected",
+    "C64 runtime artifact is absent in the reviewed live environment"
+  ],
+  "next_owner": "CODEX_LIVE_INTEGRATION_THEN_USER_CHATGPT_MERGE_REVIEW",
+  "commit_authorized": "one isolated local integration commit only after tests pass",
+  "merge_authorized": false,
+  "push_authorized": false,
+  "physical_activation": false
+}

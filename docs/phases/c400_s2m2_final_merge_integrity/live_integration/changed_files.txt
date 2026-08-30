@@ -1,0 +1,18 @@
+# Exact authorized S2/S2M/S2M2 staging paths; exclude ZIPs from docs trees
+src/deuteron_wigner/bridge/c400_s2_corrective/**
+tests/test_c400_s2_corrective.py
+tools/generate_c400_s2_corrective.py
+tools/generate_c400_s2_corrective.sh
+tools/generate_c400_s2_merge_closure.py
+docs/phases/c400_s2_corrective_patch/** excluding *.zip
+docs/phases/c400_s2_merge_closure/** excluding *.zip
+docs/phases/c400_s2m2_final_merge_integrity/** excluding *.zip
+# Explicit exclusions
+.phase_mode/**
+src/deuteron_wigner/bridge/c400_p1_mechanical_closure/**
+tests/test_c400_p1*.py
+tools/generate_c400_p1*.py
+docs/phases/c400_p1*/**
+prior handoff ZIPs and downloaded packages
+C64 generated artifacts
+credential, session, and controller state

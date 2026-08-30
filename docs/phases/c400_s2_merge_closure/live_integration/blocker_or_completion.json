@@ -1,0 +1,18 @@
+{
+  "schema": "C400-S2M-LIVE-INTEGRATION-BLOCKER-COMPLETION-V1",
+  "status": "S2M_LOCAL_INTEGRATION_READY_FOR_USER_CHATGPT_MERGE_REVIEW",
+  "acceptance_pass": true,
+  "focused_tests_pass": true,
+  "generator_pass": true,
+  "dependency_closure_pass": true,
+  "projected_state_semantics_pass": true,
+  "commit_created": false,
+  "staged": false,
+  "commit_blocker": "AGENTS.md prohibits commits; managed sandbox also denies worktree index.lock creation",
+  "merge_performed": false,
+  "push_performed": false,
+  "remaining_external_gaps": [
+    "data/runtime/c64_qgtm2/index.json is absent and was not generated or substituted"
+  ],
+  "next_owner": "USER_CHATGPT"
+}
