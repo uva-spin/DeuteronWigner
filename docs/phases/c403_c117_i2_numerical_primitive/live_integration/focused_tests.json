@@ -1,0 +1,13 @@
+{
+  "compileall": {"exit_code": 0, "result": "PASS"},
+  "c403_focused": {"command": "python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py", "exit_code": 0, "passed": 16},
+  "c401_regression": {"command": "python3 -m pytest -q tests/test_c401_c396_mass_directions.py", "exit_code": 0, "passed": 14},
+  "c400_s2_regression": {"command": "python3 -m pytest -vv tests/test_c400_s2_corrective.py", "exit_code": 0, "passed": 26},
+  "c45_c47_source_regression": {"exit_code": 0, "passed": 4},
+  "optional_c62": {
+    "exit_code": 1,
+    "failed": 1,
+    "classification": "pre-existing missing dependency; not a C403 regression",
+    "missing_dependency": "data/runtime/c53_vertex2/physical_diagnostic_m2_K9_2_N8_b0.40.npy"
+  }
+}
