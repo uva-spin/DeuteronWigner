@@ -20,7 +20,7 @@ from __future__ import annotations
 from fractions import Fraction
 from math import isfinite
 from functools import lru_cache
-from typing import Any, Mapping, Sequence
+from typing import Any, Mapping, Sequence, Union
 
 import numpy as np
 from scipy.sparse import csr_matrix, diags, eye, kron
@@ -42,7 +42,7 @@ from deuteron_wigner.bridge.c404_c117_i2_longitudinal_color_primitive.longitudin
 from .authority import STATUS
 from .descendants import longitudinal_diagonal_exact
 
-SpatialWeightKey = HOMode | Sequence[int]
+SpatialWeightKey = Union[HOMode, Sequence[int]]
 SpatialWeights = Mapping[SpatialWeightKey, float]
 
 

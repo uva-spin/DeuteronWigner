@@ -1,0 +1,46 @@
+{
+  "failures_repaired": [
+    {
+      "exception": "TypeError: unsupported operand type(s) for |: 'type' and '_GenericAlias'",
+      "expression": "SpatialWeightKey = HOMode | Sequence[int]",
+      "path": "src/deuteron_wigner/bridge/c407_c117_i2_same_species_descendants/jqjq_qg.py",
+      "repair": "SpatialWeightKey = Union[HOMode, Sequence[int]]"
+    },
+    {
+      "exception": "AttributeError: 'int' object has no attribute 'bit_count'",
+      "expression": "lower.bit_count()",
+      "path": "src/deuteron_wigner/bridge/c407_c117_i2_same_species_descendants/descendants.py",
+      "repair": "_population_count(lower) using bin(value).count('1')"
+    }
+  ],
+  "merged_C407_head": "eb606e4974de17074d1eee0ed006448acc797602",
+  "numerical_results_changed": false,
+  "runtime": "Python 3.9.6",
+  "schema": "C407-PYTHON39-COMPATIBILITY-HOTFIX-V2",
+  "scientific_behavior_changed": false,
+  "scientific_status": {
+    "activation": "NOT_READY",
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "physical_fit_authorized": false,
+    "rank_status": "RANK_NOT_EVALUATED"
+  },
+  "timestamp_utc": "2026-08-31T22:19:01Z",
+  "validation": {
+    "C114_C115_C117_C119_regression": 12,
+    "C151_convention_regression": 4,
+    "C400_S2_regression": 26,
+    "C401_regression": 14,
+    "C403_regression": 16,
+    "C404_regression": 15,
+    "C405_regression": 21,
+    "C406_regression": 24,
+    "C407_focused": 28,
+    "C45_C47_selected_regression": 4,
+    "failed": 0,
+    "generator_smoke": "PASS",
+    "python_compile": "PASS",
+    "static_Python39_audit": "PASS",
+    "total_passed": 164
+  }
+}

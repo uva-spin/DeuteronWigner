@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 from pathlib import Path
+from typing import Union, get_args, get_origin
 
 import numpy as np
 import pytest
@@ -36,6 +37,31 @@ from deuteron_wigner.bridge.c407_c117_i2_same_species_descendants import (
     source_hash_audit,
     species_mode_axis,
 )
+from deuteron_wigner.bridge.c407_c117_i2_same_species_descendants.descendants import (
+    _population_count,
+)
+from deuteron_wigner.bridge.c407_c117_i2_same_species_descendants.jqjq_qg import (
+    SpatialWeightKey,
+)
+
+
+def test_python39_compatible_runtime_type_alias() -> None:
+    """The module-level alias must remain evaluable on Python 3.9."""
+    assert get_origin(SpatialWeightKey) is Union
+    arguments = get_args(SpatialWeightKey)
+    assert HOMode in arguments
+    assert len(arguments) == 2
+
+
+def test_python39_population_count_compatibility() -> None:
+    """The fermion sign route must not depend on ``int.bit_count``."""
+    assert [_population_count(value) for value in (0, 1, 2, 3, 7, 8, 15)] == [
+        0, 1, 1, 2, 3, 1, 4
+    ]
+    source = Path(__file__).resolve().parents[1] / (
+        "src/deuteron_wigner/bridge/c407_c117_i2_same_species_descendants/descendants.py"
+    )
+    assert ".bit_count(" not in source.read_text(encoding="utf-8")
 
 
 def test_source_authority_and_boundary_are_fail_closed() -> None:

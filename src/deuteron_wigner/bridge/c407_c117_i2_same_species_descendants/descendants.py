@@ -181,6 +181,14 @@ def apply_longitudinal_diagonal(
     return diagonal * values
 
 
+def _population_count(value: int) -> int:
+    """Return the number of set bits using a Python-3.9-compatible route."""
+    value = int(value)
+    if value < 0:
+        raise ValueError("population count requires a nonnegative integer")
+    return bin(value).count("1")
+
+
 def _fermion_annihilation(mode: int, count: int) -> np.ndarray:
     dimension = 1 << count
     result = np.zeros((dimension, dimension), dtype=np.complex128)
@@ -188,7 +196,7 @@ def _fermion_annihilation(mode: int, count: int) -> np.ndarray:
         if not ((state >> mode) & 1):
             continue
         lower = state & ((1 << mode) - 1)
-        sign = -1 if lower.bit_count() % 2 else 1
+        sign = -1 if _population_count(lower) % 2 else 1
         result[state ^ (1 << mode), state] = sign
     return result
 
