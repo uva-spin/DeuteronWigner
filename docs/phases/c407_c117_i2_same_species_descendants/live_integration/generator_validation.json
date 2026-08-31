@@ -1,0 +1,22 @@
+{
+  "schema": "C407-LIVE-GENERATOR-VALIDATION-V1",
+  "canonical_generation_exit_code": 0,
+  "live_package_root": "763dceaa40bafcb5e07eb55874f79535196ebe42589a87abfe9d191ef8a6583b",
+  "reference_package_root": "b7e11d6b7a2d803bd32e467af9bb666d2042ed643dd208623a600ce009f4877d",
+  "reference_root_difference_explanation": "live uses the available Python 3.11 scientific stack; exact clean-build determinism is verified independently and source-derived row roots match the reference",
+  "replacement_comparison": {"replacement_files":32,"byte_exact":30,"runtime_generated_differences":2,"different_files":["docs/phases/c407_c117_i2_same_species_descendants/generation_result.json","docs/phases/c407_c117_i2_same_species_descendants/jqjq_qg_conditioned_validation.json"],"difference_type":"runtime floating-point serialization and dependent package root only; no source/static algorithm difference"},
+  "two_clean_builds": {"generated_file_count":21,"byte_identical_count":21,"all_names_equal":true,"all_byte_identical":true,"clean_generation_root_a":"642d1cc4cf287bd1cf99320677f9868a8b7009b06d901a218ab3fe70a2d24bd8","clean_generation_root_b":"642d1cc4cf287bd1cf99320677f9868a8b7009b06d901a218ab3fe70a2d24bd8"},
+  "invariants": {
+    "source_hash_rows":12,
+    "intermediate_axis_rows":154,
+    "same_species_weight_rows":154,
+    "caller_conditioned_J_qJ_q_qg_rows":3,
+    "source_authorized_graph_weight_sets":0,
+    "complete_C117_numerical_paths":0,
+    "complete_C396_numerical_paths":6,
+    "rank_status":"RANK_NOT_EVALUATED",
+    "physical_fit_authorized":false,
+    "activation_gate_status":"NOT_READY"
+  },
+  "validation": {"longitudinal":true,"caller_conditioned_composition":true,"source_hash_audit":true,"zero_transfer_rows":0,"noninteger_transfer_rows":0,"duplicate_axis_rows":0}
+}

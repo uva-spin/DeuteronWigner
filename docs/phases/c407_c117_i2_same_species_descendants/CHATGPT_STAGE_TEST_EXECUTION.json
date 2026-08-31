@@ -1,0 +1,40 @@
+{
+  "schema": "C407-CHATGPT-STAGE-TEST-EXECUTION-V1",
+  "baseline": "4f932604483701d18158164288674cea82a07b3f",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pytest": "9.0.2",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "required_live_repository_groups": [
+    {"name": "C407 focused", "command": "python3 -m pytest -q tests/test_c407_c117_i2_same_species_descendants.py", "required_passed": 26},
+    {"name": "C406 regression", "command": "python3 -m pytest -q tests/test_c406_c117_i2_gluon_normal_order_descendant.py", "required_passed": 24},
+    {"name": "C405 regression", "command": "python3 -m pytest -q tests/test_c405_c117_i2_current_topology_embedding.py", "required_passed": 21},
+    {"name": "C404 regression", "command": "python3 -m pytest -q tests/test_c404_c117_i2_longitudinal_color_primitive.py", "required_passed": 15},
+    {"name": "C403 regression", "command": "python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py", "required_passed": 16},
+    {"name": "C401 regression", "command": "python3 -m pytest -q tests/test_c401_c396_mass_directions.py", "required_passed": 14},
+    {"name": "C400.S2 regression", "command": "python3 -m pytest -q tests/test_c400_s2_corrective.py", "required_passed": 26},
+    {"name": "C114/C115/C117/C119 regression", "command": "python3 -m pytest -q tests/test_c114_icurrent.py tests/test_c115_icho.py tests/test_c117_icreg2.py tests/test_c119_icnorm3.py", "required_passed": 12},
+    {"name": "C45/C47 selected regression", "command": "python3 -m pytest -q tests/test_c45_modes.py::test_c45_end_to_end_mode_library_is_nontrivial_and_valid tests/test_c45_modes.py::test_c45_contract_gate_all_four_rows_executable tests/test_c47_basis1.py::test_c47_basis_contracts_close_without_action_matrices tests/test_c47_basis1.py::test_c47_tm_maps_and_inverse_functionals_are_nontrivial", "required_passed": 4},
+    {"name": "C151 convention regression", "command": "python3 -m pytest -q tests/test_c151_hqcdg2pt.py", "required_passed": 4}
+  ],
+  "required_live_total_passed": 162,
+  "review_repository_results": [
+    {"name": "Python compilation", "passed": true, "exit_code": 0},
+    {"name": "C407 focused", "passed": 26, "failed": 0, "deselected": 0, "duration_seconds": 12.32},
+    {"name": "C406 regression", "passed": 24, "failed": 0, "deselected": 0, "duration_seconds": 29.42},
+    {"name": "C404 regression", "passed": 15, "failed": 0, "deselected": 0, "duration_seconds": 6.84},
+    {"name": "C403 regression", "passed": 16, "failed": 0, "deselected": 0, "duration_seconds": 14.22},
+    {"name": "C405 available subset", "passed": 17, "failed": 0, "deselected": 4, "duration_seconds": 7.68, "snapshot_gap": "docs/next_level/c43_action_derivation_manifest.json absent from reconstructed replay"},
+    {"name": "C401 available subset", "passed": 13, "failed": 0, "deselected": 1, "duration_seconds": 0.75, "snapshot_gap": "references/c43_light_front_qcd_gauge_action.tex absent from reconstructed replay"},
+    {"name": "C400.S2 available subset", "passed": 25, "failed": 0, "deselected": 1, "duration_seconds": 12.12, "snapshot_gap": "docs/phases/c400_s2_corrective_patch/state_identity_validation.json absent from reconstructed replay"}
+  ],
+  "review_repository_selected_passed": 136,
+  "review_repository_failures": 0,
+  "live_repository_full_regressions_required": true,
+  "scientific_nonclaims_preserved": true
+}
