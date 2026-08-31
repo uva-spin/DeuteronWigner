@@ -1,0 +1,36 @@
+{
+  "schema": "C406-C117-I2-GLUON-NORMAL-ORDER-ACCEPTANCE-V1",
+  "accepted_baseline": "4dbb0b8bbadc540f0da2337c46040afb971fffc1",
+  "required_status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED",
+  "required_invariants": {
+    "one_gluon_descendant_rows": 77,
+    "product_routing_rows": 12,
+    "mixed_product_rows": 6,
+    "same_species_unresolved_rows": 6,
+    "mixed_kernel_rows": 6,
+    "normal_ordering_validation_pass": true,
+    "mixed_kernel_validation_pass": true,
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "physical_fit_authorized": false,
+    "activation_gate_status": "NOT_READY"
+  },
+  "required_exact_results": [
+    "one-gluon coefficient = -(k_bra+k_ket) F^a",
+    "vacuum commutator proportional to f^{abb} = 0",
+    "mixed C406 kernel = -(C405_BRA+C405_KET)",
+    "mixed q-sector block is exact zero",
+    "same-species products require intermediate contraction axes"
+  ],
+  "forbidden": [
+    "C144 proxy",
+    "zero fill for unavailable same-species products",
+    "minimum-norm C117 representative",
+    "factor-two merge of mixed current orders",
+    "default product normalization",
+    "physical coefficient selection",
+    "physical rank or fit",
+    "merge or push by the integration agent"
+  ]
+}

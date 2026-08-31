@@ -1,0 +1,105 @@
+{
+  "all_required_pass": true,
+  "environment": {
+    "numpy": "2.3.5",
+    "pytest": "9.0.2",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  },
+  "optional_historical_C192": {
+    "C406_source_access": "direct hash-locked C192 source-text audit without historical runtime regeneration",
+    "command": "python3 -m pytest -q tests/test_c192_hqcdb1qgggcurr1.py",
+    "exact_error": "FileNotFoundError: C77 package is absent; import must not regenerate",
+    "exit_code": 2,
+    "log_sha256": "5eb2c5d72ec72513ccaabe862b2f08083b9f23cf0e0d2a783ad650dcbb671154",
+    "status": "PRE_EXISTING_C77_RUNTIME_PACKAGE_MISSING",
+    "used_by_C406_runtime": false
+  },
+  "python_compilation": "PASS",
+  "required_failed_total": 0,
+  "required_passed_total": 136,
+  "required_test_groups": [
+    {
+      "command": "python3 -m pytest -q tests/test_c406_c117_i2_gluon_normal_order_descendant.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C406 focused",
+      "log_sha256": "16b322ae22a7c789083bef588ab9fb229d3b1526d9437e6895414e492aab104e",
+      "passed": 24,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c405_c117_i2_current_topology_embedding.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C405 regression",
+      "log_sha256": "48cabfcfacde9f4500851e01ca2cef3b5516862373f586010dac99787ac75a32",
+      "passed": 21,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c404_c117_i2_longitudinal_color_primitive.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C404 regression",
+      "log_sha256": "369d01013f49ddf04d7e008923a1494bb8fe8112952e0b42df1571d924f18c00",
+      "passed": 15,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C403 regression",
+      "log_sha256": "21ff2f7d7a80a6ba1a9d873708daa04e67c1b11970a271ba8f54f2ee0914332c",
+      "passed": 16,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c401_c396_mass_directions.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C401 regression",
+      "log_sha256": "962d015132dc908aab6b2a64a88c655cafc4a22de627989fe0a451a0d5d67e85",
+      "passed": 14,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c400_s2_corrective.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C400.S2 regression",
+      "log_sha256": "73426459d6102bcf325cd1d8fe480797810e5e8f4203892d47e584416eef2761",
+      "passed": 26,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c114_icurrent.py tests/test_c115_icho.py tests/test_c117_icreg2.py tests/test_c119_icnorm3.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C114/C115/C117/C119 regression",
+      "log_sha256": "6078a58b5fd41673bfea6088bc0d3cbb4cda13167ccc286f5c9e154b0af6d5a5",
+      "passed": 12,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q [4 selected C45/C47 tests]",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C45/C47 selected regression",
+      "log_sha256": "74dea3c46a63feb78d9c18e26991d606cde0ded6789b9f0449fb6cc9e0236390",
+      "passed": 4,
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m pytest -q tests/test_c151_hqcdg2pt.py",
+      "exit_code": 0,
+      "failed": 0,
+      "label": "C151 convention regression",
+      "log_sha256": "4dea60bd496b3789e6f66e30b14478df45c4624aca9806f64567800409827333",
+      "passed": 4,
+      "status": "passed"
+    }
+  ],
+  "schema": "C406-CHATGPT-STAGE-TEST-EXECUTION-V1"
+}
