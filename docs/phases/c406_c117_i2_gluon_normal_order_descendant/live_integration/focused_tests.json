@@ -1,0 +1,22 @@
+{
+  "schema": "C406-LIVE-TEST-EVIDENCE-V1",
+  "required_total": 136,
+  "passed_total": 136,
+  "failed_total": 0,
+  "groups": [
+    {"label":"C406 focused","passed":24,"exit_code":0},
+    {"label":"C405 regression","passed":21,"exit_code":0},
+    {"label":"C404 regression","passed":15,"exit_code":0},
+    {"label":"C403 regression","passed":16,"exit_code":0},
+    {"label":"C401 regression","passed":14,"exit_code":0},
+    {"label":"C400.S2 regression","passed":26,"exit_code":0,"known_warnings":5},
+    {"label":"C114/C115/C117/C119 regression","passed":12,"exit_code":0},
+    {"label":"C45/C47 selected regression","passed":4,"exit_code":0},
+    {"label":"C151 convention regression","passed":4,"exit_code":0}
+  ],
+  "optional_historical_C192": {
+    "exit_code": 2,
+    "status": "not_run_to_completion",
+    "exact_error": "FileNotFoundError: C64 artifact bundle is absent; read-only import must not regenerate it"
+  }
+}

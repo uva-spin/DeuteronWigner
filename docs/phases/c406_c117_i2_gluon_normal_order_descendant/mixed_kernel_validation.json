@@ -1,0 +1,111 @@
+{
+  "complete_C117_action": false,
+  "maximum_adjoint_residual": 0.0,
+  "maximum_direct_sum_residual": 1.2905249420361443e-15,
+  "maximum_q_sector_zero_residual": 0.0,
+  "maximum_sparse_matrix_free_residual": 1.3378835243408441e-15,
+  "pass": true,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "root": "857bc6cf7cd19db062ff1dbb511d98d03aa9619d35c596222a96b6925dffd09b",
+  "row_count": 6,
+  "rows": [
+    {
+      "adjoint_residual": 0.0,
+      "direct_sum_dimension": 1350,
+      "direct_sum_residual": 3.565250913677637e-16,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_qJ_g",
+      "q_sector_zero_residual": 0.0,
+      "qg_dimension": 1344,
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 3.3921099716930853e-16
+    },
+    {
+      "adjoint_residual": 0.0,
+      "direct_sum_dimension": 1350,
+      "direct_sum_residual": 3.565250913677637e-16,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_q",
+      "q_sector_zero_residual": 0.0,
+      "qg_dimension": 1344,
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 3.3921099716930853e-16
+    },
+    {
+      "adjoint_residual": 0.0,
+      "direct_sum_dimension": 2706,
+      "direct_sum_residual": 7.577055069390885e-16,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_qJ_g",
+      "q_sector_zero_residual": 0.0,
+      "qg_dimension": 2700,
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 7.189557872288932e-16
+    },
+    {
+      "adjoint_residual": 0.0,
+      "direct_sum_dimension": 2706,
+      "direct_sum_residual": 7.577055069390885e-16,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_q",
+      "q_sector_zero_residual": 0.0,
+      "qg_dimension": 2700,
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 7.189557872288932e-16
+    },
+    {
+      "adjoint_residual": 0.0,
+      "direct_sum_dimension": 4758,
+      "direct_sum_residual": 1.2905249420361443e-15,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_qJ_g",
+      "q_sector_zero_residual": 0.0,
+      "qg_dimension": 4752,
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 1.3378835243408441e-15
+    },
+    {
+      "adjoint_residual": 0.0,
+      "direct_sum_dimension": 4758,
+      "direct_sum_residual": 1.2905249420361443e-15,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_q",
+      "q_sector_zero_residual": 0.0,
+      "qg_dimension": 4752,
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 1.3378835243408441e-15
+    }
+  ],
+  "schema": "C406-C117-I2-MIXED-CURRENT-KERNEL-VALIDATION-V1",
+  "status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED"
+}
