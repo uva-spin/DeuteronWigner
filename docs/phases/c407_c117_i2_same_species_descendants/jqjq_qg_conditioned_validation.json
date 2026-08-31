@@ -1,0 +1,58 @@
+{
+  "all_hermitian": true,
+  "classification": "CALLER_CONDITIONED_JQJQ_QG_COMPOSITION_STRESS_TEST_NOT_OPERATOR_BINDING",
+  "complete_C117_action": false,
+  "complete_product_normalization": false,
+  "maximum_sparse_matrix_free_residual": 1.3051877813860972e-14,
+  "minimum_norm_default": false,
+  "minimum_spatial_eigenvalue_GeV2": 0.04010747806301059,
+  "pass": true,
+  "positive_semidefinite_at_tolerance_for_nonnegative_fixture": true,
+  "root": "97899d63ea1bccb48d1a3b7a6fd147f10292d6d03c6ea11b0296f698830c0c66",
+  "row_count": 3,
+  "rows": [
+    {
+      "dimension": 1344,
+      "explicit_fixture_weight_count": 28,
+      "fixture_classification": "DETERMINISTIC_NONPHYSICAL_COMPOSITION_TEST_WEIGHTS",
+      "hermiticity_residual": 0.0,
+      "nonzero_entries": 3456,
+      "partition_count": 4,
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.800258420812087e-15,
+      "spatial_dimension": 28,
+      "spatial_minimum_eigenvalue_GeV2": 0.04010747806301059,
+      "units": "GeV^2 times factored common C114/C119 normalization and caller weights"
+    },
+    {
+      "dimension": 2700,
+      "explicit_fixture_weight_count": 45,
+      "fixture_classification": "DETERMINISTIC_NONPHYSICAL_COMPOSITION_TEST_WEIGHTS",
+      "hermiticity_residual": 0.0,
+      "nonzero_entries": 8700,
+      "partition_count": 5,
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 5.930977036079024e-15,
+      "spatial_dimension": 45,
+      "spatial_minimum_eigenvalue_GeV2": 0.060433383105601146,
+      "units": "GeV^2 times factored common C114/C119 normalization and caller weights"
+    },
+    {
+      "dimension": 4752,
+      "explicit_fixture_weight_count": 66,
+      "fixture_classification": "DETERMINISTIC_NONPHYSICAL_COMPOSITION_TEST_WEIGHTS",
+      "hermiticity_residual": 0.0,
+      "nonzero_entries": 18432,
+      "partition_count": 6,
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 1.3051877813860972e-14,
+      "spatial_dimension": 66,
+      "spatial_minimum_eigenvalue_GeV2": 0.08562785276437535,
+      "units": "GeV^2 times factored common C114/C119 normalization and caller weights"
+    }
+  ],
+  "schema": "C407-C117-I2-JQJQ-QG-CALLER-CONDITIONED-COMPOSITION-VALIDATION-V2",
+  "source_authorized_graph_member_weights": false,
+  "status": "C407_C117_I2_SAME_SPECIES_LONGITUDINAL_DESCENDANTS_AND_CALLER_CONDITIONED_JQJQ_QG_COMPOSITION_READY_GRAPH_WEIGHTS_AND_JGJG_TRANSVERSE_DESCENDANT_UNRESOLVED",
+  "unit_weight_default": false
+}

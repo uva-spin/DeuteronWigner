@@ -1,0 +1,6114 @@
+{
+  "complete_C117_action": false,
+  "duplicates": 0,
+  "expected_row_count": 154,
+  "external_axes": [
+    {
+      "external_count": 1,
+      "intermediate_rows": 4,
+      "resolution": "K9",
+      "sector": "q->q",
+      "species": "QUARK",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 4,
+      "intermediate_rows": 16,
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "species": "QUARK",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 0,
+      "resolution": "K9",
+      "sector": "q->q",
+      "species": "GLUON",
+      "status": "NUMBER_PRESERVING_ONE_BODY_BRANCH_NOT_APPLICABLE_EXTERNAL_GLUON_ABSENT_OTHER_JGJG_BRANCHES_UNRESOLVED_NOT_ZERO"
+    },
+    {
+      "external_count": 4,
+      "intermediate_rows": 12,
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "species": "GLUON",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 1,
+      "intermediate_rows": 5,
+      "resolution": "K11",
+      "sector": "q->q",
+      "species": "QUARK",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 5,
+      "intermediate_rows": 25,
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "species": "QUARK",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 0,
+      "resolution": "K11",
+      "sector": "q->q",
+      "species": "GLUON",
+      "status": "NUMBER_PRESERVING_ONE_BODY_BRANCH_NOT_APPLICABLE_EXTERNAL_GLUON_ABSENT_OTHER_JGJG_BRANCHES_UNRESOLVED_NOT_ZERO"
+    },
+    {
+      "external_count": 5,
+      "intermediate_rows": 20,
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "species": "GLUON",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 1,
+      "intermediate_rows": 6,
+      "resolution": "K13",
+      "sector": "q->q",
+      "species": "QUARK",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 6,
+      "intermediate_rows": 36,
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "species": "QUARK",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    },
+    {
+      "external_count": 0,
+      "resolution": "K13",
+      "sector": "q->q",
+      "species": "GLUON",
+      "status": "NUMBER_PRESERVING_ONE_BODY_BRANCH_NOT_APPLICABLE_EXTERNAL_GLUON_ABSENT_OTHER_JGJG_BRANCHES_UNRESOLVED_NOT_ZERO"
+    },
+    {
+      "external_count": 6,
+      "intermediate_rows": 30,
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "species": "GLUON",
+      "status": "FINITE_Q0_INTERMEDIATE_AXIS_CLOSED"
+    }
+  ],
+  "noninteger_transfer_rows": 0,
+  "root": "8fdd8ceb09b7b310e1e327a01731485f0a03d0d594a17a7c5d7aa458085d8a7a",
+  "row_count": 154,
+  "rows": [
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K9:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-5",
+        "float": -5.0,
+        "numerator": -5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K11:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-6",
+        "float": -6.0,
+        "numerator": -6
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-5",
+        "float": -5.0,
+        "numerator": -5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:q",
+      "external_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "q->q",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-5",
+        "float": -5.0,
+        "numerator": -5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_rank": 6,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_rank": 6,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_rank": 6,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_rank": 6,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_rank": 6,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "3/2",
+        "float": 1.5,
+        "numerator": 3
+      },
+      "intermediate_rank": 1,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "5/2",
+        "float": 2.5,
+        "numerator": 5
+      },
+      "intermediate_rank": 2,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "7/2",
+        "float": 3.5,
+        "numerator": 7
+      },
+      "intermediate_rank": 3,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "9/2",
+        "float": 4.5,
+        "numerator": 9
+      },
+      "intermediate_rank": 4,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "11/2",
+        "float": 5.5,
+        "numerator": 11
+      },
+      "intermediate_rank": 5,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "ANTIPERIODIC",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 2,
+        "exact": "1/2",
+        "float": 0.5,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 2,
+        "exact": "13/2",
+        "float": 6.5,
+        "numerator": 13
+      },
+      "intermediate_rank": 6,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "QUARK",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P0",
+      "external_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_rank": 5,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P1",
+      "external_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_rank": 5,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P2",
+      "external_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_rank": 5,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P3",
+      "external_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_rank": 5,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P4",
+      "external_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_rank": 5,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "1",
+        "float": 1.0,
+        "numerator": 1
+      },
+      "intermediate_rank": 0,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-5",
+        "float": -5.0,
+        "numerator": -5
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "2",
+        "float": 2.0,
+        "numerator": 2
+      },
+      "intermediate_rank": 1,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-4",
+        "float": -4.0,
+        "numerator": -4
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "3",
+        "float": 3.0,
+        "numerator": 3
+      },
+      "intermediate_rank": 2,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-3",
+        "float": -3.0,
+        "numerator": -3
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "4",
+        "float": 4.0,
+        "numerator": 4
+      },
+      "intermediate_rank": 3,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-2",
+        "float": -2.0,
+        "numerator": -2
+      },
+      "zero_mode": false
+    },
+    {
+      "Q0_admitted": true,
+      "boundary": "PERIODIC_NONZERO",
+      "external_id": "K13:qg:P5",
+      "external_k": {
+        "denominator": 1,
+        "exact": "6",
+        "float": 6.0,
+        "numerator": 6
+      },
+      "intermediate_k": {
+        "denominator": 1,
+        "exact": "5",
+        "float": 5.0,
+        "numerator": 5
+      },
+      "intermediate_rank": 4,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "source_ancestry": [
+        "C45",
+        "C47",
+        "C114",
+        "C115",
+        "C119",
+        "C406",
+        "C407"
+      ],
+      "species": "GLUON",
+      "transfer_is_integer": true,
+      "transfer_q": {
+        "denominator": 1,
+        "exact": "-1",
+        "float": -1.0,
+        "numerator": -1
+      },
+      "zero_mode": false
+    }
+  ],
+  "schema": "C407-C117-I2-SAME-SPECIES-INTERMEDIATE-AXIS-INVENTORY-V1",
+  "status": "C407_C117_I2_SAME_SPECIES_LONGITUDINAL_DESCENDANTS_AND_CALLER_CONDITIONED_JQJQ_QG_COMPOSITION_READY_GRAPH_WEIGHTS_AND_JGJG_TRANSVERSE_DESCENDANT_UNRESOLVED",
+  "zero_transfer_rows": 0
+}
