@@ -1,0 +1,9 @@
+{
+  "schema": "C408-LIVE-INTEGRATION-REPOSITORY-DISCREPANCIES-V1",
+  "baseline_discrepancies": [],
+  "manual_reconciliation_required": false,
+  "historical_C400_C407_sources_modified": false,
+  "main_worktree_note": "The main worktree contains pre-existing unrelated user changes; the isolated C408 worktree was created clean at the accepted baseline and remained scoped to C408 paths.",
+  "reference_evidence_note": "Reference q-sector evidence differs from live output only in floating-point serialization at approximately machine precision under NumPy 1.26.3/SciPy 1.13.0; the two live clean builds are byte-identical.",
+  "unrelated_main_changes_not_carried": true
+}

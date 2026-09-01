@@ -1,0 +1,76 @@
+{
+  "all_pass": true,
+  "checks": [
+    "ast.parse(feature_version=9)",
+    "no int.bit_count calls",
+    "no zip(strict=...) calls",
+    "no runtime-evaluated PEP604 aliases"
+  ],
+  "python39_syntax_files": 9,
+  "rows": [
+    {
+      "bytes": 200,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/__init__.py",
+      "python39_ast_parse": true,
+      "sha256": "ce7b2f2a46a8e2f47fd4e4f073168d1e9d7b40dbb7a274f523f56f551a2247f8"
+    },
+    {
+      "bytes": 9122,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/authority.py",
+      "python39_ast_parse": true,
+      "sha256": "e41b26bfd616fa4ee18c0f06d56f272218153db56a73c662561dbc1d4151dc51"
+    },
+    {
+      "bytes": 5344,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/bindings.py",
+      "python39_ast_parse": true,
+      "sha256": "1e9fa51c7051eed6250739d2f871a28ecd567e4586530c758ade8884881e73c0"
+    },
+    {
+      "bytes": 2461,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/closure.py",
+      "python39_ast_parse": true,
+      "sha256": "3e1a089bfa3fc8826e03889c9659e99fe113e1d6bcdacf50915e9f51a0872a11"
+    },
+    {
+      "bytes": 8882,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/i4_q.py",
+      "python39_ast_parse": true,
+      "sha256": "d9bbfe3ee56d385b4859e6e098b5248b544a9b465fb465fc996cf28f529f83ee"
+    },
+    {
+      "bytes": 4032,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/jqjq.py",
+      "python39_ast_parse": true,
+      "sha256": "0ac936625ccb4c9dcf8c216f9119ee359419402372b83a3ed87379d277fca61c"
+    },
+    {
+      "bytes": 11311,
+      "forbidden_runtime_constructs": [],
+      "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/weights.py",
+      "python39_ast_parse": true,
+      "sha256": "b7e498de3eb571e9d070971cc01204afb62a845eb4985ad5a052ecf73d2826e8"
+    },
+    {
+      "bytes": 10176,
+      "forbidden_runtime_constructs": [],
+      "path": "tests/test_c408_c117_i2_weight_routing_closure.py",
+      "python39_ast_parse": true,
+      "sha256": "6a09378daf5e969543f73f6067161570c573ea490d2a9da1164b06ea5163abbc"
+    },
+    {
+      "bytes": 10169,
+      "forbidden_runtime_constructs": [],
+      "path": "tools/generate_c408_c117_i2_weight_routing_closure.py",
+      "python39_ast_parse": true,
+      "sha256": "66c3172a1da4e115b637198a1deb650521c7d7b2c389bb12e59eae9b04b3209e"
+    }
+  ],
+  "schema": "C408-PYTHON39-COMPATIBILITY-AUDIT-V1"
+}

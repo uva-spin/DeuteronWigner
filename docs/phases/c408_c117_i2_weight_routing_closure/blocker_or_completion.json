@@ -1,0 +1,117 @@
+{
+  "I2_source_descendant_member_weights_ready": true,
+  "J_gJ_g_derivative_density_ready": false,
+  "J_qJ_q_direct_sum_product_block_ready": true,
+  "J_qJ_q_q_sector_I4_ready": true,
+  "activation_gate_status": "NOT_READY",
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "derivative_density_conflict": {
+    "complete_C117_action": false,
+    "facts": [
+      "C119 gluon_current already contains pi*k_c/L",
+      "C119 also lists a derivative_or_helicity pi*k_c/L leaf",
+      "C124 derivative_density assigns pi*k/L as the member multiplier",
+      "C406/C407 source-derived gluon descendants already contain both current momenta"
+    ],
+    "numerical_derivative_density_action": null,
+    "product": "J_gJ_g:qg->qg",
+    "risk": "multiplying all historical derivative leaves would over-count ordered derivatives",
+    "root": "d6a9659e83c84f2219be9effeb141ba8f4b85ed8d30974154857a7e12d297c6d",
+    "schema": "C408-DERIVATIVE-DENSITY-COUNT-CONFLICT-V1",
+    "smallest_missing_object": "one source-qualified product-level derivative-count and normalization descendant reconciling C119, C124/C126 and C406/C407",
+    "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE",
+    "unavailable_not_zero": true
+  },
+  "full_C117_I2_action_ready": false,
+  "full_C396_forward_map_ready": false,
+  "i2_member_weight_authority": {
+    "C117_abstract_expression": "sum_r w_r phi_r^* phi_r",
+    "C124_descendant_member_multiplier": "1",
+    "C126_value_program_member_multiplier": "1",
+    "C249_generic_adapter": "caller-weighted generic interface retained",
+    "C407_broad_weight_blocker_superseded_for_listed_I2_programs": true,
+    "C408_scope": "exact C124/C126 source-descendant member multiplier after the C407 longitudinal, helicity and color contractions have been evaluated independently",
+    "c_C117_1_bound": false,
+    "common_current_normalization_bound": false,
+    "complete_C117_action": false,
+    "derivative_density_weight_closed": false,
+    "g_s_squared_bound": false,
+    "graph": "I2_density_projector",
+    "programs": [
+      "J_qJ_q:qg->qg",
+      "J_qJ_g:qg->qg",
+      "J_gJ_q:qg->qg"
+    ],
+    "root": "d80b2cf81438483b7b7dbe9f4aab084ab69301985723a9bf2691ff42aab9b1fe",
+    "schema": "C408-C117-I2-C124-C126-MEMBER-WEIGHT-AUTHORITY-V1",
+    "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE",
+    "target_count_once_aggregation_bound": false,
+    "unit_multiplier_is_physical_coefficient": false
+  },
+  "mixed_current_source_weighted_product_blocks_ready": true,
+  "physical_fit_authorized": false,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "root": "99f944543ac1388891cb24d62e3acfc07d50af360e40417e4eda53f3f75170c0",
+  "routing_authority": {
+    "C403_I2_substituted_into_q_sector": false,
+    "C408_route": "I4_local",
+    "authorities": [
+      {
+        "owner": "C116",
+        "route": "I4_local only",
+        "specificity": "product_and_sector",
+        "status": "SOURCE_QUALIFIED"
+      },
+      {
+        "owner": "C126",
+        "route": "C116:I4_local",
+        "specificity": "product_and_sector",
+        "status": "SOURCE_QUALIFIED"
+      },
+      {
+        "owner": "C125",
+        "route": "I2_density_projector",
+        "specificity": "product_only_helper",
+        "status": "CONFLICTING_OVERBROAD_HELPER"
+      }
+    ],
+    "complete_C117_action": false,
+    "decision_rule": "use the two agreeing product-and-sector authorities C116/C126; do not mutate historical C125",
+    "historical_C125_modified": false,
+    "program": "J_qJ_q:q->q",
+    "root": "c5639d3a9eeef3083b015836a14eb56890429e80aa7ebd51281381a690f77d89",
+    "routing_conflict_closed": true,
+    "schema": "C408-JQJQ-Q-SECTOR-GRAPH-ROUTING-AUTHORITY-V1",
+    "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE"
+  },
+  "schema": "C408-C117-I2-COMPLETION-RECORD-V1",
+  "scientific_boundary": {
+    "activation_gate_status": "NOT_READY",
+    "closed": [
+      "J_qJ_q:q->q graph routing through C116/C126 I4_local",
+      "C124/C126 exact unit I2 member multiplier for three qg I2 programs",
+      "source-routed J_qJ_q q-sector I4 transverse-mode sum",
+      "source-routed J_qJ_q qg-sector unit-member sum",
+      "source-routed mixed-current qg unit-member sums",
+      "sparse and independent matrix-free direct-sum product-block primitives"
+    ],
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "open": [
+      "J_gJ_g derivative-density derivative-count reconciliation",
+      "J_gJ_g q-sector number-changing branches",
+      "route-reconciled finite-cell/field/state/M2 normalization",
+      "complete C125 target aggregation and count-once multiplicity",
+      "g_s^2 and c_C117_1 values"
+    ],
+    "physical_fit_authorized": false,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "root": "0ea29907ac5abdf0152aa7ffc6c87c585204e7957f4d84c7c236331e322791c6",
+    "schema": "C408-SCIENTIFIC-BOUNDARY-V1",
+    "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE"
+  },
+  "smallest_missing_object": "J_gJ_g derivative-density product-level derivative-count and normalization descendant; J_gJ_g q-sector number-changing branches; route-reconciled finite-cell/field/state/M2 normalization; complete C125 target aggregation/count-once multiplicity; g_s^2 and c_C117_1",
+  "source_hash_audit_pass": true,
+  "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE"
+}
