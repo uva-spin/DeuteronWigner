@@ -1,0 +1,20 @@
+{
+  "schema": "C408-LIVE-INTEGRATION-GENERATOR-VALIDATION-V1",
+  "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 tools/generate_c408_c117_i2_weight_routing_closure.py",
+  "exit_code": 0,
+  "live_generation_root": "docs/phases/c408_c117_i2_weight_routing_closure",
+  "two_clean_builds": {"passed":true,"files_compared":27,"all_byte_identical":true},
+  "source_hash_rows": 12,
+  "I2_member_counts": {"K9":28,"K11":45,"K13":66},
+  "q_sector_I4_mode_counts": {"K9":36,"K11":55,"K13":78},
+  "source_routed_J_qJ_q_direct_sum_paths": 3,
+  "source_routed_mixed_direct_sum_paths": 6,
+  "source_routed_product_block_primitive_paths": 9,
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "physical_fit_authorized": false,
+  "activation_gate_status": "NOT_READY",
+  "source_hash_audit_pass": true,
+  "live_generation_result_root": "b34e98cad83ddb0241498bb6c1ea3b1cd5a4e65a6911f61c0ff1908a2cf3bc92"
+}
