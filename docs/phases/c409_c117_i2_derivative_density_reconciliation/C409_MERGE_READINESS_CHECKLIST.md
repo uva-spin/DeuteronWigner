@@ -1,0 +1,21 @@
+# C409 merge-readiness checklist
+
+- [x] Baseline fixed to `ab0af6587131a2846425e9bb19cfdc784b9f0bdb`.
+- [x] Fourteen source-owner files hash audited.
+- [x] Exactly two source derivatives retained for `J_gJ_g`.
+- [x] C119 extra derivative leaf excluded on the reduced route.
+- [x] C124/C126 extra derivative-density factor excluded on the reduced route.
+- [x] All 62 C407 gluon rows reconstructed exactly.
+- [x] Reduced transverse kernel implemented in sparse and independent matrix-free forms.
+- [x] `C_A` applied exactly once.
+- [x] K9/K11/K13 qg product blocks implemented and validated.
+- [x] q-sector unresolved branches not zero-filled.
+- [x] Complete C117 and C396 counts not overstated.
+- [x] Python 3.9 static audit included.
+- [x] Focused test suite passes.
+- [x] Two-clean-build evidence required for live integration.
+- [ ] Live repository package verification.
+- [ ] Full live regression suite.
+- [ ] Exact 46-path staged-scope audit.
+- [ ] Local phase-branch commit.
+- [ ] Separate user-reviewed merge into local `main`.

@@ -1,0 +1,20 @@
+{
+  "schema": "C409-LIVE-INTEGRATION-FOCUSED-TESTS-V1",
+  "groups": [
+    {"name":"C409","command":"python3 -m pytest -q tests/test_c409_c117_i2_derivative_density_reconciliation.py","passed":29,"failed":0},
+    {"name":"C408","command":"python3 -m pytest -q tests/test_c408_c117_i2_weight_routing_closure.py","passed":28,"failed":0},
+    {"name":"C407","command":"python3 -m pytest -q tests/test_c407_c117_i2_same_species_descendants.py","passed":28,"failed":0},
+    {"name":"C406","command":"python3 -m pytest -q tests/test_c406_c117_i2_gluon_normal_order_descendant.py","passed":24,"failed":0},
+    {"name":"C405","command":"python3 -m pytest -q tests/test_c405_c117_i2_current_topology_embedding.py","passed":21,"failed":0},
+    {"name":"C404","command":"python3 -m pytest -q tests/test_c404_c117_i2_longitudinal_color_primitive.py","passed":15,"failed":0},
+    {"name":"C403","command":"python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py","passed":16,"failed":0},
+    {"name":"C401","command":"python3 -m pytest -q tests/test_c401_c396_mass_directions.py","passed":14,"failed":0},
+    {"name":"C400.S2","command":"python3 -m pytest -q tests/test_c400_s2_corrective.py","passed":26,"failed":0,"warnings":5},
+    {"name":"C114/C115/C117/C119","passed":12,"failed":0},
+    {"name":"C45/C47 selected","passed":4,"failed":0},
+    {"name":"C151","command":"python3 -m pytest -q tests/test_c151_hqcdg2pt.py","passed":4,"failed":0}
+  ],
+  "total_passed": 221,
+  "total_failed": 0,
+  "required_total": 221
+}
