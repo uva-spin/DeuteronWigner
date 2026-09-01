@@ -1,0 +1,48 @@
+{
+  "schema": "C409-CHATGPT-STAGE-TEST-EXECUTION-V1",
+  "environment": {
+    "python": "3.13.5",
+    "note": "The supplied implementation is statically audited for Python 3.9; the canonical live gate must run under Python 3.9.6."
+  },
+  "groups": [
+    {"name": "C409 focused", "passed": 29, "failed": 0, "deselected": 0},
+    {"name": "C408 regression", "passed": 28, "failed": 0, "deselected": 0},
+    {"name": "C407 regression", "passed": 28, "failed": 0, "deselected": 0},
+    {"name": "C406 regression", "passed": 24, "failed": 0, "deselected": 0},
+    {"name": "C405 available replay subset", "passed": 17, "failed": 0, "deselected": 4},
+    {"name": "C404 regression", "passed": 15, "failed": 0, "deselected": 0},
+    {"name": "C403 regression", "passed": 16, "failed": 0, "deselected": 0},
+    {"name": "C401 available replay subset", "passed": 13, "failed": 0, "deselected": 1},
+    {"name": "C400.S2 available replay subset", "passed": 25, "failed": 0, "deselected": 1}
+  ],
+  "available_replay_total_passed": 195,
+  "available_replay_total_failed": 0,
+  "replay_omissions": [
+    "docs/next_level/c43_action_derivation_manifest.json",
+    "references/c43_light_front_qcd_gauge_action.tex",
+    "docs/phases/c400_s2_corrective_patch/state_identity_validation.json",
+    "tests/test_c114_icurrent.py",
+    "tests/test_c115_icho.py",
+    "tests/test_c117_icreg2.py",
+    "tests/test_c119_icnorm3.py",
+    "tests/test_c45_modes.py",
+    "tests/test_c47_basis1.py",
+    "tests/test_c151_hqcdg2pt.py"
+  ],
+  "required_live_groups": [
+    ["C409 focused", 29],
+    ["C408 regression", 28],
+    ["C407 regression", 28],
+    ["C406 regression", 24],
+    ["C405 regression", 21],
+    ["C404 regression", 15],
+    ["C403 regression", 16],
+    ["C401 regression", 14],
+    ["C400.S2 regression", 26],
+    ["C114/C115/C117/C119 regression", 12],
+    ["C45/C47 selected regression", 4],
+    ["C151 convention regression", 4]
+  ],
+  "required_live_total_passed": 221,
+  "required_live_total_failed": 0
+}
