@@ -1,0 +1,17 @@
+{
+  "schema": "C410-LIVE-INTEGRATION-RELEASE-V1",
+  "phase": "C410_C117_I2_RETAINED_AGGREGATION_BOUNDARY",
+  "baseline": "160eb887f393177170b4c3486cea27b41968dfce",
+  "branch": "codex/c410-c117-i2-retained-aggregation-boundary",
+  "status": "RELEASED_TO_LOCAL_PHASE_COMMIT_ONLY",
+  "expected_commit_title": "C410 close C117 I2 retained aggregation boundary",
+  "expected_commit_paths": 50,
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "physical_fit_authorized": false,
+  "activation_gate_status": "NOT_READY",
+  "merge_authorized": false,
+  "push_authorized": false,
+  "next_frontier": "source-qualified C260/C262 finite-C43 operator-normalization and wavepacket adapter, field/state/M2 normalization, O_C117_1,R promotion, and c_C117_1"
+}

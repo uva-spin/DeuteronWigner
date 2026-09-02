@@ -1,0 +1,87 @@
+{
+  "absolute_C260_operator_normalization_applied": false,
+  "classification": "SOURCE_COEFFICIENT_NORMALIZED_RETAINED_CONNECTED_SHAPE_NOT_C260_NORMALIZED_C117_OPERATOR",
+  "complete_C117_action": false,
+  "maximum_four_product_decomposition_residual": 0.0,
+  "maximum_hermiticity_residual": 0.0,
+  "maximum_mixed_source_order_adjoint_residual": 0.0,
+  "maximum_source_minus_one_half_scaling_residual": 0.0,
+  "maximum_sparse_matrix_free_residual": 4.555986278192597e-13,
+  "pass": true,
+  "product_count_per_resolution": 4,
+  "q_sector_vacuum_projection_root": "2dad4939666994216422bb1bdbe6fc725174a354caee47612eacf69896022cdf",
+  "retained_connected_aggregate_shape_paths": 3,
+  "root": "31c9b7eeb161e038eedafcc2d968ef788c14b32e6b66f512dcdc3d9b24f7985f",
+  "row_count": 3,
+  "rows": [
+    {
+      "aggregate_hermiticity_residual": 0.0,
+      "aggregate_nonzero_entries": 13446,
+      "four_product_decomposition_residual": 0.0,
+      "mixed_source_order_adjoint_residual": 0.0,
+      "product_nonzero_entries": {
+        "J_gJ_g": 3360,
+        "J_gJ_q": 10080,
+        "J_qJ_g": 10080,
+        "J_qJ_q": 3366
+      },
+      "q_sector_J_gJ_g_nonzero_entries": 0,
+      "resolution": "K9",
+      "shape": [
+        1350,
+        1350
+      ],
+      "source_minus_one_half_scaling_residual": 0.0,
+      "source_reduced_nonzero_entries": 13446,
+      "source_reduced_sparse_matrix_free_residual": 2.2552262383344823e-14,
+      "sparse_matrix_free_residual": 4.5104524766689646e-14
+    },
+    {
+      "aggregate_hermiticity_residual": 0.0,
+      "aggregate_nonzero_entries": 43506,
+      "four_product_decomposition_residual": 0.0,
+      "mixed_source_order_adjoint_residual": 0.0,
+      "product_nonzero_entries": {
+        "J_gJ_g": 8700,
+        "J_gJ_q": 34800,
+        "J_qJ_g": 34800,
+        "J_qJ_q": 8706
+      },
+      "q_sector_J_gJ_g_nonzero_entries": 0,
+      "resolution": "K11",
+      "shape": [
+        2706,
+        2706
+      ],
+      "source_minus_one_half_scaling_residual": 0.0,
+      "source_reduced_nonzero_entries": 43506,
+      "source_reduced_sparse_matrix_free_residual": 8.629121994519552e-14,
+      "sparse_matrix_free_residual": 1.7258243989039104e-13
+    },
+    {
+      "aggregate_hermiticity_residual": 0.0,
+      "aggregate_nonzero_entries": 110598,
+      "four_product_decomposition_residual": 0.0,
+      "mixed_source_order_adjoint_residual": 0.0,
+      "product_nonzero_entries": {
+        "J_gJ_g": 18432,
+        "J_gJ_q": 92160,
+        "J_qJ_g": 92160,
+        "J_qJ_q": 18438
+      },
+      "q_sector_J_gJ_g_nonzero_entries": 0,
+      "resolution": "K13",
+      "shape": [
+        4758,
+        4758
+      ],
+      "source_minus_one_half_scaling_residual": 0.0,
+      "source_reduced_nonzero_entries": 110598,
+      "source_reduced_sparse_matrix_free_residual": 2.2779931390962987e-13,
+      "sparse_matrix_free_residual": 4.555986278192597e-13
+    }
+  ],
+  "schema": "C410-C117-I2-RETAINED-CONNECTED-AGGREGATE-VALIDATION-V1",
+  "source_routed_product_block_primitive_paths": 12,
+  "status": "C410_C117_I2_Q_SECTOR_VACUUM_ROUTING_AND_RETAINED_CONNECTED_CURRENT_SQUARE_AGGREGATION_READY_C260_OPERATOR_NORMALIZATION_UNAVAILABLE"
+}
