@@ -1,0 +1,50 @@
+{
+  "authority_root": "d2d711cf668b69b6258737a9a991312b0601fadd0b2132caed0e81135455459d",
+  "coordinate_coefficient_count": 0,
+  "duplicate_products": 0,
+  "g_s_squared_count": 0,
+  "mixed_orders_kept_separate": true,
+  "omitted_products": 0,
+  "pass": true,
+  "root": "052e14cd19e3cffabd1a9b66e4abf97948fab23946a41f402410ad9be8a7e6c3",
+  "row_count": 4,
+  "rows": [
+    {
+      "Hermitian_partner": "J_qJ_q",
+      "extra_factor_two": false,
+      "multiplicity": 1,
+      "ordinal": 0,
+      "product": "J_qJ_q",
+      "source_order_retained": true
+    },
+    {
+      "Hermitian_partner": "J_gJ_q",
+      "extra_factor_two": false,
+      "multiplicity": 1,
+      "ordinal": 1,
+      "product": "J_qJ_g",
+      "source_order_retained": true
+    },
+    {
+      "Hermitian_partner": "J_qJ_g",
+      "extra_factor_two": false,
+      "multiplicity": 1,
+      "ordinal": 2,
+      "product": "J_gJ_q",
+      "source_order_retained": true
+    },
+    {
+      "Hermitian_partner": "J_gJ_g",
+      "extra_factor_two": false,
+      "multiplicity": 1,
+      "ordinal": 3,
+      "product": "J_gJ_g",
+      "source_order_retained": true
+    }
+  ],
+  "schema": "C410-C117-I2-COUNT-ONCE-AGGREGATION-V1",
+  "source_identity_reconstructed": true,
+  "source_minus_one_half_count": 1,
+  "status": "C410_C117_I2_Q_SECTOR_VACUUM_ROUTING_AND_RETAINED_CONNECTED_CURRENT_SQUARE_AGGREGATION_READY_C260_OPERATOR_NORMALIZATION_UNAVAILABLE",
+  "vacuum_cnumber_counted_in_retained_matrix": 0
+}

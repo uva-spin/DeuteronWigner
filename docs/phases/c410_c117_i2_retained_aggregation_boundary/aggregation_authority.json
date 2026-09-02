@@ -1,0 +1,45 @@
+{
+  "Hermitian_reverse_averaged_posthoc": false,
+  "absolute_C260_operator_normalization_closed": false,
+  "c_C117_1_applied": false,
+  "complete_C117_action": false,
+  "complete_target_aggregation_closed": false,
+  "factor_two_substitution_used": false,
+  "g_s_squared_factored": true,
+  "mixed_orders_kept_separate": true,
+  "product_count": 4,
+  "products": [
+    {
+      "multiplicity": 1,
+      "ordinal": 0,
+      "owner": "C408 source-routed direct-sum primitive",
+      "product": "J_qJ_q"
+    },
+    {
+      "multiplicity": 1,
+      "ordinal": 1,
+      "owner": "C408/C406 mixed-current source order",
+      "product": "J_qJ_g"
+    },
+    {
+      "multiplicity": 1,
+      "ordinal": 2,
+      "owner": "C408/C406 Hermitian source-order partner",
+      "product": "J_gJ_q"
+    },
+    {
+      "multiplicity": 1,
+      "ordinal": 3,
+      "owner": "C409 qg primitive plus C410 q-sector vacuum projection",
+      "product": "J_gJ_g"
+    }
+  ],
+  "root": "d2d711cf668b69b6258737a9a991312b0601fadd0b2132caed0e81135455459d",
+  "schema": "C410-C117-I2-RETAINED-CONNECTED-AGGREGATION-AUTHORITY-V1",
+  "source_common_coefficient": "-1/2",
+  "source_common_coefficient_applied_once": true,
+  "source_identity": "(J_q+J_g) K (J_q+J_g) = J_qKJ_q + J_qKJ_g + J_gKJ_q + J_gKJ_g",
+  "source_product_count_once_structure_closed": true,
+  "status": "C410_C117_I2_Q_SECTOR_VACUUM_ROUTING_AND_RETAINED_CONNECTED_CURRENT_SQUARE_AGGREGATION_READY_C260_OPERATOR_NORMALIZATION_UNAVAILABLE",
+  "vacuum_direction_counted_in_retained_matrix": false
+}

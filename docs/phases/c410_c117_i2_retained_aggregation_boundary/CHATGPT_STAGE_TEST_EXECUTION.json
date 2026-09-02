@@ -1,0 +1,35 @@
+{
+  "focused_collected": 55,
+  "focused_failed": 0,
+  "focused_passed": 55,
+  "focused_test_file": "tests/test_c410_c117_i2_retained_aggregation_boundary.py",
+  "live_required_test_total": 276,
+  "live_test_groups": [
+    55,
+    29,
+    28,
+    28,
+    24,
+    21,
+    15,
+    16,
+    14,
+    26,
+    12,
+    4,
+    4
+  ],
+  "prepared_available_passes": 250,
+  "prepared_environment": "reconstructed accepted C409 surface",
+  "prepared_limitations": [
+    "Four C405 tests require docs/next_level/c43_action_derivation_manifest.json absent from the reconstructed review surface.",
+    "One C401 generator test requires references/c43_light_front_qcd_gauge_action.tex absent from the reconstructed review surface.",
+    "One C400.S2 evidence test requires docs/phases/c400_s2_corrective_patch/state_identity_validation.json absent from the reconstructed review surface.",
+    "The 12 C114/C115/C117/C119, four selected C45/C47, and four C151 historical tests are absent from the reconstructed review surface and are required in live integration."
+  ],
+  "prepared_unavailable_live_only_tests": 26,
+  "python_compile": "PASS",
+  "schema": "C410-CHATGPT-STAGE-TEST-EXECUTION-V1",
+  "scientific_nonclaims_preserved": true,
+  "source_hash_audit": "PASS"
+}
