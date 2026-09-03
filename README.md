@@ -180,15 +180,17 @@ acquisition instructions are retained in
 
 ## Continuation handoff
 
+For current local development, start with
+[`AGENTS.md`](AGENTS.md) and
+[`handoff/CURRENT_PROJECT_HANDOFF.md`](handoff/CURRENT_PROJECT_HANDOFF.md).
+They contain the present status, claim lanes, and science-first direction path.
+
 The public continuation handoff is
 [`computation_handoff/repo`](https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo).
-It is a published snapshot of this checkout, not a separate scientific
-authority. The current source commit, accepted phase evidence, and remaining
-frontier must be read from that tree together with the corresponding commits
-on `main`.
+It is a published snapshot, not a separate scientific authority. The current
+snapshot represents C410 and is stale relative to the local C411 baseline.
 
-Whenever an accepted phase or material scientific commit lands on `main`,
-update the published tree in the same change or immediately afterward:
+At a deliberate public milestone, update the published tree:
 
 1. copy the accepted source/docs/tests needed for continuation;
 2. update `computation_handoff/repo/CURRENT_SOURCE_COMMIT.txt`;
@@ -203,9 +205,11 @@ published snapshot with a different history, do not force-push or rewrite it.
 Apply the selected current tree as a fast-forward GitHub Git Database/API
 commit whose parent is the current public `main`, then verify the remote ref.
 
-Do not claim that the public handoff is current unless its source-commit
-marker identifies the accepted source commit represented by the published
-snapshot. A handoff-only publication commit may follow that source commit.
+Exploratory calculations and ordinary validated-model work do not need to wait
+for snapshot publication or checksum regeneration. Do not claim that the
+public handoff is current unless its source-commit marker identifies the
+accepted source commit represented by the snapshot. A handoff-only publication
+commit may follow that source commit.
 Preserve unavailable-versus-zero,
 source-shape-versus-coefficient, and numerical-path-versus-physical-rank
 distinctions when updating it.
