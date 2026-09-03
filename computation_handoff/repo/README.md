@@ -16,6 +16,10 @@ After every accepted phase or material scientific commit on the canonical
 `main`, this tree must be refreshed in the same publication cycle. Update the
 source-commit marker, phase evidence, and current handoff; refresh
 `REPO_CONTENTS.*` when the inventory changes; verify, commit, and push. Do not
+If ordinary Git push cannot fast-forward because the public branch is a
+published snapshot with a different history, use an authenticated GitHub Git
+Database/API commit based on the current public `main`; never force-push or
+rewrite the public branch. Do not
 describe this tree as current unless its source marker identifies the accepted
 source commit represented by the published tree. A handoff-only publication
 commit may follow it. Preserve unavailable-versus-zero,

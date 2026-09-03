@@ -198,6 +198,11 @@ update the published tree in the same change or immediately afterward:
    inventory changes; and
 5. verify the published tree, commit it, and push `main`.
 
+If ordinary Git push cannot fast-forward because the public branch is a
+published snapshot with a different history, do not force-push or rewrite it.
+Apply the selected current tree as a fast-forward GitHub Git Database/API
+commit whose parent is the current public `main`, then verify the remote ref.
+
 Do not claim that the public handoff is current unless its source-commit
 marker identifies the accepted source commit represented by the published
 snapshot. A handoff-only publication commit may follow that source commit.
