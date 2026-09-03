@@ -15,7 +15,9 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage[nameinlink,noabbrev]{cleveref}
-\usepackage[backend=biber,style=numeric-comp,sorting=none,maxbibnames=99,giveninits=true]{biblatex}
+% BibTeX is selected for portable Tectonic builds; the database remains
+% compatible with Biber for publication workflows that require it.
+\usepackage[backend=bibtex,style=numeric-comp,sorting=none,maxbibnames=99,giveninits=true]{biblatex}
 \addbibresource{DeuteronWigner_complete_theory_references.bib}
 \usepackage{fancyhdr}
 \usepackage{setspace}
@@ -32,7 +34,7 @@
   linkcolor=blue!55!black,
   citecolor=green!45!black,
   urlcolor=blue!65!black,
-  pdftitle={DeuteronWigner: Complete Mathematical and Physical Description},
+  pdftitle={DeuteronWigner: Current Mathematical and Physical Architecture},
   pdfauthor={DeuteronWigner project}
 }
 \setcounter{secnumdepth}{3}
@@ -103,7 +105,7 @@
 }
 
 \title{\Huge \textbf{DeuteronWigner}\\[0.7em]
-\LARGE A Complete Mathematical and Physical Description\\[0.25em]
+\LARGE Current Mathematical and Physical Architecture\\[0.25em]
 \Large of the Working Spin-1 Light-Front GTMD/TMD Framework,\\
 Its Nuclear Embedding,\\
 and the Conditional Microscopic Hamiltonian Program}
@@ -115,18 +117,26 @@ and the Conditional Microscopic Hamiltonian Program}
 \maketitle
 
 \begin{abstract}
-This note assembles the mathematical and physical content of the DeuteronWigner project into one self-contained account.  The working theory is organized around a zero-skewness, light-front generalized transverse-momentum-dependent correlator (GTMD) for a spin-1 target.  Its transverse-momentum, momentum-transfer, and Fourier marginals supply transverse-momentum-dependent distributions (TMDs), zero-skewness generalized parton distributions (GPDs), collinear distributions, form-factor moments, and phase-space Wigner functions.  The target spin space is treated as a complete three-dimensional helicity system, decomposed into unpolarized, vector-polarized, and rank-two tensor-polarized sectors.  Quark and gluon correlators are retained as distinct gauge-invariant operators, projected through complete target--parton density matrices, and embedded into a light-front deuteron through proton/neutron, flavor, spin, orbital, wave-function, gauge-link, and nuclear-mechanism labels.
+This note assembles the current mathematical and physical architecture of the DeuteronWigner project into one self-contained account.  The working theory is organized around sampled zero-skewness light-front generalized transverse-momentum-dependent correlators (GTMDs) for a spin-1 target.  Their transverse-momentum, momentum-transfer, and Fourier marginals supply transverse-momentum-dependent distributions (TMDs), zero-skewness generalized parton distributions (GPDs), collinear distributions, form-factor moments, and phase-space Wigner functions.  The target spin space is treated as a complete three-dimensional helicity system, decomposed into unpolarized, vector-polarized, and rank-two tensor-polarized sectors.  The implemented leading-twist TMD projections are complete in the declared quark and gluon bases; a complete independent-amplitude parameterization of the general nonzero-skewness spin-1 GTMD correlator is \emph{not} yet part of the project.  Quark and gluon correlators are retained as distinct color-gauge-invariant operator structures, with ultraviolet, rapidity, and soft-subtraction scheme completion stated separately, and are embedded into a light-front deuteron through proton/neutron, flavor, spin, orbital, wave-function, gauge-link, and nuclear-mechanism labels.
 
 The present executable output is a correlator-level, phenomenologically constrained boundary model.  It combines global-fit nucleon information, realistic deuteron wave functions, measured tensor observables, source-qualified nuclear mechanisms, and explicitly identified model sectors.  It is \emph{not} yet the solution of a single physically identified quark--gluon--nuclear Hamiltonian.  The conditional microscopic program includes the accepted C144 diagnostic-integrity layer, six K-local C396 mass-direction numerical actions from C401, and the C403--C410 construction of the first C117 source-reduced interaction shape.  C411 records the finite-C43 adapter contract and the exact symmetric-light-front $P^-\to M^2$ conversion, but it does not yet derive or supply the residual finite-cell/state normalization and mixing.  The current counts are therefore six complete C396 numerical actions and zero complete C117 coordinate actions.  No sector-qualified physical C43 state, production current, physical response rank, fitted Hamiltonian, or activation record has been established.
 
-The historical C398/C399 records remain valid in their narrow form: seven source-derived condition families were identified, missing targets were retained as missing rather than zero, and no ready-made C43-compatible finite-basis target capsule was found in the audited routes.  Physical identification remains a global, resolution-aware inverse problem in observable space.  Development now uses separate exploratory, validated-model, and physical-claim lanes: an unavailable publication-grade input blocks a physical claim but does not automatically block a transparent derivation, parameterized numerical experiment, or sensitivity study.  Direct mathematics and scientific response calculations take priority over phase numbering, schema proliferation, mutation counts, and duplicate handoff bookkeeping.  The result is simultaneously a theory note, a convention ledger, and an equation-to-implementation map for the next C117 normalization and K9 response calculation.
+The historical C398/C399 records remain valid in their narrow form: seven source-derived condition families were identified, missing targets were retained as missing rather than zero, and no ready-made C43-compatible finite-basis target capsule was found in the audited routes.  Physical identification remains a global, resolution-aware inverse problem in observable space.  Development now uses separate exploratory, validated-model, and physical-claim lanes: an unavailable publication-grade input blocks a physical claim but does not automatically block a transparent derivation, parameterized numerical experiment, or sensitivity study.  Direct mathematics and scientific response calculations take priority over phase numbering, schema proliferation, mutation counts, and duplicate handoff bookkeeping.  The result is simultaneously a scoped theory note, a convention ledger, and an equation-to-implementation map for the next C117 normalization and K9 response calculation.  Its compact machine-readable companion is \codepath{references/DeuteronWigner_theory_state_current.json}.
 
 \end{abstract}
 
 \chapter*{Document status and claim discipline}
 \addcontentsline{toc}{chapter}{Document status and claim discipline}
 
-This revision is reconciled against local main commit \texttt{186cc816}, while the published computation-handoff source marker remains at the C410 merge \texttt{51d3919e}.  The complete identifiers are recorded in \cref{app:reproducibility}.  It is based on the public repository and computation handoff, the complete 2026-08-28 source archive, the formalism volumes, the source-level audit, the C398--C400 records, the accepted C400.S2/S2M/S2M2 diagnostic-integrity layer, the C401--C410 source-operator progression, C411, and the current project handoff \cite{DeuteronWignerRepo2026,DWGTMDTechnicalDraft2026,DWFormalVolumes2026,DWSourceAudit2026,DWC398Record2026,DWC399Record2026,DWC400ScienceLock2026,DWC400P1Record2026,DWC400S2Record2026,DWC401C410Record2026,DWC411Record2026,DWCurrentHandoff2026}.  It uses four claim classes throughout:
+This revision audits the code baseline at local main commit \texttt{186cc816} and the preceding documentation/handoff baseline at \texttt{41ff7c8d}; the revision's own commit cannot be embedded before it exists.  The published computation-handoff source marker remains at the older C410 merge \texttt{51d3919e}.  The complete identifiers are recorded in \cref{app:reproducibility}.  The note is based on the checked-out source, the public repository and computation handoff, the complete 2026-08-28 source archive, the formalism volumes, the source-level audit, the C398--C400 records, the accepted C400.S2/S2M/S2M2 diagnostic-integrity layer, the C401--C410 source-operator progression, C411, and the current project handoff \cite{DeuteronWignerRepo2026,DWGTMDTechnicalDraft2026,DWFormalVolumes2026,DWSourceAudit2026,DWC398Record2026,DWC399Record2026,DWC400ScienceLock2026,DWC400P1Record2026,DWC400S2Record2026,DWC401C410Record2026,DWC411Record2026,DWCurrentHandoff2026}.
+
+\section*{Two independent classification axes}
+
+Every important statement must be read on two axes.  The first is its \emph{mathematical authority}: (i) an exact consequence of declared conventions or algebra; (ii) a project-convention identity defining the executable representation; (iii) a literature factorization formula with a stated domain and scheme; (iv) a phenomenological ansatz or numerical approximation; or (v) a schematic/open interface.  An arrow such as $\longrightarrow$ denotes operator matching or proportionality unless all normalization factors are displayed.  The second axis is its \emph{implementation and evidence status}, given by the four classes below.  A formula can therefore be exact but not implemented, or implemented and tested while still only a model of nature.  These categories must not be collapsed.
+
+The companion JSON records the same scope, counts, conventions, open dependencies, and next path in a form that an agent can validate without scraping prose.  The \TeX{} note remains the authority for derivations; the JSON is a synchronized index, not an independent theory source.
+
+This note uses four implementation/evidence classes throughout:
 
 \begin{longtable}{@{}p{0.30\textwidth}p{0.62\textwidth}@{}}
 \toprule
@@ -140,7 +150,7 @@ This revision is reconciled against local main commit \texttt{186cc816}, while t
 \end{longtable}
 
 \begin{claimbox}{Central claim boundary}
-The project has a working and directly tested mathematical framework for spin-1 correlators, projections, nuclear composition, Wigner/GTMD/TMD reductions, positivity, and selected observables.  Its numerical boundary is a structured phenomenological synthesis.  The C400.S2 layer verifies a C144 diagnostic solve, derivative-integrity machinery, state/projector semantics, and current-comparison infrastructure.  C401--C410 add six real C396 mass-direction actions and the first retained C117 source shape; C411 defines, but does not numerically close, its finite-C43 coordinate adapter.  The operational phenomenological boundary and the conditional microscopic program are both substantive, but they remain scientifically distinct.
+The project has a working and directly tested mathematical framework for spin-1 target density matrices, complete declared leading-twist TMD projections, sampled zero-skewness GTMD reductions, nuclear composition, positivity, and selected observables.  It does not yet contain a complete general spin-1 GTMD amplitude decomposition or a single microscopic solution of those correlators.  Its numerical boundary is a structured phenomenological synthesis.  The C400.S2 layer verifies a C144 diagnostic solve, derivative-integrity machinery, state/projector semantics, and current-comparison infrastructure.  C401--C410 add six real C396 mass-direction actions and the first retained C117 source shape; C411 defines, but does not numerically close, its finite-C43 coordinate adapter.  The operational phenomenological boundary and the conditional microscopic program are both substantive, but they remain scientifically distinct.
 \end{claimbox}
 
 \begin{longtable}{@{}p{0.35\textwidth}p{0.55\textwidth}@{}}
@@ -149,6 +159,11 @@ The project has a working and directly tested mathematical framework for spin-1 
 \textbf{Object}&\textbf{Accepted status}\\
 \midrule
 Phenomenological spin-1 boundary&Operational, source-qualified, and model-dependent by channel.\\
+Spin-1 target density representation&Complete three-helicity scalar/vector/tensor matrix basis in the declared conventions.\\
+Leading-twist quark/antiquark TMD projection&Complete implemented 18-function basis for each positive-$x$ species.\\
+Leading-twist gluon TMD projection&Complete 19-operator registry; 18 combinations identifiable in the current two-dimensional observation representation.\\
+Sampled GTMD reductions&Operational at zero skewness with closure tests for implemented marginals.\\
+General spin-1 GTMD amplitude parameterization&Open: nonzero-skewness independent amplitudes, polynomiality, and a complete renormalized scheme realization are not implemented.\\
 C144 diagnostic integrity path&Implemented and directly tested; nonphysical fixture only.\\
 C396 coordinate ownership&57 symbolic K-local records: 19 coordinates at each of K9, K11, and K13.\\
 C396 complete numerical apply paths&Six K-local mass-direction actions; the full state-to-observable forward map is not yet available.\\
@@ -181,7 +196,7 @@ The physical deuteron is assembled only after the proton and neutron sources, $u
 
 \section{The GTMD-first hierarchy}
 
-The organizing object is a gauge-linked off-forward parton correlator.  Suppressing spin and operator indices, the hierarchy is
+The organizing object is a gauge-linked off-forward parton correlator.  In the current executable scope this is a sampled zero-skewness helicity matrix, not a complete independent-amplitude decomposition of a general spin-1 GTMD.  Suppressing spin and operator indices, the hierarchy is
 \begin{equation}
  W(x,\kT,\DeltaT)
  \xrightarrow[\DeltaT=0]{} \Phi(x,\kT)
@@ -262,6 +277,23 @@ For an on-shell collinear four-vector of mass $m$ and positive $v^+$,
 \end{equation}
 This convention is implemented in \codepath{src/deuteron_wigner/kinematics.py}; all plus-current normalizations and momentum-fraction definitions in this note refer to it.  Light-front dynamics and the separation of kinematic and dynamic generators follow the standard front-form construction \cite{Dirac1949,BrodskyPauliPinsky1998,Carbonell1998,Miller2000LF}.
 
+\section{Longitudinal-cell notation and the historical \texorpdfstring{$L$}{L} translation}
+\label{sec:cell-notation}
+
+The executable C45/C46/C114/C142/C172 chain uses the interval
+\begin{equation}
+ x^-\in[-L,L],\qquad \ell_-\equiv 2L,
+ \label{eq:cell-circumference}
+\end{equation}
+with mode functions and momenta
+\begin{equation}
+ \phi_k(x^-)=\frac{e^{+i\pi kx^-/L}}{\sqrt{2L}}
+ =\frac{e^{+i2\pi kx^-/\ell_-}}{\sqrt{\ell_-}},
+ \qquad p_k^+=\frac{\pi k}{L}=\frac{2\pi k}{\ell_-}.
+ \label{eq:cell-modes}
+\end{equation}
+Thus $L$ is the \emph{half-length} in the current executable convention and $\ell_-$ is the full longitudinal circumference.  Some older C43 manifests wrote the projector as $L^{-1}\int_{-L/2}^{L/2}\dd x^-$, using the same glyph $L$ for the \emph{full} circumference.  Those records must be translated by $L_{\rm old}=\ell_-=2L$ before factors from the historical and executable chains are combined.  This is a notation debt, not a physical disagreement, and is a mandatory factor-of-two check for the C117 adapter.
+
 \section{Symmetric zero-skewness frame}
 
 Let $p$ and $p'$ be incoming and outgoing deuteron momenta,
@@ -301,7 +333,7 @@ The first is a GTMD imaging transform and carries the $(2\pi)^{-2}$ normalizatio
 \begin{equation}
  \boxed{\bDelta\neq\bT}
 \end{equation}
-not merely as notation but as a type-level invariant in \codepath{conventions.py} and \codepath{kinematics.py}.
+not merely as notation but as a type-level invariant in \codepath{src/deuteron_wigner/conventions.py} and \codepath{src/deuteron_wigner/kinematics.py}.
 
 \section{Transverse tensors}
 
@@ -318,7 +350,7 @@ The symmetric-traceless tensor generated by a vector $k_T$ is denoted
  = \operatorname{STF}\!\left[k_T^{i_1}\cdots k_T^{i_r}\right],
  \label{eq:stf-def}
 \end{equation}
-with explicit recursive construction through rank four in \codepath{transverse_tensors.py}.  In two dimensions its contraction obeys
+with explicit recursive construction through rank four in \codepath{src/deuteron_wigner/transverse_tensors.py}.  In two dimensions its contraction obeys
 \begin{equation}
  k_T^{i_1\cdots i_r}v_T^{i_1\cdots i_r}
  =\frac{|\kT|^r|\bm v_T|^r}{2^{r-1}}
@@ -396,7 +428,7 @@ one obtains the exact adapter
  \delta_T f=-\frac32 f_{1LL}.
  \label{eq:f1ll-adapter}
 \end{equation}
-This sign and normalization are centralized in \codepath{conventions.py}; they are not inferred separately by plotting or observable code.
+This sign and normalization are centralized in \codepath{src/deuteron_wigner/conventions.py}; they are not inferred separately by plotting or observable code.
 
 \section{Joint parton--target density matrices}
 
@@ -420,12 +452,12 @@ For gluons, the correlator $\Phi_{\Lambda'\Lambda}^{ij}$ is reshaped from a $3\t
 \end{equation}
 for each physical ensemble member.  This is stronger than imposing selected scalar inequalities on projected TMDs \cite{CotognoVanDaalMulders2017}.
 
-\chapter{Gauge-invariant GTMD parent and its marginals}
+\chapter{Gauge-linked zero-skewness GTMD parent and its marginals}
 \label{chap:gtmd}
 
 \section{Quark correlator}
 
-For quark flavor $q$, the unsubtracted zero-skewness GTMD correlator is written schematically as
+For quark flavor $q$, the color-gauge-invariant but unsubtracted zero-skewness GTMD correlator is written schematically as
 \begin{align}
  W_{\Lambda'\Lambda}^{q[\Gamma],\mathcal U}(x,\kT,\DeltaT)
  &=\frac12\int\frac{\dd z^-\dd^2\bm z_T}{(2\pi)^3}
@@ -443,7 +475,7 @@ where
  \Gamma\in\{\gamma^+,\gamma^+\gamma_5,i\sigma^{i+}\gamma_5\}
  \label{eq:quark-leading-projectors}
 \end{equation}
-at leading twist.  The path $\mathcal U$ contains the process-dependent staple direction and color representation.  A complete renormalized GTMD also requires ultraviolet renormalization, rapidity regulation, and a soft subtraction; the precise factorization scheme is discussed in \cref{chap:evolution} \cite{MeissnerMetzSchlegel2009,EchevarriaGTMD2016,Collins2011}.
+at leading twist.  The path $\mathcal U$ makes the bilocal operator color-gauge invariant and contains the process-dependent staple direction and color representation.  It does not by itself make the correlator ultraviolet- and rapidity-finite.  A renormalized GTMD requires ultraviolet renormalization, rapidity regulation, and a compatible soft subtraction; the precise factorization scheme is discussed in \cref{chap:evolution} \cite{MeissnerMetzSchlegel2009,EchevarriaGTMD2016,Collins2011}.
 
 Antiquarks are stored as independent positive-$x$ phenomenological objects even though they can be related to negative-$x$ support of the same bilocal quark operator.  This is a bookkeeping choice made to preserve fitted quark and antiquark information before nuclear composition.
 
@@ -496,22 +528,23 @@ For either parton species $a$ and a fixed operator projection $J$,
  W_{\Lambda'\Lambda}^{a[J]}(x,\kT,\DeltaT).
  \label{eq:wigner-limit}
 \end{align}
-The source object \codepath{SampledGTMD} stores a dense grid with terminal $3\times3$ target-helicity indices and implements these reductions with trapezoidal integration and interpolated forward slices.  Tests check PDF closure by two routes and Fourier normalization \cite{DWSourceAudit2026}.
+The source object \statuscode{SampledGTMD} in \codepath{src/deuteron_wigner/gtmd_sampling.py} stores a dense grid with terminal $3\times3$ target-helicity indices and implements these reductions with trapezoidal integration and interpolated forward slices.  Tests check PDF closure by two routes and Fourier normalization \cite{DWSourceAudit2026}.
 
 \section{Local-current and energy--momentum moments}
 
-The $x$ moments of the GPD reduction provide local operators,
+The $x$ moments of the GPD reduction match onto local operators.  To avoid hiding state normalization and spin-1 tensor projectors in a false scalar equality, write this per parton species as
 \begin{align}
  \int\dd x\,H_{\Lambda'\Lambda}^{q[V]}(x,0,t)
- &\longrightarrow
- \langle p',\Lambda'|J_q^+(0)|p,\Lambda\rangle,
+ &=\mathcal P_{J,\Lambda'\Lambda}
+ \!\left[\langle p',\Lambda'|J_q^+(0)|p,\Lambda\rangle\right],
  \label{eq:vector-moment}\\
- \sum_{a=q,\bar q,g}\int\dd x\,xH_{\Lambda'\Lambda}^{a[V]}(x,0,t)
- &\longrightarrow
- \langle p',\Lambda'|T_a^{++}(0)|p,\Lambda\rangle.
+ \int\dd x\,xH_{\Lambda'\Lambda}^{a[V]}(x,0,t)
+ &=\mathcal P_{T,\Lambda'\Lambda}
+ \!\left[\langle p',\Lambda'|T_a^{++}(0)|p,\Lambda\rangle\right],
+ \qquad a\in\{q,\bar q,g\}.
  \label{eq:emt-moment}
 \end{align}
-For a spin-1 target these matrix elements contain charge, magnetic, quadrupole, and gravitational form-factor combinations.  The project treats such moments as independent closure constraints on the off-forward kernel; they do not replace the inclusive tensor structure function $b_1$.
+Here $\mathcal P_J$ and $\mathcal P_T$ include the convention-dependent kinematic factors and the appropriate spin-1 Lorentz/tensor decomposition.  Only after the species-resolved relation is formed may one sum $T^{++}=\sum_a T_a^{++}$; quark/gluon renormalization mixing must be retained.  For a spin-1 target these matrix elements contain charge, magnetic, quadrupole, and gravitational form-factor combinations.  The project treats such moments as independent closure constraints on the off-forward kernel; it does not claim that the schematic helicity function $H^{a[V]}$ alone is a complete spin-1 GPD/EMT decomposition, and these moments do not replace the inclusive tensor structure function $b_1$.
 
 \section{Gauge-link labels and time reversal}
 
@@ -524,7 +557,7 @@ A link label records incoming and outgoing staple directions.  In the simple fut
 \end{equation}
 The exact set of functions that flips is registry-driven rather than guessed from names.  More complicated hadron--hadron color flow may require process-dependent link combinations and color tensors beyond a single sign \cite{BrodskyHwangSchmidt2002,Collins2002SignChange,BoerMuldersPijlman2003,BomhofMuldersPijlman2004}.
 
-\part{Complete spin-1 correlator basis}
+\part{Declared leading-twist spin-1 TMD correlator basis}
 
 \chapter{Definite transverse rank and projection mathematics}
 \label{chap:rank}
@@ -597,7 +630,7 @@ For each quark or antiquark flavor, the source stores
  T^i_{\Lambda'\Lambda}=\Phi_{\Lambda'\Lambda}^{[i\sigma^{i+}\gamma_5]}.
  \label{eq:VAT}
 \end{equation}
-Together they define the $6\times6$ density in \cref{eq:quark-joint-density}.  The complete implemented leading-twist basis contains 18 functions for each positive-$x$ quark or antiquark species.  Names, ranks, target channels, and time-reversal parity follow the definite-rank spin-1 decomposition of \textcite{VanDaal2016}, with the physical-$S_{LL}$ adapter made explicit.
+Together they define the $6\times6$ density in \cref{eq:quark-joint-density}.  The complete implemented leading-twist basis contains 18 functions for each positive-$x$ quark or antiquark species.  Names, ranks, target channels, and time-reversal parity follow the definite-rank spin-1 decomposition of \textcite{VanDaal2016}, with the physical-$S_{LL}$ adapter made explicit.  The source name $g_1$ and the literature-style inventory name $g_{1L}$ denote the same longitudinal-helicity function in this note: $g_1\equiv g_{1L}$ (and likewise $g_1^g\equiv g_{1L}^g$).  This is an alias, not an additional distribution.
 
 \section{Channel-adapted notation}
 
@@ -840,7 +873,12 @@ The six T-odd functions are
 \section{Why the project publishes 18 accepted gluon outputs}
 \label{sec:19-to-18}
 
-The operator inventory in \cref{tab:gluon-inventory} has 19 functions.  In a strictly two-dimensional transverse tensor representation, however, the numerical basis matrices multiplying $f_{1TT}^g$ and $h_{1TT}^{\perp g}$ are linearly dependent up to sign for the projected observation ensemble.  Consequently, the design matrix cannot separate both scalars without additional operator information.  The directly identifiable combination is
+The operator inventory in \cref{tab:gluon-inventory} has 19 functions.  The reduction to 18 accepted outputs follows from an exact two-dimensional identity, not an empirical near-degeneracy.  For any real symmetric traceless $2\times2$ matrices $S$ and $K$,
+\begin{equation}
+ SK+KS=\Tr(SK)\,I_2.
+ \label{eq:2d-stf-product-identity}
+\end{equation}
+Taking $S=S_{TT}$ and $K=k_T^{(2)}$ shows that the fourth term of \cref{eq:gluon-TT} is the negative of the scalar-$TT$ matrix multiplying $f_{1TT}^g$, with the normalizations used there.  Consequently, a correlator sampled only through this two-dimensional matrix representation cannot separate the two scalar coefficients without additional operator information.  The directly identifiable combination is
 \begin{equation}
  f_{1TT}^g-h_{1TT}^{\perp g}.
  \label{eq:gluon-identifiable-combination}
@@ -853,7 +891,7 @@ For gluon T-odd distributions, the project retains separate antisymmetric $f^{ab
 
 \section{Status of the spectator-model comparison}
 
-The calculation of \textcite{XieChenLu2026} provides explicit expressions for 13 T-even gluon TMDs in a continuous-mass spectator model.  DeuteronWigner uses it as an operator and qualitative benchmark.  Earlier production layers reproduced source hierarchies and tensor structure but did not constitute a complete numerical reproduction of the spectator model's fitted spectral functions and all source conventions.  Accordingly, T-even structural agreement is useful; non-Sivers gluon T-odd sectors remain model-envelope quantities rather than extracted predictions.
+The calculation of \textcite{XieChenLu2026} provides explicit expressions for 13 T-even gluon TMDs in a continuous-mass spectator model.  A subsequent calculation by \textcite{XieLu2026TOdd} gives the six T-odd spin-1 gluon functions.  DeuteronWigner uses these works as operator and qualitative benchmarks.  The current repository does not constitute a complete numerical reproduction of either paper's fitted spectral functions, phases, and source conventions.  Accordingly, structural agreement is useful; the non-Sivers gluon T-odd sectors in the code remain model-envelope quantities rather than reproductions or extracted predictions.
 
 \part{Light-front nuclear embedding and the working phenomenological boundary}
 
@@ -897,7 +935,7 @@ Let $u(k)$ and $w(k)$ be reduced momentum-space radial wave functions.  The cano
  \langle\tfrac12\sigma_p,\tfrac12\sigma_n|1m_S\rangle.
  \label{eq:canonical-SD}
 \end{align}
-The minus sign is the $i^L=i^2=-1$ momentum-space partial-wave phase relative to the tabulated reduced $D$-wave transform.  The Clebsch--Gordan coefficients and spherical harmonics are explicit in \codepath{light_front.py}; they are not delegated to an uncontrolled convention.
+The minus sign is the $i^L=i^2=-1$ momentum-space partial-wave phase relative to the tabulated reduced $D$-wave transform.  The Clebsch--Gordan coefficients and spherical harmonics are explicit in \codepath{src/deuteron_wigner/light_front.py}; they are not delegated to an uncontrolled convention.
 
 \section{Melosh rotation}
 
@@ -1241,7 +1279,7 @@ The matching coefficient and the collinear operator depend on the spin and rank 
 
 \section{Rank-aware evolution limitation}
 
-The present in-house evolution implementation is deliberately heterogeneous: rank-zero unpolarized and helicity channels have the strongest perturbative support; linearly polarized gluons and several spin-dependent channels use first-nonzero-order or model interfaces; many tensor and T-odd sectors share a spin-independent evolution kernel only as a declared approximation.  A fully uniform, rank-aware, multi-$Q$ production evolution with all matching coefficients and correlated nonperturbative parameters remains open \cite{DWProductionBoundary2026}.
+The present in-house evolution implementation is a one-loop/intermediate framework, not a production-complete realization of every channel.  Rank-zero unpolarized and helicity channels have the strongest perturbative support; linearly polarized gluons and several spin-dependent channels use first-nonzero-order or model interfaces; many tensor and T-odd sectors share a spin-independent evolution kernel only as a declared approximation.  The code therefore marks the general route as not production-ready.  A fully uniform, rank-aware, multi-$Q$ evolution with channel-correct matching coefficients, scheme-consistent soft factors, and correlated nonperturbative parameters remains open \cite{DWProductionBoundary2026}.
 
 \section{Low- and high-transverse-momentum matching}
 
@@ -1293,7 +1331,7 @@ vanishes only under additional assumptions about tensor-polarized sea distributi
 
 \section{Rank-zero SIDIS tensor observables}
 
-In the TMD region $P_{hT}\ll Q$, the rank-zero SIDIS structure associated with a deuteron channel $I$ has the radial $b_T$ representation
+In the TMD region $P_{hT}\ll Q$, the project defines its rank-zero SIDIS radial kernel for deuteron channel $I$ by
 \begin{equation}
  F_{I,T}(x,z_h,P_{hT})
  =\sum_q e_q^2
@@ -1303,7 +1341,7 @@ In the TMD region $P_{hT}\ll Q$, the rank-zero SIDIS structure associated with a
  \widetilde D_1^{h/q}(z_h,b_T),
  \label{eq:sidis-rankzero}
 \end{equation}
-up to the common hard, leptonic, and evolution factors.  The source routine \codepath{sidis.rank_zero_sidis_structure} evaluates precisely this radial convolution with a flavor-resolved charge sum.  A convention-safe tensor ratio is then formed from the physical tensor difference rather than from an unqualified symbol $f_{1LL}$,
+up to the common hard, leptonic, and evolution factors.  Equation \cref{eq:sidis-rankzero} is a project-convention kernel, not a scheme-independent factorization identity: the argument $b_TP_{hT}/z_h$ and the absence of an additional displayed $z_h^{-2}$ follow from where the fragmentation Fourier Jacobian is assigned in the typed input.  Any external TMD/FF provider must be converted to this convention exactly once.  The source routine \codepath{src/deuteron_wigner/sidis.py::rank_zero_sidis_structure} evaluates this radial convolution with a flavor-resolved charge sum.  A convention-safe tensor ratio is then formed from the physical tensor difference rather than from an unqualified symbol $f_{1LL}$,
 \begin{equation}
  R_{LL/U}^{\rm SIDIS}
  =\frac{F_{\delta_T,T}}{F_{U,T}}.
@@ -1334,7 +1372,7 @@ the code evaluates the Cartesian convolution
  \hat{\bm h}=\frac{\bm P_{hT}}{|\bm P_{hT}|}.
  \label{eq:sidis-cos2phi-weight}
 \end{align}
-The routine \codepath{sidis.tensor_cos2phi_sidis_structure} implements this expression without claiming the omitted common hard factors.  It is therefore a structure-function kernel, not by itself a detector-level asymmetry \cite{BacchettaMulders2000,BacchettaEtAl2007SIDIS}.
+The routine \codepath{src/deuteron_wigner/sidis.py::tensor_cos2phi_sidis_structure} implements this expression without claiming the omitted common hard factors.  It is therefore a project-convention structure-function kernel, not by itself a complete factorized cross section or detector-level asymmetry \cite{BacchettaMulders2000,BacchettaEtAl2007SIDIS}.
 
 \section{Drell--Yan and gauge-link reversal}
 
@@ -1395,11 +1433,13 @@ For a spin-1 target the elastic electromagnetic current is described by three in
  G_Q(0)=\frac{M_D^2}{(\hbar c)^2}Q_D
  \label{eq:static-formfactor-normalizations}
 \end{equation}
-when $M_D$ is expressed in energy units and $Q_D$ in length squared.  The charge-radius convention is
+when $M_D$ is expressed in energy units and $Q_D$ in length squared.  When $Q^2$ is expressed in $\GeV^2$ and the radius in $\fm$, the charge-radius convention is
 \begin{equation}
- r_D^2=-6\left.\frac{\dd G_C(Q^2)}{\dd Q^2}\right|_{Q^2=0}.
+ r_D^2=-6(\hbar c)^2
+ \left.\frac{\dd G_C(Q^2)}{\dd Q^2}\right|_{Q^2=0}.
  \label{eq:charge-radius-slope}
 \end{equation}
+In natural units with $Q^2$ measured in inverse-length squared, the explicit factor $(\hbar c)^2$ is omitted.
 These relations are science-lock requirements; the current production adapter is not yet approved for the microscopic C43 calculation \cite{AbbottEtAl2000,PuchalskiKomasaPachucki2020,NISTCODATA2022,DWC400ScienceLock2026}.
 
 \section{Nonrelativistic one-body benchmark}
@@ -1427,7 +1467,7 @@ the unpolarized elastic structure functions are
  B(Q^2)&=\frac{4}{3}\tau(1+\tau)G_M^2.
  \label{eq:elastic-B}
 \end{align}
-For the source convention used by \codepath{form_factors.elastic_observables}, set
+For the \statuscode{elastic_observables} convention in \codepath{src/deuteron_wigner/form_factors.py}, set
 \begin{align}
  x_Q&=\frac{2}{3}\tau\frac{G_Q}{G_C},\\
  y_M&=\frac{1}{3}\tau\left(\frac{G_M}{G_C}\right)^2
@@ -1673,15 +1713,18 @@ For an interaction variation at fixed total $P^+$ and $P_T$,
 \end{equation}
 With the finite longitudinal-cell convention
 \begin{equation}
- P^+=\frac{\pi K}{L}=\frac{\pi K_2}{2L},
+ P^+=\frac{\pi K}{L}=\frac{2\pi K}{\ell_-}
+ =\frac{\pi K_2}{2L}=\frac{\pi K_2}{\ell_-},
 \end{equation}
 the exact conversion is
 \begin{equation}
  \boxed{\delta M^2=\frac{2\pi K}{L}\delta P^-
- =\frac{\pi K_2}{L}\delta P^-.}
+ =\frac{4\pi K}{\ell_-}\delta P^-
+ =\frac{\pi K_2}{L}\delta P^-
+ =\frac{2\pi K_2}{\ell_-}\delta P^-.}
  \label{eq:finite-cell-pminus-to-mass-squared}
 \end{equation}
-This factor is fixed by convention.  The C411 question is not whether to choose it, but whether the C410 source reduction already consumed it and where the remaining field, state, cell, and wave-packet normalization is owned \cite{DWC411Record2026}.
+Here $L$ is the executable half-length and $\ell_-=2L$ is the full circumference from \cref{sec:cell-notation}.  This factor is fixed by convention.  The C411 question is not whether to choose it, but whether the C410 source reduction already consumed it and where the remaining field, state, cell, and wave-packet normalization is owned \cite{DWC411Record2026}.
 
 \section{Resolution labels and compound refinement path}
 
@@ -1700,7 +1743,7 @@ so the integer labels K9, K11, and K13 must not be confused with the exact light
  \end{array}
  \label{eq:resolution-table}
 \end{equation}
-Here $K$ controls longitudinal resolution, $N_{\max}$ the transverse oscillator truncation, and $b_{\rm HO}$ the oscillator momentum scale.  The authoritative typed basis object stores the oscillator scale in GeV, and the earlier physical-resolution manifest uses the key \codepath{bHO_GeV}.  Some later C396 metadata instead use the field name \codepath{bHO_GeVinv} for the same numerical values.  This note follows the basis-owner convention $b_{\rm HO}$ in GeV and records the later key as a metadata inconsistency; it is not silently reinterpreted as an inverse-length parameter.
+Here $K$ controls longitudinal resolution, $N_{\max}$ the transverse oscillator truncation, and $b_{\rm HO}$ the oscillator momentum scale.  The authoritative typed basis object stores the oscillator scale in GeV, and the earlier physical-resolution manifest uses the key \statuscode{bHO_GeV}.  Some later C396 metadata instead use the field name \statuscode{bHO_GeVinv} for the same numerical values.  This note follows the basis-owner convention $b_{\rm HO}$ in GeV and records the later key as a metadata inconsistency; it is not silently reinterpreted as an inverse-length parameter.
 
 Because $K$, $N_{\max}$, and $b_{\rm HO}$ all change simultaneously, K9$\to$K11$\to$K13 is a \emph{compound refinement trajectory}.  The three points cannot uniquely separate longitudinal, transverse, and oscillator-scale errors.  K9 can serve as the first diagnostic/pilot resolution, while K11 and K13 provide distinct resolution-validation calculations.  A componentwise truncation model requires a designed one-control-at-a-time grid or an explicitly conservative compound-path discrepancy model \cite{DWC400ScienceLock2026,DWC400S2Record2026}.
 
@@ -1776,7 +1819,7 @@ and does not identify it with the C396 19-coordinate family.  At K9 the sparse m
  \end{array}
  \label{eq:c144-diagnostic-eigenpairs}
 \end{equation}
-in the fixture's mass-squared convention.  Both are classified as \codepath{UNPROJECTED_DIAGNOSTIC_EIGENPAIR}; no physical quantum-number projector was applied \cite{DWC400S2Record2026}.
+in the fixture's mass-squared convention.  Both are classified as \statuscode{UNPROJECTED_DIAGNOSTIC_EIGENPAIR}; no physical quantum-number projector was applied \cite{DWC400S2Record2026}.
 
 \subsection{Projector and state classifications}
 
@@ -1810,7 +1853,7 @@ The C400-owned derivative adapter audits the actual C144 matrix response
  D_i^{\rm C144}=\frac{\partial H_{\rm C144}}{\partial\xi_i}
  \label{eq:c144-matrix-derivative}
 \end{equation}
-against finite differences at all three named resolutions.  It records 33 verified diagnostic derivative rows: 11 coordinates at each of K9, K11, and K13.  Six historical derivative records disagree with the corrected matrix derivative: $\phi_{\rm coupling}$ and $\eta_2$ at all three resolutions.  The directions $\eta_3,\ldots,\eta_8$ have zero response in the C144 fixture API and are labeled \codepath{NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API}, not physically irrelevant.
+against finite differences at all three named resolutions.  It records 33 verified diagnostic derivative rows: 11 coordinates at each of K9, K11, and K13.  Six historical derivative records disagree with the corrected matrix derivative: $\phi_{\rm coupling}$ and $\eta_2$ at all three resolutions.  The directions $\eta_3,\ldots,\eta_8$ have zero response in the C144 fixture API and are labeled \statuscode{NUMERICALLY_UNBOUND_IN_C144_FIXTURE_API}, not physically irrelevant.
 
 Derivative validation must vary both finite-difference step and eigensolver tolerance because cancellation error and iterative-solver noise can exchange dominance.  Reproducibility is therefore based on eigenvalues, residuals, overlaps, principal angles, and spectral projectors.  Raw byte hashes of iterative eigenvectors are retained only as incidental diagnostics.  None of these C144 derivative or replay results constitutes a C396 physical-rank calculation \cite{DWC400S2Record2026}.
 
@@ -1897,7 +1940,7 @@ The six named counterterms are
  \statuscode{ct_boundary},\quad \statuscode{ct_truncation},
  \end{gathered}
 \end{equation}
-followed by \codepath{null_1} through \codepath{null_9} and \codepath{c_C117_1} through \codepath{c_C117_4}.  The counterterm directions are resolution-local finite/scheme coordinates until matching and observables identify combinations of them.  The nine directions were null in an earlier source-side Slavnov--Taylor system; that symbolic nullity does not prove gauge redundancy or observable nullity after truncation.  The four C117 coordinates belong to a project-defined intermediate scheme and are not four separately measured constants.  No direction may be set to zero or selected by minimum norm merely because it is currently underconstrained \cite{DWC398Record2026,DWC399Record2026,DWC400ScienceLock2026}.
+followed by \statuscode{null_1} through \statuscode{null_9} and \statuscode{c_C117_1} through \statuscode{c_C117_4}.  The counterterm directions are resolution-local finite/scheme coordinates until matching and observables identify combinations of them.  The nine directions were null in an earlier source-side Slavnov--Taylor system; that symbolic nullity does not prove gauge redundancy or observable nullity after truncation.  The four C117 coordinates belong to a project-defined intermediate scheme and are not four separately measured constants.  No direction may be set to zero or selected by minimum norm merely because it is currently underconstrained \cite{DWC398Record2026,DWC399Record2026,DWC400ScienceLock2026}.
 
 \section{C396 numerical-binding frontier}
 \label{sec:c396-frontier}
@@ -1923,20 +1966,40 @@ The six C396 actions are the K-local mass-direction bindings supplied by C401.  
 \textbf{Coordinate(s)}&\textbf{Class}&\textbf{Accepted numerical status}\\
 \midrule
 \endhead
-\codepath{ct_mass}&counterterm&Six K-local mass-direction apply paths are complete across K9, K11, and K13.\\
-\codepath{ct_vacuum_energy}&counterterm&Nonmatrix vacuum direction excluded from the retained Hamiltonian; its lawful treatment is not a sparse term.\\
-\codepath{ct_gluon_mass}, \codepath{ct_sector}&counterterms&Source primitive descriptors exist; no public K-local C396 apply implementation is bound.\\
-\codepath{ct_boundary}&counterterm/interface&Boundary information is a nonmatrix interface, not presently a sparse Hamiltonian term.\\
-\codepath{ct_truncation}&counterterm/interface&Truncation information is a nonmatrix discrepancy/interface, not presently a sparse Hamiltonian term.\\
-\codepath{null_1--null_9}&source-null family&Symbolic right-null vectors exist; no finite-basis operator apply path is bound.\\
-\codepath{c_C117_1}&C117 finite direction&C403--C410 construct source primitives and one retained aggregate per K; C411 leaves the final finite-C43 normalization/mixing unresolved.\\
-\codepath{c_C117_2--c_C117_4}&C117 finite directions&Source-qualified descriptors exist, but no numerical source shapes or K-local apply paths are bound.\\
+\statuscode{ct_mass}&counterterm&Six K-local mass-direction apply paths are complete across K9, K11, and K13.\\
+\statuscode{ct_vacuum_energy}&counterterm&Nonmatrix vacuum direction excluded from the retained Hamiltonian; its lawful treatment is not a sparse term.\\
+\statuscode{ct_gluon_mass}, \statuscode{ct_sector}&counterterms&Source primitive descriptors exist; no public K-local C396 apply implementation is bound.\\
+\statuscode{ct_boundary}&counterterm/interface&Boundary information is a nonmatrix interface, not presently a sparse Hamiltonian term.\\
+\statuscode{ct_truncation}&counterterm/interface&Truncation information is a nonmatrix discrepancy/interface, not presently a sparse Hamiltonian term.\\
+\statuscode{null_1--null_9}&source-null family&Symbolic right-null vectors exist; no finite-basis operator apply path is bound.\\
+\statuscode{c_C117_1}&C117 finite direction&C403--C410 construct source primitives and one retained aggregate per K; C411 leaves the final finite-C43 normalization/mixing unresolved.\\
+\statuscode{c_C117_2--c_C117_4}&C117 finite directions&Source-qualified descriptors exist, but no numerical source shapes or K-local apply paths are bound.\\
 \bottomrule
 \end{longtable}
 
 The smallest useful numerical frontier is therefore owner specific: finish the first C117 direction, combine it with the six mass actions, and construct an explicitly exploratory K9 state-to-observable response before attempting the full 19-coordinate physical inverse problem.  C144 operators are not substituted as C396 proxies and absent directions are not completed by physical zero.  In exploratory work they may instead remain explicit parameters or omitted directions with a stated scope \cite{DWC400S2Record2026,DWC401C410Record2026,DWC411Record2026}.
 
 \section{C401--C411 first-C117 source progression}
+
+The continuum/source owner for this chain is the Gauss-law instantaneous-current interaction in light-cone gauge $A^+=0$,
+\begin{align}
+ P^-_{\mathrm{IC}}
+ &=-\frac{g_s^2}{2}\int\dd x^-\dd^2x_\perp
+ \left[(i\partial^+)^{-1}Q_0j_a^+\right]
+ \left[(i\partial^+)^{-1}Q_0j_a^+\right],
+ \label{eq:c117-source-operator}\\
+ j_a^+&=J_{q,a}^++J_{g,a}^+,
+ \qquad J_{q,a}^+=\bar\psi\gamma^+T^a\psi,
+ \qquad J_{g,a}^+=-f^{abc}A_\perp^b\partial^+A_\perp^c.
+ \label{eq:c117-current-decomposition}
+\end{align}
+The projector $Q_0$ removes only the exactly zero transferred-plus mode; it does not declare the separate zero-mode/boundary sector to vanish.  With $\mathcal K$ denoting the source-ordered nonzero-transfer inverse-derivative kernel, the current square expands with unit multiplicity as
+\begin{equation}
+ J_q\mathcal KJ_q+J_q\mathcal KJ_g
+ +J_g\mathcal KJ_q+J_g\mathcal KJ_g.
+ \label{eq:c117-four-products}
+\end{equation}
+The two mixed orders are distinct Hermitian partners and must not be replaced by an undocumented factor of two.
 
 C403--C409 built the finite axis and spatial kernel, longitudinal/color factors, current topology, normal-order descendants, same-species contractions, weight routing, and derivative-density reconciliation for the first C117 direction.  C410 combines the retained connected products as
 \begin{equation}
@@ -1945,13 +2008,35 @@ C403--C409 built the finite axis and spatial kernel, longitudinal/color factors,
  \qquad K\in\{K9,K11,K13\}.
  \label{eq:c410-retained-aggregate}
 \end{equation}
-The coefficient $-1/2$ is applied once and $g_s^2$ remains factored in the C259/C260 convention.  C411 then defines a K-local adapter interface and records \cref{eq:finite-cell-pminus-to-mass-squared}.  It rejects accidental double conversion and unsupported promotion to the other three C117 directions.
+The coefficient $-1/2$ is applied once and $g_s^2$ remains factored in the C259/C260 convention.  The source-present $J_g\mathcal KJ_g$ pair/vacuum contribution in the external-quark sector factorizes as an external-quark identity times a gluon-vacuum c-number.  The project routes that disconnected term to the nonmatrix vacuum owner; only the retained connected quark-sector block is then exactly zero.  This does not assert that the full-source vacuum matrix element vanishes.
 
-C411's generic API requests a source-qualified $4\times4$ mixing matrix.  That requirement is a safe container, not yet a derivation that generic four-direction mixing is physically necessary for the first source shape.  The next calculation must trace the mode, state, cell, basis, and wave-packet normalizations from the actual C43 source definitions and determine whether the first direction maps diagonally, mixes with a derived subset, or remains parameterized.  A strict physical-claim route may continue to require a fully sourced record; a separate explicitly exploratory adapter may expose unresolved factors without mislabeling them as physical matching coefficients \cite{DWC401C410Record2026,DWC411Record2026,DWCurrentHandoff2026}.
+The complete factor-ownership audit at the present boundary is:
+\begin{longtable}{@{}p{0.27\textwidth}p{0.25\textwidth}p{0.40\textwidth}@{}}
+\caption{First-C117 normalization and ownership ledger.}\label{tab:c117-factor-ownership}\\
+\toprule
+\textbf{Factor or operation}&\textbf{Status}&\textbf{Meaning/owner}\\
+\midrule
+Source coefficient $-1/2$&closed, once&C114 source identity; applied once by C410.\\
+Four ordered current products&closed, once each&C410 retains $qq,qg,gq,gg$ separately; no mixed-term shortcut.\\
+$Q_0$ and inverse-$\partial^+$ transfer kernel&closed for the represented shape&Nonzero transferred-plus modes; the exact zero mode remains separately owned.\\
+Longitudinal, color, HO, spin, and derivative-density shape factors&closed for C410 primitive&Source-routed sparse and matrix-free routes agree within their declared tests.\\
+Disconnected vacuum descendant&closed routing&Preserved as a potentially nonzero source term and routed to the nonmatrix vacuum direction.\\
+$g_s^2$&closed as factored, not applied&Factored by the C259/C260 operator convention; no physical value selected.\\
+$P^-\to M^2$&formula fixed; application owner open&Must apply \cref{eq:finite-cell-pminus-to-mass-squared} exactly once.  C411's \texttt{GeV\string^2} source-shape label does not prove that upstream conversion occurred.\\
+Field-mode multiplicities and external Fock-state normalization&open, not zero&Must be traced through C115/C119 and the actual finite basis.\\
+Residual finite-cell contraction and wave-packet normalization&open, not zero&Must use the $\ell_-=2L$ translation; no guessed factor is authorized.\\
+C260 RI/SMOM-to-finite-C43 matching/mixing&open, not zero&Derive the first target row or an identifiable combination from represented source and target bases.\\
+Physical $c_{C117,1}$ and $g_s$&external and unselected&Not required for the derivative shape; required before a physical Hamiltonian prediction.\\
+\bottomrule
+\end{longtable}
+
+C411 then defines a K-local adapter interface and records \cref{eq:finite-cell-pminus-to-mass-squared}.  It rejects accidental double conversion and unsupported promotion to the other three C117 directions.
+
+C411's generic API requests a source-qualified $4\times4$ mixing matrix.  The executable first-action path, however, consumes only the first target row and ultimately only its $(1,1)$ coefficient after requiring the other three entries in that row to vanish because their source shapes are unavailable.  The other three rows do not enter the first action.  The $4\times4$ object is therefore a safe future container, not a physically derived requirement for generic four-direction mixing.  The next calculation must trace the mode, state, cell, basis, and wave-packet normalizations from the actual C43 source definitions and determine whether the first direction maps diagonally, mixes with a derived subset, or remains parameterized.  A strict physical-claim route may continue to require a fully sourced record; a separate explicitly exploratory adapter may expose unresolved factors without mislabeling them as physical matching coefficients \cite{DWC401C410Record2026,DWC411Record2026,DWCurrentHandoff2026}.
 
 \section{Historical C399 conclusion and its corrected interpretation}
 
-C399 audited the repository, authorized capsule locations, and selected primary-source BLFQ/LFQCD routes.  It correctly established the narrow historical statement
+C399 audited the repository, authorized capsule locations, and selected primary-source BLFQ and LFQCD routes.  It correctly established the narrow historical statement
 \begin{equation}
  \boxed{\text{no ready-made C43-compatible finite-basis target capsule was found.}}
  \label{eq:c399-narrow}
@@ -2150,7 +2235,7 @@ PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 \
 MKL_NUM_THREADS=1 python3 -m pytest -q \
 tests/test_c400_s2_corrective.py
 \end{lstlisting}
-returned 26 passed tests and zero failures.  Five warnings are inherited invalid-escape warnings in historical \codepath{lf_current.py} docstrings and do not alter the numerical results \cite{DWC400S2Record2026}.
+returned 26 passed tests and zero failures.  Five warnings are inherited invalid-escape warnings in historical \codepath{src/deuteron_wigner/lf_current.py} docstrings and do not alter the numerical results \cite{DWC400S2Record2026}.
 
 \section{What is established now}
 
@@ -2269,7 +2354,7 @@ Quark joint matrix&$3$ target helicities $\otimes$ $2$ quark helicities: $6\time
 Gluon accepted outputs&19 operator-level functions; 18 identifiable outputs in the current two-dimensional accepted projection basis.\\
 SIDIS transverse relation&$\bm P_{hT}=-z_h\bm q_T$.\\
 Finite-basis longitudinal labels&K9/K11/K13 denote $K_2=2K=9,11,13$, so exact $K=9/2,11/2,13/2$.\\
-Oscillator scale&$b_{\rm HO}$ is treated as the basis-owner momentum scale in GeV; later \codepath{bHO_GeVinv} metadata are recorded as inconsistent naming.\\
+Oscillator scale&$b_{\rm HO}$ is treated as the basis-owner momentum scale in GeV; later \statuscode{bHO_GeVinv} metadata are recorded as inconsistent naming.\\
 LF spin-1 current&$I_{0+}=-I_{+0}$ in the real elastic convention; angular condition given by \cref{eq:angular-condition}.\\
 Canonical current comparison&Route-local LF and LPS extractions are compared through common dimensionless $(G_C,G_M,G_Q)$ at common $Q^2$, mass, and state identity.\\
 Diagnostic state identity&Unprojected eigenpair, projected-subspace Ritz pair, and verified invariant-sector eigenpair are distinct statuses.\\
@@ -2330,11 +2415,11 @@ The operator-level leading-twist gluon registry contains 19 functions:
 \textbf{Target channel}&\textbf{Unpolarized gluon}&\textbf{Circular gluon}&\textbf{Linear gluon}\\
 \midrule
 U&$f_1^g$&---&$h_1^{\perp g}$\\
-L&---&$g_{1L}^g$&$h_{1L}^{\perp g}$\\
+L&---&$g_{1L}^g\equiv g_1^g$&$h_{1L}^{\perp g}$\\
 T&$f_{1T}^{\perp g}$&$g_{1T}^g$&$h_1^g,\;h_{1T}^{\perp g}$\\
 LL&$f_{1LL}^g$&---&$h_{1LL}^{\perp g}$\\
 LT&$f_{1LT}^g$&$g_{1LT}^g$&$h_{1LT}^g,\;h_{1LT}^{\perp g}$\\
-TT&$f_{1TT}^g$&$g_{1TT}^g$&$h_{1TT}^g,\;h_{1TT}^{\perp g}$\\
+TT&$f_{1TT}^g$&$g_{1TT}^g$&$h_{1TT}^g,\;h_{1TT}^{\perp g},\;h_{1TT}^{\perp\perp g}$\\
 \bottomrule
 \end{longtable}
 In the current two-dimensional accepted representation, the scalar TT matrices multiplying $f_{1TT}^g$ and $h_{1TT}^{\perp g}$ are linearly dependent up to sign.  The published accepted output is therefore
@@ -2350,31 +2435,31 @@ while the full operator-level registry is preserved.
 \toprule
 \textbf{Mathematical object}&\textbf{Primary source module}&\textbf{Validation route}\\
 \midrule
-LF and transverse conventions&\codepath{conventions.py}, \codepath{kinematics.py}&Typed-coordinate and transform-sign tests.\\
-Spin-1 density matrix&\codepath{spin.py}&Hermiticity, trace, basis reconstruction, eigenvalue positivity.\\
-GTMD parent and reductions&\codepath{gtmd.py}, \codepath{gtmd_sampling.py}&TMD/GPD/PDF/Wigner marginal closure.\\
-Quark correlator&\codepath{quark_correlator.py}&Complete projection round trips, origin behavior, link reversal, minimum eigenvalue.\\
-Gluon correlator&\codepath{gluon_correlator.py}&Projection reconstruction, 19-to-18 identifiability audit, positivity.\\
-Definite transverse rank&\codepath{formal/transverse_rank.py}, \codepath{fourier.py}&Rank-specific Hankel transform and inverse tests.\\
-Light-front variables and spin&\codepath{light_front.py}&Jacobian, Melosh rest limit, normalization and overlap checks.\\
-Wave-function providers&\codepath{wavefunctions/av18.py}, \codepath{wavefunctions/cd_bonn.py}, \codepath{wavefunctions/norfolk.py}&Source parser, normalization, interpolation, and model-switch tests.\\
-Nuclear convolution&\codepath{gtmd_convolution.py}, \codepath{resolved_nuclear_parent.py}&Constituent/flavor/mechanism bookkeeping and marginal closure.\\
-Nuclear mechanisms&\codepath{nuclear_mechanisms.py}, \codepath{diffractive_shadowing.py}, \codepath{pion_exchange.py}, \codepath{hidden_color.py}&Exact-zero switches, source hashes, uncertainty classification.\\
-TMD parent model&\codepath{parent_quark_tmd.py}, \codepath{complete_tmd_model.py}, \codepath{correlator_tmd_model.py}&Complete 18-function reconstruction and member-level positivity.\\
-TMD evolution&\codepath{tmd_scheme.py}, \codepath{tmd_evolution.py}, matching modules&Scale-path, small-$b$ status, and transform checks; channel completeness remains conditional.\\
-SIDIS kernels&\codepath{sidis.py}&Radial integral, Cartesian $\cos2\phi$ integral, realness and input-domain tests.\\
-Elastic benchmark&\codepath{form_factors.py}&AV18 table parsing, interpolation, and $A,B,t_{20}$ recomputation.\\
-Historical LF current&\codepath{lf_current.py}&Form-factor/current round trip, angular condition, and prescription spread.\\
-Historical covariant/two-body current&\codepath{covariant_current.py}, \codepath{two_body_current.py}&Symmetry/source benchmarks; production selection remains open.\\
-Canonical C400 current layer&\codepath{bridge/c400_s2_corrective/current_adapter.py}, \codepath{current_compare.py}&Kinematic consistency, route-local validation, GeV/MeV/$\fm^{-1}$ invariance, nonfinite rejection, canonical $G_C/G_M/G_Q$ comparison.\\
-C144 derivative integrity&\codepath{bridge/c400_s2_corrective/derivative_integrity.py}&33 matrix-derivative rows, finite-difference comparison, six historical mismatch records, step/tolerance scan.\\
-Diagnostic state identity&\codepath{bridge/c400_s2_corrective/state_identity.py}&Projector membership, invariance, full-space residual, Ritz/eigenpair status separation.\\
-State tracking&\codepath{bridge/c400_s2_corrective/tracking.py}&Sector-partitioned assignment, rectangular sets, phase transport, Procrustes alignment, principal angles, adversarial tests.\\
-C396 binding frontier&\codepath{bridge/c400_s2_corrective/coordinate_bindings.py}, C401 bridge modules&57 symbolic K-local rows and six complete mass-direction actions; no C144 proxy or physical zero completion.\\
-C117 first direction&\codepath{bridge/c403_*} through \codepath{bridge/c410_*}, then \codepath{bridge/c411_c117_i2_finite_c43_adapter/core.py}&Twelve source products, three retained aggregate shapes, exact factor ownership checks, and zero complete coordinate actions pending normalization/mixing.\\
-Semantic replay&\codepath{bridge/c400_s2_corrective/replay_integrity.py}&Eigenvalues, residuals, overlaps, and projector invariants instead of raw vector hashes.\\
-Joint positivity&\codepath{joint_positivity.py}&Member-wise full-matrix minimum eigenvalues; projection-only refusal.\\
-Controlled limits&\codepath{controlled_limits.py}&Free-constituent, pure-S, Melosh-rest, and zero-mechanism full-basis tests.\\
+LF and transverse conventions&\codepath{src/deuteron_wigner/conventions.py}, \codepath{src/deuteron_wigner/kinematics.py}&Typed-coordinate and transform-sign tests.\\
+Spin-1 density matrix&\codepath{src/deuteron_wigner/spin.py}&Hermiticity, trace, basis reconstruction, eigenvalue positivity.\\
+GTMD parent and reductions&\codepath{src/deuteron_wigner/gtmd.py}, \codepath{src/deuteron_wigner/gtmd_sampling.py}&TMD/GPD/PDF/Wigner marginal closure.\\
+Quark correlator&\codepath{src/deuteron_wigner/quark_correlator.py}&Complete projection round trips, origin behavior, link reversal, minimum eigenvalue.\\
+Gluon correlator&\codepath{src/deuteron_wigner/gluon_correlator.py}&Projection reconstruction, 19-to-18 identifiability audit, positivity.\\
+Definite transverse rank&\codepath{src/deuteron_wigner/formal/transverse_rank.py}, \codepath{src/deuteron_wigner/fourier.py}&Rank-specific Hankel transform and inverse tests.\\
+Light-front variables and spin&\codepath{src/deuteron_wigner/light_front.py}&Jacobian, Melosh rest limit, normalization and overlap checks.\\
+Wave-function providers&\codepath{src/deuteron_wigner/wavefunctions/av18.py}, \codepath{src/deuteron_wigner/wavefunctions/cd_bonn.py}, \codepath{src/deuteron_wigner/wavefunctions/norfolk.py}&Source parser, normalization, interpolation, and model-switch tests.\\
+Nuclear convolution&\codepath{src/deuteron_wigner/gtmd_convolution.py}, \codepath{src/deuteron_wigner/resolved_nuclear_parent.py}&Constituent/flavor/mechanism bookkeeping and marginal closure.\\
+Nuclear mechanisms&\codepath{src/deuteron_wigner/nuclear_mechanisms.py}, \codepath{src/deuteron_wigner/diffractive_shadowing.py}, \codepath{src/deuteron_wigner/pion_exchange.py}, \codepath{src/deuteron_wigner/hidden_color.py}&Exact-zero switches, source hashes, uncertainty classification.\\
+TMD parent model&\codepath{src/deuteron_wigner/parent_quark_tmd.py}, \codepath{src/deuteron_wigner/complete_tmd_model.py}, \codepath{src/deuteron_wigner/correlator_tmd_model.py}&Complete 18-function reconstruction and member-level positivity.\\
+TMD evolution&\codepath{src/deuteron_wigner/tmd_scheme.py}, \codepath{src/deuteron_wigner/tmd_evolution.py}, matching modules&Scale-path, small-$b$ status, and transform checks; channel completeness remains conditional.\\
+SIDIS kernels&\codepath{src/deuteron_wigner/sidis.py}&Radial integral, Cartesian $\cos2\phi$ integral, realness and input-domain tests.\\
+Elastic benchmark&\codepath{src/deuteron_wigner/form_factors.py}&AV18 table parsing, interpolation, and $A,B,t_{20}$ recomputation.\\
+Historical LF current&\codepath{src/deuteron_wigner/lf_current.py}&Form-factor/current round trip, angular condition, and prescription spread.\\
+Historical covariant/two-body current&\codepath{src/deuteron_wigner/covariant_current.py}, \codepath{src/deuteron_wigner/two_body_current.py}&Symmetry/source benchmarks; production selection remains open.\\
+Canonical C400 current layer&\codepath{src/deuteron_wigner/bridge/c400_s2_corrective/current_adapter.py}, \codepath{src/deuteron_wigner/bridge/c400_s2_corrective/current_compare.py}&Kinematic consistency, route-local validation, GeV/MeV/$\fm^{-1}$ invariance, nonfinite rejection, canonical $G_C/G_M/G_Q$ comparison.\\
+C144 derivative integrity&\codepath{src/deuteron_wigner/bridge/c400_s2_corrective/derivative_integrity.py}&33 matrix-derivative rows, finite-difference comparison, six historical mismatch records, step/tolerance scan.\\
+Diagnostic state identity&\codepath{src/deuteron_wigner/bridge/c400_s2_corrective/state_identity.py}&Projector membership, invariance, full-space residual, Ritz/eigenpair status separation.\\
+State tracking&\codepath{src/deuteron_wigner/bridge/c400_s2_corrective/tracking.py}&Sector-partitioned assignment, rectangular sets, phase transport, Procrustes alignment, principal angles, adversarial tests.\\
+C396 binding frontier&\codepath{src/deuteron_wigner/bridge/c400_s2_corrective/coordinate_bindings.py}, C401 bridge modules&57 symbolic K-local rows and six complete mass-direction actions; no C144 proxy or physical zero completion.\\
+C117 first direction&\codepath{src/deuteron_wigner/bridge/c403_*} through \codepath{src/deuteron_wigner/bridge/c410_*}, then \codepath{src/deuteron_wigner/bridge/c411_c117_i2_finite_c43_adapter/core.py}&Twelve source products, three retained aggregate shapes, exact factor ownership checks, and zero complete coordinate actions pending normalization/mixing.\\
+Semantic replay&\codepath{src/deuteron_wigner/bridge/c400_s2_corrective/replay_integrity.py}&Eigenvalues, residuals, overlaps, and projector invariants instead of raw vector hashes.\\
+Joint positivity&\codepath{src/deuteron_wigner/joint_positivity.py}&Member-wise full-matrix minimum eigenvalues; projection-only refusal.\\
+Controlled limits&\codepath{src/deuteron_wigner/controlled_limits.py}&Free-constituent, pure-S, Melosh-rest, and zero-mechanism full-basis tests.\\
 Q0/Q1/Q2 stack&Q0/Q1/Q2 worktrees and bridge modules&Conditional sparse/state/observable fixture acceptance; no physical activation.\\
 C43/JMY AST&Phase modules C381--C383&Typed-node and group-completeness tests; Laurent evaluation open.\\
 C398--C400 inference&Phase records, science-lock package, and merged S2 evidence&C398/C399 provenance audit; global inverse-problem redesign; no physical fit or rank calculation.\\

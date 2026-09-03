@@ -4,11 +4,17 @@
 - Canonical checkout: `/Users/dustin/work/DeuteronWigner`
 - Branch at reconciliation: `main`
 - Code baseline at reconciliation: `186cc8164240f5d18c99fb56f29ba74d243849b5`
+- Preceding handoff/document commit: `41ff7c8d91a7b04b8ec3d93dacff2f7fc3160fb6`
+- User-supplied theory-note baseline SHA-256: `609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea`
 
 This is the first file a human or coding agent should read after `AGENTS.md`.
 It replaces conversation history, stale controller state, and the historical
 roadmap as the current operational handoff. The long files remain valuable as
 history and evidence; they are not the fastest route back into the science.
+The synchronized machine-readable index is
+`references/DeuteronWigner_theory_state_current.json`. The TeX note is the
+derivation authority; the JSON is a compact status/convention index, not a
+second theory source.
 
 ## One-paragraph project objective
 
@@ -102,17 +108,52 @@ M^2=2P^+P^- -P_\perp^2,
 For the finite longitudinal cell used by the C43/C117 chain,
 
 \[
-P^+=\frac{\pi K}{L}=\frac{\pi K_2}{2L},
+\ell_-=2L,\qquad
+P^+=\frac{\pi K}{L}=\frac{2\pi K}{\ell_-}
+=\frac{\pi K_2}{\ell_-},
 \qquad
 \delta M^2=\frac{2\pi K}{L}\delta P^-
-=\frac{\pi K_2}{L}\delta P^-.
+=\frac{4\pi K}{\ell_-}\delta P^-.
 \]
+
+The current executable C45/C46/C114/C142/C172 convention uses the cell
+`[-L,L]`, so `L` is its half-length and `ell_-` is the circumference. Older
+C43 manifests wrote `[-L/2,L/2]` and used their `L` for the full
+circumference. Translate `L_old = ell_- = 2 L_executable` before combining
+their factors. This historical notation collision is a mandatory C117
+normalization check.
 
 The earlier theory note wrote `P^+P^- - P_T^2`; that is inconsistent with the
 declared symmetric convention and is corrected in the synchronized current
 theory note. The remaining scientific question is whether this conversion has
 already been consumed by the source-reduced C410 object, and where any residual
 finite-cell/state normalization belongs. It must be traced, not guessed.
+
+The C411 metadata also labels both source and target shapes as `GeV^2` while
+leaving application of the `P^- -> M^2` factor certificate-owned. That label
+does not establish where the conversion occurred. The next derivation must
+resolve this ownership explicitly.
+
+## First-C117 factor ownership at handoff
+
+| Factor or operation | Current status |
+| --- | --- |
+| Source coefficient `-1/2` | applied exactly once by C410 |
+| Ordered `qq`, `qg`, `gq`, `gg` products | retained exactly once each |
+| Nonzero-transfer `Q0` and inverse-derivative shape | represented in the C403--C410 chain |
+| Disconnected external-quark/gluon-vacuum descendant | preserved and routed to the nonmatrix vacuum owner; not declared physically zero |
+| `g_s^2` | factored, not numerically applied |
+| `P^- -> M^2` | formula fixed; application owner unresolved |
+| Field-mode and external Fock-state normalization | unresolved, not zero |
+| Residual finite-cell and wave-packet normalization | unresolved, not zero |
+| C260 RI/SMOM-to-finite-C43 mixing | unresolved, not zero |
+| Physical `c_C117_1` and `g_s` | external and unselected |
+
+The C411 API's 4-by-4 matrix is a generic future container. The current
+first-action implementation reads only its first target row and ultimately
+uses only the `(1,1)` entry after rejecting unsupported entries for the three
+missing source shapes. Do not mistake the container shape for a derivation
+that generic four-direction physical mixing is required.
 
 ## Why development slowed
 
@@ -269,6 +310,11 @@ nonzero-transfer GTMD predictions, and data-facing EIC/JLab observable studies.
 These tasks do not need to wait for Hamiltonian activation when their model
 status is explicit.
 
+The literature boundary now includes the published 2026 T-even spectator
+calculation (13 functions) and the July 2026 T-odd follow-up (six functions,
+arXiv:2607.23692). The current repository uses these as structural benchmarks;
+it does not yet reproduce either fitted spectator model numerically.
+
 ## Decisions that require the user/theory lead
 
 An agent should surface, rather than silently choose, genuinely inequivalent
@@ -304,13 +350,15 @@ and reversible diagnostics should proceed without manufacturing a blocker.
 1. Read `AGENTS.md` and this file.
 2. Read the status chapter in
    `references/DeuteronWigner_complete_theory_note_current.tex`.
-3. Inspect `git status --short` and preserve unrelated work.
-4. Read only the source modules and phase reports directly relevant to the
+3. Read `references/DeuteronWigner_theory_state_current.json` for the compact
+   machine status and verify it against the TeX/source for the task at hand.
+4. Inspect `git status --short` and preserve unrelated work.
+5. Read only the source modules and phase reports directly relevant to the
    selected sprint; do not repeat a full-repository audit.
-5. State whether the work is exploratory, validated-model, or physical-claim.
-6. Implement the smallest end-to-end scientific result.
-7. Run focused direct tests and record numerical comparisons.
-8. Update the current-status and next-step portions of this file.
+6. State whether the work is exploratory, validated-model, or physical-claim.
+7. Implement the smallest end-to-end scientific result.
+8. Run focused direct tests and record numerical comparisons.
+9. Update the current-status and next-step portions of this file.
 
 ## Current next action
 

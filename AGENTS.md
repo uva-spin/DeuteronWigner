@@ -5,6 +5,11 @@ documents, phase records, or generated products. It is the current project
 status and direction path. Then read the status chapter of
 `references/DeuteronWigner_complete_theory_note_current.tex` when the task
 touches physics or conventions.
+For a compact machine-readable index of scope, counts, convention ownership,
+and the next scientific path, read
+`references/DeuteronWigner_theory_state_current.json`; verify scientific
+details against the TeX note and source rather than treating the JSON as an
+independent authority.
 
 ## Source of truth
 
