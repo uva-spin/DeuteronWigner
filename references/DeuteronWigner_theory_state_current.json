@@ -7,15 +7,17 @@
     "user_supplied_tex_sha256": "609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea",
     "user_supplied_bib": "/Users/dustin/Downloads/DeuteronWigner_complete_theory_references.bib",
     "user_supplied_bib_sha256": "024e29d58181054c195886f7b22d54912f4623f780faec9c3166e9b59f04f5ec",
+    "foundational_gtmd_draft_sha256": "804756880dcf11e473a7fb190b555090c2c8eae042cb40608c20e1d8fbc48cf9",
     "code_commit": "186cc8164240f5d18c99fb56f29ba74d243849b5",
-    "preceding_handoff_commit": "41ff7c8d91a7b04b8ec3d93dacff2f7fc3160fb6",
+    "preceding_handoff_commit": "02ece47c14b2442fcac315b221658cd37b128f75",
     "published_c410_snapshot_commit": "51d3919e4660f5709cc7bb94c576c8ec17c9de14"
   },
   "canonical_files": {
     "human_handoff": "handoff/CURRENT_PROJECT_HANDOFF.md",
     "theory_note": "references/DeuteronWigner_complete_theory_note_current.tex",
     "bibliography": "references/DeuteronWigner_complete_theory_references.bib",
-    "machine_state": "references/DeuteronWigner_theory_state_current.json"
+    "machine_state": "references/DeuteronWigner_theory_state_current.json",
+    "foundational_gtmd_draft": "Deuteron_GTMD.pdf"
   },
   "source_priority": [
     "current user direction",
@@ -24,7 +26,56 @@
     "current theory note and implementation reports",
     "historical roadmaps, manifests, snapshots, and controller state"
   ],
-  "project_objective": "Construct a unified spin-1 deuteron partonic framework in which quark and gluon light-front GTMD correlators generate TMD, GPD, PDF, Wigner, local-current, and observable reductions, while developing a regulated microscopic light-front Hamiltonian/current whose resolution-local parameters can eventually be physically identified and connected to the same correlator layer.",
+  "project_objective": "Construct a topology-constrained, quantum-enabled spin-1 deuteron light-front framework in which physically identified quark and gluon GTMD correlators preserve the available wave-function and field information, matching relations, conservation laws, and sum rules through the required perturbative and resolution orders, and generate essentially every observable supported by the completed operator content rather than only TMDs.",
+  "public_starting_point": "https://github.com/uva-spin/DeuteronWigner",
+  "scientific_progression": [
+    {
+      "stage": 1,
+      "name": "phenomenological basis",
+      "status": "established_public_starting_point",
+      "purpose": "Provide a deliberately simple, usable flavor- and spin-resolved light-front GTMD/TMD deuteron model with common-parent projections and an honest phenomenological claim boundary; its foundational technical statement is Deuteron_GTMD.pdf.",
+      "primary_sources": [
+        "Deuteron_GTMD.pdf",
+        "https://github.com/uva-spin/DeuteronWigner"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "comprehensive information-preserving light-front construct",
+      "status": "architecture_established_implementation_heterogeneous",
+      "purpose": "Retain wave-function, constituent, flavor, target and parton spin, orbital, tensor, gauge-link, color, transfer, nuclear, matching, and uncertainty information until an explicit projection or physical composition removes it.",
+      "primary_sources": [
+        "references/DeuteronWigner_complete_theory_note_current.tex",
+        "references/formalism_volume_index.md"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "topological and quantum closure",
+      "status": "active_construction_program",
+      "purpose": "Use topological structure and the quantum framework to encode admissible sectors, matching and composition maps, conservation laws, sum rules, and consistency across required perturbative, Fock-sector, evolution, and resolution orders.",
+      "primary_sources": [
+        "references/algebraic_geometric_next_level_model_note_revised.tex",
+        "references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex",
+        "references/volume_ix_dynamical_gluon_fock_sectors.tex",
+        "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex",
+        "src/deuteron_wigner/microscopic"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "predictive GTMD-level framework",
+      "status": "intended_endpoint",
+      "purpose": "Generate TMD, GPD, PDF, Wigner, local-moment, form-factor, current, inclusive, exclusive, and other supported observables as controlled reductions of a common physically identified microscopic and correlator system.",
+      "primary_sources": [
+        "references/DeuteronWigner_complete_theory_note_current.tex",
+        "references/volume_xx_source_reproducible_bridge_geometry.tex",
+        "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex"
+      ]
+    }
+  ],
+  "foundational_scope_exclusion": "Deuteron_GTMD.pdf predates and does not contain the later algebraic/geometric, topology-aware tensor-network, quantum-state, or quantum-computational Stage-3 construction.",
+  "endpoint_completion_rule": "The final framework is complete only when its operator content, state/current dynamics, required matching and evolution orders, conservation and sum-rule checks, physical identification, uncertainty propagation, and GTMD-to-observable maps close reproducibly; an architectural target is not evidence that an open numerical or physical object already exists.",
   "claim_lanes": {
     "exploratory": "Explicit assumptions and provisional parameters are allowed; outputs are not physical predictions.",
     "validated_model": "Requires coherent equations, units, direct tests, declared conventions, qualified controlling inputs, and sensitivity checks.",

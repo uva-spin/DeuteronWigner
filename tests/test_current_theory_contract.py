@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 
@@ -6,6 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / "references" / "DeuteronWigner_theory_state_current.json"
 NOTE_PATH = ROOT / "references" / "DeuteronWigner_complete_theory_note_current.tex"
 BIB_PATH = ROOT / "references" / "DeuteronWigner_complete_theory_references.bib"
+HANDOFF_PATH = ROOT / "handoff" / "CURRENT_PROJECT_HANDOFF.md"
+FOUNDATION_PATH = ROOT / "Deuteron_GTMD.pdf"
 
 
 def _state():
@@ -56,3 +59,27 @@ def test_declared_tmd_scope_and_current_literature_are_explicit():
     assert "general nonzero-skewness spin-1 GTMD" in note
     assert "XieLu2026TOdd" in note
     assert "@misc{XieLu2026TOdd" in bib
+
+
+def test_scientific_progression_ends_at_predictive_gtmd_level():
+    state = _state()
+    note = NOTE_PATH.read_text(encoding="utf-8")
+    handoff = HANDOFF_PATH.read_text(encoding="utf-8")
+    progression = state["scientific_progression"]
+    assert [item["stage"] for item in progression] == [1, 2, 3, 4]
+    assert progression[0]["status"] == "established_public_starting_point"
+    assert progression[2]["status"] == "active_construction_program"
+    assert "volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex" in " ".join(
+        progression[2]["primary_sources"]
+    )
+    assert progression[3]["name"] == "predictive GTMD-level framework"
+    assert "rather than only TMDs" in state["project_objective"]
+    assert "does not contain" in state["foundational_scope_exclusion"]
+    assert "Development arc and predictive endpoint" in note
+    assert "Governing scientific progression" in handoff
+    assert "Deuteron_GTMD.pdf" in note
+    assert "Deuteron_GTMD.pdf" in handoff
+    assert state["canonical_files"]["foundational_gtmd_draft"] == "Deuteron_GTMD.pdf"
+    assert hashlib.sha256(FOUNDATION_PATH.read_bytes()).hexdigest() == state[
+        "source_baseline"
+    ]["foundational_gtmd_draft_sha256"]

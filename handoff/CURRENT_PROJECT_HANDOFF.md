@@ -4,7 +4,7 @@
 - Canonical checkout: `/Users/dustin/work/DeuteronWigner`
 - Branch at reconciliation: `main`
 - Code baseline at reconciliation: `186cc8164240f5d18c99fb56f29ba74d243849b5`
-- Preceding handoff/document commit: `41ff7c8d91a7b04b8ec3d93dacff2f7fc3160fb6`
+- Preceding handoff/document commit: `02ece47c14b2442fcac315b221658cd37b128f75`
 - User-supplied theory-note baseline SHA-256: `609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea`
 
 This is the first file a human or coding agent should read after `AGENTS.md`.
@@ -20,15 +20,82 @@ second theory source.
 
 DeuteronWigner is building a complete spin-1 deuteron partonic framework whose
 organizing objects are quark and gluon light-front GTMD correlators. TMDs,
-GPDs, PDFs, Wigner distributions, local-current moments, and observables should
-be reductions or contractions of those parents. The construction keeps
+GPDs, PDFs, Wigner distributions, local-current moments, and essentially every
+observable accessible from the completed operator content should be reductions
+or contractions of those parents. The construction keeps
 proton/neutron identity, flavor, target and parton spin, orbital interference,
 gauge-link structure, realistic deuteron motion, nuclear mechanisms, and
 uncertainty lineage visible until the physical composition step. The current
 phenomenological boundary is useful and operational. The longer-term objective
-is a microscopic regulated light-front Hamiltonian and current whose physical
-parameters are identified across finite resolutions and connected to that
-correlator/observable layer.
+is a topology-constrained, quantum-enabled microscopic light-front Hamiltonian
+and current whose physical parameters are identified across finite resolutions,
+whose matching, conservation laws, and sum rules remain valid through the
+required orders, and whose output closes on the same GTMD-first observable
+layer.
+
+## Governing scientific progression
+
+This four-stage progression is the project's north star and should control
+prioritization when local bookkeeping obscures the larger goal:
+
+1. **Phenomenological basis -- established public starting point.** The public
+   repository began as a deliberately simple, usable flavor- and spin-resolved
+   light-front GTMD/TMD model for the deuteron. It established the common-parent
+   projection architecture and a phenomenological boundary without claiming a
+   common microscopic Hamiltonian. The foundational technical statement of this
+   starting architecture is the repository-root file `Deuteron_GTMD.pdf`, *A
+   GTMD-First Light-Front Wigner and SCET Framework for Spin-1 Deuteron TMDs*
+   (8 July 2026).
+2. **Comprehensive information-preserving light-front construct -- architecture
+   established, implementation heterogeneous.** The project then expanded the
+   starting model into a fully formed theoretical architecture intended to
+   preserve the field's available wave-function, constituent, flavor, target
+   and parton spin, orbital, tensor, gauge-link, color, transfer, nuclear,
+   matching, and uncertainty information until a mathematically defined
+   reduction is taken. This is broader than the original public phenomenology,
+   although not every sector is equally constrained or numerically complete.
+3. **Topological and quantum closure -- active construction program.** Topology
+   and the project's quantum framework are to turn the information-preserving
+   architecture into a closed calculation. They must encode admissible sectors,
+   composition and matching maps, conservation laws, sum rules, and consistency
+   across perturbative and resolution orders as structural constraints rather
+   than late numerical repairs. This stage arose after the foundational draft.
+   Its principal architecture sources include
+   `references/algebraic_geometric_next_level_model_note_revised.tex`,
+   `references/volume_viii_symmetry_adapted_tensor_networks_prediction_compiler.tex`,
+   `references/volume_ix_dynamical_gluon_fock_sectors.tex`, and
+   `references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex`,
+   together with the corresponding microscopic and bridge implementations.
+4. **Predictive GTMD-level framework -- intended endpoint.** The completed
+   framework is not a TMD calculator with extensions. It is a common predictive
+   engine from which TMDs, GPDs, PDFs, Wigner distributions, form factors,
+   currents, exclusive and inclusive reactions, and other observables supported
+   by the completed operator content follow as controlled projections,
+   contractions, moments, evolution, or matching limits at the GTMD level.
+
+"Complete" at the endpoint therefore means closure of operator content,
+state/current dynamics, matching and evolution, conservation and sum-rule
+tests, calibration and uncertainty propagation, and observable reductions. It
+does not mean that currently open inputs or unfinished numerical actions may be
+treated as already solved.
+
+### Foundational document that must remain in the pickup path
+
+`Deuteron_GTMD.pdf` is a 29-page working note and the direct conceptual bridge
+from the initial phenomenological model to the later comprehensive construct.
+It establishes the GTMD-first parent hierarchy, the distinction between the
+partonic and nuclear Wigner objects, quark/gluon operator separation, the
+spin-1 helicity and tensor basis, the `b1` normalization anchor, GTMD-level
+nuclear convolution, SCET soft subtraction and evolution, small-`b_T` matching,
+rank-aware Fourier transforms, observable factorization, positivity, sum rules,
+and the original staged implementation roadmap. A new human or agent should
+read it after this handoff and before reinterpreting the project's original
+scope. Its frozen SHA-256 is
+`804756880dcf11e473a7fb190b555090c2c8eae042cb40608c20e1d8fbc48cf9`.
+It does **not** contain the later algebraic/geometric, topology-aware tensor-
+network, quantum-state, or quantum-computational construction and must not be
+cited as the authority for Stage 3. Those additions are a subsequent evolution
+of the project, not content retroactively present in the original note.
 
 ## What the project is, and is not
 
