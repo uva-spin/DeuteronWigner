@@ -4,7 +4,7 @@
 - Canonical checkout: `/Users/dustin/work/DeuteronWigner`
 - Branch at reconciliation: `main`
 - Code baseline at reconciliation: `186cc8164240f5d18c99fb56f29ba74d243849b5`
-- Preceding handoff/document commit: `02ece47c14b2442fcac315b221658cd37b128f75`
+- Preceding handoff/document commit: `3cbfc0bcd1c78ceff2018a602cc333037b0ff7d1`
 - User-supplied theory-note baseline SHA-256: `609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea`
 
 This is the first file a human or coding agent should read after `AGENTS.md`.
@@ -96,6 +96,30 @@ It does **not** contain the later algebraic/geometric, topology-aware tensor-
 network, quantum-state, or quantum-computational construction and must not be
 cited as the authority for Stage 3. Those additions are a subsequent evolution
 of the project, not content retroactively present in the original note.
+
+### Original comprehensive theory archive
+
+The project owner's original formal-theory bundle is preserved unchanged at
+`references/source_archives/Theory_of_the_Deuteron_GTMD.zip`, with SHA-256
+`1d956f95ec14d6d17b0baf8df5055bd3240e3edeb90bd7c7e7a24d743dbaa443`.
+It contains 22 flat TeX members, Volumes 0--XXI. Twenty-one members were
+byte-identical to sources already under `references/`; the archive supplied
+the previously absent
+`references/volume_xvi_scheme_qualified_tmds_resolved_evolution.tex`
+(SHA-256
+`d3bf3a8621b74686b4c52a2a2e332a14119ebc8403cc80eaf8d6ec99e6856dea`).
+The pre-existing Volume XVI PDF remains the authoritative historical render.
+The archive comparison and pickup map are recorded in
+`references/source_archives/README.md`.
+
+The bundle confirms the scientific progression rather than changing it. Its
+early volumes build the comprehensive information-preserving light-front
+construct; Volumes VIII onward make the later tensor-network, topology-aware,
+quantum, matching, evolution, and source-reproducibility program increasingly
+explicit. In particular, Volume XVI specifies the post-M1 scheme-qualified
+TMD/evolution bridge through exact formal identities and finite-order defect
+tracking. It does not establish that all-order evolution, physical extraction,
+complete T-odd matching, or process predictions have already been achieved.
 
 ## What the project is, and is not
 

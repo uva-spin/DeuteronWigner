@@ -10,6 +10,10 @@ and the next scientific path, read
 `references/DeuteronWigner_theory_state_current.json`; verify scientific
 details against the TeX note and source rather than treating the JSON as an
 independent authority.
+The immutable original 22-volume theory bundle, its integrity record, and its
+repository comparison are documented in
+`references/source_archives/README.md`; use the mirrored sources under
+`references/` for normal work.
 
 ## Source of truth
 

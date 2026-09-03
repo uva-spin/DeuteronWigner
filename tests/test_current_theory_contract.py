@@ -1,5 +1,6 @@
 import hashlib
 import json
+import zipfile
 from pathlib import Path
 
 
@@ -9,6 +10,9 @@ NOTE_PATH = ROOT / "references" / "DeuteronWigner_complete_theory_note_current.t
 BIB_PATH = ROOT / "references" / "DeuteronWigner_complete_theory_references.bib"
 HANDOFF_PATH = ROOT / "handoff" / "CURRENT_PROJECT_HANDOFF.md"
 FOUNDATION_PATH = ROOT / "Deuteron_GTMD.pdf"
+THEORY_ARCHIVE_PATH = (
+    ROOT / "references" / "source_archives" / "Theory_of_the_Deuteron_GTMD.zip"
+)
 
 
 def _state():
@@ -83,3 +87,32 @@ def test_scientific_progression_ends_at_predictive_gtmd_level():
     assert hashlib.sha256(FOUNDATION_PATH.read_bytes()).hexdigest() == state[
         "source_baseline"
     ]["foundational_gtmd_draft_sha256"]
+
+
+def test_original_theory_archive_is_safe_complete_and_mirrored():
+    state = _state()
+    archive_state = state["original_theory_archive"]
+    archive_bytes = THEORY_ARCHIVE_PATH.read_bytes()
+    assert hashlib.sha256(archive_bytes).hexdigest() == state["source_baseline"][
+        "original_theory_archive_sha256"
+    ]
+
+    with zipfile.ZipFile(THEORY_ARCHIVE_PATH) as archive:
+        members = [item for item in archive.infolist() if not item.is_dir()]
+        assert len(members) == archive_state["member_count"] == 22
+        assert sum(item.file_size for item in members) == archive_state[
+            "total_uncompressed_bytes"
+        ]
+        assert all(Path(item.filename).name == item.filename for item in members)
+        assert all(Path(item.filename).suffix == ".tex" for item in members)
+        for item in members:
+            assert archive.read(item) == (ROOT / "references" / item.filename).read_bytes()
+
+    recovered_source = ROOT / archive_state["recovered_volume_xvi_source"]
+    historical_pdf = ROOT / archive_state["historical_volume_xvi_pdf"]
+    assert hashlib.sha256(recovered_source.read_bytes()).hexdigest() == archive_state[
+        "recovered_volume_xvi_source_sha256"
+    ]
+    assert hashlib.sha256(historical_pdf.read_bytes()).hexdigest() == archive_state[
+        "historical_volume_xvi_pdf_sha256"
+    ]
