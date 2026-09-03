@@ -1,0 +1,141 @@
+{
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "complete_passed_groups": [
+    {
+      "failed": 0,
+      "name": "C408 focused",
+      "passed": 28
+    },
+    {
+      "failed": 0,
+      "name": "C407 regression including Python 3.9 compatibility tests",
+      "passed": 28
+    },
+    {
+      "failed": 0,
+      "name": "C406 regression",
+      "passed": 24
+    },
+    {
+      "failed": 0,
+      "name": "C404 regression",
+      "passed": 15
+    },
+    {
+      "failed": 0,
+      "name": "C403 regression",
+      "passed": 16
+    },
+    {
+      "failed": 0,
+      "name": "C400.S2 regression with current evidence restored from accepted S2M2 handoff",
+      "passed": 26
+    }
+  ],
+  "environment": {
+    "note": "reconstructed review repository; canonical Python 3.9 live validation required",
+    "python": "3.13.5"
+  },
+  "live_required_groups": [
+    {
+      "name": "C408",
+      "passed": 28
+    },
+    {
+      "name": "C407",
+      "passed": 28
+    },
+    {
+      "name": "C406",
+      "passed": 24
+    },
+    {
+      "name": "C405",
+      "passed": 21
+    },
+    {
+      "name": "C404",
+      "passed": 15
+    },
+    {
+      "name": "C403",
+      "passed": 16
+    },
+    {
+      "name": "C401",
+      "passed": 14
+    },
+    {
+      "name": "C400.S2",
+      "passed": 26
+    },
+    {
+      "name": "C114/C115/C117/C119",
+      "passed": 12
+    },
+    {
+      "name": "C45/C47",
+      "passed": 4
+    },
+    {
+      "name": "C151",
+      "passed": 4
+    }
+  ],
+  "live_required_total_passed": 192,
+  "prepared_environment_total_deselected": 5,
+  "prepared_environment_total_passed": 167,
+  "python39_static_audit": {
+    "files": 9,
+    "passed": true
+  },
+  "reconstructed_snapshot_live_only_tests_not_present": 20,
+  "reconstructed_snapshot_missing_test_groups": [
+    {
+      "expected_live_passed": 12,
+      "missing_test_files": [
+        "tests/test_c114_icurrent.py",
+        "tests/test_c115_icho.py",
+        "tests/test_c117_icreg2.py",
+        "tests/test_c119_icnorm3.py"
+      ],
+      "name": "C114/C115/C117/C119"
+    },
+    {
+      "expected_live_passed": 4,
+      "missing_test_files": [
+        "tests/test_c45_modes.py",
+        "tests/test_c47_basis1.py"
+      ],
+      "name": "C45/C47 selected"
+    },
+    {
+      "expected_live_passed": 4,
+      "missing_test_files": [
+        "tests/test_c151_hqcdg2pt.py"
+      ],
+      "name": "C151 convention"
+    }
+  ],
+  "reconstructed_snapshot_subsets": [
+    {
+      "deselected": 4,
+      "name": "C405 available subset",
+      "passed": 17,
+      "reason": "replay snapshot omits docs/next_level/c43_action_derivation_manifest.json"
+    },
+    {
+      "deselected": 1,
+      "name": "C401 available subset",
+      "passed": 13,
+      "reason": "replay snapshot omits references/c43_light_front_qcd_gauge_action.tex"
+    }
+  ],
+  "schema": "C408-CHATGPT-STAGE-TEST-EXECUTION-V2",
+  "two_clean_generator_builds": {
+    "files": 18,
+    "generated_artifacts_excluding_generation_result": 17,
+    "passed": true
+  }
+}

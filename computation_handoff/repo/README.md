@@ -1,5 +1,26 @@
 # DeuteronWigner
 
+## Current continuation handoff
+
+This published tree is maintained from the canonical checkout at
+`/Users/dustin/work/DeuteronWigner`. The public continuation page is:
+
+<https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>
+
+Read `C401_C410_REPOSITORY_HANDOFF.md` first for the accepted C401-C410
+scientific progression, numerical frontier, C410 aggregate, and exact
+normalization blocker. `CURRENT_SOURCE_COMMIT.txt` identifies the source
+commit represented by this handoff view.
+
+After every accepted phase or material scientific commit on the canonical
+`main`, this tree must be refreshed in the same publication cycle. Update the
+source-commit marker, phase evidence, and current handoff; refresh
+`REPO_CONTENTS.*` when the inventory changes; verify, commit, and push. Do not
+describe this tree as current when its source marker does not equal the
+accepted source commit. Preserve unavailable-versus-zero,
+source-shape-versus-coefficient, and numerical-path-versus-physical-rank
+distinctions.
+
 **DeuteronWigner constructs the complete leading-twist quark and gluon TMD
 content of a spin-1 deuteron while preserving flavor, constituent, spin,
 tensor-polarization, orbital, gauge-link, and nuclear-mechanism information.**

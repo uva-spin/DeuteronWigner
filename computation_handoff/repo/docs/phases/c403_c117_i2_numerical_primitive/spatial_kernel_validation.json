@@ -1,0 +1,138 @@
+{
+  "b_HO_squared_scaling_residual": 0.0,
+  "external_basis_scope": "C47 intrinsic/relative qg transverse-HO basis with shell <= Nmax-2; the q-sector external target basis and full q/qg embedding remain unassembled",
+  "ground_state_identity": {
+    "absolute_residual": 0.0,
+    "computed": 0.02546479089470326,
+    "expected": 0.02546479089470326
+  },
+  "maximum_quadrature_abs_residual": 8.413408858487514e-17,
+  "maximum_sparse_matrix_free_residual": 0.0,
+  "minimum_eigenvalue_GeV2": 2.4989630555333427e-08,
+  "pass": true,
+  "q_sector_external_basis_assembled": false,
+  "quadrature_internal_modes_checked": 9,
+  "quadrature_scope": "three deterministic representative internal modes per resolution; all single-member matrices checked separately for Hermiticity and PSD",
+  "root": "f0622ba4a5c93fb68ad8cde6c39e145354fe4fbef51293f75c87233834ba0ec8",
+  "rows": [
+    {
+      "dimension": 28,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "minimum_eigenvalue_GeV2": 8.913989501551994e-06,
+      "quadrature_max_abs_residual": 6.5052130349130266e-18,
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 28,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": -3,
+        "n": 1,
+        "shell": 5
+      },
+      "minimum_eigenvalue_GeV2": 0.0007311155706850606,
+      "quadrature_max_abs_residual": 1.0408340855860843e-17,
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 28,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": 0,
+        "n": 3,
+        "shell": 6
+      },
+      "minimum_eigenvalue_GeV2": 0.0024213461570746263,
+      "quadrature_max_abs_residual": 5.898059818321144e-17,
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 45,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "minimum_eigenvalue_GeV2": 4.866571566650838e-07,
+      "quadrature_max_abs_residual": 1.214306433183765e-17,
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 45,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": -1,
+        "n": 1,
+        "shell": 3
+      },
+      "minimum_eigenvalue_GeV2": 0.0005908112298424654,
+      "quadrature_max_abs_residual": 3.5887091909270197e-17,
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 45,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": 0,
+        "n": 4,
+        "shell": 8
+      },
+      "minimum_eigenvalue_GeV2": 0.0023723627941184193,
+      "quadrature_max_abs_residual": 7.112366251504909e-17,
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 66,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "minimum_eigenvalue_GeV2": 2.4989630555333427e-08,
+      "quadrature_max_abs_residual": 1.1275702593849246e-17,
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 66,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": 4,
+        "n": 1,
+        "shell": 6
+      },
+      "minimum_eigenvalue_GeV2": 0.00013966318809596336,
+      "quadrature_max_abs_residual": 2.2551405187698492e-17,
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 0.0
+    },
+    {
+      "dimension": 66,
+      "hermiticity_residual": 0.0,
+      "internal_mode": {
+        "m": 0,
+        "n": 5,
+        "shell": 10
+      },
+      "minimum_eigenvalue_GeV2": 0.002363900709250606,
+      "quadrature_max_abs_residual": 8.413408858487514e-17,
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 0.0
+    }
+  ],
+  "schema": "C403-C117-I2-SPATIAL-KERNEL-VALIDATION-V1",
+  "status": "C403_C117_I2_FINITE_AXIS_AND_SPATIAL_KERNEL_NUMERICAL_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+}

@@ -1,0 +1,41 @@
+{
+  "complete_C117_action": false,
+  "maximum_adjoint_generator_hermiticity_residual": 0.0,
+  "maximum_canonical_route_exchange_residual": 0.0,
+  "maximum_mode_color_hermiticity_residual": 0.0,
+  "maximum_vacuum_commutator_color_trace": 0.0,
+  "number_preserving_descendant_bound": true,
+  "pair_creation_annihilation_branches_promoted": false,
+  "pass": true,
+  "root": "a5ab049480e61c03650641640949bdb1da49bb7d13ea65fbcb501aa1a8fafd47",
+  "schema": "C406-C117-I2-ONE-GLUON-NORMAL-ORDER-VALIDATION-V1",
+  "source_authority": {
+    "C151_commutator": "[a,a^dagger]=delta",
+    "C151_source_mode": "a_lambda^dagger|Omega0>",
+    "C192_source_path": "src/deuteron_wigner/bridge/hqcdb1qgggcurr1/core.py",
+    "C192_source_sha256": "4f68826835715f5ef08a3e5e1f6a594610f9e0a99319701f6d35a89696cfbe73",
+    "C45_longitudinal_mode": "phi_k(x^-)=exp(+i*pi*k*x^-/L)/sqrt(2L)",
+    "C45_momentum": "p_k^+=pi*k/L; P^+=pi*K/L; x=k/K",
+    "adjoint_generator_convention": "(F^a)_bc=-i f^{abc}",
+    "color_index_order": "f_abc, current a then field slots b,c",
+    "complete_C117_action": false,
+    "derivative_placement": "partial_- acts on second slot",
+    "field_phase_convention": "annihilation exp(-i*pi*k*xminus/L), creation adjoint",
+    "number_preserving_branch": {
+      "derivative": "second-slot momentum factor",
+      "normal_order": "source order followed by bosonic commutator",
+      "pattern": "a\u2020a"
+    },
+    "ordered_field_slots": [
+      "A_perp^b first",
+      "A_perp^c second"
+    ],
+    "root": "d09dd1aa4649b396755e4b92beb2ebafb83272fdfc8a3ebcdf55911339ac3e2c",
+    "schema": "C406-C117-I2-GLUON-NORMAL-ORDER-SOURCE-AUTHORITY-V1",
+    "source_expression": "- f_abc A_perp^b partial_- A_perp^c",
+    "source_sign": "source minus retained",
+    "status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED"
+  },
+  "status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED",
+  "vacuum_commutator_exact_zero_by_antisymmetry": true
+}

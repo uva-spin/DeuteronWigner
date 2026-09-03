@@ -1,0 +1,33 @@
+{
+  "classification": "SOURCE_FIELD_SLOT_ORDER_CLOSED_EXTERNAL_LEG_NORMAL_ORDER_MAPPING_UNRESOLVED",
+  "complete_numerical_gluon_current_matrix": false,
+  "derivative_source_color_slot": "c",
+  "derivative_source_field_slot": 2,
+  "external_BRA_KET_leg_mapping": "MISSING_NOT_ZERO",
+  "factor_two_merge_forbidden": true,
+  "integration_by_parts_alternate_slot": 1,
+  "integration_by_parts_boundary_owner": "C130/C182 retained; not discarded",
+  "mixed_current_orders_kept_separate": true,
+  "mixed_current_owner_orders": [
+    "J_q K J_g",
+    "J_g K J_q"
+  ],
+  "normal_ordering_descendant_bound": false,
+  "number_preserving_branch_source_derivative": "second-slot momentum factor",
+  "ordered_source_field_slots": [
+    "A_perp^b",
+    "A_perp^c"
+  ],
+  "root": "c0860d4ee9f14469381cc15edea485ad3076844328b7c955a34c9316b8792d38",
+  "schema": "C405-C117-I2-GLUON-SOURCE-SLOT-AUTHORITY-V1",
+  "source_checks": {
+    "C190_gauss_current_was_incomplete": true,
+    "C192_derivative_source_slot_is_second": true,
+    "C192_integration_by_parts_boundary_retained": true,
+    "C192_mixed_orders_separate_no_factor_two": true,
+    "C192_source_current_expression_bound": true,
+    "C193_mixed_orders_still_separate": true
+  },
+  "source_current_expression": "- f_abc A_perp^b partial_- A_perp^c",
+  "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+}

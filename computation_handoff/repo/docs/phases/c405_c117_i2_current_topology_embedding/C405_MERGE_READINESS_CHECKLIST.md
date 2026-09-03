@@ -1,0 +1,26 @@
+# C405 merge-readiness checklist
+
+- [ ] Baseline is `6e7601881256d17fe14767d203cb4742143051c2`.
+- [ ] Thirteen frozen source files pass SHA-256 verification.
+- [ ] The source audit exposes 3 C115/C125 graph-class conflicts.
+- [ ] The source audit exposes 8 incomplete C119 two-current programs.
+- [ ] The source audit exposes 4 C119/C126 derivative-overlap-risk programs.
+- [ ] The source audit exposes 8 C126 program-level single-current references and 4 extra-derivative programs.
+- [ ] C190 is recorded as the pre-C192 incomplete Gauss-current split.
+- [ ] C192 fixes the derivative on the second ordered source field, retains mixed-current order, and forbids a factor-two merge.
+- [ ] The external BRA/KET image of the C192-fixed source field remains explicitly `MISSING_NOT_ZERO`.
+- [ ] C250's two-current identity repair is retained without promoting it to normal-ordering authority.
+- [ ] The ordered derivative family has exactly 27 explicit rows and no default derivative leg.
+- [ ] All 27 conditional qg kernels pass sparse/matrix-free and source-order-adjoint checks.
+- [ ] Direct-sum embedding requires both diagonal blocks; the unavailable q block is never zero-filled.
+- [ ] C405 focused tests report 21 passing tests.
+- [ ] C404, C403, C401, C400.S2, C114/C115/C117/C119, and C45/C47 regressions pass.
+- [ ] The selected acceptance profile reports 108 passed and 0 failed.
+- [ ] Canonical generator completes and records all required invariants.
+- [ ] Two independent clean generator builds are byte-identical.
+- [ ] Only the C405 source, test, generator, and phase-evidence surface is staged.
+- [ ] No ZIP, patch, bytecode, `.phase_mode`, or unrelated file is staged.
+- [ ] Complete numerical C117 action count remains zero.
+- [ ] Complete numerical C396 action count remains six.
+- [ ] Rank remains `RANK_NOT_EVALUATED`.
+- [ ] No physical fit, coefficient selection, current selection, resolution averaging, Hamiltonian activation, merge, or push occurs in the integration phase.

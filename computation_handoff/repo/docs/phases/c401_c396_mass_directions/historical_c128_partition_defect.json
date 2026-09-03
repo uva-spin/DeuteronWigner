@@ -1,0 +1,412 @@
+{
+  "C128_historical_package_root": "d23ce7d398204f1e88612448564d26d17019fa832c8c041d3382c7be1553a6f1",
+  "C144_ID_derived_diagnostic_operator_directly_uses_C128_partition_values": false,
+  "C144_diagnostic_status_changed": false,
+  "C401_policy": "preserve C128 history; use C47 fractions in a versioned C401 mass-direction adapter",
+  "C47_source_status": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY",
+  "affected_resolutions": [
+    "K9",
+    "K11",
+    "K13"
+  ],
+  "defect_pattern": "historical kq and xq exceed C47 values by 1/2 and 1/K2 respectively",
+  "gluon_fraction_affected": false,
+  "historical_files_modified": false,
+  "qg_transverse_kinetic_denominator_affected": true,
+  "quark_mass_derivative_affected": true,
+  "root": "25035fb713eeded2855cc9492ff8555d50d7bd590d1e268a39ea76dddaf7ec32",
+  "rows": [
+    {
+      "canonical": {
+        "kg": "1",
+        "kq": "7/2",
+        "sum": "1",
+        "xg": "2/9",
+        "xq": "7/9"
+      },
+      "fraction_sum_residual": "1/9",
+      "full_resolution_id": "K9_2_N8_b0.40",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "1",
+        "kq": "4",
+        "sum": "10/9",
+        "xg": "2/9",
+        "xq": "8/9"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 0,
+      "quark_fraction_match": false,
+      "resolution": "K9",
+      "xg_residual": "0",
+      "xq_residual": "1/9"
+    },
+    {
+      "canonical": {
+        "kg": "2",
+        "kq": "5/2",
+        "sum": "1",
+        "xg": "4/9",
+        "xq": "5/9"
+      },
+      "fraction_sum_residual": "1/9",
+      "full_resolution_id": "K9_2_N8_b0.40",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "2",
+        "kq": "3",
+        "sum": "10/9",
+        "xg": "4/9",
+        "xq": "2/3"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 1,
+      "quark_fraction_match": false,
+      "resolution": "K9",
+      "xg_residual": "0",
+      "xq_residual": "1/9"
+    },
+    {
+      "canonical": {
+        "kg": "3",
+        "kq": "3/2",
+        "sum": "1",
+        "xg": "2/3",
+        "xq": "1/3"
+      },
+      "fraction_sum_residual": "1/9",
+      "full_resolution_id": "K9_2_N8_b0.40",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "3",
+        "kq": "2",
+        "sum": "10/9",
+        "xg": "2/3",
+        "xq": "4/9"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 2,
+      "quark_fraction_match": false,
+      "resolution": "K9",
+      "xg_residual": "0",
+      "xq_residual": "1/9"
+    },
+    {
+      "canonical": {
+        "kg": "4",
+        "kq": "1/2",
+        "sum": "1",
+        "xg": "8/9",
+        "xq": "1/9"
+      },
+      "fraction_sum_residual": "1/9",
+      "full_resolution_id": "K9_2_N8_b0.40",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "4",
+        "kq": "1",
+        "sum": "10/9",
+        "xg": "8/9",
+        "xq": "2/9"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 3,
+      "quark_fraction_match": false,
+      "resolution": "K9",
+      "xg_residual": "0",
+      "xq_residual": "1/9"
+    },
+    {
+      "canonical": {
+        "kg": "1",
+        "kq": "9/2",
+        "sum": "1",
+        "xg": "2/11",
+        "xq": "9/11"
+      },
+      "fraction_sum_residual": "1/11",
+      "full_resolution_id": "K11_2_N10_b0.45",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "1",
+        "kq": "5",
+        "sum": "12/11",
+        "xg": "2/11",
+        "xq": "10/11"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 0,
+      "quark_fraction_match": false,
+      "resolution": "K11",
+      "xg_residual": "0",
+      "xq_residual": "1/11"
+    },
+    {
+      "canonical": {
+        "kg": "2",
+        "kq": "7/2",
+        "sum": "1",
+        "xg": "4/11",
+        "xq": "7/11"
+      },
+      "fraction_sum_residual": "1/11",
+      "full_resolution_id": "K11_2_N10_b0.45",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "2",
+        "kq": "4",
+        "sum": "12/11",
+        "xg": "4/11",
+        "xq": "8/11"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 1,
+      "quark_fraction_match": false,
+      "resolution": "K11",
+      "xg_residual": "0",
+      "xq_residual": "1/11"
+    },
+    {
+      "canonical": {
+        "kg": "3",
+        "kq": "5/2",
+        "sum": "1",
+        "xg": "6/11",
+        "xq": "5/11"
+      },
+      "fraction_sum_residual": "1/11",
+      "full_resolution_id": "K11_2_N10_b0.45",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "3",
+        "kq": "3",
+        "sum": "12/11",
+        "xg": "6/11",
+        "xq": "6/11"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 2,
+      "quark_fraction_match": false,
+      "resolution": "K11",
+      "xg_residual": "0",
+      "xq_residual": "1/11"
+    },
+    {
+      "canonical": {
+        "kg": "4",
+        "kq": "3/2",
+        "sum": "1",
+        "xg": "8/11",
+        "xq": "3/11"
+      },
+      "fraction_sum_residual": "1/11",
+      "full_resolution_id": "K11_2_N10_b0.45",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "4",
+        "kq": "2",
+        "sum": "12/11",
+        "xg": "8/11",
+        "xq": "4/11"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 3,
+      "quark_fraction_match": false,
+      "resolution": "K11",
+      "xg_residual": "0",
+      "xq_residual": "1/11"
+    },
+    {
+      "canonical": {
+        "kg": "5",
+        "kq": "1/2",
+        "sum": "1",
+        "xg": "10/11",
+        "xq": "1/11"
+      },
+      "fraction_sum_residual": "1/11",
+      "full_resolution_id": "K11_2_N10_b0.45",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "5",
+        "kq": "1",
+        "sum": "12/11",
+        "xg": "10/11",
+        "xq": "2/11"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 4,
+      "quark_fraction_match": false,
+      "resolution": "K11",
+      "xg_residual": "0",
+      "xq_residual": "1/11"
+    },
+    {
+      "canonical": {
+        "kg": "1",
+        "kq": "11/2",
+        "sum": "1",
+        "xg": "2/13",
+        "xq": "11/13"
+      },
+      "fraction_sum_residual": "1/13",
+      "full_resolution_id": "K13_2_N12_b0.50",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "1",
+        "kq": "6",
+        "sum": "14/13",
+        "xg": "2/13",
+        "xq": "12/13"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 0,
+      "quark_fraction_match": false,
+      "resolution": "K13",
+      "xg_residual": "0",
+      "xq_residual": "1/13"
+    },
+    {
+      "canonical": {
+        "kg": "2",
+        "kq": "9/2",
+        "sum": "1",
+        "xg": "4/13",
+        "xq": "9/13"
+      },
+      "fraction_sum_residual": "1/13",
+      "full_resolution_id": "K13_2_N12_b0.50",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "2",
+        "kq": "5",
+        "sum": "14/13",
+        "xg": "4/13",
+        "xq": "10/13"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 1,
+      "quark_fraction_match": false,
+      "resolution": "K13",
+      "xg_residual": "0",
+      "xq_residual": "1/13"
+    },
+    {
+      "canonical": {
+        "kg": "3",
+        "kq": "7/2",
+        "sum": "1",
+        "xg": "6/13",
+        "xq": "7/13"
+      },
+      "fraction_sum_residual": "1/13",
+      "full_resolution_id": "K13_2_N12_b0.50",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "3",
+        "kq": "4",
+        "sum": "14/13",
+        "xg": "6/13",
+        "xq": "8/13"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 2,
+      "quark_fraction_match": false,
+      "resolution": "K13",
+      "xg_residual": "0",
+      "xq_residual": "1/13"
+    },
+    {
+      "canonical": {
+        "kg": "4",
+        "kq": "5/2",
+        "sum": "1",
+        "xg": "8/13",
+        "xq": "5/13"
+      },
+      "fraction_sum_residual": "1/13",
+      "full_resolution_id": "K13_2_N12_b0.50",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "4",
+        "kq": "3",
+        "sum": "14/13",
+        "xg": "8/13",
+        "xq": "6/13"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 3,
+      "quark_fraction_match": false,
+      "resolution": "K13",
+      "xg_residual": "0",
+      "xq_residual": "1/13"
+    },
+    {
+      "canonical": {
+        "kg": "5",
+        "kq": "3/2",
+        "sum": "1",
+        "xg": "10/13",
+        "xq": "3/13"
+      },
+      "fraction_sum_residual": "1/13",
+      "full_resolution_id": "K13_2_N12_b0.50",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "5",
+        "kq": "2",
+        "sum": "14/13",
+        "xg": "10/13",
+        "xq": "4/13"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 4,
+      "quark_fraction_match": false,
+      "resolution": "K13",
+      "xg_residual": "0",
+      "xq_residual": "1/13"
+    },
+    {
+      "canonical": {
+        "kg": "6",
+        "kq": "1/2",
+        "sum": "1",
+        "xg": "12/13",
+        "xq": "1/13"
+      },
+      "fraction_sum_residual": "1/13",
+      "full_resolution_id": "K13_2_N12_b0.50",
+      "gluon_fraction_match": true,
+      "historical_C128": {
+        "kg": "6",
+        "kq": "1",
+        "sum": "14/13",
+        "xg": "12/13",
+        "xq": "2/13"
+      },
+      "kg_residual": "0",
+      "kq_residual": "1/2",
+      "partition_id": 5,
+      "quark_fraction_match": false,
+      "resolution": "K13",
+      "xg_residual": "0",
+      "xq_residual": "1/13"
+    }
+  ],
+  "schema": "C401-HISTORICAL-C128-PARTITION-DEFECT-AUDIT-V1",
+  "status": "HISTORICAL_C128_LONGITUDINAL_QUARK_FRACTION_IMPLEMENTATION_DEFECT_CONFIRMED"
+}

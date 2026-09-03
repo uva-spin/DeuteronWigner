@@ -178,6 +178,31 @@ acquisition instructions are retained in
 [`data/README.md`](data/README.md) and
 [`references/environment_setup.md`](references/environment_setup.md).
 
+## Continuation handoff
+
+The public continuation handoff is
+[`computation_handoff/repo`](https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo).
+It is a published snapshot of this checkout, not a separate scientific
+authority. The current source commit, accepted phase evidence, and remaining
+frontier must be read from that tree together with the corresponding commits
+on `main`.
+
+Whenever an accepted phase or material scientific commit lands on `main`,
+update the published tree in the same change or immediately afterward:
+
+1. copy the accepted source/docs/tests needed for continuation;
+2. update `computation_handoff/repo/CURRENT_SOURCE_COMMIT.txt`;
+3. update `computation_handoff/repo/C401_C410_REPOSITORY_HANDOFF.md` or the
+   successor phase handoff;
+4. refresh the published contents manifest and its checksums if the snapshot
+   inventory changes; and
+5. verify the published tree, commit it, and push `main`.
+
+Do not claim that the public handoff is current unless its source-commit
+marker equals the accepted `main` commit. Preserve unavailable-versus-zero,
+source-shape-versus-coefficient, and numerical-path-versus-physical-rank
+distinctions when updating it.
+
 ## Installation
 
 The validated environment uses Python 3.9 and LHAPDF 6.5.5.

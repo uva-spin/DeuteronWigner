@@ -1,0 +1,20 @@
+{"command":"pwd; git branch --show-current; git rev-parse HEAD; git status --short; git rev-parse --git-common-dir","exit_code":0,"result":"required clean baseline record completed"}
+{"command":"python3 verify_package.py PACKAGE_ROOT","exit_code":0,"result":"pass; 94 files verified; patch hash matched"}
+{"command":"git apply --check C408_c117_i2_weight_routing_closure.patch","exit_code":0,"result":"pass"}
+{"command":"git apply C408_c117_i2_weight_routing_closure.patch","exit_code":0,"result":"pass"}
+{"command":"git diff --check","exit_code":0,"result":"pass"}
+{"command":"python3 structural Python 3.9 audit over nine C408 files","exit_code":0,"result":"pass; 9 files parsed; no forbidden runtime constructs"}
+{"command":"python3 compile/import complete C408 package","exit_code":0,"result":"pass; 7 modules compiled/imported"}
+{"command":"PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 tools/generate_c408_c117_i2_weight_routing_closure.py","exit_code":0,"result":"pass; live evidence regenerated"}
+{"command":"python3 tools/generate_c408_c117_i2_weight_routing_closure.py --output BUILD1; python3 tools/generate_c408_c117_i2_weight_routing_closure.py --output BUILD2","exit_code":0,"result":"pass; 27 files compared byte-for-byte"}
+{"command":"python3 -m pytest -q tests/test_c408_c117_i2_weight_routing_closure.py","exit_code":0,"result":"28 passed"}
+{"command":"python3 -m pytest -q tests/test_c407_c117_i2_same_species_descendants.py","exit_code":0,"result":"28 passed"}
+{"command":"python3 -m pytest -q tests/test_c406_c117_i2_gluon_normal_order_descendant.py","exit_code":0,"result":"24 passed"}
+{"command":"python3 -m pytest -q tests/test_c405_c117_i2_current_topology_embedding.py","exit_code":0,"result":"21 passed"}
+{"command":"python3 -m pytest -q tests/test_c404_c117_i2_longitudinal_color_primitive.py","exit_code":0,"result":"15 passed"}
+{"command":"python3 -m pytest -q tests/test_c403_c117_i2_numerical_primitive.py","exit_code":0,"result":"16 passed"}
+{"command":"python3 -m pytest -q tests/test_c401_c396_mass_directions.py","exit_code":0,"result":"14 passed"}
+{"command":"python3 -m pytest -q tests/test_c400_s2_corrective.py","exit_code":0,"result":"26 passed; 5 historical docstring warnings"}
+{"command":"python3 -m pytest -q tests/test_c114_icurrent.py tests/test_c115_icho.py tests/test_c117_icreg2.py tests/test_c119_icnorm3.py","exit_code":0,"result":"12 passed"}
+{"command":"python3 -m pytest -q selected C45/C47 tests","exit_code":0,"result":"4 passed"}
+{"command":"python3 -m pytest -q tests/test_c151_hqcdg2pt.py","exit_code":0,"result":"4 passed"}

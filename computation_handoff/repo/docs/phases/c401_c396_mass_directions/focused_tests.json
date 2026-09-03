@@ -1,0 +1,36 @@
+{
+  "schema": "C401-LIVE-FOCUSED-TESTS-V1",
+  "required_acceptance": [
+    {
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c401_c396_mass_directions.py",
+      "exit_code": 0,
+      "stdout": "..............                                                           [100%]\n14 passed in 0.82s\n",
+      "stderr": ""
+    },
+    {
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c128_free2.py tests/test_c47_basis1.py::test_c47_basis_contracts_close_without_action_matrices",
+      "exit_code": 0,
+      "stdout": "....                                                                     [100%]\n4 passed in 3.64s\n",
+      "stderr": ""
+    },
+    {
+      "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c400_s2_corrective.py",
+      "exit_code": 0,
+      "stdout": "..........................                                               [100%]\n=============================== warnings summary ===============================\nsrc/deuteron_wigner/lf_current.py:18\n  /Users/dustin/work/DeuteronWigner/.phase_worktrees/c401_c396_mass_directions/src/deuteron_wigner/lf_current.py:18: DeprecationWarning: invalid escape sequence \\(\n    \"\"\"Convert space-like Sachs form factors to \\(F_1,F_2\\).\"\"\"\n\nsrc/deuteron_wigner/lf_current.py:37\n  /Users/dustin/work/DeuteronWigner/.phase_worktrees/c401_c396_mass_directions/src/deuteron_wigner/lf_current.py:37: DeprecationWarning: invalid escape sequence \\(\n    \"\"\"Normalized Drell-Yan \\(J^+/(2p^+)\\) in LF helicity space.\"\"\"\n\nsrc/deuteron_wigner/lf_current.py:78\n  /Users/dustin/work/DeuteronWigner/.phase_worktrees/c401_c396_mass_directions/src/deuteron_wigner/lf_current.py:78: DeprecationWarning: invalid escape sequence \\(\n    \"\"\"Four normalized Drell-Yan amplitudes \\(I=J^+/(2P^+)\\).\"\"\"\n\nsrc/deuteron_wigner/lf_current.py:94\n  /Users/dustin/work/DeuteronWigner/.phase_worktrees/c401_c396_mass_directions/src/deuteron_wigner/lf_current.py:94: DeprecationWarning: invalid escape sequence \\(\n    \"\"\"Carlson-Ji Eq. (4.7), divided by the common \\(2P^+\\).\"\"\"\n\nsrc/deuteron_wigner/lf_current.py:221\n  /Users/dustin/work/DeuteronWigner/.phase_worktrees/c401_c396_mass_directions/src/deuteron_wigner/lf_current.py:221: DeprecationWarning: invalid escape sequence \\(\n    \"\"\"Extract \\(G_C,G_M,G_Q\\) from any three of the four amplitudes.\"\"\"\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n26 passed, 5 warnings in 9.57s\n",
+      "stderr": ""
+    }
+  ],
+  "additional_focused": {
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q tests/test_c45_modes.py tests/test_c47_basis1.py tests/test_c131_hqcd4.py",
+    "exit_code": 0,
+    "stdout": "........................................................................ [ 18%]\n........................................................................ [ 37%]\n........................................................................ [ 56%]\n........................................................................ [ 75%]\n........................................................................ [ 94%]\n.....................                                                    [100%]\n381 passed in 8.49s\n",
+    "stderr": ""
+  },
+  "dependency_discrepancy_run": {
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m pytest -q --tb=no tests/test_c43_g0_contracts.py tests/test_c112_iferm3.py",
+    "exit_code": 1,
+    "stdout_summary": "67 failed, 65 passed in 0.47s",
+    "stderr": "",
+    "classification": "pre-existing repository dependency failures; no C401 test failure"
+  }
+}

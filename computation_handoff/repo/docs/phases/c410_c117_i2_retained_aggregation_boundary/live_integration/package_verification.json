@@ -1,0 +1,13 @@
+{
+  "schema": "C410-LIVE-INTEGRATION-PACKAGE-VERIFICATION-V1",
+  "command": "python3 /private/tmp/c410_package.IbF6lE/deuteronwigner_c410_c117_i2_retained_aggregation_boundary_package/verify_package.py /private/tmp/c410_package.IbF6lE/deuteronwigner_c410_c117_i2_retained_aggregation_boundary_package",
+  "exit_code": 0,
+  "pass": true,
+  "files_verified": 100,
+  "reference_evidence_files": 28,
+  "replacement_files": 38,
+  "unlisted_files": [],
+  "patch_sha256": "5aa9080a6d70ceaf09d46caa937e0720c6bad7a9833effc17332c9077b7289d6",
+  "accepted_baseline": "160eb887f393177170b4c3486cea27b41968dfce",
+  "required_branch": "codex/c410-c117-i2-retained-aggregation-boundary"
+}

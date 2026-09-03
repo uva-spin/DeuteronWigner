@@ -1,0 +1,17 @@
+{
+  "schema": "C407-LIVE-REPOSITORY-DISCREPANCIES-V1",
+  "parent_repository_had_preexisting_changes": true,
+  "parent_changes_touched": false,
+  "isolated_worktree_used": true,
+  "starting_worktree_clean": true,
+  "historical_sources_modified": false,
+  "manual_reconciliation": [],
+  "default_python_probe": {"python":"3.9.6","exit_code":1,"result":"supplied C407 module cannot import because HOMode | Sequence[int] is evaluated at runtime"},
+  "resolution": "used an isolated temporary Python 3.11 environment with the required scientific dependencies; no repository source edits beyond the supplied patch",
+  "replacement_comparison": {"total":32,"byte_exact":30,"runtime_generated_differences":2,"different_files":["docs/phases/c407_c117_i2_same_species_descendants/generation_result.json","docs/phases/c407_c117_i2_same_species_descendants/jqjq_qg_conditioned_validation.json"]},
+  "forbidden_paths_detected": [],
+  "staging_blocker": "fatal: Unable to create '/Users/dustin/work/DeuteronWigner/.git/worktrees/c407_c117_i2_same_species_descendants/index.lock': Operation not permitted",
+  "commit_created": false,
+  "merge": false,
+  "push": false
+}

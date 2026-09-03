@@ -1,0 +1,567 @@
+{
+  "classification": "CALLER_CONDITIONED_CURRENT_ORDER_STRESS_TEST_NOT_OPERATOR_BINDING",
+  "complete_C117_action": false,
+  "maximum_adjoint_residual": 0.0,
+  "maximum_sparse_matrix_free_residual": 5.7976381332876445e-15,
+  "pass": true,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "root": "118b0bbd9f3ddd2219cf618d7f6fd86d1fed6761ff16ea4a2e372b8d1223f42a",
+  "row_count": 27,
+  "rows": [
+    {
+      "adjoint_derivative_legs": [],
+      "adjoint_product": "J_qJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_qJ_q",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 5.10224404338627e-17
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_qJ_g",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.7177544624115606e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_qJ_g",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.727827504891821e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_q",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.7177544624115606e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_q",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.727827504891821e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.0549500785382345e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 9.917630051946546e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 9.917630051946546e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "dimension": 1344,
+      "internal_mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "nonzero_entries": 9792,
+      "product": "J_gJ_g",
+      "resolution": "K9",
+      "sparse_matrix_free_residual": 1.038424406917268e-15
+    },
+    {
+      "adjoint_derivative_legs": [],
+      "adjoint_product": "J_qJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_qJ_q",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 9.551297971652285e-17
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_qJ_g",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 3.475188102099781e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_qJ_g",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 3.4785749861588004e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_q",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 3.475188102099781e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_q",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 3.4785749861588004e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 2.6645156203299274e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 2.5948962491372594e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 2.5948962491372594e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "dimension": 2700,
+      "internal_mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "nonzero_entries": 34800,
+      "product": "J_gJ_g",
+      "resolution": "K11",
+      "sparse_matrix_free_residual": 2.549989144608729e-15
+    },
+    {
+      "adjoint_derivative_legs": [],
+      "adjoint_product": "J_qJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_qJ_q",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 1.6213837009367968e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_qJ_g",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 6.549716325953645e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_q",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_qJ_g",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 6.418328560694568e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_q",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 6.549716325953645e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA"
+      ],
+      "adjoint_product": "J_qJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_q",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 6.418328560694568e-16
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 5.7976381332876445e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "BRA",
+        "KET"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 5.2898015912732615e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET",
+        "BRA"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 5.2898015912732615e-15
+    },
+    {
+      "adjoint_derivative_legs": [
+        "BRA",
+        "BRA"
+      ],
+      "adjoint_product": "J_gJ_g",
+      "adjoint_residual": 0.0,
+      "derivative_legs": [
+        "KET",
+        "KET"
+      ],
+      "dimension": 4752,
+      "internal_mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "nonzero_entries": 90720,
+      "product": "J_gJ_g",
+      "resolution": "K13",
+      "sparse_matrix_free_residual": 5.630720701275404e-15
+    }
+  ],
+  "schema": "C405-C117-I2-CONDITIONAL-QG-KERNEL-VALIDATION-V1",
+  "source_qualified_product_topology": false,
+  "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+}

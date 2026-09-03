@@ -1,0 +1,390 @@
+{
+  "all_positive": true,
+  "complete_C117_action": false,
+  "direct_Fock_validation": {
+    "maximum_residual": 0.0,
+    "pass": true,
+    "root": "24c8ec531b1d2d2167666980d31daee7f8d283757f6098ff0fd98c7ccad26e87",
+    "rows": [
+      {
+        "intermediate_mode": "3/2",
+        "residual": 0.0,
+        "source_mode": "1/2",
+        "species": "QUARK"
+      },
+      {
+        "intermediate_mode": "5/2",
+        "residual": 0.0,
+        "source_mode": "1/2",
+        "species": "QUARK"
+      },
+      {
+        "intermediate_mode": "1/2",
+        "residual": 0.0,
+        "source_mode": "3/2",
+        "species": "QUARK"
+      },
+      {
+        "intermediate_mode": "5/2",
+        "residual": 0.0,
+        "source_mode": "3/2",
+        "species": "QUARK"
+      },
+      {
+        "intermediate_mode": "1/2",
+        "residual": 0.0,
+        "source_mode": "5/2",
+        "species": "QUARK"
+      },
+      {
+        "intermediate_mode": "3/2",
+        "residual": 0.0,
+        "source_mode": "5/2",
+        "species": "QUARK"
+      },
+      {
+        "intermediate_mode": "2",
+        "residual": 0.0,
+        "source_mode": "1",
+        "species": "GLUON"
+      },
+      {
+        "intermediate_mode": "3",
+        "residual": 0.0,
+        "source_mode": "1",
+        "species": "GLUON"
+      },
+      {
+        "intermediate_mode": "1",
+        "residual": 0.0,
+        "source_mode": "2",
+        "species": "GLUON"
+      },
+      {
+        "intermediate_mode": "3",
+        "residual": 0.0,
+        "source_mode": "2",
+        "species": "GLUON"
+      },
+      {
+        "intermediate_mode": "1",
+        "residual": 0.0,
+        "source_mode": "3",
+        "species": "GLUON"
+      },
+      {
+        "intermediate_mode": "2",
+        "residual": 0.0,
+        "source_mode": "3",
+        "species": "GLUON"
+      }
+    ],
+    "schema": "C407-SAME-SPECIES-DIRECT-FOCK-CONTRACTION-VALIDATION-V1",
+    "status": "C407_C117_I2_SAME_SPECIES_LONGITUDINAL_DESCENDANTS_AND_CALLER_CONDITIONED_JQJQ_QG_COMPOSITION_READY_GRAPH_WEIGHTS_AND_JGJG_TRANSVERSE_DESCENDANT_UNRESOLVED"
+  },
+  "maximum_sparse_matrix_free_residual": 0.0,
+  "minimum_weight": 1.8981481481481481,
+  "pass": true,
+  "root": "fe08396971e866d995528a9c20cfaa2385fc2a45c80e8d5dc143b63c317ef548",
+  "rows": [
+    {
+      "diagonal": [
+        {
+          "denominator": 108,
+          "exact": "205/108",
+          "float": 1.8981481481481481,
+          "numerator": 205
+        }
+      ],
+      "dimension": 1,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 1.8981481481481481,
+      "resolution": "K9",
+      "sector": "q->q",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "QUARK"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 27,
+          "exact": "85/27",
+          "float": 3.1481481481481484,
+          "numerator": 85
+        },
+        {
+          "denominator": 3,
+          "exact": "10/3",
+          "float": 3.3333333333333335,
+          "numerator": 10
+        },
+        {
+          "denominator": 27,
+          "exact": "85/27",
+          "float": 3.1481481481481484,
+          "numerator": 85
+        },
+        {
+          "denominator": 108,
+          "exact": "205/108",
+          "float": 1.8981481481481481,
+          "numerator": 205
+        }
+      ],
+      "dimension": 4,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 1.8981481481481481,
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "QUARK"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 48,
+          "exact": "235/48",
+          "float": 4.895833333333333,
+          "numerator": 235
+        },
+        {
+          "denominator": 32,
+          "exact": "235/32",
+          "float": 7.34375,
+          "numerator": 235
+        },
+        {
+          "denominator": 16,
+          "exact": "115/16",
+          "float": 7.1875,
+          "numerator": 115
+        },
+        {
+          "denominator": 96,
+          "exact": "425/96",
+          "float": 4.427083333333333,
+          "numerator": 425
+        }
+      ],
+      "dimension": 4,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 4.427083333333333,
+      "resolution": "K9",
+      "sector": "qg->qg",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "GLUON"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 2700,
+          "exact": "5269/2700",
+          "float": 1.9514814814814814,
+          "numerator": 5269
+        }
+      ],
+      "dimension": 1,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 1.9514814814814814,
+      "resolution": "K11",
+      "sector": "q->q",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "QUARK"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 108,
+          "exact": "349/108",
+          "float": 3.2314814814814814,
+          "numerator": 349
+        },
+        {
+          "denominator": 27,
+          "exact": "94/27",
+          "float": 3.4814814814814814,
+          "numerator": 94
+        },
+        {
+          "denominator": 27,
+          "exact": "94/27",
+          "float": 3.4814814814814814,
+          "numerator": 94
+        },
+        {
+          "denominator": 108,
+          "exact": "349/108",
+          "float": 3.2314814814814814,
+          "numerator": 349
+        },
+        {
+          "denominator": 2700,
+          "exact": "5269/2700",
+          "float": 1.9514814814814814,
+          "numerator": 5269
+        }
+      ],
+      "dimension": 5,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 1.9514814814814814,
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "QUARK"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 30,
+          "exact": "157/30",
+          "float": 5.233333333333333,
+          "numerator": 157
+        },
+        {
+          "denominator": 480,
+          "exact": "3721/480",
+          "float": 7.752083333333333,
+          "numerator": 3721
+        },
+        {
+          "denominator": 80,
+          "exact": "639/80",
+          "float": 7.9875,
+          "numerator": 639
+        },
+        {
+          "denominator": 480,
+          "exact": "3583/480",
+          "float": 7.464583333333334,
+          "numerator": 3583
+        },
+        {
+          "denominator": 12,
+          "exact": "55/12",
+          "float": 4.583333333333333,
+          "numerator": 55
+        }
+      ],
+      "dimension": 5,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 4.583333333333333,
+      "resolution": "K11",
+      "sector": "qg->qg",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "GLUON"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 2700,
+          "exact": "5369/2700",
+          "float": 1.9885185185185186,
+          "numerator": 5369
+        }
+      ],
+      "dimension": 1,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 1.9885185185185186,
+      "resolution": "K13",
+      "sector": "q->q",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "QUARK"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 2700,
+          "exact": "8869/2700",
+          "float": 3.2848148148148146,
+          "numerator": 8869
+        },
+        {
+          "denominator": 108,
+          "exact": "385/108",
+          "float": 3.564814814814815,
+          "numerator": 385
+        },
+        {
+          "denominator": 27,
+          "exact": "98/27",
+          "float": 3.6296296296296298,
+          "numerator": 98
+        },
+        {
+          "denominator": 108,
+          "exact": "385/108",
+          "float": 3.564814814814815,
+          "numerator": 385
+        },
+        {
+          "denominator": 2700,
+          "exact": "8869/2700",
+          "float": 3.2848148148148146,
+          "numerator": 8869
+        },
+        {
+          "denominator": 2700,
+          "exact": "5369/2700",
+          "float": 1.9885185185185186,
+          "numerator": 5369
+        }
+      ],
+      "dimension": 6,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 1.9885185185185186,
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "QUARK"
+    },
+    {
+      "diagonal": [
+        {
+          "denominator": 600,
+          "exact": "3287/600",
+          "float": 5.4783333333333335,
+          "numerator": 3287
+        },
+        {
+          "denominator": 480,
+          "exact": "3841/480",
+          "float": 8.002083333333333,
+          "numerator": 3841
+        },
+        {
+          "denominator": 80,
+          "exact": "669/80",
+          "float": 8.3625,
+          "numerator": 669
+        },
+        {
+          "denominator": 240,
+          "exact": "1979/240",
+          "float": 8.245833333333334,
+          "numerator": 1979
+        },
+        {
+          "denominator": 120,
+          "exact": "913/120",
+          "float": 7.608333333333333,
+          "numerator": 913
+        },
+        {
+          "denominator": 800,
+          "exact": "3741/800",
+          "float": 4.67625,
+          "numerator": 3741
+        }
+      ],
+      "dimension": 6,
+      "hermiticity_residual": 0.0,
+      "minimum_eigenvalue": 4.67625,
+      "resolution": "K13",
+      "sector": "qg->qg",
+      "sparse_matrix_free_residual": 0.0,
+      "species": "GLUON"
+    }
+  ],
+  "schema": "C407-SAME-SPECIES-LONGITUDINAL-VALIDATION-V1",
+  "status": "C407_C117_I2_SAME_SPECIES_LONGITUDINAL_DESCENDANTS_AND_CALLER_CONDITIONED_JQJQ_QG_COMPOSITION_READY_GRAPH_WEIGHTS_AND_JGJG_TRANSVERSE_DESCENDANT_UNRESOLVED"
+}

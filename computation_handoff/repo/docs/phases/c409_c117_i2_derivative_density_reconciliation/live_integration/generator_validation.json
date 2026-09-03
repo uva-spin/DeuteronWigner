@@ -1,0 +1,19 @@
+{
+  "schema": "C409-LIVE-INTEGRATION-GENERATOR-VALIDATION-V1",
+  "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 tools/generate_c409_c117_i2_derivative_density_reconciliation.py",
+  "exit_code": 0,
+  "live_generation_root": "docs/phases/c409_c117_i2_derivative_density_reconciliation",
+  "static_input_count": 10,
+  "two_clean_builds": {"passed":true,"files_compared":25,"all_byte_identical":true},
+  "source_hash_rows": 14,
+  "derivative_reconstruction_rows": 62,
+  "source_routed_J_gJ_g_qg_paths": 3,
+  "source_routed_product_block_primitive_paths": 12,
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "physical_fit_authorized": false,
+  "activation_gate_status": "NOT_READY",
+  "source_hash_audit_pass": true,
+  "generation_result_root": "5e1162907cfd7c2888efb5e0ca15d51e8c0c8909d8c0b91681f62d7e207bdcb7"
+}

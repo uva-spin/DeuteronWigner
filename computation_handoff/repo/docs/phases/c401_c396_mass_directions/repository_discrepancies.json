@@ -1,0 +1,36 @@
+{
+  "schema": "C401-LIVE-REPOSITORY-DISCREPANCIES-V1",
+  "intended_C401_paths_preexisting": false,
+  "intended_C401_source_files_byte_identical_to_replacement": true,
+  "historical_C128_modified": false,
+  "git_metadata_boundary": {
+    "scientific_blocker": false,
+    "staging_attempted": true,
+    "commit_created": false,
+    "exact_error": "fatal: Unable to create '/Users/dustin/work/DeuteronWigner/.git/worktrees/c401_c396_mass_directions/index.lock': Operation not permitted"
+  },
+  "discrepancies": [
+    {
+      "classification": "pre-existing dependency data missing",
+      "affected_tests": "tests/test_c43_g0_contracts.py",
+      "observed": "64 parametrized mutation tests plus one symbolic contract test fail while reading missing C43 source files",
+      "missing_paths": ["data/raw/c43_sources/hep-ph-9705477v1.pdf", "data/raw/c43_sources/hep-ph-9705477v1.tar.gz"],
+      "C401_regression": false
+    },
+    {
+      "classification": "pre-existing dependency data missing",
+      "affected_tests": "tests/test_c112_iferm3.py",
+      "observed": "two tests fail while reading missing historical C53/C104 runtime artifacts",
+      "missing_paths": ["data/runtime/c53_vertex2/physical_diagnostic_m2_K9_2_N8_b0.40.npy", "data/runtime/c104_ifpersist4/programs.jsonl.gz"],
+      "C401_regression": false
+    },
+    {
+      "classification": "source metadata conflict retained by design",
+      "affected_area": "C396 b_HO metadata",
+      "observed": "C47 owns b_GeV while C396 names bHO_GeVinv",
+      "resolution": "recorded without reinterpretation; mass directions do not depend on b_HO",
+      "C401_regression": false
+    }
+  ],
+  "dependency_run_summary": "67 failed, 65 passed; failures are outside the C401 focused suite and attributable to absent repository data/runtime artifacts"
+}

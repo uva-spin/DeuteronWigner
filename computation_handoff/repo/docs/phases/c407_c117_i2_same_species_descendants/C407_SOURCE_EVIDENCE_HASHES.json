@@ -1,0 +1,93 @@
+{
+  "all_pass": true,
+  "root": "9688a846a3ce29483b4d23d509967db968f88c5264bc7711d991f3a8817029a4",
+  "row_count": 12,
+  "rows": [
+    {
+      "owner": "C45",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/modes/core.py",
+      "required_snippets_verified": 0,
+      "sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7"
+    },
+    {
+      "owner": "C47",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/basis1/core.py",
+      "required_snippets_verified": 0,
+      "sha256": "4fde22f0ddcc3b098a3b7a0458b07fa956dc74121e44c2549d0072bd428c65bb"
+    },
+    {
+      "owner": "C114",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/icurrent/core.py",
+      "required_snippets_verified": 2,
+      "sha256": "a9a972db4cbf098f1e5342cefaee2692a1e2ad78ba9e11659ec1cc92ae815688"
+    },
+    {
+      "owner": "C115",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/icho/core.py",
+      "required_snippets_verified": 3,
+      "sha256": "b912ca76b840b0e3cc8bb4ba6a9d291e6c0e4230d2148505b9006885bceff7cb"
+    },
+    {
+      "owner": "C117",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/icreg2/core.py",
+      "required_snippets_verified": 2,
+      "sha256": "bd44d3cc3da0a3b864557bf5032ce9107de2e969cb0568afb4ea3987c4987fc0"
+    },
+    {
+      "owner": "C119",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/icnorm3/core.py",
+      "required_snippets_verified": 2,
+      "sha256": "e4f8ade1629caac07e09ad55b7122d06b14bc6d08e584e40bd9e5731865aa0b9"
+    },
+    {
+      "owner": "C125",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/icdomain2/core.py",
+      "required_snippets_verified": 1,
+      "sha256": "8daab3d2ca2ba6f0d11f43967fcccc43c8030ca03f1f5142a515a7c98e4cbac8"
+    },
+    {
+      "owner": "C403",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/spatial.py",
+      "required_snippets_verified": 0,
+      "sha256": "6f273b25589795b025a42095aa60b1e96aac3c9bf19f9e67e0393a25c390722a"
+    },
+    {
+      "owner": "C404_LONG",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive/longitudinal.py",
+      "required_snippets_verified": 0,
+      "sha256": "1419b4d2474a8c4ac49533b94f1e82ecb43b0d678faea84992fd959baba11645"
+    },
+    {
+      "owner": "C404_COLOR",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive/color_spin.py",
+      "required_snippets_verified": 0,
+      "sha256": "1d6779e87780faedf51fb58a1b9622bb6b9a61a24f28d09fd4de0e2b6ffffa25"
+    },
+    {
+      "owner": "C406_NORMAL",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/c406_c117_i2_gluon_normal_order_descendant/normal_order.py",
+      "required_snippets_verified": 2,
+      "sha256": "88ecfcb476bc69200d516d4ba45312923720b3f32accf7b305fe2c2f9f6c1bc9"
+    },
+    {
+      "owner": "C406_ROUTING",
+      "pass": true,
+      "path": "src/deuteron_wigner/bridge/c406_c117_i2_gluon_normal_order_descendant/routing.py",
+      "required_snippets_verified": 0,
+      "sha256": "3629c3fd730b0edccded82240e75549bf42a273d2f548b2324c283b4ba712629"
+    }
+  ],
+  "schema": "C407-SOURCE-HASH-AUDIT-V1",
+  "status": "C407_C117_I2_SAME_SPECIES_LONGITUDINAL_DESCENDANTS_AND_CALLER_CONDITIONED_JQJQ_QG_COMPOSITION_READY_GRAPH_WEIGHTS_AND_JGJG_TRANSVERSE_DESCENDANT_UNRESOLVED"
+}

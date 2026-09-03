@@ -1,0 +1,42 @@
+{
+  "schema": "C404-C117-I2-LONGITUDINAL-COLOR-ACCEPTANCE-V1",
+  "accepted_local_baseline": "bd568280de5fb2846b4ec5cdaff36e7ec973b8f1",
+  "required_status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE",
+  "required_invariants": {
+    "partition_counts": {"K9": 4, "K11": 5, "K13": 6},
+    "qg_dimensions": {"K9": 1344, "K11": 2700, "K13": 4752},
+    "Q0_diagonal_exact_zero": true,
+    "transfer_matrix_symmetric": true,
+    "triplet_color_scalars": {
+      "J_qJ_q": "4/3",
+      "J_qJ_g": "-3/2",
+      "J_gJ_q": "-3/2",
+      "J_gJ_g": "3"
+    },
+    "triplet_total_Casimir": "4/3",
+    "C47_ordering_verified": true,
+    "source_qualified_product_topology": false,
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "physical_fit_authorized": false,
+    "activation_gate_status": "NOT_READY"
+  },
+  "required_tests": {
+    "C404_focused": 15,
+    "C403_regression": 16,
+    "C401_regression": 14,
+    "C400_S2_regression": 26,
+    "C114_C115_C119_source_regression": "all selected tests pass"
+  },
+  "forbidden_claims": [
+    "complete C117 I2 operator",
+    "source-qualified product topology",
+    "selected c_C117_1 coefficient",
+    "selected physical coupling",
+    "q-sector contraction equals zero",
+    "physical response rank",
+    "physical fit",
+    "activation"
+  ]
+}

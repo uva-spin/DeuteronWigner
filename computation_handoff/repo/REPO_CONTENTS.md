@@ -1,12 +1,19 @@
 # DeuteronWigner computation repository snapshot
 
-This directory is a public, reproducible snapshot assembled from the local
-`/Users/dustin/work/DeuteronWigner` checkout and its companion
-`/Users/dustin/work/DeuteronWigner-yolo` controller workspace on 2026-08-28.
+This directory is a public, reproducible continuation snapshot assembled from
+the canonical `/Users/dustin/work/DeuteronWigner` checkout. The current source
+commit is recorded in `CURRENT_SOURCE_COMMIT.txt`; the C401-C410 continuation
+summary is in `C401_C410_REPOSITORY_HANDOFF.md`.
+
+The historical archive material in this snapshot was originally assembled on
+2026-08-28. The live continuation tree is maintained against accepted `main`
+commits and must be refreshed after each accepted phase or material scientific
+commit.
 
 ## Contents
 
-- The project source tree at local `main` commit `df125f2d`.
+- The project source tree at the accepted source commit recorded in
+  `CURRENT_SOURCE_COMMIT.txt`.
 - The current tracked working-tree state plus the explicitly present
   untracked code, tests, reports, and documentation from the root checkout.
 - Clean source snapshots of `q0/plhqcd0`, `q1/plhqcdstate`, and

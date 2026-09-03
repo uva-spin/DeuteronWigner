@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "record_type": "C401_FIRST_NUMERICAL_OPERATOR_ACCEPTANCE",
+  "scope": "source-faithful quark/gluon mass-squared operator directions with historical C128 partition defect isolated",
+  "required_resolutions": ["K9", "K11", "K13"],
+  "required_operators": ["D_mu_q_sq", "D_delta_mu_g_sq"],
+  "authoritative_fraction_source": "C45/C47 exact positive-mode partitions",
+  "authoritative_dimension_source": "C128/C112 q followed by qg direct-sum dimensions",
+  "historical_C128_numeric_free_operator_accepted_as_fraction_authority": false,
+  "required_tests": [
+    "C47 exact qg fractions are positive and sum exactly to one",
+    "C128 q/qg direct-sum dimensions and partition-major block boundaries match",
+    "q-sector values are exactly 1 and 0",
+    "qg-sector values are exactly 1/x_q and 1/x_g",
+    "serialized COO, SciPy CSR, SciPy LinearOperator, and independent matrix-free routes agree",
+    "operators are Hermitian",
+    "finite differences of the independent C43/C47 source mass functional agree at multiple steps",
+    "historical C128 quark-fraction and quark-derivative defects are exposed",
+    "historical C128 gluon-mass derivative agrees at material tolerance",
+    "no C144 diagnostic entry-value rule is imported",
+    "no vacuum, boundary, or truncation fake matrix is created",
+    "no physical parameter value is selected"
+  ],
+  "required_outputs": [
+    "operator source and basis provenance",
+    "exact partition ledger",
+    "sparse and matrix-free operator inventory",
+    "finite-difference validation",
+    "historical C128 defect and derivative comparison",
+    "C396 57-row binding overlay",
+    "scientific nonclaims"
+  ],
+  "success_status": "C396_FIRST_SIX_K_LOCAL_NUMERICAL_BINDINGS_READY_DIAGNOSTIC_ONLY",
+  "rank_status_after_success": "RANK_NOT_EVALUATED",
+  "physical_fit_authorized_after_success": false,
+  "activation_after_success": false
+}

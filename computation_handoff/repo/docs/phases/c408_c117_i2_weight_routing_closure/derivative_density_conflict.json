@@ -1,0 +1,17 @@
+{
+  "complete_C117_action": false,
+  "facts": [
+    "C119 gluon_current already contains pi*k_c/L",
+    "C119 also lists a derivative_or_helicity pi*k_c/L leaf",
+    "C124 derivative_density assigns pi*k/L as the member multiplier",
+    "C406/C407 source-derived gluon descendants already contain both current momenta"
+  ],
+  "numerical_derivative_density_action": null,
+  "product": "J_gJ_g:qg->qg",
+  "risk": "multiplying all historical derivative leaves would over-count ordered derivatives",
+  "root": "d6a9659e83c84f2219be9effeb141ba8f4b85ed8d30974154857a7e12d297c6d",
+  "schema": "C408-DERIVATIVE-DENSITY-COUNT-CONFLICT-V1",
+  "smallest_missing_object": "one source-qualified product-level derivative-count and normalization descendant reconciling C119, C124/C126 and C406/C407",
+  "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE",
+  "unavailable_not_zero": true
+}

@@ -1,7 +1,9 @@
 # Computation Handoff Index
 
-Generated 2026-08-28 to support independent technical review and continued
-development of the DeuteronWigner project.
+Generated 2026-09-02 to support independent technical review and continued
+development. The live continuation tree is
+<https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
+Its `CURRENT_SOURCE_COMMIT.txt` must identify the accepted `main` commit.
 
 ## Recommended reading order
 
@@ -18,6 +20,8 @@ development of the DeuteronWigner project.
    scientific provenance details.
 7. `docs/next_level/` — machine-readable contracts, manifests, audits,
    implementation reports, prompts, and validation evidence.
+8. `C401_C410_REPOSITORY_HANDOFF.md` — current C401-C410 scientific,
+   numerical-frontier, normalization, and continuation handoff.
 
 ## Archive scope
 
@@ -37,10 +41,16 @@ The archive contains:
   no backend source outside its local virtual environment);
 - this index and the root `Deuteron_GTMD.pdf` project document.
 
-The root checkout is on branch `main` at commit
-`6ef9827e` (`C399 certify missing physical target authority`) with remote
+The current accepted root checkout is on branch `main` at commit
+`51d3919e4660f5709cc7bb94c576c8ec17c9de14` (`Merge C410 C117 I2 retained
+aggregation boundary`) with remote
 `https://github.com/uva-spin/DeuteronWigner.git`. The archive captures the
 working tree as found; it does not imply that the working tree was clean.
+
+After every accepted commit on `main`, refresh the published tree, update its
+source-commit marker and handoff evidence, refresh contents/checksum manifests
+when needed, verify, commit, and push. A stale marker means the public handoff
+is not current.
 
 ## Deliberate exclusions
 

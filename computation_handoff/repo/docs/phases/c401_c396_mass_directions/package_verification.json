@@ -1,0 +1,20 @@
+{
+  "schema": "C401-LIVE-PACKAGE-VERIFICATION-V1",
+  "package_root": "/Users/dustin/Downloads/deuteronwigner_c401_first_numerical_c396_mass_directions_package",
+  "command": "python3 \"$C401_PACKAGE_ROOT/verify_package.py\" \"$C401_PACKAGE_ROOT\"",
+  "exit_code": 0,
+  "stdout": {
+    "errors": [],
+    "files_verified": 60,
+    "package_id": "DEUTERONWIGNER-C401-FIRST-NUMERICAL-C396-MASS-DIRECTIONS-V1",
+    "pass": true,
+    "patch_sha256": "df20da4c05555eadbec5246ce91f9b21d0a53b50673b566bee54dc6d2b0c2f3b",
+    "unlisted_files": []
+  },
+  "package_manifest_sha256": "6f79840f585da38e238009474712a990ef7368e7433fe3c8afbc2383bdd04d0e",
+  "package_info_patch_sha256": "df20da4c05555eadbec5246ce91f9b21d0a53b50673b566bee54dc6d2b0c2f3b",
+  "actual_patch_sha256": "df20da4c05555eadbec5246ce91f9b21d0a53b50673b566bee54dc6d2b0c2f3b",
+  "patch_hash_match": true,
+  "accepted_baseline": "ada80920fb51617333c9b87a40d6538a0b0de915",
+  "baseline_present_locally": true
+}

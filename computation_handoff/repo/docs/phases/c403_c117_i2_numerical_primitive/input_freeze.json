@@ -1,0 +1,71 @@
+{
+  "C64_runtime_required": false,
+  "C80_reused": false,
+  "accepted_local_baseline": "fce8842e5ddc6660c735b7f69723f63c9bff7073",
+  "governing_science_locks": [
+    "C402_CT_SECTOR_AND_C117_FRONTIER_SCIENCE_LOCK",
+    "C402_C117_NUMERICAL_READINESS_AUDIT",
+    "C402_NEXT_NUMERICAL_FRONTIER"
+  ],
+  "historical_files_modified": false,
+  "root": "c678d40beca6e7d0e9bb452e2f7f782d9f377f381376f27aef3dbd1f0d9ee217",
+  "schema": "C403-C117-I2-INPUT-FREEZE-V1",
+  "source_files": [
+    {
+      "bytes": 18622,
+      "path": "src/deuteron_wigner/bridge/modes/core.py",
+      "sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7"
+    },
+    {
+      "bytes": 14812,
+      "path": "src/deuteron_wigner/bridge/basis1/core.py",
+      "sha256": "4fde22f0ddcc3b098a3b7a0458b07fa956dc74121e44c2549d0072bd428c65bb"
+    },
+    {
+      "bytes": 11167,
+      "path": "src/deuteron_wigner/bridge/qgtm/core.py",
+      "sha256": "86a90861dec9aed019faf45042e90cb19a1617bf0b8abccf7f0212f8941d5193"
+    },
+    {
+      "bytes": 15517,
+      "path": "src/deuteron_wigner/bridge/icurrent/core.py",
+      "sha256": "a9a972db4cbf098f1e5342cefaee2692a1e2ad78ba9e11659ec1cc92ae815688"
+    },
+    {
+      "bytes": 10894,
+      "path": "src/deuteron_wigner/bridge/icho/core.py",
+      "sha256": "b912ca76b840b0e3cc8bb4ba6a9d291e6c0e4230d2148505b9006885bceff7cb"
+    },
+    {
+      "bytes": 10797,
+      "path": "src/deuteron_wigner/bridge/icho2/core.py",
+      "sha256": "79588b4050bb243b0bed2e42399447d456d8633079e5830b95931855b3965d10"
+    },
+    {
+      "bytes": 10619,
+      "path": "src/deuteron_wigner/bridge/icreg2/core.py",
+      "sha256": "bd44d3cc3da0a3b864557bf5032ce9107de2e969cb0568afb4ea3987c4987fc0"
+    },
+    {
+      "bytes": 21273,
+      "path": "src/deuteron_wigner/bridge/icmembers/core.py",
+      "sha256": "e10176332daec337e26efd649fc6abda379763b5fb9cbb9d66992e90199535c1"
+    },
+    {
+      "bytes": 8806,
+      "path": "src/deuteron_wigner/bridge/icnorm3/core.py",
+      "sha256": "e4f8ade1629caac07e09ad55b7122d06b14bc6d08e584e40bd9e5731865aa0b9"
+    },
+    {
+      "bytes": 8230,
+      "path": "src/deuteron_wigner/bridge/c401_c396_mass_directions/bindings.py",
+      "sha256": "e3d07d10656e454f7f3eeed3e075d6122415f5d1690fba1e02a551ec40a14695"
+    },
+    {
+      "bytes": 737,
+      "path": "docs/phases/c401_c396_mass_directions/release.json",
+      "sha256": "9f3b2b344f5b124aeca01288c487d750014b086b2ca658c69bb54747cc4980ef"
+    }
+  ],
+  "status": "C403_C117_I2_FINITE_AXIS_AND_SPATIAL_KERNEL_NUMERICAL_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+}
