@@ -1,0 +1,144 @@
+{
+  "J_gJ_g_number_preserving_qg_product_block_ready": true,
+  "J_gJ_g_q_sector_complete": false,
+  "activation_gate_status": "NOT_READY",
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "derivative_count_authority": {
+    "C119_extra_derivative_leaf_independent_on_C406_C407_route": false,
+    "C124_C126_derivative_density_pi_k_over_L_independent_on_C406_C407_route": false,
+    "C406_descendant_derivatives_per_gluon_current": 1,
+    "C407_current_pair_derivatives": 2,
+    "J_gJ_g_exact_source_derivative_count": 2,
+    "complete_C117_action": false,
+    "generic_C124_derivative_density_replaced_globally": false,
+    "historical_owners_modified": false,
+    "products": [
+      {
+        "C409_route": "C408_SOURCE_ROUTED_EXISTING_PRIMITIVE",
+        "product": "J_qJ_q",
+        "source_gluon_current_count": 0,
+        "source_longitudinal_derivative_count": 0
+      },
+      {
+        "C409_route": "C406_FULL_ONE_GLUON_CURRENT_DESCENDANT",
+        "product": "J_qJ_g",
+        "source_gluon_current_count": 1,
+        "source_longitudinal_derivative_count": 1
+      },
+      {
+        "C409_route": "C406_FULL_ONE_GLUON_CURRENT_DESCENDANT",
+        "product": "J_gJ_q",
+        "source_gluon_current_count": 1,
+        "source_longitudinal_derivative_count": 1
+      },
+      {
+        "C409_route": "C407_PRODUCT_OF_TWO_C406_CURRENT_DESCENDANTS",
+        "product": "J_gJ_g",
+        "source_gluon_current_count": 2,
+        "source_longitudinal_derivative_count": 2
+      }
+    ],
+    "reconciliation_rule": "On the reduced number-preserving J_gJ_g route, use the product of the two full C406 one-gluon current descendants exactly once; do not multiply a second derivative leaf or derivative-density pi*k/L member factor.",
+    "root": "a677824815333aa6829e027ec6866944dbf4c29b8ff8755f18729282a36cff11",
+    "schema": "C409-C117-I2-DERIVATIVE-COUNT-AUTHORITY-V1",
+    "source_gluon_current": "J_g^+=-f A_perp partial^+ A_perp",
+    "source_operator": "P^-_IC=-(g_s^2/2) integral [Q0(i partial+)^-1 j_a^+] [Q0(i partial+)^-1 j_a^+]",
+    "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE"
+  },
+  "derivative_count_validation_pass": true,
+  "full_C117_I2_action_ready": false,
+  "full_C396_forward_map_ready": false,
+  "physical_fit_authorized": false,
+  "rank_status": "RANK_NOT_EVALUATED",
+  "reduced_transverse_authority": {
+    "C124_generic_derivative_density_semantics_mutated": false,
+    "C408_unit_I2_member_sum_reused": true,
+    "color_C_A_applied_again": false,
+    "complete_C117_action": false,
+    "derivative_action": "The C192 partial-plus derivatives act on longitudinal plane-wave phases; their complete number-preserving one-gluon matrix elements are already contained in the C406/C407 longitudinal descendant.",
+    "member_multiplier": 1,
+    "member_multiplier_scope": "C409 reduced number-preserving J_gJ_g route only, after the two source derivatives and C_A have been evaluated in the C407 longitudinal factor",
+    "physical_coefficient_selected": false,
+    "product": "J_gJ_g:qg->qg",
+    "reduced_spatial_kernel": "sum over the admitted C403 transverse density members with the exact route-specific residual multiplier one",
+    "root": "dd6ad19c4f38ae87e18cd20a7ea0fb509797384514692d9bd354692d6854d98d",
+    "schema": "C409-C117-I2-REDUCED-DERIVATIVE-DENSITY-TRANSVERSE-AUTHORITY-V1",
+    "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE",
+    "transverse_derivative_applied_again": false
+  },
+  "root": "a3ca0bdf0db6acedda12583a28b200f3447a4bcbe7ee3fa2b45a381eea443289",
+  "scale_power_reconciliation": {
+    "adding_C119_derivative_leaf_would_give": {
+      "L_power": -1,
+      "pi_power": 1
+    },
+    "adding_C124_derivative_density_factor_would_give": {
+      "L_power": -1,
+      "pi_power": 1
+    },
+    "adding_both_extra_factors_would_give": {
+      "L_power": -2,
+      "pi_power": 2
+    },
+    "complete_product_normalization": false,
+    "dimensionless_longitudinal_subset": true,
+    "extra_factors_admitted": false,
+    "net_L_power": 0,
+    "net_pi_power": 0,
+    "root": "4dc64267db3078515b992c1e59120df5e225719a3dcee1598fe6db4312e5f322",
+    "rows": [
+      {
+        "L_power": 2,
+        "derivative_count": 0,
+        "factor": "C114 inverse-square kernel",
+        "pi_power": -2
+      },
+      {
+        "L_power": -1,
+        "derivative_count": 1,
+        "factor": "first C192/C406 gluon current",
+        "pi_power": 1
+      },
+      {
+        "L_power": -1,
+        "derivative_count": 1,
+        "factor": "second C192/C406 gluon current",
+        "pi_power": 1
+      }
+    ],
+    "schema": "C409-C117-I2-JGJG-SCALE-POWER-RECONCILIATION-V1",
+    "source_derivative_count": 2,
+    "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE"
+  },
+  "schema": "C409-C117-I2-COMPLETION-RECORD-V1",
+  "scientific_boundary": {
+    "activation_gate_status": "NOT_READY",
+    "closed": [
+      "exactly two source longitudinal derivatives in J_gJ_g",
+      "C119/C124/C126 extra derivative factors excluded on the C406/C407 reduced route",
+      "exact inverse-square/derivative L and pi power cancellation",
+      "reduced number-preserving qg derivative-density transverse member sum",
+      "source-routed sparse and matrix-free J_gJ_g:qg->qg product-block primitive",
+      "single-counted C_A color Casimir"
+    ],
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "open": [
+      "J_gJ_g q-sector number-changing pair and vacuum branches",
+      "route-reconciled finite-cell, field, external-state and M2 normalization",
+      "complete target count-once aggregation across product blocks",
+      "g_s^2 and c_C117_1 values"
+    ],
+    "physical_fit_authorized": false,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "root": "ed0c46439172c0076aa7e490b9e892f214cf9141d73552284a50fe17cc2b86d1",
+    "schema": "C409-SCIENTIFIC-BOUNDARY-V1",
+    "source_routed_product_block_primitive_paths": 12,
+    "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE"
+  },
+  "smallest_missing_object": "J_gJ_g q-sector number-changing pair/vacuum descendants; route-reconciled finite-cell, field, external-state and M2 normalization for all four current products; complete target count-once aggregation; g_s^2 and c_C117_1",
+  "source_hash_audit_pass": true,
+  "source_routed_product_block_primitive_paths": 12,
+  "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE"
+}

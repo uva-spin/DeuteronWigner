@@ -1,0 +1,108 @@
+{
+  "C117_coefficient_selected": false,
+  "C144_proxy_used": false,
+  "accepted_local_baseline": "6e7601881256d17fe14767d203cb4742143051c2",
+  "historical_files_modified": false,
+  "normal_ordering_descendant_invented": false,
+  "q_sector_diagonal_block_zero_filled": false,
+  "root": "e4f1481c8f4a71adf2099307359b3dccd8b357bad4d30f3674c99e725c5eee12",
+  "schema": "C405-C117-I2-CURRENT-TOPOLOGY-EMBEDDING-INPUT-FREEZE-V1",
+  "source_files": [
+    {
+      "bytes": 15517,
+      "path": "src/deuteron_wigner/bridge/icurrent/core.py",
+      "sha256": "a9a972db4cbf098f1e5342cefaee2692a1e2ad78ba9e11659ec1cc92ae815688"
+    },
+    {
+      "bytes": 10894,
+      "path": "src/deuteron_wigner/bridge/icho/core.py",
+      "sha256": "b912ca76b840b0e3cc8bb4ba6a9d291e6c0e4230d2148505b9006885bceff7cb"
+    },
+    {
+      "bytes": 10619,
+      "path": "src/deuteron_wigner/bridge/icreg2/core.py",
+      "sha256": "bd44d3cc3da0a3b864557bf5032ce9107de2e969cb0568afb4ea3987c4987fc0"
+    },
+    {
+      "bytes": 8806,
+      "path": "src/deuteron_wigner/bridge/icnorm3/core.py",
+      "sha256": "e4f8ade1629caac07e09ad55b7122d06b14bc6d08e584e40bd9e5731865aa0b9"
+    },
+    {
+      "bytes": 21273,
+      "path": "src/deuteron_wigner/bridge/icmembers/core.py",
+      "sha256": "e10176332daec337e26efd649fc6abda379763b5fb9cbb9d66992e90199535c1"
+    },
+    {
+      "bytes": 27226,
+      "path": "src/deuteron_wigner/bridge/icdomain2/core.py",
+      "sha256": "8daab3d2ca2ba6f0d11f43967fcccc43c8030ca03f1f5142a515a7c98e4cbac8"
+    },
+    {
+      "bytes": 20923,
+      "path": "src/deuteron_wigner/bridge/icsum3/core.py",
+      "sha256": "59d6daf4b229a6180ccc99933682ea9b62ad529d80705e5bddccdd3383d46557"
+    },
+    {
+      "bytes": 18029,
+      "path": "src/deuteron_wigner/bridge/icagg3/core.py",
+      "sha256": "632aa0e8a3a8935fbfae41dc1793c8583c50098d0135345c78fb11fb3765768f"
+    },
+    {
+      "bytes": 32524,
+      "path": "src/deuteron_wigner/bridge/hqcdb1qggsource2/core.py",
+      "sha256": "f88e1a11a9a7de7e9d801ea779e8707da3ba8be8df471508bd5307b3fa2c757c"
+    },
+    {
+      "bytes": 36261,
+      "path": "src/deuteron_wigner/bridge/hqcdb1qgggcurr1/core.py",
+      "sha256": "4f68826835715f5ef08a3e5e1f6a594610f9e0a99319701f6d35a89696cfbe73"
+    },
+    {
+      "bytes": 29960,
+      "path": "src/deuteron_wigner/bridge/hqcdb1qggcontact2/core.py",
+      "sha256": "9e00983334136695bebb6748388eba0576362bc55036fca5f5063c4447b2a2a4"
+    },
+    {
+      "bytes": 7353,
+      "path": "src/deuteron_wigner/bridge/hqcdriquarkfixedkv2currentmap1/core.py",
+      "sha256": "b12a509ae0bdb261c243eec2e368891e9a76281270d7cf051a38635a058c729e"
+    },
+    {
+      "bytes": 6227,
+      "path": "src/deuteron_wigner/bridge/hqcdriquarkfixedkv2currenteval1/core.py",
+      "sha256": "eb91ec69939d48029d4258366d888eaa6ea1b532ba7e0e95e7f6166c2f24fdc0"
+    },
+    {
+      "bytes": 12895,
+      "path": "src/deuteron_wigner/bridge/c401_c396_mass_directions/basis.py",
+      "sha256": "3e1b571eaa4ec6b80ec18ef99119154a90f2a737c96a118f25faab1e01cfcd79"
+    },
+    {
+      "bytes": 19122,
+      "path": "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/spatial.py",
+      "sha256": "6f273b25589795b025a42095aa60b1e96aac3c9bf19f9e67e0393a25c390722a"
+    },
+    {
+      "bytes": 11220,
+      "path": "src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive/longitudinal.py",
+      "sha256": "1419b4d2474a8c4ac49533b94f1e82ecb43b0d678faea84992fd959baba11645"
+    },
+    {
+      "bytes": 6524,
+      "path": "src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive/color_spin.py",
+      "sha256": "1d6779e87780faedf51fb58a1b9622bb6b9a61a24f28d09fd4de0e2b6ffffa25"
+    },
+    {
+      "bytes": 4946,
+      "path": "src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive/bindings.py",
+      "sha256": "5ae8bc4285bacc7ccb272f88ca45882fc7d03dda5b68af1b6381e3357361bccf"
+    },
+    {
+      "bytes": 784,
+      "path": "docs/phases/c404_c117_i2_longitudinal_color_primitive/release.json",
+      "sha256": "2a84f81307d0439164e6e3e6cec9fe1e21b63c97cd5f84dd6feeef0efa64a141"
+    }
+  ],
+  "status": "C405_C117_I2_CURRENT_ORDER_DERIVATIVE_FAMILY_AND_DIRECT_SUM_EMBEDDING_READY_PRODUCT_NORMAL_ORDERING_UNRESOLVED"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "C401-LIVE-GENERATOR-VALIDATION-V1",
+  "command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 tools/generate_c401_c396_mass_directions.py",
+  "exit_code": 0,
+  "package_root": "be289d62d632960e09dc17cba047ccb54121fdecda19b7091e9e0519960f7d04",
+  "validation_pass": true,
+  "invariants": {
+    "exact_K": ["9/2", "11/2", "13/2"],
+    "C47_fractions_positive_and_summing_exactly_one": true,
+    "C128_partition_major_dimensions_and_order_retained": true,
+    "historical_C128_quark_fraction_defect_exposed_at": ["K9", "K11", "K13"],
+    "complete_K_local_numerical_coordinate_operator_apply_paths": 6,
+    "C396_binding_rows": 57,
+    "full_C396_numerical_forward_map": false,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "physical_fit": "not authorized",
+    "activation": "NOT_READY",
+    "generation_result_self_excluded": true
+  },
+  "artifact_count_excluding_generation_result": 24
+}

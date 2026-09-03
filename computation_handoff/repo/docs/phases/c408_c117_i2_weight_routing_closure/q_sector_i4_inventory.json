@@ -1,0 +1,2920 @@
+{
+  "common_product_normalization_factored": true,
+  "complete_C117_action": false,
+  "expected_mode_counts": {
+    "K11": 55,
+    "K13": 78,
+    "K9": 36
+  },
+  "external_q_basis": "C123/C128 transverse ground; 2 helicities times 3 colors",
+  "intermediate_transverse_axis": "complete finite C45 one-particle HO shell",
+  "maximum_analytic_quadrature_abs_residual_GeV2": 1.1796119636642288e-16,
+  "pass": true,
+  "root": "b2789cc0936689865f9f7a6c94448def83c8476913236fac1e038d709853e8be",
+  "routing_authority_root": "c5639d3a9eeef3083b015836a14eb56890429e80aa7ebd51281381a690f77d89",
+  "row_count": 169,
+  "rows": [
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "1/256",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -7,
+        "n": 0,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00019894367886486925,
+      "quadrature_abs_residual_GeV2": 2.710505431213761e-20,
+      "resolution": "K9",
+      "value_GeV2": 0.00019894367886486922
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "1/128",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00039788735772973844,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.00039788735772973844
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -5,
+        "n": 0,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0007957747154594769,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.0007957747154594769
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "1/32",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -4,
+        "n": 0,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0015915494309189536,
+      "quadrature_abs_residual_GeV2": 2.168404344971009e-19,
+      "resolution": "K9",
+      "value_GeV2": 0.0015915494309189538
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "1/16",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -3,
+        "n": 0,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0031830988618379067,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K9",
+      "value_GeV2": 0.0031830988618379076
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -2,
+        "n": 0,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006366197723675815,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.006366197723675815
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -1,
+        "n": 0,
+        "shell": 1
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.01273239544735163,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.01273239544735163
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2,
+        "exact": "1/2",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 0,
+        "n": 0,
+        "shell": 0
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.025464790894703267,
+      "quadrature_abs_residual_GeV2": 6.938893903907228e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.02546479089470326
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 1,
+        "n": 0,
+        "shell": 1
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.01273239544735163,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.01273239544735163
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 2,
+        "n": 0,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006366197723675815,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.006366197723675815
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "1/16",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 3,
+        "n": 0,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0031830988618379067,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K9",
+      "value_GeV2": 0.0031830988618379076
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "1/32",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 4,
+        "n": 0,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0015915494309189536,
+      "quadrature_abs_residual_GeV2": 2.168404344971009e-19,
+      "resolution": "K9",
+      "value_GeV2": 0.0015915494309189538
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 5,
+        "n": 0,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0007957747154594769,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.0007957747154594769
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "1/128",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 6,
+        "n": 0,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00039788735772973844,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.00039788735772973844
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "1/256",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 7,
+        "n": 0,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00019894367886486925,
+      "quadrature_abs_residual_GeV2": 2.710505431213761e-20,
+      "resolution": "K9",
+      "value_GeV2": 0.00019894367886486922
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "7/256",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -5,
+        "n": 1,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0013926057520540856,
+      "quadrature_abs_residual_GeV2": 1.0842021724855044e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.0013926057520540845
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "3/64",
+        "numerator": 3
+      },
+      "mode": {
+        "m": -4,
+        "n": 1,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0023873241463784342,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.0023873241463784308
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "5/64",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -3,
+        "n": 1,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.003978873577297384,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.003978873577297384
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -2,
+        "n": 1,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0063661977236758255,
+      "quadrature_abs_residual_GeV2": 1.0408340855860843e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.006366197723675815
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": -1,
+        "n": 1,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00954929658551372,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.009549296585513723
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 0,
+        "n": 1,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.012732395447351583,
+      "quadrature_abs_residual_GeV2": 4.683753385137379e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.01273239544735163
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 1,
+        "n": 1,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00954929658551372,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.009549296585513723
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 2,
+        "n": 1,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0063661977236758255,
+      "quadrature_abs_residual_GeV2": 1.0408340855860843e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.006366197723675815
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "5/64",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 3,
+        "n": 1,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.003978873577297384,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.003978873577297384
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "3/64",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 4,
+        "n": 1,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0023873241463784342,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.0023873241463784308
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "7/256",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 5,
+        "n": 1,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0013926057520540856,
+      "quadrature_abs_residual_GeV2": 1.0842021724855044e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.0013926057520540845
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": -3,
+        "n": 2,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.004177817256162254,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.004177817256162254
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "15/128",
+        "numerator": 15
+      },
+      "mode": {
+        "m": -2,
+        "n": 2,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005968310365946091,
+      "quadrature_abs_residual_GeV2": 1.474514954580286e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.0059683103659460765
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -1,
+        "n": 2,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00795774715459476,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.007957747154594769
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 0,
+        "n": 2,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009549296585513655,
+      "quadrature_abs_residual_GeV2": 6.765421556309548e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.009549296585513723
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 1,
+        "n": 2,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00795774715459476,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.007957747154594769
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "15/128",
+        "numerator": 15
+      },
+      "mode": {
+        "m": 2,
+        "n": 2,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005968310365946091,
+      "quadrature_abs_residual_GeV2": 1.474514954580286e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.0059683103659460765
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": 3,
+        "n": 2,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.004177817256162254,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K9",
+      "value_GeV2": 0.004177817256162254
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": -1,
+        "n": 3,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006963028760270413,
+      "quadrature_abs_residual_GeV2": 9.540979117872439e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.006963028760270423
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 0,
+        "n": 3,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0079577471545947,
+      "quadrature_abs_residual_GeV2": 6.938893903907228e-17,
+      "resolution": "K9",
+      "value_GeV2": 0.007957747154594769
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": 1,
+        "n": 3,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006963028760270413,
+      "quadrature_abs_residual_GeV2": 9.540979117872439e-18,
+      "resolution": "K9",
+      "value_GeV2": 0.006963028760270423
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "1/1024",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -9,
+        "n": 0,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 6.294702339083752e-05,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 6.294702339083752e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "1/512",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00012589404678167503,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.00012589404678167503
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "1/256",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -7,
+        "n": 0,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00025178809356335007,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.00025178809356335007
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "1/128",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0005035761871267001,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.0005035761871267001
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -5,
+        "n": 0,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0010071523742534003,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.0010071523742534003
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "1/32",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -4,
+        "n": 0,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0020143047485068006,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.0020143047485068006
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "1/16",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -3,
+        "n": 0,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0040286094970136,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.004028609497013601
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -2,
+        "n": 0,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008057218994027202,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.008057218994027202
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -1,
+        "n": 0,
+        "shell": 1
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.016114437988054404,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.016114437988054404
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2,
+        "exact": "1/2",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 0,
+        "n": 0,
+        "shell": 0
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.032228875976108816,
+      "quadrature_abs_residual_GeV2": 6.938893903907228e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.03222887597610881
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 1,
+        "n": 0,
+        "shell": 1
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.016114437988054404,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.016114437988054404
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 2,
+        "n": 0,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008057218994027202,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.008057218994027202
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "1/16",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 3,
+        "n": 0,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0040286094970136,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.004028609497013601
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "1/32",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 4,
+        "n": 0,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0020143047485068006,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.0020143047485068006
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 5,
+        "n": 0,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0010071523742534003,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.0010071523742534003
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "1/128",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 6,
+        "n": 0,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0005035761871267001,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.0005035761871267001
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "1/256",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 7,
+        "n": 0,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00025178809356335007,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.00025178809356335007
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "1/512",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 8,
+        "n": 0,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00012589404678167503,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.00012589404678167503
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "1/1024",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 9,
+        "n": 0,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 6.294702339083752e-05,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 6.294702339083752e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "9/1024",
+        "numerator": 9
+      },
+      "mode": {
+        "m": -7,
+        "n": 1,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.000566523210517538,
+      "quadrature_abs_residual_GeV2": 3.2526065174565133e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.0005665232105175376
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -6,
+        "n": 1,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0010071523742533998,
+      "quadrature_abs_residual_GeV2": 4.336808689942018e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.0010071523742534003
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "7/256",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -5,
+        "n": 1,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.001762516654943452,
+      "quadrature_abs_residual_GeV2": 1.3010426069826053e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.0017625166549434506
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "3/64",
+        "numerator": 3
+      },
+      "mode": {
+        "m": -4,
+        "n": 1,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.003021457122760205,
+      "quadrature_abs_residual_GeV2": 4.336808689942018e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.003021457122760201
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "5/64",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -3,
+        "n": 1,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005035761871267001,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.005035761871267001
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -2,
+        "n": 1,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008057218994027216,
+      "quadrature_abs_residual_GeV2": 1.3877787807814457e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.008057218994027202
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": -1,
+        "n": 1,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0120858284910408,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.012085828491040803
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 0,
+        "n": 1,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.016114437988054345,
+      "quadrature_abs_residual_GeV2": 5.898059818321144e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.016114437988054404
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 1,
+        "n": 1,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0120858284910408,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.012085828491040803
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 2,
+        "n": 1,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008057218994027216,
+      "quadrature_abs_residual_GeV2": 1.3877787807814457e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.008057218994027202
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "5/64",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 3,
+        "n": 1,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005035761871267001,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.005035761871267001
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "3/64",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 4,
+        "n": 1,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.003021457122760205,
+      "quadrature_abs_residual_GeV2": 4.336808689942018e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.003021457122760201
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "7/256",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 5,
+        "n": 1,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.001762516654943452,
+      "quadrature_abs_residual_GeV2": 1.3010426069826053e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.0017625166549434506
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 6,
+        "n": 1,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0010071523742533998,
+      "quadrature_abs_residual_GeV2": 4.336808689942018e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.0010071523742534003
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "9/1024",
+        "numerator": 9
+      },
+      "mode": {
+        "m": 7,
+        "n": 1,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.000566523210517538,
+      "quadrature_abs_residual_GeV2": 3.2526065174565133e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.0005665232105175376
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "9/256",
+        "numerator": 9
+      },
+      "mode": {
+        "m": -5,
+        "n": 2,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0022660928420701566,
+      "quadrature_abs_residual_GeV2": 6.071532165918825e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.0022660928420701505
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "7/128",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -4,
+        "n": 2,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.003525033309886909,
+      "quadrature_abs_residual_GeV2": 7.806255641895632e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.003525033309886901
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": -3,
+        "n": 2,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005287549964830352,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.005287549964830352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "15/128",
+        "numerator": 15
+      },
+      "mode": {
+        "m": -2,
+        "n": 2,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.007553642806900521,
+      "quadrature_abs_residual_GeV2": 1.9081958235744878e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.007553642806900502
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -1,
+        "n": 2,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.010071523742533993,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.010071523742534002
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 0,
+        "n": 2,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.01208582849104072,
+      "quadrature_abs_residual_GeV2": 8.326672684688674e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.012085828491040803
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 1,
+        "n": 2,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.010071523742533993,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.010071523742534002
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "15/128",
+        "numerator": 15
+      },
+      "mode": {
+        "m": 2,
+        "n": 2,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.007553642806900521,
+      "quadrature_abs_residual_GeV2": 1.9081958235744878e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.007553642806900502
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": 3,
+        "n": 2,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005287549964830352,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K11",
+      "value_GeV2": 0.005287549964830352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "7/128",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 4,
+        "n": 2,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.003525033309886909,
+      "quadrature_abs_residual_GeV2": 7.806255641895632e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.003525033309886901
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "9/256",
+        "numerator": 9
+      },
+      "mode": {
+        "m": 5,
+        "n": 2,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0022660928420701566,
+      "quadrature_abs_residual_GeV2": 6.071532165918825e-18,
+      "resolution": "K11",
+      "value_GeV2": 0.0022660928420701505
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": -3,
+        "n": 3,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005287549964830353,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.005287549964830352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "7/64",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -2,
+        "n": 3,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.007050066619773826,
+      "quadrature_abs_residual_GeV2": 2.3418766925686896e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.007050066619773802
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": -1,
+        "n": 3,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008812583274717239,
+      "quadrature_abs_residual_GeV2": 1.3877787807814457e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.008812583274717253
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 0,
+        "n": 3,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.010071523742533915,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.010071523742534002
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": 1,
+        "n": 3,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008812583274717239,
+      "quadrature_abs_residual_GeV2": 1.3877787807814457e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.008812583274717253
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "7/64",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 2,
+        "n": 3,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.007050066619773826,
+      "quadrature_abs_residual_GeV2": 2.3418766925686896e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.007050066619773802
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": 3,
+        "n": 3,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.005287549964830353,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K11",
+      "value_GeV2": 0.005287549964830352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "63/512",
+        "numerator": 63
+      },
+      "mode": {
+        "m": -1,
+        "n": 4,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00793132494724551,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.007931324947245527
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": 0,
+        "n": 4,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008812583274717161,
+      "quadrature_abs_residual_GeV2": 9.194034422677078e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.008812583274717253
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "63/512",
+        "numerator": 63
+      },
+      "mode": {
+        "m": 1,
+        "n": 4,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00793132494724551,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-17,
+      "resolution": "K11",
+      "value_GeV2": 0.007931324947245527
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "1/4096",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -11,
+        "n": 0,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 1.9428093639147384e-05,
+      "quadrature_abs_residual_GeV2": 3.3881317890172014e-21,
+      "resolution": "K13",
+      "value_GeV2": 1.942809363914738e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "1/2048",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -10,
+        "n": 0,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 3.885618727829476e-05,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 3.885618727829476e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "1/1024",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -9,
+        "n": 0,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 7.771237455658952e-05,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 7.771237455658952e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "1/512",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -8,
+        "n": 0,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00015542474911317905,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.00015542474911317905
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "1/256",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -7,
+        "n": 0,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0003108494982263581,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0003108494982263581
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "1/128",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -6,
+        "n": 0,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0006216989964527162,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0006216989964527162
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -5,
+        "n": 0,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0012433979929054324,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "1/32",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -4,
+        "n": 0,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0024867959858108648,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0024867959858108648
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "1/16",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -3,
+        "n": 0,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.004973591971621729,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.0049735919716217296
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -2,
+        "n": 0,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009947183943243459,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.009947183943243459
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -1,
+        "n": 0,
+        "shell": 1
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.019894367886486918,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.019894367886486918
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2,
+        "exact": "1/2",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 0,
+        "n": 0,
+        "shell": 0
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.03978873577297384,
+      "quadrature_abs_residual_GeV2": 6.938893903907228e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.039788735772973836
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 1,
+        "n": 0,
+        "shell": 1
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.019894367886486918,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.019894367886486918
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 2,
+        "n": 0,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009947183943243459,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.009947183943243459
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "1/16",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 3,
+        "n": 0,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.004973591971621729,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.0049735919716217296
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "1/32",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 4,
+        "n": 0,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0024867959858108648,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0024867959858108648
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 5,
+        "n": 0,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0012433979929054324,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "1/128",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 6,
+        "n": 0,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0006216989964527162,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0006216989964527162
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "1/256",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 7,
+        "n": 0,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0003108494982263581,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.0003108494982263581
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "1/512",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 8,
+        "n": 0,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00015542474911317905,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.00015542474911317905
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "1/1024",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 9,
+        "n": 0,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 7.771237455658952e-05,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 7.771237455658952e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "1/2048",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 10,
+        "n": 0,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 3.885618727829476e-05,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 3.885618727829476e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "1/4096",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 11,
+        "n": 0,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 1.9428093639147384e-05,
+      "quadrature_abs_residual_GeV2": 3.3881317890172014e-21,
+      "resolution": "K13",
+      "value_GeV2": 1.942809363914738e-05
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "11/4096",
+        "numerator": 11
+      },
+      "mode": {
+        "m": -9,
+        "n": 1,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00021370903003062122,
+      "quadrature_abs_residual_GeV2": 2.710505431213761e-20,
+      "resolution": "K13",
+      "value_GeV2": 0.0002137090300306212
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "5/1024",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -8,
+        "n": 1,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00038856187278294774,
+      "quadrature_abs_residual_GeV2": 1.0842021724855044e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.00038856187278294763
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "9/1024",
+        "numerator": 9
+      },
+      "mode": {
+        "m": -7,
+        "n": 1,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0006994113710093061,
+      "quadrature_abs_residual_GeV2": 4.336808689942018e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.0006994113710093057
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -6,
+        "n": 1,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0012433979929054317,
+      "quadrature_abs_residual_GeV2": 6.505213034913027e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.0012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "7/256",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -5,
+        "n": 1,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0021759464875845086,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.002175946487584507
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "3/64",
+        "numerator": 3
+      },
+      "mode": {
+        "m": -4,
+        "n": 1,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0037301939787163026,
+      "quadrature_abs_residual_GeV2": 5.637851296924623e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.003730193978716297
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "5/64",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -3,
+        "n": 1,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006216989964527162,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.006216989964527162
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": -2,
+        "n": 1,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009947183943243476,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.009947183943243459
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": -1,
+        "n": 1,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.014920775914865184,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.014920775914865188
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4,
+        "exact": "1/4",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 0,
+        "n": 1,
+        "shell": 2
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.019894367886486845,
+      "quadrature_abs_residual_GeV2": 7.28583859910259e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.019894367886486918
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 1,
+        "n": 1,
+        "shell": 3
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.014920775914865184,
+      "quadrature_abs_residual_GeV2": 3.469446951953614e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.014920775914865188
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 8,
+        "exact": "1/8",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 2,
+        "n": 1,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009947183943243476,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.009947183943243459
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "5/64",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 3,
+        "n": 1,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006216989964527162,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.006216989964527162
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "3/64",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 4,
+        "n": 1,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0037301939787163026,
+      "quadrature_abs_residual_GeV2": 5.637851296924623e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.003730193978716297
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "7/256",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 5,
+        "n": 1,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0021759464875845086,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.002175946487584507
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "1/64",
+        "numerator": 1
+      },
+      "mode": {
+        "m": 6,
+        "n": 1,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0012433979929054317,
+      "quadrature_abs_residual_GeV2": 6.505213034913027e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.0012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "9/1024",
+        "numerator": 9
+      },
+      "mode": {
+        "m": 7,
+        "n": 1,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0006994113710093061,
+      "quadrature_abs_residual_GeV2": 4.336808689942018e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.0006994113710093057
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "5/1024",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 8,
+        "n": 1,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00038856187278294774,
+      "quadrature_abs_residual_GeV2": 1.0842021724855044e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.00038856187278294763
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "11/4096",
+        "numerator": 11
+      },
+      "mode": {
+        "m": 9,
+        "n": 1,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00021370903003062122,
+      "quadrature_abs_residual_GeV2": 2.710505431213761e-20,
+      "resolution": "K13",
+      "value_GeV2": 0.0002137090300306212
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "55/4096",
+        "numerator": 55
+      },
+      "mode": {
+        "m": -7,
+        "n": 2,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.001068545150153107,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.001068545150153106
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "45/2048",
+        "numerator": 45
+      },
+      "mode": {
+        "m": -6,
+        "n": 2,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0017485284275232632,
+      "quadrature_abs_residual_GeV2": 1.0842021724855044e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.0017485284275232642
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "9/256",
+        "numerator": 9
+      },
+      "mode": {
+        "m": -5,
+        "n": 2,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00279764548403723,
+      "quadrature_abs_residual_GeV2": 7.37257477290143e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.0027976454840372227
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "7/128",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -4,
+        "n": 2,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.004351892975169023,
+      "quadrature_abs_residual_GeV2": 9.540979117872439e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.004351892975169014
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": -3,
+        "n": 2,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00652783946275352,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.00652783946275352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "15/128",
+        "numerator": 15
+      },
+      "mode": {
+        "m": -2,
+        "n": 2,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009325484946790766,
+      "quadrature_abs_residual_GeV2": 2.2551405187698492e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.009325484946790743
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": -1,
+        "n": 2,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.012433979929054312,
+      "quadrature_abs_residual_GeV2": 1.214306433183765e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 16,
+        "exact": "3/16",
+        "numerator": 3
+      },
+      "mode": {
+        "m": 0,
+        "n": 2,
+        "shell": 4
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.014920775914865085,
+      "quadrature_abs_residual_GeV2": 1.0234868508263162e-16,
+      "resolution": "K13",
+      "value_GeV2": 0.014920775914865188
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 1,
+        "n": 2,
+        "shell": 5
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.012433979929054312,
+      "quadrature_abs_residual_GeV2": 1.214306433183765e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "15/128",
+        "numerator": 15
+      },
+      "mode": {
+        "m": 2,
+        "n": 2,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009325484946790766,
+      "quadrature_abs_residual_GeV2": 2.2551405187698492e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.009325484946790743
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": 3,
+        "n": 2,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00652783946275352,
+      "quadrature_abs_residual_GeV2": 0.0,
+      "resolution": "K13",
+      "value_GeV2": 0.00652783946275352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 128,
+        "exact": "7/128",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 4,
+        "n": 2,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.004351892975169023,
+      "quadrature_abs_residual_GeV2": 9.540979117872439e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.004351892975169014
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "9/256",
+        "numerator": 9
+      },
+      "mode": {
+        "m": 5,
+        "n": 2,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.00279764548403723,
+      "quadrature_abs_residual_GeV2": 7.37257477290143e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.0027976454840372227
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "45/2048",
+        "numerator": 45
+      },
+      "mode": {
+        "m": 6,
+        "n": 2,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0017485284275232632,
+      "quadrature_abs_residual_GeV2": 1.0842021724855044e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.0017485284275232642
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "55/4096",
+        "numerator": 55
+      },
+      "mode": {
+        "m": 7,
+        "n": 2,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.001068545150153107,
+      "quadrature_abs_residual_GeV2": 8.673617379884035e-19,
+      "resolution": "K13",
+      "value_GeV2": 0.001068545150153106
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "165/4096",
+        "numerator": 165
+      },
+      "mode": {
+        "m": -5,
+        "n": 3,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0032056354504593305,
+      "quadrature_abs_residual_GeV2": 1.2576745200831851e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.003205635450459318
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "15/256",
+        "numerator": 15
+      },
+      "mode": {
+        "m": -4,
+        "n": 3,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0046627424733953786,
+      "quadrature_abs_residual_GeV2": 6.938893903907228e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.004662742473395372
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": -3,
+        "n": 3,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006527839462753522,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.00652783946275352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "7/64",
+        "numerator": 7
+      },
+      "mode": {
+        "m": -2,
+        "n": 3,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008703785950338055,
+      "quadrature_abs_residual_GeV2": 2.7755575615628914e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.008703785950338027
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": -1,
+        "n": 3,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.010879732437922517,
+      "quadrature_abs_residual_GeV2": 1.5612511283791264e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.010879732437922533
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 32,
+        "exact": "5/32",
+        "numerator": 5
+      },
+      "mode": {
+        "m": 0,
+        "n": 3,
+        "shell": 6
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.012433979929054215,
+      "quadrature_abs_residual_GeV2": 1.0928757898653885e-16,
+      "resolution": "K13",
+      "value_GeV2": 0.012433979929054324
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": 1,
+        "n": 3,
+        "shell": 7
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.010879732437922517,
+      "quadrature_abs_residual_GeV2": 1.5612511283791264e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.010879732437922533
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 64,
+        "exact": "7/64",
+        "numerator": 7
+      },
+      "mode": {
+        "m": 2,
+        "n": 3,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008703785950338055,
+      "quadrature_abs_residual_GeV2": 2.7755575615628914e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.008703785950338027
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "21/256",
+        "numerator": 21
+      },
+      "mode": {
+        "m": 3,
+        "n": 3,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006527839462753522,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.00652783946275352
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "15/256",
+        "numerator": 15
+      },
+      "mode": {
+        "m": 4,
+        "n": 3,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0046627424733953786,
+      "quadrature_abs_residual_GeV2": 6.938893903907228e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.004662742473395372
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 4096,
+        "exact": "165/4096",
+        "numerator": 165
+      },
+      "mode": {
+        "m": 5,
+        "n": 3,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.0032056354504593305,
+      "quadrature_abs_residual_GeV2": 1.2576745200831851e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.003205635450459318
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "165/2048",
+        "numerator": 165
+      },
+      "mode": {
+        "m": -3,
+        "n": 4,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006411270900918634,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.006411270900918636
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "105/1024",
+        "numerator": 105
+      },
+      "mode": {
+        "m": -2,
+        "n": 4,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008159799328441936,
+      "quadrature_abs_residual_GeV2": 3.642919299551295e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.0081597993284419
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "63/512",
+        "numerator": 63
+      },
+      "mode": {
+        "m": -1,
+        "n": 4,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009791759194130256,
+      "quadrature_abs_residual_GeV2": 2.42861286636753e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.00979175919413028
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 256,
+        "exact": "35/256",
+        "numerator": 35
+      },
+      "mode": {
+        "m": 0,
+        "n": 4,
+        "shell": 8
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.01087973243792242,
+      "quadrature_abs_residual_GeV2": 1.1275702593849246e-16,
+      "resolution": "K13",
+      "value_GeV2": 0.010879732437922533
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "63/512",
+        "numerator": 63
+      },
+      "mode": {
+        "m": 1,
+        "n": 4,
+        "shell": 9
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009791759194130256,
+      "quadrature_abs_residual_GeV2": 2.42861286636753e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.00979175919413028
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 1024,
+        "exact": "105/1024",
+        "numerator": 105
+      },
+      "mode": {
+        "m": 2,
+        "n": 4,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008159799328441936,
+      "quadrature_abs_residual_GeV2": 3.642919299551295e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.0081597993284419
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "165/2048",
+        "numerator": 165
+      },
+      "mode": {
+        "m": 3,
+        "n": 4,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.006411270900918634,
+      "quadrature_abs_residual_GeV2": 1.734723475976807e-18,
+      "resolution": "K13",
+      "value_GeV2": 0.006411270900918636
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "231/2048",
+        "numerator": 231
+      },
+      "mode": {
+        "m": -1,
+        "n": 5,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008975779261286062,
+      "quadrature_abs_residual_GeV2": 2.7755575615628914e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.00897577926128609
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 512,
+        "exact": "63/512",
+        "numerator": 63
+      },
+      "mode": {
+        "m": 0,
+        "n": 5,
+        "shell": 10
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.009791759194130162,
+      "quadrature_abs_residual_GeV2": 1.1796119636642288e-16,
+      "resolution": "K13",
+      "value_GeV2": 0.00979175919413028
+    },
+    {
+      "coefficient_of_bHO2_over_pi": {
+        "denominator": 2048,
+        "exact": "231/2048",
+        "numerator": 231
+      },
+      "mode": {
+        "m": 1,
+        "n": 5,
+        "shell": 11
+      },
+      "positive": true,
+      "quadrature_GeV2": 0.008975779261286062,
+      "quadrature_abs_residual_GeV2": 2.7755575615628914e-17,
+      "resolution": "K13",
+      "value_GeV2": 0.00897577926128609
+    }
+  ],
+  "schema": "C408-JQJQ-Q-SECTOR-I4-LOCAL-INVENTORY-V1",
+  "status": "C408_C117_I2_C124_C126_MEMBER_WEIGHT_AND_JQJQ_I4_ROUTING_CLOSED_SOURCE_ROUTED_PRODUCT_BLOCK_PRIMITIVES_READY_FULL_C117_ACTION_UNAVAILABLE",
+  "summaries": [
+    {
+      "all_positive": true,
+      "longitudinal_factor": 1.8981481481481481,
+      "mode_count": 36,
+      "q_sector_product_scalar_GeV2": 0.3866875654380865,
+      "resolution": "K9",
+      "spatial_sum_GeV2": 0.20371832715762608
+    },
+    {
+      "all_positive": true,
+      "longitudinal_factor": 1.9514814814814814,
+      "mode_count": 55,
+      "q_sector_product_scalar_GeV2": 0.6289405463633972,
+      "resolution": "K11",
+      "spatial_sum_GeV2": 0.322288759761088
+    },
+    {
+      "all_positive": true,
+      "longitudinal_factor": 1.9885185185185186,
+      "mode_count": 78,
+      "q_sector_product_scalar_GeV2": 0.9494476549559845,
+      "resolution": "K13",
+      "spatial_sum_GeV2": 0.477464829275686
+    }
+  ],
+  "unit_contraction_multiplicity": true
+}

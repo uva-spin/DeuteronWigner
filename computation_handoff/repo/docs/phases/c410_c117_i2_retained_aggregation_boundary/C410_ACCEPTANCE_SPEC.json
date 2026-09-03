@@ -1,0 +1,33 @@
+{
+  "schema": "C410-ACCEPTANCE-SPEC-V1",
+  "phase": "C410_C117_I2_RETAINED_AGGREGATION_BOUNDARY",
+  "accepted_baseline": "160eb887f393177170b4c3486cea27b41968dfce",
+  "required_branch": "codex/c410-c117-i2-retained-aggregation-boundary",
+  "expected_commit_title": "C410 close C117 I2 retained aggregation boundary",
+  "required": {
+    "source_hash_rows": 12,
+    "vacuum_pair_validation_rows": 8,
+    "retained_q_sector_zero_paths": 3,
+    "source_routed_product_block_primitive_paths": 12,
+    "retained_connected_aggregate_shape_paths": 3,
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "focused_tests": 55,
+    "live_required_tests": 276,
+    "python_minimum": "3.9"
+  },
+  "required_boolean_invariants": {
+    "full_source_vacuum_cnumber_claimed_zero": false,
+    "identity_shift_inserted": false,
+    "mixed_order_factor_two_used": false,
+    "g_s_squared_applied": false,
+    "c_C117_1_selected": false,
+    "complete_C117_action": false,
+    "full_C396_forward_map": false,
+    "physical_fit_authorized": false
+  },
+  "rank_status": "RANK_NOT_EVALUATED",
+  "activation_gate_status": "NOT_READY",
+  "automatic_merge": false,
+  "push_authorized": false
+}

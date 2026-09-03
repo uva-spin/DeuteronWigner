@@ -1,0 +1,732 @@
+{
+  "root": "9daa0aeadc8f169670d0cd8738ae294b4bcf8f62f71d07c7f941906a89201aab",
+  "rows": [
+    {
+      "all_fraction_sums_exactly_one": true,
+      "all_fractions_positive": true,
+      "decoder_boundary_rows": [
+        {
+          "first_decoded_partition": 0,
+          "last_decoded_partition": 0,
+          "local_start": 0,
+          "local_stop": 336,
+          "partition_id": 0,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 1,
+          "last_decoded_partition": 1,
+          "local_start": 336,
+          "local_stop": 672,
+          "partition_id": 1,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 2,
+          "last_decoded_partition": 2,
+          "local_start": 672,
+          "local_stop": 1008,
+          "partition_id": 2,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 3,
+          "last_decoded_partition": 3,
+          "local_start": 1008,
+          "local_stop": 1344,
+          "partition_id": 3,
+          "pass": true
+        }
+      ],
+      "direct_sum_dimension_authority": "C128/C112",
+      "fraction_authority": "C45/C47 exact positive APBC/PBC partitions x=k/K",
+      "partition_count": 4,
+      "partition_major_order_verified": true,
+      "partitions": [
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "1",
+            "float": 1.0,
+            "numerator": 1
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "7/2",
+            "float": 3.5,
+            "numerator": 7
+          },
+          "partition_id": 0,
+          "qg_direct_start": 6,
+          "qg_direct_stop": 342,
+          "qg_state_count": 336,
+          "resolution": "K9",
+          "xg": {
+            "denominator": 9,
+            "exact": "2/9",
+            "float": 0.2222222222222222,
+            "numerator": 2
+          },
+          "xq": {
+            "denominator": 9,
+            "exact": "7/9",
+            "float": 0.7777777777777778,
+            "numerator": 7
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "2",
+            "float": 2.0,
+            "numerator": 2
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "5/2",
+            "float": 2.5,
+            "numerator": 5
+          },
+          "partition_id": 1,
+          "qg_direct_start": 342,
+          "qg_direct_stop": 678,
+          "qg_state_count": 336,
+          "resolution": "K9",
+          "xg": {
+            "denominator": 9,
+            "exact": "4/9",
+            "float": 0.4444444444444444,
+            "numerator": 4
+          },
+          "xq": {
+            "denominator": 9,
+            "exact": "5/9",
+            "float": 0.5555555555555556,
+            "numerator": 5
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "3",
+            "float": 3.0,
+            "numerator": 3
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "3/2",
+            "float": 1.5,
+            "numerator": 3
+          },
+          "partition_id": 2,
+          "qg_direct_start": 678,
+          "qg_direct_stop": 1014,
+          "qg_state_count": 336,
+          "resolution": "K9",
+          "xg": {
+            "denominator": 3,
+            "exact": "2/3",
+            "float": 0.6666666666666666,
+            "numerator": 2
+          },
+          "xq": {
+            "denominator": 3,
+            "exact": "1/3",
+            "float": 0.3333333333333333,
+            "numerator": 1
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "4",
+            "float": 4.0,
+            "numerator": 4
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "1/2",
+            "float": 0.5,
+            "numerator": 1
+          },
+          "partition_id": 3,
+          "qg_direct_start": 1014,
+          "qg_direct_stop": 1350,
+          "qg_state_count": 336,
+          "resolution": "K9",
+          "xg": {
+            "denominator": 9,
+            "exact": "8/9",
+            "float": 0.8888888888888888,
+            "numerator": 8
+          },
+          "xq": {
+            "denominator": 9,
+            "exact": "1/9",
+            "float": 0.1111111111111111,
+            "numerator": 1
+          }
+        }
+      ],
+      "resolution": {
+        "C128_package_root": "d23ce7d398204f1e88612448564d26d17019fa832c8c041d3382c7be1553a6f1",
+        "C396_b_HO_metadata_field": "bHO_GeVinv",
+        "C396_b_HO_unit_label_conflict_retained": true,
+        "C47_b_HO_field": "b_GeV",
+        "C47_status": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY",
+        "K2": 9,
+        "K_denominator": 2,
+        "K_fraction": "9/2",
+        "K_numerator": 9,
+        "Nmax": 8,
+        "b_HO": 0.4,
+        "b_HO_unit": "GeV",
+        "basis_order": "C128/C112 q sector followed by qg sector; qg partition-major",
+        "direct_sum_dimension": 1350,
+        "full_resolution_id": "K9_2_N8_b0.40",
+        "mass_direction_depends_on_b_HO": false,
+        "q_dimension": 6,
+        "qg_dimension": 1344,
+        "resolution_label": "K9"
+      },
+      "root": "397d71e4062a4bab7316e38fe45cf48a968fb1d5a3f9aabbaedcea10ac90cc41",
+      "schema": "C401-C396-MASS-BASIS-FRACTION-PROVENANCE-V1",
+      "states_per_partition": 336,
+      "transverse_subordering_used_by_mass_directions": false
+    },
+    {
+      "all_fraction_sums_exactly_one": true,
+      "all_fractions_positive": true,
+      "decoder_boundary_rows": [
+        {
+          "first_decoded_partition": 0,
+          "last_decoded_partition": 0,
+          "local_start": 0,
+          "local_stop": 540,
+          "partition_id": 0,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 1,
+          "last_decoded_partition": 1,
+          "local_start": 540,
+          "local_stop": 1080,
+          "partition_id": 1,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 2,
+          "last_decoded_partition": 2,
+          "local_start": 1080,
+          "local_stop": 1620,
+          "partition_id": 2,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 3,
+          "last_decoded_partition": 3,
+          "local_start": 1620,
+          "local_stop": 2160,
+          "partition_id": 3,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 4,
+          "last_decoded_partition": 4,
+          "local_start": 2160,
+          "local_stop": 2700,
+          "partition_id": 4,
+          "pass": true
+        }
+      ],
+      "direct_sum_dimension_authority": "C128/C112",
+      "fraction_authority": "C45/C47 exact positive APBC/PBC partitions x=k/K",
+      "partition_count": 5,
+      "partition_major_order_verified": true,
+      "partitions": [
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "1",
+            "float": 1.0,
+            "numerator": 1
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "9/2",
+            "float": 4.5,
+            "numerator": 9
+          },
+          "partition_id": 0,
+          "qg_direct_start": 6,
+          "qg_direct_stop": 546,
+          "qg_state_count": 540,
+          "resolution": "K11",
+          "xg": {
+            "denominator": 11,
+            "exact": "2/11",
+            "float": 0.18181818181818182,
+            "numerator": 2
+          },
+          "xq": {
+            "denominator": 11,
+            "exact": "9/11",
+            "float": 0.8181818181818182,
+            "numerator": 9
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "2",
+            "float": 2.0,
+            "numerator": 2
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "7/2",
+            "float": 3.5,
+            "numerator": 7
+          },
+          "partition_id": 1,
+          "qg_direct_start": 546,
+          "qg_direct_stop": 1086,
+          "qg_state_count": 540,
+          "resolution": "K11",
+          "xg": {
+            "denominator": 11,
+            "exact": "4/11",
+            "float": 0.36363636363636365,
+            "numerator": 4
+          },
+          "xq": {
+            "denominator": 11,
+            "exact": "7/11",
+            "float": 0.6363636363636364,
+            "numerator": 7
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "3",
+            "float": 3.0,
+            "numerator": 3
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "5/2",
+            "float": 2.5,
+            "numerator": 5
+          },
+          "partition_id": 2,
+          "qg_direct_start": 1086,
+          "qg_direct_stop": 1626,
+          "qg_state_count": 540,
+          "resolution": "K11",
+          "xg": {
+            "denominator": 11,
+            "exact": "6/11",
+            "float": 0.5454545454545454,
+            "numerator": 6
+          },
+          "xq": {
+            "denominator": 11,
+            "exact": "5/11",
+            "float": 0.45454545454545453,
+            "numerator": 5
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "4",
+            "float": 4.0,
+            "numerator": 4
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "3/2",
+            "float": 1.5,
+            "numerator": 3
+          },
+          "partition_id": 3,
+          "qg_direct_start": 1626,
+          "qg_direct_stop": 2166,
+          "qg_state_count": 540,
+          "resolution": "K11",
+          "xg": {
+            "denominator": 11,
+            "exact": "8/11",
+            "float": 0.7272727272727273,
+            "numerator": 8
+          },
+          "xq": {
+            "denominator": 11,
+            "exact": "3/11",
+            "float": 0.2727272727272727,
+            "numerator": 3
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "5",
+            "float": 5.0,
+            "numerator": 5
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "1/2",
+            "float": 0.5,
+            "numerator": 1
+          },
+          "partition_id": 4,
+          "qg_direct_start": 2166,
+          "qg_direct_stop": 2706,
+          "qg_state_count": 540,
+          "resolution": "K11",
+          "xg": {
+            "denominator": 11,
+            "exact": "10/11",
+            "float": 0.9090909090909091,
+            "numerator": 10
+          },
+          "xq": {
+            "denominator": 11,
+            "exact": "1/11",
+            "float": 0.09090909090909091,
+            "numerator": 1
+          }
+        }
+      ],
+      "resolution": {
+        "C128_package_root": "d23ce7d398204f1e88612448564d26d17019fa832c8c041d3382c7be1553a6f1",
+        "C396_b_HO_metadata_field": "bHO_GeVinv",
+        "C396_b_HO_unit_label_conflict_retained": true,
+        "C47_b_HO_field": "b_GeV",
+        "C47_status": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY",
+        "K2": 11,
+        "K_denominator": 2,
+        "K_fraction": "11/2",
+        "K_numerator": 11,
+        "Nmax": 10,
+        "b_HO": 0.45,
+        "b_HO_unit": "GeV",
+        "basis_order": "C128/C112 q sector followed by qg sector; qg partition-major",
+        "direct_sum_dimension": 2706,
+        "full_resolution_id": "K11_2_N10_b0.45",
+        "mass_direction_depends_on_b_HO": false,
+        "q_dimension": 6,
+        "qg_dimension": 2700,
+        "resolution_label": "K11"
+      },
+      "root": "e7380561a3e52801c9eb7a6e046025f3554f695e9437b7d3aecb4208ff0e864d",
+      "schema": "C401-C396-MASS-BASIS-FRACTION-PROVENANCE-V1",
+      "states_per_partition": 540,
+      "transverse_subordering_used_by_mass_directions": false
+    },
+    {
+      "all_fraction_sums_exactly_one": true,
+      "all_fractions_positive": true,
+      "decoder_boundary_rows": [
+        {
+          "first_decoded_partition": 0,
+          "last_decoded_partition": 0,
+          "local_start": 0,
+          "local_stop": 792,
+          "partition_id": 0,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 1,
+          "last_decoded_partition": 1,
+          "local_start": 792,
+          "local_stop": 1584,
+          "partition_id": 1,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 2,
+          "last_decoded_partition": 2,
+          "local_start": 1584,
+          "local_stop": 2376,
+          "partition_id": 2,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 3,
+          "last_decoded_partition": 3,
+          "local_start": 2376,
+          "local_stop": 3168,
+          "partition_id": 3,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 4,
+          "last_decoded_partition": 4,
+          "local_start": 3168,
+          "local_stop": 3960,
+          "partition_id": 4,
+          "pass": true
+        },
+        {
+          "first_decoded_partition": 5,
+          "last_decoded_partition": 5,
+          "local_start": 3960,
+          "local_stop": 4752,
+          "partition_id": 5,
+          "pass": true
+        }
+      ],
+      "direct_sum_dimension_authority": "C128/C112",
+      "fraction_authority": "C45/C47 exact positive APBC/PBC partitions x=k/K",
+      "partition_count": 6,
+      "partition_major_order_verified": true,
+      "partitions": [
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "1",
+            "float": 1.0,
+            "numerator": 1
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "11/2",
+            "float": 5.5,
+            "numerator": 11
+          },
+          "partition_id": 0,
+          "qg_direct_start": 6,
+          "qg_direct_stop": 798,
+          "qg_state_count": 792,
+          "resolution": "K13",
+          "xg": {
+            "denominator": 13,
+            "exact": "2/13",
+            "float": 0.15384615384615385,
+            "numerator": 2
+          },
+          "xq": {
+            "denominator": 13,
+            "exact": "11/13",
+            "float": 0.8461538461538461,
+            "numerator": 11
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "2",
+            "float": 2.0,
+            "numerator": 2
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "9/2",
+            "float": 4.5,
+            "numerator": 9
+          },
+          "partition_id": 1,
+          "qg_direct_start": 798,
+          "qg_direct_stop": 1590,
+          "qg_state_count": 792,
+          "resolution": "K13",
+          "xg": {
+            "denominator": 13,
+            "exact": "4/13",
+            "float": 0.3076923076923077,
+            "numerator": 4
+          },
+          "xq": {
+            "denominator": 13,
+            "exact": "9/13",
+            "float": 0.6923076923076923,
+            "numerator": 9
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "3",
+            "float": 3.0,
+            "numerator": 3
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "7/2",
+            "float": 3.5,
+            "numerator": 7
+          },
+          "partition_id": 2,
+          "qg_direct_start": 1590,
+          "qg_direct_stop": 2382,
+          "qg_state_count": 792,
+          "resolution": "K13",
+          "xg": {
+            "denominator": 13,
+            "exact": "6/13",
+            "float": 0.46153846153846156,
+            "numerator": 6
+          },
+          "xq": {
+            "denominator": 13,
+            "exact": "7/13",
+            "float": 0.5384615384615384,
+            "numerator": 7
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "4",
+            "float": 4.0,
+            "numerator": 4
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "5/2",
+            "float": 2.5,
+            "numerator": 5
+          },
+          "partition_id": 3,
+          "qg_direct_start": 2382,
+          "qg_direct_stop": 3174,
+          "qg_state_count": 792,
+          "resolution": "K13",
+          "xg": {
+            "denominator": 13,
+            "exact": "8/13",
+            "float": 0.6153846153846154,
+            "numerator": 8
+          },
+          "xq": {
+            "denominator": 13,
+            "exact": "5/13",
+            "float": 0.38461538461538464,
+            "numerator": 5
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "5",
+            "float": 5.0,
+            "numerator": 5
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "3/2",
+            "float": 1.5,
+            "numerator": 3
+          },
+          "partition_id": 4,
+          "qg_direct_start": 3174,
+          "qg_direct_stop": 3966,
+          "qg_state_count": 792,
+          "resolution": "K13",
+          "xg": {
+            "denominator": 13,
+            "exact": "10/13",
+            "float": 0.7692307692307693,
+            "numerator": 10
+          },
+          "xq": {
+            "denominator": 13,
+            "exact": "3/13",
+            "float": 0.23076923076923078,
+            "numerator": 3
+          }
+        },
+        {
+          "fraction_sum_exact": "1",
+          "fraction_sum_residual": 0.0,
+          "kg": {
+            "denominator": 1,
+            "exact": "6",
+            "float": 6.0,
+            "numerator": 6
+          },
+          "kq": {
+            "denominator": 2,
+            "exact": "1/2",
+            "float": 0.5,
+            "numerator": 1
+          },
+          "partition_id": 5,
+          "qg_direct_start": 3966,
+          "qg_direct_stop": 4758,
+          "qg_state_count": 792,
+          "resolution": "K13",
+          "xg": {
+            "denominator": 13,
+            "exact": "12/13",
+            "float": 0.9230769230769231,
+            "numerator": 12
+          },
+          "xq": {
+            "denominator": 13,
+            "exact": "1/13",
+            "float": 0.07692307692307693,
+            "numerator": 1
+          }
+        }
+      ],
+      "resolution": {
+        "C128_package_root": "d23ce7d398204f1e88612448564d26d17019fa832c8c041d3382c7be1553a6f1",
+        "C396_b_HO_metadata_field": "bHO_GeVinv",
+        "C396_b_HO_unit_label_conflict_retained": true,
+        "C47_b_HO_field": "b_GeV",
+        "C47_status": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY",
+        "K2": 13,
+        "K_denominator": 2,
+        "K_fraction": "13/2",
+        "K_numerator": 13,
+        "Nmax": 12,
+        "b_HO": 0.5,
+        "b_HO_unit": "GeV",
+        "basis_order": "C128/C112 q sector followed by qg sector; qg partition-major",
+        "direct_sum_dimension": 4758,
+        "full_resolution_id": "K13_2_N12_b0.50",
+        "mass_direction_depends_on_b_HO": false,
+        "q_dimension": 6,
+        "qg_dimension": 4752,
+        "resolution_label": "K13"
+      },
+      "root": "c02571022dccb43fffa4a65b700707961012c34935432301cd69da1b3f94c36e",
+      "schema": "C401-C396-MASS-BASIS-FRACTION-PROVENANCE-V1",
+      "states_per_partition": 792,
+      "transverse_subordering_used_by_mass_directions": false
+    }
+  ],
+  "schema": "C401-C396-BASIS-FRACTION-PROVENANCE-SET-V1"
+}

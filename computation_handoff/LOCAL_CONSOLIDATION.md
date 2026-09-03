@@ -34,3 +34,10 @@ from Git metadata; no live project worktree was removed.
 
 Archived YOLO records are retained as records of their original runs. Current
 operational scripts and prompts use the consolidated `.yolo` path.
+
+The published continuation view is
+<https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
+It must be refreshed whenever accepted work lands on the canonical `main`
+checkout. Its source-commit marker and phase handoff must identify the
+accepted source commit represented by the published tree before publication is
+considered current. A handoff-only publication commit may follow it.

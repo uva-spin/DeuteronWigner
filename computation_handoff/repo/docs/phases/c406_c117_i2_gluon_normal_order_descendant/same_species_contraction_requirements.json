@@ -1,0 +1,34 @@
+{
+  "all_unavailable_not_zero": true,
+  "external_pair_proxy_promoted": false,
+  "root": "9dbcec75d09aaebc3c881f44d6ec0decc65fd1a985dc2c60e487420c8a102f06",
+  "row_count": 2,
+  "rows": [
+    {
+      "C405_external_pair_stress_kernel_promoted": false,
+      "complete_C117_action": false,
+      "numerical_apply_path": null,
+      "product": "J_qJ_q",
+      "required_object": "source-qualified one-particle quark contraction with an explicit intermediate mode/current-transfer axis, finite support, normal-ordering sign/multiplicity, and target embedding",
+      "root": "5e42d04aeb0d51a0545a3d687afc6bfbab3abeb52f24dce112b6c5d66c626dc0",
+      "schema": "C406-C117-I2-SAME-SPECIES-CONTRACTION-REQUIREMENT-V1",
+      "species": "quark",
+      "status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED",
+      "why_external_pair_kernel_is_insufficient": "two currents act on the same particle; the nonzero Q0 transfer is internal even when the external partition is diagonal"
+    },
+    {
+      "C405_external_pair_stress_kernel_promoted": false,
+      "complete_C117_action": false,
+      "numerical_apply_path": null,
+      "product": "J_gJ_g",
+      "required_object": "source-qualified one-particle gluon contraction with an explicit intermediate mode/current-transfer axis, finite support, normal-ordering sign/multiplicity, and target embedding",
+      "root": "7ec714f19f35f239a99ed5f8788eeffaa2c093600f4d59d30e9729e74376f459",
+      "schema": "C406-C117-I2-SAME-SPECIES-CONTRACTION-REQUIREMENT-V1",
+      "species": "gluon",
+      "status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED",
+      "why_external_pair_kernel_is_insufficient": "two currents act on the same particle; the nonzero Q0 transfer is internal even when the external partition is diagonal"
+    }
+  ],
+  "schema": "C406-C117-I2-SAME-SPECIES-REQUIREMENTS-V1",
+  "status": "C406_C117_I2_ONE_GLUON_NORMAL_ORDER_DESCENDANT_AND_MIXED_CURRENT_ROUTING_READY_SAME_SPECIES_CONTRACTIONS_UNRESOLVED"
+}

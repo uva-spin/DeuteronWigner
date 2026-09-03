@@ -1,0 +1,439 @@
+{
+  "pass": true,
+  "root": "2b624e4dbe2e5f55dc6a2d0fb41f250868d527b7995b5ea054538df2c2114c6d",
+  "rows": [
+    {
+      "diagnostic_base_point": {
+        "delta_mu_g_sq": 0.17,
+        "mu_q_sq": 0.31,
+        "physical": false
+      },
+      "historical_C128_numeric_implementation_used": false,
+      "maximum_relative_residual": 3.5780841946098164e-11,
+      "pass": true,
+      "reason": "historical C128 quark fractions fail the C45/C47 xq+xg=1 source identity; the holdout differentiates the source formula independently",
+      "resolution": "K9",
+      "root": "574624fc04c95d781d5fc56d2872d93326d3ffb0b493f92783be399810a36e70",
+      "rows": [
+        {
+          "absolute_residual": 8.733440832430056e-15,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 8.881784197001252e-16,
+          "step": 0.01,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 1.0829466632213268e-12,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.1013412404281552e-13,
+          "step": 0.0001,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 2.381341397201286e-10,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 2.4217900819558396e-11,
+          "step": 1e-06,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 5.931838607807506e-14,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.1184426194930786e-15,
+          "step": 0.01,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 6.069017052762966e-12,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.1443074869410956e-13,
+          "step": 0.0001,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 1.6963818732148804e-09,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 3.1985121500807285e-11,
+          "step": 1e-06,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 7.204302538279173e-15,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.5474420148364315e-15,
+          "step": 0.01,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 8.7019140428117e-13,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.869120199740863e-13,
+          "step": 0.0001,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 1.521117132522145e-10,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 3.267270562064047e-11,
+          "step": 1e-06,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 0.01,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 0.0001,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 1e-06,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 2.8178238997642074e-14,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.1547884177170156e-15,
+          "step": 0.01,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 4.137853443869055e-12,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 3.1642142987734623e-13,
+          "step": 0.0001,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 4.67907246764504e-10,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 3.5780841946098164e-11,
+          "step": 1e-06,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 7.470622275273688e-15,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.7581065641940575e-15,
+          "step": 0.01,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 1.0312039110753346e-12,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 3.8071397152190623e-13,
+          "step": 0.0001,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 7.340402781063923e-11,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.7100303493177233e-11,
+          "step": 1e-06,
+          "vector_id": "random"
+        }
+      ],
+      "schema": "C401-C396-MASS-SOURCE-FORMULA-FINITE-DIFFERENCE-V2",
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "diagnostic_base_point": {
+        "delta_mu_g_sq": 0.17,
+        "mu_q_sq": 0.31,
+        "physical": false
+      },
+      "historical_C128_numeric_implementation_used": false,
+      "maximum_relative_residual": 4.3248580824098486e-11,
+      "pass": true,
+      "reason": "historical C128 quark fractions fail the C45/C47 xq+xg=1 source identity; the holdout differentiates the source formula independently",
+      "resolution": "K11",
+      "root": "ee5ef08f18063122ec5dde701d4d6b77839c492688960ef2d574cb2e81921cc9",
+      "rows": [
+        {
+          "absolute_residual": 8.733440832430056e-15,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 8.881784197001252e-16,
+          "step": 0.01,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 1.0829466632213268e-12,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.1013412404281552e-13,
+          "step": 0.0001,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 2.381341397201286e-10,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 2.4217900819558396e-11,
+          "step": 1e-06,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 1.0454799921289418e-13,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.2835127160876638e-15,
+          "step": 0.01,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 6.12362041981701e-12,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 7.517833661574125e-14,
+          "step": 0.0001,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 3.0923707560003193e-09,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 3.796435338854876e-11,
+          "step": 1e-06,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 9.411081706854755e-15,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.7091300094844556e-15,
+          "step": 0.01,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 8.891193288458182e-13,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.6147139874858584e-13,
+          "step": 0.0001,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 2.38142169163524e-10,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 4.3248580824098486e-11,
+          "step": 1e-06,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 0.01,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 0.0001,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 1e-06,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 4.865808104659908e-14,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.7357781386849424e-15,
+          "step": 0.01,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 7.187003891616856e-12,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 4.0408597516410407e-13,
+          "step": 0.0001,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 5.299732719601065e-10,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.979750249762732e-11,
+          "step": 1e-06,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 8.870120726565486e-15,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 3.0260546510308597e-15,
+          "step": 0.01,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 7.593278494897579e-13,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.590458057379157e-13,
+          "step": 0.0001,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 1.1419924729893436e-10,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 3.8959240137306425e-11,
+          "step": 1e-06,
+          "vector_id": "random"
+        }
+      ],
+      "schema": "C401-C396-MASS-SOURCE-FORMULA-FINITE-DIFFERENCE-V2",
+      "status": "PASS",
+      "tolerance": 2e-09
+    },
+    {
+      "diagnostic_base_point": {
+        "delta_mu_g_sq": 0.17,
+        "mu_q_sq": 0.31,
+        "physical": false
+      },
+      "historical_C128_numeric_implementation_used": false,
+      "maximum_relative_residual": 3.897526199506148e-11,
+      "pass": true,
+      "reason": "historical C128 quark fractions fail the C45/C47 xq+xg=1 source identity; the holdout differentiates the source formula independently",
+      "resolution": "K13",
+      "root": "d44c6ccd3091251d3e39dca0778c6c2bc83a9ea08554d8493e2f78b666d4e704",
+      "rows": [
+        {
+          "absolute_residual": 8.733440832430056e-15,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 8.881784197001252e-16,
+          "step": 0.01,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 1.0829466632213268e-12,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.1013412404281552e-13,
+          "step": 0.0001,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 2.381341397201286e-10,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 2.4217900819558396e-11,
+          "step": 1e-06,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 4.1106243249163663e-13,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 3.5420975136998016e-15,
+          "step": 0.01,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 1.011240596009066e-11,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 8.713792644986829e-14,
+          "step": 0.0001,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 2.2311370007531245e-09,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.9225558451518346e-11,
+          "step": 1e-06,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 1.6033443723201687e-14,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 2.7954263309113197e-15,
+          "step": 0.01,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 9.058332474795691e-13,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 1.5793176781822696e-13,
+          "step": 0.0001,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 1.8932725993561286e-10,
+          "direction": "D_mu_q_sq",
+          "relative_residual": 3.300915366157028e-11,
+          "step": 1e-06,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 0.01,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 0.0001,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 0.0,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 0.0,
+          "step": 1e-06,
+          "vector_id": "q_only"
+        },
+        {
+          "absolute_residual": 1.0625220074455779e-13,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 4.6297760927881705e-15,
+          "step": 0.01,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 5.968472507407158e-12,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.6006700220439873e-13,
+          "step": 0.0001,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 8.94472492529777e-10,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 3.897526199506148e-11,
+          "step": 1e-06,
+          "vector_id": "partition_probe"
+        },
+        {
+          "absolute_residual": 9.233558875118286e-15,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.8224862901754085e-15,
+          "step": 0.01,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 9.111657240240602e-13,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.785223767907923e-13,
+          "step": 0.0001,
+          "vector_id": "random"
+        },
+        {
+          "absolute_residual": 9.000811840152917e-11,
+          "direction": "D_delta_mu_g_sq",
+          "relative_residual": 2.7513408819797722e-11,
+          "step": 1e-06,
+          "vector_id": "random"
+        }
+      ],
+      "schema": "C401-C396-MASS-SOURCE-FORMULA-FINITE-DIFFERENCE-V2",
+      "status": "PASS",
+      "tolerance": 2e-09
+    }
+  ],
+  "schema": "C401-C396-SOURCE-FORMULA-FINITE-DIFFERENCE-SET-V1"
+}

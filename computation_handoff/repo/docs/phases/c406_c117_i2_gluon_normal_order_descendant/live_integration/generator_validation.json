@@ -1,0 +1,21 @@
+{
+  "schema": "C406-LIVE-GENERATOR-VALIDATION-V1",
+  "canonical_generation_exit_code": 0,
+  "canonical_package_root": "c5805fa4a0f22fecd6f58c0668a0fa4d9a28990e5e176f052d07d317da65390e",
+  "reference_package_root": "c5805fa4a0f22fecd6f58c0668a0fa4d9a28990e5e176f052d07d317da65390e",
+  "two_clean_builds": {"generated_artifact_count":16,"byte_identical_count":16,"all_byte_identical":true,"generation_result_sha256":"176d346e1e904236259d5ad0ebc11041b0534450728396a5d4ead5deed2478e0"},
+  "invariants": {
+    "one_gluon_descendant_rows":77,
+    "product_routing_rows":12,
+    "mixed_product_rows":6,
+    "same_species_unresolved_rows":6,
+    "mixed_numerical_kernel_rows":6,
+    "c406_k_local_bindings":3,
+    "complete_c117_paths":0,
+    "complete_c396_paths":6,
+    "rank_status":"RANK_NOT_EVALUATED",
+    "physical_fit_authorized":false,
+    "activation_gate_status":"NOT_READY"
+  },
+  "validation": {"normal_ordering":true,"mixed_kernel":true,"mixed_current_collapse":true,"source_hashes_all_present":true,"historical_sources_modified":false}
+}

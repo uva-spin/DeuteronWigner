@@ -1,0 +1,122 @@
+{
+  "C117_coefficient": null,
+  "baseline": "ab0af6587131a2846425e9bb19cfdc784b9f0bdb",
+  "phase": "C409_C117_I2_DERIVATIVE_DENSITY_RECONCILIATION",
+  "physical_coupling": null,
+  "physical_targets": null,
+  "rank_evaluation": false,
+  "schema": "C409-INPUT-FREEZE-V1",
+  "source_hash_audit": {
+    "all_pass": true,
+    "root": "42d44574bc83e33203d0eb0b8bce555c303c4d93605dee5726b771991450a3ff",
+    "row_count": 14,
+    "rows": [
+      {
+        "owner": "C45",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/modes/core.py",
+        "required_snippets_verified": 0,
+        "sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7"
+      },
+      {
+        "owner": "C47",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/basis1/core.py",
+        "required_snippets_verified": 0,
+        "sha256": "4fde22f0ddcc3b098a3b7a0458b07fa956dc74121e44c2549d0072bd428c65bb"
+      },
+      {
+        "owner": "C114",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/icurrent/core.py",
+        "required_snippets_verified": 2,
+        "sha256": "a9a972db4cbf098f1e5342cefaee2692a1e2ad78ba9e11659ec1cc92ae815688"
+      },
+      {
+        "owner": "C115",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/icho/core.py",
+        "required_snippets_verified": 0,
+        "sha256": "b912ca76b840b0e3cc8bb4ba6a9d291e6c0e4230d2148505b9006885bceff7cb"
+      },
+      {
+        "owner": "C117",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/icreg2/core.py",
+        "required_snippets_verified": 0,
+        "sha256": "bd44d3cc3da0a3b864557bf5032ce9107de2e969cb0568afb4ea3987c4987fc0"
+      },
+      {
+        "owner": "C119",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/icnorm3/core.py",
+        "required_snippets_verified": 3,
+        "sha256": "e4f8ade1629caac07e09ad55b7122d06b14bc6d08e584e40bd9e5731865aa0b9"
+      },
+      {
+        "owner": "C124",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/icmembers/core.py",
+        "required_snippets_verified": 3,
+        "sha256": "e10176332daec337e26efd649fc6abda379763b5fb9cbb9d66992e90199535c1"
+      },
+      {
+        "owner": "C126",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/icsum3/core.py",
+        "required_snippets_verified": 2,
+        "sha256": "59d6daf4b229a6180ccc99933682ea9b62ad529d80705e5bddccdd3383d46557"
+      },
+      {
+        "owner": "C192",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/hqcdb1qgggcurr1/core.py",
+        "required_snippets_verified": 3,
+        "sha256": "4f68826835715f5ef08a3e5e1f6a594610f9e0a99319701f6d35a89696cfbe73"
+      },
+      {
+        "owner": "C403",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/c403_c117_i2_numerical_primitive/spatial.py",
+        "required_snippets_verified": 0,
+        "sha256": "6f273b25589795b025a42095aa60b1e96aac3c9bf19f9e67e0393a25c390722a"
+      },
+      {
+        "owner": "C404",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/c404_c117_i2_longitudinal_color_primitive/color_spin.py",
+        "required_snippets_verified": 0,
+        "sha256": "1d6779e87780faedf51fb58a1b9622bb6b9a61a24f28d09fd4de0e2b6ffffa25"
+      },
+      {
+        "owner": "C406",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/c406_c117_i2_gluon_normal_order_descendant/normal_order.py",
+        "required_snippets_verified": 3,
+        "sha256": "88ecfcb476bc69200d516d4ba45312923720b3f32accf7b305fe2c2f9f6c1bc9"
+      },
+      {
+        "owner": "C407",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/c407_c117_i2_same_species_descendants/descendants.py",
+        "required_snippets_verified": 3,
+        "sha256": "5b36d9903110264575fc8896ff17ec82b0192a78dc98dffbc9d37769bd88db33"
+      },
+      {
+        "owner": "C408",
+        "pass": true,
+        "path": "src/deuteron_wigner/bridge/c408_c117_i2_weight_routing_closure/authority.py",
+        "required_snippets_verified": 2,
+        "sha256": "e41b26bfd616fa4ee18c0f06d56f272218153db56a73c662561dbc1d4151dc51"
+      }
+    ],
+    "schema": "C409-SOURCE-HASH-AUDIT-V1",
+    "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE"
+  },
+  "upstream": {
+    "C408_merge_commit": "ab0af6587131a2846425e9bb19cfdc784b9f0bdb",
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "source_routed_product_block_primitive_paths": 9
+  }
+}

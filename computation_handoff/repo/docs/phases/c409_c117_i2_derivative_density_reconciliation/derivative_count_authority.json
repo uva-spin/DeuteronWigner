@@ -1,0 +1,42 @@
+{
+  "C119_extra_derivative_leaf_independent_on_C406_C407_route": false,
+  "C124_C126_derivative_density_pi_k_over_L_independent_on_C406_C407_route": false,
+  "C406_descendant_derivatives_per_gluon_current": 1,
+  "C407_current_pair_derivatives": 2,
+  "J_gJ_g_exact_source_derivative_count": 2,
+  "complete_C117_action": false,
+  "generic_C124_derivative_density_replaced_globally": false,
+  "historical_owners_modified": false,
+  "products": [
+    {
+      "C409_route": "C408_SOURCE_ROUTED_EXISTING_PRIMITIVE",
+      "product": "J_qJ_q",
+      "source_gluon_current_count": 0,
+      "source_longitudinal_derivative_count": 0
+    },
+    {
+      "C409_route": "C406_FULL_ONE_GLUON_CURRENT_DESCENDANT",
+      "product": "J_qJ_g",
+      "source_gluon_current_count": 1,
+      "source_longitudinal_derivative_count": 1
+    },
+    {
+      "C409_route": "C406_FULL_ONE_GLUON_CURRENT_DESCENDANT",
+      "product": "J_gJ_q",
+      "source_gluon_current_count": 1,
+      "source_longitudinal_derivative_count": 1
+    },
+    {
+      "C409_route": "C407_PRODUCT_OF_TWO_C406_CURRENT_DESCENDANTS",
+      "product": "J_gJ_g",
+      "source_gluon_current_count": 2,
+      "source_longitudinal_derivative_count": 2
+    }
+  ],
+  "reconciliation_rule": "On the reduced number-preserving J_gJ_g route, use the product of the two full C406 one-gluon current descendants exactly once; do not multiply a second derivative leaf or derivative-density pi*k/L member factor.",
+  "root": "a677824815333aa6829e027ec6866944dbf4c29b8ff8755f18729282a36cff11",
+  "schema": "C409-C117-I2-DERIVATIVE-COUNT-AUTHORITY-V1",
+  "source_gluon_current": "J_g^+=-f A_perp partial^+ A_perp",
+  "source_operator": "P^-_IC=-(g_s^2/2) integral [Q0(i partial+)^-1 j_a^+] [Q0(i partial+)^-1 j_a^+]",
+  "status": "C409_C117_I2_JGJG_DERIVATIVE_COUNT_RECONCILED_NUMBER_PRESERVING_QG_PRODUCT_BLOCK_PRIMITIVE_READY_FULL_C117_ACTION_UNAVAILABLE"
+}

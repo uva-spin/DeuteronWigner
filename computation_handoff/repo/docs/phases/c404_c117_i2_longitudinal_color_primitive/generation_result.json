@@ -1,0 +1,125 @@
+{
+  "activation_gate_status": "NOT_READY",
+  "artifact_count_excluding_generation_result": 18,
+  "artifacts": [
+    {
+      "bytes": 1421,
+      "path": "C404_ACCEPTANCE_SPEC.json",
+      "sha256": "f624370275d152a697d456b4bfdaa0dd6ca6469d076005e221216742cdab108b"
+    },
+    {
+      "bytes": 5921,
+      "path": "C404_C117_I2_LONGITUDINAL_COLOR_PRIMITIVE_SCIENCE_LOCK.md",
+      "sha256": "cddf1b88446b70f52043e3a1e57ca0cd205d3e4f2fdbbcb4b144b955015b3814"
+    },
+    {
+      "bytes": 2686,
+      "path": "C404_MATHEMATICAL_AND_ALGORITHMIC_DESIGN.md",
+      "sha256": "a57bfccc4f5298f6c8dbf216030a92f36a7ddf6f7d759aff54d6a08964174fa1"
+    },
+    {
+      "bytes": 956,
+      "path": "C404_MERGE_READINESS_CHECKLIST.md",
+      "sha256": "dca283c57fd4a63bc8194d0281bc8b708687ff58bbdc3ed6535366b5275963c0"
+    },
+    {
+      "bytes": 2987,
+      "path": "C404_SOURCE_EVIDENCE_HASHES.json",
+      "sha256": "0e1f07faecda086eefb841a305c16c450b503f50485b702e1ad576becf9f6f56"
+    },
+    {
+      "bytes": 2992,
+      "path": "C404_TWO_CLEAN_BUILDS.json",
+      "sha256": "9fce89d42e3e278288fae29ac940ca98b8f5ae6f462260e5d1ad1da6a1d65d63"
+    },
+    {
+      "bytes": 3177,
+      "path": "CHATGPT_STAGE_IMPLEMENTATION_REPORT.md",
+      "sha256": "1a98fe97e02b8706ee09bd51187192a35d27e17266a9b2b04b2e645ef79acd6f"
+    },
+    {
+      "bytes": 3198,
+      "path": "CHATGPT_STAGE_TEST_EXECUTION.json",
+      "sha256": "61394af0602d496623ac24ff91f9c2a42baf6da94e00b168b51833a1d77113f8"
+    },
+    {
+      "bytes": 1098,
+      "path": "binding_update_summary.json",
+      "sha256": "9a19a8bbd966f4cd26df0c03b689ef0dce0e4ef60d63ae79f62a297b16771ecf"
+    },
+    {
+      "bytes": 1110,
+      "path": "blocker_or_completion.json",
+      "sha256": "be35a23ec697348c946a1c8023a7eddd0c4676e2b0f12bf910a381b1399324b2"
+    },
+    {
+      "bytes": 92943,
+      "path": "c396_coordinate_binding_inventory.json",
+      "sha256": "8fe09109bf3afc242f5c6b1ed6494ef391f9f323680ccc2b764b46f4d86ee48b"
+    },
+    {
+      "bytes": 11512,
+      "path": "factorization_stress_validation.json",
+      "sha256": "5ccd521138b8936d4f158a0440fd6461fc6b59bad4a834324b6ff26e1f8f0029"
+    },
+    {
+      "bytes": 2390,
+      "path": "implementation_report.md",
+      "sha256": "b03a6bf77226f2cbf065c77e0a6f7451820ba8140329c1783a9be463d868f1c0"
+    },
+    {
+      "bytes": 2395,
+      "path": "input_freeze.json",
+      "sha256": "579aabe3b6bbbe6109c3e7441ed8ce7270412b14d9200ba83ca7d1f001e4e42a"
+    },
+    {
+      "bytes": 240047,
+      "path": "longitudinal_transfer_inventory.json",
+      "sha256": "a1874902d33aeaebdf7d918fc975a48b6929cef9d704e017b887bc739b3fedbb"
+    },
+    {
+      "bytes": 784,
+      "path": "release.json",
+      "sha256": "2a84f81307d0439164e6e3e6cec9fe1e21b63c97cd5f84dd6feeef0efa64a141"
+    },
+    {
+      "bytes": 1117,
+      "path": "scientific_nonclaims.json",
+      "sha256": "32c566949d989bbc18cb58197a98278528d4e19c82d4a0011de3b1dd6b5863bc"
+    },
+    {
+      "bytes": 7896,
+      "path": "triplet_color_spin_validation.json",
+      "sha256": "ec8af261856970bf92b220ebe6aee35afb25c8c6a47ad5d794f7b8a969c8bf2e"
+    }
+  ],
+  "complete_C117_numerical_apply_paths": 0,
+  "complete_C396_numerical_apply_paths": 6,
+  "environment": {
+    "numpy": "1.26.3",
+    "python": "3.9.6",
+    "scipy": "1.13.0"
+  },
+  "full_C117_I2_action_ready": false,
+  "full_C396_forward_map": false,
+  "maximum_color_scalar_residual": 1.472877282518059e-15,
+  "maximum_factorization_stress_residual": 4.274543878492952e-16,
+  "maximum_longitudinal_symmetry_residual": 0.0,
+  "output_directory": "docs/phases/c404_c117_i2_longitudinal_color_primitive",
+  "package_root": "0bdd5e00acb768c8db0af8fbfd3ff9f7b7fbc08f80a38f567f310da6ec4e3d59",
+  "partition_counts": {
+    "K11": 5,
+    "K13": 6,
+    "K9": 4
+  },
+  "physical_fit_authorized": false,
+  "qg_dimensions": {
+    "K11": 2700,
+    "K13": 4752,
+    "K9": 1344
+  },
+  "rank_status": "RANK_NOT_EVALUATED",
+  "schema": "C404-C117-I2-LONGITUDINAL-COLOR-GENERATION-RESULT-V1",
+  "source_qualified_product_topology": false,
+  "status": "C404_C117_I2_Q0_LONGITUDINAL_AND_TRIPLET_COLOR_PRIMITIVE_READY_FULL_C117_OPERATOR_UNAVAILABLE"
+}

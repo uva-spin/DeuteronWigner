@@ -1,9 +1,27 @@
 # DeuteronWigner Computation Handoff
 
+The live public continuation handoff is
+<https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
+The canonical source checkout is `/Users/dustin/work/DeuteronWigner`; this
+bundle is its published continuation view and must track the accepted `main`
+commit.
+
 This directory contains the project handoff bundle for independent technical
 review and continued development. It is
 the only new directory in this branch; existing repository files are not
 replaced.
+
+## Synchronization rule
+
+After every accepted phase or material scientific commit on `main`, update the
+published tree in the same publication cycle. Update
+`computation_handoff/repo/CURRENT_SOURCE_COMMIT.txt`, the relevant phase
+evidence, and the current repository handoff; refresh `REPO_CONTENTS.*` when
+the published inventory changes; then verify, commit, and push `main`.
+The source commit marker must identify the accepted source commit represented
+by the published handoff before it is described as current. A handoff-only
+publication commit may follow that source commit. The ZIP parts below are a
+historical 2026-08-28 archive unless separately regenerated and relabeled.
 
 ## Reconstruct the ZIP
 

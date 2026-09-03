@@ -1,0 +1,48 @@
+{
+  "schema": "C409-ACCEPTANCE-SPEC-V1",
+  "phase": "C409_C117_I2_DERIVATIVE_DENSITY_RECONCILIATION",
+  "required_baseline": "ab0af6587131a2846425e9bb19cfdc784b9f0bdb",
+  "required_branch": "codex/c409-c117-i2-derivative-density-reconciliation",
+  "required_worktree": "/Users/dustin/work/DeuteronWigner/.phase_worktrees/c409_c117_i2_derivative_density_reconciliation",
+  "scientific_requirements": {
+    "J_gJ_g_source_gluon_current_count": 2,
+    "J_gJ_g_source_derivative_count": 2,
+    "C119_extra_derivative_leaf_used": false,
+    "C124_C126_extra_derivative_density_factor_used": false,
+    "C_A_counted_once": true,
+    "source_routed_J_gJ_g_qg_paths": 3,
+    "source_routed_product_block_primitive_paths": 12,
+    "complete_C117_numerical_apply_paths": 0,
+    "complete_C396_numerical_apply_paths": 6,
+    "rank_status": "RANK_NOT_EVALUATED",
+    "physical_fit_authorized": false,
+    "activation_gate_status": "NOT_READY"
+  },
+  "numerical_requirements": {
+    "derivative_validation_rows": 62,
+    "maximum_sparse_matrix_free_residual": 5e-10,
+    "maximum_hermiticity_residual": 5e-12,
+    "maximum_single_counted_C_A_equivalence_residual": 5e-10,
+    "minimum_spatial_eigenvalue_tolerance_GeV2": -1e-12,
+    "minimum_longitudinal_weight_strictly_positive": true
+  },
+  "compatibility_requirements": {
+    "python": "3.9.6 compatible",
+    "runtime_PEP604_type_aliases": 0,
+    "int_bit_count_calls": 0,
+    "zip_strict_calls": 0
+  },
+  "forbidden": [
+    "historical C114/C119/C124/C126/C192 or C400-C408 mutation",
+    "generic replacement of C124 derivative-density semantics",
+    "extra derivative factor multiplication",
+    "double application of C_A",
+    "zero-fill of unresolved q-sector gluon branches",
+    "selection of g_s or c_C117_1",
+    "physical rank evaluation",
+    "physical fit",
+    "Hamiltonian activation",
+    "merge or push by the phase agent"
+  ],
+  "required_focused_test_count": 29
+}
