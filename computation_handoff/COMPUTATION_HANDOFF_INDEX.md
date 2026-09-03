@@ -49,8 +49,9 @@ working tree as found; it does not imply that the working tree was clean.
 
 After every accepted commit on `main`, refresh the published tree, update its
 source-commit marker and handoff evidence, refresh contents/checksum manifests
-when needed, verify, commit, and push. A stale marker means the public handoff
-is not current.
+when needed, verify, commit, and push. The marker identifies the accepted
+source commit represented by the published tree; a handoff-only publication
+commit may follow it. A stale marker means the public handoff is not current.
 
 ## Deliberate exclusions
 

@@ -181,8 +181,9 @@ After every accepted phase or material scientific commit on canonical `main`:
 5. verify the snapshot and documentation; and
 6. commit and push `main`.
 
-The published tree is not current unless its source marker equals accepted
-canonical `main`. Never replace unavailable/missing values with zeros or
+The published tree is not current unless its source marker identifies the
+accepted source commit represented by the published tree. A handoff-only
+publication commit may follow it. Never replace unavailable/missing values with zeros or
 invent normalization, physical rank, fit, or activation.
 
 ## Primary evidence

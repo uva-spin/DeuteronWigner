@@ -16,8 +16,9 @@ After every accepted phase or material scientific commit on the canonical
 `main`, this tree must be refreshed in the same publication cycle. Update the
 source-commit marker, phase evidence, and current handoff; refresh
 `REPO_CONTENTS.*` when the inventory changes; verify, commit, and push. Do not
-describe this tree as current when its source marker does not equal the
-accepted source commit. Preserve unavailable-versus-zero,
+describe this tree as current unless its source marker identifies the accepted
+source commit represented by the published tree. A handoff-only publication
+commit may follow it. Preserve unavailable-versus-zero,
 source-shape-versus-coefficient, and numerical-path-versus-physical-rank
 distinctions.
 

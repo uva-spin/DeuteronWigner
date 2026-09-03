@@ -18,8 +18,9 @@ published tree in the same publication cycle. Update
 `computation_handoff/repo/CURRENT_SOURCE_COMMIT.txt`, the relevant phase
 evidence, and the current repository handoff; refresh `REPO_CONTENTS.*` when
 the published inventory changes; then verify, commit, and push `main`.
-The source commit marker must equal the accepted source commit before the
-published handoff is described as current. The ZIP parts below are a
+The source commit marker must identify the accepted source commit represented
+by the published handoff before it is described as current. A handoff-only
+publication commit may follow that source commit. The ZIP parts below are a
 historical 2026-08-28 archive unless separately regenerated and relabeled.
 
 ## Reconstruct the ZIP

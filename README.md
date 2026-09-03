@@ -199,7 +199,9 @@ update the published tree in the same change or immediately afterward:
 5. verify the published tree, commit it, and push `main`.
 
 Do not claim that the public handoff is current unless its source-commit
-marker equals the accepted `main` commit. Preserve unavailable-versus-zero,
+marker identifies the accepted source commit represented by the published
+snapshot. A handoff-only publication commit may follow that source commit.
+Preserve unavailable-versus-zero,
 source-shape-versus-coefficient, and numerical-path-versus-physical-rank
 distinctions when updating it.
 
