@@ -1,0 +1,56 @@
+{
+  "C74_color_records": 72,
+  "C77_crosswalk": "07f94c12ee0b1f25d35fd7ab9345f87bea488a87683404b717225dd8f0e447bb",
+  "C78": {
+    "K11_2_N10_b0.45": {
+      "basis_hash": "a2a6cebc24546741c68208e7e93a284d8eacbed6f004ef73608b2d1e0a1d8cc3",
+      "kernel_coordinates": 165991250,
+      "payload_hash": "32679ddd0eeb9871cbe7dfef7d12ddf3c8450700cb98ed58260d9897230627c1",
+      "supported_pairs": 43350
+    },
+    "K13_2_N12_b0.50": {
+      "basis_hash": "46c956b0bb142246b3bc3624787f374431c33bf92ecc39281abdd5ce6d475d42",
+      "kernel_coordinates": 697394304,
+      "payload_hash": "8a171c425c4179633ae057f6a1ea6b9d8f793556679fd1e548445105fdc84ed5",
+      "supported_pairs": 95256
+    },
+    "K9_2_N8_b0.40": {
+      "basis_hash": "c123a67998692fb39390f06ab5ecd7bb4179d54f4801eaf364291297dec56da4",
+      "kernel_coordinates": 28606464,
+      "payload_hash": "2e90b304a4e6c97e0ce1a5ce3f25f1c81a32ba9b6722c1b5be455df6854bf7b4",
+      "supported_pairs": 16224
+    }
+  },
+  "C80": {
+    "C43_C55_W3_hash": "86dd0ff579bd8d31879e81e32c6f62a59039c3473cf5f8ca8ea4694c74517a7a",
+    "C50": "convention-only negative arity control",
+    "C55_direct_route": {
+      "denominator": "1/(p_q^+ + k_g^+)",
+      "monomial": "bdagger a_dagger a b",
+      "right_product_mode": "p_q+k_g",
+      "zero_status": "NONZERO_BY_POSITIVITY"
+    },
+    "C57": "frozen through C78; no threshold read",
+    "C77_crosswalk_hash": "07f94c12ee0b1f25d35fd7ab9345f87bea488a87683404b717225dd8f0e447bb",
+    "C78": {
+      "K11_2_N10_b0.45": {
+        "coordinates": 165991250,
+        "pairs": 43350,
+        "payload_hash": "32679ddd0eeb9871cbe7dfef7d12ddf3c8450700cb98ed58260d9897230627c1"
+      },
+      "K13_2_N12_b0.50": {
+        "coordinates": 697394304,
+        "pairs": 95256,
+        "payload_hash": "8a171c425c4179633ae057f6a1ea6b9d8f793556679fd1e548445105fdc84ed5"
+      },
+      "K9_2_N8_b0.40": {
+        "coordinates": 28606464,
+        "pairs": 16224,
+        "payload_hash": "2e90b304a4e6c97e0ce1a5ce3f25f1c81a32ba9b6722c1b5be455df6854bf7b4"
+      }
+    },
+    "C78_status": "C78_SOURCE_DERIVED_IFERM_CONTACT_SUPPORT_READY",
+    "status": "C80_INPUTS_FROZEN_COMPLETE"
+  },
+  "status": "C82_INPUTS_FROZEN_COMPLETE"
+}

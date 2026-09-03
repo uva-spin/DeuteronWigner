@@ -1,0 +1,36 @@
+{
+  "constant_plus_residual": 0.0,
+  "content_hash": "3359e0820a9699973af37bd55dd2547e1c7cd4acafceb0247f2c280596ea84d8",
+  "convention": {
+    "convolution": "MELLIN_C_x_f_over_z",
+    "delta_normalization": 1.0,
+    "domain": [
+      0.0,
+      1.0
+    ],
+    "endpoint": 1.0,
+    "subtraction": "phi(x)-phi(1)",
+    "variable": "x"
+  },
+  "cutoff_used": false,
+  "grid_only": false,
+  "hpl": {
+    "basis_preserved": true,
+    "large_x_checked": true,
+    "maximum_sample_residual": 0.0,
+    "small_x_checked": true,
+    "unsupported_complex_continuation": true
+  },
+  "lower_limit_residual": 0.0,
+  "maximum_residual": 0.0,
+  "mellin_residual": 0.0,
+  "schema_version": "1.0.0",
+  "types": [
+    "DELTA_ENDPOINT",
+    "REGULAR_POLYNOMIAL",
+    "PLUS_DK",
+    "SMALL_X_LOG",
+    "HPL",
+    "MATRIX_DISTRIBUTION"
+  ]
+}

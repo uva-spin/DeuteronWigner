@@ -1,0 +1,38 @@
+{
+  "package_root": "8448ad3c55d0f440661f54bc26ff74f6234366479692dc37d8db0162dc17fe24",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUPREDUCE1-C",
+  "record": {
+    "published_numeric_coefficients": false,
+    "reason": "C363 and C365 supply algebraic ASTs but no common normalized loop/phase-space master representation; assigning residues now would invent authority",
+    "root": "5c695f5ec91d7c9ac181d27ccb6b608a7826bb5b5591d0d99d044a9d78186b32",
+    "rows": [
+      {
+        "IR": "PENDING_COMMON_MASTER",
+        "UV": "PENDING_COMMON_MASTER",
+        "alpha": "PENDING_COMMON_MASTER",
+        "beta": "NOT_APPLICABLE",
+        "group": "distribution",
+        "mixed": "NOT_APPLICABLE"
+      },
+      {
+        "IR": "PENDING_COMMON_MASTER",
+        "UV": "PENDING_COMMON_MASTER",
+        "alpha": "NOT_APPLICABLE",
+        "beta": "PENDING_COMMON_MASTER",
+        "group": "fragmentation",
+        "mixed": "NOT_APPLICABLE"
+      },
+      {
+        "IR": "PENDING_COMMON_MASTER",
+        "UV": "PENDING_COMMON_MASTER",
+        "alpha": "PENDING_COMMON_MASTER",
+        "beta": "PENDING_COMMON_MASTER",
+        "group": "soft",
+        "mixed": "PENDING_COMMON_MASTER"
+      }
+    ]
+  },
+  "status": "C367_GAUGE_COMPLETE_REAL_VIRTUAL_GROUP_AST_REDUCED_COMMON_MASTER_INTEGRALS_REQUIRED",
+  "validation": "BOUND"
+}

@@ -1,0 +1,39 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "regulator_scope_contract",
+  "authority_record": {
+    "authenticated": 2,
+    "complement_ready": 0,
+    "count": 2,
+    "root": "4dee6cc8511d55c3bf30845ab4084a3d0ea2907cf0cf2c48f445e47aadd5f9ce",
+    "rows": [
+      {
+        "authority": "C57",
+        "fixed_retained_resolution": true,
+        "object": "conditional corresponding-propagating finite-HO/Fock regulator",
+        "parameterized_unbounded_complement": false,
+        "reason": "depends on C45/C47 fixed K,Nmax parent-indexed support",
+        "status": "C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY"
+      },
+      {
+        "authority": "C80",
+        "fixed_retained_resolution": true,
+        "object": "exact raw four-mode W3 contact coordinate evaluator",
+        "parameterized_unbounded_complement": false,
+        "reason": "coordinate factory and validation require retained resolution and raw crosswalk IDs",
+        "status": "C80_EXACT_SOURCE_CHAIN_DERIVED_IFCONTACT_KERNEL_EVALUATOR_READY"
+      }
+    ]
+  },
+  "complement_adapter": false,
+  "package_root": "38d21d500ee10f9ec9d779278af4b7019c76a375275b21ca9d2b2c0e61e6b4b9",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CONTACT1-D",
+  "retained_authorities": 2,
+  "schema": "C242-REGULATOR-SCOPE-CONTRACT-V1",
+  "status": "C242_RETAINED_CONTACT_REGULATOR_AND_RAW_EVALUATOR_AUTHENTICATED_COMPLEMENT_RAW_MODE_ADAPTER_INCOMPLETE"
+}

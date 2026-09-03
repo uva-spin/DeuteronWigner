@@ -1,0 +1,103 @@
+{
+  "calibrated": [
+    "POLE_MASS",
+    "TRANSITION_NORMALIZATION",
+    "CHARGE_ISOSPIN",
+    "CURRENT_NORMALIZATION"
+  ],
+  "channels": [
+    {
+      "J": 1,
+      "channel_id": "C17:N2:CHANNEL:pn_pi0",
+      "charge": 1,
+      "charge_channel": "pn_pi0",
+      "isospin": 0,
+      "jz": -1,
+      "nn_isospin": 1,
+      "nn_spin": 1,
+      "normalization": "DELTA_E_CHANNEL",
+      "parity": 1,
+      "partial_wave": "P_WAVE_JACOBI",
+      "pion_parity": -1,
+      "regulator": "EXPONENTIAL_N2_V1",
+      "threshold": 2.017
+    },
+    {
+      "J": 1,
+      "channel_id": "C17:N2:CHANNEL:pp_piminus",
+      "charge": 1,
+      "charge_channel": "pp_piminus",
+      "isospin": 0,
+      "jz": 0,
+      "nn_isospin": 1,
+      "nn_spin": 1,
+      "normalization": "DELTA_E_CHANNEL",
+      "parity": 1,
+      "partial_wave": "P_WAVE_JACOBI",
+      "pion_parity": -1,
+      "regulator": "EXPONENTIAL_N2_V1",
+      "threshold": 2.017
+    },
+    {
+      "J": 1,
+      "channel_id": "C17:N2:CHANNEL:nn_piplus",
+      "charge": 1,
+      "charge_channel": "nn_piplus",
+      "isospin": 0,
+      "jz": 1,
+      "nn_isospin": 1,
+      "nn_spin": 1,
+      "normalization": "DELTA_E_CHANNEL",
+      "parity": 1,
+      "partial_wave": "P_WAVE_JACOBI",
+      "pion_parity": -1,
+      "regulator": "EXPONENTIAL_N2_V1",
+      "threshold": 2.017
+    }
+  ],
+  "hidden_tmd_fit": false,
+  "holdouts": {
+    "angular_condition": 3.2e-13,
+    "coherent": 0.0084,
+    "current_component": 0.0041,
+    "pion_moment": 0.013,
+    "pole_residue": 0.9987585595894021,
+    "tensor_transition": 0.0062,
+    "transition_energy_2": 0.0071
+  },
+  "jacobian_singular_values": [
+    1.2,
+    0.83,
+    0.41,
+    0.09,
+    0.0
+  ],
+  "null_directions": 1,
+  "plans": [
+    {
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "n1_plan_id": "C16:N1:PLAN:e9c55ed24cd1633204f8",
+      "plan_id": "C17:N2:PLAN:27a254c69086efd0dc4a",
+      "route": "CONTINUUM_AV18",
+      "scope": "C17_N2_VALIDATION_ONLY",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    },
+    {
+      "h7_plan_id": "C14:H7:PLAN:a6b0cd2ecdc418aa4c31",
+      "n1_plan_id": "C16:N1:PLAN:ba9b7abeeea3420f581b",
+      "plan_id": "C17:N2:PLAN:c746a359bfb3eab7bdb8",
+      "route": "FINITE_VOLUME_NORFOLK",
+      "scope": "C17_N2_VALIDATION_ONLY",
+      "wave_source": "NORFOLK:data/raw/norfolk/fdeut.nvia"
+    },
+    {
+      "h7_plan_id": "C14:H7:PLAN:01741c51ff49b3844630",
+      "n1_plan_id": "C16:N1:PLAN:316711848013bcb69aa1",
+      "plan_id": "C17:N2:PLAN:c7239d3ef1acacdc3598",
+      "route": "CONTINUUM_AV18_H7B",
+      "scope": "C17_N2_VALIDATION_ONLY",
+      "wave_source": "AV18:data/raw/av18/deut.wf"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

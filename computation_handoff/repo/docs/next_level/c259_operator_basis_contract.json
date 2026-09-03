@@ -1,0 +1,146 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "operator_basis_contract",
+  "authority_record": {
+    "closed_at_declared_scope": true,
+    "dimension": 4,
+    "independence_proof": "four authenticated graph-local tensor-factor coordinates; exact dual Gram construction supplies four independent linear functionals without changing the basis",
+    "root": "984da1c887622d165c1298be786e3c414f4efab49d010d9390903af2e6020ed7",
+    "rows": [
+      {
+        "BRST_ST": "must be tested as a renormalized combination; no individual invariance claimed",
+        "activation_relevance": "Hamiltonian matrix elements at K9/K11/K13",
+        "coefficient_id": "c_C117_1",
+        "color_tensor": "source ordered color; C74 U3 for triplet direction",
+        "coupling_order": "g_s^2 factored",
+        "current_component": "J+ (constraint-current complement)",
+        "direction": "I2_density_projector",
+        "field_content": "instantaneous current-current q/qg graph complement",
+        "graph_local_role": "orthogonal finite-subspace local density projector",
+        "hermitian_partner": true,
+        "longitudinal_distribution": "positive APBC/PBC modes, Q0 nonzero transfer; derivative weight only for derivative_density",
+        "mass_dimension": "Hamiltonian mass-squared direction; coefficient convention deferred to C260",
+        "mixing_partners": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "C117-DELTA-H-1",
+        "projector_id": "C259-DUAL-P1",
+        "redundancy": "not proven EOM, total derivative, BRST exact, or redundant",
+        "source_owner": "C117",
+        "source_roots": [
+          "b690bad5e4e47c39e5a9c482c26d673ac6eb6a5531df7806664d35c71098e897",
+          "C117_C116_SOURCE_DERIVED_GRAPH_SPECIFIC_CURRENT_PROJECTOR_AUTHORITY_READY"
+        ],
+        "spin_helicity_tensor": "C115 source-current selection, helicity diagonal/projected as graph-defined",
+        "support": "P0/Q0 and boundary scope inherited C117/C254; no new holonomy",
+        "transverse_HO": "finite C45 shell; C64/C77 intrinsic transform for CM direction"
+      },
+      {
+        "BRST_ST": "must be tested as a renormalized combination; no individual invariance claimed",
+        "activation_relevance": "Hamiltonian matrix elements at K9/K11/K13",
+        "coefficient_id": "c_C117_2",
+        "color_tensor": "source ordered color; C74 U3 for triplet direction",
+        "coupling_order": "g_s^2 factored",
+        "current_component": "J+ (constraint-current complement)",
+        "direction": "derivative_density",
+        "field_content": "instantaneous current-current q/qg graph complement",
+        "graph_local_role": "longitudinal-derivative weighted density",
+        "hermitian_partner": true,
+        "longitudinal_distribution": "positive APBC/PBC modes, Q0 nonzero transfer; derivative weight only for derivative_density",
+        "mass_dimension": "Hamiltonian mass-squared direction; coefficient convention deferred to C260",
+        "mixing_partners": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "C117-DELTA-H-2",
+        "projector_id": "C259-DUAL-P2",
+        "redundancy": "not proven EOM, total derivative, BRST exact, or redundant",
+        "source_owner": "C117",
+        "source_roots": [
+          "b690bad5e4e47c39e5a9c482c26d673ac6eb6a5531df7806664d35c71098e897",
+          "C117_C116_SOURCE_DERIVED_GRAPH_SPECIFIC_CURRENT_PROJECTOR_AUTHORITY_READY"
+        ],
+        "spin_helicity_tensor": "C115 source-current selection, helicity diagonal/projected as graph-defined",
+        "support": "P0/Q0 and boundary scope inherited C117/C254; no new holonomy",
+        "transverse_HO": "finite C45 shell; C64/C77 intrinsic transform for CM direction"
+      },
+      {
+        "BRST_ST": "must be tested as a renormalized combination; no individual invariance claimed",
+        "activation_relevance": "Hamiltonian matrix elements at K9/K11/K13",
+        "coefficient_id": "c_C117_3",
+        "color_tensor": "source ordered color; C74 U3 for triplet direction",
+        "coupling_order": "g_s^2 factored",
+        "current_component": "J+ (constraint-current complement)",
+        "direction": "CM_ground",
+        "field_content": "instantaneous current-current q/qg graph complement",
+        "graph_local_role": "intrinsic CM-ground projector",
+        "hermitian_partner": true,
+        "longitudinal_distribution": "positive APBC/PBC modes, Q0 nonzero transfer; derivative weight only for derivative_density",
+        "mass_dimension": "Hamiltonian mass-squared direction; coefficient convention deferred to C260",
+        "mixing_partners": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "C117-DELTA-H-3",
+        "projector_id": "C259-DUAL-P3",
+        "redundancy": "not proven EOM, total derivative, BRST exact, or redundant",
+        "source_owner": "C117",
+        "source_roots": [
+          "b690bad5e4e47c39e5a9c482c26d673ac6eb6a5531df7806664d35c71098e897",
+          "C117_C116_SOURCE_DERIVED_GRAPH_SPECIFIC_CURRENT_PROJECTOR_AUTHORITY_READY"
+        ],
+        "spin_helicity_tensor": "C115 source-current selection, helicity diagonal/projected as graph-defined",
+        "support": "P0/Q0 and boundary scope inherited C117/C254; no new holonomy",
+        "transverse_HO": "finite C45 shell; C64/C77 intrinsic transform for CM direction"
+      },
+      {
+        "BRST_ST": "must be tested as a renormalized combination; no individual invariance claimed",
+        "activation_relevance": "Hamiltonian matrix elements at K9/K11/K13",
+        "coefficient_id": "c_C117_4",
+        "color_tensor": "source ordered color; C74 U3 for triplet direction",
+        "coupling_order": "g_s^2 factored",
+        "current_component": "J+ (constraint-current complement)",
+        "direction": "triplet_projected",
+        "field_content": "instantaneous current-current q/qg graph complement",
+        "graph_local_role": "physical qg color-triplet projector",
+        "hermitian_partner": true,
+        "longitudinal_distribution": "positive APBC/PBC modes, Q0 nonzero transfer; derivative weight only for derivative_density",
+        "mass_dimension": "Hamiltonian mass-squared direction; coefficient convention deferred to C260",
+        "mixing_partners": [
+          "I2_density_projector",
+          "derivative_density",
+          "CM_ground",
+          "triplet_projected"
+        ],
+        "operator_id": "C117-DELTA-H-4",
+        "projector_id": "C259-DUAL-P4",
+        "redundancy": "not proven EOM, total derivative, BRST exact, or redundant",
+        "source_owner": "C117",
+        "source_roots": [
+          "b690bad5e4e47c39e5a9c482c26d673ac6eb6a5531df7806664d35c71098e897",
+          "C117_C116_SOURCE_DERIVED_GRAPH_SPECIFIC_CURRENT_PROJECTOR_AUTHORITY_READY"
+        ],
+        "spin_helicity_tensor": "C115 source-current selection, helicity diagonal/projected as graph-defined",
+        "support": "P0/Q0 and boundary scope inherited C117/C254; no new holonomy",
+        "transverse_HO": "finite C45 shell; C64/C77 intrinsic transform for CM direction"
+      }
+    ]
+  },
+  "package_root": "3316addcea31e845dc16f57f0e921a6409b87c2764635f261e8dff3454cd62ed",
+  "physical": false,
+  "plan": "C117RENORMDESIGN1-A",
+  "schema": "C259-OPERATOR_BASIS-CONTRACT-V1",
+  "status": "C259_PROJECT_C117_RI_SMOM_V1_FULL_RANK_DESIGN_READY",
+  "validation": "BOUND"
+}

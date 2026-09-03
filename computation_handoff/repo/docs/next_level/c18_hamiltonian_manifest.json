@@ -1,0 +1,69 @@
+{
+  "Z_6Q": 0.0185758315,
+  "Z_DELTADELTA": 0.028,
+  "Z_NN": 0.845,
+  "Z_NNPI": 0.1084241685,
+  "exact_krylov_residual": 1.6e-15,
+  "hermiticity_residual": 0.0,
+  "ledgers": {
+    "EMT_momentum": 0.0,
+    "Jz": 0.0,
+    "baryon_number": 0.0,
+    "charge": 0.0,
+    "cluster_overlap": 0.0,
+    "current_continuity": 0.0,
+    "isospin": 0.0,
+    "parity": 0.0,
+    "partonic_number_momentum": 0.0,
+    "plus_momentum": 0.0,
+    "spin1_tensor": 0.0
+  },
+  "matrix": [
+    [
+      -2.2246,
+      0.031,
+      0.014,
+      0.009
+    ],
+    [
+      0.031,
+      2.12,
+      0.006,
+      0.004
+    ],
+    [
+      0.014,
+      0.006,
+      2.47,
+      0.011
+    ],
+    [
+      0.009,
+      0.004,
+      0.011,
+      3.18
+    ]
+  ],
+  "matrix_free_residual": 0.0,
+  "normalization_residual": 0.0,
+  "null_directions": 2,
+  "probabilities_are_diagnostics": true,
+  "resolution_trajectory": [
+    0.7,
+    1.0,
+    1.3
+  ],
+  "schema_version": "1.0.0",
+  "sectors": [
+    "NN",
+    "NNPI_CONTINUUM",
+    "DELTADELTA",
+    "SIX_QUARK_COMPACT"
+  ],
+  "unsupported_blocks": [
+    {
+      "block": "NNPI_TO_SIX_QUARK",
+      "reason": "BEYOND_DECLARED_ORDER"
+    }
+  ]
+}

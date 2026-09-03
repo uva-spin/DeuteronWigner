@@ -1,0 +1,16 @@
+{
+  "annihilation_conditions": "a_nu|0_LF>=b_alpha|0_LF>=d_alpha|0_LF>=0 for positive-p^+ APBC/PBC dynamical modes",
+  "boundary_conditions": "quarks APBC; gluons PBC; cell -L<=x^-<=L; L symbolic",
+  "commutator_normalization": "finite-cell orthonormal mode delta, inherited from C45 phi_k=exp(i pi k x^-/L)/sqrt(2L)",
+  "constrained_zero_modes_in_vacuum_algebra": "NO: retained as declared C43 constrained/residual controls, not silently contracted",
+  "not_the_vacuum": [
+    "B=0 soft vacuum root",
+    "open-color one-quark matching module",
+    "C47 physical qg basis",
+    "C11 proton",
+    "ART25 ensemble"
+  ],
+  "status": "SOURCE_DERIVED_NORMAL_ORDER_REFERENCE",
+  "vacuum_identity": "perturbative light-front Fock vacuum used by BPP normal ordering",
+  "zero_mode_control": "ordinary gluon k^+=0 is P0-projected out; inverse partial^+ is PV/antisymmetric on Q0; constrained/residual sectors stay distinct"
+}

@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "controlled_sequence_executable": false,
+    "evaluations_emitted": 0,
+    "root": "215e16030ea7b255f5305059deda1cecc638239f11198c729c113f640e56333f",
+    "rows": [
+      {
+        "C316": "resolution label only",
+        "coordinate": "K",
+        "independent": false
+      },
+      {
+        "C316": "hard-coded by resolution",
+        "coordinate": "Nmax",
+        "independent": false
+      },
+      {
+        "C316": "hard-coded by resolution",
+        "coordinate": "bHO",
+        "independent": false
+      },
+      {
+        "C316": "unconditionally excluded",
+        "coordinate": "PBC zero mode",
+        "independent": false
+      },
+      {
+        "C316": "caller controlled",
+        "coordinate": "longitudinal sum cutoff N",
+        "independent": true
+      },
+      {
+        "C316": "caller controlled nonphysical",
+        "coordinate": "L",
+        "independent": true
+      }
+    ]
+  },
+  "package_root": "db0bf71210f0fad060bd5808e364969b746500098ceb0020f08bac30072fdaf9",
+  "physical": false,
+  "plan": "RIMASSC43SEQGEN1-C",
+  "status": "C325_EXECUTABLE_SEQUENCE_AUDITED_GENERAL_SPECTRUM_AND_ZERO_MODE_KERNEL_MISSING",
+  "validation": "PASS"
+}

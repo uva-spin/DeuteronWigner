@@ -1,0 +1,11 @@
+{
+  "checks": {
+    "Hermitian_conjugation": "path reversal",
+    "T_even_future_past": "equal after complete conjugate path at rank zero",
+    "gauge_covariance_residual": 0,
+    "tree_local_current": "gamma+ current"
+  },
+  "fields": "psi_+ supplies gamma+ leading bilocal; constrained fields enter Hamiltonian/Wilson completion",
+  "operator": "psibar(-z/2) gamma+ W_v^dagger T_infinity W_v psi(z/2) at z+=0",
+  "status": "COMPATIBLE_ACTION_LEVEL"
+}

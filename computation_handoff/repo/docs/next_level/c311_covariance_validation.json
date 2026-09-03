@@ -1,0 +1,36 @@
+{
+  "authority_record": {
+    "C310_tail_correlations_propagated": true,
+    "components": [
+      "C310_tail",
+      "epsilon_window",
+      "fit_family",
+      "quadrature",
+      "mode_order",
+      "resolution",
+      "roundoff"
+    ],
+    "covariance": [
+      [
+        0.077,
+        0.021
+      ],
+      [
+        0.021,
+        0.036
+      ]
+    ],
+    "order": [
+      "CHI8",
+      "RE_TF3"
+    ],
+    "positive_semidefinite": true,
+    "root": "ea39881867cbaa014b13460f6b198bfc1d35c9f5771854c0223b53bcb2b1c67f"
+  },
+  "package_root": "4f272c947e9b4b2ded064ab8c63c9b6f128aabce1f7af7a8bc0264a5bd57e593",
+  "physical": false,
+  "plan": "RIMASSEPSLIMIT1-B",
+  "schema": "C311-COVARIANCE-VALIDATION-V1",
+  "status": "C311_CORRELATED_EPSILON_LIMIT_ENCLOSED_FULL_GRAM_SHAPE_COEFFICIENTS_READY_C43_MATCHING_MISSING",
+  "validation": "PASS"
+}

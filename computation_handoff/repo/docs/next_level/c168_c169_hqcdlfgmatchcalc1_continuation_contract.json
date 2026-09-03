@@ -1,0 +1,15 @@
+{
+  "schema": "C168-C169-HQCDLFGMATCHCALC1-CONTINUATION-CONTRACT-V1",
+  "branch": "C169/HQCDLFGMATCHCALC1",
+  "parent_baseline": "c7948959e938a348e75c67f1b9e95d680a14a5e1aa32bee5f479be67bb70066c",
+  "parent_status": "C168_HQCDLFGADAPTER1_NEW_PERTURBATIVE_CALCULATION_REQUIRED",
+  "parent_plan": "LFGADAPTER1-D",
+  "scope": "execute the six exact C168 C43 perturbative calculation capsules",
+  "preserve": ["C43 and C131-C168 roots", "C166 graphs", "six C168 request records", "six calculation capsules", "C134 quarantine", "inherited untracked C157 test"],
+  "required": ["complete C43 self-energy/vertex sectors as requested", "PV/Q0/residual-link/boundary treatment", "common state and IR record", "explicit projector and active N_f", "two independent routes", "componentwise K9/K11/K13 separation", "ST scope for coupling"],
+  "prohibited": ["web search or source acquisition", "silent Landau-to-C43 relabeling", "C158 import or recomputation", "target values before capsule closure", "matching differences", "running", "thresholds", "PDG values", "counterterm/null selection", "Q0/Q1/Q2 changes"],
+  "exact_capsule_count": 6,
+  "C166_graph_nodes_added": 0,
+  "C166_graph_edges_added": 0,
+  "push": false
+}

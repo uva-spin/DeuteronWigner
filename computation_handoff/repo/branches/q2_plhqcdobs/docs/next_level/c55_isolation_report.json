@@ -1,0 +1,20 @@
+{
+  "C40": "not imported",
+  "C47_raw_tuples": "not imported",
+  "C50_combined": "not imported",
+  "C53_values": "not imported; read-only identity audit only",
+  "historical_C9_C13_C14": "not imported",
+  "static": {
+    "forbidden": [
+      "canonical_kernel",
+      "evaluate_canonical_vertex",
+      "assemble_physical_vertex",
+      "m0b",
+      "C40"
+    ],
+    "found": [],
+    "guard": "C55_IFERM_ISOLATION",
+    "pass": true
+  },
+  "status": "PASS"
+}

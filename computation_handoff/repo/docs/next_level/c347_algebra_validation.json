@@ -1,0 +1,18 @@
+{
+  "package_root": "e0a8d3ae0c9e256f04a28995d8e7747b95969604cc165ffd48190a16fb35e2e3",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMECONVERT1-C",
+  "record": {
+    "count_once": true,
+    "identity": "C_AA=I",
+    "inverse": "C_AB^-1=C_BA on declared domain",
+    "pass": true,
+    "reason": "finite-volume and rapidity limits require declared order",
+    "root": "7a10203c9647d0a47b446b9d52fd927d9f383f7d09fb077fe92c9f774ce6631d",
+    "scheme_then_volume_commutes": false,
+    "transitivity": "C_AC=C_BC*C_AB at common scales",
+    "volume_linearity": "M_vol[a F+b G]=a M_vol[F]+b M_vol[G] before nonlinear fitting"
+  },
+  "status": "C347_SYMBOLIC_SCHEME_VOLUME_CONVERSION_OPERATOR_DERIVED_FINITE_KERNEL_COEFFICIENTS_MISSING",
+  "validation": "PASS"
+}

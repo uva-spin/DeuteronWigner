@@ -1,0 +1,73 @@
+{
+  "alternative_theories": true,
+  "h3_state_members": "correlated proton/neutron",
+  "plan_comparison": [
+    {
+      "forward_traces": {
+        "d": 0.16370866084359303,
+        "dbar": 0.02013521540970076,
+        "g": 0.057887406967084554,
+        "u": 0.26047817073054663,
+        "ubar": 0.013634169454566547
+      },
+      "h3_plan_id": "C10:H3:PLAN:7c520ce5e2e04d2c7719",
+      "plan_id": "C11:H4:PLAN:04c40be451b5c7f3a60b"
+    },
+    {
+      "forward_traces": {
+        "d": 0.16370866084359317,
+        "dbar": 0.0057925279043318486,
+        "g": 0.056731789163962064,
+        "u": 0.26047817073054674,
+        "ubar": 0.00493826705524046
+      },
+      "h3_plan_id": "C10:H3:PLAN:b2efe73052d1c9d1004b",
+      "plan_id": "C11:H4:PLAN:dd72e49302e34219b1ad"
+    }
+  ],
+  "plans": [
+    {
+      "grid_id": "C11:H4:GRID:V1",
+      "h3_plan_id": "C10:H3:PLAN:7c520ce5e2e04d2c7719",
+      "path_status": "FORMAL_ORDERED_IDENTITY",
+      "plan_id": "C11:H4:PLAN:04c40be451b5c7f3a60b",
+      "projector_version": "C11:H4:PAULI_GRAM:V1",
+      "quadrature_id": "C11:H4:QUAD:V1",
+      "recoil_id": "SYMMETRIC_XI0",
+      "resolution_id": "H3_FINE",
+      "scope": "C11_H4_VALIDATION_ONLY",
+      "state_bundle_id": "CORRELATED_PN_FINE",
+      "ttn_bond_id": "EXACT_OR_DECLARED_CHI",
+      "wilson_order": 0
+    },
+    {
+      "grid_id": "C11:H4:GRID:V1",
+      "h3_plan_id": "C10:H3:PLAN:b2efe73052d1c9d1004b",
+      "path_status": "FORMAL_ORDERED_IDENTITY",
+      "plan_id": "C11:H4:PLAN:dd72e49302e34219b1ad",
+      "projector_version": "C11:H4:PAULI_GRAM:V1",
+      "quadrature_id": "C11:H4:QUAD:V1",
+      "recoil_id": "SYMMETRIC_XI0",
+      "resolution_id": "H3_FINE",
+      "scope": "C11_H4_VALIDATION_ONLY",
+      "state_bundle_id": "CORRELATED_PN_FINE",
+      "ttn_bond_id": "EXACT_OR_DECLARED_CHI",
+      "wilson_order": 0
+    }
+  ],
+  "schema_version": "1.0.0",
+  "shared_state_factors_propagate_to_all_projectors": true,
+  "statuses": [
+    "VALIDATION_ONLY",
+    "REGULATED_MICROSCOPIC_GTMD",
+    "XI_ZERO",
+    "ZEROTH_RESCATTERING",
+    "LINK_SHORTENING_REQUIRED",
+    "UV_MATCHING_REQUIRED",
+    "RAPIDITY_SOFT_MATCHING_REQUIRED",
+    "NO_EVOLUTION_APPLIED",
+    "NO_PROCESS_MAP_APPLIED",
+    "NO_NUCLEAR_COMPOSITION_APPLIED"
+  ],
+  "summation_forbidden": true
+}

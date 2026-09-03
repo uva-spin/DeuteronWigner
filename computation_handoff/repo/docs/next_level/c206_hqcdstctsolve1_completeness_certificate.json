@@ -1,0 +1,56 @@
+{
+  "schema": "C206-HQCDSTCTSOLVE1-COMPLETENESS-CERTIFICATE-V1",
+  "artifact": "hqcdstctsolve1_completeness_certificate",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+    "plan": "STCTSOLVE1-B",
+    "systems": 12,
+    "family_records": 12,
+    "rank": 1,
+    "nullity": 14,
+    "left_nullity": 6,
+    "family_dimension": 14,
+    "representative_selected": false,
+    "remaining_frontier": 2,
+    "physical": false,
+    "root": "2d736f096c5b5dcf4998529b88d60d94c84cf606663861abaf002cf7e8cdad30"
+  },
+  "validation": "PASS",
+  "forbidden_counts": {
+    "pseudoinverse": 0,
+    "regularization": 0,
+    "optimizer": 0,
+    "minimum_norm": 0,
+    "representative_selected": 0,
+    "free_set_zero": 0,
+    "row_dropped": 0,
+    "physical_value": 0,
+    "target_value": 0,
+    "C158_value_inputs": 0,
+    "C166_graph_delta": 0,
+    "Q0_Q1_Q2_modified": 0,
+    "pass": true,
+    "root": "f0ca4fc595e717f97c49cc2c0df768d98d4c20ec16446d4b0ce9b83354634cae"
+  }
+}

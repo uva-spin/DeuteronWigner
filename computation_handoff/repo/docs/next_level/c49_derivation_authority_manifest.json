@@ -1,0 +1,39 @@
+{
+  "additional_official_sources": {
+    "rows": [
+      {
+        "archive_bytes": 2888157,
+        "archive_path": "data/raw/c49_sources/2503.21372v1.tar",
+        "archive_sha256": "3d6804e03b03caede2998979c734c3d85c4fb30cc26088ed868ea189fd67eb81",
+        "arxiv": "2503.21372v1",
+        "audit_result": "INSUFFICIENT_FOR_C43_C45_C47_OPEN_TRIPLET_VERTEX",
+        "official_host": "arxiv.org",
+        "pdf_bytes": 3218999,
+        "pdf_path": "data/raw/c49_sources/2503.21372v1.pdf",
+        "pdf_sha256": "92e59c4819a3d410e5a2d20c596a8d48de11423a293b7aaa6147422cdae3d807",
+        "title": "Basis light-front quantization: Advancing a first principles approach for the nucleon"
+      },
+      {
+        "archive_bytes": 1852345,
+        "archive_path": "data/raw/c49_sources/2401.03480v1.tar",
+        "archive_sha256": "68957c418b8e7551cdc99333795547289251de3e7fa0abf551a715874a0fb28f",
+        "arxiv": "2401.03480v1",
+        "audit_result": "INSUFFICIENT_FOR_C43_C45_C47_OPEN_TRIPLET_VERTEX",
+        "official_host": "arxiv.org",
+        "pdf_bytes": 2374332,
+        "pdf_path": "data/raw/c49_sources/2401.03480v1.pdf",
+        "pdf_sha256": "abc4720e10d611ebf58e578afb3db127e9c9fe06f4edb17e50db442b6eccb1ae",
+        "title": "Quark and gluon distributions in rho-meson from basis light-front quantization"
+      }
+    ],
+    "status": "HASH_LOCKED_AUDITED"
+  },
+  "baseline": "d237da980274a4d819b8881750fbbd189f0ef469",
+  "decision": "C49_CANONICAL_SOURCE_CHAIN_INCOMPLETE",
+  "locked_C43_C45_C47": [
+    "hep-ph/0011372v2",
+    "hep-ph/9705477v1",
+    "1911.10762v1"
+  ],
+  "status": "AUDITED"
+}

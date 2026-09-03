@@ -1,0 +1,34 @@
+{
+  "h1_reference": {
+    "plan_id": "C8:H1:PLAN:d21966f5baf0fbb07821",
+    "read_only": true
+  },
+  "mutually_exclusive": true,
+  "plans": [
+    {
+      "bundle_id": "C9:H2:BUNDLE:8050c9aeced011f2cb9f",
+      "certificate": "173f2a46b45594dd098a01b9cc6772156dfa56f152e3745ce826257e14ad3b85",
+      "name": "H2-PLAN-A",
+      "normal_form": [
+        "EXPLICIT_QQQG",
+        "ALTERNATIVE_TO_H1_COLOR_SPIN",
+        "INSTANTANEOUS_PARTNERS",
+        "VALIDATION_ONLY"
+      ],
+      "plan_id": "C9:H2:PLAN:173f2a46b45594dd098a"
+    },
+    {
+      "bundle_id": "C9:H2:BUNDLE:3ce5f3edb52f6dfdf19a",
+      "certificate": "4bfe653bfaf9d7d8142c17565039cafc4440782d8668617b12efaeb6a750a04c",
+      "name": "H2-PLAN-B",
+      "normal_form": [
+        "EXPLICIT_QQQG",
+        "ALTERNATIVE_TO_H1_COLOR_SPIN",
+        "INSTANTANEOUS_PARTNERS",
+        "VALIDATION_ONLY"
+      ],
+      "plan_id": "C9:H2:PLAN:4bfe653bfaf9d7d8142c"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

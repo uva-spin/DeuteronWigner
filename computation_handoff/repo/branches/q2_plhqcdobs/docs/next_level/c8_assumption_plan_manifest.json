@@ -1,0 +1,143 @@
+{
+  "all_identities_distinct": true,
+  "benchmark": "H-PLAN/H-K",
+  "forbidden_outputs": [
+    "TMD",
+    "WILSON",
+    "NUCLEAR",
+    "MATCHING",
+    "EVOLUTION",
+    "PROCESS",
+    "INFERENCE"
+  ],
+  "mutually_exclusive": true,
+  "plans": {
+    "PLAN_A": {
+      "bundle_id": "C8:H1:ASSUMPTION:7e4a123c6e6172f2f6d5",
+      "plan_id": "C8:H1:PLAN:d21966f5baf0fbb07821",
+      "rows": [
+        {
+          "F1p_Q2_0p3": 0.9421672299528241,
+          "OAM_Lz": -0.7127575750094726,
+          "mass2": 0.7744,
+          "parameters": {
+            "color_spin": 0.075,
+            "current_ZV": 1.0,
+            "kappa4": 0.42,
+            "mass_ct": 0.11018366349078867
+          },
+          "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555"
+        },
+        {
+          "F1p_Q2_0p3": 0.9421190546675839,
+          "OAM_Lz": -0.7282991414483587,
+          "mass2": 0.7744,
+          "parameters": {
+            "color_spin": 0.06818181818181818,
+            "current_ZV": 1.0,
+            "kappa4": 0.3442622950819672,
+            "mass_ct": 0.12003285558408783
+          },
+          "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97"
+        },
+        {
+          "F1p_Q2_0p3": 0.9422382103272076,
+          "OAM_Lz": -0.7156582857397781,
+          "mass2": 0.7744,
+          "parameters": {
+            "color_spin": 0.0625,
+            "current_ZV": 1.0,
+            "kappa4": 0.2916666666666667,
+            "mass_ct": 0.12671848150241094
+          },
+          "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda"
+        }
+      ]
+    },
+    "PLAN_B": {
+      "bundle_id": "C8:H1:ASSUMPTION:e0b79959346fc0d947aa",
+      "plan_id": "C8:H1:PLAN:fa8821a67fe9aa7c6208",
+      "rows": [
+        {
+          "F1p_Q2_0p3": 0.9403659349395179,
+          "OAM_Lz": -0.9981550804913442,
+          "mass2": 0.7744,
+          "parameters": {
+            "color_spin": 0.075,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.18576254585831908
+          },
+          "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555"
+        },
+        {
+          "F1p_Q2_0p3": 0.9403686063424971,
+          "OAM_Lz": -0.9977777549708003,
+          "mass2": 0.7744,
+          "parameters": {
+            "color_spin": 0.06818181818181818,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.18201236523793907
+          },
+          "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97"
+        },
+        {
+          "F1p_Q2_0p3": 0.9403721941550337,
+          "OAM_Lz": -0.9972706135533055,
+          "mass2": 0.7744,
+          "parameters": {
+            "color_spin": 0.0625,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.17888922128161233
+          },
+          "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda"
+        }
+      ]
+    },
+    "PLAN_C": {
+      "bundle_id": "C8:H1:ASSUMPTION:56fc57da107ddd4776ca",
+      "plan_id": "C8:H1:PLAN:d9938ed1163bbc2799e2",
+      "rows": [
+        {
+          "F1p_Q2_0p3": 0.947291782799262,
+          "OAM_Lz": -0.007662422026970123,
+          "mass2": 0.7744000000000001,
+          "parameters": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.42,
+            "mass_ct": 0.15971865452740686
+          },
+          "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555"
+        },
+        {
+          "F1p_Q2_0p3": 0.9473215737972186,
+          "OAM_Lz": -0.0064260889427879605,
+          "mass2": 0.7743999999999999,
+          "parameters": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.3442622950819672,
+            "mass_ct": 0.16665216035256558
+          },
+          "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97"
+        },
+        {
+          "F1p_Q2_0p3": 0.9473428311353493,
+          "OAM_Lz": -0.005431149831001077,
+          "mass2": 0.7743999999999999,
+          "parameters": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.2916666666666667,
+            "mass_ct": 0.171506364929635
+          },
+          "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda"
+        }
+      ]
+    }
+  },
+  "schema_version": "1.0.0"
+}

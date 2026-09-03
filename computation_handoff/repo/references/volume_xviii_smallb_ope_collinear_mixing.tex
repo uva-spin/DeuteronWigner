@@ -1,0 +1,1445 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools,mathrsfs}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F1}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XVIII: Source-Audited Small-b Operator Products, Collinear Mixing, and Capability-Complete Multi-Q Microscopic TMDs},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XVIII}
+\fancyhead[R]{\small\color{darkgray}Small-b OPE and collinear mixing}
+\fancyfoot[L]{\small\color{darkgray}1 August 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\QCD}{\mathrm{QCD}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\GPD}{\mathrm{GPD}}
+\newcommand{\PDF}{\mathrm{PDF}}
+\newcommand{\EMT}{\mathrm{EMT}}
+\newcommand{\CS}{\mathrm{CS}}
+\newcommand{\DY}{\mathrm{DY}}
+\newcommand{\SIDIS}{\mathrm{SIDIS}}
+\newcommand{\DIS}{\mathrm{DIS}}
+\newcommand{\bD}{\bm b_{\Delta}}
+\newcommand{\bM}{\bm b_{\mathrm{TMD}}}
+\newcommand{\kT}{\bm k_T}
+\newcommand{\qT}{\bm q_T}
+\newcommand{\DT}{\bm\Delta_T}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\otimesx}{\mathbin{\otimes_x}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\order}{\mathcal O}
+\newcommand{\as}{\alpha_s}
+\newcommand{\plus}{\mathord{+}}
+\newcommand{\NS}{\mathrm{NS}}
+\newcommand{\sing}{\mathrm{S}}
+\newcommand{\HPL}{\mathrm{HPL}}
+\newcommand{\WW}{\mathrm{WW}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XVIII: Source-Audited Small-\(b_{\mathrm{TMD}}\) Operator Products,\\[2mm]
+Collinear Mixing, and Capability-Complete Multi-\(Q\) Microscopic TMDs}\\[4mm]
+\large Endpoint-distribution algebra, \(\gamma_5\)-scheme control, rank-preserving OPE transport,\\
+resolved nuclear operator matching, and honest capability classification}
+\author{DeuteronWigner project}
+\date{1 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C20/M1 established source-recorded declared-order matching coefficients for ten supported twist-two operator families while retaining a 540-by-540 light-front/QCD identity map, 492 reference-scale executable entries, and 48 reference-scale unavailable entries.  C21/M2 added source-qualified anomalous dimensions, four-loop running, three-loop threshold transport, independent quark and gluon Collins--Soper interfaces, rank-zero through rank-three multi-scale evolution, and a complete evolution-capability audit.  Of the 540 stable identities, 438 are fully evolvable at M2 scope and 102 retain at least one incomplete evolution ingredient.  These are validation results, not a physical TMD extraction.  C22/M3 is the running package that must determine which identities possess a complete source-audited twist-two small-\(b_{\mathrm{TMD}}\) coefficient and collinear evolution route.  The present volume defines that formal M3 layer without presuming that C22 has completed successfully.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The small-transverse-separation operator product expansion is the final operator-level bridge required before a scheme-qualified microscopic TMD can enter a process calculation.  It is also a common source of false completeness.  A coefficient is not an ordinary curve on an \(x\) grid: it is a distribution-valued, scheme-dependent map between specific bilocal and collinear operators, carrying endpoint terms, plus prescriptions, color structures, transverse rank, Wilson-link identity, \(\gamma_5\) convention, perturbative order, and a power-domain remainder.  A TMD may possess a universal two-scale evolution kernel while lacking the appropriate collinear operator, matching coefficient, or splitting matrix.  Conversely, a coefficient may be known while the corresponding microscopic boundary or Collins--Soper input remains unavailable.  These capability states must remain distinct.
+
+This volume constructs a typed small-\(b_{\mathrm{TMD}}\) OPE and collinear-evolution formalism for the complete 540-entry microscopic nucleon/deuteron operator graph.  Endpoint distributions are represented exactly through regular terms, \(\delta(1-x)\) terms, plus distributions, small-\(x\) logarithms, harmonic polylogarithms, and matrix-valued singlet kernels.  Every coefficient is source audited and independently checked in \(x\) space and Mellin space.  The twist-two operator families include unpolarized nonsinglet and singlet quark/gluon channels, helicity with explicit finite \(\gamma_5\) renormalization, quark transversity, linearly polarized gluons, spin-1 longitudinal-tensor matrix elements when they share the same local twist-two operator, and local current and energy--momentum limits.  Pretzelosity is treated as a controlled special case: its twist-two coefficient vanishes through the demonstrated order, which is neither an all-order theorem nor a physical zero.  Sivers, Boer--Mulders, genuine worm-gear, tri-gluon, and tensor-polarized naive-time-reversal-odd functions remain in their proper multiparton twist-three bases unless source-audited coefficients are separately supplied.
+
+The coefficient renormalization-group equation is derived in the project convention and tested by comparing two routes: matching at the reference scale followed by TMD evolution, and collinear evolution followed by rematching at the final scale.  Agreement is required only through the declared perturbative order and small-\(b\) power domain.  Rank-zero through rank-three Fourier--Bessel identities, heavy-flavor threshold transport, nonsinglet and singlet sum rules, hidden-color basis covariance, and resolved nuclear ancestry remain explicit.  The output is a capability-complete multi-\(Q\) operator ensemble whose unavailable entries are scientifically classified rather than filled by analogy.  This volume supplies formal requirements, software objects, benchmark families, negative tests, accuracy and uncertainty manifests, and the handoff to process-qualified \(\DY\), \(\SIDIS\), inclusive \(b_1\), tagged, and gluon-sensitive records.  Passing these gates does not establish all-order evolution, physical twist-three matching, a global extraction, or production readiness.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Scope, inputs, and scientific boundary}
+\label{sec:scope}
+
+\subsection{Input chain}
+
+The M3 layer consumes a scheme-qualified reference-scale operator vector
+\begin{equation}
+ \widetilde{\bm F}^{\QCD}_{h,s}
+ (x,\bM;\mu_0,\zeta_0;\mathfrak s)
+ =
+ \left\{
+ \widetilde F_{A,h,s}
+ \right\}_{A=1}^{540},
+ \label{eq:input-vector}
+\end{equation}
+where \(h\in\{p,n,D\}\), \(s\) is one correlated microscopic member, and every identity \(A\) contains species, flavor, target and parton polarization, transverse rank, Wilson order, future/past orientation, ordered gluon-link pair, \(f/d\) color class, nuclear ancestry, scheme, and regulator history.
+
+C20 classifies 492 entries as reference-scale matching executable and 48 as reference-scale matching unavailable.  C21 classifies 438 entries as fully evolvable at its M2 scope and 102 as incomplete.  These two partitions answer different questions and may not be merged.
+
+\begin{definition}[M3 capability]
+An operator identity is \emph{M3 fully qualified} only when all of the following exist in one compatible scheme:
+\begin{enumerate}
+\item a reference-scale matched microscopic boundary;
+\item the correct twist and collinear operator identity;
+\item a source-audited small-\(b\) coefficient at a declared order;
+\item a source-audited collinear splitting/mixing block;
+\item a compatible TMD anomalous-dimension and Collins--Soper route;
+\item threshold transport over the requested \(Q\) path;
+\item the correct rank-aware Fourier--Bessel transform;
+\item a declared \(b\)-domain and first omitted perturbative and power orders.
+\end{enumerate}
+\end{definition}
+
+\subsection{Output chain}
+
+The M3 output is a capability-resolved bundle
+\begin{equation}
+ \mathfrak F_s^{\mathrm{M3}}
+ =
+ \left(
+ \widetilde{\bm F}_s,
+ \bm C_s,
+ \bm P_s,
+ \mathfrak R_s,
+ \mathfrak T_s,
+ \mathfrak A_s,
+ \mathfrak U_s,
+ \mathfrak C_s
+ \right),
+ \label{eq:m3-bundle}
+\end{equation}
+containing coefficient, splitting, RG-consistency, threshold, accuracy, uncertainty, and capability records.  It is an operator ensemble, not a process cross section.
+
+\subsection{Nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+\item that C22 has completed or that all 540 identities become M3 qualified;
+\item that a known TMD evolution kernel implies a known small-\(b\) boundary;
+\item that a coefficient known at high perturbative order implies an equally accurate splitting matrix or Collins--Soper kernel;
+\item that twist-two matching exists for every leading-twist named TMD;
+\item that the vanishing twist-two pretzelosity coefficient is a physical zero or an all-order theorem;
+\item that spin-1 target labels modify universal short-distance coefficients when the underlying operator is unchanged;
+\item that target-state universality permits copying a coefficient between different operators of the same rank;
+\item that a source disagreement can be resolved by selecting the newer or numerically more convenient formula;
+\item that a capability-qualified TMD has a process-factorization theorem, fragmentation input, hard factor, or \(Y\) term.
+\end{itemize}
+
+\section{Evidence, source, and availability language}
+\label{sec:evidence}
+
+\begin{longtable}{L{0.26\textwidth}L{0.66\textwidth}}
+\toprule
+Status & Meaning\\
+\midrule
+\endhead
+\texttt{SOURCE\_AUDITED} & Primary paper and ancillary files are preserved with equation/table locators, hashes, convention adapters, and independent checks.\\
+\texttt{PERTURBATIVE\_\allowbreak DECLARED\_\allowbreak ORDER} & The coefficient or splitting function is implemented through a stated power of \(\as\) in a stated scheme.\\
+\texttt{ZERO\_AT\_\allowbreak DECLARED\_\allowbreak TWIST\_\allowbreak ORDER} & The coefficient vanishes through the audited twist and perturbative order.  The physical TMD need not vanish.\\
+\texttt{TARGET\_STATE\_\allowbreak UNIVERSAL} & The same operator coefficient acts on different target matrix elements after operator identity is proven equal.\\
+\texttt{SOURCE\_\allowbreak DISAGREEMENT\_\allowbreak UNRESOLVED} & Primary calculations disagree after known convention conversions; the block is fail-closed.\\
+\texttt{HIGHER\_TWIST\_\allowbreak REQUIRED} & The named function lacks the required twist-two local operator and must match to a multiparton or higher-twist basis.\\
+\texttt{COEFFICIENT\_ONLY} & A coefficient exists, but another required M3 ingredient is missing.\\
+\texttt{COLLINEAR\_ONLY} & A collinear operator/evolution block exists, but no compatible TMD coefficient or boundary exists.\\
+\texttt{TMD\_EVOLUTION\_ONLY} & Representation-level TMD evolution exists, but the small-\(b\) matching route is incomplete.\\
+\texttt{M3\_FULLY\_\allowbreak QUALIFIED} & All M3 ingredients exist and pass RG, threshold, rank, and member-identity gates.\\
+\texttt{UNAVAILABLE} & A required ingredient is absent; authoritative execution fails closed.\\
+\bottomrule
+\end{longtable}
+
+Passing a numerical identity does not convert a model input into a perturbative theorem.  A coefficient record cannot gain a higher evidential status because another operator in the same named TMD family is known at higher order.
+
+\section{Exact endpoint-distribution algebra}
+\label{sec:distributions}
+
+\subsection{Distribution space}
+
+Let \(\mathscr D(0,1)\) denote a suitable space of smooth test functions with finite endpoint limits.  A coefficient distribution is represented as
+\begin{equation}
+ C(x)
+ =
+ C_{\mathrm{reg}}(x)
+ +c_\delta\,\delta(1-x)
+ +\sum_{n=0}^{n_{\max}}
+ c_n
+ \left[
+ \frac{\ln^n(1-x)}{1-x}
+ \right]_+
+ +C_{\mathrm{small}\text{-}x}(x),
+ \label{eq:distribution-decomposition}
+\end{equation}
+with exact rational, color, zeta-value, and harmonic-polylogarithm coefficients where available.
+
+\begin{requirement}[No grid-only coefficient]
+A source-defined distributional coefficient may have a numerical grid view, but the grid cannot be its authoritative representation.  The \(\delta\)-term, plus prescription, endpoint convention, and exact color decomposition must remain independently recoverable.
+\end{requirement}
+
+\subsection{Plus distributions}
+
+For a locally integrable singular kernel \(g(x)\), define
+\begin{equation}
+ \int_0^1\dd x\,[g(x)]_+\,\phi(x)
+ =
+ \int_0^1\dd x\,g(x)\,[\phi(x)-\phi(1)].
+ \label{eq:plus-definition}
+\end{equation}
+For a truncated interval,
+\begin{equation}
+ \int_{x_0}^1\dd z\,[g(z)]_+\,\phi(z)
+ =
+ \int_{x_0}^1\dd z\,g(z)[\phi(z)-\phi(1)]
+ -\phi(1)\int_0^{x_0}\dd z\,g(z).
+ \label{eq:plus-truncated}
+\end{equation}
+Consequently, for the project convolution
+\begin{equation}
+ (C\otimesx f)(x)
+ =
+ \int_x^1\frac{\dd z}{z}\,C(z)f(x/z),
+ \label{eq:convolution}
+\end{equation}
+the plus term obeys
+\begin{align}
+ \int_x^1\frac{\dd z}{z}[g(z)]_+f(x/z)
+ ={}&
+ \int_x^1\dd z\,g(z)
+ \left[
+ \frac{f(x/z)}{z}-f(x)
+ \right]
+ \notag\\
+ &-f(x)\int_0^x\dd z\,g(z).
+ \label{eq:plus-convolution}
+\end{align}
+This identity is a required analytic oracle for every numerical convolution engine.
+
+\subsection{Mellin moments}
+
+Define
+\begin{equation}
+ \mathcal M_N[f]
+ =
+ \int_0^1\dd x\,x^{N-1}f(x).
+ \label{eq:mellin}
+\end{equation}
+When the distributions and contours are admissible,
+\begin{equation}
+ \mathcal M_N[C\otimesx f]
+ =
+ \mathcal M_N[C]\,\mathcal M_N[f].
+ \label{eq:mellin-convolution}
+\end{equation}
+The Mellin route is an independent oracle for x-space distribution algebra, conserved moments, and threshold maps.  It is not independent if it reuses the same pre-discretized x-space matrix.
+
+\subsection{Matrix-valued distributions}
+
+In a singlet basis,
+\begin{equation}
+ \bm C(x)
+ =
+ \begin{pmatrix}
+ C_{qq}(x)&C_{qg}(x)\\
+ C_{gq}(x)&C_{gg}(x)
+ \end{pmatrix},
+ \qquad
+ \bm f=
+ \begin{pmatrix}\Sigma\\g\end{pmatrix}.
+ \label{eq:singlet-matrix}
+\end{equation}
+Matrix ordering is physical:
+\begin{equation}
+ (\bm C\otimesx\bm f)_i
+ =
+ \sum_j C_{ij}\otimesx f_j.
+ \label{eq:matrix-convolution}
+\end{equation}
+A transposed or reversed matrix may preserve array dimensions while violating flavor flow and moment constraints; type checking must detect this before numerical evaluation.
+
+\subsection{Harmonic polylogarithms and ancillary files}
+
+High-order coefficients can contain harmonic polylogarithms of substantial weight.  A source record must retain:
+\begin{itemize}
+\item the original HPL basis and index word;
+\item branch and real-domain conventions;
+\item weight and endpoint expansions;
+\item ancillary-file source and hash;
+\item numerical sample-point checks;
+\item a declared unsupported complex-continuation domain.
+\end{itemize}
+Unpolarized N\(^3\)LO TMD matching is known in terms of harmonic polylogarithms through weight five \cite{EbertMistlbergerVita2020}.  The implementation should therefore prefer authoritative ancillary ingestion to hand transcription of long expressions.
+
+\section{Operator-level twist classification}
+\label{sec:classification}
+
+\subsection{Generic small-\texorpdfstring{\(b\)}{b} expansion}
+
+For a TMD operator \(A\) and species \(a\),
+\begin{equation}
+ \widetilde F_A^{a/h}(x,b;\mu,\zeta)
+ =
+ \sum_{B,j}
+ C_{A\leftarrow B}^{a\leftarrow j}
+ (x,b;\mu,\zeta)
+ \otimesx
+ f_B^{j/h}(x;\mu)
+ +\cR_A^{a/h}(x,b),
+ \label{eq:generic-ope}
+\end{equation}
+with
+\begin{equation}
+ \cR_A^{a/h}
+ =
+ \order((b\Lambda_{\QCD})^{p_A})
+ +\order(\text{first omitted twist})
+ +\order(\text{Hamiltonian/matching truncation}).
+ \label{eq:ope-remainder}
+\end{equation}
+The coefficient depends on the operator, scheme, color representation, link class, rank, and perturbative order.  The target dependence resides in the collinear matrix element when the local operator is unchanged.
+
+\begin{theorem}[Target-state universality]
+Let \(\widetilde\cO_A^{a}\) be one renormalized bilocal TMD operator and \(\cO_B^{j}\) one renormalized local or light-ray collinear operator in a fixed scheme.  If two external targets differ only through their states, while the operator, representation, rank, link, regulator conversion, and normalization are identical, then the short-distance coefficient \(C_{A\leftarrow B}^{a\leftarrow j}\) is the same for both targets.  Their matrix elements and therefore their TMDs may differ.
+\end{theorem}
+
+\begin{proof}
+The OPE is an operator identity established before inserting external states.  Taking matrix elements in two targets changes \(\langle h|\cO_B|h\rangle\), not the Wilson coefficient.  If a target label changes the operator itself, its representation, or its scheme, the hypotheses fail and no universality statement follows.
+\end{proof}
+
+\subsection{Supported twist-two families}
+
+The initial M3 audit classifies at least:
+\begin{enumerate}
+\item unpolarized quark nonsinglet;
+\item unpolarized quark/gluon singlet mixing;
+\item helicity nonsinglet;
+\item helicity quark/gluon singlet mixing;
+\item quark transversity nonsinglet;
+\item linearly polarized gluons matched to the appropriate unpolarized collinear basis;
+\item spin-1 \(LL\) matrix elements when the underlying unpolarized-type operator is identical;
+\item local vector, axial, tensor, and EMT moment limits where supported.
+\end{enumerate}
+The generic NLO twist-two classification and matching basis were developed systematically in Ref.~\cite{GutierrezReyesScimemiVladimirov2017}.  High-order calculations now exist for unpolarized quark/gluon, helicity, quark transversity, and linearly polarized gluon matching \cite{EbertMistlbergerVita2020,ZhuHelicity2025,ZhuTransversity2025,ZhuLinearGluon2025}.
+
+\subsection{Twist-three and naive-time-reversal-odd channels}
+
+The following do not become twist-two merely because they are leading-power TMD observables:
+\begin{equation}
+ T_F^q,
+ \qquad
+ T_F^{(\sigma)q},
+ \qquad
+ T_G^{(f)},
+ \qquad
+ T_G^{(d)},
+ \label{eq:twist3-bases}
+\end{equation}
+together with genuine worm-gear and tensor-polarized multiparton operators.
+
+\begin{requirement}[No twist laundering]
+A twist-two coefficient or splitting matrix may not be attached to a twist-three TMD operator by name, rank, or array shape.  A \(\WW\)-type approximation is a distinct assumption plan with an explicit genuine-term remainder, not the exact OPE.
+\end{requirement}
+
+\subsection{Pretzelosity}
+
+Pretzelosity provides the required distinction between coefficient and physical function.  Its twist-two matching coefficient onto collinear transversity vanishes through NNLO in the audited calculation \cite{GutierrezReyesScimemiVladimirov2018}.  Therefore the M3 status is
+\begin{equation}
+ \texttt{ZERO\_AT\_TWIST2\_THROUGH\_NNLO},
+ \label{eq:pretzelosity-status}
+\end{equation}
+not
+\begin{equation}
+ h_{1T}^{\perp}=0.
+\end{equation}
+The microscopic nonperturbative function may be nonzero, and its leading collinear matching may involve higher twist.  No transversity coefficient may be copied into this channel.
+
+\subsection{Spin-1 \texorpdfstring{\(LL\)}{LL} channels}
+
+For a rank-zero tensor-polarized matrix element built from the same unpolarized quark or gluon operator,
+\begin{equation}
+ \widetilde F_{1LL}^{a/D}
+ =
+ \sum_j C_{a\leftarrow j}^{\mathrm{unpol}}
+ \otimesx
+ f_{1LL}^{j/D}
+ +\order(b\Lambda),
+ \label{eq:ll-universality}
+\end{equation}
+provided the project convention adapter is applied after the operator matrix element is formed.  This does not imply that every \(LT\), \(TT\), ranked, chiral-odd, or T-odd spin-1 channel uses the same coefficient.
+
+\subsection{Gluon double-helicity flip}
+
+Spin-1 targets admit a gluon double-helicity-flip collinear operator with no spin-\(\tfrac12\) nucleon analogue \cite{KumanoSong2022}.  Its operator and evolution must remain distinct from:
+\begin{itemize}
+\item the rank-two linearly polarized gluon TMD matched to ordinary unpolarized collinear PDFs;
+\item quark transversity;
+\item ordinary gluon helicity.
+\end{itemize}
+It becomes executable only when its coefficient, splitting kernel, target convention, and project scheme are independently source audited.
+
+\section{Source-audited coefficient library}
+\label{sec:coefficients}
+
+\subsection{Coefficient identity}
+
+A coefficient record is
+\begin{equation}
+ \mathfrak c=
+ \left(
+ A\leftarrow B,
+ a\leftarrow j,
+ \text{twist},m,
+ \gamma,\mathcal C,
+ \mathfrak s,
+ p_{\rm first},p_{\rm impl},
+ \mathscr D_x,
+ \mathscr S_{\rm src},
+ \mathscr H_{\rm src},
+ \cR
+ \right),
+ \label{eq:coefficient-record}
+\end{equation}
+where \(\mathscr D_x\) is the distributional expression and \(\mathscr S_{\rm src}\), \(\mathscr H_{\rm src}\) are source and transcription hashes.
+
+Mandatory fields include:
+\begin{itemize}
+\item source and target operator IDs;
+\item species, flavor block, target-state universality, rank, twist, link, and color class;
+\item UV, rapidity, soft, and \(\gamma_5\) schemes;
+\item first nonzero and implemented perturbative orders;
+\item endpoint and small-\(x\) conventions;
+\item exact source locator and ancillary identity;
+\item independent x-space and Mellin or moment oracle;
+\item known perturbative and power remainder;
+\item availability and source-disagreement status.
+\end{itemize}
+
+\subsection{Unpolarized quark and gluon matching}
+
+Unpolarized quark and gluon TMD matching is available through N\(^3\)LO in primary calculations \cite{EbertMistlbergerVita2020,LuoEtAl2021}.  Earlier NNLO quark and gluon calculations provide independent lower-order and regulator-specific comparisons \cite{LuoQuark2019,LuoGluon2020}.
+
+The source audit must compare:
+\begin{itemize}
+\item all lower-order limits;
+\item color decomposition;
+\item plus and delta endpoints;
+\item Mellin moments and sum rules;
+\item regulator-to-project scheme conversion;
+\item shared versus process-specific terms.
+\end{itemize}
+An agreement in a sampled central region does not validate endpoint distributions.
+
+\subsection{Helicity matching}
+
+Helicity TMD twist-two matching has been extended to N\(^3\)LO \cite{ZhuHelicity2025}.  Its implementation requires an explicit \(\gamma_5\) scheme record and finite axial renormalization.  The coefficient library must retain singlet/nonsinglet separation, anomaly status, and compatibility with the chosen polarized splitting functions.
+
+\subsection{Transversity matching}
+
+Quark transversity matching is nonsinglet and has no ordinary leading-twist gluon mixing.  The N\(^3\)LO twist-two coefficient and associated NNLO transversity splitting information are available in recent work \cite{ZhuTransversity2025}.  Earlier NNLO matching provides an important independent check and the pretzelosity zero result \cite{GutierrezReyesScimemiVladimirov2018}.
+
+\subsection{Linearly polarized gluons}
+
+The linearly polarized gluon TMD is rank two and begins with a perturbatively generated small-\(b\) coefficient rather than an independent collinear linearly polarized gluon PDF.  NNLO and N\(^3\)LO calculations are available \cite{LuoGluon2020,ZhuLinearGluon2025}.  The coefficient must retain both quark and gluon collinear parent channels where present, and it cannot be demoted to rank zero.
+
+\subsection{Exact color structures}
+
+At high orders, the source record retains independent invariants such as
+\begin{equation}
+ C_F,
+ \quad C_A,
+ \quad T_Fn_f,
+ \quad d_F^{abcd}d_A^{abcd},
+ \quad d_F^{abcd}d_F^{abcd},
+ \quad d_A^{abcd}d_A^{abcd}.
+ \label{eq:color-invariants}
+\end{equation}
+A quartic invariant may not be absorbed into an effective Casimir factor.  The exact normalization convention is part of the coefficient identity.
+
+\subsection{Source-disagreement protocol}
+
+Recent polarized calculations can supply new independent derivations and can also expose discrepancies with prior literature \cite{ZhuDGLAP2026}.  The protocol is:
+\begin{enumerate}
+\item preserve all primary records and ancillary files;
+\item convert to one explicit scheme and derivative convention;
+\item reproduce common lower orders and moments;
+\item compare color, endpoint, small-\(x\), and \(\gamma_5\) structures;
+\item use independent Ward, sum-rule, and RG constraints;
+\item mark the block executable only after the discrepancy is resolved.
+\end{enumerate}
+A newer date, a smaller holdout residual, or a larger executable count is not a resolution criterion.
+
+\section{Polarized \texorpdfstring{\(\gamma_5\)}{gamma5} scheme and axial conversion}
+\label{sec:gamma5}
+
+\subsection{Scheme record}
+
+A polarized record contains
+\begin{equation}
+ \mathfrak g_5=
+ \left(
+ \text{bare prescription},
+ \text{projector},
+ Z_5^{\NS},
+ Z_5^{\sing},
+ \text{anomaly convention},
+ \text{conversion matrix},
+ \text{sources}
+ \right).
+ \label{eq:gamma5-record}
+\end{equation}
+Dimensional regularization requires an explicit treatment of \(\gamma_5\) and a finite renormalization to recover the desired axial-current properties.  Higher-order polarized calculations and splitting functions depend on this convention \cite{MochVermaserenVogt2014,MochVermaserenVogt2015,BehringEtAl2019}.
+
+\subsection{Finite conversion}
+
+Let \(\bm f^{\rm src}\) be a source-scheme polarized vector and \(\bm f^{\rm proj}\) the project scheme.  Then
+\begin{equation}
+ \bm f^{\rm proj}
+ =
+ \bm Z_5^{\rm proj\leftarrow src}
+ \otimesx
+ \bm f^{\rm src},
+ \label{eq:gamma5-conversion}
+\end{equation}
+with compatible transformations of coefficient and splitting matrices.  Applying the finite conversion only to the PDF or only to the coefficient is a scheme mismatch.
+
+\subsection{Moment constraints}
+
+The nonsinglet axial normalization, singlet anomaly status, and first moments are stored separately.  The implementation must reject:
+\begin{itemize}
+\item an unpolarized coefficient used as helicity without conversion;
+\item one finite renormalization shared blindly between singlet and nonsinglet sectors;
+\item a first-moment constraint imposed in the wrong anomaly scheme;
+\item a \(\gamma_5\) convention hidden inside a numerical array.
+\end{itemize}
+
+\section{Collinear operator bases and splitting matrices}
+\label{sec:collinear}
+
+\subsection{Derivative convention}
+
+To avoid factor-of-two ambiguity, define the project collinear equation by
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu}
+ \bm f(x;\mu)
+ =
+ \bm{\mathsf P}(\mu)\otimesx\bm f(x;\mu),
+ \label{eq:project-dglap}
+\end{equation}
+where \(\bm{\mathsf P}\) is stored in the \(\dd/\dd\ln\mu\) convention.  A source using \(\dd/\dd\ln\mu^2\) is converted explicitly.
+
+\subsection{Unpolarized nonsinglet}
+
+For a nonsinglet combination \(q_{\NS}\),
+\begin{equation}
+ \frac{\dd q_{\NS}}{\dd\ln\mu}
+ =
+ \mathsf P_{\NS}\otimesx q_{\NS}.
+ \label{eq:ns-evolution}
+\end{equation}
+The three-loop unpolarized nonsinglet splitting functions are known in exact x and Mellin representations \cite{MochVermaserenVogt2004NS}.  The conserved-number moment provides a required normalization check in the appropriate nonsinglet channel.
+
+\subsection{Unpolarized singlet}
+
+Define
+\begin{equation}
+ \bm f_{\sing}=
+ \begin{pmatrix}\Sigma\\g\end{pmatrix},
+ \qquad
+ \frac{\dd\bm f_{\sing}}{\dd\ln\mu}
+ =
+ \begin{pmatrix}
+ \mathsf P_{qq}&\mathsf P_{qg}\\
+ \mathsf P_{gq}&\mathsf P_{gg}
+ \end{pmatrix}
+ \otimesx\bm f_{\sing}.
+ \label{eq:singlet-evolution}
+\end{equation}
+The NNLO singlet matrix is known in x and Mellin space \cite{VogtMochVermaseren2004Singlet}.  The momentum eigenvector must remain conserved through evolution and thresholds at the declared order.
+
+\subsection{Helicity}
+
+The helicity system has nonsinglet and singlet quark/gluon blocks with explicit \(\gamma_5\) conversion.  The three-loop helicity-dependent splitting functions provide the established NNLO reference \cite{MochVermaserenVogt2014}.  Independent calculations must be reconciled in the same scheme before they can supersede or supplement this record.
+
+\subsection{Transversity}
+
+Quark transversity obeys nonsinglet evolution,
+\begin{equation}
+ \frac{\dd h_1^q}{\dd\ln\mu}
+ =
+ \mathsf P_{h_1}\otimesx h_1^q,
+ \label{eq:transversity-evolution}
+\end{equation}
+with no ordinary leading-twist gluon mixing for the spin-\(\tfrac12\) nucleon operator.  Spin-1 gluon double flip is a distinct operator and is not inserted into this matrix.
+
+\subsection{Spin-1 \texorpdfstring{\(LL\)}{LL} singlet evolution}
+
+When \(\delta_T\Sigma\) and \(\delta_Tg\) are matrix elements of the same local unpolarized twist-two operators,
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu}
+ \begin{pmatrix}\delta_T\Sigma\\\delta_Tg\end{pmatrix}
+ =
+ \begin{pmatrix}
+ \mathsf P_{qq}&\mathsf P_{qg}\\
+ \mathsf P_{gq}&\mathsf P_{gg}
+ \end{pmatrix}
+ \otimesx
+ \begin{pmatrix}\delta_T\Sigma\\\delta_Tg\end{pmatrix}.
+ \label{eq:ll-evolution}
+\end{equation}
+The target tensor label remains part of the matrix-element identity even though the short-distance kernel is shared.
+
+\subsection{Independent numerical routes}
+
+The collinear package must contain:
+\begin{enumerate}
+\item an x-space convolution/evolution solver;
+\item a Mellin-space or moment-space oracle;
+\item deterministic interpolation and endpoint handling;
+\item threshold-aware forward and reverse transport.
+\end{enumerate}
+The x-space and Mellin routes are not independent if both are wrappers around the same discretized matrix.
+
+\section{OPE renormalization-group consistency}
+\label{sec:rg}
+
+\subsection{Coefficient equation}
+
+Let \(\bm C\) map the collinear basis to the TMD basis in the project derivative convention.  Then
+\begin{equation}
+ \frac{\dd\bm C}{\dd\ln\mu}
+ =
+ \bm\gamma_{\TMD}\,\bm C
+ -\bm C\otimesx\bm{\mathsf P},
+ \label{eq:coefficient-rge}
+\end{equation}
+with the cusp, noncusp, rapidity-log, color, and matrix terms defined in the same scheme as C21.  The exact factors and signs are generated from the derivative-convention record rather than copied from a differently normalized source.
+
+Writing
+\begin{equation}
+ L_b=\ln\frac{\mu^2b^2e^{2\gamma_E}}{4},
+ \qquad
+ L_\zeta=\ln\frac{\zeta}{\mu^2},
+ \label{eq:logs}
+\end{equation}
+the logarithmic coefficients at order \(n\) are constrained by lower-order finite terms, anomalous dimensions, and splitting functions.  Source finite terms are checked only after these RG-generated logarithms agree.
+
+\subsection{Two-route theorem}
+
+Define
+\begin{align}
+ \text{Route A: }&
+ \bm f(\mu_0)
+ \xrightarrow{\bm C(\mu_0,\zeta_0)}
+ \widetilde{\bm F}(\mu_0,\zeta_0)
+ \xrightarrow{\cR_{\TMD}}
+ \widetilde{\bm F}(\mu,\zeta),
+ \label{eq:route-a}\\
+ \text{Route B: }&
+ \bm f(\mu_0)
+ \xrightarrow{\cU_{\rm coll}}
+ \bm f(\mu)
+ \xrightarrow{\bm C(\mu,\zeta)}
+ \widetilde{\bm F}(\mu,\zeta).
+ \label{eq:route-b}
+\end{align}
+
+\begin{proposition}[Declared-order route consistency]
+Inside the perturbative small-\(b\) domain, if the coefficient, splitting, anomalous-dimension, threshold, and scheme records are mutually compatible through order \(N\), then
+\begin{equation}
+ \widetilde{\bm F}_{A}-\widetilde{\bm F}_{B}
+ =
+ \order(\as^{N+1})
+ +\order((b\Lambda)^p)
+ +\delta_{\rm num}
+ +\delta_{\rm thr}.
+ \label{eq:route-difference}
+\end{equation}
+\end{proposition}
+
+The route difference is a truncation diagnostic.  Coefficients may not be tuned to force equality beyond the declared order.
+
+\subsection{Rapidity consistency}
+
+The coefficient's \(\zeta\) dependence must reproduce the C21 rapidity evolution convention.  A coefficient record cannot use \(\ln\zeta\) while the evolution record uses \(\ln\sqrt\zeta\) without a typed factor-of-two adapter.
+
+\section{Heavy-flavor thresholds}
+\label{sec:thresholds}
+
+C22 inherits the immutable C21 grid
+\begin{equation}
+ Q=1.6,2,3,4,5,10,20,100,
+ \qquad Q_{\rm th}=4.18,
+ \label{eq:q-grid}
+\end{equation}
+and its threshold history.
+
+At a threshold, the following transform together:
+\begin{equation}
+ \left(
+ \as,
+ \bm f,
+ \bm{\mathsf P},
+ \bm C,
+ \bm\gamma_{\TMD},
+ \cD,
+ \mathfrak A
+ \right)_{n_f}
+ \longrightarrow
+ \left(
+ \as,
+ \bm f,
+ \bm{\mathsf P},
+ \bm C,
+ \bm\gamma_{\TMD},
+ \cD,
+ \mathfrak A
+ \right)_{n_f+1}.
+ \label{eq:threshold-bundle}
+\end{equation}
+Changing only \(\as\) or only the PDF basis is inconsistent.
+
+Required threshold tests include:
+\begin{itemize}
+\item forward/reverse transport;
+\item nonsinglet number continuity;
+\item singlet momentum continuity;
+\item Route A/Route B consistency across threshold;
+\item rank preservation;
+\item identical quark/gluon threshold history in one member.
+\end{itemize}
+
+\section{Rank-aware small-\texorpdfstring{\(b\)}{b} transport}
+\label{sec:rank}
+
+For harmonic \(m\),
+\begin{equation}
+ \widetilde F^{(m)}(x,b)
+ =
+ 2\pi i^m
+ \int_0^\infty k\,\dd k\,
+ J_{|m|}(bk)
+ N_m(k)
+ F^{(m)}(x,k).
+ \label{eq:rank-transform}
+\end{equation}
+The inverse transform contains the reciprocal phase and normalization recorded by the same `RankSpec`.
+
+The complete M3 route is
+\begin{equation}
+ F^{(m)}(Q_0,k)
+ \xrightarrow{\mathcal B_m}
+ \widetilde F^{(m)}(Q_0,b)
+ \xrightarrow{\rm OPE}
+ \bm f(Q_0)
+ \xrightarrow{\rm coll.\ evol.}
+ \bm f(Q)
+ \xrightarrow{\rm rematch+TMD\ evol.}
+ \widetilde F^{(m)}(Q,b)
+ \xrightarrow{\mathcal B_m^{-1}}
+ F^{(m)}(Q,k).
+ \label{eq:full-rank-route}
+\end{equation}
+
+Separate residuals are reported for:
+\begin{enumerate}
+\item forward transform;
+\item endpoint/distributional OPE;
+\item collinear evolution;
+\item C21 two-scale evolution;
+\item rematching;
+\item inverse transform.
+\end{enumerate}
+
+\begin{requirement}[Rank preservation]
+The OPE and evolution may mix operators within an allowed block, but they may not change the transverse harmonic represented by the stored tensor basis.  A scalar \(J_0\) transform applied to rank one, two, or three fails before integration.
+\end{requirement}
+
+\section{Capability-complete classification}
+\label{sec:capability}
+
+\subsection{Capability lattice}
+
+For each of the 540 identities, define a capability tuple
+\begin{equation}
+ \mathfrak q_A=
+ \left(
+ q_{\rm ref},
+ q_{\rm tmd\,evol},
+ q_{\rm twist},
+ q_C,
+ q_P,
+ q_{\gamma_5},
+ q_{\rm thr},
+ q_{\rm rank},
+ q_{\rm route},
+ q_{\rm M3}
+ \right).
+ \label{eq:capability-tuple}
+\end{equation}
+The final classification is one of:
+\begin{verbatim}
+M3_FULLY_QUALIFIED
+COEFFICIENT_ONLY
+COLLINEAR_ONLY
+TMD_EVOLUTION_ONLY
+ZERO_AT_DECLARED_TWIST_ORDER
+HIGHER_TWIST_REQUIRED
+SOURCE_DISAGREEMENT_UNRESOLVED
+MISSING_OPERATOR
+UNAVAILABLE
+\end{verbatim}
+
+\begin{principle}[No target count]
+The number of M3-qualified entries is a scientific output.  The implementation must not choose approximations, source records, or scheme conversions in order to maximize that number.
+\end{principle}
+
+\subsection{Availability is multidimensional}
+
+An identity can have:
+\begin{itemize}
+\item a matched microscopic boundary but no small-\(b\) coefficient;
+\item a coefficient but no collinear evolution block;
+\item TMD evolution but no physical nonperturbative kernel constraint;
+\item a collinear operator but no compatible microscopic compact-sector species;
+\item a source coefficient with unresolved primary-source disagreement.
+\end{itemize}
+These states remain distinct in the manifest and user interface.
+
+\section{Resolved nuclear small-\texorpdfstring{\(b\)}{b} OPE}
+\label{sec:nuclear}
+
+The nuclear ancestry remains
+\begin{equation}
+ \mathfrak N_D=
+ \{NN,NN\pi,\Delta\Delta,6q_{\rm cluster},6q_{\rm hidden},
+ \text{transition/interference},\text{coherent pilot}\}.
+ \label{eq:nuclear-ancestry}
+\end{equation}
+
+\subsection{Target-independent coefficients, ancestry-preserving matrix elements}
+
+For the same quark or gluon operator, the perturbative coefficient acts on every target matrix element without erasing its ancestry:
+\begin{equation}
+ \widetilde F_{A,D}^{(\alpha)}
+ =
+ \sum_{B,j}
+ C_{A\leftarrow B}^{a\leftarrow j}
+ \otimesx
+ f_{B,D}^{j,(\alpha)},
+ \qquad
+ \alpha\in\mathfrak N_D.
+ \label{eq:ancestry-ope}
+\end{equation}
+A common coefficient does not justify summing the sectors before matching.
+
+\subsection{Impulse commutation}
+
+For a scale-independent impulse kernel \(\cP\), associativity gives
+\begin{equation}
+ \bm C\otimesx(\cP\otimesx\bm f)
+ =
+ \cP\otimesx(\bm C\otimesx\bm f),
+ \label{eq:impulse-commutation}
+\end{equation}
+under the declared support and integration conditions.  This is tested separately for proton-active and neutron-active terms, quarks, antiquarks, gluons, \(U\), \(LL\), multiple ranks, and several \(Q\) values.
+
+\subsection{Independent many-body operators}
+
+Pion-active, transition, coherent, \(\Delta\Delta\), compact, and interaction-current operators receive their own coefficient/evolution block or an explicit unavailable status.  A nucleon impulse coefficient cannot be applied to a two-body operator because its output array has the same shape.
+
+\subsection{Hidden-color covariance}
+
+For a unitary rotation \(U\) in the four-dimensional hidden-color complement,
+\begin{equation}
+ \rho_6'=(1\oplus U)\rho_6(1\oplus U)^\dagger,
+ \qquad
+ \cO_6'=(1\oplus U)\cO_6(1\oplus U)^\dagger.
+ \label{eq:hidden-transform}
+\end{equation}
+The complete matched and evolved observable must satisfy
+\begin{equation}
+ \Tr(\rho_6'\cO_6')=\Tr(\rho_6\cO_6),
+ \label{eq:hidden-invariance}
+\end{equation}
+while individual hidden-color basis components may change.
+
+\section{Uncertainty, domains, and accuracy}
+\label{sec:uncertainty}
+
+\subsection{Separated uncertainty axes}
+
+The M3 ledger retains separately:
+\begin{enumerate}
+\item microscopic Hamiltonian/member uncertainty;
+\item basis, Fock, regulator, and Wilson-order truncation;
+\item C20 matching covariance;
+\item C21 Collins--Soper and path/curl uncertainty;
+\item coefficient perturbative truncation;
+\item endpoint and HPL numerical evaluation;
+\item collinear splitting truncation;
+\item \(\gamma_5\) finite-scheme conversion;
+\item threshold matching;
+\item small-\(b\) power correction;
+\item large-\(b\) model boundary;
+\item nuclear many-body operator availability;
+\item cluster/hidden-color matching;
+\item rank transform and quadrature;
+\item missing operator and source disagreement.
+\end{enumerate}
+An optional combined covariance may be produced only after these axes remain recoverable.
+
+\subsection{Domain record}
+
+Every M3-qualified result stores
+\begin{equation}
+ \mathfrak D_A=
+ \left(
+ x\text{-domain},
+ b\text{-domain},
+ Q\text{-domain},
+ n_f\text{-history},
+ \text{endpoint domain},
+ \text{source continuation status}
+ \right).
+ \label{eq:domain-record}
+\end{equation}
+A small-\(b\) OPE evaluated outside its declared \(b\)-domain is not a larger uncertainty band; it is an invalid operation unless a separately defined interpolation or large-\(b\) model takes over.
+
+\subsection{Accuracy tuple}
+
+The authoritative accuracy object is
+\begin{equation}
+ \mathfrak A_A=
+ \left(
+ p_C,
+ p_P,
+ p_\Gamma,
+ p_\gamma,
+ p_\cD,
+ p_\beta,
+ p_{\rm thr},
+ p_{\rm rank},
+ p_{\rm Wilson},
+ p_{\rm nuc},
+ p_{\rm pow}
+ \right)_A.
+ \label{eq:accuracy-tuple}
+\end{equation}
+A human-readable logarithmic label is generated only after the least accurate required ingredient is identified.  An N\(^3\)LO coefficient with an NNLO splitting kernel and an exploratory Collins--Soper kernel does not produce an N\(^3\)LO physical TMD prediction.
+
+\section{Formal software architecture}
+\label{sec:software}
+
+\begin{longtable}{L{0.28\textwidth}L{0.64\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{EndpointDistribution} & Exact regular, delta, plus, small-\(x\), HPL, color, and matrix representation.\\
+\texttt{DistributionConvention} & Domain, test-function action, lower-limit convention, convolution variable, and delta normalization.\\
+\texttt{CoefficientSourceRecord} & Primary source, locator, source/ancillary/transcription hashes, convention conversion, and independent oracle.\\
+\texttt{TwistTwo\allowbreak Coefficient\allowbreak Record} & Complete source/target operator, rank, twist, link/color, scheme, order, distribution, and remainder identity.\\
+\texttt{Gamma5SchemeRecord} & Bare prescription, projectors, finite axial conversion, anomaly and singlet/nonsinglet status.\\
+\texttt{CollinearOperatorBasis} & Nonsinglet, singlet, helicity, transversity, LL, double-flip, and unavailable multiparton blocks.\\
+\texttt{SplittingFunctionRecord} & Distributional kernel, source, order, scheme, moments, thresholds, and oracle.\\
+\texttt{XSpaceConvolutionEngine} & Endpoint-correct distribution action and deterministic x-space evolution.\\
+\texttt{MellinSpace\allowbreak Evolution\allowbreak Oracle} & Independent moment-space evolution and inverse/benchmark tools.\\
+\texttt{SmallBOPEMap} & Typed coefficient matrix between a TMD operator block and a collinear block.\\
+\texttt{OPERGConsistencyReport} & Log reconstruction, route A/B comparison, omitted-order scaling, and threshold consistency.\\
+\texttt{M3MultiQCapabilityMatrix} & Complete 540-entry capability lattice with reasons and bottlenecks.\\
+\texttt{ResolvedNuclear\allowbreak OPE\allowbreak Manifest} & Sector-preserving coefficient action, impulse commutation, independent many-body status, and hidden-color covariance.\\
+\texttt{M3ClosureReport} & Endpoint, moment, rank, RG, threshold, nuclear, holdout, and regression residuals.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Fail-closed execution}
+
+A small-\(b\) map can execute only when:
+\begin{itemize}
+\item source and target operators match the coefficient record;
+\item the scheme, \(\gamma_5\), derivative, rank, link, color, and threshold histories are compatible;
+\item the requested \(b\) and \(Q\) lie in the declared domain;
+\item the collinear block and C21 evolution capability exist;
+\item the microscopic and nuclear member IDs are unchanged;
+\item no unresolved source disagreement blocks the record.
+\end{itemize}
+Array-shape compatibility is never sufficient.
+
+\subsection{Immutable cache keys}
+
+A cache key contains at least
+\begin{equation}
+ \mathrm{key}=\mathrm{hash}
+ \left(
+ A,s,\mathfrak s,\mathfrak c,\mathfrak g_5,
+ \bm P,Q,b,m,n_f,\mathfrak N,
+ \text{source versions},\text{code version}
+ \right).
+ \label{eq:cache-key}
+\end{equation}
+Changing a source version, endpoint convention, hidden-color basis, threshold history, or rank invalidates the cache.
+
+\section{Benchmark and falsification program}
+\label{sec:benchmarks}
+
+The M3 formal benchmark families are:
+\begin{longtable}{L{0.12\textwidth}L{0.80\textwidth}}
+\toprule
+ID & Benchmark\\
+\midrule
+\endhead
+M3-A & Plus distributions, delta endpoints, lower convolution limits, and analytic test functions.\\
+M3-B & Deterministic HPL ancillary parsing, source sample points, and endpoint expansions.\\
+M3-C & Unpolarized quark/gluon coefficient blocks, color decomposition, Mellin moments, and RG logs.\\
+M3-D & Helicity coefficients, \(\gamma_5\) conversion, singlet/nonsinglet first moments, and source comparison.\\
+M3-E & Transversity matching/evolution, tensor-current moment, and no-gluon-mixing test.\\
+M3-F & Rank-two linearly polarized gluon matching with quark/gluon parent channels.\\
+M3-G & Pretzelosity zero-coefficient classification and higher-twist gate.\\
+M3-H & Spin-1 \(LL\) operator universality and target-state separation.\\
+M3-I & Unpolarized x-space/Mellin-space nonsinglet and singlet evolution.\\
+M3-J & Helicity evolution with explicit \(\gamma_5\) scheme.\\
+M3-K & Route A/Route B consistency over several \(b\), \(Q\), and threshold points.\\
+M3-L & Rank-zero through rank-three OPE/evolution/inverse-transform transport.\\
+M3-M & Resolved nuclear OPE, impulse commutation, and independent many-body statuses.\\
+M3-N & Hidden-color basis covariance after matching and evolution.\\
+M3-O & Complete 540-entry capability and bottleneck-accuracy classification.\\
+M3-P & Deterministic reconstruction, prior-regression preservation, and process/production isolation.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Required negative tests}
+
+The implementation package should contain at least 720 stable, ordered failures covering:
+\begin{itemize}
+\item missing or incorrect source provenance and ancillary parsing;
+\item endpoint, plus, delta, HPL branch, and small-\(x\) errors;
+\item operator-by-name matching and target-universality overreach;
+\item twist-two coefficients used for twist-three or T-odd channels;
+\item pretzelosity copied from transversity;
+\item \(\gamma_5\) and singlet/nonsinglet conversion errors;
+\item wrong splitting-matrix ordering and sum-rule violations;
+\item wrong Bessel rank, phase, mass, or \(b\)-domain;
+\item threshold and Route A/Route B mismatch;
+\item nuclear ancestry collapse and hidden-color basis dependence;
+\item dropped uncertainty axes and accuracy laundering;
+\item process, \(W+Y\), inference, production, or authoritative-artifact leakage.
+\end{itemize}
+
+\section{Staged implementation and process handoff}
+\label{sec:stages}
+
+\subsection{M3.0: distribution and source spine}
+
+Implement exact endpoint distributions, source records, ancillary ingestion, HPL evaluation, and independent x/Mellin oracles.
+
+\subsection{M3.1: unpolarized and helicity blocks}
+
+Implement unpolarized nonsinglet/singlet and helicity nonsinglet/singlet coefficient and splitting blocks, including the complete \(\gamma_5\) conversion.
+
+\subsection{M3.2: transversity, linear gluons, and spin-1 channels}
+
+Implement transversity, linearly polarized gluons, spin-1 \(LL\) universality, and the explicit pretzelosity and double-flip availability records.
+
+\subsection{M3.3: RG, threshold, and rank transport}
+
+Implement coefficient RG reconstruction, Route A/Route B comparison, threshold transport, and rank-zero through rank-three multi-\(Q\) closure.
+
+\subsection{M3.4: resolved nuclear OPE}
+
+Apply coefficients to the resolved nuclear graph, prove impulse commutation where valid, retain unavailable many-body blocks, and test hidden-color covariance.
+
+\subsection{P0 handoff}
+
+After M3 closes, a process package may consume only identities marked \texttt{M3\_FULLY\_\allowbreak QUALIFIED}.  Volume XVII defines the required \(\DY\), \(\SIDIS\), inclusive \(b_1\), tagged, gluon-sensitive, factorization/Glauber, and rank-resolved \(W+Y\) objects.  Process execution may not serve as a workaround for an incomplete OPE identity.
+
+\section{Risks, failure modes, and explicit nonclaims}
+\label{sec:risks}
+
+\begin{longtable}{L{0.20\textwidth}L{0.32\textwidth}L{0.40\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+Grid coefficient & Endpoint distributions are approximated by sampled values. & Exact distribution objects and independent Mellin checks.\\
+Source drift & Code no longer matches the cited version or ancillary. & Source, ancillary, and transcription hashes.\\
+Recency selection & A newer disputed result is accepted automatically. & Source-disagreement protocol and fail-closed status.\\
+Twist laundering & A twist-two coefficient populates a T-odd or higher-twist channel. & Operator-level twist classification.\\
+Target overreach & Unpolarized target coefficient is copied to a distinct tensor operator. & Same-operator proof before target universality.\\
+Gamma5 drift & Polarized coefficients and splitting functions use incompatible finite schemes. & Explicit \(\gamma_5\) record and conversion matrices.\\
+Endpoint error & Delta or plus terms are lost or duplicated. & Analytic test functions and conserved moments.\\
+Matrix reversal & Singlet coefficient/splitting matrices are transposed. & Typed source/target indices and moment tests.\\
+Rank erasure & Scalar transforms act on ranked operators. & Rank identity and Bessel-order gates.\\
+Pretzelosity overclaim & Zero twist-two coefficient is called a physical zero. & Separate coefficient/function/higher-twist statuses.\\
+Threshold drift & \(n_f\) changes in only one ingredient. & Bundle threshold transformation.\\
+Nuclear collapse & Coefficients act only on a final scalar total. & Resolved ancestry and independent many-body blocks.\\
+Accuracy laundering & Best-known coefficient labels the whole observable. & Full ingredient tuple and bottleneck.\\
+Capability inflation & Approximations are chosen to maximize executable entries. & No target count and frozen holdouts.\\
+Process overreach & A process uses coefficient-only or evolution-only entries. & P0 accepts only M3-qualified identities.\\
+\bottomrule
+\end{longtable}
+
+This volume does not establish a physical global TMD extraction, complete twist-three matching, all-order OPE/evolution, process factorization, \(W+Y\), inference, or production readiness.
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+The M3 formal layer is accepted only when:
+\begin{enumerate}
+\item every primary source and ancillary is locally preserved and hash audited;
+\item every executable distribution retains exact endpoint, color, and scheme identity;
+\item plus distributions and lower-limit convolutions pass independent analytic tests;
+\item x-space and Mellin-space routes are independently implemented;
+\item unpolarized nonsinglet and singlet coefficient/evolution blocks pass moment constraints;
+\item helicity coefficients and splitting matrices pass explicit \(\gamma_5\) conversion and first-moment tests;
+\item transversity remains nonsinglet and does not acquire false gluon mixing;
+\item linearly polarized gluon matching retains rank two and source-audited parent channels;
+\item pretzelosity is classified as zero at the audited twist/order without a physical-zero claim;
+\item spin-1 \(LL\) universality is used only after same-operator proof;
+\item unsupported twist-three, T-odd, and double-flip blocks remain fail-closed;
+\item coefficient logarithms satisfy the project RG equation;
+\item Route A and Route B agree through the declared first omitted order and power domain;
+\item threshold maps preserve nonsinglet number and singlet momentum;
+\item rank-zero through rank-three identities and transforms remain intact;
+\item all 540 identities receive a complete M3 capability tuple;
+\item the immutable C20 492/48 and C21 438/102 counts remain recorded unchanged;
+\item the new M3 counts are reported without a preselected target;
+\item resolved nuclear ancestry survives coefficient action and collinear evolution;
+\item hidden-color complete observables remain basis invariant;
+\item uncertainty axes and source disagreements remain separately represented;
+\item accuracy labels report the least accurate required ingredient;
+\item all frozen holdouts remain outside calibration;
+\item all negative tests produce the expected fail-closed diagnostic;
+\item all prior microscopic, matching, evolution, production, and artifact regressions remain unchanged;
+\item no process, \(W+Y\), inference, or production path is created.
+\end{enumerate}
+
+\begin{quote}
+\emph{Passing these conditions establishes an operator-level, source-audited, capability-complete twist-two multi-\(Q\) ensemble.  It does not establish that every named TMD has a twist-two OPE, that twist-three evolution is complete, or that any process prediction is ready.}
+\end{quote}
+
+\appendix
+
+\section{Minimal coefficient schema}
+\label{app:coefficient-schema}
+
+\begin{verbatim}
+{
+  "coefficient_id": "...",
+  "source_operator_id": "...",
+  "target_collinear_operator_id": "...",
+  "species_block": "...",
+  "target_state_universality": "PROVEN|NOT_APPLICABLE|UNPROVEN",
+  "twist": 2,
+  "transverse_rank": 0,
+  "wilson_link_class": "...",
+  "gluon_color_class": "NOT_APPLICABLE|F_TYPE|D_TYPE",
+  "uv_rapidity_soft_scheme": "...",
+  "gamma5_scheme": "...",
+  "first_nonzero_order": "...",
+  "implemented_order": "...",
+  "distribution_expression": "...",
+  "endpoint_convention": "...",
+  "primary_source": "...",
+  "equation_or_ancillary_locator": "...",
+  "source_sha256": "...",
+  "ancillary_sha256": "...",
+  "transcription_sha256": "...",
+  "independent_oracles": ["x_space", "mellin_moments"],
+  "power_domain": "...",
+  "remainder": "...",
+  "availability": "..."
+}
+\end{verbatim}
+
+\section{Minimal M3 capability schema}
+\label{app:capability-schema}
+
+\begin{verbatim}
+{
+  "operator_id": "...",
+  "c20_reference_matching": "...",
+  "c21_tmd_evolution": "...",
+  "twist_classification": "...",
+  "smallb_coefficient_id": "...",
+  "coefficient_order": "...",
+  "collinear_operator_id": "...",
+  "splitting_block_id": "...",
+  "collinear_order": "...",
+  "gamma5_conversion": "...",
+  "threshold_history": ["..."],
+  "rank_transform_id": "...",
+  "route_ab_consistency": "...",
+  "m3_status": "...",
+  "bottleneck": "...",
+  "unavailable_reason": "..."
+}
+\end{verbatim}
+
+\section{Minimal source-disagreement schema}
+\label{app:disagreement-schema}
+
+\begin{verbatim}
+{
+  "disagreement_id": "...",
+  "operator_block": "...",
+  "source_records": ["...", "..."],
+  "common_scheme": "...",
+  "shared_lower_order_checks": ["..."],
+  "moment_checks": ["..."],
+  "endpoint_checks": ["..."],
+  "gamma5_or_color_checks": ["..."],
+  "resolution_status": "RESOLVED|UNRESOLVED",
+  "selected_executable_record": "...",
+  "selection_rationale": "...",
+  "remaining_uncertainty": "..."
+}
+\end{verbatim}
+
+\section{Summary of stable formal requirements}
+\label{app:requirements}
+
+\footnotesize
+\begin{longtable}{L{0.18\textwidth}L{0.74\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V18.SRC.1 & Preserve every primary source and ancillary with locator and hashes.\\
+V18.SRC.2 & Resolve primary-source disagreements by conventions, moments, RG, and sum rules; otherwise fail closed.\\
+V18.DIST.1 & Represent regular, delta, plus, small-\(x\), HPL, color, and matrix structures exactly.\\
+V18.DIST.2 & Test plus distributions on full and truncated convolution intervals.\\
+V18.DIST.3 & Provide independent x-space and Mellin-space oracles.\\
+V18.TYPE.1 & Classify all 540 identities by operator, species, rank, link/color, target, twist, and scheme.\\
+V18.TYPE.2 & Never infer twist or coefficient family from a named TMD alone.\\
+V18.OPE.1 & Store source and target operators, first and implemented orders, power domain, and remainder.\\
+V18.OPE.2 & Keep target-state universality distinct from operator universality.\\
+V18.OPE.3 & Retain twist-three and higher-twist multiparton bases explicitly.\\
+V18.PRETZ.1 & Record pretzelosity as zero at the audited twist/order, not a physical zero.\\
+V18.LL.1 & Use unpolarized-type coefficients for LL only after same-operator proof.\\
+V18.G5.1 & Store the complete \(\gamma_5\), finite axial, singlet/nonsinglet, and anomaly scheme.\\
+V18.COLL.1 & Separate unpolarized NS, singlet q/g, helicity NS/singlet, transversity, LL, double-flip, and twist-three blocks.\\
+V18.COLL.2 & Implement independent x-space and Mellin-space evolution routes.\\
+V18.RG.1 & Reconstruct coefficient logarithms from the project anomalous dimensions and splitting functions.\\
+V18.RG.2 & Compare match-then-evolve with evolve-then-rematch through the declared order.\\
+V18.THR.1 & Transform coefficients, splitting matrices, coupling, TMD evolution, and accuracy together at thresholds.\\
+V18.RANK.1 & Preserve rank, Bessel order, Fourier phase, powers, and reference mass.\\
+V18.CAP.1 & Give every identity a multidimensional M3 capability tuple and reason.\\
+V18.CAP.2 & Do not select approximations to maximize the qualified-entry count.\\
+V18.NUC.1 & Preserve resolved nuclear ancestry under OPE and collinear evolution.\\
+V18.NUC.2 & Give independent many-body operators their own coefficient block or unavailable status.\\
+V18.NUC.3 & Preserve complete-observable hidden-color basis covariance.\\
+V18.UNC.1 & Keep source, coefficient, splitting, gamma5, threshold, power, nuclear, and numerical uncertainties separate.\\
+V18.ACC.1 & Use a full ingredient-level accuracy tuple and report the bottleneck.\\
+V18.HOLD.1 & Freeze multi-family, endpoint, route, threshold, and nuclear holdouts before tuning.\\
+V18.ISO.1 & Keep M3 disconnected from process, W+Y, inference, and production roots.\\
+V18.VAL.1 & Pass distribution, source, RG, rank, threshold, nuclear, capability, and regression benchmarks.\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{GutierrezReyesScimemiVladimirov2017}
+D.~Gutierrez-Reyes, I.~Scimemi, and A.~A.~Vladimirov,
+``Twist-2 matching of transverse momentum dependent distributions,''
+Phys.\ Lett.\ B \textbf{769}, 84 (2017), arXiv:1702.06558.
+
+\bibitem{GutierrezReyesScimemiVladimirov2018}
+D.~Gutierrez-Reyes, I.~Scimemi, and A.~Vladimirov,
+``Transverse momentum dependent transversely polarized distributions at next-to-next-to-leading order,''
+JHEP \textbf{07}, 172 (2018), arXiv:1805.07243.
+
+\bibitem{LuoQuark2019}
+M.-X.~Luo, X.~Wang, X.~Xu, L.~L.~Yang, T.-Z.~Yang, and H.~X.~Zhu,
+``Transverse parton distribution and fragmentation functions at NNLO: the quark case,''
+JHEP \textbf{10}, 083 (2019), arXiv:1908.03831.
+
+\bibitem{LuoGluon2020}
+M.-X.~Luo, T.-Z.~Yang, H.~X.~Zhu, and Y.~J.~Zhu,
+``Transverse parton distribution and fragmentation functions at NNLO: the gluon case,''
+JHEP \textbf{01}, 040 (2020), arXiv:1909.13820.
+
+\bibitem{EbertMistlbergerVita2020}
+M.~A.~Ebert, B.~Mistlberger, and G.~Vita,
+``Transverse momentum dependent PDFs at N\(^3\)LO,''
+JHEP \textbf{09}, 146 (2020), arXiv:2006.05329.
+
+\bibitem{LuoEtAl2021}
+M.-X.~Luo, T.-Z.~Yang, H.~X.~Zhu, and Y.~J.~Zhu,
+``Unpolarized quark and gluon TMD PDFs and FFs at N\(^3\)LO,''
+JHEP \textbf{06}, 115 (2021), arXiv:2012.03256.
+
+\bibitem{ZhuHelicity2025}
+Y.~J.~Zhu,
+``The N\(^3\)LO twist-2 matching of helicity TMDs and SIDIS \(q_\ast\) spectrum,''
+arXiv:2509.01655 (2025).
+
+\bibitem{ZhuLinearGluon2025}
+Y.~J.~Zhu,
+``The N\(^3\)LO twist-2 matching of linearly polarized gluon TMDs,''
+arXiv:2509.01703 (2025).
+
+\bibitem{ZhuTransversity2025}
+Y.~J.~Zhu,
+``The N\(^3\)LO twist-2 matching of TMD quark transversity,''
+arXiv:2509.17568 (2025).
+
+\bibitem{ZhuDGLAP2026}
+Y.~J.~Zhu,
+``NNLO DGLAP splitting functions from collinear matching of TMDs,''
+arXiv:2603.04039 (2026).
+
+\bibitem{MochVermaserenVogt2004NS}
+S.~Moch, J.~A.~M.~Vermaseren, and A.~Vogt,
+``The three-loop splitting functions in QCD: the non-singlet case,''
+Nucl.\ Phys.\ B \textbf{688}, 101 (2004), arXiv:hep-ph/0403192.
+
+\bibitem{VogtMochVermaseren2004Singlet}
+A.~Vogt, S.~Moch, and J.~A.~M.~Vermaseren,
+``The three-loop splitting functions in QCD: the singlet case,''
+Nucl.\ Phys.\ B \textbf{691}, 129 (2004), arXiv:hep-ph/0404111.
+
+\bibitem{MochVermaserenVogt2014}
+S.~Moch, J.~A.~M.~Vermaseren, and A.~Vogt,
+``The three-loop splitting functions in QCD: the helicity-dependent case,''
+Nucl.\ Phys.\ B \textbf{889}, 351 (2014), arXiv:1409.5131.
+
+\bibitem{MochVermaserenVogt2015}
+S.~Moch, J.~A.~M.~Vermaseren, and A.~Vogt,
+``On \(\gamma_5\) in higher-order QCD calculations and the NNLO evolution of the polarized valence distribution,''
+Phys.\ Lett.\ B \textbf{748}, 432 (2015), arXiv:1506.04517.
+
+\bibitem{BehringEtAl2019}
+A.~Behring, J.~Bl\"umlein, A.~De Freitas, A.~Goedicke, S.~Klein,
+A.~von Manteuffel, C.~Schneider, and K.~Sch\"onwald,
+``The polarized three-loop anomalous dimensions from on-shell massive operator matrix elements,''
+Nucl.\ Phys.\ B \textbf{948}, 114753 (2019), arXiv:1908.03779.
+
+\bibitem{KumanoSong2022}
+S.~Kumano and Q.-T.~Song,
+``Gluon transversity and TMDs for spin-1 hadrons,''
+JHEP \textbf{09}, 141 (2022), arXiv:2201.04875.
+
+\bibitem{BoerEtAl2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson-loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000), arXiv:hep-ph/0007120.
+
+\bibitem{KumanoSong2021}
+S.~Kumano and Q.-T.~Song,
+``Transverse-momentum-dependent parton distribution functions for spin-1 hadrons,''
+Phys.\ Rev.\ D \textbf{103}, 014025 (2021), arXiv:2011.08583.
+
+\end{thebibliography}
+
+\end{document}

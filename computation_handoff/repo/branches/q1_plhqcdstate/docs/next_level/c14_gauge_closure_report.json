@@ -1,0 +1,34 @@
+{
+  "ablation_residuals": {
+    "CURRENT": 0.011,
+    "FOUR_GLUON_CONTACT": -0.029,
+    "INSTANTANEOUS_FERMION": 0.024,
+    "INSTANTANEOUS_GLUON": 0.021,
+    "PAIR_CONVERSION": 0.018,
+    "REGULATOR_ZERO_MODE": 0.01,
+    "SECTOR_COUNTERTERM": 0.013,
+    "SEQUENTIAL": -0.063,
+    "SPECTATOR_CHIRAL": 0.012,
+    "THREE_GLUON": -0.041,
+    "VERTEX_COUNTERTERM": 0.015,
+    "WAVEFUNCTION_RESIDUE": 0.009
+  },
+  "full_slavnov_taylor_closure": false,
+  "pieces": {
+    "CURRENT": -0.011,
+    "FOUR_GLUON_CONTACT": 0.029,
+    "INSTANTANEOUS_FERMION": -0.024,
+    "INSTANTANEOUS_GLUON": -0.021,
+    "PAIR_CONVERSION": -0.018,
+    "REGULATOR_ZERO_MODE": -0.01,
+    "SECTOR_COUNTERTERM": -0.013,
+    "SEQUENTIAL": 0.063,
+    "SPECTATOR_CHIRAL": -0.012,
+    "THREE_GLUON": 0.041,
+    "VERTEX_COUNTERTERM": -0.015,
+    "WAVEFUNCTION_RESIDUE": -0.009
+  },
+  "residual": 0.0,
+  "schema_version": "1.0.0",
+  "status": "H7_FINITE_SECOND_ORDER_GAUGE_BENCHMARKED"
+}

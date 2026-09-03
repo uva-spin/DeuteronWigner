@@ -1,0 +1,3443 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume III: Dynamical Wilson Lines, Rescattering Phases, and Naive-T-Odd GTMDs},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume III}
+\fancyhead[R]{\small\color{darkgray}Dynamical Wilson lines and phases}
+\fancyfoot[L]{\small\color{darkgray}29 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{principle}{principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\ellT}{\bm{\ell}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\PT}{\bm{P}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\DNT}{\bm{\Delta}_{N T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\RT}{\bm{R}_{T}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Disc}{\operatorname{Disc}}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\Phys}{\mathcal H_{\mathrm{phys}}}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\Alg}{\mathcal A}
+\newcommand{\Rep}{\mathcal V}
+\newcommand{\Path}{\mathsf{Path}}
+\newcommand{\LF}{\mathrm{LF}}
+\newcommand{\TMD}{\mathrm{TMD}}
+\newcommand{\QCD}{\mathrm{QCD}}
+\newcommand{\GTMD}{\mathrm{GTMD}}
+\newcommand{\GPD}{\mathrm{GPD}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Dens}{\mathbf{Dens}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\etaW}{\eta_{\!W}}
+\newcommand{\bbone}{\bm 1}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\comm}[2]{\left[#1,#2\right]}
+\newcommand{\acom}[2]{\left\{#1,#2\right\}}
+\newcommand{\Tord}{\mathcal P}
+\newcommand{\crossT}[2]{\bigl(#1\!\times\!#2\bigr)_z}
+\newcommand{\straight}{\mathrm{str}}
+\newcommand{\staple}{\mathrm{stp}}
+\newcommand{\unsub}{\mathrm{unsub}}
+\newcommand{\subtr}{\mathrm{sub}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\odd}{\mathrm{odd}}
+\newcommand{\even}{\mathrm{even}}
+\newcommand{\soft}{\mathrm{soft}}
+\newcommand{\micro}{\mathrm{micro}}
+\newcommand{\hard}{\mathrm{hard}}
+\newcommand{\rap}{\mathrm{rap}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\LFTO}{\mathrm{LFTO}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume III: Dynamical Wilson Lines, Rescattering Phases,\\[2mm]
+and Naive-\(T\)-Odd GTMDs}\\[4mm]
+\large Gauge transport, eikonal light-front dynamics, absorptive cuts,\\
+process reversal, soft subtraction, and quark/gluon color structure}
+\author{DeuteronWigner project}
+\date{29 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volume~I defined the regulated gauge-constrained light-front state space and
+microscopic mass operator.  Volume~II constructed the common zero-rescattering
+quark, antiquark, and gluon GTMD overlaps from those states.  The present
+volume supplies the missing process-dependent gauge transport and absorptive
+dynamics.  It separates the geometric Wilson path, its eikonal pole
+prescription, light-front intermediate-state cuts, rapidity regulation,
+soft-overlap subtraction, and process-factorization status.  Its primary
+pilot is the leading-twist, zero-skewness nucleon correlator, but every object
+is target-spin agnostic so that the same engine can be consumed by the
+spin-1 nuclear construction in Volume~IV.  The central output is an
+operator-valued rescattering kernel with explicit flavor, link, color,
+truncation, and phase provenance; a universal scalar phase multiplying
+unrelated TMDs is excluded by construction.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+Naive-time-reversal-odd transverse-momentum-dependent distributions cannot be
+generated by a real zeroth-order light-front overlap alone.  Their leading
+power contribution is encoded in process-dependent Wilson lines and the
+absorptive support of initial- or final-state rescattering
+\cite{BrodskyHwangSchmidt2002,Collins2002,BelitskyJiYuan2003}.  This volume
+constructs that dynamics as a typed extension of the common GTMD overlap
+formalism.
+
+We fix the covariant-derivative and Fourier conventions, define bare Wilson
+transport as a functor from an admissible path groupoid to color fibers, and
+construct future- and past-pointing staples with explicit transverse closure.
+For a semi-infinite segment the path integral produces the eikonal denominator
+\(1/(v\!\cdot\!\ell-i0\eta)\), whose distributional imaginary part changes
+sign under \(\eta\to-\eta\).  The pole is not by itself the complete physical
+phase: it is embedded in a light-front time-ordered amplitude with
+intermediate-state energy denominators, constrained-field and transverse-link
+terms, regulator data, and a cut-provenance ledger that forbids counting the
+same on-shell support twice.  The one-gluon correction is therefore an
+operator kernel in Fock, color, helicity, and orbital space, not an adjustable
+complex number.
+
+The formalism distinguishes Hermitian path inversion from antiunitary
+future/past reversal, defines link-even and link-odd GTMD components at
+nonzero transfer, and derives the familiar forward sign change only after the
+complete time-reversal adapter has acted on momenta and spin.  Quark Sivers
+and Boer--Mulders functions are different projections of a shared
+rescattering interaction: the former uses target-helicity interference in a
+vector operator, whereas the latter uses active-quark helicity interference
+in a chiral-odd operator.  Gluon correlators retain an ordered pair of
+adjoint links and two orthogonal three-adjoint color tensors,
+\(if^{abc}\) and \(d^{abc}\); link topology and color contraction remain
+separate identity fields.  Transverse moments are matched to renormalized
+quark--gluon and tri-gluon pole operators rather than interpreted as
+unregulated integrals.
+
+A properly defined TMD or GTMD additionally requires rapidity regulation,
+soft subtraction, ultraviolet renormalization, and matching
+\cite{EchevarriaGTMD2016,EchevarriaSoft2016}.  We formulate two admissible
+microscopic routes: a boundary-only calculation in which rapidity logarithms
+and the Collins--Soper kernel are left to Volume~V, and a joint soft-sector
+calculation in which both the boundary and kernel are generated and matched
+from the same microscopic theory.  Mixing the two routes is prohibited.
+Higher eikonal orders are organized by Dyson and Magnus expansions with
+independent Wilson-order convergence.  A process registry carries the
+factorization theorem, link map, hard color weights, and Glauber status, and
+fails closed in channels where separate-hadron TMD factorization is not
+established or is known to fail \cite{CollinsQiu2007,RogersMulders2010}.
+The volume concludes with formal propositions, analytic benchmarks, software
+interfaces, property-based tests, and acceptance criteria for exporting a
+dynamical link-resolved nucleon parent to Volumes~IV and~V.
+\end{abstract}
+
+\tableofcontents
+
+\section{Role, scope, and inherited contracts}
+\label{sec:role}
+
+\subsection{The missing dynamical layer}
+
+Volume~II exported a zero-rescattering parent
+\begin{equation}
+ W_{a/N}^{(0)}
+ =\langle N'|\cO_a\,U_{\gamma}^{(0)}|N\rangle,
+ \qquad U_{\gamma}^{(0)}=\bbone,
+\label{eq:volume2-zero-parent}
+\end{equation}
+with complete momentum-fiber, species, flavor, helicity, transverse-rank,
+path, color, regulator, scheme, and microscopic-member identity.  For real
+state amplitudes and real operator kernels, every path-odd projection of
+\cref{eq:volume2-zero-parent} vanishes.  This is a controlled boundary, not a
+claim that physical Sivers, Boer--Mulders, or gluon naive-\(T\)-odd functions
+are zero.
+
+The present volume replaces the identity transport by
+\begin{equation}
+ U_\gamma^{(R)}
+ =\Tord\exp\!\left[-ig\int_\gamma \dd\xi^\mu
+ A_\mu^a(\xi)T_R^a\right],
+\label{eq:wilson-transport-intro}
+\end{equation}
+using the same gauge field, color coupling, state sectors, and
+renormalization datum that enter the microscopic Hamiltonian.  The
+calculation therefore follows
+\begin{equation}
+ \left\{\cM_{\LF}^2,|\Psi_N\rangle,\cO_a\right\}
+ \longrightarrow
+ \left\{U_\gamma,\cK_{\mathrm{resc}},\Disc\right\}
+ \longrightarrow
+ W_{a/N}^{[\gamma]}
+ \longrightarrow
+ \left\{F_{\even},F_{\odd}\right\}.
+\label{eq:volume3-chain}
+\end{equation}
+
+\begin{principle}[Shared interaction, distinct projections]
+\label{prin:shared-rescattering}
+A quark--gluon vertex, eikonal exchange, intermediate state, or color tensor
+is represented once and contributes to every operator projection that uses
+it.  Sivers, Boer--Mulders, and gluon naive-\(T\)-odd functions may be
+correlated because they share microscopic interactions, but none may be
+defined as a scalar multiple of another unless a derived approximation with
+an explicit domain and error is supplied.
+\end{principle}
+
+\subsection{Primary domain}
+
+The primary pilot retains:
+\begin{itemize}
+\item a spin-\(\tfrac12\) nucleon target and the accepted Volume~II momentum
+      fibers;
+\item zero skewness, positive \(x\), and the DGLAP region;
+\item leading-twist quark, antiquark, and gluon operators;
+\item the first nonvanishing eikonal/Wilson order, followed by a declared
+      sequence in Wilson order;
+\item a regulator and soft-subtraction contract that can be matched to the
+      common TMD scheme of Volume~V.
+\end{itemize}
+The path and color engine is target-spin independent.  Volume~IV may therefore
+apply the same operators to a spin-1 nuclear state without introducing a new
+phenomenological phase layer.
+
+\subsection{Explicit nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+\item that one-gluon exchange is the complete Wilson-line dynamics;
+\item that a finite Wilson expansion is gauge, regulator, or scheme
+      independent before matching;
+\item that every process admits a factorization formula with separately
+      defined TMDs;
+\item that link topology alone determines a numerical phase;
+\item that every imaginary part of a raw helicity amplitude is a naive-
+      \(T\)-odd distribution;
+\item that Sivers or Boer--Mulders functions are topological invariants;
+\item that a phenomenological lensing relation between a TMD and a GPD is an
+      operator identity;
+\item that a finite-order subtracted correlator must satisfy every exact
+      pointwise positivity inequality.
+\end{itemize}
+
+\subsection{Interfaces with the volume series}
+
+\begin{longtable}{L{0.17\textwidth}L{0.31\textwidth}L{0.43\textwidth}}
+\toprule
+Interface & Received or exported object & Contract\\
+\midrule
+\endhead
+Volume I & Regulated states, gauge constraints, Hamiltonian vertices,
+current operators, truncation labels & Rescattering uses the same gauge field,
+couplings, counterterms, zero-mode prescription, and microscopic-member
+identity.\\
+Volume II & Typed quark, antiquark, and gluon overlap operators at nonzero
+\(\DT\) with \(U^{(0)}=1\) & Recoil, normalization, projectors, and
+operator fibers are immutable.  Volume III adds path dynamics but does not
+rebuild the parent.\\
+Volume IV & Link-resolved nucleon helicity matrices & Nuclear composition
+acts on the complete parent and may add nuclear rescattering only through a
+separate, matched many-body operator.\\
+Volume V & Bare/unsubtracted and microscopic-subtracted boundary objects,
+rapidity/soft metadata, Wilson-order manifest & Volume V performs the final
+regulator-to-QCD matching, common evolution, and process-level \(W+Y\)
+assembly.\\
+C1/C2 software spine & Coordinate, rank, sector, path, operator, map-class,
+reduction, and provenance identities & No new untyped array route or implicit
+phase alternative may bypass these identities.\\
+\bottomrule
+\end{longtable}
+
+\section{Gauge convention and bare path geometry}
+\label{sec:gauge-path}
+
+\subsection{Gauge-field convention}
+
+We fix
+\begin{equation}
+ D_\mu=\partial_\mu+igA_\mu,
+ \qquad
+ A_\mu=A_\mu^aT_R^a,
+\label{eq:covariant-derivative}
+\end{equation}
+so that
+\begin{equation}
+ [D_\mu,D_\nu]=igF_{\mu\nu},
+ \qquad
+ F_{\mu\nu}
+ =\partial_\mu A_\nu-\partial_\nu A_\mu
+ +ig[A_\mu,A_\nu].
+\label{eq:field-strength-convention}
+\end{equation}
+For a gauge transformation \(V_R(x)\),
+\begin{align}
+ \psi_R(x)&\longmapsto V_R(x)\psi_R(x),
+\nonumber\\
+ A_\mu(x)&\longmapsto
+ V_R(x)A_\mu(x)V_R^\dagger(x)
+ +\frac{i}{g}\bigl(\partial_\mu V_R(x)\bigr)V_R^\dagger(x).
+\label{eq:gauge-transformation}
+\end{align}
+The fundamental generators obey
+\begin{equation}
+ \tr(T_F^aT_F^b)=T_F\delta^{ab},
+ \qquad T_F=\frac12,
+\label{eq:fundamental-normalization}
+\end{equation}
+and the adjoint generators are
+\begin{equation}
+ (T_A^a)_{bc}=-if^{abc}.
+\label{eq:adjoint-generator}
+\end{equation}
+Every implementation stores the generator normalization; it is not inferred
+from a species label.
+
+\subsection{Oriented paths and endpoint fibers}
+
+An oriented piecewise smooth path is
+\begin{equation}
+ \gamma:[0,1]\longrightarrow M,
+ \qquad
+ \gamma(0)=a,
+ \quad
+ \gamma(1)=b.
+\label{eq:path-definition}
+\end{equation}
+The transport in representation \(R\) is
+\begin{equation}
+ U_\gamma^{(R)}[b,a]
+ =\Tord\exp\!\left[-ig\int_0^1\dd s\,
+ \dot\gamma^\mu(s)A_\mu^a(\gamma(s))T_R^a\right].
+\label{eq:path-transport}
+\end{equation}
+It transforms as
+\begin{equation}
+ U_\gamma^{(R)}[b,a]
+ \longmapsto
+ V_R(b)U_\gamma^{(R)}[b,a]V_R^\dagger(a).
+\label{eq:path-gauge-covariance}
+\end{equation}
+Thus a Wilson line is a map between endpoint color fibers, not an ordinary
+matrix with no source or target.
+
+\begin{definition}[Bare path identity]
+\label{def:bare-path-id}
+The bare path identity is
+\begin{equation}
+ \mathfrak g_{\rm bare}
+ =\bigl(
+ a,b,\gamma,\mathrm{segments},\mathrm{orientation},R,
+ \mathrm{endpoint\ closure},\mathrm{Fourier\ sign}
+ \bigr).
+\label{eq:bare-path-identity}
+\end{equation}
+It contains geometric and representation data only.  Rapidity regulator,
+soft prescription, scales, and renormalization scheme belong to the decorated
+operator identity in \cref{sec:operator-hierarchy}.
+\end{definition}
+
+\subsection{Composition, inversion, and unitarity}
+
+For composable paths \(\gamma_1:a\to b\) and \(\gamma_2:b\to c\),
+\begin{equation}
+ U_{\gamma_2\circ\gamma_1}[c,a]
+ =U_{\gamma_2}[c,b]U_{\gamma_1}[b,a].
+\label{eq:path-composition}
+\end{equation}
+For Hermitian gauge fields and a real contour,
+\begin{equation}
+ U_{\gamma^{-1}}[a,b]
+ =U_\gamma^\dagger[b,a],
+ \qquad
+ U_\gamma^\dagger U_\gamma=\bbone.
+\label{eq:path-inversion}
+\end{equation}
+
+\begin{proposition}[Bare transport functor]
+\label{prop:path-functor}
+At fixed regulator and finite-dimensional color representation, the
+assignment
+\begin{equation}
+ \cU_R:\Path(M)\longrightarrow\mathrm{ColorFib}_R,
+ \qquad
+ \gamma\longmapsto U_\gamma^{(R)}
+\label{eq:path-functor}
+\end{equation}
+respects identities, path concatenation, and inversion.
+\end{proposition}
+
+\begin{proof}
+The path-ordered exponential is the unique solution of the parallel-transport
+initial-value problem.  Evolution over adjacent intervals composes, the
+zero-length path has unit transport, and reversing the parameter changes the
+sign and order of the integral, giving \cref{eq:path-inversion}.
+\end{proof}
+
+\subsection{Staple paths and transverse closure}
+
+For a bilocal operator with endpoints \(a=-z/2\) and \(b=z/2\), define a
+staple
+\begin{equation}
+ \gamma_{\eta,v,c_T}
+ =\gamma_{a\to a+\eta\infty v}
+ \circ\gamma_{\perp,\infty}
+ \circ\gamma_{b+\eta\infty v\to b},
+ \qquad \eta\in\{+1,-1\},
+\label{eq:staple-path}
+\end{equation}
+where \(v\) is the rapidity direction and \(c_T\) specifies the transverse
+closure.  Future and past staples are distinct paths.  Their endpoints are
+the same, but they are not identified by path homotopy in a gauge field with
+nonzero curvature.  The transverse connector at light-cone infinity is part
+of the operator and is essential in gauges where the transverse gauge field
+does not vanish asymptotically \cite{BelitskyJiYuan2003}.
+
+The path label stores separately:
+\begin{equation}
+ \mathrm{direction}=\eta,
+ \qquad
+ \mathrm{rapidity\ vector}=v,
+ \qquad
+ \mathrm{closure}=c_T,
+ \qquad
+ \mathrm{boundary\ condition}=B_\infty.
+\label{eq:staple-fields}
+\end{equation}
+No default closure is inferred from \(\eta\).
+
+\subsection{Path deformation and curvature}
+
+For fixed endpoints, an infinitesimal deformation \(\delta x^\nu(s)\) gives
+schematically
+\begin{equation}
+ \delta U_\gamma[b,a]
+ =-ig\int_0^1\dd s\,
+ U_{\gamma_{>s}}[b,x_s]
+ F_{\mu\nu}(x_s)
+ U_{\gamma_{<s}}[x_s,a]
+ \dot x^\mu(s)\delta x^\nu(s),
+\label{eq:path-deformation}
+\end{equation}
+with additional endpoint terms when the endpoints move.  Equation
+\eqref{eq:path-deformation} makes the role of geometry precise: curvature,
+not homotopy alone, controls the physical path dependence.
+
+\begin{requirement}[No topological substitution]
+\label{req:no-topological-substitution}
+Two paths may be identified only by an exact operator identity, a proven
+factorization equivalence, or a controlled approximation with an error
+estimate.  Equal connectivity or homotopy class is insufficient in generic
+QCD where \(F_{\mu\nu}\neq0\).
+\end{requirement}
+
+\section{Operator hierarchy and complete identity}
+\label{sec:operator-hierarchy}
+
+\subsection{Four distinct objects}
+
+The calculation distinguishes
+\begin{equation}
+ \cO_{\rm bare}^{[\gamma]},
+ \qquad
+ W_{\unsub}^{[\gamma,\cR]},
+ \qquad
+ W_{\subtr}^{[\gamma,\cR,\cS]},
+ \qquad
+ W_{\ren}^{[\gamma]}(\mu,\zeta;\mathfrak s).
+\label{eq:four-operator-levels}
+\end{equation}
+The bare bilocal contains fields and geometric transport.  The unsubtracted
+matrix element is evaluated in a regulated microscopic state.  The
+soft-subtracted object removes the overlap with the declared soft sector.
+The renormalized object additionally carries ultraviolet and rapidity
+renormalization and belongs to a named TMD/GTMD scheme.
+
+The typed route is
+\begin{equation}
+\begin{tikzcd}[column sep=large]
+W_{\LF}^{(0)}
+ \arrow[r,"\mathsf{Wilson}_{\gamma}^{(N_W)}"]
+& W_{\unsub}^{[\gamma]}
+ \arrow[r,"\mathsf{Sub}_{\soft}"]
+& W_{\subtr}^{[\gamma]}
+ \arrow[r,"\cZ_{\LF\to\QCD}"]
+& W_{\ren}^{[\gamma]}(\mu,\zeta)
+ \arrow[r,"\Red"]
+& \{F_A\}.
+\end{tikzcd}
+\label{eq:typed-wilson-route}
+\end{equation}
+Each arrow has a different mathematical and physical status.
+
+\subsection{Decorated operator identity}
+
+\begin{definition}[Volume III operator identity]
+\label{def:volume3-operator-id}
+A production operator has identity
+\begin{equation}
+ \mathfrak o_{\rm III}
+ =\Bigl(
+ a,J,P_{\rm in},P_{\rm out},\gamma,R,
+ [U,U']_g,c_g,
+ \cR_{\UV},\cR_{\rap},\cR_{\IR},
+ \cS_{\soft},\mu,\zeta,\mathfrak s,
+ \mathfrak r,\mathfrak f,\mathfrak m,
+ N_W,\mathfrak p
+ \Bigr),
+\label{eq:volume3-operator-id}
+\end{equation}
+where \(a\) is species/flavor, \(J\) is the Dirac or Lorentz projection,
+\(\gamma\) is the complete path, \([U,U']_g\) is the ordered gluon link pair,
+\(c_g\in\{f,d,\mathrm{NA}\}\) is color-contraction status,
+\(\mathfrak r\) is transverse-rank identity, \(\mathfrak f\) is the incoming
+and outgoing momentum-fiber identity, \(\mathfrak m\) is microscopic member,
+\(N_W\) is Wilson/eikonal truncation, and \(\mathfrak p\) is phase provenance.
+\end{definition}
+
+The C1/C2 identity is therefore extended, not replaced.  Missing path, pole,
+soft, or color data may be recorded as incomplete during migration, but an
+operation requiring those fields must fail closed.
+
+\subsection{Hermitian inversion is not process reversal}
+
+Hermitian conjugation acts on an operator by reversing endpoint order and the
+geometric path:
+\begin{equation}
+ \bigl(\cO_{\Gamma}^{[\gamma]}[b,a]\bigr)^\dagger
+ =\chi_H(\Gamma)\,
+ \cO_{\Gamma_H}^{[\gamma^{-1}]}[a,b].
+\label{eq:operator-hermitian-conjugation}
+\end{equation}
+After the endpoint relabeling and Fourier-variable transformation used in the
+GTMD definition, this yields the Volume~II Hermiticity relation at fixed
+staple orientation.  Antiunitary time reversal instead maps future to past
+staples and transforms spin and momenta.  The two operations must never share
+one Boolean field.
+
+\begin{requirement}[Separate involutions]
+\label{req:separate-involutions}
+The implementation provides separate maps
+\begin{equation}
+ \mathsf H:\gamma\mapsto\gamma^{-1},
+ \qquad
+ \mathsf T:\gamma_\eta\mapsto\gamma_{-\eta},
+\label{eq:separate-involution-maps}
+\end{equation}
+with separate tests and convention adapters.
+\end{requirement}
+
+\subsection{Process-to-link map}
+
+A process record does not merely name a final state.  It is
+\begin{equation}
+\begin{aligned}
+ \mathfrak P=\bigl(&
+ \mathrm{process},\mathrm{measurement},\mathrm{power},
+ \mathrm{partonic\ channel},\gamma,[U,U']_g,\\
+ &\{C_c^{\hard}\},\mathrm{factorization\ status},
+ \mathrm{Glauber\ status},\mathrm{reference}\bigr).
+\end{aligned}
+\label{eq:process-record}
+\end{equation}
+The map
+\begin{equation}
+ \mathsf L_{\Proc}:\mathfrak P\longmapsto
+ \bigl(\gamma,[U,U']_g,\{C_c^{\hard}\}\bigr)
+\label{eq:process-link-map}
+\end{equation}
+is defined only when the corresponding factorization statement is adequate
+for the requested use.  A process with unknown or broken TMD factorization
+cannot silently borrow the SIDIS or Drell--Yan staple.
+
+\section{Wilson expansion and truncation theory}
+\label{sec:wilson-expansion}
+
+\subsection{Dyson/path-ordered series}
+
+Parameterize a path by \(x(s)\), \(s\in[0,1]\), and define
+\begin{equation}
+ B(s)=-ig\dot x^\mu(s)A_\mu^a(x(s))T_R^a.
+\label{eq:path-generator}
+\end{equation}
+Then
+\begin{align}
+ U_\gamma
+ &=\bbone+\sum_{n=1}^{\infty}U_\gamma^{(n)},
+\label{eq:dyson-series}\\
+ U_\gamma^{(n)}
+ &=\int_{0<s_n<\cdots<s_1<1}
+ \dd s_1\cdots\dd s_n\,
+ B(s_1)\cdots B(s_n).
+\label{eq:dyson-term}
+\end{align}
+The ordered color product is physical.  Replacing it by a scalar
+\(C_R^n\) before all contractions are known erases commutator and
+\(f/d\)-sensitive information.
+
+\subsection{Fock-space action}
+
+When the gauge field is expanded in creation and annihilation operators,
+\(U_\gamma^{(n)}\) contains blocks that change explicit gluon number by up to
+\(n\), together with contractions internal to the operator.  In the Volume~I
+Fock basis,
+\begin{equation}
+ P_\nu U_\gamma^{(n)}P_\mu\neq0
+\label{eq:wilson-fock-block}
+\end{equation}
+only when the field content and quantum numbers permit the corresponding
+transition.  Thus a Wilson expansion may connect the Volume~II diagonal
+zeroth-order overlap to explicit \(qqqg\), \(qqqgg\), or induced-operator
+blocks.  Every nonzero block records whether the gluons are explicit state
+constituents, operator insertions, or integrated-out modes.
+
+\begin{requirement}[No explicit/induced duplication]
+\label{req:no-explicit-induced-duplication}
+If a Wilson-induced higher-sector contribution is represented explicitly in
+the Fock space, the corresponding effective operator generated by integrating
+out that sector is excluded, unless a subtraction two-cell states the overlap
+and removes it.
+\end{requirement}
+
+\subsection{Magnus representation}
+
+The same transport may be written
+\begin{equation}
+ U_\gamma=\exp\Omega_\gamma,
+ \qquad
+ \Omega_\gamma=\Omega_1+\Omega_2+\cdots,
+\label{eq:magnus-expansion}
+\end{equation}
+with
+\begin{align}
+ \Omega_1&=\int_0^1\dd s_1\,B(s_1),
+\label{eq:magnus-1}\\
+ \Omega_2&=\frac12\int_0^1\dd s_1\int_0^{s_1}\dd s_2\,
+ [B(s_1),B(s_2)].
+\label{eq:magnus-2}
+\end{align}
+For Hermitian gauge fields, a consistently truncated \(\Omega\) is
+anti-Hermitian, so \(\exp\Omega^{(\le N)}\) is unitary.  A Dyson truncation is
+strictly order-by-order but need not be exactly unitary at finite order.  Both
+representations are useful and must agree through their common perturbative
+order \cite{Magnus1954}.
+
+\subsection{Independent truncation axes}
+
+The Wilson calculation carries at least
+\begin{equation}
+ \nu_W=
+ \bigl(N_W,N_{\rm web},N_{\rm Fock},N_{\rm basis},
+ \Lambda_{\UV},\Lambda_{\IR},\rho_{\rap},N_{\rm quad}\bigr).
+\label{eq:wilson-truncation-tuple}
+\end{equation}
+Here \(N_W\) is field-insertion order, \(N_{\rm web}\) is connected-web or
+Magnus order when used, and the remaining labels are inherited state and
+numerical truncations.  Convergence in \(N_W\) does not compensate for an
+unconverged Fock basis, and regulator variation is not a substitute for
+quadrature refinement.
+
+\begin{definition}[Wilson-order residual]
+\label{def:wilson-residual}
+For a matched observable or operator norm,
+\begin{equation}
+ \eps_W^{(N)}
+ =\frac{\norm{\cR_{N\to N-1}[W^{(\le N)}]-W^{(\le N-1)}}}
+ {\max\!\left(\norm{W^{(\le N-1)}},W_{\rm floor}\right)}.
+\label{eq:wilson-order-residual}
+\end{equation}
+The comparison map \(\cR_{N\to N-1}\) removes basis or scheme differences
+before the residual is formed.
+\end{definition}
+
+\section{Semi-infinite eikonal lines and pole prescriptions}
+\label{sec:eikonal-poles}
+
+\subsection{Derivation from the path integral}
+
+Use the field Fourier convention
+\begin{equation}
+ A_\mu(x)=\int\frac{\dd^d\ell}{(2\pi)^d}
+ e^{-i\ell\cdot x}A_\mu(\ell).
+\label{eq:gauge-field-fourier}
+\end{equation}
+For the segment \(x+\eta\lambda v\), \(\lambda\in[0,\infty)\),
+\begin{equation}
+ \int_0^\infty\dd\lambda\,\eta v^\mu
+ e^{-i\eta\lambda v\cdot\ell-\epsilon\lambda}
+ =-\frac{i v^\mu}{v\cdot\ell-i0\eta}.
+\label{eq:semi-infinite-integral}
+\end{equation}
+The orientation dependence is therefore encoded in
+\begin{equation}
+ D_\eta(\ell;v)
+ =\frac{1}{v\cdot\ell-i0\eta}.
+\label{eq:eikonal-denominator}
+\end{equation}
+With the exponent convention in \cref{eq:path-transport}, the complete
+one-gluon vertex includes the corresponding factor \(-gT_R^av^\mu
+D_\eta\), up to the declared momentum-flow convention.
+
+\begin{remark}[Convention identity]
+Changing the sign in the Fourier transform, reversing all momentum flow, or
+using \(D_\mu=\partial_\mu-igA_\mu\) changes intermediate signs.  The physical
+future/past relation is unaffected when every convention is transformed
+consistently.  The software therefore stores the Fourier sign, path
+orientation, exponent sign, and momentum-flow direction in the pole identity.
+\end{remark}
+
+\subsection{Principal value and absorptive support}
+
+The distribution identity is
+\begin{equation}
+ \frac{1}{x-i0\eta}
+ =\PV\frac1x+i\eta\pi\delta(x).
+\label{eq:eikonal-distribution-identity}
+\end{equation}
+Hence
+\begin{equation}
+ \Im D_\eta(\ell;v)
+ =\eta\pi\delta(v\cdot\ell),
+ \qquad
+ \Im D_{-\eta}=-\Im D_\eta.
+\label{eq:eikonal-imaginary}
+\end{equation}
+The delta function identifies the gluonic-pole surface.  It does not by
+itself prove that a named TMD is nonzero: the color, spin, OAM, spectator,
+and remaining denominator structure may make the projected interference
+vanish.
+
+\begin{proposition}[Orientation-odd pole]
+\label{prop:orientation-odd-pole}
+For fixed Fourier and momentum-flow conventions, the absorptive part of a
+single semi-infinite eikonal denominator is odd under path reversal,
+\begin{equation}
+ \operatorname{Abs}D_{-\eta}=-\operatorname{Abs}D_\eta.
+\label{eq:orientation-odd-pole-result}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Apply \cref{eq:eikonal-distribution-identity}.  The principal-value part is
+independent of \(\eta\), whereas the delta-function coefficient is linear in
+\(\eta\).
+\end{proof}
+
+\subsection{Rapidity regulation}
+
+For a lightlike \(v\), loop integrations involving \cref{eq:eikonal-denominator}
+contain rapidity divergences not regulated by ordinary dimensional
+regularization.  The operator identity must therefore include one of:
+\begin{itemize}
+\item a non-lightlike direction \(v^2\neq0\);
+\item a \(\delta\)-type shift of eikonal denominators;
+\item an analytic or exponential rapidity regulator;
+\item another regulator with a proven matching to the selected TMD scheme.
+\end{itemize}
+We denote the regulated denominator by
+\begin{equation}
+ D_{\eta}^{[\cR_{\rap}]}(\ell;v,\rho_{\rap}).
+\label{eq:regulated-eikonal-denominator}
+\end{equation}
+The rapidity parameter \(\rho_{\rap}\) is not an infrared mass and may not be
+used as one.
+
+\begin{requirement}[Rapidity-regulator closure]
+\label{req:rapidity-regulator-closure}
+Every numerical phase result must be accompanied by a test that the
+\(\rho_{\rap}\) dependence cancels or evolves according to the declared
+rapidity-renormalization equation after soft subtraction and matching.
+\end{requirement}
+
+\subsection{Gauge completion at light-cone infinity}
+
+In light-cone gauge, setting the longitudinal segment to unity does not in
+general remove the Wilson-line physics.  Residual gauge fields and the
+transverse connector at infinity contribute at leading power
+\cite{BelitskyJiYuan2003}.  In a Hamiltonian implementation, the gauge-complete
+one-gluon set may include:
+\begin{enumerate}
+\item exchange from the longitudinal eikonal segment;
+\item exchange from the transverse closure;
+\item instantaneous or constrained-field terms required by the chosen
+      light-front gauge;
+\item boundary/zero-mode contributions fixed by the Volume~I prescription.
+\end{enumerate}
+A gauge-dependent subset is a benchmark, not a production Wilson kernel.
+
+\section{Light-front time-ordered rescattering amplitudes}
+\label{sec:lf-rescattering}
+
+\subsection{Resolvent form}
+
+Let \(P_0^-\) be the regulated free or reference light-front Hamiltonian and
+\begin{equation}
+ G_0(E)=\frac{1}{E-P_0^-+i0}.
+\label{eq:lf-resolvent}
+\end{equation}
+At first nontrivial rescattering order, an operator amplitude contains
+pre- and post-insertion terms,
+\begin{equation}
+ \cA_{\eta}^{(1)}
+ =\langle f|V_\eta G_0(E_i)\cO|i\rangle
+ +\langle f|\cO G_0(E_i)V_\eta|i\rangle
+ +\cA_{\eta,\rm inst}^{(1)}
+ +\cA_{\eta,\infty}^{(1)},
+\label{eq:first-rescattering-amplitude}
+\end{equation}
+where \(V_\eta\) is the eikonal interaction derived from the same gauge
+sector as the Hamiltonian.  Process kinematics select which ordering is
+leading and how it is reorganized into the operator Wilson line.
+
+In an intermediate-state basis,
+\begin{equation}
+ \cA_{\eta,\rm post}^{(1)}
+ =\sum_X
+ \frac{\langle f|V_\eta|X\rangle
+       \langle X|\cO|i\rangle}
+      {E_i-P_X^-+i0},
+\label{eq:intermediate-state-amplitude}
+\end{equation}
+with an analogous pre-insertion term.  The state \(X\) retains Fock sector,
+parton identities, color, helicity, OAM, momentum, and regulator labels.
+
+\subsection{Intermediate-state cut}
+
+The light-front energy denominator satisfies
+\begin{equation}
+ \frac{1}{E-P_X^-+i0}
+ =\PV\frac{1}{E-P_X^-}-i\pi\delta(E-P_X^-).
+\label{eq:lf-energy-distribution}
+\end{equation}
+Thus
+\begin{equation}
+ \Disc\cA^{(1)}
+ =-2\pi i\sum_X
+ \delta(E_i-P_X^-)
+ \langle f|V_\eta|X\rangle
+ \langle X|\cO|i\rangle
+ +\Disc_{\rm eik}+\Disc_{\rm other},
+\label{eq:rescattering-discontinuity}
+\end{equation}
+where \(\Disc_{\rm eik}\) denotes eikonal-pole support not already represented
+by the same fast propagator cut.
+
+\begin{definition}[Cut provenance]
+\label{def:cut-provenance}
+Each absorptive contribution has
+\begin{equation}
+ \mathfrak p_{\rm cut}
+ =\bigl(
+ \mathrm{source},X,\mathrm{denominator},\mathrm{pole},
+ \mathrm{cut\ surface},\mathrm{ordering},\mathrm{subtraction\ id}
+ \bigr),
+\label{eq:cut-provenance}
+\end{equation}
+with source in
+\begin{equation}
+ \{\mathrm{EIKONAL\ POLE},\mathrm{LF\ ENERGY\ CUT},
+ \mathrm{ZERO\ MODE},\mathrm{BOUNDARY},\mathrm{MATCHING},
+ \mathrm{HARD\ PHASE}\}.
+\label{eq:phase-source-enum}
+\end{equation}
+\end{definition}
+A hard-scattering phase belongs to \(\Proc\), not to the hadron TMD.  A cut
+represented by both a full propagator and its eikonal approximation must be
+assigned to one route with a subtraction relation.
+
+\subsection{General one-gluon kernel}
+
+For active representation \(R\) and a target/spectator current
+\(\cJ_{X\alpha}^{a\mu}\), a general regulated one-gluon kernel is
+\begin{equation}
+ \cK_{\eta;\alpha'\alpha}^{(1)}
+ =g^2\sum_{a,b,X}\int[\dd\ell]\,
+ \cJ_{\alpha'X}^{a\mu}(\ell)
+ D_{\mu\nu}^{ab}(\ell;\cR_{\UV},\cR_{\IR})
+ T_R^b v^\nu
+ D_{\eta}^{[\cR_{\rap}]}(\ell;v)
+ \cS_{X\alpha}(\ell),
+\label{eq:one-gluon-kernel}
+\end{equation}
+where \(\alpha,\alpha'\) denote complete Fock/helicity/OAM labels and
+\(\cS_{X\alpha}\) contains the remaining state overlap, momentum delta
+functions, and energy denominators.  Equation \eqref{eq:one-gluon-kernel} is
+an operator-valued matrix.  The familiar screened transverse convolution is a
+possible benchmark reduction, not the definition of the production kernel.
+
+The corresponding GTMD correction is
+\begin{equation}
+ \delta W_{\eta,A}^{(1)}
+ =\sum_{\alpha',\alpha}
+ \psi_{\alpha'}^*\,
+ \cP_A\cK_{\eta;\alpha'\alpha}^{(1)}\,
+ \psi_{\alpha},
+\label{eq:gtmd-kernel-correction}
+\end{equation}
+where \(\cP_A\) is the Volume~II operator/helicity/rank projector.  Different
+named functions use different \(\cP_A\) on the same kernel.
+
+\subsection{Gauge-covariance and Ward tests}
+
+In a covariant gauge, the propagator contains a longitudinal term
+proportional to \(\ell_\mu\ell_\nu\).  Gauge-parameter independence requires
+the complete current and eikonal set to satisfy the relevant Ward identity,
+including instantaneous and boundary terms.  A numerical diagnostic is
+\begin{equation}
+ \eps_{\rm Ward}
+ =\frac{\norm{\ell_\mu\cJ^\mu_{\rm complete}}}
+ {\max(\norm{\cJ_{\rm complete}},J_{\rm floor})}.
+\label{eq:ward-residual}
+\end{equation}
+Production acceptance requires \(\eps_{\rm Ward}\) to decrease with basis and
+Wilson-order refinement and to lie below the declared tolerance.
+
+For a color-singlet state,
+\begin{equation}
+ \left(\sum_{i\in\nu}T_i^a\right)|\Psi_N\rangle=0.
+\label{eq:color-singlet-charge}
+\end{equation}
+Hence, for active parton \(j\),
+\begin{equation}
+ \sum_{s\neq j}T_s^a|\Psi_N\rangle
+ =-T_j^a|\Psi_N\rangle.
+\label{eq:spectator-color-closure}
+\end{equation}
+This is an exact color-closure test, not permission to replace all spectator
+dynamics by one Casimir factor.
+
+\subsection{Phase is a relative amplitude property}
+
+A single overall phase of the complete state is unobservable.  A naive-
+\(T\)-odd projection requires an absorptive difference between amplitude
+components that are selected by distinct spin/OAM projectors.  Schematically,
+\begin{equation}
+ F_{\odd,A}^{[\eta]}
+ \propto
+ \sum_{\alpha'\neq\alpha}
+ \Im\!\left[
+ \psi_{\alpha'}^*
+ \cK_{\eta;\alpha'\alpha}
+ \psi_\alpha
+ \right]\cP_A^{\alpha'\alpha}.
+\label{eq:relative-phase-structure}
+\end{equation}
+Multiplying every amplitude by the same \(e^{i\chi}\) leaves
+\cref{eq:relative-phase-structure} unchanged.
+
+\begin{proposition}[No scalar-phase generation]
+\label{prop:no-scalar-phase}
+Let \(\cK_\eta=e^{i\chi_\eta}\bbone\) act identically on every internal
+component.  Then it cannot generate a new naive-\(T\)-odd distribution from a
+zeroth-order correlator in which that distribution vanishes.
+\end{proposition}
+
+\begin{proof}
+The scalar phase cancels between amplitude and conjugate amplitude in every
+bilinear matrix element.  It changes neither relative spin/OAM phases nor the
+projected density matrix.
+\end{proof}
+
+\section{Link-even and link-odd correlator components}
+\label{sec:link-parity}
+
+\subsection{Antiunitary time-reversal adapter}
+
+Time reversal is antiunitary and acts on states, spin, momenta, field
+operators, and paths.  Let \(\Theta\) denote the represented antiunitary map
+and \(\mathsf t\) the induced transformation of the kinematic and operator
+labels.  At operator level,
+\begin{equation}
+ \Theta\,
+ \cO_{J}^{[\gamma_\eta]}(P',P)
+ \Theta^{-1}
+ =\chi_T(J)\,
+ \cO_{J_T}^{[\gamma_{-\eta}]}
+ (\mathsf tP',\mathsf tP),
+\label{eq:time-reversal-operator}
+\end{equation}
+where \(\chi_T(J)\) and the helicity phase convention are stored in the
+operator registry.  The transformed matrix element is complex conjugated by
+antiunitarity.
+
+Define the complete time-reversal adapter on a GTMD helicity matrix by
+\begin{equation}
+ \bigl(\mathfrak T W^{[-\eta]}\bigr)_{\Lambda'\Lambda}
+ =\chi_T(J)
+ \sum_{\bar\Lambda',\bar\Lambda}
+ \Theta_{\Lambda'\bar\Lambda'}
+ \Theta_{\Lambda\bar\Lambda}^{*}
+ \left[
+ W_{\bar\Lambda'\bar\Lambda}^{[-\eta]}
+ (\mathsf t x,\mathsf t\kT,\mathsf t\DT)
+ \right]^*.
+\label{eq:time-reversal-adapter}
+\end{equation}
+The explicit form of \(\Theta_{\Lambda\bar\Lambda}\) depends on the
+light-front helicity phase convention; it is generated from the represented
+spin basis rather than hard-coded as a universal sign.
+
+\subsection{Path parity at nonzero transfer}
+
+\begin{definition}[Link-even and link-odd parent]
+\label{def:link-even-odd}
+For a pair of factorization-compatible future/past paths, define
+\begin{align}
+ W_{\even}
+ &=\frac12\left(W^{[+]}+\mathfrak T W^{[-]}\right),
+\label{eq:link-even-parent}\\
+ W_{\odd}
+ &=\frac12\left(W^{[+]}-\mathfrak T W^{[-]}\right).
+\label{eq:link-odd-parent}
+\end{align}
+\end{definition}
+This definition is valid before the forward limit.  It does not identify the
+raw imaginary part of one helicity amplitude with a T-odd GTMD.
+
+In a scalar GTMD basis whose explicit factors of \(i\), \(\epsilon_T^{ij}\),
+and helicity phases have been fixed, one may write
+\begin{equation}
+ X_A^{[\eta]}
+ =X_{A,\even}+i\eta X_{A,\odd},
+\label{eq:scalar-even-odd-decomposition}
+\end{equation}
+with real coefficient functions in a domain where the standard Hermiticity
+and time-reversal relations apply.  The registry records whether the named
+basis coefficient includes the explicit \(i\).  Otherwise, the numerical
+``imaginary part'' can be convention dependent.
+
+\subsection{Hermiticity at nonzero transfer}
+
+For each scalar basis coefficient \(X_A\), Hermiticity gives
+\begin{equation}
+ X_A^*(x,\kT^2,\kT\!\cdot\!\DT,\DT^2;\eta)
+ =\sigma_H(A)
+ X_A(x,\kT^2,-\kT\!\cdot\!\DT,\DT^2;\eta),
+\label{eq:gtmd-hermiticity-sign}
+\end{equation}
+where \(\sigma_H(A)=\pm1\) is determined by the chosen tensor and spin basis
+\cite{Meissner2009}.  Thus an imaginary component can be required by
+Hermiticity to be odd in \(\kT\cdot\DT\) while still being link even.  This is
+why path parity must be computed with \cref{eq:link-even-parent,eq:link-odd-parent}
+ rather than inferred from \(\Im X_A\) alone.
+
+\begin{requirement}[Three independent labels]
+\label{req:three-phase-labels}
+Every complex GTMD coefficient stores separately:
+\begin{equation}
+ \bigl(
+ \sigma_H(A),
+ \sigma_T(A),
+ \mathrm{explicit\ basis\ phase}
+ \bigr).
+\label{eq:three-phase-labels}
+\end{equation}
+Hermiticity parity, time-reversal/link parity, and basis phase may not be
+collapsed into one \texttt{t\_odd} flag.
+\end{requirement}
+
+\subsection{Zero-rescattering theorem}
+
+\begin{theorem}[Controlled zero of link-odd projections]
+\label{thm:zero-rescattering}
+Assume:
+\begin{enumerate}
+\item the Volume~II state amplitudes and zeroth-order operator kernels can be
+      chosen real in the declared basis;
+\item there is no independent absorptive hard or matching coefficient in the
+      parent operator;
+\item \(g\to0\) or the Wilson interaction is disabled so
+      \(U_{\gamma_+}=U_{\gamma_-}=\bbone\).
+\end{enumerate}
+Then
+\begin{equation}
+ W_{\odd}=0
+\label{eq:zero-rescattering-odd-zero}
+\end{equation}
+and every named naive-\(T\)-odd TMD projected from it vanishes.
+\end{theorem}
+
+\begin{proof}
+Under the assumptions, the future and past operators reduce to the same real
+zeroth-order matrix element.  The time-reversal adapter maps that matrix
+element to itself, so the difference in \cref{eq:link-odd-parent} is zero.
+\end{proof}
+
+\subsection{Forward sign reversal theorem}
+
+At \(\DT=0\), after spin reflection and convention adapters have been
+applied, a real named coefficient satisfies
+\begin{equation}
+ F_{A,\even}^{[+]}(x,\kT)
+ =F_{A,\even}^{[-]}(x,\kT),
+ \qquad
+ F_{A,\odd}^{[+]}(x,\kT)
+ =-F_{A,\odd}^{[-]}(x,\kT).
+\label{eq:forward-link-reversal}
+\end{equation}
+
+\begin{theorem}[SIDIS--Drell--Yan sign reversal]
+\label{thm:sidis-dy-sign}
+Suppose a quark TMD enters two processes for which standard leading-power TMD
+factorization is valid, and the process map assigns the factorization-related
+future and past staples.  Then every link-odd quark distribution changes sign
+between those process definitions, whereas every link-even quark distribution
+is unchanged \cite{Collins2002,JiMaYuanSpin2004}.
+\end{theorem}
+
+\begin{remark}
+The theorem is an operator statement conditional on the factorization and
+path map.  It is not a rule that any phenomenological asymmetry in any two
+processes differs only by one sign; hard factors, fragmentation, phase-space
+weights, flavor sums, and factorization breaking remain process dependent.
+For gluons, ordered link pairs and multiple color structures generally require
+more than one sign.
+\end{remark}
+
+\section{Quark naive-\texorpdfstring{\(T\)}{T}-odd GTMD and TMD sectors}
+\label{sec:quark-todd}
+
+\subsection{Vector and chiral-odd operator projections}
+
+For quarks and antiquarks, the two canonical leading-twist path-odd TMD
+families for a spin-\(\tfrac12\) target are generated from different operator
+sectors:
+\begin{align}
+ f_{1T}^{\perp q[\eta]}:
+ &\quad J=\gamma^+,
+ \quad \mathrm{target}=T,
+ \quad \mathrm{active\ quark}=U,
+ \quad r=1,
+\label{eq:sivers-identity}\\
+ h_1^{\perp q[\eta]}:
+ &\quad J=i\sigma^{i+}\gamma_5,
+ \quad \mathrm{target}=U,
+ \quad \mathrm{active\ quark}=T,
+ \quad r=1.
+\label{eq:boer-mulders-identity}
+\end{align}
+Their names do not determine their kernels.  The Volume~II projector registry
+supplies the exact tensor normalization and reference mass.
+
+\subsection{Sivers interference}
+
+In a target-helicity basis, a transverse target polarization is built from
+off-diagonal nucleon helicity elements.  The quark Sivers projection is
+schematically
+\begin{equation}
+ \frac{\epsilon_T^{ij}k_{Ti}S_{Tj}}{M_N}
+ f_{1T}^{\perp q[\eta]}
+ \;\propto\;
+ \sum_{\lambda_q,X}
+ \Im\!\left[
+ \cA_{\Lambda'=+,\lambda_q,X}^{[\eta]*}
+ \cA_{\Lambda=-,\lambda_q,X}^{[\eta]}
+ \right],
+\label{eq:sivers-helicity-interference}
+\end{equation}
+up to the stored helicity and epsilon-tensor conventions.  The active quark
+projection is helicity diagonal; the target helicity changes by one unit, so
+the contributing Fock amplitudes contain the compensating orbital harmonic.
+
+A useful zero test is
+\begin{equation}
+ \psi_{\Delta L_z=\pm1}=0
+ \quad\Longrightarrow\quad
+ f_{1T}^{\perp q}=0
+\label{eq:sivers-oam-zero}
+\end{equation}
+for the minimal leading-twist overlap.  The implementation derives the exact
+selection rule from total-\(J^z\) equivariance; it does not assume a fixed
+sign formula independent of phase convention.
+
+\subsection{Boer--Mulders interference}
+
+The Boer--Mulders function correlates transverse quark spin with \(\kT\) in an
+unpolarized target.  Its helicity representation uses active-quark helicity
+off-diagonal terms at target-helicity average,
+\begin{equation}
+ \frac{\epsilon_T^{ij}k_{Tj}}{M_N}
+ h_1^{\perp q[\eta]}
+ \;\propto\;
+ \frac12\sum_{\Lambda,X}
+ \Im\!\left[
+ \cA_{\Lambda,+,X}^{[\eta]*}
+ \cA_{\Lambda,-,X}^{[\eta]}
+ \right]_i.
+\label{eq:boer-mulders-helicity-interference}
+\end{equation}
+The quark helicity change is balanced by an orbital harmonic.  Removing the
+required helicity-flip or OAM block must make the projection vanish.
+
+\subsection{Shared kernel does not imply proportionality}
+
+Using \cref{eq:gtmd-kernel-correction},
+\begin{align}
+ f_{1T}^{\perp q}
+ &=\cP_{\rm Siv}\!
+ \left[\psi^*\cK_\eta\psi\right],
+\label{eq:sivers-projector-kernel}\\
+ h_1^{\perp q}
+ &=\cP_{\rm BM}\!
+ \left[\psi^*\cK_\eta\psi\right].
+\label{eq:bm-projector-kernel}
+\end{align}
+Because \(\cP_{\rm Siv}\neq\cP_{\rm BM}\), no operator identity of the form
+\begin{equation}
+ h_1^{\perp q}=C_q f_{1T}^{\perp q}
+\label{eq:forbidden-bm-sivers-identity}
+\end{equation}
+follows.  A restricted spectator approximation may yield an approximate
+ratio, but its error must include omitted helicity, OAM, sea, and Wilson-order
+blocks and it may not define the central microscopic model.
+
+\begin{requirement}[Cross-family prediction test]
+\label{req:cross-family-prediction}
+If a restricted set of Sivers data is used to calibrate shared rescattering
+parameters, at least one Boer--Mulders or other link-odd operator family must
+remain withheld.  Refitting a separate phase normalization for the withheld
+family does not count as prediction.
+\end{requirement}
+
+\subsection{Flavor and antiquark structure}
+
+The kernel carries the active flavor, the color/spin content of every
+intermediate state, and the sea-sector identity.  Flavor dependence can arise
+from:
+\begin{itemize}
+\item different \(u\) and \(d\) wave-function amplitudes and spectator
+      channels;
+\item quark masses and chiral interactions;
+\item flavor-dependent sea Fock sectors;
+\item interference among different OAM and spin-flavor couplers;
+\item charge-symmetry-breaking operators where retained.
+\end{itemize}
+Antiquark Sivers and Boer--Mulders functions are generated from positive-\(x\)
+antiquark active slots or a named induced operator.  They are not copied from
+the quark result and are not forced to share its sign.
+
+\subsection{Renormalized transverse moment and gluonic pole}
+
+A naive moment
+\begin{equation}
+ \int\dd^2\kT\,k_T^\alpha\Phi^{[\eta]}(x,\kT)
+\label{eq:naive-transverse-moment}
+\end{equation}
+can be ultraviolet divergent.  The formal object is a renormalized
+transverse-derivative or Bessel-weighted limit.  We define its normalization
+so that
+\begin{equation}
+ \Phi_{\partial,\ren}^{\alpha[\gamma]}(x)
+ =\widetilde\Phi_{\partial,\ren}^{\alpha}(x)
+ +C_G^{[\gamma]}\,
+ \Phi_{G,\ren}^{\alpha}(x,x),
+\label{eq:quark-gluonic-pole-decomposition}
+\end{equation}
+where \(\Phi_G\) is the soft-gluon-pole quark--gluon operator and
+\(C_G^{[\gamma]}\) is the link-dependent gluonic-pole factor
+\cite{BoerMuldersPijlman2003,BuffingMulders2011}.  For the simplest future and
+past staples,
+\begin{equation}
+ C_G^{[+]}=-C_G^{[-]}
+\label{eq:quark-gluonic-pole-sign}
+\end{equation}
+under the chosen normalization.
+
+The Sivers--Qiu--Sterman adapter is
+\begin{equation}
+ f_{1T}^{\perp(1)q[\gamma]}(x;\mu,\zeta)
+ =\cN_{\rm QS}(\mathfrak s,\epsilon_T,\mathrm{Fourier})
+ C_G^{[\gamma]}T_F^q(x,x;\mu)
+ +\cO(\alpha_s),
+\label{eq:sivers-qiu-sterman-adapter}
+\end{equation}
+where \(\cN_{\rm QS}\) stores all sign, mass, \(\pi\), and normalization
+conventions.  The relation is a matched operator statement in the overlap
+region of TMD and collinear twist-3 factorization, not a raw-grid integration
+identity \cite{JiQiuVogelsangYuan2006,JiQiuVogelsangYuanSIDIS2006}.
+
+\section{Gluon ordered links and independent color structures}
+\label{sec:gluon-todd}
+
+\subsection{Two-link operator identity}
+
+The gauge-invariant gluon correlator contains two ordered adjoint transports,
+\begin{equation}
+ \Gamma^{ij[U,U']}_{g}
+ \sim
+ \left\langle P'\left|
+ F^{+i}_a(a)
+ U_{ab}[a,b]
+ F^{+j}_b(b)
+ U'_{ba}[b,a]
+ \right|P\right\rangle.
+\label{eq:gluon-two-link-operator}
+\end{equation}
+The pair \([U,U']\) is ordered.  Interchanging the links, reversing only one
+link, or changing a closure can change the operator.  The C1/C2 path identity
+therefore stores
+\begin{equation}
+ \mathfrak g_g
+ =\bigl(\gamma_1,R_A;\gamma_2,R_A;
+ \mathrm{order},\mathrm{trace\ closure}\bigr).
+\label{eq:gluon-link-pair-identity}
+\end{equation}
+
+\subsection{Three-adjoint invariant tensors}
+
+For \(SU(N_c\ge3)\), the independent invariant tensors relevant to one
+gluonic-pole insertion are
+\begin{equation}
+ \cC_f^{abc}=if^{abc},
+ \qquad
+ \cC_d^{abc}=d^{abc}.
+\label{eq:f-d-color-tensors}
+\end{equation}
+They obey
+\begin{align}
+ f^{abc}d^{abc}&=0,
+\label{eq:fd-orthogonality}\\
+ f^{abc}f^{abc}&=N_c(N_c^2-1),
+\label{eq:ff-norm}\\
+ d^{abc}d^{abc}&=\frac{(N_c^2-4)(N_c^2-1)}{N_c}.
+\label{eq:dd-norm}
+\end{align}
+For \(N_c=3\), the last two norms are \(24\) and \(40/3\).
+
+\begin{definition}[Gluon color projection]
+\label{def:gluon-color-projection}
+Given a three-adjoint kernel \(K^{abc}\), define normalized projections
+\begin{align}
+ K_f&=\frac{-i f^{abc}K^{abc}}{f^{def}f^{def}},
+\label{eq:f-projection}\\
+ K_d&=\frac{d^{abc}K^{abc}}{d^{def}d^{def}}.
+\label{eq:d-projection}
+\end{align}
+\end{definition}
+No numerical interpolation, basis rotation, or process weight may merge these
+orthogonal channels before the process layer.
+
+\subsection{Gluonic-pole decomposition}
+
+The renormalized first transverse moment has the generalized form
+\begin{equation}
+ \Gamma_{\partial,\ren}^{\alpha[U,U']}(x)
+ =\widetilde\Gamma_{\partial,\ren}^{\alpha}(x)
+ +\sum_{c\in\{f,d\}}
+ C_{G,c}^{[U,U']}\,
+ \Gamma_{G,c,\ren}^{\alpha}(x,x),
+\label{eq:gluon-gluonic-pole-decomposition}
+\end{equation}
+where \(C_{G,c}^{[U,U']}\) are process/link-dependent coefficients and
+\(\Gamma_{G,f}\), \(\Gamma_{G,d}\) are independent universal operator
+matrix elements within the domain of generalized universality
+\cite{BuffingGluon2013}.  At higher transverse rank, multiple gluonic poles
+can introduce additional color structures and universal functions; the
+first-moment two-channel decomposition must not be extrapolated blindly.
+
+A factorized process contribution is therefore
+\begin{equation}
+ F_{g,\Proc}^{\odd}
+ =C_{\hard,f}^{\Proc}F_g^{(f)}
+ +C_{\hard,d}^{\Proc}F_g^{(d)}
+\label{eq:process-fd-mixture}
+\end{equation}
+only after the process map supplies the hard color weights.  A default
+\(F_g^{(f)}+F_g^{(d)}\) is forbidden.
+
+\subsection{Link topology and color contraction are different labels}
+
+Common simple link pairs include
+\begin{equation}
+ [+,+],\quad[-,-],\quad[+,-],\quad[-,+],
+\label{eq:common-gluon-link-pairs}
+\end{equation}
+with possible additional Wilson loops.  Same-direction and opposite-direction
+pairs are often called Weizs\"acker--Williams-type and dipole-type in
+appropriate contexts, but that terminology does not replace the explicit
+path.  Likewise, an \(f\)- or \(d\)-type color projection is not globally
+identical to one nominal link pair.  The process-dependent relation is stored
+as a map, not encoded in an enum alias \cite{Boer2016}.
+
+\begin{requirement}[Independent gluon identities]
+\label{req:independent-gluon-identities}
+Every gluon naive-\(T\)-odd object carries both
+\begin{equation}
+ \bigl([U,U'],c_g\bigr),
+ \qquad c_g\in\{f,d\}.
+\label{eq:gluon-two-label-requirement}
+\end{equation}
+An object with one field missing is incomplete and may not enter a process
+calculation that requires it.
+\end{requirement}
+
+\subsection{Small-\texorpdfstring{\(x\)}{x} specialization}
+
+For certain opposite-direction dipole links, the small-\(x\) limit can reduce
+the correlator to a Wilson-loop operator, and several transverse-spin gluon
+TMDs can share a spin-dependent odderon origin
+\cite{BoerEchevarriaMuldersZhou2016,Boer2016}.  This is a specialized
+high-energy limit with its own evolution and power counting.  It is recorded
+as an additional matching route,
+\begin{equation}
+ \Gamma_g^{[+,-]}
+ \xrightarrow[x\to0]{\mathsf{HE\ match}}
+ \cW_{\rm loop}^{\odd},
+\label{eq:small-x-wilson-loop-route}
+\end{equation}
+not as a universal replacement for moderate-\(x\) \(f/d\) dynamics.
+
+\section{Soft subtraction, rapidity matching, and phase budgeting}
+\label{sec:soft-subtraction}
+
+\subsection{Why the unsubtracted phase is not yet a TMD}
+
+The microscopic Wilson-line matrix element contains collinear, soft, and
+possibly Glauber regions.  A properly defined TMD or GTMD requires a soft
+overlap subtraction and rapidity renormalization
+\cite{JiMaYuan2004,Collins2011,EchevarriaGTMD2016}.  Schematically,
+\begin{equation}
+ W_{\ren}^{[\gamma]}(\mu,\zeta)
+ =Z_{\UV}^{[\gamma]}(\mu,\cR_{\UV})
+ R_{\rap}^{[\gamma]}(\zeta,\cR_{\rap})
+ W_{\unsub}^{[\gamma]}(\cR)
+ \left[S^{[\gamma]}(\cR)\right]^{-1/2}.
+\label{eq:renormalized-tmd-gtmd}
+\end{equation}
+The placement of the square root and finite factors is scheme dependent; the
+operator identity stores the selected convention.
+
+At first order,
+\begin{equation}
+ W_{\ren}^{(1)}
+ =W_{\unsub}^{(1)}
+ -\frac12 S^{(1)}W^{(0)}
+ +Z_{\UV}^{(1)}W^{(0)}
+ +R_{\rap}^{(1)}W^{(0)}.
+\label{eq:first-order-subtraction}
+\end{equation}
+In common schemes the soft factor is spin independent and does not by itself
+create a target-spin-odd tensor, but cancellation of regulator and phase
+terms must be verified rather than assumed.
+
+\subsection{Phase budget}
+
+\begin{definition}[Phase budget]
+\label{def:phase-budget}
+For each projected operator family,
+\begin{equation}
+ \mathfrak B_A
+ =\left\{
+ \Im W_{\unsub,A},
+ \Im W_{\soft,A},
+ \Im Z_A,
+ \Im R_{\rap,A},
+ \Im H_A,
+ \mathrm{subtraction\ relations}
+ \right\}.
+\label{eq:phase-budget}
+\end{equation}
+\end{definition}
+The hadron TMD receives only the subtracted collinear contribution.  A hard
+phase \(\Im H_A\) is retained in the process kernel.  A soft/Glauber region
+represented in both \(W_{\unsub}\) and a separate soft function is removed by
+the named subtraction map.
+
+The production report includes
+\begin{equation}
+ \eps_{\rm budget}
+ =\norm{
+ \Im W_{\ren,A}
+ -\mathsf{Compose}(\mathfrak B_A)
+ }.
+\label{eq:phase-budget-residual}
+\end{equation}
+A small final number without a closed budget is not accepted.
+
+\subsection{Two admissible microscopic routes}
+
+There are two internally consistent strategies.
+
+\paragraph{Route A: boundary-only rescattering.}
+The microscopic calculation produces a finite link-dependent boundary at
+\((\mu_0,\zeta_0)\), with the logarithmic soft/rapidity overlap subtracted:
+\begin{equation}
+ W_{\micro,\subtr}^{[\gamma]}(\mu_0,\zeta_0)
+ \xrightarrow{\cZ_{\micro\to\TMD}}
+ W_{\TMD}^{[\gamma]}(\mu_0,\zeta_0).
+\label{eq:boundary-only-route}
+\end{equation}
+Volume~V supplies the Collins--Soper kernel and evolves away from the boundary.
+
+\paragraph{Route B: joint microscopic soft sector.}
+The same microscopic theory computes both the subtracted boundary and the
+rapidity kernel,
+\begin{equation}
+ \left\{W_{\micro}^{[\gamma]},S_{\micro},\cD_{\micro}\right\}
+ \xrightarrow{\cZ}
+ \left\{W_{\TMD}^{[\gamma]},S_{\QCD},\cD_{\QCD}\right\}.
+\label{eq:joint-soft-route}
+\end{equation}
+This route is more complete but requires a controlled rapidity-renormalization
+calculation in the microscopic regulator.
+
+\begin{requirement}[Exclusive soft routes]
+\label{req:exclusive-soft-routes}
+Route A and Route B are mutually exclusive composition alternatives.  A
+microscopic eikonal ladder absorbed into \(\cD_{\micro}\) may not also be
+resummed by an external Collins--Soper kernel without an explicit overlap
+subtraction.
+\end{requirement}
+
+\subsection{Rapidity evolution consistency}
+
+For the matched object,
+\begin{equation}
+ \frac{\dd}{\dd\ln\sqrt\zeta}
+ \ln W_{a}^{[\gamma]}(x,\bM;\mu,\zeta)
+ =-\cD_a(\bM;\mu),
+\label{eq:cs-evolution-volume3}
+\end{equation}
+and
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu}\cD_a(\bM;\mu)
+ =\Gamma_{\rm cusp}^a(\alpha_s).
+\label{eq:cs-integrability-volume3}
+\end{equation}
+The kernel is spin independent at leading power for a given color
+representation, whereas the link-odd spin structure resides in the boundary
+and matching coefficients.  Volume~III exports all data needed to test that
+future and past boundaries evolve with the same kernel and retain exact sign
+reversal.
+
+\subsection{Scheme covariance}
+
+Let \(\mathfrak s\) and \(\mathfrak s'\) be two valid TMD schemes.  A finite
+scheme map acts as
+\begin{equation}
+ W^{[\gamma]}_{\mathfrak s'}
+ =C_{\mathfrak s'\leftarrow\mathfrak s}^{[R]}
+ W^{[\gamma]}_{\mathfrak s},
+ \qquad
+ H_{\mathfrak s'}
+ =H_{\mathfrak s}
+ \left(C_{\mathfrak s'\leftarrow\mathfrak s}^{[R]}\right)^{-1},
+\label{eq:scheme-covariance}
+\end{equation}
+so the observable is invariant to the stated perturbative order.  A
+link-odd sign difference cannot be repaired by changing schemes; a scheme
+change must act consistently on both link orientations and the hard factor.
+
+\section{Higher eikonal orders and non-Abelian organization}
+\label{sec:higher-orders}
+
+\subsection{Ordered multi-exchange kernel}
+
+The one-gluon result is a benchmark, not a license to replace the Wilson line
+by a fitted phase.  At order \(n\), the bare contribution along an oriented
+segment is
+\begin{align}
+ U_{\gamma}^{(n)}
+ & =(-ig)^n
+ \int_{0<s_n<\cdots<s_1<1}
+ \prod_{r=1}^{n}\dd s_r\,
+ \dot\gamma^{\mu_r}(s_r)
+ A_{\mu_1}^{a_1}(\gamma(s_1))\cdots
+ A_{\mu_n}^{a_n}(\gamma(s_n))
+ t_R^{a_1}\cdots t_R^{a_n} .
+\label{eq:ordered-multigluon}
+\end{align}
+The matrix order in \cref{eq:ordered-multigluon} is physical.  Even when two
+exchanges have identical scalar kernels, interchanging them changes the color
+operator whenever \([t_R^{a_1},t_R^{a_2}]\ne0\).  The corresponding
+rescattering correction is therefore a map
+\begin{equation}
+ \cK_{\eta}^{(n)}:
+ \Hil_{\nu,\phys}^{(r)}
+ \longrightarrow
+ \bigoplus_{\mu\in\cF_r}
+ \Hil_{\mu,\phys}^{(r)},
+\label{eq:multigluon-kernel-map}
+\end{equation}
+with explicit source and target sectors, not a scalar multiplier.
+
+Let \(\mathfrak X_n\) denote a complete retained intermediate-state history,
+including the sector after every exchange.  In light-front time-ordered form,
+\begin{align}
+ \cK_{\eta}^{(n)}
+ ={}&
+ \sum_{\mathfrak X_n}
+ \cV_{\eta,n}
+ \frac{1}{P^-_i-P^-_{X_{n-1}}+i0\sigma_{n-1}}
+ \cV_{\eta,n-1}\cdots
+ \frac{1}{P^-_i-P^-_{X_1}+i0\sigma_1}
+ \cV_{\eta,1},
+\label{eq:lf-multiexchange-resolvent}
+\end{align}
+where each \(\sigma_j\) is fixed by the time ordering and process, and every
+\(\cV_{\eta,j}\) carries its own eikonal pole.  A cut may pass through more
+than one denominator.  The cut ledger must therefore identify the cut set,
+not merely label an entire diagram ``imaginary.''
+
+\begin{requirement}[Complete history identity]
+\label{req:complete-history}
+Two multi-exchange terms are identical only when their path order, color word,
+intermediate sectors, momentum routing, pole prescriptions, regulator labels,
+and cut set agree.  Terms that differ in any of these fields may interfere,
+but they may not be deduplicated by comparing only their final numerical
+arrays.
+\end{requirement}
+
+\subsection{Dyson and Magnus truncations are distinct}
+
+The Dyson partial sum
+\begin{equation}
+ U_{\gamma,[N]}^{\rm D}
+ =\sum_{n=0}^{N}U_{\gamma}^{(n)}
+\label{eq:dyson-partial-sum}
+\end{equation}
+and the Magnus partial exponent
+\begin{equation}
+ U_{\gamma,[N]}^{\rm M}
+ =\exp\!\left[\sum_{n=1}^{N}\Omega_n[\gamma]\right]
+\label{eq:magnus-partial-sum}
+\end{equation}
+are different approximations at finite \(N\).  The first is transparent for
+fixed-order cuts; the second preserves group-valued transport more naturally
+when the retained \(\Omega_n\) are anti-Hermitian.  They become equivalent
+only after expansion to a common perturbative order.
+
+\begin{proposition}[Fixed-order equivalence]
+\label{prop:dyson-magnus-equivalence}
+If \(\Omega_1,\ldots,\Omega_N\) are constructed from the same regulated
+connection as \(U^{(1)},\ldots,U^{(N)}\), then
+\begin{equation}
+ U_{\gamma,[N]}^{\rm M}
+ -U_{\gamma,[N]}^{\rm D}
+ =\cO(g^{N+1})
+\label{eq:dyson-magnus-difference}
+\end{equation}
+after both sides are expanded in \(g\).  The statement does not imply that
+unexpanded numerical partial sums agree beyond the controlled order.
+\end{proposition}
+
+\begin{proof}
+The Magnus coefficients are defined recursively so that the exponential
+solves the same first-order transport equation as the path-ordered Dyson
+series.  Matching equal powers of \(g\) fixes \(\Omega_n\) through order
+\(n\); the first unmatched term is therefore order \(g^{N+1}\)
+\cite{Magnus1954}.
+\end{proof}
+
+The implementation records
+\begin{equation}
+ \mathfrak t_{\rm Wilson}
+ =(	ext{representation},N,\text{Dyson/Magnus},
+   \text{expanded/unexpanded},\text{cut order},\text{regulator}),
+\label{eq:wilson-truncation-id}
+\end{equation}
+so an unexpanded exponent cannot be compared with a strict fixed-order result
+without an explicit expansion adapter.
+
+\subsection{Non-Abelian exponentiation and connected color structure}
+
+For vacuum soft factors and related Wilson-line correlators, the logarithm is
+organized by connected color structures or webs rather than by an arbitrary
+exponential of the one-gluon graph \cite{Gatheral1983,FrenkelTaylor1984}.
+This fact is useful but must not be overextended.  The open, hadron-matrix-
+element Wilson operator in the present calculation contains state-dependent
+insertions and may mix Fock sectors.  We therefore write schematically
+\begin{equation}
+ \ln \avg{U_{\gamma_1}\cdots U_{\gamma_m}}
+ =\sum_{w\in\mathfrak W}
+ C_w\,F_w,
+\label{eq:web-expansion}
+\end{equation}
+only for an object for which the web theorem and its color-connected
+hypotheses have been established.
+
+\begin{requirement}[No ad hoc exponentiation]
+\label{req:no-ad-hoc-exponentiation}
+The replacement
+\begin{equation}
+ 1+\cK^{(1)}\longmapsto \exp\!\bigl[\cK^{(1)}\bigr]
+\label{eq:forbidden-eikonal-exponent}
+\end{equation}
+is prohibited unless the exponentiated object, color algebra, subtraction
+scheme, and accuracy are specified and the result is benchmarked against the
+explicit second order.  Non-Abelian commutators, crossed exchanges, and
+state-changing insertions may not be hidden in a scalar exponent.
+\end{requirement}
+
+\subsection{Order-by-order unitarity and cuts}
+
+Let \(S=1+iT\) in the retained regulated space.  Exact unitarity gives
+\begin{equation}
+ -i(T-T^\dagger)=T^\dagger T.
+\label{eq:unitarity-operator}
+\end{equation}
+At order \(g^n\), the discontinuity of the virtual amplitude is related to
+all retained cuts whose lower-order amplitudes multiply to \(g^n\).  Define
+\begin{equation}
+ \cU_n
+ =-i\bigl(T^{(n)}-T^{(n)\dagger}\bigr)
+ -\sum_{m=1}^{n-1}T^{(m)\dagger}T^{(n-m)}.
+\label{eq:unitarity-residual-order-n}
+\end{equation}
+A complete truncated channel has \(\cU_n=0\) up to regulator, omitted-sector,
+and numerical errors.
+
+The eikonal Wilson line is not an isolated scattering matrix, so
+\cref{eq:unitarity-residual-order-n} is applied to the enlarged amplitude
+containing the struck-parton operator, spectator state, and retained soft
+radiation.  It is nevertheless a powerful test: an imaginary term with no
+corresponding retained cut signals an incomplete intermediate-state basis or
+an inconsistent pole prescription.
+
+\subsection{Convergence observables}
+
+The eikonal expansion is accepted through order \(N\) only if stability is
+shown for matrix elements and projected observables.  For an observable
+\(\cO_A\), define
+\begin{align}
+ \delta^{\rm ord}_{A,N}
+ & =
+ \frac{
+  \left|\cO_A[U_{[N]}]-\cO_A[U_{[N-1]}]\right|
+ }{
+  \max\{\left|\cO_A[U_{[N]}]\right|,\cO_{A,\rm ref}\}
+ },
+\label{eq:eikonal-order-residual}\\
+ \delta^{\rm rep}_{A,N}
+ & =
+ \frac{
+  \left|\cO_A[U_{[N]}^{\rm D}]
+       -\cO_A[U_{[N]}^{\rm M}]_{\text{expanded to }N}\right|
+ }{
+  \max\{\left|\cO_A\right|,\cO_{A,\rm ref}\}
+ }.
+\label{eq:representation-residual}
+\end{align}
+These are reported separately from basis, regulator, rapidity, and numerical
+errors.  A stable Sivers moment does not establish stability of a different
+Boer--Mulders or gluon color projection.
+
+\section{Process maps, factorization status, and Glauber structure}
+\label{sec:process-factorization}
+
+\subsection{A process object is more than a staple sign}
+
+A process declaration is the typed object
+\begin{equation}
+\begin{aligned}
+ \mathfrak p=\bigl(&
+ \text{name},\text{external representations},\text{measured final state},
+ \text{power accuracy},\text{perturbative order},\\
+ &\gamma_q,[\gamma_g,\gamma'_g],
+ C_f^{\mathfrak p},C_d^{\mathfrak p},
+ \mathfrak f_{\rm status},\mathfrak g_{\rm Glauber}\bigr).
+\end{aligned}
+\label{eq:process-object}
+\end{equation}
+The link data are outputs of the factorization analysis, not labels inferred
+from the words ``SIDIS,'' ``Drell--Yan,'' or ``gluon process.''  A hard
+channel may also project a linear combination of independent gluon color
+structures,
+\begin{equation}
+ W_{g}^{\mathfrak p}
+ =C_f^{\mathfrak p}W_g^{(f)}
+  +C_d^{\mathfrak p}W_g^{(d)},
+\label{eq:process-fd-combination}
+\end{equation}
+where the weights belong to \(\Proc\), not to the universal parent registry.
+
+\subsection{Factorization-status lattice}
+
+We use the following fail-closed status set:
+\begin{longtable}{L{0.19\textwidth}L{0.72\textwidth}}
+\toprule
+Status & Meaning and permitted use\\
+\midrule
+\endhead
+\texttt{ESTABLISHED} &
+A leading-power theorem with declared observable, regulator/scheme, link
+structure, soft subtraction, and demonstrated cancellation or factorization
+of Glauber contributions.  Production predictions are permitted within the
+stated accuracy.\\
+\texttt{CONDITIONAL} &
+A derivation exists under named assumptions, restricted color channels,
+kinematics, or measurement inclusiveness.  Predictions must carry those
+conditions.\\
+\texttt{EXPLORATORY} &
+A process-motivated link or color map is used as a model study without a
+complete factorization theorem.  Results may be benchmarks or sensitivities,
+not universal extractions.\\
+\texttt{BROKEN} &
+Known color entanglement or Glauber exchange prevents the assumed product of
+independent universal TMDs.  The unsupported composition is rejected.\\
+\texttt{UNASSESSED} &
+No sufficient analysis has been registered.  No process-level prediction is
+permitted.\\
+\bottomrule
+\end{longtable}
+The statuses are partially ordered by evidential content, not by numerical
+precision.  A successful fit cannot promote \texttt{EXPLORATORY} to
+\texttt{ESTABLISHED}.
+
+\subsection{Reference color-singlet processes}
+
+For sufficiently inclusive color-singlet SIDIS and Drell--Yan observables in
+the TMD region, the future/past quark-staple relation and its Sivers sign
+change follow from the corresponding factorization analyses
+\cite{Collins2002,JiMaYuan2004,JiMaYuanSpin2004}.  They provide the primary
+process-reversal benchmark:
+\begin{align}
+ \gamma_q^{\rm SIDIS}&=\gamma_+,
+ &\gamma_q^{\rm DY}&=\gamma_-,
+\label{eq:sidis-dy-process-map}\\
+ f_{1T}^{\perp q,\rm SIDIS}
+ &=-f_{1T}^{\perp q,\rm DY},
+ &h_1^{\perp q,\rm SIDIS}
+ &=-h_1^{\perp q,\rm DY},
+\label{eq:sidis-dy-two-signs}
+\end{align}
+within common operator, Fourier, and spin conventions.  The theorem is not a
+statement that every hadronic process with an initial- or final-state colored
+parton admits the same two links.
+
+\subsection{Glauber region and cancellation contract}
+
+A Glauber momentum has parametrically small longitudinal products compared
+with its transverse virtuality.  In a representative two-direction problem,
+\begin{equation}
+ \ell^+\ell^-\ll \ell_T^2,
+\label{eq:glauber-region}
+\end{equation}
+and ordinary soft contour deformations may be pinched.  A valid process proof
+must show one of the following:
+\begin{enumerate}
+\item the Glauber region cancels after the declared sum over cuts;
+\item it is absorbed into the same Wilson/soft objects used in the theorem;
+\item it is represented by explicit Glauber operators whose matrix elements
+      factorize in the asserted manner;
+\item the proposed TMD factorization fails.
+\end{enumerate}
+SCET formulations with explicit Glauber operators make this obligation
+particularly transparent \cite{RothsteinStewart2016}.
+
+Define a process-specific residual
+\begin{equation}
+ \delta_{\rm G}^{\mathfrak p}
+ =\cA_{\rm full}^{\mathfrak p}
+ -\cA_{\rm coll}^{\mathfrak p}
+ -\cA_{\soft}^{\mathfrak p}
+ -\cA_{\rm G,assigned}^{\mathfrak p}
+ +\cA_{\rm overlap}^{\mathfrak p}.
+\label{eq:glauber-residual}
+\end{equation}
+The statement \(\delta_{\rm G}^{\mathfrak p}=0\) requires a proof or a
+controlled calculation; it is not a configuration flag.
+
+\subsection{Known failure pattern}
+
+Hadron--hadron production of nearly back-to-back colored final states can
+contain color entanglement that is not representable by a product of two
+independent universal TMD correlators.  Explicit counterexamples show that
+process-dependent gauge links alone do not always repair the factorization
+\cite{CollinsQiu2007,RogersMulders2010}.  The process registry therefore
+rejects a schematic expression
+\begin{equation}
+ \dd\sigma
+ \stackrel{\rm unsupported}{=}
+ H\otimes \Phi_{A}^{[\gamma_A]}
+   \otimes \Phi_{B}^{[\gamma_B]}
+\label{eq:unsupported-factorization}
+\end{equation}
+when the color flow requires one entangled matrix element.
+
+\begin{requirement}[Factorization-status propagation]
+\label{req:factorization-status-propagation}
+Every observable, plot, likelihood term, and exported table must retain
+\(\mathfrak f_{\rm status}\), the supporting theorem or analysis identifier,
+the link/color map, and the stated power/perturbative accuracy.  A downstream
+routine may not drop this metadata when converting a correlator into a number.
+\end{requirement}
+
+\subsection{Gluon-sensitive channels}
+
+Gluon TMD processes require an ordered link pair and process-specific color
+weights.  The registry must answer, for each candidate channel:
+\begin{enumerate}
+\item Which field-strength color indices are connected to which eikonals?
+\item Which of \([+,+],[-,-],[+,-],[-,+]\), or a more complicated link
+      topology is generated?
+\item Which \(f\)- and \(d\)-type contractions enter the hard color trace?
+\item Does the measurement preserve or trace over the color information needed
+      for factorization?
+\item What Glauber cancellation or obstruction is known?
+\end{enumerate}
+No default ``gluon Sivers link'' is defined in the absence of these answers.
+
+\section{Gauge-link dependence of orbital motion and final-state torque}
+\label{sec:oam-torque}
+
+\subsection{Straight and staple definitions}
+
+A Wigner/GTMD definition of partonic orbital angular momentum retains its
+Wilson path.  At a matched scale and scheme, define
+\begin{equation}
+ L_z^a[\gamma]
+ =\int \dd x\,\dd^2\kT\,\dd^2\bD\,
+ \crossT{\bD}{\kT}\,
+ \rho_{LU}^{a[\gamma]}(x,\kT,\bD).
+\label{eq:path-dependent-oam}
+\end{equation}
+A straight connector and a staple connector need not yield the same operator:
+\begin{equation}
+ \Delta L_z^a
+ =L_z^a[\gamma_{\staple}]-L_z^a[\gamma_{\straight}].
+\label{eq:oam-difference}
+\end{equation}
+In common interpretations, the straight-link quantity is related to kinetic
+OAM and the staple-link quantity to canonical OAM in a specified gauge-link
+and boundary prescription; the precise identification is scheme and operator
+convention dependent \cite{LorcePasquini2011,Hatta2012,Burkardt2013}.
+
+\subsection{Path derivative and field-strength insertion}
+
+An infinitesimal deformation of a Wilson path produces a field-strength
+insertion.  Schematically, for a deformation \(\delta\gamma\),
+\begin{align}
+ \delta U_\gamma[b,a]
+ ={}&-ig\,A_\mu(b)\delta b^\mu U_\gamma
+ +ig\,U_\gamma A_\mu(a)\delta a^\mu
+\notag\\
+ &-ig\int_0^1\dd s\,
+ U_{\gamma[b,\gamma(s)]}
+ F_{\mu\nu}(\gamma(s))
+ U_{\gamma[\gamma(s),a]}
+ \dot\gamma^\nu(s)\,\delta\gamma^\mu(s).
+\label{eq:path-derivative-field-strength}
+\end{align}
+The bulk term is the operator origin of the accumulated color force or torque
+between the straight and staple paths.  It also shows why path dependence is
+dynamical when \(F_{\mu\nu}\ne0\): homotopy data alone do not determine
+\cref{eq:oam-difference}.
+
+\subsection{Shared OAM blocks and naive-\texorpdfstring{\(T\)}{T}-odd projections}
+
+The same \(L_z\)-resolved Fock amplitudes enter OAM moments and T-odd
+interference, but their kernels differ.  We may write
+\begin{align}
+ L_z^a[\gamma]
+ &=\sum_{\alpha\beta}
+   \psi_\alpha^*\,
+   \cL_{\alpha\beta}^{a[\gamma]}\,
+   \psi_\beta,
+\label{eq:oam-kernel}\\
+ f_{1T}^{\perp a[\gamma]}
+ &=\sum_{\alpha\beta}
+   \psi_\alpha^*\,
+   \cS_{\alpha\beta}^{a[\gamma]}\,
+   \psi_\beta.
+\label{eq:sivers-kernel}
+\end{align}
+A common pair \((\alpha,\beta)\) can contribute to both, producing correlated
+sensitivity to microscopic OAM content.  It does not imply
+\(\cL\propto\cS\).
+
+\begin{principle}[No universal lensing identity]
+\label{pr:no-universal-lensing}
+A relation between a Sivers function and a transverse distortion from a GPD
+requires a model-dependent factorization of spatial distortion and final-state
+interaction, often called chromodynamic lensing.  Volume~III may test such a
+relation within a specified model, but it does not promote
+\begin{equation}
+ f_{1T}^{\perp q}\overset{?}{\propto} E^q
+\label{eq:forbidden-universal-lensing}
+\end{equation}
+to an operator identity.
+\end{principle}
+
+\section{Sum rules, positivity domains, and global consistency}
+\label{sec:sum-rules}
+
+\subsection{Angular and collinear limits}
+
+A naive-\(T\)-odd leading-twist term carries an explicit transverse harmonic.
+For example,
+\begin{equation}
+ \Phi^{[\gamma^+]}(x,\kT;S_T)
+ \supset
+ -\frac{\epsilon_T^{ij}k_T^iS_T^j}{M}
+ f_{1T}^{\perp}(x,k_T^2).
+\label{eq:sivers-harmonic}
+\end{equation}
+Consequently the unweighted azimuthal integral of the full modulation
+vanishes.  This does not imply that the scalar coefficient
+\(f_{1T}^{\perp}\) or its weighted moment vanishes.  The renormalized first
+moment is a separate, generally ultraviolet-sensitive operator quantity.
+
+At the matched collinear level, no ordinary twist-two PDF carries the Sivers
+or Boer--Mulders harmonic.  Their transverse moments instead match to
+quark--gluon or tri-gluon twist-three correlators.  The adapter is defined in
+\cref{app:twist3}.
+
+\subsection{Net transverse-momentum sum rule}
+
+Transverse momentum conservation implies a Burkardt-type sum rule for the
+average transverse momentum generated by the Sivers mechanism.  In a common
+moment convention,
+\begin{equation}
+ \sum_{a=q,\bar q,g}
+ \int_0^1\dd x\,
+ f_{1T}^{\perp(1)a}(x;\mu)
+ =0,
+\label{eq:burkardt-sum-rule}
+\end{equation}
+up to the declared sign, normalization, renormalization, and endpoint
+conventions \cite{Burkardt2004,GoekeMeissnerMetzSchlegel2006}.  The sum is a
+constraint on the complete state.  A valence-only calculation is not expected
+to satisfy it if the omitted sea and gluon sectors carry compensating
+transverse momentum.
+
+Define the closure residual
+\begin{equation}
+ \delta_{\rm BSR}
+ =\sum_{a=q,\bar q,g}
+ \int_{x_{\min}}^{x_{\max}}\dd x\,
+ f_{1T}^{\perp(1)a}(x)
+ +\delta_{x\to0}+\delta_{x\to1}
+ +\delta_{\rm match}.
+\label{eq:burkardt-residual}
+\end{equation}
+Endpoint and matching terms are reported rather than silently set to zero.
+
+\subsection{Color neutrality and Ward closure}
+
+For a physical color-singlet state,
+\begin{equation}
+ Q^a_{\rm color}|N\rangle=0.
+\label{eq:color-neutrality-repeated}
+\end{equation}
+The sum of eikonal attachments to all retained charged lines must satisfy the
+corresponding Ward identity.  Let \(\cK_i^{\mu a}\) be the attachment to line
+\(i\).  Then
+\begin{equation}
+ \ell_\mu\sum_i \cK_i^{\mu a}
+ =\delta_{\rm Ward}^a,
+\label{eq:ward-residual-sum}
+\end{equation}
+where \(\delta_{\rm Ward}^a\to0\) as constrained-field, transverse-link,
+sector, and numerical completeness are restored.  A nonzero result may not be
+renormalized away by changing the T-odd normalization.
+
+\subsection{Positivity is layer dependent}
+
+For a fixed physical link class, a complete forward cut correlator can admit
+a Gram representation
+\begin{equation}
+ \Phi_{\alpha\beta}^{[\gamma]}
+ =\sum_X A_{\alpha X}^{[\gamma]}
+       A_{\beta X}^{[\gamma]*},
+\label{eq:link-specific-gram}
+\end{equation}
+and is positive semidefinite.  Three qualifications are essential:
+\begin{enumerate}
+\item positivity applies to the complete joint parton--target matrix, not to
+      every scalar function independently;
+\item an off-forward GTMD or Wigner quasidistribution is not pointwise
+      positive;
+\item a fixed-order expansion of \cref{eq:link-specific-gram}, or a
+      soft-subtracted scheme object, need not be positive term by term.
+\end{enumerate}
+The implementation never clips a negative eigenvalue.  It records whether the
+object is incomplete, perturbatively truncated, or genuinely inconsistent.
+
+For two retained amplitude channels \(A\) and \(B\), Cauchy--Schwarz gives
+\begin{equation}
+ \left|\operatorname{Im}\sum_X A_XB_X^*\right|
+ \le
+ \left(\sum_X|A_X|^2\right)^{1/2}
+ \left(\sum_X|B_X|^2\right)^{1/2}.
+\label{eq:phase-cauchy-schwarz}
+\end{equation}
+This supplies a structural bound on an interference-generated T-odd
+projection without imposing a separate phenomenological ceiling on each
+named function.
+
+\subsection{Common-state correlation obligation}
+
+Let \(\theta\) denote the Hamiltonian and Wilson-sector parameters.  A
+variation \(\delta\theta_a\) must propagate to every projection containing
+the corresponding vertex:
+\begin{equation}
+ J_{Aa}=\frac{\partial \cO_A}{\partial\theta_a}.
+\label{eq:phase-jacobian}
+\end{equation}
+In particular, a parameter controlling an eikonal infrared scale, a quark--
+gluon vertex, or an OAM mixing block affects Sivers, Boer--Mulders, twist-three
+moments, path-dependent OAM, and any gluon channels to which the same
+interaction contributes.  Assigning independent copies of that parameter to
+each TMD would destroy the principal predictive content of this volume.
+
+\section{Computational realization and formal interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+The computational representation follows the physical decomposition rather
+than hiding all information in one complex array.
+\begin{longtable}{L{0.27\textwidth}L{0.64\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{WilsonPathId} &
+C1 path identity: ordered segments, endpoints, orientation, finite or
+semi-infinite extent, transverse closure, representation, and inverse.\\
+\texttt{PolePrescription} &
+The sign and variable of every eikonal or light-front energy denominator;
+principal-value and delta pieces; regulator deformation; provenance of the
+\(i0\).\\
+\texttt{EikonalVertex} &
+Momentum, Lorentz, color, representation, path-segment, helicity, and sector
+map for one Wilson attachment.\\
+\texttt{IntermediateStateId} &
+Fock sector, basis member, momentum routing, conserved quantum numbers,
+energy, regulator level, and completeness weight of a retained state.\\
+\texttt{CutSource} &
+A cut denominator or eikonal pole, the cut set to which it belongs, and the
+rule preventing duplicate imaginary support.\\
+\texttt{RescatteringKernel} &
+Sparse \(\Amp\)-layer map assembled from vertices, resolvents, color words,
+cut data, and Wilson order.  It acts on Fock amplitudes rather than named
+TMDs.\\
+\texttt{WilsonExpansion} &
+Dyson or Magnus representation, strict/unexpanded order, path-ordering
+metadata, convergence residuals, and conversion adapters.\\
+\texttt{ColorContractionId} &
+Fundamental/adjoint representation and, for three-adjoint gluon poles,
+independent \(f\)- and \(d\)-type contractions with normalization.\\
+\texttt{AbsorptiveAmplitude} &
+Real and imaginary components with explicit cut provenance, source/target
+states, link orientation, and Hermitian/time-reversal partners.\\
+\shortstack[l]{\texttt{RapiditySubtraction}\\\texttt{Contract}} &
+Rapidity regulator, zero-bin/overlap prescription, soft factor, square-root
+allocation, \((\mu,\zeta)\), and the boundary-only or joint-soft route.\\
+\texttt{PhaseBudget} &
+Microscopic Wilson, constrained-field, transverse-link, soft, matching, and
+excluded duplicate contributions with a closure residual.\\
+\texttt{ProcessLinkMap} &
+Process definition, hard color flow, quark link, ordered gluon link pair,
+\(f/d\) weights, power accuracy, factorization status, and Glauber evidence.\\
+\shortstack[l]{\texttt{EikonalConvergence}\\\texttt{Manifest}} &
+Wilson order, basis, Fock, regulator, rapidity, quadrature, and representation
+residuals for every reported matrix element and projection.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Typed data flow}
+
+The intended computation is
+\begin{align}
+ |\Psi_N\rangle
+ &\xrightarrow{\ \cO_{a}^{[\Gamma]}\ }
+ W_{a}^{(0)}
+ \xrightarrow{\ \cK_{\eta,[N]}\ }
+ W_{a,\unsub}^{[\gamma]}
+ \xrightarrow{\ \cS^{-1/2}\cR_{\rap}\cZ_{\UV}\ }
+ W_{a,\ren}^{[\gamma]},
+\notag\\
+ W_{a,\ren}^{[\gamma]}
+ &\xrightarrow{\ \Red_A\ }
+ F_A^{[\gamma]}
+ \xrightarrow{\ \Proc_{\mathfrak p}\ }
+ \cO_{\mathfrak p}.
+\label{eq:software-data-flow}
+\end{align}
+The first two arrows are \(\Amp\)-layer maps.  Soft subtraction and
+regulator/scheme conversion are \(\Match\)-layer maps.  Projection is a
+\(\Red\)-layer map, and the final process assembly is a \(\Proc\)-layer map.
+No implicit conversion between these layers is permitted.
+
+The link-odd projection is formed only after both orientations exist:
+\begin{equation}
+ W_{\odd}
+ =\frac12\left(
+   W_{\ren}^{[\gamma_+]}
+  -\Theta^{-1}W_{\ren}^{[\gamma_-]}\Theta
+ \right),
+\label{eq:software-link-odd}
+\end{equation}
+where \(\Theta\) is the full antiunitary convention adapter.  Subtracting two
+arrays with path labels \texttt{FUTURE} and \texttt{PAST} but without the
+spin/momentum adapter is a type error.
+
+\subsection{Sparse block structure}
+
+A kernel block is indexed by
+\begin{equation}
+ \mathfrak b=
+ (\nu_{\rm in},\nu_{\rm out},
+  J^z_{\rm in},J^z_{\rm out},
+  L^z_{\rm in},L^z_{\rm out},
+  R_{c,\rm in},R_{c,\rm out},
+  \Gamma,\gamma,\mathfrak c,N,r).
+\label{eq:kernel-block-id}
+\end{equation}
+Forbidden blocks are absent by symmetry.  A nonzero block must carry the
+intertwiner that proves color, flavor, and angular compatibility.  The sparse
+representation allows all contributing \(L_z\) and Fock interferences to be
+retained without forming one dense matrix across the full basis.
+
+\subsection{Principal-value and cut quadrature}
+
+A numerical integral containing
+\begin{equation}
+ \frac{F(\ell)}{x(\ell)+i0\sigma}
+\label{eq:numerical-singular-integral}
+\end{equation}
+is evaluated as two declared operations,
+\begin{align}
+ I_{\PV}
+ &=\PV\int\dd\ell\,\frac{F(\ell)}{x(\ell)},
+\label{eq:numerical-pv}\\
+ I_{\Disc}
+ &=-i\sigma\pi
+   \int_{x(\ell)=0}
+   \frac{\dd\Sigma(\ell)}{|\nabla x(\ell)|}
+   F(\ell).
+\label{eq:numerical-cut-surface}
+\end{align}
+The cut-surface Jacobian is explicit.  A finite imaginary regulator used for
+numerical smoothing must converge to \cref{eq:numerical-cut-surface}; it may
+not define the physical width of the phase.
+
+Recommended checks are:
+\begin{enumerate}
+\item symmetric-domain principal-value cancellation for odd test functions;
+\item convergence against analytic Hilbert transforms;
+\item stability as the finite regulator tends to zero;
+\item equality of explicit delta-surface and contour-deformation evaluations;
+\item grid refinement near pinched or endpoint support.
+\end{enumerate}
+
+\subsection{Automatic differentiation and parameter sharing}
+
+The kernel may be differentiated with respect to physical parameters,
+\begin{equation}
+ \frac{\partial W_A}{\partial\theta_a}
+ =\inner{\partial_a\Psi}{\cO_A U_\gamma\Psi}
+ +\inner{\Psi}{(\partial_a\cO_A)U_\gamma\Psi}
+ +\inner{\Psi}{\cO_A(\partial_a U_\gamma)\Psi}
+ +\inner{\Psi}{\cO_AU_\gamma\partial_a\Psi},
+\label{eq:full-phase-derivative}
+\end{equation}
+with adjoint methods used when the state is an implicit Hamiltonian
+eigenvector.  Derivatives must include the parameter dependence of the state,
+not only of the explicit rescattering kernel.  A ``frozen wave function''
+derivative is a named approximation.
+
+\subsection{Serialization and reproducibility}
+
+Every exported kernel or projected table stores:
+\begin{enumerate}
+\item Volume~I state and regulator identity;
+\item Volume~II operator and recoil identity;
+\item path, pole, color, Wilson order, and cut identities;
+\item rapidity and soft-subtraction contract;
+\item process/factorization status if a process map has been applied;
+\item parameter/member identity and all truncation coordinates;
+\item source-code commit, configuration hash, and numerical tolerances.
+\end{enumerate}
+A complex array without this manifest is not an authoritative Volume~III
+object.
+
+\section{Formal requirements and property-based tests}
+\label{sec:tests}
+
+\subsection{Stable requirement identifiers}
+
+The following identifiers are normative and should appear in the software
+coverage manifest.
+\begin{longtable}{L{0.14\textwidth}L{0.77\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+\texttt{V3.PATH.1} & Bare transport composes on matching endpoint fibers and
+satisfies inverse/adjoint identities.\\
+\texttt{V3.PATH.2} & Staple orientation, finite/infinite extent, transverse
+closure, and representation are explicit identity fields.\\
+\texttt{V3.POLE.1} & Every eikonal denominator has a process-derived \(i0\)
+sign and a tested distributional decomposition.\\
+\texttt{V3.POLE.2} & Every light-front energy denominator has an independent
+pole identity; equal algebraic denominators are not deduplicated without cut
+provenance.\\
+\texttt{V3.CUT.1} & The imaginary part is reproducible from an explicit
+intermediate-state or eikonal cut.\\
+\texttt{V3.CUT.2} & A cut ledger prevents the same on-shell support from
+entering both the Wilson and resolvent terms twice.\\
+\texttt{V3.WARD.1} & Longitudinal polarization replacement and total color
+attachment satisfy the declared Ward test.\\
+\texttt{V3.TIME.1} & The antiunitary adapter maps future to past operators,
+including spin, momenta, endpoints, representations, and complex conjugation.\\
+\texttt{V3.TIME.2} & Link-even and link-odd projections have the correct
+future/past behavior after renormalization.\\
+\texttt{V3.ZERO.1} & Setting the gauge coupling or rescattering kernel to zero
+removes every naive-\(T\)-odd projection.\\
+\texttt{V3.QUARK.1} & Sivers and Boer--Mulders use distinct operator and
+helicity projectors on a shared kernel.\\
+\texttt{V3.QUARK.2} & Quark, flavor, and positive-\(x\) antiquark identities
+remain explicit through the phase calculation.\\
+\texttt{V3.GLUON.1} & Gluon operators retain an ordered pair of adjoint links.\\
+\texttt{V3.GLUON.2} & \(f\)- and \(d\)-type color tensors are independent,
+orthogonal channels and are not inferred from a TMD name.\\
+\texttt{V3.SOFT.1} & The microscopic phase budget closes after soft/rapidity
+overlap subtraction.\\
+\texttt{V3.SOFT.2} & Boundary-only and joint-microscopic-soft routes are
+exclusive unless an explicit conversion/subtraction is supplied.\\
+\texttt{V3.ORD.1} & One-gluon results reproduce an analytic benchmark.\\
+\texttt{V3.ORD.2} & Higher orders report Dyson/Magnus, strict/unexpanded, and
+observable-level convergence residuals.\\
+\texttt{V3.PROC.1} & Every process carries a theorem status, link/color map,
+power accuracy, and Glauber assessment.\\
+\texttt{V3.PROC.2} & Known color-entangled compositions fail closed.\\
+\texttt{V3.SUM.1} & The common state reports the transverse-momentum sum-rule
+residual with endpoint and matching terms.\\
+\texttt{V3.OAM.1} & Straight/staple OAM differences retain path identity and
+are not converted into a universal lensing relation.\\
+\texttt{V3.REPRO.1} & Every authoritative result has a complete manifest and
+can be regenerated from a clean environment.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Algebraic tests}
+
+For random admissible finite paths and color matrices, property-based tests
+must verify
+\begin{align}
+ U_{\gamma_3\circ(\gamma_2\circ\gamma_1)}
+ &=U_{(\gamma_3\circ\gamma_2)\circ\gamma_1},
+\label{eq:path-associativity-test}\\
+ U_{\gamma^{-1}}U_\gamma&=\bbone,
+\label{eq:path-inverse-test}\\
+ U_\gamma^\dagger U_\gamma&=\bbone
+\quad\text{for a Hermitian connection and exact transport},
+\label{eq:path-unitarity-test}\\
+ f^{abc}d^{abc}&=0.
+\label{eq:fd-test}
+\end{align}
+Finite-order Wilson approximants are tested against the expected order of the
+unitarity defect rather than required to be exactly unitary.
+
+\subsection{Pole and cut tests}
+
+For smooth compactly supported test functions \(\varphi\), verify numerically
+\begin{equation}
+ \lim_{\epsilon\to0^+}
+ \int\dd x\,
+ \frac{\varphi(x)}{x+i\sigma\epsilon}
+ =\PV\int\dd x\,\frac{\varphi(x)}{x}
+ -i\sigma\pi\varphi(0).
+\label{eq:distribution-numerical-test}
+\end{equation}
+The future/past pair must share the principal-value part and have opposite
+discontinuities.  A deliberately reversed \(i0\) sign must fail the
+link-reversal test.
+
+For the LF resolvent, a finite discrete model with known eigenvalues
+\(E_X\) must satisfy
+\begin{equation}
+ \operatorname{Im}
+ \sum_X\frac{N_X}{E_i-E_X+i0}
+ =-\pi\sum_X N_X\delta(E_i-E_X)
+\label{eq:discrete-resolvent-test}
+\end{equation}
+after replacing the delta distribution by the declared finite-volume rule.
+
+\subsection{Symmetry and zero tests}
+
+The mandatory injected failures are:
+\begin{enumerate}
+\item replace the future pole by the past pole while keeping the future path;
+\item reverse endpoints without conjugating the color word;
+\item apply complex conjugation without the spin/momentum time-reversal map;
+\item remove one required \(\Delta L_z=1\) amplitude from a Sivers block;
+\item use the vector projector for Boer--Mulders or the chiral-odd projector
+      for Sivers;
+\item exchange the order of a mixed gluon link pair;
+\item relabel an \(f\)-type color contraction as \(d\)-type;
+\item include a microscopic soft ladder and an external CS kernel without
+      overlap subtraction;
+\item apply a TMD product formula to a process registered as
+      \texttt{BROKEN};
+\item count one on-shell pole in both the eikonal and intermediate-state cut.
+\end{enumerate}
+Each injection must be rejected before an authoritative numerical output is
+written.
+
+\subsection{One-gluon and higher-order tests}
+
+The one-gluon calculation must pass:
+\begin{enumerate}
+\item analytic eikonal-pole sign and normalization;
+\item Abelian color limit;
+\item SU(3) fundamental and adjoint color factors;
+\item zero-coupling and zero-cut limits;
+\item future/past sign reversal;
+\item Ward closure after all declared attachments are included;
+\item agreement of direct complex integration and PV-plus-cut evaluation.
+\end{enumerate}
+At second order, the strict Dyson result must agree with the expanded Magnus
+result through \(g^2\), and the connected color commutator must be nonzero for
+a non-Abelian benchmark.
+
+\subsection{Soft and scheme tests}
+
+For two rapidity regulators or subtraction schemes connected by a known
+finite map, verify
+\begin{equation}
+ H_{\mathfrak s}W_{\mathfrak s}^{[\gamma]}
+ -H_{\mathfrak s'}W_{\mathfrak s'}^{[\gamma]}
+ =\cO(\text{first omitted perturbative order}).
+\label{eq:scheme-invariance-test}
+\end{equation}
+The same conversion must act on future and past links.  Their ratio or
+link-odd difference may not acquire a spurious finite sign from inconsistent
+soft-factor square roots.
+
+The rapidity consistency residual is
+\begin{equation}
+ \delta_{\mu\zeta}
+ =
+ \frac{\partial}{\partial\ln\mu}
+ \frac{\partial}{\partial\ln\sqrt\zeta}
+ \ln W
+ -
+ \frac{\partial}{\partial\ln\sqrt\zeta}
+ \frac{\partial}{\partial\ln\mu}
+ \ln W.
+\label{eq:rapidity-integrability-residual}
+\end{equation}
+It must vanish to the stated order after matching.
+
+\section{Analytic benchmark suite}
+\label{sec:benchmarks}
+
+\subsection{Benchmark A: a semi-infinite Abelian line}
+
+Take a commuting gauge field with one Fourier mode,
+\begin{equation}
+ A_\mu(x)=\epsilon_\mu e^{-i\ell\cdot x}.
+\label{eq:abelian-mode}
+\end{equation}
+For \(\gamma_\eta(\lambda)=a+\eta\lambda v\),
+\begin{equation}
+ U_{\eta}^{(1)}
+ =-g\,e^{-i\ell\cdot a}
+ \frac{v\cdot\epsilon}{v\cdot\ell-i0\eta}.
+\label{eq:abelian-line-benchmark}
+\end{equation}
+This benchmark fixes the path, Fourier, coupling, and pole signs before any
+hadron model is introduced.  Its future/past difference is
+\begin{equation}
+ U_+^{(1)}-U_-^{(1)}
+ =-2i\pi g\,e^{-i\ell\cdot a}
+ (v\cdot\epsilon)\delta(v\cdot\ell).
+\label{eq:abelian-line-difference}
+\end{equation}
+
+\subsection{Benchmark B: two-state light-front cut}
+
+Let \(|0\rangle,|1\rangle\) have light-front energies \(E_0,E_1\), and let
+\(V_{10}=v\), \(O_{01}=o\).  The rescattering term is
+\begin{equation}
+ \cA_\sigma
+ =\frac{o v}{E_0-E_1+i0\sigma}.
+\label{eq:two-state-amplitude}
+\end{equation}
+Then
+\begin{equation}
+ \operatorname{Im}\cA_\sigma
+ =-\sigma\pi o v\,\delta(E_0-E_1)
+\label{eq:two-state-cut}
+\end{equation}
+for real \(ov\), while an off-shell discrete system has zero absorptive part
+until a continuum or finite-volume cut prescription is introduced.  This
+prevents a numerical eigensolver broadening from being mistaken for physical
+rescattering.
+
+\subsection{Benchmark C: minimal OAM interference}
+
+Use two real radial amplitudes with azimuthal weights \(L_z=0\) and \(L_z=1\),
+\begin{equation}
+ \psi(\kT)=u_0(k_T)+e^{i\phi_k}u_1(k_T).
+\label{eq:minimal-oam-state}
+\end{equation}
+Let the link-odd kernel contribute \(i\eta K_{01}\) between the two blocks.
+The odd interference is
+\begin{equation}
+ \cI_{01}^{[\eta]}
+ =2\eta\,u_0u_1\,K_{01}\,\sin\phi_k.
+\label{eq:minimal-oam-interference}
+\end{equation}
+It vanishes when \(u_0\), \(u_1\), or \(K_{01}\) is disabled and reverses
+under \(\eta\to-\eta\).  Replacing the target-spin projector by the active-
+quark transverse-spin projector gives a distinct observable with the same
+radial state; this is the minimal no-proportionality benchmark for Sivers and
+Boer--Mulders.
+
+\subsection{Benchmark D: SU(3) color orthogonality}
+
+With Gell-Mann normalization
+\(\Tr(t^at^b)=\tfrac12\delta^{ab}\), construct random adjoint tensors and
+project them with \(if^{abc}\) and \(d^{abc}\).  The cross term must vanish,
+\begin{equation}
+ (if^{abc})^*d^{abc}=0,
+\label{eq:fd-orthogonality-benchmark}
+\end{equation}
+while the norms agree with \cref{eq:f-norm,eq:d-norm} below.  Swapping a mixed
+link pair must not automatically swap the color projector.
+
+\subsection{Benchmark E: subtraction overlap}
+
+Choose a regulated scalar model in which a soft region \(S(\delta)\) is
+present both in the unsubtracted collinear graph and in a separate soft graph:
+\begin{align}
+ W_{\unsub}(\delta)&=W_{\rm finite}+S(\delta),
+\notag\\
+ \frac12\ln \cS(\delta)&=S(\delta)+\cO(g^4).
+\label{eq:scalar-soft-benchmark}
+\end{align}
+Then the order-\(g^2\) subtracted boundary is regulator independent,
+\begin{equation}
+ W_{\subtr}=W_{\rm finite}+\cO(g^4).
+\label{eq:scalar-soft-cancellation}
+\end{equation}
+Adding the same \(S(\delta)\) again through an external evolution kernel is an
+injected double-counting failure.
+
+\subsection{Benchmark F: process rejection}
+
+Construct a toy hard color tensor that connects the color indices of two
+incoming correlators in one trace.  It cannot be represented as
+\(C_A\Phi_A\,C_B\Phi_B\).  The process registry must return
+\texttt{BROKEN} or \texttt{UNASSESSED}, and the standard two-TMD process map
+must refuse evaluation.  This benchmark tests architecture, not a numerical
+smallness assumption.
+
+\section{Contract with Volume IV: matched spin-1 nuclear dynamics}
+\label{sec:volume4-contract}
+
+\subsection{Nucleon output consumed by the nuclear theory}
+
+For every nucleon species \(N=p,n\), Volume~III exports
+\begin{equation}
+ \mathfrak W_{a/N}^{(3)}=
+ \left(
+ W_{a/N,\even}^{[\gamma]},
+ W_{a/N,\odd}^{[\gamma]},
+ \mathfrak o_a,
+ \mathfrak t_{\rm Wilson},
+ \mathfrak B,
+ \mathfrak p_{\rm allowed},
+ \operatorname{Cov}_{\rm micro}
+ \right),
+\label{eq:volume3-export}
+\end{equation}
+where \(\mathfrak B\) is the phase budget and
+\(\mathfrak p_{\rm allowed}\) is the set of process maps whose factorization
+status permits use.  Proton and neutron flavor, state member, Wilson member,
+and regulator identities remain resolved.
+
+Volume~IV may insert \cref{eq:volume3-export} into the spin-resolved nuclear
+matrix element, but it may not replace the path/color data by a generic
+``T-odd nucleon function.''
+
+\subsection{Partonic staple versus nuclear rescattering}
+
+The partonic Wilson line associated with the hard scattering and the
+rescattering of a struck nucleon through the nuclear environment are not
+automatically the same object.  We distinguish
+\begin{align}
+ U_{\gamma}^{\rm parton}
+ &: \text{color transport in the partonic operator},
+\notag\\
+ \cU_{\rm nuc}
+ &: \text{coherent propagation among nuclear Fock components}.
+\label{eq:parton-nuclear-transport}
+\end{align}
+Their scales and degrees of freedom may overlap after matching.  Volume~IV
+must therefore provide a subtraction or factorization map
+\begin{equation}
+ \cZ_{\rm parton\leftrightarrow nuc}
+\label{eq:parton-nuclear-matching}
+\end{equation}
+whenever the same soft exchange can appear in both descriptions.
+
+\begin{requirement}[No nuclear phase multiplication]
+\label{req:no-nuclear-phase-multiplication}
+A tensor-polarized deuteron T-odd distribution may not be constructed by
+multiplying an unpolarized nucleon TMD by an independently fitted nuclear
+phase.  Tensor, vector, and unpolarized channels must descend from the
+spin-resolved nuclear amplitude acting on the link-resolved nucleon operator.
+\end{requirement}
+
+\subsection{Coherence remains at amplitude level}
+
+Let \(\alpha,\beta\) label \(NN\), \(NN\pi\), \(\Delta\Delta\), \(6q\), or
+other retained nuclear sectors.  The link-dependent deuteron parent is
+\begin{equation}
+ W_{a/D}^{[\gamma]}
+ =\sum_{\alpha,\beta}
+ \inner{\Psi_D^\alpha}
+ {\widehat\cO_{a,\alpha\beta}^{[\gamma]}
+  \Psi_D^\beta}.
+\label{eq:volume4-full-amplitude}
+\end{equation}
+Off-diagonal terms remain until the observable no longer resolves their
+coherence.  Only then may a partial trace generate a completely positive
+reduced map.  Coherent shadowing or exchange currents may not be inserted as
+an incoherent CP map merely to preserve positivity.
+
+\subsection{Nuclear link-reversal test}
+
+If the nuclear interaction is invariant under the relevant antiunitary
+operation and the process factorization produces only the standard staple
+reversal, then
+\begin{equation}
+ W_{a/D,\odd}^{[\gamma_+]}
+ =-W_{a/D,\odd}^{[\gamma_-]}.
+\label{eq:nuclear-link-reversal}
+\end{equation}
+A failure of \cref{eq:nuclear-link-reversal} must be traced to one of:
+\begin{enumerate}
+\item a convention adapter error;
+\item an incomplete nuclear state or current;
+\item an additional process link or color structure;
+\item a factorization-breaking/Glauber contribution;
+\item numerical or regulator inconsistency.
+\end{enumerate}
+It must not be repaired by sign-flipping the final named TMD.
+
+\section{Contract with Volume V: matching, evolution, and observables}
+\label{sec:volume5-contract}
+
+\subsection{Matching datum}
+
+Volume~V receives, at a declared low-resolution boundary,
+\begin{equation}
+ \Bigl(W_{a/h,\subtr}^{[\gamma]},
+  \cR_{\UV},\cR_{\rap},\cS_{\soft},
+  \mu_0,\zeta_0,
+  r,N,\mathfrak B
+ \Bigr)
+\label{eq:volume5-input}
+\end{equation}
+and constructs
+\begin{equation}
+ W_{a/h,\TMD}^{[\gamma]}(\mu,\zeta)
+ =\cU_a(\mu,\zeta;\mu_0,\zeta_0)
+  \otimes
+  \cZ_{\LF\to\TMD}^{a[\gamma]}
+  \otimes
+  W_{a/h,\subtr}^{[\gamma]}.
+\label{eq:volume5-matching-evolution}
+\end{equation}
+The matching coefficient may depend on the parton representation, operator,
+transverse rank, and path class.  The universal leading-power Collins--Soper
+kernel must not erase the link/color identity of the boundary.
+
+\subsection{Evolution preserves link reversal}
+
+Suppose future and past operators share the same renormalization and rapidity
+kernel.  Then
+\begin{equation}
+ W_{\odd}^{[+]}(\mu_0,\zeta_0)
+ =-W_{\odd}^{[-]}(\mu_0,\zeta_0)
+\quad\Longrightarrow\quad
+ W_{\odd}^{[+]}(\mu,\zeta)
+ =-W_{\odd}^{[-]}(\mu,\zeta).
+\label{eq:evolution-preserves-sign}
+\end{equation}
+A violation after evolution is therefore a scheme, implementation, or
+factorization inconsistency unless an additional process-dependent operator
+has entered.
+
+\subsection{Twist-three overlap region}
+
+At perturbative transverse momentum, the TMD and collinear twist-three
+representations describe an overlap region.  Volume~V must compare
+\begin{equation}
+ W_{\TMD}^{\text{expanded}}
+ \quad\text{with}\quad
+ W_{\rm twist3}^{\text{collinear}}
+\label{eq:tmd-twist3-overlap}
+\end{equation}
+using the convention adapter in \cref{app:twist3}.  The equality is at the
+level of a matched observable or coefficient expansion, not a bare equality
+between a cutoff moment and a renormalized twist-three function
+\cite{JiQiuVogelsangYuan2006,JiQiuVogelsangYuanSIDIS2006}.
+
+\subsection{Process kernels and the \texorpdfstring{\(W+Y\)}{W+Y} construction}
+
+A process prediction is
+\begin{equation}
+ \dd\sigma_{\mathfrak p}
+ =W_{\mathfrak p}
+  +Y_{\mathfrak p},
+ \qquad
+ Y_{\mathfrak p}
+ =\dd\sigma_{\rm FO}^{\mathfrak p}
+  -\left[W_{\mathfrak p}\right]_{\rm expanded\ to\ FO},
+\label{eq:volume5-wy}
+\end{equation}
+only when \(\mathfrak f_{\rm status}\) permits the factorized
+\(W_{\mathfrak p}\).  A high-\(q_T\) discrepancy may not be absorbed by
+retuning the microscopic rescattering phase.
+
+\subsection{No-double-counting square}
+
+The complete handoff must make the following square commute to the stated
+accuracy:
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ W_{\micro,\unsub}^{[\gamma]}
+ \arrow[r,"\text{soft/rapidity subtraction}"]
+ \arrow[d,"\text{strict expansion}"']
+ & W_{\micro,\subtr}^{[\gamma]}
+ \arrow[d,"\cZ_{\LF\to\TMD}"]
+ \\
+ W_{\rm FO,\micro}^{[\gamma]}
+ \arrow[r,"\text{overlap subtraction}"']
+ & W_{\TMD}^{[\gamma]}\big|_{\rm expanded}
+\end{tikzcd}
+\label{eq:no-double-counting-square}
+\end{equation}
+Failure identifies a missing matching term, regulator mismatch, or duplicate
+soft region.  It is not an uncertainty band.
+
+\section{Staged implementation program}
+\label{sec:stages}
+
+\subsection{Relation to the current repository migration}
+
+C2 migrates the accepted phenomenological boundary to native typed reductions
+and an enforceable provenance graph.  It does not introduce the microscopic
+Hamiltonian or the Wilson dynamics of this volume.  Volume~III therefore
+supplies the normative specification for a later C3 package after the actual
+C2 report fixes repository-level APIs and remaining gaps.
+
+The recommended computational stages are:
+\begin{longtable}{L{0.14\textwidth}L{0.76\textwidth}}
+\toprule
+Package & Scientific and computational content\\
+\midrule
+\endhead
+\texttt{C3A} &
+Native eikonal path segments, pole prescriptions, distribution identities,
+rapidity-regulator identities, and analytic Abelian benchmarks.\\
+\texttt{C3B} &
+Light-front resolvent, intermediate-state and cut objects, one-gluon
+\texttt{RescatteringKernel}, Ward tests, and cut-provenance ledger on a small
+controlled Fock basis.\\
+\texttt{C3C} &
+Quark link-even/link-odd GTMD projections, Sivers and Boer--Mulders projector
+separation, flavor/antiquark propagation, and twist-three moment adapters.\\
+\texttt{C3D} &
+Ordered gluon link pairs, adjoint Wilson vertices, \(f/d\) color projections,
+small-\(x\) specializations, and independent color-channel tests.\\
+\texttt{C3E} &
+Soft/rapidity subtraction contract, phase budget, process/factorization
+registry, Glauber status, and rejection of unsupported process compositions.\\
+\texttt{C3F} &
+Second-order Dyson/Magnus benchmark, observable-level eikonal convergence,
+common-state covariance, sum-rule closure, complete reports, and a frozen
+interface for Volumes IV--V.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Pilot hierarchy}
+
+The first pilot should use the smallest state that can test the physics:
+\begin{equation}
+ \Hil_{\rm pilot}
+ =\Hil_{\rm active+spectator}
+  \oplus\Hil_{\rm active+spectator+g},
+\label{eq:pilot-hilbert-space}
+\end{equation}
+with at least two OAM blocks.  It must reproduce the one-gluon benchmark,
+future/past reversal, a nonzero Sivers-like interference, and a distinct
+Boer--Mulders-like projection.  Only after these pass should the engine be
+connected to the full Volume~I nucleon state.
+
+For gluons, the first pilot must contain enough color structure to distinguish
+\(f\) and \(d\), not merely an Abelian adjoint label.  A calculation that
+produces one generic ``gluon T-odd'' array does not satisfy C3D.
+
+\subsection{Calibration and prediction split}
+
+A useful first inference program may calibrate a restricted common
+rescattering sector to selected quark Sivers information, while withholding:
+\begin{itemize}
+\item Boer--Mulders data or moments;
+\item flavor combinations not directly fitted;
+\item one or both gluon color sectors;
+\item path-dependent OAM or torque observables;
+\item tensor-polarized nuclear projections in Volume~IV.
+\end{itemize}
+The withheld quantities count as predictions only when no independent TMD-
+specific normalization or width is introduced after calibration.
+
+\section{Acceptance criteria and scientific status}
+\label{sec:acceptance}
+
+\subsection{Completion criteria for the Volume III pilot}
+
+The dynamical Wilson-line pilot is complete only when all of the following
+hold:
+\begin{enumerate}
+\item The bare path, endpoint fibers, representation, staple orientation,
+      transverse closure, and inverse are explicit and tested.
+\item Every eikonal and light-front energy denominator has a derived pole
+      prescription and cut provenance.
+\item The one-gluon phase is reproduced from an analytic benchmark and an
+      explicit intermediate-state cut.
+\item Ward identities close after all required spectator, constrained-field,
+      and transverse-link attachments are included.
+\item Setting the gauge coupling, eikonal kernel, or required OAM block to zero
+      removes the corresponding naive-\(T\)-odd projection.
+\item Future/past reversal is exact after the full antiunitary adapter, before
+      and after soft subtraction and evolution.
+\item Sivers and Boer--Mulders are different operator projections of a common
+      rescattering kernel and are not linked by an imposed proportionality.
+\item Positive-\(x\) antiquark and all quark flavor identities survive the
+      calculation.
+\item Gluon correlators retain ordered links and independent \(f\)- and
+      \(d\)-type color contractions.
+\item The phase budget closes and the microscopic/soft overlap is subtracted
+      exactly once.
+\item Dyson/Magnus and eikonal-order convergence are reported for each claimed
+      observable family.
+\item The process registry rejects a known color-entangled factorization
+      pattern and propagates status into every allowed prediction.
+\item The transverse-momentum sum-rule residual, endpoint estimate, and
+      matching residual are reported from a common state.
+\item All regulator, basis, Fock, Wilson-order, rapidity, and numerical
+      uncertainties remain separate axes.
+\item At least one observable family not used to calibrate the common phase is
+      successfully predicted.
+\end{enumerate}
+
+\subsection{What completion does and does not establish}
+
+Passing these criteria establishes a controlled dynamical rescattering model
+within the declared regulated Hamiltonian, Fock basis, Wilson order, and TMD
+matching route.  It does not establish:
+\begin{itemize}
+\item an all-orders factorization theorem for every process;
+\item exact continuum QCD;
+\item convergence of the later spin-1 nuclear expansion;
+\item a universal relation among all T-odd functions;
+\item a universal gluon \(f/d\) mixture;
+\item the absence of higher-twist or Glauber corrections outside the declared
+      process and kinematics.
+\end{itemize}
+
+\subsection{Recommended formal foundation}
+
+The adopted Volume~III object is
+\begin{quote}
+\emph{a gauge-covariant, path- and process-resolved operator-valued
+rescattering kernel acting on the common regulated light-front state, with
+explicit eikonal and light-front cuts, independent quark/gluon color and spin
+projections, matched soft/rapidity subtraction, controlled Wilson-order
+convergence, and fail-closed factorization status.}
+\end{quote}
+Its value is not that Wilson-line terminology creates a phase.  Its value is
+that the phase must be generated by a specified gauge interaction and cut,
+propagate coherently across all operator projections, and survive every
+matching and process step without losing its origin.
+
+\appendix
+
+\section{Distribution identities and sign audit}
+\label{app:distributions}
+
+\subsection{Sokhotski--Plemelj convention}
+
+For \(\varphi\in C_c^\infty(\mathbb R)\),
+\begin{equation}
+ \lim_{\epsilon\to0^+}
+ \int_{-\infty}^{\infty}\dd x\,
+ \frac{\varphi(x)}{x\pm i\epsilon}
+ =\PV\int_{-\infty}^{\infty}\dd x\,
+ \frac{\varphi(x)}{x}
+ \mp i\pi\varphi(0).
+\label{eq:sokhotski-plemelj}
+\end{equation}
+Thus
+\begin{equation}
+ \frac1{x-i0\eta}
+ =\PV\frac1x+i\eta\pi\delta(x).
+\label{eq:sokhotski-eta}
+\end{equation}
+This fixes \cref{eq:eikonal-distribution-identity}.
+
+\subsection{Semi-infinite Fourier integral}
+
+For \(\epsilon>0\),
+\begin{align}
+ I_\eta(x;\epsilon)
+ &=\int_0^\infty\dd\lambda\,
+   \eta e^{-i\eta\lambda x-\epsilon\lambda}
+ =\frac{\eta}{\epsilon+i\eta x}
+ =-\frac{i}{x-i\eta\epsilon}.
+\label{eq:semi-infinite-regulated}
+\end{align}
+Taking \(\epsilon\to0^+\) yields
+\begin{equation}
+ I_\eta(x)
+ =-i\PV\frac1x+\eta\pi\delta(x).
+\label{eq:semi-infinite-pv-delta}
+\end{equation}
+Multiplication by the Wilson exponent \(-ig\) gives a convention-dependent
+real/imaginary assignment.  The invariant audit is the sign change of the
+discontinuity under \(\eta\to-\eta\), after all common factors are included.
+
+\subsection{Momentum-flow conversion}
+
+If the gluon momentum is redefined \(\ell\to-\ell\), then
+\begin{equation}
+ \frac{1}{v\cdot\ell-i0\eta}
+ \longrightarrow
+ -\frac{1}{v\cdot\ell+i0\eta}.
+\label{eq:momentum-flow-pole}
+\end{equation}
+The extra minus sign combines with the vertex and momentum-routing
+conventions.  The software may convert between routings only through an
+adapter that transforms the numerator, color ordering, and cut identity as
+well as the denominator.
+
+\section{SU(\texorpdfstring{\(N_c\)}{Nc}) color dictionary}
+\label{app:color}
+
+Use
+\begin{equation}
+ \Tr(t^at^b)=T_F\delta^{ab},
+ \qquad T_F=\frac12,
+\label{eq:generator-normalization}
+\end{equation}
+with
+\begin{equation}
+ [t^a,t^b]=if^{abc}t^c,
+ \qquad
+ \{t^a,t^b\}=\frac1{N_c}\delta^{ab}\bbone+d^{abc}t^c.
+\label{eq:fd-definitions}
+\end{equation}
+The standard contractions are
+\begin{align}
+ f^{amn}f^{bmn}&=N_c\delta^{ab},
+\label{eq:f-contraction}\\
+ d^{amn}d^{bmn}&=\frac{N_c^2-4}{N_c}\delta^{ab},
+\label{eq:d-contraction}\\
+ f^{amn}d^{bmn}&=0.
+\label{eq:fd-contraction-orthogonality}
+\end{align}
+Consequently,
+\begin{align}
+ f^{abc}f^{abc}&=N_c(N_c^2-1),
+\label{eq:f-norm}\\
+ d^{abc}d^{abc}&=\frac{(N_c^2-4)(N_c^2-1)}{N_c}.
+\label{eq:d-norm}
+\end{align}
+For \(N_c=3\), these norms are \(24\) and \(40/3\), respectively.
+Normalized projectors can be defined as
+\begin{align}
+ (P_f)^{abc}
+ &=\frac{if^{abc}}{\sqrt{N_c(N_c^2-1)}},
+\notag\\
+ (P_d)^{abc}
+ &=\sqrt{\frac{N_c}{(N_c^2-4)(N_c^2-1)}}\,d^{abc}.
+\label{eq:normalized-fd-projectors}
+\end{align}
+The factor of \(i\) is part of the convention for the antisymmetric color
+channel and must be included in Hermiticity and time-reversal adapters.
+
+\section{Light-front cut ledger}
+\label{app:cuts}
+
+For a term with denominators \(D_j=\Delta E_j+i0\sigma_j\), define a cut
+record
+\begin{equation}
+\begin{aligned}
+ \mathfrak c=\bigl(&
+ \{j_1,\ldots,j_m\},\{\Delta E_{j_r}=0\},\{\sigma_{j_r}\},
+ \text{intermediate states},\\
+ &\text{phase-space Jacobian},\text{source graph/path word}\bigr).
+\end{aligned}
+\label{eq:cut-record}
+\end{equation}
+The discontinuity generated by cutting one denominator is
+\begin{equation}
+ \Disc_{D_j}
+ \prod_{r}\frac1{D_r}
+ =-2\pi i\sigma_j\delta(\Delta E_j)
+  \prod_{r\ne j}\frac1{\Delta E_r+i0\sigma_r}.
+\label{eq:single-cut-product}
+\end{equation}
+Multiple cuts are generated by repeated discontinuities with the appropriate
+combinatorics and ordering.  The ledger canonicalizes the physical cut set
+without erasing graph or path provenance.  A cut represented by a soft
+factor and by an explicit microscopic graph is marked as an overlap relation,
+not as two additive contributions.
+
+The following fields are mandatory:
+\begin{longtable}{L{0.28\textwidth}L{0.62\textwidth}}
+\toprule
+Field & Meaning\\
+\midrule
+\endhead
+\texttt{cut\_source} & \texttt{EIKONAL\_POLE},
+\texttt{LF\_ENERGY}, \texttt{CONSTRAINED\_FIELD},
+\texttt{SOFT\_OVERLAP}, or another registered source.\\
+\texttt{support\_equations} & Equations defining the on-shell or pole
+surface.\\
+\texttt{state\_ids} & Complete intermediate Fock/basis states on the cut.\\
+\texttt{jacobian} & Measure induced on the cut surface.\\
+\texttt{orientation} & Future/past and momentum-flow convention.\\
+\texttt{color\_word} & Ordered generators or invariant tensor.\\
+\texttt{overlap\_group} & Identifier joining alternative representations of
+the same physical support.\\
+\texttt{status} & Included, subtracted, benchmark-only, or omitted with an
+error estimate.\\
+\bottomrule
+\end{longtable}
+
+\section{Twist-three moment adapter}
+\label{app:twist3}
+
+\subsection{Quark Sivers moment}
+
+Define the rank-one transverse moment
+\begin{equation}
+ f_{1T}^{\perp(1)q[\gamma]}(x;\mu)
+ =\int\dd^2\kT\,
+ \frac{k_T^2}{2M^2}
+ f_{1T}^{\perp q[\gamma]}(x,k_T^2;\mu),
+\label{eq:sivers-first-moment}
+\end{equation}
+with the understanding that the integral requires ultraviolet
+renormalization or a regulated \(b\)-space derivative.  A convention adapter
+defines the diagonal Qiu--Sterman function by
+\begin{equation}
+ T_F^q(x,x;\mu)
+ =\sigma_{\rm QS}
+  2M\,f_{1T}^{\perp(1)q[\gamma_+]}(x;\mu),
+\qquad
+ \sigma_{\rm QS}\in\{+1,-1\},
+\label{eq:qiu-sterman-adapter}
+\end{equation}
+where \(\sigma_{\rm QS}\) stores the Fourier, epsilon-tensor, Wilson-link,
+and correlator conventions.  It is never inferred from a dataset name.
+
+The TMD and twist-three descriptions overlap in the perturbative tail, but
+\cref{eq:qiu-sterman-adapter} is not applied to an unrenormalized cutoff
+moment.  The matching order and subtraction scheme are part of the adapter.
+
+\subsection{Boer--Mulders and chiral-odd twist three}
+
+The Boer--Mulders first moment similarly matches a chiral-odd quark--gluon
+correlator,
+\begin{equation}
+ h_1^{\perp(1)q[\gamma]}
+ \xleftrightarrow{\ \cZ_{\rm BM}^{\rm twist3}\ }
+ T_F^{(\sigma)q},
+\label{eq:boer-mulders-twist3}
+\end{equation}
+with a different spin projector and matching kernel from
+\cref{eq:qiu-sterman-adapter}.  The two twist-three functions are not related
+by the common eikonal interaction alone.
+
+\subsection{Tri-gluon channels}
+
+The two gluonic-pole color contractions define independent tri-gluon
+correlators,
+\begin{equation}
+ T_G^{(f)}(x,x;\mu),
+ \qquad
+ T_G^{(d)}(x,x;\mu),
+\label{eq:tri-gluon-functions}
+\end{equation}
+with separate convention and normalization adapters.  A process may select
+\(C_f^{\mathfrak p}T_G^{(f)}+C_d^{\mathfrak p}T_G^{(d)}\), but the parent
+store never replaces the pair by one universal function.
+
+\section{Machine-readable schemas}
+\label{app:schemas}
+
+\subsection{Rescattering-kernel record}
+
+A minimal JSON-like schema is
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume3.rescattering_kernel.v1",
+  "source_operator_id": "...",
+  "source_sector": "...",
+  "target_sector": "...",
+  "wilson_path_id": "...",
+  "pole_prescriptions": ["..."],
+  "intermediate_state_ids": ["..."],
+  "cut_ids": ["..."],
+  "color_contraction_id": "...",
+  "wilson_order": 1,
+  "series_representation": "DYSON_STRICT",
+  "uv_regulator": "...",
+  "rapidity_regulator": "...",
+  "soft_contract_id": "...",
+  "parameter_member": "...",
+  "provenance_node": "..."
+}
+\end{verbatim}
+
+\subsection{Process-link record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume3.process_link_map.v1",
+  "process_id": "...",
+  "observable_id": "...",
+  "power_accuracy": "LEADING_POWER",
+  "perturbative_order": "...",
+  "quark_path_id": "...",
+  "gluon_link_pair_id": "...",
+  "f_weight": "...",
+  "d_weight": "...",
+  "factorization_status": "ESTABLISHED|CONDITIONAL|EXPLORATORY|BROKEN|UNASSESSED",
+  "factorization_reference": "...",
+  "glauber_status": "...",
+  "allowed": true
+}
+\end{verbatim}
+
+\subsection{Phase-budget record}
+
+\begin{verbatim}
+{
+  "schema": "deuteron_wigner.volume3.phase_budget.v1",
+  "operator_id": "...",
+  "microscopic_wilson_terms": ["..."],
+  "intermediate_state_terms": ["..."],
+  "constrained_field_terms": ["..."],
+  "transverse_link_terms": ["..."],
+  "soft_overlap_terms": ["..."],
+  "matching_terms": ["..."],
+  "excluded_duplicates": ["..."],
+  "closure_residual": 0.0,
+  "tolerance": 0.0,
+  "status": "PASS|FAIL"
+}
+\end{verbatim}
+
+\section{Compact acceptance checklist}
+\label{app:checklist}
+
+Before any Volume~III output is used in a fit or nuclear calculation, answer:
+\begin{enumerate}
+\item Is the path geometry complete, including transverse closure?
+\item Is every pole sign derived from the same Fourier and momentum-flow
+      convention?
+\item Can every imaginary contribution be traced to a cut?
+\item Are Ward and color-singlet tests closed at the retained truncation?
+\item Does zero rescattering remove the claimed T-odd projection?
+\item Does the full antiunitary adapter give exact future/past reversal?
+\item Are Sivers and Boer--Mulders separate projectors?
+\item Are quark flavors and antiquarks explicit?
+\item Are gluon link order and \(f/d\) color independent?
+\item Is the soft/rapidity overlap subtracted exactly once?
+\item Are Wilson-order and regulator convergence documented?
+\item Does the process have an admissible factorization status?
+\item Are twist-three moments matched rather than equated to bare cutoff
+      integrals?
+\item Are sum-rule and phase-budget residuals reported?
+\item Is the complete provenance manifest attached?
+\end{enumerate}
+A negative answer blocks authoritative use and identifies the next formal or
+computational task.
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{BrodskyHwangSchmidt2002}
+S.~J.~Brodsky, D.~S.~Hwang, and I.~Schmidt,
+``Final-state interactions and single-spin asymmetries in semi-inclusive deep
+inelastic scattering,''
+Phys.\ Lett.\ B \textbf{530}, 99 (2002), arXiv:hep-ph/0201296.
+
+\bibitem{Collins2002}
+J.~C.~Collins,
+``Leading-twist single-transverse-spin asymmetries: Drell--Yan and deep
+inelastic scattering,''
+Phys.\ Lett.\ B \textbf{536}, 43 (2002), arXiv:hep-ph/0204004.
+
+\bibitem{BelitskyJiYuan2003}
+A.~V.~Belitsky, X.~Ji, and F.~Yuan,
+``Final-state interactions and gauge-invariant parton distributions,''
+Nucl.\ Phys.\ B \textbf{656}, 165 (2003), arXiv:hep-ph/0208038.
+
+\bibitem{BoerMuldersPijlman2003}
+D.~Boer, P.~J.~Mulders, and F.~Pijlman,
+``Universality of T-odd effects in single spin and azimuthal asymmetries,''
+Nucl.\ Phys.\ B \textbf{667}, 201 (2003), arXiv:hep-ph/0303034.
+
+\bibitem{BomhofMuldersPijlman2004}
+C.~J.~Bomhof, P.~J.~Mulders, and F.~Pijlman,
+``Gauge link structure in quark--quark correlators in hard processes,''
+Phys.\ Lett.\ B \textbf{596}, 277 (2004), arXiv:hep-ph/0406099.
+
+\bibitem{JiMaYuan2004}
+X.~Ji, J.-P.~Ma, and F.~Yuan,
+``QCD factorization for semi-inclusive deep-inelastic scattering at low
+transverse momentum,''
+Phys.\ Rev.\ D \textbf{71}, 034005 (2005), arXiv:hep-ph/0404183.
+
+\bibitem{JiMaYuanSpin2004}
+X.~Ji, J.-P.~Ma, and F.~Yuan,
+``QCD factorization for spin-dependent cross sections in DIS and Drell--Yan
+processes at low transverse momentum,''
+Phys.\ Lett.\ B \textbf{597}, 299--308 (2004), arXiv:hep-ph/0405085.
+
+\bibitem{JiQiuVogelsangYuan2006}
+X.~Ji, J.-W.~Qiu, W.~Vogelsang, and F.~Yuan,
+``A unified picture for single transverse-spin asymmetries in hard
+processes,''
+Phys.\ Rev.\ Lett.\ \textbf{97}, 082002 (2006), arXiv:hep-ph/0602239.
+
+\bibitem{JiQiuVogelsangYuanSIDIS2006}
+X.~Ji, J.-W.~Qiu, W.~Vogelsang, and F.~Yuan,
+``Single transverse-spin asymmetry in semi-inclusive deep inelastic
+scattering,''
+Phys.\ Lett.\ B \textbf{638}, 178--186 (2006), arXiv:hep-ph/0604128.
+
+\bibitem{Meissner2009}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-\(\tfrac12\) hadron,''
+JHEP \textbf{08}, 056 (2009), arXiv:0906.5323.
+
+\bibitem{EchevarriaGTMD2016}
+M.~G.~Echevarria, A.~Idilbi, K.~Kanazawa, C.~Lorc\'e, A.~Metz,
+B.~Pasquini, and M.~Schlegel,
+``Proper definition and evolution of generalized transverse momentum
+distributions,''
+Phys.\ Lett.\ B \textbf{759}, 336--341 (2016), arXiv:1602.06953.
+
+\bibitem{EchevarriaSoft2016}
+M.~G.~Echevarria, I.~Scimemi, and A.~Vladimirov,
+``Universal transverse momentum dependent soft function at NNLO,''
+Phys.\ Rev.\ D \textbf{93}, 054004 (2016), arXiv:1511.05590.
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{BuffingMulders2011}
+M.~G.~A.~Buffing and P.~J.~Mulders,
+``Gauge links for transverse-momentum-dependent correlators at tree level,''
+JHEP \textbf{07}, 065 (2011), arXiv:1105.4804.
+
+\bibitem{BuffingGluon2013}
+M.~G.~A.~Buffing, A.~Mukherjee, and P.~J.~Mulders,
+``Generalized universality of definite rank gluon transverse momentum
+dependent correlators,''
+Phys.\ Rev.\ D \textbf{88}, 054027 (2013), arXiv:1306.5897.
+
+\bibitem{Boer2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{BoerEchevarriaMuldersZhou2016}
+D.~Boer, M.~G.~Echevarria, P.~J.~Mulders, and J.~Zhou,
+``Single spin asymmetries from a single Wilson loop,''
+Phys.\ Rev.\ Lett.\ \textbf{116}, 122001 (2016), arXiv:1511.03485.
+
+\bibitem{CollinsQiu2007}
+J.~C.~Collins and J.-W.~Qiu,
+``\(k_T\) factorization is violated in production of high-transverse-momentum
+particles in hadron--hadron collisions,''
+Phys.\ Rev.\ D \textbf{75}, 114014 (2007), arXiv:0705.2141.
+
+\bibitem{RogersMulders2010}
+T.~C.~Rogers and P.~J.~Mulders,
+``No generalized TMD-factorization in the hadro-production of high transverse
+momentum hadrons,''
+Phys.\ Rev.\ D \textbf{81}, 094006 (2010), arXiv:1001.2977.
+
+\bibitem{RothsteinStewart2016}
+I.~Z.~Rothstein and I.~W.~Stewart,
+``An effective field theory for forward scattering and factorization
+violation,''
+JHEP \textbf{08}, 025 (2016), arXiv:1601.04695.
+
+\bibitem{BuffingMuldersColor2014}
+M.~G.~A.~Buffing and P.~J.~Mulders,
+``Color entanglement for azimuthal asymmetries in the Drell--Yan process,''
+Phys.\ Rev.\ Lett.\ \textbf{112}, 092002 (2014), arXiv:1309.4681.
+
+\bibitem{LorcePasquini2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys.\ Rev.\ D \textbf{84}, 014015 (2011), arXiv:1106.0139.
+
+\bibitem{Hatta2012}
+Y.~Hatta,
+``Notes on the orbital angular momentum of quarks in the nucleon,''
+Phys.\ Lett.\ B \textbf{708}, 186 (2012), arXiv:1111.3547.
+
+\bibitem{Burkardt2013}
+M.~Burkardt,
+``Parton orbital angular momentum and final state interactions,''
+Phys.\ Rev.\ D \textbf{88}, 014014 (2013), arXiv:1205.2916.
+
+\bibitem{Burkardt2004}
+M.~Burkardt,
+``Sivers mechanism for gluons,''
+Phys.\ Rev.\ D \textbf{69}, 091501 (2004), arXiv:hep-ph/0402014.
+
+\bibitem{GoekeMeissnerMetzSchlegel2006}
+K.~Goeke, S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Checking the Burkardt sum rule for the Sivers function by model
+calculations,''
+Phys.\ Lett.\ B \textbf{637}, 241 (2006), arXiv:hep-ph/0601133.
+
+\bibitem{Magnus1954}
+W.~Magnus,
+``On the exponential solution of differential equations for a linear
+operator,''
+Commun.\ Pure Appl.\ Math.\ \textbf{7}, 649 (1954).
+
+\bibitem{Gatheral1983}
+J.~G.~M.~Gatheral,
+``Exponentiation of eikonal cross sections in non-Abelian gauge theories,''
+Phys.\ Lett.\ B \textbf{133}, 90 (1983).
+
+\bibitem{FrenkelTaylor1984}
+J.~Frenkel and J.~C.~Taylor,
+``Non-Abelian eikonal exponentiation,''
+Nucl.\ Phys.\ B \textbf{246}, 231 (1984).
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,31 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "continuum_current_validation",
+  "authority_record": {
+    "Hamiltonian": "H_inst=-g_s^2/2 integral dx dy j_a^+(x) K_Q0(x-y) j_a^+(y)",
+    "Hermitian": true,
+    "Jg": "J_g,a^+(x)=-f^{abc} A_perp^b(x) partial^+ A_perp^c(x)",
+    "Jq": "J_q,a^+(x)=bar(psi)(x) gamma^+ T^a psi(x)",
+    "coupling": "g_s^2 factored",
+    "current": "j_a^+=J_q,a^++J_g,a^+",
+    "kernel": "K_Q0=(1/partial^+)^2 on Q0; finite-cell PV/Q0 prescription inherited C114",
+    "products": [
+      "J_qJ_q",
+      "J_qJ_g",
+      "J_gJ_q",
+      "J_gJ_g"
+    ],
+    "root": "656c4bbda4511abb291c4f434a72669493a7f746eda166a569de6b11407b25ec",
+    "source_id": "C43/C114-GAUSS-LAW-INSTANTANEOUS-CURRENT"
+  },
+  "package_root": "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950",
+  "physical": false,
+  "plan": "C117CURRAMP1-A",
+  "schema": "C266-CONTINUUM_CURRENT-VALIDATION-V1",
+  "status": "C266_C117_EXECUTABLE_CONTINUUM_CURRENT_AND_PARAMETERIZED_PACKET_CAPSULES_READY",
+  "validation": "PASS"
+}

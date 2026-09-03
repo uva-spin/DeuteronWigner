@@ -1,0 +1,7 @@
+# C302/HQCDRIMASSHOLONOMYCOEFF1
+
+Status: C302_C43_HOLONOMY_COEFFICIENT_AUTHORITY_ABSENT_REDUCED_V0_PROJECTION_BENCHMARK_DERIVABLE
+Plan: RIMASSHOLONOMYCOEFF1-C
+Root: fcf212b7cddedaeaeb8d2ea110e8c7e3a79dc7a853e198837200a9933262471a
+
+No C43 coefficient authority exists. C293 V0 is retained only as a derivable reduced-model projection benchmark.

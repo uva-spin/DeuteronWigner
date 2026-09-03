@@ -1,0 +1,51 @@
+{
+  "authority_record": {
+    "conjugate_paired": true,
+    "count": 6,
+    "root": "b47ad3c7299e54324aa12181d620463d619a5e60397d7352bb246b57bb2fe53a",
+    "rows": [
+      {
+        "channel": "1",
+        "domain": "periodic Q sector; kernel excludes zero eigenvalue",
+        "operator": "(partial_minus+i*(+g*v3))^-1",
+        "partner": "2"
+      },
+      {
+        "channel": "2",
+        "domain": "periodic Q sector; kernel excludes zero eigenvalue",
+        "operator": "(partial_minus+i*(-g*v3))^-1",
+        "partner": "1"
+      },
+      {
+        "channel": "4",
+        "domain": "periodic Q sector; kernel excludes zero eigenvalue",
+        "operator": "(partial_minus+i*(+g*v3/2+g*v8))^-1",
+        "partner": "5"
+      },
+      {
+        "channel": "5",
+        "domain": "periodic Q sector; kernel excludes zero eigenvalue",
+        "operator": "(partial_minus+i*(-g*v3/2-g*v8))^-1",
+        "partner": "4"
+      },
+      {
+        "channel": "6",
+        "domain": "periodic Q sector; kernel excludes zero eigenvalue",
+        "operator": "(partial_minus+i*(+g*v3/2-g*v8))^-1",
+        "partner": "7"
+      },
+      {
+        "channel": "7",
+        "domain": "periodic Q sector; kernel excludes zero eigenvalue",
+        "operator": "(partial_minus+i*(-g*v3/2+g*v8))^-1",
+        "partner": "6"
+      }
+    ]
+  },
+  "package_root": "2f7fd3ff7fd8bf4c15db8d135c82f7a378c7f82bc6f0717063db08ce2745a6a9",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINTKERNEL1-B",
+  "schema": "C298-RESOLVENT_KERNEL-CONTRACT-V1",
+  "status": "C298_EXACT_SIX_CHANNEL_SYMBOLIC_CONSTRAINT_KERNEL_READY_RENORMALIZED_MASS_AND_MATRIX_ELEMENTS_MISSING",
+  "validation": "BOUND"
+}

@@ -1,0 +1,47 @@
+{
+  "authority_record": {
+    "C117_coordinates_unchanged": 4,
+    "closed": 0,
+    "conditional": 6,
+    "count": 6,
+    "root": "c9fa5041227d9bd28fb0fae2f0a67a74924c9ad52a7073fd400b86242dda959a",
+    "rows": [
+      {
+        "authority": "C154-C155 standard values; C215 ordered adapters",
+        "slot": "running_coupling_masses",
+        "status": "PARTIAL_FIRST_NONC117_EDGE_SIGNED_MASS_RI_SMOM"
+      },
+      {
+        "authority": "C153-C157",
+        "slot": "common_IR_regulator",
+        "status": "CONDITIONAL_COMMON_IR_NO_PHYSICAL_WINDOW"
+      },
+      {
+        "authority": "C169-C183",
+        "slot": "boundary_holonomy",
+        "status": "CLASSES_CLOSED_PHYSICAL_SELECTION_UNAVAILABLE"
+      },
+      {
+        "authority": "C206",
+        "slot": "non_C117_counterterms",
+        "status": "AFFINE_FAMILY_UNSELECTED_NOT_ZERO"
+      },
+      {
+        "authority": "C158/C161/C213",
+        "slot": "finite_basis_targets",
+        "status": "COMPARISON_CONDITIONAL_NOT_BOUND"
+      },
+      {
+        "authority": "C154/C213",
+        "slot": "joint_covariance",
+        "status": "MARGINAL_INPUTS_JOINT_COVARIANCE_UNAVAILABLE"
+      }
+    ]
+  },
+  "package_root": "6daab8eb3cdc5d6006047c1203e5d68ca9e151e31b3d14df7be4a35611aa01fc",
+  "physical": false,
+  "plan": "NONC117SLOT1-C",
+  "schema": "C275-SLOT_LEDGER-VALIDATION-V1",
+  "status": "C275_NONC117_BUNDLE_REDUCED_RI_SMOM_SIGNED_MASS_ADAPTER_FIRST",
+  "validation": "PASS"
+}

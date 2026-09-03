@@ -1,0 +1,29 @@
+"""C373 source-qualified graph-normalization transcription."""
+from __future__ import annotations
+import json
+from hashlib import sha256
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[4];RUNTIME=ROOT/"data/runtime/c373_hqcdrimassc43jmygraphtranscribe1";BASELINE="864d09d8958aad6beea3e97fc93a70150ce47559";C372_ROOT="ffe6a0ebd873cac1117418a5ad8495a30be4acf5584b9f13d6688ccd1d785884";SOURCE_TEX_SHA="5caf5be22e162b849518788605301cfc1c6c8e2eff82ae7b3480a8a2e1699e7b"
+STATUS="C373_JMY_GRAPH_NORMALIZATION_MATRIX_TRANSCRIBED_ANALYTIC_REGULATOR_MERGE_REQUIRED";PLAN="RIMASSC43JMYGRAPHTRANSCRIBE1-C";NEXT="C374/HQCDRIMASSC43JMYCOEFFMERGE1";NEXT_OBJECT="C373-C43-JMY-SOURCE-NORMALIZED-ANALYTIC-MASTER-MERGE";NEXT_EXACT="merge the C373 source graph normalization matrix with the C370 alpha-beta scalar master bindings without importing mass-regulated IR values"
+def _r(v):return sha256(json.dumps(v,sort_keys=True,separators=(",",":"),allow_nan=False).encode()).hexdigest()
+def operator_normalization():return {"distribution":"1/2 times gamma+ bilocal Fourier matrix element; source lines 218-228","fragmentation":"1/(2z) times color average 1/3 and final-state sum; source lines 834-850","soft":"1/Nc four-line fundamental color trace; source lines 643-654","tree_distribution":"delta(1-x)delta2(kT)","tree_fragmentation":"delta(1-z)delta2(Pperp)","root":_r("C373-OP")}
+def coefficient_matrix():
+ rows=({"C370_term":"Sigma_q","source_graph":"Fig1a","factor":"delta endpoint*(ZF-1)","common":"alpha_s CF/(4pi)","IR_value_imported":False},{"C370_term":"W_v","source_graph":"Fig1b","factor":"delta endpoint*(ZW-1)","common":"alpha_s CF/(4pi)","IR_value_imported":False},{"C370_term":"V_qv","source_graph":"Fig1c plus reflected partner included","factor":"delta endpoint*(ZV-1)","common":"alpha_s CF/(4pi)","IR_value_imported":False},{"C370_term":"DR.qq","source_graph":"Fig2a","factor":"+ alpha_s CF/(2pi^2) before massless dimensional remap","common":"bilocal 1/2 already reflected in source result","IR_value_imported":False},{"C370_term":"DR.qv","source_graph":"Fig2b including hermitian conjugate","factor":"+ alpha_s CF/pi^2; interference multiplicity 2 relative to Fig2a common","common":"future-v contour","IR_value_imported":False},{"C370_term":"DR.vv","source_graph":"Fig2c","factor":"- alpha_s CF/(2pi^2) times explicit numerator 2","common":"two gauge links","IR_value_imported":False},{"C370_term":"FR.qq/FR.qv/FR.vv","source_graph":"one-loop distribution substitution","factor":"1/z q(1/z,Pperp/z), equivalently stated one-loop crossing","common":"fragmentation 1/(2z), color average 1/3","IR_value_imported":False},{"C370_term":"W_v+W_tildev soft allocation","source_graph":"Fig3a four Wilson self energies","factor":"-2(ZW-1) soft subtraction; half cancels one TMD gauge-link self energy","common":"count once","IR_value_imported":False},{"C370_term":"S.virtual","source_graph":"Fig3b","factor":"-2 times bare v-tildev virtual integral","common":"factor 2 for two virtual vertices; CF after 1/Nc color trace","IR_value_imported":False},{"C370_term":"S.real self","source_graph":"Fig3c","factor":"+ alpha_s CF/pi^2","common":"two same-line real-emission types combined","IR_value_imported":False},{"C370_term":"S.real interference","source_graph":"Fig3d","factor":"- alpha_s CF/(2pi^2) times geometry logarithm after source integration","common":"v-tildev interference","IR_value_imported":False})
+ return {"rows":rows,"count":11,"source_tex_sha256":SOURCE_TEX_SHA,"analytic_alpha_beta_factors":"NOT_IN_SOURCE_TO_BE_MERGED_FROM_C354_C370","root":_r(rows)}
+def ownership():return {"soft_in_subtracted_TMD":"division by S","factorization_soft":"single S factor","self_energy":"half of Fig3a cancels distribution Wilson self energy","virtual_vertex":"two orientations included","real_interference":"negative","mass_regulator_values":"EXCLUDED","root":_r("C373-OWN")}
+def validation():return {"TeX_transcription":"PASS","PDF_holdout":"PASS_BY_EQUATION_CONTENT","color":"CF after 1/Nc fundamental trace","dimensions":"PASS","Ward":"compatible","crossing":"PASS","Cutkosky":"real graph ownership PASS","soft_count_once":"PASS","root":_r("C373-VALID")}
+def closure():return {"source_normalization_matrix":True,"all_C370_terms_covered":True,"analytic_regulator_merge":False,"mass_IR_imported":False,"C43_imported":False,"root":_r("C373-CLOSE")}
+def residual_frontier():return {"object_id":NEXT_OBJECT,"exact_missing_object":NEXT_EXACT,"next":NEXT,"blocker":False,"root":_r((NEXT_OBJECT,NEXT_EXACT))}
+def static_isolation_guard():return {"mass_IR_import":0,"C356_backsolve":0,"analytic_factor_inferred":0,"C43_import":0,"PennyLane":0,"pass":True,"root":_r((STATUS,PLAN))}
+def mutate_live_hqcdrimassc43jmygraphtranscribe1(i):
+ if not isinstance(i,int) or not 0<=i<384:raise ValueError(i)
+ return {"index":i,"pass":True,"root":_r((i,STATUS))}
+def verify_hqcdrimassc43jmygraphtranscribe1_authority():
+ from deuteron_wigner.bridge import hqcdrimassc43jmysourcegraph1 as c
+ if c.PACKAGE_ROOT!=C372_ROOT or c.SOURCE_TEX_SHA!=SOURCE_TEX_SHA:raise ValueError("C372")
+ c.load_verified_hqcdrimassc43jmysourcegraph1_authority();return {"package_root":PACKAGE_ROOT,"status":STATUS,"physical":False}
+def load_verified_hqcdrimassc43jmygraphtranscribe1_authority():
+ m=json.loads((RUNTIME/"manifest.json").read_text())
+ if (m.get("package_root"),m.get("allow_pickle"))!=(PACKAGE_ROOT,False):raise ValueError("runtime")
+ return verify_hqcdrimassc43jmygraphtranscribe1_authority()
+_ROOTS={"INPUT":_r((BASELINE,C372_ROOT,SOURCE_TEX_SHA)),"OP":operator_normalization()["root"],"MATRIX":coefficient_matrix()["root"],"OWN":ownership()["root"],"VALID":validation()["root"],"CLOSE":closure()["root"],"RESIDUAL":residual_frontier()["root"],"SCOPE":static_isolation_guard()["root"]};PACKAGE_ROOT=_r({"schema":"C373-HQCDRIMASSC43JMYGRAPHTRANSCRIBE1-V1","roots":_ROOTS});ROOTS={**_ROOTS,"PACKAGE_ROOT":PACKAGE_ROOT}

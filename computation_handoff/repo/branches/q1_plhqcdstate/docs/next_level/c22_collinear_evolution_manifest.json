@@ -1,0 +1,26 @@
+{
+  "Q_grid": [
+    1.6,
+    2,
+    3,
+    4,
+    5,
+    10,
+    20,
+    100
+  ],
+  "forward_reverse_residual": 4.1e-12,
+  "helicity_nonsinglet_residual": 2.4e-12,
+  "helicity_singlet_residual": 3.1e-12,
+  "implemented_order": 1,
+  "ll_same_operator_proof": true,
+  "mellin_oracle": "ANALYTIC_ENDPOINT_MOMENTS",
+  "nonsinglet_number_residual": 0.0,
+  "schema_version": "1.0.0",
+  "singlet_momentum_residual": 2.7e-12,
+  "threshold": 4.18,
+  "threshold_residual": 3.4e-12,
+  "transversity_no_gluon_mixing": true,
+  "xspace_mellin_residual": 4.2e-11,
+  "xspace_solver": "INDEPENDENT_QUADRATURE"
+}

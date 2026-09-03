@@ -1,0 +1,7 @@
+# C247/HQCDRIQUARKFIXEDKV2CONTACTCONTRIB1 implementation report
+
+Status: C247_THREE_C112_CONTACT_NUMERATOR_DENOMINATOR_BINDINGS_READY_FULL_RESOLVENT_POLE_DOMAIN_AND_NONC112_V2_INCOMPLETE
+Plan: RIQUARKFIXEDKV2CONTACTCONTRIB1-B
+C247 root: e439c1bcd45ba50dc0134b5d6057fc90741d789b2252eadb271f1bafcf4165c2
+
+Three C112 bindings are ready; full contributions remain unavailable, not zero, pending non-C112 V2 and pole/resolvent closure.

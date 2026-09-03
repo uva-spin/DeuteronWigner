@@ -1,0 +1,38 @@
+{
+  "root": "ba59eb3c3605c3692f7135e9b6d48d4fd8633e4273dc44a68830e4b9fad3c4aa",
+  "rows": [
+    {
+      "capsule_id": "C182-HOLONOMY-CAPSULE-EXTERNAL-AUTHENTICATED",
+      "local_link_closed": true,
+      "missing_is_not_zero": true,
+      "next": "C183/HQCDB0HOLONOMY2",
+      "parent_C181_object": "C181-ORDER-SENSITIVE-SOURCE-SCOPE-EXECUTABLE-LINK-EVALUATION",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "required": [
+        "authenticated C178 transition/holonomy record",
+        "orientation",
+        "cut-side frames",
+        "future/past identity",
+        "PV relation",
+        "explicit matrix or safe matrix-free action"
+      ]
+    },
+    {
+      "capsule_id": "C182-HOLONOMY-CAPSULE-EXTERNAL-AUTHENTICATED",
+      "local_link_closed": true,
+      "missing_is_not_zero": true,
+      "next": "C183/HQCDB0HOLONOMY2",
+      "parent_C181_object": "C181-ORDER-SENSITIVE-SOURCE-SCOPE-EXECUTABLE-LINK-EVALUATION",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required": [
+        "authenticated C178 transition/holonomy record",
+        "orientation",
+        "cut-side frames",
+        "future/past identity",
+        "PV relation",
+        "explicit matrix or safe matrix-free action"
+      ]
+    }
+  ],
+  "schema": "C182-MISSING-LINK-OBJECT-V1"
+}

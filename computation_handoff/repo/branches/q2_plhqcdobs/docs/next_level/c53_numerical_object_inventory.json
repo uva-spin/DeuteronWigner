@@ -1,0 +1,230 @@
+{
+  "deterministic_rebuild": true,
+  "objects": [
+    {
+      "array_sha256": "bef2f7a08b33826e17bdab0b027996f89892f9825c9f09d743d8703281488f4d",
+      "basis_order_hash": "866ecbd4a14d878bcb4866047dbe85010ee07805080c2487bc82fe66811ef506",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "raw_emission_E",
+      "nnz": 17,
+      "runtime_path": "data/runtime/c53_vertex2/raw_emission_E.npy",
+      "shape": [
+        24,
+        3
+      ],
+      "units": "dimensionless"
+    },
+    {
+      "array_sha256": "e401e2e1253b83007a4d89f69634fba0a232a45d8c591e4879a2319b20d8b66b",
+      "basis_order_hash": "866ecbd4a14d878bcb4866047dbe85010ee07805080c2487bc82fe66811ef506",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "triplet_projector_U",
+      "nnz": 97,
+      "runtime_path": "data/runtime/c53_vertex2/triplet_projector_U.npy",
+      "shape": [
+        24,
+        24
+      ],
+      "units": "dimensionless"
+    },
+    {
+      "array_sha256": "e12d8febf75ebc980fe45410458f01f8792f83949383d50524e94a4579ea4f31",
+      "basis_order_hash": "866ecbd4a14d878bcb4866047dbe85010ee07805080c2487bc82fe66811ef506",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "triplet_projector_E",
+      "nnz": 97,
+      "runtime_path": "data/runtime/c53_vertex2/triplet_projector_E.npy",
+      "shape": [
+        24,
+        24
+      ],
+      "units": "dimensionless"
+    },
+    {
+      "array_sha256": "3439e3808a36baa2eb52a817c808b711bd5d1718c5be8c87636bf59a504e12c7",
+      "basis_order_hash": "866ecbd4a14d878bcb4866047dbe85010ee07805080c2487bc82fe66811ef506",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "reduced_intertwiner_C",
+      "nnz": 3,
+      "runtime_path": "data/runtime/c53_vertex2/reduced_intertwiner_C.npy",
+      "shape": [
+        3,
+        3
+      ],
+      "units": "dimensionless"
+    },
+    {
+      "array_sha256": "f4c12b499a1d46a641b0e379fac9edc35b04c35a48833d78a208f0563983b3c7",
+      "basis_order_hash": "866ecbd4a14d878bcb4866047dbe85010ee07805080c2487bc82fe66811ef506",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "phase_map_W",
+      "nnz": 3,
+      "runtime_path": "data/runtime/c53_vertex2/phase_map_W.npy",
+      "shape": [
+        3,
+        3
+      ],
+      "units": "dimensionless"
+    },
+    {
+      "array_sha256": "57e310693f67418b4e349301c10bc5f7a0944c2fe671b7c6c5fea809aa59b783",
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "physical_primitive_K9_2_N8_b0.40",
+      "nnz": 312,
+      "runtime_path": "data/runtime/c53_vertex2/physical_primitive_K9_2_N8_b0.40.npy",
+      "shape": [
+        1344,
+        6
+      ],
+      "units": "GeV; coefficient separate"
+    },
+    {
+      "array_sha256": "5827203eff9867df9e32fcef7e6d7ff9749b1adc7870744be4cf9cf136674c84",
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "physical_diagnostic_m2_K9_2_N8_b0.40",
+      "nnz": 312,
+      "runtime_path": "data/runtime/c53_vertex2/physical_diagnostic_m2_K9_2_N8_b0.40.npy",
+      "shape": [
+        1344,
+        6
+      ],
+      "units": "GeV^2; Pplus=3 diagnostic"
+    },
+    {
+      "array_sha256": "71e2f832f23df09d47778e9ae956853c239bf0d9d26639655fd6e2c71376fc83",
+      "basis_order_hash": "eadf024f0c2caba338b36ab486efb7f5d1009bd74edc5a6e004571ad79fcf452",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "generated_absorption_K9_2_N8_b0.40",
+      "nnz": 312,
+      "runtime_path": "data/runtime/c53_vertex2/generated_absorption_K9_2_N8_b0.40.npy",
+      "shape": [
+        6,
+        1344
+      ],
+      "units": "GeV^2; generated adjoint"
+    },
+    {
+      "array_sha256": "0456fd510a0ccad8584bd42c1ee30cb000323e16de721396bc7eccc40b25660e",
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "physical_primitive_K11_2_N10_b0.45",
+      "nnz": 510,
+      "runtime_path": "data/runtime/c53_vertex2/physical_primitive_K11_2_N10_b0.45.npy",
+      "shape": [
+        2700,
+        6
+      ],
+      "units": "GeV; coefficient separate"
+    },
+    {
+      "array_sha256": "af0c13d2d8eb0b1d59ef8d6e31e24df2ecc0b6d8649973c1dd3f6f2f85658816",
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "physical_diagnostic_m2_K11_2_N10_b0.45",
+      "nnz": 510,
+      "runtime_path": "data/runtime/c53_vertex2/physical_diagnostic_m2_K11_2_N10_b0.45.npy",
+      "shape": [
+        2700,
+        6
+      ],
+      "units": "GeV^2; Pplus=3 diagnostic"
+    },
+    {
+      "array_sha256": "474a6ac156a89748b7dca25081e220d915883ece5581f3976933e980ed09597a",
+      "basis_order_hash": "10f3c672a372e740b424d30752bfe34862c298a042e85d6e03499b1e69c83e7f",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "generated_absorption_K11_2_N10_b0.45",
+      "nnz": 510,
+      "runtime_path": "data/runtime/c53_vertex2/generated_absorption_K11_2_N10_b0.45.npy",
+      "shape": [
+        6,
+        2700
+      ],
+      "units": "GeV^2; generated adjoint"
+    },
+    {
+      "array_sha256": "fcd1f7fe33e3ec3c2472357384fcb10ef620b9681f2f98c3e6a63b65dbb5da59",
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "physical_primitive_K13_2_N12_b0.50",
+      "nnz": 756,
+      "runtime_path": "data/runtime/c53_vertex2/physical_primitive_K13_2_N12_b0.50.npy",
+      "shape": [
+        4752,
+        6
+      ],
+      "units": "GeV; coefficient separate"
+    },
+    {
+      "array_sha256": "bf081b41a2dbe30546b868377e8f823dae500d9f7b2cc1694648eab939d197fe",
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "physical_diagnostic_m2_K13_2_N12_b0.50",
+      "nnz": 756,
+      "runtime_path": "data/runtime/c53_vertex2/physical_diagnostic_m2_K13_2_N12_b0.50.npy",
+      "shape": [
+        4752,
+        6
+      ],
+      "units": "GeV^2; Pplus=3 diagnostic"
+    },
+    {
+      "array_sha256": "d815b09b850239304eac464208069dd1f77ce81cc67cbea6eb817b0c37827bfd",
+      "basis_order_hash": "69640d3083759fffa4efd77cbf1fd8fdb76f4b820a18f3fa7a8864b09e9961cd",
+      "coupling_power": 1,
+      "dtype": "<c16",
+      "expression_hash": "e5984f2373de039664f9221746d3aa6c962dab603e854f434c57ef62f4fd2346",
+      "generator": "python scripts/build_c53_vertex2_artifacts.py",
+      "name": "generated_absorption_K13_2_N12_b0.50",
+      "nnz": 756,
+      "runtime_path": "data/runtime/c53_vertex2/generated_absorption_K13_2_N12_b0.50.npy",
+      "shape": [
+        6,
+        4752
+      ],
+      "units": "GeV^2; generated adjoint"
+    }
+  ],
+  "status": "PASS"
+}

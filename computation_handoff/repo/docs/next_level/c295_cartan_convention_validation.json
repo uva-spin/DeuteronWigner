@@ -1,0 +1,21 @@
+{
+  "authority_record": {
+    "H": "theta3*T3+theta8*T8",
+    "constraint": "phi1+phi2+phi3=0 mod 2pi",
+    "eigenphases": [
+      "phi1=theta3/2+theta8/(2sqrt3)",
+      "phi2=-theta3/2+theta8/(2sqrt3)",
+      "phi3=-theta8/sqrt3"
+    ],
+    "full_torus": "phi1,phi2 in [0,2pi); phi3=-phi1-phi2",
+    "generators": "C43 Hermitian T_a=lambda_a/2; Tr(TaTb)=delta_ab/2",
+    "root": "609b8e2f8c9cdcfd935f2f4d2b458f2ea1d4f172f221ca6a52e5821c3629fcb6",
+    "weyl_group": "S3 order 6"
+  },
+  "package_root": "531db753fa2ce5210ef618a43c2fb87db877330b87623d39e404fed657e8d9ca",
+  "physical": false,
+  "plan": "RIMASSSU3MEASUREDERIVE1-A",
+  "schema": "C295-CARTAN_CONVENTION-VALIDATION-V1",
+  "status": "C295_NORMALIZED_SU3_ZERO_MODE_FP_HOLONOMY_MEASURE_DERIVED_C43_FINITE_VOLUME_ACTION_ADAPTER_MISSING",
+  "validation": "PASS"
+}

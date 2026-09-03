@@ -1,0 +1,533 @@
+{
+  "generic_substitution": false,
+  "records": [
+    {
+      "correlated_directions": 0,
+      "dataset": "CDF1",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.039
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "CDF2",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.058
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "D01",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.044
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "D02",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.0
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 3,
+      "dataset": "D02m",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.0
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-00y04",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-04y08",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-08y12",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-12y16",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-16y20",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-20y24",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-46Q66",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A8-116Q150",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.028
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "A13-norm",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "CMS7",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.0
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "CMS8",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.0
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "CMS13-00y04",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.025
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "CMS13-04y08",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.025
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "CMS13-08y12",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.025
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "CMS13-12y16",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.025
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "CMS13-16y24",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.025
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "CMS13_dQ_106to170",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.012
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "CMS13_dQ_170to350",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.012
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "CMS13_dQ_350to1000",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.012
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 2,
+      "dataset": "LHCb7",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.0
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 2,
+      "dataset": "LHCb8",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.0
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "LHCb13_dy(2021)",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.02
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "PHE200",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.12
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "STAR510",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.085
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "E228-200",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.25
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "E228-300",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.25
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "E228-400",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.25
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "E772",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.1
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 1
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "E605",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 1,
+      "normalization_errors": [
+        0.15
+      ],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "D0run1-W",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 3
+    },
+    {
+      "correlated_directions": 0,
+      "dataset": "CDFrun1-W",
+      "is_normalized": true,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.p.vmsub.zxpt.pi+",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.p.vmsub.zxpt.pi-",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.d.vmsub.zxpt.pi+",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.d.vmsub.zxpt.pi-",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.p.vmsub.zxpt.k+",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.p.vmsub.zxpt.k-",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.d.vmsub.zxpt.k+",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "hermes.d.vmsub.zxpt.k-",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "compass.d.h+",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    },
+    {
+      "correlated_directions": 1,
+      "dataset": "compass.d.h-",
+      "is_normalized": false,
+      "native_representation": "V=diag(sum uncorr^2)+sigma_corr sigma_corr^T; norm columns=xSec*normErr",
+      "normalization_directions": 0,
+      "normalization_errors": [],
+      "profile_status": "PROFILED_BY_NATIVE_A_MATRIX",
+      "uncorrelated_directions": 2
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source": "DataProcessor/DataSet.py"
+}

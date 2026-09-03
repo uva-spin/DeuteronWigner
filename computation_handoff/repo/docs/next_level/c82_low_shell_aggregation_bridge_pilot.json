@@ -1,0 +1,68 @@
+{
+  "kernel_values_multiplied": false,
+  "records": {
+    "K11_2_N10_b0.45": {
+      "coefficient": {
+        "ancestry": {
+          "input_color": "product:cprime=0:a=2|triplet:c=0",
+          "input_raw": "C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b",
+          "output_color": "product:cprime=0:a=2|triplet:c=0",
+          "output_raw": "C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b"
+        },
+        "bound": 3.596454913733591e-16,
+        "expression": "conj(J_bra*U3_bra) * (J_ket*U3_ket)",
+        "factor_ownership": "C82:embedding/metric/conjugation only; C80 owns longitudinal/spin/color/HO/normalization/g_s2",
+        "leaf_id": "C82:LEAF:4cc72e017f7830bad4e988a250f87157a9f58c07698cb895bc444ff5e1d68bba",
+        "status": "NONZERO_CERTIFIED_PROJECTED_COEFFICIENT_INTERVAL_EXCLUDES_ZERO",
+        "value": [
+          0.12551652892561985,
+          0.0
+        ]
+      },
+      "coordinate": "ContactKernelCoordinate(resolution='K11_2_N10_b0.45', q_out_raw_id='C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b', g_out_raw_id='C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b', q_in_raw_id='C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b', g_in_raw_id='C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b', q_out=(9, 2, 0, 0, 1), g_out=(1, 1, 0, -2, 1), q_in=(9, 2, 0, 0, 1), g_in=(1, 1, 0, -2, 1), c_out=0, a_out=2, c_in=0, a_in=2, source_order=('b_dagger', 'a_dagger', 'a', 'b'), zero_mode_policy='C43_PV_Q0_EXCLUDE_ZERO')",
+      "leaf": "ContactWitnessLeaf(resolution='K11_2_N10_b0.45', bra_id='C78:QG:K11_2_N10_b0.45:KIN=27:TRIP=0', ket_id='C78:QG:K11_2_N10_b0.45:KIN=27:TRIP=0', witness_id='C78:W:d20f2a51031c45afaef5ae1cf5de5fa274689d640583b7f100ab070e1a6b6deb', intermediate_q_id='C78:Q:K11_2_N10_b0.45:H=-1:C=0', output_raw_id='C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b', input_raw_id='C77:RAW:K11_2_N10_b0.45:7cb91d9543019a03baf2557e4768943e0151f40a0f0fdd11432a891b369fb29b', output_color_record='product:cprime=0:a=2|triplet:c=0', input_color_record='product:cprime=0:a=2|triplet:c=0', hq_out=1, hg_out=1, hq_in=1, hg_in=1, source_order=('b_dagger', 'a_dagger', 'a', 'b'))"
+    },
+    "K13_2_N12_b0.50": {
+      "coefficient": {
+        "ancestry": {
+          "input_color": "product:cprime=0:a=2|triplet:c=0",
+          "input_raw": "C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0",
+          "output_color": "product:cprime=0:a=2|triplet:c=0",
+          "output_raw": "C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0"
+        },
+        "bound": 3.810438456753818e-16,
+        "expression": "conj(J_bra*U3_bra) * (J_ket*U3_ket)",
+        "factor_ownership": "C82:embedding/metric/conjugation only; C80 owns longitudinal/spin/color/HO/normalization/g_s2",
+        "leaf_id": "C82:LEAF:35f4372f5fddc546dee0a3cc7b64e7ad709d4cddcaeba70c844a5fe95ac4fbc5",
+        "status": "NONZERO_CERTIFIED_PROJECTED_COEFFICIENT_INTERVAL_EXCLUDES_ZERO",
+        "value": [
+          0.13424556213017752,
+          0.0
+        ]
+      },
+      "coordinate": "ContactKernelCoordinate(resolution='K13_2_N12_b0.50', q_out_raw_id='C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0', g_out_raw_id='C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0', q_in_raw_id='C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0', g_in_raw_id='C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0', q_out=(11, 2, 0, 0, 1), g_out=(1, 1, 0, -2, 1), q_in=(11, 2, 0, 0, 1), g_in=(1, 1, 0, -2, 1), c_out=0, a_out=2, c_in=0, a_in=2, source_order=('b_dagger', 'a_dagger', 'a', 'b'), zero_mode_policy='C43_PV_Q0_EXCLUDE_ZERO')",
+      "leaf": "ContactWitnessLeaf(resolution='K13_2_N12_b0.50', bra_id='C78:QG:K13_2_N12_b0.50:KIN=35:TRIP=0', ket_id='C78:QG:K13_2_N12_b0.50:KIN=35:TRIP=0', witness_id='C78:W:f6e82ad844b066dc09141f7670f27f06d4450a18031d09492fa39bc7c044ad09', intermediate_q_id='C78:Q:K13_2_N12_b0.50:H=-1:C=0', output_raw_id='C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0', input_raw_id='C77:RAW:K13_2_N12_b0.50:e383c50729d4a814ee781673a2054dbfea5343d17ef6368ca3dc6f8b8f4250f0', output_color_record='product:cprime=0:a=2|triplet:c=0', input_color_record='product:cprime=0:a=2|triplet:c=0', hq_out=1, hg_out=1, hq_in=1, hg_in=1, source_order=('b_dagger', 'a_dagger', 'a', 'b'))"
+    },
+    "K9_2_N8_b0.40": {
+      "coefficient": {
+        "ancestry": {
+          "input_color": "product:cprime=0:a=2|triplet:c=0",
+          "input_raw": "C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b",
+          "output_color": "product:cprime=0:a=2|triplet:c=0",
+          "output_raw": "C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b"
+        },
+        "bound": 3.29799259427034e-16,
+        "expression": "conj(J_bra*U3_bra) * (J_ket*U3_ket)",
+        "factor_ownership": "C82:embedding/metric/conjugation only; C80 owns longitudinal/spin/color/HO/normalization/g_s2",
+        "leaf_id": "C82:LEAF:a7d554f6263df41ab89cddc09164c2e1b9e4e61fa883a21008fd11f49ce19b4c",
+        "status": "NONZERO_CERTIFIED_PROJECTED_COEFFICIENT_INTERVAL_EXCLUDES_ZERO",
+        "value": [
+          0.11342592592592593,
+          0.0
+        ]
+      },
+      "coordinate": "ContactKernelCoordinate(resolution='K9_2_N8_b0.40', q_out_raw_id='C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b', g_out_raw_id='C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b', q_in_raw_id='C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b', g_in_raw_id='C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b', q_out=(7, 2, 0, 0, 1), g_out=(1, 1, 0, -2, 1), q_in=(7, 2, 0, 0, 1), g_in=(1, 1, 0, -2, 1), c_out=0, a_out=2, c_in=0, a_in=2, source_order=('b_dagger', 'a_dagger', 'a', 'b'), zero_mode_policy='C43_PV_Q0_EXCLUDE_ZERO')",
+      "leaf": "ContactWitnessLeaf(resolution='K9_2_N8_b0.40', bra_id='C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0', ket_id='C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0', witness_id='C78:W:0151050230441ced289e709d320073cf64eb87f1e9296c79a9526f016d5b1d0b', intermediate_q_id='C78:Q:K9_2_N8_b0.40:H=-1:C=0', output_raw_id='C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b', input_raw_id='C77:RAW:K9_2_N8_b0.40:43a1f4541bebe3de8ee537b5fae1d9972945e63a29bc59696f092dbfb8f0781b', output_color_record='product:cprime=0:a=2|triplet:c=0', input_color_record='product:cprime=0:a=2|triplet:c=0', hq_out=1, hg_out=1, hq_in=1, hg_in=1, source_order=('b_dagger', 'a_dagger', 'a', 'b'))"
+    }
+  }
+}

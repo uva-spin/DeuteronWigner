@@ -1,0 +1,2161 @@
+
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools,mathrsfs}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{seqsplit}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F1}
+\definecolor{softred}{HTML}{FCEEEE}
+\definecolor{softviolet}{HTML}{F3EFF8}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XXI: Regulator-Specific Microscopic TMD Operators, Finite-Basis Vacuum Soft Sectors, and Partonic Matching},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XXI}
+\fancyhead[R]{\small\color{darkgray}Microscopic TMD operator and soft-sector matching}
+\fancyfoot[L]{\small\color{darkgray}5 August 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Span}{\operatorname{Span}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\EMT}{\ensuremath{\mathrm{EMT}}}
+\newcommand{\CS}{\ensuremath{\mathrm{CS}}}
+\newcommand{\DY}{\ensuremath{\mathrm{DY}}}
+\newcommand{\SIDIS}{\ensuremath{\mathrm{SIDIS}}}
+\newcommand{\DIS}{\ensuremath{\mathrm{DIS}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\QTN}{\ensuremath{\mathrm{QTN}}}
+\newcommand{\SCET}{\ensuremath{\mathrm{SCET}}}
+\newcommand{\bD}{\bm b_{\Delta}}
+\newcommand{\bT}{\bm b_T}
+\newcommand{\kT}{\bm k_T}
+\newcommand{\qT}{\bm q_T}
+\newcommand{\DT}{\bm\Delta_T}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\Coll}{\ensuremath{\mathrm{coll}}}
+\newcommand{\Soft}{\ensuremath{\mathrm{soft}}}
+\newcommand{\Proj}{\ensuremath{\mathrm{proj}}}
+\newcommand{\ART}{\ensuremath{\mathrm{ART25}}}
+\newcommand{\Bare}{\ensuremath{\mathrm{bare}}}
+\newcommand{\Ren}{\ensuremath{\mathrm{ren}}}
+\newcommand{\Unsub}{\ensuremath{\mathrm{unsub}}}
+\newcommand{\Ext}{\ensuremath{\mathrm{Ext}}}
+\newcommand{\Mic}{\ensuremath{\mathrm{Mic}}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Cplx}{\mathbb C}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\order}{\mathcal O}
+\newcommand{\as}{\alpha_s}
+\newcommand{\Bnum}{\mathrm B}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XXI: Regulator-Specific Microscopic TMD Operators,\\[2mm]
+Finite-Basis Vacuum Soft Sectors, and Partonic Matching\\[4mm]
+\large Two-root collinear--soft Hilbert geometry, Wilson-line completion, UV and rapidity renormalization,\\
+zero-bin subtraction, basis-continuum trajectories, universal matching, and the controlled boundary before quantum-assisted inference}}
+\author{DeuteronWigner project}
+\date{5 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C31/B1A proves that the historical C11 object is a regulated finite-basis model density rather than a renormalized \TMD, and that no source-qualified map presently connects its specific operator and regulator to a UV-renormalized, soft-subtracted, rapidity-renormalized continuum \TMD.  C32/R0 creates a distinct microscopic staple-operator completion and verifies exact tree reduction to twelve nonzero C11 \(u,d,\bar u,\bar d\) parents, but the one-loop calculation fails at the earlier structural status \texttt{C32\_MICROSCOPIC\_SOFT\_SECTOR\_UNDEFINED}: the baryon-number-one finite basis has no vacuum Hilbert sector for the four-eikonal-line soft operator.  The present volume formalizes the resulting two-root architecture and the exact renormalization, subtraction, matching, convergence, and no-go conditions.  C33/S0 is the designated realization package for the missing baryon-number-zero vacuum/eikonal soft root.  No one-loop microscopic soft result, matched proton \TMD, cross-root residual, fit, inference, deuteron prediction, or production status is presumed here.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A microscopic light-front wave-function overlap is not, by itself, a transverse-momentum-dependent parton distribution in a specified QCD scheme.  The physical object requires a completed staple operator, a vacuum Wilson-line soft sector, count-once subtraction of the soft-collinear overlap, ultraviolet and rapidity renormalization, a state-independent regulator-matching kernel, a controlled continuum trajectory, and a declared map to the phenomenological convention in which comparison data are represented.  The C31--C32 audits isolate this distinction sharply.  The historical C11 parent remains a useful finite-basis, Wilson-order-zero, positive-\(x\) quark and antiquark model density.  C32 extends it by a typed staple path, transverse closure, modified-\(\delta\) rapidity plan, soft-factor slot, inverse-square-root allocation, and zero-bin convention, and proves exact tree-level reduction on twelve nonzero parents.  At one loop, however, the construction halts because the baryonic Hilbert space contains no vacuum sector in which the four-line eikonal soft matrix element can be evaluated.
+
+This volume gives the formal correction.  The microscopic regulated \TMD\ is represented by two disjoint but compatible roots: a baryon-number-one collinear root carrying the hadronic state and a baryon-number-zero vacuum/eikonal root carrying the universal soft operator.  They are joined over a shared regulator, Wilson geometry, transverse measurement, ultraviolet target scheme, rapidity convention, and overlap-subtraction contract; they are not combined as state probabilities.  The volume defines the completed quark correlator, the finite vacuum plus one-soft-gluon Hilbert space, direct and auxiliary-field Wilson-line realizations, the modified-\(\delta\) eikonal denominators, the one-loop real, virtual, self-energy, cusp, endpoint, transverse-link, instantaneous, zero-mode, and counterterm ledgers, and the precise placement of the square-root soft factor and zero-bin subtraction.
+
+The renormalized microscopic object is required to satisfy ultraviolet, rapidity, gauge, anomalous-dimension, charge-conjugation, support, and sum-rule closure.  A continuum project-scheme partonic oracle must be evaluated with the same infrared prescription.  The light-front-to-project matching kernel is then the distributional, infrared-finite, state-independent difference of the two renormalized partonic calculations, not a ratio of hadron-level curves.  The finite-basis trajectory must separate cutoff logarithms, finite conversion constants, endpoint and zero-mode effects, power corrections, and numerical error.  Only after these gates pass may the already-audited project-to-ART25 convention alignment and two-scale evolution act on a microscopic proton distribution.
+
+The volume also defines a tensor-network and future quantum-circuit interface in which the hadronic state network and the vacuum soft/eikonal operator network remain separate computational objects.  It gives machine-readable schemas, 65 stable formal requirements, benchmark and falsification families, a mandatory negative-test catalogue, implementation stages, acceptance criteria, and exact C33/C34 branches.  A rigorous tree-level-only or structural no-go result remains scientifically valid; no missing renormalization ingredient is assigned zero.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Scope, inherited results, and status language}
+\label{sec:scope}
+
+\subsection{The three objects separated by C31}
+
+C31 establishes that three objects which can share notation in informal discussions must remain typed separately:
+\begin{equation}
+ F_{\mathrm{C11}}^{\mathrm{reg}}
+ \quad\not\equiv\quad
+ F_{\Proj}^{\Ren}(x,\bT;\mu,\zeta)
+ \quad\not\equiv\quad
+ F_{\ART}^{\mathrm{opt}}(x,\bT).
+ \label{eq:three-objects}
+\end{equation}
+The first is a finite-basis, gauge-fixed microscopic density; the second is a UV-renormalized, soft-subtracted, rapidity-renormalized \TMD\ in a declared project scheme; the third is the external ART25 optimal-\TMD\ object with its own source implementation and scale path.  The source audit finds no direct theorem, ancillary, or completed calculation that maps the specific C11 operator and finite-basis regulator to the middle object \cite{C31Report}.
+
+Once the middle object exists, a narrower continuum statement becomes available.  The project square-root-soft convention can be aligned with the EIS/modified-\(\delta\) convention used by ART25 after the relevant \(\overline{\mathrm{MS}}\), rapidity, and soft-factor conventions are made identical \cite{CollinsRogers2012}.  This continuum relation does not perform the missing finite-basis renormalization.
+
+\subsection{The completed C32 operator identity}
+
+C32 creates the versioned validation root
+\begin{equation}
+ \mathfrak O_{32}
+ =
+ \texttt{C32\_MICROSCOPIC\_TMD\_OPERATOR\_COMPLETION},
+ \label{eq:c32-root}
+\end{equation}
+with an explicit fundamental staple, transverse closure, modified-\(\delta\) rapidity plan, vacuum-soft definition, inverse-square-root allocation, and zero-bin convention.  It does not relabel the historical C11 root.
+
+At zero coupling the completed operator is evaluated on twelve nonzero PLAN-A parents:
+\begin{equation}
+ a\in\{u,d,\bar u,\bar d\},
+ \qquad
+ x\in\{0.03,0.10,0.30\}.
+ \label{eq:twelve-parents}
+\end{equation}
+Future and past matrices equal the C11 parent, the link-even matrix equals the parent, the link-odd matrix vanishes, and two forward scalar reductions agree exactly.  The maximum matrix and scalar residual is zero:
+\begin{equation}
+ \epsilon_{\mathrm{tree}}^{\max}=0.
+ \label{eq:tree-residual}
+\end{equation}
+
+\begin{theorem}[Executed C11 tree-reduction authority]
+\label{thm:c11-tree}
+Let \(\mathfrak O_{32}(g)\) denote the C32 completed operator and let the tree-level soft, UV, and rapidity factors be one, with zero-bin subtraction zero.  On the twelve frozen C11 PLAN-A parents,
+\begin{equation}
+ \mathfrak O_{32}(0)
+ =
+ \mathfrak O_{11},
+ \qquad
+ \epsilon_{\mathrm{matrix}}
+ =
+ \epsilon_{\mathrm{forward}}
+ =
+ 0.
+ \label{eq:c11-tree-reduction}
+\end{equation}
+This statement is an executed finite-basis regression.  It is not an all-order \TMD\ matching theorem.
+\end{theorem}
+
+\subsection{The C32 structural obstruction}
+
+The one-loop chain stops before a microscopic soft subtraction can be calculated:
+\begin{equation}
+ \boxed{\texttt{C32\_MICROSCOPIC\_SOFT\_SECTOR\_UNDEFINED}}.
+ \label{eq:c32-soft-obstruction}
+\end{equation}
+The C11/C32 collinear regulator acts on a baryon-number-one finite light-front basis.  It contains no baryon-number-zero vacuum Hilbert space on which the four-eikonal-line Wilson soft operator can act.  The existing finite soft-overlap ledgers from the Wilson pilots test sign, count-once, and truncation algebra, but do not supply a continuum \TMD\ soft function or physical rapidity scheme \cite{C12Report,C14Report}.
+
+The immediate consequence is fail-closed:
+\begin{align}
+ F_{\Coll}^{(1),\Mic} &:\ \text{unavailable},\\
+ S_{\Soft}^{(1),\Mic} &:\ \text{structurally unavailable},\\
+ \cZ_{\mathrm{zero\ bin}},\ Z_{\mathrm{UV}},\ R_{\mathrm{rap}}
+ &:\ \text{unavailable},\\
+ Z_{\mathrm{LF}\to\Proj}^{(1)}
+ &:\ \text{unavailable}.
+ \label{eq:c32-unavailable-chain}
+\end{align}
+The first omitted order is \(\order(\as)\) with a nonzero-unknown remainder.
+
+\subsection{Status vocabulary}
+
+\begin{definition}[Microscopic TMD status ladder]
+\label{def:status-ladder}
+The following statuses are distinct:
+\begin{align}
+ \mathsf S_0 &: \texttt{REGULATED\_MODEL\_DENSITY},\\
+ \mathsf S_1 &: \texttt{TREE\_LEVEL\_OPERATOR\_LIMIT\_VALIDATED},\\
+ \mathsf S_2 &: \texttt{UNSUBTRACTED\_MICROSCOPIC\_CORRELATOR\_VALIDATED},\\
+ \mathsf S_3 &: \texttt{MICROSCOPIC\_SOFT\_SECTOR\_VALIDATED},\\
+ \mathsf S_4 &: \texttt{UV\_AND\_RAPIDITY\_RENORMALIZED},\\
+ \mathsf S_5 &: \texttt{LF\_TO\_PROJECT\_MATCHING\_VALIDATED},\\
+ \mathsf S_6 &: \texttt{PROJECT\_TO\_ART25\_ALIGNED},\\
+ \mathsf S_7 &: \texttt{MICROSCOPIC\_TMD\_BRIDGE\_READY}.
+ \label{eq:status-ladder}
+\end{align}
+Each status requires its own gates.  Tree reduction does not imply a soft sector; a soft sector does not imply a matched collinear correlator; continuum convention alignment does not imply finite-basis matching.
+\end{definition}
+
+\subsection{Objective of Volume XXI}
+
+The purpose of this volume is to define the exact operator, Hilbert-space, regulator, subtraction, renormalization, matching, convergence, tensor-network, and software contracts that separate \(\mathsf S_1\) from \(\mathsf S_7\).  It is normative through the C32 result and supplies the formal implementation boundary for C33 and its descendants.
+
+\section{Two-root microscopic TMD architecture}
+\label{sec:two-root}
+
+\subsection{Collinear and soft roots}
+
+\begin{definition}[Microscopic collinear root]
+The collinear root is
+\begin{equation}
+ \cH_{\Coll}^{\Bnum=1}
+ =
+ \bigoplus_{\alpha\in\cF_{\mathrm{had}}}
+ \cH_{\alpha}^{\Bnum=1},
+ \label{eq:coll-root}
+\end{equation}
+where \(\alpha\) labels the retained microscopic Fock sectors.  It contains the baryonic state, active-parton projectors, spectator structure, finite-basis Hamiltonian, and the C32 completed bilocal staple operator.  Its vacuum expectation values are undefined unless a separate vacuum root is supplied.
+\end{definition}
+
+\begin{definition}[Microscopic soft root]
+The soft root is
+\begin{equation}
+ \cH_{\Soft}^{\Bnum=0}
+ =
+ \Span\left\{
+ |\Omega_{\Soft}\rangle,\,
+ |g^a_{\lambda,\nu}\rangle,\,
+ |gg,\ldots\rangle
+ \right\},
+ \label{eq:soft-root}
+\end{equation}
+truncated according to the declared perturbative order and finite regulator.  It contains the vacuum, soft-gluon modes, four non-dynamical eikonal color sources, Wilson-path geometry, and the vacuum soft operator.  It carries no proton probability and no hadron normalization.
+\end{definition}
+
+\begin{axiom}[Root separation]
+\label{ax:root-separation}
+\(\cH_{\Coll}^{\Bnum=1}\) and \(\cH_{\Soft}^{\Bnum=0}\) are disjoint state spaces.  The vacuum root may not be inserted into the proton Fock normalization, and the proton state may not be used as the vacuum state of the soft operator.
+\end{axiom}
+
+\subsection{Shared regulator base}
+
+The two roots communicate through a joint regulator identity
+\begin{equation}
+ \mathfrak R_{\mathrm{joint}}
+ =
+ \left(
+ \mathfrak R_{\Coll},
+ \mathfrak R_{\Soft},
+ \cC_{\mathrm{Wilson}},
+ \cC_{\mathrm{meas}},
+ \cC_{\mathrm{UV}},
+ \cC_{\mathrm{rap}},
+ \cC_{\mathrm{overlap}}
+ \right).
+ \label{eq:joint-regulator}
+\end{equation}
+The compatibility records include:
+\begin{itemize}
+\item gauge group and color representation;
+\item Wilson-line directions, orientation, path ordering, and transverse closure;
+\item transverse separation \(\bT\) and Fourier convention;
+\item UV target scheme and scale;
+\item rapidity regulator and removal order;
+\item soft measurement and external-state infrared prescription;
+\item zero-bin or overlap-region map.
+\end{itemize}
+
+\begin{definition}[Structured collinear--soft product]
+The regulated microscopic \TMD\ operator space is
+\begin{equation}
+ \cH_{\TMD}^{\mathrm{reg}}
+ =
+ \cH_{\Coll}^{\Bnum=1}
+ \widehat\otimes_{\mathfrak R_{\mathrm{joint}}}
+ \cH_{\Soft}^{\Bnum=0}.
+ \label{eq:structured-product}
+\end{equation}
+The hat denotes a compatibility-controlled product over shared regulator data, not a tensor-product probability state.
+\end{definition}
+
+\begin{center}
+\begin{tikzcd}[column sep=large,row sep=large]
+\cH_{\Coll}^{\Bnum=1}
+  \arrow[r,"\Phi_{\Coll}^{\Unsub}"]
+  \arrow[d,"\mathfrak R_{\Coll}"']
+&
+\cO_{\Coll}^{\Unsub}
+  \arrow[dr,"\ominus\,\cO_{\mathrm{overlap}}"]
+&
+\\
+\mathfrak R_{\mathrm{joint}}
+&
+&
+\cO_{\Coll-\Soft}^{\Unsub}
+  \arrow[r,"Z_{\mathrm{UV}}R_{\mathrm{rap}}"]
+&
+F_{\Mic}^{\Ren}
+\\
+\cH_{\Soft}^{\Bnum=0}
+  \arrow[r,"S_{\Soft}^{\Bare}"]
+  \arrow[u,"\mathfrak R_{\Soft}"]
+&
+\cO_{\Soft}^{\Bare}
+  \arrow[ur,"S^{-1/2}"']
+\end{tikzcd}
+\end{center}
+
+\subsection{Composition formula}
+
+The microscopic renormalized quark \TMD\ is schematically
+\begin{equation}
+ F_{q,\Mic}^{\Ren}
+ =
+ Z_{q}^{\mathrm{UV}}\,
+ R_{q}^{\mathrm{rap}}\,
+ \left[
+ \Phi_{q,\Coll}^{\Unsub}
+ -
+ \Phi_{q,\mathrm{overlap}}
+ \right]\,
+ \left[
+ S_{q,\Soft}^{\Bare}
+ \right]^{-1/2}.
+ \label{eq:mic-tmd-master}
+\end{equation}
+The exact placement of the overlap subtraction and square-root soft factor is scheme dependent and must be stored as part of the operator identity.  Equation \eqref{eq:mic-tmd-master} is not an instruction to multiply any available collinear table by any available soft table.  Every factor must share \(\mathfrak R_{\mathrm{joint}}\).
+
+\begin{proposition}[Hadron independence of the soft root]
+\label{prop:soft-universal}
+At fixed parton representation, Wilson geometry, regulator, and measurement, the vacuum soft factor is independent of the hadronic state.  Any object whose value depends irreducibly on C11 proton coefficients is not a universal \TMD\ soft factor.
+\end{proposition}
+
+\begin{principle}[Necessary but not sufficient]
+A valid vacuum soft factor is necessary for a subtracted microscopic \TMD, but it is not sufficient.  The collinear one-loop matrix element, overlap subtraction, UV and rapidity counterterms, matching difference, and regulator trajectory must still close.
+\end{principle}
+
+\section{Completed microscopic quark operator}
+\label{sec:operator}
+
+\subsection{Unsubtracted staple correlator}
+
+For a proton state \(|P,\Lambda\rangle_{\Coll}\), define the C32-completed unsubtracted correlator
+\begin{align}
+ \Phi_{q,\Lambda'\Lambda}^{[\gamma^+],\Unsub}
+ (x,\bT;\eta,\rho_{\mathrm{rap}},\Lambda_{\mathrm{LF}})
+ &=
+ \frac{1}{2}
+ \int\frac{\dd z^-}{2\pi}\,
+ e^{ixP^+z^-}
+ \nonumber\\
+ &\quad\times
+ {}_{\Coll}\!\left\langle P,\Lambda'\right|
+ \bar q\!\left(-\frac{z}{2}\right)
+ \cU_{\eta,\rho_{\mathrm{rap}}}
+ \!\left[-\frac{z}{2},\frac{z}{2}\right]
+ \gamma^+
+ q\!\left(\frac{z}{2}\right)
+ \left|P,\Lambda\right\rangle_{\Coll}
+ \bigg|_{z^+=0,\ \bm z_T=\bT}.
+ \label{eq:unsub-correlator}
+\end{align}
+The operator identity stores:
+\begin{equation}
+ \mathfrak o_q
+ =
+ \left(
+ q,\gamma^+,\eta,
+ \cC_{\eta},
+ \rho_{\mathrm{rap}},
+ \mathfrak R_{\Coll},
+ \bT,
+ P,
+ \Lambda',\Lambda,
+ \text{normalization}
+ \right).
+ \label{eq:operator-id}
+\end{equation}
+
+\subsection{Staple geometry}
+
+The staple is decomposed into ordered segments,
+\begin{equation}
+ \cU_{\eta}
+ =
+ U_{-\frac z2\to -\frac z2+\eta\infty v}\,
+ U_{-\frac z2+\eta\infty v\to \frac z2+\eta\infty v}\,
+ U_{\frac z2+\eta\infty v\to\frac z2}.
+ \label{eq:staple}
+\end{equation}
+The finite operator record must retain:
+\begin{itemize}
+\item the sign \(\eta\) of the future/past orientation;
+\item the direction \(v^\mu\);
+\item fundamental or anti-fundamental color action;
+\item transverse closure;
+\item momentum-flow and Fourier conventions;
+\item modified-\(\delta\) shifts and \(i0\) prescriptions;
+\item path composition, reversal, and Hermitian conjugation.
+\end{itemize}
+The sign of an eikonal pole is derived from this tuple; it is never assigned from the name of the process.
+
+\subsection{Tree-level reduction}
+
+At \(g=0\),
+\begin{equation}
+ \cU_{\eta}\to\Id,
+ \qquad
+ S_{\Soft}\to1,
+ \qquad
+ Z_{\mathrm{UV}}\to1,
+ \qquad
+ R_{\mathrm{rap}}\to1,
+ \qquad
+ \Phi_{\mathrm{overlap}}\to0.
+ \label{eq:tree-factors}
+\end{equation}
+The C32 result \eqref{eq:c11-tree-reduction} proves that the operator completion is compatible with the historical C11 parent at this order.  The proof does not establish that C11 already contained the one-loop staple, soft, or counterterm structure.
+
+\begin{corollary}[Historical preservation]
+All C11 numerical parents remain immutable tree-level model-density objects.  The C32 operator root extends them through a versioned operator edge; it does not overwrite their evidence class.
+\end{corollary}
+
+\subsection{Quarks and positive-\texorpdfstring{\(x\)}{x} antiquarks}
+
+The microscopic state stores quarks and antiquarks as separate positive-\(x\) active slots.  Their charge-conjugation relation must be implemented at the operator and partonic matching level:
+\begin{equation}
+ \Phi_{\bar q}^{[\gamma^+]}(x)
+ =
+ \cC_q\,
+ \Phi_q^{[\gamma^+]}(x)\,
+ \cC_q^{-1}
+ \quad\text{with the declared anti-fundamental Wilson action},
+ \label{eq:charge-conjugation}
+\end{equation}
+rather than by copying a quark array or using an untyped negative-\(x\) alias.
+
+\section{Regulator geometry and frozen plans}
+\label{sec:regulators}
+
+\subsection{C32 collinear regulator}
+
+The collinear regulator tuple is
+\begin{equation}
+ \mathfrak R_{\Coll}
+ =
+ \left(
+ K,N_{\max},b_{\mathrm{HO}},
+ \lambda_H,x_{\min},
+ \cB_{\mathrm{long}},
+ \cB_{\perp},
+ \cZ_{0,g},
+ \rho_{\mathrm{end}}
+ \right).
+ \label{eq:coll-regulator}
+\end{equation}
+The frozen C7/C32 trajectory is
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Resolution & \(K\) & \(N_{\max}\) & \(b_{\mathrm{HO}}\) [GeV]\\
+\midrule
+coarse & \(9/2\) & 8 & 0.40\\
+medium & \(11/2\) & 10 & 0.45\\
+fine & \(13/2\) & 12 & 0.50\\
+\bottomrule
+\end{tabular}
+\end{center}
+All retain \(\lambda_H=1.2\) GeV, \(x_{\min}=1/18\), antiperiodic half-integer quark and antiquark longitudinal modes, periodic nonzero-integer gluon modes, and an explicit gluon zero-mode exclusion.  The diagnostic combinations \(b_{\mathrm{HO}}\sqrt{N_{\max}}\) and \(b_{\mathrm{HO}}/\sqrt{N_{\max}}\) are not exact continuum UV and IR cutoffs.
+
+\subsection{Common partonic infrared and gauge plans}
+
+C32 freezes spacelike off-shell quarks on both sides of the intended matching calculation:
+\begin{equation}
+ p\in\{5,10\}\ \mathrm{GeV},
+ \qquad
+ p^2\in\{-0.04,-0.09\}\ \mathrm{GeV}^2.
+ \label{eq:ir-plan}
+\end{equation}
+Covariant-gauge checks are frozen at
+\begin{equation}
+ \xi_g\in\{0,1,2\}.
+ \label{eq:gauge-plan}
+\end{equation}
+The microscopic and target-project calculations must use this same infrared prescription or a separately validated conversion.
+
+\subsection{Rapidity plan}
+
+The target rapidity plan is modified-\(\delta\).  The regulated eikonal denominators are derived from Wilson orientation and momentum flow.  Schematically,
+\begin{equation}
+ \frac{1}{k^+ - i0\,\eta}
+ \longrightarrow
+ \frac{1}{k^+ - i\eta\,\delta^+},
+ \qquad
+ \frac{1}{k^- - i0\,\bar\eta}
+ \longrightarrow
+ \frac{1}{k^- - i\bar\eta\,\delta^-},
+ \label{eq:modified-delta}
+\end{equation}
+with the exact sign and normalization fixed by the source convention.  The finite basis is not silently treated as a rapidity regulator.
+
+\subsection{Soft regulator tuple}
+
+The soft root requires its own tuple,
+\begin{equation}
+ \mathfrak R_{\Soft}
+ =
+ \left(
+ N_{\omega},N_y,N_{\perp},
+ \omega_{\min},\omega_{\max},
+ Y_{\max},L_{\perp},
+ \rho_{0},
+ \cB_{\Soft},
+ \delta^+,\delta^-,
+ \xi_g
+ \right).
+ \label{eq:soft-regulator}
+\end{equation}
+At least three nested soft resolutions are required for any trajectory claim.  The two roots are compatible only after a typed map
+\begin{equation}
+ \begin{aligned}
+ \cC_{\Coll\leftrightarrow\Soft}:
+ \mathfrak R_{\Coll}\times\mathfrak R_{\Soft}
+ &\longrightarrow
+ \{\texttt{IDENTICAL},\ \texttt{EXACT\_CONVERSION},\\
+ &\hspace{1.2cm}\texttt{COMPATIBLE\_AT\_ORDER},\
+ \texttt{UNRESOLVED},\
+ \texttt{INCOMPATIBLE}\}.
+ \end{aligned}
+ \label{eq:compat-map}
+\end{equation}
+is evaluated.
+
+\subsection{Zero modes}
+
+The collinear and soft zero-mode policies are separate.  A gluon zero mode excluded from the finite baryon basis does not prove that the corresponding vacuum soft zero mode is absent.  Every zero-mode contribution must be calculated, regulated, or assigned a proof of non-applicability.
+
+\begin{principle}[Regulator roles are not interchangeable]
+A basis cutoff, an infrared off-shellness, a rapidity regulator, and a numerical convergence parameter regulate different singular regions.  No one may be substituted for another without an explicit theorem or conversion.
+\end{principle}
+
+\section{Microscopic unsubtracted collinear calculation}
+\label{sec:collinear}
+
+\subsection{Partonic matrix element}
+
+For a frozen external quark state \(|q(p,\lambda,f)\rangle\), the microscopic unsubtracted partonic correlator is
+\begin{equation}
+ \Phi_{q,\Coll}^{\Unsub}
+ \left(
+ x,\bT;
+ \mathfrak R_{\Coll},
+ p^2,\xi_g,
+ \delta^\pm
+ \right)
+ =
+ \langle q(p)|
+ \cO_{q,32}^{\Unsub}(x,\bT)
+ |q(p)\rangle_{\mathfrak R_{\Coll}}.
+ \label{eq:partonic-coll}
+\end{equation}
+The one-loop decomposition is
+\begin{align}
+ \Phi_{q,\Coll}^{(1),\Unsub}
+ ={}&
+ \Phi_{\mathrm{self}}
+ +\Phi_{\mathrm{vertex}}
+ +\Phi_{\mathrm{real}}
+ +\Phi_{\mathrm{staple}}
+ +\Phi_{\mathrm{staple\,self}}
+ +\Phi_{\mathrm{cusp/end}}
+ \nonumber\\
+ &+
+ \Phi_{\mathrm{inst.\,fermion}}
+ +\Phi_{\mathrm{inst.\,gluon}}
+ +\Phi_{\mathrm{basis\,boundary}}
+ +\Phi_{\mathrm{endpoint}}
+ +\Phi_{\mathrm{zero\,mode}}
+ +\Phi_{\mathrm{mix}}.
+ \label{eq:coll-one-loop}
+\end{align}
+C32 gives twenty-five real, virtual, Wilson, soft, zero-bin, counterterm, instantaneous, boundary, endpoint, zero-mode, and mixing entries explicit statuses; none is silently zero.  Their numerical values remain unavailable beyond tree level because the soft root is not yet defined.
+
+\subsection{Distributional \texorpdfstring{\(x\)}{x}-space authority}
+
+The one-loop result is a distribution:
+\begin{equation}
+ \Phi^{(1)}(x,\bT)
+ =
+ c_{\delta}(\bT)\,\delta(1-x)
+ +
+ \sum_{n=0}^{n_{\max}}
+ c_n(\bT)
+ \left[
+ \frac{\ln^n(1-x)}{1-x}
+ \right]_+
+ +
+ f_{\mathrm{reg}}(x,\bT).
+ \label{eq:distributional-form}
+\end{equation}
+The plus distribution acts on a test function \(\varphi\) as
+\begin{equation}
+ \int_0^1\dd x\,
+ [g(x)]_+\,\varphi(x)
+ =
+ \int_0^1\dd x\,
+ g(x)\,[\varphi(x)-\varphi(1)].
+ \label{eq:plus-def}
+\end{equation}
+For a lower integration limit \(x_0\), the lower-limit correction is part of the distributional identity and not an endpoint bin.
+
+C32 implements typed delta, logarithmic-plus, regular, lower-limit-plus, convolution, and Mellin actions.  The algebraic quark-number oracle closes at roundoff.  These results validate the distribution engine, not the missing microscopic coefficients.
+
+\subsection{Support and symmetry}
+
+A valid partonic result must satisfy:
+\begin{align}
+ \Phi(x,\bT)&=0\qquad x\notin(0,1]\quad\text{at the declared quark-channel order},\\
+ \Phi_{\eta}^{\mathrm{even}}&=\Phi_{-\eta}^{\mathrm{even}},\\
+ \Phi_{\eta}^{\mathrm{odd}}&=-\Phi_{-\eta}^{\mathrm{odd}},\\
+ \Phi^\dagger(x,\bT)&=\Phi(x,-\bT)
+ \quad\text{under the stored Hermitian frame}.
+ \label{eq:coll-symmetries}
+\end{align}
+At tree level the rank-zero \(T\)-even channel reduces to C11.  Beyond tree level these relations require the Wilson and soft constructions, not a declared phase.
+
+\section{Finite-basis vacuum/eikonal soft sector}
+\label{sec:soft-sector}
+
+\subsection{Vacuum Hilbert space}
+
+At one-loop scope, the minimal soft space is
+\begin{equation}
+ \cH_{\Soft}^{(1)}
+ =
+ \Span\left\{
+ |\Omega_{\Soft}\rangle,\,
+ |g^a_{\lambda,\nu}\rangle
+ \right\}.
+ \label{eq:soft-one-gluon-space}
+\end{equation}
+A mode label \(\nu\) stores longitudinal or rapidity coordinates, transverse mode, boundary condition, zero-mode status, and normalization:
+\begin{equation}
+ \nu
+ =
+ \left(
+ k^+,k^-,\kT,
+ y_k,
+ n_{\perp},
+ \cB_{\Soft},
+ z_0
+ \right).
+ \label{eq:soft-mode}
+\end{equation}
+The basis must represent both \(n\)- and \(\bar n\)-directed rapidity regions.  It must not inherit the fixed total-\(K\) baryon constraint.
+
+\subsection{Four-line Wilson soft operator}
+
+For a quark \TMD, define
+\begin{equation}
+ S_{q,\Soft}^{\Bare}
+ (\bT;\mathfrak R_{\Soft})
+ =
+ \frac{1}{N_c}
+ \langle\Omega_{\Soft}|
+ \Tr\left[
+ S_n^\dagger(\bT)
+ S_{\bar n}(\bT)
+ S_{\bar n}^\dagger(\bm0)
+ S_n(\bm0)
+ \right]
+ |\Omega_{\Soft}\rangle.
+ \label{eq:soft-factor}
+\end{equation}
+The four lines are individually typed by direction, orientation, representation, conjugation, endpoint, and path order.  The color trace is projected onto the singlet:
+\begin{equation}
+ \frac{1}{N_c}\Tr\Id = 1,
+ \qquad
+ C_F=\frac{N_c^2-1}{2N_c}=\frac43.
+ \label{eq:soft-color}
+\end{equation}
+No \(f\)-type or \(d\)-type gluon color class is introduced into this fundamental quark soft function.
+
+\subsection{Tree-level identity}
+
+At zero coupling,
+\begin{equation}
+ S_{q,\Soft}^{(0)}(\bT)=1.
+ \label{eq:soft-tree}
+\end{equation}
+This is the tree factor used in \cref{thm:c11-tree}.  It is not evidence that the one-loop vacuum operator exists in the finite regulator.
+
+\subsection{Realization plans}
+
+The microscopic soft root may be realized through mutually exclusive plans:
+\begin{enumerate}
+\item \texttt{S0-FB-EIKONAL-FOCK}: direct finite vacuum and one-soft-gluon Fock space with non-dynamical eikonal color sources;
+\item \texttt{S0-AUXILIARY-EIKONAL}: one-dimensional auxiliary fields replacing Wilson-line propagation;
+\item \texttt{S0-CONTINUUM-ORACLE-ONLY}: source-qualified continuum result used only as a target oracle;
+\item \texttt{S0-UNAVAILABLE}.
+\end{enumerate}
+The direct and auxiliary routes may test one another.  They are not additive soft factors.
+
+Auxiliary-field representations can convert a nonlocal Wilson line into local endpoint operators and one-dimensional propagators, and can be useful for renormalization and lattice-calculable soft observables \cite{GreenJansenSteffens2020,FrancisEtAl2023}.  Their Euclidean, spacelike, rapidity, and piecewise-path conditions must be proved before they become authority for the present Minkowski light-front regulator.
+
+\subsection{One-loop soft contribution complex}
+
+The one-loop bare soft factor is
+\begin{equation}
+ S_{\Soft}^{\Bare}
+ =
+ 1+\as\,S_{\Soft}^{(1),\Bare}
+ +\order(\as^2),
+ \label{eq:soft-loop-expansion}
+\end{equation}
+with
+\begin{align}
+ S_{\Soft}^{(1),\Bare}
+ ={}&
+ S_{n\bar n}^{\mathrm{exchange}}
+ +S_{\mathrm{conjugate\,exchange}}
+ +S_{\mathrm{same\,direction}}
+ +S_{\mathrm{real}}
+ +S_{\mathrm{virtual}}
+ \nonumber\\
+ &+
+ S_{\mathrm{line\,self}}
+ +S_{\mathrm{cusp/end}}
+ +S_{\mathrm{transverse\,closure}}
+ +S_{\mathrm{inst.}}
+ +S_{\mathrm{ghost}}
+ +S_{\mathrm{zero\,mode}}
+ +S_{\mathrm{basis\,boundary}}.
+ \label{eq:soft-contributions}
+\end{align}
+Every term requires an explicit implemented value, an unavailable status, or a proof of non-applicability.
+
+\subsection{Modified-\texorpdfstring{\(\delta\)}{delta} denominators}
+
+For a line with stored orientation, the eikonal denominator is derived from the path:
+\begin{equation}
+ \frac{1}{v\cdot k-i0\,\eta}
+ \longrightarrow
+ \frac{1}{v\cdot k-i\eta\,\delta_v}.
+ \label{eq:eikonal-delta}
+\end{equation}
+The bare soft function retains the dependence on \(\delta^+\) and \(\delta^-\) until the rapidity counterterm is applied.  Regulator removal must occur after the real, virtual, soft, and overlap contributions required by the selected convention have been assembled.
+
+\section{Ultraviolet and rapidity renormalization}
+\label{sec:renormalization}
+
+\subsection{Renormalization ledger}
+
+The soft and collinear sectors require separate but compatible ledgers:
+\begin{longtable}{L{0.32\textwidth}L{0.25\textwidth}L{0.34\textwidth}}
+\toprule
+Component & Root & Required role\\
+\midrule
+\endhead
+quark-field renormalization & collinear & external-field UV factor\\
+bilocal-operator renormalization & collinear & operator UV factor and mixing\\
+Wilson-line self energy & both & line UV structure\\
+cusp and endpoint terms & both & path-junction UV structure\\
+vacuum soft factor & soft & rapidity-contamination removal\\
+square-root allocation & joint scheme & assign half-soft factor to one TMD\\
+zero-bin/overlap subtraction & joint & count the soft region once\\
+rapidity regulator & both & distinguish equal-virtuality rapidity regions\\
+rapidity counterterm & both & remove regulator dependence\\
+Hamiltonian/basis counterterms & collinear & finite-basis operator consistency\\
+soft residual-mass/vacuum counterterms & soft & auxiliary-line and vacuum UV terms\\
+regulator conversion & joint & map finite roots to target continuum scheme\\
+\bottomrule
+\end{longtable}
+
+\subsection{Soft UV renormalization}
+
+Define
+\begin{equation}
+ S_{\Soft}^{\mathrm{UV-ren}}
+ =
+ Z_{S}^{\mathrm{UV}}\,
+ S_{\Soft}^{\Bare}.
+ \label{eq:soft-uv}
+\end{equation}
+The counterterm separates logarithmic UV dependence from possible power or residual-mass divergences:
+\begin{equation}
+ Z_S^{\mathrm{UV}}
+ =
+ Z_{S,\log}^{\mathrm{UV}}\,
+ Z_{S,\mathrm{power}}^{\mathrm{UV}}\,
+ Z_{S,\mathrm{endpoint}}^{\mathrm{UV}}.
+ \label{eq:soft-uv-separation}
+\end{equation}
+A power divergence cannot be hidden in a logarithmic \(\overline{\mathrm{MS}}\) factor.
+
+\subsection{Rapidity renormalization}
+
+Define
+\begin{equation}
+ S_{\Soft}^{\Ren}
+ =
+ R_S^{\mathrm{rap}}\,
+ S_{\Soft}^{\mathrm{UV-ren}}.
+ \label{eq:soft-rap}
+\end{equation}
+The rapidity counterterm removes \(\delta^\pm\)-dependence at the declared order.  Its anomalous dimension is source-convention dependent; a stored derivative convention is mandatory.  A common choice is
+\begin{equation}
+ \gamma_\nu^S(\bT;\mu)
+ =
+ \frac{\dd}{\dd\ln\nu}
+ \ln S_{\Soft}^{\Ren}(\bT;\mu,\nu),
+ \label{eq:soft-rad}
+\end{equation}
+or an equivalent modified-\(\delta\) derivative.  The project \CS\ kernel \(\cD_q\) is related to the TMD rapidity anomalous dimension by the declared sign and factor convention:
+\begin{equation}
+ \frac{\dd}{\dd\ln\sqrt{\zeta}}
+ \ln F_q(x,\bT;\mu,\zeta)
+ =
+ -\cD_q(\bT;\mu).
+ \label{eq:cs-evolution}
+\end{equation}
+
+\subsection{Cusp consistency}
+
+A valid rapidity-renormalized construction must satisfy
+\begin{equation}
+ \frac{\dd}{\dd\ln\mu}
+ \cD_q(\bT;\mu)
+ =
+ \Gamma_{\mathrm{cusp}}^q(\as(\mu))
+ \label{eq:cusp-consistency}
+\end{equation}
+in the selected convention.  The relation is a closure condition, not a parameter fit.
+
+\subsection{Gauge and link closure}
+
+For the \(T\)-even fundamental soft factor,
+\begin{align}
+ S_{\eta}^{\Ren}(\bT)&=S_{-\eta}^{\Ren}(\bT),\\
+ \frac{\partial}{\partial\xi_g}S_{\eta}^{\Ren}(\bT)&=0
+ \quad\text{at the declared order},\\
+ S_{\eta}^{\Ren}(\bT)^*&=S_{\eta}^{\Ren}(-\bT).
+ \label{eq:soft-closures}
+\end{align}
+The frozen \(\xi_g=0,1,2\) values form a numerical gauge holdout if symbolic cancellation is not available.
+
+\section{Zero-bin and soft--collinear overlap}
+\label{sec:zero-bin}
+
+\subsection{Overlap map}
+
+The collinear matrix element contains a region whose momentum scaling approaches the soft sector.  Define
+\begin{equation}
+ \cZ_{\Coll\to\Soft}:
+ \Phi_{\Coll}^{\Unsub}
+ \longrightarrow
+ \Phi_{\Coll}^{0},
+ \label{eq:zero-map}
+\end{equation}
+where \(\Phi_{\Coll}^{0}\) is the soft limit of the collinear integrand in the same measurement and regulator convention.
+
+The count-once collinear object is
+\begin{equation}
+ \Phi_{\Coll}^{\mathrm{pure}}
+ =
+ \Phi_{\Coll}^{\Unsub}
+ -
+ \Phi_{\Coll}^{0}.
+ \label{eq:pure-coll}
+\end{equation}
+Depending on convention, an equivalent soft-division formulation may be used only after the equivalence conditions are checked \cite{IdilbiMehen2007}.
+
+\subsection{Compatibility square}
+
+\begin{center}
+\begin{tikzcd}[column sep=large,row sep=large]
+\Phi_{\Coll}^{\Unsub}
+  \arrow[r,"\cZ_{\Coll\to\Soft}"]
+  \arrow[d,"\mathrm{REN}_{\Coll}"']
+&
+\Phi_{\Coll}^{0}
+  \arrow[d,"\cC_{\mathrm{overlap}}"]
+\\
+\Phi_{\Coll}^{\Ren}
+  \arrow[r,"\mathrm{soft\ limit}"']
+&
+S_{\Soft}^{\Ren}
+\end{tikzcd}
+\end{center}
+The square is not required to commute exactly at finite truncation, but its defect must be typed as a regulator or power remainder.
+
+\subsection{Missing and duplicate subtraction}
+
+A missing overlap subtraction leaves an uncanceled soft/rapidity contribution.  A duplicate subtraction produces the corresponding opposite-signed defect.  These are mandatory negative controls:
+\begin{equation}
+ \Delta_{\mathrm{miss}}=-\Delta_{\mathrm{dup}}\neq0
+ \label{eq:missing-duplicate}
+\end{equation}
+for a nonzero shared overlap.
+
+\subsection{C33 boundary}
+
+C33 is required to define the soft side of \(\cZ_{\Coll\to\Soft}\) and its regulator compatibility.  It does not fabricate the unavailable C32 collinear one-loop coefficients.  A valid soft root can therefore issue a continuation gate without yet issuing a matched microscopic \TMD.
+
+\section{Target project TMD and continuum oracle}
+\label{sec:project-tmd}
+
+\subsection{Project scheme}
+
+The target project \TMD\ is defined by a source-qualified continuum operator:
+\begin{equation}
+ F_{q,\Proj}^{\Ren}
+ (x,\bT;\mu,\zeta)
+ =
+ Z_{q,\Proj}^{\mathrm{UV}}\,
+ R_{q,\Proj}^{\mathrm{rap}}\,
+ \Phi_{q,\Proj}^{\Unsub}
+ \left[S_{q,\Proj}^{\Bare}\right]^{-1/2},
+ \label{eq:project-tmd}
+\end{equation}
+with the project-specific zero-bin convention stored separately.
+
+The project identity includes:
+\begin{equation}
+ \mathfrak s_{\Proj}
+ =
+ \left(
+ \begin{gathered}
+ \text{operator},\ \text{UV scheme},\ \text{rapidity regulator},\ \text{soft allocation},\\
+ \mu,\zeta,\ \text{Fourier normalization},\ \text{threshold history}
+ \end{gathered}
+ \right).
+ \label{eq:project-scheme-id}
+\end{equation}
+
+\subsection{Partonic oracle}
+
+The target oracle is the same quark operator evaluated with the same partonic IR state as \cref{eq:partonic-coll}.  It must retain exact distributional support and separately identify:
+\begin{itemize}
+\item the \(\delta(1-x)\) coefficient;
+\item plus-distribution coefficients;
+\item regular \(x\)-support;
+\item UV and rapidity logarithms;
+\item anomalous dimensions;
+\item quark-number moment;
+\item possible \(q\leftarrow g\) and other mixing channels.
+\end{itemize}
+The source-qualified continuum soft function and NNLO TMD calculations provide target authorities for these structures \cite{ESVSoft2016,ESVTMD2016}.  They do not calculate the finite C32 regulator.
+
+\subsection{Common infrared requirement}
+
+The microscopic and project partonic calculations must share the off-shell IR prescription \eqref{eq:ir-plan}, or a proved conversion.  The matching difference is not source qualified if an uncanceled dependence on the external-state infrared regulator remains.
+
+\section{Regulator-specific LF-to-project matching}
+\label{sec:matching}
+
+\subsection{Matching relation}
+
+The desired state-independent matching map is
+\begin{equation}
+ F_{q,\Proj}^{\Ren}(x,\bT;\mu,\zeta)
+ =
+ \sum_j
+ \int_x^1\frac{\dd z}{z}\,
+ Z_{q\leftarrow j}^{\mathrm{LF}\to\Proj}
+ \left(
+ \frac{x}{z},\bT;
+ \mathfrak R_{\Coll},
+ \mathfrak R_{\Soft},
+ \mu,\zeta
+ \right)
+ F_{j,\mathrm{LF}}^{\mathrm{reg}}(z,\bT)
+ +
+ R_q.
+ \label{eq:lf-project-matching}
+\end{equation}
+At one loop,
+\begin{equation}
+ Z_{q\leftarrow j}^{\mathrm{LF}\to\Proj}
+ =
+ \delta_{qj}\delta(1-x)
+ +
+ a_s Z_{q\leftarrow j}^{(1)}
+ +
+ \order(a_s^2).
+ \label{eq:matching-expansion}
+\end{equation}
+
+\subsection{Partonic difference}
+
+With common IR, gauge, and operator identity, the one-loop kernel is extracted distributionally from
+\begin{equation}
+ Z_{\mathrm{LF}\to\Proj}^{(1)}
+ =
+ F_{\Proj}^{(1),\Ren}
+ -
+ F_{\mathrm{LF}}^{(1),\Ren}.
+ \label{eq:matching-difference}
+\end{equation}
+Equation \eqref{eq:matching-difference} is shorthand for the appropriate convolution inverse and channel matrix.
+
+\subsection{Channel matrix}
+
+The one-loop capability audit must decide:
+\begin{equation}
+ \bm Z^{(1)}
+ =
+ \begin{pmatrix}
+ Z_{q\leftarrow q} & Z_{q\leftarrow g} & Z_{q\leftarrow\bar q}\\
+ Z_{g\leftarrow q} & Z_{g\leftarrow g} & Z_{g\leftarrow\bar q}\\
+ \cdots & \cdots & \cdots
+ \end{pmatrix},
+ \label{eq:channel-matrix}
+\end{equation}
+at the exact scope required by the quark bridge.  An off-diagonal channel may be zero only after a source or calculation proves it at the declared order.
+
+\subsection{Universality conditions}
+
+\begin{theorem}[Matching-kernel admissibility]
+\label{thm:matching-admissibility}
+A candidate \(Z_{\mathrm{LF}\to\Proj}\) may be called a matching kernel only if it is:
+\begin{enumerate}
+\item infrared finite;
+\item gauge independent;
+\item independent of the proton wave-function coefficients;
+\item independent of ART25 members, data, \(\chi^2\), and bridge residuals;
+\item stable under frozen external momenta and IR-regulator holdouts;
+\item explicit in \(\mathfrak R_{\Coll}\) and \(\mathfrak R_{\Soft}\);
+\item correct in distributional support and sum rules;
+\item accompanied by its first omitted order and remainder.
+\end{enumerate}
+\end{theorem}
+
+A map obtained from
+\begin{equation}
+ \frac{F_{\ART}^{\mathrm{hadron}}}{F_{\mathrm{C11}}^{\mathrm{hadron}}}
+ \label{eq:forbidden-ratio}
+\end{equation}
+is a state-dependent model ratio, not a regulator-matching kernel.
+
+\subsection{State-independence tests}
+
+The matching kernel must be stable under:
+\begin{itemize}
+\item \(p=5\) and \(10\) GeV;
+\item \(p^2=-0.04\) and \(-0.09\) GeV\(^2\);
+\item \(u\) and \(d\) labels where flavor universality is predicted;
+\item quark and positive-\(x\) antiquark charge-conjugate states;
+\item at least one alternate basis resolution;
+\item a simple partonic or toy composite state not used to derive the kernel.
+\end{itemize}
+Irreducible hadron-state dependence gives the status
+\begin{equation}
+ \texttt{STATE\_DEPENDENT\_MODEL\_MAP},
+ \label{eq:state-dependent-map}
+\end{equation}
+not \texttt{MATCHING}.
+
+\section{Project-to-ART25 alignment and scale decomposition}
+\label{sec:art25-alignment}
+
+\subsection{Continuum convention alignment}
+
+C31 supports a formal continuum alignment between the project square-root-soft \TMD\ and the EIS/modified-\(\delta\) convention used by ART25 once both are already renormalized TMDs.  At the aligned definition the finite operator factor can be the identity:
+\begin{equation}
+ Z_{\Proj\to\ART}^{\mathrm{finite}}
+ =
+ \Id
+ \quad\text{after exact convention alignment},
+ \label{eq:formal-identity}
+\end{equation}
+subject to the source's \(\overline{\mathrm{MS}}\) and soft-factor conventions \cite{CollinsRogers2012}.  This does not imply
+\begin{equation}
+ F_{\mathrm{C11}}^{\mathrm{reg}}
+ =
+ F_{\ART}^{\mathrm{opt}}.
+ \label{eq:not-direct}
+\end{equation}
+
+\subsection{Separate maps}
+
+The downstream map is decomposed as
+\begin{equation}
+ \cA_{\Proj\to\ART}
+ =
+ \cA_{\mathrm{operator}}\,
+ \cA_{\overline{\mathrm{MS}}}\,
+ \cA_{\mathrm{rap}}\,
+ \cA_{\mathrm{soft}}\,
+ \cE_{\mu,\zeta}\,
+ \cT_{\mathrm{threshold}}\,
+ \cP_{\zeta\text{-prescription}}.
+ \label{eq:adapter-decomposition}
+\end{equation}
+The following remain distinct:
+\begin{itemize}
+\item finite operator-scheme conversion;
+\item \(\overline{\mathrm{MS}}\) convention alignment;
+\item rapidity-scheme conversion;
+\item finite hard/\TMD\ redistribution;
+\item \(\zeta\)-prescription scale path;
+\item ordinary two-scale evolution;
+\item threshold matching;
+\item nonperturbative \(F_{\mathrm{NP}}\) boundary;
+\item nonperturbative \CS\ kernel.
+\end{itemize}
+
+\subsection{ART25 external definition}
+
+The audited external quark object is
+\begin{equation}
+ \texttt{harpy.get\_uTMDPDF}(x,b,1,\mu,\zeta,\texttt{includeGluon=False}),
+ \label{eq:art25-call}
+\end{equation}
+returning \(f\), not \(xf\).  The Python flavor order is
+\begin{equation}
+ (\bar b,\bar c,\bar s,\bar u,\bar d,g,d,u,s,c,b),
+ \label{eq:art25-order}
+\end{equation}
+so \(u=7\), \(d=6\), \(\bar u=3\), and \(\bar d=4\).  The frozen bridge uses \(\mu=Q\), \(\zeta=Q^2\), and the rank-zero \(J_0\) inverse Fourier convention.  These facts define the external comparison object, not the microscopic renormalization.
+
+\subsection{Hard-factor companion}
+
+When a nontrivial finite TMD transformation is used, the hard factor must transform so that
+\begin{equation}
+ H^{B}
+ F_1^{B}
+ F_2^{B}
+ =
+ H^{A}
+ F_1^{A}
+ F_2^{A}
+ +
+ \order(\as^{N+1}).
+ \label{eq:cross-section-invariance}
+\end{equation}
+A finite factor applied to one \TMD\ without its companion transformation is not a scheme conversion.
+
+\section{Basis-continuum trajectories and uncertainty}
+\label{sec:trajectory}
+
+\subsection{Nested trajectories}
+
+A finite-basis matching coefficient is not qualified by one resolution.  A trajectory is a sequence
+\begin{equation}
+ \mathfrak R_n
+ =
+ \left(
+ \mathfrak R_{\Coll,n},
+ \mathfrak R_{\Soft,n}
+ \right),
+ \qquad n=1,2,3,\ldots,
+ \label{eq:reg-trajectory}
+\end{equation}
+with a declared common limit.
+
+The regulator dependence should be decomposed as
+\begin{equation}
+ Z_n
+ =
+ A_{\log}\ln\Lambda_n
+ +
+ B_{\mathrm{finite}}
+ +
+ \sum_{p\ge1}
+ \frac{c_p}{\Lambda_n^p}
+ +
+ \Delta_{\mathrm{end},n}
+ +
+ \Delta_{0,n}
+ +
+ \Delta_{\mathrm{num},n}.
+ \label{eq:trajectory-decomposition}
+\end{equation}
+Only analytically predicted structures may be fit.  ART25 residuals cannot select \(A_{\log}\), \(B_{\mathrm{finite}}\), or the trajectory.
+
+\subsection{Trajectory statuses}
+
+Allowed statuses are:
+\begin{align}
+ &\texttt{CONTINUUM\_TRAJECTORY\_RESOLVED},\\
+ &\texttt{LOG\_STRUCTURE\_RESOLVED\_FINITE\_REMAINDER\_OPEN},\\
+ &\texttt{FINITE\_BASIS\_ONLY},\\
+ &\texttt{NONUNIVERSAL\_TRAJECTORY},\\
+ &\texttt{UNAVAILABLE}.
+ \label{eq:trajectory-statuses}
+\end{align}
+
+\subsection{Uncertainty budget}
+
+The following components remain separate:
+\begin{enumerate}
+\item first omitted perturbative order;
+\item collinear-basis UV and IR remainder;
+\item soft-basis UV and IR remainder;
+\item endpoint and zero-mode effects;
+\item rapidity-window remainder;
+\item overlap/zero-bin remainder;
+\item Hamiltonian and basis counterterms;
+\item operator-mixing remainder;
+\item finite scheme-conversion remainder;
+\item two-scale evolution and threshold remainder;
+\item C11/C14 parent and Fock-sector axes;
+\item \TTN\ bond and quadrature error;
+\item external ART25 covariance and external-model discrepancy.
+\end{enumerate}
+No microscopic remainder may be absorbed into external covariance.
+
+\subsection{Tensor-network convergence}
+
+The baryonic \TTN\ and soft-sector \TTN\ carry different roots and indices.  Full-bond equality to the exact finite-basis state is necessary but not sufficient.  Bond convergence must be checked on:
+\begin{itemize}
+\item the unsubtracted collinear correlator;
+\item Wilson-line attachments;
+\item the vacuum soft factor;
+\item zero-bin limits;
+\item the final renormalized \TMD.
+\end{itemize}
+Energy convergence cannot substitute for operator convergence.
+
+\section{Tensor-network and quantum-circuit interface}
+\label{sec:quantum}
+
+\subsection{Separate state and operator networks}
+
+The future quantum-assisted architecture is
+\begin{equation}
+ \bm\theta_{\Mic}
+ \longrightarrow
+ |\Psi_h(\bm\theta_{\Mic})\rangle_{\TTN/\QTN}
+ \longrightarrow
+ \langle\Psi_h|
+ \widehat{\cO}_{\Coll}^{\mathrm{reg}}
+ |\Psi_h\rangle
+ \xrightarrow{\ \mathrm{soft,\ ren,\ match}\ }
+ F_{\TMD}^{\Ren}.
+ \label{eq:qtn-chain}
+\end{equation}
+The state network and the soft/eikonal operator network remain separate:
+\begin{equation}
+ \TTN_{\mathrm{hadron}}
+ \neq
+ \TTN_{\mathrm{soft}}.
+ \label{eq:separate-tn}
+\end{equation}
+
+\subsection{Soft tensor network}
+
+A one-loop soft network may contain:
+\begin{equation}
+ \left(
+ |\Omega\rangle,\,
+ |g_{\lambda,\nu}^{a}\rangle,\,
+ \text{four eikonal color legs},\,
+ \text{singlet trace}
+ \right).
+ \label{eq:soft-tn-indices}
+\end{equation}
+Bond dimension is a deterministic numerical/truncation axis.  It is not a statistical ensemble and does not inherit ART25 member weights.
+
+\subsection{Future quantum registers}
+
+A future circuit representation may use:
+\begin{itemize}
+\item a vacuum/one-gluon occupation register;
+\item soft-mode and rapidity-cell registers;
+\item adjoint-color and polarization registers;
+\item four eikonal-source color registers;
+\item controlled emission/absorption gates;
+\item path-order and singlet-trace projections.
+\end{itemize}
+The circuit evaluates matrix elements.  The renormalization and matching compiler remains a physics-defined classical or hybrid map and is not learned by a free-form quantum neural network.
+
+\begin{principle}[Quantum compatibility without physics delegation]
+A quantum simulator may represent the microscopic state and operator contractions.  It may not infer missing counterterms, soft subtraction, rapidity renormalization, or regulator matching from external data.
+\end{principle}
+
+\section{Bridge readiness and covariance preservation}
+\label{sec:bridge}
+
+\subsection{Frozen distribution bridge}
+
+The frozen rank-zero proton bridge contains
+\begin{equation}
+ 3u+3d+3\bar u+3\bar d=12
+ \label{eq:twelve-bridge}
+\end{equation}
+kinematic points.  They currently have
+\begin{equation}
+ 12\ \texttt{BRIDGE\_COMMON\_DOMAIN\_ONLY},
+ \qquad
+ 0\ \texttt{BRIDGE\_DISTRIBUTION\_COMPARISON\_READY}.
+ \label{eq:bridge-status}
+\end{equation}
+The external unavailable-coordinate representation is \(642\times0\), which is empty, not zero.
+
+\subsection{Readiness gate}
+
+Define Boolean gates
+\begin{align}
+ G_{\mathrm{op}}&:\ \text{operator completion and tree reduction},\\
+ G_{\Soft}&:\ \text{finite vacuum soft sector},\\
+ G_{\mathrm{overlap}}&:\ \text{zero-bin/overlap closure},\\
+ G_{\mathrm{UV}}&:\ \text{UV renormalization},\\
+ G_{\mathrm{rap}}&:\ \text{rapidity renormalization},\\
+ G_{\mathrm{IR}}&:\ \text{common-IR cancellation},\\
+ G_{\mathrm{gauge}}&:\ \text{gauge closure},\\
+ G_{\mathrm{state}}&:\ \text{state-independent matching},\\
+ G_{\mathrm{traj}}&:\ \text{regulator trajectory},\\
+ G_{\mathrm{scheme}}&:\ \text{project-to-ART25 alignment}.
+ \label{eq:bridge-gates}
+\end{align}
+A microscopic bridge coordinate exists only when
+\begin{equation}
+ G_{\mathrm{bridge}}
+ =
+ \prod_{a}
+ G_a
+ =
+ 1.
+ \label{eq:bridge-product}
+\end{equation}
+
+\subsection{External covariance}
+
+When coordinates become available, all 642 ART25 stochastic members must be evaluated or projected in their preserved order.  For a bridge vector \(y_s\),
+\begin{equation}
+ A_{si}^{\mathrm{bridge}}
+ =
+ \frac{y_{si}-\bar y_i}{\sqrt{641}},
+ \qquad
+ C_{\mathrm{bridge}}
+ =
+ A_{\mathrm{bridge}}^T A_{\mathrm{bridge}}.
+ \label{eq:bridge-anomaly}
+\end{equation}
+Rank and null-space directions remain visible.  No ridge regularization, member shuffling, or diagonal-only approximation is permitted.
+
+\subsection{Cross-root relation}
+
+The cross-root member relation remains
+\begin{equation}
+ \boxed{\texttt{NO\_JOINT\_MEASURE}}.
+ \label{eq:no-joint}
+\end{equation}
+A deterministic microscopic plan may be compared with the external ensemble after the bridge exists.  ART25 member \(s\) is not paired with microscopic plan \(s\), and no cross-root covariance is invented.
+
+\subsection{Data ancestry}
+
+The compressed ART25 ensemble derives from 1,209 retained DY and SIDIS data points.  A future inference must choose one of:
+\begin{equation}
+ \texttt{EXTERNAL\_COMPRESSED\_CONSTRAINT},
+ \quad
+ \texttt{DIRECT\_DATA},
+ \quad
+ \texttt{EXTERNAL\_HOLDOUT},
+ \quad
+ \texttt{DIAGNOSTIC\_ONLY}.
+ \label{eq:ancestry-plans}
+\end{equation}
+The compressed ensemble and its underlying points cannot be independent likelihood terms.
+
+\section{No-go logic and continuation statuses}
+\label{sec:no-go}
+
+\subsection{Current authoritative branch}
+
+The C32 result is:
+\begin{equation}
+ \texttt{C32\_MICROSCOPIC\_SOFT\_SECTOR\_UNDEFINED}.
+ \label{eq:current-branch}
+\end{equation}
+The exact next realization is C33/S0: a finite-basis baryon-number-zero vacuum/eikonal soft sector and rapidity-renormalization construction.
+
+\subsection{Soft-sector outcomes}
+
+C33 may issue:
+\begin{align}
+ &\texttt{C33\_FINITE\_BASIS\_VACUUM\_SOFT\_SECTOR\_VALIDATED},\\
+ &\texttt{C33\_SOFT\_TREE\_LEVEL\_ONLY},\\
+ &\texttt{C33\_SOFT\_RAPIDITY\_RENORMALIZATION\_UNRESOLVED},\\
+ &\texttt{C33\_SOFT\_COLLINEAR\_REGULATORS\_INCOMPATIBLE},\\
+ &\texttt{C33\_SOFT\_CONTINUUM\_TRAJECTORY\_UNRESOLVED},\\
+ &\texttt{C33\_FINITE\_VACUUM\_HILBERT\_UNAVAILABLE}.
+ \label{eq:c33-statuses}
+\end{align}
+Each status carries an exact missing-calculation specification.
+
+\subsection{C34 branches}
+
+The post-C33 branches are:
+\begin{longtable}{L{0.33\textwidth}L{0.58\textwidth}}
+\toprule
+C33 result & Exact continuation\\
+\midrule
+\endhead
+soft sector, UV, rapidity, compatibility, and zero-bin interface close &
+C34/R0B: microscopic one-loop collinear correlator, zero-bin subtraction, UV/rapidity combination, and LF-to-project matching closure\\
+soft calculation closes but trajectory remains unresolved &
+C34/S1: soft-basis continuum trajectory, zero modes, endpoints, and power corrections\\
+auxiliary route closes but direct soft-Fock route does not &
+C34/S2: auxiliary-eikonal soft-root validation and conversion\\
+soft and collinear regulators are incompatible &
+C34/O3: redesign the regulator pair and overlap architecture\\
+only the tree soft identity closes &
+C34/S0A: one-loop soft diagrams, counterterms, and rapidity renormalization\\
+no finite vacuum Hilbert construction is viable &
+C34/O4: replace the finite-basis soft strategy with a new regulator architecture\\
+\bottomrule
+\end{longtable}
+
+\subsection{No readiness inflation}
+
+None of the statuses in \cref{eq:c33-statuses} alone authorizes:
+\begin{equation}
+ \begin{gathered}
+ \texttt{MICROSCOPIC\_PROTON\_TMD\_EXPORTED},\\
+ \texttt{BRIDGE\_DISTRIBUTION\_COMPARISON\_READY},\\
+ \texttt{GLOBAL\_INFERENCE\_READY}.
+ \end{gathered}
+ \label{eq:forbidden-status}
+\end{equation}
+The collinear one-loop and matching calculations remain separate gates.
+
+\section{Geometric and compositional interpretation}
+\label{sec:geometry}
+
+\subsection{Span over a regulator base}
+
+The two-root microscopic construction forms a span:
+\begin{equation}
+ \cO_{\Coll}^{\Unsub}
+ \longrightarrow
+ \cO_{\mathrm{joint}}
+ \longleftarrow
+ \cO_{\Soft}^{\Bare},
+ \label{eq:operator-span}
+\end{equation}
+where \(\cO_{\mathrm{joint}}\) is defined only when \(\mathfrak R_{\mathrm{joint}}\) exists.  Renormalization is a further map:
+\begin{equation}
+ \cO_{\mathrm{joint}}
+ \xrightarrow{\ \mathrm{REN}\ }
+ \cO_{\TMD}^{\Ren}
+ \xrightarrow{\ \cM_{\mathrm{LF}\to\Proj}\ }
+ \cO_{\Proj}^{\Ren}
+ \xrightarrow{\ \cA_{\Proj\to\ART}\ }
+ \cO_{\ART}.
+ \label{eq:operator-chain}
+\end{equation}
+
+\subsection{Two-cells and count-once relations}
+
+Soft subtraction and zero-bin subtraction may be related by an equivalence two-cell only under their declared common regulator and measurement:
+\begin{equation}
+ \cZ_{\mathrm{zero\ bin}}
+ \Longleftrightarrow
+ \cS_{\mathrm{soft\ division}}
+ +
+ \cR_{\mathrm{equiv}}.
+ \label{eq:zero-soft-equivalence}
+\end{equation}
+The remainder is explicit.  Missing and duplicate subtractions are rejected.
+
+\subsection{Alternative soft realizations}
+
+Direct soft-Fock and auxiliary-field realizations form alternative branches:
+\begin{equation}
+ \cP_{\Soft}
+ =
+ \cP_{\mathrm{direct}}
+ \sqcup
+ \cP_{\mathrm{aux}}
+ \sqcup
+ \cP_{\mathrm{oracle}}.
+ \label{eq:soft-plans}
+\end{equation}
+They may be compared through an equivalence-with-remainder record, but are never summed as independent physical mechanisms.
+
+\subsection{Tensor networks as functorial representations}
+
+A tensor-network representation is a structure-preserving map:
+\begin{equation}
+ \cT_{\chi}:
+ \cH_{\mathrm{exact}}
+ \longrightarrow
+ \cH_{\mathrm{TN},\chi}.
+ \label{eq:tn-functor}
+\end{equation}
+Its bond coordinate \(\chi\) remains an explicit numerical axis.  It does not change the operator, regulator, or evidential status of the state.
+
+\section{Software architecture and machine-readable schemas}
+\label{sec:software}
+
+\subsection{Principal typed objects}
+
+The implementation should provide immutable objects equivalent to:
+\begin{verbatim}
+MicroscopicTMDOperatorDefinition
+CollinearRootId
+SoftRootId
+JointRegulatorId
+StaplePathId
+RapidityRegulatorId
+VacuumHilbertId
+SoftBasisId
+EikonalColorSpaceId
+FourLineSoftOperatorId
+BareCollinearCorrelator
+BareSoftFactor
+ZeroBinMap
+UVCounterterm
+RapidityCounterterm
+RenormalizedMicroscopicTMD
+ProjectPartonicOracle
+LFToProjectMatchingKernel
+MatchingChannelMatrix
+RegulatorTrajectory
+TensorNetworkPlan
+QuantumInterfaceContract
+BridgeReadinessGate
+NoGoDecision
+\end{verbatim}
+
+\subsection{Compact joint-regulator schema}
+
+\begin{verbatim}
+{
+  "collinear_root": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+  "soft_root": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+  "parton_representation": "FUNDAMENTAL",
+  "wilson_geometry_id": "...",
+  "bT_convention": "...",
+  "collinear_regulator_id": "...",
+  "soft_regulator_id": "...",
+  "rapidity_regulator": "MODIFIED_DELTA",
+  "uv_target_scheme": "MSBAR",
+  "measurement_id": "...",
+  "zero_bin_interface_id": "...",
+  "compatibility_status": "...",
+  "remainder_id": "..."
+}
+\end{verbatim}
+
+\subsection{Compact contribution schema}
+
+\begin{verbatim}
+{
+  "diagram_id": "...",
+  "root": "COLLINEAR | SOFT",
+  "order": 1,
+  "real_virtual": "REAL | VIRTUAL | COUNTERTERM",
+  "line_pair": "...",
+  "color_factor": "...",
+  "gauge_dependence": "...",
+  "uv_dependence": "...",
+  "ir_dependence": "...",
+  "rapidity_dependence": "...",
+  "basis_dependence": "...",
+  "x_support": "...",
+  "bT_dependence": "...",
+  "source_or_derivation_hash": "...",
+  "implementation_hash": "...",
+  "cancellation_partners": ["..."],
+  "status": "IMPLEMENTED | UNAVAILABLE | NOT_APPLICABLE_WITH_PROOF"
+}
+\end{verbatim}
+
+\subsection{Storage and determinism}
+
+Heavy symbolic expressions, finite-basis mode arrays, trajectory tables, and tensor-network tensors may remain in a content-addressed runtime directory.  The repository must commit their schemas, dimensions, order, hashes, and deterministic reconstruction commands.  All JSON manifests must reproduce byte-for-byte.
+
+\subsection{Isolation}
+
+The C32/C33 roots remain unreachable from the 216-route production registry until every matching, evolution, process, and physical gate independently passes.  Raw transferred ART25 grids remain outside public Git while redistribution permission is unresolved.
+
+\section{Formal requirements}
+\label{sec:requirements}
+
+The following 65 stable requirements define Volume XXI.
+
+\begin{longtable}{L{0.19\textwidth}L{0.72\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V21.LAYER.1 & Keep the C11 model density, project renormalized TMD, and ART25 optimal TMD as distinct typed layers.\\
+V21.LAYER.2 & Forbid continuum scheme equivalence from acting directly on an unmatched finite-basis density.\\
+V21.ROOT.1 & Keep baryon-number-one collinear and baryon-number-zero soft Hilbert roots disjoint.\\
+V21.ROOT.2 & Forbid the vacuum soft root from entering the proton-state probability normalization.\\
+V21.ROOT.3 & Join the roots only through a content-addressed joint-regulator and overlap contract.\\
+V21.OP.1 & Preserve the historical C11 root and create a versioned completed staple-operator root.\\
+V21.OP.2 & Store active field, Dirac projection, staple direction, transverse closure, color representation, path ordering, and normalization.\\
+V21.OP.3 & Preserve separate positive-\(x\) quark and antiquark identities and anti-fundamental Wilson action.\\
+V21.OP.4 & Require exact tree reduction to C11 before one-loop matching.\\
+V21.OP.5 & Treat Wilson order zero only as a tree-level operator limit.\\
+V21.REG.1 & Store \(K,N_{\max},b_{\mathrm{HO}},\lambda_H,x_{\min}\), boundary, endpoint, and zero-mode data.\\
+V21.REG.2 & Freeze common partonic IR, gauge, and rapidity plans before one-loop calculation.\\
+V21.REG.3 & Forbid a finite basis from being called a rapidity regulator without proof.\\
+V21.REG.4 & Require at least three nested regulator points for any continuum claim.\\
+V21.COLL.1 & Maintain a complete one-loop collinear diagram and counterterm ledger.\\
+V21.COLL.2 & Forbid absent real, virtual, Wilson, instantaneous, boundary, endpoint, zero-mode, or mixing terms from being silently zero.\\
+V21.COLL.3 & Preserve exact delta, plus, regular, convolution, and Mellin distribution algebra.\\
+V21.COLL.4 & Keep the microscopic unsubtracted correlator unavailable beyond tree level until its gates pass.\\
+V21.SOFT.1 & Construct a distinct finite vacuum plus soft-gluon Hilbert space for a microscopic soft claim.\\
+V21.SOFT.2 & Represent the complete four-line fundamental/conjugate Wilson geometry and singlet color trace.\\
+V21.SOFT.3 & Require the tree soft factor to equal one exactly.\\
+V21.SOFT.4 & Derive modified-\(\delta\) signs from stored line, momentum, Fourier, and \(i0\) conventions.\\
+V21.SOFT.5 & Maintain a complete one-loop soft diagram and counterterm ledger.\\
+V21.SOFT.6 & Keep direct finite-Fock, auxiliary-field, and continuum-oracle soft plans mutually exclusive.\\
+V21.SOFT.7 & Forbid importing a continuum soft function as the finite-basis microscopic result.\\
+V21.UV.1 & Separate field, bilocal, Wilson self-energy, cusp/endpoint, vacuum, residual-mass, and basis UV counterterms.\\
+V21.UV.2 & Separate logarithmic UV terms from power divergences and finite constants.\\
+V21.UV.3 & Require target UV anomalous-dimension closure for a positive status.\\
+V21.RAP.1 & Keep bare rapidity dependence, rapidity counterterm, and renormalized object separate.\\
+V21.RAP.2 & Require regulator cancellation, gauge independence, and future/past equality for a positive rapidity status.\\
+V21.RAP.3 & Store the exact rapidity-derivative and Collins--Soper sign convention.\\
+V21.RAP.4 & Require \(\dd\cD/\dd\ln\mu=\Gamma_{\mathrm{cusp}}\) at the declared order.\\
+V21.ZERO.1 & Define a typed collinear-to-soft zero-bin or overlap map.\\
+V21.ZERO.2 & Place the overlap subtraction exactly once.\\
+V21.ZERO.3 & Require signed nonzero missing- and duplicate-subtraction controls.\\
+V21.ZERO.4 & Treat soft-division and zero-bin equivalence as conditional and remainder-bearing.\\
+V21.ORACLE.1 & Evaluate a source-qualified target project partonic TMD with the same external-state IR prescription.\\
+V21.ORACLE.2 & Preserve target delta, plus, regular, anomalous-dimension, and moment structures.\\
+V21.MATCH.1 & Extract LF-to-project matching from a common-IR partonic difference, never a hadron-level ratio.\\
+V21.MATCH.2 & Decide \(q\leftarrow q\), \(q\leftarrow g\), \(q\leftarrow\bar q\), singlet, and nonsinglet channel status.\\
+V21.MATCH.3 & Require matching kernels to be state, hadron, ART25-member, and data independent.\\
+V21.MATCH.4 & Require infrared finiteness and gauge independence for a positive matching status.\\
+V21.MATCH.5 & Preserve the first omitted order and nonzero remainder.\\
+V21.MATCH.6 & Require finite-scheme factors to carry hard-factor companion transformations.\\
+V21.MATCH.7 & Keep project-to-ART25 scheme, scale, evolution, threshold, FNP, and CS maps separate.\\
+V21.TRAJ.1 & Separate logarithmic cutoff, finite conversion, power, endpoint, zero-mode, and numerical terms.\\
+V21.TRAJ.2 & Fit only analytically predicted regulator structures.\\
+V21.TRAJ.3 & Forbid ART25 residuals from selecting regulator trajectories or counterterms.\\
+V21.TN.1 & Keep hadronic and vacuum-soft tensor networks as separate roots.\\
+V21.TN.2 & Treat bond dimension as an observable-specific numerical/truncation axis.\\
+V21.TN.3 & Forbid energy convergence from substituting for TMD, soft, or matching convergence.\\
+V21.Q.1 & Keep quantum state preparation separate from the renormalization and matching compiler.\\
+V21.Q.2 & Forbid a QDNN from learning missing UV, soft, rapidity, or zero-bin terms from data.\\
+V21.BRIDGE.1 & Keep all twelve frozen rank-zero proton points common-domain-only until every gate closes.\\
+V21.BRIDGE.2 & Preserve the empty-not-zero \(642\times0\) representation when microscopic coordinates are unavailable.\\
+V21.BRIDGE.3 & Preserve all external member identities, covariance rank, and null spaces after any later projection.\\
+V21.BRIDGE.4 & Keep the cross-root relation \texttt{NO\_JOINT\_MEASURE}.\\
+V21.BRIDGE.5 & Preserve ART25 data ancestry and compressed-constraint/direct-data exclusivity.\\
+V21.STATUS.1 & Permit rigorous tree-level-only, soft-sector, regulator, state-independence, and trajectory no-go results.\\
+V21.STATUS.2 & Require every no-go result to specify the exact missing calculation.\\
+V21.STATUS.3 & Forbid a valid soft sector from being called a complete microscopic TMD.\\
+V21.STATUS.4 & Forbid microscopic export, bridge readiness, inference, or process promotion before all gates pass.\\
+V21.ISO.1 & Keep C7--C32 scientific results, frozen bridge roles, production routes, and authoritative artifacts unchanged.\\
+V21.ISO.2 & Keep raw transferred source files outside public Git absent permission.\\
+V21.DET.1 & Require deterministic byte-identical manifests and content-addressed heavy outputs.\\
+\bottomrule
+\end{longtable}
+
+\section{Benchmark and falsification program}
+\label{sec:benchmarks}
+
+\begin{longtable}{L{0.15\textwidth}L{0.76\textwidth}}
+\toprule
+Family & Required content\\
+\midrule
+\endhead
+XXI-A & Three-layer identity and failure of layer collapse.\\
+XXI-B & C32 operator completion, exact C11 tree reduction, quark/antiquark identity, and historical immutability.\\
+XXI-C & Frozen collinear, soft, IR, gauge, and rapidity regulator plans.\\
+XXI-D & Complete collinear one-loop diagram, counterterm, endpoint, zero-mode, and mixing ledger.\\
+XXI-E & Distributional delta/plus/regular algebra, lower-limit prescriptions, Mellin moments, and quark-number closure.\\
+XXI-F & Distinct B=0 vacuum Hilbert space and B=1 baryonic root with no probability mixing.\\
+XXI-G & Four-line eikonal color geometry, path reversal, transverse closure, and tree normalization.\\
+XXI-H & Direct finite-Fock and auxiliary-field soft representations with explicit evidence scopes.\\
+XXI-I & Modified-\(\delta\) denominator derivation, regulator-removal order, and future/past equality.\\
+XXI-J & Complete one-loop soft contribution and counterterm ledger.\\
+XXI-K & Soft UV renormalization, power/log separation, cusp/endpoint closure, and gauge checks.\\
+XXI-L & Rapidity renormalization, rapidity anomalous dimension, and cusp-consistency relation.\\
+XXI-M & Zero-bin/overlap map, missing/duplicate controls, and conditional equivalence with soft division.\\
+XXI-N & Source-qualified project partonic oracle with common IR and independent distributional checks.\\
+XXI-O & LF-to-project matching channel matrix, IR/gauge closure, state independence, and ART25-data independence.\\
+XXI-P & Three-point regulator trajectories, zero-mode/endpoints, power corrections, and TTN observable convergence.\\
+XXI-Q & Project-to-ART25 alignment, hard companion, \(\zeta\)-prescription/evolution separation, and exact external flavor convention.\\
+XXI-R & Conditional bridge gate, covariance/null-space preservation, no-joint-measure, no-double-counting, and readiness isolation.\\
+\bottomrule
+\end{longtable}
+
+\section{Mandatory negative-test catalogue}
+\label{sec:negative-tests}
+
+The C33/C34 implementation chain should contain at least 2,040 ordered negative injections.  The following categories are normative.
+
+\subsection{Layer and root failures}
+
+Reject a C11 model density labeled a renormalized \TMD; project and ART25 layers collapsed; \(\zeta\)-prescription labeled UV renormalization; the vacuum state inserted into the proton Fock normalization; B=0 and B=1 root aliases; or the C32 operator root overwritten.
+
+\subsection{Operator and regulator failures}
+
+Reject an omitted staple segment, omitted transverse closure, wrong color representation, lost path ordering, altered tree normalization, unrecorded \(K,N_{\max},b_{\mathrm{HO}}\), endpoint or zero-mode policies, a basis cutoff called a rapidity regulator, different unconverted IR prescriptions, or a regulator plan selected after inspecting residuals.
+
+\subsection{Collinear contribution failures}
+
+Reject omitted self-energy, real, vertex, Wilson, instantaneous, boundary, endpoint, zero-mode, or mixing terms; endpoint cutoffs replacing distributions; failed quark-number moments; an antiquark copied from a quark; or a tree result promoted to one loop.
+
+\subsection{Soft-sector failures}
+
+Reject a missing vacuum state, missing one-gluon normalization, omitted eikonal lines, wrong fundamental/conjugate action, wrong trace normalization, imported continuum soft factors labeled finite-basis results, soft factors counted twice, real/virtual duplication, or auxiliary and direct soft plans added together.
+
+\subsection{UV and rapidity failures}
+
+Reject uncanceled UV or rapidity dependence, hidden power divergences, omitted cusp or endpoint counterterms, wrong square-root allocation, gauge dependence, a fitted rapidity anomalous dimension, an ART25 \CS\ kernel copied into the microscopic soft result, or regulator removal before real/virtual assembly.
+
+\subsection{Overlap failures}
+
+Reject a missing zero-bin, duplicate subtraction, incompatible soft and collinear measurement, untyped regulator conversion, a valid soft factor treated as the full \TMD, or fabricated collinear coefficients used to close the compatibility square.
+
+\subsection{Matching failures}
+
+Reject hadron-level ratios, pointwise normalizations, ART25-member-dependent kernels, state-dependent maps called matching, unresolved IR or gauge dependence, assumed-zero \(q\leftarrow g\), missing first omitted order, finite factors without hard companions, or scale evolution hidden inside a finite conversion.
+
+\subsection{Trajectory and tensor-network failures}
+
+Reject one basis point called a continuum limit, arbitrary polynomial trajectories, ART25 residuals used to tune cutoff constants, zero-mode sensitivity discarded, energy convergence substituted for operator convergence, bond dimension treated as a replica, or soft and hadronic networks merged.
+
+\subsection{Bridge and inference failures}
+
+Reject empty coordinates interpreted as zero TMDs, dropped ART25 members, null-space ridge regularization, cross-root index pairing, compressed ART25 plus direct data counted independently, holdouts moved, residuals called likelihoods or \(p\)-values, fitting, reweighting, emulation, process execution, or deuteron and production promotion.
+
+\section{Implementation stages and deliverables}
+\label{sec:stages}
+
+\subsection{Stage XXI.0: normative source and baseline authority}
+
+Hash-audit C31, C32, Volumes V, XVI--XX, and the primary TMD, soft, rapidity, zero-bin, auxiliary-field, and ART25 sources.  Reproduce the exact C32 tree-reduction and fail-closed status.
+
+\subsection{Stage XXI.1: operator and regulator roots}
+
+Construct immutable collinear and soft root IDs, complete the shared regulator schema, freeze soft realization plans, and validate the four-line operator and tree normalization.
+
+\subsection{Stage XXI.2: finite vacuum soft realization}
+
+Build the vacuum plus one-soft-gluon basis, direct and auxiliary-field oracles, modified-\(\delta\) denominators, complete contribution ledger, bare soft factor, and zero-mode policy.
+
+\subsection{Stage XXI.3: soft UV and rapidity renormalization}
+
+Implement soft counterterms, gauge and link closure, rapidity anomalous dimension, continuum modified-\(\delta\) oracle, and finite-basis soft trajectory.
+
+\subsection{Stage XXI.4: soft--collinear compatibility}
+
+Define the regulator-pair decision, zero-bin interface, count-once relation, and exact continuation gate.  Do not yet export a proton \TMD.
+
+\subsection{Stage XXI.5: resumed collinear one-loop and matching}
+
+After the continuation gate, calculate the unavailable C32 collinear entries, combine the soft and overlap sectors, evaluate the project partonic oracle, extract the state-independent LF-to-project channel matrix, and audit the basis trajectory.
+
+\subsection{Stage XXI.6: conditional microscopic export and bridge}
+
+Only after all matching gates pass, export \(u,d,\bar u,\bar d\) on the frozen grid, apply the read-only project-to-ART25 alignment and evolution, preserve all 642 source members and null spaces, and produce noninferential diagnostics.
+
+\subsection{Principal deliverables}
+
+The implementation should create machine-readable records for:
+\begin{itemize}
+\item two-root identity and joint regulator;
+\item operator completion and tree reduction;
+\item collinear and soft basis plans;
+\item eikonal color and Wilson geometry;
+\item one-loop diagram and counterterm ledgers;
+\item distributional algebra;
+\item bare and renormalized soft functions;
+\item zero-bin and overlap compatibility;
+\item project partonic oracle;
+\item LF-to-project matching channel matrix;
+\item trajectories and uncertainty budgets;
+\item tensor-network and quantum-interface plans;
+\item continuation gates, no-go decisions, and conditional bridge capabilities.
+\end{itemize}
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+Volume XXI is satisfied only when the implementation chain demonstrates:
+
+\begin{enumerate}
+\item the exact C32 baseline reproduces;
+\item C11 remains a regulated model density;
+\item the C32 completed operator remains a distinct root;
+\item the twelve nonzero tree reductions remain exact;
+\item B=1 collinear and B=0 soft roots are disjoint;
+\item the soft root is excluded from proton normalization;
+\item the shared regulator identity is complete;
+\item collinear, soft, IR, gauge, and rapidity plans are frozen before results;
+\item the finite basis is not used as an unproved rapidity regulator;
+\item all required collinear and soft one-loop contributions receive explicit statuses;
+\item no absent contribution is silently zero;
+\item endpoint distributions are exact;
+\item Mellin and quark-number tests close where claimed;
+\item the four-line soft operator is complete;
+\item the tree soft factor is exactly one;
+\item any finite-basis one-loop soft factor is genuinely calculated in its declared regulator;
+\item the continuum oracle is not substituted for the finite-basis result;
+\item UV counterterms are explicit;
+\item power and logarithmic divergences remain separate;
+\item rapidity counterterms are explicit;
+\item rapidity regulator dependence cancels when claimed;
+\item gauge dependence cancels when claimed;
+\item future/past equality closes for the \(T\)-even soft factor;
+\item the cusp-consistency relation is tested;
+\item the zero-bin/overlap map is explicit;
+\item overlap subtraction is placed exactly once;
+\item missing and duplicate subtractions give signed defects;
+\item the target project oracle uses the same IR prescription;
+\item the matching difference is IR finite when claimed;
+\item all one-loop mixing channels receive a decision;
+\item the matching kernel is state and data independent;
+\item no ART25 member, data point, \(\chi^2\), or bridge residual enters the derivation;
+\item the first omitted order and remainder remain visible;
+\item at least three regulator points support any continuum claim;
+\item logarithmic, finite, endpoint, zero-mode, power, and numerical terms remain separate;
+\item TTN bond convergence is tested on the relevant operators;
+\item energy convergence is not used as a TMD or soft proxy;
+\item project-to-ART25 scheme, scale, evolution, threshold, FNP, and CS pieces remain distinct;
+\item a microscopic export occurs only after every gate passes;
+\item failed exports remain empty, not zero;
+\item any bridge rerun preserves all 642 members, rank, and null spaces;
+\item frozen calibration/holdout roles remain unchanged;
+\item \texttt{NO\_JOINT\_MEASURE} remains unchanged;
+\item ART25 data ancestry and no-double-counting remain intact;
+\item no fit, likelihood, posterior, optimization, reweighting, or emulator is created;
+\item no process, deuteron, spin-1, gluon, T-odd, inference, or production status is promoted;
+\item every no-go result contains an exact missing-calculation specification;
+\item all prior tests, builders, manifests, production routes, and authoritative artifacts remain unchanged;
+\item raw transferred source files remain outside public Git absent permission;
+\item every ordered negative injection yields its expected diagnostic;
+\item all new manifests reproduce byte-for-byte;
+\item the working tree is clean except for explicitly preserved untracked restricted source directories;
+\item the completion commit is local and unpushed.
+\end{enumerate}
+
+A tree-level-only result, a structurally unavailable vacuum soft root, an incompatible regulator pair, a state-dependent map, or an unresolved continuum trajectory is an acceptable scientific outcome when reported exactly.
+
+\section{C33/C34 implementation boundary}
+\label{sec:handoff}
+
+\subsection{C33/S0 boundary}
+
+C33/S0 implements only the finite-basis vacuum/eikonal soft root, its one-loop soft function, UV and rapidity renormalization, continuum soft oracle, finite-basis trajectory, soft--collinear compatibility, zero-bin interface, tensor-network plan, and continuation gate.
+
+C33 must not export a microscopic proton \TMD\ or rerun the twelve-point bridge.
+
+\subsection{Successful continuation}
+
+If C33 issues
+\begin{equation}
+ \texttt{C33\_SOFT\_SECTOR\_READY\_FOR\_COLLINEAR\_MATCHING},
+ \label{eq:c33-continuation}
+\end{equation}
+C34/R0B resumes the C32 collinear one-loop calculation and extracts the LF-to-project matching kernel.
+
+\subsection{Failure branches}
+
+If the soft trajectory, auxiliary/direct equivalence, regulator compatibility, or vacuum Hilbert construction fails, C34 follows the exact branch in \cref{sec:no-go}; no curve-level comparison is allowed to bypass it.
+
+\subsection{Quantum-assistance branch}
+
+Quantum or tensor-network circuitization may begin at the state and operator-representation level, but calibration remains downstream of a nonempty, scheme-qualified microscopic bridge and an identifiability audit.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The C31--C32 sequence resolves the most important ambiguity in the microscopic TMD program.  The historical C11 parent is not rejected: it is preserved as a finite-basis model density and is proven to be the exact tree-level reduction of a completed staple-operator root on twelve nonzero quark and antiquark parents.  What fails is the assumption that the baryonic basis alone can supply every ingredient of a physical TMD.  At one loop, the missing object is a vacuum Wilson-line soft sector with its own baryon-number-zero Hilbert space, rapidity regulator, UV counterterms, and continuum trajectory.
+
+Volume XXI therefore replaces a one-root picture with a two-root collinear--soft architecture.  The baryonic root carries the microscopic state and unsubtracted collinear operator.  The vacuum/eikonal root carries the four-line soft factor.  A joint regulator and zero-bin contract controls their composition.  Only after UV and rapidity renormalization, common-IR cancellation, gauge closure, state-independent matching, and continuum convergence may the project-to-ART25 alignment and external covariance bridge be activated.
+
+This architecture also clarifies the future quantum program.  The hadronic tensor or quantum network represents the common microscopic state; a separate soft/eikonal network represents the universal vacuum operator; and a nonlearned physics compiler performs subtraction, renormalization, matching, and evolution.  External PDFs, TMD extractions, lattice matrix elements, form factors, and \(b_1\) can later constrain one shared microscopic parameter set only after this operator bridge exists.  A quantum neural network cannot be permitted to learn away a missing soft factor or regulator counterterm.
+
+The next scientific threshold is consequently exact.  C33 must determine whether a finite baryon-number-zero vacuum/eikonal soft sector can be constructed and rapidity-renormalized in a regulator compatible with C32.  If it can, C34 returns to the one-loop collinear and matching calculation.  If it cannot, the no-go status identifies which regulator or operator architecture must be replaced.  Either outcome is progress because the model's predictive path is now defined by field-theoretic identities rather than by curve-level analogy.
+
+\appendix
+
+\section{C31--C32 numerical and status authority}
+\label{app:authority}
+
+\begin{longtable}{L{0.47\textwidth}L{0.41\textwidth}}
+\toprule
+Quantity & Authoritative value/status\\
+\midrule
+\endhead
+C31 completion status & {\footnotesize\nolinkurl{NO_SOURCE_QUALIFIED_LF_TO_TMD_MATCHING}}\\
+C11 classification & \texttt{REGULATED\_MODEL\_DENSITY}\\
+C32 operator root & {\footnotesize\nolinkurl{C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION}}\\
+Tree parents & \(u,d,\bar u,\bar d\) at \(x=0.03,0.10,0.30\)\\
+Tree matrix residual & 0\\
+Tree forward-reduction residual & 0\\
+Fine microscopic plan & {\ttfamily\footnotesize\seqsplit{C11:H4:PLAN:04c40be451b5c7f3a60b}}\\
+Fine regulator ID & {\ttfamily\footnotesize\seqsplit{C7:H0:RESOLUTION:b8196017a6bde7c88eda}}\\
+Collinear trajectory & \(\begin{gathered}(K,N_{\max},b_{\mathrm{HO}})=\\(9/2,8,0.40),\\(11/2,10,0.45),\\(13/2,12,0.50)\end{gathered}\)\\
+Hamiltonian scale & \(\lambda_H=1.2\) GeV\\
+Minimum longitudinal support & \(x_{\min}=1/18\)\\
+Partonic momenta & 5 and 10 GeV\\
+Partonic off-shellness & \(-0.04,-0.09\) GeV\(^2\)\\
+Gauge holdouts & \(\xi_g=0,1,2\)\\
+Rapidity plan & modified-\(\delta\)\\
+One-loop ledger & 25 entries, none silently zero\\
+Distribution engine & delta, plus, regular, lower-limit-plus, convolution, Mellin\\
+Decisive C32 status & {\footnotesize\nolinkurl{C32_MICROSCOPIC_SOFT_SECTOR_UNDEFINED}}\\
+First omitted order & \(\order(\as)\)\\
+Remainder & \texttt{NONZERO\_UNKNOWN}\\
+Frozen bridge points & 12 common-domain-only, 0 ready\\
+External preserved factor & \(642\times11\), rank 10, nullity 1\\
+Failed bridge projection & \(642\times0\), empty-not-zero\\
+Cross-root relation & {\footnotesize\nolinkurl{NO_JOINT_MEASURE}}\\
+Production registry & 216 routes, unchanged\\
+\bottomrule
+\end{longtable}
+
+\section{Compact one-loop ledger}
+\label{app:ledger}
+
+\begin{longtable}{L{0.27\textwidth}L{0.18\textwidth}L{0.43\textwidth}}
+\toprule
+Contribution & Root & Required decision\\
+\midrule
+\endhead
+quark self energy & collinear & implemented, unavailable, or proved non-applicable\\
+bilocal vertex & collinear & distributional \(x\)-space result\\
+real emission & collinear & support and cut structure\\
+staple attachment & collinear & path-derived sign and regulator\\
+instantaneous fermion/gluon & collinear & LF Hamiltonian consistency\\
+basis boundary/endpoint & collinear & regulator artifact versus counterterm\\
+\(n\)--\(\bar n\) exchange & soft & real/virtual rapidity and UV structure\\
+same-direction exchange & soft & explicit zero or nonzero decision\\
+Wilson self energy & both & line renormalization\\
+cusp/endpoint & both & junction UV structure\\
+transverse closure & both & path-completion term\\
+soft real/virtual & soft & count once\\
+zero mode & both & explicit policy and sensitivity\\
+zero-bin/overlap & joint & compatibility map and signed controls\\
+UV counterterms & both & pole/log/power separation\\
+rapidity counterterms & both & regulator cancellation\\
+mixing channels & matching & \(q\leftarrow q,g,\bar q\) decision\\
+\bottomrule
+\end{longtable}
+
+\section{Compact no-go checklist}
+\label{app:nogo}
+
+Before issuing a microscopic \TMD\ or bridge-ready coordinate, verify:
+\begin{enumerate}
+\item completed operator and exact C11 tree reduction;
+\item distinct collinear and vacuum soft roots;
+\item complete four-line soft geometry;
+\item finite vacuum basis or source-qualified alternative;
+\item common rapidity and UV conventions;
+\item complete collinear and soft one-loop ledgers;
+\item zero-bin/overlap count-once closure;
+\item UV and rapidity renormalization;
+\item common-IR project oracle;
+\item gauge and anomalous-dimension closure;
+\item state-independent LF-to-project matching;
+\item at least three regulator resolutions;
+\item first omitted order and all nonzero-unknown remainders;
+\item project-to-ART25 alignment and scale map;
+\item preserved ART25 member order, covariance rank, null space, roles, and ancestry;
+\item no fit, pointwise normalization, or external-data dependence in the operator calculation.
+\end{enumerate}
+
+\section{Reference sources}
+\label{app:references}
+
+\begingroup
+\raggedright
+\begin{thebibliography}{99}
+
+\bibitem{C31Report}
+DeuteronWigner project,
+``C31/B1A implementation report: microscopic light-front-to-TMD renormalization and scheme-adapter source closure,''
+repository record \texttt{docs/next\_level/c31\_implementation\_report.md} (2026).
+
+\bibitem{C32Report}
+DeuteronWigner project,
+``C32/R0 implementation report: regulator-specific microscopic TMD operator completion and matching audit,''
+repository record \texttt{docs/next\_level/c32\_implementation\_report.md} (2026).
+
+\bibitem{C12Report}
+DeuteronWigner project,
+``C12/H5 implementation report: microscopic Wilson-line dynamics on the H4 parent,''
+repository record \texttt{docs/next\_level/c12\_implementation\_report.md} (2026).
+
+\bibitem{C14Report}
+DeuteronWigner project,
+``C14/H7 implementation report: explicit higher-Fock Wilson support through order two,''
+repository record \texttt{docs/next\_level/c14\_implementation\_report.md} (2026).
+
+\bibitem{C33Prompt}
+DeuteronWigner project,
+``C33/S0 work package: finite-basis vacuum/eikonal soft Hilbert sector, one-loop TMD soft function, and rapidity-renormalization construction,''
+repository work package (2026).
+
+\bibitem{VolumeXX}
+DeuteronWigner project,
+``Volume XX: Source-Reproducible Dataset Ensembles, Covariance Geometry, and Typed External Constraints on Microscopic TMD Models'' (2026).
+
+\bibitem{CanonicalNote}
+DeuteronWigner project,
+``Construction and Status of the Canonical Spin-1 Deuteron GTMD/TMD Model'' (2026).
+
+\bibitem{Collins2011}
+J. Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\bibitem{EIS2012}
+M. G. Echevarria, A. Idilbi, and I. Scimemi,
+``Factorization Theorem for Drell--Yan at Low \(q_T\) and Transverse Momentum Distributions on the Light Cone,''
+\href{https://arxiv.org/abs/1111.4996}{arXiv:1111.4996} (2011).
+
+\bibitem{CollinsRogers2012}
+J. C. Collins and T. C. Rogers,
+``Equality of Two Definitions for Transverse Momentum Dependent Parton Distribution Functions,''
+\href{https://arxiv.org/abs/1210.2100}{arXiv:1210.2100} (2012).
+
+\bibitem{ESVSoft2016}
+M. G. Echevarria, I. Scimemi, and A. Vladimirov,
+``Universal Transverse Momentum Dependent Soft Function at NNLO,''
+\href{https://arxiv.org/abs/1511.05590}{arXiv:1511.05590} (2015).
+
+\bibitem{ESVTMD2016}
+M. G. Echevarria, I. Scimemi, and A. Vladimirov,
+``Unpolarized Transverse Momentum Dependent Parton Distribution and Fragmentation Functions at Next-to-Next-to-Leading Order,''
+\href{https://arxiv.org/abs/1604.07869}{arXiv:1604.07869} (2016).
+
+\bibitem{ChiuEtAl2012}
+J.-Y. Chiu, A. Jain, D. Neill, and I. Z. Rothstein,
+``A Formalism for the Systematic Treatment of Rapidity Logarithms in Quantum Field Theory,''
+\href{https://arxiv.org/abs/1202.0814}{arXiv:1202.0814} (2012).
+
+\bibitem{LiNeillZhu2016}
+Y. Li, D. Neill, and H. X. Zhu,
+``An Exponential Regulator for Rapidity Divergences,''
+\href{https://arxiv.org/abs/1604.00392}{arXiv:1604.00392} (2016).
+
+\bibitem{LubbertEtAl2016}
+T. L\"ubbert, J. Oredsson, and M. Stahlhofen,
+``Rapidity Renormalized TMD Soft and Beam Functions at Two Loops,''
+\href{https://arxiv.org/abs/1602.01829}{arXiv:1602.01829} (2016).
+
+\bibitem{Vladimirov2017}
+A. Vladimirov,
+``Correspondence between Soft and Rapidity Anomalous Dimensions,''
+\href{https://arxiv.org/abs/1610.05791}{arXiv:1610.05791} (2016).
+
+\bibitem{Vladimirov2018}
+A. Vladimirov,
+``Structure of Rapidity Divergences in Multi-Parton Scattering Soft Factors,''
+\href{https://arxiv.org/abs/1707.07606}{arXiv:1707.07606} (2017).
+
+\bibitem{IdilbiMehen2007}
+A. Idilbi and T. Mehen,
+``On the Equivalence of Soft and Zero-Bin Subtractions,''
+\href{https://arxiv.org/abs/hep-ph/0702022}{arXiv:hep-ph/0702022} (2007).
+
+\bibitem{GreenJansenSteffens2020}
+J. R. Green, K. Jansen, and F. Steffens,
+``Improvement, Generalization, and Scheme Conversion of Wilson-Line Operators on the Lattice in the Auxiliary Field Approach,''
+\href{https://arxiv.org/abs/2002.09408}{arXiv:2002.09408} (2020).
+
+\bibitem{FrancisEtAl2023}
+A. Francis, I. Kanamori, C.-J. D. Lin, W. Morris, and Y. Zhao,
+``The Lattice Extraction of the TMD Soft Function Using the Auxiliary Field Representation of the Wilson Line,''
+\href{https://arxiv.org/abs/2312.04315}{arXiv:2312.04315} (2023).
+
+\bibitem{Moos2025}
+V. Moos, I. Scimemi, A. Vladimirov, and M. P. Zurita,
+``Determination of Unpolarized TMD Distributions from the Fit of Drell--Yan and SIDIS Data at N\(^4\)LL,''
+\href{https://arxiv.org/abs/2503.11201}{arXiv:2503.11201} (2025).
+
+\end{thebibliography}
+\endgroup
+
+\end{document}

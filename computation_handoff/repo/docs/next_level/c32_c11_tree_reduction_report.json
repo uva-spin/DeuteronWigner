@@ -1,0 +1,182 @@
+{
+  "conditions": [
+    "g=0 through C12 H4WilsonKernel",
+    "staple=identity",
+    "soft=1",
+    "zero-bin=0",
+    "UV=1",
+    "rapidity=1",
+    "same C11 plan/basis/state/operator normalization"
+  ],
+  "one_loop_readiness": false,
+  "oracle": {
+    "maximum_residual": 0.0,
+    "plan_id": "C11:H4:PLAN:04c40be451b5c7f3a60b",
+    "resolution_id": "H3_FINE",
+    "rows": [
+      {
+        "flavor": "u",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:a59164eb61fa7aa44267",
+        "parent_scalar": 0.2832259729759783,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.03,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "u",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:b389230a1451f4869c1d",
+        "parent_scalar": 0.34478865223437705,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.1,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "u",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:1867d55e845e0f35848d",
+        "parent_scalar": 0.23829338945456635,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.3,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "d",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:071819f953503e81f5ec",
+        "parent_scalar": 0.17800549129310833,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.03,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "d",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:b9f17c9b27bd6e7a37e3",
+        "parent_scalar": 0.216697193369601,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.1,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "d",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:b00d43ac930d6a589f6a",
+        "parent_scalar": 0.14976568503255766,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.3,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "ubar",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:45c188f18886a0a34a54",
+        "parent_scalar": 0.026175089770891433,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.03,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "ubar",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:230a6b296b8fcbec8f0a",
+        "parent_scalar": 0.027431503811208548,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.1,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "ubar",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:9cd707aa568186b9134f",
+        "parent_scalar": 0.011468845666015273,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.3,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "dbar",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:b27a2b9433f40b805f65",
+        "parent_scalar": 0.038655898524763456,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.03,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "dbar",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:171ad513caeff1736bf1",
+        "parent_scalar": 0.040511396025352656,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.1,
+        "zero_bin": 0.0
+      },
+      {
+        "flavor": "dbar",
+        "matrix_residual": 0.0,
+        "nonvacuous_parent": true,
+        "parent_id": "C11:H4:PARENT:e452b34179be9a44fe77",
+        "parent_scalar": 0.016937421729673836,
+        "rapidity_factor": 1.0,
+        "reduction_residual": 0.0,
+        "soft_factor": 1.0,
+        "uv_factor": 1.0,
+        "x": 0.3,
+        "zero_bin": 0.0
+      }
+    ]
+  },
+  "residual": 0.0,
+  "routes": [
+    "actual C11 helicity matrices",
+    "actual C11 MicroscopicReductionMap scalars"
+  ],
+  "schema_version": "1.0.0",
+  "status": "C32_C11_TREE_REDUCTION_VALIDATED"
+}

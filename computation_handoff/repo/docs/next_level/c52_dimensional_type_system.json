@@ -1,0 +1,30 @@
+{
+  "M2": {
+    "L": 0,
+    "P_plus": 0,
+    "b_HO": 0,
+    "mass": 2,
+    "operator": "M2_COMPONENT",
+    "regulator": "L_CANCELLED",
+    "transverse_rank": "MIXED_0_1"
+  },
+  "Pminus": {
+    "L": 0,
+    "P_plus": 0,
+    "b_HO": 0,
+    "mass": 1,
+    "operator": "P_MINUS_COMPONENT",
+    "regulator": "L_CANCELLED",
+    "transverse_rank": "MIXED_0_1"
+  },
+  "primitive": {
+    "L": 0,
+    "P_plus": 0,
+    "b_HO": 0,
+    "mass": 1,
+    "operator": "P_MINUS_PRIMITIVE",
+    "regulator": "L_CANCELLED",
+    "transverse_rank": "MIXED_0_1"
+  },
+  "sum_gate": "reject nonidentical M2 signatures before numerical sum"
+}

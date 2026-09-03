@@ -1,0 +1,29 @@
+{
+  "mutually_exclusive": true,
+  "plans": [
+    {
+      "kind": "DIRECT_FINITE_BASIS",
+      "microscopic_candidate": true,
+      "one_loop_executable_now": false,
+      "plan_id": "S0-FB-EIKONAL-FOCK"
+    },
+    {
+      "kind": "AUXILIARY_METHOD_ORACLE",
+      "microscopic_candidate": false,
+      "one_loop_executable_now": false,
+      "plan_id": "S0-AUXILIARY-EIKONAL"
+    },
+    {
+      "can_issue_finite_basis_status": false,
+      "kind": "CONTINUUM_TARGET_ORACLE",
+      "microscopic_candidate": false,
+      "plan_id": "S0-CONTINUUM-ORACLE-ONLY"
+    },
+    {
+      "kind": "NO_REALIZATION",
+      "plan_id": "S0-UNAVAILABLE",
+      "selected": false
+    }
+  ],
+  "schema_version": "1.0.0"
+}

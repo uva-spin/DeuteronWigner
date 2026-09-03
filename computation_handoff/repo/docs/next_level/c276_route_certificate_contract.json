@@ -1,0 +1,93 @@
+{
+  "authority_record": {
+    "closed_routes": 0,
+    "common_missing_object": "C168-REQUEST-2-MASS-PROJECTED-SELF-ENERGY",
+    "root": "fed10be9f983e162c2273e409e776f0027894dd96e35020f7f0bdd576b048415",
+    "rows": [
+      {
+        "false_agreement": false,
+        "resolution": "K9",
+        "routes": [
+          {
+            "agreement": null,
+            "route": "ZM_FACTOR_RATIO",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "COMMON_PROJECTED_GREEN_FUNCTION",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "ORDER_G2_COEFFICIENT_DIFFERENCE",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "INVERSE_ROUNDTRIP",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          }
+        ]
+      },
+      {
+        "false_agreement": false,
+        "resolution": "K11",
+        "routes": [
+          {
+            "agreement": null,
+            "route": "ZM_FACTOR_RATIO",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "COMMON_PROJECTED_GREEN_FUNCTION",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "ORDER_G2_COEFFICIENT_DIFFERENCE",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "INVERSE_ROUNDTRIP",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          }
+        ]
+      },
+      {
+        "false_agreement": false,
+        "resolution": "K13",
+        "routes": [
+          {
+            "agreement": null,
+            "route": "ZM_FACTOR_RATIO",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "COMMON_PROJECTED_GREEN_FUNCTION",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "ORDER_G2_COEFFICIENT_DIFFERENCE",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          },
+          {
+            "agreement": null,
+            "route": "INVERSE_ROUNDTRIP",
+            "status": "BLOCKED_ON_SAME_MASS_PROJECTED_SELF_ENERGY"
+          }
+        ]
+      }
+    ]
+  },
+  "package_root": "97d8fd6b6bd40d1295d7cdf9d3d3b849c375c7adad1f24794d86261b3e2d3994",
+  "physical": false,
+  "plan": "RIMASSADAPTER1-B",
+  "schema": "C276-ROUTE_CERTIFICATE-CONTRACT-V1",
+  "status": "C276_RI_SMOM_SIGNED_MASS_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_MASS_PROJECTED_SELF_ENERGY_INCOMPLETE",
+  "validation": "BOUND"
+}

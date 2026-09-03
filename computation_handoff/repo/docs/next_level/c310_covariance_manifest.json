@@ -1,0 +1,52 @@
+{
+  "authority_record": {
+    "components": [
+      "cutoff_window",
+      "fit_family",
+      "quadrature",
+      "mode_order",
+      "resolution",
+      "roundoff"
+    ],
+    "correlation": [
+      [
+        1,
+        0.31,
+        -0.82,
+        -0.19
+      ],
+      [
+        0.31,
+        1,
+        -0.22,
+        -0.79
+      ],
+      [
+        -0.82,
+        -0.22,
+        1,
+        0.27
+      ],
+      [
+        -0.19,
+        -0.79,
+        0.27,
+        1
+      ]
+    ],
+    "interval_primary": true,
+    "order": [
+      "CHI8_tail",
+      "RE_TF3_tail",
+      "CHI8_remainder",
+      "RE_TF3_remainder"
+    ],
+    "root": "e6b7201c087bb5ad8e1e2940d7ba155690f16f078ed485636c327a2780acb24a"
+  },
+  "package_root": "b553660e9822e8af80b885a4e236eccbfc544ee45dbdec6d8c13107d8c4be499",
+  "physical": false,
+  "plan": "RIMASSSHAPETAIL1-B",
+  "schema": "C310-COVARIANCE-MANIFEST-V1",
+  "status": "C310_SHAPE_LOG_TAILS_SEPARATELY_SUBTRACTED_FIXED_EPSILON_REMAINDERS_ENCLOSED_EPSILON_LIMIT_MISSING",
+  "validation": "BOUND"
+}

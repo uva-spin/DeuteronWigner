@@ -1,0 +1,45 @@
+{
+  "C62_status": "C62_SOURCE_DERIVED_EXACT_TM_ALGEBRA_READY",
+  "C63_status": "C63_QGEMBED_C62_IMPORT_INCOMPLETE",
+  "baseline": "be7c1c7f085ae06829b99b31eee2ca2d39056129",
+  "blocks": [
+    {
+      "NONZERO_EXACT_ALGEBRAIC": 36795,
+      "ZERO_BY_EXACT_ALGEBRAIC_CANCELLATION": 0,
+      "ZERO_BY_EXACT_M_RULE": 0,
+      "ZERO_BY_EXACT_SHELL_RULE": 0,
+      "blocks": 225,
+      "candidate_coefficients": 36795,
+      "exact_nonzeros": 36795,
+      "resolution_id": "K11_2_N10_b0.45"
+    },
+    {
+      "NONZERO_EXACT_ALGEBRAIC": 126126,
+      "ZERO_BY_EXACT_ALGEBRAIC_CANCELLATION": 0,
+      "ZERO_BY_EXACT_M_RULE": 0,
+      "ZERO_BY_EXACT_SHELL_RULE": 0,
+      "blocks": 396,
+      "candidate_coefficients": 126126,
+      "exact_nonzeros": 126126,
+      "resolution_id": "K13_2_N12_b0.50"
+    },
+    {
+      "NONZERO_EXACT_ALGEBRAIC": 8108,
+      "ZERO_BY_EXACT_ALGEBRAIC_CANCELLATION": 124,
+      "ZERO_BY_EXACT_M_RULE": 0,
+      "ZERO_BY_EXACT_SHELL_RULE": 0,
+      "blocks": 112,
+      "candidate_coefficients": 8232,
+      "exact_nonzeros": 8108,
+      "resolution_id": "K9_2_N8_b0.40"
+    }
+  ],
+  "next": "C65/QGEMBED3 \u2014 exact CM-ground and color-triplet physical qg embedding and descendant-impact closure",
+  "no_endpoint_or_contact": true,
+  "no_physical_embedding": true,
+  "no_threshold": true,
+  "schema": "C64-QGTM2-ARTIFACT-V1",
+  "specification_sha256": "ea1789b89fc12378be60d8d35d6f6d77c602584d5f5efee837cc6d88f510f546",
+  "status": "C64_SOURCE_DERIVED_EXACT_TM_ARTIFACTS_READY",
+  "total_blocks": 733
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "C213-REPOSITORY-GIT-AUTHORITY-AUDIT-VALIDATION-V1",
+  "artifact": "repository_git_authority_audit_validation",
+  "package_root": "367e0d7a008f64624d2d7d751e68f6688a88f3ec12f8a18b9c1da852bafe57eb",
+  "status": "C213_C212_PHYSICAL_INPUT_AUTHORITY_AUDITED_STANDARD_CAPSULES_READY_FINITE_BASIS_BINDING_INCOMPLETE",
+  "plan": "PHYSINPUT1-B",
+  "physical_record_ready": false,
+  "physical_values_selected": 0,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "routes": [
+      "tracked public APIs",
+      "tracked runtime manifests",
+      "Git history",
+      "authenticated local source hashes"
+    ],
+    "standard_capsules_found": 2,
+    "complete_finite_basis_physical_records": 0,
+    "quarantined_records_promoted": 0,
+    "result": "EXACT_MAPPING_FRONTIER_REMAINS",
+    "root": "215603a44e3f4b759b695d69d86a133713ad2544a50a72ebdb9b9000199e8d83"
+  }
+}

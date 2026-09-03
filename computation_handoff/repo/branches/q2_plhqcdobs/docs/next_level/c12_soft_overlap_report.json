@@ -1,0 +1,54 @@
+{
+  "duplicate_signed": [
+    -0.7,
+    0.1
+  ],
+  "exclusive_route": "BOUNDARY_ONLY_RESCATTERING",
+  "missing_signed": [
+    0.7,
+    -0.1
+  ],
+  "one_subtraction_residual": 0.0,
+  "rows": [
+    {
+      "CONTINUUM_SOFT_FUNCTION_INCOMPLETE": true,
+      "NO_COLLINS_SOPER_EVOLUTION": true,
+      "NO_PROCESS_FACTOR_APPLIED": true,
+      "PHYSICAL_TMD_SCHEME_NOT_ASSIGNED": true,
+      "UV_FINITE_MATCHING_REQUIRED": true,
+      "closure": 0.7071067811865475,
+      "rapidity_derivative": [
+        0.7,
+        -0.1
+      ],
+      "subtractions": 0
+    },
+    {
+      "CONTINUUM_SOFT_FUNCTION_INCOMPLETE": true,
+      "NO_COLLINS_SOPER_EVOLUTION": true,
+      "NO_PROCESS_FACTOR_APPLIED": true,
+      "PHYSICAL_TMD_SCHEME_NOT_ASSIGNED": true,
+      "UV_FINITE_MATCHING_REQUIRED": true,
+      "closure": 0.0,
+      "rapidity_derivative": [
+        0.0,
+        0.0
+      ],
+      "subtractions": 1
+    },
+    {
+      "CONTINUUM_SOFT_FUNCTION_INCOMPLETE": true,
+      "NO_COLLINS_SOPER_EVOLUTION": true,
+      "NO_PROCESS_FACTOR_APPLIED": true,
+      "PHYSICAL_TMD_SCHEME_NOT_ASSIGNED": true,
+      "UV_FINITE_MATCHING_REQUIRED": true,
+      "closure": 0.7071067811865475,
+      "rapidity_derivative": [
+        -0.7,
+        0.1
+      ],
+      "subtractions": 2
+    }
+  ],
+  "schema_version": "1.0.0"
+}

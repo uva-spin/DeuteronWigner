@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RealMathPhysicsBlocker",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "ABSENT_INDISPENSABLE_AUTHORITY",
+        "EXACT_DERIVATION_CONTRADICTION",
+        "MATHEMATICAL_INCONSISTENCY",
+        "NO_LAWFUL_PHYSICAL_IDENTIFICATION",
+        "REQUIRED_MAP_PROVEN_NONEXISTENT",
+        "CONTINUATION_REQUIRES_FABRICATION"
+      ]
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "baseline_commit": {
+      "type": "string"
+    },
+    "first_missing_object": {
+      "type": "string"
+    },
+    "object_root": {
+      "type": "string"
+    },
+    "why_indispensable": {
+      "type": "string"
+    },
+    "attempted_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "independent_audits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance_audit": {
+      "type": "string"
+    },
+    "exact_contradiction_or_absence": {
+      "type": "string"
+    },
+    "why_no_further_job_can_resolve_it": {
+      "type": "string"
+    },
+    "affected_activation_gate_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_sha256": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_human_action": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "category",
+    "job_id",
+    "baseline_commit",
+    "first_missing_object",
+    "object_root",
+    "why_indispensable",
+    "attempted_routes",
+    "independent_audits",
+    "provenance_audit",
+    "exact_contradiction_or_absence",
+    "why_no_further_job_can_resolve_it",
+    "affected_activation_gate_fields",
+    "evidence_paths",
+    "evidence_sha256",
+    "recommended_human_action"
+  ]
+}

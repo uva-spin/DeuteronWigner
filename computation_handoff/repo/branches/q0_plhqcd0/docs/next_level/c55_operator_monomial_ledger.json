@@ -1,0 +1,210 @@
+{
+  "monomial_count": 16,
+  "nonvacuum_count": 14,
+  "rows": [
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a_dagger",
+        "a_dagger",
+        "d_dagger"
+      ],
+      "proof": "positive longitudinal mode indices cannot sum to zero in the APBC/PBC finite cell",
+      "status": "EXACT_ZERO_BY_OPERATOR_ALGEBRA"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": 0,
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a_dagger",
+        "a_dagger",
+        "b"
+      ],
+      "physical_block": "q_to_qgg",
+      "routing": "p_q-k'_g",
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a_dagger",
+        "a",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": 0,
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a_dagger",
+        "a",
+        "b"
+      ],
+      "physical_block": "qg_to_qg",
+      "routing": "p_q+k_g",
+      "status": "DIRECT_RETAINED_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a",
+        "a_dagger",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": 0,
+      "inverse_derivative_argument": "right A*psi product",
+      "normal_order": "a a_dagger = a_dagger a + [a,a_dagger]",
+      "operator_order": [
+        "b_dagger",
+        "a",
+        "a_dagger",
+        "b"
+      ],
+      "physical_block": "qg_to_qg plus q_to_q contraction",
+      "routing": "p_q-k'_g",
+      "status": "NORMAL_ORDER_CONTRACTION_RETAINED"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a",
+        "a",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": 0,
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "b_dagger",
+        "a",
+        "a",
+        "b"
+      ],
+      "physical_block": "qgg_to_q",
+      "routing": "p_q+k_g",
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a_dagger",
+        "a_dagger",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a_dagger",
+        "a_dagger",
+        "b"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a_dagger",
+        "a",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a_dagger",
+        "a",
+        "b"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a",
+        "a_dagger",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a",
+        "a_dagger",
+        "b"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a",
+        "a",
+        "d_dagger"
+      ],
+      "status": "OUTSIDE_RETAINED_SPACE_NONZERO_OPERATOR"
+    },
+    {
+      "color_order": "T^a (left A) then T^b (right A)",
+      "fermion_number_change": "pair_or_antiquark",
+      "inverse_derivative_argument": "right A*psi product",
+      "operator_order": [
+        "d",
+        "a",
+        "a",
+        "b"
+      ],
+      "proof": "positive longitudinal mode indices cannot sum to zero in the APBC/PBC finite cell",
+      "status": "EXACT_ZERO_BY_OPERATOR_ALGEBRA"
+    }
+  ],
+  "status": "PASS_SYMBOLIC"
+}

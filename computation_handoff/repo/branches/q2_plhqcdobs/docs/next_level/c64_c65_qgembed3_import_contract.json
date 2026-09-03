@@ -1,0 +1,19 @@
+{
+  "forbidden": [
+    "call C62",
+    "threshold",
+    "basis reordering",
+    "historical quadrature substitution"
+  ],
+  "required_verifications": [
+    "source/API fingerprints",
+    "block metadata",
+    "basis hashes",
+    "expression/support hashes",
+    "sparse/error hashes",
+    "residue certificates",
+    "crosswalk"
+  ],
+  "runtime_root": "data/runtime/c64_qgtm2",
+  "schema": "C64-QGTM2-ARTIFACT-V1"
+}

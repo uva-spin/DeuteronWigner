@@ -1,0 +1,30 @@
+{
+  "accurate_mode_status": "UNAVAILABLE_IN_EXACT_C27_BINARY_ABI",
+  "authoritative": {
+    "Q_rule": "G7 with adaptive Z +/-3",
+    "mode": 2,
+    "qT_min_sections": 6,
+    "relative_tolerance": 0.001,
+    "y_rule": "G7"
+  },
+  "authoritative_compiled_mode": 2,
+  "authoritative_native_value": 3.4394876804377352,
+  "diagnostic": "The public wrapper has a Num keyword, but the exact validated binary exports only the seven-argument dy_xsec_single ABI. No recompile or source-route change was permitted.",
+  "full_compiled_mode1_executed": false,
+  "point_id": "CDF1.0",
+  "qT_sections": {
+    "source_compiled_default": {
+      "matched": 3.4394876804377352,
+      "raw_integral": 1.7197438402188676
+    }
+  },
+  "requested_qT_sections": [
+    6,
+    12,
+    24
+  ],
+  "requested_qT_sections_executed": false,
+  "schema_version": "1.0.0",
+  "source_default_residual": 0.0,
+  "source_route_replaced": false
+}

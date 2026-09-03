@@ -1,0 +1,9 @@
+{
+  "schema": "C109-LONGITUDINAL-RESCALING-V1",
+  "rescaling": "L->lambda L; mu_L->mu_L/lambda; P_plus->P_plus/lambda; K fixed",
+  "true_Pminus_weight": "+1 under lambda for fixed physical transverse content",
+  "Pplus_weight": "-1",
+  "M2_weight": "0",
+  "C80_observed": "cannot prove true Pminus weight because missing dimensional normalization",
+  "positive_invariance": false
+}

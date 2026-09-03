@@ -1,0 +1,151 @@
+{
+  "schema": "C206-FIXTURE-MANIFEST-V1",
+  "artifact": "fixture_manifest",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "fixture_id": "C206-FIX-K9-GENERIC",
+        "system_id": "C206-SYS-K9-GENERIC",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "GENERIC",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K9-CENTRAL",
+        "system_id": "C206-SYS-K9-CENTRAL",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "CENTRAL",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K9-WEYL_WALL",
+        "system_id": "C206-SYS-K9-WEYL_WALL",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "WEYL_WALL",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K9-IDENTITY_DIAGNOSTIC",
+        "system_id": "C206-SYS-K9-IDENTITY_DIAGNOSTIC",
+        "resolution": "K9",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "IDENTITY_DIAGNOSTIC",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K11-GENERIC",
+        "system_id": "C206-SYS-K11-GENERIC",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "GENERIC",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K11-CENTRAL",
+        "system_id": "C206-SYS-K11-CENTRAL",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "CENTRAL",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K11-WEYL_WALL",
+        "system_id": "C206-SYS-K11-WEYL_WALL",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "WEYL_WALL",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K11-IDENTITY_DIAGNOSTIC",
+        "system_id": "C206-SYS-K11-IDENTITY_DIAGNOSTIC",
+        "resolution": "K11",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "IDENTITY_DIAGNOSTIC",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K13-GENERIC",
+        "system_id": "C206-SYS-K13-GENERIC",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "GENERIC",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K13-CENTRAL",
+        "system_id": "C206-SYS-K13-CENTRAL",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "CENTRAL",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K13-WEYL_WALL",
+        "system_id": "C206-SYS-K13-WEYL_WALL",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "WEYL_WALL",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C206-FIX-K13-IDENTITY_DIAGNOSTIC",
+        "system_id": "C206-SYS-K13-IDENTITY_DIAGNOSTIC",
+        "resolution": "K13",
+        "scheme": "PROJECT_FINITE_BASIS_ST",
+        "holonomy_class": "IDENTITY_DIAGNOSTIC",
+        "coordinate_form": "IDENTIFIED_PLUS_NULL_SYMBOLIC",
+        "physical": false,
+        "no_defaults": true
+      }
+    ],
+    "count": 12,
+    "root": "9385d8bc3ada68033827cd4a3df994e9944f0c1d312d3ac8e6e23531d927ea36"
+  }
+}

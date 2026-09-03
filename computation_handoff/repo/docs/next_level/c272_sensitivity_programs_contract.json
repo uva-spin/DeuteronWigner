@@ -1,0 +1,81 @@
+{
+  "authority_record": {
+    "root": "fa7f39aaf710f3ba1789b4960978fe32505aea9174a64b88a98245c6be108dd7",
+    "rows": [
+      {
+        "direct": "S_1=P_b1 d/dc_1 <Psi(c)|[J,J]|Psi(c)>|c_ref paired W_1",
+        "direction": "I2_density_projector",
+        "insertion": "dH/dc_1=O_C117,1 with differentiated contact/current-current terms retained",
+        "normalization_term": "-<Psi|B1|Psi> d<Psi|Psi>/dc_i retained (zero only after authenticated unit-normalized derivative)",
+        "packet_Q0_Abel": "C266 W_i; Q0 fixed; pair at r<1 then r->1-",
+        "reduced_resolvent": "R'_Psi=Q_Psi(E_Psi-H)^-1 Q_Psi with pole removed and boundary class fixed",
+        "resolutions": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "root": "cd9bf51b45b0b66094ae142d8594f3775ca98e580e627a3f06b77720bc040ad3",
+        "spectral": "S_1=<Psi|dB1/dc_1|Psi>+2 Re <Psi|B1 R'_Psi O_1|Psi>",
+        "status": "EXECUTABLE_ON_PHYSICAL_STATE_BUNDLE_UNAVAILABLE_NOT_ZERO",
+        "value": null
+      },
+      {
+        "direct": "S_2=P_b1 d/dc_2 <Psi(c)|[J,J]|Psi(c)>|c_ref paired W_2",
+        "direction": "derivative_density",
+        "insertion": "dH/dc_2=O_C117,2 with differentiated contact/current-current terms retained",
+        "normalization_term": "-<Psi|B1|Psi> d<Psi|Psi>/dc_i retained (zero only after authenticated unit-normalized derivative)",
+        "packet_Q0_Abel": "C266 W_i; Q0 fixed; pair at r<1 then r->1-",
+        "reduced_resolvent": "R'_Psi=Q_Psi(E_Psi-H)^-1 Q_Psi with pole removed and boundary class fixed",
+        "resolutions": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "root": "826a08f344ca83bfc05894e6761105c94d2968d839236bc9f20d8870c2b56282",
+        "spectral": "S_2=<Psi|dB1/dc_2|Psi>+2 Re <Psi|B1 R'_Psi O_2|Psi>",
+        "status": "EXECUTABLE_ON_PHYSICAL_STATE_BUNDLE_UNAVAILABLE_NOT_ZERO",
+        "value": null
+      },
+      {
+        "direct": "S_3=P_b1 d/dc_3 <Psi(c)|[J,J]|Psi(c)>|c_ref paired W_3",
+        "direction": "CM_ground",
+        "insertion": "dH/dc_3=O_C117,3 with differentiated contact/current-current terms retained",
+        "normalization_term": "-<Psi|B1|Psi> d<Psi|Psi>/dc_i retained (zero only after authenticated unit-normalized derivative)",
+        "packet_Q0_Abel": "C266 W_i; Q0 fixed; pair at r<1 then r->1-",
+        "reduced_resolvent": "R'_Psi=Q_Psi(E_Psi-H)^-1 Q_Psi with pole removed and boundary class fixed",
+        "resolutions": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "root": "56dd33c09860f2f72fff1f5f7f2c1ae512f087356987c396785a9ceb36d72e44",
+        "spectral": "S_3=<Psi|dB1/dc_3|Psi>+2 Re <Psi|B1 R'_Psi O_3|Psi>",
+        "status": "EXECUTABLE_ON_PHYSICAL_STATE_BUNDLE_UNAVAILABLE_NOT_ZERO",
+        "value": null
+      },
+      {
+        "direct": "S_4=P_b1 d/dc_4 <Psi(c)|[J,J]|Psi(c)>|c_ref paired W_4",
+        "direction": "triplet_projected",
+        "insertion": "dH/dc_4=O_C117,4 with differentiated contact/current-current terms retained",
+        "normalization_term": "-<Psi|B1|Psi> d<Psi|Psi>/dc_i retained (zero only after authenticated unit-normalized derivative)",
+        "packet_Q0_Abel": "C266 W_i; Q0 fixed; pair at r<1 then r->1-",
+        "reduced_resolvent": "R'_Psi=Q_Psi(E_Psi-H)^-1 Q_Psi with pole removed and boundary class fixed",
+        "resolutions": [
+          "K9_2_N8_b0.40",
+          "K11_2_N8_b0.40",
+          "K13_2_N8_b0.40"
+        ],
+        "root": "c758690ad34fe29df09e22c6120ceee0336b2e0eb3c1f046f3b0584130e13421",
+        "spectral": "S_4=<Psi|dB1/dc_4|Psi>+2 Re <Psi|B1 R'_Psi O_4|Psi>",
+        "status": "EXECUTABLE_ON_PHYSICAL_STATE_BUNDLE_UNAVAILABLE_NOT_ZERO",
+        "value": null
+      }
+    ]
+  },
+  "package_root": "cdebc5a5cfb44709b3f3009fa12b599c35e032700a55fd75aab0cfa5532c004c",
+  "physical": false,
+  "plan": "C117B1SENS1-B",
+  "schema": "C272-SENSITIVITY_PROGRAMS-CONTRACT-V1",
+  "status": "C272_EXACT_B1_SENSITIVITY_PROGRAMS_READY_PHYSICAL_EIGENSTATE_BUNDLE_UNAVAILABLE",
+  "validation": "BOUND"
+}

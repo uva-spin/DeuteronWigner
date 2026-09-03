@@ -1,0 +1,28 @@
+{
+  "chart_id": "C35.REAL.CHART.KAPPA_Y_PHI.v1",
+  "content_hash": "b665bb87c49925298383d0188f1c7f7b21fde17c24c11c507241868edd274ef4",
+  "coordinates": [
+    "kappa",
+    "y",
+    "phi"
+  ],
+  "domain": "kappa>0;y_finite;phi_in_[0,2pi)",
+  "map": {
+    "k_minus": "kappa*exp(-y)/sqrt(2)",
+    "k_plus": "kappa*exp(y)/sqrt(2)",
+    "k_x": "kappa*cos(phi)",
+    "k_y": "kappa*sin(phi)"
+  },
+  "mass_shell_residual": 5.551115123125783e-17,
+  "measure": "kappa*dkappa*dy*dphi/[2*(2pi)^3]",
+  "phase_space_measure": "kappa*dkappa*dy*dphi/[2*(2pi)^3]",
+  "positive_energy": "k0=kappa*cosh(y)>0",
+  "probe": [
+    0.738415552030599,
+    0.3317914950819555,
+    0.2536504281336715,
+    0.6524273601770584
+  ],
+  "schema_version": "1.0.0",
+  "status": "EXECUTABLE_GEOMETRIC_CHART_NOT_GAUGE_MODE_BASIS"
+}

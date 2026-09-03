@@ -1,0 +1,200 @@
+{
+  "schema": "C217-SELF-ENERGY-PROGRAM-CONTRACT-V1",
+  "artifact": "self_energy_program_contract",
+  "package_root": "ae377d185e0ca6e4ecce0c9386d3ca147ba4b3dc089904fe4dd992c671696827",
+  "status": "C217_C216_RETAINED_DOMAIN_ORDER_G2_QUARK_SELF_ENERGY_EXECUTABLE_OMITTED_INTERFACE_REMAINDER_INCOMPLETE",
+  "plan": "RIQUARKSELF1-B",
+  "physical": false,
+  "retained_executable": true,
+  "full_executable": false,
+  "omitted_interfaces": 120,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "program_id": "C217-SELF-K9",
+        "resolution": "K9",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "VALIDATE_C216_COMMON_STATE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "VALIDATE_C144_PARAMETER_RECORD"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "VALIDATE_SPECTRAL_QUERY"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_C145_ORDER_G2_SELF_ENERGY"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "LOAD_DIRECT_DEGREE_TWO_ROUTE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_MATRIX_FREE_ROUTE"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HERMITICITY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "APPLY_K_MINUS"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "APPLY_K_PLUS"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "APPLY_K_PERP"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "ATTACH_OMITTED_INTERFACE_REMAINDER"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_CONDITIONAL_SELF_ENERGY"
+          }
+        ],
+        "retained_domain_executable": true,
+        "full_domain_executable": false,
+        "remainder": "C168-REQUEST-1-OMITTED-INTERFACE",
+        "root": "7599e10120c529992eef5a79bc03c4e612d1b3a73c0057f22cc69ac86c95b2f4"
+      },
+      {
+        "program_id": "C217-SELF-K11",
+        "resolution": "K11",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "VALIDATE_C216_COMMON_STATE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "VALIDATE_C144_PARAMETER_RECORD"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "VALIDATE_SPECTRAL_QUERY"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_C145_ORDER_G2_SELF_ENERGY"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "LOAD_DIRECT_DEGREE_TWO_ROUTE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_MATRIX_FREE_ROUTE"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HERMITICITY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "APPLY_K_MINUS"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "APPLY_K_PLUS"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "APPLY_K_PERP"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "ATTACH_OMITTED_INTERFACE_REMAINDER"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_CONDITIONAL_SELF_ENERGY"
+          }
+        ],
+        "retained_domain_executable": true,
+        "full_domain_executable": false,
+        "remainder": "C168-REQUEST-1-OMITTED-INTERFACE",
+        "root": "b997fa2c6ce3a602b7eab3d4ad5e2ce2cd2f785091105cd22d6efd4e6a75d793"
+      },
+      {
+        "program_id": "C217-SELF-K13",
+        "resolution": "K13",
+        "nodes": [
+          {
+            "ordinal": 0,
+            "opcode": "VALIDATE_C216_COMMON_STATE"
+          },
+          {
+            "ordinal": 1,
+            "opcode": "VALIDATE_C144_PARAMETER_RECORD"
+          },
+          {
+            "ordinal": 2,
+            "opcode": "VALIDATE_SPECTRAL_QUERY"
+          },
+          {
+            "ordinal": 3,
+            "opcode": "LOAD_C145_ORDER_G2_SELF_ENERGY"
+          },
+          {
+            "ordinal": 4,
+            "opcode": "LOAD_DIRECT_DEGREE_TWO_ROUTE"
+          },
+          {
+            "ordinal": 5,
+            "opcode": "CHECK_MATRIX_FREE_ROUTE"
+          },
+          {
+            "ordinal": 6,
+            "opcode": "CHECK_HERMITICITY"
+          },
+          {
+            "ordinal": 7,
+            "opcode": "APPLY_K_MINUS"
+          },
+          {
+            "ordinal": 8,
+            "opcode": "APPLY_K_PLUS"
+          },
+          {
+            "ordinal": 9,
+            "opcode": "APPLY_K_PERP"
+          },
+          {
+            "ordinal": 10,
+            "opcode": "ATTACH_OMITTED_INTERFACE_REMAINDER"
+          },
+          {
+            "ordinal": 11,
+            "opcode": "RETURN_CONDITIONAL_SELF_ENERGY"
+          }
+        ],
+        "retained_domain_executable": true,
+        "full_domain_executable": false,
+        "remainder": "C168-REQUEST-1-OMITTED-INTERFACE",
+        "root": "ce3503346b843982ba402090b98ee5b3d0fb7900620d2cb145e6e8c2de5a6934"
+      }
+    ],
+    "count": 3,
+    "retained_executable": 3,
+    "full_executable": 0,
+    "root": "cd5b077dfd2a127b3fbf1f929de7894f410c8d3e9ce82fac9168ac593faccb23"
+  }
+}

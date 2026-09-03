@@ -1,0 +1,57 @@
+{
+  "schema": "C217-HERMITICITY-PROJECTOR-CONTRACT-V1",
+  "artifact": "hermiticity_projector_contract",
+  "package_root": "ae377d185e0ca6e4ecce0c9386d3ca147ba4b3dc089904fe4dd992c671696827",
+  "status": "C217_C216_RETAINED_DOMAIN_ORDER_G2_QUARK_SELF_ENERGY_EXECUTABLE_OMITTED_INTERFACE_REMAINDER_INCOMPLETE",
+  "plan": "RIQUARKSELF1-B",
+  "physical": false,
+  "retained_executable": true,
+  "full_executable": false,
+  "omitted_interfaces": 120,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "resolution": "K9",
+        "Hermiticity": "inherited from C144/C145 operator routes",
+        "projectors": [
+          "K_MINUS",
+          "K_PLUS",
+          "K_PERP"
+        ],
+        "projector_parity": "structural pass",
+        "omitted_remainder_Hermiticity": "not asserted"
+      },
+      {
+        "resolution": "K11",
+        "Hermiticity": "inherited from C144/C145 operator routes",
+        "projectors": [
+          "K_MINUS",
+          "K_PLUS",
+          "K_PERP"
+        ],
+        "projector_parity": "structural pass",
+        "omitted_remainder_Hermiticity": "not asserted"
+      },
+      {
+        "resolution": "K13",
+        "Hermiticity": "inherited from C144/C145 operator routes",
+        "projectors": [
+          "K_MINUS",
+          "K_PLUS",
+          "K_PERP"
+        ],
+        "projector_parity": "structural pass",
+        "omitted_remainder_Hermiticity": "not asserted"
+      }
+    ],
+    "count": 3,
+    "root": "a4608d43a2720d4cfd2670ce2cb746657843f1e16c6d9259c35db718488672fc"
+  }
+}

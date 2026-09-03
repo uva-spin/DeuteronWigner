@@ -1,0 +1,34 @@
+{
+  "schema": "C207-NEXT-TARGET-HANDOFF-MANIFEST-V1",
+  "artifact": "next_target_handoff_manifest",
+  "package": "C207/HQCDMOMQCOND1",
+  "package_root": "3c4b895ca1c57443ab747c6fce0213ce786a9eb90e014c31c87b4e3ff65b7438",
+  "status": "C207_HQCDMOMQCOND1_TARGET_SOURCE_PROJECTOR_KINEMATICS_AUTHORITY_INCOMPLETE",
+  "plan": "MOMQCOND1-C",
+  "claims": [
+    "authenticated target audit complete",
+    "missing target objects are unavailable, not zero"
+  ],
+  "evidence": [
+    "C140/C168/C198 public records",
+    "C206 package root"
+  ],
+  "physical": false,
+  "target_condition_created": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "next": "C208/HQCDMOMQSOURCE1",
+    "next_object": "C197-ST-9-SOURCE",
+    "next_exact_object": "authenticated target MOMq source, projector, and exactly representable kinematics",
+    "remaining": [
+      "C197-ST-9",
+      "C197-ST-10"
+    ],
+    "root": "103af587a00bc615d748a6d678a3aff99e93b013d83577bcb510433853f0a3d5"
+  }
+}

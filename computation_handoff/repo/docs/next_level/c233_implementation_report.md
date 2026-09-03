@@ -1,0 +1,8 @@
+# C233/HQCDRIQUARKFIXEDKVRADTAIL1 implementation report
+
+Status: C233_EIGHT_EXACT_ANALYTIC_GAUSSIAN_TAIL_ENCLOSURES_AND_CORE_TAIL_ALLOCATORS_READY
+Plan: RIQUARKFIXEDKVRADTAIL1-B
+Baseline: 8e4e3ddc8988411ebb2032d0af13de56e02551b1
+C233 root: 32fbc26eb10c37a26e63321492c79a7fff0064d848a57d3443319593e431dedc
+
+C233 supplies complementary upper-incomplete-gamma tail bounds and deterministic caller-budget allocators for all eight C232 programs. Assembly into canonical matrix-element records remains C234.

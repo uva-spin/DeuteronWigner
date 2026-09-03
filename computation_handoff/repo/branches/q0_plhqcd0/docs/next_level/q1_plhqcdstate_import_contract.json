@@ -1,0 +1,28 @@
+{
+  "schema": "Q1-PLHQCDSTATE-IMPORT-CONTRACT-V1",
+  "status": "Q1_CONTINUATION_CONTRACT_READY",
+  "predecessor": "Q0/PLHQCD0",
+  "predecessor_commit": "b094fb8cb1046aea0062468d73826ea25eab6116",
+  "prompt_path": "docs/next_level/q1_plhqcdstate_codex_prompt.md",
+  "scope": "source-compatible physical-subspace state preparation and state-level diagnostics",
+  "allowed_inputs": [
+    "Q0/PLHQCD0 public API",
+    "C131/C142/C144/C149/C150 immutable public APIs"
+  ],
+  "forbidden": [
+    "C151/HQCDG2PT",
+    "VQE",
+    "ansatz selection",
+    "physical parameter selection",
+    "kinetic scheme selection",
+    "counterterm or null-representative selection",
+    "hardware result",
+    "TMD or fit production"
+  ],
+  "oracle": {
+    "device": "lightning.qubit",
+    "shots": null,
+    "dtype": "complex128"
+  },
+  "immutable": true
+}

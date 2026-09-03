@@ -1,0 +1,34 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.DS_Store
+.cache/
+.conda-*/
+.venv311/
+build/
+dist/
+*.egg-info/
+tmp/
+aTMDe-temporary
+
+# Reproducible downloads and generated scientific products.  Keep manifests,
+# source tables, environment specifications, and final output/pdf notes under
+# version control; regenerate these larger trees from documented commands.
+data/raw/
+data/processed/
+data/vendor/
+data/incoming/
+data/runtime/
+outputs/
+output/figures/
+output/pdf/*.log
+
+# Do not publish downloaded literature or private scientific correspondence.
+# Keep citations, checksums, and reproducible acquisition instructions in the
+# tracked notes instead.
+1610.04066v1.pdf
+Notes_lectures_miami.pdf
+comparison.pdf
+references/arxiv_*.pdf
+references/gnech_norfolk_current_reply.md

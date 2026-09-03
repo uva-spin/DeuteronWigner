@@ -1,0 +1,219 @@
+{
+  "schema": "C204-DESCENDANT-CONTRACT-V1",
+  "artifact": "descendant_contract",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 descendant_contract is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-DESCENDANT-V1",
+    "rows": [
+      {
+        "descendant_id": "C204-DESC-K9-LEFT-L1",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K9",
+        "endpoint": "LEFT",
+        "functional_derivative_order": 1,
+        "source_slots": [
+          "ENDPOINT_GHOST"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K9-LEFT-L2",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K9",
+        "endpoint": "LEFT",
+        "functional_derivative_order": 2,
+        "source_slots": [
+          "ENDPOINT_GHOST",
+          "RESIDUAL_LINK"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K9-RIGHT-L1",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K9",
+        "endpoint": "RIGHT",
+        "functional_derivative_order": 1,
+        "source_slots": [
+          "ENDPOINT_GHOST"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K9-RIGHT-L2",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K9",
+        "endpoint": "RIGHT",
+        "functional_derivative_order": 2,
+        "source_slots": [
+          "ENDPOINT_GHOST",
+          "RESIDUAL_LINK"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K11-LEFT-L1",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K11",
+        "endpoint": "LEFT",
+        "functional_derivative_order": 1,
+        "source_slots": [
+          "ENDPOINT_GHOST"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K11-LEFT-L2",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K11",
+        "endpoint": "LEFT",
+        "functional_derivative_order": 2,
+        "source_slots": [
+          "ENDPOINT_GHOST",
+          "RESIDUAL_LINK"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K11-RIGHT-L1",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K11",
+        "endpoint": "RIGHT",
+        "functional_derivative_order": 1,
+        "source_slots": [
+          "ENDPOINT_GHOST"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K11-RIGHT-L2",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K11",
+        "endpoint": "RIGHT",
+        "functional_derivative_order": 2,
+        "source_slots": [
+          "ENDPOINT_GHOST",
+          "RESIDUAL_LINK"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K13-LEFT-L1",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K13",
+        "endpoint": "LEFT",
+        "functional_derivative_order": 1,
+        "source_slots": [
+          "ENDPOINT_GHOST"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K13-LEFT-L2",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K13",
+        "endpoint": "LEFT",
+        "functional_derivative_order": 2,
+        "source_slots": [
+          "ENDPOINT_GHOST",
+          "RESIDUAL_LINK"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K13-RIGHT-L1",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K13",
+        "endpoint": "RIGHT",
+        "functional_derivative_order": 1,
+        "source_slots": [
+          "ENDPOINT_GHOST"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      },
+      {
+        "descendant_id": "C204-DESC-K13-RIGHT-L2",
+        "parent_row_id": "C197-ST-6",
+        "resolution": "K13",
+        "endpoint": "RIGHT",
+        "functional_derivative_order": 2,
+        "source_slots": [
+          "ENDPOINT_GHOST",
+          "RESIDUAL_LINK"
+        ],
+        "resulting_public_record": "C175/C182 endpoint ghost-link",
+        "residual_program": "C204 endpoint identity derivative",
+        "holonomy_global_remainder": "explicit",
+        "proper_vertices_recomputed": 0,
+        "physical": false
+      }
+    ],
+    "count": 12,
+    "proper_vertices_recomputed": 0,
+    "root": "abb1a611bfb0d383a095d801023defdcb8c1c929d31e17143b13a446b1d61a47"
+  }
+}

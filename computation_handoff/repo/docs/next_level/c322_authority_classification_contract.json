@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "root": "c22f53a27ed22f7f73ac96a78a7252b1d1217bc8efa5633377b8cec6da439920",
+    "rows": [
+      {
+        "authorized": "APBC is an admissible C43/DLCQ convention",
+        "classification": "REGULATOR_CONVENTION",
+        "object": "fermion_longitudinal_boundary_class",
+        "physical_value": false
+      },
+      {
+        "authorized": "PBC with an explicit zero-mode prescription is admissible",
+        "classification": "REGULATOR_CONVENTION",
+        "object": "gluon_longitudinal_boundary_class",
+        "physical_value": false
+      },
+      {
+        "authorized": null,
+        "classification": "REGULATOR_AND_CONVERGENCE_CHOICE",
+        "object": "longitudinal_box_length_or_K_family",
+        "physical_value": false
+      },
+      {
+        "authorized": null,
+        "classification": "OBSERVABLE_MATCHING_INPUT",
+        "object": "normalized_boundary_ensemble_weights",
+        "physical_value": false
+      },
+      {
+        "authorized": null,
+        "classification": "PROCESS_OPERATOR_DEPENDENT",
+        "object": "Wilson_link_direction_and_boundary_prescription",
+        "physical_value": false
+      }
+    ],
+    "universal_physical_records": 0,
+    "validation_capsule_promoted": false
+  },
+  "package_root": "5b7d6314b375f591b2decb26f65e69a02e953ddfa3417972e88e2a6e05135092",
+  "physical": false,
+  "plan": "RIMASSC43BOUNDARYAUTH1-C",
+  "status": "C322_BOUNDARY_CLASSES_AUTHENTICATED_PHYSICAL_ENSEMBLE_AND_WILSON_OWNER_MATCHING_MISSING",
+  "validation": "BOUND"
+}

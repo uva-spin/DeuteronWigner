@@ -1,0 +1,142 @@
+{
+  "blocking": 15,
+  "count": 15,
+  "records": [
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.QUARK_FIELD_RENORMALIZATION",
+      "content_hash": "7b497311f6bc034da1b6e03c4628900391868cf521332b0c2deaf9636cc91b47",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.BILOCAL_OPERATOR_UV",
+      "content_hash": "ce077b326eb786d2bf9706420a2c0e2c820b8a643a53c33bbf9e27e3c535fc6b",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.WILSON_SELF_ENERGY",
+      "content_hash": "101811bc0986af4b93f91580e4c94e8171bd32a32c2eed6497afc9fa5800df9e",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.ENDPOINT_CUSP",
+      "content_hash": "ab8a45551a3be9c9f49008b90f871f1b7d550b93bb3217ca3903e670effc877d",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.SOFT_FACTOR",
+      "content_hash": "90f92c069473f63fb5053ada099408762b8783d487a60c2c67ee6c89a1f8b05b",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.SQUARE_ROOT_SOFT_ALLOCATION",
+      "content_hash": "3f8e21d5eb02a0e77142aa6c99d7b650b60d6d53982be3ff52dee398efd9e219",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.ZERO_BIN_OVERLAP",
+      "content_hash": "a8cba02a36355ade199bb063c697fc0fef900cc4bc0441a883decbe793f763be",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.RAPIDITY_REGULATOR",
+      "content_hash": "9a8e518f537f917a253b6fcaa14d5e3b7a29d2815986e846faff09c65a715ede",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.RAPIDITY_COUNTERTERM",
+      "content_hash": "7a91b7e076859a786febc0586b625de63a642ae0c0704c5d90568499afa30683",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.RAPIDITY_ANOMALOUS_DIMENSION",
+      "content_hash": "191ef19898555bb30645cf6c9f184f6c3a5aa81b2acc3fb3f52dc0650cf83efe",
+      "implemented_order": "VALIDATION_ONLY",
+      "required": true,
+      "source": "C19-C22",
+      "status": "PROJECT_VALIDATION_ORACLE_ONLY"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.UV_ANOMALOUS_DIMENSION",
+      "content_hash": "daefd37b42c086bb411e81f7c2b26d3167c7cb07bbd1f1d660a4bb39a764d866",
+      "implemented_order": "VALIDATION_ONLY",
+      "required": true,
+      "source": "C19-C22",
+      "status": "PROJECT_VALIDATION_ORACLE_ONLY"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.HAMILTONIAN_BASIS_COUNTERTERMS",
+      "content_hash": "aa3fa3e6ed1e99cdb73d3d68d41f04dd33cc0a84d614bc364f6547f1ab8bdf29",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.REGULATOR_CONVERSION",
+      "content_hash": "707e156e019d22f1455f7b28fcaf14d31f7a9e8c5b1cc5c53ed5e0066434d0bc",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.OPERATOR_MIXING",
+      "content_hash": "9220d34d62011e8fb55b4ae0337c059ec236486f93d825c2c0249cc0f3da9d02",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    },
+    {
+      "blocks_matching": true,
+      "component_id": "C31.RENORM.POWER_CORRECTIONS",
+      "content_hash": "68c95c4c70effc937e788e19878f4411548e4b04fcf467d31ad035b246f3e6d6",
+      "implemented_order": "NONE",
+      "required": true,
+      "source": null,
+      "status": "SOURCE_EXPRESSION_UNAVAILABLE"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

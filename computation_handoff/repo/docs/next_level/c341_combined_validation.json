@@ -1,0 +1,61 @@
+{
+  "package_root": "1336c1fa07a161cc78ad32f2ad5270af37b81679bd9564c4c3c3b578be3d5546",
+  "physical": false,
+  "plan": "RIMASSC43FULLCERT1-C",
+  "record": {
+    "boson": {
+      "C301_coefficients": [
+        0.3645121544478137,
+        -0.052274556330094715,
+        0.006981273197654111
+      ],
+      "center_invariant": true,
+      "higher_harmonic_residual_norm2": 2.2426678646464415e-05
+    },
+    "domain": {
+      "L_GeVinv": 2.0,
+      "capsule": "validation-only nonphysical",
+      "mass2_GeV2": 0.01,
+      "physical_prediction": false
+    },
+    "fermion": {
+      "C301_projected_coefficients": [
+        0.4241044678627114,
+        0.01477819497092041,
+        -0.00482275277853665
+      ],
+      "C301_residual_norm2": 0.015133842982305828,
+      "W3_recurrence": "RE_TRF_W3 = RE_TF3 - 3 CHI8",
+      "W3_recurrence_defect": 1.1102230246251565e-15,
+      "center_charged_tail_absolute_bound": 0.005858911380238251,
+      "center_invariant": false,
+      "combined_tail_absolute_bound": 0.00370730867263394
+    },
+    "numerics": {
+      "all_full_rank": true,
+      "finite_exact_span": false,
+      "gram_dimensions": [
+        7,
+        9,
+        12
+      ],
+      "infinite_limit_enclosed": true,
+      "max_coefficient_recovery_defect": 1.2212453270876722e-15,
+      "quadrature_orders": [
+        24,
+        24,
+        24
+      ]
+    },
+    "root": "5f8d0636daea886276a4bec2d91f69613b9aeb2916603147abbed92731c7ec5f",
+    "upstream_roots": {
+      "C336": "4a69221541bfbde6b281ef9a96024a6bf45f998bdf424dc45446ef6490719d62",
+      "C337": "ad7ad070e0ddd53d0c6b8ea574d2e23a7c282d2502c0081f59ba0d17b6c4c6f6",
+      "C338": "304c653f5e7758b3a51b8b3914fbd6b80aa8d11fbb7d95957d506db51d4d8d6d",
+      "C339": "90523886579204d39e03fe0b62037b129a4c3dfbcd2f5bddfe8c5d6f264e3050",
+      "C340": "4a1b3c9253bb11296be0ab0f9937d07a85fe2146c44cf31b75de1ec1d2d957da"
+    }
+  },
+  "status": "C341_CONTINUUM_C43_DETERMINANT_CERTIFIED_NONPHYSICAL_PHYSICAL_INPUT_AUTHORITY_MISSING",
+  "validation": "PASS"
+}

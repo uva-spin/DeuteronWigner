@@ -1,0 +1,103 @@
+{
+  "residual_record_supplied": false,
+  "root": "b1ab43cebdebca8631ff8e9476d5f4ce81f24e00ff9c0717d7fee9ad6ca08c12",
+  "rows": [
+    {
+      "BRST": false,
+      "ghost_insertion": "separate boundary interface",
+      "physical_loop": false,
+      "process_class": "DIS_FUTURE",
+      "resolution": "K9",
+      "routes": [
+        "VAR-A endpoint transformation",
+        "VAR-B direct coordinate variation",
+        "VAR-C C181 pullback",
+        "VAR-D generated adjoint/reverse",
+        "VAR-E all-eight covariance"
+      ],
+      "status": "CONDITIONAL_PARAMETER_INTERFACE",
+      "variation": "project-subgauge link variation through C181 gauge-gradient pullback"
+    },
+    {
+      "BRST": false,
+      "ghost_insertion": "separate boundary interface",
+      "physical_loop": false,
+      "process_class": "DY_PAST",
+      "resolution": "K9",
+      "routes": [
+        "VAR-A endpoint transformation",
+        "VAR-B direct coordinate variation",
+        "VAR-C C181 pullback",
+        "VAR-D generated adjoint/reverse",
+        "VAR-E all-eight covariance"
+      ],
+      "status": "CONDITIONAL_PARAMETER_INTERFACE",
+      "variation": "project-subgauge link variation through C181 gauge-gradient pullback"
+    },
+    {
+      "BRST": false,
+      "ghost_insertion": "separate boundary interface",
+      "physical_loop": false,
+      "process_class": "DIS_FUTURE",
+      "resolution": "K11",
+      "routes": [
+        "VAR-A endpoint transformation",
+        "VAR-B direct coordinate variation",
+        "VAR-C C181 pullback",
+        "VAR-D generated adjoint/reverse",
+        "VAR-E all-eight covariance"
+      ],
+      "status": "CONDITIONAL_PARAMETER_INTERFACE",
+      "variation": "project-subgauge link variation through C181 gauge-gradient pullback"
+    },
+    {
+      "BRST": false,
+      "ghost_insertion": "separate boundary interface",
+      "physical_loop": false,
+      "process_class": "DY_PAST",
+      "resolution": "K11",
+      "routes": [
+        "VAR-A endpoint transformation",
+        "VAR-B direct coordinate variation",
+        "VAR-C C181 pullback",
+        "VAR-D generated adjoint/reverse",
+        "VAR-E all-eight covariance"
+      ],
+      "status": "CONDITIONAL_PARAMETER_INTERFACE",
+      "variation": "project-subgauge link variation through C181 gauge-gradient pullback"
+    },
+    {
+      "BRST": false,
+      "ghost_insertion": "separate boundary interface",
+      "physical_loop": false,
+      "process_class": "DIS_FUTURE",
+      "resolution": "K13",
+      "routes": [
+        "VAR-A endpoint transformation",
+        "VAR-B direct coordinate variation",
+        "VAR-C C181 pullback",
+        "VAR-D generated adjoint/reverse",
+        "VAR-E all-eight covariance"
+      ],
+      "status": "CONDITIONAL_PARAMETER_INTERFACE",
+      "variation": "project-subgauge link variation through C181 gauge-gradient pullback"
+    },
+    {
+      "BRST": false,
+      "ghost_insertion": "separate boundary interface",
+      "physical_loop": false,
+      "process_class": "DY_PAST",
+      "resolution": "K13",
+      "routes": [
+        "VAR-A endpoint transformation",
+        "VAR-B direct coordinate variation",
+        "VAR-C C181 pullback",
+        "VAR-D generated adjoint/reverse",
+        "VAR-E all-eight covariance"
+      ],
+      "status": "CONDITIONAL_PARAMETER_INTERFACE",
+      "variation": "project-subgauge link variation through C181 gauge-gradient pullback"
+    }
+  ],
+  "schema": "C182-LINK-VARIATION-V1"
+}

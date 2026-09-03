@@ -1,0 +1,23 @@
+{
+  "schema": "C120-API-V1",
+  "immutable": true,
+  "methods": [
+    "load_verified_current_component_authority",
+    "verify_current_component_authority",
+    "component_manifest",
+    "component_status",
+    "component_entry",
+    "component_entry_ancestry",
+    "component_sparse_matrix",
+    "component_sparse_bounds",
+    "apply_current_component",
+    "instantaneous_current_sparse_matrix",
+    "instantaneous_current_sparse_bounds",
+    "apply_instantaneous_current",
+    "cross_sector_zero_certificate",
+    "counterterm_direction_manifest",
+    "factor_ownership_contract",
+    "count_once_certificate"
+  ],
+  "status": "FAIL_CLOSED"
+}

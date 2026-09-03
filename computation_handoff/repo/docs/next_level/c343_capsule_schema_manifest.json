@@ -1,0 +1,105 @@
+{
+  "package_root": "345a189256c289545ce57c36928179c75c4d2cbf7722ce0a341f8a84d4ac1796",
+  "physical": false,
+  "plan": "RIMASSC43OBSCAPSULE1-C",
+  "record": {
+    "bound_count": 3,
+    "complete": false,
+    "fields": [
+      {
+        "field": "observable_family",
+        "owner": "factorization theorem",
+        "required": true,
+        "status": "BOUND",
+        "value": "low-qT SIDIS TMD factorization"
+      },
+      {
+        "field": "process_orientation",
+        "owner": "JMY operator",
+        "required": true,
+        "status": "BOUND",
+        "value": "future-pointing SIDIS"
+      },
+      {
+        "field": "Wilson_path",
+        "owner": "JMY/BJY/Gao",
+        "required": true,
+        "status": "BOUND",
+        "value": "spacelike v, v^2<0, transverse closure"
+      },
+      {
+        "field": "kinematics",
+        "owner": "selected experimental dataset",
+        "required": true,
+        "required_coordinates": [
+          "x_B",
+          "Q2_GeV2",
+          "z_h",
+          "qT_GeV",
+          "y"
+        ],
+        "status": "MISSING"
+      },
+      {
+        "field": "renormalization_scales",
+        "owner": "dataset plus declared theory prescription",
+        "required": true,
+        "required_coordinates": [
+          "mu_GeV",
+          "zeta_GeV2",
+          "rapidity_parameter"
+        ],
+        "status": "MISSING"
+      },
+      {
+        "field": "finite_volume_sequence",
+        "owner": "C43 observable matching",
+        "required": true,
+        "required_coordinates": [
+          "L_GeVinv",
+          "K",
+          "boundary_class",
+          "zero_mode_sector"
+        ],
+        "status": "MISSING"
+      },
+      {
+        "field": "covariance",
+        "owner": "dataset and joint theory propagation",
+        "required": true,
+        "required_coordinates": [
+          "experimental_covariance",
+          "theory_covariance",
+          "cross_sequence_covariance"
+        ],
+        "status": "MISSING"
+      },
+      {
+        "field": "acceptance",
+        "owner": "predeclared C43 convergence protocol",
+        "required": true,
+        "required_coordinates": [
+          "holdouts",
+          "stability_windows",
+          "tolerance"
+        ],
+        "status": "MISSING"
+      },
+      {
+        "field": "ensemble_weights",
+        "owner": "matched physical ensemble",
+        "required": true,
+        "required_coordinates": [
+          "normalized_weights",
+          "normalization_measure",
+          "membership"
+        ],
+        "status": "MISSING"
+      }
+    ],
+    "required_count": 9,
+    "root": "d7a29e216385175fac7b0b4b30283d50a0a2158f69f30ae1868bb95b58c38b64"
+  },
+  "status": "C343_JMY_SIDIS_OBSERVABLE_CAPSULE_SCHEMA_BOUND_DATASET_NUMERICAL_RECORD_MISSING",
+  "validation": "BOUND"
+}

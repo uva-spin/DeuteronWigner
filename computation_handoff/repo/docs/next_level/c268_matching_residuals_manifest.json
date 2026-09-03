@@ -1,0 +1,44 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "closed": 0,
+    "required": 4,
+    "root": "7edf62f94b7ffebc1543a1793e0889110939f0c205e3e278734d47922b8a2fd7",
+    "rows": [
+      {
+        "direction": "I2_density_projector",
+        "equation": "R_1=F_standard,1-F_project,1",
+        "standard_root": "dc353d5e8b60013ec7f6bed68cff40cd0700b02c744382eb8c29b2484e80670d",
+        "status": "UNAVAILABLE_STANDARD_SIDE_NOT_ZERO"
+      },
+      {
+        "direction": "derivative_density",
+        "equation": "R_2=F_standard,2-F_project,2",
+        "standard_root": "69c3a477e96c97d9aa5e35156319259d436a781d838d1d4992c8bc79035b65d5",
+        "status": "UNAVAILABLE_STANDARD_SIDE_NOT_ZERO"
+      },
+      {
+        "direction": "CM_ground",
+        "equation": "R_3=F_standard,3-F_project,3",
+        "standard_root": "208738f202a40903a9d3c3bc57c797c5a5d062ef4a7908e12e6ce9bdf82a87f8",
+        "status": "UNAVAILABLE_STANDARD_SIDE_NOT_ZERO"
+      },
+      {
+        "direction": "triplet_projected",
+        "equation": "R_4=F_standard,4-F_project,4",
+        "standard_root": "1cb5d65b2ef6ee97afaa92acf2c69c4be5e3a6eab53c2501bcd00f94af8ea8a6",
+        "status": "UNAVAILABLE_STANDARD_SIDE_NOT_ZERO"
+      }
+    ]
+  },
+  "package_root": "629d53e7e26d90ed796b41d4a20c9321ecaea5e790461eca7080d128010cc70b",
+  "physical": false,
+  "plan": "C117STANDARDSIDE1-C",
+  "schema": "C268-MATCHING_RESIDUALS-MANIFEST-V1",
+  "status": "C268_C117_STANDARD_SIDE_SOURCE_INCOMPLETE_NAMED_PHYSICAL_CHANNEL_REQUIRED",
+  "validation": "BOUND"
+}

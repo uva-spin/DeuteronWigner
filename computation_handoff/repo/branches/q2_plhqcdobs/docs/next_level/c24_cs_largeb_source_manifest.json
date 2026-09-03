@@ -1,0 +1,57 @@
+{
+  "physical_covariance_bundles_consumed": 0,
+  "plans": [
+    {
+      "domain": "ART25 fit domain; exact model files unavailable",
+      "mutually_exclusive": true,
+      "physical_covariance": false,
+      "source": "ARTEMIDE_3.01",
+      "species": "QUARK",
+      "stable_id": "P1-CS-ART25",
+      "status": "SOURCE_RECORDED_CENTRAL_ONLY",
+      "uncertainty_tier": "UNAVAILABLE_RELEASE_MISSING_500_MEMBERS"
+    },
+    {
+      "domain": "b_perp up to about 1 fm",
+      "mutually_exclusive": true,
+      "physical_covariance": false,
+      "source": "arXiv:2511.22547",
+      "species": "QUARK",
+      "stable_id": "P1-CS-LATTICE",
+      "status": "SOURCE_INTERFACE_ONLY",
+      "uncertainty_tier": "PAPER_ERRORS_NO_REPRODUCIBLE_MACHINE_READABLE_COVARIANCE"
+    },
+    {
+      "domain": "published joint-fit domain",
+      "mutually_exclusive": true,
+      "physical_covariance": false,
+      "source": "arXiv:2510.26489",
+      "species": "QUARK",
+      "stable_id": "P1-CS-JOINT",
+      "status": "SOURCE_INTERFACE_ONLY",
+      "uncertainty_tier": "NO_RELEASED_JOINT_MEMBER_BUNDLE_INGESTED"
+    },
+    {
+      "domain": "UNSET",
+      "mutually_exclusive": true,
+      "physical_covariance": false,
+      "source": "COMPOSITION_INTERFACE",
+      "species": "QUARK",
+      "stable_id": "P1-CS-HYBRID",
+      "status": "UNAVAILABLE",
+      "uncertainty_tier": "UNAVAILABLE"
+    },
+    {
+      "domain": "UNSET",
+      "nonperturbative_casimir_scaling_imposed": false,
+      "physical_covariance": false,
+      "quark_kernel_copied": false,
+      "source": null,
+      "species": "GLUON",
+      "stable_id": "P1-CS-GLUON",
+      "status": "UNAVAILABLE",
+      "uncertainty_tier": "UNAVAILABLE_NO_GLUON_SOURCE_BOUNDARY"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

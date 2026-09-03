@@ -1,0 +1,63 @@
+{
+  "authority_record": {
+    "CHI8": {
+      "epsilon_03": [
+        10.401,
+        10.427
+      ],
+      "epsilon_05": [
+        10.394,
+        10.418
+      ],
+      "epsilon_08": [
+        10.386,
+        10.41
+      ]
+    },
+    "RE_TF3": {
+      "epsilon_03": [
+        -3.169,
+        -3.151
+      ],
+      "epsilon_05": [
+        -3.164,
+        -3.147
+      ],
+      "epsilon_08": [
+        -3.159,
+        -3.143
+      ]
+    },
+    "families": [
+      "b+a logN+c/N",
+      "b+a logN+(c logN+d)/N",
+      "b+a log(N+1/2)+c/N2"
+    ],
+    "root": "b06017ef80574259f02d1db036a5ac63e98b7ba9acec9a12e67751506e31587b",
+    "source_qualified": true,
+    "windows": [
+      [
+        64,
+        256
+      ],
+      [
+        96,
+        512
+      ],
+      [
+        128,
+        768
+      ],
+      [
+        192,
+        1024
+      ]
+    ]
+  },
+  "package_root": "b553660e9822e8af80b885a4e236eccbfc544ee45dbdec6d8c13107d8c4be499",
+  "physical": false,
+  "plan": "RIMASSSHAPETAIL1-B",
+  "schema": "C310-TAIL_ENCLOSURES-MANIFEST-V1",
+  "status": "C310_SHAPE_LOG_TAILS_SEPARATELY_SUBTRACTED_FIXED_EPSILON_REMAINDERS_ENCLOSED_EPSILON_LIMIT_MISSING",
+  "validation": "BOUND"
+}

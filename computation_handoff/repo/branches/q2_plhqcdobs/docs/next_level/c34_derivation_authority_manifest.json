@@ -1,0 +1,197 @@
+{
+  "builder_sha256": "19d746a8aff3c0bcc6695478283870d85172812eb91c59f68f677cd1592cdc86",
+  "content_hash": "76f3e7fcd3f5a549c585f671467f500a6dacb463366d270e2219feff21b377bf",
+  "count": 5,
+  "finite_basis_one_loop_expression_count": 0,
+  "manual_i0_or_delta_signs": 0,
+  "records": [
+    {
+      "ancestry_evidence": "C33_STORED_PATH_AND_DENOMINATOR_RECORD",
+      "ancestry_source_records": [
+        {
+          "path": "docs/next_level/c33_four_line_operator_manifest.json",
+          "record_sha256": "b4c8ef17f03dd78d1df1c53477e33501eeafcfb88449bfb6ecf5ebc5f0945638"
+        },
+        {
+          "path": "docs/next_level/c33_eikonal_denominator_report.json",
+          "record_sha256": "5ba4efc818ac3a19c9feb2a592bf7b4cbca3e04df110931b87d02c3784f15477"
+        }
+      ],
+      "color_action": "-T_a^T",
+      "derivation_id": "C34.DERIVATION.CURRENT.C33.LINE.N.DAGGER.B",
+      "finite_cell_basis": "C33_R1_R2_R3_LOG_ENERGY_RAPIDITY_TRANSVERSE_CELLS",
+      "fourier_convention": "exp(+i kT.xT)",
+      "gauge": "COVARIANT_XI_G_IN_0_1_2_PLAN",
+      "generated_code_sha256": "61c34dc1d13242fadd7ed2b4aa2e279760051394e3cb22099787bc07c9234e17",
+      "i0_and_delta_signs": {
+        "delta": "delta_minus",
+        "i0": "+"
+      },
+      "independent_oracle": false,
+      "momentum_flow": "INCOMING_TO_EIKONAL_OPERATOR",
+      "orientation": "FUTURE",
+      "perturbative_order": "O(g_s)",
+      "rapidity_regulator": "MODIFIED_DELTA_DISTINCT_DELTA_PLUS_MINUS",
+      "status": "STRUCTURALLY_DERIVED_CELL_MATRIX_UNAVAILABLE",
+      "symbolic_expression": "g_s -T_a^T sigma(C33.LINE.N.DAGGER.B) v_n^mu exp(+i kT.bT) D(k_minus,delta_minus,+i0)",
+      "symbolic_expression_sha256": "3b35194114156ec3fe46b839035f430a8fdb61fd0959c8f96cea5a06d2865974",
+      "uv_regulator": "C33_FINITE_LOG_CELL_BASIS_TO_MSBAR_TARGET",
+      "wilson_line_pair": [
+        "C33.LINE.N.DAGGER.B"
+      ]
+    },
+    {
+      "ancestry_evidence": "C33_STORED_PATH_AND_DENOMINATOR_RECORD",
+      "ancestry_source_records": [
+        {
+          "path": "docs/next_level/c33_four_line_operator_manifest.json",
+          "record_sha256": "a01a6bab411cf15e2d72f7224f8e7d32cda7b743e82549c4863f955543887e75"
+        },
+        {
+          "path": "docs/next_level/c33_eikonal_denominator_report.json",
+          "record_sha256": "d9de53c2fb4aab44c8b329358709d30862264116097eb65bdf6d43aba312ea5b"
+        }
+      ],
+      "color_action": "T_a",
+      "derivation_id": "C34.DERIVATION.CURRENT.C33.LINE.NBAR.B",
+      "finite_cell_basis": "C33_R1_R2_R3_LOG_ENERGY_RAPIDITY_TRANSVERSE_CELLS",
+      "fourier_convention": "exp(+i kT.xT)",
+      "gauge": "COVARIANT_XI_G_IN_0_1_2_PLAN",
+      "generated_code_sha256": "61c34dc1d13242fadd7ed2b4aa2e279760051394e3cb22099787bc07c9234e17",
+      "i0_and_delta_signs": {
+        "delta": "delta_plus",
+        "i0": "-"
+      },
+      "independent_oracle": false,
+      "momentum_flow": "INCOMING_TO_EIKONAL_OPERATOR",
+      "orientation": "FUTURE",
+      "perturbative_order": "O(g_s)",
+      "rapidity_regulator": "MODIFIED_DELTA_DISTINCT_DELTA_PLUS_MINUS",
+      "status": "STRUCTURALLY_DERIVED_CELL_MATRIX_UNAVAILABLE",
+      "symbolic_expression": "g_s T_a sigma(C33.LINE.NBAR.B) v_nbar^mu exp(+i kT.bT) D(k_plus,delta_plus,-i0)",
+      "symbolic_expression_sha256": "3ab08aa18c2e8cbcf00dc5ac59fc2bc304e0e90ea5c67cc10f4b184dee639c4f",
+      "uv_regulator": "C33_FINITE_LOG_CELL_BASIS_TO_MSBAR_TARGET",
+      "wilson_line_pair": [
+        "C33.LINE.NBAR.B"
+      ]
+    },
+    {
+      "ancestry_evidence": "C33_STORED_PATH_AND_DENOMINATOR_RECORD",
+      "ancestry_source_records": [
+        {
+          "path": "docs/next_level/c33_four_line_operator_manifest.json",
+          "record_sha256": "f252e5ac4c8ef791384b5327fab60113595feda0c379622ccf8f163af7acfdd9"
+        },
+        {
+          "path": "docs/next_level/c33_eikonal_denominator_report.json",
+          "record_sha256": "f0249055307822910abf8bf8290a5f3c2458ac55b334dbf56abab09c729fcd61"
+        }
+      ],
+      "color_action": "-T_a^T",
+      "derivation_id": "C34.DERIVATION.CURRENT.C33.LINE.NBAR.DAGGER.0",
+      "finite_cell_basis": "C33_R1_R2_R3_LOG_ENERGY_RAPIDITY_TRANSVERSE_CELLS",
+      "fourier_convention": "exp(+i kT.xT)",
+      "gauge": "COVARIANT_XI_G_IN_0_1_2_PLAN",
+      "generated_code_sha256": "61c34dc1d13242fadd7ed2b4aa2e279760051394e3cb22099787bc07c9234e17",
+      "i0_and_delta_signs": {
+        "delta": "delta_plus",
+        "i0": "+"
+      },
+      "independent_oracle": false,
+      "momentum_flow": "INCOMING_TO_EIKONAL_OPERATOR",
+      "orientation": "FUTURE",
+      "perturbative_order": "O(g_s)",
+      "rapidity_regulator": "MODIFIED_DELTA_DISTINCT_DELTA_PLUS_MINUS",
+      "status": "STRUCTURALLY_DERIVED_CELL_MATRIX_UNAVAILABLE",
+      "symbolic_expression": "g_s -T_a^T sigma(C33.LINE.NBAR.DAGGER.0) v_nbar^mu 1 D(k_plus,delta_plus,+i0)",
+      "symbolic_expression_sha256": "cbb3f9d294ac9aa5d94be55ba733f730e29d84aecad5bfc073ad06fa1a4a9f63",
+      "uv_regulator": "C33_FINITE_LOG_CELL_BASIS_TO_MSBAR_TARGET",
+      "wilson_line_pair": [
+        "C33.LINE.NBAR.DAGGER.0"
+      ]
+    },
+    {
+      "ancestry_evidence": "C33_STORED_PATH_AND_DENOMINATOR_RECORD",
+      "ancestry_source_records": [
+        {
+          "path": "docs/next_level/c33_four_line_operator_manifest.json",
+          "record_sha256": "5805010ec57a9dfd17835a64c45281c7b487d4732696cc3345e47443eefd405b"
+        },
+        {
+          "path": "docs/next_level/c33_eikonal_denominator_report.json",
+          "record_sha256": "983d8390e1466e2deeb425611daa211b1f25f89f2072604f7d26d2d313b1662d"
+        }
+      ],
+      "color_action": "T_a",
+      "derivation_id": "C34.DERIVATION.CURRENT.C33.LINE.N.0",
+      "finite_cell_basis": "C33_R1_R2_R3_LOG_ENERGY_RAPIDITY_TRANSVERSE_CELLS",
+      "fourier_convention": "exp(+i kT.xT)",
+      "gauge": "COVARIANT_XI_G_IN_0_1_2_PLAN",
+      "generated_code_sha256": "61c34dc1d13242fadd7ed2b4aa2e279760051394e3cb22099787bc07c9234e17",
+      "i0_and_delta_signs": {
+        "delta": "delta_minus",
+        "i0": "-"
+      },
+      "independent_oracle": false,
+      "momentum_flow": "INCOMING_TO_EIKONAL_OPERATOR",
+      "orientation": "FUTURE",
+      "perturbative_order": "O(g_s)",
+      "rapidity_regulator": "MODIFIED_DELTA_DISTINCT_DELTA_PLUS_MINUS",
+      "status": "STRUCTURALLY_DERIVED_CELL_MATRIX_UNAVAILABLE",
+      "symbolic_expression": "g_s T_a sigma(C33.LINE.N.0) v_n^mu 1 D(k_minus,delta_minus,-i0)",
+      "symbolic_expression_sha256": "01c861b3f5989d6d0b6cc17e3e9dab6b8747e2d2e4f137d5e5e1eaf7c73c1f2f",
+      "uv_regulator": "C33_FINITE_LOG_CELL_BASIS_TO_MSBAR_TARGET",
+      "wilson_line_pair": [
+        "C33.LINE.N.0"
+      ]
+    },
+    {
+      "color_action": "C_F=4/3",
+      "derivation_id": "C34.DERIVATION.CONTINUUM.MODDELTA.SOURCE_TRANSCRIPTION",
+      "finite_cell_basis": null,
+      "fourier_convention": "SOURCE_ALIGNED_B_SPACE",
+      "gauge": "SOURCE_GAUGE_INDEPENDENT_TARGET",
+      "generated_code_sha256": "19d746a8aff3c0bcc6695478283870d85172812eb91c59f68f677cd1592cdc86",
+      "graph_level_reconstruction": false,
+      "i0_and_delta_signs": "SOURCE_ORDERED_MODIFIED_DELTA",
+      "independent_direct_integral_reconstruction": false,
+      "independent_oracle": false,
+      "momentum_flow": "SOURCE_CONVENTION",
+      "orientation": "FUTURE_WITH_T_EVEN_PAST_TARGET",
+      "perturbative_order": "O(a_s)",
+      "rapidity_regulator": "MODIFIED_DELTA",
+      "source_formulae": {
+        "B_definition_eq8": "B=b_T^2/4",
+        "L0_definition_eq12": "L0=ln(B*|delta|/exp(-2*gamma_E))",
+        "L_mu_definition_pages2_5": "L_mu=ln(mu^2*b_T^2*exp(2*gamma_E)/4)=ln(mu^2*B*exp(2*gamma_E))",
+        "coupling_definition_eq7": "a_s=alpha_s/(4*pi)=g_s^2/(4*pi)^2",
+        "d11_definition_eq13": "d^(1,1)=2*C_F=Gamma_0/2",
+        "exact_one_loop_eq11": "S^[1]=-4*mu^(2*eps)*B^eps*Gamma(-eps)*(L0-psi(-eps)-gamma_E)",
+        "expanded_one_loop_eq13": "S^[1]=-4/eps^2+2*L_mu^2-(2*d^(1,1)/C_F)*(1/eps+L_mu)*l_delta+pi^2/3+O(eps)",
+        "exponentiation_eq7": "S_tilde=exp[a_s*C_F*(S^[1]+a_s*S^[2]+...)]",
+        "l_delta_definition_eq13": "l_delta=ln(mu^2/|delta_plus*delta_minus|)",
+        "modified_delta_product_eq8": "delta=+/- delta_plus*delta_minus"
+      },
+      "source_locators": {
+        "L0": "arXiv:1511.05590v2 p.5 Eq.(12)",
+        "L_X_general": "arXiv:1511.05590v2 p.2",
+        "delta_and_B": "arXiv:1511.05590v2 p.4 Eq.(8)",
+        "exact_one_loop": "arXiv:1511.05590v2 p.5 Eq.(11)",
+        "expanded_one_loop": "arXiv:1511.05590v2 p.5 Eq.(13)",
+        "exponentiation_and_coupling": "arXiv:1511.05590v2 p.4 Eq.(7)"
+      },
+      "source_transcription_present": true,
+      "status": "SOURCE_FINAL_RESULT_TRANSCRIBED_NOT_INDEPENDENTLY_RECONSTRUCTED",
+      "symbolic_expression": "S^[1]=-4/eps^2+2*L_mu^2-(2*d^(1,1)/C_F)*(1/eps+L_mu)*l_delta+pi^2/3+O(eps)",
+      "symbolic_expression_sha256": "7b58729fb78ea21c22151d3574f3e732898babc038902bcbfd118ec77e77a88f",
+      "uv_regulator": "DIMENSIONAL_REGULATION_MSBAR",
+      "wilson_line_pair": [
+        "n",
+        "nbar",
+        "conjugate partners"
+      ]
+    }
+  ],
+  "runtime_sha256": "61c34dc1d13242fadd7ed2b4aa2e279760051394e3cb22099787bc07c9234e17",
+  "schema_version": "1.0.0"
+}

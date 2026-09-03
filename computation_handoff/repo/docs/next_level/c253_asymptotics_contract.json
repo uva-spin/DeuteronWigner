@@ -1,0 +1,50 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "asymptotics_contract",
+  "authority_record": {
+    "count": 4,
+    "root": "84f5bd2ac2510ead77276fa4d690261d0d518109a3544371b2ae50ab49dbbde6",
+    "rows": [
+      {
+        "class_id": "I2_density_projector",
+        "diagonal_behavior": "delta_perp(0) distribution, not a finite pointwise value",
+        "raw_limit": "HO resolution of identity",
+        "summable_majorant": false,
+        "tail_norm": "not decaying in pointwise/trace scope"
+      },
+      {
+        "class_id": "derivative_density",
+        "diagonal_behavior": "distributional derivative/current density with longitudinal weight growth",
+        "raw_limit": "derivative-weighted resolution of identity",
+        "summable_majorant": false,
+        "tail_norm": "growth not decay"
+      },
+      {
+        "class_id": "CM_ground",
+        "diagonal_behavior": "bounded projector but truncation-tail operator norm remains 1 when complement nonempty",
+        "raw_limit": "nontrivial orthogonal projector on unbounded external basis",
+        "summable_majorant": false,
+        "tail_norm": "1"
+      },
+      {
+        "class_id": "triplet_projected",
+        "diagonal_behavior": "color factor bounded; kinematic truncation tail norm remains 1",
+        "raw_limit": "rank-three color projector tensored with unbounded kinematic identity",
+        "summable_majorant": false,
+        "tail_norm": "1"
+      }
+    ],
+    "summable_in_raw_scope": 0
+  },
+  "classes": 4,
+  "package_root": "ed248df2869de2f6c7a0e4747daee6a9d5602e8ab7b6d06614d82a77ce7721a4",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CURRENTTAIL1-C",
+  "raw_summable_majorants": 0,
+  "schema": "C253-ASYMPTOTICS-CONTRACT-V1",
+  "status": "C253_RAW_UNBOUNDED_PROJECTOR_TAIL_ASYMPTOTICS_CLASSIFIED_NO_SUMMABLE_MAJORANT_WITHOUT_REGULATOR_TOPOLOGY"
+}

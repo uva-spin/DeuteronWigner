@@ -1,0 +1,86 @@
+{
+  "C_F": 1.3333333333333333,
+  "N_c": 3,
+  "adjoint_dimension": 8,
+  "f_d_color_class": null,
+  "fundamental_dimension": 3,
+  "gauge_group": "SU(3)",
+  "lines": [
+    {
+      "basepoint": "bT",
+      "dagger": true,
+      "direction": "n",
+      "line_id": "C33.LINE.N.DAGGER.B",
+      "ordered_position": 1,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "ANTI_P",
+      "representation": "CONJUGATE_FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    },
+    {
+      "basepoint": "bT",
+      "dagger": false,
+      "direction": "nbar",
+      "line_id": "C33.LINE.NBAR.B",
+      "ordered_position": 2,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "P",
+      "representation": "FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    },
+    {
+      "basepoint": "0T",
+      "dagger": true,
+      "direction": "nbar",
+      "line_id": "C33.LINE.NBAR.DAGGER.0",
+      "ordered_position": 3,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "ANTI_P",
+      "representation": "CONJUGATE_FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    },
+    {
+      "basepoint": "0T",
+      "dagger": false,
+      "direction": "n",
+      "line_id": "C33.LINE.N.0",
+      "ordered_position": 4,
+      "orientation_variants": [
+        "FUTURE",
+        "PAST"
+      ],
+      "path_ordering": "P",
+      "representation": "FUNDAMENTAL",
+      "segments": [
+        "LIGHTLIKE",
+        "INFINITY_ENDPOINT",
+        "TRANSVERSE_CLOSURE"
+      ]
+    }
+  ],
+  "schema_version": "1.0.0",
+  "singlet_trace_projector": "Tr/N_c",
+  "status": "C33_FOUR_LINE_SOFT_OPERATOR_VALIDATED",
+  "tree_trace": 1.0
+}

@@ -1,0 +1,52 @@
+{
+  "C166_graph_delta": {
+    "edges_added": 0,
+    "nodes_added": 0
+  },
+  "count": 5,
+  "root": "e715d54a7f468194ede968a4bea603ac9c3fe76bb3f3e7a011d9f1577a1c2d99",
+  "rows": [
+    {
+      "classification": "conditional source-derived quark emission",
+      "coupling_degree": 1,
+      "edge_id": "C185-QG-QGG-QUARK-EMISSION",
+      "read_only": true,
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QGG"
+    },
+    {
+      "classification": "source-derived cubic spectator transition",
+      "coupling_degree": 1,
+      "edge_id": "C186-QG-QGG-CUBIC-GLUON",
+      "read_only": false,
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QGG"
+    },
+    {
+      "classification": "typed direct/contact owner frontier",
+      "coupling_degree": 2,
+      "edge_id": "C186-Q-QGG-ORDER2",
+      "read_only": false,
+      "source": "C170-B1-Q",
+      "target": "C170-B1-QGG"
+    },
+    {
+      "classification": "conditional source-derived pair transition",
+      "coupling_degree": 1,
+      "edge_id": "C185-QG-QQBARQ-PAIR",
+      "read_only": true,
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QQBARQ"
+    },
+    {
+      "classification": "future complete qg 1PI",
+      "coupling_degree": 2,
+      "edge_id": "C187-QG-1PI",
+      "read_only": true,
+      "source": "C170-B1-QG",
+      "target": "C170-B1-QG"
+    }
+  ],
+  "schema": "C186-TRANSITION-GRAPH-V1",
+  "source_reachable": true
+}

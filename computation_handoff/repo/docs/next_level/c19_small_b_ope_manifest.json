@@ -1,0 +1,38 @@
+{
+  "adjoint_residual": 0.0,
+  "channels": [
+    "Q_UNPOL",
+    "QBAR_UNPOL",
+    "Q_HELICITY",
+    "Q_TRANSVERSITY",
+    "G_UNPOL",
+    "G_HELICITY",
+    "G_LINEAR",
+    "D_LL_QUARK",
+    "D_LL_GLUON",
+    "SINGLET_QG"
+  ],
+  "closure_residual": 3.1e-13,
+  "duplicate_soft_residual": -0.041,
+  "fundamental_residual": 0.0,
+  "missing_rapidity_residual": 0.027,
+  "missing_soft_residual": 0.041,
+  "physical_todd_coefficients": "UNAVAILABLE_AT_THIS_MATCHING_ORDER",
+  "pieces": [
+    "UNSUBTRACTED",
+    "UV",
+    "RAPIDITY",
+    "SOFT",
+    "FINITE_SCHEME",
+    "LF_TO_QCD",
+    "TRUNCATION"
+  ],
+  "power_remainder": 0.0045,
+  "schema_version": "1.0.0",
+  "todd_basis": [
+    "QIU_STERMAN",
+    "CHIRAL_ODD_TWIST3",
+    "TRIGLUON_F",
+    "TRIGLUON_D"
+  ]
+}

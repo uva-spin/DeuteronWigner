@@ -1,0 +1,146 @@
+{
+  "schema": "C206-FRONTIER-CONTRACT-V1",
+  "artifact": "frontier_contract",
+  "package": "C206/HQCDSTCTSOLVE1",
+  "package_root": "b404a853c2c9f63620bf970b4230ef67c59003a73f43de8f51e7aefab0ea371d",
+  "status": "C206_C205_EXACT_CONDITIONAL_ST_COMPATIBLE_AFFINE_COUNTERTERM_SOLUTION_FAMILY_READY_TARGET_FIXING_EXPLICIT",
+  "plan": "STCTSOLVE1-B",
+  "claims": [
+    "exact conditional affine ST family",
+    "no physical representative or target condition selected"
+  ],
+  "evidence": [
+    "C198-C205 public systems",
+    "C205 package root"
+  ],
+  "physical": false,
+  "representative_selected": false,
+  "target_MOMq": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "object_id": "C197-ST-1",
+        "exact_missing_object": "complete ghost-field renormalization",
+        "aliases": [
+          "complete ghost-field renormalization",
+          "GHOST_FIELD_RENORMALIZATION"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-2",
+        "exact_missing_object": "complete ghost-gluon proper vertex",
+        "aliases": [
+          "complete ghost-gluon proper vertex",
+          "GHOST_GLUON_PROPER_VERTEX"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-3",
+        "exact_missing_object": "complete three-gluon proper vertex renormalization",
+        "aliases": [
+          "complete three-gluon proper vertex renormalization",
+          "THREE_GLUON_PROPER_VERTEX"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-4",
+        "exact_missing_object": "complete four-gluon renormalization",
+        "aliases": [
+          "complete four-gluon renormalization",
+          "FOUR_GLUON_PROPER_VERTEX"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-5",
+        "exact_missing_object": "BRST source identities",
+        "aliases": [
+          "BRST source identities",
+          "BRST_SOURCE_IDENTITY"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-6",
+        "exact_missing_object": "endpoint ghost/link identities",
+        "aliases": [
+          "endpoint ghost/link identities",
+          "ENDPOINT_GHOST_LINK_IDENTITY"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-7",
+        "exact_missing_object": "global zero-mode/gauge-volume treatment",
+        "aliases": [
+          "global zero-mode/gauge-volume treatment",
+          "GLOBAL_GAUGE_VOLUME_IDENTITY"
+        ],
+        "status": "READ_ONLY_CLOSED",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-8",
+        "exact_missing_object": "ST-compatible counterterm solution",
+        "aliases": [
+          "ST-compatible counterterm solution",
+          "ST_COMPATIBLE_COUNTERTERM_SOLUTION"
+        ],
+        "status": "C206_REPLACED_CONDITIONAL_AFFINE_FAMILY",
+        "not_zero": true,
+        "next": null
+      },
+      {
+        "object_id": "C197-ST-9",
+        "exact_missing_object": "target MOMq renormalization conditions",
+        "aliases": [
+          "target MOMq renormalization conditions",
+          "TARGET_RENORMALIZATION_CONDITION"
+        ],
+        "status": "PRESERVED_ORDERED_FRONTIER",
+        "not_zero": true,
+        "next": "C207/HQCDMOMQCOND1"
+      },
+      {
+        "object_id": "C197-ST-10",
+        "exact_missing_object": "physical input",
+        "aliases": [
+          "physical input",
+          "PHYSICAL_INPUT_CONDITION"
+        ],
+        "status": "PRESERVED_ORDERED_FRONTIER",
+        "not_zero": true,
+        "next": null
+      }
+    ],
+    "count": 10,
+    "first": "C197-ST-8",
+    "ordered_remaining": [
+      "C197-ST-9",
+      "C197-ST-10"
+    ],
+    "root": "b546b6444b2f43cc0d45e008d72458e1c917b6ad6980db95e2d57f2b1f82c994"
+  }
+}

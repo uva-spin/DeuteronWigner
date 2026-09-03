@@ -1,0 +1,54 @@
+{
+  "count": 5,
+  "extrapolation_permitted": false,
+  "rows": [
+    {
+      "Q_GeV": [
+        2.0,
+        20.0
+      ],
+      "b_GeV_inv": [
+        0.1,
+        2.0
+      ],
+      "stable_id": "C29.DOMAIN.DIST",
+      "status": "COMMON_DOMAIN_IDENTIFIED_VALIDATION_ONLY",
+      "x": [
+        0.01,
+        0.7
+      ]
+    },
+    {
+      "Q_GeV": [
+        2.0,
+        20.0
+      ],
+      "b_GeV_inv": [
+        0.1,
+        1.0
+      ],
+      "stable_id": "C29.DOMAIN.CS",
+      "status": "COMMON_PERTURBATIVE_AND_BOUNDARY_DOMAIN",
+      "x": null
+    },
+    {
+      "process": "low-qT W",
+      "stable_id": "C29.DOMAIN.DY",
+      "status": "MEASUREMENT_COMMON_DOMAIN_UNRESOLVED_MICROSCOPIC"
+    },
+    {
+      "process": "current fragmentation low-pT W",
+      "stable_id": "C29.DOMAIN.SIDIS",
+      "status": "TARGET_AND_SCHEME_UNRESOLVED"
+    },
+    {
+      "b_GeV_inv": [
+        1.0,
+        2.0
+      ],
+      "stable_id": "C29.DOMAIN.LARGEB",
+      "status": "DISCREPANCY_REQUIRED"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

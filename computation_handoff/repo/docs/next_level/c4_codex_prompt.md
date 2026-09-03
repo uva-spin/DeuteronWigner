@@ -1,0 +1,1047 @@
+# Codex Work Package C4
+
+## Title
+
+**Validation-only minimal sea/gluon sectors and common TMD/GPD/PDF/current route closure**
+
+## Repository and immutable baseline
+
+Repository: `uva-spin/DeuteronWigner`
+
+Required C3 baseline commit:
+
+```text
+b0a18ce2d1017e102b2be0849abf4d31537874a8
+```
+
+Required ancestry:
+
+```text
+5063c002e763f3d6a0affc774ec6b124a539f0be  # C2
+4613318aa7e262e7482978c4198d8e72a4c73c09  # C1
+5d4641f31d6a472c27ceed982856e65d0ff4c3cb  # C0
+```
+
+Begin from a clean repository state containing C3 commit
+`b0a18ce2d1017e102b2be0849abf4d31537874a8`. If legitimate later
+**documentation-only** commits have added formal volumes, prompts, or roadmap
+updates, retain them after verifying that the C3 commit is an ancestor and
+that the complete C3 regression baseline still passes. Do not reset,
+overwrite, or discard legitimate later work.
+
+Before changing code, verify and record the complete C3 baseline:
+
+- `538/538` tests pass;
+- all nine acceptance/report builders pass;
+- `36/36` evidence rows pass;
+- all `162/162` atlas pages render;
+- all C1, C2, and C3 mandatory mismatch/negative injections pass, including
+  the `24/24` C3 injections;
+- Volume II analytic Benchmarks A--D pass;
+- the largest reported C3 floating residual is no larger than
+  `8.88e-16` unless a documented platform-level reproducibility difference
+  is diagnosed;
+- all eight authoritative parent/correlator files remain byte-identical to
+  the C1/C2/C3 regression manifests;
+- the accepted production reduction registry remains exactly 216 entries:
+  72 quark, 72 antiquark, and 72 gluon;
+- the C2 production provenance graph, deterministic default composition plan,
+  production resolved-parent builder, and accepted output manifests remain
+  unchanged;
+- the C3 pilot package is disjoint from accepted production and its
+  deterministic manifests reproduce exactly.
+
+If the observed baseline differs, diagnose it before implementation. Do not
+weaken tests, schemas, graph restrictions, mismatch injections, evidence
+rules, tolerances, route checks, or hash checks to make the baseline pass.
+
+## Normative sources
+
+Read completely before implementation, using the actual repository paths if
+an established naming convention differs:
+
+1. the corrected Volume 0 algebraic/geometric architecture specification;
+2. `references/volume_i_regulated_light_front_foundations.tex`;
+3. `references/volume_ii_common_nucleon_gtmd_overlaps.tex`, especially:
+   - the positive-`x` antiquark construction;
+   - the explicit-gluon overlap;
+   - the regulated common-parent nesting theorem;
+   - the matched common-parent consistency theorem;
+   - Benchmark E: minimal sea and gluon sectors;
+   - Benchmark F: induced-operator equivalence;
+4. `references/volume_iii_dynamical_wilson_lines.tex` only for the strict
+   zero-rescattering boundary and non-goals;
+5. `references/volume_iv_matched_spin1_nuclear_dynamics.tex` only for later
+   interface awareness; do not implement nuclear dynamics in C4;
+6. `references/model_construction_note.tex`;
+7. the original GTMD-first formalism note, if retained in `references/`;
+8. all C0 architecture audit, migration-plan, and architecture-decision files;
+9. all C1 API, implementation, identity-completeness, adapter, requirement,
+   and regression reports;
+10. all C2 API, reduction-registry, provenance, composition, requirement,
+    unresolved-gap, and regression reports;
+11. `docs/next_level/c3_implementation_report.md`;
+12. the C3 API, benchmark, injection, provenance, requirement, and regression
+    manifests produced by the repository;
+13. the persistent roadmap and current handoff notes.
+
+If any normative volume is absent, do not invent its contents. Record the
+missing path, use the equations and requirements reproduced explicitly in
+this work package, and continue all work that is unambiguous. The final report
+must state which normative documents were actually present.
+
+## Stable requirement identifiers
+
+The stable requirement identifiers for this work package are:
+
+- `C4.BASELINE`
+- `C4.ISOLATE`
+- `C4.STATE`
+- `C4.SEA`
+- `C4.SEA_COLOR`
+- `C4.SEA_LEDGER`
+- `C4.GLUON`
+- `C4.GLUON_COLOR`
+- `C4.GLUON_LEDGER`
+- `C4.ACTIVE`
+- `C4.ZERO`
+- `C4.OVERLAP`
+- `C4.TMD_ROUTE`
+- `C4.GPD_ROUTE`
+- `C4.PDF_ROUTE`
+- `C4.CURRENT_ROUTE`
+- `C4.ROUTE_CLOSURE`
+- `C4.MATCHING_STATUS`
+- `C4.FESHBACH`
+- `C4.INDUCED_OPERATOR`
+- `C4.PROVENANCE`
+- `C4.INJECT`
+- `C4.CONVERGENCE`
+- `C4.REGRESS`
+- `C4.DOC`
+
+Every identifier must appear in a machine-readable coverage report with
+implementation locations, tests, status, residuals, and unresolved
+limitations.
+
+## Primary objective
+
+Extend the validation-only C3 analytic common-overlap pilot to implement
+Volume II Benchmarks E--F:
+
+1. a minimal explicit sea-containing state
+   \[
+   |qqq\rangle\oplus|qqqq\bar q\rangle;
+   \]
+2. a minimal explicit gluon-containing state
+   \[
+   |qqq\rangle\oplus|qqqg\rangle;
+   \]
+3. positive-`x` antiquark and gluon active-parton overlaps generated by the
+   **same** typed momentum fibers, symmetric recoil authority, diagonal
+   zeroth-rescattering overlap evaluator, and reduction infrastructure used by
+   C3;
+4. exact sea and gluon zero tests when the corresponding sector is disabled;
+5. common regulated routes from one parent overlap to its TMD, GPD, PDF, and
+   local-current or energy--momentum moment;
+6. route-closure tests showing that direct and sequential reductions agree
+   within separately recorded state, matching, and numerical residuals;
+7. a finite-dimensional Feshbach benchmark in which an explicit higher sector
+   and its induced retained-space operator give equivalent matrix elements;
+8. an enforceable provenance rule that forbids simultaneous use of the
+   explicit sector and the induced operator representing the same physics;
+9. complete continued isolation from the accepted canonical production model.
+
+C4 remains an analytic validation package. It is not a phenomenological sea
+or gluon model and is not authorized to replace or tune any accepted parent.
+
+## Completeness and autonomy
+
+Completeness is the objective, not speed.
+
+Continue autonomously until every acceptance criterion is satisfied. Read all
+relevant source, tests, manifests, and reports. Run routine non-destructive
+commands, local dependency installation, symbolic checks, test suites, report
+builders, schema validators, and rendering commands without stopping for
+approval when the environment permits them.
+
+If one optional package or command is blocked, use an available alternative,
+document the limitation, and continue all unaffected work. Do not stop merely
+to ask whether to continue.
+
+Do not perform network publication, credential changes, destructive history
+rewrites, or changes outside the repository. Create a local commit only after
+all acceptance criteria pass. Do not push.
+
+## Strict non-goals
+
+Do not implement in C4:
+
+- a fitted or realistic microscopic nucleon Hamiltonian;
+- Hamiltonian parameter calibration or production eigensolving;
+- nonzero skewness or ERBL overlaps;
+- dynamical Wilson-line interactions, eikonal denominators, rescattering
+  phases, gluonic poles, or naive-`T`-odd functions;
+- Sivers, Boer--Mulders, or physical gluon `f`/`d` dynamics;
+- a process-level future/past link assignment for the analytic diagonal
+  gluon core;
+- soft subtraction, rapidity renormalization, Collins--Soper evolution,
+  small-`b` QCD matching, or `W+Y` process matching;
+- a claim that a literal regulated staple integral is already a physical GPD,
+  PDF, or current;
+- nuclear convolution, deuteron composition, shadowing, pions in the deuteron,
+  or non-nucleonic nuclear sectors;
+- changes to the accepted 216-reduction production registry;
+- changes to the accepted C2 provenance graph or default composition plan;
+- connection of C4 pilot results to the production resolved-parent builder;
+- fitted sea asymmetry, a physical gluon PDF, a universal transverse width, or
+  any evidence upgrade;
+- an unverified `qqq` color singlet multiplied by a free gluon; that state is
+  not a color singlet;
+- silent negative-`x` quark/antiquark identification;
+- simultaneous activation of an explicit higher sector and the induced
+  operator that replaces it;
+- positivity clipping, after-the-fact renormalization, or numerical repair;
+- changes to accepted signs, ranks, mass conventions, Fourier phases,
+  operator identities, flavor resolution, target conventions, or uncertainty
+  semantics;
+- a claim that C4 is physical nucleon GTMD phenomenology.
+
+All analytic widths, mixing probabilities, basis choices, and finite-model
+couplings introduced in C4 must be marked `VALIDATION_ONLY` or the repository's
+existing equivalent.
+
+## Physics and numerical invariants
+
+Do not change:
+
+- any of the eight authoritative files, bytes, row order, columns, precision,
+  formatting, or hashes;
+- the 216 accepted native reductions or their stable identities;
+- the accepted C2 provenance graph and deterministic default plan;
+- the production resolved-parent numerical route;
+- any accepted quark, antiquark, or gluon parent value;
+- proton/neutron and flavor resolution;
+- target-polarization signs and the internal-to-physical `LL` adapter;
+- transverse-rank, reference-mass, extracted-power, Bessel-order, and
+  Fourier-phase conventions;
+- Wilson-path and ordered gluon-link identity in accepted production;
+- accepted gluon `f`- and `d`-type content;
+- evidence classifications or uncertainty semantics;
+- acceptance tolerances used by the canonical model;
+- C3 Benchmarks A--D, their manifests, or their production isolation.
+
+The accepted model remains the immutable regression oracle. C4 extends the
+validation-only pilot beside it.
+
+## Architecture rule
+
+Build on the C1/C2 formal package and the actual C3 implementation under
+`src/deuteron_wigner/pilot/`. Do not create a second coordinate, rank, sector,
+path, operator-identity, map-class, reduction, provenance, momentum-fiber,
+recoil-map, intrinsic-configuration, analytic-state, or overlap-evaluator type
+system.
+
+Inspect the actual C3 API and manifests before choosing module names. Extend
+existing immutable dataclasses, enums, protocols, validators, active-parton
+selectors, reduction bridges, and structured diagnostics where semantically
+correct.
+
+Prefer:
+
+- immutable dataclasses and enums;
+- a generic arbitrary-particle analytic Fock-state protocol;
+- explicit sector amplitudes and normalization ledgers;
+- exact finite color tensors with generator tests;
+- one shared recoil implementation;
+- one shared overlap evaluator;
+- typed positive-`x` quark, antiquark, and gluon selectors;
+- deterministic quadrature and analytic or independently coded oracles;
+- explicit regulated reduction routes;
+- stable route and residual identities;
+- explicit quark versus gluon Mellin conventions;
+- a dedicated Feshbach/effective-operator module;
+- existing C2/C3 provenance concepts for explicit-versus-induced alternatives;
+- structured diagnostics with stable error codes;
+- deterministic serialization and hashing.
+
+Avoid:
+
+- raw arrays whose roles are inferred by shape;
+- copied recoil formulas;
+- a separate overlap evaluator for sea or gluons;
+- a separate private reduction system;
+- hidden active-slot multiplicities;
+- a `qqq` singlet times an adjoint gluon;
+- one Mellin convention copied between quarks and gluons;
+- a route called `GPD`, `PDF`, or `CURRENT` without a recorded regulated or
+  matching status;
+- global mutable pilot registries;
+- implicit promotion to accepted production;
+- broad unrelated refactoring.
+
+# C4.BASELINE — verify and freeze C3
+
+1. Record the exact starting commit, branch, working-tree status, Python
+   environment, and dependency versions.
+2. Run and record the complete C3 validation baseline before modifications.
+3. Load authoritative hashes and production-registry counts from the existing
+   machine-readable reports.
+4. Verify deterministic regeneration of the C2 production manifests and all
+   C3 pilot manifests.
+5. Record Benchmarks A--D residuals and all 24 C3 injections.
+6. Create a C4 baseline snapshot without overwriting C0--C3 reports.
+7. The final report must compare before/after tests, builders, evidence,
+   atlases, accepted registries, production manifests, pilot manifests,
+   injections, benchmark residuals, and hashes.
+
+# C4.ISOLATE — retain a validation-only boundary
+
+C4 must remain disconnected from accepted production.
+
+Requirements:
+
+1. The accepted production reduction registry remains exactly 216 entries.
+2. The accepted default composition plan contains no C4 node or edge.
+3. The production resolved-parent builder cannot consume a C4 state, overlap,
+   reduction, or induced operator.
+4. Importing C4 modules has no production side effects.
+5. C4 outputs are written only to a dedicated next-level validation path such
+   as `outputs/next_level/c4/`.
+6. Tests attempting production promotion fail closed with a structured
+   diagnostic.
+7. The C4 graph is separate from production or consists only of inactive nodes
+   provably unreachable from the accepted root.
+8. C4 may consume C3 pilot types and results but may not mutate C3 manifests.
+
+# C4.STATE — normalized sector-superposition states
+
+Implement or extend a generic analytic state capable of representing an
+orthogonal direct sum of Fock sectors:
+
+\[
+|N\rangle=\sum_\nu c_\nu |\psi_\nu\rangle,
+\qquad
+\sum_\nu |c_\nu|^2=1.
+\]
+
+For the C4 benchmarks use nonnegative real sector weights unless a phase is
+required by a specific algebraic test. Do not introduce a free complex phase
+that could be mistaken for Wilson-line dynamics.
+
+A sector record must include at least:
+
+```text
+sector identity
+parton species and flavors
+slot identities and permutation orbits
+color tensor and multiplicity channel
+helicities
+OAM labels used by the benchmark
+intrinsic momentum configuration or wave-function protocol
+normalization
+sector probability
+active-selector compatibility
+validation-only member identity
+```
+
+The diagonal zeroth-rescattering operator has no cross-sector contribution
+unless a separately named induced or number-changing operator is supplied.
+
+# C4.SEA — minimal explicit sea sector
+
+Implement the separate benchmark family
+
+\[
+|N_{\rm sea}(P_{\rm sea})\rangle
+=\sqrt{1-P_{\rm sea}}\,|qqq\rangle
++\sqrt{P_{\rm sea}}\,|qqqq\bar q\rangle,
+\qquad 0\le P_{\rm sea}\le1.
+\]
+
+Requirements:
+
+1. The five-parton sector contains one explicitly labeled positive-`x`
+   antiquark and its partner quark.
+2. Support at least one neutral pair flavor and design the API so additional
+   pair flavors are explicit members, not changes of meaning.
+3. Net baryon number, electric charge, and valence flavor numbers remain those
+   of the parent proton or neutron benchmark.
+4. Quark-plus-antiquark occupation changes as expected while net flavor does
+   not.
+5. Antiquark observables are generated by an explicit active-antiquark slot
+   sum; they are not populated through negative-`x` copying.
+6. Identical-particle multiplicities and antisymmetry/permutation conventions
+   are explicit and tested. A cluster basis may be used only if its slot roles
+   and permutation limitations are declared and active-slot sums are
+   permutation covariant.
+7. The state is normalized without an after-the-fact observable rescaling.
+8. `P_sea=0` returns the exact C3 valence state and exact antiquark zero.
+9. For `P_sea>0`, the positive-`x` antiquark parent is nonzero on the declared
+   support.
+10. The resulting state and all parameters remain validation-only.
+
+# C4.SEA_COLOR — explicit five-parton color singlet
+
+Use a mathematically valid total color singlet. A minimal cluster-coupled
+benchmark may begin from
+
+\[
+C_{abc;d\bar e}
+=\frac{1}{\sqrt6}\epsilon_{abc}
+ \frac{1}{\sqrt3}\delta_{d e},
+\]
+
+provided the implementation records the cluster coupling and handles
+identical-quark permutation semantics explicitly.
+
+Requirements:
+
+1. Normalize the color tensor independently.
+2. Implement fundamental generators on quark slots and
+   \(T_{\bar 3}^A=-(t^A)^T\) on the antiquark slot.
+3. Verify that every total generator annihilates the color state within the
+   exact/symbolic or declared floating tolerance.
+4. Verify invariance under supported slot relabelings and active-choice
+   conventions.
+5. Reject any color tensor that passes only because the antiquark generator
+   sign was omitted.
+6. Record whether the benchmark is a cluster basis, a fully antisymmetrized
+   basis, or another explicit construction.
+
+# C4.SEA_LEDGER — sea number, charge, and momentum closure
+
+For each pair-flavor member compute and record:
+
+\[
+N_f=\int_0^1 dx\int d^2k_T
+\left[f_1^f-f_1^{\bar f}\right],
+\]
+
+\[
+\Sigma_f=\int_0^1 dx\int d^2k_T
+\left[f_1^f+f_1^{\bar f}\right],
+\]
+
+and the total baryon, electric-charge, and plus-momentum ledgers.
+
+Requirements:
+
+1. Net valence flavor numbers remain correct.
+2. The neutral pair changes occupation but not net charge.
+3. The sum of constituent momentum fractions is one in every configuration.
+4. The integrated overlap routes reproduce the state-level ledger.
+5. State, quadrature, and route residuals are stored separately.
+
+# C4.GLUON — minimal explicit gluon sector
+
+Implement the separate benchmark family
+
+\[
+|N_g(P_g)\rangle
+=\sqrt{1-P_g}\,|qqq\rangle
++\sqrt{P_g}\,|qqqg\rangle,
+\qquad 0\le P_g\le1.
+\]
+
+Requirements:
+
+1. The four-parton sector contains an explicit transverse physical gluon slot.
+2. The same C3 momentum-fiber, intrinsic-configuration, recoil-map, and
+   overlap-evaluator objects are used.
+3. The active gluon selector is explicit and cannot select a quark slot.
+4. `P_g=0` gives exact gluon zero and the exact C3 valence state.
+5. For `P_g>0`, the diagonal unpolarized gluon parent is nonzero on the
+   declared support.
+6. The gluon polarization trace, antisymmetric, and symmetric-traceless
+   projectors are typed. C4 must close at least the unpolarized trace route;
+   additional T-even algebraic projections may be included if they require no
+   new physics assumptions.
+7. At zeroth rescattering order the diagonal gluon core has no physical
+   gluonic-pole `f`/`d` assignment. Use an explicit identity such as
+   `DIAGONAL_ADJOINT`, `ZEROTH_RESCATTERING`, or the existing semantically
+   correct equivalent. Do not label this analytic core as a T-odd `f`- or
+   `d`-type function.
+8. All sector parameters remain validation-only.
+
+# C4.GLUON_COLOR — valid `qqqg` color singlet
+
+A free gluon cannot be multiplied by the C3 `qqq` color singlet. Couple a
+three-quark octet to the adjoint gluon. One admissible minimal tensor is
+schematically
+
+\[
+C_{ijk;a}=\mathcal N\,\epsilon_{ijm}(t^a)_{mk},
+\]
+
+with a declared octet multiplicity channel and normalization \(\mathcal N\).
+The implementation may use an equivalent explicitly verified SU(3)
+construction.
+
+Requirements:
+
+1. Determine the normalization analytically or by an independent exact
+   contraction.
+2. Record the chosen `qqq` octet multiplicity channel. Do not imply that the
+   octet coupling is unique.
+3. Apply fundamental generators to each quark and the adjoint generator
+   \((F^A)_{ab}=-if^{Aab}\) to the gluon.
+4. Verify that every total generator annihilates the full `qqqg` tensor.
+5. Verify unit norm and supported permutation properties.
+6. Include a deliberate invalid `qqq-singlet x gluon` construction and prove
+   that the color-singlet validator rejects it.
+
+# C4.GLUON_LEDGER — quark/gluon momentum closure
+
+For the common convention in which
+
+\[
+H^g(x,0,0)=xg(x),
+\]
+
+the gluon energy--momentum moment is
+
+\[
+A_g(0)=\int_0^1 dx\,H^g(x,0,0).
+\]
+
+Requirements:
+
+1. Compute the quark and gluon momentum fractions from the common state.
+2. Verify
+   \[
+   \sum_q\langle x\rangle_{q+\bar q}+\langle x\rangle_g=1
+   \]
+   within the declared analytic/numerical tolerance.
+3. Keep quark number-current and gluon energy--momentum conventions distinct.
+4. Reject a route that applies the quark Mellin power or vector-charge
+   normalization to the gluon.
+5. Verify continuous return to the valence momentum ledger as `P_g -> 0`.
+
+# C4.ACTIVE — positive-`x` active selectors
+
+Extend the C3 active-selection mechanism rather than creating a second
+selector system.
+
+Each selection must retain:
+
+```text
+sector id
+slot id
+species
+flavor or NOT_APPLICABLE for gluons
+helicity
+color representation
+permutation orbit
+multiplicity
+operator compatibility
+```
+
+Requirements:
+
+1. Separate selectors for quarks, antiquarks, and gluons.
+2. Empty active sets yield exact structural zero, not a tiny numerical value.
+3. Canonical-active-slot and explicit-all-slots implementations agree where
+   both are supported.
+4. Wrong-species selection fails closed.
+5. Duplicate active multiplicity is detected.
+6. Antiquark flavor remains explicit positive `x`.
+
+# C4.ZERO — sector activation and exact zero tests
+
+Implement Volume II's zero tests:
+
+- if no retained sector contains an explicit antiquark and no induced
+  antiquark operator is enabled, the positive-`x` antiquark overlap is exactly
+  zero;
+- if no retained sector contains an explicit gluon and no induced gluon
+  operator is enabled, the diagonal gluon overlap is exactly zero.
+
+Test at least:
+
+```text
+P = 0
+small positive P values
+one interior P value
+a second interior P value
+```
+
+Record whether the observable scales as `P`, `sqrt(P)`, or another power from
+the declared diagonal/operator structure. For the diagonal sector
+probability contribution, the integrated density should scale with `P`.
+Do not fit the scaling exponent from noisy values when it follows exactly
+from the construction.
+
+# C4.OVERLAP — one common evaluator
+
+Use the C3 diagonal zeroth-rescattering overlap evaluator for all valence,
+sea-quark, antiquark, and gluon benchmark routes.
+
+Requirements:
+
+1. No duplicated sea or gluon recoil formula.
+2. No duplicated sea or gluon overlap engine.
+3. The incoming and outgoing intrinsic configurations close separately.
+4. Transfer reversal gives the declared Hermiticity relation.
+5. `Delta_T=0` gives the forward identity.
+6. Sector identity, active slot, operator identity, normalization, and
+   residual ledger are preserved in every result.
+7. Diagonal overlaps do not silently create `nu != mu` matrix elements.
+
+# C4.TMD_ROUTE — regulated forward limit
+
+Define the validation-only regulated TMD route
+
+\[
+\mathsf T_{\rm reg}[W](x,k_T)=W(x,k_T,\Delta_T=0).
+\]
+
+Requirements:
+
+1. Use an existing C2/C3 typed reduction map or extend it; do not implement an
+   untyped helper-only route.
+2. Preserve species, flavor, sector, operator, rank, mass, phase, and
+   zero-rescattering identities.
+3. Mark the result `REGULATED_ANALYTIC_PILOT` or the existing equivalent, not
+   a physical soft-subtracted TMD.
+4. Close the forward limit against an independent direct-forward oracle.
+
+# C4.GPD_ROUTE — regulated transverse-momentum integral
+
+Define
+
+\[
+\mathsf G_{\rm reg}[W](x,\Delta_T)
+=\int d^2k_T\,W(x,k_T,\Delta_T).
+\]
+
+Requirements:
+
+1. The route uses deterministic quadrature or an analytic oracle with a
+   declared truncation/error record.
+2. The result is called a **regulated analytic GPD route** unless an explicit
+   link-shortening/renormalization matching adapter is present.
+3. A staple or process-dependent operator cannot be identified with a
+   physical GPD solely by integration.
+4. The operator and path identity remain visible.
+5. At `Delta_T=0`, the result agrees with the PDF route.
+
+# C4.PDF_ROUTE — common forward collinear route
+
+Implement both compositions:
+
+\[
+\mathsf P_1[W]
+=\int d^2k_T\,\mathsf T_{\rm reg}[W],
+\]
+
+\[
+\mathsf P_2[W]
+=\left.\mathsf G_{\rm reg}[W]\right|_{\Delta_T=0}.
+\]
+
+Requirements:
+
+1. `P1` and `P2` agree within the declared residual budget.
+2. Quark and antiquark remain separate positive-`x` distributions.
+3. The gluon route records whether its stored scalar is `g(x)` or `H^g=xg`.
+4. No named-function normalization is added after reduction.
+5. The PDF route reproduces the state-level number and momentum ledgers.
+
+# C4.CURRENT_ROUTE — local-current and EMT moments
+
+Implement direct and sequential moment routes.
+
+For positive-`x` separate quark and antiquark parents, the vector-current
+flavor moment is
+
+\[
+F_1^q(\Delta_T)
+=\int_0^1 dx\,
+\left[H^q(x,0,-\Delta_T^2)-H^{\bar q}(x,0,-\Delta_T^2)\right]
+\]
+
+within the analytic pilot convention. At `Delta_T=0`, it gives the net flavor
+number.
+
+For the gluon convention `H^g=xg`, use
+
+\[
+A_g(\Delta_T)=\int_0^1 dx\,H^g(x,0,-\Delta_T^2).
+\]
+
+Requirements:
+
+1. Compare direct `x,k_T` integration of the parent with sequential
+   `GTMD -> GPD -> current/EMT` integration.
+2. At zero transfer, reproduce the quark net-flavor and total momentum
+   ledgers.
+3. Preserve the distinction between electromagnetic/vector current and
+   energy--momentum moments.
+4. Store the Mellin convention as typed metadata.
+5. Reject a gluon vector-number current and reject a quark/gluon Mellin
+   convention mismatch.
+
+# C4.ROUTE_CLOSURE — common-parent commuting tests
+
+For each supported quark, antiquark, and gluon analytic parent, compare all
+available routes to the same regulated quantity:
+
+```text
+GTMD -> TMD -> PDF
+GTMD -> regulated GPD -> PDF at Delta_T=0
+GTMD -> direct double integral
+GTMD -> regulated GPD -> current/EMT moment
+GTMD -> direct x,k_T current/EMT moment
+```
+
+Store residuals separately as:
+
+```text
+state/model residual
+matching-status residual
+quadrature residual
+discretization/interpolation residual
+floating-point residual
+```
+
+Requirements:
+
+1. Route residuals must be compared with a predeclared combined tolerance.
+2. No route may tune an independent normalization to close.
+3. A discrepancy above tolerance must identify the state, recoil, active
+   selection, operator, matching-status, or numerical component responsible.
+4. Closure must be tested at multiple nonzero transfer values and at the
+   forward point.
+5. Closure must be tested for at least one sea-quark member, its antiquark,
+   and the gluon member.
+6. Every route graph is serialized deterministically.
+
+# C4.MATCHING_STATUS — no false QCD matching claim
+
+C4 performs regulated analytic route closure. It does not establish the full
+Hamiltonian-regulator-to-QCD matching required for physical TMDs and GPDs.
+
+Implement or reuse typed statuses distinguishing at least:
+
+```text
+REGULATED_ANALYTIC
+IDENTITY_VALIDATION_ADAPTER
+LINK_SHORTENING_REQUIRED
+UV_MATCHING_REQUIRED
+RAPIDITY_SOFT_MATCHING_REQUIRED
+NOT_PHYSICAL_QCD_OBJECT
+```
+
+Use the repository's established terminology where available.
+
+Requirements:
+
+1. Every C4 route result has an explicit matching status.
+2. An operation requiring missing matching fails closed.
+3. A regulated identity adapter is allowed only as a validation oracle.
+4. Documentation must state that route closure verifies common-parent
+   algebra, not a physical all-scheme equality.
+
+# C4.FESHBACH — exact finite two-sector benchmark
+
+Implement a controlled finite-dimensional model with retained projector `P`
+and higher-sector projector `Q`:
+
+\[
+H=\begin{pmatrix}H_{PP}&H_{PQ}\\H_{QP}&H_{QQ}\end{pmatrix},
+\qquad
+Q|\Psi\rangle=\omega(E)P|\Psi\rangle,
+\]
+
+\[
+\omega(E)=(E-QHQ)^{-1}QHP,
+\]
+
+\[
+H_{\rm eff}(E)
+=PHP+PHQ(E-QHQ)^{-1}QHP.
+\]
+
+For an operator `O`, construct
+
+\[
+O_{\rm eff}(E',E)
+=P\left(1+\omega^\dagger(E')\right)
+O\left(1+\omega(E)\right)P,
+\]
+
+with norm kernel
+
+\[
+N(E)=P\left(1+\omega^\dagger(E)\omega(E)\right)P.
+\]
+
+Requirements:
+
+1. Use a Hermitian model below any declared threshold.
+2. Compare full-space eigenvalues with the energy-dependent effective
+   Hamiltonian solution.
+3. Compare a nontrivial full-space operator matrix element with the retained-
+   space induced-operator matrix element, including the norm convention.
+4. Test an operator for which `POP` alone fails, proving that Hamiltonian-only
+   elimination is insufficient.
+5. Provide an exact calculation and, if a perturbative expansion is included,
+   demonstrate the predicted residual scaling with the coupling/gap ratio.
+6. Store energy, gap, coupling, resolvent condition number, norm-kernel, and
+   residuals in a machine-readable manifest.
+7. Singular or near-threshold resolvents fail closed with a structured
+   diagnostic rather than returning unstable numbers.
+
+# C4.INDUCED_OPERATOR — explicit versus induced higher-sector routes
+
+Represent at least two provenance alternatives:
+
+```text
+explicit qqqq-qbar sector <-> induced sea operator + declared remainder
+explicit qqqg sector      <-> induced gluon operator + declared remainder
+```
+
+The induced route may remain a finite-model validation object; it is not a
+physical nucleon matching coefficient.
+
+Requirements:
+
+1. Explicit and induced routes each reproduce the chosen finite benchmark to
+   their stated accuracy.
+2. Enabling both simultaneously fails before numerical evaluation.
+3. The graph records `ALTERNATIVE_TO`, `REPLACES`, `EXCLUDES`, or the existing
+   semantically equivalent typed relations.
+4. The subtraction/remainder identity is explicit; a graph cycle alone is not
+   treated as proof of double counting.
+5. Neither route can reach the accepted production root.
+
+# C4.PROVENANCE — traceable validation graph
+
+Extend the C3 validation-only provenance graph or create a versioned C4 graph
+using the existing C2/C3 graph APIs.
+
+It must contain traceable nodes for at least:
+
+```text
+C3 valence state
+explicit sea state
+positive-x antiquark parent
+explicit gluon state
+diagonal gluon parent
+regulated TMD/GPD/PDF/current routes
+finite Feshbach model
+induced sea operator
+induced gluon operator
+explicit-versus-induced exclusion relations
+route-closure reports
+```
+
+Requirements:
+
+1. Deterministic node and edge identities.
+2. Metadata-only ancestry and route queries.
+3. No path from any C4 pilot node to the accepted production root.
+4. Explicit/induced double-counting plans are rejected deterministically.
+5. An allowed explicit-sector plan and an allowed induced-operator plan each
+   serialize reproducibly.
+6. C2 and C3 production/pilot manifests remain unchanged.
+
+# C4.INJECT — mandatory negative tests
+
+At minimum, deliberately inject and detect:
+
+1. non-unit sector probabilities;
+2. a sea state with wrong baryon number;
+3. a neutral pair that changes total electric charge;
+4. an antiquark generator with the wrong sign;
+5. a non-singlet five-parton color tensor;
+6. duplicate antiquark active-slot multiplicity;
+7. silent negative-`x` antiquark copying;
+8. nonzero antiquark overlap with no sea/induced sector;
+9. `qqq` color singlet times a free gluon;
+10. a non-singlet `qqqg` tensor;
+11. omitted adjoint gluon generator;
+12. wrong gluon active slot;
+13. nonzero gluon overlap with no explicit/induced gluon sector;
+14. non-unit plus-momentum ledger;
+15. copied or sign-flipped recoil shifts;
+16. incompatible incoming/outgoing momentum fibers;
+17. a `nu != mu` overlap without a named source;
+18. a physical `f`/`d` assignment at zeroth rescattering;
+19. a TMD route with nonzero transfer;
+20. a GPD route that discards path/matching identity;
+21. a naive staple integral promoted to a physical GPD/PDF/current;
+22. a PDF route mismatch between `TMD -> PDF` and `GPD at Delta=0`;
+23. an independent named-function normalization inserted after reduction;
+24. a quark current using `q+qbar` instead of the declared vector combination;
+25. a gluon number-current normalization;
+26. a quark Mellin convention copied to `H^g=xg`;
+27. direct/sequential current-route mismatch;
+28. a singular Feshbach resolvent;
+29. using `POP` while omitting a nonzero induced-operator term;
+30. explicit higher sector and induced operator enabled together;
+31. a C4 node connected to the production root;
+32. mutation of the 216-entry production registry;
+33. mutation of the C2 provenance/default plan;
+34. mutation of C3 Benchmarks A--D or their manifests;
+35. connection of a C4 overlap to the production resolved-parent builder;
+36. nonzero skewness;
+37. nonzero Wilson/eikonal order;
+38. a naive-`T`-odd label or phase in the C4 core;
+39. an operation using required `UNSPECIFIED` metadata;
+40. nondeterministic serialization or manifest ordering.
+
+Every injection requires a stable diagnostic code and a manifest entry.
+
+# C4.CONVERGENCE — sector, quadrature, and finite-model studies
+
+C4 is analytic but must still separate convergence axes.
+
+Required studies:
+
+1. deterministic quadrature refinement for each common route;
+2. transfer-grid refinement for GPD/current closure;
+3. sector-probability scaling to the exact sea/gluon zero limit;
+4. active-slot/permutation implementation equivalence;
+5. color-generator residual versus numerical precision;
+6. Feshbach exact versus perturbative order, if a perturbative route is
+   included;
+7. sensitivity to the finite-model energy gap without crossing the resolvent
+   singularity;
+8. stable deterministic manifests across repeated runs.
+
+Do not combine these residuals into one anonymous error number.
+
+# C4.REGRESS — immutable accepted-model regression
+
+After implementation, rerun and record:
+
+- the full test suite;
+- all nine acceptance/report builders;
+- all evidence checks;
+- all 162 atlas pages;
+- all C1, C2, and C3 injections;
+- C3 Benchmarks A--D;
+- all new C4 Benchmarks E--F, route closures, and injections;
+- all eight authoritative hashes;
+- the 216-entry production reduction registry;
+- the accepted C2 provenance graph and default composition plan;
+- the C3 pilot manifests.
+
+All accepted production artifacts and manifests must remain byte-identical.
+
+# C4.DOC — required deliverables
+
+Create at least:
+
+```text
+docs/next_level/c4_implementation_report.md
+docs/next_level/c4_api.md
+docs/next_level/c4_requirement_coverage.json
+docs/next_level/c4_sector_manifest.json
+docs/next_level/c4_color_manifest.json
+docs/next_level/c4_route_closure_manifest.json
+docs/next_level/c4_feshbach_manifest.json
+docs/next_level/c4_provenance_manifest.json
+docs/next_level/c4_injection_manifest.json
+docs/next_level/c4_regression_report.json
+```
+
+Add architecture-decision records for:
+
+```text
+minimal positive-x sea-sector benchmark
+qqqg color-singlet multiplicity choice
+regulated common-parent route closure
+quark versus gluon local-moment conventions
+explicit-sector versus induced-operator replacement
+```
+
+Also update the persistent roadmap and handoff with:
+
+- starting and final commits;
+- files and APIs added;
+- benchmark residuals;
+- zero-test and route-closure status;
+- color and ledger status;
+- Feshbach exact/perturbative status;
+- all remaining limitations;
+- the exact recommended next implementation package.
+
+All JSON must be deterministic, machine-readable, and validated by a script or
+schema. Do not overwrite C0--C3 reports.
+
+## Acceptance criteria
+
+C4 is complete only when all of the following hold:
+
+1. The exact C3 baseline was verified before modification.
+2. The sea benchmark activates an explicit positive-`x` antiquark parent and
+   returns exact zero at `P_sea=0`.
+3. The gluon benchmark activates an explicit diagonal gluon parent and returns
+   exact zero at `P_g=0`.
+4. The five-parton sea color state is normalized and annihilated by all total
+   SU(3) generators.
+5. The `qqqg` state uses a valid octet-adjoint singlet coupling, records its
+   multiplicity channel, and is annihilated by all total generators.
+6. Net baryon, charge, flavor, and momentum ledgers close.
+7. The same C3 recoil authority and overlap evaluator are used for all C4
+   sectors.
+8. TMD, regulated GPD, PDF, and current/EMT routes close from the same parent
+   within predeclared residual budgets.
+9. Quark/antiquark vector-current and gluon EMT Mellin conventions remain
+   distinct and correct.
+10. Every route carries an honest regulated/matching status and no physical
+    QCD matching claim is made.
+11. The exact finite Feshbach benchmark reproduces a nontrivial full-space
+    matrix element with the induced operator.
+12. `POP` alone is shown to fail in a benchmark where induced terms are
+    nonzero.
+13. Explicit and induced representations cannot be selected together.
+14. All mandatory injections fail closed with stable diagnostics.
+15. All C3 Benchmarks A--D remain unchanged and pass.
+16. The full repository regression, nine builders, evidence matrix, and atlas
+    pass.
+17. All eight authoritative artifacts remain byte-identical.
+18. The 216-entry production registry, C2 production graph/default plan, and
+    production builder remain unchanged.
+19. C4 remains provably unreachable from the production root.
+20. Documentation, manifests, ADRs, roadmap, and handoff are complete and
+    deterministic.
+21. The working tree is clean after a local completion commit.
+22. No network push was performed.
+
+Do not declare C4 complete if any criterion is unmet.
+
+## Expected next package after C4
+
+If and only if common-parent route closure passes, the next recommended
+implementation package is a **validation-only one-gluon Wilson-line and
+light-front cut pilot** based on Volume III. It should introduce eikonal pole
+prescriptions, explicit intermediate-state cuts, future/past reversal, and
+separate gluon color contractions without connecting to accepted production.
+Do not begin that work inside C4.
+
+## Final response
+
+Report:
+
+- starting and final commits;
+- whether anything was pushed;
+- baseline and final test/build/evidence/atlas counts;
+- C3 Benchmark A--D preservation;
+- sea and gluon sector implementation and exact zero-test results;
+- color-singlet residuals and multiplicity conventions;
+- number, charge, flavor, and momentum ledger residuals;
+- TMD/GPD/PDF/current route-closure residuals by category;
+- Feshbach energy and operator-equivalence residuals;
+- injection count and status;
+- production isolation proof;
+- authoritative hashes and registry/graph invariance;
+- files created;
+- unresolved limitations;
+- the exact recommended next package.
+
+Do not call the analytic sea/gluon members physical distributions, and do not
+claim that regulated route closure constitutes complete QCD matching.

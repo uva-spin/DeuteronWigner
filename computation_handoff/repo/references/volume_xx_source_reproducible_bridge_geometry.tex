@@ -1,0 +1,1789 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools,mathrsfs}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{seqsplit}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F1}
+\definecolor{softred}{HTML}{FCEEEE}
+\definecolor{softviolet}{HTML}{F3EFF8}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XX: Source-Reproducible Dataset Ensembles, Covariance Geometry, and Typed External Constraints on Microscopic TMD Models},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XX}
+\fancyhead[R]{\small\color{darkgray}External-source bridge geometry}
+\fancyfoot[L]{\small\color{darkgray}5 August 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Span}{\operatorname{Span}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\EMT}{\ensuremath{\mathrm{EMT}}}
+\newcommand{\CS}{\ensuremath{\mathrm{CS}}}
+\newcommand{\DY}{\ensuremath{\mathrm{DY}}}
+\newcommand{\SIDIS}{\ensuremath{\mathrm{SIDIS}}}
+\newcommand{\DIS}{\ensuremath{\mathrm{DIS}}}
+\newcommand{\FF}{\ensuremath{\mathrm{FF}}}
+\newcommand{\TMDFF}{\ensuremath{\mathrm{TMDFF}}}
+\newcommand{\FO}{\ensuremath{\mathrm{FO}}}
+\newcommand{\WY}{W\!+\!Y}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\bD}{\bm b_{\Delta}}
+\newcommand{\bM}{\bm b_{\mathrm{TMD}}}
+\newcommand{\kT}{\bm k_T}
+\newcommand{\qT}{\bm q_T}
+\newcommand{\DT}{\bm\Delta_T}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\Ext}{\ensuremath{\mathrm{Ext}}}
+\newcommand{\Mic}{\ensuremath{\mathrm{Mic}}}
+\newcommand{\Bridge}{\ensuremath{\mathrm{Br}}}
+\newcommand{\Src}{\ensuremath{\mathrm{Src}}}
+\newcommand{\Ana}{\ensuremath{\mathrm{Ana}}}
+\newcommand{\Phys}{\ensuremath{\mathrm{Phys}}}
+\newcommand{\Inf}{\ensuremath{\mathrm{Inf}}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Cplx}{\mathbb C}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\order}{\mathcal O}
+\newcommand{\as}{\alpha_s}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XX: Source-Reproducible Dataset Ensembles, Covariance Geometry,\\[2mm]
+and Typed External Constraints on Microscopic TMD Models}\\[4mm]
+\large Native nuisance maps, low-rank source covariance, operator-level bridge spans,\\
+data ancestry, discrepancy interfaces, and the controlled boundary before inference}
+\author{DeuteronWigner project}
+\date{5 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C28/P1D reproduces the complete public ART25 low-\(q_T\) dataset route at the narrow \texttt{SOURCE\_REPRODUCIBLE\_LOWQT\_W\_VALIDATION} tier: 36 Drell--Yan and 10 SIDIS datasets, 8,675 source points, 1,209 retained points, complete central execution, all 642 correlated source members, native nuisance and \(\chi^2\) treatment, and an exact \(642\times1209\) theory anomaly factor.  The route remains \(W\)-only; no source-identical fixed-order/asymptotic partner, full \(W+Y\), physical deuteron prediction, microscopic calibration, likelihood, inference, or production claim is made.  C29/B0 is the running implementation package for the typed bridge between this external source root and the microscopic operator root.  The present volume defines that bridge and its geometry without presuming that C29 has passed any bridge-readiness gate.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+A source-reproducible phenomenological ensemble and a microscopic Hamiltonian model are not two samples from one pre-existing probability distribution.  They are different evidential roots.  The external ART25 root is an empirical, jointly correlated source ensemble constructed from 1,209 selected low-transverse-momentum Drell--Yan and SIDIS data points.  The microscopic root is a structured family of light-front Hamiltonians, Fock-sector truncations, Wilson-line orders, nuclear component plans, tensor-network representations, matching schemes, and numerical resolutions.  Connecting them requires more than comparing curves or adding error bands.  It requires an operator-level crosswalk, exact target and scheme identity, a common domain, covariance-preserving projection, complete data ancestry, a no-double-counting rule, a declared relation---or absence of a relation---between member spaces, and a discrepancy interface that does not silently assign unknown physics to zero.
+
+This volume develops the formal geometry of that connection.  A source datum is represented by its repository commit, dataset and point identities, measurement map, binning, cuts, theory factor, error model, and nuisance semantics.  A source member is an indivisible ART25 tuple containing its nonperturbative parameters and exact PDF and fragmentation-function members.  The complete theory ensemble is represented by a low-rank anomaly factor \(A\), so every bridge projection can preserve means, covariance rank, null spaces, and Drell--Yan--SIDIS cross correlations without committing a dense covariance matrix.  Experimental covariance, source-member covariance, normalization nuisances, numerical integration, and source-version uncertainty remain separate.
+
+The bridge itself is a typed span
+\[
+ \cE_{\Ext}\longrightarrow \cO_{\mathrm{common}}\longleftarrow \cM_{\Mic},
+\]
+not a collapse of the two roots.  It exists only where species, flavor, target, parton polarization, transverse rank, Wilson link, gluon color class, twist, scheme, scales, and domain agree or are connected by an explicit adapter.  Distribution-level quark comparisons, quark Collins--Soper comparisons, one-leg Drell--Yan, and target-leg SIDIS are treated separately.  Phenomenological deuterium is never identified with the microscopic deuteron; an NN-only microscopic plan is never called the complete matched nuclear state.  The default cross-root member relation is \texttt{NO\_JOINT\_MEASURE}.
+
+The volume further defines mutually exclusive future-use plans for the ART25 compressed ensemble and its underlying data, frozen calibration-candidate and holdout-candidate roles, a typed discrepancy budget, covariance-rank-aware compatibility diagnostics, and the exact prerequisites for a later inference package.  It provides machine-readable schemas, formal requirements, benchmark families, negative tests, acceptance criteria, and the C29/C30 handoff.  No fit, likelihood, posterior, reweighting, calibration, emulator, source-process promotion, physical deuteron prediction, or production route is constructed here.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Scope and inherited evidential boundary}
+\label{sec:scope}
+
+\subsection{The completed external source route}
+
+C28 establishes a public-source-reproducible process ensemble at low transverse momentum.  Its source authority is the historical ART25 DataProcessor commit, kept distinct from the current public comparison commit.  The retained source state is summarized by
+\begin{equation}
+ \mathfrak S_{28}
+ =
+ \left(
+ \begin{gathered}
+ 36\ \DY\ \text{datasets},\ 10\ \SIDIS\ \text{datasets},\\
+ 8675\ \text{source points},\ 1209\ \text{retained points},\\
+ 642\ \text{stochastic source members},\\
+ A_{\Ext}\in\R^{642\times1209}
+ \end{gathered}
+ \right).
+ \label{eq:c28-state}
+\end{equation}
+The retained points split into 627 Drell--Yan and 582 SIDIS entries.  Every central point and every stochastic source member executes without failure or imputation.  The central source record gives
+\begin{equation}
+ \chi^2_{\DY}=733.3634803213348,
+ \qquad
+ \chi^2_{\SIDIS}=536.8536205509276,
+ \qquad
+ \chi^2_{\mathrm{all}}=1270.2171008722626.
+ \label{eq:c28-chi2}
+\end{equation}
+These are source-regenerated central-record values.  They are neither published fit anchors nor degrees-of-freedom claims.
+
+The exact CDF1 source regression is
+\begin{equation}
+ \sigma_{\mathrm{CDF1.0}}
+ =
+ 2\times1.7197438402188676
+ =
+ 3.4394876804377352\ \mathrm{pb/GeV}.
+ \label{eq:cdf1-authority}
+\end{equation}
+It is an absolute, bin-integrated and \(q_T\)-bin-averaged, leading-power resummed \(W\)-term prediction.  It contains no fixed-order \(Y\) term.
+
+\begin{principle}[Source reproducibility is a bounded claim]
+The ability to reproduce a complete public source route establishes the route, its measurement semantics, and its source-member covariance.  It does not establish an author-frozen numerical anchor, a full \(W+Y\) prediction, a physical deuteron calculation, or a calibrated microscopic model.
+\end{principle}
+
+\subsection{Evidence ladder}
+
+\begin{definition}[Process evidence ladder]
+For a process or bridge object \(X\), define the ordered evidential statuses
+\begin{align}
+ \mathsf E_X^{\Ana} &: \text{synthetic analytic oracle},\\
+ \mathsf E_X^{\mathrm{regen}} &: \text{source code and inputs regenerate an output},\\
+ \mathsf E_X^{\mathrm{repro}} &: \text{complete public source route and measurement map reproduce},\\
+ \mathsf E_X^{\mathrm{anchor}} &: \text{author/repository numerical anchors validate the route},\\
+ \mathsf E_X^{\WY} &: \text{source-identical fixed-order/asymptotic }W+Y\text{ closes},\\
+ \mathsf E_X^{\Phys} &: \text{physical target, covariance, and selected mechanisms qualify},\\
+ \mathsf E_X^{\Inf} &: \text{a lawful inference construction is available}.
+ \label{eq:evidence-ladder}
+\end{align}
+The implications are one way:
+\begin{equation}
+ \mathsf E_X^{\Inf}
+ \Longrightarrow
+ \mathsf E_X^{\Phys}
+ \Longrightarrow
+ \mathsf E_X^{\WY}
+ \Longrightarrow
+ \mathsf E_X^{\mathrm{anchor}}
+ \Longrightarrow
+ \mathsf E_X^{\mathrm{repro}}
+ \Longrightarrow
+ \mathsf E_X^{\mathrm{regen}}
+ \Longrightarrow
+ \mathsf E_X^{\Ana}.
+ \label{eq:evidence-implications}
+\end{equation}
+No converse is valid without its own gates.
+\end{definition}
+
+\begin{longtable}{L{0.31\textwidth}L{0.60\textwidth}}
+\toprule
+Status & Exact meaning in the present program\\
+\midrule
+\endhead
+\texttt{ANALYTIC\_PROCESS\_ORACLE} & Synthetic ingredients establish algebra, ranks, links, process identity, and failure behavior.\\
+\texttt{SOURCE\_REGENERATED\_OUTPUT} & Version-locked source code and exact inputs generate the output, but the complete dataset or numerical-anchor contract may be incomplete.\\
+\nolinkurl{SOURCE_REPRODUCIBLE_LOWQT_W_VALIDATION} & Source repository, dataset, selection, native measurement map, joint member ensemble, and low-\(q_T\) \(W\) semantics are complete and deterministic.\\
+\nolinkurl{SOURCE_ANCHORED_LOWQT_W_VALIDATION} & An author- or repository-owned numerical output additionally anchors the source-reproducible route.\\
+\texttt{SOURCE\_WY\_VALIDATED} & Fixed-order and asymptotic partners have exact process, measurement, scheme, mass, scale, threshold, rank, and order identity.\\
+\texttt{PHYSICAL\_PROCESS\_INPUT} & Physical target and selected mechanisms, physical covariance, and complete process inputs are qualified.\\
+\texttt{INFERENCE\_READY} & A frozen no-double-counting plan, discrepancy model, parameter ownership, and auditable likelihood exist.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Objective of Volume XX}
+
+The external ART25 ensemble and the microscopic light-front model must be related without rebuilding the phenomenological patchwork inside the microscopic state.  The desired construction is
+\begin{equation}
+ \boxed{
+ \cE_{\Ext}
+ \xrightarrow{\ \pi_{\Ext}\ }
+ \cO_{\mathrm{common}}
+ \xleftarrow{\ \pi_{\Mic}\ }
+ \cM_{\Mic}
+ }
+ \label{eq:bridge-span}
+\end{equation}
+where \(\cE_{\Ext}\) is the external source ensemble, \(\cM_{\Mic}\) is the microscopic assumption complex, and \(\cO_{\mathrm{common}}\) is a typed common operator or observable space.  The arrows are not implicit identifications.  They carry complete operator, target, scheme, scale, rank, link, color, domain, and provenance data.
+
+\begin{axiom}[No root collapse]
+Neither arrow in \cref{eq:bridge-span} is an isomorphism unless an explicit theorem establishes one.  In particular, an ART25 source member is not a microscopic state, and a microscopic assumption plan is not an ART25 statistical replica.
+\end{axiom}
+
+\section{Native dataset and measurement objects}
+\label{sec:dataset-objects}
+
+\subsection{Source datum}
+
+\begin{definition}[Source datum]
+A source datum is the immutable tuple
+\begin{equation}
+ \mathfrak d_i
+ =
+ \left(
+ \begin{gathered}
+ r_i,\ c_i,\ h_i,\ D_i,\ p_i,\ \mathsf{proc}_i,\ \mathsf{target}_i,\\
+ \mathsf{bin}_i,\ \mathsf{cuts}_i,\ \mathsf{theoryfactor}_i,\\
+ \mathsf{units}_i,\ \mathsf{errors}_i,\ \mathsf{nuisance}_i,\\
+ \mathsf{measurement}_i,\ \mathsf{selection}_i
+ \end{gathered}
+ \right),
+ \label{eq:source-datum}
+\end{equation}
+where \(r_i\) is the source repository, \(c_i\) the commit, \(h_i\) the file hash, \(D_i\) the dataset identity, and \(p_i\) the point identity.
+\end{definition}
+
+The point identity is not replaceable by its central kinematics.  Two records with identical representative \((x,Q,q_T,z)\) values but different bin integration, cuts, theory factors, units, normalization, or nuisance structure are different data objects.
+
+\begin{requirement}[Native loader authority]
+When a source repository provides a typed dataset loader, the loader is the authority for field semantics.  Manual CSV reconstruction is an independent audit only and cannot silently replace the native route.
+\end{requirement}
+
+\subsection{Selection as a source morphism}
+
+Let \(\cD_{\mathrm{all}}\) be the 8,675-point source collection and \(\cD_{\mathrm{ret}}\subset\cD_{\mathrm{all}}\) the 1,209-point retained set.  The historical ART25 selection is a deterministic map
+\begin{equation}
+ \mathsf{Sel}_{\mathrm{ART25}}:\cD_{\mathrm{all}}
+ \longrightarrow
+ \{\mathsf{retain},\mathsf{exclude}\}\times\mathsf{Reason}.
+ \label{eq:selection-map}
+\end{equation}
+The reason ledger is an audit oracle.  The source cut function remains the selection authority.
+
+\begin{proposition}[Selection stability]
+A source-reproducible process bundle must preserve the ordered point IDs and selection decisions.  Equality of retained point counts alone is insufficient.
+\end{proposition}
+
+\subsection{Native measurement map}
+
+For a source member \(s\), point \(i\), and complete source state \(\Theta_s^{\Ext}\), define
+\begin{equation}
+ T_{si}^{\Ext}
+ =
+ \cM_i^{\Ext}[\Theta_s^{\Ext}],
+ \label{eq:native-measurement-map}
+\end{equation}
+where \(\cM_i^{\Ext}\) includes the native process call, integration variables, physical support, fiducial cuts, source electroweak code, TMDFF convention where applicable, theory factor, normalization, and units.
+
+For the CDF1 authority,
+\begin{equation}
+ \cM_{\mathrm{CDF1.0}}^{\Ext}
+ =
+ \left(
+ \int_{q_T\in[0,0.5]}
+ \int_{Q\in[66,116]}
+ \int_{Y\in Y_{\mathrm{phys}}}
+ \dd q_T\,\dd Q^2\,\dd Y
+ \right)
+ \times\frac{1}{0.5\ \mathrm{GeV}}.
+ \label{eq:cdf1-map}
+\end{equation}
+The sentinel rapidity interval is clipped by the source engine to physical support.  A bin-center differential value is a different observable.
+
+\subsection{Measurement identity and process identity}
+
+The measurement map belongs to the process record, not to the TMD.  Detector or source normalization factors, bin integration, hadron charge, and multiplicity conventions may not be absorbed into a microscopic boundary function.
+
+\begin{principle}[External measurement ownership]
+A hybrid bridge observable may reuse an external measurement map only while recording which factors remain external and which microscopic operator replaces which external target or parton leg.
+\end{principle}
+
+\section{Joint source-member geometry}
+\label{sec:source-geometry}
+
+\subsection{Indivisible ART25 member}
+
+Each stochastic ART25 source member is the typed object
+\begin{equation}
+ \Theta_s^{\Ext}
+ =
+ \left(
+ \bm\lambda_s^{\mathrm{NP}},
+ r_s^{\PDF},
+ r_s^{\pi\FF},
+ r_s^{K\FF},
+ \mathsf{id}_s,
+ \mathsf{source}_s
+ \right),
+ \qquad s=1,\ldots,642.
+ \label{eq:art25-member}
+\end{equation}
+The nonperturbative parameter vector, exact MSHT member, exact pion and kaon MAPFF members, Collins--Soper kernel, TMDPDF, and both TMDFFs remain coupled across all datasets and processes.
+
+\begin{axiom}[Member indivisibility]
+No source operation may independently shuffle, resample, or marginalize the components of \(\Theta_s^{\Ext}\) and then describe the result as an ART25 joint member.
+\end{axiom}
+
+\subsection{Prediction matrix and anomaly factor}
+
+Collect the complete retained prediction ensemble into
+\begin{equation}
+ T^{\Ext}
+ =
+ \left[T_{si}^{\Ext}\right]
+ \in\R^{N_s\times N_p},
+ \qquad
+ N_s=642,
+ \quad
+ N_p=1209.
+ \label{eq:prediction-matrix}
+\end{equation}
+Define the empirical mean
+\begin{equation}
+ \bar T_i^{\Ext}
+ =
+ \frac{1}{N_s}
+ \sum_{s=1}^{N_s}T_{si}^{\Ext},
+ \label{eq:external-mean}
+\end{equation}
+and the anomaly factor
+\begin{equation}
+ A_{si}^{\Ext}
+ =
+ \frac{T_{si}^{\Ext}-\bar T_i^{\Ext}}
+ {\sqrt{N_s-1}}.
+ \label{eq:anomaly-factor}
+\end{equation}
+The exact empirical theory covariance is
+\begin{equation}
+ C_{\Ext}
+ =
+ \left(A^{\Ext}\right)^T A^{\Ext}
+ \in\R^{N_p\times N_p}.
+ \label{eq:external-covariance}
+\end{equation}
+Its rank obeys
+\begin{equation}
+ \rank C_{\Ext}\leq N_s-1=641.
+ \label{eq:covariance-rank}
+\end{equation}
+The covariance null space is therefore expected and scientifically meaningful.  It must not be removed by silent ridge regularization.
+
+\subsection{Exact block queries}
+
+For point-index sets \(I,J\subset\{1,\ldots,N_p\}\), the covariance block is
+\begin{equation}
+ C_{\Ext}[I,J]
+ =
+ \left(A^{\Ext}_{:,I}\right)^T A^{\Ext}_{:,J}.
+ \label{eq:block-query}
+\end{equation}
+This gives exact DY--DY, SIDIS--SIDIS, and DY--SIDIS blocks while retaining the compact anomaly representation.
+
+\begin{proposition}[Low-rank sufficiency]
+The tuple \((\bar T^{\Ext},A^{\Ext},\mathsf{member\ order})\) is sufficient to reconstruct every empirical mean, variance, covariance block, linear projection, and covariance rank of the ART25 source ensemble.
+\end{proposition}
+
+\subsection{Distribution--process covariance}
+
+Let \(G_s\) be a distribution-level source observable, such as a selected quark TMD or CS-kernel value, evaluated with the same source member.  The joint anomaly matrix
+\begin{equation}
+ A_s^{\mathrm{joint}}
+ =
+ \left(
+ A_s^{G},
+ A_s^{\DY},
+ A_s^{\SIDIS}
+ \right)
+ \label{eq:joint-anomaly}
+\end{equation}
+retains distribution--process covariance.  A comparison that uses only pointwise source bands loses this information and cannot be described as covariance preserving.
+
+\section{Native nuisance geometry and source \texorpdfstring{\(\chi^2\)}{chi2}}
+\label{sec:nuisance}
+
+\subsection{Source error model}
+
+The source DataProcessor implementation, not a generic statistical convention, owns the exact nuisance semantics.  A useful local representation is
+\begin{equation}
+ \bm d
+ =
+ \bm t
+ +S\bm\beta
+ +\bm\epsilon,
+ \qquad
+ \Cov(\bm\epsilon)=C_{\mathrm{unc}},
+ \label{eq:nuisance-model}
+\end{equation}
+where columns of \(S\) encode source correlated directions and normalization shifts.  In the standard quadratic representation,
+\begin{equation}
+ \chi^2(\bm t,\bm\beta)
+ =
+ (\bm d-\bm t-S\bm\beta)^T
+ C_{\mathrm{unc}}^{-1}
+ (\bm d-\bm t-S\bm\beta)
+ +\bm\beta^T P^{-1}\bm\beta.
+ \label{eq:profile-objective}
+\end{equation}
+When \(P=\Id\), the profiled solution is
+\begin{equation}
+ \bm\beta_*
+ =
+ \left(P^{-1}+S^TC_{\mathrm{unc}}^{-1}S\right)^{-1}
+ S^TC_{\mathrm{unc}}^{-1}(\bm d-\bm t).
+ \label{eq:profile-solution}
+\end{equation}
+Equations \eqref{eq:profile-objective}--\eqref{eq:profile-solution} are a mathematical representation.  The executable source implementation remains authoritative for multiplicative normalization, signs, rescaling conventions, and decomposition.
+
+\subsection{Separate statistical objects}
+
+The following quantities are distinct:
+\begin{align}
+ \chi^2(T_0) &: \text{central technical member},\\
+ \chi^2(\bar T) &: \text{ensemble-mean prediction},\\
+ \overline{\chi^2}
+ &=\frac1{N_s}\sum_s\chi^2(T_s),\\
+ \chi^2_{\mathrm{pub}} &: \text{published or author-anchored fit result, if available}.
+ \label{eq:chi2-objects}
+\end{align}
+Nonlinearity of nuisance profiling generally implies
+\begin{equation}
+ \chi^2(\bar T)\neq\overline{\chi^2}.
+ \label{eq:chi2-nonlinearity}
+\end{equation}
+No one of these may be silently substituted for another.
+
+\subsection{Theory and experimental covariance remain separate}
+
+Define the uncertainty ledger
+\begin{equation}
+ \mathfrak U
+ =
+ \left(
+ C_{\Ext},
+ C_{\mathrm{exp,unc}},
+ S_{\mathrm{exp,corr}},
+ P_{\mathrm{norm}},
+ C_{\mathrm{num}},
+ C_{\mathrm{version}}
+ \right).
+ \label{eq:uncertainty-ledger}
+\end{equation}
+C28 creates no likelihood, and Volume XX preserves that boundary.  A future package may assemble these pieces only after choosing a lawful direct-data or compressed-constraint plan.
+
+\begin{principle}[No premature covariance sum]
+The external source-member covariance and the experimental covariance of the data used to create that source ensemble are not independent evidence.  They may not be added inside a future likelihood without a data-ancestry and no-double-counting construction.
+\end{principle}
+
+\section{Low-\texorpdfstring{\(q_T\)}{qT} \texorpdfstring{\(W\)}{W} and full \texorpdfstring{\(W+Y\)}{W+Y}}
+\label{sec:wy}
+
+\subsection{Source-reproducible \texorpdfstring{\(W\)}{W}}
+
+For every retained ART25 point, the reproduced source observable is
+\begin{equation}
+ \sigma_{si}^{\mathrm{src}}
+ =
+ \cM_i^{\Ext}
+ \left[W_s^{\mathrm{ART25}}\right].
+ \label{eq:source-w}
+\end{equation}
+The current route is explicitly leading-power and low-\(q_T\).  Its measurement integration is source complete, but its fixed-order completion is not.
+
+\subsection{Full matched observable}
+
+A full matched result requires
+\begin{equation}
+ \sigma_i^{[N]}
+ =
+ W_i^{[N]}
+ +Y_i^{[N]}
+ +\delta_{i,\mathrm{pow}},
+ \qquad
+ Y_i^{[N]}
+ =
+ \sigma_{i,\FO}^{[N]}
+ -\left[W_i^{[N]}\right]_{\mathrm{asy,FO}}^{[N]}.
+ \label{eq:wy-definition}
+\end{equation}
+The fixed-order and asymptotic terms must share the exact
+\begin{equation}
+ \left(
+ \begin{gathered}
+ \text{process},\ \text{external states},\ \text{measurement},\ \text{cuts},\\
+ \text{hard current},\ \text{TMD/TMDFF/soft scheme},\\
+ \text{masses},\ \text{scales},\ \text{thresholds},\ \text{rank},\ \text{harmonic},\ \text{order}
+ \end{gathered}
+ \right)
+ \label{eq:wy-identity}
+\end{equation}
+identity.  No exact DY or SIDIS pair with this complete identity is present in the public source route.
+
+\begin{theorem}[No hybrid source--synthetic \(Y\)]
+A source-reproducible ART25 \(W\) term and the C23 analytic \(Y\) oracle do not form a source-qualified \(W+Y\) object.  The evidence tiers, measurement identities, and perturbative records differ.
+\end{theorem}
+
+\subsection{Missing \texorpdfstring{\(Y\)}{Y} is not a boundary discrepancy}
+
+The absence of a \(Y\) term is a process-completion limitation.  It may not be absorbed into a fitted large-\(b\) boundary, a Collins--Soper parameter, or a microscopic Hamiltonian coefficient.  The status
+\begin{center}
+\texttt{SOURCE\_WY\_FIXED\_ORDER\_INPUT\_INCOMPLETE}
+\end{center}
+remains visible until \cref{eq:wy-identity} closes.
+
+\section{Two-root bridge geometry}
+\label{sec:two-roots}
+
+\subsection{External source root}
+
+Define
+\begin{equation}
+ \cE_{\Ext}
+ =
+ \left(
+ \Theta_s^{\Ext},
+ \cD_{\mathrm{ret}},
+ \cM^{\Ext},
+ \bar T^{\Ext},
+ A^{\Ext},
+ \mathfrak U_{\Ext}
+ \right).
+ \label{eq:external-root}
+\end{equation}
+It owns the ART25 parameters, exact source PDF and FF members, TMDPDFs, TMDFFs, quark CS kernel, native DataProcessor measurement maps, source dataset ancestry, and source-reproducible low-\(q_T\) process predictions.
+
+\subsection{Microscopic operator root}
+
+Define
+\begin{equation}
+ \cM_{\Mic}
+ =
+ \bigsqcup_{p\in\cP_{\Mic}}
+ \cM_p,
+ \label{eq:microscopic-root}
+\end{equation}
+where each plan component \(\cM_p\) carries
+\begin{equation}
+ \left(
+ \begin{gathered}
+ H_p^{\LF},\ \Psi_p,\ \mathsf{resolution}_p,\ \mathsf{Fock}_p,\\
+ \mathsf{Wilson}_p,\ \mathsf{nuclear}_p,\ \mathsf{matching}_p,\\
+ \mathsf{evolution}_p,\ \mathsf{process}_p,\ \mathsf{numerics}_p
+ \end{gathered}
+ \right).
+ \label{eq:microscopic-plan}
+\end{equation}
+The disjoint union is intentional.  Mutually exclusive Hamiltonian, induced/explicit, Wilson-order, or nuclear-component plans are not averaged into one state.
+
+\subsection{Common operator base}
+
+Let \(\cO_{\mathrm{common}}\) be the category of typed comparison objects.  An object is
+\begin{equation}
+ \omega
+ =
+ \left(
+ a,f,h,r,\eta,c,\tau,\cO_{\mathrm{coll}},\mathfrak s,\mu,\zeta,\mathcal D
+ \right),
+ \label{eq:operator-identity}
+\end{equation}
+with species \(a\), flavor \(f\), target \(h\), transverse rank \(r\), link \(\eta\), gluon color class \(c\), twist \(\tau\), collinear operator \(\cO_{\mathrm{coll}}\), scheme \(\mathfrak s\), scales \((\mu,\zeta)\), and domain \(\mathcal D\).
+
+The bridge is the typed span in \cref{eq:bridge-span}.  A comparison fiber exists only when the two arrows land on the same \(\omega\) or on records connected by an explicit adapter.
+
+\begin{remark}[Span before pullback]
+The basic structure is a span, not automatically a fiber product.  A pullback-like comparison object is constructed only after operator, target, scheme, and domain compatibility pass.  This prevents a common plot label from being mistaken for a common physical object.
+\end{remark}
+
+\subsection{No joint measure by default}
+
+The external source ensemble has an empirical measure \(\nu_{\Ext}\) on 642 source members.  The microscopic root has plan and truncation axes but no demonstrated probability measure jointly coupled to \(\nu_{\Ext}\).  Therefore
+\begin{equation}
+ \mathsf{Relation}(\cE_{\Ext},\cM_{\Mic})
+ =
+ \texttt{NO\_JOINT\_MEASURE}
+ \label{eq:no-joint-measure}
+\end{equation}
+by default.
+
+\begin{corollary}[No index pairing]
+ART25 member \(s\) may not be paired with microscopic plan or member \(s\) by index.  Such a pairing has no evidential meaning.
+\end{corollary}
+
+\section{Operator, target, scheme, and domain crosswalk}
+\label{sec:crosswalk}
+
+\subsection{Operator equality}
+
+\begin{definition}[Bridge-compatible operator pair]
+An external operator \(\omega_{\Ext}\) and microscopic operator \(\omega_{\Mic}\) are bridge compatible only when all mandatory identity fields in \cref{eq:operator-identity} are identical or linked by a declared adapter with a known remainder.
+\end{definition}
+
+Matching by names such as \(f_1\), \(g_1\), or \(h_1\) is insufficient.  The crosswalk must retain positive-\(x\) antiquark identity, quark/gluon representation, spin-1 target channel, rank, and link/color structure.
+
+\subsection{Target map}
+
+Allowed target relations include
+\begin{center}
+\begin{tabularx}{0.94\textwidth}{L{0.34\textwidth}Y}
+\toprule
+Status & Meaning\\
+\midrule
+\texttt{SAME\_PROTON\_TARGET} & Both roots describe the same proton target in a compatible scheme.\\
+\texttt{SAME\_NEUTRON\_TARGET} & Both roots describe the same neutron target.\\
+\texttt{CHARGE\_CONJUGATE\_WITH\_MAP} & A complete operator and hadron charge-conjugation map is supplied.\\
+\texttt{PHENOMENOLOGICAL\_DEUTERIUM} & External deuterium-target record whose microscopic nuclear identity is not resolved.\\
+\texttt{MICROSCOPIC\_DEUTERON} & C15--C18 state with explicit selected nuclear components.\\
+\texttt{NN\_ONLY\_MICROSCOPIC} & Explicitly selected impulse/NN-only microscopic assumption plan.\\
+\texttt{TARGET\_UNMAPPED} & No qualified target adapter exists.\\
+\texttt{TARGET\_INCOMPATIBLE} & The objects cannot be compared under the proposed plan.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Phenomenological deuterium is not the C15--C18 microscopic deuteron.  An NN-only plan is not the complete matched total
+\begin{equation}
+ \Psi_D
+ =
+ \Psi_{NN}
+ \oplus\Psi_{NN\pi}
+ \oplus\Psi_{\Delta\Delta}
+ \oplus\Psi_{6q}
+ \oplus\cdots.
+ \label{eq:deuteron-components}
+\end{equation}
+
+\subsection{Scheme and scale adapter}
+
+A scheme adapter is the record
+\begin{equation}
+ \mathfrak A_{\mathrm{scheme}}
+ =
+ \left(
+ \mathfrak s_{\Ext},
+ \mathfrak s_{\Mic},
+ Z_{\Ext\to\Mic},
+ \delta Z,
+ \mathcal D_Z,
+ \mathsf{order},
+ \mathsf{source}
+ \right).
+ \label{eq:scheme-adapter}
+\end{equation}
+Allowed statuses are
+\begin{center}
+\texttt{IDENTICAL},
+\texttt{EXACT\_ADAPTER},
+\texttt{DECLARED\_FINITE\_ORDER\_ADAPTER},
+\texttt{VALIDATION\_ONLY\_ADAPTER},
+\texttt{UNRESOLVED},
+\texttt{INCOMPATIBLE}.
+\end{center}
+The adapter cannot absorb a large-\(b\) model difference, missing matching order, missing \(Y\), target mismatch, or nuclear mechanism.
+
+\subsection{Common domain}
+
+For domains \(\mathcal D_{\Ext}\) and \(\mathcal D_{\Mic}\), define
+\begin{equation}
+ \mathcal D_{\Bridge}
+ =
+ \mathcal D_{\Ext}\cap\mathcal D_{\Mic}\cap\mathcal D_{\mathrm{adapter}}.
+ \label{eq:common-domain}
+\end{equation}
+Every bridge point must lie in \(\mathcal D_{\Bridge}\).  Extrapolation outside the common domain is a new model object, not a bridge comparison.
+
+\subsection{Minimal family audit}
+
+The mandatory initial crosswalk covers
+\begin{equation}
+ \left\{
+ u,d,\bar u,\bar d,\Sigma_q,\cD_q,
+ g,h_1^{\perp g},
+ f_{1LL},g_1,h_1,
+ \text{T-odd quark/gluon}
+ \right\}.
+ \label{eq:minimal-family}
+\end{equation}
+The deepest candidates are rank-zero T-even quark and antiquark distributions and the quark CS kernel.  T-odd and multiparton families remain fail closed.  Gluon objects require their own representation and cannot inherit the quark CS boundary.
+
+\section{Bridge observable spaces}
+\label{sec:bridge-spaces}
+
+\subsection{Distribution-level quark bridge}
+
+For a compatible proton target and a common \((x,b,Q)\) point,
+\begin{equation}
+ y_{a}^{\Ext}(x,b,Q)
+ =
+ \widetilde F_{a/p}^{\Ext}(x,b;Q),
+ \qquad
+ y_{a,p}^{\Mic}(x,b,Q)
+ =
+ \widetilde F_{a/p,p}^{\Mic}(x,b;Q).
+ \label{eq:distribution-bridge}
+\end{equation}
+The bridge record retains flavor, positive-\(x\) antiquark convention, scheme, rank, scale path, and the microscopic plan \(p\).
+
+\subsection{Quark Collins--Soper bridge}
+
+A quark CS comparison is possible only after aligning derivative conventions:
+\begin{equation}
+ \frac{\dd}{\dd\ln\sqrt\zeta}
+ \ln\widetilde F_q
+ =-\cD_q(b;\mu).
+ \label{eq:cs-convention}
+\end{equation}
+The bridge compares \(\cD_q^{\Ext}\) and \(\cD_q^{\Mic}\) in the same units, subtraction convention, representation, and \(b\) domain.  It does not copy the external kernel into the microscopic root.
+
+\subsection{One-leg Drell--Yan bridge}
+
+A diagnostic hybrid Drell--Yan object may be
+\begin{align}
+ W_{i,p,s}^{\mathrm{1leg}}
+ ={}&
+ \sum_q e_q^2 H_i
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_i|}(bq_{T,i})
+ \nonumber\\
+ &\times
+ \widetilde F_{q/h_1,p}^{\Mic,[-]}(x_1,b)
+ \widetilde F_{\bar q/h_2,s}^{\Ext,[-]}(x_2,b)
+ \cM_i(b),
+ \label{eq:dy-one-leg}
+\end{align}
+plus the exchanged quark/antiquark channel where required.  The record must state which leg is microscopic, which partner remains external, and whether the external source member \(s\) controls the partner, CS kernel, or other source-coupled ingredients.
+
+This object is a bridge diagnostic.  It does not inherit ART25 source-process qualification, and it remains \(W\)-only unless an exact \(Y\) partner is separately supplied.
+
+\subsection{Target-leg SIDIS bridge}
+
+For current-fragmentation SIDIS,
+\begin{align}
+ W_{i,p,s}^{\mathrm{targetleg}}
+ ={}&
+ \sum_q e_q^2 H_i
+ \int_0^\infty\frac{b\,\dd b}{2\pi}
+ J_{|m_i|}\!\left(\frac{bP_{hT,i}}{z_i}\right)
+ \nonumber\\
+ &\times
+ \widetilde F_{q/h,p}^{\Mic,[+]}(x_i,b)
+ \widetilde D_{h/q,s}^{\Ext}(z_i,b)
+ \cM_i(b,z_i).
+ \label{eq:sidis-target-leg}
+\end{align}
+The external TMDFF, hadron charge, \(z\)-scaled Fourier convention, and source member remain explicit.  A collinear FF cannot be substituted for \(\widetilde D\).
+
+\subsection{Deuteron bridge as a negative control}
+
+A deuterium-target ART25 record and a microscopic deuteron object can be compared only after a complete target adapter identifies the nuclear content, normalization, source target treatment, and selected microscopic components.  The default status is
+\begin{center}
+\texttt{DIAGNOSTIC\_ONLY} or \texttt{UNAVAILABLE}.
+\end{center}
+No proton or phenomenological deuterium result may be presented as a microscopic spin-1 prediction.
+
+\subsection{Gluon and T-odd bridge}
+
+The external ART25 source route is quark-dominated and does not supply a complete common source object for all microscopic gluon or T-odd structures.  Gluon rank-two, ordered-link, and \(f/d\) identities remain separate.  T-odd quark and gluon bridge requests fail until the correct multiparton matching and process routes exist.
+
+\section{Covariance-preserving bridge projection}
+\label{sec:covariance-projection}
+
+\subsection{Linear projection}
+
+Let \(B\in\R^{n_B\times N_p}\) be a declared linear projection from the retained source point space to a bridge space.  Then
+\begin{equation}
+ \bar y_B^{\Ext}
+ =B\bar T^{\Ext},
+ \qquad
+ A_B^{\Ext}
+ =A^{\Ext}B^T,
+ \qquad
+ C_B^{\Ext}
+ =\left(A_B^{\Ext}\right)^TA_B^{\Ext}.
+ \label{eq:linear-pushforward}
+\end{equation}
+No dense source covariance is required.  Mean, rank, null space, and cross correlations are preserved exactly.
+
+\begin{proposition}[Composition]
+For linear maps \(B_1\) and \(B_2\),
+\begin{equation}
+ A_{B_2\circ B_1}^{\Ext}
+ =A^{\Ext}B_1^TB_2^T.
+ \label{eq:projection-composition}
+\end{equation}
+Thus staged bridge projections and direct projection agree exactly when their typed identities agree.
+\end{proposition}
+
+\subsection{Nonlinear projection}
+
+For a nonlinear memberwise map \(g\), the authoritative route is
+\begin{equation}
+ y_{s}^{B}
+ =g(T_s^{\Ext}),
+ \qquad
+ \bar y^B
+ =\frac1{N_s}\sum_s y_s^B,
+ \qquad
+ A_{s}^{B}
+ =\frac{y_s^B-\bar y^B}{\sqrt{N_s-1}}.
+ \label{eq:nonlinear-pushforward}
+\end{equation}
+A Jacobian approximation may be recorded as a diagnostic, but it cannot replace exact memberwise propagation when \cref{eq:nonlinear-pushforward} is feasible.
+
+\subsection{Null-space preservation}
+
+Let
+\begin{equation}
+ C_B=U_r\Lambda_rU_r^T
+ \label{eq:cov-eigendecomp}
+\end{equation}
+be the nonzero eigenspace decomposition.  The orthogonal complement
+\begin{equation}
+ \cN_B=\Ker C_B
+ \label{eq:nullspace}
+\end{equation}
+contains combinations that the finite source ensemble does not vary.  A microscopic residual in \(\cN_B\) must be reported separately; it cannot be suppressed by a ridge term.
+
+\subsection{Conditional covariance, not cross-root covariance}
+
+Given a microscopic prediction \(m_p\) in the bridge space, one may compare it with the external distribution \((\bar y_B,C_B)\).  This is a conditional comparison of \(m_p\) against external uncertainty.  It is not a joint covariance between external and microscopic roots.
+
+\begin{axiom}[No invented cross covariance]
+Unless a later explicit map establishes shared random variables or a joint measure, set
+\begin{equation}
+ C_{\Ext,\Mic}
+ \quad\text{to}\quad
+ \texttt{UNDEFINED},
+ \label{eq:undefined-crosscov}
+\end{equation}
+not to zero and not to an estimated correlation.
+\end{axiom}
+
+\section{Microscopic exports and tensor-network evidence axes}
+\label{sec:micro-export}
+
+\subsection{Microscopic export identity}
+
+A microscopic bridge prediction is
+\begin{equation}
+ m_{p,j}^{\Mic}
+ =
+ \cO_j
+ \left[
+ H_p^{\LF},\Psi_p,U_p,
+ \mathfrak A_p^{\mathrm{match}},
+ \mathfrak E_p^{\mathrm{evol}},
+ \mathfrak N_p
+ \right],
+ \label{eq:micro-prediction}
+\end{equation}
+with complete plan and operator identity.  The export row retains
+\begin{equation}
+ \left(
+ p,\ K,\ N_{\max},\ b_{\mathrm{basis}},\ \mathsf{Fock},\ \chi,
+ \mathsf{Wilson},\ \mathsf{nuclear},\ \mathsf{matching},\ \mathsf{evolution}
+ \right).
+ \label{eq:micro-export-id}
+\end{equation}
+
+\subsection{Tensor-network representation}
+
+A tensor-network representation is a structured coordinate system for the same microscopic state:
+\begin{equation}
+ \Psi_p
+ \xrightarrow{\ \mathsf{tensorize}\ }
+ \mathsf{TTN}_{p,\chi}.
+ \label{eq:ttn-map}
+\end{equation}
+Full bond may reproduce the exact finite state, while reduced bond defines a controlled approximation.  Bond dimension \(\chi\) is therefore a numerical/truncation axis, not a statistical replica label.
+
+\begin{principle}[Energy convergence is not observable convergence]
+A small tensor-network energy error does not justify averaging away losses in OAM, Wilson-sensitive, tensor, sea, gluon, or non-nucleonic observables.  Every bridge observable carries its own bond-convergence record.
+\end{principle}
+
+\subsection{Evidence axes}
+
+The microscopic export must distinguish
+\begin{center}
+\begin{tabularx}{0.94\textwidth}{L{0.30\textwidth}Y}
+\toprule
+Axis & Evidential meaning\\
+\midrule
+Hamiltonian plan & Mutually exclusive dynamical assumption or renormalization plan.\\
+Resolution & Regulator/basis convergence axis.\\
+Fock-sector content & Truncation or mechanism axis; not a statistical sample.\\
+Wilson order & Ordered approximation with missing higher-order remainder.\\
+Nuclear component plan & Selected NN, NN\(\pi\), \(\Delta\Delta\), compact, hidden-color, transition, or coherent content.\\
+Matching/evolution plan & Scheme and perturbative approximation axis.\\
+Tensor-network bond & Numerical compression/convergence axis.\\
+Numerical quadrature & Integration and transform error.\\
+Calibrated member & Reserved for a later inference package; presently absent.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+These axes may be compared, but they may not be pooled into a posterior band.
+
+\subsection{Microscopic sensitivity interface}
+
+A future differentiable bridge may define
+\begin{equation}
+ J_{ja}
+ =
+ \frac{\partial m_j^{\Mic}}{\partial\theta_a},
+ \label{eq:sensitivity}
+\end{equation}
+where \(\theta_a\) is an owned microscopic parameter.  Volume XX records the interface but does not evaluate \(J\), optimize \(\theta\), or construct Fisher information.
+
+\section{Data ancestry and no double counting}
+\label{sec:ancestry}
+
+\subsection{ART25 ancestry graph}
+
+The source ensemble is derived from the retained ART25 data:
+\begin{equation}
+ \cD_{\mathrm{ret}}^{\mathrm{ART25}}
+ \longrightarrow
+ \mathsf{Fit}_{\mathrm{ART25}}
+ \longrightarrow
+ \left\{\Theta_s^{\Ext}\right\}_{s=1}^{642}
+ \longrightarrow
+ \left(\bar T^{\Ext},A^{\Ext}\right).
+ \label{eq:art25-ancestry}
+\end{equation}
+The 1,209 point IDs remain attached to every compressed bridge object.
+
+\subsection{Mutually exclusive future-use plans}
+
+\begin{definition}[Evidence-use plan]
+A future analysis must choose one of the following mutually exclusive plans for a given ART25 ancestry set:
+\begin{description}
+\item[\texttt{PLAN\_EXTERNAL\_COMPRESSED\_CONSTRAINT}] Use the ART25 source ensemble or a covariance-preserving bridge projection; exclude its underlying ART25 points from direct likelihood use.
+\item[\texttt{PLAN\_DIRECT\_DATA}] Use the underlying source data and native nuisance map directly; do not add the ART25 ensemble as independent evidence.
+\item[\texttt{PLAN\_EXTERNAL\_HOLDOUT}] Use ART25 only for withheld comparison and do not tune to either the ensemble or its underlying points.
+\item[\texttt{PLAN\_DIAGNOSTIC\_ONLY}] Use structural or convention checks without calibration.
+\end{description}
+\end{definition}
+
+\begin{theorem}[No independent reuse]
+The ART25 compressed ensemble and the 1,209 data points from which it was extracted cannot be treated as independent evidence in one likelihood.  Such a construction double counts the same source information.
+\end{theorem}
+
+\subsection{Dataset conflict matrix}
+
+For any two constraint objects \(X,Y\), define
+\begin{equation}
+ \mathsf{Conflict}(X,Y)
+ =
+ \mathsf{Ancestry}(X)\cap\mathsf{Ancestry}(Y).
+ \label{eq:conflict}
+\end{equation}
+A nonempty intersection requires an explicit joint treatment, exclusion, or holdout plan.  Dataset names alone are insufficient because transformed or aggregated records may share point-level ancestry.
+
+\section{Frozen constraint roles and falsifiability}
+\label{sec:roles}
+
+\subsection{Role vocabulary}
+
+Every bridge observable receives one role before compatibility calculations:
+\begin{center}
+\texttt{CALIBRATION\_CANDIDATE},
+\texttt{HOLDOUT\_CANDIDATE},
+\texttt{DIAGNOSTIC\_ONLY},
+\texttt{UNAVAILABLE}.
+\end{center}
+C29/B0 may freeze these roles but may not execute calibration.
+
+\subsection{Role-selection principles}
+
+The split should preserve:
+\begin{enumerate}
+\item process diversity between distribution-level, DY, and SIDIS objects;
+\item kinematic separation in \(x\), \(b\), and \(Q\);
+\item target separation between proton, phenomenological deuterium, and microscopic deuteron plans;
+\item at least one withheld source dataset family where a process bridge exists;
+\item at least one distribution-level holdout;
+\item source-data ancestry separation;
+\item scheme and domain negative controls;
+\item microscopic resolution and nuclear-component holdouts.
+\end{enumerate}
+
+\begin{principle}[Prediction status]
+A bridge observable becomes a prediction only if its role was frozen as a holdout before any later parameter optimization and if the microscopic interaction affecting it was constrained through shared operators rather than a TMD-specific adjustment.
+\end{principle}
+
+\subsection{Failure must remain visible}
+
+A failed holdout cannot be moved into the calibration set after inspection.  A bridge failure must update the operator map, discrepancy model, microscopic dynamics, or status.  It may not be repaired by adding a point-specific coefficient.
+
+\section{Discrepancy interface}
+\label{sec:discrepancy}
+
+\subsection{Typed discrepancy budget}
+
+For a bridge object \(j\), define the formal residual decomposition
+\begin{equation}
+ m_j^{\Mic}-\mu_j^{\Ext}
+ =
+ \delta_j^{\mathrm{scheme}}
+ +\delta_j^{\mathrm{match}}
+ +\delta_j^{\CS}
+ +\delta_j^{\mathrm{large}\text{-}b}
+ +\delta_j^{\mathrm{ext\ model}}
+ +\delta_j^{\mathrm{Ham}}
+ +\delta_j^{\mathrm{Fock}}
+ +\delta_j^{\mathrm{Wilson}}
+ +\delta_j^{\mathrm{nuclear}}
+ +\delta_j^{Y}
+ +\delta_j^{\mathrm{target}}
+ +\delta_j^{\mathrm{num}}.
+ \label{eq:discrepancy-decomposition}
+\end{equation}
+Equation \eqref{eq:discrepancy-decomposition} is an ownership ledger, not a fitted additive model.  Components may be additive, multiplicative, operator valued, unavailable, or inapplicable.
+
+\subsection{Unknown is not zero}
+
+Each discrepancy component stores
+\begin{equation}
+ \left(
+ \mathsf{owner},\mathsf{domain},\mathsf{mean\ status},
+ \mathsf{covariance\ status},\mathsf{source},
+ \mathsf{estimable},\mathsf{zero\ justified},\mathsf{type}
+ \right).
+ \label{eq:discrepancy-record}
+\end{equation}
+If no calculation supports a zero, the component remains \texttt{UNKNOWN\_NOT\_ZERO}.
+
+\begin{axiom}[No covariance inflation]
+The ART25 external covariance may not be enlarged ad hoc to make a microscopic discrepancy appear statistically acceptable.  Model discrepancy and external source uncertainty are different objects.
+\end{axiom}
+
+\subsection{Non-discrepancy failures}
+
+The following are identity failures rather than stochastic discrepancies:
+\begin{itemize}
+\item target mismatch;
+\item operator, rank, link, or color mismatch;
+\item absent process factorization;
+\item absent TMDFF partner;
+\item source \(W\) without a compatible \(Y\);
+\item comparison outside the common domain.
+\end{itemize}
+Such records remain unavailable until the identity is repaired.
+
+\section{Non-inferential compatibility diagnostics}
+\label{sec:diagnostics}
+
+\subsection{Rank-aware whitening}
+
+For a bridge mean \(\mu\), covariance \(C\), and microscopic prediction \(m\), define the residual
+\begin{equation}
+ r=m-\mu.
+ \label{eq:residual}
+\end{equation}
+Let the nonzero covariance eigenspace be
+\begin{equation}
+ C=U_r\Lambda_rU_r^T.
+ \label{eq:rank-decomp}
+\end{equation}
+The whitened residual and null-space residual are
+\begin{equation}
+ z=\Lambda_r^{-1/2}U_r^Tr,
+ \qquad
+ r_0=(\Id-U_rU_r^T)r.
+ \label{eq:whitened-null}
+\end{equation}
+Both must be reported.  The scalar \(\norm{z}^2\) is a compatibility diagnostic, not automatically a chi-square statistic with a probability interpretation.
+
+\subsection{SVD threshold}
+
+The covariance rank and numerical SVD threshold are part of the diagnostic identity.  Changing the threshold after viewing residuals defines a new diagnostic version and new holdouts.
+
+\subsection{Memberwise percentile diagnostics}
+
+Where a scalar bridge observable is evaluated memberwise, the external percentile location of \(m\) may be reported as
+\begin{equation}
+ \widehat F_{\Ext}(m)
+ =
+ \frac{1}{N_s}\,\#\!\left\{s:\ y_s^{\Ext}\le m\right\},
+ \label{eq:empirical-percentile}
+\end{equation}
+provided the count is interpreted only as an empirical source-ensemble location, not as a posterior probability for the microscopic model.
+
+\subsection{Allowed and forbidden outputs}
+
+Allowed diagnostics include:
+\begin{itemize}
+\item component residuals;
+\item whitened residual vectors and norms;
+\item covariance rank and null-space residuals;
+\item shape correlations;
+\item moment differences;
+\item memberwise percentile locations;
+\item domain-partitioned summaries.
+\end{itemize}
+Forbidden outputs include:
+\begin{itemize}
+\item p-values or confidence levels without a lawful sampling model;
+\item a likelihood or posterior density;
+\item optimized microscopic parameters;
+\item source-member reweighting;
+\item emulator training;
+\item movement of failed holdouts into calibration candidates.
+\end{itemize}
+
+\section{Geometric, topological, and compositional interpretation}
+\label{sec:geometry}
+
+\subsection{Bridge as a typed span}
+
+The span in \cref{eq:bridge-span} is the fundamental geometric object.  It preserves two source spaces and maps each into a common typed base.  A comparison object is constructed locally over a compatible base object; no global identification is presumed.
+
+\begin{center}
+\begin{tikzcd}[column sep=large,row sep=large]
+\cE_{\Ext}
+  \arrow[dr,"\pi_{\Ext}"']
+&&
+\cM_{\Mic}
+  \arrow[dl,"\pi_{\Mic}"]\\
+&\cO_{\mathrm{common}}&
+\end{tikzcd}
+\end{center}
+
+When all identities close, a typed comparison fiber may be denoted
+\begin{equation}
+ \cB_{\omega}
+ =
+ \cE_{\Ext}\times_{\cO_{\mathrm{common}}}\cM_{\Mic}
+ \label{eq:typed-fiber}
+\end{equation}
+for the object \(\omega\).  This notation records compatibility; it does not create a joint probability measure.
+
+\subsection{Assumption complex}
+
+The microscopic plan space is a disjoint union with typed relations:
+\begin{equation}
+ \cP_{\Mic}
+ =
+ \bigsqcup_{p}\{p\}
+ \quad\text{with relations}\quad
+ \mathsf{alternative},\ \mathsf{replacement},\ \mathsf{remainder},\ \mathsf{exclusion}.
+ \label{eq:assumption-complex}
+\end{equation}
+Explicit and induced sectors, alternative Hamiltonians, nuclear components, and Wilson orders remain separated by the provenance complex.  Two paths that represent the same mechanism cannot be added without a count-once relation.
+
+\subsection{Tensor networks as structure-preserving maps}
+
+The tensor-network map in \cref{eq:ttn-map} is a functorial representation of a chosen coupling tree and block-sparse Hilbert-space decomposition.  It preserves physical indices, selection rules, and plan identity.  It does not supply a statistical measure over plans.
+
+The bridge should therefore retain the commutative requirement
+\begin{equation}
+ \cO_j[\Psi_p]
+ \approx
+ \cO_j[\mathsf{TTN}_{p,\chi}]
+ \label{eq:ttn-observable-closure}
+\end{equation}
+with an observable-specific truncation remainder.  Full-bond equality for one state does not license low-bond use for every bridge observable.
+
+\subsection{Two-cells and equivalence-with-remainder}
+
+Where two microscopic descriptions are related by Feshbach elimination, induced operators, or other controlled transformations, the bridge stores a relation
+\begin{equation}
+ \mathsf{explicit}
+ \Longleftrightarrow
+ \mathsf{transformed\ induced}
+ +\mathsf{remainder}.
+ \label{eq:equivalence-remainder}
+\end{equation}
+The relation is not an additive choice of both descriptions.  A bridge plan must select one representation and retain the remainder ledger.
+
+\section{Uncertainty semantics across the bridge}
+\label{sec:uncertainty}
+
+\begin{longtable}{L{0.26\textwidth}L{0.28\textwidth}L{0.37\textwidth}}
+\toprule
+Axis & Owner & Bridge treatment\\
+\midrule
+\endhead
+ART25 source member & External root & Empirical 642-member anomaly factor and exact covariance pushforward.\\
+Experimental statistical/error model & Source data & Preserved separately; enters only under a later direct-data plan.\\
+Normalization nuisance & Source data & Native profile object; not merged with source-member covariance.\\
+Hamiltonian plan & Microscopic root & Mutually exclusive assumption axis; not a statistical replica.\\
+Basis/resolution & Microscopic root & Convergence/truncation axis with explicit sequence.\\
+Fock-sector content & Microscopic root & Mechanism/truncation axis; explicit/induced alternatives remain exclusive.\\
+Wilson order & Microscopic root & Ordered approximation with declared higher-order remainder.\\
+Nuclear component plan & Microscopic root & Component-resolved assumption axis; NN-only is not matched total.\\
+Matching/evolution & Shared interface & Scheme and perturbative truncation record.\\
+Bridge discrepancy & Bridge root & Typed component with owner, domain, and availability; not fitted here.\\
+Numerical integration & Each route & Separate deterministic and convergence residuals.\\
+Cross-root covariance & None by default & Undefined until an explicit joint map exists.\\
+\bottomrule
+\end{longtable}
+
+\begin{principle}[No global confidence band before inference]
+Volume XX does not combine the axes in this table into one confidence interval.  A future posterior ensemble must arise from a declared likelihood and prior structure, not from a quadrature of unrelated sensitivity envelopes.
+\end{principle}
+
+\section{Future inference prerequisite contract}
+\label{sec:future-inference}
+
+\subsection{Prerequisite gates}
+
+A later inference package requires all of:
+\begin{enumerate}
+\item a nonempty bridge capability set;
+\item frozen calibration and holdout roles;
+\item complete operator, target, scheme, scale, and domain adapters;
+\item a selected evidence-use plan from \cref{sec:ancestry};
+\item complete data ancestry and dataset-conflict resolution;
+\item declared microscopic parameter ownership;
+\item an explicit cross-root conditional or joint formulation;
+\item a discrepancy model with nonzero-unknown components represented;
+\item an auditable forward map and numerical convergence;
+\item an identifiability plan;
+\item process and physical statuses appropriate to the intended claim;
+\item immutable validation data and stopping criteria.
+\end{enumerate}
+
+\subsection{Conditional external-constraint formulation}
+
+One possible future compressed-constraint model is
+\begin{equation}
+ y^{\Ext}
+ =
+ g\!\left(m^{\Mic}(\theta)\right)
+ +\delta(\theta,\nu)
+ +\epsilon_{\Ext},
+ \qquad
+ \epsilon_{\Ext}\sim\mathcal N(0,C_{\Ext}),
+ \label{eq:future-compressed-model}
+\end{equation}
+only if the ART25 ensemble is chosen as the compressed evidence and its underlying data are excluded.  Equation \eqref{eq:future-compressed-model} is a future statistical model, not an assertion of Gaussianity or a likelihood implemented by Volume XX.
+
+A direct-data alternative would instead use the native source data, nuisance map, and microscopic or hybrid process predictions.  The two alternatives are not additive.
+
+\subsection{Identifiability}
+
+Before calibration, the future package must test whether the owned microscopic parameters affect bridge observables through linearly or nonlinearly independent directions.  Candidate tools include sensitivity rank, principal angles, profile directions, and withheld closure.  C29/B0 defines the prerequisite records but does not calculate a posterior.
+
+\subsection{Inference remains downstream}
+
+\begin{center}
+\colorbox{softorange}{\parbox{0.88\textwidth}{
+\textbf{Boundary.}
+A complete bridge contract does not mean the microscopic model is calibrated.  A noninferential compatibility atlas does not mean a likelihood exists.  An external ART25 source ensemble does not become a microscopic posterior.  Inference begins only in a later versioned package after the gates above close.
+}}
+\end{center}
+
+\section{Software architecture and machine-readable schemas}
+\label{sec:architecture}
+
+\subsection{Principal objects}
+
+The implementation should expose immutable types corresponding to:
+\begin{longtable}{L{0.34\textwidth}L{0.57\textwidth}}
+\toprule
+Object & Required content\\
+\midrule
+\endhead
+\texttt{ExternalRootId} & ART25 source version, datasets, members, measurement route, anomaly factor, and release status.\\
+\texttt{MicroscopicRootId} & Hamiltonian/Fock/Wilson/nuclear/matching/evolution root and immutable source ancestry.\\
+\texttt{BridgeOperatorId} & Full tuple in \cref{eq:operator-identity}.\\
+\texttt{TargetMap} & Proton, neutron, phenomenological deuterium, microscopic NN, or full component-resolved target status.\\
+\texttt{SchemeMap} & Source and destination schemes, finite transformation, order, domain, and remainder.\\
+\texttt{BridgeProjection} & Linear or nonlinear memberwise map with source and output identities.\\
+\texttt{ExternalAnomalyFactor} & Mean, member order, dimensions, hash, storage path, and block-query API.\\
+\texttt{MicroscopicPredictionVector} & Bridge-grid predictions with complete microscopic evidence axes.\\
+\texttt{BridgeMemberRelation} & Default \texttt{NO\_JOINT\_MEASURE} or a later explicit relation.\\
+\texttt{BridgeDataAncestry} & Source datasets and point IDs underlying every external object.\\
+\texttt{NoDoubleCountingPlan} & Compressed constraint, direct data, holdout, or diagnostic plan.\\
+\texttt{ConstraintRoleSplit} & Frozen calibration-candidate, holdout-candidate, diagnostic, and unavailable roles.\\
+\texttt{BridgeDiscrepancyComponent} & Owner, domain, type, source, mean/covariance status, and zero justification.\\
+\texttt{BridgeCompatibilityDiagnostic} & Covariance rank, SVD threshold, whitened and null-space residuals; no likelihood semantics.\\
+\texttt{FutureInference}\newline\texttt{PrerequisiteContract} & Complete gate list and blocking reasons.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Compact bridge-plan schema}
+
+\begin{verbatim}
+{
+  "bridge_plan_id": "...",
+  "external_root_id": "ART25_EXTERNAL_SOURCE_ROOT:...",
+  "microscopic_root_id": "PROJECT_MICROSCOPIC_OPERATOR_ROOT:...",
+  "operator_crosswalk_id": "...",
+  "target_map_id": "...",
+  "scheme_scale_adapter_id": "...",
+  "domain_intersection_id": "...",
+  "observable_space": "DISTRIBUTION | CS | DY_ONELEG | SIDIS_TARGETLEG",
+  "external_projection_id": "...",
+  "microscopic_export_id": "...",
+  "member_relation": "NO_JOINT_MEASURE",
+  "data_ancestry_id": "...",
+  "no_double_counting_plan": "DIAGNOSTIC_ONLY",
+  "constraint_role": "HOLDOUT_CANDIDATE",
+  "discrepancy_interface_id": "...",
+  "capability_status": "BRIDGE_DIAGNOSTIC_ONLY",
+  "blocking_reasons": ["..."]
+}
+\end{verbatim}
+
+\subsection{Storage and release policy}
+
+Heavy member-by-point tables and projected anomaly factors may remain in a content-addressed runtime directory.  The repository must commit their schemas, dimensions, hashes, member and point order, and deterministic reconstruction commands.  Raw transferred MSHT grids remain outside public Git until redistribution permission is explicit.
+
+\subsection{Determinism}
+
+Every machine-readable bridge manifest must reproduce byte-for-byte.  Projection maps, member order, bridge-grid order, role split, SVD threshold, and source hashes are immutable inputs to the build.
+
+\section{Formal requirements}
+\label{sec:requirements}
+
+The following stable requirements define Volume XX.  Identifiers are normative even if the implementation uses different class names.
+
+\begin{longtable}{L{0.19\textwidth}L{0.72\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V20.ROOT.1 & Keep external ART25 and microscopic operator roots immutable and disjoint.\\
+V20.ROOT.2 & Forbid source, member, state, covariance, or readiness transfer across roots without a typed map.\\
+V20.DATA.1 & Represent every source point by repository, commit, file hash, dataset, point, process, bin, cuts, errors, nuisance, theory factor, units, and measurement identity.\\
+V20.DATA.2 & Preserve the historical ART25 selection authority and ordered retained-point IDs.\\
+V20.DATA.3 & Keep the CDF1.0 regression in \cref{eq:cdf1-authority} immutable.\\
+V20.MEAS.1 & Trace native DY and SIDIS integration, normalization, charge, and theory-factor semantics.\\
+V20.MEAS.2 & Keep external measurement maps outside the microscopic TMD definition.\\
+V20.ENS.1 & Preserve all 642 ART25 stochastic members as indivisible joint identities.\\
+V20.ENS.2 & Exclude technical records from stochastic empirical statistics unless source semantics say otherwise.\\
+V20.COV.1 & Preserve the authoritative \(642\times1209\) anomaly factor and member/point order.\\
+V20.COV.2 & Reconstruct exact covariance blocks as anomaly-factor products.\\
+V20.COV.3 & Preserve covariance rank and null spaces; forbid silent ridge regularization or PSD clipping.\\
+V20.COV.4 & Preserve DY--DY, SIDIS--SIDIS, DY--SIDIS, and distribution--process cross blocks.\\
+V20.COV.5 & Keep external theory, experimental, nuisance, numerical, and source-version uncertainties separate.\\
+V20.CHI2.1 & Use the native source nuisance and \(\chi^2\) definitions as authority.\\
+V20.CHI2.2 & Distinguish central-member, ensemble-mean, mean-member, and published-anchor \(\chi^2\) objects.\\
+V20.WY.1 & Retain the present source route as low-\(q_T\), leading-power, \(W\)-only.\\
+V20.WY.2 & Require exact fixed-order/asymptotic identity before issuing a source \(W+Y\) status.\\
+V20.WY.3 & Forbid combining the ART25 source \(W\) with the C23 analytic \(Y\).\\
+V20.OP.1 & Match bridge candidates by complete operator identity, never by TMD name alone.\\
+V20.OP.2 & Preserve quark, antiquark, gluon, rank, link, color, twist, and collinear-operator identity.\\
+V20.TARGET.1 & Distinguish proton, neutron, phenomenological deuterium, microscopic NN, and complete deuteron targets.\\
+V20.TARGET.2 & Forbid promotion of NN-only or phenomenological deuterium records to the complete microscopic deuteron.\\
+V20.SCHEME.1 & Record external and microscopic UV, rapidity, soft, Fourier, mass, scale, and threshold conventions.\\
+V20.SCHEME.2 & Classify adapters as identical, exact, finite-order, validation-only, unresolved, or incompatible.\\
+V20.SCHEME.3 & Forbid scheme adapters from absorbing target, nuclear, large-\(b\), missing-order, or missing-\(Y\) differences.\\
+V20.DOMAIN.1 & Freeze bridge points inside the exact common domain before comparison.\\
+V20.BRIDGE.1 & Represent the external/microscopic relation as a typed span over a common operator base.\\
+V20.BRIDGE.2 & Construct comparison fibers only after identity and domain gates close.\\
+V20.BRIDGE.3 & Audit distribution-level quark, quark CS, DY one-leg, SIDIS target-leg, deuteron, gluon, and T-odd plans separately.\\
+V20.PROJ.1 & Push linear external covariance through \cref{eq:linear-pushforward}.\\
+V20.PROJ.2 & Use exact memberwise evaluation for nonlinear projections where feasible.\\
+V20.PROJ.3 & Preserve member order, covariance rank, null space, and deterministic reconstruction.\\
+V20.MIC.1 & Export microscopic predictions with Hamiltonian, resolution, Fock, Wilson, nuclear, matching, evolution, TTN, and numerical identities.\\
+V20.MIC.2 & Keep microscopic assumption axes distinct from statistical/calibration members.\\
+V20.TTN.1 & Treat tensor-network bond dimension as a numerical/truncation axis with observable-specific convergence.\\
+V20.REL.1 & Default the cross-root member relation to \texttt{NO\_JOINT\_MEASURE}.\\
+V20.REL.2 & Forbid index pairing, covariance addition, Cartesian-product posterior claims, and marginal reshuffling across roots.\\
+V20.ANCESTRY.1 & Attach all underlying ART25 datasets and point IDs to every external bridge object.\\
+V20.ANCESTRY.2 & Make compressed-constraint and direct-data plans mutually exclusive for shared ancestry.\\
+V20.ROLE.1 & Freeze calibration-candidate, holdout-candidate, diagnostic, and unavailable roles before diagnostics.\\
+V20.ROLE.2 & Forbid moving failed holdouts into calibration candidates.\\
+V20.DISC.1 & Type every bridge discrepancy by owner, domain, form, source, mean/covariance status, and zero justification.\\
+V20.DISC.2 & Preserve unknown discrepancy as nonzero-unknown; forbid ad hoc external-covariance inflation.\\
+V20.DIAG.1 & Report covariance rank, SVD threshold, whitened residual, and null-space residual.\\
+V20.DIAG.2 & Forbid likelihood, p-value, posterior, optimization, reweighting, or emulator semantics in C29/B0.\\
+V20.GEOM.1 & Preserve the assumption complex and explicit/induced equivalence-with-remainder relations.\\
+V20.GEOM.2 & Forbid additive use of mutually exclusive microscopic plans.\\
+V20.INF.1 & Define a complete future inference prerequisite contract without creating an inference API.\\
+V20.INF.2 & Require parameter ownership, identifiability, discrepancy, no-double-counting, and frozen holdouts before calibration.\\
+V20.ISO.1 & Keep all C7--C28 scientific artifacts, the 216-route registry, and eight authoritative artifacts unchanged.\\
+V20.ISO.2 & Keep raw transferred source files outside public Git absent permission.\\
+V20.DET.1 & Require deterministic byte-identical manifests and content-addressed heavy outputs.\\
+\bottomrule
+\end{longtable}
+
+\section{Benchmark and falsification program}
+\label{sec:benchmarks}
+
+The computational implementation should contain at least the following benchmark families.
+
+\begin{longtable}{L{0.15\textwidth}L{0.76\textwidth}}
+\toprule
+Family & Required content\\
+\midrule
+\endhead
+B0-A & External/microscopic root identity, immutability, and root-collapse failures.\\
+B0-B & Complete operator crosswalk with species, flavor, rank, link, color, twist, and scheme gates.\\
+B0-C & Target/nuclear crosswalk for proton, neutron, phenomenological deuterium, NN-only, and matched-total controls.\\
+B0-D & Exact, finite-order, validation-only, unresolved, and incompatible scheme/domain adapters.\\
+B0-E & Frozen bridge grid with common-domain coverage and immutable holdouts.\\
+B0-F & Linear and nonlinear external covariance pushforward, block reconstruction, rank, PSD, and null-space checks.\\
+B0-G & Microscopic exports with complete evidence axes and no posterior reinterpretation.\\
+B0-H & Cross-root member relation, no index pairing, and no invented covariance.\\
+B0-I & Distribution-level \(u,d,\bar u,\bar d\), singlet, moment, and CS-kernel bridge audits.\\
+B0-J & One-leg Drell--Yan bridge with partner ownership and \(W\)-only status.\\
+B0-K & SIDIS target-leg bridge with source TMDFF, hadron charge, and \(z\)-scaled Fourier identity.\\
+B0-L & Deuterium/deuteron and NN/matched-total negative controls.\\
+B0-M & Complete ART25 data ancestry and compressed-constraint/direct-data exclusivity.\\
+B0-N & Typed discrepancy ledger and failure of unknown-equals-zero or covariance-inflation injections.\\
+B0-O & Rank-aware whitened and null-space compatibility diagnostics with no inference semantics.\\
+B0-P & Future inference prerequisite contract and explicit proof that no inference route is created.\\
+B0-Q & Assumption-complex, equivalence-with-remainder, and no-double-counting composition tests.\\
+B0-R & Deterministic isolation, prior-manifest immutability, production/artifact integrity, and source-release policy.\\
+\bottomrule
+\end{longtable}
+
+\section{Mandatory negative-test catalogue}
+\label{sec:negative-tests}
+
+The C29 implementation should contain at least 1,400 ordered negative injections.  The categories below are normative.
+
+\subsection{Root and provenance failures}
+
+Reject external/microscopic root collapse, ART25 members substituted for microscopic states, external covariance labeled a microscopic posterior, source readiness copied across roots, historical manifest mutation, or a public-release claim for restricted source grids.
+
+\subsection{Operator and target failures}
+
+Reject TMD-name-only matching; quark/gluon, quark/antiquark, rank, link, color, twist, or target aliases; LL copied from U without operator proof; unavailable operators reported as zero; proton called deuteron; phenomenological deuterium called microscopic deuteron; NN-only called matched total; and charge conjugation without a complete map.
+
+\subsection{Scheme and domain failures}
+
+Reject hidden UV/rapidity/soft, Fourier, mass, threshold, or scale mismatches; extrapolation outside the common domain; large-\(b\) differences absorbed into a scheme adapter; and missing \(Y\) or nuclear mechanisms relabeled as scheme conversion.
+
+\subsection{Covariance failures}
+
+Reject reversed anomaly-factor orientation, normalization by \(\sqrt{N_s}\), member loss, duplication, reordering, marginal resampling, diagonal covariance substitution, silent null-space ridge, silent PSD clipping, and nonlinear maps linearized without memberwise validation.
+
+\subsection{Microscopic evidence failures}
+
+Reject Hamiltonian alternatives called posterior replicas, resolution or Fock axes merged into statistical covariance, Wilson orders added as mechanisms, explicit and induced descriptions double counted, TTN energy convergence used as universal observable convergence, and numerical error called model uncertainty.
+
+\subsection{Cross-root relation failures}
+
+Reject pairing ART25 and microscopic members by index, declaring independent roots correlated, adding covariances without an assumption, calling a Cartesian product a posterior, or ignoring a genuinely shared source component.
+
+\subsection{Process-bridge failures}
+
+Reject silent replacement of both DY legs, loss of external partner identity, unproved antihadron maps, collinear FF substituted for a TMDFF, lost SIDIS \(z\) convention, source \(W\) called \(W+Y\), hidden missing \(Y\), or altered external measurement maps.
+
+\subsection{Ancestry and role failures}
+
+Reject ART25 and its underlying points used as independent evidence, direct-data and compressed plans combined, omitted point ancestry, excluded points treated as calibration input, holdouts reused for calibration, or role changes after diagnostics.
+
+\subsection{Discrepancy and diagnostic failures}
+
+Reject unknown discrepancy set to zero, external covariance inflated to hide disagreement, target mismatch treated as noise, missing \(Y\) silently absorbed, diagnostics called likelihoods, whitened norms called p-values, omitted SVD thresholds, discarded null-space residuals, optimization, reweighting, or emulator training.
+
+\subsection{Readiness leakage}
+
+Reject source-process, physical-input, deuteron, T-odd, inference, or production promotion; production-registry or authoritative-artifact mutation; raw-source publication without permission; and nondeterministic manifests.
+
+\section{Implementation stages and deliverables}
+\label{sec:implementation}
+
+\subsection{Stage XX.0: source and covariance authority}
+
+Verify the complete C28 baseline, source roots, CDF1 authority, retained point order, 642-member order, anomaly-factor hash, and release policy.  No bridge work begins if these fail.
+
+\subsection{Stage XX.1: root, operator, target, and scheme crosswalk}
+
+Construct the two root IDs, complete operator crosswalk, target and nuclear maps, scheme/scale adapters, common-domain records, and minimal family audit.
+
+\subsection{Stage XX.2: bridge spaces and covariance pushforward}
+
+Freeze bridge points, implement distribution/CS/DY-one-leg/SIDIS-target-leg registries, project the external anomaly factor, validate rank and null spaces, and store exact covariance blocks.
+
+\subsection{Stage XX.3: microscopic export}
+
+Evaluate existing microscopic plans on the frozen bridge grid while preserving all Hamiltonian, resolution, Fock, Wilson, nuclear, matching, evolution, TTN, and numerical axes.  Do not tune any parameter.
+
+\subsection{Stage XX.4: ancestry, roles, discrepancy, and diagnostics}
+
+Build the ART25 ancestry graph, dataset conflict matrix, no-double-counting contract, frozen roles, discrepancy interface, rank-aware diagnostics, and bridge comparison report.
+
+\subsection{Stage XX.5: capability and future-inference contract}
+
+Construct the complete bridge capability matrix, future inference prerequisites, unresolved gaps, deterministic regression, and handoff.  No likelihood or inference code is created.
+
+\subsection{Principal deliverables}
+
+At minimum the implementation should produce:
+\begin{itemize}
+\item root identity and provenance separation manifests;
+\item operator, target, nuclear, scheme, scale, and domain crosswalks;
+\item bridge observable registry, capability matrix, and frozen grid;
+\item external bridge projection, anomaly-factor, and covariance-block records;
+\item microscopic bridge exports and evidence-axis manifests;
+\item cross-root member-relation record;
+\item data ancestry, dataset conflict, and no-double-counting contracts;
+\item frozen constraint-role split;
+\item discrepancy interface and availability matrix;
+\item noninferential compatibility diagnostics and comparison report;
+\item future inference prerequisite contract;
+\item requirement coverage, ordered injections, regression, unresolved gaps, and deterministic build records.
+\end{itemize}
+
+\section{Formal acceptance criteria}
+\label{sec:acceptance}
+
+Volume XX and C29/B0 are complete at the declared scope only if:
+\begin{enumerate}
+\item the exact C28 source, dataset, member, covariance, and integrity baseline reproduces;
+\item external and microscopic roots remain immutable and disjoint;
+\item every bridge candidate is matched by complete operator identity;
+\item target identity is explicit and phenomenological deuterium is not the microscopic deuteron;
+\item NN-only is not the complete matched nuclear total;
+\item scheme, scale, rank, link, color, and domain status are explicit;
+\item bridge points and roles are frozen before microscopic comparison;
+\item all 642 source members and their order survive every bridge projection;
+\item linear covariance pushforward closes exactly;
+\item nonlinear covariance uses exact memberwise evaluation where available;
+\item covariance rank and null spaces remain visible;
+\item microscopic plans retain their original evidence classes;
+\item TTN bond and resolution axes remain truncation/numerical axes, not replicas;
+\item no cross-root member correlation or covariance is invented;
+\item ART25 data ancestry covers all 1,209 retained point IDs;
+\item compressed ART25 and underlying direct data are mutually exclusive future evidence plans;
+\item calibration-candidate, holdout-candidate, diagnostic, and unavailable roles remain frozen;
+\item no calibration, optimization, reweighting, emulator, likelihood, or posterior is executed;
+\item discrepancy components are typed and unknown components remain nonzero-unknown;
+\item compatibility diagnostics report covariance rank and null-space residuals;
+\item diagnostics are not reported as probabilities;
+\item distribution-level quark/antiquark candidates receive complete decisions;
+\item the quark CS bridge receives a complete decision;
+\item DY one-leg and SIDIS target-leg candidates receive complete decisions;
+\item deuteron, gluon, and T-odd candidates fail or qualify with exact scopes;
+\item no source \(W\) is called \(W+Y\) without an exact partner;
+\item no process, physical-input, microscopic-process, deuteron, inference, or production status is promoted;
+\item all prior tests, builders, requirements, injections, manifests, production routes, and authoritative artifacts remain unchanged;
+\item raw transferred source files remain outside public Git absent permission;
+\item every ordered negative injection yields its expected diagnostic;
+\item all new manifests reproduce byte-for-byte;
+\item the working tree is clean and the completion commit is local and unpushed.
+\end{enumerate}
+
+A zero count of process-level bridge-ready entries is an acceptable result if every operator, target, scheme, covariance, ancestry, discrepancy, and role decision is explicit.
+
+\section{C29/C30 boundary}
+\label{sec:handoff}
+
+\subsection{C29/B0 implementation boundary}
+
+C29/B0 should implement the bridge contract defined here without fitting.  Its strongest allowed results are bridge comparison readiness, frozen future-calibration candidates, holdout candidates, discrepancy availability, and noninferential compatibility diagnostics.
+
+\subsection{Branch A: nonempty common bridge}
+
+If C29 produces a nonempty set of distribution-level or one-leg process bridge candidates with complete identity and covariance, the next package should be
+\begin{center}
+\textbf{C30/B1: microscopic sensitivity, identifiability, and discrepancy-prior readiness on the frozen bridge---still without calibration.}
+\end{center}
+It would evaluate owned microscopic sensitivities, rank and principal-angle diagnostics, emulator necessity, numerical differentiability, and discrepancy parameterization while preserving holdouts and no-double-counting plans.
+
+\subsection{Branch B: bridge identity remains empty}
+
+If target, scheme, operator, or domain mismatches prevent a common bridge, the next package should repair only the named missing adapters or microscopic exports.  It should not bypass the gap by comparing plot-level curves.
+
+\subsection{Inference branch}
+
+A later inference package may begin only after the future-inference contract in \cref{sec:future-inference} passes.  Its first action must choose between direct ART25 data and the compressed ART25 ensemble.  It may not use both independently.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+C28 changes the status of the external phenomenological layer.  The ART25 low-\(q_T\) Drell--Yan and SIDIS route is no longer merely a paper reference, a software interface, or a handful of regenerated examples.  It is a complete public-source-reproducible dataset ensemble with native measurement semantics, native nuisance and \(\chi^2\) treatment, 642 indivisible source members, and an exact 1,209-point covariance geometry.  Its present claim is nevertheless bounded: it is \(W\)-only, unanchored by author-frozen numerical outputs, and not a microscopic or physical deuteron prediction.
+
+The correct next scientific object is therefore a bridge, not a fit.  Volume XX defines that bridge as a typed span between two disjoint roots.  Operator, target, scheme, scale, rank, link, color, and domain identity determine where a comparison exists.  The external anomaly factor carries covariance exactly through linear or memberwise nonlinear projections.  Microscopic Hamiltonian, Fock, Wilson, nuclear, tensor-network, matching, and numerical axes retain their distinct evidence classes.  No cross-root joint measure is invented.  Complete ART25 data ancestry prevents double use of the external ensemble and its underlying data.  Frozen roles, discrepancy ownership, covariance-rank-aware diagnostics, and a future inference contract establish falsifiability without prematurely turning compatibility into probability.
+
+This construction realizes the intended geometric and compositional program: external fits become typed constraints or holdouts on common operator images, while the microscopic state remains the generative object.  Tensor networks represent and compress that state without becoming a statistical ensemble.  Alternative physical assumptions remain separate branches of a provenance complex.  A later calibration can be meaningful only because Volume XX first refuses every shortcut that would rebuild the original patchwork at a deeper level.
+
+\appendix
+
+\section{C28 numerical authority}
+\label{app:c28}
+
+\begin{longtable}{L{0.45\textwidth}L{0.43\textwidth}}
+\toprule
+Quantity & Authoritative value\\
+\midrule
+\endhead
+Historical DataProcessor commit & {\ttfamily\footnotesize\seqsplit{761f3fcdd3701c5cf69e822f9ffbbd5db394fc58}}\\
+Current-public comparison commit & {\ttfamily\footnotesize\seqsplit{9f9dda71b69dd26e288be189a396736827cfeed3}}\\
+DY / SIDIS datasets & 36 / 10\\
+Source / retained / excluded points & 8,675 / 1,209 / 7,466\\
+Retained DY / SIDIS points & 627 / 582\\
+CDF1 loaded / retained & 50 / 33\\
+CDF1.0 prediction & \(3.4394876804377352\ \mathrm{pb/GeV}\)\\
+Central DY \(\chi^2\) & 733.3634803213348\\
+Central SIDIS \(\chi^2\) & 536.8536205509276\\
+Central combined \(\chi^2\) & 1270.2171008722626\\
+Stochastic source members & 642\\
+Anomaly-factor dimensions & \(642\times1209\)\\
+Anomaly-factor SHA-256 & {\ttfamily\footnotesize\seqsplit{c959dfef644a16d5300254d0b4b164ce383b8eb059bc41a45ebf69a0d44a9eb8}}\\
+Process status & \nolinkurl{SOURCE_REPRODUCIBLE_LOWQT_W_VALIDATION}\\
+Full \(W+Y\) status & unavailable: exact fixed-order/asymptotic partner absent\\
+Production registry & 216 routes, unchanged\\
+\bottomrule
+\end{longtable}
+
+\section{Compact operator-crosswalk schema}
+\label{app:crosswalk-schema}
+
+\begin{verbatim}
+{
+  "external_object_id": "...",
+  "microscopic_operator_id": "...",
+  "species": "QUARK | ANTIQUARK | GLUON",
+  "flavor": "u | d | ubar | dbar | singlet | ...",
+  "external_target": "PROTON | DEUTERIUM | ...",
+  "microscopic_target": "PROTON | NEUTRON | NN_ONLY | FULL_DEUTERON",
+  "parton_polarization": "...",
+  "target_channel": "U | L | T | LL | LT | TT",
+  "rank": 0,
+  "link_class": "...",
+  "color_class": "NA | f | d",
+  "twist": 2,
+  "collinear_operator_id": "...",
+  "external_scheme": "...",
+  "microscopic_scheme": "...",
+  "scheme_adapter_status": "...",
+  "scale_adapter_status": "...",
+  "domain_intersection_id": "...",
+  "bridge_status": "...",
+  "blocking_reasons": ["..."]
+}
+\end{verbatim}
+
+\section{Compact no-double-counting checklist}
+\label{app:no-double-counting}
+
+Before using an ART25 bridge object in any later inference:
+\begin{enumerate}
+\item list every underlying ART25 dataset and point ID;
+\item determine whether those points appear in the proposed direct-data likelihood;
+\item choose exactly one of compressed constraint, direct data, external holdout, or diagnostic-only plans;
+\item preserve source and target transformations;
+\item preserve the joint ART25 member identity and covariance;
+\item freeze calibration and holdout roles;
+\item specify the bridge discrepancy model;
+\item record parameter ownership and prevent TMD-specific normalizations;
+\item test identifiability and numerical convergence;
+\item retain an independent withheld family;
+\item issue no posterior or prediction claim until the complete contract passes.
+\end{enumerate}
+
+\section{Reference sources}
+\label{app:references}
+
+\begin{thebibliography}{99}
+
+\bibitem{C28Report}
+DeuteronWigner project,
+``C28/P1D implementation report: complete public ART25 low-\(q_T\) dataset route,''
+repository record \texttt{docs/next\_level/c28\_implementation\_report.md} (2026).
+
+\bibitem{C29Prompt}
+DeuteronWigner project,
+``C29/B0 work package: typed covariance-preserving bridge between the source-reproducible ART25 ensemble and the microscopic operator root,''
+repository work package (2026).
+
+\bibitem{VolumeXIX}
+DeuteronWigner project,
+``Volume XIX: Source-Qualified Process Inputs, Physical-Covariance Gates, and Data-Ready TMD Observable Bundles'' (2026).
+
+\bibitem{CanonicalNote}
+DeuteronWigner project,
+``Construction and Status of the Canonical Spin-1 Deuteron GTMD/TMD Model'' (2026).
+
+\bibitem{Moos2025}
+V. Moos, I. Scimemi, A. Vladimirov, and P. Zurita,
+``Determination of unpolarized TMD distributions from the fit of Drell--Yan and SIDIS data at N\(^4\)LL,''
+\href{https://arxiv.org/abs/2503.11201}{arXiv:2503.11201} (2025).
+
+\bibitem{ARTEMIDE301}
+A. Vladimirov,
+``ARTEMIDE v3.01,'' Zenodo software release,
+\href{https://doi.org/10.5281/zenodo.15006449}{doi:10.5281/zenodo.15006449} (2025).
+
+\bibitem{Collins2011}
+J. Collins,
+\emph{Foundations of Perturbative QCD}, Cambridge University Press (2011).
+
+\bibitem{Rogers2010}
+T. C. Rogers and P. J. Mulders,
+``No Generalized TMD-Factorization in the Hadro-Production of High Transverse Momentum Hadrons,''
+\href{https://arxiv.org/abs/1001.2977}{arXiv:1001.2977} (2010).
+
+\end{thebibliography}
+
+\end{document}

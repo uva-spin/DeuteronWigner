@@ -1,0 +1,787 @@
+{
+  "factorized": true,
+  "root": "73ccebdfa75991fa5c2b9109a7f75aaba99be794b546ea76081ef0f8d53df300",
+  "rows": [
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "SYMMETRIC_BOUNDARY_OWNED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "ORDER_SENSITIVE_SOURCE_SCOPE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "HOLONOMY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "GHOST_BOUNDARY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "UNRESOLVED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "SYMMETRIC_BOUNDARY_OWNED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "ORDER_SENSITIVE_SOURCE_SCOPE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "HOLONOMY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "GHOST_BOUNDARY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "UNRESOLVED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K9",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "SYMMETRIC_BOUNDARY_OWNED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "ORDER_SENSITIVE_SOURCE_SCOPE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "HOLONOMY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "GHOST_BOUNDARY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "UNRESOLVED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "SYMMETRIC_BOUNDARY_OWNED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "ORDER_SENSITIVE_SOURCE_SCOPE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "HOLONOMY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "GHOST_BOUNDARY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "UNRESOLVED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K11",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "SYMMETRIC_BOUNDARY_OWNED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "ORDER_SENSITIVE_SOURCE_SCOPE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "HOLONOMY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "GHOST_BOUNDARY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "UNRESOLVED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "SYMMETRIC_BOUNDARY_OWNED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "ORDER_SENSITIVE_SOURCE_SCOPE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "HOLONOMY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "GHOST_BOUNDARY_INTERFACE",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    },
+    {
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "deterministic_reconstruction": true,
+      "domain_roots": [
+        "C180_VECTOR_MODE",
+        "C180_ORDERED_PAIR",
+        "C181_BOUNDARY_MODE",
+        "C181_MIXED_PAIR"
+      ],
+      "formula": "retained + first-omitted + source + holonomy + ghost + unresolved",
+      "leakage_map_root": "C181-LEAKAGE-MAP",
+      "outward_enclosure": "symbolic singleton/nonphysical fixture",
+      "ownership_class": "UNRESOLVED",
+      "queryable_by": [
+        "resolution",
+        "conversion",
+        "retained pair",
+        "source pair",
+        "boundary target",
+        "ownership class",
+        "origin"
+      ],
+      "rank_rule": "factorized",
+      "resolution": "K13",
+      "support": "sparse C176 target support"
+    }
+  ],
+  "schema": "C181-COMPRESSED-OWNERSHIP-V1"
+}

@@ -1,0 +1,75 @@
+{
+  "authority_record": {
+    "callbacks": false,
+    "count": 3,
+    "eval": false,
+    "pickle": false,
+    "root": "c3d23263bd05b786032f8ef3cf439b1efa40b83cce141259612183f2c805e4eb",
+    "rows": [
+      {
+        "executable": false,
+        "kernel_complete": true,
+        "resolution": "K9",
+        "safe_opcodes": [
+          "LOAD_VERIFIED_COMMON_STATE",
+          "LOAD_C217_RETAINED_SELF_ENERGY",
+          "LOAD_C238_V1_COMPLEMENT",
+          "LOAD_C247_C112_CONTACT",
+          "LOAD_C254_C127_REGULATED_CURRENT",
+          "LOAD_C117_AFFINE_COORDINATES",
+          "APPLY_C149_SIGNED_MASS_PROJECTOR",
+          "SUBTRACT_COMMON_IR",
+          "CHECK_SIGN_REVERSAL",
+          "RETURN_AFFINE_PROJECTED_SELF_ENERGY"
+        ],
+        "state_bound": false,
+        "terminal": "COMMON_STATE_INSTANCE_UNAVAILABLE"
+      },
+      {
+        "executable": false,
+        "kernel_complete": true,
+        "resolution": "K11",
+        "safe_opcodes": [
+          "LOAD_VERIFIED_COMMON_STATE",
+          "LOAD_C217_RETAINED_SELF_ENERGY",
+          "LOAD_C238_V1_COMPLEMENT",
+          "LOAD_C247_C112_CONTACT",
+          "LOAD_C254_C127_REGULATED_CURRENT",
+          "LOAD_C117_AFFINE_COORDINATES",
+          "APPLY_C149_SIGNED_MASS_PROJECTOR",
+          "SUBTRACT_COMMON_IR",
+          "CHECK_SIGN_REVERSAL",
+          "RETURN_AFFINE_PROJECTED_SELF_ENERGY"
+        ],
+        "state_bound": false,
+        "terminal": "COMMON_STATE_INSTANCE_UNAVAILABLE"
+      },
+      {
+        "executable": false,
+        "kernel_complete": true,
+        "resolution": "K13",
+        "safe_opcodes": [
+          "LOAD_VERIFIED_COMMON_STATE",
+          "LOAD_C217_RETAINED_SELF_ENERGY",
+          "LOAD_C238_V1_COMPLEMENT",
+          "LOAD_C247_C112_CONTACT",
+          "LOAD_C254_C127_REGULATED_CURRENT",
+          "LOAD_C117_AFFINE_COORDINATES",
+          "APPLY_C149_SIGNED_MASS_PROJECTOR",
+          "SUBTRACT_COMMON_IR",
+          "CHECK_SIGN_REVERSAL",
+          "RETURN_AFFINE_PROJECTED_SELF_ENERGY"
+        ],
+        "state_bound": false,
+        "terminal": "COMMON_STATE_INSTANCE_UNAVAILABLE"
+      }
+    ],
+    "schema": "PROJECT_C277_RI_SMOM_MASS_SELF_ENERGY_V1"
+  },
+  "package_root": "b57cd76303f9ba0a7002bc97baca44eabb8de68529920682103069bc66bca0f1",
+  "physical": false,
+  "plan": "RIMASSSELF1-C",
+  "schema": "C277-PROJECTION_PROGRAM-VALIDATION-V1",
+  "status": "C277_MASS_PROJECTED_SELF_ENERGY_KERNELS_CROSSWALKED_COMMON_STATE_INSTANCE_UNAVAILABLE",
+  "validation": "PASS"
+}

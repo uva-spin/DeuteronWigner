@@ -1,0 +1,25 @@
+{
+  "schema": "C213-GAP-DECISION-VALIDATION-V1",
+  "artifact": "gap_decision_validation",
+  "package_root": "367e0d7a008f64624d2d7d751e68f6688a88f3ec12f8a18b9c1da852bafe57eb",
+  "status": "C213_C212_PHYSICAL_INPUT_AUTHORITY_AUDITED_STANDARD_CAPSULES_READY_FINITE_BASIS_BINDING_INCOMPLETE",
+  "plan": "PHYSINPUT1-B",
+  "physical_record_ready": false,
+  "physical_values_selected": 0,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "object_id": "C197-ST-10",
+    "available": "two authenticated standard coordinate capsules plus flavor identity",
+    "missing": "authenticated scale/running and finite-basis target map for accepted physical capsules",
+    "classification": "AUDIT_COMPLETE_EXACT_ACQUISITION_OR_DERIVATION_FRONTIER",
+    "blocker": false,
+    "selected_plan": "PHYSINPUT1-B",
+    "next": "C214/HQCDPHYSINPUTMAP1",
+    "root": "9b1cfad607a9f69ef8bfdf058dd60e7d4637f5d69e7b6440b10302bed89c4cca"
+  }
+}

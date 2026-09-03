@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "canonical_scale_gev": 5.0,
+  "rule": "Uncertainty axes remain named and independently replaceable; envelopes are not interpreted as statistical confidence bands unless replicas or Hessian members exist.",
+  "axes": [
+    {
+      "axis_id": "deuteron_wave_function",
+      "classification": "model_ensemble",
+      "members": ["av18", "cd-bonn", "nvia", "nvib", "nviia", "nviib"],
+      "central": "av18",
+      "artifact": "outputs/parent_tmds/evolved_quark_parent_scenarios.csv",
+      "scope": "quark T-even spin-1 parent and b1; gluon T-even wave ensemble is retained separately"
+    },
+    {
+      "axis_id": "pretzelosity_boundary",
+      "classification": "zero_centered_model",
+      "members": ["negative", "central", "positive"],
+      "central": "central",
+      "artifact": "outputs/parent_tmds/evolved_quark_parent_scenarios.csv",
+      "scope": "h1Tperp only"
+    },
+    {
+      "axis_id": "bpv20_sivers",
+      "classification": "fit_replicas",
+      "members": 500,
+      "central": "released central",
+      "artifact": "outputs/parent_tmds/ensemble/bpv20_sivers_atlas.pdf",
+      "scope": "flavor-resolved quark and antiquark f1Tperp"
+    },
+    {
+      "axis_id": "jamdiff_transversity",
+      "classification": "fit_replicas",
+      "members": 350,
+      "central": "replica mean",
+      "artifact": "outputs/parent_tmds/ensemble/jamdiff_transversity_atlas.pdf",
+      "scope": "flavor-resolved h1 and WW-derived h1Lperp sensitivity"
+    },
+    {
+      "axis_id": "yang_g1t",
+      "classification": "published_marginals_no_covariance",
+      "members": "central only",
+      "central": "Yang-2024 world-SIDIS central",
+      "artifact": "data/processed/evolved_quark_tmd_Q5.metadata.json",
+      "scope": "u,d g1T; sea-zero is a fit boundary, not a physical-zero claim"
+    },
+    {
+      "axis_id": "quark_wilson_kernel",
+      "classification": "model_parameter",
+      "members": ["screened_soft", "screened_central", "screened_strong"],
+      "central": "screened_central",
+      "artifact": "outputs/parent_tmds/quark_axial_tensor_todd_stages.csv",
+      "scope": "g1LT and g1TT; canonical implementation is the retained-helicity unitary phase"
+    },
+    {
+      "axis_id": "gluon_wilson_kernel_and_color",
+      "classification": "model_parameter",
+      "members": ["f_type", "d_type", "kernel_scale_variations"],
+      "central": "screened adjoint kernel; d/f vertex boundary 5/9",
+      "artifact": "outputs/parent_tmds/gluon_av18_canonical_lfwf_todd.csv",
+      "scope": "six gluon T-odd functions; f/d remain independent observable color channels"
+    },
+    {
+      "axis_id": "polarized_tensor_shadowing",
+      "classification": "inclusive_anchor_plus_model_response",
+      "members": ["spin_weak", "spin_central", "spin_strong"],
+      "central": "spin_central",
+      "artifact": "outputs/parent_tmds/gluon_polarized_tensor_shadowing_scenarios.csv",
+      "scope": "target and parton polarization responses; inclusive U/trace is DPDF anchored"
+    },
+    {
+      "axis_id": "sullivan_pion",
+      "classification": "replica_and_model_product",
+      "members": "JAM21 x axial-mass x Vpion19 x recoil-policy",
+      "central": "Fock-normalized Miller/JAM21/Vpion19 with minimal NNpi counterterm",
+      "artifact": "outputs/parent_tmds/quark_av18_rich_medium.csv",
+      "scope": "active quark f1/f1LL pion correlator plus complete NNpi momentum counterterm"
+    },
+    {
+      "axis_id": "nonnucleonic_cluster",
+      "classification": "upper_limit_sensitivity",
+      "members": ["zero_central", "published_hidden_color_sensitivity"],
+      "central": "zero_central",
+      "artifact": "outputs/parent_tmds/nonnucleonic_cluster_tmds.csv",
+      "scope": "excluded from canonical addition until an intrinsic transverse/color-resolved correlator is sourced"
+    },
+    {
+      "axis_id": "high_k_w_plus_y_completion",
+      "classification": "temporary_model_completion",
+      "members": ["transition_variations_required"],
+      "central": "smooth W-to-positive intrinsic continuation from 1.0 to 1.5 GeV",
+      "artifact": "src/deuteron_wigner/evolved_quark_grid.py",
+      "scope": "internal convolution nodes outside the low-k W-term domain",
+      "replacement_task": "replace by matched W+Y quark TMD calculation"
+    }
+  ],
+  "sum_rule_evidence": {
+    "artifact": "outputs/validation/av18_parent_moment_coverage.json",
+    "valence_number_passed": true,
+    "all_parton_momentum_passed": true,
+    "global_claim_limited_by": "incomplete support for nonconserved individual sea-number moments"
+  }
+}

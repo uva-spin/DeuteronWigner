@@ -1,0 +1,102 @@
+{
+  "schema": "C207-TARGET-AUTHORITY-AUDIT-VALIDATION-V1",
+  "artifact": "target_authority_audit_validation",
+  "package": "C207/HQCDMOMQCOND1",
+  "package_root": "3c4b895ca1c57443ab747c6fce0213ce786a9eb90e014c31c87b4e3ff65b7438",
+  "status": "C207_HQCDMOMQCOND1_TARGET_SOURCE_PROJECTOR_KINEMATICS_AUTHORITY_INCOMPLETE",
+  "plan": "MOMQCOND1-C",
+  "claims": [
+    "authenticated target audit complete",
+    "missing target objects are unavailable, not zero"
+  ],
+  "evidence": [
+    "C140/C168/C198 public records",
+    "C206 package root"
+  ],
+  "physical": false,
+  "target_condition_created": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C207-TARGET-AUDIT-V1",
+    "C140_reference_kinematics": {
+      "schema": "C140-REFERENCE-KINEMATICS-V1",
+      "status": "INCOMPLETE",
+      "target_pattern": "spacelike nonexceptional symmetric candidate",
+      "exactly_representable_in_C43": false,
+      "project_scheme_name": "not RI/SMOM or MOMq without exact adapter",
+      "root": "27e935e46b466d72c1a8eacfdc9877cc95c65953cc2dfbe579673e9035694823"
+    },
+    "C198_target_rows": [
+      {
+        "row_id": "C198-TARGET-CONDITION",
+        "identity_class": "TARGET_CONDITION",
+        "source_authority": [
+          "6e9991693c54871c945c6eb0e0a16b7555029560f078fb590b2fa2a409a0e7d1"
+        ],
+        "left_program": "TARGET_MOMQ_GUARD",
+        "right_program": "not evaluated",
+        "residual_program": "TARGET_CONDITION_NOT_EVALUATED",
+        "variables": [
+          "target_MOMq"
+        ],
+        "resolution": "target-side",
+        "scheme": "MOMq",
+        "holonomy_bc_class": "not selected",
+        "external_domains": "target-side",
+        "projector_domains": "not evaluated",
+        "source_order": "not evaluated",
+        "coupling_degree": "not evaluated",
+        "units": "not evaluated",
+        "analytic_branch": "not evaluated",
+        "counterterm_null_derivative_support": false,
+        "status": "TARGET_CONDITION_NOT_EVALUATED",
+        "missing_object_dependencies": [
+          "C197-ST-9"
+        ],
+        "defining_equation_independent": false,
+        "root": "aa962f43aa13b734bd1704f05204720de1c69a6c1a3969fd131c78c6240e7f57"
+      },
+      {
+        "row_id": "C198-STANDARD-CONDITION",
+        "identity_class": "STANDARD_CONDITION",
+        "source_authority": [
+          "6e9991693c54871c945c6eb0e0a16b7555029560f078fb590b2fa2a409a0e7d1"
+        ],
+        "left_program": "STANDARD_SCHEME_GUARD",
+        "right_program": "not evaluated",
+        "residual_program": "STANDARD_SCHEME_NOT_EVALUATED",
+        "variables": [
+          "standard_scheme"
+        ],
+        "resolution": "standard-side",
+        "scheme": "standard",
+        "holonomy_bc_class": "not selected",
+        "external_domains": "standard-side",
+        "projector_domains": "not evaluated",
+        "source_order": "not evaluated",
+        "coupling_degree": "not evaluated",
+        "units": "not evaluated",
+        "analytic_branch": "not evaluated",
+        "counterterm_null_derivative_support": false,
+        "status": "STANDARD_SCHEME_NOT_EVALUATED",
+        "missing_object_dependencies": [
+          "C197-ST-9"
+        ],
+        "defining_equation_independent": false,
+        "root": "cb2842d6687d19c69a6c0d4eb6a0f1af02951cef170de56ab331046ea5baac08"
+      }
+    ],
+    "C168_target_coefficient": "not available",
+    "exactly_representable_in_C43": false,
+    "target_source_bound": false,
+    "projector_bound": false,
+    "target_coefficient_available": false,
+    "missing_not_zero": true,
+    "root": "8054423d805ffa5f665a8145f1d30d0e706dae126d8eb908c32a270f2cd7557a"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "benchmark": "H-J",
+  "controlled_avoided_crossing": {
+    "eigenvalue_only": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "eigenvalue_order_fails": true,
+    "eigenvalues": [
+      [
+        -0.20396078054371142,
+        0.20396078054371142
+      ],
+      [
+        -0.06403124237432849,
+        0.06403124237432849
+      ],
+      [
+        -0.06403124237432849,
+        0.06403124237432849
+      ],
+      [
+        -0.20396078054371142,
+        0.20396078054371142
+      ]
+    ],
+    "fingerprints": [
+      [
+        0.9805806756909199,
+        -0.98058067569092
+      ],
+      [
+        0.7808688094430302,
+        -0.7808688094430303
+      ],
+      [
+        -0.7808688094430303,
+        0.7808688094430302
+      ],
+      [
+        -0.98058067569092,
+        0.9805806756909199
+      ]
+    ],
+    "intended_end": 1,
+    "overlap_chain": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "principal_angle": 1.4901161193847656e-08,
+    "t": [
+      -0.2,
+      -0.05,
+      0.05,
+      0.2
+    ]
+  },
+  "phase_convention": "LARGEST_COMPONENT_REAL_POSITIVE",
+  "schema_version": "1.0.0",
+  "tracker": "OVERLAP_PLUS_CURRENT_FINGERPRINTS_AND_PRINCIPAL_ANGLES"
+}

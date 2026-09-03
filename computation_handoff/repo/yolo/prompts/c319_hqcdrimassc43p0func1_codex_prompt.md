@@ -1,0 +1,3 @@
+# C319/HQCDRIMASSC43P0FUNC1
+
+Derive and bind the global P0 holonomy functional required to complete C318 validation Gram coefficients. Start from `cabb289fcedb8a367f4859a91d421c67d760a978`, C318 root `91d98fcd2e73538dd0e74451bb5ee7226bb8e293f0c4159c09b05860cecb01d6`, and the committed C318-C319 contract. Preserve P0 as nonzero/unavailable until derived, keep validation nonphysical and K-separated, run source-qualified independent routes, 384 mutations, cumulative tests, safe reload and deterministic builds. Commit once, create one continuation/prompt, atomically advance state, continue, never push, and make no physical or PennyLane claim.

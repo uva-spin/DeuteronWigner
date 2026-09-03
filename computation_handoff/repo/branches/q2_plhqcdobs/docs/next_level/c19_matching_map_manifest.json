@@ -1,0 +1,39 @@
+{
+  "conditions": 8,
+  "holdouts": 3,
+  "jacobian_rank": 5,
+  "max_holdout_residual": 0.0068,
+  "max_matching_residual": 2.2e-13,
+  "mixing_matrix": [
+    [
+      1.04,
+      0.08,
+      0.0
+    ],
+    [
+      -0.02,
+      0.97,
+      0.06
+    ],
+    [
+      0.0,
+      0.11,
+      0.91
+    ]
+  ],
+  "null_directions": 0,
+  "parameters": 5,
+  "plans": [
+    "M0_PLAN_A_PERTURBATIVE_WINDOW",
+    "M0_PLAN_B_HYBRID_STEP_SCALING"
+  ],
+  "schema_version": "1.0.0",
+  "shared_across_projections": true,
+  "singular_values": [
+    1.8,
+    1.2,
+    0.74,
+    0.31,
+    0.09
+  ]
+}

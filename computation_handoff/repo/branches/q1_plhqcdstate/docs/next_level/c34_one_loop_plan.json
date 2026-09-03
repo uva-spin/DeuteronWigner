@@ -1,0 +1,365 @@
+{
+  "art25_reachable": false,
+  "b_holdout": 1.0,
+  "b_points_GeV_inverse": [
+    0.125,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "baryon_number": 0,
+  "c33_operator_id_mapping": {
+    "field_comparisons": [
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "basepoint_equal_after_explicit_adapter": true,
+          "conjugation_equal": true,
+          "direction_equal": true,
+          "path_ordering_equal": true,
+          "representation_equal_after_explicit_adapter": true,
+          "segments_equal_after_explicit_adapter": true
+        },
+        "manifest_line_id": "C33.LINE.N.DAGGER.B",
+        "runtime_path_id": "SN_DAGGER_B"
+      },
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "basepoint_equal_after_explicit_adapter": true,
+          "conjugation_equal": true,
+          "direction_equal": true,
+          "path_ordering_equal": true,
+          "representation_equal_after_explicit_adapter": true,
+          "segments_equal_after_explicit_adapter": true
+        },
+        "manifest_line_id": "C33.LINE.NBAR.B",
+        "runtime_path_id": "SNBAR_B"
+      },
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "basepoint_equal_after_explicit_adapter": true,
+          "conjugation_equal": true,
+          "direction_equal": true,
+          "path_ordering_equal": true,
+          "representation_equal_after_explicit_adapter": true,
+          "segments_equal_after_explicit_adapter": true
+        },
+        "manifest_line_id": "C33.LINE.NBAR.DAGGER.0",
+        "runtime_path_id": "SNBAR_DAGGER_0"
+      },
+      {
+        "all_checks_pass": true,
+        "checks": {
+          "basepoint_equal_after_explicit_adapter": true,
+          "conjugation_equal": true,
+          "direction_equal": true,
+          "path_ordering_equal": true,
+          "representation_equal_after_explicit_adapter": true,
+          "segments_equal_after_explicit_adapter": true
+        },
+        "manifest_line_id": "C33.LINE.N.0",
+        "runtime_path_id": "SN_0"
+      }
+    ],
+    "line_id_map": {
+      "SNBAR_B": "C33.LINE.NBAR.B",
+      "SNBAR_DAGGER_0": "C33.LINE.NBAR.DAGGER.0",
+      "SN_0": "C33.LINE.N.0",
+      "SN_DAGGER_B": "C33.LINE.N.DAGGER.B"
+    },
+    "manifest_operator_id": "C33.SOFT.OP.FOUR_LINE.MODDELTA.v1",
+    "manifest_record_sha256": "33b093c7d2e9d6e35de65e9d08cc4727854dd138bc59e7e4a99ae185eb17e81b",
+    "manifest_source": "docs/next_level/c33_four_line_operator_manifest.json",
+    "mapping_status": "EXECUTABLE_SOURCE_COMPARISON_PASSED",
+    "path_direction_conjugation_basepoints_segments_identical": true,
+    "relation": "SAME_C33_FOUR_LINE_OPERATOR_DIFFERENT_SERIALIZATION_IDENTIFIER",
+    "runtime_operator_id": "C33.FOUR_LINE.SOFT.OPERATOR",
+    "runtime_serialization_sha256": "d1743df47fc86e40588428f38da98fe9342909545fa82e089df9d5bd5ac536d3",
+    "runtime_source": "src/deuteron_wigner/bridge/s0/core.py::default_four_line_operator",
+    "silent_alias": false,
+    "singlet_trace_identical": true,
+    "trace_order_identical_after_explicit_id_map": true,
+    "tree_value": 1.0,
+    "tree_value_identical": true
+  },
+  "collinear_root": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+  "color": {
+    "C_F": "4/3",
+    "N_c": 3,
+    "gauge_group": "SU(3)",
+    "representation": "FUNDAMENTAL",
+    "trace": "SINGLET_1_OVER_NC"
+  },
+  "content_hash": "5c1c1cc57d2d94751f0a1164e56d128fa82df17c2700abc0d3424e08c4c6dd5f",
+  "delta_holdouts": {
+    "combined_diagonal_holdout": null,
+    "minus": "C34.DELTA.MINUS.HOLDOUT",
+    "plus": "C34.DELTA.PLUS.HOLDOUT"
+  },
+  "delta_minus_GeV": [
+    0.00075,
+    0.0015,
+    0.003,
+    0.006
+  ],
+  "delta_plus_GeV": [
+    0.0005,
+    0.001,
+    0.002,
+    0.004
+  ],
+  "delta_plus_minus_varied_independently": true,
+  "delta_probe_schedule": [
+    {
+      "delta_minus_GeV": 0.003,
+      "delta_plus_GeV": 0.002,
+      "fixed_axis": null,
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.CENTRAL",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "CONSTRUCTION",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "NONE"
+    },
+    {
+      "delta_minus_GeV": 0.003,
+      "delta_plus_GeV": 0.004,
+      "fixed_axis": "DELTA_MINUS",
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.PLUS.UP",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "CONSTRUCTION",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "DELTA_PLUS"
+    },
+    {
+      "delta_minus_GeV": 0.003,
+      "delta_plus_GeV": 0.001,
+      "fixed_axis": "DELTA_MINUS",
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.PLUS.DOWN",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "CONSTRUCTION",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "DELTA_PLUS"
+    },
+    {
+      "delta_minus_GeV": 0.006,
+      "delta_plus_GeV": 0.002,
+      "fixed_axis": "DELTA_PLUS",
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.MINUS.UP",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "CONSTRUCTION",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "DELTA_MINUS"
+    },
+    {
+      "delta_minus_GeV": 0.0015,
+      "delta_plus_GeV": 0.002,
+      "fixed_axis": "DELTA_PLUS",
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.MINUS.DOWN",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "CONSTRUCTION",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "DELTA_MINUS"
+    },
+    {
+      "delta_minus_GeV": 0.003,
+      "delta_plus_GeV": 0.0005,
+      "fixed_axis": "DELTA_MINUS",
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.PLUS.HOLDOUT",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "HOLDOUT",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "DELTA_PLUS"
+    },
+    {
+      "delta_minus_GeV": 0.00075,
+      "delta_plus_GeV": 0.002,
+      "fixed_axis": "DELTA_PLUS",
+      "physical_parameter": false,
+      "probe_id": "C34.DELTA.MINUS.HOLDOUT",
+      "provenance": "SOURCE_INDEPENDENT_PROVISIONAL_NUMERICAL_REGULATOR_PROBE",
+      "role": "HOLDOUT",
+      "units": "GeV",
+      "used_in_fit": false,
+      "varied_axis": "DELTA_MINUS"
+    }
+  ],
+  "execution_plan_complete": false,
+  "gauge_holdout": 2.0,
+  "gauges_xi_g": [
+    0.0,
+    1.0,
+    2.0
+  ],
+  "holdout_ids": [
+    "C34.HOLDOUT.N_NBAR_LINE_PAIR_COEFFICIENT",
+    "C34.HOLDOUT.CONJUGATE_LINE_COEFFICIENT",
+    "C34.HOLDOUT.SAME_DIRECTION_CONTRIBUTION",
+    "C34.HOLDOUT.REAL_CONTRIBUTION",
+    "C34.HOLDOUT.VIRTUAL_CONTRIBUTION",
+    "C34.HOLDOUT.WILSON_SELF_ENERGY_COEFFICIENT",
+    "C34.HOLDOUT.CUSP_ENDPOINT_COEFFICIENT",
+    "C34.HOLDOUT.TRANSVERSE_CLOSURE_COEFFICIENT",
+    "C34.HOLDOUT.GAUGE_XI_2",
+    "C34.HOLDOUT.DELTA_PLUS_VARIATION_5E_MINUS4",
+    "C34.HOLDOUT.DELTA_MINUS_VARIATION_7P5E_MINUS4",
+    "C34.HOLDOUT.B_POINT_1P0_GEV_MINUS1",
+    "C34.HOLDOUT.B_TO_ZERO_CONTROLLED_POINT",
+    "C34.HOLDOUT.ZERO_MODE_CONTROL",
+    "C34.HOLDOUT.BASIS_BOUNDARY_COEFFICIENT",
+    "C34.HOLDOUT.UV_COUNTERTERM_COEFFICIENT",
+    "C34.HOLDOUT.RAPIDITY_COUNTERTERM_COEFFICIENT",
+    "C34.HOLDOUT.RAPIDITY_ANOMALOUS_DIMENSION_COEFFICIENT",
+    "C34.HOLDOUT.CONTINUUM_ORACLE_FINITE_CONSTANT",
+    "C34.HOLDOUT.FINITE_REGULATOR_ROUND_TRIP",
+    "C34.HOLDOUT.SOFT_RESOLUTION_C33_RES_3",
+    "C34.HOLDOUT.AUXILIARY_DIRECT_COMPARISON",
+    "C34.HOLDOUT.SOFT_SIDE_ZERO_BIN_OBJECT",
+    "C34.HOLDOUT.ART25_INDEPENDENCE_CONTROL"
+  ],
+  "method_family_frozen_before_coefficients": true,
+  "order": {
+    "C_F_placement": "EXTERNAL_TO_REDUCED_S^[1]",
+    "a_s": "O(a_s)",
+    "a_s_convention": "a_s=alpha_s/(4*pi)=g_s^2/(4*pi)^2",
+    "coefficient_convention": "S=exp[a_s*C_F*S^[1]+O(a_s^2)]",
+    "coupling": "O(g_s^2)",
+    "declared_one_loop_first_omitted_order": "O(a_s^2)",
+    "finite_basis_interaction_normalization_map": "UNRESOLVED_BLOCKING",
+    "leading_missing_order": "O(a_s)"
+  },
+  "parent_root": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+  "plan_id": "C34.S0A.ONE_LOOP.PLAN.v1",
+  "resolutions": [
+    {
+      "L_perp_GeV_inverse": 8.0,
+      "N_omega": 4,
+      "N_perp": 5,
+      "N_y": 6,
+      "Y_max": 3.0,
+      "adjoint_colors": 8,
+      "basis_family": "LOG_ENERGY_RAPIDITY_TRANSVERSE_ORTHONORMAL_CELLS",
+      "c33_source_path": "docs/next_level/c33_soft_basis_trajectory_plan.json",
+      "c33_source_record_sha256": "8add08da21c316a0a8ce0e6eeef2f36371a589c2b23664fc548db8229623155d",
+      "c34_experimental_role": "CONSTRUCTION",
+      "cell_tuple": [
+        4,
+        6,
+        5
+      ],
+      "descriptor_nested_by_support_declared": true,
+      "fixed_total_K": false,
+      "hilbert_dimension": 3841,
+      "implicit_mode_collection_sha256": "77b59602d62ae4bbf65728114d17432aa1e88bf42740f9ec4235f52ab1e066ac",
+      "momentum_cells": 240,
+      "nesting_rank": 1,
+      "omega_max_GeV": 4.0,
+      "omega_min_GeV": 0.01,
+      "one_gluon_states": 3840,
+      "polarizations": 2,
+      "rapidity_regions": [
+        "n",
+        "nbar"
+      ],
+      "refinement_map_proved": false,
+      "resolution_id": "C33.RES.1",
+      "resolution_label": "S0-R1",
+      "rho_0": 0.001
+    },
+    {
+      "L_perp_GeV_inverse": 16.0,
+      "N_omega": 8,
+      "N_perp": 10,
+      "N_y": 12,
+      "Y_max": 6.0,
+      "adjoint_colors": 8,
+      "basis_family": "LOG_ENERGY_RAPIDITY_TRANSVERSE_ORTHONORMAL_CELLS",
+      "c33_source_path": "docs/next_level/c33_soft_basis_trajectory_plan.json",
+      "c33_source_record_sha256": "6b88033ab96494671577a5e3b8db7da65344a8cc5e40a23892653db4670a5445",
+      "c34_experimental_role": "CONSTRUCTION",
+      "cell_tuple": [
+        8,
+        12,
+        10
+      ],
+      "descriptor_nested_by_support_declared": true,
+      "fixed_total_K": false,
+      "hilbert_dimension": 30721,
+      "implicit_mode_collection_sha256": "92522a7d0e61d2e353795f082954d5f8ed7fb09ccad939a2b162e3b823ba4c2d",
+      "momentum_cells": 1920,
+      "nesting_rank": 2,
+      "omega_max_GeV": 8.0,
+      "omega_min_GeV": 0.005,
+      "one_gluon_states": 30720,
+      "polarizations": 2,
+      "rapidity_regions": [
+        "n",
+        "nbar"
+      ],
+      "refinement_map_proved": false,
+      "resolution_id": "C33.RES.2",
+      "resolution_label": "S0-R2",
+      "rho_0": 0.0005
+    },
+    {
+      "L_perp_GeV_inverse": 24.0,
+      "N_omega": 12,
+      "N_perp": 15,
+      "N_y": 18,
+      "Y_max": 9.0,
+      "adjoint_colors": 8,
+      "basis_family": "LOG_ENERGY_RAPIDITY_TRANSVERSE_ORTHONORMAL_CELLS",
+      "c33_source_path": "docs/next_level/c33_soft_basis_trajectory_plan.json",
+      "c33_source_record_sha256": "b64342c670ce5be3a54371968144b4bbb820d96161ca63759fb64f39825cb34a",
+      "c34_experimental_role": "HOLDOUT",
+      "cell_tuple": [
+        12,
+        18,
+        15
+      ],
+      "descriptor_nested_by_support_declared": true,
+      "fixed_total_K": false,
+      "hilbert_dimension": 103681,
+      "implicit_mode_collection_sha256": "c696630eb6d49fada0bbedc27d3d0edc619450fafd32108af1499ac3d089bc05",
+      "momentum_cells": 6480,
+      "nesting_rank": 3,
+      "omega_max_GeV": 12.0,
+      "omega_min_GeV": 0.0033333333333333335,
+      "one_gluon_states": 103680,
+      "polarizations": 2,
+      "rapidity_regions": [
+        "n",
+        "nbar"
+      ],
+      "refinement_map_proved": false,
+      "resolution_id": "C33.RES.3",
+      "resolution_label": "S0-R3",
+      "rho_0": 0.0003333333333333333
+    }
+  ],
+  "schema_version": "1.0.0",
+  "selected_before_results": true,
+  "selected_realization": "S0-FB-EIKONAL-FOCK",
+  "shared_state": false,
+  "status": "C34_ONE_LOOP_METHOD_AND_PROBE_PLAN_FROZEN_EXECUTION_INPUTS_INCOMPLETE",
+  "wilson_trace_order": [
+    "C33.LINE.N.DAGGER.B",
+    "C33.LINE.NBAR.B",
+    "C33.LINE.NBAR.DAGGER.0",
+    "C33.LINE.N.0"
+  ],
+  "zero_mode_policy": "EXCLUDE_PRIMARY_RETAIN_SEPARATE_CONTROL"
+}

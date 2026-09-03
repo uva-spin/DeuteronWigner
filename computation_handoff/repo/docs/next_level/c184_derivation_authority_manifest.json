@@ -1,0 +1,82 @@
+{
+  "C151": {
+    "basis": [
+      "pminus_gluon_kinetic",
+      "pplus_gluon_kinetic",
+      "transverse_gluon_kinetic",
+      "lightfront_orientation",
+      "gauge_residual",
+      "zero_mode_boundary"
+    ],
+    "masslessness_imposed": false,
+    "rank": 6,
+    "root": "bb554add345a10ee66d4aa66b509a240a598ab7b599f86a2428617ac6a8cdf72",
+    "schema": "C151-GLUON-PROJECTOR-V1",
+    "transverse_projector": "C43 finite-basis projector"
+  },
+  "C171": {
+    "blocked_count": 4,
+    "ready_count": 2,
+    "root": "5f8603a6eeac43f6a4e4deac27c918e6be82fd9611c38b18d7749eb29807b88a",
+    "rows": [
+      {
+        "component": "B0_RESOLUTION_COLOR_STATISTICS_CM",
+        "status": "READY"
+      },
+      {
+        "component": "B0_FREE_OPERATORS_RESOLVENT_INTERFACE",
+        "status": "READY_SYMBOLIC"
+      },
+      {
+        "component": "G_QQBAR_PROJECTION",
+        "status": "SOURCE_OWNER_BOUND_PROJECTION_INCOMPLETE"
+      },
+      {
+        "component": "G_GG_PROJECTION",
+        "status": "SOURCE_OWNER_BOUND_PROJECTION_INCOMPLETE"
+      },
+      {
+        "component": "DIRECT_INSTANTANEOUS_TADPOLE",
+        "status": "REQUIRES_DEDICATED_CALCULATION"
+      },
+      {
+        "component": "GHOST_RESIDUAL_GAUGE",
+        "status": "INCOMPLETE"
+      }
+    ],
+    "schema": "C171-B0-COMPONENTWISE-V1"
+  },
+  "C183": {
+    "root": "88b8678759ec735633f004a0eab90174b70136826d723f0dfbac752df4db4f0e",
+    "row": {
+      "Cartan_conjugacy_Weyl": true,
+      "SU3": true,
+      "capsule_schema": true,
+      "center_BC": true,
+      "count_once": true,
+      "cut_PV": true,
+      "decision": "B0_CONDITIONAL_SU3_HOLONOMY_CAPSULE_AUTHORITY_READY_MATCHING_NEXT",
+      "derivatives": true,
+      "fixtures": true,
+      "frame_open_color": true,
+      "full_link": true,
+      "gauge": true,
+      "ghost": true,
+      "next": "C184/HQCDLFGMATCHCALC2",
+      "physical_selection": "unavailable/not selected",
+      "representation": true,
+      "support_kernel": true,
+      "transition": true
+    },
+    "schema": "C183-B0-RELEASE-V1"
+  },
+  "C184": {
+    "next": "C185/HQCDB1HIGHERFOCK1",
+    "reason": "request 4 B0 proper two-point closes; request 6 B0 coupling ledger closes with B1/full-ST remainder",
+    "root": "a060801687b62d31336a12d27283cfb38dbb83069c29cce54569bdc40a5a4b1b",
+    "schema": "C184-PLAN-V1",
+    "selected_plan": "LFGMATCHCALC2-B",
+    "status": "C184_C183_B0_C43_TRANSVERSE_GLUON_PROPER_TWO_POINT_READY_COUPLING_COMPONENT_PARTIAL"
+  },
+  "root": "eb1eb38a9d516ad78aa5324893296d972f25b834af82b7c4d961b4ce3a7f7a1f"
+}

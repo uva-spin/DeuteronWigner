@@ -1,0 +1,8 @@
+# C241/HQCDRIQUARKFIXEDKV2HO1 implementation report
+
+Status: C241_THREE_V2_COMPLEMENT_ANGULAR_JZ_AND_TM_CM_PROJECTION_SCHEMAS_READY_RADIAL_CONTACT_DISTRIBUTION_INCOMPLETE
+Plan: RIQUARKFIXEDKV2HO1-D
+Baseline: fe410546f97121a8a250be699b963295510d2ced
+C241 root: 9fabebf1d9fa6fd5ddd27cc34544e805fc6a9acafe4e86a48455fcd1bc1b31ea
+
+C241 closes angular/Jz and TM/CM projection schemas for three V2 families. Radial contact projections remain C242 pending distribution/regulator authority.

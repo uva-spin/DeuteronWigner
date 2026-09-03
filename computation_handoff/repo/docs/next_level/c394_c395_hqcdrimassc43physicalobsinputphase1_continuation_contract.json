@@ -1,0 +1,23 @@
+{
+  "schema": "C394-C395-HQCDRIMASSC43PHYSICALOBSINPUTPHASE1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C394/HQCDRIMASSC43PHYSICALBOUNDARYPHASE1",
+  "from_status": "C394_SOURCE_QUALIFIED_CONDITIONAL_BOUNDARY_HOLONOMY_FAMILY_AND_RESOLUTION_PARAMETER_SCHEMA_READY_OBSERVABLE_ENSEMBLE_RECORD_NEXT",
+  "from_plan": "PHYSICALBOUNDARYPHASE1-B",
+  "from_package_root": "af6009d5514ff508a716979dd861c84167346905b5c62d7743fb4145cb4f178e",
+  "next_job": "C395/HQCDRIMASSC43PHYSICALOBSINPUTPHASE1",
+  "next_frontier": {
+    "object_id": "C394-C43-JMY-SIDIS-OBSERVABLE-DATASET-ENSEMBLE-AUTHORITY",
+    "exact_missing_object": "bind a source-qualified SIDIS observable/dataset record supplying correlated kinematics, scales, finite-volume acceptance, covariance, and normalized ensemble membership"
+  },
+  "authority_discontinuity": "new physical observable and experimental dataset/input authority",
+  "constraints": {
+    "C391_C394_frozen": true,
+    "dataset_primary_or_official": true,
+    "covariance_not_diagonalized_without_authority": true,
+    "ensemble_weights_not_defaulted": true,
+    "K9_K11_K13_separate": true,
+    "Q0_Q1_Q2_frozen": true,
+    "activation_gate_status": "NOT_READY",
+    "push": false
+  }
+}

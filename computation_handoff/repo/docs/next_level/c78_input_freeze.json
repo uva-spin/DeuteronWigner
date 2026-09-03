@@ -1,0 +1,48 @@
+{
+  "C55": {
+    "direct_status": "DIRECT_RETAINED_OPERATOR",
+    "monomial": [
+      "b_dagger",
+      "a_dagger",
+      "a",
+      "b"
+    ],
+    "ordering": "b_dagger a_dagger a b"
+  },
+  "C57": {
+    "operation_order": "CORRESPONDING_PROPAGATING_GRAPH_PROJECT",
+    "plan": "IFREG-CORRESPONDING-PROPAGATING-SUPPORT",
+    "post_construction_only": true,
+    "status": "C57_SOURCE_DERIVED_IFERM_FIELD_REGULATOR_READY"
+  },
+  "C58": {
+    "ordered_joint_support": "IFNORM2-ORDERED-JOINT-SUPPORT",
+    "qg_scope": "IFNORM2-SECTOR-SPECIFIC-COUNTERTERM-ONLY",
+    "separate_operator_block": true
+  },
+  "C74": {
+    "columns": 3,
+    "records": 72,
+    "rows": 24
+  },
+  "C77": {
+    "component_support": "exact terminal C64/C74 composition",
+    "crosswalk_sha256": "92e40796cc8f9cf11edd959d47d8e70c92e743f6ab738b5821ef84bb8d85f327",
+    "dimensions": {
+      "K11_2_N10_b0.45": [
+        9900,
+        900
+      ],
+      "K13_2_N12_b0.50": [
+        24024,
+        1584
+      ],
+      "K9_2_N8_b0.40": [
+        3360,
+        448
+      ]
+    },
+    "package_status": "C77_EXACT_SOURCE_CHAIN_DERIVED_QG_EMBEDDING_READY"
+  },
+  "status": "C78_INPUTS_FROZEN_COMPLETE"
+}

@@ -1,0 +1,122 @@
+{
+  "root": "007bcecb85caad687955a2201ceb200662ed4d51d166e88fdba861ed5983e36c",
+  "rows": [
+    {
+      "C176_owner_ids": [
+        "C176_LEAKAGE_K9",
+        "C176_LEAKAGE_K11",
+        "C176_LEAKAGE_K13"
+      ],
+      "C179_paths": [
+        "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "C180_conversion_ids": [
+        "C180_AFFINE_TO_XY",
+        "C180_AFFINE_TO_YX"
+      ],
+      "boundary_domain_root": "C181_BOUNDARY_MODE_ROOT",
+      "capsule_id": "C181-ORDER-SENSITIVE-SOURCE-SCOPE-EXECUTABLE-LINK-EVALUATION",
+      "cut_side": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "future_past_PV": [
+        "DIS_FUTURE",
+        "DY_PAST",
+        "ANTISYMMETRIC_OR_PV"
+      ],
+      "holdouts": [
+        "source scope not HO",
+        "holonomy separate",
+        "ghost boundary separate",
+        "PQ != QP",
+        "no physical endpoint",
+        "no Wilson coefficient"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_adjoint": "OPEN_ADJOINT_SU3",
+      "parent_C169_request": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "required_routes": [
+        "ORD-A",
+        "ORD-B",
+        "ORD-C",
+        "ORD-D",
+        "ORD-E",
+        "ORD-F"
+      ],
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "retained_domain_roots": [
+        "C180_VECTOR_MODE_ROOT",
+        "C180_ORDERED_PAIR_ROOT"
+      ],
+      "status": "ORDER_SENSITIVE_SOURCE_SCOPE_REMAINDER_REQUIRES_NEXT_EXECUTABLE_LINK"
+    },
+    {
+      "C176_owner_ids": [
+        "C176_LEAKAGE_K9",
+        "C176_LEAKAGE_K11",
+        "C176_LEAKAGE_K13"
+      ],
+      "C179_paths": [
+        "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "C180_conversion_ids": [
+        "C180_AFFINE_TO_XY",
+        "C180_AFFINE_TO_YX"
+      ],
+      "boundary_domain_root": "C181_BOUNDARY_MODE_ROOT",
+      "capsule_id": "C181-ORDER-SENSITIVE-SOURCE-SCOPE-EXECUTABLE-LINK-EVALUATION",
+      "cut_side": [
+        "C178_CUT_SIDE_PLUS",
+        "C178_CUT_SIDE_MINUS"
+      ],
+      "future_past_PV": [
+        "DIS_FUTURE",
+        "DY_PAST",
+        "ANTISYMMETRIC_OR_PV"
+      ],
+      "holdouts": [
+        "source scope not HO",
+        "holonomy separate",
+        "ghost boundary separate",
+        "PQ != QP",
+        "no physical endpoint",
+        "no Wilson coefficient"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_adjoint": "OPEN_ADJOINT_SU3",
+      "parent_C169_request": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "ORD-A",
+        "ORD-B",
+        "ORD-C",
+        "ORD-D",
+        "ORD-E",
+        "ORD-F"
+      ],
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "retained_domain_roots": [
+        "C180_VECTOR_MODE_ROOT",
+        "C180_ORDERED_PAIR_ROOT"
+      ],
+      "status": "ORDER_SENSITIVE_SOURCE_SCOPE_REMAINDER_REQUIRES_NEXT_EXECUTABLE_LINK"
+    }
+  ],
+  "schema": "C181-MISSING-BOUNDARY-OBJECT-V1"
+}

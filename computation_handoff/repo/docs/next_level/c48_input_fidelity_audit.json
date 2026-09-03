@@ -1,0 +1,143 @@
+{
+  "all_required_runtime_hashes_match": true,
+  "baseline": "055f2a3dd5a651cc687f532f4c0ea58d885dd585",
+  "c40": "EXECUTABLE_METHOD_ORACLE_ONLY; not consumed",
+  "c43": "C43_GAUGE_FIXED_ACTION_READY_FOR_BASIS_PROJECTION",
+  "c45": "C45_SOURCE_DERIVED_MODE_PROJECTION_READY",
+  "c47": "C47_SOURCE_DERIVED_PHYSICAL_BASIS_ASSEMBLY_READY",
+  "contract_rows": {
+    "ALL_MODE_CANONICAL_KERNEL": "SOURCE_COMPLETE_EXECUTABLE",
+    "FINITE_VOLUME_FREE_OPERATOR_NORMALIZATION": "SOURCE_COMPLETE_EXECUTABLE",
+    "LOCAL_BOUNDARY_ZERO_MODE_FUNCTIONAL": "SOURCE_COMPLETE_EXECUTABLE",
+    "X_SCALED_QG_CM_PROJECTION": "SOURCE_COMPLETE_EXECUTABLE"
+  },
+  "generator_code_sha256": "03264e4326430b2ce48011a64613a837ea8be26d205f3e9306865a04f6d97785",
+  "interface": {
+    "L": "symbolic; canonical tuple retains L^(-1/2)",
+    "basis_order": "q: (K,CM0,h,color); qg: (partition,xq,xg,nrel,mrel,NCM=0,MCM=0,hq,hg,triplet)",
+    "forbidden": "no Wilson/bilocal/one-loop action",
+    "insertion": "C48 applies SU3 and gs to C47 kinematic tuple, then generates adjoint",
+    "operator": "M2=2P+P--Pperp2",
+    "selection": "C47 tuple table; P0/Q0; CM isometry",
+    "status": "READY_FOR_C48_LOCAL_MATRIX_ASSEMBLY_ONLY"
+  },
+  "required_runtime_records": [
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "3b7ca7bbb23c1cd86994570460fafaa92a0228880e2127bc35155f5c84c7aa75",
+      "hash_match": true,
+      "name": "free_functional_K9_2_N8_b0.40",
+      "observed_sha256": "3b7ca7bbb23c1cd86994570460fafaa92a0228880e2127bc35155f5c84c7aa75",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/free_functional_K9_2_N8_b0.40.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "8a5df5a7bc649aa505f8a434b684b71a1c0640d45ceae508446cabaad117a684",
+      "hash_match": true,
+      "name": "free_functional_K11_2_N10_b0.45",
+      "observed_sha256": "8a5df5a7bc649aa505f8a434b684b71a1c0640d45ceae508446cabaad117a684",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/free_functional_K11_2_N10_b0.45.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "0a908747a38f0b5d8686d10e6075b12252bd5adc88750635a68774a533c1dbe3",
+      "hash_match": true,
+      "name": "free_functional_K13_2_N12_b0.50",
+      "observed_sha256": "0a908747a38f0b5d8686d10e6075b12252bd5adc88750635a68774a533c1dbe3",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/free_functional_K13_2_N12_b0.50.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "4aeb27a352fe3446c2b503656e56935fc8bd0f8b6c2bb70f5163f339927410a0",
+      "hash_match": true,
+      "name": "canonical_kernel_K9_2_N8_b0.40",
+      "observed_sha256": "4aeb27a352fe3446c2b503656e56935fc8bd0f8b6c2bb70f5163f339927410a0",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/canonical_kernel_K9_2_N8_b0.40.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "c3e04306e15d903a5dbca560b0504a08f186e2738d04ccb3cbbe96287d470548",
+      "hash_match": true,
+      "name": "canonical_kernel_K11_2_N10_b0.45",
+      "observed_sha256": "c3e04306e15d903a5dbca560b0504a08f186e2738d04ccb3cbbe96287d470548",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/canonical_kernel_K11_2_N10_b0.45.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "6aab9b8380ee20404ea20dde43986a391cdbbf85c98cff7d17669be6456997ba",
+      "hash_match": true,
+      "name": "canonical_kernel_K13_2_N12_b0.50",
+      "observed_sha256": "6aab9b8380ee20404ea20dde43986a391cdbbf85c98cff7d17669be6456997ba",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/canonical_kernel_K13_2_N12_b0.50.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "b2d18ad746e8aed5a40a47fcaad8663ed3c39ba76227b24bf87e0f2dc4b4f21b",
+      "hash_match": true,
+      "name": "P0",
+      "observed_sha256": "b2d18ad746e8aed5a40a47fcaad8663ed3c39ba76227b24bf87e0f2dc4b4f21b",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/P0.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "bc0b7f52f230e4ed70ea756b460784d7e3fb9f33ba07c11ff2900857b477b3cb",
+      "hash_match": true,
+      "name": "Q0",
+      "observed_sha256": "bc0b7f52f230e4ed70ea756b460784d7e3fb9f33ba07c11ff2900857b477b3cb",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/Q0.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "037833eb741ba83bb8c353d967a97782c94b6c906ff7477fa9269848c873166e",
+      "hash_match": true,
+      "name": "inverse_d1",
+      "observed_sha256": "037833eb741ba83bb8c353d967a97782c94b6c906ff7477fa9269848c873166e",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/inverse_d1.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "f64c4c647093d8bfd9771437925a8bfa60adaf5c8a5798ff8ded509399ad3a11",
+      "hash_match": true,
+      "name": "inverse_d2",
+      "observed_sha256": "f64c4c647093d8bfd9771437925a8bfa60adaf5c8a5798ff8ded509399ad3a11",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/inverse_d2.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "expected_sha256": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+      "hash_match": true,
+      "name": "qg_triplet_isometry",
+      "observed_sha256": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+      "present": true,
+      "runtime_path": "data/runtime/c47_basis1/qg_triplet_isometry.npy",
+      "source_link": "C47 numerical object inventory plus C47 source-relevance matrix"
+    }
+  ],
+  "source_derived_functionals": [
+    "C47 free_functional (not a final matrix)",
+    "C47 canonical_kernel (not a final SU(3) vertex)",
+    "C47 inverse_derivative_functionals",
+    "C47 CM-ground TM isometries and comparison maps"
+  ],
+  "status": "C48_INPUT_FIDELITY_AUDIT_COMPLETE"
+}

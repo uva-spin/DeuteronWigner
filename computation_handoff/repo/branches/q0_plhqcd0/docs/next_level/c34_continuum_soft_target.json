@@ -1,0 +1,36 @@
+{
+  "content_hash": "fecdf6455bebb7e070de6eb763c4f96a5545a95621c276df147d22ba91da8e87",
+  "finite_basis_identity": false,
+  "graph_level_reconstruction": false,
+  "graph_level_reconstruction_status": "NOT_PERFORMED_SOURCE_FINAL_RESULT_ONLY",
+  "independent_direct_integral_reconstruction": false,
+  "operator_geometry": "FOUR_LINE_FUNDAMENTAL_SINGLET",
+  "rapidity_regulator": "MODIFIED_DELTA",
+  "schema_version": "1.0.0",
+  "source_expression": "S^[1]=-4/eps^2+2*L_mu^2-(2*d^(1,1)/C_F)*(1/eps+L_mu)*l_delta+pi^2/3+O(eps)",
+  "source_expression_sha256": "7b58729fb78ea21c22151d3574f3e732898babc038902bcbfd118ec77e77a88f",
+  "source_formulae": {
+    "B_definition_eq8": "B=b_T^2/4",
+    "L0_definition_eq12": "L0=ln(B*|delta|/exp(-2*gamma_E))",
+    "L_mu_definition_pages2_5": "L_mu=ln(mu^2*b_T^2*exp(2*gamma_E)/4)=ln(mu^2*B*exp(2*gamma_E))",
+    "coupling_definition_eq7": "a_s=alpha_s/(4*pi)=g_s^2/(4*pi)^2",
+    "d11_definition_eq13": "d^(1,1)=2*C_F=Gamma_0/2",
+    "exact_one_loop_eq11": "S^[1]=-4*mu^(2*eps)*B^eps*Gamma(-eps)*(L0-psi(-eps)-gamma_E)",
+    "expanded_one_loop_eq13": "S^[1]=-4/eps^2+2*L_mu^2-(2*d^(1,1)/C_F)*(1/eps+L_mu)*l_delta+pi^2/3+O(eps)",
+    "exponentiation_eq7": "S_tilde=exp[a_s*C_F*(S^[1]+a_s*S^[2]+...)]",
+    "l_delta_definition_eq13": "l_delta=ln(mu^2/|delta_plus*delta_minus|)",
+    "modified_delta_product_eq8": "delta=+/- delta_plus*delta_minus"
+  },
+  "source_locators": {
+    "L0": "arXiv:1511.05590v2 p.5 Eq.(12)",
+    "L_X_general": "arXiv:1511.05590v2 p.2",
+    "delta_and_B": "arXiv:1511.05590v2 p.4 Eq.(8)",
+    "exact_one_loop": "arXiv:1511.05590v2 p.5 Eq.(11)",
+    "expanded_one_loop": "arXiv:1511.05590v2 p.5 Eq.(13)",
+    "exponentiation_and_coupling": "arXiv:1511.05590v2 p.4 Eq.(7)"
+  },
+  "status": "SOURCE_QUALIFIED_FINAL_FORMULA_TRANSCRIPTION_NOT_INDEPENDENT_ORACLE",
+  "target_id": "C34.CONTINUUM.MODDELTA.MSBAR.ONE_LOOP.v1",
+  "used_as_finite_basis_result": false,
+  "uv_scheme": "DIMENSIONAL_REGULATION_MSBAR"
+}

@@ -1,0 +1,27 @@
+{
+  "analytic_damped_ward_identity": "i*omega*I_L-[exp((-delta+i*omega)*L)-1]=delta*I_L",
+  "analytic_damped_ward_identity_residual": 1.0103182026100663e-16,
+  "content_hash": "f96b4877e90904086b31e1f9ea9ec68462cbd9f7e4fb596f262fa8c9fb15edaa",
+  "finite_mode_collection_available": false,
+  "finite_segment_factor": {
+    "imag": 1.7957026246835457,
+    "real": 1.1700735564928086
+  },
+  "gauge_defect_hidden": false,
+  "infinite_segment_factor": {
+    "imag": 1.4000000000000001,
+    "real": 0.20000000000000007
+  },
+  "probe": {
+    "delta": 0.1,
+    "length": 3.0,
+    "omega": 0.7
+  },
+  "schema_version": "1.0.0",
+  "status": "FINITE_DELTA_GAUGE_DEFECT_EXPLICIT_MODE_ACTION_UNAVAILABLE",
+  "ward_bulk_defect": {
+    "imag": 0.1795702624683546,
+    "real": 0.11700735564928078
+  },
+  "ward_bulk_defect_abs": 0.2143273207945992
+}

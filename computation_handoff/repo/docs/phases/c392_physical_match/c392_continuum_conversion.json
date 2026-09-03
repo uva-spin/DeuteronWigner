@@ -1,0 +1,23 @@
+{
+  "package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "physical": false,
+  "plan": "PHYSICALMATCHPHASE1-B",
+  "record": {
+    "coefficient_status": "SYMBOLIC_CALLER_BOUND_AUTHENTICATED_RECORD_REQUIRED",
+    "composition": "C_A<-C=C_A<-B C_B<-C",
+    "formula": "F_standard=C_standard<-project(mu,zeta,rho)*F_project",
+    "inverse": "F_project=C^-1*F_standard on det(C)!=0 domain",
+    "next_object": "C392-C43-STANDARD-SCHEME-RUNNING-THRESHOLD-ACTIVE-FLAVOR-AUTHORITY",
+    "scheme_variations": [
+      "projector_test_family",
+      "rho_family",
+      "mu_family",
+      "conversion_route"
+    ],
+    "source_scheme": "DW-JMY-COMMON-IR-PROJECT-v1",
+    "standard_path_exists": true,
+    "target_scheme": "STANDARD_SCHEME_CALLER_BOUND",
+    "zero_assumed": false
+  },
+  "status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT"
+}

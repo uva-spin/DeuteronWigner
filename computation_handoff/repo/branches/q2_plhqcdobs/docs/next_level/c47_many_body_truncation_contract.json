@@ -1,0 +1,13 @@
+{
+  "CM_plan": "projection keeps NCM=MCM=0 after exact shell transform",
+  "rule": "sum_i(2n_i+|m_i|+1)<=Nmax; for qg total Cartesian excitation <=Nmax-2",
+  "separate_labels": [
+    "single-particle quanta",
+    "intrinsic quanta",
+    "CM quanta",
+    "Jz",
+    "K"
+  ],
+  "source": "1911.10762v1 Eq. (32); 1311.2980v1 Eq. (10)",
+  "status": "SOURCE_COMPLETE_EXECUTABLE"
+}

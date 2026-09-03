@@ -1,0 +1,143 @@
+{
+  "all_passed": true,
+  "benchmarks": [
+    {
+      "active_slots": [
+        0
+      ],
+      "analytic_oracle": "W=1",
+      "benchmark_id": "C3.BENCH_A",
+      "numerical_result": 1.0,
+      "operator_id": "vector-current-zero-rescattering",
+      "passed": true,
+      "production_authorization": false,
+      "provenance_root": "c3:benchmark:A",
+      "recoil_convention": "SYMMETRIC_XI0",
+      "residuals": {
+        "color": 0.0,
+        "exact_algebra": 0.0,
+        "finite_domain": 0.0,
+        "floating": 0.0,
+        "grid_refinement": 0.0,
+        "hermiticity": 0.0,
+        "number_current": 0.0,
+        "projector": 0.0,
+        "quadrature": 0.0
+      },
+      "sector_content": "one quark",
+      "source_target_fibers": "symmetric xi=0",
+      "state_member_id": "C3:A:POINT",
+      "tolerances": {
+        "floating": 1e-15
+      }
+    },
+    {
+      "active_slots": [
+        0
+      ],
+      "analytic_oracle": "N^2 exp[-(k^2+(1-x)^2 Delta^2/4)/(beta^2 x(1-x))]",
+      "benchmark_id": "C3.BENCH_B",
+      "numerical_result": "deterministic 3-point grid",
+      "operator_id": "diagonal-scalar-overlap",
+      "passed": true,
+      "production_authorization": false,
+      "provenance_root": "c3:benchmark:B",
+      "recoil_convention": "SYMMETRIC_XI0",
+      "residuals": {
+        "color": 0.0,
+        "exact_algebra": 0.0,
+        "finite_domain": 0.0,
+        "floating": 8.881784197001252e-16,
+        "grid_refinement": 0.0,
+        "hermiticity": 0.0,
+        "number_current": 0.0,
+        "projector": 0.0,
+        "quadrature": 0.0
+      },
+      "sector_content": "quark plus scalar spectator",
+      "source_target_fibers": "symmetric xi=0",
+      "state_member_id": "C3:B:GAUSSIAN",
+      "tolerances": {
+        "floating": 2e-14
+      }
+    },
+    {
+      "active_slots": [
+        0
+      ],
+      "analytic_oracle": "outer-product helicity density and OAM interference",
+      "benchmark_id": "C3.BENCH_C",
+      "numerical_result": {
+        "complex_phase_odd": 0.28571428571428564,
+        "real_phase_odd": 0.0
+      },
+      "operator_id": "active-helicity-matrix",
+      "passed": true,
+      "production_authorization": false,
+      "provenance_root": "c3:benchmark:C",
+      "recoil_convention": "SYMMETRIC_XI0",
+      "residuals": {
+        "color": 0.0,
+        "exact_algebra": 0.0,
+        "finite_domain": 0.0,
+        "floating": 0.0,
+        "grid_refinement": 0.0,
+        "hermiticity": 0.0,
+        "number_current": 2.220446049250313e-16,
+        "projector": 0.0,
+        "quadrature": 0.0
+      },
+      "sector_content": "spinor plus spectator; Lz=0,+1,-1",
+      "source_target_fibers": "symmetric xi=0",
+      "state_member_id": "C3:C:SPINOR_OAM",
+      "tolerances": {
+        "hermiticity": 1e-14,
+        "projector": 1e-14
+      }
+    },
+    {
+      "active_slots": [
+        0,
+        1,
+        2
+      ],
+      "analytic_oracle": "epsilon_abc/sqrt(6)",
+      "benchmark_id": "C3.BENCH_D",
+      "numerical_result": {
+        "color_norm": 1.0000000000000002,
+        "neutron_counts": {
+          "d": 2,
+          "u": 1
+        },
+        "proton_counts": {
+          "d": 1,
+          "u": 2
+        }
+      },
+      "operator_id": "sum active quark vector currents",
+      "passed": true,
+      "production_authorization": false,
+      "provenance_root": "c3:benchmark:D",
+      "recoil_convention": "SYMMETRIC_XI0",
+      "residuals": {
+        "color": 0.0,
+        "exact_algebra": 0.0,
+        "finite_domain": 0.0,
+        "floating": 0.0,
+        "grid_refinement": 0.0,
+        "hermiticity": 0.0,
+        "number_current": 0.0,
+        "projector": 0.0,
+        "quadrature": 0.0
+      },
+      "sector_content": "uud color singlet",
+      "source_target_fibers": "symmetric xi=0",
+      "state_member_id": "C3:D:PROTON_COLOR_SINGLET",
+      "tolerances": {
+        "color": 3e-16,
+        "number_current": 0.0
+      }
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "C105-BLOCKER-REPORT-V1",
+  "status": "C105_BLOCKED_C104_PROJECTED_COEFFICIENT_VALUES_UNAVAILABLE",
+  "failing_object": "C104 canonical projected coefficient authority",
+  "source": "src/deuteron_wigner/bridge/ifpersist4/core.py:canonical_record",
+  "observed_fields": {"projected_coefficient.expression": "symbolic MULTIPLY(CONJUGATE(...),...)", "projected_coefficient.value": null, "coefficient_bound.value": null},
+  "affected_pairs": 154830,
+  "affected_logical_records": 891992018,
+  "coordinate_and_kernel_authority": "C80 verified and not consumed",
+  "scientific_consequence": "A coefficient-times-C80-kernel product and contact operator would require fabrication or forbidden upstream reconstruction.",
+  "forbidden_workarounds": ["set coefficient to zero", "use C53/C58 values", "reconstruct C77/C78", "fit or rescale", "choose physical g_s", "invent coefficient bound"],
+  "next_authority_required": "A descendant C104-compatible package exposing numeric projected coefficients and certified bounds per logical record."
+}

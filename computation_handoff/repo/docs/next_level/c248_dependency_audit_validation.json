@@ -1,0 +1,47 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "dependency_audit_validation",
+  "authority_record": {
+    "count": 5,
+    "incomplete": 3,
+    "ready": 2,
+    "root": "fdb4afe2ecf828ce626c54c81632f8f9ecc609c22563a524767a53be979d52c2",
+    "rows": [
+      {
+        "authority": "C240 C127 primitive",
+        "complement_ready": true,
+        "factor": "C43/C114 current operator"
+      },
+      {
+        "authority": "C115/C126 symbolic factor IDs",
+        "complement_ready": true,
+        "factor": "current product/sector programs"
+      },
+      {
+        "authority": "C125/C126 rank and retained target identities",
+        "complement_ready": false,
+        "factor": "finite retained witness values"
+      },
+      {
+        "authority": "C127 resolution and retained matrix-index API",
+        "complement_ready": false,
+        "factor": "assembled current block"
+      },
+      {
+        "authority": "UNAVAILABLE_NOT_ZERO",
+        "complement_ready": false,
+        "factor": "caller complement witness-coordinate map"
+      }
+    ]
+  },
+  "complement_kernel_ready": false,
+  "package_root": "f3b1f7a66cfa8399133e1aea06b82f633adfca3ec6a37a542ad53ade8eb09586",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CURRENT1-D",
+  "schema": "C248-DEPENDENCY-AUDIT-VALIDATION-V1",
+  "status": "C248_C127_COMPLEMENT_PARAMETERIZATION_DEPENDENCY_AUDIT_READY_RETAINED_ID_FREE_WITNESS_MAP_INCOMPLETE"
+}

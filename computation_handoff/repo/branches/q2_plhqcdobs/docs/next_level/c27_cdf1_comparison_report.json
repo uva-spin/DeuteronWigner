@@ -1,0 +1,73 @@
+{
+  "A_native": 3.4394876804377352,
+  "B_existing_c27": {
+    "exact_match": false,
+    "immutable_points_inspected": [
+      {
+        "Q_GeV": 6.0,
+        "qT_GeV": 0.5,
+        "reproduced_value": 3.863482723682366,
+        "residual": null,
+        "source_value": null,
+        "sqrt_s_GeV": 38.8,
+        "stable_id": "C27.DY.FIXED_TARGET",
+        "tier": "SOURCE_REGENERATED_OUTPUT",
+        "units": "ARTEMIDE binless output convention",
+        "y": 0.0
+      },
+      {
+        "Q_GeV": 91.1876,
+        "qT_GeV": 2.0,
+        "reproduced_value": 0.0039319388449501865,
+        "residual": null,
+        "source_value": null,
+        "sqrt_s_GeV": 13000.0,
+        "stable_id": "C27.DY.COLLIDER_Z",
+        "tier": "SOURCE_REGENERATED_OUTPUT",
+        "units": "ARTEMIDE binless output convention",
+        "y": 0.0
+      },
+      {
+        "Q_GeV": 91.1876,
+        "qT_GeV": 3.0,
+        "reproduced_value": 0.0023250790026175814,
+        "residual": null,
+        "source_value": null,
+        "sqrt_s_GeV": 8000.0,
+        "stable_id": "C27.DY.RAPIDITY_Z",
+        "tier": "SOURCE_REGENERATED_OUTPUT",
+        "units": "ARTEMIDE binless output convention",
+        "y": 2.0
+      }
+    ],
+    "reason": "all three C27 points differ in s and/or bin-integrated observable definition",
+    "value": null
+  },
+  "C_controlled_oracle": {
+    "bin_center_differential_raw": 0.002541444993382964,
+    "compared_to_integrated": false,
+    "native_residual": 0.0,
+    "raw_native_engine_bin_integral": 1.7197438402188676,
+    "raw_times_factor": 3.4394876804377352,
+    "theory_factor": 2.0
+  },
+  "absolute_data_difference": 0.08948768043773514,
+  "author_email_needed": false,
+  "classification": "DIAGNOSTIC_ONLY",
+  "determinism": {
+    "clean_reinitialization_residual": 0.0,
+    "restart_residual": 0.0,
+    "serial_residual": 0.0
+  },
+  "email_qualification": "Only needed if an author-frozen target/tolerance or explicit historical environment attestation is required.",
+  "experimental": 3.35,
+  "native_minus_experiment": 0.08948768043773514,
+  "point_id": "CDF1.0",
+  "public_repository_sufficiency": "SUFFICIENT_FOR_UNAMBIGUOUS_AUTHOR_INDEPENDENT_NATIVE_DIAGNOSTIC",
+  "relative_data_difference": 0.026712740429174667,
+  "remaining_ambiguity": [
+    "no author-frozen expected numerical output or tolerance",
+    "public ART25 commit postdates ART25 fit payload and exact historical engine/DataProcessor pairing is inferred from explicit ART25 directory and v3.01 interface compatibility"
+  ],
+  "schema_version": "1.0.0"
+}

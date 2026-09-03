@@ -1,0 +1,32 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "819096c7fcfc650bc9101ff0aad5cbb9c61e53a33ca3f8769b47030c5a26be73",
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "rows": [
+    {
+      "from": "off_light_cone",
+      "status": "SOURCE_SCOPED_RELATION_ONLY",
+      "to": "finite_length"
+    },
+    {
+      "from": "finite_length",
+      "status": "SOURCE_SCOPED_RELATION_ONLY",
+      "to": "exponential"
+    },
+    {
+      "from": "modified_delta",
+      "status": "FORBIDDEN_NONIDENTICAL",
+      "to": "C36_microscopic"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "C203-PARAMETER-VALIDATION-V1",
+  "artifact": "parameter_validation",
+  "package": "C203/HQCDBRST1",
+  "package_root": "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e",
+  "status": "C203_C202_LOCAL_P0_BRST_SOURCE_IDENTITY_AUTHORITY_READY_BOUNDARY_GLOBAL_FRONTIER_EXPLICIT",
+  "plan": "BRST1-B",
+  "claims": [
+    "C203 parameter_validation evidence is immutable data-only metadata",
+    "local-P0 scope is explicit and boundary/global scope is not promoted"
+  ],
+  "evidence": [
+    "C203 public API and runtime package root",
+    "C202 read-only handoff"
+  ],
+  "physical": false,
+  "full_global_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false
+}

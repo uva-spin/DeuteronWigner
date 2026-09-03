@@ -1,0 +1,42 @@
+{
+  "matrix_count": 0,
+  "required_components": [
+    "MASS_HELICITY_FLIP",
+    "TRANSVERSE_HELICITY"
+  ],
+  "rows": [
+    {
+      "coefficient_function": "ABSENT",
+      "component_id": "MASS_HELICITY_FLIP",
+      "matrix_assembly_status": "ABSENT_BLOCKING",
+      "metadata_authority": {
+        "Pminus_dimension": 1,
+        "explicit_mass_power": 1,
+        "id": "MASS_HELICITY_FLIP",
+        "later_HO_dimension_cancelled": true,
+        "source": "C43 Eq. (24)+C45 spinors",
+        "transverse_rank": 0
+      },
+      "per_entry_evaluator": "evaluate_mass_helicity_flip",
+      "present_in_C50": false,
+      "reason": "C50 returns only combined pminus_GeV/m2_GeV; it supplies no independently evaluable component value or exact symbolic coefficient for this component."
+    },
+    {
+      "coefficient_function": "ABSENT",
+      "component_id": "TRANSVERSE_HELICITY",
+      "matrix_assembly_status": "ABSENT_BLOCKING",
+      "metadata_authority": {
+        "Pminus_dimension": 1,
+        "explicit_mass_power": 0,
+        "id": "TRANSVERSE_HELICITY",
+        "later_HO_dimension_cancelled": true,
+        "source": "C43 Eq. (24)+C45 polarizations",
+        "transverse_rank": 1
+      },
+      "per_entry_evaluator": "evaluate_transverse_helicity",
+      "present_in_C50": false,
+      "reason": "C50 returns only combined pminus_GeV/m2_GeV; it supplies no independently evaluable component value or exact symbolic coefficient for this component."
+    }
+  ],
+  "status": "C51_VERTEX_DIMENSIONAL_ASSEMBLY_INCOMPLETE"
+}

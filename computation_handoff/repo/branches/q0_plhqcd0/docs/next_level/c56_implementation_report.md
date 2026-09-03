@@ -1,0 +1,3 @@
+# C56/IFNORM Branch-B fail-closed correction
+
+C56 retains the exact C55 `b† a a† b` one-pair contraction and BPP perturbative light-front vacuum. The source audit finds that BPP's explicit contraction is DLCQ momentum-space regulated, whereas C45/C47 provide HO functions and external CM-clean bases but no field-level finite-HO virtual-gluon projector or conversion. C56 therefore selects `IFNORM-UNAVAILABLE` and records `C56_IFNORM_FINITE_HO_REGULATOR_INCOMPLETE`. No mode is summed; no q/qg primitive, subtraction, counterterm direction, direct contact, full instantaneous operator, or C53 propagation substitute is created. Next: **C57/IFREG — contracted field-mode collection, truncation projector, and shell regulator completion**.

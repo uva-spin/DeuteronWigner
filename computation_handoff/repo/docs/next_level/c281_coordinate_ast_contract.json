@@ -1,0 +1,37 @@
+{
+  "authority_record": {
+    "coefficient_invented": false,
+    "eval": false,
+    "nodes": [
+      {
+        "opcode": "LOAD_ALPHA_S",
+        "units": "dimensionless"
+      },
+      {
+        "constant": "4*pi",
+        "opcode": "DIV_CONST"
+      },
+      {
+        "coefficient": "caller source-qualified",
+        "opcode": "MUL_COEFFICIENT"
+      },
+      {
+        "opcode": "ADD_TREE",
+        "tree": 1
+      },
+      {
+        "opcode": "ATTACH_REMAINDER",
+        "order": "alpha_s^2"
+      }
+    ],
+    "root": "b0ed3bf9bb00dbdd260d50d93fd5364ce09b2700feb6c896ec5ee3063b97b62f",
+    "safe": true,
+    "schema": "C281-RI-SMOM-SIGNED-MASS-COORDINATE-AST-V1"
+  },
+  "package_root": "10d82a013afa2e25a77e45c744aff26812875537ba7c0b6a78eda03fb13d65c8",
+  "physical": false,
+  "plan": "RIMASSCOORD1-A",
+  "schema": "C281-COORDINATE_AST-CONTRACT-V1",
+  "status": "C281_RI_SMOM_SIGNED_MASS_COORDINATE_NORMALIZATION_AND_ONE_LOOP_POWER_SOURCE_BOUND",
+  "validation": "BOUND"
+}

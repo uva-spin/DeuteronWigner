@@ -1,0 +1,15 @@
+{
+  "content_hash": "667f21291bb78335ef873c45af056d285bbb6766a254991400931234580fbd46",
+  "finite_delta_gauge_complete": false,
+  "finite_line_formula": "expm1((-delta+i*omega)*L)/(-delta+i*omega)",
+  "gauge_property_at_finite_delta": false,
+  "gauge_property_restored_only_in_delta_limit": true,
+  "infinite_line_formula": "1/(delta-i*omega)",
+  "operator_id": "C35.MODIFIED.DELTA.FINITE.SEGMENT.v1",
+  "operator_level_damping": "exp(-delta_v*s)_inside_path_ordered_exponential",
+  "power_delta_terms_must_be_discarded": true,
+  "schema_version": "1.0.0",
+  "source_locator": "ARXIV:1511.05590v2:p3:Eqs.(5)-(6);p4:gauge-property warning",
+  "source_sha256": "dda565928e2a52997da094a156b286b31741184e47398d2efaa801a9a97e573d",
+  "status": "SOURCE_OPERATOR_TRANSCRIBED_GAUGE_COMPLETION_UNAVAILABLE"
+}

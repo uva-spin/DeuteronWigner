@@ -1,0 +1,35 @@
+{
+  "authority_record": {
+    "count": 4,
+    "root": "8a366afc8be3610fab54e479ad1ff03774a5c04acabbd9affe98ee5fc5accf3b",
+    "rows": [
+      {
+        "authority": "Soyez mu0^2",
+        "operator": "adjoint scalar from transverse gauge field",
+        "result": "BARE_SYMBOL_RENORMALIZATION_NOT_PERFORMED"
+      },
+      {
+        "authority": "C276-C283 RI/SMOM mass",
+        "operator": "fundamental signed quark bilinear",
+        "result": "INCOMPATIBLE_OPERATOR_NO_ADAPTER"
+      },
+      {
+        "authority": "C43/C130",
+        "operator": "3+1 transverse gauge field/zero-mode constraints",
+        "result": "NO_BOUND_ADJOINT_SCALAR_MASS_RECORD"
+      },
+      {
+        "authority": "C274/C278 K states",
+        "operator": "caller Hamiltonian/state slots",
+        "result": "NO_SIX_CHANNEL_MATRIX_ELEMENTS"
+      }
+    ],
+    "usable_records": 0
+  },
+  "package_root": "dadda4afd8ee8e1b1281b266e9fc6e768ebec2c5811bd86b01bf53e1577a5a6d",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINTINPUT1-C",
+  "schema": "C299-AUTHORITY_AUDIT-CONTRACT-V1",
+  "status": "C299_ADJOINT_SCALAR_INPUT_SCHEMA_AND_QUARK_MASS_NON_EQUIVALENCE_BOUND_GAUGE_ST_MASS_IDENTITY_MISSING",
+  "validation": "BOUND"
+}

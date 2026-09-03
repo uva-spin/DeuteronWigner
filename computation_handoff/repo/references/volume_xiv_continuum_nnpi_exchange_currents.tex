@@ -1,0 +1,1967 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XIV: Continuum-Calibrated NNpi Dynamics, Hamiltonian-Generated Exchange Currents, and Nuclear Separator Flow},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XIV}
+\fancyhead[R]{\small\color{darkgray}Continuum NNpi and exchange-current completion}
+\fancyfoot[L]{\small\color{darkgray}31 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\lT}{\bm{\ell}_{T}}
+\newcommand{\rT}{\bm{r}_{T}}
+\newcommand{\sT}{\bm{s}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\RT}{\bm{R}_{T}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\PV}{\operatorname{PV}}
+\newcommand{\Disc}{\operatorname{Disc}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\PCAC}{\ensuremath{\mathrm{PCAC}}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\Amp}{\ensuremath{\mathbf{Amp}}}
+\newcommand{\Dens}{\ensuremath{\mathbf{Dens}}}
+\newcommand{\Match}{\ensuremath{\mathbf{Match}}}
+\newcommand{\Red}{\ensuremath{\mathbf{Red}}}
+\newcommand{\Proc}{\ensuremath{\mathbf{Proc}}}
+\newcommand{\Infer}{\ensuremath{\mathbf{Infer}}}
+\newcommand{\HNN}{\Hil_{NN}}
+\newcommand{\HNNpi}{\Hil_{NN\pi}}
+\newcommand{\HNtwo}{\Hil_{\mathrm{N2}}}
+\newcommand{\ContinuumChannel}{\texttt{NNPi\allowbreak Continuum\allowbreak Channel}}
+\newcommand{\SpectralDensity}{\texttt{Continuum\allowbreak Spectral\allowbreak Density}}
+\newcommand{\FiniteVolumeMap}{\texttt{FiniteVolume\allowbreak Spectral\allowbreak Map}}
+\newcommand{\TransitionKernel}{\texttt{NNPi\allowbreak Transition\allowbreak Kernel}}
+\newcommand{\PoleResidue}{\texttt{Deuteron\allowbreak PoleAnd\allowbreak Residue}}
+\newcommand{\GaugedTerm}{\texttt{Gauged\allowbreak Hamiltonian\allowbreak Term}}
+\newcommand{\ExchangeCurrent}{\texttt{Exchange\allowbreak Current\allowbreak Operator}}
+\newcommand{\CurrentCertificate}{\texttt{CurrentBasis\allowbreak Completeness\allowbreak Certificate}}
+\newcommand{\BlockContinuity}{\texttt{Block\allowbreak Continuity\allowbreak Ledger}}
+\newcommand{\SeparatorTrajectory}{\texttt{Separator\allowbreak Trajectory}}
+\newcommand{\ExplicitInduced}{\texttt{ExplicitInduced\allowbreak Pion\allowbreak Comparison}}
+\newcommand{\ContinuumCoherent}{\texttt{Continuum\allowbreak Coherent\allowbreak Kernel}}
+\newcommand{\StateBundle}{\texttt{N2\allowbreak State\allowbreak Bundle}}
+\newcommand{\ProvComplex}{\texttt{N2\allowbreak Provenance2\allowbreak Complex}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{N2\allowbreak Prediction\allowbreak Plan}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XIV: Continuum-Calibrated \(NN\pi\) Dynamics,\\[2mm]
+Hamiltonian-Generated Exchange Currents, and Nuclear Separator Flow}\\[4mm]
+\large Spectral support, pole and residue control, blockwise current continuity,\\
+continuum-aware pion operators, and stable explicit--induced matching}
+\author{DeuteronWigner project}
+\date{31 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C16/N1 established a normalized, spin-resolved
+\(NN\oplus NN\pi\) validation state with complete charge channels, diagonal
+and transition recoil, nucleon-active and pion-active operators, executable
+pion overlap subtraction, a finite current ledger, a helicity-resolved
+coherent pilot, and order-resolved microscopic partonic parents.  Its
+\(NN\pi\) sector, however, remained a finite analytic/discrete realization;
+its current family was deliberately incomplete at the continuum nuclear
+order; and its separator, pole, residue, and coherent inputs were not yet
+calibrated as one flow.  The present volume is the normative formalism for
+C17/N2.  It promotes the transition sector to a typed direct-integral
+continuum with a controlled finite-volume approximation, derives the
+self-energy, pole, residue, and cut ledgers, generates every retained current
+from the same gauged Hamiltonian, proves continuity block by block, and
+requires the internal-pion, exchange-pion, overlap, induced-Hamiltonian,
+current, and partonic-operator descriptions to flow together under a declared
+separator.  It remains a validation theory: no physical pion TMD, complete
+continuum chiral EFT, physical nuclear shadowing, \(\Delta\Delta\), compact
+six-quark, QCD matching, evolution, process, or inference readiness is
+claimed.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The finite \(NN\oplus NN\pi\) light-front construction supplies the correct
+sector algebra but does not by itself define continuum transition strength,
+a pole residue, or a complete current basis.  We formulate an N2 theory in
+which the \(NN\pi\) sector is a direct integral of charge-, helicity-,
+partial-wave-, and regulator-resolved continuum channels.  The same
+transition kernel defines a dispersive self-energy, its discontinuity, the
+deuteron pole condition, the wave-function residue, and a convergent
+finite-volume quadrature sequence.  Currents are obtained by gauging every
+retained Hamiltonian term, including nonlocal regulators, momentum-dependent
+kernels, sector-changing vertices, induced Feshbach interactions, and
+counterterms.  A machine-readable completeness certificate maps each
+Hamiltonian term to its charge, current, contact, regulator, and continuity
+partners.  The continuity equation is tested separately in the \(NN\to NN\),
+\(NN\leftrightarrow NN\pi\), and \(NN\pi\to NN\pi\) blocks and separately in
+each charge channel.  A separator trajectory moves pion-like strength among
+internal-nucleon, explicit exchange, overlap, and induced descriptions while
+leaving matched observables invariant within a declared truncation law.  The
+pion-active and transition partonic operators, energy--momentum operators,
+and norm kernel are transformed with the Hamiltonian.  A continuum-aware
+helicity-resolved coherent pilot and a derived completely positive reduction
+are included without identifying either with physical shadowing or partonic
+Wilson rescattering.  We give formal requirements, analytic benchmarks,
+negative tests, tensor-network and continuum convergence obligations,
+software interfaces, and the acceptance boundary to explicit
+\(\Delta\Delta\), compact six-quark, and hidden-color sectors.
+\end{abstract}
+
+\tableofcontents
+
+\section{Role, scope, and inherited N1 contracts}
+\label{sec:scope}
+
+\subsection{What C16/N1 established}
+
+The inherited state is
+\begin{equation}
+ \Hil_{\mathrm{N1}}=\HNN\oplus\HNNpi,
+ \qquad
+ |D,\Lambda\rangle_{\mathrm{N1}}
+ =|\Psi_{NN}^{\Lambda}\rangle+|\Psi_{NN\pi}^{\Lambda}\rangle,
+ \label{eq:n1-state}
+\end{equation}
+with
+\begin{equation}
+ Z_{NN}+Z_{NN\pi}=1.
+ \label{eq:n1-normalization}
+\end{equation}
+The state retains the complete
+\(pn\pi^0\), \(pp\pi^-\), and \(nn\pi^+\) charge basis, exact spin-1
+quantum numbers, three-body and transition recoil maps, diagonal and
+transition partonic operators, a matched pion subtraction, and a
+Hamiltonian-consistent finite current family.  These identities are immutable
+inputs to N2.
+
+\subsection{Why N1 is not yet the continuum theory}
+
+A finite basis may verify Hermiticity, selection rules, current attachments,
+and deterministic subtraction, but it does not automatically define the
+continuum spectral measure or the on-shell discontinuity.  In particular,
+replacing
+\begin{equation}
+ \frac{1}{E-H_Q+i0}
+ \quad\text{by}\quad
+ \frac{1}{E-H_Q+i\eps}
+ \label{eq:epsilon-not-support}
+\end{equation}
+with a finite numerical \(\eps\) does not create physical support.  The
+continuum threshold, measure, channel normalization, and map from a finite
+sequence must be declared independently.
+
+\begin{decision}[N2 transition]
+N2 retains the N1 sector and operator algebra but replaces the finite
+transition oracle, within the N2 validation root, by a continuum-calibrated
+spectral theory and a controlled finite-volume/discretized-continuum route.
+The N1 result remains an immutable benchmark and is never added to N2 as a
+second physical mechanism.
+\end{decision}
+
+\subsection{Inherited typed distinctions}
+
+The following remain noninterchangeable:
+\begin{equation}
+ \texttt{PARTONIC\_WILSON\_STAPLE}
+ \neq
+ \texttt{NUCLEAR\_COHERENT\_PROPAGATION}
+ \neq
+ \texttt{TAGGED\_FINAL\_STATE\_INTERACTION},
+ \label{eq:rescattering-types}
+\end{equation}
+and
+\begin{equation}
+ \texttt{INTERNAL\_NUCLEON\_PION}
+ \neq
+ \texttt{EXPLICIT\_NUCLEAR\_NNPI}
+ \neq
+ \texttt{INDUCED\_PION\_OPERATOR}.
+ \label{eq:pion-types}
+\end{equation}
+Array shape, identical dimensions, or similar low-energy behavior cannot
+supply an implicit adapter.
+
+\subsection{Explicit nonclaims}
+
+N2 does not claim:
+\begin{itemize}
+\item a physical pion TMD or GTMD;
+\item a complete continuum chiral nuclear EFT;
+\item a full all-orders nuclear current basis;
+\item a physical diffractive shadowing or Glauber calculation;
+\item explicit \(\Delta\Delta\), six-quark, or hidden-color dynamics;
+\item LF-to-QCD matching, Collins--Soper evolution, process factorization, or
+      inference readiness.
+\end{itemize}
+
+\section{Continuum channel space and spectral normalization}
+\label{sec:continuum}
+
+\subsection{Direct-integral Hilbert space}
+
+Let \(\alpha\) denote the complete discrete channel identity,
+\begin{equation}
+ \alpha=
+ \left(
+ c_\pi,I_{NN},S_{NN},\ell_\rho,\ell_\lambda,
+ J^P,J^z,\Lambda,\text{regulator},\text{member}
+ \right).
+ \label{eq:channel-id}
+\end{equation}
+The continuum sector is the direct integral
+\begin{equation}
+ \HNNpi^{\mathrm{cont}}
+ =
+ \bigoplus_{\alpha}
+ \int_{E_{\mathrm{th},\alpha}}^{\infty}\!{}^{\oplus}
+ \dd\mu_\alpha(E)\,
+ \Hil_{E\alpha},
+ \qquad
+ \dd\mu_\alpha(E)=\rho_\alpha(E)\dd E.
+ \label{eq:direct-integral}
+\end{equation}
+Generalized eigenstates satisfy
+\begin{equation}
+ \langle E',\alpha'|E,\alpha\rangle
+ =\delta_{\alpha'\alpha}\,\delta(E'-E)
+ \label{eq:continuum-normalization}
+\end{equation}
+under the selected energy normalization.  Momentum, invariant-mass, or
+phase-space normalizations are permitted only through a unitary typed adapter
+that transforms the transition kernel and all measures together.
+
+\begin{requirement}[Channel completeness]
+Every continuum object must retain the charge channel, total charge, isospin,
+parity, \(J^z\), pair spin/isospin, pion charge, Jacobi partial waves,
+threshold, active/spectator assignment, regulator, normalization convention,
+member, and assumption-plan identity.
+\end{requirement}
+
+\subsection{Threshold behavior}
+
+For a three-body channel with effective relative orbital order \(\ell_\alpha\),
+the spectral density near threshold is parameterized only after deriving the
+phase-space behavior,
+\begin{equation}
+ \rho_\alpha(E)\,
+ \abs{v_\alpha(E)}^2
+ \sim
+ (E-E_{\mathrm{th},\alpha})^{\nu_\alpha}
+ \left[1+\cO(E-E_{\mathrm{th},\alpha})\right],
+ \label{eq:threshold-law}
+\end{equation}
+where \(\nu_\alpha\) follows from the declared kinematics and partial waves.
+A fitted noninteger exponent may be used only as a validation oracle with an
+explicit discrepancy term; it cannot replace the threshold derivation.
+
+\subsection{Spectral projectors}
+
+The continuum resolution of the identity is
+\begin{equation}
+ Q_{\mathrm{cont}}
+ =
+ \sum_\alpha
+ \int_{E_{\mathrm{th},\alpha}}^\infty
+ \dd\mu_\alpha(E)
+ |E,\alpha\rangle\langle E,\alpha|,
+ \label{eq:spectral-projector}
+\end{equation}
+possibly supplemented by discrete \(NN\pi\)-like bound or pseudobound states,
+which must be listed separately.  The spectral projector is part of the
+Hamiltonian identity.  A change in \(\rho_\alpha\), threshold, regulator, or
+normalization invalidates all cached self-energies, currents, and partonic
+operators using it.
+
+\section{Finite-volume and discretized-continuum maps}
+\label{sec:finite-volume}
+
+\subsection{Neutral finite spectral approximation}
+
+A finite sequence is represented by
+\begin{equation}
+ \dd\mu_\alpha^{(L)}(E)
+ =
+ \sum_{n=1}^{N_L}
+ w_{n\alpha}^{(L)}
+ \delta\!\left(E-E_{n\alpha}^{(L)}\right)\dd E,
+ \label{eq:finite-measure}
+\end{equation}
+with positive or signed weights according to the declared quadrature.  Its
+identity contains the volume or discretization parameter \(L\), level count,
+boundary conditions, threshold, quadrature rule, smearing parameter, and map
+to the continuum measure.
+
+\begin{requirement}[Terminology]
+The object is called \FiniteVolumeMap.  It may be called a Luescher or
+Lellouch--Luescher map only if the corresponding two-body quantization,
+phase-shift, normalization, and matrix-element relations are implemented with
+their hypotheses.  A generic spectral quadrature must not inherit that name.
+\end{requirement}
+
+\subsection{Weak convergence}
+
+For a smooth compactly supported test function \(f\), require
+\begin{equation}
+ \sum_n w_{n\alpha}^{(L)}f(E_{n\alpha}^{(L)})
+ \longrightarrow
+ \int \dd\mu_\alpha(E)f(E).
+ \label{eq:weak-convergence}
+\end{equation}
+Principal-value kernels require a subtraction-aware convergence criterion,
+not merely weak convergence.  For example,
+\begin{align}
+ \PV\int\dd E\,
+ \frac{F(E)}{E_0-E}
+ ={}&
+ \int\dd E\,
+ \frac{F(E)-F(E_0)\chi(E)}{E_0-E}
+ \notag\\
+ &+F(E_0)
+ \PV\int\dd E\,
+ \frac{\chi(E)}{E_0-E},
+ \label{eq:pv-subtraction}
+\end{align}
+where \(\chi\) is a declared local subtraction function.  The finite sequence
+must converge for both terms separately.
+
+\subsection{Continuum-map error budget}
+
+The finite-to-continuum residual is decomposed as
+\begin{equation}
+ \delta_{\mathrm{FV}}
+ =
+ \delta_{N_L}
+ +\delta_L
+ +\delta_{\mathrm{quad}}
+ +\delta_{\mathrm{smear}}
+ +\delta_{\mathrm{th}}
+ +\delta_{\mathrm{map}},
+ \label{eq:fv-error}
+\end{equation}
+where none of the terms is absorbed into a physical transition width.
+
+\section{Transition kernel, self-energy, pole, and residue}
+\label{sec:self-energy}
+
+\subsection{Hermitian transition family}
+
+Let \(P\) project onto \(NN\) and \(Q\) onto the continuum \(NN\pi\) sector.
+The transition kernel is
+\begin{equation}
+ V_{QP}(E):\HNN\longrightarrow\Hil_{E\alpha},
+ \qquad
+ V_{PQ}(E)=V_{QP}^{\dagger}(E).
+ \label{eq:transition-kernel}
+\end{equation}
+Its matrix element carries charge, helicity, partial-wave, recoil, regulator,
+separator, and member identity.  Emission and absorption are never fitted
+independently.
+
+\subsection{Feshbach self-energy}
+
+The projected resolvent is
+\begin{equation}
+ G_P(z)
+ =
+ \frac{1}{z-H_{PP}-\Sigma(z)},
+ \qquad
+ \Sigma(z)=H_{PQ}\frac{1}{z-H_{QQ}}H_{QP}.
+ \label{eq:projected-resolvent}
+\end{equation}
+In the continuum basis,
+\begin{equation}
+ \Sigma_{ab}(z)
+ =
+ \sum_\alpha
+ \int_{E_{\mathrm{th},\alpha}}^\infty
+ \dd\mu_\alpha(E)
+ \frac{V_{a\alpha}(E)V_{\alpha b}(E)}{z-E}.
+ \label{eq:self-energy-integral}
+\end{equation}
+For \(z=E_0+i0\),
+\begin{align}
+ \Sigma(E_0+i0)
+ ={}&
+ \PV\sum_\alpha\int\dd\mu_\alpha(E)
+ \frac{V_{a\alpha}(E)V_{\alpha b}(E)}{E_0-E}
+ \notag\\
+ &-i\pi
+ \sum_\alpha
+ \rho_\alpha(E_0)V_{a\alpha}(E_0)V_{\alpha b}(E_0)
+ \theta(E_0-E_{\mathrm{th},\alpha}).
+ \label{eq:self-energy-disc}
+\end{align}
+Thus, absorption vanishes exactly below every open threshold.
+
+\subsection{Pole condition}
+
+For an isolated bound-state pole \(E_D\) below threshold, the effective
+pole equation is
+\begin{equation}
+ \det\!
+ \left[
+ E_D-H_{PP}-\Sigma(E_D)
+ \right]=0.
+ \label{eq:pole-condition}
+\end{equation}
+For a one-dimensional reference subspace,
+\begin{equation}
+ E_D-E_{0}-\Sigma(E_D)=0.
+ \label{eq:scalar-pole}
+\end{equation}
+The residue is
+\begin{equation}
+ Z_D
+ =
+ \left[
+ 1-\left.\frac{\partial\Sigma(E)}{\partial E}\right|_{E_D}
+ \right]^{-1},
+ \label{eq:pole-residue}
+\end{equation}
+under this resolvent convention.  In a multidimensional subspace, the residue
+is a matrix on the pole eigenspace and must be projected with the corresponding
+left/right eigenvectors.
+
+\subsection{State normalization and norm kernel}
+
+The continuum component is generated by
+\begin{equation}
+ \omega(E_D)
+ =
+ \frac{1}{E_D-H_{QQ}}H_{QP},
+ \label{eq:wave-operator}
+\end{equation}
+and the effective-space norm kernel is
+\begin{equation}
+ N(E_D)=P\left[1+\omega^{\dagger}(E_D)\omega(E_D)\right]P.
+ \label{eq:norm-kernel}
+\end{equation}
+The physical projected state is normalized with \(N\), not with the Euclidean
+norm of the \(P\)-space coefficient vector.  The residue, norm-kernel, and
+sector probability ledgers must agree within the declared truncation.
+
+\begin{proposition}[No-width theorem for a closed finite spectrum]
+If the declared spectrum is finite, all intermediate energies are off shell,
+and no continuum or finite-volume spectral rule is supplied, then the
+absorptive part generated by \cref{eq:projected-resolvent} is exactly zero.
+A finite numerical \(\eps\) does not change this statement.
+\end{proposition}
+
+\section{Calibration, holdouts, and identifiability}
+\label{sec:calibration}
+
+\subsection{Restricted calibration set}
+
+The first N2 calibration may use only:
+\begin{enumerate}
+\item the deuteron pole or mass condition;
+\item one transition normalization or low-energy spectral condition;
+\item one charge/isospin condition;
+\item one Hamiltonian-owned current normalization.
+\end{enumerate}
+No named pion, tensor, or deuteron TMD receives an independent parameter.
+
+\subsection{Frozen holdouts}
+
+Before optimization, freeze at least:
+\begin{itemize}
+\item a second transition-energy point;
+\item one spectral moment or pole residue;
+\item one pion-active partonic moment;
+\item one tensor transition observable;
+\item one independent current component;
+\item one angular-condition observable;
+\item one coherent-amplitude quantity.
+\end{itemize}
+A failed holdout must revise a Hamiltonian term, current attachment, continuum
+map, separator discrepancy, or operator basis.  It cannot be repaired by a
+TMD-specific coefficient.
+
+\subsection{Jacobian and null directions}
+
+For observables \(\cO_i\) and parameters \(\theta_a\), define
+\begin{equation}
+ J_{ia}=\frac{\partial\cO_i}{\partial\theta_a}.
+ \label{eq:calibration-jacobian}
+\end{equation}
+Singular values of \(J\), the Fisher matrix, and profile likelihoods are
+recorded.  A null direction remains visible unless a new independent physical
+condition is introduced; it may not be fixed by an unrelated TMD
+normalization.
+
+\section{Gauging the Hamiltonian}
+\label{sec:gauging}
+
+\subsection{External-field construction}
+
+Introduce a gauge-covariant Hamiltonian family
+\begin{equation}
+ H[A]=H[0]+\int\dd^4x\,J^\mu(x)A_\mu(x)+\cO(A^2),
+ \label{eq:gauged-hamiltonian}
+\end{equation}
+so that
+\begin{equation}
+ J^\mu(x)
+ =
+ -\left.\frac{\delta H[A]}{\delta A_\mu(x)}\right|_{A=0}
+ \label{eq:current-functional}
+\end{equation}
+under the chosen sign convention.  Gauging the dynamical equation attaches the
+external field to every propagator, vertex, exchange kernel, contact term,
+regulator, and normalization factor.  This is the operational content of the
+``gauging of equations'' construction \cite{KvinikhidzeBlankleider1999I,KvinikhidzeBlankleider1999II}.
+
+\subsection{Nonlocal kernels and regulators}
+
+For a momentum-dependent kernel \(V(p',p)\), minimal replacement in only the
+external one-body momenta is insufficient.  The gauged kernel
+\(V^\mu(p',p;q)\) must satisfy the finite-difference Ward identity
+\begin{equation}
+ q_\mu V^\mu(p',p;q)
+ =
+ Q_f V(p'-q,p)-V(p',p+q)Q_i
+ \label{eq:kernel-ward}
+\end{equation}
+with the appropriate charge operators.  A nonlocal regulator
+\(R_\Lambda(p',p)\) contributes its own gauged term.  Using different
+regulators in the force and current generally destroys continuity.
+
+\subsection{Hamiltonian-term ownership}
+
+Write
+\begin{equation}
+ H_{N2}
+ =
+ \sum_t H_t,
+ \qquad
+ J^\mu_{N2}
+ =
+ \sum_t J_t^\mu+
+ J_{\ct}^\mu+J_{\ind}^\mu.
+ \label{eq:term-current-sum}
+\end{equation}
+Each term \(H_t\) has one of three certified statuses:
+\begin{enumerate}
+\item charged and accompanied by all required attachments;
+\item neutral, with a proof-backed zero current;
+\item unresolved, which blocks a completeness claim.
+\end{enumerate}
+
+\section{Declared-order exchange-current basis}
+\label{sec:current-basis}
+
+\subsection{Required operator families}
+
+At the declared N2 order the current basis contains, when generated by the
+retained Hamiltonian,
+\begin{longtable}{L{0.30\textwidth}L{0.62\textwidth}}
+\toprule
+Current class & Physical and algebraic role\\
+\midrule
+\endhead
+Nucleon one-body charge/current & Gauging of the nucleon kinetic and intrinsic current terms.\\
+Pion-in-flight current & Photon insertion on the propagating exchanged or explicit pion.\\
+\(NN\leftrightarrow NN\pi\) transition current & Gauging of sector-changing emission and absorption vertices.\\
+Contact/seagull current & Simultaneous coupling required by derivative or gauged contact interactions.\\
+Pair current & Negative-energy or pair-reduction partner of the retained interaction representation.\\
+Recoil/retardation current & Energy- and momentum-dependent corrections associated with nonstatic kernels.\\
+Momentum-dependent interaction current & Gauging of explicit momentum dependence in the potential.\\
+Regulator-gauging current & Current generated by nonlocal cutoff functions and endpoint prescriptions.\\
+Induced Feshbach current & Operator generated when the explicit continuum sector is eliminated.\\
+Current counterterm & Resolution-dependent renormalization term fixed by declared current conditions.\\
+Charge-density correction & Interaction-dependent correction to the density entering the continuity identity.\\
+EMT interaction terms & Pair, seagull, pion-exchange, recoil, and regulator partners for \(T^{\mu\nu}\).\\
+Axial/pseudoscalar companions & Matched axial, pseudoscalar, pion-pole, and contact terms where supported.\\
+\bottomrule
+\end{longtable}
+Consistent one- and two-nucleon currents in chiral EFT display precisely this
+logic: potentials, charge operators, pion exchange, short-range terms, and
+regularization must be treated as one family
+\cite{Pastore2009,Koelling2009,Koelling2011,Krebs2020,Pastore2011}.
+
+\subsection{Completeness certificate}
+
+The \CurrentCertificate\ is a bipartite incidence record between Hamiltonian
+terms and current operators.  For each \(H_t\) it stores:
+\begin{itemize}
+\item charge assignment;
+\item source and target sectors;
+\item longitudinal and transverse attachments;
+\item contact and regulator partners;
+\item induced-operator partners;
+\item counterterms;
+\item continuity identities;
+\item unresolved transverse low-energy constants.
+\end{itemize}
+The status
+\texttt{N2\_DECLARED\_ORDER\_EXCHANGE\_CURRENT\_BASIS\_COMPLETE}
+may be issued only when no unexplained gap remains.
+
+\subsection{Energy-dependent currents}
+
+If an effective interaction depends on the energy transfer, the ordinary
+static continuity equation is modified by terms involving derivatives of the
+kernel or charge operator.  The current identity and the pole-residue
+normalization must therefore be derived in the same energy convention.  A
+static current inserted into an energy-dependent Hamiltonian without the
+corresponding derivative terms is inconsistent.
+
+\section{Blockwise continuity and spin-1 current closure}
+\label{sec:continuity}
+
+\subsection{Sector-block continuity equation}
+
+Write
+\begin{equation}
+ H=
+ \begin{pmatrix}
+ H_P & V_{PQ}\\
+ V_{QP} & H_Q
+ \end{pmatrix},
+ \quad
+ \rho=
+ \begin{pmatrix}
+ \rho_{PP} & \rho_{PQ}\\
+ \rho_{QP} & \rho_{QQ}
+ \end{pmatrix},
+ \quad
+ J^\mu=
+ \begin{pmatrix}
+ J_{PP}^\mu & J_{PQ}^\mu\\
+ J_{QP}^\mu & J_{QQ}^\mu
+ \end{pmatrix}.
+ \label{eq:block-operators}
+\end{equation}
+The finite-resolution identity is
+\begin{equation}
+ q_\mu J^\mu=[H,\rho]+\delta_{\trunc}.
+ \label{eq:continuity-master}
+\end{equation}
+It implies, for example,
+\begin{align}
+ q_\mu J_{PP}^\mu
+ ={}&
+ H_P\rho_{PP}+V_{PQ}\rho_{QP}
+ -\rho_{PP}H_P-\rho_{PQ}V_{QP}
+ +\delta_{PP},
+ \label{eq:continuity-pp}\\
+ q_\mu J_{QP}^\mu
+ ={}&
+ V_{QP}\rho_{PP}+H_Q\rho_{QP}
+ -\rho_{QP}H_P-\rho_{QQ}V_{QP}
+ +\delta_{QP}.
+ \label{eq:continuity-qp}
+\end{align}
+All four sector blocks must close separately.
+
+\subsection{Charge-channel resolution}
+
+The continuity ledger is evaluated separately in
+\begin{equation}
+ pn\pi^0,
+ \qquad
+ pp\pi^-,
+ \qquad
+ nn\pi^+,
+ \label{eq:charge-channels}
+\end{equation}
+and separately in each supported helicity and tensor block.  A cancellation
+that occurs only after mixing charge channels or incompatible tensor
+representations is not sufficient.
+
+\subsection{Signed residual ledger}
+
+The residual is decomposed as
+\begin{align}
+ \delta_{\mathrm{cont}}={}&
+ \delta_{1N}+\delta_{\pi\mathrm{-flight}}
+ +\delta_{\mathrm{trans}}+\delta_{\mathrm{seagull}}
+ +\delta_{\mathrm{pair}}
+ \notag\\
+ &+\delta_{\mathrm{recoil}}
+ +\delta_{\mathrm{mom}}
+ +\delta_{\mathrm{reg}}
+ +\delta_{\mathrm{Feshbach}}
+ +\delta_{\ct}
+ +\delta_{\mathrm{basis}}
+ +\delta_{\mathrm{FV}}.
+ \label{eq:continuity-ledger}
+\end{align}
+Removing any required nonzero contribution must produce a signed defect whose
+origin is retained.
+
+\subsection{Spin-1 current and angular condition}
+
+The current must reproduce charge, magnetic, and quadrupole structures from a
+common set of helicity amplitudes.  Independent extractions from different
+current components and the light-front angular condition remain holdouts.  A
+component-specific normalization is forbidden.
+
+\subsection{Energy--momentum tensor}
+
+The EMT family includes one-body, pair, seagull, pion-exchange, recoil, and
+interaction terms.  Exchange corrections to deuteron gravitational form
+factors provide a useful benchmark for the need to include these pieces
+consistently \cite{HeZahed2024}.  The N2 implementation is still a
+finite-resolution validation of that operator logic, not a physical EMT
+prediction.
+
+\section{Continuum-calibrated pion-active and transition operators}
+\label{sec:pion-operators}
+
+\subsection{Nuclear splitting amplitude}
+
+The continuum-calibrated nuclear splitting amplitude is denoted
+\begin{equation}
+ \cS_{NN\pi/D}^{\Lambda'\Lambda;\alpha}
+ (E,\{y_i,\bm p_{iT}\},\DT),
+ \label{eq:continuum-splitting}
+\end{equation}
+where \(\alpha\) carries the complete continuum channel identity.  Its
+normalization is fixed by the state and pole-residue conventions; it has no
+independent deuteron-fit normalization.
+
+\subsection{Pion-active parent}
+
+The diagonal pion-active contribution is
+\begin{align}
+ W_{a/D}^{\pi\mathrm{-active}}
+ ={}&
+ \sum_{\alpha}
+ \int\dd\mu_\alpha(E)
+ \int[\dd\Gamma_3]
+ \cS_{NN\pi/D}^{\alpha}
+ \notag\\
+ &\times
+ W_{a/\pi}^{\mathrm{reg}}
+ \left(
+ \frac{x_D}{y_\pi},
+ \kT-\frac{x_D}{y_\pi}\bm p_{\pi T},
+ \DT
+ \right)
+ \cJ_\pi.
+ \label{eq:pion-active-cont}
+\end{align}
+The internal pion parent retains
+\begin{verbatim}
+VALIDATION_ONLY
+PION_PARTON_PARENT_UNMATCHED
+LINK_SHORTENING_REQUIRED
+UV_MATCHING_REQUIRED
+RAPIDITY_SOFT_MATCHING_REQUIRED
+NO_EVOLUTION_APPLIED
+NO_PROCESS_MAP_APPLIED
+\end{verbatim}
+Continuum calibration of the nuclear splitting function does not change these
+statuses.
+
+\subsection{Transition operators}
+
+For an operator family \(A\), define
+\begin{equation}
+ \cO^{A}_{QP}(E):\HNN\longrightarrow\Hil_{E\alpha},
+ \qquad
+ \cO^{A}_{PQ}(E)=\left[\cO^{A}_{QP}(E)\right]^{\dagger}
+ \label{eq:transition-operator-cont}
+\end{equation}
+where supported.  Vector, axial, pseudoscalar, EMT, and partonic transition
+operators retain source/target sector, channel, recoil, transfer, helicity,
+pion charge, Wilson order, and matching status.
+
+\subsection{Common-parent reductions}
+
+The continuum N2 parent must still satisfy the commuting reductions
+\begin{equation}
+ W_{a/D}
+ \longrightarrow
+ \left\{
+ \begin{array}{c}
+ \TMD\\
+ \GPD\\
+ \PDF\\
+ J^\mu\\
+ T^{\mu\nu}
+ \end{array}
+ \right.
+ \label{eq:n2-reductions}
+\end{equation}
+with one state normalization and one continuum measure.  No named tensor or
+pion function may be renormalized independently to repair a failed route.
+
+\section{Separator flow and pion matching}
+\label{sec:separator}
+
+\subsection{Resolution separator}
+
+Introduce a separator \(\Lambda_\pi\) and complementary maps
+\begin{equation}
+ P_{\mathrm{int}}(\Lambda_\pi)
+ +P_{\mathrm{exch}}(\Lambda_\pi)
+ =I
+ \label{eq:separator-partition}
+\end{equation}
+on the relevant pion-like configuration space, allowing an overlap collar
+when the maps are smooth rather than orthogonal.  The exact definition,
+regulator, and matching order are part of the separator identity.
+
+\subsection{Matched pion result}
+
+The matched contribution is
+\begin{equation}
+ W_{\pi}^{\mathrm{matched}}(\Lambda_\pi)
+ =
+ W_{\pi}^{\mathrm{internal}}(\Lambda_\pi)
+ +W_{\pi}^{\mathrm{exchange}}(\Lambda_\pi)
+ -W_{\pi}^{\mathrm{overlap}}(\Lambda_\pi).
+ \label{eq:matched-pion}
+\end{equation}
+At a calculation complete through nuclear order \(\nu\), require
+\begin{equation}
+ \frac{\dd}{\dd\Lambda_\pi}
+ W_{\pi}^{\mathrm{matched}}(\Lambda_\pi)
+ =\cO(Q^{\nu+1}).
+ \label{eq:separator-invariance}
+\end{equation}
+The same flow applies to the Hamiltonian, current, EMT, partonic operators, and
+norm kernel.
+
+\subsection{Flow ledger}
+
+The \SeparatorTrajectory\ records, at each \(\Lambda_\pi\),
+\begin{equation}
+ \left\{
+ W_{\mathrm{int}},
+ W_{\mathrm{exch}},
+ W_{\mathrm{ov}},
+ H_{\ind},
+ J_{\ind},
+ \cO_{\ind},
+ N_{\eff},
+ W_{\mathrm{matched}}
+ \right\}.
+ \label{eq:separator-ledger}
+\end{equation}
+Large cancellations among components are acceptable only if the matched sum
+is stable and the individual numerical errors remain controlled.
+
+\subsection{No-double-counting cells}
+
+The provenance complex contains a two-cell
+\begin{equation}
+ \texttt{INTERNAL}+\texttt{EXCHANGE}
+ \xRightarrow{\ -\texttt{OVERLAP}\ }
+ \texttt{MATCHED},
+ \label{eq:overlap-two-cell}
+\end{equation}
+and an explicit/induced equivalence cell.  Missing or duplicate subtraction,
+or selection of the explicit continuum together with its fully induced
+replacement, fails before numerical evaluation.
+
+\section{Feshbach equivalence with transformed operators}
+\label{sec:feshbach}
+
+\subsection{Effective Hamiltonian}
+
+The projected Hamiltonian is
+\begin{equation}
+ H_{\eff}(E)
+ =PHP+PHQ(E-QHQ)^{-1}QHP.
+ \label{eq:heff}
+\end{equation}
+The wave operator is \(\omega(E)=Q(E-QHQ)^{-1}QHP\).
+
+\subsection{Effective operators}
+
+For any operator \(O\), the source-lifted form is
+\begin{equation}
+ O_{\eff}(E',E)
+ =P[1+\omega^{\dagger}(E')]O[1+\omega(E)]P.
+ \label{eq:oeff}
+\end{equation}
+For normalized Hermitian effective-space matrix elements, use
+\begin{equation}
+ \overline O_{\eff}
+ =N(E')^{-1/2}O_{\eff}(E',E)N(E)^{-1/2},
+ \label{eq:metric-oeff}
+\end{equation}
+with the norm kernel from \cref{eq:norm-kernel}.  Applying \(PHP\) while using
+\(POP\) is not an equivalent reduction.
+
+\subsection{Operator families required in the comparison}
+
+The explicit/induced benchmark includes:
+\begin{itemize}
+\item vector charge and current;
+\item axial and pseudoscalar operators where supported;
+\item EMT operators;
+\item pion-active partonic operators;
+\item transition operators;
+\item the norm kernel and pole-residue map.
+\end{itemize}
+The relation is
+\begin{verbatim}
+EXPLICIT_CONTINUUM_NNPI
+  EQUIVALENT_TO
+INDUCED_NN_OPERATOR_SET
+  + TRANSFORMED_CURRENTS
+  + TRANSFORMED_PARTONIC_OPERATORS
+  + VISIBLE_REMAINDER
+\end{verbatim}
+never an additive model combination.
+
+\subsection{Unitary representation covariance}
+
+Different off-shell prescriptions or unitary transformations may move strength
+among one-body, exchange, contact, and induced terms.  Physical observables
+remain invariant only when the Hamiltonian and all operators are transformed
+consistently.  This is the same representation-covariance principle seen in
+chiral charge operators \cite{Pastore2011}.
+
+\section{Continuum-aware coherent small-\texorpdfstring{\(x\)}{x} pilot}
+\label{sec:coherent}
+
+\subsection{Amplitude construction}
+
+The coherent contribution is
+\begin{equation}
+ \delta W_{\Lambda'\Lambda}^{\mathrm{coh}}
+ =
+ \sum_{X,\alpha}
+ \int\dd\mu_\alpha(E)
+ \mathcal A_{\Lambda'\to X,\alpha}^{*}(E)
+ \mathcal G_{X,\alpha}(E)
+ \mathcal A_{\Lambda\to X,\alpha}(E),
+ \label{eq:coherent-continuum}
+\end{equation}
+with explicit helicities, continuum channels, longitudinal ordering,
+propagation phase, species, scattering order, nuclear member, and source.
+
+\subsection{Mandatory zero and reversal limits}
+
+Require
+\begin{equation}
+ \mathcal A_1=0\quad\text{or}\quad\mathcal A_2=0
+ \quad\Longrightarrow\quad
+ \delta W^{\mathrm{coh}}=0,
+ \label{eq:coherent-zero}
+\end{equation}
+and the declared phase transformation under longitudinal-order interchange.
+Scalar, vector, and tensor responses are projected only after amplitudes are
+combined.  A copied unpolarized shadowing ratio must fail the tensor
+benchmark.  Physical leading-twist shadowing requires physical diffractive
+input and a factorization analysis beyond this pilot \cite{FrankfurtGuzeyStrikman2012}.
+
+\subsection{Parton--nuclear overlap}
+
+The matched result is
+\begin{equation}
+ W^{\mathrm{matched}}
+ =W^{\mathrm{partonic\ Wilson}}
+ +W^{\mathrm{nuclear\ coherent}}
+ -W^{\mathrm{shared\ soft/Glauber}},
+ \label{eq:parton-nuclear-overlap}
+\end{equation}
+with a count-once two-cell.  The nuclear coherent phase cannot be inserted by
+modifying the partonic staple.
+
+\section{Completely positive reductions after coherence}
+\label{sec:cp}
+
+\subsection{Amplitude embedding}
+
+Let
+\begin{equation}
+ V:\Hil_{\mathrm{resolved}}
+ \longrightarrow
+ \Hil_D\otimes\Hil_{\mathrm{unresolved}}
+ \label{eq:amplitude-embedding}
+\end{equation}
+be the full amplitude after continuum and coherent components are combined.
+The reduced map is
+\begin{equation}
+ \cE(\rho)
+ =\Tr_{\mathrm{unresolved}}
+ \left[V\rho V^{\dagger}\right].
+ \label{eq:cp-map}
+\end{equation}
+It is completely positive by construction.
+
+\subsection{Premature-trace failure}
+
+Tracing the \(NN\pi\), charge, or coherent labels before the amplitudes are
+combined deletes interference terms.  N2 must exhibit at least one current,
+tensor, or coherent observable for which
+\begin{equation}
+ \Tr\left[\sum_\alpha A_\alpha\rho A_\alpha^{\dagger}\right]
+ \neq
+ \Tr\left[
+ \left(\sum_\alpha A_\alpha\right)
+ \rho
+ \left(\sum_\beta A_\beta\right)^{\dagger}
+ \right].
+ \label{eq:premature-trace}
+\end{equation}
+Complete positivity is therefore not a license to discard resolved coherence.
+
+\section{Tagged, pole, and differential diagnostics}
+\label{sec:tagged}
+
+\subsection{Tagged continuum channel}
+
+A tagged observable retains spectator momentum and helicity, continuum
+energy, charge channel, active constituent, transition status, nuclear
+member, and pole variable.  Integrating over the tagged continuum and
+spectator variables must recover the inclusive N2 parent.
+
+\subsection{Pole extraction}
+
+Near the active-nucleon pole, the tagged amplitude is decomposed into a pole
+term plus a regular remainder.  Multiplication by the appropriate pole factor
+must recover the residue implied by the same spectral amplitude and norm
+kernel.  Regular final-state terms may change the background but not the pole
+residue in the analytic oracle.  Tagged spectator methods provide an
+independent test of the light-front spectral function and tensor structure
+\cite{CosynWeiss2020}.
+
+\subsection{Pion-resolved closure}
+
+The tagged-to-inclusive test is performed separately for:
+\begin{itemize}
+\item active proton;
+\item active neutron;
+\item active pion;
+\item resolved \(NN\leftrightarrow NN\pi\) transition;
+\item each charge and tensor channel.
+\end{itemize}
+Detector acceptance remains a separate \(\Proc\)-layer map.
+
+\section{Tensor-network and continuum realization}
+\label{sec:tn}
+
+\subsection{State-network topology}
+
+The nuclear state network contains branches
+\begin{equation}
+ \mathcal N_{\mathrm{state}}
+ =
+ \mathcal N_{NN}
+ \oplus
+ \mathcal N_{NN\pi}^{\mathrm{disc}}
+ \oplus
+ \mathcal N_{NN\pi}^{\mathrm{cont/FV}}.
+ \label{eq:n2-network}
+\end{equation}
+Edges retain sector, charge channel, energy or level index, partial wave,
+Jacobi orbitals, pion isospin, nucleon and deuteron helicities, S/D ancestry,
+separator, regulator, current/operator channel, microscopic member, and
+partonic Wilson identity.
+
+\subsection{Separate truncation axes}
+
+The following are independent axes:
+\begin{enumerate}
+\item Hamiltonian basis and Fock truncation;
+\item TTN bond dimension;
+\item continuum level count or volume;
+\item continuum quadrature and smearing;
+\item separator choice;
+\item current/operator order;
+\item coherent scattering order;
+\item numerical integration.
+\end{enumerate}
+Convergence in one axis cannot be used to hide another.
+
+\subsection{Observable-sensitive convergence}
+
+Report separately:
+\begin{equation}
+ \left\{
+ E_D,
+ Z_D,
+ Z_{NN\pi},
+ V_{NN\leftrightarrow NN\pi},
+ J^\mu,
+ \delta_{\mathrm{cont}},
+ \delta_{\mathrm{ang}},
+ W_{\pi},
+ W_{\mathrm{tensor}}^{\mathrm{trans}},
+ W_{\mathrm{tensor}}^{\mathrm{coh}},
+ W_{\pi}^{\mathrm{matched}}
+ \right\}.
+ \label{eq:n2-convergence-observables}
+\end{equation}
+At least one reduced-bond or coarse-continuum approximation must exhibit a
+small energy/norm defect but a visible current, transition, or tensor defect.
+
+\section{Assumption compiler and provenance}
+\label{sec:assumptions}
+
+\subsection{Primary plans}
+
+The compiler supports at least:
+\begin{verbatim}
+N2-PLAN-A
+  continuum-calibrated NNPI transition
+  declared-order complete current basis
+  AV18-derived NN branch
+  H7 PLAN-A microscopic nucleons
+
+N2-PLAN-B
+  finite-volume/discretized-continuum sequence
+  same current-generation rules
+  Norfolk-derived NN branch
+  H7 PLAN-A microscopic nucleons
+
+N2-PLAN-C
+  continuum-calibrated transition
+  AV18-derived NN branch
+  H7 PLAN-B microscopic nucleons
+
+N1-REFERENCE
+  immutable C16 analytic-transition parent
+\end{verbatim}
+These are mutually exclusive complete branches.  The continuum route and its
+finite approximation are compared through \FiniteVolumeMap; they are not two
+additive mechanisms.
+
+\subsection{Provenance two-complex}
+
+The \ProvComplex\ contains cells for:
+\begin{itemize}
+\item explicit continuum versus induced operator descriptions;
+\item internal/exchange/overlap pion matching;
+\item Hamiltonian-to-current gauging;
+\item equivalent continuum and finite-volume representations;
+\item partonic/nuclear shared soft support;
+\item coherent amplitudes and post-coherence CP reduction.
+\end{itemize}
+A nontrivial unresolved cycle is an audit failure or a genuinely distinct
+alternative; it is not interpreted as a physical amplitude.
+
+\section{Uncertainty and covariance}
+\label{sec:uncertainty}
+
+The N2 covariance is decomposed into
+\begin{equation}
+ \Cov_{N2}
+ =\Cov_{N}
+ +\Cov_{NN}
+ +\Cov_{\mathrm{cont}}
+ +\Cov_{\mathrm{current}}
+ +\Cov_{\mathrm{sep}}
+ +\Cov_{\mathrm{coh}}
+ +\Cov_{\mathrm{TN}}
+ +\Cov_{\num}
+ +\Cov_{\mathrm{match}}.
+ \label{eq:n2-covariance}
+\end{equation}
+Here \(\Cov_N\) is the correlated microscopic proton/neutron uncertainty,
+\(\Cov_{\mathrm{cont}}\) includes spectral and finite-volume errors,
+\(\Cov_{\mathrm{current}}\) is the current-order and low-energy-constant
+component, and \(\Cov_{\mathrm{sep}}\) measures residual separator dependence.
+These components are not collapsed into one envelope.
+
+A common N2 member propagates the same state, transition, current, separator,
+and coherent identities to every observable.  Alternative AV18, Norfolk, and
+microscopic assumption plans remain alternative models unless a shared
+posterior relates them.
+
+\section{Computational realization and typed interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.28\textwidth}L{0.64\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{N2Resolution} & Nuclear basis, interaction/current order, continuum and separator identity, regulator, and numerical tolerances.\\
+\ContinuumChannel & Charge-, spin-, isospin-, partial-wave-, threshold-, and normalization-resolved continuum channel.\\
+\SpectralDensity & Continuum measure, support, threshold law, and channel covariance.\\
+\FiniteVolumeMap & Discrete levels and weights, boundary conditions, continuum comparison map, and convergence residuals.\\
+\TransitionKernel & Hermitian \(NN\leftrightarrow NN\pi\) continuum transition family and generated adjoint.\\
+\PoleResidue & Pole condition, principal-value self-energy, cut, derivative, residue, and norm-kernel ledger.\\
+\GaugedTerm & One Hamiltonian term with all external-field attachments and proof-backed neutral status.\\
+\ExchangeCurrent & Typed one-, two-, transition-, contact-, regulator-, and induced-current block.\\
+\shortstack[l]{\texttt{CurrentBasis}\\\texttt{CompletenessCertificate}} & Hamiltonian-term/current incidence map and completeness gate.\\
+\BlockContinuity & Sector-, charge-, helicity-, and tensor-resolved signed continuity residuals.\\
+\SeparatorTrajectory & Internal, exchange, overlap, induced, and matched flows versus \(\Lambda_\pi\).\\
+\shortstack[l]{\texttt{ExplicitInduced}\\\texttt{PionComparison}} & Feshbach Hamiltonian/operator/norm comparison with visible remainder.\\
+\ContinuumCoherent & Continuum-channel helicity amplitudes, propagation phases, ordering, and overlap subtraction.\\
+\StateBundle & N2 state, continuum map, currents, partonic operators, TTN, ledgers, covariance, and readiness.\\
+\PredictionPlan & Frozen assumption branch and executable dependency graph.\\
+\ProvComplex & States, operators, transformations, equivalence/subtraction cells, and ancestry.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Typed data flow}
+
+The executable chain is
+\begin{equation}
+ \begin{tikzcd}[column sep=small]
+ \texttt{N1State}
+ \arrow[r]
+ &\texttt{ContinuumChannel}
+ \arrow[r]
+ &\texttt{TransitionKernel}
+ \arrow[r]
+ &\texttt{PoleResidue}
+ \arrow[d]
+ \\
+ \texttt{Observable}
+ &\texttt{ReductionMap}\arrow[l]
+ &\texttt{N2Parent}\arrow[l]
+ &\texttt{GaugedHamiltonian+Current}\arrow[l]
+ \end{tikzcd}
+ \label{eq:n2-data-flow}
+\end{equation}
+Every arrow validates coordinate, channel, member, regulator, separator,
+operator, scheme, and provenance identity.
+
+\subsection{Cache identity}
+
+A cache key contains at least
+\begin{equation}
+ \mathrm{hash}
+ \left(
+ H_{N2},
+ \mu_{\mathrm{cont}},
+ V_{PQ},
+ J^\mu,
+ \Lambda_\pi,
+ \cO,
+ \text{member},
+ \text{kinematics},
+ \text{code version}
+ \right).
+ \label{eq:n2-cache}
+\end{equation}
+Changing any current attachment, regulator, continuum map, separator, or norm
+kernel invalidates the cache.
+
+\section{Formal requirements and property-based tests}
+\label{sec:requirements}
+
+\subsection{Stable requirement identifiers}
+
+The normative requirement families are:
+\begin{longtable}{L{0.20\textwidth}L{0.72\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+\texttt{V14.CONT.1--6} & Direct-integral channels, normalization, support, thresholds, and projectors.\\
+\texttt{V14.FV.1--6} & Finite spectral maps, principal-value convergence, and terminology gates.\\
+\texttt{V14.POLE.1--7} & Self-energy, cut, pole, residue, norm kernel, and no-width theorem.\\
+\texttt{V14.CAL.1--4} & Restricted calibration, frozen holdouts, Jacobian, and null directions.\\
+\texttt{V14.GAUGE.1--7} & Gauged Hamiltonian, nonlocal kernels, regulator currents, and term ownership.\\
+\texttt{V14.CURR.1--8} & Declared-order current basis and completeness certificate.\\
+\texttt{V14.CONTI.1--8} & Blockwise continuity, charge/tensor resolution, current moments, and angular condition.\\
+\texttt{V14.PION.1--6} & Continuum pion-active and transition operators with unmatched status.\\
+\texttt{V14.SEP.1--7} & Separator trajectory, stable matched total, and no-double-counting cells.\\
+\texttt{V14.FESH.1--6} & Hamiltonian/operator/norm transformation and representation covariance.\\
+\texttt{V14.COH.1--6} & Continuum helicity amplitudes, zero/reversal limits, and shared-soft subtraction.\\
+\texttt{V14.CP.1--4} & Post-coherence CP map and premature-trace failure.\\
+\texttt{V14.TN.1--6} & Continuum TTN, full-bond equality, and observable-sensitive convergence.\\
+\texttt{V14.PROV.1--5} & Assumption plans, two-complex normalization, and ancestry.\\
+\texttt{V14.GATE.1--8} & Downstream matching, sector, process, inference, and production gates.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Core property tests}
+
+The implementation must test at least:
+\begin{enumerate}
+\item continuum orthogonality and resolution of identity;
+\item exact zero discontinuity below threshold;
+\item principal-value and cut signs;
+\item finite-volume-to-continuum convergence;
+\item transition-kernel Hermiticity;
+\item pole position, residue, and norm-kernel agreement;
+\item one current attachment certificate per Hamiltonian term;
+\item blockwise and charge-resolved continuity;
+\item direct-current versus GTMD/GPD moments;
+\item separator stability and signed missing/duplicate-subtraction defects;
+\item explicit/induced equivalence with transformed operators and remainder;
+\item coherent zero, order-reversal, tensor, and overlap tests;
+\item CP/Kraus equality after coherence and premature-trace failure;
+\item exact/Krylov/full-bond agreement;
+\item distinct TTN, continuum, separator, and numerical convergence axes.
+\end{enumerate}
+
+\subsection{Required negative-test scale}
+
+A production implementation should contain at least 340 stable negative-test
+identities covering continuum support, transition dynamics, current
+completeness, blockwise continuity, pion separation, coherent/CP ordering,
+tensor-network compression, stale caches, and all downstream readiness gates.
+Every failure carries a stable ID, expected exception class, and deterministic
+diagnostic.
+
+\section{Analytic and finite-dimensional benchmark suite}
+\label{sec:benchmarks}
+
+\subsection{N2-A: analytic separable continuum}
+
+Choose
+\begin{equation}
+ V_\alpha(E)=g_\alpha
+ (E-E_{\mathrm{th},\alpha})^{\nu_\alpha/2}
+ e^{-(E-E_{\mathrm{th},\alpha})/(2\Lambda_\alpha)}
+ \theta(E-E_{\mathrm{th},\alpha}),
+ \label{eq:separable-oracle}
+\end{equation}
+and evaluate the principal value, cut, pole, derivative, and residue by an
+independent quadrature or analytic expression.  Below-threshold absorption
+must be exactly zero.
+
+\subsection{N2-B: finite-volume convergence}
+
+Construct a sequence of levels and weights converging to
+\cref{eq:separable-oracle}.  Test the principal value, cut, pole, residue,
+transition matrix element, current matrix element, and pion-active moment.
+
+\subsection{N2-C: charge-complete continuum channels}
+
+Verify charge \(+1\), isospin zero, parity, normalization, and channel
+orthogonality for \(pn\pi^0\), \(pp\pi^-\), and \(nn\pi^+\).
+
+\subsection{N2-D: transition-kernel Hermiticity}
+
+Check emission/absorption adjoints on basis states and deterministic complex
+superpositions, including regulator, recoil, phase, and charge-channel
+identity.
+
+\subsection{N2-E: Hamiltonian gauging}
+
+Generate currents from a finite Hamiltonian containing kinetic,
+sector-changing, derivative, contact, nonlocal-regulator, and induced terms.
+Every retained term must appear in the completeness certificate.
+
+\subsection{N2-F: blockwise continuity}
+
+Verify \cref{eq:continuity-pp,eq:continuity-qp} and the conjugate blocks in
+every charge channel.  Removing each nonzero current contribution must produce
+a signed defect.
+
+\subsection{N2-G: current-component and angular closure}
+
+Construct a covariant spin-1 current, generate all supported light-front
+helicity amplitudes, and compare charge, magnetic, quadrupole, angular, and
+GTMD/GPD-moment routes.
+
+\subsection{N2-H: separator flow}
+
+Vary \(\Lambda_\pi\) so that internal, exchange, overlap, and induced terms
+move substantially while the matched total remains stable within the declared
+order.
+
+\subsection{N2-I: Feshbach Hamiltonian/operator equivalence}
+
+Compare full and effective calculations for the Hamiltonian, vector current,
+axial/pseudoscalar operator, EMT, pion-active partonic operator, transition
+operator, and norm kernel.  Omitting an induced operator must fail.
+
+\subsection{N2-J: pion-active common-parent closure}
+
+Verify direct and sequential TMD/GPD/PDF/current reductions from the
+continuum-calibrated nuclear splitting amplitude without a fitted pion
+normalization.
+
+\subsection{N2-K: transition tensor signal}
+
+Construct one tensor observable that requires a specific transition partial
+wave and vanishes when either participating amplitude is removed.
+
+\subsection{N2-L: coherent continuum pilot}
+
+Test zero elementary amplitudes, longitudinal-order reversal, scalar/vector/
+tensor projections, failure of an unpolarized ratio, and shared-soft
+subtraction.
+
+\subsection{N2-M: CP reduction}
+
+Compare the explicit post-coherence partial trace with the Kraus form and show
+that an early trace loses an interference observable.
+
+\subsection{N2-N: exact, Krylov, TTN, and continuum convergence}
+
+Full bond and fine continuum must reproduce the exact oracle.  At least one
+reduced-bond or coarse-continuum state must retain a small energy error while
+losing a real transition/current/tensor signal.
+
+\subsection{N2-O: tagged-inclusive closure}
+
+Integrate continuum- and pion-resolved tagged observables and recover the
+inclusive N2 parent and the declared pole residue.
+
+\subsection{N2-P: frozen holdouts and provenance normalization}
+
+Keep at least one transition, residue, pion, tensor, current, angular, and
+coherent observable unfitted.  Verify that every explicit/induced, overlap,
+current, coherent, and CP path is counted exactly once.
+
+\section{Staged N2 implementation program}
+\label{sec:stages}
+
+\subsection{N2.0: continuum and finite-volume types}
+
+Implement \ContinuumChannel, \SpectralDensity, \FiniteVolumeMap, support,
+normalization, thresholds, and analytic benchmarks.
+
+\subsection{N2.1: transition, pole, and residue}
+
+Implement \TransitionKernel, self-energy, principal value, cut, pole,
+derivative, residue, norm kernel, and calibration/holdout manifests.
+
+\subsection{N2.2: gauged Hamiltonian and currents}
+
+Implement the gauged-Hamiltonian-term, exchange-current, and current-basis
+completeness interfaces.  Add regulator gauging and blockwise continuity.
+
+\subsection{N2.3: pion operators and separator flow}
+
+Implement continuum-aware pion-active and transition operators,
+\SeparatorTrajectory, Feshbach comparisons, and deterministic two-cells.
+
+\subsection{N2.4: coherent, CP, and tagged pilots}
+
+Upgrade the coherent amplitude, shared-soft map, CP reduction, and tagged
+continuum diagnostics.
+
+\subsection{N2.5: tensor network, convergence, and release gates}
+
+Integrate continuum indices into the TTN, complete all convergence manifests,
+negative tests, assumption plans, cache validation, and fail-closed downstream
+gates.
+
+\section{Acceptance criteria and scientific status}
+\label{sec:acceptance}
+
+N2 is formally accepted only when:
+\begin{enumerate}
+\item continuum and finite-volume routes have typed normalization and support;
+\item the finite sequence converges to the analytic continuum oracle;
+\item pole, residue, principal-value, cut, and norm ledgers close;
+\item below-threshold absorption is exactly zero and numerical \(\eps\) is not physical;
+\item the transition kernel is Hermitian with generated adjoints;
+\item every retained Hamiltonian term has certified current attachments or a proof-backed neutral status;
+\item the declared-order current basis has no unexplained gap;
+\item continuity closes separately in every sector, charge, helicity, and tensor block;
+\item charge, magnetic, quadrupole, current-component, angular, and moment diagnostics pass;
+\item the continuum pion-active route closes and remains explicitly unmatched;
+\item the matched pion total is stable under separator variation;
+\item Feshbach elimination transforms Hamiltonian, currents, partonic operators, and norm kernel with a visible remainder;
+\item the coherent pilot is helicity resolved and explicitly nonphysical;
+\item partonic Wilson and nuclear coherent mechanisms remain separate with one overlap subtraction;
+\item CP reduction occurs only after amplitudes are combined;
+\item exact, Krylov, TTN, finite-volume, separator, and numerical convergence are reported separately;
+\item nontrivial transition, residue, pion, tensor, current, and coherent holdouts remain unfitted;
+\item all negative tests and prior regression gates pass;
+\item production artifacts and registries remain unchanged;
+\item all manifests rebuild deterministically;
+\item all statuses remain qualified and validation only;
+\item \(\Delta\Delta\), compact six-quark, hidden-color, physical matching, evolution, process, and inference gates remain closed.
+\end{enumerate}
+
+Allowed statuses include:
+\begin{verbatim}
+N2_CONTINUUM_NNPI_TRANSITION_VALIDATED
+N2_FINITE_VOLUME_TO_CONTINUUM_MAP_VALIDATED
+N2_POLE_AND_RESIDUE_BENCHMARKED
+N2_DECLARED_ORDER_EXCHANGE_CURRENT_BASIS_COMPLETE
+N2_FINITE_BASIS_CONTINUITY_CLOSED
+N2_SEPARATOR_STABILITY_VALIDATED
+N2_PION_ACTIVE_ROUTE_VALIDATED_UNMATCHED
+N2_COHERENT_CONTINUUM_PILOT_VALIDATED
+N2_CP_REDUCTION_VALIDATED
+N2_TTN_CONTINUUM_BRANCH_VALIDATED
+N2_VALIDATION_ONLY
+\end{verbatim}
+
+\section{Boundary to N3 and later QCD matching}
+\label{sec:boundary}
+
+If the continuum-transition, current-completeness, separator, and coherent
+checks close, the next nuclear layer may add
+\begin{equation}
+ \Hil_{\mathrm{N3}}
+ =\Hil_{\mathrm{N2}}
+ \oplus\Hil_{\Delta\Delta}
+ \oplus\Hil_{6q}
+ \oplus\cdots,
+ \label{eq:n3-space}
+\end{equation}
+with explicit transition currents, normalized interference, color and spin
+structure, and matched coherent amplitudes.  A scalar \(\Delta\Delta\) or
+six-quark probability remains insufficient.
+
+Independently, the complete low-resolution nuclear parent still requires the
+LF-to-QCD matching, soft/rapidity completion, rank-aware evolution, process
+factorization, and inference layers.  Continuum calibration of the nuclear
+pion sector does not close those gates.
+
+\section{Conclusion}
+
+Volume XIV completes the formal N1-to-N2 transition.  The pion sector is no
+longer merely a finite analytic branch: it is a direct-integral continuum with
+a controlled finite spectral approximation, a dispersive self-energy, a
+physical support rule, a pole and residue, and a normalized operator metric.
+The nuclear current is no longer a curated list detached from the force:
+every retained Hamiltonian term is gauged, every attachment is certified, and
+continuity is tested block by block and channel by channel.  The pion
+separator moves strength among internal, exchange, overlap, and induced
+representations while the matched total remains stable.  Currents, EMT
+operators, pion-active and transition partonic operators, and the norm kernel
+transform with the Hamiltonian.  Coherent amplitudes are combined before
+partial trace and remain distinct from the partonic Wilson staple.  This is
+the required foundation for adding explicit \(\Delta\Delta\), compact
+six-quark, and hidden-color sectors without rebuilding the nuclear model as a
+patchwork of separately normalized corrections.
+
+\appendix
+
+\section{Derivation of the self-energy discontinuity}
+\label{app:disc}
+
+Using
+\begin{equation}
+ \frac{1}{x+i0}=\PV\frac1x-i\pi\delta(x),
+ \label{eq:distribution-identity}
+\end{equation}
+insert the spectral projector \cref{eq:spectral-projector} into
+\cref{eq:projected-resolvent}.  For a matrix element between \(P\)-space
+states \(|a\rangle\), \(|b\rangle\),
+\begin{equation}
+ \Sigma_{ab}(E_0+i0)
+ =\sum_\alpha\int\dd E\,
+ \rho_\alpha(E)
+ \frac{V_{a\alpha}(E)V_{\alpha b}(E)}{E_0-E+i0}.
+ \label{eq:self-energy-app}
+\end{equation}
+Applying \cref{eq:distribution-identity} gives \cref{eq:self-energy-disc}.
+The delta term contributes only when \(E_0\) lies inside the support of
+\(\rho_\alpha\).  A finite numerical width approximates this distribution but
+does not define the support.
+
+\section{Pole-residue and norm-kernel relation}
+\label{app:residue}
+
+For a scalar projected resolvent
+\begin{equation}
+ G_P(E)=\frac{1}{E-E_0-\Sigma(E)},
+\end{equation}
+expand around a simple pole \(E_D\):
+\begin{equation}
+ E-E_0-\Sigma(E)
+ =
+ (E-E_D)\left[1-\Sigma'(E_D)\right]+ \cO((E-E_D)^2).
+\end{equation}
+Thus
+\begin{equation}
+ G_P(E)
+ =\frac{Z_D}{E-E_D}+\text{regular},
+ \qquad
+ Z_D=\frac{1}{1-\Sigma'(E_D)}.
+\end{equation}
+The same derivative appears in the normalization of the projected component.
+In a matrix problem, \(Z_D\) becomes the residue on the pole eigenspace and
+must be evaluated with the proper metric.
+
+\section{Block continuity derivation}
+\label{app:block-continuity}
+
+Multiplying the block matrices in \cref{eq:block-operators} yields
+\begin{align}
+ [H,\rho]_{PP}
+ &=H_P\rho_{PP}+V_{PQ}\rho_{QP}
+ -\rho_{PP}H_P-\rho_{PQ}V_{QP},\\
+ [H,\rho]_{PQ}
+ &=H_P\rho_{PQ}+V_{PQ}\rho_{QQ}
+ -\rho_{PP}V_{PQ}-\rho_{PQ}H_Q,\\
+ [H,\rho]_{QP}
+ &=V_{QP}\rho_{PP}+H_Q\rho_{QP}
+ -\rho_{QP}H_P-\rho_{QQ}V_{QP},\\
+ [H,\rho]_{QQ}
+ &=V_{QP}\rho_{PQ}+H_Q\rho_{QQ}
+ -\rho_{QP}V_{PQ}-\rho_{QQ}H_Q.
+\end{align}
+Each block must be matched by the divergence of the corresponding current
+block.  A diagonal one-body current cannot close the transition identities.
+
+\section{Machine-readable schemas}
+\label{app:schemas}
+
+\subsection{Continuum-channel record}
+
+\begin{verbatim}
+{
+  "channel_id": "...",
+  "charge_channel": "pn_pi0",
+  "total_charge": 1,
+  "isospin": 0,
+  "J_parity": "1+",
+  "Jz": "...",
+  "pair_spin": "...",
+  "pair_isospin": "...",
+  "jacobi_orbitals": ["...", "..."],
+  "threshold": "...",
+  "normalization": "ENERGY_DELTA",
+  "spectral_density_id": "...",
+  "regulator_id": "...",
+  "member_id": "..."
+}
+\end{verbatim}
+
+\subsection{Pole and residue record}
+
+\begin{verbatim}
+{
+  "pole_id": "...",
+  "hamiltonian_id": "...",
+  "transition_kernel_id": "...",
+  "spectral_map_id": "...",
+  "pole_energy": "...",
+  "principal_value": "...",
+  "cut_weight": "...",
+  "self_energy_derivative": "...",
+  "residue": "...",
+  "norm_kernel_id": "...",
+  "below_threshold_absorption": 0.0,
+  "epsilon_is_physical": false
+}
+\end{verbatim}
+
+\subsection{Current completeness certificate}
+
+\begin{verbatim}
+{
+  "certificate_id": "...",
+  "hamiltonian_id": "...",
+  "declared_order": "...",
+  "terms": [
+    {
+      "hamiltonian_term_id": "...",
+      "charge_status": "CHARGED",
+      "current_attachments": ["..."],
+      "regulator_attachment": "...",
+      "contact_partners": ["..."],
+      "continuity_blocks": ["NN_TO_NN", "NN_TO_NNPI"],
+      "unresolved_gaps": []
+    }
+  ],
+  "complete_at_declared_order": true
+}
+\end{verbatim}
+
+\subsection{Separator trajectory record}
+
+\begin{verbatim}
+{
+  "trajectory_id": "...",
+  "separator_values": ["..."],
+  "internal": ["..."],
+  "exchange": ["..."],
+  "overlap": ["..."],
+  "induced_hamiltonian": ["..."],
+  "induced_current": ["..."],
+  "induced_partonic_operator": ["..."],
+  "matched_total": ["..."],
+  "stability_residual": "...",
+  "truncation_tolerance": "..."
+}
+\end{verbatim}
+
+\section{Compact N2 acceptance checklist}
+
+\begin{enumerate}
+\item Direct-integral continuum channels normalized and support typed?
+\item Complete charge, isospin, parity, helicity, and partial-wave identity?
+\item Finite-volume/discrete sequence converges to the continuum oracle?
+\item Principal value, cut, pole, derivative, residue, and norm kernel close?
+\item Exact zero absorption below threshold and no physical numerical \(\eps\)?
+\item Hermitian transition kernel with generated adjoint?
+\item Restricted calibration and frozen holdouts?
+\item Every Hamiltonian term gauged or certified neutral?
+\item Complete declared-order current basis with no unexplained gap?
+\item Blockwise continuity in all sectors, charges, helicities, and tensor blocks?
+\item Current-component, angular, and GTMD/GPD-moment closure?
+\item Continuum pion-active and transition routes close while unmatched?
+\item Stable separator trajectory for Hamiltonian and all operators?
+\item Explicit/induced Feshbach equivalence with metric and visible remainder?
+\item Helicity-resolved coherent pilot with exact zero/reversal limits?
+\item Partonic/nuclear shared-soft subtraction counted once?
+\item CP map derived only after amplitudes are combined?
+\item Tagged-inclusive and pole-residue closure?
+\item Exact/Krylov/full-bond equality and observable-sensitive convergence?
+\item Deterministic assumption plans, provenance, caches, and manifests?
+\item All unavailable sectors and downstream gates fail closed?
+\item Production and authoritative artifacts unchanged?
+\end{enumerate}
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev.\ Mod.\ Phys.\ \textbf{21}, 392 (1949).
+
+\bibitem{KeisterPolyzou1991}
+B.~D.~Keister and W.~N.~Polyzou,
+``Relativistic Hamiltonian dynamics in nuclear and particle physics,''
+Adv.\ Nucl.\ Phys.\ \textbf{20}, 225 (1991).
+
+\bibitem{Carbonell1998}
+J.~Carbonell, B.~Desplanques, V.~A.~Karmanov, and J.-F.~Mathiot,
+``Explicitly covariant light-front dynamics and relativistic few-body systems,''
+Phys.\ Rept.\ \textbf{300}, 215 (1998), arXiv:nucl-th/9804029.
+
+\bibitem{Feshbach1962}
+H.~Feshbach,
+``A unified theory of nuclear reactions. II,''
+Ann.\ Phys.\ \textbf{19}, 287 (1962).
+
+\bibitem{KvinikhidzeBlankleider1999I}
+A.~N.~Kvinikhidze and B.~Blankleider,
+``Gauging of equations method. I. Electromagnetic currents of three
+distinguishable particles,''
+Phys.\ Rev.\ C \textbf{60}, 044003 (1999), arXiv:nucl-th/9901001.
+
+\bibitem{KvinikhidzeBlankleider1999II}
+A.~N.~Kvinikhidze and B.~Blankleider,
+``Gauging of equations method. II. Electromagnetic currents of three identical
+particles,''
+Phys.\ Rev.\ C \textbf{60}, 044004 (1999), arXiv:nucl-th/9901002.
+
+\bibitem{Pastore2009}
+S.~Pastore, L.~Girlanda, R.~Schiavilla, M.~Viviani, and R.~B.~Wiringa,
+``Electromagnetic currents and magnetic moments in chiral effective field
+theory,''
+Phys.\ Rev.\ C \textbf{80}, 034004 (2009), arXiv:0906.1800.
+
+\bibitem{Koelling2009}
+S.~K\"olling, E.~Epelbaum, H.~Krebs, and U.-G.~Mei\ss ner,
+``Two-pion exchange electromagnetic current in chiral effective field theory
+using the method of unitary transformation,''
+Phys.\ Rev.\ C \textbf{80}, 045502 (2009), arXiv:0907.3437.
+
+\bibitem{Koelling2011}
+S.~K\"olling, E.~Epelbaum, H.~Krebs, and U.-G.~Mei\ss ner,
+``Two-nucleon electromagnetic current in chiral effective field theory:
+one-pion exchange and short-range contributions,''
+Phys.\ Rev.\ C \textbf{84}, 054008 (2011), arXiv:1107.0602.
+
+\bibitem{Pastore2011}
+S.~Pastore, L.~Girlanda, R.~Schiavilla, and M.~Viviani,
+``The two-nucleon electromagnetic charge operator in chiral effective field
+theory up to one loop,''
+Phys.\ Rev.\ C \textbf{84}, 024001 (2011), arXiv:1106.4539.
+
+\bibitem{Krebs2020}
+H.~Krebs,
+``Nuclear currents in chiral effective field theory,''
+Eur.\ Phys.\ J.\ A \textbf{56}, 234 (2020), arXiv:2008.00974.
+
+\bibitem{Baroni2021}
+A.~Baroni, G.~B.~King, and S.~Pastore,
+``Electroweak currents from chiral effective field theory,''
+Few-Body Syst.\ \textbf{62}, 114 (2021), arXiv:2107.10721.
+
+\bibitem{HeZahed2024}
+F.~He and I.~Zahed,
+``Deuteron gravitational form factors: exchange currents,''
+Phys.\ Rev.\ C \textbf{110}, 014312 (2024), arXiv:2401.09318.
+
+\bibitem{LellouchLuscher2001}
+L.~Lellouch and M.~L\"uscher,
+``Weak transition matrix elements from finite-volume correlation functions,''
+Commun.\ Math.\ Phys.\ \textbf{219}, 31 (2001), arXiv:hep-lat/0003023.
+
+\bibitem{Wiringa1995}
+R.~B.~Wiringa, V.~G.~J.~Stoks, and R.~Schiavilla,
+``Accurate nucleon-nucleon potential with charge-independence breaking,''
+Phys.\ Rev.\ C \textbf{51}, 38 (1995), arXiv:nucl-th/9408016.
+
+\bibitem{Machleidt2001}
+R.~Machleidt,
+``The high-precision, charge-dependent Bonn nucleon-nucleon potential,''
+Phys.\ Rev.\ C \textbf{63}, 024001 (2001), arXiv:nucl-th/0006014.
+
+\bibitem{CaoEtAl2026}
+X.~Cao, S.~Cheng, Y.~Duan, Y.~Li, S.~Xu, and X.~Zhao,
+``Non-perturbative flavor asymmetry in the nucleon and deuteron: The
+light-front Hamiltonian effective field theory approach,''
+arXiv:2601.13567 (2026).
+
+\bibitem{FrankfurtGuzeyStrikman2012}
+L.~Frankfurt, V.~Guzey, and M.~Strikman,
+``Leading twist nuclear shadowing phenomena in hard processes with nuclei,''
+Phys.\ Rept.\ \textbf{512}, 255 (2012), arXiv:1106.2091.
+
+\bibitem{CosynWeiss2020}
+W.~Cosyn and C.~Weiss,
+``Polarized electron--deuteron deep-inelastic scattering with spectator
+nucleon tagging,''
+Phys.\ Rev.\ C \textbf{102}, 065204 (2020), arXiv:2006.03033.
+
+\bibitem{Miller2014}
+G.~A.~Miller,
+``Pionic and hidden-color, six-quark contributions to the deuteron \(b_1\)
+structure function,''
+Phys.\ Rev.\ C \textbf{89}, 045203 (2014), arXiv:1311.4561.
+
+\bibitem{HoodbhoyJaffeManohar1989}
+P.~Hoodbhoy, R.~L.~Jaffe, and A.~Manohar,
+``Novel effects in deep-inelastic scattering from spin-one hadrons,''
+Nucl.\ Phys.\ B \textbf{312}, 571 (1989).
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\end{thebibliography}
+
+\end{document}

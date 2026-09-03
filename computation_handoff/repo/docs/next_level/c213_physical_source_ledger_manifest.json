@@ -1,0 +1,48 @@
+{
+  "schema": "C213-PHYSICAL-SOURCE-LEDGER-MANIFEST-V1",
+  "artifact": "physical_source_ledger_manifest",
+  "package_root": "367e0d7a008f64624d2d7d751e68f6688a88f3ec12f8a18b9c1da852bafe57eb",
+  "status": "C213_C212_PHYSICAL_INPUT_AUTHORITY_AUDITED_STANDARD_CAPSULES_READY_FINITE_BASIS_BINDING_INCOMPLETE",
+  "plan": "PHYSINPUT1-B",
+  "physical_record_ready": false,
+  "physical_values_selected": 0,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "input_id": "C154_STD_MUD_MSbar_2GeV_NL4",
+        "quantity": "light_quark_mass",
+        "source_id": "PDG2026_QUARK_MASSES",
+        "source_sha256": "90b4d001694b6bc6addf1e31a0685fca8f54bec3da3530c4122c96a0b1f8a8e7",
+        "locator": "p.6, Eq. (60.4)",
+        "units": "MeV",
+        "scheme": "MSbar",
+        "scale": "2 GeV",
+        "N_f": 4,
+        "classification": "AUTHENTICATED_STANDARD_PHYSICAL_COORDINATE",
+        "consumed": false
+      },
+      {
+        "input_id": "C154_STD_ALPHA_S_MSbar_MZ",
+        "quantity": "qcd_coupling",
+        "source_id": "PDG2026_QCD",
+        "source_sha256": "c04c628d76b18610c5fa2a919c6081918a25b55fb971b6af5829f4ca2baa386f",
+        "locator": "p.42, Eq. (9.25)",
+        "units": "1",
+        "scheme": "MSbar",
+        "scale": "mZ",
+        "N_f": 5,
+        "classification": "AUTHENTICATED_STANDARD_PHYSICAL_COORDINATE",
+        "consumed": false
+      }
+    ],
+    "count": 2,
+    "hash_locked": true,
+    "root": "229f40fed9c00c492f50f4561db1e0c7fd174f73a05865a1f5d29ead7679fdd7"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "default_plan": {
+    "ancestry": {
+      "component:wp12_resolved_constituent_parent": [
+        "component:wp12_resolved_constituent_parent"
+      ]
+    },
+    "ordered_selection": [
+      "component:wp12_resolved_constituent_parent"
+    ],
+    "plan_id": "C2-ACCEPTED-DEFAULT"
+  },
+  "requirement_id": "C2.COMPOSE",
+  "rules_enforced": [
+    "CP response replaces legacy response",
+    "absorptive phases are alternatives",
+    "NNpi cannot be duplicated",
+    "benchmarks cannot be central",
+    "wave functions are alternatives",
+    "ensemble members are nonadditive",
+    "future/past links are alternatives",
+    "gluon f/d require process weighting",
+    "zero-centered unsupported nonnucleonic components cannot be central"
+  ],
+  "schema_version": "1.0.0"
+}

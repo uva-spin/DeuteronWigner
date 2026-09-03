@@ -1,0 +1,15 @@
+{
+  "schema":"C207-C208-CONTINUATION-CONTRACT-V1",
+  "from_package":"C207/HQCDMOMQCOND1",
+  "to_package":"C208/HQCDMOMQSOURCE1",
+  "from_baseline":"671366981ef1a521bbc208b79a3c0ae3daf6f683",
+  "from_package_root":"3c4b895ca1c57443ab747c6fce0213ce786a9eb90e014c31c87b4e3ff65b7438",
+  "from_status":"C207_HQCDMOMQCOND1_TARGET_SOURCE_PROJECTOR_KINEMATICS_AUTHORITY_INCOMPLETE",
+  "from_plan":"MOMQCOND1-C",
+  "completed_object":"authenticated fail-closed target authority audit",
+  "next_frontier":{"object_id":"C197-ST-9-SOURCE","exact_missing_object":"authenticated target MOMq source, projector, and exactly representable kinematics","status":"SOURCE_ACQUISITION_OR_PROJECT_DERIVATION_FRONTIER","source_side":true},
+  "required_routes":["repository and Git history","authenticated local archives","exact official TeX/ancillary/source code","official PDF with locator if necessary","project-owned derivation after authenticated target definition"],
+  "preserve":["C206 full affine family","C207 missing-as-unavailable records","C197-ST-1 through ST-8"],
+  "constraints":{"broad_source_substitution":false,"invented_formula":false,"physical":false,"C158_value_inputs":0,"C166_graph_delta":[0,0],"Q0_Q1_Q2_modified":false,"push":false},
+  "evidence":["C140 reference kinematics incomplete","C168 target coefficient unavailable","C198 target condition not evaluated","C207 authenticated audit"]
+}

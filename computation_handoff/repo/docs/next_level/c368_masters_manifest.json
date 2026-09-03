@@ -1,0 +1,36 @@
+{
+  "package_root": "b07374382e711e9906925fef30c40575bc56b61f0075b860ffcdf0234e7e8a1d",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUPMASTER1-C",
+  "record": {
+    "common": {
+      "contours": "sigma_v,sigma_tildev in {+1,-1} retain i0 orientation",
+      "loop_measure": "mu^(2epsilon)d^d ell/(2pi)^d",
+      "powers": "A,B,C nonnegative propagator powers; r,s analytic eikonal shifts"
+    },
+    "count": 3,
+    "root": "1c8009a3a060ff9283328f6c0b902640ca07748245381bd4590f15d8eb6cd3fd",
+    "rows": [
+      {
+        "domain": "ell in R^d; Schwinger parameters t_i in (0,infinity), projective simplex after common scale extraction",
+        "id": "L_ABCrs",
+        "integrand": "1/[(ell^2+i0)^A ((p-ell)^2+i0)^B (v.ell+i sigma_v 0)^(C+r)]",
+        "owners": "Sigma_q,W_v,V_qv and crossed tildev family"
+      },
+      {
+        "domain": "0<x<1, kT in R^(2-2epsilon); ell+=(1-x)p+",
+        "id": "R_ABr",
+        "integrand": "theta(ell0)delta_plus(ell^2-lambda^2)/[((p-ell)^2-m^2+i0)^A (v.ell+i0)^(B+r)]",
+        "jacobian": "d ell+ d ell- delta(2ell+ell--kT^2-lambda^2)=d x/[2(1-x)] before common external normalization"
+      },
+      {
+        "domain": "virtual ell in R^d; real master is Disc_(ell^2) with theta(ell0)",
+        "id": "S_ABrs",
+        "integrand": "(v.tildev)/[(ell^2+i0)^A(v.ell+i0)^(B+r)(tildev.ell-i0)^(B+s)]",
+        "owners": "count-once soft real plus virtual"
+      }
+    ]
+  },
+  "status": "C368_COMMON_GROUP_MASTER_REPRESENTATION_DERIVED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "BOUND"
+}

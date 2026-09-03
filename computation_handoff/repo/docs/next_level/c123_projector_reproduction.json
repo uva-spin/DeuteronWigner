@@ -1,0 +1,15 @@
+{
+  "schema": "C123-PROJECTOR-REPRODUCTION-REPORT-V1",
+  "status": "C123_ICAXIS_AXIS_CARDINALITY_INCOMPLETE",
+  "graphs": ["I2_density_projector", "derivative_density", "CM_ground", "triplet_projected"],
+  "route_A": "member-domain construction",
+  "route_B": "projector/basis preimage construction",
+  "route_residuals": null,
+  "rank_residuals": null,
+  "orientation_residuals": null,
+  "leakage_residuals": null,
+  "projector_terminal": false,
+  "reason": "C117 has no finite graph-conditioned internal-mode members; no projector object is synthesized from array positions or numerical magnitude",
+  "threshold_zeros": 0,
+  "continuum_completeness": false
+}

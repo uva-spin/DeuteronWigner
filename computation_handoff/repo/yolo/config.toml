@@ -1,0 +1,12 @@
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+web_search = "live"
+project_doc_max_bytes = 32768
+
+[features]
+hooks = true
+goals = true
+multi_agent = true
+
+[projects."/Users/dustin/work/DeuteronWigner"]
+trust_level = "trusted"

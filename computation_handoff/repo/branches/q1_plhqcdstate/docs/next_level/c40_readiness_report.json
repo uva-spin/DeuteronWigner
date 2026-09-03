@@ -1,0 +1,373 @@
+{
+  "c38_supersession": "C38_PARTONIC_STRUCTURAL_SCAFFOLD_ONLY",
+  "regulator": "O4-SPACELIKE-COLLINS-JMY",
+  "resolutions": [
+    {
+      "K": 17,
+      "bundle_hash": "069e4a7a7fe2cc098871ee33d1bb5636a697e6c279b5569e132bb231813b66be",
+      "constrained_operator_norms": {
+        "boundary": 0.1379298604363827,
+        "constrained": 0.103447395327287,
+        "inst_fermion": 0.034482465109095674,
+        "inst_gluon": 0.06896493021819135,
+        "zero_mode": 0.17241232554547833
+      },
+      "counterterms": {
+        "condition_number": 1.2280297480843776,
+        "nullity": 0,
+        "rank": 10,
+        "shape": [
+          10,
+          10
+        ],
+        "synthetic_solution_residual": 1.6653345369377348e-16
+      },
+      "gram_residuals": {
+        "q": 0.0,
+        "qg": 0.0
+      },
+      "hamiltonians": {
+        "q": {
+          "matrix_free_residual": 4.440892098500626e-16,
+          "nnz": 10,
+          "shape": [
+            4,
+            4
+          ],
+          "spectrum": [
+            0.194724739257,
+            0.370800808545,
+            0.664888424939,
+            1.081891909612
+          ]
+        },
+        "qg": {
+          "matrix_free_residual": 3.972054645195637e-15,
+          "nnz": 22,
+          "shape": [
+            8,
+            8
+          ]
+        }
+      },
+      "measurements": {
+        "logplus_constant_residual": 0.0,
+        "plus_constant_residual": 1.1102230246251565e-16,
+        "ranks": {
+          "convolution": 4,
+          "delta": 1,
+          "logplus": 1,
+          "mellin": 3,
+          "plus": 1,
+          "regular": 1
+        },
+        "shapes": {
+          "convolution": [
+            4,
+            4
+          ],
+          "delta": [
+            1,
+            4
+          ],
+          "logplus": [
+            1,
+            4
+          ],
+          "mellin": [
+            3,
+            4
+          ],
+          "plus": [
+            1,
+            4
+          ],
+          "regular": [
+            1,
+            4
+          ]
+        }
+      },
+      "q_dimension": 4,
+      "qg_dimension": 8,
+      "vertex": {
+        "adjoint_residual": 0.0,
+        "nnz": 7,
+        "norm": 0.05840330904154063,
+        "shape": [
+          8,
+          4
+        ]
+      },
+      "ward_defects": {
+        "boundary": 0.5884706415786602,
+        "constrained": 0.4413529811839952,
+        "inst_fermion": 0.14711766039466506,
+        "inst_gluon": 0.2942353207893301,
+        "zero_mode": 0.7355883019733254
+      },
+      "ward_full_residual": 0.0,
+      "wilson": {
+        "component_norms": {
+          "endpoint": 0.09791504582242447,
+          "longitudinal": 0.003603179621743642,
+          "transverse": 0.06230957461427011
+        },
+        "direct_quadrature_residual": 0.0,
+        "nnz": 7,
+        "norm": 0.1371785291633811,
+        "shape": [
+          8,
+          4
+        ]
+      }
+    },
+    {
+      "K": 23,
+      "bundle_hash": "8de9724316167321b9092b521b6ea514651d408a2a0d1340749d7bd8b86177a4",
+      "constrained_operator_norms": {
+        "boundary": 0.16816946690764054,
+        "constrained": 0.1261271001807304,
+        "inst_fermion": 0.042042366726910134,
+        "inst_gluon": 0.08408473345382027,
+        "zero_mode": 0.21021183363455068
+      },
+      "counterterms": {
+        "condition_number": 1.2280297480843776,
+        "nullity": 0,
+        "rank": 10,
+        "shape": [
+          10,
+          10
+        ],
+        "synthetic_solution_residual": 1.6653345369377348e-16
+      },
+      "gram_residuals": {
+        "q": 0.0,
+        "qg": 0.0
+      },
+      "hamiltonians": {
+        "q": {
+          "matrix_free_residual": 1.0877919644084146e-15,
+          "nnz": 16,
+          "shape": [
+            6,
+            6
+          ],
+          "spectrum": [
+            0.194724739184,
+            0.370800750278,
+            0.664860983513,
+            1.076606613591,
+            1.606055822068,
+            2.261292267836
+          ]
+        },
+        "qg": {
+          "matrix_free_residual": 8.51910812704787e-15,
+          "nnz": 34,
+          "shape": [
+            12,
+            12
+          ]
+        }
+      },
+      "measurements": {
+        "logplus_constant_residual": 5.551115123125783e-17,
+        "plus_constant_residual": 7.771561172376096e-16,
+        "ranks": {
+          "convolution": 6,
+          "delta": 1,
+          "logplus": 1,
+          "mellin": 3,
+          "plus": 1,
+          "regular": 1
+        },
+        "shapes": {
+          "convolution": [
+            6,
+            6
+          ],
+          "delta": [
+            1,
+            6
+          ],
+          "logplus": [
+            1,
+            6
+          ],
+          "mellin": [
+            3,
+            6
+          ],
+          "plus": [
+            1,
+            6
+          ],
+          "regular": [
+            1,
+            6
+          ]
+        }
+      },
+      "q_dimension": 6,
+      "qg_dimension": 12,
+      "vertex": {
+        "adjoint_residual": 0.0,
+        "nnz": 11,
+        "norm": 0.04247504480433426,
+        "shape": [
+          12,
+          6
+        ]
+      },
+      "ward_defects": {
+        "boundary": 0.999242418635238,
+        "constrained": 0.7494318139764284,
+        "inst_fermion": 0.2498106046588095,
+        "inst_gluon": 0.499621209317619,
+        "zero_mode": 1.2490530232940473
+      },
+      "ward_full_residual": 0.0,
+      "wilson": {
+        "component_norms": {
+          "endpoint": 0.09950657274930495,
+          "longitudinal": 0.002134344365612655,
+          "transverse": 0.06332236447683041
+        },
+        "direct_quadrature_residual": 0.0,
+        "nnz": 11,
+        "norm": 0.09104105646844807,
+        "shape": [
+          12,
+          6
+        ]
+      }
+    },
+    {
+      "K": 31,
+      "bundle_hash": "841080937fbe0ccee9248bdcbeb4d1d2f151621b534e90a25bec8c03ce8ade4c",
+      "constrained_operator_norms": {
+        "boundary": 0.1937454329784318,
+        "constrained": 0.14530907473382382,
+        "inst_fermion": 0.04843635824460795,
+        "inst_gluon": 0.0968727164892159,
+        "zero_mode": 0.24218179122303976
+      },
+      "counterterms": {
+        "condition_number": 1.2280297480843776,
+        "nullity": 0,
+        "rank": 10,
+        "shape": [
+          10,
+          10
+        ],
+        "synthetic_solution_residual": 1.6653345369377348e-16
+      },
+      "gram_residuals": {
+        "q": 0.0,
+        "qg": 0.0
+      },
+      "hamiltonians": {
+        "q": {
+          "matrix_free_residual": 3.972054645195637e-15,
+          "nnz": 22,
+          "shape": [
+            8,
+            8
+          ],
+          "spectrum": [
+            0.194724739184,
+            0.370800750278,
+            0.664860983375,
+            1.076606510772,
+            1.606009551739,
+            2.253063820491,
+            3.01783175464,
+            3.91130188952
+          ]
+        },
+        "qg": {
+          "matrix_free_residual": 3.3339241374938417e-14,
+          "nnz": 46,
+          "shape": [
+            16,
+            16
+          ]
+        }
+      },
+      "measurements": {
+        "logplus_constant_residual": 1.6653345369377348e-16,
+        "plus_constant_residual": 1.1102230246251565e-16,
+        "ranks": {
+          "convolution": 8,
+          "delta": 1,
+          "logplus": 1,
+          "mellin": 3,
+          "plus": 1,
+          "regular": 1
+        },
+        "shapes": {
+          "convolution": [
+            8,
+            8
+          ],
+          "delta": [
+            1,
+            8
+          ],
+          "logplus": [
+            1,
+            8
+          ],
+          "mellin": [
+            3,
+            8
+          ],
+          "plus": [
+            1,
+            8
+          ],
+          "regular": [
+            1,
+            8
+          ]
+        }
+      },
+      "q_dimension": 8,
+      "qg_dimension": 16,
+      "vertex": {
+        "adjoint_residual": 0.0,
+        "nnz": 14,
+        "norm": 0.04275649294796291,
+        "shape": [
+          16,
+          8
+        ]
+      },
+      "ward_defects": {
+        "boundary": 1.4734021626154892,
+        "constrained": 1.1050516219616169,
+        "inst_fermion": 0.3683505406538723,
+        "inst_gluon": 0.7367010813077446,
+        "zero_mode": 1.8417527032693615
+      },
+      "ward_full_residual": 0.0,
+      "wilson": {
+        "component_norms": {
+          "endpoint": 0.13775542827893467,
+          "longitudinal": 0.0014484910954794712,
+          "transverse": 0.08766254526841298
+        },
+        "direct_quadrature_residual": 0.0,
+        "nnz": 14,
+        "norm": 0.11166547038301007,
+        "shape": [
+          16,
+          8
+        ]
+      }
+    }
+  ],
+  "status": "C40_EXECUTABLE_PARTONIC_OPERATOR_SUBSTRATE_READY"
+}

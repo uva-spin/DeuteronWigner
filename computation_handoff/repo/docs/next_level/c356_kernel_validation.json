@@ -1,0 +1,16 @@
+{
+  "package_root": "82525d8cbc408604dd73e99732c1c26a15f894f53028b9b6b07014fcc07811fc",
+  "physical": false,
+  "plan": "RIMASSC43JMYRESIDUE1-C",
+  "record": {
+    "L_b": "ln(mu^2*bT^2*exp(2*gamma_E)/4)",
+    "distribution_endpoint": "delta(1-x)",
+    "formula": "-(alpha_s*CF/(2*pi))*(1/epsilon_IR+L_b)*endpoint_tree",
+    "fragmentation_endpoint": "delta(1-z)",
+    "rho_dependence": "none in analytic-pole residue; retained in finite group",
+    "root": "9f217feb99df647075566243b9ea7fee795e0cf4f2b882663f6975fb0e208f9d",
+    "symbol": "R_F"
+  },
+  "status": "C356_JMY_ANALYTIC_POLE_RESIDUE_MATRIX_DERIVED_SEPARATOR_CANCELLATION_CERTIFIED_FINITE_GROUPS_MISSING",
+  "validation": "PASS"
+}

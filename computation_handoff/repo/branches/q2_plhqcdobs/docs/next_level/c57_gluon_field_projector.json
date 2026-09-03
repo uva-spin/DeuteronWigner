@@ -1,0 +1,529 @@
+{
+  "factorization": "NOT_ASSERTED: selected object is incoming-q conditional",
+  "formula": "Pi_g,R|alpha is diagonal on C45 field envelope modes induced by TBP-matched C47 qg support",
+  "records": [
+    {
+      "K": "9/2",
+      "Nmax": 8,
+      "bHO_GeV": 0.4,
+      "by_HO_shell": {
+        "1": 64,
+        "2": 128,
+        "3": 192,
+        "4": 256,
+        "5": 256,
+        "6": 192,
+        "7": 128
+      },
+      "by_adjoint_color": {
+        "0": 152,
+        "1": 152,
+        "2": 152,
+        "3": 152,
+        "4": 152,
+        "5": 152,
+        "6": 152,
+        "7": 152
+      },
+      "by_helicity": {
+        "-1": 608,
+        "1": 608
+      },
+      "by_k_g": {
+        "1": 304,
+        "2": 304,
+        "3": 304,
+        "4": 304
+      },
+      "by_m_g": {
+        "-1": 192,
+        "-2": 160,
+        "-3": 96,
+        "-4": 32,
+        "0": 256,
+        "1": 192,
+        "2": 160,
+        "3": 96,
+        "4": 32
+      },
+      "conditional_counts": [
+        744,
+        744,
+        620,
+        744,
+        744,
+        620
+      ],
+      "conditional_ranks": [
+        744,
+        744,
+        620,
+        744,
+        744,
+        620
+      ],
+      "conditional_type": "INCOMING_QUARK_INDEXED_FIELD_PROJECTOR",
+      "envelope_count": 2304,
+      "envelope_mode_count": 2304,
+      "field_mask_hash": "ae17a2eebc232524e2b746fcab6d9977103f2958f6d86cc7abf24838c4b56569",
+      "kernel_hash": "c7f176ee38ebb2c48cc4e428bfe203818d7770ae693126722282b4174bdd31d3",
+      "longitudinal_support": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "mode_set_hash": "0e54d52be614e205bcc341c1483ccdda3ef73071a5803bcd9e9703ce5b8e8697",
+      "projector_type": "CONDITIONAL_INCOMING_QUARK_INDEXED; union is a report only, not a universal projector",
+      "qg_mask_hash": "8be8a08da9bf574bd4f1f9e6fa2a3d4547809105d2584087f79d0bd4f8938b1f",
+      "qg_ranks": [
+        52,
+        52,
+        52,
+        52,
+        52,
+        52
+      ],
+      "resolution": "K9_2_N8_b0.40",
+      "shell_ranks": {
+        "1": [
+          48,
+          48,
+          40,
+          48,
+          48,
+          40
+        ],
+        "2": [
+          96,
+          96,
+          80,
+          96,
+          96,
+          80
+        ],
+        "3": [
+          144,
+          144,
+          120,
+          144,
+          144,
+          120
+        ],
+        "4": [
+          168,
+          168,
+          140,
+          168,
+          168,
+          140
+        ],
+        "5": [
+          144,
+          144,
+          120,
+          144,
+          144,
+          120
+        ],
+        "6": [
+          96,
+          96,
+          80,
+          96,
+          96,
+          80
+        ],
+        "7": [
+          48,
+          48,
+          40,
+          48,
+          48,
+          40
+        ],
+        "8": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "union_mode_count": 1216,
+      "zero_mode": "excluded from primary Q0 field collection; P0/residual boundary retained separately"
+    },
+    {
+      "K": "11/2",
+      "Nmax": 10,
+      "bHO_GeV": 0.45,
+      "by_HO_shell": {
+        "1": 80,
+        "2": 160,
+        "3": 240,
+        "4": 320,
+        "5": 400,
+        "6": 400,
+        "7": 320,
+        "8": 240,
+        "9": 160
+      },
+      "by_adjoint_color": {
+        "0": 290,
+        "1": 290,
+        "2": 290,
+        "3": 290,
+        "4": 290,
+        "5": 290,
+        "6": 290,
+        "7": 290
+      },
+      "by_helicity": {
+        "-1": 1160,
+        "1": 1160
+      },
+      "by_k_g": {
+        "1": 464,
+        "2": 464,
+        "3": 464,
+        "4": 464,
+        "5": 464
+      },
+      "by_m_g": {
+        "-1": 320,
+        "-2": 280,
+        "-3": 200,
+        "-4": 120,
+        "-5": 40,
+        "0": 400,
+        "1": 320,
+        "2": 280,
+        "3": 200,
+        "4": 120,
+        "5": 40
+      },
+      "conditional_counts": [
+        1470,
+        1470,
+        1225,
+        1470,
+        1470,
+        1225
+      ],
+      "conditional_ranks": [
+        1470,
+        1470,
+        1225,
+        1470,
+        1470,
+        1225
+      ],
+      "conditional_type": "INCOMING_QUARK_INDEXED_FIELD_PROJECTOR",
+      "envelope_count": 4400,
+      "envelope_mode_count": 4400,
+      "field_mask_hash": "d5446d5f3a2939be8551a684ede62376f36ffc58e9f96eb84ee0f8002d5221b9",
+      "kernel_hash": "6bb0a0f7404f64ce4871ce9d12736bc37e643ec4e342971f941a110a276b9428",
+      "longitudinal_support": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "mode_set_hash": "7af12484439e95ba02c34dfd27bf4758f6cb43f1abf7503fe654a4518a3ea636",
+      "projector_type": "CONDITIONAL_INCOMING_QUARK_INDEXED; union is a report only, not a universal projector",
+      "qg_mask_hash": "68d3dbdfeabd1499e12f5c7dc278a44af8f85c742212f1ebe0100874ceab701d",
+      "qg_ranks": [
+        85,
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "resolution": "K11_2_N10_b0.45",
+      "shell_ranks": {
+        "1": [
+          60,
+          60,
+          50,
+          60,
+          60,
+          50
+        ],
+        "10": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          120,
+          120,
+          100,
+          120,
+          120,
+          100
+        ],
+        "3": [
+          180,
+          180,
+          150,
+          180,
+          180,
+          150
+        ],
+        "4": [
+          240,
+          240,
+          200,
+          240,
+          240,
+          200
+        ],
+        "5": [
+          270,
+          270,
+          225,
+          270,
+          270,
+          225
+        ],
+        "6": [
+          240,
+          240,
+          200,
+          240,
+          240,
+          200
+        ],
+        "7": [
+          180,
+          180,
+          150,
+          180,
+          180,
+          150
+        ],
+        "8": [
+          120,
+          120,
+          100,
+          120,
+          120,
+          100
+        ],
+        "9": [
+          60,
+          60,
+          50,
+          60,
+          60,
+          50
+        ]
+      },
+      "union_mode_count": 2320,
+      "zero_mode": "excluded from primary Q0 field collection; P0/residual boundary retained separately"
+    },
+    {
+      "K": "13/2",
+      "Nmax": 12,
+      "bHO_GeV": 0.5,
+      "by_HO_shell": {
+        "1": 96,
+        "10": 288,
+        "11": 192,
+        "2": 192,
+        "3": 288,
+        "4": 384,
+        "5": 480,
+        "6": 576,
+        "7": 576,
+        "8": 480,
+        "9": 384
+      },
+      "by_adjoint_color": {
+        "0": 492,
+        "1": 492,
+        "2": 492,
+        "3": 492,
+        "4": 492,
+        "5": 492,
+        "6": 492,
+        "7": 492
+      },
+      "by_helicity": {
+        "-1": 1968,
+        "1": 1968
+      },
+      "by_k_g": {
+        "1": 656,
+        "2": 656,
+        "3": 656,
+        "4": 656,
+        "5": 656,
+        "6": 656
+      },
+      "by_m_g": {
+        "-1": 480,
+        "-2": 432,
+        "-3": 336,
+        "-4": 240,
+        "-5": 144,
+        "-6": 48,
+        "0": 576,
+        "1": 480,
+        "2": 432,
+        "3": 336,
+        "4": 240,
+        "5": 144,
+        "6": 48
+      },
+      "conditional_counts": [
+        2556,
+        2556,
+        2130,
+        2556,
+        2556,
+        2130
+      ],
+      "conditional_ranks": [
+        2556,
+        2556,
+        2130,
+        2556,
+        2556,
+        2130
+      ],
+      "conditional_type": "INCOMING_QUARK_INDEXED_FIELD_PROJECTOR",
+      "envelope_count": 7488,
+      "envelope_mode_count": 7488,
+      "field_mask_hash": "72af3ebc2fe6874ac2e50fdfd5d39c72cad904b2700a49837eb83fff927ef8c3",
+      "kernel_hash": "9d8bf2a4454e7085d0e184f6c1aa5cdd428083d15ba700c5cf0e82a8360cbfe9",
+      "longitudinal_support": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mode_set_hash": "de8b541b16f3f0dbc767a6ad78d6c6418139825be2be127922939df2b240b830",
+      "projector_type": "CONDITIONAL_INCOMING_QUARK_INDEXED; union is a report only, not a universal projector",
+      "qg_mask_hash": "80aad472355c3b9f5e056e6d2cc3f548d6e0b7f365a48af8cb7068c6dfda7883",
+      "qg_ranks": [
+        126,
+        126,
+        126,
+        126,
+        126,
+        126
+      ],
+      "resolution": "K13_2_N12_b0.50",
+      "shell_ranks": {
+        "1": [
+          72,
+          72,
+          60,
+          72,
+          72,
+          60
+        ],
+        "10": [
+          144,
+          144,
+          120,
+          144,
+          144,
+          120
+        ],
+        "11": [
+          72,
+          72,
+          60,
+          72,
+          72,
+          60
+        ],
+        "12": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          144,
+          144,
+          120,
+          144,
+          144,
+          120
+        ],
+        "3": [
+          216,
+          216,
+          180,
+          216,
+          216,
+          180
+        ],
+        "4": [
+          288,
+          288,
+          240,
+          288,
+          288,
+          240
+        ],
+        "5": [
+          360,
+          360,
+          300,
+          360,
+          360,
+          300
+        ],
+        "6": [
+          396,
+          396,
+          330,
+          396,
+          396,
+          330
+        ],
+        "7": [
+          360,
+          360,
+          300,
+          360,
+          360,
+          300
+        ],
+        "8": [
+          288,
+          288,
+          240,
+          288,
+          288,
+          240
+        ],
+        "9": [
+          216,
+          216,
+          180,
+          216,
+          216,
+          180
+        ]
+      },
+      "union_mode_count": 3936,
+      "zero_mode": "excluded from primary Q0 field collection; P0/residual boundary retained separately"
+    }
+  ],
+  "status": "PASS_CONDITIONAL"
+}

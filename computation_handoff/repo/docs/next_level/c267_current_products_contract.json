@@ -1,0 +1,175 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "current_products_contract",
+  "authority_record": {
+    "root": "1de6857a82391630947c23f34a26749a24d0d40fc3d56108375f388f762d5728",
+    "rows": [
+      {
+        "direction": "I2_density_projector",
+        "root": "a8e2a602e14163e96f15f231fd8b25ac005519efe21b9b3829d5aea4354d924f",
+        "rows": [
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_q",
+            "term": "T_I2_density_projector[J_qJ_q;W_1,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_g",
+            "term": "T_I2_density_projector[J_qJ_g;W_1,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_q",
+            "term": "T_I2_density_projector[J_gJ_q;W_1,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_g",
+            "term": "T_I2_density_projector[J_gJ_g;W_1,K_Q0]"
+          }
+        ],
+        "sum": "-g_s^2/2 sum_product T_I2_density_projector[product;W,K_Q0]"
+      },
+      {
+        "direction": "derivative_density",
+        "root": "b6d36d31f27cf4b560d22a24ce886c491550e6d0097d839b622f88c567faed96",
+        "rows": [
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_q",
+            "term": "T_derivative_density[J_qJ_q;W_2,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_g",
+            "term": "T_derivative_density[J_qJ_g;W_2,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_q",
+            "term": "T_derivative_density[J_gJ_q;W_2,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_g",
+            "term": "T_derivative_density[J_gJ_g;W_2,K_Q0]"
+          }
+        ],
+        "sum": "-g_s^2/2 sum_product T_derivative_density[product;W,K_Q0]"
+      },
+      {
+        "direction": "CM_ground",
+        "root": "f2008b8899e75745e887a59c61aa3a5ea97ed421703438a37a4303e1da697927",
+        "rows": [
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_q",
+            "term": "T_CM_ground[J_qJ_q;W_3,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_g",
+            "term": "T_CM_ground[J_qJ_g;W_3,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_q",
+            "term": "T_CM_ground[J_gJ_q;W_3,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_g",
+            "term": "T_CM_ground[J_gJ_g;W_3,K_Q0]"
+          }
+        ],
+        "sum": "-g_s^2/2 sum_product T_CM_ground[product;W,K_Q0]"
+      },
+      {
+        "direction": "triplet_projected",
+        "root": "8714b6d11a280bdf47ab787b642caeae20400e207f400536e6e7a250c6b52086",
+        "rows": [
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_q",
+            "term": "T_triplet_projected[J_qJ_q;W_4,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_qJ_g",
+            "term": "T_triplet_projected[J_qJ_g;W_4,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_q",
+            "term": "T_triplet_projected[J_gJ_q;W_4,K_Q0]"
+          },
+          {
+            "available": true,
+            "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+            "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+            "ordered_color": "C114 source order retained",
+            "product": "J_gJ_g",
+            "term": "T_triplet_projected[J_gJ_g;W_4,K_Q0]"
+          }
+        ],
+        "sum": "-g_s^2/2 sum_product T_triplet_projected[product;W,K_Q0]"
+      }
+    ]
+  },
+  "package_root": "26bb80bdbf2e61983e70c581f53b21a172a5d812cf44279fca3071d0f18ed20e",
+  "physical": false,
+  "plan": "C117NONLOCALTARGET2-B",
+  "schema": "C267-CURRENT_PRODUCTS-CONTRACT-V1",
+  "status": "C267_C117_PARAMETERIZED_NONLOCAL_TARGETS_READY_STANDARD_PHYSICAL_SIDE_UNAVAILABLE",
+  "validation": "BOUND"
+}

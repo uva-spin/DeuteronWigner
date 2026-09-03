@@ -1,0 +1,45 @@
+{
+  "schema": "C205-STGLOBAL1-RELEASE-CONTRACT-V1",
+  "artifact": "stglobal1_release_contract",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 stglobal1_release_contract is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+    "plan": "STGLOBAL1-B",
+    "gates": {
+      "frontier": true,
+      "inventory": true,
+      "zero_modes": true,
+      "stabilizer": true,
+      "frame_covariance": true,
+      "orbit_ratio": true,
+      "nilpotency": true,
+      "jacobian": true,
+      "replacement": true,
+      "absolute_volume_normalization": false,
+      "full_ST": false,
+      "physical": false
+    },
+    "next": "C206/HQCDSTCTSOLVE1",
+    "root": "225e3dbc285d170f6afb017d7fa279735e8066e15eac78a4a50860b30f309ba1"
+  }
+}

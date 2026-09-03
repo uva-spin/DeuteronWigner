@@ -1,0 +1,25 @@
+{
+  "benchmarks": [
+    "C5_ANALYTIC_QUARK_WILSON_PILOT",
+    "C6_ANALYTIC_ACTIVE_GLUON_PILOT"
+  ],
+  "gates": [
+    "cut",
+    "symmetry",
+    "color",
+    "soft",
+    "convergence"
+  ],
+  "numerical_equality_required": false,
+  "production": false,
+  "relation": "REPLACES_WITHIN_SCOPE",
+  "rollback": "remove H5 validation root",
+  "schema_version": "1.0.0",
+  "scope": "C12_H5_VALIDATION_ONLY",
+  "sources": [
+    "H5_MICROSCOPIC_QUARK_WILSON_PARENT",
+    "H5_MICROSCOPIC_GLUON_WILSON_PARENT"
+  ],
+  "wilson_order": 1,
+  "xi": 0
+}

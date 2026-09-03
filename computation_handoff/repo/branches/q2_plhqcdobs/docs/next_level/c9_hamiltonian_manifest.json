@@ -1,0 +1,395 @@
+{
+  "color": {
+    "generator_residual": 6.490367750618711e-16,
+    "orthonormality_residual": 2.220446049250313e-16,
+    "singlet_multiplicity": 2
+  },
+  "maximum_Hermiticity_or_vertex_residual": 0,
+  "rows": [
+    {
+      "Hermiticity_residual": 0.0,
+      "color_multiplicities": [
+        1,
+        2
+      ],
+      "dimensions": {
+        "qqq": 4,
+        "qqqg": 6,
+        "total": 10
+      },
+      "discrepancy": [
+        "sea",
+        "higher_gluon",
+        "zero_modes",
+        "higher_orbitals",
+        "continuum_tail"
+      ],
+      "hamiltonian_id": "C9:H2:HAMILTONIAN:a16deb6b32a35ae45924",
+      "instantaneous_terms": [
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_FERMION",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        },
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_GLUON",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        }
+      ],
+      "matrix_free_residual": 0.0,
+      "parameters": {
+        "current_ZV": 1.0,
+        "g34": 0.105,
+        "instantaneous": 0.018,
+        "kappa4": 0.32,
+        "mass_ct_3": 0.221731151541728,
+        "mass_ct_4": 0.04,
+        "vertex_ct": 0.012
+      },
+      "plan": "H2-PLAN-A",
+      "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555",
+      "terms": [
+        "FREE_3",
+        "FREE_4G",
+        "INDUCED_OR_ZERO_CONF",
+        "CANONICAL_QG_VERTEX_AND_ADJOINT",
+        "INSTANTANEOUS_PARTNERS",
+        "SECTOR_COUNTERTERMS",
+        "TRUNCATION_DISCREPANCY"
+      ],
+      "vertex_adjoint_residual": 0.0
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "color_multiplicities": [
+        1,
+        2
+      ],
+      "dimensions": {
+        "qqq": 7,
+        "qqqg": 10,
+        "total": 17
+      },
+      "discrepancy": [
+        "sea",
+        "higher_gluon",
+        "zero_modes",
+        "higher_orbitals",
+        "continuum_tail"
+      ],
+      "hamiltonian_id": "C9:H2:HAMILTONIAN:be1ee95c2ce8bad25512",
+      "instantaneous_terms": [
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_FERMION",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        },
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_GLUON",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        }
+      ],
+      "matrix_free_residual": 0.0,
+      "parameters": {
+        "current_ZV": 1.0,
+        "g34": 0.0990566037735849,
+        "instantaneous": 0.01714285714285714,
+        "kappa4": 0.26666666666666666,
+        "mass_ct_3": 0.2204298337271033,
+        "mass_ct_4": 0.048,
+        "vertex_ct": 0.006
+      },
+      "plan": "H2-PLAN-A",
+      "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97",
+      "terms": [
+        "FREE_3",
+        "FREE_4G",
+        "INDUCED_OR_ZERO_CONF",
+        "CANONICAL_QG_VERTEX_AND_ADJOINT",
+        "INSTANTANEOUS_PARTNERS",
+        "SECTOR_COUNTERTERMS",
+        "TRUNCATION_DISCREPANCY"
+      ],
+      "vertex_adjoint_residual": 0.0
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "color_multiplicities": [
+        1,
+        2
+      ],
+      "dimensions": {
+        "qqq": 10,
+        "qqqg": 14,
+        "total": 24
+      },
+      "discrepancy": [
+        "sea",
+        "higher_gluon",
+        "zero_modes",
+        "higher_orbitals",
+        "continuum_tail"
+      ],
+      "hamiltonian_id": "C9:H2:HAMILTONIAN:4279764b797eb6db1bdc",
+      "instantaneous_terms": [
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_FERMION",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        },
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_GLUON",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        }
+      ],
+      "matrix_free_residual": 0.0,
+      "parameters": {
+        "current_ZV": 1.0,
+        "g34": 0.09374999999999999,
+        "instantaneous": 0.01636363636363636,
+        "kappa4": 0.2285714285714286,
+        "mass_ct_3": 0.21807511473476315,
+        "mass_ct_4": 0.056,
+        "vertex_ct": 0.004
+      },
+      "plan": "H2-PLAN-A",
+      "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+      "terms": [
+        "FREE_3",
+        "FREE_4G",
+        "INDUCED_OR_ZERO_CONF",
+        "CANONICAL_QG_VERTEX_AND_ADJOINT",
+        "INSTANTANEOUS_PARTNERS",
+        "SECTOR_COUNTERTERMS",
+        "TRUNCATION_DISCREPANCY"
+      ],
+      "vertex_adjoint_residual": 0.0
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "color_multiplicities": [
+        1,
+        2
+      ],
+      "dimensions": {
+        "qqq": 4,
+        "qqqg": 6,
+        "total": 10
+      },
+      "discrepancy": [
+        "sea",
+        "higher_gluon",
+        "zero_modes",
+        "higher_orbitals",
+        "continuum_tail"
+      ],
+      "hamiltonian_id": "C9:H2:HAMILTONIAN:dd627d67c0ce85713e4c",
+      "instantaneous_terms": [
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_FERMION",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        },
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_GLUON",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        }
+      ],
+      "matrix_free_residual": 0.0,
+      "parameters": {
+        "current_ZV": 1.0,
+        "g34": 0.105,
+        "instantaneous": 0.018,
+        "kappa4": 0.0,
+        "mass_ct_3": 0.23764714928133138,
+        "mass_ct_4": 0.04,
+        "vertex_ct": 0.012
+      },
+      "plan": "H2-PLAN-B",
+      "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555",
+      "terms": [
+        "FREE_3",
+        "FREE_4G",
+        "INDUCED_OR_ZERO_CONF",
+        "CANONICAL_QG_VERTEX_AND_ADJOINT",
+        "INSTANTANEOUS_PARTNERS",
+        "SECTOR_COUNTERTERMS",
+        "TRUNCATION_DISCREPANCY"
+      ],
+      "vertex_adjoint_residual": 0.0
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "color_multiplicities": [
+        1,
+        2
+      ],
+      "dimensions": {
+        "qqq": 7,
+        "qqqg": 10,
+        "total": 17
+      },
+      "discrepancy": [
+        "sea",
+        "higher_gluon",
+        "zero_modes",
+        "higher_orbitals",
+        "continuum_tail"
+      ],
+      "hamiltonian_id": "C9:H2:HAMILTONIAN:f9aa0ff60618fc782df9",
+      "instantaneous_terms": [
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_FERMION",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        },
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_GLUON",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        }
+      ],
+      "matrix_free_residual": 0.0,
+      "parameters": {
+        "current_ZV": 1.0,
+        "g34": 0.0990566037735849,
+        "instantaneous": 0.01714285714285714,
+        "kappa4": 0.0,
+        "mass_ct_3": 0.2336671841718828,
+        "mass_ct_4": 0.048,
+        "vertex_ct": 0.006
+      },
+      "plan": "H2-PLAN-B",
+      "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97",
+      "terms": [
+        "FREE_3",
+        "FREE_4G",
+        "INDUCED_OR_ZERO_CONF",
+        "CANONICAL_QG_VERTEX_AND_ADJOINT",
+        "INSTANTANEOUS_PARTNERS",
+        "SECTOR_COUNTERTERMS",
+        "TRUNCATION_DISCREPANCY"
+      ],
+      "vertex_adjoint_residual": 0.0
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "color_multiplicities": [
+        1,
+        2
+      ],
+      "dimensions": {
+        "qqq": 10,
+        "qqqg": 14,
+        "total": 24
+      },
+      "discrepancy": [
+        "sea",
+        "higher_gluon",
+        "zero_modes",
+        "higher_orbitals",
+        "continuum_tail"
+      ],
+      "hamiltonian_id": "C9:H2:HAMILTONIAN:d7471bd3006443bbb359",
+      "instantaneous_terms": [
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_FERMION",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        },
+        {
+          "color_spin_structure": "JPLUS_COLOR_CHARGE_AND_FERMION_PARTNER",
+          "endpoint_regulator": "C7_ENDPOINT_REGULATOR_IDENTITY",
+          "inverse_derivative": "CAUCHY_PRINCIPAL_VALUE_1_OVER_DPLUS2",
+          "renormalization_owner": "H2_SECTOR_TRAJECTORY",
+          "source_sector": "qqqg",
+          "target_sector": "qqqg",
+          "term_id": "C9:H2:INSTANT_GLUON",
+          "zero_mode_policy": "EXCLUDE_ZERO_MODE_WITH_CLOSURE_LEDGER"
+        }
+      ],
+      "matrix_free_residual": 0.0,
+      "parameters": {
+        "current_ZV": 1.0,
+        "g34": 0.09374999999999999,
+        "instantaneous": 0.01636363636363636,
+        "kappa4": 0.0,
+        "mass_ct_3": 0.229206143103482,
+        "mass_ct_4": 0.056,
+        "vertex_ct": 0.004
+      },
+      "plan": "H2-PLAN-B",
+      "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+      "terms": [
+        "FREE_3",
+        "FREE_4G",
+        "INDUCED_OR_ZERO_CONF",
+        "CANONICAL_QG_VERTEX_AND_ADJOINT",
+        "INSTANTANEOUS_PARTNERS",
+        "SECTOR_COUNTERTERMS",
+        "TRUNCATION_DISCREPANCY"
+      ],
+      "vertex_adjoint_residual": 0.0
+    }
+  ],
+  "schema_version": "1.0.0"
+}

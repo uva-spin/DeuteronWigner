@@ -1,0 +1,560 @@
+{
+  "all_mapped": true,
+  "count": 50,
+  "rows": [
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Analytic, source-qualified, physical-input, and inference-ready tiers are distinct typed statuses.",
+      "stable_id": "V19.001",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Paper, software, data, parameter, ancillary, environment, and license records have separate identities.",
+      "stable_id": "V19.002",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Every selected source component is version locked and content addressed.",
+      "stable_id": "V19.003",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Newer source releases are comparison or supersession candidates and cannot silently replace historical plans.",
+      "stable_id": "V19.004",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Every executable source formula has an equation, table, code, or ancillary locator and a source hash.",
+      "stable_id": "V19.005",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Source software and paper versions are connected by an explicit relation rather than by repository-name equality.",
+      "stable_id": "V19.006",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Source environment, build flags, numerical mode, and external library versions are recorded where relevant.",
+      "stable_id": "V19.007",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Source reproduction uses frozen calibration and holdout subsets.",
+      "stable_id": "V19.008",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "A source central value without uncertainty semantics cannot satisfy physical-input qualification.",
+      "stable_id": "V19.009",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "A source-qualified coefficient is versioned separately from the immutable C22 validation prototype.",
+      "stable_id": "V19.010",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Source-qualified coefficients preserve endpoint, plus-distribution, color, scheme, rank, and order identity.",
+      "stable_id": "V19.011",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Every selected coefficient has independent source-level \\(x\\)-space and moment checks or an equally strong independent oracle.",
+      "stable_id": "V19.012",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Quark and gluon Collins--Soper/large-\\(b\\) plans remain separate.",
+      "stable_id": "V19.013",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Exact nonperturbative quark-to-gluon Casimir scaling is not imposed without a source theorem.",
+      "stable_id": "V19.014",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Source boundary plans retain source domain, parameter/member identity, and uncertainty tier.",
+      "stable_id": "V19.015",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "ART25 plans use the exact ARTEMIDE v3.01 source package or remain unavailable.",
+      "stable_id": "V19.016",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Later ARTEMIDE versions cannot mutate an ART25 process plan.",
+      "stable_id": "V19.017",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Jointly extracted TMDPDF, TMDFF, and Collins--Soper members retain their common source ancestry.",
+      "stable_id": "V19.018",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Collinear FF and TMDFF bundles are distinct operator objects.",
+      "stable_id": "V19.019",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Fragmentation bundles retain hadron species, charge, flavor, scheme, domain, and member covariance.",
+      "stable_id": "V19.020",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Source-qualified Drell--Yan uses source-qualified inputs for both incoming hadrons.",
+      "stable_id": "V19.021",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Source-qualified Drell--Yan preserves past-pointing links through the full operator identity.",
+      "stable_id": "V19.022",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Source-qualified SIDIS preserves future-pointing distribution links and the \\(z_h\\)-scaled Fourier convention.",
+      "stable_id": "V19.023",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "An unpolarized fixed-order SIDIS source cannot qualify tensor, helicity, transversity, or T-odd harmonics by analogy.",
+      "stable_id": "V19.024",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Inclusive \\(b_1\\) is an independent collinear process record, not an integral of an incomplete SIDIS implementation.",
+      "stable_id": "V19.025",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Source-qualified \\(b_1\\) retains quark and antiquark terms, tensor convention, target-mass, higher-twist, and heavy-flavor status.",
+      "stable_id": "V19.026",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Tagged DIS is a target-fragmentation process and does not consume an ordinary TMDFF.",
+      "stable_id": "V19.027",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Tagged source plans retain spectator momentum/helicity, active nucleon identity, pole residue, and FSI status.",
+      "stable_id": "V19.028",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Heavy-quark-pair DIS remains conditional and domain restricted.",
+      "stable_id": "V19.029",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Gluon process records retain exact ordered-link and \\(f/d\\) color identities; no default mixture exists.",
+      "stable_id": "V19.030",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "INHERITED_SOURCE_PROCESS_CONTRACT_PRESERVED",
+      "evidence": [
+        "docs/next_level/c24_implementation_report.md",
+        "docs/next_level/c28_lowqt_source_reproducibility_contract.json",
+        "docs/next_level/c29_regression_report.json"
+      ],
+      "requirement": "Source-qualified \\(W+Y\\) uses identical fixed-order and asymptotic process identities.",
+      "stable_id": "V19.031",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "The rank and harmonic of a \\(Y\\) term are immutable and cannot be copied from a scalar channel.",
+      "stable_id": "V19.032",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Microscopic or source boundary parameters cannot be retuned to repair a fixed-order or asymptotic mismatch.",
+      "stable_id": "V19.033",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "The transition profile and its variation remain distinct from boundary and fixed-order uncertainties.",
+      "stable_id": "V19.034",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Nuclear source qualification is component-wise.",
+      "stable_id": "V19.035",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "An NN-only process plan explicitly excludes all other nuclear components and is never labeled the complete deuteron.",
+      "stable_id": "V19.036",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "A matched nuclear total qualifies only when every selected diagonal, transition, and subtraction block qualifies.",
+      "stable_id": "V19.037",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Complete six-quark observables remain invariant under hidden-color basis rotations.",
+      "stable_id": "V19.038",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Every process member retains one correlated microscopic, matching, boundary, partner, hard, fixed-order, nuclear, and measurement identity.",
+      "stable_id": "V19.039",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Independently sampled marginal bands cannot replace a joint source member or covariance.",
+      "stable_id": "V19.040",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Source-data ancestry records calibration, benchmark, and future-likelihood reuse.",
+      "stable_id": "V19.041",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Experimental binning, acceptance, QED, and resolution maps remain external to the TMD and nuclear operators.",
+      "stable_id": "V19.042",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Process accuracy is limited by the least accurate mandatory ingredient.",
+      "stable_id": "V19.043",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Microscopic, matching/evolution, partner, process, nuclear, measurement, missing-physics, and numerical uncertainties remain separate.",
+      "stable_id": "V19.044",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Every source and physical gate failure remains visible in the qualification manifest.",
+      "stable_id": "V19.045",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "T-odd and multiparton process channels remain unavailable unless their exact operator-specific source route is independently completed.",
+      "stable_id": "V19.046",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Source-qualified process plans remain validation only and have no path to inference or production.",
+      "stable_id": "V19.047",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "Physical-input qualification requires no synthetic ingredient in the selected chain.",
+      "stable_id": "V19.048",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "All manifests and generated source adapters are deterministic and content addressed.",
+      "stable_id": "V19.049",
+      "status_promotion_authorized": false
+    },
+    {
+      "disposition": "ENFORCED_OR_FAIL_CLOSED_BY_C29_BRIDGE",
+      "evidence": [
+        "docs/next_level/c29_bridge_capability_matrix.json",
+        "docs/next_level/c29_no_double_counting_contract.json",
+        "docs/next_level/c29_future_inference_prerequisite_contract.json"
+      ],
+      "requirement": "The accepted 216-route production registry and authoritative artifacts remain immutable.",
+      "stable_id": "V19.050",
+      "status_promotion_authorized": false
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_path": "references/volume_xix_source_qualified_process_inputs.tex",
+  "source_sha256": "8b4e2d1dfd187f462d61d0134dbeae2bac8b3377cf315f733f63147ecac91596",
+  "status_promotion_authorized": false
+}

@@ -1,0 +1,26 @@
+{
+  "ART25_used": false,
+  "art25_identities": 642,
+  "baseline_commit": "16f7eb1ffdc906dbaf2007248e92143005c892f1",
+  "bridge_rerun": false,
+  "c38_commit_unchanged": true,
+  "content_hash": "94d3bd3a14c99e80fdb454c6a8be44640e6f710c45e2212863a2c19c2cd30b76",
+  "matching_kernel": "EMPTY_NOT_ZERO",
+  "no_joint_measure_changed": false,
+  "production_routes": 216,
+  "proton_export": false,
+  "readiness_guard_tests_required": [
+    "dimensions",
+    "nonzero_entries",
+    "Hermiticity_or_adjoint",
+    "assembled_matrix_free_equality",
+    "independent_application",
+    "rank_nullspace",
+    "refinement_identity",
+    "runtime_array_hash"
+  ],
+  "schema_version": "1.0.0",
+  "scope": "C39/R2B correction",
+  "selected_scheme": "O4-SPACELIKE-COLLINS-JMY",
+  "status": "C39_FINITE_BASIS_ONE_LOOP_INCOMPLETE"
+}

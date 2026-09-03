@@ -1,0 +1,24 @@
+{
+  "contract": "C96-C97-IFPROOFINPUT-V1",
+  "forbids": [
+    "expanded logical records",
+    "coefficient-times-kernel product",
+    "contact matrix/action",
+    "physical coupling",
+    "counterterm",
+    "TMD/matching",
+    "fit/inference/production",
+    "historical scientific reconstruction by consumer",
+    "C95 comparison execution before public inputs exist",
+    "private C93 recovered_pair_proof_inputs",
+    "root-based proof-input composition",
+    "historical-versus-descendant comparison"
+  ],
+  "objective": "Recover or locate only the exact persisted historical proof-input object domain; do not derive it by joining a pair attestation to a normal-form root or proof result.",
+  "precondition": {
+    "C93_capsule_root": "65173c9f3a623f87ec06f2f6b1a82d600db7e26526a08ea26851c47c8e8950f6",
+    "C94_package_root": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+    "C96_status": "C96_IFHISTPUBLIC_PROOF_INPUT_LOADER_INCOMPLETE"
+  },
+  "success_status": "C97_HISTORICAL_PROOF_INPUT_PUBLIC_PAYLOAD_READY"
+}

@@ -1,0 +1,93 @@
+{
+  "C35_no_go_retained": true,
+  "art25_used": false,
+  "baseline_commit": "dee1dfbd49a17db881dc9f52ae16f7c51c86df59",
+  "bridge_rerun": false,
+  "content_hash": "3443b362c7f8d72c538af794ce264cf2bb31ba942583447e8d17de0c3e0070c3",
+  "missing_calculation": [
+    "regulator-identical finite-basis spacelike Wilson insertion",
+    "partonic external-state realization with the common IR prescription",
+    "instantaneous, boundary, zero-mode, Hamiltonian and operator counterterms",
+    "regulated discrete-to-distributional x map and three-resolution trajectory",
+    "selected-scheme soft/overlap operator identity"
+  ],
+  "production_reachable": false,
+  "proton_ratio_used": false,
+  "rows": [
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "tree_overlap",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "quark_self_energy",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "operator_vertex",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "real_emission",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "spacelike_Wilson",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "transverse_closure",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "instantaneous_fermion",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "instantaneous_gluon",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "basis_boundary",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "endpoint",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "zero_mode",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "Hamiltonian_mass_CT",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "Hamiltonian_vertex_CT",
+      "value": "NONZERO_UNKNOWN"
+    },
+    {
+      "status": "UNRESOLVED_BLOCKING",
+      "term": "operator_CT",
+      "value": "NONZERO_UNKNOWN"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scope": "C37/R2",
+  "selected_regulator": "O4-SPACELIKE-COLLINS-JMY",
+  "status": "C37_FINITE_BASIS_COLLINEAR_ONE_LOOP_UNAVAILABLE",
+  "value": "EMPTY_NOT_ZERO"
+}

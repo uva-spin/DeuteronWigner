@@ -1,0 +1,33 @@
+{
+  "authority_record": {
+    "axes": [
+      {
+        "axis": "K",
+        "held_fixed": "Nmax,bHO,zero-mode prescription,renormalized inputs",
+        "limit": "infinity"
+      },
+      {
+        "axis": "Nmax",
+        "held_fixed": "K,bHO,zero-mode prescription,renormalized inputs",
+        "limit": "infinity"
+      },
+      {
+        "axis": "bHO",
+        "held_fixed": "K,Nmax,scheme",
+        "limit": "plateau/window then physical transverse limit"
+      },
+      {
+        "axis": "zero_modes",
+        "held_fixed": "boundary classes and scheme",
+        "limit": "explicit sector convergence"
+      }
+    ],
+    "joint_fit_only_after_axis_checks": true,
+    "root": "276cae5a096012ba48276d8c10fd06671ff716ed062dd3c2d35f1b95f5aafba2"
+  },
+  "package_root": "6e79b05663b8d6030a2334aaa3aaebdf3e84324c48bf4ed4d7df4ca6e247541e",
+  "physical": false,
+  "plan": "RIMASSC43CONVERGE1-C",
+  "status": "C324_CONTINUUM_REQUIREMENTS_DERIVED_CONTROLLED_C43_SEQUENCE_MISSING",
+  "validation": "BOUND"
+}

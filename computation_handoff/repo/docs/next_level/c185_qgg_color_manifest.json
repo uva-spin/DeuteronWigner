@@ -1,0 +1,90 @@
+{
+  "channels_separate": true,
+  "derived_multiplicity": 3,
+  "expected_holdout": 3,
+  "root": "80702ce0a86242bbb080fb27741873540c3d49cecf8bb0b7942d14d7794fceed",
+  "rows": [
+    {
+      "Gram": [
+        [
+          1.0
+        ],
+        [
+          0.0
+        ],
+        [
+          0.0
+        ]
+      ],
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QGG_COLOR_1S",
+      "exchange_parity": 1,
+      "normalization": "unit Gram normalization",
+      "open_triplet_intertwiner": true,
+      "root": "a38242d4e2b710f6af5a5272d2968ebad32ac8a0b827b6e5a6a4da7e705f47b2",
+      "routes": [
+        "QGG-C-A SU3 character multiplicity",
+        "QGG-C-B delta/d/f tensor",
+        "QGG-C-C Gram rank/dual",
+        "QGG-C-D all-generator",
+        "QGG-C-E sequential recoupling"
+      ],
+      "tensor": "delta_adjacent_singlet"
+    },
+    {
+      "Gram": [
+        [
+          0.0
+        ],
+        [
+          1.0
+        ],
+        [
+          0.0
+        ]
+      ],
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QGG_COLOR_8S",
+      "exchange_parity": 1,
+      "normalization": "unit Gram normalization",
+      "open_triplet_intertwiner": true,
+      "root": "fd7b9ab4798784a486efc1d374024404125b64d7d288dad7ea152d21d5cbf0ed",
+      "routes": [
+        "QGG-C-A SU3 character multiplicity",
+        "QGG-C-B delta/d/f tensor",
+        "QGG-C-C Gram rank/dual",
+        "QGG-C-D all-generator",
+        "QGG-C-E sequential recoupling"
+      ],
+      "tensor": "d^{ab c} T^c"
+    },
+    {
+      "Gram": [
+        [
+          0.0
+        ],
+        [
+          0.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QGG_COLOR_8A",
+      "exchange_parity": -1,
+      "normalization": "unit Gram normalization",
+      "open_triplet_intertwiner": true,
+      "root": "07f11659e10785c1916d74cc9b6806b98d8a9411393ec895c496b9f5965b2ad5",
+      "routes": [
+        "QGG-C-A SU3 character multiplicity",
+        "QGG-C-B delta/d/f tensor",
+        "QGG-C-C Gram rank/dual",
+        "QGG-C-D all-generator",
+        "QGG-C-E sequential recoupling"
+      ],
+      "tensor": "i f^{ab c} T^c"
+    }
+  ],
+  "schema": "C185-QGG-COLOR-V1"
+}

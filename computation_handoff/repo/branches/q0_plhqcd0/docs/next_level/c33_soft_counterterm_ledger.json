@@ -1,0 +1,66 @@
+{
+  "additional_required_components": [
+    "line_self_energy",
+    "cusp_endpoint",
+    "vacuum_energy_subtraction"
+  ],
+  "assigned_zero": 0,
+  "derived": 0,
+  "records": [
+    {
+      "assigned_zero": false,
+      "b_dependence": "NONZERO_UNKNOWN",
+      "basis_dependence": "NONZERO_UNKNOWN",
+      "cancellation_partners": [],
+      "color_factor": "TO_BE_DERIVED",
+      "diagram_id": "C33.DIAGRAM.RAPIDITY_COUNTERTERM",
+      "gauge_dependence": "NONZERO_UNKNOWN",
+      "ir_dependence": "NONZERO_UNKNOWN",
+      "line_pair": "operator",
+      "numerical_implementation": null,
+      "rapidity_dependence": "NONZERO_UNKNOWN",
+      "real_virtual": "COUNTERTERM",
+      "source_or_derivation": "C34/S0A_REQUIRED",
+      "status": "CALCULATION_REQUIRED",
+      "symbolic_expression": null,
+      "uv_dependence": "NONZERO_UNKNOWN"
+    },
+    {
+      "assigned_zero": false,
+      "b_dependence": "NONZERO_UNKNOWN",
+      "basis_dependence": "NONZERO_UNKNOWN",
+      "cancellation_partners": [],
+      "color_factor": "TO_BE_DERIVED",
+      "diagram_id": "C33.DIAGRAM.UV_COUNTERTERM",
+      "gauge_dependence": "NONZERO_UNKNOWN",
+      "ir_dependence": "NONZERO_UNKNOWN",
+      "line_pair": "operator/line/cusp",
+      "numerical_implementation": null,
+      "rapidity_dependence": "NONZERO_UNKNOWN",
+      "real_virtual": "COUNTERTERM",
+      "source_or_derivation": "C34/S0A_REQUIRED",
+      "status": "CALCULATION_REQUIRED",
+      "symbolic_expression": null,
+      "uv_dependence": "NONZERO_UNKNOWN"
+    },
+    {
+      "assigned_zero": false,
+      "b_dependence": "NONZERO_UNKNOWN",
+      "basis_dependence": "NONZERO_UNKNOWN",
+      "cancellation_partners": [],
+      "color_factor": "TO_BE_DERIVED",
+      "diagram_id": "C33.DIAGRAM.RESIDUAL_LINE_MASS_COUNTERTERM",
+      "gauge_dependence": "NONZERO_UNKNOWN",
+      "ir_dependence": "NONZERO_UNKNOWN",
+      "line_pair": "auxiliary/eikonal line",
+      "numerical_implementation": null,
+      "rapidity_dependence": "NONZERO_UNKNOWN",
+      "real_virtual": "COUNTERTERM",
+      "source_or_derivation": "C34/S0A_REQUIRED",
+      "status": "CALCULATION_REQUIRED",
+      "symbolic_expression": null,
+      "uv_dependence": "NONZERO_UNKNOWN"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

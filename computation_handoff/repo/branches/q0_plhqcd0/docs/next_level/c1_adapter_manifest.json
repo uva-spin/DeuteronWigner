@@ -1,0 +1,51 @@
+{
+  "adapters": [
+    {
+      "convention_change": "none",
+      "formula": "identity on numerical array; add immutable role metadata",
+      "id": "C1-ADAPT-COORD",
+      "losslessness": "lossless",
+      "map_class": "MATCH",
+      "provenance": "C0 coordinate audit",
+      "remainder": "none",
+      "source": "legacy ndarray/grid",
+      "target": "CoordinateSpec-bound grid",
+      "tests": [
+        "test_c1_typed_radial_wrapper_is_numerically_identical"
+      ],
+      "version": 1
+    },
+    {
+      "convention_change": "none",
+      "formula": "rank, J_rank, i^rank and accepted reference mass metadata",
+      "id": "C1-ADAPT-RANK",
+      "losslessness": "lossless metadata decoration",
+      "map_class": "MATCH",
+      "provenance": "accepted TMD registries",
+      "remainder": "specialized formula remains legacy",
+      "source": "TMDEntry.transverse_rank",
+      "target": "RankSpec",
+      "tests": [
+        "test_c1_inject_j0_for_positive_rank"
+      ],
+      "version": 1
+    },
+    {
+      "convention_change": "none",
+      "formula": "immutable fieldwise decoration",
+      "id": "C1-ADAPT-OPID",
+      "losslessness": "lossless",
+      "map_class": "MATCH",
+      "provenance": "C0 operator audit",
+      "remainder": "internal private arrays remain undecorated",
+      "source": "TMDEntry+TMDScheme+TMDScalePoint+link labels",
+      "target": "DecoratedOperatorId",
+      "tests": [
+        "test_c1_registry_identity_and_unspecified_completeness"
+      ],
+      "version": 1
+    }
+  ],
+  "requirement_id": "C1.ADAPT",
+  "schema_version": "1.0.0"
+}

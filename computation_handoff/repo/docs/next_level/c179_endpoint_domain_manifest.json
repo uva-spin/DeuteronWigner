@@ -1,0 +1,91 @@
+{
+  "census": 2,
+  "physical_endpoint_values": false,
+  "root": "ce22c650dbdadfecd1a20ca8d47d369b9d0be8cb69e4a87ff3068f5a90a48ce4",
+  "rows": [
+    {
+      "coincident_endpoints": false,
+      "common_reference": "not introduced",
+      "coordinate_units": "dimensionless project-chart units; no physical length scale",
+      "cut_side": "C178_CUT_SIDE_PLUS",
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+      "fixture": {
+        "left": [
+          0,
+          0
+        ],
+        "physical_separation": false,
+        "right": [
+          1,
+          1
+        ],
+        "status": "bounded nonphysical diagnostic fixture"
+      },
+      "future_past": "DIS_FUTURE",
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "left_transverse_point": {
+        "coordinates": [
+          "xi_L^1",
+          "xi_L^2"
+        ],
+        "symbol": "xi_L",
+        "units": "symbolic transverse-chart coordinate"
+      },
+      "orientation": "left-to-right transverse orientation",
+      "right_transverse_point": {
+        "coordinates": [
+          "xi_R^1",
+          "xi_R^2"
+        ],
+        "symbol": "xi_R",
+        "units": "symbolic transverse-chart coordinate"
+      },
+      "source_path_class_parent": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE",
+      "transverse_infinity": "comparison-only and not instantiated"
+    },
+    {
+      "coincident_endpoints": false,
+      "common_reference": "not introduced",
+      "coordinate_units": "dimensionless project-chart units; no physical length scale",
+      "cut_side": "C178_CUT_SIDE_MINUS",
+      "endpoint_pair_id": "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC",
+      "fixture": {
+        "left": [
+          0,
+          0
+        ],
+        "physical_separation": false,
+        "right": [
+          1,
+          1
+        ],
+        "status": "bounded nonphysical diagnostic fixture"
+      },
+      "future_past": "DY_PAST",
+      "holonomy_id": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "left_transverse_point": {
+        "coordinates": [
+          "xi_L^1",
+          "xi_L^2"
+        ],
+        "symbol": "xi_L",
+        "units": "symbolic transverse-chart coordinate"
+      },
+      "orientation": "left-to-right transverse orientation",
+      "right_transverse_point": {
+        "coordinates": [
+          "xi_R^1",
+          "xi_R^2"
+        ],
+        "symbol": "xi_R",
+        "units": "symbolic transverse-chart coordinate"
+      },
+      "source_path_class_parent": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "transition_id": "C178_TRANSITION_C0_NONTRIVIAL_INTERFACE",
+      "transverse_infinity": "comparison-only and not instantiated"
+    }
+  ],
+  "schema": "C179-ENDPOINT-DOMAIN-V1",
+  "symbolic_domain_complete": true
+}

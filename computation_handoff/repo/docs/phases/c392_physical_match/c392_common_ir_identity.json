@@ -1,0 +1,66 @@
+{
+  "package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "physical": false,
+  "plan": "PHYSICALMATCHPHASE1-B",
+  "record": {
+    "count": 4,
+    "operator_identical": true,
+    "root": "a523e5ac076c1458cb34b875797987f5db1f93f99030d05dca6381a722980387",
+    "rows": [
+      {
+        "Fourier": "+i bT.kT",
+        "UV": "MSbar",
+        "component": "REGULAR",
+        "distribution_before_limits": true,
+        "external_state": "same on-shell quark state",
+        "mass_to_dimensional_term_map": false,
+        "orientation": "SIDIS future",
+        "renormalized_full_matrix_element_comparison": true,
+        "source_operator": "JMY off-light-cone bilocal plus soft owner",
+        "target_operator": "same JMY operator evaluated with C350 dimensional IR",
+        "units": "component-native symbolic"
+      },
+      {
+        "Fourier": "+i bT.kT",
+        "UV": "MSbar",
+        "component": "PLUS",
+        "distribution_before_limits": true,
+        "external_state": "same on-shell quark state",
+        "mass_to_dimensional_term_map": false,
+        "orientation": "SIDIS future",
+        "renormalized_full_matrix_element_comparison": true,
+        "source_operator": "JMY off-light-cone bilocal plus soft owner",
+        "target_operator": "same JMY operator evaluated with C350 dimensional IR",
+        "units": "component-native symbolic"
+      },
+      {
+        "Fourier": "+i bT.kT",
+        "UV": "MSbar",
+        "component": "ENDPOINT",
+        "distribution_before_limits": true,
+        "external_state": "same on-shell quark state",
+        "mass_to_dimensional_term_map": false,
+        "orientation": "SIDIS future",
+        "renormalized_full_matrix_element_comparison": true,
+        "source_operator": "JMY off-light-cone bilocal plus soft owner",
+        "target_operator": "same JMY operator evaluated with C350 dimensional IR",
+        "units": "component-native symbolic"
+      },
+      {
+        "Fourier": "+i bT.kT",
+        "UV": "MSbar",
+        "component": "SOFT",
+        "distribution_before_limits": true,
+        "external_state": "same on-shell quark state",
+        "mass_to_dimensional_term_map": false,
+        "orientation": "SIDIS future",
+        "renormalized_full_matrix_element_comparison": true,
+        "source_operator": "JMY off-light-cone bilocal plus soft owner",
+        "target_operator": "same JMY operator evaluated with C350 dimensional IR",
+        "units": "component-native symbolic"
+      }
+    ],
+    "termwise_regulator_substitution": false
+  },
+  "status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT"
+}

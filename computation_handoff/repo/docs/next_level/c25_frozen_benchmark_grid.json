@@ -1,0 +1,95 @@
+{
+  "frozen_before_adapter": true,
+  "points": [
+    {
+      "kinematics": {
+        "Q": 6.0,
+        "qT": 0.5,
+        "sqrt_s": 38.8,
+        "y": 0.0
+      },
+      "process": "DY",
+      "stable_id": "C25.GRID.DY.FIXED_TARGET"
+    },
+    {
+      "kinematics": {
+        "Q": 91.1876,
+        "qT": 2.0,
+        "sqrt_s": 13000.0,
+        "y": 0.0
+      },
+      "process": "DY",
+      "stable_id": "C25.GRID.DY.Z"
+    },
+    {
+      "kinematics": {
+        "Q": 91.1876,
+        "qT": 3.0,
+        "sqrt_s": 8000.0,
+        "y": 2.0
+      },
+      "process": "DY",
+      "stable_id": "C25.GRID.DY.RAPIDITY"
+    },
+    {
+      "kinematics": {
+        "Q": 2.5,
+        "hadron": "pi+",
+        "pT": 0.25,
+        "x": 0.1,
+        "z": 0.3
+      },
+      "process": "SIDIS",
+      "stable_id": "C25.GRID.SIDIS.HERMES.PI"
+    },
+    {
+      "kinematics": {
+        "Q": 3.0,
+        "hadron": "K+",
+        "pT": 0.3,
+        "x": 0.05,
+        "z": 0.3
+      },
+      "process": "SIDIS",
+      "stable_id": "C25.GRID.SIDIS.COMPASS.K"
+    },
+    {
+      "kinematics": {
+        "b": 1.0
+      },
+      "process": "DISTRIBUTION",
+      "stable_id": "C25.GRID.CS"
+    },
+    {
+      "kinematics": {
+        "Q": 5.0,
+        "b": 1.0,
+        "x": 0.1
+      },
+      "process": "DISTRIBUTION",
+      "stable_id": "C25.GRID.TMDPDF"
+    },
+    {
+      "kinematics": {
+        "Q": 5.0,
+        "b": 1.0,
+        "hadron": "pi+",
+        "z": 0.3
+      },
+      "process": "DISTRIBUTION",
+      "stable_id": "C25.GRID.TMDFF.PI"
+    },
+    {
+      "kinematics": {
+        "Q": 5.0,
+        "b": 1.0,
+        "hadron": "K+",
+        "z": 0.3
+      },
+      "process": "DISTRIBUTION",
+      "stable_id": "C25.GRID.TMDFF.K"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_values_available": false
+}

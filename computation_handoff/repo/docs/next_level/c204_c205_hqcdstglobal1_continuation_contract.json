@@ -1,0 +1,57 @@
+{
+  "schema": "C204-C205-CONTINUATION-CONTRACT-V1",
+  "from_package": "C204/HQCDSTBOUNDARY2",
+  "to_package": "C205/HQCDSTGLOBAL1",
+  "from_baseline": "2d2fa094e44b6f092e763078a67805ab86562f72",
+  "from_package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "from_status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "from_plan": "STBOUNDARY2-B",
+  "completed_frontier": "C197-ST-6",
+  "completed_object": "endpoint ghost/link identities",
+  "completed_alias": "ENDPOINT_GHOST_LINK_IDENTITY",
+  "completed_scope": "finite-HO left/right endpoint ghost-link identities with one-/two-link order and cut/holonomy remainder explicit",
+  "preserve": [
+    "C197-ST-1 through C197-ST-5 read-only authorities",
+    "C204 finite-HO endpoint ghost/link identity authority",
+    "C204 explicit holonomy conjugation remainder",
+    "C204 six counterterm and nine null sensitivities"
+  ],
+  "next_frontier": {
+    "object_id": "C197-ST-7",
+    "exact_missing_object": "global zero-mode/gauge-volume treatment",
+    "alias": "GLOBAL_GAUGE_VOLUME_IDENTITY",
+    "status": "GLOBAL_ZERO_MODE_SOURCE_SIDE_FRONTIER",
+    "source_side": true,
+    "required_scope": "Q0/P0/global separation, global SU(3) orbit, global frame, holonomy stabilizer, gauge-volume factor, and zero-mode identity"
+  },
+  "remaining_ordered_frontier": [
+    "C197-ST-7",
+    "C197-ST-8",
+    "C197-ST-9",
+    "C197-ST-10"
+  ],
+  "required_authorities": [
+    "C130 zero-mode/boundary nonmatrix interfaces",
+    "C172/C174 Q0/P0 residual-gauge authority",
+    "C175 ghost-domain and global-mode exclusions",
+    "C183 holonomy, conjugacy, global frame, stabilizer, and gauge volume",
+    "C203 local-P0 BRST source identity authority",
+    "C204 endpoint ghost/link identity and typed global remainder authority"
+  ],
+  "constraints": {
+    "physical": false,
+    "full_ST": false,
+    "counterterm_or_null_selection": false,
+    "target_MOMq": false,
+    "C158_value_inputs": 0,
+    "C166_graph_delta": [0, 0],
+    "Q0_Q1_Q2_modified": false,
+    "push": false
+  },
+  "evidence": [
+    "C204 public frontier and handoff records",
+    "C204 completeness certificate",
+    "C204 readiness report",
+    "C204 package-root manifest"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "C106-FREE-SYMBOL-BINDING-AUDIT-V1",
+  "status": "C106_IFCOEFFVAL_SYMBOL_BINDING_INCOMPLETE",
+  "pairs": 154830,
+  "logical_records": 891992018,
+  "symbol_domains": {
+    "C77COMP_bra": {"bound_records": 0, "required": "C77 bra projection amplitude"},
+    "U3_bra": {"bound_records": 0, "required": "C66/C68 triplet amplitude"},
+    "C77COMP_ket": {"bound_records": 0, "required": "C77 ket projection amplitude"},
+    "U3_ket": {"bound_records": 0, "required": "C66/C68 triplet amplitude"},
+    "C77_bounds": {"bound_records": 0, "required": "coefficient-side enclosure"},
+    "color_bounds": {"bound_records": 0, "required": "coefficient-side enclosure"}
+  },
+  "missing_bindings": 6,
+  "duplicate_bindings": 0,
+  "type_invalid_bindings": 0,
+  "unit_invalid_bindings": 0,
+  "branch_ambiguities": 0
+}

@@ -1,0 +1,151 @@
+{
+  "schema": "C205-PARAMETER-FIXTURE-VALIDATION-V1",
+  "artifact": "parameter_fixture_validation",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 parameter_fixture_validation is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "fixture_id": "C205-FIX-K9-GENERIC",
+        "resolution": "K9",
+        "capsule_class": "GENERIC",
+        "holonomy_capsule_id": "C183-GENERIC-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K9-CENTRAL",
+        "resolution": "K9",
+        "capsule_class": "CENTRAL",
+        "holonomy_capsule_id": "C183-CENTRAL-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K9-WEYL_WALL",
+        "resolution": "K9",
+        "capsule_class": "WEYL_WALL",
+        "holonomy_capsule_id": "C183-WEYL_WALL-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K9-IDENTITY_DIAGNOSTIC",
+        "resolution": "K9",
+        "capsule_class": "IDENTITY_DIAGNOSTIC",
+        "holonomy_capsule_id": "C183-IDENTITY_DIAGNOSTIC-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K11-GENERIC",
+        "resolution": "K11",
+        "capsule_class": "GENERIC",
+        "holonomy_capsule_id": "C183-GENERIC-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K11-CENTRAL",
+        "resolution": "K11",
+        "capsule_class": "CENTRAL",
+        "holonomy_capsule_id": "C183-CENTRAL-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K11-WEYL_WALL",
+        "resolution": "K11",
+        "capsule_class": "WEYL_WALL",
+        "holonomy_capsule_id": "C183-WEYL_WALL-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K11-IDENTITY_DIAGNOSTIC",
+        "resolution": "K11",
+        "capsule_class": "IDENTITY_DIAGNOSTIC",
+        "holonomy_capsule_id": "C183-IDENTITY_DIAGNOSTIC-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K13-GENERIC",
+        "resolution": "K13",
+        "capsule_class": "GENERIC",
+        "holonomy_capsule_id": "C183-GENERIC-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K13-CENTRAL",
+        "resolution": "K13",
+        "capsule_class": "CENTRAL",
+        "holonomy_capsule_id": "C183-CENTRAL-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K13-WEYL_WALL",
+        "resolution": "K13",
+        "capsule_class": "WEYL_WALL",
+        "holonomy_capsule_id": "C183-WEYL_WALL-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C205-FIX-K13-IDENTITY_DIAGNOSTIC",
+        "resolution": "K13",
+        "capsule_class": "IDENTITY_DIAGNOSTIC",
+        "holonomy_capsule_id": "C183-IDENTITY_DIAGNOSTIC-NONPHYSICAL",
+        "global_frame_id": "C183-CALLER-FRAME",
+        "measure_convention": "SYMBOLIC_UNNORMALIZED_ORBIT_STABILIZER",
+        "physical": false,
+        "no_defaults": true
+      }
+    ],
+    "count": 12,
+    "root": "307fef3465fee814e354cb98f79b335bbb5eb5a54d5145acbcf675832a05ff86"
+  }
+}

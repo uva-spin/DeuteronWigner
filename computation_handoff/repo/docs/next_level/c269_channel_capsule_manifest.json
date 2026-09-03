@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "angular_condition": "(1+2 eta)I+++sqrt(8 eta)I0+ +I+--I00=0",
+    "channel": "elastic electron-deuteron electromagnetic current",
+    "current": "conserved electromagnetic current J_em^mu",
+    "helicity_amplitudes": [
+      "I++",
+      "I+0",
+      "I+-",
+      "I00"
+    ],
+    "independent_rank": 3,
+    "kinematics": "Drell-Yan q+=0, eta=Q^2/(4 M_d^2)>0",
+    "normalization": "relativistic/light-front normalization; J+ amplitudes divided by 2P+",
+    "observables": [
+      "G_C(Q2)",
+      "G_M(Q2)",
+      "G_Q(Q2)"
+    ],
+    "physical": true,
+    "root": "15e66d7a630b9d7ef37392a5c1112063df6aa39f124c606f5d4f2caf5ce8b820",
+    "sources": [
+      [
+        "hep-ph/0301213",
+        "0ae200ea9612f0fd4fcf7908b3b931511e39515416308b2d12ced52479be8eab"
+      ],
+      [
+        "lev_pace_salme_2000",
+        "49dfce2d563e7992d880e1074be95f82c555f56dc92cd1009aafbdab72258ae0"
+      ],
+      [
+        "carbonell_karmanov_1999",
+        "b910e65d1f69688d3e13350011ce0070a9f29ee05dcfedab72e1787398059671"
+      ]
+    ],
+    "state": "on-shell spin-1 deuteron |P,lambda>, lambda in {-1,0,+1}"
+  },
+  "package_root": "dabbc0ddfbcfe58a84b3742f0a1999b80e8e5288370e708a8b12c3a0a6e0ed78",
+  "physical": false,
+  "plan": "C117PHYSICALCHANNEL1-C",
+  "schema": "C269-CHANNEL_CAPSULE-MANIFEST-V1",
+  "status": "C269_DEUTERON_ELASTIC_EM_CHANNEL_AUTHENTICATED_RANK3_FOURTH_CHANNEL_REQUIRED",
+  "validation": "BOUND"
+}

@@ -1,0 +1,107 @@
+{
+  "consumed": [
+    "C43 action/term/constraint/mode/zero-mode contracts",
+    "C45 four mode contracts and one-particle numerical library",
+    "0905.1411v1",
+    "1311.2980v1",
+    "hep-ph/0011372v2"
+  ],
+  "decision": "No physical q/qg basis or local QCD matrix is generated. The first blocker is physical many-body basis assembly.",
+  "missing": [
+    {
+      "blocking_reason": "The C45 evaluator is explicitly a one-particle b-basis with no x argument, so it cannot supply the physical qg product/CM overlap required at unequal longitudinal partitions.",
+      "id": "C46.MULTIBODY_X_SCALED_HO",
+      "observed": "sqrt(4*pi*n!/(n+|m|)!)/b (p/b)^|m| exp(-p^2/(2b^2)) L_n^|m|(p^2/b^2) exp(+i m theta), with d2p/(2pi)^2",
+      "required_correction": "Source-derive and validate x-scaled momentum and coordinate HO modes plus their unequal-x overlap functional before forming a qg basis.",
+      "source_requirement": "1311.2980v1 Eq. (7): x-dependent transverse argument p_perp/sqrt(x) and normalization"
+    },
+    {
+      "blocking_reason": "C45 delegates the centre-of-mass condition to C46 but supplies neither a source-derived many-body CM operator nor a normalized zero-CM isometry.",
+      "id": "C46.CENTER_OF_MASS_PROJECTOR",
+      "observed": "C46 must impose total K, Nmax, Jz, source action, and zero-mode terms",
+      "required_correction": "Derive a finite, x-scaled BLFQ CM operator and its zero-CM projector/isometry for every qg longitudinal partition.",
+      "source_requirement": "C43 physical resolution plan: zero CM quantum; 1311.2980v1 discussion following Eqs. (10)-(12)"
+    },
+    {
+      "blocking_reason": "C43 records Hq/Hqg as interfaces only and does not choose a projected free-operator representation, normalization, or symbolic L factorization.",
+      "id": "C46.FREE_OPERATOR_REPRESENTATION",
+      "observed": [
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "Hq"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "Hqg"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "V_qg<-q"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "instantaneous fermion"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "instantaneous gluon/current"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "constrained term"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "boundary term"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "zero-mode term"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "spacelike Wilson emission"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "bilocal measurement"
+        },
+        {
+          "C43_array": "NOT_GENERATED",
+          "C44_input": "source-normalized mode overlap and C43 symbolic term",
+          "operator": "counterterm operators"
+        }
+      ],
+      "required_correction": "Freeze the C43-to-finite-basis free P^- or M^2 projection convention, including field normalization and L treatment.",
+      "source_requirement": "C46 requires C43 to select P^- or invariant-mass-squared before projection"
+    },
+    {
+      "blocking_reason": "The committed C45 kernel is a frozen 2x2x2 local numerator test array and explicitly omits longitudinal delta, SU(3), and physical multi-mode overlap normalization; it is not an all-mode q->qg matrix-element functional.",
+      "id": "C46.CANONICAL_VERTEX_MODE_KERNEL",
+      "observed": "color-free local numerator only; no longitudinal delta, SU(3), or interaction matrix",
+      "required_correction": "Derive an x-scaled, finite-volume three-mode canonical matrix-element functional and independently validate it before assembling V_qg<-q.",
+      "source_requirement": "SB canonical term with full finite-volume mode expansion and C45 source-to-basis kernel"
+    },
+    {
+      "blocking_reason": "The C45 record retains the global color label externally and defers Wilson-endpoint cancellation, but no local finite-basis boundary/zero-mode matrix functional is supplied. C46 cannot silently set it to zero before the projection is derived.",
+      "id": "C46.BOUNDARY_GLOBAL_ZERO_MODE",
+      "observed": {
+        "C43_global": "SOLVED_CONSTRAINED at declared perturbative nonzero-mode projection contract",
+        "C45_global": "RETAINED_AS_EXTERNAL_MODULE_LABEL"
+      },
+      "required_correction": "Derive the local action-owned residual-boundary/zero-mode operator and reconcile it with the open-color external-module constraint.",
+      "source_requirement": "C43 retained residual boundary and zero-mode policy applied to the C45 open-color module"
+    }
+  ],
+  "status": "C46_PHYSICAL_BASIS_ASSEMBLY_INCOMPLETE"
+}

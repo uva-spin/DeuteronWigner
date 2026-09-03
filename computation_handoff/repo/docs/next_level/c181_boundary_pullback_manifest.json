@@ -1,0 +1,175 @@
+{
+  "factorized": true,
+  "root": "72dc945fd4d20779497ec062f0f82707f6aa7d46e123b99abcc86c431c25581f",
+  "rows": [
+    {
+      "contraction": "explicit sparse leakage contraction / matrix-free leakage action",
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "physical_scalar_coefficients": false,
+      "resolution": "K9",
+      "root_ref": "C181-LEAKAGE-MAP",
+      "routes": [
+        "PULL-A sparse contraction",
+        "PULL-B matrix-free",
+        "PULL-C program composition",
+        "PULL-D reverse/adjoint",
+        "PULL-E rank/support"
+      ],
+      "source_scalar_pair_id": "FACTOR_K9_ALL_SCALAR_PAIRS",
+      "status": "BOUNDARY_PULLBACK_FACTORISED_CLOSED",
+      "terms": [
+        "PP retained-retained",
+        "PQ retained-boundary",
+        "QP boundary-retained",
+        "QQ boundary-boundary"
+      ],
+      "units": "geometry-only"
+    },
+    {
+      "contraction": "explicit sparse leakage contraction / matrix-free leakage action",
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "physical_scalar_coefficients": false,
+      "resolution": "K9",
+      "root_ref": "C181-LEAKAGE-MAP",
+      "routes": [
+        "PULL-A sparse contraction",
+        "PULL-B matrix-free",
+        "PULL-C program composition",
+        "PULL-D reverse/adjoint",
+        "PULL-E rank/support"
+      ],
+      "source_scalar_pair_id": "FACTOR_K9_ALL_SCALAR_PAIRS",
+      "status": "BOUNDARY_PULLBACK_FACTORISED_CLOSED",
+      "terms": [
+        "PP retained-retained",
+        "PQ retained-boundary",
+        "QP boundary-retained",
+        "QQ boundary-boundary"
+      ],
+      "units": "geometry-only"
+    },
+    {
+      "contraction": "explicit sparse leakage contraction / matrix-free leakage action",
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "physical_scalar_coefficients": false,
+      "resolution": "K11",
+      "root_ref": "C181-LEAKAGE-MAP",
+      "routes": [
+        "PULL-A sparse contraction",
+        "PULL-B matrix-free",
+        "PULL-C program composition",
+        "PULL-D reverse/adjoint",
+        "PULL-E rank/support"
+      ],
+      "source_scalar_pair_id": "FACTOR_K11_ALL_SCALAR_PAIRS",
+      "status": "BOUNDARY_PULLBACK_FACTORISED_CLOSED",
+      "terms": [
+        "PP retained-retained",
+        "PQ retained-boundary",
+        "QP boundary-retained",
+        "QQ boundary-boundary"
+      ],
+      "units": "geometry-only"
+    },
+    {
+      "contraction": "explicit sparse leakage contraction / matrix-free leakage action",
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "physical_scalar_coefficients": false,
+      "resolution": "K11",
+      "root_ref": "C181-LEAKAGE-MAP",
+      "routes": [
+        "PULL-A sparse contraction",
+        "PULL-B matrix-free",
+        "PULL-C program composition",
+        "PULL-D reverse/adjoint",
+        "PULL-E rank/support"
+      ],
+      "source_scalar_pair_id": "FACTOR_K11_ALL_SCALAR_PAIRS",
+      "status": "BOUNDARY_PULLBACK_FACTORISED_CLOSED",
+      "terms": [
+        "PP retained-retained",
+        "PQ retained-boundary",
+        "QP boundary-retained",
+        "QQ boundary-boundary"
+      ],
+      "units": "geometry-only"
+    },
+    {
+      "contraction": "explicit sparse leakage contraction / matrix-free leakage action",
+      "conversion_id": "C180_AFFINE_TO_XY",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "physical_scalar_coefficients": false,
+      "resolution": "K13",
+      "root_ref": "C181-LEAKAGE-MAP",
+      "routes": [
+        "PULL-A sparse contraction",
+        "PULL-B matrix-free",
+        "PULL-C program composition",
+        "PULL-D reverse/adjoint",
+        "PULL-E rank/support"
+      ],
+      "source_scalar_pair_id": "FACTOR_K13_ALL_SCALAR_PAIRS",
+      "status": "BOUNDARY_PULLBACK_FACTORISED_CLOSED",
+      "terms": [
+        "PP retained-retained",
+        "PQ retained-boundary",
+        "QP boundary-retained",
+        "QQ boundary-boundary"
+      ],
+      "units": "geometry-only"
+    },
+    {
+      "contraction": "explicit sparse leakage contraction / matrix-free leakage action",
+      "conversion_id": "C180_AFFINE_TO_YX",
+      "future_past": [
+        "DIS_FUTURE",
+        "DY_PAST"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "physical_scalar_coefficients": false,
+      "resolution": "K13",
+      "root_ref": "C181-LEAKAGE-MAP",
+      "routes": [
+        "PULL-A sparse contraction",
+        "PULL-B matrix-free",
+        "PULL-C program composition",
+        "PULL-D reverse/adjoint",
+        "PULL-E rank/support"
+      ],
+      "source_scalar_pair_id": "FACTOR_K13_ALL_SCALAR_PAIRS",
+      "status": "BOUNDARY_PULLBACK_FACTORISED_CLOSED",
+      "terms": [
+        "PP retained-retained",
+        "PQ retained-boundary",
+        "QP boundary-retained",
+        "QQ boundary-boundary"
+      ],
+      "units": "geometry-only"
+    }
+  ],
+  "schema": "C181-BOUNDARY-PULLBACK-V1"
+}

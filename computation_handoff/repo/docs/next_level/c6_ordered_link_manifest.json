@@ -1,0 +1,350 @@
+{
+  "count": 4,
+  "ordered_pairs": [
+    {
+      "antiunitary_word": [
+        "PAST",
+        "PAST"
+      ],
+      "color_class": "INDEPENDENT_NOT_ASSIGNED",
+      "color_status": "DIAGONAL_ADJOINT",
+      "left_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "FUTURE",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->+infinity",
+            "+infinity->xi"
+          ],
+          "rapidity_direction": "future",
+          "staple_orientation": "FUTURE",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:LEFT:FUTURE",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:LEFT",
+        "wilson_order": 1
+      },
+      "orientation_word": [
+        "FUTURE",
+        "FUTURE"
+      ],
+      "representation": "ADJOINT",
+      "right_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "FUTURE",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->+infinity",
+            "+infinity->xi"
+          ],
+          "rapidity_direction": "future",
+          "staple_orientation": "FUTURE",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:RIGHT:FUTURE",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:RIGHT",
+        "wilson_order": 1
+      },
+      "stable_id": "C6:PAIR:FUTURE:FUTURE:C6:PATH:LEFT:FUTURE|C6:PATH:RIGHT:FUTURE"
+    },
+    {
+      "antiunitary_word": [
+        "PAST",
+        "FUTURE"
+      ],
+      "color_class": "INDEPENDENT_NOT_ASSIGNED",
+      "color_status": "DIAGONAL_ADJOINT",
+      "left_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "FUTURE",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->+infinity",
+            "+infinity->xi"
+          ],
+          "rapidity_direction": "future",
+          "staple_orientation": "FUTURE",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:LEFT:FUTURE",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:LEFT",
+        "wilson_order": 1
+      },
+      "orientation_word": [
+        "FUTURE",
+        "PAST"
+      ],
+      "representation": "ADJOINT",
+      "right_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "PAST",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->-infinity",
+            "-infinity->xi"
+          ],
+          "rapidity_direction": "past",
+          "staple_orientation": "PAST",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:RIGHT:PAST",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:RIGHT",
+        "wilson_order": 1
+      },
+      "stable_id": "C6:PAIR:FUTURE:PAST:C6:PATH:LEFT:FUTURE|C6:PATH:RIGHT:PAST"
+    },
+    {
+      "antiunitary_word": [
+        "FUTURE",
+        "PAST"
+      ],
+      "color_class": "INDEPENDENT_NOT_ASSIGNED",
+      "color_status": "DIAGONAL_ADJOINT",
+      "left_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "PAST",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->-infinity",
+            "-infinity->xi"
+          ],
+          "rapidity_direction": "past",
+          "staple_orientation": "PAST",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:LEFT:PAST",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:LEFT",
+        "wilson_order": 1
+      },
+      "orientation_word": [
+        "PAST",
+        "FUTURE"
+      ],
+      "representation": "ADJOINT",
+      "right_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "FUTURE",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->+infinity",
+            "+infinity->xi"
+          ],
+          "rapidity_direction": "future",
+          "staple_orientation": "FUTURE",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:RIGHT:FUTURE",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:RIGHT",
+        "wilson_order": 1
+      },
+      "stable_id": "C6:PAIR:PAST:FUTURE:C6:PATH:LEFT:PAST|C6:PATH:RIGHT:FUTURE"
+    },
+    {
+      "antiunitary_word": [
+        "FUTURE",
+        "FUTURE"
+      ],
+      "color_class": "INDEPENDENT_NOT_ASSIGNED",
+      "color_status": "DIAGONAL_ADJOINT",
+      "left_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "PAST",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->-infinity",
+            "-infinity->xi"
+          ],
+          "rapidity_direction": "past",
+          "staple_orientation": "PAST",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:LEFT:PAST",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:LEFT",
+        "wilson_order": 1
+      },
+      "orientation_word": [
+        "PAST",
+        "PAST"
+      ],
+      "representation": "ADJOINT",
+      "right_path": {
+        "coupling_convention": "D_MU_PARTIAL_PLUS_IG_A",
+        "end_or_infinity_class": "C6:FIBER:STAPLE_ENDPOINT",
+        "fourier_convention": "EXP_MINUS_I_L_DOT_X",
+        "momentum_flow": "GLUON_INTO_EIKONAL",
+        "orientation": "PAST",
+        "path_id": {
+          "boundary_class": "staple",
+          "color_representation": "ADJOINT",
+          "endpoints": [
+            "0",
+            "xi"
+          ],
+          "ordered_segments": [
+            "0->-infinity",
+            "-infinity->xi"
+          ],
+          "rapidity_direction": "past",
+          "staple_orientation": "PAST",
+          "transverse_closure": "transverse_at_infinity",
+          "version": 1
+        },
+        "path_ordering": "INCREASING_LAMBDA_RIGHT_TO_LEFT",
+        "rapidity_regulator_identity": "C6:REG:ANALYTIC_DELTA",
+        "representation": "ADJOINT",
+        "stable_id": "C6:PATH:RIGHT:PAST",
+        "start_fiber": "C6:FIBER:F_LEFT_RIGHT",
+        "tangent": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "transverse_closure_identity": "C6:CLOSURE:RIGHT",
+        "wilson_order": 1
+      },
+      "stable_id": "C6:PAIR:PAST:PAST:C6:PATH:LEFT:PAST|C6:PATH:RIGHT:PAST"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

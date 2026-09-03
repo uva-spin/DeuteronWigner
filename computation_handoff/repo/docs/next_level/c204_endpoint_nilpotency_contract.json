@@ -1,0 +1,429 @@
+{
+  "schema": "C204-NILPOTENCY-CONTRACT-V1",
+  "artifact": "nilpotency_contract",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 nilpotency_contract is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-ENDPOINT-NILPOTENCY-V1",
+    "rows": [
+      {
+        "record_id": "C204-NIL-K9-LEFT-ENDPOINT_GHOST",
+        "resolution": "K9",
+        "endpoint": "LEFT",
+        "owner_id": "ENDPOINT_GHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K9-LEFT-ENDPOINT_ANTIGHOST",
+        "resolution": "K9",
+        "endpoint": "LEFT",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K9-LEFT-RESIDUAL_LINK",
+        "resolution": "K9",
+        "endpoint": "LEFT",
+        "owner_id": "RESIDUAL_LINK",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K9-RIGHT-ENDPOINT_GHOST",
+        "resolution": "K9",
+        "endpoint": "RIGHT",
+        "owner_id": "ENDPOINT_GHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K9-RIGHT-ENDPOINT_ANTIGHOST",
+        "resolution": "K9",
+        "endpoint": "RIGHT",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K9-RIGHT-RESIDUAL_LINK",
+        "resolution": "K9",
+        "endpoint": "RIGHT",
+        "owner_id": "RESIDUAL_LINK",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K11-LEFT-ENDPOINT_GHOST",
+        "resolution": "K11",
+        "endpoint": "LEFT",
+        "owner_id": "ENDPOINT_GHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K11-LEFT-ENDPOINT_ANTIGHOST",
+        "resolution": "K11",
+        "endpoint": "LEFT",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K11-LEFT-RESIDUAL_LINK",
+        "resolution": "K11",
+        "endpoint": "LEFT",
+        "owner_id": "RESIDUAL_LINK",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K11-RIGHT-ENDPOINT_GHOST",
+        "resolution": "K11",
+        "endpoint": "RIGHT",
+        "owner_id": "ENDPOINT_GHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K11-RIGHT-ENDPOINT_ANTIGHOST",
+        "resolution": "K11",
+        "endpoint": "RIGHT",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K11-RIGHT-RESIDUAL_LINK",
+        "resolution": "K11",
+        "endpoint": "RIGHT",
+        "owner_id": "RESIDUAL_LINK",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K13-LEFT-ENDPOINT_GHOST",
+        "resolution": "K13",
+        "endpoint": "LEFT",
+        "owner_id": "ENDPOINT_GHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K13-LEFT-ENDPOINT_ANTIGHOST",
+        "resolution": "K13",
+        "endpoint": "LEFT",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K13-LEFT-RESIDUAL_LINK",
+        "resolution": "K13",
+        "endpoint": "LEFT",
+        "owner_id": "RESIDUAL_LINK",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K13-RIGHT-ENDPOINT_GHOST",
+        "resolution": "K13",
+        "endpoint": "RIGHT",
+        "owner_id": "ENDPOINT_GHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K13-RIGHT-ENDPOINT_ANTIGHOST",
+        "resolution": "K13",
+        "endpoint": "RIGHT",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      },
+      {
+        "record_id": "C204-NIL-K13-RIGHT-RESIDUAL_LINK",
+        "resolution": "K13",
+        "endpoint": "RIGHT",
+        "owner_id": "RESIDUAL_LINK",
+        "second_variation": "EXACT_SYMBOLIC_ZERO_ENDPOINT_SCOPE",
+        "scope": "finite-HO endpoint/local link",
+        "holonomy_remainder": "conditional conjugation",
+        "global_remainder": "C197-ST-7 not zero",
+        "ghost_number": true,
+        "grassmann_parity": true,
+        "routes": [
+          "BND-A-direct",
+          "BND-B-ghost-link-source",
+          "BND-C-pullback-commutator",
+          "BND-D-link-covariance",
+          "BND-E-order-reversal",
+          "BND-F-cut-holonomy",
+          "BND-G-holdout"
+        ],
+        "physical": false
+      }
+    ],
+    "count": 18,
+    "global_nilpotency": false,
+    "root": "f5698d812255fe7a88a42abcfb4e5b64b8452345a73e0a6fde23fa1b5d80a893"
+  }
+}

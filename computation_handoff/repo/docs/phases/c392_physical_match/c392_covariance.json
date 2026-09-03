@@ -1,0 +1,19 @@
+{
+  "package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "physical": false,
+  "plan": "PHYSICALMATCHPHASE1-B",
+  "record": {
+    "blocks": [
+      "C391_source",
+      "projector_family",
+      "common_IR",
+      "finite_basis_sequence",
+      "standard_conversion"
+    ],
+    "formula": "J blockdiag(Sigma_source,Sigma_projector,Sigma_IR,Sigma_FB,Sigma_conversion) J^T plus authenticated cross blocks",
+    "resolution_cross_covariance": "retained symbolic; never averaged",
+    "root": "ce068480ea6244732ab30dcaf0699f652318b31d7b7238f6e63d2abdfde10f61",
+    "unavailable_cross_blocks": "UNAVAILABLE_NOT_ZERO"
+  },
+  "status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT"
+}

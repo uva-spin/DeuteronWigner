@@ -1,0 +1,52 @@
+{
+  "ART25_consumed": false,
+  "C40_consumed": false,
+  "C50_combined_values_consumed": false,
+  "C53_vertex_values_consumed": false,
+  "first_blocker": "C56.IFNORM.FINITE_HO_CONTRACTION_REGULATOR_OWNERSHIP",
+  "historical_mass_coefficients_consumed": false,
+  "raw_C47_tuple_values_consumed": false,
+  "rows": [
+    {
+      "classification": "PRIMARY_SOURCE_DERIVED_SYMBOLIC",
+      "input": "C55 locked SB/BPP W3 and 16-row monomial ledger",
+      "status": "PASS"
+    },
+    {
+      "classification": "PRIMARY_SOURCE_DERIVED_DLCQ_CONTRACTION_METHOD",
+      "input": "BPP Sec.2 normal ordering and Sec.DLCQ contraction table",
+      "status": "NONIDENTICAL_TO_C45_HO"
+    },
+    {
+      "classification": "PROJECT_SOURCE_DERIVED_MODE_LIBRARY",
+      "input": "C45 finite longitudinal cell/PBC nonzero gluons",
+      "status": "EXECUTABLE_BUT_NOT_CONTRACTION_REGULATOR_OWNER"
+    },
+    {
+      "classification": "PROJECT_SOURCE_DERIVED_BASIS_FUNCTIONS",
+      "input": "C45 transverse HO functions/Nmax rule",
+      "status": "EXECUTABLE_BUT_NO_FIELD_MODE_PROJECTOR"
+    },
+    {
+      "classification": "PROJECT_SOURCE_DERIVED_EXTERNAL_PROJECTION",
+      "input": "C47 CM-clean q/qg bases, TM map, Q0",
+      "status": "EXECUTABLE_BUT_NOT_VIRTUAL_CONTRACTION_DOMAIN"
+    },
+    {
+      "classification": "READ_ONLY_COLOR_IDENTITY",
+      "input": "C53 triplet convention",
+      "status": "NOT_A_CONTRACTION_VALUE"
+    },
+    {
+      "classification": "ABSENT_BLOCKING",
+      "input": "finite-HO P_HO^field, complete virtual one-gluon set, shell policy",
+      "status": "C56.IFNORM.FINITE_HO_CONTRACTION_REGULATOR_OWNERSHIP"
+    },
+    {
+      "classification": "FORBIDDEN",
+      "input": "C40 instantaneous values; C47 canonical tuples; C50 combined values; C53 vertex values; C8/C9 coefficients; ART25",
+      "status": "NOT_CONSUMED"
+    }
+  ],
+  "status": "C56_IFNORM_FINITE_HO_REGULATOR_INCOMPLETE"
+}

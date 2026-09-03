@@ -1,0 +1,44 @@
+{
+  "package_root": "c1ba54558f4d49ea58d38d6662f070055a41abfedfd2b78b372ebf94a5422398",
+  "physical": false,
+  "plan": "RIMASSC43JMYTRACEAST1-C",
+  "record": {
+    "count": 5,
+    "root": "a6d711c2dca0b0f3354113776c173625013293d90491cf4a15ed11d018b24337",
+    "rows": [
+      {
+        "IR": "IRPart retained",
+        "expr": "-MSbarProject(UVPart[d Sigma/d pslash at p^2=0])",
+        "id": "CT.Z2q",
+        "parent": "quark self energy Sigma(pslash)"
+      },
+      {
+        "IR": "IRPart retained",
+        "expr": "-MSbarProject(UVPart[Wv])",
+        "id": "CT.Zv",
+        "parent": "v Wilson self energy"
+      },
+      {
+        "IR": "IRPart retained",
+        "expr": "-MSbarProject(UVPart[Wtildev])",
+        "id": "CT.Ztv",
+        "parent": "tildev Wilson self energy"
+      },
+      {
+        "IR": "IRPart retained",
+        "expr": "-MSbarProject(UVPart[Vqv])",
+        "id": "CT.Zvert.q",
+        "parent": "distribution quark-v vertex"
+      },
+      {
+        "IR": "IRPart retained",
+        "expr": "Cross(CT.Zvert.q)",
+        "id": "CT.Zvert.h",
+        "parent": "fragmentation quark-tildev vertex"
+      }
+    ],
+    "scheme": "MSbar: subtract 1/epsilon_UV with exp(gammaE epsilon)(4pi)^(-epsilon)"
+  },
+  "status": "C360_EXECUTABLE_JMY_TRACE_CUT_COUNTERTERM_AST_DERIVED_SYMBOLIC_REDUCTION_MISSING",
+  "validation": "PASS"
+}

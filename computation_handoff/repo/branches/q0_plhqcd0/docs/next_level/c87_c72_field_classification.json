@@ -1,0 +1,30 @@
+{
+  "COMPATIBILITY_SCHEMA_FIELD": [
+    "C72 index/root layout",
+    "C74 loader path"
+  ],
+  "INSTANCE_ONLY_FIELD": [
+    "absolute_runtime_path",
+    "temporary_worktree_path",
+    "timestamp",
+    "host_process_id",
+    "current_HEAD",
+    "runtime_instance_root"
+  ],
+  "SCIENTIFIC_FIELD": [
+    "basis_rows",
+    "basis_columns",
+    "pair_records",
+    "status",
+    "expression",
+    "zero_certificate",
+    "midpoint",
+    "bound",
+    "arrays",
+    "invariants"
+  ],
+  "SCIENTIFIC_PROVENANCE_FIELD": [
+    "C53/C66 source chain",
+    "producer commit"
+  ]
+}

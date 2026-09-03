@@ -1,0 +1,182 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "projector_basis_contract",
+  "authority_record": {
+    "basis_reversal_response": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "determinant": 1,
+    "direct_contraction": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "dual_contraction": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "gram_inverse": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "gram_matrix": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "root": "0cea10f1a60c2e5ce54da641291ccab50b34336c99b2e8950b3fb0305a8b7542",
+    "rows": [
+      {
+        "definition": "sum_b (G^-1)_{1b} <O_b,.>",
+        "dual_to": "O_C117_1",
+        "normalization": "P_i Gamma_j^tree = delta_ij",
+        "physical": false,
+        "projector_id": "P_C117_1",
+        "scheme_defining": true
+      },
+      {
+        "definition": "sum_b (G^-1)_{2b} <O_b,.>",
+        "dual_to": "O_C117_2",
+        "normalization": "P_i Gamma_j^tree = delta_ij",
+        "physical": false,
+        "projector_id": "P_C117_2",
+        "scheme_defining": true
+      },
+      {
+        "definition": "sum_b (G^-1)_{3b} <O_b,.>",
+        "dual_to": "O_C117_3",
+        "normalization": "P_i Gamma_j^tree = delta_ij",
+        "physical": false,
+        "projector_id": "P_C117_3",
+        "scheme_defining": true
+      },
+      {
+        "definition": "sum_b (G^-1)_{4b} <O_b,.>",
+        "dual_to": "O_C117_4",
+        "normalization": "P_i Gamma_j^tree = delta_ij",
+        "physical": false,
+        "projector_id": "P_C117_4",
+        "scheme_defining": true
+      }
+    ]
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-PROJECTOR_BASIS-CONTRACT-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "BOUND"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "C215-PARTIAL-PROGRAM-SCHEMA-CONTRACT-V1",
+  "artifact": "partial_program_schema_contract",
+  "package_root": "fff748f74feacb2114b52aa3fa4b0bd39ec9e18d9ebec7b5f0923501aeb7f3e0",
+  "status": "C215_C214_SIX_C168_CAPSULES_RECONCILED_SAFE_PARTIAL_PROGRAMS_READY_RI_SMOM_QUARK_ADAPTER_FIRST",
+  "plan": "PHYSADAPTERCALC1-B",
+  "physical_values": false,
+  "executable_adapters": 0,
+  "C154_values_consumed": 0,
+  "C158_values_consumed": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_C168_PARTIAL_ADAPTER_PROGRAM_V1",
+    "safe_opcodes": [
+      "LOAD_CAPSULE",
+      "LOAD_C43_SUBSTRATE",
+      "LOAD_TARGET_PROJECTOR",
+      "LOAD_COMMON_IR",
+      "CHECK_GAUGE",
+      "CHECK_PV_Q0_BOUNDARY",
+      "CHECK_HOLONOMY",
+      "PROJECT",
+      "SERIES_COEFFICIENT",
+      "SAFE_RATIO",
+      "PROPAGATE_UNAVAILABLE",
+      "RETURN_PARTIAL_ADAPTER"
+    ],
+    "eval": false,
+    "pickle": false,
+    "callbacks": false,
+    "unknown_opcode": "reject",
+    "root": "84f8d48032c3f40d293f9146bec88c7c6044877a6b1d2f4c591a351a750be1e6"
+  }
+}

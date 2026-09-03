@@ -1,0 +1,98 @@
+{
+  "schema": "Q0-PLHQCD0-CLOSURE-AUDIT-V1",
+  "audited_commit": "b094fb8cb1046aea0062468d73826ea25eab6116",
+  "final_status": "Q0_CLOSED_POSITIVE",
+  "package_root": "2848cb692ce20cf21f654107acbcf9ed1a803cdd1c968f576c8271ae27df3b9c",
+  "prompt": {
+    "path": "docs/next_level/q0_plhqcd0_codex_prompt.md",
+    "sha256": "d587fd2c2cd95f8e8d5b31dc97bf0b1de57ed02b4bb212bde8984bad233cd19b"
+  },
+  "inaugural_import_contract": {
+    "path": "docs/next_level/q0_plhqcd0_import_contract.json",
+    "sha256": "783cfd8c6acc00ce0c6d03facf0b1f87a9fcf8026a1eb629aaf80b5944e54dd6"
+  },
+  "authority_roots": {
+    "C131": {"package_root": "67ab09bdc4ef7960a7d39ee35c243cec5c6537087012ea6283d5b4da8259cbd4", "positive_gate": true},
+    "C142": {"package_root": "3e862b300f594a0bb8f5eda20f9dd6ca635cead07ef510195d86e6b73549736d", "positive_gate": true},
+    "C144": {"package_root": "cb3ee45519580284caf6a73246d7ab43e2fd19a9db5db96471e6f508ead4a635", "positive_gate": true},
+    "C148": {"package_root": "6152c0baadfa1254a94945bffd7b3540d737b2789b40bc23d9e5d490ac544592", "positive_gate": true},
+    "C149": {"package_root": "8958d612be544991274ef21024772786625f20987f4c2d89d5708564864a57c0", "positive_gate": true},
+    "C150": {"package_root": "2854394a252e1a6401570a6617d3d2fbea1d1aced7fffa105d235eb398c4a57a", "positive_gate": true}
+  },
+  "environment": {
+    "python": "3.11.15",
+    "pennylane": "0.38.0",
+    "lightning": "0.38.0",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "device": "lightning.qubit",
+    "shots": null,
+    "dtype": "complex128",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "wire_order": "0,1,...,n-1",
+    "endianness": "big-endian bitstring; wire 0 is the leftmost bit"
+  },
+  "dimensions": {
+    "K9": {"physical": 1350, "padded": 2048, "qubits": 11, "basis_order": "q followed by qg"},
+    "K11": {"physical": 2706, "padded": 4096, "qubits": 12, "basis_order": "q followed by qg"},
+    "K13": {"physical": 4758, "padded": 8192, "qubits": 13, "basis_order": "q followed by qg"}
+  },
+  "padding_spectral": [
+    {"fixture": "FIXTURE-FREE", "resolution": "K9", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.010000000000000002, "separation_from_padding_zero": 0.010000000000000002},
+    {"fixture": "FIXTURE-FREE", "resolution": "K11", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.010000000000000002, "separation_from_padding_zero": 0.010000000000000002},
+    {"fixture": "FIXTURE-FREE", "resolution": "K13", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.010000000000000002, "separation_from_padding_zero": 0.010000000000000002},
+    {"fixture": "FIXTURE-INTERACTING-A", "resolution": "K9", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.5751850941379817, "separation_from_padding_zero": 0.5751850941379817},
+    {"fixture": "FIXTURE-INTERACTING-A", "resolution": "K11", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.5751850941379817, "separation_from_padding_zero": 0.5751850941379817},
+    {"fixture": "FIXTURE-INTERACTING-A", "resolution": "K13", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.5751850941379817, "separation_from_padding_zero": 0.5751850941379817},
+    {"fixture": "FIXTURE-INTERACTING-B-NULL-SHIFT", "resolution": "K9", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.6551746124531777, "separation_from_padding_zero": 0.6551746124531777},
+    {"fixture": "FIXTURE-INTERACTING-B-NULL-SHIFT", "resolution": "K11", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.6551746124531777, "separation_from_padding_zero": 0.6551746124531777},
+    {"fixture": "FIXTURE-INTERACTING-B-NULL-SHIFT", "resolution": "K13", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.6551746124531777, "separation_from_padding_zero": 0.6551746124531777},
+    {"fixture": "FIXTURE-MASS-SIGN", "resolution": "K9", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.5751850941379817, "separation_from_padding_zero": 0.5751850941379817},
+    {"fixture": "FIXTURE-MASS-SIGN", "resolution": "K11", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.5751850941379817, "separation_from_padding_zero": 0.5751850941379817},
+    {"fixture": "FIXTURE-MASS-SIGN", "resolution": "K13", "spectral_bound": 0.0, "padding_energy": 0.0, "lowest_physical": 0.5751850941379817, "separation_from_padding_zero": 0.5751850941379817}
+  ],
+  "lowest_physical_padded_separation": 0.010000000000000002,
+  "max_principal_angle_or_leakage_residual": 0.0,
+  "max_sparse_matrix_free_residual": 1.1102230246251565e-16,
+  "max_native_encoded_residual": 0.0,
+  "max_classical_pennylane_expectation_residual": 0.0,
+  "max_derivative_parity_residual": 3.469446951953614e-18,
+  "P_padding_by_physical_holdout": {
+    "FIXTURE-FREE/K9": 0.0, "FIXTURE-FREE/K11": 0.0, "FIXTURE-FREE/K13": 0.0,
+    "FIXTURE-INTERACTING-A/K9": 0.0, "FIXTURE-INTERACTING-A/K11": 0.0, "FIXTURE-INTERACTING-A/K13": 0.0,
+    "FIXTURE-INTERACTING-B-NULL-SHIFT/K9": 0.0, "FIXTURE-INTERACTING-B-NULL-SHIFT/K11": 0.0, "FIXTURE-INTERACTING-B-NULL-SHIFT/K13": 0.0,
+    "FIXTURE-MASS-SIGN/K9": 0.0, "FIXTURE-MASS-SIGN/K11": 0.0, "FIXTURE-MASS-SIGN/K13": 0.0
+  },
+  "reproducibility": {
+    "two_clean_build": {"checks": 12, "pass_count": 12, "pass": true},
+    "restart": {"checks": 3, "pass_count": 3, "pass": true},
+    "sharded_build": {"shards": 12, "pass_count": 12, "pass": true},
+    "fixture_order": {"pass": true, "forward_digest": "42d7262e79218d58a1ab6b6727e32193c314d0d09da85e85644c6c9a929ee16c", "reverse_digest": "42d7262e79218d58a1ab6b6727e32193c314d0d09da85e85644c6c9a929ee16c"},
+    "state_order": {"pass": true, "forward_digest": "cd23dd654cd6e3cf14fd4891dfc9b24334b90f77e4058408a48df1baf5adcff0", "reverse_digest": "cd23dd654cd6e3cf14fd4891dfc9b24334b90f77e4058408a48df1baf5adcff0"},
+    "api_query_order": {"pass": true, "forward_digest": "a004fb026b0b1847127c2ab6cb0a28da2c7968d82bd75be04139ac96efd93bd0", "reverse_digest": "a004fb026b0b1847127c2ab6cb0a28da2c7968d82bd75be04139ac96efd93bd0"}
+  },
+  "safety": {
+    "safe_loading": true,
+    "allow_pickle_false": true,
+    "no_build_if_missing": true,
+    "no_repair_if_missing": true,
+    "no_network": true
+  },
+  "focused_live_mutation": {"total": 2304, "pass_count": 2304},
+  "runtime": [
+    {"name": "c131_hqcd4", "file_count": 1, "bytes": 341, "manifest_sha256": "5545c32064e04be2e328d7645995f72d473f44e40e282ca212435417ed5e07c2", "package_root": "67ab09bdc4ef7960a7d39ee35c243cec5c6537087012ea6283d5b4da8259cbd4"},
+    {"name": "c142_hqcdfield", "file_count": 1, "bytes": 286, "manifest_sha256": "9482cf6f0c53d2c0c97283922c5de99386d77117b0e45803871bbdc9074bd739", "package_root": "3e862b300f594a0bb8f5eda20f9dd6ca635cead07ef510195d86e6b73549736d"},
+    {"name": "c144_hqcdopapi", "file_count": 1, "bytes": 462, "manifest_sha256": "8e1415443243666f717cd86d48419c4f170ff2720fd00a4f70fe9b3d8a83a2c9", "package_root": "cb3ee45519580284caf6a73246d7ab43e2fd19a9db5db96471e6f508ead4a635"},
+    {"name": "c148_hqcd2ptfull", "file_count": 1, "bytes": 944, "manifest_sha256": "26bf3366a5154ae0b3f45601d3ba07af0781f1cc1f64a5fcc0c963d41853859f", "package_root": "6152c0baadfa1254a94945bffd7b3540d737b2789b40bc23d9e5d490ac544592"},
+    {"name": "c149_hqcdmproj", "file_count": 1, "bytes": 889, "manifest_sha256": "6d910f57c44db153c64d26e2f3776ee3e4931f90300d2d889f30bf732655bbb7", "package_root": "8958d612be544991274ef21024772786625f20987f4c2d89d5708564864a57c0"},
+    {"name": "c150_hqcdzqmass", "file_count": 1, "bytes": 966, "manifest_sha256": "2fbdb7eb74c60046d1d5a61e6013197bdba1e08c1c4ec74ab641ec312bf1a994", "package_root": "2854394a252e1a6401570a6617d3d2fbea1d1aced7fffa105d235eb398c4a57a"},
+    {"name": "q0_plhqcd0", "file_count": 0, "bytes": 0, "package_root": "2848cb692ce20cf21f654107acbcf9ed1a803cdd1c968f576c8271ae27df3b9c"}
+  ],
+  "q1_continuation": {
+    "path": "docs/next_level/q1_plhqcdstate_codex_prompt.md",
+    "sha256": "48e4ae3c4ed6c8f5aa7e2c10f9bc63b8b7a71e19f83fe2ac94307c0892cc0afc",
+    "contract_path": "docs/next_level/q1_plhqcdstate_import_contract.json",
+    "contract_sha256": "bc13b8ec6a44ed4750b94eb23da10f6ef3c566c487a1785ce8e67056180a7b98"
+  },
+  "C151": {"files_consumed": false, "authority_consumed": false}
+}

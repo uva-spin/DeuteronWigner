@@ -1,0 +1,55 @@
+{
+  "authority_record": {
+    "enclosure": [
+      -109.13,
+      -109.05
+    ],
+    "extrapolants": [
+      -109.11548,
+      -109.10992,
+      -109.11143
+    ],
+    "fit_models": [
+      "constant+logN/N",
+      "constant+logN/N+1/N2",
+      "window holdouts"
+    ],
+    "root": "4ff0c5d3a6f5c46e0d2585080be9fcb36a0ae9abecae26e103b75ba77a815b35",
+    "rows": [
+      {
+        "N": 24,
+        "remainder": -109.25395148
+      },
+      {
+        "N": 48,
+        "remainder": -109.20928898
+      },
+      {
+        "N": 96,
+        "remainder": -109.17555156
+      },
+      {
+        "N": 160,
+        "remainder": -109.15769906
+      },
+      {
+        "N": 256,
+        "remainder": -109.14478671
+      },
+      {
+        "N": 384,
+        "remainder": -109.13544063
+      },
+      {
+        "N": 512,
+        "remainder": -109.12950483
+      }
+    ]
+  },
+  "package_root": "b4035029133db4f2264ff6b8ed367fb3e6857ba348ce6aee37d25229fa243371",
+  "physical": false,
+  "plan": "RIMASSV0TAILRENORM1-A",
+  "schema": "C308-REMAINDER_SCAN-VALIDATION-V1",
+  "status": "C308_CENTER_MODE_TAIL_SUBTRACTED_FINITE_REMAINDER_ENCLOSED_FULL_GRAM_EVALUATION_MISSING",
+  "validation": "PASS"
+}

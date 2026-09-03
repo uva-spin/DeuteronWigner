@@ -1,0 +1,70 @@
+{
+  "complete_qg_1PI_value": false,
+  "leg_1PI_conflation": false,
+  "root": "a863294b7c99e56549dd42a3fbce022faeffe06930dacde4cdcb8616842c07b0",
+  "rows": [
+    {
+      "calculated": false,
+      "classification": "future qg 1PI vertex correction",
+      "graph_id": "C185-QGG-PROPAGATING",
+      "intermediate": "C170-B1-QGG",
+      "owners": [
+        "quark emission",
+        "cubic gluon"
+      ],
+      "proper": true,
+      "reducible": false
+    },
+    {
+      "calculated": false,
+      "classification": "future qg 1PI vertex correction",
+      "graph_id": "C185-QQBARQ-PROPAGATING",
+      "intermediate": "C170-B1-QQBARQ",
+      "owners": [
+        "pair creation"
+      ],
+      "proper": true,
+      "reducible": false
+    },
+    {
+      "calculated": false,
+      "classification": "direct/contact/instantaneous",
+      "graph_id": "C185-Q-HIGHER-ORDER2",
+      "intermediate": "qgg/qqbarq",
+      "owners": [
+        "C112",
+        "C127",
+        "C129",
+        "C131"
+      ],
+      "proper": true,
+      "reducible": false
+    },
+    {
+      "calculated": false,
+      "classification": "leg correction",
+      "graph_id": "C185-LEG-CROSSWALK",
+      "intermediate": "q/qg",
+      "owners": [
+        "C150",
+        "C184"
+      ],
+      "proper": false,
+      "reducible": true
+    },
+    {
+      "calculated": false,
+      "classification": "ghost/link/holonomy",
+      "graph_id": "C185-GHOST-LINK",
+      "intermediate": "nonmatrix",
+      "owners": [
+        "C175",
+        "C182",
+        "C183"
+      ],
+      "proper": true,
+      "reducible": false
+    }
+  ],
+  "schema": "C185-VERTEX-TOPOLOGY-V1"
+}

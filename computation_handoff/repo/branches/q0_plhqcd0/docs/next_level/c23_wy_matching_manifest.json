@@ -1,0 +1,107 @@
+{
+  "all_observables": "VALIDATION_ONLY",
+  "definition": "Y=FO_same_order-asymptotic(W)_same_identity",
+  "executed_ranks": [
+    0,
+    2
+  ],
+  "maximum_residual": 0.0003883668012469865,
+  "rank_0_3_oracles_implemented": true,
+  "rows": [
+    {
+      "boundary_retuned": false,
+      "maximum_wy_fo_residual": 0.0003883668012469865,
+      "process": "DY",
+      "rank": 0,
+      "same_identity": true,
+      "small_q_finite": true,
+      "status": "VALIDATION_ONLY"
+    },
+    {
+      "process": "DY",
+      "rank": 1,
+      "small_q_finite": true,
+      "status": "ORACLE_IMPLEMENTED_NO_ELIGIBLE_OPERATOR_EXECUTION"
+    },
+    {
+      "boundary_retuned": false,
+      "maximum_wy_fo_residual": 3.073408718990561e-05,
+      "process": "DY",
+      "rank": 2,
+      "same_identity": true,
+      "small_q_finite": true,
+      "status": "VALIDATION_ONLY"
+    },
+    {
+      "process": "DY",
+      "rank": 3,
+      "small_q_finite": true,
+      "status": "ORACLE_IMPLEMENTED_NO_ELIGIBLE_OPERATOR_EXECUTION"
+    },
+    {
+      "boundary_retuned": false,
+      "maximum_wy_fo_residual": 0.0003883668012469865,
+      "process": "SIDIS",
+      "rank": 0,
+      "same_identity": true,
+      "small_q_finite": true,
+      "status": "VALIDATION_ONLY"
+    },
+    {
+      "process": "SIDIS",
+      "rank": 1,
+      "small_q_finite": true,
+      "status": "ORACLE_IMPLEMENTED_NO_ELIGIBLE_OPERATOR_EXECUTION"
+    },
+    {
+      "boundary_retuned": false,
+      "maximum_wy_fo_residual": 3.073408718990561e-05,
+      "process": "SIDIS",
+      "rank": 2,
+      "same_identity": true,
+      "small_q_finite": true,
+      "status": "VALIDATION_ONLY"
+    },
+    {
+      "process": "SIDIS",
+      "rank": 3,
+      "small_q_finite": true,
+      "status": "ORACLE_IMPLEMENTED_NO_ELIGIBLE_OPERATOR_EXECUTION"
+    },
+    {
+      "boundary_retuned": false,
+      "maximum_wy_fo_residual": 0.0003883668012469865,
+      "process": "HQ_DIS",
+      "rank": 0,
+      "same_identity": true,
+      "small_q_finite": true,
+      "status": "VALIDATION_ONLY"
+    },
+    {
+      "process": "HQ_DIS",
+      "rank": 1,
+      "small_q_finite": true,
+      "status": "ORACLE_IMPLEMENTED_NO_ELIGIBLE_OPERATOR_EXECUTION"
+    },
+    {
+      "boundary_retuned": false,
+      "maximum_wy_fo_residual": 3.073408718990561e-05,
+      "process": "HQ_DIS",
+      "rank": 2,
+      "same_identity": true,
+      "small_q_finite": true,
+      "status": "VALIDATION_ONLY"
+    },
+    {
+      "process": "HQ_DIS",
+      "rank": 3,
+      "small_q_finite": true,
+      "status": "ORACLE_IMPLEMENTED_NO_ELIGIBLE_OPERATOR_EXECUTION"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "unexecuted_ranks": [
+    1,
+    3
+  ]
+}

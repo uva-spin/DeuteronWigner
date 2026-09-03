@@ -1,0 +1,31 @@
+{
+  "schema": "C208-RELEASE-VALIDATION-V1",
+  "artifact": "release_validation",
+  "package_root": "da8d672230f244c6ee9b0d98106527dfa30bd8d17e9d74f3a22f8307a8eb36c9",
+  "status": "C208_C207_AUTHENTICATED_MOMQ_SOURCE_PROJECTOR_KINEMATICS_DEFINITION_READY_FINITE_BASIS_MAP_INCOMPLETE",
+  "plan": "MOMQSOURCE1-B",
+  "physical": false,
+  "finite_basis_map_ready": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "hash-locked arXiv:1108.4806v1",
+    "C164/C165 accepted locators"
+  ],
+  "authority_record": {
+    "status": "C208_C207_AUTHENTICATED_MOMQ_SOURCE_PROJECTOR_KINEMATICS_DEFINITION_READY_FINITE_BASIS_MAP_INCOMPLETE",
+    "plan": "MOMQSOURCE1-B",
+    "source": true,
+    "projector": true,
+    "kinematics_definition": true,
+    "finite_basis_map": false,
+    "target_condition_executable": false,
+    "physical": false,
+    "next": "C209/HQCDMOMQMAP1",
+    "root": "0321dfb558cd9090975ccf5973e41b3ba4be91d3412d4aa854a3c0af3c7e1ab1"
+  }
+}

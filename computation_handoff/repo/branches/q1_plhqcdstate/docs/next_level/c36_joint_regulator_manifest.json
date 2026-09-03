@@ -1,0 +1,34 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "content_hash": "d959e3b4532473ff885648e6521129c578c11f3a91167734a94f46eaa8ebc954",
+  "joint_regulator": {
+    "family": "O4-SPACELIKE-COLLINS-JMY",
+    "fourier_convention": "exp(-i k.x)",
+    "ir_prescription": "common_partonic_offshell_or_mass_IR_in_future_calculation",
+    "overlap_convention": "source_qualified_overlap_definition",
+    "regulator_id": "C36.R36.SPACELIKE",
+    "soft_allocation": "inverse_square_root_of_v_vbar_soft",
+    "uv_scheme": "MSbar"
+  },
+  "limits": {
+    "forbidden_order": "take_lightlike_limit_before_renormalization",
+    "ordered_limits": [
+      "renormalize_UV_and_rapidity_at_finite_v_vbar",
+      "form_soft_subtracted_TMD",
+      "take_infinite_length_if_used",
+      "take_lightlike_rapidity_limit",
+      "apply_ordinary_two_scale_evolution"
+    ]
+  },
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

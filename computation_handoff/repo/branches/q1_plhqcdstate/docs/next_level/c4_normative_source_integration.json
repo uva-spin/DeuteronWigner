@@ -1,0 +1,140 @@
+{
+  "audited_on": "2026-07-30",
+  "corrections_after_source_import": [
+    "added arbitrary-sector transverse normalization oracle",
+    "recorded ordered gluon-link pair and DIAGONAL_ADJOINT status",
+    "recorded route-specific UV, rapidity-soft, and link-shortening requirements",
+    "implemented executable trace, antisymmetric, and symmetric-traceless gluon projectors",
+    "audited C4 provenance edges against the Volume 0 two-complex contract",
+    "distinguished repository C4 from Volume IV nuclear packages C4A-C4F"
+  ],
+  "cross_volume_coverage": [
+    {
+      "c4_status": "SATISFIED_FOR_DECLARED_SCOPE",
+      "deferred": "general executable Provenance2Complex",
+      "evidence": "typed fibers, map separation, decorated path/color status, provenance exclusion",
+      "volume": "0"
+    },
+    {
+      "c4_status": "SATISFIED_FOR_ANALYTIC_BENCHMARK",
+      "deferred": "solved regulated microscopic Hamiltonian and truncation tower",
+      "evidence": "normalized direct sums, color singlets, exact Feshbach operator",
+      "volume": "I"
+    },
+    {
+      "c4_status": "BENCHMARKS_E_F_COMPLETE",
+      "deferred": "complete predictive Volume II acceptance list",
+      "evidence": "positive-x sea, explicit gluon, zero tests, common regulated routes",
+      "volume": "II"
+    },
+    {
+      "c4_status": "ZERO_RESCATTERING_BOUNDARY_COMPLETE",
+      "deferred": "dynamical Wilson lines, cuts, phases, soft subtraction",
+      "evidence": "real core, Wilson order zero, no physical f/d or T-odd label",
+      "volume": "III"
+    },
+    {
+      "c4_status": "INTERFACE_AUDITED_NOT_READY",
+      "deferred": "nucleon helicity export and all nuclear dynamics",
+      "evidence": "identity preservation and explicit readiness guard",
+      "volume": "IV"
+    },
+    {
+      "c4_status": "INTERFACE_AUDITED_NOT_READY",
+      "deferred": "QCD matching, evolution, OPE, process records, W+Y",
+      "evidence": "outstanding matching morphisms explicitly recorded",
+      "volume": "V"
+    }
+  ],
+  "missing": [],
+  "requirement_id": "C4.DOC.NORMATIVE_INTEGRATION",
+  "schema_version": "1.0.0",
+  "scope_boundary": "C4 implements Volume II Benchmarks E-F and regulated route closure only; it does not claim complete Volume II acceptance.",
+  "sources": [
+    {
+      "path": "references/volume_0_algebraic_geometric.tex",
+      "sha256": "e1cb59d6c945eb1a829583500eeea556189d90c17f4ce14538f1b2e2e4aa6229",
+      "status": "PRESENT_READ",
+      "volume": "0"
+    },
+    {
+      "path": "references/volume_i_regulated_light_front_foundations.tex",
+      "sha256": "d085bec6617328ed4fa247cf5156f147f2368aec96a61d2faa79f7064998a9b5",
+      "status": "PRESENT_READ",
+      "volume": "I"
+    },
+    {
+      "path": "references/volume_ii_common_nucleon_gtmd_overlaps.tex",
+      "sha256": "2cbe5ac0c04726f7a1610a1b6d19f98e9b5a813bc773fa7bbd0a7e99830e930b",
+      "status": "PRESENT_READ",
+      "volume": "II"
+    },
+    {
+      "path": "references/volume_iii_dynamical_wilson_lines.tex",
+      "sha256": "7abe76b5866fe6349b98dbe435303ee72d55ce539faf535d18d03691c8ddf5b7",
+      "status": "PRESENT_READ",
+      "volume": "III"
+    },
+    {
+      "path": "references/volume_iv_matched_spin1_nuclear_dynamics.tex",
+      "sha256": "eec34c5520b7a23e89411d6688ede2a7f46784ca41cbe8b088e2cecbc4b81734",
+      "status": "PRESENT_READ",
+      "volume": "IV"
+    },
+    {
+      "path": "references/volume_v_matching_evolution_factorization.tex",
+      "sha256": "57fed5853e5983c83a4f675b8d218897c377e0713923e1d22f89d91468022e51",
+      "status": "PRESENT_READ",
+      "volume": "V"
+    }
+  ],
+  "verified_contracts": [
+    "explicit positive-x antiquark active set and exact empty-set zero",
+    "explicit-gluon active set and diagonal adjoint core",
+    "single symmetric xi=0 recoil authority",
+    "normalized sector probabilities and analytic internal transverse norms",
+    "separate quark vector and gluon H^g=xg moments",
+    "regulated route closure with outstanding matching morphisms",
+    "zero-rescattering link-odd projections remain exact zero",
+    "Feshbach induced operator, norm kernel, and replacement exclusion",
+    "distinct Amp/Match/Red layers and fail-closed adapters"
+  ],
+  "volume_iv_interface_assessment": {
+    "available": [
+      "positive-x species and flavor identity",
+      "zero-skewness incoming/outgoing momentum fibers",
+      "ordered gluon-link and diagonal color status",
+      "regulated matching-status and outstanding-matching metadata",
+      "validation member and provenance identity"
+    ],
+    "nuclear_dynamics_implemented_in_c4": false,
+    "ready_for_volume_iv_nuclear_consumption": false,
+    "repository_c4_scope": "Volume II Benchmarks E-F",
+    "required_before_nuclear_consumption": [
+      "complete nucleon parton-target helicity matrices",
+      "proton and neutron microscopic member pair",
+      "Wilson phase and soft-overlap budget from Volume III",
+      "shared microscopic covariance",
+      "complete Volume II projector and convergence gates"
+    ],
+    "volume_iv_c4a_c4f_scope": "future matched spin-1 nuclear pilot"
+  },
+  "volume_v_interface_assessment": {
+    "available": [
+      "regulated analytic operator ancestry",
+      "species and diagonal color representation",
+      "route-specific outstanding matching requirements",
+      "separate quark-vector and gluon-EMT moments"
+    ],
+    "evolution_or_process_implemented_in_c4": false,
+    "ready_for_qcd_matching_or_evolution": false,
+    "required_before_matching_or_evolution": [
+      "closed helicity/operator basis in b_TMD space",
+      "Hamiltonian regulator and truncation identity",
+      "Volume III phase and soft-overlap budget",
+      "LF-to-QCD matching matrix and calibration conditions",
+      "rank, Bessel, Fourier-phase, and mass identity on every parent",
+      "shared microscopic ensemble and covariance"
+    ]
+  }
+}

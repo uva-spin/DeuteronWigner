@@ -1,0 +1,3 @@
+# C320/HQCDRIMASSC43VALIDATE1
+
+Publish the completed nonphysical K9/K11/K13 determinant and Gram validation certificate with exact global-P0 domain exclusion and separate Wilson-boundary ownership. Start from baseline `c6fd49bca34a8e171f790655977989386f0b86c0`, C319 root `1b543f739a76120e0483b03d6640d0ec38811be36a04b08a7dc2e8cee894e13a`, and the committed C319-C320 contract. Preserve all validation/nonphysical labels and K separation. Validate independent routes, covariance, roots, safe reload, 384 mutations, cumulative tests, deterministic builds, protected paths and quantum nonmutation. Commit once, create one continuation/prompt, atomically advance state, continue, never push, and make no physical activation claim.

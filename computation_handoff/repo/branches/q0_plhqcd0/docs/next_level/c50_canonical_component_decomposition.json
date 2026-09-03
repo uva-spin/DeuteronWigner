@@ -1,0 +1,22 @@
+{
+  "components": [
+    {
+      "Pminus_dimension": 1,
+      "explicit_mass_power": 1,
+      "id": "MASS_HELICITY_FLIP",
+      "later_HO_dimension_cancelled": true,
+      "source": "C43 Eq. (24)+C45 spinors",
+      "transverse_rank": 0
+    },
+    {
+      "Pminus_dimension": 1,
+      "explicit_mass_power": 0,
+      "id": "TRANSVERSE_HELICITY",
+      "later_HO_dimension_cancelled": true,
+      "source": "C43 Eq. (24)+C45 polarizations",
+      "transverse_rank": 1
+    }
+  ],
+  "operator": "<qg|P^-_qqg|q>=g_s (2pi k_g)^(-1/2) ubar(p') gamma.epsilon*(k) u(p), color stripped, with transverse conservation distribution stripped",
+  "raw_C47_explanation": "C47's local contact moment stores a transverse HO moment separately. Its GeV^(1+|m_rel|) label is a moment dimension, not a P-minus operator dimension; the C50 plane-wave kernel and HO measure supply the compensating b_HO factors."
+}

@@ -1,0 +1,19 @@
+{
+  "package_root": "ad49e9d42145be5ac9837ff763de669180ec6f569765780e83f72b4878cf7b7c",
+  "physical": false,
+  "plan": "RIMASSC43TRANSTAIL1-A",
+  "record": {
+    "A0": "2 theta^2/c",
+    "A1": "-(2 m theta^2 + theta^4 + 6 theta^2 x^2)/c^2",
+    "c": "L^2 bHO^2",
+    "linear_divergence": true,
+    "log_divergence": true,
+    "m": "L^2 mass2 for fermion; 0 otherwise",
+    "paired_shell": "A0 + A1/y + O(y^-2), y=q+1",
+    "root": "231ebf67d4510e33cfe3845e2528f33abc2bdff4d7c6a01021b77709ab086099",
+    "sum": "A0 Nmax + A1 H_Nmax + finite + O(1/Nmax)",
+    "x": "2 pi j"
+  },
+  "status": "C332_TRANSVERSE_LINEAR_AND_LOG_NMAX_DIVERGENCES_DERIVED_COMPONENT_SUBTRACTION_MISSING",
+  "validation": "PASS"
+}

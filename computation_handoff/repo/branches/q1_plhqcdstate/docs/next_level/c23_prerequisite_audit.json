@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "stable_id": "C23.PREREQ.001",
+  "prompt": {
+    "path": "docs/next_level/c23_p0_codex_prompt.md",
+    "sha256": "5346947dd612813386a07ed1827a8ffd9540f03614862e135191eb0a105d4347",
+    "declared_baseline": "12e1850d101b0d64de27ae0daaf4ae42772e2a22",
+    "declared_m3_split": {
+      "fully_qualified": 438,
+      "evolution_only": 54,
+      "unavailable": 48
+    }
+  },
+  "authoritative_repository_state": {
+    "commit_before_prompt_ingestion": "647e18ca259c2638125ca9e0cbd64a1c78a8a0bf",
+    "volume_xviii_path": "references/volume_xviii_smallb_ope_collinear_mixing.tex",
+    "volume_xviii_sha256": "ee5a103b28ebc216649a910618a455a85fc895d00fe74cb39630568a14508ed3",
+    "fully_qualified": 0,
+    "evolution_only": 54,
+    "unavailable": 486,
+    "volume_xviii_acceptance_met": false
+  },
+  "decision": {
+    "status": "C23_EXECUTION_BLOCKED_BY_C22_M3_GATE",
+    "reason": "The prompt permits process W terms only for M3_FULLY_QUALIFIED identities, while the authoritative post-Volume-XVIII matrix contains none.",
+    "process_records_created": 0,
+    "w_terms_created": 0,
+    "y_terms_created": 0,
+    "production_routes_changed": false,
+    "prompt_preserved_byte_for_byte": true
+  },
+  "unblocking_task": "Complete C22/M3 Volume-XVIII source/ancillary, exact-distribution, independent x/Mellin, and operator-derived capability gates; regenerate the immutable M3 split; then rebase C23/P0 on that accepted commit."
+}

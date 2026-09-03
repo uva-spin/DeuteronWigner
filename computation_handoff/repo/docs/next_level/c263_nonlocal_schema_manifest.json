@@ -1,0 +1,45 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "nonlocal_schema_manifest",
+  "authority_record": {
+    "condition_count": 4,
+    "rank_required": 4,
+    "required": [
+      "functional_id",
+      "direction",
+      "continuum_current_amplitude",
+      "external_wavepackets",
+      "finite_cell_map",
+      "HO_resolution",
+      "CM_projector",
+      "color_projector",
+      "Abel_test_function",
+      "boundary_link_holonomy",
+      "source_sink_orientation",
+      "normalization",
+      "scale",
+      "scheme",
+      "target_functional",
+      "standard_physical_matching",
+      "uncertainty",
+      "source_roots"
+    ],
+    "resolutions": [
+      "K9_2_N8_b0.40",
+      "K11_2_N8_b0.40",
+      "K13_2_N8_b0.40"
+    ],
+    "root": "57985883666648e2b11a3ef9d64f9ada890fac022d2bcb860a1bd835dc3b5974",
+    "schema": "C264-C117-NONLOCAL-MATCHING-FUNCTIONAL-V1"
+  },
+  "package_root": "68b3b372cef8080611691a927ce280e70c7b29011d0d9d91c8b8b17823637bb3",
+  "physical": false,
+  "plan": "C117CONTTENSOR1-D",
+  "schema": "C263-NONLOCAL_SCHEMA-MANIFEST-V1",
+  "status": "C263_C117_DIRECTIONS_CLASSIFIED_AS_REGULATOR_OR_EXTERNAL_PROJECTORS_NONLOCAL_MATCHING_REQUIRED",
+  "validation": "BOUND"
+}

@@ -1,0 +1,90 @@
+{
+  "C40_consumed": false,
+  "C47_raw_tuples_consumed": false,
+  "C50_combined_values_consumed": false,
+  "all_positive_inputs_usable": false,
+  "c43_projection_interfaces": {
+    "Hq": "NOT_GENERATED",
+    "Hqg": "NOT_GENERATED",
+    "V_qg<-q": "NOT_GENERATED",
+    "bilocal measurement": "NOT_GENERATED",
+    "boundary term": "NOT_GENERATED",
+    "constrained term": "NOT_GENERATED",
+    "counterterm operators": "NOT_GENERATED",
+    "instantaneous fermion": "NOT_GENERATED",
+    "instantaneous gluon/current": "NOT_GENERATED",
+    "spacelike Wilson emission": "NOT_GENERATED",
+    "zero-mode term": "NOT_GENERATED"
+  },
+  "c43_terms": [
+    {
+      "expression": "-g psibar gamma^mu T^a psi A_mu^a",
+      "name": "canonical_qg",
+      "scope": "REQUIRED_AT_O_G2"
+    },
+    {
+      "expression": "g f_abc (partial_mu A_nu^a-partial_nu A_mu^a)A_b^mu A_c^nu/2",
+      "name": "three_gluon",
+      "scope": "OUTSIDE_SCOPE_BUT_RETAINED"
+    },
+    {
+      "expression": "g^2 f_abc f_ade A_bmu A_dmu A_cnu A_enu/4",
+      "name": "four_gluon",
+      "scope": "OUTSIDE_SCOPE_BUT_RETAINED"
+    },
+    {
+      "expression": "-g^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi",
+      "name": "instantaneous_fermion",
+      "scope": "REQUIRED_AT_O_G2"
+    },
+    {
+      "expression": "-g^2/2 [(i partial_-)^-1 j_a^+]^2",
+      "name": "instantaneous_current",
+      "scope": "REQUIRED_AT_O_G2"
+    }
+  ],
+  "first_blocker": "C54.IFERM.FINITE_VOLUME_NORMAL_ORDERED_PROJECTION",
+  "inputs": [
+    {
+      "classification": "SOURCE_DERIVED_SYMBOLIC",
+      "evidence": "C43 Eq. action/constraints/term ledger",
+      "id": "C43_ACTION"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "evidence": "normalized longitudinal, HO, spinor and polarization library",
+      "id": "C45_MODES"
+    },
+    {
+      "classification": "SOURCE_DERIVED_FUNCTIONAL",
+      "evidence": "CM-clean bases and invariant-mass functional",
+      "id": "C47_BASIS_FREE"
+    },
+    {
+      "classification": "SOURCE_DERIVED_FUNCTIONAL",
+      "evidence": "mode-index P0/Q0/d1/d2 arrays",
+      "id": "C47_PV_P0_Q0"
+    },
+    {
+      "classification": "SOURCE_DERIVED_EXECUTABLE",
+      "evidence": "read-only runtime hashes and SymPy coefficient",
+      "id": "C53_VERTEX"
+    },
+    {
+      "classification": "METHOD_ORACLE_ONLY",
+      "evidence": "explicitly forbidden from C54 construction",
+      "id": "C40"
+    },
+    {
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "C43 interface is COMPLETE_INTERFACE_ONLY; no field-expanded, operator-ordered q/qg projection formula",
+      "id": "IFERM_FINITE_VOLUME_NORMAL_ORDERED_KERNEL"
+    },
+    {
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "same absent q/qg current-current contraction and color/CM matrix-element contract",
+      "id": "ICURRENT_FINITE_VOLUME_NORMAL_ORDERED_KERNEL"
+    }
+  ],
+  "status": "C54_INSTANTANEOUS_FERMION_ASSEMBLY_INCOMPLETE"
+}

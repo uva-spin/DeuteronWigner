@@ -1,0 +1,3 @@
+# C80/IFKERNEL2 required calculation
+
+Before a C79 contact coordinate can be evaluated, derive from the C43/C55 W3 operator and C45 field expansions the normalized finite-cell plane-wave `b† a† a b` matrix element. The derivation must retain the ordered `T^a T^b`, the complete-right-product PV/Q0 inverse derivative, two transverse polarization labels, exact finite-cell factors, and the local four-HO overlap. Then map that kernel into C77 raw components and C78's immutable kernel coordinates, prove its P-minus-to-M-squared conversion, and only then stream the three C78 domains. C50's one-gluon b†a†b evaluator, C53 propagation, and C58 self-induced inertia remain invalid substitutes.

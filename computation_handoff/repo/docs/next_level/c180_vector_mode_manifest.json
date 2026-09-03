@@ -1,0 +1,54 @@
+{
+  "dimensions": {
+    "K11": 110,
+    "K13": 156,
+    "K9": 72
+  },
+  "factorized": true,
+  "root": "408b240dff495d48f08fd294292642af95b26015e18ea68097913518f838ce36",
+  "rows": [
+    {
+      "component_order": [
+        "x",
+        "y"
+      ],
+      "factorized": true,
+      "ghost_scalar": false,
+      "mode_id_rule": "C180_VECTOR_K9_<scalar_rank:03d>_<X|Y>",
+      "physical_one_gluon_source": false,
+      "rank_rule": "scalar_rank*2 + component_index",
+      "resolution_id": "K9",
+      "scalar_dimension": 36,
+      "vector_dimension": 72
+    },
+    {
+      "component_order": [
+        "x",
+        "y"
+      ],
+      "factorized": true,
+      "ghost_scalar": false,
+      "mode_id_rule": "C180_VECTOR_K11_<scalar_rank:03d>_<X|Y>",
+      "physical_one_gluon_source": false,
+      "rank_rule": "scalar_rank*2 + component_index",
+      "resolution_id": "K11",
+      "scalar_dimension": 55,
+      "vector_dimension": 110
+    },
+    {
+      "component_order": [
+        "x",
+        "y"
+      ],
+      "factorized": true,
+      "ghost_scalar": false,
+      "mode_id_rule": "C180_VECTOR_K13_<scalar_rank:03d>_<X|Y>",
+      "physical_one_gluon_source": false,
+      "rank_rule": "scalar_rank*2 + component_index",
+      "resolution_id": "K13",
+      "scalar_dimension": 78,
+      "vector_dimension": 156
+    }
+  ],
+  "schema": "C180-VECTOR-MODE-V1"
+}

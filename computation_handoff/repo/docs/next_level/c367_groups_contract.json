@@ -1,0 +1,45 @@
+{
+  "package_root": "8448ad3c55d0f440661f54bc26ff74f6234366479692dc37d8db0162dc17fe24",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUPREDUCE1-C",
+  "record": {
+    "count": 3,
+    "order": "sum bare measured integrands -> reduce common masters -> expand alpha,beta -> separate epsilon UV/IR -> MSbar UV only",
+    "root": "5008cc9a8d9c4a78fb81d209c09b4046b7e44646510d86ac8168c9a89a7baea2",
+    "rows": [
+      {
+        "analytic": "alpha; beta absent",
+        "id": "distribution",
+        "measurement": "0<x<1 real plus endpoint distribution",
+        "terms": [
+          "DR.qq",
+          "DR.qv",
+          "DR.vv",
+          "delta(1-x)*(Sigma_q+W_v+V_qv+MSbar_UV)"
+        ]
+      },
+      {
+        "analytic": "beta; alpha absent",
+        "id": "fragmentation",
+        "measurement": "0<z<1 real plus crossed endpoint distribution",
+        "terms": [
+          "FR.qq",
+          "FR.qv",
+          "FR.vv",
+          "delta(1-z)*(Cross(Sigma_q)+W_tildev+V_htv+MSbar_UV)"
+        ]
+      },
+      {
+        "analytic": "alpha and beta with ordered contours",
+        "id": "soft",
+        "measurement": "count once before TMD square-root allocation",
+        "terms": [
+          "S_real(v,tildev)",
+          "S_virtual(v,tildev)"
+        ]
+      }
+    ]
+  },
+  "status": "C367_GAUGE_COMPLETE_REAL_VIRTUAL_GROUP_AST_REDUCED_COMMON_MASTER_INTEGRALS_REQUIRED",
+  "validation": "BOUND"
+}

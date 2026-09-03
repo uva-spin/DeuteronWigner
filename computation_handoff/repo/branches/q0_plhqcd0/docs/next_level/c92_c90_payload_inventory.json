@@ -1,0 +1,111 @@
+{
+  "all_passes_agree": true,
+  "canonical_ledger_fields": [
+    "blake2b_256",
+    "kind",
+    "normal_form_root",
+    "pair",
+    "primitive_roots",
+    "proof",
+    "sha256",
+    "summary"
+  ],
+  "missing_package_objects": [
+    "expansion_theorem_specification",
+    "primitive_family_manifest",
+    "primitive_family_records",
+    "public_proof_checker_input_schema"
+  ],
+  "missing_pair_fields": [
+    "ancestry_rule_root",
+    "bound_rule_root",
+    "coefficient_expression_root",
+    "normal_form_content",
+    "primitive_family_records",
+    "proof_inputs",
+    "record_expression_root",
+    "status_rule_root"
+  ],
+  "payloads": [
+    {
+      "covered_by_c90_aggregate": false,
+      "path": "data/runtime/c90_ifboundrestart/pass_one/index.json",
+      "public": false,
+      "records": 1,
+      "role": "C90 compact runtime index",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "838e511591179e242ea885090db96ca0769a61cddcd4d27b91966db9fed571af",
+      "size": 1578
+    },
+    {
+      "covered_by_c90_aggregate": true,
+      "path": "data/runtime/c90_ifboundrestart/pass_one/ledger.jsonl",
+      "public": false,
+      "records": 154830,
+      "role": "C90 compact pair semantic-root ledger",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "0687a83ab5fe7488817183322c4aa6dc8d39eaaecf904cafbbf05dda10174f5e",
+      "size": 312862070
+    },
+    {
+      "covered_by_c90_aggregate": false,
+      "path": "data/runtime/c90_ifboundrestart/pass_two/index.json",
+      "public": false,
+      "records": 1,
+      "role": "C90 compact runtime index",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "838e511591179e242ea885090db96ca0769a61cddcd4d27b91966db9fed571af",
+      "size": 1578
+    },
+    {
+      "covered_by_c90_aggregate": true,
+      "path": "data/runtime/c90_ifboundrestart/pass_two/ledger.jsonl",
+      "public": false,
+      "records": 154830,
+      "role": "C90 compact pair semantic-root ledger",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "0687a83ab5fe7488817183322c4aa6dc8d39eaaecf904cafbbf05dda10174f5e",
+      "size": 312862070
+    },
+    {
+      "covered_by_c90_aggregate": false,
+      "path": "data/runtime/c90_ifboundrestart/resume/index.json",
+      "public": false,
+      "records": 1,
+      "role": "C90 compact runtime index",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "838e511591179e242ea885090db96ca0769a61cddcd4d27b91966db9fed571af",
+      "size": 1578
+    },
+    {
+      "covered_by_c90_aggregate": true,
+      "path": "data/runtime/c90_ifboundrestart/resume/ledger.jsonl",
+      "public": false,
+      "records": 154830,
+      "role": "C90 compact pair semantic-root ledger",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "0687a83ab5fe7488817183322c4aa6dc8d39eaaecf904cafbbf05dda10174f5e",
+      "size": 312862070
+    },
+    {
+      "covered_by_c90_aggregate": false,
+      "path": "data/runtime/c90_ifboundrestart/parallel/index.json",
+      "public": false,
+      "records": 1,
+      "role": "C90 compact runtime index",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "838e511591179e242ea885090db96ca0769a61cddcd4d27b91966db9fed571af",
+      "size": 1578
+    },
+    {
+      "covered_by_c90_aggregate": true,
+      "path": "data/runtime/c90_ifboundrestart/parallel/ledger.jsonl",
+      "public": false,
+      "records": 154830,
+      "role": "C90 compact pair semantic-root ledger",
+      "schema": "C90-C82-SEMANTIC-IR-V1",
+      "sha256": "0687a83ab5fe7488817183322c4aa6dc8d39eaaecf904cafbbf05dda10174f5e",
+      "size": 312862070
+    }
+  ]
+}

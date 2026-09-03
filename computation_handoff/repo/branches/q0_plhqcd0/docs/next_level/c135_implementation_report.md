@@ -1,0 +1,3 @@
+# C135/HQCDTARGET2 implementation report
+
+C135 selects Plan T2-A, `PROJECT_FINITE_BASIS_OPEN_TRIPLET_SUBTRACTION_V1`. It is a project-owned symbolic open-triplet finite-basis scheme, not MSbar, on-shell, RI/SMOM, MOM, a physical pole scheme, or a continuum limit. The dressed-triplet mass and finite-basis q↔qg vertex are executable symbolic external-input conditions; no numerical target is supplied. Gluon one-body factorization remains unclosed and no gluon masslessness zero is imposed. The Ward/current identity is a strict diagnostic holdout because its unresolved-direction sensitivity is zero. The prospective generic rank is 2 with rank deficit 9. No parameter, counterterm, renormalized matrix, physical state, or downstream object is created.

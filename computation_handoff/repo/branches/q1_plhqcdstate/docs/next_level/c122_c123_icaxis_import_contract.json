@@ -1,0 +1,18 @@
+{
+  "schema": "C122-C123-ICAXIS-IMPORT-CONTRACT-V1",
+  "parent_status": "C122_ICDOMAIN_LOGICAL_AXES_INCOMPLETE",
+  "blocking_object": "authenticated axis members/cardinalities for source graphs, physical states, modes, spin/color, CM, triplet, and orientation",
+  "scope": "publish complete axis authority before constructing logical witness identities",
+  "forbidden": [
+    "witness values",
+    "witness bounds",
+    "component sums",
+    "sparse operators",
+    "matrix-free actions",
+    "physical coupling",
+    "counterterm solution",
+    "C112 substitution",
+    "C53 propagation",
+    "local-QCD polynomial"
+  ]
+}

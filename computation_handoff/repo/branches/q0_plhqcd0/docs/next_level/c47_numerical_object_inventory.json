@@ -1,0 +1,2260 @@
+{
+  "forbidden_absent": [
+    "final Hamiltonian matrix",
+    "final canonical SU3 matrix",
+    "instantaneous matrix",
+    "JMY Wilson matrix",
+    "bilocal TMD matrix",
+    "one-loop coefficient"
+  ],
+  "generator": "PYTHONPATH=src /Users/dustin/miniforge3/bin/python3.9 scripts/build_c47_basis1_artifacts.py",
+  "objects": {
+    "P0": {
+      "array_sha256": "b2d18ad746e8aed5a40a47fcaad8663ed3c39ba76227b24bf87e0f2dc4b4f21b",
+      "basis_order_hash": "2842de9d43a98b535ed75b3176a95e9bb11fd5c7f04979b329a35f578f7e0ba2",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/P0.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "dimensionless"
+    },
+    "Q0": {
+      "array_sha256": "bc0b7f52f230e4ed70ea756b460784d7e3fb9f33ba07c11ff2900857b477b3cb",
+      "basis_order_hash": "4d98893e06cf666506fff580b92c7ff22f41af5d5d0a98072d3a857291f074e7",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 6,
+      "runtime_path": "data/runtime/c47_basis1/Q0.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "dimensionless"
+    },
+    "canonical_kernel_K11_2_N10_b0.45": {
+      "array_sha256": "c3e04306e15d903a5dbca560b0504a08f186e2738d04ccb3cbbe96287d470548",
+      "basis_order_hash": "d4e2100aff7dabd424c21727c67891b00223e3d3a559060ee6aad7349129fdc6",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 2595,
+      "runtime_path": "data/runtime/c47_basis1/canonical_kernel_K11_2_N10_b0.45.npy",
+      "shape": [
+        1170,
+        4
+      ],
+      "units": "L^(-1/2) GeV^(1+|m|)"
+    },
+    "canonical_kernel_K13_2_N12_b0.50": {
+      "array_sha256": "6aab9b8380ee20404ea20dde43986a391cdbbf85c98cff7d17669be6456997ba",
+      "basis_order_hash": "08576f369f6af3b8f6f4ae4b5fd35c23316a1e54b7835e1f7a25f356576f197a",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3816,
+      "runtime_path": "data/runtime/c47_basis1/canonical_kernel_K13_2_N12_b0.50.npy",
+      "shape": [
+        1728,
+        4
+      ],
+      "units": "L^(-1/2) GeV^(1+|m|)"
+    },
+    "canonical_kernel_K9_2_N8_b0.40": {
+      "array_sha256": "4aeb27a352fe3446c2b503656e56935fc8bd0f8b6c2bb70f5163f339927410a0",
+      "basis_order_hash": "9bae69af4a7dabc2576257ce00a8bad26f05da1c110f0f3caf9d66600854b5c8",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1608,
+      "runtime_path": "data/runtime/c47_basis1/canonical_kernel_K9_2_N8_b0.40.npy",
+      "shape": [
+        720,
+        4
+      ],
+      "units": "L^(-1/2) GeV^(1+|m|)"
+    },
+    "cm_isometry_K11_2_N10_b0.45_0": {
+      "array_sha256": "a6fa385e0bbd76d2c431000b2678934779bc190aaa8a248af09b49e16ccdea44",
+      "basis_order_hash": "a3f30c1433729cad75c9f671a85a426b12b1858eb4e96b5f32260afe9c3741ba",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3663,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K11_2_N10_b0.45_0.npy",
+      "shape": [
+        45,
+        495
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K11_2_N10_b0.45_1": {
+      "array_sha256": "9ca0e83abb977af987a8b2385c552eb1a4e1487a089bee16c860666308cf849d",
+      "basis_order_hash": "c173b3016262a496234068ba08769ca11d6a1878b3928a387277a90a158f224d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3663,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K11_2_N10_b0.45_1.npy",
+      "shape": [
+        45,
+        495
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K11_2_N10_b0.45_2": {
+      "array_sha256": "9e994ccb1ff40afc10ac0fa9b277b60f222b6d7f9dd80567b2f79b6cb8355a9e",
+      "basis_order_hash": "3323db3881fbce289c57e618b37947da98e185898dfd6167235c928c57e58acc",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3663,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K11_2_N10_b0.45_2.npy",
+      "shape": [
+        45,
+        495
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K11_2_N10_b0.45_3": {
+      "array_sha256": "b51dd5398672453e2f2d35d7762377ca34010173fd53107a7babeff814ff5d23",
+      "basis_order_hash": "2185f8f90903c16ace2a995a4a78dec50845920af00b04a790ee5eb37e80cbc9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3663,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K11_2_N10_b0.45_3.npy",
+      "shape": [
+        45,
+        495
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K11_2_N10_b0.45_4": {
+      "array_sha256": "f0dbbadf053373f893649b5eef6b70409bcc09097e276b52247d01a9c4d20d25",
+      "basis_order_hash": "86d96094f82a41d6a09be05d30534fa3c0be616ecd6914ea94cdc0ce95e7c61b",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3663,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K11_2_N10_b0.45_4.npy",
+      "shape": [
+        45,
+        495
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K13_2_N12_b0.50_0": {
+      "array_sha256": "187f2e5958ba824070c6eeab89cc171a29297c7cf9d5b15bd954b5841c071988",
+      "basis_order_hash": "4818608c2a5ddc14d242bb4174682e7b7c5f290d6f09afbb5ea461b65fa11dba",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 9009,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K13_2_N12_b0.50_0.npy",
+      "shape": [
+        66,
+        1001
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K13_2_N12_b0.50_1": {
+      "array_sha256": "c4410de13b15da9e63cc43f4108331f45f1971017b6c0d9a9714922475e51a02",
+      "basis_order_hash": "fa611647f01da0a8df1721b9f2ce7f72ec751860bc46e1f4abe755e45bf76651",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 9009,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K13_2_N12_b0.50_1.npy",
+      "shape": [
+        66,
+        1001
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K13_2_N12_b0.50_2": {
+      "array_sha256": "df8b4a56ff90249da0559ea5b41a491be7b52244627566880abc784f9da9d4b6",
+      "basis_order_hash": "5a67f7f6524663b5dfed0d12f1c621333d65d5e295e0cdc6bc7aac3ee3ca92a9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 9009,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K13_2_N12_b0.50_2.npy",
+      "shape": [
+        66,
+        1001
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K13_2_N12_b0.50_3": {
+      "array_sha256": "e008fd98c8839dc0794cf247f2b2fa1ba0abeff3197b11cab76e2470e583c640",
+      "basis_order_hash": "d651ac36ec199137b3de994ea625d65ce87cf985aa6937caafa383011e65beb3",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 9009,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K13_2_N12_b0.50_3.npy",
+      "shape": [
+        66,
+        1001
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K13_2_N12_b0.50_4": {
+      "array_sha256": "f9f47c0e77fbdcf821766cd52e5fa92ccfe5ff4f0626a7ef462bd6eb0cd8d5fe",
+      "basis_order_hash": "f163e47b2e389efae05d68ffd4e5b84b69b95415b66e268590e902440c72ad4b",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 9009,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K13_2_N12_b0.50_4.npy",
+      "shape": [
+        66,
+        1001
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K13_2_N12_b0.50_5": {
+      "array_sha256": "684a3d2aae30d7d3e729b70cd768529022300c95c4dbaf59aaa0d907fa90b57e",
+      "basis_order_hash": "41dcd08729c7f1a4eefdf48ff69802e504d2fb07e18ef0edb71b7fd2c80f0be1",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 9009,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K13_2_N12_b0.50_5.npy",
+      "shape": [
+        66,
+        1001
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K9_2_N8_b0.40_0": {
+      "array_sha256": "f24b166b625a430b5e49c780b9a460852ff23229d4776ebb4a8a2dcd1019f8e7",
+      "basis_order_hash": "a4da68913faf337a541f2738f5d629f6a6e93b477791a4763c8b05b7c4e40e15",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1218,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K9_2_N8_b0.40_0.npy",
+      "shape": [
+        28,
+        210
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K9_2_N8_b0.40_1": {
+      "array_sha256": "dde0cd12cd39f1e6f194d8c8495ddae426048d1b4aaf9135e87657820546e50e",
+      "basis_order_hash": "ac122743a4d690ac8058a70f36fb3f796e9c6348e7e8f2b1036fdeee90a001e9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1218,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K9_2_N8_b0.40_1.npy",
+      "shape": [
+        28,
+        210
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K9_2_N8_b0.40_2": {
+      "array_sha256": "89e9d3c93a7cf5d5404200b066b518b7e592bae72d8ecff3d013bbf1443c3bed",
+      "basis_order_hash": "bb0359d92b7bdb690e4c3fe9f6c4c180ed70014cf56658caf291a1896def328a",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1218,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K9_2_N8_b0.40_2.npy",
+      "shape": [
+        28,
+        210
+      ],
+      "units": "dimensionless"
+    },
+    "cm_isometry_K9_2_N8_b0.40_3": {
+      "array_sha256": "c89c959d5018c5bb611837c8741ac899932a40bf874f3cf3cbfc0925914e1fb3",
+      "basis_order_hash": "d30534d59bb0f9db8fe7a5f106b02f58170643c90ce7b6d2f044800386ac7a6e",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1218,
+      "runtime_path": "data/runtime/c47_basis1/cm_isometry_K9_2_N8_b0.40_3.npy",
+      "shape": [
+        28,
+        210
+      ],
+      "units": "dimensionless"
+    },
+    "comparison_K11_2_N10_b0.45_from_K9_2_N8_b0.40": {
+      "array_sha256": "1b2e4f821ff738b4dd422c460c07683448a6bd9b0ed8559673f9ca0bb0b5eaf2",
+      "basis_order_hash": "ab2fd108b38f457551c032357ca13fab160f8f7124971fa504d32f9157991aa7",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 0,
+      "runtime_path": "data/runtime/c47_basis1/comparison_K11_2_N10_b0.45_from_K9_2_N8_b0.40.npy",
+      "shape": [
+        2700,
+        1344
+      ],
+      "units": "dimensionless; exact common-support map"
+    },
+    "comparison_K13_2_N12_b0.50_from_K11_2_N10_b0.45": {
+      "array_sha256": "82ed0e6feac56cab68278957d5dc69f23f10bb1809b05e7682081f59acc6d30c",
+      "basis_order_hash": "9861521492acbd68fbe68dbc3d82a40af18c8ec37753aa789e88b021073b83ed",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 0,
+      "runtime_path": "data/runtime/c47_basis1/comparison_K13_2_N12_b0.50_from_K11_2_N10_b0.45.npy",
+      "shape": [
+        4752,
+        2700
+      ],
+      "units": "dimensionless; exact common-support map"
+    },
+    "free_functional_K11_2_N10_b0.45": {
+      "array_sha256": "8a5df5a7bc649aa505f8a434b684b71a1c0640d45ceae508446cabaad117a684",
+      "basis_order_hash": "ec6519f2802291a4e0f1a22c169ebb400acd6275c56a2bd51ae6526f6d1a80c3",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 2700,
+      "runtime_path": "data/runtime/c47_basis1/free_functional_K11_2_N10_b0.45.npy",
+      "shape": [
+        2700
+      ],
+      "units": "GeV^2"
+    },
+    "free_functional_K13_2_N12_b0.50": {
+      "array_sha256": "0a908747a38f0b5d8686d10e6075b12252bd5adc88750635a68774a533c1dbe3",
+      "basis_order_hash": "2fc43b4a3a2e1788cccd1526e02967106b76c159ea82974b4a8a4d479eb3fc88",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 4752,
+      "runtime_path": "data/runtime/c47_basis1/free_functional_K13_2_N12_b0.50.npy",
+      "shape": [
+        4752
+      ],
+      "units": "GeV^2"
+    },
+    "free_functional_K9_2_N8_b0.40": {
+      "array_sha256": "3b7ca7bbb23c1cd86994570460fafaa92a0228880e2127bc35155f5c84c7aa75",
+      "basis_order_hash": "459984d65aaa97cd30d05a1522d841d9b40b0bbf96463f9915740159e4b5e9a5",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1344,
+      "runtime_path": "data/runtime/c47_basis1/free_functional_K9_2_N8_b0.40.npy",
+      "shape": [
+        1344
+      ],
+      "units": "GeV^2"
+    },
+    "inverse_d1": {
+      "array_sha256": "037833eb741ba83bb8c353d967a97782c94b6c906ff7477fa9269848c873166e",
+      "basis_order_hash": "8bfaed98e6778528799456f8995a555e8ca4883f1b491a947240749529d810d6",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 6,
+      "runtime_path": "data/runtime/c47_basis1/inverse_d1.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "L/pi"
+    },
+    "inverse_d2": {
+      "array_sha256": "f64c4c647093d8bfd9771437925a8bfa60adaf5c8a5798ff8ded509399ad3a11",
+      "basis_order_hash": "bb8ff0eb31d737c1ee4587f403e62e51b7c53db1a549121925b40b5d46028bdb",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 6,
+      "runtime_path": "data/runtime/c47_basis1/inverse_d2.npy",
+      "shape": [
+        7,
+        7
+      ],
+      "units": "(L/pi)^2"
+    },
+    "q_basis_K11_2_N10_b0.45": {
+      "array_sha256": "c344ae2a81d638b38895cd716902975b3c034cdcf2f4904b65438586f06fb30a",
+      "basis_order_hash": "375c8c49f7554c877c18a2e0322c10f6a89c878fad07433182a6c3852bb54158",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/q_basis_K11_2_N10_b0.45.npy",
+      "shape": [
+        6,
+        5
+      ],
+      "units": "dimensionless labels"
+    },
+    "q_basis_K13_2_N12_b0.50": {
+      "array_sha256": "5213c82db397b62f70406d3027e426960f4a7439685f16d9f3bd485b52d12934",
+      "basis_order_hash": "b431ffda8230bbb23712a969f27b08b937b4c4975bb6d17dd4d4e7c818adf801",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/q_basis_K13_2_N12_b0.50.npy",
+      "shape": [
+        6,
+        5
+      ],
+      "units": "dimensionless labels"
+    },
+    "q_basis_K9_2_N8_b0.40": {
+      "array_sha256": "81b15b23a7d6be1d02b9fdd140898fd84250b740c6b86fa2100943e4af4c83a8",
+      "basis_order_hash": "d9a4b89e62f5071d716935b4f2150e45732bb18ca767e15cfad2b8da0f3fffb3",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/q_basis_K9_2_N8_b0.40.npy",
+      "shape": [
+        6,
+        5
+      ],
+      "units": "dimensionless labels"
+    },
+    "qg_basis_K11_2_N10_b0.45": {
+      "array_sha256": "02d6591557479fd5e128f8c82c763748cc5ee9db23ca8ad2c31cf6fca6379c7c",
+      "basis_order_hash": "4fbcc414dd6eda24b583467b625921753054a7920e0035c7ed77c982e6332b45",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 22080,
+      "runtime_path": "data/runtime/c47_basis1/qg_basis_K11_2_N10_b0.45.npy",
+      "shape": [
+        2700,
+        9
+      ],
+      "units": "dimensionless labels"
+    },
+    "qg_basis_K13_2_N12_b0.50": {
+      "array_sha256": "cb1ef13624d6161185a9b5b42806d092e22636107d5cfbc776e80c2710ed7388",
+      "basis_order_hash": "408eff445a88848e001c2555d34cc6c2cc0dfdace145c51c6fd814f4a63fe1e3",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 39240,
+      "runtime_path": "data/runtime/c47_basis1/qg_basis_K13_2_N12_b0.50.npy",
+      "shape": [
+        4752,
+        9
+      ],
+      "units": "dimensionless labels"
+    },
+    "qg_basis_K9_2_N8_b0.40": {
+      "array_sha256": "2e8cb1791ee762f18505c0da0da261134b9d2634260d954b6d21c39468878463",
+      "basis_order_hash": "fdccddeaf65a5e008c782c0e708e3079f614ca08ad6ded18b913c9ea37657f7f",
+      "dtype": "<f8",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 10832,
+      "runtime_path": "data/runtime/c47_basis1/qg_basis_K9_2_N8_b0.40.npy",
+      "shape": [
+        1344,
+        9
+      ],
+      "units": "dimensionless labels"
+    },
+    "qg_triplet_isometry": {
+      "array_sha256": "fb10e35444dd6018aea2fb20a499c697e91c1be8f77fce8829002f3821077c50",
+      "basis_order_hash": "18288211cf1abdc254c5081863cf824a8dc617325af88ba5cfb1759a79608c31",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 17,
+      "runtime_path": "data/runtime/c47_basis1/qg_triplet_isometry.npy",
+      "shape": [
+        24,
+        3
+      ],
+      "units": "dimensionless; product-color to triplet"
+    },
+    "tm_K11_2_N10_b0.45_0_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "a0501eae872e8d4f720e44f428d5233749463f6cef16fc4a2da31fd10c9316b9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell1": {
+      "array_sha256": "d168502a97f09f06f8b685f98bded7452332ddc2272c270aa9aad72aa9383f78",
+      "basis_order_hash": "c8c1b76dea1894d0b29308c70f0e8a9afe4743740b1f972c79beadcc30a6f420",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell2": {
+      "array_sha256": "24c2f22fc9ae7ab81095398f292a692e57003eecdb6760096bed396407ef00db",
+      "basis_order_hash": "65ccc829c5a250011189221070cf341bbb2d0b04fe4135771248b9f5327e1c33",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell3": {
+      "array_sha256": "a28ef27e2fda5a52d3b9cad261ab92a58491bce65b5dfc60cf4fcb2b55372c8c",
+      "basis_order_hash": "04d4e26670b118e0149cd6ea1368203775c3326ba7ceff17b08c3b416a94f4e9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell4": {
+      "array_sha256": "010f9a6c1043c9a855edae9ce3716b45f9d08cd9ffca6208f888c2375681240c",
+      "basis_order_hash": "935a275e14368684fe7d606e9aee3082443f3cb2c23ebaddb4be7d72a1e1ce4d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell5": {
+      "array_sha256": "996fa8ed5859673669c0caace2977f24bf95b597a539d29f7b4b9c2d5a3bd335",
+      "basis_order_hash": "7016ce96e2825855e94498d78a213d0eb6ec33a7db34b5462968f17c1e52cbe4",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell6": {
+      "array_sha256": "3ecacd183ffa00973633043285d287940e85c6e5b2e3cf211e665ce94cce0a79",
+      "basis_order_hash": "f8e2008d1c0a4f3fb52418750f9d5d2025c11203192f839d14a13bfe922b9bc3",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell7": {
+      "array_sha256": "cace75aaf2e9e10d588e074147db9907759d3f7b12efb0b53bda60ee2c4a570f",
+      "basis_order_hash": "005e18ff75d4a979c7dde3ad46986ae21550483d7604cfd49bd4c1efc919b645",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_0_shell8": {
+      "array_sha256": "2fb20e986f81ff037c790773b819082ff7681fb577248856c4c3ed778a48a715",
+      "basis_order_hash": "e690d7ce32b0786074a55b785eef423ae0ca63e4e62fd179bfd8b590d7f69e62",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_0_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "487b3dfe6680e236202c42b2b2f38a5d7c9762db0e066f771baf5f34bad85775",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell1": {
+      "array_sha256": "ab3462fdd3b45542277d58eabdfc6594c950095c05e019276e5c17cb5f21fc81",
+      "basis_order_hash": "894bcd0955a4deb6e2e9c15b9f1037a73f70b8cc7c08ed58632193913e782d07",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell2": {
+      "array_sha256": "f32adeca1b87d2a0c59541c850a950ed07b2b36d81a1fcb2341324ed36fde86d",
+      "basis_order_hash": "814e18aec0e59a55020cca888378f686789784fd592c72dd88ff2095a449c330",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell3": {
+      "array_sha256": "7aabf9adb6f52faa103399e1fd0f916ede0b22a85943e67c218c3406d09a83e0",
+      "basis_order_hash": "91d00df907bba066b82ae0cddb37a4c65c8a29f1340132dad9cd1b2a9f5fe2cb",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell4": {
+      "array_sha256": "0103d6b6249765d75ebfe3e3d2c3c19d860709a07d9cdd1d2b038d54aa35324d",
+      "basis_order_hash": "e1ed3abaa7f9627d6a3c27f5999d56edfa7ac95eda8a3e7fc8356756e103c560",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell5": {
+      "array_sha256": "bd8f60f51335050169adab323080249c899302d99044d914c33ad88725275322",
+      "basis_order_hash": "03be1af802a0b8fd6a64e7711ae18c91079f7c9deb5f2c455c7e9a9c41f15500",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell6": {
+      "array_sha256": "e48b7e421598fda93ef936e6e76ddb9a134bc7ae383041f8fc35afbebb2e8353",
+      "basis_order_hash": "13d8a00a6b5461dd331fea67f7048b8fb649c9b68881d7bbfdd1c3972cb8365e",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell7": {
+      "array_sha256": "55f7891b73793c2eb2a3a4ed32c16ff40b247dc1b2ab78578feff46cfe6a2ca4",
+      "basis_order_hash": "6918f1fa0331d6f3b5459d3a2c2188b4802cf9d41b4b2a24f2399f12195ef7f3",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14399,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_1_shell8": {
+      "array_sha256": "4f7f56b8ecf4199a6da3de2003196eb81fa2352ac594a8ecf2cc0bb5f891412e",
+      "basis_order_hash": "c29af65338668ab0692e0645dad603fcdc00d0b8b1df56048a98607472835d0e",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_1_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "d9a3808628558199f6d4f8acd0fbf5616e8ad7f4860310e0d3292a64fa482cba",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell1": {
+      "array_sha256": "f720b90b15a4ff0e769f490445a9f56355d637475aa689b6e20aa7ba4e804d79",
+      "basis_order_hash": "6b50767bf40269f4f486546c0c80cdb96bf52fcbe224c38423ca972a99b658c8",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell2": {
+      "array_sha256": "79aad0a17274cba5f2d3c329af0c8a7cde28422c9697ee4f0edaf5f52191cc5f",
+      "basis_order_hash": "129c3a768d9bb2837bd54be0b36c5b145258a6acd9962d66f121d91c030a717c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell3": {
+      "array_sha256": "270dd09c62919ba6b254b4db823ae503ab7a24928a431b352960076de7622c33",
+      "basis_order_hash": "0aa0162e23097733fd95856303499f7499c931ab537f48fe5483f3df81f6f7e7",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell4": {
+      "array_sha256": "8ccdfe5dced8a3c339c1242e53ec52898aa42bb9cd04a24e9c32b91321f15386",
+      "basis_order_hash": "dfc733df76fb1aaa7544d05f848a3768e883415bf3d924daa93b73542696ca5a",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell5": {
+      "array_sha256": "5604ea7ea7b3e29334297e11c4fae4c68c794b0818363af34649cf77d28a5930",
+      "basis_order_hash": "45ac29f6e1f982dbf812dbb03341d8177b20eaa8eafba68befca985df2f067ed",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell6": {
+      "array_sha256": "0a53fd37b93d650b0438bafcbe4159df4ecd20d84b2d6b8ac2347b8cc9e8ada1",
+      "basis_order_hash": "46655e253f51e563a1e355185288f524e6d0b5705886cf1eee9c7281e98367d2",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell7": {
+      "array_sha256": "e3236f6477403a85348a074a87764510c7fec30b4852005a0583ef5839f1dd66",
+      "basis_order_hash": "133974505a9d786a48a23fe707a09492d21abd101d9b885e4dad54188b322410",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_2_shell8": {
+      "array_sha256": "1e20b01f8764a77105baec5d6e65bec414c1ad0586cf70ef645fd22f52744950",
+      "basis_order_hash": "b8981b83f4831fe22bffd00253b972e585e4f6de8c80eaf10b8432eb139213d5",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_2_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "8a163cc9cdc0c0c533064808f2cc65c74cd87f0cf261020fd4ada98ae4fd12c8",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell1": {
+      "array_sha256": "a8b7cad6bea1ad78c860a41a4152d8bcf4bc0258552728518435491e0fbdb5d8",
+      "basis_order_hash": "060d7624c30e2f9079d1a72bb941350a0b1bfc5fb2fdf39fefa49921fcbe9794",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell2": {
+      "array_sha256": "139c1a434b9b1dc2509ae4925711c62a2fc944c2f56af2a9f7e4c29ad97d49e6",
+      "basis_order_hash": "c9cccfefe855b85fd28d513333cc32e3a118f7ce860993964f6569a53d9c0799",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell3": {
+      "array_sha256": "e7a20da59a793dc0d9f80aee61e6217672218c84165bc044acec9f8e07fe95f6",
+      "basis_order_hash": "f341f829a38a56088ea5b13cdbfcd1efb4f6d20e8a4001909e7782559b951fdb",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell4": {
+      "array_sha256": "0f885d480cfb98d58f51e0a0839ac1ba448098e16b70ddbd140a3b95fcb50b44",
+      "basis_order_hash": "a581ae46eb1b079b99a2105c033227da45706218ae58277391dbb34d111f483d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell5": {
+      "array_sha256": "52049cdcd8a693786f8123a7d56690faa7666edfaa77228af2a44d2f06e4a018",
+      "basis_order_hash": "3163ee6528b8cf5ce89d10dc84ba7ed3ba9d0e3c48b5a4bdb5682e1cfde174b6",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell6": {
+      "array_sha256": "9b08ff849b7e65df8f522059566a76bee6a0af43f48c01f8b927f5a9e0bf7922",
+      "basis_order_hash": "d6ce696c6c4bc2b8e0b9048a04d5c5775f2918b97bd34454c5807b3c3b9bb8df",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell7": {
+      "array_sha256": "9a1e54cc35c157ac382244e36a2c296b3cf17e7ad4126b7099f11e699a166869",
+      "basis_order_hash": "7ec7cdced22f7ec12191dc10eacf7203aaee73aed92ded715074240e5ec89094",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14398,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_3_shell8": {
+      "array_sha256": "736501ba6b8868912b573a661f3acc365fa401e79bf15d4a182f3267840934aa",
+      "basis_order_hash": "153cd7911fd90f840726448a01161ebd4375aff93eb91af00df8b384eca4f308",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_3_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "e942a3dc504d706a44fe725f86f72cb8bca0b779c83fa35022900f2eb7e74047",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell1": {
+      "array_sha256": "f5394c8aa456854efaaf4d91334c8fb7318eda1b73542c950f91a99665d362d1",
+      "basis_order_hash": "81677dee86778ec7f090d2fdaddf18ec711c3a5efeb943423cb0d3bb7c744582",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell2": {
+      "array_sha256": "d4c3a2ba0369668d5b8b74a3d29ca75d259ac5a7c4532c8d92ca34216a0567d4",
+      "basis_order_hash": "ed391d1e5c2df4f2f45d514a0359cb32e9525bb81f6b9e85a6de34d52eaaea98",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell3": {
+      "array_sha256": "105cfb77b68ac495f9fd951f84874770e13dcfc9d41c276a4967d9a99cd01dda",
+      "basis_order_hash": "d1fb0344e21e216c7d15cf135048232eb017a2c180f7a687cea2aa56557fe598",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell4": {
+      "array_sha256": "b14457a4a0e89571afbfa29b086373f72b2ede26f57ba791d0893bc7f2ad74ee",
+      "basis_order_hash": "e12c176bdf09aae686a967476e1012667a70aefeb2e36f5fc844fb7adf8eb32d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell5": {
+      "array_sha256": "ad84ce12ddd21e700a731ecd0cc3bc34ac19b6800efcbc8509e2106c2dae21e3",
+      "basis_order_hash": "48562f214a2447d95a794c48148d3ebd89793b13e786e6ab7e521632c4b81ca2",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell6": {
+      "array_sha256": "ef6bccf92a4c82130dc4cebf1b169067f35312eb56950ac48e57ff9620216902",
+      "basis_order_hash": "8d56a0ef852bd2b4b47ba01c24e0b7efe63704f65354763c7abc70d3c416049b",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell7": {
+      "array_sha256": "516b25267fab062a800ad2e8a8074518fbbfcd7eb20f922575ac1a5313f1782f",
+      "basis_order_hash": "96a76f7f479cd889a509df9ccdac7682a3e28f0d44d31808cf64663219c129ed",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K11_2_N10_b0.45_4_shell8": {
+      "array_sha256": "573f136b84d9120da4be780e7667124691276811af11012d2ca645da8f77ce5e",
+      "basis_order_hash": "bf4689e559b99c7279149e1c794d2c73950718f81b2a7f29176d1d6c59ab4200",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27223,
+      "runtime_path": "data/runtime/c47_basis1/tm_K11_2_N10_b0.45_4_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "5b347996d2b570abd2293abc7a7b374a0a9640f145aff402ee0af6a3677bee37",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell1": {
+      "array_sha256": "599bddfc6cde92a5173c4cb0530256ff1cc61543cb5a3aa8c3b4a66020827622",
+      "basis_order_hash": "a17fda78b3adaf1a7062d7f6392e0a76c824a2ea2a20d2889f0ef590c776ddf9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell10": {
+      "array_sha256": "c63ee6b297ccfacd9b6bbfb251df7c3ba9be6bc80be8a9670ea7501abec628fd",
+      "basis_order_hash": "f33df3060b0311761a62f3fe67d5f337202d0197f0e5a213f52cf0aeadfcf8e3",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 81796,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell10.npy",
+      "shape": [
+        286,
+        286
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell2": {
+      "array_sha256": "f57cda006b3ffd54a98172f601ba35591d128b854e8dcd6ba3984e53adeba66c",
+      "basis_order_hash": "513f6880958cb787461d947fc56a2f610e881a783e0125a34512b5334536f3b9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell3": {
+      "array_sha256": "8587387a2c0fa97703244f402b26d59ee7cc5f3b920963a5744d39d5d67d9875",
+      "basis_order_hash": "5de051c4a3c5f3c47d76801dc99f51fcc83090a9e6e10e1d656d8b94cd6c176b",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell4": {
+      "array_sha256": "80a70ddbcf44a3f695055709b4f48b00606e2e00a5b791c54c1c49c961fc6b45",
+      "basis_order_hash": "055d2387f8f1f90b5bda64394e4e43b00824977f9c393ea1e0c3c4bbeabac68a",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell5": {
+      "array_sha256": "b36864fa4e74323e2df8faec8b75b1004e37c2eb66c7f23baa2805f2ad72ce0f",
+      "basis_order_hash": "0c2053a0979443ed5be7dfced0ed422ccebb31fcf4b60376a2202c053f100bb5",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell6": {
+      "array_sha256": "7034267962313318adbc5b76977cbd83a13197263f9d246dfcced48c52ccc11f",
+      "basis_order_hash": "5e97b08f124f41036be3f92b9529f5935a08a588a8a0e0fa5a191687d3fb7183",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell7": {
+      "array_sha256": "57bd86039133d143aa8bb2a26619f5357db01c5217093fa0e34b84e4a1f201af",
+      "basis_order_hash": "3a0bd829c7765f2de30b21d049113d616d44026c91dde97532abcc42ca4c0eb3",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell8": {
+      "array_sha256": "cae2dfc690d560ca039c9bc28e9a54eec4cfe149b8155374b2fd19e990ccf589",
+      "basis_order_hash": "d9b4818bfc1d621a1f0ca2c7eb67b655883518e3f2243cbb86b390ba06849cfd",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_0_shell9": {
+      "array_sha256": "92f6d72224ba01408e015992bfe2cd7a0a4a96c85803690e5edcaf8cb2fb1001",
+      "basis_order_hash": "de8d882dcbd703ae9cb71af7b44e8e2f0842c1674a5e705917d0f8601414a7db",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 48400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_0_shell9.npy",
+      "shape": [
+        220,
+        220
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "38457341c8a786954bffc2f480b7f5c1fec51ee35e5da769daab7d254fdee042",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell1": {
+      "array_sha256": "8ca835fa6f38fe5e4910f9f7ffab056f617d740c36d3f87a283a110cfb5c1098",
+      "basis_order_hash": "916a7e6c84a1c9546052993aea207a9ed8da2675620597dacbafc3ffca5624af",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell10": {
+      "array_sha256": "68d1dde26d2f32744354ec2bd118307abcede176ee39c07df9c9d3c461dde5e1",
+      "basis_order_hash": "9d7dcd1c5b476ec3d3549b325c1f75931e7fb76119e88fa5f076be52ced50f26",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 81796,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell10.npy",
+      "shape": [
+        286,
+        286
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell2": {
+      "array_sha256": "74520b524c34d5c2546388b6eb4a37d24b726c55f8653d5ff8d9d1ff1f68014a",
+      "basis_order_hash": "833a69eaf31fa014bd630e38d2b1ce1046f395b59b88c96aff0c87bc5187d48d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell3": {
+      "array_sha256": "f30a8318def4880be94c07540d4a3232243bb461bd8399b205ea3ea4a83a973f",
+      "basis_order_hash": "2148973850b88815f80171416ba8a3a5da84acac1ba5e1cf234b8b4d36c0deb0",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell4": {
+      "array_sha256": "bc3bc5a3c2209458e5509ffd1eba93f0c195a30ce4c6966dd92a355b09f5a7bc",
+      "basis_order_hash": "57d0ccee5915e1c98dc7e599facac5c700d35d0ec27920c0c69aa460e0b3f1f5",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell5": {
+      "array_sha256": "050dc7310c8d8dd2438e1f25cc7ac805d52b92d6b56649738bf01fabb869ef6e",
+      "basis_order_hash": "7b0d1cb862e5dd7de25ef2c2bf60b10d0420a68083b294148f96ca2aae6e0bf8",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell6": {
+      "array_sha256": "6f10cf83358b34afce91f647e54c7a1c60015df76c105248aeb17a4101d2153d",
+      "basis_order_hash": "0468db1d891e67057b80ccbbe31cb814561f36871eb8efbafb4fbe89ebda7610",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell7": {
+      "array_sha256": "d7b5c105a0aa24febdc232c0ba1af70f1caff7a227a9631907e68ed5a14185f8",
+      "basis_order_hash": "d0efaa928bd0f26db200746a65fff6c84378b3f61c995192d61ade36e9bad76a",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell8": {
+      "array_sha256": "087520c21043be2462538da3f9f260ffc4519b035550c476bd8563493e4c3f7a",
+      "basis_order_hash": "160819d7611fdfef022acfacd04bb1b42b4e3e77530b209f0f35cedf89ddd3f8",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_1_shell9": {
+      "array_sha256": "5ac5fe928de031a1e8e7522463bc62dacaf52e83c6c91b905a4e32cf871e17f6",
+      "basis_order_hash": "79bc05a867ebe449af0be144965eaffc9b868b4a9f8cefa685a2eafb80264dcf",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 48400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_1_shell9.npy",
+      "shape": [
+        220,
+        220
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "a230994e71302f0b22edbb7219c6fedcabcb76b08947ebb3da9bea1b98ec6626",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell1": {
+      "array_sha256": "d90e88bb8f8555ca765bf7feb363d20de607638486a42acae94a213cd4f1f7ae",
+      "basis_order_hash": "6e518683cdeb302a02cd39e896bf67038d06942b6950feb6cd64f9349ccc8d7c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell10": {
+      "array_sha256": "869b4829b8cff64499ee99b8f6eb6bed00fa41a0d6d71444594724a9c2385daa",
+      "basis_order_hash": "7086f5fc325912024872d86f8b3e993f39f21da2a999c88ebbef2098027eba5f",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 81796,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell10.npy",
+      "shape": [
+        286,
+        286
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell2": {
+      "array_sha256": "d34603678c4589b73b5958f6e278724083309836ea99d42f09c85d23c4ebecce",
+      "basis_order_hash": "5d9387c33c296ea8f7422703980aface9b20e8de527147fab0a8cb65edbd22e0",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell3": {
+      "array_sha256": "1386d10d96750c450d2ba29104e1785e92c337427ecdc04bd41ac502eae3070c",
+      "basis_order_hash": "4b6196db83bd903b32b92641976d5e84aee0a6fcdfb6c563476182447239470f",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell4": {
+      "array_sha256": "885b7dee28873a3385f0715aa9ab5a1fce64a873010c735591ce1d7acfbf6848",
+      "basis_order_hash": "80459a76595a2fd8b581a4a316b10eaa62aefd0afc5dcda24a1620a078d697b3",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell5": {
+      "array_sha256": "31c17017b15de4038d1796620c56ba5f08555b5d260c24ee6953498a57271195",
+      "basis_order_hash": "d058e7572f98b5c2763c4df445108c4d07dc1bc1a46b644299771f7977340405",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell6": {
+      "array_sha256": "4e9d866a569981a38545b05bdca52b5cc66e147f69b3d5c2d64d72c0bde4340d",
+      "basis_order_hash": "7fb611ad160236de791d1a33a368f81e9915442186027859cdedd9395283c95f",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell7": {
+      "array_sha256": "0de2de0d2c4f911450a738042497e843f49dc30cbe6357d5c203bcdc8fc6afe9",
+      "basis_order_hash": "285d07ad8b42db5b408b213f59d4ce80f5558f02a37570dc0d03c3292ad08ed2",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell8": {
+      "array_sha256": "14a984b8db1fa4d4c70c8f07e23ae5e0d62ead324f089506d692dbdc527d6fb3",
+      "basis_order_hash": "11be82ecb90b3c4ba0d73e0c819f431e9f349b28ca758ac768a4978d8acc0b46",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27222,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_2_shell9": {
+      "array_sha256": "513cea83e324ab6e2a3a554a38b55fad77af0e81b00d01bf64bcd8b0c2c540e0",
+      "basis_order_hash": "ec73d66c2b00b61c67c4f26766acd5cb54a3a3e37d1c1c32b958b687adc6eb86",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 48400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_2_shell9.npy",
+      "shape": [
+        220,
+        220
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "76d06a2defc950216cd1ad340c9d5f8e8d262362471ab37368c772a635b31f2e",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell1": {
+      "array_sha256": "5c84bb562654ce20b64c45953baf2cc2959e7ebabdcf904e607d5c221e985f0f",
+      "basis_order_hash": "1a61e876f2a6ecd5bcbd617f66858ab4a3116757ec383e7b93cff3970b8c209c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell10": {
+      "array_sha256": "60c2f7d36182bc8c3cca85dfa816abd18ddcd39dd1bfc404f9d4791be8f0ab7f",
+      "basis_order_hash": "205be0d34bdf884cfa9fa1926c0f3225019132c14c443a075aa78bffac4c7341",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 81796,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell10.npy",
+      "shape": [
+        286,
+        286
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell2": {
+      "array_sha256": "9478bce0cb141719d16e6c4fbcb8a1eb005e1338bd5478b880ecf13f53228932",
+      "basis_order_hash": "e30a76163b0bc0f5da2aa8e8c53af37b72078bc60e42cfa59dc540b1b687b310",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell3": {
+      "array_sha256": "b9bbcb520e3a40ebe14d98d1d47187f5267122e43e0cc6448111bfa35cd2560e",
+      "basis_order_hash": "427a454b249763fa6e0cdbed57fea539de69ffc066533ddefc3dbc42b7aed7b1",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell4": {
+      "array_sha256": "bfb04fb013e250006ee8628481e51b01e42a3e92feeef6aaf79e0b391f30b566",
+      "basis_order_hash": "87397920e6d969300fa4649559dc2b176b98bb725a3b202e46de92aec8ffdadb",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell5": {
+      "array_sha256": "43df34e8a0be263770ac89c5f901015d7141503c44cc3bb4dcafec7cda45c1ba",
+      "basis_order_hash": "babb9e10099865326b1ea82d11ecdadd7c9270860352817118c6716456aa31df",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell6": {
+      "array_sha256": "6db2ad7e249a42e287a98e0126b6b7a83e37849f0c972bc120763eb73d4d7bf3",
+      "basis_order_hash": "e3891b7d6853a3ef29ca743b69349a5ad3df1cc1bbd343305c8fc9da1a4ec553",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell7": {
+      "array_sha256": "59e01d913dd14ec8eb13f34e8660cf6c73727d09d928f12adf853beb7cda8865",
+      "basis_order_hash": "a2e55c70d15949d4e014f2010b73d742a88962cef3fa9a16a95b39d070959653",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell8": {
+      "array_sha256": "f2cc744df8698ed2eba3090849500dae82a0607f0650fb8601007aa84d3b46ff",
+      "basis_order_hash": "0ee6adb8fa6602fdb7c2b75c7c14e4e4b2d5b0b68236cb45c293c13bb30c16e4",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_3_shell9": {
+      "array_sha256": "6407ca147874a08ac35acaa93f684039f372cf9a6b69604765ac14be244f13c1",
+      "basis_order_hash": "d10990389100ebb09299cb64f4032beb6ba2d999d977d66e3b1e60d157db8ad5",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 48400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_3_shell9.npy",
+      "shape": [
+        220,
+        220
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "6c9dac1e25d0285fd937e46d87181a0d9d82c917dc50e93a06fe9fc70ece7ec6",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell1": {
+      "array_sha256": "217c68f1e062f5abf3e8a0121c073495c7b1658cb6b7972feb58c36cdfaabc53",
+      "basis_order_hash": "bef6ea5c14ff0006c010c1db3f8916e07986599580ee52c7f4faac3d0654024a",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell10": {
+      "array_sha256": "9baaadb473da608b2a7e31d13451459bbce57face48bf23e00d1ab6d4c4ef7d1",
+      "basis_order_hash": "be35be3fd532bdae2901d5ed6f97df69a7ebb8dd97fa9e8763450443ef29609a",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 81796,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell10.npy",
+      "shape": [
+        286,
+        286
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell2": {
+      "array_sha256": "03634a4ea1e6a12a51ef2f063174bd67c5b9bbc0bea2b2213971b63026f11e4e",
+      "basis_order_hash": "0473194b3f7539a124fd36f1afb0e40a44b6ac6c4fe5f3185e2ba50d6155d699",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell3": {
+      "array_sha256": "82675137b150b9579647be7fe1482281faecf57712a5d5906f9895e66073f446",
+      "basis_order_hash": "f9e73040d1ad744723977c37650d6ec33e41a3f589117a9001fef166a961489b",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell4": {
+      "array_sha256": "91f80bffc51df502b70d0da46f94fe30af9be816c7acde46d3e71766b2bd29b9",
+      "basis_order_hash": "855b611d5757757b4c2d1debc28b6eaed44e92af68f9ca77ed7371a63d7ee818",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell5": {
+      "array_sha256": "bff730db81577592b200f51de5e62dddd8a3968ff743648026f6e5d2d3b0d6d0",
+      "basis_order_hash": "e3775baf65d9e15a15ccf9cfe70ffcf8d7a0ffc29d4d828b9dfe5fb3239941d7",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell6": {
+      "array_sha256": "a334bda7c5cf9d4e62c7ae04648d0f1acd806e1134e16eb081d53886553e59ba",
+      "basis_order_hash": "2c22d7960a4ec079418765893a8b1055345b95e2e61b53d448a97a2d76d4a454",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell7": {
+      "array_sha256": "5ec51c44be9b77313a4a848b9e72446c4a1af7ffbdf0fdb206f6bfd977633232",
+      "basis_order_hash": "545e5b1df33242d46decbf624b4fabe1f6a141b45341b5cfc657ca23ca5ec500",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell8": {
+      "array_sha256": "d43a054a0a29098c9b96265e15d7cc6a9843597b3777e8de5b39fd3098912eda",
+      "basis_order_hash": "cd83750f7f68d547654ee1166ef7d05a63556b93d5973217ec97174f84384d53",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27224,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_4_shell9": {
+      "array_sha256": "f6260e12336b5e1cc1c655a85e5d5f3bd81d6ecee5de710d6e9add8129b35acf",
+      "basis_order_hash": "ab7c1a50c976ce8190249a245be75b8103542e64ca4775c776f280ebf561ca3d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 48396,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_4_shell9.npy",
+      "shape": [
+        220,
+        220
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "5a48ef3195c54a45a81aee1ee98a8597c2019ef09ab07e88c694fc843abe25c0",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell1": {
+      "array_sha256": "61103300f68e8e7a134d8ecd57108ad6712ee7bf4263d56b39568522e2456104",
+      "basis_order_hash": "aca9598bbdcd522f42f7243b0b7c8e3084d48e7453be30469e94c3a00fe8f5ea",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell10": {
+      "array_sha256": "0ace9849dd56f5a611fe537f971306dee9fbf50dab39bb194b348f84d24aef70",
+      "basis_order_hash": "502ac96bd4a9aa6b0918d5ecec8f9d1412524a84778d45bdb9d088c8fec58cdf",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 81796,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell10.npy",
+      "shape": [
+        286,
+        286
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell2": {
+      "array_sha256": "9856d31071ddffc6b291e35cd30b5bd6a5b22c57fdfe43eefec8c3bc2b1fba74",
+      "basis_order_hash": "c07a7f75289e07efd1ddede5bcc9408c7d36bd3a124b1c0ab4b5e991badb32f8",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell3": {
+      "array_sha256": "0f0118f06ca14b0e8e07cdaf06323d6f2effca0d33b9f60e7b790eee42a54d8b",
+      "basis_order_hash": "3b3608411c30cdc210e9f9e29164b5dabca472523d94845d1a30d68e8226f127",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell4": {
+      "array_sha256": "b0f1cea3413e9ee0f11bfadceba3cda7526e2ec933e11bafcb9fd7abc4fc4f24",
+      "basis_order_hash": "54ac853767b0a7e83c7fa99cbf81744ad563965f205c2b776fb869de4a2b2519",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell5": {
+      "array_sha256": "8a99d1f97b397e5829c623f8d88049644db954df48855133bc131e55e9c82ec2",
+      "basis_order_hash": "cc4214d34c4deec1e30995d305ae2807ec7aac876ac107ce5c13121e8b07d37f",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell6": {
+      "array_sha256": "369cd9d3ea1747a6bedf2b831df02cb25567d8a5d071160f42542659e07ae306",
+      "basis_order_hash": "478bcdacbe0948a3b3f039e6e64d5e75e5e02652a5200b238c792584d749bbde",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell7": {
+      "array_sha256": "abd10efc1f91dc1975a9e403a51a2e311433cdd6a538b9e132718e84c9581b5c",
+      "basis_order_hash": "43bf19a921c2e43bdad203c27b03b66eb66c5429035588dfb050af832ab51c2c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 14398,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell7.npy",
+      "shape": [
+        120,
+        120
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell8": {
+      "array_sha256": "11ebc3a47dfe7e25cbe0b01f0ab72450b6613ae0169757a5f316ca3be0cabd74",
+      "basis_order_hash": "6875a6358bb720b2d133c4454e2bce5c075cbad9e6f74b62f27b2c12e5ee4484",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 27225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell8.npy",
+      "shape": [
+        165,
+        165
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K13_2_N12_b0.50_5_shell9": {
+      "array_sha256": "7bc1e300cbfcc58dd766c9de76e66a384c96c8a51c1cca69728f406d7efae83a",
+      "basis_order_hash": "303457e1463ac2504eb60165fd6ad9e87cd62857887be83e69398f4a81847def",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 48400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K13_2_N12_b0.50_5_shell9.npy",
+      "shape": [
+        220,
+        220
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "6c7c96d8aadd133ffd20f443b40210785ffa264db45821fe5992483462eed5a0",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell1": {
+      "array_sha256": "1859ed07c86201d1e3ca7415f902fec8b9ebc718306b33fd5d9d13fba17025fb",
+      "basis_order_hash": "7ef735c8aa181a0cfec890d87e8e3fdba8cb81e543b9226bb228a856f019ad8c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell2": {
+      "array_sha256": "6de87ea1e7abfe3bb07e5f2fd56e5faba2b486948090473ab12480c5569fb56b",
+      "basis_order_hash": "1bd532057838f5fa181919ab4c96ee279269c58dde89999ca2121c22353f7b0d",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell3": {
+      "array_sha256": "0093c1da949d13876d17db0cc9f4ff594075e9078f0788084b417290c3bee4c5",
+      "basis_order_hash": "b511a76000d5088f95235d23475578a61d6339a43f6b7caf93f66057e0dfa830",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell4": {
+      "array_sha256": "12e91f30add47d74e6abb97f397cc6a139ae34aa2129a4eafebe613d93ae5014",
+      "basis_order_hash": "ee32f5a560a8524c2289b32a9afbaef89a476788ce63b07cc71b8f63c2b0dca0",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell5": {
+      "array_sha256": "5f1e2491f02b2c5fcb951737c93998cefedf3be9a43a39f8131ab1c55201ea24",
+      "basis_order_hash": "f4473a512d9a2d210febba9b0af6c5dd8d0580a52854d984b1337d832e4db41f",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_0_shell6": {
+      "array_sha256": "aad49d9cd5abd5772e1eaa4f5e9a71a1f69752fc30b104092be5f534e5eefb0b",
+      "basis_order_hash": "ebbd005d1a181e83998723eeb8ad34f04a4913253e3c2a9133e0158d1488ff47",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_0_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "3f4e10d86deefcb8e050e923bc674c40bc47796caf31923c578d637f1b13b226",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell1": {
+      "array_sha256": "bbe33acc6cce6ed3351334bfb683a60c5038e714f58de01117571dd08507deed",
+      "basis_order_hash": "a971fd76ea851fbcabae3763d321eff00bd465fe7c11bb4a9c7351a3142a9365",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell2": {
+      "array_sha256": "b6064db56779ad4aba847851360de4c65aa7e9bb8d1df38aaf6d6e707852fdab",
+      "basis_order_hash": "95ceb5bd2013b11212364f2b822331f8f75ce8d3b66624c9ec774d05ce5d1af6",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell3": {
+      "array_sha256": "352ca712cdc5761fb716bddfe9fccabaa2a06f453f3e4202a091dfaa47f3f89e",
+      "basis_order_hash": "93969faaede04c0a6b4c7eea05d20cbe6f05893623b3b59935e75c60015a63e5",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell4": {
+      "array_sha256": "a6e24c0055c047d74452ea2969f63229119665aeb332358e6c6d687266752b56",
+      "basis_order_hash": "3f072b96c62c6c8ebc260b2d45691cd5deb35b1d92b96037aa37e8f93122654c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell5": {
+      "array_sha256": "4181921fa018ec7dc4fb649ee5e57d57f9f7ed8f9cbb76d0b66054f408d94312",
+      "basis_order_hash": "d2a2180d8f4ba6fb281b42dd572c5e0c93dbce8d8df57a23bf4e3c1cd115acfd",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_1_shell6": {
+      "array_sha256": "cff9c883b43cbdcb23b546fd7570cba9447b45c5c7deebce6b5cd9e26338b3d2",
+      "basis_order_hash": "c4de2cc53b8fc1fd8b1aa596ba21057077960288f01b2aa470560b183d2d9b89",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_1_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "25955f2553140de11d82f04f8e0dad8a64e9d3007ba3fc0c4d0d6608113ffb69",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell1": {
+      "array_sha256": "e4466778c2e361ff4c5a623f4bbd069e3ea56e6783adffb7ee5b588d4a6b2da3",
+      "basis_order_hash": "2a2eeb452a43557539d44d12664228b75f7a5c0d95c3ba0ca54522b9b7593c23",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell2": {
+      "array_sha256": "a33d10ffb92574423ebc3666482b4695f2845d4fbfc870c3eac09b62026e91d1",
+      "basis_order_hash": "4b704c1ad19c8eb9d3cae4b0a9e585a33a995ab9e039f7bb94b1c13c4bd7ec1c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell3": {
+      "array_sha256": "bf47a4df742615134db666eb47361b340ebfc4027d18cbe91bb033243945487e",
+      "basis_order_hash": "ceaaa4cd2e0645a4f75b7fea93ea3c77579233a9386d8b1401d80e6ab0c5452c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell4": {
+      "array_sha256": "20ea2233f00924948982b2fa16bee82fe99cec74a7bfa89318a47f253286afc8",
+      "basis_order_hash": "a3986fb32371e104d39bd0ac7081d132f7aee9c74460ca44d1264b0124c5f33e",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell5": {
+      "array_sha256": "aa5ccf777f112949afb13f00f982daf5395f3bf8d132629736e87c6b5b031cad",
+      "basis_order_hash": "4ee0c5dad935bcef17971bfc8923ffc323a8d79b89b90276e1105a6d89adbfe4",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_2_shell6": {
+      "array_sha256": "a033a7fce917a86130f43fcd925dd3337793d38df0742abf1f0ce8aa680176e5",
+      "basis_order_hash": "92b031e23b08a38ef4c2ccaeab2656caf69438237e31ef97643b388dca90257c",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_2_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell0": {
+      "array_sha256": "33a62f250a990195cf730fb25029d1ee6f6a34161c6430717f734bbe6d753acf",
+      "basis_order_hash": "15a3635e69c97ceb896d9a1f5ed2c15585a3bc1474b38210acdf1dcc2697be05",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell0.npy",
+      "shape": [
+        1,
+        1
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell1": {
+      "array_sha256": "5ace27272136c81abd8340260571b44073b9a190ff2435331fea17f69fcdd26b",
+      "basis_order_hash": "3a127e09a7da6910d209d621ba7337a243337cf80183c46c84e660d065d4aab4",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 16,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell1.npy",
+      "shape": [
+        4,
+        4
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell2": {
+      "array_sha256": "4c0b9aa3b61999baee649451bd2b74f9392e47ed490197f2a667ff71782601b7",
+      "basis_order_hash": "133fd2a5e50f5da0f8bd6a6e475e75ee6a44617d25ac69d84a83fa7c2d2be001",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 100,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell2.npy",
+      "shape": [
+        10,
+        10
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell3": {
+      "array_sha256": "c1cfff54bea7b863712a2d3b0e30720357d23072cf68b9b6d4de1c944ad67073",
+      "basis_order_hash": "8ca26126b63523a86eeaef2c1e93824b4d6aecb1a14190f230f5f8c141ac5aa9",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 400,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell3.npy",
+      "shape": [
+        20,
+        20
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell4": {
+      "array_sha256": "66b27a1c6f4243152d3d522d89988a3ddb91d5704507b2ded0e748697226638b",
+      "basis_order_hash": "1b8613af20692ca5206e99df63bab2d70697dede17e3f75d0dd0c5bfa87f2d2e",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 1225,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell4.npy",
+      "shape": [
+        35,
+        35
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell5": {
+      "array_sha256": "dd3a7c05eccba3fa2cc587db856b2ad036f6f1541fc7a83fd6aad433ecaab098",
+      "basis_order_hash": "515a63bea8a058578db6ffc7d2277f4735df283e95f0be9a6fe4b9bd86766488",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 3136,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell5.npy",
+      "shape": [
+        56,
+        56
+      ],
+      "units": "dimensionless"
+    },
+    "tm_K9_2_N8_b0.40_3_shell6": {
+      "array_sha256": "a1e3fbbdb5df3a39ff6b4e39624007277aaf64ffcfa30654da915b11cd9e4fc5",
+      "basis_order_hash": "b4ecdfc5020cbacbf11a222243d031b06c71d9b5c21b64f77e9732969de4e293",
+      "dtype": "<c16",
+      "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+      "nnz": 7056,
+      "runtime_path": "data/runtime/c47_basis1/tm_K9_2_N8_b0.40_3_shell6.npy",
+      "shape": [
+        84,
+        84
+      ],
+      "units": "dimensionless"
+    }
+  },
+  "status": "DETERMINISTIC_RUNTIME_BASIS_BUNDLE"
+}

@@ -1,0 +1,51 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "component_audit_manifest",
+  "authority_record": {
+    "count": 4,
+    "first_missing": "Q_R H0 Q_R",
+    "root": "f62b0b1117534b639744328ce20e3ccae44658cdfb55cbf19dba98ca6a704fb5",
+    "rows": [
+      {
+        "component": "Q_R H0 Q_R",
+        "omitted_domain_operator": false,
+        "retained_authority": "C128_C43_SOURCE_DERIVED_BARE_FREE_Q_QG_M2_OPERATOR_READY",
+        "retained_only": true,
+        "status": "FIRST_MISSING"
+      },
+      {
+        "component": "Q_R V1 Q_R",
+        "omitted_domain_operator": false,
+        "retained_authority": "C53/C131",
+        "retained_only": true,
+        "status": "DOWNSTREAM"
+      },
+      {
+        "component": "Q_R V2 Q_R",
+        "omitted_domain_operator": false,
+        "retained_authority": "C112/C127/C131",
+        "retained_only": true,
+        "status": "DOWNSTREAM"
+      },
+      {
+        "component": "pole/PV domain",
+        "omitted_domain_operator": false,
+        "retained_authority": "C145 analytic query",
+        "retained_only": true,
+        "status": "DOWNSTREAM"
+      }
+    ]
+  },
+  "denominator_executable": false,
+  "missing_zeroed": 0,
+  "package_root": "693aca1deec43edea1364873f53ce53b03104f3cb85c155fff289e4642fce2e3",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKDEN1-D",
+  "retained_zero_promoted": 0,
+  "schema": "C221-COMPONENT-AUDIT-MANIFEST-V1",
+  "status": "C221_C220_OMITTED_DENOMINATOR_SCHEMA_READY_FREE_COMPLEMENT_OPERATOR_INCOMPLETE"
+}

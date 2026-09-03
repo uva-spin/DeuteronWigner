@@ -1,0 +1,4550 @@
+{
+  "acceptance_count": 52,
+  "all_acceptance_rows_have_branch_g_disposition": true,
+  "all_positive_one_loop_claims_false": true,
+  "all_requirement_ids_unique": true,
+  "all_rows_described": true,
+  "all_rows_have_evidence": true,
+  "architecture_object_count": 53,
+  "benchmark_count": 18,
+  "c35_requirement_record_count": 326,
+  "content_hash": "78a84326432782274a962328c85c3c51e4f6b99c8cde1338508e04b7b006fdab",
+  "contribution_count": 18,
+  "count": 326,
+  "count_semantics": "C35_ROWS_ONLY_INHERITED_SUITES_REMAIN_SEPARATE",
+  "fault_mode_count": 93,
+  "holdout_count": 27,
+  "rows": [
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "The exact C34 baseline reproduces before edits.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-A",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.001"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "The C32/C33/C34 roots and historical results remain immutable.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-B",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.002"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Volume XXI retains its exact source hash and meaning.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-C",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.003"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "One gauge-complete realization is selected before results.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-D",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.004"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Any gauge-plan change is a typed supersession.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-E",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.005"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Light-front normalization and \\(\\sqrt2\\) conventions are explicit.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-F",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.006"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "The rescaling of \\(n,\\bar n,\\delta^\\pm\\) is explicit.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-G",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.007"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Real and virtual coordinate charts are executable.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-H",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.008"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Their measures and Jacobians are validated.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-I",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.009"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "Complete mode collections are materialized.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-J",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.010"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "Cell functions and normalizations are explicit.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-K",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.011"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "A partition of unity or exact regulated completeness statement is tested.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-L",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.012"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Refinement maps are explicit or fail closed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-M",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.013"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Regulator trajectories vary identifiable axes.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-N",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.014"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "No underdetermined trajectory fit is performed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-O",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.015"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "The gauge-field action/Hamiltonian is complete at the declared scope.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-P",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.016"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Every ghost, constraint, and instantaneous contribution receives a proof-backed status.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-Q",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.017"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "Every Wilson segment is parameterized.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-R",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.018"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "Modified-delta damping acts on finite modes.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-A",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.019"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Singular pole cells are treated analytically or by validated subtraction.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-B",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.020"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "The numerical eikonal vertex is executable.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-C",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.021"
+    },
+    {
+      "branch_g_handling": "S0C-UNAVAILABLE prevents this positive regulator or one-loop claim; the missing calculation is explicit.",
+      "criterion_satisfied": false,
+      "description": "Ward closure is tested at the finite regulator.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-D",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.022"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Every one-loop contribution receives a calculated or proved status.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-E",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.023"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "No finite-regulator graph is called scaleless by continuum analogy alone.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-F",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.024"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Real and virtual terms are counted once.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-G",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.025"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "A bare soft coefficient is reported only from a complete required ledger.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-H",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.026"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "The continuum target is independently reconstructed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-I",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.027"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "UV counterterms are solved only after the bare structure exists.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-J",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.028"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Rapidity counterterms are solved only after bare rapidity dependence exists.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-K",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.029"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Gauge independence is demonstrated when claimed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-L",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.030"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Cusp consistency is tested when claimed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-M",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.031"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Zero modes remain explicit.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-N",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.032"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Endpoint, cusp, and transverse closure remain separately auditable.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-O",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.033"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "Finite-basis-to-continuum conversion is state, hadron, and ART25 independent.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-P",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.034"
+    },
+    {
+      "branch_g_handling": "The positive physics condition is unavailable, and the required fail-closed guard prevents a false result.",
+      "criterion_satisfied": false,
+      "description": "The soft-side zero-bin object is explicit.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-Q",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.035"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Off-shell soft/zero-bin equality is not assumed.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-R",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.036"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "A valid soft result is not called a complete microscopic TMD.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-A",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.037"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "No microscopic proton export is created.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-B",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.038"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "The twelve-point bridge is not rerun.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-C",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.039"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "All 642 ART25 identities remain unchanged.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-D",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.040"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "`NO_JOINT_MEASURE`, ancestry, roles, and holdouts remain unchanged.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-E",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.041"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "No fit, likelihood, posterior, optimization, reweighting, or emulator is created.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-F",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.042"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "No process, deuteron, gluon, T-odd, inference, or production status is promoted.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-G",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.043"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "Every no-go result contains an exact missing-calculation specification.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-H",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.044"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "All inherited tests, builders, validators, requirements, injections, and manifests remain passing.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-I",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.045"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "The production registry remains exactly 216 routes.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-J",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.046"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "All eight authoritative artifacts remain byte-identical.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-K",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.047"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "`MSHT20_REP/` remains outside Git.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-L",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.048"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "At least 2,440 C35 semantic fault injections produce the expected diagnostics.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-M",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.049"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "All C35 manifests reproduce byte-for-byte.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-N",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.050"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "The working tree is clean except for the pre-existing untracked `MSHT20_REP/`.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-O",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.051"
+    },
+    {
+      "branch_g_handling": "The cited record implements the exact convention, isolation guard, or no-go requirement.",
+      "criterion_satisfied": true,
+      "description": "A local completion commit is created and not pushed.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md",
+        "docs/next_level/c35_source_sufficiency_decision.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0C-P",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.ACC.052"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "S0C-A branch-aware benchmark",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-A"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "S0C-B branch-aware benchmark",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-B"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "S0C-C branch-aware benchmark",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-C"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "S0C-D branch-aware benchmark",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-D"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-E branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-E"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-F branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-F"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-G branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-G"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-H branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-H"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-I branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-I"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "S0C-J branch-aware benchmark",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-J"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-K branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-K"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-L branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-L"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-M branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-M"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-N branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-N"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-O branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-O"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-P branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-P"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "S0C-Q branch-aware benchmark",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-Q"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "S0C-R branch-aware benchmark",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_implementation_report.md"
+      ],
+      "kind": "BENCHMARK_FAMILY",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "S0C-R"
+    },
+    {
+      "blockers": [
+        "S0C_UNAVAILABLE_SELECTED"
+      ],
+      "criterion_satisfied": true,
+      "description": "GaugeCompleteSoftPlan",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "0ffdaa50c2147d7953bc35f9fe0e40231a65cc4b0ad70450ece55f322596b7c1",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "6e1a27a173120d529863cad106ca191ae957cab79ee5d278d1489b92642d9fd3",
+      "implemented_scope": "MUTUALLY_EXCLUSIVE_PLAN_AND_NO_GO_DECISION",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.001"
+    },
+    {
+      "blockers": [
+        "S0C_UNAVAILABLE_SELECTED"
+      ],
+      "criterion_satisfied": true,
+      "description": "CovariantKreinPlan",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "6d1ecd8df5f06ff7b6168052ad3d744aa5b9ed97758b38383c387642889617de",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "f546b2b57b29f2539b683555f20f9e6a79dee036bf9ef98587cedafd57fd3282",
+      "implemented_scope": "MUTUALLY_EXCLUSIVE_PLAN_AND_NO_GO_DECISION",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.002"
+    },
+    {
+      "blockers": [
+        "S0C_UNAVAILABLE_SELECTED"
+      ],
+      "criterion_satisfied": true,
+      "description": "LightFrontPhysicalPlan",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "f5e63ee429f710726745b21b578e1ebc3705e2ac04cbc92c5939ac661bb731a6",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "41379e8a71288687bb97806fc945f10776395142026216db35517f36d7dfdcbf",
+      "implemented_scope": "MUTUALLY_EXCLUSIVE_PLAN_AND_NO_GO_DECISION",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.003"
+    },
+    {
+      "blockers": [
+        "S0C_UNAVAILABLE_SELECTED"
+      ],
+      "criterion_satisfied": true,
+      "description": "GaugePlanSupersession",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "453d00c83deb1f27bd72629964b53a46cb811f1ff6f60cd879b3eb3d34bdf71e",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "8178e36e0a28b5fe2e25fe72a7b49431497d0742fa2f9ad52b450dfcd5be4b31",
+      "implemented_scope": "MUTUALLY_EXCLUSIVE_PLAN_AND_NO_GO_DECISION",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.004"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "LightFrontConvention",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "15c26e801335875e7e1409d644c3048de54e0394dd8a99e0e6234ad3c1dc750e",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "d38b540d8b4ff1f36a9ede0e414ba4dfe52bcadf26df2c0755bba6bdd0047460",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.005"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "NullVectorNormalization",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "12e3bfd23fec1d8f431fb1321410577115a6c644c17a6d777720355f2056c031",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "b26fce08379d0fecb2607f554e4355ae8d615069ea6ce72146d52a8e0f292f0c",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.006"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "RapidityRegulatorRescaling",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "594443f52932e423791684f39b988bfcd81952f46205549dc3c3d6acfe696cd1",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "e4cd7e82210c0d100b55dd2f403243ab3f0d029a64334bb028334bdc64e72f27",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.007"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SoftCoordinateChart",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "b9e6e4dca541785db1b7b9958ea9d79dec15783e91116c38956361a367f19b5d",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "8a75a9865bc3c3b83f3200333f77eb5557dea5dc2c94c7353ba958d0d4109bf1",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.008"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "RealSoftCoordinateChart",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "bc1861445fecb146bf390d26e777af5d3113608ffdca3751e07d03c2f2c75acc",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "765e74ffa5421ddc8a52e95e2cdfb1581d4683ef626667fc98e31aa942058681",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.009"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "VirtualSoftCoordinateChart",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "2f02a9e29a3b8477f38f031489f26e6bedfcf768eae62e9f6ac35f85f10e31a6",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "22a0da2797d13c45237ccf960833dd4f106dc0bf8e1dc98641c4e24cae2fd42a",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.010"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SoftJacobian",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "3ae177a2116683c39275f92621ed9667f0d8a6e5234d7e3aba727147792aeec9",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "4a4f44db8ac574a3bdae77e3ac5b2fc2bca3f84cace4bbe27e64962e64eef5fa",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.011"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SoftCell",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "7764d776b25506dcd55388ba693ba986ab211d59ea37d161c50f46954a124688",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "53da123861f1bde98775ce64df019700ba696147f7fd247a8837cd590f85ef06",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.012"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SoftCellBoundary",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "1e4f4575952c3f67963bde083b49002a40c7487e6c3ad3f02ac6be4c0dc3457d",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "b648bdfcbd5752220d4084ba7f2f6ec97a7066588940128679065a31c55375bb",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.013"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SoftCellShape",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "0b9fe2d00889384868d04fa83bc7e83f8e6e7924f500c5dda1c7e3fb447a3396",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "182483c3c49eff38fbbf5ba965fcf9e23598ffcc6e015e3d6813ca12304ee9c3",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.014"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SoftCellMeasure",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "0cedd2e259b942ebd692dc8ee25a917a92b6882cb0349e7480b6c4d4884f9ecb",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "5866902fa5cc78cbf9d900b9ca7b941b031564e85c312158e2615eec2faefef4",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.015"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftCellQuadrature",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "81c495952c6ecc6e6b68940de233821c7e727f7fa1e04e22047ec4152890e149",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "25aeac58eef7cb8a52ee18b5772514c2d8c7b3934b2296228be9675c28e49527",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.016"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftPartitionOfUnity",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "3bc7bd8508b4ba6950823ec49d3a62a3317df257434ea96f5706355f4a9f018f",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "d5ea17d10c4b9181780d0e69208ce2ace111593965fe4ae757cb722d953710cc",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.017"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftRefinementMap",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "36d5d58ac507be1c07275fc50ed8ffe8c9dd2da7a13f9afb06c24bef0f188cf7",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "e47449e0db9a1a1def64d8fd8ecf3d2bf618eb9b47ed7a3620fc2a642d11c0ee",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.018"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftModeCollection",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "05f8a7443897a5baa77c59fce729252df68b5958f2d2992f77b326b3e3048f91",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "3bbc736dea10031b0c8442a3fe139dd7f826f7fdfe668a0d6e90c629a6f744ce",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.019"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftGaugeMode",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "59af681e031d7d6e5013b5ba83308f4e2f3d0192caee8787fbc5f85a36b169e7",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "180e4f9b90fc578cd70e13274e158b9f4297947e235cdd51a6bfcfcd97251c72",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.020"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftPolarizationMetric",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "73f653300745d283534c1109cfda9655043d6400d0537e4fdef180cae3f2520b",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "fb3703f6c88279034b5e9fee5c2634bf7b07359e6af9c8b374cc646846f16997",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.021"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftGhostMode",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "58aea2f0c168ab6837413f76f75c5efb6dab77f94ad61c1463ff3135634e9fe8",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "06216ea5a37166a291662615937d5b206ec7fe89fb62e2d927eb2c077199c393",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.022"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftAuxiliaryMode",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "8b78a1fe96231355be3ef876dceee4036f11b12b84fcb7775d2e78f8f5b213bf",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "ce6e9dba39e7b858fa9352600d47943cbd219bd54e188b52555f84a227f0cbec",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.023"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftInstantaneousKernel",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "c81de710b7ea18444f83d2b563c7bb47c11cd48d5ed82b471cd44e257834589a",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "6d4eb3639b21d3b492782af6c5e05aa99caa6953d30f90f31001922c603254bc",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.024"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftFreeAction",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "88eee4cab3fa739a1d402ba18eba9540d5d73d65da374a65d1541c8985cf0e95",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "672b7c73b17a6c814d1b92f892d170f5aab5f247273579779226703b1a57ca01",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.025"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftFreeHamiltonian",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "f18f7748477c9a6b0f04038966d7bf53817f67eb59f7ad6fc35e726cc57bc438",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "67c51e9cdde325ab6cc0b7aa51692dcac30a2e36431ee127bd4812dbb75f503e",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.026"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "RealCutMeasure",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "93129775c90e668b0c78628cedff014faf0471483bdedcab88e2c841465ca1ac",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "aa0a7afb595f5a160356798a452cc844dfcba6c2682aba90f06d371adfa5ab7c",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.027"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "VirtualLoopMeasure",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "b152a922e8d76c10c93d5f9a3a5b2e8a731a810dac359df669b6e37a3e9d8c0a",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "496b0ac1b53e8aac52e21964e8d179120b139a1c4a4451a02e1a1d0be13ddd38",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.028"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "VirtualContourPlan",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/conventions.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.conventions",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "b4f51921cfecfe85cf02b46f03f94d75df662c1054bbeede76a2e5526af94a10",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "741b9b8c337733a176b22cce42d59e0489559700c7c8b1fd7a3120b44938065e",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.029"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "PoleCellPartition",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "96f0295c4d865e66d6755528344a2e5639b096c0cd0cce88359d3927a9fd33fc",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "3b07b9c4f34e948eb80213a1a1f9d122fb3c07a01a2048ec55c8e77b7c424d27",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.030"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "SingularCellSubtraction",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/basis.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.basis",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "1886775428ea88c11fe515bedb1e453c6420c8e795316b9eb8c1225a09e9d30b",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "3c99ad1157a005f54fcc85919eb788b6b956dba572851143822c955a4b6d8c9e",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.031"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "WilsonSegmentParameterization",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "72c13475f6bff0d716eef42af9cd2fd264786fe23b8ab35243415eadb19c0c50",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "5c97c34ee86f0da7ec0d62d482c83ab770121d0b7140eb5194c9950e0fc55c8b",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.032"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "LongitudinalWilsonSegment",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "7be160e2d4877142d314dc274b62b1d87ae54ebdc3ca19507cd26a2c5b337914",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "4bee1125bd0fecec4ffc8a1560ee7b319fd1c90ba187bbf18097451ad6e0e18f",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.033"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "TransverseInfinitySegment",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "089fdd657a583b93d7d832b6b184e2f705d1b1be2bd5043bbf16f108b65d32e8",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "0f604b73c1d9f97c4206149a0ec2844a6b34a1bff8892a67464734555ed0d8f7",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.034"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "ModifiedDeltaDampingOperator",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "ef762485b2c289e8c4c124c2abde87e5124be9cbc0f75af611737e9cdfa4af12",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "0b01915644c0462a81498e79cb0e9c22f676c9e03b89b5a9619b0020ed7c8560",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.035"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "FiniteSegmentLimit",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "11aaeeb9369c6688c4d34b440982a3ee7bd588f03f8f1c3645b6c09f8fcae94b",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "8da4e18c00be8f3d384d420ef6f31e7a6972c35a5278f8681ed0a07495484b3f",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.036"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "ExecutableEikonalVertex",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "0acea535e1b2305c257102e2f2a8b6792558326f302e103285316afbdf13f740",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "fb6778e5f31f850133585fa8e211e28a7f0d96c20c17955e1b94798dab659b39",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.037"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "ExecutableLinePairKernel",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "85051b6a767d83f465f808b8e021680a158078a9e905af789acb2501a47d6fb3",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "8441bc9f5c0f750f79cc9fdadb0ff75ba4cfc868a40d083c89e2b5e312024e61",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.038"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "ExecutableSelfKernel",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "d5ea42217ae5f79877af03c1119c7b514a74004ba27b1e39d9b8cb6b49992096",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "955ea1ea6d925c598db183bee8aee233be62131b658dfa6ac06cbc523c02b6b7",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.039"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "ExecutableCuspKernel",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "f7fd2e131d3d30779b8c62d0ed2a0606aff83b16f6010cf3e8a95e83c8a59a15",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "665479a485bfb4114bdf8e060506359f89bee7f602d1fe667283d52478bda5e3",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.040"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "ExecutableBoundaryKernel",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/wilson.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.wilson",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "a8994c3b18ba64ea6ecf873fc45906afaf628a49f10be0fbcb0e66f57886a1ed",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "b8ddb91a7c75a1309b699d26b5dc2ba174a76d354c8ee8867bb8d75d64c58bf1",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.041"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftZeroModeSector",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/sectors.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.sectors",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "7fe35df9053ff003066564dbe76bc548a093e2efa0995174207eb6c90e0d11f2",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "d383de8223048a05bbfa83ef9327aea6de777cb3ae8d430bb2a9273a17d18eab",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.042"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftBoundarySector",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/sectors.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.sectors",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "072c6846b991cefbb3dc3ebf21b0ddcae64ced08f19fcd1ae6f4b6b49ca632fc",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "5bef0d512be2c6d42fa32b34f1784b400faea7851a77f7207dbca9699373a04b",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.043"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftBRSTOrConstraintReport",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/gauge.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.gauge",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "5ac2fa7b36411cbab808042762967813cd3f902967f1b6754bb18d75228488b6",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "c0d806baaa767cfe724ed7d3b761fe7486ddff78057f3bb5e3cd1c8c005d6f70",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.044"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftBareOneLoopResult",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/renormalization.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.renormalization",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "bcb43c16a1badd33b88203b860f80864d8d3801d2e7d6a9f576f94353bc58e4b",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "614f372b9496ebe58e58b3c370b03d39ddf3b18c77d362dd6ad79e49828019bb",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.045"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftCountertermSystem",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/renormalization.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.renormalization",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "a16a8ac8230cedd587654f5458c7dba20b390acf83ddae39db2e9d4f5cac39f8",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "868951e40136cd62d70966dbbacbbe3f3bf4f0b30e0ec9e5c9618120b1a05ce4",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.046"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftRenormalizedOneLoopResult",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/renormalization.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.renormalization",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "1b702bcb05a7b58c01d8e69264e7543765b71e4cf14e9c3a5052fad7f16648b6",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "e9069d8bded078a4c628cb0cdca3c544dfb10c778e794bb9c9e84433dd254a4c",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.047"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftTrajectoryFamily",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/trajectory.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.trajectory",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "5fed56fbcdaba448184a5892cfb6a1c0462296159e20750d5d186ba1766ba279",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "8c69cd60b004b45c5ac9732d847f545010a1427c2ffcbebaea7e87f3ca6e463e",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.048"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftTrajectoryAxis",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/trajectory.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.trajectory",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "3378ba41162f37bfaaa658b7de782bea3070942dde5b3127fe673ed8e1845d38",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "985d48755ebd0c738b6a03121554315abafeb86581902471a27fff786706c3cc",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.049"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftTrajectoryResult",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/trajectory.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.trajectory",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "494ae13df15b0c05158fdd386a4713847fc194c3c949c4874d9c98a899a85e30",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "b1e445d57787cfbbd79e87bcba771ba14e8884beb42a720d537c1d3c09b8f2f5",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.050"
+    },
+    {
+      "blockers": [
+        "GAUGE_COMPLETE_REGULATOR_REQUIRED_FIRST"
+      ],
+      "criterion_satisfied": false,
+      "description": "SoftSideOverlapObject",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/overlap.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.overlap",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "5409f9e278bf3eecf6915211bb9ae72b5ce549037da26de0ac5acad521d1bfe4",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "da30cdf24e687327c1e4266fff3a1cb5df238a5841a60d27d75065425576f6ca",
+      "implemented_scope": "TYPED_INTERFACE_ONLY",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.051"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "C35CapabilityMatrix",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/overlap.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.overlap",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "2d0abc58fdd8ddb13a66c0159ad60c02a8601eb50f1cb7ba1c1d447fc908dbb9",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "efc89b1dc4d9a0fd9ca56fd96c3aff7c75dae60d4fe8e08f0bd56b9d949aea72",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.052"
+    },
+    {
+      "blockers": [
+        "NO_SELECTED_GAUGE_COMPLETE_REGULATOR_IDENTICAL_REALIZATION"
+      ],
+      "criterion_satisfied": true,
+      "description": "C35ClosureReport",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_api.md",
+        "src/deuteron_wigner/bridge/s0c/overlap.py"
+      ],
+      "formal_class_module": "deuteron_wigner.bridge.s0c.overlap",
+      "formal_example_content_address_verified": true,
+      "formal_example_sha256": "93fd6eb5dc6f2b9c7e3175fbcbe31316f1e44d8579ba5bf83a450f3cc9ce9ef9",
+      "formal_frozen_dataclass": true,
+      "formal_identity_sha256": "b10376c6535dbeacd9cd977405debe81a31d5f0ad7036cd36ced8dea96888c0e",
+      "implemented_scope": "CONVENTION_OR_METHOD_ONLY_NOT_FINITE_BASIS_SOFT_RESULT",
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.OBJECT.053"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "N_NBAR_EXCHANGE",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.01"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "CONJUGATE_LINE_EXCHANGE",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.02"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "SAME_DIRECTION_LINE_EXCHANGE",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.03"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "REAL_ONE_SOFT_GLUON",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.04"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "VIRTUAL_ONE_SOFT_GLUON",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.05"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "WILSON_LINE_SELF_ENERGY",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.06"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "CUSP_ENDPOINT",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.07"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "TRANSVERSE_CLOSURE",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.08"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "AUXILIARY_FIELD_SELF_ENERGY",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.09"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "SOFT_VACUUM_ENERGY",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.10"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "LIGHT_FRONT_INSTANTANEOUS",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.11"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "GAUGE_FIXING",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.12"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "GHOST",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.13"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "ZERO_MODE",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.14"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "BASIS_BOUNDARY",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.15"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "RAPIDITY_COUNTERTERM",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.16"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "UV_COUNTERTERM",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.17"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "RESIDUAL_LINE_MASS_COUNTERTERM",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c35_soft_diagram_results.json"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.CONTRIBUTION.18"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.GAUGE_PARAMETER",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.GAUGE_PARAMETER"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.CONSTRAINT_MODE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.CONSTRAINT_MODE"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.GHOST_PROOF",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.GHOST_PROOF"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.REAL_MODE_CELL",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.REAL_MODE_CELL"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.VIRTUAL_CONTOUR_POINT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.VIRTUAL_CONTOUR_POINT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.SINGULAR_POLE_CELL",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.SINGULAR_POLE_CELL"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.LINE_PAIR_COEFFICIENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.LINE_PAIR_COEFFICIENT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.SAME_DIRECTION_COEFFICIENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.SAME_DIRECTION_COEFFICIENT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.WILSON_SELF_ENERGY",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.WILSON_SELF_ENERGY"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.CUSP_ENDPOINT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.CUSP_ENDPOINT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.TRANSVERSE_JUNCTION",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.TRANSVERSE_JUNCTION"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.ZERO_MODE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.ZERO_MODE"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.BASIS_BOUNDARY",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.BASIS_BOUNDARY"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.DELTA_PLUS",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.DELTA_PLUS"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.DELTA_MINUS",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.DELTA_MINUS"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.DELTA_DIAGONAL",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.DELTA_DIAGONAL"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.B_POINT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.B_POINT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.B_TO_ZERO",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.B_TO_ZERO"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.UV_SUPPORT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.UV_SUPPORT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.IR_SUPPORT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.IR_SUPPORT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.RAPIDITY_WINDOW",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.RAPIDITY_WINDOW"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.TRANSVERSE_REFINEMENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.TRANSVERSE_REFINEMENT"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.CONTINUUM_ORACLE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.CONTINUUM_ORACLE"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.COUNTERTERM",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.COUNTERTERM"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.CONVERSION_ROUNDTRIP",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.CONVERSION_ROUNDTRIP"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.SOFT_SIDE_ZERO_BIN",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.SOFT_SIDE_ZERO_BIN"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C35.HOLDOUT.ART25_INDEPENDENCE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.HOLDOUT.ART25_INDEPENDENCE"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep the C11 model density, project renormalized TMD, and ART25 optimal TMD as distinct typed layers.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.LAYER.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid continuum scheme equivalence from acting directly on an unmatched finite-basis density.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.LAYER.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep baryon-number-one collinear and baryon-number-zero soft Hilbert roots disjoint.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ROOT.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid the vacuum soft root from entering the proton-state probability normalization.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ROOT.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Join the roots only through a content-addressed joint-regulator and overlap contract.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ROOT.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Preserve the historical C11 root and create a versioned completed staple-operator root.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.OP.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Store active field, Dirac projection, staple direction, transverse closure, color representation, path ordering, and normalization.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.OP.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Preserve separate positive-\\(x\\) quark and antiquark identities and anti-fundamental Wilson action.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.OP.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Require exact tree reduction to C11 before one-loop matching.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.OP.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Treat Wilson order zero only as a tree-level operator limit.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.OP.5"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Store \\(K,N_{\\max},b_{\\mathrm{HO}},\\lambda_H,x_{\\min}\\), boundary, endpoint, and zero-mode data.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.REG.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Freeze common partonic IR, gauge, and rapidity plans before one-loop calculation.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.REG.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid a finite basis from being called a rapidity regulator without proof.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.REG.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Require at least three nested regulator points for any continuum claim.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.REG.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Maintain a complete one-loop collinear diagram and counterterm ledger.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.COLL.1"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Forbid absent real, virtual, Wilson, instantaneous, boundary, endpoint, zero-mode, or mixing terms from being silently zero.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.COLL.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Preserve exact delta, plus, regular, convolution, and Mellin distribution algebra.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.COLL.3"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Keep the microscopic unsubtracted correlator unavailable beyond tree level until its gates pass.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.COLL.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Construct a distinct finite vacuum plus soft-gluon Hilbert space for a microscopic soft claim.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Represent the complete four-line fundamental/conjugate Wilson geometry and singlet color trace.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Require the tree soft factor to equal one exactly.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Derive modified-\\(\\delta\\) signs from stored line, momentum, Fourier, and \\(i0\\) conventions.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Maintain a complete one-loop soft diagram and counterterm ledger.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.5"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep direct finite-Fock, auxiliary-field, and continuum-oracle soft plans mutually exclusive.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.6"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid importing a continuum soft function as the finite-basis microscopic result.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.SOFT.7"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Separate field, bilocal, Wilson self-energy, cusp/endpoint, vacuum, residual-mass, and basis UV counterterms.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.UV.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Separate logarithmic UV terms from power divergences and finite constants.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.UV.2"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Require target UV anomalous-dimension closure for a positive status.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.UV.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep bare rapidity dependence, rapidity counterterm, and renormalized object separate.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.RAP.1"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Require regulator cancellation, gauge independence, and future/past equality for a positive rapidity status.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.RAP.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Store the exact rapidity-derivative and Collins--Soper sign convention.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.RAP.3"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Require \\(\\dd\\cD/\\dd\\ln\\mu=\\Gamma_{\\mathrm{cusp}}\\) at the declared order.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.RAP.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Define a typed collinear-to-soft zero-bin or overlap map.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ZERO.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Place the overlap subtraction exactly once.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ZERO.2"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Require signed nonzero missing- and duplicate-subtraction controls.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ZERO.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Treat soft-division and zero-bin equivalence as conditional and remainder-bearing.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ZERO.4"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Evaluate a source-qualified target project partonic TMD with the same external-state IR prescription.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ORACLE.1"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Preserve target delta, plus, regular, anomalous-dimension, and moment structures.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ORACLE.2"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Extract LF-to-project matching from a common-IR partonic difference, never a hadron-level ratio.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.1"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Decide \\(q\\leftarrow q\\), \\(q\\leftarrow g\\), \\(q\\leftarrow\\bar q\\), singlet, and nonsinglet channel status.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.2"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Require matching kernels to be state, hadron, ART25-member, and data independent.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.3"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Require infrared finiteness and gauge independence for a positive matching status.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.4"
+    },
+    {
+      "criterion_satisfied": false,
+      "description": "Preserve the first omitted order and nonzero remainder.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.5"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Require finite-scheme factors to carry hard-factor companion transformations.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.6"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep project-to-ART25 scheme, scale, evolution, threshold, FNP, and CS maps separate.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.MATCH.7"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Separate logarithmic cutoff, finite conversion, power, endpoint, zero-mode, and numerical terms.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.TRAJ.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Fit only analytically predicted regulator structures.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.TRAJ.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid ART25 residuals from selecting regulator trajectories or counterterms.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.TRAJ.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep hadronic and vacuum-soft tensor networks as separate roots.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.TN.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Treat bond dimension as an observable-specific numerical/truncation axis.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.TN.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid energy convergence from substituting for TMD, soft, or matching convergence.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.TN.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep quantum state preparation separate from the renormalization and matching compiler.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json",
+        "docs/next_level/c34_soft_quantum_interface_update.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.Q.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid a QDNN from learning missing UV, soft, rapidity, or zero-bin terms from data.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json",
+        "docs/next_level/c34_soft_quantum_interface_update.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.Q.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep all twelve frozen rank-zero proton points common-domain-only until every gate closes.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.BRIDGE.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Preserve the empty-not-zero \\(642\\times0\\) representation when microscopic coordinates are unavailable.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.BRIDGE.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Preserve all external member identities, covariance rank, and null spaces after any later projection.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.BRIDGE.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep the cross-root relation \\texttt{NO\\_JOINT\\_MEASURE}.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.BRIDGE.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Preserve ART25 data ancestry and compressed-constraint/direct-data exclusivity.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.BRIDGE.5"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Permit rigorous tree-level-only, soft-sector, regulator, state-independence, and trajectory no-go results.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.STATUS.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Require every no-go result to specify the exact missing calculation.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.STATUS.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid a valid soft sector from being called a complete microscopic TMD.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.STATUS.3"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Forbid microscopic export, bridge readiness, inference, or process promotion before all gates pass.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.STATUS.4"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep C7--C32 scientific results, frozen bridge roles, production routes, and authoritative artifacts unchanged.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ISO.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Keep raw transferred source files outside public Git absent permission.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.ISO.2"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "Require deterministic byte-identical manifests and content-addressed heavy outputs.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c33_requirement_coverage.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "V21.DET.1"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "WRONG_C34_BASELINE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.001"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C34_REPORT_ABSENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.002"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "VOLUME_XXI_HASH_CHANGED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.003"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C33_C34_HISTORICAL_RECORD_OVERWRITTEN",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.004"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "B0_STATE_INSERTED_IN_PROTON_NORMALIZATION",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.005"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PHYSICAL_MODES_USED_FOR_COVARIANT_XI_SCAN",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.006"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "INDEFINITE_METRIC_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.007"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CONSTRAINT_MODE_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.008"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "GHOST_OMITTED_WITHOUT_PROOF",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.009"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "INSTANTANEOUS_KERNEL_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.010"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "RESIDUAL_GAUGE_PRESCRIPTION_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.011"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "GAUGE_PLAN_CHANGED_AFTER_RESIDUAL_INSPECTION",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.012"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "NULL_DOT_NOT_ONE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.013"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "KPLUS_KMINUS_SWAPPED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.014"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "SQRT2_MISSING",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.015"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "DELTA_NOT_RESCALED_WITH_NULL_VECTORS",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.016"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "EIKONAL_NUMERATOR_NORMALIZATION_INCONSISTENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.017"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "DESCRIPTOR_HASH_TREATED_AS_MODE_COLLECTION",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.018"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CELL_BOUNDARIES_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.019"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "QUADRATURE_WEIGHTS_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.020"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "SHAPE_FUNCTIONS_UNNORMALIZED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.021"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "COMMUTATOR_WRONG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.022"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "POLARIZATION_METRIC_WRONG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.023"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "RAPIDITY_REGIONS_OVERLAP_WITHOUT_PARTITION",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.024"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "REFINEMENT_MAP_INVENTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.025"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ONE_RESOLUTION_CALLED_COMPLETE",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.026"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "REAL_MODE_TAKEN_OFF_SHELL",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.027"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "VIRTUAL_MODE_FORCED_ON_SHELL",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.028"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PHASE_SPACE_JACOBIAN_WRONG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.029"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "VIRTUAL_CONTOUR_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.030"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "POLE_CROSSING_HIDDEN",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.031"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "SINGULAR_CELL_CENTER_SAMPLED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.032"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "NUMERICAL_EPSILON_STORED_AS_SUPPORT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.033"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "LINE_LENGTH_UNDEFINED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.034"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "TRANSVERSE_CLOSURE_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.035"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ENDPOINT_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.036"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "MODIFIED_DELTA_APPLIED_AFTER_INTEGRATION",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.037"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PATH_ORDER_WRONG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.038"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CONJUGATION_WRONG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.039"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "BASEPOINT_WRONG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.040"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "N_NBAR_EXCHANGE_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.041"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CONJUGATE_LINE_EXCHANGE_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.042"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "SAME_DIRECTION_LINE_EXCHANGE_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.043"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "REAL_ONE_SOFT_GLUON_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.044"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "VIRTUAL_ONE_SOFT_GLUON_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.045"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "WILSON_LINE_SELF_ENERGY_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.046"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CUSP_ENDPOINT_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.047"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "TRANSVERSE_CLOSURE_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.048"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "AUXILIARY_FIELD_SELF_ENERGY_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.049"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "SOFT_VACUUM_ENERGY_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.050"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "LIGHT_FRONT_INSTANTANEOUS_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.051"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "GAUGE_FIXING_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.052"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "GHOST_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.053"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ZERO_MODE_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.054"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "BASIS_BOUNDARY_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.055"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "RAPIDITY_COUNTERTERM_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.056"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "UV_COUNTERTERM_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.057"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "RESIDUAL_LINE_MASS_COUNTERTERM_SILENTLY_ZEROED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.058"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "TARGET_DR_RESULT_COPIED_TO_FINITE_REGULATOR",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.059"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "REAL_TERM_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.060"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "VIRTUAL_TERM_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.061"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "LINE_SELF_ENERGY_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.062"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CUSP_BOUNDARY_MERGED_WITHOUT_IDENTITY",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.063"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "VACUUM_TERM_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.064"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ZERO_MODE_OMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.065"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "COUNTERTERM_SOLVED_BEFORE_BARE_COEFFICIENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.066"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "POWER_DIVERGENCE_HIDDEN_IN_LOG",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.067"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "FINITE_CONSTANT_TUNED_TO_CONTINUUM",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.068"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "UNDERDETERMINED_THREE_POINT_FIT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.069"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "HOLDOUT_USED_IN_FIT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.070"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "MULTIPLE_AXES_INTERPRETED_AS_ONE_COEFFICIENT",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.071"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "FIRST_OMITTED_ORDER_SET_TO_ZERO",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.072"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "OFFSHELL_ZERO_BIN_EQUALITY_ASSUMED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.073"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ZERO_BIN_EQUALITY_CLAIMED_FROM_CITATION_ONLY",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.074"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "DIFFERENT_MEASUREMENT_ACCEPTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.075"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "DIFFERENT_B_CONVENTION_ACCEPTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.076"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "SOFT_SECTOR_CALLED_COMPLETE_TMD",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.077"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "C32_COLLINEAR_COEFFICIENT_FABRICATED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.078"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ART25_MEMBER_USED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.079"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "ART25_DATA_USED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.080"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PROTON_TMD_EXPORTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.081"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "BRIDGE_RERUN",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.082"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "LIKELIHOOD_PRODUCED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.083"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PVALUE_PRODUCED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.084"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "CALIBRATION_PERFORMED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.085"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "REWEIGHTING_PERFORMED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.086"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PROCESS_STATUS_PROMOTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.087"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "DEUTERON_STATUS_PROMOTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.088"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "GLUON_STATUS_PROMOTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.089"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "TODD_STATUS_PROMOTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.090"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "PRODUCTION_MUTATED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.091"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "RAW_MSHT_COMMITTED",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.092"
+    },
+    {
+      "criterion_satisfied": true,
+      "description": "NONDETERMINISTIC_MANIFEST",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c35_injection_manifest.json"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C35.FAULT.093"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "volume_xxi_count": 65
+}

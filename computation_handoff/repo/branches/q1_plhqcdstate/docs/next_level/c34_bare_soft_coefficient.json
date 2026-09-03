@@ -1,0 +1,67 @@
+{
+  "C_F_placement": "EXTERNAL_TO_REDUCED_S_FB^[1]",
+  "a_s_convention": "a_s=alpha_s/(4*pi)=g_s^2/(4*pi)^2",
+  "coefficient_id": "C34.S_FB.BARE.ONE_LOOP.v1",
+  "content_hash": "3d31c8820148a46bfc26bc372556a9247009c950ff8e1676efd54411c3f32d80",
+  "continuum_coefficient_substituted": false,
+  "counterterm_ids": [
+    "C34.CT.01.LINE_SELF_ENERGY",
+    "C34.CT.02.CUSP",
+    "C34.CT.03.ENDPOINT",
+    "C34.CT.04.TRANSVERSE_CLOSURE",
+    "C34.CT.05.VACUUM",
+    "C34.CT.06.BASIS_BOUNDARY",
+    "C34.CT.07.SOFT_OPERATOR_UV",
+    "C34.CT.08.RAPIDITY",
+    "C34.CT.09.RESIDUAL_LINE_MASS"
+  ],
+  "declared_one_loop_first_omitted_order": "O(a_s^2)",
+  "direct_bare_component_ids": [
+    "C34.SOFT.01.N_NBAR_EXCHANGE",
+    "C34.SOFT.02.CONJUGATE_LINE_EXCHANGE",
+    "C34.SOFT.03.SAME_DIRECTION_LINE_EXCHANGE",
+    "C34.SOFT.04.REAL_ONE_SOFT_GLUON",
+    "C34.SOFT.05.VIRTUAL_ONE_SOFT_GLUON",
+    "C34.SOFT.06.WILSON_LINE_SELF_ENERGY",
+    "C34.SOFT.07.CUSP_ENDPOINT",
+    "C34.SOFT.08.TRANSVERSE_CLOSURE",
+    "C34.SOFT.10.SOFT_VACUUM_ENERGY",
+    "C34.SOFT.11.LIGHT_FRONT_INSTANTANEOUS",
+    "C34.SOFT.12.GAUGE_FIXING",
+    "C34.SOFT.13.GHOST",
+    "C34.SOFT.15.BASIS_BOUNDARY"
+  ],
+  "excluded_alternative_route_ids": [
+    "C34.SOFT.09.AUXILIARY_FIELD_SELF_ENERGY"
+  ],
+  "excluded_counterterm_decision_ids": [
+    "C34.SOFT.16.RAPIDITY_COUNTERTERM",
+    "C34.SOFT.17.UV_COUNTERTERM",
+    "C34.SOFT.18.RESIDUAL_LINE_MASS_COUNTERTERM"
+  ],
+  "expansion": "S=exp[a_s*C_F*S_FB^[1],bare+O(a_s^2)]",
+  "finite_basis_interaction_normalization_map": "UNRESOLVED_BLOCKING",
+  "leading_missing_order": "O(a_s)",
+  "one_loop_coefficient": null,
+  "one_loop_status": "NONZERO_UNKNOWN",
+  "regulator_axes": [
+    "b",
+    "mu_reference",
+    "delta_plus",
+    "delta_minus",
+    "xi_g",
+    "soft_resolution",
+    "UV_support",
+    "IR_support",
+    "rapidity_support",
+    "zero_mode_policy"
+  ],
+  "root_id": "C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+  "schema_version": "1.0.0",
+  "separate_control_ids": [
+    "C34.SOFT.14.ZERO_MODE"
+  ],
+  "status": "C34_SOFT_ONE_LOOP_INCOMPLETE",
+  "tree_value": 1.0,
+  "tree_value_exact": true
+}

@@ -1,0 +1,3 @@
+# C59/IFERM2 fail-closed correction
+
+C59 verifies C58 read-only: q primitives are 6×6 with six entries and 4,216/8,330/14,484 mode contributions; C58 pair support and the qg counterterm-only status remain fixed. C55 supplies exactly one retained direct `b† a† a b` source term, but the locked C43/C45/C47/C57 artifacts do not supply the source-ordered qg-bra/qg-ket-to-q-intermediate embedding required to apply TBP graph selection to that contact. Constructing `qg_mask.T @ qg_mask`, using the full qg basis, or C53 values would be arbitrary. Status: `C59_IFERM_CONTACT_SUPPORT_INCOMPLETE`. Next: **C60/IFSUPPORT — source-ordered q-intermediate support and graph-selection closure**. No contact or complete operator is created.

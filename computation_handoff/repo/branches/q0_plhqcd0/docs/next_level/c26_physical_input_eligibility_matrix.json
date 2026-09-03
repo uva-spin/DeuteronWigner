@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "analytic": 438,
+    "external_art25_source": 0,
+    "microscopic_project_source": 0,
+    "not_process_eligible": 102,
+    "physical": 0
+  },
+  "external": [
+    {
+      "failed_gates": [
+        "exact MSHT20_REP",
+        "source-owned frozen output",
+        "source hard/partner inputs"
+      ],
+      "physical_eligible": false,
+      "root": "ART25_EXTERNAL_SOURCE_REPRODUCTION",
+      "source_eligible": false,
+      "stable_id": "C26.EXTERNAL.DY"
+    },
+    {
+      "failed_gates": [
+        "exact MSHT20_REP",
+        "source-owned frozen output",
+        "source hard/partner inputs"
+      ],
+      "physical_eligible": false,
+      "root": "ART25_EXTERNAL_SOURCE_REPRODUCTION",
+      "source_eligible": false,
+      "stable_id": "C26.EXTERNAL.SIDIS"
+    }
+  ],
+  "microscopic": [
+    {
+      "failed_gates": [
+        "explicit ART25-to-microscopic matching absent",
+        "complete nuclear total unavailable"
+      ],
+      "physical_eligible": false,
+      "root": "PROJECT_MICROSCOPIC_TMD_PROCESS_PLAN",
+      "source_eligible": false,
+      "stable_id": "C26.MICROSCOPIC.PROJECT"
+    }
+  ],
+  "proton_never_promoted_to_deuteron": true,
+  "schema_version": "1.0.0"
+}

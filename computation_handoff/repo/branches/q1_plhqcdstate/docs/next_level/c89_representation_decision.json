@@ -1,0 +1,20 @@
+{
+  "A_expanded_JSON": {
+    "fits": false,
+    "persistent_bytes_lower_bound": 280977485670
+  },
+  "B_columnar_leaf": {
+    "fits": false,
+    "persistent_bytes_lower_bound": 142718722880
+  },
+  "C_pair_digest_only": {
+    "persistent_bytes_estimate": 158545920,
+    "random_access": "digest only"
+  },
+  "D_factorized_program_plus_pair_digest": {
+    "fits": true,
+    "lossless_on_demand": true,
+    "persistent_bytes_estimate": 250000000,
+    "selected": true
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "package_root": "9d5e7a17c6f50488711dad00e293ae549a0cb4d6794e7ca3addb193f60ac0b37",
+  "physical": false,
+  "plan": "RIMASSC43JMYEXECUTABLEAST1-C",
+  "record": {
+    "count": 12,
+    "crossed_real": 3,
+    "root": "789d5bfffa00f26ccc34d7801431035c65e632cc31a7b7c0c8b9d5f040ef2f50",
+    "rows": [
+      {
+        "analytic": [],
+        "den": [
+          [
+            "Dq",
+            2,
+            0
+          ]
+        ],
+        "family": "cut",
+        "measurement": "Mx",
+        "multiplicity": 1,
+        "term": "DR.qq"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            2,
+            "alpha"
+          ]
+        ],
+        "den": [
+          [
+            "Dq",
+            1,
+            0
+          ],
+          [
+            "Dv",
+            1,
+            "alpha"
+          ]
+        ],
+        "family": "cut",
+        "measurement": "Mx",
+        "multiplicity": 2,
+        "term": "DR.qv"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            4,
+            "alpha"
+          ]
+        ],
+        "den": [
+          [
+            "Dv",
+            2,
+            "2alpha"
+          ]
+        ],
+        "family": "cut",
+        "measurement": "Mx",
+        "multiplicity": 1,
+        "term": "DR.vv"
+      },
+      {
+        "analytic": [],
+        "den": [
+          [
+            "Dg",
+            1,
+            0
+          ],
+          [
+            "Dq",
+            1,
+            0
+          ]
+        ],
+        "family": "loop",
+        "measurement": "delta_x",
+        "multiplicity": 1,
+        "term": "Sigma_q"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            4,
+            "alpha"
+          ]
+        ],
+        "den": [
+          [
+            "Dg",
+            1,
+            0
+          ],
+          [
+            "Dv+",
+            1,
+            "alpha"
+          ],
+          [
+            "Dv-",
+            1,
+            "alpha"
+          ]
+        ],
+        "family": "loop",
+        "measurement": "delta_x",
+        "multiplicity": 1,
+        "term": "W_v"
+      },
+      {
+        "analytic": [
+          [
+            "nu2",
+            4,
+            "beta"
+          ]
+        ],
+        "den": [
+          [
+            "Dg",
+            1,
+            0
+          ],
+          [
+            "Dtv-",
+            1,
+            "beta"
+          ],
+          [
+            "Dtv+",
+            1,
+            "beta"
+          ]
+        ],
+        "family": "loop",
+        "measurement": "delta_z",
+        "multiplicity": 1,
+        "term": "W_tildev"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            2,
+            "alpha"
+          ]
+        ],
+        "den": [
+          [
+            "Dg",
+            1,
+            0
+          ],
+          [
+            "Dq",
+            1,
+            0
+          ],
+          [
+            "Dv",
+            1,
+            "alpha"
+          ]
+        ],
+        "family": "loop",
+        "measurement": "delta_x",
+        "multiplicity": 2,
+        "term": "V_qv"
+      },
+      {
+        "analytic": [
+          [
+            "nu2",
+            2,
+            "beta"
+          ]
+        ],
+        "den": [
+          [
+            "Dg",
+            1,
+            0
+          ],
+          [
+            "Dq",
+            1,
+            0
+          ],
+          [
+            "Dtv",
+            1,
+            "beta"
+          ]
+        ],
+        "family": "loop",
+        "measurement": "delta_z",
+        "multiplicity": 2,
+        "term": "V_htv"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            2,
+            "alpha"
+          ],
+          [
+            "nu2",
+            2,
+            "beta"
+          ]
+        ],
+        "den": [
+          [
+            "Dg",
+            1,
+            0
+          ],
+          [
+            "Dv",
+            1,
+            "alpha"
+          ],
+          [
+            "Dtv",
+            1,
+            "beta"
+          ]
+        ],
+        "family": "soft_loop",
+        "measurement": "one",
+        "multiplicity": 1,
+        "term": "S.virtual"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            4,
+            "alpha"
+          ]
+        ],
+        "den": [
+          [
+            "Dv+",
+            1,
+            "alpha"
+          ],
+          [
+            "Dv-",
+            1,
+            "alpha"
+          ]
+        ],
+        "family": "soft_cut",
+        "measurement": "Mb_minus_one",
+        "multiplicity": 1,
+        "term": "S.real.v"
+      },
+      {
+        "analytic": [
+          [
+            "nu2",
+            4,
+            "beta"
+          ]
+        ],
+        "den": [
+          [
+            "Dtv-",
+            1,
+            "beta"
+          ],
+          [
+            "Dtv+",
+            1,
+            "beta"
+          ]
+        ],
+        "family": "soft_cut",
+        "measurement": "Mb_minus_one",
+        "multiplicity": 1,
+        "term": "S.real.tv"
+      },
+      {
+        "analytic": [
+          [
+            "nu1",
+            2,
+            "alpha"
+          ],
+          [
+            "nu2",
+            2,
+            "beta"
+          ]
+        ],
+        "den": [
+          [
+            "Dv",
+            1,
+            "alpha"
+          ],
+          [
+            "Dtv",
+            1,
+            "beta"
+          ]
+        ],
+        "family": "soft_cut",
+        "measurement": "Mb_minus_one",
+        "multiplicity": 1,
+        "term": "S.real.interference"
+      }
+    ],
+    "total_graph_terms": 15
+  },
+  "status": "C376_EXECUTABLE_SCALAR_DISTRIBUTION_AST_DERIVED_PARAMETER_REDUCTION_REQUIRED",
+  "validation": "BOUND"
+}

@@ -1,0 +1,25 @@
+{
+  "allowed_nodes": [
+    "ANCESTRY_TEMPLATE",
+    "ATOM_TABLE",
+    "BOUND_TEMPLATE",
+    "CARTESIAN_PRODUCT",
+    "FILTER",
+    "GROUP_TEMPLATE",
+    "MAP_RECORD",
+    "ORDERED_RANGE",
+    "ORDERED_UNION",
+    "PERMUTE",
+    "STATUS_TEMPLATE"
+  ],
+  "closed": true,
+  "forbidden": [
+    "opaque callable",
+    "unordered map",
+    "filesystem order",
+    "floating equality",
+    "C80 numerical kernel value"
+  ],
+  "normal_form": "C90-NORMAL-FORM-V1",
+  "schema": "C90-C82-SEMANTIC-IR-V1"
+}

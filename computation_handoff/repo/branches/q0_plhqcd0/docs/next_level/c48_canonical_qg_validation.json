@@ -1,0 +1,6 @@
+{
+  "checks": "C47 tuple hashes, m-sector support, dimensional homogeneity and C43-to-M2 conversion audited",
+  "pass": false,
+  "reason": "No source-derived common dimensional conversion exists. Multiplying selected tuples by b, P+, L, or a fitted factor would alter the C47 functional and fabricate a vertex.",
+  "status": "C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE"
+}

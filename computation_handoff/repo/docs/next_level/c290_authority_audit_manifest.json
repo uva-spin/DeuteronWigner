@@ -1,0 +1,35 @@
+{
+  "authority_record": {
+    "missing_as_uniform": false,
+    "physical_records": 0,
+    "root": "603eca45bc536cc090d7a8186b788f8d27cac3721efc862d89319128abce6214",
+    "rows": [
+      {
+        "authority": "C43/C130",
+        "boundary_action": "STRUCTURAL_ONLY",
+        "weights": false
+      },
+      {
+        "authority": "C183",
+        "boundary_action": false,
+        "weights": false
+      },
+      {
+        "authority": "C205",
+        "boundary_action": false,
+        "weights": "SYMBOLIC_UNNORMALIZED"
+      },
+      {
+        "authority": "C274",
+        "boundary_action": "CALLER_SLOT",
+        "weights": false
+      }
+    ]
+  },
+  "package_root": "6fb74af9c73a76e40b4b9e3ae10fdb87328b2a737c2e0d45d42e40fffe4ccb9f",
+  "physical": false,
+  "plan": "RIMASSBOUNDARYENSEMBLE1-B",
+  "schema": "C290-AUTHORITY_AUDIT-MANIFEST-V1",
+  "status": "C290_PHYSICAL_BOUNDARY_ENSEMBLE_SCHEMA_READY_BOUNDARY_ACTION_PARAMETER_RECORD_MISSING",
+  "validation": "BOUND"
+}

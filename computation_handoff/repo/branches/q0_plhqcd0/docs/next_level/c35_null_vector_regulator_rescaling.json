@@ -1,0 +1,31 @@
+{
+  "content_hash": "473e0272cee0669035c9c81b67247266bee5935fd5a0e65e0ba2e90d87044c92",
+  "delta_source_to_project": "delta_project_plus_minus=delta_source_plus_minus/sqrt(2)",
+  "law": "n->lambda*n;nbar->lambda^-1*nbar;delta_minus->lambda*delta_minus;delta_plus->lambda^-1*delta_plus",
+  "product_residual": 0.0,
+  "project_vectors": {
+    "n": [
+      0.7071067811865475,
+      0.0,
+      0.0,
+      0.7071067811865475
+    ],
+    "nbar": [
+      0.7071067811865475,
+      0.0,
+      0.0,
+      -0.7071067811865475
+    ]
+  },
+  "project_vectors_have_n_dot_nbar": 0.9999999999999998,
+  "rescaling_id": "C35.NULL.DELTA.RESCALING.v1",
+  "schema_version": "1.0.0",
+  "source_to_project_delta_scale": 0.7071067811865475,
+  "source_vectors_have_n_dot_nbar": 2.0,
+  "status": "C35_NULL_VECTOR_AND_DELTA_RESCALING_VALIDATED",
+  "test_lambda": 3.0,
+  "test_transformed": {
+    "delta_minus": 0.009000000000000001,
+    "delta_plus": 0.0006666666666666666
+  }
+}

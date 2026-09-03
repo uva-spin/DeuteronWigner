@@ -1,0 +1,480 @@
+{
+  "dimensions": [
+    4,
+    7,
+    10
+  ],
+  "rows": [
+    {
+      "CM_residual": 0.0,
+      "Lz_content": [
+        -1,
+        0,
+        1
+      ],
+      "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+      "color": "SINGLET_1",
+      "comparison_map_shape": null,
+      "dimension": 4,
+      "permutation": "ANTISYMMETRIC_FERMION_WEDGE",
+      "resolution": {
+        "IR_interpretation": "DIAGNOSTIC_B_OVER_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "K": [
+          9,
+          2
+        ],
+        "N_max": 8,
+        "UV_interpretation": "DIAGNOSTIC_B_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "basis_version": 1,
+        "center_of_mass_policy_id": "LAWSON_INTRINSIC_GROUND_GATE_V1",
+        "diagnostic_scales_gev": {
+          "Lambda_IR_approx": 0.1414213562373095,
+          "Lambda_UV_approx": 1.1313708498984762
+        },
+        "endpoint_regulator": {
+          "minimum_fraction": [
+            1,
+            18
+          ],
+          "type_id": "LONGITUDINAL_ENDPOINT_REGULATOR"
+        },
+        "fock_sector_set": [
+          "qqq",
+          "qqqg",
+          "qqqq-qbar"
+        ],
+        "hamiltonian_resolution_lambda": {
+          "gev": 1.2,
+          "type_id": "HAMILTONIAN_SIMILARITY_SCALE_LAMBDA_H"
+        },
+        "longitudinal_boundary_conditions": [
+          [
+            "QUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "ANTIQUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "GLUON",
+            "PERIODIC_NONZERO_INTEGER"
+          ]
+        ],
+        "oscillator_scale_b": {
+          "gev": 0.4,
+          "type_id": "BLFQ_OSCILLATOR_SCALE_B"
+        },
+        "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555",
+        "transverse_basis_id": "2D_HO_INTRINSIC_V1",
+        "zero_mode_policy_id": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER"
+      },
+      "state_ids": [
+        "r0:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r0:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r0:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r1:x1_9-1_3-5_9:L-1:S3/2:s121"
+      ],
+      "target": "PROTON",
+      "tower_index": 0
+    },
+    {
+      "CM_residual": 0.0,
+      "Lz_content": [
+        -1,
+        0,
+        1
+      ],
+      "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+      "color": "SINGLET_1",
+      "comparison_map_shape": [
+        7,
+        4
+      ],
+      "dimension": 7,
+      "permutation": "ANTISYMMETRIC_FERMION_WEDGE",
+      "resolution": {
+        "IR_interpretation": "DIAGNOSTIC_B_OVER_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "K": [
+          11,
+          2
+        ],
+        "N_max": 10,
+        "UV_interpretation": "DIAGNOSTIC_B_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "basis_version": 1,
+        "center_of_mass_policy_id": "LAWSON_INTRINSIC_GROUND_GATE_V1",
+        "diagnostic_scales_gev": {
+          "Lambda_IR_approx": 0.14230249470757705,
+          "Lambda_UV_approx": 1.4230249470757708
+        },
+        "endpoint_regulator": {
+          "minimum_fraction": [
+            1,
+            18
+          ],
+          "type_id": "LONGITUDINAL_ENDPOINT_REGULATOR"
+        },
+        "fock_sector_set": [
+          "qqq",
+          "qqqg",
+          "qqqq-qbar"
+        ],
+        "hamiltonian_resolution_lambda": {
+          "gev": 1.2,
+          "type_id": "HAMILTONIAN_SIMILARITY_SCALE_LAMBDA_H"
+        },
+        "longitudinal_boundary_conditions": [
+          [
+            "QUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "ANTIQUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "GLUON",
+            "PERIODIC_NONZERO_INTEGER"
+          ]
+        ],
+        "oscillator_scale_b": {
+          "gev": 0.45,
+          "type_id": "BLFQ_OSCILLATOR_SCALE_B"
+        },
+        "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97",
+        "transverse_basis_id": "2D_HO_INTRINSIC_V1",
+        "zero_mode_policy_id": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER"
+      },
+      "state_ids": [
+        "r0:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r0:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r0:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r1:x1_9-1_3-5_9:L-1:S3/2:s121",
+        "r1:x1_3-1_9-5_9:L0:S1/2:s120",
+        "r1:x1_9-5_9-1_3:L1:S-1/2:s121",
+        "r2:x1_9-1_3-5_9:L-1:S3/2:s120"
+      ],
+      "target": "PROTON",
+      "tower_index": 1
+    },
+    {
+      "CM_residual": 0.0,
+      "Lz_content": [
+        -1,
+        0,
+        1
+      ],
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "color": "SINGLET_1",
+      "comparison_map_shape": [
+        10,
+        7
+      ],
+      "dimension": 10,
+      "permutation": "ANTISYMMETRIC_FERMION_WEDGE",
+      "resolution": {
+        "IR_interpretation": "DIAGNOSTIC_B_OVER_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "K": [
+          13,
+          2
+        ],
+        "N_max": 12,
+        "UV_interpretation": "DIAGNOSTIC_B_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "basis_version": 1,
+        "center_of_mass_policy_id": "LAWSON_INTRINSIC_GROUND_GATE_V1",
+        "diagnostic_scales_gev": {
+          "Lambda_IR_approx": 0.14433756729740646,
+          "Lambda_UV_approx": 1.7320508075688772
+        },
+        "endpoint_regulator": {
+          "minimum_fraction": [
+            1,
+            18
+          ],
+          "type_id": "LONGITUDINAL_ENDPOINT_REGULATOR"
+        },
+        "fock_sector_set": [
+          "qqq",
+          "qqqg",
+          "qqqq-qbar"
+        ],
+        "hamiltonian_resolution_lambda": {
+          "gev": 1.2,
+          "type_id": "HAMILTONIAN_SIMILARITY_SCALE_LAMBDA_H"
+        },
+        "longitudinal_boundary_conditions": [
+          [
+            "QUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "ANTIQUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "GLUON",
+            "PERIODIC_NONZERO_INTEGER"
+          ]
+        ],
+        "oscillator_scale_b": {
+          "gev": 0.5,
+          "type_id": "BLFQ_OSCILLATOR_SCALE_B"
+        },
+        "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+        "transverse_basis_id": "2D_HO_INTRINSIC_V1",
+        "zero_mode_policy_id": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER"
+      },
+      "state_ids": [
+        "r0:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r0:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r0:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r1:x1_9-1_3-5_9:L-1:S3/2:s121",
+        "r1:x1_3-1_9-5_9:L0:S1/2:s120",
+        "r1:x1_9-5_9-1_3:L1:S-1/2:s121",
+        "r2:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r2:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r2:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r3:x1_9-1_3-5_9:L-1:S3/2:s121"
+      ],
+      "target": "PROTON",
+      "tower_index": 2
+    },
+    {
+      "CM_residual": 0.0,
+      "Lz_content": [
+        -1,
+        0,
+        1
+      ],
+      "basis_id": "C8:H1:BASIS:e3a1c9c667d12bdf925c",
+      "color": "SINGLET_1",
+      "comparison_map_shape": null,
+      "dimension": 4,
+      "permutation": "ANTISYMMETRIC_FERMION_WEDGE",
+      "resolution": {
+        "IR_interpretation": "DIAGNOSTIC_B_OVER_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "K": [
+          9,
+          2
+        ],
+        "N_max": 8,
+        "UV_interpretation": "DIAGNOSTIC_B_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "basis_version": 1,
+        "center_of_mass_policy_id": "LAWSON_INTRINSIC_GROUND_GATE_V1",
+        "diagnostic_scales_gev": {
+          "Lambda_IR_approx": 0.1414213562373095,
+          "Lambda_UV_approx": 1.1313708498984762
+        },
+        "endpoint_regulator": {
+          "minimum_fraction": [
+            1,
+            18
+          ],
+          "type_id": "LONGITUDINAL_ENDPOINT_REGULATOR"
+        },
+        "fock_sector_set": [
+          "qqq",
+          "qqqg",
+          "qqqq-qbar"
+        ],
+        "hamiltonian_resolution_lambda": {
+          "gev": 1.2,
+          "type_id": "HAMILTONIAN_SIMILARITY_SCALE_LAMBDA_H"
+        },
+        "longitudinal_boundary_conditions": [
+          [
+            "QUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "ANTIQUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "GLUON",
+            "PERIODIC_NONZERO_INTEGER"
+          ]
+        ],
+        "oscillator_scale_b": {
+          "gev": 0.4,
+          "type_id": "BLFQ_OSCILLATOR_SCALE_B"
+        },
+        "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555",
+        "transverse_basis_id": "2D_HO_INTRINSIC_V1",
+        "zero_mode_policy_id": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER"
+      },
+      "state_ids": [
+        "r0:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r0:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r0:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r1:x1_9-1_3-5_9:L-1:S3/2:s121"
+      ],
+      "target": "NEUTRON",
+      "tower_index": 0
+    },
+    {
+      "CM_residual": 0.0,
+      "Lz_content": [
+        -1,
+        0,
+        1
+      ],
+      "basis_id": "C8:H1:BASIS:7b8477b059b62f7986da",
+      "color": "SINGLET_1",
+      "comparison_map_shape": [
+        7,
+        4
+      ],
+      "dimension": 7,
+      "permutation": "ANTISYMMETRIC_FERMION_WEDGE",
+      "resolution": {
+        "IR_interpretation": "DIAGNOSTIC_B_OVER_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "K": [
+          11,
+          2
+        ],
+        "N_max": 10,
+        "UV_interpretation": "DIAGNOSTIC_B_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "basis_version": 1,
+        "center_of_mass_policy_id": "LAWSON_INTRINSIC_GROUND_GATE_V1",
+        "diagnostic_scales_gev": {
+          "Lambda_IR_approx": 0.14230249470757705,
+          "Lambda_UV_approx": 1.4230249470757708
+        },
+        "endpoint_regulator": {
+          "minimum_fraction": [
+            1,
+            18
+          ],
+          "type_id": "LONGITUDINAL_ENDPOINT_REGULATOR"
+        },
+        "fock_sector_set": [
+          "qqq",
+          "qqqg",
+          "qqqq-qbar"
+        ],
+        "hamiltonian_resolution_lambda": {
+          "gev": 1.2,
+          "type_id": "HAMILTONIAN_SIMILARITY_SCALE_LAMBDA_H"
+        },
+        "longitudinal_boundary_conditions": [
+          [
+            "QUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "ANTIQUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "GLUON",
+            "PERIODIC_NONZERO_INTEGER"
+          ]
+        ],
+        "oscillator_scale_b": {
+          "gev": 0.45,
+          "type_id": "BLFQ_OSCILLATOR_SCALE_B"
+        },
+        "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97",
+        "transverse_basis_id": "2D_HO_INTRINSIC_V1",
+        "zero_mode_policy_id": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER"
+      },
+      "state_ids": [
+        "r0:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r0:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r0:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r1:x1_9-1_3-5_9:L-1:S3/2:s121",
+        "r1:x1_3-1_9-5_9:L0:S1/2:s120",
+        "r1:x1_9-5_9-1_3:L1:S-1/2:s121",
+        "r2:x1_9-1_3-5_9:L-1:S3/2:s120"
+      ],
+      "target": "NEUTRON",
+      "tower_index": 1
+    },
+    {
+      "CM_residual": 0.0,
+      "Lz_content": [
+        -1,
+        0,
+        1
+      ],
+      "basis_id": "C8:H1:BASIS:664aef8eb39377b6a764",
+      "color": "SINGLET_1",
+      "comparison_map_shape": [
+        10,
+        7
+      ],
+      "dimension": 10,
+      "permutation": "ANTISYMMETRIC_FERMION_WEDGE",
+      "resolution": {
+        "IR_interpretation": "DIAGNOSTIC_B_OVER_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "K": [
+          13,
+          2
+        ],
+        "N_max": 12,
+        "UV_interpretation": "DIAGNOSTIC_B_SQRT_NMAX_NOT_EXACT_CUTOFF",
+        "basis_version": 1,
+        "center_of_mass_policy_id": "LAWSON_INTRINSIC_GROUND_GATE_V1",
+        "diagnostic_scales_gev": {
+          "Lambda_IR_approx": 0.14433756729740646,
+          "Lambda_UV_approx": 1.7320508075688772
+        },
+        "endpoint_regulator": {
+          "minimum_fraction": [
+            1,
+            18
+          ],
+          "type_id": "LONGITUDINAL_ENDPOINT_REGULATOR"
+        },
+        "fock_sector_set": [
+          "qqq",
+          "qqqg",
+          "qqqq-qbar"
+        ],
+        "hamiltonian_resolution_lambda": {
+          "gev": 1.2,
+          "type_id": "HAMILTONIAN_SIMILARITY_SCALE_LAMBDA_H"
+        },
+        "longitudinal_boundary_conditions": [
+          [
+            "QUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "ANTIQUARK",
+            "ANTIPERIODIC_HALF_INTEGER"
+          ],
+          [
+            "GLUON",
+            "PERIODIC_NONZERO_INTEGER"
+          ]
+        ],
+        "oscillator_scale_b": {
+          "gev": 0.5,
+          "type_id": "BLFQ_OSCILLATOR_SCALE_B"
+        },
+        "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda",
+        "transverse_basis_id": "2D_HO_INTRINSIC_V1",
+        "zero_mode_policy_id": "EXCLUDE_GLUON_ZERO_MODE_WITH_CLOSURE_LEDGER"
+      },
+      "state_ids": [
+        "r0:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r0:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r0:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r1:x1_9-1_3-5_9:L-1:S3/2:s121",
+        "r1:x1_3-1_9-5_9:L0:S1/2:s120",
+        "r1:x1_9-5_9-1_3:L1:S-1/2:s121",
+        "r2:x1_9-1_3-5_9:L-1:S3/2:s120",
+        "r2:x1_3-1_9-5_9:L0:S1/2:s121",
+        "r2:x1_9-5_9-1_3:L1:S-1/2:s120",
+        "r3:x1_9-1_3-5_9:L-1:S3/2:s121"
+      ],
+      "target": "NEUTRON",
+      "tower_index": 2
+    }
+  ],
+  "schema_version": "1.0.0",
+  "strictly_nested": true,
+  "tower_id": "C8:H1:TOWER:PRIMARY"
+}

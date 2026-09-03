@@ -1,0 +1,74 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "complement_domain_validation",
+  "authority_record": {
+    "count": 3,
+    "finite_enumerator": false,
+    "root": "2da0fcde8faf0ca587320b4a0d18e0dd5134e253933eedb2889182e90457c189",
+    "rows": [
+      {
+        "cardinality": "UNBOUNDED_WITHOUT_ADDITIONAL_COMPLEMENT_CUTOFF",
+        "color": "open fundamental / term-dependent adjoint",
+        "dense_materialized": false,
+        "endpoint_sector": "term-dependent complement of retained q/qg Fock projection",
+        "helicity": "explicit",
+        "longitudinal_predicate": "sum(k_i) != retained K",
+        "mode_types": {
+          "fermion": "positive half-integers APBC",
+          "gluon": "nonzero integers PBC; P0 separate"
+        },
+        "orientation": "source Q_R H_i P_R; sink adjoint P_R H_i Q_R",
+        "resolution": "K9_2_N8_b0.40",
+        "retained_total_K": "K9",
+        "transverse_labels": "2D-HO (n,m) symbolic outside retained composite projection"
+      },
+      {
+        "cardinality": "UNBOUNDED_WITHOUT_ADDITIONAL_COMPLEMENT_CUTOFF",
+        "color": "open fundamental / term-dependent adjoint",
+        "dense_materialized": false,
+        "endpoint_sector": "term-dependent complement of retained q/qg Fock projection",
+        "helicity": "explicit",
+        "longitudinal_predicate": "sum(k_i) != retained K",
+        "mode_types": {
+          "fermion": "positive half-integers APBC",
+          "gluon": "nonzero integers PBC; P0 separate"
+        },
+        "orientation": "source Q_R H_i P_R; sink adjoint P_R H_i Q_R",
+        "resolution": "K11_2_N10_b0.45",
+        "retained_total_K": "K11",
+        "transverse_labels": "2D-HO (n,m) symbolic outside retained composite projection"
+      },
+      {
+        "cardinality": "UNBOUNDED_WITHOUT_ADDITIONAL_COMPLEMENT_CUTOFF",
+        "color": "open fundamental / term-dependent adjoint",
+        "dense_materialized": false,
+        "endpoint_sector": "term-dependent complement of retained q/qg Fock projection",
+        "helicity": "explicit",
+        "longitudinal_predicate": "sum(k_i) != retained K",
+        "mode_types": {
+          "fermion": "positive half-integers APBC",
+          "gluon": "nonzero integers PBC; P0 separate"
+        },
+        "orientation": "source Q_R H_i P_R; sink adjoint P_R H_i Q_R",
+        "resolution": "K13_2_N12_b0.50",
+        "retained_total_K": "K13",
+        "transverse_labels": "2D-HO (n,m) symbolic outside retained composite projection"
+      }
+    ],
+    "schema": "C220-FIXED-K-COMPLEMENT-DOMAIN-V1",
+    "symbolic_complete": true
+  },
+  "denominators": 0,
+  "domain_mapped": 15,
+  "interfaces": 15,
+  "package_root": "0151249342328c0f6994786057c23296ee19383230fe01422390b779fd3124a3",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKMAP1-E",
+  "schema": "C220-COMPLEMENT-DOMAIN-VALIDATION-V1",
+  "source_nonzero_zeroed": 0,
+  "status": "C220_C219_FIXED_K_SYMBOLIC_COMPLEMENT_DOMAIN_READY_OMITTED_HAMILTONIAN_DENOMINATOR_INCOMPLETE"
+}

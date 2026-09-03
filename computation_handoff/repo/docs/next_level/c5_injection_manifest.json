@@ -1,0 +1,295 @@
+{
+  "all_detected": true,
+  "count": 48,
+  "injections": [
+    {
+      "description": "future path with past pole",
+      "diagnostic": "C5.POLE.1",
+      "stable_id": "C5.INJECT.01",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "past path with future pole",
+      "diagnostic": "C5.POLE.1",
+      "stable_id": "C5.INJECT.02",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "manual pole sign",
+      "diagnostic": "C5.POLE.1",
+      "stable_id": "C5.INJECT.03",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "endpoint reversal without color conjugation",
+      "diagnostic": "C5.TIME.1",
+      "stable_id": "C5.INJECT.04",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "incompatible path endpoints",
+      "diagnostic": "C5.PATH.2",
+      "stable_id": "C5.INJECT.05",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "raw future-minus-past subtraction",
+      "diagnostic": "C5.TIME.1",
+      "stable_id": "C5.INJECT.06",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "conjugation without momentum reversal",
+      "diagnostic": "C5.TIME.1",
+      "stable_id": "C5.INJECT.07",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "conjugation without spin map",
+      "diagnostic": "C5.TIME.1",
+      "stable_id": "C5.INJECT.08",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link reversal without ordered gluon links",
+      "diagnostic": "C5.GLUON.1",
+      "stable_id": "C5.INJECT.09",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link odd at zero coupling",
+      "diagnostic": "C5.ZERO.1",
+      "stable_id": "C5.INJECT.10",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link odd with cut disabled",
+      "diagnostic": "C5.ZERO.1",
+      "stable_id": "C5.INJECT.11",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "link odd without required OAM",
+      "diagnostic": "C5.ZERO.1",
+      "stable_id": "C5.INJECT.12",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "epsilon stored as physical width",
+      "diagnostic": "C5.DIST.2",
+      "stable_id": "C5.INJECT.13",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "epsilon convergence failure",
+      "diagnostic": "C5.DIST.3",
+      "stable_id": "C5.INJECT.14",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "cut Jacobian omitted",
+      "diagnostic": "C5.DIST.1",
+      "stable_id": "C5.INJECT.15",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "duplicate physical cut",
+      "diagnostic": "C5.CUT.2",
+      "stable_id": "C5.INJECT.16",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "equal denominators incorrectly deduplicated",
+      "diagnostic": "C5.CUT.3",
+      "stable_id": "C5.INJECT.17",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "off-shell discrete absorption",
+      "diagnostic": "C5.CUT.1",
+      "stable_id": "C5.INJECT.18",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Sivers route uses Boer-Mulders projector",
+      "diagnostic": "C5.QUARK.2",
+      "stable_id": "C5.INJECT.19",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Boer-Mulders route uses Sivers projector",
+      "diagnostic": "C5.QUARK.2",
+      "stable_id": "C5.INJECT.20",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "scalar projector proportionality",
+      "diagnostic": "C5.QUARK.2",
+      "stable_id": "C5.INJECT.21",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong active species or flavor",
+      "diagnostic": "C5.KERNEL.2",
+      "stable_id": "C5.INJECT.22",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "negative-x quark substituted for antiquark",
+      "diagnostic": "C5.KERNEL.2",
+      "stable_id": "C5.INJECT.23",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonzero skewness",
+      "diagnostic": "C3.FIBER.XI",
+      "stable_id": "C5.INJECT.24",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "off-diagonal sector without rescattering source",
+      "diagnostic": "C5.KERNEL.1",
+      "stable_id": "C5.INJECT.25",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Wilson order zero phase",
+      "diagnostic": "C5.PATH.2",
+      "stable_id": "C5.INJECT.26",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Wilson order above one",
+      "diagnostic": "C5.PATH.2",
+      "stable_id": "C5.INJECT.27",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "fundamental-adjoint mismatch",
+      "diagnostic": "C5.KERNEL.1",
+      "stable_id": "C5.INJECT.28",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "ordered gluon links swapped",
+      "diagnostic": "C5.GLUON.1",
+      "stable_id": "C5.INJECT.29",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "f/d color relabeling",
+      "diagnostic": "C5.GLUON.2",
+      "stable_id": "C5.INJECT.30",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "generic gluon T-odd output",
+      "diagnostic": "C5.GLUON.2",
+      "stable_id": "C5.INJECT.31",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "unresolved matching marked complete",
+      "diagnostic": "C5.STATUS.1",
+      "stable_id": "C5.INJECT.32",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C5 sent to Volume V evolution",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.33",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C5 sent to PROC",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.34",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C5 inserted in 216-route registry",
+      "diagnostic": "C5.ISOLATE",
+      "stable_id": "C5.INJECT.35",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C5 connected to production root",
+      "diagnostic": "C5.ISOLATE",
+      "stable_id": "C5.INJECT.36",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "authoritative artifact changed",
+      "diagnostic": "C5.REGRESS",
+      "stable_id": "C5.INJECT.37",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C3/C4 manifest changed",
+      "diagnostic": "C5.REGRESS",
+      "stable_id": "C5.INJECT.38",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "pilot fitted to production data",
+      "diagnostic": "C5.STATUS.1",
+      "stable_id": "C5.INJECT.39",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "arbitrary imaginary kernel constant",
+      "diagnostic": "C5.KERNEL.3",
+      "stable_id": "C5.INJECT.40",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Volume IV without helicity matrices",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.41",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Volume IV without correlated p/n",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.42",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Volume IV without phase/soft/covariance",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.43",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Volume V without closed basis",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.44",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Volume V without LF-QCD matching",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.45",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "process without link/color/Glauber",
+      "diagnostic": "C5.STATUS.2",
+      "stable_id": "C5.INJECT.46",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "normative source changed",
+      "diagnostic": "C5.REGRESS",
+      "stable_id": "C5.INJECT.47",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "C4 architecture record changed",
+      "diagnostic": "C5.REGRESS",
+      "stable_id": "C5.INJECT.48",
+      "status": "PASS_DETECTED"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

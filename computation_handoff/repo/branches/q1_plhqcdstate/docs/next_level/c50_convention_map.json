@@ -1,0 +1,29 @@
+{
+  "authorities": {
+    "BLFQ": "1402.4195v1 field expansion and following bracket equation",
+    "C43": "hep-ph/0011372v2 Eq. (24), App. B",
+    "C45": "0905.1411v1 Eqs. (4)-(6); C45 longitudinal contract"
+  },
+  "blfq_no_sqrt2": {
+    "mass": "P_B+ P_B- - PT^2",
+    "p": "p_B^pm=sqrt(2)p_C^pm",
+    "phase": "(p_B+ x_B- + p_B- x_B+)/2-pT.xT",
+    "x": "x_B^pm=x0+/-x3=sqrt(2)x_C^pm"
+  },
+  "derived": {
+    "box": "L_B=sqrt(2)L_C; p_B+=2pi k/L_B=sqrt(2)pi k/L_C; p_C+=pi k/L_C",
+    "bracket": "unit discrete b,d,a brackets are unchanged after normalized-cell mode rescaling",
+    "delta": "delta(p_B+-q_B+)=delta(p_C+-q_C)/sqrt(2)",
+    "generator": "P_B-=sqrt(2)P_C-; P_C-=P_B-/sqrt(2)",
+    "mass_invariant": "P_B+P_B-=2P_C+P_C-",
+    "mode": "exp[-i p_B+ x_B-/2]=exp[-i p_C+ x_C-]",
+    "spinor_polarization": "Cartesian u, ubar and epsilon are invariant; only their plus/minus components are relabelled"
+  },
+  "id": "C50-C43-BLFQ-SQRT2-ROUNDTRIP-V1",
+  "project_C43": {
+    "mass": "2 P_C+ P_C- - PT^2",
+    "p": "p_C^pm=(p0+/-p3)/sqrt(2)",
+    "phase": "p_C+ x_C- + p_C- x_C+ - pT.xT",
+    "x": "x_C^pm=(x0+/-x3)/sqrt(2)"
+  }
+}

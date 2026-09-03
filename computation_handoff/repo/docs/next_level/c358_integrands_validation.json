@@ -1,0 +1,61 @@
+{
+  "package_root": "168e3552cbf49c5a1e62cddf668d10a6e7f50b1a6d710101b968fdaee6b34fcc",
+  "physical": false,
+  "plan": "RIMASSC43JMYINTEGRAND1-C",
+  "record": {
+    "common": {
+      "color": "g^2 CF",
+      "d": "4-2epsilon",
+      "gauge": "Feynman",
+      "gluon": "1/(k^2+i0)",
+      "mass": "zero",
+      "measure": "mu^(2epsilon) d^d k/(2pi)^d"
+    },
+    "count": 5,
+    "root": "92ecf15511a2b4b327fb0fe590edd729aea41603f079a40992d91c4f2ad998a8",
+    "rows": [
+      {
+        "denominators": "[(p-k)^2+i0] [v.k+i0]^(1+alpha)",
+        "group": "distribution_virtual",
+        "id": "DV",
+        "measurement": "delta(1-x), bT=virtual; include quark and v-line self energies plus MSbar CT",
+        "numerator": "ubar(p) gamma_mu (pslash-kslash) gamma_plus u(p) v^mu",
+        "regulator": "nu1^(2alpha)"
+      },
+      {
+        "denominators": "delta_plus(k^2) [(p-k)^2+i0][v.k+i0]^(1+alpha)",
+        "group": "distribution_real_endpoint",
+        "id": "DR",
+        "measurement": "delta(x-1+k.plus/p.plus) exp(+i bT.kT); plus/delta expansion after grouping",
+        "numerator": "cut square of quark plus future-v emission including interference",
+        "regulator": "nu1^(2alpha)"
+      },
+      {
+        "denominators": "[(p-k)^2+i0] [tildev.k-i0]^(1+beta)",
+        "group": "fragmentation_virtual",
+        "id": "FV",
+        "measurement": "delta(1-z), bT=virtual; crossed self energies plus MSbar CT",
+        "numerator": "crossed ubar gamma_minus (pslash-kslash) gamma_mu u tildev^mu",
+        "regulator": "nu2^(2beta)"
+      },
+      {
+        "denominators": "delta_plus(k^2) [(p-k)^2+i0][tildev.k-i0]^(1+beta)",
+        "group": "fragmentation_real_endpoint",
+        "id": "FR",
+        "measurement": "delta(z-1+k.minus/p.minus) exp(+i bT.kT); plus/delta expansion after grouping",
+        "numerator": "crossed cut square including tilde-v interference",
+        "regulator": "nu2^(2beta)"
+      },
+      {
+        "denominators": "[k^2+i0][v.k+i0]^(1+alpha)[tildev.k-i0]^(1+beta)",
+        "group": "soft_real_virtual_count_once",
+        "id": "S",
+        "measurement": "virtual + delta_plus(k^2)(exp(+i bT.kT)-1); four-line orientations and one overlap owner",
+        "numerator": "2 v.tildev",
+        "regulator": "nu1^(2alpha)nu2^(2beta)"
+      }
+    ]
+  },
+  "status": "C358_OPERATOR_IDENTICAL_ANALYTIC_REGULATED_JMY_INTEGRANDS_DERIVED_PARAMETER_EVALUATION_MISSING",
+  "validation": "PASS"
+}

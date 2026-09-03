@@ -1,0 +1,46 @@
+{
+  "authority_record": {
+    "boundary_action_ready": false,
+    "bulk_action_ready": true,
+    "bulk_promoted_to_boundary": false,
+    "root": "208af61c2707e926254f541eb6d206c90c605a4824ffd0b93cf788050c248b73",
+    "rows": [
+      {
+        "available": true,
+        "component": "bulk LF action/constraints",
+        "source": "SB hep-ph/0011372v2 Eqs.1,5-9,24-25"
+      },
+      {
+        "available": true,
+        "component": "PV Q0 inverse derivative",
+        "source": "C43 action_contract"
+      },
+      {
+        "available": "STRUCTURAL_ONLY",
+        "component": "finite-volume boundary operator owner",
+        "source": "C130"
+      },
+      {
+        "available": false,
+        "component": "holonomy-dependent boundary action",
+        "source": null
+      },
+      {
+        "available": false,
+        "component": "sector partition weights",
+        "source": null
+      },
+      {
+        "available": false,
+        "component": "absolute partition normalization",
+        "source": null
+      }
+    ]
+  },
+  "package_root": "9280201f34cb953e96626ca2e6ee16f1a7275fe9c35661221e7f78da4f0ac4fd",
+  "physical": false,
+  "plan": "RIMASSBOUNDARYACTION1-C",
+  "schema": "C291-C43_ACTION_AUDIT-MANIFEST-V1",
+  "status": "C291_C43_BULK_ACTION_AND_BOUNDARY_PARAMETER_SCHEMA_READY_BOUNDARY_ACTION_SOURCE_SUPPLEMENT_MISSING",
+  "validation": "BOUND"
+}

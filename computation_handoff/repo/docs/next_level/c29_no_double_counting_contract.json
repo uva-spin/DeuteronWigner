@@ -1,0 +1,45 @@
+{
+  "additive_evidence": false,
+  "likelihood_created": false,
+  "mutually_exclusive": true,
+  "plans": [
+    {
+      "exclude": [
+        "all 1209 underlying direct-data likelihood terms"
+      ],
+      "include": [
+        "ART25 ensemble/covariance"
+      ],
+      "plan_id": "PLAN_EXTERNAL_COMPRESSED_CONSTRAINT"
+    },
+    {
+      "exclude": [
+        "ART25 ensemble as independent evidence"
+      ],
+      "include": [
+        "underlying retained data"
+      ],
+      "plan_id": "PLAN_DIRECT_DATA"
+    },
+    {
+      "exclude": [
+        "tuning to ensemble and underlying points"
+      ],
+      "include": [
+        "withheld comparison only"
+      ],
+      "plan_id": "PLAN_EXTERNAL_HOLDOUT"
+    },
+    {
+      "exclude": [
+        "constraint, fit, likelihood"
+      ],
+      "include": [
+        "structural comparison"
+      ],
+      "plan_id": "PLAN_DIAGNOSTIC_ONLY"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "selected_future_plan": null
+}

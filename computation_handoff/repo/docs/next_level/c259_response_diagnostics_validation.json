@@ -1,0 +1,180 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "response_diagnostics_validation",
+  "authority_record": {
+    "continuum": {
+      "condition_number": 1,
+      "construction": "dual projectors from exact C117 operator Gram matrix; normalization is scheme-defining, not a measured amplitude",
+      "left_nullspace": [],
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rank": 4,
+      "resolution": "K9_2_N8_b0.40",
+      "right_nullspace": [],
+      "singular_values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "existing_C251_projectors": "operator evaluators, not four independent renormalization rows; refined by exact dualization",
+    "finite_basis": [
+      {
+        "condition_number": 1,
+        "construction": "dual projectors from exact C117 operator Gram matrix; normalization is scheme-defining, not a measured amplitude",
+        "left_nullspace": [],
+        "matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank": 4,
+        "resolution": "K9_2_N8_b0.40",
+        "right_nullspace": [],
+        "singular_values": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "condition_number": 1,
+        "construction": "dual projectors from exact C117 operator Gram matrix; normalization is scheme-defining, not a measured amplitude",
+        "left_nullspace": [],
+        "matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank": 4,
+        "resolution": "K11_2_N8_b0.40",
+        "right_nullspace": [],
+        "singular_values": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "condition_number": 1,
+        "construction": "dual projectors from exact C117 operator Gram matrix; normalization is scheme-defining, not a measured amplitude",
+        "left_nullspace": [],
+        "matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "rank": 4,
+        "resolution": "K13_2_N8_b0.40",
+        "right_nullspace": [],
+        "singular_values": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "root": "cbc886aa01ff7db15b8be04b8ab672f2a251ca9359f2664a94ade375d7f8487b"
+  },
+  "package_root": "3316addcea31e845dc16f57f0e921a6409b87c2764635f261e8dff3454cd62ed",
+  "physical": false,
+  "plan": "C117RENORMDESIGN1-A",
+  "schema": "C259-RESPONSE_DIAGNOSTICS-VALIDATION-V1",
+  "status": "C259_PROJECT_C117_RI_SMOM_V1_FULL_RANK_DESIGN_READY",
+  "validation": "PASS"
+}

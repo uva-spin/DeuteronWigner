@@ -1,0 +1,30 @@
+{
+  "authority_record": {
+    "constant_separate": true,
+    "count": 2,
+    "dependent_identity": "Re tr_F(W^3)=RE_TF3-3*(CHI8+1)+3, so it is omitted",
+    "root": "0dbb5394e55a6421664ab78b37650b0748552ad2ff922384f845a9258e48a31a",
+    "rows": [
+      {
+        "center": "invariant",
+        "formula": "tr_Adj(W)=|tr_F(W)|^2-1",
+        "id": "CHI8",
+        "real": true,
+        "weyl": "invariant"
+      },
+      {
+        "center": "invariant",
+        "formula": "Re[(tr_F W)^3]",
+        "id": "RE_TF3",
+        "real": true,
+        "weyl": "invariant"
+      }
+    ]
+  },
+  "package_root": "5cda967ef9c8295b3e8f842ec940a2324c9d4484cd82b69847d702a88fdf4c5f",
+  "physical": false,
+  "plan": "RIMASSHOLONOMYPOT1-B",
+  "schema": "C301-CLASS_FUNCTION_BASIS-VALIDATION-V1",
+  "status": "C301_EXACT_SU3_CENTER_WEYL_HOLONOMY_POTENTIAL_BASIS_READY_COEFFICIENT_MATCHING_MISSING",
+  "validation": "PASS"
+}

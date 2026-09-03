@@ -1,0 +1,21 @@
+{
+  "package_root": "ee21c2e0f26b55ef43ccb9f4e111973c0da5178e6b941c2807cbeb894d0ca6b7",
+  "physical": false,
+  "plan": "RIMASSC43JMYKINEMATICAST1-C",
+  "record": {
+    "ellT": "-kT",
+    "ell_minus": "kT2/[2*(1-x)*p_plus]",
+    "ell_plus": "(1-x)*p_plus",
+    "jacobian": "1/[2*(1-x)*p_plus]",
+    "p_dot_q": "-kT2/[2*(1-x)]",
+    "q2": "-kT2/(1-x)",
+    "qT": "kT",
+    "q_dot_v": "x*p_plus*v_minus-kT2*v_plus/[2*(1-x)*p_plus]",
+    "q_minus": "-kT2/[2*(1-x)*p_plus]",
+    "q_plus": "x*p_plus",
+    "root": "0c87f588b9f0b3fe1bad55ea543f69168c525280b94d8ad824d7dbc87aa2c36c",
+    "v_dot_ell": "(1-x)*p_plus*v_minus+kT2*v_plus/[2*(1-x)*p_plus]"
+  },
+  "status": "C378_LIGHTCONE_KINEMATIC_AND_PROJECTOR_CONTRACTION_AST_BOUND_PARAMETER_REDUCTION_REOPENED",
+  "validation": "PASS"
+}

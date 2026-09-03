@@ -1,0 +1,23 @@
+{
+  "authority_record": {
+    "C43_matching": false,
+    "basis": [
+      "constant",
+      "CHI8",
+      "RE_TF3"
+    ],
+    "current_result": "UNAVAILABLE_NOT_ZERO",
+    "measure": "C295 normalized nonflat alcove",
+    "method": "weighted Gram solve",
+    "reason": "source omits sum cutoff and PS hidden-line mesh requires visibility reconstruction",
+    "root": "f40e7439e20e4fa390002ca7d9279b97e37103fddd076f423d714a146957d9ef",
+    "route_A": "regulated source AST after cutoff prescription",
+    "route_B": "PostScript mesh reconstruction"
+  },
+  "package_root": "56d663455a989e534f9a2072bfc46dd840a0bbc886b77478a6387ce70a5ca300",
+  "physical": false,
+  "plan": "RIMASSV0PROJECT1-C",
+  "schema": "C303-PROJECTION-CONTRACT-V1",
+  "status": "C303_EXACT_V0_SUM_AST_AND_VECTOR_MESH_AXES_READY_VISIBILITY_RECONSTRUCTION_PROJECTION_MISSING",
+  "validation": "BOUND"
+}

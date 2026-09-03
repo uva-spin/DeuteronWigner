@@ -1,0 +1,18 @@
+{
+  "schema": "C163-C164-HQCDLFGLOCATOR2-CONTINUATION-V1",
+  "parent_baseline": "a3e704bb7b5a75655fd89b79301b34a47c927194",
+  "parent_status": "C163_HQCDLFGSOURCE_LOCATOR_INCOMPLETE",
+  "parent_plan": "LFGSOURCE-D",
+  "branch": "C164/HQCDLFGLOCATOR2",
+  "reason": "The eight authenticated local source PDFs are present and hash-verified, but the C140/C153/C159/C161/C162 authority chain supplies no unique descriptor-level printed-page/PDF-page/equation-table-appendix/source-code locators.",
+  "descriptor_count": 25,
+  "terminal_status_counts": {"SOURCE_LOCATOR_INCOMPLETE": 25},
+  "local_artifacts_present": 8,
+  "hash_mismatches": 0,
+  "exact_locators_present": 0,
+  "source_expression_capsules": 0,
+  "target_programs": 0,
+  "target_values": 0,
+  "next_scope": "Resolve exact source locators and dependency objects only; do not execute targets.",
+  "exactly_one_continuation": true
+}

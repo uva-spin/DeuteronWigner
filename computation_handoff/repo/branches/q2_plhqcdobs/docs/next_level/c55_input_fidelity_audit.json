@@ -1,0 +1,44 @@
+{
+  "C40_consumed": false,
+  "C53_vertex_values_consumed": false,
+  "first_blocker": "C55.IFERM.ONE_PAIR_CONTRACTION_REGULATOR_AND_COUNTERTERM_CONTRACT",
+  "raw_C47_tuple_values_consumed": false,
+  "rows": [
+    {
+      "classification": "PRIMARY_SOURCE_INPUT",
+      "input": "SB constrained equation and Eq.(24)",
+      "status": "SOURCE_DERIVED_SYMBOLIC"
+    },
+    {
+      "classification": "PRIMARY_SOURCE_INPUT",
+      "input": "BPP Eq.(2.97) and normal-order/self-induced-inertia discussion",
+      "status": "SOURCE_DERIVED_SYMBOLIC"
+    },
+    {
+      "classification": "PROJECT_DERIVED_FROM_SOURCE_INPUTS",
+      "input": "C45 finite-cell modes/P0-Q0",
+      "status": "SOURCE_DERIVED_EXECUTABLE"
+    },
+    {
+      "classification": "PROJECT_DERIVED_FROM_SOURCE_INPUTS",
+      "input": "C47 HO/TM/CM physical basis",
+      "status": "SOURCE_DERIVED_BASIS_IDENTITY"
+    },
+    {
+      "classification": "PROJECT_DERIVED_FROM_SOURCE_INPUTS",
+      "input": "C53 color/triplet identity",
+      "status": "READ_ONLY_IDENTITY_ONLY"
+    },
+    {
+      "classification": "HISTORICAL_METHOD_ORACLE_ONLY",
+      "input": "C40 instantaneous arrays",
+      "status": "FORBIDDEN"
+    },
+    {
+      "classification": "ABSENT_BLOCKING",
+      "input": "one-pair contraction regulator/subtraction mapped to C47 finite HO",
+      "status": "C55.IFERM.ONE_PAIR_CONTRACTION_REGULATOR_AND_COUNTERTERM_CONTRACT"
+    }
+  ],
+  "status": "C55_IFERM_NORMAL_ORDERING_CONTRACT_INCOMPLETE"
+}

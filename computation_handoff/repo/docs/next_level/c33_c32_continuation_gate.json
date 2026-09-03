@@ -1,0 +1,34 @@
+{
+  "bridge": {
+    "common_domain_only": 12,
+    "comparison_ready": 0
+  },
+  "bridge_rerun_executed": false,
+  "gates": {
+    "UV_renormalization": false,
+    "basis_trajectory": false,
+    "continuum_oracle_independent_validation": false,
+    "four_line_operator": true,
+    "gauge_independence": false,
+    "one_loop_bare_soft": false,
+    "rapidity_renormalization": false,
+    "regulator_matching": false,
+    "soft_collinear_compatibility": false,
+    "tree_normalization": true,
+    "vacuum_hilbert": true,
+    "zero_bin_interface_validation": false
+  },
+  "microscopic_proton_export": {
+    "shape": [
+      0
+    ],
+    "status": "EMPTY_NOT_ZERO",
+    "values": null
+  },
+  "next_package": "C34/S0A",
+  "no_go": "C33_SOFT_TREE_LEVEL_ONLY",
+  "passes": false,
+  "ready_status_issued": false,
+  "schema_version": "1.0.0",
+  "status": "C33_C32_CONTINUATION_GATE_DECIDED"
+}

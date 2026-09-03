@@ -1,0 +1,30 @@
+{
+  "schema": "C259-C260-HQCDC117RISMOM1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C259/HQCDC117RENORMDESIGN1",
+  "from_status": "C259_PROJECT_C117_RI_SMOM_V1_FULL_RANK_DESIGN_READY",
+  "from_plan": "C117RENORMDESIGN1-A",
+  "from_package_root": "3316addcea31e845dc16f57f0e921a6409b87c2764635f261e8dff3454cd62ed",
+  "completed_object": "literature-authenticated full-rank renormalization design for the four C117 instantaneous-current complement directions",
+  "next_job": "C260/HQCDC117RISMOM1",
+  "next_frontier": {
+    "object_id": "PROJECT_C117_RI_SMOM_V1-EXECUTABLE-SCHEME-AUTHORITY",
+    "exact_missing_object": "executable PROJECT_C117_RI_SMOM_V1 continuum operator basis, symmetric nonexceptional kinematics, four exact projectors, tree target matrix, evanescent convention, and standard-conversion boundary"
+  },
+  "required_authority": {
+    "gauge": "Landau",
+    "kinematics": "Euclidean symmetric p1^2=p2^2=(p1-p2)^2=mu^2",
+    "conditions": 4,
+    "rank": 4,
+    "operator_basis_must_remain_closed": true,
+    "standard_matching_path": "RI/SMOM-to-MSbar mixing conversion followed by physical matching",
+    "finite_C43_coefficients_selected": false
+  },
+  "constraints": {
+    "unknown_coefficients_zeroed": false,
+    "physical_target_selected": false,
+    "resolution_average": false,
+    "C166_graph_mutation": false,
+    "Q0_Q1_Q2_mutation": false,
+    "push": false
+  }
+}

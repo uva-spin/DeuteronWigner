@@ -1,0 +1,52 @@
+{
+  "schema": "C216-TWO-POINT-CONTRIBUTION-VALIDATION-V1",
+  "artifact": "two_point_contribution_validation",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "class": "free quark propagation",
+        "status": "C145/C148 COMPLETE"
+      },
+      {
+        "class": "q-qg-q canonical vertex pair",
+        "status": "OPERATOR AUTHORITY COMPLETE; LOOP EVALUATION MISSING"
+      },
+      {
+        "class": "instantaneous fermion",
+        "status": "C43 CLASS BOUND; COMMON-STATE EVALUATION MISSING"
+      },
+      {
+        "class": "instantaneous current",
+        "status": "C43 CLASS BOUND; COMMON-STATE EVALUATION MISSING"
+      },
+      {
+        "class": "zero-mode/boundary/residual-link",
+        "status": "C172-C183 LEDGER READY; SELF-ENERGY INSERTION MISSING"
+      },
+      {
+        "class": "counterterm direction",
+        "status": "DIRECTION READY COEFFICIENT UNSELECTED"
+      },
+      {
+        "class": "omitted Fock interface",
+        "status": "EXPLICIT UNAVAILABLE NOT ZERO"
+      }
+    ],
+    "count": 7,
+    "evaluated_classes": 1,
+    "missing_as_zero": false,
+    "root": "9c03c4ac07736395e452b9f69f88b5956bcda3d05bf563e6303e5905063d8034"
+  }
+}

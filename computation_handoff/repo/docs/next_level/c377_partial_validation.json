@@ -1,0 +1,21 @@
+{
+  "package_root": "a257d27946c9d44ffcf71dc7961185febd1a7cc05d99c797aea6d4698c61fda4",
+  "physical": false,
+  "plan": "RIMASSC43JMYPARAMREDUCE2-C",
+  "record": {
+    "mass_terms": 0,
+    "real_cut_substitution": {
+      "ell_plus": "(1-x)p_plus",
+      "jacobian": "1/[2(1-x)p_plus]",
+      "p_dot_q": "-q2/2",
+      "q2": "-kT2/(1-x)",
+      "q_plus": "x p_plus"
+    },
+    "root": "0008b72ce3937be8df7ec060de2ef3898d0c296889fd903d1e7171abc5d57ab1",
+    "soft": "UNAVAILABLE_PENDING_V_TILDEV_COMPONENTS",
+    "status": "BOUND_ONLY_FOR_QQ; qv requires v components",
+    "virtual": "UNAVAILABLE_PENDING_CONTRACTION_AST"
+  },
+  "status": "C377_PARAMETER_REDUCTION_FAIL_CLOSED_KINEMATIC_CONTRACTION_AST_REQUIRED",
+  "validation": "PASS"
+}

@@ -1,0 +1,12 @@
+{
+  "schema":"C271-C272-HQCDC117B1SENS1-CONTINUATION-CONTRACT-V1",
+  "from_package":"C271/HQCDC117B1ADAPTER1",
+  "from_status":"C271_B1_OPERATOR_NORMALIZATION_ADAPTER_READY_C117_SENSITIVITY_ROW_UNEVALUATED",
+  "from_plan":"C117B1ADAPTER1-B",
+  "from_package_root":"7a55d193904b3c19d7c29d61d0abcce421801b4e6852349af2aa571d69d07cbe",
+  "completed_object":"source-faithful b1 hadron-tensor operator, tensor-state normalization, x/xD convention map, and four symbolic C117 packet sensitivities",
+  "next_job":"C272/HQCDC117B1SENS1",
+  "next_frontier":{"object_id":"C117-B1-SENSITIVITY-V1","exact_missing_object":"evaluate the four derivatives of the normalized tensor-DIS b1 packet functional with respect to the C117 finite subtraction coordinates and certify combined rank"},
+  "required_schema":"C272-C117-B1-SENSITIVITY-V1",
+  "constraints":{"four_derivatives_required":true,"two_routes_required":true,"combined_rank_certificate_required":true,"missing_as_zero":false,"finite_C43_coefficients_selected":false,"C166_graph_mutation":false,"Q0_Q1_Q2_mutation":false,"push":false}
+}

@@ -1,0 +1,31 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "conversion_boundary_validation",
+  "authority_record": {
+    "conversion_matrix": "UNAVAILABLE_NOT_ZERO_C261",
+    "formula": "Gamma_MSbar(mu)=C_MSbar<-RISMOM(mu) Gamma_RISMOM(mu)",
+    "from": "PROJECT_C117_RI_SMOM_V1",
+    "physical_matching": "after MSbar conversion, bind a named physical observable/condition; not performed here",
+    "root": "190f4bbb3e24566cb08c3e6c79fa3cdd1a8b6935ef160cb9720a828248a2f2ab",
+    "scale_window": "must satisfy IR contamination << declared tolerance and regulator artifacts << declared tolerance",
+    "source_ids": [
+      "hep-lat/9411010",
+      "0901.2599",
+      "1104.4948",
+      "1109.1223"
+    ],
+    "step_scaling": "Sigma(mu2,mu1)=lim_reg Z(mu2) Z(mu1)^-1; nonperturbative window then perturbative conversion",
+    "thresholds": "nf and threshold matching records mandatory; no threshold value selected",
+    "to": "MSbar-NDR in identical physical/evanescent ordering"
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-CONVERSION_BOUNDARY-VALIDATION-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "PASS"
+}

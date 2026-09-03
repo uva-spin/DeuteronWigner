@@ -1,0 +1,61 @@
+{
+  "C93_claim_boundary": "RECOVERED_CONTENT_PREIMAGE_OF_FROZEN_C90_AUTHORITY",
+  "C94_public_authority_verified": true,
+  "C94_public_package_root": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+  "baseline": "922f5a6e9d771561340992e84888db2ad1fd8328",
+  "forbidden_outputs": [
+    "expanded logical records",
+    "coefficient-times-kernel product",
+    "contact matrix/action",
+    "physical coupling",
+    "counterterm",
+    "TMD/matching",
+    "fit/inference/production"
+  ],
+  "frozen_public_operations": [
+    "expansion_theorem_specification",
+    "historical_pair_attestation",
+    "historical_pair_by_sequence",
+    "historical_pair_count",
+    "historical_pair_page",
+    "historical_primitive_family",
+    "historical_primitive_page",
+    "load_verified_c93_public_authority",
+    "verify_factorized_expansion_equivalence"
+  ],
+  "historical_C72_runtime_instance": "UNKNOWN_NOT_CLAIMED",
+  "historical_C82_completion": "8e47231ab565f0f729d335b39aa98881176ba166",
+  "historical_C90_completion": "ac622ab358b83f090717d7e7fa179b58f18f526d",
+  "historical_content_read": "only C94 public package authority verification",
+  "historical_environment": "HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY",
+  "import_contract": {
+    "content": {
+      "forbids": [
+        "expanded logical records",
+        "kernel product",
+        "contact matrix"
+      ],
+      "objective": "complete factorized semantic comparison",
+      "requires": [
+        "C94 package root",
+        "C93 capsule root",
+        "pair pages",
+        "normal forms",
+        "primitive filesets",
+        "theorem/checker",
+        "C91 descendant domain"
+      ]
+    },
+    "path": "docs/next_level/c94_c95_ifequiv7_import_contract.json",
+    "sha256": "754716931b0f378024f642825cc1b7c7f1c4b77d90dcd657e6cb31838d4ca1e3"
+  },
+  "missing_required_operations": [
+    "historical_pair_normal_form",
+    "historical_pair_proof_inputs",
+    "historical_primitive_record"
+  ],
+  "package": "C95/IFEQUIV7",
+  "private_C93_access": false,
+  "private_C94_core_imported": false,
+  "status": "C95_HISTORICAL_PUBLIC_AUTHORITY_FROZEN_COMPLETE"
+}

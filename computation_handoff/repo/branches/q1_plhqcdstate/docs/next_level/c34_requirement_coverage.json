@@ -1,0 +1,3736 @@
+{
+  "acceptance_count": 53,
+  "acceptance_disposition_counts": {
+    "FAIL_CLOSED_GUARD_SATISFIED": 6,
+    "NOT_CLAIMED_DUE_BRANCH_G": 12,
+    "PASS": 35
+  },
+  "all_acceptance_criteria_positively_satisfied": false,
+  "all_acceptance_rows_have_concrete_evidence": true,
+  "all_acceptance_rows_have_valid_branch_g_disposition": true,
+  "all_requirement_rows_positively_satisfied": false,
+  "all_rows_described": true,
+  "all_rows_mapped_to_evidence": true,
+  "benchmark_families": [
+    "S0A-A",
+    "S0A-B",
+    "S0A-C",
+    "S0A-D",
+    "S0A-E",
+    "S0A-F",
+    "S0A-G",
+    "S0A-H",
+    "S0A-I",
+    "S0A-J",
+    "S0A-K",
+    "S0A-L",
+    "S0A-M",
+    "S0A-N",
+    "S0A-O",
+    "S0A-P",
+    "S0A-Q",
+    "S0A-R"
+  ],
+  "c34_requirement_record_count": 300,
+  "content_hash": "3919fe5270fc01e796d39f888bd584f9d7d59d704e68df41ca816b505f34ab50",
+  "count": 300,
+  "count_semantics": "C34_ROWS_ONLY_INHERITED_C33_SUITE_REMAINS_SEPARATE",
+  "cumulative_requirement_count_asserted": false,
+  "inherited_c33_requirement_count": 2140,
+  "positive_one_loop_claim_withheld_by_branch_g": true,
+  "rows": [
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The actual clean C33 completion commit is resolved and recorded rather than invented.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-A",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.001"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The complete C33 baseline reproduces before edits.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-B",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.002"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The B=0 soft and B=1 collinear roots remain disjoint.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_one_loop_plan.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-C",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.003"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The C33 basis, path, rapidity, and tree identities remain unchanged.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json",
+        "docs/next_level/c34_one_loop_plan.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-D",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.004"
+    },
+    {
+      "branch_g_handling": "The selected method and probe schedule are frozen, but the missing gauge-complete field realization, mode functions, measures, and interaction normalization leave the full executable one-loop plan incomplete.",
+      "criterion_satisfied": false,
+      "description": "The one-loop plan is frozen before results.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_one_loop_plan.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-E",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.005"
+    },
+    {
+      "branch_g_handling": "Only the quadrature method family and nominal orders are frozen; missing tolerances, subdivision limits, contour/pole treatment, normalized modes, and singular subtraction leave the execution plan partially specified.",
+      "criterion_satisfied": false,
+      "description": "The quadrature/cell-integration plan is frozen before results.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_mode_quadrature_plan.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-F",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.006"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Every eikonal line contributes through a typed current.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_eikonal_current_manifest.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-G",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.007"
+    },
+    {
+      "branch_g_handling": "Normalized finite-cell mode functions and the analytic singular-subtraction kernel are absent, so no singular cell was integrated.",
+      "criterion_satisfied": false,
+      "description": "Singular cells are integrated rather than sampled naively.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_mode_cell_integration_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-H",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.008"
+    },
+    {
+      "branch_g_handling": "All eighteen required contributions are explicit UNRESOLVED_BLOCKING records; none has yet received a calculated or proved physical status.",
+      "criterion_satisfied": false,
+      "description": "Every required one-loop contribution receives a calculated or proved status.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-I",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.009"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "No required finite-regulator contribution is called scaleless by continuum analogy alone.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-J",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.010"
+    },
+    {
+      "branch_g_handling": "The cut IDs are structurally unique, but physical real/virtual branch assignment and direct Wilson-expansion versus mode-sum equality were not executed.",
+      "criterion_satisfied": false,
+      "description": "Real and virtual contributions are counted once.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_real_virtual_assembly.json",
+        "docs/next_level/c34_count_once_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-K",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.011"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Color-trace normalization closes.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_eikonal_current_manifest.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-L",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.012"
+    },
+    {
+      "branch_g_handling": "Future/past equality is withheld because the one-loop cell assembly is unavailable.",
+      "criterion_satisfied": false,
+      "description": "Future/past T-even equality closes when claimed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c34_bare_soft_validation_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-M",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.013"
+    },
+    {
+      "branch_g_handling": "Gauge cancellation is withheld because the gauge-complete B=0 action and cell propagator are unavailable.",
+      "criterion_satisfied": false,
+      "description": "Gauge dependence cancels when claimed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_uv_closure_report.json",
+        "docs/next_level/c34_rapidity_renormalization_closure.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-N",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.014"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The bare coefficient retains all regulator identities.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_bare_soft_coefficient.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-O",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.015"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "UV power and logarithmic structures remain separate.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_uv_structure.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-P",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.016"
+    },
+    {
+      "branch_g_handling": "No UV counterterm is issued; state independence is required but remains unproved while the solution is blocking.",
+      "criterion_satisfied": false,
+      "description": "UV counterterms are state independent.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-Q",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.017"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Rapidity dependence is retained until the rapidity counterterm is applied.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_rapidity_structure.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-R",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.018"
+    },
+    {
+      "branch_g_handling": "Modified-delta cancellation is not claimed before a bare finite-basis rapidity dependence exists.",
+      "criterion_satisfied": false,
+      "description": "Modified-delta regulator dependence cancels when claimed.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c34_rapidity_renormalization_closure.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-A",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.019"
+    },
+    {
+      "branch_g_handling": "No rapidity anomalous dimension is extracted from the incomplete calculation.",
+      "criterion_satisfied": false,
+      "description": "The rapidity anomalous dimension is extracted only from a closed calculation.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_rapidity_anomalous_dimension.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-B",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.020"
+    },
+    {
+      "branch_g_handling": "The cusp relation cannot be evaluated because no rapidity anomalous dimension was extracted.",
+      "criterion_satisfied": false,
+      "description": "Cusp consistency is tested.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-C",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.021"
+    },
+    {
+      "branch_g_handling": "The continuum final expression is source-qualified, but neither graph-level nor independent direct-integral reconstruction was performed.",
+      "criterion_satisfied": false,
+      "description": "The continuum target oracle is independently reconstructed.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_continuum_soft_oracle_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-D",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.022"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The continuum coefficient is not substituted for the finite-basis coefficient.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_continuum_soft_target.json",
+        "docs/next_level/c34_bare_soft_coefficient.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-E",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.023"
+    },
+    {
+      "branch_g_handling": "No conversion was issued, so its required hadron, state, and ART25-member independence is not yet proved.",
+      "criterion_satisfied": false,
+      "description": "The finite-regulator conversion is hadron and ART25 independent.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_regulator_conversion.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-F",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.024"
+    },
+    {
+      "branch_g_handling": "The one-loop finite-regulator kernel does not exist, so inverse and round-trip residuals were not evaluated.",
+      "criterion_satisfied": false,
+      "description": "Inverse and round-trip conversion are tested.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_regulator_roundtrip.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-G",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.025"
+    },
+    {
+      "branch_g_handling": "R1-R3 have exact inherited identities and tree values only; no one-loop trajectory claim or execution is made.",
+      "criterion_satisfied": false,
+      "description": "All three C33 resolutions are executed for any trajectory claim.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-H",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.026"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "No trajectory is overfit.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_trajectory_fit_plan.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-I",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.027"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "At least one trajectory/regulator combination remains a holdout.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-J",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.028"
+    },
+    {
+      "branch_g_handling": "The excluded exact-zero-mode control remains NONZERO_UNKNOWN and blocking.",
+      "criterion_satisfied": false,
+      "description": "Zero-mode status is calculated or remains blocking.",
+      "disposition": "FAIL_CLOSED_GUARD_SATISFIED",
+      "evidence_paths": [
+        "docs/next_level/c34_zero_mode_contribution_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-K",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.029"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Endpoint, cusp, and transverse-closure pieces remain separately auditable.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_endpoint_transverse_closure_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-L",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.030"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Auxiliary and direct routes remain alternatives.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_auxiliary_soft_crosscheck.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-M",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.031"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The soft-side zero-bin object is explicit.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-N",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.032"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Off-shell soft/zero-bin equivalence is not assumed from citation.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-O",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.033"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "A valid soft function is not called a completed microscopic TMD.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_c32_continuation_gate.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-P",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.034"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "C34 creates no microscopic proton export.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_c32_continuation_gate.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-Q",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.035"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "C34 does not rerun the twelve-point bridge.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_c32_continuation_gate.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-R",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.036"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The C32 continuation gate is issued only at its exact supported scope.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_c32_continuation_gate.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-A",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.037"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "All remainder classes remain separate.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_remainder_separation.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-B",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.038"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Unknown remainder remains nonzero-unknown.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_remainder_separation.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-C",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.039"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "No ART25 object enters the derivation.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_derivation_authority_manifest.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-D",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.040"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "C29-C33 roles, holdouts, ancestry, and `NO_JOINT_MEASURE` remain unchanged.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-E",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.041"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "All 642 ART25 identities and source covariance remain unchanged.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-F",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.042"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "No fit, calibration, likelihood, posterior, optimization, reweighting, or emulator is created.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-G",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.043"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "No process, deuteron, spin-1, gluon, T-odd, inference, or production status is promoted.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-H",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.044"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Every no-go result contains an exact missing-calculation specification.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-I",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.045"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "All inherited tests, builders, requirements, injections, and manifests remain passing.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-J",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.046"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "The production registry remains exactly 216 routes.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-K",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.047"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "All eight authoritative artifacts remain byte-identical.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-L",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.048"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Raw transferred source files remain outside Git absent permission.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-M",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.049"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "Every C34 negative injection yields the expected diagnostic.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-N",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.050"
+    },
+    {
+      "branch_g_handling": "The cited deterministic record directly implements or preserves this criterion.",
+      "criterion_satisfied": true,
+      "description": "All C34 manifests reproduce byte-for-byte.",
+      "disposition": "PASS",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-O",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.051"
+    },
+    {
+      "branch_g_handling": "Working-tree cleanliness can only be assessed after the local completion commit.",
+      "criterion_satisfied": false,
+      "description": "The working tree is clean except for the pre-existing untracked `MSHT20_REP/`.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-P",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.052"
+    },
+    {
+      "branch_g_handling": "The local unpushed completion commit does not exist at manifest-construction time.",
+      "criterion_satisfied": false,
+      "description": "A local completion commit is created and not pushed.",
+      "disposition": "NOT_CLAIMED_DUE_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "fail_closed_guard_satisfied": true,
+      "family": "S0A-Q",
+      "kind": "ACCEPTANCE_CRITERION",
+      "positive_one_loop_status_claimed": false,
+      "requirement_id": "C34.ACC.053"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "immutable C33 B=0 root and plan, B=1 separation, and no state mixing",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-A",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-A"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "four-line eikonal current color/sign identities and cell-integrated matrix elements",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-B",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-B"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "mode-basis normalization, completeness, singular-cell quadrature, and resolution identity",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-C",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-C"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "n-nbar, conjugate, same-direction, and self-energy line-pair closure",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-D",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-D"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "direct Wilson-expansion versus mode-sum real/virtual count-once closure",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-E",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-E"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "separate cusp, endpoint, and transverse-closure identities without duplicate counterterms",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-F",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-F"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "explicit gauge, ghost, and instantaneous decisions and gauge closure",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-G",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-G"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "explicit exact-zero-mode and basis-boundary controls without silent zero",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-H",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-H"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "bare soft coefficient component, b, and regulator decomposition",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-I",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-I"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "continuum modified-delta source expression and independent reconstruction",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-J",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-J"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "UV power/log separation, counterterms, and anomalous dimension",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-K",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-K"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "distinct delta dependence, rapidity counterterm, and regulator-removal order",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-L",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-L"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "rapidity derivative, mu derivative, cusp, and Collins-Soper convention consistency",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-M",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-M"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "finite-regulator conversion inverse, round trip, and state independence",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-N",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-N"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "C33 R1-R3 basis trajectory, reserved holdout, and no overfit",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-O",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-O"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "soft-side zero-bin common measurement and exact interface without premature equality",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-P",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-P"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "exact continuation/no-go status and next branch without proton export",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-Q",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-Q"
+    },
+    {
+      "coverage_status": "MAPPED_BRANCH_G_POSITIVE_NUMERICS_UNAVAILABLE",
+      "criterion_satisfied": false,
+      "description": "deterministic ART25-free, fit-free, production-isolated implementation",
+      "evidence_paths": [
+        "docs/next_level/c34_implementation_report.md",
+        "docs/next_level/c34_source_sufficiency_decision.json"
+      ],
+      "family": "S0A-R",
+      "kind": "BENCHMARK_FAMILY",
+      "requirement_id": "C34.BENCHMARK.S0A-R"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftOneLoopPlan must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.001.SoftOneLoopPlan"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftOneLoopOrder must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.002.SoftOneLoopOrder"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftModeCellId must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.003.SoftModeCellId"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftModeQuadrature must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.004.SoftModeQuadrature"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftModeCompletenessRecord must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.005.SoftModeCompletenessRecord"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "EikonalCurrent must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.006.EikonalCurrent"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "EikonalEmissionVertex must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.007.EikonalEmissionVertex"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "EikonalAbsorptionVertex must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.008.EikonalAbsorptionVertex"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "EikonalPairKernel must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.009.EikonalPairKernel"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "EikonalSelfKernel must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.010.EikonalSelfKernel"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "TransverseClosureKernel must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.011.TransverseClosureKernel"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftVirtualAmplitude must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.012.SoftVirtualAmplitude"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRealAmplitude must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.013.SoftRealAmplitude"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftCutLedger must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.014.SoftCutLedger"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRealVirtualAssembly must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.015.SoftRealVirtualAssembly"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftGaugeContribution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.016.SoftGaugeContribution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftGhostContribution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.017.SoftGhostContribution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftInstantaneousContribution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.018.SoftInstantaneousContribution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftZeroModeContribution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.019.SoftZeroModeContribution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftBoundaryContribution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.020.SoftBoundaryContribution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftBareCoefficient must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.021.SoftBareCoefficient"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftBareCoefficientDecomposition must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.022.SoftBareCoefficientDecomposition"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftUVStructure must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.023.SoftUVStructure"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRapidityStructure must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.024.SoftRapidityStructure"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftUVCountertermSolution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.025.SoftUVCountertermSolution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRapidityCountertermSolution must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.026.SoftRapidityCountertermSolution"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRenormalizedCoefficient must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.027.SoftRenormalizedCoefficient"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRapidityDerivative must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.028.SoftRapidityDerivative"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftCuspConsistency must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.029.SoftCuspConsistency"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftCSKernelRecord must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.030.SoftCSKernelRecord"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftContinuumTargetRecord must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.031.SoftContinuumTargetRecord"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftFiniteRegulatorDifference must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.032.SoftFiniteRegulatorDifference"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftFiniteRegulatorKernel must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.033.SoftFiniteRegulatorKernel"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftRoundTripReport must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.034.SoftRoundTripReport"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftResolutionSequence must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.035.SoftResolutionSequence"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftTrajectoryFitPlan must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.036.SoftTrajectoryFitPlan"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftTrajectoryHoldout must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.037.SoftTrajectoryHoldout"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftTrajectoryResult must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.038.SoftTrajectoryResult"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftSideZeroBinLimit must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.039.SoftSideZeroBinLimit"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "SoftCollinearContinuationContract must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.040.SoftCollinearContinuationContract"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "C34SoftCapabilityMatrix must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.041.C34SoftCapabilityMatrix"
+    },
+    {
+      "coverage_status": "MAPPED_TO_RUNTIME_AND_API_CONTRACT",
+      "criterion_satisfied": true,
+      "description": "C34ClosureReport must be immutable, content-addressed, deterministically serialized, explicitly B=0/path/color/regulator/order qualified, ART25 independent, and unreachable from inference or production.",
+      "evidence_paths": [
+        "src/deuteron_wigner/bridge/s0a/core.py",
+        "docs/next_level/c34_api.md"
+      ],
+      "kind": "REQUIRED_ARCHITECTURE_OBJECT",
+      "requirement_id": "C34.ARCH.042.C34ClosureReport"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve N_NBAR_EXCHANGE by regulator-specific calculation or an exact non-applicability proof; current missing work: normalized gauge-complete n--nbar cell kernel and virtual prescription.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.01.N_NBAR_EXCHANGE"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve CONJUGATE_LINE_EXCHANGE by regulator-specific calculation or an exact non-applicability proof; current missing work: normalized conjugate-line cell kernel with anti-fundamental action.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.02.CONJUGATE_LINE_EXCHANGE"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve SAME_DIRECTION_LINE_EXCHANGE by regulator-specific calculation or an exact non-applicability proof; current missing work: finite-regulator same-direction integral; continuum scalelessness is insufficient.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.03.SAME_DIRECTION_LINE_EXCHANGE"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve REAL_ONE_SOFT_GLUON by regulator-specific calculation or an exact non-applicability proof; current missing work: cell-integrated cut one-gluon matrix elements and measurement support.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.04.REAL_ONE_SOFT_GLUON"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve VIRTUAL_ONE_SOFT_GLUON by regulator-specific calculation or an exact non-applicability proof; current missing work: cell-integrated uncut contraction and vacuum prescription.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.05.VIRTUAL_ONE_SOFT_GLUON"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve WILSON_LINE_SELF_ENERGY by regulator-specific calculation or an exact non-applicability proof; current missing work: finite-cell line self-energy operator and UV/power separation.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.06.WILSON_LINE_SELF_ENERGY"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve CUSP_ENDPOINT by regulator-specific calculation or an exact non-applicability proof; current missing work: finite-basis cusp and endpoint junction realization.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.07.CUSP_ENDPOINT"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve TRANSVERSE_CLOSURE by regulator-specific calculation or an exact non-applicability proof; current missing work: explicit transverse-infinity segment modes and junction kernel.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.08.TRANSVERSE_CLOSURE"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve AUXILIARY_FIELD_SELF_ENERGY by regulator-specific calculation or an exact non-applicability proof; current missing work: proved auxiliary-to-direct Minkowski modified-delta conversion.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.09.AUXILIARY_FIELD_SELF_ENERGY"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve SOFT_VACUUM_ENERGY by regulator-specific calculation or an exact non-applicability proof; current missing work: B=0 interacting-vacuum subtraction prescription.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.10.SOFT_VACUUM_ENERGY"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve LIGHT_FRONT_INSTANTANEOUS by regulator-specific calculation or an exact non-applicability proof; current missing work: gauge-complete light-front constrained-field kernel.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.11.LIGHT_FRONT_INSTANTANEOUS"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve GAUGE_FIXING by regulator-specific calculation or an exact non-applicability proof; current missing work: covariant-gauge finite-basis propagator/BRST completion at xi=0,1,2.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.12.GAUGE_FIXING"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve GHOST by regulator-specific calculation or an exact non-applicability proof; current missing work: ghost-sector basis and cancellation proof in the chosen gauge realization.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.13.GHOST"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve ZERO_MODE by regulator-specific calculation or an exact non-applicability proof; current missing work: explicit constrained exact-zero-mode sector retained by C33 policy.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.14.ZERO_MODE"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve BASIS_BOUNDARY by regulator-specific calculation or an exact non-applicability proof; current missing work: normalized boundary modes and finite-cell boundary counterterm.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.15.BASIS_BOUNDARY"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve RAPIDITY_COUNTERTERM by regulator-specific calculation or an exact non-applicability proof; current missing work: calculated bare delta-plus/delta-minus logarithms.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.16.RAPIDITY_COUNTERTERM"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve UV_COUNTERTERM by regulator-specific calculation or an exact non-applicability proof; current missing work: calculated power/log/cusp/endpoint UV structure.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.17.UV_COUNTERTERM"
+    },
+    {
+      "coverage_status": "UNRESOLVED_BLOCKING_NONZERO_UNKNOWN",
+      "criterion_satisfied": false,
+      "description": "Resolve RESIDUAL_LINE_MASS_COUNTERTERM by regulator-specific calculation or an exact non-applicability proof; current missing work: finite-regulator line-mass divergence or proof of non-applicability.",
+      "evidence_paths": [
+        "docs/next_level/c34_soft_diagram_results.json",
+        "docs/next_level/c34_missing_calculation_specification.md"
+      ],
+      "kind": "ONE_LOOP_CONTRIBUTION_SLOT",
+      "requirement_id": "C34.CONTRIBUTION.18.RESIDUAL_LINE_MASS_COUNTERTERM"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve N_NBAR_LINE_PAIR_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.01.N_NBAR_LINE_PAIR_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve CONJUGATE_LINE_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.02.CONJUGATE_LINE_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve SAME_DIRECTION_CONTRIBUTION outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.03.SAME_DIRECTION_CONTRIBUTION"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve REAL_CONTRIBUTION outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.04.REAL_CONTRIBUTION"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve VIRTUAL_CONTRIBUTION outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.05.VIRTUAL_CONTRIBUTION"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve WILSON_SELF_ENERGY_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.06.WILSON_SELF_ENERGY_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve CUSP_ENDPOINT_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.07.CUSP_ENDPOINT_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve TRANSVERSE_CLOSURE_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.08.TRANSVERSE_CLOSURE_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve GAUGE_XI_2 outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.09.GAUGE_XI_2"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve DELTA_PLUS_VARIATION_5E_MINUS4 outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.10.DELTA_PLUS_VARIATION_5E_MINUS4"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve DELTA_MINUS_VARIATION_7P5E_MINUS4 outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.11.DELTA_MINUS_VARIATION_7P5E_MINUS4"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve B_POINT_1P0_GEV_MINUS1 outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.12.B_POINT_1P0_GEV_MINUS1"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve B_TO_ZERO_CONTROLLED_POINT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.13.B_TO_ZERO_CONTROLLED_POINT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve ZERO_MODE_CONTROL outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.14.ZERO_MODE_CONTROL"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve BASIS_BOUNDARY_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.15.BASIS_BOUNDARY_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve UV_COUNTERTERM_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.16.UV_COUNTERTERM_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve RAPIDITY_COUNTERTERM_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.17.RAPIDITY_COUNTERTERM_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve RAPIDITY_ANOMALOUS_DIMENSION_COEFFICIENT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.18.RAPIDITY_ANOMALOUS_DIMENSION_COEFFICIENT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve CONTINUUM_ORACLE_FINITE_CONSTANT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.19.CONTINUUM_ORACLE_FINITE_CONSTANT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve FINITE_REGULATOR_ROUND_TRIP outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.20.FINITE_REGULATOR_ROUND_TRIP"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve SOFT_RESOLUTION_C33_RES_3 outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.21.SOFT_RESOLUTION_C33_RES_3"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve AUXILIARY_DIRECT_COMPARISON outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.22.AUXILIARY_DIRECT_COMPARISON"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve SOFT_SIDE_ZERO_BIN_OBJECT outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.23.SOFT_SIDE_ZERO_BIN_OBJECT"
+    },
+    {
+      "coverage_status": "PRESERVED_UNEVALUATED",
+      "criterion_satisfied": false,
+      "description": "Preserve ART25_INDEPENDENCE_CONTROL outside construction, counterterm solution, and fitting; evaluate it only as an independent validation control.",
+      "evidence_paths": [
+        "docs/next_level/c34_holdout_report.json",
+        "docs/next_level/c34_soft_trajectory_holdout_report.json"
+      ],
+      "kind": "FROZEN_HOLDOUT_REQUIREMENT",
+      "requirement_id": "C34.HOLDOUT.REQUIREMENT.24.ART25_INDEPENDENCE_CONTROL"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep the C11 model density, project renormalized TMD, and ART25 optimal TMD as distinct typed layers.",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.LAYER.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1671"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid continuum scheme equivalence from acting directly on an unmatched finite-basis density.",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.LAYER.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1672"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep baryon-number-one collinear and baryon-number-zero soft Hilbert roots disjoint.",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ROOT.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1673"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid the vacuum soft root from entering the proton-state probability normalization.",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ROOT.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1674"
+    },
+    {
+      "coverage_status": "C34_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Join the roots only through a content-addressed joint-regulator and overlap contract.",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ROOT.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1675"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Preserve the historical C11 root and create a versioned completed staple-operator root.",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.OP.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1676"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Store active field, Dirac projection, staple direction, transverse closure, color representation, path ordering, and normalization.",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.OP.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1677"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Preserve separate positive-\\(x\\) quark and antiquark identities and anti-fundamental Wilson action.",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.OP.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1678"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Require exact tree reduction to C11 before one-loop matching.",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.OP.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1679"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Treat Wilson order zero only as a tree-level operator limit.",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.OP.5",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1680"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Store \\(K,N_{\\max},b_{\\mathrm{HO}},\\lambda_H,x_{\\min}\\), boundary, endpoint, and zero-mode data.",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.REG.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1681"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Freeze common partonic IR, gauge, and rapidity plans before one-loop calculation.",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.REG.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1682"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid a finite basis from being called a rapidity regulator without proof.",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.REG.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1683"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Require at least three nested regulator points for any continuum claim.",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.REG.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1684"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Maintain a complete one-loop collinear diagram and counterterm ledger.",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.COLL.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1685"
+    },
+    {
+      "coverage_status": "C34_FAIL_CLOSED",
+      "criterion_satisfied": false,
+      "description": "Forbid absent real, virtual, Wilson, instantaneous, boundary, endpoint, zero-mode, or mixing terms from being silently zero.",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.COLL.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1686"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Preserve exact delta, plus, regular, convolution, and Mellin distribution algebra.",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.COLL.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1687"
+    },
+    {
+      "coverage_status": "C34_FAIL_CLOSED",
+      "criterion_satisfied": false,
+      "description": "Keep the microscopic unsubtracted correlator unavailable beyond tree level until its gates pass.",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.COLL.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1688"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Construct a distinct finite vacuum plus soft-gluon Hilbert space for a microscopic soft claim.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1689"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Represent the complete four-line fundamental/conjugate Wilson geometry and singlet color trace.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1690"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Require the tree soft factor to equal one exactly.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1691"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Derive modified-\\(\\delta\\) signs from stored line, momentum, Fourier, and \\(i0\\) conventions.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1692"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Maintain a complete one-loop soft diagram and counterterm ledger.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.5",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1693"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep direct finite-Fock, auxiliary-field, and continuum-oracle soft plans mutually exclusive.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.6",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1694"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid importing a continuum soft function as the finite-basis microscopic result.",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.SOFT.7",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1695"
+    },
+    {
+      "coverage_status": "C34_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Separate field, bilocal, Wilson self-energy, cusp/endpoint, vacuum, residual-mass, and basis UV counterterms.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.UV.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1696"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Separate logarithmic UV terms from power divergences and finite constants.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.UV.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1697"
+    },
+    {
+      "coverage_status": "C34_FAIL_CLOSED",
+      "criterion_satisfied": false,
+      "description": "Require target UV anomalous-dimension closure for a positive status.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.UV.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1698"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep bare rapidity dependence, rapidity counterterm, and renormalized object separate.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.RAP.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1699"
+    },
+    {
+      "coverage_status": "C34_FAIL_CLOSED",
+      "criterion_satisfied": false,
+      "description": "Require regulator cancellation, gauge independence, and future/past equality for a positive rapidity status.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.RAP.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1700"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Store the exact rapidity-derivative and Collins--Soper sign convention.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.RAP.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1701"
+    },
+    {
+      "coverage_status": "C34_FAIL_CLOSED",
+      "criterion_satisfied": false,
+      "description": "Require \\(\\dd\\cD/\\dd\\ln\\mu=\\Gamma_{\\mathrm{cusp}}\\) at the declared order.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.RAP.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1702"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Define a typed collinear-to-soft zero-bin or overlap map.",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ZERO.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1703"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Place the overlap subtraction exactly once.",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ZERO.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1704"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Require signed nonzero missing- and duplicate-subtraction controls.",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ZERO.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1705"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Treat soft-division and zero-bin equivalence as conditional and remainder-bearing.",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ZERO.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1706"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Evaluate a source-qualified target project partonic TMD with the same external-state IR prescription.",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ORACLE.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1707"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Preserve target delta, plus, regular, anomalous-dimension, and moment structures.",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ORACLE.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1708"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Extract LF-to-project matching from a common-IR partonic difference, never a hadron-level ratio.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1709"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Decide \\(q\\leftarrow q\\), \\(q\\leftarrow g\\), \\(q\\leftarrow\\bar q\\), singlet, and nonsinglet channel status.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1710"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Require matching kernels to be state, hadron, ART25-member, and data independent.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1711"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Require infrared finiteness and gauge independence for a positive matching status.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1712"
+    },
+    {
+      "coverage_status": "LATER_PACKAGE_DEFERRED",
+      "criterion_satisfied": false,
+      "description": "Preserve the first omitted order and nonzero remainder.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.5",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1713"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Require finite-scheme factors to carry hard-factor companion transformations.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.6",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1714"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep project-to-ART25 scheme, scale, evolution, threshold, FNP, and CS maps separate.",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.MATCH.7",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1715"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Separate logarithmic cutoff, finite conversion, power, endpoint, zero-mode, and numerical terms.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.TRAJ.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1716"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Fit only analytically predicted regulator structures.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.TRAJ.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1717"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid ART25 residuals from selecting regulator trajectories or counterterms.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.TRAJ.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1718"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep hadronic and vacuum-soft tensor networks as separate roots.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.TN.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1719"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Treat bond dimension as an observable-specific numerical/truncation axis.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.TN.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1720"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid energy convergence from substituting for TMD, soft, or matching convergence.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.TN.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1721"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep quantum state preparation separate from the renormalization and matching compiler.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json",
+        "docs/next_level/c34_soft_quantum_interface_update.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.Q.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1722"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid a QDNN from learning missing UV, soft, rapidity, or zero-bin terms from data.",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json",
+        "docs/next_level/c34_soft_quantum_interface_update.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.Q.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1723"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep all twelve frozen rank-zero proton points common-domain-only until every gate closes.",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.BRIDGE.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1724"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Preserve the empty-not-zero \\(642\\times0\\) representation when microscopic coordinates are unavailable.",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.BRIDGE.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1725"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Preserve all external member identities, covariance rank, and null spaces after any later projection.",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.BRIDGE.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1726"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep the cross-root relation \\texttt{NO\\_JOINT\\_MEASURE}.",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.BRIDGE.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1727"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Preserve ART25 data ancestry and compressed-constraint/direct-data exclusivity.",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.BRIDGE.5",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1728"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Permit rigorous tree-level-only, soft-sector, regulator, state-independence, and trajectory no-go results.",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.STATUS.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1729"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Require every no-go result to specify the exact missing calculation.",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.STATUS.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1730"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid a valid soft sector from being called a complete microscopic TMD.",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.STATUS.3",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1731"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Forbid microscopic export, bridge readiness, inference, or process promotion before all gates pass.",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.STATUS.4",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1732"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep C7--C32 scientific results, frozen bridge roles, production routes, and authoritative artifacts unchanged.",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ISO.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1733"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Keep raw transferred source files outside public Git absent permission.",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.ISO.2",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1734"
+    },
+    {
+      "coverage_status": "INHERITED_CLOSED",
+      "criterion_satisfied": true,
+      "description": "Require deterministic byte-identical manifests and content-addressed heavy outputs.",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c33_requirement_coverage.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "kind": "VOLUME_XXI_REQUIREMENT",
+      "requirement_id": "C34.FORMALISM.V21.DET.1",
+      "source_locator": "references/volume_xxi_regulator_specific_tmd_operators_soft_matching.tex:1735"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The BASELINE_ROOT fault mode INVENTED_C33_COMMIT requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.001"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The BASELINE_ROOT fault mode C33_BASELINE_NOT_REPRODUCED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.002"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The BASELINE_ROOT fault mode B0_SOFT_INSERTED_IN_PROTON_NORMALIZATION requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.003"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The BASELINE_ROOT fault mode C33_PATH_RECORD_MODIFIED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.004"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The BASELINE_ROOT fault mode C33_TREE_IDENTITY_OVERWRITTEN requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.005"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode LINE_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.006"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode CONJUGATE_ACTION_WRONG requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.007"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode PATH_ORDER_LOST requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.008"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode TRANSVERSE_POSITION_LOST requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.009"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode WRONG_DELTA_REGULATOR_ASSIGNED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.010"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode I0_SIGN_INSERTED_MANUALLY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.011"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode COLOR_ACTION_TRANSPOSED_INCORRECTLY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.012"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The EIKONAL_CURRENT fault mode SINGULAR_CELL_SAMPLED_AT_CENTER requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.013"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode ONE_GLUON_NORMALIZATION_WRONG requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.014"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode RAPIDITY_REGIONS_ALIASED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.015"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode POLARIZATION_DROPPED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.016"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode ADJOINT_COLOR_DROPPED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.017"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode ZERO_MODE_SILENTLY_INCLUDED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.018"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode ZERO_MODE_SILENTLY_DISCARDED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.019"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The MODE_BASIS fault mode COMPLETENESS_INFERRED_FROM_ONE_RESOLUTION requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.020"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode REAL_GRAPH_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.021"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode VIRTUAL_GRAPH_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.022"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode SAME_DIRECTION_DECLARED_SCALELESS_BY_ANALOGY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.023"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode SELF_ENERGY_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.024"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode CUSP_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.025"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode ENDPOINT_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.026"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode TRANSVERSE_CLOSURE_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.027"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode GHOST_GAUGE_TERM_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.028"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode INSTANTANEOUS_TERM_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.029"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode VACUUM_ENERGY_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.030"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ONE_LOOP_DIAGRAMS fault mode BASIS_BOUNDARY_TERM_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.031"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The COUNT_ONCE fault mode REAL_CONTRIBUTION_DUPLICATED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.032"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The COUNT_ONCE fault mode VIRTUAL_CONTRIBUTION_DUPLICATED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.033"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The COUNT_ONCE fault mode CONJUGATE_PAIR_DOUBLE_COUNTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.034"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The COUNT_ONCE fault mode CUT_SUPPORT_DUPLICATED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.035"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The COUNT_ONCE fault mode SOFT_FACTOR_SQUARED_ACCIDENTALLY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.036"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The COUNT_ONCE fault mode INVERSE_SQUARE_ROOT_APPLIED_TWICE requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.037"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The UV_RENORMALIZATION fault mode POWER_DIVERGENCE_HIDDEN_IN_LOG requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.038"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The UV_RENORMALIZATION fault mode LINEAR_DIVERGENCE_DROPPED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.039"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The UV_RENORMALIZATION fault mode LINE_MASS_COUNTERTERM_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.040"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The UV_RENORMALIZATION fault mode CUSP_COUNTERTERM_DUPLICATED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.041"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The UV_RENORMALIZATION fault mode UV_FACTOR_TUNED_TO_CONTINUUM_FINITE_CONSTANT requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.042"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The UV_RENORMALIZATION fault mode UV_HOLDOUT_USED_IN_DETERMINATION requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.043"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The RAPIDITY_RENORMALIZATION fault mode DELTA_PLUS_MINUS_ALIASED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.044"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The RAPIDITY_RENORMALIZATION fault mode REGULATOR_REMOVED_BEFORE_ASSEMBLY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.045"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The RAPIDITY_RENORMALIZATION fault mode RAPIDITY_LOG_ABSORBED_IN_UV_FACTOR requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.046"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The RAPIDITY_RENORMALIZATION fault mode ZETA_CONFUSED_WITH_BARE_REGULATOR requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.047"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The RAPIDITY_RENORMALIZATION fault mode CS_MODEL_IMPORTED_FROM_ART25 requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.048"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The RAPIDITY_RENORMALIZATION fault mode GAUGE_DEPENDENCE_HIDDEN_IN_RAPIDITY_COUNTERTERM requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.049"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode CONTINUUM_RESULT_COPIED_AS_FINITE_RESULT requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.050"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode FINITE_CONSTANT_FITTED_TO_ART25 requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.051"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode INVERSE_MAP_ABSENT requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.052"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode ROUNDTRIP_FAILURE_HIDDEN requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.053"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode ONE_RESOLUTION_CALLED_CONTINUUM requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.054"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode ARBITRARY_POLYNOMIAL_TRAJECTORY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.055"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The CONTINUUM_CONVERSION fault mode FIRST_OMITTED_ORDER_SET_ZERO requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.056"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ZERO_MODE_ENDPOINTS fault mode ZERO_MODE_CONTROL_IGNORED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.057"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ZERO_MODE_ENDPOINTS fault mode ENDPOINT_MERGED_WITH_CUSP_WITHOUT_IDENTITY requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.058"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ZERO_MODE_ENDPOINTS fault mode TRANSVERSE_JUNCTION_OMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.059"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The ZERO_MODE_ENDPOINTS fault mode ZERO_MODE_SENSITIVITY_CALLED_NUMERICAL_NOISE requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.060"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SOFT_COLLINEAR_INTERFACE fault mode ZERO_BIN_EQUALITY_CLAIMED_FROM_CITATION requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.061"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SOFT_COLLINEAR_INTERFACE fault mode OFFSHELL_IR_ISSUE_IGNORED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.062"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SOFT_COLLINEAR_INTERFACE fault mode DIFFERENT_MEASUREMENTS_ACCEPTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.063"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SOFT_COLLINEAR_INTERFACE fault mode DIFFERENT_B_CONVENTIONS_ACCEPTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.064"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SOFT_COLLINEAR_INTERFACE fault mode COLLINEAR_ONE_LOOP_COEFFICIENT_FABRICATED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.065"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SOFT_COLLINEAR_INTERFACE fault mode SOFT_SECTOR_CALLED_COMPLETE_TMD requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.066"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode MICROSCOPIC_PROTON_TMD_EXPORTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.067"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode TWELVE_POINT_BRIDGE_RERUN requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.068"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode RESIDUAL_CALLED_LIKELIHOOD requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.069"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode P_VALUE_REPORTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.070"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode CALIBRATION_PERFORMED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.071"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode MEMBER_REWEIGHTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.072"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode EMULATOR_TRAINED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.073"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The SCOPE_LEAKAGE fault mode PROCESS_DEUTERON_GLUON_TODD_STATUS_PROMOTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.074"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The INTEGRITY fault mode ART25_MEMBER_USED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.075"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The INTEGRITY fault mode ART25_DATA_OR_CHI2_USED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.076"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The INTEGRITY fault mode RAW_MSHT_FILES_COMMITTED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.077"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The INTEGRITY fault mode PRODUCTION_REGISTRY_CHANGED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.078"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The INTEGRITY fault mode AUTHORITATIVE_ARTIFACT_CHANGED requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.079"
+    },
+    {
+      "coverage_status": "EXECUTED_SEMANTIC_MUTATION_DETECTED",
+      "criterion_satisfied": true,
+      "description": "The INTEGRITY fault mode NONDETERMINISTIC_MANIFEST requires an executed semantic control-state mutation and the catalogued deterministic diagnostic.",
+      "evidence_paths": [
+        "docs/next_level/c34_injection_manifest.json",
+        "src/deuteron_wigner/bridge/s0a/core.py"
+      ],
+      "kind": "NEGATIVE_FAULT_MODE",
+      "requirement_id": "C34.FAULT.080"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

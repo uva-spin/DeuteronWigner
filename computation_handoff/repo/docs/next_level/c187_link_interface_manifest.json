@@ -1,0 +1,90 @@
+{
+  "count": 3,
+  "inserted_as_hamiltonian": false,
+  "root": "91d00f1497b72310c6d1d43b2c24e05968a2cedde05739d9cf7d3b712c734deb",
+  "rows": [
+    {
+      "classes": [
+        "PP",
+        "PQ",
+        "QP",
+        "QQ"
+      ],
+      "coordinate_form": "retained/boundary/gauge-gradient records",
+      "endpoint_support": "C182/C181 boundary-owned",
+      "field_coupling_degree": 2,
+      "future_1PI_owner": "boundary/link component",
+      "holonomy_required": true,
+      "kernel_id": "C182-QGG-LINK-K9",
+      "matrix_status": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "owner_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "path_scheme": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "resolution": "K9",
+      "root": "44684b136c481ef286deef0f533eb2b1ae31647ad2a3e9cb9e59dfcfd2ec1b59",
+      "routes": [
+        "LINK-A source kernel",
+        "LINK-B project-subgauge variation",
+        "LINK-C endpoint support",
+        "LINK-D C181 boundary crosswalk",
+        "LINK-E C130/C175 count-once"
+      ],
+      "source_target": "q<->qgg source/operator interface"
+    },
+    {
+      "classes": [
+        "PP",
+        "PQ",
+        "QP",
+        "QQ"
+      ],
+      "coordinate_form": "retained/boundary/gauge-gradient records",
+      "endpoint_support": "C182/C181 boundary-owned",
+      "field_coupling_degree": 2,
+      "future_1PI_owner": "boundary/link component",
+      "holonomy_required": true,
+      "kernel_id": "C182-QGG-LINK-K11",
+      "matrix_status": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "owner_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "path_scheme": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "resolution": "K11",
+      "root": "385bf2cc74470d61f956f9de47e52a528740780f72781c69cff96d02d7d48054",
+      "routes": [
+        "LINK-A source kernel",
+        "LINK-B project-subgauge variation",
+        "LINK-C endpoint support",
+        "LINK-D C181 boundary crosswalk",
+        "LINK-E C130/C175 count-once"
+      ],
+      "source_target": "q<->qgg source/operator interface"
+    },
+    {
+      "classes": [
+        "PP",
+        "PQ",
+        "QP",
+        "QQ"
+      ],
+      "coordinate_form": "retained/boundary/gauge-gradient records",
+      "endpoint_support": "C182/C181 boundary-owned",
+      "field_coupling_degree": 2,
+      "future_1PI_owner": "boundary/link component",
+      "holonomy_required": true,
+      "kernel_id": "C182-QGG-LINK-K13",
+      "matrix_status": "SOURCE_OPERATOR_INTERFACE_NOT_HAMILTONIAN_BLOCK",
+      "owner_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "path_scheme": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "resolution": "K13",
+      "root": "da21cd2a2c6b486f406cc4f2298d3023b02e0722c67e18c5affd1cecf94087dc",
+      "routes": [
+        "LINK-A source kernel",
+        "LINK-B project-subgauge variation",
+        "LINK-C endpoint support",
+        "LINK-D C181 boundary crosswalk",
+        "LINK-E C130/C175 count-once"
+      ],
+      "source_target": "q<->qgg source/operator interface"
+    }
+  ],
+  "schema": "C187-LINK-INTERFACE-V1",
+  "source_root": "d553fa7747ddb3bdf52a9322acf872b3fb4706827135cb3f5c5cd351f2cfa850"
+}

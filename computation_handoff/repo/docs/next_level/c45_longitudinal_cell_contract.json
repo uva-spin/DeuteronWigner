@@ -1,0 +1,24 @@
+{
+  "absolute_L": "SYMBOLIC_REGULATOR_PARAMETER; it cancels from x and dimensionless overlaps",
+  "c43_conversion": "C45-C43-SQRT2-LONGITUDINAL-MAP-V1",
+  "cell": "-L <= x_C43^- <= L; total length 2L; L remains symbolic",
+  "fermion_boundary": "phi(x^-+2L)=-phi(x^-); k=1/2,3/2,...",
+  "gluon_boundary": "phi(x^-+2L)=+phi(x^-); k=0,1,2,...; k=0 excluded from ordinary dynamical modes",
+  "large_box": "L->infinity at fixed physical p^+; K->infinity resolves x",
+  "measure": "integral_{-L}^{L} dx^-",
+  "mode": "phi_k(x^-)=exp(+i*pi*k*x^-/L)/sqrt(2L)",
+  "momenta": "p_k^+=pi*k/L; P^+=pi*K/L; x=k/K",
+  "one_particle_delta": "integral dx^- phi_k^* phi_l=delta_kl",
+  "source": "0905.1411v1 Eqs. (4)-(6); 1311.2980v1 Eqs. (9),(12)",
+  "source_coordinates": "x_B^-=x^0-x^3=sqrt(2) x_C43^-",
+  "source_length_map": "BPP Eq. (4): L_BPP=sqrt(2)L_C43. For the 1311 Eq. (9) p^+=2pi k/L_1311 notation, L_1311=2 L_BPP=2sqrt(2)L_C43; both give p_C43^+=pi k/L_C43.",
+  "x_min_reconciliation": {
+    "C7_record": "x_min=1/18 is EndpointRegulator.minimum_fraction, not a longitudinal mode-support identity",
+    "decision": "NO_REWRITE_OF_HISTORICAL_C7_ENDPOINT_REGULATOR; C45 labels it separately from x_mode_min",
+    "derived_mode_minimum": {
+      "K11_2_N10_b0.45": "1/11",
+      "K13_2_N12_b0.50": "1/13",
+      "K9_2_N8_b0.40": "1/9"
+    }
+  }
+}

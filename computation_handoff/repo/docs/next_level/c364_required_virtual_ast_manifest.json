@@ -1,0 +1,19 @@
+{
+  "package_root": "5c5fe4dbe99de5944c14d8ff75950e7af4e9306767dbed198197c87dacd42211",
+  "physical": false,
+  "plan": "RIMASSC43JMYCTREDUCE1-C",
+  "record": {
+    "MSbar": "exp(gammaE epsilon)(4pi)^(-epsilon)/epsilon_UV",
+    "count": 5,
+    "parents": [
+      "Sigma_q(k,p): gamma_mu(pslash-kslash)gamma^mu/[k^2(p-k)^2]",
+      "W_v(k): v^2/[k^2(v.k)^2] with self-energy prescription",
+      "W_tildev by oriented crossing",
+      "V_qv(k,p): gamma_mu(pslash-kslash)gamma+ times v^mu/[k^2(p-k)^2(v.k)] with alpha power",
+      "V_htv by plus/minus oriented crossing and beta power"
+    ],
+    "root": "471cc7f6da6e394e8b2c509f6149714e6428a24b7413b9cc665ace3c42c7abde"
+  },
+  "status": "C364_COUNTERTERM_PROJECTOR_AUDITED_BARE_VIRTUAL_PARENT_INTEGRANDS_MISSING",
+  "validation": "BOUND"
+}

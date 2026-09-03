@@ -1,0 +1,54 @@
+{
+  "action": "L=-F^a_{mu nu}F_a^{mu nu}/4 + psibar(i gamma^mu D_mu-m)psi + B^a A_-^a + ghost terms (decoupled at declared scope)",
+  "canonical_action": {
+    "canonical_momenta": {
+      "pi_B": "0",
+      "pi_minus": "F_+-",
+      "pi_perp": "F_-perp",
+      "pi_plus": "0"
+    },
+    "constrained_fields": [
+      "psi_minus",
+      "A_minus=A^+ (fixed to zero)",
+      "A_plus=A^- (Gauss-law dependent)",
+      "B^a multiplier"
+    ],
+    "constraints": [
+      "pi_plus=0",
+      "pi_B=0",
+      "pi_perp-partial_- A_perp+partial_perp A_-=0",
+      "A_-=0",
+      "partial_- pi^-+partial_perp pi^perp-g j^+=0",
+      "pi^-+partial_- A_+=0",
+      "B=0"
+    ],
+    "dynamical_fields": [
+      "psi_plus=Lambda_plus psi",
+      "A_perp^a"
+    ],
+    "fermion_constraint": "i sqrt(2) D_- psi_- = -(i gamma^0 gamma^perp D_perp-m gamma^0) psi_+",
+    "gauge": "G0-LIGHT-FRONT-GAUGE",
+    "gauss_law": "partial_- (partial_- A_+^a-partial_perp A_perp^a)=-g f_abc A_perp^b partial_- A_perp^c+g psibar gamma^+ T^a psi",
+    "ghost_status": "decoupled in this axial/light-front gauge at declared perturbative nonzero-mode scope; global zero modes retained by contract",
+    "interactions": {
+      "canonical_qg": "-g psibar gamma^mu T^a psi A_mu^a",
+      "four_gluon": "g^2 f_abc f_ade A_bmu A_dmu A_cnu A_enu/4",
+      "instantaneous_current": "-g^2/2 [(i partial_-)^-1 j_a^+]^2",
+      "instantaneous_fermion": "-g^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi",
+      "three_gluon": "g f_abc (partial_mu A_nu^a-partial_nu A_mu^a)A_b^mu A_c^nu/2"
+    },
+    "inverse_derivative": {
+      "kernel": "(partial^+)^{-1}(1-P0)f(x^-)=1/2 integral dy^- epsilon(x^- - y^-) (1-P0)f(y^-)",
+      "prescription": "ANTISYMMETRIC_OR_PV",
+      "property": "anti-Hermitian on nonzero-mode domain",
+      "zero_projector": "P0 f=L^-1 integral_{-L/2}^{L/2} dy^- f(y^-)"
+    },
+    "scope": "one external quark; qg intermediate/real state; rank-zero T-even bilocal; terms through O(g^2)",
+    "source": "SB hep-ph/0011372v2, Eqs. (1), (5)-(9), (24)-(25)"
+  },
+  "matrix_generation": "FORBIDDEN_IN_C43",
+  "scope": "one external quark; qg intermediate/real state; rank-zero T-even bilocal; terms through O(g^2)",
+  "source": "SB hep-ph/0011372v2, Eqs. (1), (5)-(9), (24)-(25)",
+  "status": "DERIVED_ACTION_LEVEL",
+  "symbolic_expression_hash": "2200db2b85f5dcb62633f7f84eae30f12304672d47959514e6439d0e4553e4c0"
+}

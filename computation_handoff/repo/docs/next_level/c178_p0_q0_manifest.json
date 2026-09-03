@@ -1,0 +1,29 @@
+{
+  "P0_global_zero_mode": "EXPLICIT",
+  "Q0_antisymmetric_PV_inverse": "UNCHANGED",
+  "endpoint_orthogonality": "NOT_ASSUMED",
+  "root": "eb619920fbc196439206f1293ba7477e2d553b28873c20839b9eaa9b43c4701e",
+  "rows": [
+    {
+      "route": "PQ-A projector",
+      "status": "P0_TRANSITION_Q0_SOURCE_SEPARATE"
+    },
+    {
+      "route": "PQ-B periodic Fourier",
+      "status": "P0 n=0 / Q0 n!=0"
+    },
+    {
+      "route": "PQ-C coordinate",
+      "status": "two cut frames retained"
+    },
+    {
+      "route": "PQ-D project subgauge",
+      "status": "C174 P0 scheme preserved"
+    },
+    {
+      "route": "PQ-E ghost boundary",
+      "status": "C175 bulk orthogonality not promoted to endpoint"
+    }
+  ],
+  "schema": "C178-P0-Q0-V1"
+}

@@ -1,0 +1,126 @@
+{
+  "aggregate": null,
+  "all_unknown_nonzero": true,
+  "assembly_executed": false,
+  "assigned_zero_count": 0,
+  "component_count": 13,
+  "components": {
+    "BASIS_BOUNDARY": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.15.BASIS_BOUNDARY",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "CONJUGATE_LINE_EXCHANGE": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.02.CONJUGATE_LINE_EXCHANGE",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "CUSP_ENDPOINT": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.07.CUSP_ENDPOINT",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "GAUGE_FIXING": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.12.GAUGE_FIXING",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "GHOST": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.13.GHOST",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "LIGHT_FRONT_INSTANTANEOUS": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.11.LIGHT_FRONT_INSTANTANEOUS",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "N_NBAR_EXCHANGE": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.01.N_NBAR_EXCHANGE",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "REAL_ONE_SOFT_GLUON": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.04.REAL_ONE_SOFT_GLUON",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "SAME_DIRECTION_LINE_EXCHANGE": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.03.SAME_DIRECTION_LINE_EXCHANGE",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "SOFT_VACUUM_ENERGY": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.10.SOFT_VACUUM_ENERGY",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "TRANSVERSE_CLOSURE": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.08.TRANSVERSE_CLOSURE",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "VIRTUAL_ONE_SOFT_GLUON": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.05.VIRTUAL_ONE_SOFT_GLUON",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    },
+    "WILSON_LINE_SELF_ENERGY": {
+      "assembly_role": "DIRECT_BARE_OPERATOR_TERM",
+      "contribution_id": "C34.SOFT.06.WILSON_LINE_SELF_ENERGY",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    }
+  },
+  "content_hash": "531452b12f43751fe2fc49d241f5fdb8b99d7eece66501bf2ffb8c44142772b0",
+  "counterterms_are_separate_derived_objects": true,
+  "excluded_alternative_ids": [
+    "C34.SOFT.09.AUXILIARY_FIELD_SELF_ENERGY"
+  ],
+  "excluded_counterterm_ids": [
+    "C34.SOFT.16.RAPIDITY_COUNTERTERM",
+    "C34.SOFT.17.UV_COUNTERTERM",
+    "C34.SOFT.18.RESIDUAL_LINE_MASS_COUNTERTERM"
+  ],
+  "included_component_ids": [
+    "C34.SOFT.01.N_NBAR_EXCHANGE",
+    "C34.SOFT.02.CONJUGATE_LINE_EXCHANGE",
+    "C34.SOFT.03.SAME_DIRECTION_LINE_EXCHANGE",
+    "C34.SOFT.04.REAL_ONE_SOFT_GLUON",
+    "C34.SOFT.05.VIRTUAL_ONE_SOFT_GLUON",
+    "C34.SOFT.06.WILSON_LINE_SELF_ENERGY",
+    "C34.SOFT.07.CUSP_ENDPOINT",
+    "C34.SOFT.08.TRANSVERSE_CLOSURE",
+    "C34.SOFT.10.SOFT_VACUUM_ENERGY",
+    "C34.SOFT.11.LIGHT_FRONT_INSTANTANEOUS",
+    "C34.SOFT.12.GAUGE_FIXING",
+    "C34.SOFT.13.GHOST",
+    "C34.SOFT.15.BASIS_BOUNDARY"
+  ],
+  "merged": false,
+  "schema_version": "1.0.0",
+  "separate_control_ids": [
+    "C34.SOFT.14.ZERO_MODE"
+  ],
+  "separate_controls": {
+    "ZERO_MODE": {
+      "assembly_decision": "UNRESOLVED_BLOCKING",
+      "contribution_id": "C34.SOFT.14.ZERO_MODE",
+      "status": "NONZERO_UNKNOWN",
+      "value": null
+    }
+  },
+  "status": "C34_SOFT_ONE_LOOP_INCOMPLETE"
+}

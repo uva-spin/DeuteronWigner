@@ -1,0 +1,93 @@
+{
+  "schema": "C204-MISSING-VALIDATION-V1",
+  "artifact": "missing_validation",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 missing_validation is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-MISSING-V1",
+    "rows": [
+      {
+        "object_id": "C197-ST-6",
+        "exact_missing_object": "endpoint ghost/link identities",
+        "aliases": [
+          "endpoint ghost/link identities",
+          "ENDPOINT_GHOST_LINK_IDENTITY"
+        ],
+        "status": "C204_REPLACED",
+        "request_id": null,
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-7",
+        "exact_missing_object": "global zero-mode/gauge-volume treatment",
+        "aliases": [
+          "global zero-mode/gauge-volume treatment",
+          "GLOBAL_GAUGE_VOLUME_IDENTITY"
+        ],
+        "status": "PRESERVED_FRONTIER",
+        "request_id": null,
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-8",
+        "exact_missing_object": "ST-compatible counterterm solution",
+        "aliases": [
+          "ST-compatible counterterm solution",
+          "ST_COMPATIBLE_COUNTERTERM_SOLUTION"
+        ],
+        "status": "PRESERVED_FRONTIER",
+        "request_id": null,
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-9",
+        "exact_missing_object": "target MOMq renormalization conditions",
+        "aliases": [
+          "target MOMq renormalization conditions",
+          "TARGET_RENORMALIZATION_CONDITION"
+        ],
+        "status": "PRESERVED_FRONTIER",
+        "request_id": null,
+        "not_zero": true
+      },
+      {
+        "object_id": "C197-ST-10",
+        "exact_missing_object": "physical input",
+        "aliases": [
+          "physical input",
+          "PHYSICAL_INPUT_CONDITION"
+        ],
+        "status": "PRESERVED_FRONTIER",
+        "request_id": null,
+        "not_zero": true
+      }
+    ],
+    "count": 5,
+    "remaining": [
+      "C197-ST-7",
+      "C197-ST-8",
+      "C197-ST-9",
+      "C197-ST-10"
+    ],
+    "root": "ca5134bb55dad68288a11c8413028b0d91de1238eb22b2761c73b987c08871f4"
+  }
+}

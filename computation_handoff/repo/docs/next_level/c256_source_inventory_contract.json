@@ -1,0 +1,57 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "source_inventory_contract",
+  "authority_record": {
+    "authenticated_operator_sources": 3,
+    "broad_substitution": false,
+    "candidates": 5,
+    "qualified_target_sources": 0,
+    "root": "c8f3e2a6325ec8561b8ad0e16d8f24e1980aa3c07983bb8c7d453f009d91093b",
+    "rows": [
+      {
+        "accepted": true,
+        "owner": "C117",
+        "role": "four graph-specific directions",
+        "target_capsule": false
+      },
+      {
+        "accepted": true,
+        "owner": "C127",
+        "role": "instantaneous-current operator and retained block",
+        "target_capsule": false
+      },
+      {
+        "accepted": false,
+        "owner": "C150-C158",
+        "reason": "quantity ownership mismatch",
+        "role": "standard two-point/vertex/coupling matching quantities",
+        "target_capsule": false
+      },
+      {
+        "accepted": true,
+        "owner": "C168",
+        "reason": "ledger/request only; no observable condition",
+        "role": "instantaneous-current contribution class in RI/SMOM adapter request",
+        "target_capsule": false
+      },
+      {
+        "accepted": false,
+        "owner": "repository authenticated sources",
+        "reason": "no exact locator/hash record present",
+        "role": "current-specific observable/projector/scheme/scale/regulator condition",
+        "target_capsule": false
+      }
+    ]
+  },
+  "directions_covered": 0,
+  "package_root": "bc07fbd295317cb19ab421b5e1cda48c93ba17d9af3a74a6a84e6e709b8180ee",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CURRENTSOURCE1-D",
+  "qualified_targets": 0,
+  "schema": "C256-SOURCE-INVENTORY-CONTRACT-V1",
+  "status": "C256_CURRENT_TARGET_SOURCE_SCHEMA_READY_AUTHENTICATED_TARGET_CAPSULE_UNAVAILABLE"
+}

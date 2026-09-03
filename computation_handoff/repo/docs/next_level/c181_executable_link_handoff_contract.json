@@ -1,0 +1,31 @@
+{
+  "Wilson_coefficients": false,
+  "boundary_field_coefficients": false,
+  "ghost_link_kernels": false,
+  "physical_endpoint_values": false,
+  "remaining_interfaces": [
+    "executable endpoint evaluation",
+    "ordered adjoint Wilson degrees 0-2",
+    "ghost-link interface",
+    "source-scope remainder"
+  ],
+  "root": "f82cc160d06f4c114b3412828d868c28c09639732a558d3756a708812c108ad0",
+  "roots": {
+    "C177": "f65edb938e355b72e4bc950a1a20f84220ac18c6f980dae6005cb531f1614f90",
+    "C178": "4a8768a8fa12406b99370fffe26886c149ba0acdc8ae3c7a843900a0504dd38b",
+    "C179": "7cc1089eb36fffac5240666b7e6b03bf5bf3feca6a422c6644689f218fa836d2",
+    "C180": "c3e6a56ebfeafa523e65efaa972a3a570e2f1c3847d8baf894dfb3c22ead4dd2",
+    "boundary_mode": "03691f16daa0ce732b6b3e3eb91aadaa652bb99346a48a4b41e77aaa2352be4a",
+    "degree1": "4cd5ce1110586192f4383ee57ea22053e30fbe1015784cb26a164c68ce6d7cf5",
+    "divergence": "43d338e9665a75537aa6901bf0338a1043160a756a9b57f09d3b533c03309c27",
+    "leakage": "4a994f258410024fb3c4ba2d63ead418b537270b18435655c950622863fdad83",
+    "linearized": "6189f16eb7cc5699c5fe367ce90ac6a07c7cea703bba613e236ccadf7317de7b",
+    "mixed_degree2": "7ac6545e96b777d5c2afae1ed8899e6dcf794810761403d959ce5e6dd9adce8a",
+    "mixed_pair": "e16ba6413affabb0361ad47c21b74fcbc2b5a0e494850d4b2da168b2ab67581e",
+    "order_sensitive": "345e58818157e9e42a8d799b9b53559a57f6ee1fd352f9024a8ad86928a6782f",
+    "program": "3874b13c67a59d3da8ca0edbb32b2ff7d3eb47311723b4206a622848c67f5d0c",
+    "pullback": "72dc945fd4d20779497ec062f0f82707f6aa7d46e123b99abcc86c431c25581f",
+    "symmetric": "043784ac856447ccf55caceef4f017a921b2678b2af438924def156dc7acecdc"
+  },
+  "schema": "C181-EXECUTABLE-LINK-HANDOFF-V1"
+}

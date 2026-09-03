@@ -1,0 +1,118 @@
+{
+  "C78_freeze": {
+    "public_api_only": true,
+    "resolutions": {
+      "K11_2_N10_b0.45": {
+        "kernel_coordinates": 165991250,
+        "payload_hash": "32679ddd0eeb9871cbe7dfef7d12ddf3c8450700cb98ed58260d9897230627c1",
+        "support_status": "FROZEN_SYMBOLIC_COORDINATES_ONLY",
+        "supported_pairs": 43350
+      },
+      "K13_2_N12_b0.50": {
+        "kernel_coordinates": 697394304,
+        "payload_hash": "8a171c425c4179633ae057f6a1ea6b9d8f793556679fd1e548445105fdc84ed5",
+        "support_status": "FROZEN_SYMBOLIC_COORDINATES_ONLY",
+        "supported_pairs": 95256
+      },
+      "K9_2_N8_b0.40": {
+        "kernel_coordinates": 28606464,
+        "payload_hash": "2e90b304a4e6c97e0ce1a5ce3f25f1c81a32ba9b6722c1b5be455df6854bf7b4",
+        "support_status": "FROZEN_SYMBOLIC_COORDINATES_ONLY",
+        "supported_pairs": 16224
+      }
+    },
+    "status": "C78_SOURCE_DERIVED_IFERM_CONTACT_SUPPORT_READY"
+  },
+  "baseline": "1ddf21c230d3a16ee7e52ed09d84140f43781bb8",
+  "blocked_coordinate_domains": {
+    "K11_2_N10_b0.45": 165991250,
+    "K13_2_N12_b0.50": 697394304,
+    "K9_2_N8_b0.40": 28606464
+  },
+  "blocker": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT",
+  "inventory": [
+    {
+      "capability": "C43/C55 W3 operator coefficient and ordering",
+      "classification": "EXECUTABLE_SYMBOLIC_OBJECT",
+      "evidence": "C43 action contract + C55 two-route symbolic derivation",
+      "status": "PRESENT"
+    },
+    {
+      "capability": "direct inverse-partial-plus routing",
+      "classification": "EXECUTABLE_SYMBOLIC_OBJECT",
+      "evidence": "C55 direct b\u2020a\u2020ab route p_q^+ + k_g^+; Q0/PV policy",
+      "status": "PRESENT"
+    },
+    {
+      "capability": "C78 physical support/witness/kernel-coordinate domain",
+      "classification": "STRUCTURAL_METADATA_ONLY",
+      "evidence": "immutable public C78 API explicitly returns numerical_value=NOT_EVALUATED",
+      "status": "PRESENT_NO_VALUES"
+    },
+    {
+      "capability": "C45 one-particle modes and two-mode basis adapters",
+      "classification": "EXECUTABLE_NUMERICAL_OBJECT",
+      "evidence": "mode library; no W3 four-field assembly",
+      "status": "PRESENT_NONCONTACT_PRIMITIVES"
+    },
+    {
+      "capability": "C50 finite-box canonical vertex",
+      "classification": "EXECUTABLE_NUMERICAL_OBJECT",
+      "evidence": "signature (*, kq: 'Fraction', kg: 'Fraction', K: 'Fraction', qrel: 'tuple[float, float]', mass: 'float', h_out: 'int', h_in: 'int', h_g: 'int', coupling: 'float' = 1.0, total_pplus: 'float' = 3.0) -> 'dict[str, Any]'; three-mode q\u2192qg b\u2020a\u2020b kernel only",
+      "status": "PRESENT_BUT_INCOMPATIBLE"
+    },
+    {
+      "capability": "normal-ordered four-mode plane-wave b\u2020a\u2020ab coefficient",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "no source-derived finite-cell field-expansion contraction implemented",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    },
+    {
+      "capability": "operator-specific local four-HO contact integral",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "C45 overlap primitives are not assembled with W3 momentum/spin/color routing",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    },
+    {
+      "capability": "C77/C78 projected four-mode kernel-coordinate evaluator",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "C78 coordinate KAPPA is symbolic by design; no value API exists",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    },
+    {
+      "capability": "bare direct-contact sparse matrix and independent action",
+      "classification": "ABSENT_BLOCKING",
+      "evidence": "requires all three missing operator-specific objects",
+      "status": "C79.DIRECT_W3.FOUR_MODE_FINITE_CELL_PROJECTION_CONTRACT"
+    }
+  ],
+  "matrix_free_status": "NOT_CONSTRUCTED",
+  "matrix_status": "NOT_CONSTRUCTED",
+  "next": "C80/IFKERNEL2 \u2014 derive and validate the source-normalized finite-cell four-mode b\u2020 a\u2020 a b direct-contact kernel before evaluating any C78 coordinate",
+  "operator_routes": {
+    "coefficient_routes_agree": true,
+    "constrained_fermion_route": "-g_s^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi",
+    "coupling": "g_s^2 explicitly factored; no physical value selected",
+    "coupling_convention_map": "C43 g -> C55 g_s",
+    "inverse_derivative": {
+      "denominator": "1/(p_q^+ + k_g^+)",
+      "monomial": "bdagger a_dagger a b",
+      "right_product_mode": "p_q+k_g",
+      "zero_status": "NONZERO_BY_POSITIVITY"
+    },
+    "operator_hash": "9bb57c27815b80330050938661b558ee784b500b4ff00725f66057e416dbc3e8",
+    "operator_status": "SOURCE_DERIVED_SYMBOLIC_ONLY",
+    "source_transcription": "-g^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi"
+  },
+  "prohibited_substitutions": [
+    "C50 three-mode q-to-qg vertex",
+    "C53 physical vertex values or propagators",
+    "C58 self-induced-inertia primitive",
+    "post-hoc Hermitian symmetrization",
+    "fitted finite-cell normalization",
+    "physical coupling or counterterm coefficient"
+  ],
+  "reason": "A direct W3 contact has two gluon fields. The only finite-cell interaction evaluator is C50's one-gluon canonical vertex, so using it would replace the requested local contact with a different operator and cannot establish the four-mode measure, spin/polarization contraction, ordered color product, or four-HO integral.",
+  "schema": "C79-IFCONTACT2-NOGO-V1",
+  "status": "C79_IFCONTACT_KERNEL_EVALUATION_INCOMPLETE"
+}

@@ -1,0 +1,35 @@
+{
+  "content_hash": "296fe828ff1bf8b706fd40864ea62c08004a3cd530625bd6fb5b7e9701e8f8d2",
+  "delta_holdouts_are_independent_one_axis_at_a_time": true,
+  "holdout_regulators": {
+    "b": {
+      "b_GeV_inverse": 1.0
+    },
+    "combined_diagonal_delta_holdout": null,
+    "delta_minus": {
+      "delta_minus_GeV": 0.00075,
+      "delta_plus_GeV": 0.002,
+      "fixed_axis": "DELTA_PLUS",
+      "probe_id": "C34.DELTA.MINUS.HOLDOUT",
+      "role": "HOLDOUT",
+      "varied_axis": "DELTA_MINUS"
+    },
+    "delta_plus": {
+      "delta_minus_GeV": 0.003,
+      "delta_plus_GeV": 0.0005,
+      "fixed_axis": "DELTA_MINUS",
+      "probe_id": "C34.DELTA.PLUS.HOLDOUT",
+      "role": "HOLDOUT",
+      "varied_axis": "DELTA_PLUS"
+    },
+    "gauge": {
+      "xi_g": 2.0
+    }
+  },
+  "holdout_resolution": "C33.RES.3",
+  "one_loop_value": null,
+  "residual": null,
+  "schema_version": "1.0.0",
+  "status": "PRESERVED_UNEVALUATED",
+  "used_in_fit": false
+}

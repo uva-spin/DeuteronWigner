@@ -1,0 +1,28 @@
+{
+  "dimensions": {
+    "boundary": {
+      "K11": 20,
+      "K13": 24,
+      "K9": 16
+    },
+    "gauge_scalar": {
+      "K11": 55,
+      "K13": 78,
+      "K9": 36
+    },
+    "retained": {
+      "K11": 110,
+      "K13": 156,
+      "K9": 72
+    }
+  },
+  "forms": [
+    "RETAINED_VECTOR_FIELD_COORDINATES",
+    "RETAINED_PLUS_BOUNDARY_FIELD_COORDINATES",
+    "GAUGE_GRADIENT_PULLBACK_COORDINATES"
+  ],
+  "gauge_gradient_is_physical_field": false,
+  "inference_boundary_from_retained": false,
+  "root": "1ee857afda66407551bf236d3d910ff375ef9d5f83df80927d163ea9260b4d6b",
+  "schema": "C182-COORDINATE-LAYERS-V1"
+}

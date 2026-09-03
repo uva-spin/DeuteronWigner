@@ -1,0 +1,29 @@
+{
+  "schema": "C209-NEXT-HANDOFF-CONTRACT-V1",
+  "artifact": "next_handoff_contract",
+  "package_root": "fb0abd5750ea3684ad44fc05512dbd4e0765c0da5e721bdc51da4735326d9654",
+  "status": "C209_C208_CERTIFIED_RESOLUTION_LOCAL_MOMQ_WAVEPACKET_LIMIT_ADAPTER_READY_NO_EXACT_FINITE_POINT",
+  "plan": "MOMQMAP1-B",
+  "physical": false,
+  "exact_finite_point": false,
+  "resolution_average": false,
+  "continuum_extrapolation": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "C208 authenticated MOMq definition",
+    "C140 finite-domain mismatch"
+  ],
+  "authority_record": {
+    "next": "C210/HQCDMOMQCOND2",
+    "next_object": "C197-ST-9",
+    "next_exact_object": "executable target MOMq condition over certified resolution-local adapter",
+    "adapter_root": "549fc4f56cfcd52f36abffde7161e75c280f0c35d445bb693e90feed7c8b6fc2",
+    "projector_root": "bfcec315877d55ebd67b44c9f009861101acfc463d2b25f65133ba0813ed1f7f",
+    "root": "f90e9ee58519f3ff37e8b677c0389b4ab605194d46d9086c814d23a980b184cd"
+  }
+}

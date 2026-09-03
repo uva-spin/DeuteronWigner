@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PennyLanePhysicalActivationGate",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "NOT_READY",
+        "READY_TO_RUN_ACTIVATION",
+        "ACTIVE"
+      ]
+    },
+    "source_side_frontier_closed_or_exact_na": {
+      "type": "boolean"
+    },
+    "counterterm_null_hamiltonian_directions_fixed_or_irrelevant": {
+      "type": "boolean"
+    },
+    "finite_basis_standard_matching_ready": {
+      "type": "boolean"
+    },
+    "running_threshold_transport_ready": {
+      "type": "boolean"
+    },
+    "authenticated_physical_inputs_ready": {
+      "type": "boolean"
+    },
+    "renormalized_k9_hamiltonian_ready": {
+      "type": "boolean"
+    },
+    "renormalized_k11_holdout_ready": {
+      "type": "boolean"
+    },
+    "renormalized_k13_holdout_ready": {
+      "type": "boolean"
+    },
+    "hermiticity_units_ownership_pass": {
+      "type": "boolean"
+    },
+    "gauge_brst_count_once_pass": {
+      "type": "boolean"
+    },
+    "leakage_resolution_holdouts_pass": {
+      "type": "boolean"
+    },
+    "q0_q1_q2_roots_verified": {
+      "type": "boolean"
+    },
+    "quantum_interface_compatibility_pass": {
+      "type": "boolean"
+    },
+    "exact_activation_continuation_present": {
+      "type": "boolean"
+    },
+    "activation_worker_passed": {
+      "type": "boolean"
+    },
+    "physical_hamiltonian_import_pass": {
+      "type": "boolean"
+    },
+    "encoding_resource_checks_pass": {
+      "type": "boolean"
+    },
+    "state_or_eigensolver_acceptance_pass": {
+      "type": "boolean"
+    },
+    "observable_parity_pass": {
+      "type": "boolean"
+    },
+    "leakage_pass": {
+      "type": "boolean"
+    },
+    "derivative_checks_pass": {
+      "type": "boolean"
+    },
+    "k11_k13_quantum_holdouts_pass": {
+      "type": "boolean"
+    },
+    "no_production_qubitunitary": {
+      "type": "boolean"
+    },
+    "acceptance_manifest_path": {
+      "type": "string"
+    },
+    "acceptance_manifest_sha256": {
+      "type": "string"
+    },
+    "unresolved_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "state",
+    "source_side_frontier_closed_or_exact_na",
+    "counterterm_null_hamiltonian_directions_fixed_or_irrelevant",
+    "finite_basis_standard_matching_ready",
+    "running_threshold_transport_ready",
+    "authenticated_physical_inputs_ready",
+    "renormalized_k9_hamiltonian_ready",
+    "renormalized_k11_holdout_ready",
+    "renormalized_k13_holdout_ready",
+    "hermiticity_units_ownership_pass",
+    "gauge_brst_count_once_pass",
+    "leakage_resolution_holdouts_pass",
+    "q0_q1_q2_roots_verified",
+    "quantum_interface_compatibility_pass",
+    "exact_activation_continuation_present",
+    "activation_worker_passed",
+    "physical_hamiltonian_import_pass",
+    "encoding_resource_checks_pass",
+    "state_or_eigensolver_acceptance_pass",
+    "observable_parity_pass",
+    "leakage_pass",
+    "derivative_checks_pass",
+    "k11_k13_quantum_holdouts_pass",
+    "no_production_qubitunitary",
+    "acceptance_manifest_path",
+    "acceptance_manifest_sha256",
+    "unresolved_blockers",
+    "evidence_paths"
+  ]
+}

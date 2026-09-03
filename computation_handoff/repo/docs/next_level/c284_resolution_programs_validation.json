@@ -1,0 +1,77 @@
+{
+  "authority_record": {
+    "callbacks": false,
+    "eval": false,
+    "pickle": false,
+    "root": "9f6da1c175469d8f1d689b02b3a0e4163f8c9049564716c37f91bb52f5b34b62",
+    "rows": [
+      {
+        "executable_subset": true,
+        "full_executable": false,
+        "resolution": "K9",
+        "safe_opcodes": [
+          "LOAD_CALLER_STATE",
+          "LOAD_RETAINED_LOOP",
+          "LOAD_V1_COMPLEMENT",
+          "LOAD_C112_CONTACT",
+          "LOAD_C127_CURRENT",
+          "LOAD_Q0_PV",
+          "LOAD_P0_INTERFACE",
+          "LOAD_HO_BOUNDARY",
+          "LOAD_RESIDUAL_LINK_GEOMETRY",
+          "APPLY_C149_MASS_PROJECTOR",
+          "ATTACH_SYMBOLIC_COUNTERTERMS",
+          "RETURN_PARTIAL_ENCLOSURE"
+        ],
+        "terminal": "RESIDUAL_LINK_PATH_ENDPOINT_GEOMETRY_MISSING"
+      },
+      {
+        "executable_subset": true,
+        "full_executable": false,
+        "resolution": "K11",
+        "safe_opcodes": [
+          "LOAD_CALLER_STATE",
+          "LOAD_RETAINED_LOOP",
+          "LOAD_V1_COMPLEMENT",
+          "LOAD_C112_CONTACT",
+          "LOAD_C127_CURRENT",
+          "LOAD_Q0_PV",
+          "LOAD_P0_INTERFACE",
+          "LOAD_HO_BOUNDARY",
+          "LOAD_RESIDUAL_LINK_GEOMETRY",
+          "APPLY_C149_MASS_PROJECTOR",
+          "ATTACH_SYMBOLIC_COUNTERTERMS",
+          "RETURN_PARTIAL_ENCLOSURE"
+        ],
+        "terminal": "RESIDUAL_LINK_PATH_ENDPOINT_GEOMETRY_MISSING"
+      },
+      {
+        "executable_subset": true,
+        "full_executable": false,
+        "resolution": "K13",
+        "safe_opcodes": [
+          "LOAD_CALLER_STATE",
+          "LOAD_RETAINED_LOOP",
+          "LOAD_V1_COMPLEMENT",
+          "LOAD_C112_CONTACT",
+          "LOAD_C127_CURRENT",
+          "LOAD_Q0_PV",
+          "LOAD_P0_INTERFACE",
+          "LOAD_HO_BOUNDARY",
+          "LOAD_RESIDUAL_LINK_GEOMETRY",
+          "APPLY_C149_MASS_PROJECTOR",
+          "ATTACH_SYMBOLIC_COUNTERTERMS",
+          "RETURN_PARTIAL_ENCLOSURE"
+        ],
+        "terminal": "RESIDUAL_LINK_PATH_ENDPOINT_GEOMETRY_MISSING"
+      }
+    ],
+    "schema": "PROJECT_C284_C43_MASS_LF_LOOP_V1"
+  },
+  "package_root": "e8ff64d3f1cd8cd954d685e92b7a753f461a919ed2bfb0ac0abc5532825d309b",
+  "physical": false,
+  "plan": "RIMASSLFLOOP1-B",
+  "schema": "C284-RESOLUTION_PROGRAMS-VALIDATION-V1",
+  "status": "C284_C43_MASS_LOOP_MAXIMAL_KERNEL_PARTITION_READY_RESIDUAL_LINK_ENDPOINT_GEOMETRY_MISSING",
+  "validation": "PASS"
+}

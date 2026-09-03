@@ -1,0 +1,44 @@
+{
+  "collinear_ff_called_tmdff": false,
+  "records": [
+    {
+      "blocker": "OFFICIAL_MACHINE_READABLE_SET_NOT_INGESTED",
+      "hadron": "PI_CHARGED",
+      "kind": "COLLINEAR_FF",
+      "member_count_ingested": 0,
+      "source": "arXiv:2105.08725",
+      "stable_id": "C24.FF.MAPFF10",
+      "status": "SOURCE_INTERFACE_ONLY"
+    },
+    {
+      "blocker": "OFFICIAL_MEMBER_BUNDLE_NOT_INGESTED",
+      "hadron": "PI_K_CHARGED",
+      "kind": "COLLINEAR_FF",
+      "member_count_ingested": 0,
+      "source": "arXiv:2204.10331",
+      "stable_id": "C24.FF.HKKS22",
+      "status": "SOURCE_INTERFACE_ONLY"
+    },
+    {
+      "blocker": "LHAPDF_REPLICA_SET_NOT_LOCATED_IN_INSTALLED_INDEX",
+      "hadron": "PI_K_CHARGED",
+      "kind": "COLLINEAR_FF",
+      "member_count_ingested": 0,
+      "source": "arXiv:2606.16754",
+      "stable_id": "C24.FF.HAPS",
+      "status": "SOURCE_INTERFACE_ONLY"
+    },
+    {
+      "blocker": "ART25_CONSTANTS_AND_REPLICA_FILES_ABSENT_FROM_ARCHIVE",
+      "hadron": "PI_K_CHARGED",
+      "kind": "TMDFF",
+      "member_count_declared": 500,
+      "member_count_ingested": 0,
+      "source": "ARTEMIDE_3.01_ART25",
+      "stable_id": "C24.TMDFF.ART25",
+      "status": "UNAVAILABLE"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_qualified_tmdff_bundles": 0
+}

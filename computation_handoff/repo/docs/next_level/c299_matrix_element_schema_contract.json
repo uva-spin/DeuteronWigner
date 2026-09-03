@@ -1,0 +1,60 @@
+{
+  "authority_record": {
+    "channel_count": 6,
+    "count": 3,
+    "root": "bec2fab274c58f1a46fd0229fcaa55aae0aea78b19e495196ec1e652a510afc7",
+    "rows": [
+      {
+        "Q_resolvent": "C298",
+        "channels": [
+          "1J2",
+          "2J1",
+          "4J5",
+          "5J4",
+          "6J7",
+          "7J6"
+        ],
+        "covariance_block": "6x6 plus cross-K blocks required",
+        "resolution": "K9",
+        "state_normalization": "C274 authenticated eigenstate required",
+        "values": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "Q_resolvent": "C298",
+        "channels": [
+          "1J2",
+          "2J1",
+          "4J5",
+          "5J4",
+          "6J7",
+          "7J6"
+        ],
+        "covariance_block": "6x6 plus cross-K blocks required",
+        "resolution": "K11",
+        "state_normalization": "C274 authenticated eigenstate required",
+        "values": "UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "Q_resolvent": "C298",
+        "channels": [
+          "1J2",
+          "2J1",
+          "4J5",
+          "5J4",
+          "6J7",
+          "7J6"
+        ],
+        "covariance_block": "6x6 plus cross-K blocks required",
+        "resolution": "K13",
+        "state_normalization": "C274 authenticated eigenstate required",
+        "values": "UNAVAILABLE_NOT_ZERO"
+      }
+    ]
+  },
+  "package_root": "dadda4afd8ee8e1b1281b266e9fc6e768ebec2c5811bd86b01bf53e1577a5a6d",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINTINPUT1-C",
+  "schema": "C299-MATRIX_ELEMENT_SCHEMA-CONTRACT-V1",
+  "status": "C299_ADJOINT_SCALAR_INPUT_SCHEMA_AND_QUARK_MASS_NON_EQUIVALENCE_BOUND_GAUGE_ST_MASS_IDENTITY_MISSING",
+  "validation": "BOUND"
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "C101-IFEQUIV9-EXPANSION-PROOF-PUBLIC-CHECKER-BLOCKER-V1",
+  "baseline": "046244b6092c7f85e140fc5ea11c1a15a43b2577",
+  "import_contract": {
+    "path": "docs/next_level/c100_c101_ifequiv9_import_contract.json",
+    "sha256": "ba526b1466ccaee9b320e426234d1388b2ab2c8ff9b59f6c79678d58607fba77"
+  },
+  "historical_access_permitted": {
+    "C98": [
+      "historical_pair_normal_form(pair_id, resolution)",
+      "historical_pair_proof_inputs(pair_id, resolution)",
+      "historical_primitive_record(family_id, record_id)"
+    ],
+    "C100": [
+      "historical_primitive_domain_manifest()",
+      "historical_primitive_record_page(family_id=None, cursor=None, limit=...)"
+    ]
+  },
+  "implemented_descendant_before_historical_access": {
+    "schema": "C101-DESCENDANT-HISTORICAL-BLIND-FREEZE-V1",
+    "root": "da1f001743231fe4521dc9d57e4a500ea9d735d9bbe1ffa77b18e75457e2ba61",
+    "historical_imports": false,
+    "historical_expected_values": false,
+    "pairs": 154830,
+    "logical_records": 891992018,
+    "resolution_pairs": {"K9_2_N8_b0.40": 16224, "K11_2_N10_b0.45": 43350, "K13_2_N12_b0.50": 95256},
+    "resolution_logical_records": {"K9_2_N8_b0.40": 28606464, "K11_2_N10_b0.45": 165991250, "K13_2_N12_b0.50": 697394304}
+  },
+  "completed_historical_public_inputs": {
+    "primitive_families": 5,
+    "primitive_records": 35,
+    "C100_page_to_C98_direct_content_mismatches": 0,
+    "primitive_domain_root": "d36bb01e6742f2669fc660a429b99454d2835e52b76017389766d1ddebcbc809"
+  },
+  "missing_public_object": {
+    "required": "unchanged public factorized-semantic theorem/checker callable",
+    "attempted_expression": "deuteron_wigner.bridge.ifhistpublic2.verify_factorized_expansion_equivalence",
+    "actual_exception": "AttributeError: module 'deuteron_wigner.bridge.ifhistpublic2' has no attribute 'verify_factorized_expansion_equivalence'",
+    "public_C98_exports": ["historical_pair_normal_form", "historical_pair_proof_inputs", "historical_primitive_record"],
+    "proof_input_contains": ["theorem/checker-compatible schemas and identities"],
+    "proof_input_does_not_contain": ["callable checker implementation", "authenticated checker specification sufficient for an independent implementation"]
+  },
+  "forbidden_workaround": {
+    "private_C94_checker": "would violate the instruction to consume historical science only through C98/C100 public APIs",
+    "new_C101_checker": "would not be the unchanged public checker required for a theorem certificate",
+    "boolean_canonical_equality": "would not satisfy the required public factorized-semantic theorem application"
+  },
+  "scientific_consequence": "The 154830 required theorem proof executions and their FACTORIZED_SEMANTIC_EQUIVALENCE_CERTIFICATE_ROOT values cannot be formed. No complete scientific equivalence decision can be reached under the authorized public interface.",
+  "status": "C101_IFEQUIV9_EXPANSION_PROOF_INCOMPLETE",
+  "scientific_equivalence_decision": "NOT_ISSUED",
+  "historical_or_descendant_scientific_mismatch_claimed": false,
+  "narrow_next_branch": "C102 must expose the unchanged authenticated factorized-semantic theorem/checker through a public C98/C100 descendant interface; it must not rebuild historical science or alter either side.",
+  "sha256": "fad2106265ce1ea8b54228ed89e5b04159ef25eedbeeb01b7b5faeab5cfb4ff4"
+}

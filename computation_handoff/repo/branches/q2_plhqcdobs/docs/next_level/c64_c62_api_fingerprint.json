@@ -1,0 +1,42 @@
+{
+  "aggregate_sha256": "78f163beb5fb3a919d0e2917c34392f421dcf308137fd1f2c4bc76d724b02326",
+  "records": [
+    {
+      "name": "polar_to_circular_state",
+      "signature": "(n: 'int', m: 'int') -> 'dict[str, Any]'",
+      "source_sha256": "61e67199ddb9bdaea707985d25803670dc3a08d55ee59fe6888a3073c1d48c92"
+    },
+    {
+      "name": "polar_product_shell",
+      "signature": "(total: 'int') -> 'list[tuple[int, int, int, int]]'",
+      "source_sha256": "3d54383e7b85535ef960b78b9b1f365578583b2288b9d695dc663d6482b39f26"
+    },
+    {
+      "name": "one_dimensional_tm_bracket",
+      "signature": "(q: 'int', g: 'int', rel: 'int', cm: 'int', xq: 'Fraction') -> 'ExactCoefficient'",
+      "source_sha256": "4312e08b9a00dab7b69e08d87f7b1823c5ddc905d323a5e15211b0db5db724bc"
+    },
+    {
+      "name": "polar_tm_coefficient",
+      "signature": "(out: 'tuple[int, int, int, int]', inn: 'tuple[int, int, int, int]', xq: 'Fraction') -> 'ExactCoefficient'",
+      "source_sha256": "e9740472dec5b9b4d5e289c88ab2d82660a43cb04f32eec1c8c972197926989a"
+    },
+    {
+      "name": "exact_tm_block",
+      "signature": "(xnum: 'int', xden: 'int', total: 'int') -> 'dict[str, Any]'",
+      "source_sha256": "7c72ba82a5fef610cf528dd189420aa32c3354f3a66696cb0859f0efe7385858"
+    },
+    {
+      "name": "residue_reconciliation",
+      "signature": "() -> 'dict[str, Any]'",
+      "source_sha256": "126364f8a18f8945e93cec17bde7f81e775306ebf9ffb21e765234eb47a6b756"
+    },
+    {
+      "name": "build",
+      "signature": "() -> 'dict[str, Any]'",
+      "source_sha256": "77cab1b157ccd6febb50a98a2248f15a5fb465ca9bb08ae21e6b83671a40697b"
+    }
+  ],
+  "representation": "C62 ExactCoefficient.status/expression/expression_hash/proof",
+  "schema": "C64-QGTM2-ARTIFACT-V1"
+}

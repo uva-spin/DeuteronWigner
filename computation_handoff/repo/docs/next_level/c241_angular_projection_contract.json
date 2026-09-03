@@ -1,0 +1,56 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "angular_schemas": 3,
+  "artifact": "angular_projection_contract",
+  "authority_record": {
+    "angular_ready": 3,
+    "count": 3,
+    "radial_ready": 0,
+    "root": "f32632bdb5be7a23159e8b8341dfb6e65a279df4e2bc00717f7c960618e9b209",
+    "rows": [
+      {
+        "TM_CM_rule": "exact C62 polar TM transform; complement CM labels explicit; no retained projector reuse",
+        "angular_ready": true,
+        "angular_rule": "total light-front Jz conserved; Kronecker delta on sum(m_i+helicity_i)",
+        "missing_as_zero": false,
+        "owner": "C112",
+        "primitive_id": "C240-C112-COMPLEMENT",
+        "radial_ready": false,
+        "radial_rule": "caller HO labels; source contact/distribution prescription required",
+        "source_sha256": "12191f8ba66edc3195f3e73a6b9d56cab3177542a84d40a833ab95f10579770b"
+      },
+      {
+        "TM_CM_rule": "exact C62 polar TM transform; complement CM labels explicit; no retained projector reuse",
+        "angular_ready": true,
+        "angular_rule": "total light-front Jz conserved; Kronecker delta on sum(m_i+helicity_i)",
+        "missing_as_zero": false,
+        "owner": "C127",
+        "primitive_id": "C240-C127-COMPLEMENT",
+        "radial_ready": false,
+        "radial_rule": "caller HO labels; source contact/distribution prescription required",
+        "source_sha256": "e11ad65162e5c02af7e949dfbb290051c7687fb2f6ffe8dfd39ef7dcc926e49d"
+      },
+      {
+        "TM_CM_rule": "exact C62 polar TM transform; complement CM labels explicit; no retained projector reuse",
+        "angular_ready": true,
+        "angular_rule": "total light-front Jz conserved; Kronecker delta on sum(m_i+helicity_i)",
+        "missing_as_zero": false,
+        "owner": "C129",
+        "primitive_id": "C240-C129-COMPLEMENT",
+        "radial_ready": false,
+        "radial_rule": "caller HO labels; source contact/distribution prescription required",
+        "source_sha256": "e37622140f086632dca8bc8a4a2c3d0e2b1166ed19a1a9ad283e4f569300b306"
+      }
+    ]
+  },
+  "package_root": "9fabebf1d9fa6fd5ddd27cc34544e805fc6a9acafe4e86a48455fcd1bc1b31ea",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2HO1-D",
+  "radial_projections": 0,
+  "schema": "C241-ANGULAR-PROJECTION-CONTRACT-V1",
+  "status": "C241_THREE_V2_COMPLEMENT_ANGULAR_JZ_AND_TM_CM_PROJECTION_SCHEMAS_READY_RADIAL_CONTACT_DISTRIBUTION_INCOMPLETE"
+}

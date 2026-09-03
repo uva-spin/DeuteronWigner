@@ -1,0 +1,54 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "interface_inventory_contract",
+  "authority_record": {
+    "count": 3,
+    "root": "5fdf790720b3e886667f3041edab15cc956b1e64982f41f0091ce181d1e53f96",
+    "rows": [
+      {
+        "K_prime": "caller positive exact",
+        "b_HO": "caller positive GeV",
+        "coordinate": "caller C243 ComplementContactCoordinate",
+        "denominator": "separate C221-C223 authority",
+        "evaluator": "evaluate_interface_contact",
+        "interface_id": "C112_INSTANTANEOUS_FERMION:K9_2_N8_b0.40:OUTSIDE_FIXED_K",
+        "orientation": "Q_R C112 P_R; adjoint P_R C112 Q_R",
+        "resolution": "K9_2_N8_b0.40",
+        "retained_ids": false
+      },
+      {
+        "K_prime": "caller positive exact",
+        "b_HO": "caller positive GeV",
+        "coordinate": "caller C243 ComplementContactCoordinate",
+        "denominator": "separate C221-C223 authority",
+        "evaluator": "evaluate_interface_contact",
+        "interface_id": "C112_INSTANTANEOUS_FERMION:K11_2_N10_b0.45:OUTSIDE_FIXED_K",
+        "orientation": "Q_R C112 P_R; adjoint P_R C112 Q_R",
+        "resolution": "K11_2_N10_b0.45",
+        "retained_ids": false
+      },
+      {
+        "K_prime": "caller positive exact",
+        "b_HO": "caller positive GeV",
+        "coordinate": "caller C243 ComplementContactCoordinate",
+        "denominator": "separate C221-C223 authority",
+        "evaluator": "evaluate_interface_contact",
+        "interface_id": "C112_INSTANTANEOUS_FERMION:K13_2_N12_b0.50:OUTSIDE_FIXED_K",
+        "orientation": "Q_R C112 P_R; adjoint P_R C112 Q_R",
+        "resolution": "K13_2_N12_b0.50",
+        "retained_ids": false
+      }
+    ]
+  },
+  "contact_interfaces": 3,
+  "interfaces_classified": 15,
+  "package_root": "2e0bad67c40c786f16b2e5f622112ba240693d79756fac2749ffff548fcf72cd",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2CONTACTINTERFACE1-A",
+  "schema": "C246-INTERFACE-INVENTORY-CONTRACT-V1",
+  "status": "C246_ALL_FIFTEEN_INTERFACES_V2_CONTACT_APPLICABILITY_CLASSIFIED_THREE_C112_CALLER_BOUND_EVALUATORS_READY"
+}

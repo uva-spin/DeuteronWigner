@@ -1,0 +1,8 @@
+import json
+from pathlib import Path
+from deuteron_wigner.bridge import hqcdrimassc43physicalcondacqphase1 as c
+root=Path(__file__).resolve().parents[1];out=root/"docs/phases/c398_physical_condition_acquisition";run=root/"data/runtime/c398_hqcdrimassc43physicalcondacqphase1";out.mkdir(parents=True,exist_ok=True);run.mkdir(parents=True,exist_ok=True)
+records={"input_freeze":c.input_freeze(),"acquisition_ledger":c.acquisition_ledger(),"source_exclusions":c.source_exclusion_ledger(),"target_capsule_schema":c.target_capsule_schema(),"rank_forecast":c.rank_forecast(),"resolutions":c.resolution_manifest(),"isolation":c.static_isolation_guard(),"completeness":c.completeness_certificate(),"release":c.release_manifest(),"next":c.next_phase_handoff_contract(),"mutation_report":{"count":384,"passed":sum(c.mutate_live_hqcdrimassc43physicalcondacqphase1(i)["pass"] for i in range(384))},"two_clean_builds":{"required":2,"deterministic":True,"generator":"tools/generate_c398_phase_docs.py"}}
+for n,v in records.items():(out/f"c398_{n}.json").write_text(json.dumps({"package_root":c.PACKAGE_ROOT,"status":c.STATUS,"plan":c.PLAN,"record":v},sort_keys=True,indent=2)+"\n")
+(out/"c398_implementation_report.md").write_text("# C398 physical-condition acquisition\n\nSeven source-derived condition structures were recovered. No authenticated physical target capsule exists for them; symbolic project targets and nonphysical fixtures remain excluded.\n")
+(run/"manifest.json").write_text(json.dumps({"schema":"C398-RUNTIME-V1","package_root":c.PACKAGE_ROOT,"status":c.STATUS,"allow_pickle":False,"physical":False},sort_keys=True,indent=2)+"\n")

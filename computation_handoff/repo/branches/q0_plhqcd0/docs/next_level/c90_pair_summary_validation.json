@@ -1,0 +1,35 @@
+{
+  "census": {
+    "census_sha256": "f1b2686944dd1772f593ad7bc6eff11d9c6447b25de035e8d56bd6cefa7f484a",
+    "logical_records": 891992018,
+    "resolution_rows": [
+      {
+        "first_pair_id": "C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0|C78:QG:K9_2_N8_b0.40:KIN=19:TRIP=0",
+        "last_pair_id": "C78:QG:K9_2_N8_b0.40:KIN=445:TRIP=2|C78:QG:K9_2_N8_b0.40:KIN=445:TRIP=2",
+        "logical_records": 28606464,
+        "maximum_records_in_pair": 9216,
+        "resolution": "K9_2_N8_b0.40",
+        "supported_pairs": 16224
+      },
+      {
+        "first_pair_id": "C78:QG:K11_2_N10_b0.45:KIN=27:TRIP=0|C78:QG:K11_2_N10_b0.45:KIN=27:TRIP=0",
+        "last_pair_id": "C78:QG:K11_2_N10_b0.45:KIN=897:TRIP=2|C78:QG:K11_2_N10_b0.45:KIN=897:TRIP=2",
+        "logical_records": 165991250,
+        "maximum_records_in_pair": 22500,
+        "resolution": "K11_2_N10_b0.45",
+        "supported_pairs": 43350
+      },
+      {
+        "first_pair_id": "C78:QG:K13_2_N12_b0.50:KIN=35:TRIP=0|C78:QG:K13_2_N12_b0.50:KIN=35:TRIP=0",
+        "last_pair_id": "C78:QG:K13_2_N12_b0.50:KIN=1581:TRIP=2|C78:QG:K13_2_N12_b0.50:KIN=1581:TRIP=2",
+        "logical_records": 697394304,
+        "maximum_records_in_pair": 46656,
+        "resolution": "K13_2_N12_b0.50",
+        "supported_pairs": 95256
+      }
+    ],
+    "schema": "C89-FACTORIZED-SCIENTIFIC-PAIR-PROGRAM-V1",
+    "supported_pairs": 154830
+  },
+  "route_A_B_summary_mismatches": 0
+}

@@ -1,0 +1,49 @@
+{
+  "conjugation_failures": 0,
+  "derivation_inputs": [
+    "path_orientation",
+    "Fourier exp(+ik.x)",
+    "incoming momentum flow",
+    "D_mu=partial_mu-igA_mu",
+    "line conjugation",
+    "delta component"
+  ],
+  "future_past_tree_residual": 0.0,
+  "manual_sign_insertions": 0,
+  "one_loop_rapidity_dependence_test": null,
+  "records": [
+    {
+      "component": "k_minus",
+      "delta": "delta_minus",
+      "i0_sign": "+",
+      "line_id": "C33.LINE.N.DAGGER.B",
+      "ordered_j_shift": "+j i delta_minus",
+      "orientation": "conjugate"
+    },
+    {
+      "component": "k_plus",
+      "delta": "delta_plus",
+      "i0_sign": "-",
+      "line_id": "C33.LINE.NBAR.B",
+      "ordered_j_shift": "-j i delta_plus",
+      "orientation": "direct"
+    },
+    {
+      "component": "k_plus",
+      "delta": "delta_plus",
+      "i0_sign": "+",
+      "line_id": "C33.LINE.NBAR.DAGGER.0",
+      "ordered_j_shift": "+j i delta_plus",
+      "orientation": "conjugate"
+    },
+    {
+      "component": "k_minus",
+      "delta": "delta_minus",
+      "i0_sign": "-",
+      "line_id": "C33.LINE.N.0",
+      "ordered_j_shift": "-j i delta_minus",
+      "orientation": "direct"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

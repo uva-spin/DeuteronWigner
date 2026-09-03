@@ -1,0 +1,23 @@
+{
+  "schema": "C124-MEMBER-AUTHORITY-MANIFEST-V1",
+  "status": "C124_C123_SOURCE_DERIVED_FINITE_PROJECTOR_MEMBER_AUTHORITY_READY",
+  "baseline": "19cf6fc4b7ee912c1bb36b5a3ed545b07d3cf513",
+  "contract": "docs/next_level/c123_c124_icmembers_import_contract.json",
+  "domains": ["I2_density_projector", "derivative_density"],
+  "conditioning": ["resolution", "graph", "species", "helicity", "color"],
+  "routes": {"A": "graph-first exact C45/C64 enumeration", "B": "exact C64 projector-preimage reconstruction"},
+  "statuses": ["CANDIDATE_MODE", "ADMITTED_MEMBER", "ADMITTED_EXACT_ZERO_WEIGHT_MEMBER", "REJECTED_NOT_APPLICABLE"],
+  "route_identity_mismatches": 0,
+  "route_order_mismatches": 0,
+  "cardinality_mismatches": 0,
+  "weight_mismatches": 0,
+  "orientation_mismatches": 0,
+  "missing_members": 0,
+  "duplicate_members": 0,
+  "logical_witnesses": 0,
+  "matrix_targets": 0,
+  "values": 0,
+  "bounds": 0,
+  "operators": 0,
+  "next": "C125/ICDOMAIN2"
+}

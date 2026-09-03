@@ -1,0 +1,15 @@
+{
+  "forbids": [
+    "C77/C78/C82 scientific reconstruction",
+    "expanded records",
+    "kernel product",
+    "contact matrix"
+  ],
+  "must_preserve": [
+    "C90 aggregate root",
+    "C90 ledger entries",
+    "C91 descendant ledger"
+  ],
+  "objective": "recover only the missing C90-owned authenticated normal-form content, primitive-family records, theorem specification, and proof-checker input schema",
+  "selected_status": "C92_IFEQUIVAPI_C90_PAYLOAD_INCOMPLETE"
+}

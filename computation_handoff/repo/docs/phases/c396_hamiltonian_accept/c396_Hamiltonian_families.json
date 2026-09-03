@@ -1,0 +1,83 @@
+{
+  "package_root": "20365d9bbea3b7d9433ffff582628b27a38412d3824d9b3c6293ffa77e6e0e74",
+  "physical": false,
+  "plan": "HAMILTONIANACCEPTPHASE1-B",
+  "record": [
+    {
+      "C274_legacy_label": "K9_2_N8_b0.40",
+      "Hermitian_by_construction": true,
+      "current_basis": {
+        "K": 9,
+        "Nmax": 8,
+        "bHO_GeVinv": 0.4
+      },
+      "formula": "H_R(theta,c)=sum_owner H_owner,R(theta)+sum_i=1^4 c_i O_C117,i,R",
+      "matrix_free": "apply each owner once then each C117 insertion once",
+      "owners": [
+        "C128_free",
+        "C53_canonical_qg",
+        "C112_instantaneous_fermion",
+        "C127_instantaneous_current",
+        "C129_pure_gluon",
+        "C130_boundary_zero_mode",
+        "C206_ST_counterterm_family",
+        "C242_C258_fixedK_current_completion"
+      ],
+      "physical": false,
+      "resolution": "K9",
+      "root": "cbf0c613b1cdd11c200b6211b53c27fcbdb42746bce6ac09055f47f39997c432",
+      "sparse": "owner coordinate/value program"
+    },
+    {
+      "C274_legacy_label": "K11_2_N8_b0.40",
+      "Hermitian_by_construction": true,
+      "current_basis": {
+        "K": 11,
+        "Nmax": 10,
+        "bHO_GeVinv": 0.45
+      },
+      "formula": "H_R(theta,c)=sum_owner H_owner,R(theta)+sum_i=1^4 c_i O_C117,i,R",
+      "matrix_free": "apply each owner once then each C117 insertion once",
+      "owners": [
+        "C128_free",
+        "C53_canonical_qg",
+        "C112_instantaneous_fermion",
+        "C127_instantaneous_current",
+        "C129_pure_gluon",
+        "C130_boundary_zero_mode",
+        "C206_ST_counterterm_family",
+        "C242_C258_fixedK_current_completion"
+      ],
+      "physical": false,
+      "resolution": "K11",
+      "root": "c66105d78a7976e0b1828fc457ca23f9aab6da108a87509321d6dd78630a3035",
+      "sparse": "owner coordinate/value program"
+    },
+    {
+      "C274_legacy_label": "K13_2_N8_b0.40",
+      "Hermitian_by_construction": true,
+      "current_basis": {
+        "K": 13,
+        "Nmax": 12,
+        "bHO_GeVinv": 0.5
+      },
+      "formula": "H_R(theta,c)=sum_owner H_owner,R(theta)+sum_i=1^4 c_i O_C117,i,R",
+      "matrix_free": "apply each owner once then each C117 insertion once",
+      "owners": [
+        "C128_free",
+        "C53_canonical_qg",
+        "C112_instantaneous_fermion",
+        "C127_instantaneous_current",
+        "C129_pure_gluon",
+        "C130_boundary_zero_mode",
+        "C206_ST_counterterm_family",
+        "C242_C258_fixedK_current_completion"
+      ],
+      "physical": false,
+      "resolution": "K13",
+      "root": "f4888c9fd3a323718b910d54a5697e5c8be56dc72f13f1af9a0436294ab4cbc1",
+      "sparse": "owner coordinate/value program"
+    }
+  ],
+  "status": "C396_K9_K11_K13_HERMITIAN_HAMILTONIAN_FAMILIES_CONDITIONALLY_ACCEPTED_PHYSICAL_COORDINATE_SELECTION_NEXT"
+}

@@ -1,0 +1,73 @@
+{
+  "future_past_merged": false,
+  "root": "51d9fe1114ffcf1246ffcf0f201db2dc0a4b822cd67f3f0927ed99a5c231f2ca",
+  "rows": [
+    {
+      "cut_side_frame": "C178_CUT_SIDE_PLUS",
+      "future_past": "DIS_FUTURE",
+      "infinity_equals_cut_endpoint": false,
+      "path_class_id": "BJY_DIS_FUTURE_HALF_LINK",
+      "path_order_preserved": true,
+      "source_boundary": "+infinity",
+      "source_class_merged": false,
+      "status": "SOURCE_TO_CUT_CLASSIFIED",
+      "transition_inserted": true
+    },
+    {
+      "cut_side_frame": "C178_CUT_SIDE_PLUS",
+      "future_past": "DIS_FUTURE",
+      "infinity_equals_cut_endpoint": false,
+      "path_class_id": "BJY_DIS_FUTURE_REDUCED_LINK",
+      "path_order_preserved": true,
+      "source_boundary": "+infinity",
+      "source_class_merged": false,
+      "status": "SOURCE_TO_CUT_CLASSIFIED",
+      "transition_inserted": true
+    },
+    {
+      "cut_side_frame": "C178_CUT_SIDE_MINUS",
+      "future_past": "DY_PAST",
+      "infinity_equals_cut_endpoint": false,
+      "path_class_id": "BJY_DY_PAST_HALF_LINK",
+      "path_order_preserved": true,
+      "source_boundary": "-infinity",
+      "source_class_merged": false,
+      "status": "SOURCE_TO_CUT_CLASSIFIED",
+      "transition_inserted": true
+    },
+    {
+      "cut_side_frame": "C178_CUT_SIDE_MINUS",
+      "future_past": "DY_PAST",
+      "infinity_equals_cut_endpoint": false,
+      "path_class_id": "BJY_DY_PAST_REDUCED_LINK",
+      "path_order_preserved": true,
+      "source_boundary": "-infinity",
+      "source_class_merged": false,
+      "status": "SOURCE_TO_CUT_CLASSIFIED",
+      "transition_inserted": true
+    },
+    {
+      "cut_side_frame": "C178_CUT_SIDE_PLUS",
+      "future_past": "DIS_FUTURE",
+      "infinity_equals_cut_endpoint": false,
+      "path_class_id": "JY_TRANSVERSE_INFINITY_CLASS",
+      "path_order_preserved": true,
+      "source_boundary": "+infinity",
+      "source_class_merged": false,
+      "status": "SOURCE_TO_CUT_CLASSIFIED",
+      "transition_inserted": true
+    },
+    {
+      "cut_side_frame": "JMY_COMPARISON_ONLY",
+      "future_past": "JMY_OFFLIGHTCONE",
+      "infinity_equals_cut_endpoint": false,
+      "path_class_id": "JMY_OFFLIGHTCONE_STAPLE",
+      "path_order_preserved": true,
+      "source_boundary": "v-infinity",
+      "source_class_merged": false,
+      "status": "COMPARISON_ONLY_NOT_C43",
+      "transition_inserted": false
+    }
+  ],
+  "schema": "C178-SOURCE-TO-CUT-V1"
+}

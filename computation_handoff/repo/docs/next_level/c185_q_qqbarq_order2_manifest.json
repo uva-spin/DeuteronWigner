@@ -1,0 +1,65 @@
+{
+  "count": 3,
+  "root": "c5a918b18fd88ddecc88807f19fb75296d77aa61809d5d7c890f9c54fb9edefc",
+  "rows": [
+    {
+      "block_id": "C185-Q_QQBARQ-ORDER2-K9",
+      "coupling_degree": 2,
+      "direct_not_sequential": true,
+      "operator_preimage_route": true,
+      "owners": [
+        "C112_INSTANTANEOUS_FERMION",
+        "C127_CURRENT_CURRENT",
+        "C129_NORMAL_ORDERING",
+        "C131_LOCAL_POLYNOMIAL",
+        "C130_BOUNDARY_LINK"
+      ],
+      "root": "d56d56ef6f7b9d97d6bf298ac91f085c4eec8b890099a43565538fce4d219f5c",
+      "source": "C170-B1-Q",
+      "source_owner_route": true,
+      "status": "SOURCE_SCOPE_PARTIAL_NOT_ZERO",
+      "target": "C170-B1-QQBARQ",
+      "unavailable_owner": "projected three-body coefficient requires C186"
+    },
+    {
+      "block_id": "C185-Q_QQBARQ-ORDER2-K11",
+      "coupling_degree": 2,
+      "direct_not_sequential": true,
+      "operator_preimage_route": true,
+      "owners": [
+        "C112_INSTANTANEOUS_FERMION",
+        "C127_CURRENT_CURRENT",
+        "C129_NORMAL_ORDERING",
+        "C131_LOCAL_POLYNOMIAL",
+        "C130_BOUNDARY_LINK"
+      ],
+      "root": "5f919c279d444f82967f71f4da6152407dc0585ed4a365ce4b189aaf6d3dac4f",
+      "source": "C170-B1-Q",
+      "source_owner_route": true,
+      "status": "SOURCE_SCOPE_PARTIAL_NOT_ZERO",
+      "target": "C170-B1-QQBARQ",
+      "unavailable_owner": "projected three-body coefficient requires C186"
+    },
+    {
+      "block_id": "C185-Q_QQBARQ-ORDER2-K13",
+      "coupling_degree": 2,
+      "direct_not_sequential": true,
+      "operator_preimage_route": true,
+      "owners": [
+        "C112_INSTANTANEOUS_FERMION",
+        "C127_CURRENT_CURRENT",
+        "C129_NORMAL_ORDERING",
+        "C131_LOCAL_POLYNOMIAL",
+        "C130_BOUNDARY_LINK"
+      ],
+      "root": "f28fdc93864ea912b53946938c05c89461b2ff622fa92b0870257f530ca17ff3",
+      "source": "C170-B1-Q",
+      "source_owner_route": true,
+      "status": "SOURCE_SCOPE_PARTIAL_NOT_ZERO",
+      "target": "C170-B1-QQBARQ",
+      "unavailable_owner": "projected three-body coefficient requires C186"
+    }
+  ],
+  "schema": "C185-ORDER2-V1",
+  "unavailable_encoded_as_zero": false
+}

@@ -1,0 +1,23 @@
+{
+  "all_pass": true,
+  "distinct_from": [
+    "SOURCE_ANCHORED_LOWQT_W_VALIDATION",
+    "SOURCE_PROCESS_VALIDATION_ELIGIBLE",
+    "PHYSICAL_PROCESS_INPUT_ELIGIBLE"
+  ],
+  "requirements": {
+    "central_complete": true,
+    "exact_dataset_files": true,
+    "exact_engine_payload": true,
+    "exact_public_repository": true,
+    "exact_selection": true,
+    "exact_source_ensembles": true,
+    "joint_covariance": true,
+    "measurement_semantics": true,
+    "members_complete": true,
+    "native_bin_integration": true,
+    "native_loader": true,
+    "w_only_identity": true
+  },
+  "schema_version": "1.0.0"
+}

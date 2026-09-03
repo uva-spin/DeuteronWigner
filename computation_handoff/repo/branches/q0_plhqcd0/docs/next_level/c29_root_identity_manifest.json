@@ -1,0 +1,45 @@
+{
+  "disjoint": true,
+  "immutable": true,
+  "pair_hash": "bae27a55f88789ae046187bedf16d251cc3cbe7890512057179bf735b52db630",
+  "records": [
+    {
+      "content_hash": "e052a0995efc09c6fec98e7d0a9e522a605ff20be4bb14fa16c9c1c9f91930f1",
+      "owns": [
+        "ART25 parameters",
+        "CS kernel",
+        "TMDPDF/TMDFF",
+        "MSHT20_REP",
+        "MAPFF",
+        "DataProcessor datasets/cuts",
+        "642-member covariance"
+      ],
+      "root_id": "ART25_EXTERNAL_SOURCE_ROOT",
+      "stable_id": "C29.ROOT.EXTERNAL"
+    },
+    {
+      "content_hash": "f028d289337663e722e5418b88f1010b85401e421f508e995062f782068fa708",
+      "owns": [
+        "LF Hamiltonian plans",
+        "Fock amplitudes",
+        "proton/neutron/deuteron states",
+        "Wilson orders",
+        "LF-to-QCD matching",
+        "evolution",
+        "microscopic process plans",
+        "assumption axes"
+      ],
+      "root_id": "PROJECT_MICROSCOPIC_OPERATOR_ROOT",
+      "stable_id": "C29.ROOT.MICROSCOPIC"
+    }
+  ],
+  "root_pair": {
+    "external": {
+      "value": "ART25_EXTERNAL_SOURCE_ROOT"
+    },
+    "microscopic": {
+      "value": "PROJECT_MICROSCOPIC_OPERATOR_ROOT"
+    }
+  },
+  "schema_version": "1.0.0"
+}

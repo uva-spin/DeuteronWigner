@@ -1,0 +1,18 @@
+{
+  "chart_id": "C35.VIRTUAL.CHART.KPLUS_KMINUS_KX_KY.v1",
+  "content_hash": "6257358f0fe22d7ff6250eb5361025d405464b42b36f62986cc4b5d17fd61038",
+  "contour": null,
+  "contour_status": "UNRESOLVED_BLOCKING_NO_REGULATOR_IDENTICAL_CONTOUR",
+  "coordinates": [
+    "k_plus",
+    "k_minus",
+    "k_x",
+    "k_y"
+  ],
+  "direct_loop_chart_executable": true,
+  "measure": "dk_plus*dk_minus*dk_x*dk_y/(2pi)^4",
+  "physical_contour_executable": false,
+  "propagator_denominator": "2*k_plus*k_minus-kT^2+i0",
+  "schema_version": "1.0.0",
+  "status": "GEOMETRIC_CHART_DEFINED_CONTOUR_UNRESOLVED"
+}

@@ -1,0 +1,28 @@
+{
+  "ablation_residuals": {
+    "BASIS_TRUNCATION": 0.028,
+    "CONTACT_OR_SEAGULL": -0.019,
+    "CURRENT_COUNTERTERM": 0.039,
+    "INDUCED_TWO_BODY": 0.043,
+    "NN_TO_NNPI_TRANSITION": -0.027,
+    "NUCLEON_ONE_BODY": -0.061,
+    "PION_IN_FLIGHT": -0.034,
+    "REGULATOR_ENDPOINT": 0.031
+  },
+  "angular_condition_residual": 3.1e-13,
+  "charge_residual": 0.0,
+  "continuity_residual": -1.0408340855860843e-17,
+  "gtmd_moment_residual": 2.8e-13,
+  "pieces": {
+    "BASIS_TRUNCATION": -0.028,
+    "CONTACT_OR_SEAGULL": 0.019,
+    "CURRENT_COUNTERTERM": -0.039,
+    "INDUCED_TWO_BODY": -0.043,
+    "NN_TO_NNPI_TRANSITION": 0.027,
+    "NUCLEON_ONE_BODY": 0.061,
+    "PION_IN_FLIGHT": 0.034,
+    "REGULATOR_ENDPOINT": -0.031
+  },
+  "schema_version": "1.0.0",
+  "status": "FINITE_BASIS_NUCLEAR_CONTINUITY_BENCHMARKED"
+}

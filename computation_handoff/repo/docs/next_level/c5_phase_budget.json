@@ -1,0 +1,64 @@
+{
+  "configuration_hash": "C5_ANALYTIC_V1",
+  "payload": {
+    "payload_class": "LINK_ODD_VALIDATION",
+    "record": {
+      "__type__": "deuteron_wigner.pilot.wilson_line.status.C5PilotRecord",
+      "fields": {
+        "cut_ledger_id": "C5:CUT_LEDGER:REFERENCE",
+        "intermediate_state_id": "C5:STATE:QQG",
+        "member_id": "controlled_algebraic_interference",
+        "numerical_tolerances": [
+          [
+            "analytic",
+            1e-12
+          ],
+          [
+            "epsilon_convergence",
+            0.01
+          ]
+        ],
+        "oam_helicity_blocks": [
+          "LZ_0",
+          "LZ_PLUS_1"
+        ],
+        "operator_id": "C5:OP:QUARK_GAMMA_PLUS",
+        "overlap_id": "C3:OVERLAP:ANALYTIC_DIAGONAL",
+        "path_id": "C5:PATH:SEMI_INFINITE",
+        "pole_id": "C5:POLE:FUTURE",
+        "projector_id": "C5:RED:LINK_ODD_COMMON",
+        "recoil_id": "C3:RECOIL:SYMMETRIC_XI_ZERO",
+        "regulator_identity": "DELTA_ANALYTIC",
+        "representation": "FUNDAMENTAL",
+        "state_id": "C3:C:SPINOR_OAM",
+        "value": {
+          "__complex__": [
+            0.0,
+            0.21015054702851627
+          ]
+        },
+        "wilson_order": 1
+      }
+    }
+  },
+  "phase_budget": {
+    "glauber_or_process_contribution": "UNRESOLVED_NOT_ZERO",
+    "rapidity_counterterm_contribution": "UNRESOLVED_NOT_ZERO",
+    "soft_overlap_contribution": "UNRESOLVED_NOT_ZERO",
+    "unresolved_remainder": "UNRESOLVED_NOT_ZERO",
+    "unsubtracted_hadronic_or_collinear_phase": 0.21015054702851627,
+    "uv_matching_contribution": "UNRESOLVED_NOT_ZERO"
+  },
+  "source_commit": "62125f0857e597e8f9548f279ae70b1634764a24",
+  "stable_id": "C5:RESULT:REFERENCE",
+  "statuses": [
+    "VALIDATION_ONLY",
+    "UNSUBTRACTED_REGULATED_PILOT",
+    "LINK_SHORTENING_REQUIRED",
+    "UV_MATCHING_REQUIRED",
+    "RAPIDITY_SOFT_MATCHING_REQUIRED",
+    "PHYSICAL_PROCESS_MAP_NOT_APPLIED",
+    "NO_EVOLUTION_APPLIED",
+    "WILSON_ORDER_1"
+  ]
+}

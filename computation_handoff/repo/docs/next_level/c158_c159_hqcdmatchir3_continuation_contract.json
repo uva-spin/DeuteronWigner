@@ -1,0 +1,18 @@
+{
+  "schema": "C158-C159-HQCDMATCHIR3-CONTINUATION-V1",
+  "parent_status": "C158_C157_SOURCE_DERIVED_EXECUTABLE_FINITE_BASIS_MATCHING_COEFFICIENT_AUTHORITY_READY",
+  "branch": "C159/HQCDMATCHIR3",
+  "evidence": {
+    "finite_basis_quantities": 5,
+    "resolutions": ["K9", "K11", "K13"],
+    "fixtures": 4,
+    "resolvent_routes": ["sparse", "matrix_free", "qg_block", "cauchy_direct_g"],
+    "route_mismatches": 0,
+    "enclosure_components": ["roundoff", "solve", "series", "projection", "source_contact"],
+    "focused_mutations": 384,
+    "two_clean_builds": true
+  },
+  "scope": "resume common-IR, continuum, remainder, and bracket authorities from executable finite-basis coefficients",
+  "physical_matching_windows": false,
+  "exactly_one_continuation": true
+}

@@ -1,0 +1,105 @@
+{
+  "blockers": [
+    {
+      "blocking_reason": "No source-derived common dimensional conversion exists. Multiplying selected tuples by b, P+, L, or a fitted factor would alter the C47 functional and fabricate a vertex.",
+      "id": "C48.CANONICAL.UNIFORM_OPERATOR_UNITS",
+      "observed": "C47 canonical inventory declares L^(-1/2) GeV^(1+|m|); every physical resolution contains |mrel|=0 and |mrel|=1 tuples.",
+      "required_correction": "Derive the complete C43/SB finite-volume canonical M^2 matrix-element normalization, including all transverse numerator components, and validate a uniform-unit tuple table.",
+      "source_requirement": "A coefficient of M^2 has one project-unit convention for every matrix element."
+    },
+    {
+      "blocking_reason": "The required 2P+ and field-normalization factors are not represented as a source-checked, dimensionally uniform operator formula.",
+      "id": "C48.CANONICAL.M2_CONVERSION",
+      "observed": "C47 fixes M^2=2P+P--Pperp^2 for the free functional, while its canonical interface only says L^(-1/2) is retained.",
+      "required_correction": "Add a primary-source equation -> C43 convention map -> finite-volume field expansion -> M^2 tuple formula, with symbolic-L cancellation or factorization proof.",
+      "source_requirement": "An explicit C43-normalized conversion of the canonical P^- term to a coupling-factored M^2 coefficient."
+    },
+    {
+      "blocking_reason": "Because the underlying tuple has no admissible common M^2 normalization, inserting SU(3) and the 24x3 isometry would make an array but not the required physical operator.",
+      "id": "C48.CANONICAL.EXHAUSTIVE_MATRIX_ELEMENT_CONTRACT",
+      "observed": "C47 exposes kinematic tuples, not a finished canonical matrix; its C48 interface expressly assigns SU(3) insertion and matrix assembly to C48.",
+      "required_correction": "C49/VERTEX1 must repair the source-derived tuple contract before C48 is retried; generated absorption remains deferred to the valid emission matrix.",
+      "source_requirement": "Every final nonzero must carry a single normalized matrix-element formula traceable through color, triplet isometry, and finite-volume normalization."
+    }
+  ],
+  "c47_interface": {
+    "L": "symbolic; canonical tuple retains L^(-1/2)",
+    "basis_order": "q: (K,CM0,h,color); qg: (partition,xq,xg,nrel,mrel,NCM=0,MCM=0,hq,hg,triplet)",
+    "forbidden": "no Wilson/bilocal/one-loop action",
+    "insertion": "C48 applies SU3 and gs to C47 kinematic tuple, then generates adjoint",
+    "operator": "M2=2P+P--Pperp2",
+    "selection": "C47 tuple table; P0/Q0; CM isometry",
+    "status": "READY_FOR_C48_LOCAL_MATRIX_ASSEMBLY_ONLY"
+  },
+  "canonical_resolution_records": [
+    {
+      "declared_unit": "L^(-1/2) GeV^(1+|m|)",
+      "nonzero_value_count": 288,
+      "outgoing_m_abs_values": [
+        0,
+        1
+      ],
+      "resolution": "K9_2_N8_b0.40",
+      "single_operator_unit": false,
+      "single_operator_unit_reason": "The committed C47 object contains |mrel|=0 and |mrel|=1 entries but declares GeV^(1+|mrel|); a matrix coefficient cannot have entry-dependent physical dimensions.",
+      "symbolic_L": "L^(-1/2) is retained but no C43-to-M^2 finite-volume conversion is supplied",
+      "tuple_array_sha256": "4aeb27a352fe3446c2b503656e56935fc8bd0f8b6c2bb70f5163f339927410a0",
+      "tuple_count": 720,
+      "tuple_shape": [
+        720,
+        4
+      ]
+    },
+    {
+      "declared_unit": "L^(-1/2) GeV^(1+|m|)",
+      "nonzero_value_count": 450,
+      "outgoing_m_abs_values": [
+        0,
+        1
+      ],
+      "resolution": "K11_2_N10_b0.45",
+      "single_operator_unit": false,
+      "single_operator_unit_reason": "The committed C47 object contains |mrel|=0 and |mrel|=1 entries but declares GeV^(1+|mrel|); a matrix coefficient cannot have entry-dependent physical dimensions.",
+      "symbolic_L": "L^(-1/2) is retained but no C43-to-M^2 finite-volume conversion is supplied",
+      "tuple_array_sha256": "c3e04306e15d903a5dbca560b0504a08f186e2738d04ccb3cbbe96287d470548",
+      "tuple_count": 1170,
+      "tuple_shape": [
+        1170,
+        4
+      ]
+    },
+    {
+      "declared_unit": "L^(-1/2) GeV^(1+|m|)",
+      "nonzero_value_count": 648,
+      "outgoing_m_abs_values": [
+        0,
+        1
+      ],
+      "resolution": "K13_2_N12_b0.50",
+      "single_operator_unit": false,
+      "single_operator_unit_reason": "The committed C47 object contains |mrel|=0 and |mrel|=1 entries but declares GeV^(1+|mrel|); a matrix coefficient cannot have entry-dependent physical dimensions.",
+      "symbolic_L": "L^(-1/2) is retained but no C43-to-M^2 finite-volume conversion is supplied",
+      "tuple_array_sha256": "6aab9b8380ee20404ea20dde43986a391cdbbf85c98cff7d17669be6456997ba",
+      "tuple_count": 1728,
+      "tuple_shape": [
+        1728,
+        4
+      ]
+    }
+  ],
+  "fixed_gauge": "G0-LIGHT-FRONT-GAUGE; A+=0; PV on Q0",
+  "fixed_scheme": "O4-SPACELIKE-COLLINS-JMY",
+  "free_operator_contract": {
+    "L": "P+=pi K/L and mode normalizations retain L symbolically; invariant M2 cancels L",
+    "conversion": "source P_B+=sqrt2 P_C43+ and P_B-=sqrt2 P_C43-",
+    "functional": "M0_qg^2=qrel^2+mIR^2/xq (+m_g^2/xg only if a source supplies m_g); mIR=1.2 GeV",
+    "operator": "M^2=2 P_C43+ P_C43- - Pperp^2",
+    "source": "C43 metric; 1911.10762v1 Eqs. (16),(35)-(49),(55),(82)",
+    "status": "SOURCE_COMPLETE_EXECUTABLE"
+  },
+  "generator_code_sha256": "03264e4326430b2ce48011a64613a837ea8be26d205f3e9306865a04f6d97785",
+  "next": "C49/VERTEX1 \u2014 exhaustive tuple/SU(3)/triplet canonical-matrix completion",
+  "prohibited_response": "Do not choose L, bHO, P+, or a C40 coefficient to homogenize the tuple dimensions; do not construct a surrogate vertex or any downstream local matrix.",
+  "result": "No C48 free, canonical, instantaneous, constrained, boundary, zero-mode, counterterm, or block-operator matrix is generated, because the earliest required canonical operator gate is incomplete.",
+  "status": "C48_CANONICAL_VERTEX_ASSEMBLY_INCOMPLETE"
+}

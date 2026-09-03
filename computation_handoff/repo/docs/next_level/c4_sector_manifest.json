@@ -1,0 +1,362 @@
+{
+  "gluon": {
+    "members": [
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            1.0
+          ],
+          [
+            "C4:SECTOR:QQQG",
+            0.0
+          ]
+        ],
+        "gluon_momentum_Hg_integral": 0.0,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "ledger": {
+          "baryon_number": 1.0,
+          "electric_charge": 1.0,
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "probability": 0.0,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQG": 1.0
+        }
+      },
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            0.9999999949999999
+          ],
+          [
+            "C4:SECTOR:QQQG",
+            0.0001
+          ]
+        ],
+        "gluon_momentum_Hg_integral": 2e-09,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 1.0,
+            "u": 1.9999999999999998
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 1.9999999999999998
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "ledger": {
+          "baryon_number": 0.9999999999999999,
+          "electric_charge": 0.9999999999999999,
+          "net_flavor": {
+            "d": 1.0,
+            "u": 1.9999999999999998
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 1.9999999999999998
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "probability": 1e-08,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQG": 1.0
+        }
+      },
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            0.8944271909999159
+          ],
+          [
+            "C4:SECTOR:QQQG",
+            0.4472135954999579
+          ]
+        ],
+        "gluon_momentum_Hg_integral": 0.04000000000000001,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "ledger": {
+          "baryon_number": 1.0000000000000002,
+          "electric_charge": 1.0,
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "probability": 0.2,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQG": 1.0
+        }
+      },
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            0.5916079783099616
+          ],
+          [
+            "C4:SECTOR:QQQG",
+            0.806225774829855
+          ]
+        ],
+        "gluon_momentum_Hg_integral": 0.13,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "ledger": {
+          "baryon_number": 0.9999999999999999,
+          "electric_charge": 0.9999999999999999,
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "probability": 0.65,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQG": 1.0
+        }
+      }
+    ],
+    "scaling": "integrated H^g = 0.2 P_g for benchmark fractions",
+    "state": "|qqq> + |qqqg>",
+    "stored_scalar": "H^g=xg"
+  },
+  "requirements": [
+    "C4.STATE",
+    "C4.SEA",
+    "C4.SEA_LEDGER",
+    "C4.GLUON",
+    "C4.GLUON_LEDGER",
+    "C4.ZERO"
+  ],
+  "schema_version": "1.0.0",
+  "sea": {
+    "members": [
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            1.0
+          ],
+          [
+            "C4:SECTOR:QQQQQBAR:d",
+            0.0
+          ]
+        ],
+        "antiquark_integrated_density": 0.0,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "ledger": {
+          "baryon_number": 1.0,
+          "electric_charge": 1.0,
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "probability": 0.0,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQQQBAR:d": 1.0000000000000002
+        }
+      },
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            0.9999999949999999
+          ],
+          [
+            "C4:SECTOR:QQQQQBAR:d",
+            0.0001
+          ]
+        ],
+        "antiquark_integrated_density": 1e-08,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 0.9999999999999999,
+            "u": 1.9999999999999998
+          },
+          "occupation": {
+            "d": 1.0000000199999999,
+            "u": 1.9999999999999998
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "ledger": {
+          "baryon_number": 0.9999999999999999,
+          "electric_charge": 0.9999999999999999,
+          "net_flavor": {
+            "d": 0.9999999999999999,
+            "u": 1.9999999999999998
+          },
+          "occupation": {
+            "d": 1.0000000199999999,
+            "u": 1.9999999999999998
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "probability": 1e-08,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQQQBAR:d": 1.0000000000000002
+        }
+      },
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            0.8944271909999159
+          ],
+          [
+            "C4:SECTOR:QQQQQBAR:d",
+            0.4472135954999579
+          ]
+        ],
+        "antiquark_integrated_density": 0.2,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.4,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "ledger": {
+          "baryon_number": 1.0000000000000002,
+          "electric_charge": 1.0,
+          "net_flavor": {
+            "d": 1.0,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 1.4,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0000000000000002
+        },
+        "probability": 0.2,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQQQBAR:d": 1.0000000000000002
+        }
+      },
+      {
+        "amplitude_ledger": [
+          [
+            "C4:SECTOR:QQQ",
+            0.5916079783099616
+          ],
+          [
+            "C4:SECTOR:QQQQQBAR:d",
+            0.806225774829855
+          ]
+        ],
+        "antiquark_integrated_density": 0.65,
+        "integrated_parent_ledger": {
+          "net_flavor": {
+            "d": 0.9999999999999999,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 2.3,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "ledger": {
+          "baryon_number": 0.9999999999999999,
+          "electric_charge": 0.9999999999999999,
+          "net_flavor": {
+            "d": 0.9999999999999999,
+            "u": 2.0
+          },
+          "occupation": {
+            "d": 2.3,
+            "u": 2.0
+          },
+          "plus_momentum": 1.0
+        },
+        "probability": 0.65,
+        "sector_transverse_norms": {
+          "C4:SECTOR:QQQ": 0.9999999999999998,
+          "C4:SECTOR:QQQQQBAR:d": 1.0000000000000002
+        }
+      }
+    ],
+    "pair_flavor": "d",
+    "positive_x": true,
+    "scaling": "integrated diagonal antiquark density = P_sea",
+    "state": "|qqq> + |qqqq qbar>"
+  }
+}

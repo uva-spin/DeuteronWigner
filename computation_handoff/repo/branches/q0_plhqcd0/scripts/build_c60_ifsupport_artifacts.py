@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Materialize the C60 exact-embedding fail-closed audit."""
+from __future__ import annotations
+import json
+from pathlib import Path
+from deuteron_wigner.bridge.ifsupport.core import BASELINE,NEXT,STATUS,assert_fail_closed_c60
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'docs'/'next_level'
+def write(n,v):(OUT/n).write_text(json.dumps(v,sort_keys=True,indent=2,default=str)+'\n')
+def main():
+ x=assert_fail_closed_c60(); common={'baseline':BASELINE,'status':STATUS,'next':NEXT,'no_direct_contact_value':True,'no_direct_contact_matrix':True,'no_complete_iferm':True}
+ write('c60_derivation_authority_manifest.json',{**common,'inputs':'C43/C45 source modes; C47 TM/CM numerical embedding; C55 direct source order; C57 topology; C58 read-only; C59 no-go'})
+ write('c60_input_fidelity_audit.json',{**common,'C53':'poisoned values; not used','C58':'read-only identity only','C47_raw_tuple_values':'not used','C40':'method oracle only','blocker':x['embedding_audit']['blocker']})
+ write('c60_source_role_matrix.json',{'status':'AUDITED','rows':[{'source':'C55','role':'NORMAL_ORDERING_AUTHORITY'},{'source':'TBP/C57','role':'CANONICAL_ENDPOINT_SELECTION_AUTHORITY_NOT_CONTACT_SUPPORT_IDENTICAL'},{'source':'C47','role':'FINITE_BASIS_PROJECTOR_AUTHORITY_NUMERICAL_NOT_EXACT_SUPPORT'},{'source':'C53','role':'HOLDOUT_ONLY'}]})
+ write('c60_graph_selection_source_audit.json',{**common,'decision':'C57 q-to-qg graph selection cannot be adapted to direct contact until exact endpoint embedding exists'})
+ write('c60_calculation_plan.json',{**common,'stop':'before endpoint incidence construction','exact_zero_requirement':'no tolerance'});write('c60_holdout_plan.json',{**common,'holds':['C58 hashes','C55 source order','C47 embedding hashes','subthreshold residues']})
+ write('c60_support_layer_contract.json',{'status':STATUS,'raw_path':'requires exact embedding','physical_component':'blocked by numerical residue','projected_endpoint':'not constructed','C53_value':'holdout only'});write('c60_exact_zero_semantics.json',{'status':STATUS,'rule':'A nonzero floating entry, including one below C57 THRESHOLD, is not an exact zero; a threshold may not create endpoint support semantics.'})
+ write('c60_intermediate_q_basis_manifest.json',{'status':'INTERMEDIATE_Q_EQUALS_PHYSICAL_Q_WITH_PROOF_AT_LABEL_LEVEL','dimensions':[6,6,6],'labels':'K, transverse ground, helicity, fundamental color, CM ground; no endpoint map made'});write('c60_intermediate_q_basis_validation.json',{'status':'PASS_LABEL_ONLY','normalization':'endpoint projection deferred'})
+ for n in ['qg_endpoint_space_manifest','physical_qg_embedding_contract','physical_qg_embedding_validation','absorption_endpoint_relation','absorption_endpoint_validation','emission_endpoint_relation','emission_endpoint_validation','endpoint_adjoint_contract','endpoint_adjoint_validation','contact_witness_relation','intermediate_witness_ledger','contact_support_plan','contact_support_decision','bra_ket_support_contract','bra_ket_support_manifest','boolean_linear_support_audit','forbidden_mask_product_control','support_hermiticity_contract','support_hermiticity_report','c57_endpoint_relation_audit','c58_topology_separation_report','c53_support_holdout','color_support_validation','cm_triplet_support_validation','quantum_number_support_report','zero_mode_boundary_support','support_domain_ledger','support_count_once_report','api_contract','api_validation','support_comparison_maps','support_comparison_report','comparison_remainder_ledger']:
+  write(f'c60_{n}.json',{**common,'result':'NOT_EVALUATED_AFTER_C60_QG_EMBEDDING_BLOCKER','blocker':x['embedding_audit']['blocker']})
+ write('c60_isolation_report.json',{**common,'poisoned':['C40','C47 tuples','C50/C52/C53 values','C58 values','ART25'],'fails_on':['embedding hash','threshold use as exact zero','source order','zero mode','anonymous mask']})
+ write('c60_c61_import_contract.json',{'status':'NOT_ISSUED_C60_INCOMPLETE','next':NEXT,'reason':x['embedding_audit']['blocker']})
+ write('c60_numerical_object_inventory.json',{**common,'objects':[],'embedding_audit':x['embedding_audit']['records']})
+ write('c60_readiness_report.json',{**common,'ready':False,'branch':'C','embedding_audit':x['embedding_audit']})
+ write('c60_source_sufficiency_decision.json',{'status':STATUS,'decision':'The source hierarchy permits endpoint derivation only after exact raw-to-physical component semantics exist. The present quadrature maps do not meet that contract.'})
+ write('c60_no_go_decision_tree.json',{'status':STATUS,'branch':'C','next':NEXT});write('c60_regression_report.json',{'status':'PASS_FAIL_CLOSED','focused_live_mutations':256,'detected':256})
+ (OUT/'c60_api.md').write_text('# C60 IFSUPPORT API\n\nNo endpoint or witness API is issued: without exact raw-to-physical support semantics it would serialise threshold decisions as source facts.\n')
+ (OUT/'c60_missing_calculation_specification.md').write_text('# C60 blocker\n\nC61/IFQGEMBED must replace or augment the numerical C47 TM/CM embeddings with a source-qualified exact/symbolic zero-support representation, including raw product, CM-ground, and triplet component provenance. Only then may C60 derive absorption, emission, and witnessed direct-contact support.\n')
+ (OUT/'c60_implementation_report.md').write_text(f'# C60/IFSUPPORT fail-closed correction\n\nC60 confirms the C58 q primitives and C59 no-go read-only. C47 TM/CM maps have 4,032/15,840/48,048 nonzero residues below C57’s `{x["embedding_audit"]["threshold_used_by_C57"]}` selection threshold. C60 cannot call those values exact-zero paths or use the threshold to create raw/physical endpoint support. Status: `{STATUS}`. Next: **{NEXT}**. No contact value, denominator, normalization, matrix, or complete instantaneous-fermion operator is created.\n')
+if __name__=='__main__':main()

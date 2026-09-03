@@ -1,0 +1,40 @@
+{
+  "one_loop_c11_derivations": 0,
+  "records": [
+    {
+      "assumptions": [
+        "g=0",
+        "W=1",
+        "S=1",
+        "zero-bin=0",
+        "identical C11 normalization and basis"
+      ],
+      "derivation_id": "C32.DERIV.TREE_REDUCTION",
+      "external_state": "proton C11 state",
+      "gauge": "arbitrary at g=0",
+      "generated_code_hash": "0b784a2516bb9a44d37073b39b61e00c212cf8c754c79262178851f812240afd",
+      "independent_check": "operator-factor and stored-parent identity routes",
+      "operator": "C32.R0.OPERATOR.v1",
+      "order": "alpha_s^0",
+      "regulator": "C11 finite basis",
+      "symbolic_expression": "F_C32^(0)-F_C11=0",
+      "symbolic_hash": "7a57a9a65a6e1b80d101f17bc55cac52c2a5e156bc74422caeec6aeb062a2254"
+    },
+    {
+      "assumptions": [
+        "test distribution only"
+      ],
+      "derivation_id": "C32.DERIV.DISTRIBUTION_ALGEBRA",
+      "external_state": "test function",
+      "gauge": "N/A",
+      "generated_code_hash": "0b784a2516bb9a44d37073b39b61e00c212cf8c754c79262178851f812240afd",
+      "independent_check": "direct action versus Mellin and regulated limit",
+      "operator": "typed endpoint algebra",
+      "order": "algebra oracle",
+      "regulator": "analytic distribution",
+      "symbolic_expression": "delta + plus + regular",
+      "symbolic_hash": "fe6f4dbc860d6d0dd87c4f3a93fca71a32b9497422a38d109a07a36d902f8a24"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

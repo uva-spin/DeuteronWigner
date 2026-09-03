@@ -1,0 +1,43 @@
+{
+  "authority_record": {
+    "executable": false,
+    "nodes": [
+      {
+        "id": 0,
+        "opcode": "LOAD_COORDINATE",
+        "status": "DEPENDENCY_0_MISSING"
+      },
+      {
+        "id": 1,
+        "opcode": "LOAD_PROJECTOR",
+        "source_equation": "(24)",
+        "status": "SOURCE_BOUND"
+      },
+      {
+        "id": 2,
+        "opcode": "LOAD_WARD_IDENTITY",
+        "source_equation": "(20)",
+        "status": "SOURCE_BOUND"
+      },
+      {
+        "id": 3,
+        "opcode": "LOAD_CONVERSION",
+        "status": "DEPENDENCIES_1_3_MISSING"
+      },
+      {
+        "id": 4,
+        "opcode": "RETURN_ENCLOSURE",
+        "status": "BLOCKED"
+      }
+    ],
+    "numerical_enclosure": null,
+    "program_id": "C280-RI-SMOM-MASS-TARGET",
+    "root": "17998f2b7c2084213d6b4562295830fdf231be3c0f7b81d3a84010ad68efdd7a"
+  },
+  "package_root": "d69b9cfc362b6ac94fd1441319ff83533fdf221dcc84b1da9171af9294e2a4d5",
+  "physical": false,
+  "plan": "RIMASSTARGETAST1-C",
+  "schema": "C280-AST_SKELETON-CONTRACT-V1",
+  "status": "C280_RI_SMOM_MASS_TARGET_AST_SKELETON_SOURCE_BOUND_FOUR_DEPENDENCY_LEAVES_OPEN",
+  "validation": "BOUND"
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "C202-C203-CONTINUATION-CONTRACT-V1",
+  "from_package": "C202/HQCD4GVERT1",
+  "to_package": "C203/HQCDBRST1",
+  "from_baseline": "9f77655bb35cc4ddaec0132d09e9acacbc178f25",
+  "from_package_root": "7328251a7743df4afe5d625acb4c45efa6465176d9cdb4a0074f3975a53557d3",
+  "from_status": "C202_C201_SOURCE_DERIVED_COMPLETE_CONDITIONAL_FINITE_BASIS_FOUR_GLUON_PROPER_VERTEX_AUTHORITY_READY",
+  "from_plan": "FOURGVERT1-A",
+  "completed_frontier": "C197-ST-4",
+  "completed_object": "complete four-gluon renormalization",
+  "preserve": [
+    "C197-ST-1 ghost-field renormalization",
+    "C197-ST-2 ghost-gluon proper vertex",
+    "C197-ST-3 three-gluon proper vertex",
+    "C202 conditional four-gluon proper vertex",
+    "C202 six counterterm and nine null sensitivities"
+  ],
+  "next_frontier": {
+    "object_id": "C197-ST-5",
+    "exact_missing_object": "BRST source identities",
+    "alias": "BRST_SOURCE_IDENTITY",
+    "status": "SOURCE_SIDE_FRONTIER",
+    "source_side": true
+  },
+  "remaining_ordered_frontier": [
+    "C197-ST-5",
+    "C197-ST-6",
+    "C197-ST-7",
+    "C197-ST-8",
+    "C197-ST-9",
+    "C197-ST-10"
+  ],
+  "constraints": {
+    "physical": false,
+    "full_ST": false,
+    "C158_value_inputs": 0,
+    "C166_graph_delta": [0, 0],
+    "Q0_Q1_Q2_modified": false,
+    "push": false
+  },
+  "evidence": [
+    "C202 public frontier and replacement manifests",
+    "C202 completeness certificate",
+    "C202 readiness report"
+  ]
+}

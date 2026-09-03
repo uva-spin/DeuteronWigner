@@ -1,0 +1,74 @@
+{
+  "package_root": "c2686cb149db312490a7bf744bbd6120a4ac6eb229af2c370eb8dc022ebe0ad4",
+  "physical": false,
+  "plan": "RIMASSC43JMYMASTERBIND1-C",
+  "record": {
+    "common_prefactor": "-i g^2 CF mu^(2epsilon); graph combinatoric/operator factors not exposed individually upstream",
+    "count": 5,
+    "root": "784eb6af61fc49c6ec4568ca1272bf7323095df0b7eaf9c2d014b62860777dc0",
+    "rows": [
+      {
+        "endpoint": "delta(1-x)delta2(kT) or crossed",
+        "indices": {
+          "A": 1,
+          "B": 1,
+          "C": 0,
+          "r": 0
+        },
+        "master": "L",
+        "numerator": "(2-d)(pslash-ellslash)",
+        "term": "Sigma_q"
+      },
+      {
+        "endpoint": "delta(1-x)delta2(kT)",
+        "indices": {
+          "A": 1,
+          "B": 0,
+          "C": 2,
+          "r": "2alpha"
+        },
+        "master": "L ordered two-eikonal",
+        "numerator": "v^2",
+        "term": "W_v"
+      },
+      {
+        "endpoint": "delta(1-z)delta2(kT)",
+        "indices": {
+          "A": 1,
+          "B": 0,
+          "C": 2,
+          "r": "2beta"
+        },
+        "master": "Cross(L) ordered two-eikonal",
+        "numerator": "tildev^2",
+        "term": "W_tildev"
+      },
+      {
+        "endpoint": "delta(1-x)delta2(kT)",
+        "indices": {
+          "A": 1,
+          "B": 1,
+          "C": 1,
+          "r": "alpha"
+        },
+        "master": "L",
+        "numerator": "vslash(pslash-ellslash)gamma+",
+        "term": "V_qv"
+      },
+      {
+        "endpoint": "delta(1-z)delta2(kT)",
+        "indices": {
+          "A": 1,
+          "B": 1,
+          "C": 1,
+          "r": "beta"
+        },
+        "master": "Cross(L)",
+        "numerator": "gamma-(pslash-ellslash)tildevslash",
+        "term": "V_htv"
+      }
+    ]
+  },
+  "status": "C370_TERM_MASTER_INDICES_CONTOURS_MEASUREMENTS_BOUND_SCALAR_REDUCTION_COEFFICIENTS_INCOMPLETE",
+  "validation": "PASS"
+}

@@ -1,0 +1,36 @@
+{
+  "merged": false,
+  "root": "dfcf8f5bce34d4734ee3015ba3b4ad411e970c39bff0665bfca1498d912713e1",
+  "rows": [
+    {
+      "PV": "C43 antisymmetric/PV retained",
+      "boundary": "+infinity",
+      "phase_sign": "+ig source Eq. (48)",
+      "process_class": "DIS_FUTURE",
+      "source_objects": [
+        "BJY-DIS-FUTURE-HALF-LINK-EQ48",
+        "BJY-DIS-COMPOSITION-EQ50"
+      ]
+    },
+    {
+      "PV": "A(-infinity)=-A(+infinity) at BJY source scope",
+      "boundary": "-infinity",
+      "phase_sign": "-ig source Eq. (115)",
+      "process_class": "DY_PAST",
+      "source_objects": [
+        "BJY-DY-PAST-ORIENTATION-EQ113-115"
+      ]
+    },
+    {
+      "PV": "not C43 authority",
+      "boundary": "v-infinity",
+      "phase_sign": "comparison-only",
+      "process_class": "JMY_OFFLIGHTCONE",
+      "source_objects": [
+        "JMY-OFFLIGHTCONE-STAPLE-EQ2"
+      ]
+    }
+  ],
+  "schema": "C177-FUTURE-PAST-V1",
+  "sivers_sign_output": false
+}

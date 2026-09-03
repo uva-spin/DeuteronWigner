@@ -1,0 +1,154 @@
+{
+  "edges": [
+    {
+      "relation": "DERIVES_FROM_READ_ONLY",
+      "source": "C5:ANALYTIC_STATE",
+      "target": "C3:C:SPINOR_OAM"
+    },
+    {
+      "relation": "ACTS_ON",
+      "source": "C5:ONE_GLUON_KERNEL",
+      "target": "C5:ANALYTIC_STATE"
+    },
+    {
+      "relation": "USES",
+      "source": "C5:ONE_GLUON_KERNEL",
+      "target": "C5:BARE_WILSON_PATH"
+    },
+    {
+      "relation": "USES",
+      "source": "C5:ONE_GLUON_KERNEL",
+      "target": "C5:EIKONAL_POLE"
+    },
+    {
+      "relation": "USES",
+      "source": "C5:ONE_GLUON_KERNEL",
+      "target": "C5:LF_RESOLVENT"
+    },
+    {
+      "relation": "USES",
+      "source": "C5:ONE_GLUON_KERNEL",
+      "target": "C5:CUT_LEDGER"
+    },
+    {
+      "relation": "DERIVES_FROM",
+      "source": "C5:LINK_ODD_CORRELATOR",
+      "target": "C5:FUTURE_AMPLITUDE"
+    },
+    {
+      "relation": "DERIVES_FROM_THETA_MAPPED",
+      "source": "C5:LINK_ODD_CORRELATOR",
+      "target": "C5:PAST_AMPLITUDE"
+    },
+    {
+      "relation": "PROJECTS_FROM",
+      "source": "C5:SIVERS_LIKE",
+      "target": "C5:LINK_ODD_CORRELATOR"
+    },
+    {
+      "relation": "PROJECTS_FROM",
+      "source": "C5:BOER_MULDERS_LIKE",
+      "target": "C5:LINK_ODD_CORRELATOR"
+    },
+    {
+      "relation": "ALTERNATIVE_OPERATOR_PROJECTION_TO",
+      "source": "C5:SIVERS_LIKE",
+      "target": "C5:BOER_MULDERS_LIKE"
+    },
+    {
+      "relation": "REQUIRES_MATCHING",
+      "source": "C5:PHASE_BUDGET",
+      "target": "C5:UV_MATCHING_REQUIRED"
+    },
+    {
+      "relation": "REQUIRES_MATCHING",
+      "source": "C5:PHASE_BUDGET",
+      "target": "C5:RAPIDITY_SOFT_REQUIRED"
+    },
+    {
+      "relation": "REQUIRES_MATCHING",
+      "source": "C5:PHASE_BUDGET",
+      "target": "C5:LINK_SHORTENING_REQUIRED"
+    },
+    {
+      "relation": "EXCLUDED_FROM",
+      "source": "C5:ONE_GLUON_KERNEL",
+      "target": "C5:PRODUCTION_EXCLUSION"
+    }
+  ],
+  "executable_two_cells": [
+    "CUT_EQUIVALENT_COUNT_ONCE",
+    "CUT_SUBTRACTED"
+  ],
+  "general_provenance_2_complex_complete": false,
+  "nodes": [
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:ANALYTIC_STATE"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:BARE_WILSON_PATH"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:EIKONAL_POLE"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:LF_RESOLVENT"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:CUT_LEDGER"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:ONE_GLUON_KERNEL"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:FUTURE_AMPLITUDE"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:PAST_AMPLITUDE"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:ANTIUNITARY_ADAPTER"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:LINK_ODD_CORRELATOR"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:SIVERS_LIKE"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:BOER_MULDERS_LIKE"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:PHASE_BUDGET"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:UV_MATCHING_REQUIRED"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:RAPIDITY_SOFT_REQUIRED"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:LINK_SHORTENING_REQUIRED"
+    },
+    {
+      "scope": "C5_VALIDATION_ONLY",
+      "stable_id": "C5:PRODUCTION_EXCLUSION"
+    }
+  ]
+}

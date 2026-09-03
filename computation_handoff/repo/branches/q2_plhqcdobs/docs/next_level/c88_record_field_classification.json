@@ -1,0 +1,49 @@
+{
+  "INSTANCE_ONLY": [
+    "temporary path",
+    "timestamp",
+    "host/process",
+    "shard/checkpoint filename",
+    "current HEAD",
+    "timing"
+  ],
+  "SCIENTIFIC": [
+    "schema_version",
+    "environment_qualification",
+    "resolution_id",
+    "supported_pair_id",
+    "physical_bra_id",
+    "physical_ket_id",
+    "physical_row_index",
+    "physical_column_index",
+    "canonical_C80_coordinate_id",
+    "C80_coordinate_equivalence_id",
+    "projected_coefficient_identity",
+    "projected_coefficient_midpoint",
+    "certified_absolute_bound",
+    "precision",
+    "interval_convention",
+    "terminal_projected_coefficient_status",
+    "factor_ownership_identity",
+    "witness_multiplicity",
+    "ordered_witness_endpoint_ancestry_digest",
+    "C77_root",
+    "C78_root",
+    "C80_root",
+    "C82_root",
+    "canonical_record_id",
+    "contains_no_C80_kernel_value",
+    "contains_no_g_s_squared",
+    "contains_no_coefficient_times_kernel_product"
+  ],
+  "SCIENTIFIC_PROVENANCE": [
+    "historical_C82_commit",
+    "C77/C78/C80/C82 roots",
+    "C87 scientific/capsule roots"
+  ],
+  "STREAM_CONTROL": [
+    "pair sequence",
+    "record sequence",
+    "shard/checkpoint digest"
+  ]
+}

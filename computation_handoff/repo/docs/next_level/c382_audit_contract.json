@@ -1,0 +1,38 @@
+{
+  "package_root": "5c94acd26606b05b756972b82beb7046618037d2aa52bd3329d57cbf35453657",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUPEVAL1-C",
+  "record": {
+    "count": 6,
+    "group_executable": false,
+    "root": "92e60fa7d3debad26ad6ff7130b1274740341d134508544ae4a62fbe261cd850",
+    "rows": [
+      {
+        "object": "loop numerators",
+        "state": "absent from C381 loop nodes"
+      },
+      {
+        "object": "source prefactors",
+        "state": "not attached to integration nodes"
+      },
+      {
+        "object": "fragmentation",
+        "state": "crossing map only, no instantiated rows"
+      },
+      {
+        "object": "soft real",
+        "state": "C379 content not instantiated in C381 executable rows"
+      },
+      {
+        "object": "counterterms",
+        "state": "MSbar ownership external but no executable attachment"
+      },
+      {
+        "object": "group sums",
+        "state": "distribution/fragmentation/soft membership not encoded in one AST"
+      }
+    ]
+  },
+  "status": "C382_GROUPED_EVALUATION_FAIL_CLOSED_EXECUTABLE_GROUP_ASSEMBLY_REQUIRED",
+  "validation": "BOUND"
+}

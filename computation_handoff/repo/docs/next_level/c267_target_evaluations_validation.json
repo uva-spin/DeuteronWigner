@@ -1,0 +1,402 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "target_evaluations_validation",
+  "authority_record": {
+    "complete": 4,
+    "required": 4,
+    "root": "2854e22afe42fcb0190d6264f2f0d1f0c39136a22d331905cbde68f404767e14",
+    "rows": [
+      {
+        "Ward_ST": {
+          "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+          "claimed_zero": false,
+          "descendant": "T_I2_density_projector[s(J_q+J_g);W_1,K_Q0] in the C203-C212 BRST/ST quotient",
+          "direction": "I2_density_projector",
+          "evaluation": "same deterministic pairing program as target with BRST insertion",
+          "gauge_invariance_claim": false,
+          "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+          "root": "75afc8589eeea7a6ea4f80a36f1f8ec1a466cce4b9bd43e7ee72f2a0af1a29fd",
+          "target_root": "57c715a5438835a63abc8733c1a8c34d78ed8ec2468f5cef51efbd43f6feb7e5"
+        },
+        "direction": "I2_density_projector",
+        "matching": {
+          "coefficient_selected": false,
+          "direction": "I2_density_projector",
+          "equation": "F_standard,1(mu;W_i)=F_project,1(mu;W_i)",
+          "project_side": "-g_s^2/2 sum_product T_I2_density_projector[product;W,K_Q0]",
+          "project_side_available": true,
+          "residual": "R_match,1=F_standard,1-F_project,1",
+          "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+          "root": "819cf47c1d42bed59027739f9977a0263a469168d8c350c368c2695af9cd864d",
+          "standard_physical_side": null,
+          "standard_physical_side_available": false
+        },
+        "products": {
+          "direction": "I2_density_projector",
+          "root": "a8e2a602e14163e96f15f231fd8b25ac005519efe21b9b3829d5aea4354d924f",
+          "rows": [
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_q",
+              "term": "T_I2_density_projector[J_qJ_q;W_1,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_g",
+              "term": "T_I2_density_projector[J_qJ_g;W_1,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_q",
+              "term": "T_I2_density_projector[J_gJ_q;W_1,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_g",
+              "term": "T_I2_density_projector[J_gJ_g;W_1,K_Q0]"
+            }
+          ],
+          "sum": "-g_s^2/2 sum_product T_I2_density_projector[product;W,K_Q0]"
+        },
+        "source_roots": [
+          "C43",
+          "C114",
+          "C115",
+          "C117",
+          "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950"
+        ],
+        "target": {
+          "Abel_order": "pair at fixed r, subtract, then r->1^-",
+          "C266_root": "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950",
+          "Q0": "finite-cell PV/Q0 prescription inherited C114",
+          "boundary_link_holonomy": "caller-bound and never averaged",
+          "direction": "I2_density_projector",
+          "evaluation_program": "normalize W_i; pair each ordered current product at fixed Abel r; apply conservation deltas; finite-HO project; sum products; take r->1^- only after pairing",
+          "numerical_value": null,
+          "orientation": "source-to-sink; Hermitian reversal published separately",
+          "packet_id": "C266-W1",
+          "parameter_domain": "k0_1>Delta_1>0, sigma_1>0, p0_1 in R2, mu>0",
+          "physical": false,
+          "regulated_value": "-g_s^2/2 sum_product T_I2_density_projector[product;W,K_Q0]",
+          "resolutions": [
+            "K9_2_N8_b0.40",
+            "K11_2_N8_b0.40",
+            "K13_2_N8_b0.40"
+          ],
+          "root": "57c715a5438835a63abc8733c1a8c34d78ed8ec2468f5cef51efbd43f6feb7e5",
+          "status": "PARAMETERIZED_EXECUTABLE",
+          "units": "Hamiltonian/current-functional units inherited from C114 and C264"
+        },
+        "uncertainty_root": "b5ec8c364e6773eea5861ae7e59f2a586a0a9e52ca3b0db32980b302e9ec19c3"
+      },
+      {
+        "Ward_ST": {
+          "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+          "claimed_zero": false,
+          "descendant": "T_derivative_density[s(J_q+J_g);W_2,K_Q0] in the C203-C212 BRST/ST quotient",
+          "direction": "derivative_density",
+          "evaluation": "same deterministic pairing program as target with BRST insertion",
+          "gauge_invariance_claim": false,
+          "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+          "root": "fdd4e8ed26012c8dfd29ff2d5f46834e6a27b9c0abe69ee16e1f7305139a74f6",
+          "target_root": "64c3c6b15399e66b8a7cf2963e99f4f1144469462a5c17af640c0a3464436bf2"
+        },
+        "direction": "derivative_density",
+        "matching": {
+          "coefficient_selected": false,
+          "direction": "derivative_density",
+          "equation": "F_standard,2(mu;W_i)=F_project,2(mu;W_i)",
+          "project_side": "-g_s^2/2 sum_product T_derivative_density[product;W,K_Q0]",
+          "project_side_available": true,
+          "residual": "R_match,2=F_standard,2-F_project,2",
+          "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+          "root": "817b3e8a5ec2607838a77322e4955d66443c8801e43c0e927db0b7037f12c949",
+          "standard_physical_side": null,
+          "standard_physical_side_available": false
+        },
+        "products": {
+          "direction": "derivative_density",
+          "root": "b6d36d31f27cf4b560d22a24ce886c491550e6d0097d839b622f88c567faed96",
+          "rows": [
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_q",
+              "term": "T_derivative_density[J_qJ_q;W_2,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_g",
+              "term": "T_derivative_density[J_qJ_g;W_2,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_q",
+              "term": "T_derivative_density[J_gJ_q;W_2,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_g",
+              "term": "T_derivative_density[J_gJ_g;W_2,K_Q0]"
+            }
+          ],
+          "sum": "-g_s^2/2 sum_product T_derivative_density[product;W,K_Q0]"
+        },
+        "source_roots": [
+          "C43",
+          "C114",
+          "C115",
+          "C117",
+          "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950"
+        ],
+        "target": {
+          "Abel_order": "pair at fixed r, subtract, then r->1^-",
+          "C266_root": "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950",
+          "Q0": "finite-cell PV/Q0 prescription inherited C114",
+          "boundary_link_holonomy": "caller-bound and never averaged",
+          "direction": "derivative_density",
+          "evaluation_program": "normalize W_i; pair each ordered current product at fixed Abel r; apply conservation deltas; finite-HO project; sum products; take r->1^- only after pairing",
+          "numerical_value": null,
+          "orientation": "source-to-sink; Hermitian reversal published separately",
+          "packet_id": "C266-W2",
+          "parameter_domain": "k0_2>Delta_2>0, sigma_2>0, p0_2 in R2, mu>0",
+          "physical": false,
+          "regulated_value": "-g_s^2/2 sum_product T_derivative_density[product;W,K_Q0]",
+          "resolutions": [
+            "K9_2_N8_b0.40",
+            "K11_2_N8_b0.40",
+            "K13_2_N8_b0.40"
+          ],
+          "root": "64c3c6b15399e66b8a7cf2963e99f4f1144469462a5c17af640c0a3464436bf2",
+          "status": "PARAMETERIZED_EXECUTABLE",
+          "units": "Hamiltonian/current-functional units inherited from C114 and C264"
+        },
+        "uncertainty_root": "b5ec8c364e6773eea5861ae7e59f2a586a0a9e52ca3b0db32980b302e9ec19c3"
+      },
+      {
+        "Ward_ST": {
+          "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+          "claimed_zero": false,
+          "descendant": "T_CM_ground[s(J_q+J_g);W_3,K_Q0] in the C203-C212 BRST/ST quotient",
+          "direction": "CM_ground",
+          "evaluation": "same deterministic pairing program as target with BRST insertion",
+          "gauge_invariance_claim": false,
+          "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+          "root": "70c19f0471737af2996f10c27ddaf2ea83ad45064a3705ad72d7ca5593323557",
+          "target_root": "eb5aadd28e7bba86b10aa304694729932e892a9f67418f15de7309d1bb41e53a"
+        },
+        "direction": "CM_ground",
+        "matching": {
+          "coefficient_selected": false,
+          "direction": "CM_ground",
+          "equation": "F_standard,3(mu;W_i)=F_project,3(mu;W_i)",
+          "project_side": "-g_s^2/2 sum_product T_CM_ground[product;W,K_Q0]",
+          "project_side_available": true,
+          "residual": "R_match,3=F_standard,3-F_project,3",
+          "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+          "root": "861bf1b1f6888b2fd34c0d3cf5df5c190776efc0196c58e94cc732cd82d9a8f3",
+          "standard_physical_side": null,
+          "standard_physical_side_available": false
+        },
+        "products": {
+          "direction": "CM_ground",
+          "root": "f2008b8899e75745e887a59c61aa3a5ea97ed421703438a37a4303e1da697927",
+          "rows": [
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_q",
+              "term": "T_CM_ground[J_qJ_q;W_3,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_g",
+              "term": "T_CM_ground[J_qJ_g;W_3,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_q",
+              "term": "T_CM_ground[J_gJ_q;W_3,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_g",
+              "term": "T_CM_ground[J_gJ_g;W_3,K_Q0]"
+            }
+          ],
+          "sum": "-g_s^2/2 sum_product T_CM_ground[product;W,K_Q0]"
+        },
+        "source_roots": [
+          "C43",
+          "C114",
+          "C115",
+          "C117",
+          "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950"
+        ],
+        "target": {
+          "Abel_order": "pair at fixed r, subtract, then r->1^-",
+          "C266_root": "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950",
+          "Q0": "finite-cell PV/Q0 prescription inherited C114",
+          "boundary_link_holonomy": "caller-bound and never averaged",
+          "direction": "CM_ground",
+          "evaluation_program": "normalize W_i; pair each ordered current product at fixed Abel r; apply conservation deltas; finite-HO project; sum products; take r->1^- only after pairing",
+          "numerical_value": null,
+          "orientation": "source-to-sink; Hermitian reversal published separately",
+          "packet_id": "C266-W3",
+          "parameter_domain": "k0_3>Delta_3>0, sigma_3>0, p0_3 in R2, mu>0",
+          "physical": false,
+          "regulated_value": "-g_s^2/2 sum_product T_CM_ground[product;W,K_Q0]",
+          "resolutions": [
+            "K9_2_N8_b0.40",
+            "K11_2_N8_b0.40",
+            "K13_2_N8_b0.40"
+          ],
+          "root": "eb5aadd28e7bba86b10aa304694729932e892a9f67418f15de7309d1bb41e53a",
+          "status": "PARAMETERIZED_EXECUTABLE",
+          "units": "Hamiltonian/current-functional units inherited from C114 and C264"
+        },
+        "uncertainty_root": "b5ec8c364e6773eea5861ae7e59f2a586a0a9e52ca3b0db32980b302e9ec19c3"
+      },
+      {
+        "Ward_ST": {
+          "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+          "claimed_zero": false,
+          "descendant": "T_triplet_projected[s(J_q+J_g);W_4,K_Q0] in the C203-C212 BRST/ST quotient",
+          "direction": "triplet_projected",
+          "evaluation": "same deterministic pairing program as target with BRST insertion",
+          "gauge_invariance_claim": false,
+          "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+          "root": "e1f03788dd15a40e241085e96509086428e8268821c8705d3defc3507eeb1d15",
+          "target_root": "21ee7c4aa46a06c4cb9141fb14a455a6ec383511eaa9b5187fdedb5829feef6c"
+        },
+        "direction": "triplet_projected",
+        "matching": {
+          "coefficient_selected": false,
+          "direction": "triplet_projected",
+          "equation": "F_standard,4(mu;W_i)=F_project,4(mu;W_i)",
+          "project_side": "-g_s^2/2 sum_product T_triplet_projected[product;W,K_Q0]",
+          "project_side_available": true,
+          "residual": "R_match,4=F_standard,4-F_project,4",
+          "residual_status": "SYMBOLIC_UNEVALUATED_STANDARD_SIDE_NOT_ZERO",
+          "root": "3e628cf3800f28cb7149a513159bf3d31fa642c042a26e2c93a28af24049aa71",
+          "standard_physical_side": null,
+          "standard_physical_side_available": false
+        },
+        "products": {
+          "direction": "triplet_projected",
+          "root": "8714b6d11a280bdf47ab787b642caeae20400e207f400536e6e7a250c6b52086",
+          "rows": [
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_q",
+              "term": "T_triplet_projected[J_qJ_q;W_4,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_qJ_g",
+              "term": "T_triplet_projected[J_qJ_g;W_4,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_q",
+              "term": "T_triplet_projected[J_gJ_q;W_4,K_Q0]"
+            },
+            {
+              "available": true,
+              "helicity": "C114 gamma+ or transverse-polarization derivative tensor retained",
+              "measure": "dk d2p dq d2q/(2pi)^6 with LF conservation distributions",
+              "ordered_color": "C114 source order retained",
+              "product": "J_gJ_g",
+              "term": "T_triplet_projected[J_gJ_g;W_4,K_Q0]"
+            }
+          ],
+          "sum": "-g_s^2/2 sum_product T_triplet_projected[product;W,K_Q0]"
+        },
+        "source_roots": [
+          "C43",
+          "C114",
+          "C115",
+          "C117",
+          "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950"
+        ],
+        "target": {
+          "Abel_order": "pair at fixed r, subtract, then r->1^-",
+          "C266_root": "945937e5ca5f64fde86c985a5c7b0fd1343424199846abfb9d963022b6333950",
+          "Q0": "finite-cell PV/Q0 prescription inherited C114",
+          "boundary_link_holonomy": "caller-bound and never averaged",
+          "direction": "triplet_projected",
+          "evaluation_program": "normalize W_i; pair each ordered current product at fixed Abel r; apply conservation deltas; finite-HO project; sum products; take r->1^- only after pairing",
+          "numerical_value": null,
+          "orientation": "source-to-sink; Hermitian reversal published separately",
+          "packet_id": "C266-W4",
+          "parameter_domain": "k0_4>Delta_4>0, sigma_4>0, p0_4 in R2, mu>0",
+          "physical": false,
+          "regulated_value": "-g_s^2/2 sum_product T_triplet_projected[product;W,K_Q0]",
+          "resolutions": [
+            "K9_2_N8_b0.40",
+            "K11_2_N8_b0.40",
+            "K13_2_N8_b0.40"
+          ],
+          "root": "21ee7c4aa46a06c4cb9141fb14a455a6ec383511eaa9b5187fdedb5829feef6c",
+          "status": "PARAMETERIZED_EXECUTABLE",
+          "units": "Hamiltonian/current-functional units inherited from C114 and C264"
+        },
+        "uncertainty_root": "b5ec8c364e6773eea5861ae7e59f2a586a0a9e52ca3b0db32980b302e9ec19c3"
+      }
+    ],
+    "schema": "C267-C117-NONLOCAL-TARGET-EVALUATION-V2"
+  },
+  "package_root": "26bb80bdbf2e61983e70c581f53b21a172a5d812cf44279fca3071d0f18ed20e",
+  "physical": false,
+  "plan": "C117NONLOCALTARGET2-B",
+  "schema": "C267-TARGET_EVALUATIONS-VALIDATION-V1",
+  "status": "C267_C117_PARAMETERIZED_NONLOCAL_TARGETS_READY_STANDARD_PHYSICAL_SIDE_UNAVAILABLE",
+  "validation": "PASS"
+}

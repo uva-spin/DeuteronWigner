@@ -1,0 +1,70 @@
+{
+  "schema": "C209-WAVEPACKET-ADAPTER-VALIDATION-V1",
+  "artifact": "wavepacket_adapter_validation",
+  "package_root": "fb0abd5750ea3684ad44fc05512dbd4e0765c0da5e721bdc51da4735326d9654",
+  "status": "C209_C208_CERTIFIED_RESOLUTION_LOCAL_MOMQ_WAVEPACKET_LIMIT_ADAPTER_READY_NO_EXACT_FINITE_POINT",
+  "plan": "MOMQMAP1-B",
+  "physical": false,
+  "exact_finite_point": false,
+  "resolution_average": false,
+  "continuum_extrapolation": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "evidence": [
+    "C208 authenticated MOMq definition",
+    "C140 finite-domain mismatch"
+  ],
+  "authority_record": {
+    "rows": [
+      {
+        "adapter_id": "C209-WP-K9",
+        "resolution": "K9",
+        "continuum_center": "caller symmetric MOMq momenta",
+        "finite_state": "orthogonal projection of normalized longitudinal/transverse momentum wavepacket",
+        "longitudinal_error": "caller-bound Poisson/tail enclosure",
+        "transverse_HO_error": "omitted-shell norm enclosure",
+        "invariant_error": "operator-Lipschitz bound from state error",
+        "exact": false,
+        "resolution_average": false,
+        "continuum_extrapolation": false,
+        "convergence": "L and HO cutoff limit with widths/scales explicitly controlled",
+        "physical": false
+      },
+      {
+        "adapter_id": "C209-WP-K11",
+        "resolution": "K11",
+        "continuum_center": "caller symmetric MOMq momenta",
+        "finite_state": "orthogonal projection of normalized longitudinal/transverse momentum wavepacket",
+        "longitudinal_error": "caller-bound Poisson/tail enclosure",
+        "transverse_HO_error": "omitted-shell norm enclosure",
+        "invariant_error": "operator-Lipschitz bound from state error",
+        "exact": false,
+        "resolution_average": false,
+        "continuum_extrapolation": false,
+        "convergence": "L and HO cutoff limit with widths/scales explicitly controlled",
+        "physical": false
+      },
+      {
+        "adapter_id": "C209-WP-K13",
+        "resolution": "K13",
+        "continuum_center": "caller symmetric MOMq momenta",
+        "finite_state": "orthogonal projection of normalized longitudinal/transverse momentum wavepacket",
+        "longitudinal_error": "caller-bound Poisson/tail enclosure",
+        "transverse_HO_error": "omitted-shell norm enclosure",
+        "invariant_error": "operator-Lipschitz bound from state error",
+        "exact": false,
+        "resolution_average": false,
+        "continuum_extrapolation": false,
+        "convergence": "L and HO cutoff limit with widths/scales explicitly controlled",
+        "physical": false
+      }
+    ],
+    "count": 3,
+    "certified_controlled_limit": true,
+    "root": "549fc4f56cfcd52f36abffde7161e75c280f0c35d445bb693e90feed7c8b6fc2"
+  }
+}

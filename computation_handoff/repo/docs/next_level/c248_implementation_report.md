@@ -1,0 +1,7 @@
+# C248/HQCDRIQUARKFIXEDKV2CURRENT1 implementation report
+
+Status: C248_C127_COMPLEMENT_PARAMETERIZATION_DEPENDENCY_AUDIT_READY_RETAINED_ID_FREE_WITNESS_MAP_INCOMPLETE
+Plan: RIQUARKFIXEDKV2CURRENT1-D
+C248 root: f3b1f7a66cfa8399133e1aea06b82f633adfca3ec6a37a542ad53ade8eb09586
+
+The retained C126/C127 authority is frozen; the complement witness-coordinate map remains the exact C249 frontier.

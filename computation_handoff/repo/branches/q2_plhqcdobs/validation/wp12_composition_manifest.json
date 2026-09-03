@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "canonical_scheme_id": "spin1_css_collins2011_rank_aware_v1",
+  "governing_rule": "Evolution consumes the resolved constituent parent, preserving proton-in-deuteron, neutron-in-deuteron, proton-minus-neutron, nucleon-sum, nuclear-correction, and canonical-total labels. The canonical total is a closure projection, never a substitute for the resolved state. Its retained impulse already contains the central Wilson operator; ordered CP maps replace legacy shadowing/antishadowing/off-shell blocks and the sourced NNpi correlator is included once. Every listed alternative replaces its named identity and is never added to the resolved parent.",
+  "components": [
+    {
+      "component_id": "wp12_resolved_constituent_parent",
+      "role": "baseline",
+      "status": "active",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "resolved_proton_neutron_nuclear_parent",
+      "source_artifact": "outputs/validation/wp12_resolved_nuclear_parent.json",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "composed_mixed_fit_wavefunction_CP_response",
+      "reason": "sole item-6 boundary; numerical TMD and correlator tables are wp12_resolved_quark_parent* and wp12_resolved_gluon_parent*. The canonical composed total is retained inside these tables only as an exact closure projection."
+    },
+    {
+      "component_id": "wp12_rich_nucleon_parent",
+      "role": "comparison_only",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "nucleon_fock_parent",
+      "source_artifact": "outputs/parent_tmds/quark_av18_rich_medium.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "mixed_fit_model",
+      "reason": "subsumed into the inspected canonical-composed parent"
+    },
+    {
+      "component_id": "wp12_shared_fock_oam_sensitivity",
+      "role": "alternative",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all nucleon leading-twist structures"],
+      "amplitude_identity": "nucleon_fock_parent",
+      "source_artifact": "outputs/parent_tmds/wp12_fock_oam_members.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "exclusive_with": ["wp12_resolved_constituent_parent"],
+      "evidence_class": "canonical-parent-ratio-informed correlated sensitivity",
+      "reason": "shared amplitude replacement member, never additive to fitted rich parent"
+    },
+    {
+      "component_id": "wp12_lf_nuclear_parent",
+      "role": "comparison_only",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "deuteron_lf_convolution",
+      "source_artifact": "outputs/parent_tmds/wp12_multikinematic/gluon_all_tmd_multix_q5.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "wavefunction_model",
+      "reason": "subsumed into the inspected canonical-composed parent"
+    },
+    {
+      "component_id": "wp12_wilson_central",
+      "role": "alternative",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all link-dependent projections"],
+      "amplitude_identity": "channel_resolved_wilson_operator",
+      "source_artifact": "outputs/parent_tmds/wp12_wilson_channel_members.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "exclusive_with": ["wp12_resolved_constituent_parent"],
+      "evidence_class": "model_eikonal",
+      "reason": "central member; soft/strong rows are correlated replacements"
+    },
+    {
+      "component_id": "wp12_nuclear_response_central",
+      "role": "alternative",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "operator_nuclear_response",
+      "source_artifact": "outputs/parent_tmds/wp12_operator_response_members.correlators.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "exclusive_with": ["wp12_resolved_constituent_parent"],
+      "evidence_class": "phenomenology_anchor_plus_cp_model",
+      "reason": "central ordered CP-map member replaces the legacy coefficient response; weak/strong are correlated replacements"
+    },
+    {
+      "component_id": "wp12_sourced_nnpi",
+      "role": "comparison_only",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["supported full NNpi parent"],
+      "amplitude_identity": "NNpi_sullivan",
+      "source_artifact": "outputs/parent_tmds/quark_av18_rich_medium.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "published_model_plus_pdf"
+    },
+    {
+      "component_id": "wp12_generic_nnpi_interface",
+      "role": "alternative",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "NNpi_sullivan",
+      "source_artifact": "outputs/parent_tmds/wp12_nonnucleonic_transverse.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "exclusive_with": ["wp12_sourced_nnpi"],
+      "evidence_class": "sensitivity",
+      "reason": "zero-centered generic interface; activating beside sourced NNpi is double counting"
+    },
+    {
+      "component_id": "wp12_deltadelta_sensitivity",
+      "role": "uncertainty_member",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "DeltaDelta_parent",
+      "source_artifact": "outputs/parent_tmds/wp12_nonnucleonic_transverse.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "zero_centered_sensitivity"
+    },
+    {
+      "component_id": "wp12_hidden_color_sensitivity",
+      "role": "uncertainty_member",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "hidden_color_parent",
+      "source_artifact": "outputs/parent_tmds/wp12_nonnucleonic_transverse.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "zero_centered_sensitivity"
+    },
+    {
+      "component_id": "wp12_src_sensitivity",
+      "role": "uncertainty_member",
+      "status": "excluded",
+      "sectors": ["quark", "antiquark", "gluon"],
+      "tmds": ["all"],
+      "amplitude_identity": "SRC_parent",
+      "source_artifact": "outputs/parent_tmds/wp12_nonnucleonic_transverse.csv",
+      "scheme_id": "spin1_css_collins2011_rank_aware_v1",
+      "evidence_class": "zero_centered_sensitivity"
+    }
+  ]
+}

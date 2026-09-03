@@ -1,0 +1,33 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "bound_program_validation",
+  "authority_record": {
+    "complete": false,
+    "core_bounds_ready": 0,
+    "factorizations_ready": 8,
+    "growth_constants_ready": 0,
+    "numeric_quadrature_promoted": false,
+    "root": "3449b2daab15a9ad5ad41bf3b18378a3c7e334e3d31f7b1d6d77a185396a6459",
+    "stages": [
+      "extract algebraic q-degree and positive denominators",
+      "isolate source critical points",
+      "directed core interval enclosure",
+      "Laguerre coefficient absolute majorant",
+      "upper incomplete-gamma Gaussian tail",
+      "sum directed core and tail errors"
+    ],
+    "tail_bounds_ready": 0
+  },
+  "certified_bounds": 0,
+  "package_root": "19c962b163d744e3868c050d0cc722c6b9087d2149c535bc03a6720c057c030f",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVRADBOUND1-D",
+  "quadrature_promoted": 0,
+  "radial_factors": 8,
+  "schema": "C230-BOUND-PROGRAM-VALIDATION-V1",
+  "status": "C230_EIGHT_EXACT_RADIAL_FACTORS_SOURCE_BOUND_CERTIFIED_GROWTH_CONSTANTS_AND_CORE_TAIL_BOUNDS_INCOMPLETE"
+}

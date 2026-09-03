@@ -1,0 +1,42 @@
+{
+  "generator_code_sha256": "6571218edf7ec74b156c922cc28972a19bacdde63404a905d1b14a0747405fc7",
+  "new_sources": [
+    {
+      "archive_bytes": 679245,
+      "archive_path": "data/raw/c45_sources/0905.1411v1.tar",
+      "archive_sha256": "e9855dccbb1541d42a00716d50d68de28245f4fdcef3db51154d5c54af7f2281",
+      "arxiv": "0905.1411v1",
+      "download_command": "curl -fL https://arxiv.org/pdf/0905.1411v1 -o data/raw/c45_sources/0905.1411v1.pdf; curl -fL https://arxiv.org/e-print/0905.1411v1 -o data/raw/c45_sources/0905.1411v1.tar",
+      "official_host": "arxiv.org",
+      "pdf_bytes": 576233,
+      "pdf_pages": 32,
+      "pdf_path": "data/raw/c45_sources/0905.1411v1.pdf",
+      "pdf_sha256": "51a697793f92c558012f4b7b5e8e06567c748813468e13698be01ae93e4d5eac",
+      "roles": [
+        "LONGITUDINAL_COMPACTIFICATION_AUTHORITY",
+        "TWO_DIMENSIONAL_HO_AUTHORITY"
+      ],
+      "title": "Hamiltonian light-front field theory in a basis function approach"
+    },
+    {
+      "archive_bytes": 419267,
+      "archive_path": "data/raw/c45_sources/1311.2980v1.tar",
+      "archive_sha256": "ef4348bfbdab07ab6dbe764b5718b71e54a0d2f746fe023b763e54c7a9d0fea4",
+      "arxiv": "1311.2980v1",
+      "download_command": "curl -fL https://arxiv.org/pdf/1311.2980v1 -o data/raw/c45_sources/1311.2980v1.pdf; curl -fL https://arxiv.org/e-print/1311.2980v1 -o data/raw/c45_sources/1311.2980v1.tar",
+      "official_host": "arxiv.org",
+      "pdf_bytes": 245464,
+      "pdf_pages": 10,
+      "pdf_path": "data/raw/c45_sources/1311.2980v1.pdf",
+      "pdf_sha256": "c4e16ca9d4680a5c005c5bd642d02cb753a318b8154b4590bdcf84197567f8b2",
+      "roles": [
+        "LONGITUDINAL_COMPACTIFICATION_AUTHORITY",
+        "TWO_DIMENSIONAL_HO_AUTHORITY",
+        "GLOBAL_COLOR_CONSTRAINT_AUTHORITY"
+      ],
+      "title": "Introduction to Basis Light-Front Quantization Approach to QCD Bound State Problems"
+    }
+  ],
+  "reused_c43_source_manifest": "docs/next_level/c43_primary_source_manifest.json",
+  "status": "HASH_LOCKED"
+}

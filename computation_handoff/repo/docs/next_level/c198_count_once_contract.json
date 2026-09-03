@@ -1,0 +1,7 @@
+{
+  "package": "C198/HQCDST2",
+  "purpose": "Count-once ownership for ST rows, sensitivities, interfaces, and conditional families.",
+  "owner_rule": "Each object has one primitive owner; aggregate and crosswalk records reference but do not add it.",
+  "forbidden": ["retained-plus-complete summation", "counterterm sensitivity as solution", "null sensitivity as selected representative", "holonomy fixture summation", "boundary interface as multiplicative factor", "restricted coupling as physical coupling"],
+  "source_root": "8b84fc1744ffc15c6b9fe2c9064f178974d4977a08095cc1d9d123e20017f709"
+}

@@ -1,0 +1,120 @@
+{
+  "package_root": "56dffa25b74fc6a8b11e0d8da67621eff76006ea03fe863ca5c1daf6063c70ef",
+  "physical": false,
+  "plan": "RIMASSC43KHARMONIC1-A",
+  "record": {
+    "C315_exact": true,
+    "boson_counts": [
+      4,
+      5,
+      6
+    ],
+    "fermion_counts": [
+      5,
+      6,
+      7
+    ],
+    "nested": true,
+    "root": "408013b74d4947dbb0275e1fa05ff6f26fd50d50d65a4c8b2827430d811c3b08",
+    "rows": [
+      {
+        "K2": 9,
+        "boson": {
+          "K": "9/2",
+          "count": 4,
+          "modes": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "phase": "PBC_POSITIVE_NONZERO",
+          "root": "9310a1594ba5722e001fed92068c44a4ae785aeaee6f0ba5b0def8c871d6677b",
+          "zero_included": false
+        },
+        "fermion": {
+          "K": "9/2",
+          "count": 5,
+          "modes": [
+            "1/2",
+            "3/2",
+            "5/2",
+            "7/2",
+            "9/2"
+          ],
+          "phase": "APBC_HALF_INTEGER",
+          "root": "3184543ebec210c3654a6c647873988b3b8c502ecd3f236abcd6d8886b6f6179",
+          "zero_included": false
+        }
+      },
+      {
+        "K2": 11,
+        "boson": {
+          "K": "11/2",
+          "count": 5,
+          "modes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "phase": "PBC_POSITIVE_NONZERO",
+          "root": "9fa92a345b266b8d97c95f03d3fb74d814bd09f7c5114aa6da6c7604df6db57f",
+          "zero_included": false
+        },
+        "fermion": {
+          "K": "11/2",
+          "count": 6,
+          "modes": [
+            "1/2",
+            "3/2",
+            "5/2",
+            "7/2",
+            "9/2",
+            "11/2"
+          ],
+          "phase": "APBC_HALF_INTEGER",
+          "root": "452fd17cce2e2a05fc90fc1a08435c8a48928f592d924afa3effcfa756407173",
+          "zero_included": false
+        }
+      },
+      {
+        "K2": 13,
+        "boson": {
+          "K": "13/2",
+          "count": 6,
+          "modes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "phase": "PBC_POSITIVE_NONZERO",
+          "root": "9736b0eac0e1749905f132bd2532c44e191e84070ab13c196085e879c5bcc471",
+          "zero_included": false
+        },
+        "fermion": {
+          "K": "13/2",
+          "count": 7,
+          "modes": [
+            "1/2",
+            "3/2",
+            "5/2",
+            "7/2",
+            "9/2",
+            "11/2",
+            "13/2"
+          ],
+          "phase": "APBC_HALF_INTEGER",
+          "root": "5336331c9e3811cae0184dfeb4f507506a4abeb22c92434671eeafc267636acb",
+          "zero_included": false
+        }
+      }
+    ]
+  },
+  "status": "C328_FINITE_APBC_PBC_DLCQ_HARMONIC_DETERMINANT_ADAPTER_READY_K_DEPENDENT_SEQUENCE_MISSING",
+  "validation": "PASS"
+}

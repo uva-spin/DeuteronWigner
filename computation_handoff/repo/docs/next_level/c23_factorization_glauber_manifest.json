@@ -1,0 +1,72 @@
+{
+  "certificates": [
+    {
+      "analytic_only": true,
+      "certificate_id": "C23:CERT:DY",
+      "color_entanglement": "ABSENT_COLOR_SINGLET",
+      "content_hash": "e0a69e790a71a4c345a81b63c38b53f2346c658f69447d0e61662a4d99e7218f",
+      "domain": "qT/Q<0.25",
+      "executable": true,
+      "factorization_status": "ESTABLISHED_ANALYTIC",
+      "glauber_status": "CANCELLATION_ASSUMED_IN_ANALYTIC_THEOREM_DOMAIN",
+      "leading_regions": [
+        "two_collinear",
+        "soft",
+        "hard"
+      ],
+      "soft_decoupling": "ANALYTIC_SQRT_SOFT"
+    },
+    {
+      "analytic_only": true,
+      "certificate_id": "C23:CERT:SIDIS",
+      "color_entanglement": "ABSENT_CURRENT_FRAGMENTATION",
+      "content_hash": "ddfffcdb0d6eaa6722e80821a58bf8ea0e06cb7dbc279d80b2b4e8b7f34d7445",
+      "domain": "current_fragmentation;qT/Q<0.25",
+      "executable": true,
+      "factorization_status": "ESTABLISHED_ANALYTIC",
+      "glauber_status": "DEFORMATION_ASSUMED_IN_ANALYTIC_THEOREM_DOMAIN",
+      "leading_regions": [
+        "target_collinear",
+        "jet_collinear",
+        "soft",
+        "hard"
+      ],
+      "soft_decoupling": "ANALYTIC_SQRT_SOFT"
+    },
+    {
+      "analytic_only": true,
+      "certificate_id": "C23:CERT:HQDIS",
+      "color_entanglement": "PROCESS_SPECIFIC_COLOR_MATRIX",
+      "content_hash": "a33f5d348f2532d9a8f770897ef5e1ff6c5ba687b8b71dc5ae52315f022559a7",
+      "domain": "synthetic heavy-pair DIS benchmark",
+      "executable": true,
+      "factorization_status": "CONDITIONAL_ANALYTIC",
+      "glauber_status": "CONDITIONAL_PROCESS_SOFT_MATRIX",
+      "leading_regions": [
+        "target_collinear",
+        "heavy_pair",
+        "soft",
+        "hard"
+      ],
+      "soft_decoupling": "ANALYTIC_PROCESS_SOFT_MATRIX"
+    },
+    {
+      "analytic_only": true,
+      "certificate_id": "C23:CERT:BROKEN",
+      "color_entanglement": "COLOR_ENTANGLED",
+      "content_hash": "8141db4e2754444b672bfc18133bc87eb9a68438f01932f404c430c54f5af580",
+      "domain": "negative control",
+      "executable": false,
+      "factorization_status": "BROKEN",
+      "glauber_status": "FAILED",
+      "leading_regions": [
+        "multi_collinear",
+        "soft"
+      ],
+      "soft_decoupling": "NOT_DECOUPLED"
+    }
+  ],
+  "colored_hadroproduction_negative_control": true,
+  "nuclear_glauber_distinct_partonic_link": true,
+  "schema_version": "1.0.0"
+}

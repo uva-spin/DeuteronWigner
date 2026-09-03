@@ -1,0 +1,135 @@
+{
+  "count": 6,
+  "direct_not_sequential": true,
+  "root": "ef3ba51b0df41720fc3e4ebfe4d2bd67f7d8061583af897a88c551e299cc3980",
+  "rows": [
+    {
+      "HO_CM": "candidate finite-HO/CM interface",
+      "color_order": "ordered T^a T^b/T^b T^a candidate",
+      "coupling_degree": 2,
+      "hermitian_partner": true,
+      "longitudinal_denominator": "C43 PV/instantaneous prescription",
+      "matrix_status": "SOURCE_UNAVAILABLE_TYPED",
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "orientation": "both typed",
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "particle_number_change": "q<->qgg",
+      "quark_identity": "same external q",
+      "source_monomial": "C43 instantaneous fermion",
+      "source_root": "C112 public instantaneous-fermion authority",
+      "spin_polarization": "source scope not qgg-closed",
+      "terminal": "NOT_ZERO_SOURCE_SCOPE_INCOMPLETE",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "HO_CM": "candidate finite-HO/CM interface",
+      "color_order": "ordered candidate",
+      "coupling_degree": 2,
+      "hermitian_partner": true,
+      "longitudinal_denominator": "C43 PV/constraint prescription",
+      "matrix_status": "SOURCE_UNAVAILABLE_TYPED",
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "orientation": "both typed",
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "particle_number_change": "q<->qgg",
+      "quark_identity": "same external q",
+      "source_monomial": "C43 Gauss/current",
+      "source_root": "C127 public current/Gauss authority",
+      "spin_polarization": "source scope not qgg-closed",
+      "terminal": "NOT_ZERO_SOURCE_SCOPE_INCOMPLETE",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "HO_CM": "omitted qgg interface",
+      "color_order": "ordered G4 descendant candidate",
+      "coupling_degree": 2,
+      "hermitian_partner": true,
+      "longitudinal_denominator": "none; direct source",
+      "matrix_status": "SOURCE_NONZERO_NONMATRIX_INTERFACE",
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "orientation": "both typed",
+      "owner_id": "C129_G4_DIRECT_NORMAL_ORDERED_QGG",
+      "particle_number_change": "q<->qgg",
+      "quark_identity": "same external q",
+      "source_monomial": "C43-G4",
+      "source_root": "7f757f3989eac34956ad3b4d5e1398b38bbf4f648532165c8b0e3fcd8ff9240d",
+      "spin_polarization": "source-qualified pure-glue descendant",
+      "terminal": "SOURCE_NONZERO_NOT_RETAINED_AS_MATRIX",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "HO_CM": "qgg projection unavailable",
+      "color_order": "C43-normalized order unresolved",
+      "coupling_degree": 2,
+      "hermitian_partner": true,
+      "longitudinal_denominator": "none; direct source",
+      "matrix_status": "SOURCE_UNAVAILABLE_TYPED",
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "orientation": "both typed",
+      "owner_id": "C131_LOCAL_POLYNOMIAL_QGG",
+      "particle_number_change": "q<->qgg",
+      "quark_identity": "same external q",
+      "source_monomial": "C131 degree-two projected polynomial",
+      "source_root": "67ab09bdc4ef7960a7d39ee35c243cec5c6537087012ea6283d5b4da8259cbd4",
+      "spin_polarization": "local polynomial scope qg diagonal",
+      "terminal": "NOT_ZERO_SOURCE_SCOPE_INCOMPLETE",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "HO_CM": "boundary-owned finite-HO leakage",
+      "color_order": "ordered residual-link adjoint",
+      "coupling_degree": 2,
+      "hermitian_partner": true,
+      "longitudinal_denominator": "PV interface unchanged",
+      "matrix_status": "NONMATRIX_BOUNDARY_INTERFACE",
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "orientation": "both typed",
+      "owner_id": "C182_RESIDUAL_LINK_DEGREE2_QGG",
+      "particle_number_change": "q<->qgg interface",
+      "quark_identity": "same external q",
+      "source_monomial": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1 degree two",
+      "source_root": "e15ddb709701d5a5e2e9df5eaba674cc9c4cb365aef76cad68189b6e542291a4",
+      "spin_polarization": "nonmatrix boundary/link",
+      "terminal": "SOURCE_NONZERO_NONMATRIX_INTERFACE",
+      "units": "symbolic link coefficient"
+    },
+    {
+      "HO_CM": "finite-shell boundary owned",
+      "color_order": "not promoted",
+      "coupling_degree": 2,
+      "hermitian_partner": true,
+      "longitudinal_denominator": "PV interface unchanged",
+      "matrix_status": "NONMATRIX_BOUNDARY_INTERFACE",
+      "ordered_gluon_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "orientation": "both typed",
+      "owner_id": "C130_BOUNDARY_NONMATRIX_QGG",
+      "particle_number_change": "q<->qgg interface",
+      "quark_identity": "same external q",
+      "source_monomial": "C130 boundary interface",
+      "source_root": "C130 residual/zero-mode/boundary authority",
+      "spin_polarization": "boundary/nonmatrix",
+      "terminal": "SOURCE_NONZERO_NONMATRIX_INTERFACE",
+      "units": "typed interface"
+    }
+  ],
+  "schema": "C186-ORDER2-OWNER-V1",
+  "unavailable_not_zero": true
+}

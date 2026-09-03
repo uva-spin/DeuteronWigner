@@ -1,0 +1,29 @@
+{
+  "basis": "ALGORITHMIC_PAULI_TENSOR_GRAM_V1",
+  "degenerate_rank": 8,
+  "generic_rank": 16,
+  "maximum_reconstruction_residual": 0.0,
+  "pseudoinverse_used": false,
+  "rows": [
+    {
+      "rank": 16,
+      "residual": 0.0,
+      "species": "g",
+      "status": "GENERIC_COMPLETE",
+      "target": "PROTON"
+    },
+    {
+      "rank": 16,
+      "residual": 0.0,
+      "species": "g",
+      "status": "GENERIC_COMPLETE",
+      "target": "NEUTRON"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sectors": [
+    "trace",
+    "circular_helicity",
+    "linear_symmetric_traceless"
+  ]
+}

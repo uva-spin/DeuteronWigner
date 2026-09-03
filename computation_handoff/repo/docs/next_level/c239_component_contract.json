@@ -1,0 +1,47 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "component_contract",
+  "authority_record": {
+    "complement_ready": 0,
+    "count": 3,
+    "owned": 3,
+    "root": "c7cdbfbcbeee9ef789529ad8dd3a94f195e30860d4603db7b4522ae109a3a82a",
+    "rows": [
+      {
+        "complement_primitive_ready": false,
+        "component": "instantaneous_fermion",
+        "coupling_degree": 2,
+        "owner": "C112",
+        "retained_matrix_ready": true,
+        "source": "C43 constrained bad-fermion term"
+      },
+      {
+        "complement_primitive_ready": false,
+        "component": "instantaneous_current",
+        "coupling_degree": 2,
+        "owner": "C127",
+        "retained_matrix_ready": true,
+        "source": "C43 Gauss/current term"
+      },
+      {
+        "complement_primitive_ready": false,
+        "component": "gluon_normal_ordering",
+        "coupling_degree": 2,
+        "owner": "C129",
+        "retained_matrix_ready": true,
+        "source": "C43 normal-ordered gluon descendants"
+      }
+    ]
+  },
+  "complement_primitives": 0,
+  "components_owned": 3,
+  "package_root": "cbaa6d3958c08e3d21df6763c16eb958eb5448079e1d69549c4fc63800d7beb6",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKV2OP1-D",
+  "schema": "C239-COMPONENT-CONTRACT-V1",
+  "status": "C239_OMITTED_V2_COMPONENT_DOMAIN_AND_OWNERSHIP_READY_COMPLEMENT_MODE_PRIMITIVES_INCOMPLETE"
+}

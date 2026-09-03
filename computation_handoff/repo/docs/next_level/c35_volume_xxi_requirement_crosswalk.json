@@ -1,0 +1,1191 @@
+{
+  "all_ids_unique": true,
+  "content_hash": "31eebf2b4f8b8ae1ea4819b0028167a11d1fcfa6c1fe2b0b78bef91a1d1ea05d",
+  "count": 65,
+  "crosswalk_id": "C35.V21.REQUIREMENT.CROSSWALK.v1",
+  "positive_finite_basis_one_loop_claimed": false,
+  "rows": [
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "family": "LAYER",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.LAYER.1",
+      "requirement_tex": "Keep the C11 model density, project renormalized TMD, and ART25 optimal TMD as distinct typed layers.",
+      "source_line": 1671
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c31_three_layer_identity_manifest.json",
+        "docs/next_level/c31_continuum_scheme_equivalence_matrix.json"
+      ],
+      "family": "LAYER",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.LAYER.2",
+      "requirement_tex": "Forbid continuum scheme equivalence from acting directly on an unmatched finite-basis density.",
+      "source_line": 1672
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "family": "ROOT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ROOT.1",
+      "requirement_tex": "Keep baryon-number-one collinear and baryon-number-zero soft Hilbert roots disjoint.",
+      "source_line": 1673
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "family": "ROOT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ROOT.2",
+      "requirement_tex": "Forbid the vacuum soft root from entering the proton-state probability normalization.",
+      "source_line": 1674
+    },
+    {
+      "c34_status": "C34_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_two_root_tmd_identity.json",
+        "docs/next_level/c33_soft_collinear_provenance_graph.json",
+        "docs/next_level/c34_soft_collinear_continuation_contract.json"
+      ],
+      "family": "ROOT",
+      "owner": "C34/S0A_TYPED_CONTRACT",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ROOT.3",
+      "requirement_tex": "Join the roots only through a content-addressed joint-regulator and overlap contract.",
+      "source_line": 1675
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.OP.1",
+      "requirement_tex": "Preserve the historical C11 root and create a versioned completed staple-operator root.",
+      "source_line": 1676
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.OP.2",
+      "requirement_tex": "Store active field, Dirac projection, staple direction, transverse closure, color representation, path ordering, and normalization.",
+      "source_line": 1677
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.OP.3",
+      "requirement_tex": "Preserve separate positive-\\(x\\) quark and antiquark identities and anti-fundamental Wilson action.",
+      "source_line": 1678
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.OP.4",
+      "requirement_tex": "Require exact tree reduction to C11 before one-loop matching.",
+      "source_line": 1679
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_operator_completion_manifest.json",
+        "docs/next_level/c32_c11_tree_reduction_report.json"
+      ],
+      "family": "OP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.OP.5",
+      "requirement_tex": "Treat Wilson order zero only as a tree-level operator limit.",
+      "source_line": 1680
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.REG.1",
+      "requirement_tex": "Store \\(K,N_{\\max},b_{\\mathrm{HO}},\\lambda_H,x_{\\min}\\), boundary, endpoint, and zero-mode data.",
+      "source_line": 1681
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.REG.2",
+      "requirement_tex": "Freeze common partonic IR, gauge, and rapidity plans before one-loop calculation.",
+      "source_line": 1682
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.REG.3",
+      "requirement_tex": "Forbid a finite basis from being called a rapidity regulator without proof.",
+      "source_line": 1683
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_regulator_plan_manifest.json",
+        "docs/next_level/c32_partonic_external_state_plan.json",
+        "docs/next_level/c32_gauge_plan.json",
+        "docs/next_level/c32_rapidity_plan.json",
+        "docs/next_level/c33_soft_basis_trajectory_plan.json",
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json"
+      ],
+      "family": "REG",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.REG.4",
+      "requirement_tex": "Require at least three nested regulator points for any continuum claim.",
+      "source_line": 1684
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.COLL.1",
+      "requirement_tex": "Maintain a complete one-loop collinear diagram and counterterm ledger.",
+      "source_line": 1685
+    },
+    {
+      "c34_status": "C34_FAIL_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "owner": "C34/S0A_BRANCH_G_GUARD",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.COLL.2",
+      "requirement_tex": "Forbid absent real, virtual, Wilson, instantaneous, boundary, endpoint, zero-mode, or mixing terms from being silently zero.",
+      "source_line": 1686
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.COLL.3",
+      "requirement_tex": "Preserve exact delta, plus, regular, convolution, and Mellin distribution algebra.",
+      "source_line": 1687
+    },
+    {
+      "c34_status": "C34_FAIL_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_partonic_diagram_ledger.json",
+        "docs/next_level/c32_counterterm_ledger.json",
+        "docs/next_level/c32_distributional_result_library.json",
+        "docs/next_level/c32_microscopic_unsubtracted_correlator.json"
+      ],
+      "family": "COLL",
+      "owner": "C34/S0A_BRANCH_G_GUARD",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.COLL.4",
+      "requirement_tex": "Keep the microscopic unsubtracted correlator unavailable beyond tree level until its gates pass.",
+      "source_line": 1688
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.1",
+      "requirement_tex": "Construct a distinct finite vacuum plus soft-gluon Hilbert space for a microscopic soft claim.",
+      "source_line": 1689
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.2",
+      "requirement_tex": "Represent the complete four-line fundamental/conjugate Wilson geometry and singlet color trace.",
+      "source_line": 1690
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.3",
+      "requirement_tex": "Require the tree soft factor to equal one exactly.",
+      "source_line": 1691
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.4",
+      "requirement_tex": "Derive modified-\\(\\delta\\) signs from stored line, momentum, Fourier, and \\(i0\\) conventions.",
+      "source_line": 1692
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.5",
+      "requirement_tex": "Maintain a complete one-loop soft diagram and counterterm ledger.",
+      "source_line": 1693
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.6",
+      "requirement_tex": "Keep direct finite-Fock, auxiliary-field, and continuum-oracle soft plans mutually exclusive.",
+      "source_line": 1694
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_vacuum_hilbert_manifest.json",
+        "docs/next_level/c33_four_line_operator_manifest.json",
+        "docs/next_level/c33_bare_soft_factor.json",
+        "docs/next_level/c33_soft_diagram_ledger.json",
+        "docs/next_level/c33_soft_counterterm_ledger.json",
+        "docs/next_level/c33_soft_sector_plan_manifest.json",
+        "docs/next_level/c33_continuum_soft_oracle.json",
+        "docs/next_level/c34_soft_diagram_results.json"
+      ],
+      "family": "SOFT",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.SOFT.7",
+      "requirement_tex": "Forbid importing a continuum soft function as the finite-basis microscopic result.",
+      "source_line": 1695
+    },
+    {
+      "c34_status": "C34_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "family": "UV",
+      "owner": "C34/S0A_TYPED_CONTRACT",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.UV.1",
+      "requirement_tex": "Separate field, bilocal, Wilson self-energy, cusp/endpoint, vacuum, residual-mass, and basis UV counterterms.",
+      "source_line": 1696
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "family": "UV",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.UV.2",
+      "requirement_tex": "Separate logarithmic UV terms from power divergences and finite constants.",
+      "source_line": 1697
+    },
+    {
+      "c34_status": "C34_FAIL_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_uv_renormalization.json",
+        "docs/next_level/c33_soft_uv_anomalous_dimension_report.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_uv_structure.json",
+        "docs/next_level/c34_soft_uv_counterterm_solution.json"
+      ],
+      "family": "UV",
+      "owner": "C34/S0A_BRANCH_G_GUARD",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.UV.3",
+      "requirement_tex": "Require target UV anomalous-dimension closure for a positive status.",
+      "source_line": 1698
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "family": "RAP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.RAP.1",
+      "requirement_tex": "Keep bare rapidity dependence, rapidity counterterm, and renormalized object separate.",
+      "source_line": 1699
+    },
+    {
+      "c34_status": "C34_FAIL_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "family": "RAP",
+      "owner": "C34/S0A_BRANCH_G_GUARD",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.RAP.2",
+      "requirement_tex": "Require regulator cancellation, gauge independence, and future/past equality for a positive rapidity status.",
+      "source_line": 1700
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "family": "RAP",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.RAP.3",
+      "requirement_tex": "Store the exact rapidity-derivative and Collins--Soper sign convention.",
+      "source_line": 1701
+    },
+    {
+      "c34_status": "C34_FAIL_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_rapidity_regulator_manifest.json",
+        "docs/next_level/c33_soft_rapidity_renormalization.json",
+        "docs/next_level/c33_soft_rapidity_anomalous_dimension.json",
+        "docs/next_level/c34_soft_rapidity_structure.json",
+        "docs/next_level/c34_cusp_consistency_report.json"
+      ],
+      "family": "RAP",
+      "owner": "C34/S0A_BRANCH_G_GUARD",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.RAP.4",
+      "requirement_tex": "Require \\(\\dd\\cD/\\dd\\ln\\mu=\\Gamma_{\\mathrm{cusp}}\\) at the declared order.",
+      "source_line": 1702
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "family": "ZERO",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ZERO.1",
+      "requirement_tex": "Define a typed collinear-to-soft zero-bin or overlap map.",
+      "source_line": 1703
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "family": "ZERO",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ZERO.2",
+      "requirement_tex": "Place the overlap subtraction exactly once.",
+      "source_line": 1704
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "family": "ZERO",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ZERO.3",
+      "requirement_tex": "Require signed nonzero missing- and duplicate-subtraction controls.",
+      "source_line": 1705
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_zero_bin_interface_contract.json",
+        "docs/next_level/c33_soft_collinear_compatibility_report.json",
+        "docs/next_level/c33_soft_regulator_remainder.json",
+        "docs/next_level/c34_soft_side_zero_bin_limit.json"
+      ],
+      "family": "ZERO",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ZERO.4",
+      "requirement_tex": "Treat soft-division and zero-bin equivalence as conditional and remainder-bearing.",
+      "source_line": 1706
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "ORACLE",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ORACLE.1",
+      "requirement_tex": "Evaluate a source-qualified target project partonic TMD with the same external-state IR prescription.",
+      "source_line": 1707
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_project_partonic_tmd_oracle.json",
+        "docs/next_level/c32_project_oracle_validation_report.json",
+        "docs/next_level/c33_continuum_soft_oracle.json"
+      ],
+      "family": "ORACLE",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ORACLE.2",
+      "requirement_tex": "Preserve target delta, plus, regular, anomalous-dimension, and moment structures.",
+      "source_line": 1708
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.1",
+      "requirement_tex": "Extract LF-to-project matching from a common-IR partonic difference, never a hadron-level ratio.",
+      "source_line": 1709
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.2",
+      "requirement_tex": "Decide \\(q\\leftarrow q\\), \\(q\\leftarrow g\\), \\(q\\leftarrow\\bar q\\), singlet, and nonsinglet channel status.",
+      "source_line": 1710
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.3",
+      "requirement_tex": "Require matching kernels to be state, hadron, ART25-member, and data independent.",
+      "source_line": 1711
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.4",
+      "requirement_tex": "Require infrared finiteness and gauge independence for a positive matching status.",
+      "source_line": 1712
+    },
+    {
+      "c34_status": "LATER_PACKAGE_DEFERRED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "C35_FAIL_CLOSED_BRANCH_G",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C35_AFTER_C34_SOFT_COMPLETION",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.5",
+      "requirement_tex": "Preserve the first omitted order and nonzero remainder.",
+      "source_line": 1713
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.6",
+      "requirement_tex": "Require finite-scheme factors to carry hard-factor companion transformations.",
+      "source_line": 1714
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c32_lf_to_project_matching_library.json",
+        "docs/next_level/c32_matching_channel_matrix.json",
+        "docs/next_level/c32_matching_remainder_manifest.json",
+        "docs/next_level/c31_hard_tmd_companion_transformation.json",
+        "docs/next_level/c31_scheme_versus_scale_decomposition.json"
+      ],
+      "family": "MATCH",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.MATCH.7",
+      "requirement_tex": "Keep project-to-ART25 scheme, scale, evolution, threshold, FNP, and CS maps separate.",
+      "source_line": 1715
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "family": "TRAJ",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.TRAJ.1",
+      "requirement_tex": "Separate logarithmic cutoff, finite conversion, power, endpoint, zero-mode, and numerical terms.",
+      "source_line": 1716
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "family": "TRAJ",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.TRAJ.2",
+      "requirement_tex": "Fit only analytically predicted regulator structures.",
+      "source_line": 1717
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_basis_trajectory.json",
+        "docs/next_level/c33_soft_continuum_extrapolation.json",
+        "docs/next_level/c33_soft_remainder_separation.json",
+        "docs/next_level/c34_soft_basis_trajectory.json"
+      ],
+      "family": "TRAJ",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.TRAJ.3",
+      "requirement_tex": "Forbid ART25 residuals from selecting regulator trajectories or counterterms.",
+      "source_line": 1718
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "family": "TN",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.TN.1",
+      "requirement_tex": "Keep hadronic and vacuum-soft tensor networks as separate roots.",
+      "source_line": 1719
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "family": "TN",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.TN.2",
+      "requirement_tex": "Treat bond dimension as an observable-specific numerical/truncation axis.",
+      "source_line": 1720
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_tensor_network_manifest.json",
+        "docs/next_level/c34_soft_tensor_network_execution.json"
+      ],
+      "family": "TN",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.TN.3",
+      "requirement_tex": "Forbid energy convergence from substituting for TMD, soft, or matching convergence.",
+      "source_line": 1721
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json",
+        "docs/next_level/c34_soft_quantum_interface_update.json"
+      ],
+      "family": "Q",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.Q.1",
+      "requirement_tex": "Keep quantum state preparation separate from the renormalization and matching compiler.",
+      "source_line": 1722
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_soft_quantum_interface_contract.json",
+        "docs/next_level/c34_soft_quantum_interface_update.json"
+      ],
+      "family": "Q",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.Q.2",
+      "requirement_tex": "Forbid a QDNN from learning missing UV, soft, rapidity, or zero-bin terms from data.",
+      "source_line": 1723
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.BRIDGE.1",
+      "requirement_tex": "Keep all twelve frozen rank-zero proton points common-domain-only until every gate closes.",
+      "source_line": 1724
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.BRIDGE.2",
+      "requirement_tex": "Preserve the empty-not-zero \\(642\\times0\\) representation when microscopic coordinates are unavailable.",
+      "source_line": 1725
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.BRIDGE.3",
+      "requirement_tex": "Preserve all external member identities, covariance rank, and null spaces after any later projection.",
+      "source_line": 1726
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.BRIDGE.4",
+      "requirement_tex": "Keep the cross-root relation \\texttt{NO\\_JOINT\\_MEASURE}.",
+      "source_line": 1727
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c33_regression_report.json"
+      ],
+      "family": "BRIDGE",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.BRIDGE.5",
+      "requirement_tex": "Preserve ART25 data ancestry and compressed-constraint/direct-data exclusivity.",
+      "source_line": 1728
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "family": "STATUS",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.STATUS.1",
+      "requirement_tex": "Permit rigorous tree-level-only, soft-sector, regulator, state-independence, and trajectory no-go results.",
+      "source_line": 1729
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "family": "STATUS",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.STATUS.2",
+      "requirement_tex": "Require every no-go result to specify the exact missing calculation.",
+      "source_line": 1730
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "family": "STATUS",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.STATUS.3",
+      "requirement_tex": "Forbid a valid soft sector from being called a complete microscopic TMD.",
+      "source_line": 1731
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_source_sufficiency_decision.json",
+        "docs/next_level/c33_no_go_decision_tree.json",
+        "docs/next_level/c33_c32_continuation_gate.json",
+        "docs/next_level/c34_source_sufficiency_decision.json",
+        "docs/next_level/c34_no_go_decision_tree.json"
+      ],
+      "family": "STATUS",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.STATUS.4",
+      "requirement_tex": "Forbid microscopic export, bridge readiness, inference, or process promotion before all gates pass.",
+      "source_line": 1732
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "family": "ISO",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ISO.1",
+      "requirement_tex": "Keep C7--C32 scientific results, frozen bridge roles, production routes, and authoritative artifacts unchanged.",
+      "source_line": 1733
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "family": "ISO",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.ISO.2",
+      "requirement_tex": "Keep raw transferred source files outside public Git absent permission.",
+      "source_line": 1734
+    },
+    {
+      "c34_status": "INHERITED_CLOSED",
+      "c35_owner": "C35/S0C_NO_GO_OR_IMMUTABLE_INHERITANCE",
+      "c35_status": "INHERITED_CLOSED",
+      "evidence_paths": [
+        "docs/next_level/c33_regression_report.json",
+        "docs/next_level/c33_requirement_coverage.json",
+        "docs/next_level/c34_regression_report.json"
+      ],
+      "family": "DET",
+      "owner": "C31-C33_IMMUTABLE_EVIDENCE",
+      "positive_finite_basis_one_loop_claimed": false,
+      "positive_one_loop_physics_promoted": false,
+      "requirement_id": "V21.DET.1",
+      "requirement_tex": "Require deterministic byte-identical manifests and content-addressed heavy outputs.",
+      "source_line": 1735
+    }
+  ],
+  "schema_version": "1.0.0",
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "C99-IFEQUIV8-PUBLIC-AUTHORITY-BLOCKER-V1",
+  "baseline": "6e08c734b88993aea94aaa87ac6dc88abd8cb79c",
+  "import_contract": {
+    "path": "docs/next_level/c98_c99_ifequiv8_import_contract.json",
+    "sha256": "93fc08092fca7c255bedbb7f57d2998d406467ce5f0a28b84dc2024de05eac31"
+  },
+  "historical_access_rule": "C98 immutable public API only",
+  "C98_public_methods": [
+    "historical_pair_normal_form(pair_id, resolution)",
+    "historical_pair_proof_inputs(pair_id, resolution)",
+    "historical_primitive_record(family_id, record_id)"
+  ],
+  "required_but_absent_public_operation": {
+    "purpose": "authenticated bounded enumeration of all primitive (family_id, record_id) identities",
+    "examples": [
+      "historical_primitive_family_ids()",
+      "historical_primitive_record_page(family_id, cursor, limit)",
+      "historical_primitive_identity_manifest()"
+    ],
+    "reason": "The sole primitive method requires record_id as an input. The accepted C98 public surface has no family enumeration, record pagination, identity manifest, or per-family count/root return."
+  },
+  "frozen_historical_roots": {
+    "C90_aggregate": "efee3c97dff6310349f39c52c52efe8fe5a3691dff033b783c4ce0be61366a34",
+    "C93_capsule": "65173c9f3a623f87ec06f2f6b1a82d600db7e26526a08ea26851c47c8e8950f6",
+    "C94_package": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+    "C97_operand": "99a404f149321009fdf0a8f29c6a68b164ef392b7247179188509bfef122abad",
+    "C97_regression_result": "4b9e5ad15a6367cc8b92a85e25ef6d87f1b2fea4f9a26087fb6662cbe56a15ab",
+    "C97_capsule": "916cb84f4ed617a09662fd35e3a5cc16708da765df6e8c1a8d599d291d4474b8",
+    "C98_package": "6981b0e72fb72c80313a2bf773eff1818994969e9ba1c6c753043eada1b1e8ef"
+  },
+  "descendant_only_preflight": {
+    "freeze_schema": "C99-DESCENDANT-FREEZE-PREFLIGHT-V1",
+    "source_commit": "6e08c734b88993aea94aaa87ac6dc88abd8cb79c",
+    "freeze_root": "b139666d59916c619aefa4b72b0a0e908a2920a20eb875b8ce89d92ef9375282",
+    "pairs": 154830,
+    "logical_records": 891992018,
+    "resolution_pairs": {"K9_2_N8_b0.40": 16224, "K11_2_N10_b0.45": 43350, "K13_2_N12_b0.50": 95256},
+    "resolution_logical_records": {"K9_2_N8_b0.40": 28606464, "K11_2_N10_b0.45": 165991250, "K13_2_N12_b0.50": 697394304},
+    "instance_adapter": {
+      "dropped_keys": ["current_source_commit", "historical_C72_runtime_instance", "normal_form", "semantic_ir"],
+      "classification": "INSTANCE_ONLY_SOURCE_API_FINGERPRINT_DIFFERENCE"
+    }
+  },
+  "public_pair_program_smoke_crosswalk": {
+    "resolution": "K9_2_N8_b0.40",
+    "pairs": 16224,
+    "logical_records": 28606464,
+    "result": "all compared normalized programs, roots, identities, ordering, and logical counts agree",
+    "mismatches": {"frozen_root": 0, "pair_identity": 0, "pair_order": 0, "normal_form_root": 0, "normal_form_content": 0, "logical_count": 0},
+    "crosswalk_root": "297905a64e716716329d0a7c7a8546abd103ee3d0e605ba40396a755c95cef9c"
+  },
+  "forbidden_actions_not_taken": [
+    "C90/C93/C94/C97 private payload or constructor access",
+    "historical operand reconstruction",
+    "private C98 primitive-index access",
+    "primitive identity inference from a current-descendant record list",
+    "expanded C88 record materialization",
+    "C80 kernel evaluation or downstream physics"
+  ],
+  "scientific_consequence": "Without an authenticated exhaustive historical primitive identity domain, C99 cannot prove primitive missing/extra/duplicate counts are zero, cannot create all 35 required primitive-equivalence certificates, and cannot validly invoke the all-pair theorem with the required primitive certificates.",
+  "scientific_decision": "SCIENTIFIC_EQUIVALENCE_UNRESOLVED",
+  "positive_C99_status_issued": false,
+  "narrow_next_authority": "A descendant C98 public-interface correction that exposes authenticated bounded primitive identity enumeration while preserving the existing three retrieval routes and all frozen scientific payload roots.",
+  "sha256": "b154ba3334e31c73dc6cb52c3a47ad140202470788dc6070d8eb65f10137939f"
+}

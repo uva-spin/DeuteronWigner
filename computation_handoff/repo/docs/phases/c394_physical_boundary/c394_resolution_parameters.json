@@ -1,0 +1,70 @@
+{
+  "package_root": "af6009d5514ff508a716979dd861c84167346905b5c62d7743fb4145cb4f178e",
+  "physical": false,
+  "plan": "PHYSICALBOUNDARYPHASE1-B",
+  "record": {
+    "K9_K11_K13_separate": true,
+    "count": 3,
+    "root": "830db633cd63317d76712c8dac9ad28ff561698443d73eca6d9c8dc3ab659e57",
+    "rows": [
+      {
+        "closed_conditionally": true,
+        "defaults": false,
+        "required": [
+          "ensemble_root",
+          "C392_adapter_root",
+          "C393_running_record",
+          "mass_coupling_capsules",
+          "boundary_action",
+          "holonomy_sector",
+          "zero_mode_policy",
+          "L_GeVinv",
+          "bHO_GeVinv",
+          "Nmax",
+          "covariance_root"
+        ],
+        "resolution": "K9",
+        "values": null
+      },
+      {
+        "closed_conditionally": true,
+        "defaults": false,
+        "required": [
+          "ensemble_root",
+          "C392_adapter_root",
+          "C393_running_record",
+          "mass_coupling_capsules",
+          "boundary_action",
+          "holonomy_sector",
+          "zero_mode_policy",
+          "L_GeVinv",
+          "bHO_GeVinv",
+          "Nmax",
+          "covariance_root"
+        ],
+        "resolution": "K11",
+        "values": null
+      },
+      {
+        "closed_conditionally": true,
+        "defaults": false,
+        "required": [
+          "ensemble_root",
+          "C392_adapter_root",
+          "C393_running_record",
+          "mass_coupling_capsules",
+          "boundary_action",
+          "holonomy_sector",
+          "zero_mode_policy",
+          "L_GeVinv",
+          "bHO_GeVinv",
+          "Nmax",
+          "covariance_root"
+        ],
+        "resolution": "K13",
+        "values": null
+      }
+    ]
+  },
+  "status": "C394_SOURCE_QUALIFIED_CONDITIONAL_BOUNDARY_HOLONOMY_FAMILY_AND_RESOLUTION_PARAMETER_SCHEMA_READY_OBSERVABLE_ENSEMBLE_RECORD_NEXT"
+}

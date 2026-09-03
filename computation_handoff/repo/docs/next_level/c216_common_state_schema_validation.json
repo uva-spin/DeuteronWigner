@@ -1,0 +1,47 @@
+{
+  "schema": "C216-COMMON-STATE-SCHEMA-VALIDATION-V1",
+  "artifact": "common_state_schema_validation",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_RI_SMOM_QUARK_COMMON_STATE_IR_V1",
+    "required_fields": [
+      "record_id",
+      "resolution",
+      "p_in",
+      "p_out",
+      "virtuality_mu2",
+      "rho",
+      "mu",
+      "C43_gauge",
+      "target_gauge",
+      "PV_Q0",
+      "boundary_class",
+      "residual_link",
+      "holonomy_capsule",
+      "active_Nf",
+      "external_flavor",
+      "mass_assumption",
+      "source_sink_order",
+      "units",
+      "no_defaults",
+      "physical"
+    ],
+    "K_resolutions": [
+      "K9",
+      "K11",
+      "K13"
+    ],
+    "root": "f48081a08780e04390e017513bd86f70d77fb8600dc212e5e222174241bfecb7"
+  }
+}

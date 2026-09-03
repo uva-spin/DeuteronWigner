@@ -1,0 +1,12 @@
+{
+  "decomposition": "chiD after profiled shifts + chiL nuisance penalty",
+  "definition": "(theory-data)^T V^-1 (theory-data)",
+  "profile_not_marginalize": true,
+  "schema_version": "1.0.0",
+  "source_functions": [
+    "DataSet.chi2",
+    "DataSet.DecomposeChi2",
+    "DataSet.DetermineSystematicShift",
+    "DataSet.FindBestNorm"
+  ]
+}

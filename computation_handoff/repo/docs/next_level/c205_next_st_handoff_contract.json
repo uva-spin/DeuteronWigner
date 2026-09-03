@@ -1,0 +1,37 @@
+{
+  "schema": "C205-NEXT-ST-HANDOFF-CONTRACT-V1",
+  "artifact": "next_st_handoff_contract",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 next_st_handoff_contract is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "next": "C206/HQCDSTCTSOLVE1",
+    "next_object": "C197-ST-8",
+    "next_exact_object": "ST-compatible counterterm solution",
+    "next_alias": "ST_COMPATIBLE_COUNTERTERM_SOLUTION",
+    "remaining": [
+      "C197-ST-8",
+      "C197-ST-9",
+      "C197-ST-10"
+    ],
+    "root": "a8789065ae4f394bbeb1c7021ff7ba93286b56a553e9a6b414115d80d1025e74"
+  }
+}

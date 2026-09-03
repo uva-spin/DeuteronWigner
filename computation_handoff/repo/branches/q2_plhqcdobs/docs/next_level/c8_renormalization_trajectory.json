@@ -1,0 +1,627 @@
+{
+  "benchmark_H_D": [
+    {
+      "ZV": 0.9259259259259258,
+      "bare_charge": 1.08,
+      "bare_mass2": 0.7,
+      "counterterm": -0.019999999999999907,
+      "pole_mass2": 0.81,
+      "renormalized_charge": 1.0,
+      "sectors": 2,
+      "self_energy": 0.13
+    },
+    {
+      "ZV": 0.8620689655172414,
+      "bare_charge": 1.16,
+      "bare_mass2": 0.64,
+      "counterterm": -0.03999999999999995,
+      "pole_mass2": 0.81,
+      "renormalized_charge": 1.0,
+      "sectors": 3,
+      "self_energy": 0.21
+    }
+  ],
+  "plans": [
+    {
+      "comparison_map_ids": [
+        "C8:H1:COMPARE:0->1",
+        "C8:H1:COMPARE:1->2"
+      ],
+      "conditions": [
+        {
+          "condition_id": "C8:COND:MASS",
+          "kinematics": "P_PLUS_FIXED",
+          "observable": "GROUND_MASS_SQUARED",
+          "parameter_block": "LIGHT_QUARK_MASS_CT",
+          "reference_provenance": "VALIDATION_REFERENCE_NEAR_NUCLEON_MASS",
+          "reference_value": 0.7744,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-11
+        },
+        {
+          "condition_id": "C8:COND:F1P0",
+          "kinematics": "Q2=0",
+          "observable": "PROTON_VECTOR_CHARGE",
+          "parameter_block": "CURRENT_ZV",
+          "reference_provenance": "EXACT_FLAVOR_CHARGE",
+          "reference_value": 1.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:F1N0",
+          "kinematics": "Q2=0",
+          "observable": "NEUTRON_VECTOR_CHARGE",
+          "parameter_block": "NONE",
+          "reference_provenance": "CORRELATED_STRONG_ISOSPIN_PARTNER",
+          "reference_value": 0.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "HOLDOUT",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:CM",
+          "kinematics": "BETA={0,1,4}",
+          "observable": "LAWSON_INTRINSIC_DRIFT",
+          "parameter_block": "NONE",
+          "reference_provenance": "EXACT_CM_GROUND_BLOCK",
+          "reference_value": 0.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:SPIN",
+          "kinematics": "GROUND_STATE",
+          "observable": "PAIR_SPIN_EXPECTATION_PROXY",
+          "parameter_block": "COLOR_SPIN_R",
+          "reference_provenance": "VALIDATION_ONLY_SYNTHETIC_INTERACTION_TARGET",
+          "reference_value": 0.12,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 0.2
+        }
+      ],
+      "flow": [
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 0.0,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:d2ff4bd39266a8e0442b",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744,
+          "naturalness": {
+            "color_spin": 0.075,
+            "current_ZV": 1.0,
+            "kappa4": 0.42,
+            "mass_ct": 0.11018366349078867
+          },
+          "parameters": {
+            "color_spin": 0.075,
+            "current_ZV": 1.0,
+            "kappa4": 0.42,
+            "mass_ct": 0.11018366349078867
+          },
+          "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555"
+        },
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 0.0,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:2583fd673c04a43f979a",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744,
+          "naturalness": {
+            "color_spin": 0.06818181818181818,
+            "current_ZV": 1.0,
+            "kappa4": 0.3442622950819672,
+            "mass_ct": 0.12003285558408783
+          },
+          "parameters": {
+            "color_spin": 0.06818181818181818,
+            "current_ZV": 1.0,
+            "kappa4": 0.3442622950819672,
+            "mass_ct": 0.12003285558408783
+          },
+          "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97"
+        },
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 0.0,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:bb04a66cdf15508fa906",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744,
+          "naturalness": {
+            "color_spin": 0.0625,
+            "current_ZV": 1.0,
+            "kappa4": 0.2916666666666667,
+            "mass_ct": 0.12671848150241094
+          },
+          "parameters": {
+            "color_spin": 0.0625,
+            "current_ZV": 1.0,
+            "kappa4": 0.2916666666666667,
+            "mass_ct": 0.12671848150241094
+          },
+          "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda"
+        }
+      ],
+      "name": "H1-PLAN-A",
+      "plan_id": "C8:H1:PLAN:d21966f5baf0fbb07821",
+      "trajectory_id": "C8:H1:TRAJECTORY:d21966f5baf0fbb07821"
+    },
+    {
+      "comparison_map_ids": [
+        "C8:H1:COMPARE:0->1",
+        "C8:H1:COMPARE:1->2"
+      ],
+      "conditions": [
+        {
+          "condition_id": "C8:COND:MASS",
+          "kinematics": "P_PLUS_FIXED",
+          "observable": "GROUND_MASS_SQUARED",
+          "parameter_block": "LIGHT_QUARK_MASS_CT",
+          "reference_provenance": "VALIDATION_REFERENCE_NEAR_NUCLEON_MASS",
+          "reference_value": 0.7744,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-11
+        },
+        {
+          "condition_id": "C8:COND:F1P0",
+          "kinematics": "Q2=0",
+          "observable": "PROTON_VECTOR_CHARGE",
+          "parameter_block": "CURRENT_ZV",
+          "reference_provenance": "EXACT_FLAVOR_CHARGE",
+          "reference_value": 1.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:F1N0",
+          "kinematics": "Q2=0",
+          "observable": "NEUTRON_VECTOR_CHARGE",
+          "parameter_block": "NONE",
+          "reference_provenance": "CORRELATED_STRONG_ISOSPIN_PARTNER",
+          "reference_value": 0.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "HOLDOUT",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:CM",
+          "kinematics": "BETA={0,1,4}",
+          "observable": "LAWSON_INTRINSIC_DRIFT",
+          "parameter_block": "NONE",
+          "reference_provenance": "EXACT_CM_GROUND_BLOCK",
+          "reference_value": 0.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:SPIN",
+          "kinematics": "GROUND_STATE",
+          "observable": "PAIR_SPIN_EXPECTATION_PROXY",
+          "parameter_block": "COLOR_SPIN_R",
+          "reference_provenance": "VALIDATION_ONLY_SYNTHETIC_INTERACTION_TARGET",
+          "reference_value": 0.12,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 0.2
+        }
+      ],
+      "flow": [
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 0.0,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:f0c9bf35e980a5f43504",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744,
+          "naturalness": {
+            "color_spin": 0.075,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.18576254585831908
+          },
+          "parameters": {
+            "color_spin": 0.075,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.18576254585831908
+          },
+          "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555"
+        },
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 0.0,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:9461f816e3b18a7b5d20",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744,
+          "naturalness": {
+            "color_spin": 0.06818181818181818,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.18201236523793907
+          },
+          "parameters": {
+            "color_spin": 0.06818181818181818,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.18201236523793907
+          },
+          "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97"
+        },
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 0.0,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:fa0e058afa13c41106b5",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744,
+          "naturalness": {
+            "color_spin": 0.0625,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.17888922128161233
+          },
+          "parameters": {
+            "color_spin": 0.0625,
+            "current_ZV": 1.0,
+            "kappa4": 0.0,
+            "mass_ct": 0.17888922128161233
+          },
+          "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda"
+        }
+      ],
+      "name": "H1-PLAN-B",
+      "plan_id": "C8:H1:PLAN:fa8821a67fe9aa7c6208",
+      "trajectory_id": "C8:H1:TRAJECTORY:fa8821a67fe9aa7c6208"
+    },
+    {
+      "comparison_map_ids": [
+        "C8:H1:COMPARE:0->1",
+        "C8:H1:COMPARE:1->2"
+      ],
+      "conditions": [
+        {
+          "condition_id": "C8:COND:MASS",
+          "kinematics": "P_PLUS_FIXED",
+          "observable": "GROUND_MASS_SQUARED",
+          "parameter_block": "LIGHT_QUARK_MASS_CT",
+          "reference_provenance": "VALIDATION_REFERENCE_NEAR_NUCLEON_MASS",
+          "reference_value": 0.7744,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-11
+        },
+        {
+          "condition_id": "C8:COND:F1P0",
+          "kinematics": "Q2=0",
+          "observable": "PROTON_VECTOR_CHARGE",
+          "parameter_block": "CURRENT_ZV",
+          "reference_provenance": "EXACT_FLAVOR_CHARGE",
+          "reference_value": 1.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:F1N0",
+          "kinematics": "Q2=0",
+          "observable": "NEUTRON_VECTOR_CHARGE",
+          "parameter_block": "NONE",
+          "reference_provenance": "CORRELATED_STRONG_ISOSPIN_PARTNER",
+          "reference_value": 0.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "HOLDOUT",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:CM",
+          "kinematics": "BETA={0,1,4}",
+          "observable": "LAWSON_INTRINSIC_DRIFT",
+          "parameter_block": "NONE",
+          "reference_provenance": "EXACT_CM_GROUND_BLOCK",
+          "reference_value": 0.0,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 2e-12
+        },
+        {
+          "condition_id": "C8:COND:SPIN",
+          "kinematics": "GROUND_STATE",
+          "observable": "PAIR_SPIN_EXPECTATION_PROXY",
+          "parameter_block": "COLOR_SPIN_R",
+          "reference_provenance": "VALIDATION_ONLY_SYNTHETIC_INTERACTION_TARGET",
+          "reference_value": 0.12,
+          "resolution_scope": "ALL_TOWER_POINTS",
+          "role": "CALIBRATION",
+          "tolerance": 0.2
+        }
+      ],
+      "flow": [
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": 1.1102230246251565e-16,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:2aff229a4bee60eebaf5",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7744000000000001,
+          "naturalness": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.42,
+            "mass_ct": 0.15971865452740686
+          },
+          "parameters": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.42,
+            "mass_ct": 0.15971865452740686
+          },
+          "resolution_id": "C7:H0:RESOLUTION:018f8de2d41a86141555"
+        },
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": -1.1102230246251565e-16,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:2122071f44bbcfe775d4",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7743999999999999,
+          "naturalness": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.3442622950819672,
+            "mass_ct": 0.16665216035256558
+          },
+          "parameters": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.3442622950819672,
+            "mass_ct": 0.16665216035256558
+          },
+          "resolution_id": "C7:H0:RESOLUTION:37ac11d0330561554f97"
+        },
+        {
+          "condition_residuals": {
+            "CM": 0.0,
+            "MASS": -1.1102230246251565e-16,
+            "PROTON_CHARGE": 0.0
+          },
+          "hamiltonian_id": "C8:H1:HAMILTONIAN:7e76ef96bd94eba248a9",
+          "hessian_eigenvalues": [
+            1.5198426468474349,
+            1.8599815726525186,
+            2.8299757805000465
+          ],
+          "jacobian": [
+            [
+              1.0,
+              0.18,
+              0.1
+            ],
+            [
+              0.0,
+              1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "mass2": 0.7743999999999999,
+          "naturalness": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.2916666666666667,
+            "mass_ct": 0.171506364929635
+          },
+          "parameters": {
+            "color_spin": 0.0,
+            "current_ZV": 1.0,
+            "kappa4": 0.2916666666666667,
+            "mass_ct": 0.171506364929635
+          },
+          "resolution_id": "C7:H0:RESOLUTION:b8196017a6bde7c88eda"
+        }
+      ],
+      "name": "H1-PLAN-C",
+      "plan_id": "C8:H1:PLAN:d9938ed1163bbc2799e2",
+      "trajectory_id": "C8:H1:TRAJECTORY:d9938ed1163bbc2799e2"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

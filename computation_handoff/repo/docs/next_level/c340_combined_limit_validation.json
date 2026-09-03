@@ -1,0 +1,63 @@
+{
+  "package_root": "4a1b3c9253bb11296be0ab0f9937d07a85fe2146c44cf31b75de1ec1d2d957da",
+  "physical": false,
+  "plan": "RIMASSC43TRIALITYZERO1-C",
+  "record": {
+    "all_full_rank": true,
+    "coefficient_enclosure_radius": 0.0037073086726351614,
+    "combined_APBC_tail_absolute_bound": 0.00370730867263394,
+    "finite_exact_span": false,
+    "infinite_limit_enclosed": true,
+    "physical": false,
+    "root": "1c8501e8ec5869a410504a76c8ac93a7cb3ed759c93b51acd53949c5128b3fa6",
+    "rows": [
+      {
+        "G": 24,
+        "M": 3,
+        "W3_ledger_contribution": [
+          0.0,
+          0.015528192837460401,
+          -0.005176064279153467
+        ],
+        "coefficient_max_defect": 2.706168622523819e-16,
+        "condition_number": 82.48787548559258,
+        "dimension": 7,
+        "full_rank": true,
+        "minimum_eigenvalue": 0.07785561643325759,
+        "rank": 7
+      },
+      {
+        "G": 24,
+        "M": 4,
+        "W3_ledger_contribution": [
+          0.0,
+          0.015528192837460401,
+          -0.005176064279153467
+        ],
+        "coefficient_max_defect": 5.273559366969494e-16,
+        "condition_number": 82.48787548566048,
+        "dimension": 9,
+        "full_rank": true,
+        "minimum_eigenvalue": 0.07785561643319498,
+        "rank": 9
+      },
+      {
+        "G": 24,
+        "M": 6,
+        "W3_ledger_contribution": [
+          0.0,
+          0.015528192837460401,
+          -0.005176064279153467
+        ],
+        "coefficient_max_defect": 1.2212453270876722e-15,
+        "condition_number": 120.85812206463939,
+        "dimension": 12,
+        "full_rank": true,
+        "minimum_eigenvalue": 0.053499525980060234,
+        "rank": 12
+      }
+    ]
+  },
+  "status": "C340_TRIALITY_ZERO_WINDINGS_COMPLETED_COMBINED_APBC_LIMIT_ENCLOSED",
+  "validation": "PASS"
+}

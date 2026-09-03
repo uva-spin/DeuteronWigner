@@ -1,0 +1,295 @@
+{
+  "all_detected": true,
+  "count": 48,
+  "injections": [
+    {
+      "description": "missing LF factor two",
+      "diagnostic": "C7.LF.CONVENTION",
+      "stable_id": "C7.INJECT.01",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "oscillator/TMD width alias",
+      "diagnostic": "C7.RESOLUTION",
+      "stable_id": "C7.INJECT.02",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Hamiltonian/rapidity scale alias",
+      "diagnostic": "C7.RESOLUTION",
+      "stable_id": "C7.INJECT.03",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "TMD regulator used as vertex cutoff",
+      "diagnostic": "C7.RESOLUTION",
+      "stable_id": "C7.INJECT.04",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "zero-mode policy omitted",
+      "diagnostic": "C7.RESOLUTION",
+      "stable_id": "C7.INJECT.05",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "floating longitudinal mode",
+      "diagnostic": "C7.MODE",
+      "stable_id": "C7.INJECT.06",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "sum k differs from K",
+      "diagnostic": "C7.BASIS",
+      "stable_id": "C7.INJECT.07",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "gluon zero mode permitted",
+      "diagnostic": "C7.MODE",
+      "stable_id": "C7.INJECT.08",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "Nmax violated",
+      "diagnostic": "C7.BASIS",
+      "stable_id": "C7.INJECT.09",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong total Jz",
+      "diagnostic": "C7.BASIS",
+      "stable_id": "C7.INJECT.10",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "resolution ID collision",
+      "diagnostic": "C7.RESOLUTION",
+      "stable_id": "C7.INJECT.11",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nondeterministic basis order",
+      "diagnostic": "C7.BASIS",
+      "stable_id": "C7.INJECT.12",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "duplicate many-body ordering",
+      "diagnostic": "C7.BASIS",
+      "stable_id": "C7.INJECT.13",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "qqq singlet omitted",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.14",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "multiple qqq singlets",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.15",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "qqqg multiplicity omitted",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.16",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "qqq singlet times free gluon",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.17",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "qqqq-qbar singlet omitted",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.18",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong antiquark generator",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.19",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "total generator nonclosure",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.20",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "nonunitary recoupling",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.21",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "color multiplicity erased",
+      "diagnostic": "C7.COLOR",
+      "stable_id": "C7.INJECT.22",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "identical-quark antisymmetry violated",
+      "diagnostic": "C7.PERM",
+      "stable_id": "C7.INJECT.23",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "post-assembly antisymmetry",
+      "diagnostic": "C7.PERM",
+      "stable_id": "C7.INJECT.24",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "cross-cluster antisymmetry violated",
+      "diagnostic": "C7.PERM",
+      "stable_id": "C7.INJECT.25",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "invalid antisymmetrizer",
+      "diagnostic": "C7.PERM",
+      "stable_id": "C7.INJECT.26",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "CM factorization omitted",
+      "diagnostic": "C7.CM",
+      "stable_id": "C7.INJECT.27",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "CM-failed basis marked ready",
+      "diagnostic": "C7.CM",
+      "stable_id": "C7.INJECT.28",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "intrinsic Lawson drift",
+      "diagnostic": "C7.CM",
+      "stable_id": "C7.INJECT.29",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "arbitrary diagonal free spectrum",
+      "diagnostic": "C7.FREE",
+      "stable_id": "C7.INJECT.30",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "matrix-free/assembled mismatch",
+      "diagnostic": "C7.FREE",
+      "stable_id": "C7.INJECT.31",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "basis mass called MSbar",
+      "diagnostic": "C7.FREE",
+      "stable_id": "C7.INJECT.32",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "term sector endpoints omitted",
+      "diagnostic": "C7.TERM",
+      "stable_id": "C7.INJECT.33",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "term parameter owner omitted",
+      "diagnostic": "C7.TERM",
+      "stable_id": "C7.INJECT.34",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "term regulator omitted",
+      "diagnostic": "C7.TERM",
+      "stable_id": "C7.INJECT.35",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "vertex adjoint omitted",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.36",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "vertex regulator mismatch",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.37",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "wrong vertex color generator",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.38",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "emitter identity erased",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.39",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "permutation sign omitted",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.40",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "vertex longitudinal mismatch",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.41",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "vertex Jz mismatch",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.42",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "reduced vertex called complete QCD",
+      "diagnostic": "C7.READINESS",
+      "stable_id": "C7.INJECT.43",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "TMD-specific vertex coupling",
+      "diagnostic": "C7.VERTEX",
+      "stable_id": "C7.INJECT.44",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "vertex connected to C5/C6 phase",
+      "diagnostic": "C7.ISOLATION",
+      "stable_id": "C7.INJECT.45",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "H0 promoted to production",
+      "diagnostic": "C7.ISOLATION",
+      "stable_id": "C7.INJECT.46",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "authoritative production mutation",
+      "diagnostic": "C7.REGRESS",
+      "stable_id": "C7.INJECT.47",
+      "status": "PASS_DETECTED"
+    },
+    {
+      "description": "normative source mutation",
+      "diagnostic": "C7.REGRESS",
+      "stable_id": "C7.INJECT.48",
+      "status": "PASS_DETECTED"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,91 @@
+{
+  "package_root": "caefe37c197bdf6f70f03c526df064a3a4ac8a8257742318aa75af27a38b5a00",
+  "physical": false,
+  "plan": "PHYSICALMATCHPHASE1-B",
+  "record": {
+    "basis": [
+      "REGULAR",
+      "PLUS",
+      "ENDPOINT",
+      "SOFT"
+    ],
+    "condition": "P_i Gamma_R(mu,rho)=P_i Gamma_tree at declared nonexceptional symbolic point",
+    "finite_parts": "defined by the four projector conditions",
+    "label": "project intermediate scheme; not MSbar/Collins/ART25",
+    "matrix": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "nullity": 0,
+    "physical_point_selected": false,
+    "projectors": [
+      {
+        "action": "regular test moment phi_R with endpoint-zero support",
+        "id": "P_REGULAR",
+        "row": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "plus test moment phi_P-phi_P(1)",
+        "id": "P_PLUS",
+        "row": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "action": "endpoint evaluation phi(1)",
+        "id": "P_ENDPOINT",
+        "row": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "action": "four-Wilson-line soft owner projection",
+        "id": "P_SOFT",
+        "row": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "rank": 4,
+    "root": "69bbd17a6221a79ee4ff26b5cddb10b57ed3cc24b4e20f5dbf4b328152f38a7f",
+    "scheme_id": "DW-JMY-COMMON-IR-PROJECT-v1",
+    "symmetry": "color-singlet, rotational scalar, SIDIS orientation preserved"
+  },
+  "status": "C392_PROJECT_COMMON_IR_MATCHING_SCHEME_AND_K9_K11_K13_SYMBOLIC_ADAPTERS_READY_STANDARD_NUMERICAL_RUNNING_NEXT"
+}

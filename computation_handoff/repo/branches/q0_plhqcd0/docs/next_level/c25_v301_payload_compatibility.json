@@ -1,0 +1,78 @@
+{
+  "all_nine_model_files_byte_identical": true,
+  "compatibility_status": "MODEL_AND_SCHEMA_PROVEN_RUNTIME_BLOCKED_COLLINEAR_INPUTS",
+  "constants_schema_minimum": 21,
+  "engine_code_from_later_commit_imported": false,
+  "model_files": [
+    {
+      "byte_identical": true,
+      "file": "BoerMuldersTMDPDF_model.f90",
+      "payload_sha256": "9771bff5aba9547908d7f0038e6942b6796b7950d2b38b39aff47bbbd86a4a0b",
+      "v301_sha256": "9771bff5aba9547908d7f0038e6942b6796b7950d2b38b39aff47bbbd86a4a0b"
+    },
+    {
+      "byte_identical": true,
+      "file": "SiversTMDPDF_model.f90",
+      "payload_sha256": "a9ad59aec5361eec1ca5ccf330712b00a40a14686389916ec0d3333a5ccc7d07",
+      "v301_sha256": "a9ad59aec5361eec1ca5ccf330712b00a40a14686389916ec0d3333a5ccc7d07"
+    },
+    {
+      "byte_identical": true,
+      "file": "TMDR_model.f90",
+      "payload_sha256": "4fb6ae7e8b78f284a0dd7b8e226a95636fcfbf08c17b4f58c5dbc6448b70f679",
+      "v301_sha256": "4fb6ae7e8b78f284a0dd7b8e226a95636fcfbf08c17b4f58c5dbc6448b70f679"
+    },
+    {
+      "byte_identical": true,
+      "file": "eeTMDFF_model.f90",
+      "payload_sha256": "0197caaa7260b74e82a3bf80baacd86b547e2fd6a2557787d9d9884e120c018a",
+      "v301_sha256": "0197caaa7260b74e82a3bf80baacd86b547e2fd6a2557787d9d9884e120c018a"
+    },
+    {
+      "byte_identical": true,
+      "file": "lpTMDPDF_model.f90",
+      "payload_sha256": "4e60f0525729810d7ed6a9309ad3e764b21d39567f9b1cc5dd39448ecf768c6c",
+      "v301_sha256": "4e60f0525729810d7ed6a9309ad3e764b21d39567f9b1cc5dd39448ecf768c6c"
+    },
+    {
+      "byte_identical": true,
+      "file": "uTMDFF_model.f90",
+      "payload_sha256": "59ae68c13b8820e80eac53f84c1ee5f116e8f0a7b977de5d6b8942aa2c939182",
+      "v301_sha256": "59ae68c13b8820e80eac53f84c1ee5f116e8f0a7b977de5d6b8942aa2c939182"
+    },
+    {
+      "byte_identical": true,
+      "file": "uTMDPDF_model.f90",
+      "payload_sha256": "613e5e8376b1140da1f6ded0a27a38373567dc5fa31764d4450b45b7c5e8f211",
+      "v301_sha256": "613e5e8376b1140da1f6ded0a27a38373567dc5fa31764d4450b45b7c5e8f211"
+    },
+    {
+      "byte_identical": true,
+      "file": "wglTMDPDF_model.f90",
+      "payload_sha256": "5101d2da4895bc9353ebea3ab068669a4cef0d950156a0094a78fedba6405567",
+      "v301_sha256": "5101d2da4895bc9353ebea3ab068669a4cef0d950156a0094a78fedba6405567"
+    },
+    {
+      "byte_identical": true,
+      "file": "wgtTMDPDF_model.f90",
+      "payload_sha256": "634f5a4ef8866caca29e6cc676a920bdb38e87882a6c056b8b2bbd91f06b0a03",
+      "v301_sha256": "634f5a4ef8866caca29e6cc676a920bdb38e87882a6c056b8b2bbd91f06b0a03"
+    }
+  ],
+  "parameter_ranges": {
+    "TMDR": [
+      2,
+      5
+    ],
+    "uTMDFF": [
+      18,
+      29
+    ],
+    "uTMDPDF": [
+      6,
+      17
+    ]
+  },
+  "replica_schema_minimum": 21,
+  "schema_version": "1.0.0"
+}

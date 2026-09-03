@@ -1,0 +1,43 @@
+{
+  "exact_pdf_index_oracle_pass": false,
+  "oracles": [
+    {
+      "kind": "DIRECT_FORTRAN_FORMULA_TRANSLATION",
+      "members": 642,
+      "small_b_residual": 0.0,
+      "stable_id": "C26.ORACLE.NP",
+      "status": "PASS"
+    },
+    {
+      "Q": 5.0,
+      "kind": "INDEPENDENT_LHAPDF_EXACT_JOINT_INDEX",
+      "lambda_member": 1,
+      "member": 75,
+      "set": "MAPFF10NNLOPIp",
+      "stable_id": "C26.ORACLE.LHAPDF.PI",
+      "status": "PASS",
+      "xfx_u": 0.31912218956032745,
+      "xfx_ubar": 0.19558783098020574,
+      "z": 0.3
+    },
+    {
+      "Q": 5.0,
+      "kind": "INDEPENDENT_LHAPDF_EXACT_JOINT_INDEX",
+      "lambda_member": 1,
+      "member": 109,
+      "set": "MAPFF10NNLOKAp",
+      "stable_id": "C26.ORACLE.LHAPDF.K",
+      "status": "PASS",
+      "xfx_u": 0.08083391045762033,
+      "xfx_ubar": 0.015509360713484792,
+      "z": 0.3
+    },
+    {
+      "kind": "EXACT_COLLINEAR_INDEX",
+      "stable_id": "C26.ORACLE.PDF.INDEX",
+      "status": "BLOCKED_SOURCE_SET_UNAVAILABLE"
+    }
+  ],
+  "passing_independent_oracles": 3,
+  "schema_version": "1.0.0"
+}

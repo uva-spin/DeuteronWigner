@@ -1,0 +1,373 @@
+{
+  "raw_values_consumed": false,
+  "sample_hash": "c63cbb4a644b664b501fda07bbe4a2f5f6e51ae84c95afba5ff65ef369a03c75",
+  "samples": [
+    {
+      "basis": {
+        "incoming": [
+          "9/2",
+          0,
+          0,
+          1,
+          0,
+          "CM_GROUND",
+          "K9_2_N8_b0.40"
+        ],
+        "outgoing": [
+          "0",
+          "7/2",
+          "1",
+          "7/9",
+          "2/9",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "CM_GROUND",
+          "K9_2_N8_b0.40"
+        ],
+        "x_map": {
+          "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+          "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+          "fractions": "xq=7/9; xg=2/9",
+          "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+          "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+          "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+        }
+      },
+      "incoming_q_basis_id": 3,
+      "m2_GeV2": [
+        5.226160770027018e-17,
+        3.9196205775202623e-17
+      ],
+      "outgoing_qg_basis_id": 6,
+      "parameters": {
+        "L": "symbolic",
+        "P_plus_GeV": 3.0,
+        "g_s": 1.0,
+        "mass_GeV": 1.2
+      },
+      "pminus_GeV": [
+        8.71026795004503e-18,
+        6.532700962533771e-18
+      ],
+      "raw_C47_tuple_value_consumed": false,
+      "resolution": "K9_2_N8_b0.40",
+      "sources": [
+        "C43 canonical action",
+        "C45 HO/spinor/polarization",
+        "C47 x/TM/CM labels"
+      ],
+      "status": "EVALUATED_INDIVIDUAL_MODE_ONLY"
+    },
+    {
+      "basis": {
+        "incoming": [
+          "9/2",
+          0,
+          0,
+          1,
+          0,
+          "CM_GROUND",
+          "K9_2_N8_b0.40"
+        ],
+        "outgoing": [
+          "0",
+          "7/2",
+          "1",
+          "7/9",
+          "2/9",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "CM_GROUND",
+          "K9_2_N8_b0.40"
+        ],
+        "x_map": {
+          "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+          "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+          "fractions": "xq=7/9; xg=2/9",
+          "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+          "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+          "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+        }
+      },
+      "incoming_q_basis_id": 3,
+      "m2_GeV2": [
+        -2.1244315637164832,
+        8.40791110336264e-18
+      ],
+      "outgoing_qg_basis_id": 30,
+      "parameters": {
+        "L": "symbolic",
+        "P_plus_GeV": 3.0,
+        "g_s": 1.0,
+        "mass_GeV": 1.2
+      },
+      "pminus_GeV": [
+        -0.35407192728608056,
+        1.4013185172271067e-18
+      ],
+      "raw_C47_tuple_value_consumed": false,
+      "resolution": "K9_2_N8_b0.40",
+      "sources": [
+        "C43 canonical action",
+        "C45 HO/spinor/polarization",
+        "C47 x/TM/CM labels"
+      ],
+      "status": "EVALUATED_INDIVIDUAL_MODE_ONLY"
+    },
+    {
+      "basis": {
+        "incoming": [
+          "11/2",
+          0,
+          0,
+          1,
+          0,
+          "CM_GROUND",
+          "K11_2_N10_b0.45"
+        ],
+        "outgoing": [
+          "0",
+          "9/2",
+          "1",
+          "9/11",
+          "2/11",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "CM_GROUND",
+          "K11_2_N10_b0.45"
+        ],
+        "x_map": {
+          "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+          "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+          "fractions": "xq=9/11; xg=2/11",
+          "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+          "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+          "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+        }
+      },
+      "incoming_q_basis_id": 3,
+      "m2_GeV2": [
+        -1.3228719449130875e-16,
+        -9.921539586848156e-17
+      ],
+      "outgoing_qg_basis_id": 6,
+      "parameters": {
+        "L": "symbolic",
+        "P_plus_GeV": 3.0,
+        "g_s": 1.0,
+        "mass_GeV": 1.2
+      },
+      "pminus_GeV": [
+        -2.204786574855146e-17,
+        -1.6535899311413594e-17
+      ],
+      "raw_C47_tuple_value_consumed": false,
+      "resolution": "K11_2_N10_b0.45",
+      "sources": [
+        "C43 canonical action",
+        "C45 HO/spinor/polarization",
+        "C47 x/TM/CM labels"
+      ],
+      "status": "EVALUATED_INDIVIDUAL_MODE_ONLY"
+    },
+    {
+      "basis": {
+        "incoming": [
+          "11/2",
+          0,
+          0,
+          1,
+          0,
+          "CM_GROUND",
+          "K11_2_N10_b0.45"
+        ],
+        "outgoing": [
+          "0",
+          "9/2",
+          "1",
+          "9/11",
+          "2/11",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "CM_GROUND",
+          "K11_2_N10_b0.45"
+        ],
+        "x_map": {
+          "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+          "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+          "fractions": "xq=9/11; xg=2/11",
+          "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+          "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+          "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+        }
+      },
+      "incoming_q_basis_id": 3,
+      "m2_GeV2": [
+        -3.45740726436815,
+        -1.043109985878784e-17
+      ],
+      "outgoing_qg_basis_id": 30,
+      "parameters": {
+        "L": "symbolic",
+        "P_plus_GeV": 3.0,
+        "g_s": 1.0,
+        "mass_GeV": 1.2
+      },
+      "pminus_GeV": [
+        -0.5762345440613583,
+        -1.7385166431313067e-18
+      ],
+      "raw_C47_tuple_value_consumed": false,
+      "resolution": "K11_2_N10_b0.45",
+      "sources": [
+        "C43 canonical action",
+        "C45 HO/spinor/polarization",
+        "C47 x/TM/CM labels"
+      ],
+      "status": "EVALUATED_INDIVIDUAL_MODE_ONLY"
+    },
+    {
+      "basis": {
+        "incoming": [
+          "13/2",
+          0,
+          0,
+          1,
+          0,
+          "CM_GROUND",
+          "K13_2_N12_b0.50"
+        ],
+        "outgoing": [
+          "0",
+          "11/2",
+          "1",
+          "11/13",
+          "2/13",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "CM_GROUND",
+          "K13_2_N12_b0.50"
+        ],
+        "x_map": {
+          "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+          "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+          "fractions": "xq=11/13; xg=2/13",
+          "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+          "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+          "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+        }
+      },
+      "incoming_q_basis_id": 3,
+      "m2_GeV2": [
+        1.63317524063344e-16,
+        2.0414690507918e-17
+      ],
+      "outgoing_qg_basis_id": 6,
+      "parameters": {
+        "L": "symbolic",
+        "P_plus_GeV": 3.0,
+        "g_s": 1.0,
+        "mass_GeV": 1.2
+      },
+      "pminus_GeV": [
+        2.7219587343890666e-17,
+        3.4024484179863332e-18
+      ],
+      "raw_C47_tuple_value_consumed": false,
+      "resolution": "K13_2_N12_b0.50",
+      "sources": [
+        "C43 canonical action",
+        "C45 HO/spinor/polarization",
+        "C47 x/TM/CM labels"
+      ],
+      "status": "EVALUATED_INDIVIDUAL_MODE_ONLY"
+    },
+    {
+      "basis": {
+        "incoming": [
+          "13/2",
+          0,
+          0,
+          1,
+          0,
+          "CM_GROUND",
+          "K13_2_N12_b0.50"
+        ],
+        "outgoing": [
+          "0",
+          "11/2",
+          "1",
+          "11/13",
+          "2/13",
+          "0",
+          "1",
+          "0",
+          "0",
+          "1",
+          "-1",
+          "0",
+          "CM_GROUND",
+          "K13_2_N12_b0.50"
+        ],
+        "x_map": {
+          "coordinate": "S=sqrt(xq) sq+sqrt(xg) sg; srel=sqrt(xg) sq-sqrt(xq) sg",
+          "forward": "Q=sqrt(xq) qq+sqrt(xg) qg; qrel=sqrt(xg) qq-sqrt(xq) qg",
+          "fractions": "xq=11/13; xg=2/13",
+          "inverse": "qq=sqrt(xq) Q+sqrt(xg) qrel; qg=sqrt(xg) Q-sqrt(xq) qrel",
+          "jacobian": "det= -1 per transverse Cartesian direction; absolute Jacobian=1",
+          "q_i": "q_i=p_i/sqrt(x_i); s_i=sqrt(x_i) r_i; [s_i,q_j]=i delta_ij"
+        }
+      },
+      "incoming_q_basis_id": 3,
+      "m2_GeV2": [
+        -5.21704993589746,
+        2.944252167275667e-18
+      ],
+      "outgoing_qg_basis_id": 30,
+      "parameters": {
+        "L": "symbolic",
+        "P_plus_GeV": 3.0,
+        "g_s": 1.0,
+        "mass_GeV": 1.2
+      },
+      "pminus_GeV": [
+        -0.8695083226495768,
+        4.907086945459445e-19
+      ],
+      "raw_C47_tuple_value_consumed": false,
+      "resolution": "K13_2_N12_b0.50",
+      "sources": [
+        "C43 canonical action",
+        "C45 HO/spinor/polarization",
+        "C47 x/TM/CM labels"
+      ],
+      "status": "EVALUATED_INDIVIDUAL_MODE_ONLY"
+    }
+  ],
+  "status": "PASS"
+}

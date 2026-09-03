@@ -1,0 +1,35 @@
+{
+  "boundary_relation": "C32_BARYONIC_BOUNDARY_TO_C33_VACUUM_CELL_CONVERSION_UNPROVED",
+  "codomain": "C33_SOFT_LIMIT_OF_C33_FINITE_BASIS_VACUUM_EIKONAL_SOFT_ROOT",
+  "domain": "C32_MICROSCOPIC_TMD_OPERATOR_COMPLETION",
+  "duplicate_subtraction_residual": null,
+  "executable": false,
+  "interface_id": "C33.ZERO_BIN.C32_TO_C33_SOFT_LIMIT.v1",
+  "measurement_identity": "COMMON_bT_INCLUSIVE_SOFT_LIMIT_REQUIRED",
+  "measurement_identity_required": true,
+  "missing_subtraction_residual": null,
+  "momentum_scaling": "C32_COLLINEAR_TO_SOFT_SCALING_UNCALCULATED",
+  "one_loop_value": null,
+  "placement": "once before inverse-square-root soft allocation",
+  "regulator_identity_or_conversion_required": true,
+  "regulator_removal_order": [
+    "assemble_collinear_soft_limit",
+    "subtract_once",
+    "combine_soft_inverse_sqrt",
+    "UV_and_rapidity_renormalize",
+    "remove_regulators"
+  ],
+  "schema_version": "1.0.0",
+  "source_regulator_id": "C32_REGULATOR_PLAN_K_NMAX_BHO_WITH_OFFSHELL_IR",
+  "status": "C33_ZERO_BIN_INTERFACE_DEFINED",
+  "subtraction_multiplicity": 1,
+  "subtraction_owner": "C32_COLLINEAR_OVERLAP_BEFORE_SOFT_ALLOCATION",
+  "target_regulator_ids": [
+    "C33.SOFT.BASIS.LOG_CELL.v1",
+    "C33.SOFT.RAPIDITY.MODIFIED_DELTA.v1",
+    "C33_SOFT_UV_TO_MSBAR_UNDERIVED"
+  ],
+  "tree_value": 0.0,
+  "tree_value_exact": true,
+  "zero_mode_relation": "BOTH_EXPLICIT_BUT_OPERATOR_LEVEL_MAP_UNPROVED"
+}

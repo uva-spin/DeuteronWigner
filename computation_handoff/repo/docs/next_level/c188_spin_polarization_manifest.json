@@ -1,0 +1,132 @@
+{
+  "count": 4,
+  "finite_HO_evaluated": false,
+  "root": "6fb98e9544e727cc0f337ec4c833722cf8f609cca97c24549f09624d47eec942",
+  "rows": [
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "descriptor_id": "C188-SPIN-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "gluon_polarization_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "longitudinal_derivative": "source AST unavailable",
+      "mass_dependence": "caller/source descriptor required",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "quark_helicities": "source AST unavailable",
+      "root": "8ed2aea8f877e786f5710f13fdc4d3d29cfdab0a42629af32b283e68fdc38f45",
+      "routes": [
+        "SPIN-A source order",
+        "SPIN-B good/bad component",
+        "SPIN-C current decomposition",
+        "SPIN-D Hermitian reverse",
+        "SPIN-E qgg compatibility"
+      ],
+      "source_phase": "source AST unavailable",
+      "spin_matrix_order": "source AST unavailable",
+      "status": "SPIN_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "transverse_derivative": "source AST unavailable",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "branch_id": "C188-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "descriptor_id": "C188-SPIN-C112_INSTANTANEOUS_FERMION_QGG-QGG_TO_Q",
+      "gluon_polarization_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "hermitian_partner": "C188-C112_INSTANTANEOUS_FERMION_QGG-Q_TO_QGG",
+      "longitudinal_derivative": "source AST unavailable",
+      "mass_dependence": "caller/source descriptor required",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C112_INSTANTANEOUS_FERMION_QGG",
+      "quark_helicities": "source AST unavailable",
+      "root": "e54dc35da1f97ca2a84d60bba278a1071d7795696db65a156d2d8beaf61e6a59",
+      "routes": [
+        "SPIN-A source order",
+        "SPIN-B good/bad component",
+        "SPIN-C current decomposition",
+        "SPIN-D Hermitian reverse",
+        "SPIN-E qgg compatibility"
+      ],
+      "source_phase": "source AST unavailable",
+      "spin_matrix_order": "source AST unavailable",
+      "status": "SPIN_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "transverse_derivative": "source AST unavailable",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "descriptor_id": "C188-SPIN-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "gluon_polarization_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "longitudinal_derivative": "source AST unavailable",
+      "mass_dependence": "caller/source descriptor required",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "quark_helicities": "source AST unavailable",
+      "root": "82011949c1693163e3d63bc975699ebbb1123427e9e15d9e87651c5b4cdcf19a",
+      "routes": [
+        "SPIN-A source order",
+        "SPIN-B good/bad component",
+        "SPIN-C current decomposition",
+        "SPIN-D Hermitian reverse",
+        "SPIN-E qgg compatibility"
+      ],
+      "source_phase": "source AST unavailable",
+      "spin_matrix_order": "source AST unavailable",
+      "status": "SPIN_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "transverse_derivative": "source AST unavailable",
+      "units": "GeV^2/g_s^2"
+    },
+    {
+      "branch_id": "C188-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "descriptor_id": "C188-SPIN-C127_GAUSS_CURRENT_QGG-QGG_TO_Q",
+      "gluon_polarization_slots": [
+        "g_1",
+        "g_2"
+      ],
+      "hermitian_partner": "C188-C127_GAUSS_CURRENT_QGG-Q_TO_QGG",
+      "longitudinal_derivative": "source AST unavailable",
+      "mass_dependence": "caller/source descriptor required",
+      "ordered_field_slots": [
+        "q",
+        "g_1",
+        "g_2"
+      ],
+      "owner_id": "C127_GAUSS_CURRENT_QGG",
+      "quark_helicities": "source AST unavailable",
+      "root": "3d0db26cd2d78af56023802f9d773172050e45f473b2463b221922cfcb37f766",
+      "routes": [
+        "SPIN-A source order",
+        "SPIN-B good/bad component",
+        "SPIN-C current decomposition",
+        "SPIN-D Hermitian reverse",
+        "SPIN-E qgg compatibility"
+      ],
+      "source_phase": "source AST unavailable",
+      "spin_matrix_order": "source AST unavailable",
+      "status": "SPIN_DESCRIPTOR_SOURCE_INCOMPLETE",
+      "transverse_derivative": "source AST unavailable",
+      "units": "GeV^2/g_s^2"
+    }
+  ],
+  "schema": "C188-SPIN-POLARIZATION-V1"
+}

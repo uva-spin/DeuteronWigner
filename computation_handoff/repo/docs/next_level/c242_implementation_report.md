@@ -1,0 +1,8 @@
+# C242/HQCDRIQUARKFIXEDKV2CONTACT1 implementation report
+
+Status: C242_RETAINED_CONTACT_REGULATOR_AND_RAW_EVALUATOR_AUTHENTICATED_COMPLEMENT_RAW_MODE_ADAPTER_INCOMPLETE
+Plan: RIQUARKFIXEDKV2CONTACT1-D
+Baseline: 44603180a05c0af4ab5d64ac1dba069144f7881c
+C242 root: 38d21d500ee10f9ec9d779278af4b7019c76a375275b21ca9d2b2c0e61e6b4b9
+
+C242 authenticates C57/C80 retained scope and proves a parameterized complement raw-mode adapter is still required.

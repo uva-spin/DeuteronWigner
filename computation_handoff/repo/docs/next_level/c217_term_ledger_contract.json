@@ -1,0 +1,56 @@
+{
+  "schema": "C217-TERM-LEDGER-CONTRACT-V1",
+  "artifact": "term_ledger_contract",
+  "package_root": "ae377d185e0ca6e4ecce0c9386d3ca147ba4b3dc089904fe4dd992c671696827",
+  "status": "C217_C216_RETAINED_DOMAIN_ORDER_G2_QUARK_SELF_ENERGY_EXECUTABLE_OMITTED_INTERFACE_REMAINDER_INCOMPLETE",
+  "plan": "RIQUARKSELF1-B",
+  "physical": false,
+  "retained_executable": true,
+  "full_executable": false,
+  "omitted_interfaces": 120,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "term": "B(zI-D)^-1C q-qg-q",
+        "authority": "C145 retained_qg_self_energy",
+        "status": "EXECUTABLE_CONDITIONAL"
+      },
+      {
+        "term": "direct degree-two projected operator",
+        "authority": "C145 order_g2 direct_q_degree_two",
+        "status": "EXECUTABLE_CONDITIONAL"
+      },
+      {
+        "term": "instantaneous fermion/current",
+        "authority": "C131 degree-two ownership inside direct route",
+        "status": "EXECUTABLE_CONDITIONAL"
+      },
+      {
+        "term": "P0/Q0 boundary residual-link/holonomy",
+        "authority": "C172-C183 ledger and C216 state",
+        "status": "BOUND_CONDITIONAL"
+      },
+      {
+        "term": "counterterm directions",
+        "authority": "C131/C206",
+        "status": "SYMBOLIC_UNSELECTED"
+      },
+      {
+        "term": "omitted Fock interfaces",
+        "authority": "C130 120-interface ledger",
+        "status": "UNAVAILABLE_NOT_ZERO"
+      }
+    ],
+    "count": 6,
+    "retained_executable": 5,
+    "complete": false,
+    "root": "c495267f5acbe079164fba84bb60ca0cbead8c0631a620b85ec93f31522eeb02"
+  }
+}

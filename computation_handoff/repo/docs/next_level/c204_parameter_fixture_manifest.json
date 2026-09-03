@@ -1,0 +1,98 @@
+{
+  "schema": "C204-FIXTURE-V1",
+  "artifact": "fixture",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 fixture is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-FIXTURE-V1",
+    "rows": [
+      {
+        "fixture_id": "C204-FIXTURE-K9-LEFT",
+        "resolution": "K9",
+        "endpoint": "LEFT",
+        "orientation": "SOURCE_TO_SINK",
+        "link_order": 1,
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C204-FIXTURE-K9-RIGHT",
+        "resolution": "K9",
+        "endpoint": "RIGHT",
+        "orientation": "SOURCE_TO_SINK",
+        "link_order": 1,
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C204-FIXTURE-K11-LEFT",
+        "resolution": "K11",
+        "endpoint": "LEFT",
+        "orientation": "SOURCE_TO_SINK",
+        "link_order": 1,
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C204-FIXTURE-K11-RIGHT",
+        "resolution": "K11",
+        "endpoint": "RIGHT",
+        "orientation": "SOURCE_TO_SINK",
+        "link_order": 1,
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C204-FIXTURE-K13-LEFT",
+        "resolution": "K13",
+        "endpoint": "LEFT",
+        "orientation": "SOURCE_TO_SINK",
+        "link_order": 1,
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "physical": false,
+        "no_defaults": true
+      },
+      {
+        "fixture_id": "C204-FIXTURE-K13-RIGHT",
+        "resolution": "K13",
+        "endpoint": "RIGHT",
+        "orientation": "SOURCE_TO_SINK",
+        "link_order": 1,
+        "boundary_class": "PV",
+        "holonomy_capsule_id": "C183-CALLER-NONPHYSICAL",
+        "physical": false,
+        "no_defaults": true
+      }
+    ],
+    "count": 6,
+    "root": "7322cd6fd4238fbc47bf1ea1ffdee740323b4c308e8cffa1b1090375a8cb04bc"
+  }
+}

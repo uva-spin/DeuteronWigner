@@ -1,0 +1,39 @@
+{
+  "package_root": "c8083cbd458818db7282e97137fc6fea989bca8bcd7f44431d7946f6e17c197b",
+  "physical": false,
+  "plan": "RIMASSC43SIDISMATCH1-C",
+  "record": {
+    "equations_consistent": true,
+    "root": "61eb7087d9593105d3d69ef5058c30cd1a461537393d5e84afa46d6a1f9e8f86",
+    "rows": [
+      {
+        "equation": "mu>0, zeta>0, L>0; Q and mu have GeV, zeta GeV^2, L GeV^-1",
+        "id": "DIMENSION",
+        "selects_value": false
+      },
+      {
+        "equation": "renormalize at declared (mu,zeta,v) before large-length/lightlike limits",
+        "id": "JMY_ORDER",
+        "selects_value": false
+      },
+      {
+        "equation": "check K,Nmax,bHO,zero-mode axes independently before joint fit",
+        "id": "C43_ORDER",
+        "selects_value": false
+      },
+      {
+        "equation": "Sigma_total retains experimental, C28-theory, and C43-sequence blocks and declared cross-block maps",
+        "id": "COVARIANCE",
+        "selects_value": false
+      },
+      {
+        "equation": "each selected SIDIS point maps to a shared declared scheme trajectory, not an independently optimized scale",
+        "id": "POINT_MAP",
+        "selects_value": false
+      }
+    ],
+    "unique_solution": false
+  },
+  "status": "C345_SIDIS_C43_MATCHING_MAP_TYPED_SCHEME_AND_VOLUME_SELECTION_AUTHORITY_MISSING",
+  "validation": "PASS"
+}

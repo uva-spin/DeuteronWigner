@@ -1,0 +1,28 @@
+{
+  "authority_record": {
+    "evaluated": false,
+    "root": "94b2079e80d1c59acf2ae076a61e54fec1fe86068643fcf4f640111deced6f1a",
+    "rows": [
+      {
+        "coefficient": "sqrt(4*pi)*g^2/mu0^2",
+        "mode": "a0,3",
+        "solution": "sqrt(4*pi)*g^2*F3/mu0^2"
+      },
+      {
+        "coefficient": "(3/4)*sqrt(4*pi)*g^2/mu0^2",
+        "mode": "a0,8",
+        "solution": "(3/4)*sqrt(4*pi)*g^2*F8/mu0^2"
+      }
+    ],
+    "unique_if": [
+      "renormalized linear kernel exists",
+      "mu0^2 is nonzero or a separately defined massless-limit solution exists"
+    ]
+  },
+  "package_root": "44b6ca07acb3e3ea970667244072988158ca495fb7829972a210842b448a6502",
+  "physical": false,
+  "plan": "RIMASSCONSTRAINEDREMAINDER1-B",
+  "schema": "C297-FORMAL_SOLUTION-VALIDATION-V1",
+  "status": "C297_EXACT_CONSTRAINED_ZERO_MODE_FORMAL_SOLUTION_AND_JOINT_COVARIANCE_PULLBACK_READY_RENORMALIZED_KERNEL_INPUT_MISSING",
+  "validation": "PASS"
+}

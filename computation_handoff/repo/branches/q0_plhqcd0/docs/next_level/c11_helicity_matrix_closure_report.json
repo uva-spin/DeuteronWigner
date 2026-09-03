@@ -1,0 +1,240 @@
+{
+  "complete": true,
+  "coverage": [
+    {
+      "parent_id": "C11:H4:PARENT:3690eb9e4efa0054fb56",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "u",
+      "target": "PROTON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:f02b4a792f5ff75a5277",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "d",
+      "target": "PROTON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:b14a968f69a363a3db83",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "ubar",
+      "target": "PROTON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:a6aed94408677cb75e88",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "dbar",
+      "target": "PROTON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:03c17e1951e868ce01a7",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "g",
+      "target": "PROTON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:ae94dd0ecfc87c665512",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "u",
+      "target": "NEUTRON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:a3cab479b397beca6758",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "d",
+      "target": "NEUTRON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:8412883e500477e7ea6f",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "ubar",
+      "target": "NEUTRON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:e027ac5f09b97844f2cb",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "dbar",
+      "target": "NEUTRON"
+    },
+    {
+      "parent_id": "C11:H4:PARENT:14e9909b8b2397a76861",
+      "shape": [
+        4,
+        4
+      ],
+      "species": "g",
+      "target": "NEUTRON"
+    }
+  ],
+  "projectors": {
+    "degenerate_rank": 8,
+    "degenerate_status": "EXPLICIT_REDUCED_BASIS",
+    "generic_rank": 16,
+    "maximum_residual": 0.0,
+    "rows": [
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "u",
+        "status": "GENERIC_COMPLETE",
+        "target": "PROTON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "d",
+        "status": "GENERIC_COMPLETE",
+        "target": "PROTON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "ubar",
+        "status": "GENERIC_COMPLETE",
+        "target": "PROTON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "dbar",
+        "status": "GENERIC_COMPLETE",
+        "target": "PROTON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "g",
+        "status": "GENERIC_COMPLETE",
+        "target": "PROTON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "u",
+        "status": "GENERIC_COMPLETE",
+        "target": "NEUTRON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "d",
+        "status": "GENERIC_COMPLETE",
+        "target": "NEUTRON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "ubar",
+        "status": "GENERIC_COMPLETE",
+        "target": "NEUTRON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "dbar",
+        "status": "GENERIC_COMPLETE",
+        "target": "NEUTRON"
+      },
+      {
+        "rank": 16,
+        "residual": 0.0,
+        "species": "g",
+        "status": "GENERIC_COMPLETE",
+        "target": "NEUTRON"
+      }
+    ]
+  },
+  "schema_version": "1.0.0",
+  "symmetries": {
+    "maximum_residual": 0.0,
+    "parity_adapter": "LF_HELICITY_AND_TRANSVERSE_REFLECTION_V1",
+    "rows": [
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "u",
+        "target": "PROTON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "d",
+        "target": "PROTON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "ubar",
+        "target": "PROTON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "dbar",
+        "target": "PROTON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "g",
+        "target": "PROTON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "u",
+        "target": "NEUTRON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "d",
+        "target": "NEUTRON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "ubar",
+        "target": "NEUTRON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "dbar",
+        "target": "NEUTRON"
+      },
+      {
+        "hermiticity": 0.0,
+        "link_odd": 0.0,
+        "species": "g",
+        "target": "NEUTRON"
+      }
+    ]
+  }
+}

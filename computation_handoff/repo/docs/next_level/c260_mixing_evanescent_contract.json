@@ -1,0 +1,42 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "mixing_evanescent_contract",
+  "authority_record": {
+    "closure_claim": "definition-level closure; C261 owns loop mixing coefficients and any required evanescent enlargement",
+    "color": "SU(3), source ordering retained",
+    "dimensional_regularization": "D=4-2 epsilon",
+    "finite_evanescent_subtraction": "must be calculated and locked in C261; unavailable, not zero",
+    "flavor": "explicit massless active nonsinglet; nf label mandatory",
+    "gamma5": "NDR anticommuting gamma5 for nonsinglet routing; no anomalous singlet claim",
+    "loop_basis": {
+      "BRST_exact": "retained as gauge-fixed nuisance block and tested by ST descendants",
+      "EOM": "retained as off-shell nuisance block and projected/subtracted explicitly",
+      "evanescent": "E_a = D-dimensional Dirac/color tensor minus its four-dimensional projection in the ordered C117 physical basis",
+      "physical": [
+        "I2_density_projector",
+        "derivative_density",
+        "CM_ground",
+        "triplet_projected"
+      ]
+    },
+    "physical_basis": [
+      "I2_density_projector",
+      "derivative_density",
+      "CM_ground",
+      "triplet_projected"
+    ],
+    "root": "1f62da2115c3ca5cfed2d81d7546221a89999ee136137242f74c1dbdf777b73e",
+    "standard_scheme": "MSbar",
+    "tree_closure": true
+  },
+  "package_root": "a1bc4fa7bcf65695fcbec7bbfa89370180671d41343eb3e8d7442e0b1a5b4c83",
+  "physical": false,
+  "plan": "C117RISMOM1-A",
+  "schema": "C260-MIXING_EVANESCENT-CONTRACT-V1",
+  "status": "C260_PROJECT_C117_RI_SMOM_V1_EXECUTABLE_AUTHORITY_READY",
+  "validation": "BOUND"
+}

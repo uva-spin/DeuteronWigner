@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "stable_id": "C26.REQUEST.SCHEMA",
+  "msht20_rep_required": ["archive", "info", "members_0000_through_0999", "sha256", "generation_provenance", "member_order", "license"],
+  "generator_alternative_required": ["input_set_and_dataversion", "algorithm_and_commit", "transformation_matrix", "seeds", "normalization", "eigenvector_order", "clipping_rules", "output_order", "official_checksum"],
+  "frozen_output_required": ["observable", "kinematics", "binning", "units", "member", "engine_commit", "payload_commit", "dataprocessor_commit", "command", "integration_mode", "value", "tolerance"]
+}

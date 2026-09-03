@@ -1,0 +1,72 @@
+{
+  "schema": "C207-TOPOLOGY-CONTRACT-V1",
+  "artifact": "topology_contract",
+  "package": "C207/HQCDMOMQCOND1",
+  "package_root": "3c4b895ca1c57443ab747c6fce0213ce786a9eb90e014c31c87b4e3ff65b7438",
+  "status": "C207_HQCDMOMQCOND1_TARGET_SOURCE_PROJECTOR_KINEMATICS_AUTHORITY_INCOMPLETE",
+  "plan": "MOMQCOND1-C",
+  "claims": [
+    "authenticated target audit complete",
+    "missing target objects are unavailable, not zero"
+  ],
+  "evidence": [
+    "C140/C168/C198 public records",
+    "C206 package root"
+  ],
+  "physical": false,
+  "target_condition_created": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "owner_id": "C206-affine-family",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "owner_id": "target-source",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "owner_id": "target-projector",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "owner_id": "target-kinematics",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "owner_id": "target-coefficient",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "owner_id": "standard-conversion",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      },
+      {
+        "owner_id": "physical-input",
+        "count": 1,
+        "duplicate": false,
+        "missing_is_zero": false
+      }
+    ],
+    "count": 7,
+    "root": "60aff33dbfdd65be5f392db531a81cb74abfaf5f22ef10805ffc01b71ab4a01d"
+  }
+}

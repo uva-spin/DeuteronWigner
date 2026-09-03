@@ -1,0 +1,23 @@
+{
+  "content_hash": "9e4433c69f3c3af514bf184e1fa94d00fb0d4546a61159198c29feefea40bb46",
+  "fit_executed": false,
+  "interface_id": "C34.SOFT.QUANTUM.FUTURE.v1",
+  "operators": [
+    "emission",
+    "absorption",
+    "path_ordering",
+    "singlet_trace_projection"
+  ],
+  "pennylane_executed": false,
+  "registers": [
+    "vacuum_plus_one_gluon",
+    "rapidity_region",
+    "transverse_cell",
+    "polarization",
+    "adjoint_color",
+    "four_eikonal_color_sources"
+  ],
+  "schema_version": "1.0.0",
+  "state_preparation_separate_from_renormalization": true,
+  "status": "NONEXECUTABLE_INTERFACE_ONLY"
+}

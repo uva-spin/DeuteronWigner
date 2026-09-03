@@ -1,0 +1,39 @@
+diff --git a/handoff/ROADMAP.md b/handoff/ROADMAP.md
+index c9203a02..5bca71dc 100644
+--- a/handoff/ROADMAP.md
++++ b/handoff/ROADMAP.md
+@@ -1,5 +1,34 @@
+ # Executable roadmap: parent-derived spin-1 GTMD/TMD model
+ 
++## 2026-08-23 — Q0–Q2 conditional quantum backend freeze
++
++Status: **accepted and frozen locally; no Q3 continuation authorized**.
++
++The separate PennyLane backend track is now closed at the accepted
++conditional finite-basis boundary. Q0/PLHQCD0, Q1/PLHQCDSTATE, and
++Q2/PLHQCDOBS are frozen in their dedicated worktrees with positive acceptance
++records, exact package roots, and local completion commits. The durable detail
++is in `handoff/quantum_backend_q0_q2_freeze.md`; it must be read before any
++future quantum-backend work.
++
++Frozen chain:
++
++- Q0: branch `q0/plhqcd0`, commit `58596e6`, Q0 authority root
++  `2848cb692ce20cf21f654107acbcf9ed1a803cdd1c968f576c8271ae27df3b9c`;
++  audited implementation ancestor `b094fb8cb1046aea0062468d73826ea25eab6116`.
++- Q1: branch `q1/plhqcdstate`, commit `e7b6aef`, acceptance root
++  `604c2797f4b12a5409a63643635c093c1653cf3b02ccccb04f7f22e2f0645547`.
++- Q2: branch `q2/plhqcdobs`, commit `69bc52d`, acceptance root
++  `23ee186d0fb292b159a9acbfb9f52468f6d65b9fc13103014637034ae43394c1`.
++
++The common boundary is `COMPACT_INDEX_DIRECT_ORDER_V1`, basis order
++`q followed by qg`, K9/K11/K13 padded registers, `lightning.qubit`,
++`complex128`, and `shots=None`. The stack is conditional Hamiltonian-diagnostic
++infrastructure only. It does not authorize physical parameters, physical
++states or spectra, hardware, finite-shot execution, fits, TMDs, or production
++objects. Do not amend these three commits; a future extension requires a new
++authorized continuation worktree and acceptance root.
++
+ ## 2026-08-19 — C157 HQCDMATCHIR2 finite-basis numerical boundary
+ 
+ Status: **fail closed locally; not pushed**.

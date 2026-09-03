@@ -1,0 +1,30 @@
+{
+  "package_root": "d6e10253691c4ca51d19c49a359352efc760f4143577c01fad4075da937f8d4d",
+  "physical": false,
+  "plan": "RIMASSC43SCHEMESELECT1-C",
+  "record": {
+    "complete": false,
+    "missing_count": 4,
+    "root": "d4ec854794863968e638d9400945159b4056b53ec378f34dda4cc8b694b8d2e4",
+    "rows": [
+      {
+        "interface": "JMY_to_DELTA_COLLINS",
+        "missing": "finite scheme conversion including soft and rapidity factors, anomalous dimensions, normalization and covariance Jacobian"
+      },
+      {
+        "interface": "ART25_to_C43",
+        "missing": "operator-normalization and coefficient matching without double counting C28 TMD dynamics"
+      },
+      {
+        "interface": "continuum_to_finite_volume",
+        "missing": "source-qualified L,K,Nmax,bHO trajectory, acceptance tolerance and ensemble measure"
+      },
+      {
+        "interface": "covariance",
+        "missing": "cross-block Jacobians among experiment, ART25 theory, scheme conversion and C43 sequence"
+      }
+    ]
+  },
+  "status": "C346_JOINT_SCHEME_VOLUME_AUTHORITY_AUDITED_CONVERSION_MATCHING_OPERATOR_MISSING",
+  "validation": "BOUND"
+}

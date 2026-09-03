@@ -1,0 +1,725 @@
+{
+  "rows": [
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:d2ff4bd39266a8e0442b",
+      "parameters": {
+        "color_spin": 0.075,
+        "current_ZV": 1.0,
+        "kappa4": 0.42,
+        "mass_ct": 0.11018366349078867
+      },
+      "plan": "H1-PLAN-A",
+      "plan_id": "C8:H1:PLAN:d21966f5baf0fbb07821",
+      "shape": [
+        4,
+        4
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_BRANCH_TO_ZERO",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "JACOBI_HARMONIC_IR_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "KAPPA_TL_R",
+          "provenance": "C8:PROV:OMITTED_IR_SECTORS",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:INDUCED_CONF"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_TO_EXPLICIT_QQQG_DYNAMICS",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "PAIR_COLOR_SPIN_REGULATED_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "COLOR_SPIN_R",
+          "provenance": "C8:PROV:FESHBACH_QQQG",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:COLOR_SPIN"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:2583fd673c04a43f979a",
+      "parameters": {
+        "color_spin": 0.06818181818181818,
+        "current_ZV": 1.0,
+        "kappa4": 0.3442622950819672,
+        "mass_ct": 0.12003285558408783
+      },
+      "plan": "H1-PLAN-A",
+      "plan_id": "C8:H1:PLAN:d21966f5baf0fbb07821",
+      "shape": [
+        7,
+        7
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_BRANCH_TO_ZERO",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "JACOBI_HARMONIC_IR_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "KAPPA_TL_R",
+          "provenance": "C8:PROV:OMITTED_IR_SECTORS",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:INDUCED_CONF"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_TO_EXPLICIT_QQQG_DYNAMICS",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "PAIR_COLOR_SPIN_REGULATED_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "COLOR_SPIN_R",
+          "provenance": "C8:PROV:FESHBACH_QQQG",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:COLOR_SPIN"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:bb04a66cdf15508fa906",
+      "parameters": {
+        "color_spin": 0.0625,
+        "current_ZV": 1.0,
+        "kappa4": 0.2916666666666667,
+        "mass_ct": 0.12671848150241094
+      },
+      "plan": "H1-PLAN-A",
+      "plan_id": "C8:H1:PLAN:d21966f5baf0fbb07821",
+      "shape": [
+        10,
+        10
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_BRANCH_TO_ZERO",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "JACOBI_HARMONIC_IR_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "KAPPA_TL_R",
+          "provenance": "C8:PROV:OMITTED_IR_SECTORS",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:INDUCED_CONF"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_TO_EXPLICIT_QQQG_DYNAMICS",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "PAIR_COLOR_SPIN_REGULATED_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "COLOR_SPIN_R",
+          "provenance": "C8:PROV:FESHBACH_QQQG",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:COLOR_SPIN"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:f0c9bf35e980a5f43504",
+      "parameters": {
+        "color_spin": 0.075,
+        "current_ZV": 1.0,
+        "kappa4": 0.0,
+        "mass_ct": 0.18576254585831908
+      },
+      "plan": "H1-PLAN-B",
+      "plan_id": "C8:H1:PLAN:fa8821a67fe9aa7c6208",
+      "shape": [
+        4,
+        4
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_TO_EXPLICIT_QQQG_DYNAMICS",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "PAIR_COLOR_SPIN_REGULATED_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "COLOR_SPIN_R",
+          "provenance": "C8:PROV:FESHBACH_QQQG",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:COLOR_SPIN"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:9461f816e3b18a7b5d20",
+      "parameters": {
+        "color_spin": 0.06818181818181818,
+        "current_ZV": 1.0,
+        "kappa4": 0.0,
+        "mass_ct": 0.18201236523793907
+      },
+      "plan": "H1-PLAN-B",
+      "plan_id": "C8:H1:PLAN:fa8821a67fe9aa7c6208",
+      "shape": [
+        7,
+        7
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_TO_EXPLICIT_QQQG_DYNAMICS",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "PAIR_COLOR_SPIN_REGULATED_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "COLOR_SPIN_R",
+          "provenance": "C8:PROV:FESHBACH_QQQG",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:COLOR_SPIN"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:fa0e058afa13c41106b5",
+      "parameters": {
+        "color_spin": 0.0625,
+        "current_ZV": 1.0,
+        "kappa4": 0.0,
+        "mass_ct": 0.17888922128161233
+      },
+      "plan": "H1-PLAN-B",
+      "plan_id": "C8:H1:PLAN:fa8821a67fe9aa7c6208",
+      "shape": [
+        10,
+        10
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_TO_EXPLICIT_QQQG_DYNAMICS",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "PAIR_COLOR_SPIN_REGULATED_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "COLOR_SPIN_R",
+          "provenance": "C8:PROV:FESHBACH_QQQG",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:COLOR_SPIN"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:2aff229a4bee60eebaf5",
+      "parameters": {
+        "color_spin": 0.0,
+        "current_ZV": 1.0,
+        "kappa4": 0.42,
+        "mass_ct": 0.15971865452740686
+      },
+      "plan": "H1-PLAN-C",
+      "plan_id": "C8:H1:PLAN:d9938ed1163bbc2799e2",
+      "shape": [
+        4,
+        4
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_BRANCH_TO_ZERO",
+          "basis_id": "C8:H1:BASIS:8ca9dbe9bbd55770c811",
+          "kernel_identity": "JACOBI_HARMONIC_IR_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "KAPPA_TL_R",
+          "provenance": "C8:PROV:OMITTED_IR_SECTORS",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:INDUCED_CONF"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:2122071f44bbcfe775d4",
+      "parameters": {
+        "color_spin": 0.0,
+        "current_ZV": 1.0,
+        "kappa4": 0.3442622950819672,
+        "mass_ct": 0.16665216035256558
+      },
+      "plan": "H1-PLAN-C",
+      "plan_id": "C8:H1:PLAN:d9938ed1163bbc2799e2",
+      "shape": [
+        7,
+        7
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_BRANCH_TO_ZERO",
+          "basis_id": "C8:H1:BASIS:55fcf191a9efd9fe5700",
+          "kernel_identity": "JACOBI_HARMONIC_IR_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "KAPPA_TL_R",
+          "provenance": "C8:PROV:OMITTED_IR_SECTORS",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:INDUCED_CONF"
+        }
+      ]
+    },
+    {
+      "Hermiticity_residual": 0.0,
+      "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+      "discrepancy": {
+        "interpretation": "UNIMPLEMENTED_NOT_ZERO",
+        "omitted": [
+          "qqqg",
+          "qqqq-qbar",
+          "higher_orbitals",
+          "zero_modes",
+          "instantaneous_partners",
+          "basis_tail"
+        ]
+      },
+      "hamiltonian_id": "C8:H1:HAMILTONIAN:7e76ef96bd94eba248a9",
+      "parameters": {
+        "color_spin": 0.0,
+        "current_ZV": 1.0,
+        "kappa4": 0.2916666666666667,
+        "mass_ct": 0.171506364929635
+      },
+      "plan": "H1-PLAN-C",
+      "plan_id": "C8:H1:PLAN:d9938ed1163bbc2799e2",
+      "shape": [
+        10,
+        10
+      ],
+      "terms": [
+        {
+          "ablation_relation": "RETAINED_FROM",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "C7_FREE_INVARIANT_MASS",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "CANONICAL",
+          "parameter_block_id": "H0_BASIS_MASSES",
+          "provenance": "C7:PROV:FREE",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "canonical",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:FREE"
+        },
+        {
+          "ablation_relation": "ADDS_TO",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "IDENTITY_MASS_SQUARED",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "COUNTERTERM",
+          "parameter_block_id": "LIGHT_QUARK_MASS_CT",
+          "provenance": "C8:PROV:RENORMALIZATION",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "counterterm",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:MASS_CT"
+        },
+        {
+          "ablation_relation": "ALTERNATIVE_BRANCH_TO_ZERO",
+          "basis_id": "C8:H1:BASIS:30f92eda55bb7fd00c07",
+          "kernel_identity": "JACOBI_HARMONIC_IR_V1",
+          "naturalness_metadata": "DIMENSIONLESS_COEFFICIENT_O1_VALIDATION_PRIOR",
+          "operator_class": "INDUCED",
+          "parameter_block_id": "KAPPA_TL_R",
+          "provenance": "C8:PROV:OMITTED_IR_SECTORS",
+          "selection_rules": "COLOR_FLAVOR_JZ_PARITY_PERMUTATION_PRESERVING",
+          "self_adjoint_proof": "REAL_SYMMETRIC_CONSTRUCTION",
+          "source_sector": "qqq",
+          "status": "induced",
+          "target_sector": "qqq",
+          "term_id": "C8:H1:INDUCED_CONF"
+        }
+      ]
+    }
+  ],
+  "schema_version": "1.0.0"
+}

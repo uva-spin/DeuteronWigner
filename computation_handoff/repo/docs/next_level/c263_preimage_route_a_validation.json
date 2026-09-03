@@ -1,0 +1,48 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "preimage_route_a_validation",
+  "authority_record": {
+    "local_vertices": 0,
+    "root": "c5d688120c3f7a5325267b9ac61a8a7637da312f0da1b976a80039be25c9c304",
+    "rows": [
+      {
+        "direction": "I2_density_projector",
+        "local_vertex": null,
+        "result": "REGULATED_DISTRIBUTIONAL_KERNEL",
+        "route": "C43 constraint current -> C114 graph -> C115 factor -> C116 kernel class -> C117 projector",
+        "source_qualified": true
+      },
+      {
+        "direction": "derivative_density",
+        "local_vertex": null,
+        "result": "DERIVATIVE_WEIGHTED_REGULATED_DISTRIBUTION",
+        "route": "C43 constraint current -> C114 graph -> C115 factor -> C116 kernel class -> C117 projector",
+        "source_qualified": true
+      },
+      {
+        "direction": "CM_ground",
+        "local_vertex": null,
+        "result": "EXTERNAL_STATE_PROJECTOR",
+        "route": "C43 constraint current -> C114 graph -> C115 factor -> C116 kernel class -> C117 projector",
+        "source_qualified": true
+      },
+      {
+        "direction": "triplet_projected",
+        "local_vertex": null,
+        "result": "EXTERNAL_CHANNEL_PROJECTOR",
+        "route": "C43 constraint current -> C114 graph -> C115 factor -> C116 kernel class -> C117 projector",
+        "source_qualified": true
+      }
+    ]
+  },
+  "package_root": "68b3b372cef8080611691a927ce280e70c7b29011d0d9d91c8b8b17823637bb3",
+  "physical": false,
+  "plan": "C117CONTTENSOR1-D",
+  "schema": "C263-PREIMAGE_ROUTE_A-VALIDATION-V1",
+  "status": "C263_C117_DIRECTIONS_CLASSIFIED_AS_REGULATOR_OR_EXTERNAL_PROJECTORS_NONLOCAL_MATCHING_REQUIRED",
+  "validation": "PASS"
+}

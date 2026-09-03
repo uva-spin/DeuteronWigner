@@ -1,0 +1,100 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "renormalization_matrices_validation",
+  "authority_record": {
+    "Z_MSbar_one_loop": "UNAVAILABLE_NOT_ZERO_C262",
+    "Z_MSbar_tree": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "Z_RISMOM_one_loop": "UNAVAILABLE_NOT_ZERO_C262",
+    "Z_RISMOM_tree": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "conversion_one_loop": "UNAVAILABLE_NOT_ZERO_C262",
+    "conversion_tree": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "matrix_formula": "C=Z_MSbar inverse(Z_RISMOM)",
+    "orientation": "renormalized column operators O_MSbar=C O_RI",
+    "root": "927196cf78c5b9870fa5523e3a65ff2ce2e71fb12bbb3e5a54d3b5ad5626f201"
+  },
+  "package_root": "b8326f78014113be619c70f2c6f8a8174d55c80b11892a4cd9ef2b41b762b4b2",
+  "physical": false,
+  "plan": "C117CONTTARGET1-B",
+  "schema": "C261-RENORMALIZATION_MATRICES-VALIDATION-V1",
+  "status": "C261_PROJECT_C117_RI_SMOM_V1_EXACT_SYMBOLIC_CONVERSION_PROGRAM_READY_LOOP_EVALUATION_REMAINS",
+  "validation": "PASS"
+}

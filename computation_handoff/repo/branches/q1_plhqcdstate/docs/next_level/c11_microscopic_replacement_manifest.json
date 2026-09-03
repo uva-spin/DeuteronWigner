@@ -1,0 +1,37 @@
+{
+  "analytic_role": "IMMUTABLE_BENCHMARK",
+  "downstream_gates_closed": [
+    "WILSON",
+    "NUCLEAR",
+    "MATCHING_EVOLUTION",
+    "PROCESS",
+    "INFERENCE"
+  ],
+  "force_numerical_equality": false,
+  "relations": [
+    {
+      "relation": "REPLACES_WITHIN_SCOPE",
+      "target": "C3_ANALYTIC_COMMON_PARENT"
+    },
+    {
+      "relation": "REPLACES_WITHIN_SCOPE",
+      "target": "C4_ANALYTIC_SEA_GLUON_PARENT"
+    }
+  ],
+  "rollback": "disable C11 H4 validation root",
+  "schema_version": "1.0.0",
+  "scope": {
+    "production": false,
+    "root": "C11_H4_VALIDATION_ONLY",
+    "species": [
+      "u",
+      "d",
+      "ubar",
+      "dbar",
+      "g"
+    ],
+    "wilson_order": 0,
+    "xi": 0
+  },
+  "source": "H4_MICROSCOPIC_COMMON_PARENT"
+}

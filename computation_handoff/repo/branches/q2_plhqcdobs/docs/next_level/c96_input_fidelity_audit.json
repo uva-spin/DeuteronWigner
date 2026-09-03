@@ -1,0 +1,115 @@
+{
+  "C90_aggregate": {
+    "blake2b_256": "0d911478a80c9eb3d792cfb1fb65211c9024886e7a76749b55ec7752e3fa8a8d",
+    "sha256": "efee3c97dff6310349f39c52c52efe8fe5a3691dff033b783c4ce0be61366a34"
+  },
+  "C93_capsule_root": "65173c9f3a623f87ec06f2f6b1a82d600db7e26526a08ea26851c47c8e8950f6",
+  "C94_package_root": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+  "audit": {
+    "C90_aggregate": {
+      "blake2b_256": "0d911478a80c9eb3d792cfb1fb65211c9024886e7a76749b55ec7752e3fa8a8d",
+      "sha256": "efee3c97dff6310349f39c52c52efe8fe5a3691dff033b783c4ce0be61366a34"
+    },
+    "C93_capsule_root": "65173c9f3a623f87ec06f2f6b1a82d600db7e26526a08ea26851c47c8e8950f6",
+    "C94_package_root": "3792f56e5ecad966c32d238efe0d8fe580da349900d908083de9dbc528ed1e75",
+    "authority_verified": true,
+    "blocker": "C93_PROOF_INPUTS_ARE_ONLY_PRIVATE_ROOT_BASED_COMPOSITIONS_OF_PAIR_ATTESTATION_AND_NORMAL_FORM",
+    "conclusion": "NO_SEPARATE_PERSISTED_PROOF_INPUT_RECORD_DOMAIN",
+    "forbidden_private_recovery_called": false,
+    "normal_forms": {
+      "normal_form_schemas": [
+        [
+          "cardinality",
+          "child",
+          "coefficient_expression",
+          "first_ordinal",
+          "forbids",
+          "last_ordinal",
+          "normal_form",
+          "normal_form_root",
+          "ownership",
+          "pair",
+          "primitive_roots",
+          "schema",
+          "scientific_field_schema",
+          "templates",
+          "type"
+        ]
+      ],
+      "path": "normal_forms.jsonl.gz",
+      "proof_schemas": [
+        [
+          "cardinality",
+          "node_types",
+          "normal_form_root",
+          "pass"
+        ]
+      ],
+      "records": 154830,
+      "sha256": "b475e0a65fbd80739682434e45bd132d996bfa0fd3fff84b1218a6aca07e0aae",
+      "top_level_schemas": [
+        [
+          "normal_form",
+          "normal_form_root",
+          "pair",
+          "proof"
+        ]
+      ]
+    },
+    "pair_attestations": {
+      "normal_form_schemas": [],
+      "path": "pair_attestations.jsonl.gz",
+      "proof_schemas": [
+        [
+          "cardinality",
+          "node_types",
+          "normal_form_root",
+          "pass"
+        ]
+      ],
+      "records": 154830,
+      "sha256": "8b56161f767c3250679b3239038271b1e8c83b9b48c6fc8c4c698f1637758d2d",
+      "top_level_schemas": [
+        [
+          "blake2b_256",
+          "kind",
+          "normal_form_root",
+          "pair",
+          "primitive_roots",
+          "proof",
+          "sha256",
+          "summary"
+        ]
+      ]
+    },
+    "persisted_proof_input_domain": false,
+    "private_C93_loader_imported": false
+  },
+  "baseline": "8e9be179236507171d670bbcc9e540d018260fa3",
+  "contract": {
+    "path": "docs/next_level/c96_ifhistpublic_import_contract.json",
+    "schema": "C95-C96-IFHISTPUBLIC-V1",
+    "sha256": "b9ae3cccbfdc08bcb4d8258ea3d2df93cf7fd4c5bf9474b0b5a0ed55d8f18691"
+  },
+  "forbidden_outputs": [
+    "expanded logical records",
+    "coefficient-times-kernel product",
+    "contact matrix/action",
+    "physical coupling",
+    "counterterm",
+    "TMD/matching",
+    "fit/inference/production",
+    "historical scientific reconstruction by consumer",
+    "C95 comparison execution before public inputs exist"
+  ],
+  "historical_C72_runtime_instance": "UNKNOWN_NOT_CLAIMED",
+  "historical_C82_completion": "8e47231ab565f0f729d335b39aa98881176ba166",
+  "historical_C90_completion": "ac622ab358b83f090717d7e7fa179b58f18f526d",
+  "historical_environment": "HISTORICAL_C82_SOURCE_WITH_C87_CANONICAL_COLOR_AUTHORITY",
+  "original_c90_runtime_payload": "NOT_CLAIMED",
+  "package": "C96/IFHISTPUBLIC",
+  "result": "FAIL_CLOSED_BEFORE_PUBLIC_LOADER_ADAPTER",
+  "root_semantics": "FACTORIZED_SEMANTIC_PROGRAM_ROOT",
+  "scientific_relation": "RECOVERED_CONTENT_PREIMAGE_OF_FROZEN_C90_AUTHORITY",
+  "status": "C96_IFHISTPUBLIC_PROOF_INPUT_LOADER_INCOMPLETE"
+}

@@ -1,0 +1,34 @@
+{
+  "C78_index_sha256": "cc2268804af8a5bb77c72ea4d1cc73814b6d264017d8aa8c74da62e239fcabac",
+  "C78_root": "117f908d05b3396448049bb4c73cc66cdf04c77e07835d1704a0793fc80261bf",
+  "coefficient_status_counts": "not enumerated; complete stream not exportable",
+  "exact_count_semantics": "C82 uses one leaf per ordered emission-path/absorption-path coordinate; the coordinate includes both raw IDs and both color labels",
+  "logical_pair_coordinate_records": 891992018,
+  "resolution_rows": [
+    {
+      "logical_pair_coordinate_records": 165991250,
+      "path_count_product_identity": "sum(absorption_path_count * emission_path_count) over C78 ordered witnesses",
+      "resolution": "K11_2_N10_b0.45",
+      "supported_pairs": 43350,
+      "witnesses": 43350
+    },
+    {
+      "logical_pair_coordinate_records": 697394304,
+      "path_count_product_identity": "sum(absorption_path_count * emission_path_count) over C78 ordered witnesses",
+      "resolution": "K13_2_N12_b0.50",
+      "supported_pairs": 95256,
+      "witnesses": 95256
+    },
+    {
+      "logical_pair_coordinate_records": 28606464,
+      "path_count_product_identity": "sum(absorption_path_count * emission_path_count) over C78 ordered witnesses",
+      "resolution": "K9_2_N8_b0.40",
+      "supported_pairs": 16224,
+      "witnesses": 16224
+    }
+  ],
+  "supported_pairs": 154830,
+  "unique_coordinate_ids": "not enumerated; complete stream not exportable",
+  "unique_equivalence_ids": "not enumerated; complete stream not exportable",
+  "witness_multiplicity": "one ordered C78 witness per supported pair"
+}

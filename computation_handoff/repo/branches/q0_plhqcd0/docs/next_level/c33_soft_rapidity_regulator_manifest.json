@@ -1,0 +1,47 @@
+{
+  "delta_minus": "positive_infinitesimal_symbol",
+  "delta_plus": "positive_infinitesimal_symbol",
+  "denominators": [
+    {
+      "component": "k_minus",
+      "delta": "delta_minus",
+      "i0_sign": "+",
+      "line_id": "C33.LINE.N.DAGGER.B",
+      "ordered_j_shift": "+j i delta_minus",
+      "orientation": "conjugate"
+    },
+    {
+      "component": "k_plus",
+      "delta": "delta_plus",
+      "i0_sign": "-",
+      "line_id": "C33.LINE.NBAR.B",
+      "ordered_j_shift": "-j i delta_plus",
+      "orientation": "direct"
+    },
+    {
+      "component": "k_plus",
+      "delta": "delta_plus",
+      "i0_sign": "+",
+      "line_id": "C33.LINE.NBAR.DAGGER.0",
+      "ordered_j_shift": "+j i delta_plus",
+      "orientation": "conjugate"
+    },
+    {
+      "component": "k_minus",
+      "delta": "delta_minus",
+      "i0_sign": "-",
+      "line_id": "C33.LINE.N.0",
+      "ordered_j_shift": "-j i delta_minus",
+      "orientation": "direct"
+    }
+  ],
+  "dependence": "delta_plus*delta_minus",
+  "family": "MODIFIED_DELTA_OPERATOR_LEVEL",
+  "finite_basis_is_rapidity_regulator": false,
+  "physical_numerical_epsilon": null,
+  "regulator_id": "C33.SOFT.RAPIDITY.MODIFIED_DELTA.v1",
+  "removal_order": "after real+virtual assembly and UV/rapidity factorization",
+  "schema_version": "1.0.0",
+  "status": "C33_SOFT_RAPIDITY_REGULATOR_VALIDATED",
+  "zeta_is_bare_regulator": false
+}

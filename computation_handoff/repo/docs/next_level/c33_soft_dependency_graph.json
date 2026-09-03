@@ -1,0 +1,119 @@
+{
+  "acyclic": true,
+  "all_blockers_visible": true,
+  "edges": [
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.N_NBAR_EXCHANGE",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.CONJUGATE_LINE_EXCHANGE",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.SAME_DIRECTION_EXCHANGE",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.REAL_ONE_GLUON",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.VIRTUAL_ONE_GLUON",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.WILSON_LINE_SELF_ENERGY",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.CUSP_ENDPOINT",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.TRANSVERSE_CLOSURE",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.AUXILIARY_SELF_ENERGY",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.VACUUM_ENERGY",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.LF_INSTANTANEOUS",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.GAUGE_FIXING",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.GHOST",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.ZERO_MODE",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.BASIS_BOUNDARY",
+      "to": "C33.BARE.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.RAPIDITY_COUNTERTERM",
+      "to": "C33.REN.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.UV_COUNTERTERM",
+      "to": "C33.REN.SOFT.ONE_LOOP"
+    },
+    {
+      "blocking": true,
+      "from": "C33.DIAGRAM.RESIDUAL_LINE_MASS_COUNTERTERM",
+      "to": "C33.REN.SOFT.ONE_LOOP"
+    }
+  ],
+  "nodes": [
+    "C33.DIAGRAM.N_NBAR_EXCHANGE",
+    "C33.DIAGRAM.CONJUGATE_LINE_EXCHANGE",
+    "C33.DIAGRAM.SAME_DIRECTION_EXCHANGE",
+    "C33.DIAGRAM.REAL_ONE_GLUON",
+    "C33.DIAGRAM.VIRTUAL_ONE_GLUON",
+    "C33.DIAGRAM.WILSON_LINE_SELF_ENERGY",
+    "C33.DIAGRAM.CUSP_ENDPOINT",
+    "C33.DIAGRAM.TRANSVERSE_CLOSURE",
+    "C33.DIAGRAM.AUXILIARY_SELF_ENERGY",
+    "C33.DIAGRAM.VACUUM_ENERGY",
+    "C33.DIAGRAM.LF_INSTANTANEOUS",
+    "C33.DIAGRAM.GAUGE_FIXING",
+    "C33.DIAGRAM.GHOST",
+    "C33.DIAGRAM.ZERO_MODE",
+    "C33.DIAGRAM.BASIS_BOUNDARY",
+    "C33.DIAGRAM.RAPIDITY_COUNTERTERM",
+    "C33.DIAGRAM.UV_COUNTERTERM",
+    "C33.DIAGRAM.RESIDUAL_LINE_MASS_COUNTERTERM",
+    "C33.BARE.SOFT.ONE_LOOP",
+    "C33.REN.SOFT.ONE_LOOP"
+  ],
+  "schema_version": "1.0.0"
+}

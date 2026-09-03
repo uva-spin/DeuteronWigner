@@ -1,0 +1,66 @@
+{
+  "schema": "C205-PARAMETER-MANIFEST-V1",
+  "artifact": "parameter_manifest",
+  "package": "C205/HQCDSTGLOBAL1",
+  "package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "plan": "STGLOBAL1-B",
+  "claims": [
+    "C205 parameter_manifest is immutable source-derived evidence",
+    "orbit/stabilizer ratio is closed while absolute gauge-volume normalization remains unselected"
+  ],
+  "evidence": [
+    "C172/C174/C175/C183 public authorities",
+    "C203/C204 public BRST and endpoint authorities"
+  ],
+  "physical": false,
+  "absolute_volume_selected": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "PROJECT_FINITE_BASIS_GLOBAL_GAUGE_VOLUME_PARAMETER_RECORD_V1",
+    "required_fields": [
+      "record_id",
+      "resolution",
+      "sector_id",
+      "holonomy_capsule_id",
+      "capsule_class",
+      "global_frame_id",
+      "orbit_id",
+      "stabilizer_id",
+      "measure_convention",
+      "zero_mode_basis_id",
+      "counterterm_coordinates",
+      "null_coordinates",
+      "branch",
+      "enclosure",
+      "no_defaults",
+      "physical"
+    ],
+    "counterterm_order": [
+      "C151_COUNTERTERM_DIRECTION_1",
+      "C151_COUNTERTERM_DIRECTION_2",
+      "C151_COUNTERTERM_DIRECTION_3",
+      "C151_COUNTERTERM_DIRECTION_4",
+      "C151_COUNTERTERM_DIRECTION_5",
+      "C151_COUNTERTERM_DIRECTION_6"
+    ],
+    "null_order": [
+      "C151_NULL_COORDINATE_1",
+      "C151_NULL_COORDINATE_2",
+      "C151_NULL_COORDINATE_3",
+      "C151_NULL_COORDINATE_4",
+      "C151_NULL_COORDINATE_5",
+      "C151_NULL_COORDINATE_6",
+      "C151_NULL_COORDINATE_7",
+      "C151_NULL_COORDINATE_8",
+      "C151_NULL_COORDINATE_9"
+    ],
+    "root": "c2aac7b3fef9b84c9083e620f056c9d8bb1ea410022f1fad2c90b28a0ced5c05"
+  }
+}

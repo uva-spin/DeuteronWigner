@@ -1,0 +1,30 @@
+{
+  "status": "ACTION_LEVEL_COMPLETE",
+  "terms": [
+    {
+      "expression": "-g psibar gamma^mu T^a psi A_mu^a",
+      "name": "canonical_qg",
+      "scope": "REQUIRED_AT_O_G2"
+    },
+    {
+      "expression": "g f_abc (partial_mu A_nu^a-partial_nu A_mu^a)A_b^mu A_c^nu/2",
+      "name": "three_gluon",
+      "scope": "OUTSIDE_SCOPE_BUT_RETAINED"
+    },
+    {
+      "expression": "g^2 f_abc f_ade A_bmu A_dmu A_cnu A_enu/4",
+      "name": "four_gluon",
+      "scope": "OUTSIDE_SCOPE_BUT_RETAINED"
+    },
+    {
+      "expression": "-g^2/2 psibar gamma^+ gamma^mu A_mu^a T^a (i partial_-)^-1 gamma^nu A_nu^b T^b psi",
+      "name": "instantaneous_fermion",
+      "scope": "REQUIRED_AT_O_G2"
+    },
+    {
+      "expression": "-g^2/2 [(i partial_-)^-1 j_a^+]^2",
+      "name": "instantaneous_current",
+      "scope": "REQUIRED_AT_O_G2"
+    }
+  ]
+}

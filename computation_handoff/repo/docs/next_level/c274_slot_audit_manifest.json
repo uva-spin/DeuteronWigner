@@ -1,0 +1,51 @@
+{
+  "authority_record": {
+    "C117_coordinates": 4,
+    "missing_as_zero": false,
+    "non_C117_bundle_closed": false,
+    "root": "ad095fa672ddfda4420279b7b5b806f2408dc4a62c1e8812e194bd193801532b",
+    "rows": [
+      {
+        "authority": "C154-C155/C213-C219",
+        "slot": "coupling_and_masses",
+        "status": "AUTHENTICATED_STANDARD_COORDINATES_FINITE_BASIS_RUNNING_SYMBOLIC"
+      },
+      {
+        "authority": "C153-C157",
+        "slot": "common_IR_regulator",
+        "status": "CONDITIONAL_NO_NUMERICAL_BINDING"
+      },
+      {
+        "authority": "C169-C183",
+        "slot": "boundary_holonomy",
+        "status": "CONDITIONAL_CLASSES_NO_PHYSICAL_SELECTION"
+      },
+      {
+        "authority": "C206 affine family",
+        "slot": "non_C117_counterterms",
+        "status": "UNSELECTED_NOT_ZERO"
+      },
+      {
+        "authority": "C158/C161/C213",
+        "slot": "finite_basis_targets",
+        "status": "COMPARISON_VALUES_NOT_PHYSICALLY_BOUND"
+      },
+      {
+        "authority": "C154/C213",
+        "slot": "joint_covariance",
+        "status": "MARGINAL_PARTIAL_JOINT_UNAVAILABLE_NOT_ZERO"
+      },
+      {
+        "authority": "C259-C273",
+        "slot": "C117_coordinates",
+        "status": "FOUR_EXPLICIT_UNRESOLVED_COORDINATES"
+      }
+    ]
+  },
+  "package_root": "6bb3a76faaa0f38ca6943f59728762cf18a2a7182f6ce45d7ae317982f09f590",
+  "physical": false,
+  "plan": "C117RENORMH1-B",
+  "schema": "C274-SLOT_AUDIT-MANIFEST-V1",
+  "status": "C274_SYMBOLIC_HERMITIAN_HAMILTONIAN_FAMILY_READY_NONC117_PHYSICAL_BUNDLE_SYMBOLIC",
+  "validation": "BOUND"
+}

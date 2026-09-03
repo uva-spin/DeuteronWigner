@@ -1,0 +1,30 @@
+{
+  "plans_mutually_exclusive": true,
+  "records": [
+    {
+      "executable": false,
+      "external_action": "IDENTITY",
+      "microscopic_action": "CONVERT_TO_ART25",
+      "plan_id": "B1-SCHEME-ART25",
+      "score": "MINIMUM_SYNTHETIC_CONTENT_BUT_ADAPTER_MISSING",
+      "selected": true
+    },
+    {
+      "executable": false,
+      "external_action": "CONVERT_TO_PROJECT",
+      "microscopic_action": "IDENTITY",
+      "plan_id": "B1-SCHEME-PROJECT",
+      "score": "EXTERNAL_ADAPTER_MISSING",
+      "selected": false
+    },
+    {
+      "executable": false,
+      "external_action": "CONVERT_TO_CANONICAL",
+      "microscopic_action": "CONVERT_TO_CANONICAL",
+      "plan_id": "B1-SCHEME-CANONICAL",
+      "score": "TWO_ADAPTERS_MISSING",
+      "selected": false
+    }
+  ],
+  "schema_version": "1.0.0"
+}

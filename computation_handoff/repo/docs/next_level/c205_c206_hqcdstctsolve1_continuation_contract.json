@@ -1,0 +1,42 @@
+{
+  "schema": "C205-C206-CONTINUATION-CONTRACT-V1",
+  "from_package": "C205/HQCDSTGLOBAL1",
+  "to_package": "C206/HQCDSTCTSOLVE1",
+  "from_baseline": "651c9697d31833fa420dd6f51b3219e8b7c861b0",
+  "from_package_root": "f8658cad5f3fec055efbbf56e137db0a03c76fd2a93b61ee214e22dfdb1990df",
+  "from_status": "C205_C204_GLOBAL_ORBIT_STABILIZER_IDENTITY_AUTHORITY_READY_PHYSICAL_VOLUME_NORMALIZATION_UNSELECTED",
+  "from_plan": "STGLOBAL1-B",
+  "completed_frontier": "C197-ST-7",
+  "completed_object": "global zero-mode/gauge-volume treatment",
+  "completed_alias": "GLOBAL_GAUGE_VOLUME_IDENTITY",
+  "completed_scope": "global SU(3) orbit/stabilizer ratio identity with absolute gauge-volume normalization unselected",
+  "next_frontier": {
+    "object_id": "C197-ST-8",
+    "exact_missing_object": "ST-compatible counterterm solution",
+    "alias": "ST_COMPATIBLE_COUNTERTERM_SOLUTION",
+    "status": "CONDITIONAL_COUNTERTERM_SOLUTION_FRONTIER",
+    "source_side": true,
+    "required_scope": "solve the compatible ST system over six counterterm and nine null coordinates without selecting an unsupported physical null representative"
+  },
+  "remaining_ordered_frontier": ["C197-ST-8", "C197-ST-9", "C197-ST-10"],
+  "preserve": [
+    "C197-ST-1 through C197-ST-7 authorities",
+    "C205 orbit/stabilizer ratio and unselected absolute volume normalization",
+    "C198-C205 coordinate ordering and exact compatibility",
+    "K9/K11/K13, schemes, holonomy classes, and boundary classes separately"
+  ],
+  "constraints": {
+    "physical": false,
+    "target_MOMq": false,
+    "standard_scheme": false,
+    "physical_null_representative": false,
+    "C158_value_inputs": 0,
+    "C166_graph_delta": [0, 0],
+    "Q0_Q1_Q2_modified": false,
+    "push": false
+  },
+  "evidence": [
+    "C205 public frontier, replacement, completeness, readiness, and package-root records",
+    "C198-C205 public residual/Jacobian/conditional solution-family authorities"
+  ]
+}

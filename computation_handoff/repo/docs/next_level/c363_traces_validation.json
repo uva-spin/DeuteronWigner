@@ -1,0 +1,50 @@
+{
+  "package_root": "08367346f2480b7dc4059ed49c14cbf2079fa833609e593809442677e4b48010",
+  "physical": false,
+  "plan": "RIMASSC43JMYTRACEREDUCE2-C",
+  "record": {
+    "count": 6,
+    "d": "4-2epsilon retained",
+    "root": "9ab80f9e352740f4d636e94766905dd3d219b0482929d483ca8627798b608297",
+    "rows": [
+      {
+        "denominator": "(q^2-m^2+i0)^2",
+        "id": "DR.qq",
+        "identity": "qslash gamma+ qslash=2q.plus qslash-q^2 gamma+",
+        "q": "p-ell",
+        "scalar": "2(d-2)[2 q.plus (p.q)-q^2 p.plus]"
+      },
+      {
+        "denominator": "(q^2-m^2+i0)(v.ell+i0)^(1+alpha)",
+        "id": "DR.qv",
+        "identity": "Tr[p/ gamma+ q/ gamma_mu]",
+        "q": "p-ell",
+        "scalar": "4[p.plus(q.v)-(p.q)v.plus+(p.v)q.plus]"
+      },
+      {
+        "denominator": "(v.ell+i0)^(2+2alpha)",
+        "id": "DR.vv",
+        "identity": "Tr[p/ gamma+]/2",
+        "q": "p-ell",
+        "scalar": "2 p.plus v^2"
+      },
+      {
+        "denominator": "Cross(DR.qq.denominator)",
+        "id": "FR.qq",
+        "scalar": "CrossPlusMinus(DR.qq)*z^(-2+2epsilon)"
+      },
+      {
+        "denominator": "Cross(DR.qv.denominator,i0->-i0,alpha->beta)",
+        "id": "FR.qv",
+        "scalar": "CrossPlusMinus(DR.qv,v->tildev)*z^(-2+2epsilon)"
+      },
+      {
+        "denominator": "Cross(DR.vv.denominator,alpha->beta)",
+        "id": "FR.vv",
+        "scalar": "CrossPlusMinus(DR.vv,v->tildev)*z^(-2+2epsilon)"
+      }
+    ]
+  },
+  "status": "C363_D_DIMENSIONAL_REAL_TRACE_SCALARS_REDUCED_COUNTERTERM_SCALAR_POLES_MISSING",
+  "validation": "PASS"
+}

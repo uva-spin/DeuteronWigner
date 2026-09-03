@@ -1,0 +1,25 @@
+{
+  "package_root": "d194392345e68f7d4cb7efc8dbda471486de16986d78e6138029d80b6d06c251",
+  "physical": false,
+  "plan": "RUNNINGPHASE1-B",
+  "record": {
+    "Nf": "explicit caller record",
+    "coefficients": {
+      "b0": "(33-2*Nf)/(12*pi)",
+      "b1": "(153-19*Nf)/(24*pi^2)",
+      "b2": "(2857-(5033/9)*Nf+(325/27)*Nf^2)/(128*pi^3)"
+    },
+    "convention": "mu_R^2 d alpha_s/d mu_R^2=-(b0 alpha_s^2+b1 alpha_s^3+b2 alpha_s^4+...)",
+    "four_five_loop": "source locators referenced but coefficients not transcribed",
+    "orders": [
+      1,
+      2,
+      3
+    ],
+    "root": "702ad10fa115976c9fbde2698008d7bebc7c787e94f98a7a3956bf8d349ab62c",
+    "scale": "explicit positive caller coordinate",
+    "scheme": "MSbar",
+    "source": "PDG 2026 QCD review Eq.(9.3), printed pages 2-3"
+  },
+  "status": "C393_AUTHENTICATED_MSBAR_RUNNING_THRESHOLD_ACTIVE_FLAVOR_SYMBOLIC_AUTHORITY_READY_PHYSICAL_BOUNDARY_INPUT_NEXT"
+}

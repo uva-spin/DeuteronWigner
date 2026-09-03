@@ -1,0 +1,22 @@
+{
+  "C82_current_runtime": {
+    "bridge_sha256": "19b9577da2b412ceba03c38feaf437fa11a65dbe8568967ff8959a06c08d4629",
+    "index_sha256": "d1889d3676e28e29fa7094a045b009024ea199c8691feeff72de2377a3bde934",
+    "schema": "C82-IFAGG-V1",
+    "status": "C82_SOURCE_DERIVED_IFCONTACT_AGGREGATION_BRIDGE_READY"
+  },
+  "C82_historical_runtime": {
+    "bridge_sha256": "19b9577da2b412ceba03c38feaf437fa11a65dbe8568967ff8959a06c08d4629",
+    "index_sha256": "d1889d3676e28e29fa7094a045b009024ea199c8691feeff72de2377a3bde934",
+    "schema": "C82-IFAGG-V1",
+    "status": "C82_SOURCE_DERIVED_IFCONTACT_AGGREGATION_BRIDGE_READY"
+  },
+  "C82_payload_role": "bridge metadata only; no persisted pair-coordinate records or pair spans",
+  "blocker": "C84.C82.COMPLETE_LOGICAL_PAIR_COORDINATE_DOMAIN_ABSENT",
+  "hash_mismatch": false,
+  "kernel_products_created": false,
+  "materialization_started": false,
+  "matrix_created": false,
+  "next": "C85/IFPERSIST \u2014 materialize the missing complete C82 logical pair-coordinate domain before snapshotting it",
+  "status": "C84_IFCOORD2_MATERIALIZATION_INCOMPLETE"
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "C216-STRUCTURAL-AUTHORITY-MANIFEST-V1",
+  "artifact": "structural_authority_manifest",
+  "package_root": "f6791c3a7a8e08700b132ba7bc736fec6326a07460c4f5ae7dbf99b438142dce",
+  "status": "C216_C215_RI_SMOM_QUARK_ADAPTER_STRUCTURAL_PROGRAM_READY_ORDER_G2_C43_SELF_ENERGY_INCOMPLETE",
+  "plan": "RIQUARKADAPTER1-B",
+  "physical": false,
+  "self_energy_complete": false,
+  "C154_values": 0,
+  "C158_values": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      {
+        "authority": "C142",
+        "object": "canonical nonzero-mode quark source/sink map",
+        "complete": true
+      },
+      {
+        "authority": "C145",
+        "object": "forward good-component two-point",
+        "complete": true
+      },
+      {
+        "authority": "C147",
+        "object": "C43 coordinate field normalization",
+        "complete": true
+      },
+      {
+        "authority": "C148",
+        "object": "constrained positive-frequency full-spinor two-point",
+        "complete": true
+      },
+      {
+        "authority": "C149",
+        "object": "signed-mass and kinetic projectors",
+        "complete": true
+      },
+      {
+        "authority": "C150",
+        "object": "conditional finite-basis Zq scheme family",
+        "complete": true
+      },
+      {
+        "authority": "C153",
+        "object": "componentwise common-IR matching schema",
+        "complete": true
+      },
+      {
+        "authority": "request-1",
+        "object": "order-g_s^2 C43 self-energy on common state",
+        "complete": false
+      }
+    ],
+    "count": 8,
+    "complete": 7,
+    "root": "9c5c6a3eda22a0513a346cb192dcee9a4795151de91910a0c0b3a78e4a14b16d"
+  }
+}

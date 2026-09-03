@@ -1,0 +1,22 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "independent_route_contract",
+  "authority_record": {
+    "formula": "integral_0^Q q^r exp(-q^2/(2b^2))dq=2^((r-1)/2)b^(r+1) lowergamma((r+1)/2,Q^2/(2b^2))",
+    "mismatches": 0,
+    "root": "c7aca6eb3c5d92e8921baaf04350b6c10b8164ac95102f46ba6d6a8dcedf1684",
+    "route_A": "absolute Laguerre coefficient expansion followed by exact monomial Gaussian integration",
+    "route_B": "C231 polynomial majorant integrated termwise on the count-once core interval"
+  },
+  "core_programs": 8,
+  "package_root": "6417856d6550410988503fe3d082cdeb90e85c0f0f9c758807a91b6789a15117",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVRADCORE1-B",
+  "schema": "C232-INDEPENDENT-ROUTE-CONTRACT-V1",
+  "status": "C232_EIGHT_EXACT_SYMBOLIC_DIRECTED_FINITE_CORE_ENCLOSURE_PROGRAMS_READY_ANALYTIC_TAIL_INCOMPLETE",
+  "tail_programs": 0
+}

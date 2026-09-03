@@ -1,0 +1,31 @@
+{
+  "schema": "C123-ICAXIS-IMPLEMENTATION-REPORT-V1",
+  "status": "C123_ICAXIS_AXIS_CARDINALITY_INCOMPLETE",
+  "baseline": "a2bf6c3052a83a11680b6e321947f21bcaf7b5d9",
+  "package": "src/deuteron_wigner/bridge/icaxis",
+  "runtime": "data/runtime/c123_icaxis/manifest.json",
+  "public_api": [
+    "load_verified_current_axis_authority", "verify_current_axis_authority", "axis_manifest",
+    "axis_domain_manifest", "axis_cardinality", "axis_member_by_rank", "axis_member_rank",
+    "axis_member_page", "physical_state_axis", "source_graph_axis", "current_factor_operand_axis",
+    "axis_compatibility", "empty_axis_domain_certificate", "projector_reproduction_certificate"
+  ],
+  "positive_source_axes": 9,
+  "ambiguous_axes": ["longitudinal_transfer", "external_modes"],
+  "route_identity_mismatches": 0,
+  "route_order_mismatches": 0,
+  "route_cardinality_mismatches": 0,
+  "route_orientation_mismatches": 0,
+  "projector_reproduction": "deferred fail-closed",
+  "witness_tuples": 0,
+  "matrix_targets": 0,
+  "witness_values": 0,
+  "witness_bounds": 0,
+  "component_sums": 0,
+  "operators": 0,
+  "C53_values_consumed": 0,
+  "C112_values_consumed": 0,
+  "physical_couplings_consumed": 0,
+  "counterterm_values_consumed": 0,
+  "next": "C124/ICDOMAIN2 after source authority closes"
+}

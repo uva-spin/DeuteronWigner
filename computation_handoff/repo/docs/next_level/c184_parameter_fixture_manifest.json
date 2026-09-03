@@ -1,0 +1,67 @@
+{
+  "count": 4,
+  "root": "e71ca7e3f908f8f08b68372ae73886f81ba2d4f82d4c982f5c1a72f3c316aabb",
+  "rows": [
+    {
+      "C144_fixtures": [
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_A",
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_B"
+      ],
+      "complex_z": {
+        "imaginary": 0.25,
+        "real": 0.5
+      },
+      "fixture_id": "C184_FIXTURE_IDENTITY_DIAGNOSTIC",
+      "holonomy_capsule_id": "IDENTITY_DIAGNOSTIC_ONLY",
+      "identity_diagnostic_only": true,
+      "no_defaults": true,
+      "physical": false
+    },
+    {
+      "C144_fixtures": [
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_A",
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_B"
+      ],
+      "complex_z": {
+        "imaginary": -0.125,
+        "real": 0.75
+      },
+      "fixture_id": "C184_FIXTURE_CARTAN_INTERIOR",
+      "holonomy_capsule_id": "GENERIC_CARTAN_INTERIOR",
+      "identity_diagnostic_only": false,
+      "no_defaults": true,
+      "physical": false
+    },
+    {
+      "C144_fixtures": [
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_A",
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_B"
+      ],
+      "complex_z": {
+        "imaginary": 0.375,
+        "real": 1.25
+      },
+      "fixture_id": "C184_FIXTURE_CENTER_SECTOR",
+      "holonomy_capsule_id": "NONTRIVIAL_CENTER_SECTOR",
+      "identity_diagnostic_only": false,
+      "no_defaults": true,
+      "physical": false
+    },
+    {
+      "C144_fixtures": [
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_A",
+        "C184_C144_NONPHYSICAL_PARAMETER_FIXTURE_B"
+      ],
+      "complex_z": {
+        "imaginary": -0.25,
+        "real": 1.5
+      },
+      "fixture_id": "C184_FIXTURE_CONJUGATED_NONDIAGONAL",
+      "holonomy_capsule_id": "CONJUGATED_NONDIAGONAL_GENERIC",
+      "identity_diagnostic_only": false,
+      "no_defaults": true,
+      "physical": false
+    }
+  ],
+  "schema": "C184-FIXTURE-MANIFEST-V1"
+}

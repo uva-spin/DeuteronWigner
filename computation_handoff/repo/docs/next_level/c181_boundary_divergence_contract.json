@@ -1,0 +1,12 @@
+{
+  "IBP_defect": "separate nonzero owner",
+  "adjoint": "C176 leakage Hermitian transpose",
+  "operator": "B_div = P_HO divergence Q_HO",
+  "routes": [
+    "BDIV-A",
+    "BDIV-B",
+    "BDIV-C",
+    "BDIV-D",
+    "BDIV-E"
+  ]
+}

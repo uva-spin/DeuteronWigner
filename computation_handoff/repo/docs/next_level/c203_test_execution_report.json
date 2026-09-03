@@ -1,0 +1,27 @@
+{
+  "schema": "C203-TEST-EXECUTION-V1",
+  "artifact": "test-execution",
+  "package": "C203/HQCDBRST1",
+  "package_root": "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e",
+  "status": "C203_C202_LOCAL_P0_BRST_SOURCE_IDENTITY_AUTHORITY_READY_BOUNDARY_GLOBAL_FRONTIER_EXPLICIT",
+  "plan": "BRST1-B",
+  "claims": [
+    "C203 focused tests: 5 passed",
+    "selected C153-C203 regressions: 103 passed",
+    "tracked authoritative C157 replacement test: 3 passed",
+    "384 live mutation cases passed"
+  ],
+  "evidence": [
+    "pytest focused and grouped commands",
+    "pytest tests/test_c157_hqcdmatchir2_authoritative.py",
+    "mutate_live_hqcdbrst1(0..383)"
+  ],
+  "physical": false,
+  "full_global_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false
+}

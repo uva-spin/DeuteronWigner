@@ -1,0 +1,63 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "ward_st_diagnostics_manifest",
+  "authority_record": {
+    "root": "6f483437edaf9c316b156e80285c29649c48ee941585b2b3e6d81af7ec994e74",
+    "rows": [
+      {
+        "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+        "claimed_zero": false,
+        "descendant": "T_I2_density_projector[s(J_q+J_g);W_1,K_Q0] in the C203-C212 BRST/ST quotient",
+        "direction": "I2_density_projector",
+        "evaluation": "same deterministic pairing program as target with BRST insertion",
+        "gauge_invariance_claim": false,
+        "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+        "root": "75afc8589eeea7a6ea4f80a36f1f8ec1a466cce4b9bd43e7ee72f2a0af1a29fd",
+        "target_root": "57c715a5438835a63abc8733c1a8c34d78ed8ec2468f5cef51efbd43f6feb7e5"
+      },
+      {
+        "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+        "claimed_zero": false,
+        "descendant": "T_derivative_density[s(J_q+J_g);W_2,K_Q0] in the C203-C212 BRST/ST quotient",
+        "direction": "derivative_density",
+        "evaluation": "same deterministic pairing program as target with BRST insertion",
+        "gauge_invariance_claim": false,
+        "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+        "root": "fdd4e8ed26012c8dfd29ff2d5f46834e6a27b9c0abe69ee16e1f7305139a74f6",
+        "target_root": "64c3c6b15399e66b8a7cf2963e99f4f1144469462a5c17af640c0a3464436bf2"
+      },
+      {
+        "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+        "claimed_zero": false,
+        "descendant": "T_CM_ground[s(J_q+J_g);W_3,K_Q0] in the C203-C212 BRST/ST quotient",
+        "direction": "CM_ground",
+        "evaluation": "same deterministic pairing program as target with BRST insertion",
+        "gauge_invariance_claim": false,
+        "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+        "root": "70c19f0471737af2996f10c27ddaf2ea83ad45064a3705ad72d7ca5593323557",
+        "target_root": "eb5aadd28e7bba86b10aa304694729932e892a9f67418f15de7309d1bb41e53a"
+      },
+      {
+        "availability": "PARAMETERIZED_EXECUTABLE; contact/boundary arguments remain caller-bound",
+        "claimed_zero": false,
+        "descendant": "T_triplet_projected[s(J_q+J_g);W_4,K_Q0] in the C203-C212 BRST/ST quotient",
+        "direction": "triplet_projected",
+        "evaluation": "same deterministic pairing program as target with BRST insertion",
+        "gauge_invariance_claim": false,
+        "residual": "R_ST,i(parameters)=projected source descendant minus required contact/boundary descendants",
+        "root": "e1f03788dd15a40e241085e96509086428e8268821c8705d3defc3507eeb1d15",
+        "target_root": "21ee7c4aa46a06c4cb9141fb14a455a6ec383511eaa9b5187fdedb5829feef6c"
+      }
+    ]
+  },
+  "package_root": "26bb80bdbf2e61983e70c581f53b21a172a5d812cf44279fca3071d0f18ed20e",
+  "physical": false,
+  "plan": "C117NONLOCALTARGET2-B",
+  "schema": "C267-WARD_ST_DIAGNOSTICS-MANIFEST-V1",
+  "status": "C267_C117_PARAMETERIZED_NONLOCAL_TARGETS_READY_STANDARD_PHYSICAL_SIDE_UNAVAILABLE",
+  "validation": "BOUND"
+}

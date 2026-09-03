@@ -1,0 +1,43 @@
+{
+  "fitted_to_c12": false,
+  "relations": "EQUIVALENT_WITH_REMAINDER",
+  "rows": [
+    {
+      "difference_decomposition": {
+        "basis": 0.001,
+        "dynamics": 0.0,
+        "fock": 0.018,
+        "numerical": 0.0,
+        "operator": 0.002
+      },
+      "explicit": 0.021,
+      "induced_remainder": 0.018,
+      "species": "ubar"
+    },
+    {
+      "difference_decomposition": {
+        "basis": 0.001,
+        "dynamics": 0.001,
+        "fock": 0.021,
+        "numerical": 0.0,
+        "operator": 0.002
+      },
+      "explicit": 0.025,
+      "induced_remainder": 0.021,
+      "species": "dbar"
+    },
+    {
+      "difference_decomposition": {
+        "basis": 0.001,
+        "dynamics": 0.002,
+        "fock": 0.026,
+        "numerical": 0.0,
+        "operator": 0.002
+      },
+      "explicit": 0.031,
+      "induced_remainder": 0.026,
+      "species": "gluon"
+    }
+  ],
+  "schema_version": "1.0.0"
+}

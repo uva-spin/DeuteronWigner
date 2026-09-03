@@ -1,0 +1,40 @@
+{
+  "C176_blocker": "C176-C43-RESIDUAL-LINK-PATH-GEOMETRY",
+  "C43_placeholder_crosswalk": "4e7ee587004cea64ca16a84fff2deb259ee4ea5c27d2222c39f6fae198f84332",
+  "accepted_source_objects": [
+    "BJY-PURE-GAUGE-EQ38",
+    "BJY-DIS-FUTURE-HALF-LINK-EQ48",
+    "BJY-DIS-COMPOSITION-EQ50",
+    "BJY-DIS-REDUCED-CONNECTOR-EQ52",
+    "BJY-DY-PAST-ORIENTATION-EQ113-115",
+    "JY-TRANSVERSE-LINK-EQ16",
+    "JMY-OFFLIGHTCONE-STAPLE-EQ2"
+  ],
+  "boundary_values_constructed": false,
+  "continuum_path_classes": [
+    "BJY_DIS_FUTURE_HALF_LINK",
+    "BJY_DIS_FUTURE_REDUCED_LINK",
+    "BJY_DY_PAST_HALF_LINK",
+    "BJY_DY_PAST_REDUCED_LINK",
+    "JY_TRANSVERSE_INFINITY_CLASS",
+    "JMY_OFFLIGHTCONE_STAPLE"
+  ],
+  "convention_adapter_root": "2a307d1c56b7ed9faae5b771b43af18b80d8036f12ce82bb120b35c4cd53b744",
+  "finite_HO_path_root": "d317c57824e3d64b9fa143ab098edb7010637100091a13f50ebfbc5d9d0ba22e",
+  "finite_cell_adapter_root": "edae79400b8bd1dd2c9e6d66b112ba3f7156c0bb4ea62824cd9b01c16b0c1dcf",
+  "future_past_root": "dfcf8f5bce34d4734ee3015ba3b4ad411e970c39bff0665bfca1498d912713e1",
+  "half_link_cancellation_root": "eb02107adbb798ce524d2f53cd4a25028ff92c92c2b615144feedded80493c96",
+  "project_path_absence": true,
+  "project_path_root": "275507b28b383060b32f06104c6a3223225b0b896d50a9ecda1fe05bce57ca73",
+  "pure_gauge_root": "d707295bb9cf9f3b1ef44f4927fd69a4f75407770aff71c8ad05e76d037b559c",
+  "representation_lift_root": "6d1f742b216963112e14cfb85f2da092e5803047a944d61df592e86251602c4c",
+  "root": "c78955d0d7f0c2c02ab61689ac7000ae2559ff780070064991271fb980dfa0b1",
+  "schema": "C177-EXECUTABLE-LINK-HANDOFF-V1",
+  "unresolved_objects": [
+    "periodic infinity-to-cell adapter",
+    "global holonomy/zero-mode closure",
+    "finite-HO source-equivalent path comparison",
+    "project canonical representative"
+  ],
+  "wilson_coefficients_constructed": false
+}

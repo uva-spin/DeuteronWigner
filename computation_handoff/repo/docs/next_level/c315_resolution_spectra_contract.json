@@ -1,0 +1,48 @@
+{
+  "authority_record": {
+    "count": 3,
+    "root": "1571da9f0f1dc2b5093a0abe4da39d11b9dd956c99cfee872926856aedc54b1c",
+    "rows": [
+      {
+        "K": "9/2",
+        "Nmax": 8,
+        "bHO_GeV": 0.4,
+        "longitudinal_boson": "j=1,2,...,K with j=0 excluded",
+        "longitudinal_fermion": "j=1/2,3/2,...,K",
+        "omega_B2": "bHO^2*(2n+|m|+1), conditional C43 kinetic adapter",
+        "omega_F2": "bHO^2*(2n+|m|+1)+m_R^2, m_R caller symbolic",
+        "resolution": "K9",
+        "transverse_states": "(n,m), 2n+|m|+1<=Nmax"
+      },
+      {
+        "K": "11/2",
+        "Nmax": 10,
+        "bHO_GeV": 0.45,
+        "longitudinal_boson": "j=1,2,...,K with j=0 excluded",
+        "longitudinal_fermion": "j=1/2,3/2,...,K",
+        "omega_B2": "bHO^2*(2n+|m|+1), conditional C43 kinetic adapter",
+        "omega_F2": "bHO^2*(2n+|m|+1)+m_R^2, m_R caller symbolic",
+        "resolution": "K11",
+        "transverse_states": "(n,m), 2n+|m|+1<=Nmax"
+      },
+      {
+        "K": "13/2",
+        "Nmax": 12,
+        "bHO_GeV": 0.5,
+        "longitudinal_boson": "j=1,2,...,K with j=0 excluded",
+        "longitudinal_fermion": "j=1/2,3/2,...,K",
+        "omega_B2": "bHO^2*(2n+|m|+1), conditional C43 kinetic adapter",
+        "omega_F2": "bHO^2*(2n+|m|+1)+m_R^2, m_R caller symbolic",
+        "resolution": "K13",
+        "transverse_states": "(n,m), 2n+|m|+1<=Nmax"
+      }
+    ],
+    "units": "GeV and GeV^2 explicit"
+  },
+  "package_root": "37ecab11fea734e19744d352a006457fcb110a0d65b41d1cf57f11094848f1db",
+  "physical": false,
+  "plan": "RIMASSC43SPECTRUM1-A",
+  "schema": "C315-RESOLUTION_SPECTRA-CONTRACT-V1",
+  "status": "C315_C43_APBC_PBC_LONGITUDINAL_AND_2DHO_TRANSVERSE_SPECTRUM_ADAPTER_READY_DETERMINANT_REEVALUATION_MISSING",
+  "validation": "BOUND"
+}

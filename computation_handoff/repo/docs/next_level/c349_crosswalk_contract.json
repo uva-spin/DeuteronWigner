@@ -1,0 +1,29 @@
+{
+  "package_root": "65aa7abe78683bf34b17b17c75de3b99f61a17e8febeb4e6092d111ec024d343",
+  "physical": false,
+  "plan": "RIMASSC43DELTASOURCE1-C",
+  "record": {
+    "JMY_side": {
+      "finite_common_external_state": false,
+      "off_lightcone_path": true,
+      "operator": true
+    },
+    "common_fields": {
+      "Fourier": "requires equation extraction",
+      "IR_prescription": "not yet common",
+      "UV_MSbar": "requires equation extraction",
+      "alpha_s_normalization": "requires equation extraction"
+    },
+    "delta_side": {
+      "finite_NLO_soft": true,
+      "operator": true,
+      "regulator": true,
+      "soft_partition": true,
+      "zero_bin": true
+    },
+    "direct_conversion_ready": false,
+    "root": "0254b3a16e30a8b7d573d8e6fb95b03a36211ec4fd00f4cf12baf92247fa8b18"
+  },
+  "status": "C349_MODIFIED_DELTA_COLLINS_PRIMARY_SOURCES_RECOVERED_EXPLICIT_COMMON_COEFFICIENT_EXTRACTION_MISSING",
+  "validation": "BOUND"
+}

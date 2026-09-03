@@ -1,0 +1,44 @@
+{
+  "authority_record": {
+    "count": 3,
+    "root": "1633ed7ad9a1671777499ad42c5ebe1de80b3ad4ce457a113096612a223f4890",
+    "rows": [
+      {
+        "action_scale": "g_K^2 L_K/(4*pi^2)",
+        "basis": [
+          "CHI8",
+          "RE_TF3"
+        ],
+        "coefficients": "UNAVAILABLE_NOT_ZERO",
+        "cross_K_covariance": "REQUIRED",
+        "resolution": "K9"
+      },
+      {
+        "action_scale": "g_K^2 L_K/(4*pi^2)",
+        "basis": [
+          "CHI8",
+          "RE_TF3"
+        ],
+        "coefficients": "UNAVAILABLE_NOT_ZERO",
+        "cross_K_covariance": "REQUIRED",
+        "resolution": "K11"
+      },
+      {
+        "action_scale": "g_K^2 L_K/(4*pi^2)",
+        "basis": [
+          "CHI8",
+          "RE_TF3"
+        ],
+        "coefficients": "UNAVAILABLE_NOT_ZERO",
+        "cross_K_covariance": "REQUIRED",
+        "resolution": "K13"
+      }
+    ]
+  },
+  "package_root": "5cda967ef9c8295b3e8f842ec940a2324c9d4484cd82b69847d702a88fdf4c5f",
+  "physical": false,
+  "plan": "RIMASSHOLONOMYPOT1-B",
+  "schema": "C301-RESOLUTION-CONTRACT-V1",
+  "status": "C301_EXACT_SU3_CENTER_WEYL_HOLONOMY_POTENTIAL_BASIS_READY_COEFFICIENT_MATCHING_MISSING",
+  "validation": "BOUND"
+}

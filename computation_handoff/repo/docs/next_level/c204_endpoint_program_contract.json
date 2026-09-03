@@ -1,0 +1,212 @@
+{
+  "schema": "C204-PROGRAM-CONTRACT-V1",
+  "artifact": "program_contract",
+  "package": "C204/HQCDSTBOUNDARY2",
+  "package_root": "2794f40129791a7ae87af07426284f77f2a0df1067b4b244e4b3e0d877e6f351",
+  "status": "C204_C203_FINITE_HO_ENDPOINT_GHOST_LINK_IDENTITY_AUTHORITY_READY_GLOBAL_ZERO_MODE_FRONTIER_EXPLICIT",
+  "plan": "STBOUNDARY2-B",
+  "claims": [
+    "C204 program_contract is immutable source-derived evidence",
+    "finite-HO endpoint scope is explicit; global zero-mode/gauge-volume remains unavailable, not zero"
+  ],
+  "evidence": [
+    "C175/C181/C182/C183 public authorities",
+    "C203 package root and BRST API"
+  ],
+  "physical": false,
+  "global_zero_mode_closed": false,
+  "full_ST": false,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "schema": "C204-PROGRAM-V1",
+    "rows": [
+      {
+        "program_id": "C204-PROGRAM-ENDPOINT_GHOST",
+        "owner_id": "ENDPOINT_GHOST",
+        "opcodes": [
+          "LOAD_C175_ENDPOINT_GHOST_LINK",
+          "LOAD_C181_BOUNDARY_PULLBACK",
+          "LOAD_C182_RESIDUAL_LINK_ENDPOINT",
+          "LOAD_C183_CUT_HOLONOMY_CAPSULE",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_GRADED_LEIBNIZ_RULE",
+          "APPLY_ENDPOINT_ORIENTATION",
+          "APPLY_LINK_ENDPOINT_TRANSFORMATION",
+          "APPLY_BOUNDARY_PULLBACK",
+          "APPLY_CUT_TRANSITION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "TAKE_ENDPOINT_SOURCE_DERIVATIVE",
+          "NORMAL_ORDER_GRADED_PRODUCT",
+          "RETURN_TYPED_ENDPOINT_IDENTITY"
+        ],
+        "ghost_number_shift": 1,
+        "parity_shift": 1,
+        "endpoint_order": "explicit",
+        "link_order": "explicit",
+        "source_roots": [
+          "C175",
+          "C181",
+          "C182",
+          "C183",
+          "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e"
+        ],
+        "validity_guards": [
+          "typed endpoint",
+          "caller holonomy",
+          "physical=false"
+        ]
+      },
+      {
+        "program_id": "C204-PROGRAM-ENDPOINT_ANTIGHOST",
+        "owner_id": "ENDPOINT_ANTIGHOST",
+        "opcodes": [
+          "LOAD_C175_ENDPOINT_GHOST_LINK",
+          "LOAD_C181_BOUNDARY_PULLBACK",
+          "LOAD_C182_RESIDUAL_LINK_ENDPOINT",
+          "LOAD_C183_CUT_HOLONOMY_CAPSULE",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_GRADED_LEIBNIZ_RULE",
+          "APPLY_ENDPOINT_ORIENTATION",
+          "APPLY_LINK_ENDPOINT_TRANSFORMATION",
+          "APPLY_BOUNDARY_PULLBACK",
+          "APPLY_CUT_TRANSITION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "TAKE_ENDPOINT_SOURCE_DERIVATIVE",
+          "NORMAL_ORDER_GRADED_PRODUCT",
+          "RETURN_TYPED_ENDPOINT_IDENTITY"
+        ],
+        "ghost_number_shift": 1,
+        "parity_shift": 1,
+        "endpoint_order": "explicit",
+        "link_order": "explicit",
+        "source_roots": [
+          "C175",
+          "C181",
+          "C182",
+          "C183",
+          "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e"
+        ],
+        "validity_guards": [
+          "typed endpoint",
+          "caller holonomy",
+          "physical=false"
+        ]
+      },
+      {
+        "program_id": "C204-PROGRAM-RESIDUAL_LINK",
+        "owner_id": "RESIDUAL_LINK",
+        "opcodes": [
+          "LOAD_C175_ENDPOINT_GHOST_LINK",
+          "LOAD_C181_BOUNDARY_PULLBACK",
+          "LOAD_C182_RESIDUAL_LINK_ENDPOINT",
+          "LOAD_C183_CUT_HOLONOMY_CAPSULE",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_GRADED_LEIBNIZ_RULE",
+          "APPLY_ENDPOINT_ORIENTATION",
+          "APPLY_LINK_ENDPOINT_TRANSFORMATION",
+          "APPLY_BOUNDARY_PULLBACK",
+          "APPLY_CUT_TRANSITION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "TAKE_ENDPOINT_SOURCE_DERIVATIVE",
+          "NORMAL_ORDER_GRADED_PRODUCT",
+          "RETURN_TYPED_ENDPOINT_IDENTITY"
+        ],
+        "ghost_number_shift": 1,
+        "parity_shift": 1,
+        "endpoint_order": "explicit",
+        "link_order": "explicit",
+        "source_roots": [
+          "C175",
+          "C181",
+          "C182",
+          "C183",
+          "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e"
+        ],
+        "validity_guards": [
+          "typed endpoint",
+          "caller holonomy",
+          "physical=false"
+        ]
+      },
+      {
+        "program_id": "C204-PROGRAM-BOUNDARY_PULLBACK",
+        "owner_id": "BOUNDARY_PULLBACK",
+        "opcodes": [
+          "LOAD_C175_ENDPOINT_GHOST_LINK",
+          "LOAD_C181_BOUNDARY_PULLBACK",
+          "LOAD_C182_RESIDUAL_LINK_ENDPOINT",
+          "LOAD_C183_CUT_HOLONOMY_CAPSULE",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_GRADED_LEIBNIZ_RULE",
+          "APPLY_ENDPOINT_ORIENTATION",
+          "APPLY_LINK_ENDPOINT_TRANSFORMATION",
+          "APPLY_BOUNDARY_PULLBACK",
+          "APPLY_CUT_TRANSITION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "TAKE_ENDPOINT_SOURCE_DERIVATIVE",
+          "NORMAL_ORDER_GRADED_PRODUCT",
+          "RETURN_TYPED_ENDPOINT_IDENTITY"
+        ],
+        "ghost_number_shift": 1,
+        "parity_shift": 1,
+        "endpoint_order": "explicit",
+        "link_order": "explicit",
+        "source_roots": [
+          "C175",
+          "C181",
+          "C182",
+          "C183",
+          "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e"
+        ],
+        "validity_guards": [
+          "typed endpoint",
+          "caller holonomy",
+          "physical=false"
+        ]
+      },
+      {
+        "program_id": "C204-PROGRAM-CUT_TRANSITION",
+        "owner_id": "CUT_TRANSITION",
+        "opcodes": [
+          "LOAD_C175_ENDPOINT_GHOST_LINK",
+          "LOAD_C181_BOUNDARY_PULLBACK",
+          "LOAD_C182_RESIDUAL_LINK_ENDPOINT",
+          "LOAD_C183_CUT_HOLONOMY_CAPSULE",
+          "APPLY_C203_BRST_DIFFERENTIAL",
+          "APPLY_GRADED_LEIBNIZ_RULE",
+          "APPLY_ENDPOINT_ORIENTATION",
+          "APPLY_LINK_ENDPOINT_TRANSFORMATION",
+          "APPLY_BOUNDARY_PULLBACK",
+          "APPLY_CUT_TRANSITION",
+          "APPLY_HOLONOMY_CONJUGATION",
+          "TAKE_ENDPOINT_SOURCE_DERIVATIVE",
+          "NORMAL_ORDER_GRADED_PRODUCT",
+          "RETURN_TYPED_ENDPOINT_IDENTITY"
+        ],
+        "ghost_number_shift": 1,
+        "parity_shift": 1,
+        "endpoint_order": "explicit",
+        "link_order": "explicit",
+        "source_roots": [
+          "C175",
+          "C181",
+          "C182",
+          "C183",
+          "bb881fbf5576e0ce98b69f3171de79e24b0a1bbdf32bb2370a2270e37652d61e"
+        ],
+        "validity_guards": [
+          "typed endpoint",
+          "caller holonomy",
+          "physical=false"
+        ]
+      }
+    ],
+    "count": 5,
+    "root": "f426ce3a4651f173ed77df1bb9cc63e0e913793c738605d4d359954f77332e5d"
+  }
+}

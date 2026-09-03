@@ -1,0 +1,27 @@
+{
+  "schema": "C213-EXCLUSION-QUARANTINE-LEDGER-CONTRACT-V1",
+  "artifact": "exclusion_quarantine_ledger_contract",
+  "package_root": "367e0d7a008f64624d2d7d751e68f6688a88f3ec12f8a18b9c1da852bafe57eb",
+  "status": "C213_C212_PHYSICAL_INPUT_AUTHORITY_AUDITED_STANDARD_CAPSULES_READY_FINITE_BASIS_BINDING_INCOMPLETE",
+  "plan": "PHYSINPUT1-B",
+  "physical_record_ready": false,
+  "physical_values_selected": 0,
+  "C158_value_inputs": 0,
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "authority_record": {
+    "rows": [
+      "C134 quarantined artifacts not authority",
+      "C158 values read-only and not consumed",
+      "test fixtures not physical inputs",
+      "conditional symbolic records not numerical defaults",
+      "missing covariance not zero",
+      "unselected counterterm coordinates not zero"
+    ],
+    "count": 6,
+    "root": "6fcf9f689809c932742261a529ca211448671d9a6ed9fceb65c6c42aaed09dce"
+  }
+}

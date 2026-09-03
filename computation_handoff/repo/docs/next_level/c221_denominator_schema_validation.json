@@ -1,0 +1,34 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "denominator_schema_validation",
+  "authority_record": {
+    "analytic_query": "caller explicit complex z",
+    "dense_inverse": false,
+    "executable": false,
+    "operator": "z I_Q - Q_R H Q_R",
+    "orientation": "P_R H Q_R (zI_Q-Q_RHQ_R)^-1 Q_R H P_R",
+    "pole_PV_prescription": "UNAVAILABLE",
+    "root": "ebf6bc7ca7b54973ab212afe5de1e75946ac6b5fbfae0c8e41603fc639806c83",
+    "safe_opcodes": [
+      "VALIDATE_C220_DOMAIN",
+      "LOAD_OMITTED_FREE_OPERATOR",
+      "LOAD_OMITTED_INTERACTION",
+      "FORM_SYMBOLIC_DENOMINATOR",
+      "SOLVE_SPARSE_OR_BOUND",
+      "COMPOSE_ENDPOINTS"
+    ],
+    "schema": "C221-OMITTED-RESOLVENT-PROGRAM-V1"
+  },
+  "denominator_executable": false,
+  "missing_zeroed": 0,
+  "package_root": "693aca1deec43edea1364873f53ce53b03104f3cb85c155fff289e4642fce2e3",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKDEN1-D",
+  "retained_zero_promoted": 0,
+  "schema": "C221-DENOMINATOR-SCHEMA-VALIDATION-V1",
+  "status": "C221_C220_OMITTED_DENOMINATOR_SCHEMA_READY_FREE_COMPLEMENT_OPERATOR_INCOMPLETE"
+}

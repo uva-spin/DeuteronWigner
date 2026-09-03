@@ -1,0 +1,13 @@
+GROUPS = (
+    ("COLOR", 24, "C14.COLOR.MULTIPLICITY"), ("PERMUTATION", 20, "C14.STATISTICS.PROJECTOR"),
+    ("HAMILTONIAN", 18, "C14.HAMILTONIAN.BLOCK"), ("RENORMALIZATION", 12, "C14.RENORM.TRAJECTORY"),
+    ("TTN", 14, "C14.TTN.SYMMETRY"), ("WILSON", 24, "C14.WILSON.ORDER_REPRESENTATION"),
+    ("SPECTRAL", 14, "C14.CUT.LEDGER"), ("SOFT", 12, "C14.SOFT.IDENTITY"),
+    ("GAUGE", 14, "C14.GAUGE.COMPLETION"), ("PROVENANCE", 12, "C14.PROVENANCE.EXCLUSION"),
+    ("DOWNSTREAM", 12, "C14.DOWNSTREAM.GATE"), ("REGRESSION", 8, "C14.REGRESSION.IMMUTABLE"),
+)
+
+INJECTIONS = tuple(
+    (f"C14.INJECT.{group}.{index:03d}", f"ordered {group.lower()} boundary mutation {index}", diagnostic)
+    for group, count, diagnostic in GROUPS for index in range(1, count+1)
+)

@@ -1,0 +1,2389 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume XIII: Spin-Resolved NNpi Dynamics, Pion Matching, Two-Body Currents, and Coherent Nuclear Amplitudes},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume XIII}
+\fancyhead[R]{\small\color{darkgray}Spin-resolved NNpi and coherent nuclear dynamics}
+\fancyfoot[L]{\small\color{darkgray}31 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{design principle}{design principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\lT}{\bm{\ell}_{T}}
+\newcommand{\rT}{\bm{r}_{T}}
+\newcommand{\sT}{\bm{s}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\RT}{\bm{R}_{T}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\PDF}{\ensuremath{\mathrm{PDF}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\PCAC}{\ensuremath{\mathrm{PCAC}}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Dens}{\mathbf{Dens}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+\newcommand{\HNN}{\Hil_{NN}}
+\newcommand{\HNNpi}{\Hil_{NN\pi}}
+\newcommand{\StateBundle}{\texttt{N1NuclearStateBundle}}
+\newcommand{\PionSector}{\texttt{NNPiSectorSpec}}
+\newcommand{\ThreeBodyRecoil}{\texttt{ThreeBodyNuclearRecoilMap}}
+\newcommand{\TransitionRecoil}{\texttt{NuclearTransitionRecoilMap}}
+\newcommand{\PionOperator}{\texttt{PionActiveOperator}}
+\newcommand{\TransitionOperator}{\texttt{NuclearTransitionOperator}}
+\newcommand{\PionSubtraction}{\texttt{PionSubtractionMap}}
+\newcommand{\TwoBodyCurrent}{\texttt{NuclearTwoBodyCurrent}}
+\newcommand{\ContinuityLedger}{\texttt{NuclearContinuityLedger}}
+\newcommand{\CoherentKernel}{\texttt{CoherentPropagationKernel}}
+\newcommand{\CoherentBundle}{\texttt{CoherentAmplitudeBundle}}
+\newcommand{\OverlapMap}{\texttt{PartonNuclearOverlapMap}}
+\newcommand{\ProvComplex}{\texttt{Provenance2Complex}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{PredictionPlan}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume XIII: Spin-Resolved \(NN\pi\) Dynamics, Pion Matching,\\[2mm]
+Two-Body Currents, and Coherent Nuclear Amplitudes}\\[4mm]
+\large Three-body light-front structure, pion-active and transition operators,\\
+internal--exchange subtraction, finite-basis continuity, and a helicity-resolved small-\(x\) pilot}
+\author{DeuteronWigner project}
+\date{31 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+C15/N0 established the first isolated microscopic spin-1 nuclear validation
+root: a normalized \(NN\) light-front state with S/D amplitudes, correlated
+microscopic proton and neutron members, complete deuteron--parton helicity
+parents, order-resolved partonic Wilson structure, common GTMD reductions,
+consistent current benchmarks, and tagged-inclusive closure.  C16/N1 is the
+active implementation package extending that state to \(NN\oplus NN\pi\).
+The present volume is the normative formalism for that extension.  It treats
+\(NN\pi\) as a spin-, isospin-, charge-, momentum-, and orbital-resolved
+three-body amplitude; derives pion-active, nucleon-active, and transition
+operator blocks from one sector theory; matches internal-nucleon and
+inter-nucleon pion regions with an explicit overlap subtraction; constructs
+currents consistently with the nuclear Hamiltonian; and introduces a
+helicity-resolved coherent small-\(x\) amplitude without identifying it with
+the partonic Wilson staple.  It does not claim a physical pion TMD, a complete
+nuclear EFT, physical shadowing, a complete exchange-current basis, QCD
+matching, evolution, process factorization, or inference readiness.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The first microscopic deuteron parent at the nucleonic level is not sufficient
+to describe pion-active partonic structure, transition currents, or coherent
+small-\(x\) dynamics.  These mechanisms must be represented by amplitudes and
+operators in a common nuclear Hilbert space rather than by separately
+normalized corrections.  We formulate a regulated two-sector light-front
+model
+\(
+\Hil_{\mathrm{N1}}=\Hil_{NN}\oplus\Hil_{NN\pi}
+\)
+with one normalized spin-1 state, a Hermitian sector-changing Hamiltonian,
+exact three-body recoil maps, charge-complete isospin coupling, parity and
+orbital selection, diagonal nucleon-active and pion-active partonic operators,
+and coherent \(NN\leftrightarrow NN\pi\) transition blocks.  A resolution map
+separates pion-like configurations internal to the microscopic nucleon from
+inter-nucleon exchange pions, producing a matched three-term combination and
+an executable no-double-counting two-cell.  Electromagnetic, axial, and
+energy--momentum currents are transformed with the same Hamiltonian and obey a
+finite-resolution continuity ledger only when pion-in-flight, transition,
+contact, induced, counterterm, and regulator pieces are included together.
+The coherent small-\(x\) pilot is constructed from helicity-resolved
+diffractive amplitudes and propagation phases; scalar, vector, and tensor
+responses are projected only after amplitudes are combined.  Completely
+positive reductions are derived by partial trace only after unresolved
+coherence has been removed.  We give the full operator decomposition, tensor
+network realization, provenance complex, benchmark suite, software
+interfaces, and acceptance conditions for the N1 package and identify the
+boundary to explicit \(\Delta\Delta\), compact six-quark, hidden-color, and
+higher coherent sectors.
+\end{abstract}
+
+\tableofcontents
+
+\section{Role, scope, and inherited contracts}
+\label{sec:scope}
+
+\subsection{The N0 result and the N1 transition}
+
+C15/N0 supplies the normalized nucleonic state
+\begin{equation}
+ |D,\Lambda\rangle_{N0}=|\Psi_{NN}^{\Lambda}\rangle,
+ \qquad
+ \inner{\Psi_{NN}^{\Lambda}}{\Psi_{NN}^{\Lambda}}=1,
+ \label{eq:n0-state}
+\end{equation}
+with one spectator-preserving recoil authority, the complete off-forward
+nucleon spectral amplitude, spin-1 projectors, order-resolved microscopic
+nucleon GTMD parents, current and angular-condition tests, and an explicit
+nuclear tensor-network representation.  The N1 change of model space is
+\begin{equation}
+ \Hil_{N1}=\HNN\oplus\HNNpi,
+ \label{eq:n1-space}
+\end{equation}
+with one normalized state
+\begin{equation}
+ |D,\Lambda\rangle_{N1}
+ =|\Psi_{NN}^{\Lambda}\rangle
+ +|\Psi_{NN\pi}^{\Lambda}\rangle .
+ \label{eq:n1-state}
+\end{equation}
+The new sector is not an additive pion PDF placed on top of the N0 output.  It
+changes the state, Hamiltonian, current, partonic operator, normalization,
+momentum ledger, and provenance simultaneously.
+
+\begin{decision}[N1 model class]
+The first non-nucleonic nuclear extension is a regulated
+\(NN\oplus NN\pi\) amplitude theory.  Pion-active, transition, exchange-current,
+and coherent terms are different operator blocks of this theory.  They may not
+be introduced as unrelated scalar corrections to named TMDs.
+\end{decision}
+
+\subsection{Inherited immutable identities}
+
+Every N1 object inherits and preserves:
+\begin{itemize}
+\item the light-front convention
+\(
+ v^{\pm}=(v^0\pm v^3)/\sqrt2
+\)
+and the symmetric zero-skewness external fibers;
+\item the distinct coordinates \(\bD\leftrightarrow\DT\) and
+\(\bM\leftrightarrow\kT\);
+\item correlated microscopic proton and neutron member identity;
+\item Wilson order, future/past orientation, ordered gluon-link pair, and
+independent \(f\)- and \(d\)-type color channels;
+\item the spin-1 projector convention and the adapter
+\(
+ f_{1LL}=-(2/3)\delta_Tf_1
+\);
+\item separate amplitude, density, matching, reduction, and process map
+classes;
+\item the accepted production root and all phenomenological artifacts as
+read-only regression oracles.
+\end{itemize}
+
+\begin{requirement}[No implicit promotion]
+An N0 or N1 object may enter a physical TMD, process, evolution, or inference
+calculation only through a separately validated matching or factorization map.
+The fact that a regulated matrix element exists does not assign it a physical
+QCD scheme.
+\end{requirement}
+
+\subsection{Primary N1 domain}
+
+The primary N1 calculation is restricted to:
+\begin{itemize}
+\item zero skewness and finite transverse transfer;
+\item the \(NN\) and \(NN\pi\) nuclear sectors;
+\item one declared finite-resolution tower;
+\item one Hermitian \(NN\leftrightarrow NN\pi\) transition interaction;
+\item diagonal nucleon-active and pion-active partonic operators;
+\item sector-transition partonic and current operators;
+\item one analytic helicity-resolved coherent double-scattering pilot;
+\item derived CP maps only after coherent amplitudes are combined;
+\item exact, Krylov, full-bond, and reduced-bond numerical routes where the
+state dimension permits them.
+\end{itemize}
+
+\subsection{Explicit nonclaims}
+
+The strongest permissible N1 status is a finite-resolution validation status.
+The present formalism does not establish:
+\begin{itemize}
+\item a physical deuteron prediction;
+\item a physical pion GTMD, GPD, PDF, or TMD;
+\item a complete chiral or nuclear EFT;
+\item physical polarized or tensor nuclear shadowing;
+\item a complete exchange-current basis;
+\item nuclear Glauber or tagged final-state rescattering;
+\item an explicit \(\Delta\Delta\), six-quark, hidden-color, or compact state;
+\item LF-to-QCD ultraviolet matching, continuum soft subtraction, or a
+physical TMD scheme;
+\item Collins--Soper evolution, process hard factors, \(W+Y\), or inference.
+\end{itemize}
+
+\section{Resolution hierarchy and the two-sector nuclear theory}
+\label{sec:resolution}
+
+\subsection{Nuclear resolution identity}
+
+A nuclear resolution is a typed tuple
+\begin{equation}
+ r_N=
+ \left(
+ \Lambda_N,N_{\max}^{N},K_N,
+ \cF_N,
+ \cB_N,
+ \nu_J,
+ \nu_I,
+ \mathcal R_{\mathrm{end}},
+ \mathcal R_{0},
+ n_J,n_O,n_{\mathrm{coh}}
+ \right),
+ \label{eq:nuclear-resolution}
+\end{equation}
+where \(\cF_N\) lists the retained nuclear Fock sectors, \(\cB_N\) the basis,
+\(\nu_J\) the current order, \(\nu_I\) the interaction order,
+\(\mathcal R_{\mathrm{end}}\) the endpoint prescription,
+\(\mathcal R_0\) the zero-mode policy, \(n_O\) the partonic-operator order,
+and \(n_{\mathrm{coh}}\) the coherent-scattering order.  These labels are part
+of every state and operator identity.
+
+\subsection{Block Hamiltonian}
+
+At level \(r_N\), the mass operator is
+\begin{equation}
+ \cM_{N1,r_N}^{2}
+ =
+ \begin{pmatrix}
+ \cM_{NN,r_N}^{2} & V_{NN\leftarrow NN\pi,r_N}\\
+ V_{NN\pi\leftarrow NN,r_N} & \cM_{NN\pi,r_N}^{2}
+ \end{pmatrix},
+ \qquad
+ V_{NN\leftarrow NN\pi}=V_{NN\pi\leftarrow NN}^{\dagger}.
+ \label{eq:n1-hamiltonian}
+\end{equation}
+The diagonal \(NN\) block is the N0 Hamiltonian.  The \(NN\pi\) block contains
+three-body kinetic energy, pion and nucleon masses, retained interactions,
+induced terms, and sector-specific counterterms.  The off-diagonal block
+creates or absorbs the pion while preserving total charge, baryon number,
+\(I\), \(J^P\), \(J^z\), momentum, regulator, and phase conventions.
+
+\begin{requirement}[Generated adjoint]
+The absorption block is generated from the emission block as the Hilbert-space
+adjoint.  Independent parameterizations of the two directions are forbidden.
+\end{requirement}
+
+\subsection{Renormalization trajectory}
+
+The N1 renormalization datum is
+\begin{equation}
+ \mathfrak R_{N1,r}
+ =
+ \left(
+ \mathcal R_r,
+ \theta_{NN,r}^{\bare},
+ \theta_{NN\pi,r}^{\bare},
+ \delta\theta_{NN,r},
+ \delta\theta_{NN\pi,r},
+ \delta g_{NN\pi,r},
+ \{\mathcal C_i\},
+ \mathcal S_r,
+ \Delta_r
+ \right).
+ \label{eq:n1-renormalization}
+\end{equation}
+The same physical calibration conditions are imposed at every resolution,
+while bare parameters and counterterms flow.  At minimum the calibration set
+contains the deuteron pole, charge, one transition condition, and one current
+condition.  Tensor, coherent, pion-active, and second-current-component
+observables remain holdouts.
+
+\subsection{State normalization and plus-momentum ledger}
+
+Define
+\begin{equation}
+ Z_{NN}=\inner{\Psi_{NN}}{\Psi_{NN}},
+ \qquad
+ Z_{NN\pi}=\inner{\Psi_{NN\pi}}{\Psi_{NN\pi}},
+ \qquad
+ Z_{NN}+Z_{NN\pi}=1.
+ \label{eq:sector-normalization}
+\end{equation}
+The plus-momentum ledger is
+\begin{equation}
+ 1=
+ \sum_{\alpha\in\{NN,NN\pi\}}
+ \int[\dd\Gamma_{\alpha}]
+ \left(\sum_{i\in\alpha}y_i\right)
+ \abs{\Psi_{\alpha}}^2.
+ \label{eq:n1-plus-ledger}
+\end{equation}
+Individual sector probabilities are resolution dependent.  Total
+normalization, charge, baryon number, isospin, and matched momentum moments are
+the physical closure conditions.
+
+\section{Spin, isospin, parity, and statistics of the \texorpdfstring{\(NN\pi\)}{NNpi} sector}
+\label{sec:sector}
+
+\subsection{Exact quantum numbers}
+
+At the charge-symmetric reference point, the sector has
+\begin{equation}
+ B=2,
+ \qquad Q=+1,
+ \qquad I=0,
+ \qquad J^P=1^+.
+ \label{eq:nnpi-quantum-numbers}
+\end{equation}
+Because \(I_\pi=1\), the \(NN\) subsystem in the \(NN\pi\) sector must carry
+\(I_{NN}=1\) in order to couple to total \(I=0\).  Charge-symmetry-breaking
+admixtures are represented by separate assumption branches.
+
+\subsection{Charge-complete isospin coupling}
+
+The complete total-charge-one basis contains
+\begin{equation}
+ |pn\pi^0\rangle,
+ \qquad
+ |pp\pi^-\rangle,
+ \qquad
+ |nn\pi^+\rangle.
+ \label{eq:charge-basis}
+\end{equation}
+Using a normalized \(I_{NN}=1\) basis, the total-isospin-zero state is
+\begin{equation}
+ |I=0,I_z=0\rangle
+ =\frac{1}{\sqrt3}
+ \left(
+ |1,+1\rangle_{NN}|1,-1\rangle_{\pi}
+ -|1,0\rangle_{NN}|1,0\rangle_{\pi}
+ +|1,-1\rangle_{NN}|1,+1\rangle_{\pi}
+ \right).
+ \label{eq:isospin-zero-state}
+\end{equation}
+The phase convention is versioned and tested.  Retaining only \(pn\pi^0\)
+violates isospin completeness.
+
+\subsection{Parity and angular momentum}
+
+Let \(\ell_{NN}\) denote the orbital angular momentum inside the nucleon pair
+and \(\ell_{\pi}\) the Jacobi orbital momentum of the pion relative to the
+pair.  Since the pion has intrinsic parity \(-1\),
+\begin{equation}
+ P_{NN\pi}
+ =(-1)^{\ell_{NN}+\ell_{\pi}}(-1).
+ \label{eq:nnpi-parity}
+\end{equation}
+The deuteron channel therefore requires
+\begin{equation}
+ \ell_{NN}+\ell_{\pi}\quad\text{odd}.
+ \label{eq:odd-orbital-parity}
+\end{equation}
+The minimal benchmark basis must contain the lowest odd total-orbital
+combinations capable of coupling the pair spin and pion orbital motion to
+\(J=1\).  Higher partial waves form a controlled truncation sequence.
+
+\subsection{Nucleon exchange statistics}
+
+The two nucleons are components of one isospin doublet and obey fermionic
+exchange statistics.  For the nucleon pair,
+\begin{equation}
+ (-1)^{\ell_{NN}+S_{NN}+I_{NN}}=-1.
+ \label{eq:pauli-nnpi}
+\end{equation}
+With \(I_{NN}=1\), the retained \((\ell_{NN},S_{NN})\) channels must satisfy
+this rule.  The \(pp\) and \(nn\) charge channels are not exempt from the same
+antisymmetry constraint.
+
+\begin{requirement}[Amplitude, not probability]
+The \(NN\pi\) sector is represented by spin-, isospin-, charge-, orbital-, and
+momentum-resolved amplitudes.  A scalar pion probability cannot define a
+tensor-polarized GTMD or transition current.
+\end{requirement}
+
+\section{Three-body light-front kinematics and typed recoil}
+\label{sec:kinematics}
+
+\subsection{External fibers and intrinsic variables}
+
+Use the symmetric zero-skewness deuteron frame
+\begin{equation}
+ P_i=P-\frac{\Delta}{2},
+ \qquad
+ P_f=P+\frac{\Delta}{2},
+ \qquad
+ \Delta^+=0,
+ \qquad
+ P_{iT}=-\frac{\DT}{2},
+ \quad
+ P_{fT}=+\frac{\DT}{2}.
+ \label{eq:n1-symmetric-frame}
+\end{equation}
+For the three-body sector introduce positive fractions
+\begin{equation}
+ y_1>0,
+ \qquad y_2>0,
+ \qquad y_\pi>0,
+ \qquad y_1+y_2+y_\pi=1,
+ \label{eq:threebody-fractions}
+\end{equation}
+and average intrinsic transverse momenta
+\begin{equation}
+ \bm\kappa_{1T}+\bm\kappa_{2T}+\bm\kappa_{\pi T}=0.
+ \label{eq:threebody-closure}
+\end{equation}
+A convenient invariant measure is
+\begin{equation}
+ [\dd\Gamma_3]
+ =
+ \frac{\dd y_1\dd y_2\dd y_\pi\,
+ \delta(1-y_1-y_2-y_\pi)}
+ {2(2\pi)^6 y_1y_2y_\pi}
+ \prod_{i=1,2,\pi}\dd^2\bm\kappa_{iT}
+ \delta^{(2)}\!\left(\sum_i\bm\kappa_{iT}\right),
+ \label{eq:threebody-measure}
+\end{equation}
+up to a declared unitary normalization adapter.  The wave function, current,
+operator, and convolution Jacobians transform together under any alternative
+normalization.
+
+\subsection{Jacobi coordinates}
+
+One useful Jacobi choice is
+\begin{align}
+ \alpha&=\frac{y_1}{y_1+y_2},
+ &
+ \bm r_T&=
+ \frac{y_2\bm\kappa_{1T}-y_1\bm\kappa_{2T}}{y_1+y_2},
+ \label{eq:nn-jacobi}\\
+ \beta&=y_\pi,
+ &
+ \bm s_T&=\bm\kappa_{\pi T}.
+ \label{eq:pion-jacobi}
+\end{align}
+The inverse map and Jacobian are part of \PionSector.  Another Jacobi tree is
+permitted only through an explicit recoupling adapter.
+
+\subsection{Diagonal active-constituent recoil}
+
+Let constituent \(j\in\{1,2,\pi\}\) be active.  Define
+\begin{align}
+ \bm\kappa_{jT}^{\mathrm{in}}
+ &=\bm k_{jT}-\frac{1-y_j}{2}\DT,
+ &
+ \bm\kappa_{jT}^{\mathrm{out}}
+ &=\bm k_{jT}+\frac{1-y_j}{2}\DT,
+ \label{eq:active-threebody-recoil}\\
+ \bm\kappa_{iT}^{\mathrm{in}}
+ &=\bm k_{iT}+\frac{y_i}{2}\DT,
+ &
+ \bm\kappa_{iT}^{\mathrm{out}}
+ &=\bm k_{iT}-\frac{y_i}{2}\DT,
+ \qquad i\neq j.
+ \label{eq:spectator-threebody-recoil}
+\end{align}
+
+\begin{proposition}[Three-body spectator theorem]
+With \cref{eq:active-threebody-recoil,eq:spectator-threebody-recoil}, the
+intrinsic momenta close in both fibers, the active physical constituent
+receives the full transfer \(\Delta\), every physical spectator momentum is
+unchanged, and the transformation has unit Jacobian.
+\end{proposition}
+
+\begin{proof}
+Intrinsic closure follows from
+\(
+-(1-y_j)+\sum_{i\neq j}y_i=0
+\).
+Writing the physical transverse momentum as
+\(
+ p_{iT}=y_iP_T+\kappa_{iT}
+\), one obtains
+\(
+ p_{jT}^{\mathrm{out}}-p_{jT}^{\mathrm{in}}=\DT
+\)
+and
+\(
+ p_{iT}^{\mathrm{out}}=p_{iT}^{\mathrm{in}}
+\)
+for every spectator.  The map is a translation and therefore has unit
+Jacobian.
+\end{proof}
+
+\subsection{Transition recoil for \texorpdfstring{\(NN\leftrightarrow NN\pi\)}{NN to NNpi}}
+
+A particle-number-changing operator requires a distinct map
+\begin{equation}
+ \TransitionRecoil:
+ \cM_{NN}^{\mathrm{in}}
+ \times
+ \cO_{NN\to NN\pi}
+ \longrightarrow
+ \cM_{NN\pi}^{\mathrm{out}},
+ \label{eq:transition-recoil-map}
+\end{equation}
+with inverse for pion absorption.  It stores:
+\begin{itemize}
+\item the emitting nucleon;
+\item pion fraction and transverse momentum;
+\item recoil sharing among the residual pair;
+\item external transfer routing;
+\item endpoint and zero-mode prescriptions;
+\item the Jacobian and normalization convention;
+\item source and target sector identities.
+\end{itemize}
+A diagonal three-body recoil map cannot be reused by changing only an array
+shape.
+
+\subsection{Support and endpoint policy}
+
+The regulated support is
+\begin{equation}
+ y_i\geq y_{\min}(r_N)>0,
+ \qquad
+ \sum_i y_i=1,
+ \label{eq:endpoint-policy}
+\end{equation}
+with a declared limit as the longitudinal resolution is enlarged.  The
+endpoint regulator is part of every pion-active and transition-operator
+identity.  A model result is not endpoint converged merely because a
+quadrature at one \(y_{\min}\) is stable.
+
+\section{The spin-resolved \texorpdfstring{\(NN\pi\)}{NNpi} light-front amplitude}
+\label{sec:amplitude}
+
+\subsection{Amplitude expansion}
+
+The three-body state is
+\begin{equation}
+ \begin{aligned}
+ |\Psi_{NN\pi}^{\Lambda}\rangle
+ ={}&
+ \sum_{c,\lambda_1,\lambda_2}
+ \sum_{\alpha_{I},\alpha_{L},\alpha_{S}}
+ \int[\dd\Gamma_3]
+ \,\Psi_{c;\lambda_1\lambda_2;
+ \alpha_I\alpha_L\alpha_S}^{\Lambda}
+ (y_i,\bm\kappa_{iT})
+ \\
+ &\times
+ |N_1N_2\pi;c,\lambda_1,\lambda_2,
+ \alpha_I,\alpha_L,\alpha_S;
+ y_i,\bm\kappa_{iT}\rangle,
+ \end{aligned}
+ \label{eq:nnpi-amplitude}
+\end{equation}
+where \(c\) labels the charge channel and the \(\alpha\)'s retain isospin,
+orbital, spin, and multiplicity information.
+
+\subsection{Coupling grammar}
+
+A symmetry-adapted fusion tree may be written schematically as
+\begin{equation}
+ \left[
+ \left(N_1\otimes N_2\right)_{S_{NN},I_{NN},\ell_{NN}}
+ \otimes
+ \pi_{I_\pi=1,\ell_\pi}
+ \right]_{J=1,I=0,P=+}.
+ \label{eq:nnpi-fusion-tree}
+\end{equation}
+Every Clebsch--Gordan coefficient, phase convention, outer multiplicity, and
+fermionic exchange sign is stored rather than reconstructed from a final
+channel name.
+
+\subsection{State generation and comparison routes}
+
+The central N1 state may be generated by:
+\begin{enumerate}
+\item an explicit diagonalization of \cref{eq:n1-hamiltonian};
+\item a matrix-free Krylov solver;
+\item exact full-bond tensorization;
+\item a variational nuclear TTN;
+\item an analytic weak-coupling oracle used only for validation.
+\end{enumerate}
+Exact and full-bond states must agree.  Reduced-bond states are compared on
+pion probability, transition interference, tensor observables, currents, and
+coherent amplitudes, not only on the eigenvalue.
+
+\subsection{Controlled relation to light-front Hamiltonian EFT}
+
+Light-front Hamiltonian EFT calculations with explicit pion Fock sectors
+provide an important feasibility route for nonperturbative pion distributions
+and sea-flavor asymmetry \cite{CaoEtAl2026}.  They do not, by themselves,
+supply the complete spin-resolved transverse \(NN\pi\) amplitude required here
+unless their state, recoil, current, and operator information is exported with
+the present identities.  N1 may use such a calculation as a future matched
+input or comparison, not as an unnamed replacement for the three-body state.
+
+\section{Matched N1 partonic operator basis}
+\label{sec:operators}
+
+\subsection{Sector matrix}
+
+For parton species \(a\), Dirac or Lorentz projection \(J\), and Wilson identity
+\(\gamma\), define
+\begin{equation}
+ \widehat\cO_{a}^{[J,\gamma],N1}
+ =
+ \begin{pmatrix}
+ \widehat\cO_{a,NN\to NN}
+ &
+ \widehat\cO_{a,NN\leftarrow NN\pi}
+ \\
+ \widehat\cO_{a,NN\pi\leftarrow NN}
+ &
+ \widehat\cO_{a,NN\pi\to NN\pi}
+ \end{pmatrix}.
+ \label{eq:n1-operator-matrix}
+\end{equation}
+Hermiticity requires the transition blocks to be adjoints after transfer,
+path, and helicity reversal.
+
+\subsection{Diagonal \texorpdfstring{\(NN\pi\)}{NNpi} blocks}
+
+The diagonal block decomposes as
+\begin{equation}
+ \widehat\cO_{a,NN\pi\to NN\pi}
+ =
+ \widehat\cO_{a,N_1}^{(1)}
+ +\widehat\cO_{a,N_2}^{(1)}
+ +\widehat\cO_{a,\pi}^{(1)}
+ +\widehat\cO_{a,NN\pi}^{(2)}
+ +\widehat\cO_{a,NN\pi}^{\ind}.
+ \label{eq:nnpi-diagonal-operator}
+\end{equation}
+The first two terms describe an active nucleon with the other nucleon and pion
+as spectators.  The third is the pion-active operator.  The remaining terms
+are matched two-body and induced operators.
+
+\subsection{Transition operators}
+
+The sector-changing partonic operator is
+\begin{equation}
+ \widehat\cO_{a,NN\pi\leftarrow NN}
+ =
+ \widehat\cO_{a,\mathrm{emit}}
+ +\widehat\cO_{a,\mathrm{contact}}
+ +\widehat\cO_{a,\mathrm{ind}}
+ +\delta\widehat\cO_{a,\ct},
+ \label{eq:transition-operator}
+\end{equation}
+with the reverse block generated as its adjoint.  A transition operator can
+carry partonic transfer through the active nucleon, the emitted pion, or a
+contact block.  Each routing is a distinct typed contribution.
+
+\subsection{Complete operator identity}
+
+Every N1 operator stores at least
+\begin{equation}
+ \begin{aligned}
+ \mathfrak o_{a/D}^{N1}=
+ (&a,J,P_i,P_f,\xi,\Delta,
+ \text{source sector},\text{target sector},
+ \text{active constituent},
+ \\
+ &\gamma,R_c,\text{ordered gluon links},f/d,
+ n_W,\mathcal R_{\UV},\mathcal R_{\mathrm{rap}},
+ \mathcal S_{\mathrm{soft}},
+ \\
+ &\mu,\zeta,\mathfrak s,
+ r_N,\mathfrak m_N,\mathfrak m_D,
+ \text{recoil ID},\text{current family}).
+ \end{aligned}
+ \label{eq:n1-operator-id}
+\end{equation}
+An operator with missing sector, active-constituent, recoil, path, or member
+identity cannot enter the common parent.
+
+\subsection{Pion-active operator status}
+
+The initial pion partonic operator may be a regulated analytic validation
+oracle.  It retains pion charge, isospin, direct positive-\(x\) quark and
+antiquark identity, gluon status, number and momentum ledgers, source hash,
+and matching limitations.  It may not be labeled a physical pion GTMD or TMD,
+and its normalization may not be fitted independently to a deuteron
+observable.
+
+\section{The full N1 deuteron GTMD parent}
+\label{sec:parent}
+
+\subsection{Amplitude-level definition}
+
+The common parent is
+\begin{equation}
+ \begin{aligned}
+ W_{a/D}^{[J,\gamma],N1}
+ ={}&
+ \langle\Psi_{NN}|\widehat\cO_{NN\to NN}|\Psi_{NN}\rangle
+ \\
+ &+
+ \langle\Psi_{NN\pi}|\widehat\cO_{NN\pi\to NN\pi}|\Psi_{NN\pi}\rangle
+ \\
+ &+
+ \langle\Psi_{NN\pi}|\widehat\cO_{NN\pi\leftarrow NN}|\Psi_{NN}\rangle
+ \\
+ &+
+ \langle\Psi_{NN}|\widehat\cO_{NN\leftarrow NN\pi}|\Psi_{NN\pi}\rangle
+ \\
+ &+\delta W_{a/D}^{\mathrm{coh,pilot}},
+ \end{aligned}
+ \label{eq:n1-parent}
+\end{equation}
+where the final term is present only in an explicitly selected coherent-pilot
+branch.  The first four terms form the exact parent of the two-sector state.
+
+\begin{requirement}[Project after composition]
+The target channels \(U,L,T,LL,LT,TT\), named TMDs, and collinear moments are
+projected only after all selected sector-diagonal and transition amplitudes
+have been combined.  Sector-specific scalar functions may not be normalized
+independently and added after projection.
+\end{requirement}
+
+\subsection{Hermiticity and discrete symmetries}
+
+At zero skewness,
+\begin{equation}
+ W_{\Lambda'\Lambda}(x,\kT,\DT;\gamma)
+ =
+ W_{\Lambda\Lambda'}^{*}
+ (x,\kT,-\DT;\gamma^{-1}),
+ \label{eq:n1-hermiticity}
+\end{equation}
+with the appropriate target, parton, charge, and sector phases.  Parity acts
+on the complete orbital and pion-parity structure.  Time reversal maps the
+partonic Wilson paths but does not, by itself, identify nuclear coherent
+propagation with the partonic staple.
+
+\subsection{Spin-1 and parton-helicity matrices}
+
+For quarks and antiquarks the parent is stored as a \(6\times6\) joint matrix
+in deuteron and parton helicities.  For gluons it is stored both as a target
+matrix with transverse field indices and as an equivalent target--gluon
+helicity matrix.  The nine target projectors reconstruct an arbitrary
+\(3\times3\) matrix.  The convention-independent tensor combination is
+\begin{equation}
+ \delta_TF
+ =F_{\Lambda=0}
+ -\frac12\left(F_{\Lambda=+1}+F_{\Lambda=-1}\right),
+ \label{eq:n1-deltaT}
+\end{equation}
+with the project adapter
+\begin{equation}
+ f_{1LL}=-\frac23\,\delta_Tf_1.
+ \label{eq:n1-f1ll}
+\end{equation}
+
+\subsection{Partonic Wilson identity through nuclear composition}
+
+The N1 parent preserves the nucleon-side Wilson order and path data.  In
+particular, gluon ordered-link pairs and independent \(f\)- and \(d\)-type
+channels survive composition.  The following remain distinct:
+\begin{equation}
+ \texttt{PARTONIC\_WILSON\_STAPLE}
+ \neq
+ \texttt{NUCLEAR\_COHERENT\_PROPAGATION}
+ \neq
+ \texttt{TAGGED\_FSI}.
+ \label{eq:three-rescattering-types}
+\end{equation}
+No nuclear coherent phase may be inserted by modifying the partonic path
+identity.
+
+\subsection{Common-member covariance}
+
+One N1 member contains the correlated proton and neutron microscopic states,
+nuclear state, pion sector, transition interaction, current family, partonic
+operator, Wilson identity, and numerical realization.  Observable
+covariances are evaluated member by member.  A proton from one microscopic
+plan and a neutron or pion sector from another cannot form one nuclear member.
+
+\section{Pion-active and transition reductions}
+\label{sec:pion-reductions}
+
+\subsection{Pion-active convolution as a reduction}
+
+When the probe acts on the pion and the two nucleons are unresolved
+spectators, the diagonal contribution reduces to
+\begin{equation}
+ \begin{aligned}
+ W_{a/D}^{(\pi)}(x_D,\kT,\DT)
+ ={}&
+ \sum_{c_\pi}
+ \int_{x_D}^{1}\frac{\dd y_\pi}{y_\pi}
+ \int\frac{\dd^2\qT}{(2\pi)^2}
+ \\
+ &\times
+ \rho_{\pi/D}^{c_\pi}
+ (y_\pi,\qT,\DT)
+ W_{a/\pi^{c_\pi}}
+ \left(
+ \frac{x_D}{y_\pi},
+ \kT-\frac{x_D}{y_\pi}\qT,
+ \DT
+ \right)
+ \cJ_{\pi}.
+ \end{aligned}
+ \label{eq:pion-convolution}
+\end{equation}
+This is a Sullivan-type reduction of the complete \(NN\pi\) matrix element,
+not an independent postulate \cite{Sullivan1972,Miller2014}.
+
+\subsection{Nucleon-active terms in the \texorpdfstring{\(NN\pi\)}{NNpi} sector}
+
+For an active nucleon with a spectator nucleon and pion,
+\begin{equation}
+ \begin{aligned}
+ W_{a/D}^{(N|N\pi)}
+ ={}&
+ \sum_{N,c_\pi}
+ \int[\dd\Gamma_3]
+ \sum_{\lambda',\lambda}
+ \rho_{\Lambda'\Lambda;\lambda'\lambda}^{N/(NN\pi)}
+ \\
+ &\times
+ W_{a/N,\lambda'\lambda}
+ \left(
+ \frac{x_D}{y_N},
+ \kT-\frac{x_D}{y_N}\bm\kappa_{NT},
+ \DT
+ \right)
+ \cJ_{N|N\pi}.
+ \end{aligned}
+ \label{eq:nucleon-active-nnpi}
+\end{equation}
+The microscopic nucleon parent and the explicit nuclear pion sector must obey
+the pion-overlap subtraction of \cref{sec:subtraction}.
+
+\subsection{Transition interference}
+
+The off-diagonal contribution is
+\begin{equation}
+ W_{a/D}^{\mathrm{trans}}
+ =
+ 2\operatorname{Re}
+ \left[
+ \langle\Psi_{NN\pi}|
+ \widehat\cO_{a,NN\pi\leftarrow NN}
+ |\Psi_{NN}\rangle
+ \right],
+ \label{eq:transition-interference}
+\end{equation}
+for Hermitian T-even operators, with the corresponding matrix-valued relation
+for general helicity and Wilson structures.  Transition interference can
+contribute to tensor observables even when the diagonal pion probability is
+small.
+
+\subsection{TMD, GPD, PDF, and current closure}
+
+The N1 parent must satisfy the regulated commuting reductions
+\begin{align}
+ \mathsf T[W]&=W(x,\kT,\DT=0),
+ \label{eq:n1-tmd-reduction}\\
+ \mathsf G[W]&=\int\dd^2\kT\,W(x,\kT,\DT),
+ \label{eq:n1-gpd-reduction}\\
+ \mathsf P[W]&=\left.\int\dd^2\kT\,W\right|_{\DT=0},
+ \label{eq:n1-pdf-reduction}\\
+ \mathsf Q[W]&=\int\dd x\,\dd^2\kT\,W.
+ \label{eq:n1-current-reduction}
+\end{align}
+Direct and sequential routes must agree for the full sector sum and for each
+provenance-resolved block.  The physical QCD interpretation remains gated by
+operator matching and soft/rapidity renormalization.
+
+\subsection{Tensor distribution and \texorpdfstring{\(b_1\)}{b1}}
+
+The full N1 tensor PDF is
+\begin{equation}
+ \delta_T f_{a/D}^{N1}
+ =
+ \delta_T f_{a/D}^{NN}
+ +\delta_T f_{a/D}^{NN\pi,\mathrm{diag}}
+ +\delta_T f_{a/D}^{NN\leftrightarrow NN\pi}
+ +\delta_T f_{a/D}^{\mathrm{coh,pilot}},
+ \label{eq:n1-tensor-pdf}
+\end{equation}
+with only selected branches present.  At leading order,
+\begin{equation}
+ b_1(x,Q^2)
+ =\frac12\sum_q e_q^2
+ \left[
+ \delta_Tq_D(x,Q^2)+\delta_T\bar q_D(x,Q^2)
+ \right]
+ +\cO(\alpha_s,M_D^2/Q^2).
+ \label{eq:n1-b1}
+\end{equation}
+The pion-active and transition components are predictions of the common N1
+state and operator.  They do not receive independent \(b_1\) normalizations.
+
+\section{Internal-nucleon versus nuclear-exchange pion matching}
+\label{sec:subtraction}
+
+\subsection{The overlap problem}
+
+The microscopic H7 nucleon already contains pion-like light-sea and chiral
+amplitudes.  The N1 state additionally contains an explicit pion exchanged or
+propagating between nucleons.  Without a separation prescription, the same
+low-resolution pion region can be counted twice.
+
+Define typed descriptions:
+\begin{equation}
+ \mathfrak P_{\mathrm{int}},
+ \qquad
+ \mathfrak P_{\mathrm{exch}},
+ \qquad
+ \mathfrak P_{\mathrm{ind}},
+ \label{eq:pion-description-types}
+\end{equation}
+for internal-nucleon, explicit exchange-sector, and induced/contact
+representations.
+
+\subsection{Resolution separator}
+
+Introduce a smooth or sharp projector
+\begin{equation}
+ \cP_{\pi}^{\mathrm{int}}(\omega),
+ \qquad
+ \cP_{\pi}^{\mathrm{exch}}(\omega),
+ \qquad
+ \cP_{\pi}^{\mathrm{int}}+\cP_{\pi}^{\mathrm{exch}}
+ =1+\delta_{\omega},
+ \label{eq:pion-separator}
+\end{equation}
+where \(\omega\) denotes the declared resolution variable and
+\(\delta_{\omega}\) measures truncation or nonorthogonality.  The separator is
+not a probability observable; it is a matching convention.
+
+\subsection{Matched pion contribution}
+
+The matched contribution is
+\begin{equation}
+ W_{\pi}^{\mathrm{matched}}
+ =
+ W_{\pi}^{\mathrm{internal}}
+ +W_{\pi}^{\mathrm{exchange}}
+ -W_{\pi}^{\mathrm{overlap}}.
+ \label{eq:pion-matched-sum}
+\end{equation}
+Changing the separation convention may redistribute the three terms, but the
+matched sum must remain stable within the declared truncation uncertainty.
+
+\begin{proposition}[Pion representation covariance]
+Suppose two pion-resolution conventions are related by an invertible
+model-space transformation and all Hamiltonian and partonic operators are
+transformed consistently.  Then the complete matched matrix element is
+invariant to the retained order, while the internal, exchange, and overlap
+components are representation dependent.
+\end{proposition}
+
+\subsection{Explicit versus induced pion theory}
+
+Eliminating \(NN\pi\) through a Feshbach map gives
+\begin{equation}
+ H_{\eff}(E)
+ =PHP+PHQ(E-QHQ)^{-1}QHP,
+ \label{eq:n1-feshbach-h}
+\end{equation}
+and transforms any operator as
+\begin{equation}
+ O_{\eff}(E',E)
+ =P[1+\omega^{\dagger}(E')]O[1+\omega(E)]P.
+ \label{eq:n1-feshbach-o}
+\end{equation}
+The provenance relation is
+\begin{equation}
+ \texttt{EXPLICIT\_NNPI}
+ \Longleftrightarrow
+ \texttt{INDUCED\_PION\_OPERATOR}
+ +\texttt{TRANSFORMED\_OBSERVABLES}
+ +\texttt{REMAINDER}.
+ \label{eq:pion-provenance-equivalence}
+\end{equation}
+It is never an additive relation.
+
+\subsection{No-double-counting two-cells}
+
+The provenance complex contains two-cells for:
+\begin{itemize}
+\item internal plus exchange minus overlap;
+\item explicit sector versus induced/contact replacement;
+\item pion-active versus transition routing;
+\item partonic soft overlap versus nuclear coherent overlap;
+\item count-once equivalent cut descriptions.
+\end{itemize}
+Removing a required subtraction or selecting a representation together with
+its replacement fails before numerical evaluation.
+
+\section{Hamiltonian-consistent one- and two-body currents}
+\label{sec:currents}
+
+\subsection{Current family}
+
+The N1 electromagnetic current is
+\begin{equation}
+ J_{N1}^{\mu}
+ =
+ J_N^{\mu}
+ +J_{\pi}^{\mu}
+ +J_{\mathrm{trans}}^{\mu}
+ +J_{\mathrm{contact}}^{\mu}
+ +J_{\mathrm{ind}}^{\mu}
+ +\delta J_{\ct}^{\mu}.
+ \label{eq:n1-current}
+\end{equation}
+The terms denote nucleon one-body, pion-in-flight, sector-transition,
+contact/seagull, induced, and counterterm contributions.  Each is owned by the
+same Hamiltonian identity as \cref{eq:n1-hamiltonian}.  Chiral EFT derivations
+provide a systematic example of how one- and two-body current operators are
+ordered and renormalized consistently with nuclear interactions
+\cite{Baroni2015,Krebs2020,Schiavilla2018}.
+
+The energy--momentum tensor and axial current have analogous decompositions,
+with operator-specific contact and pion terms.  A current from an unrelated
+Hamiltonian is inadmissible even if it reproduces the same static charge.
+
+\subsection{Finite-resolution continuity identity}
+
+The validation identity is
+\begin{equation}
+ q_{\mu}J_{N1}^{\mu}
+ =
+ [H_{N1},\rho_{N1}]
+ +\delta_{\mathrm{cont}},
+ \label{eq:n1-continuity}
+\end{equation}
+where the residual is decomposed as
+\begin{equation}
+ \delta_{\mathrm{cont}}
+ =
+ \delta_N
+ +\delta_{\pi}
+ +\delta_{\mathrm{trans}}
+ +\delta_{\mathrm{contact}}
+ +\delta_{\mathrm{ind}}
+ +\delta_{\ct}
+ +\delta_{\reg}
+ +\delta_{\mathrm{basis}}.
+ \label{eq:continuity-ledger}
+\end{equation}
+Omitting a required nonzero contribution must give a signed defect.  Passing
+this benchmark permits only
+\texttt{FINITE\_BASIS\_NUCLEAR\_CONTINUITY\_BENCHMARKED}.
+
+\subsection{Spin-1 current and angular condition}
+
+The plus-current helicity amplitudes
+\begin{equation}
+ I_{\Lambda'\Lambda}^{+}(Q^2)
+ =\langle P',\Lambda'|J^{+}_{N1}|P,\Lambda\rangle
+ \label{eq:n1-current-helicity}
+\end{equation}
+are reduced to charge, magnetic, and quadrupole form factors through a
+versioned convention adapter.  The light-front angular condition is evaluated
+with the complete current family.  It may not be repaired by assigning a
+separate normalization to each helicity amplitude.
+
+\subsection{Pion and exchange-current moments}
+
+The direct current and integrated GTMD routes must agree:
+\begin{equation}
+ \int\dd x_D\,\dd^2\kT\,
+ W_{a/D}^{[V],N1}
+ \longleftrightarrow
+ \langle D'|J_a^{+}|D\rangle,
+ \label{eq:n1-current-gtmd-closure}
+\end{equation}
+with separate ledgers for nucleon one-body, pion-active, transition, contact,
+and induced terms.  Exchange-current contributions to deuteron energy--momentum
+form factors provide a useful independent benchmark of current conservation
+and pion/seagull structure \cite{HeZahed2024}.
+
+\subsection{Axial and PCAC extension}
+
+When the N1 axial sector is enabled,
+\begin{equation}
+ A_{N1}^{\mu,a}
+ =A_N^{\mu,a}+A_{\pi}^{\mu,a}
+ +A_{\mathrm{trans}}^{\mu,a}
+ +A_{\mathrm{contact}}^{\mu,a}
+ +A_{\mathrm{ind}}^{\mu,a}
+ +\delta A_{\ct}^{\mu,a},
+ \label{eq:n1-axial-current}
+\end{equation}
+with a matched pseudoscalar operator.  The finite-basis PCAC residual is kept
+separate from the electromagnetic continuity residual.  An explicit nuclear
+pion sector does not automatically replace the induced pion-pole operator in
+the microscopic nucleon; their overlap is controlled by the same pion
+separator as \cref{sec:subtraction}.
+
+\section{Helicity-resolved coherent small-\texorpdfstring{\(x\)}{x} amplitudes}
+\label{sec:coherent}
+
+\subsection{Amplitude-level origin}
+
+The leading N1 coherent pilot is a two-step amplitude
+\begin{equation}
+ \delta W_{\Lambda'\Lambda}^{\mathrm{coh}}
+ =
+ \sum_X
+ \sum_{\lambda_1,\lambda_2}
+ \mathcal A_{\Lambda'\to X;\lambda_2}^{\mathrm{diff}\,*}
+ \,\mathcal G_X
+ \,\mathcal A_{\Lambda\to X;\lambda_1}^{\mathrm{diff}}
+ \,\mathcal S_{\lambda_2\lambda_1}^{D},
+ \label{eq:coherent-amplitude}
+\end{equation}
+where \(X\) is the diffractive intermediate state, \(\mathcal G_X\) carries
+the propagation phase and longitudinal ordering, and \(\mathcal S^D\) is the
+spin-resolved nuclear overlap.  This structure follows the leading-twist
+connection between diffraction and nuclear shadowing, but the N1 pilot does
+not claim the full phenomenology of that framework \cite{FrankfurtGuzeyStrikman2012}.
+
+\subsection{Diffractive helicity identity}
+
+Each elementary amplitude stores
+\begin{equation}
+ \mathfrak a_X=
+ \left(
+ a,J,x,Q^2,t,
+ \lambda_N^{\mathrm{in}},\lambda_N^{\mathrm{out}},
+ \lambda_X,
+ \text{target constituent},
+ \text{phase},
+ \text{normalization},
+ \text{source}
+ \right).
+ \label{eq:diff-amplitude-id}
+\end{equation}
+Unpolarized diffraction does not determine vector- or tensor-polarized
+diffractive amplitudes.  The tensor coherent correction must be projected from
+explicit helicity amplitudes, not copied from an unpolarized ratio.
+
+\subsection{Propagation phase and ordering}
+
+For longitudinal positions \(z_1,z_2\), a schematic propagator is
+\begin{equation}
+ \mathcal G_X(z_2,z_1)
+ =\theta(z_2-z_1)
+ \exp\left[i\Delta_X(z_2-z_1)\right]
+ \mathcal A_X^{\mathrm{atten}},
+ \label{eq:coherent-propagator}
+\end{equation}
+with a declared coherence length and attenuation status.  Reversing the
+longitudinal ordering produces the corresponding conjugate amplitude.  Zero
+elementary diffraction or zero propagation length must remove the correction.
+
+\subsection{Scalar, vector, and tensor projections}
+
+After amplitudes are combined, the target matrix is projected onto
+\(K=0,1,2\) irreducible sectors.  A copied scalar shadowing factor would imply
+\begin{equation}
+ \delta W^{(2)}_{\mathrm{tensor}}
+ \propto
+ \delta W^{(0)}_{\mathrm{scalar}},
+ \label{eq:copied-shadowing-ansatz}
+\end{equation}
+which the benchmark is required to falsify whenever the elementary helicity
+amplitudes are nontrivial.
+
+\subsection{Shadowing and antishadowing ledgers}
+
+The coherent correction and any antishadowing compensation are distinct typed
+mechanisms.  Antishadowing is constrained through the appropriate number,
+momentum, and tensor moment ledgers; it is not an arbitrary enhancement
+attached to every TMD.
+
+\subsection{Partonic--nuclear overlap subtraction}
+
+The partonic Wilson staple and nuclear coherent propagation may share a soft
+or Glauber-sensitive region.  Introduce
+\begin{equation}
+ W^{\mathrm{matched}}
+ =W^{\mathrm{partonic}}
+ +W^{\mathrm{nuclear\ coh}}
+ -W^{\mathrm{parton\text{-}nuclear\ overlap}}.
+ \label{eq:parton-nuclear-subtraction}
+\end{equation}
+The overlap term carries path, scattering order, color, rapidity, nuclear
+member, and resolution identity.  Missing and duplicate subtraction must
+produce signed residuals.  N1 does not claim a complete continuum Glauber
+factorization proof.
+
+\section{Amplitude-level coherence and completely positive reductions}
+\label{sec:cp}
+
+\subsection{Amplitude embedding}
+
+Let
+\begin{equation}
+ V:
+ \Hil_{\mathrm{resolved}}
+ \longrightarrow
+ \Hil_D\otimes\Hil_{\mathrm{unresolved}}
+ \label{eq:amplitude-embedding}
+\end{equation}
+be the full amplitude embedding after the \(NN\), \(NN\pi\), transition, and
+coherent contributions have been combined.  A reduced map is then
+\begin{equation}
+ \cE(\rho)
+ =\Tr_{\mathrm{unresolved}}
+ \left[V\rho V^{\dagger}\right].
+ \label{eq:derived-cp-map}
+\end{equation}
+This map is completely positive by construction.
+
+\subsection{Where the reduction is valid}
+
+The CP description is valid when the traced subsystem is not resolved by the
+observable and all amplitudes leading to the same retained state have already
+been summed.  It is useful for inclusive probability closure, detector
+coarse-graining, and selected unresolved spectator channels.
+
+\subsection{Premature trace failure}
+
+If \(V=V_{NN}+V_{NN\pi}\), then
+\begin{equation}
+ V\rho V^{\dagger}
+ =V_{NN}\rho V_{NN}^{\dagger}
+ +V_{NN\pi}\rho V_{NN\pi}^{\dagger}
+ +V_{NN}\rho V_{NN\pi}^{\dagger}
+ +V_{NN\pi}\rho V_{NN}^{\dagger}.
+ \label{eq:coherent-density}
+\end{equation}
+Tracing the two sectors separately before the cross terms are formed removes
+transition interference.  The benchmark must show a nonzero observable error
+from that premature trace.
+
+\subsection{Positivity and its limits}
+
+Forward reduced density matrices obey the appropriate positivity tests.
+Off-forward GTMD matrices and Wigner distributions are not pointwise positive
+objects.  The CP layer cannot be used to clip a negative Wigner
+quasidistribution or to replace unresolved coherent amplitudes.
+
+\section{Tagged and differential diagnostics}
+\label{sec:tagged}
+
+\subsection{Tagged nucleon and pion channels}
+
+The N1 state permits differential observables in which a spectator nucleon or
+pion is retained.  A tagged object stores
+\begin{equation}
+ \mathfrak t=
+ \left(
+ \text{tagged species},
+ y_s,\bm p_{sT},\lambda_s,c_s,
+ \text{active sector},
+ \text{FSI status},
+ \text{acceptance status},
+ \text{inclusive-sum rule}
+ \right).
+ \label{eq:tagged-id}
+\end{equation}
+Detector acceptance is a process-layer map and is not included in the nuclear
+amplitude.
+
+\subsection{Tagged-to-inclusive closure}
+
+The inclusive N1 parent is recovered by summing all physically unresolved
+tagged channels:
+\begin{equation}
+ W_{a/D}^{N1,\mathrm{incl}}
+ =
+ \sum_{s=N,\pi}
+ \sum_{\lambda_s,c_s}
+ \int[\dd\Gamma_s]
+ W_{a/D}^{N1,\mathrm{tag}(s)}
+ +W_{a/D}^{N1,\mathrm{trans,unresolved}}.
+ \label{eq:tagged-inclusive}
+\end{equation}
+The transition contribution is included according to the actual measurement
+resolution.  It cannot be discarded simply because it has no diagonal
+probability interpretation.
+
+\subsection{Pole and regular final-state terms}
+
+For nucleon tagging, the analytic on-shell pole remains a useful validation
+oracle \cite{CosynWeiss2020,CosynWeiss2026II}.  Regular tagged final-state
+interactions may alter the finite-recoil distribution but cannot change the
+pole residue.  N1 records tagged FSI as unavailable; it does not absorb such
+effects into the nuclear wave function.
+
+\subsection{Tensor tagging}
+
+Tensor-polarized tagged combinations can isolate D-wave and transition
+amplitudes.  The benchmark set includes configurations in which the
+\(NN\leftrightarrow NN\pi\) interference changes sign while the inclusive
+normalization remains stable.  The tagged observable is therefore a
+differential test of amplitude content, not merely a normalization check.
+
+\section{Nuclear tensor network and assumption compiler}
+\label{sec:tn}
+
+\subsection{Two-sector network topology}
+
+The state network is
+\begin{equation}
+ \cN_{N1}^{\mathrm{state}}
+ =\cN_{NN}\oplus\cN_{NN\pi}.
+ \label{eq:n1-state-network}
+\end{equation}
+The \(NN\) branch couples the correlated proton and neutron microscopic states
+to \(S=1\), relative \(L=0,2\), total \(J=1\), and \(I=0\).  The \(NN\pi\)
+branch contains the charge-complete isospin tree of
+\cref{eq:isospin-zero-state}, the Pauli-allowed nucleon pair, the pion orbital
+edge, and the total \(J^P=1^+\) projector.
+
+\subsection{Operator networks}
+
+Separate operator networks represent:
+\begin{itemize}
+\item the block Hamiltonian;
+\item nucleon-active and pion-active partonic operators;
+\item transition operators;
+\item current and charge operators;
+\item coherent diffractive amplitudes and propagation;
+\item overlap subtraction maps;
+\item partial traces.
+\end{itemize}
+A physical edge is never reused to represent a provenance relation or Wilson
+path merely because the graph topology looks similar.
+
+\subsection{Full-bond and reduced-bond convergence}
+
+At full allowed bond support, the TTN must reproduce direct state and operator
+contractions.  Reduced-bond studies report errors in
+\begin{equation}
+ Z_{NN\pi},
+ \quad
+ \langle y_{\pi}\rangle,
+ \quad
+ W^{\pi},
+ \quad
+ W^{\mathrm{trans}},
+ \quad
+ b_1,
+ \quad
+ J_{(2)}^{\mu},
+ \quad
+ \delta_{\mathrm{ang}},
+ \quad
+ \delta W_{\mathrm{tensor}}^{\mathrm{coh}}.
+ \label{eq:n1-bond-observables}
+\end{equation}
+A low-rank state that preserves the mass but removes transition interference
+or tensor response is not converged.
+
+\subsection{Assumption branches}
+
+The compiler supports mutually exclusive N1 plans such as:
+\begin{longtable}{L{0.30\textwidth}L{0.62\textwidth}}
+\toprule
+Plan & Content\\
+\midrule
+\endhead
+\texttt{N1-PLAN-A} & AV18 N0 state, explicit \(NN\pi\), matched pion subtraction,
+consistent current, coherent pilot disabled.\\
+\texttt{N1-PLAN-B} & Norfolk N0 state, explicit \(NN\pi\), matched pion subtraction,
+consistent current, coherent pilot disabled.\\
+\texttt{N1-PLAN-C} & AV18 N0 state, explicit \(NN\pi\), coherent small-\(x\) pilot enabled
+with explicit parton--nuclear overlap subtraction.\\
+\texttt{N1-INDUCED-REFERENCE} & N0 state with the \(NN\pi\) sector eliminated and
+transformed induced operators; read-only comparison.\\
+\texttt{N1-ANALYTIC-ORACLE} & Weak-coupling two-sector state and analytic coherent
+kernel; validation only.\\
+\bottomrule
+\end{longtable}
+These theories may be compared but never summed.  The coherent pilot is a
+branch choice, not an automatic correction.
+
+\section{Global ledgers, covariance, and provenance}
+\label{sec:ledgers}
+
+\subsection{State and charge ledgers}
+
+N1 must close separately:
+\begin{align}
+ Z_{NN}+Z_{NN\pi}&=1,
+ \label{eq:ledger-prob}\\
+ B_{NN}+B_{NN\pi}&=2,
+ \label{eq:ledger-baryon}\\
+ Q_{NN}+Q_{NN\pi}&=1,
+ \label{eq:ledger-charge}\\
+ \langle y_N\rangle+\langle y_\pi\rangle&=1,
+ \label{eq:ledger-momentum}\\
+ I_{\mathrm{tot}}&=0,
+ \qquad
+ J^P=1^+.
+ \label{eq:ledger-quantum}
+\end{align}
+The sector contributions are resolution dependent, but the complete ledgers
+must close without after-the-fact normalization.
+
+\subsection{Partonic and tensor ledgers}
+
+The common parent must close baryon number, charge, momentum, and the selected
+current moments across nucleon-active, pion-active, transition, induced, and
+coherent contributions.  The tensor ledger records
+\begin{equation}
+ \delta_Tf^{N1}
+ =\delta_Tf^{NN}
+ +\delta_Tf^{NN\pi}
+ +\delta_Tf^{\mathrm{trans}}
+ +\delta_Tf^{\mathrm{coh}},
+ \label{eq:tensor-ledger}
+\end{equation}
+with no independent normalization attached to the total.
+
+\subsection{Uncertainty decomposition}
+
+The N1 uncertainty record keeps separate:
+\begin{enumerate}
+\item microscopic proton/neutron member uncertainty;
+\item NN interaction and wave-function uncertainty;
+\item NNpi interaction and sector-truncation uncertainty;
+\item pion partonic-operator uncertainty;
+\item internal--exchange separation and overlap-subtraction uncertainty;
+\item current and induced-operator truncation;
+\item coherent diffractive-input and propagation uncertainty;
+\item parton--nuclear soft-overlap uncertainty;
+\item TTN bond, quadrature, and discretization errors;
+\item future LF-to-QCD matching, evolution, and process uncertainties.
+\end{enumerate}
+An envelope of alternative potentials is a controlled model family, not
+automatically a statistical confidence interval.
+
+\subsection{Provenance two-complex}
+
+The N1 \ProvComplex contains:
+\begin{itemize}
+\item 0-cells for states, operators, schemes, currents, and results;
+\item 1-cells for sector transitions, projections, matching, tracing, and
+composition;
+\item 2-cells for internal/exchange pion subtraction, explicit/induced
+replacement, count-once cuts, current completion, and parton--nuclear overlap
+subtraction.
+\end{itemize}
+Nontrivial homology is an audit signal for an unresolved cycle, missing
+subtraction, or genuine alternative mechanism.  It is not a physical
+amplitude.
+
+\subsection{Closure vector}
+
+A compact N1 closure vector is
+\begin{equation}
+ \bm\epsilon_{N1}
+ =
+ \left(
+ \epsilon_{\mathrm{norm}},
+ \epsilon_{P^+},
+ \epsilon_I,
+ \epsilon_J,
+ \epsilon_{\mathrm{recoil}},
+ \epsilon_{\mathrm{Herm}},
+ \epsilon_{\mathrm{current}},
+ \epsilon_{\mathrm{ang}},
+ \epsilon_{\mathrm{marginal}},
+ \epsilon_{b_1},
+ \epsilon_{\pi\mathrm{sub}},
+ \epsilon_{\mathrm{coh}},
+ \epsilon_{\mathrm{CP}},
+ \epsilon_{\mathrm{TN}}
+ \right).
+ \label{eq:n1-closure-vector}
+\end{equation}
+No component may be hidden inside another uncertainty category.
+
+\section{Computational realization and typed interfaces}
+\label{sec:software}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.34\textwidth}L{0.58\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\texttt{ThreeBodyNuclearCoordinates} & Positive fractions, intrinsic momenta,
+Jacobi tree, measure, support, endpoint policy, and normalization.\\
+\ThreeBodyRecoil & Active-constituent and spectator recoil at nonzero transfer,
+with unit-Jacobian and physical-momentum checks.\\
+\TransitionRecoil & Source/target sector kinematics for
+\(NN\leftrightarrow NN\pi\) operators.\\
+\PionSector & Charge-complete isospin basis, spin/orbital couplings, parity,
+Pauli constraints, regulator, and resolution.\\
+\texttt{NNPiLightFrontAmplitude} & Spin-, isospin-, charge-, orbital-, and
+momentum-resolved three-body amplitudes.\\
+\texttt{PionNucleonVertex} & Hermitian sector-changing interaction, momentum
+routing, spin/isospin couplers, regulator, and counterterms.\\
+\PionOperator & Pion-active quark, antiquark, and gluon operator blocks with
+source and matching status.\\
+\TransitionOperator & Partonic or current operator between \(NN\) and
+\(NN\pi\), including recoil and adjoint rules.\\
+\PionSubtraction & Internal/exchange separation projector, overlap term,
+remainder, and two-cell identity.\\
+\TwoBodyCurrent & Nucleon, pion-in-flight, transition, contact, induced, and
+counterterm current pieces.\\
+\ContinuityLedger & Signed continuity residual by current and Hamiltonian
+component.\\
+\texttt{DiffractiveHelicityAmplitude} & Elementary helicity amplitude,
+intermediate-state identity, phase, normalization, and source.\\
+\CoherentKernel & Longitudinal ordering, propagation phase, scattering order,
+helicity, color, and attenuation status.\\
+\OverlapMap & Shared region between partonic Wilson and nuclear coherent
+propagation.\\
+\CoherentBundle & Full matrix-level coherent amplitude before spin projection
+or trace.\\
+\StateBundle & Normalized state, Hamiltonian, currents, operators, member,
+ledgers, solver, and convergence information.\\
+\ProvComplex & Typed alternatives, replacements, subtractions, count-once
+relations, and observable ancestry.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Typed data flow}
+
+The principal data flow is
+\begin{equation}
+ \begin{aligned}
+ \texttt{N0StateBundle}
+ &\longrightarrow
+ \texttt{N1Hamiltonian}
+ \longrightarrow
+ \StateBundle
+ \\
+ &\longrightarrow
+ \texttt{MatchedN1Operator}
+ \longrightarrow
+ \texttt{N1DeuteronGTMDParent}
+ \\
+ &\longrightarrow
+ \texttt{ReductionMap}
+ \longrightarrow
+ \texttt{ValidationObservable}.
+ \end{aligned}
+ \label{eq:n1-data-flow}
+\end{equation}
+Every arrow validates coordinates, sectors, operator type, path, Wilson order,
+current family, microscopic member, resolution, and provenance.
+
+\subsection{Cache identity}
+
+A parent cache key contains
+\begin{equation}
+ \mathrm{key}
+ =\mathrm{hash}
+ \left(
+ \mathfrak m_N,
+ \mathfrak m_D,
+ r_N,
+ \mathfrak o_{a/D}^{N1},
+ \mathfrak R_{N1},
+ x_D,\kT,\DT,
+ \text{solver},
+ \text{code version}
+ \right).
+ \label{eq:n1-cache-key}
+\end{equation}
+Changing the wave function, pion separator, current, path, coherent branch,
+recoil, or member invalidates the cache.
+
+\section{Formal requirements and property-based tests}
+\label{sec:requirements}
+
+\subsection{Stable requirement identifiers}
+
+The following requirement families are stable machine-readable contracts.
+\begin{longtable}{L{0.16\textwidth}L{0.76\textwidth}}
+\toprule
+ID family & Requirement\\
+\midrule
+\endhead
+\texttt{V13.SCOPE.*} & N1 remains a validation-only \(NN\oplus NN\pi\) theory
+with all downstream readiness gates explicit.\\
+\texttt{V13.STATE.*} & One normalized state, exact sector identities, one
+charge and momentum ledger, and a Hermitian block Hamiltonian.\\
+\texttt{V13.ISO.*} & Charge-complete \(I=0\) coupling, exact CG phases, and
+separate CSB branches.\\
+\texttt{V13.PARITY.*} & Pion intrinsic parity, odd total orbital parity, Pauli
+constraints, and total \(J^P=1^+\).\\
+\texttt{V13.KIN.*} & Three-body support, Jacobi maps, diagonal recoil,
+transition recoil, unit Jacobians, and endpoint policy.\\
+\texttt{V13.OP.*} & Complete sector matrix, pion-active, nucleon-active,
+transition, contact, and induced operator identities.\\
+\texttt{V13.PARENT.*} & Amplitude-level sector sum, Hermiticity, link identity,
+spin-1 reconstruction, and common-member ancestry.\\
+\texttt{V13.PION.*} & Direct pion-active reductions, positive-\(x\) species
+identity, transition interference, and moment closure.\\
+\texttt{V13.SUB.*} & Internal/exchange separator, overlap subtraction,
+explicit/induced equivalence, remainder, and no-double-counting two-cells.\\
+\texttt{V13.CURR.*} & Hamiltonian-consistent current family, continuity ledger,
+angular condition, GTMD/current closure, and ablation residuals.\\
+\texttt{V13.COH.*} & Helicity-resolved diffractive amplitudes, propagation,
+scalar/vector/tensor separation, zero limits, and parton--nuclear subtraction.\\
+\texttt{V13.CP.*} & Amplitude embedding before trace, complete positivity,
+trace closure, and premature-trace failure.\\
+\texttt{V13.TAG.*} & Tagged identities, inclusive recovery, pole oracle,
+transition resolution, and acceptance separation.\\
+\texttt{V13.TN.*} & Two-sector TTN, full-bond equality, observable-sensitive
+bond convergence, and symmetry-block retention.\\
+\texttt{V13.PROV.*} & Typed alternatives, replacements, subtractions,
+count-once relations, deterministic normalization, and ancestry queries.\\
+\texttt{V13.CONV.*} & Multi-axis basis, sector, endpoint, interaction, current,
+quadrature, coherent-order, and bond convergence.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Kinematic and state tests}
+
+Mandatory tests include:
+\begin{enumerate}
+\item positive three-body support and exact fraction closure;
+\item intrinsic transverse closure in both momentum fibers;
+\item unit Jacobian for diagonal and transition maps;
+\item full physical transfer to the active constituent and unchanged
+spectator momenta;
+\item charge-complete \(I=0\) reconstruction;
+\item exact total charge, baryon number, parity, \(J^z\), and Pauli closure;
+\item Hamiltonian Hermiticity and generated sector adjoint;
+\item exact/Krylov/full-bond agreement;
+\item state normalization and plus-momentum closure;
+\item state tracking across the N1 resolution tower.
+\end{enumerate}
+
+\subsection{Operator and reduction tests}
+
+The operator suite tests:
+\begin{enumerate}
+\item source/target sector and active-constituent compatibility;
+\item diagonal nucleon-active and pion-active blocks;
+\item transition-operator Hermiticity and recoil;
+\item complete target/parton helicity matrices;
+\item spin-1 projector reconstruction and tensor sign adapter;
+\item GTMD-to-TMD/GPD/PDF/current closure;
+\item pion-active number and momentum moments;
+\item transition-interference zero limits;
+\item future/past and gluon \(f/d\) identity preservation;
+\item absence of nuclear coherent phases from the partonic path layer.
+\end{enumerate}
+
+\subsection{Current and coherence tests}
+
+The current and coherent suite tests:
+\begin{enumerate}
+\item continuity closure with all current pieces;
+\item signed residuals after each required current ablation;
+\item charge, magnetic, quadrupole, and angular-condition closure;
+\item direct-current versus integrated-parent equality;
+\item zero coherent correction when either elementary amplitude vanishes;
+\item longitudinal-order reversal;
+\item distinct scalar, vector, and tensor coherent projections;
+\item failure of a copied unpolarized shadowing ratio;
+\item one correct parton--nuclear overlap subtraction;
+\item signed defects for missing or duplicate subtraction.
+\end{enumerate}
+
+\subsection{Provenance and CP tests}
+
+The provenance and reduction suite tests:
+\begin{enumerate}
+\item rejection of internal plus exchange pion without overlap subtraction;
+\item rejection of explicit \(NN\pi\) plus its induced replacement;
+\item visible Feshbach remainder and norm kernel;
+\item count-once equivalent cut and overlap paths;
+\item additive retention of physically distinct channels;
+\item exact equality of amplitude-derived and Kraus CP maps;
+\item nonzero error from tracing before transition/coherent amplitudes are
+combined;
+\item deterministic path normalization and serialization;
+\item no route to production, matching, evolution, process, or inference
+roots.
+\end{enumerate}
+
+\subsection{Required negative-test scale}
+
+A production-quality N1 implementation should contain at least 280 stable
+negative-test identities.  The catalogue must cover:
+\begin{itemize}
+\item incomplete charge or isospin bases;
+\item wrong pion parity, Pauli phase, or angular coupling;
+\item reused two-body coordinates in the three-body sector;
+\item broken active/spectator recoil or transition Jacobian;
+\item diagonal/transition sector aliases;
+\item copied proton/neutron or quark/antiquark parents;
+\item missing pion-active or transition operator identity;
+\item double-counted internal/exchange/induced pion mechanisms;
+\item current omissions and independently normalized current components;
+\item copied tensor shadowing from an unpolarized ratio;
+\item premature partial trace;
+\item hidden coherent or Wilson path substitution;
+\item reduced-bond loss hidden by an energy-only test;
+\item unsupported \(\Delta\Delta\), compact, shadowing, matching, evolution,
+process, inference, or production promotion.
+\end{itemize}
+
+\section{Analytic and finite-dimensional benchmark suite}
+\label{sec:benchmarks}
+
+\subsection{N1-A: charge-complete isospin state}
+
+Construct the three charge channels in \cref{eq:charge-basis}, couple them to
+\(I=0\), and verify normalization, phase convention, total charge, and total
+isospin.  Removing any one charge channel must produce a nonzero isospin
+residual.
+
+\subsection{N1-B: parity and Pauli basis}
+
+Build the minimal \(J^P=1^+\) \(NN\pi\) basis with odd
+\(\ell_{NN}+\ell_\pi\).  Verify \cref{eq:pauli-nnpi}.  Injecting an even total
+orbital parity or a Pauli-forbidden pair state must fail.
+
+\subsection{N1-C: three-body recoil}
+
+Use an analytic three-body Gaussian amplitude and verify intrinsic closure,
+physical spectator preservation, full active transfer, reversal, and unit
+Jacobian for active nucleon and active pion choices.  Independently compare
+against a direct physical-momentum construction.
+
+\subsection{N1-D: two-sector Hamiltonian}
+
+Use a finite Hermitian \(NN\oplus NN\pi\) model.  Compare exact, matrix-free,
+Krylov, and full-bond solutions.  Demonstrate normalization and parameter flow
+at several resolutions.
+
+\subsection{N1-E: pion-active common-parent closure}
+
+Choose a regulated spin-zero pion parent and verify direct and sequential
+TMD/GPD/PDF/current routes at forward and nonzero transfer.  The pion oracle
+is validation only and cannot be promoted to a physical TMD.
+
+\subsection{N1-F: transition interference}
+
+Construct a state for which the diagonal pion contribution is small but the
+\(NN\leftrightarrow NN\pi\) interference is nonzero.  Verify its phase,
+Hermiticity, tensor projection, and exact zero when either sector amplitude or
+the transition operator is disabled.
+
+\subsection{N1-G: explicit versus induced pion}
+
+Eliminate the \(NN\pi\) sector and compare the full matrix element with the
+induced Hamiltonian and transformed operator.  The equivalence residual must
+close while a nonzero remainder and norm kernel remain visible.  Using
+\(POP\) alone must fail.
+
+\subsection{N1-H: internal--exchange subtraction}
+
+Construct overlapping internal and exchange pion regions.  Verify
+\cref{eq:pion-matched-sum} at several separation scales.  Missing subtraction
+and duplicate subtraction must give equal-and-opposite signed defects.
+
+\subsection{N1-I: current continuity}
+
+Build a finite current with nucleon, pion-in-flight, transition, contact,
+induced, and counterterm pieces.  Verify \cref{eq:n1-continuity}.  Remove each
+required nonzero term and record the signed residual.
+
+\subsection{N1-J: spin-1 current and moments}
+
+Generate spin-1 current helicity amplitudes from chosen form factors and a
+consistent two-sector state.  Verify charge, magnetic, quadrupole, angular
+condition, and integrated GTMD/current closure.
+
+\subsection{N1-K: coherent double scattering}
+
+Use a two-state diffractive kernel with known propagation phase.  Test zero
+limits, ordering reversal, scalar/vector/tensor differences, and failure of a
+copied unpolarized ratio.
+
+\subsection{N1-L: parton--nuclear overlap}
+
+Construct a shared soft region between a partonic Wilson term and the coherent
+nuclear pilot.  Verify one subtraction, signed missing/duplicate residuals,
+and strict preservation of the distinct path identities.
+
+\subsection{N1-M: CP reduction}
+
+Construct an amplitude embedding with resolved \(NN\) and \(NN\pi\) coherence.
+Compare direct partial trace with the Kraus representation.  Then trace the
+sectors separately before interference is formed and demonstrate the wrong
+result.
+
+\subsection{N1-N: tagged-inclusive closure}
+
+Implement tagged nucleon and pion channels, sum them to the inclusive parent,
+and verify the analytic pole oracle.  A regular FSI test term may modify the
+finite tagged distribution but not the pole residue.
+
+\subsection{N1-O: tensor-network sensitivity}
+
+Compare full-bond and reduced-bond networks.  Require at least one reduced bond
+to reproduce the mass within a small error while losing a substantial
+pion-transition, \(b_1\), current, or coherent tensor signal.
+
+\subsection{N1-P: assumption and provenance plans}
+
+Compile all supported N1 plans.  Verify that explicit and induced pion
+branches, alternative nuclear wave functions, and coherent-on/off branches
+are mutually exclusive where required and that each result has a unique
+content hash and ancestry.
+
+\section{Staged N1 implementation program}
+\label{sec:stages}
+
+\subsection{N1.0: types and kinematics}
+
+Implement the charge-complete sector, three-body coordinates, recoil maps,
+transition map, parity and Pauli projectors, state and operator identities,
+and analytic recoil benchmarks.
+
+\subsection{N1.1: two-sector state}
+
+Implement the Hermitian Hamiltonian, small resolution tower, exact/Krylov/TTN
+solvers, state tracking, normalization and momentum ledgers, and the analytic
+weak-coupling oracle.
+
+\subsection{N1.2: pion-active and transition operators}
+
+Implement diagonal nucleon-active and pion-active blocks, transition
+operators, common-parent helicity matrices, spin-1 projectors, and regulated
+reduction closure.
+
+\subsection{N1.3: pion matching and currents}
+
+Implement the internal/exchange separator, overlap subtraction, Feshbach
+comparison, Hamiltonian-consistent current family, continuity ledger, and
+current/GTMD moment closure.
+
+\subsection{N1.4: coherent and CP pilots}
+
+Implement helicity-resolved diffractive amplitudes, propagation, tensor
+projections, parton--nuclear overlap subtraction, amplitude-derived CP maps,
+and premature-trace failure.
+
+\subsection{N1.5: convergence and release gates}
+
+Complete multi-axis convergence, tagged diagnostics, tensor-network bond
+studies, deterministic manifests, provenance normalization, source-hash audit,
+and downstream fail-closed tests.
+
+\section{Acceptance criteria and scientific status}
+\label{sec:acceptance}
+
+The N1 formalism is internally accepted only when:
+\begin{enumerate}
+\item the \(NN\pi\) sector has complete charge, isospin, spin, parity, orbital,
+and momentum identity;
+\item the two-sector Hamiltonian is Hermitian and solved consistently across a
+resolution tower;
+\item one normalized state closes probability, charge, baryon, isospin, and
+plus momentum;
+\item diagonal and transition recoil maps close and have declared Jacobians;
+\item pion-active, nucleon-active, and transition operator blocks are complete
+and compose only with compatible sectors;
+\item the complete N1 parent satisfies Hermiticity and reconstructs all target
+and parton helicity matrices;
+\item GTMD, TMD, GPD, PDF, current, and tensor reductions close from the same
+parent;
+\item the internal/exchange pion subtraction is executable and stable under
+separator variation within truncation errors;
+\item explicit and induced pion descriptions are related by transformed
+operators and a visible remainder;
+\item the Hamiltonian-consistent current satisfies the finite-basis continuity
+benchmark and the spin-1 angular condition;
+\item pion-active and transition contributions to \(b_1\) are predicted by the
+shared state and not independently normalized;
+\item the coherent pilot is helicity resolved, has exact zero and ordering
+limits, and does not copy an unpolarized ratio;
+\item the partonic Wilson and nuclear coherent sectors remain distinct and any
+shared region is subtracted once;
+\item the CP map is derived only after coherent amplitudes are combined;
+\item tagged integration closes to the inclusive parent;
+\item exact, Krylov, full-bond, and reduced-bond routes satisfy their declared
+convergence obligations;
+\item the provenance complex rejects every explicit/induced, internal/exchange,
+cut, current, and coherent double count;
+\item all unavailable sectors and downstream matching, evolution, process, and
+inference gates remain fail closed;
+\item no accepted production artifact or registry route is modified;
+\item at least one tensor, pion-active, transition, current, and coherent
+observable remains withheld from calibration.
+\end{enumerate}
+
+\begin{decision}[N1 predictive status]
+Passing the N1 gates establishes a regulated, spin-resolved
+\(NN\oplus NN\pi\) microscopic validation parent.  It does not establish a
+physical deuteron TMD or physical shadowing prediction.  The next dynamical
+layer must add supported \(\Delta\Delta\), compact six-quark/hidden-color, or
+higher coherent sectors only through complete amplitudes and matched
+operators.
+\end{decision}
+
+\section{Boundary to N2 and later matching}
+\label{sec:boundary}
+
+A successful N1 package exports:
+\begin{itemize}
+\item the normalized N1 state bundle and resolution trajectory;
+\item complete \(NN\) and \(NN\pi\) amplitudes;
+\item pion-active, nucleon-active, transition, and current operators;
+\item the matched internal/exchange pion ledger;
+\item order-resolved quark, antiquark, and gluon deuteron parents;
+\item the coherent pilot and parton--nuclear overlap ledger;
+\item exact/full-bond and reduced-bond convergence manifests;
+\item tagged and tensor validation observables;
+\item the complete provenance two-complex.
+\end{itemize}
+
+The likely next nuclear package is
+\begin{quote}
+\textbf{N2: explicit \(\Delta\Delta\) and compact six-quark/hidden-color
+sectors, transition currents, normalized non-nucleonic interference, and an
+upgraded coherent amplitude.}
+\end{quote}
+A narrower N1 completion package is preferred if current continuity, pion
+subtraction, or coherent-overlap residuals remain parametrically larger than
+the controlled nuclear-sector truncation.
+
+\section{Conclusion}
+
+The \(NN\pi\) sector is the first nuclear extension for which the distinction
+between a mechanism label and a genuine amplitude becomes unavoidable.  A
+pion distribution, a meson-exchange current, a transition interference, and a
+coherent shadowing correction are not four independent curves.  They are
+sector-diagonal, sector-changing, current, and multiple-scattering matrix
+elements of one regulated nuclear theory.  Volume XIII makes that statement
+computationally precise.  It supplies the charge-complete three-body state,
+exact recoil geometry, matched operator matrix, internal--exchange
+subtraction, consistent current family, helicity-resolved coherent pilot,
+derived CP map, tensor-network convergence criteria, and provenance relations
+needed for C16/N1.  The result is the first formal nuclear layer beyond
+impulse approximation that preserves the microscopic quark--antiquark--gluon
+parent without rebuilding a patchwork at the deuteron level.
+
+\appendix
+
+\section{Derivation of the three-body spectator-preserving recoil map}
+\label{app:recoil}
+
+Let the average intrinsic momenta satisfy
+\(
+\sum_i\bm k_{iT}=0
+\).
+For active constituent \(j\), impose
+\begin{equation}
+ p_{iT}^{\mathrm{out}}=p_{iT}^{\mathrm{in}}
+ \qquad(i\neq j),
+ \label{eq:app-spectator}
+\end{equation}
+with
+\begin{equation}
+ p_{iT}^{\mathrm{in/out}}
+ =y_iP_{i/f,T}+\bm\kappa_{iT}^{\mathrm{in/out}}.
+ \label{eq:app-physical}
+\end{equation}
+Using \(P_{iT}=-\DT/2\) and \(P_{fT}=+\DT/2\) gives
+\begin{equation}
+ \bm\kappa_{iT}^{\mathrm{out}}
+ -\bm\kappa_{iT}^{\mathrm{in}}
+ =-y_i\DT
+ \qquad(i\neq j).
+ \label{eq:app-spectator-shift}
+\end{equation}
+Intrinsic closure then gives
+\begin{equation}
+ \bm\kappa_{jT}^{\mathrm{out}}
+ -\bm\kappa_{jT}^{\mathrm{in}}
+ =(1-y_j)\DT.
+ \label{eq:app-active-shift}
+\end{equation}
+The symmetric choice around the average variables yields
+\cref{eq:active-threebody-recoil,eq:spectator-threebody-recoil}.  Substitution
+into \cref{eq:app-physical} gives
+\(
+ p_{jT}^{\mathrm{out}}-p_{jT}^{\mathrm{in}}=\DT
+\)
+and unchanged spectators.
+
+\section{Isospin and charge adapters}
+\label{app:isospin}
+
+Use
+\begin{equation}
+ |1,+1\rangle_{NN}=|pp\rangle,
+ \qquad
+ |1,0\rangle_{NN}=\frac{|pn\rangle+|np\rangle}{\sqrt2},
+ \qquad
+ |1,-1\rangle_{NN}=|nn\rangle.
+ \label{eq:triplet-nn}
+\end{equation}
+The pion triplet is
+\begin{equation}
+ |1,+1\rangle_{\pi}=|\pi^+\rangle,
+ \quad
+ |1,0\rangle_{\pi}=|\pi^0\rangle,
+ \quad
+ |1,-1\rangle_{\pi}=|\pi^-\rangle.
+ \label{eq:pion-triplet}
+\end{equation}
+Then \cref{eq:isospin-zero-state} follows from the standard
+\(1\otimes1\to0\) coefficient.  A software adapter stores these phases and
+verifies unitarity under conversion between coupled and charge bases.
+
+\section{Finite two-sector continuity benchmark}
+\label{app:continuity}
+
+Let
+\begin{equation}
+ H=\begin{pmatrix}H_P&V^{\dagger}\\V&H_Q\end{pmatrix},
+ \qquad
+ \rho=\begin{pmatrix}\rho_P&\rho_{PQ}\\\rho_{QP}&\rho_Q\end{pmatrix}.
+ \label{eq:two-sector-h-rho}
+\end{equation}
+The continuity identity decomposes into diagonal and transition blocks.  For
+example,
+\begin{equation}
+ q_{\mu}J_{PQ}^{\mu}
+ =H_P\rho_{PQ}+V^{\dagger}\rho_Q
+ -\rho_PV^{\dagger}-\rho_{PQ}H_Q.
+ \label{eq:transition-continuity}
+\end{equation}
+A transition current is therefore required whenever the sector-changing
+interaction and charge operator do not commute.  A one-body current alone
+cannot satisfy the complete identity.
+
+\section{Machine-readable schemas}
+\label{app:schemas}
+
+\subsection{N1 state record}
+
+A state record contains:
+\begin{verbatim}
+{
+  "state_id": "...",
+  "resolution_id": "...",
+  "assumption_plan": "...",
+  "sectors": ["NN", "NNPI"],
+  "nn_member_id": "...",
+  "nnpi_amplitude_id": "...",
+  "charge_isospin_basis_id": "...",
+  "hamiltonian_id": "...",
+  "renormalization_trajectory_id": "...",
+  "solver_id": "...",
+  "tensor_network_manifest_id": "...",
+  "normalization_ledger_id": "...",
+  "readiness": ["N1_STATE_VALIDATION_ONLY"]
+}
+\end{verbatim}
+
+\subsection{Pion subtraction record}
+
+\begin{verbatim}
+{
+  "subtraction_id": "...",
+  "internal_pion_source": "...",
+  "exchange_pion_source": "...",
+  "separator_id": "...",
+  "overlap_operator_id": "...",
+  "matched_result_id": "...",
+  "separation_scale": "...",
+  "remainder_id": "...",
+  "two_cell_id": "..."
+}
+\end{verbatim}
+
+\subsection{Coherent amplitude record}
+
+\begin{verbatim}
+{
+  "coherent_id": "...",
+  "parton_species": "...",
+  "operator_projection": "...",
+  "initial_target_helicity": "...",
+  "final_target_helicity": "...",
+  "intermediate_state": "...",
+  "elementary_amplitudes": ["...", "..."],
+  "propagation_kernel_id": "...",
+  "longitudinal_order": "...",
+  "scattering_order": 2,
+  "parton_nuclear_overlap_id": "...",
+  "factorization_status": "VALIDATION_ONLY"
+}
+\end{verbatim}
+
+\section{Compact N1 acceptance checklist}
+
+\begin{enumerate}
+\item Complete \(NN\pi\) charge/isospin basis?
+\item Correct pion parity and Pauli-allowed orbital channels?
+\item Three-body and transition recoil maps validated?
+\item One normalized two-sector state and momentum ledger?
+\item Hermitian Hamiltonian and generated transition adjoint?
+\item Complete pion-active, nucleon-active, and transition operators?
+\item Common helicity parent and commuting reductions?
+\item Explicit internal/exchange pion overlap subtraction?
+\item Explicit/induced equivalence with transformed operators and remainder?
+\item Hamiltonian-consistent current and continuity ledger?
+\item Spin-1 angular condition and current/GTMD moments?
+\item Helicity-resolved coherent pilot with exact zero limits?
+\item Partonic/nuclear soft overlap subtracted once?
+\item CP map derived only after amplitudes are combined?
+\item Tagged-inclusive and pole-oracle closure?
+\item Full-bond equality and observable-sensitive bond convergence?
+\item Deterministic provenance two-complex and ancestry?
+\item All unavailable sectors and downstream gates fail closed?
+\item Production and authoritative artifacts unchanged?
+\item At least one nontrivial pion/tensor/current/coherent holdout preserved?
+\end{enumerate}
+
+\small
+\begin{thebibliography}{99}
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev.\ Mod.\ Phys.\ \textbf{21}, 392 (1949).
+
+\bibitem{KeisterPolyzou1991}
+B.~D.~Keister and W.~N.~Polyzou,
+``Relativistic Hamiltonian dynamics in nuclear and particle physics,''
+Adv.\ Nucl.\ Phys.\ \textbf{20}, 225 (1991).
+
+\bibitem{Carbonell1998}
+J.~Carbonell, B.~Desplanques, V.~A.~Karmanov, and J.-F.~Mathiot,
+``Explicitly covariant light-front dynamics and relativistic few-body systems,''
+Phys.\ Rept.\ \textbf{300}, 215 (1998), arXiv:nucl-th/9804029.
+
+\bibitem{Wiringa1995}
+R.~B.~Wiringa, V.~G.~J.~Stoks, and R.~Schiavilla,
+``Accurate nucleon-nucleon potential with charge-independence breaking,''
+Phys.\ Rev.\ C \textbf{51}, 38 (1995), arXiv:nucl-th/9408016.
+
+\bibitem{Machleidt2001}
+R.~Machleidt,
+``The high-precision, charge-dependent Bonn nucleon-nucleon potential,''
+Phys.\ Rev.\ C \textbf{63}, 024001 (2001), arXiv:nucl-th/0006014.
+
+\bibitem{Piarulli2016}
+M.~Piarulli et al.,
+``Local chiral potentials and the structure of light nuclei,''
+Phys.\ Rev.\ C \textbf{94}, 054007 (2016), arXiv:1606.06335.
+
+\bibitem{Krebs2020}
+H.~Krebs,
+``Nuclear currents in chiral effective field theory,''
+Eur.\ Phys.\ J.\ A \textbf{56}, 234 (2020), arXiv:2008.00974.
+
+\bibitem{Baroni2015}
+A.~Baroni, L.~Girlanda, S.~Pastore, R.~Schiavilla, and M.~Viviani,
+``Nuclear axial currents in chiral effective field theory,''
+Phys.\ Rev.\ C \textbf{93}, 015501 (2016), arXiv:1509.07039.
+
+\bibitem{Schiavilla2018}
+R.~Schiavilla et al.,
+``Local chiral interactions and magnetic structure of few-nucleon systems,''
+Phys.\ Rev.\ C \textbf{99}, 034005 (2019), arXiv:1809.10180.
+
+\bibitem{HeZahed2024}
+F.~He and I.~Zahed,
+``Deuteron gravitational form factors: Exchange currents,''
+arXiv:2401.09318.
+
+\bibitem{Sullivan1972}
+J.~D.~Sullivan,
+``One-pion exchange and deep-inelastic electron-nucleon scattering,''
+Phys.\ Rev.\ D \textbf{5}, 1732 (1972).
+
+\bibitem{Miller2014}
+G.~A.~Miller,
+``Pionic and hidden-color, six-quark contributions to the deuteron \(b_1\)
+structure function,''
+Phys.\ Rev.\ C \textbf{89}, 045203 (2014), arXiv:1311.4561.
+
+\bibitem{CaoEtAl2026}
+X.~Cao, S.~Cheng, Y.~Duan, Y.~Li, S.~Xu, and X.~Zhao,
+``Non-perturbative flavor asymmetry in the nucleon and deuteron: The
+light-front Hamiltonian effective field theory approach,''
+arXiv:2601.13567 (2026).
+
+\bibitem{FrankfurtGuzeyStrikman2012}
+L.~Frankfurt, V.~Guzey, and M.~Strikman,
+``Leading twist nuclear shadowing phenomena in hard processes with nuclei,''
+Phys.\ Rept.\ \textbf{512}, 255 (2012), arXiv:1106.2091.
+
+\bibitem{HoodbhoyJaffeManohar1989}
+P.~Hoodbhoy, R.~L.~Jaffe, and A.~Manohar,
+``Novel effects in deep-inelastic scattering from spin-one hadrons,''
+Nucl.\ Phys.\ B \textbf{312}, 571 (1989).
+
+\bibitem{HERMES2005}
+A.~Airapetian et al.\ (HERMES Collaboration),
+``First measurement of the tensor structure function \(b_1\) of the
+deuteron,''
+Phys.\ Rev.\ Lett.\ \textbf{95}, 242001 (2005), arXiv:hep-ex/0506018.
+
+\bibitem{CosynDongKumanoSargsian2017}
+W.~Cosyn, Y.-B.~Dong, S.~Kumano, and M.~Sargsian,
+``Tensor-polarized structure function \(b_1\) in the standard convolution
+description of the deuteron,''
+Phys.\ Rev.\ D \textbf{95}, 074036 (2017), arXiv:1702.05337.
+
+\bibitem{CosynWeiss2020}
+W.~Cosyn and C.~Weiss,
+``Polarized electron--deuteron deep-inelastic scattering with spectator
+nucleon tagging,''
+Phys.\ Rev.\ C \textbf{102}, 065204 (2020), arXiv:2006.03033.
+
+\bibitem{CosynWeiss2026II}
+W.~Cosyn and C.~Weiss,
+``Semi-inclusive deep-inelastic scattering on a polarized spin-1 target. II.
+Deuteron and spectator nucleon tagging,''
+arXiv:2603.23700 (2026).
+
+\bibitem{BacchettaMulders2000}
+A.~Bacchetta and P.~J.~Mulders,
+``Deep inelastic leptoproduction of spin-one hadrons,''
+Phys.\ Rev.\ D \textbf{62}, 114004 (2000), arXiv:hep-ph/0007120.
+
+\bibitem{KumanoSong2021}
+S.~Kumano and Q.-T.~Song,
+``Transverse-momentum-dependent parton distribution functions for spin-1
+hadrons,''
+Phys.\ Rev.\ D \textbf{103}, 014025 (2021), arXiv:2011.08583.
+
+\bibitem{Boer2016}
+D.~Boer, S.~Cotogno, T.~van Daal, P.~J.~Mulders, A.~Signori, and Y.-J.~Zhou,
+``Gluon and Wilson-loop TMDs for hadrons of spin \(\leq1\),''
+JHEP \textbf{10}, 013 (2016), arXiv:1607.01654.
+
+\bibitem{Collins2011}
+J.~C.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\end{thebibliography}
+
+\end{document}

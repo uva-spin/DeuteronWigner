@@ -1,0 +1,23 @@
+{
+  "authority": "ALGEBRA_VALIDATION_ONLY_NOT_MICROSCOPIC_ONE_LOOP",
+  "endpoint_cutoff_authoritative": false,
+  "lower_limit_plus_implemented": true,
+  "schema_version": "1.0.0",
+  "typed_terms": {
+    "delta": {
+      "coefficient": 1.25
+    },
+    "plus": [
+      {
+        "coefficient": 0.5,
+        "log_power": 0
+      }
+    ],
+    "regular": {
+      "polynomial": [
+        0.2,
+        -0.1
+      ]
+    }
+  }
+}

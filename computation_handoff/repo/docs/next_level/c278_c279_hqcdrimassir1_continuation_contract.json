@@ -1,0 +1,28 @@
+{
+  "schema": "C278-C279-HQCDRIMASSIR1-CONTINUATION-CONTRACT-V1",
+  "from_package": "C278/HQCDRIMASSSTATE1",
+  "from_status": "C278_MAXIMAL_SYMBOLIC_RI_SMOM_MASS_STATE_FAMILY_READY_NUMERICAL_COMMON_IR_AUTHORITY_MISSING",
+  "from_plan": "RIMASSSTATE1-B",
+  "from_package_root": "61406fb610302b90150db398ab2d57c15acc4d0cfcab27c1305e5f56c32585ef",
+  "completed_object": "three no-default symbolic RI/SMOM signed-mass state capsules with symmetric geometry and all physical selections explicit",
+  "next_job": "C279/HQCDRIMASSIR1",
+  "next_frontier": {
+    "object_id": "C157-SIGNED-MASS-COMMON-IR-NUMERIC-RECORDS",
+    "exact_missing_object": "authenticated C157 common-IR numerical records for SIGNED_QUARK_MASS in RI/SMOM at K9/K11/K13"
+  },
+  "required_schema": "C157-COMMON-IR-NUMERIC-RECORD-V1",
+  "constraints": {
+    "quantity_id": "SIGNED_QUARK_MASS",
+    "target_scheme_id": "RI_SMOM",
+    "K9_K11_K13_separate": true,
+    "rho_mu_independent": true,
+    "active_Nf_and_external_flavor_separate": true,
+    "parameter_or_fixture_exclusive": true,
+    "diagnostic_fixture_promoted": false,
+    "C117_coordinates_selected": false,
+    "missing_values_zeroed": false,
+    "C166_graph_mutation": false,
+    "Q0_Q1_Q2_mutation": false,
+    "push": false
+  }
+}

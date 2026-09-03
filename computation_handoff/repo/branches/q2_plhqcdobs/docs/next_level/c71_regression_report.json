@@ -1,0 +1,18 @@
+{
+  "C64_import": "deferred: C70 completeness gate precedes any embedding",
+  "C70_authenticated_arrays": 6,
+  "C70_statuses": 72,
+  "blocker": "C70 authenticates arrays but its package index/root omit source/API fingerprints, 24-row/3-column basis manifests, exact-record hashes, and per-entry bound identities required for a complete immutable C70 import.",
+  "missing_authenticated_contract_fields": [
+    "source_fingerprint",
+    "api_fingerprint",
+    "product_row_basis",
+    "triplet_column_basis",
+    "exact_record_hash",
+    "entry_bound_identity"
+  ],
+  "next": "C72/QGCOLOR5 \u2014 complete C70 authenticated basis, exact-record, fingerprint, and bound identities",
+  "no_contact": true,
+  "no_embedding": true,
+  "status": "C71_QGEMBED_C70_IMPORT_INCOMPLETE"
+}

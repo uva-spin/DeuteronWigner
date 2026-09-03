@@ -1,0 +1,91 @@
+{
+  "provenance": {
+    "edges": [
+      {
+        "relation": "USES",
+        "source": "C7:H0:ONE_PARTICLE_MODES",
+        "target": "C7:H0:RESOLUTION"
+      },
+      {
+        "relation": "USES",
+        "source": "C7:H0:PHYSICAL_FOCK_BASIS",
+        "target": "C7:H0:COLOR_SINGLET_BASIS"
+      },
+      {
+        "relation": "USES",
+        "source": "C7:H0:PHYSICAL_FOCK_BASIS",
+        "target": "C7:H0:PERMUTATION_BASIS"
+      },
+      {
+        "relation": "ACTS_ON",
+        "source": "C7:H0:FREE_OPERATOR",
+        "target": "C7:H0:PHYSICAL_FOCK_BASIS"
+      },
+      {
+        "relation": "CONNECTS",
+        "source": "C7:H0:REDUCED_VERTEX",
+        "target": "C7:H0:PHYSICAL_FOCK_BASIS"
+      }
+    ],
+    "evolution_process_reachable": false,
+    "inference_reachable": false,
+    "nodes": [
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:RESOLUTION"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:ONE_PARTICLE_MODES"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:COLOR_SINGLET_BASIS"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:PERMUTATION_BASIS"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:PHYSICAL_FOCK_BASIS"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:FREE_OPERATOR"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:REDUCED_VERTEX"
+      },
+      {
+        "scope": "C7_H0_VALIDATION_ONLY",
+        "stable_id": "C7:H0:READINESS"
+      }
+    ],
+    "nuclear_reachable": false,
+    "production_reachable": false
+  },
+  "readiness": {
+    "status": "VALIDATION_ONLY_H0",
+    "unavailable": [
+      "PHYSICAL_NUCLEON_EIGENSTATE",
+      "RENORMALIZATION_TRAJECTORY_VALIDATED",
+      "CURRENT_READY",
+      "GTMD_OVERLAP_READY",
+      "WILSON_READY_FROM_MICROSCOPIC_STATE",
+      "NUCLEAR_MATCHING_READY",
+      "LF_TO_QCD_MATCHING_READY",
+      "INFERENCE_READY"
+    ],
+    "validated": [
+      "BASIS_TYPES_VALIDATED",
+      "COLOR_MULTIPLICITIES_VALIDATED",
+      "PERMUTATION_BASIS_VALIDATED",
+      "CENTER_OF_MASS_GATE_VALIDATED",
+      "FREE_OPERATOR_VALIDATED",
+      "TERM_INTERFACE_VALIDATED"
+    ]
+  },
+  "schema_version": "1.0.0"
+}

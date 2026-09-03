@@ -1,0 +1,88 @@
+{
+  "C166_graph_delta": [
+    0,
+    0
+  ],
+  "Q0_Q1_Q2_modified": false,
+  "artifact": "assembly_contract",
+  "assembled_families": 8,
+  "authority_record": {
+    "count": 8,
+    "duplicate_ids": 0,
+    "missing_ids": 0,
+    "root": "34d77cadc093182d9916d5b202adea02f19d92d9c938d9783dabd1ab1ca84afe",
+    "rows": [
+      {
+        "all_n_nonnegative": true,
+        "m": 1,
+        "normal_form_id": "C227-NF-HO-1-HI-1-HG-1",
+        "primitive_sha256": "4db30f647d8acde27acaa65fe8c3b3f973efb1341be37cc79aacb1b19f696b02",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI-1-HG-1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": -1,
+        "normal_form_id": "C227-NF-HO-1-HI-1-HG1",
+        "primitive_sha256": "d8c02aca4b01c1376ec836b043c6666e31d552bd82178221d424c0375a3d094e",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI-1-HG1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": 2,
+        "normal_form_id": "C227-NF-HO-1-HI1-HG-1",
+        "primitive_sha256": "8b5f2f311520b471c3f43db36f0ea85ea25c30a3a3435c10e39e32e3266f2b80",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI1-HG-1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": 0,
+        "normal_form_id": "C227-NF-HO-1-HI1-HG1",
+        "primitive_sha256": "d5325d8bcb2a9e7c598b99429b2d8457a71b5eb1cb96c6c449f5672b96b8184d",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO-1-HI1-HG1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": 0,
+        "normal_form_id": "C227-NF-HO1-HI-1-HG-1",
+        "primitive_sha256": "d5325d8bcb2a9e7c598b99429b2d8457a71b5eb1cb96c6c449f5672b96b8184d",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO1-HI-1-HG-1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": -2,
+        "normal_form_id": "C227-NF-HO1-HI-1-HG1",
+        "primitive_sha256": "632f94623e427e39aea4d2febc4eda3d2f745b6fbd2e3e669b3a45b97df5165d",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO1-HI-1-HG1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": 1,
+        "normal_form_id": "C227-NF-HO1-HI1-HG-1",
+        "primitive_sha256": "19113a43021a91c83b3984f6180c532137f049e77a9d553d64433fce01b6378b",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO1-HI1-HG-1"
+      },
+      {
+        "all_n_nonnegative": true,
+        "m": -1,
+        "normal_form_id": "C227-NF-HO1-HI1-HG1",
+        "primitive_sha256": "a00b97b51fdcb9ee9e1a4dfb7d35d000e678fddaee51d94352c011039c03e303",
+        "program": "assembled_radial_record(radial_id,n,Q,b_HO,C_h)",
+        "radial_id": "C229-RAD-C227-NF-HO1-HI1-HG1"
+      }
+    ],
+    "unique_ids": 8
+  },
+  "mapped_interfaces": 0,
+  "package_root": "2955c31af733b2c1882fa0a18d99c5c1e2f12e4f83f11bd4ce1ebfcf5cf9244b",
+  "physical": false,
+  "plan": "RIQUARKFIXEDKVRADASSEMBLE1-B",
+  "schema": "C234-ASSEMBLY-CONTRACT-V1",
+  "status": "C234_EIGHT_CANONICAL_CALLER_BOUND_CORE_PLUS_TAIL_RADIAL_MATRIX_ELEMENT_RECORDS_READY"
+}

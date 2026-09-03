@@ -1,0 +1,41 @@
+{
+  "schema": "C123-AXIS-AUTHORITY-MANIFEST-V1",
+  "status": "C123_ICAXIS_AXIS_CARDINALITY_INCOMPLETE",
+  "baseline": "a2bf6c3052a83a11680b6e321947f21bcaf7b5d9",
+  "contract": "docs/next_level/c122_c123_icaxis_import_contract.json",
+  "implementation": "src/deuteron_wigner/bridge/icaxis/core.py",
+  "axis_ids": [
+    "physical_bra_state", "physical_ket_state", "source_graph",
+    "monomial_descendant", "longitudinal_transfer", "external_modes",
+    "spin_polarization", "ordered_color", "CM_ground", "triplet", "orientation"
+  ],
+  "source_classification": {
+    "physical_bra_state": "PUBLIC_PAYLOAD_EXACT_ADAPTER",
+    "physical_ket_state": "PUBLIC_PAYLOAD_EXACT_ADAPTER",
+    "source_graph": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION",
+    "monomial_descendant": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION",
+    "longitudinal_transfer": "AMBIGUOUS_BLOCKING",
+    "external_modes": "AMBIGUOUS_BLOCKING",
+    "spin_polarization": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION",
+    "ordered_color": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION",
+    "CM_ground": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION",
+    "triplet": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION",
+    "orientation": "DESCENDANT_SOURCE_CHAIN_RECONSTRUCTION"
+  },
+  "dimensions": {
+    "q": {"K9_2_N8_b0.40": 6, "K11_2_N10_b0.45": 6, "K13_2_N12_b0.50": 6},
+    "qg": {"K9_2_N8_b0.40": 1344, "K11_2_N10_b0.45": 2700, "K13_2_N12_b0.50": 4752},
+    "direct_sum": {"K9_2_N8_b0.40": 1350, "K11_2_N10_b0.45": 2706, "K13_2_N12_b0.50": 4758}
+  },
+  "global_order": "q sector followed by qg sector",
+  "route_A_X": "C117 graph / C64-C77 / C74 source-chain identities",
+  "route_B_X": "C47/C64/C74 basis-preimage identities",
+  "route_mismatches": {"identity": 0, "order": 0, "cardinality": 0, "orientation": 0},
+  "blocker": "C117 internal_mode_domain publishes descriptive count rule but no finite member records or conditional cardinalities; longitudinal_transfer and external_modes therefore remain AMBIGUOUS_BLOCKING",
+  "logical_witnesses": 0,
+  "matrix_targets": 0,
+  "values": 0,
+  "bounds": 0,
+  "operators": 0,
+  "historical_C117_member_recovery_claimed": false
+}

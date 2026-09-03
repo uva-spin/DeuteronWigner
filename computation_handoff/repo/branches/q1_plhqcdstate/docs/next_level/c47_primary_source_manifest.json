@@ -1,0 +1,19 @@
+{
+  "new_sources": [
+    {
+      "archive_bytes": 341035,
+      "archive_path": "data/raw/c47_sources/1911.10762v1.tar",
+      "archive_sha256": "08ab029b563793794ceef9d4577f6a0f12ccb77feee2e902107dab18e16414a9",
+      "arxiv": "1911.10762v1",
+      "download_command": "curl -fL https://arxiv.org/pdf/1911.10762v1 -o data/raw/c47_sources/1911.10762v1.pdf; curl -fL https://arxiv.org/e-print/1911.10762v1 -o data/raw/c47_sources/1911.10762v1.tar",
+      "official_host": "arxiv.org",
+      "pdf_bytes": 851225,
+      "pdf_pages": 36,
+      "pdf_path": "data/raw/c47_sources/1911.10762v1.pdf",
+      "pdf_sha256": "1596d7a6b0624b63ab5d4ba3f2235eacc114cbc299f845964182a649d0861cc5",
+      "title": "Basis Light-Front Quantization for a Chiral Nucleon-Pion Lagrangian"
+    }
+  ],
+  "reused": "C43/C45 hash locks",
+  "status": "HASH_LOCKED"
+}

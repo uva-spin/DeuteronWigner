@@ -1,0 +1,32 @@
+{
+  "package_root": "b07374382e711e9906925fef30c40575bc56b61f0075b860ffcdf0234e7e8a1d",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUPMASTER1-C",
+  "record": {
+    "count": 3,
+    "expansion_order": "form group -> parameterize -> integrate common scale -> expand alpha,beta -> resolve epsilon UV/IR regions",
+    "root": "c28baea90e2f8d5cafda920847037da36078dca8c3995954775882f0902aac01",
+    "rows": [
+      {
+        "map": "R = positive-energy Cutkosky discontinuity of the matching L gluon denominator; active bilocal quark line remains uncut",
+        "real": "DR.qq,DR.qv,DR.vv -> tensor numerators reduced to R_ABalpha and dimension shifts",
+        "sector": "distribution",
+        "virtual": "Sigma_q,W_v,V_qv -> endpoint delta(1-x) L_ABC0/L_ABC-alpha"
+      },
+      {
+        "map": "p+<->p-, v<->tildev, alpha<->beta and ordered i0 reversal",
+        "real": "FR family -> CrossPlusMinus(R_ABalpha) with z^(-2+2epsilon)",
+        "sector": "fragmentation",
+        "virtual": "Cross(Sigma_q),W_tildev,V_htv -> delta(1-z) crossed L family"
+      },
+      {
+        "map": "same eikonal contours and auxiliary powers; count once before square-root allocation",
+        "real": "Disc_gluon(S_ABalphabeta) with transverse measurement",
+        "sector": "soft",
+        "virtual": "S_ABalphabeta without cut"
+      }
+    ]
+  },
+  "status": "C368_COMMON_GROUP_MASTER_REPRESENTATION_DERIVED_LAURENT_EVALUATION_REQUIRED",
+  "validation": "PASS"
+}

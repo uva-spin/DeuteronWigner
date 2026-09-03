@@ -1,0 +1,38 @@
+{
+  "package_root": "ce3480bd56040faa54d33a4777e9c3d4a27f87fa9e5bde88bd5ebf35de042a68",
+  "physical": false,
+  "plan": "RIMASSC43JMYGROUP1-C",
+  "record": {
+    "count": 3,
+    "individual_finite_values": "UNAVAILABLE_NOT_ZERO",
+    "root": "12b9a307c25d14ce5b1bb7a7306f042a32d116cf85ed0b0d05d30780afaf2f8e",
+    "rows": [
+      {
+        "alpha_pole": "+2*Aq/alpha",
+        "beta_pole": "0",
+        "d_ln_nu1": "-4*Aq",
+        "d_ln_nu2": "0",
+        "finite": "Fq(rho,bT,epsilon)",
+        "group": "distribution"
+      },
+      {
+        "alpha_pole": "0",
+        "beta_pole": "+2*Ah/beta",
+        "d_ln_nu1": "0",
+        "d_ln_nu2": "-4*Ah",
+        "finite": "Fh(rho,bT,epsilon)",
+        "group": "fragmentation"
+      },
+      {
+        "alpha_pole": "-2*Asq/alpha",
+        "beta_pole": "-2*Ash/beta",
+        "d_ln_nu1": "+4*Asq",
+        "d_ln_nu2": "+4*Ash",
+        "finite": "Fs(rho,bT,epsilon)",
+        "group": "soft-overlap allocation"
+      }
+    ]
+  },
+  "status": "C355_UNIVERSAL_ANALYTIC_SEPARATOR_CANCELLATION_EVALUATED_JMY_RESIDUE_MATRIX_MISSING",
+  "validation": "BOUND"
+}

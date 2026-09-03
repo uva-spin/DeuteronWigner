@@ -1,0 +1,39 @@
+{
+  "ancestry_root": "99cae853fac2b3c666c3237703f72d964b1bd10afc0a3bab1a965f9b5b828f75",
+  "basis_order": "q followed by qg",
+  "certificate_root": "7137539fcda1a58a30757ea9fd6824246f50f33c6585357d5bbf88c736f7d733",
+  "continuation": {
+    "root": "7d98d03d3716085ef6f1ff4c4ec460eefba67a3e62208770e71109a2291af2ee",
+    "routes": {
+      "EXACT_STATEPREP_ORACLE_STATE": {"mass_sign": {"energy_delta_MASS_minus_A": 0.0, "principal_angle_MASS_A": 0.0}, "null_shift": {"energy_delta_B_minus_A": 0.07998951831579693, "principal_angle_B_A": 0.0020960186379513188}},
+      "Q1_VARIATIONAL_STATE": {"mass_sign": {"energy_delta_MASS_minus_A": -4.440892098500626e-16, "principal_angle_MASS_A": 2.8468628487799863e-07}, "null_shift": {"energy_delta_B_minus_A": 0.07998951831519219, "principal_angle_B_A": 0.0020959748048048994}}
+    },
+    "schema": "Q2-CONTINUATION-RESPONSE-V1"
+  },
+  "derivative_hf": {"fixtures": ["FIXTURE-INTERACTING-A"], "max_compiled_residual": 1.0408340855860843e-17, "max_matrix_free_residual": 6.938893903907228e-18, "max_qnode_residual": 2.5486048322141286e-35, "parameters": ["phi_mass", "phi_coupling"]},
+  "device": "lightning.qubit",
+  "dtype": "complex128",
+  "encoding": "COMPACT_INDEX_DIRECT_ORDER_V1",
+  "fixture_sequence": ["FIXTURE-FREE", "FIXTURE-INTERACTING-A", "FIXTURE-INTERACTING-B-NULL-SHIFT", "FIXTURE-MASS-SIGN"],
+  "focused_mutations": {"count": 384, "pass_count": 384, "positive_gate": true},
+  "forbidden_defaults": {"hardware_execution": false, "physical_claim": false, "physical_parameter_selected": false, "shots": null},
+  "holdout_resolutions": ["K11", "K13"],
+  "input_freeze_root": "b040b2fda317e3f8423f3e9c53429ffc49df059bc7f668ddc6d6d675f1e345be",
+  "k9_registry_records": 157,
+  "measurement": {"max_compiled_sparse_residual": 1.1102230246251565e-16, "max_matrix_free_sparse_residual": 1.1102230246251565e-16, "max_padding_leakage": 0.0, "max_qnode_sparse_residual": 1.1102230246251565e-16, "ordinary_gate_only": true, "production_qubitunitary_count": 0, "source_structured": true},
+  "plan": "PLHQCDOBS-A",
+  "positive_gate": true,
+  "preservation_root": "5d8a15d086564e5f36e5e1c3a4cb3e86fdd7978af7c50931f3366af796658bbe",
+  "primary_resolution": "K9",
+  "q0_consumed": "b094fb8cb1046aea0062468d73826ea25eab6116",
+  "q0_later_evidence": "58596e628ea7cb999d58e0e2dd0f83b81f060d41",
+  "q1_baseline": "e7b6aef3ea4fb8d8a3dd850754cd994873258e1f",
+  "registry_records": 471,
+  "resources": {"root": "4040c529d360489d287ef927c5cbb6e35836f8dd6e5cd6be5e06b0a319b25df2", "rows": [{"dense_pauli_enumeration": false, "measurement_groups": 180, "padded": 2048, "physical": 1350, "qubits": 11, "registry_records": 157, "resolution": "K9", "source_terms": 48790, "variational_optimization": false}, {"dense_pauli_enumeration": false, "measurement_groups": 180, "padded": 4096, "physical": 2706, "qubits": 12, "registry_records": 157, "resolution": "K11", "source_terms": 97634, "variational_optimization": false}, {"dense_pauli_enumeration": false, "measurement_groups": 180, "padded": 8192, "physical": 4758, "qubits": 13, "registry_records": 157, "resolution": "K13", "source_terms": 173542, "variational_optimization": false}], "schema": "Q2-CROSS-RESOLUTION-RESOURCE-V1"},
+  "root": "23ee186d0fb292b159a9acbfb9f52468f6d65b9fc13103014637034ae43394c1",
+  "schema": "Q2-PLHQCDOBS-ACCEPTANCE-V1",
+  "shots": null,
+  "state_diagnostics": {"max_eigenstate_residual_norm": 2.0116115644217026e-08, "max_padding_leakage": 1.032298450191557e-31, "min_exact_state_overlap": 1.000000000002486},
+  "state_routes": ["EXACT_STATEPREP_ORACLE_STATE", "Q1_VARIATIONAL_STATE"],
+  "status": "Q2_PLHQCDOBS_COMPLETE"
+}

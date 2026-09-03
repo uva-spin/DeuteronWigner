@@ -1,0 +1,100 @@
+{
+  "root": "26e917ef74cca42a7581f013cf401bd204df211b3ef76616f7fea802147dae11",
+  "rows": [
+    {
+      "C176_owner": "C176-HO-BOUNDARY",
+      "alternatives": [
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "capsule_id": "C180-C176-BOUNDARY-OWNERSHIP-REFINEMENT",
+      "domain": "factorized complete retained vector mode and ordered pair",
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past_PV": [
+        "DIS_FUTURE",
+        "DY_PAST",
+        "ANTISYMMETRIC_OR_PV"
+      ],
+      "holdouts": [
+        "K9/K11/K13 separate",
+        "unpruned leakage",
+        "no omitted Hilbert space",
+        "no source theorem promotion",
+        "no path averaging"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_adjoint": "OPEN_ADJOINT_SU3",
+      "parent_C169_request": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "path_class_id": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "reference_path": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-TRANSVERSE_GLUON_FIELD-MOMQ-2",
+      "required_routes": [
+        "CONV-A",
+        "CONV-B",
+        "CONV-C",
+        "CONV-D",
+        "CONV-E",
+        "BOUNDARY-retained-first",
+        "BOUNDARY-C176-first"
+      ],
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "status": "C176_BOUNDARY_OWNERSHIP_REFINEMENT_REQUIRED"
+    },
+    {
+      "C176_owner": "C176-HO-BOUNDARY",
+      "alternatives": [
+        "PIECEWISE_CARTESIAN_XY",
+        "PIECEWISE_CARTESIAN_YX"
+      ],
+      "capsule_id": "C180-C176-BOUNDARY-OWNERSHIP-REFINEMENT",
+      "domain": "factorized complete retained vector mode and ordered pair",
+      "endpoint_pair_ids": [
+        "C179_ENDPOINT_PAIR_DIS_FUTURE_SYMBOLIC",
+        "C179_ENDPOINT_PAIR_DY_PAST_SYMBOLIC"
+      ],
+      "future_past_PV": [
+        "DIS_FUTURE",
+        "DY_PAST",
+        "ANTISYMMETRIC_OR_PV"
+      ],
+      "holdouts": [
+        "K9/K11/K13 separate",
+        "unpruned leakage",
+        "no omitted Hilbert space",
+        "no source theorem promotion",
+        "no path averaging"
+      ],
+      "holonomy": "C178_LONGITUDINAL_HOLONOMY_INTERFACE",
+      "not_zero": true,
+      "open_adjoint": "OPEN_ADJOINT_SU3",
+      "parent_C169_request": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "path_class_id": "PROJECT_PERIODIC_CUT_RESIDUAL_LINK_CLASS_V1",
+      "reference_path": "PROJECT_FINITE_HO_AFFINE_TRANSVERSE_CONNECTOR_V1",
+      "request_id": "C166-ACQUIRE-C165-MISSING-C164-LOC-TGT-QCD_COUPLING-MOMQ-2",
+      "required_routes": [
+        "CONV-A",
+        "CONV-B",
+        "CONV-C",
+        "CONV-D",
+        "CONV-E",
+        "BOUNDARY-retained-first",
+        "BOUNDARY-C176-first"
+      ],
+      "resolutions": [
+        "K9",
+        "K11",
+        "K13"
+      ],
+      "status": "C176_BOUNDARY_OWNERSHIP_REFINEMENT_REQUIRED"
+    }
+  ],
+  "schema": "C180-MISSING-SCHEME-OBJECT-V1"
+}

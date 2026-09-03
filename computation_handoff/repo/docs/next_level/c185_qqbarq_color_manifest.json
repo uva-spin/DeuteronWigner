@@ -1,0 +1,92 @@
+{
+  "channels_separate": true,
+  "derived_multiplicity": 2,
+  "expected_holdout": 2,
+  "recoupling_matrix": [
+    [
+      0.5773502691896258,
+      0.816496580927726
+    ],
+    [
+      0.816496580927726,
+      -0.5773502691896258
+    ]
+  ],
+  "recoupling_unitarity_residual": 0.0,
+  "root": "ac723deb922fd954d8add73b3e177074930783e1c2f77be1cc3752324a680c73",
+  "rows": [
+    {
+      "Gram": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QQBARQ_COLOR_QQ_BAR3",
+      "normalization": "unit Gram normalization",
+      "open_triplet_intertwiner": true,
+      "pairing": "qq diquark",
+      "qq_exchange_parity": -1,
+      "recoupling_matrix": [
+        [
+          0.5773502691896258,
+          0.816496580927726
+        ],
+        [
+          0.816496580927726,
+          -0.5773502691896258
+        ]
+      ],
+      "root": "598db32057fe9bca4d3549c2826f8b3ed5710e0528651c67c17d613d9c69f42f",
+      "routes": [
+        "QQQ-C-A SU3 character multiplicity",
+        "QQQ-C-B epsilon/delta/generator",
+        "QQQ-C-C Gram rank/dual",
+        "QQQ-C-D diquark/pair recoupling",
+        "QQQ-C-E all-generator"
+      ]
+    },
+    {
+      "Gram": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "all_eight_generator_residual": 0.0,
+      "channel_id": "QQBARQ_COLOR_QQ_6",
+      "normalization": "unit Gram normalization",
+      "open_triplet_intertwiner": true,
+      "pairing": "qq diquark",
+      "qq_exchange_parity": 1,
+      "recoupling_matrix": [
+        [
+          0.5773502691896258,
+          0.816496580927726
+        ],
+        [
+          0.816496580927726,
+          -0.5773502691896258
+        ]
+      ],
+      "root": "ee9a318bf121f7662b17968178ce0a8c0b42bfecf14209b9aea3a11ab28bd113",
+      "routes": [
+        "QQQ-C-A SU3 character multiplicity",
+        "QQQ-C-B epsilon/delta/generator",
+        "QQQ-C-C Gram rank/dual",
+        "QQQ-C-D diquark/pair recoupling",
+        "QQQ-C-E all-generator"
+      ]
+    }
+  ],
+  "schema": "C185-QQBARQ-COLOR-V1"
+}

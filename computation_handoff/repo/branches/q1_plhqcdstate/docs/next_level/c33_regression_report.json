@@ -1,0 +1,200 @@
+{
+  "all_immutable_records_byte_identical": true,
+  "atlas_pages": 165,
+  "authoritative_artifacts": [
+    {
+      "actual_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "artifact_id": "C0-ART-Q-CAN-TMD",
+      "byte_identical": true,
+      "expected_sha256": "09f596d73c4e6ffd7c2f58f97d5e82628310d0a5577bdc4ea280be02c1720b45",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.csv"
+    },
+    {
+      "actual_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "artifact_id": "C0-ART-Q-CAN-CORR",
+      "byte_identical": true,
+      "expected_sha256": "244a17bbd39852ac47922059815b0926adc3809bd73c60d4ab96be80d7fbd0f5",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_quark.correlators.csv"
+    },
+    {
+      "actual_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "artifact_id": "C0-ART-G-CAN-TMD",
+      "byte_identical": true,
+      "expected_sha256": "27dc1e043d087b79fb0fca026b82f234f0b12af165595127dda0744f472a8d89",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.csv"
+    },
+    {
+      "actual_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "artifact_id": "C0-ART-G-CAN-CORR",
+      "byte_identical": true,
+      "expected_sha256": "92c631976766a647d9bf881883ebc10129c6140d3ba41f9970a31781a5bbf9a7",
+      "path": "outputs/parent_tmds/wp12_canonical_composed_gluon.correlators.csv"
+    },
+    {
+      "actual_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "artifact_id": "C0-ART-Q-RES-TMD",
+      "byte_identical": true,
+      "expected_sha256": "7e53f290510c7fea65876d8b45c2726a06377c3b844da0b306cff28f9f264b4b",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.csv"
+    },
+    {
+      "actual_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "artifact_id": "C0-ART-Q-RES-CORR",
+      "byte_identical": true,
+      "expected_sha256": "48ceff976b76369942850d2da7f4ad61a9f992e2654ed1cc0f007cd37dbef65f",
+      "path": "outputs/parent_tmds/wp12_resolved_quark_parent.correlators.csv"
+    },
+    {
+      "actual_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "artifact_id": "C0-ART-G-RES-TMD",
+      "byte_identical": true,
+      "expected_sha256": "798a345bdb44c5a6447a3139704d1094d653c055aa8156fa4ce673eeaaf4d34b",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.csv"
+    },
+    {
+      "actual_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "artifact_id": "C0-ART-G-RES-CORR",
+      "byte_identical": true,
+      "expected_sha256": "465d8cd9d0d35aeffea23a795045051ad53061d334309cfb34a95b7ed0c5fdc3",
+      "path": "outputs/parent_tmds/wp12_resolved_gluon_parent.correlators.csv"
+    }
+  ],
+  "authoritative_artifacts_unchanged": true,
+  "baseline_commands": [
+    {
+      "command": "PYTHONPATH=src python3 scripts/build_c32_manifests.py 1167",
+      "status": "PASS_BYTE_IDENTICAL"
+    },
+    {
+      "command": "PYTHONPATH=src python3 scripts/validate_c28.py through validate_c32.py",
+      "status": "PASS"
+    },
+    {
+      "command": "PYTHONPATH=src python3 -m pytest -q --ignore=tests/test_c33_s0.py",
+      "status": "1167_PASS"
+    }
+  ],
+  "baseline_commit": "0d7b94a5e86882b23a56d4c1f11900d554756a18",
+  "baseline_tests": 1167,
+  "bridge_rerun": false,
+  "builders": 33,
+  "calibration_created": false,
+  "cross_root_relation": "NO_JOINT_MEASURE",
+  "deterministic_reconstruction": true,
+  "emulator_created": false,
+  "environment": {
+    "numpy": "1.26.3",
+    "pdf_renderer": "PyMuPDF fallback; Poppler CLI unavailable",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "pypdf": "6.14.2",
+    "pytest": "8.4.2",
+    "python": "3.9.23",
+    "scipy": "1.13.0"
+  },
+  "evidence_rows": 39,
+  "external_art25_members": 642,
+  "failed_bridge_projection": {
+    "empty_not_zero": true,
+    "shape": [
+      642,
+      0
+    ]
+  },
+  "fault_modes": 92,
+  "fit_created": false,
+  "immutable_c32_and_bridge_records": [
+    {
+      "actual_sha256": "0b784a2516bb9a44d37073b39b61e00c212cf8c754c79262178851f812240afd",
+      "byte_identical": true,
+      "expected_sha256": "0b784a2516bb9a44d37073b39b61e00c212cf8c754c79262178851f812240afd",
+      "path": "src/deuteron_wigner/bridge/r0/core.py"
+    },
+    {
+      "actual_sha256": "c4778453678363ff37e16de7b68e707d2f0af37c4231ea646d1b3f97b84501d3",
+      "byte_identical": true,
+      "expected_sha256": "c4778453678363ff37e16de7b68e707d2f0af37c4231ea646d1b3f97b84501d3",
+      "path": "scripts/build_c32_manifests.py"
+    },
+    {
+      "actual_sha256": "e1271a8c30c8ef9f751da3f2f61a26647a27261092f47d3262462be6ad746643",
+      "byte_identical": true,
+      "expected_sha256": "e1271a8c30c8ef9f751da3f2f61a26647a27261092f47d3262462be6ad746643",
+      "path": "scripts/validate_c32.py"
+    },
+    {
+      "actual_sha256": "291018e3d1b7ddbb570fe41fa88d7b6172ae31a2a065a9995e35c3bea64f394b",
+      "byte_identical": true,
+      "expected_sha256": "291018e3d1b7ddbb570fe41fa88d7b6172ae31a2a065a9995e35c3bea64f394b",
+      "path": "tests/test_c32_r0_operator_completion.py"
+    },
+    {
+      "actual_sha256": "e09c5ffc83d0a44f8c7ff793b6fd64442b8cd5cc1dcbc71543406ca8c4f76e5c",
+      "byte_identical": true,
+      "expected_sha256": "e09c5ffc83d0a44f8c7ff793b6fd64442b8cd5cc1dcbc71543406ca8c4f76e5c",
+      "path": "docs/next_level/c32_operator_completion_manifest.json"
+    },
+    {
+      "actual_sha256": "2b42fe59587242fbe931d213b1476fd4243b014b99925bf7b19338b2f5a5c7d2",
+      "byte_identical": true,
+      "expected_sha256": "2b42fe59587242fbe931d213b1476fd4243b014b99925bf7b19338b2f5a5c7d2",
+      "path": "docs/next_level/c32_c11_tree_reduction_report.json"
+    },
+    {
+      "actual_sha256": "71dfb1c73a046d61dc6b3b12138386c227022d6bdb7d7a0d02d88189083ece18",
+      "byte_identical": true,
+      "expected_sha256": "71dfb1c73a046d61dc6b3b12138386c227022d6bdb7d7a0d02d88189083ece18",
+      "path": "docs/next_level/c32_regulator_plan_manifest.json"
+    },
+    {
+      "actual_sha256": "87bddf58e4e567a3b6cde449899da0efdb3296f160cf9480b0c9c26b0d66b42c",
+      "byte_identical": true,
+      "expected_sha256": "87bddf58e4e567a3b6cde449899da0efdb3296f160cf9480b0c9c26b0d66b42c",
+      "path": "docs/next_level/c32_regression_report.json"
+    },
+    {
+      "actual_sha256": "baf7e3073e27837f461f0a827c8768ae1f7ba9deb621f8617b78aef11ce70661",
+      "byte_identical": true,
+      "expected_sha256": "baf7e3073e27837f461f0a827c8768ae1f7ba9deb621f8617b78aef11ce70661",
+      "path": "docs/next_level/c29_frozen_bridge_grid.json"
+    },
+    {
+      "actual_sha256": "02710c96fd6071a6ee4a699b610a854b57eb07bec204a65dfd0c9f6ef819b148",
+      "byte_identical": true,
+      "expected_sha256": "02710c96fd6071a6ee4a699b610a854b57eb07bec204a65dfd0c9f6ef819b148",
+      "path": "docs/next_level/c29_constraint_role_split.json"
+    },
+    {
+      "actual_sha256": "5525e9dca5f214b21e86317ac303bcc94dd1e7858b46f6c7adbd0c5d046a2411",
+      "byte_identical": true,
+      "expected_sha256": "5525e9dca5f214b21e86317ac303bcc94dd1e7858b46f6c7adbd0c5d046a2411",
+      "path": "docs/next_level/c29_cross_root_member_relation.json"
+    },
+    {
+      "actual_sha256": "b48f13a63d47f67ca73342501b0a4ea7d5d94eaec3ab98a5e89eca6e1b49f451",
+      "byte_identical": true,
+      "expected_sha256": "b48f13a63d47f67ca73342501b0a4ea7d5d94eaec3ab98a5e89eca6e1b49f451",
+      "path": "docs/next_level/c29_no_double_counting_contract.json"
+    }
+  ],
+  "injections": 2040,
+  "likelihood_created": false,
+  "optimization_created": false,
+  "posterior_created": false,
+  "process_executed": false,
+  "production_promoted": false,
+  "production_registry": 216,
+  "required_c28_ancestor": "52678312906bf5cc0bb8664e2486d5d676a6b723",
+  "requirements": 2140,
+  "reweighting_created": false,
+  "schema_version": "1.0.0",
+  "source_covariance": {
+    "nullity": 1,
+    "rank": 10,
+    "sha256": "33de79398ef3d75657e715abf751b5a12634e7e65e53a95b9ee19b0fb8eea16a",
+    "shape": [
+      642,
+      11
+    ]
+  },
+  "tests": 1197
+}

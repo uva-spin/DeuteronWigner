@@ -1,0 +1,46 @@
+{
+  "art25_inputs_used": false,
+  "baseline_commit": "bbefd963ea14bf79884ec3a5c1a503581a6dd21e",
+  "bridge_rerun": false,
+  "c35_finite_delta_ward_defect": 0.2143273,
+  "c35_no_go_retained": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+  "c35_secondary_no_go_retained": "C35_EXECUTABLE_SOFT_MODE_BASIS_UNAVAILABLE",
+  "collinear_root": {
+    "baryon_number": 1,
+    "common_regulator_id": "C36.R36.SPACELIKE",
+    "operator_id": "C36.OP.COLLINEAR.SPACELIKE",
+    "root_id": "C36_COLLINEAR_ROOT",
+    "soft_root_id": "C36_SOFT_ROOT",
+    "state_kind": "C11_C14_hadron_TTN_only"
+  },
+  "common_regulator_id": "C36.R36.SPACELIKE",
+  "content_hash": "e19af3f7033d098f158849c6847e790e8be96a4e067f5c035fbb2476b11e02db",
+  "no_joint_measure_retained": true,
+  "production_reachable": false,
+  "prompt_sha256": "098edb96e2514e65a710f232d6af5c9181b5951a68cb1dae35e6314f4f90f0b2",
+  "proton_tmd_exported": false,
+  "replacement_root": {
+    "art25_independent": true,
+    "c35_no_go": "C35_DIRECT_EIKONAL_FOCK_GAUGE_COMPLETION_UNAVAILABLE",
+    "c35_superseded_root": "C35_SOFT_REGULATOR_COMPLETION_DESCENDANT",
+    "common_regulator_id": "C36.R36.SPACELIKE",
+    "inference_reachable": false,
+    "production_reachable": false,
+    "root_id": "C36_GAUGE_INVARIANT_FINITE_RAPIDITY_TMD_ROOT",
+    "state_independent": true,
+    "version": "1.0.0"
+  },
+  "schema_version": "1.0.0",
+  "scope": "C36/O4",
+  "shared_state_vector": false,
+  "soft_root": {
+    "baryon_number": 0,
+    "collinear_root_id": "C36_COLLINEAR_ROOT",
+    "common_regulator_id": "C36.R36.SPACELIKE",
+    "hadron_probability_tensor_member": false,
+    "operator_id": "C36.OP.SOFT.FOUR_LINE.SPACELIKE",
+    "root_id": "C36_SOFT_ROOT",
+    "state_kind": "universal_vacuum_operator_not_hadron_state"
+  },
+  "volume_xxi_sha256": "613d26bcd58b4c9d15b23ef955cbb04feb2edc7d854d4ed63339c50835fa72c4"
+}

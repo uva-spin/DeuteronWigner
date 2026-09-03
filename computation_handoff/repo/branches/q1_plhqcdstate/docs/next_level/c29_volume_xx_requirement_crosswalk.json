@@ -1,0 +1,546 @@
+{
+  "all_mapped": true,
+  "count": 53,
+  "rows": [
+    {
+      "evidence": [
+        "docs/next_level/c29_root_identity_manifest.json",
+        "docs/next_level/c29_provenance_separation_report.json"
+      ],
+      "requirement": "Keep external ART25 and microscopic operator roots immutable and disjoint.",
+      "stable_id": "V20.ROOT.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_root_identity_manifest.json",
+        "docs/next_level/c29_provenance_separation_report.json"
+      ],
+      "requirement": "Forbid source, member, state, covariance, or readiness transfer across roots without a typed map.",
+      "stable_id": "V20.ROOT.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_data_ancestry_graph.json",
+        "docs/next_level/c28_art25_dataset_inventory.json",
+        "docs/next_level/c27_cdf1_native_prediction.json"
+      ],
+      "requirement": "Represent every source point by repository, commit, file hash, dataset, point, process, bin, cuts, errors, nuisance, theory factor, units, and measurement identity.",
+      "stable_id": "V20.DATA.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_data_ancestry_graph.json",
+        "docs/next_level/c28_art25_dataset_inventory.json",
+        "docs/next_level/c27_cdf1_native_prediction.json"
+      ],
+      "requirement": "Preserve the historical ART25 selection authority and ordered retained-point IDs.",
+      "stable_id": "V20.DATA.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_data_ancestry_graph.json",
+        "docs/next_level/c28_art25_dataset_inventory.json",
+        "docs/next_level/c27_cdf1_native_prediction.json"
+      ],
+      "requirement": "Keep the CDF1.0 regression in \\cref{eq:cdf1-authority} immutable.",
+      "stable_id": "V20.DATA.3",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_measurement_semantics_manifest.json",
+        "docs/next_level/c29_target_crosswalk.json"
+      ],
+      "requirement": "Trace native DY and SIDIS integration, normalization, charge, and theory-factor semantics.",
+      "stable_id": "V20.MEAS.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_measurement_semantics_manifest.json",
+        "docs/next_level/c29_target_crosswalk.json"
+      ],
+      "requirement": "Keep external measurement maps outside the microscopic TMD definition.",
+      "stable_id": "V20.MEAS.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_cross_root_member_relation.json",
+        "docs/next_level/c27_art25_joint_member_map.json"
+      ],
+      "requirement": "Preserve all 642 ART25 stochastic members as indivisible joint identities.",
+      "stable_id": "V20.ENS.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_cross_root_member_relation.json",
+        "docs/next_level/c27_art25_joint_member_map.json"
+      ],
+      "requirement": "Exclude technical records from stochastic empirical statistics unless source semantics say otherwise.",
+      "stable_id": "V20.ENS.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_anomaly_factor_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json",
+        "docs/next_level/c28_cross_process_covariance_report.json"
+      ],
+      "requirement": "Preserve the authoritative \\(642\\times1209\\) anomaly factor and member/point order.",
+      "stable_id": "V20.COV.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_anomaly_factor_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json",
+        "docs/next_level/c28_cross_process_covariance_report.json"
+      ],
+      "requirement": "Reconstruct exact covariance blocks as anomaly-factor products.",
+      "stable_id": "V20.COV.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_anomaly_factor_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json",
+        "docs/next_level/c28_cross_process_covariance_report.json"
+      ],
+      "requirement": "Preserve covariance rank and null spaces; forbid silent ridge regularization or PSD clipping.",
+      "stable_id": "V20.COV.3",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_anomaly_factor_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json",
+        "docs/next_level/c28_cross_process_covariance_report.json"
+      ],
+      "requirement": "Preserve DY--DY, SIDIS--SIDIS, DY--SIDIS, and distribution--process cross blocks.",
+      "stable_id": "V20.COV.4",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_anomaly_factor_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json",
+        "docs/next_level/c28_cross_process_covariance_report.json"
+      ],
+      "requirement": "Keep external theory, experimental, nuisance, numerical, and source-version uncertainties separate.",
+      "stable_id": "V20.COV.5",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_global_chi2_manifest.json",
+        "docs/next_level/c28_measurement_semantics_manifest.json"
+      ],
+      "requirement": "Use the native source nuisance and \\(\\chi^2\\) definitions as authority.",
+      "stable_id": "V20.CHI2.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_global_chi2_manifest.json",
+        "docs/next_level/c28_measurement_semantics_manifest.json"
+      ],
+      "requirement": "Distinguish central-member, ensemble-mean, mean-member, and published-anchor \\(\\chi^2\\) objects.",
+      "stable_id": "V20.CHI2.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_wy_readiness_matrix.json",
+        "docs/next_level/c29_bridge_capability_matrix.json"
+      ],
+      "requirement": "Retain the present source route as low-\\(q_T\\), leading-power, \\(W\\)-only.",
+      "stable_id": "V20.WY.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_wy_readiness_matrix.json",
+        "docs/next_level/c29_bridge_capability_matrix.json"
+      ],
+      "requirement": "Require exact fixed-order/asymptotic identity before issuing a source \\(W+Y\\) status.",
+      "stable_id": "V20.WY.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c28_wy_readiness_matrix.json",
+        "docs/next_level/c29_bridge_capability_matrix.json"
+      ],
+      "requirement": "Forbid combining the ART25 source \\(W\\) with the C23 analytic \\(Y\\).",
+      "stable_id": "V20.WY.3",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_operator_crosswalk.json",
+        "docs/next_level/c29_operator_bridge_capability.json"
+      ],
+      "requirement": "Match bridge candidates by complete operator identity, never by TMD name alone.",
+      "stable_id": "V20.OP.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_operator_crosswalk.json",
+        "docs/next_level/c29_operator_bridge_capability.json"
+      ],
+      "requirement": "Preserve quark, antiquark, gluon, rank, link, color, twist, and collinear-operator identity.",
+      "stable_id": "V20.OP.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_target_crosswalk.json",
+        "docs/next_level/c29_nuclear_bridge_scope.json"
+      ],
+      "requirement": "Distinguish proton, neutron, phenomenological deuterium, microscopic NN, and complete deuteron targets.",
+      "stable_id": "V20.TARGET.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_target_crosswalk.json",
+        "docs/next_level/c29_nuclear_bridge_scope.json"
+      ],
+      "requirement": "Forbid promotion of NN-only or phenomenological deuterium records to the complete microscopic deuteron.",
+      "stable_id": "V20.TARGET.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_scheme_scale_adapter_manifest.json",
+        "docs/next_level/c29_discrepancy_interface.json"
+      ],
+      "requirement": "Record external and microscopic UV, rapidity, soft, Fourier, mass, scale, and threshold conventions.",
+      "stable_id": "V20.SCHEME.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_scheme_scale_adapter_manifest.json",
+        "docs/next_level/c29_discrepancy_interface.json"
+      ],
+      "requirement": "Classify adapters as identical, exact, finite-order, validation-only, unresolved, or incompatible.",
+      "stable_id": "V20.SCHEME.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_scheme_scale_adapter_manifest.json",
+        "docs/next_level/c29_discrepancy_interface.json"
+      ],
+      "requirement": "Forbid scheme adapters from absorbing target, nuclear, large-\\(b\\), missing-order, or missing-\\(Y\\) differences.",
+      "stable_id": "V20.SCHEME.3",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_domain_intersection_manifest.json",
+        "docs/next_level/c29_frozen_bridge_grid.json"
+      ],
+      "requirement": "Freeze bridge points inside the exact common domain before comparison.",
+      "stable_id": "V20.DOMAIN.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_bridge_plan_manifest.json",
+        "docs/next_level/c29_bridge_observable_registry.json"
+      ],
+      "requirement": "Represent the external/microscopic relation as a typed span over a common operator base.",
+      "stable_id": "V20.BRIDGE.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_bridge_plan_manifest.json",
+        "docs/next_level/c29_bridge_observable_registry.json"
+      ],
+      "requirement": "Construct comparison fibers only after identity and domain gates close.",
+      "stable_id": "V20.BRIDGE.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_bridge_plan_manifest.json",
+        "docs/next_level/c29_bridge_observable_registry.json"
+      ],
+      "requirement": "Audit distribution-level quark, quark CS, DY one-leg, SIDIS target-leg, deuteron, gluon, and T-odd plans separately.",
+      "stable_id": "V20.BRIDGE.3",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_projection_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json"
+      ],
+      "requirement": "Push linear external covariance through \\cref{eq:linear-pushforward}.",
+      "stable_id": "V20.PROJ.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_projection_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json"
+      ],
+      "requirement": "Use exact memberwise evaluation for nonlinear projections where feasible.",
+      "stable_id": "V20.PROJ.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_external_bridge_projection_manifest.json",
+        "docs/next_level/c29_external_bridge_covariance_blocks.json"
+      ],
+      "requirement": "Preserve member order, covariance rank, null space, and deterministic reconstruction.",
+      "stable_id": "V20.PROJ.3",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_microscopic_bridge_export.json",
+        "docs/next_level/c29_microscopic_axis_manifest.json"
+      ],
+      "requirement": "Export microscopic predictions with Hamiltonian, resolution, Fock, Wilson, nuclear, matching, evolution, TTN, and numerical identities.",
+      "stable_id": "V20.MIC.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_microscopic_bridge_export.json",
+        "docs/next_level/c29_microscopic_axis_manifest.json"
+      ],
+      "requirement": "Keep microscopic assumption axes distinct from statistical/calibration members.",
+      "stable_id": "V20.MIC.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_microscopic_axis_manifest.json",
+        "docs/next_level/c14_tensor_network_manifest.json"
+      ],
+      "requirement": "Treat tensor-network bond dimension as a numerical/truncation axis with observable-specific convergence.",
+      "stable_id": "V20.TTN.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_cross_root_member_relation.json"
+      ],
+      "requirement": "Default the cross-root member relation to \\texttt{NO\\_JOINT\\_MEASURE}.",
+      "stable_id": "V20.REL.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_cross_root_member_relation.json"
+      ],
+      "requirement": "Forbid index pairing, covariance addition, Cartesian-product posterior claims, and marginal reshuffling across roots.",
+      "stable_id": "V20.REL.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_data_ancestry_graph.json",
+        "docs/next_level/c29_no_double_counting_contract.json"
+      ],
+      "requirement": "Attach all underlying ART25 datasets and point IDs to every external bridge object.",
+      "stable_id": "V20.ANCESTRY.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_data_ancestry_graph.json",
+        "docs/next_level/c29_no_double_counting_contract.json"
+      ],
+      "requirement": "Make compressed-constraint and direct-data plans mutually exclusive for shared ancestry.",
+      "stable_id": "V20.ANCESTRY.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_constraint_role_split.json",
+        "docs/next_level/c29_holdout_report.json"
+      ],
+      "requirement": "Freeze calibration-candidate, holdout-candidate, diagnostic, and unavailable roles before diagnostics.",
+      "stable_id": "V20.ROLE.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_constraint_role_split.json",
+        "docs/next_level/c29_holdout_report.json"
+      ],
+      "requirement": "Forbid moving failed holdouts into calibration candidates.",
+      "stable_id": "V20.ROLE.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_discrepancy_interface.json",
+        "docs/next_level/c29_discrepancy_availability_matrix.json"
+      ],
+      "requirement": "Type every bridge discrepancy by owner, domain, form, source, mean/covariance status, and zero justification.",
+      "stable_id": "V20.DISC.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_discrepancy_interface.json",
+        "docs/next_level/c29_discrepancy_availability_matrix.json"
+      ],
+      "requirement": "Preserve unknown discrepancy as nonzero-unknown; forbid ad hoc external-covariance inflation.",
+      "stable_id": "V20.DISC.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_compatibility_diagnostic_manifest.json",
+        "docs/next_level/c29_bridge_comparison_report.json"
+      ],
+      "requirement": "Report covariance rank, SVD threshold, whitened residual, and null-space residual.",
+      "stable_id": "V20.DIAG.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_compatibility_diagnostic_manifest.json",
+        "docs/next_level/c29_bridge_comparison_report.json"
+      ],
+      "requirement": "Forbid likelihood, p-value, posterior, optimization, reweighting, or emulator semantics in C29/B0.",
+      "stable_id": "V20.DIAG.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_bridge_plan_manifest.json",
+        "docs/next_level/c29_microscopic_axis_manifest.json"
+      ],
+      "requirement": "Preserve the assumption complex and explicit/induced equivalence-with-remainder relations.",
+      "stable_id": "V20.GEOM.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_bridge_plan_manifest.json",
+        "docs/next_level/c29_microscopic_axis_manifest.json"
+      ],
+      "requirement": "Forbid additive use of mutually exclusive microscopic plans.",
+      "stable_id": "V20.GEOM.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_future_inference_prerequisite_contract.json",
+        "docs/next_level/c29_no_double_counting_contract.json"
+      ],
+      "requirement": "Define a complete future inference prerequisite contract without creating an inference API.",
+      "stable_id": "V20.INF.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_future_inference_prerequisite_contract.json",
+        "docs/next_level/c29_no_double_counting_contract.json"
+      ],
+      "requirement": "Require parameter ownership, identifiability, discrepancy, no-double-counting, and frozen holdouts before calibration.",
+      "stable_id": "V20.INF.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_regression_report.json",
+        "docs/next_level/c29_provenance_separation_report.json"
+      ],
+      "requirement": "Keep all C7--C28 scientific artifacts, the 216-route registry, and eight authoritative artifacts unchanged.",
+      "stable_id": "V20.ISO.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_regression_report.json",
+        "docs/next_level/c29_provenance_separation_report.json"
+      ],
+      "requirement": "Keep raw transferred source files outside public Git absent permission.",
+      "stable_id": "V20.ISO.2",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    },
+    {
+      "evidence": [
+        "docs/next_level/c29_regression_report.json",
+        "docs/next_level/c29_external_bridge_projection_manifest.json"
+      ],
+      "requirement": "Require deterministic byte-identical manifests and content-addressed heavy outputs.",
+      "stable_id": "V20.DET.1",
+      "status": "COVERED_AT_DECLARED_C29_SCOPE",
+      "status_promotion_authorized": false
+    }
+  ],
+  "schema_version": "1.0.0",
+  "source_path": "references/volume_xx_source_reproducible_bridge_geometry.tex",
+  "source_sha256": "54cea4d69b1b85a787b083a0e384226a65c76ff93dd151a74ab0249aa4c13893",
+  "status_promotion_authorized": false
+}
