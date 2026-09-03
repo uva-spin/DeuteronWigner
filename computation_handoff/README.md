@@ -17,7 +17,10 @@ After every accepted phase or material scientific commit on `main`, update the
 published tree in the same publication cycle. Update
 `computation_handoff/repo/CURRENT_SOURCE_COMMIT.txt`, the relevant phase
 evidence, and the current repository handoff; refresh `REPO_CONTENTS.*` when
-the published inventory changes; then verify, commit, and push `main`.
+the published inventory changes; then verify, commit, and push `main`. If the
+public snapshot history is not fast-forwardable from the canonical checkout,
+use an authenticated GitHub Git Database/API commit based on the current
+public `main`; never force-push or rewrite the public branch.
 The source commit marker must identify the accepted source commit represented
 by the published handoff before it is described as current. A handoff-only
 publication commit may follow that source commit. The ZIP parts below are a
