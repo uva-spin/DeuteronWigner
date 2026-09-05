@@ -1,0 +1,76 @@
+{
+  "C396_derivative_claim": false,
+  "coordinate_id": "phi_mass",
+  "physical_derivative_claim": false,
+  "resolution": "K9",
+  "rows": [
+    {
+      "Hellmann_Feynman": 0.00025238787896762397,
+      "center_residual": 5.465492511860833e-10,
+      "central_finite_difference": 0.00025239182088743206,
+      "difference": -3.941919808094201e-09,
+      "minus_min_overlap": 0.9999999987160998,
+      "plus_min_overlap": 0.9999999987364379,
+      "same_state_verified": true,
+      "solver_tolerance": 1e-08,
+      "step": 0.001
+    },
+    {
+      "Hellmann_Feynman": 0.00025238787896762397,
+      "center_residual": 5.465492511860833e-10,
+      "central_finite_difference": 0.00025239522360998023,
+      "difference": -7.3446423562678435e-09,
+      "minus_min_overlap": 0.9999999999872533,
+      "plus_min_overlap": 0.9999999999872736,
+      "same_state_verified": true,
+      "solver_tolerance": 1e-08,
+      "step": 0.0001
+    },
+    {
+      "Hellmann_Feynman": 0.00025238787896762397,
+      "center_residual": 5.465492511860833e-10,
+      "central_finite_difference": 0.0002524389086655532,
+      "difference": -5.10296979292185e-08,
+      "minus_min_overlap": 0.9999999999998727,
+      "plus_min_overlap": 0.9999999999998727,
+      "same_state_verified": true,
+      "solver_tolerance": 1e-08,
+      "step": 1e-05
+    },
+    {
+      "Hellmann_Feynman": 0.00025238787896762397,
+      "center_residual": 5.465492511860833e-10,
+      "central_finite_difference": 0.00025239181838943026,
+      "difference": -3.939421806288795e-09,
+      "minus_min_overlap": 0.9999999987160991,
+      "plus_min_overlap": 0.9999999987364381,
+      "same_state_verified": true,
+      "solver_tolerance": 1e-09,
+      "step": 0.001
+    },
+    {
+      "Hellmann_Feynman": 0.00025238787896762397,
+      "center_residual": 5.465492511860833e-10,
+      "central_finite_difference": 0.00025239522360998023,
+      "difference": -7.3446423562678435e-09,
+      "minus_min_overlap": 0.9999999999872533,
+      "plus_min_overlap": 0.9999999999872736,
+      "same_state_verified": true,
+      "solver_tolerance": 1e-09,
+      "step": 0.0001
+    },
+    {
+      "Hellmann_Feynman": 0.00025238787896762397,
+      "center_residual": 5.465492511860833e-10,
+      "central_finite_difference": 0.0002524389086655532,
+      "difference": -5.10296979292185e-08,
+      "minus_min_overlap": 0.9999999999998727,
+      "plus_min_overlap": 0.9999999999998727,
+      "same_state_verified": true,
+      "solver_tolerance": 1e-09,
+      "step": 1e-05
+    }
+  ],
+  "schema": "C400-S2-C144-EIGENVALUE-DERIVATIVE-SCAN-V1",
+  "single_step_certification": false
+}

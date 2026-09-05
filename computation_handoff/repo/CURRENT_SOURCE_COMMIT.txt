@@ -1,12 +1,31 @@
-DeuteronWigner canonical source commit
+DeuteronWigner computation-handoff source state
+
+Refresh date: 2026-09-04
+Local snapshot status: PREPARED_FOR_REVIEW_NOT_COMMITTED_NOT_PUBLISHED
+
+Canonical checkout: /Users/dustin/work/DeuteronWigner
+Canonical branch: main
+Committed worktree base:
+7dad2691607e833c0c4718a02dc2047739ab8d41
+Preserve original theory archive and recover Volume XVI source
+
+The snapshot also includes reviewed post-base working-tree changes. These
+include the C411 exploratory first-C117 action, integrated Q0--Q2 source,
+generic exploratory operator bundle, M2 H0/basis-map and K9 invariant-
+projector work, and the fail-closed SU(3) state/current boundary. The committed
+base alone does not reproduce those files; review the snapshot manifests and
+CURRENT_PROJECT_HANDOFF.md together.
+
+Public GitHub main at refresh audit:
+4075976deab34f1360278c41c16faf972038c017
+Document public handoff publication fallback
+
+Historical C410 source marker retained for comparison:
 51d3919e4660f5709cc7bb94c576c8ec17c9de14
 Merge C410 C117 I2 retained aggregation boundary
 
-Source checkout: /Users/dustin/work/DeuteronWigner
-Source branch: main
-Published tree: computation_handoff/repo
-Published page: https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo
+Published page:
+https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo
 
-Update this marker after every accepted phase or material scientific commit
-on the canonical source main branch, together with the relevant evidence and
-the current repository handoff.
+Do not describe the public page as refreshed until this local snapshot is
+reviewed, committed, and published. Never force-push or rewrite public history.

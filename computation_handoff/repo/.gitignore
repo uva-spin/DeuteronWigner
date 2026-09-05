@@ -23,6 +23,27 @@ outputs/
 output/figures/
 output/pdf/*.log
 
+# This continuation snapshot carries only the five immutable public-authority
+# manifests required to execute the integrated Q0/Q1 contract. Keep every
+# other generated runtime product excluded.
+!data/runtime/
+data/runtime/*
+!data/runtime/c131_hqcd4/
+data/runtime/c131_hqcd4/*
+!data/runtime/c131_hqcd4/manifest.json
+!data/runtime/c142_hqcdfield/
+data/runtime/c142_hqcdfield/*
+!data/runtime/c142_hqcdfield/manifest.json
+!data/runtime/c144_hqcdopapi/
+data/runtime/c144_hqcdopapi/*
+!data/runtime/c144_hqcdopapi/manifest.json
+!data/runtime/c149_hqcdmproj/
+data/runtime/c149_hqcdmproj/*
+!data/runtime/c149_hqcdmproj/manifest.json
+!data/runtime/c150_hqcdzqmass/
+data/runtime/c150_hqcdzqmass/*
+!data/runtime/c150_hqcdzqmass/manifest.json
+
 # Do not publish downloaded literature or private scientific correspondence.
 # Keep citations, checksums, and reproducible acquisition instructions in the
 # tracked notes instead.

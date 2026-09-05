@@ -1,9 +1,11 @@
 # DeuteronWigner computation repository snapshot
 
-This directory is a public, reproducible continuation snapshot assembled from
-the canonical `/Users/dustin/work/DeuteronWigner` checkout. The current source
-commit is recorded in `CURRENT_SOURCE_COMMIT.txt`; the C401-C410 continuation
-summary is in `C401_C410_REPOSITORY_HANDOFF.md`.
+This directory is a reproducible continuation snapshot assembled from the
+canonical `/Users/dustin/work/DeuteronWigner` checkout. The 2026-09-04 local
+refresh is prepared for review but is not yet committed or published. Read
+`SNAPSHOT_UPDATE_2026-09-04.md` first. Its source-state boundary is recorded in
+`CURRENT_SOURCE_COMMIT.txt`; the C401--C410 summary remains as historical
+evidence in `C401_C410_REPOSITORY_HANDOFF.md`.
 
 The historical archive material in this snapshot was originally assembled on
 2026-08-28. The live continuation tree is maintained against accepted `main`
@@ -12,10 +14,11 @@ commit.
 
 ## Contents
 
-- The project source tree at the accepted source commit recorded in
-  `CURRENT_SOURCE_COMMIT.txt`.
-- The current tracked working-tree state plus the explicitly present
-  untracked code, tests, reports, and documentation from the root checkout.
+- The current source, scripts, tests, documentation, references, handoff,
+  tooling, and validation trees from the canonical checkout.
+- The committed worktree base and the explicitly identified reviewed post-base
+  working-tree science recorded in `CURRENT_SOURCE_COMMIT.txt`.
+- Root-level current handoff and roadmap copies for immediate review.
 - Clean source snapshots of `q0/plhqcd0`, `q1/plhqcdstate`, and
   `q2/plhqcdobs` under `branches/`.
 - A complete all-ref Git history in `history/`, split into files below the

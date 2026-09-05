@@ -1,0 +1,61 @@
+{
+  "GeV_extraction": [
+    {
+      "imag": 0.0,
+      "real": 0.7
+    },
+    {
+      "imag": 0.0,
+      "real": 1.3
+    },
+    {
+      "imag": 0.0,
+      "real": 12.0
+    }
+  ],
+  "LPS_current_matrix_units": "same units as declared mass_units",
+  "MeV_extraction": [
+    {
+      "imag": 0.0,
+      "real": 0.7
+    },
+    {
+      "imag": 0.0,
+      "real": 1.3
+    },
+    {
+      "imag": 0.0,
+      "real": 12.0
+    }
+  ],
+  "expected_GC_GM_GQ": [
+    0.7,
+    1.3,
+    12.0
+  ],
+  "fm_inverse_extraction": [
+    {
+      "imag": 0.0,
+      "real": 0.7000000000000002
+    },
+    {
+      "imag": 0.0,
+      "real": 1.3
+    },
+    {
+      "imag": 0.0,
+      "real": 11.999999999999996
+    }
+  ],
+  "pass": true,
+  "physical_current_claim": false,
+  "production_current_selected": false,
+  "rejections": {
+    "noncanonical_spin_order": true,
+    "noncanonical_spin_phase": true,
+    "nonfinite_current": true
+  },
+  "schema": "C400-S2M-CURRENT-ADAPTER-SEMANTICS-V1",
+  "status": "DIMENSIONAL_LPS_CURRENT_UNITS_AND_FIXED_SPIN_BASIS_VERIFIED",
+  "unit_invariant": true
+}

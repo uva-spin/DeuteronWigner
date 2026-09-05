@@ -1,0 +1,12 @@
+{
+  "schema": "C400-S2M-LIVE-INTEGRATION-REPLACEMENT-COMPARISON-V1",
+  "replacement_files_declared": 13,
+  "byte_identical": 12,
+  "mismatches": 1,
+  "mismatch": {
+    "path": "docs/phases/c400_s2_merge_closure/generation_result.json",
+    "reason": "generator refreshes started_at_utc and finished_at_utc; generated content and acceptance fields remain passing"
+  },
+  "manual_reconciliation": false,
+  "scientific_behavior_changed": false
+}

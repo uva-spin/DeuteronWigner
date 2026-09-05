@@ -1,0 +1,23 @@
+{
+  "schema": "C400-S2M2-LIVE-INTEGRATION-BLOCKER-COMPLETION-V1",
+  "status": "S2M2_LOCAL_INTEGRATION_ACCEPTANCE_COMPLETE_STAGING_BLOCKED",
+  "acceptance_pass": true,
+  "s2_regeneration_pass": true,
+  "s2m_regeneration_pass": true,
+  "focused_tests_pass": true,
+  "freshness_hash_pass": true,
+  "staged": false,
+  "commit_created": false,
+  "staging_blocker": "Git linked worktree index.lock creation denied by managed sandbox; AGENTS.md also prohibits commits",
+  "merge_performed": false,
+  "push_performed": false,
+  "remaining_external_gaps": [
+    "data/runtime/c64_qgtm2/index.json is absent and was not generated or substituted"
+  ],
+  "next_owner": "USER_CHATGPT",
+  "user_next_commands": [
+    "Run the exact staging command recorded in staging_record.json in an ordinary terminal.",
+    "Run git diff --cached --check and git diff --cached --stat.",
+    "Review and create the local commit only if desired; do not merge or push automatically."
+  ]
+}

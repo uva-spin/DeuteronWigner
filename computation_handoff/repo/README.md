@@ -2,29 +2,37 @@
 
 ## Current continuation handoff
 
-This published tree is maintained from the canonical checkout at
-`/Users/dustin/work/DeuteronWigner`. The public continuation page is:
+This directory is the review and publication snapshot maintained from the
+canonical checkout at `/Users/dustin/work/DeuteronWigner`. The public page is:
 
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>
 
-Read `C401_C410_REPOSITORY_HANDOFF.md` first for the accepted C401-C410
-scientific progression, numerical frontier, C410 aggregate, and exact
-normalization blocker. `CURRENT_SOURCE_COMMIT.txt` identifies the source
-commit represented by this handoff view.
+The 2026-09-04 local refresh is prepared for review and is not public until it
+is committed and pushed. Start here:
 
-After every accepted phase or material scientific commit on the canonical
-`main`, this tree must be refreshed in the same publication cycle. Update the
-source-commit marker, phase evidence, and current handoff; refresh
-`REPO_CONTENTS.*` when the inventory changes; verify, commit, and push. Do not
-If ordinary Git push cannot fast-forward because the public branch is a
-published snapshot with a different history, use an authenticated GitHub Git
-Database/API commit based on the current public `main`; never force-push or
-rewrite the public branch. Do not
-describe this tree as current unless its source marker identifies the accepted
-source commit represented by the published tree. A handoff-only publication
-commit may follow it. Preserve unavailable-versus-zero,
-source-shape-versus-coefficient, and numerical-path-versus-physical-rank
-distinctions.
+1. `SNAPSHOT_UPDATE_2026-09-04.md` — exact refresh scope, backup, status delta,
+   and formal-volume decision.
+2. `CURRENT_PROJECT_HANDOFF.md` — complete human and agent pickup state.
+3. `ROADMAP.md` — current M0--M7 completion path and historical chronology.
+4. `references/DeuteronWigner_complete_theory_note_current.tex` — living
+   mathematical and physics authority.
+5. `references/DeuteronWigner_theory_state_current.json` — synchronized
+   machine-readable status index.
+6. `C401_C410_REPOSITORY_HANDOFF.md` — retained historical C401--C410 record;
+   it is no longer the current continuation note.
+
+`CURRENT_SOURCE_COMMIT.txt` distinguishes the committed worktree base from
+the reviewed post-base working state represented here. The large historical
+branch, all-ref-history, controller, archive, data, and output payloads remain
+unchanged. The prior review-facing surface is preserved in the checksummed
+backup documented at
+`../backups/2026-09-04_pre_current_refresh/README.md`.
+
+Never force-push or rewrite the public branch. If ordinary Git publication is
+not fast-forwardable, use a reviewed fast-forward GitHub Git Database/API
+commit based on the current public `main`. Preserve unavailable-versus-zero,
+source-shape-versus-coefficient, exploratory-versus-physical, and numerical-
+path-versus-physical-rank distinctions.
 
 **DeuteronWigner constructs the complete leading-twist quark and gluon TMD
 content of a spin-1 deuteron while preserving flavor, constituent, spin,

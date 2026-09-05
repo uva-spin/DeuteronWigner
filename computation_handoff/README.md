@@ -1,10 +1,13 @@
 # DeuteronWigner Computation Handoff
 
-The live public continuation handoff is
+The public continuation handoff is
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
-The canonical source checkout is `/Users/dustin/work/DeuteronWigner`; this
-bundle is its published continuation view and must track the accepted `main`
-commit.
+The canonical source checkout is `/Users/dustin/work/DeuteronWigner`.
+
+The local `repo/` directory was refreshed on 2026-09-04 and is prepared for
+review, but it is not yet committed or published. Its reading entry point is
+`repo/SNAPSHOT_UPDATE_2026-09-04.md`. The public page still carries the older
+C410-era snapshot until this local refresh is reviewed, committed, and pushed.
 
 This directory contains the project handoff bundle for independent technical
 review and continued development. It is
@@ -14,7 +17,8 @@ replaced.
 ## Synchronization rule
 
 After every accepted phase or material scientific commit on `main`, update the
-published tree in the same publication cycle. Update
+local review tree and, after review, the published tree in the same publication
+cycle. Update
 `computation_handoff/repo/CURRENT_SOURCE_COMMIT.txt`, the relevant phase
 evidence, and the current repository handoff; refresh `REPO_CONTENTS.*` when
 the published inventory changes; then verify, commit, and push `main`. If the
@@ -52,10 +56,11 @@ integrity), run:
 The verifier requires all six expected parts, checks their documented
 SHA-256, tests the assembled ZIP, and removes its temporary output on exit.
 
-The reconstructed ZIP is about 244 MiB and contains the current project
-source, tests, scripts, references, handoff materials, validation evidence,
+The reconstructed ZIP is about 244 MiB and contains the historical 2026-08-28
+project source, tests, scripts, references, handoff materials, validation evidence,
 tracked data/output, the frozen Q0/Q1 backend worktrees, and MSHT20 metadata.
-Local environments, caches, generated bulk data, and the roughly 845 MB raw
+It is a recovery artifact, not the current review state. Local environments,
+caches, generated bulk data, and the roughly 845 MB raw
 MSHT20 replica grid are excluded. See `COMPUTATION_HANDOFF_INDEX.md` inside this
 directory and inside the reconstructed ZIP for the reading order and scope
 boundaries.

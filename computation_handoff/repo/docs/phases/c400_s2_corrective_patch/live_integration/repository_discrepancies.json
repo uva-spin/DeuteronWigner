@@ -1,0 +1,25 @@
+{
+  "schema": "C400-S2-LIVE-INTEGRATION-REPOSITORY-DISCREPANCIES-V1",
+  "out_of_scope_unreviewed_changes_before_s2": [],
+  "preexisting_worktree_surface": [
+    "C400 P1/P1B/P1C files and evidence were already untracked in the isolated phase worktree",
+    "C400_P1B_autonomous_blocker_reduction.zip was preexisting C400 P1B evidence",
+    "c400_p1c_self_contained_replay_with_implementation_report.zip was the prior user-requested P1C handoff"
+  ],
+  "new_s2_scope": "exactly the supplied 17-path corrective patch plus generated S2 evidence and live-integration records",
+  "tracked_git_diff_stat": "empty because the phase surfaces are untracked in the frozen baseline worktree",
+  "diff_check": "PASS",
+  "compile_discrepancy": {
+    "default_compile_exit_code": 1,
+    "default_compile_exception": "PermissionError writing macOS Python cache under /Users/dustin/Library/Caches/com.apple.python",
+    "writable_cache_compile_exit_code": 0,
+    "writable_cache_prefix": "/tmp/c400_s2_pycache"
+  },
+  "external_dependency_discrepancy": {
+    "status": "STRICT_EXTERNAL_ARTIFACT_GAP",
+    "exact_missing_object": "data/runtime/c64_qgtm2/index.json",
+    "attempted_route": "normal relevant upstream tests and full local pytest profile",
+    "substitution_or_regeneration": false,
+    "loader_policy": "read-only import must not regenerate it"
+  }
+}

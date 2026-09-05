@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "phase": "C400.S2M_MERGE_CLOSURE",
+  "purpose": "Make the accepted C400.S2 corrective layer dependency-closed on the tracked repository baseline and prevent projected Ritz vectors from being described as verified sector eigenstates.",
+  "required_test_command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m pytest -q tests/test_c400_s2_corrective.py",
+  "expected_passed": 22,
+  "expected_failed": 0,
+  "required_compile_command": "PYTHONPATH=src python -m compileall -q src/deuteron_wigner/bridge/c400_s2_corrective tools/generate_c400_s2_corrective.py tools/generate_c400_s2_merge_closure.py tests/test_c400_s2_corrective.py",
+  "required_generator_command": "PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python tools/generate_c400_s2_merge_closure.py",
+  "required_invariants": {
+    "S2_current_adapter_local_to_S2_package": true,
+    "S2_import_dependency_on_unmerged_P1_P1B_P1C": false,
+    "projector_membership_alone_implies_verified_sector_eigenpair": false,
+    "Hamiltonian_invariance_required_for_projected_sector_eigenpair": true,
+    "full_space_eigenresidual_required_for_projected_sector_eigenpair": true,
+    "C396_forward_map_ready": false,
+    "physical_fit_authorized": false,
+    "physical_rank": null
+  },
+  "forbidden_changes": [
+    "rewrite historical C398/C399 or P1/P1B/P1C evidence",
+    "replace missing C396 operators with C144 fixtures",
+    "select a production current",
+    "select, zero, or fit Hamiltonian coordinates",
+    "claim physical rank, physical state, or activation",
+    "merge or push without user approval"
+  ]
+}

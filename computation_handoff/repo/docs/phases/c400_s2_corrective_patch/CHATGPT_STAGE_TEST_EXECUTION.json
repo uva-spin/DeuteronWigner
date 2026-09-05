@@ -1,0 +1,32 @@
+{
+  "commands": [
+    {
+      "collected": 43,
+      "command": "PYTHONPATH=src pytest -q tests/test_c400_p1_mechanical_closure.py tests/test_c400_p1b_autonomous.py tests/test_c400_p1c.py tests/test_c400_s2_corrective.py",
+      "elapsed_seconds": 24.03,
+      "exit_code": 0,
+      "failed": 0,
+      "passed": 43,
+      "validation_context": "final ChatGPT patch tree after deterministic replay-message and generator self-exclusion fixes",
+      "warnings": "0 shown in final focused run"
+    },
+    {
+      "command": "PYTHONPATH=src python -m compileall -q src/deuteron_wigner/bridge/c400_s2_corrective tools/generate_c400_s2_corrective.py tests/test_c400_s2_corrective.py",
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "platform": "Linux review container",
+    "pytest": "9.0.2",
+    "python": "3.13.5",
+    "thread_limits": {
+      "MKL_NUM_THREADS": 1,
+      "OMP_NUM_THREADS": 1,
+      "OPENBLAS_NUM_THREADS": 1
+    }
+  },
+  "live_repository_full_suite_claim": false,
+  "physical_validation_claim": false,
+  "schema": "C400-S2-TEST-EXECUTION-V1"
+}

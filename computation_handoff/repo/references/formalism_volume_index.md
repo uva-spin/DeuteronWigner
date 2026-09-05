@@ -118,7 +118,8 @@ byte-for-byte from the supplied sources.
 | XIII | `volume_xiii_nnpi_pion_matching_coherent_nuclear.tex` | `59767d330b55cfff552b34979692cdb43720c978c75e07d5f4ca896f940e8fb9` | present |
 | XIV | `volume_xiv_continuum_nnpi_exchange_currents.tex` | `cb30d603948c6b14cbeaa0fbb332396e86c62c6ab76eeb116161e7eaa3c58d0d` | present |
 | XV | `volume_xv_delta_delta_six_quark_hidden_color.tex` | `675cc27dfe4548e6e49d4ba7d1c093dc235003aaa8f1b77d4e4ef2829246b4cc` | present |
-| XVI | `volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf` | `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2` | present (authoritative PDF) |
+| XVI source | `volume_xvi_scheme_qualified_tmds_resolved_evolution.tex` | `d3bf3a8621b74686b4c52a2a2e332a14119ebc8403cc80eaf8d6ec99e6856dea` | present (recovered from original 22-volume source archive) |
+| XVI render | `volume_xvi_scheme_qualified_tmds_resolved_evolution.pdf` | `bc3e38b1ddba37b9375d1dc50eaa6ad0e91f6732270b983d5b296024fa6d5aa2` | present (authoritative historical PDF) |
 | XVII | `volume_xvii_process_qualified_tmd_observables.tex` | `dae315b3feb198fc85cddb2243fc5b9e99f9d9c8b1579908c30b0cfcde4ae9af` | present |
 | XVIII | `volume_xviii_smallb_ope_collinear_mixing.tex` | `ee5a103b28ebc216649a910618a455a85fc895d00fe74cb39630568a14508ed3` | present |
 | XIX | `volume_xix_source_qualified_process_inputs.tex` | `8b4e2d1dfd187f462d61d0134dbeae2bac8b3377cf315f733f63147ecac91596` | present |
@@ -154,7 +155,9 @@ four-branch convergence contracts implemented and validated by C18/N3.
 Volume XVI defines the post-M1 scheme-qualified microscopic TMD ensemble,
 physical anomalous-dimension and Collins-Soper-kernel boundary, common
 multi-Q rank-aware transport, resolved nuclear evolution, process-readiness
-certificates, and accuracy manifests. It is supplied as an authoritative PDF.
+certificates, and accuracy manifests. Its TeX source is restored from the
+project owner's original theory archive, while the pre-existing PDF remains
+the authoritative historical render.
 Volume XVII defines the post-M2 process-qualified observable/compiler
 boundary: distinct Drell--Yan, current-fragmentation SIDIS, inclusive
 \(b_1\), tagged target-fragmentation DIS, and selected gluon-sensitive

@@ -1,0 +1,170 @@
+{
+  "comparison": {
+    "absolute_differences": {
+      "GC": 0.0,
+      "GM": 2.220446049250313e-16,
+      "GQ": 1.7763568394002505e-15
+    },
+    "comparison_basis": "COMMON_INVARIANT_Q2_MASS_STATE_AND_CANONICAL_GC_GM_GQ",
+    "covariance_bound": false,
+    "differences": {
+      "GC": {
+        "imag": 0.0,
+        "real": 0.0
+      },
+      "GM": {
+        "imag": 0.0,
+        "real": -2.220446049250313e-16
+      },
+      "GQ": {
+        "imag": 0.0,
+        "real": 1.7763568394002505e-15
+      }
+    },
+    "first": {
+      "GC": {
+        "imag": 0.0,
+        "real": 0.7
+      },
+      "GM": {
+        "imag": 0.0,
+        "real": 1.2999999999999998
+      },
+      "GQ": {
+        "imag": 0.0,
+        "real": 12.000000000000002
+      },
+      "canonical_normalization": "C400_CANONICAL_DIMENSIONLESS_GC_GM_GQ",
+      "canonicalization_authority": "identity on the named dimensionless GC/GM/GQ outputs of lf_current.extract_form_factors and covariant_current.extract_lps_form_factors",
+      "deuteron_mass_GeV": 1.8756,
+      "physical_current_claim": false,
+      "q2_GeV2": 0.16000000000000003,
+      "route": "LIGHT_FRONT_PLUS_CURRENT",
+      "route_conventions": {
+        "amplitude_normalization": "I=J+/(2P+)",
+        "current_component": "J+",
+        "extraction_prescription": "omit_I00",
+        "form_factor_normalization": "GC,GM,GQ Carlson-Ji spin-1 normalization",
+        "frame": "Drell-Yan q+=0",
+        "interaction_current_policy": "EXPLICIT_CALLER_BOUND",
+        "zero_mode_policy": "EXPLICIT_CALLER_BOUND"
+      },
+      "route_normalization": "GC,GM,GQ Carlson-Ji spin-1 normalization",
+      "state_id": "C400-S2-SAME-STATE"
+    },
+    "first_angular_condition_residual": {
+      "imag": 0.0,
+      "real": 1.1102230246251565e-16
+    },
+    "first_prescription_spread": {
+      "omit_I++": [
+        {
+          "imag": 0.0,
+          "real": 0.6999999999999997
+        },
+        {
+          "imag": 0.0,
+          "real": 1.2999999999999998
+        },
+        {
+          "imag": 0.0,
+          "real": 12.0
+        }
+      ],
+      "omit_I+-": [
+        {
+          "imag": 0.0,
+          "real": 0.7
+        },
+        {
+          "imag": 0.0,
+          "real": 1.2999999999999998
+        },
+        {
+          "imag": 0.0,
+          "real": 12.000000000000004
+        }
+      ],
+      "omit_I+0": [
+        {
+          "imag": 0.0,
+          "real": 0.7
+        },
+        {
+          "imag": 0.0,
+          "real": 1.2999999999999974
+        },
+        {
+          "imag": 0.0,
+          "real": 12.000000000000002
+        }
+      ],
+      "omit_I00": [
+        {
+          "imag": 0.0,
+          "real": 0.7
+        },
+        {
+          "imag": 0.0,
+          "real": 1.2999999999999998
+        },
+        {
+          "imag": 0.0,
+          "real": 12.000000000000002
+        }
+      ]
+    },
+    "incomparability_reasons": [],
+    "physical_agreement_claim": false,
+    "production_current_selected": false,
+    "relative_differences": {
+      "GC": 0.0,
+      "GM": 1.7080354225002407e-16,
+      "GQ": 1.480297366166875e-16
+    },
+    "route_local_extraction_passed": true,
+    "second": {
+      "GC": {
+        "imag": 0.0,
+        "real": 0.7
+      },
+      "GM": {
+        "imag": 0.0,
+        "real": 1.3
+      },
+      "GQ": {
+        "imag": 0.0,
+        "real": 12.0
+      },
+      "canonical_normalization": "C400_CANONICAL_DIMENSIONLESS_GC_GM_GQ",
+      "canonicalization_authority": "identity on the named dimensionless GC/GM/GQ outputs of lf_current.extract_form_factors and covariant_current.extract_lps_form_factors",
+      "deuteron_mass_GeV": 1.8756,
+      "physical_current_claim": false,
+      "q2_GeV2": 0.16000000000000003,
+      "route": "COVARIANT_LPS_LONGITUDINAL_BREIT",
+      "route_conventions": {
+        "amplitude_normalization": "LPS unnormalized free current",
+        "current_component": "J+/-/Jx",
+        "extraction_prescription": "LPS_EQ21",
+        "form_factor_normalization": "GC,GM,GQ LPS Eq.21 normalization",
+        "frame": "longitudinal Breit",
+        "interaction_current_policy": "EXPLICIT_CALLER_BOUND",
+        "zero_mode_policy": "EXPLICIT_CALLER_BOUND"
+      },
+      "route_normalization": "GC,GM,GQ LPS Eq.21 normalization",
+      "state_id": "C400-S2-SAME-STATE"
+    },
+    "second_angular_condition_residual": null,
+    "second_prescription_spread": {},
+    "status": "CANONICAL_OBSERVABLE_COMPARISON"
+  },
+  "covariance_bound": false,
+  "expected": [
+    0.7,
+    1.3,
+    12.0
+  ],
+  "physical_agreement_claim": false,
+  "production_current_selected": false,
+  "schema": "C400-S2-CANONICAL-CURRENT-COMPARISON-FIXTURE-V1"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "C400-S2-LIVE-INTEGRATION-SCIENTIFIC-NONCLAIMS-V1",
+  "physical_fit": false,
+  "physical_rank": null,
+  "production_current_selected": false,
+  "resolution_average": false,
+  "hamiltonian_activated": false,
+  "historical_p1_p1b_p1c_rewritten": false,
+  "C144_fixture_substituted_for_C396": false,
+  "C396_forward_map_ready": false,
+  "sector_identity_verified_without_projector": false,
+  "coordinate_zeroing_or_minimum_norm": false,
+  "coordinate_irrelevance_claim": false,
+  "next_phase_launched": false,
+  "nonclaims": [
+    "C144 diagnostic derivative integrity is not a C396 derivative or physical-rank result.",
+    "An unprojected C144 eigenpair is not a physical deuteron-sector state.",
+    "eta_3 through eta_8 are numerically unbound in the C144 fixture API, not physically irrelevant.",
+    "The relevant/full regression C64 failures are not converted into passes."
+  ]
+}

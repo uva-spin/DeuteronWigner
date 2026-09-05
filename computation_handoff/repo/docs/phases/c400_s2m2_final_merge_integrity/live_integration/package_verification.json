@@ -1,0 +1,21 @@
+{
+  "schema": "C400-S2M2-LIVE-INTEGRATION-PACKAGE-VERIFICATION-V1",
+  "package_id": "C400.S2M2_FINAL_MERGE_INTEGRITY",
+  "manifest_entries": 16,
+  "status": "PASS",
+  "patch_sha256": "636a9e4640ee40f9e927018358eafd467ebee4c28c41a9fae5dd39495c6d47c5",
+  "replacement_files": {
+    "src/deuteron_wigner/bridge/c400_s2_corrective/current_adapter.py": {
+      "bytes": 22733,
+      "sha256": "2ca50d2544f929dff1e106552abe4f8aecc2aef9200ec89735f6a66575f11147"
+    },
+    "tests/test_c400_s2_corrective.py": {
+      "bytes": 21480,
+      "sha256": "81500d6f2ad3c3c330daa7c1ad86f8dbea32308851841cf6fcb5cbe038def8e8"
+    },
+    "tools/generate_c400_s2_merge_closure.py": {
+      "bytes": 13089,
+      "sha256": "a2ed4817cb47399e262d989f9103fb1093a9154845a8f7fc621157e1674778f8"
+    }
+  }
+}

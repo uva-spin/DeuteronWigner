@@ -1,57 +1,74 @@
 # Computation Handoff Index
 
-Generated 2026-09-02 to support independent technical review and continued
-development. The live continuation tree is
+Updated 2026-09-04 to support independent technical review and continued
+development. The public continuation tree is
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
-Its `CURRENT_SOURCE_COMMIT.txt` must identify the accepted `main` commit.
+The local `repo/` refresh is prepared for review but is not yet committed or
+published; its `CURRENT_SOURCE_COMMIT.txt` records that distinction.
 
 ## Recommended reading order
 
-1. `README.md` — project purpose, scientific scope, installation, and layout.
-2. `handoff/README.md` — durable handoff orientation and governing principles.
-3. `handoff/project_context.md` — architecture, normalization anchors, and
+1. `repo/SNAPSHOT_UPDATE_2026-09-04.md` — refresh scope, backup, scientific
+   progression, volume audit, and publication boundary.
+2. `repo/CURRENT_PROJECT_HANDOFF.md` — current state, evidence, open scientific
+   boundaries, and immediate pickup point.
+3. `repo/ROADMAP.md` — governing route to completion and historical execution
+   record.
+4. `repo/references/DeuteronWigner_complete_theory_note_current.tex` — living
+   high-level mathematical and physical account.
+5. `repo/references/DeuteronWigner_theory_state_current.json` — machine-readable
+   mirror of the theory state and provenance.
+6. `repo/README.md` — snapshot layout and immutable-history payload.
+7. `repo/handoff/README.md` — durable handoff orientation and governing principles.
+8. `repo/handoff/project_context.md` — architecture, normalization anchors, and
    acceptance expectations.
-4. `handoff/ROADMAP.md` — authoritative execution queue and current blocker/
-   continuation history. The working-tree version is included, including its
-   current unstaged modifications.
-5. `handoff/quantum_backend_q0_q2_freeze.md` — frozen Q0/Q1/Q2 boundary and
-   nonclaims. Q2's separate worktree is not present in this workspace.
-6. `pyproject.toml`, `environment.yml`, and `references/` — runtime and
+9. `repo/handoff/quantum_backend_q0_q2_freeze.md` — frozen Q0/Q1/Q2 boundary and
+   nonclaims; clean Q0/Q1/Q2 source snapshots are also retained under
+   `repo/branches/`.
+10. `repo/pyproject.toml`, environment declarations, and `repo/references/` — runtime and
    scientific provenance details.
-7. `docs/next_level/` — machine-readable contracts, manifests, audits,
+11. `repo/docs/next_level/` — machine-readable contracts, manifests, audits,
    implementation reports, prompts, and validation evidence.
-8. `C401_C410_REPOSITORY_HANDOFF.md` — current C401-C410 scientific,
+12. `repo/C401_C410_REPOSITORY_HANDOFF.md` — historical C401--C410 scientific,
    numerical-frontier, normalization, and continuation handoff.
 
-## Archive scope
+## Local refreshed-repository scope
 
-The archive contains:
+The local `repo/` review candidate contains:
 
-- the current root checkout's Git-tracked source, tests, scripts, references,
-  validation manifests, project documentation, tracked data, and selected
-  tracked output artifacts;
-- current root handoff additions and the current untracked C157 validation
-  test and progress/evidence documents;
-- the tracked contents of `deuteron_wigner_q0_plhqcd0/` and
-  `deuteron_wigner_q1_plhqcdstate/`, preserving their frozen backend source,
-  tests, reports, prompts, and acceptance records;
+- synchronized current source, tests, scripts, references, handoff material,
+  validation manifests, tools, project documentation, and environment/package
+  declarations from the canonical checkout;
+- the current C411, integrated Q0--Q2, exploratory operator-bundle, and M2
+  state/current-boundary code, contracts, reports, and tests;
+- clean historical source snapshots of Q0, Q1, and Q2 under `repo/branches/`;
+- the immutable all-ref history bundle, old archive payloads, worktree-state
+  records, and sanitized YOLO history retained from the earlier snapshot;
 - `MSHT20_REP/MSHT20_REP.info`, the metadata for the locally transferred
   replica source explicitly referenced by the project and its handoff records;
 - `PennyLaneBackend/requirements.txt` and its `.gitignore` (the directory has
   no backend source outside its local virtual environment);
-- this index and the root `Deuteron_GTMD.pdf` project document.
+- the root `Deuteron_GTMD.pdf` project document.
 
-The current accepted root checkout is on branch `main` at commit
-`51d3919e4660f5709cc7bb94c576c8ec17c9de14` (`Merge C410 C117 I2 retained
-aggregation boundary`) with remote
-`https://github.com/uva-spin/DeuteronWigner.git`. The archive captures the
-working tree as found; it does not imply that the working tree was clean.
+The local refreshed snapshot has committed worktree base
+`7dad2691607e833c0c4718a02dc2047739ab8d41` and also captures documented,
+reviewed post-base working-tree science. Public GitHub `main` was
+`4075976deab34f1360278c41c16faf972038c017` at the refresh audit, and the
+public snapshot still identified the older C410 merge
+`51d3919e4660f5709cc7bb94c576c8ec17c9de14`. See the refresh note and source
+marker before describing either state as current.
 
-After every accepted commit on `main`, refresh the published tree, update its
-source-commit marker and handoff evidence, refresh contents/checksum manifests
-when needed, verify, commit, and push. The marker identifies the accepted
-source commit represented by the published tree; a handoff-only publication
-commit may follow it. A stale marker means the public handoff is not current.
+After every accepted commit on `main`, refresh the local review tree and its
+source-state marker, handoff evidence, and content/checksum manifests. Verify
+and review that candidate before committing and publishing it. The marker must
+distinguish a clean committed base from any included post-base working-tree
+state. A stale marker means the public handoff is not current.
+
+## Historical ZIP scope
+
+The six-part ZIP documented in `README.md` is a separate 2026-08-28 recovery
+artifact. It was not regenerated by the 2026-09-04 repository refresh and must
+not be used as the current project state.
 
 ## Deliberate exclusions
 

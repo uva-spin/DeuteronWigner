@@ -1,0 +1,98 @@
+{
+  "command": [
+    "PYTHONPATH=src",
+    "python3",
+    "tools/generate_c400_s2_corrective.py"
+  ],
+  "dependency_candidate": {
+    "candidate_paths": [
+      "data/raw/c293_sources_hep-th-0101072.pdf"
+    ],
+    "exception_type": "FileNotFoundError",
+    "first_missing_path": "data/raw/c293_sources_hep-th-0101072.pdf",
+    "hardcoded_substitution_used": false,
+    "message": "[Errno 2] No such file or directory: '<REPOSITORY_ROOT>/data/raw/c293_sources_hep-th-0101072.pdf'",
+    "source": "caught exception; no hard-coded dependency substitution",
+    "status": "ACTUAL_EXCEPTION_RECORDED"
+  },
+  "dependency_match": true,
+  "dependency_reference": {
+    "candidate_paths": [
+      "data/raw/c293_sources_hep-th-0101072.pdf"
+    ],
+    "exception_type": "FileNotFoundError",
+    "first_missing_path": "data/raw/c293_sources_hep-th-0101072.pdf",
+    "hardcoded_substitution_used": false,
+    "message": "[Errno 2] No such file or directory: '<REPOSITORY_ROOT>/data/raw/c293_sources_hep-th-0101072.pdf'",
+    "source": "caught exception; no hard-coded dependency substitution",
+    "status": "ACTUAL_EXCEPTION_RECORDED"
+  },
+  "eigensystem": {
+    "candidate_count": 2,
+    "clusters": [
+      {
+        "candidate_eigenvalues": [
+          0.5751850941396732
+        ],
+        "indices": [
+          0
+        ],
+        "maximum_eigenvalue_difference": 0.0,
+        "pass_eigenvalues": true,
+        "pass_subspace": true,
+        "principal_angles_rad": [
+          0.0
+        ],
+        "projector_frobenius_distance": 2.220454536107179e-16,
+        "reference_eigenvalues": [
+          0.5751850941396732
+        ],
+        "singleton_overlap": 1.0,
+        "singular_values": [
+          1.0
+        ]
+      },
+      {
+        "candidate_eigenvalues": [
+          0.7256821530995774
+        ],
+        "indices": [
+          1
+        ],
+        "maximum_eigenvalue_difference": 0.0,
+        "pass_eigenvalues": true,
+        "pass_subspace": true,
+        "principal_angles_rad": [
+          0.0
+        ],
+        "projector_frobenius_distance": 2.220988084178258e-16,
+        "reference_eigenvalues": [
+          0.7256821530995774
+        ],
+        "singleton_overlap": 1.0,
+        "singular_values": [
+          1.0
+        ]
+      }
+    ],
+    "maximum_candidate_residual": 2.448489644160846e-09,
+    "maximum_reference_residual": 2.448489644160846e-09,
+    "pass_all": true,
+    "physical_state_claim": false,
+    "raw_vector_hashes_compared": false,
+    "reference_count": 2,
+    "residuals_pass": true,
+    "status": "SEMANTIC_EIGENSYSTEM_REPLAY_PASS"
+  },
+  "environment": {
+    "numpy": "1.26.3",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "full_historical_chain_replay_claim": false,
+  "pass": true,
+  "physical_state_claim": false,
+  "raw_eigenvector_hashes_compared": false,
+  "schema": "C400-S2-SEMANTIC-REPLAY-V1",
+  "status": "FOCUSED_PHASE_SEMANTIC_REPLAY_PASS"
+}
