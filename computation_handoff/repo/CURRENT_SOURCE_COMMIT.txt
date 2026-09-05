@@ -1,20 +1,22 @@
 DeuteronWigner computation-handoff source state
 
 Refresh date: 2026-09-04
-Local snapshot status: PREPARED_FOR_REVIEW_NOT_COMMITTED_NOT_PUBLISHED
+Publication status: PUBLISHED_CURRENT_2026-09-04
 
 Canonical checkout: /Users/dustin/work/DeuteronWigner
 Canonical branch: main
-Committed worktree base:
-7dad2691607e833c0c4718a02dc2047739ab8d41
-Preserve original theory archive and recover Volume XVI source
+Represented source milestone:
+e86b6c3fd664817b0d955ec076bbe6c201747ab2
+Integrate C411 exploratory action and M2 quantum boundary
 
-The snapshot also includes reviewed post-base working-tree changes. These
-include the C411 exploratory first-C117 action, integrated Q0--Q2 source,
-generic exploratory operator bundle, M2 H0/basis-map and K9 invariant-
-projector work, and the fail-closed SU(3) state/current boundary. The committed
-base alone does not reproduce those files; review the snapshot manifests and
+The represented source milestone commits the C411 exploratory first-C117
+action, integrated Q0--Q2 source, generic exploratory operator bundle, M2
+H0/basis-map and K9 invariant-projector work, and the fail-closed SU(3)
+state/current boundary. Review the snapshot manifests and
 CURRENT_PROJECT_HANDOFF.md together.
+
+History-preserving remote merge before final publication:
+e97e75f6
 
 Public GitHub main at refresh audit:
 4075976deab34f1360278c41c16faf972038c017
@@ -27,5 +29,5 @@ Merge C410 C117 I2 retained aggregation boundary
 Published page:
 https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo
 
-Do not describe the public page as refreshed until this local snapshot is
-reviewed, committed, and published. Never force-push or rewrite public history.
+This snapshot was published with ordinary history-preserving commits. Never
+force-push or rewrite public history.

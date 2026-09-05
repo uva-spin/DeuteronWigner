@@ -1,8 +1,8 @@
 # DeuteronWigner computation repository snapshot
 
 This directory is a reproducible continuation snapshot assembled from the
-canonical `/Users/dustin/work/DeuteronWigner` checkout. The 2026-09-04 local
-refresh is prepared for review but is not yet committed or published. Read
+canonical `/Users/dustin/work/DeuteronWigner` checkout. The 2026-09-04 refresh
+is published and represents source milestone `e86b6c3f`. Read
 `SNAPSHOT_UPDATE_2026-09-04.md` first. Its source-state boundary is recorded in
 `CURRENT_SOURCE_COMMIT.txt`; the C401--C410 summary remains as historical
 evidence in `C401_C410_REPOSITORY_HANDOFF.md`.

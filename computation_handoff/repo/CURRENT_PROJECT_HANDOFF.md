@@ -5,11 +5,13 @@
 - Branch at reconciliation: `main`
 - Initial audited code baseline: `186cc8164240f5d18c99fb56f29ba74d243849b5`
 - Preceding handoff/document commit: `3cbfc0bcd1c78ceff2018a602cc333037b0ff7d1`
-- Current committed worktree base: `7dad2691607e833c0c4718a02dc2047739ab8d41`
-- Post-base working state: C411 exploratory-action, M2 H0/basis-map,
+- Current represented source milestone: `e86b6c3fd664817b0d955ec076bbe6c201747ab2`
+- History-preserving remote merge: `e97e75f6`.
+- Committed scientific state: C411 exploratory-action, M2 H0/basis-map,
   integrated Q0--Q2 substrate, K9 invariant-projector, and fail-closed
-  state/current-boundary work are present as reviewed working-tree changes and
-  are not represented by the committed base alone.
+  state/current-boundary work are committed in the represented source
+  milestone. The computation-handoff publication follows as documentation and
+  snapshot state, not as a new scientific result.
 - User-supplied theory-note baseline SHA-256: `609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea`
 
 The user-supplied theory note and bibliography are preserved byte-for-byte at
@@ -419,14 +421,14 @@ snapshot. Use those mechanisms only when they protect a concrete reusable
 scientific artifact or release. Test counts and content hashes are engineering
 evidence, not independent physics evidence.
 
-The public GitHub `computation_handoff/repo/` tree remains a valid C410
-snapshot at public commit `4075976deab34f1360278c41c16faf972038c017` until
-the prepared 2026-09-04 local refresh is reviewed, committed, and published.
-The local refresh preserves the old review surface as a checksummed archive,
-mirrors the current source, tests, reports, theory note, machine state, and
-roadmap, and keeps the large historical branch/history/controller payloads
-unchanged. Do not describe the public page as current before publication, and
-do not make snapshot refreshes a prerequisite for ordinary scientific work.
+The public GitHub `computation_handoff/repo/` tree is refreshed through source
+milestone `e86b6c3fd664817b0d955ec076bbe6c201747ab2`. The publication preserves
+the former public commit `4075976deab34f1360278c41c16faf972038c017` through
+the history-preserving merge at `e97e75f6`, preserves the old review surface as
+a checksummed archive, mirrors the current source, tests, reports, theory note,
+machine state, and roadmap, and keeps the large historical branch/history/
+controller payloads unchanged. Snapshot refreshes remain documentation
+milestones rather than prerequisites for ordinary scientific work.
 
 ## Direction path
 

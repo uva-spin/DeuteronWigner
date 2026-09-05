@@ -69,6 +69,15 @@ with SHA-256
 This snapshot is immutable and does not replace the original theory bundle or
 any earlier pre-edit record.
 
+Immediately before the publication-status record was updated after source
+milestone `e86b6c3f` and history-preserving merge `e97e75f6`, the current note
+was preserved as
+`DeuteronWigner_complete_theory_note_current.prepublish_2026-09-04.tex`, with
+SHA-256
+`65646d42ee5567c69a95c85f8157afa3d825e6e7dc17ce8298d1b4e60586db6f`.
+This immutable snapshot separates the scientific-note content from the later
+publication-status-only edit.
+
 ## Integrity and repository comparison
 
 | Item | Verified value |

@@ -37,9 +37,8 @@ operational scripts and prompts use the consolidated `.yolo` path.
 
 The public continuation view is
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
-The local `computation_handoff/repo` review candidate was refreshed on
-2026-09-04 but is not current on that public page until it is reviewed,
-committed, and published. Its source-state marker and phase handoff must
-distinguish the committed base from any included post-base working-tree
-science. A handoff-only publication commit may follow the represented source
-commit.
+The `computation_handoff/repo` review candidate was refreshed and published on
+2026-09-04. It represents source milestone `e86b6c3f`, with the former public
+history preserved through merge `e97e75f6`. Its source-state marker and phase
+handoff distinguish the represented source milestone from the later
+handoff-only publication commit.

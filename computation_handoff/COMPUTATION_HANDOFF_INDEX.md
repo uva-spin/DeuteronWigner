@@ -3,8 +3,8 @@
 Updated 2026-09-04 to support independent technical review and continued
 development. The public continuation tree is
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
-The local `repo/` refresh is prepared for review but is not yet committed or
-published; its `CURRENT_SOURCE_COMMIT.txt` records that distinction.
+The `repo/` refresh was published on 2026-09-04 and represents source milestone
+`e86b6c3f`; its `CURRENT_SOURCE_COMMIT.txt` records the full boundary.
 
 ## Recommended reading order
 
@@ -50,13 +50,11 @@ The local `repo/` review candidate contains:
   no backend source outside its local virtual environment);
 - the root `Deuteron_GTMD.pdf` project document.
 
-The local refreshed snapshot has committed worktree base
-`7dad2691607e833c0c4718a02dc2047739ab8d41` and also captures documented,
-reviewed post-base working-tree science. Public GitHub `main` was
-`4075976deab34f1360278c41c16faf972038c017` at the refresh audit, and the
-public snapshot still identified the older C410 merge
-`51d3919e4660f5709cc7bb94c576c8ec17c9de14`. See the refresh note and source
-marker before describing either state as current.
+The refreshed snapshot represents committed source milestone
+`e86b6c3fd664817b0d955ec076bbe6c201747ab2`. Public GitHub `main` was
+`4075976deab34f1360278c41c16faf972038c017` at the pre-publication audit; that
+history is preserved through merge `e97e75f6`. The older C410 source marker
+`51d3919e4660f5709cc7bb94c576c8ec17c9de14` remains historical evidence.
 
 After every accepted commit on `main`, refresh the local review tree and its
 source-state marker, handoff evidence, and content/checksum manifests. Verify

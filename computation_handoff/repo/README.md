@@ -7,8 +7,9 @@ canonical checkout at `/Users/dustin/work/DeuteronWigner`. The public page is:
 
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>
 
-The 2026-09-04 local refresh is prepared for review and is not public until it
-is committed and pushed. Start here:
+The 2026-09-04 refresh is published and represents source milestone
+`e86b6c3f`, with former public history preserved through merge `e97e75f6`.
+Start here:
 
 1. `SNAPSHOT_UPDATE_2026-09-04.md` — exact refresh scope, backup, status delta,
    and formal-volume decision.

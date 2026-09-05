@@ -1,19 +1,18 @@
 # Computation-handoff refresh: 2026-09-04
 
-## Review status
+## Publication status
 
-This directory is the local, review-ready refresh of the DeuteronWigner
-continuation snapshot. It has not yet been committed or published. At the time
-of this audit, public GitHub `main` was
+This directory is the published 2026-09-04 refresh of the DeuteronWigner
+continuation snapshot. At the time of the pre-publication audit, public GitHub `main` was
 `4075976deab34f1360278c41c16faf972038c017`, and the public
 `computation_handoff/repo` still identified the C410 merge
 `51d3919e4660f5709cc7bb94c576c8ec17c9de14` as its source.
 
-The refreshed local snapshot has committed worktree base
-`7dad2691607e833c0c4718a02dc2047739ab8d41` and also contains the reviewed
-post-base working-tree science described below. The base commit alone does not
-reproduce those post-base files. `CURRENT_SOURCE_COMMIT.txt`, the content
-manifests, the current handoff, and the roadmap must be read together.
+The published snapshot represents source milestone
+`e86b6c3fd664817b0d955ec076bbe6c201747ab2`, which commits the reviewed science
+described below. The former public history is preserved through merge
+`e97e75f6`. `CURRENT_SOURCE_COMMIT.txt`, the content manifests, the current
+handoff, and the roadmap must be read together.
 
 ## Recovery point
 
@@ -56,6 +55,12 @@ Q0/Q1 contracts were also copied under `data/runtime/`: C131, C142, C144,
 C149, and C150. No generated bulk runtime tree was imported. This keeps the
 public-authority gate executable without adding the canonical checkout's
 multi-gigabyte runtime products.
+
+The published embedded handoff includes the current status, roadmap, worklog,
+decisions, scientific references, and independent derivations. Private
+correspondence and locally downloaded literature PDFs remain in the canonical
+checkout under the existing publication policy and are not copied into this
+public tree or its inventories.
 
 The refresh preserves the older C401--C410 handoff, immutable history bundle,
 frozen branch snapshots, old archives, worktree inventories, and public-safe
@@ -102,8 +107,8 @@ bytecode generation disabled, and pytest's cache disabled:
 
 The inventories in `REPO_CONTENTS.files`, `REPO_CONTENTS.sizes`, and
 `REPO_CONTENTS.sha256` were regenerated as part of this refresh. The file and
-size inventories each contain 44,776 entries; the checksum inventory contains
-44,777 because it also authenticates `REPO_CONTENTS.sizes`. A complete
+size inventories each contain 44,767 entries; the checksum inventory contains
+44,768 because it also authenticates `REPO_CONTENTS.sizes`. A complete
 `shasum -a 256 -c REPO_CONTENTS.sha256` verification passed. The test runs
 emitted only existing Python/SciPy warnings; there were no test failures.
 
@@ -123,10 +128,10 @@ does not yet establish a new formal physics contract that would justify a new
 volume. Revisit that decision when the color-singlet `H_D,K` and compatible
 finite-K current are mathematically fixed.
 
-## Publication boundary
+## Publication record
 
-This refresh is deliberately labeled
-`PREPARED_FOR_REVIEW_NOT_COMMITTED_NOT_PUBLISHED`. Review it locally before
-publication. A later publication must use ordinary history-preserving Git
-operations, update the public source marker in the same change, and must not
-force-push or rewrite public history.
+This refresh is labeled `PUBLISHED_CURRENT_2026-09-04` and was integrated with
+ordinary history-preserving Git operations. Source milestone `e86b6c3f`
+contains the scientific state; merge `e97e75f6` preserves the prior public
+line before this final documentation update. Future publications must update
+the source marker and must not force-push or rewrite public history.

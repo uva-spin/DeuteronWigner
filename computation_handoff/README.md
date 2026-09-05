@@ -4,10 +4,10 @@ The public continuation handoff is
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>.
 The canonical source checkout is `/Users/dustin/work/DeuteronWigner`.
 
-The local `repo/` directory was refreshed on 2026-09-04 and is prepared for
-review, but it is not yet committed or published. Its reading entry point is
-`repo/SNAPSHOT_UPDATE_2026-09-04.md`. The public page still carries the older
-C410-era snapshot until this local refresh is reviewed, committed, and pushed.
+The `repo/` directory was refreshed and published on 2026-09-04. It represents
+source milestone `e86b6c3f` through the reviewed C411/M2 state-current
+boundary, with the former public history preserved through merge `e97e75f6`.
+Its reading entry point is `repo/SNAPSHOT_UPDATE_2026-09-04.md`.
 
 This directory contains the project handoff bundle for independent technical
 review and continued development. It is
