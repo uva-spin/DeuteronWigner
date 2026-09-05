@@ -1,0 +1,41 @@
+{
+  "schema": "Q1-PLHQCDSTATE-ACCEPTANCE-V1",
+  "status": "Q1_PLHQCDSTATE_COMPLETE",
+  "positive_gate": true,
+  "baseline": "b094fb8cb1046aea0062468d73826ea25eab6116",
+  "encoding": "COMPACT_INDEX_DIRECT_ORDER_V1",
+  "basis_order": "q followed by qg",
+  "primary_resolution": "K9",
+  "K9_compact_dimension": 1350,
+  "K9_padded_dimension": 2048,
+  "K9_qubits": 11,
+  "fixture_sequence": [
+    "FIXTURE-FREE",
+    "FIXTURE-INTERACTING-A",
+    "FIXTURE-INTERACTING-B-NULL-SHIFT",
+    "FIXTURE-MASS-SIGN"
+  ],
+  "selected_adapt_layers": [
+    {"edge_id": "EDGE-00-0-6", "kind": "real", "left": 0, "right": 6}
+  ],
+  "stateprep_route": {"validation_only": true, "max_oracle_residual": 3.1e-12},
+  "trainable_route": {
+    "optimizer": "DETERMINISTIC_QNODE_NELDER_MEAD",
+    "ordinary_gate_decomposition": true,
+    "production_qubitunitary_count": 0,
+    "padding_preserving_by_construction": true,
+    "max_energy_residual": 4.6e-12,
+    "max_eigenstate_residual_norm": 2.1e-8,
+    "max_observable_residual": 5.3e-10,
+    "max_padded_leakage": 1.1e-31
+  },
+  "holdouts": {"K11": "REGRESSION_RESOURCE_PASS", "K13": "REGRESSION_RESOURCE_PASS"},
+  "derivative_hf_max_residual": 7.9e-31,
+  "hardware_execution": false,
+  "shots": null,
+  "physical_parameter_selected": false,
+  "physical_state_created": false,
+  "production_object_created": false,
+  "next": "Q2/PLHQCDOBS",
+  "root": "604c2797f4b12a5409a63643635c093c1653cf3b02ccccb04f7f22e2f0645547"
+}

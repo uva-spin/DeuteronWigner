@@ -1,11 +1,27 @@
 # DeuteronWigner current project handoff
 
-- Last reconciled: 2026-09-03
+- Last reconciled: 2026-09-04
 - Canonical checkout: `/Users/dustin/work/DeuteronWigner`
 - Branch at reconciliation: `main`
-- Code baseline at reconciliation: `186cc8164240f5d18c99fb56f29ba74d243849b5`
+- Initial audited code baseline: `186cc8164240f5d18c99fb56f29ba74d243849b5`
 - Preceding handoff/document commit: `3cbfc0bcd1c78ceff2018a602cc333037b0ff7d1`
+- Current committed worktree base: `7dad2691607e833c0c4718a02dc2047739ab8d41`
+- Post-base working state: C411 exploratory-action, M2 H0/basis-map,
+  integrated Q0--Q2 substrate, K9 invariant-projector, and fail-closed
+  state/current-boundary work are present as reviewed working-tree changes and
+  are not represented by the committed base alone.
 - User-supplied theory-note baseline SHA-256: `609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea`
+
+The user-supplied theory note and bibliography are preserved byte-for-byte at
+`references/source_archives/DeuteronWigner_complete_theory_note_current.original_2026-09-03.tex`
+and
+`references/source_archives/DeuteronWigner_complete_theory_references.original_2026-09-03.bib`.
+Their hashes are `609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea`
+and `024e29d58181054c195886f7b22d54912f4623f780faec9c3166e9b59f04f5ec`.
+The current working copies are separate and their pre-edit snapshots are
+retained beside the originals. The backup and change record is
+`references/source_archives/README.md`; no future update should overwrite the
+original backup.
 
 This is the first file a human or coding agent should read after `AGENTS.md`.
 It replaces conversation history, stale controller state, and the historical
@@ -169,6 +185,10 @@ Current numerical counts:
 | C117 source product primitives | 12 |
 | Retained C117 aggregate shapes | 3, one per K resolution |
 | Complete C117 numerical coordinate actions | 0 |
+| Main-line exploratory C117 action paths | 3, one per K resolution; Lane-A only |
+| Main-line exploratory operator-bundle seams | 1, explicit H0 + C396 + C117 interface |
+| Main-line H0 basis-map contract | 1 schema plus exploratory C47-basis/M2-recurrence `q_rel^2` map instances at K9/K11/K13; no physical map supplied |
+| M2 K9 low eigenspace | 1 named exploratory parameter point; stable sixfold q-sector projector, not a selected state |
 | Physical response rank | not evaluated |
 | Physical fit | not authorized or performed |
 | Hamiltonian activation | not ready |
@@ -177,6 +197,87 @@ The current C411 record is
 `docs/phases/c411_c117_i2_finite_c43_adapter/implementation_report.md`.
 The older `handoff/C401_C410_REPOSITORY_HANDOFF.md` correctly describes the
 C410 baseline but is now historical because it says C411 is absent.
+
+The current Lane-A numerical substrate is
+`src/deuteron_wigner/bridge/c411_c117_i2_finite_c43_adapter/exploratory.py`,
+with focused tests in
+`tests/test_c117_first_action_exploratory.py`. The main-line response seam is
+`src/deuteron_wigner/quantum/operator_bundle.py`, which requires an explicit
+caller-supplied (H_{0,K}) at its generic boundary; its mapped entry point now
+accepts the tested M2 supply. Both routes require the two C401 mass
+coefficients and the C411 exploratory C117 coefficient. Its response map uses
+the exact sparse or matrix-free oracle and labels the singular spectrum as
+diagnostic. The original focused test pair passes 14 tests. The recovered Q0--Q2 backend adds 33
+focused tests; together the integration run passes 47 tests. The exact copied
+backend-core hashes and environment details are recorded in
+`docs/next_level/mainline_quantum_substrate_integration.md`. This is useful
+conditional infrastructure, not a physical C117 completion or a physical
+response rank.
+
+The M2 H0 audit in `docs/next_level/m2_h0_boundary_audit.md` records that the
+existing C7/C8 microscopic H0/H1 branch is validation infrastructure, not a
+dimension-matched main-line `H_{0,K}`: its H1 valence dimensions are 4/7/10,
+versus 1350/2706/4758 for the C401/C410 spaces. The M2 supply in
+`src/deuteron_wigner/microscopic/h0/k_local.py` uses the C47 x-scaled basis,
+normalization, exact CM projection, and diagonal `q_rel^2` functional, but it
+does not attribute a complete sparse Hamiltonian matrix to C47. M2 assembles
+the radial HO recurrence and cross-checks it against C128 `pperp2` only. The
+focused check independently decodes every K9 C128 qg coordinate and verifies
+the diagonal, raising/lowering radical arguments, orientation, Hermitian
+partner, and forbidden selection rules while poisoning C128's historical free
+routes. It
+does not consume C128 longitudinal fractions or numerical free-matrix values:
+the historical C128 quark-fraction defect affects its qg kinetic denominator.
+The exact C47-to-C401/C410 shell-major-to-partition-major permutation remains
+isometric, C7/C8 assumptions remain excluded, and C128/backups remain
+preserved. The C401/C396 mass directions and C411 action remain separately
+owned. Units, order, support, omissions, and ownership are in
+`docs/next_level/m2_h0_basis_map_contract.md`.
+
+At the named nonphysical `M2_K9_EXPLORATORY_BASELINE_V1` point, the exact
+sparse H0+C401/C396+C411 bundle has a stable sixfold lowest q-sector subspace
+at `0.194586374083865 GeV^2`, separated by `0.421163695550323 GeV^2`. It is
+tracked as an invariant projector, not as a deuteron or individual state.
+Sparse/matrix-free/linear actions agree to `8.33e-17`; subspace-averaged
+Hellmann--Feynman and finite-difference derivatives agree to `2.64e-11`.
+The three declared one-at-a-time sensitivity points remain diagnostic only.
+The Q0 codec has exact K9 compact/padded round trips and zero leakage; its
+Q1-style StatePrep sparse echo agrees through `1.19e-18`. Frozen Q1/Q2 APIs
+remain fixture-only and were not given the external M2 Hamiltonian. The M2
+focused suite passes 36 tests, with five invariant-projector and fail-closed
+state-to-current boundary tests (41 total). The direct C47-plus-boundary run
+passes 199 tests, and the current relevant C47/C128/C401/C411/M2 regression
+passes 264. The project-local Python-3.11
+quantum environment has status
+`SELF_CONTAINED_EXISTING_ENVIRONMENT_VALIDATED`: it passes the frozen
+Q0/Q1/Q2 regressions 15/4/14 with `PYTHONNOUSERSITE=1` and no `sys.path`
+injection (SymPy 1.14.0 and mpmath 1.3.0 are local alongside
+PennyLane/Lightning 0.38.0). Those two pure-Python packages were manually
+seeded into the existing project-local environment after the package index was
+unreachable. The declared online rebuild remains available, but
+`FRESH_ENVIRONMENT_REBUILD_VERIFIED` is not claimed because it was not run.
+This is not a physical Hamiltonian, deuteron state, current, fit, or response.
+
+The M2 state-to-current audit is implemented at
+`src/deuteron_wigner/quantum/m2_state_current_boundary.py`. It establishes a
+precise color-intertwiner obstruction. C47 `q_basis` retains two open
+fundamental triplets, and each of the 448 K9 noncolor qg tuples uses C47's
+explicit `U_(3<-3x8)=T^b/sqrt(C_F)` triplet isometry. The M2 permutation
+preserves them, so `H_M2,K9 = 450 * 3` and
+`Hom_SU(3)(1,H_M2,K9) = {0}`. A six-versus-three observation only rules out an
+isomorphism; it does not rule out an abstract embedding. The proven absence of
+a color singlet rules out every nonzero color-singlet deuteron composition map
+into the present M2 space. C405 has the matching direct-sum axis but its q
+block is `UNAVAILABLE_NOT_ZERO_FOR_C117_I2`; C114 has no complete finite-HO
+current block. Therefore neither the colored-subsystem diagnostic `P_f J_K9 P_i`
+nor its normalized projector trace is evaluated; neither can be a deuteron
+target current. No eigenvector is selected and neither current adapter is
+called. The focused test also verifies projector invariance under an arbitrary
+six-dimensional degenerate-basis rotation. The minimal next construction is
+first an enlarged many-body/hadronic finite-K color-singlet Hilbert space with
+spin-one deuteron composition and transfer, normalization, flavor, Fock,
+orbital, and parity labels; only afterward can finite-K current intertwiners
+be derived.
 
 ## Convention correction that must be preserved
 
@@ -318,11 +419,14 @@ snapshot. Use those mechanisms only when they protect a concrete reusable
 scientific artifact or release. Test counts and content hashes are engineering
 evidence, not independent physics evidence.
 
-The published `computation_handoff/repo/` tree is currently a valid C410
-snapshot with internally consistent checksums, but its source marker remains
-at `51d3919e4660f5709cc7bb94c576c8ec17c9de14`; it is stale relative to local
-C411. Update it at a deliberate public milestone, not as a prerequisite for
-each scientific experiment.
+The public GitHub `computation_handoff/repo/` tree remains a valid C410
+snapshot at public commit `4075976deab34f1360278c41c16faf972038c017` until
+the prepared 2026-09-04 local refresh is reviewed, committed, and published.
+The local refresh preserves the old review surface as a checksummed archive,
+mirrors the current source, tests, reports, theory note, machine state, and
+roadmap, and keeps the large historical branch/history/controller payloads
+unchanged. Do not describe the public page as current before publication, and
+do not make snapshot refreshes a prerequisite for ordinary scientific work.
 
 ## Direction path
 
@@ -331,6 +435,10 @@ each scientific experiment.
 Goal: turn the C410 aggregate into a transparent K-local numerical response at
 K9, then K11 and K13, without pretending an exploratory convention is a
 physical matching result.
+
+Status: the parameter-explicit exploratory action exists and is tested at
+K9/K11/K13. The source-qualified normalization, finite-cell ownership, and
+physical mixing/renormalization interpretation remain open.
 
 1. Trace the full normalization chain from the continuum/source `P^-`
    interaction through field mode expansions, finite-cell factors, Fock-state
@@ -354,20 +462,28 @@ tests, and a small numerical response table. No new phase machinery is needed.
 
 ### Sprint 2 — assemble the smallest useful state-to-observable response
 
-1. Combine the six existing C396 mass-direction actions with the first C117
-   action at K9.
-2. Use a clearly named diagnostic or exploratory state until a physical sector
-   projector is available.
-3. Evaluate mass and elastic-current responses through the existing current
-   adapters. Compare the light-front and LPS routes; do not silently choose one
-   as production.
-4. Verify Hellmann--Feynman, matrix finite-difference, and observable
-   finite-difference derivatives.
-5. Compute the singular spectrum of this explicitly exploratory response map.
-   Call it a diagnostic sensitivity rank, not the physical 19-coordinate rank.
+1. **Completed:** combine the six existing C396 mass-direction actions with
+   the first exploratory C117 action and mapped M2 H0 at K9.
+2. **Completed:** track the lowest object as a six-dimensional invariant
+   projector, not an individual eigenvector or deuteron state; verify energy
+   and matrix-derivative routes.
+3. **Completed as a negative boundary result:** prove
+   `H_M2,K9 = 450 * 3` and `Hom_SU(3)(1,H_M2,K9) = {0}` with fail-closed
+   projector/isometry/intertwiner/Casimir checks. The existing colored M2
+   space cannot receive a nonzero color-singlet deuteron composition.
+4. **Next:** introduce or bind an enlarged finite-K many-body/hadronic
+   color-singlet Hilbert space `H_D,K` with explicit spin-one, transfer,
+   charge/flavor, Fock, orbital/parity, and normalization ownership.
+5. Derive finite-K current intertwiners on `H_D,K`; keep C405/C114 as
+   incomplete interaction-current/topology ingredients and keep C7/C8
+   separate absent an explicit basis map.
+6. Only then evaluate light-front and LPS target-current diagnostics,
+   observable finite differences, and a diagnostic sensitivity spectrum.
 
-Deliverable: the first end-to-end K9 response map connecting actual C396/C117
-directions to observables.
+Deliverable: the first end-to-end K9 response map from actual C396/C117
+directions through a lawful color-singlet spin-one state/current construction
+to observables. The existing colored-subsystem projector is an input and
+diagnostic oracle, not that deliverable by itself.
 
 ### Sprint 3 — physical calibration and resolution study
 
@@ -417,7 +533,8 @@ physics decisions:
 - C43 intermediate renormalization condition if not derivable from the source;
 - prior or allowed range for a genuinely free finite term;
 - calibration corpus and covariance model;
-- what milestone warrants refreshing the public computation handoff.
+- when the reviewed local computation-handoff refresh should be committed and
+  published to the public branch.
 
 Ordinary implementation details, exploratory parameterizations, focused tests,
 and reversible diagnostics should proceed without manufacturing a blocker.
@@ -453,8 +570,18 @@ and reversible diagnostics should proceed without manufacturing a blocker.
 
 ## Current next action
 
-Start Sprint 1 with a source-level normalization derivation. The first output
-should be a compact factor-ownership table and a determination of whether the
-C411 4-by-4 mixing requirement is physically derived, merely a generic API
-shape, or unnecessarily strong for the first C117 direction. Do not begin by
-creating another phase package.
+The exploratory K9 state-to-current boundary is complete and proves that the
+present M2 space cannot receive a nonzero color-singlet deuteron composition.
+The next executable M2 action is first to introduce or bind an enlarged
+many-body/hadronic finite-K color-singlet Hilbert space with spin-one
+composition, including initial/final transfer, charge/flavor, Fock,
+orbital/parity, and normalization ownership. Only then derive finite-K current
+intertwiners and consider light-front or LPS diagnostics. In parallel, keep
+tracing the first C117 source normalization and mixing ownership. Do not
+select a physical sector/vector, use frozen Q1/Q2 fixture APIs as an
+M2-operator sink, or claim a current response, physical fit, response rank,
+or activation.
+
+Do not create another phase package merely to record this work. The original
+theory archive and foundational PDF remain unchanged and are still the
+reference points for any later documentation update.

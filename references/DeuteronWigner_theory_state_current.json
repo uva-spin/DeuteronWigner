@@ -1,6 +1,6 @@
 {
   "schema": "DEUTERONWIGNER-CURRENT-THEORY-STATE-V1",
-  "last_reconciled": "2026-09-03",
+  "last_reconciled": "2026-09-04",
   "purpose": "Compact machine-readable index to the current theory note and human handoff; not an independent theory authority.",
   "source_baseline": {
     "baseline_semantics": "The user-supplied TeX and Bib hashes preserve the files shared through the transient Downloads location before reconciliation. Repository copies are canonical; Downloads copies are not maintained as project records.",
@@ -8,11 +8,31 @@
     "user_supplied_tex_sha256": "609e5a9535227dde1c9dae5d3cf943694e0218aa6a154b2249b06f1ed1cfecea",
     "user_supplied_bib": "/Users/dustin/Downloads/DeuteronWigner_complete_theory_references.bib",
     "user_supplied_bib_sha256": "024e29d58181054c195886f7b22d54912f4623f780faec9c3166e9b59f04f5ec",
+    "preserved_original_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.original_2026-09-03.tex",
+    "preserved_original_bib": "references/source_archives/DeuteronWigner_complete_theory_references.original_2026-09-03.bib",
+    "canonical_working_tex_sha256": "65646d42ee5567c69a95c85f8157afa3d825e6e7dc17ce8298d1b4e60586db6f",
+    "canonical_working_bib_sha256": "5bd46640fd2d669942f32f0528960e58c0148897573f785d347c76f5e7d94c87",
+    "preedit_snapshot_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.preedit_2026-09-03.tex",
+    "m2_preedit_snapshot_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.preedit_2026-09-04.tex",
+    "m2_preedit_snapshot_tex_sha256": "d666e692af13421140c1e7628b39f751db7c50d0692eae6703fb3c15ae188569",
+    "m2_state_current_preedit_snapshot_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.preedit_2026-09-04_state_current_interface.tex",
+    "m2_state_current_preedit_snapshot_tex_sha256": "831e742383572ae98a5490bf5680623e8aec8cdf84a2fcc32edf59fa7bee6352",
+    "m2_color_singlet_preedit_snapshot_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.preedit_2026-09-04_color_singlet_correction.tex",
+    "m2_color_singlet_preedit_snapshot_tex_sha256": "fad2aae4936618b45c1625930e1321f698962ba4cc7480cffca1e0a96697aa56",
+    "m2_fail_closed_cleanup_preedit_snapshot_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.preedit_2026-09-04_fail_closed_cleanup.tex",
+    "m2_fail_closed_cleanup_preedit_snapshot_tex_sha256": "880144aa95aec3463a1f9a303a255cc2004e5881824bf44b355d5aab8a6a7efe",
+    "computation_handoff_refresh_preedit_snapshot_tex": "references/source_archives/DeuteronWigner_complete_theory_note_current.preedit_2026-09-04_computation_handoff_refresh.tex",
+    "computation_handoff_refresh_preedit_snapshot_tex_sha256": "1a354d2b4e5acc4711fba3326b0eec098153c0b28f9f8bdaea497f6b7448ac08",
+    "preedit_snapshot_bib": "references/source_archives/DeuteronWigner_complete_theory_references.preedit_2026-09-03.bib",
+    "change_record": "references/source_archives/README.md",
     "foundational_gtmd_draft_sha256": "804756880dcf11e473a7fb190b555090c2c8eae042cb40608c20e1d8fbc48cf9",
     "original_theory_archive_sha256": "1d956f95ec14d6d17b0baf8df5055bd3240e3edeb90bd7c7e7a24d743dbaa443",
     "code_commit": "186cc8164240f5d18c99fb56f29ba74d243849b5",
     "preceding_handoff_commit": "3cbfc0bcd1c78ceff2018a602cc333037b0ff7d1",
-    "published_c410_snapshot_commit": "51d3919e4660f5709cc7bb94c576c8ec17c9de14"
+    "current_committed_worktree_base": "7dad2691607e833c0c4718a02dc2047739ab8d41",
+    "post_base_worktree_science_present": true,
+    "published_c410_snapshot_commit": "51d3919e4660f5709cc7bb94c576c8ec17c9de14",
+    "public_main_commit_at_refresh_audit": "4075976deab34f1360278c41c16faf972038c017"
   },
   "canonical_files": {
     "human_handoff": "handoff/CURRENT_PROJECT_HANDOFF.md",
@@ -162,9 +182,37 @@
     "c117_source_product_primitives": 12,
     "c117_retained_aggregate_shapes": 3,
     "c117_complete_numerical_coordinate_actions": 0,
+    "m2_exploratory_h0_resolution_supplies": 3,
+    "m2_k9_lowest_eigenspace_multiplicity": 6,
+    "m2_k9_physical_state_selected": false,
+    "m2_k9_state_current_representation_obstruction_demonstrated": true,
+    "m2_k9_full_fundamental_triplet_count": 450,
+    "m2_k9_color_singlet_subrepresentation_present": false,
+    "m2_k9_singlet_intertwiner_space": "Hom_SU(3)(1,H_M2,K9)={0}",
+    "m2_focused_pre_boundary_tests": 36,
+    "m2_state_current_boundary_tests": 5,
+    "m2_focused_total_tests": 41,
+    "c47_plus_m2_boundary_tests": 199,
+    "c47_c128_c401_c411_m2_integration_tests": 264,
+    "m2_k9_state_to_current_map_source_qualified": false,
+    "m2_k9_current_response": null,
     "physical_response_rank": null,
     "physical_fit": false,
     "hamiltonian_activation": false
+  },
+  "quantum_environment_validation": {
+    "status": "SELF_CONTAINED_EXISTING_ENVIRONMENT_VALIDATED",
+    "fresh_environment_rebuild_verified": false,
+    "declared_online_rebuild": "conda env create -f environment_quantum.yml",
+    "run_note": "SymPy and mpmath were manually seeded into the existing project-local environment from locally available pure-Python installations after the package index was unreachable; the clean reconstruction was not executed in this run."
+  },
+  "computation_handoff_refresh": {
+    "date": "2026-09-04",
+    "local_status": "PREPARED_FOR_REVIEW_NOT_COMMITTED_NOT_PUBLISHED",
+    "public_status": "C410_SNAPSHOT_REMAINS_PUBLIC_UNTIL_REVIEWED_REFRESH_IS_PUBLISHED",
+    "old_review_surface_backup": "computation_handoff/backups/2026-09-04_pre_current_refresh/repo_review_surface_pre_refresh.tar.gz",
+    "old_review_surface_backup_sha256": "68bec6135598f3e93b451251aca5f1e5dc3594b5719583db476f1efc58ba4088",
+    "formal_volume_decision": "Mirror the recovered Volume XVI TeX source; Volumes 0-XV and XVII-XXI are byte-identical and require no edits; no Volume XXII is justified by the current implementation/status milestone."
   },
   "c117_first_direction": {
     "source_operator": "P^-_IC = -(g_s^2/2) integral dx^- d^2x_perp [(i partial^+)^-1 Q0 j_a^+] [(i partial^+)^-1 Q0 j_a^+]",
@@ -243,12 +291,13 @@
     }
   ],
   "next_direction_path": [
+    "Preserve the accepted M2 C47-basis/M2-recurrence H0 provenance: C47 owns x-scaled basis/CM/diagonal functional, M2 owns the sparse recurrence, and C128 pperp2 is a recurrence cross-check only.",
     "Trace the first-C117 normalization from the source P^- operator through modes, field/Fock-state normalization, finite-cell contraction, basis projection, C410 aggregation, and P^- to M^2 conversion.",
-    "Derive the actually required first target row or scalar mapping; do not assume either identity mixing or generic 4x4 physical mixing.",
-    "Create a clearly stamped exploratory K9 adapter with explicit named unresolved parameters and sensitivity ranges while retaining the strict C411 route for physical claims.",
-    "Construct and test the K9 first-C117 action for units, Hermiticity, sparsity, count-once ownership, and independent application-route agreement.",
-    "Repeat at K11 and K13 and assess the compound refinement path.",
-    "Combine the resulting action with the six C396 mass actions to form the first explicitly exploratory state-to-observable response map."
+    "The M2 K9 state-to-current audit proves H_M2,K9=450*3 and Hom_SU(3)(1,H_M2,K9)={0}; do not pass its sixfold open q/color projector to light-front or LPS adapters.",
+    "First introduce or bind an enlarged finite-K many-body/hadronic color-singlet Hilbert space with spin-one deuteron composition, initial/final transfer, charge/flavor, Fock, orbital/parity, and normalization ownership; only then derive finite-K current intertwiners.",
+    "Keep the sixfold K9 q-sector result as a subspace/projector, not a physical state or individual-vector selection; retain the named sensitivity set as exploratory only.",
+    "Use the Q0 compact codec and Q1-style StatePrep route for external-M2 diagnostics; retain frozen Q1/Q2 fixture APIs without injecting the M2 Hamiltonian.",
+    "Do not claim current response, physical response rank, fit, physical convergence, or Hamiltonian activation until the missing current and physical-state inputs are derived."
   ],
   "decisions_reserved_for_theory_lead": [
     "production light-front versus LPS current prescription",

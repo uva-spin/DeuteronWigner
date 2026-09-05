@@ -55,10 +55,11 @@ The public handoff tree is:
 <https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo>
 
 This is a continuation-facing published snapshot of the canonical checkout at
-`/Users/dustin/work/DeuteronWigner`. It currently represents C410, not the
-local C411 baseline. Refresh it at a deliberate public milestone. Routine
-derivations and exploratory calculations do not need to wait for snapshot
-publication or manifest regeneration.
+`/Users/dustin/work/DeuteronWigner`. The local snapshot was refreshed on
+2026-09-04 through the documented C411/M2 working state and is prepared for
+review; the public page still represents C410 until that refresh is committed
+and published. Routine derivations and exploratory calculations do not need to
+wait for snapshot publication or manifest regeneration.
 
 If ordinary Git push cannot fast-forward because the public branch is a
 published snapshot with a different history, use an authenticated GitHub Git

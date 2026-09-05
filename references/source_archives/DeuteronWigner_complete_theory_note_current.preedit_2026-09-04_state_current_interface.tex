@@ -130,7 +130,7 @@ The historical C398/C399 records remain valid in their narrow form: seven source
 \chapter*{Document status and claim discipline}
 \addcontentsline{toc}{chapter}{Document status and claim discipline}
 
-This revision began from the code baseline at local main commit \texttt{186cc816} and the preceding documentation/handoff baseline at \texttt{3cbfc0bc}; the current committed worktree base is \texttt{7dad2691}, with the reviewed C411/M2 continuation present as post-base working-tree changes.  The public computation-handoff source marker remains at the older C410 merge \texttt{51d3919e} until the prepared 2026-09-04 local refresh is reviewed, committed, and published.  The complete identifiers are recorded in \cref{app:reproducibility}.  The note is based on the checked-out source, the public repository and computation handoff, the complete 2026-08-28 source archive, the formalism volumes, the source-level audit, the C398--C400 records, the accepted C400.S2/S2M/S2M2 diagnostic-integrity layer, the C401--C410 source-operator progression, C411, and the current project handoff \cite{DeuteronWignerRepo2026,DWGTMDTechnicalDraft2026,DWFormalVolumes2026,DWSourceAudit2026,DWC398Record2026,DWC399Record2026,DWC400ScienceLock2026,DWC400P1Record2026,DWC400S2Record2026,DWC401C410Record2026,DWC411Record2026,DWCurrentHandoff2026}.
+This revision audits the code baseline at local main commit \texttt{186cc816} and the preceding documentation/handoff baseline at \texttt{3cbfc0bc}; the revision's own commit cannot be embedded before it exists.  The published computation-handoff source marker remains at the older C410 merge \texttt{51d3919e}.  The complete identifiers are recorded in \cref{app:reproducibility}.  The note is based on the checked-out source, the public repository and computation handoff, the complete 2026-08-28 source archive, the formalism volumes, the source-level audit, the C398--C400 records, the accepted C400.S2/S2M/S2M2 diagnostic-integrity layer, the C401--C410 source-operator progression, C411, and the current project handoff \cite{DeuteronWignerRepo2026,DWGTMDTechnicalDraft2026,DWFormalVolumes2026,DWSourceAudit2026,DWC398Record2026,DWC399Record2026,DWC400ScienceLock2026,DWC400P1Record2026,DWC400S2Record2026,DWC401C410Record2026,DWC411Record2026,DWCurrentHandoff2026}.
 
 \section*{Two independent classification axes}
 
@@ -2303,7 +2303,6 @@ The accepted status can be summarized as
  \statuscode{C411_FINITE_C43_ADAPTER_CONTRACT_READY_CERTIFICATE_UNAVAILABLE},\\
  \statuscode{M2_EXPLORATORY_C47_BASIS_M2_RECURRENCE_H0_READY},\\
  \statuscode{M2_EXPLORATORY_K9_DEGENERATE_LOW_EIGENSPACE_TRACKED},\\
- \statuscode{M2_EXPLORATORY_COLOR_SINGLET_REPRESENTATION_OBSTRUCTION_DEMONSTRATED},\\
  \statuscode{RANK_NOT_EVALUATED},\qquad
  \statuscode{PHYSICAL_FIT_NOT_AUTHORIZED}.
  \end{gathered}
@@ -2387,21 +2386,16 @@ confinement, interactions not represented by C117, and counterterms are
 deuteron-$J^z$, full-parity, and physical-state choices are likewise not
 silently made.
 
-The M2 H0 tests verify the public C47 labels and diagonal functional, every K9
-C128 \codepath{pperp2} diagonal and radial-neighbor branch with the exact
-raising/lowering radical arguments, orientation, selection rules, and
-Hermitian partner, five conserved-label commutators, the exact
-permutation/direct construction equality, the zero q block, positive finite
-qg blocks, and the exact separate C401/C396 mass split. The C128 free routes
-are poisoned in that recurrence test, proving that no historical longitudinal
-fraction or numerical-free-matrix value is consumed. The corrected focused H0/basis-map/C117/bundle command
+The M2 H0 tests verify the public C47 labels and diagonal functional, all K9
+C128 \codepath{pperp2} diagonal and radial-neighbor recurrence branches,
+Hermiticity, five conserved-label commutators, the exact permutation/direct
+construction equality, the zero q block, positive finite qg blocks, and the
+exact separate C401/C396 mass split. They also prove non-use of the historical
+C128 numerical matrix. The corrected focused H0/basis-map/C117/bundle command
 passes 30 tests; the expanded H0/basis-map/K9-eigenspace/C117/bundle command
-passes 36 tests; its five-test state-to-current boundary extension, including
-negative qg-contamination and defective-isometry cases, passes 41 focused
-tests. The direct C47-plus-boundary run passes 199 tests, and the final
-relevant C47/C128/C401/C411/M2 regression passes 264 tests. These numerical
-checks validate the stated exploratory construction and its convention
-ownership only.
+passes 36 tests; and the final relevant C47/C128/C401/C411/M2 regression
+passes 264 tests. These numerical checks validate the stated exploratory
+construction and its convention ownership only.
 
 The next accepted M2 increment uses the named, explicitly nonphysical point
 \texttt{M2\_K9\_EXPLORATORY\_BASELINE\_V1}: the C401/C396 coefficients of
@@ -2434,112 +2428,9 @@ space. The recovered Q0 codec maps the subspace exactly into its 2,048-state,
 StatePrep sparse-observable echo agrees with the M2 sparse expectations to
 $1.19\times10^{-18}$. The frozen Q1/Q2 public APIs remain fixture-only, so
 M2 does not inject this external Hamiltonian into the C144 fixture or Q2
-observable registry. Their Q0/Q1/Q2 regressions pass $15/4/14$ in the declared
-project-local Python-3.11 quantum environment with \texttt{PYTHONNOUSERSITE=1};
-SymPy and mpmath are declared local quantum dependencies, and no
-\texttt{sys.path} user-site injection is used. The status is
-\texttt{SELF\_CONTAINED\_EXISTING\_ENVIRONMENT\_VALIDATED}: after the
-package index was unreachable, the two pure-Python packages were manually
-seeded into this existing project-local environment from locally available
-installations. Therefore a fresh reconstruction from
-\codepath{environment_quantum.yml} was not executed and
-\texttt{FRESH\_ENVIRONMENT\_REBUILD\_VERIFIED} is not claimed. This
-establishes a clean existing-environment fixture validation, not a route for
-injecting the M2 Hamiltonian into those APIs.
-
-\section{M2 K9 state-to-current representation boundary}
-\label{sec:m2-state-current-boundary}
-
-The next M2 audit has a definite negative result rather than a dimension-only
-adapter. Its domain is the basis-independent range of the accepted projector,
-\begin{equation}
- \operatorname{Ran}P_{K9}\subset\mathcal H_{M2,K9}=\mathbb C^{1350},
- \qquad \mathcal H_{M2,K9}=\mathcal H_q^6\oplus\mathcal H_{qg}^{1344},
- \qquad \operatorname{rank}P_{K9}=6.
- \label{eq:m2-current-domain}
-\end{equation}
-The projector is the complete open q block to residual below
-$3\times10^{-15}$. Its ordered labels are quark helicity then open-triplet
-color: it carries $J^z=(-1/2,+1/2)$ and color components $(0,1,2)$, but no
-target-helicity-zero amplitude, color-singlet projection, charge/flavor or
-nucleon composition, orbital/parity assembly, initial/final target label, or
-transfer kinematics. Its compact coordinates are dimensionless under the
-C47/M2 finite-basis inner product; the M2 Hamiltonian has units
-$\unit{GeV^2}$. This is not an external deuteron normalization.
-
-C47 supplies a stronger color result than the six-versus-three dimension
-observation. Its \codepath{q\_basis} retains two open fundamental-color
-triples. For every noncolor qg tuple, C47 retains the output of its explicit
-\begin{equation}
- U_{\mathbf3\leftarrow\mathbf3\otimes\mathbf8}
- =T^b/\sqrt{C_F}.
- \label{eq:m2-c47-triplet-isometry}
-\end{equation}
-At K9 there are 448 such qg tuples. The live M2 label permutation preserves
-these color groups, so the full space is
-\begin{equation}
- \mathcal H_{M2,K9}=2\,\mathbf3\oplus448\,\mathbf3
- =450\,\mathbf3.
- \label{eq:m2-fundamental-only-decomposition}
-\end{equation}
-The direct source check verifies the isometry, its image in the C47
-$\mathbf3\otimes\mathbf8$ triplet projector, and its covariance under all
-eight generators. Each retained module has $C_2=4/3$. Since an invariant
-vector has $C_2=0$, this proves
-\begin{equation}
- \operatorname{Hom}_{SU(3)}\!\left(\mathbf1,\mathcal H_{M2,K9}\right)=0.
- \label{eq:m2-no-color-singlet}
-\end{equation}
-Thus no nonzero color-singlet deuteron composition map can land in the
-present M2 space. The six-versus-three result rules out an isomorphism only;
-an abstract $\mathbb C^3\to\mathbb C^6$ embedding is not ruled out by rank.
-The vanishing color-intertwiner space, not dimension counting, is the primary
-obstruction.
-
-The repository light-front adapter instead takes the four conventional
-spin-one plus-current amplitudes $(I_{++},I_{+0},I_{+-},I_{00})$, normalized
-as $I=J^+/(2P^+)$ in Drell--Yan $q^+=0$ kinematics. The LPS adapter takes a
-$4\times3\times3$ current array with component order $(+,-,x,y)$ and target
-helicity order $(+1,0,-1)$ in its stated longitudinal-Breit convention. A
-finite-K passage first requires an enlarged many-body/hadronic color-singlet
-space, source-qualified target composition, and then a finite-K current,
-\begin{equation}
- C_{i/f}:\mathbb C^3_{\rm spin\text{-}1}\otimes\mathbf1_{\rm color}
- \longrightarrow\mathcal H_{D,K},
- \qquad J_{D,K}^\mu:\mathcal H_{D,K}\longrightarrow\mathcal H_{D,K},
- \qquad J_{\rm target}^\mu=C_f^\dagger J_{D,K}^\mu C_i.
- \label{eq:m2-target-current-map}
-\end{equation}
-Neither $\mathcal H_{D,K}$, its composition map, nor its finite-K current is
-source-qualified in the current repository. A color-singlet $C_i$ with
-codomain $\mathcal H_{M2,K9}$ is necessarily zero by
-\cref{eq:m2-no-color-singlet}; a numerical three-dimensional image would
-neither be color-singlet nor source-qualified. It is not lawful to choose it
-from the numerical eigensolver.
-
-C405 uses the matching finite coordinate axis $q(6)\oplus qg(1344)$, but its
-q diagonal block is \texttt{UNAVAILABLE\_NOT\_ZERO\_FOR\_C117\_I2} and its
-qg block is conditional and incomplete. C114 likewise reports all four
-instantaneous-current products unavailable and no complete finite-HO block.
-Those C117 topology/projection structures are not a complete external
-electromagnetic spin-one current. Thus neither
-$P_fJ_{K9}^\mu P_i$ nor the otherwise basis-invariant subspace diagnostic
-$(1/6)\operatorname{Tr}(P_{K9}J_{K9}^\mu P_{K9})$ is evaluated. If either is
-ever source-qualified, it is a colored-subsystem diagnostic only, never a
-deuteron target-current matrix element: both still need $J_{K9}^\mu$, and the
-former also needs source-defined initial/final projectors. An arbitrary
-unitary rotation of the six solver vectors leaves $P_{K9}$, its support facts,
-and this obstruction unchanged; no individual vector is selected and no
-light-front or LPS adapter is called.
-
-The minimal next construction is first to introduce or bind a
-source-qualified finite-K many-body/hadronic color-singlet Hilbert space with
-spin-one deuteron composition, initial/final momentum transfer, charge/flavor,
-Fock-sector, orbital/parity, and external-normalization labels. Only after
-that construction may finite-K electromagnetic/current intertwiners be
-defined. The absent information remains absent rather than zero. Consequently
-no current, form factor, response, fit, or activation follows from the
-exploratory projector.
+observable registry. The state-to-current basis interface is still absent;
+no light-front/LPS current, physical response, fit, or activation follows from
+this result.
 
 \section{Science-first continuation policy}
 
@@ -2559,8 +2450,8 @@ The scientifically ordered continuation is:
  \item determine whether the represented first direction maps diagonally, mixes with a derived subset, or requires a parameterized mixing family rather than assuming either identity or generic $4\times4$ mixing;
  \item retain the strict C411 route for physical claims and add a visibly exploratory adapter for named unresolved factors;
  \item build and test the first K9 C117 action, then repeat at K11 and K13;
- \item retain the accepted K9 sixfold q-sector invariant projector and first introduce or bind an enlarged finite-K many-body/hadronic color-singlet Hilbert space with spin-one deuteron composition, including initial/final transfer, charge/flavor, Fock, orbital/parity, and normalization ownership;
- \item derive finite-K current intertwiners on that enlarged space before using only lawful projector-level transition or trace diagnostics; then compare observable finite differences and report a diagnostic sensitivity spectrum;
+ \item retain the accepted K9 sixfold q-sector invariant projector and derive and test its explicit state-to-current basis interface before passing it to any light-front/LPS current adapter;
+ \item retain the completed matrix/Hellmann--Feynman finite-difference check on that projector; compare observable finite differences and report a diagnostic sensitivity spectrum only after the state-to-current interface exists;
  \item select a physical sector/current and minimal nonduplicated calibration corpus only after the forward map works;
  \item infer resolution-local coefficients at K9, K11, and K13 under common physical conditions, assess observable-space convergence, and then consider physical activation.
 \end{enumerate}
@@ -2570,10 +2461,10 @@ In parallel, the correlator-level program may continue with rank-aware multi-$Q$
 
 DeuteronWigner supplies a complete, convention-controlled spin-1 partonic correlator framework and embeds it in a light-front deuteron with explicit flavor, spin, orbital, gauge-link, and nuclear-mechanism provenance.  Its current phenomenological boundary is operational and testable, but its source strength remains channel dependent.
 
-The microscopic branch has progressed beyond symbolic aspiration: it contains a finite-basis light-front architecture, source-side renormalization structures, matching and current interfaces, conditional quantum/state/observable backends, a verified diagnostic eigensolver and derivative layer, six mass-direction actions, the first retained C117 source shape, and an accepted exploratory M2 H0/K9 sixfold invariant projector. The state-to-current audit now proves that its entire retained space is fundamental-color only, so no color-singlet target composition can land there. The next step is sharply defined: introduce or bind an enlarged finite-K many-body/hadronic color-singlet spin-one Hilbert space, then derive its finite-K current intertwiners, alongside remaining normalization ownership, before any end-to-end C396/C117 observable response. Exploratory parameters may expose unresolved factors; they must not be relabeled as physical matching coefficients.
+The microscopic branch has progressed beyond symbolic aspiration: it contains a finite-basis light-front architecture, source-side renormalization structures, matching and current interfaces, conditional quantum/state/observable backends, a verified diagnostic eigensolver and derivative layer, six mass-direction actions, the first retained C117 source shape, and an accepted exploratory M2 H0/K9 sixfold invariant projector.  The next step is sharply defined: derive the remaining normalization ownership and an explicit state-to-current basis interface before any end-to-end C396/C117 observable response.  Exploratory parameters may expose unresolved factors; they must not be relabeled as physical matching coefficients.
 
 \begin{claimbox}{Current scientific conclusion}
-The correlator-level and phenomenological theory is working. The microscopic program has an accepted diagnostic-integrity foundation, six C396 mass-direction actions, the first C117 retained source shape, and a parameter-explicit exploratory K9 invariant projector. Its state-to-current representation audit proves the stronger statement that the present M2 space has no color-singlet subrepresentation. The next scientific result must first construct or bind an enlarged color-singlet spin-one Hilbert space and only then its finite-K current intertwiners; physical rank, fitting, current selection, resolution convergence, and activation remain downstream.
+The correlator-level and phenomenological theory is working.  The microscopic program has an accepted diagnostic-integrity foundation, six C396 mass-direction actions, the first C117 retained source shape, and a parameter-explicit exploratory K9 invariant projector, but no complete C117 coordinate action, state-to-current basis interface, or physical forward map.  The next scientific result should derive that interface; physical rank, fitting, current selection, resolution convergence, and activation remain downstream of a source-qualified version of that construction.
 \end{claimbox}
 
 \appendix

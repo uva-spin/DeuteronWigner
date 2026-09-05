@@ -1,4 +1,496 @@
-# Executable roadmap: parent-derived spin-1 GTMD/TMD model
+# DeuteronWigner roadmap to scientific completion
+
+## 2026-09-04 — governing completion roadmap
+
+Status: **active**.
+
+This section is the current completion path. It supersedes the historical
+"sole continuation" package queue and the earlier Q0--Q2 stop point as rules
+for scientific prioritization. It does not erase the evidence or claim
+boundaries recorded below: the frozen Q0--Q2 commits remain immutable, missing
+physics remains missing, and physical claims remain fail-closed. New work
+should proceed through ordinary, focused development on the current main line;
+it does not require another C-number, Q-number, acceptance-root hierarchy, or
+mirrored phase tree unless one protects a concrete reusable result.
+
+The current operational handoff is `handoff/CURRENT_PROJECT_HANDOFF.md`; the
+mathematical and physics authority is
+`references/DeuteronWigner_complete_theory_note_current.tex`. This roadmap
+states how to move from their present boundary to completion.
+
+### Scientific endpoint
+
+The endpoint is one physically identified, topology-constrained, quantum-
+enabled spin-1 light-front framework in which a common microscopic Hamiltonian,
+state, and current generate quark and gluon GTMD parents while preserving
+flavor, proton/neutron identity, target and parton spin, orbital interference,
+Fock-sector identity, gauge-link/color structure, nuclear mechanisms, and
+uncertainty lineage until a declared reduction is taken. TMDs, GPDs, PDFs,
+Wigner distributions, local moments, form factors, currents, and supported
+inclusive and exclusive observables must then follow as controlled
+projections, contractions, matching relations, or evolution limits of that
+common system.
+
+Quantum computation is a means of representing and solving the constrained
+many-body problem; it is not the completion criterion by itself. An exact
+state-preparation circuit, a simulator result, a qubit count, or a hardware run
+does not substitute for a physically identified operator, state, current, and
+observable chain.
+
+### Audited starting boundary
+
+| Workstream | Present boundary | What is still absent |
+|---|---|---|
+| GTMD/TMD phenomenology | Operational correlator-level model with spin-1 quark/gluon bases, light-front nuclear composition, evolution interfaces, nuclear mechanisms, uncertainty labels, and selected observables | A common microscopic origin for all fitted/modeled parent content and complete nonzero-transfer physical prediction |
+| Microscopic operator layer | 57 symbolic C396 K-local rows; six complete C396 mass-direction actions; 12 first-C117 product primitives; three C410 retained source shapes; Lane-A C117 action seams at all K values | Any source-qualified complete C117 numerical coordinate action; a useful physically sufficient Hamiltonian basis |
+| State and current | Diagnostic C144 eigensolver/state replay and light-front/LPS current interfaces | A sector-qualified physical deuteron state, selected production current, interaction-current/zero-mode closure, and physical response rank |
+| Conditional quantum backend | Q0--Q2 provide sparse/matrix-free operators, encoded state routes, a K9 trainable validation route, and compiled diagnostic observables for 11/12/13 qubits; main line now has an explicit H0+C396+C117 exploratory bundle seam | Frozen Q0--Q2 source integration, declared dependencies, a topology/symmetry-designed scalable ansatz, physical observables, finite-shot/noise qualification |
+| Physical identification | Parameter, matching, covariance, and source interfaces exist | A calibrated Hamiltonian/current, posterior or profile support, K-resolution study, and withheld validation |
+| Microscopic-to-GTMD bridge | Formal matching, Wilson-line, soft, evolution, and reduction architecture exists | A source-qualified numerical chain from the solved state/current to common GTMD parents and their observables |
+
+The 2026-09-03 quantum audit establishes an important distinction. The Q0--Q2
+software is real and recoverable, and its 33 focused tests pass both in its
+historical lineage and when its source is overlaid on current main. Its
+K9/K11/K13 dimensions still match the current C401/C410 spaces exactly:
+1350/2706/4758 physical states padded to 2048/4096/8192 states, or 11/12/13
+qubits. However, Q0--Q2 consume C144 diagnostic fixtures, not a current
+physical Hamiltonian. Q1's one selected compact-index two-level rotation is a
+validation construction rather than a scalable physics ansatz. We are close
+to possessing an integrated conditional quantum execution layer, but not yet
+close to a physical quantum calculation.
+
+### Completion dependency path
+
+```text
+M0  Q0--Q2 integration [done] ──┐
+                                ├──> M2a colored K9 diagnostic loop [done]
+M1  exploratory C117 action ────┘                    │
+     [done; physical normalization open]             v
+                                      M2b color-singlet H_D,K [next]
+                                                     │
+                                                     v
+                                      finite-K current intertwiners
+                                                     │
+                              ┌──────────────────────┴─────────────┐
+                              v                                    v
+                 M3 topology-aware quantum state      M4 useful operator/current closure
+                              └──────────────────────┬─────────────┘
+                                                     v
+                                      M5 physical calibration
+                                                     │
+                                                     v
+                                      M6 microscopic GTMD closure
+                                                     │
+                                                     v
+                                      M7 predictive observable program
+```
+
+M0 is integrated in the existing self-contained environment, with a fresh
+rebuild still unverified. M1 supplies the exploratory action at all three K
+resolutions, while source-qualified normalization remains open. M2a has met
+the exact/encoded diagnostic boundary and produced a decisive negative result:
+the current M2 space is `450 * 3` and contains no color singlet. M2b—not an
+adapter call on that colored space—is therefore the immediate state/current
+critical path.
+
+### 2026-09-04 implementation progress
+
+The first Lane-A C117 action path is now executable at K9, K11, and K13 using
+explicit residual normalization and first-direction mixing parameters. A
+main-line `ExploratoryHamiltonian` bundle now accepts a caller-supplied
+(H_{0,K}), the two C401 mass directions, and that C117 action, with sparse or
+matrix-free application, an exact sparse/Krylov state oracle, sector-weight
+accounting, Hellmann--Feynman checks, finite-difference observable responses,
+and a diagnostic singular spectrum. The new focused tests pass. This advances
+M1's exploratory substrate and opens M2, but M1's physical exit gate remains
+open: no source-qualified C117 normalization, physical (H_0), current response,
+physical sector, fit, or activation has been supplied.
+
+The M2 H0 audit now confirms that the existing C7/C8 microscopic branch cannot
+yet supply that (H_{0,K}): its H1 valence tower is 4/7/10-dimensional, while
+the current C401/C410 spaces are 1350/2706/4758-dimensional, and no basis map
+or sector-complete embedding is declared. The branch remains preserved as a
+validation architecture; the evidence and required basis-map contract are
+recorded in `docs/next_level/m2_h0_boundary_audit.md`.
+
+### M0 — recover the existing quantum execution substrate
+
+Purpose: remove the risk that the local-only Q0--Q2 work is lost and make its
+use a normal, tested capability of the current repository.
+
+Current status: **source-integrated; existing self-contained local-environment
+validation complete; fresh rebuild unverified**.
+The Q0--Q2 public packages and their 33-test evidence are now on the main
+line with byte-identical core hashes. The `quantum` optional dependency and
+`environment_quantum.yml` declaration are present. The 33 tests pass in the
+maintained project-local Python-3.11 environment with `PYTHONNOUSERSITE=1`.
+The Q0/Q1/Q2 suites pass 15/4/14 without a user-site path injection; the
+root quantum extra and `environment_quantum.yml` explicitly own SymPy and
+mpmath together with PennyLane/Lightning. This is
+`SELF_CONTAINED_EXISTING_ENVIRONMENT_VALIDATED`: SymPy/mpmath were manually
+seeded into the existing project-local environment after the package index was
+unreachable. `FRESH_ENVIRONMENT_REBUILD_VERIFIED` is not claimed; the declared
+online reconstruction was not executed in this run.
+
+Work:
+
+1. **Completed:** port the Q0--Q2 public source and focused tests into a stable
+   main-line namespace without rewriting or amending the frozen commits.
+2. **Completed for the existing environment:** declare the optional quantum
+   environment and validate its self-contained runtime containing symbolic,
+   sparse, PennyLane, and Lightning dependencies. The exact clean test command
+   is recorded in the M2 contract. A fresh online rebuild remains an explicit
+   unverified reproduction step.
+3. **Completed:** preserve the four C144 Hamiltonians as explicit diagnostic
+   regression fixtures.
+4. **Completed:** replace fixture-specific loading at the new boundary with a generic,
+   K-local operator-bundle interface,
+
+   \[
+   H_K(\boldsymbol\theta)=H_{0,K}+\sum_i\theta_{i,K}D_{i,K},
+   \]
+
+   that accepts sparse or matrix-free actions, derivative operators, sector
+   metadata, units, and an explicit exploratory/validated/physical claim tier.
+   It must not invent missing terms or choose physical defaults.
+5. **Completed:** retain exact sparse/Krylov diagonalization as the numerical
+   oracle against which encoded and variational routes are tested.
+
+Exit gate: the existing 33 focused tests pass from the declared main-line
+environment; K9/K11/K13 dimensions and padding invariants are unchanged; at
+least one current C401 mass direction and one C410 source shape can be loaded
+through the generic interface without being mislabeled as a physical
+Hamiltonian. This gate proves integration, not physics.
+
+### M1 — complete the first C117 finite-basis action
+
+Purpose: create the first executable modern interaction direction rather than
+another adapter or authority object.
+
+Work:
+
+1. Derive the complete factor ownership from the source \(P^-\) interaction
+   through field-mode expansions, finite-cell factors, Fock-state and
+   wave-packet normalization, basis projection, the C410 \(-1/2\), factored
+   \(g_s^2\), and the symmetric-light-front conversion
+   \(\delta M^2=2P^+\delta P^-\).
+2. Resolve the old/full-cell versus current/half-cell \(L\) notation exactly
+   once and determine whether C410 has already consumed the mass-squared
+   conversion.
+3. Determine from the actual source and target bases whether the first C117
+   direction is diagonal, mixes with a derived subset, or remains an explicit
+   parameterized combination. Do not infer a physical four-by-four mixing
+   matrix from the shape of the C411 container.
+4. Keep a strict source-qualified route for physical claims and provide a
+   visibly exploratory route for any residual named factor. Missing factors
+   are parameters, not zeros.
+5. Build and directly test the K9 action, then K11 and K13, for dimensions,
+   units, Hermiticity, sparsity, count-once ownership, route agreement, and
+   resolution behavior.
+
+Exit gate: one complete C117 numerical action exists at each K resolution
+alongside the six C396 mass-direction actions, with a compact derivation and
+factor-ownership table. Any residual assumption is explicit and carries an
+appropriate claim tier.
+
+### M2 — close the first K9 state-to-observable loop
+
+Purpose: obtain the first scientifically useful end-to-end response from the
+modern operator directions.
+
+Current status: **exploratory H0 and K9 degenerate low eigenspace completed;
+the state-to-current interface audit proves a representation obstruction**.
+C47 supplies the x-scaled basis,
+normalization, CM projection, and diagonal `q_rel^2` functional; M2, not C47,
+assembles the complete sparse HO recurrence. C128 `pperp2` is an off-diagonal
+recurrence cross-check only: its defective fractions and numerical free matrix
+are not used. The main-line bundle separates this mapped H0 from both C401/C396
+mass directions and the C411 action. At the named nonphysical baseline, the
+lowest K9 object is a stable sixfold q-sector projector, not an individual
+state. The Q0 codec and Q1-style StatePrep echo agree with the exact oracle;
+frozen Q1/Q2 fixture APIs remain unmodified and cannot be used as an external
+M2-Hamiltonian sink. C47 proves the complete K9 M2 space is
+`H_M2,K9 = 450 * 3`: two open q fundamental triplets plus 448 qg triplets
+selected by `U_(3<-3x8)=T^b/sqrt(C_F)`. Hence
+`Hom_SU(3)(1,H_M2,K9) = {0}`. The absence of a color-singlet subrepresentation,
+not the six-versus-three dimension difference, is the primary reason no
+spin-one deuteron composition can enter this space. No complete finite-K
+current exists. Current response remains absent rather than zero. Five focused
+boundary tests include negative qg-contamination and defective-isometry cases;
+the C47-plus-boundary run passes 199 tests and the relevant integration run
+passes 264.
+
+Work:
+
+0. **Completed:** define and test the explicit K-local H0 basis-map contract,
+   including dimensions, sector labels, units, omitted-sector treatment, and
+   Hermiticity/commutator evidence. The existing C7/C8 branch is an input to
+   this design, not yet the H0 itself. See
+   `docs/next_level/m2_h0_basis_map_contract.md`.
+
+1. **Completed at the tested contract level:** assemble an explicitly
+   exploratory K9 Hamiltonian from mapped \(H_{0,K}\), the two C396 mass
+   directions, and the first C117 action. Coefficients remain explicit
+   caller inputs; unavailable directions remain absent and named, and no C144
+   component is borrowed as a C396 proxy. See
+   `docs/next_level/m2_h0_basis_map_contract.md`.
+2. **Completed:** compute and track the exact lowest K9 eigenspace. The named
+   baseline gives an isolated sixfold q-sector projector; seed/tolerance
+   stability, residuals, label support, sparse/matrix-free equality, and
+   subspace-averaged derivatives are recorded. No eigenvector is called a
+   deuteron. See `docs/next_level/m2_h0_basis_map_contract.md`.
+3. **Completed to the applicable frozen boundary:** Q0 compact/padded encoding
+   and a Q1-style exact sparse-StatePrep echo reproduce M2 subspace-average
+   total and derivative expectations. Q1/Q2 remain fixture-only and are not
+   modified or supplied the external M2 Hamiltonian.
+4. **Completed as an obstruction audit:** establish the M2 domain/codomain,
+   basis ordering, units, projector covariance, C47 fundamental-only color
+   decomposition, and C405/C114 current boundary. The result is
+   `Hom_SU(3)(1,H_M2,K9) = {0}`. No individual eigenvector,
+   colored-subsystem-only `P_K9 J_K9 P_K9` trace, or current-adapter input is
+   manufactured; such a trace is never a deuteron target current.
+5. First introduce or bind an enlarged finite-K many-body/hadronic
+   color-singlet Hilbert space with spin-one deuteron composition and
+   initial/final transfer, charge/flavor, Fock, orbital/parity, and
+   normalization ownership. Then derive its finite-K current intertwiners.
+   Only afterward evaluate light-front and LPS diagnostics and keep their
+   discrepancy visible.
+6. **Partially completed:** Hellmann--Feynman and matrix finite-difference
+   energy derivatives agree on the degenerate subspace. Observable
+   finite-difference derivatives and a response singular spectrum remain
+   unavailable until the enlarged color-singlet state/current interface exists.
+
+Exit gate: a reproducible exploratory map exists from actual C396/C117
+operator coefficients through a source-qualified enlarged color-singlet
+spin-one Hilbert space and finite-K current intertwiners to mass/current
+observables, with route residuals and a diagnostic sensitivity rank. It is
+not yet a physical fit or activation.
+
+### M3 — build the topology- and symmetry-aware scalable quantum state
+
+Purpose: turn the quantum layer from a compact-index validation backend into a
+scientifically structured solver.
+
+Work:
+
+1. Construct project-valid projectors and conserved-label maps for the
+   applicable baryon number, charge/flavor, \(J^z\), color, center-of-mass,
+   Fock, parity, and regulator sectors. Only claim a sector when its operator
+   and commutator tests exist.
+2. Compile the graded-Hilbert-space, intertwiner, topology, and tensor-network
+   architecture into a state ansatz that preserves those sectors by
+   construction.
+3. Replace arbitrary compact-index Gray-code two-level rotations as the
+   scaling strategy. They remain useful unit tests and exact local updates,
+   not the physical ansatz architecture.
+4. Benchmark energy, state fidelity/subspace overlap, sector leakage,
+   derivatives, and observable error against the K9 exact oracle. Declare the
+   tolerances before optimization.
+5. Use K11 and K13 first as scaling and resource holdouts, then as numerical
+   targets when the K9 architecture is stable. Record gate depth, entangling
+   count, optimizer behavior, and classical-memory cost.
+
+Exit gate: a nontrivial topology/symmetry-aware ansatz reproduces the declared
+K9 state and observable tolerances without forbidden-sector or padded-state
+leakage and has a credible K11/K13 scaling path. Hardware is not required for
+this gate.
+
+### M4 — close the useful Hamiltonian and production-current content
+
+Purpose: supply the operator directions and current information that the
+physical inverse problem actually needs.
+
+Work:
+
+1. Use the M2 response map to prioritize additional C396 directions. Complete
+   the physically relevant sector/counterterm directions and the remaining
+   C117 directions according to source ownership and observable sensitivity,
+   not phase order.
+2. Preserve K-local coefficients until matching or a shared renormalization
+   condition justifies cross-resolution relations.
+3. Implement the state-tracking and avoided-crossing diagnostics needed for
+   stable derivatives and fitting.
+4. Derive or model the required one- and many-body currents, zero-mode terms,
+   and angular-condition closure. Compare the light-front and LPS routes and
+   either select one with a physics argument or carry their discrepancy as a
+   model uncertainty.
+5. Recompute the observable response rank after every material operator/current
+   addition and stop adding directions that the selected observables cannot
+   identify unless theory requires them for closure.
+
+Exit gate: the minimal operator/current basis needed for calibration and the
+first GTMD/local-current targets is executable at K9/K11/K13; every retained
+direction has an owner, units, derivative route, and declared status; the
+production-current choice or discrepancy model is explicit.
+
+### M5 — identify the physical state and calibrate across resolutions
+
+Purpose: move from an exploratory finite-basis model to a physically identified
+deuteron calculation.
+
+Work:
+
+1. Select the physical sector/projector and track the deuteron state across
+   parameter and K changes.
+2. Define one nonduplicated calibration corpus, beginning with the deuteron
+   mass, magnetic moment, quadrupole moment, charge radius, and a limited
+   elastic subset. Build its correlated experimental, normalization, theory,
+   current-prescription, and truncation covariance once.
+3. Infer resolution-local bare/intermediate coefficients at K9 and repeat the
+   same physical renormalization conditions at K11 and K13. Do not force equal
+   bare coefficients across cutoffs.
+4. Quantify posterior/profile identifiability, correlations, prior sensitivity,
+   model discrepancy, and finite-resolution convergence in observable space.
+5. Reserve genuinely independent observables or kinematic regions for
+   validation.
+
+Exit gate: a sector-qualified state, calibrated Hamiltonian/current, physical
+response rank, uncertainty model, and K9/K11/K13 convergence statement exist;
+withheld validation passes within predeclared criteria. Only here may the
+microscopic model be called physically identified.
+
+### M6 — close the microscopic-to-GTMD chain
+
+Purpose: make the solved microscopic system the parent of the partonic
+observables rather than merely compare it to the phenomenological layer.
+
+Work:
+
+1. Compute the local and nonzero-transfer quark/gluon matrix elements supported
+   by the calibrated Fock sectors and currents, retaining flavor, spin, color,
+   gauge-link, orbital, and nuclear labels.
+2. Match the finite-regulator objects to declared GTMD/TMD schemes with
+   explicit Wilson lines, soft subtraction, ultraviolet and rapidity
+   renormalization, small-\(b_T\) coefficients, threshold handling, and
+   rank-aware evolution at the justified order.
+3. Generate TMD, GPD, PDF, Wigner, form-factor, current, and OAM reductions from
+   the same parent and test route equality where two reductions should agree.
+4. Enforce applicable Ward identities, current conservation, momentum/baryon/
+   charge/tensor sum rules, Hermiticity, parity/time reversal, gauge-link
+   reversal, positivity, polynomiality where supported, and no-double-counting
+   conditions across Fock and nuclear sectors.
+5. Compare to the operational phenomenological parent without silently fitting
+   each TMD or observable independently.
+
+Exit gate: at least the first declared quark and gluon channel set has a
+source-qualified, uncertainty-carrying chain from Hamiltonian/state/current to
+GTMD parent, matching/evolution, and all applicable reductions and sum rules.
+Unfinished channels remain explicitly outside the completed scope.
+
+### M7 — deliver the predictive observable framework
+
+Purpose: demonstrate that the common parent predicts more than its calibration
+inputs and can be extended without losing information or conservation.
+
+Work:
+
+1. Expand the completed channel set to the full declared leading-twist quark,
+   antiquark, and gluon content and the required nonzero-transfer amplitudes.
+2. Produce correlated predictions for TMD/GPD/PDF/Wigner observables, elastic
+   and transition form factors, and selected EIC/JLab inclusive and exclusive
+   reactions with process-specific gauge links and hard factors.
+3. Validate against withheld observable families and publish failures as model
+   revisions rather than absorbing them into plot-specific coefficients.
+4. Demonstrate regulator/resolution, matching-order, evolution, current,
+   nuclear-mechanism, parameter, and numerical uncertainty propagation to the
+   final observable covariance.
+5. Package a reproducible release with the theory note, equation-to-code map,
+   minimal environment, tests, data/source provenance, benchmark calculations,
+   and machine-readable results.
+
+Exit gate: the supported observable family is generated reproducibly from one
+physically identified GTMD-first microscopic framework; all declared
+conservation, matching, sum-rule, convergence, uncertainty, and withheld-
+prediction tests pass. The exact channel/process coverage must be stated, so a
+complete first release need not pretend to solve observables whose operators or
+factorization are outside its declared domain.
+
+### Parallel correlator and phenomenology track
+
+The operational correlator model should continue to generate useful science
+while M0--M6 advance. Priority work is nonzero-transfer GTMD content,
+rank-aware multi-Q evolution, stronger tensor/gluon and wave-function inputs,
+process-qualified gauge links, and data-facing EIC/JLab studies. Every result
+must retain its phenomenological/model evidence class. This track supplies
+benchmarks, sensitivity targets, calibration candidates, and withheld tests;
+it must not be frozen while waiting for microscopic closure or relabeled as a
+first-principles Hamiltonian prediction.
+
+### Decisions reserved for the theory lead
+
+Agents should develop comparisons and evidence but must not silently choose:
+
+- the physical sector/projector and state identity;
+- the production light-front versus LPS current prescription, zero-mode and
+  interaction-current completion, or discrepancy treatment;
+- a genuinely underived C117 normalization/mixing coefficient or its physical
+  prior;
+- the calibration/validation split and covariance model;
+- the target accuracy and hardware platform for a later quantum demonstration;
+- the channel/process coverage that defines the first completed release.
+
+These decisions should be made at the milestone where their consequences can
+be evaluated, not promoted into global blockers before exploratory evidence
+exists.
+
+### Immediate execution order
+
+1. **State/current critical path:** introduce or bind the enlarged finite-K
+   many-body/hadronic color-singlet Hilbert space `H_D,K`. Define its spin-one
+   target composition, constituent/Fock content, color coupling, orbital and
+   parity labels, initial/final transfer labels, and normalization.
+2. Derive the finite-K current intertwiners on `H_D,K`, including the lawful
+   roles of one-body, interaction-current, zero-mode, and angular-condition
+   terms. Do not substitute the incomplete C405/C114 structures or the
+   colored M2 projector for a deuteron current.
+3. **Normalization path in parallel:** complete the source-level first-C117
+   normalization and ownership derivation; determine whether the C411
+   four-by-four mixing object is derived, overgeneral, or unnecessary for the
+   first physical action.
+4. Reuse the completed M2 colored K9 projector and exact/encoded agreement as
+   a constituent-level diagnostic oracle while extending the topology- and
+   symmetry-aware state construction to `H_D,K`.
+5. Only after steps 1--2, evaluate light-front and LPS current diagnostics,
+   observable finite differences, and the first diagnostic response singular
+   spectrum. Keep prescription discrepancy visible.
+6. Extend the validated construction to K11/K13, then proceed to physical
+   calibration, microscopic GTMD matching, and predictive observables through
+   M5--M7.
+
+The next major scientific deliverable is the first lawful K9
+state-to-observable response built from actual modern C396/C117 directions on
+an explicitly color-singlet spin-one deuteron space, with exact and quantum
+routes agreeing inside an exploratory claim boundary. The present M2 colored
+projector is a proven building block, not the target state.
+
+## 2026-08-23 — Q0–Q2 conditional quantum backend freeze
+
+Status: **accepted and frozen locally; no Q3 continuation authorized**.
+
+The separate PennyLane backend track is now closed at the accepted
+conditional finite-basis boundary. Q0/PLHQCD0, Q1/PLHQCDSTATE, and
+Q2/PLHQCDOBS are frozen in their dedicated worktrees with positive acceptance
+records, exact package roots, and local completion commits. The durable detail
+is in `handoff/quantum_backend_q0_q2_freeze.md`; it must be read before any
+future quantum-backend work.
+
+Frozen chain:
+
+- Q0: branch `q0/plhqcd0`, commit `58596e6`, Q0 authority root
+  `2848cb692ce20cf21f654107acbcf9ed1a803cdd1c968f576c8271ae27df3b9c`;
+  audited implementation ancestor `b094fb8cb1046aea0062468d73826ea25eab6116`.
+- Q1: branch `q1/plhqcdstate`, commit `e7b6aef`, acceptance root
+  `604c2797f4b12a5409a63643635c093c1653cf3b02ccccb04f7f22e2f0645547`.
+- Q2: branch `q2/plhqcdobs`, commit `69bc52d`, acceptance root
+  `23ee186d0fb292b159a9acbfb9f52468f6d65b9fc13103014637034ae43394c1`.
+
+The common boundary is `COMPACT_INDEX_DIRECT_ORDER_V1`, basis order
+`q followed by qg`, K9/K11/K13 padded registers, `lightning.qubit`,
+`complex128`, and `shots=None`. The stack is conditional Hamiltonian-diagnostic
+infrastructure only. It does not authorize physical parameters, physical
+states or spectra, hardware, finite-shot execution, fits, TMDs, or production
+objects. Do not amend these three commits; a future extension requires a new
+authorized continuation worktree and acceptance root.
 
 ## 2026-08-19 — C157 HQCDMATCHIR2 finite-basis numerical boundary
 
@@ -430,11 +922,13 @@ injected coordinate/sign/rank/scheme/color/double-counting failures; and prove
 all authoritative hashes remain identical. See
 `docs/next_level/stageA_migration_plan.md`.
 
-Last updated: 2026-07-27
+Historical program last updated: 2026-07-27
 
-This is the persistent execution queue and completion authority. Historical
-stage plans in `project_context.md` and earlier decision-log entries remain
-useful context but do not override this roadmap.
+The material from this point onward is the former persistent execution queue.
+It is retained as scientific history and evidence, but the 2026-09-03
+governing completion roadmap at the top of this file now controls priority and
+execution order. Historical stage plans in `project_context.md` and earlier
+decision-log entries remain useful context only.
 
 ## Final scientific objective
 

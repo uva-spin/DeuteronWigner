@@ -1,7 +1,7 @@
 # ChatGPT/Codex Handoff Index
 
-Originally generated 2026-08-28 and reconciled 2026-09-03 for technical
-direction and repository-connected development.
+Originally generated 2026-08-28 and reconciled through 2026-09-04 for
+technical direction and repository-connected development.
 
 The archive inventory below describes the 2026-08-28 transfer. For current
 work, `AGENTS.md` and `handoff/CURRENT_PROJECT_HANDOFF.md` take precedence.
@@ -44,10 +44,12 @@ The archive contains:
 - this index and the root `Deuteron_GTMD.pdf` project document.
 
 The archived root checkout was on branch `main` at commit `6ef9827e` (`C399
-certify missing physical target authority`). The live checkout reconciled on
-2026-09-03 is instead at `186cc816` and includes C401--C411. The archive
-captures the earlier working tree as found; it does not describe current
-development status and does not imply that the working tree was clean.
+certify missing physical target authority`). The current committed worktree
+base is `7dad2691607e833c0c4718a02dc2047739ab8d41`; the current handoff also
+identifies the reviewed post-base C411/M2 working state that is not represented
+by that commit alone. The 2026-08-28 archive captures the earlier working tree
+as found; it does not describe current development status and does not imply
+that the working tree was clean.
 
 ## Deliberate exclusions
 

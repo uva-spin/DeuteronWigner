@@ -187,8 +187,11 @@ They contain the present status, claim lanes, and science-first direction path.
 
 The public continuation handoff is
 [`computation_handoff/repo`](https://github.com/uva-spin/DeuteronWigner/tree/main/computation_handoff/repo).
-It is a published snapshot, not a separate scientific authority. The current
-snapshot represents C410 and is stale relative to the local C411 baseline.
+It is a published snapshot, not a separate scientific authority. The public
+page currently represents C410. A checksummed 2026-09-04 local refresh through
+the reviewed C411/M2 state-current boundary is prepared under
+`computation_handoff/repo/` for review; it is not public until committed and
+pushed without rewriting the public branch.
 
 At a deliberate public milestone, update the published tree:
 
